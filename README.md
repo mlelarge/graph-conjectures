@@ -103,7 +103,6 @@ graph-conjectures/
 │   ├── categories.json     # subjects / keywords / authors aggregated
 │   ├── authors.json
 │   ├── urls.txt            # canonical slug list
-│   ├── agent_failed.txt    # skip-list for the review pass
 │   └── agent_prompts/      # 227 derived per-problem briefs (input to claude -p)
 ├── PLAN.md                 # crawler / parser / site design + parser-selector spec
 ├── LIT_REVIEW.md           # literature-review pipeline design
