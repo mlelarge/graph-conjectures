@@ -1,0 +1,35 @@
+{
+  "status": "open",
+  "confidence": "high",
+  "summary": "Nešetřil's Pentagon Problem — whether every 3-regular graph of sufficiently high girth admits a homomorphism to $C_5$ — remains open. The strongest known partial result, that cubic graphs of girth at least 17 admit a homomorphism to the Clebsch graph (DeVos–Šámal), was already recorded in the OPG problem statement. The analogous question for longer odd cycles $C_\\ell$ with $\\ell \\geq 7$ has been answered negatively, but the $C_5$ case has not been resolved.",
+  "since_posted": [
+    {
+      "title": "On Colorings of Graph Powers",
+      "authors": "Hossein Hajiabolhassan",
+      "year": 2007,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/0708.0704",
+      "doi": "10.48550/arXiv.0708.0704",
+      "arxiv_id": "0708.0704",
+      "kind": "partial",
+      "claim": "Considers Nešetřil's Pentagon problem and introduces several closely related problems with an analysis of their inter-relations, without resolving the original conjecture."
+    }
+  ],
+  "search_queries": [
+    "Pentagon problem cubic graph homomorphism C5 high girth Nesetril",
+    "cubic graph girth homomorphism five-cycle pentagon conjecture arXiv",
+    "DeVos Samal high girth cubic graphs Clebsch graph homomorphism pentagon",
+    "pentagon problem graph theory solved 2010 2020 cubic homomorphism odd cycle",
+    "Nesetril pentagon conjecture cubic high girth C5 homomorphism progress 2015 2020 2025"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/math/0602580",
+    "https://arxiv.org/abs/0801.3714",
+    "https://arxiv.org/abs/0708.0704"
+  ],
+  "notes": "The DeVos–Šámal result (cubic graphs of girth ≥ 17 map to the Clebsch graph, arXiv:math/0602580, submitted Feb 2006) was already known before the OPG posting date and is cited in the problem statement; its journal publication in J. Graph Theory (2011) was found in search results but could not be verified (HTTP 403). The OPG page itself was unreachable (ECONNREFUSED). No post-2007 breakthrough or resolution of the Pentagon problem was found across four targeted searches.",
+  "slug": "pentagon_problem",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 07)",
+  "search_enabled": true
+}

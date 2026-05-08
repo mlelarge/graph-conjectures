@@ -1,0 +1,29 @@
+{
+  "status": "open",
+  "confidence": "medium",
+  "summary": "The conjecture that every loopless graph embedded in a non-orientable surface with edge-width at least some fixed constant $c$ (probably $c=4$) admits a $5$-local-tension remains open. No post-2007 paper resolving or substantially advancing this specific conjecture was found in the literature. Related progress on Bouchet's 6-flow conjecture for signed/bidirected graphs (e.g., DeVos 2013 establishing a nowhere-zero 12-flow bound for bidirected graphs) does not directly settle this edge-width-conditioned variant.",
+  "since_posted": [],
+  "search_queries": [
+    "5-local-tension embedded graph edge-width non-orientable surface conjecture",
+    "DeVos local tension surface graph coloring edge-width conjecture",
+    "local tension non-orientable surface graph edge-width 5-flow Bouchet conjecture",
+    "Grunbaum conjecture 4-local-tension orientable surface edge-width proof 2008 2009 2010",
+    "DeVos Mohar Samal local tension high edge-width surface graph coloring",
+    "coloring-flow duality embedded graphs local tension edge-width DeVos 2010 2012 2015 2020",
+    "site:arxiv.org local tension non-orientable graph surface coloring"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/1310.8406",
+    "https://arxiv.org/abs/1010.0133",
+    "https://arxiv.org/abs/1701.00420",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC6559332/",
+    "https://www.sfu.ca/~mohar/Bibsci3.html",
+    "https://www.sfu.ca/~mdevos/notes/"
+  ],
+  "notes": "The OPG page itself (http://www.openproblemgarden.org/op/5_local_tensions) returned ECONNREFUSED and could not be checked for editorial updates. The arXiv search for 'local tension' combined with 'non-orientable' and 'edge-width' returned no results, suggesting the specific conjecture has attracted little direct attention in the literature under that terminology. DeVos's 2013 arXiv preprint 1310.8406 (Flows on Bidirected Graphs) is the closest post-2007 related work: it shows every bidirected graph admitting a nowhere-zero ℤ-flow has a nowhere-zero 12-flow, which by the non-orientable duality framework of DGMVZ gives a 12-local-tension bound for embedded graphs—far weaker than the conjectured 5-local-tension. Progress on Bouchet's 6-flow conjecture for signed graphs (recent papers proving it for cyclically 5-edge-connected cubic signed graphs, arxiv 2601.05692) is in a closely related but technically distinct setting. The Grünbaum conjecture (4-local-tension on orientable surfaces with edge-width ≥ 3) remains open on the orientable side; the non-orientable 5-local-tension conjecture is separate.",
+  "slug": "5_local_tensions",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "elapsed_seconds": 226.0
+}

@@ -1,0 +1,81 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Woodall's conjecture remains open for general digraphs. The most significant recent advance (Cornuéjols–Liu–Ravi, 2023/2025) proves that every digraph with minimum dicut size $\\tau$ contains at least $\\lfloor\\tau/6\\rfloor$ pairwise disjoint dijoins, via nowhere-zero flow theory; the full conjecture would require $\\tau$ disjoint dijoins. Partial results for special graph classes (3-trees, chordal underlying graphs) and restricted families of dicuts have also been established.",
+  "since_posted": [
+    {
+      "title": "Disjoint dijoins",
+      "authors": "Maria Chudnovsky, Katherine Edwards, Ringi Kim, Alex Scott, Paul Seymour",
+      "year": 2014,
+      "venue": "Journal of Combinatorial Theory, Series B",
+      "url": "https://arxiv.org/abs/1412.1415",
+      "doi": null,
+      "arxiv_id": "1412.1415",
+      "kind": "partial",
+      "claim": "Proves a weakened form of Woodall's k=2 conjecture (with an extra connectivity constraint) for planar digraphs and for digraphs where the relevant subgraph is a subdivision of a caterpillar."
+    },
+    {
+      "title": "Disjoint dijoins for classes of dicuts in finite and infinite digraphs",
+      "authors": "J. Pascal Gollin, Karl Heuer, Konstantinos Stavropoulos",
+      "year": 2021,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2109.03518",
+      "doi": null,
+      "arxiv_id": "2109.03518",
+      "kind": "partial",
+      "claim": "Verifies a generalised version of Woodall's conjecture for restricted classes of dicuts, including nested finite dicuts, minimum-size dicuts, and infinite dibonds."
+    },
+    {
+      "title": "Approximately Packing Dijoins via Nowhere-Zero Flows",
+      "authors": "Gérard Cornuéjols, Siyue Liu, R. Ravi",
+      "year": 2023,
+      "venue": "Combinatorica",
+      "url": "https://arxiv.org/abs/2311.04337",
+      "doi": "10.1007/s00493-025-00159-x",
+      "arxiv_id": "2311.04337",
+      "kind": "partial",
+      "claim": "Proves that every digraph with minimum dicut size $\\tau$ contains at least $\\lfloor\\tau/6\\rfloor$ pairwise disjoint dijoins by reducing the problem to nowhere-zero circular flows; as a corollary any digraph with $\\tau\\ge3$ contains three disjoint dijoins."
+    },
+    {
+      "title": "Towards a Dual Version of Woodall's Conjecture for Partial 3-Trees",
+      "authors": "Juan Gutiérrez",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2408.05703",
+      "doi": null,
+      "arxiv_id": "2408.05703",
+      "kind": "partial",
+      "claim": "Proves the dual planar formulation of Woodall's conjecture (on feedback arc-set packing) for digraphs whose underlying graph is a 3-tree or a partial 3-tree with girth 3."
+    },
+    {
+      "title": "Packing Dijoins in Weighted Chordal Digraphs",
+      "authors": "Gérard Cornuéjols, Siyue Liu, R. Ravi",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2501.10918",
+      "doi": null,
+      "arxiv_id": "2501.10918",
+      "kind": "partial",
+      "claim": "Proves the weighted Edmonds–Giles conjecture (the capacitated analogue of Woodall's conjecture) for digraphs whose underlying undirected graph is chordal, with a strongly polynomial algorithm."
+    }
+  ],
+  "search_queries": [
+    "Woodall's conjecture dijoin packing directed cut recent progress",
+    "Woodall conjecture disjoint dijoins arXiv 2020 2021 2022 2023 2024 2025",
+    "dijoin packing integer decomposition digraph conjecture solved",
+    "Woodall conjecture k disjoint dijoins directed cut planar digraph progress"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/1412.1415",
+    "https://arxiv.org/abs/2109.03518",
+    "https://arxiv.org/abs/2311.04337",
+    "https://arxiv.org/abs/2408.05703",
+    "https://arxiv.org/abs/2501.10918",
+    "https://en.wikipedia.org/wiki/Woodall%27s_conjecture"
+  ],
+  "notes": "The SIAM paper 'On Packing Dijoins in Digraphs and Weighted Digraphs' (Abdi, Cornuéjols, Zlatin; DOI 10.1137/22M1506511) appeared in search results but returned HTTP 403 on fetch and could not be verified; it was therefore excluded from since_posted. The Chudnovsky et al. (2014) paper addresses a modified, weaker version of the k=2 case rather than Woodall's original conjecture, and the arXiv submission year 2014 is used (journal publication in JCTB appears to be 2016 based on the pii URL, but this could not be independently confirmed). The Cornuéjols–Liu–Ravi nowhere-zero flow result is the most impactful advance for the general conjecture, answering the long-open question of whether 3 disjoint dijoins always exist when $\\tau\\ge3$.",
+  "slug": "woodalls_conjecture",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 02)",
+  "search_enabled": true
+}

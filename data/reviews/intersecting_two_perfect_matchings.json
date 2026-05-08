@@ -1,0 +1,48 @@
+{
+  "status": "partial",
+  "confidence": "medium",
+  "summary": "The Mácajová–Škoviera conjecture — that every bridgeless cubic graph has two perfect matchings $M_1, M_2$ with $M_1 \\cap M_2$ containing no odd edge-cut — remains open. Fouquet and Vanherpe (2010) proved it for cubic graphs with few vertices and for traceable graphs. Related conjectures in the same research programme (notably Mazzuoccolo's conjecture that two perfect matchings whose deletion yields a bipartite subgraph, proved by Kardoš, Máčajová, and Zerafa in 2023) have since been resolved, but the original conjecture as stated is unresolved.",
+  "since_posted": [
+    {
+      "title": "Mácajová and Škoviera Conjecture on Cubic Graphs",
+      "authors": "Jean-Luc Fouquet, Jean-Marie Vanherpe",
+      "year": 2010,
+      "venue": "Discussiones Mathematicae Graph Theory",
+      "url": "https://arxiv.org/abs/0809.4839",
+      "doi": null,
+      "arxiv_id": "0809.4839",
+      "kind": "partial",
+      "claim": "Proves the conjecture for cubic graphs with a bounded number of vertices and gives a stronger result for traceable cubic graphs."
+    },
+    {
+      "title": "Disjoint odd circuits in a bridgeless cubic graph can be quelled by a single perfect matching",
+      "authors": "František Kardoš, Edita Máčajová, Jean Paul Zerafa",
+      "year": 2023,
+      "venue": "Journal of Combinatorial Theory, Series B",
+      "url": "https://arxiv.org/abs/2204.10021",
+      "doi": null,
+      "arxiv_id": "2204.10021",
+      "kind": "partial",
+      "claim": "Proves Mazzuoccolo's conjecture that every bridgeless cubic graph admits two perfect matchings whose deletion yields a bipartite subgraph — a related result in the same research programme between Jaeger's 8-flow theorem and the Berge–Fulkerson conjecture, but distinct from the Mácajová–Škoviera conjecture about the intersection avoiding an odd edge-cut."
+    }
+  ],
+  "search_queries": [
+    "Macajova Skoviera \"two perfect matchings\" \"odd edge-cut\" cubic graph conjecture",
+    "bridgeless cubic graph perfect matching intersection postman join nowhere-zero flow 2007 conjecture",
+    "Macajova Skoviera \"intersection of two perfect matchings\" cubic graph arXiv",
+    "\"Berge-Fulkerson conjecture\" cubic graph two perfect matchings intersection odd cut recent progress 2020 2021 2022 2023",
+    "Kardos Macajova Zerafa \"two perfect matchings\" cubic graph conjecture proved 2022 2023 2024"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/0809.4839",
+    "https://arxiv.org/abs/2204.10021",
+    "https://arxiv.org/abs/2309.06944",
+    "https://arxiv.org/abs/2411.09806",
+    "https://arxiv.org/abs/2605.00710"
+  ],
+  "notes": "The OPG page (openproblemgarden.org) was unreachable (ECONNREFUSED). The DMGT journal page for the Fouquet–Vanherpe article (dmgt.uz.zgora.pl) returned an SSL error and could not be verified. The Kardoš–Máčajová–Zerafa 2023 paper proves Mazzuoccolo's bipartite conjecture (G − M1 − M2 bipartite), which is at a different level in the hierarchy than the Mácajová–Škoviera conjecture (M1 ∩ M2 has no odd edge-cut). No post-2010 paper specifically resolving the Mácajová–Škoviera conjecture was found in 5 searches; it is assessed as still open with partial results.",
+  "slug": "intersecting_two_perfect_matchings",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 01)",
+  "search_enabled": true
+}

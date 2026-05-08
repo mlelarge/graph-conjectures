@@ -1,0 +1,22 @@
+{
+  "status": "open",
+  "confidence": "low",
+  "summary": "The conjecture that $\\mathrm{eq}(C_n^k) = \\Omega(k)$ for $n$ large relative to $k$ was described as 'wide open' at the time of posting, with no known non-trivial lower bound and only trivial $\\Theta(k)$ upper bounds. My literature search found no post-2011 papers specifically addressing the equivalence covering number of powers of cycles or resolving this conjecture.",
+  "since_posted": [],
+  "search_queries": [
+    "equivalence covering number powers of cycles claw-free graphs",
+    "equivalence covering number quasi-line graphs conjecture Esperet Gimbel King",
+    "covering edges equivalence subgraphs cliques cycles graph theory arXiv",
+    "\"equivalence covering\" \"powers of cycles\" OR \"C_n^k\" graph conjecture"
+  ],
+  "verified_urls": [
+    "https://dwest.web.illinois.edu/regs/eqcov.html",
+    "https://arxiv.org/abs/1006.3692",
+    "https://arxiv.org/abs/1608.07723"
+  ],
+  "notes": "Douglas West's research page (dwest.web.illinois.edu/regs/eqcov.html, dated 2010) frames this as an open problem, asking whether eq(C_n^k) is unbounded for fixed k and whether a sublinear upper bound exists — matching the OPG statement closely. The page predates the OPG posting and no updates were visible. A 2016/2018 paper by Javadi and Hajebi (arXiv:1608.07723, J. Graph Theory) proves that the edge clique cover number cc(C_n^k) = n for powers of cycles, but this is a different quantity from the equivalence covering number eq(G) (every clique cover is an equivalence cover, but not vice versa), so it does not address the conjecture. The ScienceDirect page for the 2020 claw-free clique coverings paper returned HTTP 403 and could not be verified or cited.",
+  "slug": "covering_powers_of_cycles_with_equivalence_subgraphs",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 05)",
+  "search_enabled": true
+}

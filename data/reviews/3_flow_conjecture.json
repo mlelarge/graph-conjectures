@@ -1,0 +1,59 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Tutte's 3-flow conjecture (every 4-edge-connected graph has a nowhere-zero 3-flow) remains open. Thomassen (2012) resolved the long-standing weak 3-flow conjecture of Jaeger by proving every 8-edge-connected graph admits a nowhere-zero 3-flow; Lovász, Thomassen, Wu, and Zhang (2013) subsequently sharpened this to every 6-edge-connected graph being $\\mathbb{Z}_3$-connected. The gap from 4-edge-connected to 6-edge-connected remains unresolved, though the conjecture has also been confirmed for several restricted graph classes including toroidal graphs (Li et al., 2022) and projective planar graphs.",
+  "since_posted": [
+    {
+      "title": "The weak 3-flow conjecture and the weak circular flow conjecture",
+      "authors": "Carsten Thomassen",
+      "year": 2012,
+      "venue": "Journal of Combinatorial Theory, Series B",
+      "url": "https://www.wikidata.org/wiki/Q56926585",
+      "doi": "10.1016/j.jctb.2011.09.003",
+      "arxiv_id": null,
+      "kind": "partial",
+      "claim": "Proves Jaeger's weak 3-flow conjecture by showing every 8-edge-connected graph is $\\mathbb{Z}_3$-connected and hence admits a nowhere-zero 3-flow."
+    },
+    {
+      "title": "Nowhere-zero 3-flows and modulo k-orientations",
+      "authors": "László Miklós Lovász, Carsten Thomassen, Yezhou Wu, Cun-Quan Zhang",
+      "year": 2013,
+      "venue": "Journal of Combinatorial Theory, Series B",
+      "url": "https://orbit.dtu.dk/en/publications/nowhere-zero-3-flows-and-modulo-emkem-orientations/",
+      "doi": "10.1016/j.jctb.2013.06.003",
+      "arxiv_id": null,
+      "kind": "partial",
+      "claim": "Improves Thomassen's bound: every 6-edge-connected graph is $\\mathbb{Z}_3$-connected and thus admits a nowhere-zero 3-flow, as the special case $k=3$ of a result on modulo $k$-orientations."
+    },
+    {
+      "title": "A note on nowhere-zero 3-flow and Z_3-connectivity",
+      "authors": "Fuyuan Chen, Bo Ning",
+      "year": 2014,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/1406.1554",
+      "doi": null,
+      "arxiv_id": "1406.1554",
+      "kind": "partial",
+      "claim": "Proves Tutte's 3-flow conjecture holds for every 4-edge-connected graph with at most seven 5-edge-cuts, contributing partial results toward the conjecture."
+    }
+  ],
+  "search_queries": [
+    "3-flow conjecture nowhere-zero 4-edge-connected graph proof 2010 2015 2020",
+    "weak 3-flow conjecture Jaeger nowhere-zero k-edge-connected solved",
+    "nowhere-zero 3-flow conjecture Tutte progress arXiv",
+    "Thomassen \"The weak 3-flow conjecture and the weak circular flow conjecture\" JCTB 2012",
+    "\"nowhere-zero 3-flows in toroidal graphs\" authors year journal 2021",
+    "arXiv \"nowhere-zero 3-flows\" toroidal graphs Li Ma Miao Shi Wang Zhang preprint"
+  ],
+  "verified_urls": [
+    "https://www.wikidata.org/wiki/Q56926585",
+    "https://orbit.dtu.dk/en/publications/nowhere-zero-3-flows-and-modulo-emkem-orientations/",
+    "https://arxiv.org/abs/1406.1554"
+  ],
+  "notes": "The toroidal graphs result (Li, Ma, Miao, Shi, Wang, Zhang, J. Comb. Theory Ser. B 153, 2022, pp. 61–80) was consistently reported in search results but could not be verified via WebFetch (ScienceDirect returned HTTP 403) and no arXiv preprint was found; it is therefore omitted from since_posted. Kochol's 2001 reduction (sufficiency of 5-edge-connected) predates the 2007 posting date and was not included. The current state-of-the-art lower bound is 6-edge-connectivity (LTWZ 2013); closing the gap to 4-edge-connectivity remains the principal open challenge.",
+  "slug": "3_flow_conjecture",
+  "reviewed_at": "2026-05-07",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "elapsed_seconds": 204.7
+}

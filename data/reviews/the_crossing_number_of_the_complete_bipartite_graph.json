@@ -1,0 +1,53 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The Zarankiewicz conjecture that $\\mathrm{cr}(K_{m,n}) = \\lfloor m/2 \\rfloor \\lfloor (m-1)/2 \\rfloor \\lfloor n/2 \\rfloor \\lfloor (n-1)/2 \\rfloor$ remains open in general; it has been verified for $\\min\\{m,n\\} \\le 6$ and a handful of small cases (up to $K_{8,10}$), with the best published asymptotic lower bound at $0.83\\,Z(m,n)$ for fixed $m \\ge 9$. Since the 2007 posting, Brosch and Polak (2023) have used semidefinite programming to establish new explicit lower bounds for $K_{m,n}$ with $m \\in \\{10,11,12,13\\}$, extending the reach of SDP methods beyond what de Klerk et al. (2006) had achieved.",
+  "since_posted": [
+    {
+      "title": "New lower bounds on crossing numbers of $K_{m,n}$ from semidefinite programming",
+      "authors": "Daniel Brosch, Sven Polak",
+      "year": 2023,
+      "venue": "Mathematical Programming",
+      "url": "https://arxiv.org/abs/2206.02755",
+      "doi": "10.1007/s10107-023-02028-1",
+      "arxiv_id": "2206.02755",
+      "kind": "partial",
+      "claim": "Establishes new lower bounds cr(K_{10,n}) >= 4.87057 n^2 - 10n, cr(K_{11,n}) >= 5.99939 n^2 - 12.5n, cr(K_{12,n}) >= 7.25579 n^2 - 15n, cr(K_{13,n}) >= 8.65675 n^2 - 18n via semidefinite programming with full symmetry exploitation."
+    },
+    {
+      "title": "Improved lower bounds for the 2-page crossing numbers of $K_{m,n}$ and $K_n$ via semidefinite programming",
+      "authors": "Etienne de Klerk, Dmitrii V. Pasechnik",
+      "year": 2012,
+      "venue": "SIAM Journal on Optimization",
+      "url": "https://arxiv.org/abs/1110.4824",
+      "doi": null,
+      "arxiv_id": "1110.4824",
+      "kind": "partial",
+      "claim": "Shows that the Zarankiewicz conjecture holds asymptotically for the 2-page crossing number variant with m=7 and m=8 (i.e., lim_{n->inf} cr_2(K_{m,n})/Z(m,n) = 1), and improves bounds for the 2-page crossing number of K_n."
+    }
+  ],
+  "search_queries": [
+    "Zarankiewicz conjecture crossing number complete bipartite graph K_{m,n} recent progress",
+    "crossing number K_{m,n} bipartite graph conjecture proof 2010 2020 2025",
+    "Turán brickyard problem crossing number bipartite graph arXiv",
+    "Kleitman crossing number K_{5,n} K_{6,n} K_{7,n} complete bipartite new result",
+    "flag algebras lower bound crossing number K_{n,n} complete bipartite Norin Zwols 2013",
+    "de Klerk Maharry Pasechnik Richter Salazar improved bounds crossing numbers K_{m,n} 2007 SIAM",
+    "arXiv Zarankiewicz conjecture finite fixed m Christian Richter Salazar crossing number bipartite",
+    "arXiv new lower bounds crossing numbers K_{m,n} semidefinite programming 2022 2023"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2206.02755",
+    "https://arxiv.org/abs/1110.4824",
+    "https://en.wikipedia.org/wiki/Tur%C3%A1n%27s_brick_factory_problem",
+    "https://mathworld.wolfram.com/ZarankiewiczsConjecture.html",
+    "https://arxiv.org/abs/math/0404142",
+    "https://www.sfu.ca/~mohar/Problems/P2CrossingNumberKmn.html",
+    "https://mappingignorance.org/2013/10/01/progress-checking-zarankiewiczs-conjecture-on-the-brick-factory-problem/"
+  ],
+  "notes": "Christian, Richter, and Salazar (J. Combin. Theory Ser. B, 103:237-247, 2013) proved a key finiteness result: for each fixed m there exists N_0(m) such that verifying the conjecture for all n <= N_0 implies it for all n; this paper was consistently referenced across multiple sources but no accessible URL was found for direct verification, so it is not included in since_posted. Norin and Zwols reportedly showed cr(K_{n,n}) >= 0.9118·Z(n,n) + o(n^4) using flag algebras (BIRS workshop, 2013), which would improve the 0.83 asymptotic bound; this result appears to be unpublished/conference-only and could not be verified via WebFetch. The 2-page crossing number result of de Klerk-Pasechnik concerns a restricted drawing model (vertices on a spine, edges on two half-planes) and is thus about a related but distinct conjecture. The arXiv paper 2605.01120 about 'Zarankiewicz numbers' addresses extremal bipartite graph theory (forbidden submatrix problem), not crossing numbers.",
+  "slug": "the_crossing_number_of_the_complete_bipartite_graph",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 03)",
+  "search_enabled": true
+}

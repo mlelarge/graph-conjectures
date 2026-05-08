@@ -1,0 +1,82 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Bouchet's 6-flow conjecture for bidirected (signed) graphs remains open in full generality. Since posting, the best known general bound has been improved from 12 (DeVos, preprint known at posting time) to 11 for all flow-admissible signed graphs (DeVos et al., 2019), and further to 8 for all 3-edge-connected flow-admissible signed graphs (DeVos, Nurse, Šámal, 2025). The conjecture has been fully verified for cyclically 5-edge-connected cubic signed graphs (Nurse, 2026).",
+  "since_posted": [
+    {
+      "title": "Flows on flow-admissible signed graphs",
+      "authors": "Matt DeVos, Jiaao Li, You Lu, Rong Luo, Cun-Quan Zhang, Zhang Zhang",
+      "year": 2019,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/1908.10853",
+      "doi": null,
+      "arxiv_id": "1908.10853",
+      "kind": "partial",
+      "claim": "Every flow-admissible signed graph admits a nowhere-zero 11-flow, improving the best previously known general bound from 12 to 11."
+    },
+    {
+      "title": "Nowhere-zero 8-flows in cyclically 5-edge-connected, flow-admissible signed graphs",
+      "authors": "Matt DeVos, Kathryn Nurse, Robert Sámal",
+      "year": 2023,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2309.00704",
+      "doi": null,
+      "arxiv_id": "2309.00704",
+      "kind": "partial",
+      "claim": "Every cyclically 5-edge-connected, flow-admissible signed graph has a nowhere-zero 8-flow."
+    },
+    {
+      "title": "An 8-flow theorem for signed graphs",
+      "authors": "Rong Luo, Edita Máčajová, Martin Škoviera, Cun-Quan Zhang",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2402.12883",
+      "doi": null,
+      "arxiv_id": "2402.12883",
+      "kind": "partial",
+      "claim": "Every flow-admissible signed graph whose underlying unsigned graph admits a nowhere-zero 4-flow also admits a nowhere-zero 8-flow."
+    },
+    {
+      "title": "Nowhere-zero 8-flows in 3-edge-connected signed graphs",
+      "authors": "Matt DeVos, Kathryn Nurse, Robert Šámal",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2512.18923",
+      "doi": null,
+      "arxiv_id": "2512.18923",
+      "kind": "partial",
+      "claim": "Every flow-admissible 3-edge-connected signed graph has a nowhere-zero 8-flow, substantially improving the best known bound for this connectivity class."
+    },
+    {
+      "title": "Bouchet's conjecture for cyclically 5-edge-connected, cubic signed graphs",
+      "authors": "Kathryn Nurse",
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2601.05692",
+      "doi": null,
+      "arxiv_id": "2601.05692",
+      "kind": "partial",
+      "claim": "Bouchet's 6-flow conjecture is established in full for cyclically 5-edge-connected cubic signed graphs."
+    }
+  ],
+  "search_queries": [
+    "Bouchet 6-flow conjecture bidirected graph nowhere-zero",
+    "nowhere-zero flows bidirected graphs conjecture progress 2010 2020",
+    "Bouchet conjecture signed graphs cyclically 5-edge-connected cubic 2025 2026",
+    "DeVos Li Lu Luo Zhang nowhere-zero 11-flow signed graphs 2021 arXiv",
+    "arXiv \"nowhere-zero\" \"bidirected\" OR \"signed graph\" \"6-flow\" Bouchet conjecture proved 2020 2021 2022 2023 2024"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/1908.10853",
+    "https://arxiv.org/abs/2309.00704",
+    "https://arxiv.org/abs/2402.12883",
+    "https://arxiv.org/abs/2512.18923",
+    "https://arxiv.org/abs/2601.05692"
+  ],
+  "notes": "Bidirected graphs and signed graphs are equivalent frameworks for this problem and the modern literature uses 'signed graph' exclusively. The arXiv page for 1908.10853 did not list a journal reference, but secondary sources (ResearchGate, search snippets) consistently cite publication in J. Combin. Theory Ser. B 149 (2021): 198–221; I use 2019 (arXiv year) as the conservative verified date. The Springer page for the 2011 Wei–Tang–Wang paper ('Flows in 3-edge-connected bidirected graphs', Frontiers of Math. China) and the 2014 Wei–Tang–Ye paper ('Nowhere-zero 15-flow in 3-edge-connected bidirected graphs', Acta Math. Sinica) redirected to an authentication wall and could not be verified, so they are excluded despite appearing in search results. The full conjecture (bound 6 for all flow-admissible bidirected graphs) remains open as of 2026.",
+  "slug": "bouchets_6_flow_conjecture",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "elapsed_seconds": 1346.9
+}

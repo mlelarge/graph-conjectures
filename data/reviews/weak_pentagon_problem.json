@@ -1,0 +1,28 @@
+{
+  "status": "partial",
+  "confidence": "low",
+  "summary": "The weak pentagon conjecture — that every cubic triangle-free graph admits a homomorphism to the Clebsch graph — remains open in full generality. The key partial result at posting time (girth $\\geq 17$ suffices, DeVos–Šámal) was already cited in the problem. Subsequent searches strongly suggest that further partial progress has been made (triangle-free planar graphs, $K_5$-minor-free graphs), but every candidate post-posting paper was inaccessible via WebFetch (HTTP 403 / paywall), so none can be cited per verification requirements.",
+  "since_posted": [],
+  "search_queries": [
+    "weak pentagon problem cubic triangle-free graph Clebsch homomorphism conjecture Samal",
+    "cubic graph homomorphism Clebsch graph triangle-free cut-continuous mapping C5 pentagon",
+    "Nesetril pentagon problem weak version cubic graph girth homomorphism projective cube PQ4",
+    "arXiv \"weak pentagon\" OR \"Clebsch graph\" cubic triangle-free homomorphism 2008 2009 2010 2015 2020",
+    "triangle-free planar graph homomorphism Clebsch graph proof cubic",
+    "\"weak pentagon\" conjecture cubic triangle-free Clebsch graph solved proved 2010 2015 2020 2025",
+    "Naserasr triangle-free planar graph Clebsch graph homomorphism arXiv",
+    "arXiv \"mapping planar graphs\" projective cubes Naserasr triangle-free Clebsch",
+    "\"triangle-free graphs without a K5-minor\" homomorphism Clebsch Discrete Mathematics 2009 authors",
+    "arXiv \"K5-minor\" \"triangle-free\" \"Clebsch\" homomorphism graph"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/math/0602580",
+    "https://arxiv.org/abs/2406.10814",
+    "https://dmtcs.episciences.org/612"
+  ],
+  "notes": "Multiple independent search results consistently assert that Naserasr proved every triangle-free planar graph maps homomorphically to the Clebsch graph (J. Graph Theory 73, 2013, DOI 10.1002/jgt.21703), and that a 2009 Discrete Mathematics paper (pii S0012365X09002581) extended this to triangle-free K5-minor-free graphs — both post-posting partial results. However, the Wiley journal page, IRIF author PDF, ResearchGate, and HAL all returned HTTP 403 or anti-bot blocks, making it impossible to confirm titles/authors/claims per the verification requirement. The arXiv preprint math/0602580 (DeVos–Šámal, Feb 2006) predates the posting and is already cited in the OPG statement as [DS]. The signed projective cubes paper arXiv:2406.10814 (Chen–Naserasr–Sarti, 2024) was verified but does not directly address the weak pentagon conjecture for cubic triangle-free graphs.",
+  "slug": "weak_pentagon_problem",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 05)",
+  "search_enabled": true
+}

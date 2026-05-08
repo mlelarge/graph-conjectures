@@ -1,0 +1,25 @@
+{
+  "status": "open",
+  "confidence": "medium",
+  "summary": "Bondy's conjecture—that every digraph with all nontrivial strong components contains a cyclic spanning subdigraph with cyclomatic number at most $\\alpha(D)$—remains open in general. The cases $\\alpha(D) \\leq 3$ were already settled before the 2013 OPG posting (Camion for $\\alpha=1$, Chen–Manalastas for $\\alpha=2$, and Thomassé unpublished for $\\alpha=3$), but no post-2013 literature advancing the conjecture beyond these small cases was found.",
+  "since_posted": [],
+  "search_queries": [
+    "Bondy conjecture cyclic spanning subdigraph cyclomatic number stability number digraph",
+    "cyclic spanning subdigraph cyclomatic number alpha strong digraph conjecture proof",
+    "Bessy Thomassé directed cycles spanning subdigraph stability number arXiv",
+    "\"cyclomatic number\" \"stability number\" digraph spanning subdigraph conjecture 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024",
+    "Bondy \"cyclomatic\" OR \"ear decomposition\" digraph spanning \"alpha\" conjecture 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 arXiv",
+    "digraph \"cyclic spanning\" \"ear\" independence number alpha proof conjecture 2020 2021 2022 2023 2024 2025 arXiv"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2007.02834",
+    "https://arxiv.org/abs/1805.02999",
+    "https://arxiv.org/abs/2504.01918",
+    "https://alexeypokrovskiy.com/OpenProblems.html"
+  ],
+  "notes": "The OPG page itself was unreachable (ECONNREFUSED). The Bessy–Thomassé paper proving Gallai's conjecture (Combinatorica, 2007) is pre-posting. arXiv:2007.02834 (non-separating spanning trees for alpha=2) and arXiv:2504.01918 (long-eared digraphs) are post-2013 but address different questions. No verifiable post-2013 paper directly concerning Bondy's cyclomatic-number conjecture was found across four distinct search queries.",
+  "slug": "cyclic_spanning_subdigraph_with_small_cyclomatic_number",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 02)",
+  "search_enabled": true
+}

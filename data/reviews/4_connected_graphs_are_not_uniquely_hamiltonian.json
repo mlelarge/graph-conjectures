@@ -1,0 +1,38 @@
+{
+  "status": "open",
+  "confidence": "medium",
+  "summary": "The conjecture that every 4-connected Hamiltonian graph has a second Hamilton cycle remains open. Fleischner's companion paper (already cited in the OPG bibliography as 'to appear,' published 2014) constructs uniquely Hamiltonian graphs of minimum degree 4 but with connectivity only 2 or 3, confirming that 4-connectivity is the essential barrier. A 2023–2024 extension by Brinkmann and De Pauw further develops such constructions for many degree sequences while still not surpassing 3-connectivity.",
+  "since_posted": [
+    {
+      "title": "Uniquely hamiltonian graphs for many sets of degrees",
+      "authors": "Gunnar Brinkmann, Matthias De Pauw",
+      "year": 2023,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2304.08946",
+      "doi": null,
+      "arxiv_id": "2304.08946",
+      "kind": "partial",
+      "claim": "For all degree sets $M$ with minimum 4, except possibly $\\{4\\}$, $\\{4,5\\}$, and $\\{4,6\\}$, uniquely Hamiltonian graphs with exactly those vertex degrees exist; the best connectivity achieved is 3, leaving the 4-connected case of the conjecture untouched."
+    }
+  ],
+  "search_queries": [
+    "Fleischner uniquely Hamiltonian 4-connected graphs second Hamilton cycle conjecture",
+    "uniquely Hamiltonian graphs minimum degree 4 Fleischner",
+    "4-connected graph unique Hamilton cycle counterexample proof 2014 2015 2016 2017 2018 2019 2020",
+    "4-connected uniquely Hamiltonian second Hamilton cycle conjecture progress 2020 2021 2022 2023 2024 2025",
+    "Sheehan conjecture 4-regular Hamiltonian second cycle progress arxiv 2022 2023 2024 2025 2026",
+    "\"4-connected\" \"Hamiltonian\" \"second Hamilton cycle\" OR \"uniquely hamiltonian\" graph theory arxiv",
+    "Fleischner conjecture \"every 4-connected\" Hamiltonian \"second\" Hamilton cycle solved proved 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2304.08946",
+    "https://arxiv.org/abs/2510.18359",
+    "https://arxiv.org/abs/2112.05087"
+  ],
+  "notes": "The Fleischner 2014 J. Graph Theory paper (DOI 10.1002/jgt.21729) is the OPG-cited 'to appear' reference and is treated as background, not new progress. Wiley and Springer journal pages returned 403/redirect errors, preventing direct verification. The related Sheehan conjecture (second Hamilton cycle in 4-regular graphs) is also open. Brinkmann–De Pauw (arXiv:2304.08946) was published in a journal in December 2024 but the journal name was not visible from the abstract page. Eppstein (arXiv:2510.18359, 2025) and Lancia et al. (arXiv:2112.05087, 2021) were verified but are not directly relevant to the 4-connected conjecture.",
+  "slug": "4_connected_graphs_are_not_uniquely_hamiltonian",
+  "reviewed_at": "2026-05-07",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "elapsed_seconds": 237.3
+}

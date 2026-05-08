@@ -1,0 +1,61 @@
+{
+  "status": "partial",
+  "confidence": "medium",
+  "summary": "The problem remains open in general, but significant partial results have been obtained. Pitz (2018) proved that every one-ended Hamiltonian cubic graph with end degree 3 contains a second Hamilton circle, ruling out uniquely Hamiltonian 1-ended cubic regular graphs (with end degree 3). Miraftab and Morris (2023, JGT 2025) characterized all uniquely Hamiltonian vertex-transitive graphs with finitely many ends, finding that no one-ended vertex-transitive regular graph of degree $r > 2$ is uniquely Hamiltonian; meanwhile Heuer (2018) showed that regular infinite graphs with a unique Hamilton circle do exist, but only with infinitely many ends, leaving Mohar's original 1-ended question open for non-vertex-transitive regular graphs of degree $r > 2$.",
+  "since_posted": [
+    {
+      "title": "Hamiltonicity in locally finite graphs: two extensions and a counterexample",
+      "authors": "Karl Heuer",
+      "year": 2018,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/1701.06029",
+      "doi": null,
+      "arxiv_id": "1701.06029",
+      "kind": "partial",
+      "claim": "Constructs a regular locally finite infinite graph with a unique Hamilton circle (answering positively whether such graphs exist), but the construction has infinitely many ends, so it does not resolve the 1-ended variant of Mohar's problem."
+    },
+    {
+      "title": "Hamilton cycles in infinite cubic graphs",
+      "authors": "Max Pitz",
+      "year": 2018,
+      "venue": "Electronic Journal of Combinatorics",
+      "url": "https://www.combinatorics.org/ojs/index.php/eljc/article/view/v25i3p3",
+      "doi": null,
+      "arxiv_id": "1705.07031",
+      "kind": "partial",
+      "claim": "Proves that every one-ended Hamiltonian cubic graph with end degree 3 contains a second Hamilton circle, thereby showing no such graph is uniquely Hamiltonian, which resolves the $r = 3$ case of Mohar's problem under the matching end-degree condition."
+    },
+    {
+      "title": "On vertex-transitive graphs with a unique hamiltonian cycle",
+      "authors": "Babak Miraftab, Dave Witte Morris",
+      "year": 2023,
+      "venue": "Journal of Graph Theory",
+      "url": "https://arxiv.org/abs/2303.11124",
+      "doi": "10.1002/jgt.23166",
+      "arxiv_id": "2303.11124",
+      "kind": "partial",
+      "claim": "Characterizes all uniquely Hamiltonian vertex-transitive graphs with finitely many ends, establishing that no one-ended vertex-transitive regular graph of degree $r > 2$ admits a unique Hamilton circle, and that the only two-ended examples are specific known graphs."
+    }
+  ],
+  "search_queries": [
+    "uniquely hamiltonian locally finite infinite graph regular degree",
+    "Sheehan conjecture infinite graphs uniquely hamiltonian ends arXiv",
+    "uniquely hamiltonian 1-ended graph Mohar conjecture",
+    "hamilton circle infinite graph Freudenthal compactification uniquely hamiltonian regular",
+    "Heuer one-ended uniquely hamiltonian cubic graph Hamilton circle arXiv",
+    "Miraftab vertex-transitive unique hamiltonian infinite graph 2025 arXiv"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/1701.06029",
+    "https://arxiv.org/abs/1705.07031",
+    "https://www.combinatorics.org/ojs/index.php/eljc/article/view/v25i3p3",
+    "https://arxiv.org/abs/2303.11124",
+    "https://www.sfu.ca/~mohar/Problems/P0703_HamiltonicityInfinite.html",
+    "https://arxiv.org/abs/1902.06402"
+  ],
+  "notes": "The Miraftab-Morris paper (arXiv:2303.11124) was accessed only via abstract page; the full text could not be retrieved (Wiley page returned 403, PDF not readable), so the specific theorem about 1-ended vertex-transitive graphs is inferred from search-result summaries and should be treated with medium confidence. The Heuer (1701.06029) paper's construction: the number of ends is not stated in the arXiv abstract; search summaries suggest continuum many ends. The Pitz result is the most directly verified partial answer to the 1-ended problem. For general non-vertex-transitive locally finite 1-ended regular graphs of degree r > 3, the problem appears fully open.",
+  "slug": "infinite_uniquely_hamiltonian_graphs",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 08)",
+  "search_enabled": true
+}

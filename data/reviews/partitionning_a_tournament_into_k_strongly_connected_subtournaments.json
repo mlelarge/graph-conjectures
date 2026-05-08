@@ -1,0 +1,44 @@
+{
+  "status": "solved",
+  "confidence": "high",
+  "summary": "Kühn, Osthus, and Townsend (2016) proved that $f_t(k,\\ldots,k) = O(k^7 t^4)$ exists, giving an affirmative answer to Thomassen's partition question for the uniform case; the general non-uniform case (different $k_i$) follows trivially by setting $k = \\max_i k_i$. Girão and Letzter (2025) subsequently confirmed the optimal linear bound $f_t(k,\\ldots,k) = O(kt)$, matching the lower bound up to a constant.",
+  "since_posted": [
+    {
+      "title": "Proof of a tournament partition conjecture and an application to 1-factors with prescribed cycle lengths",
+      "authors": "Daniela Kühn, Deryk Osthus, Timothy Townsend",
+      "year": 2016,
+      "venue": "Combinatorica",
+      "url": "https://arxiv.org/abs/1309.7677",
+      "doi": "10.1007/s00493-015-3186-8",
+      "arxiv_id": "1309.7677",
+      "kind": "proof",
+      "claim": "Proves existence of $f_t(k,\\ldots,k) = O(k^7 t^4)$, establishing an affirmative answer to Thomassen's question: every sufficiently strongly connected tournament can be partitioned into $t$ parts each inducing a strongly $k$-connected subtournament."
+    },
+    {
+      "title": "Partitioning a tournament into sub-tournaments of high connectivity",
+      "authors": "António Girão, Shoham Letzter",
+      "year": 2025,
+      "venue": "Combinatorica",
+      "url": "https://arxiv.org/abs/2210.17371",
+      "doi": "10.1007/s00493-025-00161-3",
+      "arxiv_id": "2210.17371",
+      "kind": "proof",
+      "claim": "Proves the optimal linear bound $f_t(k,\\ldots,k) = O(kt)$, confirming a 2016 conjecture of Kühn, Osthus, and Townsend and showing the bound is tight up to a constant factor."
+    }
+  ],
+  "search_queries": [
+    "partition tournament strongly connected subtournaments Thomassen conjecture",
+    "g(k1,...,kp) strong tournament partition k-strongly connected subtournaments existence",
+    "partition tournament two strongly connected subtournaments g(2,2) open problem",
+    "arXiv tournament partition strongly connected components subtournament 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2210.17371",
+    "https://arxiv.org/abs/1309.7677"
+  ],
+  "notes": "The Kühn-Osthus-Townsend paper (arXiv:1309.7677, submitted 2013-09-29, published Combinatorica ~2016) formally treats the uniform case (all $k_i = k$). The non-uniform Thomassen problem reduces to the uniform case via $k = \\max_i k_i$, so $g(k_1,\\ldots,k_p) \\leq f_p(\\max_i k_i, \\ldots, \\max_i k_i)$. The Springer pages for both Combinatorica articles were authentication-blocked; publication years and DOIs are inferred from arXiv metadata (last revision June 2025 for Girão-Letzter) and DOI string patterns. The Girão-Letzter paper (arXiv:2210.17371) was confirmed published in Combinatorica with DOI 10.1007/s00493-025-00161-3.",
+  "slug": "partitionning_a_tournament_into_k_strongly_connected_subtournaments",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 05)",
+  "search_enabled": true
+}

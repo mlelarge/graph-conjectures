@@ -1,0 +1,33 @@
+{
+  "status": "partial",
+  "confidence": "medium",
+  "summary": "The original existence question — whether for every $d$ there exists $g$ such that every graph with average degree less than $d$ and girth at least $g$ has a matching-cut — remains open as stated. Feghali, Lucke, Paulusma, and Ries (2022/2023) proved that Matching Cut is NP-complete for bipartite graphs of girth at least $g$ (any $g \\geq 3$) and maximum degree at most 60, resolving a 20-year-old complexity question and implying that high girth alone does not force a matching cut even in bounded-degree graphs. The structural existence question for specific ranges of average degree $d$ remains unresolved.",
+  "since_posted": [
+    {
+      "title": "Matching Cuts in Graphs of High Girth and H-Free Graphs",
+      "authors": "Carl Feghali, Felicia Lucke, Daniël Paulusma, Bernard Ries",
+      "year": 2023,
+      "venue": "34th International Symposium on Algorithms and Computation (ISAAC 2023), LIPIcs vol. 283",
+      "url": "https://arxiv.org/abs/2212.12317",
+      "doi": "10.4230/LIPIcs.ISAAC.2023.31",
+      "arxiv_id": "2212.12317",
+      "kind": "partial",
+      "claim": "Proves Matching Cut is NP-complete for bipartite graphs of girth at least $g$ (for every fixed $g \\geq 3$) and maximum degree at most 60, resolving a 20-year-old complexity question; this implies the existence of high-girth bounded-degree graphs with no matching cut, which has negative implications for the OPG existence question for large average degree."
+    }
+  ],
+  "search_queries": [
+    "matching cut girth graph decomposable conjecture",
+    "matching cut average degree girth graph theory results 2012 2025",
+    "Bonsma matching cut girth high girth sparse graphs decomposable",
+    "arXiv matching-cut problem graph girth degree conjecture proof"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2212.12317",
+    "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ISAAC.2023.31"
+  ],
+  "notes": "The OPG existence question (structural: does high girth + low average degree guarantee a matching cut?) is distinct from the complexity question resolved by Feghali et al. The Feghali et al. NP-completeness result implies there are NO-instances (graphs without matching cuts) with high girth and max degree ≤ 60, but the average degree of those specific NO-instances is not confirmed from the abstract; for small d (e.g., d ≤ 3) the existence question may still be open. Bonsma's 2009 result that every planar graph of girth ≥ 6 has a matching cut predates the 2011 OPG posting. The Springer journal version (Algorithmica 2025, DOI 10.1007/s00453-025-01318-8) could not be verified due to access redirect.",
+  "slug": "matching_cut_and_girth",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 04)",
+  "search_enabled": true
+}

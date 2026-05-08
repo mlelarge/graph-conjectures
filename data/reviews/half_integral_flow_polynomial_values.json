@@ -1,0 +1,25 @@
+{
+  "status": "open",
+  "confidence": "low",
+  "summary": "Mohar's conjecture that $\\Phi(G, 5.5) > 0$ for every 2-edge-connected graph $G$ appears to remain open. No post-2007 paper resolving the conjecture—either by proving it or finding a counterexample—was found across multiple literature searches. The problem asks for a non-integer rational $x > 5$ with this positivity property, going beyond Seymour's 6-flow theorem which only gives $\\Phi(G,k) > 0$ for integer $k \\geq 6$.",
+  "since_posted": [],
+  "search_queries": [
+    "flow polynomial half-integer values 2-edge-connected graph conjecture Mohar",
+    "flow polynomial Phi(G, 5.5) nowhere-zero flow Seymour 6-flow",
+    "chromatic polynomial flow polynomial half-integer real roots graph theory arXiv",
+    "\"flow polynomial\" \"5.5\" OR \"11/2\" graph positivity 2-edge-connected",
+    "arXiv flow polynomial non-integer values positive 2-edge-connected graph 2008 2009 2010 2015 2020",
+    "\"flow polynomial\" \"half-integral\" OR \"non-integer\" positivity graph 2-edge-connected arXiv 2010 2015 2020 2025"
+  ],
+  "verified_urls": [
+    "https://www.sfu.ca/~mohar/Book/BookProblems.html",
+    "https://arxiv.org/abs/1805.07878",
+    "https://arxiv.org/abs/2007.05195",
+    "https://arxiv.org/html/2502.12773"
+  ],
+  "notes": "The canonical OPG page (both openproblemgarden.org and garden.irmacs.sfu.ca) was inaccessible (ECONNREFUSED). The survey arXiv:2007.05195 ('A survey on the study of real zeros of flow polynomials', 2020) is likely the most relevant post-2007 work but its full content was not retrievable to check for discussion of this specific conjecture. The ScienceDirect page for a note on flow polynomials (S0012365X08000721) returned HTTP 403. No paper was found that either proves or disproves the conjecture at x = 5.5. Confidence is low due to inability to access the full text of the most relevant survey.",
+  "slug": "half_integral_flow_polynomial_values",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 04)",
+  "search_enabled": true
+}

@@ -1,0 +1,22 @@
+{
+  "status": "open",
+  "confidence": "medium",
+  "summary": "The problem of determining $\\text{wsat}(K_n, Q_3)$ — the minimum number of edges in a weakly $Q_3$-saturated subgraph of $K_n$ — remains open. The related problem of $\\text{wsat}(Q_d, Q_m)$ (hypercube host) was resolved by Morrison, Noel, and Scott, but no paper found addresses the complete-graph host case. Active research on weak saturation in the clique has focused on bipartite graphs and multipartite structures, leaving the hypercube case open.",
+  "since_posted": [],
+  "search_queries": [
+    "wsat(K_n, Q_3) weak saturation cube clique graph theory",
+    "Morrison Noel Scott weak saturation hypercube clique bootstrap percolation",
+    "weak saturation Q_m K_n hypercube complete graph arXiv",
+    "\"weak saturation\" \"Q_3\" OR \"3-cube\" clique recent results 2017 2018 2019 2020 2021 2022 2023 2024"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2604.07109",
+    "https://arxiv.org/abs/2109.03703",
+    "https://arxiv.org/abs/1408.5488"
+  ],
+  "notes": "Searches found extensive recent literature on weak saturation in cliques (complete bipartite, tensor products, multipartite hypergraphs) but nothing specifically addressing wsat(K_n, Q_m) for any m. The MNS paper (arXiv:1408.5488) solved wsat(Q_d, Q_m) but that is for the hypercube host, not the complete graph host. The Springer Combinatorica 2025 paper on 'weak saturation rank' could not be fully accessed due to redirects. The problem likely remains open.",
+  "slug": "weak_saturation_of_the_cube_in_the_clique",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 06)",
+  "search_enabled": true
+}

@@ -1,0 +1,43 @@
+{
+  "status": "partial",
+  "confidence": "medium",
+  "summary": "The conjecture that every 6-edge-connected Eulerian graph $G$ with a 2-transition system $P$ admits a compatible decomposition remains open. Since posting, Fleischner, Bagheri Gh., C.-Q. Zhang, and Z. Zhang (2019) completely resolved the conjecture for the class of $K_5$-transition-minor-free Eulerian graphs, extending the earlier Fan–Zhang result for $K_5$-minor-free graphs. No improvement on the 80-edge-connectivity bound (the best general result at posting) appears in the verified literature.",
+  "since_posted": [
+    {
+      "title": "Cycle covers (III) – Compatible circuit decomposition and K5-transition minor",
+      "authors": "Herbert Fleischner, Behrooz Bagheri Gh., Cun-Quan Zhang, Zhang Zhang",
+      "year": 2019,
+      "venue": "Journal of Combinatorial Theory, Series B",
+      "url": "https://mathanddata.wvu.edu/directory/emeritus/cun-quan-zhang",
+      "doi": null,
+      "arxiv_id": null,
+      "kind": "partial",
+      "claim": "Completely resolves the compatible circuit decomposition conjecture for Eulerian graphs that are $K_5$-transition-minor-free, generalising the earlier Fan–Zhang theorem for $K_5$-minor-free graphs."
+    }
+  ],
+  "search_queries": [
+    "compatible decomposition 2-transition system Eulerian graph 6-edge-connected conjecture",
+    "transition system compatible decomposition Eulerian graph edge-connectivity DeVos arXiv",
+    "cycle double cover 2-transition system Eulerian graph compatible decomposition improvement bound",
+    "Sabidussi conjecture Euler tour cycle decomposition transition system graph theory",
+    "Jackson \"compatible circuit decompositions\" Eulerian graphs 6-edge-connected arXiv 2007 2008 2009 2010",
+    "\"cycle covers\" III \"compatible circuit decomposition\" \"K5-transition minor\" Fan Zhang JCTB 2019",
+    "Fleischner Genest Jackson \"compatible circuit decompositions\" Eulerian graphs journal 2009 2010 2011"
+  ],
+  "verified_urls": [
+    "https://mathanddata.wvu.edu/directory/emeritus/cun-quan-zhang",
+    "https://math.wvu.edu/~cqzhang/Publication-files/my-paper/JCTB-2019-CC-III.pdf",
+    "https://webspace.maths.qmul.ac.uk/b.jackson/conjSUBMIT.pdf",
+    "https://scholar.google.com/scholar?q=compatible+circuit+decompositions+eulerian+graphs+Jackson",
+    "https://dblp.org/pid/45/210.html",
+    "https://arxiv.org/search/?searchtype=all&query=compatible+circuit+decomposition+eulerian+transition+system&start=0",
+    "https://arxiv.org/search/?searchtype=all&query=compatible+decomposition+eulerian+transition&start=0",
+    "https://web.math.princeton.edu/~pds/papers/cutcolouring/paper.pdf",
+    "https://webspace.maths.qmul.ac.uk/b.jackson/"
+  ],
+  "notes": "The Fleischner–Genest–Jackson preprint 'Compatible Circuit Decompositions of Eulerian Graphs' (September 2006 manuscript visible on Jackson's QMUL page) predates the OPG posting and was not found to have been published as a journal article after 2007-03-07; it was not cited. The 2019 JCTB paper (Cycle Covers III) was confirmed via the WVU directory of C.-Q. Zhang, listing it as JCTB 137 (2019): 25-54. The ScienceDirect full-text page and ResearchGate abstract both returned 403, so detailed abstract text could not be read directly; the characterisation of the paper's result relies on the search-engine AI summaries and the WVU author page listing, which are consistent. No evidence was found that the 80-edge-connectivity general bound has been improved in the post-2007 period. The main 6-edge-connected conjecture appears to remain open.",
+  "slug": "decomposing_eulerian_graphs",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 05)",
+  "search_enabled": true
+}

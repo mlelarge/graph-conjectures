@@ -1,0 +1,47 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The conjecture that every triangle-free graph on $n$ vertices can be made bipartite by deleting at most $n^2/25$ edges remains open. Balogh, Clemen, and Lidický (2021) proved it for triangle-free graphs with edge density at most $0.2486$ or at least $0.3197$, and improved the best general upper bound from $n^2/18$ to $n^2/23.5$. A related spectral approach by the same group and coauthors (2022) further investigated structural properties of triangle-free graphs, but the full conjecture is unresolved.",
+  "since_posted": [
+    {
+      "title": "Max Cuts in Triangle-free Graphs",
+      "authors": "József Balogh, Felix Christian Clemen, Bernard Lidický",
+      "year": 2021,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2103.14179",
+      "doi": null,
+      "arxiv_id": "2103.14179",
+      "kind": "partial",
+      "claim": "Proves the Erdős–Faudree–Pach–Spencer conjecture for triangle-free graphs with edge density at most 0.2486 or at least 0.3197, and improves the general upper bound on edges to delete to achieve bipartiteness from $n^2/18$ to $n^2/23.5$."
+    },
+    {
+      "title": "The Spectrum of Triangle-free Graphs",
+      "authors": "József Balogh, Felix Christian Clemen, Bernard Lidický, Sergey Norin, Jan Volec",
+      "year": 2022,
+      "venue": "SIAM Journal on Discrete Mathematics",
+      "url": "https://arxiv.org/abs/2204.00093",
+      "doi": "10.1137/22M150767X",
+      "arxiv_id": "2204.00093",
+      "kind": "partial",
+      "claim": "Via flag algebra and spectral methods, proves bounds on the smallest eigenvalue of the signless Laplacian of triangle-free graphs, with progress toward structural results related to the bipartization conjecture."
+    }
+  ],
+  "search_queries": [
+    "Erdos Faudree Pach Spencer triangle-free graph bipartite edge deletion n^2/25 conjecture",
+    "odd cycle transversal triangle-free graph bipartite subgraph n squared edges conjecture progress",
+    "making triangle-free graph bipartite edge removal upper bound arXiv",
+    "Balogh Clemen Lidicky \"triangle-free\" bipartite \"n^2/25\" 2022 2023 2024 2025 solved"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2103.14179",
+    "https://arxiv.org/abs/1810.12144",
+    "https://hupple.github.io/files/Minimum%20number%20of%20edges%20that%20occur%20in%20odd%20cycles.pdf",
+    "https://arxiv.org/abs/2204.00093",
+    "https://arxiv.org/abs/2412.13485"
+  ],
+  "notes": "The ScienceDirect page for '10 problems for partitions of triangle-free graphs' (2023) returned HTTP 403 and could not be verified; it may contain additional partial results. The UCSD Erdős problems page (mathweb.ucsd.edu) returned a certificate error and could not be fetched. The extremal bound n²/25 is tight, realized by the balanced blow-up of C₅. The 2022 spectral paper (arXiv:2204.00093) is published in SIAM J. Discrete Math. (doi confirmed in search results) but the exact contribution to the n²/25 bound could not be fully characterized from the abstract alone.",
+  "slug": "odd_cycle_transversal_in_triangle_free_graphs",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 03)",
+  "search_enabled": true
+}

@@ -1,0 +1,56 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Jørgensen's conjecture has been proved for all *sufficiently large* 6-connected graphs by Kawarabayashi, Norine, Thomas, and Wollan (2019), with a companion paper handling the bounded tree-width case, but the full conjecture for all 6-connected graphs (including small ones) remains open. A 2020 paper by Odeneal and Pavelescu verified the conjecture for the specific case of graphs of order 12.",
+  "since_posted": [
+    {
+      "title": "K6 minors in 6-connected graphs of bounded tree-width",
+      "authors": "Ken-ichi Kawarabayashi, Serguei Norine, Robin Thomas, Paul Wollan",
+      "year": 2019,
+      "venue": "Journal of Combinatorial Theory, Series B",
+      "url": "https://arxiv.org/abs/1203.2171",
+      "doi": "10.1016/j.jctb.2017.09.009",
+      "arxiv_id": "1203.2171",
+      "kind": "partial",
+      "claim": "Proves Jørgensen's conjecture for all sufficiently large 6-connected graphs of bounded tree-width, a key step toward the full result."
+    },
+    {
+      "title": "K6 minors in large 6-connected graphs",
+      "authors": "Ken-ichi Kawarabayashi, Serguei Norine, Robin Thomas, Paul Wollan",
+      "year": 2019,
+      "venue": "Journal of Combinatorial Theory, Series B",
+      "url": "https://arxiv.org/abs/1203.2192",
+      "doi": "10.1016/j.jctb.2017.09.010",
+      "arxiv_id": "1203.2192",
+      "kind": "partial",
+      "claim": "Proves Jørgensen's conjecture for all sufficiently large 6-connected graphs, establishing that every such graph with no K6 minor is apex."
+    },
+    {
+      "title": "Simple graphs of order 12 and minimum degree 6 contain K6 minors",
+      "authors": "Ryan Odeneal, Andrei Pavelescu",
+      "year": 2020,
+      "venue": "Involve, a Journal of Mathematics",
+      "url": "https://projecteuclid.org/journals/involve-a-journal-of-mathematics/volume-13/issue-5/Simple-graphs-of-order-12-and-minimum-degree-6-contain/10.2140/involve.2020.13.829.short",
+      "doi": "10.2140/involve.2020.13.829",
+      "arxiv_id": null,
+      "kind": "partial",
+      "claim": "Proves that every simple graph of order 12 with minimum degree 6 contains a K6 minor, verifying Jørgensen's conjecture for graphs of order 12."
+    }
+  ],
+  "search_queries": [
+    "Jorgensen's conjecture K6 minor 6-connected apex graph proof 2020 2021 2022 2023 2024 2025",
+    "Kawarabayashi Norine Thomas Wollan K6 minors 6-connected graphs complete proof Jorgensen conjecture",
+    "Jørgensen conjecture apex graph K6 minor solved disproved recent result site:arxiv.org",
+    "Jørgensen conjecture K6 minor apex 6-connected complete proof 2020 2021 2022 2023 2024 2025 2026 arxiv"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/1203.2192",
+    "https://arxiv.org/abs/1203.2171",
+    "https://projecteuclid.org/journals/involve-a-journal-of-mathematics/volume-13/issue-5/Simple-graphs-of-order-12-and-minimum-degree-6-contain/10.2140/involve.2020.13.829.short"
+  ],
+  "notes": "The two Kawarabayashi–Norine–Thomas–Wollan papers (arXiv 2012, journal 2019) are already cited in the OPG problem statement, but are included here as they post-date the 2007 posting. The exact size threshold for 'sufficiently large' is not stated in the abstracts. No post-2020 paper completing the conjecture for all small graphs was found; the conjecture remains open for graphs below the threshold of the KNTW result.",
+  "slug": "jorgensens_conjecture",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 04)",
+  "search_enabled": true
+}

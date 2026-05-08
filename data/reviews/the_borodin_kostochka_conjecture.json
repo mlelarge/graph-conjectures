@@ -1,0 +1,104 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The Borodin–Kostochka conjecture remains open for general graphs with $\\Delta \\ge 9$. Since the problem was posted, the conjecture has been verified for several hereditary graph classes ($(P_5,\\text{gem})$-free, $(P_6,\\text{apple,torch})$-free, and others), and the unconditional degree threshold has been reduced from Reed's $\\Delta_0 \\le 10^{14}$ to $\\Delta \\ge 5.2\\times10^9$ in 2026; a companion 2026 paper also establishes the analogue for correspondence (DP) coloring at $\\Delta \\ge 3\\times10^9$.",
+  "since_posted": [
+    {
+      "title": "Coloring $(P_5, \\text{gem})$-free graphs with $\\Delta-1$ colors",
+      "authors": "Daniel W. Cranston, Hudson Lafayette, Landon Rabern",
+      "year": 2022,
+      "venue": "Journal of Graph Theory",
+      "url": "https://arxiv.org/abs/2006.02015",
+      "doi": null,
+      "arxiv_id": "2006.02015",
+      "kind": "partial",
+      "claim": "Proves the Borodin–Kostochka conjecture for $(P_5,\\text{gem})$-free graphs: if $\\Delta(G)\\ge 9$ and $\\omega(G)\\le\\Delta(G)-1$ then $\\chi(G)\\le\\Delta(G)-1$."
+    },
+    {
+      "title": "Validity of Borodin and Kostochka Conjecture for classes of graphs without a single, forbidden subgraph on 5 vertices",
+      "authors": "Medha Dhurandhar",
+      "year": 2021,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2101.01354",
+      "doi": null,
+      "arxiv_id": "2101.01354",
+      "kind": "partial",
+      "claim": "Verifies the conjecture for $(P_4\\cup K_1)$-free, $P_5$-free, Chair-free, and graphs with dense neighborhoods."
+    },
+    {
+      "title": "Borodin-Kostochka conjecture for a family of $P_6$-free graphs",
+      "authors": "Di Wu, Rong Wu",
+      "year": 2023,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2306.12062",
+      "doi": null,
+      "arxiv_id": "2306.12062",
+      "kind": "partial",
+      "claim": "Proves the conjecture for $(P_6,\\text{apple,torch})$-free graphs, extending the known result for $(P_5,C_4)$-free graphs."
+    },
+    {
+      "title": "Coloring some $(P_6,C_4)$-free graphs with $\\Delta-1$ colors",
+      "authors": "Ran Chen, Di Wu, Xiaowen Zhang",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2405.18455",
+      "doi": null,
+      "arxiv_id": "2405.18455",
+      "kind": "partial",
+      "claim": "Proves the conjecture for $(P_6,C_4,H)$-free graphs where $H\\in\\{K_7,C_5^+\\}$."
+    },
+    {
+      "title": "On graphs with chromatic number and maximum degree both equal to nine",
+      "authors": "Rachel Galindo, Jessica McDonald",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2408.12693",
+      "doi": null,
+      "arxiv_id": "2408.12693",
+      "kind": "partial",
+      "claim": "Proves structural results in support of the $\\Delta=9$ base case of the conjecture, showing that vertex-critical graphs satisfying certain conditions must contain $K_3\\vee\\overline{K_6}$."
+    },
+    {
+      "title": "On the Borodin–Kostochka conjecture for graphs with large maximum degree",
+      "authors": "Feng Liu, Shuang Sun, Yan Wang",
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2603.16670",
+      "doi": null,
+      "arxiv_id": "2603.16670",
+      "kind": "partial",
+      "claim": "Reduces the unconditional threshold: every graph with $\\Delta\\ge 5.2\\times10^9$ and $\\omega(G)<\\Delta$ satisfies $\\chi(G)\\le\\Delta-1$, improving Reed's 1999 bound of $\\Delta_0\\le 10^{14}$."
+    },
+    {
+      "title": "On Borodin-Kostochka conjecture for correspondence coloring",
+      "authors": "Zděněk Dvořák, Ross J. Kang, David Mikšaník",
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2603.14427",
+      "doi": null,
+      "arxiv_id": "2603.14427",
+      "kind": "partial",
+      "claim": "Proves that for $\\Delta\\ge 3\\times10^9$, every graph satisfies $\\chi_{\\mathrm{DP}}(G)\\le\\max(\\omega(G),\\Delta-1)$, establishing the correspondence-coloring analogue of the conjecture for large degree."
+    }
+  ],
+  "search_queries": [
+    "Borodin-Kostochka conjecture chromatic number maximum degree proof 2013 2014 2015 2016 2017 2018 2019 2020",
+    "Cranston Rabern \"Borodin-Kostochka\" coloring graph Delta-1 colors arXiv",
+    "\"Borodin-Kostochka\" conjecture solved disproved counterexample progress 2020 2021 2022 2023 2024 2025",
+    "Brooks theorem strengthening chromatic number Delta-1 coloring clique number conjecture recent progress"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2603.14427",
+    "https://arxiv.org/abs/2603.16670",
+    "https://arxiv.org/abs/2306.12062",
+    "https://arxiv.org/abs/2101.01354",
+    "https://arxiv.org/abs/2006.02015",
+    "https://arxiv.org/abs/2405.18455",
+    "https://arxiv.org/abs/2408.12693"
+  ],
+  "notes": "The conjecture is definitively still open in general. A ScienceDirect paper on the list-chromatic version (S0012365X22005064) and a paper on K_{1,3}-bar-free graphs (S0166218X2400266X) returned HTTP 403 and could not be verified; they are not cited. The arXiv paper 2101.01354 by Dhurandhar is not peer-reviewed and should be treated with appropriate caution. The 2026 papers (2603.16670 and 2603.14427) are preprints not yet journal-published as of this review date.",
+  "slug": "the_borodin_kostochka_conjecture",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 01)",
+  "search_enabled": true
+}

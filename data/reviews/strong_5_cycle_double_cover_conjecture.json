@@ -1,0 +1,49 @@
+{
+  "status": "partial",
+  "confidence": "medium",
+  "summary": "The strong 5-cycle double cover conjecture remains open. Hoffmann-Ostenhof (2012) established a necessary and sufficient condition for a 2-regular subgraph to be contained in a 5-cycle double cover of a cubic graph, providing a partial characterisation. Further partial progress includes results showing that when a non-separating cycle is present in a 2-connected cubic graph with suitable structure, a cycle double cover (or 5-cycle double cover) containing that cycle exists, but the full conjecture in generality has not been proved.",
+  "since_posted": [
+    {
+      "title": "A note on 5-cycle double covers",
+      "authors": "Arthur Hoffmann-Ostenhof",
+      "year": 2012,
+      "venue": "Graphs and Combinatorics",
+      "url": "https://arxiv.org/abs/1209.0096",
+      "doi": "10.1007/s00373-012-1169-8",
+      "arxiv_id": "1209.0096",
+      "kind": "partial",
+      "claim": "Establishes a necessary and sufficient condition for a 2-regular subgraph to be contained in a 5-cycle double cover of a bridgeless cubic graph, directly relevant to the strong 5-CDC conjecture."
+    },
+    {
+      "title": "Cycle double covers and non-separating cycles",
+      "authors": "Arthur Hoffmann-Ostenhof, Cun-Quan Zhang, Zhang Zhang",
+      "year": 2017,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/1711.10614",
+      "doi": null,
+      "arxiv_id": "1711.10614",
+      "kind": "partial",
+      "claim": "Proves that every 2-connected cubic graph admitting a decomposition into a spanning tree and a 2-regular subgraph C with at most 3 circuits has a cycle double cover containing C, giving a partial approach toward the strong CDC and strong 5-CDC conjectures."
+    }
+  ],
+  "search_queries": [
+    "strong 5-cycle double cover conjecture Hoffmann-Ostenhof bridgeless cubic graph",
+    "five cycle double cover conjecture circuit bridgeless cubic graph progress 2011 2026",
+    "Hoffmann-Ostenhof cycle double cover conjecture arXiv",
+    "\"strong cycle double cover\" \"5-cycle double cover\" cubic graph conjecture recent"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/1209.0096",
+    "https://arxiv.org/abs/1607.04768",
+    "https://arxiv.org/abs/1711.10614",
+    "https://arxiv.org/abs/2511.07285",
+    "https://arxiv.org/abs/2605.01410",
+    "https://arxiv.org/html/2511.07285v1",
+    "https://en.wikipedia.org/wiki/Cycle_double_cover"
+  ],
+  "notes": "A 2025 Discrete Mathematics paper 'Non-separating cycles and 5-cycle double covers' (ScienceDirect pii/S0012365X25001232) appears to extend the non-separating-cycle approach to 5-CDCs, but direct access returned 403; it could not be verified and is not cited. arXiv:1607.04768 appeared in searches but is about a different Hoffmann-Ostenhof conjecture (graph decomposition into spanning tree + matching + cycles). The 2026 paper arXiv:2605.01410 and the 2025 paper arXiv:2511.07285 address the general CDC conjecture approximately but do not tackle the strong 5-CDC conjecture specifically. The Springer page for the 2012 'Strong 5-Cycle Double Covers of Graphs' paper (10.1007/s00373-012-1266-8) redirected to authentication; it could not be verified.",
+  "slug": "strong_5_cycle_double_cover_conjecture",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 06)",
+  "search_enabled": true
+}

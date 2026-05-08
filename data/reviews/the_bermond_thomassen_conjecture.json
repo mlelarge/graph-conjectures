@@ -1,0 +1,68 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The Bermond-Thomassen conjecture ($\\delta^+(D) \\geq 2k-1 \\Rightarrow k$ disjoint cycles) remains open for general digraphs with $k \\geq 4$. Significant post-2007 advances include a new shorter proof for $k=3$ (Bai and Manoussakis, 2018) and verification for triangle-free multipartite and 3-partite tournaments (Gutin et al., 2023). Notably, the stronger conjecture of Bang-Jensen, Bessy, and Thomassé on girth conditions (listed in the OPG discussion) was disproved by Bai and Manoussakis (2018).",
+  "since_posted": [
+    {
+      "title": "On the number of vertex-disjoint cycles in digraphs",
+      "authors": "Yandong Bai, Yannis Manoussakis",
+      "year": 2018,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/1805.02999",
+      "doi": null,
+      "arxiv_id": "1805.02999",
+      "kind": "partial",
+      "claim": "Provides a new shorter proof of the Bermond-Thomassen conjecture for $k=3$, and disproves the stronger Bang-Jensen--Bessy--Thomassé conjecture on girth-conditioned vertex-disjoint cycles."
+    },
+    {
+      "title": "Two disjoint cycles in digraphs",
+      "authors": "Mikołaj Lewandowski, Joanna Polcyn, Christian Reiher",
+      "year": 2022,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2205.10826",
+      "doi": null,
+      "arxiv_id": "2205.10826",
+      "kind": "partial",
+      "claim": "Characterises all outdegree sequences forcing $k$ vertex-disjoint cycles for $k \\leq 2$, giving a complete answer for the two-cycle case that strengthens the Bermond-Thomassen bound."
+    },
+    {
+      "title": "Note on Disjoint Cycles in Multipartite Tournaments",
+      "authors": "Gregory Gutin, Wei Li, Shujing Wang, Anders Yeo, Yacong Zhou",
+      "year": 2023,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2311.13369",
+      "doi": null,
+      "arxiv_id": "2311.13369",
+      "kind": "partial",
+      "claim": "Verifies the Bermond-Thomassen conjecture for the special classes of triangle-free multipartite tournaments and 3-partite tournaments."
+    },
+    {
+      "title": "Vertex-disjoint cycles of different lengths in tournaments",
+      "authors": "Yandong Bai, Wenpei Jia",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/html/2403.03692",
+      "doi": null,
+      "arxiv_id": "2403.03692",
+      "kind": "partial",
+      "claim": "Proves that every tournament with minimum outdegree $\\geq 2k-1$ ($k \\geq 5$) contains $k$ disjoint cycles with at least three of different lengths, a variant of the Bermond-Thomassen problem in the tournament setting."
+    }
+  ],
+  "search_queries": [
+    "Bermond-Thomassen conjecture disjoint cycles digraph minimum out-degree 2k-1 proof",
+    "Bermond Thomassen conjecture disjoint cycles digraphs recent progress arXiv",
+    "disjoint cycles digraph minimum out-degree conjecture Lichiardopol Bessy Thomasse 2008 2009 2010",
+    "\"Bermond-Thomassen\" conjecture solved 2020 2021 2022 2023 2024 2025"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2205.10826",
+    "https://arxiv.org/abs/2311.13369",
+    "https://arxiv.org/abs/1805.02999",
+    "https://arxiv.org/html/2403.03692"
+  ],
+  "notes": "The conjecture is open for $k \\geq 4$ in general digraphs. The Bang-Jensen--Bessy--Thomassé stronger conjecture (mentioned in the OPG discussion) was disproved by Bai--Manoussakis 2018. Publication venue details for arXiv papers could not be verified from fetches alone; all are listed as preprints. The 2022 Lewandowski--Polcyn--Reiher and 2023 Gutin et al. papers may have appeared in journals by now but this was not confirmed.",
+  "slug": "the_bermond_thomassen_conjecture",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 03)",
+  "search_enabled": true
+}

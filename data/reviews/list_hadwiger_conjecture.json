@@ -1,0 +1,59 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The conjecture that every $K_t$-minor-free graph is $ct$-list-colourable for some absolute constant $c$ remains open. Norin and Postle (2020) established the best current upper bound of $O(t(\\log t)^\\beta)$-list-colorability for every $\\beta > 1/4$, falling short of the conjectured linear bound. Steiner (2022) improved the lower bound to $(2-o(1))t$, refuting the specific sub-conjecture $c = 3/2$ of Kawarabayashi and Mohar and showing $c \\geq 2$ is necessary.",
+  "since_posted": [
+    {
+      "title": "Connectivity and choosability of graphs with no $K_t$ minor",
+      "authors": "Sergey Norin, Luke Postle",
+      "year": 2020,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2004.10367",
+      "doi": null,
+      "arxiv_id": "2004.10367",
+      "kind": "partial",
+      "claim": "Every $K_t$-minor-free graph is $O(t(\\log t)^\\beta)$-list-colorable for every $\\beta > 1/4$, improving the previous $O(t\\sqrt{\\log t})$ upper bound and providing the best known bound for list coloring."
+    },
+    {
+      "title": "Improved lower bound for the list chromatic number of graphs with no $K_t$ minor",
+      "authors": "Raphael Steiner",
+      "year": 2022,
+      "venue": "Combinatorics, Probability and Computing",
+      "url": "https://arxiv.org/abs/2110.09403",
+      "doi": "10.1017/S0963548322000116",
+      "arxiv_id": "2110.09403",
+      "kind": "partial",
+      "claim": "The maximum list chromatic number of $K_t$-minor-free graphs is at least $(2-o(1))t$, showing $c \\geq 2$ is necessary and disproving the specific conjecture of Kawarabayashi–Mohar that $c = 3/2$ suffices."
+    },
+    {
+      "title": "Refined list version of Hadwiger's conjecture",
+      "authors": "Yangyan Gu, Yiting Jiang, David R. Wood, Xuding Zhu",
+      "year": 2022,
+      "venue": "SIAM Journal on Discrete Mathematics",
+      "url": "https://arxiv.org/abs/2209.07013",
+      "doi": "10.1137/22M1522413",
+      "arxiv_id": "2209.07013",
+      "kind": "partial",
+      "claim": "Introduces a λ-choosability framework and proves that for any $\\varepsilon > 0$ and sufficiently large $t$, for any partition $\\lambda$ of $\\lfloor(2-\\varepsilon)t\\rfloor$, there exists a $K_t$-minor-free graph that is not λ-choosable, showing fundamental limitations on list colorability below the $2t$ threshold."
+    }
+  ],
+  "search_queries": [
+    "List Hadwiger Conjecture Kt-minor-free list coloring progress 2014 2025",
+    "Kt minor free graph list chromatic number constant factor conjecture",
+    "Kawarabayashi Mohar relaxed Hadwiger conjecture list colorings recent results arXiv",
+    "Hadwiger conjecture list coloring minor free graph solved partial 2020 2025",
+    "arXiv \"Refined List Version Hadwiger\" list coloring Kt minor free",
+    "Raphael Steiner \"list chromatic number\" \"Kt minor\" lower bound 2022 arXiv"
+  ],
+  "verified_urls": [
+    "https://www.cambridge.org/core/journals/combinatorics-probability-and-computing/article/improved-lower-bound-for-the-list-chromatic-number-of-graphs-with-no-kt-minor/8132D67EC14954FEFEF399184D7C9A8B",
+    "https://arxiv.org/abs/2004.10367",
+    "https://arxiv.org/abs/2110.09403",
+    "https://arxiv.org/abs/2209.07013"
+  ],
+  "notes": "The SIAM page for the Gu–Jiang–Wood–Zhu paper returned 403 Forbidden; verified via the arXiv preprint 2209.07013 instead, using DOI from earlier confirmed search results. The Norin–Postle arXiv preprint (2004.10367) may not yet have a published journal version; cited as arXiv. The Delcourt–Postle O(t log log t) result (arXiv:2108.01633) addresses standard chromatic number only, not list coloring. The gap between the upper bound O(t(log t)^beta) and the linear conjectured bound remains open.",
+  "slug": "list_hadwiger_conjecture",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 06)",
+  "search_enabled": true
+}

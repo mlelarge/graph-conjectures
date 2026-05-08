@@ -1,0 +1,45 @@
+{
+  "slug": "cores_of_cayley_graphs",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet (subagent)",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The original conjecture (and even the special case $M=\\mathbb{Z}_2$, the cubelike core question of Nešetřil and Šámal) remains open in general, but substantial partial results have appeared since 2007. Mančinska, Pivotto, Roberson and Royle (2020) showed that cores of cubelike graphs inherit strong structural, spectral and group-theoretic properties and verified the conjecture for cubelike graphs whose core has at most 32 vertices, while Rao and Tan (2025) proved that Cayley graphs on elementary abelian $p$-groups (any prime $p$) of degree less than $5$ or at least $5$ less than the order have complete (hence cubelike) cores, settling the extreme-degree case.",
+  "since_posted": [
+    {
+      "title": "Cores of cubelike graphs",
+      "authors": "Laura Mančinska, Irene Pivotto, David E. Roberson, Gordon Royle",
+      "year": 2020,
+      "venue": "European Journal of Combinatorics",
+      "url": "https://arxiv.org/abs/1808.02051",
+      "doi": "10.1016/j.ejc.2020.103092",
+      "arxiv_id": "1808.02051",
+      "kind": "partial",
+      "claim": "Proves that the core of a cubelike graph inherits strong structural, spectral and group-theoretic properties forcing it to closely resemble a cubelike graph, and verifies the Nešetřil–Šámal conjecture for cubelike graphs whose core has at most 32 vertices (so any counterexample needs ≥128 vertices with a core on ≥64 vertices)."
+    },
+    {
+      "title": "Cayley graphs on elementary abelian groups of extreme degree have complete cores",
+      "authors": "Guang Rao, Colin Tan",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2501.18297",
+      "doi": null,
+      "arxiv_id": "2501.18297",
+      "kind": "partial",
+      "claim": "Shows that for any prime $p$, a Cayley graph on an elementary abelian $p$-group whose degree is strictly less than $5$ or at least $5$ less than the number of vertices has a complete core induced by an $\\mathbb{F}_p$-subspace, settling the Nešetřil–Šámal core question for these extreme-degree cases (and showing the bound is sharp via the folded 5-cube)."
+    }
+  ],
+  "search_queries": [
+    "core of Cayley graph abelian group conjecture Samal",
+    "core cube-like graph Cayley graph Z_2^n homomorphism",
+    "\"core\" \"Cayley graph\" conjecture Samal abelian arXiv",
+    "cores of vertex-transitive graphs Cayley abelian counterexample"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2501.18297",
+    "https://arxiv.org/abs/1808.02051",
+    "https://research-repository.uwa.edu.au/en/publications/cores-of-cubelike-graphs"
+  ],
+  "notes": "The general conjecture for arbitrary abelian $M$ (and even the cubelike $M=\\mathbb{Z}_2$ case) is still open: no full proof or counterexample was found. The two cited papers give the strongest known partial progress (small-core verification and extreme-degree cases). The ScienceDirect page for the journal version returned HTTP 403, so the journal/year/DOI for the Mančinska–Pivotto–Roberson–Royle paper were verified instead via the UWA research repository (European J. Combin. 87, 2020, art. 103092)."
+}

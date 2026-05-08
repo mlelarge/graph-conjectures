@@ -1,0 +1,46 @@
+{
+  "status": "open",
+  "confidence": "high",
+  "summary": "As of 2026, exactly seven triangle-free strongly regular graphs are known (the 5-cycle, Petersen, Clebsch, Hoffman-Singleton, Gewirtz, Higman-Sims, and the $(77,16,0,4)$ Higman-Sims subgraph), and the question of whether an eighth exists remains open. The most natural candidate is the hypothetical Moore graph of degree 57, which would give a strongly regular graph with parameters $(3250, 57, 0, 1)$; a 2020 claimed proof of its non-existence was shown to be flawed (Faber and Keegan, 2022), and the existence question remains one of the most famous open problems in algebraic graph theory.",
+  "since_posted": [
+    {
+      "title": "Existence of a Moore graph of degree 57 is still open",
+      "authors": "Vance Faber, Jonathan Keegan",
+      "year": 2022,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2210.09577",
+      "doi": "10.48550/arXiv.2210.09577",
+      "arxiv_id": "2210.09577",
+      "kind": "reduction",
+      "claim": "Refutes a 2020 claimed proof that no Moore graph of degree 57 exists, showing the underlying system of equations has solutions in each diagonal block, and reformulates the existence question as: the Moore graph exists if and only if a certain family of permutation systems with specific properties has no solutions."
+    },
+    {
+      "title": "Strongly Regular Graphs",
+      "authors": "Andries E. Brouwer, Hendrik Van Maldeghem",
+      "year": 2022,
+      "venue": "Cambridge University Press",
+      "url": "https://www.cambridge.org/core/books/strongly-regular-graphs/DDAB43256A32177837C0BE6AF647CC8B",
+      "doi": null,
+      "arxiv_id": null,
+      "kind": "survey",
+      "claim": "Comprehensive monograph on strongly regular graphs covering all known triangle-free examples and the open problem of whether an eighth exists, including a complete table of feasible parameter sets with up to 1300 vertices."
+    }
+  ],
+  "search_queries": [
+    "eighth triangle-free strongly regular graph new result 2007-2026",
+    "Moore graph diameter 2 degree 57 existence proof 2008-2026",
+    "triangle-free strongly regular graph srg(n,k,0,mu) classification survey",
+    "Andries Brouwer strongly regular graphs table updates triangle-free"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2210.09577",
+    "https://www.cambridge.org/core/books/strongly-regular-graphs/DDAB43256A32177837C0BE6AF647CC8B",
+    "https://en.wikipedia.org/wiki/Strongly_regular_graph",
+    "https://en.wikipedia.org/wiki/Moore_graph"
+  ],
+  "notes": "Several additional post-2007 papers were found in search results but could not be verified due to HTTP 403 responses from MDPI and ScienceDirect: 'The Moore Graph of Diameter 2 and Degree 57 via Cyclic Derangements' (Smith & Montemanni, Axioms 2026, reportedly proving that constructions using only a cyclic group of derangements are impossible), 'Potential Subgraphs of the Missing Moore Graph' (MDPI 2024), and 'The missing Moore graph as an optimization problem' (ScienceDirect 2023). These could not be cited per protocol. The Faber-Keegan paper is the sole directly verifiable post-2007 contribution; it confirms the problem remains open.",
+  "slug": "triangle_free_strongly_regular_graphs",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 01)",
+  "search_enabled": true
+}

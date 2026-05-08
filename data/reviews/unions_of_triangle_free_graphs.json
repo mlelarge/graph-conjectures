@@ -1,0 +1,25 @@
+{
+  "status": "open",
+  "confidence": "low",
+  "summary": "The problem asks whether, provably in ZFC, there exists a $K_4$-free graph whose edge set cannot be covered by $\\aleph_0$ triangle-free graphs. Shelah (1987) showed that the existence of such a graph is consistent with ZFC, but no ZFC proof of existence (nor a proof that non-existence is also consistent, which would establish independence) has been located in post-2007 literature. The problem therefore remains open at the set-theoretic level.",
+  "since_posted": [],
+  "search_queries": [
+    "Erdos Hajnal union triangle-free graphs K4-free decomposition infinite graph chromatic number",
+    "K4-free graph union countably many triangle-free graphs consistency ZFC set theory",
+    "Shelah positive partition theorems graphs triangle-free decomposition chromatic number ZFC independence",
+    "graph chromatic number triangle-free partition infinite graph Erdos Hajnal conjecture ZFC independent",
+    "Komjath infinite graph chromatic number K4-free triangle-free coloring uncountable ZFC consistency forcing",
+    "arxiv 2010 2015 2020 2025 K4-free triangle-free union decomposition infinite graph set theory ZFC",
+    "Erdos Hajnal decomposition of graphs 1967 K4-free triangle-free chromatic number infinite ZFC Shelah"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2107.12288",
+    "https://www.cambridge.org/core/journals/journal-of-symbolic-logic/article/abs/forcing-constructions-for-uncountably-chromatic-graphs/4262BCFDFD7C66B7DC34E4755CF51A43",
+    "https://blog.assafrinot.com/?p=4949"
+  ],
+  "notes": "The UCSD Erdős problems pages (mathweb.ucsd.edu) returned SSL errors and could not be fetched. Komjáth's ELTE publications page also returned a certificate error. The Komjáth–Shelah (1988) JSL paper on forcing constructions for uncountably chromatic graphs is closely related (it shows that the Erdős–Hajnal conjecture 'every κ-chromatic graph has a κ-chromatic triangle-free subgraph' can fail for κ=ℵ₁ in a forcing extension), but it predates 2007 and concerns a different (though nearby) problem. No post-2007 paper specifically addressing the ZFC status of the unions-of-triangle-free-graphs problem was found. Confidence is low because the problem lives in combinatorial set theory with sparse web coverage, and key resource pages were inaccessible.",
+  "slug": "unions_of_triangle_free_graphs",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 06)",
+  "search_enabled": true
+}

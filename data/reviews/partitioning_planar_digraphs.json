@@ -1,0 +1,58 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The Two Color Conjecture remains open in full generality: it is unknown whether every orientation of a simple planar graph admits a vertex partition into two acyclic sets. Meaningful partial progress exists: the conjecture is confirmed for planar digraphs of digirth at least 5 (Harutyunyan–Mohar, 2014) and digirth at least 4 (Li–Mohar, 2016), and has been shown equivalent to 2-colorability of all oriented $K_5$-minor-free graphs (Steiner, 2021).",
+  "since_posted": [
+    {
+      "title": "Planar digraphs of digirth five are 2-colorable",
+      "authors": "Ararat Harutyunyan, Bojan Mohar",
+      "year": 2014,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/1401.2213",
+      "doi": null,
+      "arxiv_id": "1401.2213",
+      "kind": "partial",
+      "claim": "Every planar digraph of digirth at least 5 is 2-colorable (vertices partitioned into 2 acyclic sets); the result also holds for list colorings."
+    },
+    {
+      "title": "Planar digraphs of digirth four are 2-colourable",
+      "authors": "Zhentao Li, Bojan Mohar",
+      "year": 2016,
+      "venue": "SIAM Journal on Discrete Mathematics",
+      "url": "https://arxiv.org/abs/1606.06114",
+      "doi": "10.1137/16M108080X",
+      "arxiv_id": "1606.06114",
+      "kind": "partial",
+      "claim": "Every planar digraph of digirth at least 4 is 2-colourable, strengthening the digirth-5 result of Harutyunyan and Mohar."
+    },
+    {
+      "title": "A Note on Graphs of Dichromatic Number 2",
+      "authors": "Raphael Steiner",
+      "year": 2021,
+      "venue": "Discrete Mathematics & Theoretical Computer Science",
+      "url": "https://dmtcs.episciences.org/7040",
+      "doi": "10.23638/DMTCS-22-4-11",
+      "arxiv_id": "1907.00351",
+      "kind": "reduction",
+      "claim": "The Two Color Conjecture is equivalent to the statement that every oriented $K_5$-minor-free graph is 2-colourable, providing a new reformulation of the problem."
+    }
+  ],
+  "search_queries": [
+    "Neumann-Lara two color conjecture planar digraph acyclic partition dichromatic number",
+    "dichromatic number planar digraph conjecture 2 acyclic sets vertex partition",
+    "orientation planar graph partition two acyclic subgraphs digraph coloring",
+    "arXiv \"dichromatic number\" planar digraph two coloring conjecture proof"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/1401.2213",
+    "https://arxiv.org/abs/1606.06114",
+    "https://arxiv.org/abs/1907.00351",
+    "https://arxiv.org/abs/2603.01020",
+    "https://dmtcs.episciences.org/7040"
+  ],
+  "notes": "The full conjecture (digirth >= 3, i.e., arbitrary planar digraphs) remains open as of 2026. The SIAM page for the Li-Mohar paper returned HTTP 403; the DOI 10.1137/16M108080X is taken from the SIAM URL found in search results. A 2026 arXiv preprint (2603.01020, Harutyunyan-Picasarri-Arrieta-Puig i Surroca) proves the list version of the related Erdos-Neumann-Lara conjecture but does not directly resolve the Two Color Conjecture for planar digraphs.",
+  "slug": "partitioning_planar_digraphs",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 04)",
+  "search_enabled": true
+}

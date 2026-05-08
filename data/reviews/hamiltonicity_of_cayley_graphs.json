@@ -1,0 +1,58 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The question of whether every Cayley graph is Hamiltonian remains open in general. Since the problem was posted, Groenland et al. proved that every connected vertex-transitive graph on $n$ vertices contains a cycle of length $\\Omega(n^{13/21})$; a 2024 preprint by Nakanishi claims to prove Hamiltonicity for all odd-order connected vertex-transitive graphs (hence all Cayley graphs of odd-order groups), though the preprint remains unreviewed; and Bedert et al. (2026) established the conjecture for all Cayley graphs of degree $d \\ge n^{1-c}$.",
+  "since_posted": [
+    {
+      "title": "Longest cycles in vertex-transitive and highly connected graphs",
+      "authors": "Carla Groenland, Sean Longbrake, Raphael Steiner, Jérémie Turcotte, Liana Yepremyan",
+      "year": 2024,
+      "venue": "Bulletin of the London Mathematical Society",
+      "url": "https://arxiv.org/abs/2408.04618",
+      "doi": null,
+      "arxiv_id": "2408.04618",
+      "kind": "partial",
+      "claim": "Improves the lower bound on the longest cycle in a connected vertex-transitive graph on $n$ vertices from $\\Omega(n^{3/5})$ to $\\Omega(n^{13/21})$."
+    },
+    {
+      "title": "Proof of Lovász conjecture for odd order",
+      "authors": "Misa Nakanishi",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2407.00646",
+      "doi": null,
+      "arxiv_id": "2407.00646",
+      "kind": "partial",
+      "claim": "Claims to prove that every connected vertex-transitive graph with an odd number of vertices (in particular every Cayley graph of a group of odd order) is Hamiltonian; unreviewed preprint as of May 2026."
+    },
+    {
+      "title": "The Lovász conjecture holds for moderately dense Cayley graphs",
+      "authors": "Benjamin Bedert, Nemanja Draganić, Alp Müyesser, Matías Pavez-Signé",
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2603.08675",
+      "doi": null,
+      "arxiv_id": "2603.08675",
+      "kind": "partial",
+      "claim": "Proves that every large connected $n$-vertex Cayley graph of degree $d \\ge n^{1-c}$ (for an absolute constant $c \\ge 1/200$) has a Hamilton cycle, improving the previously required linear-degree threshold."
+    }
+  ],
+  "search_queries": [
+    "Hamiltonicity Cayley graphs conjecture recent results 2020 2021 2022 2023 2024 2025",
+    "Lovász conjecture vertex-transitive Hamiltonian path graph recent progress arXiv",
+    "Pak Radoičić Hamiltonian paths Cayley graphs published journal",
+    "Hamiltonian cycle Cayley graph abelian group survey 2010 2015 2020 2025"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2407.00646",
+    "https://arxiv.org/html/2407.00646v1",
+    "https://arxiv.org/abs/2408.04618",
+    "https://arxiv.org/html/2603.08675v1",
+    "https://arxiv.org/abs/2603.08675"
+  ],
+  "notes": "The Nakanishi preprint (2407.00646) is unreviewed as of May 2026; if correct it resolves the odd-order case for the strictly stronger Hamiltonicity question (cycle, not just path). The OPG problem asks for a Hamiltonian cycle, which is stronger than the Lovász conjecture (Hamiltonian path); partial results here are cited for vertex-transitive graphs since every Cayley graph is vertex-transitive. Groenland et al. appeared in Bulletin of the London Mathematical Society (October 2025, DOI 10.1112/blms.70134 per search result) but only the arXiv URL was directly verified. The Pak–Radoičić paper was published as Discrete Math. 309(17):5501–5508 (2009) but the result was already cited as a known preprint in the OPG problem statement and is excluded from since_posted.",
+  "slug": "hamiltonicity_of_cayley_graphs",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 02)",
+  "search_enabled": true
+}

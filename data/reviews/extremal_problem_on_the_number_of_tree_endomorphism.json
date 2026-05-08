@@ -1,0 +1,33 @@
+{
+  "slug": "extremal_problem_on_the_number_of_tree_endomorphism",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet (subagent)",
+  "search_enabled": true,
+  "status": "solved",
+  "confidence": "high",
+  "summary": "The conjecture was proved by Csikvari and Lin in 'Graph homomorphisms between trees' (arXiv:1307.6721, 2013; published in Electronic Journal of Combinatorics, 2014). They establish $|\\mathrm{End}(P_n)| \\leq |\\mathrm{End}(T_n)| \\leq |\\mathrm{End}(S_n)|$ for every tree $T_n$ on $n$ vertices, where $P_n$ and $S_n$ denote the path and star respectively, confirming that the path minimizes and the star maximizes the number of endomorphisms among trees of fixed order.",
+  "since_posted": [
+    {
+      "title": "Graph homomorphisms between trees",
+      "authors": "Peter Csikvari, Zhicong Lin",
+      "year": 2013,
+      "venue": "arXiv preprint (later published in Electronic Journal of Combinatorics, 2014)",
+      "url": "https://arxiv.org/abs/1307.6721",
+      "doi": null,
+      "arxiv_id": "1307.6721",
+      "kind": "proof",
+      "claim": "Proves $|\\mathrm{End}(P_n)| \\leq |\\mathrm{End}(T_n)| \\leq |\\mathrm{End}(S_n)|$ for any tree $T_n$ on $n$ vertices, settling Lin's extremal conjecture on tree endomorphisms in both directions."
+    }
+  ],
+  "search_queries": [
+    "tree endomorphisms extremal star path Zhicong Lin conjecture",
+    "number of endomorphisms tree star path extremal",
+    "\"Graph homomorphisms between trees\" Csikvari Lin published journal"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/1307.6721",
+    "https://dspace.mit.edu/bitstream/handle/1721.1/100547/Csikvari-2015-Homomorphisms%20of%20trees.pdf;sequence=1",
+    "https://www.combinatorics.org/ojs/index.php/eljc/article/download/v21i4p9/pdf"
+  ],
+  "notes": "The arXiv abstract page for 1307.6721 explicitly states the result $|\\mathrm{End}(P_m)| \\leq |\\mathrm{End}(T_m)| \\leq |\\mathrm{End}(S_m)|$, directly proving the OPG conjecture. The paper is co-authored by the conjecture's original poser Zhicong Lin together with Peter Csikvari. The MIT DSpace mirror returned 403 and the EJC PDF was binary-encoded so could not be parsed by WebFetch, but the arXiv version was successfully verified."
+}

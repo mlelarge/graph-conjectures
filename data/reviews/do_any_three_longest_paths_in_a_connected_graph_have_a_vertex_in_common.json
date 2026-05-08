@@ -1,0 +1,46 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Gallai's 1966 conjecture that any three longest paths in a connected graph share a common vertex remains open in general. Meaningful partial results confirm the conjecture for specific graph classes (series-parallel, outerplanar, split, $H$-free graphs with linear-forest $H$), and a 2025 paper improves the best known bound on the minimum vertex set hitting all longest paths to $O(\\sqrt{n})$. An attempted general proof (arXiv:2006.16245, 2020) was withdrawn by its author as erroneous.",
+  "since_posted": [
+    {
+      "title": "Non-Empty Intersection of Longest Paths in $H$-Free Graphs",
+      "authors": "James A. Long Jr., Kevin G. Milans, Andrea Munaro",
+      "year": 2023,
+      "venue": "Electronic Journal of Combinatorics",
+      "url": "https://www.combinatorics.org/ojs/index.php/eljc/article/view/v30i1p32",
+      "doi": null,
+      "arxiv_id": null,
+      "kind": "partial",
+      "claim": "Characterizes all graphs $H$ on at most 4 vertices for which every connected $H$-free graph has a single vertex meeting all longest paths; these are exactly the linear forests, confirming Gallai's property for those graph classes."
+    },
+    {
+      "title": "Small hitting sets for longest paths and cycles",
+      "authors": "Sergey Norin, Raphael Steiner, Stephan Thomassé, Paul Wollan",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2505.08634",
+      "doi": null,
+      "arxiv_id": "2505.08634",
+      "kind": "partial",
+      "claim": "Proves every connected $n$-vertex graph has a set of at most $\\sqrt{8n}$ vertices intersecting all longest paths, improving the previous $O(n^{2/3})$ state-of-the-art bound."
+    }
+  ],
+  "search_queries": [
+    "Gallai conjecture three longest paths common vertex connected graph",
+    "longest paths intersection Gallai conjecture graph theory recent results 2013 2024",
+    "arXiv \"longest paths\" \"common vertex\" conjecture graph 2020 2021 2022 2023 2024 2025",
+    "Skupien longest paths empty intersection Gallai problem progress"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2006.16245",
+    "https://arxiv.org/abs/2310.03849",
+    "https://arxiv.org/abs/2505.08634",
+    "https://www.combinatorics.org/ojs/index.php/eljc/article/view/v30i1p32"
+  ],
+  "notes": "arXiv:2006.16245 (Sarkar, 2020) claimed a full proof but was withdrawn as erroneous by the author. The Discrete Math. 2022 paper on chordal graphs (DOI 10.1016/j.disc.2022.113035) returned HTTP 403 and could not be verified; not cited. arXiv:2310.03849 (Gutiérrez–Valqui, 2023) focuses on Smith's and Hippchen's conjectures about pairwise cycle/path intersections in $k$-connected graphs, not the 3-path Gallai conjecture.",
+  "slug": "do_any_three_longest_paths_in_a_connected_graph_have_a_vertex_in_common",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 02)",
+  "search_enabled": true
+}

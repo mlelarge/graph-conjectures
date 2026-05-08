@@ -1,0 +1,68 @@
+{
+  "slug": "friendly_partitions",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet (subagent)",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "DeVos's question (equivalent to the internal-partition conjecture for $r$-regular graphs) remains open in full generality. Ban and Linial (2013) proved the conjecture for $r=6$ and exhibited new families of regular graphs without internal partitions; the cubic and 4-regular cases were already essentially known. The 5-regular case is still open as a deterministic statement, but Bärnkopf, Nagy and Paulovics (2024) settled it for 5-regular abelian Cayley graphs, and Csóka, Fekete, Nagy and Szemerédi (2025) showed that random 5-regular graphs a.a.s. admit an internal partition.",
+  "since_posted": [
+    {
+      "title": "Internal Partitions of Regular Graphs",
+      "authors": "Amir Ban, Nati Linial",
+      "year": 2013,
+      "venue": "arXiv preprint (later J. Graph Theory)",
+      "url": "https://arxiv.org/abs/1307.5246",
+      "doi": null,
+      "arxiv_id": "1307.5246",
+      "kind": "partial",
+      "claim": "Proves the internal/friendly partition conjecture for $r=6$ (all but finitely many 6-regular graphs have an internal partition), gives improved lower bounds on the threshold $N(d)$, and constructs new families of $d$-regular graphs without internal partitions, including $2k$-regular examples on $3k+2$ vertices."
+    },
+    {
+      "title": "A note on internal partitions: the 5-regular case and beyond",
+      "authors": "Pál Bärnkopf, Zoltán Lóránt Nagy, Zoltán Paulovics",
+      "year": 2021,
+      "venue": "arXiv preprint (Graphs and Combinatorics, 2024)",
+      "url": "https://arxiv.org/abs/2109.14421",
+      "doi": "10.1007/s00373-024-02774-9",
+      "arxiv_id": "2109.14421",
+      "kind": "partial",
+      "claim": "Studies the still-open 5-regular case, classifies all 5-regular abelian Cayley graphs without an internal partition, and obtains structural results on subgraphs of minimum degree 3 inside 5-regular graphs."
+    },
+    {
+      "title": "Bisection width, max-cut and internal partitions of 5-regular graphs",
+      "authors": "Endre Csóka, Panna Tímea Fekete, Zoltán Lóránt Nagy, Levente Szemerédi",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2509.08531",
+      "doi": null,
+      "arxiv_id": "2509.08531",
+      "kind": "partial",
+      "claim": "Using a local-algorithm based factor with a recoloring phase, proves that random 5-regular graphs asymptotically almost surely admit an internal (friendly) partition, and derives new upper bounds on bisection width and max-cut of random $d$-regular graphs for $d>4$."
+    },
+    {
+      "title": "Majority Dynamics and Internal Partitions of Random Regular Graphs: Experimental Results",
+      "authors": "Pavel Arkhipov",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2406.07026",
+      "doi": null,
+      "arxiv_id": "2406.07026",
+      "kind": "partial",
+      "claim": "Investigates majority dynamics on random odd-regular graphs as a heuristic for producing internal partitions, shows the standard dynamics fails to yield parts with the required $\\lceil d/2\\rceil$-cores, and proposes a modified dynamics that does so with high probability."
+    }
+  ],
+  "search_queries": [
+    "friendly partition regular graph DeVos",
+    "\"friendly partition\" graph regular",
+    "\"unfriendly partition\" \"friendly partition\" regular graph",
+    "internal partition regular graph arxiv"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/1307.5246",
+    "https://arxiv.org/abs/2109.14421",
+    "https://arxiv.org/abs/2509.08531",
+    "https://arxiv.org/abs/2406.07026"
+  ],
+  "notes": "DeVos's 'friendly partition' problem is exactly the internal-partition conjecture studied in the literature (vertex partition into two nonempty parts where every vertex has at least as many neighbours in its own part as in the other). The cases $r\\in\\{3,4\\}$ are folklore/easy (cubic case reduces to two disjoint cycles, excluding $K_4$ and $K_{3,3}$). The Ban-Linial paper resolves $r=6$; $r=5$ and all $r\\geq 7$ remain open in the deterministic sense, with progress only for random graphs and special families (Cayley graphs). The DOI 10.1007/s00373-024-02774-9 for the Graphs and Combinatorics version was found via search but the Springer page required authentication; the arXiv abstract page was verified directly."
+}

@@ -1,0 +1,26 @@
+{
+  "status": "open",
+  "confidence": "medium",
+  "summary": "The Hoàng–Reed conjecture remains open for general $k \\geq 4$. All known partial results predate the 2013 OPG posting: the $k=2$ case (Thomassen, 1985), tournaments (Havet, Thomassé, and Yeo, ~2007), and the $k=3$ case (proved using the notion of nearest separators, ~2010), making the OPG's note that '$k=3$ is not known' likely an oversight. No post-2013 paper resolving further cases of the conjecture was identified.",
+  "since_posted": [],
+  "search_queries": [
+    "Hoàng-Reed conjecture digraph directed cycles outdegree k",
+    "Hoang Reed conjecture digraph k directed cycles arXiv",
+    "\"Hoang-Reed\" OR \"Hoàng-Reed\" conjecture graph theory proof 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+    "digraph minimum outdegree k directed cycles intersecting vertex conjecture Caccetta-Häggkvist",
+    "\"Hoàng-Reed\" OR \"Hoang-Reed\" conjecture arXiv digraph cycles outdegree",
+    "oriented cycles in digraphs large outdegree Combinatorica arXiv 2021",
+    "\"Hoang-Reed\" digraph directed cycles conjecture progress 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026",
+    "\"Hoàng-Reed conjecture\" \"delta+=3\" OR \"outdegree 3\" proof 2007 2008 2009 2010 2011 2012"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2503.20045",
+    "https://arxiv.org/abs/2407.05827",
+    "https://file.scirp.org/Html/20-7400854_20013.htm"
+  ],
+  "notes": "ScienceDirect and Springer pages for the key papers returned HTTP 403 and could not be directly verified. HAL pages returned access-denied errors. The arXiv HTML search for 'Hoang Reed' variants returned zero results. The paper 'The Hoàng–Reed Conjecture for δ+=3' (ScienceDirect, ~2010) and 'Hoàng–Reed conjecture holds for tournaments' (Havet, Thomassé, Yeo, ~2007) both predate the OPG posting; the OPG discussion text noting 'k=3 is unknown' appears to be an oversight. arXiv:2407.05827 (Kawarabayashi–Picasarri-Arrieta, 2024) is about a coloring analogue of Reed's conjecture for digraphs, unrelated to the Hoàng–Reed cycle conjecture. arXiv:2503.20045 (Koerts–Moore–Spirkl, 2025) is about cycle orientations in high-chromatic digraphs and does not address the Hoàng–Reed conjecture. I ran 8 search queries, exceeding the recommended 4; the extra queries were needed because arXiv's all-fields search returned no results for all Hoàng-Reed–related terms.",
+  "slug": "hoand_reed_conjecture",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 06)",
+  "search_enabled": true
+}

@@ -1,0 +1,26 @@
+{
+  "status": "open",
+  "confidence": "medium",
+  "summary": "The conjecture that every $k$-regular directed graph with no parallel arcs contains $\\binom{k+1}{2}$ arc-disjoint directed cycles remains open. The best known lower bound continues to be Alon's 1996 result of $\\frac{1}{128}k^2$ arc-disjoint directed cycles in any digraph with minimum outdegree at least $k$, and no post-2013 paper improving this constant or proving the conjecture was found.",
+  "since_posted": [],
+  "search_queries": [
+    "arc-disjoint directed cycles regular directed graphs conjecture Alon McDiarmid Molloy",
+    "arc-disjoint cycles digraph minimum outdegree k^2 bound improvement",
+    "arXiv \"disjoint directed cycles\" \"regular\" \"k-regular\" digraph conjecture improved bound 2018 2019 2020 2021 2022 2023 2024",
+    "Alon \"disjoint directed cycles\" conjecture progress survey digraph regular 2020 2024",
+    "\"edge-disjoint\" OR \"arc-disjoint\" cycles \"k-regular directed\" OR \"regular directed graph\" Alon conjecture improve bound arxiv 2020 2021 2022 2023 2024 2025",
+    "\"disjoint directed cycles\" \"k-regular\" OR \"regular digraph\" improved constant coefficient quadratic 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/1701.06364",
+    "https://arxiv.org/abs/2205.10826",
+    "https://arxiv.org/abs/2604.13700",
+    "https://arxiv.org/search/?searchtype=all&query=disjoint+cycles+k-regular+digraph&start=0"
+  ],
+  "notes": "All six search queries were exhausted without finding a post-2013 paper specifically improving the arc-disjoint cycles bound in k-regular digraphs. The arXiv paper 1701.06364 (Bucić, 2018) improves the constant for vertex-disjoint cycles under minimum outdegree conditions (reducing 64k to 18k for guaranteeing k vertex-disjoint cycles), but addresses a different problem. The 2026 paper 2604.13700 (Steiner) concerns openly disjoint cycles and directed tree-width in regular digraphs, not arc-disjoint cycles. The ScienceDirect page for the 2020 Discrete Mathematics paper on disjoint directed cycles returned HTTP 403. Confidence is medium rather than high because the ScienceDirect paper (pii/S0012365X20301199) could not be verified and might contain relevant partial results.",
+  "slug": "arc_disjoint_directed_cycles_in_regular_directed_graphs",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "elapsed_seconds": 152.4
+}

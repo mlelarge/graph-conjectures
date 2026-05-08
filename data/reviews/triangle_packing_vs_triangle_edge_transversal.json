@@ -1,0 +1,82 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Tuza's conjecture ($\\tau(G)\\leq 2\\nu(G)$) remains open for general graphs. Since the OPG posting, the conjecture has been confirmed for several important graph classes (treewidth $\\leq 6$, threshold graphs, random graphs, planar triangulations with the sharper bound $\\tau(G)\\leq \\frac{3}{2}\\nu(G)$), and Baron–Kahn showed the factor 2 is asymptotically tight for dense graphs. The best known general bound is still Haxell's $(3-\\frac{3}{23})\\nu(G)$ from 1999.",
+  "since_posted": [
+    {
+      "title": "Tuza's Conjecture is Asymptotically Tight for Dense Graphs",
+      "authors": "Jacob D. Baron, Jeff Kahn",
+      "year": 2014,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/1408.4870",
+      "doi": null,
+      "arxiv_id": "1408.4870",
+      "kind": "partial",
+      "claim": "Constructs arbitrarily large dense graphs where $\\tau(G)/(\\nu(G))\\to 2$, showing the bound in Tuza's conjecture is asymptotically tight and disproving a conjecture by Yuster that it could be improved."
+    },
+    {
+      "title": "Multi-transversals for Triangles and the Tuza's Conjecture",
+      "authors": "Parinya Chalermsook, Samir Khuller, Pattara Sukprasert, Sumedha Uniyal",
+      "year": 2020,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2001.00257",
+      "doi": null,
+      "arxiv_id": "2001.00257",
+      "kind": "partial",
+      "claim": "Proves that for every $k\\geq 2$ there exists a multiset $F\\subseteq E(G)$ with $|F|\\leq 2k\\nu(G)$ such that every triangle meets $F$ at least $k$ times, strengthening Krivelevich's fractional results."
+    },
+    {
+      "title": "On Tuza's conjecture for triangulations and graphs with small treewidth",
+      "authors": "Fábio Botler, Cristina G. Fernandes, Juan Gutiérrez",
+      "year": 2020,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2002.07925",
+      "doi": null,
+      "arxiv_id": "2002.07925",
+      "kind": "partial",
+      "claim": "Verifies Tuza's conjecture for all graphs with treewidth at most 6, and proves the sharper bound $\\tau(G)\\leq\\frac{3}{2}\\nu(G)$ for planar triangulations other than $K_4$."
+    },
+    {
+      "title": "Closing the Random Graph Gap in Tuza's Conjecture Through the Online Triangle Packing Process",
+      "authors": "Patrick Bennett, Ryan Cushman, Andrzej Dudek",
+      "year": 2020,
+      "venue": "SIAM Journal on Discrete Mathematics",
+      "url": "https://arxiv.org/abs/2007.04478",
+      "doi": "10.1137/20M1351771",
+      "arxiv_id": "2007.04478",
+      "kind": "partial",
+      "claim": "Proves that Tuza's conjecture holds with high probability in the Erdős–Rényi random graph $G(n,m)$ for all ranges of $m$, closing a previously open gap."
+    },
+    {
+      "title": "Tuza's Conjecture for Threshold Graphs",
+      "authors": "Marthe Bonamy, Łukasz Bożyk, Andrzej Grzesik, Meike Hatzel, Tomáš Masařík, Jana Novotná, Karolina Okrasa",
+      "year": 2021,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2105.09871",
+      "doi": null,
+      "arxiv_id": "2105.09871",
+      "kind": "partial",
+      "claim": "Confirms Tuza's conjecture for threshold graphs (simultaneously split graphs and cographs) and for co-chain graphs satisfying certain divisibility conditions."
+    }
+  ],
+  "search_queries": [
+    "Tuza conjecture triangle packing edge transversal tau 2nu progress 2013 2024 2025",
+    "Tuza's conjecture triangle covering arXiv recent proof partial result",
+    "Haxell triangle packing covering improvement bound 2013 2025",
+    "\"Tuza conjecture\" triangle edge-transversal solved disproved 2020 2021 2022 2023 2024"
+  ],
+  "verified_urls": [
+    "https://en.wikipedia.org/wiki/Tuza%27s_conjecture",
+    "https://arxiv.org/abs/2007.04478",
+    "https://arxiv.org/abs/2406.06501",
+    "https://arxiv.org/abs/2001.00257",
+    "https://arxiv.org/abs/2105.09871",
+    "https://arxiv.org/abs/2002.07925",
+    "https://arxiv.org/abs/1408.4870"
+  ],
+  "notes": "The SIAM journal page for Bennett–Cushman–Dudek returned HTTP 403; the DOI 10.1137/20M1351771 is taken from the URL that appeared in search results, while the paper details were confirmed via the arXiv abstract. The 2024 arXiv:2406.06501 paper (Parker) concerns the Aharoni–Zerbib generalization to k-uniform hypergraphs, not Tuza's original conjecture, and was therefore excluded from since_posted. The best general bound remains Haxell's $(3-3/23)\\nu(G)$ from 1999; no improvement to the general case was found in post-2013 literature.",
+  "slug": "triangle_packing_vs_triangle_edge_transversal",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 02)",
+  "search_enabled": true
+}

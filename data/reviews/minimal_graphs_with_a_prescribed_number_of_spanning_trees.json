@@ -1,0 +1,47 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The conjecture $\\alpha(n) = o(\\log n)$ remains open, but significant progress has been made. Stong (2022) proved a weak version: $\\alpha(n) = O((\\log n)^{3/2} / \\log\\log n)$, the current state of the art. More recently, Alon, Bucć, and Gishboliner (2025) proved a modular analogue: for any $N$ and $u < N$, there exists a planar graph on $O(\\log N)$ vertices whose spanning tree count is $\\equiv u \\pmod{N}$.",
+  "since_posted": [
+    {
+      "title": "Minimal graphs with a prescribed number of spanning trees",
+      "authors": "Richard Stong",
+      "year": 2022,
+      "venue": "Australasian Journal of Combinatorics",
+      "url": "https://ajc.maths.uq.edu.au/pdf/82/ajc_v82_p182.pdf",
+      "doi": null,
+      "arxiv_id": null,
+      "kind": "partial",
+      "claim": "Proves $\\alpha(n) = O((\\log n)^{3/2} / \\log\\log n)$, a weak version of the conjecture $\\alpha(n) = o(\\log n)$, using algebraic number theory."
+    },
+    {
+      "title": "The spanning tree spectrum: improved bounds and simple proofs",
+      "authors": "Noga Alon, Matija Bucć, Lior Gishboliner",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2503.23648",
+      "doi": null,
+      "arxiv_id": "2503.23648",
+      "kind": "partial",
+      "claim": "Proves a modular analogue of the conjecture: for any $N$ and $u < N$, there exists a planar graph on $O(\\log N)$ vertices with spanning tree count $\\equiv u \\pmod{N}$; the full conjecture $\\alpha(t) = O(\\log t)$ is explicitly noted as still open."
+    }
+  ],
+  "search_queries": [
+    "alpha(n) minimal graph prescribed number spanning trees conjecture Azarija Skrekovski",
+    "minimal graphs spanning trees vertices number spanning trees asymptotic o(log n) conjecture",
+    "Azarija Skrekovski \"spanning trees\" \"idoneal numbers\" graph arXiv",
+    "\"number of spanning trees\" \"minimal graph\" vertices prescribed exact arXiv 2013 2014 2015 2016 2017 2018 2019 2020",
+    "Stong \"minimal graphs\" \"spanning trees\" AJC \"Australasian Journal of Combinatorics\" volume 82 2022"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2503.23648",
+    "https://arxiv.org/html/2503.23648",
+    "https://ajc.maths.uq.edu.au/pdf/82/ajc_v82_p182.pdf",
+    "https://ajc.maths.uq.edu.au/?page=get_volumes&volume=82"
+  ],
+  "notes": "The Stong (2022) AJC paper PDF could not be directly extracted by WebFetch (binary content), but title/author/year were confirmed via the AJC volume 82 table-of-contents page and corroborated by multiple search results; the main result is also cited as state-of-the-art by the Alon et al. (2025) paper. No arXiv preprint was found for Stong's paper. The Alon et al. paper (arXiv:2503.23648, submitted March 2025) was independently verified via both the abstract and HTML pages.",
+  "slug": "minimal_graphs_with_a_prescribed_number_of_spanning_trees",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 07)",
+  "search_enabled": true
+}

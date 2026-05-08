@@ -1,0 +1,34 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The conjecture as literally stated (every infinite graph is a proper minor of itself) was already disproved by Oporowski for uncountable graphs before the 2007 OPG posting; the interesting open case concerns countable infinite graphs. Georgakopoulos (2025) established a significant partial result, proving Seymour's self-minor conjecture for rayless graphs of any cardinality as a corollary of his work on better-quasi-ordering under graph minors. The case of countable graphs containing rays remains open.",
+  "since_posted": [
+    {
+      "title": "On better-quasi-ordering under graph minors",
+      "authors": "Agelos Georgakopoulos",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2510.19285",
+      "doi": null,
+      "arxiv_id": "2510.19285",
+      "kind": "partial",
+      "claim": "Proves Seymour's self-minor conjecture for rayless graphs of any cardinality (i.e., for every infinite rayless graph $G$ there exists a proper minor embedding $g: G \\prec G$), a result that was previously open even for countable graphs."
+    }
+  ],
+  "search_queries": [
+    "Seymour self-minor conjecture infinite graph proper minor itself",
+    "Seymour conjecture infinite graph minor itself progress result arXiv",
+    "infinite graph well-quasi-ordered minor countable self-minor conjecture 2020 2021 2022 2023 2024 2025",
+    "Pott self-minor conjecture infinite trees arXiv 2009 preprint graph"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2510.19285",
+    "https://arxiv.org/html/2510.19285v1",
+    "http://lemon.cs.elte.hu/egres/open/Seymour's_self-minor_conjecture"
+  ],
+  "notes": "Oporowski's counterexample (c. 1990) disproves the general conjecture before the OPG posting date; Georgakopoulos (2025) confirms these counterexamples all contain rays. The Semantic Scholar page for Oporowski's paper failed to load so Oporowski could not be directly verified, but the Egres Open page (verified) states the 1990 counterexample clearly. A result by Pott (2009) on infinite trees is mentioned in secondary sources but could not be located and verified directly, so it is omitted from since_posted. The countable-graphs-with-rays case appears to be the remaining open problem.",
+  "slug": "seymours_self_minor_conjecture",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 03)",
+  "search_enabled": true
+}

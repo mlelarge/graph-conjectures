@@ -1,0 +1,46 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Marcus, Spielman, and Srivastava (2015) resolved the conjecture for bipartite $d$-regular graphs: using the method of interlacing polynomials, they proved that every bipartite $d$-regular graph has a 2-lift with all new eigenvalues of magnitude at most $2\\sqrt{d-1}$, yielding infinite families of bipartite Ramanujan graphs of every degree $> 2$. Hall, Puder, and Sawin (2018) further extended this to $r$-sheeted coverings for bipartite Ramanujan graphs. However, the original Bilu–Linial conjecture for general (non-bipartite) $d$-regular graphs remains open.",
+  "since_posted": [
+    {
+      "title": "Interlacing families I: Bipartite Ramanujan graphs of all degrees",
+      "authors": "Adam W. Marcus, Daniel A. Spielman, Nikhil Srivastava",
+      "year": 2015,
+      "venue": "Annals of Mathematics",
+      "url": "https://arxiv.org/abs/1304.4132",
+      "doi": null,
+      "arxiv_id": "1304.4132",
+      "kind": "partial",
+      "claim": "Proves the bipartite case of the Bilu–Linial conjecture: every bipartite $d$-regular graph has a 2-lift with all new eigenvalues of magnitude at most $2\\sqrt{d-1}$, establishing bipartite Ramanujan graphs of every degree via a new method of interlacing polynomials."
+    },
+    {
+      "title": "Ramanujan Coverings of Graphs",
+      "authors": "Chris Hall, Doron Puder, William F. Sawin",
+      "year": 2018,
+      "venue": "Advances in Mathematics",
+      "url": "https://arxiv.org/abs/1506.02335",
+      "doi": null,
+      "arxiv_id": "1506.02335",
+      "kind": "partial",
+      "claim": "Generalises the MSS bipartite 2-lift result to $r$-sheeted coverings: for every $r \\geq 2$ and every bipartite Ramanujan graph $G$, there exists an $r$-covering of $G$ in which all new eigenvalues are bounded by the spectral radius of the universal cover."
+    }
+  ],
+  "search_queries": [
+    "Bilu Linial conjecture signing graph Ramanujan eigenvalues 2-lift solved proof",
+    "Marcus Spielman Srivastava interlacing polynomials Ramanujan graphs 2-lifts",
+    "signing d-regular graph adjacency matrix eigenvalues 2sqrt(d-1) conjecture progress 2014 2015 2016",
+    "Bilu Linial conjecture non-bipartite signing arbitrary regular graph 2sqrt(d-1) open unsolved Hall Puder Sawin",
+    "Hall Puder Sawin Ramanujan coverings of graphs arXiv 2018"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/1304.4132",
+    "https://annals.math.princeton.edu/2015/182-1/p07",
+    "https://arxiv.org/abs/1506.02335"
+  ],
+  "notes": "The MSS paper (arXiv April 2013) resolves only the bipartite case of the Bilu–Linial conjecture; the conjecture for general non-bipartite d-regular graphs appears to remain open as of the latest searches. The Hall–Puder–Sawin paper (arXiv June 2015, Advances in Mathematics 2018) extends to r-coverings but still works within the bipartite framework. No post-2018 resolution of the non-bipartite case was found in up to 5 queries.",
+  "slug": "signing_a_graph_to_have_small_magnitude_eigenvalues",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 07)",
+  "search_enabled": true
+}

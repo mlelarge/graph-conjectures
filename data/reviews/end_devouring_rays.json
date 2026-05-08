@@ -1,0 +1,33 @@
+{
+  "slug": "end_devouring_rays",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet (subagent)",
+  "search_enabled": true,
+  "status": "solved",
+  "confidence": "high",
+  "summary": "Gollin and Heuer (2017/2018) proved that every end $\\omega$ of a graph either contains uncountably many disjoint rays or admits a set of disjoint $\\omega$-rays that devours $\\omega$ and starts at any prescribed feasible set of starting vertices. Their theorem explicitly confirms Georgakopoulos's conjecture, settling the case of countable ends with an arbitrary (in particular, infinite) set $K$ of pairwise disjoint $\\omega$-rays.",
+  "since_posted": [
+    {
+      "title": "Infinite end-devouring sets of rays with prescribed start vertices",
+      "authors": "J. Pascal Gollin, Karl Heuer",
+      "year": 2018,
+      "venue": "Discrete Mathematics",
+      "url": "https://arxiv.org/abs/1704.06577",
+      "doi": "10.1016/j.disc.2018.04.012",
+      "arxiv_id": "1704.06577",
+      "kind": "proof",
+      "claim": "Proves that every end of a graph either contains uncountably many disjoint rays or contains a set of disjoint rays devouring the end with any prescribed feasible set of start vertices, confirming Georgakopoulos's conjecture and resolving the End-Devouring Rays problem for countable ends."
+    }
+  ],
+  "search_queries": [
+    "Georgakopoulos \"end-devouring rays\" countable end",
+    "\"devouring\" rays end infinite graph Georgakopoulos disjoint",
+    "\"infinite Hamilton cycles in squares of locally finite graphs\" Georgakopoulos"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/1704.06577",
+    "https://www.sciencedirect.com/science/article/pii/S0012365X18301171",
+    "https://doi.org/10.1016/j.disc.2018.04.020"
+  ],
+  "notes": "The arXiv abstract page (1704.06577) explicitly states the result confirms Georgakopoulos's conjecture. The journal version appeared in Discrete Mathematics 341 (2018), pp. 2117-2120, DOI 10.1016/j.disc.2018.04.012."
+}

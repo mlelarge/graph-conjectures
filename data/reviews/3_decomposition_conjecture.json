@@ -1,0 +1,88 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The 3-Decomposition Conjecture remains open for general connected cubic graphs. Since the 2017 posting, the conjecture has been verified for claw-free cubic graphs, claw-free and 4-chordal subcubic graphs, 3-connected star-like graphs, and 3-connected graphs of tree-width at most 3 or path-width at most 4; computational verification has been extended to all cubic graphs on at most 28 vertices. All evidence indicates the full conjecture is still unproved.",
+  "since_posted": [
+    {
+      "title": "Decomposing Claw-free Subcubic Graphs and 4-Chordal Subcubic Graphs",
+      "authors": "Elham Aboomahigir, Milad Ahanjideh, Saieed Akbari",
+      "year": 2018,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/1806.11009",
+      "doi": null,
+      "arxiv_id": "1806.11009",
+      "kind": "partial",
+      "claim": "Proves Hoffmann-Ostenhof's conjecture for connected claw-free subcubic graphs and for connected 4-chordal subcubic graphs."
+    },
+    {
+      "title": "Hoffmann-Ostenhof's conjecture for claw-free cubic graphs",
+      "authors": "Milad Ahanjideh, Elham Aboomahigir",
+      "year": 2018,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/1810.00074",
+      "doi": null,
+      "arxiv_id": "1810.00074",
+      "kind": "partial",
+      "claim": "Establishes the 3-decomposition conjecture for the class of connected claw-free cubic graphs."
+    },
+    {
+      "title": "Reductions for the 3-Decomposition Conjecture",
+      "authors": "Oliver Bachtler, Irene Heinrich",
+      "year": 2021,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2104.15113",
+      "doi": null,
+      "arxiv_id": "2104.15113",
+      "kind": "partial",
+      "claim": "Proves the conjecture for all 3-connected cubic graphs of tree-width at most 3 or path-width at most 4, identifies several reducible configurations (triangle, $K_{2,3}$, etc.), and computationally verifies the conjecture for all cubic graphs on at most 20 vertices."
+    },
+    {
+      "title": "Towards Obtaining a 3-Decomposition From a Perfect Matching",
+      "authors": "Oliver Bachtler, Sven O. Krumke",
+      "year": 2022,
+      "venue": "Electronic Journal of Combinatorics",
+      "url": "https://www.combinatorics.org/ojs/index.php/eljc/article/view/v29i4p23",
+      "doi": null,
+      "arxiv_id": "2008.09549",
+      "kind": "partial",
+      "claim": "Proves the conjecture for 3-connected star-like cubic graphs (those whose 2-factor, when contracted, yields a star graph), generalising the previously known Hamiltonian case."
+    },
+    {
+      "title": "The 3-Decomposition Conjecture: A SAT-Based Approach with Specialized Propagators",
+      "authors": "Tianwei Zhang, Stefan Szeider",
+      "year": 2025,
+      "venue": "31st International Conference on Principles and Practice of Constraint Programming (CP 2025)",
+      "url": "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.CP.2025.39",
+      "doi": "10.4230/LIPIcs.CP.2025.39",
+      "arxiv_id": null,
+      "kind": "partial",
+      "claim": "Using a SAT / Satisfiability Modulo Symmetries framework augmented with specialised propagators exploiting properties of minimal counterexamples, computationally verifies the conjecture for all connected cubic graphs on at most 28 vertices."
+    }
+  ],
+  "search_queries": [
+    "3-Decomposition Conjecture cubic graph Hoffmann-Ostenhof",
+    "arXiv \"3-decomposition conjecture\" cubic graph spanning tree matching cycles",
+    "\"Hoffmann-Ostenhof conjecture\" cubic graph decomposition spanning tree 2018 2019 2020 2021 2022 2023 2024",
+    "\"3-decomposition conjecture\" cubic graphs \"Science China\" 2025",
+    "\"3-decomposition conjecture\" \"Discrete Mathematics\" 2025 cubic graph proof",
+    "arXiv \"3-decomposition\" cubic graph Fan Guo Zhou 2024 2025 spanning tree matching",
+    "arXiv Hoffmann-Ostenhof 3-decomposition conjecture solved proved 2024 2025 cubic graph"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/1806.11009",
+    "https://arxiv.org/abs/1810.00074",
+    "https://arxiv.org/abs/2008.09549",
+    "https://arxiv.org/abs/2104.15113",
+    "https://www.combinatorics.org/ojs/index.php/eljc/article/view/v29i4p23",
+    "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.CP.2025.39",
+    "https://link.springer.com/article/10.1007/s11425-025-2498-x",
+    "https://www.sciencedirect.com/science/article/abs/pii/S0012365X25000627",
+    "https://www.sciencedirect.com/science/article/pii/S0012365X20300303"
+  ],
+  "notes": "Two 2025 papers appeared in searches but could not be fetched for content verification (HTTP 403 or auth redirect): (1) 'Hoffmann-Ostenhof's 3-Decomposition Conjecture' (Fan and Zhou, Discrete Mathematics 348:114454, 2025, pii/S0012365X25000627), reportedly proving a quantitative partial result bounding the number of $P_2$ paths in a near-decomposition; (2) 'The 3-decomposition conjecture of cubic graphs' (Fan, Guo, Zhou, Science China Mathematics, DOI 10.1007/s11425-025-2498-x), apparently a similar partial result. Neither could be cited per rules. The paper at Springer redirected to an authentication portal; the ScienceDirect page returned 403. A third unverified 2020 ScienceDirect paper 'Decomposition of cubic graphs with a 2-factor consisting of three cycles' (pii/S0012365X20300303) also appeared consistently in searches but 403'd. No source found suggesting the full conjecture has been resolved.",
+  "slug": "3_decomposition_conjecture",
+  "reviewed_at": "2026-05-07",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "elapsed_seconds": 195.3
+}

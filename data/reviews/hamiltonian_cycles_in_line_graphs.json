@@ -1,0 +1,57 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Thomassen's conjecture that every 4-connected line graph is Hamiltonian remains open. Partial progress includes lowering the sufficient connectivity threshold: any 5-connected line graph with minimum degree at least 6 is Hamiltonian (Kaiser–Vrána), and several equivalent reformulations have been established. The conjecture is also equivalent to the Matthews–Sumner conjecture (every 4-connected claw-free graph is Hamiltonian), and both remain unresolved.",
+  "since_posted": [
+    {
+      "title": "Hamilton cycles in 5-connected line graphs",
+      "authors": "Tomáš Kaiser, Petr Vrána",
+      "year": 2012,
+      "venue": "European Journal of Combinatorics",
+      "url": "https://arxiv.org/abs/1009.3754",
+      "doi": null,
+      "arxiv_id": "1009.3754",
+      "kind": "partial",
+      "claim": "Any 5-connected line graph with minimum degree at least 6 is Hamiltonian, lowering the sufficient connectivity threshold from 7-connected toward the conjectured 4-connected."
+    },
+    {
+      "title": "Equivalent formulation of Thomassen's conjecture using Tutte paths in claw-free graphs",
+      "authors": "Adam Kabela, Zdeněk Ryjáček, Petr Vrána",
+      "year": 2019,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/1907.08029",
+      "doi": null,
+      "arxiv_id": "1907.08029",
+      "kind": "reduction",
+      "claim": "Thomassen's conjecture is equivalent to the statement that in every connected claw-free graph, every two vertices are connected by a Tutte path, extending the known equivalence with Jackson's Tutte cycle conjecture."
+    },
+    {
+      "title": "Hamiltonian Properties of 3-Connected Claw-Free Graphs and Line Graphs of 3-Hypergraphs",
+      "authors": "Kenta Ozeki, Leilei Zhang",
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2603.03361",
+      "doi": null,
+      "arxiv_id": "2603.03361",
+      "kind": "partial",
+      "claim": "Every 3-connected claw-free graph with domination number at most 5 is Hamiltonian (with finitely many exceptions), and related Hamiltonian results for line graphs of 3-hypergraphs are established."
+    }
+  ],
+  "search_queries": [
+    "Thomassen conjecture 4-connected line graph Hamiltonian cycle progress",
+    "Matthews Sumner conjecture 4-connected claw-free Hamiltonian solved 2008 2025",
+    "Ryjacek Thomassen line graph Hamiltonian claw-free conjecture recent arxiv",
+    "hamiltonian line graph 4-connected conjecture survey 2010 2025"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2603.03361",
+    "https://arxiv.org/abs/1907.08029",
+    "https://arxiv.org/abs/1009.3754",
+    "https://arxiv.org/html/2603.03361"
+  ],
+  "notes": "ScienceDirect pages for Kaiser–Vrána (European J. Combinatorics) and the 2020 'Thomassen's conjecture for line graphs of 3-hypergraphs' paper returned 403 errors; venue for Kaiser–Vrána is inferred from the ScienceDirect URL pattern (ISSN 0195-6698 = European J. Combinatorics) with estimated publication year 2012. The 2019 Kabela–Ryjáček–Vrána preprint was revised in 2025, suggesting it may have been published in a journal by then. The conjecture is also equivalent to Fleischner's dominating cycle conjecture for snarks.",
+  "slug": "hamiltonian_cycles_in_line_graphs",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 06)",
+  "search_enabled": true
+}

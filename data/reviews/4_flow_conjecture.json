@@ -1,0 +1,50 @@
+{
+  "status": "partial",
+  "confidence": "medium",
+  "summary": "Tutte's 4-flow conjecture remains open for general bridgeless graphs. For cubic graphs the equivalent snark conjecture was announced as proved by Robertson–Sanders–Seymour–Thomas in 1999, but the complete proof is still unpublished; two published steps (2016 and 2019) establish the doublecross and structural minor cases needed for the reduction. No breakthrough on the non-cubic general case has been reported.",
+  "since_posted": [
+    {
+      "title": "Three-edge-colouring doublecross cubic graphs",
+      "authors": "Katherine Edwards, Daniel P. Sanders, Paul Seymour, Robin Thomas",
+      "year": 2016,
+      "venue": "Journal of Combinatorial Theory, Series B",
+      "url": "https://arxiv.org/abs/1411.4352",
+      "doi": null,
+      "arxiv_id": "1411.4352",
+      "kind": "partial",
+      "claim": "Proves every two-edge-connected doublecross cubic graph is 3-edge-colourable, completing the doublecross case in the reduction strategy for Tutte's snark conjecture (the cubic-graph case of the 4-flow conjecture); JCTB 119 (2016) 66–95."
+    },
+    {
+      "title": "Excluded minors in cubic graphs",
+      "authors": "Neil Robertson, Paul Seymour, Robin Thomas",
+      "year": 2019,
+      "venue": "Journal of Combinatorial Theory, Series B",
+      "url": "https://arxiv.org/abs/1403.2118",
+      "doi": null,
+      "arxiv_id": "1403.2118",
+      "kind": "partial",
+      "claim": "Establishes a structural characterisation of cubic graphs excluding Petersen minors, serving as a key building block in the announced but still-unpublished full proof of Tutte's snark conjecture; JCTB 138 (2019) 219–285."
+    }
+  ],
+  "search_queries": [
+    "Tutte 4-flow conjecture Petersen minor nowhere-zero recent progress",
+    "nowhere-zero 4-flow Petersen minor bridgeless graph conjecture solved 2010 2020 2025",
+    "4-flow conjecture graph theory arXiv 2008 2015 2020 2025",
+    "\"4-flow conjecture\" OR \"four-flow conjecture\" Seymour Robertson Thomas Petersen minor",
+    "Robertson Seymour Thomas \"snark conjecture\" proof Petersen minor cubic graphs 2019 2016 published"
+  ],
+  "verified_urls": [
+    "https://en.wikipedia.org/wiki/Nowhere-zero_flow",
+    "https://en.wikipedia.org/wiki/Snark_(graph_theory)",
+    "https://www.liquisearch.com/snark_graph_theory/snark_theorem",
+    "https://arxiv.org/abs/1411.4352",
+    "https://arxiv.org/abs/1403.2118",
+    "https://arxiv.org/abs/2502.01451",
+    "https://arxiv.org/abs/0801.3714"
+  ],
+  "notes": "The Wang–Zhang paper 'Nowhere-zero 4-flow in almost Petersen-minor free graphs' (Discrete Mathematics, ~2008, ScienceDirect pii/S0012365X07009673) appeared in search results but could not be verified via WebFetch (403 errors from ScienceDirect and ResearchGate); it is excluded from since_posted. The Robertson–Seymour–Thomas arXiv preprint 1403.2118 was submitted in 2014 but published in JCTB 138 (2019) per Wikipedia; arXiv fetch did not confirm the journal. The complete snark-theorem proof (implying the cubic case of the 4-flow conjecture) has been announced since 1999 but remains unpublished as of 2026.",
+  "slug": "4_flow_conjecture",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 01)",
+  "search_enabled": true
+}

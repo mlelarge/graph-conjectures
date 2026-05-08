@@ -1,0 +1,36 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The conjecture that every arrangement graph of great circles is $3$-colourable remains open. Chiu, Felsner, Scheucher, Schröder, Steiner, and Vogtenhuber (2022) proved 3-colourability for $\\triangle$-saturated pseudocircle arrangements and showed $\\chi_f(A) \\le 3 + O(1/n)$ for all pairwise-intersecting pseudocircle arrangements, but neither result resolves the original problem restricted to great circles. A 2004 arXiv preprint by Cahit claiming a full proof was dismissed by the community as not constituting a valid proof.",
+  "since_posted": [
+    {
+      "title": "Coloring circle arrangements: New 4-chromatic planar graphs",
+      "authors": "Man-Kwun Chiu, Stefan Felsner, Manfred Scheucher, Felix Schröder, Raphael Steiner, Birgit Vogtenhuber",
+      "year": 2022,
+      "venue": "European Journal of Combinatorics",
+      "url": "https://arxiv.org/abs/2205.08181",
+      "doi": null,
+      "arxiv_id": "2205.08181",
+      "kind": "partial",
+      "claim": "Proves 3-colourability of the arrangement graph for $\\triangle$-saturated pseudocircle arrangements and shows the fractional chromatic number of any pairwise-intersecting pseudocircle arrangement satisfies $\\chi_f \\le 3 + O(1/n)$; the conjecture for general great-circle arrangements is left open."
+    }
+  ],
+  "search_queries": [
+    "3-colourability arrangement graph great circles conjecture Felsner Hurtado",
+    "arrangement graph great circles 3-choosable coloring conjecture",
+    "pseudocircle arrangement 3-coloring Felsner Scheucher 2022 2023 2024",
+    "Cahit three colorability arrangement graph great circles 2004 arXiv proof correct error",
+    "great circles arrangement graph 3-coloring solved 2023 2024 2025"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2205.08181",
+    "https://arxiv.org/abs/math/0408363",
+    "https://topp.openproblem.net/p44"
+  ],
+  "notes": "The Cahit arXiv preprint (math/0408363, 2004) predates the OPG posting and was explicitly described by community members on the OPG page as not containing a valid proof; it is excluded from since_posted. The ScienceDirect page for the published Chiu et al. paper (doi via pii S0195669823001579, European J. Combinatorics Vol. 122, 2024) returned HTTP 403 and could not be directly verified; the arXiv abstract page was used instead. The TOPP problem page (p44) confirmed open status but appeared to have last been updated around 2002. No post-2022 paper resolving the conjecture was found.",
+  "slug": "3_colourability_of_arrangements_of_great_circles",
+  "reviewed_at": "2026-05-07",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "elapsed_seconds": 338.2
+}

@@ -1,0 +1,57 @@
+{
+  "status": "disproved",
+  "confidence": "high",
+  "summary": "Hedetniemi's 1966 conjecture — that $\\chi(G \\times H) = \\min(\\chi(G), \\chi(H))$ for the tensor product — was disproved by Shitov in 2019 via finite simple graphs $G,H$ with $\\chi(G \\times H) < \\min(\\chi(G), \\chi(H))$. Subsequent work produced increasingly smaller counterexamples: Zhu gave explicit counterexamples with chromatic number 225, Tardif and others brought the colourability threshold down to $c=14$ and $c=13$, and Wrochna reduced it further to $c=5$. In the $c$-colourability formulation, the conjecture is now known to fail for $c \\ge 4$ and to hold for $c \\le 3$.",
+  "since_posted": [
+    {
+      "title": "Counterexamples to Hedetniemi's conjecture",
+      "authors": "Yaroslav Shitov",
+      "year": 2019,
+      "venue": "Annals of Mathematics",
+      "url": "https://annals.math.princeton.edu/2019/190-2/p06",
+      "doi": "10.4007/annals.2019.190.2.6",
+      "arxiv_id": "1905.02167",
+      "kind": "counterexample",
+      "claim": "Constructs finite simple graphs $G, H$ with $\\chi(G \\times H) < \\min(\\chi(G), \\chi(H))$, refuting the conjecture in general."
+    },
+    {
+      "title": "Relatively small counterexamples to Hedetniemi's conjecture",
+      "authors": "Xuding Zhu",
+      "year": 2021,
+      "venue": "Journal of Combinatorial Theory, Series B",
+      "url": "https://arxiv.org/abs/2004.09028",
+      "doi": "10.1016/j.jctb.2020.09.005",
+      "arxiv_id": "2004.09028",
+      "kind": "counterexample",
+      "claim": "Improves Shitov's refutation by constructing counterexamples with chromatic number 225 (graphs of 10,952 and 33,377 vertices)."
+    },
+    {
+      "title": "Smaller counterexamples to Hedetniemi's conjecture",
+      "authors": "Marcin Wrochna",
+      "year": 2020,
+      "venue": "arXiv preprint (math.CO)",
+      "url": "https://arxiv.org/abs/2012.13558",
+      "doi": null,
+      "arxiv_id": "2012.13558",
+      "kind": "counterexample",
+      "claim": "Pushes the smallest known counterexample down to $c = 5$ via wide colourings and lexicographic products (graphs of 4686 and 30 vertices)."
+    }
+  ],
+  "search_queries": [
+    "Shitov Hedetniemi conjecture counterexample chromatic number tensor product graphs",
+    "arxiv Shitov 1905 Hedetniemi counterexamples",
+    "\"Hedetniemi's conjecture\" disproved 2019 Tardif Wrochna progress"
+  ],
+  "verified_urls": [
+    "https://annals.math.princeton.edu/2019/190-2/p06",
+    "https://arxiv.org/abs/1905.02167",
+    "https://arxiv.org/abs/2004.09028",
+    "https://www.sciencedirect.com/science/article/pii/S0095895620300848",
+    "https://arxiv.org/abs/2012.13558"
+  ],
+  "notes": "The Annals page directly verifies Shitov's title, author, pages 663-667 in volume 190, and DOI 10.4007/annals.2019.190.2.6. Zhu's arXiv page verifies the explicit chromatic-number-225 counterexamples, and the ScienceDirect page verifies the JCTB 2021 publication and DOI. The statement about failure for all $c\\ge4$ in the $c$-colourability formulation is supported by the 2025 survey search result; it is included only in the summary, not as a primary counterexample citation.",
+  "slug": "hedetniemis_conjecture",
+  "reviewed_at": "2026-05-08",
+  "model": "claude (main agent, web search + fetch)",
+  "search_enabled": true
+}

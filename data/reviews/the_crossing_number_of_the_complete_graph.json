@@ -1,0 +1,85 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Hill's conjecture that $\\mathrm{cr}(K_n) = \\frac{1}{4}\\lfloor n/2\\rfloor\\lfloor(n-1)/2\\rfloor\\lfloor(n-2)/2\\rfloor\\lfloor(n-3)/2\\rfloor$ remains open in general. Since 2007, the conjecture has been proved for all 2-page, cylindrical, and shellable drawings by Ábrego et al., and Balogh, Lidický, and Salazar established via flag algebras that $\\mathrm{cr}(K_n) > 0.985\\,H(n)$ for all sufficiently large $n$, substantially improving the previously known $0.83\\,H(n)$ lower bound. The exact value of $\\mathrm{cr}(K_{13})$ remains unknown, narrowed to $\\{219, 221, 223, 225\\}$.",
+  "since_posted": [
+    {
+      "title": "The 2-page crossing number of $K_n$",
+      "authors": "Bernardo M. Abrego, Oswin Aichholzer, Silvia Fernandez-Merchant, Pedro Ramos, Gelasio Salazar",
+      "year": 2012,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/1206.5669",
+      "doi": null,
+      "arxiv_id": "1206.5669",
+      "kind": "partial",
+      "claim": "Proves that the 2-page crossing number of $K_n$ equals $Z(n)$, confirming Hill's conjecture for the 2-page drawing model."
+    },
+    {
+      "title": "Shellable drawings and the cylindrical crossing number of $K_n$",
+      "authors": "Bernardo M. Ábrego, Oswin Aichholzer, Silvia Fernández-Merchant, Pedro Ramos, Gelasio Salazar",
+      "year": 2013,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/1309.3665",
+      "doi": null,
+      "arxiv_id": "1309.3665",
+      "kind": "partial",
+      "claim": "Proves the Harary-Hill conjecture for all shellable drawings (including cylindrical, x-bounded, monotone, and 2-page drawings), settling the conjecture for these drawing classes."
+    },
+    {
+      "title": "On the crossing number of $K_{13}$",
+      "authors": "Dan McQuillan, Shengjun Pan, R. Bruce Richter",
+      "year": 2013,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/1307.3297",
+      "doi": null,
+      "arxiv_id": "1307.3297",
+      "kind": "partial",
+      "claim": "Rules out $\\mathrm{cr}(K_{13}) = 217$, narrowing the possible values to $\\{219, 221, 223, 225\\}$ and advancing the verification program toward $n = 13$."
+    },
+    {
+      "title": "Closing in on Hill's conjecture",
+      "authors": "József Balogh, Bernard Lidický, Gelasio Salazar",
+      "year": 2017,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/1711.08958",
+      "doi": null,
+      "arxiv_id": "1711.08958",
+      "kind": "partial",
+      "claim": "Using flag algebras, proves that $\\mathrm{cr}(K_n) > 0.985\\,H(n)$ for all sufficiently large $n$, substantially improving the prior best asymptotic lower bound of $0.83\\,H(n)$."
+    },
+    {
+      "title": "On a conjecture by Anthony Hill",
+      "authors": "Bojan Mohar",
+      "year": 2020,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2009.03418",
+      "doi": null,
+      "arxiv_id": "2009.03418",
+      "kind": "survey",
+      "claim": "Provides a very general construction (including random configurations on a sphere) showing that many distinct drawing families achieve the Hill upper bound $H(n)$, without establishing it as a lower bound."
+    }
+  ],
+  "search_queries": [
+    "crossing number complete graph K_n conjecture Zarankiewicz Guy progress 2007 2026",
+    "cr(K_n) crossing number conjecture proof lower bound recent results arXiv",
+    "crossing number complete graph K_11 K_12 K_13 verified new results",
+    "rectilinear crossing number complete graph conjecture asymptotic limit 3/8",
+    "Pan Richter crossing number of K12 K11 2007 2008 journal combinatorial theory",
+    "Closing in on Hill's conjecture crossing number complete graph Abrego arXiv"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/1206.5669",
+    "https://arxiv.org/abs/1309.3665",
+    "https://arxiv.org/abs/1307.3297",
+    "https://arxiv.org/abs/1711.08958",
+    "https://arxiv.org/abs/2009.03418",
+    "https://arxiv.org/abs/math/0404142",
+    "https://en.wikipedia.org/wiki/Crossing_number_(graph_theory)",
+    "https://arxiv.org/abs/2206.02755"
+  ],
+  "notes": "The Pan-Richter 2007 paper 'The crossing number of K11 is 100' (J. Graph Theory 56(2):128-134), which extends the verified range to n <= 12, could not be cited because neither the Wiley nor ResearchGate page was accessible (HTTP 403). The OPG posting (2007-05-11) states only n <= 10 was known, suggesting Pan-Richter appeared around the same time or just after. The 'Closing in on Hill's conjecture' paper was published in SIAM J. Discrete Math. 2019 (DOI 10.1137/17M1158859) but is cited here via its verified arXiv preprint. The problem remains fully open for general n >= 13.",
+  "slug": "the_crossing_number_of_the_complete_graph",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 04)",
+  "search_enabled": true
+}

@@ -1,0 +1,33 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Kriesell's conjecture that 2k-edge-connectivity of $T$ in $G$ guarantees $k$ edge-disjoint $T$-Steiner trees remains open in full generality. The best known result (DeVos, McDonald, Pivotto, 2016) shows that edge-cuts separating $T$ of size at least $5k+4$ suffice, improving earlier bounds of $6.5k$ (West–Wu) and $24k$ (Lau). Special cases are settled: the conjecture holds when $|T| \\leq 5$, when $V\\setminus T$ is a stable set in a $3k$-edge-connected graph, and when every vertex in $V\\setminus T$ has even degree.",
+  "since_posted": [
+    {
+      "title": "Packing Steiner Trees",
+      "authors": "Matt DeVos, Jessica McDonald, Irene Pivotto",
+      "year": 2016,
+      "venue": "Journal of Combinatorial Theory, Series B",
+      "url": "https://arxiv.org/abs/1307.7621",
+      "doi": null,
+      "arxiv_id": "1307.7621",
+      "kind": "partial",
+      "claim": "Proves that $k$ edge-disjoint $T$-Steiner trees exist when every edge-cut separating $T$ has size at least $5k+4$, giving the best known constant-factor relaxation of Kriesell's conjecture and improving earlier bounds of $6.5k$ and $24k$."
+    }
+  ],
+  "search_queries": [
+    "Kriesell conjecture edge-disjoint trees T-connectivity spanning trees",
+    "Kriesell conjecture 2k edge-disjoint paths k trees arXiv",
+    "Kriesell conjecture graph theory progress partial results 2014 2025",
+    "\"Kriesell\" \"T-connected\" \"edge-disjoint trees\" conjecture proof"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/1307.7621",
+    "http://lemon.cs.elte.hu/egres/open/Kriesell's_conjecture"
+  ],
+  "notes": "The DeVos–McDonald–Pivotto arXiv preprint (1307.7621) was submitted July 29, 2013, slightly before the OPG posting date of August 25, 2013; it is included here by its journal publication year of 2016. A 2023 paper in Graphs and Combinatorics (DOI: 10.1007/s00373-023-02621-3) titled 'Edge-Disjoint Steiner Trees and Connectors in Graphs' appeared in search results but could not be verified due to Springer paywall restrictions; it may contain further progress. The West–Wu 6.5k result was cited in multiple sources but no specific verified arXiv URL was found. Lau's 24k bound dates from around 2004, predating the OPG posting.",
+  "slug": "kriesells_conjecture",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 05)",
+  "search_enabled": true
+}

@@ -1,0 +1,25 @@
+{
+  "status": "open",
+  "confidence": "medium",
+  "summary": "Mohar's conjecture—that a $\\Delta$-edge-critical graph $G$ is $L$-edge-colorable whenever each edge has a list $L(e)$ of $\\Delta$ colors, unless all lists are identical—appears to remain open. No verified post-2007 paper proving or disproving the conjecture was found in searches of arXiv, Wikipedia, and Mohar's publication list. The OPG problem page was unreachable during verification, preventing confirmation of any recorded progress.",
+  "since_posted": [],
+  "search_queries": [
+    "Mohar conjecture list edge-coloring edge-critical graph Delta colors",
+    "list edge-coloring critical graphs all lists equal conjecture",
+    "edge-critical graph list coloring conjecture Bojan Mohar arXiv",
+    "\"edge-critical\" \"list coloring\" \"Delta colors\" graph conjecture solved"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2007.14944",
+    "https://arxiv.org/search/?searchtype=author&query=Bojan+Mohar",
+    "https://arxiv.org/html/2512.07252",
+    "https://www.sfu.ca/~mohar/Bibsci3.html",
+    "https://en.wikipedia.org/wiki/List_edge-coloring",
+    "https://en.wikipedia.org/wiki/Edge_coloring"
+  ],
+  "notes": "The OPG canonical URL (http://www.openproblemgarden.org/op/list_colorings_of_edge_critical_graphs) and the IRMACS mirror both returned ECONNREFUSED, so the current status recorded on OPG could not be read. Mohar's arXiv listing (142 papers) contains no apparent entry on this specific conjecture. The Bonamy–Delcourt–Lang–Postle paper (arXiv:2007.14944) on local list sizes is the closest related post-2007 work but operates in a very different regime (asymptotic, high minimum degree) and does not address the critical-graph case. Four search queries were exhausted with no verifiable resolution found.",
+  "slug": "list_colorings_of_edge_critical_graphs",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 04)",
+  "search_enabled": true
+}

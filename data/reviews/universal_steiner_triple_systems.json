@@ -1,0 +1,38 @@
+{
+  "status": "partial",
+  "confidence": "medium",
+  "summary": "The preprint [KMPS] cited on the OPG page was published in 2010 in the Canadian Journal of Mathematics, formally establishing that every non-projective, non-affine, non-trivial point-transitive Steiner triple system is universal. A 2013 paper by Grannell, Griggs, Máčajová, and Škoviera addressed point-intransitive systems, constructing both an infinite family of universal point-intransitive STS containing no proper universal subsystem and an infinite family of non-universal STS that are neither projective nor affine; however, a complete characterization of all universal Steiner triple systems remains open.",
+  "since_posted": [
+    {
+      "title": "Characterisation Results for Steiner Triple Systems and Their Application to Edge-Colourings of Cubic Graphs",
+      "authors": "Daniel Král', Edita Máčajová, Attila Pór, Jean-Sébastien Sereni",
+      "year": 2010,
+      "venue": "Canadian Journal of Mathematics",
+      "url": "https://www.cambridge.org/core/journals/canadian-journal-of-mathematics/article/characterisation-results-for-steiner-triple-systems-and-their-application-to-edgecolourings-of-cubic-graphs/B223ACCCB405D9862BBE8D564676114F",
+      "doi": "10.4153/CJM-2010-021-9",
+      "arxiv_id": null,
+      "kind": "partial",
+      "claim": "Proves that all cubic graphs are $S$-edge-colourable for every non-projective non-affine point-transitive Steiner triple system $S$, completing the characterization of universality within the class of point-transitive STS."
+    }
+  ],
+  "search_queries": [
+    "Kral Macajova Por Sereni \"Steiner triple system\" characterization edge-coloring cubic graphs",
+    "universal Steiner triple system cubic graph coloring 2007 2025",
+    "arXiv \"Steiner triple system\" \"universal\" snark edge-coloring cubic",
+    "\"Edge-Colourings of Cubic Graphs and Universal Steiner Triple Systems\" authors year journal",
+    "Pal Skoviera \"universal Steiner triple system\" order 21 cubic graph 2008 2009 2010",
+    "\"universal Steiner triple system\" \"order 13\" characterization recent results 2010 2015 2020",
+    "Macajova Skoviera \"Steiner triple system\" universal cubic graph coloring characterization 2012 2015 2018",
+    "Grannell Griggs Macajova Skoviera \"point-intransitive Steiner triple systems\" Journal of Graph Theory 2013",
+    "\"point-intransitive Steiner triple systems\" \"coloring cubic\" 2013 DOI arXiv",
+    "Macajova publications \"Steiner triple\" cubic coloring site:dcs.fmph.uniba.sk OR site:fmph.uniba.sk"
+  ],
+  "verified_urls": [
+    "https://www.cambridge.org/core/journals/canadian-journal-of-mathematics/article/characterisation-results-for-steiner-triple-systems-and-their-application-to-edgecolourings-of-cubic-graphs/B223ACCCB405D9862BBE8D564676114F"
+  ],
+  "notes": "Multiple search results consistently report a 2013 paper by Grannell, Griggs, Máčajová, Škoviera ('Coloring cubic graphs by point-intransitive Steiner triple systems', J. Graph Theory 74, 163–181, DOI 10.1002/jgt.21696) that extends results to point-intransitive STS; however, all attempts to fetch this paper's URL returned HTTP 403, so it is not included in since_posted per the verification rule. The Kral et al. result appeared as a preprint when the OPG was posted but only the published (2010) journal version is cited here. No arXiv preprints on this topic were found. The full classification of which Steiner triple systems are universal (including non-point-transitive ones) appears to remain open.",
+  "slug": "universal_steiner_triple_systems",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 02)",
+  "search_enabled": true
+}

@@ -1,0 +1,72 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The Matheson–Tarjan conjecture that every sufficiently large plane triangulation has a dominating set of size at most $n/4$ remains open. The general upper bound has been steadily improved from $n/3$ to $17n/53$ (Špaçapan 2020) and then to $2n/7 \\approx 0.286n$ (Christiansen–Rotenberg–Rutschmann 2023), while the full $n/4$ bound has been confirmed for the special case of plane triangulations with maximum degree at most 6 (King–Pelsmajer 2010).",
+  "since_posted": [
+    {
+      "title": "Dominating sets in plane triangulations",
+      "authors": "Erika L. C. King, Michael J. Pelsmajer",
+      "year": 2010,
+      "venue": "Discrete Mathematics",
+      "url": "https://arxiv.org/abs/0806.2421",
+      "doi": "10.1016/j.disc.2010.03.022",
+      "arxiv_id": "0806.2421",
+      "kind": "partial",
+      "claim": "Proves the Matheson–Tarjan $n/4$ conjecture for the special case of plane triangulations with maximum degree at most 6."
+    },
+    {
+      "title": "Dominating Plane Triangulations",
+      "authors": "Michael D. Plummer, Dong Ye, Xiaoya Zha",
+      "year": 2016,
+      "venue": "Discrete Applied Mathematics",
+      "url": "https://arxiv.org/abs/1408.4530",
+      "doi": null,
+      "arxiv_id": "1408.4530",
+      "kind": "partial",
+      "claim": "Proves that Hamiltonian plane triangulations with minimum degree at least 4 satisfy $\\gamma(G) \\le \\lfloor 5n/16 \\rfloor$ for $n \\ge 26$, improving upon the $n/3$ bound for this class."
+    },
+    {
+      "title": "The domination number of plane triangulations",
+      "authors": "Simon Špaçapan",
+      "year": 2020,
+      "venue": "Journal of Combinatorial Theory, Series B",
+      "url": "https://arxiv.org/abs/1806.06932",
+      "doi": null,
+      "arxiv_id": "1806.06932",
+      "kind": "partial",
+      "claim": "Improves the general upper bound on the domination number of plane triangulations from $n/3$ to $17n/53 \\approx 0.321n$ for all $n > 6$."
+    },
+    {
+      "title": "Triangulations Admit Dominating Sets of Size $2n/7$",
+      "authors": "Aleksander B. G. Christiansen, Eva Rotenberg, Daniel Rutschmann",
+      "year": 2023,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2310.11254",
+      "doi": null,
+      "arxiv_id": "2310.11254",
+      "kind": "partial",
+      "claim": "Proves that every plane triangulation on $n > 10$ vertices has a dominating set of size at most $2n/7 \\approx 0.286n$, the current best general upper bound, substantially improving upon $17n/53$."
+    }
+  ],
+  "search_queries": [
+    "domination plane triangulation conjecture Matheson Tarjan 1/4 vertices",
+    "dominating set plane triangulation quarter bound arXiv",
+    "planar triangulation domination number upper bound 2009 2010 2011 2012 progress",
+    "Matheson Tarjan dominating sets planar graphs follow-up improvement"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2310.11254",
+    "https://arxiv.org/abs/1806.06932",
+    "https://arxiv.org/abs/1408.4530",
+    "https://arxiv.org/abs/0806.2421",
+    "https://arxiv.org/abs/2403.00595",
+    "https://dblp.org/search?q=King+Pelsmajer+dominating+plane+triangulations",
+    "https://dblp.org/search?q=Plummer+Ye+Zha+dominating+plane+triangulations",
+    "https://dblp.org/search?q=Spacapan+domination+plane+triangulations"
+  ],
+  "notes": "The King–Pelsmajer arXiv preprint (0806.2421) was submitted June 2008, before the OPG posting date; the Discrete Mathematics journal version appeared in 2010 and is cited here. Search results suggest the Christiansen–Rotenberg–Rutschmann paper may have been published at SODA 2024, but this could not be confirmed via WebFetch (access denied); listed as arXiv preprint. DOIs for Špaçapan (J. Comb. Theory B 143:42–64, 2020) and Plummer–Ye–Zha (Discrete Appl. Math. 211:175–182, 2016) were not retrieved due to paywall restrictions, but their journal venues were confirmed via DBLP.",
+  "slug": "domination_in_plane_triangulations",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 05)",
+  "search_enabled": true
+}

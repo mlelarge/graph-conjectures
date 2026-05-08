@@ -1,0 +1,36 @@
+{
+  "status": "disproved",
+  "confidence": "high",
+  "summary": "Mattiolo and Steffen (J. Graph Theory, 2022) explicitly disproved Steffen's conjecture by constructing $(2t+1)$-regular class 1 graphs with circular flow number greater than $2+\\frac{2}{t}$; the counterexamples are built from a family of graphs originally used to disprove Jaeger's Circular Flow Conjecture and apply to $t = 4k+2$ for all integers $k \\geq 1$. A subsequent SIAM (2022) paper by Li, Li, and Wang on the 'flow index of regular Class I graphs' extends the family of counterexample values of $t$ further; however, the conjecture remains true for $t=1$ (cubic graphs), and the exact set of $t$ for which it holds is still under investigation.",
+  "since_posted": [
+    {
+      "title": "Edge colorings and circular flows on regular graphs",
+      "authors": "Davide Mattiolo, Eckhard Steffen",
+      "year": 2022,
+      "venue": "Journal of Graph Theory",
+      "url": "https://arxiv.org/abs/2001.02484",
+      "doi": "10.1002/jgt.22746",
+      "arxiv_id": "2001.02484",
+      "kind": "counterexample",
+      "claim": "Disproves the conjecture that every $(2t+1)$-regular class 1 graph has circular flow number at most $2+2/t$, and also confirms that $2+2/(2t-1)$ is the infimum of circular flow numbers for $(2t+1)$-regular class 2 graphs."
+    }
+  ],
+  "search_queries": [
+    "circular flow number regular class 1 graphs Steffen conjecture 2+2/t",
+    "Steffen \"circular flow number\" \"(2t+1)-regular\" \"class 1\" graph",
+    "arXiv circular flow number regular graphs edge-coloring conjecture Steffen",
+    "\"nowhere-zero flow\" \"class 1\" regular graph circular flow conjecture progress 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+    "arXiv \"edge colorings and circular flows on regular graphs\" Mattiolo Steffen 2020 2021",
+    "\"circular flow\" \"class 1\" \"(2t+1)-regular\" disproved counterexample 2022 2023 2024"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2001.02484",
+    "https://arxiv.org/abs/1310.8441"
+  ],
+  "notes": "A second 2022 paper, 'The Flow Index of Regular Class I Graphs' by Jiaao Li, Xueliang Li, and Meiling Wang (SIAM J. Discrete Math.), is cited across multiple sources as extending the counterexamples to t in {6,8,10} and all t≥12; but I could not verify this paper via any accessible URL (the PDF hosts returned binary content and the SIAM page returned 403), so it is excluded from since_posted. The disproof in the verified Mattiolo–Steffen paper applies to t = 4k+2 for k ≥ 1 (i.e., t ∈ {6,10,14,…}); the arXiv page lists the journal version as Journal of Graph Theory 99 (2022), 399-413, DOI 10.1002/jgt.22746. The conjecture is still true for t=1 and its status for t ∈ {2,3,4,5} and odd t > 5 is not fully resolved.",
+  "slug": "circular_flow_number_of_regular_class_1_graphs",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "elapsed_seconds": 173.8
+}

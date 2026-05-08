@@ -1,0 +1,61 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Since the problem was posted, two major developments have occurred. First, Chuzhoy, Kim, and Nimavat (STOC 2018 / Theory of Computing 2021) proved $2^{\\Omega(\\log^{1-\\varepsilon} n)}$-hardness for MaxEDP even in wall graphs (subcubic planar graphs), establishing an inapproximability result far stronger than $\\mathcal{APX}$-hardness and thus answering the second half of the posed question affirmatively. Second, Huang, Mari, Mathieu, Schewior, and Vygen (SIAM J. Comput. 2020) achieved a constant-factor approximation for the *fully planar* variant of MaxEDP (where the supply graph together with the demand edges forms a planar graph), improving the $O(\\sqrt{n})$ ratio for that special case; however, the $O(\\sqrt{n})$ approximation ratio for MaxEDP in general planar graphs (without the fully-planar restriction) remains the best known upper bound.",
+  "since_posted": [
+    {
+      "title": "Almost Polynomial Hardness of Node-Disjoint Paths in Grids",
+      "authors": "Julia Chuzhoy, David H. K. Kim, Rachit Nimavat",
+      "year": 2021,
+      "venue": "Theory of Computing",
+      "url": "https://theoryofcomputing.org/articles/v017a006/",
+      "doi": null,
+      "arxiv_id": null,
+      "kind": "partial",
+      "claim": "Proves $2^{\\Omega(\\log^{1-\\varepsilon} n)}$-hardness for NDP and, explicitly, for MaxEDP even in wall graphs (3-regular planar graphs), giving an inapproximability result far stronger than $\\mathcal{APX}$-hardness for MaxEDP in planar graphs."
+    },
+    {
+      "title": "An Approximation Algorithm for Fully Planar Edge-Disjoint Paths",
+      "authors": "Chien-Chung Huang, Mathieu Mari, Claire Mathieu, Kevin Schewior, Jens Vygen",
+      "year": 2020,
+      "venue": "SIAM Journal on Computing",
+      "url": "https://arxiv.org/abs/2001.01715",
+      "doi": "10.1137/20M1319401",
+      "arxiv_id": "2001.01715",
+      "kind": "partial",
+      "claim": "Achieves a constant-factor approximation (and proves a constant integrality gap for the LP relaxation) for MaxEDP on fully planar instances, where the supply graph together with the demand edges forms a planar graph—a special but natural subclass of planar MaxEDP instances."
+    },
+    {
+      "title": "Improved Approximation for Node-Disjoint Paths in Planar Graphs",
+      "authors": "Julia Chuzhoy, David H. K. Kim, Shi Li",
+      "year": 2016,
+      "venue": "Proceedings of the 48th Annual ACM STOC",
+      "url": "https://arxiv.org/abs/1603.05520",
+      "doi": null,
+      "arxiv_id": "1603.05520",
+      "kind": "partial",
+      "claim": "Breaks the $O(\\sqrt{n})$ barrier for the closely related Node-Disjoint Paths (NDP) problem in planar graphs, achieving an $\\tilde{O}(n^{9/19})$ approximation; the result is for NDP only and does not directly extend to MaxEDP (edge-disjoint)."
+    }
+  ],
+  "search_queries": [
+    "Maximum Edge Disjoint Paths planar graphs approximation ratio improvement O(sqrt(n))",
+    "MaxEDP planar graphs inapproximability hardness result 2010 2011 2012 2013 2014 2015",
+    "edge disjoint paths planar graphs hardness inapproximability Andrews Chuzhoy 2010 2011 2012",
+    "Cédric Bentz MaxEDP planar graphs approximation algorithm 2007 2008 2009 2010 2011",
+    "maximum edge disjoint paths planar graphs approximation algorithm 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+    "node disjoint paths planar graphs hardness 2^(sqrt(log n)) Chuzhoy Kim 2015 2016",
+    "maximum edge disjoint paths planar graphs O(n^{9/19}) approximation OR hardness OR APX 2016 2017 2018 2019 2020 2021 2022 2023",
+    "Chuzhoy Kim Nimavat new hardness results for routing on disjoint paths arXiv 2017"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2001.01715",
+    "https://theoryofcomputing.org/articles/v017a006/",
+    "https://arxiv.org/abs/1603.05520"
+  ],
+  "notes": "The Springer journal pages (Combinatorica, Mathematical Programming) returned authentication redirects and could not be fetched; the corresponding papers are not cited. The hardness result in the Chuzhoy–Kim–Nimavat ToC paper is stated for wall graphs (a subclass of planar graphs), which suffices to answer the planarity question, but the paper's primary focus is grid graphs and the NDP problem—the EDP extension is stated in the abstract. The Chuzhoy–Kim–Li (2016) Õ(n^{9/19}) result is for NDP, not MaxEDP; it is included as context because it breaks O(√n) for the closely related problem and introduced the LP techniques later useful in this line of work. No post-2010 paper improving O(√n) for MaxEDP in general (unrestricted) planar graphs without congestion was found.",
+  "slug": "approximation_ratio_for_maximum_edge_disjoint_paths_problem",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "elapsed_seconds": 241.6
+}

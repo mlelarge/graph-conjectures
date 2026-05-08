@@ -1,0 +1,61 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Jones' conjecture — that $cc(G) \\leq 2\\,cp(G)$ for every planar graph $G$ — remains open for general planar graphs, but has seen substantial partial progress since 2007. The bound for all planar graphs was tightened from $5\\,cp(G)$ to $3\\,cp(G)$ by Chappell, Gimbel, and Hartman (2014), the conjecture was proved for subcubic planar graphs by Bonamy et al. (2021), and further confirmed for Halin graphs and 'based' planar graphs (those containing a face adjacent to every other face) by Bärnkopf and Győri (2024).",
+  "since_posted": [
+    {
+      "title": "On cycle packings and feedback vertex sets",
+      "authors": "Glenn G. Chappell, John Gimbel, Chris Hartman",
+      "year": 2014,
+      "venue": "Contributions to Discrete Mathematics",
+      "url": "https://cdm.ucalgary.ca/article/view/62105",
+      "doi": "10.55016/ojs/cdm.v9i2.62105",
+      "arxiv_id": null,
+      "kind": "partial",
+      "claim": "Proves $cc(G) \\leq 3\\,cp(G)$ for every planar graph (improving the previously known factor-5 bound from Kloks–Lee–Liu), and extends the factor-3 bound to all graphs embedded in surfaces of non-negative Euler characteristic."
+    },
+    {
+      "title": "Jones' Conjecture in subcubic graphs",
+      "authors": "Marthe Bonamy, François Dross, Tomáš Masařík, Andrea Munaro, Wojciech Nadara, Marcin Pilipczuk, Michał Pilipczuk",
+      "year": 2021,
+      "venue": "The Electronic Journal of Combinatorics",
+      "url": "https://www.combinatorics.org/ojs/index.php/eljc/article/view/v28i4p5",
+      "doi": "10.37236/9192",
+      "arxiv_id": "1912.01570",
+      "kind": "partial",
+      "claim": "Proves Jones' conjecture in full for subcubic planar graphs: if such a graph has no $k+1$ vertex-disjoint cycles, then $2k$ vertices suffice to destroy all cycles."
+    },
+    {
+      "title": "Jones' conjecture for Halin graphs and a bit more",
+      "authors": "Pál Bärnkopf, Ervin Győri",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2401.07376",
+      "doi": null,
+      "arxiv_id": "2401.07376",
+      "kind": "partial",
+      "claim": "Proves Jones' conjecture for Halin graphs and, more generally, for 'based planar graphs' — planar graphs that contain a face adjacent to every other face."
+    }
+  ],
+  "search_queries": [
+    "Jones conjecture planar graph cycle cover cycle packing cc(G) cp(G)",
+    "feedback vertex set cycle packing planar graph 2-approximation conjecture proof",
+    "Kloks Lee Liu cycle packing feedback vertex set planar graph conjecture solved",
+    "Bonamy Dross Masarik Nadara Pilipczuk Jones conjecture subcubic planar graphs feedback vertex set"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2401.07376",
+    "https://arxiv.org/html/2401.07376",
+    "https://arxiv.org/abs/2207.00450",
+    "https://cdm.ucalgary.ca/article/view/62105",
+    "https://cdm.ucalgary.ca/article/download/62105/46726/177590",
+    "https://arxiv.org/abs/1912.01570",
+    "https://www.combinatorics.org/ojs/index.php/eljc/article/view/v28i4p5",
+    "https://dataspace.princeton.edu/handle/88435/dsp01tb09j840d"
+  ],
+  "notes": "The Princeton DataSpace entry (dsp01tb09j840d) returned HTTP 401 and could not be verified; it appears to be a thesis on the subcubic case and was not cited. Schlomberg–Thiele–Vygen (arXiv:2207.00450) on packing cycles in planar/bounded-genus graphs was fetched but does not directly address Jones' conjecture and was excluded. The arXiv version of the Bonamy et al. paper (1912.01570, 2019) lists six authors; the published EJC version (2021) adds Andrea Munaro as a seventh — the published list is used here.",
+  "slug": "jones_conjecture",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 03)",
+  "search_enabled": true
+}

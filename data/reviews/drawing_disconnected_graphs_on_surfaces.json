@@ -1,0 +1,37 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Since the problem was posted, the conjecture has been proved for the Klein bottle by Beaudou, Gerbaud, Grappe, and Palesi (2010): every optimal drawing of a disconnected graph on the Klein bottle draws the connected components disjointly. The conjecture thus holds for the plane (trivially), the projective plane (DeVos–Mohar–Šámal, pre-posting), and the Klein bottle, but remains open for the torus and all other surfaces. A 2015 extended abstract by Cabello, Mohar, and Šámal reports a partial result for the torus by reducing the problem to a question in the geometry of numbers, but the torus case is not fully resolved.",
+  "since_posted": [
+    {
+      "title": "Drawing disconnected graphs on the Klein bottle",
+      "authors": "Laurent Beaudou, Antoine Gerbaud, Roland Grappe, Frederic Palesi",
+      "year": 2010,
+      "venue": "Graphs and Combinatorics",
+      "url": "https://arxiv.org/abs/0810.0508",
+      "doi": "10.1007/s00373-010-0928-7",
+      "arxiv_id": "0810.0508",
+      "kind": "partial",
+      "claim": "Proves the DeVos–Mohar–Šámal conjecture for the Klein bottle: in any crossing-optimal drawing of a disconnected graph on the Klein bottle, the connected components must be drawn in disjoint regions."
+    }
+  ],
+  "search_queries": [
+    "crossing number disconnected graphs surfaces conjecture DeVos Mohar Samal",
+    "optimal drawing disjoint union graphs surface crossing number",
+    "crossing number surfaces topological graph theory disjoint components drawing arXiv",
+    "\"crossing number\" \"disconnected\" \"surface\" conjecture graph drawing 2007 2026"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/0810.0508",
+    "https://www.sfu.ca/~mohar/Problems.html",
+    "https://www.sfu.ca/~mohar/Bibsci4.html",
+    "https://arxiv.org/abs/2306.09550",
+    "https://arxiv.org/abs/2405.06118",
+    "https://arxiv.org/search/?searchtype=author&query=Samal+Robert&start=0"
+  ],
+  "notes": "A 2015 extended abstract 'Drawing a disconnected graph on the torus' by Cabello, Mohar, and Šámal (Electronic Notes in Discrete Mathematics 49, pp. 779–786, arXiv not found) reports reduction to a geometry-of-numbers question and a partial result for the torus, but could not be verified via WebFetch (ScienceDirect and PDF returned 403/binary). This paper was therefore not included in since_posted despite strong search-result evidence of its existence. The DOI 10.1007/s00373-010-0928-7 for the Klein bottle paper was confirmed by multiple search results but the Springer page required authentication; the arXiv preprint at 0810.0508 was directly verified. No papers resolving the conjecture for the torus or any orientable surface of genus ≥ 1 were found.",
+  "slug": "drawing_disconnected_graphs_on_surfaces",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 07)",
+  "search_enabled": true
+}

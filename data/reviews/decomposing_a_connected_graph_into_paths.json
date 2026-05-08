@@ -1,0 +1,68 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Gallai's 1968 conjecture — that every connected graph on $n$ vertices decomposes into at most $\\lceil n/2 \\rceil$ paths — remains open in general. Since the OPG posting date (2013) it has been verified for large families: graphs of maximum degree at most 5 (Bonamy–Perrett, 2016), graphs whose E-subgraph lies in a specific block family (Botler–Sambinelli, 2019), connected planar graphs except $K_3$ and $K_5^-$ (Blanché–Bonamy–Bonichon, 2021), and 2-degenerate graphs (Anto–Basavaraju, 2022). The full conjecture for all connected graphs is still unresolved.",
+  "since_posted": [
+    {
+      "title": "Gallai's path decomposition conjecture for graphs of small maximum degree",
+      "authors": "Marthe Bonamy, Thomas Perrett",
+      "year": 2016,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/1609.06257",
+      "doi": null,
+      "arxiv_id": "1609.06257",
+      "kind": "partial",
+      "claim": "Verifies Gallai's conjecture for every connected graph of maximum degree at most 5."
+    },
+    {
+      "title": "Towards Gallai's path decomposition conjecture",
+      "authors": "Fabio Botler, Maycon Sambinelli",
+      "year": 2019,
+      "venue": "arXiv preprint (later in J. Graph Theory)",
+      "url": "https://arxiv.org/abs/1911.04546",
+      "doi": null,
+      "arxiv_id": "1911.04546",
+      "kind": "partial",
+      "claim": "Verifies the conjecture for the family of graphs whose E-subgraph is a subgraph of a specific block family $\\mathcal{G}$, generalising Fan's 2005 result."
+    },
+    {
+      "title": "Gallai's path decomposition in planar graphs",
+      "authors": "Alexandre Blanché, Marthe Bonamy, Nicolas Bonichon",
+      "year": 2021,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2110.08870",
+      "doi": null,
+      "arxiv_id": "2110.08870",
+      "kind": "partial",
+      "claim": "Proves that every connected planar graph except $K_3$ and $K_5^-$ decomposes into at most $\\lfloor n/2 \\rfloor$ paths."
+    },
+    {
+      "title": "Gallai's Path Decomposition for 2-degenerate Graphs",
+      "authors": "Nevil Anto, Manu Basavaraju",
+      "year": 2023,
+      "venue": "Discrete Mathematics & Theoretical Computer Science 25:1",
+      "url": "https://arxiv.org/abs/2211.07159",
+      "doi": null,
+      "arxiv_id": "2211.07159",
+      "kind": "partial",
+      "claim": "Shows that any connected 2-degenerate graph on $n$ vertices, other than the triangle, decomposes into at most $\\lfloor n/2 \\rfloor$ paths."
+    }
+  ],
+  "search_queries": [
+    "Gallai conjecture path decomposition (n+1)/2 connected graph proof",
+    "Gallai path decomposition conjecture progress 2024",
+    "arxiv Gallai conjecture paths connected graph decomposition",
+    "\"Gallai\" \"path decomposition\" survey graph theory"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/1609.06257",
+    "https://arxiv.org/abs/1911.04546",
+    "https://arxiv.org/abs/2110.08870",
+    "https://arxiv.org/abs/2211.07159"
+  ],
+  "notes": "The conjecture is also reported verified for treewidth ≤ 3 (Botler et al., 2020, J. Graph Theory) and treewidth ≤ 4 (more recent work), and for block graphs (AIMS Math, 2025); these were not verified in detail here.",
+  "slug": "decomposing_a_connected_graph_into_paths",
+  "reviewed_at": "2026-05-08",
+  "model": "claude (main agent, web search + fetch)",
+  "search_enabled": true
+}

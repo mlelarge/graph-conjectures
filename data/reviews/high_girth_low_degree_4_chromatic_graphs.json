@@ -1,0 +1,20 @@
+{
+  "status": "open",
+  "confidence": "medium",
+  "summary": "The question whether 4-regular 4-chromatic graphs of arbitrarily high girth exist is still open. The general Grünbaum conjecture (every $m$-regular $m$-chromatic graph class admits arbitrarily high girth) is known to be false from Johansson's $\\chi \\le C\\Delta/\\log\\Delta$ bound for triangle-free graphs, but that bound does not preclude the small-$m$ case considered here. Only a handful of 4-regular 4-chromatic graphs of girth $\\ge 4$ are known (Chvátal at girth 4; Brinkmann and Grünbaum at girth 5); no construction or non-existence proof for higher girth has appeared in the searched literature.",
+  "since_posted": [],
+  "search_queries": [
+    "\"4-regular\" \"4-chromatic\" graphs arbitrarily high girth existence",
+    "Grunbaum conjecture m-regular m-chromatic high girth Johansson",
+    "arxiv 4-chromatic 4-regular high girth graph",
+    "\"Brinkmann graph\" \"Chvatal graph\" Grunbaum girth 4-chromatic"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2312.06898"
+  ],
+  "notes": "Searches surfaced Bucić–Davies (arXiv:2312.06898, 2023) on geometric graphs with exponential chromatic number and arbitrary girth, but that paper does not address the regular-graph version of the question, so it is not cited as evidence here. Status 'medium' rather than 'high' because absence of recent constructions in search results is not conclusive.",
+  "slug": "high_girth_low_degree_4_chromatic_graphs",
+  "reviewed_at": "2026-05-08",
+  "model": "claude (main agent, web search + fetch)",
+  "search_enabled": true
+}

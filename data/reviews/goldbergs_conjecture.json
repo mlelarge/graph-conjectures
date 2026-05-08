@@ -1,0 +1,58 @@
+{
+  "slug": "goldbergs_conjecture",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet (subagent)",
+  "search_enabled": true,
+  "status": "solved",
+  "confidence": "high",
+  "summary": "Goldberg's conjecture (independently posed by Andersen and Seymour) was proved by Chen, Jing, and Zang: their 2019 arXiv proof is now published in Journal of Combinatorial Optimization (2025). In the OPG notation, every multigraph $G$ satisfies $\\chi'(G) \\le \\max\\{\\Delta(G)+1, w(G)\\}$, equivalently $\\chi'(G) \\in \\{\\max\\{\\Delta(G), \\lceil \\Gamma(G) \\rceil\\}, \\max\\{\\Delta(G)+1, \\lceil \\Gamma(G) \\rceil\\}\\}$. A significantly shorter proof, together with a polynomial-time edge-coloring algorithm confirming the Hochbaum-Nishizeki-Shmoys conjecture, was given by Chen, Hao, Yu, and Zang in 2024.",
+  "since_posted": [
+    {
+      "title": "Proof of the Goldberg-Seymour Conjecture on Edge-Colorings of Multigraphs",
+      "authors": "Guantao Chen, Guangming Jing, Wenan Zang",
+      "year": 2025,
+      "venue": "Journal of Combinatorial Optimization",
+      "url": "https://link.springer.com/article/10.1007/s10878-025-01348-6",
+      "doi": "10.1007/s10878-025-01348-6",
+      "arxiv_id": "1901.10316",
+      "kind": "proof",
+      "claim": "Proves the Goldberg-Seymour conjecture: every multigraph $G$ satisfies $\\chi'(G) \\le \\max\\{\\Delta(G)+1, \\lceil \\Gamma(G) \\rceil\\}$, settling Goldberg's conjecture in the affirmative. The proof first appeared as arXiv:1901.10316 in 2019."
+    },
+    {
+      "title": "A short proof of the Goldberg-Seymour conjecture",
+      "authors": "Guantao Chen, Yanli Hao, Xingxing Yu, Wenan Zang",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2407.09403",
+      "doi": null,
+      "arxiv_id": "2407.09403",
+      "kind": "proof",
+      "claim": "Provides a substantially shorter proof of the Goldberg-Seymour conjecture and an $O(|V|^5|E|^3)$ polynomial-time algorithm computing a $\\max\\{\\Delta(G)+1, \\lceil \\Gamma(G) \\rceil\\}$-edge-coloring, also confirming the Hochbaum-Nishizeki-Shmoys conjecture."
+    },
+    {
+      "title": "Goldberg's Conjecture is true for random multigraphs",
+      "authors": "Penny Haxell, Michael Krivelevich, Gal Kronenberg",
+      "year": 2019,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/1803.00908",
+      "doi": null,
+      "arxiv_id": "1803.00908",
+      "kind": "partial",
+      "claim": "Shows Goldberg's conjecture holds (in the stronger form $\\chi'(G) = \\max\\{\\Delta(G), \\lceil \\rho(G) \\rceil\\}$) for typical random multigraphs in the model $M(n,m)$."
+    }
+  ],
+  "search_queries": [
+    "Goldberg conjecture chromatic index multigraph proof arxiv",
+    "Goldberg-Seymour conjecture edge coloring multigraph proof",
+    "Chen Jing Zang Goldberg-Seymour conjecture proof",
+    "\"Goldberg's conjecture\" multigraph chromatic index 2024 2025"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/1901.10316",
+    "https://arxiv.org/abs/2407.09403",
+    "https://arxiv.org/abs/1803.00908",
+    "https://link.springer.com/article/10.1007/s10878-025-01348-6",
+    "https://doi.org/10.1007/s10878-025-01348-6"
+  ],
+  "notes": "The OPG-stated conjecture $\\chi'(G) \\le \\max\\{\\Delta(G)+1, w(G)\\}$ is the Goldberg-Seymour conjecture (with $w(G) = \\lceil \\Gamma(G) \\rceil$ the density / overfull parameter). The Chen-Jing-Zang proof first appeared as arXiv:1901.10316 in 2019 and is now verified via the 2025 Journal of Combinatorial Optimization article, DOI 10.1007/s10878-025-01348-6. A short, algorithmic proof by Chen, Hao, Yu, and Zang (arXiv:2407.09403, 2024) further confirms and simplifies the result."
+}

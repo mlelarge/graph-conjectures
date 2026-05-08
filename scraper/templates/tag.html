@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}{{ heading }} — Graph-theory open problems{% endblock %}
+
+{% block main %}
+<article class="prose">
+<h1>{{ heading }}</h1>
+<p class="meta">{{ kind_label }} · {{ problems|length }} problem{{ 's' if problems|length != 1 else '' }}</p>
+
+<table class="problems-table">
+<thead>
+<tr>
+  <th class="col-title">Title</th>
+  <th class="col-status">Status</th>
+  <th class="col-importance">Imp.</th>
+  <th class="col-posted">Posted</th>
+</tr>
+</thead>
+<tbody>
+{% for p in problems %}
+<tr>
+  <td><a href="{{ root }}op/{{ p.slug }}/">{{ p.title }}</a></td>
+  <td>{% if p._review %}<span class="status-badge status-{{ p._review.status }}">{{ p._review.status }}</span>{% endif %}</td>
+  <td class="importance-{{ p.importance.label|lower }}">{{ '★' * p.importance.stars }}</td>
+  <td>{{ p.posted_at or '' }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+</article>
+{% endblock %}

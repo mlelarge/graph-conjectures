@@ -1,0 +1,36 @@
+{
+  "status": "partial",
+  "confidence": "medium",
+  "summary": "The conjecture that every 3-edge-colored tournament has either a rainbow directed triangle or a vertex from which all others are reachable by a monochromatic path remains open. Georgakopoulos and Sprüssel (2009) established a partial case: the conclusion holds for every 3-edge-colored tournament in which no vertex is incident with all three colors. The generalized conjecture (arbitrary number of colors) is also open, with the 4-color case shown to be false by a counterexample that predates the OPG posting.",
+  "since_posted": [
+    {
+      "title": "On 3-coloured tournaments",
+      "authors": "Agelos Georgakopoulos, Philipp Sprüssel",
+      "year": 2009,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/0904.1967",
+      "doi": null,
+      "arxiv_id": "0904.1967",
+      "kind": "partial",
+      "claim": "Proves that every 3-edge-colored tournament in which no vertex is incident with all three colors contains either a rainbow directed triangle or a vertex with monochromatic paths to all other vertices, establishing the conjecture under this additional assumption."
+    }
+  ],
+  "search_queries": [
+    "monochromatic reachability rainbow triangle tournament edge-colored conjecture",
+    "Sands Sauer Woodrow monochromatic paths edge-coloured digraphs tournament rainbow cycle",
+    "rainbow directed cycle monochromatic kernel tournament edge coloring arXiv",
+    "Galeana-Sanchez Rojas-Monroy monochromatic path tournament rainbow triangle conjecture"
+  ],
+  "verified_urls": [
+    "https://dwest.web.illinois.edu/regs/msourcyc.html",
+    "https://arxiv.org/abs/0904.1967",
+    "https://arxiv.org/abs/1805.03412",
+    "https://arxiv.org/abs/1810.05960",
+    "https://arxiv.org/abs/2503.11923"
+  ],
+  "notes": "The Douglas West problem page (dwest.web.illinois.edu/regs/msourcyc.html, citations through 2010) confirms the 3-color conjecture is still open. The Georgakopoulos-Sprüssel arXiv preprint notes their main result 'had appeared before' in another work, meaning the partial result under extra conditions may predate the OPG posting; nonetheless the paper itself is from 2009. The 'Monochromatic Sinks in k-Arc Colored Tournaments' (Springer 2015) and related journal papers could not be fully accessed due to paywalls and may contain further partial progress. No paper found that resolves the main conjecture.",
+  "slug": "monochromatic_reachability_vs_rainbow_triangles",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 02)",
+  "search_enabled": true
+}

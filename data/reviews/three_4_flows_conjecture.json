@@ -1,0 +1,24 @@
+{
+  "status": "open",
+  "confidence": "medium",
+  "summary": "The three 4-flows conjecture, which asks for a partition of the edge set of every bridgeless graph into three sets each of which can be removed to leave a graph with a nowhere-zero 4-flow, remains open. No post-2007 paper resolving or substantially partially resolving this conjecture was found; the problem reduces to cubic snarks and is implied by the Petersen coloring conjecture, itself still open.",
+  "since_posted": [],
+  "search_queries": [
+    "three 4-flows conjecture nowhere-zero flow graph theory DeVos",
+    "nowhere-zero 4-flow edge decomposition conjecture Petersen coloring cubic graphs",
+    "arXiv \"three 4-flows\" OR \"4-flows conjecture\" nowhere-zero bridgeless graph",
+    "orientable cycle four cover conjecture nowhere-zero flow progress 2010 2020 2025",
+    "\"three 4-flows\" graph conjecture nowhere-zero site:arxiv.org"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2511.01556",
+    "https://en.wikipedia.org/wiki/Nowhere-zero_flow",
+    "https://arxiv.org/search/?query=three+4-flows+conjecture+nowhere-zero&searchtype=all",
+    "https://arxiv.org/search/?query=nowhere-zero+4-flow+cubic+bridgeless+decomposition&searchtype=all&start=0"
+  ],
+  "notes": "The OPG page (openproblemgarden.org) returned ECONNREFUSED. Five search queries were run; none returned a paper specifically addressing the three 4-flows conjecture. The arXiv paper 2511.01556 (Mattiolo, Nov 2025) on removable edge subsets in graphs with nowhere-zero 4-flows is related but does not address the conjecture directly. The Petersen coloring conjecture (which implies the three 4-flows conjecture) and the orientable cycle four cover conjecture (which is implied by it) are both still open, confirming the problem likely remains unresolved. Confidence is medium rather than high because the specific conjecture did not appear in any indexed paper by name, making it difficult to rule out niche partial results.",
+  "slug": "three_4_flows_conjecture",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 04)",
+  "search_enabled": true
+}

@@ -1,0 +1,51 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The problem of determining for which $n$ and $d$ bi-colored graphs exist such that all $d$ monochromatic colorings have unit weight and every other coloring cancels is equivalent to the Krenn–Gu conjecture on the matching index of graphs. Significant partial progress has been made: Chandran, Gajjala, and Illickan (2024) proved the conjecture for cubic graphs and graphs with vertex connectivity at most 2, and showed any minimal counterexample must be 4-connected, while an earlier paper characterizes graphs with matching index 1 or 2. The general problem remains open and a €3,000 prize for a full resolution is unclaimed.",
+  "since_posted": [
+    {
+      "title": "Edge-coloured graphs with only monochromatic perfect matchings and their connection to quantum physics",
+      "authors": "L. Sunil Chandran, Rishikesh Gajjala",
+      "year": 2022,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2202.05562",
+      "doi": null,
+      "arxiv_id": "2202.05562",
+      "kind": "partial",
+      "claim": "Completely characterizes graphs with matching index 1 or 2, provides an efficient algorithm to compute the matching index, and settles the Krenn–Gu conjecture for a subclass of graphs."
+    },
+    {
+      "title": "Krenn-Gu conjecture for sparse graphs",
+      "authors": "L. Sunil Chandran, Rishikesh Gajjala, Abraham M. Illickan",
+      "year": 2024,
+      "venue": "Mathematical Foundations of Computer Science (MFCS 2024)",
+      "url": "https://arxiv.org/abs/2407.00303",
+      "doi": "10.4230/LIPIcs.MFCS.2024.41",
+      "arxiv_id": "2407.00303",
+      "kind": "partial",
+      "claim": "Proves the Krenn–Gu conjecture for cubic graphs and graphs with vertex connectivity at most 2, and establishes that any minimal counterexample must be 4-connected."
+    }
+  ],
+  "search_queries": [
+    "monochromatic vertex colorings inherited perfect matchings bi-colored graph quantum physics",
+    "questions structure perfect matchings inspired quantum physics graph theory conjecture",
+    "arXiv perfect matchings inherited vertex coloring weight cancellation quantum optics graph",
+    "bi-colored weighted graph perfect matching unit weight coloring cancels Gu Krenn Marek",
+    "Chandran Gajjala Illickan Krenn conjecture degree 3 perfect matchings 2024 MFCS arXiv"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2202.05562",
+    "https://arxiv.org/abs/1902.06023",
+    "https://mariokrenn.wordpress.com/graph-theory-question/",
+    "https://arxiv.org/abs/2209.13063",
+    "https://arxiv.org/abs/2407.00303",
+    "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.MFCS.2024.41",
+    "https://quantum-journal.org/papers/q-2024-07-03-1396/",
+    "https://dustingmixon.wordpress.com/2021/01/18/a-graph-coloring-problem-from-quantum-physics-with-prizes/"
+  ],
+  "notes": "The Krenn blog (mariokrenn.wordpress.com) reports additional partial results from April 2023 (in simple graphs, monochromatic structures cannot occur when the maximum degree exceeds n/√2) and September 2023 (for n=4, d=4 is impossible), attributed to individual researchers but not found as standalone verifiable arXiv papers; these may be incorporated into the revised version of 2202.05562 (revised November 2023). The €3,000 prize for a full proof or counterexample remained unclaimed as of the search date.",
+  "slug": "monochromatic_vertex_colorings_inherited_from_perfect_matchings",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 03)",
+  "search_enabled": true
+}

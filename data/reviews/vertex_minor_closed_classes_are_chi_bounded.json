@@ -1,0 +1,45 @@
+{
+  "status": "solved",
+  "confidence": "high",
+  "summary": "James Davies proved Geelen's conjecture in full: every proper vertex-minor-closed class of graphs is $\\chi$-bounded. The proof, posted to arXiv in August 2020 and published in Combinatorica (DOI: 10.1007/s00493-021-4767-3), was preceded by a 2019 partial result of Choi, Kwon, Oum, and Wollan establishing $\\chi$-boundedness for graph classes excluding any fixed wheel vertex-minor.",
+  "since_posted": [
+    {
+      "title": "Chi-boundedness of graph classes excluding wheel vertex-minors",
+      "authors": "Hojin Choi, O-joung Kwon, Sang-il Oum, Paul Wollan",
+      "year": 2019,
+      "venue": "Journal of Combinatorial Theory, Series B",
+      "url": "https://arxiv.org/abs/1702.07851",
+      "doi": "10.1016/j.jctb.2018.08.009",
+      "arxiv_id": "1702.07851",
+      "kind": "partial",
+      "claim": "Proves that any class of graphs excluding some fixed wheel graph $W_k$ as a vertex-minor is $\\chi$-bounded, generalizing the Dvorak–Kral results on $W_5$ and circle graphs."
+    },
+    {
+      "title": "Vertex-minor-closed classes are χ-bounded",
+      "authors": "James Davies",
+      "year": 2022,
+      "venue": "Combinatorica",
+      "url": "https://arxiv.org/abs/2008.05069",
+      "doi": "10.1007/s00493-021-4767-3",
+      "arxiv_id": "2008.05069",
+      "kind": "proof",
+      "claim": "Proves Geelen's conjecture in full: every proper vertex-minor-closed class of graphs is $\\chi$-bounded."
+    }
+  ],
+  "search_queries": [
+    "vertex minor closed classes chi-bounded graph coloring conjecture",
+    "chi-bounded vertex minor Geelen conjecture solved proof 2010 2015 2020",
+    "Dvorak Kral rank-width chi-bounded vertex minor wheel W5",
+    "chi-bounded classes vertex minor locally complementation graph chromatic number clique"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2008.05069",
+    "https://arxiv.org/abs/1702.07851",
+    "https://combinatorica.hu/issues.htm"
+  ],
+  "notes": "The arXiv preprint (2008.05069) directly verifies the proof claim. Combinatorica's published-issues page verifies the journal version, pages 1049-1079, and DOI 10.1007/s00493-021-4767-3; the arXiv submission date is August 2020.",
+  "slug": "vertex_minor_closed_classes_are_chi_bounded",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 04)",
+  "search_enabled": true
+}

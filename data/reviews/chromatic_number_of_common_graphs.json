@@ -1,0 +1,49 @@
+{
+  "status": "solved",
+  "confidence": "high",
+  "summary": "The question is resolved negatively: common graphs do not have bounded chromatic number. Kráľ, Volec, and Wei proved that for every positive integer $k$ there exists a connected common graph with chromatic number $k$, answering the question posed in [HHKNR] as well as a problem from the Conlon–Fox–Sudakov survey. Ko and Lee subsequently strengthened this by showing that for any $k, r > 0$ there exists a $k$-connected common graph with chromatic number at least $r$.",
+  "since_posted": [
+    {
+      "title": "Common graphs with arbitrary chromatic number",
+      "authors": "Daniel Kráľ, Jan Volec, Fan Wei",
+      "year": 2025,
+      "venue": "Compositio Mathematica",
+      "url": "https://www.cambridge.org/core/journals/compositio-mathematica/article/common-graphs-with-arbitrary-chromatic-number/9F3959D85EA5578F85275D6E9A486D0C",
+      "doi": "10.1112/S0010437X24007681",
+      "arxiv_id": "2206.05800",
+      "kind": "proof",
+      "claim": "Constructs a connected common graph with chromatic number $k$ for every positive integer $k$, proving that common graphs can have arbitrarily large chromatic number and resolving the question of Hatami–Hladký–Kráľ–Norine–Razborov."
+    },
+    {
+      "title": "Common graphs with arbitrary connectivity and chromatic number",
+      "authors": "Sejin Ko, Joonkyung Lee",
+      "year": 2023,
+      "venue": "Journal of Combinatorial Theory, Series B",
+      "url": "https://arxiv.org/abs/2207.09427",
+      "doi": "10.1016/j.jctb.2023.06.001",
+      "arxiv_id": "2207.09427",
+      "kind": "partial",
+      "claim": "Strengthens the Kráľ–Volec–Wei result by showing that for any $k, r > 0$ there exists a $k$-connected common graph with chromatic number at least $r$, answering a further question of Kráľ, Volec, and Wei."
+    }
+  ],
+  "search_queries": [
+    "common graphs chromatic number unbounded graph theory",
+    "Hatami Hladky Kral Norine Razborov common graphs chromatic number bounded",
+    "Kral Volec Wei \"common graphs with arbitrary chromatic number\" journal publication 2023 2024",
+    "Ko Lee \"common graphs arbitrary connectivity chromatic number\" arXiv 2207.09427 journal published"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2206.05800",
+    "https://arxiv.org/html/2206.05800",
+    "https://math.duke.edu/publications/common-graphs-arbitrary-chromatic-number",
+    "https://www.cambridge.org/core/product/identifier/S0010437X24007681/type/journal_article",
+    "https://www.cambridge.org/core/journals/compositio-mathematica/article/common-graphs-with-arbitrary-chromatic-number/9F3959D85EA5578F85275D6E9A486D0C",
+    "https://arxiv.org/abs/2207.09427"
+  ],
+  "notes": "The Kráľ–Volec–Wei paper (arXiv June 2022) was published in Compositio Mathematica Vol. 161, No. 3, pp. 594–634 (published online July 3, 2025; in print March 2025). The Ko–Lee paper (arXiv July 2022) was published in J. Combin. Theory Ser. B 162 (2023), pp. 223–230, DOI 10.1016/j.jctb.2023.06.001. The Ko–Lee contribution is classified 'partial' in the sense that it strengthens rather than independently resolves the original question.",
+  "slug": "chromatic_number_of_common_graphs",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "elapsed_seconds": 114.5
+}

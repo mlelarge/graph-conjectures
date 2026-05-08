@@ -1,0 +1,48 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The seagull conjecture — every $n$-vertex graph with $\\alpha(G) \\le 2$ contains $K_{\\lceil n/2 \\rceil}$ as a minor — remains open. Norin and Seymour (2022) proved that every such graph contains an $\\lceil n/2 \\rceil$-vertex simple minor with approximately $0.98688\\binom{\\lceil n/2 \\rceil}{2} - o(n^2)$ edges, establishing a nearly-complete minor on the right number of vertices but falling short of a complete minor. Chudnovsky and Seymour (2012) gave a complete characterization of when such graphs contain $k$ vertex-disjoint seagulls, a foundational packing result closely related to the minor problem.",
+  "since_posted": [
+    {
+      "title": "Packing seagulls",
+      "authors": "Maria Chudnovsky, Paul Seymour",
+      "year": 2012,
+      "venue": "Combinatorica",
+      "url": "https://collaborate.princeton.edu/en/publications/packing-seagulls",
+      "doi": "10.1007/s00493-012-2594-2",
+      "arxiv_id": null,
+      "kind": "partial",
+      "claim": "Characterizes exactly when an $n$-vertex graph with no independent set of size 3 contains $k$ vertex-disjoint seagulls (induced 3-vertex paths), providing a polynomial-time algorithm and advancing structural understanding central to the seagull conjecture."
+    },
+    {
+      "title": "Dense minors of graphs with independence number two",
+      "authors": "Sergey Norin, Paul Seymour",
+      "year": 2022,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2206.00186",
+      "doi": null,
+      "arxiv_id": "2206.00186",
+      "kind": "partial",
+      "claim": "Proves that every $n$-vertex graph with $\\alpha(G) \\le 2$ contains an $\\lceil n/2 \\rceil$-vertex simple minor with $\\approx 0.98688\\binom{\\lceil n/2 \\rceil}{2} - o(n^2)$ edges, establishing a dense (but not complete) minor on exactly the number of vertices required by the seagull conjecture."
+    }
+  ],
+  "search_queries": [
+    "seagull problem graph theory Seymour conjecture complete minor independent set size 3",
+    "Hadwiger conjecture alpha 2 graph complete minor n/2 vertices recent progress",
+    "Kawarabayashi seagull conjecture graph no independent set 3 complete minor arXiv",
+    "\"independence number 2\" \"complete minor\" graph conjecture Seymour Mader 2009 2010 2015 2020",
+    "Chudnovsky Seymour \"packing seagulls\" arXiv complete minor independence number 2"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2206.00186",
+    "https://collaborate.princeton.edu/en/publications/packing-seagulls",
+    "https://arxiv.org/abs/2406.02643",
+    "https://arxiv.org/abs/2512.17114",
+    "https://www.math.princeton.edu/events/packing-seagulls-graphs-no-stable-set-size-three-2009-04-23t193004"
+  ],
+  "notes": "The Norin-Seymour result (arXiv 2206.00186) appears to have been published in J. Combin. Theory Ser. B in 2025 (ScienceDirect pii S0095895625000619) but that page returned HTTP 403; only the arXiv version is cited. The Chudnovsky-Seymour Combinatorica paper is verified via Princeton's repository; the Springer page redirected to authentication. The seagull conjecture is explicitly described as open in the Norin-Seymour preprint. The Blasiak (pre-2009) work on clique minors in graphs with alpha=2 mentioned at a 2009 Princeton talk is a precursor but predates or coincides with the posting date and was not separately verified.",
+  "slug": "seagull_problem",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 08)",
+  "search_enabled": true
+}

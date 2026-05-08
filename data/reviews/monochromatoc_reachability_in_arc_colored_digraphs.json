@@ -1,0 +1,46 @@
+{
+  "status": "open",
+  "confidence": "medium",
+  "summary": "The general conjecture — that for every $k$-arc-colored digraph there is a set $S$ equal to a union of $f(k)$ stable sets such that every vertex has a monochromatic path to $S$ — remains open. The special cases of tournaments and digraphs with bounded stability number were resolved by Bousquet, Lochet, and Thomassé before the OPG posting date and are cited in the OPG itself. Post-posting work has established lower bounds on $f(n)$ for tournaments and a 'king-serf duo' structural result for tournaments, but no progress on the general digraph case has been found.",
+  "since_posted": [
+    {
+      "title": "King-serf duo by monochromatic paths in k-edge-coloured tournaments",
+      "authors": "Kristóf Bérczi, Attila Joó",
+      "year": 2017,
+      "venue": "Electronic Journal of Combinatorics",
+      "url": "https://arxiv.org/abs/1705.00896",
+      "doi": null,
+      "arxiv_id": "1705.00896",
+      "kind": "partial",
+      "claim": "For any $k$, shows existence of two disjoint sets $K, S$ of combined size at most $\\lambda_k$ in every $k$-edge-colored tournament such that every vertex has a monochromatic path of length at most 2 from $K$ to it or from it to $S$, a structural weakening of the main conjecture restricted to tournaments."
+    },
+    {
+      "title": "A lower bound on the size of an absorbing set in an arc-coloured tournament",
+      "authors": "Laurent Beaudou, Luc Devroye, Gena Hahn",
+      "year": 2017,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/1708.08891",
+      "doi": null,
+      "arxiv_id": "1708.08891",
+      "kind": "partial",
+      "claim": "Establishes a lower bound on $f(n)$, the minimum size of a monochromatic-path absorbing set in $n$-arc-colored tournaments, complementing the upper bound from the BLT proof."
+    }
+  ],
+  "search_queries": [
+    "Erdős-Sands-Sauer-Woodrow conjecture monochromatic reachability digraph arc-colored",
+    "Bousquet Lochet Thomassé \"Erdős-Sands-Sauer-Woodrow conjecture\" proof arXiv",
+    "monochromatic reachability arc-colored digraphs stable set conjecture k colors 2018 2019 2020 2021 2022 2023 2024",
+    "Lochet \"monochromatic paths\" digraph conjecture generalization 2020 2021 2022 2023 2024 2025"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/1703.08123",
+    "https://arxiv.org/abs/1708.08891",
+    "https://arxiv.org/abs/1705.00896",
+    "https://www.lirmm.fr/~wlochet/"
+  ],
+  "notes": "The BLT paper (arXiv:1703.08123) was submitted March 2017 and is already in the OPG bibliography; it is not listed as since_posted. The general conjecture for digraphs with unbounded stability number appears to remain fully open. William Lochet's publication page lists no post-2017 papers on this specific conjecture. The DMGT journal page could not be fetched due to a certificate error.",
+  "slug": "monochromatoc_reachability_in_arc_colored_digraphs",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 04)",
+  "search_enabled": true
+}

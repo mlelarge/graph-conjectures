@@ -1,0 +1,81 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The full Erdős–Hajnal conjecture remains open for a general graph $H$, but remarkable progress has been made since 2021. Chudnovsky, Scott, Seymour, and Spirkl proved the conjecture for $H = C_5$, the specific case raised by Lovász; Nguyen, Scott, and Seymour subsequently proved it for $H = P_5$ and for infinitely many previously unknown prime graphs; and the first improvement to the general lower bound in nearly five decades was established, raising it from $2^{c\\sqrt{\\log n}}$ to $2^{c\\sqrt{\\log n\\,\\log\\log n}}$.",
+  "since_posted": [
+    {
+      "title": "Erdos-Hajnal for graphs with no 5-hole",
+      "authors": "Maria Chudnovsky, Alex Scott, Paul Seymour, Sophie Spirkl",
+      "year": 2021,
+      "venue": "Proceedings of the London Mathematical Society",
+      "url": "https://arxiv.org/abs/2102.04994",
+      "doi": "10.1112/plms.12504",
+      "arxiv_id": "2102.04994",
+      "kind": "proof",
+      "claim": "Proves the Erdős–Hajnal conjecture for $H = C_5$ (the five-cycle), settling the specific case highlighted by Lovász in the OPG discussion."
+    },
+    {
+      "title": "Towards the Erdős-Hajnal conjecture for $P_5$-free graphs",
+      "authors": "Pablo Blanco, Matija Bucić",
+      "year": 2022,
+      "venue": "Research in the Mathematical Sciences",
+      "url": "https://arxiv.org/abs/2210.10755",
+      "doi": null,
+      "arxiv_id": "2210.10755",
+      "kind": "partial",
+      "claim": "Improves the best known lower bound for $P_5$-free $n$-vertex graphs from $2^{\\Omega(\\sqrt{\\log n})}$ to $2^{\\Omega((\\log n)^{2/3})}$, the strongest bound known before the full $P_5$ case was proved."
+    },
+    {
+      "title": "Induced subgraph density. I. A loglog step towards Erdos-Hajnal",
+      "authors": "Matija Bucić, Tung Nguyen, Alex Scott, Paul Seymour",
+      "year": 2023,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2301.10147",
+      "doi": null,
+      "arxiv_id": "2301.10147",
+      "kind": "partial",
+      "claim": "Improves the universal lower bound (for all forbidden $H$) from $2^{c\\sqrt{\\log n}}$ to $2^{c\\sqrt{\\log n\\,\\log\\log n}}$, the first improvement to the general bound in nearly 45 years."
+    },
+    {
+      "title": "Induced subgraphs density. IV. New graphs with the Erdős-Hajnal property",
+      "authors": "Tung Nguyen, Alex Scott, Paul Seymour",
+      "year": 2023,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2307.06455",
+      "doi": null,
+      "arxiv_id": "2307.06455",
+      "kind": "partial",
+      "claim": "Proves that infinitely many prime graphs satisfy the Erdős–Hajnal property, vastly expanding the known list beyond the three prime graphs previously confirmed."
+    },
+    {
+      "title": "Induced subgraph density. VII. The five-vertex path",
+      "authors": "Tung Nguyen, Alex Scott, Paul Seymour",
+      "year": 2023,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2312.15333",
+      "doi": null,
+      "arxiv_id": "2312.15333",
+      "kind": "proof",
+      "claim": "Proves the Erdős–Hajnal conjecture for $H = P_5$ (the five-vertex path), which was the smallest open case prior to this work."
+    }
+  ],
+  "search_queries": [
+    "Erdos-Hajnal conjecture recent progress proof 2020 2021 2022 2023 2024 2025",
+    "Erdos-Hajnal conjecture C5 five cycle solved arXiv",
+    "Erdos Hajnal conjecture induced subgraph clique independent set polynomial new result",
+    "Chudnovsky Erdos-Hajnal conjecture new families graphs 2022 2023 2024"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2102.04994",
+    "https://arxiv.org/abs/2210.10755",
+    "https://arxiv.org/abs/2301.10147",
+    "https://arxiv.org/abs/2307.06455",
+    "https://arxiv.org/abs/2312.15333",
+    "https://en.wikipedia.org/wiki/Erd%C5%91s%E2%80%93Hajnal_conjecture"
+  ],
+  "notes": "The DOI 10.1112/plms.12504 for the C5 paper was identified via a Wiley search result; the journal page returned HTTP 403 so direct WebFetch verification was not possible, but the arXiv abstract fully confirms the paper. The venue 'Research in the Mathematical Sciences' for 2210.10755 was identified via a Springer search result but not directly WebFetch-verified; the arXiv URL is used. The 'Induced subgraph density' series by Nguyen–Scott–Seymour spans at least seven papers (I–VII); only those most directly relevant to the Erdős–Hajnal conjecture are included here. The full conjecture for arbitrary H remains open.",
+  "slug": "the_erdos_hajnal_conjecture",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 06)",
+  "search_enabled": true
+}

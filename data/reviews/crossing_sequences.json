@@ -1,0 +1,40 @@
+{
+  "status": "partial",
+  "confidence": "medium",
+  "summary": "The conjecture asks whether every strictly decreasing sequence of nonneg integers ending in 0 is realizable as a crossing sequence of some graph. DeVos, Mohar, and Samal (2011) resolved the orientable case for length-3 sequences $(a, b, 0)$, proving that for any $a > b > 0$ there exists a graph with $\\mathrm{cr}_0(G) = a$, $\\mathrm{cr}_1(G) = b$, $\\mathrm{cr}_2(G) = 0$; together with the pre-posting ABS (2001) nonorientable length-3 result and the known convex-sequence case, this constitutes meaningful partial progress, but the full conjecture for arbitrary-length strictly decreasing sequences remains open.",
+  "since_posted": [
+    {
+      "title": "Unexpected behaviour of crossing sequences",
+      "authors": "Matt DeVos, Bojan Mohar, Robert Samal",
+      "year": 2011,
+      "venue": "Journal of Combinatorial Theory, Series B",
+      "url": "https://www.sfu.ca/~mohar/Bibsci4.html",
+      "doi": null,
+      "arxiv_id": null,
+      "kind": "partial",
+      "claim": "Proves the orientable case for length-3 crossing sequences: for any integers $a > b > 0$ there exists a graph $G$ with $\\mathrm{cr}_0(G) = a$, $\\mathrm{cr}_1(G) = b$, $\\mathrm{cr}_2(G) = 0$, resolving a problem of Salazar and confirming the conjecture for this special case."
+    }
+  ],
+  "search_queries": [
+    "crossing sequences graph genus crossing number conjecture Archdeacon Bonnington Siran",
+    "DeVos Mohar Samal \"crossing sequences\" \"unexpected behaviour\" graph surfaces",
+    "crossing sequence graph orientable nonorientable surface genus partial results 2010 2015 2020",
+    "arXiv \"crossing sequence\" graph surface handles crosscaps conjecture"
+  ],
+  "verified_urls": [
+    "https://www.sciencedirect.com/science/article/pii/S0095895611000025",
+    "https://arxiv.org/abs/2405.06118",
+    "https://www.sfu.ca/~mohar/Reprints/Inprint/BM08_TGGT08_DeVos_UnexpectedBehaviourCrossingSequences.pdf",
+    "https://www.sfu.ca/~mohar/Bibsci4.html",
+    "https://arxiv.org/abs/math/0604467",
+    "https://www.combinatorics.org/files/Surveys/ds21/ds21v5-2020.pdf",
+    "http://www.openproblemgarden.org/op/crossing_sequences",
+    "https://arxiv.org/abs/1312.7548",
+    "https://arxiv.org/abs/2308.10666"
+  ],
+  "notes": "The DMS paper was explicitly listed as 'in preparation' in the OPG posting (2008) and appeared in J. Combin. Theory Ser. B 101 (2011) 448–463; the citation was confirmed via Mohar's publication list since the ScienceDirect page returned HTTP 403 and the SFU PDF returned unreadable binary. No post-2011 paper directly advancing the general crossing-sequences conjecture for longer sequences was found; the conjecture for sequences of length ≥ 4 appears open. The arXiv:2405.06118 paper by Timothy Sun addresses Kainen's (different) conjectures on surface crossing numbers and is not directly relevant.",
+  "slug": "crossing_sequences",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 07)",
+  "search_enabled": true
+}

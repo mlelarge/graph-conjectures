@@ -1,0 +1,28 @@
+{
+  "status": "open",
+  "confidence": "medium",
+  "summary": "The conjecture asks whether the minor-minimal obstruction sets for distinct non-orientable surfaces can overlap, i.e., whether a single graph $G$ can be a forbidden minor for both $N_k$ and $N_m$ with $k \\neq m$. For orientable surfaces each obstruction embeds in the next surface in the hierarchy, making the obstruction sets disjoint; the analogous question for non-orientable surfaces remains unresolved. No verified paper posted after 2007 was found that settles this problem.",
+  "since_posted": [],
+  "search_queries": [
+    "minor-minimal obstruction two non-orientable surfaces graph embedding",
+    "consecutive non-orientable embedding obstructions graph minor surface",
+    "graph minor obstruction non-orientable surface genus k genus k+1 simultaneous forbidden minor",
+    "Archdeacon Huneke Negami non-orientable surface obstruction consecutive genus graph",
+    "graph \"minor-minimal\" obstruction \"two surfaces\" \"non-orientable\" disjoint overlap forbidden minor set",
+    "Mohar Thomassen \"graphs on surfaces\" non-orientable genus obstruction minor-minimal two surfaces",
+    "graph theory \"obstruction set\" non-orientable surface \"two different surfaces\" \"same graph\" minor embeddability",
+    "Schrijver Robertson Seymour non-orientable surface obstruction graph \"appears in\" \"two obstruction sets\" genus k"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2301.11042",
+    "https://arxiv.org/abs/2601.19230",
+    "https://users.fmf.uni-lj.si/mohar/book/ch6.html",
+    "https://www.sfu.ca/~mohar/Book/BookProblems.html"
+  ],
+  "notes": "The OPG problem page (openproblemgarden.org) was unreachable (ECONNREFUSED), so the original references listed there could not be checked. The Mohar–Thomassen 'Graphs on Surfaces' open-problems page lists several conjectures about non-orientable surface obstructions (e.g., Glover's Conjecture 6.6.2) but not this specific one by name. Multiple literature searches found no post-2007 paper that directly addresses whether obstruction sets for distinct non-orientable surfaces can overlap. The closely related paper arXiv:2301.11042 (Georgakopoulos, Combinatorica 2025) on excluded minors for compact surfaces does not address the question. Confidence is medium rather than high because the OPG page and some PDFs were inaccessible, leaving a small chance of a relevant result being missed.",
+  "slug": "consecutive_non_orientable_embedding_obstructions",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "elapsed_seconds": 183.7
+}

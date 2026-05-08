@@ -1,0 +1,73 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The conjecture that every simple graph with maximum degree $\\Delta$ has a proper acyclic edge-colouring using at most $\\Delta+2$ colours remains open. Since the problem was posted, the general upper bound has been reduced below $4\\Delta-4$, reaching approximately $3.142(\\Delta-1)+1$ as of 2026, and the conjecture has been confirmed for several special classes including 3-sparse graphs; moreover, Delcourt, Li, and Postle announced in 2023 that $(1+o(1))\\Delta$ colours always suffice, though the exact Fiamčík bound is still unproved for general graphs.",
+  "since_posted": [
+    {
+      "title": "Acyclic Edge Coloring of 3-sparse Graphs",
+      "authors": "Nevil Anto, Manu Basavaraju, Shashanka Kulamarva",
+      "year": 2025,
+      "venue": "Discrete Mathematics",
+      "url": "https://arxiv.org/abs/2501.11281",
+      "doi": "10.1016/j.disc.2026.115135",
+      "arxiv_id": "2501.11281",
+      "kind": "partial",
+      "claim": "Proves Fiamčík's conjecture ($a'(G) \\leq \\Delta+2$) for all 3-sparse graphs, i.e., graphs in which every edge has at least one endpoint of degree at most 3."
+    },
+    {
+      "title": "An improvement on the bound for the acyclic chromatic index",
+      "authors": "Lefteris Kirousis, John Livieratos, Alexandros Singh",
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2602.14859",
+      "doi": null,
+      "arxiv_id": "2602.14859",
+      "kind": "partial",
+      "claim": "Proves the general upper bound $a'(G) \\leq 3.142(\\Delta-1)+1$ for any graph with maximum degree $\\Delta$, improving the previous best bound due to Fialho et al. (2020)."
+    },
+    {
+      "title": "Upper Bounds on the Acyclic Chromatic Index of Degenerate Graphs",
+      "authors": "Nevil Anto, Manu Basavaraju, Suresh Manjanath Hegde, Shashanka Kulamarva",
+      "year": 2023,
+      "venue": "Discrete Mathematics",
+      "url": "https://arxiv.org/abs/2305.01948",
+      "doi": null,
+      "arxiv_id": "2305.01948",
+      "kind": "partial",
+      "claim": "Proves $a'(G) \\leq \\Delta+5$ for all 3-degenerate graphs, narrowing the gap to the conjectured $\\Delta+2$ for this class."
+    },
+    {
+      "title": "Planar graphs are acyclically edge $(\\Delta + 5)$-colorable",
+      "authors": "Qiaojun Shu, Guohui Lin",
+      "year": 2023,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2306.15813",
+      "doi": null,
+      "arxiv_id": "2306.15813",
+      "kind": "partial",
+      "claim": "Shows that every planar graph satisfies $a'(G) \\leq \\Delta+5$ via discharging, giving the current best bound for planar graphs while the conjecture ($\\Delta+2$) remains open for this class."
+    }
+  ],
+  "search_queries": [
+    "acyclic edge coloring conjecture Delta+2 graph theory progress 2020 2021 2022 2023 2024 2025",
+    "acyclic edge colouring maximum degree upper bound arXiv conjecture Fiamcik",
+    "Lina Li acyclic edge coloring conjecture holds asymptotically arXiv paper",
+    "Delcourt Li Postle acyclic edge coloring asymptotic arXiv 2023 2024",
+    "acyclic edge coloring 4 Delta OR 3 Delta general upper bound improvement 2022 2023 2024 2025 2026",
+    "arXiv acyclic edge 1+o(1) OR (1+o colors Delta Postle 2023 2024 2025"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2501.11281",
+    "https://arxiv.org/abs/2305.01948",
+    "https://arxiv.org/abs/2306.15813",
+    "https://arxiv.org/abs/2602.14859",
+    "https://arxiv.org/abs/2202.13846",
+    "https://math.gatech.edu/seminars-colloquia/series/graph-theory-seminar/lina-li-20231017"
+  ],
+  "notes": "An important announced result — Delcourt, Li, and Postle, 'The Acyclic Edge Coloring Conjecture holds asymptotically,' showing $(1+o(1))\\Delta$ colours suffice — was presented at the Georgia Tech Graph Theory Seminar on 17 October 2023, but no arXiv preprint or journal URL was locatable; it cannot be included in since_posted. A 2022 arXiv preprint (arXiv:2202.13846, Kirousis–Livieratos) claimed the stronger bound $2\\Delta-1$ but was subsequently withdrawn due to errors in key lemmas and must not be cited. The intermediate general-bound improvement by Fialho et al. (2020) — referenced as the prior best in arXiv:2602.14859 — was not independently verified and is therefore not listed.",
+  "slug": "acyclic_edge_coloring",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "elapsed_seconds": 192.8
+}

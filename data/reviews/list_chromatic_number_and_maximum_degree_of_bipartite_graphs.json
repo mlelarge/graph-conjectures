@@ -1,0 +1,47 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Alon's conjecture that the list chromatic number of any bipartite graph of maximum degree $\\Delta$ is at most $c\\log\\Delta$ remains open. The best known upper bound has been improved from $(1+o(1))\\Delta/\\log\\Delta$ (Johansson's triangle-free bound) to $(4/5-\\varepsilon)\\Delta/\\log\\Delta$ for bipartite graphs specifically (Bradshaw, Mohar, Stacho 2024), but this is still $\\Theta(\\Delta/\\log\\Delta)$ rather than the conjectured $O(\\log\\Delta)$. Partial asymmetric progress was also made by Alon, Cambie, and Kang (2021), showing that in a bipartite graph with equal maximum degree $\\Delta$ on both sides, one side can be coloured from lists of size $\\log\\Delta$ provided the other side uses lists of size $(1+o(1))\\Delta/\\log\\Delta$.",
+  "since_posted": [
+    {
+      "title": "Asymmetric list sizes in bipartite graphs",
+      "authors": "Noga Alon, Stijn Cambie, Ross J. Kang",
+      "year": 2021,
+      "venue": "Annals of Combinatorics",
+      "url": "https://arxiv.org/abs/2004.07457",
+      "doi": "10.1007/s00026-021-00552-5",
+      "arxiv_id": "2004.07457",
+      "kind": "partial",
+      "claim": "Proves that in a bipartite graph with $\\Delta_A=\\Delta_B=\\Delta$, one part can be assigned lists of size $\\log\\Delta$ and the other $(1+o(1))\\Delta/\\log\\Delta$ and a proper list colouring is guaranteed, giving asymmetric partial progress toward the Alon-Krivelevich conjecture."
+    },
+    {
+      "title": "Bipartite graphs are $(\\frac{4}{5}-\\varepsilon) \\frac{\\Delta}{\\log \\Delta}$-choosable",
+      "authors": "Peter Bradshaw, Bojan Mohar, Ladislav Stacho",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2409.01513",
+      "doi": null,
+      "arxiv_id": "2409.01513",
+      "kind": "partial",
+      "claim": "Proves that every bipartite graph of sufficiently large maximum degree $\\Delta$ satisfies $\\chi_\\ell(G) < (4/5-\\varepsilon)\\Delta/\\log\\Delta$ for $\\varepsilon=10^{-3}$, improving Johansson's triangle-free bound and showing list colouring is fundamentally easier for bipartite graphs, but still far from the conjectured $O(\\log\\Delta)$."
+    }
+  ],
+  "search_queries": [
+    "list chromatic number bipartite graph maximum degree log delta conjecture Alon",
+    "choice number bipartite graph O(log delta) proof progress 2013 2024",
+    "arXiv list coloring bipartite graphs logarithmic degree bound recent",
+    "Johansson triangle-free list chromatic number bipartite improvement 2020 2025",
+    "arXiv \"Asymmetric List Sizes in Bipartite Graphs\" Alon Cambie",
+    "arXiv \"Coloring Bipartite Graphs with Semi-small List Size\""
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2409.01513",
+    "https://arxiv.org/abs/2004.07457",
+    "https://arxiv.org/abs/2008.06040"
+  ],
+  "notes": "The Zhu (2023) paper on 'semi-small list size' for complete bipartite graphs was verified but focuses on asymmetric list sizes in complete bipartite graphs rather than the original conjecture, so it was omitted from since_posted. The conjecture's gap remains very large: the upper bound is $\\Theta(\\Delta/\\log\\Delta)$ and the lower bound from random bipartite graphs is $\\Omega(\\log\\Delta)$. The 2024 Bradshaw-Mohar-Stacho paper is an arXiv preprint as of the review date; journal publication status unknown.",
+  "slug": "list_chromatic_number_and_maximum_degree_of_bipartite_graphs",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 03)",
+  "search_enabled": true
+}

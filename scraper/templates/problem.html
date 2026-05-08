@@ -1,0 +1,127 @@
+{% extends "base.html" %}
+{% block title %}{{ p.title }} — Graph-theory open problems{% endblock %}
+
+{% block main %}
+<article class="problem">
+<header>
+  <h1>{{ p.title }}</h1>
+  <div class="meta">
+    <span class="importance importance-{{ p.importance.label|lower }}">{{ p.importance.label }} {{ '★' * p.importance.stars }}</span>
+    {% if p.subject_path %}
+    <span class="subject">
+      {% for s in p.subject_path -%}
+        <a href="{{ root }}tag/{{ s.slug }}/">{{ s.label }}</a>{% if not loop.last %} » {% endif %}
+      {%- endfor %}
+    </span>
+    {% endif %}
+    {% if p.accessible_to_undergrads %}<span class="badge undergrad">accessible to undergrads</span>{% endif %}
+  </div>
+  <div class="byline">
+    {% if p.authors %}
+    <strong>Author{{ 's' if p.authors|length > 1 else '' }}:</strong>
+    {% for a in p.authors -%}
+      <a href="{{ root }}author/{{ a.slug }}/">{{ a.label }}</a>{% if not loop.last %}, {% endif %}
+    {%- endfor %}
+    {% endif %}
+    {% if p.posted_by %}<span class="posted">— posted by <em>{{ p.posted_by.name }}</em>{% if p.posted_at %} on {{ p.posted_at }}{% endif %}</span>{% endif %}
+  </div>
+</header>
+
+{% if p._erdos %}
+<aside class="intersection">
+  Also at <a href="{{ p._erdos.erdos_url }}">erdosproblems.com #{{ p._erdos.erdos_id }}</a> ({{ p._erdos.erdos_status }}, fuzzy-match score {{ p._erdos.score }})
+</aside>
+{% endif %}
+
+{% if p._review %}
+<section class="lit-review">
+  <h2>
+    Status
+    <span class="status-badge status-{{ p._review.status }}">{{ p._review.status }}</span>
+    <span class="confidence confidence-{{ p._review.confidence }}">{{ p._review.confidence }} confidence</span>
+  </h2>
+  <p class="summary">{{ p._review.summary }}</p>
+
+  {% if p._review.since_posted %}
+  <h3>Cited literature ({{ p._review.since_posted|length }})</h3>
+  <ul class="since-posted">
+  {% for ref in p._review.since_posted %}
+    <li>
+      <div class="ref-line">
+        {% if ref.kind %}<span class="ref-kind kind-{{ ref.kind }}">{{ ref.kind }}</span>{% endif %}
+        <strong class="ref-title">{% if ref.url %}<a href="{{ ref.url }}">{{ ref.title }}</a>{% else %}{{ ref.title }}{% endif %}</strong>
+        <span class="ref-year">({{ ref.year }})</span>
+      </div>
+      <div class="ref-meta">
+        {{ ref.authors }}{% if ref.venue %} · <em>{{ ref.venue }}</em>{% endif %}
+        {%- if ref.arxiv_id %} · <a href="https://arxiv.org/abs/{{ ref.arxiv_id }}">arXiv:{{ ref.arxiv_id }}</a>{% endif -%}
+        {%- if ref.doi %} · <a href="https://doi.org/{{ ref.doi }}">doi:{{ ref.doi }}</a>{% endif -%}
+      </div>
+      {% if ref.claim %}<p class="ref-claim">{{ ref.claim }}</p>{% endif %}
+    </li>
+  {% endfor %}
+  </ul>
+  {% endif %}
+
+  {% if p._review.notes %}
+  <p class="notes"><strong>Reviewer notes.</strong> {{ p._review.notes }}</p>
+  {% endif %}
+
+  <p class="review-meta">
+    Auto-reviewed {{ p._review.reviewed_at }} with <code>{{ p._review.model }}</code>
+    {%- if p._review.search_enabled %} (web search enabled){% endif -%}
+    {%- if p._review.elapsed_seconds %} · {{ p._review.elapsed_seconds | round | int }}s{% endif -%}
+    .
+  </p>
+</section>
+{% endif %}
+
+<section class="statements">
+{% if p.statements %}
+{% for stmt in p.statements %}
+<div class="envtheorem envtheorem-{{ stmt.kind|lower|replace(' ','-') }}">
+<strong>{{ stmt.kind }}.</strong> {{ stmt.text }}
+</div>
+{% endfor %}
+{% else %}
+<p class="raw-statement">{{ p.statement_text }}</p>
+{% endif %}
+</section>
+
+{% if p.keywords %}
+<section class="keywords">
+<strong>Keywords:</strong>
+{% for k in p.keywords %}<a class="keyword" href="{{ root }}tag/{{ k.slug }}/">{{ k.label }}</a>{% if not loop.last %} · {% endif %}{% endfor %}
+</section>
+{% endif %}
+
+{% if p.discussion_text %}
+<section class="discussion">
+<h2>Discussion</h2>
+<p>{{ p.discussion_text }}</p>
+</section>
+{% endif %}
+
+{% if p.references %}
+<section class="bibliography">
+<h2>Bibliography</h2>
+<ul>
+{% for r in p.references %}
+<li>
+  {% if r.is_original %}<span class="original" title="original source">★</span>{% endif %}
+  <code class="bib-key">[{{ r.key or '?' }}]</code>
+  {{ r.raw_text | replace('[' ~ (r.key or '') ~ ']', '') | replace('*', '', 1) }}
+  {% if r.links %}
+  <span class="bib-links">{% for l in r.links %}<a href="{{ l.href }}">{{ l.text or l.href }}</a>{% if not loop.last %} · {% endif %}{% endfor %}</span>
+  {% endif %}
+</li>
+{% endfor %}
+</ul>
+</section>
+{% endif %}
+
+<footer class="canonical">
+<a href="{{ p.canonical_url }}">View original on openproblemgarden.org</a>
+</footer>
+</article>
+{% endblock %}

@@ -1,0 +1,36 @@
+{
+  "status": "partial",
+  "confidence": "medium",
+  "summary": "The conjecture—that every connected cubic graph admitting a $3$-edge coloring (equivalently, a nowhere-zero $4$-flow) contains an edge $e$ whose suppression to a cubic graph preserves the $3$-edge coloring—remains open in general. Mattiolo (2025) proved the equivalent $4$-removable-edge formulation for all bipartite cubic graphs and derived an approximation result for the non-bipartite case, but the full conjecture is unresolved.",
+  "since_posted": [
+    {
+      "title": "On removable edge subsets in graphs with a nowhere-zero $4$-flow",
+      "authors": "Davide Mattiolo",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2511.01556",
+      "doi": null,
+      "arxiv_id": "2511.01556",
+      "kind": "partial",
+      "claim": "Proves the Hoffmann-Ostenhof conjecture (every cubic graph with a nowhere-zero 4-flow has a 4-removable edge) for bipartite cubic graphs, and establishes an approximation result for non-bipartite cubic graphs; the full conjecture remains open."
+    }
+  ],
+  "search_queries": [
+    "Hoffmann-Ostenhof \"3-edge coloring conjecture\" cubic graph removable edge",
+    "Hoffmann-Ostenhof cubic graph nowhere-zero 4-flow removable edge conjecture arXiv",
+    "\"3-edge coloring\" cubic graph \"removable edge\" \"4-flow\" conjecture progress 2021 2022 2023 2024 2025",
+    "Arthur Hoffmann-Ostenhof \"3-edge-coloring conjecture\" cubic graph homeomorphic edge 2020 2021 2022 2023 2024",
+    "Hoffmann-Ostenhof \"nowhere-zero 4-flow\" \"removable edge\" cubic graph conjecture solved proved 2022 2023 2024 2025",
+    "\"4-removable edge\" cubic graph \"3-edge-colorable\" OR \"nowhere-zero 4-flow\" conjecture proof 2021 2022 2023 2024"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2511.01556",
+    "https://arxiv.org/pdf/2511.01556"
+  ],
+  "notes": "Most search hits about 'Hoffmann-Ostenhof conjecture for traceable/claw-free cubic graphs' concern the distinct 3-Decomposition Conjecture (spanning tree + matching + 2-regular subgraph), not the 3-Edge-Coloring Conjecture under review; those papers (arXiv:1607.04768, 1810.00074) predate the 2020-04-28 posting and concern a different problem, so they are excluded. The OPG page was unreachable (ECONNREFUSED) during this review. The Mattiolo 2025 paper is the only post-posting work found that directly addresses the stated conjecture; other 2024-2025 papers on 3-edge-coloring of toroidal/projective-planar cubic graphs address different questions.",
+  "slug": "3_edge_coloring_conjecture",
+  "reviewed_at": "2026-05-07",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "elapsed_seconds": 1116.6
+}

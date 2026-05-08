@@ -1,0 +1,83 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The Hoàng–McDiarmid conjecture that every odd-hole-free graph admits a 2-division (a vertex partition into two parts each missing a maximum clique) remains open in full generality. Since 2013, several restricted classes of odd-hole-free graphs have been proved to be 2-divisible (the hereditary strengthening): notably (banner, odd hole)-free graphs (Hoàng, 2018), (P₅, C₅)-free graphs (Chudnovsky–Sivaraman, 2019), and graphs forbidding an odd hole together with a dart, racket, or bull (Dong–Song–Xu, 2022). All of these are partial results; no proof covering all odd-hole-free graphs has appeared.",
+  "since_posted": [
+    {
+      "title": "On the structure of (banner, odd hole)-free graphs",
+      "authors": "Chính T. Hoàng",
+      "year": 2018,
+      "venue": "Journal of Graph Theory",
+      "url": "https://arxiv.org/abs/1510.02324",
+      "doi": "10.1002/jgt.22258",
+      "arxiv_id": "1510.02324",
+      "kind": "partial",
+      "claim": "Proves that (banner, odd hole)-free graphs are perfectly divisible (a property stronger than 2-divisibility), verifying the conjecture for this class."
+    },
+    {
+      "title": "Perfect divisibility and 2-divisibility",
+      "authors": "Maria Chudnovsky, Vaidy Sivaraman",
+      "year": 2019,
+      "venue": "Journal of Graph Theory",
+      "url": "https://arxiv.org/abs/1704.06667",
+      "doi": "10.1002/jgt.22367",
+      "arxiv_id": "1704.06667",
+      "kind": "partial",
+      "claim": "Proves that (P₅, C₅)-free graphs are 2-divisible, and that bull-free graphs that are also odd-hole-free or P₅-free are perfectly divisible, advancing the conjecture for these classes."
+    },
+    {
+      "title": "2-divisibility of Some Odd Hole Free Graphs",
+      "authors": "Wei Dong, Jia-lei Song, Bao-gang Xu",
+      "year": 2022,
+      "venue": "Acta Mathematicae Applicatae Sinica, English Series",
+      "url": "https://applmath.cjoe.ac.cn/jweb_yysxxb_en/CN/10.1007/s10255-022-1110-8",
+      "doi": "10.1007/s10255-022-1110-8",
+      "arxiv_id": null,
+      "kind": "partial",
+      "claim": "Proves that {odd hole, H}-free graphs are 2-divisible where H is a dart, a racket, or a bull, verifying the conjecture for three new families of odd-hole-free graphs."
+    },
+    {
+      "title": "On the structure of (dart, odd hole)-free graphs",
+      "authors": "Chính T. Hoàng",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/html/2504.20422",
+      "doi": null,
+      "arxiv_id": "2504.20422",
+      "kind": "partial",
+      "claim": "Gives a structural decomposition of (dart, odd hole)-free graphs and a new proof that they are 2-divisible, and further proves they are perfectly divisible."
+    }
+  ],
+  "search_queries": [
+    "2-division graph monochromatic maximum clique Hoang McDiarmid conjecture",
+    "graph 2-colouring no monochromatic maximum clique perfect graph conjecture",
+    "divisibility graphs odd hole 2-division conjecture arXiv 2014 2015 2016 2017 2018 2019 2020",
+    "\"2-divisible\" graph \"odd hole\" conjecture Hoang McDiarmid arXiv",
+    "\"perfect divisibility\" \"2-divisibility\" Hoang arXiv preprint odd hole free graphs",
+    "\"odd hole free\" \"2-divisible\" solved proof 2020 2021 2022 2023 2024 2025",
+    "Hoang McDiarmid 2-division conjecture \"odd hole free\" proof complete solution 2022 2023 2024 2025",
+    "\"divisibility and coloring\" \"P5-free\" arXiv Sintiari Trotignon 2024",
+    "Chudnovsky Sivaraman \"perfect divisibility and 2-divisibility\" Journal Graph Theory 2019 2020"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/1510.02324",
+    "https://arxiv.org/abs/1704.06667",
+    "https://arxiv.org/abs/2302.06800",
+    "https://arxiv.org/html/2504.20422",
+    "https://arxiv.org/html/2603.09549",
+    "https://archive.org/details/arxiv-1704.06667",
+    "https://applmath.cjoe.ac.cn/jweb_yysxxb_en/CN/10.1007/s10255-022-1110-8",
+    "https://link.springer.com/article/10.1007/s10255-022-1110-8",
+    "https://onlinelibrary.wiley.com/doi/am-pdf/10.1002/jgt.22367",
+    "https://onlinelibrary.wiley.com/doi/abs/10.1002/jgt.22258",
+    "https://www.sciencedirect.com/science/article/abs/pii/S0166218X24000350",
+    "https://web.math.princeton.edu/~pds/barbados25/problems.pdf",
+    "https://web.math.princeton.edu/~mchudnov/Perfect2div.pdf"
+  ],
+  "notes": "The full abstract of Dong–Song–Xu (2022) was not retrievable (Springer paywall; Chinese journal page returned only metadata); the specific claim about dart/racket/bull is supported by search-result summaries and by an explicit attribution in Hoàng (arXiv:2504.20422), which cites Dong–Song–Xu for the (dart, odd hole) result. The Barbados 2025 open-problems PDF was binary-encoded and unreadable by WebFetch, so I could not confirm whether the conjecture is listed there as still open, but all other evidence is consistent with it remaining open. The He–Shi–Wu–Yao preprint (arXiv:2603.09549, 2026) proves (odd hole, hammer, K₂,₃)-free graphs are perfectly divisible, representing yet another incremental special case; it was verified but not included in since_posted as it adds marginal new information beyond the other entries.",
+  "slug": "2_colouring_a_graph_without_a_monochromatic_maximum_clique",
+  "reviewed_at": "2026-05-07",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "elapsed_seconds": 272.6
+}

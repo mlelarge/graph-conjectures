@@ -1,0 +1,21 @@
+{
+  "status": "open",
+  "confidence": "high",
+  "summary": "Both of Turán's conjectures for 3-uniform hypergraphs remain unresolved as of 2026. The conjecture that the Turán density of $K_4^{(3)}$ equals $5/9$ is particularly celebrated; the best known upper bound $\\pi(K_4^{(3)}) \\leq 0.561666$ was established via Razborov's flag-algebra computations before the OPG posting date and has not been improved. Recent work in extremal hypergraph theory (tight-cycle densities, entropy-based approaches, expanded hypergraphs) has advanced surrounding machinery but has not touched these specific conjectures.",
+  "since_posted": [],
+  "search_queries": [
+    "Turán hypergraph conjecture 3-uniform K4 progress recent 2013-2026",
+    "Turán problem 3-uniform hypergraph K4 K5 extremal conjecture solved partial arXiv",
+    "ex(n, K4^3) Turán density hypergraph conjecture survey 2020 2021 2022 2023 2024",
+    "Turán hypergraph problem open conjecture flag algebra progress Keevash Frankl Furedi"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/html/2412.08075",
+    "https://academic.oup.com/imrn/article/2024/6/4804/7240726"
+  ],
+  "notes": "Both the PDF of Keevash's survey (Oxford) and the AIM problem-list page were unreachable for readable content (binary PDF, expired certificate). The IMRN 2024 paper on tight-cycle Turán densities explicitly states that the K4^(3) conjecture remains open; the 2024/2026 entropy-meets-Turán paper addresses 'tent' hypergraphs, not K4^(3) or K5^(3). No post-2013 paper with verifiable complete bibliographic details was found that makes direct partial progress on either stated conjecture, so since_posted is empty. The Razborov flag-algebra bound (0.561666) pre-dates the posting and is not included.",
+  "slug": "turans_problem_for_hypergraphs",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 04)",
+  "search_enabled": true
+}

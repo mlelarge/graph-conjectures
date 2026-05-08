@@ -1,0 +1,47 @@
+{
+  "status": "partial",
+  "confidence": "medium",
+  "summary": "The conjecture — that there exists a fixed $k$ such that every $k$-arc-connected digraph contains two arc-disjoint strongly connected spanning subdigraphs — remains open for general digraphs. Post-2013 work has extended partial results to broader classes: Sun, Gutin, and Ai (2018) handled digraph compositions and products, and Bang-Jensen, Gutin, and Yeo (2019/2020) gave a complete characterization of which semicomplete compositions admit a strong arc decomposition, solving a problem from the 2018 paper but leaving the general conjecture untouched.",
+  "since_posted": [
+    {
+      "title": "Arc-disjoint strong spanning subdigraphs in compositions and products of digraphs",
+      "authors": "Yuefang Sun, Gregory Gutin, Jiangdong Ai",
+      "year": 2018,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/1812.08809",
+      "doi": null,
+      "arxiv_id": "1812.08809",
+      "kind": "partial",
+      "claim": "Establishes sufficient conditions for digraph compositions (with semicomplete base) and certain Cartesian/strong products of strong digraphs to possess a 'good decomposition' (arc set splits into two arc-disjoint strongly connected spanning subdigraphs)."
+    },
+    {
+      "title": "Arc-disjoint Strong Spanning Subdigraphs of Semicomplete Compositions",
+      "authors": "Joergen Bang-Jensen, Gregory Gutin, Anders Yeo",
+      "year": 2019,
+      "venue": "arXiv preprint (published Journal of Graph Theory, 2020)",
+      "url": "https://arxiv.org/abs/1903.12225",
+      "doi": null,
+      "arxiv_id": "1903.12225",
+      "kind": "partial",
+      "claim": "Provides a complete characterization of strong semicomplete digraph compositions that have a strong arc decomposition: they must be 2-arc-strong and not isomorphic to four specific exceptional digraphs; this solves the open problem of Sun–Gutin–Ai (2018)."
+    }
+  ],
+  "search_queries": [
+    "arc-disjoint strongly connected spanning subdigraphs k-arc-connected digraph conjecture Bang-Jensen Yeo",
+    "arc-disjoint strongly connected spanning subdigraphs digraph conjecture arXiv",
+    "Bang-Jensen Kriesell disjoint subdigraphs arc-connected spanning strongly connected 2013 2014 2015 2016 2017 2018 2019 2020",
+    "k-arc-connected digraph two arc-disjoint strongly connected spanning subdigraphs conjecture solved 2020 2021 2022 2023 2024 2025"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/1812.08809",
+    "https://arxiv.org/abs/1903.12225",
+    "https://ar5iv.labs.arxiv.org/html/1903.12225",
+    "https://arxiv.org/abs/1203.4705"
+  ],
+  "notes": "The Wiley DOI page (10.1002/jgt.22568) and the ScienceDirect paper (pii/S0304397512002204) both returned HTTP 403 and could not be verified; accordingly they are not cited. The published year for arXiv:1903.12225 in J. Graph Theory (2020) is inferred from search result snippets, not from a directly fetched journal page. No paper found in these searches claims to resolve the general k-arc-connected conjecture; all post-2013 progress is confined to structured special classes.",
+  "slug": "arc_disjoint_strongly_connected_spanning_subdigraphs",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "elapsed_seconds": 135.5
+}

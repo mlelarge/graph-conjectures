@@ -1,0 +1,49 @@
+{
+  "slug": "grahams_conjecture_on_tree_reconstruction",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet (subagent)",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Graham's conjecture remains open. Cooper, Kay, and Swifton (arXiv 2011, J. Combinatorics 2018) showed that the number of trees on $n$ vertices distinguishable by their Graham sequence is at least $e^{\\Omega((\\log n)^{3/2})}$, by constructing many caterpillars via the Prouhet-Tarry-Escott problem; this gives a strong lower bound but does not resolve the conjecture. Weatherspoon and Zeilberger (2025, experimental note) computationally verified the conjecture for all trees up to 11 vertices, with partial verification up to 16 vertices.",
+  "since_posted": [
+    {
+      "title": "Graham's Tree Reconstruction Conjecture and a Waring-Type Problem on Partitions",
+      "authors": "Joshua Cooper, Bill Kay, Anton Swifton",
+      "year": 2011,
+      "venue": "arXiv preprint (later J. Combinatorics 9(3), 2018)",
+      "url": "https://arxiv.org/abs/1109.0522",
+      "doi": null,
+      "arxiv_id": "1109.0522",
+      "kind": "partial",
+      "claim": "Provides a lower bound: the number of trees on $n$ vertices distinguishable by their iterated line-graph vertex-count sequence is at least $e^{\\Omega((\\log n)^{3/2})}$, via caterpillar constructions linked to the Prouhet-Tarry-Escott problem."
+    },
+    {
+      "title": "An Experimental Note on Graham's Tree Reconstruction Conjecture",
+      "authors": "Kaylee Weatherspoon, Doron Zeilberger",
+      "year": 2025,
+      "venue": "Personal Journal of Shalosh B. Ekhad and Doron Zeilberger",
+      "url": "http://sites.math.rutgers.edu/~zeilberg/mamarim/mamarimhtml/treeline.html",
+      "doi": null,
+      "arxiv_id": null,
+      "kind": "partial",
+      "claim": "Computationally verifies Graham's conjecture for all trees on up to 11 vertices, with partial verification for trees on 12-16 vertices."
+    }
+  ],
+  "search_queries": [
+    "Graham's conjecture tree reconstruction line graph iterated vertex sequence",
+    "\"Graham's conjecture\" tree line graph reconstruction",
+    "\"Cooper\" \"Kay\" \"Graham's Tree Reconstruction\" \"Journal of Combinatorics\" 2018",
+    "Zeilberger \"Graham's Tree Reconstruction Conjecture\" experimental note"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/1109.0522",
+    "https://arxiv.org/abs/1109.0522v2",
+    "https://intlpress.com/site/pub/files/_fulltext/journals/joc/2018/0009/0003/JOC-2018-0009-0003-a003.pdf",
+    "https://www.intlpress.com/site/pub/pages/journals/items/joc/content/vols/0009/0003/index.php",
+    "https://sites.math.rutgers.edu/~zeilberg/mamarim/mamarimPDF/treeline.pdf",
+    "https://sites.math.rutgers.edu/~zeilberg/pj.html",
+    "http://sites.math.rutgers.edu/~zeilberg/mamarim/mamarimhtml/treeline.html"
+  ],
+  "notes": "The arXiv version (1109.0522) was verified directly; the published Journal of Combinatorics 2018 PDF (Int. Press) returned only binary content via WebFetch but its existence and TOC reference is consistent with the arXiv v2 (Aug 2017) timing. Weatherspoon-Zeilberger note is verified via Zeilberger's personal journal listing and HTML version; it is not on arXiv. The original conjecture as stated remains open."
+}

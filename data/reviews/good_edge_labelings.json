@@ -1,0 +1,47 @@
+{
+  "status": "partial",
+  "confidence": "medium",
+  "summary": "The two open problems — characterising the maximum edge density of good-edge-labelable graphs and the conjecture on finitely many critical graphs with average degree below $c < 4$ — remain unresolved. Mehrabian (2012) established that bad graphs with arbitrarily large girth exist (disproving a naive girth-threshold hope), and showed that any good nearly-regular $n$-vertex graph has at most $n^{1+o(1)}$ edges, giving a partial answer to the density question. A 2024 paper initiates a parameterized-complexity study of the decision problem but does not address the extremal conjectures.",
+  "since_posted": [
+    {
+      "title": "On the density of nearly regular graphs with a good edge-labelling",
+      "authors": "Abbas Mehrabian",
+      "year": 2012,
+      "venue": "SIAM Journal on Discrete Mathematics",
+      "url": "https://arxiv.org/abs/1110.2391",
+      "doi": null,
+      "arxiv_id": "1110.2391",
+      "kind": "partial",
+      "claim": "Proves that bad graphs with arbitrarily large girth exist, and that any good nearly-regular $n$-vertex graph has at most $n^{1+o(1)}$ edges; also shows that for fixed maximum degree $\\Delta$, sufficiently large girth forces good labelability."
+    },
+    {
+      "title": "On the parameterized complexity of computing good edge-labelings",
+      "authors": "Davi de Andrade, Júlio Araújo, Laure Morelle, Ignasi Sau, Ana Silva",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2408.15181",
+      "doi": "10.48550/arXiv.2408.15181",
+      "arxiv_id": "2408.15181",
+      "kind": "partial",
+      "claim": "Initiates a parameterized-complexity study of good edge-labelings, proving NP-completeness of the $c$-GEL variant for all $c\\geq 2$ and giving FPT algorithms and polynomial kernels under structural parameters; does not address the density or critical-graph conjectures."
+    }
+  ],
+  "search_queries": [
+    "good edge labeling graphs conjecture Araújo Cohen Giroire Havet",
+    "good edge labeling critical graphs average degree girth arXiv",
+    "\"good edge labeling\" graph NP-hard planar girth recent results 2012 2013 2014 2015",
+    "Bode Farzad Theis \"good edge labeling\" girth 2012 2013"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/1109.1125",
+    "https://arxiv.org/abs/1110.2391",
+    "https://arxiv.org/abs/2408.15181",
+    "https://arxiv.org/html/2408.15181",
+    "https://archive.org/details/arxiv-1110.2391"
+  ],
+  "notes": "The [BFT] paper (arXiv:1109.1125, Bode-Farzad-Theis, submitted September 2011 hence after the OPG posting date of 2011-06-30) is already listed in the OPG bibliography and so is not re-listed here. The exact DOI for the Mehrabian SIAM paper was not retrieved and is left null. A systematic search of journals post-2015 was not possible within the 4-query limit; additional results may exist.",
+  "slug": "good_edge_labelings",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 01)",
+  "search_enabled": true
+}

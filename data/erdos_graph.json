@@ -1,0 +1,5286 @@
+[
+  {
+    "number": 19,
+    "url": "https://www.erdosproblems.com/19",
+    "status": "solved",
+    "prize": "DECIDABLE Resolved up to a finite check. - $500",
+    "statement": "If $G$ is an edge-disjoint union of $n$ copies of $K_n$ then is $\\chi(G)=n$?",
+    "tags": [
+      "graph theory",
+      "chromatic number"
+    ],
+    "citation_keys": [
+      "Er76b",
+      "Er76c",
+      "Er78",
+      "Er81",
+      "Er90",
+      "Er92b",
+      "Er93",
+      "Er95",
+      "Er97c",
+      "Er97d",
+      "Er97f",
+      "Va99"
+    ],
+    "citation_keys_full": [
+      "[Er76b,p.171]",
+      "[Er76c,p.9]",
+      "[Er78,p.29]",
+      "[Er81]",
+      "[Er90]",
+      "[Er92b]",
+      "[Er93,p.341]",
+      "[Er95]",
+      "[Er97c]",
+      "[Er97d]",
+      "[Er97f]",
+      "[Va99,3.57]"
+    ]
+  },
+  {
+    "number": 22,
+    "url": "https://www.erdosproblems.com/22",
+    "status": "solved",
+    "prize": "PROVED This has been solved in the affirmative.",
+    "statement": "Let $\\epsilon>0$ and $n$ be sufficiently large depending on $\\epsilon$. Is there a graph on $n$ vertices with $\\geq n^2/8$ many edges which contains no $K_4$ such that the largest independent set has size at most $\\epsilon n$?",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "BoEr76",
+      "Er90"
+    ],
+    "citation_keys_full": [
+      "[BoEr76]",
+      "[Er90]"
+    ]
+  },
+  {
+    "number": 23,
+    "url": "https://www.erdosproblems.com/23",
+    "status": "open",
+    "prize": "FALSIFIABLE Open, but could be disproved with a finite counterexample.",
+    "statement": "Can every triangle-free graph on $5n$ vertices be made bipartite by deleting at most $n^2$ edges?",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "EFPS88",
+      "Er71",
+      "Er90",
+      "Er93",
+      "Er97b",
+      "Er97f"
+    ],
+    "citation_keys_full": [
+      "[Er71]",
+      "[EFPS88]",
+      "[Er90]",
+      "[Er93,p.343]",
+      "[Er97b]",
+      "[Er97f]"
+    ]
+  },
+  {
+    "number": 24,
+    "url": "https://www.erdosproblems.com/24",
+    "status": "solved",
+    "prize": "PROVED (LEAN) This has been solved in the affirmative and the proof verified in Lean.",
+    "statement": "Does every triangle-free graph on $5n$ vertices contain at most $n^5$ copies of $C_5$?",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "Er90",
+      "Er92b",
+      "Er97b",
+      "Er97f"
+    ],
+    "citation_keys_full": [
+      "[Er90]",
+      "[Er92b]",
+      "[Er97b]",
+      "[Er97f]"
+    ]
+  },
+  {
+    "number": 57,
+    "url": "https://www.erdosproblems.com/57",
+    "status": "solved",
+    "prize": "PROVED This has been solved in the affirmative.",
+    "statement": "If $G$ is a graph with infinite chromatic number and $a_1<a_2<\\cdots $ are lengths of the odd cycles of $G$ then $\\sum \\frac{1}{a_i}=\\infty$.",
+    "tags": [
+      "graph theory",
+      "chromatic number",
+      "cycles"
+    ],
+    "citation_keys": [
+      "Er69b",
+      "Er74d",
+      "Er81",
+      "Er90",
+      "Er93",
+      "Er94b",
+      "Er95",
+      "Er95d",
+      "Er96",
+      "Er97b",
+      "ErHa66",
+      "Va99"
+    ],
+    "citation_keys_full": [
+      "[ErHa66]",
+      "[Er69b]",
+      "[Er74d]",
+      "[Er81]",
+      "[Er90]",
+      "[Er93,p.342]",
+      "[Er94b]",
+      "[Er95]",
+      "[Er95d]",
+      "[Er96]",
+      "[Er97b]",
+      "[Va99,3.58]"
+    ]
+  },
+  {
+    "number": 58,
+    "url": "https://www.erdosproblems.com/58",
+    "status": "solved",
+    "prize": "PROVED This has been solved in the affirmative.",
+    "statement": "If $G$ is a graph which contains odd cycles of $\\leq k$ different lengths then $\\chi(G)\\leq 2k+2$, with equality if and only if $G$ contains $K_{2k+2}$.",
+    "tags": [
+      "graph theory",
+      "chromatic number",
+      "cycles"
+    ],
+    "citation_keys": [
+      "Er90"
+    ],
+    "citation_keys_full": [
+      "[Er90]"
+    ]
+  },
+  {
+    "number": 59,
+    "url": "https://www.erdosproblems.com/59",
+    "status": "solved",
+    "prize": "DISPROVED This has been solved in the negative.",
+    "statement": "Is it true that the number of graphs on $n$ vertices which do not contain $G$ is\\[\\leq 2^{(1+o(1))\\mathrm{ex}(n;G)}?\\]",
+    "tags": [
+      "graph theory",
+      "turan number"
+    ],
+    "citation_keys": [
+      "Er90",
+      "Er93",
+      "Er97c",
+      "Va99"
+    ],
+    "citation_keys_full": [
+      "[Er90]",
+      "[Er93,p.335]",
+      "[Er97c]",
+      "[Va99,3.56]"
+    ]
+  },
+  {
+    "number": 60,
+    "url": "https://www.erdosproblems.com/60",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Does every graph on $n$ vertices with $>\\mathrm{ex}(n;C_4)$ edges contain $\\gg n^{1/2}$ many copies of $C_4$?",
+    "tags": [
+      "graph theory",
+      "cycles"
+    ],
+    "citation_keys": [
+      "Er90",
+      "Er93"
+    ],
+    "citation_keys_full": [
+      "[Er90]",
+      "[Er93,p.335]"
+    ]
+  },
+  {
+    "number": 61,
+    "url": "https://www.erdosproblems.com/61",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "For any graph $H$ is there some $c=c(H)>0$ such that every graph $G$ on $n$ vertices that does not contain $H$ as an induced subgraph contains either a complete graph or independent set on $\\geq n^c$ vertices?",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "Er90",
+      "Er93",
+      "Er97f",
+      "ErHa89",
+      "Va99"
+    ],
+    "citation_keys_full": [
+      "[ErHa89]",
+      "[Er90]",
+      "[Er93,p.346]",
+      "[Er97f]",
+      "[Va99,3.52]"
+    ]
+  },
+  {
+    "number": 62,
+    "url": "https://www.erdosproblems.com/62",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "If $G_1,G_2$ are two graphs with chromatic number $\\aleph_1$ then must there exist a graph $G$ whose chromatic number is $4$ (or even $\\aleph_0$) which is a subgraph of both $G_1$ and $G_2$?",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "Er87",
+      "Er90",
+      "Er95d",
+      "Va99"
+    ],
+    "citation_keys_full": [
+      "[Er87]",
+      "[Er90]",
+      "[Er95d]",
+      "[Va99,7.89]"
+    ]
+  },
+  {
+    "number": 63,
+    "url": "https://www.erdosproblems.com/63",
+    "status": "solved",
+    "prize": "PROVED This has been solved in the affirmative.",
+    "statement": "Does every graph with infinite chromatic number contain a cycle of length $2^n$ for infinitely many $n$?",
+    "tags": [
+      "graph theory",
+      "chromatic number",
+      "cycles"
+    ],
+    "citation_keys": [
+      "Er93",
+      "Er94b",
+      "Er95",
+      "Er95d",
+      "Er96",
+      "Er97b"
+    ],
+    "citation_keys_full": [
+      "[Er93,p.342]",
+      "[Er94b]",
+      "[Er95]",
+      "[Er95d]",
+      "[Er96]",
+      "[Er97b]"
+    ]
+  },
+  {
+    "number": 64,
+    "url": "https://www.erdosproblems.com/64",
+    "status": "open",
+    "prize": "FALSIFIABLE Open, but could be disproved with a finite counterexample. - $1000",
+    "statement": "Does every finite graph with minimum degree at least 3 contain a cycle of length $2^k$ for some $k\\geq 2$?",
+    "tags": [
+      "graph theory",
+      "cycles"
+    ],
+    "citation_keys": [
+      "Er93",
+      "Er94b",
+      "Er95",
+      "Er96",
+      "Er97b",
+      "Er97c"
+    ],
+    "citation_keys_full": [
+      "[Er93,p.343]",
+      "[Er94b]",
+      "[Er95,p.174]",
+      "[Er96]",
+      "[Er97b]",
+      "[Er97c]"
+    ]
+  },
+  {
+    "number": 65,
+    "url": "https://www.erdosproblems.com/65",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Let $G$ be a graph with $n$ vertices and $kn$ edges, and $a_1<a_2<\\cdots $ be the lengths of cycles in $G$. Is it true that\\[\\sum\\frac{1}{a_i}\\gg \\log k?\\]Is the sum $\\sum\\frac{1}{a_i}$ minimised when $G$ is a complete bipartite graph?",
+    "tags": [
+      "graph theory",
+      "cycles"
+    ],
+    "citation_keys": [
+      "Er74d",
+      "Er75",
+      "Er81",
+      "Er93",
+      "Er95"
+    ],
+    "citation_keys_full": [
+      "[Er74d]",
+      "[Er75]",
+      "[Er81]",
+      "[Er93,p.342]",
+      "[Er95]"
+    ]
+  },
+  {
+    "number": 70,
+    "url": "https://www.erdosproblems.com/70",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Let $\\mathfrak{c}$ be the ordinal of the real numbers, $\\beta$ be any countable ordinal, and $2\\leq n<\\omega$. Is it true that $\\mathfrak{c}\\to (\\beta, n)_2^3$?",
+    "tags": [
+      "graph theory",
+      "ramsey theory",
+      "set theory"
+    ],
+    "citation_keys": [
+      "Er87",
+      "Va99"
+    ],
+    "citation_keys_full": [
+      "[Er87]",
+      "[Va99,7.83]"
+    ]
+  },
+  {
+    "number": 71,
+    "url": "https://www.erdosproblems.com/71",
+    "status": "solved",
+    "prize": "PROVED This has been solved in the affirmative.",
+    "statement": "Is it true that for every infinite arithmetic progression $P$ which contains even numbers there is some constant $c=c(P)$ such that every graph with average degree at least $c$ contains a cycle whose length is in $P$?",
+    "tags": [
+      "graph theory",
+      "cycles"
+    ],
+    "citation_keys": [
+      "Er82e",
+      "Er95",
+      "Er97b"
+    ],
+    "citation_keys_full": [
+      "[Er82e]",
+      "[Er95]",
+      "[Er97b]"
+    ]
+  },
+  {
+    "number": 72,
+    "url": "https://www.erdosproblems.com/72",
+    "status": "solved",
+    "prize": "PROVED This has been solved in the affirmative. - $100",
+    "statement": "Is there a set $A\\subset \\mathbb{N}$ of density $0$ and a constant $c>0$ such that every graph on sufficiently many vertices with average degree $\\geq c$ contains a cycle whose length is in $A$?",
+    "tags": [
+      "graph theory",
+      "cycles"
+    ],
+    "citation_keys": [
+      "Er94b",
+      "Er95",
+      "Er97b",
+      "Er97c"
+    ],
+    "citation_keys_full": [
+      "[Er94b]",
+      "[Er95]",
+      "[Er97b]",
+      "[Er97c]"
+    ]
+  },
+  {
+    "number": 73,
+    "url": "https://www.erdosproblems.com/73",
+    "status": "solved",
+    "prize": "PROVED This has been solved in the affirmative.",
+    "statement": "Let $k\\geq 0$. Let $G$ be a graph such that every subgraph $H$ contains an independent set of size $\\geq (n-k)/2$, where $n$ is the number of vertices of $H$. Must $G$ be the union of a bipartite graph and $O_k(1)$ many vertices?",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "EHS82",
+      "Er94b",
+      "Er95",
+      "Er96",
+      "Er97d"
+    ],
+    "citation_keys_full": [
+      "[EHS82]",
+      "[Er94b]",
+      "[Er95]",
+      "[Er96]",
+      "[Er97d]"
+    ]
+  },
+  {
+    "number": 74,
+    "url": "https://www.erdosproblems.com/74",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation. - $500",
+    "statement": "Let $f(n)\\to \\infty$ (possibly very slowly). Is there a graph of infinite chromatic number such that every finite subgraph on $n$ vertices can be made bipartite by deleting at most $f(n)$ edges?",
+    "tags": [
+      "graph theory",
+      "chromatic number",
+      "cycles"
+    ],
+    "citation_keys": [
+      "EHS82",
+      "Er87",
+      "Er90",
+      "Er93",
+      "Er94b",
+      "Er95",
+      "Er95d",
+      "Er96",
+      "Er97b",
+      "Er97c",
+      "Er97d",
+      "Er97f"
+    ],
+    "citation_keys_full": [
+      "[EHS82]",
+      "[Er87]",
+      "[Er90]",
+      "[Er93,p.342]",
+      "[Er94b]",
+      "[Er95]",
+      "[Er95d,p.62]",
+      "[Er96]",
+      "[Er97b]",
+      "[Er97c]",
+      "[Er97d]",
+      "[Er97f]"
+    ]
+  },
+  {
+    "number": 75,
+    "url": "https://www.erdosproblems.com/75",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Is there a graph of chromatic number $\\aleph_1$ with $\\aleph_1$ vertices such that for all $\\epsilon>0$ if $n$ is sufficiently large and $H$ is a subgraph on $n$ vertices then $H$ contains an independent set of size $>n^{1-\\epsilon}$? What about an independent set of size $\\gg n$?",
+    "tags": [
+      "graph theory",
+      "chromatic number"
+    ],
+    "citation_keys": [
+      "EHS82",
+      "Er95",
+      "Er95d"
+    ],
+    "citation_keys_full": [
+      "[EHS82,p.120]",
+      "[Er95,p.11]",
+      "[Er95d,p.63]"
+    ]
+  },
+  {
+    "number": 76,
+    "url": "https://www.erdosproblems.com/76",
+    "status": "solved",
+    "prize": "PROVED This has been solved in the affirmative.",
+    "statement": "Is it true that in any $2$-colouring of the edges of $K_n$ there must exist at least\\[(1+o(1))\\frac{n^2}{12}\\]many edge-disjoint monochromatic triangles?",
+    "tags": [
+      "graph theory",
+      "ramsey theory"
+    ],
+    "citation_keys": [
+      "Er95",
+      "Er97d",
+      "Va99"
+    ],
+    "citation_keys_full": [
+      "[Er95]",
+      "[Er97d]",
+      "[Va99,3.54]"
+    ]
+  },
+  {
+    "number": 77,
+    "url": "https://www.erdosproblems.com/77",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation. - $250",
+    "statement": "If $R(k)$ is the Ramsey number for $K_k$, the minimal $n$ such that every $2$-colouring of the edges of $K_n$ contains a monochromatic copy of $K_k$, then find the value of\\[\\lim_{k\\to \\infty}R(k)^{1/k}.\\]",
+    "tags": [
+      "graph theory",
+      "ramsey theory"
+    ],
+    "citation_keys": [
+      "Er61",
+      "Er69b",
+      "Er71",
+      "Er81",
+      "Er88",
+      "Er90b",
+      "Er93",
+      "Er95",
+      "Er97c",
+      "Er97d",
+      "Va99"
+    ],
+    "citation_keys_full": [
+      "[Er61]",
+      "[Er69b]",
+      "[Er71,p.99]",
+      "[Er81]",
+      "[Er88,p.83]",
+      "[Er90b,p.17]",
+      "[Er93,p.338]",
+      "[Er95]",
+      "[Er97c]",
+      "[Er97d]",
+      "[Va99,3.50]"
+    ]
+  },
+  {
+    "number": 78,
+    "url": "https://www.erdosproblems.com/78",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation. - $100",
+    "statement": "Let $R(k)$ be the Ramsey number for $K_k$, the minimal $n$ such that every $2$-colouring of the edges of $K_n$ contains a monochromatic copy of $K_k$. Give a constructive proof that $R(k)>C^k$ for some constant $C>1$.",
+    "tags": [
+      "graph theory",
+      "ramsey theory"
+    ],
+    "citation_keys": [
+      "Er69b",
+      "Er71",
+      "Er88",
+      "Er93",
+      "Er95",
+      "Er97c",
+      "Va99"
+    ],
+    "citation_keys_full": [
+      "[Er69b]",
+      "[Er71]",
+      "[Er88]",
+      "[Er93,p.337]",
+      "[Er95]",
+      "[Er97c]",
+      "[Va99,3.49]"
+    ]
+  },
+  {
+    "number": 79,
+    "url": "https://www.erdosproblems.com/79",
+    "status": "solved",
+    "prize": "PROVED This has been solved in the affirmative.",
+    "statement": "We say $G$ is Ramsey size linear if $R(G,H)\\ll m$ for all graphs $H$ with $m$ edges and no isolated vertices. Are there infinitely many graphs $G$ which are not Ramsey size linear but such that all of its subgraphs are?",
+    "tags": [
+      "graph theory",
+      "ramsey theory"
+    ],
+    "citation_keys": [
+      "EFRS93",
+      "Er95"
+    ],
+    "citation_keys_full": [
+      "[EFRS93]",
+      "[Er95]"
+    ]
+  },
+  {
+    "number": 80,
+    "url": "https://www.erdosproblems.com/80",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Let $c>0$ and let $f_c(n)$ be the maximal $m$ such that every graph $G$ with $n$ vertices and at least $cn^2$ edges, where each edge is contained in at least one triangle, must contain a book of size $m$, that is, an edge shared by at least $m$ different triangles. Estimate $f_c(n)$. In particular, is it true that $f_c(n)>n^{\\epsilon}$ for some $\\epsilon>0$? Or $f_c(n)\\gg \\log n$?",
+    "tags": [
+      "graph theory",
+      "ramsey theory"
+    ],
+    "citation_keys": [
+      "Er87"
+    ],
+    "citation_keys_full": [
+      "[Er87]"
+    ]
+  },
+  {
+    "number": 81,
+    "url": "https://www.erdosproblems.com/81",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Let $G$ be a chordal graph on $n$ vertices - that is, $G$ has no induced cycles of length greater than $3$. Can the edges of $G$ be partitioned into $n^2/6+O(n)$ many cliques?",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "Er95"
+    ],
+    "citation_keys_full": [
+      "[Er95]"
+    ]
+  },
+  {
+    "number": 82,
+    "url": "https://www.erdosproblems.com/82",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Let $F(n)$ be maximal such that every graph on $n$ vertices contains a regular induced subgraph on at least $F(n)$ vertices. Prove that $F(n)/\\log n\\to \\infty$.",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "Er93",
+      "Er95",
+      "Er97d"
+    ],
+    "citation_keys_full": [
+      "[Er93,p.340]",
+      "[Er95]",
+      "[Er97d]"
+    ]
+  },
+  {
+    "number": 84,
+    "url": "https://www.erdosproblems.com/84",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "The cycle set of a graph $G$ on $n$ vertices is a set $A\\subseteq \\{3,\\ldots,n\\}$ such that there is a cycle in $G$ of length $\\ell$ if and only if $\\ell \\in A$. Let $f(n)$ count the number of possible such $A$. Prove that $f(n)=o(2^n)$. Prove that $f(n)/2^{n/2}\\to \\infty$.",
+    "tags": [
+      "graph theory",
+      "cycles"
+    ],
+    "citation_keys": [
+      "Er94b",
+      "Er95",
+      "Er96",
+      "Er97d"
+    ],
+    "citation_keys_full": [
+      "[Er94b]",
+      "[Er95]",
+      "[Er96]",
+      "[Er97d]"
+    ]
+  },
+  {
+    "number": 85,
+    "url": "https://www.erdosproblems.com/85",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Let $n\\geq 4$ and $f(n)$ be minimal such that every graph on $n$ vertices with minimal degree $\\geq f(n)$ contains a $C_4$. Is it true that, for all large $n$, $f(n+1)\\geq f(n)$?",
+    "tags": [
+      "graph theory",
+      "ramsey theory"
+    ],
+    "citation_keys": [
+      "Er93",
+      "Er94b",
+      "Er95",
+      "Er96"
+    ],
+    "citation_keys_full": [
+      "[Er93,p.345]",
+      "[Er94b]",
+      "[Er95]",
+      "[Er96]"
+    ]
+  },
+  {
+    "number": 86,
+    "url": "https://www.erdosproblems.com/86",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation. - $100",
+    "statement": "Let $Q_n$ be the $n$-dimensional hypercube graph (so that $Q_n$ has $2^n$ vertices and $n2^{n-1}$ edges). Is it true that every subgraph of $Q_n$ with\\[\\geq \\left(\\frac{1}{2}+o(1)\\right)n2^{n-1}\\]many edges contains a $C_4$?",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "Er90",
+      "Er91",
+      "Er92b",
+      "Er93",
+      "Er94b",
+      "Er95",
+      "Er97f"
+    ],
+    "citation_keys_full": [
+      "[Er90]",
+      "[Er91]",
+      "[Er92b]",
+      "[Er93,p.343]",
+      "[Er94b]",
+      "[Er95]",
+      "[Er97f]"
+    ]
+  },
+  {
+    "number": 87,
+    "url": "https://www.erdosproblems.com/87",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Let $\\epsilon >0$. Is it true that, if $k$ is sufficiently large, then\\[R(G)>(1-\\epsilon)^kR(k)\\]for every graph $G$ with chromatic number $\\chi(G)=k$? Even stronger, is there some $c>0$ such that, for all large $k$, $R(G)>cR(k)$ for every graph $G$ with chromatic number $\\chi(G)=k$?",
+    "tags": [
+      "graph theory",
+      "ramsey theory"
+    ],
+    "citation_keys": [
+      "Er95"
+    ],
+    "citation_keys_full": [
+      "[Er95,p.14]"
+    ]
+  },
+  {
+    "number": 88,
+    "url": "https://www.erdosproblems.com/88",
+    "status": "solved",
+    "prize": "PROVED This has been solved in the affirmative. - $100",
+    "statement": "For any $\\epsilon>0$ there exists $\\delta=\\delta(\\epsilon)>0$ such that if $G$ is a graph on $n$ vertices with no independent set or clique of size $\\geq \\epsilon\\log n$ then $G$ contains an induced subgraph with $m$ edges for all $m\\leq \\delta n^2$.",
+    "tags": [
+      "graph theory",
+      "ramsey theory"
+    ],
+    "citation_keys": [
+      "Er92b",
+      "Er95",
+      "Er97d"
+    ],
+    "citation_keys_full": [
+      "[Er92b]",
+      "[Er95]",
+      "[Er97d]"
+    ]
+  },
+  {
+    "number": 108,
+    "url": "https://www.erdosproblems.com/108",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "For every $r\\geq 4$ and $k\\geq 2$ is there some finite $f(k,r)$ such that every graph of chromatic number $\\geq f(k,r)$ contains a subgraph of girth $\\geq r$ and chromatic number $\\geq k$?",
+    "tags": [
+      "graph theory",
+      "chromatic number",
+      "cycles"
+    ],
+    "citation_keys": [
+      "Er71",
+      "Er79b",
+      "Er81",
+      "Er90",
+      "Er95d",
+      "Va99"
+    ],
+    "citation_keys_full": [
+      "[Er71]",
+      "[Er79b]",
+      "[Er81]",
+      "[Er90]",
+      "[Er95d]",
+      "[Va99,3.59]"
+    ]
+  },
+  {
+    "number": 110,
+    "url": "https://www.erdosproblems.com/110",
+    "status": "solved",
+    "prize": "DISPROVED This has been solved in the negative.",
+    "statement": "Is there some $F(n)$ such that every graph with chromatic number $\\aleph_1$ has, for all large $n$, a subgraph with chromatic number $n$ on at most $F(n)$ vertices?",
+    "tags": [
+      "graph theory",
+      "chromatic number",
+      "cycles"
+    ],
+    "citation_keys": [
+      "EHS82",
+      "Er87",
+      "Er90",
+      "Er95d",
+      "Er97f"
+    ],
+    "citation_keys_full": [
+      "[EHS82]",
+      "[Er87]",
+      "[Er90]",
+      "[Er95d]",
+      "[Er97f]"
+    ]
+  },
+  {
+    "number": 111,
+    "url": "https://www.erdosproblems.com/111",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "If $G$ is a graph let $h_G(n)$ be defined such that any subgraph of $G$ on $n$ vertices can be made bipartite after deleting at most $h_G(n)$ edges. What is the behaviour of $h_G(n)$? Is it true that $h_G(n)/n\\to \\infty$ for every graph $G$ with chromatic number $\\aleph_1$?",
+    "tags": [
+      "graph theory",
+      "chromatic number",
+      "set theory"
+    ],
+    "citation_keys": [
+      "EHS82",
+      "Er81",
+      "Er87",
+      "Er90",
+      "Er97d",
+      "Er97f"
+    ],
+    "citation_keys_full": [
+      "[Er81]",
+      "[EHS82]",
+      "[Er87]",
+      "[Er90]",
+      "[Er97d]",
+      "[Er97f]"
+    ]
+  },
+  {
+    "number": 112,
+    "url": "https://www.erdosproblems.com/112",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Let $k=k(n,m)$ be minimal such that any directed graph on $k$ vertices must contain either an independent set of size $n$ or a transitive tournament of size $m$. Determine $k(n,m)$.",
+    "tags": [
+      "graph theory",
+      "ramsey theory"
+    ],
+    "citation_keys": [
+      "ErRa67"
+    ],
+    "citation_keys_full": [
+      "[ErRa67]"
+    ]
+  },
+  {
+    "number": 113,
+    "url": "https://www.erdosproblems.com/113",
+    "status": "solved",
+    "prize": "DISPROVED This has been solved in the negative. - $500",
+    "statement": "If $G$ is bipartite then $\\mathrm{ex}(n;G)\\ll n^{3/2}$ if and only $G$ is $2$-degenerate, that is, $G$ contains no induced subgraph with minimal degree at least 3.",
+    "tags": [
+      "graph theory",
+      "turan number"
+    ],
+    "citation_keys": [
+      "Er90",
+      "Er91",
+      "Er93",
+      "ErSi84"
+    ],
+    "citation_keys_full": [
+      "[ErSi84]",
+      "[Er90]",
+      "[Er91]",
+      "[Er93]"
+    ]
+  },
+  {
+    "number": 127,
+    "url": "https://www.erdosproblems.com/127",
+    "status": "solved",
+    "prize": "PROVED This has been solved in the affirmative.",
+    "statement": "Let $f(m)$ be maximal such that every graph with $m$ edges must contain a bipartite graph with\\[\\geq \\frac{m}{2}+\\frac{\\sqrt{8m+1}-1}{8}+f(m)\\]edges. Is there an infinite sequence of $m_i$ such that $f(m_i)\\to \\infty$?",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "Er97b"
+    ],
+    "citation_keys_full": [
+      "[Er97b]"
+    ]
+  },
+  {
+    "number": 128,
+    "url": "https://www.erdosproblems.com/128",
+    "status": "open",
+    "prize": "FALSIFIABLE Open, but could be disproved with a finite counterexample. - $250",
+    "statement": "Let $G$ be a graph with $n$ vertices such that every induced subgraph on $\\geq \\lfloor n/2\\rfloor$ vertices has more than $n^2/50$ edges. Must $G$ contain a triangle?",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "Er93",
+      "Er97b",
+      "ErRo93"
+    ],
+    "citation_keys_full": [
+      "[Er93,p.344]",
+      "[ErRo93]",
+      "[Er97b]"
+    ]
+  },
+  {
+    "number": 129,
+    "url": "https://www.erdosproblems.com/129",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Let $R(n;k,r)$ be the smallest $N$ such that if the edges of $K_N$ are $r$-coloured then there is a set of $n$ vertices which does not contain a copy of $K_k$ in at least one of the $r$ colours. Prove that there is a constant $C=C(r)>1$ such that\\[R(n;3,r) < C^{\\sqrt{n}}.\\]",
+    "tags": [
+      "graph theory",
+      "ramsey theory"
+    ],
+    "citation_keys": [
+      "Er97b"
+    ],
+    "citation_keys_full": [
+      "[Er97b]"
+    ]
+  },
+  {
+    "number": 130,
+    "url": "https://www.erdosproblems.com/130",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Let $A\\subset\\mathbb{R}^2$ be an infinite set which contains no three points on a line and no four points on a circle. Consider the graph with vertices the points in $A$, where two vertices are joined by an edge if and only if they are an integer distance apart. How large can the chromatic number and clique number of this graph be? In particular, can the chromatic number be infinite?",
+    "tags": [
+      "graph theory",
+      "chromatic number"
+    ],
+    "citation_keys": [
+      "Er97b"
+    ],
+    "citation_keys_full": [
+      "[Er97b]"
+    ]
+  },
+  {
+    "number": 133,
+    "url": "https://www.erdosproblems.com/133",
+    "status": "solved",
+    "prize": "DISPROVED This has been solved in the negative.",
+    "statement": "Let $f(n)$ be minimal such that every triangle-free graph $G$ with $n$ vertices and diameter $2$ contains a vertex with degree $\\geq f(n)$. What is the order of growth of $f(n)$? Does $f(n)/\\sqrt{n}\\to \\infty$?",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "Er97b"
+    ],
+    "citation_keys_full": [
+      "[Er97b]"
+    ]
+  },
+  {
+    "number": 134,
+    "url": "https://www.erdosproblems.com/134",
+    "status": "solved",
+    "prize": "PROVED (LEAN) This has been solved in the affirmative and the proof verified in Lean.",
+    "statement": "Let $\\epsilon,\\delta>0$ and $n$ be sufficiently large in terms of $\\epsilon$ and $\\delta$. Let $G$ be a triangle-free graph on $n$ vertices with maximum degree $<n^{1/2-\\epsilon}$. Can $G$ be made into a triangle-free graph with diameter $2$ by adding at most $\\delta n^2$ edges?",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "Er97b"
+    ],
+    "citation_keys_full": [
+      "[Er97b]"
+    ]
+  },
+  {
+    "number": 136,
+    "url": "https://www.erdosproblems.com/136",
+    "status": "solved",
+    "prize": "SOLVED This has been resolved in some other way than a proof or disproof.",
+    "statement": "Let $f(n)$ be the smallest number of colours required to colour the edges of $K_n$ such that every $K_4$ contains at least 5 colours. Determine the size of $f(n)$.",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "Er97b"
+    ],
+    "citation_keys_full": [
+      "[Er97b]"
+    ]
+  },
+  {
+    "number": 146,
+    "url": "https://www.erdosproblems.com/146",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation. - $500",
+    "statement": "If $H$ is bipartite and is $r$-degenerate, that is, every induced subgraph of $H$ has minimum degree $\\leq r$, then\\[\\mathrm{ex}(n;H) \\ll n^{2-1/r}.\\]",
+    "tags": [
+      "graph theory",
+      "turan number"
+    ],
+    "citation_keys": [
+      "Er91",
+      "Er93",
+      "Er97c",
+      "ErSi84"
+    ],
+    "citation_keys_full": [
+      "[ErSi84]",
+      "[Er91]",
+      "[Er93]",
+      "[Er97c]"
+    ]
+  },
+  {
+    "number": 147,
+    "url": "https://www.erdosproblems.com/147",
+    "status": "solved",
+    "prize": "DISPROVED This has been solved in the negative. - $500",
+    "statement": "If $H$ is bipartite with minimum degree $r$ then there exists $\\epsilon=\\epsilon(H)>0$ such that\\[\\mathrm{ex}(n;H) \\gg n^{2-\\frac{1}{r-1}+\\epsilon}.\\]",
+    "tags": [
+      "graph theory",
+      "turan number"
+    ],
+    "citation_keys": [
+      "Er93",
+      "Er97c",
+      "ErSi84"
+    ],
+    "citation_keys_full": [
+      "[ErSi84]",
+      "[Er93]",
+      "[Er97c]"
+    ]
+  },
+  {
+    "number": 149,
+    "url": "https://www.erdosproblems.com/149",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "The strong chromatic index of a graph $G$, denoted by $\\mathrm{sq}(G)$, is the minimum $k$ such that the edges of $G$ can be partitioned into $k$ sets of 'strongly independent' edges, that is, such that the subgraph of $G$ induced by each set is the union of vertex-disjoint edges. Is it true that, for any graph $G$ with maximum degree $\\Delta$,\\[\\mathrm{sq}(G)\\leq\\frac{5}{4}\\Delta^2?\\]",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "Er88"
+    ],
+    "citation_keys_full": [
+      "[Er88,p.81]"
+    ]
+  },
+  {
+    "number": 150,
+    "url": "https://www.erdosproblems.com/150",
+    "status": "solved",
+    "prize": "PROVED (LEAN) This has been solved in the affirmative and the proof verified in Lean.",
+    "statement": "A minimal cut of a graph is a minimal set of vertices whose removal disconnects the graph. Let $c(n)$ be the maximum number of minimal cuts a graph on $n$ vertices can have. Does $c(n)^{1/n}\\to \\alpha$ for some $\\alpha <2$?",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "Er88"
+    ],
+    "citation_keys_full": [
+      "[Er88]"
+    ]
+  },
+  {
+    "number": 151,
+    "url": "https://www.erdosproblems.com/151",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "For a graph $G$ let $\\tau(G)$ denote the minimal number of vertices that include at least one from each maximal clique of $G$ on at least two vertices (sometimes called the clique transversal number). Let $H(n)$ be maximal such that every triangle-free graph on $n$ vertices contains an independent set on $H(n)$ vertices. If $G$ is a graph on $n$ vertices then is\\[\\tau(G)\\leq n-H(n)?\\]",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "EGT92",
+      "Er88"
+    ],
+    "citation_keys_full": [
+      "[Er88,p.82]",
+      "[EGT92,p.280]"
+    ]
+  },
+  {
+    "number": 159,
+    "url": "https://www.erdosproblems.com/159",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation. - $100",
+    "statement": "There exists some constant $c>0$ such that $$R(C_4,K_n) \\ll n^{2-c}.$$",
+    "tags": [
+      "graph theory",
+      "ramsey theory"
+    ],
+    "citation_keys": [
+      "Er78",
+      "Er81",
+      "Er84d"
+    ],
+    "citation_keys_full": [
+      "[Er78,p.34]",
+      "[Er81]",
+      "[Er84d]"
+    ]
+  },
+  {
+    "number": 163,
+    "url": "https://www.erdosproblems.com/163",
+    "status": "solved",
+    "prize": "PROVED This has been solved in the affirmative.",
+    "statement": "For any $d\\geq 1$ if $H$ is a graph such that every subgraph contains a vertex of degree at most $d$ then $R(H)\\ll_d n$.",
+    "tags": [
+      "graph theory",
+      "ramsey theory"
+    ],
+    "citation_keys": [
+      "BuEr75",
+      "Er82e"
+    ],
+    "citation_keys_full": [
+      "[BuEr75]",
+      "[Er82e]"
+    ]
+  },
+  {
+    "number": 165,
+    "url": "https://www.erdosproblems.com/165",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation. - $250",
+    "statement": "Give an asymptotic formula for $R(3,k)$.",
+    "tags": [
+      "graph theory",
+      "ramsey theory"
+    ],
+    "citation_keys": [
+      "Er61",
+      "Er71",
+      "Er78",
+      "Er90b",
+      "Er93",
+      "Er97c"
+    ],
+    "citation_keys_full": [
+      "[Er61]",
+      "[Er71]",
+      "[Er78,p.34]",
+      "[Er90b]",
+      "[Er93,p.339]",
+      "[Er97c]"
+    ]
+  },
+  {
+    "number": 166,
+    "url": "https://www.erdosproblems.com/166",
+    "status": "solved",
+    "prize": "PROVED This has been solved in the affirmative. - $250",
+    "statement": "Prove that\\[R(4,k) \\gg \\frac{k^3}{(\\log k)^{O(1)}}.\\]",
+    "tags": [
+      "graph theory",
+      "ramsey theory"
+    ],
+    "citation_keys": [
+      "Er90b",
+      "Er91",
+      "Er93",
+      "Er97c",
+      "Va99"
+    ],
+    "citation_keys_full": [
+      "[Er90b]",
+      "[Er91]",
+      "[Er93,p.339]",
+      "[Er97c]",
+      "[Va99,3.51]"
+    ]
+  },
+  {
+    "number": 167,
+    "url": "https://www.erdosproblems.com/167",
+    "status": "open",
+    "prize": "FALSIFIABLE Open, but could be disproved with a finite counterexample.",
+    "statement": "If $G$ is a graph with at most $k$ edge disjoint triangles then can $G$ be made triangle-free after removing at most $2k$ edges?",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "Er88"
+    ],
+    "citation_keys_full": [
+      "[Er88]"
+    ]
+  },
+  {
+    "number": 180,
+    "url": "https://www.erdosproblems.com/180",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "If $\\mathcal{F}$ is a finite set of finite graphs then $\\mathrm{ex}(n;\\mathcal{F})$ is the maximum number of edges a graph on $n$ vertices can have without containing any subgraphs from $\\mathcal{F}$. Note that it is trivial that $\\mathrm{ex}(n;\\mathcal{F})\\leq \\mathrm{ex}(n;G)$ for every $G\\in\\mathcal{F}$. Is it true that, for every $\\mathcal{F}$, there exists $G\\in\\mathcal{F}$ such that\\[\\mathrm{ex}(n;G)\\ll_{\\mathcal{F}}\\mathrm{ex}(n;\\mathcal{F})?\\]",
+    "tags": [
+      "graph theory",
+      "turan number"
+    ],
+    "citation_keys": [
+      "ErSi82"
+    ],
+    "citation_keys_full": [
+      "[ErSi82]"
+    ]
+  },
+  {
+    "number": 181,
+    "url": "https://www.erdosproblems.com/181",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Let $Q_n$ be the $n$-dimensional hypercube graph (so that $Q_n$ has $2^n$ vertices and $n2^{n-1}$ edges). Prove that\\[R(Q_n) \\ll 2^n.\\]",
+    "tags": [
+      "graph theory",
+      "ramsey theory"
+    ],
+    "citation_keys": [
+      "BuEr75",
+      "Er93"
+    ],
+    "citation_keys_full": [
+      "[BuEr75]",
+      "[Er93,p.346]"
+    ]
+  },
+  {
+    "number": 182,
+    "url": "https://www.erdosproblems.com/182",
+    "status": "solved",
+    "prize": "PROVED This has been solved in the affirmative. - $100",
+    "statement": "Let $k\\geq 3$. What is the maximum number of edges that a graph on $n$ vertices can contain if it does not have a $k$-regular subgraph? Is it $\\ll n^{1+o(1)}$?",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "Er75",
+      "Er78",
+      "Er81"
+    ],
+    "citation_keys_full": [
+      "[Er75]",
+      "[Er78,p.31]",
+      "[Er81]"
+    ]
+  },
+  {
+    "number": 183,
+    "url": "https://www.erdosproblems.com/183",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation. - $250",
+    "statement": "Let $R(3;k)$ be the minimal $n$ such that if the edges of $K_n$ are coloured with $k$ colours then there must exist a monochromatic triangle. Determine\\[\\lim_{k\\to \\infty}R(3;k)^{1/k}.\\]",
+    "tags": [
+      "graph theory",
+      "ramsey theory"
+    ],
+    "citation_keys": [
+      "Er61"
+    ],
+    "citation_keys_full": [
+      "[Er61]"
+    ]
+  },
+  {
+    "number": 184,
+    "url": "https://www.erdosproblems.com/184",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Any graph on $n$ vertices can be decomposed into $O(n)$ many edge-disjoint cycles and edges.",
+    "tags": [
+      "graph theory",
+      "cycles"
+    ],
+    "citation_keys": [
+      "EGP66",
+      "Er71",
+      "Er76",
+      "Er81",
+      "Er83b"
+    ],
+    "citation_keys_full": [
+      "[EGP66]",
+      "[Er71]",
+      "[Er76]",
+      "[Er81]",
+      "[Er83b]"
+    ]
+  },
+  {
+    "number": 426,
+    "url": "https://www.erdosproblems.com/426",
+    "status": "solved",
+    "prize": "DISPROVED (LEAN) This has been solved in the negative and the proof verified in Lean. - $25",
+    "statement": "We say $H$ is a unique subgraph of $G$ if there is exactly one way to find $H$ as a subgraph (not necessarily induced) of $G$. Is there a graph on $n$ vertices with\\[\\gg \\frac{2^{\\binom{n}{2}}}{n!}\\]many distinct unique subgraphs?",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "Er76b"
+    ],
+    "citation_keys_full": [
+      "[Er76b]"
+    ]
+  },
+  {
+    "number": 500,
+    "url": "https://www.erdosproblems.com/500",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation. - $500",
+    "statement": "What is $\\mathrm{ex}_3(n,K_4^3)$? That is, the largest number of $3$-edges which can placed on $n$ vertices so that there exists no $K_4^3$, a set of 4 vertices which is covered by all 4 possible $3$-edges.",
+    "tags": [
+      "graph theory",
+      "hypergraphs",
+      "turan number"
+    ],
+    "citation_keys": [
+      "Er61",
+      "Er71",
+      "Er74c",
+      "Er81"
+    ],
+    "citation_keys_full": [
+      "[Er61]",
+      "[Er71,p.104]",
+      "[Er74c,p.81]",
+      "[Er81]"
+    ]
+  },
+  {
+    "number": 518,
+    "url": "https://www.erdosproblems.com/518",
+    "status": "solved",
+    "prize": "PROVED This has been solved in the affirmative.",
+    "statement": "Is it true that, in any two-colouring of the edges of $K_n$, there exist $\\sqrt{n}$ monochromatic paths, all of the same colour, which cover all vertices?",
+    "tags": [
+      "graph theory",
+      "ramsey theory"
+    ],
+    "citation_keys": [
+      "ErGy95"
+    ],
+    "citation_keys_full": [
+      "[ErGy95]"
+    ]
+  },
+  {
+    "number": 533,
+    "url": "https://www.erdosproblems.com/533",
+    "status": "solved",
+    "prize": "DISPROVED This has been solved in the negative.",
+    "statement": "Let $\\delta>0$. If $n$ is sufficiently large and $G$ is a graph on $n$ vertices with no $K_5$ and at least $\\delta n^2$ edges then $G$ contains a set of $\\gg_\\delta n$ vertices containing no triangle.",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "EHSSS94",
+      "Er91"
+    ],
+    "citation_keys_full": [
+      "[Er91]",
+      "[EHSSS94,p.306]"
+    ]
+  },
+  {
+    "number": 544,
+    "url": "https://www.erdosproblems.com/544",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Show that\\[R(3,k+1)-R(3,k)\\to\\infty\\]as $k\\to \\infty$. Similarly, prove or disprove that\\[R(3,k+1)-R(3,k)=o(k).\\]",
+    "tags": [
+      "graph theory",
+      "ramsey theory"
+    ],
+    "citation_keys": [
+      "Er81c",
+      "Er93"
+    ],
+    "citation_keys_full": [
+      "[Er81c]",
+      "[Er93,p.339]"
+    ]
+  },
+  {
+    "number": 545,
+    "url": "https://www.erdosproblems.com/545",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Let $G$ be a graph with $m$ edges and no isolated vertices. Is the Ramsey number $R(G)$ maximised when $G$ is 'as complete as possible'? That is, if $m=\\binom{n}{2}+t$ edges with $0\\leq t<n$ then is\\[R(G)\\leq R(H),\\]where $H$ is the graph formed by connecting a new vertex to $t$ of the vertices of $K_n$?",
+    "tags": [
+      "graph theory",
+      "ramsey theory"
+    ],
+    "citation_keys": [
+      "Er84b",
+      "ErGr75"
+    ],
+    "citation_keys_full": [
+      "[ErGr75,p.526]",
+      "[Er84b,p.11]"
+    ]
+  },
+  {
+    "number": 546,
+    "url": "https://www.erdosproblems.com/546",
+    "status": "solved",
+    "prize": "PROVED This has been solved in the affirmative.",
+    "statement": "Let $G$ be a graph with no isolated vertices and $m$ edges. Is it true that\\[R(G) \\leq 2^{O(m^{1/2})}?\\]",
+    "tags": [
+      "graph theory",
+      "ramsey theory"
+    ],
+    "citation_keys": [
+      "Er84b"
+    ],
+    "citation_keys_full": [
+      "[Er84b,p.10]"
+    ]
+  },
+  {
+    "number": 547,
+    "url": "https://www.erdosproblems.com/547",
+    "status": "solved",
+    "prize": "DECIDABLE Resolved up to a finite check.",
+    "statement": "If $T$ is a tree on $n$ vertices then\\[R(T) \\leq 2n-2.\\]",
+    "tags": [
+      "graph theory",
+      "ramsey theory"
+    ],
+    "citation_keys": [
+      "BuEr76"
+    ],
+    "citation_keys_full": [
+      "[BuEr76]"
+    ]
+  },
+  {
+    "number": 548,
+    "url": "https://www.erdosproblems.com/548",
+    "status": "open",
+    "prize": "FALSIFIABLE Open, but could be disproved with a finite counterexample. - $100",
+    "statement": "Let $n\\geq k+1$. Every graph on $n$ vertices with at least $\\frac{k-1}{2}n+1$ edges contains every tree on $k+1$ vertices.",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "Er64c",
+      "Er74c",
+      "Er78",
+      "Er93",
+      "Va99"
+    ],
+    "citation_keys_full": [
+      "[Er64c]",
+      "[Er74c,p.78]",
+      "[Er78,p.30]",
+      "[Er93,p.345]",
+      "[Va99,3.55]"
+    ]
+  },
+  {
+    "number": 549,
+    "url": "https://www.erdosproblems.com/549",
+    "status": "solved",
+    "prize": "DISPROVED This has been solved in the negative.",
+    "statement": "If $T$ is a tree which is a bipartite graph with $k$ vertices and $2k$ vertices in the other class then\\[R(T)=4k-1.\\]",
+    "tags": [
+      "graph theory",
+      "ramsey theory"
+    ],
+    "citation_keys": [
+      "EFRS82"
+    ],
+    "citation_keys_full": [
+      "[EFRS82]"
+    ]
+  },
+  {
+    "number": 550,
+    "url": "https://www.erdosproblems.com/550",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Let $m_1\\leq\\cdots\\leq m_k$ and $n$ be sufficiently large. If $T$ is a tree on $n$ vertices and $G$ is the complete multipartite graph with vertex class sizes $m_1,\\ldots,m_k$ then prove that\\[R(T,G)\\leq (\\chi(G)-1)(R(T,K_{m_1,m_2})-1)+m_1.\\]",
+    "tags": [
+      "graph theory",
+      "ramsey theory"
+    ],
+    "citation_keys": [
+      "EFRS85"
+    ],
+    "citation_keys_full": [
+      "[EFRS85]"
+    ]
+  },
+  {
+    "number": 551,
+    "url": "https://www.erdosproblems.com/551",
+    "status": "solved",
+    "prize": "DECIDABLE Resolved up to a finite check.",
+    "statement": "Prove that\\[R(C_k,K_n)=(k-1)(n-1)+1\\]for $k\\geq n\\geq 3$ (except when $n=k=3$).",
+    "tags": [
+      "graph theory",
+      "ramsey theory"
+    ],
+    "citation_keys": [
+      "EFRS78"
+    ],
+    "citation_keys_full": [
+      "[EFRS78]"
+    ]
+  },
+  {
+    "number": 552,
+    "url": "https://www.erdosproblems.com/552",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation. - $100",
+    "statement": "Determine the Ramsey number\\[R(C_4,S_n),\\]where $S_n=K_{1,n}$ is the star on $n+1$ vertices. In particular, is it true that, for any $c>0$, there are infinitely many $n$ such that\\[R(C_4,S_n)\\leq n+\\sqrt{n}-c?\\]",
+    "tags": [
+      "graph theory",
+      "ramsey theory"
+    ],
+    "citation_keys": [
+      "BEFRS89",
+      "Er93",
+      "Er94b",
+      "Er95",
+      "Er96"
+    ],
+    "citation_keys_full": [
+      "[BEFRS89]",
+      "[Er93,p.345]",
+      "[Er94b]",
+      "[Er95]",
+      "[Er96]"
+    ]
+  },
+  {
+    "number": 553,
+    "url": "https://www.erdosproblems.com/553",
+    "status": "solved",
+    "prize": "PROVED This has been solved in the affirmative.",
+    "statement": "Let $R(3,3,n)$ denote the smallest integer $m$ such that if we $3$-colour the edges of $K_m$ then there is either a monochromatic triangle in one of the first two colours or a monochromatic $K_n$ in the third colour. Define $R(3,n)$ similarly but with two colours. Show that\\[\\frac{R(3,3,n)}{R(3,n)}\\to \\infty\\]as $n\\to \\infty$.",
+    "tags": [
+      "graph theory",
+      "ramsey theory"
+    ],
+    "citation_keys": [
+      "ErSo80"
+    ],
+    "citation_keys_full": [
+      "[ErSo80]"
+    ]
+  },
+  {
+    "number": 554,
+    "url": "https://www.erdosproblems.com/554",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Let $R_k(G)$ denote the minimal $m$ such that if the edges of $K_m$ are $k$-coloured then there is a monochromatic copy of $G$. Show that\\[\\lim_{k\\to \\infty}\\frac{R_k(C_{2n+1})}{R_k(K_3)}=0\\]for any $n\\geq 2$.",
+    "tags": [
+      "graph theory",
+      "ramsey theory"
+    ],
+    "citation_keys": [
+      "Er81c"
+    ],
+    "citation_keys_full": [
+      "[Er81c]"
+    ]
+  },
+  {
+    "number": 555,
+    "url": "https://www.erdosproblems.com/555",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Let $R_k(G)$ denote the minimal $m$ such that if the edges of $K_m$ are $k$-coloured then there is a monochromatic copy of $G$. Determine the value of\\[R_k(C_{2n}).\\]",
+    "tags": [
+      "graph theory",
+      "ramsey theory"
+    ],
+    "citation_keys": [
+      "Er81c"
+    ],
+    "citation_keys_full": [
+      "[Er81c]"
+    ]
+  },
+  {
+    "number": 556,
+    "url": "https://www.erdosproblems.com/556",
+    "status": "solved",
+    "prize": "DECIDABLE Resolved up to a finite check.",
+    "statement": "Let $R_3(G)$ denote the minimal $m$ such that if the edges of $K_m$ are $3$-coloured then there must be a monochromatic copy of $G$. Show that\\[R_3(C_n) \\leq 4n-3.\\]",
+    "tags": [
+      "graph theory",
+      "ramsey theory"
+    ],
+    "citation_keys": [
+      "Er81",
+      "Er81c"
+    ],
+    "citation_keys_full": [
+      "[Er81]",
+      "[Er81c]"
+    ]
+  },
+  {
+    "number": 557,
+    "url": "https://www.erdosproblems.com/557",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Let $R_k(G)$ denote the minimal $m$ such that if the edges of $K_m$ are $k$-coloured then there is a monochromatic copy of $G$. Is it true that\\[R_k(T)\\leq kn+O(1)\\]for any tree $T$ on $n$ vertices?",
+    "tags": [
+      "graph theory",
+      "ramsey theory"
+    ],
+    "citation_keys": [
+      "ErGr75"
+    ],
+    "citation_keys_full": [
+      "[ErGr75,p.516]"
+    ]
+  },
+  {
+    "number": 558,
+    "url": "https://www.erdosproblems.com/558",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Let $R_k(G)$ denote the minimal $m$ such that if the edges of $K_m$ are $k$-coloured then there is a monochromatic copy of $G$. Determine\\[R_k(K_{s,t})\\]where $K_{s,t}$ is the complete bipartite graph with $s$ vertices in one component and $t$ in the other.",
+    "tags": [
+      "graph theory",
+      "ramsey theory"
+    ],
+    "citation_keys": [
+      "Er81c"
+    ],
+    "citation_keys_full": [
+      "[Er81c]"
+    ]
+  },
+  {
+    "number": 559,
+    "url": "https://www.erdosproblems.com/559",
+    "status": "solved",
+    "prize": "DISPROVED This has been solved in the negative.",
+    "statement": "Let $\\hat{R}(G)$ denote the size Ramsey number, the minimal number of edges $m$ such that there is a graph $H$ with $m$ edges that is Ramsey for $G$. If $G$ has $n$ vertices and maximum degree $d$ then prove that\\[\\hat{R}(G)\\ll_d n.\\]",
+    "tags": [
+      "graph theory",
+      "ramsey theory"
+    ],
+    "citation_keys": [],
+    "citation_keys_full": []
+  },
+  {
+    "number": 560,
+    "url": "https://www.erdosproblems.com/560",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Let $\\hat{R}(G)$ denote the size Ramsey number, the minimal number of edges $m$ such that there is a graph $H$ with $m$ edges such that in any $2$-colouring of the edges of $H$ there is a monochromatic copy of $G$. Determine\\[\\hat{R}(K_{n,n}),\\]where $K_{n,n}$ is the complete bipartite graph with $n$ vertices in each component.",
+    "tags": [
+      "graph theory",
+      "ramsey theory"
+    ],
+    "citation_keys": [
+      "EFRS82"
+    ],
+    "citation_keys_full": [
+      "[EFRS82]"
+    ]
+  },
+  {
+    "number": 561,
+    "url": "https://www.erdosproblems.com/561",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Let $\\hat{R}(G)$ denote the size Ramsey number, the minimal number of edges $m$ such that there is a graph $H$ with $m$ edges such that in any $2$-colouring of the edges of $H$ there is a monochromatic copy of $G$. Let $F_1$ and $F_2$ be the union of stars. More precisely, let $F_1=\\cup_{i\\leq s} K_{1,n_i}$ and $F_2=\\cup_{j\\leq t} K_{1,m_j}$ with $n_1\\geq \\cdots \\geq n_s\\geq 1$ and $m_1\\geq \\cdots \\geq m_t\\geq 1$. Prove that\\[\\hat{R}(F_1,F_2) = \\sum_{2\\leq k\\leq s+t}l_k\\]where\\[l_k=\\max\\{n_i+m_j-1 : i+j=k\\}.\\]",
+    "tags": [
+      "graph theory",
+      "ramsey theory"
+    ],
+    "citation_keys": [
+      "BEFRS78"
+    ],
+    "citation_keys_full": [
+      "[BEFRS78]"
+    ]
+  },
+  {
+    "number": 562,
+    "url": "https://www.erdosproblems.com/562",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Let $R_r(n)$ denote the $r$-uniform hypergraph Ramsey number: the minimal $m$ such that if we $2$-colour all edges of the complete $r$-uniform hypergraph on $m$ vertices then there must be some monochromatic copy of the complete $r$-uniform hypergraph on $n$ vertices. Prove that, for $r\\geq 3$,\\[\\log_{r-1} R_r(n) \\asymp_r n,\\]where $\\log_{r-1}$ denotes the $(r-1)$-fold iterated logarithm. That is, does $R_r(n)$ grow like\\[2^{2^{\\cdots n}}\\]where the tower of exponentials has height $r-1$?",
+    "tags": [
+      "graph theory",
+      "ramsey theory",
+      "hypergraphs"
+    ],
+    "citation_keys": [
+      "EHR65"
+    ],
+    "citation_keys_full": [
+      "[EHR65]"
+    ]
+  },
+  {
+    "number": 563,
+    "url": "https://www.erdosproblems.com/563",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Let $F(n,\\alpha)$ denote the smallest $m$ such that there exists a $2$-colouring of the edges of $K_n$ so that every $X\\subseteq [n]$ with $\\lvert X\\rvert\\geq m$ contains more than $\\alpha \\binom{\\lvert X\\rvert}{2}$ many edges of each colour. Prove that, for every $0\\leq \\alpha< 1/2$,\\[F(n,\\alpha)\\sim c_\\alpha\\log n\\]for some constant $c_\\alpha$ depending only on $\\alpha$.",
+    "tags": [
+      "graph theory",
+      "ramsey theory",
+      "hypergraphs"
+    ],
+    "citation_keys": [
+      "Er90b"
+    ],
+    "citation_keys_full": [
+      "[Er90b,p.21]"
+    ]
+  },
+  {
+    "number": 564,
+    "url": "https://www.erdosproblems.com/564",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation. - $500",
+    "statement": "Let $R_3(n)$ be the minimal $m$ such that if the edges of the $3$-uniform hypergraph on $m$ vertices are $2$-coloured then there is a monochromatic copy of the complete $3$-uniform hypergraph on $n$ vertices. Is there some constant $c>0$ such that\\[R_3(n) \\geq 2^{2^{cn}}?\\]",
+    "tags": [
+      "graph theory",
+      "ramsey theory",
+      "hypergraphs"
+    ],
+    "citation_keys": [
+      "EHR65",
+      "Er81",
+      "Er97c"
+    ],
+    "citation_keys_full": [
+      "[EHR65]",
+      "[Er81]",
+      "[Er97c]"
+    ]
+  },
+  {
+    "number": 565,
+    "url": "https://www.erdosproblems.com/565",
+    "status": "solved",
+    "prize": "PROVED This has been solved in the affirmative.",
+    "statement": "Let $R^*(G)$ be the induced Ramsey number: the minimal $m$ such that there is a graph $H$ on $m$ vertices such that any $2$-colouring of the edges of $H$ contains an induced monochromatic copy of $G$. Is it true that\\[R^*(G) \\leq 2^{O(n)}\\]for any graph $G$ on $n$ vertices?",
+    "tags": [
+      "graph theory",
+      "ramsey theory"
+    ],
+    "citation_keys": [
+      "Er75d"
+    ],
+    "citation_keys_full": [
+      "[Er75d]"
+    ]
+  },
+  {
+    "number": 566,
+    "url": "https://www.erdosproblems.com/566",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Let $G$ be such that any subgraph on $k$ vertices has at most $2k-3$ edges. Is it true that, if $H$ has $m$ edges and no isolated vertices, then\\[R(G,H)\\ll m?\\]",
+    "tags": [
+      "graph theory",
+      "ramsey theory"
+    ],
+    "citation_keys": [
+      "EFRS93"
+    ],
+    "citation_keys_full": [
+      "[EFRS93]"
+    ]
+  },
+  {
+    "number": 567,
+    "url": "https://www.erdosproblems.com/567",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Let $G$ be either $Q_3$ or $K_{3,3}$ or $H_5$ (the last formed by adding two vertex-disjoint chords to $C_5$). Is it true that, if $H$ has $m$ edges and no isolated vertices, then\\[R(G,H)\\ll m?\\]",
+    "tags": [
+      "graph theory",
+      "ramsey theory"
+    ],
+    "citation_keys": [
+      "EFRS93",
+      "Er95"
+    ],
+    "citation_keys_full": [
+      "[EFRS93]",
+      "[Er95,p.177]"
+    ]
+  },
+  {
+    "number": 568,
+    "url": "https://www.erdosproblems.com/568",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Let $G$ be a graph such that $R(G,T_n)\\ll n$ for any tree $T_n$ on $n$ vertices and $R(G,K_n)\\ll n^2$. Is it true that, for any $H$ with $m$ edges and no isolated vertices,\\[R(G,H)\\ll m?\\]",
+    "tags": [
+      "graph theory",
+      "ramsey theory"
+    ],
+    "citation_keys": [
+      "EFRS93"
+    ],
+    "citation_keys_full": [
+      "[EFRS93]"
+    ]
+  },
+  {
+    "number": 569,
+    "url": "https://www.erdosproblems.com/569",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Let $k\\geq 1$. What is the best possible $c_k$ such that\\[R(C_{2k+1},H)\\leq c_k m\\]for any graph $H$ on $m$ edges without isolated vertices?",
+    "tags": [
+      "graph theory",
+      "ramsey theory"
+    ],
+    "citation_keys": [
+      "EFRS93"
+    ],
+    "citation_keys_full": [
+      "[EFRS93]"
+    ]
+  },
+  {
+    "number": 570,
+    "url": "https://www.erdosproblems.com/570",
+    "status": "solved",
+    "prize": "PROVED This has been solved in the affirmative.",
+    "statement": "Let $k\\geq 3$. Is it true that, if $m$ is sufficiently large, for any graph $H$ on $m$ edges without isolated vertices,\\[R(C_k,H) \\leq 2m+\\left\\lfloor\\frac{k-1}{2}\\right\\rfloor?\\]",
+    "tags": [
+      "graph theory",
+      "ramsey theory"
+    ],
+    "citation_keys": [
+      "EFRS93"
+    ],
+    "citation_keys_full": [
+      "[EFRS93,p.399]"
+    ]
+  },
+  {
+    "number": 571,
+    "url": "https://www.erdosproblems.com/571",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Show that for any rational $\\alpha \\in [1,2)$ there exists a bipartite graph $G$ such that\\[\\mathrm{ex}(n;G)\\asymp n^{\\alpha}.\\]",
+    "tags": [
+      "graph theory",
+      "turan number"
+    ],
+    "citation_keys": [
+      "Er74c",
+      "Er75",
+      "Er78",
+      "Er81",
+      "Er91",
+      "ErSi84"
+    ],
+    "citation_keys_full": [
+      "[Er74c,p.78]",
+      "[Er75]",
+      "[Er78,p.30]",
+      "[Er81]",
+      "[ErSi84]",
+      "[Er91]"
+    ]
+  },
+  {
+    "number": 572,
+    "url": "https://www.erdosproblems.com/572",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Show that for $k\\geq 3$\\[\\mathrm{ex}(n;C_{2k})\\gg n^{1+\\frac{1}{k}}.\\]",
+    "tags": [
+      "graph theory",
+      "turan number",
+      "cycles"
+    ],
+    "citation_keys": [
+      "Er64c",
+      "Er71",
+      "Er74c"
+    ],
+    "citation_keys_full": [
+      "[Er64c]",
+      "[Er71,p.103]",
+      "[Er74c,p.78]"
+    ]
+  },
+  {
+    "number": 573,
+    "url": "https://www.erdosproblems.com/573",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Is it true that\\[\\mathrm{ex}(n;\\{C_3,C_4\\})\\sim (n/2)^{3/2}?\\]",
+    "tags": [
+      "graph theory",
+      "turan number"
+    ],
+    "citation_keys": [
+      "Er71",
+      "Er75",
+      "Er93",
+      "ErSi82"
+    ],
+    "citation_keys_full": [
+      "[Er71,p.103]",
+      "[Er75]",
+      "[ErSi82]",
+      "[Er93,p.336]"
+    ]
+  },
+  {
+    "number": 574,
+    "url": "https://www.erdosproblems.com/574",
+    "status": "solved",
+    "prize": "DISPROVED This has been solved in the negative.",
+    "statement": "Is it true that, for $k\\geq 2$,\\[\\mathrm{ex}(n;\\{C_{2k-1},C_{2k}\\})=(1+o(1))(n/2)^{1+\\frac{1}{k}}.\\]",
+    "tags": [
+      "graph theory",
+      "turan number"
+    ],
+    "citation_keys": [
+      "ErSi82"
+    ],
+    "citation_keys_full": [
+      "[ErSi82]"
+    ]
+  },
+  {
+    "number": 575,
+    "url": "https://www.erdosproblems.com/575",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "If $\\mathcal{F}$ is a finite set of finite graphs then $\\mathrm{ex}(n;\\mathcal{F})$ is the maximum number of edges a graph on $n$ vertices can have without containing any subgraphs from $\\mathcal{F}$. Note that it is trivial that $\\mathrm{ex}(n;\\mathcal{F})\\leq \\mathrm{ex}(n;G)$ for every $G\\in\\mathcal{F}$. Is it true that, for every $\\mathcal{F}$, if there is a bipartite graph in $\\mathcal{F}$ then there exists some bipartite $G\\in\\mathcal{F}$ such that\\[\\mathrm{ex}(n;G)\\ll_{\\mathcal{F}}\\mathrm{ex}(n;\\mathcal{F})?\\]",
+    "tags": [
+      "graph theory",
+      "turan number"
+    ],
+    "citation_keys": [
+      "ErSi82"
+    ],
+    "citation_keys_full": [
+      "[ErSi82]"
+    ]
+  },
+  {
+    "number": 576,
+    "url": "https://www.erdosproblems.com/576",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Let $Q_k$ be the $k$-dimensional hypercube graph (so that $Q_k$ has $2^k$ vertices and $k2^{k-1}$ edges). Determine the behaviour of\\[\\mathrm{ex}(n;Q_k).\\]",
+    "tags": [
+      "graph theory",
+      "turan number"
+    ],
+    "citation_keys": [
+      "Er64c",
+      "Er74c",
+      "Er75",
+      "Er81",
+      "Er93",
+      "ErSi70"
+    ],
+    "citation_keys_full": [
+      "[Er64c]",
+      "[ErSi70,p.378]",
+      "[Er74c,p.78]",
+      "[Er75]",
+      "[Er81]",
+      "[Er93,p.334]"
+    ]
+  },
+  {
+    "number": 577,
+    "url": "https://www.erdosproblems.com/577",
+    "status": "solved",
+    "prize": "PROVED This has been solved in the affirmative.",
+    "statement": "If $G$ is a graph with $4k$ vertices and minimum degree at least $2k$ then $G$ contains $k$ vertex-disjoint $4$-cycles.",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "Er90c"
+    ],
+    "citation_keys_full": [
+      "[Er90c]"
+    ]
+  },
+  {
+    "number": 578,
+    "url": "https://www.erdosproblems.com/578",
+    "status": "solved",
+    "prize": "PROVED This has been solved in the affirmative.",
+    "statement": "If $G$ is a random graph on $2^d$ vertices, including each edge with probability $1/2$, then $G$ almost surely contains a copy of $Q_d$ (the $d$-dimensional hypercube with $2^d$ vertices and $d2^{d-1}$ many edges).",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "Er90c"
+    ],
+    "citation_keys_full": [
+      "[Er90c]"
+    ]
+  },
+  {
+    "number": 579,
+    "url": "https://www.erdosproblems.com/579",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Let $\\delta>0$. If $n$ is sufficiently large and $G$ is a graph on $n$ vertices with no $K_{2,2,2}$ and at least $\\delta n^2$ edges then $G$ contains an independent set of size $\\gg_\\delta n$.",
+    "tags": [
+      "graph theory",
+      "turan number"
+    ],
+    "citation_keys": [
+      "EHSS83",
+      "Er90",
+      "Er91",
+      "Er93"
+    ],
+    "citation_keys_full": [
+      "[EHSS83]",
+      "[Er90]",
+      "[Er91]",
+      "[Er93,p.340]"
+    ]
+  },
+  {
+    "number": 580,
+    "url": "https://www.erdosproblems.com/580",
+    "status": "open",
+    "prize": "DECIDABLE Resolved up to a finite check.",
+    "statement": "Let $G$ be a graph on $n$ vertices such that at least $n/2$ vertices have degree at least $n/2$. Must $G$ contain every tree on at most $n/2$ vertices?",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "EFLS95"
+    ],
+    "citation_keys_full": [
+      "[EFLS95]"
+    ]
+  },
+  {
+    "number": 581,
+    "url": "https://www.erdosproblems.com/581",
+    "status": "solved",
+    "prize": "SOLVED This has been resolved in some other way than a proof or disproof.",
+    "statement": "Let $f(m)$ be the maximal $k$ such that a triangle-free graph on $m$ edges must contain a bipartite graph with $k$ edges. Determine $f(m)$.",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "CEG79"
+    ],
+    "citation_keys_full": [
+      "[CEG79]"
+    ]
+  },
+  {
+    "number": 582,
+    "url": "https://www.erdosproblems.com/582",
+    "status": "solved",
+    "prize": "PROVED (LEAN) This has been solved in the affirmative and the proof verified in Lean. - $100",
+    "statement": "Does there exist a graph $G$ which contains no $K_4$, and yet any $2$-colouring of the edges produces a monochromatic $K_3$?",
+    "tags": [
+      "graph theory",
+      "ramsey theory"
+    ],
+    "citation_keys": [
+      "Er69b",
+      "Er75b",
+      "Er75d",
+      "ErHa67"
+    ],
+    "citation_keys_full": [
+      "[ErHa67]",
+      "[Er75b]",
+      "[Er69b]",
+      "[Er75d]"
+    ]
+  },
+  {
+    "number": 583,
+    "url": "https://www.erdosproblems.com/583",
+    "status": "open",
+    "prize": "FALSIFIABLE Open, but could be disproved with a finite counterexample.",
+    "statement": "Every connected graph on $n$ vertices can be partitioned into at most $\\lceil n/2\\rceil$ edge-disjoint paths.",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "Er71"
+    ],
+    "citation_keys_full": [
+      "[Er71,p.101]"
+    ]
+  },
+  {
+    "number": 584,
+    "url": "https://www.erdosproblems.com/584",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Let $G$ be a graph with $n$ vertices and $\\delta n^{2}$ edges. Are there subgraphs $H_1,H_2\\subseteq G$ such that $H_1$ has $\\gg \\delta^3n^2$ edges and every two edges in $H_1$ are contained in a cycle of length at most $6$, and furthermore if two edges share a vertex they are on a cycle of length $4$, and $H_2$ has $\\gg \\delta^2n^2$ edges and every two edges in $H_2$ are contained in a cycle of length at most $8$.",
+    "tags": [
+      "graph theory",
+      "cycles"
+    ],
+    "citation_keys": [
+      "DER84",
+      "DuEr82"
+    ],
+    "citation_keys_full": [
+      "[DuEr82]",
+      "[DER84]"
+    ]
+  },
+  {
+    "number": 585,
+    "url": "https://www.erdosproblems.com/585",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "What is the maximum number of edges that a graph on $n$ vertices can have if it does not contain two edge-disjoint cycles with the same vertex set?",
+    "tags": [
+      "graph theory",
+      "cycles"
+    ],
+    "citation_keys": [
+      "Er76b"
+    ],
+    "citation_keys_full": [
+      "[Er76b]"
+    ]
+  },
+  {
+    "number": 593,
+    "url": "https://www.erdosproblems.com/593",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation. - $500",
+    "statement": "Characterize those finite 3-uniform hypergraphs which appear in every 3-uniform hypergraph of chromatic number $>\\aleph_0$.",
+    "tags": [
+      "set theory",
+      "graph theory",
+      "hypergraphs",
+      "chromatic number"
+    ],
+    "citation_keys": [
+      "Er95d"
+    ],
+    "citation_keys_full": [
+      "[Er95d]"
+    ]
+  },
+  {
+    "number": 594,
+    "url": "https://www.erdosproblems.com/594",
+    "status": "solved",
+    "prize": "PROVED This has been solved in the affirmative.",
+    "statement": "Does every graph $G$ with chromatic number $\\geq \\aleph_1$ contain all sufficiently large odd cycles?",
+    "tags": [
+      "graph theory",
+      "set theory"
+    ],
+    "citation_keys": [
+      "Er69b",
+      "ErHa66"
+    ],
+    "citation_keys_full": [
+      "[ErHa66]",
+      "[Er69b]"
+    ]
+  },
+  {
+    "number": 595,
+    "url": "https://www.erdosproblems.com/595",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation. - $250",
+    "statement": "Is there an infinite graph $G$ which contains no $K_4$ and is not the union of countably many triangle-free graphs?",
+    "tags": [
+      "graph theory",
+      "set theory"
+    ],
+    "citation_keys": [
+      "Er87"
+    ],
+    "citation_keys_full": [
+      "[Er87]"
+    ]
+  },
+  {
+    "number": 596,
+    "url": "https://www.erdosproblems.com/596",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "For which graphs $G_1,G_2$ is it true that for every $n\\geq 1$ there is a graph $H$ without a $G_1$ but if the edges of $H$ are $n$-coloured then there is a monochromatic copy of $G_2$, and yet for every graph $H$ without a $G_1$ there is an $\\aleph_0$-colouring of the edges of $H$ without a monochromatic $G_2$.",
+    "tags": [
+      "graph theory",
+      "ramsey theory",
+      "set theory"
+    ],
+    "citation_keys": [
+      "Er87"
+    ],
+    "citation_keys_full": [
+      "[Er87]"
+    ]
+  },
+  {
+    "number": 597,
+    "url": "https://www.erdosproblems.com/597",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Let $G$ be a graph on at most $\\aleph_1$ vertices which contains no $K_4$ and no $K_{\\aleph_0,\\aleph_0}$ (the complete bipartite graph with $\\aleph_0$ vertices in each class). Is it true that\\[\\omega_1^2 \\to (\\omega_1\\omega, G)^2?\\]What about finite $G$?",
+    "tags": [
+      "graph theory",
+      "ramsey theory",
+      "set theory"
+    ],
+    "citation_keys": [
+      "Er87",
+      "Va99"
+    ],
+    "citation_keys_full": [
+      "[Er87]",
+      "[Va99,7.84]"
+    ]
+  },
+  {
+    "number": 599,
+    "url": "https://www.erdosproblems.com/599",
+    "status": "solved",
+    "prize": "PROVED This has been solved in the affirmative.",
+    "statement": "Let $G$ be a (possibly infinite) graph and $A,B$ be disjoint independent sets of vertices. Must there exist a family $P$ of disjoint paths between $A$ and $B$ and a set $S$ which contains exactly one vertex from each path in $P$, and such that every path between $A$ and $B$ contains at least one vertex from $S$?",
+    "tags": [
+      "graph theory",
+      "set theory"
+    ],
+    "citation_keys": [
+      "Er81",
+      "Er87"
+    ],
+    "citation_keys_full": [
+      "[Er81]",
+      "[Er87]"
+    ]
+  },
+  {
+    "number": 600,
+    "url": "https://www.erdosproblems.com/600",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Let $e(n,r)$ be minimal such that every graph on $n$ vertices with at least $e(n,r)$ edges, each edge contained in at least one triangle, must have an edge contained in at least $r$ triangles. Let $r\\geq 2$. Is it true that\\[e(n,r+1)-e(n,r)\\to \\infty\\]as $n\\to \\infty$? Is it true that\\[\\frac{e(n,r+1)}{e(n,r)}\\to 1\\]as $n\\to \\infty$?",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "Er87"
+    ],
+    "citation_keys_full": [
+      "[Er87]"
+    ]
+  },
+  {
+    "number": 601,
+    "url": "https://www.erdosproblems.com/601",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation. - $500",
+    "statement": "For which limit ordinals $\\alpha$ is it true that if $G$ is a graph with vertex set $\\alpha$ then $G$ must have either an infinite path or independent set on a set of vertices with order type $\\alpha$?",
+    "tags": [
+      "graph theory",
+      "set theory"
+    ],
+    "citation_keys": [
+      "EHM70",
+      "Er81",
+      "Er82e",
+      "Er87"
+    ],
+    "citation_keys_full": [
+      "[EHM70]",
+      "[Er81]",
+      "[Er82e]",
+      "[Er87]"
+    ]
+  },
+  {
+    "number": 608,
+    "url": "https://www.erdosproblems.com/608",
+    "status": "solved",
+    "prize": "DISPROVED This has been solved in the negative.",
+    "statement": "Let $G$ be a graph with $n$ vertices and $>n^2/4$ many edges. Are there at least $\\frac{2}{9}n^2$ edges of $G$ which are contained in a $C_5$?",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "EFR92",
+      "Er97d"
+    ],
+    "citation_keys_full": [
+      "[EFR92]",
+      "[Er97d]"
+    ]
+  },
+  {
+    "number": 609,
+    "url": "https://www.erdosproblems.com/609",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Let $f(n)$ be the minimal $m$ such that if the edges of $K_{2^n+1}$ are coloured with $n$ colours then there must be a monochromatic odd cycle of length at most $m$. Estimate $f(n)$.",
+    "tags": [
+      "graph theory",
+      "ramsey theory"
+    ],
+    "citation_keys": [
+      "ErGr75"
+    ],
+    "citation_keys_full": [
+      "[ErGr75]"
+    ]
+  },
+  {
+    "number": 610,
+    "url": "https://www.erdosproblems.com/610",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "For a graph $G$ let $\\tau(G)$ denote the minimal number of vertices that include at least one from each maximal clique of $G$ (sometimes called the clique transversal number). Estimate $\\tau(G)$. In particular, is it true that if $G$ has $n$ vertices then\\[\\tau(G) \\leq n-\\omega(n)\\sqrt{n}\\]for some $\\omega(n)\\to \\infty$, or even\\[\\tau(G) \\leq n-c\\sqrt{n\\log n}\\]for some absolute constant $c>0$?",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "EGT92",
+      "Er94",
+      "Er99"
+    ],
+    "citation_keys_full": [
+      "[EGT92]",
+      "[Er94]",
+      "[Er99]"
+    ]
+  },
+  {
+    "number": 611,
+    "url": "https://www.erdosproblems.com/611",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "For a graph $G$ let $\\tau(G)$ denote the minimal number of vertices that include at least one from each maximal clique of $G$ (sometimes called the clique transversal number). Is it true that if all maximal cliques in $G$ have at least $cn$ vertices then $\\tau(G)=o_c(n)$? Similarly, estimate for $c>0$ the minimal $k_c(n)$ such that if every maximal clique in $G$ has at least $k_c(n)$ vertices then $\\tau(G)<(1-c)n$.",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "EGT92",
+      "Er94",
+      "Er99"
+    ],
+    "citation_keys_full": [
+      "[EGT92]",
+      "[Er94]",
+      "[Er99]"
+    ]
+  },
+  {
+    "number": 612,
+    "url": "https://www.erdosproblems.com/612",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Let $G$ be a connected graph with $n$ vertices, minimum degree $d$, and diameter $D$. Show if that $G$ contains no $K_{2r}$ and $(r-1)(3r+2)\\mid d$ then\\[D\\leq \\frac{2(r-1)(3r+2)}{2r^2-1}\\frac{n}{d}+O(1),\\]and if $G$ contains no $K_{2r+1}$ and $3r-1 \\mid d$ then\\[D\\leq \\frac{3r-1}{r}\\frac{n}{d}+O(1).\\]",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "EPPT89"
+    ],
+    "citation_keys_full": [
+      "[EPPT89]"
+    ]
+  },
+  {
+    "number": 613,
+    "url": "https://www.erdosproblems.com/613",
+    "status": "solved",
+    "prize": "DISPROVED (LEAN) This has been solved in the negative and the proof verified in Lean.",
+    "statement": "Let $n\\geq 3$ and $G$ be a graph with $\\binom{2n+1}{2}-\\binom{n}{2}-1$ edges. Must $G$ be the union of a bipartite graph and a graph with maximum degree less than $n$?",
+    "tags": [
+      "graph theory",
+      "ramsey"
+    ],
+    "citation_keys": [
+      "Er81e",
+      "Er91",
+      "Er93",
+      "Er99"
+    ],
+    "citation_keys_full": [
+      "[Er81e]",
+      "[Er91]",
+      "[Er93,p.345]",
+      "[Er99]"
+    ]
+  },
+  {
+    "number": 614,
+    "url": "https://www.erdosproblems.com/614",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Let $f(n,k)$ be minimal such that there is a graph with $n$ vertices and $f(n,k)$ edges where every set of $k+2$ vertices induces a subgraph with maximum degree at least $k$. Determine $f(n,k)$.",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "FRS97"
+    ],
+    "citation_keys_full": [
+      "[FRS97]"
+    ]
+  },
+  {
+    "number": 615,
+    "url": "https://www.erdosproblems.com/615",
+    "status": "solved",
+    "prize": "DISPROVED This has been solved in the negative.",
+    "statement": "Does there exist some constant $c>0$ such that if $G$ is a graph with $n$ vertices and $\\geq (1/8-c)n^2$ edges then $G$ must contain either a $K_4$ or an independent set on at least $n/\\log n$ vertices?",
+    "tags": [
+      "graph theory",
+      "ramsey theory"
+    ],
+    "citation_keys": [
+      "EHSSS93",
+      "Er91"
+    ],
+    "citation_keys_full": [
+      "[Er91]",
+      "[EHSSS93]"
+    ]
+  },
+  {
+    "number": 616,
+    "url": "https://www.erdosproblems.com/616",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Let $r\\geq 3$. For an $r$-uniform hypergraph $G$ let $\\tau(G)$ denote the covering number (or transversal number), the minimum size of a set of vertices which includes at least one from each edge in $G$. Determine the best possible $t$ such that, if $G$ is an $r$-uniform hypergraph $G$ where every subgraph $G'$ on at most $3r-3$ vertices has $\\tau(G')\\leq 1$, we have $\\tau(G)\\leq t$.",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "Er99"
+    ],
+    "citation_keys_full": [
+      "[Er99]"
+    ]
+  },
+  {
+    "number": 617,
+    "url": "https://www.erdosproblems.com/617",
+    "status": "open",
+    "prize": "FALSIFIABLE Open, but could be disproved with a finite counterexample.",
+    "statement": "Let $r\\geq 3$. If the edges of $K_{r^2+1}$ are $r$-coloured then there exist $r+1$ vertices with at least one colour missing on the edges of the induced $K_{r+1}$.",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "Er99",
+      "ErGy99"
+    ],
+    "citation_keys_full": [
+      "[ErGy99]",
+      "[Er99]"
+    ]
+  },
+  {
+    "number": 618,
+    "url": "https://www.erdosproblems.com/618",
+    "status": "solved",
+    "prize": "PROVED (LEAN) This has been solved in the affirmative and the proof verified in Lean.",
+    "statement": "For a triangle-free graph $G$ let $h_2(G)$ be the smallest number of edges that need to be added to $G$ so that it has diameter $2$ and is still triangle-free. Is it true that if $G$ has maximum degree $o(n^{1/2})$ then $h(G)=o(n^2)$?",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "EGR98",
+      "Er99"
+    ],
+    "citation_keys_full": [
+      "[EGR98]",
+      "[Er99]"
+    ]
+  },
+  {
+    "number": 619,
+    "url": "https://www.erdosproblems.com/619",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "For a triangle-free graph $G$ let $h_r(G)$ be the smallest number of edges that need to be added to $G$ so that it has diameter $r$ (while preserving the property of being triangle-free). Is it true that there exists a constant $c>0$ such that if $G$ is a connected graph on $n$ vertices then $h_4(G)<(1-c)n$?",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "EGR98",
+      "Er99"
+    ],
+    "citation_keys_full": [
+      "[EGR98]",
+      "[Er99]"
+    ]
+  },
+  {
+    "number": 620,
+    "url": "https://www.erdosproblems.com/620",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "If $G$ is a graph on $n$ vertices without a $K_4$ then how large a triangle-free induced subgraph must $G$ contain?",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "EGT92",
+      "Er99",
+      "ErRo62"
+    ],
+    "citation_keys_full": [
+      "[ErRo62]",
+      "[EGT92]",
+      "[Er99]"
+    ]
+  },
+  {
+    "number": 621,
+    "url": "https://www.erdosproblems.com/621",
+    "status": "solved",
+    "prize": "PROVED (LEAN) This has been solved in the affirmative and the proof verified in Lean.",
+    "statement": "Let $G$ be a graph on $n$ vertices, $\\alpha_1(G)$ be the maximum number of edges that contain at most one edge from every triangle, and $\\tau_1(G)$ be the minimum number of edges that contain at least one edge from every triangle. Is it true that\\[\\alpha_1(G)+\\tau_1(G) \\leq \\frac{n^2}{4}?\\]",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "EGT96",
+      "Er99"
+    ],
+    "citation_keys_full": [
+      "[EGT96]",
+      "[Er99]"
+    ]
+  },
+  {
+    "number": 622,
+    "url": "https://www.erdosproblems.com/622",
+    "status": "solved",
+    "prize": "PROVED This has been solved in the affirmative.",
+    "statement": "Let $G$ be a regular graph with $2n$ vertices and degree $n+1$. Must $G$ have $\\gg 2^{2n}$ subsets that are spanned by a cycle?",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "Er99"
+    ],
+    "citation_keys_full": [
+      "[Er99]"
+    ]
+  },
+  {
+    "number": 625,
+    "url": "https://www.erdosproblems.com/625",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation. - $1000",
+    "statement": "The cochromatic number of $G$, denoted by $\\zeta(G)$, is the minimum number of colours needed to colour the vertices of $G$ such that each colour class induces either a complete graph or empty graph. Let $\\chi(G)$ denote the chromatic number. If $G$ is a random graph with $n$ vertices and each edge included independently with probability $1/2$ then is it true that almost surely\\[\\chi(G) - \\zeta(G) \\to \\infty\\]as $n\\to \\infty$?",
+    "tags": [
+      "graph theory",
+      "chromatic number"
+    ],
+    "citation_keys": [
+      "ErGi93"
+    ],
+    "citation_keys_full": [
+      "[ErGi93]"
+    ]
+  },
+  {
+    "number": 626,
+    "url": "https://www.erdosproblems.com/626",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Let $k\\geq 4$ and $g_k(n)$ denote the largest $m$ such that there is a graph on $n$ vertices with chromatic number $k$ and girth $>m$ (i.e. contains no cycle of length $\\leq m$). Does\\[\\lim_{n\\to \\infty}\\frac{g_k(n)}{\\log n}\\]exist? Conversely, if $h^{(m)}(n)$ is the maximal chromatic number of a graph on $n$ vertices with girth $>m$ then does\\[\\lim_{n\\to \\infty}\\frac{\\log h^{(m)}(n)}{\\log n}\\]exist, and what is its value?",
+    "tags": [
+      "graph theory",
+      "chromatic number",
+      "cycles"
+    ],
+    "citation_keys": [
+      "Er59b",
+      "Er62b",
+      "Er69b"
+    ],
+    "citation_keys_full": [
+      "[Er59b]",
+      "[Er62b]",
+      "[Er69b]"
+    ]
+  },
+  {
+    "number": 627,
+    "url": "https://www.erdosproblems.com/627",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Let $\\omega(G)$ denote the clique number of $G$ and $\\chi(G)$ the chromatic number. If $f(n)$ is the maximum value of $\\chi(G)/\\omega(G)$, as $G$ ranges over all graphs on $n$ vertices, then does\\[\\lim_{n\\to\\infty}\\frac{f(n)}{n/(\\log_2n)^2}\\]exist?",
+    "tags": [
+      "graph theory",
+      "chromatic number"
+    ],
+    "citation_keys": [
+      "Er61d",
+      "Er67c",
+      "Er69b"
+    ],
+    "citation_keys_full": [
+      "[Er61d]",
+      "[Er67c]",
+      "[Er69b]"
+    ]
+  },
+  {
+    "number": 628,
+    "url": "https://www.erdosproblems.com/628",
+    "status": "open",
+    "prize": "FALSIFIABLE Open, but could be disproved with a finite counterexample.",
+    "statement": "Let $G$ be a graph with chromatic number $k$ containing no $K_k$. If $a,b\\geq 2$ and $a+b=k+1$ then must there exist two disjoint subgraphs of $G$ with chromatic numbers $\\geq a$ and $\\geq b$ respectively?",
+    "tags": [
+      "graph theory",
+      "chromatic number"
+    ],
+    "citation_keys": [
+      "Er68b"
+    ],
+    "citation_keys_full": [
+      "[Er68b]"
+    ]
+  },
+  {
+    "number": 629,
+    "url": "https://www.erdosproblems.com/629",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "The list chromatic number $\\chi_L(G)$ is defined to be the minimal $k$ such that for any assignment of a list of $k$ colours to each vertex of $G$ (perhaps different lists for different vertices) a colouring of each vertex by a colour on its list can be chosen such that adjacent vertices receive distinct colours. Determine the minimal number of vertices $n(k)$ of a bipartite graph $G$ such that $\\chi_L(G)>k$.",
+    "tags": [
+      "graph theory",
+      "chromatic number"
+    ],
+    "citation_keys": [
+      "ERT80"
+    ],
+    "citation_keys_full": [
+      "[ERT80]"
+    ]
+  },
+  {
+    "number": 630,
+    "url": "https://www.erdosproblems.com/630",
+    "status": "solved",
+    "prize": "PROVED This has been solved in the affirmative.",
+    "statement": "The list chromatic number $\\chi_L(G)$ is defined to be the minimal $k$ such that for any assignment of a list of $k$ colours to each vertex of $G$ (perhaps different lists for different vertices) a colouring of each vertex by a colour on its list can be chosen such that adjacent vertices receive distinct colours. Does every planar bipartite graph $G$ have $\\chi_L(G)\\leq 3$?",
+    "tags": [
+      "graph theory",
+      "chromatic number"
+    ],
+    "citation_keys": [
+      "ERT80"
+    ],
+    "citation_keys_full": [
+      "[ERT80]"
+    ]
+  },
+  {
+    "number": 631,
+    "url": "https://www.erdosproblems.com/631",
+    "status": "solved",
+    "prize": "PROVED This has been solved in the affirmative.",
+    "statement": "The list chromatic number $\\chi_L(G)$ is defined to be the minimal $k$ such that for any assignment of a list of $k$ colours to each vertex of $G$ (perhaps different lists for different vertices) a colouring of each vertex by a colour on its list can be chosen such that adjacent vertices receive distinct colours. Does every planar graph $G$ have $\\chi_L(G)\\leq 5$? Is this best possible?",
+    "tags": [
+      "graph theory",
+      "chromatic number"
+    ],
+    "citation_keys": [
+      "ERT80"
+    ],
+    "citation_keys_full": [
+      "[ERT80]"
+    ]
+  },
+  {
+    "number": 632,
+    "url": "https://www.erdosproblems.com/632",
+    "status": "solved",
+    "prize": "DISPROVED This has been solved in the negative.",
+    "statement": "A graph is $(a,b)$-choosable if for any assignment of a list of $a$ colours to each of its vertices there is a subset of $b$ colours from each list such that the subsets of adjacent vertices are disjoint. If $G$ is $(a,b)$-choosable then $G$ is $(am,bm)$-choosable for every integer $m\\geq 1$.",
+    "tags": [
+      "graph theory",
+      "chromatic number"
+    ],
+    "citation_keys": [
+      "ERT80"
+    ],
+    "citation_keys_full": [
+      "[ERT80]"
+    ]
+  },
+  {
+    "number": 636,
+    "url": "https://www.erdosproblems.com/636",
+    "status": "solved",
+    "prize": "PROVED This has been solved in the affirmative.",
+    "statement": "Suppose $G$ is a graph on $n$ vertices which contains no complete graph or independent set on $\\gg \\log n$ many vertices. Must $G$ contain $\\gg n^{5/2}$ induced subgraphs which pairwise differ in either the number of vertices or the number of edges?",
+    "tags": [
+      "graph theory",
+      "ramsey theory"
+    ],
+    "citation_keys": [
+      "Er93",
+      "Er97d"
+    ],
+    "citation_keys_full": [
+      "[Er93,p.346]",
+      "[Er97d]"
+    ]
+  },
+  {
+    "number": 637,
+    "url": "https://www.erdosproblems.com/637",
+    "status": "solved",
+    "prize": "PROVED This has been solved in the affirmative.",
+    "statement": "If $G$ is a graph on $n$ vertices which contains no complete graph or independent set on $\\gg \\log n$ vertices then $G$ contains an induced subgraph on $\\gg n$ vertices which contains $\\gg n^{1/2}$ distinct degrees.",
+    "tags": [
+      "graph theory",
+      "ramsey theory"
+    ],
+    "citation_keys": [
+      "Er97d"
+    ],
+    "citation_keys_full": [
+      "[Er97d]"
+    ]
+  },
+  {
+    "number": 638,
+    "url": "https://www.erdosproblems.com/638",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Let $S$ be a family of finite graphs such that for every $n$ there is some $G_n\\in S$ such that if the edges of $G_n$ are coloured with $n$ colours then there is a monochromatic triangle. Is it true that for every infinite cardinal $\\aleph$ there is a graph $G$ of which every finite subgraph is in $S$ and if the edges of $G$ are coloured with $\\aleph$ many colours then there is a monochromatic triangle.",
+    "tags": [
+      "graph theory",
+      "ramsey theory"
+    ],
+    "citation_keys": [
+      "Er97d"
+    ],
+    "citation_keys_full": [
+      "[Er97d]"
+    ]
+  },
+  {
+    "number": 639,
+    "url": "https://www.erdosproblems.com/639",
+    "status": "solved",
+    "prize": "PROVED This has been solved in the affirmative.",
+    "statement": "Is it true that if the edges of $K_n$ are 2-coloured then there are at most $n^2/4$ many edges which do not occur in a monochromatic triangle?",
+    "tags": [
+      "graph theory",
+      "ramsey theory"
+    ],
+    "citation_keys": [
+      "Er97d"
+    ],
+    "citation_keys_full": [
+      "[Er97d]"
+    ]
+  },
+  {
+    "number": 640,
+    "url": "https://www.erdosproblems.com/640",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Let $k\\geq 3$. Does there exist some $f(k)$ such that if a graph $G$ has chromatic number $\\geq f(k)$ then $G$ must contain some odd cycle whose vertices span a graph of chromatic number $\\geq k$?",
+    "tags": [
+      "graph theory",
+      "chromatic number"
+    ],
+    "citation_keys": [
+      "Er97d"
+    ],
+    "citation_keys_full": [
+      "[Er97d,p.84]"
+    ]
+  },
+  {
+    "number": 641,
+    "url": "https://www.erdosproblems.com/641",
+    "status": "solved",
+    "prize": "DISPROVED This has been solved in the negative.",
+    "statement": "Is there some function $f$ such that for all $k\\geq 1$ if a finite graph $G$ has chromatic number $\\geq f(k)$ then $G$ has $k$ edge disjoint cycles on the same set of vertices?",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "Er92b",
+      "Er97d"
+    ],
+    "citation_keys_full": [
+      "[Er92b]",
+      "[Er97d,p.84]"
+    ]
+  },
+  {
+    "number": 642,
+    "url": "https://www.erdosproblems.com/642",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Let $f(n)$ be the maximal number of edges in a graph on $n$ vertices such that all cycles have more vertices than chords. Is it true that $f(n)\\ll n$?",
+    "tags": [
+      "graph theory",
+      "cycles"
+    ],
+    "citation_keys": [
+      "CES96",
+      "Er97d"
+    ],
+    "citation_keys_full": [
+      "[CES96]",
+      "[Er97d,p.84]"
+    ]
+  },
+  {
+    "number": 643,
+    "url": "https://www.erdosproblems.com/643",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Let $f(n;t)$ be minimal such that if a $t$-uniform hypergraph on $n$ vertices contains at least $f(n;t)$ edges then there must be four edges $A,B,C,D$ such that\\[A\\cup B= C\\cup D\\]and\\[A\\cap B=C\\cap D=\\emptyset.\\]Estimate $f(n;t)$ - in particular, is it true that for $t\\geq 3$\\[f(n;t)=(1+o(1))\\binom{n}{t-1}?\\]",
+    "tags": [
+      "graph theory",
+      "hypergraphs"
+    ],
+    "citation_keys": [
+      "Er77b",
+      "Er97d"
+    ],
+    "citation_keys_full": [
+      "[Er77b]",
+      "[Er97d]"
+    ]
+  },
+  {
+    "number": 666,
+    "url": "https://www.erdosproblems.com/666",
+    "status": "solved",
+    "prize": "DISPROVED (LEAN) This has been solved in the negative and the proof verified in Lean.",
+    "statement": "Let $Q_n$ be the $n$-dimensional hypercube graph (so that $Q_n$ has $2^n$ vertices and $n2^{n-1}$ edges). Is it true that, for every $\\epsilon>0$, if $n$ is sufficiently large, every subgraph of $Q_n$ with\\[\\geq \\epsilon  n2^{n-1}\\]many edges contains a $C_6$?",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "Er91",
+      "Er92b",
+      "Er97f"
+    ],
+    "citation_keys_full": [
+      "[Er91]",
+      "[Er92b]",
+      "[Er97f]"
+    ]
+  },
+  {
+    "number": 667,
+    "url": "https://www.erdosproblems.com/667",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Let $p,q\\geq 1$ be fixed integers. We define $H(n)=H(N;p,q)$ to be the largest $m$ such that any graph on $n$ vertices where every set of $p$ vertices spans at least $q$ edges must contain a complete graph on $m$ vertices. Is\\[c(p,q)=\\liminf \\frac{\\log H(n)}{\\log n}\\]a strictly increasing function of $q$ for $1\\leq q\\leq \\binom{p-1}{2}+1$?",
+    "tags": [
+      "graph theory",
+      "ramsey theory"
+    ],
+    "citation_keys": [
+      "Er97f"
+    ],
+    "citation_keys_full": [
+      "[Er97f]"
+    ]
+  },
+  {
+    "number": 704,
+    "url": "https://www.erdosproblems.com/704",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Let $G_n$ be the unit distance graph in $\\mathbb{R}^n$, with two vertices joined by an edge if and only if the distance between them is $1$. Estimate the chromatic number $\\chi(G_n)$. Does it grow exponentially in $n$? Does\\[\\lim_{n\\to \\infty}\\chi(G_n)^{1/n}\\]exist?",
+    "tags": [
+      "graph theory",
+      "geometry",
+      "chromatic number"
+    ],
+    "citation_keys": [
+      "Er81"
+    ],
+    "citation_keys_full": [
+      "[Er81]"
+    ]
+  },
+  {
+    "number": 705,
+    "url": "https://www.erdosproblems.com/705",
+    "status": "solved",
+    "prize": "DISPROVED This has been solved in the negative.",
+    "statement": "Let $G$ be a finite unit distance graph in $\\mathbb{R}^2$ (i.e. the vertices are a finite collection of points in $\\mathbb{R}^2$ and there is an edge between two points if and only if the distance between them is $1$). Is there some $k$ such that if $G$ has girth $\\geq k$ (i.e. $G$ contains no cycles of length $<k$) then $\\chi(G)\\leq 3$?",
+    "tags": [
+      "graph theory",
+      "chromatic number"
+    ],
+    "citation_keys": [
+      "Er81"
+    ],
+    "citation_keys_full": [
+      "[Er81,p.27]"
+    ]
+  },
+  {
+    "number": 706,
+    "url": "https://www.erdosproblems.com/706",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Let $L(r)$ be such that if $G$ is a graph formed by taking a finite set of points $P$ in $\\mathbb{R}^2$ and some set $A\\subset (0,\\infty)$ of size $r$, where the vertex set is $P$ and there is an edge between two points if and only if their distance is a member of $A$, then $\\chi(G)\\leq L(r)$. Estimate $L(r)$. In particular, is it true that $L(r)\\leq r^{O(1)}$?",
+    "tags": [
+      "graph theory",
+      "chromatic number"
+    ],
+    "citation_keys": [
+      "Er81"
+    ],
+    "citation_keys_full": [
+      "[Er81]"
+    ]
+  },
+  {
+    "number": 712,
+    "url": "https://www.erdosproblems.com/712",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation. - $500",
+    "statement": "Determine, for any $k>r>2$, the value of\\[\\frac{\\mathrm{ex}_r(n,K_k^r)}{\\binom{n}{r}},\\]where $\\mathrm{ex}_r(n,K_k^r)$ is the largest number of $r$-edges which can placed on $n$ vertices so that there exists no set of $k$ vertices which is covered by all $\\binom{k}{r}$ possible $r$-edges.",
+    "tags": [
+      "graph theory",
+      "turan number",
+      "hypergraphs"
+    ],
+    "citation_keys": [
+      "Er71",
+      "Er74c",
+      "Er81"
+    ],
+    "citation_keys_full": [
+      "[Er71,p.104]",
+      "[Er74c,p.76]",
+      "[Er81]"
+    ]
+  },
+  {
+    "number": 713,
+    "url": "https://www.erdosproblems.com/713",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation. - $500",
+    "statement": "Is it true that, for every bipartite graph $G$, there exists some $\\alpha\\in [1,2)$ and $c>0$ such that\\[\\mathrm{ex}(n;G)\\sim cn^\\alpha?\\]Must $\\alpha$ be rational?",
+    "tags": [
+      "graph theory",
+      "turan number"
+    ],
+    "citation_keys": [
+      "Er74c",
+      "Er75",
+      "Er78",
+      "Er81",
+      "Er91",
+      "ErSi70",
+      "ErSi84"
+    ],
+    "citation_keys_full": [
+      "[ErSi70,p.379]",
+      "[Er74c,p.78]",
+      "[Er75]",
+      "[Er78,p.30]",
+      "[Er81,p.30]",
+      "[ErSi84]",
+      "[Er91]"
+    ]
+  },
+  {
+    "number": 714,
+    "url": "https://www.erdosproblems.com/714",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Is it true that\\[\\mathrm{ex}(n; K_{r,r}) \\gg n^{2-1/r}?\\]",
+    "tags": [
+      "graph theory",
+      "turan number"
+    ],
+    "citation_keys": [
+      "Er64c",
+      "Er67b",
+      "Er69",
+      "Er71",
+      "Er74c",
+      "Er75",
+      "Er81",
+      "Er93"
+    ],
+    "citation_keys_full": [
+      "[Er64c]",
+      "[Er67b]",
+      "[Er69]",
+      "[Er71,p.103]",
+      "[Er74c,p.77]",
+      "[Er75]",
+      "[Er81]",
+      "[Er93,p.334]"
+    ]
+  },
+  {
+    "number": 715,
+    "url": "https://www.erdosproblems.com/715",
+    "status": "solved",
+    "prize": "PROVED This has been solved in the affirmative.",
+    "statement": "Does every regular graph of degree $4$ contain a regular subgraph of degree $3$? Is there any $r$ such that every regular graph of degree $r$ must contain a regular subgraph of degree $3$?",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "Er75",
+      "Er81"
+    ],
+    "citation_keys_full": [
+      "[Er75]",
+      "[Er81]"
+    ]
+  },
+  {
+    "number": 716,
+    "url": "https://www.erdosproblems.com/716",
+    "status": "solved",
+    "prize": "PROVED This has been solved in the affirmative.",
+    "statement": "Let $\\mathcal{F}$ be the family of all $3$-uniform hypergraphs with $6$ vertices and $3$ $3$-edges. Is it true that\\[\\mathrm{ex}_3(n,\\mathcal{F})=o(n^2)?\\]",
+    "tags": [
+      "graph theory",
+      "hypergraphs"
+    ],
+    "citation_keys": [
+      "BES73",
+      "Er71",
+      "Er74c",
+      "Er75",
+      "Er75b",
+      "Er81"
+    ],
+    "citation_keys_full": [
+      "[Er71,p.105]",
+      "[BES73]",
+      "[Er74c,p.80]",
+      "[Er75]",
+      "[Er75b,p.299]",
+      "[Er81,p.30]"
+    ]
+  },
+  {
+    "number": 717,
+    "url": "https://www.erdosproblems.com/717",
+    "status": "solved",
+    "prize": "PROVED This has been solved in the affirmative.",
+    "statement": "Let $G$ be a graph on $n$ vertices with chromatic number $\\chi(G)$ and let $\\sigma(G)$ be the maximal $k$ such that $G$ contains a subdivision of $K_k$. Is it true that\\[\\chi(G) \\ll \\frac{n^{1/2}}{\\log n}\\sigma(G)?\\]",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "Er81",
+      "ErFa81"
+    ],
+    "citation_keys_full": [
+      "[ErFa81]",
+      "[Er81]"
+    ]
+  },
+  {
+    "number": 718,
+    "url": "https://www.erdosproblems.com/718",
+    "status": "solved",
+    "prize": "PROVED This has been solved in the affirmative.",
+    "statement": "Is there some constant $C>0$ such that any graph on $n$ vertices with $\\geq Cr^2n$ edges contains a subdivision of $K_r$?",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "Er81"
+    ],
+    "citation_keys_full": [
+      "[Er81]"
+    ]
+  },
+  {
+    "number": 719,
+    "url": "https://www.erdosproblems.com/719",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Let $\\mathrm{ex}_r(n;K_{r+1}^r)$ be the maximum number of $r$-edges that can be placed on $n$ vertices without forming a $K_{r+1}^r$ (the $r$-uniform complete graph on $r+1$ vertices). Is every $r$-hypergraph $G$ on $n$ vertices the union of at most $\\mathrm{ex}_{r}(n;K_{r+1}^r)$ many copies of $K_r^r$ and $K_{r+1}^r$, no two of which share a $K_r^r$?",
+    "tags": [
+      "graph theory",
+      "hypergraphs"
+    ],
+    "citation_keys": [
+      "Er81"
+    ],
+    "citation_keys_full": [
+      "[Er81]"
+    ]
+  },
+  {
+    "number": 720,
+    "url": "https://www.erdosproblems.com/720",
+    "status": "solved",
+    "prize": "PROVED This has been solved in the affirmative. - $100",
+    "statement": "Let $\\hat{R}(G)$ denote the size Ramsey number, the minimal number of edges $m$ such that there is a graph $H$ with $m$ edges such that in any $2$-colouring of the edges of $H$ there is a monochromatic copy of $G$. Is it true that, if $P_n$ is the path of length $n$, then\\[\\hat{R}(P_n)/n\\to \\infty\\]and\\[\\hat{R}(P_n)/n^2 \\to 0?\\]Is it true that, if $C_n$ is the cycle with $n$ edges, then\\[\\hat{R}(C_n) =o(n^2)?\\]",
+    "tags": [
+      "graph theory",
+      "ramsey theory"
+    ],
+    "citation_keys": [
+      "EFRS78b",
+      "Er76c",
+      "Er78",
+      "Er81",
+      "Er82e"
+    ],
+    "citation_keys_full": [
+      "[Er76c,p.5]",
+      "[EFRS78b]",
+      "[Er78,p.33]",
+      "[Er81]",
+      "[Er82e]"
+    ]
+  },
+  {
+    "number": 736,
+    "url": "https://www.erdosproblems.com/736",
+    "status": "open",
+    "prize": "NOT PROVABLE Open in general, but there exist models of set theory where the result is false.",
+    "statement": "Let $G$ be a graph with chromatic number $\\aleph_1$. Is there, for every cardinal number $m$, some graph $G_m$ of chromatic number $m$ such that every finite subgraph of $G_m$ is a subgraph of $G$?",
+    "tags": [
+      "graph theory",
+      "chromatic number"
+    ],
+    "citation_keys": [
+      "Er81",
+      "Er93"
+    ],
+    "citation_keys_full": [
+      "[Er81]",
+      "[Er93,p.343]"
+    ]
+  },
+  {
+    "number": 737,
+    "url": "https://www.erdosproblems.com/737",
+    "status": "solved",
+    "prize": "PROVED This has been solved in the affirmative.",
+    "statement": "Let $G$ be a graph with chromatic number $\\aleph_1$. Must there exist an edge $e$ such that, for all large $n$, $G$ contains a cycle of length $n$ containing $e$?",
+    "tags": [
+      "graph theory",
+      "chromatic number"
+    ],
+    "citation_keys": [
+      "EHS74",
+      "Er81"
+    ],
+    "citation_keys_full": [
+      "[EHS74]",
+      "[Er81]"
+    ]
+  },
+  {
+    "number": 738,
+    "url": "https://www.erdosproblems.com/738",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "If $G$ has infinite chromatic number and is triangle-free (contains no $K_3$) then must $G$ contain every tree as an induced subgraph?",
+    "tags": [
+      "graph theory",
+      "chromatic number"
+    ],
+    "citation_keys": [
+      "Er81"
+    ],
+    "citation_keys_full": [
+      "[Er81]"
+    ]
+  },
+  {
+    "number": 739,
+    "url": "https://www.erdosproblems.com/739",
+    "status": "open",
+    "prize": "NOT PROVABLE Open in general, but there exist models of set theory where the result is false.",
+    "statement": "Let $\\mathfrak{m}$ be an infinite cardinal and $G$ be a graph with chromatic number $\\mathfrak{m}$. Is it true that, for every infinite cardinal $\\mathfrak{n}< \\mathfrak{m}$, there exists a subgraph of $G$ with chromatic number $\\mathfrak{n}$?",
+    "tags": [
+      "graph theory",
+      "chromatic number"
+    ],
+    "citation_keys": [
+      "Er81"
+    ],
+    "citation_keys_full": [
+      "[Er81]"
+    ]
+  },
+  {
+    "number": 740,
+    "url": "https://www.erdosproblems.com/740",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Let $\\mathfrak{m}$ be an infinite cardinal and $G$ be a graph with chromatic number $\\mathfrak{m}$. Let $r\\geq 1$. Must $G$ contain a subgraph of chromatic number $\\mathfrak{m}$ which does not contain any odd cycle of length $\\leq r$?",
+    "tags": [
+      "graph theory",
+      "chromatic number"
+    ],
+    "citation_keys": [
+      "Er69b",
+      "Er71",
+      "Er81",
+      "Er95d"
+    ],
+    "citation_keys_full": [
+      "[Er69b]",
+      "[Er71,p.100]",
+      "[Er81]",
+      "[Er95d]"
+    ]
+  },
+  {
+    "number": 742,
+    "url": "https://www.erdosproblems.com/742",
+    "status": "solved",
+    "prize": "DECIDABLE Resolved up to a finite check.",
+    "statement": "Let $G$ be a graph on $n$ vertices with diameter $2$, such that deleting any edge increases the diameter of $G$. Is it true that $G$ has at most $n^2/4$ edges?",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "Er81"
+    ],
+    "citation_keys_full": [
+      "[Er81]"
+    ]
+  },
+  {
+    "number": 743,
+    "url": "https://www.erdosproblems.com/743",
+    "status": "open",
+    "prize": "FALSIFIABLE Open, but could be disproved with a finite counterexample.",
+    "statement": "Let $T_2,\\ldots,T_n$ be a collection of trees such that $T_k$ has $k$ vertices. Can we always write $K_n$ as the edge disjoint union of the $T_k$?",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "Er81"
+    ],
+    "citation_keys_full": [
+      "[Er81]"
+    ]
+  },
+  {
+    "number": 744,
+    "url": "https://www.erdosproblems.com/744",
+    "status": "solved",
+    "prize": "DISPROVED This has been solved in the negative.",
+    "statement": "Let $k$ be a large fixed constant. Let $f_k(n)$ be the minimal $m$ such that there exists a graph $G$ on $n$ vertices with chromatic number $k$, such that every proper subgraph has chromatic number $<k$, and $G$ can be made bipartite by deleting $m$ edges. Is it true that $f_k(n)\\to \\infty$ as $n\\to \\infty$? In particular, is it true that $f_4(n) \\gg \\log n$?",
+    "tags": [
+      "graph theory",
+      "chromatic number"
+    ],
+    "citation_keys": [
+      "EHS82",
+      "Er81"
+    ],
+    "citation_keys_full": [
+      "[Er81]",
+      "[EHS82]"
+    ]
+  },
+  {
+    "number": 745,
+    "url": "https://www.erdosproblems.com/745",
+    "status": "solved",
+    "prize": "PROVED This has been solved in the affirmative.",
+    "statement": "Describe the size of the second largest component of the random graph on $n$ vertices, where each edge is included independently with probability $1/n$.",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "Er81"
+    ],
+    "citation_keys_full": [
+      "[Er81]"
+    ]
+  },
+  {
+    "number": 746,
+    "url": "https://www.erdosproblems.com/746",
+    "status": "solved",
+    "prize": "PROVED This has been solved in the affirmative.",
+    "statement": "Is it true that, almost surely, a random graph on $n$ vertices with $\\geq (\\tfrac{1}{2}+\\epsilon)n\\log n$ edges is Hamiltonian?",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "Er71",
+      "Er81",
+      "Er82e"
+    ],
+    "citation_keys_full": [
+      "[Er71,p.98]",
+      "[Er81,p.16]",
+      "[Er82e,p.69]"
+    ]
+  },
+  {
+    "number": 750,
+    "url": "https://www.erdosproblems.com/750",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Let $f(m)$ be some function such that $f(m)\\to \\infty$ as $m\\to \\infty$. Does there exist a graph $G$ of infinite chromatic number such that every subgraph on $m$ vertices contains an independent set of size at least $\\frac{m}{2}-f(m)$?",
+    "tags": [
+      "graph theory",
+      "chromatic number"
+    ],
+    "citation_keys": [
+      "Er94b",
+      "Er95d"
+    ],
+    "citation_keys_full": [
+      "[Er94b]",
+      "[Er95d]"
+    ]
+  },
+  {
+    "number": 751,
+    "url": "https://www.erdosproblems.com/751",
+    "status": "solved",
+    "prize": "DISPROVED (LEAN) This has been solved in the negative and the proof verified in Lean.",
+    "statement": "Let $G$ be a graph with chromatic number $\\chi(G)=4$. If $m_1<m_2<\\cdots$ are the lengths of the cycles in $G$ then can $\\min(m_{i+1}-m_i)$ be arbitrarily large? Can this happen if the girth of $G$ is large?",
+    "tags": [
+      "graph theory",
+      "chromatic number"
+    ],
+    "citation_keys": [
+      "Er94b"
+    ],
+    "citation_keys_full": [
+      "[Er94b]"
+    ]
+  },
+  {
+    "number": 752,
+    "url": "https://www.erdosproblems.com/752",
+    "status": "solved",
+    "prize": "PROVED This has been solved in the affirmative.",
+    "statement": "Let $G$ be a graph with minimum degree $k$ and girth $>2s$ (i.e. $G$ contains no cycles of length $\\leq 2s$). Must there be $\\gg k^s$ many distinct cycle lengths in $G$?",
+    "tags": [
+      "graph theory",
+      "cycles"
+    ],
+    "citation_keys": [
+      "Er92b",
+      "Er93",
+      "Er94b"
+    ],
+    "citation_keys_full": [
+      "[Er92b]",
+      "[Er93,p.346]",
+      "[Er94b]"
+    ]
+  },
+  {
+    "number": 753,
+    "url": "https://www.erdosproblems.com/753",
+    "status": "solved",
+    "prize": "DISPROVED (LEAN) This has been solved in the negative and the proof verified in Lean.",
+    "statement": "The list chromatic number $\\chi_L(G)$ is defined to be the minimal $k$ such that for any assignment of a list of $k$ colours to each vertex of $G$ (perhaps different lists for different vertices) a colouring of each vertex by a colour on its list can be chosen such that adjacent vertices receive distinct colours. Does there exist some constant $c>0$ such that\\[\\chi_L(G)+\\chi_L(G^c)> n^{1/2+c}\\]for every graph $G$ on $n$ vertices (where $G^c$ is the complement of $G$)?",
+    "tags": [
+      "graph theory",
+      "chromatic number"
+    ],
+    "citation_keys": [
+      "ERT80"
+    ],
+    "citation_keys_full": [
+      "[ERT80]"
+    ]
+  },
+  {
+    "number": 758,
+    "url": "https://www.erdosproblems.com/758",
+    "status": "solved",
+    "prize": "SOLVED This has been resolved in some other way than a proof or disproof.",
+    "statement": "The cochromatic number of $G$, denoted by $\\zeta(G)$, is the minimum number of colours needed to colour the vertices of $G$ such that each colour class induces either a complete graph or empty graph. Let $z(n)$ be the maximum value of $\\zeta(G)$ over all graphs $G$ with $n$ vertices. Determine $z(n)$ for small values of $z(n)$. In particular is it true that $z(12)=4$?",
+    "tags": [
+      "graph theory",
+      "chromatic number"
+    ],
+    "citation_keys": [
+      "ErGi93"
+    ],
+    "citation_keys_full": [
+      "[ErGi93]"
+    ]
+  },
+  {
+    "number": 759,
+    "url": "https://www.erdosproblems.com/759",
+    "status": "solved",
+    "prize": "SOLVED This has been resolved in some other way than a proof or disproof.",
+    "statement": "The cochromatic number of $G$, denoted by $\\zeta(G)$, is the minimum number of colours needed to colour the vertices of $G$ such that each colour class induces either a complete graph or empty graph. Let $z(S_n)$ be the maximum value of $\\zeta(G)$ over all graphs $G$ which can be embedded on $S_n$, the orientable surface of genus $n$. Determine the growth rate of $z(S_n)$.",
+    "tags": [
+      "graph theory",
+      "chromatic number"
+    ],
+    "citation_keys": [
+      "ErGi93"
+    ],
+    "citation_keys_full": [
+      "[ErGi93]"
+    ]
+  },
+  {
+    "number": 760,
+    "url": "https://www.erdosproblems.com/760",
+    "status": "solved",
+    "prize": "PROVED (LEAN) This has been solved in the affirmative and the proof verified in Lean.",
+    "statement": "The cochromatic number of $G$, denoted by $\\zeta(G)$, is the minimum number of colours needed to colour the vertices of $G$ such that each colour class induces either a complete graph or independent set. If $G$ is a graph with chromatic number $\\chi(G)=m$ then must $G$ contain a subgraph $H$ with\\[\\zeta(H) \\gg \\frac{m}{\\log m}?\\]",
+    "tags": [
+      "graph theory",
+      "chromatic number"
+    ],
+    "citation_keys": [
+      "ErGi93"
+    ],
+    "citation_keys_full": [
+      "[ErGi93]"
+    ]
+  },
+  {
+    "number": 761,
+    "url": "https://www.erdosproblems.com/761",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "The cochromatic number of $G$, denoted by $\\zeta(G)$, is the minimum number of colours needed to colour the vertices of $G$ such that each colour class induces either a complete graph or empty graph. The dichromatic number of $G$, denoted by $\\delta(G)$, is the minimum number $k$ of colours required such that, in any orientation of the edges of $G$, there is a $k$-colouring of the vertices of $G$ such that there are no monochromatic oriented cycles. Must a graph with large chromatic number have large dichromatic number? Must a graph with large cochromatic number contain a graph with large dichromatic number?",
+    "tags": [
+      "graph theory",
+      "chromatic number"
+    ],
+    "citation_keys": [
+      "ErGi93"
+    ],
+    "citation_keys_full": [
+      "[ErGi93]"
+    ]
+  },
+  {
+    "number": 762,
+    "url": "https://www.erdosproblems.com/762",
+    "status": "solved",
+    "prize": "DISPROVED (LEAN) This has been solved in the negative and the proof verified in Lean.",
+    "statement": "The cochromatic number of $G$, denoted by $\\zeta(G)$, is the minimum number of colours needed to colour the vertices of $G$ such that each colour class induces either a complete graph or empty graph. Is it true that if $G$ has no $K_5$ and $\\zeta(G)\\geq 4$ then $\\chi(G) \\leq \\zeta(G)+2$?",
+    "tags": [
+      "graph theory",
+      "chromatic number"
+    ],
+    "citation_keys": [
+      "EGS90",
+      "ErGi93"
+    ],
+    "citation_keys_full": [
+      "[EGS90]",
+      "[ErGi93]"
+    ]
+  },
+  {
+    "number": 765,
+    "url": "https://www.erdosproblems.com/765",
+    "status": "solved",
+    "prize": "SOLVED This has been resolved in some other way than a proof or disproof.",
+    "statement": "Give an asymptotic formula for $\\mathrm{ex}(n;C_4)$.",
+    "tags": [
+      "graph theory",
+      "turan number"
+    ],
+    "citation_keys": [
+      "Er64c",
+      "Er67b",
+      "Er69",
+      "Er74c",
+      "Er75",
+      "Er93"
+    ],
+    "citation_keys_full": [
+      "[Er64c]",
+      "[Er67b]",
+      "[Er69]",
+      "[Er74c,p.77]",
+      "[Er75]",
+      "[Er93,p.336]"
+    ]
+  },
+  {
+    "number": 766,
+    "url": "https://www.erdosproblems.com/766",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Let $f(n;k,l)=\\min \\mathrm{ex}(n;G)$, where $G$ ranges over all graphs with $k$ vertices and $l$ edges. Give good estimates for $f(n;k,l)$ in the range $k<l\\leq k^2/4$. For fixed $k$ and large $n$ is $f(n;k,l)$ a strictly monotone function of $l$?",
+    "tags": [
+      "graph theory",
+      "turan number"
+    ],
+    "citation_keys": [
+      "Er64c"
+    ],
+    "citation_keys_full": [
+      "[Er64c]"
+    ]
+  },
+  {
+    "number": 767,
+    "url": "https://www.erdosproblems.com/767",
+    "status": "solved",
+    "prize": "PROVED This has been solved in the affirmative.",
+    "statement": "Let $g_k(n)$ be the maximal number of edges possible on a graph with $n$ vertices which does not contain a cycle with $k$ chords incident to a vertex on the cycle. Is it true that\\[g_k(n)=(k+1)n-(k+1)^2\\]for $n$ sufficiently large?",
+    "tags": [
+      "graph theory",
+      "turan number"
+    ],
+    "citation_keys": [
+      "Er64c",
+      "Er69b",
+      "Er75"
+    ],
+    "citation_keys_full": [
+      "[Er64c]",
+      "[Er69b]",
+      "[Er75]"
+    ]
+  },
+  {
+    "number": 775,
+    "url": "https://www.erdosproblems.com/775",
+    "status": "solved",
+    "prize": "DISPROVED (LEAN) This has been solved in the negative and the proof verified in Lean.",
+    "statement": "Is there a $3$-uniform hypergraph on $n$ vertices which contains at least $n-O(1)$ different sizes of cliques (maximal complete subgraphs)",
+    "tags": [
+      "graph theory",
+      "hypergraphs"
+    ],
+    "citation_keys": [
+      "Gu83"
+    ],
+    "citation_keys_full": [
+      "[Gu83]"
+    ]
+  },
+  {
+    "number": 777,
+    "url": "https://www.erdosproblems.com/777",
+    "status": "solved",
+    "prize": "SOLVED This has been resolved in some other way than a proof or disproof.",
+    "statement": "If $\\mathcal{F}$ is a family of subsets of $\\{1,\\ldots,n\\}$ then we write $G_{\\mathcal{F}}$ for the graph on $\\mathcal{F}$ where $A\\sim B$ if $A$ and $B$ are comparable - that is, $A\\subseteq B$ or vice versa. Is it true that, if $\\epsilon>0$ and $n$ is sufficiently large, whenever $m\\leq (2-\\epsilon)2^{n/2}$ the graph $G_\\mathcal{F}$ has $<2^{n}$ many edges? Is it true that if $G_{\\mathcal{F}}$ has $\\geq cm^2$ edges then $m\\ll_c 2^{n/2}$? Is it true that, for any $\\epsilon>0$, there exists some $\\delta>0$ such that if there are $>m^{2-\\delta}$ edges then $m<(2+\\epsilon)^{n/2}$?",
+    "tags": [
+      "graph theory",
+      "combinatorics"
+    ],
+    "citation_keys": [
+      "Gu83"
+    ],
+    "citation_keys_full": [
+      "[Gu83]"
+    ]
+  },
+  {
+    "number": 778,
+    "url": "https://www.erdosproblems.com/778",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Alice and Bob play a game on the edges of $K_n$, alternating colouring edges by red (Alice) and blue (Bob). Alice goes first, and wins if at the end the largest red clique is larger than any of the blue cliques. Does Bob have a winning strategy for $n\\geq 3$? (Erdős believed the answer is yes.) If we change the game so that Bob colours two edges after each edge that Alice colours, but now require Bob's largest clique to be strictly larger than Alice's, then does Bob have a winning strategy for $n>3$? Finally, consider the game when Alice wins if the maximum degree of the red subgraph is larger than the maximum degree of the blue subgraph. Who wins?",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "Gu83"
+    ],
+    "citation_keys_full": [
+      "[Gu83]"
+    ]
+  },
+  {
+    "number": 794,
+    "url": "https://www.erdosproblems.com/794",
+    "status": "solved",
+    "prize": "DISPROVED (LEAN) This has been solved in the negative and the proof verified in Lean.",
+    "statement": "Is it true that every $3$-uniform hypergraph on $3n$ vertices with at least $n^3+1$ edges must contain either a subgraph on $4$ vertices with $3$ edges or a subgraph on $5$ vertices with $7$ edges?",
+    "tags": [
+      "graph theory",
+      "hypergraphs",
+      "turan number"
+    ],
+    "citation_keys": [
+      "Er69"
+    ],
+    "citation_keys_full": [
+      "[Er69,p.81]"
+    ]
+  },
+  {
+    "number": 797,
+    "url": "https://www.erdosproblems.com/797",
+    "status": "solved",
+    "prize": "PROVED This has been solved in the affirmative.",
+    "statement": "Let $f(d)$ be the maximal acyclic chromatic number of any graph with maximum degree $d$ - that is, the vertices of any graph with maximum degree $d$ can be coloured with $f(d)$ colours such that there is no edge between vertices of the same colour and no cycle containing only two colours. Estimate $f(d)$. In particular is it true that $f(d)=o(d^2)$?",
+    "tags": [
+      "graph theory",
+      "chromatic number"
+    ],
+    "citation_keys": [
+      "AlBe76"
+    ],
+    "citation_keys_full": [
+      "[AlBe76]"
+    ]
+  },
+  {
+    "number": 799,
+    "url": "https://www.erdosproblems.com/799",
+    "status": "solved",
+    "prize": "PROVED This has been solved in the affirmative.",
+    "statement": "The list chromatic number $\\chi_L(G)$ is defined to be the minimal $k$ such that for any assignment of a list of $k$ colours to each vertex of $G$ (perhaps different lists for different vertices) a colouring of each vertex by a colour on its list can be chosen such that adjacent vertices receive distinct colours. Is it true that $\\chi_L(G)=o(n)$ for almost all graphs on $n$ vertices?",
+    "tags": [
+      "graph theory",
+      "chromatic number"
+    ],
+    "citation_keys": [
+      "ERT80"
+    ],
+    "citation_keys_full": [
+      "[ERT80]"
+    ]
+  },
+  {
+    "number": 800,
+    "url": "https://www.erdosproblems.com/800",
+    "status": "solved",
+    "prize": "PROVED This has been solved in the affirmative.",
+    "statement": "If $G$ is a graph on $n$ vertices which has no two adjacent vertices of degree $\\geq 3$ then\\[R(G)\\ll n,\\]where the implied constant is absolute.",
+    "tags": [
+      "graph theory",
+      "ramsey theory"
+    ],
+    "citation_keys": [
+      "BuEr75"
+    ],
+    "citation_keys_full": [
+      "[BuEr75]"
+    ]
+  },
+  {
+    "number": 801,
+    "url": "https://www.erdosproblems.com/801",
+    "status": "solved",
+    "prize": "PROVED This has been solved in the affirmative.",
+    "statement": "If $G$ is a graph on $n$ vertices containing no independent set on $>n^{1/2}$ vertices then there is a set of $\\leq n^{1/2}$ vertices containing $\\gg n^{1/2}\\log n$ edges.",
+    "tags": [
+      "graph theory",
+      "ramsey theory"
+    ],
+    "citation_keys": [
+      "Er79g"
+    ],
+    "citation_keys_full": [
+      "[Er79g]"
+    ]
+  },
+  {
+    "number": 802,
+    "url": "https://www.erdosproblems.com/802",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Is it true that any $K_r$-free graph on $n$ vertices with average degree $t$ contains an independent set on\\[\\gg_r \\frac{\\log t}{t}n\\]many vertices?",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "AEKS81"
+    ],
+    "citation_keys_full": [
+      "[AEKS81]"
+    ]
+  },
+  {
+    "number": 803,
+    "url": "https://www.erdosproblems.com/803",
+    "status": "solved",
+    "prize": "DISPROVED This has been solved in the negative.",
+    "statement": "We call a graph $H$ $D$-balanced (or $D$-almost-regular) if the maximum degree of $H$ is at most $D$ times the minimum degree of $H$. Is it true that for every $m\\geq 1$, if $n$ is sufficiently large, any graph on $n$ vertices with $\\geq n\\log n$ edges contains a $O(1)$-balanced subgraph with $m$ vertices and $\\gg m\\log m$ edges (where the implied constants are absolute)?",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "ErSi70"
+    ],
+    "citation_keys_full": [
+      "[ErSi70]"
+    ]
+  },
+  {
+    "number": 804,
+    "url": "https://www.erdosproblems.com/804",
+    "status": "solved",
+    "prize": "DISPROVED This has been solved in the negative.",
+    "statement": "Let $f(m,n)$ be maximal such that any graph on $n$ vertices in which every induced subgraph on $m$ vertices has an independent set of size at least $\\log n$ must contain an independent set of size at least $f(n)$. Estimate $f(n)$. In particular, is it true that $f((\\log n)^2,n) \\geq n^{1/2-o(1)}$? Is it true that $f((\\log n)^3,n)\\gg (\\log n)^3$?",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "Er91"
+    ],
+    "citation_keys_full": [
+      "[Er91]"
+    ]
+  },
+  {
+    "number": 805,
+    "url": "https://www.erdosproblems.com/805",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "For which functions $g(n)$ with $n>g(n)\\geq (\\log n)^2$ is there a graph on $n$ vertices in which every induced subgraph on $g(n)$ vertices contains a clique of size $\\geq \\log n$ and an independent set of size $\\geq \\log n$? In particular, is there such a graph for $g(n)=(\\log n)^3$?",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "Er91"
+    ],
+    "citation_keys_full": [
+      "[Er91]"
+    ]
+  },
+  {
+    "number": 807,
+    "url": "https://www.erdosproblems.com/807",
+    "status": "solved",
+    "prize": "DISPROVED This has been solved in the negative.",
+    "statement": "The bipartition number $\\tau(G)$ of a graph $G$ is the smallest number of pairwise edge disjoint complete bipartite graphs whose union is $G$. The independence number $\\alpha(G)$ is the size of the largest independent subset of $G$. Is it true that, if $G$ is a random graph on $n$ vertices with edge probability $1/2$, then\\[\\tau(G)=n-\\alpha(G)\\]almost surely?",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "KRW88"
+    ],
+    "citation_keys_full": [
+      "[KRW88]"
+    ]
+  },
+  {
+    "number": 808,
+    "url": "https://www.erdosproblems.com/808",
+    "status": "solved",
+    "prize": "DISPROVED This has been solved in the negative.",
+    "statement": "Let $c,\\epsilon>0$ and $n$ be sufficiently large. If $A\\subset \\mathbb{N}$ has $\\lvert A\\rvert=n$ and $G$ is any graph on $A$ with at least $n^{1+c}$ edges then\\[\\max(\\lvert A+_GA\\rvert,\\lvert A\\cdot_G A\\rvert) \\geq \\lvert A\\rvert^{1+c-\\epsilon},\\]where\\[A+_GA = \\{ a+b : (a,b)\\in G\\}\\]and similarly for $A\\cdot_GA$.",
+    "tags": [
+      "additive combinatorics",
+      "graph theory"
+    ],
+    "citation_keys": [
+      "Er77c",
+      "Er91",
+      "Er97",
+      "ErSz83"
+    ],
+    "citation_keys_full": [
+      "[Er77c]",
+      "[ErSz83]",
+      "[Er91]",
+      "[Er97]"
+    ]
+  },
+  {
+    "number": 809,
+    "url": "https://www.erdosproblems.com/809",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Define the anti-Ramsey number $\\chi_S(n,e,G)$ as the smallest $r$ such that there is a graph with $n$ vertices and $e$ edges with an $r$-colouring of its edges in which every copy of $G$ has entirely distinct edge colours. Is it true that, for all $k\\geq 3$,\\[\\chi_S(n, \\lfloor n^2/4\\rfloor+1,C_{2k+1})\\sim n^2/8?\\]",
+    "tags": [
+      "graph theory",
+      "ramsey theory"
+    ],
+    "citation_keys": [
+      "BEGS89",
+      "Er91"
+    ],
+    "citation_keys_full": [
+      "[BEGS89,p.270]",
+      "[Er91,p.398]"
+    ]
+  },
+  {
+    "number": 810,
+    "url": "https://www.erdosproblems.com/810",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Does there exist some $\\epsilon>0$ such that, for all sufficiently large $n$, there exists a graph $G$ on $n$ vertices with at least $\\epsilon n^2$ many edges such that the edges can be coloured with $n$ colours so that every $C_4$ receives $4$ distinct colours?",
+    "tags": [
+      "graph theory",
+      "ramsey theory"
+    ],
+    "citation_keys": [
+      "BEGS8",
+      "Er91"
+    ],
+    "citation_keys_full": [
+      "[BEGS8,p.273]",
+      "[Er91,p.399]"
+    ]
+  },
+  {
+    "number": 811,
+    "url": "https://www.erdosproblems.com/811",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Suppose $n\\equiv 1\\pmod{m}$. We say that an edge-colouring of $K_n$ using $m$ colours is balanced if every vertex sees exactly $\\lfloor n/m\\rfloor$ many edges of each colours. For which graphs $G$ is it true that, if $m=e(G)$, for all large $n\\equiv 1\\pmod{m}$, every balanced edge-colouring of $K_n$ with $m$ colours contains a rainbow copy of $G$? (That is, a subgraph isomorphic to $G$ where each edge receives a different colour.)",
+    "tags": [
+      "graph theory",
+      "ramsey theory"
+    ],
+    "citation_keys": [
+      "Er91",
+      "Er93",
+      "Er96",
+      "ErTu93"
+    ],
+    "citation_keys_full": [
+      "[Er91]",
+      "[Er93,p.346]",
+      "[ErTu93]",
+      "[Er96]"
+    ]
+  },
+  {
+    "number": 812,
+    "url": "https://www.erdosproblems.com/812",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Is it true that\\[\\frac{R(n+1)}{R(n)}\\geq 1+c\\]for some constant $c>0$, for all large $n$? Is it true that\\[R(n+1)-R(n) \\gg n^2?\\]",
+    "tags": [
+      "graph theory",
+      "ramsey theory"
+    ],
+    "citation_keys": [
+      "Er91"
+    ],
+    "citation_keys_full": [
+      "[Er91]"
+    ]
+  },
+  {
+    "number": 813,
+    "url": "https://www.erdosproblems.com/813",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Let $h(n)$ be minimal such that every graph on $n$ vertices where every set of $7$ vertices contains a triangle (a copy of $K_3$) must contain a clique on at least $h(n)$ vertices. Estimate $h(n)$ - in particular, do there exist constants $c_1,c_2>0$ such that\\[n^{1/3+c_1}\\ll h(n) \\ll n^{1/2-c_2}?\\]",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "Er91"
+    ],
+    "citation_keys_full": [
+      "[Er91]"
+    ]
+  },
+  {
+    "number": 814,
+    "url": "https://www.erdosproblems.com/814",
+    "status": "solved",
+    "prize": "PROVED This has been solved in the affirmative.",
+    "statement": "Let $k\\geq 2$ and $G$ be a graph with $n\\geq k-1$ vertices and\\[(k-1)(n-k+2)+\\binom{k-2}{2}+1\\]edges. Does there exist some $c_k>0$ such that $G$ must contain an induced subgraph on at most $(1-c_k)n$ vertices with minimum degree at least $k$?",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "EFRS90",
+      "Er91",
+      "Er93"
+    ],
+    "citation_keys_full": [
+      "[EFRS90]",
+      "[Er91]",
+      "[Er93,p.344]"
+    ]
+  },
+  {
+    "number": 815,
+    "url": "https://www.erdosproblems.com/815",
+    "status": "solved",
+    "prize": "DISPROVED This has been solved in the negative.",
+    "statement": "Let $k\\geq 3$ and $n$ be sufficiently large. Is it true that if $G$ is a graph with $n$ vertices and $2n-2$ edges such that every proper induced subgraph has minimum degree $\\leq 2$ then $G$ must contain a copy of $C_k$?",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "EFGS88",
+      "Er91"
+    ],
+    "citation_keys_full": [
+      "[EFGS88]",
+      "[Er91]"
+    ]
+  },
+  {
+    "number": 816,
+    "url": "https://www.erdosproblems.com/816",
+    "status": "solved",
+    "prize": "PROVED This has been solved in the affirmative.",
+    "statement": "Let $G$ be a graph with $2n+1$ vertices and $n^2+n+1$ edges. Must $G$ contain two vertices of the same degree which are joined by a path of length $3$?",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "Er91"
+    ],
+    "citation_keys_full": [
+      "[Er91]"
+    ]
+  },
+  {
+    "number": 832,
+    "url": "https://www.erdosproblems.com/832",
+    "status": "solved",
+    "prize": "DISPROVED This has been solved in the negative.",
+    "statement": "Let $r\\geq 3$ and $k$ be sufficiently large in terms of $r$. Is it true that every $r$-uniform hypergraph with chromatic number $k$ has at least\\[\\binom{(r-1)(k-1)+1}{r}\\]edges, with equality only for the complete graph on $(r-1)(k-1)+1$ vertices?",
+    "tags": [
+      "graph theory",
+      "hypergraphs",
+      "chromatic number"
+    ],
+    "citation_keys": [
+      "Er74d"
+    ],
+    "citation_keys_full": [
+      "[Er74d]"
+    ]
+  },
+  {
+    "number": 833,
+    "url": "https://www.erdosproblems.com/833",
+    "status": "solved",
+    "prize": "PROVED This has been solved in the affirmative.",
+    "statement": "Does there exist an absolute constant $c>0$ such that, for all $r\\geq 2$, in any $r$-uniform hypergraph with chromatic number $3$ there is a vertex contained in at least $(1+c)^r$ many edges?",
+    "tags": [
+      "graph theory",
+      "hypergraphs",
+      "chromatic number"
+    ],
+    "citation_keys": [
+      "Er71",
+      "Er74d"
+    ],
+    "citation_keys_full": [
+      "[Er71,p.105]",
+      "[Er74d]"
+    ]
+  },
+  {
+    "number": 834,
+    "url": "https://www.erdosproblems.com/834",
+    "status": "solved",
+    "prize": "SOLVED This has been resolved in some other way than a proof or disproof.",
+    "statement": "Does there exist a $3$-critical $3$-uniform hypergraph in which every vertex has degree $\\geq 7$?",
+    "tags": [
+      "graph theory",
+      "hypergraphs"
+    ],
+    "citation_keys": [
+      "Er74d"
+    ],
+    "citation_keys_full": [
+      "[Er74d,p.282]"
+    ]
+  },
+  {
+    "number": 835,
+    "url": "https://www.erdosproblems.com/835",
+    "status": "open",
+    "prize": "VERIFIABLE Open, but could be proved with a finite example.",
+    "statement": "Does there exist a $k>2$ such that the $k$-sized subsets of $\\{1,\\ldots,2k\\}$ can be coloured with $k+1$ colours such that for every $A\\subset \\{1,\\ldots,2k\\}$ with $\\lvert A\\rvert=k+1$ all $k+1$ colours appear among the $k$-sized subsets of $A$?",
+    "tags": [
+      "graph theory",
+      "hypergraphs"
+    ],
+    "citation_keys": [
+      "Er74d"
+    ],
+    "citation_keys_full": [
+      "[Er74d,p.283]"
+    ]
+  },
+  {
+    "number": 836,
+    "url": "https://www.erdosproblems.com/836",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Let $r\\geq 2$ and $G$ be a $r$-uniform hypergraph with chromatic number $3$ (that is, there is a $3$-colouring of the vertices of $G$ such that no edge is monochromatic). Suppose any two edges of $G$ have a non-empty intersection. Must $G$ contain $O(r^2)$ many vertices? Must there be two edges which meet in $\\gg r$ many vertices?",
+    "tags": [
+      "graph theory",
+      "hypergraphs",
+      "chromatic number"
+    ],
+    "citation_keys": [
+      "Er74d"
+    ],
+    "citation_keys_full": [
+      "[Er74d]"
+    ]
+  },
+  {
+    "number": 837,
+    "url": "https://www.erdosproblems.com/837",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Let $k\\geq 2$ and $A_k\\subseteq [0,1]$ be the set of $\\alpha$ such that there exists some $\\beta(\\alpha)>\\alpha$ with the property that, if $G_1,G_2,\\ldots$ is a sequence of $k$-uniform hypergraphs with\\[\\liminf \\frac{e(G_n)}{\\binom{\\lvert G_n\\rvert}{k}} >\\alpha\\]then there exist subgraphs $H_n\\subseteq G_n$ such that $\\lvert H_n\\rvert \\to \\infty$ and\\[\\liminf \\frac{e(H_n)}{\\binom{\\lvert H_n\\rvert}{k}} >\\beta,\\]and further that this property does not necessarily hold if $>\\alpha$ is replaced by $\\geq \\alpha$. What is $A_3$?",
+    "tags": [
+      "graph theory",
+      "hypergraphs"
+    ],
+    "citation_keys": [
+      "Er74d"
+    ],
+    "citation_keys_full": [
+      "[Er74d]"
+    ]
+  },
+  {
+    "number": 842,
+    "url": "https://www.erdosproblems.com/842",
+    "status": "solved",
+    "prize": "PROVED This has been solved in the affirmative.",
+    "statement": "Let $G$ be a graph on $3n$ vertices formed by taking $n$ vertex disjoint triangles and adding a Hamiltonian cycle (with all new edges) between these vertices. Does $G$ have chromatic number at most $3$?",
+    "tags": [
+      "graph theory",
+      "chromatic number"
+    ],
+    "citation_keys": [
+      "Er92b"
+    ],
+    "citation_keys_full": [
+      "[Er92b]"
+    ]
+  },
+  {
+    "number": 883,
+    "url": "https://www.erdosproblems.com/883",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "For $A\\subseteq \\{1,\\ldots,n\\}$ let $G(A)$ be the graph with vertex set $A$, where two integers are joined by an edge if they are coprime. Is it true that if\\[\\lvert A\\rvert >\\lfloor\\tfrac{n}{2}\\rfloor+\\lfloor\\tfrac{n}{3}\\rfloor-\\lfloor\\tfrac{n}{6}\\rfloor\\]then $G(A)$ contains all odd cycles of length $\\leq \\frac{n}{3}+1$? Is it true that, for every $\\ell\\geq 1$, if $n$ is sufficiently large and\\[\\lvert A\\rvert >\\lfloor\\tfrac{n}{2}\\rfloor+\\lfloor\\tfrac{n}{3}\\rfloor-\\lfloor\\tfrac{n}{6}\\rfloor\\]then $G(A)$ must contain a complete $(1,\\ell,\\ell)$ triparite graph on $2\\ell+1$ vertices?",
+    "tags": [
+      "number theory",
+      "graph theory"
+    ],
+    "citation_keys": [
+      "Er98",
+      "ErSa97"
+    ],
+    "citation_keys_full": [
+      "[ErSa97]",
+      "[Er98]"
+    ]
+  },
+  {
+    "number": 895,
+    "url": "https://www.erdosproblems.com/895",
+    "status": "solved",
+    "prize": "PROVED This has been solved in the affirmative.",
+    "statement": "Is it true that, for all sufficiently large $n$, if $G$ is a triangle-free graph on $\\{1,\\ldots,n\\}$ then there must exist three independent points $a,b,a+b$?",
+    "tags": [
+      "additive combinatorics",
+      "graph theory"
+    ],
+    "citation_keys": [
+      "Er95d"
+    ],
+    "citation_keys_full": [
+      "[Er95d]"
+    ]
+  },
+  {
+    "number": 900,
+    "url": "https://www.erdosproblems.com/900",
+    "status": "solved",
+    "prize": "PROVED This has been solved in the affirmative.",
+    "statement": "There is a function $f:(1/2,\\infty)\\to \\mathbb{R}$ such that $f(c)\\to 0$ as $c\\to 1/2$ and $f(c)\\to 1$ as $c\\to \\infty$ and every random graph with $n$ vertices and $cn$ edges has (with high probability) a path of length at least $f(c)n$.",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "Er82e"
+    ],
+    "citation_keys_full": [
+      "[Er82e]"
+    ]
+  },
+  {
+    "number": 902,
+    "url": "https://www.erdosproblems.com/902",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Let $f(n)$ be minimal such that there is a tournament (a complete directed graph) on $f(n)$ vertices such that every set of $n$ vertices is dominated by at least one other vertex. Estimate $f(n)$.",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "Er63c",
+      "Er82e"
+    ],
+    "citation_keys_full": [
+      "[Er63c]",
+      "[Er82e]"
+    ]
+  },
+  {
+    "number": 904,
+    "url": "https://www.erdosproblems.com/904",
+    "status": "solved",
+    "prize": "PROVED (LEAN) This has been solved in the affirmative and the proof verified in Lean.",
+    "statement": "Let $r\\geq 2$ and let $t_r(n)$ be the Turán number (the maximal number of edges in a graph on $n$ vertices with no $K_{r+1}$). If $G$ is a graph with $n$ vertices and $m\\geq t_r(n)$ edges there exists a clique on $r$ vertices, say $x_1,\\ldots,x_r$, such that\\[d(x_1)+\\cdots+d(x_r)\\geq \\frac{2rm}{n}.\\]",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "BoEr75",
+      "Er75"
+    ],
+    "citation_keys_full": [
+      "[BoEr75]",
+      "[Er75,p.13]"
+    ]
+  },
+  {
+    "number": 905,
+    "url": "https://www.erdosproblems.com/905",
+    "status": "solved",
+    "prize": "PROVED (LEAN) This has been solved in the affirmative and the proof verified in Lean.",
+    "statement": "Every graph with $n$ vertices and $>n^2/4$ edges contains an edge which is in at least $n/6$ triangles.",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "Er75",
+      "Er82e",
+      "Er93"
+    ],
+    "citation_keys_full": [
+      "[Er75]",
+      "[Er82e,p.71]",
+      "[Er93,p.344]"
+    ]
+  },
+  {
+    "number": 911,
+    "url": "https://www.erdosproblems.com/911",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Let $\\hat{R}(G)$ denote the size Ramsey number, the minimal number of edges $m$ such that there is a graph $H$ with $m$ edges that is Ramsey for $G$. Is there a function $f$ such that $f(x)/x\\to \\infty$ as $x\\to \\infty$ such that, for all large $C$, if $G$ is a graph with $n$ vertices and $e\\geq Cn$ edges then\\[\\hat{R}(G) > f(C) e?\\]",
+    "tags": [
+      "graph theory",
+      "ramsey theory"
+    ],
+    "citation_keys": [
+      "Er82e"
+    ],
+    "citation_keys_full": [
+      "[Er82e,p.78]"
+    ]
+  },
+  {
+    "number": 914,
+    "url": "https://www.erdosproblems.com/914",
+    "status": "solved",
+    "prize": "PROVED (LEAN) This has been solved in the affirmative and the proof verified in Lean.",
+    "statement": "Let $r\\geq 2$ and $m\\geq 1$. Every graph with $rm$ vertices and minimum degree at least $m(r-1)$ contains $m$ vertex disjoint copies of $K_r$.",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "Er67b"
+    ],
+    "citation_keys_full": [
+      "[Er67b]"
+    ]
+  },
+  {
+    "number": 915,
+    "url": "https://www.erdosproblems.com/915",
+    "status": "solved",
+    "prize": "SOLVED This has been resolved in some other way than a proof or disproof.",
+    "statement": "Let $G$ be a graph with $1+n(m-1)$ vertices and $1+n\\binom{m}{2}$ edges. Must $G$ contain two points which are connected by $m$ disjoint paths?",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "BoEr62",
+      "Er67b"
+    ],
+    "citation_keys_full": [
+      "[BoEr62]",
+      "[Er67b,p.4]"
+    ]
+  },
+  {
+    "number": 916,
+    "url": "https://www.erdosproblems.com/916",
+    "status": "solved",
+    "prize": "PROVED This has been solved in the affirmative.",
+    "statement": "Does every graph with $n$ vertices and $2n-2$ edges contain a cycle and another vertex adjacent to three vertices on the cycle?",
+    "tags": [
+      "graph theory",
+      "cycles"
+    ],
+    "citation_keys": [
+      "Er67b"
+    ],
+    "citation_keys_full": [
+      "[Er67b]"
+    ]
+  },
+  {
+    "number": 917,
+    "url": "https://www.erdosproblems.com/917",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Let $k\\geq 4$ and $f_k(n)$ be the largest number of edges in a graph on $n$ vertices which has chromatic number $k$ and is critical (i.e. deleting any edge reduces the chromatic number). Is it true that\\[f_k(n) \\gg_k n^2?\\]Is it true that\\[f_6(n)\\sim n^2/4?\\]More generally, is it true that, for $k\\geq 6$,\\[f_k(n) \\sim \\frac{1}{2}\\left(1-\\frac{1}{\\lfloor k/3\\rfloor}\\right)n^2?\\]",
+    "tags": [
+      "graph theory",
+      "chromatic number"
+    ],
+    "citation_keys": [
+      "Er69b",
+      "Er93"
+    ],
+    "citation_keys_full": [
+      "[Er69b]",
+      "[Er93,p.341]"
+    ]
+  },
+  {
+    "number": 918,
+    "url": "https://www.erdosproblems.com/918",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Is there a graph with $\\aleph_2$ vertices and chromatic number $\\aleph_2$ such that every subgraph on $\\aleph_1$ vertices has chromatic number $\\leq\\aleph_0$? Is there a graph with $\\aleph_{\\omega+1}$ vertices and chromatic number $\\aleph_1$ such that every subgraph on $\\aleph_\\omega$ vertices has chromatic number $\\leq\\aleph_0$?",
+    "tags": [
+      "graph theory",
+      "chromatic number"
+    ],
+    "citation_keys": [
+      "Er69b",
+      "ErHa68b"
+    ],
+    "citation_keys_full": [
+      "[ErHa68b]",
+      "[Er69b,p.28]"
+    ]
+  },
+  {
+    "number": 919,
+    "url": "https://www.erdosproblems.com/919",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Is there a graph $G$ with vertex set $\\omega_2^2$ and chromatic number $\\aleph_2$ such that every subgraph whose vertices have a lesser type has chromatic number $\\leq \\aleph_0$? What if instead we ask for $G$ to have chromatic number $\\aleph_1$?",
+    "tags": [
+      "graph theory",
+      "chromatic number"
+    ],
+    "citation_keys": [
+      "Er69b"
+    ],
+    "citation_keys_full": [
+      "[Er69b]"
+    ]
+  },
+  {
+    "number": 920,
+    "url": "https://www.erdosproblems.com/920",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Let $f_k(n)$ be the maximum possible chromatic number of a graph with $n$ vertices which contains no $K_k$. Is it true that, for $k\\geq 4$,\\[f_k(n) \\gg \\frac{n^{1-\\frac{1}{k-1}}}{(\\log n)^{c_k}}\\]for some constant $c_k>0$?",
+    "tags": [
+      "graph theory",
+      "chromatic number"
+    ],
+    "citation_keys": [
+      "Er69b"
+    ],
+    "citation_keys_full": [
+      "[Er69b]"
+    ]
+  },
+  {
+    "number": 921,
+    "url": "https://www.erdosproblems.com/921",
+    "status": "solved",
+    "prize": "PROVED This has been solved in the affirmative.",
+    "statement": "Let $k\\geq 4$ and let $f_k(n)$ be the largest $m$ such that there is a graph on $n$ vertices with chromatic number $k$ in which every odd cycle has length $> m$. Is it true that\\[f_k(n) \\asymp n^{\\frac{1}{k-2}}?\\]",
+    "tags": [
+      "graph theory",
+      "chromatic number",
+      "cycles"
+    ],
+    "citation_keys": [
+      "Er69b"
+    ],
+    "citation_keys_full": [
+      "[Er69b]"
+    ]
+  },
+  {
+    "number": 922,
+    "url": "https://www.erdosproblems.com/922",
+    "status": "solved",
+    "prize": "PROVED This has been solved in the affirmative.",
+    "statement": "Let $k\\geq 0$. Let $G$ be a graph such that every subgraph $H$ contains an independent set of size $\\geq (n-k)/2$, where $n$ is the number of vertices of $H$. Must $G$ have chromatic number at most $k+2$?",
+    "tags": [
+      "graph theory",
+      "chromatic number"
+    ],
+    "citation_keys": [
+      "Er69b",
+      "ErHa67b"
+    ],
+    "citation_keys_full": [
+      "[ErHa67b]",
+      "[Er69b]"
+    ]
+  },
+  {
+    "number": 923,
+    "url": "https://www.erdosproblems.com/923",
+    "status": "solved",
+    "prize": "PROVED (LEAN) This has been solved in the affirmative and the proof verified in Lean.",
+    "statement": "Is it true that, for every $k$, there is some $f(k)$ such that if $G$ has chromatic number $\\geq f(k)$ then $G$ contains a triangle-free subgraph with chromatic number $\\geq k$?",
+    "tags": [
+      "graph theory",
+      "chromatic number"
+    ],
+    "citation_keys": [
+      "Er69b"
+    ],
+    "citation_keys_full": [
+      "[Er69b]"
+    ]
+  },
+  {
+    "number": 924,
+    "url": "https://www.erdosproblems.com/924",
+    "status": "solved",
+    "prize": "PROVED This has been solved in the affirmative.",
+    "statement": "Let $k\\geq 2$ and $l\\geq 3$. Is there a graph $G$ which contains no $K_{l+1}$ such that every $k$-colouring of the edges of $G$ contains a monochromatic copy of $K_l$?",
+    "tags": [
+      "graph theory",
+      "ramsey theory"
+    ],
+    "citation_keys": [
+      "Er69b",
+      "Er75b"
+    ],
+    "citation_keys_full": [
+      "[Er69b]",
+      "[Er75b]"
+    ]
+  },
+  {
+    "number": 925,
+    "url": "https://www.erdosproblems.com/925",
+    "status": "solved",
+    "prize": "DISPROVED This has been solved in the negative.",
+    "statement": "Is there a constant $\\delta>0$ such that, for all large $n$, if $G$ is a graph on $n$ vertices which is not Ramsey for $K_3$ (i.e. there exists a 2-colouring of the edges of $G$ with no monochromatic triangle) then $G$ contains an independent set of size $\\gg n^{1/3+\\delta}$?",
+    "tags": [
+      "graph theory",
+      "ramsey theory"
+    ],
+    "citation_keys": [
+      "Er69b"
+    ],
+    "citation_keys_full": [
+      "[Er69b]"
+    ]
+  },
+  {
+    "number": 926,
+    "url": "https://www.erdosproblems.com/926",
+    "status": "solved",
+    "prize": "PROVED This has been solved in the affirmative.",
+    "statement": "Let $k\\geq 4$. Is it true that\\[\\mathrm{ex}(n;H_k) \\ll_k n^{3/2},\\]where $H_k$ is the graph on vertices $x,y_1,\\ldots,y_k,z_1,\\ldots,z_{\\binom{k}{2}}$, where $x$ is adjacent to all $y_i$ and each pair of $y_i,y_j$ is adjacent to a unique $z_i$.",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "Er69b",
+      "Er71",
+      "Er74c",
+      "Er93"
+    ],
+    "citation_keys_full": [
+      "[Er69b]",
+      "[Er71,p.103]",
+      "[Er74c,p.79]",
+      "[Er93,p.334]"
+    ]
+  },
+  {
+    "number": 927,
+    "url": "https://www.erdosproblems.com/927",
+    "status": "solved",
+    "prize": "DISPROVED This has been solved in the negative.",
+    "statement": "Let $g(n)$ be the maximum number of different sizes of cliques that can occur in a graph on $n$ vertices. Estimate $g(n)$ - in particular, is it true that\\[g(n)=n-\\log_2n-\\log_*(n)+O(1),\\]where $\\log_*(n)$ is the number of iterated logarithms such that $\\log\\cdots \\log n <1$.",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "Er66b",
+      "Er69b",
+      "Er71"
+    ],
+    "citation_keys_full": [
+      "[Er66b]",
+      "[Er71,p.101]",
+      "[Er69b]"
+    ]
+  },
+  {
+    "number": 934,
+    "url": "https://www.erdosproblems.com/934",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Let $h_t(d)$ be minimal such that every graph $G$ with $h_t(d)$ edges and maximal degree $\\leq d$ contains two edges whose shortest path between them has length $\\geq t$. Estimate $h_t(d)$.",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "Er88"
+    ],
+    "citation_keys_full": [
+      "[Er88]"
+    ]
+  },
+  {
+    "number": 944,
+    "url": "https://www.erdosproblems.com/944",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "A critical vertex, edge, or set of edges, is one whose deletion lowers the chromatic number. Let $k\\geq 4$ and $r\\geq 1$. Must there exist a graph $G$ with chromatic number $k$ such that every vertex is critical, yet every critical set of edges has size $>r$?",
+    "tags": [
+      "graph theory",
+      "chromatic number"
+    ],
+    "citation_keys": [
+      "Er89e"
+    ],
+    "citation_keys_full": [
+      "[Er89e]"
+    ]
+  },
+  {
+    "number": 986,
+    "url": "https://www.erdosproblems.com/986",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "For any fixed $k\\geq 3$,\\[R(k,n) \\gg \\frac{n^{k-1}}{(\\log n)^c}\\]for some constant $c=c(k)>0$.",
+    "tags": [
+      "graph theory",
+      "ramsey theory"
+    ],
+    "citation_keys": [
+      "Er90b"
+    ],
+    "citation_keys_full": [
+      "[Er90b]"
+    ]
+  },
+  {
+    "number": 993,
+    "url": "https://www.erdosproblems.com/993",
+    "status": "open",
+    "prize": "FALSIFIABLE Open, but could be disproved with a finite counterexample.",
+    "statement": "The independent set sequence of any tree or forest is unimodal. In other words, if $i_k(G)$ counts the number of independent sets of vertices of size $k$ in a graph $G$, and $T$ is any tree or forest, then for some $m\\geq 0$ $$i_{0}(T)\\leq i_{1}(T)\\leq\\cdots\\leq i_{m}(T)\\geq i_{m+1}(T)\\geq i_{m+2}(T)\\geq\\cdots.$$",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "AMSE87"
+    ],
+    "citation_keys_full": [
+      "[AMSE87]"
+    ]
+  },
+  {
+    "number": 1006,
+    "url": "https://www.erdosproblems.com/1006",
+    "status": "solved",
+    "prize": "DISPROVED This has been solved in the negative.",
+    "statement": "Let $G$ be a graph with girth $>4$ (that is, it contains no cycles of length $3$ or $4$). Can the edges of $G$ always be directed such that there is no directed cycle, and reversing the direction of any edge also creates no directed cycle?",
+    "tags": [
+      "graph theory",
+      "cycles"
+    ],
+    "citation_keys": [
+      "Er71",
+      "Er76b"
+    ],
+    "citation_keys_full": [
+      "[Er71]",
+      "[Er76b]"
+    ]
+  },
+  {
+    "number": 1007,
+    "url": "https://www.erdosproblems.com/1007",
+    "status": "solved",
+    "prize": "SOLVED (LEAN) This has been resolved in some other way than a proof or disproof, and that resolution verified in Lean.",
+    "statement": "The dimension of a graph $G$ is the minimal $n$ such that $G$ can be embedded in $\\mathbb{R}^n$ such that every edge of $G$ is a unit line segment. What is the smallest number of edges in a graph with dimension $4$?",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "So09e"
+    ],
+    "citation_keys_full": [
+      "[So09e]"
+    ]
+  },
+  {
+    "number": 1008,
+    "url": "https://www.erdosproblems.com/1008",
+    "status": "solved",
+    "prize": "PROVED (LEAN) This has been solved in the affirmative and the proof verified in Lean.",
+    "statement": "Does every graph with $m$ edges contain a subgraph with $\\gg m^{2/3}$ edges which contains no $C_4$?",
+    "tags": [
+      "graph theory",
+      "cycles"
+    ],
+    "citation_keys": [
+      "Er71"
+    ],
+    "citation_keys_full": [
+      "[Er71]"
+    ]
+  },
+  {
+    "number": 1009,
+    "url": "https://www.erdosproblems.com/1009",
+    "status": "solved",
+    "prize": "PROVED This has been solved in the affirmative.",
+    "statement": "Is it true that, for every $c>0$, there exists $f(c)$ such that every graph on $n$ vertices with at least $\\lfloor n^2/4\\rfloor+k$ edges, where $k<c n$, contains at least $k-f(c)$ many edge disjoint triangles?",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "Er71"
+    ],
+    "citation_keys_full": [
+      "[Er71,p.98]"
+    ]
+  },
+  {
+    "number": 1010,
+    "url": "https://www.erdosproblems.com/1010",
+    "status": "solved",
+    "prize": "PROVED This has been solved in the affirmative.",
+    "statement": "Let $t<\\lfloor n/2\\rfloor$. Does every graph on $n$ vertices with $\\lfloor n^2/4\\rfloor+t$ edges contain at least $t\\lfloor n/2\\rfloor$ triangles?",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "Er62d"
+    ],
+    "citation_keys_full": [
+      "[Er62d]"
+    ]
+  },
+  {
+    "number": 1011,
+    "url": "https://www.erdosproblems.com/1011",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Let $f_r(n)$ be minimal such that every graph on $n$ vertices with $\\geq f_r(n)$ edges and chromatic number $\\geq r$ contains a triangle. Determine $f_r(n)$.",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "Er71"
+    ],
+    "citation_keys_full": [
+      "[Er71]"
+    ]
+  },
+  {
+    "number": 1012,
+    "url": "https://www.erdosproblems.com/1012",
+    "status": "solved",
+    "prize": "SOLVED This has been resolved in some other way than a proof or disproof.",
+    "statement": "Let $k\\geq 0$. Let $f(k)$ be such that every graph on $n\\geq f(k)$ vertices with at least $\\binom{n-k-1}{2}+\\binom{k+2}{2}+1$ edges contains a cycle on $n-k$ vertices. Determine or estimate $f(k)$.",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "Er62e",
+      "Er71"
+    ],
+    "citation_keys_full": [
+      "[Er62e]",
+      "[Er71,p.98]"
+    ]
+  },
+  {
+    "number": 1013,
+    "url": "https://www.erdosproblems.com/1013",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Let $h_3(k)$ be the minimal $n$ such that there exists a triangle-free graph on $n$ vertices with chromatic number $k$. Find an asymptotic for $h_3(k)$, and also prove\\[\\lim_{k\\to \\infty}\\frac{h_3(k+1)}{h_3(k)}=1.\\]",
+    "tags": [
+      "graph theory",
+      "chromatic number"
+    ],
+    "citation_keys": [
+      "Er71"
+    ],
+    "citation_keys_full": [
+      "[Er71]"
+    ]
+  },
+  {
+    "number": 1014,
+    "url": "https://www.erdosproblems.com/1014",
+    "status": "solved",
+    "prize": "PROVED (LEAN) This has been solved in the affirmative and the proof verified in Lean.",
+    "statement": "Let $R(k,l)$ be the Ramsey number, so the minimal $n$ such that every graph on at least $n$ vertices contains either a $K_k$ or an independent set on $l$ vertices. Prove, for fixed $k\\geq 3$, that\\[\\lim_{l\\to \\infty}\\frac{R(k,l+1)}{R(k,l)}=1.\\]",
+    "tags": [
+      "graph theory",
+      "ramsey theory"
+    ],
+    "citation_keys": [
+      "Er71"
+    ],
+    "citation_keys_full": [
+      "[Er71,p.99]"
+    ]
+  },
+  {
+    "number": 1015,
+    "url": "https://www.erdosproblems.com/1015",
+    "status": "solved",
+    "prize": "SOLVED This has been resolved in some other way than a proof or disproof.",
+    "statement": "Let $f(t)$ be minimal such that, in any two-colouring of the edges of $K_n$, the edges can be partitioned into vertex disjoint monochromatic copies of $K_t$ (not necessarily the same colour) with at most $f(t)$ vertices remaining. Estimate $f(t)$. In particular, is it true that $f(t)^{1/t}\\to 1$? Is it true that $f(t)\\ll t$?",
+    "tags": [
+      "graph theory",
+      "ramsey theory"
+    ],
+    "citation_keys": [
+      "Er71"
+    ],
+    "citation_keys_full": [
+      "[Er71]"
+    ]
+  },
+  {
+    "number": 1016,
+    "url": "https://www.erdosproblems.com/1016",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Let $h(n)$ be minimal such that there is a graph on $n$ vertices with $n+h(n)$ edges which contains a cycle on $k$ vertices, for all $3\\leq k\\leq n$. Estimate $h(n)$. In particular, is it true that\\[h(n) \\geq \\log_2n+\\log_*n-O(1),\\]where $\\log_*n$ is the iterated logarithmic function?",
+    "tags": [
+      "graph theory",
+      "cycles"
+    ],
+    "citation_keys": [
+      "Er71"
+    ],
+    "citation_keys_full": [
+      "[Er71]"
+    ]
+  },
+  {
+    "number": 1017,
+    "url": "https://www.erdosproblems.com/1017",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Let $f(n,k)$ be such that every graph on $n$ vertices and $k$ edges can be partitioned into at most $f(n,k)$ edge-disjoint complete graphs. Estimate $f(n,k)$ for $k>n^2/4$.",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "Er71"
+    ],
+    "citation_keys_full": [
+      "[Er71]"
+    ]
+  },
+  {
+    "number": 1018,
+    "url": "https://www.erdosproblems.com/1018",
+    "status": "solved",
+    "prize": "SOLVED This has been resolved in some other way than a proof or disproof.",
+    "statement": "Let $\\epsilon>0$. Is there a constant $C_\\epsilon$ such that, for all large $n$, every graph on $n$ vertices with at least $n^{1+\\epsilon}$ edges must contain a subgraph on at most $C_\\epsilon$ vertices which is non-planar?",
+    "tags": [
+      "graph theory",
+      "planar graphs"
+    ],
+    "citation_keys": [
+      "Er71"
+    ],
+    "citation_keys_full": [
+      "[Er71]"
+    ]
+  },
+  {
+    "number": 1019,
+    "url": "https://www.erdosproblems.com/1019",
+    "status": "solved",
+    "prize": "PROVED This has been solved in the affirmative.",
+    "statement": "A planar graph on $n$ vertices with $3n-6$ edges (the maximum possible) is called saturated. Does every graph on $n$ vertices with $\\lfloor n^2/4\\rfloor+\\lfloor \\frac{n+1}{2}\\rfloor$ edges contain a saturated planar graph with $>3$ vertices?",
+    "tags": [
+      "graph theory",
+      "planar graphs"
+    ],
+    "citation_keys": [
+      "Er64f",
+      "Er69c",
+      "Er71"
+    ],
+    "citation_keys_full": [
+      "[Er64f]",
+      "[Er69c]",
+      "[Er71,p.102]"
+    ]
+  },
+  {
+    "number": 1020,
+    "url": "https://www.erdosproblems.com/1020",
+    "status": "open",
+    "prize": "FALSIFIABLE Open, but could be disproved with a finite counterexample.",
+    "statement": "Let $f(n;r,k)$ be the maximal number of edges in an $r$-uniform hypergraph which contains no set of $k$ many independent edges. For all $r\\geq 3$,\\[f(n;r,k)=\\max\\left(\\binom{rk-1}{r}, \\binom{n}{r}-\\binom{n-k+1}{r}\\right).\\]",
+    "tags": [
+      "graph theory",
+      "hypergraphs"
+    ],
+    "citation_keys": [
+      "Er65d",
+      "Er71"
+    ],
+    "citation_keys_full": [
+      "[Er65d]",
+      "[Er71,p.103]"
+    ]
+  },
+  {
+    "number": 1021,
+    "url": "https://www.erdosproblems.com/1021",
+    "status": "solved",
+    "prize": "PROVED This has been solved in the affirmative.",
+    "statement": "Is it true that, for every $k\\geq 3$, there is a constant $c_k>0$ such that\\[\\mathrm{ex}(n,G_k) \\ll n^{3/2-c_k},\\]where $G_k$ is the bipartite graph between $\\{y_1,\\ldots,y_k\\}$ and $\\{z_1,\\ldots,z_{\\binom{k}{2}}\\}$, with each $z_j$ joined to a unique pair of $y_i$?",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "Er71",
+      "Er74c"
+    ],
+    "citation_keys_full": [
+      "[Er71,p.103]",
+      "[Er74c,p.79]"
+    ]
+  },
+  {
+    "number": 1024,
+    "url": "https://www.erdosproblems.com/1024",
+    "status": "solved",
+    "prize": "SOLVED This has been resolved in some other way than a proof or disproof.",
+    "statement": "Let $f(n)$ be such that every $3$-uniform linear hypergraph on $n$ vertices contains an independent set on $f(n)$ vertices. Estimate $f(n)$.",
+    "tags": [
+      "graph theory",
+      "hypergraphs"
+    ],
+    "citation_keys": [
+      "Er71"
+    ],
+    "citation_keys_full": [
+      "[Er71,p.106]"
+    ]
+  },
+  {
+    "number": 1028,
+    "url": "https://www.erdosproblems.com/1028",
+    "status": "solved",
+    "prize": "SOLVED (LEAN) This has been resolved in some other way than a proof or disproof, and that resolution verified in Lean.",
+    "statement": "Let\\[H(n)=\\min_f \\max_{X\\subseteq \\{1,\\ldots,n\\}} \\left\\lvert \\sum_{x\\neq y\\in X} f(x,y)\\right\\rvert,\\]where $f$ ranges over all functions $f:X^2\\to \\{-1,1\\}$. Estimate $H(n)$.",
+    "tags": [
+      "graph theory",
+      "discrepancy"
+    ],
+    "citation_keys": [
+      "Er63d",
+      "Er71"
+    ],
+    "citation_keys_full": [
+      "[Er63d]",
+      "[Er71,p.107]"
+    ]
+  },
+  {
+    "number": 1029,
+    "url": "https://www.erdosproblems.com/1029",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation. - $100",
+    "statement": "If $R(k)$ is the Ramsey number for $K_k$, the minimal $n$ such that every $2$-colouring of the edges of $K_n$ contains a monochromatic copy of $K_k$, then\\[\\frac{R(k)}{k2^{k/2}}\\to \\infty.\\]",
+    "tags": [
+      "graph theory",
+      "ramsey theory"
+    ],
+    "citation_keys": [
+      "Er93"
+    ],
+    "citation_keys_full": [
+      "[Er93,p.337]"
+    ]
+  },
+  {
+    "number": 1030,
+    "url": "https://www.erdosproblems.com/1030",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Let $R(k,l)$ be the usual Ramsey number: the smallest $n$ such that if the edges of $K_n$ are coloured red and blue then there exists either a red $K_k$ or a blue $K_l$. Prove the existence of some $c>0$ such that\\[\\lim_{k\\to \\infty}\\frac{R(k+1,k)}{R(k,k)}> 1+c.\\]",
+    "tags": [
+      "graph theory",
+      "ramsey theory"
+    ],
+    "citation_keys": [
+      "Er93"
+    ],
+    "citation_keys_full": [
+      "[Er93,p.339]"
+    ]
+  },
+  {
+    "number": 1031,
+    "url": "https://www.erdosproblems.com/1031",
+    "status": "solved",
+    "prize": "PROVED This has been solved in the affirmative.",
+    "statement": "If $G$ is a graph on $n$ vertices which contains no trivial (empty or complete) subgraph on $\\geq 10\\log n$ many vertices, then must $G$ contain an induced non-trivial regular subgraph on $\\gg \\log n$ many vertices?",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "Er93"
+    ],
+    "citation_keys_full": [
+      "[Er93,p.340]"
+    ]
+  },
+  {
+    "number": 1032,
+    "url": "https://www.erdosproblems.com/1032",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "We say that a graph is $4$-chromatic critical if it has chromatic number $4$, and removing any edge decreases the chromatic number to $3$. Is there, for arbitrarily large $n$, a $4$-chromatic critical graph on $n$ vertices with minimum degree $\\gg n$?",
+    "tags": [
+      "graph theory",
+      "chromatic number"
+    ],
+    "citation_keys": [
+      "Er93",
+      "Va99"
+    ],
+    "citation_keys_full": [
+      "[Er93,p.341]",
+      "[Va99,3.60]"
+    ]
+  },
+  {
+    "number": 1033,
+    "url": "https://www.erdosproblems.com/1033",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Let $h(n)$ be such that every graph on $n$ vertices with $>n^2/4$ many edges contains a triangle whose vertices have degrees summing to at least $h(n)$. Estimate $h(n)$. In particular, is it true that\\[h(n)\\geq (2(\\sqrt{3}-1)-o(1))n?\\]",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "Er82e",
+      "Er93"
+    ],
+    "citation_keys_full": [
+      "[Er82e,p.71]",
+      "[Er93,p.344]"
+    ]
+  },
+  {
+    "number": 1034,
+    "url": "https://www.erdosproblems.com/1034",
+    "status": "solved",
+    "prize": "DISPROVED (LEAN) This has been solved in the negative and the proof verified in Lean.",
+    "statement": "Let $G$ be a graph on $n$ vertices with $>n^2/4$ many edges. Must there be a triangle $T$ in $G$ and vertices $y_1,\\ldots,y_t$, where $t>(\\frac{1}{2}-o(1))n$, such that every vertex is joined to at least two vertices of $T$?",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "Er93"
+    ],
+    "citation_keys_full": [
+      "[Er93,p.344]"
+    ]
+  },
+  {
+    "number": 1035,
+    "url": "https://www.erdosproblems.com/1035",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Is there a constant $c>0$ such that every graph on $2^n$ vertices with minimum degree $>(1-c)2^n$ contains the $n$-dimensional hypercube $Q_n$?",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "Er93"
+    ],
+    "citation_keys_full": [
+      "[Er93,p.345]"
+    ]
+  },
+  {
+    "number": 1036,
+    "url": "https://www.erdosproblems.com/1036",
+    "status": "solved",
+    "prize": "PROVED (LEAN) This has been solved in the affirmative and the proof verified in Lean.",
+    "statement": "Let $G$ be a graph on $n$ vertices which does not contain a trivial (empty or complete) graph on more than $c\\log n$ vertices. Must $G$ contain at least $2^{\\Omega_c(n)}$ many induced subgraphs which are not pairwise isomorphic?",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "Er93",
+      "Va99"
+    ],
+    "citation_keys_full": [
+      "[Er93,p.346]",
+      "[Va99,3.53]"
+    ]
+  },
+  {
+    "number": 1037,
+    "url": "https://www.erdosproblems.com/1037",
+    "status": "solved",
+    "prize": "DISPROVED (LEAN) This has been solved in the negative and the proof verified in Lean.",
+    "statement": "Let $G$ be a graph on $n$ vertices in which every degree occurs at most twice, and the number of distinct degree is $>(\\frac{1}{2}+\\epsilon)n$. Must $G$ contain a trivial (empty or complete) subgraph of size 'much larger' than $\\log n$?",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "Er93"
+    ],
+    "citation_keys_full": [
+      "[Er93,p.347]"
+    ]
+  },
+  {
+    "number": 1066,
+    "url": "https://www.erdosproblems.com/1066",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Let $G$ be a graph given by $n$ points in $\\mathbb{R}^2$, where any two distinct points are at least distance $1$ apart, and we draw an edge between two points if they are distance $1$ apart. Let $g(n)$ be maximal such that any such graph always has an independent set on at least $g(n)$ vertices. Estimate $g(n)$, or perhaps $\\lim \\frac{g(n)}{n}$.",
+    "tags": [
+      "graph theory",
+      "planar graphs"
+    ],
+    "citation_keys": [
+      "Er87b"
+    ],
+    "citation_keys_full": [
+      "[Er87b,p.171]"
+    ]
+  },
+  {
+    "number": 1067,
+    "url": "https://www.erdosproblems.com/1067",
+    "status": "solved",
+    "prize": "DISPROVED (LEAN) This has been solved in the negative and the proof verified in Lean.",
+    "statement": "Does every graph with chromatic number $\\aleph_1$ contain an infinitely connected subgraph with chromatic number $\\aleph_1$?",
+    "tags": [
+      "graph theory",
+      "set theory"
+    ],
+    "citation_keys": [
+      "ErHa66",
+      "ErHa85"
+    ],
+    "citation_keys_full": [
+      "[ErHa66,p.77]",
+      "[ErHa85]"
+    ]
+  },
+  {
+    "number": 1068,
+    "url": "https://www.erdosproblems.com/1068",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Does every graph with chromatic number $\\aleph_1$ contain a countable subgraph which is infinitely vertex-connected?",
+    "tags": [
+      "graph theory",
+      "set theory",
+      "chromatic number"
+    ],
+    "citation_keys": [
+      "Va99"
+    ],
+    "citation_keys_full": [
+      "[Va99,7.90]"
+    ]
+  },
+  {
+    "number": 1077,
+    "url": "https://www.erdosproblems.com/1077",
+    "status": "solved",
+    "prize": "DISPROVED This has been solved in the negative.",
+    "statement": "We call a graph $D$-balanced (or $D$-almost-regular) if the maximum degree is at most $D$ times the minimum degree. Let $\\epsilon,\\alpha>0$ and $D$ and $n$ be sufficiently large. If $G$ is a graph on $n$ vertices with at least $n^{1+\\alpha}$ edges, then must $G$ contain a $D$-balanced subgraph on $m>n^{1-\\alpha}$ vertices with at least $\\epsilon m^{1+\\alpha}$ edges?",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "ErSi70"
+    ],
+    "citation_keys_full": [
+      "[ErSi70,p.388]"
+    ]
+  },
+  {
+    "number": 1078,
+    "url": "https://www.erdosproblems.com/1078",
+    "status": "solved",
+    "prize": "PROVED This has been solved in the affirmative.",
+    "statement": "Let $G$ be an $r$-partite graph with $n$ vertices in each part. If $G$ has minimum degree $\\geq (r-\\frac{3}{2}-o(1))n$ then $G$ must contain a $K_r$.",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "BES75",
+      "Er75"
+    ],
+    "citation_keys_full": [
+      "[BES75]",
+      "[Er75]"
+    ]
+  },
+  {
+    "number": 1079,
+    "url": "https://www.erdosproblems.com/1079",
+    "status": "solved",
+    "prize": "SOLVED This has been resolved in some other way than a proof or disproof.",
+    "statement": "Let $r\\geq 4$. If $G$ is a graph on $n$ vertices with at least $\\mathrm{ex}(n;K_r)$ edges then must $G$ contain a vertex with degree $d\\gg_r n$ whose neighbourhood contains at least $\\mathrm{ex}(d;K_{r-1})$ edges?",
+    "tags": [
+      "graph theory",
+      "turan number"
+    ],
+    "citation_keys": [
+      "Er75"
+    ],
+    "citation_keys_full": [
+      "[Er75]"
+    ]
+  },
+  {
+    "number": 1080,
+    "url": "https://www.erdosproblems.com/1080",
+    "status": "solved",
+    "prize": "DISPROVED (LEAN) This has been solved in the negative and the proof verified in Lean.",
+    "statement": "Let $G$ be a bipartite graph on $n$ vertices such that one part has $\\lfloor n^{2/3}\\rfloor$ vertices. Is there a constant $c>0$ such that if $G$ has at least $cn$ edges then $G$ must contain a $C_6$?",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "Er75",
+      "Er79g"
+    ],
+    "citation_keys_full": [
+      "[Er75]",
+      "[Er79g]"
+    ]
+  },
+  {
+    "number": 1091,
+    "url": "https://www.erdosproblems.com/1091",
+    "status": "solved",
+    "prize": "SOLVED This has been resolved in some other way than a proof or disproof.",
+    "statement": "Let $G$ be a $K_4$-free graph with chromatic number $4$. Must $G$ contain an odd cycle with at least two diagonals? More generally, is there some $f(r)\\to \\infty$ such that every graph with chromatic number $4$, in which every subgraph on $\\leq r$ vertices has chromatic number $\\leq 3$, contains an odd cycle with at least $f(r)$ diagonals?",
+    "tags": [
+      "graph theory",
+      "chromatic number"
+    ],
+    "citation_keys": [
+      "Er76c"
+    ],
+    "citation_keys_full": [
+      "[Er76c,p.4]"
+    ]
+  },
+  {
+    "number": 1092,
+    "url": "https://www.erdosproblems.com/1092",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Let $f_r(n)$ be maximal such that, if a graph $G$ has the property that every subgraph $H$ on $m$ vertices is the union of a graph with chromatic number $r$ and a graph with $\\leq f_r(m)$ edges, then $G$ has chromatic number $\\leq r+1$. Is it true that $f_2(n) \\gg n$? More generally, is $f_r(n)\\gg_r n$?",
+    "tags": [
+      "graph theory",
+      "chromatic number"
+    ],
+    "citation_keys": [
+      "Er76c"
+    ],
+    "citation_keys_full": [
+      "[Er76c,p.4]"
+    ]
+  },
+  {
+    "number": 1104,
+    "url": "https://www.erdosproblems.com/1104",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Let $f(n)$ be the maximum possible chromatic number of a triangle-free graph on $n$ vertices. Estimate $f(n)$.",
+    "tags": [
+      "graph theory",
+      "chromatic number"
+    ],
+    "citation_keys": [
+      "Er67c"
+    ],
+    "citation_keys_full": [
+      "[Er67c]"
+    ]
+  },
+  {
+    "number": 1105,
+    "url": "https://www.erdosproblems.com/1105",
+    "status": "solved",
+    "prize": "PROVED This has been solved in the affirmative.",
+    "statement": "The anti-Ramsey number $\\mathrm{AR}(n,G)$ is the maximum possible number of colours in which the edges of $K_n$ can be coloured without creating a rainbow copy of $G$ (i.e. one in which all edges have different colours). Let $C_k$ be the cycle on $k$ vertices. Is it true that\\[\\mathrm{AR}(n,C_k)=\\left(\\frac{k-2}{2}+\\frac{1}{k-1}\\right)n+O(1)?\\]Let $P_k$ be the path on $k$ vertices and $\\ell=\\lfloor\\frac{k-1}{2}\\rfloor$. If $n\\geq k\\geq 5$ then is $\\mathrm{AR}(n,P_k)$ equal to\\[\\max\\left(\\binom{k-2}{2}+1, \\binom{\\ell-1}{2}+(\\ell-1)(n-\\ell+1)+\\epsilon\\right)\\]where $\\epsilon=1$ if $k$ is odd and $\\epsilon=2$ otherwise?",
+    "tags": [
+      "graph theory",
+      "ramsey theory"
+    ],
+    "citation_keys": [
+      "ESS75"
+    ],
+    "citation_keys_full": [
+      "[ESS75]"
+    ]
+  },
+  {
+    "number": 1111,
+    "url": "https://www.erdosproblems.com/1111",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "If $G$ is a finite graph and $A,B$ are disjoint sets of vertices then we call $A,B$ anticomplete if there are no edges between $A$ and $B$. If $t,c\\geq 1$ then there exists $d\\geq 1$ such that if $\\chi(G)\\geq d$ and $\\omega(G)<t$ then there are anticomplete sets $A,B$ with $\\chi(A)\\geq \\chi(B)\\geq c$.",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "ElEr85",
+      "Er85b"
+    ],
+    "citation_keys_full": [
+      "[ElEr85]",
+      "[Er85b]"
+    ]
+  },
+  {
+    "number": 1155,
+    "url": "https://www.erdosproblems.com/1155",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Construct a random graph on $n$ vertices in the following way: begin with the complete graph $K_n$. At each stage, choose uniformly a random triangle in the graph and delete all the edges of this triangle. Repeat until the graph is triangle-free. Describe the typical parameters and structure of such a graph. In particular, if $f(n)$ is the number of edges remaining, then is it true that\\[\\mathbb{E}f(n)\\asymp n^{3/2}\\]and that $f(n) \\ll n^{3/2}$ almost surely?",
+    "tags": [
+      "graph theory"
+    ],
+    "citation_keys": [
+      "Bo98",
+      "Va99"
+    ],
+    "citation_keys_full": [
+      "[Bo98,p.231]",
+      "[Va99,3.61]"
+    ]
+  },
+  {
+    "number": 1156,
+    "url": "https://www.erdosproblems.com/1156",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Let $G$ be a random graph on $n$ vertices, in which every edge is included independently with probability $1/2$. Is there some constant $C$ such that that chromatic number $\\chi(G)$ is, almost surely, concentrated on at most $C$ values? Is it true that, if $\\omega(n)\\to \\infty$ sufficiently slowly, then for every function $f(n)$\\[\\mathbb{P}(\\lvert\\chi(G)-f(n)\\rvert<\\omega(n))<1/2\\]if $n$ is sufficiently large?",
+    "tags": [
+      "graph theory",
+      "chromatic number"
+    ],
+    "citation_keys": [
+      "AlSp92",
+      "Va99"
+    ],
+    "citation_keys_full": [
+      "[AlSp92]",
+      "[Va99,3.6]"
+    ]
+  },
+  {
+    "number": 1178,
+    "url": "https://www.erdosproblems.com/1178",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "For $r\\geq 3$ let $d_r(e)$ be the minimal $d$ such that\\[\\mathrm{ex}_r(n,\\mathcal{F})=o(n^2),\\]where $\\mathcal{F}$ is the family of $r$-uniform hypergraphs on $d$ vertices with $e$ edges. Prove that\\[d_r(e)=(r-2)e+3\\]for all $r,e\\geq 3$.",
+    "tags": [
+      "graph theory",
+      "hypergraphs"
+    ],
+    "citation_keys": [
+      "BES73",
+      "Er75b",
+      "Er81"
+    ],
+    "citation_keys_full": [
+      "[BES73]",
+      "[Er75b]",
+      "[Er81]"
+    ]
+  },
+  {
+    "number": 1182,
+    "url": "https://www.erdosproblems.com/1182",
+    "status": "open",
+    "prize": "OPEN This is open, and cannot be resolved with a finite computation.",
+    "statement": "Let $f(n)$ be maximal such that there is a connected graph $G$ with $n$ vertices and $f(n)$ edges such that\\[R(K_3,G)= 2n-1.\\]Let $F(n)$ be maximal such that every connected graph $G$ with $n$ vertices and $\\leq F(n)$ edges has\\[R(K_3,G)= 2n-1.\\]Estimate $f(n)$ and $F(n)$. In particular, is it true that $F(n)/n\\to \\infty$?",
+    "tags": [
+      "graph theory",
+      "ramsey theory"
+    ],
+    "citation_keys": [
+      "BEFRS80",
+      "Er78"
+    ],
+    "citation_keys_full": [
+      "[Er78,p.33]",
+      "[BEFRS80]"
+    ]
+  },
+  {
+    "number": 1216,
+    "url": "https://www.erdosproblems.com/1216",
+    "status": "solved",
+    "prize": "DISPROVED This has been solved in the negative.",
+    "statement": "A tournament is a complete directed graph. Let $f(n)$ be such that every tournament on $n$ vertices contains a transitive tournament on $f(n)$ vertices (i.e. one such that if $i\\to j\\to k$ then $i\\to k$). Is it true that $f(n)=\\lfloor \\log_2 n\\rfloor +1$?",
+    "tags": [
+      "graph theory",
+      "ramsey theory"
+    ],
+    "citation_keys": [
+      "ErMo64"
+    ],
+    "citation_keys_full": [
+      "[ErMo64,p.127]"
+    ]
+  }
+]

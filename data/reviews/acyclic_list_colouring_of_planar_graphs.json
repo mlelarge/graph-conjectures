@@ -1,0 +1,50 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The conjecture that every planar graph is acyclically 5-choosable remains open. Before the OPG posting, Borodin and Ivanova (2011, Siberian Math. J.) had already established the conjecture for planar graphs without 4-cycles; post-2013 work has continued to prove acyclic choosability (with 4 or 5 colors) for increasingly refined restricted classes of planar graphs. A 2024 arXiv preprint establishes the first fixed bound for acyclic list colouring of locally planar graphs (embedded in any surface), showing acyclic 9-list-colourability, but does not resolve the planar 5-choosability conjecture.",
+  "since_posted": [
+    {
+      "title": "Acyclic 4-choosability of planar graphs without 4-cycles",
+      "authors": "Yingcai Sun, Min Chen",
+      "year": 2020,
+      "venue": "Czechoslovak Mathematical Journal",
+      "url": "https://articles.math.cas.cz/10.21136/CMJ.2019.0197-18",
+      "doi": "10.21136/CMJ.2019.0197-18",
+      "arxiv_id": null,
+      "kind": "partial",
+      "claim": "Every planar graph with neither 4-cycles nor intersecting $i$-cycles for each $i\\in\\{3,5\\}$ is acyclically 4-choosable, advancing the Montassier–Raspaud–Wang conjecture for restricted subclasses."
+    },
+    {
+      "title": "Acyclic List Colouring Locally Planar Graphs",
+      "authors": "Luke Postle, Evelyne Smith-Roberge, Massimo Vicenzo",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2412.09410",
+      "doi": null,
+      "arxiv_id": "2412.09410",
+      "kind": "partial",
+      "claim": "Locally planar graphs embedded in any fixed surface are acyclically 9-list-colourable (the first finite bound for acyclic list colouring beyond the plane), extending the planar 7-list-colourability result of Borodin et al. (2002) to more general surfaces."
+    }
+  ],
+  "search_queries": [
+    "acyclic list coloring planar graphs 5-choosable conjecture",
+    "acyclically 5-choosable planar graphs Borodin Kostochka progress",
+    "acyclic list colouring planar graphs arXiv 2020 2021 2022 2023 2024 2025",
+    "planar graphs without 4-cycles acyclically 5-choosable Borodin Ivanova",
+    "acyclic 5-choosability planar graphs 2014 2015 2016 2017 2018 2019 progress",
+    "Borodin \"acyclic choosability\" planar graph 2015 2016 2017 2018 2019 2020 new result",
+    "\"acyclically 5-choosable\" OR \"acyclic 5-list-coloring\" planar graphs 2020 2021 2022 2023 site:arxiv.org",
+    "acyclic choosability planar graphs conjecture survey 2021 2022 2023 2024 open problems"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2412.09410",
+    "https://arxiv.org/html/2412.09410",
+    "https://articles.math.cas.cz/10.21136/CMJ.2019.0197-18"
+  ],
+  "notes": "The Borodin–Ivanova result proving acyclic 5-choosability for planar graphs without 4-cycles (Siberian Math. J. 52, 2011) predates the OPG posting (2013-03-07) and is therefore not in since_posted. Several post-2013 papers on acyclic 4-choosability for restricted planar graph classes (e.g., ScienceDirect 2021 paper on no cycles of length 4, 7, 9) could not be verified via WebFetch due to HTTP 403 responses. The 2024 Postle–Smith-Roberge–Vicenzo preprint concerns locally planar graphs on general surfaces; it does not resolve or improve the bound of 7 for plain planar graph acyclic list coloring. No evidence was found that the full conjecture (all planar graphs are acyclically 5-choosable) has been resolved.",
+  "slug": "acyclic_list_colouring_of_planar_graphs",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "elapsed_seconds": 191.0
+}

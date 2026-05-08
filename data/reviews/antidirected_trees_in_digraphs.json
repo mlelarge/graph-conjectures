@@ -1,0 +1,84 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The conjecture remains open in general. The most significant post-2013 advances are: Stein and Trujillo-Negrete (2024) proved the conjecture for all antidirected caterpillars (achieving $|A(D)|>(k-1)|V(D)|$ implies every antidirected $k$-arc caterpillar is present) and for $K_{2,s}$-free digraphs with $s=\\lceil k/12\\rceil$; Stein and Zárate-Guerén (2022) showed the conjecture is asymptotically true in oriented graphs for all balanced antidirected trees of bounded maximum degree and of size linear in $n$. The full conjecture for arbitrary antidirected trees under pure arc-density conditions is still open.",
+  "since_posted": [
+    {
+      "title": "Antidirected subgraphs of oriented graphs",
+      "authors": "Maya Stein, Camila Zárate-Guerén",
+      "year": 2022,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2212.00769",
+      "doi": null,
+      "arxiv_id": "2212.00769",
+      "kind": "partial",
+      "claim": "Proves the Addario-Berry et al. conjecture is asymptotically true in $n$-vertex oriented graphs for all balanced antidirected trees of bounded maximum degree and of size linear in $n$, using minimum semidegree $>(1+\\eta)(k-1)$ as density surrogate."
+    },
+    {
+      "title": "Semidegree, edge density and antidirected subgraphs",
+      "authors": "Maya Stein, Camila Zárate-Guerén",
+      "year": 2023,
+      "venue": "European Conference on Combinatorics, Graph Theory and Applications (EuroComb 2023)",
+      "url": "https://journals.muni.cz/eurocomb/article/view/35647",
+      "doi": null,
+      "arxiv_id": null,
+      "kind": "partial",
+      "claim": "Conference version presenting asymptotic results for balanced antidirected trees of bounded degree in oriented graphs with high minimum semidegree, addressing the Addario-Berry et al. arc-density conjecture."
+    },
+    {
+      "title": "Oriented trees and paths in digraphs",
+      "authors": "Maya Stein",
+      "year": 2024,
+      "venue": "Surveys in Combinatorics 2024, Cambridge University Press",
+      "url": "https://arxiv.org/abs/2310.18719",
+      "doi": null,
+      "arxiv_id": "2310.18719",
+      "kind": "survey",
+      "claim": "Comprehensive survey covering all known results on oriented tree containment in digraphs; confirms the Addario-Berry et al. conjecture remains open, with the caterpillar case and diameter-$\\leq 3$ case as the main resolved classes."
+    },
+    {
+      "title": "Antidirected trees in dense digraphs",
+      "authors": "Maya Stein, Ana Trujillo-Negrete",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2404.10750",
+      "doi": null,
+      "arxiv_id": "2404.10750",
+      "kind": "partial",
+      "claim": "Proves the conjecture fully for antidirected caterpillars (every digraph with $>\\!(k-1)n$ arcs contains every antidirected $k$-arc caterpillar), and for $K_{2,\\lceil k/12\\rceil}$-free digraphs under the same arc-density threshold."
+    },
+    {
+      "title": "Antidirected trees in directed graphs",
+      "authors": "George Kontogeorgiou, Giovanne Santos, Maya Stein",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2501.11726",
+      "doi": null,
+      "arxiv_id": "2501.11726",
+      "kind": "partial",
+      "claim": "Establishes minimum semidegree and maximum degree conditions (replacing arc-density conditions) that guarantee containment of balanced antidirected trees of bounded maximum degree, extending prior asymptotic results."
+    }
+  ],
+  "search_queries": [
+    "antidirected trees digraphs conjecture Addario-Berry Havet arc condition",
+    "antidirected tree digraph arXiv conjecture order k",
+    "Stein Zárate-Guerén balanced antidirected trees digraphs approximate arXiv",
+    "\"antidirected trees\" digraphs conjecture proved 2024 2025 caterpillar Stein"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2501.11726",
+    "https://arxiv.org/abs/2310.18719",
+    "https://arxiv.org/html/2501.11726",
+    "https://arxiv.org/html/2310.18719",
+    "https://journals.muni.cz/eurocomb/article/view/35647",
+    "https://arxiv.org/abs/2404.10750",
+    "https://arxiv.org/abs/2212.00769",
+    "https://arxiv.org/html/2404.10750"
+  ],
+  "notes": "All verified papers use the edge convention 'k arcs in the tree' (i.e., tree order k+1), which is consistent with the OPG formulation after shifting k by 1. The EuroComb 2023 entry (Stein–Zárate-Guerén) may be a conference version of arXiv:2212.00769; if so, only the arXiv paper need be cited. No paper fully resolves the conjecture for all antidirected trees under arc-density conditions. The Klimošová–Stein 2023 result on antidirected paths in oriented graphs was mentioned in the survey but could not be independently verified within the search budget.",
+  "slug": "antidirected_trees_in_digraphs",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "elapsed_seconds": 164.2
+}

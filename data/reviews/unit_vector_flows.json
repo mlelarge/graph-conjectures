@@ -1,0 +1,68 @@
+{
+  "slug": "unit_vector_flows",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 03)",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Jain's second conjecture—that a map $q:S^2\\to\\{-4,-3,-2,-1,1,2,3,4\\}$ with the required properties exists—was disproved in March 2026 by Ulyanov, who exhibited explicit point sets on $S^2$ that force the additional values $\\pm 5$. The first conjecture (every bridgeless graph admits a flow $\\phi:E(G)\\to S^2$) remains open, though partial results since 2023 establish geometric characterisations and bounds on related $d$-dimensional flow numbers.",
+  "since_posted": [
+    {
+      "title": "On $d$-dimensional nowhere-zero $r$-flows on a graph",
+      "authors": "Davide Mattiolo, Giuseppe Mazzuoccolo, Jozef Rajník, Gloria Tabarelli",
+      "year": 2023,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2304.14231",
+      "doi": null,
+      "arxiv_id": "2304.14231",
+      "kind": "partial",
+      "claim": "Proves $\\phi_2(G)\\le 1+\\sqrt{5}$ for all bridgeless graphs and shows the oriented 5-cycle double cover conjecture would imply the bound $\\phi_2(G)\\le\\tau^2$ (golden ratio squared), giving the first quantitative upper bounds for 2-dimensional unit-vector flows."
+    },
+    {
+      "title": "Geometric description of $d$-dimensional flows of a graph",
+      "authors": "Davide Mattiolo, Giuseppe Mazzuoccolo, Jozef Rajník, Gloria Tabarelli",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2510.19411",
+      "doi": null,
+      "arxiv_id": "2510.19411",
+      "kind": "partial",
+      "claim": "Establishes that existence of a suitable cycle double cover is equivalent to the graph admitting a geometrically constructed $(r,d)$-nowhere-zero flow, linking the first unit-vector flows conjecture to the cycle double cover programme."
+    },
+    {
+      "title": "2-dimensional unit vector flows",
+      "authors": "Hussein Houdrouge, Bobby Miraftab, Pat Morin",
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2602.21526",
+      "doi": "10.48550/arXiv.2602.21526",
+      "arxiv_id": "2602.21526",
+      "kind": "partial",
+      "claim": "Gives a geometric characterisation of cubic graphs that admit an $S^2$-flow (i.e., satisfy Jain's first conjecture) and shows this class is closed under specific composition operations, extending algebraic rank methods from $S^1$-flows to $S^2$-flows."
+    },
+    {
+      "title": "Graph Puzzles II.1: Counterexamples to Jain's Second Unit Vector Flows Conjecture",
+      "authors": "Nikolay Ulyanov",
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2603.23328",
+      "doi": null,
+      "arxiv_id": "2603.23328",
+      "kind": "counterexample",
+      "claim": "Constructs explicit point sets on $S^2$ (including one derived from the icosidodecahedron) that are counterexamples to Jain's second conjecture: these sets require the additional values $\\pm 5$, so no map $q:S^2\\to\\{-4,-3,-2,-1,1,2,3,4\\}$ with the required antipodal and great-circle-sum properties exists."
+    }
+  ],
+  "search_queries": [
+    "unit vector flows graph theory S2 flow bridgeless conjecture Tutte 5-flow",
+    "Kamal Jain unit vector flow conjecture graph nowhere-zero arXiv",
+    "\"unit vector flow\" OR \"S^2 flow\" OR \"sphere flow\" graph theory nowhere-zero Tutte conjecture",
+    "nowhere-zero flow conjecture Tutte 5-flow progress survey 2020 2021 2022 2023 2024 2025"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2603.23328",
+    "https://arxiv.org/abs/2602.21526",
+    "https://arxiv.org/abs/2304.14231",
+    "https://arxiv.org/abs/2510.19411"
+  ],
+  "notes": "Jain's second conjecture is definitively refuted (Ulyanov 2026), closing off the specific two-conjecture route to Tutte's 5-flow conjecture. Jain's first conjecture (S²-flows for all bridgeless graphs) remains open and is the active focus of the 2026 Houdrouge–Miraftab–Morin preprint. The 2023 and 2025 Mattiolo et al. papers work in the more general (r,d)-nowhere-zero flow setting rather than targeting the S² conjecture directly. No journal-published versions of the 2023–2026 arXiv papers were confirmed."
+}

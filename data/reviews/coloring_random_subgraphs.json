@@ -1,0 +1,71 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Bukh's 2008 conjecture that $\\mathbb{E}(\\chi(G_{1/2})) \\geq c\\,\\chi(G)/\\log\\chi(G)$ for all graphs $G$ remains open. Partial results confirm it for graphs with small independence number $\\alpha(G) \\leq O(n/k)$ (Shinkar 2016) and for the fractional chromatic number analogue (Mohar–Wu 2018), and a 2023 paper by the original proposer with collaborators establishes tail-probability bounds for $\\chi(G_{1/2})$ and studies the degeneracy of $G_{1/2}$, but the conjecture in its original integral form is unresolved.",
+  "since_posted": [
+    {
+      "title": "On Coloring Random Subgraphs of a Fixed Graph",
+      "authors": "Igor Shinkar",
+      "year": 2016,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/1612.04319",
+      "doi": null,
+      "arxiv_id": "1612.04319",
+      "kind": "partial",
+      "claim": "Proves Bukh's conjecture for the special case of graphs with $\\chi(G)=k$ and independence number $\\alpha(G) \\leq O(n/k)$, and gives exponential tail bounds showing $\\Pr[\\chi(G_{1/2}) \\leq d] \\leq \\exp(-\\Omega(k(k-d^3)/d^3))$ for all $d \\leq k^{1/3}$."
+    },
+    {
+      "title": "Fractional chromatic number of a random subgraph",
+      "authors": "Bojan Mohar, Hehui Wu",
+      "year": 2018,
+      "venue": "Journal of Graph Theory",
+      "url": "https://arxiv.org/abs/1807.06285",
+      "doi": null,
+      "arxiv_id": "1807.06285",
+      "kind": "partial",
+      "claim": "Proves the fractional-chromatic-number analogue of Bukh's conjecture: for every graph with fractional chromatic number $\\geq n$, a random subgraph $G_{1/2}$ has fractional chromatic number $\\geq n/(8\\log_2(4n))$ with probability $> 1 - 1/(2n)$."
+    },
+    {
+      "title": "Expected Chromatic Number of Random Subgraphs",
+      "authors": "Ross Berkowitz, Pat Devlin, Catherine Lee, Henry Reichard, David Townley",
+      "year": 2018,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/1811.02018",
+      "doi": null,
+      "arxiv_id": "1811.02018",
+      "kind": "partial",
+      "claim": "Establishes a new spectral lower bound on $\\mathbb{E}[\\chi(G_p)]$ as progress toward Bukh's conjecture, and confirms the conjecture for planar graphs and graphs with chromatic number less than 4."
+    },
+    {
+      "title": "Colouring random subgraphs",
+      "authors": "Boris Bukh, Michael Krivelevich, Bhargav Narayanan",
+      "year": 2023,
+      "venue": "Combinatorics, Probability and Computing",
+      "url": "https://arxiv.org/abs/2312.08340",
+      "doi": "10.1017/S0963548325000069",
+      "arxiv_id": "2312.08340",
+      "kind": "partial",
+      "claim": "Proves tail bounds for $\\chi(G_{1/2})$ across several regimes, and shows there exist infinitely many $k$-regular graphs whose degeneracy (colouring number) of $G_{1/2}$ is at most $k/3+o(k)$ w.h.p.; explicitly lists the conjecture $\\mathbb{E}[\\chi(G_{1/2})] = \\Omega(k/\\log k)$ as an open problem (Problem 1.1)."
+    }
+  ],
+  "search_queries": [
+    "chromatic number random subgraph E[chi(G_{1/2})] Bukh conjecture",
+    "expected chromatic number random subgraph lower bound chi(G)/log chi(G)",
+    "Bukh conjecture chromatic number random subgraph solved proof 2022 2023 2024 2025",
+    "\"colouring random subgraphs\" Bukh Krivelevich Narayanan 2023 chromatic number conjecture result",
+    "chromatic number random subgraph chi(G)/log chi(G) proof arXiv 2024 2025 2026"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/1612.04319",
+    "https://arxiv.org/abs/1811.02018",
+    "https://arxiv.org/abs/1807.06285",
+    "https://arxiv.org/abs/2312.08340",
+    "https://www.cambridge.org/core/journals/combinatorics-probability-and-computing/article/abs/colouring-random-subgraphs/9588DBC09CAC910D81F0F02BB01126A0"
+  ],
+  "notes": "The Wiley journal page for Mohar–Wu (doi:10.1002/jgt.22571) returned HTTP 403; the DOI is inferred from the Wiley URL appearing in search results but was not directly fetch-verified, so it is left null. The 2023/2025 Bukh–Krivelevich–Narayanan paper was verified via both the arXiv abstract page and the Cambridge Core journal page (published CPC vol. 34 iss. 4, 2025). No resolution of the original integer chromatic number conjecture was found through 2026.",
+  "slug": "coloring_random_subgraphs",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "elapsed_seconds": 141.6
+}

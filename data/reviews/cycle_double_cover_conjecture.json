@@ -1,0 +1,72 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The Cycle Double Cover Conjecture remains open; no complete proof has been accepted by the mathematical community, and several claimed arXiv proofs (2012, 2015, 2018) were later found to contain errors. Post-2007 progress includes a proof of Jaeger's directed version for lean fork-graphs, exponential lower bounds for the counting version for planar cubic graphs, and approximate results giving nontrivial upper bounds on singular edges in cubic graph embeddings.",
+  "since_posted": [
+    {
+      "title": "Directed Cycle Double Cover Conjecture: Fork Graphs",
+      "authors": "Andrea Jiménez, Martin Loebl",
+      "year": 2013,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/1310.5539",
+      "doi": null,
+      "arxiv_id": "1310.5539",
+      "kind": "partial",
+      "claim": "Proves Jaeger's directed cycle double cover conjecture for lean fork-graphs, an inductively defined class of cubic bridgeless graphs whose members contain subdivisions of all cubic bridgeless graphs as induced subgraphs."
+    },
+    {
+      "title": "Counting circuit double covers",
+      "authors": "Radek Hušek, Robert Šámal",
+      "year": 2023,
+      "venue": "Journal of Graph Theory",
+      "url": "https://arxiv.org/abs/2303.10615",
+      "doi": "10.1002/jgt.23187",
+      "arxiv_id": "2303.10615",
+      "kind": "partial",
+      "claim": "Proves an exponential lower bound on the number of circuit double covers for planar bridgeless cubic graphs and an almost-exponential lower bound for graphs with surface embedding representativity at least 4, establishing the first counting results toward CDC."
+    },
+    {
+      "title": "Approximate cycle double cover",
+      "authors": "Babak Ghanbari, Robert Šámal",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2511.07285",
+      "doi": null,
+      "arxiv_id": "2511.07285",
+      "kind": "partial",
+      "claim": "Establishes nontrivial upper bounds on the minimum number of singular edges in a 2-cell embedding of a cubic graph (CDC being equivalent to achieving zero singular edges), giving an approximate version of the conjecture with efficient algorithms."
+    },
+    {
+      "title": "Facial diagrams and cycle double cover",
+      "authors": "Babak Ghanbari, Robert Šámal",
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2605.01410",
+      "doi": null,
+      "arxiv_id": "2605.01410",
+      "kind": "partial",
+      "claim": "Studies circular 2-cell embeddings of cubic graphs via twist operations on edges, derives bounds on singular edges, and develops analytical tools further advancing the approximate CDC program."
+    }
+  ],
+  "search_queries": [
+    "cycle double cover conjecture progress 2010 2020 2025 graph theory",
+    "Seymour Szekeres cycle double cover conjecture solved proved arXiv",
+    "cycle double cover conjecture bridgeless graph recent results survey",
+    "arXiv cycle double cover conjecture 2015 2020 2024 2025"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/1510.02075",
+    "https://arxiv.org/abs/2511.07285",
+    "https://arxiv.org/abs/2307.06649",
+    "https://arxiv.org/abs/2605.01410",
+    "https://en.wikipedia.org/wiki/Cycle_double_cover",
+    "https://arxiv.org/abs/2303.10615",
+    "https://arxiv.org/abs/1811.08719",
+    "https://arxiv.org/abs/1310.5539"
+  ],
+  "notes": "Three arXiv preprints claim to prove the CDC conjecture (1202.0569, 1510.02075, 1811.08719); the 2015 paper (Radcliffe, arXiv:1510.02075) has a confirmed error noted on its own arXiv page. The Fischer 2023 paper (arXiv:2307.06649) claims to prove CDC for simple bridgeless triangle-free cubic graphs using percolation theory, but remains an unreviewed preprint as of March 2025. Wikipedia and the mathematical community confirm the conjecture is still open. Any minimal counterexample is known to have girth at least 12.",
+  "slug": "cycle_double_cover_conjecture",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 08)",
+  "search_enabled": true
+}

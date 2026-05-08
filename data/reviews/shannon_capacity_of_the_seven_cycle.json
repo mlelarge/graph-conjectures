@@ -1,0 +1,47 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The Shannon capacity of $C_7$ remains unknown. Since the problem was posted in 2009, the best lower bound has been improved twice: first to $c(C_7) \\geq 350^{1/5} > 3.2271$ by Mathew and Östergård (2016) using stochastic search, and then to $\\Theta(C_7) \\geq 367^{1/5} > 3.2578$ by Polak and Schrijver (2019) via circular graphs. The Lovász upper bound $\\vartheta(C_7) = 7\\cos(\\pi/7)/(1+\\cos(\\pi/7)) \\approx 3.3177$ remains unmatched, and the exact value is still open.",
+  "since_posted": [
+    {
+      "title": "New Lower Bounds for the Shannon Capacity of Odd Cycles",
+      "authors": "K. Ashik Mathew, Patric R. J. Östergård",
+      "year": 2016,
+      "venue": "Designs, Codes and Cryptography",
+      "url": "https://arxiv.org/abs/1504.01472",
+      "doi": "10.1007/s10623-016-0194-7",
+      "arxiv_id": "1504.01472",
+      "kind": "partial",
+      "claim": "Proved $c(C_7) \\geq 350^{1/5} > 3.2271$ by computing $\\alpha(C_7^5) \\geq 350$ using stochastic search with prescribed stabilizers."
+    },
+    {
+      "title": "New lower bound on the Shannon capacity of C7 from circular graphs",
+      "authors": "Sven Polak, Alexander Schrijver",
+      "year": 2019,
+      "venue": "Information Processing Letters",
+      "url": "https://arxiv.org/abs/1808.07438",
+      "doi": null,
+      "arxiv_id": "1808.07438",
+      "kind": "partial",
+      "claim": "Proved $\\Theta(C_7) \\geq 367^{1/5} > 3.2578$ by constructing an independent set of size 367 in $C_7^{\\boxtimes 5}$ via a circulant structure in $\\mathbb{Z}_{382}^5$; this is the current best lower bound."
+    }
+  ],
+  "search_queries": [
+    "Shannon capacity C7 seven-cycle graph solved 2010 2025",
+    "Shannon capacity odd cycles C7 new bounds arXiv",
+    "Lovász theta function Shannon capacity cycle graph recent progress",
+    "\"Shannon capacity\" \"C_7\" OR \"seven-cycle\" conjecture proof 2010 2025"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/1808.07438",
+    "https://arxiv.org/abs/1504.01472",
+    "https://arxiv.org/abs/2509.24600",
+    "https://arxiv.org/abs/2402.10025",
+    "https://arxiv.org/abs/2510.16151"
+  ],
+  "notes": "The exact value of $\\Theta(C_7)$ is still open as of May 2026; the gap $367^{1/5} \\approx 3.2578 \\leq \\Theta(C_7) \\leq \\vartheta(C_7) \\approx 3.3177$ has not been closed. A 2025 paper by Zhu (arXiv:2402.10025) improves bounds on the Shannon capacity of *complements* of odd cycles, a related but distinct problem. The 2025 survey by Lavi and Sason (arXiv:2509.24600) covers advances for other graph families (q-Kneser, tadpole) but contains no new results on $C_7$. The 2023 Mycielski paper (arXiv:2312.09224) is about a different construction and does not resolve $C_7$.",
+  "slug": "shannon_capacity_of_the_seven_cycle",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 04)",
+  "search_enabled": true
+}

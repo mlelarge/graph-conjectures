@@ -1,0 +1,24 @@
+{
+  "status": "open",
+  "confidence": "high",
+  "summary": "The question of whether $\\chi_s'(K_n) = O(n)$ remains open. The bounds established by Dvořák, Mohar, and Šámal in the original paper — a lower bound of $(2+o(1))n$ and a superlinear upper bound of $n \\cdot 2^{2\\sqrt{2}(1+o(1))\\sqrt{\\log n}}/(\\log n)^{1/4}$ — still represent the state of the art. Multiple searches and the 2020 survey on star edge-coloring confirm that no resolution of the complete graph case has appeared in the literature.",
+  "since_posted": [],
+  "search_queries": [
+    "star chromatic index complete graph Kn linear upper bound",
+    "star chromatic index complete graphs Dvorak Mohar Samal progress 2011 2025",
+    "chi_s' K_n star edge coloring complete graph conjecture solved",
+    "star chromatic index complete graph linear 2020 2021 2022 2023 2024 new result improvement"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/1011.3376",
+    "https://arxiv.org/abs/2009.08017",
+    "https://arxiv.org/pdf/1307.1242",
+    "https://arxiv.org/pdf/2009.08017",
+    "https://kam.mff.cuni.cz/~kamserie/serie/clanky/2010/s987.pdf"
+  ],
+  "notes": "The survey arXiv:2009.08017 (Lei and Shi, 2020) on star edge-coloring was verified to exist but its PDF was not machine-readable; its abstract confirms it collects open problems in the area, suggesting the complete graph linearity question remains open. No citing paper found via four search rounds provided evidence of resolution. Research since 2010 has focused on specific graph classes (sparse graphs, subcubic, planar, multipartite) rather than on the complete graph linearity question.",
+  "slug": "star_chromatic_index_of_complete_graphs",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 04)",
+  "search_enabled": true
+}

@@ -1,0 +1,59 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Albertson's conjecture remains open in general, but substantial progress has been made since it was posted in 2009. Ackerman (2019) extended the verified range from $t \\le 16$ to $t \\le 18$; Cranston (2025) further pushed this to $t \\le 24$ and greatly restricts possible counterexamples for $t \\in \\{25, 26\\}$; Fox, Pach, and Suk (SoCG 2025) proved the conjecture for all graphs with chromatic number $k$ having at most $1.4(k-1)$ vertices (for sufficiently large $k$), via the Lescure–Meyniel weak immersion conjecture.",
+  "since_posted": [
+    {
+      "title": "On topological graphs with at most four crossings per edge",
+      "authors": "Eyal Ackerman",
+      "year": 2019,
+      "venue": "Computational Geometry",
+      "url": "https://arxiv.org/abs/1509.01932",
+      "doi": null,
+      "arxiv_id": "1509.01932",
+      "kind": "partial",
+      "claim": "As a corollary of results on topological graphs with at most four crossings per edge, proves Albertson's conjecture for $r \\le 18$, extending the prior bound of $r \\le 16$."
+    },
+    {
+      "title": "Immersions and Albertson's Conjecture",
+      "authors": "Jacob Fox, János Pach, Andrew Suk",
+      "year": 2025,
+      "venue": "41st International Symposium on Computational Geometry (SoCG 2025)",
+      "url": "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.SoCG.2025.50",
+      "doi": "10.4230/LIPIcs.SoCG.2025.50",
+      "arxiv_id": "2510.05893",
+      "kind": "partial",
+      "claim": "Proves Albertson's conjecture for all graphs with chromatic number $k$ having at most $1.4(k-1)$ vertices (for sufficiently large $k$), via a proof of the Lescure–Meyniel weak immersion conjecture in that range."
+    },
+    {
+      "title": "Progress on Albertson's Conjecture",
+      "authors": "Daniel W. Cranston",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2512.08020",
+      "doi": null,
+      "arxiv_id": "2512.08020",
+      "kind": "partial",
+      "claim": "Extends verification of Albertson's conjecture to $r \\le 24$ (from $r \\le 18$) and greatly restricts the possible counterexamples for $r \\in \\{25, 26\\}$, also improving bounds on the order of a minimum counterexample."
+    }
+  ],
+  "search_queries": [
+    "Albertson conjecture crossing number chromatic number graph progress",
+    "crossing number chromatic number Kt conjecture arXiv 2010 2025",
+    "Barat Toth Albertson conjecture crossing number t=16 extension",
+    "\"Albertson conjecture\" \"crossing number\" site:arxiv.org"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2512.08020",
+    "https://arxiv.org/abs/2510.05893",
+    "https://arxiv.org/abs/1006.3783",
+    "https://en.wikipedia.org/wiki/Albertson_conjecture",
+    "https://arxiv.org/abs/1509.01932",
+    "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.SoCG.2025.50"
+  ],
+  "notes": "The Ackerman paper (arXiv:1509.01932) was submitted in 2015 and revised/published in 2019; Wikipedia identifies the venue as Computational Geometry but I did not independently verify the journal DOI. The Fox–Pach–Suk arXiv preprint (2510.05893) appeared October 2025 after the SoCG 2025 conference; the published DROPS version cites the 1.4(k-1) vertex bound. The Cranston 2025 paper (arXiv:2512.08020) is a preprint as of December 2025; journal publication status unknown. The conjecture remains wide open for general graphs.",
+  "slug": "crossing_numbers_and_coloring",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 06)",
+  "search_enabled": true
+}

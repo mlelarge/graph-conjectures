@@ -1,0 +1,48 @@
+{
+  "slug": "cycle_double_covers_containing_predefined_2_regular_subgraphs",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet (subagent)",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "medium",
+  "summary": "The conjecture of Arthur and Hoffmann-Ostenhof asks whether every 2-connected cubic graph $G$ with a 2-regular subgraph $S$ such that $G-E(S)$ is connected has a cycle double cover containing all cycles of $S$. The motivating paper of Hoffmann-Ostenhof, Zhang, and Zhang (Eur. J. Combin., 2019) established the special case where $S$ has at most 3 circuits and $G-E(S)$ is a spanning tree, and Li, Hao, Luo, and Zhang (Discrete Math., 2025) extended the single-cycle ($S=C$ non-separating) case by producing a 5-CDC or 6-CDC containing $C$ depending on Petersen-contractibility. The full conjecture as stated for arbitrary 2-regular $S$ appears to remain open.",
+  "since_posted": [
+    {
+      "title": "Cycle double covers and non-separating cycles",
+      "authors": "Arthur Hoffmann-Ostenhof, Cun-Quan Zhang, Zhang Zhang",
+      "year": 2019,
+      "venue": "European Journal of Combinatorics",
+      "url": "https://arxiv.org/abs/1711.10614",
+      "doi": "10.1016/j.ejc.2019.03.011",
+      "arxiv_id": "1711.10614",
+      "kind": "partial",
+      "claim": "Proves that every 2-connected cubic graph that decomposes into a spanning tree and a 2-regular subgraph $C$ consisting of at most 3 circuits has a cycle double cover containing $C$, addressing the motivating special case of the conjecture."
+    },
+    {
+      "title": "Non-separating cycles and 5-cycle double covers",
+      "authors": "Xiaoyu Li, Rong-Xia Hao, Rong Luo, Cun-Quan Zhang",
+      "year": 2025,
+      "venue": "Discrete Mathematics",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0012365X25001232",
+      "doi": null,
+      "arxiv_id": null,
+      "kind": "partial",
+      "claim": "Strengthens the single non-separating cycle case: if a 2-edge-connected graph $G$ has a non-separating cycle $C$ satisfying certain conditions, then $G$ admits a 5-CDC containing $C$ (or a 6-CDC if $G$ is contractible to the Petersen graph)."
+    }
+  ],
+  "search_queries": [
+    "Hoffmann-Ostenhof cycle double cover 2-regular subgraph conjecture",
+    "\"cycle double cover\" \"2-regular subgraph\" cubic graph 2-connected",
+    "\"Hoffmann-Ostenhof\" cubic graph \"cycle double cover\" 2024 2025",
+    "\"Non-separating cycles and 5-cycle double covers\" Discrete Mathematics 2025 DOI authors"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/1711.10614",
+    "https://arxiv.org/abs/1706.05595",
+    "https://www.sciencedirect.com/science/article/abs/pii/S0012365X25001232",
+    "https://dblp.org/pid/61/2676.html",
+    "https://doi.org/10.1016/j.disc.2025.114479",
+    "https://doi.org/10.1137/22M1472425"
+  ],
+  "notes": "The OPG conjecture is for 2-regular subgraphs $S$ that may consist of multiple disjoint cycles (with $G-E(S)$ connected, not necessarily a tree). The 2019 paper (already cited in the OPG entry) covers $S$ with at most 3 components when $G-E(S)$ is a spanning tree. The 2025 Li-Hao-Luo-Zhang paper handles the single-cycle (k=1) non-separating case more strongly (5-CDC/6-CDC); ScienceDirect abstract page returned 403 so confirmation relied on indexed search snippets. No WebFetch-verified post-2017 source establishes the full conjecture for arbitrary k or refutes it, so the original conjecture is treated as open with meaningful partial progress."
+}

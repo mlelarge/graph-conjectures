@@ -1,0 +1,24 @@
+{
+  "status": "open",
+  "confidence": "medium",
+  "summary": "The conjecture that any linear hypergraph whose incidence poset has dimension at most 3 is the intersection hypergraph of a family of triangles and segments in the plane was posted in 2007 and remains open to the best of available evidence. No proof, disproof, or substantial partial result addressing the conjecture as stated could be found in the literature after the posting date. The closely related special case of planar linear hypergraphs was established by de Fraysseix, Ossona de Mendez, and Rosenstiehl (contacts of triangles), but the full poset-dimension-3 conjecture extends beyond planarity and no resolution has been verified.",
+  "since_posted": [],
+  "search_queries": [
+    "linear hypergraph incidence poset dimension 3 intersection triangles segments conjecture de Fraysseix Ossona de Mendez",
+    "planar hypergraph triangle contact representation intersection segments Ossona de Mendez",
+    "hypergraph poset dimension geometric representation convex sets arXiv",
+    "Scheinerman conjecture segment intersection planar graph Gonçalves proof",
+    "Ossona de Mendez \"incidence poset\" \"dimension 3\" hypergraph geometric representation 2008 2009 2010 2015 2020",
+    "arxiv \"linear hypergraph\" \"dimension 3\" \"intersection\" \"triangles\" \"segments\" conjecture proved disproved 2010 2015 2020 2025"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2411.13985",
+    "https://arxiv.org/abs/1507.01120",
+    "https://arxiv.org/abs/1908.08273"
+  ],
+  "notes": "The Open Problem Garden page was unreachable (ECONNREFUSED), so no on-site status update could be verified. Searches turned up no post-2007 paper specifically addressing this conjecture. The arXiv paper 2411.13985 (Representing Hypergraphs by Point-Line Incidences, 2024) is thematically adjacent but does not address the incidence-poset-dimension-3 conjecture. The Sparsity and Dimension paper (arXiv:1507.01120) addresses poset dimension in the context of sparse graphs but not this hypergraph geometric realization conjecture. Confidence is medium rather than high because exhaustive search of Ossona de Mendez's publication list was not possible (arXiv search timed out).",
+  "slug": "linear_hypergraphs_with_dimension_3",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 01)",
+  "search_enabled": true
+}

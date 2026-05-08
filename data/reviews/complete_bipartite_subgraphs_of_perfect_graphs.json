@@ -1,0 +1,38 @@
+{
+  "status": "open",
+  "confidence": "medium",
+  "summary": "Fox's 2008 problem asking whether every perfect graph $G$ on $n$ vertices has $G$ or $\\bar{G}$ containing a complete bipartite subgraph $K_{A,B}$ with $|A|,|B|\\ge n^{1-o(1)}$ appears to remain open. The best-known bound of $\\Omega(n/\\log n)$ for the special case of comparability graphs (Fox 2006) was extended to a multipartite setting for partial orders by Fox and Pham (2024), but no comparable advance for general perfect graphs has been found in the literature.",
+  "since_posted": [
+    {
+      "title": "A multipartite analogue of Dilworth's Theorem",
+      "authors": "Jacob Fox, Huy Tuan Pham",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2401.00827",
+      "doi": null,
+      "arxiv_id": "2401.00827",
+      "kind": "partial",
+      "claim": "Proves a multipartite extension of Fox's 2006 bipartite Dilworth result for partially ordered sets: every poset on $n$ elements contains $k$ subsets each of size $\\Omega(n/k^5)$ forming a chain structure, or $\\Omega(n/(k^2 \\log n))$ that are pairwise incomparable. This advances the comparability-graph case (a subclass of perfect graphs) but does not address general perfect graphs."
+    }
+  ],
+  "search_queries": [
+    "complete bipartite subgraph perfect graph Fox conjecture n^{1-o(1)}",
+    "Jacob Fox bipartite analogue Dilworth perfect graph complete bipartite",
+    "Fox perfect graph bipartite subgraph conjecture open problem 2010 2020 site:arxiv.org",
+    "multipartite analogue Dilworth perfect graph complete bipartite arXiv 2024 2025",
+    "perfect graph complete bipartite large subgraph Ramsey n^{1-o(1)} quasi-polynomial 2010 2025",
+    "Fox complete bipartite perfect graph large biclique openproblemgarden open problem polynomial subgraph"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2401.00827",
+    "https://arxiv.org/abs/2408.13523",
+    "https://arxiv.org/abs/2409.04885",
+    "https://arxiv.org/abs/2502.20461"
+  ],
+  "notes": "No paper was found that directly solves or makes progress on the perfect-graph problem as stated. The Fox–Pham 2024 paper (arXiv:2401.00827; the corresponding Springer Order 2025 publication at DOI 10.1007/s11083-025-09722-z could not be accessed due to a paywall redirect and is therefore not included in verified_urls) addresses a multipartite Dilworth theorem for posets — i.e., the comparability-graph subcase — and answers Fox's 2006 open question about multipartite generalisations, but leaves the general perfect-graph conjecture untouched. The Springer Combinatorica 2025 paper 'The Largest Subgraph Without A Forbidden Induced Subgraph' appeared in initial search results but was not verified by WebFetch and is therefore not cited. Confidence is medium rather than high because the problem is niche enough that a resolution in a specialised venue might not surface prominently in general web searches.",
+  "slug": "complete_bipartite_subgraphs_of_perfect_graphs",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "elapsed_seconds": 162.3
+}

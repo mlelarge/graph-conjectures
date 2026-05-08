@@ -1,0 +1,47 @@
+{
+  "status": "open",
+  "confidence": "high",
+  "summary": "The List Total Colouring Conjecture — that $\\chi_\\ell(G)=\\chi(G)$ whenever $G$ is the total graph of a multigraph — remains open. The stronger List Square Colouring Conjecture was already known to be false at the time of posting (Kim–Park 2013, cited in the problem statement itself); subsequent work by Hasanvand (2022) extended those counterexamples to bipartite planar graphs and their line graphs, but neither result bears on the LTCC. No proof or disproof of the LTCC has been identified in the post-2013 literature.",
+  "since_posted": [
+    {
+      "title": "The List Square Coloring Conjecture fails for bipartite planar graphs and their line graphs",
+      "authors": "Morteza Hasanvand",
+      "year": 2022,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2211.00622",
+      "doi": null,
+      "arxiv_id": "2211.00622",
+      "kind": "partial",
+      "claim": "Extends the failure of the List Square Colouring Conjecture (the strictly stronger conjecture) to bipartite planar graphs and their line graphs; explicitly notes the LTCC remains open and motivates revised restricted versions."
+    },
+    {
+      "title": "On the Alon-Tarsi Number of Some Line and Total graphs",
+      "authors": "S. Prajnanaswaroopa",
+      "year": 2023,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2312.09951",
+      "doi": null,
+      "arxiv_id": "2312.09951",
+      "kind": "partial",
+      "claim": "Establishes ATN(T(G)) ≤ Δ(G)+3 for any graph G, giving a weak upper bound on the list chromatic number of total graphs; does not prove χ_ℓ(T(H))=χ(T(H)) for multigraph total graphs."
+    }
+  ],
+  "search_queries": [
+    "List Total Colouring Conjecture Borodin Kostochka Woodall total graph chi_l equals chi progress",
+    "list total coloring conjecture total graph multigraph list chromatic number 2014 2025",
+    "Kim Park \"list square coloring\" counterexample total graph list coloring",
+    "\"total graph\" \"list chromatic number\" \"chromatic number\" conjecture arXiv 2015 2026"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/1305.2566",
+    "https://arxiv.org/html/2312.09951",
+    "https://arxiv.org/abs/2211.00622",
+    "https://arxiv.org/abs/2312.09951",
+    "https://arxiv.org/abs/1812.05833"
+  ],
+  "notes": "The Kim–Park counterexamples to the List Square Colouring Conjecture (arXiv:1305.2566, submitted May 2013) predate the OPG posting and are already cited in the problem statement, so they are not counted as post-posting results. The Hasanvand (2022) paper is directly about the LSCC (not LTCC) but is included as it is the most relevant post-2013 development in the surrounding area. The Prajnanaswaroopa (2023) paper provides a bound Δ+3 on the Alon-Tarsi number of total graphs, which is weaker than what would be needed for the LTCC. No special-case proof of the LTCC for specific multigraph families was found in the post-2013 search.",
+  "slug": "list_total_colouring_conjecture",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 07)",
+  "search_enabled": true
+}

@@ -1,0 +1,58 @@
+{
+  "slug": "forcing_a_k_6_minor",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet (subagent)",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "medium",
+  "summary": "Both Barát-Joret-Wood conjectures (every graph with minimum degree $\\geq 7$ contains a $K_6$ minor; every 7-connected graph contains a $K_6$ minor) remain open in general. The 7-connected version is known to hold for sufficiently large graphs via the Kawarabayashi-Norine-Thomas-Wollan proof of Jørgensen's conjecture for large graphs (papers posted shortly after the OPG entry, formally published in 2018). Chudnovsky, Scott, Seymour and Spirkl (2024) proved the bipartite analogue: every bipartite graph with minimum degree $\\geq 6$ has a $K_6$ minor.",
+  "since_posted": [
+    {
+      "title": "K_6 minors in large 6-connected graphs",
+      "authors": "Ken-ichi Kawarabayashi, Serguei Norine, Robin Thomas, Paul Wollan",
+      "year": 2018,
+      "venue": "Journal of Combinatorial Theory, Series B",
+      "url": "https://arxiv.org/abs/1203.2192",
+      "doi": "10.1016/j.jctb.2017.09.007",
+      "arxiv_id": "1203.2192",
+      "kind": "partial",
+      "claim": "Proves Jørgensen's conjecture for all sufficiently large graphs: every sufficiently large 6-connected graph with no $K_6$ minor is apex; this implies the 7-connected $K_6$-minor conjecture for sufficiently large graphs."
+    },
+    {
+      "title": "K_6 minors in 6-connected graphs of bounded tree-width",
+      "authors": "Ken-ichi Kawarabayashi, Serguei Norine, Robin Thomas, Paul Wollan",
+      "year": 2018,
+      "venue": "Journal of Combinatorial Theory, Series B",
+      "url": "https://arxiv.org/abs/1203.2171",
+      "doi": "10.1016/j.jctb.2017.09.006",
+      "arxiv_id": "1203.2171",
+      "kind": "partial",
+      "claim": "Companion paper proving that every sufficiently large 6-connected graph of bounded tree-width with no $K_6$ minor is apex, a key step toward the large-graph Jørgensen result."
+    },
+    {
+      "title": "Bipartite graphs with no $K_6$ minor",
+      "authors": "Maria Chudnovsky, Alex Scott, Paul Seymour, Sophie Spirkl",
+      "year": 2024,
+      "venue": "Journal of Combinatorial Theory, Series B",
+      "url": "https://arxiv.org/abs/2204.10119",
+      "doi": "10.1016/j.jctb.2023.08.005",
+      "arxiv_id": "2204.10119",
+      "kind": "partial",
+      "claim": "Proves a bipartite analogue of the Barát-Joret-Wood minimum-degree conjecture: every bipartite graph with minimum degree at least 6 contains a $K_6$ minor; explicitly notes that the original conjecture (minimum degree 7 forces $K_6$) remains open."
+    }
+  ],
+  "search_queries": [
+    "minimum degree 7 forces K_6 minor conjecture Mader",
+    "Jorgensen conjecture K_6 minor 6-connected apex graph",
+    "\"K_6 minor\" 7-connected graph conjecture proof 2023 2024",
+    "Kawarabayashi Norine Thomas Wollan K_6 minors large 6-connected graphs"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/1203.2192",
+    "https://arxiv.org/abs/1203.2171",
+    "https://arxiv.org/abs/2204.10119",
+    "https://collaborate.princeton.edu/en/publications/bipartite-graphs-with-no-ksub6sub-minor/",
+    "https://arxiv.org/abs/1506.01775"
+  ],
+  "notes": "The KNTW arXiv papers (1203.2171, 1203.2192) were posted 2012-03-09, after the OPG posted date 2012-01-16, so they qualify as post-posting. They formally appeared in JCTB Series B vol. 129 (2018). Both original conjectures remain open: the 7-connected version is settled only for sufficiently large graphs, and the minimum-degree-7 version has no known proof. The Chudnovsky-Scott-Seymour-Spirkl paper explicitly states 'we do not know whether all graphs with minimum degree at least seven have $K_6$ minors,' confirming the conjecture is open as of 2024."
+}

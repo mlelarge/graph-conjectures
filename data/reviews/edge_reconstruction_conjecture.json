@@ -1,0 +1,55 @@
+{
+  "slug": "edge_reconstruction_conjecture",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet (subagent)",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Harary's Edge Reconstruction Conjecture (1964) — that every simple graph with at least 4 edges is determined up to isomorphism by its multiset of edge-deleted subgraphs — remains open. Recent work since 2008 has produced reformulations (e.g., a combinatorial $K$-theory framework) and partial results for restricted graph classes (e.g., unicyclic graphs with three non-isomorphic subtrees) and for reconstructing graph polynomials from the edge-deck, but no proof or counterexample to the original conjecture has appeared.",
+  "since_posted": [
+    {
+      "title": "A combinatorial $K$-theory perspective on the Edge Reconstruction Conjecture in graph theory",
+      "authors": "Maxine E. Calle, Julian J. Gould",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2402.14986",
+      "doi": null,
+      "arxiv_id": "2402.14986",
+      "kind": "reduction",
+      "claim": "Reformulates the edge reconstruction conjecture using the $K$-theory of categories with covering families, providing an abstract algebraic framework for the problem rather than a resolution."
+    },
+    {
+      "title": "Reconstructing edge-deleted unicyclic graphs",
+      "authors": "Anthony E. Pizzimenti, Umarkhon Rakhimov",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2411.03133",
+      "doi": null,
+      "arxiv_id": "2411.03133",
+      "kind": "partial",
+      "claim": "Proves that the edge reconstruction conjecture holds for unicyclic graphs (graphs with exactly one cycle) that have three non-isomorphic subtrees attached to the cycle."
+    },
+    {
+      "title": "On the edge reconstruction of the characteristic and permanental polynomials of a simple graph",
+      "authors": "Jingyuan Zhang, Xian'an Jin, Weigen Yan, Qinghai Liu",
+      "year": 2023,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2310.07104",
+      "doi": null,
+      "arxiv_id": "2310.07104",
+      "kind": "partial",
+      "claim": "Shows that for a simple graph $G$ with $|V|\\neq|E|$, the characteristic, permanental, and Laplacian polynomials of $G$ can be reconstructed from polynomial information of edge-deleted and vertex-pair-deleted subgraphs."
+    }
+  ],
+  "search_queries": [
+    "\"edge reconstruction conjecture\" graph theory recent progress",
+    "\"edge reconstruction\" conjecture Harary arxiv"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2402.14986",
+    "https://arxiv.org/abs/2411.03133",
+    "https://arxiv.org/abs/2310.07104",
+    "https://arxiv.org/abs/2312.17022"
+  ],
+  "notes": "The conjecture remains open as of 2026; partial results since 2008 address restricted graph classes (e.g., unicyclic graphs) or reconstruct invariants weaker than the graph itself (polynomials). The combinatorial $K$-theory approach (Calle-Gould 2024) is a reformulation rather than a proof. Müller's 1977 result (graphs with $e>n\\log_2 n$) and Lovász's earlier result predate the OPG posting date and are not cited above."
+}

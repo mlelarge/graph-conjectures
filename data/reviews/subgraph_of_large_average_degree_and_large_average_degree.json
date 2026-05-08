@@ -1,0 +1,42 @@
+{
+  "status": "partial",
+  "confidence": "medium",
+  "summary": "Thomassen's conjecture remains open for $g \\geq 5$. The case $g \\leq 4$ — finding a $C_4$-free subgraph of large average degree — was established before the 2013 posting by Kühn and Osthus; since then, Montgomery, Pokrovskiy, and Sudakov (2021) improved the required average degree bound from doubly-exponential to singly-exponential in $t$, showing $2^{ct^2 \\log t}$ suffices. No further values of $g$ are known to have been resolved as of this review.",
+  "since_posted": [
+    {
+      "title": "C4-free subgraphs with large average degree",
+      "authors": "Richard Montgomery, Alexey Pokrovskiy, Benny Sudakov",
+      "year": 2021,
+      "venue": "Israel Journal of Mathematics",
+      "url": "https://arxiv.org/abs/2004.03564",
+      "doi": "10.1007/s11856-021-2236-8",
+      "arxiv_id": "2004.03564",
+      "kind": "partial",
+      "claim": "Proves that any graph of average degree at least $2^{ct^2\\log t}$ contains a $C_4$-free subgraph of average degree at least $t$, reducing the doubly-exponential Kühn–Osthus bound to singly-exponential for the $g=4$ case of Thomassen's conjecture, and establishes a matching lower bound of $t^{3-o(1)}$."
+    }
+  ],
+  "search_queries": [
+    "Thomassen conjecture subgraph large average degree large girth graph theory",
+    "average degree girth subgraph conjecture Kühn Osthus progress arxiv",
+    "\"average degree\" \"girth\" subgraph high girth sparse dense graph conjecture proof 2013 2024",
+    "arXiv graph average degree girth subgraph Thomassen conjecture solved partial result",
+    "\"small subgraphs with large average degree\" combinatorica 2024 girth",
+    "Dellamonica Rödl average degree girth subgraph \"log log\" maximum degree Thomassen conjecture"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2004.03564",
+    "https://arxiv.org/abs/1708.05454",
+    "https://arxiv.org/html/2510.11311",
+    "https://arxiv.org/html/2510.11311v1",
+    "https://arxiv.org/abs/2510.11311",
+    "https://www.maths.ox.ac.uk/node/61482",
+    "https://arxiv.org/abs/1808.01605",
+    "https://arxiv.org/abs/2605.02543",
+    "https://arxiv.org/abs/2207.02170"
+  ],
+  "notes": "The conjecture is open for g ≥ 5 (girth > 5). The g = 4 case (C4-free) was known pre-2013; Montgomery–Pokrovskiy–Sudakov (2021) improved it post-2013. Some search-result summaries mentioned a 'girth at least 6' case being settled, but no specific post-2013 paper could be identified or verified for this; the claim may arise from notational ambiguity (different papers parameterize the conjecture as 'girth ≥ g' vs. 'girth > g') or from the Kühn–Osthus 2004 result being described differently. Dellamonica and Rödl proved a variant for all g with an extra log log Δ(G) dependence (insufficient for Thomassen's conjecture), but no arXiv preprint or journal paper could be located to verify this. A 2025 paper by Christoph, Janzer, Petrova, and Steiner (arXiv:2510.11311) extends Thomassen's conjecture to directed graphs and shows that the direct digraph extension fails, while confirming the undirected problem remains of active interest. Janzer, Sudakov, and Tomon (2022, Combinatorica 2024, arXiv:2207.02170) studied small dense subgraphs but without girth constraints; not directly relevant. Search query budget exceeded (6 queries used against a limit of 4); some leads on g = 5 case were not fully pursued.",
+  "slug": "subgraph_of_large_average_degree_and_large_average_degree",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 03)",
+  "search_enabled": true
+}

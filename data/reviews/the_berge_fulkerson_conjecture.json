@@ -1,0 +1,60 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The Berge-Fulkerson conjecture remains open in full generality. Notable post-posting progress includes the proof of Mazzuoccolo's conjecture (any finite collection of disjoint odd circuits in a bridgeless cubic graph is hit by a single perfect matching), the verification of Berge's covering conjecture for cubic graphs with colouring defect at most 3, and the introduction and partial verification of an oriented variant for Isaacs flower snarks. Repeated attempts to verify the conjecture for various families of snarks have succeeded for those families but left the general conjecture untouched.",
+  "since_posted": [
+    {
+      "title": "Disjoint odd circuits in a bridgeless cubic graph can be quelled by a single perfect matching",
+      "authors": "František Kardoš, Edita Máčajová, Jean Paul Zerafa",
+      "year": 2023,
+      "venue": "Journal of Combinatorial Theory, Series B",
+      "url": "https://arxiv.org/abs/2204.10021",
+      "doi": "10.1016/j.jctb.2022.12.003",
+      "arxiv_id": "2204.10021",
+      "kind": "partial",
+      "claim": "Proves Mazzuoccolo's conjecture: for any collection of disjoint odd circuits in a bridgeless cubic graph G, there exists a perfect matching of G containing at least one edge from each circuit — a consequence that would follow from the Berge-Fulkerson conjecture."
+    },
+    {
+      "title": "Berge's conjecture for cubic graphs with small colouring defect",
+      "authors": "Ján Karabáš, Edita Máčajová, Roman Nedela, Martin Škoviera",
+      "year": 2022,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2210.13234",
+      "doi": null,
+      "arxiv_id": "2210.13234",
+      "kind": "partial",
+      "claim": "Proves Berge's conjecture (the edge set of every bridgeless cubic graph is coverable by 5 perfect matchings) for graphs with colouring defect at most 3, and shows that cyclically 4-edge-connected such graphs need only 4 matchings (Petersen graph excepted)."
+    },
+    {
+      "title": "Graph Puzzles I.1: Oriented Berge-Fulkerson Conjecture",
+      "authors": "Nikolay Ulyanov",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2501.05348",
+      "doi": null,
+      "arxiv_id": "2501.05348",
+      "kind": "partial",
+      "claim": "Proposes an oriented variant of the Berge-Fulkerson conjecture and proves it for the family of Isaacs flower snarks, establishing connections to ribbon graphs and oriented cycle double covers."
+    }
+  ],
+  "search_queries": [
+    "Berge-Fulkerson conjecture cubic graph perfect matchings progress 2020 2021 2022 2023 2024 2025",
+    "Berge Fulkerson conjecture bridgeless cubic graph six perfect matchings arXiv solved proved",
+    "Berge-Fulkerson conjecture partial results special cases snark graphs 2020 2021 2022 2023 2024",
+    "Seymour generalized Berge-Fulkerson r-graph perfect matchings recent results arXiv 2022 2023 2024 2025",
+    "Macajova Skoviera rotation snark Berge-Fulkerson arXiv 2021"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2204.10021",
+    "https://arxiv.org/abs/2501.05348",
+    "https://arxiv.org/html/2508.04507",
+    "https://arxiv.org/html/2210.13234",
+    "https://arxiv.org/abs/2210.13234",
+    "https://arxiv.org/abs/2508.15602"
+  ],
+  "notes": "Several ScienceDirect and Wiley journal pages returned HTTP 403 (including papers on rotation snarks by Máčajová–Škoviera, superposition snarks, and C(12)-linked permutation graphs by Liu et al., J. Graph Theory 2021); these could not be verified and are therefore excluded from since_posted. The Karabáš et al. preprint (2210.13234) was revised as recently as January 2025 but no peer-reviewed journal publication was confirmed. The full Berge-Fulkerson conjecture remains open.",
+  "slug": "the_berge_fulkerson_conjecture",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 06)",
+  "search_enabled": true
+}

@@ -1,0 +1,69 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Seymour's Second Neighbourhood Conjecture remains open in general. Meaningful partial progress since 2007 includes confirmation for almost all orientations of random graphs $G(n,p)$ with fixed $p < 1/2$, for tournaments missing two stars, and via exhaustive computation for all oriented graphs of order at most seven. Structural reductions show that any minimum counterexample must be strongly connected with bounded minimum outdegree.",
+  "since_posted": [
+    {
+      "title": "Seymour's Second Neighborhood Conjecture for orientations of (pseudo)random graphs",
+      "authors": "Fábio Botler, Phablo F. S. Moura, Tássio Naia",
+      "year": 2022,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2211.06540",
+      "doi": null,
+      "arxiv_id": "2211.06540",
+      "kind": "partial",
+      "claim": "Proves the conjecture holds asymptotically almost surely for all orientations of G(n,p) when lim sup p < 1/4, and for random orientations of pseudorandom graphs satisfying certain density conditions."
+    },
+    {
+      "title": "Seymour's second neighbourhood conjecture: random graphs and reductions",
+      "authors": "Alberto Espuny Díaz, António Girão, Bertille Granet, Gal Kronenberg",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2403.02842",
+      "doi": "10.1002/rsa.21251",
+      "arxiv_id": "2403.02842",
+      "kind": "partial",
+      "claim": "Proves the conjecture for almost all orientations of G(n,p) for any fixed p in [0, 1/2), and shows any minimum counterexample must be strongly connected with bounded minimum outdegree."
+    },
+    {
+      "title": "About the second neighborhood conjecture for tournaments missing two stars or disjoint paths",
+      "authors": "Moussa Daamouch, Salman Ghazal, Darine Al-Mniny",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2406.03635",
+      "doi": null,
+      "arxiv_id": "2406.03635",
+      "kind": "partial",
+      "claim": "Proves Seymour's Second Neighbourhood Conjecture for tournaments missing two stars, and investigates the conjecture for tournaments missing disjoint paths of length 2."
+    },
+    {
+      "title": "Seymour's Second Neighbourhood Conjecture for Oriented Graphs of Order at Most Seven and Split-Twin Extensions",
+      "authors": "Stanisław M. S. Halkiewicz",
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2601.21563",
+      "doi": null,
+      "arxiv_id": "2601.21563",
+      "kind": "partial",
+      "claim": "Computationally verifies the conjecture for all oriented graphs of order at most 7, and introduces a split-twin extension operation preserving Seymour vertices, generating infinite inductively-defined families satisfying the conjecture."
+    }
+  ],
+  "search_queries": [
+    "Seymour's Second Neighbourhood Conjecture oriented graph proof progress 2007-2026",
+    "Seymour second neighborhood conjecture oriented graph vertex outdegree arXiv",
+    "second neighborhood conjecture digraph special cases recent results 2015 2020 2025",
+    "\"second neighborhood\" \"oriented graph\" conjecture tournament proof 2020 2021 2022 2023 2024 2025"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2601.21563",
+    "https://arxiv.org/abs/2501.00614",
+    "https://arxiv.org/abs/2403.02842",
+    "https://arxiv.org/abs/2211.06540",
+    "https://arxiv.org/abs/2406.03635"
+  ],
+  "notes": "A preprint (arXiv:2501.00614, 13 revisions as of Feb 2026) by Charles N. Glover claims a complete proof via the 'Graph Level Order' framework but is not peer-reviewed and should not be treated as a confirmed proof. The published journal version of arXiv:2403.02842 appears in Random Structures & Algorithms (2025, DOI 10.1002/rsa.21251) per search results, but that Wiley page returned HTTP 403 so is not in verified_urls. A 2026 Graphs and Combinatorics paper by Wang and Lu (DOI 10.1007/s00373-026-03014-y) on 'Seymour's second neighborhood conjecture for some oriented graphs' could not be fully verified due to an authentication redirect and is therefore excluded from since_posted.",
+  "slug": "seymours_second_neighbourhood_conjecture",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 02)",
+  "search_enabled": true
+}

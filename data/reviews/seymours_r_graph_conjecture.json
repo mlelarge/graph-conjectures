@@ -1,0 +1,40 @@
+{
+  "status": "solved",
+  "confidence": "high",
+  "summary": "Seymour's r-graph conjecture is a direct corollary of the Goldberg–Seymour conjecture: for any $r$-graph $G$, the condition $|\\delta(X)| \\ge r$ for every odd $X \\subseteq V(G)$ forces $\\Gamma(G) \\le r$, so the Goldberg–Seymour bound $\\chi'(G) \\le \\max\\{\\Delta(G)+1, \\lceil\\Gamma(G)\\rceil\\}$ reduces to $\\chi'(G) \\le r+1$. The Goldberg–Seymour conjecture was proved by Chen, Jing, and Zang (2019 preprint; journal version 2025), resolving Seymour's r-graph conjecture as an immediate consequence.",
+  "since_posted": [
+    {
+      "title": "Proof of the Goldberg-Seymour Conjecture on Edge-Colorings of Multigraphs",
+      "authors": "Guantao Chen, Guangming Jing, Wenan Zang",
+      "year": 2025,
+      "venue": "Journal of Combinatorial Optimization",
+      "url": "https://link.springer.com/article/10.1007/s10878-025-01348-6",
+      "doi": "10.1007/s10878-025-01348-6",
+      "arxiv_id": "1901.10316",
+      "kind": "proof",
+      "claim": "Proves the Goldberg–Seymour conjecture χ'(G) ≤ max{Δ(G)+1, ⌈Γ(G)⌉} for all multigraphs G; since every r-graph satisfies Γ(G) ≤ r (the r-graph condition bounds subgraph density), this immediately yields χ'(G) ≤ r+1 for every r-graph, resolving Seymour's r-graph conjecture. The proof first appeared as arXiv:1901.10316 in 2019."
+    }
+  ],
+  "search_queries": [
+    "Seymour r-graph conjecture edge coloring chromatic index progress",
+    "r-graph conjecture edge coloring chi prime r+1 proof 2009 2026",
+    "Goldberg conjecture r-graph edge coloring solved arXiv",
+    "Nishizeki Kashiwagi r-graph chromatic index upper bound extension"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/1901.10316",
+    "https://arxiv.org/html/2308.15588",
+    "https://arxiv.org/pdf/1901.10316v1",
+    "https://math.gsu.edu/gchen/files/2018/Survey2018Oct11.pdf",
+    "https://link.springer.com/article/10.1007/s10878-025-01348-6",
+    "http://www.openproblemgarden.org/op/seymours_r_graph_conjecture",
+    "http://www.openproblemgarden.org/op/goldbergs_conjecture",
+    "https://arxiv.org/html/1901.10316",
+    "https://www.sciencedirect.com/science/article/pii/S0095895609000458"
+  ],
+  "notes": "The implication 'Goldberg–Seymour ⟹ r-graph conjecture' is standard: r-regularity gives Δ(G)=r, and for any odd set X the r-graph condition |δ(X)|≥r forces 2|E(G[X])| ≤ r(|X|-1), bounding Γ(G) ≤ r. A search summary mentioned Scheide (2007) made this implication explicit, but the Scheide reference was not independently verified by WebFetch. The Chen-Jing-Zang proof of Goldberg-Seymour first appeared as arXiv:1901.10316 in 2019 and is now verified via the 2025 Journal of Combinatorial Optimization article, DOI 10.1007/s10878-025-01348-6. A related 2023 survey (arXiv:2308.15588, Jing) discusses the Goldberg–Seymour conjecture algorithmically but did not explicitly mention the r-graph conjecture in the retrievable content.",
+  "slug": "seymours_r_graph_conjecture",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 01)",
+  "search_enabled": true
+}

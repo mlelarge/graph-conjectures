@@ -1,0 +1,28 @@
+{
+  "status": "open",
+  "confidence": "medium",
+  "summary": "The Alon–Mubayi conjecture remains open for all $k \\geq 3$. The $k=1$ case follows from Vizing's theorem and $k=2$ was settled by Alon (using the Bregman and Falikman–Egorichev permanents results) before the problem was posted; no post-2008 paper verifiably proving or substantially advancing the conjecture for any $k \\geq 3$ was found. Recent progress on closely related regular-subgraph problems (Erdős–Sauer threshold, chromatic-number/regularity relations) does not address the nearly-spanning requirement.",
+  "since_posted": [],
+  "search_queries": [
+    "Alon Mubayi \"nearly spanning regular subgraph\" conjecture k-regular",
+    "nearly spanning k-regular subgraph high degree graph conjecture progress arXiv",
+    "\"regular subgraph\" \"almost spanning\" r-regular graph conjecture Alon 2008 2009 2010 2020",
+    "k-regular subgraph large r-regular graph Alon Friedland Kalai conjecture solved partial",
+    "Chakraborti Janzer Montgomery \"regular subgraphs at every density\" arXiv 2023 2024",
+    "\"nearly spanning\" k-regular subgraph r-regular graph epsilon fraction vertices conjecture Alon 2003"
+  ],
+  "verified_urls": [
+    "https://rhmontgomery.warwick.ac.uk/papers/38regularsubgraphs.pdf",
+    "https://arxiv.org/abs/2407.16458",
+    "https://arxiv.org/abs/2204.12455",
+    "https://arxiv.org/abs/2502.14794",
+    "https://arxiv.org/abs/2411.11785",
+    "https://arxiv.org/abs/2410.02437",
+    "https://www.combinatorics.org/ojs/index.php/eljc/article/view/v33i1p37"
+  ],
+  "notes": "All post-2008 papers found address different regular-subgraph problems: Erdős–Sauer edge-density threshold (Janzer–Sudakov 2022, arXiv:2204.12455; Chakraborti–Janzer–Methuku–Montgomery 2024, arXiv:2411.11785), chromatic-number/regular-subgraph relations (Janzer–Steiner–Sudakov 2024, arXiv:2410.02437), and nearly-regular subgraphs of random subgraphs (Diskin–Erde–Kang–Krivelevich 2026, EJC v33i1p37). None target the Alon–Mubayi nearly-spanning conjecture for fixed k ≥ 3 in deterministic r-regular graphs. Confidence is medium rather than high because a specialised preprint could exist without prominent web presence.",
+  "slug": "nearly_spanning_regular_subgraphs",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 06)",
+  "search_enabled": true
+}

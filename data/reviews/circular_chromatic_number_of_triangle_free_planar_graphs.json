@@ -1,0 +1,27 @@
+{
+  "status": "open",
+  "confidence": "medium",
+  "summary": "The problem of whether every triangle-free planar graph of maximum degree three satisfies $\\chi_c(G) \\leq 20/7$ remains open as of all accessible literature. The bound is tight: the dodecahedron belongs to this class and achieves $\\chi_c = 20/7$. No proof or counterexample was found in the literature reachable by web search and verified fetch.",
+  "since_posted": [],
+  "search_queries": [
+    "circular chromatic number triangle-free planar graph maximum degree 3 subcubic 20/7",
+    "circular chromatic number triangle-free subcubic planar graph Ghebleh Zhu",
+    "arXiv circular chromatic number planar graph girth 4 subcubic conjecture 2008 2025",
+    "arXiv \"circular chromatic\" \"triangle-free\" \"planar\" \"subcubic\" OR \"degree 3\" 2010 2026",
+    "\"circular chromatic\" \"20/7\" planar graph triangle-free degree three conjecture solved",
+    "Zhu \"circular chromatic\" subcubic planar triangle-free survey recent progress 2020 2025",
+    "arXiv \"circular chromatic\" \"triangle-free planar\" \"maximum degree\" 2015 2026",
+    "\"circular chromatic number\" \"planar\" \"subcubic\" OR \"degree 3\" \"girth 4\" 2008 2009 2010 2011 2012 2013 2014 2015"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2204.12683",
+    "https://dblp.org/pid/58/5187.html",
+    "https://arxiv.org/abs/2603.08822"
+  ],
+  "notes": "Zhu's personal open-problems status page (math.nsysu.edu.tw/~zhu/open-problems/status.htm and chic-k3free-planar.htm) returned TLS certificate errors and could not be fetched; it may contain updates. The OPG page itself was also unreachable (ECONNREFUSED). The paper arXiv:2204.12683 (Dvořák et al., 2022/2025) establishes $\\chi_f(G) \\leq 11/4$ for subcubic triangle-free graphs (up to two exceptions including the Petersen graph; the dodecahedron likely being a second exception with $\\chi_f = \\chi_c = 20/7$), but this concerns the fractional chromatic number — a different and weaker parameter since $\\chi_f \\leq \\chi_c$ — and does not resolve the circular coloring question. No arXiv papers combining all three key terms (circular chromatic, triangle-free, planar, subcubic/degree-3) were returned by any search.",
+  "slug": "circular_chromatic_number_of_triangle_free_planar_graphs",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "elapsed_seconds": 231.8
+}

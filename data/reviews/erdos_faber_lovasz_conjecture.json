@@ -1,0 +1,60 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Kang, Kelly, Kühn, Methuku, and Osthus proved the conjecture for all sufficiently large $k$ in a landmark paper published in the Annals of Mathematics (2023), settling the problem asymptotically after 50 years. For small values of $k$, the conjecture remains open; SAT-based methods (Kirchweger, Peitl, Szeider, 2023) have extended computational verification to further finite cases but do not cover all remaining instances.",
+  "since_posted": [
+    {
+      "title": "A proof of the Erdős-Faber-Lovász conjecture",
+      "authors": "Dong Yeap Kang, Tom Kelly, Daniela Kühn, Abhishek Methuku, Deryk Osthus",
+      "year": 2023,
+      "venue": "Annals of Mathematics",
+      "url": "https://arxiv.org/abs/2101.04698",
+      "doi": null,
+      "arxiv_id": "2101.04698",
+      "kind": "partial",
+      "claim": "Proves the Erdős–Faber–Lovász conjecture for every sufficiently large $k$, and establishes stability versions confirming a prediction of Kahn; preprint posted January 2021, published Annals of Mathematics 198(2), 537–618 (2023)."
+    },
+    {
+      "title": "A SAT Solver's Opinion on the Erdős-Faber-Lovász Conjecture",
+      "authors": "Markus Kirchweger, Tomáš Peitl, Stefan Szeider",
+      "year": 2023,
+      "venue": "Proceedings of SAT 2023 (LIPIcs)",
+      "url": "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.SAT.2023.13",
+      "doi": "10.4230/LIPIcs.SAT.2023.13",
+      "arxiv_id": null,
+      "kind": "partial",
+      "claim": "Uses SAT solvers to verify the conjecture for small linear hypergraphs not covered by the Kang et al. large-$k$ proof, generating independently checkable DRAT certificates."
+    },
+    {
+      "title": "The Erdős-Faber-Lovász Conjecture: Fifty Exciting Years",
+      "authors": "P. Mark Kayll",
+      "year": 2025,
+      "venue": "Mathematics Magazine",
+      "url": "https://umimpact.umt.edu/en/publications/the-erd%C5%91s-faber-lov%C3%A1sz-conjecture-fifty-exciting-years/",
+      "doi": "10.1080/0025570X.2024.2419818",
+      "arxiv_id": null,
+      "kind": "survey",
+      "claim": "Surveys fifty years of progress on the conjecture, reviewing the Kang et al. proof for all sufficiently large $k$ and contextualising what remains open for small cases."
+    }
+  ],
+  "search_queries": [
+    "Erdős–Faber–Lovász conjecture proof 2021",
+    "Erdos Faber Lovasz conjecture solved Kim Kang Kelly Kühn Osthus",
+    "Erdős-Faber-Lovász conjecture complete proof all n 2022 2023 2024",
+    "Erdős-Faber-Lovász conjecture small cases SAT solver verification complete proof 2023 2024 2025",
+    "\"Erdős-Faber-Lovász\" \"all n\" OR \"fully proved\" OR \"complete proof\" 2024 2025"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2101.04698",
+    "https://annals.math.princeton.edu/2023/198-2/p02",
+    "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.SAT.2023.13",
+    "https://en.wikipedia.org/wiki/Erd%C5%91s%E2%80%93Faber%E2%80%93Lov%C3%A1sz_conjecture",
+    "https://umimpact.umt.edu/en/publications/the-erd%C5%91s-faber-lov%C3%A1sz-conjecture-fifty-exciting-years/"
+  ],
+  "notes": "Despite its title, the Kang et al. Annals paper proves the conjecture only for all sufficiently large $k$, not for all $k$. The combination of this large-$k$ proof with the SAT-solver verification of small cases (Kirchweger et al.) has not yet been shown to cover every finite $k$; the 2025 Mathematics Magazine survey by Kayll explicitly confirms the full conjecture remains open. The Tandfonline page for the Kayll survey (doi 10.1080/0025570X.2024.2419818) returned HTTP 403; authorship, title, year, and venue were confirmed via the University of Montana research-impact page. The Annals DOI is omitted because it was not directly confirmed from the fetched page.",
+  "slug": "erdos_faber_lovasz_conjecture",
+  "reviewed_at": "2026-05-07",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "elapsed_seconds": 169.3
+}

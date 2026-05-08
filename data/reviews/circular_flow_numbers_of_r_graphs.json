@@ -1,0 +1,36 @@
+{
+  "status": "disproved",
+  "confidence": "high",
+  "summary": "The conjecture was effectively disproved by Mattiolo and Steffen (2022), who constructed $(2t+1)$-regular class-1 graphs with circular flow number exceeding $2 + 2/t$ for $t = 4k+2$ ($k \\geq 1$). The OPG discussion itself notes that every $(2t+1)$-regular class-1 graph is a $(2t+1)$-graph (r-graph), so these are also counterexamples to the stated conjecture; the same paper confirmed that $2 + 2/(2t-1)$ is the infimum of circular flow numbers for $(2t+1)$-regular class-2 graphs.",
+  "since_posted": [
+    {
+      "title": "Edge colorings and circular flows on regular graphs",
+      "authors": "Davide Mattiolo, Eckhard Steffen",
+      "year": 2022,
+      "venue": "Journal of Graph Theory",
+      "url": "https://arxiv.org/abs/2001.02484",
+      "doi": "10.1002/jgt.22746",
+      "arxiv_id": "2001.02484",
+      "kind": "counterexample",
+      "claim": "Constructs $(2t+1)$-regular class-1 graphs with $F_c > 2+2/t$ for $t = 4k+2$ ($k \\geq 1$), disproving the class-1 version of Steffen's conjecture; since the OPG itself observes that every $(2t+1)$-regular class-1 graph is a $(2t+1)$-graph, these serve as counterexamples to the r-graph conjecture as well, and the paper also confirms that $2+2/(2t-1)$ is the infimum of circular flow numbers for $(2t+1)$-regular class-2 graphs."
+    }
+  ],
+  "search_queries": [
+    "circular flow number r-graphs conjecture Steffen 2t+1 graph",
+    "circular flow number (2t+1)-graph conjecture F_c 2+2/t nowhere-zero flow",
+    "Eckhard Steffen circular flow r-graph arXiv 2015 2016 2017 2018 2019 2020",
+    "r-graph circular chromatic index flow conjecture Jaeger Tutte 5-flow",
+    "Mattiolo Steffen edge colorings circular flows regular graphs arXiv 2021 2022",
+    "Mattiolo Steffen arXiv circular flow (2t+1)-graph r-graph counterexample 2020 2021"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2001.02484",
+    "https://arxiv.org/abs/2109.02921",
+    "https://arxiv.org/abs/1310.8441"
+  ],
+  "notes": "The disproof is indirect but rigorous: it follows from the OPG's own stated implication (every $(2t+1)$-regular class-1 graph is a $(2t+1)$-graph) together with Mattiolo-Steffen's class-1 counterexamples for t = 4k+2. The arXiv page verifies the abstract's disproof claim and lists the journal version as Journal of Graph Theory 99 (2022), 399-413, DOI 10.1002/jgt.22746. A SIAM 2022 paper by Li, Li, Wang ('Flow index of regular class I graphs') appeared in searches but its PDF was unreadable; it may contain additional relevant results. The case t = 2 (Tutte's 3-flow conjecture) was explicitly noted as an instance of the OPG conjecture and remains open.",
+  "slug": "circular_flow_numbers_of_r_graphs",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 03)",
+  "search_enabled": true
+}

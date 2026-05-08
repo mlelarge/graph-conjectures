@@ -1,0 +1,26 @@
+{
+  "status": "open",
+  "confidence": "medium",
+  "summary": "The conjecture that every tournament of order $n$ contains at least $\\lceil n(n-1)/6 - n/3 \\rceil$ arc-disjoint transitive triples ($TT_3$) remains open. The best lower bound, $f(n) > \\frac{41}{300}n^2(1+o(1))$, is due to Kabiya and Yuster (2008) and falls short of the conjectured value of $\\approx n^2/6$. No post-2013 paper improving this bound or resolving the conjecture was found.",
+  "since_posted": [],
+  "search_queries": [
+    "transitive triple packing tournament arc-disjoint TT3 conjecture Yuster",
+    "arc-disjoint transitive subtournaments order 3 packing minimum tournament arXiv",
+    "Kabiya Yuster packing transitive triples tournament f(n) lower bound 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+    "\"transitive tournament\" \"order 3\" packing \"arc-disjoint\" digraph conjecture progress",
+    "\"transitive tournament tilings\" \"oriented graphs\" \"minimum total degree\" arXiv"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2306.02364",
+    "https://epubs.siam.org/doi/10.1137/19M1269257",
+    "https://par.nsf.gov/servlets/purl/10279726",
+    "https://math.haifa.ac.il/raphy/papers/tt3.pdf",
+    "https://math.haifa.ac.il/raphy/",
+    "https://arxiv.org/search/?query=TT3+packing+tournament+transitive&searchtype=all"
+  ],
+  "notes": "arXiv:2306.02364 (tournament survey) and SIAM 10.1137/19M1269257 (transitive tournament tilings under degree conditions) address related but distinct problems. The SIAM paper concerns vertex-disjoint tilings with minimum degree conditions (Hajnal–Szemerédi type), not minimum arc-disjoint TT_3 packing. The NSF PDF and Kabiya–Yuster PDF were binary and unreadable by WebFetch. No verifiable post-2013 paper improving on the 41/300 lower bound or resolving the conjecture was found across 5 search queries.",
+  "slug": "minimum_number_of_transitive_subtournaments_of_order_3_in_a_tournament",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 08)",
+  "search_enabled": true
+}

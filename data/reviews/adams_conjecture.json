@@ -1,0 +1,35 @@
+{
+  "status": "disproved",
+  "confidence": "high",
+  "summary": "Thomassen (2023) disproves Ádám's conjecture for simple digraphs by constructing an infinite family of strongly 2-connected oriented graphs (directed graphs with no multiple arcs) in which no arc reversal decreases the number of directed cycles. This extends the earlier counterexamples (Grinberg, Jirásek, Thomassen 1987), which were only for multigraphs, to the realm of simple digraphs. The weaker tournament version of the conjecture ('every non-transitive tournament has an arc whose reversal reduces the number of directed cycles') appears to remain open.",
+  "since_posted": [
+    {
+      "title": "Ádám's conjecture",
+      "authors": "Carsten Thomassen",
+      "year": 2023,
+      "venue": "Journal of Combinatorial Theory, Series B",
+      "url": "https://orbit.dtu.dk/en/publications/%C3%A1d%C3%A1ms-conjecture/",
+      "doi": "10.1016/j.jctb.2023.01.005",
+      "arxiv_id": null,
+      "kind": "counterexample",
+      "claim": "Constructs an infinite family of strongly 2-connected oriented graphs (simple digraphs, no multiple arcs) in which no single arc reversal decreases the number of directed cycles, thereby disproving Ádám's conjecture for simple digraphs."
+    }
+  ],
+  "search_queries": [
+    "Ádám's conjecture arc reversal digraph directed cycles",
+    "Adam conjecture tournament arc reversal reduces cycles",
+    "Ádám conjecture digraph arc reversal 2014 2015 2016 2017 2018 2019 2020",
+    "Thomassen \"Ádám's conjecture\" 2023 \"Journal of Combinatorial Theory\" oriented graphs counterexample",
+    "arXiv Thomassen \"Adam conjecture\" 2022 2023 oriented graphs counterexample arc reversal directed cycles",
+    "\"Adam conjecture\" tournament \"arc reversal\" 2020 2021 2022 2023 2024 2025 open problem"
+  ],
+  "verified_urls": [
+    "https://orbit.dtu.dk/en/publications/%C3%A1d%C3%A1ms-conjecture/"
+  ],
+  "notes": "The ScienceDirect page (https://www.sciencedirect.com/science/article/pii/S0095895623000060) for the Thomassen 2023 paper returned HTTP 403 Forbidden. Verification was completed via the DTU Research Database page, which confirmed title, author, year, journal, volume (161), pages (15–20), DOI (10.1016/j.jctb.2023.01.005), and abstract. No arXiv preprint of the Thomassen 2023 paper was found. The tournament variant of the conjecture ('every non-transitive tournament has an arc whose reversal reduces the number of directed cycles') does not appear to be addressed by Thomassen 2023, since strongly 2-connected oriented graph counterexamples need not be tournaments; that variant appears to remain open.",
+  "slug": "adams_conjecture",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "elapsed_seconds": 134.7
+}

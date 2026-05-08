@@ -1,0 +1,47 @@
+{
+  "status": "open",
+  "confidence": "high",
+  "summary": "The existence of a 57-regular Moore graph (equivalently, a strongly regular graph with parameters $(3250,57,0,1)$) remains an open problem. A 2020 arXiv preprint by Makhnev claimed to prove non-existence via a case analysis on distance-regular graphs, but Faber and Keegan (2022) identified a critical flaw: the system of equations involved factors into small diagonal blocks, each of which admits solutions. The problem is widely regarded as still open as of 2023.",
+  "since_posted": [
+    {
+      "title": "Moore graph with parameters (3250,57,0,1) does not exist",
+      "authors": "A. A. Makhnev",
+      "year": 2020,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2010.13443",
+      "doi": null,
+      "arxiv_id": "2010.13443",
+      "kind": "partial",
+      "claim": "Claims to prove non-existence of the Moore graph of degree 57 via a case analysis on distance-regular graphs with intersection array {55,54,2;1,1,54}; subsequently shown to contain a critical error."
+    },
+    {
+      "title": "Existence of a Moore graph of degree 57 is still open",
+      "authors": "Vance Faber, Jonathan Keegan",
+      "year": 2023,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2210.09577",
+      "doi": null,
+      "arxiv_id": "2210.09577",
+      "kind": "partial",
+      "claim": "Identifies a critical flaw in Makhnev's 2020 claimed non-existence proof (the constraint equations factor into solvable diagonal blocks), and proposes a reformulation in terms of permutation systems, confirming the existence question is still open."
+    }
+  ],
+  "search_queries": [
+    "57-regular Moore graph diameter 2 girth 5 existence 3250 vertices",
+    "Moore graph degree 57 recent progress 2020 2021 2022 2023 2024 2025",
+    "arxiv \"missing Moore graph\" survey 2019 Macaj Siran OR \"optimization problem\" 2023",
+    "arxiv \"potential subgraphs\" \"missing Moore graph\" 2024"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2010.13443",
+    "https://arxiv.org/abs/2210.09577",
+    "https://en.wikipedia.org/wiki/Moore_graph",
+    "https://arxiv.org/search/?searchtype=all&query=moore+graph+degree+57&start=0",
+    "https://elib.dlr.de/219938/1/axioms-14-00802-1.pdf"
+  ],
+  "notes": "Several post-2007 papers could not be verified due to HTTP 403 blocks on MDPI (doi:10.3390/axioms15050332, doi:10.3390/sym16121563) and ScienceDirect (doi:10.1016/j.ejco.2023.100078). These reportedly include: a 2024 Symmetry paper (Smith & Montemanni) extending computational subgraph results from 15 to 20, a 2023 EURO J. Computational Optimization paper posing the problem as an optimization problem, and a 2026 Axioms paper proving cyclic-group constructions are impossible. None of these resolve the existence question. The Makhnev 2020 paper (2010.13443) was submitted as arXiv only and its claimed non-existence result is considered invalid. The problem is confidently still open.",
+  "slug": "57_regular_moore_graph",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 02)",
+  "search_enabled": true
+}

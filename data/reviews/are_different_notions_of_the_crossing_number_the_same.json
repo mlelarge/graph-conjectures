@@ -1,0 +1,59 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The equality $\\text{pair-cr}(G) = \\text{cr}(G)$ remains open for general graphs. Significant partial progress has been made: the best known upper bound on $\\text{cr}(G)$ in terms of $k = \\text{pair-cr}(G)$ has improved from $O(k^2/\\log^2 k)$ (Tóth, 2008) to $O(k^{3/2}\\log k)$ (Karl–Tóth, 2021) and then to $O(k^{3/2})$ (Solé Pi, 2022), but no example with $\\text{pair-cr}(G) < \\text{cr}(G)$ has been found.",
+  "since_posted": [
+    {
+      "title": "A slightly better bound on the crossing number in terms of the pair-crossing number",
+      "authors": "János Karl, Géza Tóth",
+      "year": 2021,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2105.14319",
+      "doi": null,
+      "arxiv_id": "2105.14319",
+      "kind": "partial",
+      "claim": "Proves $\\text{cr}(G) = O(\\text{pcr}(G)^{3/2} \\log \\text{pcr}(G))$, improving the previously known bound of Matoušek by a logarithmic factor."
+    },
+    {
+      "title": "Pair crossing number, cutwidth, and good drawings on arbitrary point sets",
+      "authors": "Oriol Solé Pi",
+      "year": 2022,
+      "venue": "Discrete & Computational Geometry",
+      "url": "https://arxiv.org/abs/2211.03322",
+      "doi": "10.1007/s00454-024-00708-z",
+      "arxiv_id": "2211.03322",
+      "kind": "partial",
+      "claim": "Proves $\\text{cr}(G) = O(\\text{pcr}(G)^{3/2})$ for every graph $G$, removing the remaining logarithmic factor and giving the current best bound."
+    },
+    {
+      "title": "From Local Pair-Crossing Number to Local Crossing Number",
+      "authors": "Jacob Fox, János Pach, Andrew Suk",
+      "year": 2025,
+      "venue": "Graph Drawing 2025 (LIPIcs)",
+      "url": "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.GD.2025.31",
+      "doi": "10.4230/LIPIcs.GD.2025.31",
+      "arxiv_id": null,
+      "kind": "partial",
+      "claim": "Resolves the local variant: if each edge crosses at most $k$ others in some drawing, then a redrawing exists where each edge participates in at most $k^3 + O(k^2)$ crossings, improving a prior exponential bound and answering a question of Ackerman–Schaefer."
+    }
+  ],
+  "search_queries": [
+    "pair-crossing number crossing number equality graph theory conjecture",
+    "pair-cr crossing number Pach Tóth recent progress arXiv",
+    "pair-crossing number crossing number gap counterexample 2010 2025 arXiv",
+    "Schaefer \"crossing number survey\" pair-crossing number 2024 2025",
+    "Matoušek \"pair-crossing number\" crossing number bound arXiv",
+    "arXiv 2211.03322 \"pair crossing number cutwidth\" author"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2105.14319",
+    "https://arxiv.org/abs/2211.03322",
+    "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.GD.2025.31"
+  ],
+  "notes": "The Springer journal page for 10.1007/s00454-024-00708-z (Discrete & Computational Geometry, 2024 publication of Solé Pi's paper) required authentication and could not be directly fetched; the DOI is confirmed via search results cross-referencing arXiv:2211.03322. The Ackerman–Schaefer (2014) 'A Crossing Lemma for the Pair-Crossing Number' chapter (DOI 10.1007/978-3-662-45803-7_19) also required Springer authentication and could not be verified; it is therefore omitted from since_posted despite appearing in searches. Matoušek's bound (improved by Karl–Tóth 2021) appears to be unpublished or informal; no verifiable arXiv/journal paper by Matoušek on this specific bound was found. The Fox–Pach–Suk (2025) result addresses the local variant of the problem (local pair-crossing vs. local crossing number) rather than the global equality asked in the problem statement.",
+  "slug": "are_different_notions_of_the_crossing_number_the_same",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "elapsed_seconds": 1340.3
+}

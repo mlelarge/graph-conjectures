@@ -1,0 +1,31 @@
+{
+  "status": "open",
+  "confidence": "low",
+  "summary": "The Rosenfeld conjecture — that a simple $d$-uniform hypergraph in which every $(d-1)$-set is contained in at most $r$ edges admits an $(r+d-1)$-edge-coloring with no two edges sharing $d-1$ vertices receiving the same color — appears to remain open. Extensive searching found no verified paper proving or disproving it; the problem was noted as hard already at posting time because Kempe-chain arguments (the main tool for Vizing's theorem) fail for $d\\geq 3$. Related but distinct Vizing-type generalizations to linear hypergraphs (the Berge–Füredi conjecture) have been studied actively, but these concern a different intersection regime.",
+  "since_posted": [],
+  "search_queries": [
+    "Rosenfeld conjecture generalization Vizing theorem uniform hypergraph edge coloring d-uniform",
+    "hypergraph edge coloring Vizing theorem d-uniform r+d-1 colors conjecture",
+    "Vizing's theorem hypergraph extension \"d-1 vertices\" edge coloring arXiv",
+    "Moshe Rosenfeld hypergraph edge coloring conjecture \"r+d-1\" OR \"near-pencil\" site:arxiv.org",
+    "Rosenfeld \"generalization of Vizing\" hypergraph \"d-uniform\" edge coloring open problem 2007 progress",
+    "Cooper Mubayi hypergraph edge coloring conjecture disproved k-uniform counterexample",
+    "\"Berge-Füredi conjecture\" hypergraph chromatic index Vizing generalization uniform",
+    "\"edge-coloring\" \"3-uniform hypergraph\" Vizing special case r+2 colors arXiv",
+    "\"edge-coloring of 3-uniform hypergraphs\" Vizing Rosenfeld conjecture authors journal 2016",
+    "\"edge-coloring\" \"3-uniform hypergraph\" Vizing Rosenfeld conjecture authors journal 2016"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/1603.04938",
+    "https://arxiv.org/abs/2403.06850",
+    "https://arxiv.org/html/2403.06850",
+    "https://arxiv.org/abs/2403.09518",
+    "https://arxiv.org/abs/2510.07494"
+  ],
+  "notes": "The OPG page (openproblemgarden.org and garden.irmacs.sfu.ca) was inaccessible (ECONNREFUSED), so any post-2007 comments on that page could not be read. A 2016 Discrete Applied Mathematics paper 'Edge-coloring of 3-uniform hypergraphs' (DOI: 10.1016/j.dam.2016.07.003) appeared in several searches and may be relevant, but its full text was unreadable (binary PDF) so it could not be verified as addressing the Rosenfeld conjecture specifically — it was therefore excluded. The Berge–Füredi conjecture (for linear hypergraphs, q(H) ≤ Δ([H]₂)+1) is a different but related Vizing generalization and has received activity in 2024 (arXiv:2403.06850, arXiv:2403.09518); it is not the same as the Rosenfeld conjecture. Confidence is low due to inaccessibility of the OPG page and inability to read several candidate PDFs.",
+  "slug": "a_generalization_of_vizings_theorem",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "elapsed_seconds": 202.8
+}

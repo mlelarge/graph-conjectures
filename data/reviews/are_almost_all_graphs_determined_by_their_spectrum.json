@@ -1,0 +1,70 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The van Dam–Haemers conjecture that almost all graphs are determined by their adjacency spectrum remains open. The most significant post-posting advance is Koval and Kwan (2024), who proved that at least $e^{cn}$ unlabeled $n$-vertex graphs are determined by their spectrum, breaking the longstanding $e^{c\\sqrt{n}}$ barrier but still far short of the conjectured density $\\sim 2^{n(n-1)/2}/n!$. A 2026 preprint by Xiang constructs a 'natural' graph matrix (derived from the adjacency matrix) whose spectrum determines random graphs up to isomorphism, resolving a related 2003 question of van Dam and Haemers for a different matrix; and a separate 2026 preprint shows sparse (Erdős–Rényi) graphs are typically NOT determined by their adjacency spectrum, due to pendant-tree obstructions.",
+  "since_posted": [
+    {
+      "title": "Exponentially Many Graphs Are Determined By Their Spectrum",
+      "authors": "Illya Koval, Matthew Kwan",
+      "year": 2024,
+      "venue": "The Quarterly Journal of Mathematics",
+      "url": "https://academic.oup.com/qjmath/article/75/3/869/7696175",
+      "doi": "10.1093/qmath/haae030",
+      "arxiv_id": "2309.09788",
+      "kind": "partial",
+      "claim": "Proves that the number of DS $n$-vertex graphs is at least $e^{cn}$ for an absolute constant $c>0$, improving the prior sub-exponential ($e^{c\\sqrt{n}}$) bound and answering a question of van Dam and Haemers about exponential lower bounds."
+    },
+    {
+      "title": "Natural graph spectra",
+      "authors": "Ziqing Xiang",
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2602.00936",
+      "doi": null,
+      "arxiv_id": "2602.00936",
+      "kind": "partial",
+      "claim": "Constructs a natural graph matrix (derived from the adjacency matrix via a double-algebra framework) whose spectrum determines random graphs up to isomorphism, affirmatively answering a 2003 question of van Dam and Haemers — but for a different matrix, not the adjacency matrix itself."
+    },
+    {
+      "title": "Are sparse graphs typically determined by their spectrum?",
+      "authors": "Nils Van de Berg, Alexander Van Werde",
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2602.22757",
+      "doi": null,
+      "arxiv_id": "2602.22757",
+      "kind": "partial",
+      "claim": "Shows that the giant component of Erdős–Rényi graphs with small average degree is typically cospectral (due to pendant trees), so sparse graphs are generally NOT determined by their adjacency spectrum, while providing evidence that removing pendant trees (passing to the 2-core) restores spectral determination."
+    },
+    {
+      "title": "On Spectral Graph Determination",
+      "authors": "Igal Sason, Noam Krupnik, Suleiman Hamud, Abraham Berman",
+      "year": 2025,
+      "venue": "Mathematics (MDPI)",
+      "url": "https://arxiv.org/abs/2412.20775",
+      "doi": null,
+      "arxiv_id": "2412.20775",
+      "kind": "survey",
+      "claim": "Comprehensive survey of classical and recent advances on spectral characterization of graphs, covering cospectral constructions, DS graph families, and Haemers' conjecture."
+    }
+  ],
+  "search_queries": [
+    "almost all graphs determined by spectrum adjacency matrix cospectral",
+    "graphs determined by spectrum DS conjecture van Dam Haemers recent results",
+    "fraction cospectral graphs random graph spectrum 2020 2021 2022 2023 2024 2025",
+    "Haemers conjecture almost all graphs determined spectrum proved 2024 2025 2026"
+  ],
+  "verified_urls": [
+    "https://academic.oup.com/qjmath/article/75/3/869/7696175",
+    "https://arxiv.org/abs/2309.09788",
+    "https://arxiv.org/abs/2602.22757",
+    "https://arxiv.org/abs/2602.00936",
+    "https://arxiv.org/abs/2412.20775"
+  ],
+  "notes": "The conjecture (fraction of DS graphs → 1) is not resolved. The Koval–Kwan exponential lower bound is the largest theoretical advance; total DS graphs are still exponentially smaller than all graphs. The Xiang (2026) result resolves a weaker variant (a natural but non-adjacency matrix), so does not close the original problem. The Van de Berg–Van Werde (2026) negative result for sparse graphs does not contradict the conjecture, which is naturally interpreted in the dense/uniform random-graph setting. No paper resolving the full conjecture was found.",
+  "slug": "are_almost_all_graphs_determined_by_their_spectrum",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "elapsed_seconds": 115.0
+}

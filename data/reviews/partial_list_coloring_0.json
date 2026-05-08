@@ -1,0 +1,48 @@
+{
+  "status": "partial",
+  "confidence": "medium",
+  "summary": "The Iradmusa conjecture that $\\lambda_r/r \\geq \\lambda_s/s$ for $1 \\leq r \\leq s \\leq \\chi_\\ell$ (which generalizes the Albertson–Grossman–Haas conjecture $\\lambda_t \\geq tn/\\chi_\\ell$) remains open in full generality. The special case $s = \\chi_\\ell$ has been verified for claw-free, chordless, and series-parallel graphs. The DP-coloring analogue of the partial list coloring conjecture does not hold in general.",
+  "since_posted": [
+    {
+      "title": "Partial list colouring of certain graphs",
+      "authors": "Jeannette Janssen, Rogers Mathew, Deepak Rajendraprasad",
+      "year": 2014,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/1403.2587",
+      "doi": null,
+      "arxiv_id": "1403.2587",
+      "kind": "partial",
+      "claim": "Proves the Albertson–Grossman–Haas partial list coloring conjecture for claw-free graphs, chordless graphs, series-parallel graphs, and graphs with large chromatic number."
+    },
+    {
+      "title": "Partial DP-Coloring",
+      "authors": "Hemanshu Kaul, Jeffrey A. Mudrock, Michael J. Pelsmajer",
+      "year": 2020,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2003.02687",
+      "doi": null,
+      "arxiv_id": "2003.02687",
+      "kind": "partial",
+      "claim": "Shows that the DP-coloring analogue of the partial list coloring conjecture does not hold, while extending several positive partial list coloring results to the DP-coloring setting."
+    }
+  ],
+  "search_queries": [
+    "partial list coloring conjecture Iradmusa lambda_r/r lambda_s/s list chromatic number",
+    "partial list coloring Albertson Grossman Haas conjecture progress 2010 2020 2025",
+    "arXiv partial list coloring lambda_t list chromatic number conjecture graph",
+    "\"partial list coloring\" \"list chromatic number\" conjecture proof recent results"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2512.08020",
+    "https://arxiv.org/abs/2003.02687",
+    "https://arxiv.org/abs/1403.2587",
+    "https://arxiv.org/html/2512.08020v1",
+    "https://www.cambridge.org/core/journals/combinatorics-probability-and-computing/article/abs/algorithmic-aspects-of-partial-list-colourings/8DE86B32EAD22E2028E2C1BA7AB6CBCD",
+    "https://arxiv.org/abs/math/9805066"
+  ],
+  "notes": "The Iradmusa conjecture (λ_r/r ≥ λ_s/s for all r ≤ s ≤ χ_ℓ) is strictly stronger than the AGH conjecture (the special case s = χ_ℓ). Most literature focuses on the weaker AGH special case; no papers directly addressing the more general Iradmusa ratio inequality were found. arXiv:2512.08020 concerns a different 'Albertson conjecture' about crossing numbers and is unrelated. The Kaul–Mudrock–Pelsmajer paper (2003.02687) was likely published in Discrete Mathematics but the journal DOI could not be verified (403 access). Chappell's 1998 bound (at least 6/7 of the conjectured vertices can be colored) predates the 2008 OPG posting and was not included in since_posted.",
+  "slug": "partial_list_coloring_0",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 01)",
+  "search_enabled": true
+}

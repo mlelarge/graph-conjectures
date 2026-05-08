@@ -1,0 +1,35 @@
+{
+  "status": "partial",
+  "confidence": "medium",
+  "summary": "The conjecture that every $k$-arc-strong tournament decomposes into $k$ spanning strong digraphs remains open. The best known partial result from Bang-Jensen and Yeo (2004) covers $k$-arc-strong tournaments with minimum in- and out-degree at least $37k$. Post-2013 work has extended arc-disjoint strong spanning subdigraph results to broader classes (semicomplete compositions) but has not resolved the original conjecture for tournaments.",
+  "since_posted": [
+    {
+      "title": "Arc-disjoint Strong Spanning Subdigraphs of Semicomplete Compositions",
+      "authors": "Joergen Bang-Jensen, Gregory Gutin, Anders Yeo",
+      "year": 2019,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/1903.12225",
+      "doi": null,
+      "arxiv_id": "1903.12225",
+      "kind": "partial",
+      "claim": "Characterizes digraph compositions (with a semicomplete base digraph) that admit a strong arc decomposition, extending the framework of Bang-Jensen–Yeo to a broader class than tournaments."
+    }
+  ],
+  "search_queries": [
+    "decomposing k-arc-strong tournament spanning strong digraphs conjecture Bang-Jensen Yeo",
+    "arXiv tournament decomposition arc-strong spanning strong subdigraphs 2014 2025",
+    "Kelly conjecture tournament decomposition Hamilton cycles Kühn Osthus strong spanning",
+    "Bang-Jensen Yeo arc-strong tournament strong spanning subdigraphs conjecture progress",
+    "arXiv \"arc-strong tournament\" \"spanning strong\" decomposition 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/1903.12225",
+    "https://arxiv.org/abs/2408.02260",
+    "https://arxiv.org/search/?searchtype=all&query=arc-strong+tournament+spanning+strong+decomposition&start=0"
+  ],
+  "notes": "The Wiley Online Library pages for 'Strong arc decompositions of split digraphs' (JGT 2025) and 'Making a tournament k-strong' (JGT 2023) and 'Arc-disjoint strong spanning subdigraphs of semicomplete compositions' (JGT 2020) returned HTTP 403 and could not be verified. The 2024 arXiv paper 2408.02260 on split digraphs is related but does not address the tournament conjecture directly. No post-2013 paper resolving the original conjecture was found in 4 search rounds. Kelly's conjecture (implied by this conjecture) was proved for large tournaments by Kühn–Osthus (2013), but that does not resolve the stronger Bang-Jensen–Yeo conjecture.",
+  "slug": "decomposing_k_arc_strong_tournament_into_k_spanning_strong_digraphs",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 06)",
+  "search_enabled": true
+}

@@ -1,0 +1,47 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The circular embedding conjecture (equivalently, the strong embedding conjecture) remains open for general 2-connected graphs. Ellingham and Zha (2011) proved the oriented variant for 2-connected projective-planar cubic graphs, showing every such graph has a closed 2-cell embedding in some orientable surface. The conjecture is equivalent to the cycle double cover conjecture for cubic graphs, and both remain major open problems in topological graph theory.",
+  "since_posted": [
+    {
+      "title": "Orientable embeddings and orientable cycle double covers of projective-planar graphs",
+      "authors": "M. N. Ellingham, Xiaoya Zha",
+      "year": 2009,
+      "venue": "arXiv preprint (journal: European Journal of Combinatorics, 2011)",
+      "url": "https://arxiv.org/abs/0911.2713",
+      "doi": null,
+      "arxiv_id": "0911.2713",
+      "kind": "partial",
+      "claim": "Proves that every 2-connected projective-planar cubic graph has a closed 2-cell (circular) embedding in some orientable surface, and that every 2-edge-connected projective-planar graph has an orientable cycle double cover, establishing the oriented circular embedding conjecture for this graph class."
+    },
+    {
+      "title": "Facial diagrams and cycle double cover",
+      "authors": "Babak Ghanbari, Robert Šámal",
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2605.01410",
+      "doi": null,
+      "arxiv_id": "2605.01410",
+      "kind": "partial",
+      "claim": "Introduces a facial-diagram framework for circular 2-cell embeddings of cubic graphs, studies an edge-twisting operation that transforms one 2-cell embedding into another, and derives bounds on the number of singular edges, providing new tools for attacking the circular embedding / cycle double cover conjecture."
+    }
+  ],
+  "search_queries": [
+    "circular embedding conjecture 2-connected graph surface face cycle progress",
+    "cycle double cover conjecture circular embedding equivalent cubic graphs recent results",
+    "oriented circular embedding conjecture orientable surface 2-connected graph proof",
+    "Haggard disc embeddings circular embedding conjecture arXiv graph theory"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2605.01410",
+    "https://arxiv.org/abs/0911.2713",
+    "https://arxiv.org/abs/1501.06043",
+    "https://arxiv.org/abs/2406.03800",
+    "https://arxiv.org/abs/0908.1933"
+  ],
+  "notes": "Mohar (2009/2010, arXiv:0908.1933) showed that closed 2-cell embeddings may require surfaces of genus proportional to the order of the graph for some cubic graphs, disproving a minimum-genus folklore conjecture attributed to Tutte, but this does not disprove the circular embedding conjecture (which asks for existence on any surface). Ellingham and Zha (2015, arXiv:1501.06043) developed a partial-duality characterisation of closed 2-cell embeddings. A claim circulating in survey literature that 'any 2-connected graph without the Möbius 4-ladder as a minor has a closed 2-cell embedding' could not be traced to a verifiable source within the search budget. The ScienceDirect page for the Ellingham-Zha journal paper returned HTTP 403; the arXiv preprint was verified instead.",
+  "slug": "the_circular_embedding_conjecture",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 02)",
+  "search_enabled": true
+}

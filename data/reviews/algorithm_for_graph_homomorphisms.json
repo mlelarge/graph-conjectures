@@ -1,0 +1,71 @@
+{
+  "slug": "algorithm_for_graph_homomorphisms",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet (subagent)",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "medium",
+  "summary": "The original question of whether there is an algorithm deciding the existence of a homomorphism from $G$ to $H$ in time $O(c^{|V(G)|+|V(H)|})$ for some absolute constant $c$ remains open in full generality. Since 2010, several works have extended the list of graph classes admitting such plain-exponential algorithms (e.g., Wahlstrom-type results were generalized by Dadsetan and Bulatov to further classes for the counting version, and Rzazewski gave an $O^{*}((b+2)^{|V(G)|})$ algorithm parametrized by the bandwidth of the complement of $H$), and Fomin, Golovnev, Kulikov, and Mihajlin proved an ETH lower bound of $2^{\\Omega(n \\log h / \\log\\log h)}$ for the general problem, which however does not rule out a $c^{n+h}$ algorithm.",
+  "since_posted": [
+    {
+      "title": "Lower Bounds for the Graph Homomorphism Problem",
+      "authors": "Fedor V. Fomin, Alexander Golovnev, Alexander S. Kulikov, Ivan Mihajlin",
+      "year": 2015,
+      "venue": "ICALP 2015 / arXiv preprint",
+      "url": "https://arxiv.org/abs/1502.05447",
+      "doi": "10.1007/978-3-662-47672-7_39",
+      "arxiv_id": "1502.05447",
+      "kind": "partial",
+      "claim": "Proves an ETH-based lower bound of $2^{\\Omega(n \\log h / \\log\\log h)}$ for deciding graph homomorphism, ruling out single-exponential-in-$n\\log h$ algorithms but not a $c^{|V(G)|+|V(H)|}$ algorithm."
+    },
+    {
+      "title": "Exact Algorithm for Graph Homomorphism and Locally Injective Graph Homomorphism",
+      "authors": "Pawel Rzazewski",
+      "year": 2014,
+      "venue": "Information Processing Letters / arXiv preprint",
+      "url": "https://arxiv.org/abs/1310.3341",
+      "doi": "10.1016/j.ipl.2014.02.012",
+      "arxiv_id": "1310.3341",
+      "kind": "partial",
+      "claim": "Gives an exact algorithm for graph homomorphism running in time $O^{*}((b+2)^{|V(G)|})$, where $b$ is the bandwidth of the complement of $H$, expanding the list of classes for which the problem is solvable in plain-exponential time."
+    },
+    {
+      "title": "Counting homomorphisms in plain exponential time",
+      "authors": "Amineh Dadsetan, Andrei A. Bulatov",
+      "year": 2018,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/1810.03087",
+      "doi": null,
+      "arxiv_id": "1810.03087",
+      "kind": "partial",
+      "claim": "Generalizes Wahlstrom's result for counting graph homomorphisms in time $k^{|V(G)|+|V(H)|}\\cdot\\mathrm{poly}$ from bounded clique-width to additional classes of target graphs $H$, enlarging the known cases of plain-exponential algorithms."
+    },
+    {
+      "title": "The Fine-Grained Complexity of Graph Homomorphism Parameterized by Clique-Width",
+      "authors": "Robert Ganian, Thekla Hamm, Viktoriia Korchemna, Karolina Okrasa, Kirill Simonov",
+      "year": 2022,
+      "venue": "ICALP 2022 / arXiv preprint",
+      "url": "https://arxiv.org/abs/2210.06845",
+      "doi": "10.4230/LIPIcs.ICALP.2022.66",
+      "arxiv_id": "2210.06845",
+      "kind": "partial",
+      "claim": "Provides a fine-grained classification of the homomorphism problem in time $O^{*}(s(H)^{cw})$ with matching SETH-based lower bounds, refining the picture for restricted target graphs $H$ (clique-width-parametrized) but leaving the general $c^{|V(G)|+|V(H)|}$ question open."
+    }
+  ],
+  "search_queries": [
+    "exact exponential algorithm graph homomorphism c^(n+m)",
+    "\"graph homomorphism\" exponential time algorithm Fomin Heggernes Kratsch open",
+    "\"graph homomorphism\" \"exact algorithm\" exponential time complexity arxiv",
+    "Wahlstrom \"graph homomorphism\" plain-exponential algorithm",
+    "\"graph homomorphism\" lower bound ETH \"c^{n+m}\" OR \"c^{|V(G)|+|V(H)|}\""
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/1810.03087",
+    "https://arxiv.org/abs/2210.06845",
+    "https://arxiv.org/abs/1310.3341",
+    "https://arxiv.org/abs/1502.05447",
+    "https://arxiv.org/abs/2011.04778",
+    "https://epubs.siam.org/doi/10.1137/20M1320146"
+  ],
+  "notes": "The original question concerns the decision version with constant base $c$ independent of $G,H$. The 2015 ETH lower bound of $2^{\\Omega(n \\log h / \\log\\log h)}$ does NOT rule out a $c^{|V(G)|+|V(H)|}$ algorithm (e.g., when $h \\gg n$, $c^{n+h}$ can exceed the lower bound). All cited papers extend the known classes of $H$ for which plain-exponential algorithms exist, or give lower bounds for restricted parameterizations, but none affirmatively or negatively resolves the original FHK question. The exact published year/venue of arXiv:1810.03087 was not verified beyond the preprint."
+}

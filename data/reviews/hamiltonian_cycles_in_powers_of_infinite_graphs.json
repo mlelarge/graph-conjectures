@@ -1,0 +1,47 @@
+{
+  "status": "open",
+  "confidence": "high",
+  "summary": "Both conjectures remain open for general countable graphs that are not locally finite. The square and cube cases are fully settled for locally finite graphs — the locally finite result was already credited to Georgakopoulos's 2007 Oberwolfach report at the time of posting, and the complete proof appeared in *Advances in Mathematics* in 2009 — but no verified paper has resolved either conjecture for countable graphs with vertices of unbounded degree.",
+  "since_posted": [
+    {
+      "title": "Infinite Hamilton Cycles in Squares of Locally Finite Graphs",
+      "authors": "Agelos Georgakopoulos",
+      "year": 2009,
+      "venue": "Advances in Mathematics",
+      "url": "https://warwick.ac.uk/fac/sci/maths/people/staff/agelos_georgakopoulos/",
+      "doi": null,
+      "arxiv_id": null,
+      "kind": "partial",
+      "claim": "Provides the full journal proof that the square of every 2-connected locally finite graph contains a Hamilton circle (extending Fleischner's theorem to locally finite graphs), formalising the result cited in the OPG problem statement as already known."
+    },
+    {
+      "title": "Hamiltonicity in Locally Finite Graphs: Two Extensions and a Counterexample",
+      "authors": "Karl Heuer",
+      "year": 2018,
+      "venue": "Electronic Journal of Combinatorics",
+      "url": "https://arxiv.org/abs/1701.06029",
+      "doi": null,
+      "arxiv_id": "1701.06029",
+      "kind": "partial",
+      "claim": "Gives a sufficient condition for the square of a locally finite graph to contain a Hamilton circle and answers a related Mohar question about unique Hamilton circles, but remains within the locally finite setting and does not address the stated conjectures for general countable graphs."
+    }
+  ],
+  "search_queries": [
+    "Georgakopoulos Hamiltonian cycles powers infinite graphs countable",
+    "Fleischner square graph Hamiltonian infinite countable 2-connected",
+    "third power countable graph Hamiltonian infinite graph conjecture",
+    "Georgakopoulos \"Hamilton\" \"infinite graph\" \"square\" OR \"cube\" arXiv",
+    "Heuer \"hamiltonicity\" \"locally finite\" \"counterexample\" OR \"extension\" infinite graph 2020 2021 2022 2023"
+  ],
+  "verified_urls": [
+    "https://www.sfu.ca/~mohar/Problems/P0703_HamiltonicityInfinite.html",
+    "https://arxiv.org/abs/1701.06029",
+    "https://www.combinatorics.org/ojs/index.php/eljc/article/view/v25i3p13",
+    "https://warwick.ac.uk/fac/sci/maths/people/staff/agelos_georgakopoulos/"
+  ],
+  "notes": "The Mohar problem page (verified) explicitly states that both conjectures remain open for the non-locally-finite countable case. The 2009 Advances in Mathematics paper formalises the locally finite result already credited at posting time. The ScienceDirect page for the 2009 paper returned HTTP 403; the paper was instead confirmed via the author's Warwick faculty page. No paper found after 2007 addresses cubes or squares of general countable (possibly non-locally-finite) graphs.",
+  "slug": "hamiltonian_cycles_in_powers_of_infinite_graphs",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 08)",
+  "search_enabled": true
+}

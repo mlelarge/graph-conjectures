@@ -1,0 +1,51 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The specific sub-question posed by Diestel and Leader — whether every $(\\aleph_0,\\aleph_1)$-graph has an $(\\aleph_0,\\aleph_1)$-minor that is either indivisible or of binary type — was answered negatively under the Continuum Hypothesis by Bowler, Geschke, and Pitz (2018, Fundamenta Mathematicae): they construct $(\\aleph_0,\\aleph_1)$-graphs with no such minor under CH, while under Martin's Axiom with $\\neg$CH the class of forbidden $(\\aleph_0,\\aleph_1)$-graphs in the Diestel–Leader normal-spanning-tree theorem collapses to a single instance up to minors. The broader problem of providing a combinatorial characterization of all $(\\aleph_0,\\aleph_1)$-graphs remains open.",
+  "since_posted": [
+    {
+      "title": "Minimal obstructions for normal spanning trees",
+      "authors": "Nathan Bowler, Stefan Geschke, Max Pitz",
+      "year": 2018,
+      "venue": "Fundamenta Mathematicae",
+      "url": "https://arxiv.org/abs/1609.01042",
+      "doi": null,
+      "arxiv_id": "1609.01042",
+      "kind": "partial",
+      "claim": "Under CH, constructs $(\\aleph_0,\\aleph_1)$-graphs with no minor that is either indivisible or of binary type, negatively answering Diestel–Leader's sub-question; under MA+$\\neg$CH, shows the forbidden class reduces to a single $(\\aleph_0,\\aleph_1)$-graph up to minors."
+    },
+    {
+      "title": "A new obstruction for normal spanning trees",
+      "authors": "Max Pitz",
+      "year": 2021,
+      "venue": "Bulletin of the London Mathematical Society",
+      "url": "https://arxiv.org/abs/2005.04150",
+      "doi": "10.1112/blms.12495",
+      "arxiv_id": "2005.04150",
+      "kind": "partial",
+      "claim": "Identifies a gap in the Diestel–Leader proof and constructs a third type of excluded minor (an $\\aleph_1$-sized graph without a normal spanning tree containing neither of the two Diestel–Leader obstructions as a minor), showing any forbidden-minor characterisation for normal spanning trees requires graphs of arbitrarily large cardinality."
+    }
+  ],
+  "search_queries": [
+    "aleph_0 aleph_1 graphs characterization Diestel Leader infinite graph",
+    "normal spanning tree infinite graph forbidden minor Aronszajn tree",
+    "Diestel Leader normal spanning tree gap third obstruction aleph_1 forbidden minor characterization",
+    "(aleph_0,aleph_1)-graph divisible binary type Diestel Leader characterization",
+    "Halin normal spanning tree conjecture proof arXiv colouring number infinite graph",
+    "Bowler Geschke Pitz minimal obstructions normal spanning trees Fundamenta Mathematicae"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/1609.01042",
+    "https://arxiv.org/abs/2005.04150",
+    "https://arxiv.org/abs/2005.02833",
+    "https://www.math.uni-hamburg.de/spag/dm/projects/nst.html",
+    "https://ui.adsabs.harvard.edu/abs/2016arXiv160901042B/abstract",
+    "https://arxiv.org/abs/2510.04367"
+  ],
+  "notes": "The Fundamenta Mathematicae journal DOI for the Bowler–Geschke–Pitz paper (vol. 241, 2018, pp. 245–263) could not be directly fetched (paywall), but its content was confirmed via the verified arXiv preprint 1609.01042 and the Hamburg research group page. The Pitz 2021 paper on Halin's conjecture (Israel J. Math., arXiv:2005.02833) proves that a graph has a normal spanning tree iff every minor has countable colouring number; this is tangentially related (characterises graphs with normal spanning trees rather than $(\\aleph_0,\\aleph_1)$-graphs themselves). No paper found after 2008 provides a full structural characterisation of $(\\aleph_0,\\aleph_1)$-graphs.",
+  "slug": "characterizing_aleph_0_aleph_1_graphs",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "elapsed_seconds": 132.0
+}

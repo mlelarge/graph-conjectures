@@ -1,0 +1,20 @@
+{
+  "status": "open",
+  "confidence": "medium",
+  "summary": "The Shuffle-Exchange Conjecture ($r(k,n)=2n-1$) remains open in general. The case $k=2$, $n \\le 4$ (i.e., networks up to $16 \\times 16$) was established before the 2009 OPG posting, and the best known general upper bound remains approximately $3\\log_2 N - 3$ stages — far from the conjectured $2\\log_2 N - 1$. No verified post-2009 paper resolving or substantially advancing the general conjecture was found.",
+  "since_posted": [],
+  "search_queries": [
+    "Shuffle-Exchange Conjecture r(k,n) = 2n-1 rearrangeable graph theory proof",
+    "shuffle exchange conjecture solved arXiv combinatorics 2010 2025",
+    "Evdokimov shuffle exchange network rearrangeability conjecture",
+    "multistage shuffle-exchange graph rearrangeable conjecture recent progress",
+    "shuffle exchange conjecture 2n-1 stages proved 2015 2020 2025 arXiv proof",
+    "shuffle-exchange network rearrangeability 2010 2011 2012 2015 2020 proof conjecture open problem"
+  ],
+  "verified_urls": [],
+  "notes": "Most journal pages (SIAM, Springer, IEEE Xplore, ACM DL, ResearchGate) returned 403/418 errors or required authentication and could not be fetched. The arXiv search for shuffle-exchange rearrangeability returned no results, suggesting no recent arXiv preprints exist on this problem. The SIAM paper 'Rearrangeability of (2n-1)-Stage Shuffle-Exchange Networks' (DOI 10.1137/S0097539798344847) appears to date from ~1999 (pre-posting). The Springer paper on 7-stage 16x16 networks is from 2008 (pre-posting). Search engine AI summaries were inconsistent and potentially hallucinated claims of a full proof; no such proof could be independently verified. The OPG problem pages (both garden.irmacs.sfu.ca and openproblemgarden.org) were unreachable. Confidence is medium rather than high because direct access to several key references was blocked.",
+  "slug": "shuffle_exchange_conjecture_graph_theoretic_form",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 02)",
+  "search_enabled": true
+}

@@ -1,0 +1,47 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The conjecture that $\\chi(G,p) \\leq \\frac{9}{8}\\omega(G,p) + c$ for every hexagonal graph remains open. Žerovnik (2016) improved the best-known upper bound on the asymptotic ratio from $\\frac{4}{3}$ (McDiarmid–Reed 2000) to $\\frac{5}{4}$, showing $\\chi(G,p) \\leq 15\\lfloor\\omega(G,p)/12\\rfloor + 18$. Godin and Togni (2018) developed reducible-configuration techniques and provided computational evidence that the implied $(9,4)$-colorability sub-conjecture holds across millions of randomly generated triangle-free hexagonal graphs, though no complete proof has appeared.",
+  "since_posted": [
+    {
+      "title": "Improved approximative multicoloring of hexagonal graphs",
+      "authors": "Janez Žerovnik",
+      "year": 2016,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/1606.01328",
+      "doi": "10.48550/arXiv.1606.01328",
+      "arxiv_id": "1606.01328",
+      "kind": "partial",
+      "claim": "Improves the best-known asymptotic ratio from 4/3 to 5/4, establishing χ(G,p) ≤ 15⌊ω(G,p)/12⌋ + 18 for every hexagonal graph."
+    },
+    {
+      "title": "New reducible configurations for graph multicoloring with application to the experimental resolution of McDiarmid-Reed's Conjecture (extended version)",
+      "authors": "Jean-Christophe Godin, Olivier Togni",
+      "year": 2018,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/1812.01911",
+      "doi": null,
+      "arxiv_id": "1812.01911",
+      "kind": "partial",
+      "claim": "Develops reducible-configuration tools for (a,b)-colorings and provides computational evidence that all tested triangle-free induced subgraphs of the triangular lattice are (9,4)-colorable."
+    }
+  ],
+  "search_queries": [
+    "weighted coloring hexagonal graphs triangular lattice multicoloring conjecture McDiarmid Reed",
+    "hexagonal graph multicoloring chi omega 9/8 conjecture arXiv",
+    "channel assignment triangular lattice induced subgraph fractional chromatic number weighted",
+    "triangle-free hexagonal graph independence number 4/9 McDiarmid conjecture",
+    "Zerovnik improved approximative multicoloring hexagonal graphs Information Processing Letters 2017"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/1606.01328",
+    "https://arxiv.org/abs/1812.01911",
+    "https://dmtcs.episciences.org/614",
+    "https://arxiv.org/abs/1307.2688"
+  ],
+  "notes": "The Žerovnik 2016 paper was listed as 'submitted to Information Processing Letters' but journal publication could not be confirmed; cited as arXiv preprint. The Godin–Togni paper (1812.01911) was last revised October 2023 but remains without a confirmed journal publication. A DMTCS 2013 paper by Witkowski–Žerovnik on a 33/24-competitive distributed algorithm is related but addresses a different competitive-ratio setting (not the conjecture directly). No proof or disproof of the full conjecture was found.",
+  "slug": "weighted_colouring_of_hexagonal_graphs",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 01)",
+  "search_enabled": true
+}

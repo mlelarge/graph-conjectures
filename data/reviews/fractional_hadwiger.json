@@ -1,0 +1,24 @@
+{
+  "slug": "fractional_hadwiger",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet (subagent)",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "No verified post-2014 paper resolves any of the three conjectures (a) $\\chi_f(G)\\leq\\mathrm{had}(G)$, (b) $\\chi(G)\\leq\\mathrm{had}_f(G)$, or (c) $\\chi_f(G)\\leq\\mathrm{had}_f(G)$. The best published upper bound on $\\chi_f$ in terms of $\\mathrm{had}$ remains Reed and Seymour's 1998 result $\\chi_f(G)\\leq 2\\,\\mathrm{had}(G)$; recent improvements toward Hadwiger's conjecture by Norin, Postle and Song concern $\\chi(G)$ versus $\\mathrm{had}(G)$ rather than the fractional variants.",
+  "since_posted": [],
+  "search_queries": [
+    "fractional Hadwiger conjecture chromatic number minor",
+    "\"fractional Hadwiger\" conjecture Harvey Wood Reed Seymour",
+    "fractional chromatic number Hadwiger number bound arxiv",
+    "Postle Hadwiger fractional chromatic number minor"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2312.17130",
+    "https://arxiv.org/abs/2308.01242",
+    "https://arxiv.org/abs/1312.3401",
+    "https://arxiv.org/abs/1108.4953",
+    "https://en.wikipedia.org/wiki/Hadwiger_conjecture_(graph_theory)"
+  ],
+  "notes": "Searches surfaced recent work on the (integer) Hadwiger conjecture (Norin-Postle-Song, Steiner 2023 on topological bounds, Postle's improved bounds) and on related variants (odd Hadwiger, balanced chromatic number, strong chromatic index), but none of the verified items prove or disprove any of conjectures (a), (b), (c). The Fox 2011 paper (arXiv:1108.4953) introducing $\\mathrm{had}_f$ predates the OPG posting date of 2014-03-16, so it cannot count as 'since posted'. I did not exhaustively search for unpublished theses or short notes, so a small probability remains that incremental progress exists in less indexed venues; status reported as 'open' rather than 'unclear' because the OPG-listed Reed-Seymour bound $\\chi_f\\leq 2\\,\\mathrm{had}$ from 1998 is still the state of the art quoted in surveys."
+}

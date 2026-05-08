@@ -1,0 +1,38 @@
+{
+  "slug": "bounding_the_chromatic_number_of_triangle_free_graphs_with_fixed_maximum_degree",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet (subagent)",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "The Kostochka-Reed conjecture that every triangle-free graph with maximum degree $\\Delta$ has chromatic number at most $\\lceil \\Delta/2 \\rceil + 2$ remains open for finite values of $\\Delta$ between 6 and the threshold above which Johansson's $O(\\Delta/\\log\\Delta)$ bound (with Molloy's optimal constant) implies it. Computational work by Goedgebeur on minimal triangle-free 6-chromatic graphs has narrowed the smallest open case (whether a 6-chromatic triangle-free graph of maximum degree 6 exists) by showing such a graph would need between 32 and 40 vertices, but no proof or counterexample for the original conjecture has been published.",
+  "since_posted": [
+    {
+      "title": "On minimal triangle-free 6-chromatic graphs",
+      "authors": "Jan Goedgebeur",
+      "year": 2017,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/1707.07581",
+      "doi": "10.1002/jgt.22467",
+      "arxiv_id": "1707.07581",
+      "kind": "partial",
+      "claim": "Computationally shows that the smallest triangle-free 6-chromatic graphs have between 32 and 40 vertices and catalogues triangle-free 5-chromatic graphs up to 24 vertices, providing partial computational support for Reed's conjecture (and hence the Kostochka-Reed $\\lceil\\Delta/2\\rceil+2$ bound) on triangle-free graphs of small order, directly relevant to the smallest open case ($\\Delta=6$) of the conjecture."
+    }
+  ],
+  "search_queries": [
+    "Reed conjecture triangle-free graphs chromatic number Delta/2 + 2 Kostochka",
+    "chromatic number triangle-free maximum degree Delta/2+2 conjecture progress",
+    "triangle-free graph chromatic number maximum degree bound recent results arxiv",
+    "\"Reed's conjecture\" triangle-free arxiv 2020 2021 2022 chromatic"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/1604.00438",
+    "https://arxiv.org/abs/2107.12288",
+    "https://kostochk.web.illinois.edu/publ.html",
+    "https://arxiv.org/abs/2202.02839",
+    "https://arxiv.org/abs/1707.07581",
+    "https://arxiv.org/abs/1707.07581v2",
+    "https://arxiv.org/abs/2502.10147"
+  ],
+  "notes": "ScienceDirect paywalls (HTTP 403) prevented direct verification of 'A note on Reed's conjecture for triangle-free graphs' (Discrete Math. 2023, S0012365X23002959), so it is not cited despite being relevant. Several asymptotic results (Johansson 1996, Molloy 2019, Bonamy-Kelly-Nelson-Postle, Davies-Illingworth) confirm the conjecture for sufficiently large $\\Delta$ but were already implied by Johansson's bound at the time of OPG posting; the conjecture's challenge is for fixed small $\\Delta\\geq 6$, and there no full proof or counterexample has been verified."
+}

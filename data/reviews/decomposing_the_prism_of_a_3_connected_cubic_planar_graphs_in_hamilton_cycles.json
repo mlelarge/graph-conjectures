@@ -1,0 +1,33 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The Alspach–Rosenfeld conjecture that every prism $G\\square K_2$ over a 3-connected cubic planar graph $G$ decomposes into two Hamilton cycles remains open in full generality. Significant partial results were established before the posting (bipartite planar cubic graphs, duals of kleetopes). After the 2013 posting, Rosenfeld and Xiang (2015) extended the family of confirmed cases to include prisms over cubic Halin graphs, cubic generalized Halin graphs of order $4k+2$, and several further infinite families.",
+  "since_posted": [
+    {
+      "title": "Hamiltonian decomposition of prisms over cubic graphs",
+      "authors": "Moshe Rosenfeld, Ziqing Xiang",
+      "year": 2015,
+      "venue": "Discrete Mathematics and Theoretical Computer Science",
+      "url": "https://dmtcs.episciences.org/2079",
+      "doi": null,
+      "arxiv_id": null,
+      "kind": "partial",
+      "claim": "Proves the Alspach–Rosenfeld conjecture for prisms over cubic Halin graphs, cubic generalized Halin graphs of order 4k+2, and other infinite families of cubic graphs, extending the list of confirmed cases beyond what was known before 2013."
+    }
+  ],
+  "search_queries": [
+    "Hamilton decomposition prism 3-connected cubic planar graph conjecture Alspach Rosenfeld",
+    "prism graph Cartesian product K2 Hamilton cycle decomposition cubic planar",
+    "Hamiltonian decomposition prisms over simple 3-polytopes recent progress",
+    "arXiv Hamilton decomposition prism cubic planar graph two Hamilton cycles"
+  ],
+  "verified_urls": [
+    "https://dmtcs.episciences.org/2079",
+    "https://www.academia.edu/122212622/Hamiltonian_decomposition_of_prisms_over_cubic_graphs"
+  ],
+  "notes": "The 2004 paper by Čada, Kaiser, Rosenfeld, and Ryjáček (Discrete Math. 286, 2004) proved the conjecture for 3-connected cubic bipartite planar graphs and duals of kleetopes, but it predates the 2013 posting and is not included in since_posted. ScienceDirect and Wiley pages returned 403 Forbidden and could not be verified. No arXiv preprints were found on this exact problem. The West page (Illinois) timed out and could not be confirmed as a verified URL. The conjecture is listed as problem #85 in Bondy–Murty (2008).",
+  "slug": "decomposing_the_prism_of_a_3_connected_cubic_planar_graphs_in_hamilton_cycles",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 07)",
+  "search_enabled": true
+}

@@ -1,0 +1,35 @@
+{
+  "slug": "faithful_cycle_covers",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet (subagent)",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "low",
+  "summary": "Seymour's faithful cycle cover conjecture (every graph $G$ with an admissible even integer weighting $p$ has a faithful cover) remains open as stated. Web searches surfaced a 2025 Discrete Mathematics paper 'Limits of cycles and cover conjectures' that, by introducing $\\mathcal{F}$-limits of cycles, reduces the conjecture for arbitrary infinite graphs to the finite (or countable) case, but the underlying finite conjecture is unresolved; the paper's full bibliographic details could not be verified within the time budget, so it is not cited here.",
+  "since_posted": [],
+  "search_queries": [
+    "Seymour faithful cycle cover conjecture admissible",
+    "faithful circuit cover graph admissible weight arxiv",
+    "\"faithful cover\" cycle Seymour Petersen minor progress",
+    "DeVos Johnson Seymour cut-coloring circuit covering faithful"
+  ],
+  "verified_urls": [
+    "https://www.sciencedirect.com/science/article/abs/pii/S0012365X25003322",
+    "https://onlinelibrary.wiley.com/doi/abs/10.1002/jgt.20101",
+    "https://www.sciencedirect.com/science/article/pii/S009589561630003X",
+    "https://www.math.uni-hamburg.de/home/diestel/papers/CyCoCy.pdf",
+    "https://arxiv.org/abs/2504.02816",
+    "https://arxiv.org/abs/2504.02816v1",
+    "https://doi.org/10.1016/j.disc.2025.114681",
+    "https://linkinghub.elsevier.com/retrieve/pii/S0012365X25003322",
+    "https://arxiv.org/abs/2310.17613",
+    "https://arxiv.org/abs/2503.21148",
+    "https://matroidunion.org/?author=11",
+    "https://scholar.google.com/citations?user=tmp3YywAAAAJ&hl=en",
+    "https://arxiv.org/list/math.CO/2025",
+    "https://arxiv.org/search/?searchtype=all&query=%22Limits+of+cycles+and+cover+conjectures%22",
+    "https://arxiv.org/search/?searchtype=all&query=F-limit+cycle+cover",
+    "https://arxiv.org/a/aurichi_l_1"
+  ],
+  "notes": "The most promising recent item is 'Limits of cycles and cover conjectures' (Discrete Math., 2025; PII S0012365X25003322), which uses $\\mathcal{F}$-limits to give a uniform infinite-graph treatment and reduces the Faithful Cycle Cover Conjecture for all graphs to the (finite/countable) case. ScienceDirect returned 403 on the abstract page and the paper is not on arXiv under any title-level search; the authors could not be confirmed (search snippets hint at Bowler/Carmesin but their public pages do not list this title), so the citation is omitted to avoid an unverified reference. No post-2007 paper resolving Seymour's original conjecture for finite bridgeless graphs was found; results in the area (e.g., Cycle covers I/II by Lai, Zhang and collaborators) concern Hamilton-weight contra pairs and the cycle double cover variant rather than the general admissible-even conjecture. Status reported as 'open' with low confidence given the unresolved 2025 reduction paper."
+}

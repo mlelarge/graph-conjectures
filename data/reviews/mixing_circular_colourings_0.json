@@ -1,0 +1,46 @@
+{
+  "status": "partial",
+  "confidence": "medium",
+  "summary": "The specific question of whether $\\mathfrak{M}_c(G)$ is always rational remains open. Since the problem was posted, Brewster, McGuinness, Moore, and Noel (2016) proved a complexity dichotomy for circular colouring reconfiguration (polynomial-time for $p/q < 4$, PSPACE-complete for $p/q \\geq 4$), and Brewster and Moore (2022/2023) gave a full characterization of $(p,q)$-mixing for $2 < p/q < 4$ and settled a conjecture of Brewster–Noel that the circular mixing number of bipartite graphs equals $2$; neither result resolves the rationality question.",
+  "since_posted": [
+    {
+      "title": "A Dichotomy Theorem for Circular Colouring Reconfiguration",
+      "authors": "Richard C. Brewster, Sean McGuinness, Benjamin Moore, Jonathan A. Noel",
+      "year": 2016,
+      "venue": "Theoretical Computer Science",
+      "url": "https://arxiv.org/abs/1508.05573",
+      "doi": null,
+      "arxiv_id": "1508.05573",
+      "kind": "partial",
+      "claim": "Establishes a complexity dichotomy: deciding $(p,q)$-mixing is solvable in polynomial time when $p/q < 4$ and is PSPACE-complete when $p/q \\geq 4$."
+    },
+    {
+      "title": "Characterizing circular colouring mixing for p/q < 4",
+      "authors": "Richard C. Brewster, Benjamin Moore",
+      "year": 2022,
+      "venue": "Journal of Graph Theory",
+      "url": "https://colab.ws/articles/10.1002/jgt.22870",
+      "doi": "10.1002/jgt.22870",
+      "arxiv_id": null,
+      "kind": "partial",
+      "claim": "Gives a full graph-theoretic characterization of $(p,q)$-mixing for $2 < p/q < 4$ in terms of cycle winds, proves $(2k+1,k)$-mixing is co-NP-complete for all $k$, and settles the Brewster–Noel conjecture that the circular mixing number of bipartite graphs equals $2$."
+    }
+  ],
+  "search_queries": [
+    "circular mixing threshold graph coloring rationality Brewster Noel",
+    "mixing homomorphisms extending circular colourings arXiv Brewster Noel",
+    "\"circular mixing threshold\" graph \"mixing circular colourings\" conjecture",
+    "Jonathan Noel mixing circular colourings rationality open problem",
+    "\"Characterizing circular colouring mixing\" \"p/q < 4\" arXiv Brewster 2022 2023"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/1412.3493",
+    "https://arxiv.org/abs/1508.05573",
+    "https://colab.ws/articles/10.1002/jgt.22870"
+  ],
+  "notes": "The Wiley Online Library and ResearchGate pages returned HTTP 403; the Brewster–Moore 2023 paper was verified via colab.ws only. Jonathan Noel's personal open-problems page (jonathannoel.ca/openprobs) returned 404. The rationality question is not mentioned as resolved in any source found; all evidence suggests it remains open. The foundational Brewster–Noel paper (arXiv:1412.3493, JGT 2015) was already cited as [3] in the OPG discussion and is not listed as new since_posted progress.",
+  "slug": "mixing_circular_colourings_0",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 01)",
+  "search_enabled": true
+}

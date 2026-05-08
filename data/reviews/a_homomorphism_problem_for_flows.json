@@ -1,0 +1,37 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "DeVos's conjecture remains open in general. Hušek and Šámal (2020) showed that a natural strengthening of the conjecture fails universally, proved partial results for a restricted subclass of Cayley graph homomorphisms, and established that the conjecture (if true) would imply the existence of an oriented cycle double cover with a bounded number of cycles. The conjecture is known to hold for planar graphs (via planar duality) and in the special case $B = M \\setminus \\{0\\}$ by Tutte's theorem, but the general case is unresolved.",
+  "since_posted": [
+    {
+      "title": "Homomorphisms of Cayley graphs and Cycle Double Covers",
+      "authors": "Radek Hušek, Robert Šámal",
+      "year": 2020,
+      "venue": "The Electronic Journal of Combinatorics",
+      "url": "https://www.combinatorics.org/ojs/index.php/eljc/article/view/v27i2p2",
+      "doi": null,
+      "arxiv_id": "1901.03112",
+      "kind": "partial",
+      "claim": "Shows that a natural strengthening of DeVos's conjecture does not hold in general, proves partial results for a restricted subclass, and establishes that the original conjecture implies the existence of an oriented cycle double cover with a small number of cycles."
+    }
+  ],
+  "search_queries": [
+    "DeVos homomorphism problem flows Cayley graph abelian group B-flow conjecture",
+    "nowhere-zero flow homomorphism Cayley graph graph theory conjecture DeVos",
+    "\"B-flow\" \"B'-flow\" homomorphism Cayley abelian group graph conjecture arXiv",
+    "Hušek \"homomorphism problem for flows\" DeVos conjecture cycle double cover 2019 2020 2021",
+    "DeVos flow conjecture \"homomorphism\" \"abelian group\" nowhere-zero graph 2020 2021 2022 2023 2024 2025",
+    "Hušek Šámal \"flow\" \"homomorphism\" graph theory 2021 2022 2023 2024 2025 arXiv"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/1901.03112",
+    "https://www.combinatorics.org/ojs/index.php/eljc/article/view/v27i2p2",
+    "https://arxiv.org/abs/2502.01451"
+  ],
+  "notes": "The OPG mirror at garden.irmacs.sfu.ca was unreachable (ECONNREFUSED). No post-2020 paper directly addressing the original DeVos conjecture was found; the most recent search sweep (up to 2026) turned up no resolution. The Springer link for 'Flow modules and nowhere-zero flows' (10.1007/s10801-022-01177-4) redirected to an authentication wall and could not be verified, so it is not cited. The ScienceDirect URL for the Hušek–Šámal paper (pii/S157106531730183X) appears to be a different publication venue or version and was not separately verified.",
+  "slug": "a_homomorphism_problem_for_flows",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "elapsed_seconds": 120.4
+}

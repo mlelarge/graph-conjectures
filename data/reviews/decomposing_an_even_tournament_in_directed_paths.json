@@ -1,0 +1,44 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The Alspach–Mason–Pullman conjecture has been proved for all sufficiently large even tournaments by Girão, Granet, Kühn, Lo, and Osthus (2023), who showed any such tournament decomposes into exactly $\\mathrm{ex}(T) = \\frac{1}{2}\\sum_{v}|d^+(v)-d^-(v)|$ directed paths; they also obtained an asymptotically optimal result for odd tournaments. An earlier paper of Lo, Patel, Skokan, and Talbot (2020) had proved many specific cases of the conjecture. The conjecture for all even tournaments (including small orders) remains open.",
+  "since_posted": [
+    {
+      "title": "Decomposing tournaments into paths",
+      "authors": "Allan Lo, Viresh Patel, Jozef Skokan, John Talbot",
+      "year": 2020,
+      "venue": "Proceedings of the London Mathematical Society",
+      "url": "https://arxiv.org/abs/1902.10775",
+      "doi": "10.1112/plms.12328",
+      "arxiv_id": "1902.10775",
+      "kind": "partial",
+      "claim": "Proves many previously open cases of the Alspach–Mason–Pullman conjecture on decomposing tournaments of even order into a minimum number of directed paths."
+    },
+    {
+      "title": "Path decompositions of tournaments",
+      "authors": "António Girão, Bertille Granet, Daniela Kühn, Allan Lo, Deryk Osthus",
+      "year": 2023,
+      "venue": "Proceedings of the London Mathematical Society",
+      "url": "https://arxiv.org/abs/2010.14158",
+      "doi": "10.1112/plms.12480",
+      "arxiv_id": "2010.14158",
+      "kind": "partial",
+      "claim": "Proves the Alspach–Mason–Pullman conjecture for all sufficiently large even tournaments, and establishes an asymptotically optimal result for odd tournaments."
+    }
+  ],
+  "search_queries": [
+    "Alspach Mason Pullman conjecture tournament decomposition directed paths even vertices",
+    "tournament decomposition directed paths conjecture \"path numbers\" even order progress",
+    "almost regular tournament Hamilton path decomposition conjecture arXiv",
+    "\"even tournament\" \"directed path decomposition\" conjecture solved proved 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/1902.10775",
+    "https://arxiv.org/abs/2010.14158"
+  ],
+  "notes": "The conjecture is proved for all sufficiently large n but the threshold is not made explicit in the abstracts; small even orders may still be open. The PLMS journal pages for both papers returned 403/access errors; verification was done via arXiv abstract pages. No complete proof for all even tournaments has been found.",
+  "slug": "decomposing_an_even_tournament_in_directed_paths",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 04)",
+  "search_enabled": true
+}

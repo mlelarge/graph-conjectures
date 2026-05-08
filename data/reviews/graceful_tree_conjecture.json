@@ -1,0 +1,57 @@
+{
+  "slug": "graceful_tree_conjecture",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet (subagent)",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The Graceful Tree Conjecture remains open. The strongest progress since the OPG posting (2007) is asymptotic: Adamaszek, Allen, Grosu and Hladky (2016, arXiv:1608.01577) proved that almost all trees admit an 'almost graceful' labelling using vertex labels in $\\{1,\\dots,(1+c)n\\}$, and Letzter, Pokrovskiy and Williams (2025, arXiv:2511.11331) showed that every sufficiently large tree on $n$ vertices has gracesize $\\ge (1-\\varepsilon)n$, i.e. an asymptotic version of the conjecture. A claimed full proof by Gnang (arXiv:2202.03178, 2022) is an unpublished preprint flagged by arXiv for text overlap and has not been verified by the community.",
+  "since_posted": [
+    {
+      "title": "Almost all trees are almost graceful",
+      "authors": "Anna Adamaszek, Peter Allen, Codrut Grosu, Jan Hladky",
+      "year": 2016,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/1608.01577",
+      "doi": null,
+      "arxiv_id": "1608.01577",
+      "kind": "partial",
+      "claim": "Proves a relaxation of the conjecture: for any $c>0$, asymptotically almost all $n$-vertex trees admit an injective labelling into $\\{1,\\dots,(1+c)n\\}$ with pairwise distinct edge differences (and all bounded-degree trees do)."
+    },
+    {
+      "title": "On the gracesize of trees",
+      "authors": "Shoham Letzter, Alexey Pokrovskiy, Ella Williams",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2511.11331",
+      "doi": null,
+      "arxiv_id": "2511.11331",
+      "kind": "partial",
+      "claim": "Proves an asymptotic version of the Graceful Tree Conjecture: for every $\\varepsilon>0$, every sufficiently large tree on $n$ vertices admits a labelling whose gracesize is at least $(1-\\varepsilon)n$, i.e. all but $\\varepsilon n$ edge differences are distinct."
+    },
+    {
+      "title": "A proof of the Kotzig-Ringel-Rosa Conjecture",
+      "authors": "Edinah K. Gnang",
+      "year": 2022,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2202.03178",
+      "doi": null,
+      "arxiv_id": "2202.03178",
+      "kind": "proof",
+      "claim": "Claims a complete proof of the Graceful Tree Conjecture via a functional reformulation and a composition lemma; remains an unpublished preprint, has been flagged by arXiv for text overlap with arXiv:2111.12812, and is not accepted by the community as a verified proof."
+    }
+  ],
+  "search_queries": [
+    "graceful tree conjecture progress 2023 2024 arxiv",
+    "graceful labeling trees recent results 2024 2025",
+    "Kotzig-Ringel-Rosa conjecture proof 2022 arxiv 2202.03178",
+    "graceful tree conjecture survey Gallian dynamic 2023"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2202.03178",
+    "https://arxiv.org/abs/1608.01577",
+    "https://arxiv.org/abs/2511.11331",
+    "https://www.combinatorics.org/ds6"
+  ],
+  "notes": "Gallian's Dynamic Survey of Graph Labeling (DS6, version dated October 30, 2025) continues to list the Graceful Tree Conjecture as open. The Gnang preprint (arXiv:2202.03178) is included with kind 'proof' for completeness but should be regarded with scepticism: it has been on arXiv since 2022 with no journal publication, and arXiv flagged it for text overlap with another preprint. The status 'partial' reflects the verified asymptotic progress (Adamaszek et al. 2016, Letzter-Pokrovskiy-Williams 2025); the original conjecture that every tree is graceful is still open."
+}

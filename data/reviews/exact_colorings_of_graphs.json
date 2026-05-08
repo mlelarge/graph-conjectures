@@ -1,0 +1,57 @@
+{
+  "slug": "exact_colorings_of_graphs",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet (subagent)",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "medium",
+  "summary": "Beyond the Stacey-Weidl (1999) result that $P(c,m)$ fails for $c$ sufficiently large compared to $m\\geq 3$, Narayanan (2014) gave a quantitative refinement showing that in any exact $k$-coloring of the edges of $K_{\\mathbb N}$, the set of values $m$ for which an exactly $m$-colored complete infinite subgraph exists has size at least $\\sqrt{2k}$, and this bound is tight for infinitely many $k$. Kittipassorn and Narayanan (2014, 2015) further proved a canonical Ramsey theorem answering related questions of Stacey and Weidl and an approximate version for hypergraphs. The original Erickson `if and only if' conjecture for the full range $3\\leq m<c$ remains open in general.",
+  "since_posted": [
+    {
+      "title": "Exactly $m$-coloured complete infinite subgraphs",
+      "authors": "Bhargav Narayanan",
+      "year": 2014,
+      "venue": "Journal of Combinatorial Theory, Series B",
+      "url": "https://arxiv.org/abs/1303.2103",
+      "doi": null,
+      "arxiv_id": "1303.2103",
+      "kind": "partial",
+      "claim": "Shows that for any exact $k$-coloring of $K_{\\mathbb N}$, the set of $m$ for which an exactly $m$-colored complete infinite subgraph exists has size at least $\\sqrt{2k}$, with the bound tight for infinitely many $k$; refines Stacey-Weidl's partial answer to Erickson's conjecture."
+    },
+    {
+      "title": "A canonical Ramsey theorem for exactly $m$-coloured complete subgraphs",
+      "authors": "Teeradej Kittipassorn, Bhargav Narayanan",
+      "year": 2014,
+      "venue": "Combinatorics, Probability and Computing",
+      "url": "https://arxiv.org/abs/1303.2997",
+      "doi": "10.1017/S0963548313000503",
+      "arxiv_id": "1303.2997",
+      "kind": "partial",
+      "claim": "Proves a canonical dichotomy for edge colorings of $K_{\\mathbb N}$ with infinitely many colors (either every $m\\in\\mathbb N$ is achievable or one finds one of two canonical infinite substructures), answering a question of Stacey and Weidl and yielding new results on exactly $m$-colored complete subgraphs in finitely-colored cases."
+    },
+    {
+      "title": "Approximations to m-Coloured Complete Infinite Hypergraphs",
+      "authors": "Teeradej Kittipassorn, Bhargav Narayanan",
+      "year": 2015,
+      "venue": "Journal of Graph Theory",
+      "url": "https://sites.math.rutgers.edu/~narayanan/pub.html",
+      "doi": "10.1002/jgt.21853",
+      "arxiv_id": null,
+      "kind": "partial",
+      "claim": "Extends the analysis to hypergraphs: shows that in finite colorings using at least $m$ colors one can find an exactly $\\hat m$-colored complete infinite sub-hypergraph for some $\\hat m$ close to $m$, providing the natural hypergraph analogue of Erickson-type results."
+    }
+  ],
+  "search_queries": [
+    "\"exactly m-coloured\" complete subgraph Ramsey infinite Stacey Weidl",
+    "Erickson conjecture exact coloring complete graph P(c,m) infinite Ramsey",
+    "\"exactly m-coloured\" Narayanan Kittipassorn complete subgraph 2014 2015 2016",
+    "\"Approximations to m-coloured\" arxiv 1309 OR 1310 OR 1311 Kittipassorn"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/1303.2103",
+    "https://arxiv.org/abs/1303.2997",
+    "https://sites.math.rutgers.edu/~narayanan/pub.html",
+    "https://dblp.org/pid/140/1161.html"
+  ],
+  "notes": "The Erickson 'if and only if' conjecture as stated (P(c,m) holds iff m=1, m=2, or c=m) was not yet completely resolved by the post-2010 literature surveyed; Stacey-Weidl (1999, pre-posting) showed failure for c large vs m, and Narayanan (2014) gave a quantitative refinement. The full conjecture for the entire range 3<=m<c does not appear to be settled in either direction in the verified post-posting literature, so 'partial' is the appropriate status. Did not verify the journal-side DOI for the Approximations paper directly (Wiley returned 403); DOI 10.1002/jgt.21853 confirmed via DBLP and the author's publication list. arXiv ID for the hypergraph paper not located."
+}

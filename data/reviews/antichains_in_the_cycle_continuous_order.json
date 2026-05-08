@@ -1,0 +1,37 @@
+{
+  "status": "solved",
+  "confidence": "high",
+  "summary": "Šámal (2012, published 2017) answered DeVos's question affirmatively by proving that there exists an infinite set of graphs with no cycle-continuous mapping between any two of them, i.e., an infinite antichain in the cycle-continuous quasi-order. The result is further strengthened to show that every countable poset can be represented by graphs and cycle-continuous mappings.",
+  "since_posted": [
+    {
+      "title": "Cycle-continuous mappings -- order structure",
+      "authors": "Robert Šámal",
+      "year": 2017,
+      "venue": "Journal of Graph Theory",
+      "url": "https://arxiv.org/abs/1212.6909",
+      "doi": null,
+      "arxiv_id": "1212.6909",
+      "kind": "proof",
+      "claim": "Proves the existence of an infinite antichain in the cycle-continuous mapping quasi-order (answering DeVos–Nešetřil–Raspaud), and shows every countable poset embeds in this order; published in J. Graph Theory 85(1):56–73, 2017."
+    }
+  ],
+  "search_queries": [
+    "cycle continuous mapping antichain graph poset DeVos Jaeger",
+    "cycle continuous homomorphism graph order antichain infinite",
+    "Jaeger Petersen coloring cycle continuous mapping graph quasi-order",
+    "DeVos Nesetril Raspaud \"cycle continuous\" infinite antichain graphs 2007 2008 2009 2010",
+    "Robert Samal \"cycle-continuous mappings order structure\" journal published",
+    "Samal \"cycle-continuous\" \"Journal of Graph Theory\" 2017 antichain"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/1212.6909",
+    "https://arxiv.org/abs/1212.6909v1",
+    "https://dblp.org/db/journals/jgt/jgt85.html"
+  ],
+  "notes": "The arXiv preprint was submitted 2012-12-31, well after the OPG posting date of 2007-05-12. The journal version appeared in J. Graph Theory 85(1):56–73 (May 2017), confirmed via DBLP. The problem was originally attributed to DeVos, Nešetřil, and Raspaud; the OPG page credits only DeVos. The DOI for the JGT article was not directly retrieved but the DBLP entry confirms volume/pages.",
+  "slug": "antichains_in_the_cycle_continuous_order",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "elapsed_seconds": 132.4
+}

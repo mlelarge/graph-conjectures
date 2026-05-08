@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block title %}About — Graph-theory open problems{% endblock %}
+
+{% block main %}
+<article class="prose">
+<h1>About</h1>
+
+<p>This site is a browseable index of open problems in graph theory, derived from the
+<a href="http://www.openproblemgarden.org/category/graph_theory">graph theory category of the Open Problem Garden</a>.</p>
+
+<h2>Source &amp; licence</h2>
+<p>All problem statements, attributions, and bibliographies are reproduced from
+<a href="http://www.openproblemgarden.org">openproblemgarden.org</a> under the
+<a href="https://www.gnu.org/licenses/fdl-1.2.html">GNU Free Documentation License</a>.
+Each problem page links back to its canonical Open Problem Garden URL.
+This site itself is published under the same licence.</p>
+
+<h2>How it was built</h2>
+<ul>
+<li>A polite Python scraper (<code>scraper/crawl.py</code>) walks the category listing and downloads each problem page, honouring the site's <code>robots.txt</code> <code>Crawl-Delay: 10</code>.</li>
+<li><code>scraper/parse.py</code> turns the cached HTML into one JSON record per problem (selectors and quirks documented in <code>PLAN.md</code> Appendix A). Math is preserved in its LaTeX form (extracted from the <code>alt</code> attribute of OPG's pre-rendered TeX images).</li>
+<li><code>scraper/erdos_index.py</code> indexes the graph-theory problems on <a href="https://www.erdosproblems.com/tags/graph%20theory">erdosproblems.com</a> for cross-referencing.</li>
+<li><code>scraper/intersect.py</code> identifies likely duplicates between the two sources via citation overlap and fuzzy statement matching. Confirmed matches are surfaced as <span class="badge erdos">EP #N</span> badges.</li>
+<li><code>scraper/build.py</code> renders Jinja2 templates over the JSON into the static HTML you are reading. Math is typeset client-side by <a href="https://katex.org">KaTeX</a>.</li>
+</ul>
+
+<h2>Stats</h2>
+<ul>
+<li>{{ problem_count }} problems indexed</li>
+<li>{{ category_count }} distinct subject / keyword / author categories</li>
+<li>{{ erdos_match_count }} cross-references to erdosproblems.com</li>
+<li>Last build: {{ build_date }}</li>
+</ul>
+
+<h2>Inspiration</h2>
+<p>Layout is inspired by Thomas Bloom's <a href="https://www.erdosproblems.com">erdosproblems.com</a>.</p>
+</article>
+{% endblock %}

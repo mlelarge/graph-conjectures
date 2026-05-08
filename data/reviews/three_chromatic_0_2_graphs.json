@@ -1,0 +1,21 @@
+{
+  "status": "open",
+  "confidence": "medium",
+  "summary": "The problem asks whether any finite $(0,2)$-graph (every pair of distinct vertices sharing exactly $0$ or $2$ common neighbours) can have chromatic number exactly $3$. Payan's 1992 theorem rules this out for the special subclass of cube-like graphs (Cayley graphs on $\\mathbb{Z}_2^n$), but no result covering general $(0,2)$-graphs has been found in post-2007 literature.",
+  "since_posted": [],
+  "search_queries": [
+    "(0,2)-graph chromatic number three-chromatic",
+    "Payan cube-like graphs chromatic number (0,2)-graphs",
+    "zero-two graph every pair vertices common neighbours chromatic number 3",
+    "arXiv (0,2)-graph regular graph coloring chromatic number conjecture"
+  ],
+  "verified_urls": [
+    "https://aeb.win.tue.nl/graphs/cubelike.html",
+    "https://arxiv.org/abs/2107.11556"
+  ],
+  "notes": "The cube-like graphs page (aeb.win.tue.nl) confirms Payan's theorem that no cube-like graph has chromatic number 3, but cube-like graphs are a proper subclass of (0,2)-graphs. arXiv:2107.11556 (Greaves & Stanić 2021) studies spectral properties of *signed* (0,2)-graphs and does not address chromatic number. arXiv search for '(0,2)-graph' returned only two hits, neither about chromatic number 3. The ScienceDirect page for 'Homomorphisms of binary Cayley graphs' returned 403 and could not be verified. The OPG canonical page returned ECONNREFUSED. No post-2007 paper resolving or substantially advancing the chromatic number 3 question for general (0,2)-graphs was found.",
+  "slug": "three_chromatic_0_2_graphs",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 08)",
+  "search_enabled": true
+}

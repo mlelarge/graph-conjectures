@@ -1,0 +1,27 @@
+{
+  "status": "open",
+  "confidence": "medium",
+  "summary": "Tarsi's conjecture that the union of a forest (1-degenerate graph) and a 2-degenerate graph is 5-colorable appears to remain open. No post-2013 paper resolving or substantially advancing the conjecture was found across six targeted searches covering arXiv, web-wide queries, and author-specific terms. The best-known upper bound remains 6, obtained by taking the product of the individual optimal colorings (2-coloring of the forest and 3-coloring of the 2-degenerate graph), and the lower bound $K_5$ shows 5 would be tight.",
+  "since_posted": [],
+  "search_queries": [
+    "Tarsi conjecture union forest 2-degenerate graph 5-colorable",
+    "coloring union degenerate graphs conjecture graph theory arXiv",
+    "chromatic number union forest 2-degenerate 5-coloring graph theory 2015 2020",
+    "arXiv \"union of a forest\" \"2-degenerate\" chromatic coloring conjecture",
+    "Schönheim Klein \"m-composed\" graphs coloring conjecture proof 2014 2015 2016 2017 2018",
+    "\"m-degenerate\" OR \"k-degenerate\" graph union coloring \"5-coloring\" OR \"5-colorable\" conjecture Tarsi 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2601.15245",
+    "https://arxiv.org/html/2601.15245v1",
+    "https://arxiv.org/search/?searchtype=all&query=Tarsi+degenerate+union+coloring&start=0",
+    "https://arxiv.org/search/?query=degenerate+graph+union+coloring+forest&searchtype=all&start=0",
+    "https://digitalcollections.wesleyan.edu/_flysystem/fedora/2024-08/2063.pdf"
+  ],
+  "notes": "The OPG problem page (http://www.openproblemgarden.org/op/coloring_the_union_of_degenerate_graphs) returned ECONNREFUSED and could not be fetched directly, so any post-2013 discussion or bibliography updates there were not visible. The Wesleyan thesis PDF (2024) retrieved from Wesleyan's digital collections was unreadable binary data; it might discuss the conjecture but could not be verified. The arXiv paper 2601.15245 ('Coloring small locally sparse degenerate graphs and related problems', January 2026) deals with related degeneracy-coloring questions but does not address this specific conjecture. No other post-2013 candidate paper was found, consistent with the conjecture being an unresolved open problem in the literature.",
+  "slug": "coloring_the_union_of_degenerate_graphs",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "elapsed_seconds": 136.3
+}

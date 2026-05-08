@@ -1,0 +1,62 @@
+{
+  "status": "solved",
+  "confidence": "high",
+  "summary": "James Davies proved in 2022 that every finite colouring of the plane contains a monochromatic pair of points at an odd distance, which directly implies $\\chi(\\mathcal{O}) = \\infty$ and resolves the problem affirmatively. The result was published in Geometric and Functional Analysis in 2024 and subsequently extended by Davies, McCarty, and Pilipczuk to prime and polynomial integer distances.",
+  "since_posted": [
+    {
+      "title": "On Coloring the Odd-Distance Graph",
+      "authors": "Jacob Steinhardt",
+      "year": 2009,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/0908.1452",
+      "doi": null,
+      "arxiv_id": "0908.1452",
+      "kind": "partial",
+      "claim": "Provides a spectral-method proof that the odd-distance graph admits no finite measurable coloring, giving an alternative to the Furstenberg–Katznelson–Weiss ergodic-theory argument already cited in the problem statement."
+    },
+    {
+      "title": "Odd distances in colourings of the plane",
+      "authors": "James Davies",
+      "year": 2024,
+      "venue": "Geometric and Functional Analysis",
+      "url": "https://arxiv.org/abs/2209.15598",
+      "doi": "10.1007/s00039-024-00659-w",
+      "arxiv_id": "2209.15598",
+      "kind": "proof",
+      "claim": "Proves that every finite colouring of the plane contains a monochromatic pair of points at an odd (integer) distance, establishing $\\chi(\\mathcal{O}) = \\infty$ and solving the problem."
+    },
+    {
+      "title": "Prime and polynomial distances in colourings of the plane",
+      "authors": "James Davies, Rose McCarty, Michał Pilipczuk",
+      "year": 2025,
+      "venue": "Israel Journal of Mathematics",
+      "url": "https://link.springer.com/article/10.1007/s11856-025-2857-4",
+      "doi": "10.1007/s11856-025-2857-4",
+      "arxiv_id": "2308.02483",
+      "kind": "partial",
+      "claim": "Extends Davies's odd-distance result: every finite colouring of the plane contains a monochromatic pair at prime distance, and at distance $f(n)$ for any non-constant polynomial $f$ with positive leading integer coefficient."
+    }
+  ],
+  "search_queries": [
+    "odd distance graph chromatic number infinity coloring",
+    "chromatic number odd distance graph plane Rosenfeld lower bound",
+    "odd integral distances plane coloring graph theory arXiv 2010 2020 2025",
+    "\"odd distance graph\" chi infinity conjecture recent progress"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2209.15598",
+    "https://arxiv.org/pdf/2209.15598",
+    "https://link.springer.com/article/10.1007/s00039-024-00659-w",
+    "https://arxiv.org/abs/0908.1452",
+    "https://arxiv.org/html/2308.02483",
+    "https://link.springer.com/article/10.1007/s11856-025-2857-4",
+    "https://gilkalai.wordpress.com/2009/02/21/rosenfelds-odd-distance-problem/",
+    "https://www.researchgate.net/publication/226593681_The_Odd-Distance_Plane_Graph"
+  ],
+  "notes": "The Springer GAFA page for Davies is now directly verified: Geometric and Functional Analysis 34 (2024), 19-31, DOI 10.1007/s00039-024-00659-w. The Davies-McCarty-Pilipczuk extension is now published open access in Israel Journal of Mathematics (published 30 November 2025), DOI 10.1007/s11856-025-2857-4. The Steinhardt 2009 paper concerns measurable colorings only; the ordinary chromatic number lower bound $\\chi(\\mathcal{O}) \\geq 5$ (attributed to Ardal, Maňuch, Rosenfeld, Shelah, and Stacho, ~2009) was not tracked to a verifiable arXiv or journal URL within the search budget and so is not included in since_posted.",
+  "slug": "coloring_the_odd_distance_graph",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "elapsed_seconds": 185.9
+}

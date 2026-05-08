@@ -1,0 +1,71 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The question of whether an $n$-universal set of size $O(n)$ exists for all $n$-vertex planar graphs remains open. The best general upper bound has been improved from $n^2/2 - O(n)$ to $n^2/4 - \\Theta(n)$ (Bannister et al., 2014), and the lower bound has been raised from $1.098n$ to $(1.293-o(1))n$ (Scheucher et al., 2019). For restricted classes, linear-size universal point sets of size $2n-2$ have been achieved for bipartite planar graphs and planar graphs of maximum degree 3 (Felsner et al., 2023).",
+  "since_posted": [
+    {
+      "title": "Superpatterns and Universal Point Sets",
+      "authors": "Michael J. Bannister, Zhanpeng Cheng, William E. Devanny, David Eppstein",
+      "year": 2014,
+      "venue": "Journal of Graph Algorithms and Applications",
+      "url": "https://arxiv.org/abs/1308.0403",
+      "doi": null,
+      "arxiv_id": "1308.0403",
+      "kind": "partial",
+      "claim": "Improved the upper bound on universal point set size for all planar graphs from $n^2/2 - O(n)$ to $n^2/4 - \\Theta(n)$ via superpatterns, and proved near-linear universal point sets suffice for planar graphs of bounded pathwidth."
+    },
+    {
+      "title": "On Universal Point Sets for Planar Graphs",
+      "authors": "Jean Cardinal, Michael Hoffmann, Vincent Kusters",
+      "year": 2013,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/1209.3594",
+      "doi": null,
+      "arxiv_id": "1209.3594",
+      "kind": "partial",
+      "claim": "Proved there is no $n$-universal point set of size $n$ for any $n \\geq 15$, and verified via exhaustive search that universal point sets exist for all planar graphs on $n \\leq 10$ vertices."
+    },
+    {
+      "title": "A Note On Universal Point Sets for Planar Graphs",
+      "authors": "Manfred Scheucher, Hendrik Schrezenmaier, Raphael Steiner",
+      "year": 2019,
+      "venue": "27th International Symposium on Graph Drawing and Network Visualization (GD 2019)",
+      "url": "https://arxiv.org/abs/1811.06482",
+      "doi": null,
+      "arxiv_id": "1811.06482",
+      "kind": "partial",
+      "claim": "Improved the lower bound from $1.235n$ to $(1.293-o(1))n$, and showed by exhaustive computer search that no set of 11 points admits straight-line drawings of all planar graphs on 11 vertices."
+    },
+    {
+      "title": "Linear Size Universal Point Sets for Classes of Planar Graphs",
+      "authors": "Stefan Felsner, Hendrik Schrezenmaier, Felix Schröder, Raphael Steiner",
+      "year": 2023,
+      "venue": "39th International Symposium on Computational Geometry (SoCG 2023)",
+      "url": "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.SoCG.2023.31",
+      "doi": "10.4230/LIPIcs.SoCG.2023.31",
+      "arxiv_id": "2303.00109",
+      "kind": "partial",
+      "claim": "Constructed an 'exploding double chain' universal point set of size $2n-2$ for bipartite planar graphs and for planar graphs of maximum degree 3, the first linear-size universal point set for classes beyond outerplanar graphs."
+    }
+  ],
+  "search_queries": [
+    "universal point sets planar graphs straight-line drawing lower bound upper bound",
+    "n-universal point set planar graph size O(n) conjecture progress arXiv",
+    "universal point sets planar graphs subquadratic 2010 2020 2025",
+    "Bannister Cheng Devanny Eppstein universal point sets planar graphs",
+    "universal point sets planar graphs 2024 2025 2026 new result progress"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2303.00109",
+    "https://arxiv.org/abs/1308.0403",
+    "https://arxiv.org/abs/1811.06482",
+    "https://arxiv.org/abs/1209.3594",
+    "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.SoCG.2023.31",
+    "https://en.wikipedia.org/wiki/Universal_point_set"
+  ],
+  "notes": "The $O(n)$ question for ALL planar graphs remains open; the best general bounds are $n^2/4 - \\Theta(n)$ (upper) and $(1.293-o(1))n$ (lower). No 2024-2026 breakthroughs were found. The Cardinal et al. 2013 paper is also published as a book chapter (Springer) but the exact conference venue could not be confirmed from a fetched source, so arXiv is listed. The Bannister et al. 2014 JGAA DOI was not directly fetched and is therefore listed as null.",
+  "slug": "small_universal_point_sets_for_planar_graphs",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 01)",
+  "search_enabled": true
+}

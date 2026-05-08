@@ -1,0 +1,167 @@
+{
+  "chromatic_number_of_common_graphs": {
+    "opg_slug": "chromatic_number_of_common_graphs",
+    "opg_title": "Chromatic Number of Common Graphs",
+    "erdos_id": 761,
+    "erdos_url": "https://www.erdosproblems.com/761",
+    "erdos_status": "open",
+    "score": 71,
+    "erdos_in_bib": true,
+    "opg_statement_excerpt": "Do common graphs have bounded chromatic number?",
+    "erdos_statement_excerpt": "The cochromatic number of $G$, denoted by $\\zeta(G)$, is the minimum number of colours needed to colour the vertices of $G$ such that each colour class induces "
+  },
+  "erdos_faber_lovasz_conjecture": {
+    "opg_slug": "erdos_faber_lovasz_conjecture",
+    "opg_title": "Erdős–Faber–Lovász conjecture",
+    "erdos_id": 19,
+    "erdos_url": "https://www.erdosproblems.com/19",
+    "erdos_status": "solved",
+    "score": 71,
+    "erdos_in_bib": true,
+    "opg_statement_excerpt": "If $ G $ is a simple graph which is the union of $ k $ pairwise edge-disjoint complete graphs, each of which has $ k $ vertices, then the chromatic number of $ ",
+    "erdos_statement_excerpt": "If $G$ is an edge-disjoint union of $n$ copies of $K_n$ then is $\\chi(G)=n$?"
+  },
+  "behzads_conjecture": {
+    "opg_slug": "behzads_conjecture",
+    "opg_title": "Total Colouring Conjecture",
+    "erdos_id": 631,
+    "erdos_url": "https://www.erdosproblems.com/631",
+    "erdos_status": "solved",
+    "score": 68,
+    "erdos_in_bib": true,
+    "opg_statement_excerpt": "A total coloring of a graph $ G = (V,E) $ is an assignment of colors to the vertices and the edges of $ G $ such that every pair of adjacent vertices, every pai",
+    "erdos_statement_excerpt": "The list chromatic number $\\chi_L(G)$ is defined to be the minimal $k$ such that for any assignment of a list of $k$ colours to each vertex of $G$ (perhaps diff"
+  },
+  "the_erdos_hajnal_conjecture": {
+    "opg_slug": "the_erdos_hajnal_conjecture",
+    "opg_title": "The Erdös-Hajnal Conjecture",
+    "erdos_id": 61,
+    "erdos_url": "https://www.erdosproblems.com/61",
+    "erdos_status": "open",
+    "score": 68,
+    "erdos_in_bib": true,
+    "opg_statement_excerpt": "For every fixed graph $ H $ , there exists a constant $ \\delta(H) $ , so that every graph $ G $ without an induced subgraph isomorphic to $ H $ contains either ",
+    "erdos_statement_excerpt": "For any graph $H$ is there some $c=c(H)>0$ such that every graph $G$ on $n$ vertices that does not contain $H$ as an induced subgraph contains either a complete"
+  },
+  "monochromatoc_reachability_in_arc_colored_digraphs": {
+    "opg_slug": "monochromatoc_reachability_in_arc_colored_digraphs",
+    "opg_title": "Monochromatic reachability in arc-colored digraphs",
+    "erdos_id": 638,
+    "erdos_url": "https://www.erdosproblems.com/638",
+    "erdos_status": "open",
+    "score": 66,
+    "erdos_in_bib": true,
+    "opg_statement_excerpt": "For every $ k $ , there exists an integer $ f(k) $ such that if $ D $ is a digraph whose arcs are colored with $ k $ colors, then $ D $ has a $ S $ set which is",
+    "erdos_statement_excerpt": "Let $S$ be a family of finite graphs such that for every $n$ there is some $G_n\\in S$ such that if the edges of $G_n$ are coloured with $n$ colours then there i"
+  },
+  "turan_number_of_a_finite_family": {
+    "opg_slug": "turan_number_of_a_finite_family",
+    "opg_title": "Turán number of a finite family.",
+    "erdos_id": 180,
+    "erdos_url": "https://www.erdosproblems.com/180",
+    "erdos_status": "open",
+    "score": 65,
+    "erdos_in_bib": true,
+    "opg_statement_excerpt": "For every finite family $ {\\cal F} $ of graphs there exists an $ F\\in {\\cal F} $ such that $ ex(n, F ) = O(ex(n, {\\cal F})) $ .",
+    "erdos_statement_excerpt": "If $\\mathcal{F}$ is a finite set of finite graphs then $\\mathrm{ex}(n;\\mathcal{F})$ is the maximum number of edges a graph on $n$ vertices can have without cont"
+  },
+  "erdos_posa_property_for_long_directed_cycles": {
+    "opg_slug": "erdos_posa_property_for_long_directed_cycles",
+    "opg_title": "Erdős-Posa property for long directed cycles",
+    "erdos_id": 580,
+    "erdos_url": "https://www.erdosproblems.com/580",
+    "erdos_status": "open",
+    "score": 64,
+    "erdos_in_bib": true,
+    "opg_statement_excerpt": "Let $ \\ell \\geq 2 $ be an integer. For every integer $ n\\geq 0 $ , there exists an integer $ t_n=t_n(\\ell) $ such that for every digraph $ D $ , either $ D $ ha",
+    "erdos_statement_excerpt": "Let $G$ be a graph on $n$ vertices such that at least $n/2$ vertices have degree at least $n/2$. Must $G$ contain every tree on at most $n/2$ vertices?"
+  },
+  "subdivision_of_a_transitive_tournament_in_digraphs_with_large_outdegree": {
+    "opg_slug": "subdivision_of_a_transitive_tournament_in_digraphs_with_large_outdegree",
+    "opg_title": "Subdivision of a transitive tournament in digraphs with large outdegree.",
+    "erdos_id": 718,
+    "erdos_url": "https://www.erdosproblems.com/718",
+    "erdos_status": "solved",
+    "score": 62,
+    "erdos_in_bib": true,
+    "opg_statement_excerpt": "For all $ k $ there is an integer \u000e $ f(k) $ such that every digraph of minimum outdegree at least \u000e $ f(k) $ contains a subdivision of a transitive tournament ",
+    "erdos_statement_excerpt": "Is there some constant $C>0$ such that any graph on $n$ vertices with $\\geq Cr^2n$ edges contains a subdivision of $K_r$?"
+  },
+  "multicolour_erdos_hajnal_conjecture": {
+    "opg_slug": "multicolour_erdos_hajnal_conjecture",
+    "opg_title": "Multicolour Erdős--Hajnal Conjecture",
+    "erdos_id": 810,
+    "erdos_url": "https://www.erdosproblems.com/810",
+    "erdos_status": "open",
+    "score": 61,
+    "erdos_in_bib": true,
+    "opg_statement_excerpt": "For every fixed $ k\\geq2 $ and fixed colouring $ \\chi $ of $ E(K_k) $ with $ m $ colours, there exists $ \\varepsilon>0 $ such that every colouring of the edges ",
+    "erdos_statement_excerpt": "Does there exist some $\\epsilon>0$ such that, for all sufficiently large $n$, there exists a graph $G$ on $n$ vertices with at least $\\epsilon n^2$ many edges s"
+  },
+  "odd_cycle_transversal_in_triangle_free_graphs": {
+    "opg_slug": "odd_cycle_transversal_in_triangle_free_graphs",
+    "opg_title": "Odd-cycle transversal in triangle-free graphs",
+    "erdos_id": 24,
+    "erdos_url": "https://www.erdosproblems.com/24",
+    "erdos_status": "solved",
+    "score": 60,
+    "erdos_in_bib": true,
+    "opg_statement_excerpt": "If $ G $ is a simple triangle-free graph, then there is a set of at most $ n^2/25 $ edges whose deletion destroys every odd cycle.",
+    "erdos_statement_excerpt": "Does every triangle-free graph on $5n$ vertices contain at most $n^5$ copies of $C_5$?"
+  },
+  "unions_of_triangle_free_graphs": {
+    "opg_slug": "unions_of_triangle_free_graphs",
+    "opg_title": "Unions of triangle free graphs",
+    "erdos_id": 62,
+    "erdos_url": "https://www.erdosproblems.com/62",
+    "erdos_status": "open",
+    "score": 60,
+    "erdos_in_bib": true,
+    "opg_statement_excerpt": "Does there exist a graph with no subgraph isomorphic to $ K_4 $ which cannot be expressed as a union of $ \\aleph_0 $ triangle free graphs?",
+    "erdos_statement_excerpt": "If $G_1,G_2$ are two graphs with chromatic number $\\aleph_1$ then must there exist a graph $G$ whose chromatic number is $4$ (or even $\\aleph_0$) which is a sub"
+  },
+  "choice_number_of_k_chromatic_graphs_of_bounded_order": {
+    "opg_slug": "choice_number_of_k_chromatic_graphs_of_bounded_order",
+    "opg_title": "Choice Number of k-Chromatic Graphs of Bounded Order",
+    "erdos_id": 640,
+    "erdos_url": "https://www.erdosproblems.com/640",
+    "erdos_status": "open",
+    "score": 58,
+    "erdos_in_bib": true,
+    "opg_statement_excerpt": "If $ G $ is a $ k $ -chromatic graph on at most $ mk $ vertices, then $ \\text{ch}(G)\\leq \\text{ch}(K_{m*k}) $ .",
+    "erdos_statement_excerpt": "Let $k\\geq 3$. Does there exist some $f(k)$ such that if a graph $G$ has chromatic number $\\geq f(k)$ then $G$ must contain some odd cycle whose vertices span a"
+  },
+  "double_critical_graph_conjecture": {
+    "opg_slug": "double_critical_graph_conjecture",
+    "opg_title": "Double-critical graph conjecture",
+    "erdos_id": 1032,
+    "erdos_url": "https://www.erdosproblems.com/1032",
+    "erdos_status": "open",
+    "score": 58,
+    "erdos_in_bib": true,
+    "opg_statement_excerpt": "$ K_n $ is the only $ n $ -chromatic double-critical graph",
+    "erdos_statement_excerpt": "We say that a graph is $4$-chromatic critical if it has chromatic number $4$, and removing any edge decreases the chromatic number to $3$. Is there, for arbitra"
+  },
+  "antidirected_trees_in_digraphs": {
+    "opg_slug": "antidirected_trees_in_digraphs",
+    "opg_title": "Antidirected trees in digraphs",
+    "erdos_id": 163,
+    "erdos_url": "https://www.erdosproblems.com/163",
+    "erdos_status": "solved",
+    "score": 56,
+    "erdos_in_bib": true,
+    "opg_statement_excerpt": "Let $ D $ be a digraph. If $ |A(D)| > (k-2) |V(D)| $ , then $ D $ contains every antidirected tree of order $ k $ .",
+    "erdos_statement_excerpt": "For any $d\\geq 1$ if $H$ is a graph such that every subgraph contains a vertex of degree at most $d$ then $R(H)\\ll_d n$."
+  },
+  "unfriendly_partitions": {
+    "opg_slug": "unfriendly_partitions",
+    "opg_title": "Unfriendly partitions",
+    "erdos_id": 583,
+    "erdos_url": "https://www.erdosproblems.com/583",
+    "erdos_status": "open",
+    "score": 54,
+    "erdos_in_bib": true,
+    "opg_statement_excerpt": "Does every countably infinite graph have an unfriendly partition into two sets?",
+    "erdos_statement_excerpt": "Every connected graph on $n$ vertices can be partitioned into at most $\\lceil n/2\\rceil$ edge-disjoint paths."
+  }
+}

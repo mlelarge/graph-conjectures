@@ -1,0 +1,48 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Lo, Patel, and Yıldız proved an approximate version of Jackson's conjecture in 2022 (every $d$-regular oriented graph on $n > n_0$ vertices with $d \\geq (1/4+\\varepsilon)n$ has a Hamilton cycle). Their 2023 follow-up establishes Jackson's conjecture itself for sufficiently large $n$: there exists $n_0$ such that every $d$-regular oriented graph on $n \\geq n_0$ vertices with $n \\leq 4d+1$ has a Hamilton cycle. The original conjecture for all $d > 2$ (including small values) remains open.",
+  "since_posted": [
+    {
+      "title": "Hamilton Cycles in Dense Regular Digraphs and Oriented Graphs",
+      "authors": "Allan Lo, Viresh Patel, Mehmet Akif Yıldız",
+      "year": 2023,
+      "venue": "Journal of Combinatorial Theory, Series B",
+      "url": "https://arxiv.org/abs/2203.10112",
+      "doi": null,
+      "arxiv_id": "2203.10112",
+      "kind": "partial",
+      "claim": "Proves that for every $\\varepsilon > 0$ there exists $n_0$ such that every $d$-regular oriented graph on $n > n_0$ vertices with $d \\geq (1/4 + \\varepsilon)n$ has a Hamilton cycle, giving an approximate version of Jackson's conjecture."
+    },
+    {
+      "title": "Cycle Partitions in Dense Regular Digraphs and Oriented Graphs",
+      "authors": "Allan Lo, Viresh Patel, Mehmet Akif Yıldız",
+      "year": 2025,
+      "venue": "Forum of Mathematics, Sigma",
+      "url": "https://www.cambridge.org/core/journals/forum-of-mathematics-sigma/article/cycle-partitions-in-dense-regular-digraphs-and-oriented-graphs/0D29907B6CD56492E7959CA3EBF9F63A",
+      "doi": null,
+      "arxiv_id": "2309.11677",
+      "kind": "partial",
+      "claim": "Proves Jackson's conjecture for sufficiently large $n$: there exists $n_0$ such that every $d$-regular oriented graph on $n \\geq n_0$ vertices with $n \\leq 4d+1$ has a Hamilton cycle, via a cycle-partition result showing at most $n/(2d+1)$ vertex-disjoint cycles suffice."
+    }
+  ],
+  "search_queries": [
+    "Jackson conjecture Hamilton cycle d-diregular oriented graph 4d+1 vertices",
+    "Hamilton cycles d-regular oriented graphs small order Kühn Osthus",
+    "diregular oriented graph Hamilton cycle conjecture progress 2013 2024 2025",
+    "arXiv \"d-diregular\" OR \"diregular oriented\" Hamilton cycle conjecture Jackson"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/1907.08479",
+    "https://arxiv.org/abs/2203.10112",
+    "https://arxiv.org/abs/2309.11677",
+    "https://www.cambridge.org/core/journals/forum-of-mathematics-sigma/article/cycle-partitions-in-dense-regular-digraphs-and-oriented-graphs/0D29907B6CD56492E7959CA3EBF9F63A",
+    "https://research.birmingham.ac.uk/en/publications/hamilton-cycles-in-dense-regular-digraphs-and-oriented-graphs/",
+    "https://math.gatech.edu/seminars-colloquia/series/combinatorics-seminar/anita-liebenau-20210415"
+  ],
+  "notes": "arXiv:1907.08479 (Liebenau–Pehova, 2019) addresses a different Jackson conjecture about bipartite tournaments and is excluded from since_posted. The ScienceDirect page for 2203.10112 (JCTB) returned HTTP 403; DOI not confirmed. The 2309.11677 result proves Jackson's conjecture for all sufficiently large n (leaving finitely many small-d cases open); the exact value of n₀ is not specified explicitly. The Kühn–Osthus variant (strongly 2-connected, at most 6d vertices) appears to remain open.",
+  "slug": "hamilton_cycle_in_small_d_diregular_graphs",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 05)",
+  "search_enabled": true
+}

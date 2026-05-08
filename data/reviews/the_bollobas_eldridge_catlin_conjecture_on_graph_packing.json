@@ -1,0 +1,47 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The BEC conjecture remains open in general. Since the problem was posted, Cames van Batenburg and Kang proved it for $K_{2,t}$-free graphs satisfying $\\Delta(G_1) > 17t \\cdot \\Delta(G_2)$, and also for pairs of graphs with even girth at least 10 when at least one graph has $\\Delta \\geq 940060$.",
+  "since_posted": [
+    {
+      "title": "Packing Graphs of Bounded Codegree",
+      "authors": "Wouter Cames van Batenburg, Ross J. Kang",
+      "year": 2018,
+      "venue": "Combinatorics, Probability and Computing",
+      "url": "https://www.cambridge.org/core/journals/combinatorics-probability-and-computing/article/packing-graphs-of-bounded-codegree/95F60E36C02E097BF6C15DB74E6CA903",
+      "doi": "10.1017/S0963548318000032",
+      "arxiv_id": null,
+      "kind": "partial",
+      "claim": "Proves the BEC conjecture under the additional hypothesis that $G_1$ contains no $K_{2,t}$ and $\\Delta(G_1) > 17t \\cdot \\Delta(G_2)$."
+    },
+    {
+      "title": "The Bollobás-Eldridge-Catlin conjecture for even girth at least 10",
+      "authors": "Wouter Cames van Batenburg, Ross J. Kang",
+      "year": 2017,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/1703.05149",
+      "doi": "10.48550/arXiv.1703.05149",
+      "arxiv_id": "1703.05149",
+      "kind": "partial",
+      "claim": "Proves the BEC conjecture when neither $G_1$ nor $G_2$ contains a 4-, 6-, or 8-cycle (even girth $\\geq 10$) and at least one has maximum degree $\\geq 940060$."
+    }
+  ],
+  "search_queries": [
+    "Bollobás-Eldridge-Catlin conjecture graph packing BEC conjecture progress proof",
+    "BEC conjecture graph packing maximum degree conjecture solved arXiv 2013 2026",
+    "graph packing conjecture \"(Delta(G1)+1)(Delta(G2)+1) < n+1\" recent results",
+    "Kostochka Yu graph packing BEC conjecture partial results 2014 2025"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/1703.05149",
+    "https://arxiv.org/abs/2503.20055",
+    "https://www.cambridge.org/core/journals/combinatorics-probability-and-computing/article/packing-graphs-of-bounded-codegree/95F60E36C02E097BF6C15DB74E6CA903",
+    "https://experts.illinois.edu/en/publications/on-a-graph-packing-conjecture-by-bollob%C3%A1s-eldridge-and-catlin",
+    "https://experts.illinois.edu/en/publications/a-list-version-of-graph-packing/"
+  ],
+  "notes": "The Kaul-Kostochka-Yu (2008) Combinatorica paper on the BEC conjecture predates the 2013 OPG posting and is not included. A Radboud University repository page titled 'Packing two graphs of even girth 10' by the same authors returned HTTP 403 and could not be verified; it may be a published journal version of arXiv:1703.05149. No full proof or disproof of the conjecture was found in the post-2013 literature.",
+  "slug": "the_bollobas_eldridge_catlin_conjecture_on_graph_packing",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 08)",
+  "search_enabled": true
+}

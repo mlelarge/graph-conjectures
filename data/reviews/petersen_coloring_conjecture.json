@@ -1,0 +1,83 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Jaeger's Petersen coloring conjecture (every bridgeless cubic graph admits a cycle-continuous mapping to the Petersen graph, equivalently a normal 5-edge-coloring) remains open. Significant partial results have been established: every bridgeless cubic graph admits a proper 5-edge-coloring in which at least $(4/5)|E(G)|$ edges are normal, and the conjecture has been verified for specific families such as snarks superpositioned by flower snarks. The problem has also been reformulated in terms of sublinear approximation bounds on abnormal edges.",
+  "since_posted": [
+    {
+      "title": "A remark on Petersen coloring conjecture of Jaeger",
+      "authors": "Vahan V. Mkrtchyan",
+      "year": 2012,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/1201.4472",
+      "doi": null,
+      "arxiv_id": "1201.4472",
+      "kind": "partial",
+      "claim": "Introduces the Sylvester coloring conjecture as a stepping-stone and proves structural constraints: if a connected bridgeless cubic graph $G$ satisfies $G \\prec P$ (Petersen) or $G \\prec S$ (Sylvester), then $G$ equals that graph."
+    },
+    {
+      "title": "Partially normal 5-edge-colorings of cubic graphs",
+      "authors": "Ligang Jin, Yingli Kang",
+      "year": 2019,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/1911.06759",
+      "doi": null,
+      "arxiv_id": "1911.06759",
+      "kind": "partial",
+      "claim": "Proves that every bridgeless cubic graph admits a proper 5-edge-coloring in which at least $|E(G)| - \\mu_3(G) \\geq (4/5)|E(G)|$ edges are normal, providing a quantitative approximation to the Petersen coloring conjecture."
+    },
+    {
+      "title": "Variations on the Petersen Colouring Conjecture",
+      "authors": "François Pirot, Jean-Sébastien Sereni, Riste Škrekovski",
+      "year": 2020,
+      "venue": "The Electronic Journal of Combinatorics",
+      "url": "https://www.combinatorics.org/ojs/index.php/eljc/article/view/v27i1p8",
+      "doi": "10.37236/8515",
+      "arxiv_id": "1905.07913",
+      "kind": "partial",
+      "claim": "Proves that every bridgeless cubic graph $G$ admits an edge-colouring with 4 colours such that at most $(4/5)|V(G)|$ edges fail the normality condition, and shows this bound is tight with the Petersen graph as the extremal example."
+    },
+    {
+      "title": "On sublinear approximations for the Petersen coloring conjecture",
+      "authors": "Davide Mattiolo, Giuseppe Mazzuoccolo, Vahan Mkrtchyan",
+      "year": 2021,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2104.09241",
+      "doi": null,
+      "arxiv_id": "2104.09241",
+      "kind": "partial",
+      "claim": "Reformulates the Petersen coloring conjecture as equivalent to the existence of a sublinear function bounding abnormal edges in normal 5-edge-colorings, providing a new quantitative perspective on the conjecture."
+    },
+    {
+      "title": "Normal 5-edge-coloring of some snarks superpositioned by Flower snarks",
+      "authors": "Jelena Sedlar, Riste Škrekovski",
+      "year": 2023,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2306.13340",
+      "doi": null,
+      "arxiv_id": "2306.13340",
+      "kind": "partial",
+      "claim": "Establishes sufficient conditions for the Petersen coloring conjecture to hold in snarks superpositioned by flower snarks, verifying the conjecture for this specific infinite family."
+    }
+  ],
+  "search_queries": [
+    "Petersen coloring conjecture Jaeger cubic graph progress 2020 2021 2022 2023 2024 2025",
+    "Petersen coloring conjecture cycle-continuous bridgeless cubic graph arXiv",
+    "\"Petersen coloring\" conjecture solved proved disproved 2010 2015 2020",
+    "Jaeger Petersen graph edge coloring cubic bridgeless cycle continuous recent result"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2104.09241",
+    "https://arxiv.org/abs/1905.07913",
+    "https://arxiv.org/abs/1201.4472",
+    "https://arxiv.org/pdf/2511.02892",
+    "https://www.combinatorics.org/ojs/index.php/eljc/article/view/v27i1p8",
+    "https://arxiv.org/abs/2104.09241v1",
+    "https://arxiv.org/abs/2306.13340",
+    "https://arxiv.org/abs/1911.06759"
+  ],
+  "notes": "The conjecture remains fully open. The 4/5 normal-edge fraction appears in both Jin-Kang (2019) and Pirot-Sereni-Škrekovski (2020) with slightly different formulations (5-coloring vs. 4-coloring). The Mkrtchyan 2012 paper was published in Australasian Journal of Combinatorics 2013 but DOI was not confirmed. No counterexample or full proof was found in the literature searched. The ScienceDirect result for 'Normal 5-edge-coloring of some snarks superpositioned by the Petersen graph' was not fetched independently and is therefore not cited.",
+  "slug": "petersen_coloring_conjecture",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 08)",
+  "search_enabled": true
+}

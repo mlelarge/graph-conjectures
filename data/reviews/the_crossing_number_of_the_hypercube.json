@@ -1,0 +1,35 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Yang, Wang, Wang, and Zhou (arXiv 2012, published J. Graph Theory 2022) disproved the exact Erdős-Guy formula $\\mathrm{cr}(Q_n) = \\frac{5}{32}4^n - \\lfloor\\frac{n^2+1}{2}\\rfloor 2^{n-2}$ by constructing drawings of $Q_n$ with strictly fewer crossings for $n > 6$. The OPG limit conjecture $\\lim \\mathrm{cr}(Q_d)/4^d = 5/32$ is not directly resolved by this disproof, and the asymptotic question remains open with bounds roughly in $[1/20,\\, 5/32]$. Separately, Faria, de Figueiredo, Sýkora, and Vrťo (J. Graph Theory 2008) improved the upper bound beyond the 2000 result cited at OPG, matching the EG formula's leading term before Yang et al. showed even that was not tight.",
+  "since_posted": [
+    {
+      "title": "Disproof of a conjecture by Erdős and Guy on the crossing number of hypercubes",
+      "authors": "Yuansheng Yang, Guoqing Wang, Haoli Wang, Yan Zhou",
+      "year": 2012,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/1201.4700",
+      "doi": "10.1002/jgt.22787",
+      "arxiv_id": "1201.4700",
+      "kind": "counterexample",
+      "claim": "Constructs drawings of $Q_n$ with strictly fewer crossings than the Erdős-Guy formula predicts for $n > 6$, disproving the exact equality $\\mathrm{cr}(Q_n) = \\frac{5}{32}4^n - \\lfloor\\frac{n^2+1}{2}\\rfloor 2^{n-2}$."
+    }
+  ],
+  "search_queries": [
+    "crossing number hypercube Q_d conjecture Erdos Guy 5/32 recent progress",
+    "crossing number hypercube cube upper bound lower bound arXiv 2010 2020 2025",
+    "cr(Q_d) hypercube crossing number improved bound Faria Sykora Vrto improvement",
+    "arXiv crossing number hypercube graph conjecture solved disproved 2008 2025"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/1201.4700",
+    "https://arxiv.org/abs/1201.4700v3",
+    "https://www.sfu.ca/~mohar/Problems/P3CrossingNumberQd.html",
+    "https://www.alphaxiv.org/abs/1201.04700"
+  ],
+  "notes": "The OPG states the conjecture as a limit (lim cr(Q_d)/4^d = 5/32), whereas the original 1973 Erdős-Guy paper conjectured the exact formula cr(Q_n) = (5/32)4^n - floor((n²+1)/2)·2^(n-2). Yang et al. disprove the exact formula; the asymptotic limit question is not explicitly addressed and remains open. The Faria, de Figueiredo, Sýkora, Vrťo (2008, J. Graph Theory doi:10.1002/jgt.20330) paper improved the upper bound beyond the 2000 result cited at OPG (achieving exactly the EG formula's leading term), and is a relevant post-posting result, but the Wiley/JGT page returned 403 and the PDF was binary-only, so it could not be verified and is not included in since_posted. The Mohar/SFU problem page was last updated June 2001 and does not reflect post-2007 developments.",
+  "slug": "the_crossing_number_of_the_hypercube",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 05)",
+  "search_enabled": true
+}

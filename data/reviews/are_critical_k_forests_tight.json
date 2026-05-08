@@ -1,0 +1,36 @@
+{
+  "status": "disproved",
+  "confidence": "high",
+  "summary": "The conjecture that every critical (saturated, inclusion-maximal) $k$-forest is tight (i.e., a $k$-tree) was disproved for $k=3$. Gebauer, Gundert, Moser, and Okamoto (2011) constructed an explicit saturated 3-forest that is not tight, using the definition of $k$-forests due to Graham and Lovász and the tightness notion of Arocha, Bracho, and Neumann-Lara; their abstract explicitly states that this resolves the open problem posed by Strausz.",
+  "since_posted": [
+    {
+      "title": "Not All Saturated 3-Forests Are Tight",
+      "authors": "Heidi Gebauer, Anna Gundert, Robin A. Moser, Yoshio Okamoto",
+      "year": 2011,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/1109.3390",
+      "doi": null,
+      "arxiv_id": "1109.3390",
+      "kind": "counterexample",
+      "claim": "Provides an explicit saturated (inclusion-maximal) 3-forest that is not tight, directly resolving Strausz's open problem in the negative for k=3."
+    }
+  ],
+  "search_queries": [
+    "Ricardo Strausz \"critical k-forest\" \"k-tree\" hypergraph conjecture",
+    "Strausz \"heterochromatic number\" k-forest k-tree tight hypergraph",
+    "Lovász k-forest hypergraph \"k-tree\" tight heterochromatic arXiv",
+    "Ricardo Strausz hypergraph k-forest k-tree arXiv publications",
+    "\"k-forest\" \"k-tree\" hypergraph \"heterochromatic\" \"tight\" Neumann-Lara Strausz",
+    "Gebauer Gundert Moser Okamoto \"saturated 3-forest\" \"not tight\" journal 2011 2012 2013"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/1109.3390",
+    "https://arxiv.org/abs/2505.05339"
+  ],
+  "notes": "The paper appears to exist only as an arXiv preprint (no journal publication found). The counterexample is for k=3; the conjecture for k>3 may still be open, but the problem as stated ('critical k-forests') is disproved by this single case. The 2505.05339 paper disproves an unrelated Lovász conjecture about hypergraph matchings.",
+  "slug": "are_critical_k_forests_tight",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "elapsed_seconds": 95.3
+}

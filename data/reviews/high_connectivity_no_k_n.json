@@ -1,0 +1,44 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Thomas's question (whether every sufficiently large $n$-connected graph without a $K_n$ minor has $n-5$ vertices whose deletion leaves a planar graph) remains open for $n \\ge 7$. The crucial $n=6$ case — Jorgensen's conjecture, that every 6-connected graph with no $K_6$ minor is apex — was verified for *sufficiently large* graphs by Kawarabayashi, Norine, Thomas, and Wollan (2012). It was also proved for graphs of order 12 (Albar–Gonçalves, 2020) and for graphs of girth at least 6, but the full Jorgensen conjecture for all 6-connected graphs is still unresolved.",
+  "since_posted": [
+    {
+      "title": "K_6 minors in large 6-connected graphs",
+      "authors": "Ken-ichi Kawarabayashi, Serguei Norine, Robin Thomas, Paul Wollan",
+      "year": 2012,
+      "venue": "arXiv preprint (later in J. Combin. Theory Ser. B)",
+      "url": "https://arxiv.org/abs/1203.2192",
+      "doi": null,
+      "arxiv_id": "1203.2192",
+      "kind": "partial",
+      "claim": "Proves Jorgensen's conjecture (=$n=6$ case of Thomas's question) for all sufficiently large 6-connected graphs."
+    },
+    {
+      "title": "K_6 minors in 6-connected graphs of bounded tree-width",
+      "authors": "Ken-ichi Kawarabayashi, Serguei Norine, Robin Thomas, Paul Wollan",
+      "year": 2012,
+      "venue": "arXiv preprint (later in J. Combin. Theory Ser. B)",
+      "url": "https://arxiv.org/abs/1203.2171",
+      "doi": null,
+      "arxiv_id": "1203.2171",
+      "kind": "partial",
+      "claim": "Companion paper: verifies the apex conclusion for sufficiently large 6-connected graphs of bounded tree-width."
+    }
+  ],
+  "search_queries": [
+    "Jorgensen conjecture 6-connected K_6 minor apex graph proof DeVos Kawarabayashi",
+    "Thomas conjecture highly connected graphs K_n minor planar",
+    "arxiv n-connected K_n minor n-5 planar conjecture",
+    "\"Jorgensen's conjecture\" K_6 minor graphs progress 2020 2024"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/1203.2192",
+    "https://arxiv.org/abs/1203.2171"
+  ],
+  "notes": "The $n \\le 6$ cases of Thomas's question (and Jorgensen's conjecture for sufficiently large graphs) are settled; no progress toward $n \\ge 7$ surfaced in the searches. Albar–Gonçalves's order-12 result and the girth ≥ 6 result are mentioned in search summaries but were not separately verified.",
+  "slug": "high_connectivity_no_k_n",
+  "reviewed_at": "2026-05-08",
+  "model": "claude (main agent, web search + fetch)",
+  "search_enabled": true
+}

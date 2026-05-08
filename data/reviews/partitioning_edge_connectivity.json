@@ -1,0 +1,23 @@
+{
+  "status": "open",
+  "confidence": "medium",
+  "summary": "The question of whether every $(a+b+2)$-edge-connected graph can have its edges partitioned into an $a$-edge-connected and a $b$-edge-connected spanning subgraph remains open. The only known partial result is via the Nash-Williams/Tutte theorem: if $G$ is $2(a+b)$-edge-connected, one can pack $a+b$ edge-disjoint spanning trees and assign $a$ to one part and $b$ to the other. No published paper appears to have closed the gap between $a+b+2$ and $2(a+b)$.",
+  "since_posted": [],
+  "search_queries": [
+    "partitioning edge-connectivity conjecture DeVos edge-connected partition graph theory",
+    "edge partition a-edge-connected b-edge-connected (a+b+2)-edge-connected graph conjecture",
+    "DeVos Johnson Seymour cut-coloring circuit covering graph theory arXiv",
+    "courteous coloring edge-connectivity partition graph 2-courteous arXiv 2010 2020",
+    "Nash-Williams Tutte spanning trees edge-connectivity partition improvement recent progress 2010 2025",
+    "arXiv edge-connectivity partition a+b+2 OR k-courteous graph theory conjecture 2020 2024"
+  ],
+  "verified_urls": [
+    "https://web.math.princeton.edu/~pds/papers/cutcolouring/paper.pdf",
+    "https://arxiv.org/abs/2006.07486"
+  ],
+  "notes": "The DJS paper (DeVos-Johnson-Seymour 'Cut-coloring and circuit covering') predates the 2007 posting date and is background, not new progress. The Princeton PDF (DJS) could not be parsed as text. The OPG page itself was unreachable (ECONNREFUSED). No arXiv or journal paper post-2007 specifically advancing the (a+b+2) partition conjecture was found across four search queries; the problem is likely still open but a definitive survey or MathSciNet search could confirm.",
+  "slug": "partitioning_edge_connectivity",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 03)",
+  "search_enabled": true
+}

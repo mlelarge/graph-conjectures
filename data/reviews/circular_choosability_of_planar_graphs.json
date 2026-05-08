@@ -1,0 +1,24 @@
+{
+  "status": "open",
+  "confidence": "medium",
+  "summary": "As of the posting date (August 2012), the best known bounds on $\\tau = \\sup\\{\\mathrm{cch}(G) : G \\text{ planar}\\}$ were $6 \\le \\tau \\le 8$, established by Havet, Kang, Müller, and Sereni (2009). Exhaustive searching across arXiv, journal indices, and web resources found no verifiable post-2012 paper that narrows this gap or resolves the problem for general planar graphs.",
+  "since_posted": [],
+  "search_queries": [
+    "circular choosability planar graphs upper bound",
+    "circular choosability planar graphs Havet Kang Müller Sereni improvement",
+    "circular choosability planar graphs 2013 2014 2015 2016 2017 2018 2019 2020 arxiv",
+    "\"circular choice number\" planar graph improved bound arXiv",
+    "circular choosability planar graphs 2012 2013 2014 2015 new result progress",
+    "\"cch(G)\" OR \"circular choice number\" planar graphs new bound 2015 2016 2017 2018 2019 2020 2021 2022"
+  ],
+  "verified_urls": [
+    "https://combinatorialpress.com/ars-articles/volume-099-ars-articles/circular-choosability-of-planar-graphs-with-large-girth/",
+    "https://arxiv.org/search/?query=circular+choosability&searchtype=all&start=0"
+  ],
+  "notes": "The Wang–Liu paper on circular choosability of planar graphs with large girth appeared on the Combinatorial Press page and ResearchGate, but its publication date is 2011, predating the OPG posting, so it is not included in since_posted. The HAL Inria page for the HKMS paper returned HTTP 403 and could not be verified; however, the 2009 HKMS result is pre-posting baseline knowledge and requires no citation here. No arXiv preprint or journal paper post-August 2012 specifically addressing the $6$–$8$ gap for circular choosability of general planar graphs was found through any of the six queries. Confidence is medium rather than high because the topic is niche enough that relevant papers could reside in journals (e.g., Ars Combinatoria, Australasian J. Combinatorics) not well indexed by the search engine.",
+  "slug": "circular_choosability_of_planar_graphs",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "elapsed_seconds": 130.6
+}

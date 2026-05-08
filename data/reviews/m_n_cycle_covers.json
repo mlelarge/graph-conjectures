@@ -1,0 +1,38 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The (5,2)-cycle cover conjecture — that every bridgeless graph has a 5-cycle double cover — remains open as of 2026. Since it was posted, partial progress includes a characterisation of when a 2-regular subgraph of a bridgeless cubic graph can be extended to a 5-cycle double cover, and verification of the 5-CDC conjecture for several families of snarks via nowhere-zero 4-flow methods; the full conjecture, which strictly strengthens the still-open cycle double cover conjecture, is unresolved.",
+  "since_posted": [
+    {
+      "title": "A note on 5-cycle double covers",
+      "authors": "Arthur Hoffmann-Ostenhof",
+      "year": 2012,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/1209.0096",
+      "doi": null,
+      "arxiv_id": "1209.0096",
+      "kind": "partial",
+      "claim": "Establishes necessary and sufficient conditions for a 2-regular subgraph of a bridgeless cubic graph to be containable in a 5-cycle double cover, advancing the strong 5-CDC conjecture."
+    }
+  ],
+  "search_queries": [
+    "(5,2)-cycle cover conjecture bridgeless graph progress",
+    "five cycle double cover conjecture graph theory recent results",
+    "\"(m,n)-cycle cover\" OR \"cycle double cover\" Celmins Preissmann conjecture arXiv",
+    "cycle double cover conjecture 2020 2021 2022 2023 2024 solved partial arXiv",
+    "\"five cycle double cover\" \"5-CDC\" cubic graph Petersen minor recent progress 2020 2025",
+    "\"5-Cycle Double Covers\" \"4-Flows\" \"Catlin Reduction\" arXiv SIAM authors title",
+    "\"five-cycle double cover\" \"shortest cycle cover\" Liu 2025 \"Journal of Graph Theory\" arXiv"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/1209.0096",
+    "https://arxiv.org/abs/2511.07285",
+    "https://arxiv.org/abs/2303.10615",
+    "https://en.wikipedia.org/wiki/Cycle_double_cover"
+  ],
+  "notes": "Two further post-2007 papers were found in search results but could not be accessed via WebFetch (journal paywalls/redirects): (1) Liu, Hao, Luo, Zhang, '5-Cycle Double Covers, 4-Flows, and Catlin Reduction', SIAM J. Discrete Math. 37(1):253–267, 2023, DOI:10.1137/22M1472425 — verifies 5-CDC for several snark families using Catlin reduction; (2) Zhang, 'Five-cycle double cover and shortest cycle cover', J. Graph Theory 108:39–49, 2025, DOI:10.1002/jgt.23164 — studies 5-CDC for weak-oddness-2 cubic graphs. arXiv:2511.07285 (approximate CDC, 2025) addresses general CDC but not specifically the (5,2)-cover. The (5,2)-cover conjecture is strictly stronger than the CDC conjecture, which is itself still open.",
+  "slug": "m_n_cycle_covers",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 02)",
+  "search_enabled": true
+}

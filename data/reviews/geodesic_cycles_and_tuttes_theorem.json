@@ -1,0 +1,22 @@
+{
+  "slug": "geodesic_cycles_and_tuttes_theorem",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet (subagent)",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "The problem, posed by Georgakopoulos and Sprüssel (2007), asks whether every $3$-connected finite graph admits an edge-length assignment $\\ell$ such that every $\\ell$-geodesic cycle is peripheral; a positive answer would yield a new proof of Tutte's theorem that peripheral cycles generate the cycle space. Web searches surfaced no verifiable post-2007 paper resolving the problem in either direction; the original GS paper (published 2009 in Electron. J. Combin.) explicitly leaves it open, and we found no follow-up announcing a proof, counterexample, or partial result on edge-length-induced geodesic-peripheral assignments.",
+  "since_posted": [],
+  "search_queries": [
+    "Georgakopoulos Sprüssel geodesic cycles peripheral Tutte theorem",
+    "\"geodesic cycles\" \"peripheral\" 3-connected graph cycle space",
+    "Georgakopoulos \"geodetic\" cycles peripheral 3-connected open problem",
+    "\"geodesic\" OR \"geodetic\" cycles peripheral Tutte proof arXiv 2020..2026"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/0911.3999",
+    "https://www.combinatorics.org/ojs/index.php/eljc/article/view/v16i1r144",
+    "https://arxiv.org/abs/1411.6392"
+  ],
+  "notes": "The published version of the GS preprint (arXiv:0911.3999, Electron. J. Combin. 16 (2009) R144) predates the OPG posting only nominally (preprint 2007, OPG 2007-08-04) and therefore is not eligible as a post-posting citation. Hamann's 'Generating the cycle space of planar graphs' (arXiv:1411.6392) treats cycle-space generation in 3-connected planar graphs via Aut(G)-invariant nested cycles, but does not address edge-length-geodesic-vs-peripheral assignments. No counterexample or proof of the conjecture for finite 3-connected graphs was located. Confidence is medium because the niche topic could harbor results in less-indexed venues."
+}

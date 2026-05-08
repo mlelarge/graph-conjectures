@@ -1,0 +1,36 @@
+{
+  "slug": "every_4_connected_toroidal_graph_has_a_hamilton_cycle",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet (subagent)",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The Grunbaum-Nash-Williams conjecture that every 4-connected toroidal graph has a Hamilton cycle remains open. The strongest general results are still those cited in the OPG bibliography: Thomas and Yu (1997) settled the 5-connected case (and showed it is even Hamiltonian-connected), and Thomas, Yu, and Zang (2005) showed every 4-connected toroidal graph has a Hamilton path. Since 2013 the only directly relevant published progress is on special classes (e.g., 4-connected toroidal triangulations by Kawarabayashi-Ozeki, predating the post) and on the structure of Thomassen's edge-non-hamiltonian counterexamples (Ellingham-Marshall).",
+  "since_posted": [
+    {
+      "title": "Criticality of counterexamples to toroidal edge-hamiltonicity",
+      "authors": "M. N. Ellingham, Emily A. Marshall",
+      "year": 2016,
+      "venue": "Graphs and Combinatorics",
+      "url": "https://arxiv.org/abs/1312.1379",
+      "doi": "10.1007/s00373-015-1542-5",
+      "arxiv_id": "1312.1379",
+      "kind": "partial",
+      "claim": "Investigates Thomassen-type 4-connected toroidal graphs containing edges not on any Hamilton cycle, showing certain generalizations are critical; this clarifies why an edge-Hamiltonicity inductive approach (the planar/projective-planar route) cannot work for the torus and bears on the structure any proof of the Grunbaum-Nash-Williams conjecture must respect."
+    }
+  ],
+  "search_queries": [
+    "4-connected toroidal graph Hamilton cycle Grunbaum Nash-Williams conjecture",
+    "\"4-connected\" \"toroidal\" \"Hamilton\" graph arxiv",
+    "Hamiltonicity graphs torus 4-connected progress 2020 2024",
+    "Kawarabayashi Ozeki toroidal Hamilton cycle"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/1312.1379",
+    "https://en.wikipedia.org/wiki/Gr%C3%BCnbaum%E2%80%93Nash-Williams_conjecture",
+    "https://arxiv.org/abs/1609.01367",
+    "https://tgt.ynu.ac.jp/ozeki/list.html",
+    "https://doi.org/10.1007/s00373-015-1542-5"
+  ],
+  "notes": "The Kawarabayashi-Ozeki result that every 4-connected toroidal triangulation is Hamiltonian is widely cited but appears as a 2011 Eurocomb conference proceedings/preprint, predating the 2013-03-07 OPG posting; therefore not listed under since_posted. Several journal pages (SIAM, ScienceDirect, Springer link article) returned 403/redirect on direct fetch; the arXiv abstract for Ellingham-Marshall and the DOI registration confirm the 2013 submission and 2016 journal publication in Graphs and Combinatorics. No post-2013 arXiv preprint or journal paper announcing a full proof or refutation of the Grunbaum-Nash-Williams toroidal conjecture was found."
+}

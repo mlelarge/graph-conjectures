@@ -1,0 +1,59 @@
+{
+  "slug": "multicolour_erdos_hajnal_conjecture",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 05)",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The multicolour Erdős–Hajnal conjecture remains open in general, even for two colours. Since the problem was posted (2019), Axenovich, Snyder, and Weber confirmed the conjecture for three-colour edge-colorings of $K_n$ that avoid any family of at most three coloured triangle patterns; separately, Axenovich and Weber reduced the full conjecture to the case where the host clique uses at most one more colour than the forbidden pattern, and exhibited surprising non-monotone behaviour in homogeneous-set sizes.",
+  "since_posted": [
+    {
+      "title": "The Erdős-Hajnal conjecture for three colors and multiple forbidden patterns",
+      "authors": "Maria Axenovich, Richard Snyder, Lea Weber",
+      "year": 2020,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2005.09269",
+      "doi": null,
+      "arxiv_id": "2005.09269",
+      "kind": "partial",
+      "claim": "Confirms the multicolour Erdős–Hajnal conjecture for three-colour edge-colorings of $K_n$ that avoid any family of at most three coloured triangle patterns, providing asymptotically tight bounds."
+    },
+    {
+      "title": "A note on multicolour Erdős-Hajnal conjecture",
+      "authors": "Maria Axenovich, Lea Weber",
+      "year": 2023,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2311.03249",
+      "doi": null,
+      "arxiv_id": "2311.03249",
+      "kind": "reduction",
+      "claim": "Reduces the multicolour EH-conjecture to the case where the host-clique colour count is equal to or exactly one more than that of the forbidden pattern, and demonstrates that allowing an extra colour can non-monotonically decrease the size of the largest homogeneous set."
+    },
+    {
+      "title": "Rainbow triangles and the Erdős-Hajnal problem in projective geometries",
+      "authors": "Carolyn Chun, James Dylan Douthitt, Wayne Ge, Tony Huynh, Matthew E. Kroeker, Peter Nelson",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2505.13781",
+      "doi": null,
+      "arxiv_id": "2505.13781",
+      "kind": "partial",
+      "claim": "Formulates and partially resolves a geometric analogue of the multicolour EH-conjecture for finite projective geometries, proving a Gallai-type decomposition for rainbow-triangle-free three-colourings of PG(n-1,2)."
+    }
+  ],
+  "search_queries": [
+    "multicolour Erdős-Hajnal conjecture rainbow triangle Fox Grinshpun Pach progress",
+    "Erdos-Hajnal conjecture multicolor edge coloring clique monochromatic recent arxiv 2020 2021 2022 2023 2024",
+    "Fox Grinshpun Pach \"Erdős-Hajnal\" rainbow triangles cited follow-up work 2019 2020 2021 2022 2023",
+    "arXiv \"multicolour Erdős–Hajnal\" OR \"multicolor Erdos-Hajnal\" conjecture graph theory 2020 2021 2022 2023 2024 2025"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2311.03249",
+    "https://arxiv.org/html/2311.03249",
+    "https://arxiv.org/abs/2005.09269",
+    "https://arxiv.org/abs/2505.13781",
+    "https://www.sciencedirect.com/science/article/pii/S0012365X25000457",
+    "https://www.sciencedirect.com/science/article/abs/pii/S0012365X21005045"
+  ],
+  "notes": "The two ScienceDirect URLs returned HTTP 403; they appear to be the journal-published versions of arXiv:2005.09269 (Discrete Math. 2021) and arXiv:2311.03249 (Discrete Math. 2025) respectively, but could not be confirmed — both papers are cited via their verified arXiv pages only. The 2025 projective-geometry paper (2505.13781) addresses a geometric analogue rather than the original graph-theoretic statement. The original conjecture remains open for all k≥2 and all colourings χ, including the two-colour case."
+}

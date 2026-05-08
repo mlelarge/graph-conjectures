@@ -1,0 +1,108 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div class="index-controls">
+  <input type="search" id="filter" placeholder="Filter by title, author, subject, keyword, status…" autofocus>
+  <span class="index-count"><span id="visible-count">{{ problems|length }}</span> / {{ problems|length }} problems</span>
+  {% if review_count %}
+  <span class="status-summary" title="literature-review status counts">
+    {% for s in ['open','partial','solved','disproved','unclear'] -%}
+      {% if review_status_counts.get(s) -%}
+        <span class="status-badge status-{{ s }}">{{ s }} {{ review_status_counts[s] }}</span>
+      {%- endif %}
+    {%- endfor %}
+    <span class="status-pending">{{ problem_count - review_count }} not yet reviewed</span>
+  </span>
+  {% endif %}
+</div>
+
+<table class="problems-table">
+<thead>
+<tr>
+  <th class="col-title">Title</th>
+  <th class="col-status">Status</th>
+  <th class="col-subject">Subject</th>
+  <th class="col-authors">Authors</th>
+  <th class="col-importance">Imp.</th>
+  <th class="col-posted">Posted</th>
+</tr>
+</thead>
+<tbody>
+{% for p in problems %}
+<tr data-search="{{ p._search }}{% if p._review %} status:{{ p._review.status }}{% endif %}">
+  <td>
+    <a href="op/{{ p.slug }}/">{{ p.title }}</a>
+    {%- if p._erdos %} <a class="badge erdos" href="{{ p._erdos.erdos_url }}" title="Also at erdosproblems.com">EP #{{ p._erdos.erdos_id }}</a>{% endif -%}
+  </td>
+  <td class="col-status">
+    {% if p._review %}<span class="status-badge status-{{ p._review.status }}">{{ p._review.status }}</span>{% endif %}
+  </td>
+  <td>{{ p.subject_path | map(attribute='label') | join(' » ') }}</td>
+  <td>{{ p.authors | map(attribute='label') | join('; ') }}</td>
+  <td class="importance-{{ p.importance.label|lower }}">{{ '★' * p.importance.stars }}</td>
+  <td>{{ p.posted_at or '' }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+
+<script>
+(function() {
+  var input = document.getElementById('filter');
+  var table = document.querySelector('table.problems-table');
+  var tbody = table.querySelector('tbody');
+  var rows = Array.from(tbody.querySelectorAll('tr'));
+  var counter = document.getElementById('visible-count');
+
+  function applyFilter() {
+    var q = input.value.trim().toLowerCase();
+    var visible = 0;
+    rows.forEach(function(r) {
+      var match = q === '' || r.dataset.search.indexOf(q) !== -1;
+      r.style.display = match ? '' : 'none';
+      if (match) visible++;
+    });
+    counter.textContent = visible;
+  }
+  input.addEventListener('input', applyFilter);
+
+  // Click a status badge in the summary to toggle a status: filter
+  document.querySelectorAll('.status-summary .status-badge').forEach(function(badge) {
+    badge.style.cursor = 'pointer';
+    badge.addEventListener('click', function() {
+      var cls = Array.from(badge.classList).find(function(c) { return c.indexOf('status-') === 0 && c !== 'status-badge'; });
+      if (!cls) return;
+      var token = 'status:' + cls.replace('status-', '');
+      input.value = (input.value.trim() === token) ? '' : token;
+      applyFilter();
+      input.focus();
+    });
+  });
+
+  // Click a column header to sort
+  var sortState = {col: -1, asc: true};
+  table.querySelectorAll('thead th').forEach(function(th, i) {
+    th.style.cursor = 'pointer';
+    th.title = 'click to sort';
+    th.addEventListener('click', function() {
+      sortState.asc = (sortState.col === i) ? !sortState.asc : true;
+      sortState.col = i;
+      var sign = sortState.asc ? 1 : -1;
+      rows.sort(function(a, b) {
+        var av = (a.cells[i].textContent || '').trim().toLowerCase();
+        var bv = (b.cells[i].textContent || '').trim().toLowerCase();
+        // empty values always sort to the end
+        if (av === '' && bv !== '') return 1;
+        if (bv === '' && av !== '') return -1;
+        return sign * av.localeCompare(bv, undefined, {numeric: true});
+      });
+      table.querySelectorAll('thead th').forEach(function(t) {
+        t.classList.remove('sorted-asc', 'sorted-desc');
+      });
+      th.classList.add(sortState.asc ? 'sorted-asc' : 'sorted-desc');
+      rows.forEach(function(r) { tbody.appendChild(r); });
+    });
+  });
+})();
+</script>
+{% endblock %}

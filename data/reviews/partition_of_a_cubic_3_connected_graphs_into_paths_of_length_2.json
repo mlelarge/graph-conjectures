@@ -1,0 +1,28 @@
+{
+  "status": "open",
+  "confidence": "medium",
+  "summary": "The conjecture—that every 3-connected cubic graph on $3k$ vertices admits a partition into $k$ paths of length 2 (a $P_3$-factor)—remains open. Prior to the OPG posting, Kelmans established several equivalent reformulations and showed the conjecture implies Reed’s dominating conjecture for cubic 3-connected graphs, but no proof or disproof exists. Searches through 2026 found no post-2013 paper that resolves the problem.",
+  "since_posted": [],
+  "search_queries": [
+    "Kelmans packing 3-vertex paths cubic 3-connected graphs partition",
+    "partition cubic 3-connected graph paths length 2 P3-packing",
+    "Lambda-packing 3-connected graphs Kelmans RUTCOR 2005",
+    "P3 path partition cubic graph 3k vertices conjecture solved arXiv",
+    "P3-factor cubic 3-connected graphs packing path length 2 2014 2015 2016 2017 2018 2019 2020",
+    "arXiv P3-factor cubic 3-connected path partition 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023",
+    "Akiyama Kano conjecture P3-factor cubic 3-connected graph solved proof 2015 2020 2025",
+    "packing 3-vertex paths P3-packing cubic 3-connected arXiv 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/0910.2766",
+    "https://arxiv.org/abs/0801.1239",
+    "https://arxiv.org/abs/2602.12925",
+    "https://arxiv.org/abs/0910.4681",
+    "https://www.academia.edu/51174820/Path_factors_in_cubic_graphs"
+  ],
+  "notes": "The problem is also attributed to Akiyama and Kano (1985 conjecture). All relevant arXiv papers found (0910.2766, 0801.1239, 0711.3871, 0712.4151, 0910.4681) predate the 2013 posting. Two possibly relevant post-2013 papers were identified — 'On maximum P3-packing in claw-free subcubic graphs' (J. Comb. Opt., 2021) and 'Packing 2- and 3-stars into cubic graphs' (ScienceDirect, 2023) — but both were behind paywalls (HTTP 403) and no arXiv versions were found; they also appear to address different graph classes (claw-free subcubic vs. stars). Confidence is medium rather than high because those inaccessible papers could in principle contain relevant partial results.",
+  "slug": "partition_of_a_cubic_3_connected_graphs_into_paths_of_length_2",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 02)",
+  "search_enabled": true
+}

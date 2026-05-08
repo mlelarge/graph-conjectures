@@ -1,0 +1,38 @@
+{
+  "status": "disproved",
+  "confidence": "high",
+  "summary": "The Blankenship–Oporowski conjecture has been disproved. Dujmović, Eppstein, Hickingbotham, Morin, and Wood (2022) exhibited a family of graphs whose Cartesian products of stars and triangular tilings have unbounded stack-number (= book thickness), yet subdividing each edge into six-edge paths reduces the book thickness to three. Consequently, no function $f$ can satisfy $\\text{bt}(G) \\leq f(\\text{bt}(G'))$ for all graphs $G$ and subdivisions $G'$.",
+  "since_posted": [
+    {
+      "title": "Stack-number is not bounded by queue-number",
+      "authors": "Vida Dujmović, David Eppstein, Robert Hickingbotham, Pat Morin, David R. Wood",
+      "year": 2022,
+      "venue": "Combinatorica",
+      "url": "https://arxiv.org/abs/2011.04195",
+      "doi": "10.1007/s00493-021-4585-7",
+      "arxiv_id": "2011.04195",
+      "kind": "counterexample",
+      "claim": "Constructs graphs with queue-number at most 4 but unbounded stack-number; since bounded queue-number implies bounded stack-number for constant subdivisions (by Dujmović–Wood 2005), these graphs have unbounded book thickness while their constant-subdivision has book thickness 3, directly disproving the Blankenship–Oporowski conjecture."
+    }
+  ],
+  "search_queries": [
+    "book thickness subdivision conjecture Blankenship Oporowski graph",
+    "book embedding subdivision pagenumber graph theory arXiv",
+    "Dujmovic Wood stacks queues tracks layouts graph subdivisions book thickness",
+    "stack-number not bounded queue-number counterexample Blankenship Oporowski conjecture disproved arXiv",
+    "\"book thickness\" subdivision \"unbounded\" \"bounded queue-number\" graph 2020 2021 2022",
+    "\"three-dimensional graph products\" \"unbounded stack-number\" Blankenship Oporowski 2022"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2011.04195",
+    "https://en.wikipedia.org/wiki/Blankenship%E2%80%93Oporowski_conjecture",
+    "https://en.wikipedia.org/wiki/Book_embedding",
+    "https://11011110.github.io/blog/2020/11/10/hex-books-queues.html"
+  ],
+  "notes": "The arXiv preprint appeared in November 2020 (arXiv:2011.04195); the journal version appeared in Combinatorica 42:151–164, 2022. Wikipedia's dedicated 'Blankenship–Oporowski conjecture' page and the blog post by Eppstein both confirm the disproof. The Springer/DOI page for the Combinatorica article was inaccessible (authentication redirect), so the arXiv abstract page was used as the primary verified URL. The paper also resolves the Heath–Leighton–Rosenberg (1992) open problem as a corollary.",
+  "slug": "book_thickness_of_subdivisions",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "elapsed_seconds": 1165.0
+}

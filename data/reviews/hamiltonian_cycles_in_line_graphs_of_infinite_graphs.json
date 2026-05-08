@@ -1,0 +1,54 @@
+{
+  "status": "partial",
+  "confidence": "medium",
+  "summary": "The conjecture has seen partial progress on Part 1: Florian Lehner proved (arXiv:1109.6787, JCTB 2014) that the line graph of every locally finite, highly edge-connected graph (≥6-edge-connected, in the sense of the end-faithful spanning tree packing result) has a Hamiltonian circle, extending the classical finite result; this is a weakening of the 4-edge-connected threshold asked in the conjecture. Part 2 (4-connected line graph implies Hamiltonian) remains widely open even for finite graphs, and Part 1 in its full 4-edge-connected form is still open.",
+  "since_posted": [
+    {
+      "title": "On spanning tree packings of highly edge connected graphs",
+      "authors": "Florian Lehner",
+      "year": 2014,
+      "venue": "Journal of Combinatorial Theory, Series B",
+      "url": "https://arxiv.org/abs/1109.6787",
+      "doi": null,
+      "arxiv_id": "1109.6787",
+      "kind": "partial",
+      "claim": "Extends the Tutte/Nash-Williams tree-packing theorem to end-faithful packings in certain locally finite graphs, establishing that the line graph of every locally finite, sufficiently highly edge-connected graph has a Hamiltonian circle (a partial result toward the 4-edge-connected conjecture)."
+    },
+    {
+      "title": "Extending Cycles Locally to Hamilton Cycles",
+      "authors": "Matthias Hamann, Florian Lehner, Julian Pott",
+      "year": 2016,
+      "venue": "Electronic Journal of Combinatorics",
+      "url": "https://www.combinatorics.org/ojs/index.php/eljc/article/view/v23i1p49",
+      "doi": null,
+      "arxiv_id": null,
+      "kind": "partial",
+      "claim": "Proves that every connected, locally connected, locally finite, claw-free graph has a Hamilton circle; since line graphs are claw-free, this has implications for Hamiltonicity of line graphs of locally finite graphs with sufficient edge-connectivity."
+    }
+  ],
+  "search_queries": [
+    "Hamiltonian cycles line graphs infinite graphs locally finite Georgakopoulos conjecture",
+    "4-edge-connected locally finite graph line graph hamiltonian Freudenthal compactification",
+    "Thomassen conjecture 4-connected line graph hamiltonian infinite graph progress",
+    "Georgakopoulos hamiltonian circles infinite graphs topological spanning trees arXiv",
+    "Heuer Hamiltonicity in locally finite graphs two extensions counterexample arXiv line graphs",
+    "Lehner line graph locally finite 6-edge-connected Hamiltonian circle arXiv",
+    "Hamann Lehner Pott extending cycles locally to Hamilton cycles Electronic Journal Combinatorics arXiv",
+    "Florian Lehner spanning tree packings highly edge connected journal published line graphs hamiltonian 2014 2015 2016",
+    "arXiv 6-edge-connected locally finite graph line graph Hamiltonian circle Lehner OR Heuer OR Georgakopoulos"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/1109.6787",
+    "https://www.combinatorics.org/ojs/index.php/eljc/article/view/v23i1p49",
+    "https://www.combinatorics.org/ojs/index.php/eljc/article/view/v25i3p13",
+    "https://arxiv.org/abs/1902.06402",
+    "https://arxiv.org/search/?searchtype=author&query=Georgakopoulos+A&start=0",
+    "https://arxiv.org/search/?searchtype=all&query=Heuer+Hamiltonicity+locally+finite+graphs&start=0",
+    "https://scholar.google.co.in/citations?user=BPBW2x0AAAAJ&hl=vi"
+  ],
+  "notes": "PDFs at florian-lehner.net and math.uni-hamburg.de were not text-readable via WebFetch, so exact theorem statements could not be directly verified. The claim that the Lehner 2014 paper covers the '6-edge-connected' case is consistently reported in secondary sources (including Mohar's problem page and search result abstracts) but could not be confirmed by reading the theorem directly. The Hamann-Lehner-Pott 2016 paper's abstract emphasizes claw-free locally connected graphs rather than mentioning line graphs explicitly; a corollary for line graphs may follow but was not directly verified. Both conjectures (4-edge-connected and 4-connected line graph) appear to remain open as of the search date.",
+  "slug": "hamiltonian_cycles_in_line_graphs_of_infinite_graphs",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 07)",
+  "search_enabled": true
+}

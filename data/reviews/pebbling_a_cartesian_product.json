@@ -1,0 +1,49 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Graham's conjecture that $p(G_1 \\Box G_2) \\le p(G_1)p(G_2)$ remains open in full generality. Since the 2007 posting, the conjecture has been verified for additional graph families, including Cartesian products of middle graphs of some even cycles (Xia et al., 2017) and products with sufficiently large complete graphs (Pleanmani, 2020). The Lemke graph product $L \\Box L$ is the key potential counterexample still under active investigation.",
+  "since_posted": [
+    {
+      "title": "Graham's pebbling conjecture on Cartesian product of the middle graphs of even cycles",
+      "authors": "Zheng-Jiang Xia, Yong-Liang Pan, Jun-Ming Xu, Xi-Ming Cheng",
+      "year": 2017,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/1705.00191",
+      "doi": null,
+      "arxiv_id": "1705.00191",
+      "kind": "partial",
+      "claim": "Proves Graham's pebbling conjecture for Cartesian products of the middle graphs of some even cycles."
+    },
+    {
+      "title": "Graham's Pebbling Conjecture Holds for the Product of a Graph and a Sufficiently Large Complete Graph",
+      "authors": "Nopparat Pleanmani",
+      "year": 2020,
+      "venue": "Theory and Applications of Graphs",
+      "url": "https://digitalcommons.georgiasouthern.edu/tag/vol7/iss1/1/",
+      "doi": null,
+      "arxiv_id": null,
+      "kind": "partial",
+      "claim": "Proves that $p(G \\Box K_n) \\le p(G)p(K_n)$ whenever $K_n$ has sufficiently large order relative to the graph parameters of $G$."
+    }
+  ],
+  "search_queries": [
+    "Graham's pebbling conjecture Cartesian product graphs p(G1 box G2) progress",
+    "pebbling number Cartesian product conjecture arXiv 2020 2021 2022 2023 2024",
+    "graph pebbling Hurlbert survey conjecture Cartesian product recent results",
+    "pebbling conjecture \"product conjecture\" graph theory solved disproved counterexample",
+    "lollipop cubic weight functions graph pebbling Lemke 2024 arXiv"
+  ],
+  "verified_urls": [
+    "https://digitalcommons.georgiasouthern.edu/tag/vol7/iss1/1/",
+    "https://arxiv.org/abs/2303.04590",
+    "https://arxiv.org/abs/2011.10623",
+    "https://arxiv.org/abs/1705.00191",
+    "https://en.wikipedia.org/wiki/Graph_pebbling",
+    "https://arxiv.org/abs/2310.00580"
+  ],
+  "notes": "The Pleanmani 2019 World Scientific paper on complete bipartite graphs could not be verified (HTTP 403) and was excluded. Yang, Yerger, and Zhou (2023/2024, arXiv:2310.00580) improve weight-function bounds for Q4 and lollipop graphs but do not directly address Graham's conjecture. Hurlbert and Seddiq (arXiv:2011.10623) proved the Target Pebbling Conjecture for 2-paths and Kneser graphs, which is a related but distinct problem. The Lemke graph Cartesian product L□L remains the canonical potential counterexample to Graham's conjecture.",
+  "slug": "pebbling_a_cartesian_product",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 01)",
+  "search_enabled": true
+}

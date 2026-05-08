@@ -1,0 +1,70 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The problem of whether every countably infinite graph has an unfriendly partition into two sets remains open. Significant partial results have appeared since 2007: the conjecture has been confirmed for rayless graphs, for graphs not containing a subdivision of an infinite clique, for line graphs of any cardinality, and most recently (2024) for all countable graphs without alternating rays — rays that pass through infinitely many vertices of both finite and infinite degree. The difficult case of countable graphs that do admit alternating rays is still unresolved.",
+  "since_posted": [
+    {
+      "title": "Unfriendly or weakly unfriendly partitions of graphs",
+      "authors": "Francis Oger",
+      "year": 2014,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/1402.0067",
+      "doi": null,
+      "arxiv_id": "1402.0067",
+      "kind": "partial",
+      "claim": "Proves an equivalence: the existence of unfriendly partitions for all countable graphs is equivalent to their existence for all countable graphs lacking induced subgraphs of infinite minimum degree, and establishes omega_n-unfriendly partitions for graphs with infinite minimum degree."
+    },
+    {
+      "title": "List majority edge-colorings of graphs",
+      "authors": "Rafał Kalinowski, Monika Pilśniak, Marcin Stawiski",
+      "year": 2023,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2312.00922",
+      "doi": "10.1007/s00493-024-00131-1",
+      "arxiv_id": "2312.00922",
+      "kind": "partial",
+      "claim": "Proves the Unfriendly Partition Conjecture for line graphs of any cardinality by showing they admit majority vertex-colorings from lists of size 2."
+    },
+    {
+      "title": "Unfriendly partitions when avoiding vertices of finite degree",
+      "authors": "Leandro Fiorini Aurichi, Lucas Real",
+      "year": 2023,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2304.02580",
+      "doi": null,
+      "arxiv_id": "2304.02580",
+      "kind": "partial",
+      "claim": "Shows that the minimum cardinality of a graph (without vertices of finite degree) that admits no unfriendly partition cannot be determined in ZFC, establishing a set-theoretic independence result."
+    },
+    {
+      "title": "Remarks on the countable case of the Unfriendly Partition Problem",
+      "authors": "Leandro Aurichi, Lucas Real",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2412.14151",
+      "doi": null,
+      "arxiv_id": "2412.14151",
+      "kind": "partial",
+      "claim": "Proves that every countable graph without alternating rays admits an unfriendly partition, strictly generalizing results of Aharoni-Milner-Prikry and Bruhn-Diestel-Georgakopoulos-Sprüssel."
+    }
+  ],
+  "search_queries": [
+    "unfriendly partition countably infinite graph conjecture recent results",
+    "unfriendly partitions graph theory arXiv 2007 2025 countable",
+    "Cowan Emerson conjecture unfriendly partition solved counterexample",
+    "Aharoni Milner Prikry unfriendly partition infinite graph progress"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2412.14151",
+    "https://arxiv.org/abs/2304.02580",
+    "https://arxiv.org/abs/1402.0067",
+    "https://arxiv.org/abs/2312.00922",
+    "https://en.wikipedia.org/wiki/Unfriendly_partition",
+    "https://arxiv.org/html/2412.14151v1"
+  ],
+  "notes": "The Bruhn-Diestel-Georgakopoulos-Sprüssel (2010) paper on rayless graphs and the Berger (2017) paper on graphs without a subdivision of an infinite clique are both cited in verified sources as important post-2007 partial results, but their direct URLs could not be individually fetched and confirmed in this review, so they are not listed in since_posted. The published journal version of the line graphs paper (Combinatorica 45, 2025, DOI 10.1007/s00493-024-00131-1) was inaccessible via Springer; the arXiv preprint (2312.00922) was verified instead. The December 2024 paper (2412.14151) explicitly states the problem remains open for countable graphs that do admit alternating rays.",
+  "slug": "unfriendly_partitions",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 05)",
+  "search_enabled": true
+}

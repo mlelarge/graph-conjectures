@@ -1,0 +1,32 @@
+{
+  "status": "solved",
+  "confidence": "high",
+  "summary": "The question was answered affirmatively by DeVos, Mohar, and Šámal (arXiv 2011, Combinatorica 2014), who explicitly constructed a locally finite highly arc-transitive digraph with universal reachability relation (a single equivalence class), thereby resolving the open problem of Cameron, Praeger, and Wormald. Their paper also disproves a second conjecture from the same 1993 article by producing 2-ended highly arc-transitive digraphs whose 'building blocks' are finite bipartite graphs that are not disjoint unions of complete bipartite graphs. Earlier work (Malnic et al., 2005) had established that any such universal locally finite example must have $d^+ = d^-$ equal to a composite number, consistent with the construction.",
+  "since_posted": [
+    {
+      "title": "Highly arc-transitive digraphs -- counterexamples and structure",
+      "authors": "Matt DeVos, Bojan Mohar, Robert Šámal",
+      "year": 2014,
+      "venue": "Combinatorica",
+      "url": "https://arxiv.org/abs/1110.2945",
+      "doi": "10.1007/s00493-014-3040-4",
+      "arxiv_id": "1110.2945",
+      "kind": "proof",
+      "claim": "Constructs a locally finite highly arc-transitive digraph with universal reachability relation, resolving the Cameron-Praeger-Wormald open problem; also disproves a second conjecture from the same 1993 paper on the structure of 2-ended highly arc-transitive digraphs."
+    }
+  ],
+  "search_queries": [
+    "universal highly arc transitive digraph locally finite",
+    "highly arc transitive digraph universal composite indegree outdegree equal",
+    "Malnic Marusic Moller Seifter arc transitive digraph universal 2008 2009 2010",
+    "arc transitive digraph homomorphism universal Cameron Praeger Wormald conjecture"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/1110.2945"
+  ],
+  "notes": "The Springer journal page for the Combinatorica article (10.1007/s00493-014-3040-4) returned an authentication redirect and could not be fetched directly; the arXiv abstract page was successfully verified and confirms all key claims. The year 2014 for Combinatorica is inferred from the DOI path segment 's00493-014'. A second paper (Möller, Potočnik, Seifter, arXiv:1811.02995, 2018) on two-ended highly arc-transitive digraphs with prime valency is relevant background but does not change the solved status.",
+  "slug": "universal_highly_arc_transitive_digraphs",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 01)",
+  "search_enabled": true
+}

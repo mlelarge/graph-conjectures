@@ -1,0 +1,60 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The conjecture that every graph $G$ with $\\chi(G) \\ge t$ immerses $K_t$ remains open in full generality. Post-posting, DeVos–Kawarabayashi–Mohar–Okamura (2010) confirmed it for $t \\le 7$ via the stronger fact that minimum degree $t-1$ suffices; Gauthier–Le–Wollan (2017) showed chromatic number at least $3.54t+4$ guarantees a $K_t$-immersion; and Fox–Pach–Suk (2025) proved the conjecture for graphs on at most $(1.64-o(1))t$ vertices.",
+  "since_posted": [
+    {
+      "title": "Immersing small complete graphs",
+      "authors": "Matt DeVos, Ken-ichi Kawarabayashi, Bojan Mohar, Haruko Okamura",
+      "year": 2010,
+      "venue": "Ars Mathematica Contemporanea",
+      "url": "https://amc-journal.eu/index.php/amc/article/view/112",
+      "doi": null,
+      "arxiv_id": null,
+      "kind": "partial",
+      "claim": "Proves the conjecture for $t \\le 7$ via the stronger result that every graph with minimum degree $t-1$ immerses $K_t$."
+    },
+    {
+      "title": "Forcing clique immersions through chromatic number",
+      "authors": "Gregory Gauthier, Tien-Nam Le, Paul Wollan",
+      "year": 2017,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/1703.08235",
+      "doi": null,
+      "arxiv_id": "1703.08235",
+      "kind": "partial",
+      "claim": "Shows that every graph with chromatic number at least $3.54t+4$ immerses $K_t$, a linear sufficient condition weaker than the conjectured threshold of $t$."
+    },
+    {
+      "title": "Immersions and Albertson's conjecture",
+      "authors": "Jacob Fox, Janos Pach, Andrew Suk",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2510.05893",
+      "doi": null,
+      "arxiv_id": "2510.05893",
+      "kind": "partial",
+      "claim": "Proves the Abu-Khzam–Langston/Lescure–Meyniel conjecture for graphs on at most $(1.64-o(1))k$ vertices, where $k$ is the chromatic number."
+    }
+  ],
+  "search_queries": [
+    "chromatic number immersion complete graph conjecture Abu-Khzam Langston",
+    "graph immersion conjecture chi(G) Kt complete graph proof 2010 2020 2025",
+    "DeVos Kawarabayashi Mohar Okamura immersion coloring graph",
+    "immersion conjecture chromatic number Kt solved proved arXiv 2015 2020 2024 2025"
+  ],
+  "verified_urls": [
+    "https://amc-journal.eu/index.php/amc/article/view/112",
+    "https://arxiv.org/abs/1703.08235",
+    "https://arxiv.org/abs/1907.01720",
+    "https://arxiv.org/abs/2105.05724",
+    "https://arxiv.org/abs/2510.05893",
+    "https://arxiv.org/abs/2605.04022"
+  ],
+  "notes": "The conjecture was independently formulated by Lescure and Meyniel in 1989, predating Abu-Khzam–Langston. No journal publication was located for the Gauthier–Le–Wollan arXiv preprint (1703.08235). The Fox–Pach–Suk (2025) paper targets Albertson's crossing-number conjecture but proves the immersion conjecture as an intermediate result for graphs with at most $(1.64-o(1))k$ vertices; it is an arXiv preprint as of the review date. The conjecture itself remains fully open for all $t$.",
+  "slug": "coloring_and_immersion",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "elapsed_seconds": 151.6
+}

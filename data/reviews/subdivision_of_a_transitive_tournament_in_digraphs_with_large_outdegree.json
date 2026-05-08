@@ -1,0 +1,56 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Mader's conjecture remains open in full generality — even the existence of $f(5)$ is unknown as of the most recent sources found. Meaningful partial progress has been made: Lochet (2017) proved the immersion analogue of the conjecture (immersion being a weaker embedding notion than subdivision), and Aboulker et al. (2019) proved the conjecture for special sub-structures (oriented paths, in-arborescences) and connected it to the dichromatic number. Kim, Lee, and Seo (2022) established Ramsey-type bounds $O(k^2 \\log\\log k)$ for 1-subdivisions of transitive tournaments inside arbitrary tournaments.",
+  "since_posted": [
+    {
+      "title": "Subdivisions in Digraphs of Large Out-Degree or Large Dichromatic Number",
+      "authors": "Pierre Aboulker, Nathann Cohen, Frédéric Havet, William Lochet, Phablo F. S. Moura, Stéphan Thomassé",
+      "year": 2019,
+      "venue": "The Electronic Journal of Combinatorics",
+      "url": "https://www.combinatorics.org/ojs/index.php/eljc/article/view/v26i3p19",
+      "doi": null,
+      "arxiv_id": "1610.00876",
+      "kind": "partial",
+      "claim": "Proves Mader's conjecture for special cases including oriented paths and in-arborescences, and shows digraphs with dichromatic number greater than $4^m(n-1)$ contain every $n$-vertex $m$-arc digraph as a subdivision; the general conjecture remains open with $f(5)$ still unknown."
+    },
+    {
+      "title": "Immersion of transitive tournaments in digraphs with large minimum outdegree",
+      "authors": "William Lochet",
+      "year": 2017,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/1710.11482",
+      "doi": null,
+      "arxiv_id": "1710.11482",
+      "kind": "partial",
+      "claim": "Proves the immersion analogue of Mader's conjecture: every simple digraph with minimum outdegree greater than $h(k)$ contains an immersion of the transitive tournament on $k$ vertices, resolving a conjecture of DeVos–McDonald–Mohar–Scheide."
+    },
+    {
+      "title": "On 1-subdivisions of transitive tournaments",
+      "authors": "Jaehoon Kim, Hyunwoo Lee, Jaehyeon Seo",
+      "year": 2022,
+      "venue": "The Electronic Journal of Combinatorics",
+      "url": "https://arxiv.org/abs/2110.05002",
+      "doi": null,
+      "arxiv_id": "2110.05002",
+      "kind": "partial",
+      "claim": "Proves the oriented Ramsey number for the 1-subdivision of the $k$-vertex transitive tournament is $O(k^2 \\log\\log k)$, tight up to the logarithmic factor, and gives structural results for tournaments with bounded outdegree variation; applies to tournaments, not general digraphs."
+    }
+  ],
+  "search_queries": [
+    "Mader conjecture subdivision transitive tournament digraph minimum outdegree",
+    "transitive tournament subdivision digraph outdegree f(k) conjecture progress arXiv",
+    "Mader conjecture f(5) transitive tournament subdivision solved 2020 2021 2022 2023 2024 2025"
+  ],
+  "verified_urls": [
+    "https://www.combinatorics.org/ojs/index.php/eljc/article/view/v26i3p19",
+    "https://arxiv.org/abs/1610.00876",
+    "https://arxiv.org/abs/1710.11482",
+    "https://arxiv.org/abs/2110.05002"
+  ],
+  "notes": "The Lochet immersion paper (arXiv:1710.11482, 2017) resolves a related but weaker conjecture; its journal publication status was not fully confirmed but its content and authorship were verified. The Kim–Lee–Seo result applies to 1-subdivisions inside tournaments (not general digraphs with large minimum outdegree), so it does not directly resolve Mader's conjecture. No paper was found proving f(5) exists or resolving the general Mader conjecture. A 2023 survey (arXiv:2306.02364) was found but did not address this specific conjecture in its accessible content.",
+  "slug": "subdivision_of_a_transitive_tournament_in_digraphs_with_large_outdegree",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 02)",
+  "search_enabled": true
+}

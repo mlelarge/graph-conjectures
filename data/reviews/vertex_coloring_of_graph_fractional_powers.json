@@ -1,0 +1,33 @@
+{
+  "status": "disproved",
+  "confidence": "medium",
+  "summary": "Hartke, Liu, and Petříčková (2012) disproved the conjecture by constructing a graph $H$ for which $\\chi(H^{3/5}) > \\omega(H^{3/5})$ (taking $m=3$, $n=5$ satisfies $n > m$). They also showed the conjecture holds when $m$ is even, and established the weaker bound $\\chi(G^{m/n}) \\leq \\omega(G^{m/n}) + 2$ for odd $m$ and $\\Delta(G) \\geq 4$.",
+  "since_posted": [
+    {
+      "title": "On coloring of fractional powers of graphs",
+      "authors": "Stephen Hartke, Hong Liu, Šárka Petříčková",
+      "year": 2012,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/pdf/1212.3898",
+      "doi": null,
+      "arxiv_id": "1212.3898",
+      "kind": "counterexample",
+      "claim": "Disproves the conjecture by exhibiting a graph H with χ(H^{3/5}) > ω(H^{3/5}); also proves the conjecture holds when m is even and gives χ(G^{m/n}) ≤ ω(G^{m/n}) + 2 for odd m and Δ(G) ≥ 4."
+    }
+  ],
+  "search_queries": [
+    "Iradmusa \"fractional power\" graph chromatic number conjecture",
+    "chromatic number fractional power graph \"G^{m/n}\" clique number conjecture",
+    "graph fractional power coloring subdivision power chromatic clique",
+    "Iradmusa \"On colorings of graph fractional powers\" follow-up results"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/1212.3898",
+    "https://arxiv.org/pdf/1212.3898"
+  ],
+  "notes": "The Hartke–Liu–Petříčková PDF directly verifies the conjecture statement and the counterexample $\\chi(H^{3/5})>\\omega(H^{3/5})$. The result appears to exist only as an arXiv preprint (1212.3898; submitted December 2012, PDF timestamp November 2018); no journal publication was found, which lowers confidence to medium. Additional follow-up papers were found in search results — 'Coloring 3-power of 3-subdivision of subcubic graph' (WorldScientific, 2018) and 'A Short Proof of 7-Colorability of 3/3-Power of Subcubic Graphs' (Springer, 2020) — but these address the case n = m (outside the conjecture's scope n > m). An Opuscula Mathematica 2023 paper on incidence coloring of fractional powers cites the Hartke-Liu-Petříčková arXiv preprint and a 2025 Indonesian Journal of Combinatorics paper explicitly mentions their counterexample.",
+  "slug": "vertex_coloring_of_graph_fractional_powers",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 04)",
+  "search_enabled": true
+}

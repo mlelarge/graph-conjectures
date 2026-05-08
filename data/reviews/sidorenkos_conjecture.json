@@ -1,0 +1,59 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Sidorenko's conjecture remains open in full generality for all bipartite graphs. Since the OPG posting, the key referenced paper by Conlon and Lee was formally published in *Discrete Analysis* (2021), proving that every bipartite graph $H$ has some blow-up satisfying the conjecture. Im, Li, and Liu (2024) further extended known cases to graphs obtained by replacing edges of a complete graph with generalized theta graphs. The conjecture is still open for many specific bipartite graphs, including $K_{5,5}$ minus a perfect matching.",
+  "since_posted": [
+    {
+      "title": "Sidorenko's conjecture for blow-ups",
+      "authors": "David Conlon, Joonkyung Lee",
+      "year": 2021,
+      "venue": "Discrete Analysis",
+      "url": "https://discreteanalysisjournal.com/article/21472-sidorenko-s-conjecture-for-blow-ups",
+      "doi": "10.19086/da.21472",
+      "arxiv_id": "1809.01259",
+      "kind": "partial",
+      "claim": "For every bipartite graph H there exists a positive integer p such that the p-blow-up of H satisfies Sidorenko's conjecture; also proves the conjecture for all bipartite graphs whose degree sequence satisfies a certain divisibility condition."
+    },
+    {
+      "title": "Sidorenko's conjecture for subdivisions and theta substitutions",
+      "authors": "Seonghyuk Im, Ruonan Li, Hong Liu",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2408.03491",
+      "doi": null,
+      "arxiv_id": "2408.03491",
+      "kind": "partial",
+      "claim": "Proves Sidorenko's conjecture for bipartite graphs obtained by replacing each edge of a complete graph with a generalized theta graph (with divisibility conditions), extending earlier subdivision results by Conlon, Kim, Lee, and Lee."
+    },
+    {
+      "title": "Extremal numbers and Sidorenko's conjecture",
+      "authors": "David Conlon, Joonkyung Lee, Alexander Sidorenko",
+      "year": 2023,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2307.04588",
+      "doi": null,
+      "arxiv_id": "2307.04588",
+      "kind": "reduction",
+      "claim": "Shows that failures of Sidorenko's conjecture for uniform hypergraphs yield improved lower bounds on extremal numbers; identifies new hypergraph counterexamples to the conjecture."
+    }
+  ],
+  "search_queries": [
+    "Sidorenko's conjecture recent progress 2020 2021 2022 2023 2024 bipartite graph homomorphism density",
+    "Sidorenko conjecture proved solved new cases arXiv 2020 2021 2022 2023 2024 2025",
+    "Conlon Lee \"Sidorenko's conjecture for blow-ups\" arXiv",
+    "Sidorenko conjecture \"common graphs\" \"weakly norming\" bipartite forcing 2021 2022 2023 2024"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/1809.01259",
+    "https://discreteanalysisjournal.com/article/21472-sidorenko-s-conjecture-for-blow-ups",
+    "https://arxiv.org/abs/2408.03491",
+    "https://arxiv.org/abs/2307.04588",
+    "https://en.wikipedia.org/wiki/Sidorenko%27s_conjecture",
+    "https://arxiv.org/abs/2512.11222"
+  ],
+  "notes": "The Conlon–Lee blow-ups paper (arXiv:1809.01259) was already circulating as a preprint from September 2018 and explicitly cited in the OPG entry as [CL] 'submitted'; the journal publication in Discrete Analysis (March 30, 2021) postdates the OPG posting. The Conlon–Lee–Sidorenko 2023 paper focuses on hypergraph analogs where the conjecture fails and resulting extremal number consequences; it is listed as 'reduction' rather than a partial result for the bipartite graph case. A 2025 paper (arXiv:2512.11222) on Sidorenko-type inequalities in tournaments addresses a directed analog and does not contribute to the original conjecture. The conjecture remains open for all bipartite graphs in full generality.",
+  "slug": "sidorenkos_conjecture",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 06)",
+  "search_enabled": true
+}

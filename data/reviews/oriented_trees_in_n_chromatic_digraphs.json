@@ -1,0 +1,46 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Burr's conjecture (every $(2k-2)$-chromatic digraph contains every oriented tree of order $k$) remains open in full generality. The strongest general upper bound has been improved from quadratic to subquadratic: Bessy, Gonçalves, and Reinald (2024) proved that every digraph with chromatic number $8\\sqrt{2/15}\\,k\\sqrt{k}+O(k)$ contains any oriented tree of order $k$, the first subquadratic bound. A 2024 survey by Stein provides a comprehensive review of the state of the problem.",
+  "since_posted": [
+    {
+      "title": "Oriented trees in O(k√k)-chromatic digraphs, a subquadratic bound for Burr's conjecture",
+      "authors": "Stéphane Bessy, Daniel Gonçalves, Amadeus Reinald",
+      "year": 2024,
+      "venue": "Graph-Theoretic Concepts in Computer Science (WG 2024), Springer LNCS 15153",
+      "url": "https://arxiv.org/abs/2402.19351",
+      "doi": "10.1007/978-3-031-75409-8_6",
+      "arxiv_id": "2402.19351",
+      "kind": "partial",
+      "claim": "First subquadratic bound for Burr's conjecture: every digraph with chromatic number $8\\sqrt{2/15}\\,k\\sqrt{k}+O(k)$ contains any oriented tree of order $k$; also gives improved bounds for arborescences ($\\sqrt{4/3}\\,k\\sqrt{k}+O(k)$) and paths on $b$ blocks ($(b-1)(k-3)+3$)."
+    },
+    {
+      "title": "Oriented trees and paths in digraphs",
+      "authors": "Maya Stein",
+      "year": 2024,
+      "venue": "Surveys in Combinatorics 2024, Cambridge University Press",
+      "url": "https://arxiv.org/abs/2310.18719",
+      "doi": "10.1017/9781009490559.010",
+      "arxiv_id": "2310.18719",
+      "kind": "survey",
+      "claim": "Comprehensive survey of conditions (chromatic number, edge density, minimum out-degree, semidegree) guaranteeing the presence of all oriented paths or trees of given order in a digraph, including the status of Burr's conjecture and related open problems."
+    }
+  ],
+  "search_queries": [
+    "Burr conjecture oriented trees chromatic number digraphs progress 2013-2026",
+    "oriented trees n-chromatic digraphs subdigraph conjecture arXiv",
+    "Havet oriented trees digraphs chromatic number universal arXiv 2015 2020 2024",
+    "\"oriented tree\" \"chromatic number\" digraph \"2k-2\" conjecture recent result"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2402.19351",
+    "https://arxiv.org/abs/2310.18719",
+    "https://www.cambridge.org/core/books/abs/surveys-in-combinatorics-2024/oriented-trees-and-paths-in-digraphs/8251F4EBD8EC2AB02C3F170AA234612E",
+    "https://arxiv.org/html/2512.21950"
+  ],
+  "notes": "The Springer chapter link (10.1007/978-3-031-75409-8_6) redirected to an auth wall and could not be fetched directly; venue confirmed from the arXiv abstract metadata. The 2025 Yuster paper (arXiv:2512.21950) on acyclic subgraphs of high-chromatic digraphs is tangentially related but does not directly advance Burr's conjecture. The conjecture remains fully open at the stated bound of $2k-2$.",
+  "slug": "oriented_trees_in_n_chromatic_digraphs",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 06)",
+  "search_enabled": true
+}

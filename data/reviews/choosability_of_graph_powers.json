@@ -1,0 +1,50 @@
+{
+  "status": "open",
+  "confidence": "medium",
+  "summary": "The question of whether $\\text{ch}(G^2) \\le f(\\chi(G^2))$ for some $f = o(k^2)$ remains open. Shortly after the OPG posting, two independent papers (Kim–Kwon–Park and Kosar–Petrickova–Reiniger–Yeager) confirmed that Zhu's related conjecture fails for all powers $k \\ge 2$ and that the logarithmic lower bound $\\text{ch}(G^k) \\ge c\\,\\chi(G^k)\\log\\chi(G^k)$ extends to every $k$; KPRY also established $\\text{ch}(G^k) < \\chi(G^k)^3$ for $k > 1$, but no subquadratic improvement over the quadratic upper bound $\\text{ch}(G^2) \\le \\chi(G^2)^2$ has been established for squares.",
+  "since_posted": [
+    {
+      "title": "Chromatic-choosability of the power of graphs",
+      "authors": "Seog-Jin Kim, Young Soo Kwon, Boram Park",
+      "year": 2013,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/1309.0888",
+      "doi": null,
+      "arxiv_id": "1309.0888",
+      "kind": "partial",
+      "claim": "Independently disproves Zhu's conjecture by showing that for every integer $k \\ge 2$ there exists a graph $G$ such that $G^k$ is not chromatic-choosable and the gap $\\chi_\\ell(G^k)-\\chi(G^k)$ can be arbitrarily large."
+    },
+    {
+      "title": "A note on list-coloring powers of graphs",
+      "authors": "Nicholas Kosar, Sarka Petrickova, Benjamin Reiniger, Elyse Yeager",
+      "year": 2013,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/1309.7705",
+      "doi": null,
+      "arxiv_id": "1309.7705",
+      "kind": "partial",
+      "claim": "Extends the logarithmic lower bound to all powers ($\\text{ch}(G^k) \\ge c\\,\\chi(G^k)\\log\\chi(G^k)$ for all $k \\ge 2$) and proves the upper bound $\\text{ch}(G^k) < \\chi(G^k)^3$ for $k > 1$, but does not yield a subquadratic upper bound for squares."
+    }
+  ],
+  "search_queries": [
+    "choosability graph square power chromatic number list coloring o(k^2) Noel",
+    "Kim Park counterexample list square coloring conjecture Kostochka Woodall",
+    "Kosar Petrickova Reiniger Yeager list-coloring powers graphs choosability",
+    "list coloring graph square ch(G^2) upper bound chromatic number 2020 2021 2022 2023 2024",
+    "choosability graph power square subquadratic bound list chromatic arxiv 2018 2019 2020 2021 2022 2023 2024 2025",
+    "Jonathan Noel choosability graph power list coloring 2015 2016 2017 2018 2019 2020 arxiv"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2211.00622",
+    "https://arxiv.org/abs/1309.7705",
+    "https://arxiv.org/abs/1309.0888",
+    "https://arxiv.org/abs/1305.2566",
+    "https://arxiv.org/abs/2505.05662"
+  ],
+  "notes": "The Kim–Park arXiv preprint (1305.2566) was submitted May 12 2013, before the OPG posting of July 13 2013, so it is not counted as a post-posting result even though its journal publication (J. Graph Theory, 2015) is later. Both the KKP and KPRY papers appear in the OPG bibliography, indicating the OPG page was updated after initial posting to incorporate them. Six searches were conducted with no evidence of a paper proving a subquadratic upper bound for $\\text{ch}(G^2)$; the problem thus appears genuinely open. The 2022 Hasanvand paper (arXiv:2211.00622) addresses the planar/bipartite versions of the List Square Coloring Conjecture but does not establish any bound of the form $\\text{ch}(G^2) \\le f(\\chi(G^2))$ with $f = o(k^2)$.",
+  "slug": "choosability_of_graph_powers",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "elapsed_seconds": 268.8
+}

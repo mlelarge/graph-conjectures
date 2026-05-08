@@ -1,0 +1,27 @@
+{
+  "status": "open",
+  "confidence": "medium",
+  "summary": "The problem asks whether the circular chromatic number of the orthogonality graph $\\mathcal{O}$ (vertices = lines through the origin in $\\mathbb{R}^3$, edges = orthogonal pairs) equals 4. The bounds $3.5 \\le \\chi_c(\\mathcal{O}) \\le 4$ established by DeVos, Ghebleh, Goddyn, Mohar, and Naserasr remain the state of the art; no subsequent paper improving either bound was found in any of the searched sources.",
+  "since_posted": [],
+  "search_queries": [
+    "circular chromatic number orthogonality graph chi_c DeVos Ghebleh Goddyn Mohar Naserasr",
+    "circular coloring orthogonality graph 3-sphere Kneser coloring",
+    "\"orthogonality graph\" \"circular chromatic\" OR \"circular coloring\" lines R3 quantum Kochen Specker",
+    "DeVos Ghebleh Goddyn Mohar Naserasr \"circular coloring\" orthogonality arXiv",
+    "\"coloring an orthogonality graph\" SIAM discrete mathematics DeVos Ghebleh Goddyn Mohar Naserasr 2006 2007 2008",
+    "Naserasr \"orthogonality graph\" circular chromatic 2009 2010 2011 2012 2015 2020 progress"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2512.01195",
+    "https://en.wikipedia.org/wiki/Circular_coloring",
+    "https://dblp.org/pid/86/3606.html",
+    "https://www.sfu.ca/~mohar/Bibsci3.html",
+    "https://dblp.uni-trier.de/db/journals/siamdm/siamdm21.html"
+  ],
+  "notes": "The SIAM Journal paper 'Coloring an Orthogonality Graph' (DOI: 10.1137/050639715) appears to be the source of the lower bound χ_c(O) ≥ 3.5, but the SIAM server returned HTTP 403 on both direct and DOI-redirect fetches, so its full content could not be verified. An arXiv full-text search for 'circular chromatic orthogonality graph' returned zero results. Naserasr's DBLP bibliography (post-2008) contains no paper on this specific problem. The 2025 arXiv paper (2512.01195) on 'Quantum Chromatic Number of Subgraphs of Orthogonality Graphs' concerns quantum chromatic number, not circular chromatic number, and is thus unrelated. The problem remains open as of the search date.",
+  "slug": "circular_colouring_the_orthogonality_graph",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "elapsed_seconds": 167.8
+}

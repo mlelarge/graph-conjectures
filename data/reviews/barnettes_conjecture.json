@@ -1,0 +1,83 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Barnette's conjecture—that every 3-connected cubic planar bipartite graph is Hamiltonian—remains open. Since the OPG posting date, several partial results have been established: Bagheri et al. (2021) proved Hamiltonicity for the leapfrog extension of any cyclically 4-edge-connected bipartite cubic planar graph; Gorsky et al. (2022) reformulated the conjecture via matching theory, reducing it to cubic planar braces; Florek (2023) found a sufficient neighborhood condition on big faces; Schnieders (2025) proved every Barnette graph with all faces of size at most 8 is Hamiltonian; and Bekos et al. (2025) showed every $n$-vertex Barnette graph contains a subhamiltonian cycle using at least $5n/6$ edges.",
+  "since_posted": [
+    {
+      "title": "Hamiltonian cycles in planar cubic graphs with facial 2‐factors, and a new partial solution of Barnette's Conjecture",
+      "authors": "Behrooz Bagheri Gh, Tomas Feder, Herbert Fleischner, Carlos Subi",
+      "year": 2021,
+      "venue": "Journal of Graph Theory",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7754535/",
+      "doi": "10.1002/jgt.22612",
+      "arxiv_id": null,
+      "kind": "partial",
+      "claim": "Proves that the leapfrog extension of any cyclically 4-edge-connected bipartite cubic planar graph is Hamiltonian, extending Goodey's earlier result and providing new best partial solutions to Barnette's conjecture."
+    },
+    {
+      "title": "Matching Theory and Barnette's Conjecture",
+      "authors": "Maximilian Gorsky, Raphael Steiner, Sebastian Wiederrecht",
+      "year": 2022,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2202.11641",
+      "doi": null,
+      "arxiv_id": "2202.11641",
+      "kind": "reduction",
+      "claim": "Translates Barnette's conjecture into matching-theoretic terms and reduces it to the equivalent statement that all cubic 3-connected planar bipartite braces are Hamiltonian, relaxing planarity to Pfaffianness for a broader reformulation."
+    },
+    {
+      "title": "A sufficient condition for cubic 3-connected plane bipartite graphs to be hamiltonian",
+      "authors": "Jan Florek",
+      "year": 2023,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2309.09578",
+      "doi": null,
+      "arxiv_id": "2309.09578",
+      "kind": "partial",
+      "claim": "Proves Hamiltonicity when no face has more than four neighboring big faces (faces with at least 6 edges), and shows such graphs contain exponentially many Hamilton cycles; extends Goodey's result."
+    },
+    {
+      "title": "Barnette Graphs with Faces up to Size 8 are Hamiltonian",
+      "authors": "Tobias Schnieders",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2508.03531",
+      "doi": null,
+      "arxiv_id": "2508.03531",
+      "kind": "partial",
+      "claim": "Proves that every cubic bipartite planar 3-connected graph whose faces all have size at most 8 is Hamiltonian, substantially strengthening Goodey's classical result (faces of size at most 6)."
+    },
+    {
+      "title": "Approximating Barnette's Conjecture",
+      "authors": "Michael A. Bekos, Michael Kaufmann, Maximilian Pfister",
+      "year": 2025,
+      "venue": "33rd International Symposium on Graph Drawing and Network Visualization (GD 2025), LIPIcs",
+      "url": "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.GD.2025.6",
+      "doi": "10.4230/LIPIcs.GD.2025.6",
+      "arxiv_id": null,
+      "kind": "partial",
+      "claim": "Shows every $n$-vertex Barnette graph admits a subhamiltonian cycle containing at least $5n/6$ edges, improving the previously known bound of $2n/3$."
+    }
+  ],
+  "search_queries": [
+    "Barnette's conjecture Hamiltonian cubic planar bipartite graph 2007 2025",
+    "Barnette conjecture 3-connected cubic planar bipartite Hamiltonian cycle recent progress",
+    "Barnette conjecture cubic planar bipartite Hamiltonian arXiv 2022 2023 2024 2025",
+    "\"Barnette's conjecture\" solved proved disproved 2023 2024 2025 2026"
+  ],
+  "verified_urls": [
+    "https://en.wikipedia.org/wiki/Barnette%27s_conjecture",
+    "https://arxiv.org/abs/2202.11641",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC7754535/",
+    "https://www.hillpublisher.com/ArticleDetails/1949",
+    "https://arxiv.org/abs/2508.03531",
+    "https://arxiv.org/abs/2309.09578",
+    "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.GD.2025.6"
+  ],
+  "notes": "The ScienceDirect page for Florek (2010) 'On Barnette's conjecture' (Discrete Mathematics) returned HTTP 403 and could not be verified; it was excluded despite being post-2007. The arXiv PDF for Gorsky et al. (2202.11641) returned binary data; the abstract page was used instead. No journal publication venue for Gorsky et al. could be confirmed. The Wikipedia article also mentions Alt et al. (2016) as establishing partial results via dual-graph coloring conditions, but this paper was not independently verified via WebFetch and is therefore excluded. The related Barnette conjecture about faces of sizes 3–6 was fully proved by Kardoš (2020), but that is a distinct conjecture.",
+  "slug": "barnettes_conjecture",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "elapsed_seconds": 1315.0
+}

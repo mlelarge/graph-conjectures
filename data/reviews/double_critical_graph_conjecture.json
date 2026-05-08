@@ -1,0 +1,81 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The conjecture that $K_n$ is the only $n$-chromatic double-critical graph remains open for $n \\geq 6$ in general. Substantial partial progress has been made since the OPG posting: the conjecture is now verified for claw-free graphs with chromatic number $t \\leq 8$, and every double-critical $t$-chromatic graph is known to contain a $K_t$ minor for all $t \\leq 9$.",
+  "since_posted": [
+    {
+      "title": "Double-Critical Graphs and Complete Minors",
+      "authors": "Ken-ichi Kawarabayashi, Anders Sune Pedersen, Bjarne Toft",
+      "year": 2010,
+      "venue": "Electronic Journal of Combinatorics",
+      "url": "https://www.combinatorics.org/ojs/index.php/eljc/article/view/v17i1r87",
+      "doi": "10.37236/359",
+      "arxiv_id": "0810.3133",
+      "kind": "partial",
+      "claim": "Proves that for $k=6$ and $k=7$, any non-complete double-critical $k$-chromatic graph is 6-connected and contains $K_k$ as a minor."
+    },
+    {
+      "title": "Complete and almost complete minors in double-critical 8-chromatic graphs",
+      "authors": "Anders Sune Pedersen",
+      "year": 2010,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/1007.5400",
+      "doi": null,
+      "arxiv_id": "1007.5400",
+      "kind": "partial",
+      "claim": "Proves every double-critical 8-chromatic graph contains a $K_8^-$ minor, and a full $K_8$ minor when the minimum degree is not 10 or 11."
+    },
+    {
+      "title": "A note on the double-critical graph conjecture",
+      "authors": "Hao Huang, Alexander Yu",
+      "year": 2016,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/1604.05262",
+      "doi": null,
+      "arxiv_id": "1604.05262",
+      "kind": "partial",
+      "claim": "Proves the conjecture for claw-free double-critical graphs of chromatic number 6."
+    },
+    {
+      "title": "Clique Minors in Double-critical Graphs",
+      "authors": "Martin Rolek, Zi-Xia Song",
+      "year": 2016,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/1603.06964",
+      "doi": null,
+      "arxiv_id": "1603.06964",
+      "kind": "partial",
+      "claim": "Proves every double-critical $t$-chromatic graph contains a $K_t$ minor for all $t \\leq 9$."
+    },
+    {
+      "title": "Double-critical graph conjecture for claw-free graphs",
+      "authors": "Martin Rolek, Zi-Xia Song",
+      "year": 2016,
+      "venue": "Discrete Mathematics",
+      "url": "https://arxiv.org/abs/1610.00636",
+      "doi": null,
+      "arxiv_id": "1610.00636",
+      "kind": "partial",
+      "claim": "Proves the Erdős–Lovász conjecture for claw-free double-critical graphs of chromatic number $t \\leq 8$."
+    }
+  ],
+  "search_queries": [
+    "double-critical graph conjecture chromatic number Erdos Lovasz progress",
+    "double critical graph conjecture 6-chromatic solved arXiv",
+    "\"double-critical\" graph conjecture chromatic recent proof 2010 2020 2025",
+    "\"on the double-critical graph conjecture\" universal vertex arXiv 2022"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/1610.00636",
+    "https://arxiv.org/abs/1604.05262",
+    "https://arxiv.org/abs/0810.3133",
+    "https://www.combinatorics.org/ojs/index.php/eljc/article/view/v17i1r87",
+    "https://arxiv.org/abs/1603.06964",
+    "https://arxiv.org/abs/1007.5400"
+  ],
+  "notes": "A ResearchGate page (publication ID 362648627) titled 'On the double-critical graph conjecture' was inaccessible (HTTP 403); a search snippet suggested it might contain a complete proof via a universal-vertex argument, but this could not be verified and the paper is not cited. The arXiv preprint 0810.3133 was submitted in October 2008 (before the OPG posting date) but published in EJC in June 2010; it is included with year 2010. arXiv:1603.06964 was verified as submitted in 2016 but revised in 2017; year listed as 2016. The ScienceDirect page for arXiv:1610.00636 (Discrete Math., 2017) was not fetched; the arXiv URL is used instead.",
+  "slug": "double_critical_graph_conjecture",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 06)",
+  "search_enabled": true
+}

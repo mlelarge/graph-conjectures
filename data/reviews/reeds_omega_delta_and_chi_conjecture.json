@@ -1,0 +1,81 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Reed's conjecture $\\chi(G) \\le \\lceil \\tfrac{1}{2}(\\Delta(G)+1+\\omega(G)) \\rceil$ remains open for general graphs. Since the 2007 OPG posting, it has been established for quasi-line graphs and further structural classes, and the quantitative 'epsilon version' $\\chi(G) \\le (1-\\varepsilon)(\\Delta+1) + \\varepsilon\\,\\omega$ has been progressively strengthened from $\\varepsilon \\approx 1/130{,}000$ to $\\varepsilon = 1/26$ and reportedly further to $\\varepsilon \\approx 0.119$.",
+  "since_posted": [
+    {
+      "title": "A local strengthening of Reed's ω, Δ, χ conjecture for quasi-line graphs",
+      "authors": "Maria Chudnovsky, Andrew D. King, Matthieu Plumettaz, Paul Seymour",
+      "year": 2011,
+      "venue": "SIAM Journal on Discrete Mathematics",
+      "url": "https://arxiv.org/abs/1109.2112",
+      "doi": null,
+      "arxiv_id": "1109.2112",
+      "kind": "partial",
+      "claim": "Proves a local strengthening of Reed's conjecture for all quasi-line graphs (including line graphs), along with polytime colouring algorithms."
+    },
+    {
+      "title": "A note on Reed's Conjecture about ω, Δ and χ with respect to vertices of high degree",
+      "authors": "Vera Weil",
+      "year": 2016,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/1611.02063",
+      "doi": null,
+      "arxiv_id": "1611.02063",
+      "kind": "partial",
+      "claim": "Proves Reed's conjecture for graphs in which all vertices of degree ≥ 5 form a stable set, and for graphs in which every odd induced cycle contains a vertex of degree ≤ 3."
+    },
+    {
+      "title": "Colouring Graphs with Sparse Neighbourhoods: Bounds and Applications",
+      "authors": "Marthe Bonamy, Thomas Perrett, Luke Postle",
+      "year": 2018,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/1810.06704",
+      "doi": null,
+      "arxiv_id": "1810.06704",
+      "kind": "partial",
+      "claim": "Dramatically improves Reed's epsilon theorem by showing the bound χ(G) ≤ (1−ε)(Δ+1) + ε·ω holds for large Δ with ε = 1/26, up from the prior ε ≈ 1/130,000."
+    },
+    {
+      "title": "A local epsilon version of Reed's Conjecture",
+      "authors": "Tom Kelly, Luke Postle",
+      "year": 2019,
+      "venue": "Journal of Combinatorial Theory, Series B",
+      "url": "https://arxiv.org/abs/1911.02672",
+      "doi": null,
+      "arxiv_id": "1911.02672",
+      "kind": "partial",
+      "claim": "Proves a local list-colouring epsilon version of Reed's conjecture, establishing the bound under mild local density conditions."
+    },
+    {
+      "title": "A Recolouring Version of a Conjecture of Reed",
+      "authors": "Lucas De Meyer, Clément Legrand-Duchesne, Jared León, Tim Planken, Youri Tamitegama",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2502.10147",
+      "doi": null,
+      "arxiv_id": "2502.10147",
+      "kind": "partial",
+      "claim": "Studies a Kempe-recolouring variant of Reed's conjecture; proves the analogous bound with ε = 1/2 is achievable for odd-hole-free graphs (and tight up to one colour)."
+    }
+  ],
+  "search_queries": [
+    "Reed's conjecture chi omega Delta graph coloring progress proof 2010 2020 2025",
+    "Reed conjecture chromatic number clique number maximum degree partial results survey arXiv",
+    "Reed conjecture \"epsilon\" \"locally sparse\" chromatic number Bonamy Delcourt Postle Hurley 2020 2021 2022 2023 2024"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/1109.2112",
+    "https://arxiv.org/abs/1611.02063",
+    "https://arxiv.org/abs/1810.06704",
+    "https://arxiv.org/abs/1911.02672",
+    "https://arxiv.org/abs/2502.10147",
+    "https://arxiv.org/abs/2402.19271",
+    "https://arxiv.org/abs/2407.05827"
+  ],
+  "notes": "The conjecture remains open for general graphs. An important unverified result: Hurley, de Verclos, and Kang (SODA 2021) reportedly improved the epsilon to ε ≈ 0.119 ('An improved procedure for colouring graphs of bounded local density'), but this paper was not fetched within the query budget and cannot be cited. The digraph analogue by Kawarabayashi–Picasarri-Arrieta (arXiv 2407.05827, 2024) is not included in since_posted as it concerns directed graphs. The SIAM journal publication of the Chudnovsky et al. paper (DOI 10.1137/110847585 per search results) is likely 2012–2013; only the 2011 arXiv submission was directly verified.",
+  "slug": "reeds_omega_delta_and_chi_conjecture",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 06)",
+  "search_enabled": true
+}

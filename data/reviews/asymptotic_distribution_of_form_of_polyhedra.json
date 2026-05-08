@@ -1,0 +1,30 @@
+{
+  "status": "open",
+  "confidence": "medium",
+  "summary": "The problem asks for the limiting distribution (after possible rescaling) of the form parameter $\\beta = v/(k+2)$ over all topologically inequivalent polyhedral graphs with $k$ edges as $k \\to \\infty$. No paper directly resolving or significantly advancing this problem was found in the literature post-2009. The related asymptotic enumeration literature on 3-connected planar graphs/maps has grown (Giménez–Noy 2009 on labeled planar graphs; work on random cubic planar graphs; enumeration of 3-connected bipartite maps), but none of these works addresses the specific conditional distribution of $\\beta$ given the edge count for unlabeled polyhedral graphs.",
+  "since_posted": [],
+  "search_queries": [
+    "asymptotic distribution polyhedral graphs form parameter vertices edges limit",
+    "counting polyhedra by edges asymptotic enumeration polyhedral graphs 3-connected planar",
+    "Rudinger polyhedral graphs form parameter beta distribution",
+    "random polyhedral graph random 3-connected planar graph distribution vertices faces edges limit theorem",
+    "Tutte asymptotic enumeration 3-connected planar maps triangulations vertices edges ratio distribution",
+    "Giménez Noy asymptotic enumeration planar graphs 2009 vertices edges normal distribution",
+    "polyhedral graphs random uniform distribution euler formula vertices faces edges concentration",
+    "Bodirsky Kang Löffler McDiarmid random 3-connected planar graph uniform distribution vertices edges",
+    "random 3-connected planar graph fixed edges distribution vertices normal law arXiv"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/math/0501269",
+    "https://arxiv.org/abs/0907.2326",
+    "https://arxiv.org/abs/0705.1287",
+    "https://research.utwente.nl/en/publications/the-number-of-polyhedral-3-connected-planar-graphs",
+    "http://www.numericana.com/data/polyhedra.htm"
+  ],
+  "notes": "The OPG problem page (openproblemgarden.org) was unreachable (ECONNREFUSED) during this review. The JAMS full PDF (Giménez–Noy 2009) returned HTTP 403. The specific question — the limiting distribution of $\\beta = v/(k+2)$ over unlabeled polyhedral graphs with exactly $k$ edges — sits at the intersection of combinatorial enumeration and probability theory, but no paper in the accessible literature appears to treat it. The closest body of work concerns labeled random planar or 3-connected planar graphs with $n$ vertices (where the number of edges is shown to be asymptotically normal around $\\approx 2.21n$), but fixing edges and studying the vertex count distribution for unlabeled polyhedral graphs is a distinct, apparently unstudied problem. Confidence is medium rather than high because some relevant work may exist in graph-enumeration venues (e.g., proceedings of GD, EuroComb, or German-language journals) that did not surface in English-language web searches.",
+  "slug": "asymptotic_distribution_of_form_of_polyhedra",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "elapsed_seconds": 1354.5
+}

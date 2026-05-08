@@ -1,0 +1,26 @@
+{
+  "status": "open",
+  "confidence": "medium",
+  "summary": "The conjecture that every digraph has a stable set meeting all longest directed paths remains open. The only verified partial result—Havet's 2004 proof for digraphs with stability number at most 2—predates the OPG posting, as does Fox and Sudakov's 2009 proof of the complementary Hahn-Jackson conjecture. No post-2013 papers extending the conjecture to stability number $\\geq 3$ or to the general case were found in multiple targeted searches.",
+  "since_posted": [],
+  "search_queries": [
+    "Laborde Payan Xuong conjecture stable set longest directed paths digraph",
+    "stable set meeting all longest paths digraph conjecture progress 2013 2024 2025",
+    "independent set longest directed path digraph conjecture arxiv",
+    "\"longest directed path\" \"stable set\" digraph conjecture recent result 2020 2021 2022 2023 2024 2025 2026",
+    "Havet \"stable set\" \"longest path\" digraph stability number 3 progress conjecture",
+    "\"stable set\" \"longest path\" digraph \"stability number 3\" OR \"stability number at most 3\" proof 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024",
+    "Laborde Payan Xuong conjecture solved proved disproved partial result digraph independent set path"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2402.16776",
+    "https://www.combinatorics.org/ojs/index.php/eljc/article/view/v16i1n23",
+    "https://eudml.org/doc/270216",
+    "https://arxiv.org/abs/2302.04986"
+  ],
+  "notes": "The DMGT article at dmgt.uz.zgora.pl/publish/article.php?doi=1650 appeared repeatedly in searches but was inaccessible due to SSL certificate errors. The AJC 2014 paper (ajc.maths.uq.edu.au/pdf/59/ajc_v59_p311.pdf) was a binary PDF that could not be read; it is possible this contains a partial result on this conjecture. All clearly post-2013 arXiv papers found (arXiv:2402.16776 on Thomassé's conjecture; arXiv:2302.04986 on P5-free graphs) are unrelated to the LPX conjecture. Confidence is medium rather than high due to these two inaccessible sources.",
+  "slug": "stable_set_meeting_all_longest_directed_paths",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 03)",
+  "search_enabled": true
+}

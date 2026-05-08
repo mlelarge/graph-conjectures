@@ -1,0 +1,47 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The conjecture $\\beta(G) \\le \\frac{1}{2}\\gamma(G)$ for simple digraphs with no directed cycles of length $\\le 3$ remains open. The best known general bound is $\\beta(G) \\le 0.8616\\,\\gamma(G)$, proved by Chen, Karson, Liu, and Shen, improving an earlier bound of $0.88\\gamma(G)$ due to Dunkum, Hamburger, and Pór. Fox, Keevash, and Sudakov proved the more general result that digraphs with directed girth $\\ge r \\ge 4$ satisfy $\\beta(G) \\le c\\,\\gamma(G)/r^2$ for an absolute constant $c$.",
+  "since_posted": [
+    {
+      "title": "On the Chudnovsky-Seymour-Sullivan conjecture on cycles in triangle-free digraphs",
+      "authors": "Kevin Chen, Sean Karson, Dan Liu, Jian Shen",
+      "year": 2015,
+      "venue": "Electronic Journal of Linear Algebra",
+      "url": "https://journals.uwyo.edu/index.php/ela/article/view/1467",
+      "doi": null,
+      "arxiv_id": "0909.2468",
+      "kind": "partial",
+      "claim": "Proves $\\beta(G) \\le 0.8616\\,\\gamma(G)$ for digraphs without directed triangles or digons, improving the prior best bound of $0.88\\gamma(G)$ by Dunkum, Hamburger, and Pór."
+    },
+    {
+      "title": "Directed Graphs Without Short Cycles",
+      "authors": "Jacob Fox, Peter Keevash, Benny Sudakov",
+      "year": 2010,
+      "venue": "Combinatorics, Probability and Computing",
+      "url": "https://www.cambridge.org/core/journals/combinatorics-probability-and-computing/article/abs/directed-graphs-without-short-cycles/BC5F404501397E97489DEE7C9E69A571",
+      "doi": null,
+      "arxiv_id": null,
+      "kind": "partial",
+      "claim": "Proves that digraphs with directed girth $\\ge r \\ge 4$ satisfy $\\beta(G) \\le c\\,\\gamma(G)/r^2$ for an absolute constant $c$, tight up to the constant factor; for the CSS setting ($r=4$) this gives a weaker constant than 0.8616."
+    }
+  ],
+  "search_queries": [
+    "Chudnovsky Seymour Sullivan \"feedback edge set\" digraph conjecture non-edges",
+    "beta gamma digraph \"directed cycles length 3\" feedback set conjecture triangle-free",
+    "arXiv \"cycles in dense digraphs\" Chudnovsky Seymour Sullivan progress",
+    "\"feedback arc set\" digraph \"no directed triangle\" non-edges conjecture proved 2010 2015 2020",
+    "Dunkum Hamburger Por digraph feedback arc set triangle-free 2008 2009",
+    "Chudnovsky Seymour Sullivan conjecture \"beta\" \"gamma\" digraph triangle-free 2015 2020 2021 2022 2023 2024"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/0909.2468",
+    "https://journals.uwyo.edu/index.php/ela/article/view/1467",
+    "https://www.cambridge.org/core/journals/combinatorics-probability-and-computing/article/abs/directed-graphs-without-short-cycles/BC5F404501397E97489DEE7C9E69A571"
+  ],
+  "notes": "The Dunkum-Hamburger-Pór 0.88 bound is cited as prior work in the Chen et al. arXiv preprint but no verifiable online source for that paper was found; it is therefore not listed in since_posted. No post-2015 verified paper was found that further improves the constant or resolves the conjecture.",
+  "slug": "non_edges_vs_feedback_edge_sets_in_digraphs",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 03)",
+  "search_enabled": true
+}

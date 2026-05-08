@@ -1,0 +1,23 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Editor
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Generated / cache (recoverable from sources)
+cache/
+site/
+logs/
+
+# Ephemeral worker state
+data/agent_buckets/
+data/agent_launched.txt
+data/agent_queue.txt
+data/problems/
+data/reviews/*.raw.json

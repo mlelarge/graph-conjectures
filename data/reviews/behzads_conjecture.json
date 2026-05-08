@@ -1,0 +1,71 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The Total Colouring Conjecture remains open in general. For planar graphs, all cases except $\\Delta(G)=6$ are resolved; a sequence of papers has narrowed the $\\Delta=6$ planar case by imposing forbidden-subgraph conditions. For general graphs, Dalal, McDonald, and Shan (2024) confirmed the conjecture for $r$-regular graphs with $r \\geq \\tfrac{1}{2}(1+\\varepsilon)n$ and $n$ sufficiently large, and improved Hind's 1992 general upper bound by one color. An unreviewed arXiv preprint (Murthy, 2020) claims a full proof via the Combinatorial Nullstellensatz, but this has not been accepted by the community and the conjecture is still listed as open.",
+  "since_posted": [
+    {
+      "title": "Total Colourings - A survey",
+      "authors": "Geetha Jayabalan, Narayanan N, K. Somasundaram",
+      "year": 2018,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/1812.05833",
+      "doi": null,
+      "arxiv_id": "1812.05833",
+      "kind": "survey",
+      "claim": "Comprehensive survey of total coloring results confirming that the conjecture remains open even for planar graphs as of 2018."
+    },
+    {
+      "title": "On a Sufficient Condition for Planar Graphs of Maximum Degree 6 to be Totally 7-Colorable",
+      "authors": "Enqiang Zhu, Chanjuan Liu, Yongsheng Rao",
+      "year": 2018,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/1812.00133",
+      "doi": null,
+      "arxiv_id": "1812.00133",
+      "kind": "partial",
+      "claim": "Proves that every diamond-free and house-free planar graph of maximum degree 6 satisfying certain local cycle conditions is totally 7-colorable, extending the $\\Delta=6$ planar case beyond the earlier cycle-free restriction."
+    },
+    {
+      "title": "Total coloring graphs with large maximum degree",
+      "authors": "Aseem Dalal, Jessica McDonald, Songling Shan",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/html/2405.07382",
+      "doi": null,
+      "arxiv_id": "2405.07382",
+      "kind": "partial",
+      "claim": "Proves TCC for $r$-regular graphs on $n$ vertices with $r \\geq \\tfrac{1}{2}(1+\\varepsilon)n$ and $n$ sufficiently large, and improves Hind's 1992 general upper bound by one color to $\\Delta(G)+2\\lceil|V(G)|/(\\Delta(G)+1)\\rceil$."
+    },
+    {
+      "title": "The Total Coloring Conjecture holds for planar graphs without three special subgraphs",
+      "authors": "Rongjin Su, Gang Fang, Enqiang Zhu",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2507.12737",
+      "doi": null,
+      "arxiv_id": "2507.12737",
+      "kind": "partial",
+      "claim": "Establishes TCC for planar graphs with $\\Delta=6$ that exclude the mushroom, tent, and cone subgraphs, extending the range of planar graphs for which the $\\Delta=6$ case is confirmed."
+    }
+  ],
+  "search_queries": [
+    "Behzad total colouring conjecture progress proof 2010 2020 2025",
+    "total chromatic number conjecture Delta+2 recent results survey",
+    "total coloring conjecture planar graphs Delta proved recent",
+    "total chromatic number chi'' Delta+C Molloy Reed improvement bound"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2003.09658",
+    "https://arxiv.org/html/2405.07382",
+    "https://arxiv.org/abs/1812.00133",
+    "https://arxiv.org/abs/1812.05833",
+    "https://arxiv.org/abs/2507.12737",
+    "https://en.wikipedia.org/wiki/Total_coloring"
+  ],
+  "notes": "A claimed full proof (arXiv:2003.09658, T.S. Murthy, 2020, using Combinatorial Nullstellensatz over $\\mathbb{Z}_p$) is not accepted by the community: Wikipedia still lists TCC as an open problem, the 2024 Dalal et al. paper treats it as open, and no peer-reviewed publication of the Murthy proof was found. The planar $\\Delta=6$ case is the main remaining open subcase for planar graphs; all $\\Delta\\geq 7$ planar cases are settled. The best general bound remains $\\Delta(G)+O(1)$ from Molloy–Reed (1998).",
+  "slug": "behzads_conjecture",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "elapsed_seconds": 111.3
+}

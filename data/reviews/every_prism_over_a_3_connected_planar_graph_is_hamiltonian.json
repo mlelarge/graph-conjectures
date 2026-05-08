@@ -1,0 +1,45 @@
+{
+  "slug": "every_prism_over_a_3_connected_planar_graph_is_hamiltonian",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet (subagent)",
+  "search_enabled": true,
+  "status": "disproved",
+  "confidence": "high",
+  "summary": "The conjecture was disproved by Simon Špacapan, who constructed a 3-connected planar graph whose prism over $K_2$ is not Hamiltonian (arXiv 2019; published in J. Combin. Theory Ser. B, 2021). Subsequent work by Špacapan (J. Graph Theory, 2024) shows that any counterexample must contain cubic vertices: every 3-connected planar graph of minimum degree at least 4 is prism-Hamiltonian.",
+  "since_posted": [
+    {
+      "title": "A counterexample to prism-hamiltonicity of 3-connected planar graphs",
+      "authors": "Simon Špacapan",
+      "year": 2019,
+      "venue": "arXiv preprint (later in J. Combin. Theory Ser. B)",
+      "url": "https://arxiv.org/abs/1906.06683",
+      "doi": "10.1016/j.jctb.2020.10.003",
+      "arxiv_id": "1906.06683",
+      "kind": "counterexample",
+      "claim": "Constructs a 3-connected planar graph whose prism is not Hamiltonian, disproving the Rosenfeld-Barnette/Kaiser-Král-Rosenfeld-Ryjáček-Voss conjecture."
+    },
+    {
+      "title": "Polyhedra without cubic vertices are prism-hamiltonian",
+      "authors": "Simon Špacapan",
+      "year": 2021,
+      "venue": "arXiv preprint (later in J. Graph Theory, 2024)",
+      "url": "https://arxiv.org/abs/2104.04266",
+      "doi": "10.1002/jgt.23078",
+      "arxiv_id": "2104.04266",
+      "kind": "partial",
+      "claim": "Proves that every 3-connected planar graph with minimum degree at least 4 is prism-Hamiltonian, showing counterexamples must contain cubic vertices."
+    }
+  ],
+  "search_queries": [
+    "prism over 3-connected planar graph hamiltonian conjecture Kaiser Kral Rosenfeld",
+    "hamiltonian prism 3-connected planar graph conjecture progress arxiv",
+    "\"counterexample\" prism hamiltonicity 3-connected planar graphs Spacapan arxiv",
+    "Spacapan \"counterexample to prism-hamiltonicity\" \"Journal of Combinatorial Theory\" 2020"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/1906.06683",
+    "https://arxiv.org/abs/2104.04266",
+    "https://arxiv.org/abs/2107.13789"
+  ],
+  "notes": "The ScienceDirect (J. Combin. Theory Ser. B) and Wiley (J. Graph Theory) publisher pages returned HTTP 403, so the canonical journal URLs could not be fetched. Verification was performed via the arXiv abstract pages, which match the same titles/authors/abstracts; the DOIs listed are the standard ones reported in search results but were not directly fetched. The 2019 arXiv paper is the original counterexample announcement and the journal version appeared in J. Combin. Theory Ser. B (2021)."
+}

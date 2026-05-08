@@ -1,0 +1,36 @@
+{
+  "status": "solved",
+  "confidence": "high",
+  "summary": "The problem of whether a PTAS exists for feedback arc set in tournaments was answered affirmatively by Kenyon-Mathieu and Schudy at STOC 2007 (before the OPG posting), who gave a PTAS for weighted feedback arc set in tournaments. Post-posting, Baweja, Jia, and Woodruff (ITCS 2022) further extended this by giving the first semi-streaming PTAS, achieving a $(1+\\varepsilon)$-approximation in $p$ passes using $n^{1+1/p}\\cdot\\mathrm{poly}((\\log n)/\\varepsilon)$ space.",
+  "since_posted": [
+    {
+      "title": "An Efficient Semi-Streaming PTAS for Tournament Feedback ArcSet with Few Passes",
+      "authors": "Anubhav Baweja, Justin Jia, David P. Woodruff",
+      "year": 2022,
+      "venue": "13th Innovations in Theoretical Computer Science Conference (ITCS 2022)",
+      "url": "https://arxiv.org/abs/2107.07141",
+      "doi": "10.4230/LIPIcs.ITCS.2022.16",
+      "arxiv_id": "2107.07141",
+      "kind": "partial",
+      "claim": "Gives the first semi-streaming PTAS for minimum feedback arc set on tournaments, achieving a (1+ε)-approximation in polynomial time with p passes in n^{1+1/p}·poly((log n)/ε) space, extending the classical PTAS to the streaming setting."
+    }
+  ],
+  "search_queries": [
+    "PTAS feedback arc set tournaments polynomial time approximation scheme",
+    "feedback arc set tournament approximation algorithm Kenyon Mathieu 2007",
+    "tournament feedback arc set PTAS Ailon Alon approximation complexity 2013 2014 2015 2016 2017 2018 2019 2020",
+    "arXiv tournament ranking feedback arc set approximation scheme recent results"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2107.07141",
+    "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ITCS.2022.16",
+    "https://en.wikipedia.org/wiki/Feedback_arc_set",
+    "https://dblp.uni-trier.de/rec/conf/stoc/Kenyon-MathieuS07.html",
+    "https://docslib.org/doc/10971694/how-to-rank-with-few-errors"
+  ],
+  "notes": "The OPG problem appears to have been posted in 2013 despite already being solved: Kenyon-Mathieu and Schudy gave a PTAS for weighted feedback arc set in tournaments at STOC 2007 ('How to rank with few errors'). That 2007 paper cannot appear in since_posted (predates the posting) but is the primary solution; its bibliographic record is verified via DBLP and the PTAS claim is verified via an accessible paper mirror. The ACM DL page (doi:10.1145/1250790.1250806) is closed-access. The status 'solved' reflects that the question 'Is there a PTAS?' has a definitive yes answer.",
+  "slug": "ptas_for_feedback_arc_set_in_tournaments",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 01)",
+  "search_enabled": true
+}

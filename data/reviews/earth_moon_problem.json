@@ -1,0 +1,50 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The Earth–Moon problem—finding the maximum chromatic number of a biplanar graph (union of two planar graphs)—remains open with bounds $9 \\leq \\chi \\leq 12$ unchanged since the problem was posted. In 2023, Eppstein disproved Gethner's conjecture that 2-blowups of planar graphs are always biplanar, using iterated Kleetopes as counterexamples; and Kirchweger, Scheucher, and Szeider used SAT-based methods to show that at least one of Gethner's proposed 10-chromatic candidate graphs is not biplanar.",
+  "since_posted": [
+    {
+      "title": "On the Biplanarity of Blowups",
+      "authors": "David Eppstein",
+      "year": 2023,
+      "venue": "31st International Symposium on Graph Drawing and Network Visualization (GD 2023)",
+      "url": "https://arxiv.org/abs/2301.09246",
+      "doi": null,
+      "arxiv_id": "2301.09246",
+      "kind": "partial",
+      "claim": "Disproves Gethner's conjecture that 2-blowups of planar graphs are always biplanar by constructing iterated Kleetopes whose 2-blowups are not biplanar, while also giving positive biplanarity results for certain graph classes."
+    },
+    {
+      "title": "SAT-Based Generation of Planar Graphs",
+      "authors": "Markus Kirchweger, Manfred Scheucher, Stefan Szeider",
+      "year": 2023,
+      "venue": "26th International Conference on Theory and Applications of Satisfiability Testing (SAT 2023)",
+      "url": "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.SAT.2023.14",
+      "doi": "10.4230/LIPIcs.SAT.2023.14",
+      "arxiv_id": null,
+      "kind": "partial",
+      "claim": "Applies SAT encodings with dynamic symmetry breaking to test biplanarity, and shows that a graph derived from $C_5 \\boxtimes K_4$ with one vertex removed (one of Gethner's candidate 10-chromatic biplanar graphs) is not biplanar."
+    }
+  ],
+  "search_queries": [
+    "Earth-Moon problem chromatic number union two planar graphs progress",
+    "chromatic number union planar graphs biplanar graphs coloring 2013 2024 2025",
+    "thickness two graphs chromatic number earth moon conjecture Ringel",
+    "arXiv earth moon problem graph coloring biplanar 9 10 11 12 colors",
+    "Kirchweger Scheucher Szeider SAT planar graphs biplanar earth moon 2023",
+    "Gethner earth moon chromatic number 11 conjecture biplanar 2018 paper",
+    "arXiv biplanarity blowups kleetope earth moon Gethner conjecture 2023 2024"
+  ],
+  "verified_urls": [
+    "https://en.wikipedia.org/wiki/Earth%E2%80%93Moon_problem",
+    "https://arxiv.org/abs/2301.09246",
+    "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.SAT.2023.14",
+    "https://ics.uci.edu/2023/09/24/david-eppstein-wins-best-paper-award-for-on-the-biplanarity-of-blowups/",
+    "https://11011110.github.io/blog/2023/01/23/doubled-planar-drawings.html"
+  ],
+  "notes": "Gethner's 2018 survey 'To the Moon and Beyond' (Springer book chapter in 'Graph Theory: Favorite Conjectures and Open Problems – 2', edited by Gera, Haynes, Hedetniemi) introduced the conjecture that the answer is 11 and proposed $C_7 \\boxtimes K_4$ and a vertex deletion from $C_5 \\boxtimes K_4$ as candidate 10-chromatic biplanar graphs; the Springer page was inaccessible due to authentication redirect so this paper is not in since_posted. The fundamental bounds ($9 \\leq \\chi \\leq 12$) are unchanged. Eppstein's paper won Best Paper at GD 2023 and was subsequently published in the Journal of Graph Algorithms and Applications (2024). The DROPS page for Kirchweger et al. confirmed the venue and DOI but the full text (PDF) was unreadable by WebFetch; the specific Earth-Moon result attributed to that paper (eliminating one of Gethner's candidates) is reported in Wikipedia's Earth–Moon problem article.",
+  "slug": "earth_moon_problem",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 08)",
+  "search_enabled": true
+}

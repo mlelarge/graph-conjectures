@@ -1,0 +1,23 @@
+{
+  "status": "unclear",
+  "confidence": "low",
+  "summary": "No post-2007 literature specifically addressing Goldengorin's questions on the minimum number of disjoint spanning trees (or 1-trees) needed to guarantee a Hamiltonian path or cycle was found across six independent searches. The problem appears to be a niche open question that has not attracted follow-up work in the accessible literature; Goldengorin's own arXiv output contains no papers on this topic, and general graph-theory databases returned no relevant results.",
+  "since_posted": [],
+  "search_queries": [
+    "disjoint spanning trees Hamiltonian path graph Goldengorin",
+    "Chrobak Poljak common edges optimal solutions travelling salesman spanning trees 1-trees Hamiltonian",
+    "smallest number disjoint spanning trees Hamiltonian cycle 1-trees TSP",
+    "Goldengorin 1-trees disjoint Hamiltonian graph open problem spanning trees TSP",
+    "Goldengorin spanning trees Hamiltonian arXiv 2007 2008 2009 2010",
+    "disjoint 1-trees OR disjoint shortest spanning trees Hamiltonian graph TSP open problem"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/search/?query=Goldengorin+spanning+trees+Hamiltonian&searchtype=all",
+    "https://arxiv.org/search/?query=Goldengorin&searchtype=author"
+  ],
+  "notes": "The OPG problem page (garden.irmacs.sfu.ca) was unreachable (ECONNREFUSED). An arXiv author search confirms Goldengorin's arXiv papers are unrelated to spanning trees or Hamiltonian problems (image processing, scheduling, plant location). Semantic Scholar citation lookup for the Chrobak–Poljak 1988 paper returned empty content. After six searches, no verifiable post-2007 paper addressing any of the four questions in the problem statement was found. The problem most likely remains open and understudied.",
+  "slug": "what_is_the_smallest_number_of_disjoint_spanning_trees_made_a_graph_hamiltonian",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 01)",
+  "search_enabled": true
+}

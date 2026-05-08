@@ -1,0 +1,83 @@
+{
+  "slug": "caccetta_haggkvist_conjecture",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet (subagent)",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The Caccetta-Häggkvist conjecture remains open in its full generality, including the well-known case $r = n/3$ (existence of a directed triangle). Post-2013 work has produced only partial results: improvements on the digraph triangle bound, proofs for restricted classes (e.g., small independence number, forbidden subgraphs), counterexamples to a stronger conjecture of Thomassé, and progress on Aharoni's rainbow generalization (now resolved up to a constant factor and up to an additive constant).",
+  "since_posted": [
+    {
+      "title": "On the length of directed paths in digraphs",
+      "authors": "Yangyang Cheng, Peter Keevash",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2402.16776",
+      "doi": null,
+      "arxiv_id": "2402.16776",
+      "kind": "partial",
+      "claim": "Disproves Thomassé's strengthening of the Caccetta-Häggkvist conjecture for all girth $g \\geq 4$ and proves new lower bounds on directed path lengths in digraphs of given minimum out-degree and girth."
+    },
+    {
+      "title": "Improved bounds for the triangle case of Aharoni's rainbow generalization of the Caccetta-Häggkvist conjecture",
+      "authors": "Patrick Hompe, Zishen Qu, Sophie Spirkl",
+      "year": 2022,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2206.10733",
+      "doi": null,
+      "arxiv_id": "2206.10733",
+      "kind": "partial",
+      "claim": "Establishes improved triangle-existence bounds in Aharoni's rainbow generalization of the Caccetta-Häggkvist conjecture, e.g. that $(1.1077, 1/3)$ is triangular and $(1, 0.3988)$ is triangular."
+    },
+    {
+      "title": "Further approximations for Aharoni's rainbow generalization of the Caccetta-Häggkvist conjecture",
+      "authors": "Patrick Hompe, Sophie Spirkl",
+      "year": 2021,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2105.03373",
+      "doi": null,
+      "arxiv_id": "2105.03373",
+      "kind": "partial",
+      "claim": "Proves Aharoni's rainbow version of the Caccetta-Häggkvist conjecture holds when each color class has size $\\Omega(k)$, improving the previous $\\Omega(k \\log k)$ requirement and bringing the result to within a constant factor of the conjecture."
+    },
+    {
+      "title": "Aharoni's rainbow cycle conjecture holds up to an additive constant",
+      "authors": "Patrick Hompe, Tony Huynh",
+      "year": 2022,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2212.05697",
+      "doi": null,
+      "arxiv_id": "2212.05697",
+      "kind": "partial",
+      "claim": "Shows that Aharoni's rainbow generalization of the Caccetta-Häggkvist conjecture holds up to an additive constant: edge-colored graphs with $n$ vertices and $n$ color classes of size at least $r$ contain a rainbow cycle of length at most $n/r + \\alpha_r$."
+    },
+    {
+      "title": "Short rainbow cycles in edge-colored graphs",
+      "authors": "Xiaozheng Chen, Shanshan Guo, Fei Huang",
+      "year": 2023,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2311.12302",
+      "doi": null,
+      "arxiv_id": "2311.12302",
+      "kind": "partial",
+      "claim": "Proves that for edge-colored graphs on $n$ vertices with $n$ color classes (each a matching of size 2 or a triangle) of which at least $\\alpha n$ have a given form for $\\alpha > 1/2$, the graph contains a rainbow cycle of length $O(\\log n)$, contributing to Aharoni's rainbow version of the Caccetta-Häggkvist conjecture."
+    }
+  ],
+  "search_queries": [
+    "Caccetta-Häggkvist conjecture progress 2024 2025",
+    "Caccetta Haggkvist conjecture minimum outdegree girth digraph arxiv",
+    "Caccetta-Häggkvist conjecture n/3 triangle digraph recent results",
+    "\"Caccetta-Haggkvist\" OR \"Caccetta-Häggkvist\" 2023 OR 2024 OR 2025 proof",
+    "arxiv Caccetta-Haggkvist 2025 rainbow cycle digraph",
+    "\"Caccetta-Haggkvist\" full proof breakthrough resolved"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2402.16776",
+    "https://arxiv.org/abs/2206.10733",
+    "https://www.combinatorics.org/ojs/index.php/eljc/article/view/v29i1p55",
+    "https://arxiv.org/abs/2212.05697",
+    "https://arxiv.org/abs/2311.12302",
+    "https://arxiv.org/abs/2105.03373"
+  ],
+  "notes": "The original Caccetta-Häggkvist conjecture is unresolved, including the central r = n/3 (triangle) case. Most recent activity post-2013 concerns either Aharoni's rainbow generalization or strengthenings/restrictions (small independence number, forbidden subgraphs). The 2024 Cheng-Keevash paper disproves a strictly stronger conjecture of Thomassé but does not affect the original Caccetta-Häggkvist statement. The SIAM page for Devlin/Aharoni-style 'Nonuniform Degrees' rainbow paper returned 403 and was not directly verified, so it is not cited."
+}

@@ -1,0 +1,47 @@
+{
+  "status": "solved",
+  "confidence": "high",
+  "summary": "The original question was answered affirmatively by Lee and Oum (2014), who showed every $n$-vertex $K_t$-minor-free graph has at most $c^t n$ cliques for some absolute constant $c$. Fox and Wei (arXiv 2016) sharpened this to the asymptotically tight bound $3^{2t/3+o(t)}n$, matching Wood's lower-bound construction for $n \\geq 4t/3$. Shi and Wei (2024) further determined essentially sharp bounds on the number of $k$-cliques in $K_t$-minor-free graphs for each fixed order $k$.",
+  "since_posted": [
+    {
+      "title": "On the number of cliques in graphs with a forbidden minor",
+      "authors": "Jacob Fox, Fan Wei",
+      "year": 2017,
+      "venue": "Journal of Combinatorial Theory, Series B",
+      "url": "https://arxiv.org/abs/1603.07056",
+      "doi": "10.1016/j.jctb.2017.04.004",
+      "arxiv_id": "1603.07056",
+      "kind": "proof",
+      "claim": "Proves the asymptotically tight bound $3^{2t/3+o(t)}n$ on the total number of cliques in $K_t$-minor-free graphs on $n$ vertices, showing it is tight for $n \\geq 4t/3$, thereby resolving the question of the exponential constant."
+    },
+    {
+      "title": "Extremal number of cliques of given orders in graphs with a forbidden clique minor",
+      "authors": "Ruilin Shi, Fan Wei",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/html/2408.12082v1",
+      "doi": null,
+      "arxiv_id": "2408.12082",
+      "kind": "partial",
+      "claim": "Determines essentially sharp bounds (up to $o_t(1)$ in the exponent) on the maximum number of cliques of each fixed order $k$ in $K_t$-minor-free graphs, answering a refinement of Wood's and Fox–Wei's questions and partially disproving a conjecture of Wood."
+    }
+  ],
+  "search_queries": [
+    "Fox Wei \"number of cliques\" \"forbidden minor\" Kt-minor 2019 arXiv",
+    "Lee Oum \"number of cliques\" \"forbidden minor\" subdivision 2014 arXiv",
+    "cliques Kt-minor-free graphs \"3^{2t/3}\" tight bound 2020 2021 2022 2023 2024 2025",
+    "number cliques minor-closed graphs exact constant tight 2022 2023 2024 2025 arXiv"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/1603.07056",
+    "https://mathsci.kaist.ac.kr/~sangil/pdf/2014clique.pdf",
+    "https://arxiv.org/html/2408.12082v1",
+    "https://londmathsoc.onlinelibrary.wiley.com/doi/10.1112/jlms.70399",
+    "https://www.sciencedirect.com/science/article/pii/S0095895617300394"
+  ],
+  "notes": "The Lee–Oum 2014 paper (OPG reference [LO]) first resolved the original question affirmatively, but its KAIST PDF URL returned unreadable binary content and no arXiv ID was found; it is therefore not cited in since_posted despite being a key result. The Fox–Wei paper was published in J. Combin. Theory Ser. B 126 (2017) 175–197, DOI 10.1016/j.jctb.2017.04.004; the ScienceDirect abstract explicitly says Lee–Oum answered Wood's original question affirmatively and that Fox–Wei determine the exponential constant. The Shi–Wei 2024 paper (arXiv:2408.12082) was found on a Wiley page suggesting publication in J. London Math. Soc., but that page also returned HTTP 403. The o(t) term in the Fox–Wei exponent means the exact minimum constant remains open as a follow-on question.",
+  "slug": "number_of_cliques_in_minor_closed_classes",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 01)",
+  "search_enabled": true
+}

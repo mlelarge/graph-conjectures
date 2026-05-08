@@ -1,0 +1,37 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The problem remains open. The upper bound of 80 (Raspaud–Sopena, 1994) has not been improved for general oriented planar graphs. The lower bound, stated as 17 in the 2007 OPG posting, was subsequently raised to 18 by Marshall in a paper published in Ars Combinatoria 120 (2015), so the answer is known to lie in $[18, 80]$.",
+  "since_posted": [
+    {
+      "title": "On Oriented Graphs with Certain Extension Properties",
+      "authors": "T.H. Marshall",
+      "year": 2015,
+      "venue": "Ars Combinatoria",
+      "url": "https://dblp.org/db/journals/arscom/arscom120.html",
+      "doi": null,
+      "arxiv_id": null,
+      "kind": "partial",
+      "claim": "Proves the existence of an oriented planar graph with oriented chromatic number at least 18, improving the previously known lower bound of 17."
+    }
+  ],
+  "search_queries": [
+    "oriented chromatic number planar graphs upper bound improvement",
+    "oriented chromatic number planar graphs lower bound 17 Marshall",
+    "oriented coloring planar graphs Raspaud Sopena 80 bound improvement arXiv",
+    "oriented chromatic number planar graphs survey 2020 2021 2022 2023 2024 2025",
+    "Marshall \"Ars Combinatoria\" 2012 \"oriented graphs\" extension properties planar chromatic number 18",
+    "Marshall \"homomorphism bounds\" oriented planar graphs 2007 Journal Graph Theory"
+  ],
+  "verified_urls": [
+    "https://www.labri.fr/perso/sopena/pmwiki/index.php?n=TheOrientedColoringPage.TheOrientedColoringPage",
+    "https://dblp.org/db/journals/arscom/arscom120.html",
+    "https://arxiv.org/abs/2409.13076",
+    "https://summit.sfu.ca/_flysystem/fedora/2025-05/etd23220.pdf"
+  ],
+  "notes": "Sopena's authoritative 'Oriented Coloring Page' (last updated February 2022) confirms the bounds are 18 ≤ χo(planar) ≤ 80 as of that date. The Marshall 2015 paper (cited as [Ma12] on Sopena's page, appearing in Ars Combinatoria vol. 120) is confirmed in DBLP. ArXiv:2409.13076 (Clow, 2024) gives asymptotically improved bounds for graphs on surfaces of genus g but does not specifically improve the planar (genus 0) bound of 80. A 2025 SFU PhD thesis by Clow on 'Colouring Oriented Graphs on Surfaces' likely discusses this problem, but the PDF was unreadable by WebFetch. Results for special subclasses (triangle-free, bounded girth) exist with tighter bounds, but the main problem for all planar graphs is open.",
+  "slug": "oriented_chromatic_number_of_planar_graphs",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 05)",
+  "search_enabled": true
+}

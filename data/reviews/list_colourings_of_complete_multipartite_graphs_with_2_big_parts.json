@@ -1,0 +1,33 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The case $a = 2$ (equivalently $b = 2$) of the problem has been fully resolved: Cano, Gutknecht, Kappaganthula, Miller, Mudrock, and Thornburgh (2024) proved that $\\tau_0(2,b) = \\lfloor\\sqrt{b}\\rfloor - 1$ for all $b \\geq 2$, improving Allagan's 2009 bounds and confirming his conjectured lower bound as exact. For general $a, b \\geq 2$ the exact value of $\\phi(a,b)$ remains open, with only the asymptotic lower bound $\\tau_0(a,b) = \\Omega(\\sqrt{b})$ as $b\\to\\infty$ established.",
+  "since_posted": [
+    {
+      "title": "On the Ohba Number and Generalized Ohba Numbers of Complete Bipartite Graphs",
+      "authors": "Kennedy Cano, Emily Gutknecht, Gautham Kappaganthula, George Miller, Jeffrey A. Mudrock, Ezekiel Thornburgh",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2403.06291",
+      "doi": null,
+      "arxiv_id": "2403.06291",
+      "kind": "partial",
+      "claim": "Proves $\\tau_0(2,b) = \\lfloor\\sqrt{b}\\rfloor - 1$ for all $b\\geq 2$ (settling the $K_{2,b}$ case of the problem exactly) and shows $\\tau_0(a,b)=\\Omega(\\sqrt{b})$ for general $a\\geq 2$."
+    }
+  ],
+  "search_queries": [
+    "phi(a,b) list chromatic number complete bipartite graph join K_t Ohba conjecture",
+    "list colouring complete multipartite graph two big parts Allagan choosability arXiv",
+    "chi_l K_{a,b} + K_t choosable complete bipartite chromatic number 2014 2020 2025",
+    "Noel Reed Wu Ohba conjecture complete multipartite list coloring progress 2015 2020 2025"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2403.06291",
+    "https://arxiv.org/html/2403.06291"
+  ],
+  "notes": "The 2024 paper uses the notation tau_0(a,b) for the same quantity as the OPG's phi(a,b). The paper had a latest revision dated February 2026 and may be under journal review. The Noel-Reed-Wu paper (reference [2] in OPG) was published in J. Graph Theory in 2015 (DOI 10.1002/jgt.21819), confirming Ohba's conjecture, but the journal page returned HTTP 403 so it was not verifiable via WebFetch. No paper was found that fully determines phi(a,b) for all a,b >= 2.",
+  "slug": "list_colourings_of_complete_multipartite_graphs_with_2_big_parts",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 05)",
+  "search_enabled": true
+}

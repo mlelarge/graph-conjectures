@@ -1,0 +1,68 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Chin and Michelen (2026) established the first vanishing upper bound $P_n \\leq n^{-1/17}$, proving that random instances are almost surely unsolvable for large $n$ and confirming a 1989 conjecture of Gusfield and Irving. However, the stronger Mertens conjecture $P_n = \\Theta(n^{-1/4})$ remains open; the current best bounds are $\\Omega(n^{-1/2}) \\leq P_n \\leq n^{-1/17}$, leaving a gap around the conjectured exponent $1/4$.",
+  "since_posted": [
+    {
+      "title": "Stable Roommates Problem with Random Preferences",
+      "authors": "Stephan Mertens",
+      "year": 2015,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/1401.5269",
+      "doi": null,
+      "arxiv_id": "1401.5269",
+      "kind": "partial",
+      "claim": "Introduces an $O(n^{3/2})$ average-case algorithm and provides large-scale simulation evidence (up to $n=20000$) supporting the conjecture $p_n = \\Theta(n^{-1/4})$."
+    },
+    {
+      "title": "On random stable partitions",
+      "authors": "Boris Pittel",
+      "year": 2017,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/1705.08340",
+      "doi": null,
+      "arxiv_id": "1705.08340",
+      "kind": "partial",
+      "claim": "Shows the expected number of stable partitions with odd cycles grows as $n^{1/4}$ (consistent with the conjecture), but with standard deviation of order $n^{3/8}$, too large to conclude odd cycles exist with high probability, leaving the conjecture unresolved."
+    },
+    {
+      "title": "The random stable roommates problem typically has no solution",
+      "authors": "Byron Chin, Marcus Michelen",
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2601.07612",
+      "doi": null,
+      "arxiv_id": "2601.07612",
+      "kind": "partial",
+      "claim": "Proves the first vanishing upper bound $P_n \\leq n^{-1/17}$ for sufficiently large $n$, confirming the Gusfield–Irving (1989) conjecture that $P_n \\to 0$, but the Mertens conjecture $P_n = \\Theta(n^{-1/4})$ remains open."
+    },
+    {
+      "title": "Perspectives on Unsolvability in the Roommates Problem",
+      "authors": "Frederik Glitzner, David Manlove",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2505.06717",
+      "doi": null,
+      "arxiv_id": "2505.06717",
+      "kind": "survey",
+      "claim": "Empirical study of solvability probability across multiple preference distributions (instances up to $n=5001$) and structural analysis of unstable configurations, finding solution sets are typically small."
+    }
+  ],
+  "search_queries": [
+    "stable roommates problem probability solution exists asymptotic n^{-1/4} conjecture",
+    "random stable roommates Mertens conjecture Pittel solvability probability",
+    "stable matching stable roommates random preferences probability 2008 2026 arXiv",
+    "site:arxiv.org stable roommates random preferences solvability probability"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2601.07612",
+    "https://arxiv.org/abs/1401.5269",
+    "https://arxiv.org/abs/1705.08340",
+    "https://arxiv.org/abs/2505.06717"
+  ],
+  "notes": "The Mertens conjecture $P_n = \\Theta(n^{-1/4})$ posted to OPG in 2008 remains open. The Chin–Michelen 2026 result ($P_n \\leq n^{-1/17}$) is a landmark improvement over the previous constant upper bound $\\sqrt{e}/2$, but does not yet achieve the conjectured exponent. The Pittel (2017) result on expected number of stable partitions is suggestive but not conclusive. The lower bound $P_n \\geq C n^{-1/2}$ (Pittel 1993, predating OPG posting) has not been improved.",
+  "slug": "random_stable_roommates",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 03)",
+  "search_enabled": true
+}

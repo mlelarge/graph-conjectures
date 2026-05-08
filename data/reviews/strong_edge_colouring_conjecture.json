@@ -1,0 +1,59 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The Erdős–Nešetřil strong edge-colouring conjecture ($s\\chi'(G) \\leq \\frac{5\\Delta^2}{4}$ for even $\\Delta$) remains open. The best asymptotic bound for large $\\Delta$ is $1.93\\Delta^2$ (Bruhn–Joos, 2018), improving the earlier $(2-\\varepsilon)\\Delta^2$ of Molloy–Reed. For $\\Delta=4$ the conjectured bound of 20 is still unresolved; the current best is 21 colors (Huang–Santana–Yu, 2018).",
+  "since_posted": [
+    {
+      "title": "A Stronger Bound for the Strong Chromatic Index",
+      "authors": "Henning Bruhn, Felix Joos",
+      "year": 2018,
+      "venue": "Combinatorics, Probability and Computing",
+      "url": "https://arxiv.org/abs/1504.02583",
+      "doi": "10.1017/S0963548317000244",
+      "arxiv_id": "1504.02583",
+      "kind": "partial",
+      "claim": "Proves $\\chi'_s(G) \\leq 1.93\\Delta(G)^2$ for graphs with sufficiently large maximum degree, strictly improving the $(2-\\varepsilon)\\Delta^2$ bound of Molloy and Reed."
+    },
+    {
+      "title": "Strong chromatic index of graphs with maximum degree four",
+      "authors": "Mingfang Huang, Michael Santana, Gexin Yu",
+      "year": 2018,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/1806.07012",
+      "doi": null,
+      "arxiv_id": "1806.07012",
+      "kind": "partial",
+      "claim": "Proves $\\chi'_s(G) \\leq 21$ for graphs with maximum degree 4, improving Cranston's 2006 bound of 22; the conjectured bound of 20 remains open."
+    },
+    {
+      "title": "The strong chromatic index of $(3,\\Delta)$-bipartite graphs",
+      "authors": "Mingfang Huang, Gexin Yu, Xiangqian Zhou",
+      "year": 2018,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/1806.07017",
+      "doi": null,
+      "arxiv_id": "1806.07017",
+      "kind": "partial",
+      "claim": "Proves that every bipartite graph with one part of maximum degree at most 3 and the other of maximum degree $\\Delta$ admits a strong edge-colouring with at most $3\\Delta$ colours, confirming the Brualdi–Quinn Massey conjecture for this class."
+    }
+  ],
+  "search_queries": [
+    "strong edge coloring conjecture Erdos Nesetril 5 Delta squared progress recent",
+    "strong chromatic index conjecture arXiv proof partial result 2014 2015 2016 2017 2018 2019 2020",
+    "strong edge coloring maximum degree 4 Cranston 22 colors improved bound",
+    "Molloy Reed strong chromatic index epsilon improvement Bondy Simonovits 2-epsilon Delta squared"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/1504.02583",
+    "https://www.cambridge.org/core/journals/combinatorics-probability-and-computing/article/abs/stronger-bound-for-the-strong-chromatic-index/33093E14462B979409A32806F17CDE78",
+    "https://arxiv.org/abs/1806.07012",
+    "https://arxiv.org/abs/1806.07017",
+    "https://arxiv.org/abs/1905.06031",
+    "https://arxiv.org/abs/2505.20345"
+  ],
+  "notes": "The Bruhn–Joos paper was submitted to arXiv in April 2015 (after the 2013-03-01 posting date) and published in CPC in 2018; year listed as 2018. Huang–Santana–Yu (1806.07012) is listed as an arXiv preprint; journal publication not confirmed. For 1806.07017 the fetched content mentioned 'published in Discrete Mathematics, 2017', conflicting with the June 2018 arXiv submission date — possible extraction error; treated as 2018 arXiv preprint. Cames van Batenburg et al. (2019, arXiv:1905.06031) on K_4-minor-free graphs is a tangential partial result and was not included in since_posted. No complete proof or disproof was found.",
+  "slug": "strong_edge_colouring_conjecture",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 08)",
+  "search_enabled": true
+}

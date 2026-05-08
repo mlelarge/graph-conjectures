@@ -1,0 +1,25 @@
+{
+  "status": "open",
+  "confidence": "medium",
+  "summary": "The problem asks whether two $r$-uniform hypergraphs on the same vertex set always admit a simultaneous $r$-partition in which at least $r!m_i/r^r - o(m_i)$ hyperedges of each cross all $r$ classes. Kühn and Osthus (2007) solved the analogous question for graphs and proved the hypergraph result conditionally when $\\Delta_2(H_i) = o(m_i)$ for each $i$; the general case remains open. No post-2013 paper verifiably resolving or substantially advancing the unconditional hypergraph problem was found in the literature search.",
+  "since_posted": [],
+  "search_queries": [
+    "simultaneous partition hypergraphs Kühn Osthus r-uniform cut",
+    "maximizing cuts simultaneously hypergraphs partition vertex classes",
+    "simultaneous bisection hypergraph balanced partition multiple hypergraphs",
+    "arXiv \"simultaneous partition\" hypergraph r-uniform conjecture 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024",
+    "Haslegrave \"judicious partitions\" hypergraph simultaneous two hypergraphs \"r classes\"",
+    "\"maximizing several cuts simultaneously\" Kühn Osthus 2007 hypergraph result \"delta_2\" OR \"codegree\" OR \"co-degree\" open problem",
+    "hypergraph simultaneous multiway partition two hypergraphs same vertex set r-uniform 2014 2015 2016 2017 2018 2019 2020 arXiv",
+    "site:arxiv.org \"simultaneous\" \"r-uniform hypergraph\" \"r classes\" partition \"r!/r^r\" OR \"r! m/r^r\" cuts"
+  ],
+  "verified_urls": [
+    "https://www.cambridge.org/core/journals/combinatorics-probability-and-computing/article/abs/maximizing-several-cuts-simultaneously/F54B883C152A8D4209ECB262074B22C0",
+    "https://arxiv.org/abs/1701.05855"
+  ],
+  "notes": "The Kühn-Osthus 2007 paper (CPC 16:277-283) is the key reference; its abstract (verified via Cambridge Core) confirms the simultaneous graph-cut result but does not reveal the full hypergraph content. Web-accessible PDFs were binary and unreadable. The arXiv paper 1701.05855 (Haslegrave, Combinatorica 2014) addresses a different problem: judicious partitions of a single r-uniform hypergraph (Bollobás-Thomason conjecture). No post-2013 paper specifically addressing the simultaneous two-hypergraph partition problem was found after four rounds of targeted searches covering arXiv, Combinatorica, and Semantic Scholar. The conditional result (Δ₂ = o(m_i) suffices) appears to originate in the Kühn-Osthus 2007 paper itself, predating the OPG posting.",
+  "slug": "simultaneous_partition_of_hypergraphs",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 08)",
+  "search_enabled": true
+}

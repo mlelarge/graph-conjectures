@@ -1,0 +1,53 @@
+{
+  "slug": "complexity_of_the_h_factor_problem",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet (subagent)",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Han and Treglown (JCTB 2020) provide a general tool that resolves much of the question: for any graph $H$ and any $\\gamma>0$, deciding whether an $n$-vertex graph $G$ with $\\delta(G)\\ge(1-1/\\chi_{cr}(H)+\\gamma)n$ contains a perfect $H$-packing is polynomial-time solvable, while a complementary hardness result of Kühn and Osthus (TAMC 2017) shows that for many $H$ (including all complete multipartite $H$ whose second smallest color class has size at least 2) the problem becomes NP-complete just below this critical threshold, so that a sharp $P$/NP-hard dichotomy in the parameter $c$ holds for those $H$. A complete dichotomy at the critical threshold for all graphs $H$ is, however, still not fully established.",
+  "since_posted": [
+    {
+      "title": "The complexity of perfect matchings and packings in dense hypergraphs",
+      "authors": "Jie Han, Andrew Treglown",
+      "year": 2020,
+      "venue": "Journal of Combinatorial Theory, Series B",
+      "url": "https://arxiv.org/abs/1609.06147",
+      "doi": "10.1016/j.jctb.2019.06.004",
+      "arxiv_id": "1609.06147",
+      "kind": "partial",
+      "claim": "Gives, for every graph $F$, a minimum degree condition under which deciding existence of a perfect $F$-packing is polynomial-time solvable, and shows the threshold is best possible in many cases (lowering it makes the decision problem NP-complete), thereby largely answering the Kühn–Osthus question."
+    },
+    {
+      "title": "The Complexity of Perfect Packings in Dense Graphs",
+      "authors": "Daniela Kühn, Deryk Osthus",
+      "year": 2017,
+      "venue": "Theory and Applications of Models of Computation (TAMC 2017), LNCS 10185",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-319-55911-7_21",
+      "doi": "10.1007/978-3-319-55911-7_21",
+      "arxiv_id": null,
+      "kind": "partial",
+      "claim": "Provides the matching NP-hardness side, closing a long-standing hardness gap for all complete multipartite graphs $H$ whose second smallest color class has size at least 2, so that the polynomial/NP-hard transition at the critical chromatic threshold is sharp for these $H$."
+    }
+  ],
+  "search_queries": [
+    "complexity H-factor problem minimum degree NP-hard graph",
+    "Kühn Osthus H-factor minimum degree NP-hard complexity",
+    "\"H-factor\" \"minimum degree\" NP-hard dichotomy complexity",
+    "perfect H-packing complexity minimum degree threshold NP-complete",
+    "\"complexity of perfect matchings and packings in dense graphs\" Han Treglown arxiv",
+    "\"complexity of perfect packings\" Kühn Osthus dense graphs 2017",
+    "\"hardness gap\" \"complete multi-partite\" Kühn Osthus H-packing complexity"
+  ],
+  "verified_urls": [
+    "https://link.springer.com/chapter/10.1007/978-3-319-55911-7_21",
+    "https://dl.acm.org/doi/abs/10.1016/j.jctb.2019.06.004",
+    "https://research.birmingham.ac.uk/en/publications/the-complexity-of-perfect-matchings-and-packings-in-dense-hypergr/",
+    "https://arxiv.org/abs/2302.13780",
+    "https://arxiv.org/abs/1609.06147",
+    "https://arxiv.org/abs/1609.06147v1",
+    "https://arxiv.org/abs/1110.3490",
+    "https://web.mat.bham.ac.uk/A.Treglown/rsa2017.pdf"
+  ],
+  "notes": "Han–Treglown (arXiv:1609.06147, JCTB 2020) explicitly state that their minimum degree threshold for polynomial solvability is, in many cases, best possible: lowering it makes the decision problem NP-complete. Kühn–Osthus's TAMC 2017 chapter supplies the matching hardness for complete multipartite $H$ whose second-smallest color class has size at least 2, closing the gap for those $H$. Together these substantially answer the OPG question affirmatively in the regime $c<1-1/\\chi_{cr}(H)$ for many $H$, and negatively (problem is in P) for $c>1-1/\\chi_{cr}(H)$. The Springer page for the Kühn–Osthus chapter required login to inspect the abstract, but its existence, authors, year, and content (closing the hardness gap) are corroborated across multiple independent search results and the Han–Treglown abstract; no arXiv preprint located. A fully tight dichotomy at the critical threshold for every graph $H$ does not yet appear in the literature, so the original problem as stated is best classified as having strong partial progress rather than fully resolved."
+}

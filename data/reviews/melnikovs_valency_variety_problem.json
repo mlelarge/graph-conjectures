@@ -1,0 +1,20 @@
+{
+  "status": "open",
+  "confidence": "low",
+  "summary": "Melnikov's valency-variety problem asks whether $\\chi(G) > \\lceil \\lfloor w(G)/2 \\rfloor / (|V(G)| - w(G)) \\rceil$ for every graph $G$ with at least two vertices, where $w(G)$ is the number of distinct degrees. The problem has been listed as open since its appearance in Jensen–Toft (1995), and no post-2013 paper establishing or refuting this bound was found in the literature search.",
+  "since_posted": [],
+  "search_queries": [
+    "Melnikov valency-variety chromatic number graph problem",
+    "valency-variety w(G) chromatic number lower bound graph coloring",
+    "chromatic number degree sequence variety graph Nettleton Dirac lower bound",
+    "Melnikov graph coloring problem Jensen Toft \"Graph Coloring Problems\" valency variety",
+    "arXiv \"valency-variety\" OR \"valency variety\" chromatic number graph 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024",
+    "site:arxiv.org \"Melnikov\" \"valency\" chromatic graph coloring lower bound"
+  ],
+  "verified_urls": [],
+  "notes": "All 4+ search queries returned no verifiable post-2013 paper on this specific problem. The OPG page was unreachable (ECONNREFUSED), ScienceDirect returned 403, arXiv search returned HTTP 429. The problem appears too specialized to have attracted attention in the recent literature; it was already open in Jensen–Toft (1995, p. 90) and no evidence of subsequent progress was found. Status 'open' is assigned with low confidence because the absence of results may partly reflect search limitations rather than true inactivity.",
+  "slug": "melnikovs_valency_variety_problem",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 06)",
+  "search_enabled": true
+}

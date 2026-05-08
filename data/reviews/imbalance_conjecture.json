@@ -1,0 +1,45 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The imbalance conjecture remains open. Partial results confirm that $M_G$ is graphic for trees, unicyclic graphs, antiregular graphs, complete extensions of paths/cycles/complete graphs, and several classes of block graphs. The most recent work (Kozerenko–Serdiuk, Opuscula Math. 2023) substantially extends this list but does not resolve the general conjecture.",
+  "since_posted": [
+    {
+      "title": "Edge Imbalance Sequences And Their Graphicness",
+      "authors": "Sergiy Kozerenko",
+      "year": 2019,
+      "venue": "Journal of Advanced Mathematical Studies",
+      "url": "https://publications.kse.ua/publications/edge-imbalance-sequences-graphicness-1363",
+      "doi": null,
+      "arxiv_id": null,
+      "kind": "partial",
+      "claim": "Proves that certain unary and binary graph operations preserve graphicness of imbalance sequences, and discusses several conjectures related to graphicness, including connections between them."
+    },
+    {
+      "title": "New results on imbalance graphic graphs",
+      "authors": "Sergiy Kozerenko, Andrii Serdiuk",
+      "year": 2023,
+      "venue": "Opuscula Mathematica",
+      "url": "https://www.opuscula.agh.edu.pl/om-vol43iss1art5",
+      "doi": "10.7494/OpMath.2023.43.1.81",
+      "arxiv_id": null,
+      "kind": "partial",
+      "claim": "Establishes imbalance graphicness for unicyclic graphs, antiregular graphs, and three classes of block graphs, extending earlier results but leaving the general conjecture open."
+    }
+  ],
+  "search_queries": [
+    "Kozerenko imbalance conjecture graphic sequence graph theory",
+    "edge imbalance multiset graphic sequence graph conjecture",
+    "arXiv \"imbalance conjecture\" graph Kozerenko",
+    "\"graphic imbalance sequences\" graph theory Kozerenko 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024"
+  ],
+  "verified_urls": [
+    "https://www.opuscula.agh.edu.pl/om-vol43iss1art5",
+    "https://admjournal.luguniv.edu.ua/index.php/adm/article/view/1049",
+    "https://publications.kse.ua/publications/edge-imbalance-sequences-graphicness-1363"
+  ],
+  "notes": "The original OPG bibliography paper 'On graphs with graphic imbalance sequences' (Kozerenko–Skochko, Algebra Discrete Math. 2014) is the starting-point reference and is excluded from since_posted. No counterexample has been found; the conjecture has been verified for all graphs with ≤9 vertices. No arXiv preprints specifically about the main imbalance conjecture were found. The 2019 paper's DOI could not be confirmed from the KSE publications page alone.",
+  "slug": "imbalance_conjecture",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 07)",
+  "search_enabled": true
+}

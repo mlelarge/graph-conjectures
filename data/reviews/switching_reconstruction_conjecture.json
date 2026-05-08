@@ -1,0 +1,25 @@
+{
+  "status": "open",
+  "confidence": "medium",
+  "summary": "Stanley proved in 1985 that every simple graph on $n$ vertices is switching-reconstructible when $n \\not\\equiv 0 \\pmod{4}$, and this remains the best known result. The conjecture is still open for $n \\equiv 0 \\pmod{4}$, $n \\geq 8$ (the case $n = 4$ is known to fail). No post-2013 papers establishing progress on this remaining open case were found.",
+  "since_posted": [],
+  "search_queries": [
+    "switching reconstruction conjecture graph theory vertex switching",
+    "switching reconstruction conjecture Stanley 1985 recent progress arxiv",
+    "vertex switching deck reconstruction graph n mod 4 conjecture solved",
+    "switching reconstruction graph Seidel switching deck isomorphic arxiv 2013 2026",
+    "\"switching reconstruction\" graph \"n ≡ 0 mod 4\" OR \"4k vertices\" proof OR counterexample 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2401.01582",
+    "https://arxiv.org/abs/2309.13870",
+    "https://arxiv.org/abs/2601.04530",
+    "https://arxiv.org/abs/2604.16567",
+    "https://arxiv.org/abs/2403.04263"
+  ],
+  "notes": "arxiv:2401.01582 ('The Stanley Conjecture Revisited') and arxiv:2309.13870 ('New cases of the Strong Stanley Conjecture') are both about Jack symmetric functions / Littlewood-Richardson coefficients, completely unrelated to graph reconstruction. arxiv:2601.04530 ('On identity Seidel switches', 2026) studies which vertex subsets yield automorphisms under Seidel switching, tangentially related but not addressing reconstruction. arxiv:2403.04263 ('Switching Classes: Characterization and Computation', 2024) studies hereditary class properties under switching, not reconstruction. arxiv:2604.16567 ('Shuffling the Deck', 2026) concerns the classical vertex-deletion reconstruction conjecture, not vertex-switching reconstruction. The OPG page was unreachable (ECONNREFUSED). The core open case—n ≡ 0 (mod 4), n ≥ 8—appears not to have attracted published resolution since Stanley's foundational 1985 paper.",
+  "slug": "switching_reconstruction_conjecture",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 04)",
+  "search_enabled": true
+}

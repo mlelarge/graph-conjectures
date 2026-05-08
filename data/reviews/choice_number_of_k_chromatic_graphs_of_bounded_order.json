@@ -1,0 +1,50 @@
+{
+  "status": "partial",
+  "confidence": "medium",
+  "summary": "The conjecture has been verified for $m = 2$ (before posting) and $m = 3$ (proved by Noel, West, Wu, and Zhu in 2013, published 2015). Kierstead, Salmon, and Wang determined $\\text{ch}(K_{4*k}) = \\lceil(3k-1)/2\\rceil$ in 2014, establishing what the bound should be for $m = 4$, but the general upper bound $\\text{ch}(G) \\leq \\lceil(3k-1)/2\\rceil$ for all $k$-chromatic graphs on at most $4k$ vertices (and the full conjecture for $m \\geq 4$) remains open.",
+  "since_posted": [
+    {
+      "title": "Beyond Ohba's Conjecture: A bound on the choice number of k-chromatic graphs with n vertices",
+      "authors": "Jonathan A. Noel, Douglas B. West, Hehui Wu, Xuding Zhu",
+      "year": 2015,
+      "venue": "European Journal of Combinatorics",
+      "url": "https://arxiv.org/abs/1308.6739",
+      "doi": "10.1016/j.ejc.2014.08.032",
+      "arxiv_id": "1308.6739",
+      "kind": "partial",
+      "claim": "Proves that ch(G) ≤ max{χ(G), ⌈(|V(G)|+χ(G)-1)/3⌉} for every graph G, which implies the conjecture for m=3: every k-chromatic graph on at most 3k vertices satisfies ch(G) ≤ ⌈(4k-1)/3⌉ = ch(K_{3*k})."
+    },
+    {
+      "title": "On the choice number of complete multipartite graphs with part size four",
+      "authors": "H. A. Kierstead, Andrew Salmon, Ran Wang",
+      "year": 2014,
+      "venue": "arXiv preprint",
+      "url": "https://ui.adsabs.harvard.edu/abs/2014arXiv1407.3817K/abstract",
+      "doi": null,
+      "arxiv_id": "1407.3817",
+      "kind": "partial",
+      "claim": "Proves that ch(K_{4*k}) = ⌈(3k-1)/2⌉, determining the target bound for the m=4 case of the conjecture, but does not establish this upper bound for all k-chromatic graphs on at most 4k vertices."
+    }
+  ],
+  "search_queries": [
+    "choice number k-chromatic graphs bounded order Noel conjecture beyond Ohba",
+    "Kierstead Salmon Wang choice number complete multipartite part size four",
+    "choosability k-chromatic n vertices complete multipartite conjecture Noel 2013",
+    "list coloring choosability k-chromatic 4k vertices conjecture 2018 2019 2020 2021 2022 2023",
+    "Jonathan Noel list coloring choosability graph theory recent papers 2015 2016 2017 2018 2019 2020",
+    "choosability k-chromatic 4k OR m=4 upper bound list coloring conjecture Noel proved 2019 2020 2021 2022 2023 2024 2025"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/1308.6739",
+    "https://arxiv.org/abs/1309.0225",
+    "https://wrap.warwick.ac.uk/id/eprint/104278/",
+    "https://ui.adsabs.harvard.edu/abs/2014arXiv1407.3817K/abstract",
+    "https://arxiv.org/abs/2307.05461"
+  ],
+  "notes": "The m=2 and m=3 cases of the conjecture are settled (m=2 follows from the proof of Ohba's conjecture; m=3 from NWWZ13/2015). The m=4 case reduces to showing ch(G) ≤ ⌈(3k-1)/2⌉ for all k-chromatic G on ≤4k vertices, which is explicitly stated as open in the OPG discussion. No papers resolving m=4 or any m≥5 case were found in exhaustive searching through 2025. Jonathan Noel's recent arXiv profile returned only unrelated work (bootstrap percolation), and his university homepage was unreachable. The KSW14 paper's journal publication venue could not be confirmed from verified sources (ADS shows only arXiv preprint).",
+  "slug": "choice_number_of_k_chromatic_graphs_of_bounded_order",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "elapsed_seconds": 230.9
+}

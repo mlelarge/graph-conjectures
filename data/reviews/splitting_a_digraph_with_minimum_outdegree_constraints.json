@@ -1,0 +1,35 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The problem, posed by Alon in 2006, asks whether a finite function $F(s,t)$ exists guaranteeing that every digraph with minimum out-degree at least $F(s,t)$ admits a vertex partition into parts $A$ and $B$ with induced minimum out-degrees at least $s$ and $t$, respectively; it remains open for all $s,t \\geq 2$. Christoph, Petrova, and Steiner (2023) proved a key reduction: if $F(2,2)$ is finite, then $F(s,t) = \\Theta(s+t)$ for all $s,t \\geq 1$, thereby reducing the entire conjecture to the single base case $F(2,2) < \\infty$.",
+  "since_posted": [
+    {
+      "title": "A note on digraph splitting",
+      "authors": "Micha Christoph, Kalina Petrova, Raphael Steiner",
+      "year": 2025,
+      "venue": "Combinatorics, Probability and Computing",
+      "url": "https://www.cambridge.org/core/journals/combinatorics-probability-and-computing/article/note-on-digraph-splitting/B377DD1BD9779DFFEE6DA45A43458ACD",
+      "doi": null,
+      "arxiv_id": "2310.08449",
+      "kind": "partial",
+      "claim": "Proves that if $F(2,2) < \\infty$ then $F(s,t) = \\Theta(s+t)$ for all $s,t \\geq 1$, reducing Alon's conjecture to the single case $s=t=2$."
+    }
+  ],
+  "search_queries": [
+    "splitting digraph minimum outdegree partition Alon conjecture f(d)",
+    "digraph vertex partition induced outdegree subgraph Bermond-Thomassen conjecture progress",
+    "arXiv partition digraph outdegree constraint two classes induced subgraph",
+    "Alon \"disjoint directed cycles\" splitting digraph outdegree 2013 open problem garden"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2310.08449",
+    "https://www.cambridge.org/core/journals/combinatorics-probability-and-computing/article/note-on-digraph-splitting/B377DD1BD9779DFFEE6DA45A43458ACD",
+    "https://www.cambridge.org/core/journals/combinatorics-probability-and-computing/article/abs/splitting-digraphs/5AF30160F0FE81F805F175A9C8202DCF",
+    "https://arxiv.org/abs/2205.10826"
+  ],
+  "notes": "The Springer paper 'Partition and Disjoint Cycles in Digraphs' by Song and Yan (Graphs and Combinatorics 2023, DOI 10.1007/s00373-023-02631-1) appeared in search result summaries as proving F(d₁,...,dₖ) ≤ 2(d₁+⋯+dₖ) under bounded in-degree conditions, but the Springer page is paywalled and no arXiv preprint was found, so it was excluded from since_posted. The Cambridge Core 'Splitting digraphs' entry is Alon's 2006 problem-posing article (predates the 2013 OPG posting). The arXiv:2310.08449 paper was submitted October 2023 and published online March 2025.",
+  "slug": "splitting_a_digraph_with_minimum_outdegree_constraints",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 02)",
+  "search_enabled": true
+}

@@ -1,0 +1,75 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Thomassen's 1976 conjecture that every longest cycle in a 3-connected graph has a chord remains open in full generality. Post-2007 partial results include: Harvey's 2017 proof for graphs with sufficiently high minimum degree (without requiring 3-connectivity); Wu and Zhang's 2025 proof of both Thomassen's and Harvey's conjectures for graphs whose circumference is at least $n - O(\\sqrt{n})$; and additional work on chords passing through specified small vertex/edge sets. Significant results by Birmelé (2008, for $K_{3,3}$-minor-free 3-connected graphs) and Thomassen himself (2018, for 2-connected cubic graphs and the existence of at least one chorded longest cycle when $\\delta\\ge 4$) were found via search but could not be directly verified through web fetches due to paywalls.",
+  "since_posted": [
+    {
+      "title": "A Cycle of Maximum Order in a Graph of High Minimum Degree has a Chord",
+      "authors": "Daniel J. Harvey",
+      "year": 2017,
+      "venue": "The Electronic Journal of Combinatorics",
+      "url": "https://www.combinatorics.org/ojs/index.php/eljc/article/view/v24i4p33",
+      "doi": null,
+      "arxiv_id": null,
+      "kind": "partial",
+      "claim": "Proves that every longest cycle in a graph with sufficiently high minimum degree contains a chord (no 3-connectivity hypothesis needed), and introduces the stronger Harvey conjecture for 2-connected graphs with $\\delta(G)\\ge 3$."
+    },
+    {
+      "title": "Longest cycles and longest chordless cycles in 2-connected graphs",
+      "authors": "Yanan Hu, Chengli Li, Feng Liu",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2410.19005",
+      "doi": null,
+      "arxiv_id": "2410.19005",
+      "kind": "partial",
+      "claim": "Proves Harvey's conjecture (which implies Thomassen's) for $\\ell$-holed graphs and graphs with small induced circumference, thereby establishing Thomassen's conjecture for these classes."
+    },
+    {
+      "title": "Chords of longest cycles passing through a specified small set",
+      "authors": "Haidong Wu, Shunzhe Zhang",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2502.10657",
+      "doi": null,
+      "arxiv_id": "2502.10657",
+      "kind": "partial",
+      "claim": "Proves that in 3-connected planar graphs with $\\delta\\ge 4$, every longest cycle containing a specified set of three vertices or an edge plus a vertex has a chord; analogous results for 2-connected cubic graphs."
+    },
+    {
+      "title": "Chords of longest cycles in graphs with large circumferences",
+      "authors": "Haidong Wu, Shunzhe Zhang",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2511.03422",
+      "doi": null,
+      "arxiv_id": "2511.03422",
+      "kind": "partial",
+      "claim": "Proves both Thomassen's and Harvey's conjectures for graphs whose circumference is at least $n - \\frac{1+\\sqrt{4n-3}}{2}$ (i.e., close to $n$), without needing the connectivity assumption."
+    }
+  ],
+  "search_queries": [
+    "Thomassen conjecture chords longest cycles 3-connected graphs",
+    "chords of longest cycles 3-connected graph conjecture progress 2008 2020",
+    "Birmelé 2008 \"longest circuit\" \"K3,3-minor free\" chord 3-connected graph Journal Graph Theory",
+    "Thomassen \"chords of longest cycles\" Harvey conjecture 3-connected cubic 2010 2015 2020 arxiv",
+    "Harvey \"chords in longest cycles\" 2017 graph theory conjecture minimum degree",
+    "Thomassen \"chords in longest cycles\" \"Journal of Combinatorial Theory\" \"Series B\" 2018 129 148",
+    "Thomassen 2018 \"chords of longest cycles\" cubic graphs \"minimum degree\" 3-connected arxiv journal",
+    "Thomassen \"Chords in longest cycles\" 2018 preprint free access OR \"open access\" OR \"arXiv\""
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2502.10657",
+    "https://arxiv.org/abs/2511.03422",
+    "https://arxiv.org/html/2511.03422",
+    "https://arxiv.org/html/2502.10657",
+    "https://www.combinatorics.org/ojs/index.php/eljc/article/view/v24i4p33",
+    "https://arxiv.org/abs/2410.19005"
+  ],
+  "notes": "Two important post-2007 papers appeared in every search but could not be directly verified via WebFetch due to publisher paywalls: (1) Étienne Birmelé, 'Every longest circuit of a 3-connected, K_{3,3}-minor free graph has a chord,' J. Graph Theory 58 (2008) 293–298 (DOI 10.1002/jgt.20312) — this significantly extends Zhang's 1987 planar result by removing the minimum-degree-4 condition; (2) Carsten Thomassen, 'Chords in longest cycles,' J. Combin. Theory Ser. B 129 (2018) 148–157 (DOI 10.1016/j.jctb.2017.09.008) — proves every longest cycle in a 2-connected cubic graph has a chord, and that some longest cycle has a chord in 3-connected graphs with $\\delta\\ge 4$. Both are widely cited in the verified 2025 arXiv papers and appear consistent across multiple independent search results. A Wang–Yue paper (Discrete Appl. Math. 377 (2025) 541–551) on 3-connected graphs with circumference $\\ge n-5$ was also identified but not directly verified.",
+  "slug": "chords_of_longest_cycles",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "elapsed_seconds": 301.0
+}

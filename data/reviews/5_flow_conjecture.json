@@ -1,0 +1,53 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Tutte's 5-flow conjecture remains open; Seymour's 1981 result (every bridgeless graph has a nowhere-zero 6-flow) is still the best universal bound. Since the OPG posting, partial progress has been made extending the conjecture to special classes of cubic graphs: cyclically 6-edge-connected cubic graphs satisfying certain conditions on 1-factor intersections (Steffen 2015), and cyclically 6-edge-connected cubic graphs with oddness at most 4 (Mazzuoccolo–Steffen 2017).",
+  "since_posted": [
+    {
+      "title": "Intersecting 1-factors and nowhere-zero 5-flows",
+      "authors": "Eckhard Steffen",
+      "year": 2015,
+      "venue": "Combinatorica",
+      "url": "https://arxiv.org/abs/1306.5645",
+      "doi": null,
+      "arxiv_id": "1306.5645",
+      "kind": "partial",
+      "claim": "Proves that a cyclically $n$-edge-connected cubic graph has a nowhere-zero 5-flow if either ($n\\ge 6$ and $\\mu_2(G)\\le 2$) or $n\\ge 5\\mu_2(G)-3$, where $\\mu_2(G)$ is the minimum size of the intersection of two 1-factors."
+    },
+    {
+      "title": "Nowhere-zero 5-flows on cubic graphs with oddness 4",
+      "authors": "Giuseppe Mazzuoccolo, Eckhard Steffen",
+      "year": 2017,
+      "venue": "Journal of Graph Theory",
+      "url": "https://arxiv.org/abs/1412.5398",
+      "doi": "10.1002/jgt.22065",
+      "arxiv_id": "1412.5398",
+      "kind": "partial",
+      "claim": "Proves that every cyclically 6-edge-connected cubic graph with oddness at most 4 has a nowhere-zero 5-flow, extending the conjecture's verification to a broader class of potential snarks."
+    }
+  ],
+  "search_queries": [
+    "Tutte 5-flow conjecture nowhere-zero progress 2007-2026",
+    "nowhere-zero 5-flow bridgeless graph conjecture solved proof",
+    "nowhere-zero 5-flows cubic graphs oddness 4 Steffen Mkrtchyan 2015",
+    "5-flow conjecture cubic graphs cyclically 6-edge-connected recent arXiv 2010 2020",
+    "Tutte 5-flow conjecture progress 2020 2021 2022 2023 2024 2025 arXiv",
+    "\"5-flow\" OR \"five-flow\" conjecture graph theory breakthrough 2022 2023 2024 2025",
+    "Mazzuoccolo Steffen \"nowhere-zero 5-flows\" \"oddness 4\" journal publication 2016 2017"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/1009.4062",
+    "https://arxiv.org/abs/1412.5398",
+    "https://arxiv.org/abs/1306.5645",
+    "https://arxiv.org/abs/math/0607077",
+    "https://en.wikipedia.org/wiki/Nowhere-zero_flow",
+    "https://arxiv.org/abs/2008.07152",
+    "https://arxiv.org/search/?searchtype=all&query=5-flow+conjecture+cubic&start=0"
+  ],
+  "notes": "The Steffen (2010) paper 'Tutte's 5-Flow Conjecture for Highly Cyclically Connected Cubic Graphs' (Discrete Math. 310, 385-389) was on arXiv in July 2006 (before the OPG posting date) and is excluded from since_posted as its content predated the posting, even though the journal publication appeared in 2010. The DOI 10.1002/jgt.22065 for the Mazzuoccolo–Steffen paper was found in search results (Wiley URL) but the journal page returned 403; the arXiv abstract page (fetched successfully) confirmed title, authors, and main theorem. The withdrawn Mkrtchyan (2020) paper arXiv:2008.07152 was found to duplicate earlier work and is not cited. No post-2017 result extending oddness beyond 4 or resolving the conjecture in a wider class was found. Seymour's 6-flow theorem from 1981 remains the best universal result.",
+  "slug": "5_flow_conjecture",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "elapsed_seconds": 221.5
+}

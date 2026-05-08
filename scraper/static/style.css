@@ -1,0 +1,322 @@
+:root {
+  --fg: #1a1a1a;
+  --muted: #666;
+  --bg: #fff;
+  --accent: #0b5fa3;
+  --accent-bg: #e8f1fa;
+  --border: #d8d8d8;
+  --code-bg: #f4f4f4;
+  --erdos: #6e3aa6;
+  --warn: #b14d00;
+  --ok: #1f7a3a;
+}
+
+* { box-sizing: border-box; }
+
+html { font-size: 16px; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  color: var(--fg);
+  background: var(--bg);
+  line-height: 1.5;
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.25rem 1.5rem 3rem;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.site-header {
+  border-bottom: 1px solid var(--border);
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  align-items: baseline;
+  gap: 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.site-title {
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: var(--fg);
+}
+.site-header nav { display: flex; gap: 1rem; font-size: 0.95rem; }
+.site-footer {
+  border-top: 1px solid var(--border);
+  margin-top: 3rem;
+  padding: 1rem 1.5rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+  max-width: 1100px;
+  margin: 3rem auto 0;
+}
+
+/* ---------- index ---------- */
+
+.index-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+.index-controls input[type=search] {
+  flex: 1;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+.index-count { color: var(--muted); font-size: 0.9rem; white-space: nowrap; }
+
+table.problems-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.93rem;
+}
+table.problems-table th,
+table.problems-table td {
+  text-align: left;
+  padding: 0.4rem 0.6rem;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+table.problems-table th {
+  font-weight: 600;
+  background: var(--code-bg);
+  position: sticky;
+  top: 0;
+  user-select: none;
+}
+table.problems-table th.sorted-asc::after  { content: ' ▲'; font-size: 0.7em; color: var(--muted); }
+table.problems-table th.sorted-desc::after { content: ' ▼'; font-size: 0.7em; color: var(--muted); }
+.col-title { width: 28%; }
+.col-status { width: 8%; white-space: nowrap; }
+.col-subject { width: 20%; }
+.col-authors { width: 20%; }
+.col-importance { width: 8%; white-space: nowrap; }
+.col-posted { width: 10%; white-space: nowrap; color: var(--muted); }
+
+.status-summary {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  align-items: center;
+  font-size: 0.85rem;
+}
+.status-pending { color: var(--muted); }
+
+.status-badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  padding: 0.05rem 0.45rem;
+  border-radius: 3px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-weight: 600;
+  vertical-align: 0.1em;
+  white-space: nowrap;
+}
+.status-open      { background: #fff4d6; color: #8a6300; }
+.status-partial   { background: #fce8d4; color: #b14d00; }
+.status-solved    { background: #d8efe1; color: #1f7a3a; }
+.status-disproved { background: #fadbd8; color: #b03030; }
+.status-unclear   { background: #ececec; color: #555; }
+
+/* literature-review section on problem detail */
+section.lit-review {
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.8rem 1rem;
+  background: #fafbfc;
+  margin: 1rem 0 1.5rem;
+}
+section.lit-review h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.05rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+section.lit-review h3 {
+  font-size: 0.95rem;
+  margin: 1rem 0 0.4rem;
+  color: var(--muted);
+}
+section.lit-review .summary { margin: 0.4rem 0 0.8rem; }
+section.lit-review .confidence {
+  font-size: 0.78rem;
+  font-weight: 400;
+  color: var(--muted);
+  text-transform: lowercase;
+  letter-spacing: 0;
+}
+section.lit-review .confidence-low { color: var(--warn); }
+
+ul.since-posted {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+ul.since-posted > li {
+  margin: 0.6rem 0;
+  padding: 0.4rem 0 0.4rem 0.6rem;
+  border-left: 2px solid var(--border);
+}
+.ref-line { display: flex; gap: 0.4rem; align-items: baseline; flex-wrap: wrap; }
+.ref-title a { color: var(--fg); }
+.ref-title a:hover { color: var(--accent); }
+.ref-year { color: var(--muted); font-size: 0.9rem; }
+.ref-meta { font-size: 0.85rem; color: var(--muted); margin-top: 0.1rem; }
+.ref-claim { font-size: 0.92rem; margin: 0.3rem 0 0; }
+
+.ref-kind {
+  display: inline-block;
+  font-size: 0.7rem;
+  padding: 0.02rem 0.35rem;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  background: var(--code-bg);
+  color: var(--muted);
+}
+.kind-proof          { background: #d8efe1; color: #1f7a3a; }
+.kind-counterexample { background: #fadbd8; color: #b03030; }
+.kind-partial        { background: #fce8d4; color: #b14d00; }
+.kind-survey         { background: #e8f1fa; color: var(--accent); }
+.kind-reduction      { background: #f1e9fb; color: var(--erdos); }
+
+section.lit-review .notes {
+  font-size: 0.88rem;
+  color: var(--muted);
+  margin-top: 0.8rem;
+}
+section.lit-review .review-meta {
+  font-size: 0.78rem;
+  color: var(--muted);
+  margin-top: 0.8rem;
+  border-top: 1px solid var(--border);
+  padding-top: 0.4rem;
+}
+
+.importance-outstanding { color: #b14d00; font-weight: 600; }
+.importance-high { color: #c08400; }
+.importance-medium { color: var(--muted); }
+.importance-low { color: #999; }
+
+/* ---------- problem detail ---------- */
+
+article.problem header h1 {
+  margin: 0 0 0.5rem;
+  font-size: 1.6rem;
+  line-height: 1.2;
+}
+article.problem .meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-bottom: 0.4rem;
+}
+article.problem .importance {
+  font-weight: 500;
+}
+article.problem .byline {
+  font-size: 0.92rem;
+  color: var(--muted);
+  margin-bottom: 1.2rem;
+}
+article.problem .byline strong { color: var(--fg); }
+
+.intersection {
+  background: var(--accent-bg);
+  border-left: 3px solid var(--accent);
+  padding: 0.6rem 0.9rem;
+  margin: 0.8rem 0 1.2rem;
+  font-size: 0.92rem;
+}
+
+section.statements { margin: 1.2rem 0 1.5rem; }
+.envtheorem {
+  border-left: 3px solid var(--border);
+  padding: 0.6rem 0.9rem;
+  margin: 0.8rem 0;
+  background: #fafafa;
+}
+.envtheorem-conjecture { border-color: var(--accent); }
+.envtheorem-question   { border-color: var(--warn); }
+.envtheorem-problem    { border-color: #888; }
+.envtheorem-theorem    { border-color: var(--ok); }
+.envtheorem strong { display: inline; margin-right: 0.4rem; }
+
+section.keywords {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin: 1rem 0;
+}
+.keyword {
+  display: inline-block;
+  background: var(--code-bg);
+  padding: 0.05rem 0.45rem;
+  border-radius: 3px;
+  color: var(--fg);
+}
+
+section.discussion h2,
+section.bibliography h2 {
+  font-size: 1.05rem;
+  margin: 1.5rem 0 0.6rem;
+  color: var(--fg);
+}
+section.bibliography ul {
+  list-style: none;
+  padding: 0;
+  font-size: 0.9rem;
+}
+section.bibliography li {
+  margin: 0.3rem 0;
+  padding-left: 1rem;
+  text-indent: -1rem;
+}
+.bib-key { font-size: 0.85rem; color: var(--muted); }
+.bib-links { font-size: 0.85rem; color: var(--muted); }
+.original { color: var(--ok); }
+
+footer.canonical {
+  margin-top: 2rem;
+  padding-top: 0.8rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.88rem;
+  color: var(--muted);
+}
+
+/* ---------- badges ---------- */
+
+.badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  padding: 0.05rem 0.4rem;
+  border-radius: 3px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  vertical-align: 0.1em;
+  font-weight: 600;
+}
+.badge.erdos { background: #f1e9fb; color: var(--erdos); }
+.badge.erdos:hover { text-decoration: none; background: #e7d8f7; }
+.badge.undergrad { background: #e6f4ea; color: var(--ok); }
+
+/* ---------- prose pages ---------- */
+
+article.prose { max-width: 760px; }
+article.prose h1 { font-size: 1.8rem; margin-bottom: 1rem; }
+article.prose h2 { font-size: 1.15rem; margin-top: 1.8rem; }
+article.prose code { background: var(--code-bg); padding: 0.05rem 0.3rem; border-radius: 3px; font-size: 0.9em; }

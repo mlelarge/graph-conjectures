@@ -1,0 +1,46 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The Partial List Coloring Conjecture of Albertson, Grossman, and Haas remains open for general graphs. Post-2008 progress includes a proof of the conjecture for claw-free graphs, chordless graphs, series-parallel graphs, and graphs with chromatic number at least $(|V(G)|-1)/2$. The DP-coloring analogue of the conjecture has been shown to fail, indicating the conjecture does not follow from a more general principle.",
+  "since_posted": [
+    {
+      "title": "Partial List Colouring of Certain Graphs",
+      "authors": "Jeannette Janssen, Rogers Mathew, Deepak Rajendraprasad",
+      "year": 2015,
+      "venue": "Electronic Journal of Combinatorics",
+      "url": "https://www.combinatorics.org/ojs/index.php/eljc/article/view/v22i3p41",
+      "doi": "10.37236/4283",
+      "arxiv_id": "1403.2587",
+      "kind": "partial",
+      "claim": "Proves the conjecture for claw-free graphs, chordless graphs, series-parallel graphs, and graphs with chromatic number at least $(|V(G)|-1)/2$; also constructs an infinite family of 3-choosable graphs showing a related variant fails."
+    },
+    {
+      "title": "Partial DP-Coloring",
+      "authors": "Hemanshu Kaul, Jeffrey A. Mudrock, Michael J. Pelsmajer",
+      "year": 2020,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2003.02687",
+      "doi": null,
+      "arxiv_id": "2003.02687",
+      "kind": "partial",
+      "claim": "Initiates the study of partial DP-coloring; shows the DP-coloring analogue of the Partial List Coloring Conjecture does not hold, while several partial list coloring results do extend to the DP-coloring setting."
+    }
+  ],
+  "search_queries": [
+    "partial list coloring conjecture Albertson Grossman Haas progress results",
+    "partial list coloring conjecture tn/chi_l vertices arXiv",
+    "\"partial list coloring\" conjecture graph theory 2010 2020 2025",
+    "list chromatic number partial coloring lower bound vertices colored conjecture proof"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/1403.2587",
+    "https://www.combinatorics.org/ojs/index.php/eljc/article/view/v22i3p41",
+    "https://arxiv.org/abs/2003.02687",
+    "https://arxiv.org/abs/math/9805066"
+  ],
+  "notes": "The Chappell (1998) lower bound (arXiv:math/9805066) showing at least 6/7 of the conjectured number can be colored predates the OPG posting and is not included in since_posted. The Kaul et al. paper likely appeared in Discrete Mathematics in 2021 (ScienceDirect PII S0012365X21000194) but that page returned HTTP 403 and could not be verified directly; arXiv URL is cited instead. No post-2015 paper verifiably proving further new cases of the original conjecture was found. The conjecture is also known to hold for bipartite graphs (follows from t ≤ ch(G) − χ(G) + 1) and when t divides ch(G), though these results appear in the original or earlier literature.",
+  "slug": "partial_list_coloring",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 08)",
+  "search_enabled": true
+}

@@ -1,0 +1,21 @@
+{
+  "slug": "finding_k_edge_outerplanar_graph_embeddings",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet (subagent)",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "No verifiable post-2010 result resolves whether a $k$-edge-outerplanar embedding of a planar graph with minimum $k$ can be computed in polynomial time. Recent work on outerplanarity (e.g., Biedl-Mondal 2024) treats the vertex-based notion and gives combinatorial bounds, not the algorithmic edge-outerplanarity question raised by Bentz. Searches and follow-ups to Bentz's 2009 paper did not surface any published proof or refutation.",
+  "since_posted": [],
+  "search_queries": [
+    "k-edge-outerplanar graph embedding minimum polynomial Bentz",
+    "\"edge-outerplanar\" graph embedding polynomial algorithm",
+    "Bentz disjoint paths planar outerplanarity edge layers",
+    "\"Improved Outerplanarity Bounds for Planar Graphs\" arxiv 2024"
+  ],
+  "verified_urls": [
+    "https://medium.com/@chirantan.gupta/finding-k-edge-outerplanar-graph-embeddings-17a6fd4886c",
+    "https://arxiv.org/abs/2407.04282"
+  ],
+  "notes": "The Biedl-Mondal paper (arXiv:2407.04282, WG 2024) gives improved bounds for vertex-outerplanarity of planar graphs but does not address the algorithmic question of computing minimum k-edge-outerplanarity, so it is not cited as progress. Several Springer/ResearchGate URLs returned 403 and could not be verified. A more thorough search of Bentz's later papers and proceedings of WG/ISAAC/ESA 2010-2026 might still uncover relevant work; status 'open' is reported with medium confidence based on absence of evidence rather than a definitive negative result."
+}

@@ -1,0 +1,58 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The conjecture that every (sub)cubic graph $G$ satisfies $\\chi_s'(G) \\le 6$ remains open. Significant partial progress has been made: the bound $\\chi_s'(G) \\le 6$ has been confirmed for subcubic multigraphs with $\\text{mad}(G) < 5/2$, for cubic Halin graphs, and an infinite family of cubic graphs achieving $\\chi_s'(G) = 6$ has been constructed (confirming tightness), but the full conjecture is unresolved.",
+  "since_posted": [
+    {
+      "title": "Star chromatic index of subcubic multigraphs",
+      "authors": "Hui Lei, Yongtang Shi, Zi-Xia Song",
+      "year": 2017,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/1701.04105",
+      "doi": null,
+      "arxiv_id": "1701.04105",
+      "kind": "partial",
+      "claim": "Proves $\\chi_s'(G) \\le 6$ for every subcubic multigraph $G$ with $\\text{mad}(G) < 5/2$, and $\\chi_s'(G) \\le 5$ if $\\text{mad}(G) < 24/11$."
+    },
+    {
+      "title": "On star edge colorings of bipartite and subcubic graphs",
+      "authors": "Carl Johan Casselgren, Jonas B. Granholm, André Raspaud",
+      "year": 2021,
+      "venue": "Discrete Applied Mathematics",
+      "url": "https://arxiv.org/abs/1912.02467",
+      "doi": null,
+      "arxiv_id": "1912.02467",
+      "kind": "partial",
+      "claim": "Settles the conjecture $\\chi_s'(G) \\le 6$ for cubic Halin graphs, and proves tight bounds for star chromatic index of complete bipartite and restricted bipartite graphs."
+    },
+    {
+      "title": "Star Edge Coloring of Outerplanar and Cubic Graphs: Bounds and Constructions",
+      "authors": "Xingchao Deng, Yan Liu, Xinge Feng",
+      "year": 2025,
+      "venue": "Bulletin of the Malaysian Mathematical Sciences Society",
+      "url": "https://link.springer.com/article/10.1007/s40840-025-01875-9?error=cookies_not_supported&code=4891183e-1fe9-4ea2-a52f-a76de76be8b2",
+      "doi": "10.1007/s40840-025-01875-9",
+      "arxiv_id": null,
+      "kind": "partial",
+      "claim": "Constructs an infinite sequence of cubic graphs $G$ with $\\chi_s'(G) = ch_s'(G) = 6$, confirming the tightness of the conjectured bound, and establishes new bounds for striped maximal outerplanar graphs."
+    }
+  ],
+  "search_queries": [
+    "star chromatic index cubic graphs conjecture chi_s 6",
+    "Dvorak Mohar Samal star chromatic index subcubic graphs bound",
+    "star edge coloring cubic graphs upper bound 2011 2020 2025",
+    "arXiv star chromatic index cubic graph 6 colors recent progress"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/1701.04105",
+    "https://arxiv.org/abs/1912.02467",
+    "https://arxiv.org/html/2503.20055",
+    "https://link.springer.com/article/10.1007/s40840-025-01875-9?error=cookies_not_supported&code=4891183e-1fe9-4ea2-a52f-a76de76be8b2",
+    "https://arxiv.org/abs/1011.3376"
+  ],
+  "notes": "The Lei-Shi-Song 2017 paper (arXiv 1701.04105) may have been published in a journal; DOI not verified from the fetch. The Casselgren-Granholm-Raspaud paper was verified via its arXiv preprint (1912.02467); the ScienceDirect page returned 403. The Springer 2025 paper was verified via a redirect URL with a temporary session code; the canonical DOI is 10.1007/s40840-025-01875-9. No paper resolving the full conjecture for all subcubic graphs was found.",
+  "slug": "star_chromatic_index_of_cubic_graphs",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 05)",
+  "search_enabled": true
+}

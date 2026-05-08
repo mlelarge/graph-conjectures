@@ -1,0 +1,33 @@
+{
+  "status": "solved",
+  "confidence": "high",
+  "summary": "The conjecture was fully proved by Brouwer and Haemers in 2008. They showed that for any connected graph on $n$ vertices, the $j$-th largest Laplacian eigenvalue $\\mu_j$ satisfies $\\mu_j \\geq d_j - j + 2$ for $j = 1, \\ldots, n-1$, which is exactly the statement $c_k(G) \\geq d_k(G)$ in the problem's notation.",
+  "since_posted": [
+    {
+      "title": "A Lower Bound for the Laplacian Eigenvalues of a Graph-Proof of a Conjecture by Guo",
+      "authors": "Andries E. Brouwer, Willem H. Haemers",
+      "year": 2008,
+      "venue": "Linear Algebra and its Applications",
+      "url": "https://research.tilburguniversity.edu/en/publications/a-lower-bound-for-the-laplacian-eigenvalues-of-a-graph-proof-of-a",
+      "doi": "10.1016/j.laa.2008.06.008",
+      "arxiv_id": null,
+      "kind": "proof",
+      "claim": "Proves that the $j$-th largest Laplacian eigenvalue $\\mu_j \\geq d_j - j + 2$ for $j = 1, \\ldots, n-1$ in any connected graph, fully resolving Guo's conjecture."
+    }
+  ],
+  "search_queries": [
+    "Laplacian degrees conjecture Guo \"c_k\" \"d_k\" graph eigenvalue degree sequence",
+    "Ji-Ming Guo Laplacian eigenvalue degree conjecture \"k-th largest\" connected graph",
+    "Laplacian spectrum degree sequence conjecture \"t_k + k - 2\" graph theory",
+    "arXiv Laplacian eigenvalue dominates degree sequence conjecture proof 2008 2015 2020",
+    "Brouwer Haemers \"lower bound Laplacian eigenvalues\" \"proof of a conjecture by Guo\" 2008"
+  ],
+  "verified_urls": [
+    "https://research.tilburguniversity.edu/en/publications/a-lower-bound-for-the-laplacian-eigenvalues-of-a-graph-proof-of-a"
+  ],
+  "notes": "The ScienceDirect and SSRN pages for the Brouwer-Haemers paper returned HTTP 403; verification was completed via the Tilburg University institutional repository. The DOI 10.1016/j.laa.2008.06.008 was confirmed to resolve to pii/S002437950800311X (Linear Algebra and its Applications). No arXiv preprint was found for this paper.",
+  "slug": "laplacian_degrees_of_a_graph",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 06)",
+  "search_enabled": true
+}

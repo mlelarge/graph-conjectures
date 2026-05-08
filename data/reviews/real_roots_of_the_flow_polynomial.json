@@ -1,0 +1,47 @@
+{
+  "status": "disproved",
+  "confidence": "high",
+  "summary": "Welsh's conjecture that all real roots of nonzero flow polynomials are at most $4$ has been disproved: Haggard, Pearce, and Royle found bridgeless graphs whose flow polynomials have real roots exceeding $4$. Subsequently, Jacobsen and Salas proved that real flow roots can even exceed $5$, finding that the generalized Petersen graph $G(119,7)$ has real flow roots at $Q \\approx 5.0000198$ and $Q \\approx 5.1653$, raising the question of whether real flow roots are bounded above at all.",
+  "since_posted": [
+    {
+      "title": "Is the five-flow conjecture almost false?",
+      "authors": "Jesper L. Jacobsen, Jesus Salas",
+      "year": 2013,
+      "venue": "Journal of Combinatorial Theory, Series B",
+      "url": "https://arxiv.org/abs/1009.4062",
+      "doi": null,
+      "arxiv_id": "1009.4062",
+      "kind": "counterexample",
+      "claim": "Exhibits infinitely many real flow roots exceeding 5 within generalized Petersen graphs G(nk,k), disproving the relaxed Welsh conjecture (bound 5) and showing the original bound-of-4 conjecture was far from tight."
+    },
+    {
+      "title": "A survey on the study of real zeros of flow polynomials",
+      "authors": "Fengming Dong",
+      "year": 2019,
+      "venue": "Journal of Graph Theory",
+      "url": "https://arxiv.org/abs/2007.05195",
+      "doi": "10.1002/jgt.22458",
+      "arxiv_id": "2007.05195",
+      "kind": "survey",
+      "claim": "Surveys results on real zeros of flow polynomials, including the disproof of Welsh's conjecture and subsequent developments on zero-free intervals."
+    }
+  ],
+  "search_queries": [
+    "real roots flow polynomial conjecture Welsh graph theory",
+    "flow polynomial roots nowhere-zero flows Welsh Seymour arXiv",
+    "Haggard Pearce Royle flow polynomial real roots greater than 4 counterexample",
+    "Dong \"real zeros of flow polynomials\" survey 2019 Journal Graph Theory",
+    "Royle \"flow polynomial\" \"real roots\" \"greater than 4\" generalized Petersen graph counterexample 2007 2008 2009"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/1009.4062",
+    "https://symomega.wordpress.com/2010/06/13/roots-of-flow-polynomials-and-welshs-conjecture/",
+    "https://arxiv.org/abs/2007.05195",
+    "https://www.cambridge.org/core/journals/combinatorics-probability-and-computing/article/abs/zerofree-intervals-for-flow-polynomials-of-nearcubic-graphs/340014B8FD925663417A1614009EC3FC"
+  ],
+  "notes": "The Haggard-Pearce-Royle paper that first disproved the original Welsh conjecture (bound of 4) could not be located and independently verified by WebFetch; its existence is confirmed by citation in the Jacobsen-Salas arXiv paper and in Gordon Royle's 2010 blog post (symomega). The Dong survey has an unusual timeline: journal publication December 2019 preceded the arXiv posting of July 2020. The supremum of real flow roots of flow polynomials is unknown and remains an open problem.",
+  "slug": "real_roots_of_the_flow_polynomial",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 04)",
+  "search_enabled": true
+}

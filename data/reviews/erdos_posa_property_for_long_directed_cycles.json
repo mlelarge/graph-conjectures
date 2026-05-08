@@ -1,0 +1,49 @@
+{
+  "slug": "erdos_posa_property_for_long_directed_cycles",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet (subagent)",
+  "search_enabled": true,
+  "status": "solved",
+  "confidence": "medium",
+  "summary": "The conjecture was resolved by Kawarabayashi and Kreutzer as an application of their Directed Grid Theorem (STOC 2015 / arXiv:1411.5681): the abstract explicitly states that the directed grid theorem improves the Reed-Robertson-Seymour-Thomas result on disjoint cycles of length at least $\\ell$, establishing the Erdős-Pósa property for long directed cycles for every fixed $\\ell$. This result is referenced explicitly as the proof of 'the Erdős-Pósa property for long cycles in directed graphs' by Göke, Marx and Mnich (ICALP 2020).",
+  "since_posted": [
+    {
+      "title": "The Directed Grid Theorem",
+      "authors": "Ken-ichi Kawarabayashi, Stephan Kreutzer",
+      "year": 2015,
+      "venue": "STOC 2015 (arXiv:1411.5681)",
+      "url": "https://arxiv.org/abs/1411.5681",
+      "doi": null,
+      "arxiv_id": "1411.5681",
+      "kind": "proof",
+      "claim": "Proves the directed grid theorem and, as an application, establishes the Erdős-Pósa property for disjoint directed cycles of length at least $\\ell$, improving Reed-Robertson-Seymour-Thomas (1996); abstract explicitly cites the Open Problem Garden entry."
+    },
+    {
+      "title": "Hitting Long Directed Cycles Is Fixed-Parameter Tractable",
+      "authors": "Alexander Göke, Dániel Marx, Matthias Mnich",
+      "year": 2020,
+      "venue": "ICALP 2020 (arXiv:2003.05267)",
+      "url": "https://arxiv.org/abs/2003.05267",
+      "doi": null,
+      "arxiv_id": "2003.05267",
+      "kind": "partial",
+      "claim": "Gives an FPT algorithm for the Directed Long Cycle Hitting Set problem, described by the authors as an exact version of the approximation algorithm following from the Erdős-Pósa property for long directed cycles proved by Kreutzer and Kawarabayashi (STOC 2015)."
+    }
+  ],
+  "search_queries": [
+    "Erdos-Posa property long directed cycles digraph",
+    "Havet Maia disjoint directed cycles minimum length",
+    "Erdos-Posa long directed cycles arxiv Kawarabayashi",
+    "\"long directed cycles\" \"Erdős–Pósa\" packing covering digraph"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/1802.05026",
+    "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ICALP.2020.59",
+    "https://arxiv.org/abs/2011.11605",
+    "https://arxiv.org/abs/1603.02504",
+    "https://arxiv.org/abs/1411.5681",
+    "https://arxiv.org/abs/1411.5681v1",
+    "https://arxiv.org/abs/2003.05267"
+  ],
+  "notes": "Confidence is medium rather than high because the Kawarabayashi-Kreutzer abstract phrases the long-cycles result as 'improving' the Reed-Robertson-Seymour-Thomas result on disjoint cycles of length at least $\\ell$ rather than spelling out an Erdős-Pósa-style theorem in the abstract; however, the Göke-Marx-Mnich ICALP 2020 paper explicitly attributes the proof of 'the Erdős-Pósa property for long cycles in directed graphs' to Kreutzer-Kawarabayashi (STOC 2015), and the Kawarabayashi-Kreutzer abstract explicitly references the OPG entry, which together strongly support that the conjecture is solved. The exact bound $t_n(\\ell)$ from the directed grid theorem is non-elementary in $n$."
+}

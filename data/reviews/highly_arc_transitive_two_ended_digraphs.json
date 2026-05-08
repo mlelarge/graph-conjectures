@@ -1,0 +1,44 @@
+{
+  "status": "disproved",
+  "confidence": "high",
+  "summary": "The Cameron–Praeger–Wormald conjecture was disproved by DeVos, Mohar, and Šámal, who constructed locally finite two-ended highly arc-transitive digraphs whose tiles are finite bipartite graphs that are *not* disjoint unions of complete bipartite graphs — exactly what the conjecture asserted to be impossible. Further structural results, including a complete classification of two-ended highly arc-transitive digraphs with prime in- and out-valencies, were subsequently obtained by Möller, Potočnik, and Seifter.",
+  "since_posted": [
+    {
+      "title": "Highly arc-transitive digraphs -- counterexamples and structure",
+      "authors": "Matt DeVos, Bojan Mohar, Robert Šámal",
+      "year": 2014,
+      "venue": "Combinatorica",
+      "url": "https://arxiv.org/abs/1110.2945",
+      "doi": "10.1007/s00493-014-3040-4",
+      "arxiv_id": "1110.2945",
+      "kind": "counterexample",
+      "claim": "Constructs 2-ended locally finite highly arc-transitive digraphs whose tiles are finite bipartite graphs that are not disjoint unions of complete bipartite graphs, thereby disproving the Cameron–Praeger–Wormald conjecture."
+    },
+    {
+      "title": "Infinite arc-transitive and highly-arc-transitive digraphs",
+      "authors": "Rögnvaldur G. Möller, Primož Potočnik, Norbert Seifter",
+      "year": 2018,
+      "venue": "European Journal of Combinatorics",
+      "url": "https://arxiv.org/abs/1811.02995",
+      "doi": null,
+      "arxiv_id": "1811.02995",
+      "kind": "partial",
+      "claim": "Gives a detailed structural description of two-ended arc-transitive digraphs and achieves a complete classification of two-ended highly arc-transitive digraphs with prime in- and out-valencies."
+    }
+  ],
+  "search_queries": [
+    "highly arc transitive digraph two ends tile complete bipartite conjecture Cameron Praeger Wormald",
+    "highly arc-transitive digraph two-ended tile structure infinite graph theory arXiv",
+    "arc transitive digraph two ends Praeger Wormald conjecture solved disproved 2008 2009 2010 2020",
+    "\"highly arc transitive\" digraph \"two ends\" OR \"two-ended\" tile bipartite graph conjecture"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/1110.2945",
+    "https://arxiv.org/abs/1811.02995"
+  ],
+  "notes": "The Springer Combinatorica page (DOI 10.1007/s00493-014-3040-4) redirected to an authentication wall and could not be fetched; the DOI is inferred from the search result metadata and arXiv record which lists the journal publication. The ScienceDirect page for the Möller–Potočnik–Seifter paper returned 403; the venue (European Journal of Combinatorics, ISSN 0195-6698) and DOI are inferred from the URL PII. A December 2025 arXiv preprint (2512.17244) on quasiprimitive highly-arc-transitive digraphs was found but not fetched — it post-dates the disproof and appears to be follow-up structural work.",
+  "slug": "highly_arc_transitive_two_ended_digraphs",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 05)",
+  "search_enabled": true
+}

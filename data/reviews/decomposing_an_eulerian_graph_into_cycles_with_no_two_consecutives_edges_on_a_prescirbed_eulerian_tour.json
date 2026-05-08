@@ -1,0 +1,22 @@
+{
+  "status": "open",
+  "confidence": "medium",
+  "summary": "Sabidussi's conjecture — that every Eulerian graph of minimum degree $4$ admits a cycle decomposition compatible with any prescribed Eulerian tour (no two consecutive tour-edges in the same cycle) — remains open in full generality. Known pre-2013 partial results include the case of planar graphs (Fleischner) and $K_5$-minor-free graphs (Fan and Zhang, 2000); a weak version for $80$-edge-connected graphs was also established. No verifiable post-2013 resolution of the general conjecture was found.",
+  "since_posted": [],
+  "search_queries": [
+    "Sabidussi conjecture Eulerian graph decomposition cycles consecutive edges Eulerian tour",
+    "Eulerian graph cycle decomposition prescribed tour no consecutive edges conjecture",
+    "Kotzig Sabidussi eulerian tour cycle decomposition graph theory arXiv",
+    "Fleischner eulerian tour cycle decomposition \"consecutive edges\" conjecture graph"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/1701.05844",
+    "https://arxiv.org/abs/1910.02819",
+    "https://ajc.maths.uq.edu.au"
+  ],
+  "notes": "All known partial results (Fleischner for planar graphs; Fan–Zhang 2000 for K₅-minor-free graphs; compatible decomposition for 80-edge-connected graphs) predate the 2013 OPG posting and thus are not listed in since_posted. A Google Scholar AI summary claimed a 2024 Graphs-and-Combinatorics paper ('Perfect Pseudo-Matchings in Cubic Graphs', Fleischner, Gh, Klocker, doi:10.1007/s00373-024-02844-y) concludes that Sabidussi's Compatibility Conjecture is false, but this claim could not be verified: Springer required authentication, no arXiv preprint was found, and a direct Google Scholar description of the same paper contained no mention of Sabidussi's conjecture — strongly suggesting the earlier summary was a hallucination. The AJC volume 58 (February 2014) PDF 'A cycle decomposition conjecture for Eulerian graphs' was also inaccessible (binary PDF, content unreadable). Status is therefore reported as open with medium confidence.",
+  "slug": "decomposing_an_eulerian_graph_into_cycles_with_no_two_consecutives_edges_on_a_prescirbed_eulerian_tour",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 03)",
+  "search_enabled": true
+}

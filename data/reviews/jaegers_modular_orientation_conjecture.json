@@ -1,0 +1,48 @@
+{
+  "status": "disproved",
+  "confidence": "high",
+  "summary": "Jaeger's modular orientation conjecture was refuted for $k \\geq 3$: Han, Li, Wu, and Zhang (2018) constructed $4k$-edge-connected graphs admitting no modular $(2k+1)$-orientation for every $k \\geq 3$, and even $(4k+1)$-edge-connected counterexamples for $k \\geq 5$. The special cases $k=1$ (Tutte's 3-flow conjecture) and $k=2$ remain open; the $k=2$ instance was verified asymptotically almost surely for random 9-regular graphs by Delcourt, Huq, and Prałat (2022).",
+  "since_posted": [
+    {
+      "title": "Counterexamples to Jaeger's Circular Flow Conjecture",
+      "authors": "Miaomiao Han, Jiaao Li, Yezhou Wu, Cunquan Zhang",
+      "year": 2018,
+      "venue": "Journal of Combinatorial Theory, Series B",
+      "url": "https://math.wvu.edu/~cqzhang/Publication-files/my-paper/JCTB-2018-Jaeger-count.pdf",
+      "doi": null,
+      "arxiv_id": null,
+      "kind": "counterexample",
+      "claim": "For every integer $k \\geq 3$ constructs a $4k$-edge-connected graph that admits no modular $(2k+1)$-orientation, directly disproving Jaeger's conjecture; for $k \\geq 5$ even $(4k+1)$-edge-connected counterexamples exist."
+    },
+    {
+      "title": "Almost all 9-regular graphs have a modulo-5 orientation",
+      "authors": "Michelle Delcourt, Reaz Huq, Pawel Pralat",
+      "year": 2022,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2210.12103",
+      "doi": "10.48550/arXiv.2210.12103",
+      "arxiv_id": "2210.12103",
+      "kind": "partial",
+      "claim": "Using the small subgraph conditioning method, proves Jaeger's conjecture for $k=2$ (modulo-5 orientation of 9-regular graphs) holds asymptotically almost surely for random 9-regular graphs, extending the $k=1$ result of Pralat-Wormald."
+    }
+  ],
+  "search_queries": [
+    "Jaeger modular orientation conjecture 4k-edge-connected graph progress",
+    "nowhere-zero flow conjecture 3-flow conjecture solved 2010 2020 2025",
+    "modular (2k+1)-orientation graph 2+epsilon flow conjecture arXiv",
+    "Jaeger conjecture circular flow nowhere-zero 3-flow 5-flow recent progress"
+  ],
+  "verified_urls": [
+    "https://math.wvu.edu/~cqzhang/Publication-files/my-paper/JCTB-2018-Jaeger-count.pdf",
+    "https://math.cumt.edu.cn/dd/09/c9099a384265/page.htm",
+    "https://arxiv.org/abs/2210.12103",
+    "https://arxiv.org/html/2210.12103",
+    "https://www.tau.ac.il/~nogaa/PDFS/modorient3.pdf",
+    "https://math.wvu.edu/~cqzhang/Publication-files/my-paper/JCTB-2013-3-flow-LTWZ.pdf"
+  ],
+  "notes": "Jaeger's circular flow conjecture (every $4k$-edge-connected graph has a circular flow of value at most $2+1/k$) is equivalent to the modular orientation conjecture by Jaeger's own observation, so the Han-Li-Wu-Zhang counterexamples apply directly. The partial positive result of Lovász, Thomassen, Wu, and Zhang (2013, JCTB) — that every $6k$-edge-connected graph has a modular $(2k+1)$-orientation — could not be verified via a readable URL (all WVU/ScienceDirect fetches returned binary or 403); it is mentioned in notes only. The conjecture survives only for $k=1$ (equivalent to Tutte's 3-flow conjecture, still open for 4-edge-connected graphs) and $k=2$ (still fully open). The Noga Alon paper on quasi-random regular graphs (Princeton preprint) was found but not successfully fetched.",
+  "slug": "jaegers_modular_orientation_conjecture",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 02)",
+  "search_enabled": true
+}

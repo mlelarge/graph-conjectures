@@ -1,0 +1,62 @@
+{
+  "status": "disproved",
+  "confidence": "high",
+  "summary": "The conjecture in its full generality was disproved by Kochol (2009), who constructed snarks with polyhedral embeddings in orientable surfaces of genus $\\geq 5$, showing that the dual of a simple loopless triangulation of such a surface need not be 3-edge-colorable. For the torus (genus 1), the conjecture was fully confirmed in 2025 by Inoue, Kawarabayashi, Miyashita, Mohar, and Sonobe, who characterized all non-3-edge-colorable toroidal cubic graphs as exactly the Petersen-like graphs. The conjecture remains open for orientable surfaces of genera 2, 3, and 4.",
+  "since_posted": [
+    {
+      "title": "Grünbaum Colorings of Toroidal Triangulations",
+      "authors": "Michael O. Albertson, Hannah Alpert, sarah-marie belcastro, Ruth Haas",
+      "year": 2008,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/0805.0394",
+      "doi": null,
+      "arxiv_id": "0805.0394",
+      "kind": "partial",
+      "claim": "Proves Grünbaum's conjecture for toroidal triangulations G with chi(G) != 5: if G triangulates the torus and has chromatic number different from 5, then there exists a 3-edge-coloring of G such that every facial triangle receives all three colors."
+    },
+    {
+      "title": "Polyhedral embeddings of snarks in orientable surfaces",
+      "authors": "Martin Kochol",
+      "year": 2009,
+      "venue": "Proceedings of the American Mathematical Society",
+      "url": "https://www.ams.org/proc/2009-137-05/S0002-9939-08-09698-6/",
+      "doi": "10.1090/S0002-9939-08-09698-6",
+      "arxiv_id": null,
+      "kind": "counterexample",
+      "claim": "Shows that snarks have polyhedral embeddings in orientable surfaces of sufficiently large genus, giving simple loopless triangulations of orientable surfaces whose duals are not 3-edge-colorable and thereby disproving Grünbaum's conjecture in full generality."
+    },
+    {
+      "title": "Three-edge-coloring (Tait coloring) cubic graphs on the torus: A proof of Grünbaum's conjecture",
+      "authors": "Yuta Inoue, Ken-ichi Kawarabayashi, Atsuyuki Miyashita, Bojan Mohar, Tomohiro Sonobe",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2505.07002",
+      "doi": null,
+      "arxiv_id": "2505.07002",
+      "kind": "partial",
+      "claim": "Proves that a 2-connected cubic multigraph embedded in the torus fails to be 3-edge-colorable if and only if it is Petersen-like (obtained from Petersen graph dot products), thereby fully confirming Grünbaum's conjecture for the torus: every polyhedral embedding in the torus yields a 3-edge-colorable dual."
+    }
+  ],
+  "search_queries": [
+    "Grunbaum conjecture triangulation orientable surface 3-edge-colorable dual",
+    "Grunbaum's conjecture snark embedding orientable surface counterexample",
+    "Grunbaum conjecture graph theory solved disproved 2010 2020 arxiv",
+    "triangulation dual 3-edge-coloring orientable surface face-width snark recent progress",
+    "Kochol \"3-regular non 3-edge-colorable\" polyhedral embedding orientable surface",
+    "\"three-edge-coloring\" \"torus\" \"Grunbaum conjecture\" proof cubic graphs 2024 2025"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/0805.0394",
+    "https://arxiv.org/abs/2505.07002",
+    "https://arxiv.org/abs/2405.16586",
+    "https://www.ams.org/proc/2009-137-05/S0002-9939-08-09698-6/",
+    "https://en.wikipedia.org/wiki/Snark_(graph_theory)",
+    "https://en.wikipedia.org/wiki/Cycle_double_cover",
+    "https://www.sfu.ca/~mohar/Book/BookProblems.html"
+  ],
+  "notes": "The primary disproof is Kochol (2009), 'Polyhedral embeddings of snarks in orientable surfaces,' Proc. AMS 137:1613-1619, DOI 10.1090/S0002-9939-08-09698-6; the AMS page is now directly verified and states that the paper gives counterexamples to Grünbaum's conjecture. A companion conference paper appeared in GD 2008, LNCS 5417, ch. 31. The 2024 projective-plane companion paper arXiv:2405.16586 (same author team as the torus paper) is related but concerns a non-orientable surface and is not included in since_posted. Status for genus 2, 3, 4 surfaces remains open per multiple search results.",
+  "slug": "grunbaums_conjecture",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 03)",
+  "search_enabled": true
+}

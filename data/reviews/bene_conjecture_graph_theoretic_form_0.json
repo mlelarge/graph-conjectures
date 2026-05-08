@@ -1,0 +1,24 @@
+{
+  "status": "open",
+  "confidence": "medium",
+  "summary": "The Beneš Conjecture in its graph-theoretic form — that $L^{2m}$ is rearrangeable whenever $L^m$ is externally connected — remains open. No post-2010 paper proving or disproving this conjecture (equivalently, $R(L) \\le 2F(L)$ for simple regular ordered 2-stage graphs $L$) was found in the literature. The closely related Shuffle-Exchange rearrangeability conjecture (a special uniform case) is also still open, and no significant breakthrough has been reported in either direction.",
+  "since_posted": [],
+  "search_queries": [
+    "Beneš conjecture rearrangeable multistage graph proof 2010 2025",
+    "rearrangeable connecting networks Benes conjecture graph-theoretic",
+    "Benes conjecture \"externally connected\" rearrangeable \"2-stage graph\" arXiv",
+    "\"shuffle-exchange\" rearrangeable conjecture proof arXiv 2015 2025",
+    "Václav Beneš \"R(L)\" \"F(L)\" rearrangeable \"ordered 2-stage graph\" conjecture",
+    "rearrangeable multistage network \"Benes conjecture\" solved disproved 2012 2020",
+    "arXiv \"Benes\" \"rearrangeable\" \"l-stage graph\" \"straight\" OR \"uniform\" conjecture 2011 2024"
+  ],
+  "verified_urls": [
+    "https://en.wikipedia.org/wiki/V%C3%A1clav_E._Bene%C5%A1"
+  ],
+  "notes": "The OPG pages (openproblemgarden.org and garden.irmacs.sfu.ca) were both unreachable (ECONNREFUSED) during this review, so it was not possible to check whether the OPG itself lists any post-2010 updates or status changes. The Wikipedia article on Václav E. Beneš was fetched successfully but contains no mention of the conjecture being resolved. All seven search queries consistently returned no post-2010 papers specifically addressing this conjecture's graph-theoretic form. Confidence is medium rather than high solely because the OPG pages were inaccessible.",
+  "slug": "bene_conjecture_graph_theoretic_form_0",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "elapsed_seconds": 1279.1
+}

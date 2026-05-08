@@ -1,0 +1,45 @@
+{
+  "status": "open",
+  "confidence": "medium",
+  "summary": "Jackson's 1981 conjecture that every strong oriented graph with minimum indegree and outdegree at least $d$ contains a directed cycle of length at least $2d+1$ remains open. The 1981 paper established directed paths of length at least $2d$, but the cycle version for strongly connected graphs is unresolved. Related progress has been made on a distinct Jackson conjecture: Lo, Patel, and Yıldız (2023) proved for sufficiently large $n$ that every $d$-regular oriented graph on $n \\leq 4d+1$ vertices contains a Hamilton cycle, but this does not settle the general minimum-semidegree conjecture.",
+  "since_posted": [
+    {
+      "title": "Cycle Partitions in Dense Regular Digraphs and Oriented Graphs",
+      "authors": "Allan Lo, Viresh Patel, Mehmet Akif Yıldız",
+      "year": 2025,
+      "venue": "Forum of Mathematics, Sigma",
+      "url": "https://arxiv.org/abs/2309.11677",
+      "doi": "10.1017/fms.2025.28",
+      "arxiv_id": "2309.11677",
+      "kind": "partial",
+      "claim": "Proves for sufficiently large $n$ that every $d$-regular oriented graph on $n \\leq 4d+1$ vertices has a Hamilton cycle (a related but distinct Jackson conjecture from 1981), and that $d$-regular oriented graphs on $n$ vertices can be covered by at most $n/(2d+1)$ vertex-disjoint cycles; does not address the OPG conjecture for general strong oriented graphs with minimum semidegree $d$."
+    }
+  ],
+  "search_queries": [
+    "Jackson conjecture directed cycle length 2d+1 oriented graph minimum indegree outdegree",
+    "long directed cycles diregular digraph conjecture arXiv",
+    "\"long directed cycles\" \"oriented graph\" \"indegree\" \"outdegree\" conjecture proof 2013 2024 2025",
+    "strong oriented graph minimum degree directed cycle length lower bound Jackson 1981",
+    "\"2d+1\" OR \"2d plus 1\" cycle length conjecture oriented graph semidegree Jackson arXiv solved proved",
+    "Jackson conjecture \"cycle of length at least 2d\" oriented graph strong minimum semidegree d progress 2014 2025"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2102.12830",
+    "https://arxiv.org/abs/1911.07778",
+    "https://www.cambridge.org/core/journals/forum-of-mathematics-sigma/article/cycle-partitions-in-dense-regular-digraphs-and-oriented-graphs/0D29907B6CD56492E7959CA3EBF9F63A",
+    "https://arxiv.org/html/2102.12830",
+    "https://arxiv.org/abs/2602.16333",
+    "https://arxiv.org/html/2510.26426",
+    "https://arxiv.org/abs/1110.5669",
+    "https://arxiv.org/html/2504.09794",
+    "https://etheses.bham.ac.uk/id/eprint/940/",
+    "https://arxiv.org/html/2309.11677",
+    "https://arxiv.org/abs/2203.10112",
+    "https://arxiv.org/abs/2309.11677"
+  ],
+  "notes": "The OPG conjecture (cycles of length ≥ 2d+1 in strong oriented graphs with minimum semidegree d) is distinct from the Jackson Hamilton-cycle conjecture (Hamilton cycles in d-regular oriented graphs on n ≤ 4d+1 vertices). Most search results and papers found address the latter or the Caccetta–Häggkvist / Kelly–Kühn–Osthus conjectures. No post-2013 paper directly proving or disproving the OPG conjecture was found after exhausting 6 search queries. The Lo–Patel–Yıldız result is the closest related progress but addresses a different (more restricted) setting.",
+  "slug": "long_directed_cycles_in_digraph_with_minimum_in_and_out_degree",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 08)",
+  "search_enabled": true
+}

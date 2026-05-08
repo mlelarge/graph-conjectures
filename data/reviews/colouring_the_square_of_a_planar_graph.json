@@ -1,0 +1,120 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Significant partial progress has been made since the 2013 OPG posting. The $\\Delta=3$ case of Wegner's conjecture ($\\chi(G^2)\\le 7$) has been fully proved — independently by Hartke, Jahanbekam, and Thomas (2016) and by Thomassen (2018). For larger $\\Delta$ the conjecture remains open: improved general upper bounds such as $2\\Delta+7$ (for $\\Delta\\ge 6$) and $3\\Delta+4$ have been established, and the clique bound $\\omega(G^2)\\le\\lfloor\\frac{3}{2}\\Delta\\rfloor+1$ has been verified for $\\Delta\\ge 36$, but the full conjecture (all three cases) is still unresolved.",
+  "since_posted": [
+    {
+      "title": "The chromatic number of the square of subcubic planar graphs",
+      "authors": "Stephen G. Hartke, Sogol Jahanbekam, Brent Thomas",
+      "year": 2016,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/1604.06504",
+      "doi": null,
+      "arxiv_id": "1604.06504",
+      "kind": "proof",
+      "claim": "Proves Wegner's conjecture for $\\Delta=3$: the square of every subcubic planar graph is 7-colorable, using the discharging method and computational verification of reducible configurations."
+    },
+    {
+      "title": "The square of a planar cubic graph is 7-colorable",
+      "authors": "Carsten Thomassen",
+      "year": 2018,
+      "venue": "Journal of Combinatorial Theory, Series B",
+      "url": "https://www.wikidata.org/wiki/Q56926479",
+      "doi": "10.1016/j.jctb.2017.08.010",
+      "arxiv_id": null,
+      "kind": "proof",
+      "claim": "Independent proof of Wegner's conjecture for $\\Delta=3$ (cubic planar graphs): $\\chi(G^2)\\le 7$; published in JCTB 128 (2018) 192–218."
+    },
+    {
+      "title": "Coloring squares of planar graphs with small maximum degree",
+      "authors": "Mateusz Krzyżyński, Paweł Rzążewski, Szymon Tur",
+      "year": 2021,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2105.11235",
+      "doi": null,
+      "arxiv_id": "2105.11235",
+      "kind": "partial",
+      "claim": "Proves $\\chi(G^2)\\le 3\\Delta+4$ for every planar graph $G$, giving the best-known bound for $6\\le\\Delta\\le 14$."
+    },
+    {
+      "title": "Improved square coloring of planar graphs",
+      "authors": "Nicolas Bousquet, Quentin Deschamps, Lucas de Meyer, Théo Pierron",
+      "year": 2021,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2112.12512",
+      "doi": null,
+      "arxiv_id": "2112.12512",
+      "kind": "partial",
+      "claim": "Shows that $2\\Delta+7$ colors suffice to square-color any planar graph, improving the best-known bounds for $6\\le\\Delta\\le 31$."
+    },
+    {
+      "title": "Relaxation of Wegner's Planar Graph Conjecture for maximum degree 4",
+      "authors": "Eun-Kyung Cho, Ilkyoo Choi, Bernard Lidický",
+      "year": 2022,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2212.10643",
+      "doi": null,
+      "arxiv_id": "2212.10643",
+      "kind": "partial",
+      "claim": "Shows that a relaxation of $G^2$-coloring for planar $G$ with $\\Delta=4$ is achievable with 9 colors (the conjectured bound), by allowing at most one repeated color in neighborhoods of degree-4 vertices."
+    },
+    {
+      "title": "The square of every subcubic planar graph of girth at least 6 is 7-choosable",
+      "authors": "Seog-Jin Kim, Xiaopan Lian",
+      "year": 2023,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2305.05194",
+      "doi": null,
+      "arxiv_id": "2305.05194",
+      "kind": "partial",
+      "claim": "Proves the list-chromatic version of Wegner's conjecture ($\\chi_\\ell(G^2)\\le 7$) for subcubic planar graphs of girth at least 6."
+    },
+    {
+      "title": "Bounding Clique Size in Squares of Planar Graphs",
+      "authors": "Daniel W. Cranston",
+      "year": 2023,
+      "venue": "European Journal of Combinatorics",
+      "url": "https://arxiv.org/abs/2308.09585",
+      "doi": null,
+      "arxiv_id": "2308.09585",
+      "kind": "partial",
+      "claim": "Proves that $\\omega(G^2)\\le\\lfloor\\frac{3}{2}\\Delta(G)\\rfloor+1$ for plane graphs with $\\Delta(G)\\ge 36$, confirming the clique-number analogue of Wegner's conjecture for large degree."
+    },
+    {
+      "title": "Squares of subcubic planar graphs without cycles of length 4-8 are 6-choosable",
+      "authors": "Seog-Jin Kim, Rong Luo",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2512.10175",
+      "doi": null,
+      "arxiv_id": "2512.10175",
+      "kind": "partial",
+      "claim": "Shows $\\chi_\\ell(G^2)\\le 6$ for subcubic planar graphs containing no cycles of length 4 through 8, improving the 7-choosable bound under additional girth/cycle restrictions."
+    }
+  ],
+  "search_queries": [
+    "Wegner conjecture square planar graph chromatic number progress 2013 2024",
+    "coloring square planar graph maximum degree Delta floor 3/2 Delta conjecture proved",
+    "chi(G^2) planar graph Wegner conjecture solved partial result arXiv",
+    "Thomassen Hartke Jahanbekam Thomas square subcubic planar graph 7-colorable proof",
+    "Wegner conjecture square planar graph Delta 4 5 6 7 chromatic number upper bound 2020 2021 2022 2023",
+    "Thomassen \"square of a planar cubic graph is 7-colorable\" Journal Combinatorial Theory 2018 doi"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/1604.06504",
+    "https://arxiv.org/abs/2112.12512",
+    "https://arxiv.org/abs/2212.10643",
+    "https://arxiv.org/abs/2105.11235",
+    "https://arxiv.org/abs/2305.05194",
+    "https://arxiv.org/abs/2308.09585",
+    "https://arxiv.org/abs/2512.10175",
+    "https://www.wikidata.org/wiki/Q56926479",
+    "https://orbit.dtu.dk/en/publications/the-square-of-a-planar-cubic-graph-is-7-colorable/"
+  ],
+  "notes": "The Thomassen 2018 paper (doi:10.1016/j.jctb.2017.08.010) was verified via Wikidata and DTU Orbit since ScienceDirect returned HTTP 403. The Hartke–Jahanbekam–Thomas paper (arXiv:1604.06504) appears to remain a preprint (not yet found in a peer-reviewed journal page that was accessible). The Δ=4 case of the original conjecture (χ(G²)≤9) remains open with best known upper bound of 12. The list-chromatic version of the conjecture for subcubic planar graphs (7-choosability without girth restriction) also remains open. The paper on Δ=5 square coloring (Graphs and Combinatorics 2023, doi:10.1007/s00373-023-02615-1) was found in search but could not be fetched due to authentication redirect and was therefore not included.",
+  "slug": "colouring_the_square_of_a_planar_graph",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "elapsed_seconds": 166.5
+}

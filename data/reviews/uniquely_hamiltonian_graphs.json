@@ -1,0 +1,57 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The conjecture has been proved for all odd $r$ (Thomason, 1978) and all even $r > 22$ (Haxell–Seamone–Verstraete, 2007), both results predating the OPG posting. Since posting, partial progress includes a proof for 4-regular graphs with sufficiently large automorphism groups (Šajna–Wagner, 2015), a classification of uniquely Hamiltonian vertex-transitive graphs (Miraftab–Morris, 2023/2025), and the structural reduction that 3-connected and 2-connected uniquely Hamiltonian 4-regular graphs are equivalent in existence (Brinkmann–De Pauw, 2024). The primary open case, $r = 4$, remains unresolved.",
+  "since_posted": [
+    {
+      "title": "On Sheehan's Conjecture for Graphs with Symmetry",
+      "authors": "Mateja Šajna, Andrew Wagner",
+      "year": 2015,
+      "venue": "Journal of Graph Theory",
+      "url": "https://people.math.carleton.ca/~dmgroup/abstracts/2012-11-02.MatejaSajna.html",
+      "doi": "10.1002/jgt.21838",
+      "arxiv_id": null,
+      "kind": "partial",
+      "claim": "Proves Sheehan's conjecture for 4-regular graphs whose automorphism group has size at least 2n/5 under certain arithmetic conditions on n, a condition weaker than vertex-transitivity."
+    },
+    {
+      "title": "On vertex-transitive graphs with a unique hamiltonian cycle",
+      "authors": "Babak Miraftab, Dave Witte Morris",
+      "year": 2025,
+      "venue": "Journal of Graph Theory",
+      "url": "https://arxiv.org/abs/2303.11124",
+      "doi": "10.1002/jgt.23166",
+      "arxiv_id": "2303.11124",
+      "kind": "partial",
+      "claim": "Classifies all uniquely Hamiltonian vertex-transitive graphs with finitely many ends, confirming Sheehan's conjecture in the vertex-transitive setting and extending the study to infinite graphs."
+    },
+    {
+      "title": "Uniquely hamiltonian graphs for many sets of degrees",
+      "authors": "Gunnar Brinkmann, Matthias De Pauw",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2304.08946",
+      "doi": null,
+      "arxiv_id": "2304.08946",
+      "kind": "partial",
+      "claim": "Establishes that 3-connected and 2-connected uniquely Hamiltonian 4-regular graphs are equivalent in existence, and introduces 'seeds' as a structural tool potentially useful for resolving Sheehan's conjecture for r = 4."
+    }
+  ],
+  "search_queries": [
+    "uniquely hamiltonian regular graphs conjecture Sheehan progress",
+    "4-regular graph uniquely hamiltonian cycle conjecture recent result arXiv",
+    "Haxell uniquely hamiltonian even regular graphs 2006 2007 2008",
+    "\"uniquely hamiltonian\" \"r-regular\" OR \"regular graph\" conjecture proof 2010 2015 2020 2025"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2304.08946",
+    "https://arxiv.org/abs/2303.11124",
+    "https://people.math.carleton.ca/~dmgroup/abstracts/2012-11-02.MatejaSajna.html",
+    "https://arxiv.org/abs/2506.21337"
+  ],
+  "notes": "The key pre-posting results (Thomason 1978 for odd r; Haxell–Seamone–Verstraete 2007 for even r > 22, DOI 10.1002/jgt.20205) are cited in the OPG and were not re-included. The Šajna–Wagner (2015) cited URL is a seminar abstract page, not the journal article, because the Wiley page (10.1002/jgt.21838) returned HTTP 402. The Brinkmann–De Pauw paper venue could not be confirmed beyond 'published December 1, 2024' from the arXiv metadata. A 2025 arXiv paper (2506.21337, Baligacs et al.) introduces 'Hamiltonian-transitive graphs' and generalizes the framework but does not directly resolve the r = 4 case; not cited in since_posted as its relationship to the main conjecture is indirect.",
+  "slug": "uniquely_hamiltonian_graphs",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 02)",
+  "search_enabled": true
+}

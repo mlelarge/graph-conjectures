@@ -1,0 +1,46 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The Gyárfás–Sumner conjecture remains open in full generality for all trees. Significant recent progress includes Nguyen, Scott, and Seymour (2024) proving that every $H$-free graph (for any forest $H$) with bounded clique number has a stable set of size $|G|^{1-o(1)}$ (near-linear), and Davies and Yuditsky (2024) proving the polynomial version of the conjecture for intersection graphs of axis-aligned boxes (bounded boxicity).",
+  "since_posted": [
+    {
+      "title": "Trees and near-linear stable sets",
+      "authors": "Tung Nguyen, Alex Scott, Paul Seymour",
+      "year": 2024,
+      "venue": "Combinatorica",
+      "url": "https://arxiv.org/abs/2409.09397",
+      "doi": null,
+      "arxiv_id": "2409.09397",
+      "kind": "partial",
+      "claim": "For every forest $H$, every $H$-free graph with bounded clique number has a stable set of size $|G|^{1-o(1)}$; moreover, multibrooms satisfy a fractional colouring version of the Gyárfás–Sumner conjecture."
+    },
+    {
+      "title": "Polynomial Gyárfás-Sumner conjecture for graphs of bounded boxicity",
+      "authors": "James Davies, Yelena Yuditsky",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2407.16882",
+      "doi": null,
+      "arxiv_id": "2407.16882",
+      "kind": "partial",
+      "claim": "For every positive integer $d$ and forest $F$, the class of intersection graphs of axis-aligned boxes in $\\mathbb{R}^d$ with no induced $F$ subgraph is polynomially $\\chi$-bounded."
+    }
+  ],
+  "search_queries": [
+    "Gyarfas conjecture chi-bounded forbidden induced tree proof 2020 2021 2022 2023 2024 2025",
+    "chi-bounded graphs induced tree forbidden subgraph Scott Seymour recent progress arXiv",
+    "Gyárfás conjecture induced subgraph tree chromatic number omega bounded solved 2022 2023 2024",
+    "arXiv \"Gyarfas conjecture\" OR \"Gyárfás conjecture\" chi-bounded tree 2023 2024 2025"
+  ],
+  "verified_urls": [
+    "https://en.wikipedia.org/wiki/Gy%C3%A1rf%C3%A1s%E2%80%93Sumner_conjecture",
+    "https://arxiv.org/abs/2407.16882",
+    "https://arxiv.org/abs/2409.09397",
+    "https://arxiv.org/abs/1807.03768"
+  ],
+  "notes": "The Scott–Seymour long series on induced subgraphs of graphs with large chromatic number contains many partial results for specific tree families (paths, multibrooms, radius-2 trees), predating the 2024 results cited here. The full conjecture for all trees remains open. Published Springer links for the Combinatorica version of 2409.09397 redirected to a login page and could not be fetched directly.",
+  "slug": "graphs_with_a_forbidden_induced_tree_are_chi_bounded",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 02)",
+  "search_enabled": true
+}

@@ -1,0 +1,44 @@
+{
+  "slug": "edge_disjoint_hamilton_cycles",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet (subagent)",
+  "search_enabled": true,
+  "status": "solved",
+  "confidence": "high",
+  "summary": "Thomassen's conjecture was proved by Kühn, Lapinskas, Osthus, and Patel (2014), who showed that every strongly $f(k)$-connected tournament with $f(k)=O(k^2\\log^2 k)$ contains $k$ edge-disjoint Hamilton cycles. Pokrovskiy (2017) subsequently improved the bound to $f(k)\\le Ck^2$, which is optimal up to the constant.",
+  "since_posted": [
+    {
+      "title": "Proof of a conjecture of Thomassen on Hamilton cycles in highly connected tournaments",
+      "authors": "Daniela Kühn, John Lapinskas, Deryk Osthus, Viresh Patel",
+      "year": 2014,
+      "venue": "Proceedings of the London Mathematical Society",
+      "url": "https://academic.oup.com/plms/article/109/3/733/2277480",
+      "doi": "10.1112/plms/pdu019",
+      "arxiv_id": null,
+      "kind": "proof",
+      "claim": "Proves Thomassen's conjecture by establishing that every strongly $f(k)$-connected tournament with $f(k)=O(k^2\\log^2 k)$ contains $k$ edge-disjoint Hamilton cycles, using a key lemma that strongly $10^4 k\\log k$-connected tournaments are $k$-linked."
+    },
+    {
+      "title": "Edge disjoint Hamiltonian cycles in highly connected tournaments",
+      "authors": "Alexey Pokrovskiy",
+      "year": 2017,
+      "venue": "International Mathematics Research Notices",
+      "url": "https://arxiv.org/abs/1406.7556",
+      "doi": "10.1093/imrn/rnw009",
+      "arxiv_id": "1406.7556",
+      "kind": "proof",
+      "claim": "Improves the bound in Thomassen's conjecture to $f(k)\\le Ck^2$ for an absolute constant $C$, which is optimal up to the constant factor, and resolves a related question of Thomassen on spanning linkages."
+    }
+  ],
+  "search_queries": [
+    "Thomassen conjecture edge-disjoint Hamilton cycles strongly connected tournaments",
+    "edge-disjoint Hamilton cycles tournament high connectivity arxiv",
+    "Kuhn Lapinskas Osthus Patel proof Thomassen conjecture Hamilton cycles tournaments"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/1406.7556",
+    "https://academic.oup.com/imrn/article-abstract/2017/2/429/2949646",
+    "https://academic.oup.com/plms/article/109/3/733/2277480"
+  ],
+  "notes": "The conjecture as stated (existence of $f(k)$) was proved by Kühn-Lapinskas-Osthus-Patel (PLMS 2014) with $f(k)=O(k^2\\log^2 k)$, and the optimal-order bound $f(k)=O(k^2)$ was established by Pokrovskiy (IMRN 2017, arXiv:1406.7556 from 2014). Both papers postdate the OPG posting of 2013-03-08."
+}

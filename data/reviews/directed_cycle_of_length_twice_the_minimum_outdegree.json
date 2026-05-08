@@ -1,0 +1,47 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Thomassé's conjecture — every oriented graph with minimum outdegree $k$ contains a directed path of length $2k$ — remains open. Cheng and Keevash (2024) proved the first non-trivial lower bound: every oriented graph with minimum outdegree $\\delta$ contains a directed path of length $\\frac{3}{2}\\delta$, leaving a gap to the conjectured $2\\delta$. The stronger generalisation to digraphs with girth $g \\geq 4$ was disproved by counterexamples, but the $g=3$ (oriented-graph) case is still open.",
+  "since_posted": [
+    {
+      "title": "On the length of directed paths in digraphs",
+      "authors": "Yangyang Cheng, Peter Keevash",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2402.16776",
+      "doi": null,
+      "arxiv_id": "2402.16776",
+      "kind": "partial",
+      "claim": "Proves that every oriented graph with minimum outdegree $\\delta$ contains a directed path of length $\\frac{3}{2}\\delta$ (first non-trivial bound), while also disproving Thomassé's general conjecture for all girth $g \\geq 4$."
+    },
+    {
+      "title": "Oriented trees and paths in digraphs",
+      "authors": "Maya Stein",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2310.18719",
+      "doi": null,
+      "arxiv_id": "2310.18719",
+      "kind": "survey",
+      "claim": "Survey noting that Thomassé's conjecture (directed path of length $2k$ in oriented graphs with minimum outdegree $k$) 'seems wide open' and reviewing related partial results."
+    }
+  ],
+  "search_queries": [
+    "Thomassé conjecture directed path length 2k minimum outdegree oriented graph",
+    "directed path twice minimum outdegree digraph conjecture Caccetta-Haggkvist",
+    "arXiv oriented graph minimum outdegree directed path length conjecture Thomasse 2013 2020 2025",
+    "digraph directed girth minimum outdegree longest path conjecture Thomasse Bermond Thomassen"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2402.16776",
+    "https://arxiv.org/abs/2310.18719",
+    "https://arxiv.org/abs/2510.11311",
+    "https://arxiv.org/html/2402.16776",
+    "https://arxiv.org/html/2310.18719"
+  ],
+  "notes": "arXiv:2510.11311 ('Extending Thomassen's conjecture to directed graphs', 2025) refers to Thomassen's conjecture (undirected graphs), not Thomassé's conjecture for oriented graphs — not directly relevant. The Springer Combinatorica paper (doi:10.1007/s00493-021-4750-z, 'Oriented Cycles in Digraphs of Large Outdegree') was inaccessible due to a paywall redirect. Bai and Manoussakis counterexamples (mentioned in Cheng–Keevash) concern girth g≥4, not the g=3 case reviewed here.",
+  "slug": "directed_cycle_of_length_twice_the_minimum_outdegree",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 01)",
+  "search_enabled": true
+}

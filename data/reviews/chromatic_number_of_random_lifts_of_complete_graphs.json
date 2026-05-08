@@ -1,0 +1,33 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Nir and Pérez Giménez (2021) proved that for fixed $d \\geq 3$, the chromatic number of a random $n$-lift of $K_{d+1}$ is a.a.s. either $k$ or $k+1$, where $k$ is the smallest integer satisfying $d < 2k\\log k$; moreover, for roughly half of all values of $d$, the chromatic number concentrates on the single value $k$. The specific question of whether the chromatic number of a random lift of $K_5$ ($d=4$, $k=3$) concentrates on a single value (3 or 4) is not definitively resolved by this work and remains open.",
+  "since_posted": [
+    {
+      "title": "The chromatic number of random lifts of complete graphs",
+      "authors": "JD Nir, Xavier Pérez Giménez",
+      "year": 2021,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2109.13347",
+      "doi": null,
+      "arxiv_id": "2109.13347",
+      "kind": "partial",
+      "claim": "Proves that for fixed $d \\geq 3$, the chromatic number of a random $n$-lift of $K_{d+1}$ is a.a.s. $k$ or $k+1$ (where $k$ is the smallest integer with $d < 2k\\log k$), and further concentrates on the single value $k$ for roughly half of all values of $d$; the upper bound uses the small subgraph conditioning method and extends to random lifts of arbitrary fixed $d$-regular graphs."
+    }
+  ],
+  "search_queries": [
+    "chromatic number random lifts complete graphs concentrated single value",
+    "random lifts K_n chromatic number Amit Linial Matousek follow-up",
+    "chromatic number random lift graph concentration result arXiv",
+    "Farzad Theis random lifts K5 3-colorable chromatic number follow-up 2013 2014 2015 2016 2017 2018 2019 2020"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2109.13347"
+  ],
+  "notes": "The paper arXiv:2109.13347 (Nir, Pérez Giménez, submitted September 2021) directly addresses the OPG problem and is the dominant post-2012 result. No journal reference was found; it may still be a preprint. The abstract page confirmed that the paper does not definitively resolve the K_5 question (whether d=4 falls in the 'roughly half' of d values with single-value concentration is unclear from the abstract alone). Attempts to fetch the Semantic Scholar page, arXiv HTML versions, and the PDF all failed or returned empty content; only the plain arXiv abstract page at https://arxiv.org/abs/2109.13347 was successfully verified. No further post-2012 papers specifically on this problem were found in the searches.",
+  "slug": "chromatic_number_of_random_lifts_of_complete_graphs",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "elapsed_seconds": 146.4
+}

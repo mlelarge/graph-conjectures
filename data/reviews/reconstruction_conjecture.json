@@ -1,0 +1,71 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The Reconstruction Conjecture remains open for general graphs. Since the problem was posted in 2007, notable partial progress includes: computational verification for all graphs up to 13 vertices (McKay 2021), improved reconstruction-from-smaller-decks results for trees (Groenland–Johnston–Scott–Tan 2021), and a proof that every interval graph on at least 3 vertices is reconstructible (Heinrich–Kiyomi–Otachi–Schweitzer 2025). No counterexample or general proof has been established.",
+  "since_posted": [
+    {
+      "title": "Reconstruction of small graphs and digraphs",
+      "authors": "Brendan D. McKay",
+      "year": 2021,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2102.01942",
+      "doi": null,
+      "arxiv_id": "2102.01942",
+      "kind": "partial",
+      "claim": "Computationally verifies the graph reconstruction conjecture for all graphs up to 13 vertices (and tournaments up to 13, digraphs up to 9), extending the previously established verification bound."
+    },
+    {
+      "title": "Reconstruction from smaller cards",
+      "authors": "Carla Groenland, Tom Johnston, Alex Scott, Jane Tan",
+      "year": 2021,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2103.13359",
+      "doi": null,
+      "arxiv_id": "2103.13359",
+      "kind": "partial",
+      "claim": "Shows trees can be reconstructed from their $(n-r)$-deck for $r \\le n/9 + o(n)$, and proves connectivity and degree-sequence can be recovered from much smaller partial decks."
+    },
+    {
+      "title": "Interval Graphs are Reconstructible",
+      "authors": "Irene Heinrich, Masashi Kiyomi, Yota Otachi, Pascal Schweitzer",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2504.02353",
+      "doi": null,
+      "arxiv_id": "2504.02353",
+      "kind": "partial",
+      "claim": "Proves that every interval graph on at least 3 vertices is reconstructible (and reconstructible in polynomial time), resolving a longstanding open case via new structural techniques for graph separations."
+    },
+    {
+      "title": "Shuffling the Deck: Invariant Theory and the Graph Reconstruction Conjecture",
+      "authors": "Emilie Dufresne, Gabriela Jeronimo, Jenny Kenkel, Haydee Lindo, Nelly Villamizar",
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2604.16567",
+      "doi": null,
+      "arxiv_id": "2604.16567",
+      "kind": "survey",
+      "claim": "Surveys the reconstruction conjecture and develops an invariant-theoretic algebraic reformulation, aiming to show that polynomials distinguishing decks also distinguish the original graphs."
+    }
+  ],
+  "search_queries": [
+    "reconstruction conjecture graph theory progress 2020 2021 2022 2023 2024 2025",
+    "graph reconstruction conjecture recent results arXiv survey",
+    "Kelly Ulam reconstruction conjecture solved counterexample new proof",
+    "vertex reconstruction conjecture hypomorphic graphs open problem status 2023 2024"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2604.16567",
+    "https://arxiv.org/abs/2504.02353",
+    "https://arxiv.org/abs/2102.01942",
+    "https://arxiv.org/abs/2103.13359",
+    "https://en.wikipedia.org/wiki/Reconstruction_conjecture",
+    "https://arxiv.org/abs/2501.19081",
+    "https://arxiv.org/html/2504.02353"
+  ],
+  "notes": "A 2023 paper in Information Sciences (ScienceDirect pii/S0020025523014433) titled 'Vertex-substitution framework verifies the reconstruction conjecture for finite undirected graphs' claims a general proof, but could not be accessed (HTTP 403) and Wikipedia does not list it as a resolution — likely a flawed or unaccepted claimed proof. The arXiv:2501.19081 paper (Kim–Lee 2025) concerns matching polynomial reconstruction for hypergraphs and is not directly about the graph reconstruction conjecture. McKay's paper was submitted in 2021 with a final arXiv revision in January 2022; journal venue not confirmed from available pages. Groenland et al. 2103.13359 was last revised November 2023, possibly in press.",
+  "slug": "reconstruction_conjecture",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 05)",
+  "search_enabled": true
+}

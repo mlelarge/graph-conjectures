@@ -1,0 +1,36 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The conjecture $\\chi(G^{3/3}) \\leq 2\\Delta(G)+1$ remains open in general. Anastos, Boyadzhiyska, Rathke, and Rué (2024) proved the asymptotically tight bound $\\chi(G^{3/3}) \\leq \\Delta + C\\log\\Delta$ for all graphs $G$ (with $C=28$ for sufficiently large $\\Delta$), which confirms the conjecture for all sufficiently large $\\Delta$ and is in fact stronger than $2\\Delta+1$ in that regime, but leaves the exact conjecture open for small-to-moderate values of $\\Delta \\geq 5$ not already handled by pre-posting results. Lower bounds show $\\chi(G^{3/3}) \\geq \\Delta + \\Omega(\\log\\Delta)$ for infinitely many $\\Delta$, making the new upper bound essentially tight.",
+  "since_posted": [
+    {
+      "title": "On the chromatic number of powers of subdivisions of graphs",
+      "authors": "Michael Anastos, Simona Boyadzhiyska, Silas Rathke, Juanjo Rué",
+      "year": 2024,
+      "venue": "Discrete Applied Mathematics",
+      "url": "https://arxiv.org/abs/2404.05542",
+      "doi": "10.1016/j.dam.2024.10.002",
+      "arxiv_id": "2404.05542",
+      "kind": "partial",
+      "claim": "Proves $\\chi(G^{3/3}) \\leq \\Delta + C\\log\\Delta$ for all graphs $G$ with maximum degree $\\Delta$ (with $C=28$ for large $\\Delta$), confirming the Mozafari-Nia–Iradmusa conjecture asymptotically for large $\\Delta$ and establishing a matching $\\Omega(\\log\\Delta)$ lower bound."
+    }
+  ],
+  "search_queries": [
+    "chromatic number 3/3-power graph conjecture Iradmusa Mozafari-Nia 2Delta+1",
+    "Mozafari-Nia Iradmusa \"simultaneous coloring vertices incidences\" graph chromatic 2024 2025",
+    "arXiv \"3/3-power\" graph coloring chromatic number",
+    "Iradmusa \"3/3-power\" OR \"fractional power\" graph coloring 2024 2025 2026 conjecture chromatic",
+    "Mozafari-Nia Iradmusa hypercubes \"simultaneous coloring\" 2024 chromatic number",
+    "Anastos Boyadzhiyska Rathke Rué \"chromatic number\" \"powers of subdivisions\" 2024 published journal"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2404.05542",
+    "https://arxiv.org/html/2404.05542"
+  ],
+  "notes": "The DOI 10.1016/j.dam.2024.10.002 (Discrete Applied Mathematics, Vol. 360, pp. 506–511) was found in web search results and is consistent with the ISTA research-explorer metadata, but ScienceDirect returned HTTP 403 so the journal page could not be independently verified via WebFetch; the arXiv preprint is fully verified. A 2024 paper by Mozafari-Nia and Iradmusa on simultaneous coloring of hypercubes (Communications in Combinatorics and Optimization, Vol. 9(1), pp. 67–77) was mentioned in search results but the publisher's website was unreachable (ECONNREFUSED), so it was not cited. The Opuscula Mathematica paper on incidence coloring of graph fractional powers (vol. 43, no. 1) was also found but its PDF was binary-encoded and could not be read; it appears to predate the posting date in any case.",
+  "slug": "chromatic_number_of_frac_3_3_power_of_graph",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "elapsed_seconds": 234.9
+}

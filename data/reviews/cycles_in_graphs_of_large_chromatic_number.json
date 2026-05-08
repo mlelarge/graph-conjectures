@@ -1,0 +1,38 @@
+{
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The $k=3$ case of the conjecture — every graph with $\\chi(G)>3$ contains at least $4$ cycles of length $0\\bmod 3$ — was fully resolved by Kim and Picollelli (2024), who proved that every 4-critical graph contains at least 4 such cycles with equality only for $K_4$. They also showed that $(k+1)$-critical graphs with minimum degree $k$ contain at least as many cycles of length $0\\bmod r$ as $K_{k+1}$ (provided $k+1\\not\\equiv 0\\pmod{r}$), but the full conjecture for $k\\ge 4$ remains open.",
+  "since_posted": [
+    {
+      "title": "4-Chromatic Graphs Have At Least Four Cycles of Length $0 \\bmod 3$",
+      "authors": "Sean Kim, Michael Picollelli",
+      "year": 2024,
+      "venue": "Electronic Journal of Combinatorics",
+      "url": "https://www.combinatorics.org/ojs/index.php/eljc/article/view/v31i2p58",
+      "doi": "10.37236/12623",
+      "arxiv_id": "2312.05945",
+      "kind": "partial",
+      "claim": "Proves the $k=3$ case of the BMMN conjecture in full (every 4-critical graph contains $\\ge 4$ cycles of length $0\\bmod 3$, uniquely minimised by $K_4$) and also establishes partial results toward the general conjecture for $(k+1)$-critical graphs with minimum degree $k$."
+    }
+  ],
+  "search_queries": [
+    "cycles length divisible chromatic number conjecture Brewster McGuinness Moore Noel",
+    "cycles mod k chromatic number graph conjecture arXiv 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+    "Chudnovsky Plumettaz Scott Seymour graphs no cycles length divisible three chromatic",
+    "number of cycles divisible k high chromatic number graph theory arXiv"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/2312.05945",
+    "https://arxiv.org/html/2312.05945",
+    "https://www.combinatorics.org/ojs/index.php/eljc/article/view/v31i2p58",
+    "https://arxiv.org/abs/2605.02731",
+    "https://arxiv.org/abs/2601.13552",
+    "https://arxiv.org/abs/2012.10624",
+    "https://arxiv.org/abs/2208.14860"
+  ],
+  "notes": "The Gao–Huo–Ma (2023) result (that $(k+1)$-critical non-complete graphs contain cycles of all lengths mod $k$ for $k\\ge 6$) is cited inside the Kim–Picollelli paper but was not independently verified here, so it is not listed in since_posted. The CPSS paper [Chudnovsky–Plumettaz–Scott–Seymour] was originally listed as 'in preparation'; it may have been published but was not found in searches. The 2026 paper arXiv:2605.02731 and arXiv:2601.13552 concern Dean's conjecture (minimum degree, not chromatic number) and are unrelated.",
+  "slug": "cycles_in_graphs_of_large_chromatic_number",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 01)",
+  "search_enabled": true
+}

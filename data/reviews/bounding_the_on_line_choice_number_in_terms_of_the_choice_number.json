@@ -1,0 +1,47 @@
+{
+  "status": "solved",
+  "confidence": "high",
+  "summary": "Duraj, Gutowski, and Kozik (2016) proved that the gap $\\text{ch}^{\\text{OL}}(K_{N,N}) - \\text{ch}(K_{N,N}) = \\Theta(\\log \\log N)$ for complete bipartite graphs, establishing that $\\text{ch}^{\\text{OL}} - \\text{ch}$ can be arbitrarily large and answering Zhu's question affirmatively. The 2024 follow-up by Bradshaw et al. extends the chip-game framework to complete multipartite graphs, giving new upper bounds on paintability for graphs with small part sizes.",
+  "since_posted": [
+    {
+      "title": "Chip Games and Paintability",
+      "authors": "Lech Duraj, Grzegorz Gutowski, Jakub Kozik",
+      "year": 2016,
+      "venue": "Electronic Journal of Combinatorics",
+      "url": "https://www.combinatorics.org/ojs/index.php/eljc/article/view/v23i3p3",
+      "doi": "10.37236/5723",
+      "arxiv_id": "1506.01148",
+      "kind": "proof",
+      "claim": "Proved that the difference between the paint number and choice number of $K_{N,N}$ is $\\Theta(\\log \\log N)$, showing the gap $\\text{ch}^{\\text{OL}}(G) - \\text{ch}(G)$ is unbounded over all graphs and thereby resolving Zhu's 2009 question."
+    },
+    {
+      "title": "Chip games and multipartite graph paintability",
+      "authors": "Peter Bradshaw, Tianyue Cao, Atlas Chen, Braden Dean, Siyu Gan, Ramon I. Garcia, Amit Krishnaiyer, Grace McCourt, Arvind Murty",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2411.19462",
+      "doi": null,
+      "arxiv_id": "2411.19462",
+      "kind": "partial",
+      "claim": "Extends the Duraj-Gutowski-Kozik chip-game framework to complete multipartite graphs with parts of size at most 3, establishing new upper bounds on paintability for $K_{3*k}$ and related graphs."
+    }
+  ],
+  "search_queries": [
+    "on-line choice number choice number gap paintability choosability graphs arbitrarily large",
+    "online list coloring paintability ch^OL versus ch complete multipartite K_{3*k}",
+    "Zhu \"on-line list colouring\" paintability choice number difference arXiv 2014 2015 2016 2017 2018 2019 2020",
+    "paintability versus choosability gap Schauz Kozik Micek arXiv graph coloring"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/1506.01148",
+    "https://www.combinatorics.org/ojs/index.php/eljc/article/view/v23i3p3",
+    "https://arxiv.org/abs/2411.19462",
+    "https://arxiv.org/abs/2403.11888"
+  ],
+  "notes": "The ScienceDirect page for 'Paintability of complete bipartite graphs' (Kashima, Discrete Applied Mathematics, 2024, DOI 10.1016/j.dam.2024.01.009) returned HTTP 403 and could not be verified; it likely gives further quantitative results on $\\text{ch}^{\\text{OL}}(K_{m,n})$ but was not cited. The West paint2.html page predates the Duraj-Gutowski-Kozik result and incorrectly lists the gap question as open — it has not been updated.",
+  "slug": "bounding_the_on_line_choice_number_in_terms_of_the_choice_number",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "elapsed_seconds": 166.4
+}

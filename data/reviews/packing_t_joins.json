@@ -1,0 +1,36 @@
+{
+  "status": "partial",
+  "confidence": "medium",
+  "summary": "The main DeVos conjecture — that every graft with minimum $T$-cut size $k$ admits a $T$-join packing of size at least $(2/3)k - c$ — remains open; the best verified general lower bound is still $\\lfloor k/3 \\rfloor$ from DeVos–Seymour (pre-posting). Post-2007, Abdi and Guenin proved the packing result for the special class of clutters of odd $T$-joins with at most two terminals in the signed-graft setting, confirming the Cycling Conjecture in that case.",
+  "since_posted": [
+    {
+      "title": "Packing odd $T$-joins with at most two terminals",
+      "authors": "Ahmad Abdi, Bertrand Guenin",
+      "year": 2018,
+      "venue": "Journal of Graph Theory",
+      "url": "https://arxiv.org/abs/1410.7423",
+      "doi": "10.1002/jgt.22178",
+      "arxiv_id": "1410.7423",
+      "kind": "partial",
+      "claim": "Proves that a signed graft packs if it is Eulerian and excludes two special non-packing minors, confirming the Cycling Conjecture for odd T-joins with at most two terminals; corollaries include T-join packing with at most four terminals."
+    }
+  ],
+  "search_queries": [
+    "T-join packing conjecture DeVos Seymour graft 2/3 k graph theory",
+    "packing postman sets conjecture Rizzi T-cut progress recent",
+    "Conforti Johnson packing postman sets Petersen minor conjecture proof",
+    "arXiv T-join packing r-graph perfect matching disjoint 2010 2020",
+    "Ahmad Abdi T-join packing conjecture DeVos 2/3 graft arXiv",
+    "\"T-join packing\" \"2/3\" graft improvement bound arXiv 2015 2020 2025"
+  ],
+  "verified_urls": [
+    "https://arxiv.org/abs/1410.7423",
+    "https://arxiv.org/abs/2510.26975",
+    "https://arxiv.org/abs/2206.10975"
+  ],
+  "notes": "The Abdi–Guenin paper (arXiv:1410.7423, JGT 2018) works in the signed-graft / odd-T-join framework, which is related but not identical to the plain graft T-join packing of the DeVos conjecture; it is cited as a partial result for a special case. The Edwards 2011 McGill thesis ('Optimization and packings of T-joins and T-cuts') contains further planar-graph results but could not be fully read due to PDF encoding issues, so it is not cited. The 2025 paper arXiv:2510.26975 (Kita) concerns grafts with connected minimum joins and does not address the main packing bound. No post-2007 paper found that improves the general floor(k/3) bound toward the conjectured (2/3)k−c.",
+  "slug": "packing_t_joins",
+  "reviewed_at": "2026-05-08",
+  "model": "claude-sonnet-4-6 (worker 07)",
+  "search_enabled": true
+}
