@@ -102,7 +102,6 @@ graph-conjectures/
 │   ├── intersection.json   # fuzzy cross-references (manually curated)
 │   ├── categories.json     # subjects / keywords / authors aggregated
 │   ├── authors.json
-│   ├── urls.txt            # canonical slug list
 │   └── agent_prompts/      # 227 derived per-problem briefs (input to claude -p)
 ├── PLAN.md                 # crawler / parser / site design + parser-selector spec
 ├── LIT_REVIEW.md           # literature-review pipeline design
