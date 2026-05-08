@@ -19,5 +19,9 @@ logs/
 data/agent_buckets/
 data/agent_launched.txt
 data/agent_queue.txt
+data/agent_failed.txt
 data/problems/
 data/reviews/*.raw.json
+
+# Crawler-emitted file that's redundant with problems.json
+data/urls.txt
