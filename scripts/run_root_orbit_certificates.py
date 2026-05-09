@@ -43,6 +43,7 @@ from optimize_certificate_multipliers import _build_lp
 from pebbling_graphs import cartesian_product, load_named_graph
 from run_column_generation import enumerate_simple_paths, path_to_strategy
 from run_column_generation_robust import round_and_fix
+from branching_tree_columns import enumerate_branching_trees
 
 
 def compute_root_orbits(L_n: int, L_edges) -> dict[tuple[int, int], list[tuple[int, int]]]:
@@ -98,6 +99,7 @@ def build_certificate_for_root(
     root_pair: tuple[int, int],
     max_len: int,
     denominator: int,
+    branching_max_depth: int = 0,
 ) -> tuple[dict | None, str | None, dict]:
     """Run the column-generation pipeline for one root.
 
@@ -111,6 +113,10 @@ def build_certificate_for_root(
 
     paths = enumerate_simple_paths(adj, root_flat, max_len=max_len)
     candidates = [path_to_strategy(p, root_flat) for p in paths]
+    if branching_max_depth >= 2:
+        candidates += enumerate_branching_trees(
+            paths, root_flat, max_depth=branching_max_depth
+        )
 
     payload = {
         "graph": {
@@ -201,6 +207,8 @@ def build_certificate_for_root(
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("--max-len", type=int, default=5)
+    ap.add_argument("--branching-max-depth", type=int, default=0,
+                    help="if >= 2, also include Y/trident branching trees up to this depth")
     ap.add_argument("--denominator", type=int, default=4800)
     ap.add_argument(
         "--out-dir",
@@ -230,7 +238,8 @@ def main() -> None:
         stats: dict = {}
         while payload is None and cur_max_len <= args.max_len + 3:
             payload, err, stats = build_certificate_for_root(
-                rep, cur_max_len, args.denominator
+                rep, cur_max_len, args.denominator,
+                branching_max_depth=args.branching_max_depth,
             )
             if payload is None and ("infeasible" in (err or "")):
                 cur_max_len += 1
@@ -260,7 +269,12 @@ def main() -> None:
             )
             continue
 
-        cert_path = out_dir / f"path_orbit_{rep[0]}_{rep[1]}_max_len{cur_max_len}.json"
+        suffix = (
+            f"max_len{cur_max_len}"
+            if args.branching_max_depth < 2
+            else f"max_len{cur_max_len}_branch{args.branching_max_depth}"
+        )
+        cert_path = out_dir / f"path_orbit_{rep[0]}_{rep[1]}_{suffix}.json"
         with cert_path.open("w") as fp:
             json.dump(payload, fp, indent=2)
 
