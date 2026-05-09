@@ -165,15 +165,54 @@ def run_pass(
             chosen = test
         if len(chosen) == n_strats:
             break
-    if len(chosen) != n_strats:
-        raise RuntimeError(
-            f"could not find {n_strats} linearly independent tight rows; got {len(chosen)}"
-        )
 
-    augmented = [list(row) + [Fraction(1)] for row in chosen]
-    alpha_rational = _gauss_jordan_solve(augmented)
-    if alpha_rational is None:
-        raise RuntimeError("Gauss-Jordan failed (singular system)")
+    if len(chosen) == n_strats:
+        augmented = [list(row) + [Fraction(1)] for row in chosen]
+        alpha_rational = _gauss_jordan_solve(augmented)
+        if alpha_rational is None:
+            raise RuntimeError("Gauss-Jordan failed (singular system)")
+    else:
+        # Degenerate LP: fewer linearly independent tight rows than variables.
+        # Fall back to fix-and-solve: pick (n_strats - len(chosen)) variables
+        # whose float values look "snappable" (already small denominator), fix
+        # them to those rationals, and solve the remaining square system.
+        from decimal import Decimal
+
+        n_free = n_strats - len(chosen)
+        # Score each strategy by how "snappable" its float alpha is: prefer
+        # values that are exact decimal fractions.
+        scored = sorted(
+            range(n_strats),
+            key=lambda i: abs(sub_alpha[i] - round(sub_alpha[i], 4)),
+        )
+        # Try fixing variables one at a time, prefer those with cleanest values.
+        # We need to pick n_free indices to fix. Try the first n_free.
+        fix_idx = sorted(scored[:n_free])
+        fix_vals = [Fraction(Decimal(str(round(sub_alpha[i], 6)))) for i in fix_idx]
+
+        # Build reduced system on the remaining n_strats - n_free = len(chosen)
+        # variables. For each tight row, subtract the fixed contributions.
+        free_idx = [i for i in range(n_strats) if i not in fix_idx]
+        reduced_rows: list[list[Fraction]] = []
+        for row in chosen:
+            fixed_contrib = sum(
+                (row[i] * v for i, v in zip(fix_idx, fix_vals)),
+                start=Fraction(0),
+            )
+            new_row = [row[i] for i in free_idx] + [Fraction(1) - fixed_contrib]
+            reduced_rows.append(new_row)
+        free_alpha = _gauss_jordan_solve(reduced_rows)
+        if free_alpha is None:
+            raise RuntimeError(
+                "fallback: reduced Gauss-Jordan failed; LP may be more degenerate"
+            )
+        # Reassemble full alpha
+        alpha_rational = [Fraction(0)] * n_strats
+        for i, v in zip(fix_idx, fix_vals):
+            alpha_rational[i] = v
+        for i, v in zip(free_idx, free_alpha):
+            alpha_rational[i] = v
+
     if any(a < 0 for a in alpha_rational):
         raise RuntimeError(f"negative alpha after rationalisation: {alpha_rational}")
 
