@@ -114,6 +114,30 @@ and the global bound is the max over those verified bounds.
 | (2, 3) | 120 | path max_len=7 |
 | (3, 3) | 113 | path max_len=5 |
 
+### Pricing-oracle experiments at root (0, 0)
+
+Sparse column generation (`scripts/run_sparse_column_generation.py`)
+with the path max_len=7 seed certificate at root (0, 0) gives float
+LP optimum 245.533 = 196723/800 (rationalized). Branch-and-bound DFS
+pricing for *basic uniform-leaf-depth* Hurlbert tree strategies under
+this LP's dual:
+
+| max tree depth | nodes explored | time budget | improving column found? |
+|---:|---:|---:|---:|
+| 5 | 32,998,361 | 30 s | none |
+| 6 | 128,025,839 | 120 s | none |
+| 7 | 196,674,777 | 180 s | none |
+
+Conclusion (real, not engineering): under the LP dual at root (0, 0)
+seeded by `path_orbit_0_0_max_len7.json`, no basic Hurlbert tree
+strategy with all leaves at the same depth and depth at most 7
+(weights at most 2^6 = 64) has negative reduced cost. By LP duality,
+the LP optimum 245.533 is LP-optimal across that strategy class; the
+rationalized derived bound 246 is the best achievable. Beating 246
+requires either non-basic strategies (allowing different child
+weights at the same parent), trees deeper than 7, or a different
+strategy class entirely.
+
 ### Branching-tree experiments
 
 Y-tree, trident, and Pi-tree column generation
