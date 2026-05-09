@@ -122,11 +122,12 @@ LP optimum 245.533 = 196723/800 (rationalized). Branch-and-bound DFS
 pricing for *basic uniform-leaf-depth* Hurlbert tree strategies under
 this LP's dual:
 
-| max tree depth | nodes explored | time budget | improving column found? |
-|---:|---:|---:|---:|
-| 5 | 32,998,361 | 30 s | none |
-| 6 | 128,025,839 | 120 s | none |
-| 7 | 196,674,777 | 180 s | none |
+| strategy class | parameters | nodes / time | improving column? |
+|---|---|---:|---:|
+| basic uniform-leaf-depth | depth ≤ 5 | 32,998,361 / 30 s | none |
+| basic uniform-leaf-depth | depth ≤ 6 | 128,025,839 / 120 s | none |
+| basic uniform-leaf-depth | depth ≤ 7 | 196,674,777 / 180 s | none |
+| nonbasic single-branch | weights ≤ 32, support ≤ 12 | 75,237,875 / 30 s | none |
 
 Conclusion (real, not engineering): under the LP dual at root (0, 0)
 seeded by `path_orbit_0_0_max_len7.json`, no basic Hurlbert tree

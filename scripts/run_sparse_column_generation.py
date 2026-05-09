@@ -44,7 +44,7 @@ sys.path.insert(0, str(REPO_ROOT / "scripts"))
 
 from check_pebbling_weight_certificate import check_certificate, load_certificate_file
 from pebbling_graphs import cartesian_product, load_named_graph
-from price_tree_strategy import price_basic_trees
+from price_tree_strategy import price_basic_trees, price_nonbasic_trees
 from run_column_generation import enumerate_simple_paths, path_to_strategy
 from run_column_generation_robust import round_and_fix
 from sparse_columns import (
@@ -109,11 +109,20 @@ def column_generation_loop(
     rounds: int,
     pricing_top_k: int,
     pricing_time_budget_s: float,
+    pricing_class: str = "basic",
+    nonbasic_weight_set: tuple[int, ...] = (1, 2, 4, 8, 16, 32),
+    nonbasic_max_support: int = 16,
+    nonbasic_max_root_child_weight: int = 32,
     log: bool = True,
 ) -> tuple[list[StrategyColumn], np.ndarray, np.ndarray, float]:
     """Run rounds of solve-master-LP + price + add columns.
 
     Stops when no negative reduced-cost column is found.
+
+    ``pricing_class`` is "basic" (uniform-leaf-depth Hurlbert trees, depth
+    bounded by ``max_depth``) or "nonbasic" (allow w(parent) > 2 w(child)
+    with weight choices from ``nonbasic_weight_set`` and support cap
+    ``nonbasic_max_support``).
     """
     fun = float("inf")
     alpha = np.zeros(0)
@@ -128,17 +137,36 @@ def column_generation_loop(
                 flush=True,
             )
         # Pricing
-        pr = price_basic_trees(
-            adj=adj,
-            root=root,
-            y=list(y),
-            n_vertices=n_vertices,
-            max_depth=max_depth,
-            top_k=pricing_top_k,
-            require_negative_reduced_cost=True,
-            time_budget_s=pricing_time_budget_s,
-            log=False,
-        )
+        if pricing_class == "basic":
+            pr = price_basic_trees(
+                adj=adj,
+                root=root,
+                y=list(y),
+                n_vertices=n_vertices,
+                max_depth=max_depth,
+                top_k=pricing_top_k,
+                require_negative_reduced_cost=True,
+                time_budget_s=pricing_time_budget_s,
+                log=False,
+            )
+        elif pricing_class == "nonbasic":
+            pr = price_nonbasic_trees(
+                adj=adj,
+                root=root,
+                y=list(y),
+                n_vertices=n_vertices,
+                weight_set=nonbasic_weight_set,
+                max_support=nonbasic_max_support,
+                max_root_child_weight=nonbasic_max_root_child_weight,
+                top_k=pricing_top_k,
+                require_negative_reduced_cost=True,
+                time_budget_s=pricing_time_budget_s,
+                log=False,
+            )
+        else:
+            raise ValueError(
+                f"unknown pricing_class={pricing_class!r}; expected 'basic' or 'nonbasic'"
+            )
         if not pr.columns:
             if log:
                 print(
@@ -234,6 +262,9 @@ def main() -> None:
     ap.add_argument("--pricing-top-k", type=int, default=16)
     ap.add_argument("--pricing-time-budget-s", type=float, default=30.0)
     ap.add_argument("--denominator", type=int, default=4800)
+    ap.add_argument("--pricing-class", default="basic", choices=["basic", "nonbasic"])
+    ap.add_argument("--nonbasic-max-support", type=int, default=16)
+    ap.add_argument("--nonbasic-max-root-child-weight", type=int, default=32)
     ap.add_argument("--out", default="auto",
                     help="output certificate path; 'auto' picks based on root and final bound")
     args = ap.parse_args()
@@ -277,6 +308,9 @@ def main() -> None:
         rounds=args.rounds,
         pricing_top_k=args.pricing_top_k,
         pricing_time_budget_s=args.pricing_time_budget_s,
+        pricing_class=args.pricing_class,
+        nonbasic_max_support=args.nonbasic_max_support,
+        nonbasic_max_root_child_weight=args.nonbasic_max_root_child_weight,
     )
 
     # Rationalise and emit

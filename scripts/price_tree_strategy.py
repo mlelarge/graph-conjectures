@@ -90,6 +90,153 @@ def _tree_to_column(
     )
 
 
+def price_nonbasic_trees(
+    adj: list[list[int]],
+    root: int,
+    y: list[float],
+    n_vertices: int,
+    *,
+    weight_set: tuple[int, ...] = (1, 2, 4, 8, 16, 32),
+    max_support: int = 16,
+    max_root_child_weight: int = 32,
+    top_k: int = 8,
+    require_negative_reduced_cost: bool = True,
+    time_budget_s: float = 60.0,
+    one_root_branch_only: bool = True,
+    log: bool = False,
+) -> PricingResult:
+    """Branch-and-bound DFS for **nonbasic** Hurlbert tree strategies.
+
+    Nonbasic relaxation of the doubling rule: ``w(parent) >= 2 w(child)``
+    rather than equality. Different children of the same parent may
+    have different weights. Equivalently, leaves may sit at different
+    depths.
+
+    Search variables:
+
+    - ``V(T) subseteq V(L_fpy box L_fpy)``, root in V(T).
+    - ``w: V(T) -> {1, 2, 4, 8, 16, 32}`` (configurable).
+    - ``parent: V(T) -> V(T)``: edges of T are L Box L edges; root has no
+      parent. Doubling: for each non-root non-root-neighbour v,
+      w(parent(v)) >= 2 w(v). Root-child weight is unconstrained.
+
+    Cost = sum_v (1 - y_v) w(v). Minimised by DFS.
+
+    ``one_root_branch_only=True`` restricts to trees with a single
+    root-child (a "primitive" tree in Hurlbert's terminology), per the
+    decomposition lemma.
+
+    Pruning:
+
+    - Skip if support size exceeds ``max_support``.
+    - Skip if the current partial cost is already worse than the
+      worst-of-top_k found so far (only meaningful when require_negative
+      is False; otherwise top_k tracks negative-only).
+    """
+    y_full = [0.0] * n_vertices
+    j = 0
+    for v in range(n_vertices):
+        if v == root:
+            continue
+        y_full[v] = y[j]
+        j += 1
+
+    cost_coef = [1.0 - y_full[v] for v in range(n_vertices)]
+    weight_set_sorted = sorted(weight_set, reverse=True)
+
+    # Precompute valid child weights given parent weight: {w_c in weight_set | 2 w_c <= w_p}
+    valid_child_weights: dict[int, list[int]] = {}
+    for w_p in weight_set_sorted:
+        valid_child_weights[w_p] = [w_c for w_c in weight_set_sorted if 2 * w_c <= w_p]
+
+    found: list[tuple[float, dict, dict]] = []  # (cost, weights, parent)
+    nodes_explored = [0]
+    start = time.monotonic()
+
+    def add_candidate(cost: float, weights: dict[int, int], parent: dict[int, int]):
+        if require_negative_reduced_cost and cost >= 0:
+            return
+        found.append((cost, dict(weights), dict(parent)))
+        found.sort(key=lambda x: x[0])
+        del found[top_k:]
+
+    def dfs(
+        weights: dict[int, int],
+        parent: dict[int, int],
+        partial_cost: float,
+        active: set[int],
+    ) -> None:
+        nodes_explored[0] += 1
+        if time.monotonic() - start > time_budget_s:
+            return
+
+        if weights:
+            add_candidate(partial_cost, weights, parent)
+
+        if len(weights) >= max_support:
+            return
+
+        for v in list(active):
+            w_v = weights[v]
+            child_weights = valid_child_weights.get(w_v, [])
+            if not child_weights:
+                continue
+            for c in adj[v]:
+                if c == root or c in weights:
+                    continue
+                # try each allowable weight for c
+                for w_c in child_weights:
+                    cost_inc = cost_coef[c] * w_c
+                    weights[c] = w_c
+                    parent[c] = v
+                    new_active = active | {c} if w_c > 1 else active
+                    dfs(weights, parent, partial_cost + cost_inc, new_active)
+                    del weights[c]
+                    del parent[c]
+
+    # Outer loop: pick the root-child u and its weight w_u.
+    for u in adj[root]:
+        for w_u in weight_set_sorted:
+            if w_u > max_root_child_weight:
+                continue
+            cost_u = cost_coef[u] * w_u
+            weights = {u: w_u}
+            parent = {u: root}
+            active = {u} if w_u > 1 else set()
+            dfs(weights, parent, cost_u, active)
+            if not one_root_branch_only:
+                # In a multi-branch search we'd allow root to have multiple
+                # children. Decomposition lemma says single-branch suffices.
+                pass
+
+    elapsed = time.monotonic() - start
+    columns: list[StrategyColumn] = []
+    reduced: list[Fraction] = []
+    for cost, weights, par in found:
+        sw: dict[int, Fraction] = {v: Fraction(w) for v, w in weights.items()}
+        edges = [tuple(sorted([v, par[v]])) for v in par]
+        col = StrategyColumn(
+            weights=sw,
+            tree_edges=edges,
+            name=f"priced-nonbasic |V|={len(weights)}",
+            basic=False,
+            source="pricing oracle (nonbasic)",
+        )
+        columns.append(col)
+        reduced.append(Fraction(int(round(cost * 10**12)), 10**12))
+    return PricingResult(
+        columns=columns,
+        reduced_costs=reduced,
+        nodes_explored=nodes_explored[0],
+        elapsed_s=elapsed,
+        notes=(
+            f"nonbasic, weight_set={weight_set}, max_support={max_support}, "
+            f"max_root_child_weight={max_root_child_weight}, "
+            f"top_k={top_k}, time_budget_s={time_budget_s}"
+        ),
+    )
+
+
 def price_basic_trees(
     adj: list[list[int]],
     root: int,

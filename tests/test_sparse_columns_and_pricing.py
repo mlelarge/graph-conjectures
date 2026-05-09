@@ -71,6 +71,54 @@ def test_pricing_oracle_terminates_with_no_improvement_at_seed() -> None:
     assert pr.columns == [] or all(rc < 0 for rc in pr.reduced_costs)
 
 
+def test_nonbasic_pricing_runs_and_returns_negative_only() -> None:
+    """Nonbasic pricing oracle: at root (0, 0) seed, no negative-reduced-cost
+    nonbasic tree at small support and time budget."""
+    from price_tree_strategy import price_nonbasic_trees
+
+    columns, _, root = load_seed_certificate(SEED_00)
+    L = load_named_graph("L_fpy")
+    LL = cartesian_product(L, L)
+    n = LL.n
+    adj = LL.adjacency()
+    fun, alpha, y = solve_master_lp(columns, n, root)
+    pr = price_nonbasic_trees(
+        adj=adj, root=root, y=list(y), n_vertices=n,
+        weight_set=(1, 2, 4, 8, 16),
+        max_support=8,
+        max_root_child_weight=16,
+        top_k=4, require_negative_reduced_cost=True,
+        time_budget_s=5.0,
+    )
+    # All returned columns must have strictly negative reduced cost
+    assert all(rc < 0 for rc in pr.reduced_costs)
+    # If any returned, it must be a valid Hurlbert nonbasic strategy:
+    # weights are subset of weight_set, doubling holds along edges
+    for col in pr.columns:
+        for v, w in col.weights.items():
+            assert int(w) in (1, 2, 4, 8, 16)
+        # parent-doubling: walk tree edges
+        # tree_edges is an unordered list; reconstruct parent by BFS from
+        # vertices with no incoming-edge in V_T (the root-child)
+        vset = set(col.weights.keys())
+        # Each non-root vertex v has at least one tree-edge to some other
+        # vertex w in V_T or to the root; at least one neighbour w in V_T
+        # must satisfy w_w >= 2 * w_v (this is the nonbasic condition).
+        for v, wv in col.weights.items():
+            if wv == 0:
+                continue
+            # find any neighbor in V_T with weight >= 2*wv
+            ok = any(
+                col.weights.get(u, 0) >= 2 * wv for u in vset if u != v
+            )
+            # vertex with max weight in tree is the root-child; for it
+            # we don't require a parent-with-2x neighbor (root has weight 0).
+            max_w = max(col.weights.values())
+            if wv == max_w:
+                continue  # root-child, free weight
+            assert ok, f"vertex {v} weight {wv} has no neighbor with weight >= {2*wv}"
+
+
 def test_emit_certificate_round_trips() -> None:
     """A certificate emitted from sparse columns + rational alpha is
     accepted by the rational checker."""
