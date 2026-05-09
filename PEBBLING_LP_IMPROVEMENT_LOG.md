@@ -128,6 +128,7 @@ this LP's dual:
 | basic uniform-leaf-depth | depth ≤ 6 | 128,025,839 / 120 s | none |
 | basic uniform-leaf-depth | depth ≤ 7 | 196,674,777 / 180 s | none |
 | nonbasic single-branch | weights ≤ 32, support ≤ 12 | 75,237,875 / 30 s | none |
+| nonbasic single-branch | weights ≤ 32, support ≤ 16 | 292,440,752 / 120 s | none |
 
 Conclusion (real, not engineering): under the LP dual at root (0, 0)
 seeded by `path_orbit_0_0_max_len7.json`, no basic Hurlbert tree
