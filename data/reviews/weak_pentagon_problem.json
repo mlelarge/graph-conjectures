@@ -1,8 +1,31 @@
 {
   "status": "partial",
-  "confidence": "low",
-  "summary": "The weak pentagon conjecture — that every cubic triangle-free graph admits a homomorphism to the Clebsch graph — remains open in full generality. The key partial result at posting time (girth $\\geq 17$ suffices, DeVos–Šámal) was already cited in the problem. Subsequent searches strongly suggest that further partial progress has been made (triangle-free planar graphs, $K_5$-minor-free graphs), but every candidate post-posting paper was inaccessible via WebFetch (HTTP 403 / paywall), so none can be cited per verification requirements.",
-  "since_posted": [],
+  "confidence": "medium",
+  "summary": "The weak pentagon conjecture — equivalently, that every triangle-free cubic graph admits a homomorphism to the Clebsch graph $PQ_4$ — remains open in full generality. The strongest verified positive evidence is still structural/special-class progress: DeVos–Šámal proved the high-girth case before the OPG posting, Naserasr proved the triangle-free planar case before the posting and later showed the Clebsch graph is the smallest triangle-free planar bound, and Naserasr–Nigussie–Škrekovski extended the Clebsch-homomorphism result to all triangle-free graphs with no $K_5$ minor.",
+  "since_posted": [
+    {
+      "title": "Homomorphisms of triangle-free graphs without a K5-minor",
+      "authors": "Reza Naserasr, Yared Nigussie, Riste Škrekovski",
+      "year": 2009,
+      "venue": "Discrete Mathematics",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0012365X09002581",
+      "doi": "10.1016/j.disc.2009.04.032",
+      "arxiv_id": null,
+      "kind": "partial",
+      "claim": "Extends the Clebsch-graph homomorphism result from triangle-free planar graphs to all triangle-free graphs with no $K_5$ minor, giving a post-posting special class that includes cubic examples."
+    },
+    {
+      "title": "Mapping planar graphs into projective cubes",
+      "authors": "Reza Naserasr",
+      "year": 2013,
+      "venue": "Journal of Graph Theory",
+      "url": "https://www.irif.fr/~reza/pdfs/papers/N13.pdf",
+      "doi": "10.1002/jgt.21708",
+      "arxiv_id": null,
+      "kind": "partial",
+      "claim": "Shows that the Clebsch graph is the smallest triangle-free graph bounding all triangle-free planar graphs, strengthening the planar special case relevant to the weak pentagon conjecture."
+    }
+  ],
   "search_queries": [
     "weak pentagon problem cubic triangle-free graph Clebsch homomorphism conjecture Samal",
     "cubic graph homomorphism Clebsch graph triangle-free cut-continuous mapping C5 pentagon",
@@ -13,14 +36,27 @@
     "Naserasr triangle-free planar graph Clebsch graph homomorphism arXiv",
     "arXiv \"mapping planar graphs\" projective cubes Naserasr triangle-free Clebsch",
     "\"triangle-free graphs without a K5-minor\" homomorphism Clebsch Discrete Mathematics 2009 authors",
-    "arXiv \"K5-minor\" \"triangle-free\" \"Clebsch\" homomorphism graph"
+    "arXiv \"K5-minor\" \"triangle-free\" \"Clebsch\" homomorphism graph",
+    "\"Every triangle-free cubic graph has a homomorphism to PQ4\"",
+    "\"triangle-free cubic graph\" \"not homomorphic\" \"Clebsch graph\"",
+    "\"Mapping Planar Graphs into Projective Cubes\" \"Journal of Graph Theory\"",
+    "\"Mapping Planar Graphs into Projective Cubes\" Reza Naserasr DOI"
   ],
   "verified_urls": [
     "https://arxiv.org/abs/math/0602580",
+    "https://www.sfu.ca/~mdevos/papers/clebsch.pdf",
+    "https://kam.mff.cuni.cz/~samal/papers/clebsch/clebsch.pdf",
+    "https://www.irif.fr/~reza/pdfs/papers/N07.pdf",
+    "https://www.sciencedirect.com/science/article/pii/S0012365X09002581",
+    "https://citeseerx.ist.psu.edu/document?doi=263f9bdfa395e8bbed81d02f63f1b932b833996e&repid=rep1&type=pdf",
+    "https://www.irif.fr/~reza/pdfs/papers/N13.pdf",
+    "https://dblp.org/db/journals/jgt/jgt74.html",
+    "https://www.sciencedirect.com/science/article/pii/S0095895617300011",
+    "https://www.sciencedirect.com/science/article/pii/S0195669811002204",
     "https://arxiv.org/abs/2406.10814",
     "https://dmtcs.episciences.org/612"
   ],
-  "notes": "Multiple independent search results consistently assert that Naserasr proved every triangle-free planar graph maps homomorphically to the Clebsch graph (J. Graph Theory 73, 2013, DOI 10.1002/jgt.21703), and that a 2009 Discrete Mathematics paper (pii S0012365X09002581) extended this to triangle-free K5-minor-free graphs — both post-posting partial results. However, the Wiley journal page, IRIF author PDF, ResearchGate, and HAL all returned HTTP 403 or anti-bot blocks, making it impossible to confirm titles/authors/claims per the verification requirement. The arXiv preprint math/0602580 (DeVos–Šámal, Feb 2006) predates the posting and is already cited in the OPG statement as [DS]. The signed projective cubes paper arXiv:2406.10814 (Chen–Naserasr–Sarti, 2024) was verified but does not directly address the weak pentagon conjecture for cubic triangle-free graphs.",
+  "notes": "The core high-girth theorem of DeVos–Šámal (arXiv:math/0602580; author PDFs also verified) predates the 2007-07-13 OPG posting and is already cited in the OPG statement, so it is not listed in since_posted. Naserasr's 'Homomorphisms and edge-colourings of planar graphs' (JCTB 97(3), 2007; DOI 10.1016/j.jctb.2006.07.001) also predates the posting and proves the triangle-free planar case via the Clebsch graph. The post-posting 2009 Discrete Mathematics paper verifies a broader minor-closed special class, and the 2013 Journal of Graph Theory paper verifies optimality of the planar Clebsch bound; neither resolves arbitrary triangle-free cubic graphs. Targeted searches for a proof or counterexample to Šámal's full cubic triangle-free conjecture found no resolution.",
   "slug": "weak_pentagon_problem",
   "reviewed_at": "2026-05-08",
   "model": "claude-sonnet-4-6 (worker 05)",
