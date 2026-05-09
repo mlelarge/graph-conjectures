@@ -62,6 +62,78 @@ Column-generation pass:
 6. Verify dual feasibility rationally on every non-root vertex and
    feed to the existing rational checker.
 
+## Globalization to all root orbits
+
+After improving the rooted bound at $(v_1, v_1) = (4, 4)_{\rm fpy}$ to
+106 with Hurlbert + paths, the same path-based pipeline was extended to
+every orbit representative of $V(L_{\rm fpy})\times V(L_{\rm fpy})$ under
+$\mathrm{Aut}(L_{\rm fpy})\times Z_2$ (coordinate swap):
+
+- $\lvert\mathrm{Aut}(L_{\rm fpy})\rvert = 6$ ($S_3$ on the three
+  degree-3 vertices $\{4, 5, 6\}$).
+- 22 root orbits totalling 64 vertices (size distribution
+  $6\times 6 + 1\times 3 + 10\times 2 + 5\times 1$).
+
+Per-orbit certificates produced and rationally checked. Aggregating the
+best certificate per orbit gives:
+
+| Configuration | Global bound | Worst orbit |
+|---|---:|---|
+| paths max_len=5 | 280 | (0, 1) |
+| paths max_len=7 (best per orbit) | **246** | (0, 0) |
+| FPY 2024 (paper, not locally re-checked) | $\le 96$ | — |
+
+The 246 bound is fully **local and rational**: every per-orbit
+certificate is verified by `check_pebbling_weight_certificate.py`,
+and the global bound is the max over those verified bounds.
+
+### Per-orbit rooted bounds at the 246 milestone
+
+| orbit rep | bound | method |
+|---|---:|---|
+| (0, 0) | 246 | path max_len=7 |
+| (0, 1) | 229 | path max_len=7 |
+| (1, 1) | 213 | path max_len=7 |
+| (0, 4) | 196 | path max_len=7 |
+| (4, 4) | 185 | path max_len=5 (locally we have 106 with Hurlbert+paths but not yet ported here) |
+| (4, 5) | 185 | path max_len=5 |
+| (0, 2) | 173 | path max_len=7 |
+| (1, 4) | 177 | path max_len=7 |
+| (1, 7) | 173 | path max_len=7 |
+| (1, 2) | 169 | path max_len=7 |
+| (1, 3) | 161 | path max_len=7 |
+| (0, 7) | 179 | path max_len=7 |
+| (4, 7) | 176 | path max_len=5 |
+| (0, 3) | 156 | path max_len=5 + Y-trees |
+| (2, 4) | 153 | path max_len=7 |
+| (3, 4) | 151 | path max_len=5 |
+| (2, 7) | 141 | path max_len=7 |
+| (3, 7) | 136 | path max_len=5 |
+| (2, 2) | 136 | path max_len=7 |
+| (7, 7) | 154 | path max_len=6 |
+| (2, 3) | 120 | path max_len=7 |
+| (3, 3) | 113 | path max_len=5 |
+
+### Branching-tree experiments
+
+Y-tree, trident, and Pi-tree column generation
+(`scripts/branching_tree_columns.py`) was run on the worst orbits at
+branching depth 4 with paths max_len=5:
+
+- (0, 1): 280 → 272 with branching, but max_len=7 path-only gave 229.
+  Longer paths beat branching here.
+- (1, 1): 259 → 226 with branching; max_len=7 paths give 213. Paths win.
+- (0, 4): 238 → 224 with branching; max_len=7 paths give 196. Paths win.
+- (0, 0): no improvement at branching depth 4. Branching depth 5
+  hits OOM (combinatorial enumeration explodes).
+
+Conclusion: at this stage the LP is dominated by single-path columns
+even when richer trees are available, because the LP is degenerate and
+the round-and-fix rationalization inflates branching trees more than
+paths. To genuinely beat the 246 bound, need either (i) Hurlbert-style
+hand-crafted strategies for non-(4,4) diagonal roots, (ii) exact
+rational LP solver, or (iii) MILP-driven strategy search.
+
 ## Known limitations / next steps
 
 - **The 106 certificate is not LP-optimal.** Round-and-fix at $D=4800$
