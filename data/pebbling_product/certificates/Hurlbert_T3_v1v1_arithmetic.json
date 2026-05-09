@@ -1,0 +1,50 @@
+{
+  "kind": "arithmetic_reproduction",
+  "subject": "Hurlbert 2017 Theorem 10 averaged weight matrix T_3 for L box L at root (v1, v1)",
+  "primary_source": {
+    "citation": "G. Hurlbert, The weight function lemma for graph pebbling, Journal of Combinatorial Optimization 34(2) (2017), 343-361",
+    "arxiv": "https://arxiv.org/abs/1101.5641",
+    "theorem": "Theorem 10",
+    "matrix_label_in_paper": "T_3",
+    "located_at": "lines 421-448 of the arXiv PDF text extract"
+  },
+  "what_this_file_contains": "The 8x8 averaged weight matrix T_3 = (T_1 + T_2 + T_3 + T_4)/4 transcribed verbatim. The four underlying basic tree strategies T_1..T_4 are shown only in the paper's Figure 5; we have NOT transcribed them. Therefore this file is arithmetic data, not a Hurlbert weight-function certificate.",
+  "what_this_file_does_NOT_contain": [
+    "the four underlying basic tree strategies T_1, T_2, T_3, T_4 (Figure 5)",
+    "any tree-edge subgraph of L box L",
+    "any per-strategy doubling-inequality validation"
+  ],
+  "label": "Arithmetic reproduction of Hurlbert's published bound, NOT an independent rational certificate. The four supporting tree strategies are required to upgrade this to a rationally checked certificate via scripts/check_pebbling_weight_certificate.py.",
+  "factor_graph_labelling": "Hurlbert's v_1..v_8 in the order he writes them; mapping to our 0-based L: v_i corresponds to bilevel index i, which equals our index i-1.",
+  "root_in_paper_labels": "(v_1, v_1)",
+  "matrix_T3": [
+    [0, 8, 8, 1, 4, 1, 1, 2],
+    [8, 4, 1, 2, 1, 1, 1, 1],
+    [8, 4, 1, 1, 1, 1, 1, 1],
+    [4, 1, 1, 1, 1, 1, 1, 1],
+    [1, 2, 1, 1, 1, 1, 1, 1],
+    [1, 1, 1, 1, 1, 1, 1, 1],
+    [1, 1, 1, 1, 1, 1, 1, 1],
+    [2, 1, 1, 1, 1, 1, 1, 1]
+  ],
+  "expected_arithmetic_facts": {
+    "matrix_shape": [8, 8],
+    "root_index_in_matrix": [0, 0],
+    "root_weight": 0,
+    "every_other_entry_at_least_1": true,
+    "sum_of_non_root_entries": 107,
+    "paper_decomposition": {
+      "formula_in_paper": "63 + 4*(7 + 3 + 1) + 1 = 108",
+      "63": "= 64 - 1 = number of non-root vertices in L box L; each contributes at least weight 1",
+      "4*(7+3+1)": "= 44 = total excess weight above the 'one per cell' base, distributed across the four strategies",
+      "63_plus_44": "= 107 = sum of non-root entries of T_3",
+      "+1": "the conventional +1 in pi <= floor(LP_value) + 1"
+    },
+    "derived_bound": 108,
+    "derived_bound_formula": "floor(sum_non_root_entries) + 1 = floor(107) + 1 = 108"
+  },
+  "duality_reading_if_T1_T2_T3_T4_were_supplied": {
+    "alpha_per_strategy": "1/4",
+    "claim": "If T_1..T_4 are valid basic Hurlbert tree strategies on L box L rooted at (v1, v1), and the matrix T_3 = (T_1+T_2+T_3+T_4)/4 is their average with every non-root entry >= 1, then by LP duality with alpha = (1/4, 1/4, 1/4, 1/4), pi(L box L, (v1, v1)) <= sum_v T_3(v) + 1 = 108. The arithmetic file shows that every condition that does NOT depend on the four strategies' tree structure is satisfied; the tree-structure-dependent conditions remain unverified here."
+  }
+}

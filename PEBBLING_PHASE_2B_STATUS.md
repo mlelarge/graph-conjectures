@@ -219,12 +219,40 @@ into the saved arc list; or (b) the code path that produced the
 2. **Or contact Flocco–Pulaj–Yerger** for a structured (non-CSV) dump
    of the per-strategy weights and tree edges as JSON or pickle.
 
-3. **Or hand-transcribe Hurlbert 2017 Theorem 10's $T_3$ matrix** for
-   $r=(v_1, v_1)$ on $L\Box L$ as a single nonbasic strategy with
-   multiplier $1$ and feed it to our checker. Hurlbert's weights are
-   in plain text in his paper (lines 439–447 of the arXiv PDF) and
-   are exact integers, so there is no rounding loss. Expected derived
-   bound: 108. Lower-effort than (1) or (2).
+3. **Hurlbert 2017 Theorem 10 arithmetic reproduction** (done, but
+   labelled honestly as arithmetic, not as an independent
+   certificate). The 8x8 averaged matrix $T_3$ from
+   *G. Hurlbert, The weight function lemma for graph pebbling*,
+   J. Combinatorial Optimization 34(2) (2017), 343–361
+   (arXiv:1101.5641, **not** the math/0406024 survey), Theorem 10,
+   has been transcribed into
+   `data/pebbling_product/certificates/Hurlbert_T3_v1v1_arithmetic.json`
+   and its arithmetic conditions verified by
+   `scripts/check_hurlbert_T3_arithmetic.py`:
 
-Until at least step (3) is executed and a verified bound is rationally
-checked locally, Phase 2b is paused.
+   - root entry is $0$;
+   - every other entry is $\ge 1$;
+   - sum of non-root entries is $107$;
+   - derived bound $\lfloor 107\rfloor + 1 = 108$.
+
+   This **does not** prove $\pi(L\Box L,(v_1,v_1))\le 108$ from our
+   own machinery: $T_3$ is the *average of four* basic Hurlbert tree
+   strategies $T_1,\dots,T_4$ shown only as figures in the paper.
+   Without the four trees, the parent-doubling inequalities are not
+   verified locally. Treating $T_3$ as a single nonbasic strategy in
+   our checker is **incorrect**, because a nonbasic strategy still
+   requires a supporting subtree of $L\Box L$ along which the
+   $w(v^+)\ge 2w(v)$ inequality holds; $T_3$ as published is only a
+   matrix.
+
+4. **Independent certificate would require** transcribing the four
+   tree structures from Hurlbert's Figure 5, encoding each as a
+   basic strategy on $L\Box L$, and feeding all four to
+   `check_pebbling_weight_certificate.py` with dual multipliers
+   $(1/4, 1/4, 1/4, 1/4)$. This is a one-week transcription task
+   and is the cleanest remaining pebbling task before any FPY work
+   resumes.
+
+Until at least step (4) is executed and a verified bound is rationally
+checked locally, Phase 2b is paused. The arithmetic reproduction in
+step (3) is closure for now, not a certificate.
