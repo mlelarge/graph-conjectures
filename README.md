@@ -103,11 +103,27 @@ graph-conjectures/
 │   ├── categories.json     # subjects / keywords / authors aggregated
 │   ├── authors.json
 │   └── agent_prompts/      # 227 derived per-problem briefs (input to claude -p)
+├── problems/               # self-contained research workstreams
+│   ├── directed_path_minimum_outdegree/
+│   └── pebbling_cartesian_product/
 ├── PLAN.md                 # crawler / parser / site design + parser-selector spec
 ├── LIT_REVIEW.md           # literature-review pipeline design
 ├── LICENSE                 # MIT for code
 └── LICENSE-DATA.md         # GFDL for data derived from OPG
 ```
+
+## Featured: directed-path conjecture (Cheng--Keevash Conjecture 1)
+
+A separate workstream attacks Thomasse's directed-path conjecture
+(every oriented graph with minimum out-degree $\delta$ contains a
+directed simple path of length $2\delta$), via Cheng--Keevash Lemma 7
+and computer-aided enumeration.
+
+The workstream now lives under
+[`problems/directed_path_minimum_outdegree/`](problems/directed_path_minimum_outdegree/).
+Its current packaged status closes $\delta \leq 3$, and closes
+$\delta = 4$ at $n = 9, 10, 11$; the first open local target is
+$\delta = 4, n \geq 12$.
 
 ## Licensing summary
 
