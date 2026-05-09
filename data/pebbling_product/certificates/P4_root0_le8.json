@@ -1,0 +1,20 @@
+{
+  "graph": {
+    "n": 4,
+    "edges": [[0, 1], [1, 2], [2, 3]],
+    "name": "P4"
+  },
+  "root": 0,
+  "claimed_bound": 8,
+  "strategies": [
+    {
+      "name": "P4 full path basic strategy",
+      "tree_edges": [[0, 1], [1, 2], [2, 3]],
+      "weights": {"0": "0", "1": "4", "2": "2", "3": "1"},
+      "basic": true
+    }
+  ],
+  "dual_multipliers": ["1"],
+  "notes": "Proves pi(P4, r=0) <= 8. Tight: pi(P4) = 8. b_T = 4+2+1 = 7, derived = floor(7) + 1 = 8.",
+  "source": "Hurlbert 2017 weight function lemma"
+}

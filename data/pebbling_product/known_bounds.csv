@@ -1,0 +1,10 @@
+product,root_orbit,kind,numeric_value,text_value,source,certificate_path,notes
+L,all,certified_upper_bound,8,,"Hurlbert math/0406024 + Snevily-Foster 2000",,"pi(L) = 8 = |V(L)|, class 0; reproduced locally"
+L1,all,certified_upper_bound,8,,"Cusack-Green-Bekmetjev-Powers 2019 + Wood-Pulaj 2024 (paraphrased)",,"every 8-vertex Lemke graph has pi=8; reproduced locally"
+L2,all,certified_upper_bound,8,,"Cusack-Green-Bekmetjev-Powers 2019 + Wood-Pulaj 2024 (paraphrased)",,"every 8-vertex Lemke graph has pi=8; reproduced locally"
+L_box_L,all,trivial_lower_bound,64,,"|V(LxL)| trivial bound",,"pi(G) >= |V(G)|"
+L_box_L,all,certified_upper_bound,96,,"Flocco-Pulaj-Yerger DAM 347 (2024) Theorem 4.2","https://github.com/dominicflocco/Graph_Pebbling","tree+symmetric tree strategy MILP, hardest root (v1,v1)"
+L_box_L,"(v1,v1)",certified_upper_bound,108,,"Hurlbert 2017 Weight Function Lemma paper Theorem 10",,"rooted Hurlbert bound for (v1,v1); superseded by FPY 2024 for the global Lemke-square bound"
+L_box_L,all,heuristic_upper_value,,~85,"Kenter-Skipper-Wilson 2020 (paraphrased via FPY 2024)",,"reported numerical/IP value; not a rationally checkable certificate"
+L_box_L,all,folklore_or_secondary,64,,"Graham's conjecture (Chung 1989)",,"conjectural target = pi(L)*pi(L); not a theorem"
+L_box_L,all,support_restricted_certified,64,"pi_4(LxL) <= 64","Wood-Pulaj 2024 Theorem 1 (arXiv:2411.19314)",,"support-4 only: pi_4(L'xL'') <= pi(L')pi(L'') for all 8-vertex Lemke L', L''"

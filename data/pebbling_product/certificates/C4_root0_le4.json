@@ -1,0 +1,26 @@
+{
+  "graph": {
+    "n": 4,
+    "edges": [[0, 1], [1, 2], [2, 3], [0, 3]],
+    "name": "C4"
+  },
+  "root": 0,
+  "claimed_bound": 4,
+  "strategies": [
+    {
+      "name": "C4 path strategy CCW (0-1-2-3)",
+      "tree_edges": [[0, 1], [1, 2], [2, 3]],
+      "weights": {"0": "0", "1": "4", "2": "2", "3": "1"},
+      "basic": true
+    },
+    {
+      "name": "C4 path strategy CW (0-3-2-1)",
+      "tree_edges": [[0, 3], [2, 3], [1, 2]],
+      "weights": {"0": "0", "3": "4", "2": "2", "1": "1"},
+      "basic": true
+    }
+  ],
+  "dual_multipliers": ["1/4", "1/4"],
+  "notes": "Two-strategy averaging certificate for pi(C_4, r=0) <= 4. Each strategy is a basic Hurlbert path strategy along one direction of the cycle. Dual feasibility: T_3(1) = 4*1/4 + 1*1/4 = 5/4 >= 1; T_3(2) = 2*1/4 + 2*1/4 = 1 >= 1 (tight); T_3(3) = 1*1/4 + 4*1/4 = 5/4 >= 1. Sum of alpha_i * b_i = (1/4)*7 + (1/4)*7 = 7/2. Derived = floor(7/2) + 1 = 4. Match: pi(C_4) = 4 (class 0). This mirrors Hurlbert's averaging technique used in his Theorem 10 for L box L (his bound 108 came from 4 averaged strategies with multiplier 1/4 each).",
+  "source": "Hand-constructed in the style of Hurlbert 2017 Theorem 10 (averaging tree strategies)"
+}

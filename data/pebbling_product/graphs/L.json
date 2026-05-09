@@ -1,0 +1,43 @@
+{
+  "name": "L",
+  "long_name": "Original 8-vertex Lemke graph",
+  "n": 8,
+  "vertices": [0, 1, 2, 3, 4, 5, 6, 7],
+  "vertex_labels_bilevel_1based": [1, 2, 3, 4, 5, 6, 7, 8],
+  "edges": [
+    [0, 1], [1, 2], [2, 3], [3, 4], [4, 5], [5, 6], [6, 0],
+    [2, 5], [2, 7], [3, 6], [4, 6], [4, 7], [6, 7]
+  ],
+  "edge_count": 13,
+  "degree_sequence": [5, 4, 4, 3, 3, 3, 2, 2],
+  "primary_sources": [
+    {
+      "citation": "G. Hurlbert, A Survey of Graph Pebbling, arXiv:math/0406024",
+      "url": "https://arxiv.org/abs/math/0406024",
+      "quote": "the Lemke graph L, whose vertex set is {a,b,c,d,w,x,y,z} and whose edge set consists of the union of the complete bipartite graphs {a}×{b,c,d} and {b,c,d}×{w,z} with the path w,x,y,z,a"
+    },
+    {
+      "citation": "K. Wood, J. Pulaj, Bilevel Programming for Pebbling Numbers of Lemke Graph Products, arXiv:2411.19314",
+      "url": "https://arxiv.org/abs/2411.19314",
+      "quote": "Lemke Graph 0 from pebbling_number_bilevel.py: edges (1,2),(2,3),(3,4),(4,5),(5,6),(6,7),(7,1),(3,6),(3,8),(4,7),(5,7),(5,8),(7,8)"
+    }
+  ],
+  "labelling_note": "Vertices are 0..7 with bilevel-paper labels 1..8 mapped by v - 1. Hurlbert <-> bilevel isomorphism: a=5, b=4, c=6, d=8, w=3, x=2, y=1, z=7 (bilevel labels 1..8).",
+  "pebbling_number": 8,
+  "pebbling_number_status": "claimed_to_reproduce",
+  "is_class_0": true,
+  "fails_2_pebbling_property": true,
+  "two_pebbling_witness": {
+    "root_label_hurlbert": "x",
+    "root_index_0based": 1,
+    "configuration_hurlbert_order": {
+      "vertex_order": ["a", "b", "c", "d", "w", "x", "y", "z"],
+      "values": [8, 1, 1, 1, 0, 0, 0, 1]
+    },
+    "configuration_index_0based": {
+      "comment": "0-based indices map: a=4, b=3, c=5, d=7, w=2, x=1, y=0, z=6",
+      "values_by_index": [0, 0, 0, 1, 8, 1, 1, 1]
+    },
+    "claim": "From this 12-pebble configuration, two pebbles cannot be moved to root x."
+  }
+}

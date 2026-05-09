@@ -1,0 +1,20 @@
+{
+  "graph": {
+    "n": 3,
+    "edges": [[0, 1], [1, 2]],
+    "name": "P3"
+  },
+  "root": 0,
+  "claimed_bound": 4,
+  "strategies": [
+    {
+      "name": "P3 full path basic strategy",
+      "tree_edges": [[0, 1], [1, 2]],
+      "weights": {"0": "0", "1": "2", "2": "1"},
+      "basic": true
+    }
+  ],
+  "dual_multipliers": ["1"],
+  "notes": "Proves pi(P3, r=0) <= 4. Tight: pi(P3) = 4. Single basic strategy on the full path; w(2) = 1 saturates dual feasibility w(v) >= 1. b_T = 1+2 = 3, derived = floor(3) + 1 = 4.",
+  "source": "Hurlbert 2017 weight function lemma, applied by hand"
+}

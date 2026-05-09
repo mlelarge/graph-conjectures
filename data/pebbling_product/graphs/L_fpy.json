@@ -1,0 +1,25 @@
+{
+  "name": "L_fpy",
+  "long_name": "Original Lemke graph in Flocco-Pulaj-Yerger labelling",
+  "n": 8,
+  "vertices": [0, 1, 2, 3, 4, 5, 6, 7],
+  "edges": [
+    [0, 1], [0, 2], [1, 3], [2, 4], [2, 5], [2, 6],
+    [3, 4], [3, 5], [3, 6], [3, 7], [4, 7], [5, 7], [6, 7]
+  ],
+  "edge_count": 13,
+  "degree_sequence": [5, 4, 4, 3, 3, 3, 2, 2],
+  "primary_sources": [
+    {
+      "citation": "D. Flocco, J. Pulaj, C. Yerger, Automating weight function generation in graph pebbling, DAM 347 (2024)",
+      "url": "https://github.com/dominicflocco/Graph_Pebbling",
+      "quote": "lemke_edges = [(0,1),(0,2),(1,3),(2,4),(2,5),(2,6),(3,4),(3,5),(3,6),(3,7),(4,7),(5,7),(6,7)] from py/main.py loadGraph()"
+    }
+  ],
+  "isomorphism_to_L": {
+    "comment": "Bijection FPY label -> our L label, both 0-based",
+    "fpy_to_our": {"0": 1, "1": 0, "2": 2, "3": 6, "4": 3, "5": 5, "6": 7, "7": 4}
+  },
+  "pebbling_number": 8,
+  "is_class_0": true
+}
