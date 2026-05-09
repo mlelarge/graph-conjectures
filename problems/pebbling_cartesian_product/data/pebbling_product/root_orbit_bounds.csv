@@ -2,7 +2,7 @@ root_rep,orbit_size,bound,lp_value,num_columns,max_len,certificate_path,status,n
 "(0,0)",1,246,295021/1200,45,7,data/pebbling_product/certificates/path_orbit_0_0_max_len7.json,accepted,
 "(0,1)",2,229,1098677/4800,46,7,data/pebbling_product/certificates/path_orbit_0_1_max_len7.json,accepted,
 "(0,2)",2,173,828421/4800,51,7,data/pebbling_product/certificates/path_orbit_0_2_max_len7.json,accepted,
-"(0,3)",2,156,747919/4800,39,5,data/pebbling_product/certificates/path_orbit_0_3_max_len5_branch4.json,accepted,
+"(0,3)",2,150,119613/800,39,5,data/pebbling_product/certificates/path_orbit_0_3_max_len5_branch4.json,accepted,
 "(0,4)",6,196,312293/1600,44,7,data/pebbling_product/certificates/path_orbit_0_4_max_len7.json,accepted,
 "(0,7)",2,179,854837/4800,48,7,data/pebbling_product/certificates/path_orbit_0_7_max_len7.json,accepted,
 "(1,1)",1,213,339217/1600,41,7,data/pebbling_product/certificates/path_orbit_1_1_max_len7.json,accepted,

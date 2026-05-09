@@ -39,11 +39,35 @@ def test_parse_pair() -> None:
     assert _parse_pair(" (2, 5) ") == (2, 5)
 
 
+def test_parse_pair_accepts_live_fpy_form() -> None:
+    """FPY's saveEdges writes ``str(('0', '1'))`` -> ``('0', '1')``.
+
+    The cartesian-product nodes in their pipeline are tuples of strings,
+    so the on-disk form has inner single quotes around each digit.
+    """
+    assert _parse_pair("('0', '1')") == (0, 1)
+    assert _parse_pair("('7', '3')") == (7, 3)
+    assert _parse_pair('("2", "5")') == (2, 5)
+
+
 def test_parse_pair_rejects_garbage() -> None:
     with pytest.raises(ValueError):
         _parse_pair("0,1")
     with pytest.raises(ValueError):
         _parse_pair("(0)")
+
+
+def test_parse_edges_csv_live_fpy_form() -> None:
+    """Edges CSV produced by TreeStrategy.saveEdges on cartesian nodes."""
+    text = (
+        ',0,1\n'
+        '0,"(\'0\', \'1\')","(\'0\', \'0\')"\n'
+        '1,"(\'0\', \'1\')","(\'1\', \'1\')"\n'
+    )
+    edges, warnings = parse_edges_csv(text, h_n=8)
+    # (0,1)->1, (0,0)->0, (1,1)->9; sorted-pair encoding -> (0,1) and (1,9)
+    assert sorted(edges) == [(0, 1), (1, 9)]
+    assert warnings == []
 
 
 def test_parse_weight_csv_handles_full_grid() -> None:

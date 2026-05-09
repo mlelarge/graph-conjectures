@@ -178,6 +178,12 @@ def parse_edges_csv(text: str, h_n: int) -> tuple[list[tuple[int, int]], list[st
 
 
 def _parse_pair(s: str) -> tuple[int, int]:
+    """Accept ``(u, v)`` or the live FPY-runtime form ``('u', 'v')``.
+
+    The FPY pipeline calls ``str()`` on tuples whose entries are themselves
+    strings (NetworkX cartesian-product nodes), so the on-disk form is
+    e.g. ``('0', '1')`` with inner single quotes around each digit.
+    """
     s = s.strip()
     if not s.startswith("(") or not s.endswith(")"):
         raise ValueError(f"expected '(u, v)', got {s!r}")
@@ -185,7 +191,14 @@ def _parse_pair(s: str) -> tuple[int, int]:
     parts = inside.split(",")
     if len(parts) != 2:
         raise ValueError(f"expected '(u, v)', got {s!r}")
-    return int(parts[0].strip()), int(parts[1].strip())
+
+    def _strip_quotes(p: str) -> str:
+        p = p.strip()
+        if len(p) >= 2 and p[0] == p[-1] and p[0] in ("'", '"'):
+            p = p[1:-1]
+        return p
+
+    return int(_strip_quotes(parts[0])), int(_strip_quotes(parts[1]))
 
 
 def ingest_strategy(
