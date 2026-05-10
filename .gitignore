@@ -28,6 +28,7 @@ data/urls.txt
 
 # Vendored third-party clones (not committed; document clone command in project README)
 problems/pebbling_cartesian_product/external/Graph_Pebbling/
+problems/earth_moon_problem/external/sat-modulo-symmetries/
 
 # Pebbling project temp artifacts (intermediate solver dumps)
 problems/pebbling_cartesian_product/data/pebbling_product/_tmp_*.json
