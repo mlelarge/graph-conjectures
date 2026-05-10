@@ -32,12 +32,15 @@ is gated on what they shipped and where.
 - **Source code (announced in paper).** SAT modulo Symmetries (SMS):
   [github.com/markirch/sat-modulo-symmetries](https://github.com/markirch/sat-modulo-symmetries),
   MIT licensed, C++ + Python.
-- **Local pin.** This project's vendored clone is at commit
-  `cf890fda5e9da0f749a40b638998bbbf2a1cd092`, `git describe` =
-  `v2.0.0-2-gcf890fd`, committed 2025-10-31. The SAT 2023 paper described
-  the `v1.0.0` release; we are on a slightly later mainline with two extra
-  commits on top of `v2.0.0`. The planarity propagator and `--earthmoon*`
-  CLI flags are in mainline at this pin.
+- **Local pin.** Initial audit inspected mainline at
+  `cf890fda5e9da0f749a40b638998bbbf2a1cd092` (`v2.0.0-2-gcf890fd`,
+  committed 2025-10-31). **Reproducible Earth–Moon runs pin the local
+  clone to tag `v1.0.0`** (commit `2d5a22a3d3b2fcc6f5eeebdfbdbe2031b53ac55b`,
+  committed 2024-12-16) plus Patch A from
+  [`spike_sms_build.md`](spike_sms_build.md) (a two-line `solveArgs`
+  fix in `encodings/planarity.py`). The v2 mainline silently drops
+  thickness-2 enforcement, so any solver run there would be uninterpretable
+  as Earth–Moon evidence — see the spike doc for the audit.
 - **Documentation.** [sat-modulo-symmetries.readthedocs.io](https://sat-modulo-symmetries.readthedocs.io/).
 
 ### Abstract — primary

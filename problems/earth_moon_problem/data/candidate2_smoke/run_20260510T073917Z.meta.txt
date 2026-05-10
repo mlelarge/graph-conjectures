@@ -1,0 +1,10 @@
+host: Darwin MAC-02008878 25.4.0 Darwin Kernel Version 25.4.0: Thu Mar 19 19:26:07 PDT 2026; root:xnu-12377.101.15~1/RELEASE_ARM64_T6031 arm64
+date: 2026-05-10T07:39:17Z
+sms_commit: 2d5a22a3d3b2fcc6f5eeebdfbdbe2031b53ac55b
+sms_describe: v1.0.0
+sms_status:  M encodings/planarity.py;?? build/;?? cadical_sms/;?? sms_graph_builder.egg-info/;
+smsg_path: /Users/lelarge/.local/bin/smsg
+cmd: gtimeout 600 python encodings/planarity.py -v 28 --directed --earthmoon_candidate2
+wall_budget_seconds: 600
+patches: Patch A from docs/spike_sms_build.md (encodings/planarity.py solveArgs arity)
+sms_describe_full: v1.0.0-dirty (dirty == Patch A; clone is otherwise at tag v1.0.0)
