@@ -61,7 +61,7 @@ Verbatim from the DROPS landing page:
 > we extend the SMS framework to directed graphs which might be of independent
 > interest.
 
-### Encoding details — repo data
+### Encoding details — primary, KSS §5.2 + repo data
 
 The planarity encoding is in mainline SMS at
 [`src/graphPropagators/planarity.{hpp,cpp}`](../external/sat-modulo-symmetries/src/graphPropagators/),
@@ -77,6 +77,54 @@ reproductions we pin the local clone to `v1.0.0`**; an inspection of the
 `smsg`'s options — see [`spike_sms_build.md`](spike_sms_build.md) for
 the full audit. Use `v1.0.0` for any solver run whose output is meant to
 be cited.
+
+**Decomposition representation** (§5.2, page 14:11, primary):
+
+> "Instead of encoding the biplanar graph $G$ directly, we represent the
+> decomposition $G_1 \uplus G_2$ as a directed graph $H$ with $\underline{H} = G$.
+> $H$ represents the decomposition $G_1 \uplus G_2$ as follows.
+> [bullet] $\{u,v\} \in E(G_1)$ if and only if $(u,v) \in E(H)$ and $(v,u) \in E(H)$.
+> [bullet] $\{u,v\} \in E(G_2)$ if and only if either $(u,v) \in E(H)$ or
+> $(v,u) \in E(H)$, but not both."
+
+**Layer-1 maximal planar WLOG** (§5.2, page 14:11, primary):
+
+> "W.l.o.g., we may assume for a decomposition $G = G_1 \uplus G_2$ that
+> $G_1$ is maximal planar, i.e., inserting any additional edge makes the
+> graph non-planar, since we can move as many edges as possible from $G_2$
+> to $G_1$. We encode this by requiring that $|E(G_1)| = 3n - 6$, hence we
+> can also require $|E(G_2)| \le 3n - 6$."
+
+**Criticality** (§5.2, page 14:11, primary):
+
+> "Further, we restrict our search on vertex-critical graphs with respect
+> to the chromatic number $\chi$, i.e., deleting any vertex decreases the
+> chromatic number of $G$. Hence we can assume that the minimum degree of
+> $G$ is $\ge \chi - 1$."
+
+**Chromatic encoding — eager partition-blocking** (§5.2, page 14:12, primary):
+
+> "For ensuring at least a certain chromatic number $\chi$, we add coloring
+> clauses ensuring that the underlying graph cannot be colored with
+> $\chi - 1$ colors. Let $\mathcal P_n$ be the set of all partitions of $V$.
+> Then [eq] ensures that every $(\chi-1)$-coloring is no proper coloring of
+> the underlying graph for $\chi - 1 \ge n$, because at least one edge is
+> monochromatic. Since the number of partitions $\mathcal P_n$ is exponential,
+> this size of the encoding grows exponentially. However, as our experiments
+> showed, this approach is still feasible for small values of $n$. We have
+> also tried a lazy encoding which adds the clauses incrementally whenever
+> there is a violation instead of adding all clauses right at the beginning.
+> As it turned out, the results for this version were worse and hence we
+> omit the results for the lazy version."
+
+**Best planarity encoding — Kuratowski lazy** (§5.2, page 14:12, primary):
+
+> "Our experiments again show that the Kuratowski-based encoding is superior
+> by orders of magnitudes."
+
+The CLI exposes three encodings (`--planar`, `--planar_schnyder`,
+`--planar_universal`); per the paper, only Kuratowski is competitive on
+Earth–Moon-scale instances.
 
 Three planarity encodings are exposed as command-line flags:
 
@@ -100,29 +148,93 @@ extension): an antiparallel arc pair encodes a layer-1 edge, a single arc a
 layer-2 edge. The thickness-2 layer-2 propagator is enabled with
 `--args-SMS " --thickness2 5"`, mirroring the frequency-$1/5$ check on layer 1.
 
-### Earth–Moon results in the shipping code — repo data
+### Earth–Moon results — primary, KSS §5.2 + Tables 3–4
 
-The repo ships **two named candidate tests** for biplanarity, both of which are
-direct hits for our plan:
+#### Theorem 3 (page 14:12, primary, verbatim)
 
-- `--earthmoon_candidate1` (n=19): tests whether
-  $C_5[K_{4,4,4,4,3}] = C_5[4,4,4,4,3]$ is biplanar
-  ([`encodings/planarity.py:217-223`](../external/sat-modulo-symmetries/encodings/planarity.py)).
-  *Per user-summary (to verify against PDF body): this case was certified
-  non-biplanar in ~12 hours of solver time.*
-- `--earthmoon_candidate2` (n=28): tests whether
-  $C_7[K_4] = C_7\boxtimes K_4$ — exactly our Phase 4 headline target — is
-  biplanar
-  ([`encodings/planarity.py:217,225-228`](../external/sat-modulo-symmetries/encodings/planarity.py)).
+> "**Theorem 3.** All biplanar graphs on $n \le 13$ vertices are 9-colorable."
 
-The fact that `candidate2` is shipped as a named CLI option but no result on it
-appears in the abstract strongly suggests **KSS attempted it and it did not
-terminate**, leaving $C_7[K_4]$ open. This reframes our Phase 4: we are not
-pioneering a SAT attack on $C_7[K_4]$, we are picking up where KSS stopped.
+So any 10-chromatic biplanar graph has $n \ge 14$. That is the
+"$n \le 13$ resolved" claim, fully verified.
 
-The $n \le 13$ "every biplanar graph is 9-colourable" result is a separate
-SMS run (Earth-Moon search at $n \le 13$, $\chi \ge 10$ proves UNSAT). User-summary,
-to verify against PDF body for the exact bound.
+#### Table 3 wall-times (page 14:12, primary)
+
+KSS report a 2-day timeout (the caption: "If the timeout of 2 days is
+reached we write 't.o.'."). Kuratowski-based encoding times in seconds:
+
+| $n$ | $\chi \ge 9$ #digraph | $\chi \ge 9$ Kura | $\chi \ge 10$ #digraph | $\chi \ge 10$ Kura |
+|---|---:|---:|---:|---:|
+| 9 | 0 | 0.55 | — | — |
+| 10 | 0 | 15.75 | 0 | 1.95 |
+| 11 | 5554 | 1709.49 | 0 | 19.03 |
+| 12 | — | t.o. | 0 | 837.14 |
+| 13 | — | t.o. | 0 | **146 484.00** (≈40.7 h) |
+
+The $n=13$, $\chi \ge 10$ run took ~40.7 h to UNSAT — not 2 days, but
+within their cap. Anything we run at $n \ge 14$ is fresh territory.
+
+#### Sulanke's lower bound (page 14:10, primary)
+
+> "In 1973, Thom Sulanke constructed a biplanar graph on 11 vertices with
+> chromatic number 9 by removing the edges of a $C_5$ from a $K_{11}$,
+> improving an earlier lower bound by Ringel to $\chi_2 \ge 9$."
+
+So: $K_{11} \setminus C_5 = K_6 + C_5$ (since $K_{11}$ minus a 5-cycle is
+exactly the join of $K_6$ with $C_5$'s complement-in-$K_5$, and the
+complement of $C_5$ in $K_5$ is another $C_5$). Sulanke's date is
+**1973**, not 1974 as folklore reports.
+
+#### Candidate1 — $C_5[4,4,4,4,3]$ (page 14:12, primary, verbatim)
+
+> "In the literature, there are some potential candidates for the
+> Earth-Moon Problem, which are known to have chromatic number 10, but
+> haven't been shown to be biplanar yet [23]. One of these graphs is
+> $G = C_5[4,4,4,4,3]$, i.e., a 5-cycle where the first four vertices of
+> the cycle are inflated to a 4-clique, and the last to a 3-clique. The
+> graph has 19 vertices and 99 edges. We can test whether this graph is
+> biplanar using our planarity encodings. This can be done by adding
+> constraints that ensure that the underlying graph of the resulting
+> directed graph is the graph $G$:
+>
+> [eq]
+>
+> By fixing some of the directed edges, SMS is not applicable anymore for
+> all permutations. We only allow permuting vertices within the 4-clique
+> and 3-clique, respectively, which preserves the underlying graph $G$.
+> **Within 12 hours, we are able to show that the graph is not biplanar,
+> hence we can exclude the graph as a potential candidate.**"
+
+Our `data/candidate1_calibration/20260510T090120Z` run uses a 43200 s
+budget = exactly KSS's reported wall-clock. Apple-silicon SAT typically
+beats x86 by ~1.5–2× on instances of this size, so an honest expectation
+is UNSAT in under 12 h.
+
+#### Candidate2 — $C_7[K_4]$: not in the paper
+
+The flag `--earthmoon_candidate2` is in
+[`encodings/planarity.py:137`](../external/sat-modulo-symmetries/encodings/planarity.py)
+and creates the encoding for $C_7[4,4,4,4,4,4,4]$ on 28 vertices. **The
+SAT 2023 paper body does not mention `candidate2` anywhere** — no theorem,
+no table entry, no remark. Either it was scaffolded post-final and shipped
+in the v1.0.0 tag without a result, or KSS attempted it and it timed out
+beyond their 2-day cap. Either way, **our Phase 4 headline target is
+genuinely open and tooling-ready**.
+
+#### Table 4 — KSS state-of-knowledge map (page 14:13, paraphrased)
+
+For $8 \le n \le 18$, $8 \le \chi \le 13$, KSS classify each cell as
+{contains $K_n$ / Sulanke / new (this paper) / open / trivial / blocked}:
+
+- $n \le 13$, $\chi = 10, 11, 12, 13$: closed by KSS ("new").
+- $n = 14, 15$: $\chi = 11, 12$ closed; $\chi = 10$ **open**.
+- $n = 16, 17$: $\chi = 12$ closed; $\chi = 10, 11$ **open**.
+- $n = 18$: $\chi = 12$ closed by a "minimality argument"; $\chi = 10, 11$
+  **open**.
+- $n = 19$: all of $\chi = 10, 11, 12$ **open**.
+
+The 19-vertex column is exactly where $C_5[4,4,4,4,3]$ sits, and it is
+listed as open in the table — the candidate1 result excludes that
+*specific* candidate, not the cell.
 
 ### Decision: what we fork, imitate, ignore — revised
 
@@ -144,45 +256,28 @@ The candidate-flag discovery flips the architecture:
 
 ### Resolved / remaining
 
-Resolved by the spike:
+Resolved with primary quotes from the SAT 2023 PDF:
 
 - Planarity encodings live in mainline `main`, tagged `v1.0.0`. Not a branch.
-- Earth-Moon-specific encoding is exposed at the CLI; we do not need to
-  reverse-engineer it.
-- $C_7[K_4]$ is `--earthmoon_candidate2`. They built the test, did not publish
-  a result.
+- Earth-Moon-specific encoding is exposed at the CLI.
+- Theorem 3 says all biplanar graphs on $n \le 13$ are 9-colourable. (The
+  $\chi \ge 10$ search is UNSAT for $n \le 13$; for $n \ge 14$ the cell
+  status comes from Table 4.)
+- Candidate1 wall-clock: "Within 12 hours" (page 14:12, verbatim) — UNSAT
+  on $C_5[4,4,4,4,3]$.
+- Candidate2 ($C_7[K_4]$) is in the code, **absent from the paper body**
+  (no theorem, no table entry, no remark). Tooling-ready, result open.
 
-Remaining for direct PDF quote (still user-summary):
+Remaining (low priority, not blocking Phase 4):
 
-- Exact bound for the "all biplanar graphs on $n \le N$ are 9-colourable" claim
-  ($N = 13$ per user; verify against PDF table).
-- Reported wall-clock / solver budget for `candidate1`.
-- Whether `candidate2` was reported as run-and-timed-out, or merely scaffolded.
+- Sulanke's original 1973 reference (KSS cite [22]); Gardner 1980 is the
+  popularised report.
+- The "minimality argument" KSS use to close $n = 18$, $\chi = 12$ —
+  presumably elsewhere in §5.2 or an extended version. Worth chasing if
+  Phase 6 (upper-bound route) becomes the focus.
 
-### Spike notes — local build status
-
-Build prerequisites per [`build-and-install.sh`](../external/sat-modulo-symmetries/build-and-install.sh)
-and the RtD getting-started page:
-
-- C++20 compiler, Boost ≥ 1.74, CMake ≥ 3.12, Python + pip.
-- CaDiCaL submodule (init via `git submodule update --init --recursive`).
-- Build: `./build-and-install.sh -l` (local install into `~/.local/`, no sudo).
-
-Status on this machine (darwin, 2026-05-10): `cmake`, `c++`, `nproc` not in
-PATH; build script's `nproc --all` line will fail on macOS regardless. Boost
-not installed.
-
-Minimum to unblock the build:
-
-```bash
-brew install cmake boost coreutils
-xcode-select --install   # if Xcode CLT not already present
-```
-
-`coreutils` provides `gnproc`; the script's `nproc --all` line still needs
-either a shim or a tiny patch (e.g. replace with `sysctl -n hw.ncpu` on
-darwin). I have not run `brew install` — that's a system-level change and
-needs your sign-off.
+(Build prerequisites and host status are in
+[`spike_sms_build.md`](spike_sms_build.md), not duplicated here.)
 
 ## Boutin, Gethner, Sulanke — 2008
 
@@ -231,13 +326,13 @@ context. Used as the construction template behind Phase 4.
   maps of the moon.* *Math. Mag.* 66 (1993), 211–226.
 - **Use.** Survey / framing reference; not load-bearing.
 
-## Sulanke / Gardner — 1974/1980
+## Sulanke / Gardner — 1973/1980
 
-- **Construction.** The graph $K_6 + C_5$ (join of $K_6$ and the 5-cycle) is
-  biplanar with $\chi = 9$, witnessing $\chi_{\rm EM} \ge 9$. Attributed to
-  Sulanke (private communication, 1974); reported by Gardner in *Sci. Amer.*
-  242 (1980), 14–22.
-- *Promote to primary by direct quote from the Gardner column.*
+- **Construction.** The graph $K_{11} \setminus C_5 = K_6 + C_5$ (the join
+  of $K_6$ with $C_5$) is biplanar with $\chi = 9$, witnessing
+  $\chi_{\rm EM} \ge 9$. KSS 2023 (page 14:10) date Sulanke's construction
+  to **1973** (citing their ref [22]), correcting the folklore "1974"
+  attribution. Popularised by Gardner in *Sci. Amer.* 242 (1980), 14–22.
 
 ## Heawood — 1890
 
