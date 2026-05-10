@@ -75,6 +75,48 @@ while `src/sms.cpp` uses `std::istringstream`. v1.0.0's `useful.h` includes
 boost headers that pull `<sstream>` transitively, so the build is clean
 there without this patch.
 
+### Patch C — `encodings/planarity.py`: `__main__` guard + `--no-solve` dispatch
+
+Required at **v1.0.0**. Two related fixes that make the module both
+importable as a library and honest about its CLI flags:
+
+- Wrap the trailing argparse + solve block in `if __name__ == "__main__":`
+  so `from planarity import PlanarGraphBuilder, getPlanarParser` does not
+  trigger argparse on import. Needed by
+  [`scripts/earthmoon_blowup.py`](../scripts/earthmoon_blowup.py).
+- Add a `--no-solve` dispatch matching the canonical pattern in
+  [`pysms/graph_builder.py:1073`](../external/sat-modulo-symmetries/pysms/graph_builder.py):
+  if set, write DIMACS to `--cnf-file` (or stdout) and skip `solveArgs`.
+  At v1.0.0 the script unconditionally called `solveArgs`, so passing
+  `--no-solve --cnf-file foo.cnf` started a real (12 h) solve and only
+  incidentally also wrote the CNF.
+
+```diff
+-args, forwarding_args = getPlanarParser().parse_known_args()
+-b = PlanarGraphBuilder(...)
+-b.add_constraints_by_arguments(args)
+-b.solveArgs(args, forwarding_args)
++if __name__ == "__main__":
++    import sys as _sys
++    args, forwarding_args = getPlanarParser().parse_known_args()
++    b = PlanarGraphBuilder(...)
++    b.add_constraints_by_arguments(args)
++    if args.no_solve:
++        if args.cnf_file:
++            with open(args.cnf_file, "w") as _fh:
++                b.print_dimacs(_fh)
++        else:
++            b.print_dimacs(_sys.stdout)
++    else:
++        b.solveArgs(args, forwarding_args)
+```
+
+After Patches A + C, the v1.0.0 encoding script is library-callable and
+its `--no-solve` actually skips the solver. Verified: the wrapper
+[`scripts/earthmoon_blowup.py`](../scripts/earthmoon_blowup.py) with
+`--weights 4,4,4,4,3` produces a CNF whose sorted clause multiset is
+byte-identical to native `--earthmoon_candidate1`.
+
 ## v2.0.0 disqualifying drift
 
 The smoke test from `docs/applications.md`,
