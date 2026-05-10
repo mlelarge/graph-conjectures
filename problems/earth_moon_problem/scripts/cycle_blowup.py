@@ -4,7 +4,7 @@ Phase 4 cycle clique-blowup enumerator and verifier.
 
 Constructs the clique blowup C_{2r+1}[K_{a_1}, ..., K_{a_{2r+1}}] of an odd
 cycle, computes its exact graph-theoretic invariants (n, m, omega, alpha, and
-a chromatic-number lower bound), and either enumerates candidate weight
+chi), and either enumerates candidate weight
 tuples or verifies a single instance. Operates entirely on graph theory; no
 SAT, no biplanarity oracle. Used to provide a verifiable graph-theoretic
 layer against which SMS results can be cross-checked.
@@ -25,8 +25,6 @@ import itertools
 import math
 import sys
 
-import networkx as nx
-
 
 def cycle_blowup(weights):
     """Return C_{2r+1}[K_{a_1}, ..., K_{a_{2r+1}}] as an nx.Graph.
@@ -40,6 +38,8 @@ def cycle_blowup(weights):
         raise ValueError(f"weights length must be odd and >= 3 (got {L})")
     if any(a < 1 for a in weights):
         raise ValueError(f"all weights must be >= 1 (got {weights})")
+
+    import networkx as nx
 
     G = nx.Graph()
     fibres = [[(i, j) for j in range(a)] for i, a in enumerate(weights)]
@@ -55,13 +55,26 @@ def cycle_blowup(weights):
     return G
 
 
-def invariants(weights):
-    """Closed-form (n, m, omega, alpha, chi_lb) for the cycle clique blowup.
+def weighted_odd_cycle_chromatic_number(weights):
+    """Exact weighted chromatic number of an odd cycle.
 
-    chi_lb = max(omega, ceil(n / r)). Both terms are valid lower bounds on
-    the chromatic number; the max is the standard Hoffman/clique-cover
-    combination. The exact chromatic number can equal chi_lb for many
-    weight patterns but is not guaranteed to in general.
+    For C_{2r+1} with vertex weights a_i, the weighted chromatic number is
+    max(max_i(a_i + a_{i+1}), ceil(sum_i a_i / r)). Equivalently, this is
+    the chromatic number of the clique blowup
+    C_{2r+1}[K_{a_1}, ..., K_{a_{2r+1}}].
+    """
+    L = len(weights)
+    r = (L - 1) // 2
+    n = sum(weights)
+    omega = max(weights[i] + weights[(i + 1) % L] for i in range(L))
+    return max(omega, math.ceil(n / r))
+
+
+def invariants(weights):
+    """Closed-form (n, m, omega, alpha, chi) for the cycle clique blowup.
+
+    The chromatic number is the exact weighted chromatic number of the
+    underlying odd cycle with weights given by the clique sizes.
     """
     L = len(weights)
     if L < 3 or L % 2 == 0:
@@ -81,7 +94,7 @@ def invariants(weights):
         "m": m,
         "omega": omega,
         "alpha": r,
-        "chi_lb": max(omega, math.ceil(n / r)),
+        "chi": weighted_odd_cycle_chromatic_number(weights),
         "edge_budget_6n_minus_12": edge_budget,
         "edge_slack": edge_budget - m,
     }
@@ -114,7 +127,7 @@ def enumerate_blowups(max_n=30, max_omega=8, min_chi=10):
 
     Constraints:
         omega <= max_omega   (max_omega = 8 forces K_9-freeness)
-        chi_lb >= min_chi    (forces n >= min_chi * r since omega < min_chi)
+        chi >= min_chi       (exact weighted odd-cycle chromatic number)
         m <= 6n - 12         (biplanarity edge bound)
         n <= max_n
     """
@@ -125,7 +138,7 @@ def enumerate_blowups(max_n=30, max_omega=8, min_chi=10):
     max_weight = max_omega - 1
 
     # When omega < min_chi (forced here, since max_omega < min_chi typically),
-    # chi_lb >= min_chi reduces to ceil(n/r) >= min_chi, i.e.
+    # chi >= min_chi reduces to ceil(n/r) >= min_chi, i.e.
     # n >= (min_chi - 1) * r + 1. That also bounds r above.
     if max_omega >= min_chi:
         # Generic bound: any n >= min_chi works since omega alone can carry it.
@@ -145,7 +158,7 @@ def enumerate_blowups(max_n=30, max_omega=8, min_chi=10):
                 if max(weights[i] + weights[(i + 1) % L] for i in range(L)) > max_omega:
                     continue
                 inv = invariants(weights)
-                if inv["chi_lb"] < min_chi:
+                if inv["chi"] < min_chi:
                     continue
                 if inv["m"] > inv["edge_budget_6n_minus_12"]:
                     continue
@@ -166,6 +179,8 @@ def cross_check_with_networkx(weights, expected):
     Computes omega via maximum clique enumeration and alpha via the same on
     the complement. For the small graphs of interest (n <= 30) this is fast.
     """
+    import networkx as nx
+
     G = cycle_blowup(weights)
     omega_nx = max(len(c) for c in nx.find_cliques(G))
     alpha_nx = max(len(c) for c in nx.find_cliques(nx.complement(G)))
@@ -188,7 +203,7 @@ def cmd_enumerate(args):
         f"max_omega={args.max_omega}, min_chi={args.min_chi}"
     )
     cols = ["weights", "L", "r", "n", "m", "omega", "alpha",
-            "chi_lb", "edge_budget_6n_minus_12", "edge_slack"]
+            "chi", "edge_budget_6n_minus_12", "edge_slack"]
     print("# " + "\t".join(cols))
     for d in rs:
         wstr = ",".join(map(str, d["weights"]))
@@ -201,7 +216,7 @@ def cmd_verify(args):
     inv = invariants(weights)
     check = cross_check_with_networkx(weights, inv)
     print(f"weights: {inv['weights']}")
-    for k in ("L", "r", "n", "m", "omega", "alpha", "chi_lb",
+    for k in ("L", "r", "n", "m", "omega", "alpha", "chi",
               "edge_budget_6n_minus_12", "edge_slack"):
         print(f"{k}: {inv[k]}")
     print("--- networkx cross-check ---")
@@ -211,6 +226,8 @@ def cmd_verify(args):
         print("MISMATCH between formula and networkx", file=sys.stderr)
         sys.exit(1)
     if args.emit_graph6:
+        import networkx as nx
+
         H = nx.convert_node_labels_to_integers(cycle_blowup(weights))
         sys.stdout.write(nx.to_graph6_bytes(H, header=False).decode("ascii"))
 
