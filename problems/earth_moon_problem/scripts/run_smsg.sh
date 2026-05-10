@@ -14,7 +14,8 @@
 #       meta.txt        host, SMS provenance, command, timestamps, exit_status
 #       stdout.log      solver stdout
 #       stderr.log      solver stderr
-#       pid             worker PID, written before exec
+#       pid             gtimeout PID, written after launch
+#       worker_pid      wrapper bash PID, for diagnostics only
 #       exit_status     gtimeout exit code, written after exec
 #
 # Example:
@@ -63,6 +64,7 @@ META="$RUN_DIR/meta.txt"
 STDOUT="$RUN_DIR/stdout.log"
 STDERR="$RUN_DIR/stderr.log"
 PIDFILE="$RUN_DIR/pid"
+WORKER_PIDFILE="$RUN_DIR/worker_pid"
 EXITFILE="$RUN_DIR/exit_status"
 
 {
@@ -80,22 +82,26 @@ EXITFILE="$RUN_DIR/exit_status"
 } > "$META"
 
 # Detached worker: cd into SMS_DIR (so relative encoding paths resolve), run
-# under gtimeout, capture stdout/stderr separately, record pid + exit_status,
-# append end_utc to meta. nohup + disown lets the worker outlive this shell.
+# under gtimeout, capture stdout/stderr separately, record the gtimeout pid
+# plus exit_status, append end_utc to meta. nohup + disown lets the worker
+# outlive this shell.
 nohup bash -c '
     set -u
-    sms_dir="$1"; pidfile="$2"; tout="$3"; out="$4"; err="$5"; exitfile="$6"; meta="$7"
-    shift 7
+    sms_dir="$1"; pidfile="$2"; worker_pidfile="$3"; tout="$4"; out="$5"; err="$6"; exitfile="$7"; meta="$8"
+    shift 8
     cd "$sms_dir"
-    echo $$ > "$pidfile"
-    gtimeout "$tout" "$@" >"$out" 2>"$err"
+    echo $$ > "$worker_pidfile"
+    gtimeout "$tout" "$@" >"$out" 2>"$err" &
+    timeout_pid=$!
+    echo "$timeout_pid" > "$pidfile"
+    wait "$timeout_pid"
     rc=$?
     echo "$rc" > "$exitfile"
     {
         echo "end_utc: $(date -u +%Y-%m-%dT%H:%M:%SZ)"
         echo "exit_status: $rc"
     } >> "$meta"
-' _ "$SMS_DIR" "$PIDFILE" "$TIMEOUT_SECS" "$STDOUT" "$STDERR" "$EXITFILE" "$META" "$@" \
+' _ "$SMS_DIR" "$PIDFILE" "$WORKER_PIDFILE" "$TIMEOUT_SECS" "$STDOUT" "$STDERR" "$EXITFILE" "$META" "$@" \
     </dev/null >/dev/null 2>&1 &
 disown
 
