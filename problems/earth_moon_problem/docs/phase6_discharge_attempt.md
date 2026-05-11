@@ -442,12 +442,25 @@ on 87 vertices with exactly $|E(G^*)| = 511$ edges (Brooks-tight). For
 any non-edge $\{u_i, u_j\}$ in $N(v)$ with $q \ge 1$, Case B is
 **unconditionally infeasible**.
 
+### Step 4+ — strengthened K_9-preservation requirement
+
+The original Step 4 was: *some* non-edge in $N(v)$ contracts without
+creating $K_9$. For the induced-$P_3$ corollary below to fire, we
+actually need:
+
+> **Step 4+.** If $N(v)$ contains a non-edge with $q \ge 1$, then *at
+> least one such $q \ge 1$ non-edge* admits no split-$K_8$ obstruction
+> (i.e. contracts to a $K_9$-free $G^*$).
+
+A bare Step 4 doesn't suffice — the $K_9$-free-preserving non-edge it
+guarantees might happen to have $q = 0$, leaving the $q \ge 1$ non-edges
+out of reach.
+
 ### Step 6 — induced-$P_3$ corollary (no more Case B for non-disjoint-clique $N(v)$)
 
 Combining Step 5'''' with Case A (which closes immediately to
 $n \ge 92$): if there exists a non-edge $\{u_i, u_j\}$ in $N(v)$ with
-$q \ge 1$, the lemma closes (assuming Step 4 $K_9$-free preservation
-also holds at that non-edge).
+$q \ge 1$ **and Step 4+ holds**, the lemma closes.
 
 The contrapositive: if the lemma fails (i.e. $G[L]$ has an isolated
 vertex $v$ with the $n = 89$ tight hypotheses), then **every** non-edge
@@ -482,6 +495,137 @@ low vertex." The remaining work has two parts:
    $G[N(v)]$ is a disjoint union of cliques **and** for every cross-clique
    non-edge, the contracted $G^* = (G-v)/\{u_i, u_j\}$ is itself a
    12-critical $K_9$-free graph on 87 vertices with exactly 511 edges.
+
+### Step 6½ — Q0 attack via Gallai structure of $G^*$
+
+In Subcase Q0, the contracted $G^*$ is itself a 12-critical $K_9$-free
+graph on 87 vertices with exactly 511 edges. Its degree sequence at
+$q = 0$ is:
+
+$$|V(G^*)| = 87, \quad |E(G^*)| = 511,$$
+
+with degree distribution
+
+| vertex class | count | degree |
+|---|---:|---:|
+| $w$ (merged from $u_i, u_j$) | 1 | 22 |
+| $L - \{v\}$ (low vertices of $G$ apart from $v$) | 23 | 11 |
+| $N(v) - \{u_i, u_j\}$ (high vertices of $G$ in $N(v)$, lost edge to $v$) | 9 | 11 |
+| $H \setminus N(v)$ (high vertices of $G$ outside $N(v)$) | 54 | 12 |
+
+Verification: $1 \cdot 22 + 32 \cdot 11 + 54 \cdot 12 = 22 + 352 + 648 = 1022 = 2 \cdot 511$. ✓
+
+Define
+
+$$L^* := (L - \{v\}) \cup (N(v) - \{u_i, u_j\}),
+  \qquad |L^*| = 32.$$
+
+These are exactly the degree-11 vertices of $G^*$. By Gallai's theorem
+applied to $G^*$ (which is 12-critical by Q0), $G^*[L^*]$ is a Gallai
+forest: every block is $K_t$ or odd $C_s$.
+
+**Inherited clique structure on $N(v) - \{u_i, u_j\}$.** By the
+disjoint-cliques structure on $N(v)$ (from Step 6), the induced
+subgraph $G^*[N(v) - \{u_i, u_j\}]$ is itself a disjoint union of
+cliques — the original $G[N(v)]$ partition minus the two merged
+vertices. The 9 vertices in $N(v) - \{u_i, u_j\}$ thus form a clique
+configuration $(t_1', t_2', \dots)$ with $\sum t_i' = 9$ and each
+$t_i' \le 7$.
+
+For example, if $G[N(v)]$ had partition $(7, 4)$ and the cross-clique
+non-edge merges one vertex from each, the remainder is $K_6 + K_3$ in
+$G^*[N(v) - \{u_i, u_j\}]$.
+
+**Attachment of $L_0 \in L - \{v\}$ to a clique chunk $K_t$.** Consider
+a single $L_0 \in L - \{v\}$ and a clique chunk $K_t$ (with $t \ge 2$)
+in $G^*[N(v) - \{u_i, u_j\}]$. Let $d_t(L_0) := |N_{G^*}(L_0) \cap V(K_t)|$.
+
+Since $K_t$ is 2-connected (for $t \ge 3$), if $d_t(L_0) \ge 2$ then
+$L_0$ lies in the same block of $G^*[L^*]$ as $K_t$ — there are two
+vertex-disjoint paths from $L_0$ into $K_t$ (the direct edges). For
+this block to be $K_s$ or odd $C_s$:
+
+- The block can be a clique iff $L_0$ is adjacent to *all* of $K_t$,
+  making $K_t \cup \{L_0\} = K_{t+1}$. By $K_9$-freeness of $G$,
+  $t + 1 \le 8$, so $t \le 7$ (already known).
+- The block cannot be an odd cycle: $K_t$ has too many edges for
+  $t \ge 3$, and a cycle on $t + 1 \ge 4$ vertices has $t + 1$ edges
+  whereas $K_t \cup \{L_0\}$ has $\binom{t}{2} + d_t(L_0) > t + 1$ for
+  $t \ge 3$, $d_t(L_0) \ge 2$.
+
+So **$d_t(L_0) \in \{0, 1, t\}$ for each chunk $K_t$ with $t \ge 3$**
+(and trivially $\in \{0, 1, 2\}$ for $t = 2$). This is the "rigidity"
+the user flagged.
+
+Moreover, if $d_t(L_0) = t$ (the all-of-$K_t$ case), the block becomes
+$K_{t+1}$. Additional $L_0' \in L - \{v\}$ with $d_t(L_0') = t$ must be
+adjacent to $L_0$ (else the block is not a clique), and the resulting
+block is $K_{t + r_t}$ where $r_t$ is the number of such $L_0$'s.
+$K_9$-freeness forces $t + r_t \le 8$, so $r_t \le 8 - t$.
+
+**Consequence for chunk edges.** Edges from $L - \{v\}$ to a clique
+chunk $K_t$ split as
+
+$$e(L - \{v\}, K_t) = (\text{degree-1 attachments}) \cdot 1 + r_t \cdot t,$$
+
+with $r_t \le 8 - t$.
+
+For each chunk's vertices: each $x \in K_t$ has $\deg_{G^*}(x) = 11$.
+Of these:
+- $t - 1$ to other vertices of $K_t$;
+- $1$ to $w$ (since $K_t$ inherits the join to the merged vertex via
+  the original clique structure: $x$ was adjacent in $G$ to either
+  $u_i$ or $u_j$ within the original clique, so $x$ is adjacent to $w$
+  in $G^*$);
+- $11 - t$ remaining, distributed among $L - \{v\}$ and $H \setminus N(v)$.
+
+So each chunk vertex sends $11 - t$ edges to the rest.
+
+Summing over $K_t$: total $t(11 - t)$ external edges from $K_t$ in
+$G^*$.
+
+For partition $(K_6, K_3)$ remainder (when original was $(7, 4)$
+cross-clique merged): $K_6$ sends $6 \cdot 5 = 30$ external edges,
+$K_3$ sends $3 \cdot 8 = 24$ external edges.
+
+**Critical observation.** Each external edge from $K_t$ goes to either
+$L - \{v\}$ (size 23) or $H \setminus N(v)$ (size 54). Edges to $L - \{v\}$
+are constrained by $d_t \in \{0, 1, t\}$. Edges to $H \setminus N(v)$
+are unconstrained at this level.
+
+So we have a balance:
+
+$$e(K_t, L - \{v\}) + e(K_t, H \setminus N(v)) = t(11 - t),$$
+
+with $e(K_t, L - \{v\}) \le 23 - r_t + r_t \cdot t = 23 + r_t(t - 1)$.
+
+(The $r_t$ vertices contributing $t$ edges replace what would have
+been a degree-1 contribution.)
+
+At $r_t = 0$: $e(K_t, L - \{v\}) \le 23$.
+At $r_t = 8 - t$: $e(K_t, L - \{v\}) \le 23 + (8-t)(t-1)$.
+
+For $K_6$: $t = 6$, $r_t \le 2$. Max edges to $L - \{v\}$: $23 + 2 \cdot 5 = 33$, but capped by total external edges $30$. So $e(K_6, L) \le 30$.
+
+For $K_3$: $t = 3$, $r_t \le 5$. Max edges to $L - \{v\}$: $23 + 5 \cdot 2 = 33$, capped by $24$. So $e(K_3, L) \le 24$.
+
+**These caps are not tight enough alone to give a contradiction.** But
+combined with biplanarity of $G$ and the structural constraints on $L$
+(also a Gallai forest, since $G$ itself is 12-critical), we have an
+accumulating set of constraints. The next concrete attack: bound the
+edges from *every* clique chunk plus the cross-chunk Gallai constraints
+in $G^*[L^*]$ jointly, and check against the actual edge count of
+$G^*$.
+
+**Open: complete the Q0 ruling.** The Gallai-forest constraints on
+$G^*[L^*]$ are concrete: 32 vertices, blocks are $K_s$ ($s \le 8$) or
+odd $C_s$, with the 9-vertex $N(v) - \{u_i, u_j\}$ region forming
+inherited clique chunks. The exact edge budget and the criticality
+condition on the $H \setminus N(v) \cup \{w\}$ part should jointly
+overdetermine the system. Concrete next-session task: enumerate the
+possible Gallai-forest structures on $L^*$ consistent with the
+inherited clique structure and check whether any produces a graph
+consistent with $\rho_{12}(G^*) = 86$.
 
 ### Step 7 — Revised plan
 
