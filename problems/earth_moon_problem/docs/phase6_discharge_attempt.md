@@ -396,37 +396,94 @@ between $u_i$ and $u_j$). Here the contracted graph is essentially
 a "disjoint" merge, and biplanarity might in fact survive — we may
 get a cleaner repair via Option 1 specifically when $q = 0$.
 
-### Step 5'''' — Suggested next move
+### Step 5'''' — Case B arithmetic worked through
 
-1. **Tighten the Case B budget arithmetic.** For each $q \in \{0, 1, \dots, 11\}$
-   and each $n_H \in [12, 86]$ in Case B, compute:
-   - the maximum edges of any $H \subseteq G^*$ containing $w$ on $n_H$
-     vertices, given the degree sequence of $G^*$;
-   - the Brooks-type required edges $\lceil(65 n_H - 43)/11\rceil$;
-   - check whether they are jointly satisfiable.
+Let $\alpha := |N(v) \cap N(u_i) \cap N(u_j)|$ be the number of
+degree-10 vertices in $G^*$ (these have $\deg_{G^*} = 10$ and are
+forced into $S$). Let $\beta, \gamma$ be the number of degree-11 and
+degree-12 vertices in $S$ respectively. So $\alpha + \beta + \gamma = r$.
 
-   For each $(q, n_H)$ pair where the system is feasible, the
-   corresponding $H$ is a *potential* witness; for each where it is
-   infeasible, that pair is ruled out and Case B is closed there.
-   The contradiction (lemma) then says: for every choice of non-edge
-   $\{u_i, u_j\}$, Case B at the resulting $q$ is jointly infeasible
-   on every $n_H$.
+Edge balance + biplanarity of $G[S]$ (which holds because $S$ contains
+only original $G$-vertices, $w \notin S$):
 
-2. **Use the 6+ non-edge slack.** We have $\ge 6$ non-edges. If even
-   *one* non-edge gives a non-edge contraction with simultaneously
-   (i) $K_9$-free preservation, (ii) Case B infeasibility at every $n_H$,
-   the lemma closes at $n = 89$.
+$$|E(H)| = (511 - q) - 11r + \alpha - \gamma + e(S),
+  \quad e(S) \le 6r - 12 \ (r \ge 3).$$
 
-3. **Defer biplanarity-preserving contraction (Repair 1) and the
-   $q = 0$ case** — both look harder and may not be needed if (1) and
-   (2) carry through.
+Brooks-type lower bound (using $K_9$-free $\Rightarrow$ non-Ore via
+GP Lemma 3.3): $|E(H)| \ge \lceil(65(87 - r) - 43)/11\rceil =
+\lceil(5612 - 65r)/11\rceil$.
 
-4. The right next mathematical task is **not** SAT enumeration but a
-   careful arithmetic of the Brooks-type budget under the constraint
-   "$w$ has degree $22 - q$ in $G^*$, and the critical core $H$ must
-   include $w$." If feasible at any $(q, n_H)$, identify the
-   structural witness and check whether it can be realised in $G$ at
-   all.
+Vertex availability for degree-11 in $S$: $\beta \le 9 + q - 2\alpha$
+(the 9 vertices in $N(v) \setminus \{u_i, u_j\}$ minus the $\alpha$
+forced into degree-10, plus the $q - \alpha$ outside vertices in
+$N(u_i) \cap N(u_j)$ that became degree-11).
+
+**Brute-force feasibility check.** A sweep over all
+$(r, q, \alpha, \gamma)$ with $r \in [0, 30]$, $q \in [0, 11]$,
+$\alpha \in [0, \min(q, 9)]$, $\gamma \ge 0$, finds **exactly one
+feasible configuration**:
+
+$$(r, q, \alpha, \gamma) = (0, 0, 0, 0).$$
+
+Everything else fails either the Brooks-type budget or the $\beta$
+availability bound. In algebraic form, the joint constraints at
+$r = 13 + k$ ($k \ge 0$) give
+
+$$\underbrace{\alpha + k + 4 - q}_{\text{β availability}} \le \gamma \le
+  \underbrace{\alpha - q + k}_{\text{Brooks budget}},$$
+
+forcing $4 \le 0$. For $r \le 12$, the Brooks bound is even stricter.
+For $r \in \{0, 1, 2\}$, the simpler $e(S) \le \binom{r}{2}$ bound
+still forces $q = 0, r = 0$.
+
+**Consequence.** The single feasible configuration $(r, q) = (0, 0)$
+corresponds to $H = G^*$ itself being a 12-critical $K_9$-free graph
+on 87 vertices with exactly $|E(G^*)| = 511$ edges (Brooks-tight). For
+any non-edge $\{u_i, u_j\}$ in $N(v)$ with $q \ge 1$, Case B is
+**unconditionally infeasible**.
+
+### Step 6 — induced-$P_3$ corollary (no more Case B for non-disjoint-clique $N(v)$)
+
+Combining Step 5'''' with Case A (which closes immediately to
+$n \ge 92$): if there exists a non-edge $\{u_i, u_j\}$ in $N(v)$ with
+$q \ge 1$, the lemma closes (assuming Step 4 $K_9$-free preservation
+also holds at that non-edge).
+
+The contrapositive: if the lemma fails (i.e. $G[L]$ has an isolated
+vertex $v$ with the $n = 89$ tight hypotheses), then **every** non-edge
+$\{u_i, u_j\}$ in $N(v)$ has $q = 0$ — no common neighbour in $G - v$.
+
+Now: $q$ counts common neighbours in $G - v$, which includes both
+$N(v) \setminus \{u_i, u_j\}$ and $V(G) \setminus N(v) \setminus \{v\}$.
+If any third vertex $u_k \in N(v) \setminus \{u_i, u_j\}$ is adjacent
+to both $u_i$ and $u_j$ in $G$, then $u_k$ is a common neighbour and
+$q \ge 1$. Equivalently, the path $u_i - u_k - u_j$ in $G[N(v)]$ with
+$u_i u_j$ a non-edge is an *induced $P_3$* on $\{u_i, u_k, u_j\}$.
+
+So $q = 0$ on every non-edge forces $G[N(v)]$ to have **no induced
+$P_3$**, i.e. $G[N(v)]$ is a disjoint union of cliques. Combined with
+$K_9$-freeness ($\omega(G[N(v)]) \le 7$), each clique has size $\le 7$.
+
+> **Partial Lemma (proved modulo Step 4).** Under the $n=89$ extremal
+> hypotheses, if $v$ is isolated in $G[L]$, then $G[N(v)]$ is a
+> disjoint union of cliques each of size at most 7. In particular,
+> the 11-vertex set $N(v)$ admits only the partitions
+> $\{7,4\}, \{7,3,1\}, \{7,2,2\}, \dots, \{1,1,1,\dots,1\}$.
+
+This is the right shape: dramatically more rigid than "no isolated
+low vertex." The remaining work has two parts:
+
+1. **Step 4 (still open).** Some non-edge in $N(v)$ must contract
+   $K_9$-free-preservingly. The partial lemma forces $G[N(v)]$ disjoint
+   cliques, so most non-edges in $N(v)$ are *cross-clique*. Need to
+   show at least one cross-clique non-edge contracts without creating
+   a split $K_8$ obstruction.
+2. **Subcase Q0 closure.** Rule out the residual scenario where
+   $G[N(v)]$ is a disjoint union of cliques **and** for every cross-clique
+   non-edge, the contracted $G^* = (G-v)/\{u_i, u_j\}$ is itself a
+   12-critical $K_9$-free graph on 87 vertices with exactly 511 edges.
+
+### Step 7 — Revised plan
 
 **Consequence (conditional).** If Step 4 is provable, then a
 biplanar 12-critical $K_9$-free graph at $n \in \{89, 90\}$ has no
