@@ -170,47 +170,62 @@ Comparing to KY's $\lceil (65n - 54)/11 \rceil$: Brooks-type adds
 **exactly $11/11 = 1$ edge** for being non-Ore — uniformly in $n$, the
 same constant the user warned us $y_k$ would produce.
 
-#### Lemma (Phase 6 lever): every $k$-Ore graph contains $K_{k-1}$
+#### Open lemma (Phase 6 lever): clique structure of $k$-Ore graphs
 
-Promoted from a parenthetical observation to a short proof per the
-user's note, because if it failed in some Ore-composition edge case
-the Brooks-type lever would silently weaken.
+**Target.** Every 12-Ore graph contains $K_9$ as a subgraph. (Stronger
+working hypothesis: every $k$-Ore graph contains $K_{k-1}$, hence
+contains $K_9$ at $k = 12$.) This is what makes "non-Ore" automatic
+from "$K_9$-free" and lets the Brooks-type +1 land.
 
-**Lemma.** For every $k \ge 4$, every $k$-Ore graph $G$ contains $K_{k-1}$
-as a subgraph.
+**Status: not yet proved here.** An earlier version of this file
+sketched a one-paragraph induction on DHGO compositions; that argument
+is not airtight, for the following reason.
 
-*Proof.* Induction on the number of DHGO-compositions used to build $G$.
+The natural inductive invariant, suggested in review, is
 
-*Base case:* $G = K_k$ contains $K_{k-1}$ trivially (any $k-1$ vertices).
+> $\mathbf{P_1}(G)$: for every edge $xy \in E(G)$, there is a $K_{k-1}$
+> subgraph of $G$ with $\{x, y\} \not\subseteq V(K_{k-1})$.
 
-*Inductive step:* $G = O(G_1, G_2)$ for $k$-Ore graphs $G_1, G_2$.
-By induction $G_1$ contains a copy $H_1$ of $K_{k-1}$ and $G_2$
-contains a copy $H_2$. The DHGO-composition deletes one edge $xy$ from
-$G_1$ and splits one vertex $z$ in $G_2$ (paper Section 1).
+$\mathbf{P_1}(K_k)$ holds: of the $k$ vertex-deletion copies of
+$K_{k-1}$ in $K_k$, exactly $k - 2$ avoid both $x$ and $y$ in the sense
+of not containing both. But $\mathbf{P_1}$ does *not* visibly propagate
+through DHGO. In $G = O(G_1, G_2)$, given an edge $uv \in E(G_1)$
+distinct from the deleted edge $xy$, applying $\mathbf{P_1}(G_1)$ to
+$uv$ produces a $K_{k-1}$ avoiding $uv$ — but it may use the deleted
+edge $xy$, in which case it is no longer a clique in $G$.
 
-If $V(H_1) \cap \{x, y\} \le 1$, the edge deletion removes at most one
-vertex of $H_1$; specifically, $H_1 \setminus \{x, y\}$ contains a
-copy of $K_{k-2}$, and together with the other of $x$ or $y$ (if any)
-the original $K_{k-1}$ is preserved minus one edge — but if
-$|V(H_1) \cap \{x,y\}| \le 1$ at most one vertex of $H_1$ is incident
-to the deleted edge $xy$, so the entire $H_1$ is still a clique.
+To fix this we would need a strengthening of the form "for any two
+edges, some $K_{k-1}$ avoids both," call it $\mathbf{P_2}$.
+$\mathbf{P_2}(K_k)$ already fails for any pair of disjoint edges
+(needs an omitted vertex hitting both pairs, impossible). So
+$\mathbf{P_2}$ is not the right invariant either.
 
-For $K_k$ as base, the $k$ copies of $K_{k-1}$ in $K_k$ are precisely
-the $k$ vertex-deletions; we can always pick one whose vertex set
-avoids any chosen 2-subset $\{x, y\}$ as soon as $k \ge 3$.
+A more careful invariant or a non-inductive structural argument is
+needed. The target is true for the base $K_{12}$ and survives one
+DHGO step from $(K_{12}, K_{12})$ by explicit counting
+($\binom{12}{9} - \binom{10}{7} = 100$ copies of $K_9$ in $K_{12}$ avoid
+any fixed pair $\{x, y\}$; the deleted-edge condition then propagates).
+Whether it survives every iterated composition is what needs a real
+proof.
 
-If $V(H_2) \not\ni z$, the split of $z$ does not touch $H_2$, so it
-persists in $G$. For $K_k$ as base this is possible for $k \ge 2$.
+**Bypass for Phase 6 use.** Pending the proof, we can still use
+Brooks-type at the level of *the weaker claim "every 12-Ore graph is
+not $K_9$-free"*, which is what Theorem 6's application actually
+requires. That weaker claim is exactly the target above. Until it is
+proved, **the Brooks-type conclusion at $n \le 88$ should be treated as
+contingent on this lemma.**
 
-Hence by induction every $k$-Ore graph contains $K_{k-1}$. $\square$
-
-**Corollary (Phase 6 input).** For $k = 12$: every 12-Ore graph contains
-$K_{11}$, hence contains $K_9$. So every $K_9$-free 12-critical graph is
-non-12-Ore, and Theorem 6 applies, giving
-
-$$|E(G)| \ge \left\lceil \frac{65 n - 43}{11} \right\rceil$$
-
-for every $K_9$-free 12-critical graph on $n$ vertices.
+Possible paths to a clean proof:
+1. Identify a stronger inductive invariant on $k$-Ore graphs (perhaps
+   involving the separating pair structure of Fact 14 of the Brooks-type
+   paper) and verify its propagation under DHGO.
+2. Show that every $k$-Ore graph contains $K_k - e$ for some edge $e$,
+   which trivially contains $K_{k-1}$. This may be easier to maintain
+   under DHGO since the structural "almost-$K_k$" persists with care.
+3. Search the literature for a stated proof. Plausible references:
+   later Kostochka–Yancey, Postle's structural-critical-graph series,
+   or the Cranston–Rabern Reed-conjecture line, all of which use the
+   $k$-Ore characterisation extensively.
 
 #### What Brooks-type closes, what it leaves
 
