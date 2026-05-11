@@ -102,6 +102,56 @@ docs/                 plan, literature notes, theorem/certificate notes
 scripts/              graph generators, numerical oracle, algebraic/SOS hooks
 data/                 snark catalogues, witnesses, infeasibility certificates
 tests/                regression suite for known positive instances
+Makefile              verification targets (see "Reproduction" below)
+```
+
+## Reproduction
+
+### Setup
+
+External requirements:
+
+- Python 3.12+
+- [nauty 2.9.3+](https://users.cecs.anu.edu.au/~bdm/nauty/) (Homebrew: `brew install nauty`) — only needed if you want to regenerate the cubic catalogues; the stored `data/catalogues/cubic_g5_n*.g6` files are sufficient for re-verification alone.
+
+Python packages (use `uv` to honour the project's tooling preference):
+
+```bash
+# from the repository root, with the .venv already created at the repo level
+uv pip install --python .venv/bin/python \
+    networkx numpy scipy sympy mpmath python-sat pytest
+```
+
+### Verification (no regeneration)
+
+The committed certificates are self-contained. The fast path is:
+
+```bash
+make -C problems/unit_vector_flows verify         # 41/41 tests
+make -C problems/unit_vector_flows verify-certs   # 67/67 interval replays
+```
+
+`verify-certs` runs the independent replay in
+[scripts/verify_sweep.py](scripts/verify_sweep.py), which reconstructs
+each polynomial system from the certificate's `graph6` string, recomputes
+the Krawczyk inclusion test in `mpmath.iv`, and requires `replay["ok"]`
+AND `verdict_matches_cert` AND `polynomial_hash_match`. Expect ≈ 5 min
+wall on a current laptop.
+
+### Regeneration from scratch
+
+To rebuild everything from `geng` upward (≈ 1 hour wall for n ≤ 24):
+
+```bash
+make -C problems/unit_vector_flows clean catalogue sweep certs verify-certs
+```
+
+Individual stages:
+
+```bash
+make -C problems/unit_vector_flows catalogue   # geng + SAT snark filter
+make -C problems/unit_vector_flows sweep       # numerical witness sweep
+make -C problems/unit_vector_flows certs       # Krawczyk interval certificates
 ```
 
 ## References
