@@ -683,19 +683,20 @@ $O_1, \ldots, O_p$ (attached only to $C_i$).
 
 ### 7.4 Low-vertex quantized attachment
 
-**Claim.** For each clique $C_i$ with $s_i \ge 3$ and each $L_0 \in L - \{v\}$
-(low outside vertex), the attachment $|N_{G^*}(L_0) \cap V(C_i)| \in \{0, 1, s_i\}$.
-For $s_i = 2$, the attachment is in $\{0, 1, 2\}$.
+**Claim.** For each surviving chunk $C_i$ with size $t_i \ge 3$ and each
+$L_0 \in L - \{v\}$ (low outside vertex), the attachment
+$|N_{G^*}(L_0) \cap V(C_i)| \in \{0, 1, t_i\}$.
+For $t_i = 2$, the attachment is in $\{0, 1, 2\}$.
 
-(For $s_i = 1$, the clique is a singleton; $L_0$ adjacent to it or not.)
+(For $t_i = 1$, the clique is a singleton; $L_0$ adjacent to it or not.)
 
-*Proof.* Same Gallai-forest argument: partial attachment $2..s_i-1$ would
+*Proof.* Same Gallai-forest argument: partial attachment $2..t_i-1$ would
 make the block containing $C_i \cup \{L_0\}$ neither a clique nor an
 odd cycle. $\square$
 
 Moreover, vertices fully attached to $C_i$ (i.e. with $L_0$ adjacent
-to all $s_i$ vertices of $C_i$) form a clique with $C_i$ in $G^*[L^*]$,
-so the count $f_i$ of such $L_0$'s satisfies $f_i \le 8 - s_i$ from $K_9$-freeness.
+to all $t_i$ vertices of $C_i$) form a clique with $C_i$ in $G^*[L^*]$,
+so the count $f_i$ of such $L_0$'s satisfies $f_i \le 8 - t_i$ from $K_9$-freeness.
 
 (Note: by Q0 outside-vertex exclusivity, $L_0$ can be fully attached to at
 most one chunk; so the $f_i$'s are over disjoint sets of $L_0$'s.)
@@ -708,13 +709,13 @@ $K_1$ component disappears):
 
 - $f_i \in [0, 8 - t_i]$ — low vertices fully attached to $C_i$;
 - $p_i \in [0, 23 - \sum_j f_j]$ — low vertices singly attached to $C_i$;
-- $h_i$ — high outside edges to $C_i$, with $h_i = e_i^{ext} - (s_i f_i + p_i)$.
+- $h_i$ — high outside edges to $C_i$, with $h_i = e_i^{ext} - (t_i f_i + p_i)$.
 
 (High = $H \setminus N(v)$, since $w$-edges are already counted via $\varepsilon_i$.)
 
 For each $i$:
 
-$$\boxed{s_i f_i + p_i + h_i = t_i (12 - t_i - \varepsilon_i).}$$
+$$\boxed{t_i f_i + p_i + h_i = t_i (12 - t_i - \varepsilon_i).}$$
 
 ### 7.6 Outside-vertex packing
 
@@ -742,12 +743,12 @@ Same Gallai-forest argument applies for $h_i(w')$ at the high vertices
 in $G^*[L^* \cup ?]$... wait, $w'$ is a degree-12 vertex of $G^*$, not
 in $L^*$. So the Gallai-forest constraint doesn't apply to $w'$ directly.
 
-The "$0, 1,$ or $s_i$" quantization is a property of *low* outside
+The "$0, 1,$ or $t_i$" quantization is a property of *low* outside
 vertices (those in $L - \{v\}$) attaching to a clique $C_i$ via the
 Gallai-forest constraint on $G^*[L^*]$.
 
 For high outside vertices $w'$, the attachment can be any number
-$0 \le h_i(w') \le s_i$, with no Gallai constraint. (High vertices are
+$0 \le h_i(w') \le t_i$, with no Gallai constraint. (High vertices are
 not in $L^*$, so they don't participate in the Gallai forest.)
 
 ### 7.7 The finite enumeration
@@ -761,19 +762,65 @@ choice $(a, b)$:
 - $p_i \ge 0$;
 - $h_i \ge 0$;
 - subject to:
-  - $s_i f_i + p_i + h_i = t_i (12 - t_i - \varepsilon_i)$ per chunk;
+  - $t_i f_i + p_i + h_i = t_i (12 - t_i - \varepsilon_i)$ per chunk;
   - $\sum (f_i + p_i) \le 23$;
-  - $\sum h_i \le 54 \cdot \min(s_i)$, etc. (high-vertex availability bound).
+  - $\sum_i \lceil h_i/t_i \rceil \le 54$ (high outside vertices can
+    contribute at most $t_i$ chunk-edges to $C_i$ and attach to at most
+    one original clique);
+  - $w$-outside capacity: with
+    $w_{\mathrm{out}} = 22 - \sum_i \varepsilon_i t_i$, vertices already
+    committed to non-selected chunks cannot also be $w$-neighbours, so
+    $$w_{\mathrm{out}} \le 77 -
+      \sum_{\varepsilon_i = 0}\left(f_i + p_i + \lceil h_i/t_i\rceil\right).$$
 
 Plus the overall edge count of $G^*$: $|E(G^*)| = 511$, with edges
 partitioned into intra-chunk + chunk-to-$w$ + chunk-to-outside +
 outside-outside + $w$-outside.
 
 This is a small system. For each partition, the enumeration runs in
-seconds. **Concrete next-session task:** code the partition iteration
-and check whether any $(t_1, \dots, t_{p'}, \varepsilon, f, p, h)$
-satisfies all constraints. If none does, Q0 is dead and the lemma is
-unconditional (modulo Step 4+).
+seconds.
+
+### 7.8 Enumeration result
+
+Implemented in [`scripts/q0_profile_enum.py`](../scripts/q0_profile_enum.py).
+With symmetric equal-size merge choices collapsed, the run checks 49
+partitions and 160 genuine merge types:
+
+```text
+$ python3 scripts/q0_profile_enum.py --limit 80
+# partitions=49 merge_cases=160
+# feasible_cases=143 infeasible_cases=17 capped_counts=0
+# verdict: FEASIBLE profiles remain (necessary-condition model only)
+```
+
+With symmetric duplicates included, this corresponds to 396 feasible
+merge choices out of 652.
+
+So the Step 7 profile system **does not kill Q0**. The obstruction is
+plain in the witnesses: for most surviving cases, taking $f_i=p_i=0$
+for every chunk and routing all chunk-external demand to high outside
+vertices satisfies the low-packing, high-packing, $w$-outside capacity,
+and outside-edge-count constraints. For instance, the $(7,4)$ partition
+with the unique cross-merge leaves chunks $(6,\varepsilon=1)$ and
+$(3,\varepsilon=1)$ and has the witness
+
+$$
+(f,p,h) = (0,0,30),\ (0,0,24),
+$$
+
+using only 13 high outside vertices in the packing bound and no low
+outside vertices.
+
+The 17 infeasible merge types are all-small partitions, e.g.
+$(1^{11})$, $(2,1^9)$, $(2,2,1^7)$, $(2,2,2,1^5)$,
+$(3,1^8)$, $(3,2,1^6)$, and $(4,1^7)$; this is much too narrow to
+settle Q0.
+
+**Conclusion.** The current Q0 profile model is a diagnostic filter,
+not a contradiction. The next local lemma has to rule out the high-only
+witness shape: either force some chunk-to-low attachment, or prove that
+the high outside vertices cannot absorb all chunk demand without
+violating biplanarity / $K_9$-freeness / criticality elsewhere.
 
 ## Status
 
@@ -781,9 +828,10 @@ Phase 6 is now reduced to two concrete combinatorial problems:
 
 1. **Step 4+**: of the $\ge 6$ non-edges in $N(v)$, at least one with
    $q \ge 1$ must contract without creating a split $K_8$.
-2. **Q0 enumeration** (Step 7 above): for each partition of 11 into
-   cliques of size $\le 7$ and each cross-clique merge, check the
-   profile-model feasibility.
+2. **Q0 high-only closure** (Step 7 above): the profile enumeration
+   leaves 143 feasible merge types, mostly with $f_i=p_i=0$. The next
+   target is a local lemma preventing the high outside vertices from
+   absorbing all chunk-external demand.
 
 Either piece, if closed, eliminates the isolated-low-vertex subcase
 at $n = 89$ and is the first non-trivial step beyond Brooks-type's
