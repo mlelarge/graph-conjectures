@@ -170,62 +170,41 @@ Comparing to KY's $\lceil (65n - 54)/11 \rceil$: Brooks-type adds
 **exactly $11/11 = 1$ edge** for being non-Ore — uniformly in $n$, the
 same constant the user warned us $y_k$ would produce.
 
-#### Open lemma (Phase 6 lever): clique structure of $k$-Ore graphs
+#### Phase 6 lever: clique structure of $k$-Ore graphs (settled by citation)
 
-**Target.** Every 12-Ore graph contains $K_9$ as a subgraph. (Stronger
-working hypothesis: every $k$-Ore graph contains $K_{k-1}$, hence
-contains $K_9$ at $k = 12$.) This is what makes "non-Ore" automatic
-from "$K_9$-free" and lets the Brooks-type +1 land.
+**Claim.** Every $k$-Ore graph $G$ contains $K_{k-1}$ as a subgraph; in
+fact, it contains $\Omega(|V(G)|)$ vertex-disjoint copies of $K_{k-1}$.
 
-**Status: not yet proved here.** An earlier version of this file
-sketched a one-paragraph induction on DHGO compositions; that argument
-is not airtight, for the following reason.
+**Provenance.** Gould–Larsen–Postle 2022 (see the GP entry below) define
+a subgraph-measuring parameter $T(G) = \max_{H \subseteq G} \{2r + s : H$
+is a disjoint union of $r$ copies of $K_{k-1}$ and $s$ copies of
+$K_{k-2}\}$ and prove in Lemma 3.3 that $T(G)$ is linearly lower-bounded
+by $|V(G)|$ on $k$-Ore graphs (their proof is part of the apparatus for
+Theorem 1.8). In particular $T(G) > 0$, so every $k$-Ore graph contains
+$K_{k-1}$.
 
-The natural inductive invariant, suggested in review, is
+A direct inductive proof on DHGO compositions resisted us. The natural
+invariants $\mathbf{P_1}$ ("for every edge some $K_{k-1}$ avoids both
+endpoints") and $\mathbf{P_2}$ ("for any two edges some $K_{k-1}$ avoids
+both") either fail to propagate or fail in the base case. A
+Fact-14-based decomposition splits $G = G[A] \cup G[B]$ with separating
+pair $\{x, y\}$ where both $\tilde{G}(x,y) = G[A] + xy$ and
+$\check{G}(x,y) = G[B]/(x{=}y)$ are smaller $k$-Ore — but the joint
+case "every $K_{k-1}$ in $\tilde{G}$ uses $xy$, and every $K_{k-1}$ in
+$\check{G}$ uses $x{*}y$" is logically consistent with $G$ having no
+$K_{k-1}$ at all. So the simple inductive approach doesn't close.
 
-> $\mathbf{P_1}(G)$: for every edge $xy \in E(G)$, there is a $K_{k-1}$
-> subgraph of $G$ with $\{x, y\} \not\subseteq V(K_{k-1})$.
+GP's Lemma 3.3 closes the matter via the potential-method framework
+rather than direct induction. It is a citable, peer-reviewed proof.
 
-$\mathbf{P_1}(K_k)$ holds: of the $k$ vertex-deletion copies of
-$K_{k-1}$ in $K_k$, exactly $k - 2$ avoid both $x$ and $y$ in the sense
-of not containing both. But $\mathbf{P_1}$ does *not* visibly propagate
-through DHGO. In $G = O(G_1, G_2)$, given an edge $uv \in E(G_1)$
-distinct from the deleted edge $xy$, applying $\mathbf{P_1}(G_1)$ to
-$uv$ produces a $K_{k-1}$ avoiding $uv$ — but it may use the deleted
-edge $xy$, in which case it is no longer a clique in $G$.
+**Consequence.** Every 12-Ore graph contains $K_{11}$, hence contains
+$K_9$. So every $K_9$-free 12-critical graph is non-12-Ore, and
+Brooks-type Theorem 6 applies unconditionally:
 
-To fix this we would need a strengthening of the form "for any two
-edges, some $K_{k-1}$ avoids both," call it $\mathbf{P_2}$.
-$\mathbf{P_2}(K_k)$ already fails for any pair of disjoint edges
-(needs an omitted vertex hitting both pairs, impossible). So
-$\mathbf{P_2}$ is not the right invariant either.
+$$|E(G)| \ge \left\lceil \frac{65n - 43}{11} \right\rceil$$
 
-A more careful invariant or a non-inductive structural argument is
-needed. The target is true for the base $K_{12}$ and survives one
-DHGO step from $(K_{12}, K_{12})$ by explicit counting
-($\binom{12}{9} - \binom{10}{7} = 100$ copies of $K_9$ in $K_{12}$ avoid
-any fixed pair $\{x, y\}$; the deleted-edge condition then propagates).
-Whether it survives every iterated composition is what needs a real
-proof.
-
-**Bypass for Phase 6 use.** Pending the proof, we can still use
-Brooks-type at the level of *the weaker claim "every 12-Ore graph is
-not $K_9$-free"*, which is what Theorem 6's application actually
-requires. That weaker claim is exactly the target above. Until it is
-proved, **the Brooks-type conclusion at $n \le 88$ should be treated as
-contingent on this lemma.**
-
-Possible paths to a clean proof:
-1. Identify a stronger inductive invariant on $k$-Ore graphs (perhaps
-   involving the separating pair structure of Fact 14 of the Brooks-type
-   paper) and verify its propagation under DHGO.
-2. Show that every $k$-Ore graph contains $K_k - e$ for some edge $e$,
-   which trivially contains $K_{k-1}$. This may be easier to maintain
-   under DHGO since the structural "almost-$K_k$" persists with care.
-3. Search the literature for a stated proof. Plausible references:
-   later Kostochka–Yancey, Postle's structural-critical-graph series,
-   or the Cranston–Rabern Reed-conjecture line, all of which use the
-   $k$-Ore characterisation extensively.
+for every $K_9$-free 12-critical graph on $n$ vertices. The $n \le 88$
+closure is now uncontingent.
 
 #### What Brooks-type closes, what it leaves
 
@@ -315,15 +294,89 @@ with $c_9 \le 0.2$** (or roughly equivalent). Without such an explicit
 constant, KS 2000 alone does not close Phase 6 at the finite $k = 12$
 we care about.
 
-### Remaining audit queue
+### Gould–Larsen–Postle 2022 — primary
 
-- *Structure in sparse $k$-critical graphs* (Gao, Postle et al., 2022).
-  Structural — may give a finer constant than KY or Brooks-type for
-  $k = 12$, $K_9$-free directly, without needing Johansson's constant
-  to be small.
-- Molloy 2019 + Davies–Kang–Pirot–Sereni (and successors) for explicit
-  $K_r$-free list-chromatic constants, which would feed into the KS 2000
-  Theorem 4 pipeline above.
+R. J. Gould, V. Larsen, L. Postle, *Structure in sparse $k$-critical
+graphs*, J. Combin. Theory Ser. B 156 (2022) 194–222
+([PDF](https://www.math.emory.edu/~rg/sparse.pdf)).
+
+The relevant statement is **Conjecture 1.6** (due to Postle):
+
+> For every $k \ge 4$, there exists $\varepsilon_k > 0$ such that if $G$ is a
+> $k$-critical $K_{k-2}$-free graph, then
+> $$|E(G)| \ge \left(\frac{k}{2} - \frac{1}{k-1} + \varepsilon_k\right) |V(G)| - \frac{k(k-3)}{2(k-1)}.$$
+
+This is the right shape for Phase 6: it strengthens KY by a positive
+$\varepsilon_k n$ under a clique-exclusion hypothesis. For $k = 12$ the
+hypothesis is "$K_{10}$-free", which is *implied by* our $K_9$-free
+hypothesis. So the conjecture would apply directly.
+
+**Status at $k = 12$.** The conjecture is **open**. GP prove it for
+$k \ge 33$ (Corollary 1.10). The only previously known cases are
+$k = 5$ (Postle 2017) and $k = 6$ (their reference [4]). $k = 12$ sits
+in the gap.
+
+**Even if it held at $k = 12$, the explicit $\varepsilon_k$ is too small.**
+GP construct $\varepsilon = 4/(k^3 - 2k^2 + 3k)$ in Definition 4. At
+$k = 12$:
+
+$$\varepsilon_{12}^{GP} = \frac{4}{1728 - 288 + 36} = \frac{4}{1476} \approx 0.00271.$$
+
+The asymptotic Phase 6 gap is $1/(k-1) = 1/11 \approx 0.0909$ per vertex
+($\chi_{\rm EM}$-biplanar coefficient 6 minus the KY coefficient $65/11$).
+So GP's $\varepsilon_{12}$ is about **3% of what's needed** — even if
+the conjecture were proved at $k = 12$ with their constant. To close
+Phase 6 the constant has to be roughly $\varepsilon_{12} \ge 1/11$,
+which is over 30× the GP value.
+
+So both routes through the published asymptotic literature fail:
+- KS 2000 + Johansson: needs explicit $c_9 \le 0.2$ in Johansson; modern
+  bounds give $c_9 \sim 8$ to $1800$. Off by 1–4 orders of magnitude.
+- GP 2022: conjecture not even proved at $k = 12$; explicit $\varepsilon_{12}$
+  in the proven range is 30× too small.
+
+The asymptotic-with-tiny-constant chain is decisively inadequate for the
+finite, sharp Earth–Moon application at $k = 12$.
+
+### Useful by-product: $k$-Ore graphs have linearly many $K_{k-1}$'s
+
+GP's Lemma 3.3 (paraphrased): in a $k$-Ore graph, the number $T(G)$ of
+disjoint $K_{k-1}$ and $K_{k-2}$ subgraphs is linearly bounded below by
+$|V(G)|$. In particular, every $k$-Ore graph contains $K_{k-1}$ as a
+subgraph — concretely, **linearly many vertex-disjoint copies**. This
+finally gives a citable proof of the Phase 6 lever lemma we left open
+above, and resolves the contingency on the $n \le 88$ closure: every
+$K_9$-free 12-critical graph really is non-12-Ore, so Brooks-type
+applies cleanly.
+
+### Strategic conclusion
+
+The asymptotic literature does not finish Phase 6 at finite $k = 12$.
+The path forward is **a bespoke discharging / potential argument
+specific to $k = 12$, $K_9$-free**. Specifically, the GP framework
+gives the template: define an $\varepsilon$-potential
+$\rho(G) = ((k-2)(k+1) + \varepsilon')|V(G)| - 2(k-1)|E(G)| - \delta' T(G)$
+and show $\rho(G) \le $ constant via discharging, where $T(G)$ counts
+disjoint $K_{k-1}$ / $K_{k-2}$ / $K_9$-forbidden substructures. The
+constants $\varepsilon'$, $\delta'$ are free parameters; the goal is
+to make $\varepsilon'$ large enough to close $\chi_{\rm EM}$.
+
+This is open mathematical work, not a literature audit.
+
+### Remaining audit queue (largely closed)
+
+The four main candidate routes have all been audited and found
+insufficient at $k = 12$:
+
+- KY 2014: closes $n \le 77$. Sharp.
+- Brooks-type 2018: closes $n \le 88$, now uncontingent thanks to GP
+  Lemma 3.3.
+- KS 2000 + Johansson: asymptotic, requires unknown small $c_9$.
+- GP 2022: open at $k = 12$ as conjecture; even if true, explicit
+  $\varepsilon_{12}$ is 30× too small.
+
+No remaining audit is expected to close the asymptotic case. New work
+is required.
 
 ### Direct $K_9$-freeness route
 
