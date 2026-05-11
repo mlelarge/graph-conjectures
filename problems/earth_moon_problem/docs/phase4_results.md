@@ -22,7 +22,7 @@ as the wall-time yardstick for all subsequent rows.
 | weights | n | m | slack | SMS result | wall time | total time | propagator calls | Kuratowski clauses added | run_dir |
 |---|---:|---:|---:|---|---:|---:|---:|---:|---|
 | `3,3,5,3,5` | 19 | 98 | 4 | UNSAT | 1207 s | 985 s | 10 162 478 | 1 212 620 | [new_c5_a/20260510T122905Z](../data/new_c5_a/20260510T122905Z/) |
-| `3,4,4,3,5` | 19 | 98 | 4 | _pending_ | — | — | — | — | (not yet launched) |
+| `3,4,4,3,5` | 19 | 98 | 4 | UNSAT | 8405 s | 3172 s | 18 017 363 | 1 866 362 | [new_c5_b/20260510T170028Z](../data/new_c5_b/20260510T170028Z/) |
 | `4,4,4,4,4,4,4` (KSS candidate2 / our headline) | 28 | 154 | 2 | _pending_ | — | — | — | — | (not yet launched) |
 
 Sequencing: run `3,3,5,3,5` to completion, then `3,4,4,3,5`, then commit a
