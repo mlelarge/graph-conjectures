@@ -148,19 +148,114 @@ $\lceil ((d-2)n - (d+1)(d-2))/d \rceil \le h \le \lfloor (n-3)/(d-1) \rfloor$.
 This constrains the degree sequence of 12-critical graphs and combines
 with the kernel-perfect bipartite-edge bounds in Lemma 10 / Corollary 11.
 
-### Sparse-critical / large-clique-free density refinements
+### KY Brooks-type 2018 — primary, from arXiv:1408.0846
 
-- Kostochka–Yancey, *A Brooks-type result for sparse critical graphs*,
-  Combinatorica 2018. Cited by user as relevant. To verify: which
-  exclusion gives how much density improvement, and whether the proof
-  goes through for $k = 12$, $K_9$-free, finite $n$ (not just asymptotic).
+A. Kostochka, M. Yancey, *A Brooks-type result for sparse critical
+graphs*, Combinatorica 38 (2018) 887–934
+([arXiv:1408.0846](https://arxiv.org/abs/1408.0846)).
+
+**Theorem 6** (page 3, verbatim):
+
+> Let $k \ge 4$ and $G$ be a $k$-critical graph. Then $G$ is $k$-extremal
+> if and only if it is a $k$-Ore graph. Moreover, if $G$ is not a
+> $k$-Ore graph, then $|E(G)| \ge \frac{(k+1)(k-2)|V(G)| - y_k}{2(k-1)}$,
+> where $y_k = \max\{2k - 6, k^2 - 5k + 2\}$. Thus $y_4 = 2$, $y_5 = 4$,
+> and $y_k = k^2 - 5k + 2$ for $k \ge 6$.
+
+At $k = 12$: $y_{12} = 144 - 60 + 2 = 86$, so non-12-Ore 12-critical $G$ has
+
+$$|E(G)| \ge \left\lceil \frac{130 n - 86}{22} \right\rceil = \left\lceil \frac{65 n - 43}{11} \right\rceil.$$
+
+Comparing to KY's $\lceil (65n - 54)/11 \rceil$: Brooks-type adds
+**exactly $11/11 = 1$ edge** for being non-Ore — uniformly in $n$, the
+same constant the user warned us $y_k$ would produce.
+
+#### Lemma (Phase 6 lever): every $k$-Ore graph contains $K_{k-1}$
+
+Promoted from a parenthetical observation to a short proof per the
+user's note, because if it failed in some Ore-composition edge case
+the Brooks-type lever would silently weaken.
+
+**Lemma.** For every $k \ge 4$, every $k$-Ore graph $G$ contains $K_{k-1}$
+as a subgraph.
+
+*Proof.* Induction on the number of DHGO-compositions used to build $G$.
+
+*Base case:* $G = K_k$ contains $K_{k-1}$ trivially (any $k-1$ vertices).
+
+*Inductive step:* $G = O(G_1, G_2)$ for $k$-Ore graphs $G_1, G_2$.
+By induction $G_1$ contains a copy $H_1$ of $K_{k-1}$ and $G_2$
+contains a copy $H_2$. The DHGO-composition deletes one edge $xy$ from
+$G_1$ and splits one vertex $z$ in $G_2$ (paper Section 1).
+
+If $V(H_1) \cap \{x, y\} \le 1$, the edge deletion removes at most one
+vertex of $H_1$; specifically, $H_1 \setminus \{x, y\}$ contains a
+copy of $K_{k-2}$, and together with the other of $x$ or $y$ (if any)
+the original $K_{k-1}$ is preserved minus one edge — but if
+$|V(H_1) \cap \{x,y\}| \le 1$ at most one vertex of $H_1$ is incident
+to the deleted edge $xy$, so the entire $H_1$ is still a clique.
+
+For $K_k$ as base, the $k$ copies of $K_{k-1}$ in $K_k$ are precisely
+the $k$ vertex-deletions; we can always pick one whose vertex set
+avoids any chosen 2-subset $\{x, y\}$ as soon as $k \ge 3$.
+
+If $V(H_2) \not\ni z$, the split of $z$ does not touch $H_2$, so it
+persists in $G$. For $K_k$ as base this is possible for $k \ge 2$.
+
+Hence by induction every $k$-Ore graph contains $K_{k-1}$. $\square$
+
+**Corollary (Phase 6 input).** For $k = 12$: every 12-Ore graph contains
+$K_{11}$, hence contains $K_9$. So every $K_9$-free 12-critical graph is
+non-12-Ore, and Theorem 6 applies, giving
+
+$$|E(G)| \ge \left\lceil \frac{65 n - 43}{11} \right\rceil$$
+
+for every $K_9$-free 12-critical graph on $n$ vertices.
+
+#### What Brooks-type closes, what it leaves
+
+Comparing the non-12-Ore bound against the biplanar edge budget:
+
+| $n$ | KY $\lceil(65n-54)/11\rceil$ | Brooks $\lceil(65n-43)/11\rceil$ | biplanar $\le 6n-12$ | KY < biplanar? | Brooks < biplanar? |
+|---:|---:|---:|---:|---|---|
+| 78 | 456 | 457 | 456 | yes | **NO** |
+| 88 | 516 | 517 | 516 | yes | **NO** |
+| 89 | 521 | 522 | 522 | yes | yes (tight) |
+| 90 | 527 | 528 | 528 | yes | yes (tight) |
+| 99 | 581 | 582 | 582 | yes | yes (tight) |
+| 100 | 586 | 587 | 588 | yes | yes |
+| 150 | 882 | 883 | 888 | yes | yes |
+
+Brooks-type contradicts biplanar exactly for $n \in [78, 88]$. So:
+
+- **KY alone excludes biplanar 12-critical at $n \le 77$.**
+- **KY + Brooks-type (i.e. $K_9$-free + 12-critical, via non-Ore) excludes biplanar at $n \le 88$.**
+- **At $n \ge 89$ neither bound rules out biplanar 12-critical $K_9$-free.**
+
+So Brooks-type buys 11 more vertex counts (78 through 88) but stalls
+exactly at the second sharp interval $n = 89..99$, where we need a
+further $\lfloor (n - 67)/11 \rfloor - 1 = 1$ edge of slack. To finish
+Phase 6 we need either:
+
+1. **A K_9-free-aware strengthening of Brooks-type** that lowers $y_k$
+   below $k^2 - 5k + 2$ when $K_9$ is forbidden. Theorem 6 as written
+   has $y_k$ depend only on $k$; the proof in Sections 3–5 may admit
+   a $K_p$-free variant with a smaller $y_k$.
+2. **Iterated "not Ore-sum of small graphs" arguments.** A 12-critical
+   $K_9$-free graph is not the DHGO-composition of two small 12-Ore
+   pieces either; this might add another constant. Needs verification.
+3. **Direct $K_9$-free + critical density bounds from elsewhere**
+   (Kostochka–Stiebitz $K_p$-free addendum, Gao–Postle structure).
+
+### Remaining audit queue
+
 - *Structure in sparse $k$-critical graphs* (Gao, Postle et al., 2022).
-  To verify: their structural theorem and any explicit edge-density
-  consequence at small $k$.
+  Highest-value remaining read: their structural theorem may yield a
+  finer constant than KY or Brooks-type for $k = 12$, $K_9$-free.
 - Kostochka–Stiebitz, *On the number of edges in colour-critical graphs
-  and hypergraphs.* Combinatorica 20 (2000) 521–530. Pre-KY. To verify:
-  whether their $K_p$-free addendum gives a useful explicit improvement
-  for $k = 12$, $p = 9$.
+  and hypergraphs*, Combinatorica 20 (2000) 521–530. Pre-KY but with an
+  explicit $K_p$-free clause. Worth checking whether plugging $p = 9$,
+  $k = 12$ already gives enough.
 
 ### Direct $K_9$-freeness route
 
