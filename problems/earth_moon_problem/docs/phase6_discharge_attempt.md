@@ -287,26 +287,146 @@ single edge). Then $|V(G^*)| = n - 2$. By the rainbow condition, no
 $G^*$ is *not* 11-colourable: $\chi(G^*) \ge 12$. Therefore $G^*$
 contains a 12-critical subgraph $H$.
 
-*Step 4 (open sub-step): preserving $K_9$-freeness under contraction.*
-Suppose we can choose the non-edge $\{u_i, u_j\}$ in Step 3 so that
-$G^*$ is $K_9$-free. Concretely: a $K_9$ in $G^*$ must involve the
-merged vertex (else it is a $K_9$ in $G - v \subseteq G$, contradicting
+*Step 4 (preserving $K_9$-freeness under contraction).* Suppose we
+can choose the non-edge $\{u_i, u_j\}$ in Step 3 so that $G^*$ is
+$K_9$-free. Concretely: a $K_9$ in $G^*$ must involve the merged
+vertex (else it is a $K_9$ in $G - v \subseteq G$, contradicting
 $K_9$-free) and corresponds to a set of 8 pairwise-adjacent vertices in
 $N_{G-v}(u_i) \cup N_{G-v}(u_j)$, with at least one in
 $N(u_i) \setminus N(u_j)$ and at least one in $N(u_j) \setminus N(u_i)$
 (else the $K_8$ together with $u_i$ or $u_j$ alone already gives $K_9$
 in $G$). Call such a $K_8$ a *split obstruction* for the non-edge.
 
-The claim is that *some* of the 6+ non-edges admits no split
-obstruction. This is the load-bearing piece and is not yet proved
-here. Plausible because $G$ is $K_9$-free and biplanar with tight
-edge budget, so $K_8$'s are sparse and the split condition is restrictive.
+*Step 5 (was: invoke Theorem B). **Gap identified.*** Theorem B's
+$n \ge 89$ lower bound is for 12-critical $K_9$-free **biplanar**
+graphs. Contraction destroys planarity in general: identifying two
+non-adjacent vertices in a planar graph can produce $K_5$ or $K_{3,3}$.
+So $G^*$ is not automatically biplanar even when $G$ is, and Theorem B
+does not directly apply to a 12-critical subgraph $H \subseteq G^*$.
 
-*Step 5: contradiction.* Granting Step 4, $H$ is a 12-critical
-$K_9$-free graph on $\le n - 2$ vertices. By Theorem B (the
-KY+Brooks-type+GP-Lemma-3.3 lower bound),
-$|V(H)| \ge 89$, hence $n - 2 \ge 89$, i.e. $n \ge 91$. $\square$
-(modulo Step 4)
+*Step 5' (case split that repairs the argument for one half).* Let $H$
+be a 12-critical subgraph of $G^*$ (exists since $\chi(G^*) \ge 12$
+by Step 3). Let $w$ be the merged vertex.
+
+- **Case A: $w \notin V(H)$.** Then $V(H) \subseteq V(G^*) \setminus \{w\}
+  = V(G) \setminus \{v, u_i, u_j\}$, and every edge of $H$ is an edge of
+  $G$ (the contraction only modifies edges incident to $w$). So
+  $H \subseteq G$ is a subgraph of a biplanar graph, hence biplanar.
+  Combining $K_9$-freeness (granted by Step 4) and biplanarity, Theorem
+  B gives $|V(H)| \ge 89$. But $|V(H)| \le n^* - 1 = n - 3$. So
+  $n \ge 92$.
+
+- **Case B: $w \in V(H)$.** $H$ contains the merged vertex, whose
+  "un-contraction" returns a structure in $G - v$. $H$ is 12-critical
+  but may not be biplanar (the merge can destroy planarity precisely
+  through $w$'s edges). Theorem B does not apply directly. **This is
+  the genuine remaining open case.**
+
+So the conditional conclusion, modulo Step 4, is
+
+> If $G[L]$ has an isolated vertex, then **either** $n \ge 92$
+> (Case A), **or** some 12-critical subgraph of $G^*$ contains the
+> merged vertex (Case B).
+
+That is still not the lemma we want. To close Case B we need one of
+the three repairs the user suggested:
+
+**Case B repair option 1 — biplanarity-preserving contraction.** Pick
+$\{u_i, u_j\}$ so that the contraction of the non-edge stays biplanar.
+Layer-dependent; probably hard.
+
+**Case B repair option 2 — edge-cap on critical subgraph.** Show that
+every 12-critical subgraph $H \subseteq G^*$ has $|E(H)| \le 6|V(H)| - 12$
+even though $G^*$ itself is not biplanar — i.e., the biplanar edge
+budget survives the contraction within any critical core. Possible if
+the merged vertex $w$ has few "fresh" edges.
+
+**Case B repair option 3 — direct potential argument on $G^*$.** Per
+the review note:
+
+$$\rho_{12}(G^*) = 130 (n - 2) - 22 (m - 11 - q) = 68 + 22 q
+\quad\text{at } n = 89, m = 522,$$
+
+where $q = |N_{G-v}(u_i) \cap N_{G-v}(u_j)|$ (common neighbours
+collapsed by the contraction). For a 12-critical non-Ore subgraph
+$H \subseteq G^*$, $\rho_{12, G^*}(V(H)) \le y_{12} = 86$ (Brooks-type
++ GP Lemma 3.3, since $K_9$-free implies non-Ore — *granted that
+Step 4 ensures $H$ stays $K_9$-free*).
+
+This gives a Brooks-type budget constraint: $|E(H)| \ge \lceil (65 |V(H)| - 43)/11 \rceil$.
+For $H = G^*$ itself ($|V(H)| = 87$): Brooks demands $|E(H)| \ge 511$
+edges, but $|E(G^*)| = 511 - q$. So **if $q \ge 1$, $G^*$ itself
+cannot be 12-critical $K_9$-free** — $H$ must be a *proper*
+subgraph.
+
+For a proper subgraph $H \subsetneq G^*$ in Case B (containing $w$),
+$|V(H)| \le 86$ and $|E(H)| \le |E(G^*)| - $ (edges lost to dropping
+$\ge 1$ vertex) $\le 511 - q - $ something. The required Brooks bound
+shrinks with $|V(H)|$ at rate $65/11 \approx 5.91$ per vertex, while
+the edge-loss rate from $G^*$ depends on vertex degrees. The exact
+arithmetic determines whether any $n_H$ admits feasible $H$.
+
+### Step 5'' — Sharpened conditional conclusion
+
+Assuming Step 4 (no $K_9$ created), the lemma now reduces to:
+
+> Either Case A holds, giving $n \ge 92$, **or** Case B holds with
+> $q \ge 1$ and there is a 12-critical $K_9$-free graph $H$ on
+> $|V(H)| \le 86$ vertices, containing the merged vertex $w$, with
+> $|E(H)| \le 511 - q - \Delta$ for $\Delta$ counting edge loss from
+> $V(G^*) \setminus V(H)$. Brooks-type then bounds $|V(H)|$ from below.
+
+The cleanest path forward is Repair Option 3 (Brooks-type budget),
+because it sidesteps biplanarity of $H$ entirely. The remaining
+arithmetic is whether the Brooks edge demand at each $n_H \le 86$
+can be met by the $G^*$ edge budget *given that $H$ contains $w$*.
+
+### Step 5''' — Tight calculation, $q = 0$ case
+
+If $q = 0$ (no common neighbours): $\rho_{12}(G^*) = 68 \le 86 = y_{12}$,
+so $G^*$ as a whole already sits below the Brooks-type threshold. But
+$G^*$ has $\chi(G^*) \ge 12$, and there's no immediate KY-type
+contradiction since $\rho_{12} \le k(k-3) = 108$ is consistent with
+12-criticality.
+
+So $q = 0$ does *not* yield a free contradiction via Brooks-type, and
+Case A's $n \ge 92$ does not extend to $q = 0$. The natural sub-case
+is $q = 0$ with Case B (i.e., $w \in V(H)$, no common neighbours
+between $u_i$ and $u_j$). Here the contracted graph is essentially
+a "disjoint" merge, and biplanarity might in fact survive — we may
+get a cleaner repair via Option 1 specifically when $q = 0$.
+
+### Step 5'''' — Suggested next move
+
+1. **Tighten the Case B budget arithmetic.** For each $q \in \{0, 1, \dots, 11\}$
+   and each $n_H \in [12, 86]$ in Case B, compute:
+   - the maximum edges of any $H \subseteq G^*$ containing $w$ on $n_H$
+     vertices, given the degree sequence of $G^*$;
+   - the Brooks-type required edges $\lceil(65 n_H - 43)/11\rceil$;
+   - check whether they are jointly satisfiable.
+
+   For each $(q, n_H)$ pair where the system is feasible, the
+   corresponding $H$ is a *potential* witness; for each where it is
+   infeasible, that pair is ruled out and Case B is closed there.
+   The contradiction (lemma) then says: for every choice of non-edge
+   $\{u_i, u_j\}$, Case B at the resulting $q$ is jointly infeasible
+   on every $n_H$.
+
+2. **Use the 6+ non-edge slack.** We have $\ge 6$ non-edges. If even
+   *one* non-edge gives a non-edge contraction with simultaneously
+   (i) $K_9$-free preservation, (ii) Case B infeasibility at every $n_H$,
+   the lemma closes at $n = 89$.
+
+3. **Defer biplanarity-preserving contraction (Repair 1) and the
+   $q = 0$ case** — both look harder and may not be needed if (1) and
+   (2) carry through.
+
+4. The right next mathematical task is **not** SAT enumeration but a
+   careful arithmetic of the Brooks-type budget under the constraint
+   "$w$ has degree $22 - q$ in $G^*$, and the critical core $H$ must
+   include $w$." If feasible at any $(q, n_H)$, identify the
+   structural witness and check whether it can be realised in $G$ at
+   all.
 
 **Consequence (conditional).** If Step 4 is provable, then a
 biplanar 12-critical $K_9$-free graph at $n \in \{89, 90\}$ has no
