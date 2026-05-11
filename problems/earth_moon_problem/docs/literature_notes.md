@@ -302,8 +302,9 @@ context. Used as the construction template behind Phase 4.
 
 - **Citation.** A. V. Kostochka, M. Yancey. *Ore's conjecture for $k = 4$ and
   Grötzsch's theorem.* *Combinatorica* 34 (2014), 781–797. The general $k$-critical
-  density bound is in their companion paper *Density of $k$-critical graphs*
-  ([arXiv:1209.4255](https://arxiv.org/abs/1209.4255)), JCTB 2014.
+  density bound is in their companion paper *Ore's Conjecture on
+  color-critical graphs is almost true*
+  ([arXiv:1209.1050](https://arxiv.org/abs/1209.1050)), JCTB 109 (2014) 73–101.
 - **Statement — paraphrase, to verify against PDF.** Every $k$-critical graph $G$
   on $n$ vertices satisfies
   $$|E(G)| \ge \frac{(k+1)(k-2)}{2(k-1)} n - \frac{k(k-3)}{2(k-1)}.$$

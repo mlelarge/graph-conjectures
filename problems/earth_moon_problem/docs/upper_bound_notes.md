@@ -15,7 +15,7 @@ $\chi_{\rm EM} \le 11$.
 
 ## The gap and what closing it means
 
-Kostochka–Yancey (2014, [arXiv:1209.4255](https://arxiv.org/abs/1209.4255)) prove,
+Kostochka–Yancey (2014, [arXiv:1209.1050](https://arxiv.org/abs/1209.1050)) prove,
 for every $k$-critical graph,
 
 $$|E(G)| \ge \frac{(k+1)(k-2)}{2(k-1)} \, n - \frac{k(k-3)}{2(k-1)}.$$
@@ -43,22 +43,126 @@ Equivalent form: prove $|E(G)| \ge (66 n - 121)/11 = 6n - 11$ for every
 
 ## What is and is not on offer in the literature
 
-This is a Phase 6 audit checklist. Sources to read carefully and report
-back on; do not cite anything in publication-grade form before verifying
-via the cited PDF.
+### KY 2012/2014 — primary, from the arXiv:1209.1050 PDF
 
-### Generic KY equality / near-equality structure
+**Theorem 3** (page 3, verbatim):
 
-- KY proves $k$-Ore graphs achieve equality in their bound. A
-  *$k$-Ore graph* is built from copies of $K_k$ by repeated Ore-sum
-  operations; the base case is $K_k$ itself.
-- For $k = 12$: extremal 12-critical graphs are 12-Ore. Every
-  12-Ore graph contains $K_{11}$ (in fact many copies, since each Ore
-  sum keeps near-cliques). So any $K_9$-free 12-critical graph is far
-  from KY equality — by a $K_8 \to K_{11}$ gap on local clique number.
-- Open question for this project: does $K_9$-freeness force enough extra
-  edges to close $(n-78)/11$? Working hypothesis: yes for $n$ large
-  enough, but the constant must be made explicit.
+> If $k \ge 4$ and $G$ is $k$-critical, then
+> $|E(G)| \ge \lceil ((k+1)(k-2)|V(G)| - k(k-3)) / (2(k-1)) \rceil$.
+> In other words, if $k \ge 4$ and $n \ge k$, $n \ne k+1$, then
+> $f_k(n) \ge F(k,n) := \lceil ((k+1)(k-2)n - k(k-3)) / (2(k-1)) \rceil$.
+
+At $k = 12$: $F(12, n) = \lceil (65n - 54)/11 \rceil$.
+
+**Corollary 6** (page 17, restated verbatim):
+
+> For $k \ge 4$, $0 \le f_k(n) - F(k,n) \le (1 + o(1)) k^2/8$. In particular,
+> $\phi_k = k/2 - 1/(k-1)$.
+
+This is the load-bearing fact for our Phase 6 plan. At $k = 12$ the gap
+between the actual minimum and the KY bound is at most $\sim k^2/8 = 18$
+edges *uniformly in $n$* — independent of how large $n$ gets. So any
+hope of closing the Earth–Moon upper bound by a generic strengthening of
+KY (forbidding nothing structural) is capped at $\sim 18$ edges per
+$n$, which is far short of the $(n-78)/11$ we need. **$K_9$-freeness has
+to do all the work**, not generic structure.
+
+**Theorem 37** (page 16, sharpness, verbatim):
+
+> If one of the following holds:
+> 1. $n \equiv 1 \pmod{k-1}$ and $n \ge k$,
+> 2. $k = 4$, $n \ne 5$, and $n \ge 4$, or
+> 3. $k = 5$, $n \equiv 2 \pmod 4$, and $n \ge 10$,
+> then $f_k(n) = F(k,n) = \lceil ((k - 2/(k-1)) n - k(k-3)/(k-1))/2 \rceil$.
+>
+> Proof. By (5), we only need to show that (9) is tight when
+> 1. $n = k$, 2. $k = 4$, $n = 6$, 3. $k = 4$, $n = 8$, and 4. $k = 5$, $n = 10$.
+> The first case follows from $K_k$. The other three cases follow from Figure 1.
+
+So at $k = 12$, KY is tight exactly when $n \equiv 1 \pmod{11}$, i.e.
+$n \in \{12, 23, 34, 45, 56, 67, 78, 89, \dots\}$.
+
+**Crucial coincidence.** $n = 78$ is one of the equality cases:
+$78 = 7 \cdot 11 + 1$. At $n = 78$ the KY lower bound and the biplanar
+upper bound *exactly coincide*:
+
+$$F(12, 78) = \lceil (65 \cdot 78 - 54)/11 \rceil = \lceil 5016 / 11 \rceil = 456,$$
+$$6 \cdot 78 - 12 = 456.$$
+
+So $n = 78$ is the first vertex count at which 12-critical and biplanar
+become inequality-compatible — and it's also the first vertex count
+where KY is sharp at $k = 12$. The candidate that achieves both
+inequalities with equality would be a 12-Ore graph on 78 vertices that
+happens to be biplanar.
+
+### KY equality structure — primary, paper Section 5 + Figure 1
+
+The proof of Theorem 37 says the equality cases (for $n \equiv 1 \pmod{k-1}$,
+$n \ge k$) "follow from $K_k$" plus Hajós sums to reach larger $n$. At
+$k = 12$, the extremal graphs are 12-Ore graphs — built by repeated
+Hajós/Ore operations starting from copies of $K_{12}$ (KY's equation
+(5) gives the recurrence $f_k(n + (k-1)) \le f_k(n) + (k-1)(k-2/(k-1))/2$,
+realized by Hajós' construction).
+
+**Structural lever for Phase 6.** Every 12-Ore graph contains $K_{11}$
+as a subgraph (one Ore step preserves the $K_{12}$ minus an edge with
+its $K_{11}$ neighbourhood). Hence:
+
+> **Observation.** Every KY-equality 12-critical graph contains
+> $K_{11}$, so in particular contains $K_9$. Therefore no $K_9$-free
+> 12-critical graph achieves equality in the KY bound.
+
+The question becomes quantitative: what is the smallest gap
+$f_{12}^{K_9\text{-free}}(n) - F(12, n)$, where the new $f$ minimises
+over 12-critical *$K_9$-free* graphs? Our target $|E| \ge 6n - 11$ is
+equivalent to
+
+$$f_{12}^{K_9\text{-free}}(n) - F(12, n) \ge \lceil (n - 78)/11 \rceil + \text{integrality slack}.$$
+
+For $n \le 78$ this is automatic from KY plus the integer-edges
+constraint; the real work is at $n \ge 78$.
+
+### Dirac-style structural ingredients — KY §6.1
+
+**Lemma 41 (Dirac)** (page 19, verbatim, lightly paraphrased):
+
+> Let $k \ge 3$. There are no $k$-critical graphs with $k+1$ vertices,
+> and the only $k$-critical graph (call it $D_k$) with $k+2$ vertices
+> is obtained from the 5-cycle by adding $k-3$ all-adjacent vertices.
+
+So at $k = 12$, $D_{12}$ has 14 vertices and contains $K_9$ (the 9 added
+all-adjacent vertices form a clique on which the $C_5$ joins). Again
+$K_9$-freeness eliminates the equality structure on small $n$.
+
+**Lemma 40** (page 19): if $G'$ is $(d+1)$-critical with maximum degree
+$d+1$ and degree-$(d+1)$ vertices forming an independent set, then the
+number $h$ of such vertices satisfies
+$\lceil ((d-2)n - (d+1)(d-2))/d \rceil \le h \le \lfloor (n-3)/(d-1) \rfloor$.
+This constrains the degree sequence of 12-critical graphs and combines
+with the kernel-perfect bipartite-edge bounds in Lemma 10 / Corollary 11.
+
+### Sparse-critical / large-clique-free density refinements
+
+Still on the audit queue; only the headline arXiv links / venues are
+recorded here. Each needs the same verification pass that KY just got.
+
+- A. Kostochka, M. Yancey, *A Brooks-type result for sparse critical
+  graphs*, Combinatorica (2018). Sparse critical graphs with maximum
+  degree bound.
+- *Structure in sparse $k$-critical graphs* (Gao, Postle et al., 2022).
+  Structural theorem; need to extract any explicit edge-density
+  consequence at small $k$.
+- Kostochka–Stiebitz, *On the number of edges in colour-critical graphs
+  and hypergraphs*, Combinatorica 20 (2000) 521–530. Pre-KY. Includes
+  $K_p$-free refinements; check whether the $p=9$, $k=12$ instance
+  beats the $(n-78)/11$ gap directly.
+
+### Direct $K_9$-freeness route
+
+- Rabern (2011) and follow-ups: density improvements from forbidding a
+  large clique. Mostly aimed at Reed's conjecture territory ($\Delta$,
+  $\omega$, $\chi$ inequalities). Worth checking whether any such bound
+  gives $|E| \ge 6n - 11$ for 12-critical $K_9$-free directly.
 
 ### Sparse-critical / large-clique-free density refinements
 
@@ -110,8 +214,9 @@ it.
 
 - A. Kostochka, M. Yancey, *Ore's conjecture for $k = 4$ and Grötzsch's
   theorem*, Combinatorica 34 (2014) 781–797.
-- A. Kostochka, M. Yancey, *Density of $k$-critical graphs*, JCTB 2014
-  ([arXiv:1209.4255](https://arxiv.org/abs/1209.4255)).
+- A. Kostochka, M. Yancey, *Ore's Conjecture on color-critical graphs is
+  almost true*, JCTB 109 (2014) 73–101
+  ([arXiv:1209.1050](https://arxiv.org/abs/1209.1050)).
 - A. Kostochka, M. Yancey, *A Brooks-type result for sparse critical
   graphs*, Combinatorica (2018).
 - Z. Gao, D. Liu, L. Postle (or similar authorship), *Structure in sparse
