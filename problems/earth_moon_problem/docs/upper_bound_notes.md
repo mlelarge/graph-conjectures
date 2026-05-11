@@ -262,15 +262,68 @@ Phase 6 we need either:
 3. **Direct $K_9$-free + critical density bounds from elsewhere**
    (Kostochka–Stiebitz $K_p$-free addendum, Gao–Postle structure).
 
+### Kostochka–Stiebitz 2000 — primary
+
+A. Kostochka, M. Stiebitz, *On the number of edges in colour-critical
+graphs and hypergraphs*, Combinatorica 20 (2000) 521–530
+([PDF](https://kostochk.web.illinois.edu/docs/2000/jctb2000Sti.pdf)).
+
+The paper's headline (Theorem 1) is about triangle-free $k$-list-critical
+graphs: $|E| \ge (k - o(k))n$, asymptotic in $k$. The $K_p$-free analogue
+is stated as a Remark on page 524, derived from the same Theorem 4
+applied via Johansson's $K_r$-free chromatic-number bound:
+
+> "Recently, Johansson [8] proved that for every positive integer $r$
+> there is a constant $c_r$ such that
+> $\chi_l(G) \le (c_r \Delta \log \log \Delta)/\log \Delta$
+> for every $K_r$-free graph $G$ with maximum degree at most $\Delta \ge 2$.
+> Using this result, Theorem 4 implies that if $r$ is an positive integer,
+> then every $k$-list-critical $K_r$-free graph on $n$ vertices has at
+> least $(k - o(k))n$ edges."
+
+**Theorem 4 proof gives an explicit error term.** The orientation
+argument on page 524 produces $m \ge (k - 2 f(g(k))) n$, where $g(k)$ is
+defined by $g(k) f(g(k)) = k^2$ and $f(\Delta) = c_r \Delta \log\log\Delta / \log\Delta$
+is Johansson's bound. So the $o(k)$ is concretely $2 f(g(k))$.
+
+**Does this beat $6n - 11$ at $k = 12, r = 9$?** Coefficient must satisfy
+$k - 2 f(g(k)) \ge 6$, i.e. $f(g(12)) \le 3$. Solving
+$g \cdot f(g) = 144$ at $k = 12$ for a range of plausible Johansson
+constants $c_9$:
+
+| $c_9$ | $g(12)$ | $f(g(12))$ | $2 f(g(12))$ | leading coefficient $12 - 2f(g)$ |
+|---:|---:|---:|---:|---:|
+| 0.1 | 64.85 | 2.22 | 4.44 | **7.56** (beats $6n$) |
+| 0.3 | 36.73 | 3.92 | 7.84 | 4.16 (does not beat $6n$) |
+| 1.0 | 19.83 | 7.26 | 14.53 | $-2.53$ (vacuous) |
+| 3.0 | 11.46 | 12.57 | 25.13 | $-13.1$ (vacuous) |
+
+So the KS + Johansson bound finishes Phase 6 at $k = 12$ iff Johansson's
+constant for $K_9$-free graphs satisfies roughly $c_9 \lesssim 0.2$.
+
+**Status.** Johansson's 1996 result is unpublished; the constants are not
+stated explicitly in the paper. Modern explicit improvements over Johansson:
+
+- Molloy (2019, *The list chromatic number of graphs with small clique
+  number*): for triangle-free, $\chi_l \le (1 + o(1)) \Delta / \log \Delta$.
+- Davies, Kang, Pirot, Sereni (later, $K_r$-free generalisations).
+
+Neither of these is yet folded into our audit. The path to finishing
+Phase 6 via this route is concrete: **find an explicit $K_9$-free
+chromatic-list bound of the form $\chi_l \le c_9 \Delta \log \log \Delta / \log \Delta$
+with $c_9 \le 0.2$** (or roughly equivalent). Without such an explicit
+constant, KS 2000 alone does not close Phase 6 at the finite $k = 12$
+we care about.
+
 ### Remaining audit queue
 
 - *Structure in sparse $k$-critical graphs* (Gao, Postle et al., 2022).
-  Highest-value remaining read: their structural theorem may yield a
-  finer constant than KY or Brooks-type for $k = 12$, $K_9$-free.
-- Kostochka–Stiebitz, *On the number of edges in colour-critical graphs
-  and hypergraphs*, Combinatorica 20 (2000) 521–530. Pre-KY but with an
-  explicit $K_p$-free clause. Worth checking whether plugging $p = 9$,
-  $k = 12$ already gives enough.
+  Structural — may give a finer constant than KY or Brooks-type for
+  $k = 12$, $K_9$-free directly, without needing Johansson's constant
+  to be small.
+- Molloy 2019 + Davies–Kang–Pirot–Sereni (and successors) for explicit
+  $K_r$-free list-chromatic constants, which would feed into the KS 2000
+  Theorem 4 pipeline above.
 
 ### Direct $K_9$-freeness route
 
