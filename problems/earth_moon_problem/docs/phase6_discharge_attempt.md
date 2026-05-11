@@ -256,6 +256,92 @@ each on a distinct 11-set of $H$-neighbours — and these must mutually
 agree under *some* (in fact every) 11-colouring of $G[H]$. That is a
 combinatorial obstruction we can plausibly use.
 
+## Step 6½ — First lemma attempt: isolated low vertex forces $n \ge 91$
+
+**Lemma (attempted).** Let $G$ be a 12-critical $K_9$-free biplanar
+graph with $|E(G)| \le 6n - 12$. If $G[L]$ has an isolated vertex, then
+$n \ge 91$.
+
+**Proof (modulo one open sub-step).**
+
+*Setup.* Let $v \in L$ with $d_{G[L]}(v) = 0$. Then $N(v) \subseteq H$
+and $|N(v)| = 11$.
+
+*Step 1: rainbow.* $G - v$ is 11-colourable. No 11-colouring of $G - v$
+extends to $v$, so in every proper 11-colouring $\varphi$ of $G - v$,
+$\{\varphi(u) : u \in N(v)\} = \{1, \dots, 11\}$. $N(v)$ is
+rainbow-coloured in every 11-colouring of $G - v$.
+
+*Step 2: at least 6 non-edges in $N(v)$.* $K_9$-freeness with $v$
+adjacent to all of $N(v)$ forces $\omega(G[N(v)]) \le 7$, so $G[N(v)]$
+is $K_8$-free. Biplanarity of $G[\{v\} \cup N(v)]$ (a 12-vertex
+subgraph) gives $|E(G[\{v\} \cup N(v)])| \le 6 \cdot 12 - 12 = 60$,
+hence $|E(G[N(v)])| \le 49$. The number of non-edges in $N(v)$ is
+$\binom{11}{2} - 49 = 6$.
+
+*Step 3: contract a non-edge.* Pick any non-edge $\{u_i, u_j\}$ in
+$N(v)$. Let $G^* := (G - v) / \{u_i, u_j\}$ be the graph obtained by
+identifying $u_i$ with $u_j$ (and replacing parallel edges with a
+single edge). Then $|V(G^*)| = n - 2$. By the rainbow condition, no
+11-colouring of $G - v$ assigns $u_i$ and $u_j$ the same colour, so
+$G^*$ is *not* 11-colourable: $\chi(G^*) \ge 12$. Therefore $G^*$
+contains a 12-critical subgraph $H$.
+
+*Step 4 (open sub-step): preserving $K_9$-freeness under contraction.*
+Suppose we can choose the non-edge $\{u_i, u_j\}$ in Step 3 so that
+$G^*$ is $K_9$-free. Concretely: a $K_9$ in $G^*$ must involve the
+merged vertex (else it is a $K_9$ in $G - v \subseteq G$, contradicting
+$K_9$-free) and corresponds to a set of 8 pairwise-adjacent vertices in
+$N_{G-v}(u_i) \cup N_{G-v}(u_j)$, with at least one in
+$N(u_i) \setminus N(u_j)$ and at least one in $N(u_j) \setminus N(u_i)$
+(else the $K_8$ together with $u_i$ or $u_j$ alone already gives $K_9$
+in $G$). Call such a $K_8$ a *split obstruction* for the non-edge.
+
+The claim is that *some* of the 6+ non-edges admits no split
+obstruction. This is the load-bearing piece and is not yet proved
+here. Plausible because $G$ is $K_9$-free and biplanar with tight
+edge budget, so $K_8$'s are sparse and the split condition is restrictive.
+
+*Step 5: contradiction.* Granting Step 4, $H$ is a 12-critical
+$K_9$-free graph on $\le n - 2$ vertices. By Theorem B (the
+KY+Brooks-type+GP-Lemma-3.3 lower bound),
+$|V(H)| \ge 89$, hence $n - 2 \ge 89$, i.e. $n \ge 91$. $\square$
+(modulo Step 4)
+
+**Consequence (conditional).** If Step 4 is provable, then a
+biplanar 12-critical $K_9$-free graph at $n \in \{89, 90\}$ has no
+isolated low vertex. Combined with the analogous (still-to-prove)
+absorption of the next-smallest endblock types ($K_2$, $C_3$, …), this
+pushes the lower bound past 90 by similar 2-vertex contractions.
+
+**Why this is the right shape, even if Step 4 isn't closed yet.**
+
+- It uses *every* hypothesis: criticality (rainbow), $K_9$-free (via
+  $\omega(G[N(v)]) \le 7$ and contraction preservation), biplanarity
+  (via $|E(G[\{v\} \cup N(v)])| \le 60$).
+- It targets the degenerate isolated-low-vertex profile that defeats
+  the crude LP (Step 5 above). Every isolated $v$ would have to admit
+  an obstructed non-edge — a much more constrained condition than
+  block-frequency feasibility.
+- The argument generalises: replace "isolated $v$" by "$v$ in a small
+  endblock" by combining several rainbow conditions on the endblock's
+  external neighbours.
+
+**Step 4 attack plan.**
+
+The split-obstruction condition requires a $K_8$ in
+$N_{G-v}(u_i) \cup N_{G-v}(u_j)$ with vertices on both sides. Bound
+the number of $K_8$ subgraphs in biplanar $K_9$-free graphs at
+$n = 89$, $m = 522$. Each $K_8$ has $\binom{8}{2} = 28$ edges; in
+biplanarity, neither planar layer can host a $K_5$ (non-planar), so
+each $K_8$'s 28 edges split between layers with neither side holding
+$K_5$. By Turán the layer-$K_5$-free max is $\text{ex}(8, K_5) =
+|E(T(8,4))| = 24$. So each $K_8$ has between $4$ and $24$ edges per
+layer (summing to 28). This gives a structural constraint per $K_8$;
+combined with the global edge bound and degree sequence, the total
+number of $K_8$'s in $G$ at $n = 89$ is bounded — concrete bound
+deferred.
+
 ## Step 7 — Revised plan
 
 1. **Fix the exact block accounting** (cut-vertex-free formulation).
