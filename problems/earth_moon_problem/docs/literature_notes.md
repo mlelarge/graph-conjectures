@@ -310,8 +310,12 @@ context. Used as the construction template behind Phase 4.
 - **Specialisation $k = 12$.** $|E(G)| \ge (65 n - 54)/11$.
 - **Earth–Moon application.** Combined with $|E(G)| \le 6n - 12 = (66 n - 132)/11$,
   the inequalities are jointly satisfiable only for $n \ge 78$. A density
-  strengthening exploiting $K_9$-freeness — adding any $c\,n$, $c > 0$ — closes
-  $\chi_{\rm EM} \le 11$. This is the Phase 6 target.
+  strengthening exploiting $K_9$-freeness closes $\chi_{\rm EM} \le 11$ only if
+  it beats the remaining gap:
+  $$6n - 12 - \frac{65n - 54}{11} = \frac{n - 78}{11}.$$
+  Thus the target is an improvement over Kostochka–Yancey of more than
+  $(n-78)/11$ edges; asymptotically, an arbitrary $c n$ term is not enough
+  unless $c \ge 1/11$ up to lower-order constants. This is the Phase 6 target.
 
 ## Mansfield — 1983
 

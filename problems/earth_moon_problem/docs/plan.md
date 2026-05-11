@@ -23,8 +23,10 @@ For $\chi(G) \ge 10$: combined with $K_9$-freeness, this forces $\omega(G) \le 8
 
 For $\chi(G) \ge 12$ (12-critical, $K_9$-free, biplanar): Kostochka–Yancey (2014) gives
 $|E(G)| \ge \frac{65n - 54}{11}$, while biplanarity gives $|E(G)| \le 6n - 12 = \frac{66n - 132}{11}$.
-These are compatible only for $n \ge 78$, and any density strengthening of the Kostochka–Yancey
-bound that exploits $K_9$-freeness would close the upper bound to 11.
+These are compatible only for $n \ge 78$. To close the upper bound to 11 by density alone,
+a $K_9$-free strengthening must add more than
+$(n-78)/11$ edges over Kostochka–Yancey; asymptotically, this means an extra
+edge-density coefficient at least $1/11$, not merely an arbitrary positive $c n$ term.
 
 ## Phase 1 — biplanarity oracle and certificates
 
@@ -138,7 +140,8 @@ To prove $\chi_{\rm EM} \le 11$ it suffices to rule out 12-critical $K_9$-free b
 So either:
 
 - prove a $K_9$-free strengthening
-  $|E| \ge (65n - 54)/11 + c\,n$, $c > 0$, for some constant $c$; or
+  $|E| > 6n - 12$ for every 12-critical $K_9$-free graph, equivalently an
+  improvement over Kostochka–Yancey exceeding $(n-78)/11$ edges; or
 - close the case $n \ge 78$ directly, possibly via SAT for small $n$ and a structural
   argument above some threshold.
 
