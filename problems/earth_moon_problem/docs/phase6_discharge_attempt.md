@@ -627,106 +627,164 @@ possible Gallai-forest structures on $L^*$ consistent with the
 inherited clique structure and check whether any produces a graph
 consistent with $\rho_{12}(G^*) = 86$.
 
-### Step 7 — Revised plan
+## Step 7 — Q0 profile model (corrected accounting)
 
-**Consequence (conditional).** If Step 4 is provable, then a
-biplanar 12-critical $K_9$-free graph at $n \in \{89, 90\}$ has no
-isolated low vertex. Combined with the analogous (still-to-prove)
-absorption of the next-smallest endblock types ($K_2$, $C_3$, …), this
-pushes the lower bound past 90 by similar 2-vertex contractions.
+Per review: the $\varepsilon_t$ correction and the outside-vertex
+exclusivity together give a far smaller search space than enumerating
+Gallai forests on 32 vertices.
 
-**Why this is the right shape, even if Step 4 isn't closed yet.**
+### 7.1 Setup
 
-- It uses *every* hypothesis: criticality (rainbow), $K_9$-free (via
-  $\omega(G[N(v)]) \le 7$ and contraction preservation), biplanarity
-  (via $|E(G[\{v\} \cup N(v)])| \le 60$).
-- It targets the degenerate isolated-low-vertex profile that defeats
-  the crude LP (Step 5 above). Every isolated $v$ would have to admit
-  an obstructed non-edge — a much more constrained condition than
-  block-frequency feasibility.
-- The argument generalises: replace "isolated $v$" by "$v$ in a small
-  endblock" by combining several rainbow conditions on the endblock's
-  external neighbours.
+Fix the partition $G[N(v)] = K_{s_1} \sqcup K_{s_2} \sqcup \cdots \sqcup K_{s_p}$
+with $\sum s_i = 11$ and each $s_i \le 7$. Fix a cross-clique non-edge
+$\{u_i, u_j\}$ with $u_i \in K_{s_a}$, $u_j \in K_{s_b}$, $a \ne b$.
+After contraction:
 
-**Step 4 attack plan.**
+- $K_{s_a}$ becomes the chunk $K_{s_a - 1}$ in $G^*[N(v) - \{u_i, u_j\}]$.
+- $K_{s_b}$ becomes $K_{s_b - 1}$.
+- All other cliques $K_{s_c}$ ($c \ne a, b$) are unchanged.
 
-The split-obstruction condition requires a $K_8$ in
-$N_{G-v}(u_i) \cup N_{G-v}(u_j)$ with vertices on both sides. Bound
-the number of $K_8$ subgraphs in biplanar $K_9$-free graphs at
-$n = 89$, $m = 522$. Each $K_8$ has $\binom{8}{2} = 28$ edges; in
-biplanarity, neither planar layer can host a $K_5$ (non-planar), so
-each $K_8$'s 28 edges split between layers with neither side holding
-$K_5$. By Turán the layer-$K_5$-free max is $\text{ex}(8, K_5) =
-|E(T(8,4))| = 24$. So each $K_8$ has between $4$ and $24$ edges per
-layer (summing to 28). This gives a structural constraint per $K_8$;
-combined with the global edge bound and degree sequence, the total
-number of $K_8$'s in $G$ at $n = 89$ is bounded — concrete bound
-deferred.
+Define $\varepsilon_i = 1$ if chunk $i$ came from $K_{s_a}$ or $K_{s_b}$
+(i.e. it's adjacent to $w$ via the inherited edge to $u_i$ or $u_j$),
+else $\varepsilon_i = 0$.
 
-## Step 7 — Revised plan
+### 7.2 Corrected chunk-vertex degree accounting
 
-1. **Fix the exact block accounting** (cut-vertex-free formulation).
-   For $F = G[L]$ let
-   - $z$ = number of isolated vertices of $F$;
-   - $c$ = number of nontrivial connected components of $F$;
-   - $b_t$ = number of $K_t$-blocks, $2 \le t \le 8$;
-   - $c_s$ = number of $C_s$-blocks for each odd $s \ge 3$.
-   Then
-   $$\ell = z + c + \sum_{\text{nontrivial blocks } B}(|B| - 1),$$
-   $$e_{LL} = \sum_{t=2}^8 \binom{t}{2} b_t + \sum_{s \text{ odd}} s \cdot c_s.$$
-   $e_{LH}$ and $e_{HH}$ as in Step 3.
+Each vertex of chunk $C_i$ (size $t_i$) in $G^*$ has degree 11. Decomposed:
 
-2. **Derive the first endblock list-colouring lemma.** Concrete first
-   target: prove that an *isolated* low vertex $v$ forces its 11
-   $H$-neighbours to be pairwise non-adjacent in $G$ (or some weaker
-   structural condition forced by every 11-colouring placing distinct
-   colours on them). This is the leanest non-trivial criticality
-   constraint.
+- $t_i - 1$ within $C_i$;
+- $\varepsilon_i$ edges to $w$ (only chunks descended from $K_{s_a}$ or
+  $K_{s_b}$);
+- the remaining $12 - t_i - \varepsilon_i$ edges go to
+  $(L - \{v\}) \cup (H \setminus N(v))$ — i.e. to vertices outside
+  $N(v)$ in $G$.
 
-3. **Encode the lemma in an LP/ILP** alongside the block-frequency
-   variables. Recheck feasibility. The isolated-low-vertex profile
-   from Step 5 should *no longer* be feasible after the lemma is
-   encoded.
+(Edges from $C_i$ to other chunks $C_j$ are zero, since $G[N(v)]$ is
+disjoint cliques.)
 
-4. **If still feasible:** identify what additional bad-list constraint
-   the LP solution violates, prove that, iterate.
+Total external edges from chunk $C_i$:
 
-5. **Sanity-check empirically:** for $n = 89$, the LP without
-   criticality should be feasible (per Step 5). After adding the
-   isolated-vertex lemma it should be infeasible or give a different
-   extremal profile (e.g. forcing $G[L]$ to have many short cycles or
-   small cliques rather than isolated vertices). Either outcome moves
-   Phase 6 forward concretely.
+$$e_i^{ext} = t_i \, (12 - t_i - \varepsilon_i).$$
 
-The crude LP run is still worth doing once *as a check on the
-formulation*, with the explicit prediction that it returns the
-isolated-low-vertex profile. That confirms the plumbing works before
-we add the structural lemma.
+### 7.3 Outside-vertex exclusivity (the sharper Q0 lever)
 
-## Step 6 — Anticipated obstacles
+**Claim.** In Q0, every vertex $w' \in V(G) \setminus (N(v) \cup \{v\})$
+is adjacent (in $G$) to vertices in **at most one** original clique of
+$G[N(v)]$.
 
-1. **The biplanar bound is global, the Gallai structure is local.**
-   Local structural improvements via Gallai-forest accounting may not
-   propagate to a global edge count without a careful averaging.
-2. **Cut-vertex multiplicities are awkward.** The block-cut tree structure
-   means a single low vertex can sit in multiple blocks; counting edges
-   without double-counting needs care.
-3. **The biplanar edge bound $6n - 12$ does not interact with criticality
-   beyond the global level.** A finer biplanarity input would be: for any
-   $W \subseteq V(G)$, $|E(G[W])| \le 6|W| - 12$ — using the *induced*
-   biplanar bound on subsets. This is the right hook for a local-to-global
-   reduction.
+*Proof.* If $w'$ were adjacent to $u \in K_{s_a}$ and $u' \in K_{s_b}$
+with $a \ne b$, then $\{u, u'\}$ is a non-edge in $N(v)$ (cliques are
+disjoint) and $w' \in N(u) \cap N(u')$. So $q(u, u') \ge 1$, contradicting
+Q0. $\square$
+
+So the 77 outside vertices partition into $p + 1$ classes by which
+clique they're attached to (or unattached): $O_0$ (unattached) plus
+$O_1, \ldots, O_p$ (attached only to $C_i$).
+
+### 7.4 Low-vertex quantized attachment
+
+**Claim.** For each clique $C_i$ with $s_i \ge 3$ and each $L_0 \in L - \{v\}$
+(low outside vertex), the attachment $|N_{G^*}(L_0) \cap V(C_i)| \in \{0, 1, s_i\}$.
+For $s_i = 2$, the attachment is in $\{0, 1, 2\}$.
+
+(For $s_i = 1$, the clique is a singleton; $L_0$ adjacent to it or not.)
+
+*Proof.* Same Gallai-forest argument: partial attachment $2..s_i-1$ would
+make the block containing $C_i \cup \{L_0\}$ neither a clique nor an
+odd cycle. $\square$
+
+Moreover, vertices fully attached to $C_i$ (i.e. with $L_0$ adjacent
+to all $s_i$ vertices of $C_i$) form a clique with $C_i$ in $G^*[L^*]$,
+so the count $f_i$ of such $L_0$'s satisfies $f_i \le 8 - s_i$ from $K_9$-freeness.
+
+(Note: by Q0 outside-vertex exclusivity, $L_0$ can be fully attached to at
+most one chunk; so the $f_i$'s are over disjoint sets of $L_0$'s.)
+
+### 7.5 The profile variables
+
+For each chunk $C_i$ ($i = 1, \dots, p'$, where $p' = $ number of chunks
+in $G^*[N(v) - \{u_i, u_j\}]$ — equals $p$ if $s_a, s_b \ge 2$, but a
+$K_1$ component disappears):
+
+- $f_i \in [0, 8 - t_i]$ — low vertices fully attached to $C_i$;
+- $p_i \in [0, 23 - \sum_j f_j]$ — low vertices singly attached to $C_i$;
+- $h_i$ — high outside edges to $C_i$, with $h_i = e_i^{ext} - (s_i f_i + p_i)$.
+
+(High = $H \setminus N(v)$, since $w$-edges are already counted via $\varepsilon_i$.)
+
+For each $i$:
+
+$$\boxed{s_i f_i + p_i + h_i = t_i (12 - t_i - \varepsilon_i).}$$
+
+### 7.6 Outside-vertex packing
+
+- Total low vertices in $L - \{v\}$: 23. Each $L_0$ is at most fully
+  attached to one chunk, plus may have additional single attachments —
+  *but* the exclusivity (7.3) says no, $L_0$ attaches to **at most one
+  $C_i$**. So even a single attachment uses up the $L_0$'s
+  "attachment quota". Hence
+
+$$\sum_i (f_i + p_i) \le 23.$$
+
+- Total high outside vertices (= $H \setminus N(v)$): 54. Each may attach
+  to one $C_i$ with some number of edges. By exclusivity, each
+  $w' \in H \setminus N(v)$ has all its $N(v)$-edges to one specific $C_i$.
+
+  For each $w' \in H \setminus N(v) \cap O_i$, let $h_i(w') = |N(w') \cap V(C_i)|$.
+  $w'$ has degree 12 in $G$, so $h_i(w')$ edges to $C_i$, plus $12 - h_i(w')$
+  edges to $(V \setminus N(v) \setminus \{v\}) \cup \{v\}$ — but $w' \not\in N(v)$
+  and $v \not\in V(G - v)$, so $12 - h_i(w')$ edges to other vertices in
+  $V(G) \setminus N(v) \setminus \{v, w'\}$.
+
+  Total $h_i$ from this class: $h_i = \sum_{w' \in O_i \cap (H \setminus N(v))} h_i(w')$.
+
+Same Gallai-forest argument applies for $h_i(w')$ at the high vertices
+in $G^*[L^* \cup ?]$... wait, $w'$ is a degree-12 vertex of $G^*$, not
+in $L^*$. So the Gallai-forest constraint doesn't apply to $w'$ directly.
+
+The "$0, 1,$ or $s_i$" quantization is a property of *low* outside
+vertices (those in $L - \{v\}$) attaching to a clique $C_i$ via the
+Gallai-forest constraint on $G^*[L^*]$.
+
+For high outside vertices $w'$, the attachment can be any number
+$0 \le h_i(w') \le s_i$, with no Gallai constraint. (High vertices are
+not in $L^*$, so they don't participate in the Gallai forest.)
+
+### 7.7 The finite enumeration
+
+Variables, per partition $\{s_1, \dots, s_p\}$ and cross-clique merge
+choice $(a, b)$:
+
+- chunk sizes $t_1, \dots, t_{p'}$ derived from the partition and merge;
+- $\varepsilon_i \in \{0, 1\}$ derived (1 iff chunk comes from $K_{s_a}$ or $K_{s_b}$);
+- $f_i \in [0, 8 - t_i]$;
+- $p_i \ge 0$;
+- $h_i \ge 0$;
+- subject to:
+  - $s_i f_i + p_i + h_i = t_i (12 - t_i - \varepsilon_i)$ per chunk;
+  - $\sum (f_i + p_i) \le 23$;
+  - $\sum h_i \le 54 \cdot \min(s_i)$, etc. (high-vertex availability bound).
+
+Plus the overall edge count of $G^*$: $|E(G^*)| = 511$, with edges
+partitioned into intra-chunk + chunk-to-$w$ + chunk-to-outside +
+outside-outside + $w$-outside.
+
+This is a small system. For each partition, the enumeration runs in
+seconds. **Concrete next-session task:** code the partition iteration
+and check whether any $(t_1, \dots, t_{p'}, \varepsilon, f, p, h)$
+satisfies all constraints. If none does, Q0 is dead and the lemma is
+unconditional (modulo Step 4+).
 
 ## Status
 
-Drafted; not yet executed. Next concrete tasks:
+Phase 6 is now reduced to two concrete combinatorial problems:
 
-1. Work out the cut-vertex accounting cleanly so $\sum t \cdot n_t$ matches
-   $\ell$ exactly (up to a tracked slack).
-2. Set up the LP and solve numerically at $n = 89, 100, 150$ to see
-   whether feasibility actually fails.
-3. If LP feasible: identify the extremal block-type profile and look
-   for a local-structure lemma forbidding it.
-4. If LP infeasible at small $n$ but feasible asymptotically: characterise
-   the threshold $n^*$ above which the LP is feasible — that's a partial
-   result on its own (closes a wider interval beyond Brooks-type's $n \le 88$).
+1. **Step 4+**: of the $\ge 6$ non-edges in $N(v)$, at least one with
+   $q \ge 1$ must contract without creating a split $K_8$.
+2. **Q0 enumeration** (Step 7 above): for each partition of 11 into
+   cliques of size $\le 7$ and each cross-clique merge, check the
+   profile-model feasibility.
+
+Either piece, if closed, eliminates the isolated-low-vertex subcase
+at $n = 89$ and is the first non-trivial step beyond Brooks-type's
+$n \le 88$ closure.
