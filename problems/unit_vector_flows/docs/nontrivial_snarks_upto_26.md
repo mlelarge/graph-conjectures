@@ -1,18 +1,18 @@
 # Theorem (computer-assisted)
 
-> Every nontrivial snark on at most 24 vertices admits an
+> Every nontrivial snark on at most 26 vertices admits an
 > $S^2$-flow.
 
 ## Statement
 
 Let a *nontrivial snark* be a simple, cubic, bridgeless graph with girth
 at least 5, cyclically 4-edge-connected, and chromatic index 4. There
-are exactly 67 such graphs on at most 24 vertices, distributed by order
-as 1 (Petersen, $n=10$), 2 (the Blanuša snarks, $n=18$), 6 ($n=20$),
-20 ($n=22$), and 38 ($n=24$). For each one, we exhibit a flow
-$\varphi : E(G) \to S^2 \subset \mathbb{R}^3$ with Kirchhoff's law at
-every vertex, and provide a replayable interval-Krawczyk certificate
-of its existence.
+are exactly 347 such graphs on at most 26 vertices, distributed by
+order as 1 (Petersen, $n=10$), 2 (the Blanuša snarks, $n=18$), 6
+($n=20$), 20 ($n=22$), 38 ($n=24$), and 280 ($n=26$). For each one, we
+exhibit a flow $\varphi : E(G) \to S^2 \subset \mathbb{R}^3$ with
+Kirchhoff's law at every vertex, and provide a replayable
+interval-Krawczyk certificate of its existence.
 
 These counts match the enumeration of Brinkmann, Goedgebeur, Hägglund,
 and Markström, *Generation and properties of snarks*, J. Combinatorial
@@ -23,9 +23,13 @@ Theory Ser. B **103** (2013), 468–488.
 The proof is by enumeration plus interval verification:
 
 1. **Enumeration.** All connected cubic graphs of girth at least 5 on
-   $n \in \{10, 14, 16, 18, 20, 22, 24\}$ vertices are produced by Brendan
-   McKay and Adolfo Piperno's `nauty` package, version 2.9.3, via
-   `geng -d3 -D3 -c -tf -q n`.
+   $n \in \{10, 14, 16, 18, 20, 22, 24, 26\}$ vertices are produced by
+   Brendan McKay and Adolfo Piperno's `nauty` package, version 2.9.3,
+   via `geng -d3 -D3 -c -tf -q n`. At $n = 26$ the enumeration is
+   sharded across 8 `geng res/mod` parallel processes and streamed
+   directly through the filter via
+   [scripts/sweep_higher_order.sh](../scripts/sweep_higher_order.sh);
+   no raw 26-vertex catalogue is materialised on disk.
 2. **Filtering.** [scripts/catalogue.py](../scripts/catalogue.py)
    classifies each graph and retains the nontrivial snarks. The
    chromatic-index test is a 3-edge-colour backtrack with girth-5
@@ -58,36 +62,40 @@ The proof is by enumeration plus interval verification:
 ## Reproduction
 
 ```bash
-# regenerate the catalogue and certificates
-python scripts/catalogue.py data/catalogues/cubic_g5_n10.g6 --filter nontrivial-snark --emit-jsonl > data/catalogues/nontrivial_snarks_n10.jsonl
-# (similarly for n=18, 20, 22, 24)
-python scripts/sweep.py --from-catalogue data/catalogues/nontrivial_snarks_n10_to_24.g6 \
-    --out data/sweep_results/nontrivial_n10_to_24 --restarts 200
-python scripts/interval.py data/sweep_results/nontrivial_n10_to_24/*.json \
-    --radius 1e-5 --dps 50 --out data/interval_certs/nontrivial_n10_to_24
+# fast path: rebuild the snark JSONL at orders 10..24 with stored cubic_g5 files
+make catalogue
+make sweep
+make certs
+make verify-certs
 
-# verify the result
-python scripts/verify_sweep.py data/interval_certs/nontrivial_n10_to_24
+# n=26: stream geng output through the filter, 8 parallel shards
+scripts/sweep_higher_order.sh 26
+python scripts/sweep.py --from-catalogue data/catalogues/nontrivial_snarks_n26.g6 \
+    --out data/sweep_results/nontrivial_n26 --restarts 200
+python scripts/interval.py data/sweep_results/nontrivial_n26/*.json \
+    --radius 1e-5 --dps 50 --out data/interval_certs/nontrivial_n26
+python scripts/verify_sweep.py data/interval_certs/nontrivial_n26
 ```
 
-Expected output: `67/67 certificates verified`.
+Expected output: `347/347 certificates verified` for the combined frontier.
 
 ## Manifest and integrity
 
 | Item | Path | SHA-256 |
 |---|---|---|
-| Combined catalogue (67 g6 lines) | [data/catalogues/nontrivial_snarks_n10_to_24.g6](../data/catalogues/nontrivial_snarks_n10_to_24.g6) | `d3865a9e2dc424ea472ada3a7d06a786b8c1a33e2bc93460e3963983a4844a99` |
-| Manifest | [data/catalogues/nontrivial_snarks_n10_to_24.manifest.json](../data/catalogues/nontrivial_snarks_n10_to_24.manifest.json) | (recomputable from contents) |
-| Certificate directory hash | [data/interval_certs/nontrivial_n10_to_24/](../data/interval_certs/nontrivial_n10_to_24/) | `9f16779b6556366702637757201b9b1095e717fc72ac3930f0f41bdd667f741c` |
+| Combined catalogue (347 g6 lines) | [data/catalogues/nontrivial_snarks_n10_to_26.g6](../data/catalogues/nontrivial_snarks_n10_to_26.g6) | `0d1529e117bb2904ef35394a9584afe558a814dad057255f0cd8115d71d56252` |
+| Manifest | [data/catalogues/nontrivial_snarks_n10_to_26.manifest.json](../data/catalogues/nontrivial_snarks_n10_to_26.manifest.json) | (recomputable from contents) |
+| Certificate directory hash | [data/interval_certs/nontrivial_n10_to_26/](../data/interval_certs/nontrivial_n10_to_26/) | `26a242f257cc19c3205a1589ac45120f2742c81232a9d256278f6f379d140bbb` |
 
 The manifest is the single source of truth for the enumeration: it
 lists `geng` commands per order, the nauty version (2.9.3), per-order
 counts, and the SHA-256 of every catalogue and intermediate file.
 
 The 3-edge-colourability decision used in `scripts/catalogue.py` is
-SAT-based (Glucose 4 via `python-sat`); this is essential at $n = 24$
-because the naive backtrack search space ($3^{36}$) is far larger than
-the time budget needed to certify chromatic index 4 by exhaustion.
+SAT-based (Glucose 4 via `python-sat`); this is essential at $n \geq 24$
+because the naive backtrack search space ($3^m$, with $m = 39$ at
+$n = 26$) is far larger than the time budget needed to certify
+chromatic index 4 by exhaustion.
 
 ## Counts by order
 
@@ -100,9 +108,10 @@ the time budget needed to certify chromatic index 4 by exhaustion.
 | 20 | 5 783 | 6 |
 | 22 | 90 938 | 20 |
 | 24 | 1 620 479 | 38 |
-| **Total** | | **67** |
+| 26 | (streamed, not stored) | 280 |
+| **Total** | | **347** |
 
-(There are no snarks at $n \in \{11, 12, 13, 15, 17, 19, 21, 23\}$
+(There are no snarks at $n \in \{11, 12, 13, 15, 17, 19, 21, 23, 25\}$
 because the smallest snark is the Petersen graph at $n = 10$ and snarks
 have even order. The Petersen graph is the unique snark at $n = 10$;
 on $n = 12, 14, 16$ no cubic, bridgeless, girth-5 graph fails to be
@@ -110,11 +119,12 @@ on $n = 12, 14, 16$ no cubic, bridgeless, girth-5 graph fails to be
 
 The enumeration at $n = 24$ was generated by 8 parallel
 `geng res/mod` shards summing to exactly 1 620 479; this matches the
-counts of Brinkmann et al. (2013) and was cross-checked by an
-independent re-run. (An earlier shard run was silently truncated to
-748 281, which would have produced only 3 nontrivial snarks at
-$n = 24$. The truncation was detected by reproducing a single shard
-and noticing the count nearly doubled.)
+counts of Brinkmann et al. (2013). At $n = 26$ the raw enumeration
+would be a multi-gigabyte file, so the pipeline streams each shard's
+output directly through the SAT filter via
+[scripts/sweep_higher_order.sh](../scripts/sweep_higher_order.sh) and
+keeps only the per-shard nontrivial-snark JSONL plus a `.done` marker
+for resumability.
 
 ## Pushing beyond $n = 24$
 

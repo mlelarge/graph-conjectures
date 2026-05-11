@@ -218,28 +218,44 @@ def classify(G: nx.Graph, *, source: str, index: int) -> CatalogueEntry:
     )
 
 
-def iter_graph6_file(path: pathlib.Path) -> Iterator[tuple[int, str]]:
-    with path.open("r", encoding="ascii") as f:
-        for i, line in enumerate(f):
+def iter_graph6_file(path: pathlib.Path | str) -> Iterator[tuple[int, str]]:
+    """Iterate ``(line_index, graph6_string)`` pairs from a graph6 file or
+    from stdin (``path == "-"``). Lines starting with ``>>`` (file
+    headers) and blank lines are skipped."""
+    if str(path) == "-":
+        stream = sys.stdin
+        close = False
+    else:
+        stream = pathlib.Path(path).open("r", encoding="ascii")
+        close = True
+    try:
+        for i, line in enumerate(stream):
             line = line.strip()
             if not line or line.startswith(">>"):
                 continue
             yield i, line
+    finally:
+        if close:
+            stream.close()
 
 
-def iter_catalogue(path: pathlib.Path) -> Iterator[CatalogueEntry]:
+def iter_catalogue(path: pathlib.Path | str) -> Iterator[CatalogueEntry]:
+    src = str(path)
     for i, g6 in iter_graph6_file(path):
         try:
             G = from_graph6(g6)
         except Exception as exc:
             print(f"warning: line {i}: failed to parse graph6 ({exc})", file=sys.stderr)
             continue
-        yield classify(G, source=str(path), index=i)
+        yield classify(G, source=src, index=i)
 
 
 def main() -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("path", type=pathlib.Path, help="graph6 catalogue file")
+    ap.add_argument(
+        "path",
+        help="graph6 catalogue file path, or '-' to read from stdin",
+    )
     ap.add_argument(
         "--filter",
         choices=("none", "cubic", "cubic-bridgeless", "chi4", "nontrivial-snark"),
@@ -268,7 +284,7 @@ def main() -> int:
             continue
         n_kept += 1
         if args.emit_jsonl:
-            print(json.dumps(entry.__dict__))
+            print(json.dumps(entry.__dict__), flush=True)
         else:
             print(
                 f"{entry.index:5d} n={entry.n:3d} m={entry.m:3d} "

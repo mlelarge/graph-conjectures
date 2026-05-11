@@ -32,9 +32,9 @@ spike works only at toy size; the same square system is used as the negative
 backend (a bridged cubic graph reduces to the unit ideal). See
 [docs/plan.md](docs/plan.md).
 
-**Headline result.** Every nontrivial snark up through 24 vertices in the
+**Headline result.** Every nontrivial snark up through 26 vertices in the
 nauty `geng -d3 -D3 -tf` enumeration admits a replayable interval-Krawczyk
-certificate of $S^2$-flow existence (67 graphs total).
+certificate of $S^2$-flow existence (347 graphs total).
 
 | Order | Cubic girth-5 (geng) | Nontrivial snarks (χ′=4, cyc-λ ≥ 4) | Witness | Interval certified | Replay-verified |
 |---:|---:|---:|---:|---:|---:|
@@ -45,7 +45,8 @@ certificate of $S^2$-flow existence (67 graphs total).
 | 20 | 5 783 | 6 | 6/6 | 6/6 | 6/6 |
 | 22 | 90 938 | 20 | 20/20 | 20/20 | 20/20 |
 | 24 | 1 620 479 | 38 | 38/38 | 38/38 | 38/38 |
-| **Total** | | **67** | **67/67** | **67/67** | **67/67** |
+| 26 | (streamed) | 280 | 280/280 | 280/280 | 280/280 |
+| **Total** | | **347** | **347/347** | **347/347** | **347/347** |
 
 The per-order counts match Brinkmann–Goedgebeur–Hägglund–Markström
 (JCTB 2013). The certified count uses the *strict* nontrivial-snark
@@ -53,8 +54,12 @@ predicate (simple, cubic, bridgeless, girth ≥ 5, cyclically
 4-edge-connected, χ′ = 4) implemented in
 [scripts/catalogue.py](scripts/catalogue.py). The 3-edge-colourability
 decision is SAT-based (Glucose 4 via `python-sat`); this is essential
-at $n = 24$ because the backtrack search space ($3^{36}$) is too large
-to certify chromatic index 4 by exhaustion.
+at $n \geq 24$ because the backtrack search space ($3^m$) is too large
+to certify chromatic index 4 by exhaustion. At $n = 26$,
+[scripts/sweep_higher_order.sh](scripts/sweep_higher_order.sh)
+streams each `geng res/mod` shard directly through the SAT filter,
+so the raw catalogue (≈ 1.5 GB) is never materialised on disk;
+only the 280 snark JSONL lines (≈ 100 KB) survive.
 
 Each interval cert (schema v2) carries enough metadata for an independent
 verifier to reconstruct the polynomial system from the graph6 string and
@@ -69,7 +74,7 @@ confirms the pipeline rejects bridged cubic graphs: numerical search refuses
 (rss ≥ 0.36) and sympy Gröbner produces the unit ideal in 0.03 s.
 
 The frontier sweep is reproducible from the manifest at
-[data/catalogues/nontrivial_snarks_n10_to_24.manifest.json](data/catalogues/nontrivial_snarks_n10_to_24.manifest.json),
+[data/catalogues/nontrivial_snarks_n10_to_26.manifest.json](data/catalogues/nontrivial_snarks_n10_to_26.manifest.json),
 which records the exact `nauty geng` commands per order, the nauty
 version, every catalogue file's SHA-256, and a content hash of the
 certificate directory. The verifier
@@ -128,7 +133,7 @@ The committed certificates are self-contained. The fast path is:
 
 ```bash
 make -C problems/unit_vector_flows verify         # 41/41 tests
-make -C problems/unit_vector_flows verify-certs   # 67/67 interval replays
+make -C problems/unit_vector_flows verify-certs   # 347/347 interval replays
 ```
 
 `verify-certs` runs the independent replay in

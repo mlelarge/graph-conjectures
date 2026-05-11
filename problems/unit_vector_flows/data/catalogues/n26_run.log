@@ -1,0 +1,11 @@
+Spawned 8 shard worker(s); waiting...
+[done] shard 7/8 in 16459 s --       19 snarks
+[done] shard 5/8 in 18903 s --       16 snarks
+[done] shard 1/8 in 20543 s --       36 snarks
+[done] shard 6/8 in 21509 s --       39 snarks
+[done] shard 2/8 in 24123 s --       33 snarks
+[done] shard 0/8 in 27394 s --       52 snarks
+[done] shard 4/8 in 28896 s --       17 snarks
+[done] shard 3/8 in 33147 s --       68 snarks
+wrote data/catalogues/nontrivial_snarks_n26.g6: 280 graphs
+[OK] all shards done; merged      280 nontrivial snarks at n=26
