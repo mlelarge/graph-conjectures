@@ -1,0 +1,13 @@
+label: c7_k4
+timestamp_utc: 20260511T045903Z
+host: Darwin MAC-02008878 25.4.0 Darwin Kernel Version 25.4.0: Thu Mar 19 19:26:07 PDT 2026; root:xnu-12377.101.15~1/RELEASE_ARM64_T6031 arm64
+start_utc: 2026-05-11T04:59:03Z
+timeout_seconds: 172800
+venv: /Users/lelarge/Recherche/graph-conjectures/problems/earth_moon_problem/.venv
+sms_dir: /Users/lelarge/Recherche/graph-conjectures/problems/earth_moon_problem/external/sat-modulo-symmetries
+sms_head: 2d5a22a3d3b2fcc6f5eeebdfbdbe2031b53ac55b
+sms_describe: v1.0.0-dirty
+sms_status:  M encodings/planarity.py;?? build/;?? cadical_sms/;?? encodings/__pycache__/;?? sms_graph_builder.egg-info/;?? temp18177_t1778398757.354902.enc;
+cmd: python /Users/lelarge/Recherche/graph-conjectures/problems/earth_moon_problem/scripts/earthmoon_blowup.py --weights 4,4,4,4,4,4,4
+end_utc: 2026-05-11T14:39:37Z
+exit_status: 0

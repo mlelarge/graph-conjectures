@@ -23,7 +23,7 @@ as the wall-time yardstick for all subsequent rows.
 |---|---:|---:|---:|---|---:|---:|---:|---:|---|
 | `3,3,5,3,5` | 19 | 98 | 4 | UNSAT | 1207 s | 985 s | 10 162 478 | 1 212 620 | [new_c5_a/20260510T122905Z](../data/new_c5_a/20260510T122905Z/) |
 | `3,4,4,3,5` | 19 | 98 | 4 | UNSAT | 8405 s | 3172 s | 18 017 363 | 1 866 362 | [new_c5_b/20260510T170028Z](../data/new_c5_b/20260510T170028Z/) |
-| `4,4,4,4,4,4,4` (KSS candidate2 / our headline) | 28 | 154 | 2 | _pending_ | — | — | — | — | (not yet launched) |
+| `4,4,4,4,4,4,4` (KSS candidate2 / our headline) | 28 | 154 | 2 | UNSAT | 34 834 s | 24 372 s | 64 932 163 | 3 844 963 | [c7_k4/20260511T045903Z](../data/c7_k4/20260511T045903Z/) |
 
 Sequencing: run `3,3,5,3,5` to completion, then `3,4,4,3,5`, then commit a
 budget for `4,4,4,4,4,4,4`. SAT on any row stops the queue immediately —

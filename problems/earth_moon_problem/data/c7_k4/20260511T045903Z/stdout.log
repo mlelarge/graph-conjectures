@@ -1,0 +1,27 @@
+Number of vertices: 28
+Initial partition:1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 
+Clauses: 602, Variables 756
+SAT Solver: Cadical
+Starting to solve
+Search finished
+Time in propagator: 940.822408
+Time in check full graphs: 0.000000
+Calls of check: 0
+Calls propagator: 64932163
+Statistics for MinimalityChecker:
+	Calls: 3248494
+	Time in seconds: 96.6340
+	Added clauses: 8440
+Statistics for ThicknessTwoChecker:
+	Calls: 12985926
+	Time in seconds: 583.3596
+	Added clauses: 3844963
+Statistics for EFX Propagator:
+	Calls: 0
+	Time in seconds: 0.0000
+	Added clauses: 0
+Statistics for QuasiKConnectedPropagator:
+	Calls: 0
+	Time in seconds: 0.0000
+	Added clauses: 0
+Total time: 24371.561931
