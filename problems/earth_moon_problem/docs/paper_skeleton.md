@@ -16,9 +16,11 @@ scaffolding only.
 
 - Background: $\chi_{\rm EM}$, the Earth–Moon problem of Ringel, bounded
   $9 \le \chi_{\rm EM} \le 12$ since 1980, no improvement in 45+ years.
-- Computational contribution: settle three new 19-vertex weighted clique
-  blowups and the 28-vertex headline $C_7[K_4]$ ($\chi = 10$, $\omega = 8$,
-  $K_9$-free, edge-feasible) as non-biplanar via SAT-modulo-symmetry.
+- Computational contribution: settle two new 19-vertex weighted clique
+  blowups (a third 19-vertex case, KSS's $C_5[4,4,4,4,3]$, is
+  reproduced as a calibration baseline) together with the 28-vertex
+  headline $C_7[K_4]$ ($\chi = 10$, $\omega = 8$, $K_9$-free,
+  edge-feasible) as non-biplanar via SAT-modulo-symmetry.
   Conclude: every blowup $C_{2r+1}[K_{a_1}, \dots]$ with $n \le 30$,
   $\omega \le 8$, $\chi \ge 10$, $|E| \le 6n - 12$ is non-biplanar.
 - Theoretical contribution: any 12-critical $K_9$-free biplanar graph has
