@@ -1,0 +1,291 @@
+{
+  "schema_version": 1,
+  "name": "nontrivial_snarks_n10_to_22",
+  "summary": {
+    "orders": [
+      10,
+      18,
+      20,
+      22
+    ],
+    "counts_by_order": [
+      {
+        "order": 10,
+        "nontrivial_snarks": 1
+      },
+      {
+        "order": 18,
+        "nontrivial_snarks": 2
+      },
+      {
+        "order": 20,
+        "nontrivial_snarks": 6
+      },
+      {
+        "order": 22,
+        "nontrivial_snarks": 20
+      }
+    ],
+    "total_nontrivial_snarks": 29
+  },
+  "combined_catalogue": {
+    "path": "data/catalogues/nontrivial_snarks_n10_to_22.g6",
+    "n_lines": 29,
+    "sha256": "f5fdb8f68980e0182880c69cb23ac047bd8aeee033c533dba8d6d98fc2a0d7ff",
+    "bytes": 1090
+  },
+  "per_order": [
+    {
+      "order": 10,
+      "geng_command": "geng -d3 -D3 -c -tf -q 10",
+      "filter_command": "python scripts/catalogue.py data/catalogues/cubic_g5_n10.g6 --filter nontrivial-snark --emit-jsonl",
+      "cubic_g5_file": {
+        "path": "data/catalogues/cubic_g5_n10.g6",
+        "n_lines": 1,
+        "sha256": "a6cff1c7754501629b55cab98200a0bead74be2ed37918c76e45cb2f2a560d1c",
+        "bytes": 10
+      },
+      "nontrivial_snark_file": {
+        "path": "data/catalogues/nontrivial_snarks_n10.g6",
+        "n_lines": 1,
+        "sha256": "a6cff1c7754501629b55cab98200a0bead74be2ed37918c76e45cb2f2a560d1c",
+        "bytes": 10
+      },
+      "nontrivial_snark_jsonl": {
+        "path": "data/catalogues/nontrivial_snarks_n10.jsonl",
+        "sha256": "337a25c41b8a747dcb34ffdcbc0c039a65d0b1dd8a6b6c269e1b0b84576cbe4a",
+        "bytes": 320
+      }
+    },
+    {
+      "order": 18,
+      "geng_command": "geng -d3 -D3 -c -tf -q 18",
+      "filter_command": "python scripts/catalogue.py data/catalogues/cubic_g5_n18.g6 --filter nontrivial-snark --emit-jsonl",
+      "cubic_g5_file": {
+        "path": "data/catalogues/cubic_g5_n18.g6",
+        "n_lines": 455,
+        "sha256": "bba31e31dad670a1b7779e7a2ae15a74620b2d136abe59f3f613e9b2ddfadcf3",
+        "bytes": 12740
+      },
+      "nontrivial_snark_file": {
+        "path": "data/catalogues/nontrivial_snarks_n18.g6",
+        "n_lines": 2,
+        "sha256": "1df8628f3c6eae065b590cfc9f7e412c77adea580f080faaf1bddff17df4c168",
+        "bytes": 56
+      },
+      "nontrivial_snark_jsonl": {
+        "path": "data/catalogues/nontrivial_snarks_n18.jsonl",
+        "sha256": "6ecd0bf8da35a3263837348cc58d9dc8d824f159d1c45f7562fdab61c1f5244d",
+        "bytes": 680
+      }
+    },
+    {
+      "order": 20,
+      "geng_command": "geng -d3 -D3 -c -tf -q 20",
+      "filter_command": "python scripts/catalogue.py data/catalogues/cubic_g5_n20.g6 --filter nontrivial-snark --emit-jsonl",
+      "cubic_g5_file": {
+        "path": "data/catalogues/cubic_g5_n20.g6",
+        "n_lines": 5783,
+        "sha256": "60e2774f9437a685972edf71c3b9d0cc8404c29eac03928c3cd394a02c462391",
+        "bytes": 196622
+      },
+      "nontrivial_snark_file": {
+        "path": "data/catalogues/nontrivial_snarks_n20.g6",
+        "n_lines": 6,
+        "sha256": "42da36d761d2d9b2d642ad67b9c19e8983c1b775d4c5e918100c41ff95cb1e66",
+        "bytes": 204
+      },
+      "nontrivial_snark_jsonl": {
+        "path": "data/catalogues/nontrivial_snarks_n20.jsonl",
+        "sha256": "2e6d27ec67a4b4e2503aa075244c18404c4b7b401ee06174ab28fcc86d3d388c",
+        "bytes": 2081
+      }
+    },
+    {
+      "order": 22,
+      "geng_command": "geng -d3 -D3 -c -tf -q 22",
+      "filter_command": "python scripts/catalogue.py data/catalogues/cubic_g5_n22.g6 --filter nontrivial-snark --emit-jsonl",
+      "cubic_g5_file": {
+        "path": "data/catalogues/cubic_g5_n22.g6",
+        "n_lines": 90938,
+        "sha256": "4006b982dcee1ef6124f4759db66b2930bf663130429a87964cc033b587c58bb",
+        "bytes": 3728458
+      },
+      "nontrivial_snark_file": {
+        "path": "data/catalogues/nontrivial_snarks_n22.g6",
+        "n_lines": 20,
+        "sha256": "0acb8b0c749818849aa8dcc763c17c787647c4e0ad30dc1f98fa74dafbee5fcc",
+        "bytes": 820
+      },
+      "nontrivial_snark_jsonl": {
+        "path": "data/catalogues/nontrivial_snarks_n22.jsonl",
+        "sha256": "1e1ba226b965cc886895bb9b793b98ed2212b4061e0dd687b7386197b7e25c63",
+        "bytes": 7100
+      }
+    }
+  ],
+  "tools": {
+    "nauty": "nauty 2.9.3",
+    "python": "3.12.4",
+    "platform": "macOS-26.4.1-arm64-arm-64bit"
+  },
+  "definitions": {
+    "nontrivial_snark": "simple, cubic, bridgeless, girth >= 5, cyclically 4-edge-connected, chromatic index 4",
+    "cubic_g5_source": "all simple connected cubic graphs of girth >= 5 from nauty geng (-d3 -D3 -c -tf), one per line in graph6 format",
+    "filter_pipeline": "scripts/catalogue.py classifies each graph and keeps those matching --filter nontrivial-snark"
+  },
+  "timestamp_utc": "2026-05-10T13:49:31Z",
+  "interval_certificates": {
+    "root": "data/interval_certs/nontrivial_n10_to_22",
+    "glob": "*.json",
+    "n_files": 29,
+    "directory_sha256": "d13368a89c7f83f97d6090c008b3cdb0fc40a98c0f12bcd13facfda95181a0cc",
+    "files": [
+      {
+        "name": "nontrivial_snarks_n10_to_22_0000.interval.json",
+        "sha256": "301408865317dd0b36053c5440abbac4a611c90571431189d68c6eaf846f1696",
+        "size": 12761
+      },
+      {
+        "name": "nontrivial_snarks_n10_to_22_0001.interval.json",
+        "sha256": "134e87a67e0bf6e6e28014cf518a0f85308ec89d2f5d47f0c5723db5e0568c6a",
+        "size": 23341
+      },
+      {
+        "name": "nontrivial_snarks_n10_to_22_0002.interval.json",
+        "sha256": "3744346079c98402f21d22a9f8333e45e4382ce96ecb529845baffd4c3241b7f",
+        "size": 23355
+      },
+      {
+        "name": "nontrivial_snarks_n10_to_22_0003.interval.json",
+        "sha256": "d51d146630603b0c23c752a8672f34d56137e789dbf817e01b80d932b083020e",
+        "size": 25877
+      },
+      {
+        "name": "nontrivial_snarks_n10_to_22_0004.interval.json",
+        "sha256": "41e6b2e25777650b62860f69f08de96fbb56aa11b4fc68105a27703765d88a27",
+        "size": 25888
+      },
+      {
+        "name": "nontrivial_snarks_n10_to_22_0005.interval.json",
+        "sha256": "f0fb7969d7bbd48eb92eb5912f13a8ae2e7e39dde8cc227ea25502bc6ef58dda",
+        "size": 25887
+      },
+      {
+        "name": "nontrivial_snarks_n10_to_22_0006.interval.json",
+        "sha256": "8c68fa4a1a609512303b0df13946e3d51d4ad3a757d13215bbb39e30350a783c",
+        "size": 25871
+      },
+      {
+        "name": "nontrivial_snarks_n10_to_22_0007.interval.json",
+        "sha256": "970f21ff6a3a8a5d2f95a43904ac1f69c53b74326136a904eedac4931174d131",
+        "size": 25901
+      },
+      {
+        "name": "nontrivial_snarks_n10_to_22_0008.interval.json",
+        "sha256": "c0e0f0ffcbf7ca7b58ab52ff7e9fd1a43eb42f4acd1572f968f22bb1920182f0",
+        "size": 25898
+      },
+      {
+        "name": "nontrivial_snarks_n10_to_22_0009.interval.json",
+        "sha256": "7a7f65293f89c3c8a2c61989dbd948fa59490b9b1110da66f45296f2d75a369b",
+        "size": 28512
+      },
+      {
+        "name": "nontrivial_snarks_n10_to_22_0010.interval.json",
+        "sha256": "ff39d25a1caf2752498f11b100fefe53b6f596b42ed7f4bc1430ac84fb4ed55c",
+        "size": 28488
+      },
+      {
+        "name": "nontrivial_snarks_n10_to_22_0011.interval.json",
+        "sha256": "07f66823caeb0b7b4509c722f016e4f6d4a99431ac13c2197b87ba8da31f4890",
+        "size": 28485
+      },
+      {
+        "name": "nontrivial_snarks_n10_to_22_0012.interval.json",
+        "sha256": "a80f63a3be122fc3dcedf0b28bf53e27d82d7c100d8ec30f587367ee3444c826",
+        "size": 28480
+      },
+      {
+        "name": "nontrivial_snarks_n10_to_22_0013.interval.json",
+        "sha256": "01a0dc6434c15e6507c37974b28b361c371aa1dd7d2473dfd5152b5b2d1cac8c",
+        "size": 28498
+      },
+      {
+        "name": "nontrivial_snarks_n10_to_22_0014.interval.json",
+        "sha256": "e7d89c2f2d6706e432509746045dd1f8ffd0693e04794e5c17d512f314f6053b",
+        "size": 28497
+      },
+      {
+        "name": "nontrivial_snarks_n10_to_22_0015.interval.json",
+        "sha256": "5a203a00d0a536db2d8f31b4349657f377a7ea45f5b47a342c8185ddfb3b4de8",
+        "size": 28500
+      },
+      {
+        "name": "nontrivial_snarks_n10_to_22_0016.interval.json",
+        "sha256": "9e82cc1848d39812a697c9f38b3d8b3d8dbbd482d59ee92e33fa7128ae78c756",
+        "size": 28485
+      },
+      {
+        "name": "nontrivial_snarks_n10_to_22_0017.interval.json",
+        "sha256": "49356eaea8ccf8906abcf4b5979ef9bc704b742603b6a6d7f28a7f4bb4c04e5c",
+        "size": 28517
+      },
+      {
+        "name": "nontrivial_snarks_n10_to_22_0018.interval.json",
+        "sha256": "9008b17cd447c8ae12d1c4d06c20db18a6837c6a505f7b8ca99967b00f2b0075",
+        "size": 28576
+      },
+      {
+        "name": "nontrivial_snarks_n10_to_22_0019.interval.json",
+        "sha256": "b90d6939f65bf6c5e629031ff62e93b2cdbc62441556385137e76d531707099b",
+        "size": 28526
+      },
+      {
+        "name": "nontrivial_snarks_n10_to_22_0020.interval.json",
+        "sha256": "779f88d2b9a317a377c2fe6abd6e23927cd9e235b82d900af15d5d3f5b8631d4",
+        "size": 28575
+      },
+      {
+        "name": "nontrivial_snarks_n10_to_22_0021.interval.json",
+        "sha256": "72913060aca37233988196098de7ecaf68c2b12ac1e2ddcd739d4f862e8b3a47",
+        "size": 28493
+      },
+      {
+        "name": "nontrivial_snarks_n10_to_22_0022.interval.json",
+        "sha256": "04f45957df1c82610703393e4d118c9a3e9ad30beafe1f332b9b01e67facf548",
+        "size": 28512
+      },
+      {
+        "name": "nontrivial_snarks_n10_to_22_0023.interval.json",
+        "sha256": "9a157e88f6a97d016c2b4f6f3c95a2f22c42ba7180b9baa3b069ba2b1f89c5c9",
+        "size": 28528
+      },
+      {
+        "name": "nontrivial_snarks_n10_to_22_0024.interval.json",
+        "sha256": "63737a724953587e46ce8cd60cc962843599d84b8cb988c846606294a3c1364b",
+        "size": 28506
+      },
+      {
+        "name": "nontrivial_snarks_n10_to_22_0025.interval.json",
+        "sha256": "430e1d96ce3d845540abd5f21ff24864c47549a9e65af3cbc670e95f8e439c99",
+        "size": 28533
+      },
+      {
+        "name": "nontrivial_snarks_n10_to_22_0026.interval.json",
+        "sha256": "6f5f8a679544edda46a94dc428966fb3e4d2653e518bb1a0f4dadc05e4e98434",
+        "size": 28491
+      },
+      {
+        "name": "nontrivial_snarks_n10_to_22_0027.interval.json",
+        "sha256": "af5e62bbccc0fe2345c8a4e86fc5da20f34940909ef767a6ceaea7e6d1345b8f",
+        "size": 28503
+      },
+      {
+        "name": "nontrivial_snarks_n10_to_22_0028.interval.json",
+        "sha256": "7f2e4b968b2ba35e40d1c96e0b2db3a659d22c706bd28ac117e312ca59b2f15e",
+        "size": 28515
+      }
+    ]
+  }
+}

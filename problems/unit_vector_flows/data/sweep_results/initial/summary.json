@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Petersen",
+    "n": 10,
+    "m": 15,
+    "status": "witness",
+    "best_residual_squared": 1.3048175373223523e-31,
+    "n_restarts": 1,
+    "elapsed_seconds": 0.03144097328186035,
+    "certificate": "data/sweep_results/initial/Petersen.json"
+  },
+  {
+    "name": "Blanusa-1",
+    "n": 18,
+    "m": 27,
+    "status": "witness",
+    "best_residual_squared": 2.395014256467052e-31,
+    "n_restarts": 1,
+    "elapsed_seconds": 0.11741185188293457,
+    "certificate": "data/sweep_results/initial/Blanusa-1.json"
+  },
+  {
+    "name": "Blanusa-2",
+    "n": 18,
+    "m": 27,
+    "status": "witness",
+    "best_residual_squared": 3.193191847794037e-31,
+    "n_restarts": 1,
+    "elapsed_seconds": 0.0989997386932373,
+    "certificate": "data/sweep_results/initial/Blanusa-2.json"
+  },
+  {
+    "name": "J_5",
+    "n": 20,
+    "m": 30,
+    "status": "witness",
+    "best_residual_squared": 3.943402686839108e-31,
+    "n_restarts": 1,
+    "elapsed_seconds": 0.14140009880065918,
+    "certificate": "data/sweep_results/initial/J_5.json"
+  },
+  {
+    "name": "J_7",
+    "n": 28,
+    "m": 42,
+    "status": "witness",
+    "best_residual_squared": 3.709822555375913e-31,
+    "n_restarts": 1,
+    "elapsed_seconds": 0.3063058853149414,
+    "certificate": "data/sweep_results/initial/J_7.json"
+  },
+  {
+    "name": "J_9",
+    "n": 36,
+    "m": 54,
+    "status": "witness",
+    "best_residual_squared": 7.230635023094409e-31,
+    "n_restarts": 2,
+    "elapsed_seconds": 1.2162201404571533,
+    "certificate": "data/sweep_results/initial/J_9.json"
+  },
+  {
+    "name": "J_11",
+    "n": 44,
+    "m": 66,
+    "status": "witness",
+    "best_residual_squared": 8.369822585199459e-31,
+    "n_restarts": 1,
+    "elapsed_seconds": 1.0312721729278564,
+    "certificate": "data/sweep_results/initial/J_11.json"
+  }
+]

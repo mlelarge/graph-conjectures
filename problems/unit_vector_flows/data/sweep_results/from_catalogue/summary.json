@@ -1,0 +1,72 @@
+[
+  {
+    "name": "builtin_snarks_0000",
+    "n": 10,
+    "m": 15,
+    "status": "witness",
+    "best_residual_squared": 1.3048175373223523e-31,
+    "n_restarts": 1,
+    "elapsed_seconds": 0.030858993530273438,
+    "certificate": "data/sweep_results/from_catalogue/builtin_snarks_0000.json"
+  },
+  {
+    "name": "builtin_snarks_0001",
+    "n": 18,
+    "m": 27,
+    "status": "witness",
+    "best_residual_squared": 2.395014256467052e-31,
+    "n_restarts": 1,
+    "elapsed_seconds": 0.11944317817687988,
+    "certificate": "data/sweep_results/from_catalogue/builtin_snarks_0001.json"
+  },
+  {
+    "name": "builtin_snarks_0002",
+    "n": 18,
+    "m": 27,
+    "status": "witness",
+    "best_residual_squared": 3.193191847794037e-31,
+    "n_restarts": 1,
+    "elapsed_seconds": 0.09779906272888184,
+    "certificate": "data/sweep_results/from_catalogue/builtin_snarks_0002.json"
+  },
+  {
+    "name": "builtin_snarks_0003",
+    "n": 20,
+    "m": 30,
+    "status": "witness",
+    "best_residual_squared": 3.943402686839108e-31,
+    "n_restarts": 1,
+    "elapsed_seconds": 0.13872909545898438,
+    "certificate": "data/sweep_results/from_catalogue/builtin_snarks_0003.json"
+  },
+  {
+    "name": "builtin_snarks_0004",
+    "n": 28,
+    "m": 42,
+    "status": "witness",
+    "best_residual_squared": 3.709822555375913e-31,
+    "n_restarts": 1,
+    "elapsed_seconds": 0.3039529323577881,
+    "certificate": "data/sweep_results/from_catalogue/builtin_snarks_0004.json"
+  },
+  {
+    "name": "builtin_snarks_0005",
+    "n": 36,
+    "m": 54,
+    "status": "witness",
+    "best_residual_squared": 7.230635023094409e-31,
+    "n_restarts": 2,
+    "elapsed_seconds": 1.2214100360870361,
+    "certificate": "data/sweep_results/from_catalogue/builtin_snarks_0005.json"
+  },
+  {
+    "name": "builtin_snarks_0006",
+    "n": 44,
+    "m": 66,
+    "status": "witness",
+    "best_residual_squared": 8.244906091921757e-31,
+    "n_restarts": 1,
+    "elapsed_seconds": 1.113853931427002,
+    "certificate": "data/sweep_results/from_catalogue/builtin_snarks_0006.json"
+  }
+]
