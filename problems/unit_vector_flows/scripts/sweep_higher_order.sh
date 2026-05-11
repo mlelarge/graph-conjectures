@@ -48,17 +48,23 @@ for ((i=0; i<SHARDS; i++)); do
     fi
     (
         t0=$(date +%s)
+        # tee duplicates geng's stream: one copy goes to wc -l (raw line count
+        # only, no graphs stored), the other is filtered by catalogue.py.
+        # PIPESTATUS captures the geng exit code, not tee's or catalogue.py's.
+        rm -f "$DIR/shard_${i}.raw_count"
         "$GENG" -d3 -D3 -c -tf -q "$N" ${i}/${SHARDS} 2>/dev/null \
+          | tee >(wc -l > "$DIR/shard_${i}.raw_count") \
           | "$VENV_PYTHON" scripts/catalogue.py - --filter nontrivial-snark --emit-jsonl 2>/dev/null \
           > "$DIR/snarks_shard_${i}.jsonl"
-        status=$?
+        status=${PIPESTATUS[0]}
         t1=$(date +%s)
         snark_count=$(wc -l < "$DIR/snarks_shard_${i}.jsonl")
-        echo "shard=${i}/${SHARDS} status=${status} elapsed_s=$((t1 - t0)) snarks=${snark_count}" \
+        raw_count=$(cat "$DIR/shard_${i}.raw_count" 2>/dev/null | tr -d ' \n' || echo '?')
+        echo "shard=${i}/${SHARDS} status=${status} elapsed_s=$((t1 - t0)) raw=${raw_count} snarks=${snark_count}" \
           > "$DIR/shard_${i}.log"
         if [ "$status" -eq 0 ]; then
             touch "$DIR/shard_${i}.done"
-            echo "[done] shard $i/$SHARDS in $((t1 - t0)) s -- $snark_count snarks"
+            echo "[done] shard $i/$SHARDS in $((t1 - t0)) s -- ${raw_count} raw, ${snark_count} snarks"
         else
             echo "[fail] shard $i/$SHARDS exit=$status; rerun the script to retry just this shard"
         fi
