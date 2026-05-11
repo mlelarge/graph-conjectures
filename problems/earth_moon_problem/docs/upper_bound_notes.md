@@ -117,7 +117,14 @@ $f_{12}^{K_9\text{-free}}(n) - F(12, n)$, where the new $f$ minimises
 over 12-critical *$K_9$-free* graphs? Our target $|E| \ge 6n - 11$ is
 equivalent to
 
-$$f_{12}^{K_9\text{-free}}(n) - F(12, n) \ge \lceil (n - 78)/11 \rceil + \text{integrality slack}.$$
+$$f_{12}^{K_9\text{-free}}(n) - F(12, n)
+\ge 6n - 11 - F(12,n)
+= \left\lfloor \frac{n - 67}{11} \right\rfloor
+\quad (n \ge 78).$$
+
+So the first sharp interval only needs one extra edge over KY:
+$n = 78,\dots,88$ require gap $\ge 1$; $n = 89,\dots,99$ require
+gap $\ge 2$; and so on.
 
 For $n \le 78$ this is automatic from KY plus the integer-edges
 constraint; the real work is at $n \ge 78$.
@@ -140,29 +147,6 @@ number $h$ of such vertices satisfies
 $\lceil ((d-2)n - (d+1)(d-2))/d \rceil \le h \le \lfloor (n-3)/(d-1) \rfloor$.
 This constrains the degree sequence of 12-critical graphs and combines
 with the kernel-perfect bipartite-edge bounds in Lemma 10 / Corollary 11.
-
-### Sparse-critical / large-clique-free density refinements
-
-Still on the audit queue; only the headline arXiv links / venues are
-recorded here. Each needs the same verification pass that KY just got.
-
-- A. Kostochka, M. Yancey, *A Brooks-type result for sparse critical
-  graphs*, Combinatorica (2018). Sparse critical graphs with maximum
-  degree bound.
-- *Structure in sparse $k$-critical graphs* (Gao, Postle et al., 2022).
-  Structural theorem; need to extract any explicit edge-density
-  consequence at small $k$.
-- Kostochka–Stiebitz, *On the number of edges in colour-critical graphs
-  and hypergraphs*, Combinatorica 20 (2000) 521–530. Pre-KY. Includes
-  $K_p$-free refinements; check whether the $p=9$, $k=12$ instance
-  beats the $(n-78)/11$ gap directly.
-
-### Direct $K_9$-freeness route
-
-- Rabern (2011) and follow-ups: density improvements from forbidding a
-  large clique. Mostly aimed at Reed's conjecture territory ($\Delta$,
-  $\omega$, $\chi$ inequalities). Worth checking whether any such bound
-  gives $|E| \ge 6n - 11$ for 12-critical $K_9$-free directly.
 
 ### Sparse-critical / large-clique-free density refinements
 
