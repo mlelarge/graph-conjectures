@@ -950,6 +950,40 @@ where $A(K_6)$ is the set of high outside vertices serving the $K_6$
 chunk. If degree counting, Q0 exclusivity, or the $K_3$ chunk side can
 force this $\ge 3$ overlap, the $(7,4)$ Q0 case dies.
 
+### 7.12 Larger one-sided probe — adding the $u_i$-only vertices
+
+The next natural test is to include not only the $K_6$ chunk and its
+5 chunk-serving vertices, but also the $5-s$ outside vertices adjacent
+to $u_i$ and not to the $K_6$ chunk. This is the pre-contraction local
+graph on
+
+$$
+K_6 \cup \{u_i\} \cup A(K_6) \cup (U_i \setminus A(K_6)).
+$$
+
+Added `--chunk-endpoint-overlap t,a,u,s` to
+`scripts/biplanar_check.py` for this pattern. In the $(7,4)$ case,
+$(t,a,u)=(6,5,5)$; the forced edge count is always 56, while the
+vertex count is $17-s$.
+
+The low-overlap cases, which are the only cases not already killed by
+the smaller overlap probe, are all biplanar:
+
+| $s$ | vertices | edges | biplanar? | wall |
+|---:|---:|---:|---|---:|
+| 0 | 17 | 56 | SAT | 0.028s |
+| 1 | 16 | 56 | SAT | 0.019s |
+| 2 | 15 | 56 | SAT | 0.018s |
+
+For $s \ge 3$, the graph contains the previously tested non-biplanar
+chunk-overlap subgraph, so those cases are already UNSAT by monotonicity.
+
+**Conclusion.** Adding the $u_i$-only vertices does not create a
+one-sided local biplanarity obstruction. The $(7,4)$ Q0 high-only case
+still survives whenever $s \le 2$. The next attack must either prove
+the overlap lower bound $s \ge 3$ from global structure, or couple the
+$K_6/u_i$ side with the $K_3/u_j$ side in a single local probe.
+
 ## Status
 
 Phase 6 is now reduced to two concrete combinatorial problems:
@@ -957,9 +991,9 @@ Phase 6 is now reduced to two concrete combinatorial problems:
 1. **Step 4+**: of the $\ge 6$ non-edges in $N(v)$, at least one with
    $q \ge 1$ must contract without creating a split $K_8$.
 2. **Q0 high-only closure** (Step 7 above): the profile enumeration
-   leaves 143 feasible merge types, mostly with $f_i=p_i=0$. The next
-   target is a local lemma preventing the high outside vertices from
-   absorbing all chunk-external demand.
+   leaves 143 feasible merge types, mostly with $f_i=p_i=0$. The current
+   sharp subtarget in the $(7,4)$ case is forcing the $K_6$ overlap
+   $s \ge 3$, or else coupling the $K_6/u_i$ and $K_3/u_j$ sides.
 
 Either piece, if closed, eliminates the isolated-low-vertex subcase
 at $n = 89$ and is the first non-trivial step beyond Brooks-type's

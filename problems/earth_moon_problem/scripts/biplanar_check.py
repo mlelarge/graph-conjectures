@@ -11,6 +11,8 @@ Usage:
     biplanar_check.py --join 6,6              # K_6 + bar K_6
     biplanar_check.py --join 7,5              # K_7 + bar K_5
     biplanar_check.py --chunk-overlap 6,5,3   # K_6 chunk, 5 attached vertices, 3 also adjacent to w
+    biplanar_check.py --chunk-endpoint-overlap 6,5,5,2
+                                               # K_6 + endpoint, 5 chunk-attached, 5 endpoint-attached, overlap 2
     biplanar_check.py --edges 0-1,0-2,1-2     # custom edge list
     biplanar_check.py --edges 0-1,0-2,1-2 --partition 3
     biplanar_check.py --join 4,8 --no-solve --cnf-file /tmp/k4_bk8.cnf
@@ -109,6 +111,49 @@ def chunk_overlap_graph(t, a, s):
     return n, edges, partition
 
 
+def chunk_endpoint_overlap_graph(t, a, u, s):
+    """Return the pre-contraction chunk/end-point overlap graph.
+
+    Vertices:
+        0..t-1          chunk C = K_t
+        t               endpoint x, adjacent to all of C (so C+x is K_{t+1})
+        t+1..t+s        outside vertices attached to both C and x
+        t+s+1..t+a      outside vertices attached to C only
+        t+a+1..t+a+u-s  outside vertices attached to x only
+
+    This models the Q0 overlap question before contracting x with the
+    endpoint from the other clique. In the (7,4) case on the K_6 side,
+    the parameters are (t,a,u,s) = (6,5,5,s).
+    """
+    if not (0 <= s <= min(a, u)):
+        raise ValueError(f"need 0 <= s <= min(a,u), got t={t}, a={a}, u={u}, s={s}")
+    n = t + 1 + a + (u - s)
+    endpoint = t
+    both = list(range(t + 1, t + 1 + s))
+    chunk_only = list(range(t + 1 + s, t + 1 + a))
+    endpoint_only = list(range(t + 1 + a, n))
+
+    edges = set()
+    for i, j in combinations(range(t), 2):
+        edges.add((i, j))
+    for i in range(t):
+        edges.add((i, endpoint))
+    for x in both + chunk_only:
+        for i in range(t):
+            edges.add((i, x))
+    for x in both + endpoint_only:
+        edges.add((endpoint, x))
+
+    partition = [t, 1]
+    if s > 0:
+        partition.append(s)
+    if a - s > 0:
+        partition.append(a - s)
+    if u - s > 0:
+        partition.append(u - s)
+    return n, edges, partition
+
+
 def parse_partition(partition_str):
     return [int(x) for x in partition_str.split(",") if x.strip()]
 
@@ -145,6 +190,8 @@ def main():
                      help="format p,q for K_p + bar K_q")
     grp.add_argument("--chunk-overlap", type=str,
                      help="format t,a,s for a K_t chunk, a attached outside vertices, s also adjacent to w")
+    grp.add_argument("--chunk-endpoint-overlap", type=str,
+                     help="format t,a,u,s for K_t plus endpoint, a chunk-attached, u endpoint-attached, overlap s")
     grp.add_argument("--edges", type=str,
                      help="comma-separated edges like 0-1,1-2,0-2")
     pre.add_argument("--partition", type=str,
@@ -160,6 +207,10 @@ def main():
         t, a, s = map(int, pre_ns.chunk_overlap.split(","))
         n, edges, partition = chunk_overlap_graph(t, a, s)
         label = f"chunk_overlap_t{t}_a{a}_s{s}"
+    elif pre_ns.chunk_endpoint_overlap:
+        t, a, u, s = map(int, pre_ns.chunk_endpoint_overlap.split(","))
+        n, edges, partition = chunk_endpoint_overlap_graph(t, a, u, s)
+        label = f"chunk_endpoint_overlap_t{t}_a{a}_u{u}_s{s}"
     else:
         edges = parse_edges(pre_ns.edges)
         n = max(max(i, j) for i, j in edges) + 1 if edges else 0
@@ -175,6 +226,7 @@ def main():
     parser = getPlanarParser()
     parser.add_argument("--join", type=str, help=argparse.SUPPRESS)
     parser.add_argument("--chunk-overlap", type=str, help=argparse.SUPPRESS)
+    parser.add_argument("--chunk-endpoint-overlap", type=str, help=argparse.SUPPRESS)
     parser.add_argument("--edges", type=str, help=argparse.SUPPRESS)
     parser.add_argument("--partition", type=str, help=argparse.SUPPRESS)
     args, forwarding_args = parser.parse_known_args()
