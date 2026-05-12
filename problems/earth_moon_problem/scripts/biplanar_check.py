@@ -13,6 +13,7 @@ Usage:
     biplanar_check.py --chunk-overlap 6,5,3   # K_6 chunk, 5 attached vertices, 3 also adjacent to w
     biplanar_check.py --chunk-endpoint-overlap 6,5,5,2
                                                # K_6 + endpoint, 5 chunk-attached, 5 endpoint-attached, overlap 2
+    biplanar_check.py --coupled-74 0,0        # coupled Q0 (7,4) graph in G*
     biplanar_check.py --edges 0-1,0-2,1-2     # custom edge list
     biplanar_check.py --edges 0-1,0-2,1-2 --partition 3
     biplanar_check.py --join 4,8 --no-solve --cnf-file /tmp/k4_bk8.cnf
@@ -154,6 +155,62 @@ def chunk_endpoint_overlap_graph(t, a, u, s):
     return n, edges, partition
 
 
+def add_clique(edges, vertices):
+    for i, j in combinations(vertices, 2):
+        edges.add((min(i, j), max(i, j)))
+
+
+def add_complete_bipartite(edges, left, right):
+    for i in left:
+        for j in right:
+            edges.add((min(i, j), max(i, j)))
+
+
+def coupled_74_graph(s6, s3):
+    """Return the coupled Q0 graph for partition (7,4) after contraction.
+
+    The graph lives in G* and contains:
+        - a K_6 chunk from the original K_7 side,
+        - a K_3 chunk from the original K_4 side,
+        - the merged vertex w adjacent to both chunks,
+        - A_6, five outside vertices fully attached to K_6,
+        - U_i, five outside neighbours of the K_7-side endpoint, adjacent to w,
+        - A_3, eight outside vertices fully attached to K_3,
+        - U_j, eight outside neighbours of the K_4-side endpoint, adjacent to w.
+
+    The overlap parameters are s6 = |A_6 cap U_i| and s3 = |A_3 cap U_j|.
+    Q0 exclusivity keeps the K_6-side and K_3-side outside sets disjoint.
+    """
+    if not (0 <= s6 <= 5 and 0 <= s3 <= 8):
+        raise ValueError(f"need 0 <= s6 <= 5 and 0 <= s3 <= 8, got {s6},{s3}")
+
+    next_v = 0
+    k6 = list(range(next_v, next_v + 6)); next_v += 6
+    k3 = list(range(next_v, next_v + 3)); next_v += 3
+    w = next_v; next_v += 1
+    both6 = list(range(next_v, next_v + s6)); next_v += s6
+    a6_only = list(range(next_v, next_v + (5 - s6))); next_v += 5 - s6
+    u6_only = list(range(next_v, next_v + (5 - s6))); next_v += 5 - s6
+    both3 = list(range(next_v, next_v + s3)); next_v += s3
+    a3_only = list(range(next_v, next_v + (8 - s3))); next_v += 8 - s3
+    u3_only = list(range(next_v, next_v + (8 - s3))); next_v += 8 - s3
+
+    edges = set()
+    add_clique(edges, k6)
+    add_clique(edges, k3)
+    add_complete_bipartite(edges, [w], k6 + k3)
+    add_complete_bipartite(edges, k6, both6 + a6_only)
+    add_complete_bipartite(edges, [w], both6 + u6_only)
+    add_complete_bipartite(edges, k3, both3 + a3_only)
+    add_complete_bipartite(edges, [w], both3 + u3_only)
+
+    partition = [len(k6), len(k3), 1]
+    for part in (both6, a6_only, u6_only, both3, a3_only, u3_only):
+        if part:
+            partition.append(len(part))
+    return next_v, edges, partition
+
+
 def parse_partition(partition_str):
     return [int(x) for x in partition_str.split(",") if x.strip()]
 
@@ -192,6 +249,8 @@ def main():
                      help="format t,a,s for a K_t chunk, a attached outside vertices, s also adjacent to w")
     grp.add_argument("--chunk-endpoint-overlap", type=str,
                      help="format t,a,u,s for K_t plus endpoint, a chunk-attached, u endpoint-attached, overlap s")
+    grp.add_argument("--coupled-74", type=str,
+                     help="format s6,s3 for the coupled Q0 (7,4) graph in G*")
     grp.add_argument("--edges", type=str,
                      help="comma-separated edges like 0-1,1-2,0-2")
     pre.add_argument("--partition", type=str,
@@ -211,6 +270,10 @@ def main():
         t, a, u, s = map(int, pre_ns.chunk_endpoint_overlap.split(","))
         n, edges, partition = chunk_endpoint_overlap_graph(t, a, u, s)
         label = f"chunk_endpoint_overlap_t{t}_a{a}_u{u}_s{s}"
+    elif pre_ns.coupled_74:
+        s6, s3 = map(int, pre_ns.coupled_74.split(","))
+        n, edges, partition = coupled_74_graph(s6, s3)
+        label = f"coupled_74_s6{s6}_s3{s3}"
     else:
         edges = parse_edges(pre_ns.edges)
         n = max(max(i, j) for i, j in edges) + 1 if edges else 0
@@ -227,6 +290,7 @@ def main():
     parser.add_argument("--join", type=str, help=argparse.SUPPRESS)
     parser.add_argument("--chunk-overlap", type=str, help=argparse.SUPPRESS)
     parser.add_argument("--chunk-endpoint-overlap", type=str, help=argparse.SUPPRESS)
+    parser.add_argument("--coupled-74", type=str, help=argparse.SUPPRESS)
     parser.add_argument("--edges", type=str, help=argparse.SUPPRESS)
     parser.add_argument("--partition", type=str, help=argparse.SUPPRESS)
     args, forwarding_args = parser.parse_known_args()

@@ -984,6 +984,52 @@ still survives whenever $s \le 2$. The next attack must either prove
 the overlap lower bound $s \ge 3$ from global structure, or couple the
 $K_6/u_i$ side with the $K_3/u_j$ side in a single local probe.
 
+### 7.13 Coupled probe — why it cannot beat the one-sided obstruction
+
+Added `--coupled-74 s6,s3` to `scripts/biplanar_check.py` for the
+post-contraction graph in $G^*$ containing both chunks, the common
+merged vertex $w$, and all high-only outside attachment vertices. The
+disjoint low-overlap instance $(s_6,s_3)=(0,0)$ has
+
+$$
+n = 36,\qquad m = 94,
+$$
+
+with the edge count independent of $(s_6,s_3)$ and vertex count
+$36-s_6-s_3$.
+
+The raw SMS run on $(0,0)$ did not resolve quickly (interrupted after
+several minutes), but this is not a meaningful obstruction candidate:
+the coupled graph is a **1-sum at $w$** of the $K_6/u_i$ side and the
+$K_3/u_j$ side. Biplanar graphs are closed under 1-sums. Indeed, if
+
+$$
+G_1 = P_1 \cup Q_1,\qquad G_2 = P_2 \cup Q_2
+$$
+
+are biplanar decompositions and $G_1,G_2$ share only a cut vertex $w$,
+then
+
+$$
+G_1 \cup_w G_2 = (P_1 \cup_w P_2) \cup (Q_1 \cup_w Q_2),
+$$
+
+and each layer is planar because planar graphs are closed under
+1-sums.
+
+So for the surviving $K_6$-side overlaps $s_6 \le 2$, the coupled graph
+is automatically biplanar provided the $K_3$ side is biplanar. The
+$K_3$ side is harmless: the saturated endpoint case is
+$K_4+\overline{K_8}$, already SAT, and every lower-overlap case is
+obtained from it by deleting endpoint-to-$A(K_3)$ edges and adding
+endpoint-only vertices, operations that preserve biplanarity.
+
+**Conclusion.** The coupled local probe cannot close Q0. For
+$(7,4)$, local biplanarity has extracted exactly the threshold
+$s_6 \ge 3$ and no more. The remaining task is genuinely structural:
+force that overlap lower bound from the global Q0 configuration, or
+find a different non-local constraint.
+
 ## Status
 
 Phase 6 is now reduced to two concrete combinatorial problems:
@@ -993,7 +1039,7 @@ Phase 6 is now reduced to two concrete combinatorial problems:
 2. **Q0 high-only closure** (Step 7 above): the profile enumeration
    leaves 143 feasible merge types, mostly with $f_i=p_i=0$. The current
    sharp subtarget in the $(7,4)$ case is forcing the $K_6$ overlap
-   $s \ge 3$, or else coupling the $K_6/u_i$ and $K_3/u_j$ sides.
+   $s \ge 3$; one-sided and coupled local biplanarity do not force it.
 
 Either piece, if closed, eliminates the isolated-low-vertex subcase
 at $n = 89$ and is the first non-trivial step beyond Brooks-type's
