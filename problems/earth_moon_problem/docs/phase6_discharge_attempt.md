@@ -822,6 +822,77 @@ witness shape: either force some chunk-to-low attachment, or prove that
 the high outside vertices cannot absorb all chunk demand without
 violating biplanarity / $K_9$-freeness / criticality elsewhere.
 
+### 7.9 Why naive local biplanarity does not tighten the model
+
+The natural first attempt is to apply the biplanar edge bound on
+$C_i \cup A_i$ (the chunk plus its $a_i$ high-outside attached
+vertices):
+
+$$\binom{t_i}{2} + \underbrace{t_i(12 - t_i - \varepsilon_i)}_{\text{demand } D_i}
+  \le 6(t_i + a_i) - 12.$$
+
+Rearranging gives $a_i \ge \big(\binom{t_i}{2} + D_i + 12\big)/6 - t_i$.
+But this is *weaker* than the existing packing bound
+$a_i \ge \lceil D_i/t_i \rceil = 12 - t_i - \varepsilon_i$
+(because each high vertex contributes at most $t_i$ chunk-edges) in
+every relevant case. Concretely:
+
+| $t$ | $\varepsilon$ | demand $D$ | packing LB | local-biplanar LB |
+|---:|---:|---:|---:|---:|
+| 6 | 1 | 30 | **5** | 4 |
+| 3 | 1 | 24 | **8** | 4 |
+| 6 | 0 | 36 | **6** | 5 |
+| 7 | 0 | 35 | **5** | 5 |
+
+So the raw $6(n)-12$ count on $C_i \cup A_i$ never beats packing in
+the surviving regime. Plain edge-count biplanarity will not close
+Q0 high-only.
+
+### 7.10 Next move — layer-aware local capacity
+
+The right replacement for the trivial $h_i \le t_i a_i$ bound is the
+**exact biplanar capacity**: for fixed $(t, \varepsilon, a)$, compute
+
+$$\mathrm{cap}(t, \varepsilon, a) :=
+  \max \big\{ |E(C_i, A)| \mid G' \supseteq K_t,
+              G' \text{ biplanar},
+              |A| = a,
+              \deg_{G'}(w) \ge \varepsilon \cdot t \big\},$$
+
+over all biplanar graphs $G'$ on $t + a + \varepsilon$ vertices
+containing $K_t$ as a subgraph and (if $\varepsilon = 1$) a vertex $w$
+adjacent to all of $K_t$.
+
+If $\mathrm{cap}(6, 1, 5) < 30$, the $(7,4)$ witness dies. If
+$\mathrm{cap}(3, 1, 8) < 24$, the $K_3$-chunk side dies. Likewise for
+the other surviving regimes $(6, 0, 6)$ and $(7, 0, 5)$.
+
+The trivial upper bound is $\mathrm{cap}(t, \varepsilon, a) \le t \cdot a$
+(every outside vertex contributes at most $t$ chunk-edges), achieved by
+all-attached configurations when those are biplanar. The question is
+whether the biplanar constraint forces a strict inequality.
+
+**Sub-target.** Determine $\mathrm{cap}(6, 1, 5)$. The all-attached
+upper bound is $30$. Each of the 5 outside vertices fully attached to
+$K_6$ forms a $K_7$ with $K_6$, and pairwise structural constraints
+from $K_9$-freeness (at most 2 of the 5 fully-attached can be mutually
+adjacent, else $K_9$) + biplanarity (need to actually embed the
+resulting subgraph in two planar layers) may force
+$\mathrm{cap}(6, 1, 5) \le 29$ or smaller.
+
+This is a finite SAT / SMS computation per $(t, \varepsilon, a)$ and is
+the next concrete task. Cases to settle, in priority order (smallest
+relevant first):
+
+1. $(t, \varepsilon, a) = (3, 1, 8)$ — demand 24, packing tight at 8.
+2. $(t, \varepsilon, a) = (6, 1, 5)$ — demand 30, packing tight at 5.
+3. $(t, \varepsilon, a) = (7, 0, 5)$ — demand 35, packing tight at 5.
+4. $(t, \varepsilon, a) = (6, 0, 6)$ — demand 36, packing tight at 6.
+
+Each is a tiny biplanarity question solvable by SMS in seconds. If
+*any* of these capacities is strictly less than the demand, the
+corresponding partition's high-only witness dies.
+
 ## Status
 
 Phase 6 is now reduced to two concrete combinatorial problems:
