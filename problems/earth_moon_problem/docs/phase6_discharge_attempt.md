@@ -880,6 +880,52 @@ adjacent, else $K_9$) + biplanarity (need to actually embed the
 resulting subgraph in two planar layers) may force
 $\mathrm{cap}(6, 1, 5) \le 29$ or smaller.
 
+### 7.11 Layer-aware probes — first results
+
+Implemented `scripts/biplanar_check.py` (generic biplanarity tester via
+SMS v1.0.0 with fixed edge constraints + initial-partition for the
+correct automorphism group). Four probes:
+
+| graph | $(t, \varepsilon, a)$ | edges | biplanar? | wall |
+|---|---|---:|---|---:|
+| $K_4 + \overline{K_8}$ | $(3, 1, 8)$ saturated | 38 | SAT | 0.006s |
+| $K_6 + \overline{K_6}$ | $(6, 0, 6)$ saturated | 51 | SAT | 0.010s |
+| $K_7 + \overline{K_5}$ | $(7, 0, 5)$ / sat. $(6, 1, 5)$ | 56 | **UNSAT** | **13.1s** |
+| $K_7 \cup \overline{K_5}$ to $K_6$ only | weak $(6, 1, 5)$ | 51 | SAT | 0.086s |
+
+**Headline.** $K_7 + \overline{K_5}$ is not biplanar.
+
+So $\mathrm{cap}(6, 1, 5) = 30$ on the chunk-to-outside edges *alone*,
+but if those 5 outside vertices are *additionally* all adjacent to $w$
+(the $\varepsilon = 1$ merged vertex), the local subgraph becomes
+$K_7 + \overline{K_5}$ and biplanarity fails. So the saturated
+$(7, 0, 5)$ and $(6, 1, 5)$-with-also-adjacent-to-$w$ profiles die.
+
+**What this does NOT kill.** The weaker $(6, 1, 5)$ profile, where the
+5 outside vertices each have $h_{u'} = 6$ to the $K_6$ chunk but are
+*not* adjacent to $w$: it is biplanar. So Q0 survives if the
+chunk-serving outside vertices can avoid being among $w$'s neighbours.
+
+**Structural question for the next session.** In the Q0 setup, the
+vertex $u_i$ (the merged endpoint contributing to $w$) has 5 outside
+neighbours in $G$ — these become the 5 $u_i$-attached neighbours of
+$w$ in $G^*$. The 5 chunk-fully-attached outside vertices may overlap
+with this set or be disjoint:
+
+- *Fully overlapping* (all 5 chunk-attached are also $u_i$-neighbours):
+  local subgraph is $K_7 + \overline{K_5}$, UNSAT, contradiction. Killed.
+- *Disjoint* (none of the 5 chunk-attached are $u_i$-neighbours):
+  local subgraph is the weak version, SAT (biplanar). Survives.
+- *Partial overlap* (some): untested intermediate cases.
+
+The next biplanarity probes should test the intermediate overlaps
+$s \in \{1, 2, 3, 4\}$, where $s$ is the number of chunk-attached
+outside vertices that are also adjacent to $w$. If all of $s = 1..5$
+turn out UNSAT, Q0 dies on the $K_6$-chunk side of partition $(7,4)$.
+If some $s$ is SAT, we need a deeper structural argument to rule out
+the disjoint configuration (e.g. degree counting on $u_i$'s 5 outside
+neighbours, or biplanarity on a larger induced subgraph).
+
 This is a finite SAT / SMS computation per $(t, \varepsilon, a)$ and is
 the next concrete task. Cases to settle, in priority order (smallest
 relevant first):
