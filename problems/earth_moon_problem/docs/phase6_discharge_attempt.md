@@ -1030,6 +1030,76 @@ $s_6 \ge 3$ and no more. The remaining task is genuinely structural:
 force that overlap lower bound from the global Q0 configuration, or
 find a different non-local constraint.
 
+### 7.14 Why Gallai-on-$G[L]$ alone is too weak
+
+A natural next attempt is "use Gallai on $G[L]$ to force $|U_i \cap L|$
+to a specific value, then chain to $s \ge 3$." That argument doesn't go
+through, for the following blunt reason.
+
+By the Q0 high-only profile, $A_6 := A(K_6)$ is contained in $H$ (no low
+outside vertex has any chunk edges when $f = p = 0$). So
+$U_i \cap L \subseteq U_i \setminus A_6$. The immediate bound is
+
+$$0 \le |U_i \cap L| \le 5 - s.$$
+
+For $s \le 2$ (the unresolved range), this admits $|U_i \cap L| \in \{0, 1, \dots, 5 - s\}$;
+nothing currently forces even one $u_i$-only vertex to be low.
+
+Each $z \in U_i \setminus A_6$ has the same local $N(v)$-pattern (one edge
+to $u_i$, no edges to $K_6$, no edges to $K_4$ by exclusivity); whether
+$z$ is degree-11 or degree-12 in $G$ is the *only* distinction visible
+locally. Gallai sees only the degree-11 case; high $u_i$-only vertices
+are invisible to $G[L]$'s block structure.
+
+So before Gallai can bite, we need an *additional* theorem of the form
+"every $u_i$-only vertex is low" (equivalently, $|U_i \setminus A_6 \setminus L| = 0$)
+or at least "at most two $u_i$-only vertices are high". Without that,
+the user noted three high $u_i$-only vertices satisfy every constraint
+we have so far and Gallai is the wrong lever.
+
+### 7.15 Three forks for the next session
+
+The Q0 closure at partition $(7,4)$ now branches:
+
+**Fork A: prove every $u_i$-only vertex is low.** If true, $|U_i \cap L| = 5 - s$,
+and the question reduces to bounding the low side. Candidate angles:
+- the rainbow 11-colouring of $G - v$ constrains $u_i$'s neighbour colours
+  in a way that forces $z \in U_i \setminus A_6$ into a particular
+  degree class;
+- the $\rho_{12}(G) = 86$ Brooks-tight rigidity forces specific
+  vertices to be low.
+
+**Fork B: prove at most two $u_i$-only low vertices exist.** Conditional
+on Fork A and combined with $|U_i \setminus A_6| = 5 - s$, this forces
+$s \ge 3$. Candidate angles:
+- Gallai-on-$G[L]$ block structure: three $u_i$-only low vertices would
+  need to fit in $G[L]$ as components or blocks compatible with the
+  $\ell = 24$, isolated-$v$, Brooks-tight regime;
+- endblock list-colouring at the $u_i$-only low vertices (each has
+  $\deg_{G[L]}$ all going to other low vertices, so they form a small
+  Gallai-forest piece).
+
+**Fork C: abandon $(7,4)$ and pivot to another partition.** Specifically:
+test partitions where the saturated chunk witness gives a *non-trivial*
+biplanarity obstruction even with overlap $s = 0$.
+
+Concretely, partition $(7,3,1)$ with cross-merge between $K_3$ and $K_1$
+leaves the $K_7$ clique untouched ($\varepsilon = 0$). The $K_7$ chunk's
+saturated witness is $K_7 + \overline{K_5}$, **already UNSAT** at every
+overlap $s$ (the smaller graph contains the killer). So if Q0 forces a
+saturated profile at this $K_7$ chunk, the partition is dead immediately
+— no overlap analysis needed.
+
+The remaining question for Fork C: must the high-only profile on the
+$K_7$ chunk be saturated (5 outside vertices, each fully attached to
+$K_7$)? Or can it be non-saturated (e.g. 7 high outside vertices each
+with 5 of 7 chunk-edges, summing to 35)? Non-saturated witnesses are
+untested; need a separate local biplanarity probe.
+
+If the non-saturated $K_7$-chunk witness for $(7,3,1)$-merge-$(K_3, K_1)$
+is also non-biplanar, the partition is fully dead and Q0 closes there.
+Else we are back to a partition-specific structural argument.
+
 ## Status
 
 Phase 6 is now reduced to two concrete combinatorial problems:
