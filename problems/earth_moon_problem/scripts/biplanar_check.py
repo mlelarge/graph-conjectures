@@ -10,7 +10,9 @@ short-hand that builds $K_p + \\overline{K_q}$).
 Usage:
     biplanar_check.py --join 6,6              # K_6 + bar K_6
     biplanar_check.py --join 7,5              # K_7 + bar K_5
+    biplanar_check.py --chunk-overlap 6,5,3   # K_6 chunk, 5 attached vertices, 3 also adjacent to w
     biplanar_check.py --edges 0-1,0-2,1-2     # custom edge list
+    biplanar_check.py --edges 0-1,0-2,1-2 --partition 3
     biplanar_check.py --join 4,8 --no-solve --cnf-file /tmp/k4_bk8.cnf
 
 SAT means the underlying graph admits a biplanar (thickness-2) decomposition
@@ -32,6 +34,7 @@ if not os.path.isdir(SMS_ENCODINGS):
         f"Error: SMS encodings directory not found at {SMS_ENCODINGS}. "
         f"See docs/spike_sms_build.md."
     )
+sys.path.insert(0, SMS_DIR)
 sys.path.insert(0, SMS_ENCODINGS)
 
 from planarity import PlanarGraphBuilder, getPlanarParser  # noqa: E402
@@ -68,6 +71,48 @@ def join_kp_kq(p, q):
     return n, edges
 
 
+def chunk_overlap_graph(t, a, s):
+    """Return the local (t, epsilon=1, a)-overlap graph.
+
+    Vertices:
+        0..t-1          chunk C = K_t
+        t               merged vertex w, adjacent to all of C
+        t+1..t+s        outside vertices attached to C and w
+        t+s+1..t+a      outside vertices attached to C only
+
+    The parameter s is the overlap between the a chunk-serving outside
+    vertices and w's outside-neighbour set. The cases s=0 and s=a are the
+    weak and saturated endpoints discussed in the Q0 notes.
+    """
+    if not (0 <= s <= a):
+        raise ValueError(f"need 0 <= s <= a, got t={t}, a={a}, s={s}")
+    n = t + 1 + a
+    w = t
+    attached = list(range(t + 1, n))
+    overlap = set(attached[:s])
+    edges = set()
+    for i, j in combinations(range(t), 2):
+        edges.add((i, j))
+    for i in range(t):
+        edges.add((i, w))
+    for x in attached:
+        for i in range(t):
+            edges.add((i, x))
+        if x in overlap:
+            edges.add((w, x))
+
+    partition = [t, 1]
+    if s > 0:
+        partition.append(s)
+    if a - s > 0:
+        partition.append(a - s)
+    return n, edges, partition
+
+
+def parse_partition(partition_str):
+    return [int(x) for x in partition_str.split(",") if x.strip()]
+
+
 def add_fixed_edge_constraints(builder, n, edges, partition=None):
     """Force the underlying graph of the SMS directed-graph encoding to be
     exactly the given edge set on $n$ vertices.
@@ -98,8 +143,12 @@ def main():
     grp = pre.add_mutually_exclusive_group(required=True)
     grp.add_argument("--join", type=str,
                      help="format p,q for K_p + bar K_q")
+    grp.add_argument("--chunk-overlap", type=str,
+                     help="format t,a,s for a K_t chunk, a attached outside vertices, s also adjacent to w")
     grp.add_argument("--edges", type=str,
                      help="comma-separated edges like 0-1,1-2,0-2")
+    pre.add_argument("--partition", type=str,
+                     help="comma-separated initial partition part sizes for custom --edges")
     pre_ns, _rest = pre.parse_known_args()
 
     if pre_ns.join:
@@ -107,11 +156,15 @@ def main():
         n, edges = join_kp_kq(p, q)
         label = f"K_{p}+bar_K_{q}"
         partition = [p, q]
+    elif pre_ns.chunk_overlap:
+        t, a, s = map(int, pre_ns.chunk_overlap.split(","))
+        n, edges, partition = chunk_overlap_graph(t, a, s)
+        label = f"chunk_overlap_t{t}_a{a}_s{s}"
     else:
         edges = parse_edges(pre_ns.edges)
         n = max(max(i, j) for i, j in edges) + 1 if edges else 0
         label = "custom"
-        partition = None  # no automorphism info; SMS will over-prune
+        partition = parse_partition(pre_ns.partition) if pre_ns.partition else None
 
     # Pre-inject -v / --directed into sys.argv for the parent parser.
     if not any(a in ("-v", "--vertices") for a in sys.argv):
@@ -121,7 +174,9 @@ def main():
 
     parser = getPlanarParser()
     parser.add_argument("--join", type=str, help=argparse.SUPPRESS)
+    parser.add_argument("--chunk-overlap", type=str, help=argparse.SUPPRESS)
     parser.add_argument("--edges", type=str, help=argparse.SUPPRESS)
+    parser.add_argument("--partition", type=str, help=argparse.SUPPRESS)
     args, forwarding_args = parser.parse_known_args()
 
     args.vertices = n

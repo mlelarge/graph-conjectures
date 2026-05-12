@@ -906,7 +906,7 @@ $(7, 0, 5)$ and $(6, 1, 5)$-with-also-adjacent-to-$w$ profiles die.
 *not* adjacent to $w$: it is biplanar. So Q0 survives if the
 chunk-serving outside vertices can avoid being among $w$'s neighbours.
 
-**Structural question for the next session.** In the Q0 setup, the
+**Structural question.** In the Q0 setup, the
 vertex $u_i$ (the merged endpoint contributing to $w$) has 5 outside
 neighbours in $G$ — these become the 5 $u_i$-attached neighbours of
 $w$ in $G^*$. The 5 chunk-fully-attached outside vertices may overlap
@@ -916,28 +916,39 @@ with this set or be disjoint:
   local subgraph is $K_7 + \overline{K_5}$, UNSAT, contradiction. Killed.
 - *Disjoint* (none of the 5 chunk-attached are $u_i$-neighbours):
   local subgraph is the weak version, SAT (biplanar). Survives.
-- *Partial overlap* (some): untested intermediate cases.
+- *Partial overlap* (some): transition computed below.
 
-The next biplanarity probes should test the intermediate overlaps
-$s \in \{1, 2, 3, 4\}$, where $s$ is the number of chunk-attached
-outside vertices that are also adjacent to $w$. If all of $s = 1..5$
-turn out UNSAT, Q0 dies on the $K_6$-chunk side of partition $(7,4)$.
-If some $s$ is SAT, we need a deeper structural argument to rule out
-the disjoint configuration (e.g. degree counting on $u_i$'s 5 outside
-neighbours, or biplanarity on a larger induced subgraph).
+Added `--chunk-overlap t,a,s` to `scripts/biplanar_check.py`, where
+$t=6$, $a=5$, and $s$ is the number of chunk-attached outside vertices
+also adjacent to $w$. This mode also supplies the correct SMS initial
+partition, avoiding the custom-edges over-pruning issue.
 
-This is a finite SAT / SMS computation per $(t, \varepsilon, a)$ and is
-the next concrete task. Cases to settle, in priority order (smallest
-relevant first):
+The overlap sweep gives:
 
-1. $(t, \varepsilon, a) = (3, 1, 8)$ — demand 24, packing tight at 8.
-2. $(t, \varepsilon, a) = (6, 1, 5)$ — demand 30, packing tight at 5.
-3. $(t, \varepsilon, a) = (7, 0, 5)$ — demand 35, packing tight at 5.
-4. $(t, \varepsilon, a) = (6, 0, 6)$ — demand 36, packing tight at 6.
+| $s$ | edges | biplanar? | wall |
+|---:|---:|---|---:|
+| 0 | 51 | SAT | 0.013s |
+| 1 | 52 | SAT | 0.013s |
+| 2 | 53 | SAT | 0.019s |
+| 3 | 54 | **UNSAT** | 55.5s |
+| 4 | 55 | **UNSAT** | 44.5s |
+| 5 | 56 | **UNSAT** | 35.3s |
 
-Each is a tiny biplanarity question solvable by SMS in seconds. If
-*any* of these capacities is strictly less than the demand, the
-corresponding partition's high-only witness dies.
+So there is a genuine threshold: local biplanarity kills overlap
+$s \ge 3$ but permits $s \le 2$.
+
+**Conclusion.** The $(7,4)$ high-only witness survives only if the
+5 chunk-serving vertices overlap the $u_i$-outside-neighbour set in at
+most two vertices. The next structural target is therefore not
+"any overlap" but the sharper statement
+
+$$
+|A(K_6) \cap N_G(u_i) \setminus N(v)| \ge 3,
+$$
+
+where $A(K_6)$ is the set of high outside vertices serving the $K_6$
+chunk. If degree counting, Q0 exclusivity, or the $K_3$ chunk side can
+force this $\ge 3$ overlap, the $(7,4)$ Q0 case dies.
 
 ## Status
 
