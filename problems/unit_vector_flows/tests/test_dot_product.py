@@ -89,6 +89,25 @@ def test_dot_product_structure():
         assert G_prime.has_edge(a, b)
 
 
+def test_iterated_dot_product_petersen_chain():
+    from dot_product import iterated_dot_product
+    G = petersen()
+    r = find_witness(G, restarts=100, seed=1)
+    steps = []
+    for s in (10, 20, 30):
+        Gn = petersen()
+        rn = find_witness(Gn, restarts=100, seed=s)
+        steps.append((0, Gn, rn.vectors, 0))
+    out = iterated_dot_product(G, r.vectors, steps)
+    assert out["ok"]
+    assert out["G_final"].number_of_nodes() == 4 * 10 - 3 * 2  # 4 × Petersen, 3 gluings
+    assert out["G_final"].number_of_edges() == 4 * 15 - 3 * 3
+    assert all(deg == 3 for _, deg in out["G_final"].degree())
+    # Each step's flow verified at machine precision
+    for h in out["history"]:
+        assert h["max_residual"] < 1e-7
+
+
 @pytest.mark.parametrize("label,build1,build2", [
     ("Petersen . Petersen", petersen, petersen),
     ("Petersen . Blanusa-1", petersen, blanusa_first),

@@ -164,6 +164,50 @@ def align_to_negation(
     return None
 
 
+def iterated_dot_product(
+    base_graph: nx.Graph,
+    base_witness: list[list[float]] | np.ndarray,
+    steps: list[tuple],
+    *,
+    tol: float = 1e-7,
+) -> dict:
+    """Chain together a sequence of dot-product gluings.
+
+    Starts with ``(base_graph, base_witness)`` and, for each step
+    ``(v_left, G_right, witness_right, v_right)``, replaces the current
+    pair with the result of ``dot_product_witness``, glued at
+    ``v_left`` in the running graph and ``v_right`` in ``G_right``.
+
+    Returns the final graph + witness + per-step verify status.
+    Stops early (with ``ok=False``) if any intermediate step fails to
+    align/verify.
+    """
+    G_cur = base_graph
+    X_cur = np.asarray(base_witness, dtype=np.float64)
+    history: list[dict] = []
+    for i, step in enumerate(steps):
+        v_left, G_right, X_right, v_right = step
+        out = dot_product_witness(G_cur, X_cur, v_left, G_right, X_right, v_right, tol=tol)
+        history.append({
+            "step": i,
+            "ok": out["ok"],
+            "permutation": out.get("permutation"),
+            "G_prime_size": (out["G_prime"].number_of_nodes(), out["G_prime"].number_of_edges()) if out.get("ok") else None,
+            "max_residual": out["verify"]["max_vertex_residual"] if out.get("ok") else None,
+            "reason": out.get("reason"),
+        })
+        if not out["ok"]:
+            return {"ok": False, "history": history, "G_final": G_cur, "vectors_final": X_cur, "failed_at_step": i}
+        G_cur = out["G_prime"]
+        X_cur = out["vectors_prime"]
+    return {
+        "ok": True,
+        "history": history,
+        "G_final": G_cur,
+        "vectors_final": X_cur,
+    }
+
+
 def dot_product_witness(
     G1: nx.Graph,
     witness1: list[list[float]] | np.ndarray,
