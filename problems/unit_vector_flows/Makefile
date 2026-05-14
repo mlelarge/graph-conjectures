@@ -35,7 +35,7 @@ verify:
 	$(VENV_PYTHON) -m pytest tests/ -q
 
 verify-certs:
-	$(VENV_PYTHON) scripts/verify_sweep.py data/interval_certs/nontrivial_n10_to_24
+	$(VENV_PYTHON) scripts/verify_sweep.py data/interval_certs/nontrivial_n10_to_28
 
 # Regeneration pipeline ---------------------------------------------------
 
@@ -61,25 +61,25 @@ catalogue: data/catalogues/nontrivial_snarks_n10_to_28.g6
 sweep: catalogue
 	$(VENV_PYTHON) scripts/sweep.py \
 	    --from-catalogue data/catalogues/nontrivial_snarks_n10_to_28.g6 \
-	    --out data/sweep_results/nontrivial_n10_to_24 \
+	    --out data/sweep_results/nontrivial_n10_to_28 \
 	    --restarts $(RESTARTS)
 
 certs: sweep
 	$(VENV_PYTHON) scripts/interval.py \
-	    data/sweep_results/nontrivial_n10_to_24/*.json \
+	    data/sweep_results/nontrivial_n10_to_28/*.json \
 	    --radius $(RADIUS) --dps $(DPS) \
-	    --out data/interval_certs/nontrivial_n10_to_24
+	    --out data/interval_certs/nontrivial_n10_to_28
 
 manifest:
 	$(VENV_PYTHON) scripts/manifest.py \
 	    --catalogue data/catalogues/nontrivial_snarks_n10_to_28.g6 \
 	    --orders $(SNARK_ORDERS) \
 	    --intermediate-dir data/catalogues \
-	    --cert-dir data/interval_certs/nontrivial_n10_to_24 \
+	    --cert-dir data/interval_certs/nontrivial_n10_to_28 \
 	    --name nontrivial_snarks_n10_to_28 \
 	    --out data/catalogues/nontrivial_snarks_n10_to_28.manifest.json
 
 clean:
-	rm -rf data/sweep_results/nontrivial_n10_to_24
-	rm -rf data/interval_certs/nontrivial_n10_to_24
+	rm -rf data/sweep_results/nontrivial_n10_to_28
+	rm -rf data/interval_certs/nontrivial_n10_to_28
 	rm -f data/catalogues/nontrivial_snarks_n*.jsonl
