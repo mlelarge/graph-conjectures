@@ -122,30 +122,33 @@ its negation, and a generic non-trivial $(R, \pi)$ pair.
 ## Flower snarks: a structural wall
 
 The eventual goal — reach the flower family $J_{2k+1}$ by gluing
-smaller cubic pieces — fails for the same reason as the dot product,
-just one step later. Empirically (via `find_cyclic_4_cuts`):
+smaller cubic pieces — fails for a stronger reason than expected.
+Empirically (via `cyclic_edge_connectivity_at_most`):
 
-| Graph | $n$ | $m$ | cyclic 4-cuts found |
+| Graph | $n$ | $m$ | cyclic-edge-conn |
 |---|---:|---:|---:|
-| $J_5$ | 20 | 30 | 0 |
-| $J_7$ | 28 | 42 | 0 |
-| $J_9$ | 36 | 54 | 0 |
-| $J_{11}$ | 44 | 66 | 0 |
+| $J_5$ | 20 | 30 | $5$ |
+| $J_7$ | 28 | 42 | $\ge 6$ |
+| $J_9$ | 36 | 54 | $\ge 6$ |
+| $J_{11}$ | 44 | 66 | $\ge 6$ |
+| $J_{13}$ | 52 | 78 | $\ge 6$ |
 
-These graphs are *cyclically $\ge 5$-edge-connected*, not just
-cyclically 4-edge-connected as the textbook bound states. So neither a
+So $J_5$ is cyclically *exactly* 5-edge-connected; for $n \ge 7$ the
+cyclic-edge-connectivity jumps to $\ge 6$. Both bounds are strictly
+stronger than the textbook "$\ge 4$". Consequently neither a
 3-edge-cut dot product
-([no_flower_dot_decomposition.md](no_flower_dot_decomposition.md))
-nor a 4-edge-cut splice can decompose them into smaller cubic pieces.
+([no_flower_dot_decomposition.md](no_flower_dot_decomposition.md)),
+nor a 4-edge-cut splice, nor (for $n \ge 7$) a 5-edge-cut surgery can
+decompose them into smaller cubic pieces.
 
 Reaching the flower family by gadget composition would require a
-5-edge-cut splice or beyond. The 5-cut case is genuinely heavier: the
-moduli of 5 unit vectors summing to zero in $\mathbb{R}^3$ has
-dimension $5 \cdot 2 - 3 = 7$ modulo $\mathrm{SO}(3)$, and the
-removed pieces are no longer "almost cubic" — boundary vertices have
-degree 2 in the same way, but coordinating five through-edges' values
-against a 7-dimensional moduli space is a substantial step beyond the
-SO(3) Kabsch trick.
+6-edge-cut splice or beyond for $n \ge 7$. The 6-cut case is genuinely
+heavier: the moduli of 6 unit vectors summing to zero in $\mathbb{R}^3$
+has dimension $6 \cdot 2 - 3 = 9$ modulo $\mathrm{SO}(3)$ (subtracting
+3 for $\mathrm{SO}(3)$, that's a $6$-dim quotient), and the removed
+pieces are no longer "almost cubic" — coordinating six through-edges'
+values against a 6-dim moduli space is a substantial step beyond the
+$\mathrm{SO}(3)$ Kabsch trick.
 
 ## What the splice *does* cover
 

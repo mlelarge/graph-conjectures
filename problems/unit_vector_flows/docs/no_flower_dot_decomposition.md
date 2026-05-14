@@ -50,9 +50,18 @@ graphs *with* cyclic 3-cuts; the catalogue *excludes* them).
 
 A natural follow-up is whether a *4-cut* splice
 ([splice4.md](splice4.md)) could decompose the flower family. The
-answer is no for the small members: a direct enumeration via
-`find_cyclic_4_cuts` on $J_5, J_7, J_9, J_{11}$ shows that **none of
-these graphs admits any cyclic 4-edge cut** — they are cyclically
-$\ge 5$-edge-connected, not just $\ge 4$. Even the 4-cut splice
-gadget therefore cannot reach the small flower snarks by gluing
-smaller cubic pieces along a 4-cut.
+answer is no, and in a stronger form than expected. The brute
+enumeration `cyclic_edge_connectivity_at_most(G, k)` returns
+
+| Graph | $n$ | $m$ | cyclic-edge-conn |
+|---|---:|---:|---:|
+| $J_5$ | 20 | 30 | $5$ |
+| $J_7$ | 28 | 42 | $\ge 6$ |
+| $J_9$ | 36 | 54 | $\ge 6$ |
+| $J_{11}$ | 44 | 66 | $\ge 6$ |
+| $J_{13}$ | 52 | 78 | $\ge 6$ |
+
+So $J_5$ is cyclically *exactly* 5-edge-connected; for $n \ge 7$ the
+cyclic-edge-connectivity jumps to $\ge 6$. Neither the 3-cut dot
+product nor the 4-cut splice can decompose these graphs into smaller
+cubic pieces; for $n \ge 7$ not even a 5-cut surgery would suffice.

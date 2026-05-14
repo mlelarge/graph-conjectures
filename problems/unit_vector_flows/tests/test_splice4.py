@@ -51,11 +51,13 @@ def test_blanusa_first_has_a_cyclic_4_cut():
     assert len(cut) == 4
 
 
-@pytest.mark.parametrize("k", [2, 3])
+@pytest.mark.parametrize("k", [2, 3, 4, 5])
 def test_flower_snark_has_no_cyclic_4_cut(k):
-    """Empirically J_5 and J_7 are cyclically >= 5-edge-connected;
-    no cyclic 4-cut exists. (Recorded so future families can be
-    compared at a glance.)"""
+    """Empirically every $J_{2k+1}$ for $k \\in \\{2, 3, 4, 5\\}$
+    (i.e., $J_5, J_7, J_9, J_{11}$) is cyclically $\\ge 5$-edge-connected;
+    moreover, for $k \\ge 3$ it is cyclically $\\ge 6$-edge-connected.
+    No cyclic 4-edge cut exists in any of these graphs. (Recorded as
+    a regression so future families can be compared at a glance.)"""
     G = flower_snark(k)
     cuts = find_cyclic_4_cuts(G, max_cuts=1)
     assert cuts == [], (
