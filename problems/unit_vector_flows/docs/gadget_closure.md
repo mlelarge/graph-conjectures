@@ -110,16 +110,18 @@ effort but not pursued here.
 
 ## What's not yet done
 
-1. **Splice / 4-cut surgery (Phase 3c).** The third gadget in the
-   original plan. Structurally heavier than dot product because a
-   4-edge cut on a cubic graph generally leaves the two sides
-   non-cubic; the gluing semantics need more care.
+1. ~~**Splice / 4-cut surgery (Phase 3c).**~~ Implemented and
+   round-trip-validated; see [splice4.md](splice4.md). The flower
+   family is *not* reachable: $J_5, J_7, J_9, J_{11}$ are cyclically
+   $\ge 5$-edge-connected, so neither dot product nor 4-cut splice
+   decomposes them. A 5-cut surgery would be needed.
 2. **Closure-set enumeration.** What graphs are reachable from
    $\mathcal{F}_0$ by $k$ gadget operations? A reachability search
    would give explicit infinite families.
-3. **Flower-snark decomposition.** If $J_n$ is dot-product-reducible
-   into smaller pieces, find the pieces. Open question;
-   computationally expensive search.
+3. ~~**Flower-snark decomposition.**~~ Closed negatively in
+   [no_flower_dot_decomposition.md](no_flower_dot_decomposition.md)
+   and [splice4.md](splice4.md): no 3- or 4-cut decomposition exists
+   for $J_5, \dots, J_{11}$.
 
 ## Files
 
