@@ -1,0 +1,35 @@
+External replay sanity check
+============================
+
+Setup:
+  Date            : 2026-05-14
+  Origin commit   : 1fa48df (HEAD of main at clone time)
+  Clone target    : /tmp/graph-conjectures-replay (fresh, depth=1)
+  Python          : 3.12.4 (uv-managed .venv at repo root)
+  Dependencies    : networkx numpy scipy sympy mpmath python-sat pytest
+  Hardware        : Apple Silicon, 8 cores
+
+Stage 1 -- make verify (regression):
+  41 passed in 18.22s
+
+Stage 2 -- parallel cert replay (manual sharding, 8 batches; the
+default `make verify-certs` is single-threaded and would take ~9 h
+on 3247 certs):
+
+batch_0: ok=405 fail=0 elapsed=4366.4s
+batch_1: ok=406 fail=0 elapsed=4354.7s
+batch_2: ok=406 fail=0 elapsed=4366.5s
+batch_3: ok=406 fail=0 elapsed=4371.9s
+batch_4: ok=406 fail=0 elapsed=4365.6s
+batch_5: ok=406 fail=0 elapsed=4365.6s
+batch_6: ok=406 fail=0 elapsed=4369.4s
+batch_7: ok=406 fail=0 elapsed=4361.6s
+
+Totals: 8/8 batches completed, 3247/3247 certificates pass
+  replay["ok"] AND verdict_matches_cert AND polynomial_hash_match.
+  Max per-batch wall: 4371.9 s (= 72.9 min).
+
+This log was produced by replaying the committed JSON certificates
+through `interval.replay_krawczyk`, which reconstructs the polynomial
+system from the stored `graph6` string and re-runs the Krawczyk
+inclusion test from scratch -- no trust in the stored `K_box` values.
