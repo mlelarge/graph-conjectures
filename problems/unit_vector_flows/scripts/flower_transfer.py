@@ -358,12 +358,17 @@ def transfer_step(
         return np.array([F1, F2])
 
     sol = optimize.root(residuals, x0=np.array([phi0, psi0]), method="hybr", tol=tol)
-    if not sol.success:
+    final_res = float(np.linalg.norm(sol.fun))
+    # scipy's "not making good progress" check is a false negative once
+    # the residual has hit machine precision -- accept any solution whose
+    # actual residual is below a generous numerical-zero threshold.
+    accept = sol.success or final_res < 1e-9
+    if not accept:
         return {
             "ok": False,
             "reason": sol.message,
             "angles": (float(sol.x[0]), float(sol.x[1])),
-            "residual": float(np.linalg.norm(sol.fun)),
+            "residual": final_res,
         }
     phi, psi = float(sol.x[0]), float(sol.x[1])
     beta = _spoke_on_circle(B_prev, phi)
