@@ -69,16 +69,37 @@ Combined with the existing $n = 20$ catalogue result (all 6
 nontrivial snarks at $n = 20$ have Krawczyk-certified $S^2$ flows),
 $J_5$ is doubly certified.
 
-## Hand-off
+## Hand-constructed candidates — both fail the gate
 
-Phase 2 is unfinished. To finish it requires either:
+Per the Phase 2 hard gate ("if edge coverage is not exactly twice,
+stop"), two natural structural CDCs were tried in
+[scripts/flower_cdc.py](../scripts/flower_cdc.py) and both fail
+`cdc_summary().all_edges_covered_twice` for every
+$k \in \{2, 3, 4, 5, 6\}$:
 
-- a structural CDC for $J_n$ transcribed from the literature and fed to
-  `solve_weighted_cdc`, with a numerical k-parametric check across
-  $n \in \{5, 7, 9, 11, 13\}$; or
-- a faster cycle enumerator focused on the flower-snark vertex types
-  (spoke fans + b-cycle + cd-cycle), so that `iter_cdcs` produces a
-  diverse pool quickly.
+- **v1** = $b$-cycle + $cd$-cycle + $\{bc, bd\}$-shuttles. Some
+  internal spokes get 4 covers, others 2; `all_2x_covered=False` at
+  every $k$ tested.
+- **v2** = $\{bc, bd\}$-shuttles only, with wrap-around cycles for
+  $i = n-1$ via the cross edges $c_{n-1} d_0$ and $d_{n-1} c_0$.
+  Always leaves at least 2 cross-edge bad covers.
 
-Phase 3 (gadget composition) can be started in parallel; it does not
-depend on the Phase 2 outcome.
+The structural obstruction is parity. For $J_n$ with $n = 2k+1$ odd,
+the per-star $(bc, bd, cd)$ pass-count must be exactly $(1, 1, 1)$.
+Each length-6 shuttle of type $T \in \{bc, bd, cd\}$ contributes a
+$T$-pass at *two* consecutive stars, so the number of $T$-shuttles
+times $2$ must equal $n$. For $n$ odd, $n/2$ is not an integer, so
+no uniform shuttle CDC exists. Any working CDC must use mixed cycle
+lengths or break the $\mathbb{Z}/n$ symmetry — both routes fight the
+parametric-construction goal directly.
+
+## Pivot recorded
+
+The user gate fires: weighted CDC + structural CDC template is the
+wrong abstraction for the flower family. Per
+[cdc_gadget_plan.md](cdc_gadget_plan.md) §"What to not do" and the
+explicit "don't massage it endlessly" directive, the project moves to
+Phase 3 (HMM/gadget composition). The weighted-CDC pipeline remains
+useful as a per-graph certificate format
+(see [weighted_cdc_certificates.md](weighted_cdc_certificates.md))
+but is not the route to an infinite-family theorem on flower snarks.
