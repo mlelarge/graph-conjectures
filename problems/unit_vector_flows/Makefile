@@ -22,11 +22,11 @@ RESTARTS ?= 200
 help:
 	@echo "Targets:"
 	@echo "  verify         pytest regression (41 tests, ~6s)"
-	@echo "  verify-certs   replay 347 interval certificates (~50 min for n=26)"
+	@echo "  verify-certs   replay 3247 interval certificates (~50 min for n=26, ~70 min more for n=28)"
 	@echo "  catalogue      regenerate cubic-g5 catalogues via geng, then filter to nontrivial snarks"
 	@echo "  sweep          run numerical witness sweep on the nontrivial-snark catalogue"
 	@echo "  certs          run Krawczyk interval certifier on the sweep output"
-	@echo "  manifest       (re)write data/catalogues/nontrivial_snarks_n10_to_26.manifest.json"
+	@echo "  manifest       (re)write data/catalogues/nontrivial_snarks_n10_to_28.manifest.json"
 	@echo "  clean          remove generated intermediate files (keeps committed catalogues)"
 	@echo ""
 	@echo "Variables: VENV_PYTHON=$(VENV_PYTHON), GENG=$(GENG), RADIUS=$(RADIUS), DPS=$(DPS)"
@@ -53,14 +53,14 @@ data/catalogues/nontrivial_snarks_n%.g6: data/catalogues/nontrivial_snarks_n%.js
 	$(VENV_PYTHON) -c "import json,sys; \
 		[print(json.loads(l)['graph6']) for l in open('$<')]" > $@
 
-data/catalogues/nontrivial_snarks_n10_to_26.g6: $(SNARK_FILES)
+data/catalogues/nontrivial_snarks_n10_to_28.g6: $(SNARK_FILES)
 	cat $^ > $@
 
-catalogue: data/catalogues/nontrivial_snarks_n10_to_26.g6
+catalogue: data/catalogues/nontrivial_snarks_n10_to_28.g6
 
 sweep: catalogue
 	$(VENV_PYTHON) scripts/sweep.py \
-	    --from-catalogue data/catalogues/nontrivial_snarks_n10_to_26.g6 \
+	    --from-catalogue data/catalogues/nontrivial_snarks_n10_to_28.g6 \
 	    --out data/sweep_results/nontrivial_n10_to_24 \
 	    --restarts $(RESTARTS)
 
@@ -72,12 +72,12 @@ certs: sweep
 
 manifest:
 	$(VENV_PYTHON) scripts/manifest.py \
-	    --catalogue data/catalogues/nontrivial_snarks_n10_to_26.g6 \
+	    --catalogue data/catalogues/nontrivial_snarks_n10_to_28.g6 \
 	    --orders $(SNARK_ORDERS) \
 	    --intermediate-dir data/catalogues \
 	    --cert-dir data/interval_certs/nontrivial_n10_to_24 \
-	    --name nontrivial_snarks_n10_to_26 \
-	    --out data/catalogues/nontrivial_snarks_n10_to_26.manifest.json
+	    --name nontrivial_snarks_n10_to_28 \
+	    --out data/catalogues/nontrivial_snarks_n10_to_28.manifest.json
 
 clean:
 	rm -rf data/sweep_results/nontrivial_n10_to_24

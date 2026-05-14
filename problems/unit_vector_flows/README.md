@@ -32,21 +32,23 @@ spike works only at toy size; the same square system is used as the negative
 backend (a bridged cubic graph reduces to the unit ideal). See
 [docs/plan.md](docs/plan.md).
 
-**Headline result.** Every nontrivial snark up through 26 vertices in the
-nauty `geng -d3 -D3 -tf` enumeration admits a replayable interval-Krawczyk
-certificate of $S^2$-flow existence (347 graphs total).
+**Headline result.** Every nontrivial snark up through 28 vertices in the
+nauty `geng` / Brinkmann–Goedgebeur `snarkhunter` enumeration admits a
+replayable interval-Krawczyk certificate of $S^2$-flow existence
+(3 247 graphs total).
 
-| Order | Cubic girth-5 (geng) | Nontrivial snarks (χ′=4, cyc-λ ≥ 4) | Witness | Interval certified | Replay-verified |
-|---:|---:|---:|---:|---:|---:|
-| 10 | 1 | 1 | 1/1 | 1/1 | 1/1 |
-| 14 | 9 | 0 | — | — | — |
-| 16 | 49 | 0 | — | — | — |
-| 18 | 455 | 2 | 2/2 | 2/2 | 2/2 |
-| 20 | 5 783 | 6 | 6/6 | 6/6 | 6/6 |
-| 22 | 90 938 | 20 | 20/20 | 20/20 | 20/20 |
-| 24 | 1 620 479 | 38 | 38/38 | 38/38 | 38/38 |
-| 26 | (streamed) | 280 | 280/280 | 280/280 | 280/280 |
-| **Total** | | **347** | **347/347** | **347/347** | **347/347** |
+| Order | Source | Nontrivial snarks (χ′=4, cyc-λ ≥ 4) | Witness | Interval certified | Replay-verified |
+|---:|:---|---:|---:|---:|---:|
+| 10 | geng | 1 | 1/1 | 1/1 | 1/1 |
+| 14 | geng | 0 | — | — | — |
+| 16 | geng | 0 | — | — | — |
+| 18 | geng | 2 | 2/2 | 2/2 | 2/2 |
+| 20 | geng | 6 | 6/6 | 6/6 | 6/6 |
+| 22 | geng | 20 | 20/20 | 20/20 | 20/20 |
+| 24 | geng | 38 | 38/38 | 38/38 | 38/38 |
+| 26 | geng (streamed) | 280 | 280/280 | 280/280 | 280/280 |
+| 28 | snarkhunter | 2 900 | 2 900/2 900 | 2 900/2 900 | 2 900/2 900 |
+| **Total** | | **3 247** | **3 247/3 247** | **3 247/3 247** | **3 247/3 247** |
 
 The per-order counts match Brinkmann–Goedgebeur–Hägglund–Markström
 (JCTB 2013). The certified count uses the *strict* nontrivial-snark
@@ -57,9 +59,16 @@ decision is SAT-based (Glucose 4 via `python-sat`); this is essential
 at $n \geq 24$ because the backtrack search space ($3^m$) is too large
 to certify chromatic index 4 by exhaustion. At $n = 26$,
 [scripts/sweep_higher_order.sh](scripts/sweep_higher_order.sh)
-streams each `geng res/mod` shard directly through the SAT filter,
-so the raw catalogue (≈ 1.5 GB) is never materialised on disk;
-only the 280 snark JSONL lines (≈ 100 KB) survive.
+streams each `geng res/mod` shard directly through the SAT filter, so
+the raw catalogue (≈ 1.5 GB) is never materialised on disk; only the
+280 snark JSONL lines (≈ 100 KB) survive. At $n = 28$ the streaming
+`geng + SAT` pipeline was projected at multi-day wall time, so the
+enumeration switched to `snarkhunter` from Brinkmann, Goedgebeur, and
+McKay (`caagt.ugent.be/cubic/snarkhunter-2.0b.zip`, built locally
+against `libnautyL1.a`), which generates nontrivial snarks directly
+via even-2-factor lookahead and finished in 24 min of CPU time for
+2 900 graphs. Krawczyk certification at $n = 28$ was parallelised
+across 8 batches (~70 min wall on 8 cores).
 
 Each interval cert (schema v2) carries enough metadata for an independent
 verifier to reconstruct the polynomial system from the graph6 string and
@@ -74,7 +83,7 @@ confirms the pipeline rejects bridged cubic graphs: numerical search refuses
 (rss ≥ 0.36) and sympy Gröbner produces the unit ideal in 0.03 s.
 
 The frontier sweep is reproducible from the manifest at
-[data/catalogues/nontrivial_snarks_n10_to_26.manifest.json](data/catalogues/nontrivial_snarks_n10_to_26.manifest.json),
+[data/catalogues/nontrivial_snarks_n10_to_28.manifest.json](data/catalogues/nontrivial_snarks_n10_to_28.manifest.json),
 which records the exact `nauty geng` commands per order, the nauty
 version, every catalogue file's SHA-256, and a content hash of the
 certificate directory. The verifier
