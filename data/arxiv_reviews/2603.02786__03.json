@@ -1,0 +1,22 @@
+{
+  "review_id": "2603.02786__03",
+  "safe_id": "2603.02786",
+  "arxiv_id": "2603.02786",
+  "conjecture_title": "Conjecture 6",
+  "paper_title": "Packing arithmetic progressions",
+  "published": "2026-03-03",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 6 of arXiv:2603.02786 proposes the precise asymptotic of M_k(n) (the minimum interval length needed to pack the arithmetic progressions B_d = {d, 2d, ..., nd} for d = 1,...,k) in two regimes: M_k(n) ~ k^2 n / (2 ln k) when k << n, and M_k(n) ~ k^2 n / (2 ln k) - k^3 / (3 ln k) otherwise. Theorem 5 of the same paper establishes matching bounds up to a (1/2 - o_k(1)) vs (zeta(2)/2 + o_k(1)) gap in the leading constant, so the conjecture refines those bounds to exact asymptotics. No follow-up paper resolving the conjecture was found in a broad web search conducted approximately 10 weeks after the paper's submission.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Alon Dębski Grytczuk Przybyło \"packing arithmetic progressions\" M_k(n) asymptotic conjecture 2026",
+    "arxiv 2603.02786 \"M_k(n)\" arithmetic progressions packing conjecture follow-up cite 2026",
+    "Alon Grytczuk \"packing arithmetic progressions\" cite 2026 lcm disjoint interval"
+  ],
+  "notes": "No follow-up found. The paper was posted March 3, 2026; this review was conducted May 14, 2026, only ~10 weeks later, so absence of follow-up is expected and consistent with high confidence open status. The conjecture proposes exact asymptotics sharpening Theorem 5 of the same paper; both regimes hinge on the leading constant k^2/(2 ln k)."
+}

@@ -1,0 +1,29 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Tuza's Conjecture",
+    "statement_text": "For any graph $G$ it holds $\\tau(G)\\leq 2\\mu(G)$.",
+    "context_text": "Tuza conjectured in 1981 that in a graph without $k+1$ edge-disjoint triangles, it suffices to delete at most $2k$ edges to obtain a triangle-free graph. Here $\\mu(G)$ denotes the maximum size of a triangle packing and $\\tau(G)$ the minimum size of a triangle hitting set. The conjecture is tight for $K_4$ and $K_5$, and is known to hold asymptotically for all graphs.",
+    "attributed_to": "Tuza",
+    "attributed_year": 1981,
+    "paper_contribution": "Proves Tuza's Conjecture for threshold graphs (graphs that are both split graphs and cographs) and for even balanced co-chain graphs (co-chain graphs where both sides have the same size divisible by 4).",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2105.09871",
+    "paper_title": "Tuza's Conjecture for Threshold Graphs",
+    "paper_authors": [
+      "Marthe Bonamy",
+      "Łukasz Bożyk",
+      "Andrzej Grzesik",
+      "Meike Hatzel",
+      "Tomáš Masařík",
+      "Jana Novotná",
+      "Karolina Okrasa"
+    ],
+    "published": "2022-08-10",
+    "abs_url": "https://arxiv.org/abs/2105.09871",
+    "source": "html"
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "review_id": "2103.05998__00",
+  "safe_id": "2103.05998",
+  "arxiv_id": "2103.05998",
+  "conjecture_title": "Informal Conjecture on Chromatic Number of $G_{m,t}$",
+  "paper_title": "Hitting all maximum independent sets",
+  "published": "2021-04-04",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Alon's paper establishes that the chromatic number of $G_{m,t}$ (for $4t^2 \\leq m$) lies between $2t$ and $O(t^2)$, and the conjecture that it equals $\\Theta(t^2)$ remains open. Several papers have cited the 2021 paper for its main hitting-set result, but none found address the specific chromatic number question. This side conjecture, though stated as one raised more than ten years ago, has no resolved follow-up in the indexed literature.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Alon \"hitting all maximum independent sets\" chromatic number G_{m,t} 2103.05998",
+    "chromatic number \"maximum independent sets\" \"G_{m,t}\" Theta t^2 graph theory",
+    "Alon 2103.05998 \"chromatic number\" site:arxiv.org citation 2022 2023 2024 2025",
+    "\"hitting all maximum independent sets\" Alon cite arxiv 2022 2023 2024 2025"
+  ],
+  "notes": "The conjecture concerns the chromatic number of the specific graph $G_{m,t}$ constructed in the proof of Theorem 1.4, as a side problem to the main hitting-set result. Papers citing arXiv:2103.05998 found in search (e.g., arXiv:2302.04986 on P5-free graphs, arXiv:2403.19737 on piercing independent sets) address the hitting-set aspect of the paper, not the chromatic number conjecture. No follow-up resolving the $\\Theta(t^2)$ conjecture was found."
+}

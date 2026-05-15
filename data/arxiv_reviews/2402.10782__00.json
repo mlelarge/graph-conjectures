@@ -1,0 +1,22 @@
+{
+  "review_id": "2402.10782__00",
+  "safe_id": "2402.10782",
+  "arxiv_id": "2402.10782",
+  "conjecture_title": "Conjecture 4.2",
+  "paper_title": "Finding forest-orderings of tournaments is NP-complete",
+  "published": "2026-01-23",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 4.2 asks for a function f and polynomial-time approximation scheme that, given a tournament T and integer k, either certifies the tournament clique number satisfies $\\overrightarrow{\\omega}(T)\\geq k$ or finds an ordering $\\prec$ with $\\omega(T^{\\prec})\\leq f(k)$. The k=3 case was settled (with a constant bound) by Aboulker, Aubian, Charbit, and Thomassé (personal communication cited as [2] in the source paper), but the general case for all k remains open. No follow-up papers resolving or partially resolving the general conjecture were found in a broad web search conducted in May 2026, consistent with the conjecture being only ~4 months old.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Aboulker Aubian Lopes tournament forest-ordering approximation clique polynomial-time 2402.10782",
+    "tournament ordering omega approximation algorithm \"forest-ordering\" clique number 2024 2025",
+    "arxiv \"2402.10782\" cite tournament clique approximation OR \"Aboulker Aubian Lopes\" tournament omega ordering 2025 2026"
+  ],
+  "notes": "The conjecture was posed in the concluding section (Section 4) of arXiv:2402.10782 (last revised 2026-01-23). The k=3 base case is established by an unpublished personal communication (Aboulker, Aubian, Charbit, Thomassé), not a public paper. No published or arXiv follow-up addressing the general case was found within the 5-call web search budget. The closely related paper arXiv:2310.04265 ('Clique number of tournaments') introduces the $\\overrightarrow{\\omega}$ notation and its relation to dichromatic number, and arXiv:2401.07776 ('Computing the clique number of tournaments') addresses computational aspects, but neither appears to resolve Conjecture 4.2."
+}

@@ -1,0 +1,34 @@
+{
+  "review_id": "1510.06964__00",
+  "safe_id": "1510.06964",
+  "arxiv_id": "1510.06964",
+  "conjecture_title": "Open case: WSK algorithm on the triangular lattice for q=5",
+  "paper_title": "On a conjecture of Mohar concerning Kempe equivalence of regular graphs",
+  "published": "2016-09-22",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "medium",
+  "summary": "The question of whether all 5-colourings of the triangular lattice (with periodic boundary conditions) form a single Kempe class — equivalently whether the WSK algorithm is ergodic for q=5 — was explicitly left open in arXiv:1510.06964. A 2022 preprint by Salas and Sokal (arXiv:2206.13126) proves WSK ergodicity for q≥5 on Eulerian triangulations of the torus satisfying certain structural conditions; since the triangular lattice is a 6-regular Eulerian triangulation of the torus, this is a significant adjacent result, but the abstract does not explicitly confirm that the standard triangular lattice satisfies the paper's conditions for q=5. No paper was found that unambiguously and completely settles the conjecture.",
+  "since_posted": [
+    {
+      "title": "Ergodicity of the Wang--Swendsen--Kotecký algorithm on several classes of lattices on the torus",
+      "authors": "Jesús Salas, Alan D. Sokal",
+      "year": 2022,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2206.13126",
+      "arxiv_id": "2206.13126",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves WSK ergodicity for q≥5 on Eulerian triangulations of the torus meeting certain structural conditions, an adjacent result that may encompass the standard triangular lattice but does not explicitly confirm it."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Wang-Swendsen-Kotecky algorithm triangular lattice q=5 colorings Kempe class",
+    "Kempe equivalence 5-colorings triangular lattice Bonamy Bousquet Feghali Johnson 1510.06964",
+    "WSK algorithm ergodicity q=5 triangular lattice 5-colorings Kempe class resolved 2020 2021 2022 2023 2024"
+  ],
+  "notes": "arXiv:2206.13126 (Salas--Sokal 2022) is the most relevant post-2016 paper found; it establishes WSK ergodicity for q≥5 on Eulerian triangulations under certain conditions. The triangular lattice is 6-regular and Eulerian, making it a natural candidate, but the WebFetch of the abstract indicated the triangular lattice is not explicitly mentioned as a covered case. No separate paper resolving the q=5 triangular lattice case was found."
+}

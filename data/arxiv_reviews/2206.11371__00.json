@@ -1,0 +1,33 @@
+{
+  "review_id": "2206.11371__00",
+  "safe_id": "2206.11371",
+  "arxiv_id": "2206.11371",
+  "conjecture_title": "Informal Conjecture on R(n;r,s) vs R'(n;r,s) near Turán density",
+  "paper_title": "Set-coloring Ramsey numbers via codes",
+  "published": "2022-06-22",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "medium",
+  "summary": "The informal conjecture that R(n;r,s) ≈ R'(n;r,s) when s/r is near the Turán density 1−1/(n−1) has not been explicitly resolved, but the same group of authors published a follow-up (arXiv:2305.14132) that studies R(n;r,s) precisely in the intermediate range where s/r is close to 1−1/(n−1) by connecting it to the maximum size of error-correcting codes near the zero-rate threshold — the same coding-theoretic quantity that defines R'. This provides partial progress towards the belief, but a precise comparison R(n;r,s) ≈ R'(n;r,s) has not been confirmed in the verified literature.",
+  "since_posted": [
+    {
+      "title": "Set-coloring Ramsey numbers and error-correcting codes near the zero-rate threshold",
+      "authors": "David Conlon, Jacob Fox, Xiaoyu He, Dhruv Mubayi, Andrew Suk, Jacques Verstraete",
+      "year": 2023,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2305.14132",
+      "arxiv_id": "2305.14132",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves bounds on R(n;r,s) when s/r is close to the Turán density 1−1/(n−1) by establishing a connection to the maximum size of error-correcting codes near the zero-rate threshold, directly relevant to the regime where R and R' are conjectured to be close."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "set-coloring Ramsey numbers R(n;r,s) R'(n;r,s) Turán density Conlon Fox He Mubayi Suk Verstraete 2206.11371",
+    "set-coloring Ramsey R'(n;r,s) chromatic number color class cite 2206.11371 follow-up 2023 2024"
+  ],
+  "notes": "R'(n;r,s) is defined in the source paper as the minimum N such that every (r,s)-coloring of K_N yields a color class with chromatic number at least n; it equals A_{n-1}(r,s)+1 where A_{n-1}(r,s) is the maximum size of an (n−1)-ary error-correcting code of length r and distance r−s. The follow-up arXiv:2305.14132 connects R(n;r,s) to this same coding quantity in the Turán-density regime, constituting indirect partial evidence for the conjecture, but does not explicitly prove R≈R'. No paper was found that directly states and resolves this informal conjecture."
+}

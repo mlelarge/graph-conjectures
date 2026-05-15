@@ -1,0 +1,22 @@
+{
+  "review_id": "2204.12330__00",
+  "safe_id": "2204.12330",
+  "arxiv_id": "2204.12330",
+  "conjecture_title": "Informal Conjecture (uniform twin-width strictly stronger than twin-width)",
+  "paper_title": "Twin-width VII: groups",
+  "published": "2022-07-15",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The conjecture that uniform twin-width is strictly stronger than twin-width — i.e., that there exist groups with finite twin-width but infinite uniform twin-width — remains open as of 2026. The group of finitely supported permutations on \\(\\mathbb{Z}\\) is proposed in the source paper as a candidate witness, but its uniform twin-width status has not been determined. A wide search of the literature citing arXiv:2204.12330 found no follow-up paper claiming progress on this specific question.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "uniform twin-width groups finite infinite Bonnet Geniet Tessera Thomassé arXiv 2204.12330",
+    "\"uniform twin-width\" groups \"permutation width\" conjecture 2022 2023 2024 2025",
+    "\"twin-width\" groups \"uniform twin-width\" \"finitely supported permutations\" 2023 2024 2025 2026"
+  ],
+  "notes": "Semantic Scholar lists ~20 papers citing arXiv:2204.12330; none found to address the uniform-vs-plain twin-width separation. The Poisson-boundary paper on lampshuffler groups (arXiv:2307.08878) cites the source paper but does not discuss twin-width. The conjecture is approximately 4 years old and no resolution was detected."
+}

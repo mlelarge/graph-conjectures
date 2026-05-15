@@ -1,0 +1,28 @@
+[
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Problem 1 (Question 3 in [5])",
+    "statement_text": "Is it true that $\\chi'_c(G) \\leq \\Delta + 1$ for each graph $G$ of maximum degree $\\Delta$?",
+    "context_text": "The paper proves that $\\chi'_c(G) \\leq 4$ for subcubic graphs (Theorem 3) via a reachability argument on Kempe chains, but the authors could not push the induction through to answer this question in full generality. The question was originally posed as Question 3 in reference [5].",
+    "attributed_to": "authors of reference [5]",
+    "attributed_year": null,
+    "paper_contribution": "Proves the special case $\\chi'_c(G) \\leq 4$ when $G$ has maximum degree at most 3 (i.e., $\\Delta + 1 = 4$), via a reachability lemma for Kempe chains (Theorem 3 and Lemma 7).",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Reference [5] is not identified by author name in the provided text; attributed year is unknown. PDF source — math notation cross-checked against prose description and appears clean.",
+    "arxiv_id": "2012.13916",
+    "paper_title": "A note on connected greedy edge colouring",
+    "paper_authors": [
+      "Marthe Bonamy",
+      "Carla Groenland",
+      "Carole Muller",
+      "Jonathan Narboni",
+      "Jakub Pekárek",
+      "Alexandra Wesolek"
+    ],
+    "published": "2020-12-27",
+    "abs_url": "https://arxiv.org/abs/2012.13916",
+    "source": "pdf"
+  }
+]

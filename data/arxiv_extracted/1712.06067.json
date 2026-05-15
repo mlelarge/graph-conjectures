@@ -1,0 +1,25 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Tomescu's Conjecture",
+    "statement_text": "For every connected graph $G$ on $n$ vertices with chromatic number $k \\geq 4$, $$P_G(k) \\leq k!(k-1)^{n-k},$$ with equality if and only if the 2-core of $G$ is a $k$-clique (i.e., $G$ is formed by attaching a tree to each vertex of the complete graph $K_k$).",
+    "context_text": "Tomescu posed this upper bound on the chromatic polynomial in 1971. The inequality is easily verified when $G$ contains a $k$-clique, and Tomescu further conjectured that equality characterises exactly those graphs whose 2-core is a $k$-clique. The condition $k \\geq 4$ is necessary: for $k=2$ equality holds for all connected bipartite graphs, while for $k=3$ the bound fails for odd cycles of length at least five.",
+    "attributed_to": "Tomescu",
+    "attributed_year": 1971,
+    "paper_contribution": "Proves the full conjecture for all $k \\geq 4$ and establishes the equality characterisation, completing the proof after Knox and Mohar had previously settled the cases $k=4$ and $k=5$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1712.06067",
+    "paper_title": "A proof of Tomescu's graph coloring conjecture",
+    "paper_authors": [
+      "Jacob Fox",
+      "Xiaoyu He",
+      "Freddie Manners"
+    ],
+    "published": "2018-10-19",
+    "abs_url": "https://arxiv.org/abs/1712.06067",
+    "source": "pdf"
+  }
+]

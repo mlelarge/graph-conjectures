@@ -1,0 +1,22 @@
+{
+  "review_id": "2410.23566__02",
+  "safe_id": "2410.23566",
+  "arxiv_id": "2410.23566",
+  "conjecture_title": "Problem 8",
+  "paper_title": "Blow-ups and extensions of trees in tournaments",
+  "published": "2024-10-31",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Problem 8 asks for the infimum of all constants C such that for every large enough n, the k-blow-up of every oriented tree of order n is (C^k · kn)-unavoidable. The paper establishes via Theorem 18 an upper bound of the form 2^(10+18k) · kn, which the authors acknowledge is far from tight; the maximum average degree of the k-blow-up of a tree of order n (equal to 2k − 2k/n) together with Proposition 2 gives a lower bound showing the optimal exponent is 2^Θ(k) · kn, but the precise constant C remains open. No follow-up paper resolving the exact infimum was found in the literature.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "blow-up oriented tree tournament unavoidable k-blow-up arXiv 2410.23566",
+    "k-blow-up oriented tree unavoidable tournament constant Aboulker Havet Lopes 2025",
+    "blow-up oriented tree tournament unavoidable exponential constant 2025 arxiv Picasarri-Arrieta Rambaud"
+  ],
+  "notes": "No follow-up found. The problem is recent (October 2024). The paper itself establishes that the optimal unavoidability constant is of the form 2^Θ(k) · kn, narrowing the question to the base of the exponential, but the infimum of C in C^k · kn is not yet determined. Lucas Picasarri-Arrieta's 2025 publications do not include a follow-up on this specific problem."
+}

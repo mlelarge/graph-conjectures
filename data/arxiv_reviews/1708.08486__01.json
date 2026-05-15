@@ -1,0 +1,23 @@
+{
+  "review_id": "1708.08486__01",
+  "safe_id": "1708.08486",
+  "arxiv_id": "1708.08486",
+  "conjecture_title": "Conjecture (Theorem 2 extends to primes p < 19)",
+  "paper_title": "Popular progression differences in vector spaces II",
+  "published": "2019-11-21",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The conjecture asks whether the tower-height bounds on $n_p(\\alpha,\\beta)$ from Theorem 2 of arXiv:1708.08486 extend from primes $p \\geq 19$ to all primes $p < 19$. The obstacle identified by the authors is that, in the large-$\\varepsilon$ regime ($\\varepsilon = \\alpha^3 - \\beta$ large), the best known upper bounds on the largest subset of $\\mathbb{F}_p^n$ without a three-term arithmetic progression are not strong enough to drive the required lower bound for small primes. No subsequent paper resolving this conjecture was found across the indexed literature as of May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Fox Pham \"popular progression differences\" vector spaces primes cap set three-term arithmetic progression",
+    "arXiv 1708.08486 Fox Pham \"n_p\" tower height prime p<19 three-term progression F_p^n",
+    "cap set bounds F_p^n three-term arithmetic progression p small primes 2 3 5 7 tower height 2020 2021 2022 2023 2024 2025",
+    "\"popular progression differences\" Fox Pham primes \"p < 19\" OR \"small primes\" extension 2020 2021 2022 2023 2024 2025 2026"
+  ],
+  "notes": "No follow-up resolving the conjecture for primes p < 19 was found. The 2026 paper arXiv:2605.13628 (Conlon, Fox, Pham) addresses arithmetic progressions with restricted differences via Tao's slice rank method but does not address the tower-height conjecture for small primes. Progress on cap set bounds (e.g., arXiv:2401.12802, Ellenberg-Gijswijt-type improvements) has continued, but none of the surveyed results appear to close the gap for the large-epsilon regime in the small-prime case."
+}

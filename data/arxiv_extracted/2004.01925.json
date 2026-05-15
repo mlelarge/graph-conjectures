@@ -1,0 +1,23 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1 (Harutyunyan–Mohar)",
+    "statement_text": "Let $D$ be a digraph of digirth at least $3$ and maximum degree $\\Delta$. Then $\\vec{\\chi}(D) \\leq \\left\\lceil \\frac{\\tilde{\\Delta}(D)}{2} \\right\\rceil + 1 \\leq \\left\\lceil \\frac{\\Delta}{4} \\right\\rceil + 1$.",
+    "context_text": "The conjecture claims that the Brooks-type bound $\\vec{\\chi}(D) \\leq \\lceil \\frac{\\Delta}{2} \\rceil$ for digraphs of digirth at least 3 can be improved by a factor of 2 when directed 2-cycles are forbidden. Here $\\tilde{\\Delta}(D) = \\max\\{\\sqrt{d^+(v)d^-(v)} \\mid v \\in V(D)\\}$ is the maximum geometric mean of in- and out-degree. Harutyunyan and Mohar proved a weaker $(1-\\varepsilon)\\tilde{\\Delta}(D)$ bound; Golowich subsequently showed $\\vec{\\chi}(D) \\leq \\frac{2}{5}\\Delta(D) + O(1)$.",
+    "attributed_to": "Harutyunyan and Mohar",
+    "attributed_year": 2011,
+    "paper_contribution": "Proves that for every integer $g \\geq 2$, every digraph $D$ with digirth at least $2g-1$ and maximum degree $\\Delta$ satisfies $\\vec{\\chi}(D) \\leq \\left(\\frac{1}{3} + \\frac{1}{3g}\\right)\\Delta + (g+1)$, improving Golowich's multiplicative constant for digraphs of digirth at least $11$ (i.e.\\ $g \\geq 6$).",
+    "opg_lookup": true,
+    "confidence": "low",
+    "notes": "PDF source — math notation partially garbled in extraction; statement reconstructed from context in abstract and body. The ceiling notation appeared as 'l m' artifacts in the raw PDF text.",
+    "arxiv_id": "2004.01925",
+    "paper_title": "A Note on Coloring Digraphs of Large Girth",
+    "paper_authors": [
+      "Raphael Steiner"
+    ],
+    "published": "2020-04-04",
+    "abs_url": "https://arxiv.org/abs/2004.01925",
+    "source": "pdf"
+  }
+]

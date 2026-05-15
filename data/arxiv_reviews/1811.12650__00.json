@@ -1,0 +1,23 @@
+{
+  "review_id": "1811.12650__00",
+  "safe_id": "1811.12650",
+  "arxiv_id": "1811.12650",
+  "conjecture_title": "Informal: Δ = o(n) condition not necessary for Corollary 2",
+  "paper_title": "Frozen $(Δ+1)$-colourings of bounded degree graphs",
+  "published": "2018-11-30",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The informal remark that the condition $\\Delta = o(n)$ in Corollary 2 is probably not necessary has not been addressed in the literature found. The broader area of Glauber dynamics for graph colourings has seen major advances (spectral independence, high-dimensional expansion) since 2018, but these developments focus on the regime $k \\geq \\Delta+2$ or $k \\geq (11/6)\\Delta$ and do not directly address the almost-uniform sampling question for exactly $\\Delta+1$ colours under weaker degree assumptions. No follow-up paper specifically resolving or refuting this informal conjecture was found.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Bonamy Bousquet Perarnau frozen colourings Glauber dynamics Delta+1 colourings 1811.12650",
+    "Glauber dynamics Delta+1 graph colourings mixing time bounded degree rapid mixing 2020 2021 2022 2023 2024",
+    "frozen colourings almost uniform sampler Delta+1 colourings delta = o(n) graph sampling Bonamy Bousquet",
+    "Glauber dynamics (Delta+1)-colourings mixing time uniformly random colouring sampling 2020 2021 2022 2023 2024 2025"
+  ],
+  "notes": "This is an informal remark (not a numbered conjecture) appearing immediately after Corollary 2 in arXiv:1811.12650. The authors suggest the $\\Delta = o(n)$ hypothesis is likely an artifact of the proof technique used to show that a uniformly random $( \\Delta+1)$-colouring is almost certainly not frozen, enabling Glauber dynamics to serve as an almost-uniform sampler. The $\\Delta+1$ colouring regime is known to behave very differently from $k \\geq \\Delta+2$ (mixing time can be exponential in the worst case), which may explain why this specific remark has not attracted dedicated follow-up. No follow-up found in the indexed literature."
+}

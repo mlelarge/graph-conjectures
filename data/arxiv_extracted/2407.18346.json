@@ -1,0 +1,26 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Sadhukhan's Conjecture",
+    "statement_text": "There are graphs with large girth that do not admit KT orientations.",
+    "context_text": "Prior to this work, all known examples of graphs without a KT orientation contained cycles of length at most five. Sadhukhan conjectured that girth alone does not prevent the existence of graphs with no KT orientation, motivating the construction in Section 4 of the paper.",
+    "attributed_to": "Sadhukhan",
+    "attributed_year": 2024,
+    "paper_contribution": "Settles the conjecture affirmatively by constructing explicit graphs of arbitrarily large girth that admit no KT orientation.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "Stated in prose in the introduction with citation [sadhukhan2024shift]; no labelled theorem environment.",
+    "arxiv_id": "2407.18346",
+    "paper_title": "Orientations of graphs with at most one directed path between every pair of vertices",
+    "paper_authors": [
+      "Barbora Dohnalová",
+      "Jiří Kalvoda",
+      "Gaurav Kucheriya",
+      "Sophie Spirkl"
+    ],
+    "published": "2024-07-25",
+    "abs_url": "https://arxiv.org/abs/2407.18346",
+    "source": "html"
+  }
+]

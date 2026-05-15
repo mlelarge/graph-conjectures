@@ -1,0 +1,51 @@
+{
+  "review_id": "1610.00876__03",
+  "safe_id": "1610.00876",
+  "arxiv_id": "1610.00876",
+  "conjecture_title": "Conjecture 11",
+  "paper_title": "Subdivisions in digraphs of large out-degree or large dichromatic number",
+  "published": "2016-10-04",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "solved",
+  "confidence": "medium",
+  "summary": "Conjecture 11 states that for every oriented tree T of order k, mader_chi(T) <= 2k-2. The 2020 paper arXiv:2008.09888 (Gishboliner, Steiner, Szabó) proves the stronger result mader_chi(F) = v(F) for all orientations of cactus graphs (Corollary 8 per internal references); since every tree is a cactus graph (trees have no cycles, so the cactus condition is vacuously satisfied), this implies mader_chi(T) = k <= 2k-2 for every oriented tree T of order k >= 2, resolving Conjecture 11. The abstract of 2008.09888 confirms results for orientations of cactus graphs and bioriented forests, consistent with this claim.",
+  "since_posted": [
+    {
+      "title": "Dichromatic number and forced subdivisions",
+      "authors": "Lior Gishboliner, Raphael Steiner, Tibor Szabó",
+      "year": 2020,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2008.09888",
+      "arxiv_id": "2008.09888",
+      "doi": null,
+      "kind": "proof",
+      "claim": "Proves mader_chi(F) = v(F) for every octus digraph F (Theorem 7) and every orientation of a cactus graph (Corollary 8); since trees are special cases of cactus graphs, this resolves Conjecture 11 with the sharper equality mader_chi(T) = k, which in particular satisfies the conjectured bound k <= 2k-2."
+    }
+  ],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2008.13224",
+      "verified": true,
+      "note": "Abstract confirms the paper proves that every digraph with sufficiently large minimum out-degree contains a subdivision of every orientation of any cycle of length ell; this concerns mader_{delta+} (min-out-degree forcing), not mader_chi (dichromatic-number forcing). The conflicting internal references were each attributing contributions from different conjectures in the source paper to this single arXiv entry; Conjecture 11 (oriented trees, dichromatic number) is not directly addressed."
+    },
+    {
+      "arxiv_id": "2008.09888",
+      "verified": true,
+      "note": "Abstract confirms results extended to orientations of cactus graphs and bioriented forests. Internal references (fuzz 75 and 70) assert Corollary 8 covers every orientation of a cactus graph with mader_chi(F) = v(F); since trees are cactus graphs this resolves Conjecture 11. Confidence is medium because the full paper text was not accessible via WebFetch."
+    },
+    {
+      "arxiv_id": "2202.01006",
+      "verified": false,
+      "note": "Not fetched; internal reference (fuzz 69) states the paper recalls Conjecture 11 as broader context without making direct progress."
+    }
+  ],
+  "search_queries": [
+    "mader_chi oriented tree order k dichromatic number subdivision arXiv 1610.00876",
+    "WebFetch https://arxiv.org/abs/2008.09888",
+    "WebFetch https://arxiv.org/abs/2008.13224",
+    "WebFetch https://arxiv.org/abs/2210.06247"
+  ],
+  "notes": "Trees are special cases of cactus graphs (a cactus graph is connected with every edge on at most one simple cycle; trees have no cycles, so they satisfy this vacuously). If arXiv:2008.09888 Corollary 8 proves mader_chi(F) = v(F) for every orientation of a cactus graph, Conjecture 11 is resolved with the sharper bound mader_chi(T) = k. Confidence is medium rather than high because the full PDF was unreadable via WebFetch and the conclusion rests on the abstract wording plus two internal-reference entries (fuzz 75 and 70) that agree on the cactus-graph corollary. A follow-up paper arXiv:2210.06247 (2022, 'Some Mader-perfect graph classes') extends the Mader-perfect class beyond octi digraphs but was not directly verified against Conjecture 11."
+}

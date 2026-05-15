@@ -1,0 +1,77 @@
+[
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Informal Conjecture (Introduction) — analogue of Kneser's theorem",
+    "statement_text": "Maybe something like [the bound in 1.3 being always best possible] is true: for all $x, y \\in (0, 1]$, there is an integer $k > 0$ with $\\phi(x, y) = \\frac{\\lceil kx \\rceil + \\lceil ky \\rceil - 1}{k}$.",
+    "context_text": "The authors were motivated by Kneser's theorem from additive group theory and originally entertained a 'wild conjecture' that the upper bound in 1.3 is always tight. This conjecture is stated to be false, but the authors suggest that something like it may still be true, leaving the correct characterisation of $\\phi(x,y)$ open.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "low",
+    "notes": "The 'wild conjecture' itself is explicitly stated to be false; only the informal residual belief 'maybe something like it is true' survives as an open direction. PDF source — math notation garbled in extraction (e.g. the formula for 1.3 reads as '⌈kx⌉ + 1 ⌉ − ky⌈ k' in the raw text).",
+    "arxiv_id": "1902.10878",
+    "paper_title": "Concatenating bipartite graphs",
+    "paper_authors": [
+      "Maria Chudnovsky",
+      "Patrick Hompe",
+      "Alex Scott",
+      "Paul Seymour",
+      "Sophie Spirkl"
+    ],
+    "published": "2020-12-07",
+    "abs_url": "https://arxiv.org/abs/1902.10878",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Open Question — symmetry of $\\psi$ (biconstrained case)",
+    "statement_text": "Does $\\psi(x, y) = \\psi(y, x)$ hold for all $x, y \\in (0, 1]$?",
+    "context_text": "The authors prove Theorem 2.3: $\\phi(x,y) = \\phi(y,x)$ for all $x,y \\in (0,1]$, via a linear-programming argument. They remark immediately after that they have been unable to establish the analogous symmetry for the biconstrained function $\\psi$, even though they have no counterexample.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated as a prose remark following Theorem 2.3: 'we have not been able to prove an analogue of 2.3 for the biconstrained case, or for the exact case, although we have no counterexample for either one.' No labelled theorem environment.",
+    "arxiv_id": "1902.10878",
+    "paper_title": "Concatenating bipartite graphs",
+    "paper_authors": [
+      "Maria Chudnovsky",
+      "Patrick Hompe",
+      "Alex Scott",
+      "Paul Seymour",
+      "Sophie Spirkl"
+    ],
+    "published": "2020-12-07",
+    "abs_url": "https://arxiv.org/abs/1902.10878",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Open Question — symmetry of $\\xi$ (exact case)",
+    "statement_text": "Does $\\xi(x, y) = \\xi(y, x)$ hold for all $x, y \\in (0, 1]$?",
+    "context_text": "Alongside the biconstrained question, the authors note that the symmetry $\\phi(x,y)=\\phi(y,x)$ has not been proved for the exact function $\\xi$ either. They have no counterexample, and remark that one might hope $\\xi$ (the 'nicest' of the three functions) is better-behaved than $\\phi$.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated as a prose remark following Theorem 2.3: 'we have not been able to prove an analogue of 2.3 for the biconstrained case, or for the exact case, although we have no counterexample for either one.' No labelled theorem environment. The full paper text was truncated at Section 3, so additional labelled conjectures/questions later in the paper may not be captured here.",
+    "arxiv_id": "1902.10878",
+    "paper_title": "Concatenating bipartite graphs",
+    "paper_authors": [
+      "Maria Chudnovsky",
+      "Patrick Hompe",
+      "Alex Scott",
+      "Paul Seymour",
+      "Sophie Spirkl"
+    ],
+    "published": "2020-12-07",
+    "abs_url": "https://arxiv.org/abs/1902.10878",
+    "source": "pdf"
+  }
+]

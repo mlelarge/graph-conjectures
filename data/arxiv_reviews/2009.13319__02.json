@@ -1,0 +1,55 @@
+{
+  "review_id": "2009.13319__02",
+  "safe_id": "2009.13319",
+  "arxiv_id": "2009.13319",
+  "conjecture_title": "Conjecture 4.4",
+  "paper_title": "Extension of Gyarfas-Sumner conjecture to digraphs",
+  "published": "2020-09-28",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "medium",
+  "summary": "Conjecture 4.4 — that $\\{\\overleftrightarrow{K_2}, K_k, F\\}$ is heroic for every oriented forest $F$ and every integer $k$ — remains open in full generality. Two follow-up papers from the curated corpus establish special cases: arXiv:2103.07886 handles $F = S_2^+$ (oriented star with two out-edges) and arXiv:2212.02272 handles $F = \\overrightarrow{P}_6$ with the clique constraint $\\omega \\le 2$ (triangle-free). A separate paper (arXiv:2202.13306) is noted to disprove a conjecture of Aboulker, Charbit, and Naserasr in the context of heroes in oriented complete multipartite graphs, but its abstract does not specify which conjecture from the source paper, so it is not attributed to Conjecture 4.4 here.",
+  "since_posted": [
+    {
+      "title": "Decomposing and colouring some locally semicomplete digraphs",
+      "authors": "Pierre Aboulker, Guillaume Aubian, Pierre Charbit",
+      "year": 2022,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2103.07886",
+      "arxiv_id": "2103.07886",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves the conjecture for the special case $F = S_2^+$: every locally out-transitive oriented graph has dichromatic number at most 2 (Theorem 3.2), which corresponds to $\\{\\overleftrightarrow{K_2}, K_k, S_2^+\\}$ being heroic."
+    },
+    {
+      "title": "(P6, triangle)-free digraphs have bounded dichromatic number",
+      "authors": "Pierre Aboulker, Guillaume Aubian, Pierre Charbit, Stéphan Thomassé",
+      "year": 2023,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2212.02272",
+      "arxiv_id": "2212.02272",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves the conjecture for the special case $F = \\overrightarrow{P}_6$ with $k = 3$ (triangle-free digraphs): every $\\overrightarrow{P}_6$-free digraph with $\\omega(D) \\le 2$ has dichromatic number at most 382 (Theorem 1.3)."
+    }
+  ],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2103.07886",
+      "verified": true,
+      "note": "Abstract confirms the paper addresses a conjecture of Naserasr and the first and third authors (Aboulker, Charbit), consistent with 2009.13319. The WebFetch model could not extract the full special-case claim from the abstract alone; the contribution description from the internal reference corpus is accepted."
+    },
+    {
+      "arxiv_id": "2212.02272",
+      "verified": true,
+      "note": "Abstract confirmed: proves that oriented graphs with no induced $\\overrightarrow{P}_6$ and no triangle have bounded dichromatic number, referencing the general conjecture of Aboulker, Charbit, and Naserasr. Duplicated internal reference (fuzz=65 entry) is the same paper; merged."
+    }
+  ],
+  "search_queries": [
+    "oriented forest heroic dichromatic Aboulker Charbit Naserasr 2009.13319",
+    "heroic set digraph oriented forest transitive tournament dichromatic number"
+  ],
+  "notes": "arXiv:2202.13306 ('Heroes in oriented complete multipartite graphs', Aboulker et al., 2022) was found in search results and its abstract states it disproves a conjecture of Aboulker, Charbit, and Naserasr; however, the abstract specifies the result is about heroes in oriented complete multipartite graphs — likely a different structural conjecture from the same source paper — and the abstract does not name Conjecture 4.4 specifically. It is therefore excluded from since_posted pending full-text verification. The Electronic Journal of Combinatorics paper 'Proving a Directed Analogue of the Gyárfás-Sumner Conjecture for Orientations of P4' appeared in search results and may constitute additional partial progress (F = oriented P4), but could not be verified within the 5-call budget."
+}

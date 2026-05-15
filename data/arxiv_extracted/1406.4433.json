@@ -1,0 +1,25 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture of Aldous, McDiarmid and Scott [4]",
+    "statement_text": "For the $d$-dimensional hypercube $Q_d$ with independent random edge-capacities each distributed like $C$, the limiting optimal uniform multicommodity flow volume depends only on $E[C]$ (and not on the full distribution of $C$).",
+    "context_text": "Aldous, McDiarmid and Scott [4] studied uniform multicommodity flows in the complete graph with random edge-capacities and posed a conjecture about the hypercube case. The present paper notes that capacity required for 'local escape' near a source is much less than that required for efficient long-path flows, making the limiting flow value depend only on $E[C]$, which the authors describe as establishing a strong form of this conjecture.",
+    "attributed_to": "Aldous, McDiarmid and Scott",
+    "attributed_year": null,
+    "paper_contribution": "Proves a strong form of this conjecture by establishing $\\Phi_{\\mathrm{opp}} \\to E[C]$ and $2^{d-1}\\Phi_{\\mathrm{all}} \\to E[C]$ both in probability and in expectation as $d \\to \\infty$, under the conditions $E[C] < \\infty$ and $P[C > 0] > 1/2$ (Theorems 1 and 2).",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "The exact statement of the conjecture from [4] is not reproduced verbatim in the paper; the statement above is reconstructed from the surrounding context. PDF source — math may be garbled.",
+    "arxiv_id": "1406.4433",
+    "paper_title": "Uniform multicommodity flow in the hypercube with random edge capacities",
+    "paper_authors": [
+      "Colin McDiarmid",
+      "Alex Scott",
+      "Paul Withers"
+    ],
+    "published": "2016-03-31",
+    "abs_url": "https://arxiv.org/abs/1406.4433",
+    "source": "pdf"
+  }
+]

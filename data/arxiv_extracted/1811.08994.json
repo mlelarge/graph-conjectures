@@ -1,0 +1,46 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Alon et al. Conjecture on Separation Dimension and Maximum Degree",
+    "statement_text": "Every graph with maximum degree $\\Delta$ has separation dimension $O(\\Delta)$.",
+    "context_text": "Chandran et al. proved an upper bound of $2\\Delta(\\lceil\\log_2\\log_2\\Delta\\rceil+3)+1$, and Alon et al. improved this to $29\\log^*(\\Delta)\\cdot\\Delta$. Alon et al. conjectured that a linear bound $O(\\Delta)$ should hold. The present paper proves this conjecture, showing the bound $20\\Delta$ is best possible up to a constant factor.",
+    "attributed_to": "Alon et al.",
+    "attributed_year": 2015,
+    "paper_contribution": "Proves the conjecture by establishing that every graph with maximum degree $\\Delta > 1$ has separation dimension less than $20\\Delta$ (Theorem 1), which matches the known lower bound of $\\Delta/2$ for almost every $\\Delta$-regular graph up to a constant factor.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "Original conjecture statement reconstructed from prose description; no verbatim LaTeX available for the conjecture itself. PDF source — math may be garbled.",
+    "arxiv_id": "1811.08994",
+    "paper_title": "Separation Dimension and Degree",
+    "paper_authors": [
+      "Alex Scott",
+      "David R. Wood"
+    ],
+    "published": "2018-11-22",
+    "abs_url": "https://arxiv.org/abs/1811.08994",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Alon et al. Open Problem on Bounded Separation Dimension and Degeneracy",
+    "statement_text": "Do graphs with bounded separation dimension have bounded degeneracy (equivalently, bounded average degree)?",
+    "context_text": "Every graph with separation dimension at most 2 is planar and has average degree less than 6. For general $s > 3$, Alon et al. proved that $n$-vertex graphs with separation dimension $s$ have average degree $O(\\log^{s-2} n)$, and asked whether bounded separation dimension forces bounded degeneracy. The present paper addresses the first open case $s = 3$.",
+    "attributed_to": "Alon et al.",
+    "attributed_year": 2018,
+    "paper_contribution": "Partially resolves the problem by proving (Theorem 2) that there exists a constant $c$ such that every graph with separation dimension 3 has average degree at most $c$, and additionally that such graphs have bounded chromatic number.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "Problem described in prose without a labelled theorem environment. PDF source — full Section 4 proof text is truncated; additional conjectures or questions in the remainder of the paper may not be captured.",
+    "arxiv_id": "1811.08994",
+    "paper_title": "Separation Dimension and Degree",
+    "paper_authors": [
+      "Alex Scott",
+      "David R. Wood"
+    ],
+    "published": "2018-11-22",
+    "abs_url": "https://arxiv.org/abs/1811.08994",
+    "source": "pdf"
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Open Problem (Section 1.1)",
+    "statement_text": "It is an open problem whether some variation on the local search approach can give PTAS for all monotone FO optimization problems.",
+    "context_text": "Cabello–Gajser and Har-Peled–Quanrud showed that the trivial local search algorithm (performing bounded-size changes on an initial solution as long as it can be improved) gives PTASes for maximum independent set and minimum dominating set, as well as many related problems, on classes with strongly sublinear separators. The question is whether this approach, or a variation thereof, can be extended to cover all monotone first-order optimization problems on such classes.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated as prose ('It is an open problem whether…') in Section 1.1 without a labelled theorem environment; no prior attribution given. PDF source — remainder of paper text is cut off, so additional items later in the paper may be missing.",
+    "arxiv_id": "1901.01797",
+    "paper_title": "Baker game and polynomial-time approximation schemes",
+    "paper_authors": [
+      "Zdeněk Dvořák"
+    ],
+    "published": "2019-01-07",
+    "abs_url": "https://arxiv.org/abs/1901.01797",
+    "source": "pdf"
+  }
+]

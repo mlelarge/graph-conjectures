@@ -1,0 +1,24 @@
+{
+  "review_id": "1703.07871__00",
+  "safe_id": "1703.07871",
+  "arxiv_id": "1703.07871",
+  "conjecture_title": "Conjecture 3",
+  "paper_title": "Burling graphs, chromatic number, and orthogonal tree-decompositions",
+  "published": "2018-01-29",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "Conjecture 3 from arXiv:1703.07871 asks whether the chromatic number of any graph admitting both a spaghetti tree-decomposition and a path-decomposition with pairwise bag intersections of size at most k is bounded by a function of k alone. The paper itself disproves the analogous statement for two general tree-decompositions (using Burling graph constructions), making this conjecture the natural boundary between positive and negative results. No follow-up paper resolving the conjecture — either by proving or disproving it — was found in five targeted web searches spanning the relevant literature up to 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "spaghetti tree-decomposition chromatic number path-decomposition conjecture Felsner Joret Micek Trotter Wiechert",
+    "Burling graphs orthogonal tree-decompositions chromatic number arxiv 1703.07871",
+    "\"spaghetti tree-decomposition\" chromatic number conjecture graph",
+    "Notes on Tree- and Path-chromatic Number arXiv 2002.05363 spaghetti",
+    "Huynh Reed Wood Yepremyan spaghetti tree-decomposition conjecture 1703.07871"
+  ],
+  "notes": "The paper disproves the two-tree-decomposition analogue of Asplund–Grünbaum using Burling graphs. Conjecture 3 proposes that restricting one decomposition to be a spaghetti tree-decomposition (where each vertex's bags form a directed path from the root) suffices to recover χ-boundedness. The related survey arXiv:2002.05363 (Huynh, Reed, Wood, Yepremyan, 'Notes on Tree- and Path-chromatic Number') covers the broader area but does not appear to address spaghetti tree-decompositions specifically. No resolution was found; the conjecture appears open as of May 2026."
+}

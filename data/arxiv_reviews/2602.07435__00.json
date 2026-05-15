@@ -1,0 +1,23 @@
+{
+  "review_id": "2602.07435__00",
+  "safe_id": "2602.07435",
+  "arxiv_id": "2602.07435",
+  "conjecture_title": "Problem 9",
+  "paper_title": "Cops and robber in graphs with bounded vertex cover number",
+  "published": "2026-02-07",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Problem 9 asks whether cop(G) = o(td(G)) for connected graphs G. The authors of arXiv:2602.07435 establish that cop(G) ≤ ½(td(G)+1) follows easily from existing bounds on cop number in terms of treewidth, and note that improving significantly on this linear bound appears difficult. No follow-up paper addressing this specific open problem was found in the three months since the paper was posted.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "cop number treedepth sublinear bound graphs 2026 arXiv",
+    "arXiv 2602.07435 cops robber vertex cover treedepth conjecture",
+    "cop number treedepth \"o(td)\" OR \"sublinear treedepth\" cops robbers graph 2025 2026",
+    "Bose Esperet Hodor Joret Micek Rambaud \"cops and robber\" treedepth 2026"
+  ],
+  "notes": "The conjecture is only about 3 months old as of the review date. The paper HTML confirms that cop(G) ≤ ½(td(G)+1) is the current best bound (derived from treewidth results), and that the authors view a sublinear improvement as an open challenge. Louis Esperet's publications page lists one related 2026 paper ('Coarse cops and robber in graphs and groups', arXiv:2502.15571) but that concerns a coarse-geometry variant unrelated to Problem 9. No evidence of any resolution was found."
+}

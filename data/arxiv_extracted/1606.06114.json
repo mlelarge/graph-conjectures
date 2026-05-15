@@ -1,0 +1,24 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.1 (Neumann-Lara)",
+    "statement_text": "Every oriented planar graph is 2-colourable.",
+    "context_text": "Proposed by Neumann-Lara in 1985 (and independently by Škrekovski), this conjecture asserts that the vertices of any oriented planar graph can be 2-coloured without creating any monochromatic directed cycle. There is a lack of methods to attack it and only sporadic partial results are known.",
+    "attributed_to": "Neumann-Lara (and independently Škrekovski)",
+    "attributed_year": 1985,
+    "paper_contribution": "Proves a relaxed version: every planar digraph of digirth at least 4 is 2-colourable (the previously known result required digirth at least 5).",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1606.06114",
+    "paper_title": "Planar digraphs of digirth four are 2-colourable",
+    "paper_authors": [
+      "Zhentao Li",
+      "Bojan Mohar"
+    ],
+    "published": "2016-06-20",
+    "abs_url": "https://arxiv.org/abs/1606.06114",
+    "source": "pdf"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Open problem: ordered Ramsey number of matchings vs triangles",
+    "statement_text": "What is the correct order of magnitude of $r_<(M, K_3)$ for an ordered matching $M$ on $n$ vertices? The paper can only prove the trivial upper bound $r_<(M, K_3) \\leq r_<(K_n, K_3) = O\\!\\left(\\frac{n^2}{\\log n}\\right)$, while the lower bound of Theorem 1.8 gives $r_<(M, K_3) \\geq c\\left(\\frac{n}{\\log n}\\right)^{4/3}$ for some ordered matching $M$ on $n$ vertices.",
+    "context_text": "The classical off-diagonal Ramsey number $r(K_n, K_3)$ is known up to an asymptotic factor of 4 thanks to Kim's result and improvements via triangle-free processes. For ordered matchings the authors identify the analogous ordered problem but can only close a gap between an exponent of $4/3$ (lower) and $2$ (upper) in the logarithmic scale.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "PDF source — math may be garbled; no explicit Problem/Question label; stated implicitly via 'we could only prove the trivial estimate'.",
+    "arxiv_id": "1410.5292",
+    "paper_title": "Ordered Ramsey numbers",
+    "paper_authors": [
+      "David Conlon",
+      "Jacob Fox",
+      "Choongbum Lee",
+      "Benny Sudakov"
+    ],
+    "published": "2016-04-25",
+    "abs_url": "https://arxiv.org/abs/1410.5292",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Open problem: true ordered Ramsey number of matchings",
+    "statement_text": "What is the true ordered Ramsey number of an ordered matching $M$ on $n$ vertices? Theorem 1.1 gives the lower bound $r_<(M) \\geq n^{c\\log n/\\log\\log n}$ for some labeling, while Theorem 1.2 gives $r_<(M) \\leq n^{\\lceil \\log n \\rceil}$; the authors describe the upper bound as 'almost matching' but the gap remains open.",
+    "context_text": "For ordinary matchings the Ramsey number is clearly linear, but for ordered matchings the paper shows the ordered Ramsey number can be superpolynomial. The precise exponent (between $c\\log n/\\log\\log n$ and $\\log n$) is not determined.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "low",
+    "notes": "PDF source — math may be garbled; no explicit Problem/Question environment; inferred from the 'almost matching' description of the two bounds. Sections 5–6 containing the explicit open-problem list are not present in the provided text.",
+    "arxiv_id": "1410.5292",
+    "paper_title": "Ordered Ramsey numbers",
+    "paper_authors": [
+      "David Conlon",
+      "Jacob Fox",
+      "Choongbum Lee",
+      "Benny Sudakov"
+    ],
+    "published": "2016-04-25",
+    "abs_url": "https://arxiv.org/abs/1410.5292",
+    "source": "pdf"
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "review_id": "2506.07264__02",
+  "safe_id": "2506.07264",
+  "arxiv_id": "2506.07264",
+  "conjecture_title": "Conjecture 9.2",
+  "paper_title": "Refinement of a conjecture on positive square energy of graphs",
+  "published": "2025-06-08",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 9.2 of arXiv:2506.07264 characterises the equality cases in the Elphick–Farber–Goldberg–Wocjan lower bound: s+(G)=n-1 if and only if G is a tree, and s-(G)=n-1 if and only if G is a tree or a complete graph. No follow-up paper resolving or partially resolving this conjecture was found in a search of the literature up to May 2026, roughly 11 months after the paper was posted.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "arxiv 2506.07264 positive square energy graphs Akbari Mohar",
+    "positive square energy graphs tree complete graph s+(G) s-(G) characterization 2025 2026",
+    "square energy graph s+(G) n-1 tree characterization equality case 2025 2026 arxiv"
+  ],
+  "notes": "No follow-up found. The conjecture is an open-problems section item (Section 9) of a June 2025 paper; related work on p-energies (arXiv:2604.15656, arXiv:2410.09830) addresses generalisations to p≠2 but not the specific equality characterisation for square energy. Absence of follow-up is consistent with the conjecture being very recent."
+}

@@ -1,0 +1,22 @@
+{
+  "review_id": "2103.08698__00",
+  "safe_id": "2103.08698",
+  "arxiv_id": "2103.08698",
+  "conjecture_title": "Informal Conjecture (fractional treewidth-fragility of sublinear-separator classes)",
+  "paper_title": "Approximation metatheorems for classes with bounded expansion",
+  "published": "2021-10-09",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Dvořák conjectures in arXiv:2103.08698 that all classes with sublinear separators are fractionally treewidth-fragile. The paper itself establishes the property for hereditary classes with sublinear separators and bounded maximum degree, for all proper minor-closed classes, and for several geometric graph classes, but the full conjecture without the bounded-degree restriction remains open. No follow-up paper proving or disproving the general statement was found across multiple targeted searches.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "fractionally treewidth-fragile sublinear separators Dvořák conjecture",
+    "\"fractionally treewidth-fragile\" \"sublinear separator\" graph classes",
+    "\"fractionally treewidth-fragile\" \"sublinear separator\" conjecture proof 2022 2023 2024 2025"
+  ],
+  "notes": "The conjecture is stated informally in the paper: the bounded-degree case is proved therein, as are proper minor-closed classes and geometric classes. The gap is the general sublinear-separator case without bounded degree. Related work (arXiv:2208.10074 on product structure for strongly-sublinear-separator classes) does not address fractional treewidth-fragility. No resolution found in the literature as of 2026-05-15."
+}

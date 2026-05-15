@@ -1,0 +1,68 @@
+[
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Erdős–Hajnal Independence Number Problem",
+    "statement_text": "Determine the minimum independence number of a 3-uniform hypergraph on $N$ vertices in which there are at most two edges among any four vertices; equivalently, determine $r(K_4^{(3)}\\setminus e,\\, K_n^{(3)})$.",
+    "context_text": "In 1972, Erdős and Hajnal posed this problem and showed the answer lies between $\\Omega(\\log N/\\log\\log N)$ and $O(\\log N)$, i.e., in the Ramsey-number language $2^{\\Omega(n)} \\le r(K_4^{(3)}\\setminus e, K_n^{(3)}) \\le n^{O(n)}$. The problem received considerable attention over the subsequent half-century; Mubayi and Suk described it as 'a very interesting open problem, as $K_4^{(3)}\\setminus e$ is, in some sense, the smallest 3-uniform hypergraph whose Ramsey number with a clique is at least exponential.'",
+    "attributed_to": "Erdős and Hajnal",
+    "attributed_year": 1972,
+    "paper_contribution": "Proves $r(K_4^{(3)}\\setminus e, K_n^{(3)}) = n^{\\Theta(n)}$ (Theorem 1.1), establishing that the minimum independence number is $\\Theta(\\log N / \\log\\log N)$ and completely solving the longstanding open problem.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1909.05988",
+    "paper_title": "Independent sets in hypergraphs with a forbidden link",
+    "paper_authors": [
+      "Jacob Fox",
+      "Xiaoyu He"
+    ],
+    "published": "2021-03-18",
+    "abs_url": "https://arxiv.org/abs/1909.05988",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Exact Ramsey growth rate dependence on G for link hypergraphs",
+    "statement_text": "It would be interesting to determine the exact dependence on $G$ in the bounds $\\Omega(1/g) \\le \\frac{\\log r(LG,\\, K_n^{(3)})}{n \\log n} \\le O(s)$, where $G$ is a non-bipartite graph on $s$ vertices with odd girth $g \\ge 3$.",
+    "context_text": "Theorems 1.3 and 1.4 together show that for a non-bipartite graph $G$ on $s$ vertices with odd girth $g \\ge 3$ and $n$ sufficiently large, $\\Omega(1/g) \\le \\log r(LG, K_n^{(3)})/(n\\log n) \\le O(s)$. The exact asymptotic constant as a function of $G$ (or of $s$ and $g$) remains open.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated as 'it would be interesting' in running prose without a labelled environment; PDF source.",
+    "arxiv_id": "1909.05988",
+    "paper_title": "Independent sets in hypergraphs with a forbidden link",
+    "paper_authors": [
+      "Jacob Fox",
+      "Xiaoyu He"
+    ],
+    "published": "2021-03-18",
+    "abs_url": "https://arxiv.org/abs/1909.05988",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Determine the order of f_k(N; s, t) in general",
+    "statement_text": "Determine the order of $f_k(N; s, t)$ for all valid parameters $k \\ge 3$, $s \\ge k+1$, and $1 \\le t \\le \\binom{s}{k}$.",
+    "context_text": "Despite substantial progress on the qualitative phase-transition structure of $f_k(N;s,t)$ as $t$ varies (the Erdős–Hajnal threshold conjectures, now resolved), the exact order of $f_k(N;s,t)$ has remained wide open. Theorem 1.6 determines the order $f_3(N;s,t) = \\Theta(\\log N/\\log\\log N)$ for a constant fraction of $t$-values in the range $(e(s), E(s)]$ for each fixed $s \\ge 4$.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Framed in prose as 'the order of $f_k(N;s,t)$ has remained wide open'; no explicit labelled problem environment. Section 7, which the paper states contains explicit open problems, is absent from the PDF extraction.",
+    "arxiv_id": "1909.05988",
+    "paper_title": "Independent sets in hypergraphs with a forbidden link",
+    "paper_authors": [
+      "Jacob Fox",
+      "Xiaoyu He"
+    ],
+    "published": "2021-03-18",
+    "abs_url": "https://arxiv.org/abs/1909.05988",
+    "source": "pdf"
+  }
+]

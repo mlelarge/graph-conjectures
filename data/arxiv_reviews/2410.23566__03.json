@@ -1,0 +1,22 @@
+{
+  "review_id": "2410.23566__03",
+  "safe_id": "2410.23566",
+  "arxiv_id": "2410.23566",
+  "conjecture_title": "Conjecture 9",
+  "paper_title": "Blow-ups and extensions of trees in tournaments",
+  "published": "2024-10-31",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 9 from arXiv:2410.23566 asserts that there exists a constant C such that unvd(D) ≤ C·unvd(D−v) for every acyclic digraph D and every vertex v, where unvd(D) is the smallest order of a tournament that contains D. The paper itself proves the special case C=2 when v is a source or sink (Proposition 1), but the general case remains open. No follow-up paper resolving the conjecture was found in a targeted web search covering the period 2024–2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Aboulker Havet Picasarri-Arrieta \"unvd\" acyclic digraph tournament blow-ups trees 2024",
+    "Aboulker Havet Lopes \"extensions of trees in tournaments\" \"acyclic digraph\" vertex deletion 2025",
+    "Picasarri-Arrieta Rambaud \"unavoidability\" digraph vertex 2025 arxiv"
+  ],
+  "notes": "The function unvd(D) is the smallest integer p such that D is contained in every tournament of order p. Conjecture 9 generalises Proposition 1 (source/sink case, C=2) to arbitrary vertices. The conjecture is intimately linked to Sumner's conjecture (Conjecture 4) and to Conjecture 10 on k-extensions of oriented trees: together, Conjectures 9 and 4 would imply Conjecture 10. The paper arXiv:2603.13955 found in the search concerns digraph subdivisions of C(k,ℓ) cycles and is unrelated. No follow-up was found; open with high confidence given the conjecture is recent (Oct 2024)."
+}

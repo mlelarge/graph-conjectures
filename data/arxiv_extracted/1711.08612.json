@@ -1,0 +1,25 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Gyárfás–Sumner Conjecture (Conjecture 1.1)",
+    "statement_text": "Every forest is $\\chi$-bounding.",
+    "context_text": "A graph $H$ is called $\\chi$-bounding if there exists a function $f$ such that $\\chi(G) \\leq f(\\omega(G))$ for every graph $G$ containing no induced copy of $H$. Every $\\chi$-bounding graph must be a forest; the Gyárfás–Sumner conjecture asserts the converse. Prior to this paper, the conjecture had been verified only for trees whose high-degree vertices are clustered closely together (trees of radius at most two, certain radius-three trees, and subdivided stars).",
+    "attributed_to": "Gyárfás and Sumner",
+    "attributed_year": 1980,
+    "paper_contribution": "Proves the conjecture for two new families of trees whose high-degree vertices may be arbitrarily far apart: (i) trees obtained by adding one vertex to a subdivided star (a family containing all two-legged caterpillars), and (ii) trees obtained from a subdivided star and a star by joining their centres with a path (a family containing all double brooms); both follow from the main result that for all $\\kappa \\geq 0$ and $k, d \\geq 1$ there exists $c \\geq 0$ such that every graph $G$ with $\\omega(G) \\leq \\kappa$ and $\\chi(G) > c$ is $(k,d)$-starry.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF extraction; the body of the proof text is intact but the bibliography and later sections are replaced by a list of arXiv IDs, so reference years are estimated from standard literature.",
+    "arxiv_id": "1711.08612",
+    "paper_title": "Induced subgraphs of graphs with large chromatic number. XII. Distant stars",
+    "paper_authors": [
+      "Maria Chudnovsky",
+      "Alex Scott",
+      "Paul Seymour"
+    ],
+    "published": "2018-12-05",
+    "abs_url": "https://arxiv.org/abs/1711.08612",
+    "source": "pdf"
+  }
+]

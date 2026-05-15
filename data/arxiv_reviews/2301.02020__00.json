@@ -1,0 +1,22 @@
+{
+  "review_id": "2301.02020__00",
+  "safe_id": "2301.02020",
+  "arxiv_id": "2301.02020",
+  "conjecture_title": "Conjecture 4",
+  "paper_title": "Extremal Independent Set Reconfiguration",
+  "published": "2023-01-05",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 4 from arXiv:2301.02020 asserts $D(n,4) = n^{3-o(1)}$, i.e., the maximum diameter of the 4-independent-set reconfiguration graph on $n$ vertices is nearly cubic. The source paper (published in Electronic Journal of Combinatorics 2023) establishes the upper bound $D(n,4) = o(n^3)$ and the general lower bound $n^{2\\lfloor k/3\\rfloor}/e^{O_k(\\sqrt{\\log n})}$, which for $k=4$ gives only $\\Omega(n^2/e^{O(\\sqrt{\\log n})})$, leaving a large gap. A comprehensive web search found no follow-up paper proving or disproving the conjecture.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "extremal independent set reconfiguration diameter D(n,4) Bousquet Durain Pierron Thomassé 2301.02020",
+    "independent set reconfiguration configuration graph super-quadratic diameter 4-token",
+    "Bousquet Durain \"D(n,4)\" OR \"D(n, 4)\" independent set reconfiguration diameter conjecture 2024 2025"
+  ],
+  "notes": "No follow-up found. The conjecture asks whether the 4-configuration graph can have super-quadratic (nearly cubic) diameter; the gap between the $\\Omega(n^2/e^{O(\\sqrt{\\log n})})$ lower bound and $o(n^3)$ upper bound remains open. The paper was also published as Electronic Journal of Combinatorics, Volume 30, Issue 3 (2023), article P3.8."
+}

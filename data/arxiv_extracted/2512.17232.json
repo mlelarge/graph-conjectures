@@ -1,0 +1,68 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Coarse Menger Conjecture (Conjecture 1)",
+    "statement_text": "For all $k,d\\in\\mathbb{N}$, there exists $c\\in\\mathbb{N}$ such that every graph $G$ and $X,Y\\subseteq V(G)$ contains one of the following: $k$ $(X,Y)$-paths $P_{1},\\dots,P_{k}$ such that $\\operatorname{dist}_{G}(P_{i},P_{j})\\geqslant d$ for all distinct $i,j\\in[k]$; or a set $Z\\subseteq V(G)$ with $|Z|\\leqslant k-1$ such that $G-N_{G}[Z,cd]$ has no $(X,Y)$-path.",
+    "context_text": "The Coarse Menger Conjecture was independently posed by Albrechtsen et al. and Georgakopoulos and Papasoglu as a central question in coarse graph theory, seeking a large-scale analogue of Menger's theorem where paths must be mutually far apart. It was subsequently disproved by Nguyen, Scott, and Seymour for all $d\\geqslant 3$, and even for separators of size depending on a function of $k$. The paper studies the $\\mathcal{A}$-path analogue (Conjecture 2) as a fruitful alternative.",
+    "attributed_to": "Albrechtsen et al. and Georgakopoulos and Papasoglu",
+    "attributed_year": 2024,
+    "paper_contribution": "The paper notes the conjecture has been fully disproved for $d\\geq 3$ and pivots to the $\\mathcal{A}$-path analogue (Geelen's Coarse Gallai Conjecture), resolving its $d=2$ case.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2512.17232",
+    "paper_title": "An Induced $A$-Path Theorem",
+    "paper_authors": [
+      "Robert Hickingbotham",
+      "Gwenaël Joret"
+    ],
+    "published": "2025-12-19",
+    "abs_url": "https://arxiv.org/abs/2512.17232",
+    "source": "html"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Geelen's Coarse Gallai Conjecture (Conjecture 2)",
+    "statement_text": "There exist functions $f,g$ such that, for all $k,d\\in\\mathbb{N}$, every graph $G$ and vertex set $\\mathcal{A}\\subseteq V(G)$ contains one of the following: $k$ $\\mathcal{A}$-paths $P_{1},\\dots,P_{k}$ such that $\\operatorname{dist}_{G}(P_{i},P_{j})\\geqslant d$ for all distinct $i,j\\in[k]$; or a set $Z\\subseteq V(G)$ with $|Z|\\leqslant f(k)$ such that $G-N_{G}[Z,g(d)]$ has no $\\mathcal{A}$-path.",
+    "context_text": "Motivated by the failure of the Coarse Menger Conjecture and the success of $\\mathcal{A}$-path versions in group-labelled graph settings, Geelen posed this conjecture at the Barbados Graph Theory Workshop in March 2024. It is an $\\mathcal{A}$-path analogue allowing the separator size and ball radius to depend on functions of $k$ and $d$, respectively. The paper resolves the $d=2$ case.",
+    "attributed_to": "Geelen",
+    "attributed_year": 2024,
+    "paper_contribution": "Resolves the $d=2$ case by proving that every graph $G$ with $\\mathcal{A}\\subseteq V(G)$ contains $k$ pairwise anti-complete $\\mathcal{A}$-paths or a set $Z$ with $|Z|\\leqslant 78(k-1)$ such that $G-N_{G}[Z]$ has no $\\mathcal{A}$-path (Theorem 3); also shows the general case reduces to the $d=3$ setting.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2512.17232",
+    "paper_title": "An Induced $A$-Path Theorem",
+    "paper_authors": [
+      "Robert Hickingbotham",
+      "Gwenaël Joret"
+    ],
+    "published": "2025-12-19",
+    "abs_url": "https://arxiv.org/abs/2512.17232",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 6",
+    "statement_text": "For every $k\\in\\mathbb{N}$, every graph $G$ and $X,Y\\subseteq V(G)$ satisfies one of the following: $G$ contains $k$ pairwise anti-complete $(X,Y)$-paths; or there exists a set $Z\\subseteq V(G)$ with $|Z|\\leqslant k-1$ such that $G-N_{G}[Z]$ has no $(X,Y)$-path.",
+    "context_text": "The authors pose this $(X,Y)$-path strengthening of their main theorem (Theorem 3), seeking to reduce the separator size from $78(k-1)$ to the optimal $k-1$. If true, it would have immediate application to the study of induced minors, in particular implying an Induced Grid Minor Theorem for $K_{1,t}$-induced-subgraph-free graphs conjectured by Dallard et al.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2512.17232",
+    "paper_title": "An Induced $A$-Path Theorem",
+    "paper_authors": [
+      "Robert Hickingbotham",
+      "Gwenaël Joret"
+    ],
+    "published": "2025-12-19",
+    "abs_url": "https://arxiv.org/abs/2512.17232",
+    "source": "html"
+  }
+]

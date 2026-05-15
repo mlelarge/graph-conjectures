@@ -1,0 +1,46 @@
+[
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Problem 1.1 (Erdős)",
+    "statement_text": "Let $k\\geq 4$. For every $n\\in\\mathbb{N}$ let $f_{k}(n)$ denote the largest integer $r\\geq 1$ such that there exists a $(k,r)$-graph on $n$ vertices ($f_{k}(n):=0$ if no such graph exists for any $r\\geq 1$). Is it true that $f_{k}(n)\\rightarrow\\infty$ for $n\\rightarrow\\infty$?",
+    "context_text": "Erdős posed this in 1985 as a strong version of Dirac's conjecture, asking whether for every $k\\geq 4$ and $r\\geq 1$ there exists a $k$-vertex-critical graph in which no set of at most $r$ edges is critical. The case $r=1$ corresponds to Dirac's conjecture. The problem has been reiterated in several books and problem collections (cf. page 66 of [3] and [4, 7]).",
+    "attributed_to": "Erdős",
+    "attributed_year": 1985,
+    "paper_contribution": "Solves the problem affirmatively for all $k\\geq 5$, proving $f_k(n)=\\Omega(n^{1/3})$; the case $k=4$ remains open.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2508.08703",
+    "paper_title": "Critical edge sets in vertex-critical graphs",
+    "paper_authors": [
+      "Ema Skottova",
+      "Raphael Steiner"
+    ],
+    "published": "2025-08-12",
+    "abs_url": "https://arxiv.org/abs/2508.08703",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Problem 5.2",
+    "statement_text": "Does there exist a $6$-regular $(4,1)$-graph?",
+    "context_text": "This question is posed in relation to the still-open case $k=4$ of Erdős' problem. A $(4,1)$-graph is a $4$-vertex-critical graph containing no critical edge; the question asks whether a $6$-regular example of such a graph exists, motivated by structural properties of $4$-vertex-critical graphs established in the paper.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2508.08703",
+    "paper_title": "Critical edge sets in vertex-critical graphs",
+    "paper_authors": [
+      "Ema Skottova",
+      "Raphael Steiner"
+    ],
+    "published": "2025-08-12",
+    "abs_url": "https://arxiv.org/abs/2508.08703",
+    "source": "html"
+  }
+]

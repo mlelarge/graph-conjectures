@@ -1,0 +1,54 @@
+{
+  "review_id": "2006.09877__00",
+  "safe_id": "2006.09877",
+  "arxiv_id": "2006.09877",
+  "conjecture_title": "The Small Conjecture",
+  "paper_title": "Twin-width II: small classes",
+  "published": "2020-06-17",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "disproved",
+  "confidence": "high",
+  "summary": "The Small Conjecture ('every small hereditary class has bounded twin-width') was disproved by Bonnet, Geniet, Tessera, and Thomassé in Twin-width VII (arXiv:2204.12330, 2022), who constructed a family of induced subgraphs of an infinite Cayley graph that is small (as labeled graphs) yet has unbounded twin-width. Prior to the disproof, Twin-width IV (arXiv:2102.03117, 2021) established a positive resolution in the restricted setting of hereditary classes of ordered graphs, where bounded twin-width and smallness (growth at most 2^{O(n)}) are equivalent.",
+  "since_posted": [
+    {
+      "title": "Twin-width IV: ordered graphs and matrices",
+      "authors": "Édouard Bonnet, Ugo Giocanti, Patrice Ossona de Mendez, Pierre Simon, Stéphan Thomassé",
+      "year": 2021,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2102.03117",
+      "arxiv_id": "2102.03117",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Resolves the conjecture for hereditary classes of ordered graphs by proving that bounded twin-width and growth at most 2^{O(n)} (smallness) are equivalent in this setting."
+    },
+    {
+      "title": "Twin-width VII: groups",
+      "authors": "Édouard Bonnet, Colin Geniet, Romain Tessera, Stéphan Thomassé",
+      "year": 2022,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2204.12330",
+      "arxiv_id": "2204.12330",
+      "doi": null,
+      "kind": "counterexample",
+      "claim": "Disproves the conjecture by constructing a family of induced subgraphs of an infinite Cayley graph that is small as labeled graphs but has unbounded twin-width."
+    }
+  ],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2102.03117",
+      "verified": true,
+      "note": "Abstract explicitly states the paper 'answers our small conjecture [SODA ’21] in the case of ordered graphs'; matches the attributed partial resolution."
+    },
+    {
+      "arxiv_id": "2204.12330",
+      "verified": true,
+      "note": "Wikipedia (Twin-width article) explicitly confirms this paper disproves the Small Conjecture via induced subgraphs of a Cayley graph; direct PDF fetch was not parseable but corroborated by two independent external sources."
+    }
+  ],
+  "search_queries": [
+    "twin-width small conjecture hereditary class bounded disproved 2022 2023 2024"
+  ],
+  "notes": "The general conjecture is disproved. The converse direction (every bounded twin-width class is small) was proved in the source paper and remains true. A positive analog holds for ordered graphs (Twin-width IV). The counterexample arises from group-theoretic constructions (Cayley graphs of finitely generated groups with infinite twin-width)."
+}

@@ -1,0 +1,25 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Erdős-Hajnal Conjecture",
+    "statement_text": "For every hereditary property $\\mathcal{P}$ which is not satisfied by all graphs, there exists a constant $\\varepsilon(\\mathcal{P}) > 0$ such that every graph of $n$ vertices with property $\\mathcal{P}$ has a clique or an independent set of size at least $n^{\\varepsilon(\\mathcal{P})}$.",
+    "context_text": "The Erdős-Hajnal conjecture is described as one of the most challenging open problems in Ramsey theory. The paper investigates whether bounded VC-dimension — a hereditary property shared by most geometrically defined graph classes — explains the exceptionally strong Ramsey-type properties observed in those classes, thereby nearly settling the conjecture for graphs with bounded VC-dimension.",
+    "attributed_to": "Erdős and Hajnal",
+    "attributed_year": 1989,
+    "paper_contribution": "Proves (Theorem 1.1) that every $n$-vertex graph with VC-dimension at most $d$ contains a clique or an independent set of size at least $e^{(\\log n)^{1-o(1)}}$, nearly matching the conjectured polynomial lower bound $n^{\\varepsilon(\\mathcal{P})}$ and improving the general lower bound $e^{\\varepsilon\\sqrt{\\log n}}$ of Erdős and Hajnal for all hereditary properties.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source — math notation may be garbled in places. Attributed year 1989 inferred from standard bibliographic knowledge of reference [16] (Erdős–Hajnal, Discrete Applied Mathematics). The paper's conclusion section, which may contain additional author-stated questions, was not fully provided in the extracted text.",
+    "arxiv_id": "1710.03745",
+    "paper_title": "Erdos-Hajnal conjecture for graphs with bounded VC-dimension",
+    "paper_authors": [
+      "Jacob Fox",
+      "János Pach",
+      "Andrew Suk"
+    ],
+    "published": "2017-10-10",
+    "abs_url": "https://arxiv.org/abs/1710.03745",
+    "source": "pdf"
+  }
+]

@@ -1,0 +1,51 @@
+{
+  "review_id": "2105.01787__01",
+  "safe_id": "2105.01787",
+  "arxiv_id": "2105.01787",
+  "conjecture_title": "Open Question: NP-hardness of List-k-Coloring on rP3-free graphs",
+  "paper_title": "Complexity dichotomy for List-5-Coloring with a forbidden induced subgraph",
+  "published": "2022-08-30",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "solved",
+  "confidence": "high",
+  "summary": "The open question asks whether List-$k$-Coloring on $rP_3$-free graphs is NP-hard for some $k\\in\\mathbb{N}$. arXiv:2311.05713 (Chudnovsky, Hajebi, Spirkl; Combinatorica 2024) proves a full complexity dichotomy for all $k>4$: List-$k$-Coloring on $H$-free graphs is polynomial-time solvable whenever every component of $H$ is a path on at most three vertices, and $rP_3$ satisfies this condition. Combined with the source paper's polynomial result for $k=5$ and classical results for $k\\leq 4$, List-$k$-Coloring on $rP_3$-free graphs is polynomial-time solvable for all $k\\in\\mathbb{N}$, answering the open question in the negative.",
+  "since_posted": [
+    {
+      "title": "List-k-Coloring H-free graphs for all k>4",
+      "authors": "Maria Chudnovsky, Sepehr Hajebi, Sophie Spirkl",
+      "year": 2023,
+      "venue": "Combinatorica 44 (2024)",
+      "url": "https://arxiv.org/abs/2311.05713",
+      "arxiv_id": "2311.05713",
+      "doi": "10.1007/s00493-024-00106-2",
+      "kind": "proof",
+      "claim": "Proves that for all k>4, List-k-Coloring on H-free graphs is polynomial-time solvable when every component of H is a path on at most 3 vertices (covering all rP3), thereby establishing that no k exists for which List-k-Coloring on rP3-free graphs is NP-hard."
+    },
+    {
+      "title": "Maximum List r-Colorable Induced Subgraphs in kP3-Free Graphs",
+      "authors": "Esther Galby, Paloma T. Lima, Andrea Munaro, Amir Nikabadi",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2505.00412",
+      "arxiv_id": "2505.00412",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Generalizes polynomial-time solvability to Max-Weight List r-Colorable Induced Subgraph on kP3-free graphs for all fixed r and k, providing a short self-contained proof of List r-Coloring polynomial-time solvability as a special case."
+    }
+  ],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2311.05713",
+      "verified": true,
+      "note": "Confirmed via arXiv abstract page: Chudnovsky, Hajebi, Spirkl prove the full dichotomy for List-k-Coloring H-free graphs for k>4, with polynomial-time solvability for rP3-free graphs for all k>4. Published in Combinatorica 44 (2024)."
+    }
+  ],
+  "search_queries": [
+    "List-k-Coloring rP3-free graphs NP-hard complexity Hajebi Spirkl",
+    "arXiv 2105.01787 List-5-Coloring forbidden induced subgraph cite follow-up",
+    "Chudnovsky Hajebi \"List-k-Coloring H-Free Graphs\" \"k>4\" arXiv polynomial rP3"
+  ],
+  "notes": "The open question is definitively answered in the negative: List-k-Coloring on rP3-free graphs is polynomial-time solvable for all k in N. The key paper arXiv:2311.05713 was already present in the supplied internal references (2311.05713__01). The 2025 paper arXiv:2505.00412 further generalizes the result to the weighted setting."
+}

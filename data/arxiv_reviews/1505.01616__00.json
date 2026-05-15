@@ -1,0 +1,24 @@
+{
+  "review_id": "1505.01616__00",
+  "safe_id": "1505.01616",
+  "arxiv_id": "1505.01616",
+  "conjecture_title": "Question 1.7",
+  "paper_title": "Colouring graphs with constraints on connectivity",
+  "published": "2016-10-14",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "Question 1.7 asks whether, for fixed k ≥ 4, there is a polynomial-time algorithm for k-colouring k-connected graphs with maximal local (vertex) connectivity k. The source paper settles the k=3 case with a polynomial-time algorithm (the class Ĉ^k_2), but explicitly leaves the case k ≥ 4 open. No subsequent paper resolving or substantially advancing this question was found across five targeted searches covering 2016–2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "k-connected graph maximal local connectivity k-colouring polynomial algorithm Aboulker Brettell Havet Marx Trotignon",
+    "arXiv 1505.01616 colouring graphs connectivity k-connected local connectivity complexity",
+    "WebFetch https://arxiv.org/abs/1505.01616 — follow-up papers citing Question 1.7",
+    "\"local connectivity\" \"k-connected\" \"k-colouring\" NP-complete polynomial algorithm graph coloring 2017 2018 2019 2020",
+    "Aboulker Brettell Havet \"local connectivity\" colouring k-connected graph complexity 2021 2022 2023 2024 2025"
+  ],
+  "notes": "No follow-up work found addressing Question 1.7 for k ≥ 4. The question has been open since 2016 (~10 years). Confidence is medium rather than high because the conjecture is old enough that absence of evidence in web search is less conclusive than for a recent paper. The complexity of k-colouring k-connected graphs with maximal local vertex connectivity k for k ≥ 4 remains a natural open problem in structural and algorithmic graph theory."
+}

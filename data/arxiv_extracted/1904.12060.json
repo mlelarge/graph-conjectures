@@ -1,0 +1,94 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1 (List Coloring Conjectures)",
+    "statement_text": "Every simple graph $G$ satisfies $\\chi'(G) = \\chi'_\\ell(G)$ and $\\chi''(G) = \\chi''_\\ell(G)$.",
+    "context_text": "The list coloring conjecture posits that the chromatic index equals the list chromatic index, and analogously for total coloring. It motivates the study of list variants of edge and total coloring, and shows that the gap between a parameter and its list version can be zero for these settings, in contrast to the ordinary chromatic number.",
+    "attributed_to": "Vizing; Gupta; Behzad",
+    "attributed_year": null,
+    "paper_contribution": "Cited as foundational background motivation; the paper's main result (proving the list total coloring analogue for planar graphs with $\\Delta \\geq 8$) is consistent with this conjecture but does not directly prove new cases of it.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source — math notation reconstructed from Unicode. Attributed to references [2, 3, 1] in the paper; exact author–year mapping requires bibliography.",
+    "arxiv_id": "1904.12060",
+    "paper_title": "Every planar graph with $Δ\\geqslant 8$ is totally $(Δ+2)$-choosable",
+    "paper_authors": [
+      "Marthe Bonamy",
+      "Théo Pierron",
+      "Éric Sopena"
+    ],
+    "published": "2022-12-09",
+    "abs_url": "https://arxiv.org/abs/1904.12060",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 3 (Vizing's List Edge Coloring Conjecture)",
+    "statement_text": "Every simple graph $G$ satisfies $\\chi'_\\ell(G) \\leq \\Delta(G) + 1$.",
+    "context_text": "This conjecture is described as a weakening of the List Coloring Conjecture (Conjecture 1), asserting that the list chromatic index matches the bound given by Vizing's theorem for the ordinary chromatic index. It is the edge-coloring analogue of Conjecture 5, which is the paper's primary focus.",
+    "attributed_to": "Vizing",
+    "attributed_year": null,
+    "paper_contribution": "Cited as context for the analogous total list coloring statement (Conjecture 5); no direct progress on this conjecture is made in the paper.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source — math notation reconstructed from Unicode. Attributed to reference [1] in the paper.",
+    "arxiv_id": "1904.12060",
+    "paper_title": "Every planar graph with $Δ\\geqslant 8$ is totally $(Δ+2)$-choosable",
+    "paper_authors": [
+      "Marthe Bonamy",
+      "Théo Pierron",
+      "Éric Sopena"
+    ],
+    "published": "2022-12-09",
+    "abs_url": "https://arxiv.org/abs/1904.12060",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 4 (Total Coloring Conjecture)",
+    "statement_text": "Every simple graph $G$ satisfies $\\chi''(G) \\leq \\Delta(G) + 2$.",
+    "context_text": "The Total Coloring Conjecture asserts that every simple graph can be totally colored with at most $\\Delta + 2$ colors, one more than the lower bound $\\Delta + 1$. It is presented as a generalization of the setting motivating the list version studied in this paper.",
+    "attributed_to": "Behzad; Vizing",
+    "attributed_year": null,
+    "paper_contribution": "Cited as motivation for Conjecture 5 (the list version); the paper's results on total list coloring for planar graphs also yield results on total coloring, but the direct focus is on the strictly stronger list variant.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source — math notation reconstructed from Unicode. Attributed to references [5, 1] in the paper.",
+    "arxiv_id": "1904.12060",
+    "paper_title": "Every planar graph with $Δ\\geqslant 8$ is totally $(Δ+2)$-choosable",
+    "paper_authors": [
+      "Marthe Bonamy",
+      "Théo Pierron",
+      "Éric Sopena"
+    ],
+    "published": "2022-12-09",
+    "abs_url": "https://arxiv.org/abs/1904.12060",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 5",
+    "statement_text": "Every simple graph $G$ satisfies $\\chi''_\\ell(G) \\leq \\Delta(G) + 2$.",
+    "context_text": "This is the list coloring analogue of the Total Coloring Conjecture (Conjecture 4), asserting that the list total chromatic number never exceeds $\\Delta + 2$. It is stated without a bibliographic citation in the paper, appearing as a natural companion to Conjecture 4. The paper's main result (Corollary 1) proves Conjecture 5 for all planar graphs with $\\Delta \\geq 8$.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "PDF source — math notation reconstructed from Unicode. No citation appears in the conjecture header; the paper proves this conjecture for planar graphs with $\\Delta \\geq 8$ as its central result.",
+    "arxiv_id": "1904.12060",
+    "paper_title": "Every planar graph with $Δ\\geqslant 8$ is totally $(Δ+2)$-choosable",
+    "paper_authors": [
+      "Marthe Bonamy",
+      "Théo Pierron",
+      "Éric Sopena"
+    ],
+    "published": "2022-12-09",
+    "abs_url": "https://arxiv.org/abs/1904.12060",
+    "source": "pdf"
+  }
+]

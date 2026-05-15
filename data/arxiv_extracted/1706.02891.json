@@ -1,0 +1,23 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.1 (Lin et al.)",
+    "statement_text": "For $t \\geq 88$, a $t$-minimal tree has $t + \\lfloor t/11 \\rfloor - 1$ vertices.",
+    "context_text": "Lin et al. determined $t$-minimal trees (trees with $t$ leaves and minimum ABC-index) for all $t \\leq 219$ via computer-aided calculations and observed a structural pattern. Based on these computations they proposed this conjecture about the vertex count of $t$-minimal trees for all $t \\geq 88$. The present paper shows that the pattern eventually changes as $t$ grows.",
+    "attributed_to": "Lin et al.",
+    "attributed_year": null,
+    "paper_contribution": "Disproves the conjecture by proving that for $t \\geq 1195$ the unique $t$-minimal tree $T_t$ has $t + \\lfloor t/10 \\rfloor + 1$ or $t + \\lfloor t/10 \\rfloor + 2$ vertices (depending on $t \\bmod 10$), not $t + \\lfloor t/11 \\rfloor - 1$ as conjectured; the correct structure and exact ABC-index are fully characterised.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source; the floor-bracket characters appear as (cid:98)/(cid:99) in the raw extraction but the mathematical statement is unambiguous from context.",
+    "arxiv_id": "1706.02891",
+    "paper_title": "The structure of ABC-minimal trees with given number of leaves",
+    "paper_authors": [
+      "Bojan Mohar"
+    ],
+    "published": "2018-04-14",
+    "abs_url": "https://arxiv.org/abs/1706.02891",
+    "source": "pdf"
+  }
+]

@@ -1,0 +1,46 @@
+{
+  "review_id": "2107.11780__00",
+  "safe_id": "2107.11780",
+  "arxiv_id": "2107.11780",
+  "conjecture_title": "Informal remark on completeness of known forests satisfying Esperet's conjecture",
+  "paper_title": "Polynomial bounds for chromatic number. II. Excluding a star-forest",
+  "published": "2021-07-25",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "disproved",
+  "confidence": "high",
+  "summary": "The remark in arXiv:2107.11780 that star-forests, double stars, K₂, and their induced subgraphs might constitute the complete list of forests H for which H-free graphs are polynomially χ-bounded is refuted: Nguyen (December 2025, arXiv:2512.24907) proved that P₅-free graphs are polynomially χ-bounded, and P₅ is a forest that is not an induced subgraph of any star, double star, or K₂. Separately, Briański–Davies–Walczak (2022, arXiv:2201.08814) disproved Esperet’s general conjecture by constructing hereditary χ-bounded classes that are not polynomially χ-bounded, confirming that polynomial χ-bounds are not automatic even within χ-bounded classes.",
+  "since_posted": [
+    {
+      "title": "Separating polynomial χ-boundedness from χ-boundedness",
+      "authors": "Marcin Briański, James Davies, Bartosz Walczak",
+      "year": 2022,
+      "venue": "Combinatorica",
+      "url": "https://arxiv.org/abs/2201.08814",
+      "arxiv_id": "2201.08814",
+      "doi": "10.1007/s00493-023-00054-3",
+      "kind": "counterexample",
+      "claim": "Disproves Esperet’s general conjecture by constructing hereditary χ-bounded classes that are not polynomially χ-bounded, establishing that the question of which specific forests admit polynomial χ-bounds is non-trivial."
+    },
+    {
+      "title": "Polynomial χ-boundedness for excluding P₅",
+      "authors": "Tung H. Nguyen",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2512.24907",
+      "arxiv_id": "2512.24907",
+      "doi": null,
+      "kind": "counterexample",
+      "claim": "Proves that P₅-free graphs are polynomially χ-bounded, exhibiting P₅ as a forest outside the class described in results 1.4–1.6 of arXiv:2107.11780 that satisfies the polynomial bound, directly disproving the completeness remark."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Esperet conjecture polynomial chromatic number forests star-forest Scott Seymour Spirkl 2107.11780",
+    "forests polynomial chi-bounded Esperet conjecture double stars chromatic number induced subgraph",
+    "Brianki Davies Walczak Esperet conjecture counterexample chi-bounded polynomial 2022 2023",
+    "arxiv Brianki Davies Walczak separating polynomial chi-boundedness 2022 hereditary classes"
+  ],
+  "notes": "The authors themselves noted the completeness claim 'seems unlikely', and this is now confirmed: P₅ (a path on 5 vertices, not an induced subgraph of any star or double star) gives polynomial χ-bounds per Nguyen 2025. The general Esperet conjecture 1.2 was also independently disproved by Briański–Davies–Walczak (2201.08814). The class of forests admitting polynomial χ-bounds remains open but is strictly larger than what was known in 2021."
+}

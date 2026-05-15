@@ -1,0 +1,22 @@
+{
+  "review_id": "2501.00567__00",
+  "safe_id": "2501.00567",
+  "arxiv_id": "2501.00567",
+  "conjecture_title": "Conjecture 1.7",
+  "paper_title": "Local Shearer bound",
+  "published": "2024-12-31",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Martinsson and Steiner prove in Theorem 1.6 of arXiv:2501.00567 that every triangle-free graph G satisfies χ_f(G) ≤ (1+o(1))ρ(G)/ln ρ(G), where ρ(G) is the spectral radius. Conjecture 1.7 is the stronger statement that the same bound holds for the ordinary chromatic number χ(G). No subsequent paper resolving or disproving this conjecture was found in the indexed literature as of May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "triangle-free graph chromatic number spectral radius Martinsson Steiner 2501.00567",
+    "\"spectral radius\" \"triangle-free\" \"chromatic number\" \"ln rho\" conjecture 2025",
+    "Martinsson Steiner \"local Shearer\" chromatic spectral 2025 follow-up conjecture"
+  ],
+  "notes": "The paper proves the analogous bound for fractional chromatic number χ_f(G) (Theorem 1.6) as the main result; Conjecture 1.7 extends this to the ordinary chromatic number χ(G). Closely related follow-up work includes arXiv:2501.18238 (Martinsson, resolving Harris' conjecture: every triangle-free d-degenerate graph satisfies χ_f(G) ≤ O(d/ln d)) and arXiv:2601.15245 (coloring small locally sparse degenerate graphs with ordinary chromatic number bounds); neither directly addresses the spectral radius upper bound for χ(G) stated in Conjecture 1.7. No resolution of the conjecture was found."
+}

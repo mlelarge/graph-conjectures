@@ -1,0 +1,22 @@
+{
+  "review_id": "2603.28614__00",
+  "safe_id": "2603.28614",
+  "arxiv_id": "2603.28614",
+  "conjecture_title": "Problem 1",
+  "paper_title": "A Gray code for arborescences of tournaments",
+  "published": "2026-03-30",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The question of whether every graph G admits a pivot Gray code on its spanning trees (where consecutive spanning trees share a common endpoint among their differing edges, i.e., the strong revolving door property) remains open as of the source paper's writing. Prior to the source paper, positive answers were known for fan graphs (arXiv:2202.01746, 2022), outerplanar graphs (STACS 2025), and complete graphs (arXiv:2510.22662, SODA 2026); the source paper itself notes these results and states the general problem as open. No post-March 2026 publication resolving the full conjecture was found in a web search.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "pivot Gray code spanning trees \"strong revolving door\" edge exchange common endpoint",
+    "arXiv 2603.28614 Bonamy Hoffmann Legrand-Duchesne Rote Gray code arborescences tournaments",
+    "\"pivot Gray code\" \"spanning trees\" \"every graph\" 2025 2026 open problem resolved"
+  ],
+  "notes": "The source paper (2026-03-30) explicitly states that although the reconfiguration graph of spanning trees under edge exchanges is connected for any graph G, it is open whether every graph admits a pivot Gray code. Known positive cases (fan, outerplanar, complete graphs) predate the source paper and are cited therein as background. No follow-up resolving the general problem was found; the conjecture is open with high confidence given the paper's very recent date."
+}

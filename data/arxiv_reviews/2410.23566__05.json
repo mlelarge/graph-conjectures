@@ -1,0 +1,22 @@
+{
+  "review_id": "2410.23566__05",
+  "safe_id": "2410.23566",
+  "arxiv_id": "2410.23566",
+  "conjecture_title": "Conjecture 11",
+  "paper_title": "Blow-ups and extensions of trees in tournaments",
+  "published": "2024-10-31",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 11 from arXiv:2410.23566 asserts that the k-extension operation preserves linear unavoidability for any family of digraphs. The source paper itself proves a special case (Corollary 25): the family of k-extensions of oriented forests is linearly unavoidable. The general conjecture is noted to follow from the stronger Conjecture 9 (that adding a single vertex multiplies the unavoidability constant by at most a constant). No follow-up paper resolving or making further progress on the general conjecture was found in a wide web search through May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "linearly unavoidable k-extensions digraphs tournaments Aboulker Havet 2410.23566",
+    "linearly unavoidable family digraphs k-extension operation graph theory arxiv 2025",
+    "\"linearly unavoidable\" \"k-extension\" tournaments digraphs Aboulker Havet Picasarri-Arrieta 2025 2026"
+  ],
+  "notes": "No follow-up work found. The conjecture is recent (October 2024) and the paper proves it for the special case of oriented trees/forests (Corollary 25). The general statement would follow from Conjecture 9 of the same paper. A search of Picasarri-Arrieta's publication page (post-Oct 2024 preprints) revealed no directly relevant follow-up."
+}

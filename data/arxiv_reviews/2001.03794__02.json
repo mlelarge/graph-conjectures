@@ -1,0 +1,33 @@
+{
+  "review_id": "2001.03794__02",
+  "safe_id": "2001.03794",
+  "arxiv_id": "2001.03794",
+  "conjecture_title": "Parameterized complexity of Partial Grundy Coloring on general graphs",
+  "paper_title": "Grundy Coloring & friends, Half-Graphs, Bicliques",
+  "published": "2020-01-11",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "solved",
+  "confidence": "high",
+  "summary": "The open problem from arXiv:2001.03794 — whether Partial Grundy Coloring on general graphs is FPT when parameterized by k — was resolved affirmatively. Agrawal, Lokshtanov, Panolan, Saurabh, and Verma (STACS 2025, arXiv:2410.20629) give an FPT algorithm for Partial Grundy Coloring on general graphs, along with an FPT algorithm for Grundy Coloring on K_{i,j}-free graphs, directly answering the question posed in the source paper.",
+  "since_posted": [
+    {
+      "title": "Parameterized Saga of First-Fit and Last-Fit Coloring",
+      "authors": "Akanksha Agrawal, Daniel Lokshtanov, Fahad Panolan, Saket Saurabh, Shaily Verma",
+      "year": 2025,
+      "venue": "STACS 2025 (LIPIcs)",
+      "url": "https://arxiv.org/abs/2410.20629",
+      "arxiv_id": "2410.20629",
+      "doi": "10.4230/LIPIcs.STACS.2025.5",
+      "kind": "proof",
+      "claim": "Proves that Partial Grundy Coloring on general graphs is FPT when parameterized by k, resolving the open problem posed in arXiv:2001.03794."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Partial Grundy Coloring parameterized complexity W[1]-hardness FPT general graphs",
+    "\"Partial Grundy\" \"parameterized\" arXiv 2001.03794 Aboulker Bonnet"
+  ],
+  "notes": "The resolving paper also gives FPT for Grundy Coloring on K_{i,j}-free graphs, extending the partial results of the source paper. The source paper had shown FPT for Partial Grundy Coloring on K_{t,t}-free graphs; the 2025 paper lifts this to all graphs."
+}

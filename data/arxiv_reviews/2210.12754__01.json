@@ -1,0 +1,33 @@
+{
+  "review_id": "2210.12754__01",
+  "safe_id": "2210.12754",
+  "arxiv_id": "2210.12754",
+  "conjecture_title": "Open Problem (accurate estimate in the bipartite case)",
+  "paper_title": "Largest subgraph from a hereditary property in a random graph",
+  "published": "2022-10-23",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The open problem asks for a sharp asymptotic for ex(G(n,p),P) when the minimum chromatic number of a graph not in P is 2 (i.e., P misses a bipartite graph), a case where the main theorem of the source paper yields only o(n^2). Clifton, Liu, Mattos, and Zheng (arXiv:2405.09486, 2024) directly answer the explicit sub-question posed by Alon–Krivelevich–Samotij: they prove that ex(G(n,p),P) = O(n^{2-epsilon}) with high probability for some epsilon=epsilon(P)>0, establishing a polynomial improvement over the trivial o(n^2) bound. For excluded complete bipartite graphs K_{s,t} they obtain the more precise bound O(n^{2-1/s}(log n)^{1/s}). However, determining the precise order of magnitude for general hereditary properties missing an arbitrary bipartite graph remains open.",
+  "since_posted": [
+    {
+      "title": "Subgraphs of random graphs in hereditary families",
+      "authors": "Alexander Clifton, Hong Liu, Leticia Mattos, Michael Zheng",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2405.09486",
+      "arxiv_id": "2405.09486",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves ex(G(n,p),P) = O(n^{2-epsilon}) whp for some epsilon>0 whenever P misses a bipartite graph, giving a polynomial improvement over the o(n^2) bound and directly answering one part of the open question; for K_{s,t}-free hereditary properties the bound is refined to O(n^{2-1/s}(log n)^{1/s})."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "ex G(n,p) hereditary property bipartite extremal number random graph Alon Krivelevich Samotij 2210.12754",
+    "extremal number hereditary property random graph bipartite Zarankiewicz Kovari-Sos-Turan random graph sharp estimate"
+  ],
+  "notes": "arXiv:2405.09486 explicitly cites 2210.12754 and answers the polynomial sub-question (n^{2-epsilon} upper bound), but the precise order of magnitude for general bipartite-missing hereditary properties is still not determined, so the open problem is only partially resolved."
+}

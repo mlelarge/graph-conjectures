@@ -1,0 +1,25 @@
+[
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Problem 1.4",
+    "statement_text": "Given an oriented matroid $\\vec{M}$, decide whether there exists a directed circuit of even size in $\\vec{M}$.",
+    "context_text": "This is the paper's straight-forward generalisation of the even dicycle problem from digraphs to oriented matroids, and constitutes the central algorithmic motivation of the work. The authors show in Theorem 1.6 that this problem is polynomially equivalent to recognising non-even oriented regular matroids.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "PDF source; the statement is short and mathematically simple, so extraction is reliable.",
+    "arxiv_id": "2010.08988",
+    "paper_title": "Even Circuits in Oriented Matroids",
+    "paper_authors": [
+      "Karl Heuer",
+      "Raphael Steiner",
+      "Sebastian Wiederrecht"
+    ],
+    "published": "2020-10-18",
+    "abs_url": "https://arxiv.org/abs/2010.08988",
+    "source": "pdf"
+  }
+]

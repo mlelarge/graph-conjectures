@@ -1,0 +1,33 @@
+{
+  "review_id": "2302.12633__00",
+  "safe_id": "2302.12633",
+  "arxiv_id": "2302.12633",
+  "conjecture_title": "Problem 41",
+  "paper_title": "Neighborhood complexity of planar graphs",
+  "published": "2023-12-19",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "Problem 41 asks to determine the profile and neighborhood complexities of planar graphs up to a constant factor; as of 2026 the gaps (profile: $\\Omega(r^3)$ vs $\\mathcal{O}(r^4)$; neighborhood: $\\Omega(r^2)$ vs $\\mathcal{O}(r^4)$) remain unresolved for planar graphs. A 2025 follow-up (arXiv:2501.08895) improves bounds for graphs of bounded treewidth and graphs excluding a fixed minor, answering the related Problem 42 from the same paper, but planar graphs in general have unbounded treewidth and the specific planar-graph question of Problem 41 is not addressed by that work.",
+  "since_posted": [
+    {
+      "title": "Profile and neighbourhood complexity of graphs excluding a minor and tree-structured graphs",
+      "authors": "Laurent Beaudou, Jan Bok, Florent Foucaud, Daniel A. Quiroz, Jean-Florent Raymond",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2501.08895",
+      "arxiv_id": "2501.08895",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Improves profile and neighbourhood complexity bounds for graphs excluding a fixed minor and for graphs of bounded treewidth (answering Problem 42 of the source paper), but does not resolve the tight-bound question for general planar graphs (Problem 41)."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "neighborhood complexity planar graphs profile complexity Joret Rambaud 2302.12633",
+    "neighborhood complexity planar graphs r^3 r^4 tight bound 2024 2025"
+  ],
+  "notes": "The source paper was published in Combinatorica 44, 1115–1148 (2024). The 2025 follow-up arXiv:2501.08895 makes partial progress by answering Problem 42 (bounds for minor-free and bounded-treewidth graph classes), but Problem 41 for planar graphs specifically remains open. Note that planar graphs have unbounded treewidth (e.g., grid graphs), so bounded-treewidth results do not transfer directly to all planar graphs."
+}

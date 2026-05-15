@@ -1,0 +1,52 @@
+[
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Question 1.3 (Vizing's Edge Colouring Question)",
+    "statement_text": "For every simple graph $G$, for any integer $k > \\chi'(G)$, for any $k$-edge-colouring $\\alpha$, is there a $\\chi'(G)$-edge-colouring that can be reached from $\\alpha$ through a series of Kempe changes?",
+    "context_text": "Vizing posed this question in his 1965 paper extending the edge colouring theorem to multigraphs, asking whether an optimal edge colouring can always be reached from any proper edge colouring via Kempe changes. The question is stated in the more general context of multigraphs. Progress was made by McDonald–Mohar–Scheide (2012) for $\\Delta(G)=3$ and Asratian–Casselgren (2016) for $\\Delta(G)=4$.",
+    "attributed_to": "Vizing",
+    "attributed_year": 1965,
+    "paper_contribution": "Answers the question affirmatively for all triangle-free graphs (Theorem 1.6): for every triangle-free graph $G$, for any integer $k > \\chi'(G)$, any given $\\chi'(G)$-edge-colouring can be reached from any $k$-edge-colouring through a series of Kempe changes.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source — inequality symbols may be rendered as strict > where the original may use ≥; mathematically k > χ'(G) (strictly greater) is the intended reading.",
+    "arxiv_id": "2107.07900",
+    "paper_title": "On Vizing's edge colouring question",
+    "paper_authors": [
+      "Marthe Bonamy",
+      "Oscar Defrain",
+      "Tereza Klimošová",
+      "Aurélie Lagoutte",
+      "Jonathan Narboni"
+    ],
+    "published": "2021-07-16",
+    "abs_url": "https://arxiv.org/abs/2107.07900",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.4 (Mohar)",
+    "statement_text": "For every simple graph $G$, all $(\\Delta(G) + 2)$-edge-colourings are Kempe-equivalent.",
+    "context_text": "Mohar conjectured in 2006 that any two $(\\Delta(G)+2)$-edge-colourings are connected by Kempe changes. Mohar himself proved the weaker statement with $\\chi'(G)+2$ in place of $\\Delta(G)+2$, and noted that Kempe-equivalence may fail at $\\chi'(G)$ colours (e.g. $K_5$ and $K_{5,5}$). A positive answer to Vizing's Question 1.3 would imply this conjecture.",
+    "attributed_to": "Mohar",
+    "attributed_year": 2006,
+    "paper_contribution": "Proves the conjecture for all triangle-free graphs: Theorem 1.6 and Corollary 1.7 together imply that all $(\\chi'(G)+1)$-edge-colourings are Kempe-equivalent for triangle-free $G$, which subsumes Conjecture 1.4 since $\\Delta(G)+2 \\geq \\chi'(G)+1$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2107.07900",
+    "paper_title": "On Vizing's edge colouring question",
+    "paper_authors": [
+      "Marthe Bonamy",
+      "Oscar Defrain",
+      "Tereza Klimošová",
+      "Aurélie Lagoutte",
+      "Jonathan Narboni"
+    ],
+    "published": "2021-07-16",
+    "abs_url": "https://arxiv.org/abs/2107.07900",
+    "source": "pdf"
+  }
+]

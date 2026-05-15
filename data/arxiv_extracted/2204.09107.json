@@ -1,0 +1,24 @@
+[
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Friedman-Krivelevich Open Problem on Cycle Lengths Modulo k in Expanders",
+    "statement_text": "Find conditions on $\\alpha > 0$ guaranteeing that sufficiently large $\\alpha$-expanding graphs contain cycles of length congruent to a given residue $r$ modulo $k$; in particular, determine whether cycles of length $0 \\pmod{k}$ can be guaranteed in $\\alpha$-expanding graphs.",
+    "context_text": "Friedman and Krivelevich raised this open problem at the end of their paper on the cycle spectrum of expanding graphs (Combinatorica, 41(1), 2021). They had shown that the cycle spectrum of a sufficiently large $\\alpha$-expanding graph has only gaps of constant size, but the modular arithmetic of cycle lengths in expanders had not yet been studied.",
+    "attributed_to": "Friedman and Krivelevich",
+    "attributed_year": 2021,
+    "paper_contribution": "Proves that for every integer $k > 1$ with smallest prime divisor $p$ and every $\\alpha > \\frac{1}{p-1}$, every sufficiently large $\\alpha$-expanding graph contains cycles of length congruent to any given residue modulo $k$ (Theorem 1.3); also establishes near-tightness by showing that for $\\alpha < \\frac{c}{p-1}$ there exist arbitrarily large $\\alpha$-expanding graphs with no cycles of certain residues modulo $k$ (Proposition 1.4).",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "The problem is described in detail in the introduction with explicit attribution and journal reference; no separate labelled environment. Section 4, announced as containing additional open problems posed by the paper's authors, is absent from the PDF extraction.",
+    "arxiv_id": "2204.09107",
+    "paper_title": "Cycle lengths modulo $k$ in expanders",
+    "paper_authors": [
+      "Anders Martinsson",
+      "Raphael Steiner"
+    ],
+    "published": "2022-04-19",
+    "abs_url": "https://arxiv.org/abs/2204.09107",
+    "source": "pdf"
+  }
+]

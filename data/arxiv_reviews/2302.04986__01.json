@@ -1,0 +1,28 @@
+{
+  "review_id": "2302.04986__01",
+  "safe_id": "2302.04986",
+  "arxiv_id": "2302.04986",
+  "conjecture_title": "Conjecture 1.13",
+  "paper_title": "Hitting all maximum stable sets in $P_5$-free graphs",
+  "published": "2024-01-16",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The conjecture that $P_t$-free graphs are $\\eta$-bounded for every $t \\geq 6$ remains open as of May 2026. The source paper establishes $\\eta$-boundedness for $P_5$-free graphs (Theorem 1.12) and also resolves the $\\eta$-boundedness for $H$-free graphs when $H$ is a proper induced subgraph of $P_5$. A separate 2025 result (Electronic Journal of Combinatorics) resolves a different conjecture from the same paper—bounding $h(G)$ for graphs without large induced matchings—but does not address $P_t$-free graphs for $t \\geq 6$. No paper resolving or disproving Conjecture 1.13 was found in a wide web search.",
+  "since_posted": [],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2507.06169",
+      "verified": true,
+      "note": "This paper (Chudnovsky, Fischer, Hajebi, Spirkl, Walczak, 2025) constructs a simple layered-wheel-like graph counterexample to Trotignon's conjecture about outerstring induced subgraphs and treewidth. It does not address $\\eta$-boundedness or $P_t$-free graphs. The high fuzz score (81) is a false positive due to shared authors; the paper's subject is entirely unrelated to Conjecture 1.13."
+    }
+  ],
+  "search_queries": [
+    "eta-bounded P_t-free graphs Hajebi Spirkl 2302.04986",
+    "eta-boundedness Pt-free graphs stable sets hitting conjecture 2024 2025",
+    "\"eta-bounded\" \"P_6-free\" OR \"P6-free\" OR \"Pt-free\" hitting maximum stable independent sets 2024 2025 2026"
+  ],
+  "notes": "No follow-up paper resolving Conjecture 1.13 was found. The conjecture is recent (2024) and widely searched; open with high confidence. The related paper arXiv:2402.11222 and the Electronic Journal of Combinatorics paper 'Piercing Independent Sets in Graphs without Large Induced Matching' (v32i1p10, 2025) resolve a different conjecture from the same source paper (about graphs with bounded induced matching number), not Conjecture 1.13."
+}

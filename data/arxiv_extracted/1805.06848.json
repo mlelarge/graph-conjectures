@@ -1,0 +1,50 @@
+[
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.1 (The Edge-statistics Conjecture)",
+    "statement_text": "For every $\\varepsilon > 0$ there exists $k_0 = k_0(\\varepsilon)$ such that for all integers $k > k_0$ and $0 < \\ell < \\binom{k}{2}$ we have $\\mathrm{ind}(k, \\ell) \\leq 1/e + \\varepsilon$.",
+    "context_text": "The authors observe that the random graph $G(n,p)$ with $p = \\binom{k}{2}^{-1}$ gives $\\mathrm{ind}(k,1) \\geq 1/e + o_k(1)$, and that the complete bipartite graph with smaller part of size $n/k$ achieves the same asymptotic lower bound for $\\ell = k-1$. These constructions, together with additional data, motivate the conjecture that $1/e$ is an asymptotically tight upper bound for every non-trivial $\\ell$.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1805.06848",
+    "paper_title": "Edge-statistics on large graphs",
+    "paper_authors": [
+      "Noga Alon",
+      "Dan Hefetz",
+      "Michael Krivelevich",
+      "Mykhaylo Tyomkyn"
+    ],
+    "published": "2019-11-01",
+    "abs_url": "https://arxiv.org/abs/1805.06848",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.2 (The Large Inducibility Conjecture)",
+    "statement_text": "$\\limsup\\{\\mathrm{ind}(H) : H \\notin \\{K_{|H|}, \\overline{K}_{|H|}\\}\\} = 1/e$.",
+    "context_text": "This conjecture for graph inducibilities is presented as an analogue of the Edge-statistics Conjecture (Conjecture 1.1), and would be implied by it. It asserts that no graph other than a complete or empty graph can have inducibility exceeding $1/e$ in the limit over large host graphs.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1805.06848",
+    "paper_title": "Edge-statistics on large graphs",
+    "paper_authors": [
+      "Noga Alon",
+      "Dan Hefetz",
+      "Michael Krivelevich",
+      "Mykhaylo Tyomkyn"
+    ],
+    "published": "2019-11-01",
+    "abs_url": "https://arxiv.org/abs/1805.06848",
+    "source": "pdf"
+  }
+]

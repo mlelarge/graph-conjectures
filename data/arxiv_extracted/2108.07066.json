@@ -1,0 +1,48 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Gyárfás-Sumner Conjecture (Conjecture 1.1)",
+    "statement_text": "For every forest $H$, there is a function $f$ such that $\\chi(G) \\leq f(\\omega(G))$ for every $H$-free graph $G$.",
+    "context_text": "The Gyárfás-Sumner conjecture asserts that the class of $H$-free graphs is $\\chi$-bounded whenever $H$ is a forest (the necessary condition, since triangle-free graphs can have arbitrarily large chromatic number by Erdős's construction). It remains open in general, though it has been verified for several restricted families of trees.",
+    "attributed_to": "Gyárfás and Sumner",
+    "attributed_year": 1981,
+    "paper_contribution": "Proves that for every double star $H$ the bounding function $f$ in the Gyárfás-Sumner conjecture can be chosen to be a polynomial, i.e., $\\chi(G) \\leq f(\\omega(G))$ with $f$ a polynomial for every $H$-free graph $G$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Conjecture is labeled 1.1 in the paper and attributed to [8] (Gyárfás) and [20] (Sumner); Sumner's independent formulation dates to 1981, Gyárfás's to 1987.",
+    "arxiv_id": "2108.07066",
+    "paper_title": "Polynomial bounds for chromatic number. III. Excluding a double star",
+    "paper_authors": [
+      "Alex Scott",
+      "Paul Seymour",
+      "Sophie Spirkl"
+    ],
+    "published": "2021-08-16",
+    "abs_url": "https://arxiv.org/abs/2108.07066",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Esperet's Polynomial χ-Boundedness Conjecture",
+    "statement_text": "For every $\\chi$-bounded class $\\mathcal{C}$, the bounding function $f$ (satisfying $\\chi(G) \\leq f(\\omega(G))$ for all $G \\in \\mathcal{C}$) can be chosen to be a polynomial.",
+    "context_text": "Esperet's conjecture is a bold strengthening: even though proofs of $\\chi$-boundedness typically use iterated Ramsey arguments yielding rapidly growing functions, Esperet conjectured that a polynomial always suffices. In particular, it implies that the function $f$ in the Gyárfás-Sumner conjecture can always be taken to be a polynomial.",
+    "attributed_to": "Louis Esperet",
+    "attributed_year": null,
+    "paper_contribution": "Proves Esperet's strengthening of the Gyárfás-Sumner conjecture for all double stars $H$, and more generally for all trees that do not contain $P_5$ as an induced subgraph.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "Stated in prose without a labelled theorem environment; cited as [7] in the paper. The remaining open case highlighted is $H = P_5$.",
+    "arxiv_id": "2108.07066",
+    "paper_title": "Polynomial bounds for chromatic number. III. Excluding a double star",
+    "paper_authors": [
+      "Alex Scott",
+      "Paul Seymour",
+      "Sophie Spirkl"
+    ],
+    "published": "2021-08-16",
+    "abs_url": "https://arxiv.org/abs/2108.07066",
+    "source": "pdf"
+  }
+]

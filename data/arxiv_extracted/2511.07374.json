@@ -1,0 +1,48 @@
+[
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Question 1.3 (Question 16 of [CPT25])",
+    "statement_text": "Determine at least asymptotically $ex_{b,c}(n,n,P_{k})$ for any fixed $k$.",
+    "context_text": "Caro, Patkós and Tuza posed this question in the conclusion of their 2025 paper on bipartite Turán numbers of trees. The present paper solves it completely, providing exact values (not merely asymptotic ones) and removing the balance restriction.",
+    "attributed_to": "Caro, Patkós, and Tuza",
+    "attributed_year": 2025,
+    "paper_contribution": "Proves Theorem 1.5: for every $k\\geqslant 3$ and every $b\\geqslant a\\geqslant k$, $ex_{b,c}(a,b,P_{2k})=ex_{b,c}(a,b,P_{2k-1})=(k-2)(b-1)+a$, giving the exact value for all path lengths and all (possibly unbalanced) bipartitions.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2511.07374",
+    "paper_title": "Bipartite Turán number of paths and other trees",
+    "paper_authors": [
+      "Marthe Bonamy",
+      "Théotime Leclere",
+      "Timothé Picavet"
+    ],
+    "published": "2025-11-10",
+    "abs_url": "https://arxiv.org/abs/2511.07374",
+    "source": "html"
+  },
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Question 1.4 (Part of Question 14 of [CPT25])",
+    "statement_text": "Determine $ex_{b,c}$ for specific families of trees.",
+    "context_text": "Also posed by Caro, Patkós and Tuza in [CPT25], this question asks for the connected bipartite Turán number for tree families beyond paths. The present paper addresses it for brooms $S_{p,d}$, which consist of a path of length $p$ attached to a star with $d$ branches.",
+    "attributed_to": "Caro, Patkós, and Tuza",
+    "attributed_year": 2025,
+    "paper_contribution": "Provides exact values $ex_{b,c}(n,n,S_{2k,d})=ex_{b,c}(n,n,S_{2k+1,d})=nd$ for brooms when $d>2k$ and $n\\geqslant d^2/2$ (Theorem 1.6), and the upper bound $ex_{b,c}(n,n,S_{2k+1,d*1})\\leqslant 2nk+1$ when $k>d\\geqslant 2$ (Theorem 1.7).",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2511.07374",
+    "paper_title": "Bipartite Turán number of paths and other trees",
+    "paper_authors": [
+      "Marthe Bonamy",
+      "Théotime Leclere",
+      "Timothé Picavet"
+    ],
+    "published": "2025-11-10",
+    "abs_url": "https://arxiv.org/abs/2511.07374",
+    "source": "html"
+  }
+]

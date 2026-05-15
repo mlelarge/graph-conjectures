@@ -1,0 +1,52 @@
+[
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Open Problem: Polynomial-time MWIS on even-hole-free graphs",
+    "statement_text": "Does there exist a polynomial-time algorithm for the Maximum Weight Independent Set problem on even-hole-free graphs?",
+    "context_text": "On even-hole-free graphs, Maximum Weight Clique is known to be polynomial-time solvable, but the question of whether a polynomial-time algorithm exists for Maximum Weight Independent Set remains open. This is in stark contrast to perfect graphs, for which polynomial-time algorithms have been known since 1981. The present paper gives a quasi-polynomial-time algorithm via a polylogarithmic tree independence number bound, but the polynomial-time question is not resolved.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated in prose in the introduction without a labelled theorem environment; the paper provides quasi-polynomial-time progress but leaves polynomial-time open.",
+    "arxiv_id": "2407.08927",
+    "paper_title": "Tree Independence Number IV. Even-hole-free Graphs",
+    "paper_authors": [
+      "Maria Chudnovsky",
+      "Peter Gartland",
+      "Sepehr Hajebi",
+      "Daniel Lokshtanov",
+      "Sophie Spirkl"
+    ],
+    "published": "2024-07-12",
+    "abs_url": "https://arxiv.org/abs/2407.08927",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Open Problem: Polynomial-time Coloring on even-hole-free graphs",
+    "statement_text": "Does there exist a polynomial-time algorithm for the Coloring problem (computing the chromatic number) on even-hole-free graphs?",
+    "context_text": "On even-hole-free graphs, the question of whether a polynomial-time algorithm for Coloring exists remains open, in stark contrast to perfect graphs where polynomial-time algorithms have been known since 1981. The paper's quasi-polynomial-time results via tree independence number do not resolve this question.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated in prose in the introduction without a labelled theorem environment; paired with the MWIS open problem as long-standing open questions for even-hole-free graphs.",
+    "arxiv_id": "2407.08927",
+    "paper_title": "Tree Independence Number IV. Even-hole-free Graphs",
+    "paper_authors": [
+      "Maria Chudnovsky",
+      "Peter Gartland",
+      "Sepehr Hajebi",
+      "Daniel Lokshtanov",
+      "Sophie Spirkl"
+    ],
+    "published": "2024-07-12",
+    "abs_url": "https://arxiv.org/abs/2407.08927",
+    "source": "html"
+  }
+]

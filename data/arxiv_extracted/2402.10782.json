@@ -1,0 +1,71 @@
+[
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Problem 4.1",
+    "statement_text": "Given a tournament $T$, what is the complexity of deciding if $T$ has a triangle-free FAS?",
+    "context_text": "Aubian [6] raised this problem in the context of computing the clique number of tournaments (shown NP-complete in [6]). The $\\mathcal{C}$-FAS Problem is considered natural because of its links with the dichromatic number and the clique number of tournaments, and because it defines natural classes of tournaments.",
+    "attributed_to": "Guillaume Aubian",
+    "attributed_year": 2024,
+    "paper_contribution": "Proves that the $\\mathcal{C}$-FAS Problem is NP-complete when $\\mathcal{C}$ is the class of all forests (a subclass of triangle-free graphs), strengthening related NP-completeness results but leaving Problem 4.1 open.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2402.10782",
+    "paper_title": "Finding forest-orderings of tournaments is NP-complete",
+    "paper_authors": [
+      "Pierre Aboulker",
+      "Guillaume Aubian",
+      "Raul Lopes"
+    ],
+    "published": "2026-01-23",
+    "abs_url": "https://arxiv.org/abs/2402.10782",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 4.2",
+    "statement_text": "There is a function $f$ such that for every integer $k$, there is a polynomial-time algorithm that, given a tournament $T$, correctly concludes that $\\operatorname{\\overrightarrow{\\omega}}(T)\\geq k$, or finds an order $\\prec$ of $V(T)$ such that $\\omega(T^{\\prec})\\leq f(k)$",
+    "context_text": "Aboulker et al. [2] proved an approximation version for $k=3$: there is a constant $c$ and a polynomial-time algorithm that either certifies $\\operatorname{\\overrightarrow{\\omega}}(T)\\geq 3$ or finds an ordering $\\prec$ with $\\omega(T^{\\prec})\\leq c$. The conjecture asks whether such an approximation scheme extends to all $k$.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2402.10782",
+    "paper_title": "Finding forest-orderings of tournaments is NP-complete",
+    "paper_authors": [
+      "Pierre Aboulker",
+      "Guillaume Aubian",
+      "Raul Lopes"
+    ],
+    "published": "2026-01-23",
+    "abs_url": "https://arxiv.org/abs/2402.10782",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Problem 4.4",
+    "statement_text": "What is the complexity of the $\\mathcal{C}$-FAS Problem when $\\mathcal{C}$ is the set of all paths? when $\\mathcal{C}$ is the set of graphs with maximum degree $1$?",
+    "context_text": "Following the NP-completeness of the $\\mathcal{C}$-FAS Problem for forests (Theorem 1.1), it is natural to ask for which classes $\\mathcal{C}$ the problem is in P. Paths and matchings (graphs with maximum degree at most 1) are two natural candidates for tractable cases.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2402.10782",
+    "paper_title": "Finding forest-orderings of tournaments is NP-complete",
+    "paper_authors": [
+      "Pierre Aboulker",
+      "Guillaume Aubian",
+      "Raul Lopes"
+    ],
+    "published": "2026-01-23",
+    "abs_url": "https://arxiv.org/abs/2402.10782",
+    "source": "html"
+  }
+]

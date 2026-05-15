@@ -1,0 +1,50 @@
+{
+  "review_id": "2108.02685__00",
+  "safe_id": "2108.02685",
+  "arxiv_id": "2108.02685",
+  "conjecture_title": "Conjecture 1.1",
+  "paper_title": "Irregular Subgraphs",
+  "published": "2021-08-06",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Conjecture 1.1 remains open for general d, but significant partial progress has been made. Fox, Luo, and Pham (2022) confirmed the asymptotic weaker version (Conjecture 1.2) for d = o(n/(log n)^12) via a probabilistic argument. Ma and Xie (2024) proved, via deterministic local adjustment techniques, that the conjecture holds exactly for d=3 (cubic graphs, in a strong form) and gave a general bound |m(H,k) - n/(d+1)| ≤ 2d² independent of n for all d-regular graphs — the first such n-independent bound.",
+  "since_posted": [
+    {
+      "title": "On random irregular subgraphs",
+      "authors": "Jacob Fox, Sammy Luo, Huy Tuan Pham",
+      "year": 2022,
+      "venue": "arXiv preprint (published in Random Structures & Algorithms, 2024)",
+      "url": "https://arxiv.org/abs/2207.13651",
+      "arxiv_id": "2207.13651",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Confirms the asymptotic version of Conjecture 1.1 (Conjecture 1.2) for all d-regular graphs with d = o(n/(log n)^12) by showing the irregular random subgraph H satisfies m(H,k) = (1+o(1))n/(d+1) for all 0 ≤ k ≤ d with high probability; does not resolve Conjecture 1.1 itself."
+    },
+    {
+      "title": "Finding irregular subgraphs via local adjustments",
+      "authors": "Jie Ma, Shengjie Xie",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2406.05675",
+      "arxiv_id": "2406.05675",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Fully proves Conjecture 1.1 for d=3 (cubic graphs) in a strong form and establishes a general n-independent bound |m(H,k) - n/(d+1)| ≤ 2d² for all d-regular graphs, using deterministic local adjustment techniques."
+    }
+  ],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2207.13651",
+      "verified": true,
+      "note": "Four internal references all point to this single paper. Abstract confirms it addresses 'a problem of Alon and Wei' and proves the asymptotic version for d = o(n/(log n)^12); contribution description in the internal refs is accurate."
+    }
+  ],
+  "search_queries": [
+    "irregular subgraphs d-regular spanning subgraph degree distribution conjecture Alon Wei 2108.02685",
+    "irregular subgraph regular graph m(H,k) n/(d+1) conjecture spanning subgraph 2022 2023 2024"
+  ],
+  "notes": "Conjecture 1.1 is open for d ≥ 4 in general. The Ma-Xie 2024 paper (arXiv:2406.05675) represents the strongest deterministic progress: it resolves d=3 completely and provides the first n-independent general bound. The Fox-Luo-Pham paper was published in Random Structures & Algorithms (2024) but the DOI link (Wiley) returned HTTP 402 and could not be verified directly."
+}

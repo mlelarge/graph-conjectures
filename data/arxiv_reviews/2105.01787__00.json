@@ -1,0 +1,34 @@
+{
+  "review_id": "2105.01787__00",
+  "safe_id": "2105.01787",
+  "arxiv_id": "2105.01787",
+  "conjecture_title": "Open Problem: 5-Coloring complexity for H-free graphs with a P4 component",
+  "paper_title": "Complexity dichotomy for List-5-Coloring with a forbidden induced subgraph",
+  "published": "2022-08-30",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "solved",
+  "confidence": "high",
+  "summary": "The open problem about the complexity of the List-5-Coloring Problem restricted to H-free graphs, when H has a P4 component and H minus V(C) is an induced subgraph of rP3 containing at least one edge, was fully resolved by Chudnovsky, Hajebi, and Spirkl (arXiv:2311.05713, Combinatorica 2024). Their main theorem establishes a complete complexity dichotomy for List-k-Coloring on H-free graphs for all k > 4: the problem is polynomial-time solvable if and only if every component of H is a path on at most three vertices, or removing the isolated vertices of H leaves an induced subgraph of the five-vertex path P5. For every H in the conjecture's family, the non-isolated part of H contains a P4 plus at least one further edge (contributing at least 2 more vertices), giving at least 6 vertices total, which cannot embed in P5; since neither polynomial condition holds, List-5-Coloring is NP-complete for all such H-free graphs.",
+  "since_posted": [
+    {
+      "title": "List-k-Coloring H-Free Graphs for All k>4",
+      "authors": "Maria Chudnovsky, Sepehr Hajebi, Sophie Spirkl",
+      "year": 2023,
+      "venue": "Combinatorica",
+      "url": "https://arxiv.org/abs/2311.05713",
+      "arxiv_id": "2311.05713",
+      "doi": "10.1007/s00493-024-00106-2",
+      "kind": "proof",
+      "claim": "Proves a complete complexity dichotomy for List-k-Coloring on H-free graphs for all k > 4 (assuming P≠NP), establishing NP-completeness precisely for those H-free graphs not covered by the two polynomial conditions, which includes all H in the conjecture's family."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "5-coloring H-free graphs P4 complexity dichotomy Hajebi Li Spirkl 2105.01787",
+    "5-coloring H-free graphs P3 P4 NP-complete polynomial complexity open problem graph coloring 2022 2023 2024",
+    "Hajebi \"List-k-Coloring H-Free Graphs\" \"k>4\" arxiv complexity dichotomy"
+  ],
+  "notes": "arXiv:2311.05713 (Chudnovsky, Hajebi, Spirkl; Combinatorica 44(5):1063-1068, 2024) provides the complete resolution. The dichotomy states: List-k-Coloring on H-free graphs is polytime solvable iff (i) every component of H is a path on ≤3 vertices, or (ii) H minus isolated vertices is an induced subgraph of P5. For the conjecture's H (P4 component plus at least one extra edge), neither condition holds (the non-isolated part has ≥6 vertices, too large for P5, and P4 has 4 vertices exceeding the '≤3 vertices' bound), so all such cases are NP-complete. The conjecture refers to '5-Coloring Problem' which, in the context of the List-5-Coloring paper 2105.01787, is most naturally interpreted as the list variant, directly resolved by 2311.05713."
+}

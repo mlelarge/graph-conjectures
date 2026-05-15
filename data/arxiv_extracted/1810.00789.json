@@ -1,0 +1,27 @@
+[
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Dom-Enum Open Problem",
+    "statement_text": "Can the minimal dominating sets of a graph be enumerated in output-polynomial time?",
+    "context_text": "It is a long-standing open problem whether the minimal dominating sets of a graph can be enumerated in output-polynomial time. The problem is equivalent to Trans-Enum (enumerating minimal transversals of a hypergraph), for which the best known algorithm runs in quasi-polynomial time due to Fredman and Khachiyan.",
+    "attributed_to": "unknown",
+    "attributed_year": null,
+    "paper_contribution": "Provides output-polynomial time and polynomial space algorithms for $(K_t+K_2)$-free graphs (and thus $K_t$-free graphs), answering an explicit question of Kanté et al. for bipartite graphs, and also for paw-free and diamond-free graphs.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "No specific original proposer is cited for Dom-Enum; described throughout the literature as a long-standing open problem. The Trans-Enum equivalence and Fredman–Khachiyan quasi-polynomial bound [FK96] are cited as context. Full text was truncated after Section 3; Sections 7–8 ('obstacles to stronger theorems' and 'future research directions') were not available, so any conjectures stated there could not be extracted.",
+    "arxiv_id": "1810.00789",
+    "paper_title": "Enumerating minimal dominating sets in $K_t$-free graphs and variants",
+    "paper_authors": [
+      "Marthe Bonamy",
+      "Oscar Defrain",
+      "Marc Heinrich",
+      "Jean-Florent Raymond",
+      "Michał Pilipczuk"
+    ],
+    "published": "2020-03-05",
+    "abs_url": "https://arxiv.org/abs/1810.00789",
+    "source": "pdf"
+  }
+]

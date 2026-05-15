@@ -1,0 +1,22 @@
+{
+  "review_id": "1811.12252__00",
+  "safe_id": "1811.12252",
+  "arxiv_id": "1811.12252",
+  "conjecture_title": "Research Question (Introduction)",
+  "paper_title": "Graph Isomorphism for $(H_1,H_2)$-free Graphs: An Almost Complete Dichotomy",
+  "published": "2019-09-03",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The source paper itself represents major progress on this research question, resolving the computational complexity of Graph Isomorphism for $(H_1,H_2)$-free graphs for all but six pairs $(H_1,H_2)$, and was published in Algorithmica in 2021. No subsequent paper resolving the remaining six open cases has been found in the indexed literature through May 2026; the complete dichotomy for all pairs $(H_1,H_2)$ remains open.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Graph Isomorphism H1 H2 free graphs dichotomy complexity Bonamy Bousquet Dabrowski Johnson Paulusma",
+    "graph isomorphism H-free graphs computational complexity dichotomy arXiv 1811.12252",
+    "graph isomorphism H1 H2 free graphs remaining open cases complete dichotomy 2020 2021 2022 2023 2024 2025"
+  ],
+  "notes": "The source paper (published in Algorithmica 2021, doi:10.1007/s00453-020-00747-x) settled all but six pairs (H1,H2). Schweitzer had previously proved that only finitely many cases remain open. Wide web search (Semantic Scholar, Paulusma's publication list, arXiv) found no follow-up paper resolving the remaining six cases; the complete dichotomy question is still open with high confidence."
+}

@@ -1,0 +1,22 @@
+{
+  "review_id": "2506.07264__04",
+  "safe_id": "2506.07264",
+  "arxiv_id": "2506.07264",
+  "conjecture_title": "Conjecture 9.4",
+  "paper_title": "Refinement of a conjecture on positive square energy of graphs",
+  "published": "2025-06-08",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 9.4 from arXiv:2506.07264 asserts that s^+(G) >= n for every connected graph G of order n with clique number omega(G) >= 3; this refines Conjecture 1.1 (s^+(G) >= n-1 for all connected G) by exploiting the presence of a large clique. No follow-up paper resolving or partially settling this specific conjecture was found in a wide web search conducted in May 2026, approximately 11 months after the paper appeared. The closest related work (arXiv:2409.18220, EJC v32i3p53) establishes s(G) >= 3n/4 for all connected G of order n >= 4 but predates 2506.07264 and does not address the clique-number condition.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "positive square energy graphs s+(G) clique number Akbari Mohar Pragada Zhang 2025",
+    "arxiv 2506.07264 positive square energy clique number conjecture 2025 2026",
+    "square energy graph s+(G) omega(G) clique triangle unicyclic 2025 2026 Akbari Pragada"
+  ],
+  "notes": "No follow-up found. The conjecture is very recent (June 2025). The source paper itself proves the analogous bound for claw-free graphs and diameter-2 graphs (as part of the broader Conjecture 1.2 programme) but leaves Conjecture 9.4 open, identifying unicyclic graphs containing a triangle as the main obstacle. The earlier companion paper arXiv:2409.18220 (same group) proves s(G) >= 3n/4 but is a distinct, weaker result that predates this conjecture."
+}

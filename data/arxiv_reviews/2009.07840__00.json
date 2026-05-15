@@ -1,0 +1,55 @@
+{
+  "review_id": "2009.07840__00",
+  "safe_id": "2009.07840",
+  "arxiv_id": "2009.07840",
+  "conjecture_title": "Informal Conjecture (§1.2, Theorem 1.1 remarks)",
+  "paper_title": "Typical and Extremal Aspects of Friends-and-Strangers Graphs",
+  "published": "2021-06-15",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "medium",
+  "summary": "Three follow-up papers have narrowed the gap in Theorem 1.1 of the source paper. Milojevic (arXiv:2210.03864, 2022) improved the isolated-vertex lower bound and disproved two formal conjectures from the source paper about threshold probabilities. Krishnan and Li (arXiv:2410.21334, 2024) established k-connectivity for p ≥ n^{-1/2+o(1)}, bringing the connectivity upper bound and isolated-vertex lower bound to the same asymptotic order n^{-1/2+o(1)}, broadly consistent with the informal conjecture. A sharp threshold matching an exact constant has not been proved.",
+  "since_posted": [
+    {
+      "title": "Connectivity of friends-and-strangers graphs on random pairs",
+      "authors": "Lanchao Wang, Yaojun Chen",
+      "year": 2022,
+      "venue": "Discrete Mathematics",
+      "url": "https://arxiv.org/abs/2208.00801",
+      "arxiv_id": "2208.00801",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Extends the connectivity threshold analysis to the asymmetric case X ∈ G(n,p₁), Y ∈ G(n,p₂), showing FS(X,Y) is connected with high probability when p₁p₂ ≥ n^{-1+o(1)}, consistent with the isolated-vertex-threshold heuristic."
+    },
+    {
+      "title": "Connectivity of Old and New Models of Friends-and-Strangers Graphs",
+      "authors": "Aleksa Milojevic",
+      "year": 2022,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2210.03864",
+      "arxiv_id": "2210.03864",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Slightly improves the isolated-vertex lower bound on the disconnectedness threshold for FS(X,Y) when X,Y ∼ G(n,p), showing isolated vertices persist up to p = O(log n / n^{1/2}), and in doing so disproves two formal conjectures of Alon, Defant, and Kravitz about specific threshold probabilities."
+    },
+    {
+      "title": "On the Connectivity of Friends-and-strangers Graphs",
+      "authors": "Neil Krishnan, Rupert Li",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2410.21334",
+      "arxiv_id": "2410.21334",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Shows that for independent G(n,p₁) and G(n,p₂) with p₁p₂ ≥ p₀² where p₀ = n^{-1/2+o(1)}, FS(X,Y) is k-connected with high probability, improving the connectivity upper bound in the symmetric case to the same n^{-1/2+o(1)} order as the isolated-vertex threshold."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Friends-and-Strangers graphs connectivity threshold random graph G(n,p) Alon Defant Kravitz 2009.07840",
+    "FS(X,Y) connected isolated vertex threshold binomial random graph arxiv"
+  ],
+  "notes": "The two formal conjectures disproved by Milojevic (arXiv:2210.03864) appear to be distinct formal conjectures in the source paper about specific threshold values, not the informal conjecture reviewed here; the full paper text could not be retrieved so the exact disproved statements are unconfirmed. The informal conjecture (connectivity threshold determined by isolated-vertex threshold) is broadly consistent with current bounds — both lower and upper bounds now sit at n^{-1/2+o(1)} — but the sharp threshold with an exact constant matching the isolated-vertex threshold has not been established."
+}

@@ -1,0 +1,21 @@
+{
+  "review_id": "2409.18220__00",
+  "safe_id": "2409.18220",
+  "arxiv_id": "2409.18220",
+  "conjecture_title": "Informal Conjecture (improved linear bound)",
+  "paper_title": "A Linear Lower Bound for the Square Energy of Graphs",
+  "published": "2024-09-26",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The paper proves s(G) ≥ 3n/4 for every connected graph G of order n ≥ 4, and informally conjectures this can be improved to 4n/5 via more intricate partitioning. The source paper was published in the Electronic Journal of Combinatorics (July 2025). No follow-up work proving or disproving the informal 4n/5 bound was found in the literature; the full conjecture s(G) ≥ n-1 (due to Elphick, Farber, Goldberg and Wocjan, 2016) also remains open.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "square energy graphs linear lower bound Akbari Mohar Pragada 2409.18220",
+    "square energy graphs 4n/5 bound conjecture eigenvalues 2025 2026"
+  ],
+  "notes": "The 4n/5 bound is an informal conjecture stated within the paper without a formal label; it sits between the proven 3n/4 and the full conjectured n-1 bound. A related paper arXiv:2409.15504 (extremal square energies) does not cite 2409.18220. A September 2025 SDP-based paper arXiv:2509.05814 addresses graph energy lower bounds but does not reference this informal conjecture. No follow-up found."
+}

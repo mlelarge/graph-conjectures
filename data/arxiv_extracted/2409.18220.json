@@ -1,0 +1,50 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1 (Elphick, Farber, Goldberg, Wocjan)",
+    "statement_text": "For every connected graph $G$ of order $n$, $s(G) \\geq n - 1$.",
+    "context_text": "Here $s(G) = \\min\\{s^+(G), s^-(G)\\}$ is the square energy of $G$, where $s^+(G) = \\sum_{\\lambda_i > 0} \\lambda_i^2$ and $s^-(G) = \\sum_{\\lambda_i < 0} \\lambda_i^2$. The conjecture was motivated by the equality $s(G) = |\\mathcal{E}(G)|$ for every bipartite graph. It has been verified for several graph classes including regular graphs, but the general case is wide open; the best known general lower bound prior to this paper was $\\sqrt{n}$.",
+    "attributed_to": "Elphick, Farber, Goldberg, and Wocjan",
+    "attributed_year": 2016,
+    "paper_contribution": "Proves the first known linear lower bound $s(G) \\geq \\frac{3n}{4}$ for every connected graph $G$ of order $n \\geq 4$, via a superadditivity result for positive and negative square energies over vertex-induced subgraphs.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2409.18220",
+    "paper_title": "A Linear Lower Bound for the Square Energy of Graphs",
+    "paper_authors": [
+      "Saieed Akbari",
+      "Hitesh Kumar",
+      "Bojan Mohar",
+      "Shivaramakrishna Pragada"
+    ],
+    "published": "2024-09-26",
+    "abs_url": "https://arxiv.org/abs/2409.18220",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Informal Conjecture (improved linear bound)",
+    "statement_text": "We believe the above bound can be improved to $\\frac{4n}{5}$ using more intricate partitioning of the graph $G$ and applying Theorem 2.",
+    "context_text": "After establishing $s(G) \\geq \\frac{3n}{4}$, the authors note that a more refined partitioning argument could push the constant to $\\frac{4n}{5}$, but that fully resolving Conjecture 1 ($s(G) \\geq n-1$) requires fundamentally new ideas beyond those used in this paper.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "low",
+    "notes": "PDF source — fractions are garbled by extraction; '4n − 5' and '3n − 4' in the raw text are interpreted as $\\frac{4n}{5}$ and $\\frac{3n}{4}$ respectively, consistent with the paper's proved result and the surrounding context.",
+    "arxiv_id": "2409.18220",
+    "paper_title": "A Linear Lower Bound for the Square Energy of Graphs",
+    "paper_authors": [
+      "Saieed Akbari",
+      "Hitesh Kumar",
+      "Bojan Mohar",
+      "Shivaramakrishna Pragada"
+    ],
+    "published": "2024-09-26",
+    "abs_url": "https://arxiv.org/abs/2409.18220",
+    "source": "pdf"
+  }
+]

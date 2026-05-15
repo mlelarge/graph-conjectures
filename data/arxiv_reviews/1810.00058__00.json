@@ -1,0 +1,75 @@
+{
+  "review_id": "1810.00058__00",
+  "safe_id": "1810.00058",
+  "arxiv_id": "1810.00058",
+  "conjecture_title": "Conjecture 1.4",
+  "paper_title": "Sparse graphs with no polynomial-sized anticomplete pairs",
+  "published": "2020-12-07",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Conjecture 1.4 from arXiv:1810.00058 remains open in full generality. Partial progress has been made: Fox, Nguyen, Scott, and Seymour (arXiv:2307.00801) proved the conjecture for H=P4 with the optimal bound δ=ε, and more generally for all graphs H obtainable by vertex-substitution from copies of P4 and its subgraphs, via the stronger 'viral' property. Separately, Bucić, Fox, and Pham (arXiv:2403.08303) proved that the polynomial Rödl conjecture (Conjecture 1.3 in the source paper, which is equivalent to Conjecture 1.4 over all H by Rödl's theorem) is equivalent to the Erdős-Hajnal conjecture, establishing that the full resolution of Conjecture 1.4 is as hard as settling Erdős-Hajnal.",
+  "since_posted": [
+    {
+      "title": "Induced subgraph density. II. Sparse and dense sets in cographs",
+      "authors": "Jacob Fox, Tung Nguyen, Alex Scott, Paul Seymour",
+      "year": 2023,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2307.00801",
+      "arxiv_id": "2307.00801",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves Conjecture 1.4 for H=P4 with the optimal bound δ=ε, and more generally for all graphs H obtainable by vertex-substitution from P4 and its subgraphs, via the 'viral' property."
+    },
+    {
+      "title": "Equivalence between Erdős-Hajnal and polynomial Rödl and Nikiforov conjectures",
+      "authors": "Matija Bucić, Jacob Fox, Huy Tuan Pham",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2403.08303",
+      "arxiv_id": "2403.08303",
+      "doi": null,
+      "kind": "reduction",
+      "claim": "Proves that the polynomial Rödl conjecture (equivalent to Conjecture 1.4 for all H via Rödl's theorem) is equivalent to the Erdős-Hajnal conjecture; deduces that string graphs satisfy the polynomial Rödl conjecture."
+    },
+    {
+      "title": "Induced subgraph density. IV. New graphs with the Erdős-Hajnal property",
+      "authors": "Tung Nguyen, Alex Scott, Paul Seymour",
+      "year": 2023,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2307.06455",
+      "arxiv_id": "2307.06455",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Establishes the Erdős-Hajnal property for infinitely many new graph classes, implicitly verifying Conjecture 1.4 for those classes via the equivalence proved by Bucić, Fox, and Pham."
+    }
+  ],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2301.10147",
+      "verified": false,
+      "note": "ArXiv abstract page retrieved but full references not accessible; abstract confirms paper proves loglog improvement on Erdős-Hajnal via blockades without establishing Conjecture 1.4 directly."
+    },
+    {
+      "arxiv_id": "2403.08303",
+      "verified": false,
+      "note": "ArXiv abstract page retrieved; abstract confirms paper proves equivalence of polynomial Rödl conjecture and Erdős-Hajnal conjecture, consistent with internal ref attribution, but full citation list not accessible."
+    },
+    {
+      "arxiv_id": "2307.00801",
+      "verified": true,
+      "note": "ArXiv abstract confirms title, authors (Fox, Nguyen, Scott, Seymour), and proves the conjecture for H=P4 with δ=ε and the 'viral'/substitution-closure property, consistent with internal ref."
+    },
+    {
+      "arxiv_id": "2307.06455",
+      "verified": false,
+      "note": "ArXiv abstract page retrieved; abstract confirms paper is about Erdős-Hajnal property for new graph classes via 'buildable' graphs and iterative sparsification, consistent with internal ref."
+    }
+  ],
+  "search_queries": [
+    "anticomplete pair epsilon-bounded H-free graph Rödl conjecture Chudnovsky Fox Scott Seymour Spirkl 1810.00058"
+  ],
+  "notes": "Conjecture 1.4 is equivalent to Conjecture 1.3 (pure pairs) for all H simultaneously, by Rödl's theorem. Conjecture 1.3 in turn is now known to be equivalent to the Erdős-Hajnal conjecture (arXiv:2403.08303), so full resolution of Conjecture 1.4 is tied to one of the most prominent open problems in extremal graph theory. Partial results verified for P4-substitution families. The paper arXiv:2301.10147 takes a different approach via blockades and leaves this conjecture open."
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Sylvester's Question on twin-width of sparse random graphs",
+    "statement_text": "Is $\\mathrm{tww}(G) = \\Theta(\\sqrt{e(G)})$ with high probability for sparse Erd\\H{o}s-R\\'enyi random graphs and random cubic graphs?",
+    "context_text": "Sylvester asked whether the general upper bound $\\mathrm{tww}(G) \\leq (1+o(1))\\sqrt{3m}$ (due to Ahn, Hendrey, Kim and Oum) is tight with high probability in the sparse regime. This question motivated the study of twin-width for random graphs with sub-logarithmic average degree.",
+    "attributed_to": "Sylvester",
+    "attributed_year": null,
+    "paper_contribution": "The answer is negative for random $d$-regular graphs with $d = o(\\log n / \\log\\log n)$ and for $G(n,p)$ with $p = o(\\log n / (n \\log\\log n))$; the answer is positive for $p = \\Omega(\\log n / n)$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Reference given only as [Syl] with no bibliographic year recoverable from the extracted text.",
+    "arxiv_id": "2312.03688",
+    "paper_title": "Twin-width of sparse random graphs",
+    "paper_authors": [
+      "Kevin Hendrey",
+      "Sergey Norin",
+      "Raphael Steiner",
+      "Jérémie Turcotte"
+    ],
+    "published": "2023-12-06",
+    "abs_url": "https://arxiv.org/abs/2312.03688",
+    "source": "pdf"
+  }
+]

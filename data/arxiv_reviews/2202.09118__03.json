@@ -1,0 +1,50 @@
+{
+  "review_id": "2202.09118__03",
+  "safe_id": "2202.09118",
+  "arxiv_id": "2202.09118",
+  "conjecture_title": "Open problem (disjoint union of good trees)",
+  "paper_title": "Polynomial bounds for chromatic number VII. Disjoint holes",
+  "published": "2022-02-18",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The general question of whether the disjoint union of two good trees is always good remains open as of 2026. Partial progress exists: arXiv:2202.10412 (submitted three days after the source paper) proves that if $H$ is a good forest then $H \\cup P_4$ is also good, and the source paper itself notes that the disjoint union of two good forests is good whenever one is self-isolating. No paper resolving the full conjecture was found in the indexed literature.",
+  "since_posted": [
+    {
+      "title": "Polynomial bounds for chromatic number VI. Adding a four-vertex path",
+      "authors": "Maria Chudnovsky, Alex Scott, Paul Seymour, Sophie Spirkl",
+      "year": 2022,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2202.10412",
+      "arxiv_id": "2202.10412",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves that if $H$ is a good forest then the disjoint union of $H$ and $P_4$ is also good, establishing in particular that $2P_4$-free graphs are polynomially $\\chi$-bounded, but falls short of proving the conjecture for arbitrary pairs of good trees."
+    }
+  ],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2202.10412",
+      "verified": true,
+      "note": "Confirmed relevant: proves H ∪ P₄ is good when H is a good forest; directly provides partial progress on the conjecture."
+    },
+    {
+      "arxiv_id": "2506.10227",
+      "verified": true,
+      "note": "Not relevant: paper concerns suns in triangle-free graphs of large chromatic number, with no connection to disjoint unions of good trees."
+    },
+    {
+      "arxiv_id": "2311.05719",
+      "verified": true,
+      "note": "Not relevant: paper is about clock-free graphs and treewidth obstructions; the attributed contribution text about proving the conjecture in full is a false positive from the extraction pipeline."
+    }
+  ],
+  "search_queries": [
+    "disjoint union good trees polynomially chi-bounded Chudnovsky Scott Seymour Spirkl 2202.09118",
+    "polynomially chi-bounded disjoint union good forest self-isolating Chudnovsky Spirkl 2023 2024 2025",
+    "\"disjoint union\" \"good\" trees \"chi-bounded\" OR \"chromatic\" forest conjecture arXiv 2024 2025 Spirkl Scott"
+  ],
+  "notes": "arXiv:2311.05719 appears three times in the internal references with a contribution text that describes a completely different conjecture (clock-free graphs, treewidth) — likely a fuzzy-matching false positive. arXiv:2202.10412 is a companion paper in the same 'Polynomial bounds' series submitted three days after the source paper by the same four authors; its H ∪ P₄ result is the strongest known partial answer to the open problem."
+}

@@ -1,0 +1,24 @@
+{
+  "review_id": "1604.02317__00",
+  "safe_id": "1604.02317",
+  "arxiv_id": "1604.02317",
+  "conjecture_title": "Informal Conjecture (vertex-disjoint paths, stability number two)",
+  "paper_title": "Disjoint paths in unions of tournaments",
+  "published": "2018-12-23",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "No paper resolving the conjecture has been found in five web searches. The source paper proves a polynomial-time algorithm for fixed k in semicomplete digraphs (stability number 1) and for digraphs partitioned into a bounded number of semicomplete parts, but leaves the fixed-k, stability-number-two case open with a suspicion of NP-completeness. A 2025 ICALP paper (Gomes, Lopes, Sau) revisits directed disjoint paths on tournaments and corrects a historical NP-completeness proof for unbounded k, but does not address the fixed-k question at stability number two.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "vertex-disjoint paths NP-complete digraphs stability number two Chudnovsky Scott Seymour",
+    "k vertex-disjoint paths problem digraph stability number NP-hardness complexity 1604.02317",
+    "directed disjoint paths NP-complete bounded independence number digraph 2020 2021 2022 2023 2024 2025",
+    "\"vertex-disjoint paths\" \"stability number\" OR \"independence number\" digraph NP-complete complexity arXiv 2019 2020 2021 2022 2023 2024 2025",
+    "Chudnovsky Scott Seymour disjoint paths stability number two NP-hard proof 2020 2021 2022 2023 2024 2025"
+  ],
+  "notes": "The conjecture is stated informally in arXiv:1604.02317 (published 2018-12-23). The ICALP 2025 paper 'Revisiting Directed Disjoint Paths on Tournaments (And Relatives)' by Gomes, Lopes, and Sau (https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ICALP.2025.90) corrects a 1992 NP-completeness proof for the unbounded-k case on tournaments and provides new FPT algorithms with vertex congestion, but does not resolve the fixed-k stability-number-two conjecture. No follow-up settling the conjecture was found after 5 web calls."
+}

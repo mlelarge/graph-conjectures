@@ -1,0 +1,22 @@
+{
+  "review_id": "2511.02892__06",
+  "safe_id": "2511.02892",
+  "arxiv_id": "2511.02892",
+  "conjecture_title": "Conjecture 6.1",
+  "paper_title": "Open problems of the 33rd Workshop on Cycles and Colourings",
+  "published": "2025-11-04",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 6.1 from arXiv:2511.02892, introduced in the context of the workshop in November 2025, postulates the existence of a so-called 1/2-flow-pair (a 2-flow and a 4-flow with a compatibility condition on zero edges) in every bridgeless graph; such a pair would imply Tutte's 5-flow conjecture via a circular 5-flow construction generalising Seymour's 6-flow proof. No resolution or partial progress beyond the computational verification reported in the source paper (cyclically 4-edge-connected snarks up to 34 vertices, snarks with circular flow number 5 on 36 vertices, snarks of oddness 4 up to 44 vertices) was found in the literature as of May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "arXiv 2511.02892 \"Conjecture 6.1\" 2-flow 4-flow bridgeless graph",
+    "\"1/2-flow-pair\" OR \"half-flow-pair\" bridgeless graph circular 5-flow conjecture",
+    "arXiv 2510.22234 Manhattan Chebyshev flows t-flow-pair 5-flow conjecture"
+  ],
+  "notes": "The foundational framework of t-flow-pairs (of which the 1/2-flow-pair is a special case) is introduced in the companion paper 'Manhattan and Chebyshev flows' by Gáborik, Kurz, Mazzuoccolo, Rajník, Rieg (arXiv:2510.22234, October 2025), which predates the workshop problem paper. No follow-up paper proving or disproving Conjecture 6.1 was found. The conjecture is very recent (~6 months old) and the absence of follow-up is expected."
+}

@@ -1,0 +1,48 @@
+[
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "MIS complexity on even-hole-free graphs",
+    "statement_text": "What is the computational complexity of computing a maximum independent set in even-hole-free graphs?",
+    "context_text": "The abstract describes this as a long-standing open question. From the hardness side, MIS is W[1]-hard for $C_4$-free graphs, while MIS is polynomial on perfect graphs; even-hole-free graphs sit between these two classes. The precise complexity (polynomial-time vs. NP-hard) remains unresolved.",
+    "attributed_to": "unknown",
+    "attributed_year": null,
+    "paper_contribution": "Proves that MIS is FPT when parameterized by the solution size $k$ in the class of even-hole-free graphs, by applying the augmenting-graph technique twice and reducing to a dynamic program on chordal graphs.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "Described as a 'long-standing open question' with no specific original attribution or citation in the text.",
+    "arxiv_id": "1907.01083",
+    "paper_title": "The independent set problem is FPT for even-hole-free graphs",
+    "paper_authors": [
+      "Edin Husic",
+      "Stephan Thomasse",
+      "Nicolas Trotignon"
+    ],
+    "published": "2019-10-06",
+    "abs_url": "https://arxiv.org/abs/1907.01083",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Open problem: Combinatorial algorithm for MIS on perfect graphs",
+    "statement_text": "It remains an open question to find a combinatorial algorithm for the maximum independent set problem on perfect graphs. In fact, we do not even have a combinatorial FPT algorithm for the maximum independent set problem on perfect graphs.",
+    "context_text": "The maximum independent set problem on perfect graphs is solvable in polynomial time via the ellipsoid method, but a combinatorial algorithm (i.e., one not relying on the ellipsoid method) is unknown. This is mentioned as a side remark motivating the study of related graph classes.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated as a known open problem in the community without a specific attribution cite; no labeled theorem environment.",
+    "arxiv_id": "1907.01083",
+    "paper_title": "The independent set problem is FPT for even-hole-free graphs",
+    "paper_authors": [
+      "Edin Husic",
+      "Stephan Thomasse",
+      "Nicolas Trotignon"
+    ],
+    "published": "2019-10-06",
+    "abs_url": "https://arxiv.org/abs/1907.01083",
+    "source": "pdf"
+  }
+]

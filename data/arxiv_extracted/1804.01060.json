@@ -1,0 +1,98 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Erdős-Hajnal Conjecture (Conjecture 1.1)",
+    "statement_text": "For every graph $H$, the ideal of $H$-free graphs has the Erdős-Hajnal property.",
+    "context_text": "An ideal $I$ has the Erdős-Hajnal property if there exists $\\varepsilon > 0$ such that every graph $G \\in I$ has a clique or stable set of size at least $|G|^\\varepsilon$. The conjecture asserts that forbidding a fixed induced subgraph $H$ forces polynomially large cliques or stable sets, far beyond the $\\frac{1}{2}\\log|G|$ guaranteed by Ramsey theory.",
+    "attributed_to": "Erdős and Hajnal",
+    "attributed_year": 1989,
+    "paper_contribution": "Proves as a corollary (Theorem 1.3) that for every graph $H$ there exists $c > 0$ such that every graph $G$ either contains an induced subdivision of $H$ in $G$ or $\\bar{G}$, or has a clique or stable set of size at least $|G|^c$, establishing the Erdős-Hajnal property for the ideal of graphs excluding induced subdivisions of $H$ in both $G$ and $\\bar{G}$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1804.01060",
+    "paper_title": "Pure pairs. II. Excluding all subdivisions of a graph",
+    "paper_authors": [
+      "Maria Chudnovsky",
+      "Alex Scott",
+      "Paul Seymour",
+      "Sophie Spirkl"
+    ],
+    "published": "2020-06-02",
+    "abs_url": "https://arxiv.org/abs/1804.01060",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 2.1 (reformulation of Erdős-Hajnal)",
+    "statement_text": "For every proper ideal $I$, there exists $c > 0$ such that every graph $G \\in I$ satisfies $\\omega(G)\\alpha(G) \\geq |G|^c$.",
+    "context_text": "The authors note that every proper ideal is contained in the ideal of $H$-free graphs for some $H$, so this is an equivalent reformulation of Conjecture 1.1 (the Erdős-Hajnal conjecture). It is further shown to be equivalent to the $\\varepsilon$-coherent version Conjecture 2.2 via Rödl's theorem.",
+    "attributed_to": "Erdős and Hajnal",
+    "attributed_year": 1989,
+    "paper_contribution": "Shows equivalence with the classical Erdős-Hajnal formulation and verifies the conclusion for the ideal of graphs whose complement and self both exclude induced subdivisions of any fixed $H$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Explicitly labeled 'Conjecture 2.1' in the paper; presented as a reformulation of Conjecture 1.1.",
+    "arxiv_id": "1804.01060",
+    "paper_title": "Pure pairs. II. Excluding all subdivisions of a graph",
+    "paper_authors": [
+      "Maria Chudnovsky",
+      "Alex Scott",
+      "Paul Seymour",
+      "Sophie Spirkl"
+    ],
+    "published": "2020-06-02",
+    "abs_url": "https://arxiv.org/abs/1804.01060",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 2.2 (coherent reformulation of Erdős-Hajnal)",
+    "statement_text": "For every proper ideal $I$ there exist $\\varepsilon > 0$ and $c > 0$ such that every $\\varepsilon$-coherent graph $G \\in I$ satisfies $\\omega(G)\\alpha(G) \\geq |G|^c$.",
+    "context_text": "A massed graph $(G,\\mu)$ is $\\varepsilon$-coherent if every vertex has mass less than $\\varepsilon$, every neighbourhood has mass less than $\\varepsilon$, and every pair of anticomplete sets has minimum mass less than $\\varepsilon$. The paper proves that this formulation is equivalent to Conjecture 2.1 (and hence to the Erdős-Hajnal conjecture) using Rödl's theorem.",
+    "attributed_to": "Erdős and Hajnal",
+    "attributed_year": 1989,
+    "paper_contribution": "Establishes equivalence with Conjecture 2.1 via Rödl's theorem (Lemma 3.1), and verifies the statement for ideals defined by excluding induced subdivisions of a fixed graph in both $G$ and $\\bar{G}$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Explicitly labeled 'Conjecture 2.2' in the paper; stated as equivalent to Conjecture 2.1.",
+    "arxiv_id": "1804.01060",
+    "paper_title": "Pure pairs. II. Excluding all subdivisions of a graph",
+    "paper_authors": [
+      "Maria Chudnovsky",
+      "Alex Scott",
+      "Paul Seymour",
+      "Sophie Spirkl"
+    ],
+    "published": "2020-06-02",
+    "abs_url": "https://arxiv.org/abs/1804.01060",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 2.4",
+    "statement_text": "Let $H$ be a graph and let $P$ be a forest of $H$. Then every coherent ideal contains a $P$-filleting of $H$.",
+    "context_text": "The paper's main theorem (2.3) proves the statement when $P$ is a path of $H$. The authors propose this strengthening, noting it would be best possible since the conclusion fails when $P$ contains a cycle of $H$ (as coherent ideals can have arbitrarily large girth). If true, it would imply the main theorem of [8] (strong Erdős-Hajnal property for all forests) in the same way Theorem 2.3 implies the main theorem of [18].",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1804.01060",
+    "paper_title": "Pure pairs. II. Excluding all subdivisions of a graph",
+    "paper_authors": [
+      "Maria Chudnovsky",
+      "Alex Scott",
+      "Paul Seymour",
+      "Sophie Spirkl"
+    ],
+    "published": "2020-06-02",
+    "abs_url": "https://arxiv.org/abs/1804.01060",
+    "source": "pdf"
+  }
+]

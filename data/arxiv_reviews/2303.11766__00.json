@@ -1,0 +1,23 @@
+{
+  "review_id": "2303.11766__00",
+  "safe_id": "2303.11766",
+  "arxiv_id": "2303.11766",
+  "conjecture_title": "Conjecture 1.6",
+  "paper_title": "Polynomial bounds for chromatic number VIII. Excluding a path and a complete multipartite graph",
+  "published": "2023-03-21",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 1.6 from arXiv:2303.11766 — that every forest is multibounding — remains open as of May 2026. The source paper itself established the conjecture for paths and brooms, and earlier work (arXiv:2202.05557) handled trees of radius two; no subsequent paper resolving the full conjecture has been identified in a broad web search covering arXiv, Seymour's publication list, and related follow-up work through 2025.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "multibounding forest chromatic number Nguyen Scott Seymour 2303.11766",
+    "\"multibounding\" graph forest H-free chromatic number polynomial bound arxiv",
+    "\"every forest is multibounding\" OR \"multibounding\" forest Nguyen Scott Seymour 2024 2025",
+    "\"polynomial bounds chromatic number\" \"IX\" OR \"9\" forest multibounding Nguyen Scott Seymour arxiv 2024 2025"
+  ],
+  "notes": "No follow-up paper proving or disproving the full conjecture was found. Known special cases: paths (proved in the source paper), brooms (proved in the source paper), trees of radius two (proved in arXiv:2202.05557 by Scott and Seymour). The conjecture is closely related to the polynomial Gyárfás-Sumner conjecture; any forest satisfying the polynomial-bound Conjecture 1.2 of the same paper is automatically multibounding."
+}

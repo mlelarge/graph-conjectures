@@ -1,0 +1,23 @@
+{
+  "review_id": "2211.01032__04",
+  "safe_id": "2211.01032",
+  "arxiv_id": "2211.01032",
+  "conjecture_title": "Conjecture 9.6",
+  "paper_title": "Random Embeddings of Graphs: The Expected Number of Faces in Most Graphs is Logarithmic",
+  "published": "2025-04-09",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 9.6 asserts that the expected face count under a uniformly random non-orientable embedding never exceeds the expected face count under a uniformly random orientable embedding, for any graph G. No paper resolving or making substantial progress on this specific conjecture was found in the indexed literature. The conjecture is verified in the source paper only for toy cases (dipole, chains of triangles joined by cut edges), and the bound E[F^-] <= (1/2)E[F] + 1 is established for the dipole via Random Process A.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "random embeddings graphs expected faces non-orientable orientable arXiv 2211.01032",
+    "non-orientable random embedding expected faces inequality graph Mohar Šámal 2025",
+    "non-orientable average genus random embedding face count inequality orientable surface graph 2024 2025 2026",
+    "Campion Loth Halasz Masarik Mohar Samal non-orientable random embedding conjecture cite 2023 2024 2025"
+  ],
+  "notes": "No follow-up found after 4 web searches. The conjecture is recent (source paper first posted November 2022, published at SODA 2024, revised April 2025). Absence of follow-up is expected for a conjecture of this vintage in a specialized topological graph theory setting."
+}

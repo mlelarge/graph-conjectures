@@ -1,0 +1,39 @@
+{
+  "review_id": "2307.08361__01",
+  "safe_id": "2307.08361",
+  "arxiv_id": "2307.08361",
+  "conjecture_title": "Polynomial bound in k for C4-free subgraphs",
+  "paper_title": "Induced $C_4$-free subgraphs with large average degree",
+  "published": "2023-11-01",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "The question of whether a polynomial $p(k)$ suffices — so that average degree $\\geq p(k)$ guarantees a $C_4$-free subgraph of average degree $\\geq k$ — remains open. The known gap between the lower bound $k^{3-o(1)}$ and the upper bound $k^{Ck^2}$ (both from Montgomery, Pokrovskiy, and Sudakov) has not been closed as of this review. A June 2025 paper (arXiv:2506.23942) gives a related structural dichotomy for induced $C_4$-free subgraphs with geometric applications, but does not directly resolve the polynomial bound question.",
+  "since_posted": [
+    {
+      "title": "$C_4$-free subgraphs of high degree with geometric applications",
+      "authors": "not retrieved",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2506.23942",
+      "arxiv_id": "2506.23942",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves a structural dichotomy: every graph with average degree $d$ either contains an induced $C_4$-free subgraph with average degree at least $k$, or contains a $d$-vertex subgraph with $\\Omega_k(d^2)$ edges; the paper applies this to obtain geometric results but does not resolve the polynomial bound question for $C_4$-free subgraphs."
+    }
+  ],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2508.14332",
+      "verified": true,
+      "note": "This paper (Nguyen, Scott, Seymour 2025) is about the weak coarse Menger conjecture in coarse graph theory; it contains no results about $C_4$-free subgraphs or polynomial degree bounds. The supplied contribution text is incorrect for this conjecture — the internal reference is a false positive (fuzz=67)."
+    }
+  ],
+  "search_queries": [
+    "C4-free subgraph average degree polynomial bound graph Montgomery Pokrovskiy Sudakov 2307.08361",
+    "C4-free subgraph average degree polynomial k graph theory 2024 2025 2026"
+  ],
+  "notes": "The internal reference arXiv:2508.14332 is mismatched — verified by WebFetch to be entirely about the weak coarse Menger conjecture, unrelated to $C_4$-free subgraphs. arXiv:2506.23942 (June 2025) is the most relevant post-2023 paper found; it addresses induced $C_4$-free subgraphs via a dichotomy argument with geometric applications but does not directly answer whether a polynomial $p(k)$ suffices. Confidence is medium because this related June 2025 paper could contain implicit progress on the polynomial bound that requires reading the full text to assess."
+}

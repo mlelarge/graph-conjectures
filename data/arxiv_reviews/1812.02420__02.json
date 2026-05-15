@@ -1,0 +1,23 @@
+{
+  "review_id": "1812.02420__02",
+  "safe_id": "1812.02420",
+  "arxiv_id": "1812.02420",
+  "conjecture_title": "Problem 3.21",
+  "paper_title": "On the Complexity of Digraph Colourings and Vertex Arboricity",
+  "published": "2020-01-09",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The paper proves NP-completeness of deciding $\\vec{\\chi}_f(D) \\leq p$ for all real $p > 1$ with $p \\neq 2$, leaving the case $p = 2$ explicitly open. No follow-up paper resolving the $p = 2$ case was found in any indexed source as of May 2026. The problem is analogous to the circular dichromatic number results of Feder et al., and the authors note no obvious obstruction to NP-hardness at $p = 2$ but could not establish it.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "fractional dichromatic number complexity NP-complete digraph p=2 Hochstättler Schröder Steiner",
+    "fractional dichromatic number decidability complexity digraph arXiv 1812.02420",
+    "\"fractional dichromatic number\" complexity p=2 digraph 2-coloring open problem 2021 2022 2023 2024",
+    "\"fractional dichromatic number\" \"p=2\" OR \"at most 2\" complexity digraph polynomial NP 2022 2023 2024 2025"
+  ],
+  "notes": "No follow-up found. The p=2 case remains the sole unresolved complexity case for the fractional dichromatic number threshold decision problem. The difficulty stems from the fact that deciding $\\vec{\\chi}_f(D) \\leq 2$ is equivalent to a question about acyclic 2-coloring of digraphs, whose complexity is not captured by the NP-hardness reductions used for other values of p."
+}

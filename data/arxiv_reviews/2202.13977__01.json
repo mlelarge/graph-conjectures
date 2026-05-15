@@ -1,0 +1,22 @@
+{
+  "review_id": "2202.13977__01",
+  "safe_id": "2202.13977",
+  "arxiv_id": "2202.13977",
+  "conjecture_title": "Informal question: can the D5-freeness hypothesis in Theorem 1.6 be dropped?",
+  "paper_title": "Pure pairs. X. Tournaments and the strong Erdos-Hajnal property",
+  "published": "2023-08-08",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Theorem 1.6 of arXiv:2202.13977 shows that if a tournament H admits a numbering whose backedge graph has at most three edges and H is D5-free, then H has the strong EH-property; the D5-freeness condition excludes exactly the case where the three backedges form the backedge graph of D5. The authors leave open whether this condition can be omitted. A web search covering literature through May 2026 found no follow-up paper resolving this question.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "tournament strong Erdos-Hajnal property D5-free backedge graph Chudnovsky Scott Seymour Spirkl 2202.13977",
+    "tournament strong EH-property D5-free pure pairs backedge graph three edges",
+    "arXiv 2202.13977 citing papers strong Erdos-Hajnal D5-free tournament 2024 2025"
+  ],
+  "notes": "No follow-up resolving the D5-freeness question was found in the indexed literature. The related paper arXiv:2402.10782 (NP-completeness of finding forest-orderings of tournaments) cites the broader conjecture about forest-ordered tournaments and the strong EH-property but does not address the D5-free condition specifically. The conjecture is recent (preprint 2022, published 2024) and the absence of a follow-up is consistent with it remaining open."
+}

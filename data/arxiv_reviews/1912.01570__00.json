@@ -1,0 +1,34 @@
+{
+  "review_id": "1912.01570__00",
+  "safe_id": "1912.01570",
+  "arxiv_id": "1912.01570",
+  "conjecture_title": "Conjecture 2",
+  "paper_title": "Jones' Conjecture in subcubic graphs",
+  "published": "2019-12-03",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "Conjecture 2 from arXiv:1912.01570 — that fvs(G) ≤ 2·fp(G) for every planar graph G — is a strengthening of Jones' conjecture (the cp-version fvs ≤ 2·cp) and appears to remain open. Related progress since 2019 concerns Jones' conjecture itself (cycle-packing, not face-packing): arXiv:2401.07376 (2024) proves fvs ≤ 2·cp for Halin graphs and 'based planar graphs,' but since fp(G) ≤ cp(G), this does not imply the face-packing conjecture. No paper resolving Conjecture 2 was found in the indexed literature.",
+  "since_posted": [
+    {
+      "title": "Jones' conjecture for Halin graphs and a bit more",
+      "authors": "unknown",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2401.07376",
+      "arxiv_id": "2401.07376",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves Jones' conjecture (fvs ≤ 2·cp) for Halin graphs and based planar graphs, but addresses cycle-packing (cp) rather than face-packing (fp), so does not directly settle Conjecture 2."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "face-packing feedback vertex set planar graph fvs fp conjecture 1912.01570",
+    "Jones conjecture face-packing planar graphs \"fvs\" \"fp\" 2020 2021 2022 2023 2024 2025",
+    "\"face-packing\" \"feedback vertex set\" planar graph conjecture 2020 2021 2022 2023 2024 2025 arxiv"
+  ],
+  "notes": "Conjecture 2 (fvs ≤ 2·fp) is strictly stronger than Jones' conjecture (fvs ≤ 2·cp) because any face-packing is a cycle-packing so fp(G) ≤ cp(G). The best known general bound remains fvs(G) ≤ 3·cp(G). The 2401.07376 paper (2024) makes progress on Jones' conjecture for special graph classes but not on the face-packing variant. Author names for 2401.07376 could not be confirmed from the fetched abstract page."
+}

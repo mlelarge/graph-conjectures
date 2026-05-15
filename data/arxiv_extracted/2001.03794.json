@@ -1,0 +1,122 @@
+[
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Parameterized complexity of Grundy Coloring",
+    "statement_text": "Is \\textsc{Grundy Coloring} fixed-parameter tractable, i.e., solvable in time $f(k) \\cdot n^{O(1)}$, when parameterized by $k$ (the Grundy number)? Alternatively, does it admit an algorithm running in time $n^{k^{O(1)}}$?",
+    "context_text": "Zaker observed in 2006 that a minimal $k$-witness has at most $2^{k-1}$ vertices, yielding a brute-force $f(k) \\cdot n^{2^{k-1}}$ XP algorithm. Whether an FPT algorithm (or even a significantly sub-exponential XP algorithm) exists was raised as an open question in multiple papers over the following decade.",
+    "attributed_to": "raised in multiple prior works (refs [37, 26, 20, 4] in the paper)",
+    "attributed_year": null,
+    "paper_contribution": "Proves that Grundy Coloring is W[1]-complete and that no $f(k) \\cdot n^{o(2^{k-\\log k})}$ algorithm exists under the ETH, settling both the FPT question and the weaker $n^{k^{O(1)}}$ question in the negative.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source; time-bound exponents reconstructed from garbled PDF text (e.g. 'f(k)n2k−1' interpreted as $f(k)\\cdot n^{2^{k-1}}$, 'no(2k−log k)' as $n^{o(2^{k-\\log k})}$).",
+    "arxiv_id": "2001.03794",
+    "paper_title": "Grundy Coloring & friends, Half-Graphs, Bicliques",
+    "paper_authors": [
+      "Pierre Aboulker",
+      "Édouard Bonnet",
+      "Eun Jung Kim",
+      "Florian Sikora"
+    ],
+    "published": "2020-01-11",
+    "abs_url": "https://arxiv.org/abs/2001.03794",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Parameterized complexity of b-Chromatic Core (Panolan et al.)",
+    "statement_text": "Is \\textsc{b-Chromatic Core}, parameterized by $k$ (the order of the desired core), W[1]-hard or fixed-parameter tractable?",
+    "context_text": "Panolan et al. studied the b-chromatic core in relation to b-coloring and explicitly left as an open question whether b-Chromatic Core is W[1]-hard or FPT. The b-chromatic number problem was already known to be W[1]-hard, but no polytime algorithm was known even for constant $k$.",
+    "attributed_to": "Panolan et al.",
+    "attributed_year": 2017,
+    "paper_contribution": "Proves that b-Chromatic Core is W[1]-complete using a construction based on half-graphs, fully settling the open question.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Attributed explicitly as 'Panolan et al. [JCSS '17]' (reference [36]) in both the abstract and the introduction.",
+    "arxiv_id": "2001.03794",
+    "paper_title": "Grundy Coloring & friends, Half-Graphs, Bicliques",
+    "paper_authors": [
+      "Pierre Aboulker",
+      "Édouard Bonnet",
+      "Eun Jung Kim",
+      "Florian Sikora"
+    ],
+    "published": "2020-01-11",
+    "abs_url": "https://arxiv.org/abs/2001.03794",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "FPT on $H_{t,t}$-free graphs for Grundy Coloring and b-Chromatic Core",
+    "statement_text": "Are \\textsc{Grundy Coloring} and \\textsc{b-Chromatic Core} fixed-parameter tractable on $H_{t,t}$-free graphs when parameterized by $k$?",
+    "context_text": "The W[1]-hardness constructions for both problems rely heavily on large half-graphs as color-propagation units; excluding large half-graphs may restore tractability. However, the key combinatorial lemma that gives FPT on $K_{t,t}$-free graphs collapses on $H_{t,t}$-free graphs, so the question is explicitly left open.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated as an explicit open problem in the 'Limits and further questions' section; no formal numbered theorem environment.",
+    "arxiv_id": "2001.03794",
+    "paper_title": "Grundy Coloring & friends, Half-Graphs, Bicliques",
+    "paper_authors": [
+      "Pierre Aboulker",
+      "Édouard Bonnet",
+      "Eun Jung Kim",
+      "Florian Sikora"
+    ],
+    "published": "2020-01-11",
+    "abs_url": "https://arxiv.org/abs/2001.03794",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "FPT on $K_{t,t}$-free graphs for Grundy Coloring",
+    "statement_text": "Does \\textsc{Grundy Coloring} admit a fixed-parameter tractable algorithm on $K_{t,t}$-free graphs when parameterized by $k$?",
+    "context_text": "The paper establishes FPT algorithms for b-Chromatic Core and Partial Grundy Coloring on $K_{t,t}$-free graphs (parameterized by $k+t$), but the analogous question for Grundy Coloring on $K_{t,t}$-free graphs is explicitly left unsettled.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated explicitly as unsettled in the 'Limits and further questions' section; no formal numbered theorem environment.",
+    "arxiv_id": "2001.03794",
+    "paper_title": "Grundy Coloring & friends, Half-Graphs, Bicliques",
+    "paper_authors": [
+      "Pierre Aboulker",
+      "Édouard Bonnet",
+      "Eun Jung Kim",
+      "Florian Sikora"
+    ],
+    "published": "2020-01-11",
+    "abs_url": "https://arxiv.org/abs/2001.03794",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Parameterized complexity of Partial Grundy Coloring on general graphs",
+    "statement_text": "What is the parameterized complexity of \\textsc{Partial Grundy Coloring} on general graphs, parameterized by $k$?",
+    "context_text": "The authors were unable to prove W[1]-hardness for Partial Grundy Coloring because half-graphs cannot serve as color-propagation units (the partial Grundy number is already large on a large half-graph $H_{t,t}$). The class of $H_{t,t}$-free graphs is suggested as a promising intermediate case for understanding the general-graph complexity.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated as an open problem in the 'Limits and further questions' section; no formal numbered theorem environment.",
+    "arxiv_id": "2001.03794",
+    "paper_title": "Grundy Coloring & friends, Half-Graphs, Bicliques",
+    "paper_authors": [
+      "Pierre Aboulker",
+      "Édouard Bonnet",
+      "Eun Jung Kim",
+      "Florian Sikora"
+    ],
+    "published": "2020-01-11",
+    "abs_url": "https://arxiv.org/abs/2001.03794",
+    "source": "pdf"
+  }
+]

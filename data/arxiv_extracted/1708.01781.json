@@ -1,0 +1,24 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.1 (Tomescu Conjecture)",
+    "statement_text": "Let $G$ be a connected $k$-chromatic graph with $k \\geq 4$. Then $G$ has at most $k!(k-1)^{|G|-k}$ $k$-colourings. Moreover, the extremal graphs are precisely the graphs obtained from $K_k$ by adding trees rooted at each vertex of the clique.",
+    "context_text": "Tomescu conjectured in 1971 that the upper bound on the number of $k$-colourings attained by graphs formed from $K_k$ by growing trees at each vertex holds for any connected $k$-chromatic graph, for $k \\geq 4$. The requirement $k \\neq 3$ is necessary since odd cycles (and odd cycles with added trees) exceed the bound. Tomescu himself verified the conjecture for 4-chromatic planar graphs and proved a stronger $x$-colouring version for that class.",
+    "attributed_to": "Tomescu",
+    "attributed_year": 1971,
+    "paper_contribution": "Proves the conjecture for $k = 4$ in a strengthened form: every connected 4-chromatic graph $G$ on $n$ vertices satisfies $P_G(x) \\leq x_4(x-1)^{n-4}$ for every integer $x \\geq 4$, with equality for some (equivalently, every) $x \\geq 4$ if and only if $G$ is obtained from $K_4$ by appending trees at each vertex of the clique.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source — math may be garbled. The $k$-colouring bound $k!(k-1)^{|G|-k}$ is the falling-factorial formula $x_k(x-1)^{n-k}$ evaluated at $x=k$, consistent with equation (1) and (2) in the paper.",
+    "arxiv_id": "1708.01781",
+    "paper_title": "Maximum number of colourings. I. 4-chromatic graphs",
+    "paper_authors": [
+      "Fiachra Knox",
+      "Bojan Mohar"
+    ],
+    "published": "2017-08-05",
+    "abs_url": "https://arxiv.org/abs/1708.01781",
+    "source": "pdf"
+  }
+]

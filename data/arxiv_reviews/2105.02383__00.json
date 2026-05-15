@@ -1,0 +1,36 @@
+{
+  "review_id": "2105.02383__00",
+  "safe_id": "2105.02383",
+  "arxiv_id": "2105.02383",
+  "conjecture_title": "Open problem on parameters governing $\\overrightarrow{r}_1(H)$",
+  "paper_title": "Ramsey numbers of sparse digraphs",
+  "published": "2022-01-21",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The source paper itself already demonstrates that bounded degree alone does not suffice for polynomial (let alone linear) oriented Ramsey numbers, constructing bounded-degree acyclic digraphs with $\\overrightarrow{r}_1(H) \\ge n^{\\Omega(\\Delta^{2/3}/\\log^{5/3}\\Delta)}$, while the complete characterization via natural parameters remains open. The 2025 follow-up by Bradač, Morawski, Sudakov, and Wigderson extends the linear upper bound regime to acyclic digraphs with 'graded bandwidth' (local edge structure), unifying previous results on bounded height, bounded bandwidth, and tree blowups. However, the full picture is explicitly acknowledged as far from resolved: a complete analogue of the degeneracy-plus-vertex-count framework for undirected graphs has not been found for the directed setting.",
+  "since_posted": [
+    {
+      "title": "Ramsey numbers of digraphs with local edge structure",
+      "authors": "Domagoj Bradač, Patryk Morawski, Benny Sudakov, Yuval Wigderson",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2509.05055",
+      "arxiv_id": "2509.05055",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves linear oriented Ramsey numbers for bounded-degree acyclic digraphs with graded bandwidth (local edge structure), extending the class of digraphs known to have linear $\\overrightarrow{r}_1(H)$ and contributing a structural parameter candidate, while noting the full characterization of which parameters govern the growth order remains far from complete."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "directed Ramsey number acyclic digraph \"multiscale complexity\" Fox He Wigderson",
+    "arxiv 2105.02383 Ramsey sparse digraphs polynomial bounded degree",
+    "WebFetch https://arxiv.org/abs/2509.05055",
+    "WebFetch https://arxiv.org/abs/2105.02383",
+    "WebFetch https://arxiv.org/html/2509.05055"
+  ],
+  "notes": "The open problem has two parts: (1) polynomial vs. super-polynomial for bounded-degree digraphs — partially answered, as super-polynomial examples exist in the source paper itself; (2) identifying the right structural parameter — partially addressed by 'multiscale complexity' (source paper) and 'graded bandwidth' (2509.05055), but no complete characterisation is known. The conjecture is best described as open with substantial partial progress."
+}

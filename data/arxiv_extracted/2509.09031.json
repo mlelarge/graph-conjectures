@@ -1,0 +1,25 @@
+[
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.2",
+    "statement_text": "Let $\\mathcal{C}$ be a class of connected graphs, closed under contracting edges and subdividing edges. For all $L,C$ there exists $C^{\\prime}$ such that if there is an $(L,C)$-quasi-isometry from a graph $G$ to a member of $\\mathcal{C}$, then there is a $(1,C^{\\prime})$-quasi-isometry from $G$ to a member of $\\mathcal{C}$.",
+    "context_text": "Motivated by a theorem of Chepoi, Dragan, Newman, Rabinovich, and Vaxès showing that $(L,C)$-quasi-isometry to a tree implies $(1,C')$-quasi-isometry to a tree, the authors ask for which graph classes $\\mathcal{C}$ such a multiplicative-to-additive distortion improvement holds. Closure under edge subdivision and edge contraction is identified as a necessary condition, and the conjecture proposes it is also sufficient. The paper proves a special case: when $\\mathcal{C}$ is the class of graphs of bounded path-width.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2509.09031",
+    "paper_title": "Asymptotic structure. II. Path-width and additive quasi-isometry",
+    "paper_authors": [
+      "Tung Nguyen",
+      "Alex Scott",
+      "Paul Seymour"
+    ],
+    "published": "2025-10-02",
+    "abs_url": "https://arxiv.org/abs/2509.09031",
+    "source": "html"
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Question 4.2 (Barba, Pilz, and Schnider)",
+    "statement_text": "What is the average complexity of the $k$-level in an arrangement of great-circles on the sphere when the south pole is chosen uniformly at random among all cells?",
+    "context_text": "The paper states: 'This question was raised by Barba, Pilz, and Schnider while sharing a pizza [BPS19, Question 4.2].' The paper investigates the expected size of the $k$-level in a simple arrangement of $n$ great-circles under this random model. The question is motivated by the well-studied worst-case complexity of the $k$-level and the correspondence between great-circle arrangements on the sphere and line arrangements in the plane.",
+    "attributed_to": "Barba, Pilz, and Schnider",
+    "attributed_year": 2019,
+    "paper_contribution": "Proves an upper bound of $O((k+1)^2)$ on the expected complexity of the $k$-level (specifically, at most $4e\\cdot(k+2)^2$) when the south pole is chosen uniformly at random among all cells, and this bound is independent of the number $n$ of great-circles.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "PDF source. The exact verbatim statement of Question 4.2 from [BPS19] is not reproduced in this paper; the statement above is reconstructed from context. Math notation may be garbled.",
+    "arxiv_id": "1911.02408",
+    "paper_title": "On the Average Complexity of the $k$-Level",
+    "paper_authors": [
+      "Man-Kwun Chiu",
+      "Stefan Felsner",
+      "Manfred Scheucher",
+      "Patrick Schnider",
+      "Raphael Steiner",
+      "Pavel Valtr"
+    ],
+    "published": "2020-03-09",
+    "abs_url": "https://arxiv.org/abs/1911.02408",
+    "source": "pdf"
+  }
+]

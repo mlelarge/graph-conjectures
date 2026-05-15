@@ -1,0 +1,22 @@
+{
+  "review_id": "2506.08810__00",
+  "safe_id": "2506.08810",
+  "arxiv_id": "2506.08810",
+  "conjecture_title": "Problem 21",
+  "paper_title": "Infinite induced-saturated graphs",
+  "published": "2025-09-01",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Problem 21 asks whether there exists an infinite family of finite graphs (containing no cliques or independent sets) each of which admits no finite induced-saturated graph. The only known example of a graph H (not a clique or independent set) for which no finite H-induced-saturated graph exists is P_4; beyond P_4, no further such graph H has been identified. No follow-up work addressing the existence of an infinite such family was found in indexed literature as of May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "induced-saturated graph finite H clique independent set P4 Bonamy Groenland Johnston Morrison Scott 2506.08810",
+    "H-induced-saturated graph finite infinite family no finite induced saturated 2025 2026",
+    "induced saturation P4 finite graph no H-induced-saturated graph infinite family 2025 2026 arXiv"
+  ],
+  "notes": "The source paper was published in the Canadian Journal of Mathematics in March 2026 (DOI: 10.4153/S0008414X26102132), confirming it as a peer-reviewed result. Problem 21 is a very recent open question; wide web search spanning arXiv and journal databases found no follow-up. The problem is closely related to the known anomaly of P_4 (and paths P_t with t=1,4) having no finite induced-saturated graph, while the paper proves countably infinite H-induced-saturated graphs exist for all finite H not a clique or independent set."
+}

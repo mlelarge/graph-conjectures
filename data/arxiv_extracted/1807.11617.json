@@ -1,0 +1,50 @@
+[
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Wood-Telle Open Question (linear crossing number)",
+    "statement_text": "Is it true that for every graph $H$ there is a constant $c = c(H)$ such that every $H$-minor-free graph $G$ has crossing number $\\mathrm{cr}(G) \\leq c \\cdot \\Delta(G) \\cdot |G|$?",
+    "context_text": "Wood and Telle proved the bound $\\mathrm{cr}(G) \\leq c\\,\\Delta(G)^2 \\cdot |G|$ for $H$-minor-free graphs (Theorem 2 of the present paper) and left open whether the quadratic dependence on $\\Delta(G)$ could be reduced to linear. The $\\Omega(\\Delta n)$ lower bound was already known from Pach and T\\'{o}th for toroidal graphs, so a matching upper bound would be tight.",
+    "attributed_to": "Wood and Telle",
+    "attributed_year": 2007,
+    "paper_contribution": "Fully answers the question affirmatively by proving Theorem 3: for every graph $H$ there exists $c = c(H)$ such that every $H$-minor-free graph $G$ satisfies $\\mathrm{cr}(G) \\leq c\\,\\Delta(G) \\cdot |G|$, and extends the matching $\\Omega(\\Delta n)$ lower bound to $K_{3,3}$-minor-free and $K_h$-minor-free graphs.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "Described in the abstract as 'an open question of Wood and Telle [New York J. Mathematics, 2007]'; no labelled conjecture/question environment in the source. Statement reconstructed from context since the paper does not quote it verbatim.",
+    "arxiv_id": "1807.11617",
+    "paper_title": "Tight Upper Bounds on the Crossing Number in a Minor-Closed Class",
+    "paper_authors": [
+      "Vida Dujmović",
+      "Ken-ichi Kawarabayashi",
+      "Bojan Mohar",
+      "David R. Wood"
+    ],
+    "published": "2018-07-31",
+    "abs_url": "https://arxiv.org/abs/1807.11617",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Wood-Telle Conjecture (O(∑ deg²) crossing number)",
+    "statement_text": "For every graph $H$, there is a constant $c = c(H)$ such that every $H$-minor-free graph $G$ has crossing number $\\mathrm{cr}(G) \\leq c \\sum_{v \\in V(G)} \\deg(v)^2$.",
+    "context_text": "Wood and Telle conjectured this stronger bound, which would match the result already known for graphs of bounded Euler genus (Theorem 1, due to Pach–T\\'{o}th and B\\\"or\\\"oczky et al.). After the paper proves the $O(\\Delta(G)\\cdot|G|)$ upper bound (Theorem 3), establishing the $O(\\sum_v \\deg(v)^2)$ bound for all excluded-minor families remains open since $\\sum_v \\deg(v)^2 \\leq \\Delta(G)\\cdot 2|E(G)|$ makes it strictly stronger.",
+    "attributed_to": "Wood and Telle",
+    "attributed_year": 2007,
+    "paper_contribution": "Proves the conjecture for $K_5$-minor-free graphs (Section 4) and proves the analogous bound $\\overline{\\mathrm{cr}}(G) = O\\!\\left(\\sum_{v} \\deg(v)^2\\right)$ on the rectilinear crossing number of $K_{3,3}$-minor-free graphs; the general case remains open.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "Stated in prose in the introduction without a labelled conjecture environment: 'Wood and Telle [66] conjectured that every graph excluding a fixed minor has crossing number $O(\\sum_v \\deg(v)^2)$.' PDF source — math notation may be partially garbled.",
+    "arxiv_id": "1807.11617",
+    "paper_title": "Tight Upper Bounds on the Crossing Number in a Minor-Closed Class",
+    "paper_authors": [
+      "Vida Dujmović",
+      "Ken-ichi Kawarabayashi",
+      "Bojan Mohar",
+      "David R. Wood"
+    ],
+    "published": "2018-07-31",
+    "abs_url": "https://arxiv.org/abs/1807.11617",
+    "source": "pdf"
+  }
+]

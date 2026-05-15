@@ -1,0 +1,23 @@
+{
+  "review_id": "2511.02892__07",
+  "safe_id": "2511.02892",
+  "arxiv_id": "2511.02892",
+  "conjecture_title": "Problem 7.1",
+  "paper_title": "Open problems of the 33rd Workshop on Cycles and Colourings",
+  "published": "2025-11-04",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Problem 7.1 from arXiv:2511.02892 conjectures that every bicritical snark is almost-\\mathbb{Z}_{2}^{2}-connected and almost-\\mathbb{Z}_{4}-connected. The property has been verified computationally for the Petersen graph and both Blanuša snarks on 18 vertices using the House of Graphs snark database, but no proof for the general case has appeared. No follow-up work addressing this conjecture was found in the literature as of May 2026, consistent with its very recent posting date.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "bicritical snark almost group connected Z4 Z2 conjecture",
+    "almost A-connected snark bicritical group connectivity 2025 arxiv",
+    "\"almost-Z4-connected\" OR \"almost group connected\" snark bicritical 2025 2026",
+    "arxiv 2511.02892 \"bicritical snark\" \"group connectivity\" citing papers 2026"
+  ],
+  "notes": "The conjecture was posted in November 2025 and no citing or follow-up papers were found. The 2026 preprint arXiv:2603.17789 ('Algorithms for the Generation of Snarks') appeared in search results but could not be verified as addressing this specific conjecture within the web-call budget. The foundational references for this problem are Jaeger-Linial-Payan-Tarsi (1992) on group connectivity, Nedela-Škoviera (1996) on snark decompositions, and Coolsaet-D'hondt-Goedgebeur (2023) on the House of Graphs database."
+}

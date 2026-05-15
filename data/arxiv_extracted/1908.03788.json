@@ -1,0 +1,74 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Beisegel et al. Conjecture 1",
+    "statement_text": "For every positive integer $k$, every graph either is $P_k$-free or contains an avoidable $P_k$.",
+    "context_text": "Beisegel et al. conjectured this generalisation of the known results for avoidable vertices (Ohtsuki et al. 1976) and avoidable edges (Beisegel et al. 2019, Theorem 1.4). It was also motivated by a result of Chvátal et al. 2002 establishing the same conclusion for $C_{\\geq k+3}$-free graphs.",
+    "attributed_to": "Beisegel, Chudnovsky, Gurvich, Milanič, and Servatius",
+    "attributed_year": 2019,
+    "paper_contribution": "Proves the conjecture in full generality as Theorem 1.9, via a stronger induction hypothesis (Theorem 2.4), superseding all previous partial results.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source — subscripts in $P_k$ inferred from context; mathematical content is unambiguous.",
+    "arxiv_id": "1908.03788",
+    "paper_title": "Avoidable paths in graphs",
+    "paper_authors": [
+      "Marthe Bonamy",
+      "Oscar Defrain",
+      "Meike Hatzel",
+      "Jocelyn Thiebaut"
+    ],
+    "published": "2019-08-10",
+    "abs_url": "https://arxiv.org/abs/1908.03788",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Question 1.12",
+    "statement_text": "For every positive integer $k$, does every graph $G$ either not contain two disjoint $P_k$, or contain two disjoint avoidable $P_k$?",
+    "context_text": "The analogous statement for non-adjacent avoidable $P_k$ is established as Corollary 1.11. The authors note the answer is positive for $k \\in \\{1,2\\}$ by results of Beisegel et al., but then provide an explicit counterexample for every $k \\geq 3$ (a cycle on $2k-1$ vertices with one extra vertex adjacent to two consecutive cycle vertices), resolving the question negatively within the same paper.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "The question is posed and then fully answered (negatively for $k \\geq 3$) within the same paper; it is not open.",
+    "arxiv_id": "1908.03788",
+    "paper_title": "Avoidable paths in graphs",
+    "paper_authors": [
+      "Marthe Bonamy",
+      "Oscar Defrain",
+      "Meike Hatzel",
+      "Jocelyn Thiebaut"
+    ],
+    "published": "2019-08-10",
+    "abs_url": "https://arxiv.org/abs/1908.03788",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Question 4.1",
+    "statement_text": "Does there exist a family $\\mathcal{H}$ of connected graphs, not containing any path, such that any graph is either $\\mathcal{H}$-free or contains an avoidable element of $\\mathcal{H}$?",
+    "context_text": "Having established avoidable paths of every length, the authors ask whether avoidability extends to other graph structures. They note that even allowing a family rather than a single pattern, no candidate beyond paths seems to survive tests on chordal graphs or simple ad hoc constructions, and that the notion of avoidability for non-path structures is deliberately left open to interpretation.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "PDF source — mathematical content is clear; the family $\\mathcal{H}$ notation is inferred from context.",
+    "arxiv_id": "1908.03788",
+    "paper_title": "Avoidable paths in graphs",
+    "paper_authors": [
+      "Marthe Bonamy",
+      "Oscar Defrain",
+      "Meike Hatzel",
+      "Jocelyn Thiebaut"
+    ],
+    "published": "2019-08-10",
+    "abs_url": "https://arxiv.org/abs/1908.03788",
+    "source": "pdf"
+  }
+]

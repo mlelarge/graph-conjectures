@@ -1,0 +1,24 @@
+{
+  "review_id": "1811.08750__00",
+  "safe_id": "1811.08750",
+  "arxiv_id": "1811.08750",
+  "conjecture_title": "Conjecture 1.8",
+  "paper_title": "Additive Approximation of Generalized Turán Questions",
+  "published": "2018-11-21",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "Conjecture 1.8 from arXiv:1811.08750 posits that whenever no member of the forbidden family F is a subgraph of a blow-up of T, it is NP-hard to approximate ex(G,T,F) within additive error n^{v(T)-epsilon}. The paper proves the special case T=K_m, F={K_k} with k >= m+2 (Theorem 1.7), but the general conjecture remains open. The paper was published in Algorithmica in 2022, and a 2025 survey on generalized Turán problems (arXiv:2506.03418) exists, but no follow-up resolving the full conjecture was found in the indexed literature.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Alon Shikhelman \"generalized Turán\" NP-hard approximation 1811.08750",
+    "generalized Turán ex(G,T,F) NP-hard additive approximation blow-up subgraph",
+    "cite:1811.08750 NP-hard approximation generalized Turán conjecture 2019 2020 2021 2022 2023 2024",
+    "Shikhelman \"generalized Turán\" computational complexity hardness approximation 2020 2021 2022 2023 2024 2025",
+    "WebFetch https://arxiv.org/abs/2506.03418 (survey on generalized Turán problems)"
+  ],
+  "notes": "The conjecture is from 2018 and no resolution was found after 5 web calls. The paper appeared in Algorithmica (2021, online; 2022 in print). A 2025 survey arXiv:2506.03418 covers generalized Turán counting problems but its full text was not accessible, so it may or may not discuss the conjecture's current status. Confidence is medium rather than high because the conjecture is 7+ years old, making absence of evidence somewhat less conclusive."
+}

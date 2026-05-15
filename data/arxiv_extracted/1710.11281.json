@@ -1,0 +1,149 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Schroeder's Conjecture (Conjecture 2)",
+    "statement_text": "Let $G$ be a graph of genus $g$. Then $c(G) \\leq g + 3$.",
+    "context_text": "Schroeder proved that $c(G) \\leq \\lfloor \\frac{3}{2}g \\rfloor + 3$ for graphs of genus $g$ and conjectured the bound can be tightened. The conjecture holds for $g=1$ (the torus), but no toroidal graph with cop number 4 is known. Most researchers believe the conjectured bound is tight up to a constant, but no evidence supports this.",
+    "attributed_to": "Schroeder",
+    "attributed_year": 2001,
+    "paper_contribution": "Establishes the lower bound $c(g) \\geq g^{1/2 - o(1)}$ using random-graph results of Bollobás, Kun, and Leader, and proposes the stronger Conjecture 8 that $c(g) = g^{1/2+o(1)}$, suggesting Schroeder's linear upper bound is far from tight.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1710.11281",
+    "paper_title": "Notes on Cops and Robber game on graphs",
+    "paper_authors": [
+      "Bojan Mohar"
+    ],
+    "published": "2017-10-31",
+    "abs_url": "https://arxiv.org/abs/1710.11281",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 8",
+    "statement_text": "$c(g) = g^{\\frac{1}{2}+o(1)}$ and $ec(g) = g^{\\frac{1}{2}+o(1)}$. In other words, for every $\\varepsilon > 0$ there exists $g_0$ such that for every $g \\geq g_0$, $$g^{\\frac{1}{2}-\\varepsilon} < c(g) < g^{\\frac{1}{2}+\\varepsilon}$$ and $$g^{\\frac{1}{2}-\\varepsilon} < ec(g) < g^{\\frac{1}{2}+\\varepsilon}.$$",
+    "context_text": "After establishing via random graphs that $c(g) \\geq g^{1/2-o(1)}$, the author conjectures the true growth rate of the cop number (and nonorientable cop number) as a function of genus is exactly $g^{1/2}$. The conjecture has been unchallenged as of the writing of the notes.",
+    "attributed_to": "paper authors",
+    "attributed_year": 2009,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "low",
+    "notes": "PDF source — exponents appear garbled in extraction (e.g., 'g 1 2 +o(1)'); reconstructed as $g^{1/2+o(1)}$ from context. The conjecture is explicitly labelled 'Conjecture 8 (Mohar, 2009)' and is the paper author's own.",
+    "arxiv_id": "1710.11281",
+    "paper_title": "Notes on Cops and Robber game on graphs",
+    "paper_authors": [
+      "Bojan Mohar"
+    ],
+    "published": "2017-10-31",
+    "abs_url": "https://arxiv.org/abs/1710.11281",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Question (Riemannian surfaces): cop number bounded by genus",
+    "statement_text": "Is the cop number of surfaces bounded in terms of the genus?",
+    "context_text": "In Section 3 the author introduces a continuous Cops and Robbers game on Riemannian surfaces and poses several basic open questions. The first asks whether the cop number of a Riemannian surface, defined via players moving at unit velocity, is a finite function of the topological genus.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated as an informal bullet-point question in Section 3 without a labelled theorem environment.",
+    "arxiv_id": "1710.11281",
+    "paper_title": "Notes on Cops and Robber game on graphs",
+    "paper_authors": [
+      "Bojan Mohar"
+    ],
+    "published": "2017-10-31",
+    "abs_url": "https://arxiv.org/abs/1710.11281",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Question (Riemannian surfaces): cop converging to robber",
+    "statement_text": "If the cops have a strategy to catch the robber, could it in fact be achieved that one of the cops comes arbitrarily close to the robber (or even onto the same point) in the continuous version of the game?",
+    "context_text": "In the continuous game on a Riemannian surface a robber is 'caught' when a cop comes within distance $\\frac{1}{2}$. The author asks whether a winning strategy can always be strengthened so that a cop actually converges to the robber's exact position.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated as an informal bullet-point question in Section 3 without a labelled theorem environment.",
+    "arxiv_id": "1710.11281",
+    "paper_title": "Notes on Cops and Robber game on graphs",
+    "paper_authors": [
+      "Bojan Mohar"
+    ],
+    "published": "2017-10-31",
+    "abs_url": "https://arxiv.org/abs/1710.11281",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Question (Riemannian surfaces): worst surfaces of fixed genus",
+    "statement_text": "Which surfaces of a fixed genus are the worst (with respect to the cop number)?",
+    "context_text": "Among all Riemannian surfaces sharing the same topological genus, the author asks which geometric realization maximises the cop number, as part of a broader investigation of the continuous Cops and Robbers game on surfaces.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated as an informal bullet-point question in Section 3 without a labelled theorem environment.",
+    "arxiv_id": "1710.11281",
+    "paper_title": "Notes on Cops and Robber game on graphs",
+    "paper_authors": [
+      "Bojan Mohar"
+    ],
+    "published": "2017-10-31",
+    "abs_url": "https://arxiv.org/abs/1710.11281",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Question (Riemannian surfaces): supremum of cop number for geometrically bounded surfaces",
+    "statement_text": "What is the supremum of the cop numbers taken over all surfaces whose cut locus is at least $1$ and whose area is at most $\\alpha$? Is it bounded?",
+    "context_text": "The author asks whether restricting to Riemannian surfaces with a positive lower bound on the injectivity radius and an upper bound on total area is enough to guarantee a finite supremum for the cop number.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated as an informal bullet-point question in Section 3 without a labelled theorem environment.",
+    "arxiv_id": "1710.11281",
+    "paper_title": "Notes on Cops and Robber game on graphs",
+    "paper_authors": [
+      "Bojan Mohar"
+    ],
+    "published": "2017-10-31",
+    "abs_url": "https://arxiv.org/abs/1710.11281",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Question (Riemannian surfaces): constant curvature surfaces",
+    "statement_text": "Are the surfaces of constant curvature any simpler than general Riemannian surfaces with respect to the Cops and Robber game?",
+    "context_text": "The author asks whether the special geometric structure of constant-curvature surfaces (spherical, Euclidean, or hyperbolic) renders the continuous Cops and Robbers game more tractable than on general Riemannian surfaces.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated as an informal bullet-point question in Section 3 without a labelled theorem environment.",
+    "arxiv_id": "1710.11281",
+    "paper_title": "Notes on Cops and Robber game on graphs",
+    "paper_authors": [
+      "Bojan Mohar"
+    ],
+    "published": "2017-10-31",
+    "abs_url": "https://arxiv.org/abs/1710.11281",
+    "source": "pdf"
+  }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1 (Bang-Jensen, da Silva, and Havet) — Dijoin Conjecture",
+    "statement_text": "For oriented graphs $L$ and $R$ we have $\\operatorname{inv}(L \\to R) = \\operatorname{inv}(L) + \\operatorname{inv}(R)$.",
+    "context_text": "The dijoin $L \\to R$ consists of vertex-disjoint copies of $L$ and $R$ with an edge $\\overrightarrow{uv}$ for every $u \\in V(L)$ and $v \\in V(R)$. Bang-Jensen, da Silva, and Havet proved the conjecture when $\\operatorname{inv}(L)+\\operatorname{inv}(R) \\leq 3$ and when $\\operatorname{inv}(L)=\\operatorname{inv}(R)=2$ and both are strongly connected, and observed it is equivalent to its restriction to tournaments.",
+    "attributed_to": "Bang-Jensen, da Silva, and Havet",
+    "attributed_year": null,
+    "paper_contribution": "Disproves the conjecture by exhibiting a tournament $R$ with $\\operatorname{inv}(R) = \\operatorname{inv}(\\overrightarrow{C_3} \\to R) = 3$ (Theorem 1); separately proves it in the special case $\\operatorname{inv}(L)=\\operatorname{inv}(R)=2$ (Theorem 2).",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source; directed-cycle notation rendered as '# »C3' in extraction but mathematically unambiguous.",
+    "arxiv_id": "2212.11969",
+    "paper_title": "Invertibility of digraphs and tournaments",
+    "paper_authors": [
+      "Noga Alon",
+      "Emil Powierski",
+      "Michael Savery",
+      "Alex Scott",
+      "Elizabeth Wilmer"
+    ],
+    "published": "2024-01-22",
+    "abs_url": "https://arxiv.org/abs/2212.11969",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "NP-completeness of k-Inversion for k ≥ 3 (Bang-Jensen, da Silva, and Havet)",
+    "statement_text": "For each $k \\geq 3$, the problem of deciding whether a general oriented graph $D$ satisfies $\\operatorname{inv}(D) \\leq k$ is NP-complete.",
+    "context_text": "Bang-Jensen, da Silva, and Havet showed 1-Inversion and 2-Inversion are NP-complete and conjectured NP-completeness extends to all larger fixed $k$, noting it would follow from the dijoin conjecture via a standard reduction.",
+    "attributed_to": "Bang-Jensen, da Silva, and Havet",
+    "attributed_year": null,
+    "paper_contribution": "Proves the conjecture in a strengthened form — $k$-Inversion is NP-complete for all $k \\in \\mathbb{N}$ (Theorem 5) — by using Theorem 3 (a $k$-join analogue) in place of the full dijoin conjecture.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "Stated as a prose conjecture in the introduction without an explicit numbered environment in this paper.",
+    "arxiv_id": "2212.11969",
+    "paper_title": "Invertibility of digraphs and tournaments",
+    "paper_authors": [
+      "Noga Alon",
+      "Emil Powierski",
+      "Michael Savery",
+      "Alex Scott",
+      "Elizabeth Wilmer"
+    ],
+    "published": "2024-01-22",
+    "abs_url": "https://arxiv.org/abs/2212.11969",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Tightness of inv(D) ≤ 2τ(D) (Bang-Jensen, da Silva, and Havet)",
+    "statement_text": "For every $k \\in \\mathbb{N}$ there exists an oriented graph $D$ with $\\operatorname{inv}(D) = 2\\tau(D) = 2k$.",
+    "context_text": "Bang-Jensen, da Silva, and Havet proved the general bound $\\operatorname{inv}(D) \\leq 2\\tau(D)$ and conjectured it is tight for all values of $\\tau(D)$, motivating the conjecture with the tournament $V_5$ (obtained by adding a dominating vertex to the transitive tournament on four vertices), which satisfies $\\tau(V_5)=1$ and $\\operatorname{inv}(V_5)=2$.",
+    "attributed_to": "Bang-Jensen, da Silva, and Havet",
+    "attributed_year": null,
+    "paper_contribution": "Confirms the conjecture by explicitly constructing oriented graphs $D$ achieving $\\operatorname{inv}(D) = 2\\tau(D) = 2k$ for every $k \\in \\mathbb{N}$ (Theorem 7).",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "Stated as a prose conjecture in the introduction without an explicit numbered environment in this paper.",
+    "arxiv_id": "2212.11969",
+    "paper_title": "Invertibility of digraphs and tournaments",
+    "paper_authors": [
+      "Noga Alon",
+      "Emil Powierski",
+      "Michael Savery",
+      "Alex Scott",
+      "Elizabeth Wilmer"
+    ],
+    "published": "2024-01-22",
+    "abs_url": "https://arxiv.org/abs/2212.11969",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Upper bound inv(n) ≤ ⌊(n−1)/2⌋ (Belkhechine, Bouaziz, Boudabbous, and Pouzet)",
+    "statement_text": "$\\operatorname{inv}(n) \\leq \\left\\lfloor \\dfrac{n-1}{2} \\right\\rfloor$ for all $n$.",
+    "context_text": "Belkhechine, Bouaziz, Boudabbous, and Pouzet established the first non-trivial bounds $\\log(n)+O(1) \\leq \\operatorname{inv}(n) \\leq n+O(1)$ on the maximum inversion number of an $n$-vertex tournament and conjectured a much tighter upper bound of $\\lfloor(n-1)/2\\rfloor$.",
+    "attributed_to": "Belkhechine, Bouaziz, Boudabbous, and Pouzet",
+    "attributed_year": null,
+    "paper_contribution": "Disproves the conjecture by showing $\\operatorname{inv}(n) = (1+o(1))n$; specifically, $\\operatorname{inv}(n) \\geq n - \\sqrt{2n\\log n}$ for sufficiently large $n$ via a random construction (Theorem 8), far exceeding $\\lfloor(n-1)/2\\rfloor$.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "Stated as a prose conjecture in the introduction without an explicit numbered environment in this paper.",
+    "arxiv_id": "2212.11969",
+    "paper_title": "Invertibility of digraphs and tournaments",
+    "paper_authors": [
+      "Noga Alon",
+      "Emil Powierski",
+      "Michael Savery",
+      "Alex Scott",
+      "Elizabeth Wilmer"
+    ],
+    "published": "2024-01-22",
+    "abs_url": "https://arxiv.org/abs/2212.11969",
+    "source": "pdf"
+  }
+]

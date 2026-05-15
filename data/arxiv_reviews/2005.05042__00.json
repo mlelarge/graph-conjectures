@@ -1,0 +1,34 @@
+{
+  "review_id": "2005.05042__00",
+  "safe_id": "2005.05042",
+  "arxiv_id": "2005.05042",
+  "conjecture_title": "Conjecture 1.4",
+  "paper_title": "Graphs with polynomially many minimal separators",
+  "published": "2021-12-28",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "disproved",
+  "confidence": "medium",
+  "summary": "Conjecture 1.4 was disproved by Gartland and Lokshtanov (arXiv:2007.08761, posted July 2020), who exhibited a counterexample showing that forbidding k-creatures for a fixed k does not suffice to guarantee polynomially many minimal separators. Their paper proves instead the weaker result that hereditary classes excluding k-creatures are 'strongly quasi-tame' (quasi-polynomially many minimal separators) under an additional condition that minimal separators can be dominated by a bounded number of vertices. Related SODA 2023 work showed that forbidding both k-creatures and k-critters yields a quasi-polynomial separator bound.",
+  "since_posted": [
+    {
+      "title": "Dominated Minimal Separators are Tame (Nearly All Others are Feral)",
+      "authors": "Peter Gartland, Daniel Lokshtanov",
+      "year": 2020,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2007.08761",
+      "arxiv_id": "2007.08761",
+      "doi": null,
+      "kind": "counterexample",
+      "claim": "Provides an explicit counterexample to the conjecture that every hereditary class excluding k-creatures for fixed k has polynomially many minimal separators, and in its place proves that such classes are strongly quasi-tame when minimal separators can be dominated by a fixed number of vertices."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "k-creature minimal separators polynomial graph arXiv 2005.05042",
+    "minimal separators polynomial k-creature theta pyramid prism turtle induced subgraph conjecture",
+    "arxiv Graph Classes with Few Minimal Separators SODA 2023 Abrishami Chudnovsky preprint"
+  ],
+  "notes": "The counterexample in arXiv:2007.08761 was posted July 2020, two months after the source arXiv preprint (May 2020) and over a year before its journal publication (December 2021); it is included in since_posted because it postdates the conjecture's first public statement. SODA 2023 companion papers 'Graph Classes with Few Minimal Separators I & II' prove a dichotomy result and show quasi-polynomial bounds for graphs excluding both k-creatures and k-critters, but their arXiv IDs were not verified within the web-call budget. arXiv:2405.15543 (2024) continues this line of work with a tame vs. feral dichotomy for graphs excluding an induced minor or topological minor, but its direct bearing on Conjecture 1.4 was not verified."
+}

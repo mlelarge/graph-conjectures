@@ -1,0 +1,34 @@
+{
+  "review_id": "1803.05396__01",
+  "safe_id": "1803.05396",
+  "arxiv_id": "1803.05396",
+  "conjecture_title": "Open Problem: Polynomial-time maximum independent set on $P_t$-free graphs",
+  "paper_title": "$H$-colouring $P_t$-free graphs in subexponential time",
+  "published": "2019-03-22",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The conjecture remains open in its full generality for all $t \\geq 7$. The most significant post-2019 advance is the quasi-polynomial-time algorithm of Gartland and Lokshtanov (2020), which shows that Maximum Independent Set on $P_k$-free graphs can be solved in time $n^{O(k^2 \\log^3 n)}$ for any fixed $k$, ruling out NP-completeness for any fixed path length. Polynomial-time results have been extended to $P_7$-free graphs with bounded clique number (ISAAC 2025), but polynomial-time solvability for general $P_t$-free graphs with $t \\geq 7$ remains open.",
+  "since_posted": [
+    {
+      "title": "Independent Set on $P_k$-Free Graphs in Quasi-Polynomial Time",
+      "authors": "Peter Gartland, Daniel Lokshtanov",
+      "year": 2020,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2005.00690",
+      "arxiv_id": "2005.00690",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves that Maximum Weight Independent Set on $P_k$-free graphs is solvable in quasi-polynomial time $n^{O(k^2 \\log^3 n)}$ for any fixed $k$, providing the first conclusive evidence that the problem is not NP-complete for any fixed $k$ and representing the strongest known upper bound for $t \\geq 7$."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "maximum independent set P_t-free graphs polynomial time algorithm 2020 2021 2022 2023 2024 2025",
+    "maximum weight independent set Pt-free graphs polynomial 1803.05396 Groenland Rzążewski Spirkl",
+    "Gartland Lokshtanov quasi-polynomial independent set P_t-free graphs STOC 2021 arxiv"
+  ],
+  "notes": "The quasi-polynomial-time result of Gartland--Lokshtanov (arxiv:2005.00690) is the main post-2019 advance directly relevant to this problem; it does not achieve polynomial time but establishes a clear barrier to NP-hardness. A 2025 ISAAC paper (DOI 10.4230/LIPIcs.ISAAC.2025.20, 'Sparse Induced Subgraphs in P_7-Free Graphs of Bounded Clique Number') extends polynomial-time solvability to P_7-free graphs with bounded clique number, but this paper's authors and arxiv ID could not be verified within the web-call budget. The polynomial-time open question for unrestricted P_t-free graphs with t >= 7 is thus confirmed open with high confidence."
+}

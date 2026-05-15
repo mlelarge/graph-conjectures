@@ -1,0 +1,24 @@
+{
+  "review_id": "2002.00496__01",
+  "safe_id": "2002.00496",
+  "arxiv_id": "2002.00496",
+  "conjecture_title": "Open Problem: Characterization of Unavoidable Graphs",
+  "paper_title": "Excluding a ladder",
+  "published": "2021-04-06",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "Conjecture 6 of arXiv:2002.00496 asks for a full characterization of unavoidable graphs — those H such that the cover graph of every poset of sufficiently large dimension contains H as a minor — proposing that H is unavoidable if and only if H is a minor of some graph from Kelly's construction. The paper itself establishes that every ladder and K_4 are unavoidable (positive cases), while Kelly's construction provides the necessary condition. No follow-up paper that settles the full conjecture was found in a targeted search. A paper 'Forcing the Wheel' appeared in the journal Order in 2025 and may extend the list of known unavoidable graphs, but its content could not be verified due to a paywall redirect.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "unavoidable graphs poset dimension cover graph minor characterization Kelly construction arXiv:2002.00496",
+    "unavoidable minor cover graph poset dimension Huynh Joret Micek Seweryn ladder 2021 2022 2023 2024",
+    "unavoidable cover graph poset minor Kelly characterization sufficient condition 2022 2023 2024 2025",
+    "Forcing the Wheel arXiv poset dimension unavoidable minor cover graph",
+    "unavoidable minor cover graph poset dimension arXiv search"
+  ],
+  "notes": "The conjecture is Conjecture 6 in the paper (also called the 'Open Problem: Characterization of Unavoidable Graphs'). The source paper was published in Combinatorica 42:405–432 (2022). A paper titled 'Forcing the Wheel' (Springer, Order, 2025, DOI 10.1007/s11083-025-09695-z) appeared in search results and could be related — its title suggests it may prove the wheel graph is unavoidable, which would constitute partial progress — but the Springer page required authentication and content could not be verified. No resolution of the full characterization conjecture was found."
+}

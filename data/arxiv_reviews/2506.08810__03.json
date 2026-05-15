@@ -1,0 +1,22 @@
+{
+  "review_id": "2506.08810__03",
+  "safe_id": "2506.08810",
+  "arxiv_id": "2506.08810",
+  "conjecture_title": "Conjecture 24",
+  "paper_title": "Infinite induced-saturated graphs",
+  "published": "2025-09-01",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 24 from arXiv:2506.08810 is the tournament analogue of the paper's main theorem: for every non-transitive finite tournament T, a countably infinite T-free tournament S_T exists such that every locally finite perturbation of S_T contains an induced copy of T. The paper was posted on arXiv in June 2025 and published online in the Canadian Journal of Mathematics on March 24, 2026 (FirstView). No follow-up resolving or partially addressing this conjecture was found in searches of the literature.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "arXiv 2506.08810 induced-saturated graphs tournament",
+    "tournament T-free induced-saturated locally finite perturbation countably infinite conjecture",
+    "Bonamy Groenland Johnston Morrison Scott tournament induced-saturated infinite 2025 2026"
+  ],
+  "notes": "The conjecture was proposed as an open problem in Section 8 of the paper. It is very recent (arXiv June 2025, published March 2026). A wide search returned no follow-up paper addressing the tournament analogue. The non-transitivity condition in the conjecture is necessary because any tournament on 2^n elements contains a transitive subtournament on n elements, making avoidance impossible in infinite structures for transitive tournaments. The source paper itself is published in Canadian Journal of Mathematics (FirstView, 2026), verified at https://www.cambridge.org/core/journals/canadian-journal-of-mathematics/article/infinite-inducedsaturated-graphs/E056015406BEFB0C1AD3FCC9D1C03BA9."
+}

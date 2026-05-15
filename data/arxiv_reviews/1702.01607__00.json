@@ -1,0 +1,49 @@
+{
+  "review_id": "1702.01607__00",
+  "safe_id": "1702.01607",
+  "arxiv_id": "1702.01607",
+  "conjecture_title": "Problem 3",
+  "paper_title": "Coloring tournaments: from local to global",
+  "published": "2017-03-15",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Problem 3 from arXiv:1702.01607 — that for every $i \\geq 1$ there exists $f(i)$ such that every tournament with dominating number at least $f(i)$ contains an isomorphic copy of $S_i$ — remains open for all $i \\geq 4$. Aboulker, Aubian, Charbit, and Lopes (arXiv:2310.04265, 2023) embed the conjecture (as their Conjecture 5.2) into a three-statement implication chain involving a proven theorem and an intermediate Conjecture 5.3, and observe that showing every $S_k$ is a rebel would imply Conjecture 5.3. A separate 2023 survey (arXiv:2306.02364) dedicates Section 9 to the two conjectures of Harutyunyan et al. and Section 13 to excluding $S_t$, treating the full statement as open.",
+  "since_posted": [
+    {
+      "title": "Clique number of tournaments",
+      "authors": "Pierre Aboulker, Guillaume Aubian, Pierre Charbit, Raul Lopes",
+      "year": 2023,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2310.04265",
+      "arxiv_id": "2310.04265",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Introduces the notion of tournament clique number, places Problem 3 as Conjecture 5.2, introduces an intermediate Conjecture 5.3, proves an implication chain among the three statements, and notes that showing every $S_k$ is a rebel would imply Conjecture 5.3."
+    }
+  ],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2310.04265",
+      "verified": true,
+      "note": "Abstract confirmed via arXiv abs page: paper introduces tournament clique number and investigates its relation with dichromatic number. HTML content confirmed: S_n defined recursively as S_1=TT_1, S_n=Delta(1,S_{n-1},S_{n-1}), property dom(T) <= omega-vec(T) <= chi-vec(T) established, and reference [19] = Harutyunyan, Le, Thomasse, Wu cited for local-to-global dichromatic results. All three internal-reference entries point to this same paper."
+    },
+    {
+      "arxiv_id": "2310.04265",
+      "verified": true,
+      "note": "Duplicate of first internal reference entry; same paper verified above."
+    },
+    {
+      "arxiv_id": "2310.04265",
+      "verified": true,
+      "note": "Duplicate of first internal reference entry; same paper verified above."
+    }
+  ],
+  "search_queries": [
+    "tournament dominating number S_i Harutyunyan Le Thomassé Wu 1702.01607",
+    "tournament \"domination number\" \"S_i\" conjecture dichromatic number blow-up arXiv 2023 2024"
+  ],
+  "notes": "All three internal references are duplicates pointing to arXiv:2310.04265. An additional survey arXiv:2306.02364 ('Some results and problems on tournament structure') was located via search and partially verified via HTML fetch: it contains Section 9 titled 'Two conjectures of Harutyunyan et al.' and Section 13 titled 'Excluding S_t', and cites Harutyunyan-Le-Thomasse-Wu as reference [9]; however, the authors of 2306.02364 could not be confirmed before the 5-call cap was reached, so it is omitted from since_posted. No paper resolving Problem 3 for i >= 4 was found in the indexed literature."
+}

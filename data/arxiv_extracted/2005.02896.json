@@ -1,0 +1,24 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Erdős-Hajnal Conjecture (Conjecture 1.1)",
+    "statement_text": "For every graph $H$, there exists $\\varepsilon > 0$ such that every $H$-free graph $G$ has a clique or stable set of cardinality at least $|G|^\\varepsilon$.",
+    "context_text": "The Erdős-Hajnal conjecture is the central motivation for this paper. The specific open case of $H = P_5$ (equivalently, $H$ = house) is described as one of the three smallest open cases and has been the subject of much study. The house is the smallest hole-with-hat.",
+    "attributed_to": "Erdős and Hajnal",
+    "attributed_year": 1989,
+    "paper_contribution": "Proves the conjecture for the class of hole-with-hat-free graphs: there exists $\\varepsilon > 0$ such that every hole-with-hat-free graph $G$ has a clique or stable set of cardinality at least $|G|^\\varepsilon$. This strictly generalises the house-free case (since hole-with-hat-free implies house-free) but does not resolve the house/$P_5$ open case.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "The house/$P_5$ special case is explicitly flagged as still open in the abstract. The paper text is truncated after Section 3; any conjectures posed in later sections are not visible in the provided extract.",
+    "arxiv_id": "2005.02896",
+    "paper_title": "Holes with hats and Erdős-Hajnal",
+    "paper_authors": [
+      "Maria Chudnovsky",
+      "Paul Seymour"
+    ],
+    "published": "2020-06-15",
+    "abs_url": "https://arxiv.org/abs/2005.02896",
+    "source": "pdf"
+  }
+]

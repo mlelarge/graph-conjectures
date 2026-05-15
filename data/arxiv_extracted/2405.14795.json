@@ -1,0 +1,48 @@
+[
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Problem 3.1",
+    "statement_text": "Determine whether or not there exists a function $r_{0}\\colon\\mathbb{N}\\to\\mathbb{R}$ such that the following holds. For each $n\\geq 1$, let $\\chi_{1},\\ldots,\\chi_{m}\\colon\\binom{[n]}{2}\\to\\mathcal{C}_{r}$ be independent uniformly random $r$-edge-colorings. If $r=r(n)$ satisfies $r(n)<r_{0}(n)$, then with high probability, there does not exist a rainbow stacking of $\\chi_{1},\\ldots,\\chi_{m}$. If $r=r(n)$ satisfies $r(n)>r_{0}(n)$, then with high probability, there exists a rainbow stacking of $\\chi_{1},\\ldots,\\chi_{m}$.",
+    "context_text": "Theorem 1.1 shows that the existence of rainbow stackings exhibits a sharp threshold, with the transition occurring within an interval of length roughly $(2m-1)/3$. The authors pose whether the transition is even sharper — i.e., whether a single threshold function $r_0$ governs the transition exactly. The critical value of $r$ is on the order of $n/\\log n$, making such a sharp transition more dramatic than, for example, the 2-point concentration of the independence number of $G(n,1/2)$.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2405.14795",
+    "paper_title": "Rainbow Stackings of Random Edge-Colorings",
+    "paper_authors": [
+      "Noga Alon",
+      "Colin Defant",
+      "Noah Kravitz"
+    ],
+    "published": "2024-05-23",
+    "abs_url": "https://arxiv.org/abs/2405.14795",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Question 3.3",
+    "statement_text": "Is it true that when $n$ is odd, every pair of proper edge-colorings of $K_{n}$ admits a rainbow stacking?",
+    "context_text": "Proposition 3.2 constructs, for each even $n\\geq 4$, a pair of proper edge-colorings of $K_n$ with no rainbow stacking (based on a construction from transversals in Latin squares over $\\mathbb{F}_2^k$). The question asks whether the odd case is categorically different. The answer is known to be affirmative for $n=3$ (by inspection) and $n=5$ (by computer search); a general resolution is expected to be difficult.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2405.14795",
+    "paper_title": "Rainbow Stackings of Random Edge-Colorings",
+    "paper_authors": [
+      "Noga Alon",
+      "Colin Defant",
+      "Noah Kravitz"
+    ],
+    "published": "2024-05-23",
+    "abs_url": "https://arxiv.org/abs/2405.14795",
+    "source": "html"
+  }
+]

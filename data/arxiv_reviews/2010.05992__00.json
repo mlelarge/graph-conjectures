@@ -1,0 +1,34 @@
+{
+  "review_id": "2010.05992__00",
+  "safe_id": "2010.05992",
+  "arxiv_id": "2010.05992",
+  "conjecture_title": "Near-sunflower analogue of the Erdős-Rado Sunflower Conjecture",
+  "paper_title": "Near-sunflowers and focal families",
+  "published": "2020-10-12",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The conjecture that every k-uniform family containing no near-sunflower of size r satisfies |F| ≤ C^k (C depending only on r) remains open. The source paper, published in Israel Journal of Mathematics (2023), proves the C^k bound only under the strictly stronger condition of being focal-free (Section 6), leaving the near-sunflower version explicitly open. A 2024 follow-up (Huang–Shangguan–Zhang–Zhao, arXiv:2410.23611) provides asymptotically optimal bounds for focal-free hypergraphs and codes, extending the Alon-Holzman focal-free analysis, but does not address the near-sunflower conjecture. No verified proof or counterexample for the full conjecture has been found.",
+  "since_posted": [
+    {
+      "title": "Focal-free uniform hypergraphs and codes",
+      "authors": "Xinqi Huang, Chong Shangguan, Xiande Zhang, Yuhao Zhao",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2410.23611",
+      "arxiv_id": "2410.23611",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Gives asymptotically optimal bounds on the maximum size of focal-free uniform hypergraphs and codes (a strictly stronger condition than near-sunflower-free, as every near-sunflower-free family is also focal-free), and connects focal-free structures to the Erdős Matching Conjecture, but does not resolve the near-sunflower conjecture."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "near-sunflower k-uniform family Erdős-Rado sunflower conjecture Alon Holzman 2020",
+    "near-sunflower exponential bound conjecture arxiv 2010.05992",
+    "\"near-sunflower\" \"focal\" \"k-uniform\" conjecture progress 2021 2022 2023 2024 2025"
+  ],
+  "notes": "The Erdős-Rado sunflower conjecture itself remains open; arXiv:2212.13609 (Fukuyama, 2022) claiming a proof was found to contain errors and was not accepted. Since the near-sunflower conjecture is weaker (near-sunflower-free is a stronger condition than sunflower-free), it remains open independently. The source paper was published as: Israel Journal of Mathematics, 2023. No internal references were supplied for verification."
+}

@@ -1,0 +1,22 @@
+{
+  "review_id": "2001.09679__00",
+  "safe_id": "2001.09679",
+  "arxiv_id": "2001.09679",
+  "conjecture_title": "Informal open question on the exact value of $b_\\varepsilon$",
+  "paper_title": "A note on sublinear separators and expansion",
+  "published": "2020-07-07",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "Dvořák establishes the bounds $\\frac{1}{2\\varepsilon}-1\\leq b_\\varepsilon\\leq\\frac{1}{2\\varepsilon}-\\frac{1}{2}$ for $0<\\varepsilon<\\frac{1}{2}$ and asks whether the remaining gap of $\\frac{1}{2}$ can be closed; no follow-up paper resolving this question was found in five web searches. The question of whether $b_\\varepsilon$ is discontinuous at $\\varepsilon=1/2$ remains open.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Dvořák sublinear separators expansion b_epsilon bounds 2001.09679",
+    "sublinear separator expansion \"b_epsilon\" OR \"b_varepsilon\" graph theory bounds discontinuity",
+    "Dvorak \"2001.09679\" citation \"sublinear separator\" expansion bounds improved 2021 2022 2023 2024 2025"
+  ],
+  "notes": "No follow-up work resolving the gap between the upper and lower bounds on $b_\\varepsilon$ was found in the indexed literature. The paper is 6 years old (2020–2026), so medium rather than high confidence is assigned. Related work on strongly sublinear separators (e.g., arXiv:2208.10074 on product structure, and a SoCG 2025 paper on sphere intersection graphs) continues the broader programme but does not appear to address this specific bound-tightening question."
+}

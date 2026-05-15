@@ -1,0 +1,25 @@
+{
+  "review_id": "1807.04969__00",
+  "safe_id": "1807.04969",
+  "arxiv_id": "1807.04969",
+  "conjecture_title": "Open Problem (constant c vs. |H|)",
+  "paper_title": "A tight Erdős-Pósa function for planar minors",
+  "published": "2019-10-23",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The open problem asks for good bounds on the constant $c = c(H)$ in the Erdős-Pósa bounding function $f(k) = ck\\log(k+1)$ for planar minors, and in particular whether $c$ can be made to depend only polynomially on $|H|$. The original paper's proof yields an enormous (possibly non-computable) constant $c$, while Chekuri–Chuzhoy achieve polynomial dependence on $|H|$ at the cost of extra poly-logarithmic factors. No subsequent work resolving this specific quantitative question was found in a thorough search of the literature as of May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Erdős-Pósa planar minors constant c polynomial |H| Cames van Batenburg Huynh Joret Raymond",
+    "Erdos-Posa function planar minors tight bound constant arxiv 1807.04969",
+    "Erdos-Posa planar minors polynomial dependence graph size constant 2021 2022 2023 2024",
+    "arxiv.org/abs/2407.09671 (Obstructions to Erdős-Pósa Dualities for Minors) — WebFetch",
+    "woutercvb.github.io — WebFetch for author publication list",
+    "\"Erdős-Pósa\" \"planar\" \"minor\" \"polynomial\" \"|H|\" constant bound 2020 2021 2022 2023 2024 2025"
+  ],
+  "notes": "No follow-up paper specifically addressing the quantitative dependence of $c$ on $|H|$ was found. The related 2020 paper 'Erdős-Pósa from ball packing' (Cames van Batenburg, Joret, Ulmer; SIDMA) provides an alternative proof framework for edge variants but does not resolve the constant-vs-|H| question. The paper arXiv:2407.09671 ('Obstructions to Erdős-Pósa Dualities for Minors') addresses half-integrality and characterisation of EP-counterexamples, not the quantitative bound on $c$. The open problem remains unresolved with high confidence."
+}

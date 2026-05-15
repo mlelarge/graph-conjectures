@@ -1,0 +1,25 @@
+[
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Open problem: dimension of posets with planar cover graphs vs. height",
+    "statement_text": "It is not known whether the dimension of posets with planar cover graphs is bounded by a linear function of their height (or any polynomial function for that matter).",
+    "context_text": "The paper's main result (Theorem 1) establishes a linear bound $\\dim(P) \\leq 192h + 96$ for planar posets. The Streib–Trotter theorem guarantees only that some (exponential) function $f(h)$ bounds the dimension for the broader class of posets with planar cover graphs. Whether a polynomial — let alone linear — bound holds in this more general setting is explicitly left open by the authors, who also provide an improved lower bound of $2h - 2$ (Theorem 3) for this class.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated in running prose without a labelled theorem environment; clearly identified as an open problem by the authors.",
+    "arxiv_id": "1612.07540",
+    "paper_title": "Planar posets have dimension at most linear in their height",
+    "paper_authors": [
+      "Gwenaël Joret",
+      "Piotr Micek",
+      "Veit Wiechert"
+    ],
+    "published": "2017-09-23",
+    "abs_url": "https://arxiv.org/abs/1612.07540",
+    "source": "pdf"
+  }
+]

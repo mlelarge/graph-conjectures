@@ -1,0 +1,26 @@
+[
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Caro–Yuster Question on f(n)",
+    "statement_text": "Is it true that $f(n) \\geq n/2 - o(n)$?",
+    "context_text": "For a graph $G$, let $f(G)$ be the largest integer $k$ for which there exist two vertex-disjoint induced subgraphs of $G$ each on $k$ vertices, both inducing the same number of edges, and let $f(n)$ be the minimum of $f(G)$ over all graphs on $n$ vertices. The trivial upper bound gives $f(n) \\leq \\lfloor n/2 \\rfloor$, while previous lower bounds reached only $f(n) = \\Omega(n^{1/2})$; Caro and Yuster asked whether $f(n) \\geq n/2 - o(n)$.",
+    "attributed_to": "Caro and Yuster",
+    "attributed_year": null,
+    "paper_contribution": "Proves Theorem 1.1: for every $\\varepsilon > 0$ there exists $N = N(\\varepsilon)$ such that $f(G) \\geq n/2 - \\varepsilon n$ for every graph $G$ on $n > N$ vertices, thereby establishing $f(n) \\geq n/2 - o(n)$ and answering the question affirmatively; the remaining gap is $n/2 - o(n) \\leq f(n) \\leq n/2 - \\Omega(\\log\\log n)$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source. The question is fully resolved in the affirmative by this paper's main theorem. Section 5 of the paper is stated to contain additional open questions but its content was not included in the extracted text.",
+    "arxiv_id": "1312.1680",
+    "paper_title": "Disjoint induced subgraphs of the same order and size",
+    "paper_authors": [
+      "Béla Bollobás",
+      "Teeradej Kittipassorn",
+      "Bhargav Narayanan",
+      "Alex Scott"
+    ],
+    "published": "2016-09-06",
+    "abs_url": "https://arxiv.org/abs/1312.1680",
+    "source": "pdf"
+  }
+]

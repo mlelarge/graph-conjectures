@@ -10,6 +10,7 @@
 <thead>
 <tr>
   <th class="col-title">Title</th>
+  <th class="col-source">Source</th>
   <th class="col-status">Status</th>
   <th class="col-importance">Imp.</th>
   <th class="col-posted">Posted</th>
@@ -18,9 +19,16 @@
 <tbody>
 {% for p in problems %}
 <tr>
-  <td><a href="{{ root }}op/{{ p.slug }}/">{{ p.title }}</a></td>
+  <td>
+    {% if p._source == 'arxiv' %}
+      <a href="{{ root }}arxiv/{{ p.safe_id }}/">{{ p.title }}</a>
+    {% else %}
+      <a href="{{ root }}op/{{ p.slug }}/">{{ p.title }}</a>
+    {% endif %}
+  </td>
+  <td><span class="badge source source-{{ p._source or 'opg' }}">{{ p._source or 'opg' }}</span></td>
   <td>{% if p._review %}<span class="status-badge status-{{ p._review.status }}">{{ p._review.status }}</span>{% endif %}</td>
-  <td class="importance-{{ p.importance.label|lower }}">{{ '★' * p.importance.stars }}</td>
+  <td class="importance-{{ p.importance.label|lower }}">{% if p.importance.stars %}{{ '★' * p.importance.stars }}{% endif %}</td>
   <td>{{ p.posted_at or '' }}</td>
 </tr>
 {% endfor %}

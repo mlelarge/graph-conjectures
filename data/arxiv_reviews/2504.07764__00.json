@@ -1,0 +1,22 @@
+{
+  "review_id": "2504.07764__00",
+  "safe_id": "2504.07764",
+  "arxiv_id": "2504.07764",
+  "conjecture_title": "Conjecture 4",
+  "paper_title": "A note on extendable sets of colorings and rooted minors",
+  "published": "2025-04-10",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 4 from arXiv:2504.07764 asserts that Theorem 3 of the paper (which generalises the DeVos–Seymour result to X-rooted-K_{k+1}-minor-free K_{k+2}-minor-free graphs) cannot be extended to X-rooted-K_k-minor-free graphs. No follow-up paper resolving or partially settling this conjecture was found in a search of the literature through May 2026. The conjecture is closely related to Holroyd's conjecture, itself proven only for k=3 (Holroyd) and k=4 (Martinsson–Steiner); a full proof of Holroyd's conjecture would imply Conjecture 4.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Dvořák Swart \"rooted minor\" \"extendable colorings\" 2025 arxiv 2504.07764",
+    "Holroyd conjecture \"X-rooted\" minor k-colorable Hadwiger graph theory",
+    "Dvorak Swart \"extendable set of colorings\" \"rooted minor\" follow-up 2025 2026"
+  ],
+  "notes": "No follow-up found in indexed literature. The paper is recent (April 2025) and the conjecture is explicitly stated as open by the authors. Holroyd's conjecture (proven for k=3,4) implies Conjecture 4 if it holds in full generality, but the general case of Holroyd's conjecture itself remains open."
+}

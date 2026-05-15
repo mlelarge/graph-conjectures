@@ -1,0 +1,28 @@
+{
+  "review_id": "2102.10220__01",
+  "safe_id": "2102.10220",
+  "arxiv_id": "2102.10220",
+  "conjecture_title": "Conjecture on sharpness of Theorem 1.5",
+  "paper_title": "Making an $H$-Free Graph $k$-Colorable",
+  "published": "2021-03-19",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The conjecture that the bound $h(n, k, W_{2r+1}) \\leq c_r n^2/k^{2-1/(r+1)}$ is tight up to a constant factor appears to remain open as of May 2026. A survey of all 7 papers citing arXiv:2102.10220 via the Semantic Scholar API reveals no follow-up that establishes a matching lower bound for odd wheels; the citing literature focuses instead on MaxCut and odd-cycle-free graph structure. The sole internal reference (arXiv:2105.03956, Scott–Seymour–Spirkl 2022) is a clear mismatch: that paper proves a Fox conjecture about pure pairs in perfect graphs, which is unrelated to $h(n,k,W_{2r+1})$.",
+  "since_posted": [],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2105.03956",
+      "verified": true,
+      "note": "WebFetch of https://arxiv.org/abs/2105.03956 confirms this paper is about pure pairs in perfect graphs (proves a Fox conjecture on pure pairs with |A|,|B| >= n^{1-c}). It does NOT address h(n,k,W_{2r+1}) or the sharpness of Theorem 1.5. The attributed contribution text was a false positive from the extraction pipeline."
+    }
+  ],
+  "search_queries": [
+    "h(n,k,W_{2r+1}) odd wheel H-free k-colorable Fox Himwich Mani 2021 tight bound conjecture",
+    "Fox Himwich Mani \"H-free graph k-colorable\" 2102.10220 odd wheel cite 2022 2023 2024",
+    "Semantic Scholar API citations for arXiv:2102.10220"
+  ],
+  "notes": "No follow-up proving or disproving the odd-wheel tightness conjecture was found among the 7 known citing papers (retrieved via Semantic Scholar API). The conjecture is open with high confidence: the paper is ~5 years old, has a modest citation count, and the closest citing work addresses MaxCut rather than the $h(n,k,H)$ function for wheels."
+}

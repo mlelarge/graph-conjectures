@@ -1,0 +1,37 @@
+{
+  "safe_id": "1608.03040",
+  "arxiv_id": "1608.03040",
+  "paper_title": "Majority Colourings of Digraphs",
+  "published": "2016-08-10",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The conjecture that every digraph has a majority 3-colouring remains open in full generality as of 2026. Anastos, Lamaison, Steiner, and Szabó (arXiv:1911.01954, EJC 2021) proved it for digraphs with chromatic number at most 6 or dichromatic number at most 3 (covering all planar digraphs), and proved the stronger majority 3-choosability for digraphs with maximum out-degree at most 4 or maximum degree at most 7. Their probabilistic argument achieves a fractional bound of K ≤ 3.9602, approaching but not reaching the conjectured value of 3. A 2025 paper in Acta Mathematicae Applicatae Sinica reports further new partial results, and the conjecture is still described as 'far from being resolved' in recent literature.",
+  "since_posted": [
+    {
+      "title": "Majority Colorings of Sparse Digraphs",
+      "authors": "Michael Anastos, Ander Lamaison, Raphael Steiner, Tibor Szabó",
+      "year": 2021,
+      "venue": "Electronic Journal of Combinatorics",
+      "url": "https://arxiv.org/abs/1911.01954",
+      "arxiv_id": "1911.01954",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves the conjecture for digraphs with chromatic number at most 6 or dichromatic number at most 3, and proves the stronger majority 3-choosability for digraphs with maximum out-degree at most 4 or maximum degree at most 7; also establishes a fractional majority coloring bound of K ≤ 3.9602."
+    }
+  ],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "1911.01954",
+      "verified": true,
+      "note": "Confirmed via WebFetch of arxiv abstract: paper proves partial cases of the conjecture (chromatic number ≤ 6, dichromatic number ≤ 3, Δ+(D) ≤ 4, Δ(D) ≤ 7) and fractional bound K ≤ 3.9602; does not prove the full conjecture. The NP-completeness result in internal refs (majority 2-colorability NP-complete, Theorem 9) concerns a different question and does not affect Conjecture 2."
+    }
+  ],
+  "search_queries": [
+    "majority 3-colouring digraph conjecture Kreutzer Oum Seymour Wood 1608.03040",
+    "majority 3-colouring digraph conjecture solved proved 2020 2021 2022 2023 2024 2025"
+  ],
+  "notes": "Conjecture confirmed open as of 2025 by multiple sources. Additional unverified leads found within cap: Haselgrave (2020) 'Countable graphs are majority 3-choosable' (Warwick eprint 144155, PDF timed out); Acta Mathematicae Applicatae Sinica 2025 paper (doi:10.1007/s10255-025-0002-0) reporting new partial results (Springer auth-wall, not fetched); an IJMTT paper showing every digraph D with minimum out-degree ≥ 28·ln|D| has a majority 3-colouring (arxiv ID not found). These could not be verified within the 5-call cap."
+}

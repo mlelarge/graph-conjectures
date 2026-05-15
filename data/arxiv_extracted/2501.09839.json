@@ -1,0 +1,25 @@
+[
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Open question on Theorem 1.2 with $L=1$",
+    "statement_text": "We do not know whether 1.2 holds with $L=1$.",
+    "context_text": "Theorem 1.2 extends the result of Berger and Seymour (Theorem 1.1) from trees to graphs of bounded tree-width, establishing that a graph admitting a tree-decomposition whose bags are each contained in the union of a bounded number of balls of bounded radius admits an $(L,C)$-quasi-isometry to a graph of bounded tree-width. The authors note that unlike the tree case (where $L=1$ is achievable), it is unknown whether $L=1$ suffices in the general bounded-tree-width setting.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated as a parenthetical remark in the introduction rather than a labelled conjecture/question environment. Only the first 4000 characters of the introduction were provided; additional open problems later in the paper may not be captured.",
+    "arxiv_id": "2501.09839",
+    "paper_title": "Asymptotic structure. I. Coarse tree-width",
+    "paper_authors": [
+      "Tung Nguyen",
+      "Alex Scott",
+      "Paul Seymour"
+    ],
+    "published": "2025-09-05",
+    "abs_url": "https://arxiv.org/abs/2501.09839",
+    "source": "html"
+  }
+]

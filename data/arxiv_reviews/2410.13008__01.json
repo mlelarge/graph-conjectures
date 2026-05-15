@@ -1,0 +1,33 @@
+{
+  "review_id": "2410.13008__01",
+  "safe_id": "2410.13008",
+  "arxiv_id": "2410.13008",
+  "conjecture_title": "Informal Question (NP-characterization of weightable digraphs)",
+  "paper_title": "When all directed cycles have length three",
+  "published": "2025-02-09",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "medium",
+  "summary": "Berger, Carter, and Seymour (arXiv:2601.12746, 2026) provide two hierarchical constructions: one that builds every planar weightable digraph from circular digraphs, and one that builds every weightable digraph from planar ones. Together these yield a structural construction for all weightable digraphs, substantially addressing the informal question, alongside a poly-time algorithm to test weightability. Whether this constitutes a full NP-characterization in the formal complexity sense (a polynomial-time verifiable certificate) is not explicitly confirmed in the abstract.",
+  "since_posted": [
+    {
+      "title": "When all directed cycles have the same weight",
+      "authors": "Eli Berger, Daniel Carter, Paul Seymour",
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2601.12746",
+      "arxiv_id": "2601.12746",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Provides forbidden-subgraph characterization of weightable digraphs, a construction building every planar weightable digraph from circular digraphs, a construction building every weightable digraph from planar ones, and a poly-time algorithm to test weightability — collectively giving a structural construction for all weightable digraphs."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "weightable digraph NP-characterization construction Seymour 2410.13008",
+    "weightable digraph directed cycles characterization arxiv 2025"
+  ],
+  "notes": "The follow-up paper arXiv:2601.12746 is co-authored by Seymour himself (the author of 2410.13008), suggesting it directly continues this line of research. The two-step hierarchical construction (all weightable from planar, all planar from circular) provides the sought construction for all weightable digraphs. The poly-time algorithm for testing weightability further suggests the complexity question may be fully resolved (P membership). The formal NP-characterization framing of the original question may be moot given the polynomial-time decidability result."
+}

@@ -1,0 +1,35 @@
+{
+  "review_id": "2208.10074__01",
+  "safe_id": "2208.10074",
+  "arxiv_id": "2208.10074",
+  "conjecture_title": "Open Problem 6",
+  "paper_title": "Product structure of graph classes with strongly sublinear separators",
+  "published": "2023-09-27",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "medium",
+  "summary": "Open Problem 6 asks whether for any hereditary graph class \\mathcal{G} with \\operatorname{sep}(\\mathcal{G}) \\in O(n^{1-\\varepsilon}), there exists a constant c = c(\\mathcal{G}) such that every n-vertex graph G \\in \\mathcal{G} is contained in H \\boxtimes K_m where \\operatorname{tw}(H) \\leq c and m \\in O(n^{1-\\varepsilon}). The source paper itself already confirms the answer affirmatively for graphs excluding a fixed minor (Theorem 7, citing Distel et al. 2022). The 2024 paper by Liu, Norin, and Wood (arXiv:2410.20333) further extends this to graphs excluding a fixed odd minor. The general hereditary case with strongly sublinear separators remains open.",
+  "since_posted": [
+    {
+      "title": "Product Structure and Tree-Decompositions",
+      "authors": "Chun-Hung Liu, Sergey Norin, David R. Wood",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2410.20333",
+      "arxiv_id": "2410.20333",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves that graphs excluding a fixed odd minor are contained in the strong product of two graphs each with bounded treewidth, extending partial progress on Open Problem 6 to odd-minor-free hereditary classes (which have strongly sublinear separators)."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Dvořák Wood \"product structure\" \"strongly sublinear separators\" 2208.10074 open problem",
+    "Dvořák Wood \"strongly sublinear separators\" \"product structure\" \"open problem\" graph tree-depth 2023 2024 2025",
+    "product structure graph \"bounded treewidth\" \"sublinear\" separators hereditary class 2024 2025 arxiv",
+    "Distel \"product structure\" \"treewidth\" \"sublinear separator\" 2023 2024 2025 arxiv graph"
+  ],
+  "notes": "Open Problem 6 is already partially resolved within the source paper itself for excluded-minor classes (Theorem 7). Post-publication, arXiv:2410.20333 adds partial progress for odd-minor-free classes. No paper was found resolving the general hereditary case. Confidence is medium rather than high because the problem is ~3 years old and there may be further progress not surfaced by these searches."
+}

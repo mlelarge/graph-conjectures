@@ -1,0 +1,28 @@
+{
+  "review_id": "2005.09767__00",
+  "safe_id": "2005.09767",
+  "arxiv_id": "2005.09767",
+  "conjecture_title": "Conjecture 1.10",
+  "paper_title": "Many flows in the group connectivity setting",
+  "published": "2020-05-19",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "Conjecture 1.10 from arXiv:2005.09767 asserts an exponential lower bound $c^n$ on the number of $\\Gamma$-connected flows for every abelian group $\\Gamma$ with $|\\Gamma| \\geq 6$. The source paper itself proves this for all groups of size $\\geq 8$ (Theorem 1.9) and establishes only a superpolynomial (but sub-exponential) bound for $\\mathbb{Z}_6$ (Theorem 1.11), leaving $\\mathbb{Z}_6$ and $\\mathbb{Z}_7$ open. No subsequent paper resolving the conjecture for these two groups was found in five targeted web searches across the literature through May 2026; the paper remains at a single arXiv version with no revision signalling a resolution.",
+  "since_posted": [],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2409.18220",
+      "verified": true,
+      "note": "WebFetch confirms this paper is about the square energy of graphs (spectral graph theory) and does not cite arXiv:2005.09767 or address group connectivity flows. The fuzz-match was a false positive; this reference is not relevant to the conjecture."
+    }
+  ],
+  "search_queries": [
+    "arXiv 2005.09767 group connectivity flows exponential bound cite",
+    "3-edge-connected oriented graph abelian group flows exponential lower bound DeVos Mohar",
+    "\"group connectivity\" \"Z_6\" \"Z_7\" \"exponentially many flows\" 3-edge-connected 2021 2022 2023 2024 2025"
+  ],
+  "notes": "No follow-up paper resolving the conjecture for |Γ| = 6 or 7 was found. The conjecture is roughly 6 years old as of the review date, which is long enough that absence of evidence is somewhat suspicious but the two open cases (Z_6 and Z_7) are notoriously hard; confidence is set to medium rather than high. The sole internal reference candidate (2409.18220) was a false positive on the fuzz match."
+}

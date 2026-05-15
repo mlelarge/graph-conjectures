@@ -1,0 +1,94 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "The Small Quasi-Kernel Conjecture (Conjecture 1.1)",
+    "statement_text": "Every digraph $G$ with no source has a 2-kernel $K$ with $|K| \\leq |G|/2$.",
+    "context_text": "Conjectured by P. L. Erdős and L. A. Székely in 1976, this remains open in general. The best known bound is due to Spiro, who proved that every digraph $G$ with no source has a 2-kernel of size at most $|G| - \\tfrac{1}{4}(|G|\\log|G|)^{1/2}$. The paper proves the conjecture for the special class of split digraphs, improving an earlier $2|G|/3$ bound of Langlois et al. for the same class.",
+    "attributed_to": "P. L. Erdős and L. A. Székely",
+    "attributed_year": 1976,
+    "paper_contribution": "Proves the conjecture for split digraphs (oriented graphs whose vertex set admits a partition into a stable set and a tournament), establishing a 2-kernel of size at most $|G|/2$ for every such digraph with no source.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source — the raw extraction renders the statement as 'a 2-kernel |K| with |K| ≤ |G|/2', where the first '|K|' is a PDF artefact for '$K$'; corrected in statement_text.",
+    "arxiv_id": "2409.05039",
+    "paper_title": "Distant digraph domination",
+    "paper_authors": [
+      "Tung Nguyen",
+      "Alex Scott",
+      "Paul Seymour"
+    ],
+    "published": "2024-09-08",
+    "abs_url": "https://arxiv.org/abs/2409.05039",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.3 (Spiro)",
+    "statement_text": "In every digraph $G$, there is a 2-kernel $K$ such that at least half the vertices of $G$ belong to $K$ or have an in-neighbour in $K$.",
+    "context_text": "Spiro observed that the Erdős–Székely small quasi-kernel conjecture (Conjecture 1.1) implies this statement, raising it as a conjecture in its own right. The paper proves it for split digraphs and more generally for digraphs whose vertex set can be partitioned into a tournament and an acyclic subgraph.",
+    "attributed_to": "Spiro",
+    "attributed_year": null,
+    "paper_contribution": "Proves Conjecture 1.3 for digraphs $G$ whose vertex set $V(G)$ can be partitioned into a tournament and an acyclic set.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Year of Spiro's paper (reference [7]) is not stated explicitly in the text; it is described only as 'a recent paper'.",
+    "arxiv_id": "2409.05039",
+    "paper_title": "Distant digraph domination",
+    "paper_authors": [
+      "Tung Nguyen",
+      "Alex Scott",
+      "Paul Seymour"
+    ],
+    "published": "2024-09-08",
+    "abs_url": "https://arxiv.org/abs/2409.05039",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.4 (Spiro)",
+    "statement_text": "For all integers $k \\geq 3$, every strongly-connected digraph $G$ has a $k$-kernel of size at most $|G|/(k+1) + O_k(1)$.",
+    "context_text": "Spiro asked whether this sharp bound holds for $k$-kernels in strongly-connected digraphs. The best known bound prior to this paper was $O(|G|/\\log k)$, also due to Spiro. The conjecture remains open; this paper proves the weaker bound $|G|/(k-1) + O_k(1)$.",
+    "attributed_to": "Spiro",
+    "attributed_year": null,
+    "paper_contribution": "Proves that every strongly-connected digraph $G$ has a $k$-kernel of size at most $1 + (|G|-2)/(k-1)$, i.e., roughly $|G|/(k-1)$, as a corollary of a result on digraphs with a spanning arborescence.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Year of Spiro's paper (reference [7]) not given in the text. PDF source — '$O_k(1)$' appears as 'Ok(1)' in the raw extraction.",
+    "arxiv_id": "2409.05039",
+    "paper_title": "Distant digraph domination",
+    "paper_authors": [
+      "Tung Nguyen",
+      "Alex Scott",
+      "Paul Seymour"
+    ],
+    "published": "2024-09-08",
+    "abs_url": "https://arxiv.org/abs/2409.05039",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Open question on strong 2-kernels in split digraphs",
+    "statement_text": "Does every split digraph $G$ with no sources admit a strong 2-kernel of size at most $|G|/2$?",
+    "context_text": "The paper proves (Theorem 2.4) that every split digraph with no sources has a 2-kernel of size at most $|G|/2$. A 2-kernel $K$ is called strong if for every vertex $v$ in the tournament part $T$, either some vertex of $K$ 1-covers $v$, or some vertex of $K \\cap T$ 2-covers $v$. The authors note in passing that they do not know whether the size bound survives under this strengthening.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated as a parenthetical remark inside the proof section: 'We do not know whether 1.2 remains true if we ask for a strong 2-kernel of size at most |G|/2.' No labelled theorem environment.",
+    "arxiv_id": "2409.05039",
+    "paper_title": "Distant digraph domination",
+    "paper_authors": [
+      "Tung Nguyen",
+      "Alex Scott",
+      "Paul Seymour"
+    ],
+    "published": "2024-09-08",
+    "abs_url": "https://arxiv.org/abs/2409.05039",
+    "source": "pdf"
+  }
+]

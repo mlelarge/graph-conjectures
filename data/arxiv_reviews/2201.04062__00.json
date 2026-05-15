@@ -1,0 +1,31 @@
+{
+  "review_id": "2201.04062__00",
+  "safe_id": "2201.04062",
+  "arxiv_id": "2201.04062",
+  "conjecture_title": "Possibility 1.6",
+  "paper_title": "Pure pairs. VIII. Excluding a sparse graph",
+  "published": "2023-10-29",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Possibility 1.6 asks whether the polynomial pure-pair bound in Theorem 1.4 can be strengthened so that one of the two sets always has linear size, for every graph H with sufficiently small congestion. The source paper's authors explicitly state they were unable to decide this, and the inductive proof technique cannot be directly extended. No subsequent paper resolving or substantially advancing the full conjecture was found in the indexed literature as of May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2301.10147",
+      "verified": false,
+      "note": "Abstract concerns the Erdős-Hajnal conjecture (loglog improvement on clique/independent set size in H-free graphs); no mention of congestion, polynomial pure-pair size bounds, or Possibility 1.6 from 2201.04062. Likely a false positive."
+    },
+    {
+      "arxiv_id": "2306.02364",
+      "verified": false,
+      "note": "Abstract concerns tournament chromatic number and domination structure; no mention of congestion or Possibility 1.6 from 2201.04062. Likely a false positive from the internal-reference extraction."
+    }
+  ],
+  "search_queries": [
+    "pure pairs congestion graph Scott Seymour Spirkl \"linear size\" arxiv"
+  ],
+  "notes": "Both internal references are false positives — neither addresses Possibility 1.6 or the congestion parameter from Pure pairs VIII. A potentially related paper arXiv:2504.21127 ('On polynomially high-chromatic pure pairs') was found but its abstract concerns forest-free graphs and the polynomial Gyárfás-Sumner conjecture, not the specific claim about congestion and linear-vs-polynomial set sizes. No follow-up resolving Possibility 1.6 was found within the 5-call cap."
+}

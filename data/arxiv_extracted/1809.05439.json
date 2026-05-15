@@ -1,0 +1,46 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 2 (Dvořák and Mnich)",
+    "statement_text": "There exists a real number $c < 3$ such that every planar graph of girth at least five has fractional chromatic number at most $c$.",
+    "context_text": "Dvořák, Sereni and Volec [3] conjectured that triangle-free plane graphs without separating 4-cycles cannot have fractional chromatic number arbitrarily close to 3. They remarked that a key step would be to prove this for planar graphs of girth at least five, a special case previously conjectured by Dvořák and Mnich [2]. The present paper's stated purpose is to establish Conjecture 2 for graphs with bounded maximum degree.",
+    "attributed_to": "Dvořák and Mnich",
+    "attributed_year": null,
+    "paper_contribution": "Proves Conjecture 2 for planar graphs of girth at least five with maximum degree at most $\\Delta$: such graphs are $(6M_\\Delta : 2M_\\Delta+1)$-colorable and thus have fractional chromatic number at most $3 - \\frac{3}{2M_\\Delta+1}$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1809.05439",
+    "paper_title": "Fractional coloring of planar graphs of girth five",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Xiaolan Hu"
+    ],
+    "published": "2018-09-14",
+    "abs_url": "https://arxiv.org/abs/1809.05439",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Informal conjecture on improved color ratio in Theorem 5",
+    "statement_text": "It might be possible to improve the ratio of extra colors assigned to the vertex $x$ in Theorem 5 a bit; e.g., it could be true that there exists a coloring by subsets of $\\{1, \\ldots, 9\\}$ such that all vertices get at least three colors and $x$ gets five.",
+    "context_text": "Following Theorem 5, the authors observe that the ratio cannot be improved arbitrarily: when $G$ is the graph obtained from the wheel with five spokes by subdividing each spoke once, $x$ is the hub, and $\\varphi$ is a coloring by subsets of $\\{1,\\ldots,k\\}$ with every vertex receiving at least 3 colors, then $|\\varphi(x)| \\leq \\frac{k}{3} + \\frac{2k}{9}$. They nonetheless suggest a modest improvement may be achievable.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "PDF source — doubly hedged language ('might be possible', 'could be true'); included because it specifies a concrete mathematical claim. The bound formula in the surrounding text may be garbled.",
+    "arxiv_id": "1809.05439",
+    "paper_title": "Fractional coloring of planar graphs of girth five",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Xiaolan Hu"
+    ],
+    "published": "2018-09-14",
+    "abs_url": "https://arxiv.org/abs/1809.05439",
+    "source": "pdf"
+  }
+]

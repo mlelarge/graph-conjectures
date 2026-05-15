@@ -1,0 +1,68 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Glover's Conjecture on Klein Bottle Obstructions",
+    "statement_text": "More than $10^6$ obstructions for the Klein bottle will be obtained by pasting together two obstructions for the projective plane by identifying two vertices in all possible ways.",
+    "context_text": "Henry Glover (private communication to B. Mohar) conjectured that the total number of obstructions for the Klein bottle would be very large, specifically predicting more than $10^6$ from the pasting construction alone. The paper obtains a complete list of connectivity-two obstructions, directly contradicting this prediction.",
+    "attributed_to": "Henry Glover",
+    "attributed_year": null,
+    "paper_contribution": "Refutes the conjecture by constructing the complete list of obstructions for the Klein bottle of connectivity two, which contains precisely 668 graphs — far fewer than the conjectured more than $10^6$.",
+    "opg_lookup": true,
+    "confidence": "low",
+    "notes": "PDF source — the exponent in $10^6$ is garbled as '106' in the extracted text; value inferred from context. Conjecture communicated privately, no publication year available.",
+    "arxiv_id": "2002.00258",
+    "paper_title": "Excluded minors for the Klein Bottle I. Low connectivity case",
+    "paper_authors": [
+      "Bojan Mohar",
+      "Petr Škoda"
+    ],
+    "published": "2020-02-01",
+    "abs_url": "https://arxiv.org/abs/2002.00258",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Archdeacon–Richter–Širan Problem on Simultaneous Nonorientable Obstructions",
+    "statement_text": "Does there exist a graph which is simultaneously an obstruction for two different nonorientable surfaces?",
+    "context_text": "This open problem dates back to the 1980s and appears as Problem #1 in the list of open problems in topological graph theory compiled by Dan Archdeacon in 1995. It is closely related to the existence of hoppers — a special family of building blocks for critical graphs of connectivity two encountered in the paper. Any such simultaneous obstruction would require that deleting or contracting any edge reduces the nonorientable genus by at least two.",
+    "attributed_to": "Archdeacon, Richter, and Širan",
+    "attributed_year": 1995,
+    "paper_contribution": "Shows that hoppers (graphs intimately related to this problem) do not exist when the Euler genus is small, but leaves the existence question open for large genus.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "Cited via footnote 3; originally proposed 'in various incarnations' by all three authors and documented in Archdeacon's 1995 open problems list at http://www.emba.uvm.edu/~darchdea/problems/decgenus.htm.",
+    "arxiv_id": "2002.00258",
+    "paper_title": "Excluded minors for the Klein Bottle I. Low connectivity case",
+    "paper_authors": [
+      "Bojan Mohar",
+      "Petr Škoda"
+    ],
+    "published": "2020-02-01",
+    "abs_url": "https://arxiv.org/abs/2002.00258",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Informal Conjecture on Existence of Hoppers for Large Euler Genus",
+    "statement_text": "Hoppers may show up when the Euler genus is large enough.",
+    "context_text": "Hoppers are a mysterious special class of graphs that arise as building blocks for obstructions of connectivity two for arbitrary Euler genus. The paper proves that hoppers do not exist when the genus is small and the authors are unable to construct any example for larger genus, yet they believe hoppers will eventually appear for sufficiently large genus.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Expressed as a belief in running prose: 'we believe that they may show up when the genus is large enough.'",
+    "arxiv_id": "2002.00258",
+    "paper_title": "Excluded minors for the Klein Bottle I. Low connectivity case",
+    "paper_authors": [
+      "Bojan Mohar",
+      "Petr Škoda"
+    ],
+    "published": "2020-02-01",
+    "abs_url": "https://arxiv.org/abs/2002.00258",
+    "source": "pdf"
+  }
+]

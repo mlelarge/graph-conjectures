@@ -1,0 +1,33 @@
+{
+  "review_id": "2302.12633__01",
+  "safe_id": "2302.12633",
+  "arxiv_id": "2302.12633",
+  "conjecture_title": "Problem 42",
+  "paper_title": "Neighborhood complexity of planar graphs",
+  "published": "2023-12-19",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "solved",
+  "confidence": "high",
+  "summary": "Beaudou, Bok, Foucaud, Quiroz, and Raymond (arXiv:2501.08895, 2025) prove that the r-profile complexity of $K_h$-minor-free graphs is in $O(h^{O(h)} \\cdot r^{3h-3} \\cdot k)$, improving Joret–Rambaud's earlier bound of $O_h(r^{h^2-1} k)$. Since the exponent $3h-3$ is $O(h)=O(t)$, this affirmatively answers Problem 42, confirming that both the profile and neighbourhood complexities of $K_t$-minor-free graphs lie in $r^{O(t)}$. The paper explicitly states it answers an open question of Joret and Rambaud.",
+  "since_posted": [
+    {
+      "title": "Profile and neighbourhood complexity of graphs excluding a minor and tree-structured graphs",
+      "authors": "Laurent Beaudou, Jan Bok, Florent Foucaud, Daniel A. Quiroz, Jean-Florent Raymond",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2501.08895",
+      "arxiv_id": "2501.08895",
+      "doi": null,
+      "kind": "proof",
+      "claim": "Proves the r-profile complexity of K_h-minor-free graphs is O(h^{O(h)} r^{3h-3} k), giving an exponent linear in h and thereby answering Problem 42 of Joret–Rambaud affirmatively."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "neighborhood complexity Kt-minor-free graphs profile complexity 2302.12633",
+    "neighborhood complexity minor-free graphs r^O(t) profile complexity Joret Rambaud"
+  ],
+  "notes": "The follow-up paper arXiv:2501.08895 explicitly cites Joret–Rambaud and states its main theorem answers their open question. The bound r^{3h-3} (exponent linear in h) resolves Problem 42 in the affirmative. The source paper's bound was r^{h^2-1} (quadratic exponent); the new result also improves this substantially for large h."
+}

@@ -1,0 +1,94 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Hadwiger's Conjecture",
+    "statement_text": "Every graph of chromatic number at least $r$ has $K_r$ as a minor.",
+    "context_text": "Proposed by Hadwiger in 1943, this conjecture is known for $r \\leq 5$ but remains widely open for $r \\geq 6$. The paper's entire research program — bounding the size of a clique minor under structural restrictions — is motivated by Hadwiger's conjecture and the difficulty of proving it in full generality.",
+    "attributed_to": "Hadwiger",
+    "attributed_year": 1943,
+    "paper_contribution": "Proves that any $K_s$-free $n$-vertex graph with $\\alpha(G) \\leq r$ has a clique minor of order at least $(n/r)^{1+\\frac{1}{10(s-2)}}$ (Theorem 1), which substantially exceeds the bound $n/\\alpha(G)$ that Hadwiger's conjecture would imply for those graphs.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2002.11100",
+    "paper_title": "Clique minors in graphs with a forbidden subgraph",
+    "paper_authors": [
+      "M. Bucić",
+      "J. Fox",
+      "B. Sudakov"
+    ],
+    "published": "2021-02-08",
+    "abs_url": "https://arxiv.org/abs/2002.11100",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Clique minor conjecture for bounded independence number",
+    "statement_text": "If $\\alpha(G) \\leq r$ then $G$ has a clique minor of order $n/r$.",
+    "context_text": "Stated as 'an old conjecture' implied by Hadwiger's conjecture (see reference [28] of the paper). Duchet and Meyniel proved it holds within a factor of 2 in 1982, with subsequent improvements by Fox, Balogh–Kostochka, and others. The paper's main result gives a polynomially stronger bound for $K_s$-free graphs.",
+    "attributed_to": "unknown (reference [28] in the paper)",
+    "attributed_year": null,
+    "paper_contribution": "For $K_s$-free graphs proves the stronger bound $(n/r)^{1+\\frac{1}{10(s-2)}}$ on the clique minor order (Theorem 1), going well beyond the $n/r$ bound this conjecture asserts.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "Original authors not named in the extracted text; attributed only to reference [28].",
+    "arxiv_id": "2002.11100",
+    "paper_title": "Clique minors in graphs with a forbidden subgraph",
+    "paper_authors": [
+      "M. Bucić",
+      "J. Fox",
+      "B. Sudakov"
+    ],
+    "published": "2021-02-08",
+    "abs_url": "https://arxiv.org/abs/2002.11100",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Question of Dvořák and Yepremyan on $K_s$-free graphs",
+    "statement_text": "Does every $K_s$-free $n$-vertex graph $G$ with $\\alpha(G) \\leq r$ (with $n/r$ large enough) have a clique minor of order polynomially larger than $n/r$?",
+    "context_text": "Dvořák and Yepremyan proved that triangle-free graphs with $\\alpha(G) \\leq r$ have a clique minor of order $(n/r)^{1+\\frac{1}{26}}$, answering a question of Norin. They then asked whether the same phenomenon holds for $K_s$-free graphs for arbitrary fixed $s \\geq 3$.",
+    "attributed_to": "Dvořák and Yepremyan",
+    "attributed_year": null,
+    "paper_contribution": "Answers the question affirmatively by proving (Theorem 1) that any $K_s$-free $n$-vertex graph with $\\alpha(G) \\leq r$ has a clique minor of order at least $(n/r)^{1+\\frac{1}{10(s-2)}}$, provided $n/r$ is large enough; the exponent is tight up to a constant factor.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2002.11100",
+    "paper_title": "Clique minors in graphs with a forbidden subgraph",
+    "paper_authors": [
+      "M. Bucić",
+      "J. Fox",
+      "B. Sudakov"
+    ],
+    "published": "2021-02-08",
+    "abs_url": "https://arxiv.org/abs/2002.11100",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Informal conjecture on the generality of the probabilistic minor strategy",
+    "statement_text": "The strategy introduced in this paper, or minor modifications of it, could provide a useful tool for finding clique minors in graphs under other structural restrictions as well.",
+    "context_text": "After showing that the same randomised star-contraction strategy yields both Theorem 1 (for $K_s$-free graphs with bounded independence number) and a short proof of the Kühn–Osthus result for $K_{s,t}$-free graphs, the authors note that the approach performs well in two quite different structural settings.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "",
+    "arxiv_id": "2002.11100",
+    "paper_title": "Clique minors in graphs with a forbidden subgraph",
+    "paper_authors": [
+      "M. Bucić",
+      "J. Fox",
+      "B. Sudakov"
+    ],
+    "published": "2021-02-08",
+    "abs_url": "https://arxiv.org/abs/2002.11100",
+    "source": "pdf"
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Hadwiger's Conjecture (Conjecture 1)",
+    "statement_text": "If $G$ is a graph which does not contain $K_t$ as a minor, then $\\chi(G) \\leq t-1$.",
+    "context_text": "Hadwiger's conjecture, raised in 1943, is described as one of the most central open problems in graph theory. The best known asymptotic upper bound for a long time was $O(t\\sqrt{\\log t})$; recently Delcourt and Postle proved an $O(t\\log\\log t)$ upper bound. The paper's main result shows that any $f(t)$ coloring bound for $K_t$-minor-free graphs yields a $2f(t)$ bound for odd $K_t$-minor-free graphs.",
+    "attributed_to": "Hadwiger",
+    "attributed_year": 1943,
+    "paper_contribution": "Proves that any upper bound $f(t)$ on the chromatic number of $K_t$-minor-free graphs implies a $2f(t)$ upper bound for odd $K_t$-minor-free graphs, establishing asymptotic equivalence between the two conjectures up to a factor of 2.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2109.02302",
+    "paper_title": "Asymptotic Equivalence of Hadwiger's Conjecture and its Odd Minor-Variant",
+    "paper_authors": [
+      "Raphael Steiner"
+    ],
+    "published": "2021-09-06",
+    "abs_url": "https://arxiv.org/abs/2109.02302",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Odd Hadwiger's Conjecture (Conjecture 2)",
+    "statement_text": "If $G$ is a graph which does not contain $K_t$ as an odd minor, then $\\chi(G) \\leq t-1$.",
+    "context_text": "Conjectured by Gerards and Seymour as a qualitative strengthening of Hadwiger's conjecture. The asymptotic relaxation — whether graphs with no odd $K_t$-minor are $O(t)$-colorable — remains open. Prior to this paper, the best known bound was $O(t(\\log\\log t)^2)$ by Delcourt and Postle.",
+    "attributed_to": "Gerards and Seymour",
+    "attributed_year": null,
+    "paper_contribution": "Improves the asymptotic upper bound on the chromatic number of odd $K_t$-minor-free graphs from $O(t(\\log\\log t)^2)$ to $O(t\\log\\log t)$, by proving that such graphs are $2f(t)$-colorable whenever $K_t$-minor-free graphs are $f(t)$-colorable, then applying the Delcourt–Postle $O(t\\log\\log t)$ bound for Hadwiger.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2109.02302",
+    "paper_title": "Asymptotic Equivalence of Hadwiger's Conjecture and its Odd Minor-Variant",
+    "paper_authors": [
+      "Raphael Steiner"
+    ],
+    "published": "2021-09-06",
+    "abs_url": "https://arxiv.org/abs/2109.02302",
+    "source": "pdf"
+  }
+]

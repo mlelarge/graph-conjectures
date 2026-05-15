@@ -1,0 +1,40 @@
+{
+  "review_id": "2004.07457__01",
+  "safe_id": "2004.07457",
+  "arxiv_id": "2004.07457",
+  "conjecture_title": "Conjecture 7",
+  "paper_title": "Asymmetric list sizes in bipartite graphs",
+  "published": "2021-08-30",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "Conjecture 7 of Alon–Cambie–Kang posits (k_A,k_B)-choosability of bipartite graphs under three asymmetric degree/list-size regimes. Zhu (arXiv:2008.06040, Annals of Combinatorics 2022/2023) studied the problem in the semi-small list-size regime, strengthened bounds for k_A=2, and stated a unified framework conjecture on general bipartite graphs encompassing all three conditions; this constitutes partial progress but the full conjecture remains open. The improvement by Bradshaw–Mohar–Stacho (arXiv:2409.01513, 2024) on the symmetric Alon–Krivelevich bound does not directly address the asymmetric conditions of Conjecture 7.",
+  "since_posted": [
+    {
+      "title": "Coloring bipartite graphs with semi-small list size",
+      "authors": "Daniel G. Zhu",
+      "year": 2020,
+      "venue": "Annals of Combinatorics",
+      "url": "https://arxiv.org/abs/2008.06040",
+      "arxiv_id": "2008.06040",
+      "doi": "10.1007/s00026-022-00633-z",
+      "kind": "partial",
+      "claim": "Studies asymmetric list coloring in the semi-small list size regime; proves improved bounds when one part has list size 2 and states a unified conjecture on general bipartite graphs encompassing all three conditions of Conjecture 7."
+    }
+  ],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2409.01513",
+      "verified": true,
+      "note": "Bradshaw–Mohar–Stacho prove (4/5−ε)Δ/logΔ choosability for bipartite graphs, addressing the symmetric Alon–Krivelevich conjecture; abstract confirms no mention of arXiv:2004.07457 or the asymmetric (k_A,k_B)-choosability conditions of Conjecture 7."
+    }
+  ],
+  "search_queries": [
+    "bipartite graph choosable asymmetric list sizes Alon Cambie Kang 2004.07457 conjecture",
+    "bipartite graph kA kB choosable maximum degree Delta_A Delta_B list coloring conjecture Alon Kang",
+    "arxiv \"Coloring Bipartite Graphs with Semi-small List Size\" choosability kA kB"
+  ],
+  "notes": "Conjecture 7 unifies three asymmetric generalisations of the Krivelevich–Alon conjecture. Zhu (2008.06040) provides partial progress in the semi-small regime and a unified reformulation but does not resolve the conjecture. No full proof or counterexample found in the surveyed literature."
+}

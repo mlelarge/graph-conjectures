@@ -1,0 +1,74 @@
+[
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Bubeck–Linial Problem 4 (gap from 1)",
+    "statement_text": "Does there exist $\\varepsilon > 0$ such that the inducibility of every tree that is neither a star nor a path is at most $1 - \\varepsilon$?",
+    "context_text": "Bubeck and Linial proved that paths and stars are the only trees with inducibility 1, where the inducibility of a tree $S$ is the maximum limit density of $S$ over all convergent sequences of trees. They then asked whether there is a universal gap below 1 for all other trees.",
+    "attributed_to": "Bubeck and Linial",
+    "attributed_year": null,
+    "paper_contribution": "Answers affirmatively: there exists an explicit $\\varepsilon_1 > 0$ such that every tree that is neither a path nor a star has inducibility at most $1 - \\varepsilon_1$ (Theorem 12).",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2102.02010",
+    "paper_title": "Inducibility and universality for trees",
+    "paper_authors": [
+      "Timothy F. N. Chan",
+      "Daniel Kral",
+      "Bojan Mohar",
+      "David R. Wood"
+    ],
+    "published": "2022-06-29",
+    "abs_url": "https://arxiv.org/abs/2102.02010",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Bubeck–Linial Problem 4 (infinitely many trees with positive inducibility)",
+    "statement_text": "Does there exist $\\varepsilon > 0$ such that there are infinitely many trees with inducibility at least $\\varepsilon$?",
+    "context_text": "As a companion to the gap-from-1 question, Bubeck and Linial asked whether the inducibilities of trees are bounded away from 0 by a fixed constant for infinitely many trees, rather than converging to 0.",
+    "attributed_to": "Bubeck and Linial",
+    "attributed_year": null,
+    "paper_contribution": "Answers affirmatively: there exists an explicit $\\varepsilon_2 > 0$ such that there are infinitely many trees with inducibility at least $\\varepsilon_2$ (Theorem 13).",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2102.02010",
+    "paper_title": "Inducibility and universality for trees",
+    "paper_authors": [
+      "Timothy F. N. Chan",
+      "Daniel Kral",
+      "Bojan Mohar",
+      "David R. Wood"
+    ],
+    "published": "2022-06-29",
+    "abs_url": "https://arxiv.org/abs/2102.02010",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Bubeck–Linial Problem 5 (universal sequence of trees)",
+    "statement_text": "Does there exist a convergent sequence $(T_n)_{n\\in\\mathbb{N}}$ of trees in which the limit density $\\lim_{n\\to\\infty} d(S, T_n)$ of every tree $S$ is positive?",
+    "context_text": "Motivated by the fact that the Erdős–Rényi random graph $G_{n,p}$ is universal with high probability (every graph has positive limit density in it), Bubeck and Linial asked whether an analogous universal sequence exists in the world of trees.",
+    "attributed_to": "Bubeck and Linial",
+    "attributed_year": null,
+    "paper_contribution": "Answers affirmatively with an explicit construction of a universal sequence of trees in which the limit density of every tree $S$ is positive (Theorem 14).",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2102.02010",
+    "paper_title": "Inducibility and universality for trees",
+    "paper_authors": [
+      "Timothy F. N. Chan",
+      "Daniel Kral",
+      "Bojan Mohar",
+      "David R. Wood"
+    ],
+    "published": "2022-06-29",
+    "abs_url": "https://arxiv.org/abs/2102.02010",
+    "source": "pdf"
+  }
+]

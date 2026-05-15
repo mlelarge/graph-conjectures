@@ -1,0 +1,34 @@
+{
+  "review_id": "1806.09726__00",
+  "safe_id": "1806.09726",
+  "arxiv_id": "1806.09726",
+  "conjecture_title": "Conjecture 7",
+  "paper_title": "Online Ramsey Numbers and the Subgraph Query Problem",
+  "published": "2018-11-04",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "Conjecture 7 from arXiv:1806.09726 posits that the diagonal online random Ramsey numbers grow as $2^{(1+o(1))\\frac{2}{3}n}$ and the off-diagonal as $n^{(1+o(1))\\frac{2}{3}m}$. The conjecture is tied to the Subgraph Query Problem via Theorem 10 and Conjecture 9 of the same paper. A 2019 follow-up (arXiv:1911.04413) makes progress on the Subgraph Query Problem itself, but a web search through 2026 found no paper that directly resolves either part of Conjecture 7. The conjecture remains open as far as indexed literature reveals.",
+  "since_posted": [
+    {
+      "title": "On the subgraph query problem",
+      "authors": "Ryan Alweiss, Chady Ben Hamida, Xiaoyu He, Alexander Moreira",
+      "year": 2019,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/1911.04413",
+      "arxiv_id": "1911.04413",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Improves bounds on the Subgraph Query Problem for cliques and degenerate graphs, directly related to the mechanism through which Conjecture 7 is expected to follow, but does not resolve the conjecture's stated growth-rate claims."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "online random Ramsey numbers diagonal r_rand(n,n) Conlon Fox Grinshpun He 1806.09726",
+    "online Ramsey subgraph query problem r_rand growth rate 2^(2/3 n)",
+    "subgraph query problem complete graph query complexity online Ramsey random painter 2019 2020 2021 2022 2023 2024"
+  ],
+  "notes": "Semantic Scholar citation list for arXiv:1806.09726 shows no citing paper that directly resolves Conjecture 7. The related paper arXiv:1911.04413 (with Xiaoyu He as co-author of both) works on the subgraph query problem but does not establish the conjectured exponents for r_rand. The conjecture is 8 years old; medium confidence rather than high is assigned because the conjecture's age and its tight connection to an active research topic leave room for a resolution in the literature that was not surfaced by the search."
+}

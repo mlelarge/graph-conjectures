@@ -1,0 +1,35 @@
+{
+  "review_id": "1806.11196__00",
+  "safe_id": "1806.11196",
+  "arxiv_id": "1806.11196",
+  "conjecture_title": "Question 1.1",
+  "paper_title": "List-three-coloring graphs with no induced $P_6+rP_3$",
+  "published": "2018-07-02",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Substantial partial progress has been made: the 3-coloring (and list 3-coloring) problem is known to be polynomial for all $P_t$-free graphs with $t \\leq 7$, with the $P_7$ case resolved by Bonomo, Chudnovsky, Maceli, Schaudt, Stein, and Zhong around 2018. For $t \\geq 8$ the question remains fully open; $P_8$-free graphs are the smallest unsettled case. Since 2018, incremental progress has appeared for specific subclasses of $P_t$-free graphs (e.g., those with restrictions on odd cycle lengths), but no uniform polynomial algorithm for all fixed $t$ is known.",
+  "since_posted": [
+    {
+      "title": "3-Coloring $P_t$-Free Graphs With Only One Prescribed Induced Odd Cycle Length",
+      "authors": "unverified from abstract page",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2512.06367",
+      "arxiv_id": "2512.06367",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves a polynomial-time algorithm for 3-coloring $P_{10}$-free graphs whose only induced odd cycles have a single prescribed length (e.g., 7-cycles), a restricted but non-trivial subclass of $P_t$-free graphs."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "3-coloring polynomial time P_t-free graphs complexity",
+    "graph coloring Pt-free polynomial algorithm Spirkl Chudnovsky 2018 1806.11196",
+    "3-coloring P7-free polynomial time 2019 2020 2021 2022 2023 2024 2025",
+    "3-coloring P8-free graphs polynomial open complexity 2023 2024 2025 arxiv"
+  ],
+  "notes": "The conjecture is proven for $t \\leq 7$; the $P_7$ result (Bonomo et al., ~2018) is the furthest general case. For $t \\geq 8$ the problem is open and listed as such in recent surveys (e.g., open problems from the 33rd Workshop on Cycles and Colourings, arXiv:2511.02892, 2025). Additional post-2018 partial progress found in search but not fetched: '3-Colouring $P_t$-Free Graphs Without Short Odd Cycles' (Algorithmica 2022, link.springer.com/article/10.1007/s00453-022-01049-0) and 'Three-coloring triangle-free graphs without long forbidden paths' (arXiv:2512.12349, 2025) — these were not WebFetched and are excluded from since_posted per policy."
+}

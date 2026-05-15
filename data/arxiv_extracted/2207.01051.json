@@ -1,0 +1,74 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.1 (Kostochka and Stiebitz)",
+    "statement_text": "If $D$ is a $k$-dicritical digraph of order $n$ with $k \\geq 4$ and $n \\geq k$, then $m(D) \\geq 2g_k(n)$ and equality implies that $D$ is a bidirected $k$-critical graph. As a consequence, $d_k(n) = 2g_k(n)$ when $n \\geq k$ and $n \\neq k+1$.",
+    "context_text": "Kostochka and Stiebitz proposed this conjecture to characterise when the minimum arc count in a $k$-dicritical digraph equals twice the minimum edge count of a $k$-critical graph. It arises from their proof that $d_4(n) \\geq \\frac{10}{3}n(D) - \\frac{4}{3}$, which matches $2g_4(n)$. The present paper focuses on the oriented-graph refinement $o_k(n)$ rather than $d_k(n)$ directly.",
+    "attributed_to": "Kostochka and Stiebitz",
+    "attributed_year": null,
+    "paper_contribution": "The paper does not directly prove or disprove this conjecture; its results concern $o_k(n)$ for oriented graphs (no digons) rather than $d_k(n)$ for general digraphs.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2207.01051",
+    "paper_title": "On the minimum number of arcs in $k$-dicritical oriented graphs",
+    "paper_authors": [
+      "Pierre Aboulker",
+      "Thomas Bellitto",
+      "Frédéric Havet",
+      "Clément Rambaud"
+    ],
+    "published": "2022-07-03",
+    "abs_url": "https://arxiv.org/abs/2207.01051",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.2 (Kostochka and Stiebitz)",
+    "statement_text": "There is a constant $c > 1$ such that $o_k(n) > c \\cdot d_k(n)$ for $k \\geq 3$ and $n$ sufficiently large.",
+    "context_text": "Kostochka and Stiebitz conjectured that forbidding digons (i.e., restricting to oriented graphs) forces strictly more arcs in a $k$-dicritical graph by a multiplicative factor bounded away from 1. This formalises the analogy with the undirected setting where forbidding short cycles raises the minimum edge density of critical graphs.",
+    "attributed_to": "Kostochka and Stiebitz",
+    "attributed_year": null,
+    "paper_contribution": "Provides improved lower bounds $o_k(n) \\geq \\left(k - \\frac{3}{4k-6}\\right)n + \\frac{3}{4} - \\frac{1}{2(4k-6)}$ for all $k \\geq 2$, and the sharper bound $o_3(n) \\geq \\frac{7n+2}{3}$ for $k=3$, strengthening the quantitative evidence for the conjecture.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2207.01051",
+    "paper_title": "On the minimum number of arcs in $k$-dicritical oriented graphs",
+    "paper_authors": [
+      "Pierre Aboulker",
+      "Thomas Bellitto",
+      "Frédéric Havet",
+      "Clément Rambaud"
+    ],
+    "published": "2022-07-03",
+    "abs_url": "https://arxiv.org/abs/2207.01051",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Hoshino–Kawarabayashi Conjecture",
+    "statement_text": "Any $k$-dicritical oriented graph $D$ satisfies $\\frac{m(D)}{n(D)} \\geq \\frac{k^2}{2} - O(k)$.",
+    "context_text": "Hoshino and Kawarabayashi observed that their Hajós-type construction yields $k$-dicritical oriented graphs with $m(D) < \\frac{1}{2}(k^2 - k + 1)n(D)$, and conjectured a matching quadratic-in-$k$ lower bound on the arc density. The conjecture predicts that the arc-to-vertex ratio grows like $k^2/2$.",
+    "attributed_to": "Hoshino and Kawarabayashi",
+    "attributed_year": null,
+    "paper_contribution": "Disproves the conjecture: for all sufficiently large $n$ and all $k \\geq 3$, the paper constructs a $k$-dicritical oriented graph achieving $o_k(n) < (2k-3)n$, showing the true growth rate is linear in $k$, not quadratic.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "The conjecture is stated in prose in the introduction without a labelled theorem environment; the formulation here follows the paraphrase given by the present paper's authors.",
+    "arxiv_id": "2207.01051",
+    "paper_title": "On the minimum number of arcs in $k$-dicritical oriented graphs",
+    "paper_authors": [
+      "Pierre Aboulker",
+      "Thomas Bellitto",
+      "Frédéric Havet",
+      "Clément Rambaud"
+    ],
+    "published": "2022-07-03",
+    "abs_url": "https://arxiv.org/abs/2207.01051",
+    "source": "pdf"
+  }
+]

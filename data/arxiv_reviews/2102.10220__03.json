@@ -1,0 +1,29 @@
+{
+  "review_id": "2102.10220__03",
+  "safe_id": "2102.10220",
+  "arxiv_id": "2102.10220",
+  "conjecture_title": "Open problem on $m(n,k)$ for fixed $k \\geq 2$",
+  "paper_title": "Making an $H$-Free Graph $k$-Colorable",
+  "published": "2021-03-19",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "The open problem asks for the exact or asymptotic value of $m(n,k)$, the minimum number of edges to delete from any $n$-vertex graph to make it $k$-colorable, for any fixed $k \\geq 2$. Fox, Himwich, and Mani proved the upper bound $m(n,k) \\leq n^2/(ek)$ and noted that an Erd\\H{o}s--R\\'enyi random-graph lower bound is within 20% of this for large $k$, but stated explicitly that they have no idea what the exact or asymptotic value is. No follow-up paper resolving this specific question was found in five targeted web searches; the paper was subsequently published in the Journal of Graph Theory (2023, DOI 10.1002/jgt.22868) without any companion resolution of this problem.",
+  "since_posted": [],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2105.03956",
+      "verified": true,
+      "note": "Unrelated paper: 'Pure pairs. V. Excluding some long subdivision' by Scott, Seymour, Spirkl. Abstract concerns pure pairs in perfect graphs; does not mention m(n,k), H-free colorability, or arXiv:2102.10220. The fuzz-match is a false positive."
+    }
+  ],
+  "search_queries": [
+    "Fox Himwich Mani \"H-free graph k-colorable\" m(n,k) arxiv 2102.10220",
+    "\"making an H-free graph k-colorable\" m(n,k) edges deleted coloring follow-up",
+    "arxiv cite:2102.10220 \"H-free\" \"k-colorable\" m(n,k) edges 2022 2023 2024 2025",
+    "Fox Mani \"minimum edges\" \"k-colorable\" \"H-free\" n^2 upper bound 2022 2023 2024 2025 graph theory"
+  ],
+  "notes": "The conjecture is ~5 years old; absence of follow-up after exhaustive search is plausible but not definitive for a hard quantitative extremal problem. The paper appeared in J. Graph Theory 102 (2023) 234–261, DOI 10.1002/jgt.22868, with no companion resolution. Internal reference 2105.03956 is a false positive (unrelated subject matter)."
+}

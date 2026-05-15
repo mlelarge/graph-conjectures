@@ -1,0 +1,22 @@
+{
+  "review_id": "2311.01887__00",
+  "safe_id": "2311.01887",
+  "arxiv_id": "2311.01887",
+  "conjecture_title": "Conjecture 10",
+  "paper_title": "Graphs with arbitrary Ramsey number and connectivity",
+  "published": "2023-11-03",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 10 from arXiv:2311.01887 asks whether every function f(n) satisfying n ≤ f(n) ≤ r(K_n) can be approximated to within a multiplicative factor of 1+ε by the Ramsey number of some n-vertex graph. The paper's main theorem achieves every such growth rate to within a multiplicative constant C_k, but the sharp 1+o(1) gap remains open. No follow-up paper resolving the conjecture was found in a broad literature search; the source paper itself appeared in print as Electronic Journal of Combinatorics 31(4) (2024).",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Ramsey number prescribed growth rate graphs approximation arXiv 2311.01887 Ahme Scott",
+    "Ramsey number arbitrary growth rate sequence graphs multiplicative gap conjecture 2024 2025",
+    "Ramsey number growth rate approximation epsilon Wigderson conjecture edge-deletion 2024 2025 2026"
+  ],
+  "notes": "No follow-up paper resolving Conjecture 10 was found. The precursor paper 'Ramsey Numbers with Prescribed Rate of Growth' (Pavez-Signé, Piga, Sanhueza-Matamala, arXiv:2209.05455, EJC 30(3) 2023) established growth rates up to a multiplicative constant, which Ahme–Scott improve by also controlling connectivity; Conjecture 10 asks for multiplicative gaps of 1+o(1). A 2024 Wigderson paper on Ramsey numbers upon vertex deletion (Journal of Graph Theory, 10.1002/jgt.23093) addresses related edge/vertex-deletion questions but does not resolve the conjecture. The conjecture is recent (posted 2023) and absence of evidence is strong evidence of it being open."
+}

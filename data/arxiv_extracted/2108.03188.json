@@ -1,0 +1,24 @@
+[
+  {
+    "role": "studies",
+    "kind": "Informal",
+    "title": "Kronecker Coefficients / Combinatorial Interpretation of Schur Function Plethysms",
+    "statement_text": "There is no known combinatorial formula for the coefficients of Schur function plethysms (known as Kronecker coefficients) except in special cases.",
+    "context_text": "The abstract identifies finding coefficients of Schur function plethysms as a major open question in symmetric function theory. Various combinatorial interpretations have been proposed (Nava–Rota via partitionals; Carré–Leclerc via crystal structures of domino tableaux), and searching for a satisfactory interpretation is described as an extremely active area of research, citing [7, 33].",
+    "attributed_to": "various authors",
+    "attributed_year": null,
+    "paper_contribution": "Introduces a graph-theoretic combinatorial interpretation for any plethysm of the form $X_{(G,w)}[f]$ (Theorem 2), expressed as a sum over pairs of acyclic orientations $\\gamma$ of $G$ and maps $\\kappa : V(G) \\to \\mathrm{Var}(f)$ satisfying monotonicity and properness conditions with respect to a total order on $\\mathrm{Var}(f)$. Because chromatic symmetric functions of connected vertex-weighted graphs are algebraically independent generators of $\\Lambda$, this extends to a combinatorial interpretation of any plethysm of symmetric functions, including Schur function plethysms.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "The open problem is not attributed to specific authors in the text and carries no formal conjecture label; cited as [7, 33]. Sections 3–6 of the paper are largely absent from the provided PDF extract, so any additional conjectures or open questions stated by the authors in Section 6 (further directions for research) cannot be recovered.",
+    "arxiv_id": "2108.03188",
+    "paper_title": "Plethysms of Chromatic and Tutte Symmetric Functions",
+    "paper_authors": [
+      "Logan Crew",
+      "Sophie Spirkl"
+    ],
+    "published": "2022-08-02",
+    "abs_url": "https://arxiv.org/abs/2108.03188",
+    "source": "pdf"
+  }
+]

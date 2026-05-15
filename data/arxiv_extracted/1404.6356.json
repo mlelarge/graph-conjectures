@@ -1,0 +1,48 @@
+[
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Thomassen's Polynomial-time Colorability Program",
+    "statement_text": "For fixed integers $k$ and $q$, can the $k$-colorability of graphs of girth $q$ embedded in a fixed surface be tested in polynomial time?",
+    "context_text": "Thomassen [17] initiated a research program posing this question. The current paper series addresses the triangle-free ($q \\geq 4$, $k = 3$) case; Theorem 1.3 is described as completing one of two missing steps toward a polynomial-time algorithm for 3-colorability of triangle-free graphs on a fixed surface.",
+    "attributed_to": "Thomassen",
+    "attributed_year": null,
+    "paper_contribution": "Proves Theorem 1.3—bounding the sum of excess face sizes of 4-critical triangle-free graphs embedded in surfaces in terms of genus, triangle count, and non-facial 4-cycles—which is the cornerstone ingredient enabling a polynomial-time 3-colorability algorithm for triangle-free graphs on a fixed surface, thereby completing one of the two missing steps in Thomassen's program.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "Statement reconstructed from prose description in the introduction; the bibliography entry for [17] is not present in the extracted text so the year cannot be confirmed.",
+    "arxiv_id": "1404.6356",
+    "paper_title": "Three-coloring triangle-free graphs on surfaces IV. Bounding face sizes of 4-critical graphs",
+    "paper_authors": [
+      "Zdenek Dvorak",
+      "Daniel Kral",
+      "Robin Thomas"
+    ],
+    "published": "2020-08-04",
+    "abs_url": "https://arxiv.org/abs/1404.6356",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "4-colorability on Fixed Surfaces (Open Step in Thomassen's Program)",
+    "statement_text": "Whether 4-colorability of graphs embedded in a fixed surface can be tested in polynomial time remains open; the authors remark that prospects for its resolution in the near future are not very bright.",
+    "context_text": "After announcing that Theorem 1.3 completes one of two missing steps in Thomassen's polynomial-time colorability program, the authors identify the remaining open step as the analogous question for 4-coloring graphs on a fixed surface.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated informally in the introduction as the outstanding second step of Thomassen's research program; no formal problem number is assigned.",
+    "arxiv_id": "1404.6356",
+    "paper_title": "Three-coloring triangle-free graphs on surfaces IV. Bounding face sizes of 4-critical graphs",
+    "paper_authors": [
+      "Zdenek Dvorak",
+      "Daniel Kral",
+      "Robin Thomas"
+    ],
+    "published": "2020-08-04",
+    "abs_url": "https://arxiv.org/abs/1404.6356",
+    "source": "pdf"
+  }
+]

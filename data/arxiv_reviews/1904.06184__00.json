@@ -1,0 +1,23 @@
+{
+  "review_id": "1904.06184__00",
+  "safe_id": "1904.06184",
+  "arxiv_id": "1904.06184",
+  "conjecture_title": "Open Question: Recognition of Switchable Graphs",
+  "paper_title": "The Perfect Matching Reconfiguration Problem",
+  "published": "2019-04-12",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The question of whether the Switchable class (the hereditary class of graphs whose perfect-matching reconfiguration graph under length-4 flip operations is connected) can be recognized in polynomial time remains open as of May 2026. A Semantic Scholar citation search for arXiv:1904.06184 returned 20 citing papers (2021–2026) spanning reconfiguration hardness, geometric matching flips, and related combinatorics, but none specifically tackles the recognition complexity of the Switchable class. Keyword searches for 'switchable recognition polynomial perfect matching reconfiguration' likewise found no post-2019 resolution.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "switchable graphs perfect matching reconfiguration flip recognition polynomial",
+    "arxiv 1904.06184 perfect matching reconfiguration switchable hereditary class",
+    "\"switchable\" \"perfect matching\" \"reconfiguration\" \"recognition\" graph complexity 2020 2021 2022 2023 2024 2025",
+    "Semantic Scholar citations for arXiv:1904.06184"
+  ],
+  "notes": "20 citing papers found via Semantic Scholar (arXiv:2602.09573, 2511.04863, 2510.24226, 2508.18457, 2505.00988, 2502.16398, 2410.14421, 2410.07060, 2409.11723, 2312.07241, 2307.00853, 2210.14608, 2210.12036, 2209.10262, 2206.03879, 2203.13435, 2202.11857, 2102.10568, and two non-arXiv). None address recognition of the Switchable class. The related arXiv:2604.17911 ('Dirac's theorem and the switch geometry of perfect matchings', 2025) studies degree conditions for connectivity of reconfiguration graphs but does not address polynomial recognition of the Switchable hereditary class."
+}

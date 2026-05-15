@@ -1,0 +1,94 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 5 (Fraughnaugh and Locke)",
+    "statement_text": "If $G$ is a triangle-free subcubic $n$-vertex graph containing none of $F_{11}$, $F^{(1)}_{14}$, $F^{(2)}_{14}$, $F^{(1)}_{19}$, $F^{(2)}_{19}$, $F_{22}$ as a subgraph, then $\\alpha(G) \\geq \\frac{3}{8} n$.",
+    "context_text": "Fraughnaugh and Locke formulated this conjecture after observing that the six graphs $F_{11}, F^{(1)}_{14}, F^{(2)}_{14}, F^{(1)}_{19}, F^{(2)}_{19}, F_{22}$ are the only known 2-connected triangle-free subcubic graphs failing $\\alpha(G) \\geq \\frac{3}{8}n$. The conjecture implies both Conjecture 4 of Bajnok and Brinkmann and the earlier planar result proved by Heckman and Thomas, since none of the six forbidden graphs are planar.",
+    "attributed_to": "Fraughnaugh and Locke",
+    "attributed_year": 1995,
+    "paper_contribution": "Proves the conjecture in full as the main result of the paper (Theorem 7).",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1911.12471",
+    "paper_title": "Large independent sets in triangle-free cubic graphs: beyond planarity",
+    "paper_authors": [
+      "Wouter Cames van Batenburg",
+      "Jan Goedgebeur",
+      "Gwenaël Joret"
+    ],
+    "published": "2020-07-08",
+    "abs_url": "https://arxiv.org/abs/1911.12471",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 4 (Bajnok and Brinkmann)",
+    "statement_text": "There are exactly six 2-connected triangle-free subcubic $n$-vertex graphs $G$ with $\\alpha(G) < \\frac{3}{8} n$, namely $F_{11}$, $F^{(1)}_{14}$, $F^{(2)}_{14}$, $F^{(1)}_{19}$, $F^{(2)}_{19}$, $F_{22}$.",
+    "context_text": "Bajnok and Brinkmann investigated the 2-connectivity conjecture of Fraughnaugh and Locke via computer search. Finding no counterexample, they identified exactly six exceptional graphs and conjectured these are the only ones.",
+    "attributed_to": "Bajnok and Brinkmann",
+    "attributed_year": null,
+    "paper_contribution": "Confirms the conjecture as Corollary 8, a direct consequence of the paper's main theorem (Theorem 7).",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1911.12471",
+    "paper_title": "Large independent sets in triangle-free cubic graphs: beyond planarity",
+    "paper_authors": [
+      "Wouter Cames van Batenburg",
+      "Jan Goedgebeur",
+      "Gwenaël Joret"
+    ],
+    "published": "2020-07-08",
+    "abs_url": "https://arxiv.org/abs/1911.12471",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 3 (Fraughnaugh and Locke)",
+    "statement_text": "Let $G$ be a 2-connected triangle-free subcubic $n$-vertex graph. Then, $\\alpha(G) \\geq \\frac{3}{8} n - \\frac{1}{4}$.",
+    "context_text": "Fraughnaugh and Locke conjectured this quantitative improvement over their Theorem 2 (which gives $\\alpha(G) \\geq \\frac{11}{30}n - \\frac{2}{15}$ for connected graphs) under the additional hypothesis of 2-connectivity. Bajnok and Brinkmann independently investigated it via computer search and found no counterexample.",
+    "attributed_to": "Fraughnaugh and Locke",
+    "attributed_year": 1995,
+    "paper_contribution": "Confirms the conjecture as part of Corollary 8, a consequence of the paper's main theorem.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1911.12471",
+    "paper_title": "Large independent sets in triangle-free cubic graphs: beyond planarity",
+    "paper_authors": [
+      "Wouter Cames van Batenburg",
+      "Jan Goedgebeur",
+      "Gwenaël Joret"
+    ],
+    "published": "2020-07-08",
+    "abs_url": "https://arxiv.org/abs/1911.12471",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Locke's Conjecture (1986)",
+    "statement_text": "There are only finitely many 3-connected triangle-free cubic $n$-vertex graphs $G$ with $\\alpha(G) < \\frac{3}{8} n$.",
+    "context_text": "Locke conjectured in 1986 that the bound $\\alpha(G) \\geq \\frac{3}{8}n$ fails for at most finitely many 3-connected triangle-free cubic graphs. This conjecture motivated the subsequent stronger conjectures of Fraughnaugh and Locke and of Bajnok and Brinkmann under 2-connectivity.",
+    "attributed_to": "Locke",
+    "attributed_year": 1986,
+    "paper_contribution": "Corollary 8 implies the conjecture: since none of the six exceptional graphs are 3-connected, in fact no 3-connected triangle-free subcubic graph has $\\alpha(G) < \\frac{3}{8}n$, a stronger conclusion.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "The paper does not explicitly claim to prove Locke's 1986 conjecture; the implication follows from Corollary 8 and the observation that the six exceptional graphs are not 3-connected.",
+    "arxiv_id": "1911.12471",
+    "paper_title": "Large independent sets in triangle-free cubic graphs: beyond planarity",
+    "paper_authors": [
+      "Wouter Cames van Batenburg",
+      "Jan Goedgebeur",
+      "Gwenaël Joret"
+    ],
+    "published": "2020-07-08",
+    "abs_url": "https://arxiv.org/abs/1911.12471",
+    "source": "pdf"
+  }
+]

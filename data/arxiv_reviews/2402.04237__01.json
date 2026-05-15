@@ -1,0 +1,22 @@
+{
+  "review_id": "2402.04237__01",
+  "safe_id": "2402.04237",
+  "arxiv_id": "2402.04237",
+  "conjecture_title": "Problem 12",
+  "paper_title": "A note on graphs of $k$-colourings",
+  "published": "2024-02-29",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Problem 12 from arXiv:2402.04237 asks whether a finite family of graphs $H_1,\\dotsc,H_t$ exists such that for almost every $G\\in\\mathcal{G}(n,\\tfrac{1}{2})$, the generalized chromatic polynomials $\\pi_G^{(H_i)}$ jointly determine $G$ up to isomorphism. This is posed as a probabilistic weakening of the Bollobás–Pebody–Riordan conjecture (that almost every graph is determined by its chromatic polynomial), in light of the paper's Theorem 5 showing no finite family of generalized chromatic polynomials determines all graphs. No resolution or partial progress on this specific problem was found in the literature as of May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Bollobas Pebody Riordan conjecture chromatic polynomial almost every graph arXiv 2402.04237",
+    "generalized chromatic polynomials distinguish random graphs finite family graph homomorphism",
+    "Hogan Scott Tamitegama Tan k-colourings generalized chromatic polynomial random graph 2024 2025"
+  ],
+  "notes": "The source paper was published in the Electronic Journal of Combinatorics (2024, v31i4p48). No follow-up paper addressing Problem 12 specifically was found. The conjecture is recent (2024) and the absence of follow-up is consistent with open status at high confidence. The related Bollobás–Pebody–Riordan conjecture (chromatic polynomial determines almost every graph) itself remains open."
+}

@@ -1,0 +1,23 @@
+{
+  "review_id": "2211.14218__00",
+  "safe_id": "2211.14218",
+  "arxiv_id": "2211.14218",
+  "conjecture_title": "Informal Conjecture (second phase transition for all radii)",
+  "paper_title": "Shotgun assembly of random graphs",
+  "published": "2025-06-23",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The source paper itself establishes the second phase transition for all r≥3, proving that if p=ω(t(n)) then G is reconstructible from its r-neighbourhoods and if p=o(t(n)) (and p=ω(n^{-(2r+1)/(2r)})) then G is not reconstructible. The conjecture remains open for r=1 and r=2, for which the paper provides improved but non-matching upper and lower bounds; an explicit open problem asks whether the threshold for r=2 is around n^{-3/4} up to polylogarithmic factors. No subsequent paper resolving either of these cases was found in the indexed literature.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "shotgun assembly random graphs r-neighbourhoods phase transition r=1 r=2 reconstructible arXiv 2024 2025 2026",
+    "shotgun assembly random graphs reconstruction r=1 r=2 neighbourhood Johnston Kronenberg Roberts Scott follow-up 2023 2024 2025",
+    "arxiv \"shotgun assembly\" \"random graph\" \"r=1\" OR \"r=2\" \"phase transition\" reconstruction neighbourhood 2024 2025 2026",
+    "arxiv 2024 2025 2026 \"shotgun assembly\" OR \"graph reconstruction\" \"r-neighbourhood\" \"Erdős-Rényi\" threshold reconstructible \"r=2\""
+  ],
+  "notes": "The Springer published version (DOI 10.1007/s00440-025-01380-x, Probability Theory and Related Fields, 2025) corresponds to the same arXiv paper and does not appear to add new results for r=1 or r=2. The conjecture is partially resolved by the source paper itself for all r≥3; the remaining open cases are r=1 (where the lower bound is n^{-1/2} up to polylogarithmic factors, improving Huang–Tikhomirov) and r=2 (where bounds improve Gaudio–Mossel by polynomial factors but a polylogarithmic gap persists around the conjectured threshold n^{-3/4}). No follow-up paper resolving these cases was found after searching."
+}

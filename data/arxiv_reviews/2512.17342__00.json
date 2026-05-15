@@ -1,0 +1,24 @@
+{
+  "review_id": "2512.17342__00",
+  "safe_id": "2512.17342",
+  "arxiv_id": "2512.17342",
+  "conjecture_title": "Problem 1.1",
+  "paper_title": "Nowhere-zero flow reconfiguration",
+  "published": "2026-05-04",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Problem 1.1 of arXiv:2512.17342 asks whether the reconfiguration graph F(G,5) is connected for every 2-edge-connected graph G, framing a reconfiguration analogue of Tutte's 5-flow conjecture. The source paper was first posted in December 2025 and revised in May 2026; it establishes several related results (connectivity for sufficiently large abelian group flows, a duality with planar graph recoloring, and that some integer k always works) but leaves Problem 1.1 fully open. A wide web search returned no follow-up paper addressing this specific problem.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "nowhere-zero flow reconfiguration graph 2-edge-connected Esperet Hendrey 2512.17342",
+    "\"nowhere-zero flow\" reconfiguration \"5-flow\" connected 2025 2026 arxiv",
+    "WebFetch https://arxiv.org/abs/2512.17342",
+    "\"flow reconfiguration\" \"2-edge-connected\" \"reconfiguration graph\" connected 2026 arxiv graph theory",
+    "arxiv 2026 \"Tutte 5-flow\" reconfiguration OR \"nowhere-zero\" \"F(G,5)\" OR \"F(G, 5)\" connected"
+  ],
+  "notes": "No follow-up found in indexed literature. The paper is very recent (submitted December 2025, revised May 2026), so absence of follow-up is expected. The three 'Also stated in' entries in the input all point to the source paper itself (2512.17342) and were not treated as external internal references. Problem 1.1 is the reconfiguration version of Tutte's 5-flow conjecture and is noted in the paper to be incomparable to Tutte's conjecture itself."
+}

@@ -1,0 +1,35 @@
+{
+  "review_id": "2001.03794__01",
+  "safe_id": "2001.03794",
+  "arxiv_id": "2001.03794",
+  "conjecture_title": "FPT on $K_{t,t}$-free graphs for Grundy Coloring",
+  "paper_title": "Grundy Coloring & friends, Half-Graphs, Bicliques",
+  "published": "2020-01-11",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "solved",
+  "confidence": "high",
+  "summary": "The open question of whether \\textsc{Grundy Coloring} is FPT on $K_{t,t}$-free graphs parameterized by $k$ was resolved affirmatively by Agrawal, Lokshtanov, Panolan, Saurabh, and Verma (arXiv:2410.20629, STACS 2025), which provides an FPT algorithm for Grundy Coloring on $K_{i,j}$-free graphs (subsuming $K_{t,t}$-free) parameterized by $k$, alongside an FPT algorithm for Partial Grundy Coloring on general graphs.",
+  "since_posted": [
+    {
+      "title": "Parameterized Saga of First-Fit and Last-Fit Coloring",
+      "authors": "Akanksha Agrawal, Daniel Lokshtanov, Fahad Panolan, Saket Saurabh, Shaily Verma",
+      "year": 2024,
+      "venue": "STACS 2025 (arXiv preprint 2410.20629)",
+      "url": "https://arxiv.org/abs/2410.20629",
+      "arxiv_id": "2410.20629",
+      "doi": null,
+      "kind": "proof",
+      "claim": "Proves an FPT algorithm for Grundy Coloring on $K_{i,j}$-free graphs parameterized by $k$, directly resolving the open question from arXiv:2001.03794."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Grundy Coloring FPT K_{t,t}-free biclique-free parameterized complexity",
+    "Grundy coloring fixed-parameter tractable bipartite excluded subgraph 2001.03794",
+    "arxiv \"Fast FPT Algorithms for Grundy Number\" dense graphs 2025",
+    "arxiv \"Grundy coloring\" \"K_{t,t}-free\" OR \"biclique-free\" FPT parameterized 2021 2022 2023 2024 2025"
+  ],
+  "notes": "arXiv:2410.20629 (Agrawal et al., STACS 2025) settles this problem by proving FPT for Grundy Coloring on K_{i,j}-free graphs, which subsumes K_{t,t}-free graphs. The URL was verified via WebFetch and the abstract explicitly confirms this result."
+}

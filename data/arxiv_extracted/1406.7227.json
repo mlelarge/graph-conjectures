@@ -1,0 +1,24 @@
+[
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Question (Biedl, Demaine, Duncan, Fleischer and Kobourov)",
+    "statement_text": "Is it true that $\\nu(G) \\geq (3n + n_2)/9$ for every subcubic graph $G$?",
+    "context_text": "Biedl, Demaine, Duncan, Fleischer and Kobourov posed this question after establishing several lower bounds for the matching number of subcubic graphs, including $\\nu(G) \\geq n_3/2 + n_2/3 + n_1/2 - \\ell_2/3$ and $\\nu(G) \\geq (n-1)/3$. The question asks whether the bound $(3n+n_2)/9$ also holds universally for subcubic graphs.",
+    "attributed_to": "Biedl, Demaine, Duncan, Fleischer and Kobourov",
+    "attributed_year": null,
+    "paper_contribution": "Answers the question negatively via Theorem 2 (the characterization $P = L$): the vector $(1/3, 4/9, 1/3)$ is not in $P$ as it violates $x_1 + x_2 + x_3 \\leq 1$, and Example 3 in Section 4 provides an explicit connected subcubic counterexample.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "The full text is truncated before Section 4; additional open questions posed by the paper authors may be absent from the extracted content.",
+    "arxiv_id": "1406.7227",
+    "paper_title": "On lower bounds for the matching number of subcubic graphs",
+    "paper_authors": [
+      "Penny Haxell",
+      "Alex Scott"
+    ],
+    "published": "2016-05-16",
+    "abs_url": "https://arxiv.org/abs/1406.7227",
+    "source": "pdf"
+  }
+]

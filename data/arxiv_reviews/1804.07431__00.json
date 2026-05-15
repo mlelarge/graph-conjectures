@@ -1,0 +1,21 @@
+{
+  "review_id": "1804.07431__00",
+  "safe_id": "1804.07431",
+  "arxiv_id": "1804.07431",
+  "conjecture_title": "Open Problem (exact exponent for maximal cliques in c-closed graphs)",
+  "paper_title": "Finding Cliques in Social Networks: A New Distribution-Free Model",
+  "published": "2018-04-20",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "The open problem of determining the exact exponent of n (between 3/2 and 2 − 2^{1−c}) for the maximum number of maximal cliques in a c-closed graph remains unresolved as of 2026. Follow-up work has improved the enumeration algorithm to output-sensitive complexity (arXiv:2303.02390, 2023) and extended the polynomial-bound framework to maximal blow-ups of arbitrary graphs H (arXiv:2506.11437, 2025), but neither paper improves the upper or lower bounds on the exponent for cliques specifically — the 2025 paper explicitly restates the original O(n^{2−2^{1−c}}) bound without improvement.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "c-closed graphs maximal cliques exact exponent Fox Roughgarden Seshadhri",
+    "maximal cliques c-closed graph n^{3/2} upper bound arXiv 1804.07431"
+  ],
+  "notes": "Two related papers found after 2018: arXiv:2303.02390 (2023) improves maximal clique enumeration in weakly closed graphs to output-sensitive α·O(n·poly(c)) time but does not address the count bounds or exact exponent; arXiv:2506.11437 (2025) extends the framework to maximal blow-ups of arbitrary finite graphs H, explicitly restating the original Fox et al. upper bound O(n^{2−2^{1−c}}) without improvement. No paper resolving the exact exponent gap was found within 5 web calls. Confidence is medium rather than high because the problem is 8 years old (2018) and a wide search found only adjacent work, but the gap between the 3/2 lower bound exponent and the 2−2^{1−c} upper bound exponent is a hard combinatorial question."
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Informal Conjecture (polynomial expansion and bounded twin-width)",
+    "statement_text": "All classes of polynomial expansion may also have bounded twin-width.",
+    "context_text": "The authors note that proper minor-closed classes have bounded twin-width, and observe that bounded twin-width is incomparable with bounded degree, bounded expansion, and nowhere denseness. They remark 'As far as we know, all classes of polynomial expansion may also have bounded twin-width,' suggesting this as an open direction. Figure 3 depicts this with a dash-dotted edge indicating possible inclusion.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated in hedged prose ('as far as we know … may also'); clearly conjectural but no labelled environment.",
+    "arxiv_id": "2004.14789",
+    "paper_title": "Twin-width I: tractable FO model checking",
+    "paper_authors": [
+      "Édouard Bonnet",
+      "Eun Jung Kim",
+      "Stéphan Thomassé",
+      "Rémi Watrigant"
+    ],
+    "published": "2021-10-25",
+    "abs_url": "https://arxiv.org/abs/2004.14789",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Question (common superclass for FPT FO model checking)",
+    "statement_text": "Do bounded twin-width and nowhere dense classes admit a natural common superclass still admitting an FPT algorithm for FO model checking?",
+    "context_text": "Figure 3 shows that bounded twin-width and nowhere dense classes together roughly subsume all current knowledge on fixed-parameter tractability of FO model checking. The authors explicitly pose whether a natural common superclass of both still admits an FPT algorithm for FO model checking.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Posed as a rhetorical question in the caption of Figure 3, not in a labelled theorem environment.",
+    "arxiv_id": "2004.14789",
+    "paper_title": "Twin-width I: tractable FO model checking",
+    "paper_authors": [
+      "Édouard Bonnet",
+      "Eun Jung Kim",
+      "Stéphan Thomassé",
+      "Rémi Watrigant"
+    ],
+    "published": "2021-10-25",
+    "abs_url": "https://arxiv.org/abs/2004.14789",
+    "source": "pdf"
+  }
+]

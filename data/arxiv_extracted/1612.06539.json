@@ -1,0 +1,46 @@
+[
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "McDiarmid–Mitsche–Pratat Lower Bound Problem",
+    "statement_text": "Prove a nontrivial lower bound for $\\chi_c(G(n, 1/2))$ with high probability.",
+    "context_text": "McDiarmid, Mitsche and Pratat (arXiv:1611.01782) proved that $\\chi_c(G(n,1/2)) \\leq (1/2+o(1))\\log_2 n$ whp and raised the problem of establishing any nontrivial lower bound for the clique chromatic number of the dense random graph. No nontrivial lower bound was known prior to the present paper.",
+    "attributed_to": "McDiarmid, Mitsche and Pratat",
+    "attributed_year": 2016,
+    "paper_contribution": "Proves that there exists an absolute constant $c > 0$ such that $\\chi_c(G(n,1/2)) \\geq c\\log_2 n$ whp, establishing $\\chi_c(G(n,1/2)) = \\Theta(\\log n)$ whp and thereby fully settling the problem.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "Problem statement reconstructed from the paper's description; the original formulation appears in arXiv:1611.01782 [13]. PDF source.",
+    "arxiv_id": "1612.06539",
+    "paper_title": "Clique coloring of dense random graphs",
+    "paper_authors": [
+      "Noga Alon",
+      "Michael Krivelevich"
+    ],
+    "published": "2017-11-05",
+    "abs_url": "https://arxiv.org/abs/1612.06539",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Informal Conjecture on Tight Constant for Clique Chromatic Number",
+    "statement_text": "It seems plausible that $\\chi_c(G(n, 1/2)) = (1/2 + o(1)) \\log n$ whp.",
+    "context_text": "The paper establishes $\\chi_c(G(n,1/2)) = \\Theta(\\log n)$ whp, with the upper bound $(1/2+o(1))\\log_2 n$ coming from McDiarmid–Mitsche–Pratat. The authors note that the constant $\\frac{1}{2000}$ in their lower bound can certainly be improved but that the method as presented does not suffice to pin down the tight constant.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated in the concluding remarks without a labelled environment, using the phrase 'It seems plausible that'. All logarithms in the paper are base 2 unless otherwise specified. PDF source.",
+    "arxiv_id": "1612.06539",
+    "paper_title": "Clique coloring of dense random graphs",
+    "paper_authors": [
+      "Noga Alon",
+      "Michael Krivelevich"
+    ],
+    "published": "2017-11-05",
+    "abs_url": "https://arxiv.org/abs/1612.06539",
+    "source": "pdf"
+  }
+]

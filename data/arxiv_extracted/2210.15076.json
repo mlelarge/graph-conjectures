@@ -1,0 +1,24 @@
+[
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Extension to H-free graphs",
+    "statement_text": "Determine the maximum possible number of edges of an $H$-free graph on $n$ vertices with matching number at most $s$, for general forbidden subgraphs $H$ (extending Theorem 1.1 beyond the case $H = K_{k+1}$).",
+    "context_text": "At the opening of Section 3, the authors note it may be interesting to extend Theorem 1.1 by replacing the forbidden clique $K_{k+1}$ by other forbidden subgraphs $H$. Proposition 3.1 settles this for color-critical $H$ when $s$ and $n$ are sufficiently large, but the problem for general $H$ (including non-color-critical graphs and small parameters) remains open.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "No labeled environment; posed as a research direction at the start of Section 3, partially addressed by Proposition 3.1 in the same section.",
+    "arxiv_id": "2210.15076",
+    "paper_title": "Turán graphs with bounded matching number",
+    "paper_authors": [
+      "Noga Alon",
+      "Peter Frankl"
+    ],
+    "published": "2022-10-26",
+    "abs_url": "https://arxiv.org/abs/2210.15076",
+    "source": "pdf"
+  }
+]

@@ -1,0 +1,33 @@
+{
+  "review_id": "2301.11019__00",
+  "safe_id": "2301.11019",
+  "arxiv_id": "2301.11019",
+  "conjecture_title": "Informal conjecture on sharp threshold for linear-proportion reconstruction",
+  "paper_title": "Reconstructing a point set from a random subset of its pairwise distances",
+  "published": "2023-01-26",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "solved",
+  "confidence": "high",
+  "summary": "The conjecture that $p=(1+\\varepsilon)/n$ is the sharp threshold for the existence of a reconstructible set of size $\\Omega(n)$ has been resolved by Zakharov (2026, arXiv:2604.09176), which proves that for every $\\varepsilon>0$, with high probability there exists a reconstructible subset $U$ of the giant component $C$ of the 2-core satisfying $|U|=|V(C)|(1-o(1))$ when $p=(1+\\varepsilon)/n$, establishing the conjectured threshold and in fact giving a stronger quantitative bound.",
+  "since_posted": [
+    {
+      "title": "Sharp threshold for reconstructing points on the line",
+      "authors": "Georgii Zakharov",
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2604.09176",
+      "arxiv_id": "2604.09176",
+      "doi": null,
+      "kind": "proof",
+      "claim": "Proves that for every $\\varepsilon>0$ with $\\varepsilon=\\omega(1/\\ln n)$, when $p=(1+\\varepsilon)/n$, whp there exists a reconstructible subset of the giant 2-core component of size $(1-o(1))|V(C)|$, confirming the conjectured sharp threshold $p=(1+\\varepsilon)/n$ for linear-proportion reconstruction."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "arXiv 2301.11019 Girão Illingworth Michel Powierski Scott pairwise distances reconstruction citing",
+    "reconstructing point set random pairwise distances threshold sharp p=1/n graph theory 2024 2025"
+  ],
+  "notes": "The paper arXiv:2401.01882 (Barnes, Petr, Portier, Randall Shaw, Sergeev, 2024) addresses higher-dimensional reconstruction at a different threshold and is not directly related to this conjecture. The resolving paper arXiv:2604.09176 also requires $\\varepsilon=\\omega(1/\\ln n)$, so there may remain a thin regime near $\\varepsilon\\to 0$ not fully covered."
+}

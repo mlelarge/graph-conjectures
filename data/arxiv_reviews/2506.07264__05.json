@@ -1,0 +1,23 @@
+{
+  "review_id": "2506.07264__05",
+  "safe_id": "2506.07264",
+  "arxiv_id": "2506.07264",
+  "conjecture_title": "Conjecture 9.5",
+  "paper_title": "Refinement of a conjecture on positive square energy of graphs",
+  "published": "2025-06-08",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 9.5 from arXiv:2506.07264 proposes strengthened lower bounds on the positive square energy s^+(G) for maximal planar graphs (s^+(G) >= 3n for n >= 10) and maximal outerplanar graphs (s^+(G) >= 2n for n >= 8), going beyond the 3(n-2) bound asked by Elphick and Linz. The paper is from June 2025 and no follow-up paper resolving or partially proving these specific bounds was found in a thorough web search conducted in May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "positive square energy maximal planar graph s+(G) 3n Akbari Mohar 2025",
+    "positive square energy graph s+(G) outerplanar conjecture 2n Elphick Linz",
+    "arxiv:2506.07264 HTML full text Conjecture 9.5",
+    "arxiv:2604.15656 positive negative 3-energies graphs citation 2506.07264"
+  ],
+  "notes": "No follow-up found in indexed literature. The conjecture was proposed in June 2025 (less than one year ago as of review date). Web search confirmed existence of the source paper and the broader positive square energy literature (including arXiv:2409.18220 proving s^+(G) >= 3n/4 for all connected graphs, and arXiv:2409.15504 on extremal values), but no paper specifically proving or disproving the 3n or 2n bounds for maximal planar/outerplanar graphs was found. The related arXiv:2604.15656 (positive and negative 3-energies) does not address these graph classes or cite 2506.07264."
+}

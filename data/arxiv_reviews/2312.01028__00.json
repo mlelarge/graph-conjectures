@@ -1,0 +1,23 @@
+{
+  "review_id": "2312.01028__00",
+  "safe_id": "2312.01028",
+  "arxiv_id": "2312.01028",
+  "conjecture_title": "Optimal disjoint-edges bound in complete simple topological graphs",
+  "paper_title": "A structure theorem for pseudo-segments and its applications",
+  "published": "2023-12-02",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The best known lower bound for pairwise disjoint edges in a complete $n$-vertex simple topological graph is $\\Omega(n^{1/2})$, established by Aichholzer, García, Tejel, Vogtenhuber, and Weinberger (SoCG 2022, arXiv:2203.06143), improving the earlier $\\Omega(n^{1/3})$ bound of Suk (2012). The source paper (Fox–Pach–Suk, 2023) provides a nearly-polynomial improvement under a density assumption via a pseudo-segment regularity lemma, but the full $\\Omega(n)$ conjecture remains open. No post-2023 paper resolving the problem was found in a broad web search.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "complete simple topological graph pairwise disjoint edges omega(n) lower bound Fox Pach Suk",
+    "simple topological graph disjoint edges 2312.01028 pseudo-segments",
+    "complete simple topological graph n pairwise disjoint edges linear lower bound 2024 2025",
+    "Aichholzer simple topological graph disjoint edges n^{1/2} OR sqrt(n) 2021 2022 2023"
+  ],
+  "notes": "The Omega(n^{1/2}) bound (Aichholzer et al., SoCG 2022, arXiv:2203.06143) is the current state of the art; the source paper improves this to a nearly-polynomial bound only under an edge-density assumption (Corollary 1.3). The paper 2512.04795 (December 2025) addresses plane paths in dense topological graphs but does not resolve the disjoint-edges question. No follow-up resolving the full Omega(n) conjecture was found."
+}

@@ -1,0 +1,23 @@
+{
+  "review_id": "2207.12684__00",
+  "safe_id": "2207.12684",
+  "arxiv_id": "2207.12684",
+  "conjecture_title": "Informal conjecture on the actual diameter",
+  "paper_title": "Small diameters and generators for arithmetic lattices in $\\mathrm{SL}_2(\\mathbb{R})$ and certain Ramanujan graphs",
+  "published": "2022-07-26",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Steiner proves that the almost-diameter of $\\Gamma\\backslash\\mathbb{H}$ is at most $(2+o(1))\\log 3V_\\Gamma$ (Theorem 3), and remarks that this bound is sharp; the conjecture that the actual diameter is of the same order $(2+o(1))\\log 3V_\\Gamma$ remains speculation. A search of Steiner's subsequent publication list and the literature through May 2026 found no paper resolving this informal conjecture.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Steiner arithmetic lattices SL2 diameter hyperbolic surface 2207.12684",
+    "diameter hyperbolic surface arithmetic lattice \"almost diameter\" sharp bound generators Frobenius norm",
+    "Steiner \"actual diameter\" hyperbolic surface arithmetic lattice \"log V\" conjecture cite 2022 2023 2024 2025",
+    "raphaelssteiner.com publications list 2023-2026"
+  ],
+  "notes": "No follow-up paper resolving the conjecture was found. Steiner's own post-2022 work moves to Kloosterman sums and sup-norm problems, with no return to the diameter problem. The conjecture is informal (a speculation in the text) rather than a formal numbered conjecture, making it less likely to attract direct citation. The almost-diameter bound $(2+o(1))\\log 3V_\\Gamma$ is proved and sharp; whether the true diameter matches this order is open."
+}

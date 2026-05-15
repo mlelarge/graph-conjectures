@@ -1,0 +1,48 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 3",
+    "statement_text": "For every graph $H$, $\\chi_{\\Delta}(\\mathcal{M}_H) = \\mathrm{td}(H) - 1$.",
+    "context_text": "Ossona de Mendez et al. [24] proved the lower bound $\\chi_{\\Delta}(\\mathcal{M}_H) \\geq \\mathrm{td}(H) - 1$ and conjectured that equality holds. Special cases include $H = K_t$ (proved by Edwards et al., giving a defective version of Hadwiger's Conjecture) and $\\mathrm{td}(H) \\leq 3$ or $H$ a complete bipartite graph.",
+    "attributed_to": "Ossona de Mendez et al.",
+    "attributed_year": null,
+    "paper_contribution": "Proves Conjecture 3 for all minor-closed classes with bounded treedepth by establishing $\\chi_{\\Delta}(\\mathcal{G}) = \\chi^\\star(\\mathcal{G}) = \\mathrm{tcn}(\\mathcal{G}) - 1$ in that setting (Theorem 1); the general conjecture remains open.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2012.05554",
+    "paper_title": "Clustered colouring of graph classes with bounded treedepth or pathwidth",
+    "paper_authors": [
+      "Sergey Norin",
+      "Alex Scott",
+      "David R. Wood"
+    ],
+    "published": "2022-01-20",
+    "abs_url": "https://arxiv.org/abs/2012.05554",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 4",
+    "statement_text": "For every graph $H$, $\\chi^\\star(\\mathcal{M}_H) \\leq 2\\,\\mathrm{td}(H) - 2$.",
+    "context_text": "Norin et al. [23] conjectured this as a clustered-colouring analogue of Conjecture 3. They also showed the bound is tight by constructing, for each $k \\geq 2$, a graph $H$ with $\\mathrm{td}(H) = k$ such that $\\chi^\\star(\\mathcal{M}_H) \\geq 2k - 2$, witnessed by a subclass of bounded pathwidth.",
+    "attributed_to": "Norin et al.",
+    "attributed_year": null,
+    "paper_contribution": "Proves Conjecture 4 for all minor-closed classes with bounded pathwidth by establishing $\\chi^\\star(\\mathcal{G}) \\leq 2\\,\\mathrm{tcn}(\\mathcal{G}) - 2$ in that setting (Theorem 2), and shows this bound is best possible; the general conjecture remains open.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2012.05554",
+    "paper_title": "Clustered colouring of graph classes with bounded treedepth or pathwidth",
+    "paper_authors": [
+      "Sergey Norin",
+      "Alex Scott",
+      "David R. Wood"
+    ],
+    "published": "2022-01-20",
+    "abs_url": "https://arxiv.org/abs/2012.05554",
+    "source": "pdf"
+  }
+]

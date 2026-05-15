@@ -1,0 +1,27 @@
+{
+  "review_id": "2210.16971__00",
+  "safe_id": "2210.16971",
+  "arxiv_id": "2210.16971",
+  "conjecture_title": "Conjecture 1.4",
+  "paper_title": "A note on directed analogues of the Sidorenko and forcing conjectures",
+  "published": "2022-10-30",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "No paper resolving Conjecture 1.4 of arXiv:2210.16971 was found. The source paper itself shows that the directed Sidorenko property for bipartite oriented graphs is equivalent to an asymmetric undirected Sidorenko property, reducing the conjecture to an open undirected analogue rather than proving it. The two internal-corpus references (arXiv:2312.15333, Nguyen-Scott-Seymour) were verified to concern a different 'Conjecture 1.4' from a Fox-Sudakov induced-subgraph-density paper and are unrelated to the directed Sidorenko setting. Web searches revealed active interest in directed Sidorenko questions but no specific resolution of this conjecture.",
+  "since_posted": [],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2312.15333",
+      "verified": false,
+      "note": "Paper is 'Induced subgraph density. VII. The five-vertex path' by Nguyen, Scott, Seymour; its Conjecture 1.4 is attributed to Fox-Sudakov about induced subgraph densities and the Erdős-Hajnal conjecture for P_5, entirely unrelated to the directed Sidorenko property for bipartite oriented graphs. The internal reference is a false positive based on matching conjecture label '1.4' across different papers."
+    }
+  ],
+  "search_queries": [
+    "directed Sidorenko property bipartite oriented graph homomorphism arXiv 2210.16971 Fox Himwich Mani Zhou",
+    "\"directed Sidorenko\" \"bipartite oriented graph\" \"homomorphism\" conjecture 2023 2024 2025"
+  ],
+  "notes": "The conjecture is closely related to the asymmetric (undirected) Sidorenko conjecture, which is itself open; the source paper reduces the directed version to an undirected asymmetric variant (see abstract of 2210.16971). arXiv:2602.12551 ('Sidorenko property and forcing in regular tournaments', 2026) studies Sidorenko-type properties in tournament hosts but focuses on tournament-valued H rather than the bipartite-oriented-graph setting of Conjecture 1.4. No resolution found after 3+ years; conjecture plausibly remains open as a consequence of the undirected asymmetric Sidorenko conjecture also being open."
+}

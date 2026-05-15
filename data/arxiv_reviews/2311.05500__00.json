@@ -1,0 +1,24 @@
+{
+  "review_id": "2311.05500__00",
+  "safe_id": "2311.05500",
+  "arxiv_id": "2311.05500",
+  "conjecture_title": "Conjecture 1.1",
+  "paper_title": "Universality for graphs with bounded density",
+  "published": "2024-01-11",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 1.1 of arXiv:2311.05500 asks for an $\\mathcal{H}_d(n)$-universal graph with at most $Cn^{2-1/d}$ edges, which would be tight up to the constant $C$. The source paper itself proves a weaker construction with $O_d(n^{2-1/(\\lceil d\\rceil+1)})$ edges, achieving the bound only when $d\\in\\mathbb{N}$. A broad web search (5 calls) found no subsequent paper resolving or substantially advancing the general rational-$d$ case of this conjecture.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "universality bounded density graphs H_d(n)-universal n^{2-1/d} edges Alon Nenadov McCarty 2311.05500",
+    "arxiv universality graphs bounded density 2311.05500 conjecture follow-up 2024 2025",
+    "cite:2311.05500 universality density Conjecture 1.1 n^{2-1/d} universal graph arXiv 2024 2025 2026",
+    "WebFetch https://arxiv.org/abs/2511.23341",
+    "WebFetch https://api.semanticscholar.org/graph/v1/paper/arXiv:2311.05500/citations"
+  ],
+  "notes": "No follow-up found that resolves Conjecture 1.1 for non-integer rational d. Related work on hypergraph universality (arXiv:2511.23341, arXiv:2411.19432) appeared in 2024-2025 but could not be verified to address this specific conjecture within the 5-call budget. The paper has been published in a journal (ScienceDirect link found, likely J. Combin. Theory Ser. B). The gap between the proved bound O_d(n^{2-1/(ceil(d)+1)}) and the conjectured O_d(n^{2-1/d}) remains open for rational non-integer d."
+}

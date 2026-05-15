@@ -1,0 +1,23 @@
+{
+  "review_id": "2410.23566__00",
+  "safe_id": "2410.23566",
+  "arxiv_id": "2410.23566",
+  "conjecture_title": "Problem 6",
+  "paper_title": "Blow-ups and extensions of trees in tournaments",
+  "published": "2024-10-31",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Problem 6 from arXiv:2410.23566 asks whether for each positive real α there exists a polynomial P_α bounding unvd(D) for every digraph with maximum average degree at most α. The question is motivated by Fox, He, and Wigderson's result (arXiv:2105.02383) establishing that acyclic digraphs with bounded maximum degree are not linearly unavoidable, with unavoidability growing as n^{Ω(Δ^{2/3}/log^{5/3}Δ)}. No paper resolving the polynomial question or providing a counterexample was found in the literature as of May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "unavoidable digraphs polynomial \"maximum average degree\" \"unvd\" tournament 2024 2025",
+    "Fox He Wigderson acyclic digraphs linearly unavoidable bounded degree arXiv",
+    "unavoidability digraphs \"bounded average degree\" polynomial arXiv 2025",
+    "Aboulker Havet Lochet Lopes Picasarri-Arrieta Rambaud unavoidable digraph follow-up 2025"
+  ],
+  "notes": "No follow-up found in indexed literature. The Fox–He–Wigderson result (arXiv:2105.02383, 'Ramsey numbers of sparse digraphs', Israel J. Math. 2024) rules out linear unavoidability for bounded-degree acyclic digraphs but leaves the polynomial question open; Problem 6 asks about bounded maximum average degree, a condition weaker than bounded maximum degree, so the Fox–He–Wigderson lower bounds do not directly answer it."
+}

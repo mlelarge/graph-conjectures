@@ -1,0 +1,25 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Erdős-Hajnal Conjecture",
+    "statement_text": "Every graph $H$ has the Erdős-Hajnal property, i.e., there exists $c>0$ such that every $H$-free graph $G$ contains a clique or stable set of cardinality at least $|G|^{c}$.",
+    "context_text": "The Erdős-Hajnal conjecture is the central motivation of the paper. Despite extensive efforts it has only been proved for a small family of graphs. The paper extends it to pairs $\\{H,\\overline{J}\\}$ where $H$ and $J$ are cycles, and more generally to graphs obtained by subdividing edges, using the framework of iterative sparsification.",
+    "attributed_to": "Erdős and Hajnal",
+    "attributed_year": 1977,
+    "paper_contribution": "Proves that $\\{H,\\overline{J}\\}$ has the Erdős-Hajnal property for any two cycles $H,J$, and more generally when $H$ and $J$ are obtained from smaller graphs by subdividing every edge exactly twice (or, for one of them, by subdividing every non-forest edge at least five times); this simultaneously extends the $C_5$ result and resolves the open question from [6] about longer cycles.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2307.06379",
+    "paper_title": "Induced subgraph density. III. Cycles and subdivisions",
+    "paper_authors": [
+      "Tung Nguyen",
+      "Alex Scott",
+      "Paul Seymour"
+    ],
+    "published": "2024-06-19",
+    "abs_url": "https://arxiv.org/abs/2307.06379",
+    "source": "html"
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "review_id": "2603.14427__00",
+  "safe_id": "2603.14427",
+  "arxiv_id": "2603.14427",
+  "conjecture_title": "Question 5",
+  "paper_title": "On Borodin-Kostochka conjecture for correspondence coloring",
+  "published": "2026-03-15",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Question 5 asks for the smallest threshold \\Delta_0 such that every graph G with \\Delta(G) \\geq \\Delta_0 and \\omega(G) = \\Delta(G)-1 satisfies \\chi(G) = \\chi_{\\ell}(G) = \\chi_{DP}(G). The source paper itself (Theorem 4) provides an upper bound \\Delta_0 \\leq 3 \\cdot 10^9 for the correspondence coloring analogue, while noting the equality trivially holds for \\omega = \\Delta+1 and \\omega = \\Delta; the exact threshold remains unknown. No subsequent paper resolving or sharpening this specific equality threshold was found in searches conducted two months after posting.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "DP-chromatic number list chromatic omega Delta-1 threshold correspondence coloring Borodin-Kostochka 2026",
+    "Dvorak Kang Miksanik Borodin-Kostochka correspondence coloring chi chi_ell chi_DP omega clique",
+    "chi list chromatic DP-chromatic equal omega Delta minus 1 maximum degree threshold 2025 2026 arxiv"
+  ],
+  "notes": "No follow-up addressing the specific threshold \\Delta_0 for equality \\chi = \\chi_{\\ell} = \\chi_{DP} when \\omega(G) = \\Delta(G)-1 was found. A companion paper arXiv:2603.16670 (also March 2026) improves the purely chromatic Borodin-Kostochka bound to \\Delta \\geq 5.3 \\times 10^6 but does not address the equality question. The conjecture is less than two months old as of the review date, so 'open' with high confidence is appropriate."
+}

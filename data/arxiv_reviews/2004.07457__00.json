@@ -1,0 +1,27 @@
+{
+  "review_id": "2004.07457__00",
+  "safe_id": "2004.07457",
+  "arxiv_id": "2004.07457",
+  "conjecture_title": "Problem 3",
+  "paper_title": "Asymmetric list sizes in bipartite graphs",
+  "published": "2021-08-30",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Problem 3 asks for the optimal list-size pairs $(k_A, k_B)$ (with $k_A \\leq \\Delta_A$, $k_B \\leq \\Delta_B$) guaranteeing $(k_A,k_B)$-choosability for all bipartite graphs with one-sided maximum degrees $\\Delta_A, \\Delta_B$. The source paper itself establishes several sufficient conditions (e.g., $(1+\\varepsilon)\\Delta/\\log_4\\Delta, 2$- and $((1+\\varepsilon)\\Delta/\\log\\Delta, \\log\\Delta)$-choosability in the symmetric case), but the full characterisation of optimal pairs remains open. A 2024 paper (arXiv:2409.01513) improves the symmetric choosability bound to $(\\frac{4}{5}-\\varepsilon)\\Delta/\\log\\Delta$ but addresses the symmetric setting only and does not cite or directly engage with Problem 3.",
+  "since_posted": [],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2409.01513",
+      "verified": true,
+      "note": "Paper confirmed (Bradshaw, Mohar, Stacho, 2024): proves every bipartite graph of sufficiently large maximum degree satisfies ch(G) < (4/5 - 1e-3) * Delta/log(Delta). WebFetch found no mention of arXiv:2004.07457, no (k_A,k_B)-choosability discussion, and no reference to Problem 3; the paper addresses symmetric list colouring (the Alon-Krivelevich conjecture) rather than the asymmetric optimisation question. Fuzz=79 match is coincidental topic overlap."
+    }
+  ],
+  "search_queries": [
+    "asymmetric list choosability bipartite graphs k_A k_B choosable Alon Cambie Kang 2004.07457",
+    "bipartite graph asymmetric list coloring maximum degree Delta_A Delta_B choosable optimal"
+  ],
+  "notes": "No follow-up paper resolving Problem 3 found after searching. The problem is inherently open-ended (asks for a full characterisation of optimal pairs), making partial progress hard to pin down. The paper 2409.01513 improves the symmetric upper bound but does not address the asymmetric question. The Springer paper 'Coloring Bipartite Graphs with Semi-small List Size' (doi:10.1007/s00026-022-00633-z) appeared in search results and could be relevant but could not be verified due to a paywall redirect; it was not included."
+}

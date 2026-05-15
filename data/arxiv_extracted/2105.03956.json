@@ -1,0 +1,25 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.5 (Fox)",
+    "statement_text": "For every sufficiently large positive integer $n$ and every $n$-vertex perfect graph $G$, there is a pure pair $A, B$ in $G$ with $|A|, |B| \\geq n^{1-o(1)}$.",
+    "context_text": "Fox proved (result 1.3) that every $n$-vertex comparability graph has a pure pair $A, B$ with $|A|, |B| > \\frac{n}{4\\log_2 n}$, and also that there exist comparability graphs with no pure pair of size $\\geq \\frac{15n}{\\log_2 n}$. Since comparability graphs are perfect, Fox conjectured the same sub-polynomial lower bound should extend to all perfect graphs.",
+    "attributed_to": "Fox",
+    "attributed_year": null,
+    "paper_contribution": "Proves this conjecture in full; specifically establishes (1.6) that for all $c > 0$ and sufficiently large $n$, every $n$-vertex perfect graph $G$ admits a pure pair $A, B$ with $|A|, |B| \\geq n^{1-c}$, and further strengthens it (1.7–1.9) by making one side linear, relaxing the perfect graph hypothesis to excluding a single long hole and a single long antihole, and ultimately excluding any graph of sufficiently large branch-length and its complement.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2105.03956",
+    "paper_title": "Pure pairs. V. Excluding some long subdivision",
+    "paper_authors": [
+      "Alex Scott",
+      "Paul Seymour",
+      "Sophie Spirkl"
+    ],
+    "published": "2022-10-09",
+    "abs_url": "https://arxiv.org/abs/2105.03956",
+    "source": "pdf"
+  }
+]

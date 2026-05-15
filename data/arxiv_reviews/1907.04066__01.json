@@ -1,0 +1,23 @@
+{
+  "review_id": "1907.04066__01",
+  "safe_id": "1907.04066",
+  "arxiv_id": "1907.04066",
+  "conjecture_title": "Conjecture 8",
+  "paper_title": "Coloring count cones of planar graphs",
+  "published": "2021-10-25",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 8 from arXiv:1907.04066 asserts that every plane near-cubic graph $\\tilde{G}$ with $d(\\tilde{G})=5$ has its coloring-count vector $n_{\\tilde{G}}$ in the subcone $B'_5$, making it a strict strengthening of the Four Color Theorem. The authors verified it computationally for all such graphs with fewer than 30 vertices and showed that every counterexample must contain one of 38 specific graphs as a minor. No subsequent paper resolving or substantially advancing the conjecture was found in a wide search of the literature through May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Dvořák Lidický \"coloring count cones\" planar graphs \"near-cubic\" conjecture",
+    "arXiv 1907.04066 \"coloring count cones\" plane near-cubic graph B'5 cite",
+    "Dvorak Lidicky \"plane near-cubic\" \"coloring count\" \"Four Color Theorem\" strengthening follow-up 2022 2023 2024 2025",
+    "Semantic Scholar citations arXiv:1907.04066"
+  ],
+  "notes": "No follow-up paper resolving Conjecture 8 was found. The paper was published in the Journal of Graph Theory in 2022 (doi listed on Wiley: 10.1002/jgt.22767). Semantic Scholar returned zero indexed citations. The conjecture remains open as a strict strengthening of the Four Color Theorem; the main computational evidence is the verification for graphs with fewer than 30 vertices and the minor-obstruction characterization (38 graphs)."
+}

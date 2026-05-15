@@ -1,0 +1,54 @@
+[
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Open Problem: Complexity of 3-colourability of $P_t$-free graphs",
+    "statement_text": "Determine the complexity of $3$-colourability of $P_t$-free graphs for $t \\geq 8$.",
+    "context_text": "Polynomial-time algorithms for 3-colourability of $P_t$-free graphs are known for $t \\leq 7$ (combining results for $t \\leq 5$, $(k,t)=(3,7)$, and hardness for $P_7$-free graphs). The paper notes this problem remains open for $t \\geq 8$, and provides a subexponential-time algorithm as partial progress.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated as background open problem in prose without a labelled environment and without an explicit citation; PDF source — the inequality sign $\\geq$ was dropped in extraction and has been reconstructed from context.",
+    "arxiv_id": "1803.05396",
+    "paper_title": "$H$-colouring $P_t$-free graphs in subexponential time",
+    "paper_authors": [
+      "Carla Groenland",
+      "Karolina Okrasa",
+      "Pawel Rzążewski",
+      "Alex Scott",
+      "Paul Seymour",
+      "Sophie Spirkl"
+    ],
+    "published": "2019-03-22",
+    "abs_url": "https://arxiv.org/abs/1803.05396",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Open Problem: Polynomial-time maximum independent set on $P_t$-free graphs",
+    "statement_text": "Determine whether maximum independent set is decidable in polynomial time for $P_t$-free graphs for $t \\geq 7$.",
+    "context_text": "Subexponential-time algorithms for maximum independent set on $P_t$-free graphs were given by Brause and independently by Bascó, Marx and Tuza; the present paper extends the subexponential approach to a broader class of problems including maximum independent set, but polynomial-time decidability for $t \\geq 7$ remains open.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated as background open problem in prose without a labelled environment and without an explicit citation; PDF source — the inequality sign $\\geq$ was dropped in extraction and has been reconstructed from context.",
+    "arxiv_id": "1803.05396",
+    "paper_title": "$H$-colouring $P_t$-free graphs in subexponential time",
+    "paper_authors": [
+      "Carla Groenland",
+      "Karolina Okrasa",
+      "Pawel Rzążewski",
+      "Alex Scott",
+      "Paul Seymour",
+      "Sophie Spirkl"
+    ],
+    "published": "2019-03-22",
+    "abs_url": "https://arxiv.org/abs/1803.05396",
+    "source": "pdf"
+  }
+]

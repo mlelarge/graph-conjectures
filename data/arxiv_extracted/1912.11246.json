@@ -1,0 +1,74 @@
+[
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 2.2",
+    "statement_text": "There is a polynomial $P$ such that every graph $G$ that contains no prism, pyramid, theta or turtle has at most $P(|V(G)|)$ minimal separators.",
+    "context_text": "The authors survey families of graphs with exponentially many minimal separators (k-prisms, k-pyramids, k-thetas, k-turtles, k-ladders) and observe that every known such example contains a prism, pyramid, theta, or turtle. They propose Conjecture 2.2 as 'in some sense the best possible statement regarding bounding the number of minimal separators.' The paper proves a weaker result (Theorem 2.3) for the class $\\mathcal{C}$ of (square, prism, pyramid, theta, even wheel)-free graphs.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1912.11246",
+    "paper_title": "Maximum independent sets in (pyramid, even hole)-free graphs",
+    "paper_authors": [
+      "Maria Chudnovsky",
+      "Stéphan Thomassé",
+      "Nicolas Trotignon",
+      "Kristina Vušković"
+    ],
+    "published": "2019-12-24",
+    "abs_url": "https://arxiv.org/abs/1912.11246",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Open problem: MIS complexity in even-hole-free graphs",
+    "statement_text": "The complexity of computing a maximum independent set in an even-hole-free graph is not known.",
+    "context_text": "Stated in the introduction as motivation for the paper's approach. The paper proves a polynomial-time algorithm for the strictly smaller class of (even hole, pyramid)-free graphs, with the hope that understanding the pyramid-free case may shed light on the full even-hole-free class.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated as a known open problem in the field (referencing a survey [10]); no specific attribution to individual authors is given in the text.",
+    "arxiv_id": "1912.11246",
+    "paper_title": "Maximum independent sets in (pyramid, even hole)-free graphs",
+    "paper_authors": [
+      "Maria Chudnovsky",
+      "Stéphan Thomassé",
+      "Nicolas Trotignon",
+      "Kristina Vušković"
+    ],
+    "published": "2019-12-24",
+    "abs_url": "https://arxiv.org/abs/1912.11246",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Open problem: polynomial separator property for (prism, pyramid, theta, even wheel)-free graphs",
+    "statement_text": "It is unknown whether (prism, pyramid, theta, even wheel)-free graphs have polynomially many minimal separators.",
+    "context_text": "The authors note that a weakening of Conjecture 2.2 is obtained by restricting to (prism, pyramid, theta, even wheel)-free graphs (since prisms, thetas, and turtles all contain even holes). They explicitly state they 'were not able to prove that (prism, pyramid, theta, even wheel)-free graphs have polynomially many minimal separators,' which is why the main result (Theorem 2.3) additionally excludes squares.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Implicit open problem arising from the gap between Conjecture 2.2 and Theorem 2.3; not labeled as a formal conjecture or problem in the paper.",
+    "arxiv_id": "1912.11246",
+    "paper_title": "Maximum independent sets in (pyramid, even hole)-free graphs",
+    "paper_authors": [
+      "Maria Chudnovsky",
+      "Stéphan Thomassé",
+      "Nicolas Trotignon",
+      "Kristina Vušković"
+    ],
+    "published": "2019-12-24",
+    "abs_url": "https://arxiv.org/abs/1912.11246",
+    "source": "pdf"
+  }
+]

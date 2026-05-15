@@ -1,0 +1,38 @@
+{
+  "review_id": "2202.05557__02",
+  "safe_id": "2202.05557",
+  "arxiv_id": "2202.05557",
+  "conjecture_title": "Question: Polynomial bound analogue of Esperet's conjecture for $\\tau_d$",
+  "paper_title": "Polynomial bounds for chromatic number. V. Excluding a tree of radius two and a complete multipartite graph",
+  "published": "2023-01-10",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The question asks whether $\\tau_d$-boundedness in a hereditary class always implies polynomial $\\tau_d$-boundedness, in analogy with Esperet's conjecture for $\\omega(G)$. No paper resolving this question was found in a targeted web search. Importantly, the analogous Esperet conjecture for $\\omega(G)$ was disproved by Bria\\'nski, Davies, and Walczak ('Separating Polynomial $\\chi$-Boundedness from $\\chi$-Boundedness', Combinatorica 2024), providing relevant negative context, but their construction does not directly address the $\\tau_d$ setting. The question remains open as of May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2409.09397",
+      "verified": false,
+      "note": "Paper ('Trees and near-linear stable sets', Nguyen–Scott–Seymour) is about the Gyárfás–Sumner conjecture and stable sets in graphs with bounded clique number excluding a forest; WebFetch confirmed no discussion of τ_d-boundedness or polynomial bounds for χ via τ_d, and no citation of arXiv:2202.05557's τ_d question."
+    },
+    {
+      "arxiv_id": "2409.09400",
+      "verified": false,
+      "note": "Paper ('Subdivisions and near-linear stable sets', Nguyen–Scott–Seymour) is a companion to 2409.09397 concerning Gyárfás–Sumner-type stable sets for K_t-subdivision-free graphs; unrelated to the τ_d polynomial bound question."
+    },
+    {
+      "arxiv_id": "2508.14332",
+      "verified": false,
+      "note": "Paper ('Asymptotic structure IV', Nguyen–Scott–Seymour) is about a counterexample to the weak coarse Menger conjecture; unrelated to the τ_d polynomial bound question."
+    }
+  ],
+  "search_queries": [
+    "Scott Seymour \"tau_d\" \"polynomially\" chi-bounded hereditary 2202.05557",
+    "Esperet conjecture analogue tau_d chromatic number polynomial bound hereditary class Scott Seymour",
+    "Brianski Davies Walczak Esperet conjecture false counterexample chi-bounded polynomial 2023 2024"
+  ],
+  "notes": "The analogous question for ω(G) (Esperet's original conjecture) was disproved by Briański, Davies and Walczak in 'Separating Polynomial χ-Boundedness from χ-Boundedness' (Combinatorica 2024); however their construction concerns clique-number-based boundedness and does not directly address τ_d. No paper specifically resolving the τ_d analogue was found. All three internal references were matched with fuzz ≤ 80 and address entirely different conjectures (Gyárfás–Sumner and Menger); none verified as relevant to this question."
+}

@@ -1,0 +1,33 @@
+{
+  "review_id": "1701.05597__00",
+  "safe_id": "1701.05597",
+  "arxiv_id": "1701.05597",
+  "conjecture_title": "Conjecture 1.8",
+  "paper_title": "Induced subgraphs of graphs with large chromatic number. VI. Banana trees",
+  "published": "2019-08-27",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "No resolution of Conjecture 1.8 (\"every multigraph is widespread\") has been found in the literature since the paper appeared. The authors themselves stated they were very far from proving it and could not verify it even for every chandelier; all multigraphs proved widespread at the time of writing were subdivisions of outerplanar graphs. Both candidate internal references from the corpus address different conjectures in unrelated settings (tournament structure and coarse Menger theory) and are false positives. A broad web search returned no follow-up paper resolving or making substantial progress on this conjecture.",
+  "since_posted": [],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2306.02364",
+      "verified": true,
+      "note": "Paper is 'Some results and problems on tournament structure' by Nguyen, Scott, Seymour. It studies chromatic structure of tournaments; it does not address the widespread multigraph conjecture (Conjecture 1.8 of arXiv:1701.05597). The matched contribution text concerns a different conjecture about tournament colorings. False positive match."
+    },
+    {
+      "arxiv_id": "2508.14332",
+      "verified": true,
+      "note": "Paper is 'Asymptotic structure. IV. A counterexample to the weak coarse Menger conjecture' by Nguyen, Scott, Seymour. It disproves the weak coarse Menger conjecture (a conjecture by Georgakopoulos–Papasoglu and independently Albrechtsen et al.), not the widespread multigraph conjecture. False positive match."
+    }
+  ],
+  "search_queries": [
+    "widespread multigraph Scott Seymour conjecture graph chromatic number",
+    "arxiv 1701.05597 widespread conjecture banana trees follow-up",
+    "\"widespread\" \"pervasive\" induced subgraph chromatic number multigraph Scott Seymour 2020 2021 2022 2023 2024 2025"
+  ],
+  "notes": "Both internal references are false positives: they match papers by the same authors but on unrelated conjectures. No follow-up paper resolving or substantially advancing 'every multigraph is widespread' was found in three targeted web searches. The conjecture remains open with high confidence; the original authors noted at the time of writing that they were very far from proving it."
+}

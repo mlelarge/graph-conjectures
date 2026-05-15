@@ -1,0 +1,54 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1 (Gyárfás–Sumner)",
+    "statement_text": "For every tree $H$, the class of $H$-free graphs is $\\chi$-bounded.",
+    "context_text": "One of the central problems regarding $\\chi$-boundedness, formulated independently by Gyárfás and Sumner. The conjecture is resolved only for very specific trees $H$; it is open in particular for $P_t$-free graphs with $t \\geq 5$, and it is unknown even whether $P_5$-free graphs are polynomially $\\chi$-bounded.",
+    "attributed_to": "Gyárfás and Sumner",
+    "attributed_year": null,
+    "paper_contribution": "Proves a biclique-exclusion relaxation: every $C_{\\geq t}$-free graph containing no $K_{\\ell,\\ell}$ as a subgraph satisfies $\\chi(G) \\leq \\ell^{f(t)}+1$, giving a polynomial bound in $\\ell$ under the additional assumption of no large balanced biclique.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2012.03686",
+    "paper_title": "Degeneracy of $P_t$-free and $C_{\\geq t}$-free graphs with no large complete bipartite subgraphs",
+    "paper_authors": [
+      "Marthe Bonamy",
+      "Nicolas Bousquet",
+      "Michał Pilipczuk",
+      "Paweł Rzążewski",
+      "Stéphan Thomassé",
+      "Bartosz Walczak"
+    ],
+    "published": "2021-10-15",
+    "abs_url": "https://arxiv.org/abs/2012.03686",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 8 (Erdős–Hajnal)",
+    "statement_text": "For every graph $H$, there exists $\\varepsilon_H > 0$ such that every $H$-free graph contains an independent set of size at least $n^{\\varepsilon_H}$ or a clique of size at least $n^{\\varepsilon_H}$.",
+    "context_text": "The Erdős–Hajnal conjecture can be seen as a weakening of polynomial $\\chi$-boundedness; it is known to hold for cographs, graphs on at most four vertices, the bull graph, and $C_5$, but remains open for $P_5$-free graphs. The paper discusses it under Connection 2 as motivation for a biclique variant.",
+    "attributed_to": "Erdős and Hajnal",
+    "attributed_year": null,
+    "paper_contribution": "Presents Theorem 4 (degeneracy of $C_{\\geq t}$-free graphs excluding $K_{\\ell,\\ell}$) as the $C_{\\geq t}$-free analogue of the Fox–Sudakov biclique version of the conjecture, drawing an explicit structural parallel between the two settings.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2012.03686",
+    "paper_title": "Degeneracy of $P_t$-free and $C_{\\geq t}$-free graphs with no large complete bipartite subgraphs",
+    "paper_authors": [
+      "Marthe Bonamy",
+      "Nicolas Bousquet",
+      "Michał Pilipczuk",
+      "Paweł Rzążewski",
+      "Stéphan Thomassé",
+      "Bartosz Walczak"
+    ],
+    "published": "2021-10-15",
+    "abs_url": "https://arxiv.org/abs/2012.03686",
+    "source": "pdf"
+  }
+]

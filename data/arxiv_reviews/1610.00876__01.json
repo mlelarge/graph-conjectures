@@ -1,0 +1,49 @@
+{
+  "review_id": "1610.00876__01",
+  "safe_id": "1610.00876",
+  "arxiv_id": "1610.00876",
+  "conjecture_title": "Conjecture 4",
+  "paper_title": "Subdivisions in digraphs of large out-degree or large dichromatic number",
+  "published": "2016-10-04",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 4 from arXiv:1610.00876, that every oriented tree is $\\delta^+$-maderian, remains open as of 2026. The source paper itself established special cases: in-arborescences are $\\delta^+$-maderian (Theorem 23) and all oriented paths are $\\delta^+$-maderian (Corollary 20), but the general statement is unresolved. A 2024 survey (Stein, arXiv:2310.18719) explicitly notes that minimum-outdegree conditions for oriented trees and paths 'appear to be very difficult' and that related problems 'seem wide open', confirming no resolution has appeared. The most-cited follow-up papers in this area (arXiv:2008.13224 and arXiv:2008.09888, both 2020) resolve Conjecture 5 from the same source paper (oriented cycles), not Conjecture 4.",
+  "since_posted": [
+    {
+      "title": "Oriented trees and paths in digraphs",
+      "authors": "Maya Stein",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2310.18719",
+      "arxiv_id": "2310.18719",
+      "doi": null,
+      "kind": "survey",
+      "claim": "This survey of the area explicitly states that minimum-outdegree conditions for oriented paths and trees 'appear to be very difficult' and highlights the Thomassé-type conjectures as 'wide open', with the Aboulker et al. paper cited as related work, confirming Conjecture 4 remains unresolved."
+    }
+  ],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2008.13224",
+      "verified": true,
+      "note": "Verified via WebFetch. This paper (Gishboliner, Steiner, Szabó 2020) proves Conjecture 5 from the source paper—that every orientation of a cycle of length ℓ is δ+-maderian—not Conjecture 4 about oriented trees. Corpus entries claiming it 'proves this conjecture in full generality' are misattributed; they refer to the cycles conjecture, not the trees conjecture."
+    },
+    {
+      "arxiv_id": "2008.09888",
+      "verified": true,
+      "note": "Verified via WebFetch. This paper (Gishboliner, Steiner, Szabó 2020) proves mader_{\\vec{\\chi}}(F)=v(F) for orientations of cactus graphs and bioriented forests—a dichromatic-number result about cycles. It does not address δ+-maderian oriented trees. Corpus entries claiming it 'fully resolves the conjecture' refer to a different conjecture (cycle-subdivision via dichromatic number), not Conjecture 4."
+    },
+    {
+      "arxiv_id": "2202.01006",
+      "verified": false,
+      "note": "Not independently fetched. Corpus note states 'no direct progress on this conjecture'; accepted at face value. Note: corpus attribution field lists 'Aboulker, Charbit, and Naserasr' but the paper is by Aboulker, Bousquet, de Verclos—possible extraction artefact."
+    }
+  ],
+  "search_queries": [
+    "oriented tree delta+ maderian subdivision digraph Aboulker Havet Thomassé 1610.00876",
+    "\"oriented tree\" \"maderian\" digraph subdivision outdegree conjecture 2020 2021 2022 2023 2024 2025"
+  ],
+  "notes": "The internal reference corpus contains inconsistent entries for arXiv:2008.13224: some claim it proves Conjecture 4 in full generality while others say no direct progress is made; WebFetch confirms the paper is exclusively about oriented cycles (Conjecture 5). The 2024 survey arXiv:2310.18719 (Stein) treats minimum-outdegree conditions for trees as a wide-open research direction and explicitly calls related problems 'very difficult', providing strong corroboration that Conjecture 4 is open."
+}

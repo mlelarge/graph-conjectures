@@ -1,0 +1,26 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 4",
+    "statement_text": "A monotone class of graphs $\\mathcal{C}$ has bounded expansion if and only if for every fixed $h \\geq 1$, posets of height at most $h$ whose cover graphs are in $\\mathcal{C}$ have bounded dimension.",
+    "context_text": "This conjecture from reference [12] asserts that bounded expansion exactly characterises the graph classes for which poset dimension is bounded purely as a function of height. The forward direction was established in [12] and is central motivation for the present paper's approach via weak coloring numbers.",
+    "attributed_to": "authors of [12]",
+    "attributed_year": null,
+    "paper_contribution": "Reproves the forward direction (bounded expansion implies $O(n^\\varepsilon)$-dimension for fixed height) via weak coloring numbers with a simpler proof and quantitatively better bounds (Theorem 2); explicitly notes the backward direction remains open.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Full bibliography not present in extracted text; [12] is cited as the source of both the proved forward direction and the open backward direction. attributed_year set to null.",
+    "arxiv_id": "1708.05424",
+    "paper_title": "Nowhere Dense Graph Classes and Dimension",
+    "paper_authors": [
+      "Gwenaël Joret",
+      "Piotr Micek",
+      "Patrice Ossona de Mendez",
+      "Veit Wiechert"
+    ],
+    "published": "2019-01-31",
+    "abs_url": "https://arxiv.org/abs/1708.05424",
+    "source": "pdf"
+  }
+]

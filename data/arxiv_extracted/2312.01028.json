@@ -1,0 +1,71 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Pach–Tóth Conjecture",
+    "statement_text": "For every fixed $k$, the maximum number of edges in an $n$-vertex simple topological graph with no $k$ pairwise disjoint edges is at most $O_k(n)$.",
+    "context_text": "Pach and Tóth [38] proved that every $n$-vertex simple topological graph with no $k \\geq 3$ pairwise disjoint edges has at most $O(n \\log^{4k-8} n)$ edges, and conjectured a linear bound in $n$ for each fixed $k$. The present paper's Theorem 1.2 substantially improves the upper bound to $n(\\log n)^{O(\\log k)}$.",
+    "attributed_to": "Pach and Tóth",
+    "attributed_year": null,
+    "paper_contribution": "Theorem 1.2 establishes that every $n$-vertex simple topological graph with no $k$ pairwise disjoint edges has at most $n(\\log n)^{O(\\log k)}$ edges, improving the prior bound of $O(n \\log^{4k-8} n)$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source — year of [38] not recoverable from text.",
+    "arxiv_id": "2312.01028",
+    "paper_title": "A structure theorem for pseudo-segments and its applications",
+    "paper_authors": [
+      "Jacob Fox",
+      "Janos Pach",
+      "Andrew Suk"
+    ],
+    "published": "2023-12-02",
+    "abs_url": "https://arxiv.org/abs/2312.01028",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Fox–Sudakov Polynomial Rödl Conjecture",
+    "statement_text": "Every hereditary family of graphs that is not the family of all graphs satisfies the polynomial Rödl property.",
+    "context_text": "Fox and Sudakov [20] conjectured a polynomial quantitative version of Rödl's induced-subgraph homogeneity theorem, which would in particular strengthen the Erdős–Hajnal conjecture. The present paper's Theorem 1.1 (homogeneous regularity for intersection graphs of pseudo-segments) implies the polynomial Rödl property for this family via Lemma 2.13.",
+    "attributed_to": "Fox and Sudakov",
+    "attributed_year": null,
+    "paper_contribution": "Theorem 1.1 establishes the homogeneous regularity property (equivalently the mighty Erdős–Hajnal property) for the hereditary family of intersection graphs of pseudo-segments; Lemma 2.13 then yields the polynomial Rödl property for this family as a consequence.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source — year of [20] not recoverable from text.",
+    "arxiv_id": "2312.01028",
+    "paper_title": "A structure theorem for pseudo-segments and its applications",
+    "paper_authors": [
+      "Jacob Fox",
+      "Janos Pach",
+      "Andrew Suk"
+    ],
+    "published": "2023-12-02",
+    "abs_url": "https://arxiv.org/abs/2312.01028",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Optimal disjoint-edges bound in complete simple topological graphs",
+    "statement_text": "Is it true that every complete $n$-vertex simple topological graph contains $\\Omega(n)$ pairwise disjoint edges?",
+    "context_text": "Aichholzer et al. [2] showed that every complete $n$-vertex simple topological graph always contains $\\Omega(n^{1/2})$ pairwise disjoint edges. The paper notes that improving this lower bound to $\\Omega(n)$ is an open problem, and Corollary 1.3 provides a new nearly-polynomial lower bound under a density assumption.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated in passing as an open problem without a labelled theorem environment; PDF source.",
+    "arxiv_id": "2312.01028",
+    "paper_title": "A structure theorem for pseudo-segments and its applications",
+    "paper_authors": [
+      "Jacob Fox",
+      "Janos Pach",
+      "Andrew Suk"
+    ],
+    "published": "2023-12-02",
+    "abs_url": "https://arxiv.org/abs/2312.01028",
+    "source": "pdf"
+  }
+]

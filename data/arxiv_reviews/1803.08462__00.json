@@ -1,0 +1,44 @@
+{
+  "review_id": "1803.08462__00",
+  "safe_id": "1803.08462",
+  "arxiv_id": "1803.08462",
+  "conjecture_title": "Θ(√m) excess conjecture for hypergraph cuts",
+  "paper_title": "Hypergraph cuts above the average",
+  "published": "2019-06-27",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "disproved",
+  "confidence": "high",
+  "summary": "The conjecture that the minimum maximum $r$-cut excess over all $m$-edge $k$-graphs is $\\Theta(\\sqrt{m})$ for every fixed $2 \\le r \\le k$ is disproved by Theorem 1.2 of the source paper itself, which shows the excess is $\\Omega(m^{5/9})$ for all $r \\ge 3$ or $k \\ge 4$—strictly larger than $\\sqrt{m}$ for large $m$, while the cases $r=k=2$ and $r=2,k=3$ are known to be tight at $\\Theta(\\sqrt{m})$. Subsequent work has further pushed the lower bound upward: Räty and Tomon (2024) reached $m^{3/5-o(1)}$ for general hypergraphs and $m^{3/4-o(1)}$ (tight) for linear hypergraphs, and Janzer and Portier (2025) proved $m^{2/3-\\varepsilon}$ for all sufficiently large $k$, progressively moving the picture far above the $\\sqrt{m}$ threshold.",
+  "since_posted": [
+    {
+      "title": "Large Cuts in Hypergraphs via Energy",
+      "authors": "Eero Räty, István Tomon",
+      "year": 2024,
+      "venue": "Mathematical Proceedings of the Cambridge Philosophical Society",
+      "url": "https://arxiv.org/abs/2410.01682",
+      "arxiv_id": "2410.01682",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Improves the lower bound on r-cut excess from $\\Omega(m^{5/9})$ to $m^{3/5-o(1)}$ for general $r$-uniform hypergraphs and to $m^{3/4-o(1)}$ (tight up to $o(1)$) for linear hypergraphs, further confirming the $\\Theta(\\sqrt{m})$ conjecture is false and improving the quantitative picture."
+    },
+    {
+      "title": "Nearly tight bounds for MaxCut in hypergraphs",
+      "authors": "Oliver Janzer, Julien Portier",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2511.08501",
+      "arxiv_id": "2511.08501",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves that for each $\\varepsilon>0$ there exists $k_0$ such that for all $k>k_0$ and $2\\le r\\le k$, every $k$-uniform hypergraph has an $r$-cut exceeding the random cut by $\\Omega(m^{2/3-\\varepsilon})$, and $\\Omega(m^{3/4})$ for linear hypergraphs (tight); these bounds are far above $\\sqrt{m}$."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "hypergraph cuts above average excess sqrt m Conlon Fox Kwan Sudakov 1803.08462 follow-up",
+    "maximum r-cut k-uniform hypergraph excess m^{5/9} tight bound 2020 2021 2022 2023 2024 2025"
+  ],
+  "notes": "The conjecture is disproved by Theorem 1.2 of the source paper itself: the same 2019 paper that proposes it as a plausible guess immediately shows it fails for all $r\\ge 3$ or $k\\ge 4$, since $\\Omega(m^{5/9})\\gg \\sqrt{m}$. The remaining cases $r=k=2$ and $r=2,k=3$ satisfy $\\Theta(\\sqrt{m})$ and were already known. Subsequent papers pursue the correct tight exponent, currently conjectured to be $2/3$ for general $k$-uniform hypergraphs."
+}

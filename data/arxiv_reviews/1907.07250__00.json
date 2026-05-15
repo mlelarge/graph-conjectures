@@ -1,0 +1,22 @@
+{
+  "review_id": "1907.07250__00",
+  "safe_id": "1907.07250",
+  "arxiv_id": "1907.07250",
+  "conjecture_title": "Gap problem for 1-ball reconstruction threshold",
+  "paper_title": "Shotgun reconstruction in the hypercube",
+  "published": "2019-07-16",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The conjecture asks to narrow the gap between the Omega(n) lower bound and the n^{2+epsilon} upper bound for the threshold number of colours q*(n) at which almost every q-colouring of Q_n becomes reconstructible from its multiset of coloured 1-balls. The source paper (published in Random Structures & Algorithms 60, 2022) established these two bounds, but no subsequent paper has been found that closes or significantly narrows this gap. Related shotgun assembly work on lattice models and random graphs has appeared, but none addresses the hypercube 1-ball threshold directly.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "shotgun reconstruction hypercube coloring 1-ball threshold Przykucki Roberts Scott",
+    "hypercube q-coloring reconstruction 1-ball multiset threshold arXiv 1907.07250",
+    "shotgun assembly hypercube 1-ball reconstruction threshold gap coloring 2020 2021 2022 2023 2024 2025"
+  ],
+  "notes": "No follow-up resolving or narrowing the gap was found in five web calls. The source paper appeared in Random Structures & Algorithms 60(1) 117-150 (2022). Nearby literature found includes arXiv:2205.01327 (shotgun threshold for lattice labeling model, Z^d not Q_n) and a 2025 Springer paper on shotgun assembly of random graphs — neither addresses the Q_n 1-ball colour threshold. The arXiv paper 2308.01671 ('Reconstruction of graph colourings') concerns k-deck reconstruction on grids and random graphs, not 1-ball coloring reconstruction on Q_n. The problem remains open with high confidence."
+}

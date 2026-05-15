@@ -1,0 +1,24 @@
+{
+  "review_id": "1903.04863__00",
+  "safe_id": "1903.04863",
+  "arxiv_id": "1903.04863",
+  "conjecture_title": "Informal question on Behrend-style sets avoiding affine patterns with mixed-sign coefficients",
+  "paper_title": "Triforce and Corners",
+  "published": "2019-07-02",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "low",
+  "summary": "The question asks whether there exist subsets of $[N]$ with $N^{1-o(1)}$ elements avoiding linear patterns with two positive and two negative coefficients (e.g., $2x+2y=3w+z$), in the spirit of Behrend's construction. No follow-up paper resolving this question was found in a targeted web search covering the period 2019–2026. The question is related to known limitations of the Ruzsa–Bergelson–Host–Kra popular-difference approach, and Asaf Shapira's earlier work on Behrend-type constructions for linear equations treats adjacent problems, but the specific mixed-sign regime identified in the Fox–Sah–Sawhney–Stoner–Zhao paper appears to remain open. Given that the question is now roughly 7 years old, the absence of indexed results warrants low confidence.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Behrend construction mixed sign coefficients linear equations avoiding 2x+2y=3w+z additive combinatorics",
+    "Fox Sah Sawhney Stoner Zhao triforce corners 1903.04863 Behrend popular differences",
+    "Behrend type sets avoiding two positive two negative coefficients linear equations density N^{1-o(1)} additive combinatorics 2020 2021 2022 2023 2024",
+    "WebFetch https://arxiv.org/abs/1903.04863",
+    "WebFetch https://arxiv.org/abs/2503.22630"
+  ],
+  "notes": "No follow-up resolving this question was found after 5 web calls. The closest related work is Shapira's 'Behrend-Type Constructions for Sets of Linear Equations', which predates the Fox et al. paper and treats the problem for different coefficient regimes. Recent improvements to Behrend's construction (arXiv:2401.16106, arXiv:2406.12290) concern 3-AP-free sets and do not address the mixed-sign setting. The question remains open with low confidence due to the 7-year age of the conjecture."
+}

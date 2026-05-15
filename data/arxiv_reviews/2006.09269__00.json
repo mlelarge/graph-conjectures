@@ -1,0 +1,33 @@
+{
+  "review_id": "2006.09269__00",
+  "safe_id": "2006.09269",
+  "arxiv_id": "2006.09269",
+  "conjecture_title": "Conjecture 5",
+  "paper_title": "A Thomassen-type method for planar graph recoloring",
+  "published": "2020-06-16",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "medium",
+  "summary": "Conjecture 5 (that $R_6(G)$ has diameter $O(n)$ for planar graphs of girth at least five on $n$ vertices) appears to remain open in full generality. A directly relevant follow-up, arXiv:2112.00631 (SIAM J. Discrete Math. 37(1), 2023), addresses exactly the same setting and proves that the 4-recolouring graph of every planar graph of girth five is connected via a discharging argument, as well as diameter theorems for the recolouring graph; whether the $R_6$ linear-diameter statement is among those results could not be confirmed from the abstract alone, so the conjecture is classified as partially addressed.",
+  "since_posted": [
+    {
+      "title": "Recolouring planar graphs of girth at least five",
+      "authors": "not extracted from abstract",
+      "year": 2021,
+      "venue": "SIAM Journal on Discrete Mathematics",
+      "url": "https://arxiv.org/abs/2112.00631",
+      "arxiv_id": "2112.00631",
+      "doi": "10.1137/21M1463598",
+      "kind": "partial",
+      "claim": "Proves the 4-recolouring graph of every planar graph of girth five is connected (via discharging) and establishes diameter theorems for the recolouring graph in this setting, addressing the same class of graphs as Conjecture 5 though the specific $R_6$ linear-diameter bound could not be confirmed from the abstract."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Dvořák Feghali planar graph recoloring girth five R_6 diameter linear 2006.09269",
+    "planar graph girth five 6-coloring reconfiguration diameter linear conjecture"
+  ],
+  "notes": "arXiv:2112.00631 (SIAM J. Discrete Math. 37(1):332-350, 2023, DOI 10.1137/21M1463598) is the primary post-statement follow-up; its abstract highlights 4-recolouring connectivity as the main contribution and mentions diameter theorems, but does not explicitly confirm it resolves Conjecture 5. The 2024 Cranston paper in J. Graph Theory on 5-coloring reconfiguration for planar graphs with no short odd cycles may also be relevant but its connection to Conjecture 5 could not be verified (access denied). Author names for arXiv:2112.00631 were not extracted from the fetched abstract."
+}

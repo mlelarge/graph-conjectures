@@ -1,0 +1,21 @@
+{
+  "review_id": "2603.17630__00",
+  "safe_id": "2603.17630",
+  "arxiv_id": "2603.17630",
+  "conjecture_title": "Conjecture 4.1",
+  "paper_title": "Anticoncentration of random spanning trees in graphs with large minimum degree",
+  "published": "2026-03-18",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 4.1 asks whether the optimal anticoncentration bound for a uniformly random spanning tree of a connected $n$-vertex graph with minimum degree $d$ is $n^{-(1/2-o_n(1))(d-1)}$, matching the extremal example $K_{d,n-d}$. The source paper proves the weaker bound $n^{-\\Omega(d)}$ (confirming a conjecture of Lee), but the precise constant $1/2$ in the exponent remains open. No follow-up paper addressing this sharper bound was found in the literature as of May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "anticoncentration random spanning trees minimum degree Bitonti Michel Scott 2026",
+    "anticoncentration spanning tree \"uniformly random\" \"minimum degree\" probability isomorphic bound 2026"
+  ],
+  "notes": "The paper 2601.07740 ('Anticoncentration of random spanning trees in almost regular graphs', January 2026) is a closely related predecessor by the same research group but predates the source paper and does not address Conjecture 4.1. No post-March-2026 paper resolving the optimal constant $1/2$ was found. The conjecture is fresh (posted 2026-03-18) and open with high confidence."
+}

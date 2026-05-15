@@ -1,0 +1,44 @@
+{
+  "review_id": "2310.04265__10",
+  "safe_id": "2310.04265",
+  "arxiv_id": "2310.04265",
+  "conjecture_title": "Conjecture 5.10",
+  "paper_title": "Clique number of tournaments",
+  "published": "2023-10-06",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "unclear",
+  "confidence": "medium",
+  "summary": "No follow-up paper specifically addressing Conjecture 5.10 (infinitely many k-\\overrightarrow{\\omega}-critical tournaments for k≥3) was found. A January 2024 paper (arXiv:2401.07776) on NP-completeness of computing the clique number of tournaments explicitly disproves a conjecture of Aboulker, Aubian, Charbit and Lopes from arXiv:2310.04265, but the abstract does not identify which conjecture; full-text verification was not possible within the web-call budget. A February 2026 paper (arXiv:2602.09863) characterises tournaments with large clique number but does not appear to address k-\\overrightarrow{\\omega}-criticality.",
+  "since_posted": [
+    {
+      "title": "Computing the clique number of tournaments",
+      "authors": "Unknown (to be verified)",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2401.07776",
+      "arxiv_id": "2401.07776",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves that deciding whether a tournament has clique number at most k is NP-complete, and provides a counterexample to a conjecture of Aboulker, Aubian, Charbit and Lopes (arXiv:2310.04265); the abstract does not specify which conjecture, so it is unclear whether this resolves Conjecture 5.10."
+    },
+    {
+      "title": "Characterizing Large Clique Number in Tournaments",
+      "authors": "Unknown (to be verified)",
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2602.09863",
+      "arxiv_id": "2602.09863",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Characterises tournaments with large clique number via two families; related to the source paper's programme but does not appear to address k-\\overrightarrow{\\omega}-criticality or Conjecture 5.10 directly."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "k-omega-critical tournaments clique number Aboulker Aubian Charbit Lopes arXiv 2310.04265",
+    "k-critical tournament clique number infinitely many 2024 2025"
+  ],
+  "notes": "arXiv:2401.07776 explicitly states it disproves a conjecture of Aboulker, Aubian, Charbit and Lopes, but the abstract does not specify which one among the several conjectures in arXiv:2310.04265. Full-text access to 2401.07776 (HTML 404, PDF binary) was not achievable within the 5-call budget. Status is therefore 'unclear' rather than 'open' or 'disproved'."
+}

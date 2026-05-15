@@ -1,0 +1,71 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture of Damron–Gravner–Junge–Lyu–Sivakooff (p = 1/2 growth rate)",
+    "statement_text": "For the parking problem on $\\mathbb{Z}$ with $d = 1$ and $p = 1/2$, $\\mathbb{E}[\\min\\{\\tau, t\\}] = \\Theta(t^{3/4})$.",
+    "context_text": "Theorem 1.1 of [3] only establishes $\\mathbb{E}[\\min\\{\\tau,t\\}] = o(t)$ at $p=1/2$, while a seminar by [8] suggested the exponent $3/4$. The authors of [3] conjectured this precise exponent for the one-dimensional parking process on $\\mathbb{Z}$.",
+    "attributed_to": "Damron, Gravner, Junge, Lyu, and Sivakooff",
+    "attributed_year": null,
+    "paper_contribution": "Proves (Theorem 1.2) that $c\\,t^{3/4}(\\log t)^{-1/4} \\leq \\mathbb{E}[\\min\\{\\tau,t\\}] \\leq C\\,t^{3/4}$ for explicit constants $c,C>0$, confirming the exponent $3/4$ up to a polylogarithmic factor.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "PDF source — conjecture stated in prose without a labelled theorem environment; math may be slightly garbled.",
+    "arxiv_id": "1907.09437",
+    "paper_title": "Parking on the integers",
+    "paper_authors": [
+      "Michał Przykucki",
+      "Alexander Roberts",
+      "Alex Scott"
+    ],
+    "published": "2021-08-18",
+    "abs_url": "https://arxiv.org/abs/1907.09437",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture of Damron–Gravner–Junge–Lyu–Sivakooff (finiteness of E[τ] for p < 1/2)",
+    "statement_text": "For the parking problem on $\\mathbb{Z}$ with $d = 1$, $\\mathbb{E}[\\tau] < \\infty$ for all $p < 1/2$.",
+    "context_text": "Theorem 1.1 of [3] gives $\\mathbb{E}[\\tau] < \\infty$ only for $p < 0.000528$; the authors of [3] conjectured finiteness holds for the full subcritical regime $p < 1/2$ in $d=1$.",
+    "attributed_to": "Damron, Gravner, Junge, Lyu, and Sivakooff",
+    "attributed_year": null,
+    "paper_contribution": "Proves (Theorem 1.4) that $\\mathbb{E}[\\tau] < \\infty$ for all $p < 1/2$, fully confirming the conjecture for the parking problem on $\\mathbb{Z}$.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "PDF source — conjecture stated in prose without a labelled theorem environment.",
+    "arxiv_id": "1907.09437",
+    "paper_title": "Parking on the integers",
+    "paper_authors": [
+      "Michał Przykucki",
+      "Alexander Roberts",
+      "Alex Scott"
+    ],
+    "published": "2021-08-18",
+    "abs_url": "https://arxiv.org/abs/1907.09437",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Question of Damron–Gravner–Junge–Lyu–Sivakooff (critical exponent for E[τ])",
+    "statement_text": "Is there a critical exponent $\\gamma > 0$ such that, for some constant $C > 0$, $\\mathbb{E}[\\tau] \\sim C(1/2 - p)^{-\\gamma}$ as $p \\nearrow 1/2$, for a large family of parking processes?",
+    "context_text": "After establishing finiteness of $\\mathbb{E}[\\tau]$ for $p < 1/2$, the natural next question is the rate of blow-up near the critical density $p = 1/2$. A subsequent work [7] showed the exponent is $3 + o(1)$ for the continuous-time version of the model.",
+    "attributed_to": "Damron, Gravner, Junge, Lyu, and Sivakooff",
+    "attributed_year": null,
+    "paper_contribution": "Provides a partial result (Theorem 1.4): $\\mathbb{E}[\\tau] = O\\!\\left((1/2-p)^{-6}\\right)$ as $p \\nearrow 1/2$ for the discrete-time parking problem on $\\mathbb{Z}$.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "PDF source — question stated in prose without a labelled theorem environment; Section 7 open-questions content not present in the extracted text.",
+    "arxiv_id": "1907.09437",
+    "paper_title": "Parking on the integers",
+    "paper_authors": [
+      "Michał Przykucki",
+      "Alexander Roberts",
+      "Alex Scott"
+    ],
+    "published": "2021-08-18",
+    "abs_url": "https://arxiv.org/abs/1907.09437",
+    "source": "pdf"
+  }
+]

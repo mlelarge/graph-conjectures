@@ -24,6 +24,18 @@ data/agent_failed.txt
 data/problems/
 data/reviews/*.raw.json
 
+# arXiv pipeline ephemeral state
+data/arxiv_buckets/
+data/arxiv_review_buckets/
+data/arxiv_failed.txt
+data/arxiv_review_failed.txt
+
+# Per-user Claude Code settings (settings.json is tracked separately)
+.claude/
+
+# Downloaded third-party software (not project state)
+external/
+
 # Crawler-emitted file that's redundant with problems.json
 data/urls.txt
 

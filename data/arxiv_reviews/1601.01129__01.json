@@ -1,0 +1,23 @@
+{
+  "review_id": "1601.01129__01",
+  "safe_id": "1601.01129",
+  "arxiv_id": "1601.01129",
+  "conjecture_title": "Open Question (normality of random graphs)",
+  "paper_title": "Minimal normal graph covers",
+  "published": "2016-01-06",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "No paper resolving the question of whether G(n,p) random graphs are normal with high probability has been found. A related result (arXiv:1511.07591, predating this paper) proves that random d-regular graphs are a.a.s. normal for every fixed d, but this does not cover the G(n,p) model. The question, explicitly flagged as unresolved by the authors in 2016, remains open as of 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "normal graphs random G(n,p) Gajser Mohar 1601.01129",
+    "normal graph clique cover stable set cover random graphs high probability",
+    "\"normal graph\" \"clique cover\" \"stable set cover\" random graph Erdos-Renyi 2017 2018 2019 2020",
+    "Gajser Mohar \"normal graph\" \"normal cover\" follow-up cite arxiv"
+  ],
+  "notes": "arXiv:1511.07591 ('Almost All Regular Graphs are Normal', submitted November 2015) proves that for every fixed d, random d-regular graphs are a.a.s. normal, but explicitly does not address the Erdos-Renyi G(n,p) model. No post-2016 paper resolving or making major progress on the G(n,p) question was found. Confidence is medium rather than high because the conjecture is now ~10 years old, making absence of evidence in web search mildly suspicious."
+}

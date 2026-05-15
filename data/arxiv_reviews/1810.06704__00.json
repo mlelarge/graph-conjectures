@@ -1,0 +1,45 @@
+{
+  "review_id": "1810.06704__00",
+  "safe_id": "1810.06704",
+  "arxiv_id": "1810.06704",
+  "conjecture_title": "Question 1.3",
+  "paper_title": "Colouring Graphs with Sparse Neighbourhoods: Bounds and Applications",
+  "published": "2018-10-15",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "medium",
+  "summary": "Question 1.3 asks for the optimal δ(ε,α) quantifying how sparse a critical graph with bounded clique number must be — Step 1 of the King–Reed strategy for Reed's conjecture. A 2020 master's thesis by Kroeker (supervised by Postle at UWaterloo) directly addresses sparsity of list-critical graphs with small clique number, deriving new density lemmas by embedding the graph in a complete multipartite graph with many parts of size three. Kelly and Postle (arXiv:1911.02672) separately prove an improved lower bound on the density of k-critical graphs with clique number less than k/2. Neither work fully determines the optimal δ(ε,α), so the question remains open.",
+  "since_posted": [
+    {
+      "title": "A local epsilon version of Reed's Conjecture",
+      "authors": "Tom Kelly, Luke Postle",
+      "year": 2019,
+      "venue": "arXiv preprint (also published in Journal of Combinatorial Theory, Series B per search results)",
+      "url": "https://arxiv.org/abs/1911.02672",
+      "arxiv_id": "1911.02672",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves a significantly improved lower bound on the average degree of k-critical graphs with clique number less than k/2, giving partial progress on the density side of the sparsity-density paradigm underlying Question 1.3."
+    },
+    {
+      "title": "Sparsity in Critical Graphs with Small Clique Number",
+      "authors": "Matthew Eliot Kroeker",
+      "year": 2020,
+      "venue": "Master's thesis, University of Waterloo",
+      "url": "https://dspacemainprd01.lib.uwaterloo.ca/server/api/core/bitstreams/1409dcf8-2d5b-4502-83ed-532dc56da2bd/content",
+      "arxiv_id": null,
+      "doi": null,
+      "kind": "partial",
+      "claim": "Directly addresses sparsity of list-critical graphs with small clique number (the precise setting of Question 1.3), deriving new density lemmas via complete multipartite embeddings and an unbalanced list-colouring argument, supervised by Luke Postle."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Bonamy Perrett Postle \"sparse neighbourhoods\" \"Reed's conjecture\" critical graph delta-sparse 1810.06704",
+    "arxiv 1810.06704 \"sparse\" \"critical\" \"clique number\" \"chromatic number\" follow-up citing",
+    "Postle \"sparse\" \"critical\" \"clique number\" \"delta\" \"epsilon\" Reed conjecture graph colouring 2019 2020 2021 2022 2023 2024"
+  ],
+  "notes": "The Kroeker thesis (2020) is the most directly relevant follow-up and is confirmed to address the sparsity of critical graphs with small clique number (Chapter 3: Sparsity and Antitriangles). A 2023 Combinatorica paper by Kelly–Postle titled 'On the Density of Critical Graphs with No Large Cliques' was found in search results but could not be verified via WebFetch (Springer paywall redirect). The exact value of δ(ε,α) asked in Question 1.3 appears not yet determined in the published literature."
+}

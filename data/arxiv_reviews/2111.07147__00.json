@@ -1,0 +1,22 @@
+{
+  "review_id": "2111.07147__00",
+  "safe_id": "2111.07147",
+  "arxiv_id": "2111.07147",
+  "conjecture_title": "Question 6",
+  "paper_title": "Weak diameter coloring of graphs on surfaces",
+  "published": "2021-11-13",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "No follow-up paper resolving Question 6 was found in the indexed literature. The conjecture asks whether the class G_r of plane graphs with no separating triangles, where each vertex is within distance r of a face of length at least four, has weak diameter chromatic number at most two. The authors note a positive answer in the special case of graphs with exactly one non-triangular face (bounded treewidth implies asymptotic dimension one). The source paper was published in the European Journal of Combinatorics (2023), and a related 2023 preprint (arXiv:2310.17795) extends weak-diameter choosability to excluded-minor classes but does not address this specific planar question.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "weak diameter chromatic number plane graphs separating triangles Dvořák Norin 2111.07147",
+    "\"weak diameter\" \"chromatic number\" \"plane graphs\" \"separating triangles\" coloring surfaces",
+    "Dvořák Norin \"weak diameter\" \"plane graphs\" \"no separating triangles\" \"distance\" face coloring 2022 2023 2024 2025"
+  ],
+  "notes": "No follow-up found specifically addressing Question 6. The most closely related post-2021 work is arXiv:2310.17795 (Crouch and Liu, 2023) on weak diameter choosability for excluded-minor graphs, which does not treat the G_r class. The conjecture is recent (2021) and the absence of resolution in a wide web search supports open status with high confidence."
+}

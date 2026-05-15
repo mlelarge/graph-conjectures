@@ -1,0 +1,48 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.2 (Leader, Letzter, Narayanan, and Walters)",
+    "statement_text": "Let $A$ be a finite set and $F$ be the free semigroup with alphabet $A$. If $S \\subset F$ is product-free and $d^*(S) = 1/2$, then $S \\subset O_\\Gamma$ for some nonempty subset $\\Gamma \\subset A$.",
+    "context_text": "Leader, Letzter, Narayanan, and Walters proved that a product-free subset of the free semigroup has upper Banach density at most $1/2$, achieved by odd-occurrence sets $O_\\Gamma$. They conjectured that these are the only extremal examples. The present paper confirms this conjecture as a special case of the more general Theorem 1.4.",
+    "attributed_to": "Leader, Letzter, Narayanan, and Walters",
+    "attributed_year": 2020,
+    "paper_contribution": "Confirms the conjecture in full; in fact proves the more general structural characterisation (Theorem 1.4) for all strongly $k$-product-free sets $S \\subset F$ with $d^*(S) = 1/k$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2305.05304",
+    "paper_title": "The structure and density of $k$-product-free sets in the free semigroup",
+    "paper_authors": [
+      "Freddie Illingworth",
+      "Lukas Michel",
+      "Alex Scott"
+    ],
+    "published": "2023-07-07",
+    "abs_url": "https://arxiv.org/abs/2305.05304",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Ortega–Rué–Serra Conjecture on $k$-product-free sets in the free group",
+    "statement_text": "Let $k \\geq 2$ be an integer, $A$ be a finite set, and $F$ be the free group with alphabet $A$. If $S \\subset F$ is $k$-product-free, then $d^*(S) \\leq 1/\\rho(k)$, where $\\rho(k) = \\min\\{\\ell \\in \\mathbb{Z}^+ : \\ell \\nmid k-1\\}$.",
+    "context_text": "Ortega, Rué, and Serra extended the density bound for strongly $k$-product-free sets to the free group and conjectured the analogous bound $1/\\rho(k)$ for $k$-product-free sets, mirroring the Calkin–Erdős conjecture for the non-negative integers (confirmed by Łuczak and Schoen). The present paper proves this conjecture as Theorem 1.8.",
+    "attributed_to": "Ortega, Rué, and Serra",
+    "attributed_year": 2023,
+    "paper_contribution": "Proves the conjecture in full as Theorem 1.8: any $k$-product-free subset of the free group with alphabet $A$ has upper Banach density at most $1/\\rho(k)$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "The conjecture is not given an explicit numbered label in the paper; it is referred to in prose as 'a conjecture corresponding to Calkin and Erdős's for $k$-product-free sets' made by Ortega, Rué, and Serra [ORS23].",
+    "arxiv_id": "2305.05304",
+    "paper_title": "The structure and density of $k$-product-free sets in the free semigroup",
+    "paper_authors": [
+      "Freddie Illingworth",
+      "Lukas Michel",
+      "Alex Scott"
+    ],
+    "published": "2023-07-07",
+    "abs_url": "https://arxiv.org/abs/2305.05304",
+    "source": "pdf"
+  }
+]

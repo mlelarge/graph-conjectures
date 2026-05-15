@@ -1,0 +1,46 @@
+[
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture (product structure with bounded tree-depth and tight clique size)",
+    "statement_text": "For any hereditary graph class $\\mathcal{G}$ that admits $O(n^{1-\\epsilon})$ separators, every $n$-vertex graph in $\\mathcal{G}$ is a subgraph of the strong product of a graph $H$ with bounded tree-depth and a complete graph of size $O(n^{1-\\epsilon})$.",
+    "context_text": "The abstract states that the paper investigates this conjecture. The proven results in the paper achieve the conclusion either with an extra $n^{\\delta}$ factor in the clique size (for $H$ with constant tree-depth, any fixed $\\delta\\in(0,\\epsilon)$) or with tree-depth $O(\\log\\log n)$ for $H$ when $\\delta=0$; moreover, both limitations are shown to be best possible via isoperimetric inequalities for grid graphs. The conjecture in its strongest form — constant tree-depth of $H$ with clique size exactly $O(n^{1-\\epsilon})$ — is investigated but not fully resolved.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "low",
+    "notes": "The abstract is cut off mid-sentence before the conjecture is completed ('every $n$...'). The statement above is partially reconstructed from the surrounding context in the abstract. It may not match the exact wording in the body of the paper.",
+    "arxiv_id": "2208.10074",
+    "paper_title": "Product structure of graph classes with strongly sublinear separators",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "David R. Wood"
+    ],
+    "published": "2023-09-27",
+    "abs_url": "https://arxiv.org/abs/2208.10074",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Open Problem 6",
+    "statement_text": "[Statement not available: only the theorem-environment label was provided in the input, not the body text of the environment.]",
+    "context_text": "Open Problem 6 is the only explicitly labeled open-problem environment in the paper (LaTeX environment type [open]). It appears between Theorem 5 and Theorem 7, in the context of product structure theory for graph classes with strongly sublinear separators.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "low",
+    "notes": "Exact statement text was not included in the provided input; only the environment label '[open] Open Problem 6' appeared in the theorem-environment list. Confidence is low because the statement could not be verified.",
+    "arxiv_id": "2208.10074",
+    "paper_title": "Product structure of graph classes with strongly sublinear separators",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "David R. Wood"
+    ],
+    "published": "2023-09-27",
+    "abs_url": "https://arxiv.org/abs/2208.10074",
+    "source": "html"
+  }
+]

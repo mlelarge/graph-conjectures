@@ -1,0 +1,31 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Harary–Hill Conjecture",
+    "statement_text": "The crossing number of the complete graph $K_n$ is $$H(n) = \\frac{1}{4}\\left\\lfloor\\frac{n}{2}\\right\\rfloor\\left\\lfloor\\frac{n-1}{2}\\right\\rfloor\\left\\lfloor\\frac{n-2}{2}\\right\\rfloor\\left\\lfloor\\frac{n-3}{2}\\right\\rfloor.$$",
+    "context_text": "The Harary–Hill conjecture, still open after more than 50 years, asserts that $\\mathrm{cr}(K_n) = H(n)$. It is attributed to Anthony Hill and first published by Harary and Hill; it has been verified only for $n \\leq 12$. The paper's central goal is to extend the family of drawings for which the conjecture is known to hold.",
+    "attributed_to": "Harary and Hill",
+    "attributed_year": 1963,
+    "paper_contribution": "Proves that every $\\left(\\lfloor n/2\\rfloor - 2\\right)$-bishellable drawing $D$ of $K_n$ satisfies $\\mathrm{cr}(D) \\geq H(n)$, strictly enlarging the class of drawings covered beyond the previously known shellable drawings (Theorem 4), and exhibits an infinite family of drawings that are bishellable but not shellable (Theorem 5).",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Floor-bracket symbols appear as (cid:22)/(cid:23) artifacts in the PDF extraction; the formula has been reconstructed from context and is unambiguous.",
+    "arxiv_id": "1510.00549",
+    "paper_title": "Bishellable drawings of $K_n$",
+    "paper_authors": [
+      "Bernardo M. Ábrego",
+      "Oswin Aichholzer",
+      "Silvia Fernández-Merchant",
+      "Dan McQuillan",
+      "Bojan Mohar",
+      "Petra Mutzel",
+      "Pedro Ramos",
+      "R. Bruce Richter",
+      "Birgit Vogtenhuber"
+    ],
+    "published": "2018-07-12",
+    "abs_url": "https://arxiv.org/abs/1510.00549",
+    "source": "pdf"
+  }
+]

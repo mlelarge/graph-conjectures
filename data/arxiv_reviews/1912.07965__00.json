@@ -1,0 +1,34 @@
+{
+  "review_id": "1912.07965__00",
+  "safe_id": "1912.07965",
+  "arxiv_id": "1912.07965",
+  "conjecture_title": "Open Problem (edge-EP property characterization for planar graph expansions)",
+  "paper_title": "Erdős-Pósa from ball packing",
+  "published": "2020-06-08",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The characterization of which planar graphs J yield the edge-Erdős-Pósa property for J-expansions remains open. Partial progress has been made for the specific family of ladders: Steck and Ulmer (2024) showed that ladders with 3 rungs (and the house graph) have the edge-EP property while ladders with 14 or more rungs do not, narrowing the gap but leaving the full characterization of intermediate cases open. No complete characterization has been established, and the condensed wall has been proposed as a key structural candidate for such a characterization.",
+  "since_posted": [
+    {
+      "title": "On the Edge-Erdős–Pósa Property of Ladders",
+      "authors": "Raphael Steck, Arthur Ulmer",
+      "year": 2024,
+      "venue": "Graphs and Combinatorics",
+      "url": "https://arxiv.org/html/2003.03236",
+      "arxiv_id": "2003.03236",
+      "doi": "10.1007/s00373-024-02765-w",
+      "kind": "partial",
+      "claim": "Shows that ladders with 3 rungs and the house graph have the edge-EP property while ladders with 14 or more rungs do not, contributing partial progress toward the open characterization problem for planar J."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "edge-Erdős-Pósa property planar graph J-expansions characterization",
+    "edge-EP property topological minors planar graphs 1912.07965",
+    "edge-Erdős-Pósa property planar graphs characterization 2022 2023 2024 2025"
+  ],
+  "notes": "The full characterization of planar graphs J for which J-expansions have the edge-EP property remains open. The condensed wall has been proposed as a key structural tool, and a conjecture by Bruhn, Heinlein, and Joos suggests that if a planar graph H is a minor of the condensed wall of some size r, then H has the edge-EP property. The ladder case (arXiv:2003.03236) is the most directly relevant follow-up found, making partial progress on a specific subfamily."
+}

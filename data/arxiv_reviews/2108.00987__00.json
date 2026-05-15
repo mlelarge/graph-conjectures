@@ -1,0 +1,28 @@
+{
+  "review_id": "2108.00987__00",
+  "safe_id": "2108.00987",
+  "arxiv_id": "2108.00987",
+  "conjecture_title": "Conjecture 4",
+  "paper_title": "Threshold Ramsey multiplicity for odd cycles",
+  "published": "2021-09-20",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 4 from arXiv:2108.00987 asserts that m(C_k) = (k-1)!/2 for all sufficiently large odd k. The source paper establishes a lower bound m(C_k) >= (ck)^k (Theorem 3), while the upper bound (k-1)!/2 is achieved by the extremal coloring chi(k, k-1) of K_{2k-1}; the conjecture claims these match asymptotically. No follow-up paper proving or disproving the conjecture was found in a targeted web search across 2022–2026. The conjecture remains open.",
+  "since_posted": [],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2105.03956",
+      "verified": false,
+      "note": "WebFetch confirms this paper (Pure pairs. V. Excluding some long subdivision, Scott–Seymour–Spirkl) is entirely about pure pairs in perfect graphs and long-subdivision exclusions. It has no connection to Ramsey multiplicity for odd cycles, does not cite arXiv:2108.00987, and does not address Conjecture 4. The internal-reference match (fuzz=70) is a false positive."
+    }
+  ],
+  "search_queries": [
+    "Ramsey multiplicity odd cycles conjecture Conlon Fox Sudakov Wei 2108.00987",
+    "threshold Ramsey multiplicity m(C_k) (k-1)!/2 odd cycle graph",
+    "Ramsey multiplicity odd cycles resolved proved 2022 2023 2024 2025"
+  ],
+  "notes": "No follow-up paper resolving the conjecture was found. The source paper was published in Revista de la Union Matematica Argentina (2022). The companion paper arXiv:2108.00991 addresses paths and even cycles but not this conjecture. The single internal reference (arXiv:2105.03956) is a fuzzy-match false positive unrelated to Ramsey multiplicity."
+}

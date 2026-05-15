@@ -1,0 +1,25 @@
+[
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Informal Conjecture on exact asymptotics of maxcode_L for even L",
+    "statement_text": "We believe that in fact $\\mathrm{maxcode}_L(\\varepsilon) = c_L \\varepsilon^{-1} + O(1)$ for even $L$.",
+    "context_text": "Theorem 2 establishes the two-sided bound $c_L \\varepsilon^{-1} + O(1) \\leq \\mathrm{maxcode}_L(\\varepsilon) = O(\\varepsilon^{-1})$ for every even $L \\geq 2$, where $c_L = 2^{-\\lfloor L/2 \\rfloor}\\binom{L}{\\lfloor L/2 \\rfloor}$ comes from Theorem 1. The authors conjecture that the lower bound is tight up to an additive constant, i.e., that the exact leading coefficient is $c_L$.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated as 'We believe that in fact …' in prose immediately after Theorem 2; no labelled theorem environment. PDF source — math notation may be garbled.",
+    "arxiv_id": "1710.10663",
+    "paper_title": "List-decodable zero-rate codes",
+    "paper_authors": [
+      "Noga Alon",
+      "Boris Bukh",
+      "Yury Polyanskiy"
+    ],
+    "published": "2018-05-14",
+    "abs_url": "https://arxiv.org/abs/1710.10663",
+    "source": "pdf"
+  }
+]

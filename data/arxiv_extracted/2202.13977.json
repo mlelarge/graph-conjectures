@@ -1,0 +1,74 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.1 (Erdős-Hajnal conjecture for tournaments)",
+    "statement_text": "For every tournament $H$ there exists $\\tau > 0$ such that every $H$-free tournament $G$ has a transitive subtournament with at least $|G|^{\\tau}$ vertices.",
+    "context_text": "The Erdős-Hajnal conjecture was raised as a question by Erdős and Hajnal and asserts that for every graph $H$ there exists $\\tau > 0$ such that every graph $G$ not containing an induced subgraph isomorphic to $H$ has a clique or stable set of cardinality at least $|G|^{\\tau}$. Alon, Pach and Solymosi showed this is equivalent to the stated tournament formulation. A tournament satisfying 1.1 is said to have the EH-property (or weak EH-property).",
+    "attributed_to": "Erdős and Hajnal",
+    "attributed_year": 1989,
+    "paper_contribution": "Proves the strong EH-property (which implies the EH-property) for every tournament with at most six vertices, except possibly $P_7^-$, $H_6$, and $\\overline{H_6}$, extending the result of Berger, Choromanski and Chudnovsky who showed every tournament on at most six vertices has the EH-property except possibly $P_7^-$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "The exponent in the PDF reads as |G|τ (PDF garble); context makes clear this is |G|^{\\tau}.",
+    "arxiv_id": "2202.13977",
+    "paper_title": "Pure pairs. X. Tournaments and the strong Erdos-Hajnal property",
+    "paper_authors": [
+      "Maria Chudnovsky",
+      "Alex Scott",
+      "Paul Seymour",
+      "Sophie Spirkl"
+    ],
+    "published": "2023-08-08",
+    "abs_url": "https://arxiv.org/abs/2202.13977",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.5",
+    "statement_text": "A tournament has the strong EH-property if and only if it admits a numbering for which the backedge graph is a forest.",
+    "context_text": "The paper proves (Theorem 1.4) that the forward direction holds: every tournament with the strong EH-property admits a numbering for which the backedge graph is a forest. The authors initially thought the converse unlikely but failed to find a counterexample. This would be a tournament analogue of Theorem 1.3, which characterises graphs with the strong EH-property as those for which one of $H$ or $\\bar{H}$ is a forest.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2202.13977",
+    "paper_title": "Pure pairs. X. Tournaments and the strong Erdos-Hajnal property",
+    "paper_authors": [
+      "Maria Chudnovsky",
+      "Alex Scott",
+      "Paul Seymour",
+      "Sophie Spirkl"
+    ],
+    "published": "2023-08-08",
+    "abs_url": "https://arxiv.org/abs/2202.13977",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Informal question: can the D5-freeness hypothesis in Theorem 1.6 be dropped?",
+    "statement_text": "Perhaps the second sentence in 1.6 (the condition that $H$ is $D_5$-free) can be omitted, but that remains open.",
+    "context_text": "Theorem 1.6 states that if a tournament $H$ admits a numbering $(v_1,\\ldots,v_n)$ whose backedge graph $B$ has at most three edges, and $H$ is $D_5$-free, then $H$ has the strong EH-property. The $D_5$-freeness condition excludes exactly the case where the three backedges form the unique three-edge backedge graph of $D_5$; the authors leave open whether this exclusion is truly necessary.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "",
+    "arxiv_id": "2202.13977",
+    "paper_title": "Pure pairs. X. Tournaments and the strong Erdos-Hajnal property",
+    "paper_authors": [
+      "Maria Chudnovsky",
+      "Alex Scott",
+      "Paul Seymour",
+      "Sophie Spirkl"
+    ],
+    "published": "2023-08-08",
+    "abs_url": "https://arxiv.org/abs/2202.13977",
+    "source": "pdf"
+  }
+]

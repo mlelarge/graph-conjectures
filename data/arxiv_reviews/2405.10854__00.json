@@ -1,0 +1,23 @@
+{
+  "review_id": "2405.10854__00",
+  "safe_id": "2405.10854",
+  "arxiv_id": "2405.10854",
+  "conjecture_title": "Conjecture 10",
+  "paper_title": "Strong log-convexity of genus sequences",
+  "published": "2025-12-27",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 10 from arXiv:2405.10854 asserts that the genus distribution of every graph is unimodal. It was proposed by Mohar as a natural weakening of the LCGD Conjecture (log-concavity of genus distributions), which the same paper disproves; notably, all counterexamples to log-concavity constructed by Mohar remain unimodal. The paper was accepted in JCTB (v2, December 2025), but no follow-up work proving or disproving the unimodal conjecture was found in the indexed literature.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "unimodal genus distribution graph Mohar 2405.10854",
+    "genus distribution unimodal graph conjecture LCGD 2025 2026",
+    "\"unimodal genus distribution\" graph 2025 2026 arxiv",
+    "Mohar \"genus distribution\" unimodal conjecture cite 2405.10854 follow-up"
+  ],
+  "notes": "No follow-up found after 5 web calls. The conjecture appears in the December 2025 revision (v2) of a paper first posted May 2024; it is accepted in JCTB. The unimodality claim is presented as still plausible given that Mohar's own counterexamples to the stronger LCGD conjecture are all unimodal. No internal corpus references were supplied for this conjecture."
+}

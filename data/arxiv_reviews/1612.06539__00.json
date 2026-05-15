@@ -1,0 +1,34 @@
+{
+  "review_id": "1612.06539__00",
+  "safe_id": "1612.06539",
+  "arxiv_id": "1612.06539",
+  "conjecture_title": "Informal Conjecture on Tight Constant for Clique Chromatic Number",
+  "paper_title": "Clique coloring of dense random graphs",
+  "published": "2017-11-05",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "solved",
+  "confidence": "high",
+  "summary": "Demidovich and Zhukovskii (arXiv 2020, JGT 2023) fully resolve the conjecture, proving that $\\chi_c(G(n,1/2)) = (1/2)\\log_2 n - \\Theta(\\ln \\ln n)$ whp. This confirms the conjectured leading constant of $1/2$ and in fact establishes a tight concentration result that sharply pins down the second-order term as well.",
+  "since_posted": [
+    {
+      "title": "Tight asymptotics of clique-chromatic numbers of dense random graphs",
+      "authors": "Yury Demidovich, Maksim Zhukovskii",
+      "year": 2023,
+      "venue": "Journal of Graph Theory",
+      "url": "https://arxiv.org/abs/2012.03210",
+      "arxiv_id": "2012.03210",
+      "doi": "10.1002/jgt.22927",
+      "kind": "proof",
+      "claim": "Proves $\\chi_c(G(n,1/2)) = (1/2)\\log_2 n - \\Theta(\\ln \\ln n)$ whp (arXiv December 2020), confirming the conjectured leading constant 1/2 and obtaining a tight concentration result."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "clique chromatic number random graph G(n,1/2) tight constant log n",
+    "clique coloring random graph Alon Krivelevich 1612.06539 follow-up",
+    "arxiv 2012.03210 clique chromatic tight asymptotics dense random graphs"
+  ],
+  "notes": "The conjecture is fully resolved by Demidovich and Zhukovskii. Their result is strictly sharper than the conjectured (1/2+o(1))log n form, as they pin down the second-order term Theta(ln ln n) as well. The arXiv preprint appeared December 2020; the journal version in JGT appeared 2023."
+}

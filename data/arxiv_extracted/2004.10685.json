@@ -1,0 +1,25 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Balogh–Clemen–Lavrov–Lidický–Pfender Conjecture",
+    "statement_text": "For every $r \\geq 2$ there is a $\\delta_r > 0$ such that the following holds: If $G$ is a $K_{r+1}$-free graph on $n$ vertices with $e(G) \\geq t_r(n) - \\delta_r n^2$ edges, then there is a pentagonal Turán graph $G^*$ on $n$ vertices with $e(G^*) \\geq e(G)$ and $D_r(G^*) \\geq D_r(G)$.",
+    "context_text": "Let $f_r(n,t)$ be the smallest number such that any $K_{r+1}$-free graph $G$ with at least $t_r(n)-t$ edges can be made $r$-partite by deleting at most $f_r(n,t)$ edges. Balogh, Clemen, Lavrov, Lidický and Pfender determined $f_r(n,t)$ asymptotically and conjectured that its exact value, for $t$ sufficiently small relative to $n^2$, is witnessed by a pentagonal Turán graph — a blowup of $C_5$ embedded in a complete $(r-1)$-partite host graph with balanced part sizes. The conjecture subsumes and generalises the triangle-free case resolved by Erdős, Győri and Simonovits.",
+    "attributed_to": "Balogh, Clemen, Lavrov, Lidický, and Pfender",
+    "attributed_year": null,
+    "paper_contribution": "Proves the conjecture in full as Theorem 1.2: for every $r \\geq 2$ there exists $\\delta_r > 0$ such that among all $K_{r+1}$-free $n$-vertex graphs with at least $t_r(n) - \\delta_r n^2$ edges, a pentagonal Turán graph simultaneously achieves the maximum edge count and the maximum $r$-partite distance $D_r$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "The conjecture is stated in prose in the introduction ('Balogh, Clemen, Lavrov, Lidický and Pfender [5] conjectured that $f_r(n,t)$ is witnessed by a pentagonal Turán graph if $t$ is small enough'); the precise formal statement is reconstructed from the paper's Theorem 1.2, which is explicitly identified as the proved version of the conjecture. Section 5 ('open problems') is not present in the PDF extraction, so any additional items stated there could not be captured.",
+    "arxiv_id": "2004.10685",
+    "paper_title": "Exact stability for Turán's Theorem",
+    "paper_authors": [
+      "Dániel Korándi",
+      "Alexander Roberts",
+      "Alex Scott"
+    ],
+    "published": "2021-12-26",
+    "abs_url": "https://arxiv.org/abs/2004.10685",
+    "source": "pdf"
+  }
+]

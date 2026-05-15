@@ -1,0 +1,74 @@
+[
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Size of symmetric intersecting families in $[k]^n$",
+    "statement_text": "How large can a symmetric, intersecting subfamily of $[k]^n$ really be (for fixed $k \\geq 3$)?",
+    "context_text": "Theorem 1.1 establishes that any symmetric intersecting $A \\subset [k]^n$ has size $o(k^n)$, but the precise asymptotics remain open. The best constructions known to the authors are set-intersecting families, e.g., those based on lines of a projective plane $PG(2,q)$, yielding size roughly $k^{n-\\sqrt{n}}$.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "PDF source — math notation may be garbled. No labeled environment; described by the authors as 'the most obvious question raised by the present work' in Section 4.",
+    "arxiv_id": "1909.11578",
+    "paper_title": "On symmetric intersecting families of vectors",
+    "paper_authors": [
+      "Sean Eberhard",
+      "Jeff Kahn",
+      "Bhargav Narayanan",
+      "Sophie Spirkl"
+    ],
+    "published": "2020-07-31",
+    "abs_url": "https://arxiv.org/abs/1909.11578",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Largest symmetric intersecting families are set-intersecting",
+    "statement_text": "It seems possible (but maybe impossible to prove) that the largest symmetric intersecting families in $[k]^n$ are set-intersecting.",
+    "context_text": "A family $A \\subset [k]^n$ is set-intersecting if there exists a symmetric intersecting family $\\mathcal{B}$ of subsets of $[n]$ and $\\ell \\in [k]$ such that $x \\in A$ if and only if there is some $B \\in \\mathcal{B}$ with $x_i = \\ell$ for all $i \\in B$. The authors note that all their best constructions have this form, motivating the conjecture.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "PDF source — math notation may be garbled. Stated with the explicit hedge 'seems possible (but maybe impossible to prove)'; no labeled environment.",
+    "arxiv_id": "1909.11578",
+    "paper_title": "On symmetric intersecting families of vectors",
+    "paper_authors": [
+      "Sean Eberhard",
+      "Jeff Kahn",
+      "Bhargav Narayanan",
+      "Sophie Spirkl"
+    ],
+    "published": "2020-07-31",
+    "abs_url": "https://arxiv.org/abs/1909.11578",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Polynomial improvement on symmetric intersecting family size bound",
+    "statement_text": "Show that there exist constants $c, \\delta > 0$ (possibly depending on $k$) such that for any symmetric intersecting $A \\subset [k]^n$, we have $\\log_k |A| \\leq n - cn^{\\delta}$.",
+    "context_text": "This is posed in Section 4 as a concrete and more modest goal, falling short of identifying the exact extremal size: even a polynomial gain over the $o(k^n)$ bound of Theorem 1.1, expressed as $\\log_k |A| \\leq n - cn^\\delta$, would be a significant advance.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "PDF source — math notation may be garbled. No labeled environment; introduced with 'it would be very interesting to at least show' in Section 4.",
+    "arxiv_id": "1909.11578",
+    "paper_title": "On symmetric intersecting families of vectors",
+    "paper_authors": [
+      "Sean Eberhard",
+      "Jeff Kahn",
+      "Bhargav Narayanan",
+      "Sophie Spirkl"
+    ],
+    "published": "2020-07-31",
+    "abs_url": "https://arxiv.org/abs/1909.11578",
+    "source": "pdf"
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "review_id": "2510.11311__03",
+  "safe_id": "2510.11311",
+  "arxiv_id": "2510.11311",
+  "conjecture_title": "Eulerian-avoidability characterization",
+  "paper_title": "Extending Thomassen's conjecture to directed graphs",
+  "published": "2025-10-13",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The paper arXiv:2510.11311 introduces the notion of Eulerian-avoidable digraphs as a variant of avoidable digraphs where the host is restricted to Eulerian digraphs (equal out- and in-degree at every vertex), and poses as an open problem which digraphs are Eulerian-avoidable. The main results of the paper concern avoidable digraphs in regular and general settings but do not address the Eulerian-host restriction. No follow-up work characterizing Eulerian-avoidable digraphs was found in multiple web searches conducted in May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Eulerian-avoidable digraph characterization Thomassen conjecture directed graphs 2025",
+    "arXiv 2510.11311 Christoph Janzer Petrova Steiner Thomassen directed graphs",
+    "\"Eulerian-avoidable\" digraph characterization 2025 2026",
+    "avoidable digraph F-free subdigraph minimum out-degree Eulerian host 2026"
+  ],
+  "notes": "The term 'Eulerian-avoidable' is introduced in arXiv:2510.11311 itself and does not appear in any prior or subsequent indexed literature found. The paper proves a full characterization of avoidable digraphs among regular host digraphs, and separately raises Eulerian-avoidability as a potentially richer open variant complementing the regular-host result. No follow-up was found; open with high confidence given the recency of the paper (7 months as of review date)."
+}

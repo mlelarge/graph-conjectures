@@ -1,0 +1,22 @@
+{
+  "review_id": "2206.12335__01",
+  "safe_id": "2206.12335",
+  "arxiv_id": "2206.12335",
+  "conjecture_title": "Problem 6.4",
+  "paper_title": "Improved bounds for 1-independent percolation on $\\mathbb{Z}^n$",
+  "published": "2025-06-23",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Problem 6.4 asks for the exact value of $p_{\\mathrm{giant}}$, the critical probability for a 1-independent percolation model on the hypercube $Q_n$ to contain a giant component with high probability. The source paper establishes $p_{\\mathrm{giant}} \\leq 0.5847$ while the best known lower bound remains $1/2$; Falgas-Ravry and Pfenninger (arXiv:2106.08674, RSA 2023) conjectured $p_{\\mathrm{giant}} = 1/2$. No follow-up paper resolving the exact value was found in the literature as of May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "1-independent percolation giant component hypercube p_giant Falgas-Ravry Pfenninger conjecture",
+    "Balister Johnston Savery Scott 1-independent percolation hypercube 2206.12335 giant component",
+    "\"p_giant\" OR \"p_{giant}\" 1-independent percolation hypercube giant component 2024 2025 2026"
+  ],
+  "notes": "No follow-up paper resolving Problem 6.4 was found. The conjecture p_giant = 1/2 is due to Falgas-Ravry and Pfenninger (arXiv:2106.08674; published in Random Structures & Algorithms 2023), predating the source paper. The source paper was published in the Electronic Journal of Probability (2025, doi:10.1214/25-EJP1341). Standard (bond/site) percolation results on the hypercube found in recent literature are unrelated to the 1-independent setting of this problem."
+}

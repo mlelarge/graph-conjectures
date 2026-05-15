@@ -1,0 +1,22 @@
+{
+  "review_id": "2004.07214__01",
+  "safe_id": "2004.07214",
+  "arxiv_id": "2004.07214",
+  "conjecture_title": "Conjecture 7.3",
+  "paper_title": "Enumerating minimal dominating sets in the (in)comparability graphs of bounded dimension posets",
+  "published": "2025-11-26",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "No paper resolving Conjecture 7.3 was found. The closest related follow-up is a 2025 WADS paper (arXiv:2502.14611, Castelo–Defrain–Gomes) giving polynomial-delay algorithms for minimal dominating sets in chordal bipartite graphs, which cites 2004.07214 but does not address the co-bipartite H-free incomparability setting of Conjecture 7.3. The broader problem of Dom-Enum in H-free incomparability graphs for co-bipartite H remains open, with the conjecture having been present in the arXiv preprint since April 2020.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "minimal dominating sets enumeration incomparability graphs co-bipartite output-polynomial 2004.07214",
+    "Dom-Enum H-free incomparability graphs co-bipartite Bonamy Defrain Micek Nourine",
+    "minimal dominating sets enumeration H-free incomparability graph co-bipartite 2025 2026 arxiv"
+  ],
+  "notes": "Confidence is medium rather than high because the arXiv preprint has been available since April 2020 (over five years), making the absence of follow-up more notable. A related WADS 2025 paper (arXiv:2502.14611, Castelo–Defrain–Gomes) proves polynomial delay for chordal bipartite graphs and cites the source paper, but does not address Conjecture 7.3. The conjecture is the broadest of three open problems in the concluding section, subsuming Conjecture 7.2, and the paper notes that the incomparability condition may not even be necessary. Source paper published in Discrete Mathematics (ScienceDirect, November 2025, doi link found at sciencedirect.com/science/article/abs/pii/S0012365X25005126)."
+}

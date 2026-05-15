@@ -1,0 +1,74 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 2 (Jaeger, Linial, Payan, and Tarsi)",
+    "statement_text": "For every prime number $p$, there is a constant $c(p)$ such that for any $t > c(p)$ linear bases $B_1, \\ldots, B_t$ of $\\mathbb{Z}_p^n$, the union $\\bigcup_{s=1}^{t} B_s$ forms an additive basis of $\\mathbb{Z}_p^n$.",
+    "context_text": "Jaeger, Linial, Payan and Tarsi posed this in 1992 as a generalisation of the Cauchy-Davenport theorem to higher dimensions, and noted its connection to nowhere-zero flows. Alon, Linial and Meshulam had previously proved a weaker version whose bound on the number of bases depends on $n$.",
+    "attributed_to": "Jaeger, Linial, Payan, and Tarsi",
+    "attributed_year": 1992,
+    "paper_contribution": "Proves the conjecture in the special case where the support of every vector in each basis has size at most two (Theorem 3), with an explicit bound $t > 8\\ell(3p-4)+p-2$ depending on the number $\\ell$ of distinct shadows of size 2.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1701.03366",
+    "paper_title": "Additive bases and flows in graphs",
+    "paper_authors": [
+      "Louis Esperet",
+      "Rémi de Joannis de Verclos",
+      "Tien-Nam Le",
+      "Stéphan Thomassé"
+    ],
+    "published": "2018-02-07",
+    "abs_url": "https://arxiv.org/abs/1701.03366",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Antisymmetric variant of Jaeger's weak 3-flow conjecture",
+    "statement_text": "There is a constant $k$ such that every directed $k$-edge-connected graph has a $\\mathbb{Z}_5$-antisymmetric flow.",
+    "context_text": "The authors present this as the natural antisymmetric analogue of Jaeger's weak 3-flow conjecture (which was solved by Thomassen and later improved to 6-edge-connectivity by Lovász et al.). The note $\\mathbb{Z}_5$ is best possible since $\\mathbb{Z}_2$, $\\mathbb{Z}_3$, and $\\mathbb{Z}_4$ cannot support antisymmetric flows in general.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated in prose as 'The natural antisymmetric variant … would be the following' without a labelled environment.",
+    "arxiv_id": "1701.03366",
+    "paper_title": "Additive bases and flows in graphs",
+    "paper_authors": [
+      "Louis Esperet",
+      "Rémi de Joannis de Verclos",
+      "Tien-Nam Le",
+      "Stéphan Thomassé"
+    ],
+    "published": "2018-02-07",
+    "abs_url": "https://arxiv.org/abs/1701.03366",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 14",
+    "statement_text": "Every directed $8$-edge-connected graph has a $\\mathbb{Z}_5$-asf.",
+    "context_text": "Corollary 13(iv) shows that directed 12-edge-connected graphs have a $\\mathbb{Z}_5$-antisymmetric flow. On the other hand, a result of Nešetřil, Raspaud and Sopena implies (by duality) that there exist directed 7-edge-connected graphs with no $\\mathbb{Z}_5$-asf, so 8-edge-connectivity is the first open case.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1701.03366",
+    "paper_title": "Additive bases and flows in graphs",
+    "paper_authors": [
+      "Louis Esperet",
+      "Rémi de Joannis de Verclos",
+      "Tien-Nam Le",
+      "Stéphan Thomassé"
+    ],
+    "published": "2018-02-07",
+    "abs_url": "https://arxiv.org/abs/1701.03366",
+    "source": "pdf"
+  }
+]

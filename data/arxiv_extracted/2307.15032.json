@@ -1,0 +1,25 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Erdős-Hajnal Conjecture (Conjecture 1.1 / 1.2)",
+    "statement_text": "For every graph $H$ there exists $c>0$ such that every $H$-free graph $G$ has a stable set or clique of size at least $|G|^{c}$.",
+    "context_text": "Erdős and Hajnal posed this conjecture in 1977; it remains open for most graphs $H$. The paper focuses on the case when $H$ is a path: the conjecture had been proved only for paths on at most five vertices, and the present paper establishes a near-optimal version for all paths.",
+    "attributed_to": "Erdős and Hajnal",
+    "attributed_year": 1977,
+    "paper_contribution": "Proves that for every path $P$, every $P$-free graph on $n$ vertices contains a clique or stable set of size at least $2^{(\\log n)^{1-o(1)}}$, establishing the 'near Erdős-Hajnal' property for all paths and strictly improving the previously known $2^{c\\sqrt{\\log n \\log\\log n}}$ bound in this case.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "The conjecture appears twice: as the named 'Erdős-Hajnal Conjecture' in environment 1.1 and restated in terms of $f_H(n)$ in environment 1.2. Both refer to the same conjecture; attribution is to [6] (1977) and [7] (1989).",
+    "arxiv_id": "2307.15032",
+    "paper_title": "Induced subgraph density. V. All paths approach Erdos-Hajnal",
+    "paper_authors": [
+      "Tung Nguyen",
+      "Alex Scott",
+      "Paul Seymour"
+    ],
+    "published": "2024-10-21",
+    "abs_url": "https://arxiv.org/abs/2307.15032",
+    "source": "html"
+  }
+]

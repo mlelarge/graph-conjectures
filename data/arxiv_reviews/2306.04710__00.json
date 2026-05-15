@@ -1,0 +1,34 @@
+{
+  "review_id": "2306.04710__00",
+  "safe_id": "2306.04710",
+  "arxiv_id": "2306.04710",
+  "conjecture_title": "Question 1.1",
+  "paper_title": "On heroes in digraphs with forbidden induced forests",
+  "published": "2023-06-07",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Question 1.1 — the overarching problem of classifying all finite families F of digraphs that are vec{chi}-finite — remains open. The source paper (published in European Journal of Combinatorics, 2025) contributes positive results for several specific forbidden families involving forests. Subsequent work (arXiv:2602.08736, 2026) shows that the family {claw, directed-C_3} is NOT vec{chi}-finite, adding to the map of negative cases, but no paper provides a general characterization.",
+  "since_posted": [
+    {
+      "title": "(Claw, C_3)-free digraphs with unbounded dichromatic number",
+      "authors": "Anonymous (arXiv 2602.08736)",
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2602.08736",
+      "arxiv_id": "2602.08736",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Constructs claw-free digraphs with no directed 3-cycle but unbounded dichromatic number, disproving a conjecture of Aboulker–Charbit–Naserasr and improving a negative result of Carbonero–Koerts–Moore–Spirkl, thereby showing {claw, directed-C_3} is not vec{chi}-finite."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "chi-finite digraphs dichromatic number heroes forbidden induced arXiv 2306.04710",
+    "dichromatic number chi-finite family F-free digraphs heroes Carbonero Koerts Moore Spirkl 2023 2024 2025",
+    "vec chi-finite families digraphs dichromatic number 2024 2025 heroes Carbonero Spirkl arXiv"
+  ],
+  "notes": "Question 1.1 is explicitly framed as the overarching open problem of the paper and is not a conjecture with a specific claimed answer, making it inherently long-term open. The source paper was published in European Journal of Combinatorics 125 (2025), article 104104 (confirmed via citation in arXiv:2602.08736). No paper found that resolves or substantially narrows the full classification."
+}

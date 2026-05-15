@@ -1,0 +1,24 @@
+{
+  "review_id": "1801.06824__00",
+  "safe_id": "1801.06824",
+  "arxiv_id": "1801.06824",
+  "conjecture_title": "Open Problem: Characterization of parameters satisfying (CC)",
+  "paper_title": "On generalized choice and coloring numbers",
+  "published": "2019-02-26",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The open problem from arXiv:1801.06824 asks to characterize the hereditary, connected graph parameters f satisfying property (CC): for all p, s there exist p', s' such that col_{f,p'}(G) ≤ s' whenever χ^ℓ_{f,p}(G) ≤ s. The authors showed the fan parameter does not satisfy (CC) and gave two sufficient conditions covering all previously studied parameters, but left the full characterization open. A broad web search (5 calls) found no subsequent paper resolving this characterization; the only citing work identified (Cho–Choi–Jiang–Kim–Park–Yan–Zhu 2020 on generalized list colouring) could not be verified as addressing property (CC) directly. The problem appears to remain open as of May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Dvořák Pekárek Sereni generalized choice coloring numbers property CC characterization 1801.06824",
+    "generalized coloring numbers col_{f,p} choice number hereditary graph parameter characterization arxiv",
+    "cite:1801.06824 generalized choice coloring numbers Dvorak Pekárek property CC follow-up",
+    "generalized list colouring Cho Choi Jiang Kim Park Yan Zhu 2020 choice number coloring number arxiv",
+    "Semantic Scholar citations arXiv:1801.06824"
+  ],
+  "notes": "No follow-up paper addressing the characterization of parameters satisfying (CC) was found in the indexed literature. The Semantic Scholar citation API returned only two citing papers (a 2020 generalized list colouring paper whose relevance to property (CC) could not be verified, and an earlier unrelated paper by Dvořák–Norin). The conjecture is recent (2019) and niche enough that absence of evidence is consistent with it being genuinely open."
+}

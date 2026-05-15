@@ -1,0 +1,22 @@
+{
+  "review_id": "1907.06019__00",
+  "safe_id": "1907.06019",
+  "arxiv_id": "1907.06019",
+  "conjecture_title": "Question on extremal self-annihilating subspaces (Theorem 2.3)",
+  "paper_title": "Combinatorics in the exterior algebra and the Bollobás Two Families Theorem",
+  "published": "2020-07-14",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "Scott and Wilmer prove (Theorem 2.3) that a self-annihilating subspace $W \\subseteq \\bigwedge^r V$ satisfies $\\dim W \\leq \\binom{n-1}{r-1}$ for $r \\leq n/2$, with the bound achieved by spaces of the form $\\{v \\wedge z : z \\in \\bigwedge^{r-1} V\\}$. They verify that these are the only extremal spaces for $r=1$ and $r=2$ and ask whether this holds in general. No follow-up paper resolving the question for $r \\geq 3$ was found across five web searches; the conjecture appears to remain open.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "self-annihilating subspace exterior algebra extremal Bollobás Scott Wilmer 1907.06019",
+    "extremal self-annihilating subspace wedge product characterization exterior algebra",
+    "cite:1907.06019 self-annihilating exterior algebra characterization 2021 2022 2023 2024 2025"
+  ],
+  "notes": "No follow-up found in five web calls. The paper was published in the Journal of the London Mathematical Society (2021). A related paper arXiv:1911.07011 ('Bollobás-type theorems for hemi-bundled two families') was found but its abstract does not indicate it addresses this specific characterization question. Confidence is medium rather than high because the conjecture is roughly five years old and the niche topic may have seen progress in venues not easily indexed."
+}

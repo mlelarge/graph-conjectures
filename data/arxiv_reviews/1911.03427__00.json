@@ -1,0 +1,34 @@
+{
+  "review_id": "1911.03427__00",
+  "safe_id": "1911.03427",
+  "arxiv_id": "1911.03427",
+  "conjecture_title": "Open Problem (Extending Induced Arithmetic Removal to Higher Complexity and General Groups)",
+  "paper_title": "Induced arithmetic removal: complexity 1 patterns over finite fields",
+  "published": "2019-11-08",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The open problem—extending the induced arithmetic removal lemma to higher complexity patterns and to general abelian groups (including Z)—remains unresolved. Fox, Tidor, and Zhao established the lemma for complexity 1 patterns over finite fields in 2019; the original paper was published in Israel Journal of Mathematics (2022). A 2024 follow-up by Gladkova (arXiv:2412.15170) refines the complexity 1/finite-field result by proving that complete removal (no non-generic exceptions) is achievable for partition-regular patterns of complexity 1, but this does not address either of the two main open directions: higher complexity patterns or general abelian groups.",
+  "since_posted": [
+    {
+      "title": "Induced arithmetic removal for partition-regular patterns of complexity 1",
+      "authors": "V. Gladkova",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2412.15170",
+      "arxiv_id": "2412.15170",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves that complete (exception-free) induced arithmetic removal holds for all partition-regular arithmetic patterns of complexity 1 over finite fields, refining the Fox–Tidor–Zhao result, but does not extend to higher complexity patterns or general abelian groups."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "induced arithmetic removal lemma higher complexity abelian groups Fox Tidor Zhao",
+    "induced arithmetic removal lemma integers Z general abelian groups 2020 2021 2022 2023 2024",
+    "arxiv 2412.15170 induced arithmetic removal partition-regular 2024"
+  ],
+  "notes": "The paper appeared in Israel Journal of Mathematics 248 (2022), 1–38. The only identified post-2019 follow-up (Gladkova 2024) works within the same complexity 1 / finite-field setting and does not resolve either open direction. No paper found that extends induced arithmetic removal to complexity ≥ 2 or to Z or other infinite abelian groups."
+}

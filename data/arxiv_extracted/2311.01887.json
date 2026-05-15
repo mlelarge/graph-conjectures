@@ -1,0 +1,90 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 2 (Pavez-Signé, Piga, Sanhueza-Matamala [9], Conjecture 16)",
+    "statement_text": "For every $k \\geq 2$ and every function $f : \\mathbb{N} \\to \\mathbb{N}$ such that $n \\leq f(n) \\leq r(K_n)$ for all $n$, there is a sequence $(G_n)_{n \\in \\mathbb{N}}$ of $k$-connected graphs such that $|V(G_n)| = n$ and $r(G_n) = \\Theta(f(n))$.",
+    "context_text": "Pavez-Signé, Piga and Sanhueza-Matamala had shown that every reasonable growth rate between $n$ and $r(K_n)$ is achieved (up to a multiplicative constant) by a sequence of connected graphs, and conjectured that the graphs could additionally be taken to have arbitrarily large connectivity. The present paper was written specifically to prove this conjecture.",
+    "attributed_to": "Pavez-Signé, Piga, and Sanhueza-Matamala",
+    "attributed_year": 2022,
+    "paper_contribution": "Proves the conjecture in full: for every $k \\geq 2$ there exists a constant $C_k > 0$ such that for every admissible $f$ a sequence of $k$-connected $n$-vertex graphs with $r(G_n) \\leq C_k f(n)$ is constructed (Theorem 3).",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source; mathematical notation appears clean and unambiguous.",
+    "arxiv_id": "2311.01887",
+    "paper_title": "Graphs with arbitrary Ramsey number and connectivity",
+    "paper_authors": [
+      "Isabel Ahme",
+      "Alex Scott"
+    ],
+    "published": "2023-11-03",
+    "abs_url": "https://arxiv.org/abs/2311.01887",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Question 9 (Pavez-Signé, Piga, Sanhueza-Matamala [9], Question 13)",
+    "statement_text": "Is there an $n_0 \\in \\mathbb{N}$ such that for all $n \\geq n_0$, $R_n = [n, r(K_n)]$ and $\\mathcal{R}^c_n = [\\lceil \\tfrac{4}{3}n \\rceil - 1,\\, r(K_n)]$?",
+    "context_text": "Here $R_n = \\{r(G) : |V(G)| = n\\}$ and $\\mathcal{R}^c_n = \\{r(G) : |V(G)| = n,\\, G \\text{ connected}\\}$ are the sets of Ramsey numbers of $n$-vertex (connected) graphs. Known inclusions give $R_n \\subseteq [n, r(K_n)]$ and $\\mathcal{R}^c_n \\subseteq [\\lceil \\tfrac{4}{3}n\\rceil - 1, r(K_n)]$; an affirmative answer would mean every integer in these intervals is a Ramsey number, allowing any growth rate to be achieved exactly. The authors note the answer may well be negative.",
+    "attributed_to": "Pavez-Signé, Piga, and Sanhueza-Matamala",
+    "attributed_year": 2022,
+    "paper_contribution": "This paper does not make direct progress on the question; it is cited as motivation for understanding the fine structure of Ramsey number sets.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source; the ceiling notation and fraction are slightly ambiguous in the extracted text but appear consistent with the surrounding discussion.",
+    "arxiv_id": "2311.01887",
+    "paper_title": "Graphs with arbitrary Ramsey number and connectivity",
+    "paper_authors": [
+      "Isabel Ahme",
+      "Alex Scott"
+    ],
+    "published": "2023-11-03",
+    "abs_url": "https://arxiv.org/abs/2311.01887",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 10",
+    "statement_text": "For all functions $f(n) : \\mathbb{N} \\to \\mathbb{N}$ with $n \\leq f(n) \\leq r(K_n)$ and for all $\\varepsilon > 0$, there is a sequence of graphs $(G_n)_{n \\in \\mathbb{N}}$ satisfying $|V(G_n)| = n$ and $(1-\\varepsilon)f(n) \\leq r(G_n) \\leq (1+\\varepsilon)f(n)$ for all sufficiently large $n$.",
+    "context_text": "The paper's main theorem achieves every growth rate up to a multiplicative constant $C_k$; Conjecture 10 asks whether the multiplicative gaps in $\\mathcal{R}^c_n$ can be made $1+o(1)$, i.e., whether any prescribed growth rate can be approximated arbitrarily closely. The authors suggest that edge-deletion results (such as a conjecture of Wigderson) might provide a route to this.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "PDF source; mathematical notation is clean.",
+    "arxiv_id": "2311.01887",
+    "paper_title": "Graphs with arbitrary Ramsey number and connectivity",
+    "paper_authors": [
+      "Isabel Ahme",
+      "Alex Scott"
+    ],
+    "published": "2023-11-03",
+    "abs_url": "https://arxiv.org/abs/2311.01887",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Wigderson Edge-Deletion Conjecture",
+    "statement_text": "Deleting an edge from a graph can change the Ramsey number by at most a constant factor.",
+    "context_text": "This conjecture of Wigderson (arXiv:2208.11181, 2022) is mentioned in the concluding remarks as a potential tool for approaching Conjecture 10: if for dense graphs there is always an edge $e$ whose deletion changes the Ramsey number by at most a $1+o(1)$ factor, that would give a path toward achieving prescribed growth rates exactly.",
+    "attributed_to": "Wigderson",
+    "attributed_year": 2022,
+    "paper_contribution": "This paper makes no direct progress on the conjecture; it is mentioned only as a possible approach to Conjecture 10.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "PDF source; stated in prose without a labelled environment. The precise formal statement (e.g., whether 'constant' means uniform over all graphs) is not given in this paper.",
+    "arxiv_id": "2311.01887",
+    "paper_title": "Graphs with arbitrary Ramsey number and connectivity",
+    "paper_authors": [
+      "Isabel Ahme",
+      "Alex Scott"
+    ],
+    "published": "2023-11-03",
+    "abs_url": "https://arxiv.org/abs/2311.01887",
+    "source": "pdf"
+  }
+]

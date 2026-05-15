@@ -1,0 +1,23 @@
+{
+  "review_id": "2103.10684__01",
+  "safe_id": "2103.10684",
+  "arxiv_id": "2103.10684",
+  "conjecture_title": "Question 1.7",
+  "paper_title": "On a recolouring version of Hadwiger's conjecture",
+  "published": "2025-03-13",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "Question 1.7 from arXiv:2103.10684 asks whether there exists a constant c' such that for every t, all c'·t-colourings of a K_t-minor-free graph form a single Kempe equivalence class. The paper itself establishes c' ≥ 3/2 if such a constant exists (via Theorem 1.3), while the best known upper bound remains O(t√log t) from the Kostochka–Thomason degeneracy bound combined with Kempe equivalence for degenerate graphs — an O(√log t) factor away from a linear bound. No subsequent paper resolving this gap was found in the indexed literature.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Kempe equivalence Kt-minor-free graphs recolouring Hadwiger conjecture 2103.10684",
+    "Kempe equivalent colourings minor-free graphs linear factor recolouring 2024 2025",
+    "Kempe equivalence class colourings Kt-minor linear recolouring conjecture 2024 2025 2026",
+    "Bonamy Heinrich Legrand-Duchesne Narboni Hadwiger recolouring citations follow-up 2024 2025"
+  ],
+  "notes": "Active research on Kempe recolouring by the same group continues (arXiv:2502.10147 treats a recolouring version of Reed's conjecture; arXiv:2512.00695 treats Kempe changes in H-free induced-subgraph-free graphs), but neither paper addresses Question 1.7 directly. The key open gap is whether the O(sqrt(log t)) factor in the upper bound can be eliminated to yield a true linear threshold."
+}

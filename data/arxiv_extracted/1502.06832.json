@@ -1,0 +1,24 @@
+[
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Erdős–Moser covering problem for hypergraphs",
+    "statement_text": "Determine $f(n,k,r)$, the minimum number of edges in an $r$-uniform hypergraph $H$ with vertex set $[n] = \\{1,\\ldots,n\\}$ such that every $k$-set in $[n]$ is covered in $H$ (where a set $A \\subset X$ is covered if there exists $u \\notin A$ such that $B \\cup \\{u\\} \\in H$ for every $B \\in A^{(r-1)}$).",
+    "context_text": "Erdős and Moser raised the problem for graphs ($r=2$) and proved that $f(n,k,2) = (k-1)(n-1) - \\binom{k-1}{2} + \\lceil\\frac{n-k+1}{2}\\rceil$ with a unique extremal graph. The extension to $r$-uniform hypergraphs for general $r$ was the open problem motivating this paper.",
+    "attributed_to": "Erdős and Moser",
+    "attributed_year": 1970,
+    "paper_contribution": "For every fixed $k, r$ and all sufficiently large $n$, proves $f(n,k,r) = g(n,k,r)$ and shows that every $r$-uniform hypergraph on $n$ vertices with $f(n,k,r)$ edges in which every $k$-set is covered is isomorphic to some element of the explicitly constructed family $G(n,k,r)$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source — math may be garbled. The final section on directed graphs is referenced in the introduction but not present in the extracted text, so any additional problems or conjectures from that section could not be captured.",
+    "arxiv_id": "1502.06832",
+    "paper_title": "On a problem of Erdos and Moser",
+    "paper_authors": [
+      "Bela Bollobas",
+      "Alex Scott"
+    ],
+    "published": "2016-03-18",
+    "abs_url": "https://arxiv.org/abs/1502.06832",
+    "source": "pdf"
+  }
+]

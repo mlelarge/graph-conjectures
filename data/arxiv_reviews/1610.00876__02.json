@@ -1,0 +1,37 @@
+{
+  "review_id": "1610.00876__02",
+  "safe_id": "1610.00876",
+  "arxiv_id": "1610.00876",
+  "conjecture_title": "Conjecture 7",
+  "paper_title": "Subdivisions in digraphs of large out-degree or large dichromatic number",
+  "published": "2016-10-04",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 7 from arXiv:1610.00876 asks whether the class of δ⁺-maderian digraphs is closed under disjoint union; no resolution has been found. The closely related arXiv:2008.13224 (Gishboliner–Steiner–Szabó 2020) proves oriented cycles are δ⁺-maderian (a different conjecture in the same paper), while arXiv:2008.09888 addresses the dichromatic-number analogue (mader_χ) rather than the min-out-degree version. The partial result via Erdős–Pósa (Theorem 8 of the source paper) has not been extended to settle the general closure question.",
+  "since_posted": [],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2008.13224",
+      "verified": true,
+      "note": "Abstract confirms paper proves oriented cycles are δ⁺-maderian (polynomial K(ℓ) bound), which is Conjecture 5 of the source paper, not Conjecture 7. The corpus contribution notes claiming Conjecture 7 is resolved are not supported by the abstract; no progress on the disjoint-union closure is evident."
+    },
+    {
+      "arxiv_id": "2008.09888",
+      "verified": true,
+      "note": "Abstract confirms paper proves mader_χ(F)=v(F) for cactus-graph orientations and octi digraphs (dichromatic-number version). This addresses a different conjecture from the source paper, not the δ⁺-maderian disjoint-union closure (Conjecture 7)."
+    },
+    {
+      "arxiv_id": "2202.01006",
+      "verified": false,
+      "note": "Not directly fetched; paper is on chordal directed graphs and χ-boundedness — likely cites the source paper for background only, consistent with the corpus note of no direct progress."
+    }
+  ],
+  "search_queries": [
+    "delta+-maderian disjoint union digraph conjecture 1610.00876 Aboulker Havet Thomassé subdivision",
+    "delta+-maderian disjoint union Erdos-Posa property digraph forced subdivision Aboulker 2016"
+  ],
+  "notes": "No follow-up resolving Conjecture 7 (δ⁺-maderian closure under disjoint union) was found across 5 web calls. The corpus internal-reference contribution notes are unreliable for this conjecture: they describe resolutions of other conjectures (Conjecture 5 on oriented cycles via arXiv:2008.13224; dichromatic-number conjectures via arXiv:2008.09888) from the same source paper, not Conjecture 7."
+}

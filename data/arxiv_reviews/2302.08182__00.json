@@ -1,0 +1,34 @@
+{
+  "review_id": "2302.08182__00",
+  "safe_id": "2302.08182",
+  "arxiv_id": "2302.08182",
+  "conjecture_title": "Question 2",
+  "paper_title": "Maximum Independent Set when excluding an induced minor: $K_1 + tK_2$ and $tC_3 \\uplus C_4$",
+  "published": "2025-12-31",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Question 2 — whether Max Independent Set is solvable in quasipolynomial time for every planar-H-induced-minor-free graph class — remains open. The source paper itself adds the $tC_3 \\uplus C_4$ case to the growing list of positive instances (already including $C_t$- and $tC_3$-free cases). A February 2026 paper (arXiv:2602.18317) extends the family further to $sC_t$-induced-minor-free graphs but only achieves a QPTAS (approximation scheme), not an exact quasipolynomial-time algorithm, so the conjecture for all planar $H$ is unresolved.",
+  "since_posted": [
+    {
+      "title": "QPTAS for MWIS and finding large sparse induced subgraphs in graphs with few independent long holes",
+      "authors": "unknown (arXiv:2602.18317)",
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2602.18317",
+      "arxiv_id": "2602.18317",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves a quasipolynomial-time approximation scheme (QPTAS) for MWIS in graphs excluding $sC_t$ as an induced minor, generalising the $C_4 \\uplus sC_3$ case, but achieves only approximate (not exact) computation and does not cover all planar $H$."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Maximum Independent Set quasipolynomial induced minor planar graph arXiv 2302.08182",
+    "Maximum Independent Set induced minor free quasipolynomial time planar forbidden graph 2024 2025",
+    "QPTAS independent set induced minor planar H Bonnet Thomasse 2024 2025 2026"
+  ],
+  "notes": "No paper found that resolves Question 2 for all planar $H$. The Gartland–Lokshtanov conjecture (polynomial-time for all planar-H-induced-minor-free classes) is described in arXiv:2602.18317 as 'notoriously open', which subsumes Question 2. Progress is incremental: new planar forbidden graphs are handled one family at a time."
+}

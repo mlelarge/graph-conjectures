@@ -1,0 +1,46 @@
+[
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "De Loera–Kafer–Sanità Open Question (2022)",
+    "statement_text": "Given a linear program $\\max_{\\mathbf{x}\\in P}\\mathbf{c}^{\\intercal}\\mathbf{x}$ and a feasible initial basis, can one find a shortest monotone path in the feasible basis graph to an optimal basis in polynomial time?",
+    "context_text": "The 'omniscient pivot rule' for the simplex method selects a shortest sequence of pivots to the optimum. Despite nearly 80 years of study on pivot rules, it was open whether this rule can be computed efficiently. De Loera, Kafer, and Sanità posed this as an explicit open question in their 2022 study of circuit-augmentation pivot rules.",
+    "attributed_to": "De Loera, Kafer, and Sanità",
+    "attributed_year": 2022,
+    "paper_contribution": "Proves that computing a shortest monotone path to the optimum of a linear program over a simple polytope is NP-hard (via the Pivot-distance decision problem), even when restricted to fractional knapsack polytopes (Theorems 1.1 and 1.3), assuming $\\textsc{P}\\neq\\textsc{NP}$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2603.05482",
+    "paper_title": "Finding Short Paths on Simple Polytopes",
+    "paper_authors": [
+      "Alexander E. Black",
+      "Raphael Steiner"
+    ],
+    "published": "2026-04-08",
+    "abs_url": "https://arxiv.org/abs/2603.05482",
+    "source": "html"
+  },
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Kaibel–Pfetsch Open Problem (2003)",
+    "statement_text": "Is computing the diameter of the vertex-edge graph of a simple polytope NP-hard?",
+    "context_text": "Kaibel and Pfetsch listed the computational complexity of determining the diameter of a polytope as an open algorithmic problem in polytope theory in 2003. The Hirsch conjecture (disproved by Santos) and related diameter questions have been a central theme in polyhedral combinatorics.",
+    "attributed_to": "Kaibel and Pfetsch",
+    "attributed_year": 2003,
+    "paper_contribution": "Proves that computing the diameter of a simple polytope is NP-hard (Theorem 1.5), resolving the 2003 open problem, via an additional polyhedral construction applied on top of the NP-hardness reduction for shortest monotone paths.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2603.05482",
+    "paper_title": "Finding Short Paths on Simple Polytopes",
+    "paper_authors": [
+      "Alexander E. Black",
+      "Raphael Steiner"
+    ],
+    "published": "2026-04-08",
+    "abs_url": "https://arxiv.org/abs/2603.05482",
+    "source": "html"
+  }
+]

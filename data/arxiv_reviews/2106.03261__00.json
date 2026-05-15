@@ -1,0 +1,23 @@
+{
+  "review_id": "2106.03261__00",
+  "safe_id": "2106.03261",
+  "arxiv_id": "2106.03261",
+  "conjecture_title": "Question 1.1",
+  "paper_title": "Which graphs can be counted in $C_4$-free graphs?",
+  "published": "2021-06-06",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The central question of Conlon–Fox–Sudakov–Zhao (arXiv:2106.03261) — for which graphs $F$ is there an $F$-counting lemma in $C_4$-free graphs? — remains open as of 2026. The paper establishes that girth at least 5 is a necessary condition for countability and constructs infinite families of countable graphs (including $C_5$), but a complete characterization is not known. The status of specific 3-regular graphs of girth 5 such as the Petersen graph and the dodecahedral graph is still unresolved, as noted in subsequent survey literature (e.g., Zhao's textbook slides).",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "counting lemma C4-free graphs Conlon Fox Sudakov Zhao 2106.03261",
+    "F-counting lemma C4-free graphs girth 5 characterization",
+    "counting lemma C4-free graphs countable graphs characterization 2022 2023 2024 2025",
+    "Petersen graph Dodecahedron countable C4-free counting lemma girth 5"
+  ],
+  "notes": "No follow-up paper resolving the full characterization was found across four targeted web searches. The paper is at v1 (no revision) as of the review date. Zhao's sparse regularity slides (yufeizhao.com) list the Petersen and dodecahedral graphs as explicit open problems, confirming the conjecture remains open. The 2-density condition ($m_2(F) < 2$) is a further necessary condition discussed informally in the paper."
+}

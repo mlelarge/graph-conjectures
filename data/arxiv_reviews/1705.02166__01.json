@@ -1,0 +1,44 @@
+{
+  "review_id": "1705.02166__01",
+  "safe_id": "1705.02166",
+  "arxiv_id": "1705.02166",
+  "conjecture_title": "Open problem: $E^n \\not\\to (\\ell_3, \\ell_m)$ for large $m$",
+  "paper_title": "Lines in Euclidean Ramsey theory",
+  "published": "2018-03-20",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Conlon and Fox (arXiv:1705.02166) asked whether for every $m$ there exists $n$ with $E^n \\not\\to (\\ell_3, \\ell_m)$, while suspecting this fails for large $m$. Conlon and Wu (arXiv:2208.13513) gave a dimension-independent coloring showing $E^n \\not\\to (\\ell_3, \\ell_{1177})$ for all $n$, partially answering the question in the positive direction for a specific $m$. A subsequent paper (arXiv:2404.19233) improved the bound dramatically to $m = 20$. The question for all $m$, in particular whether the non-arrow relation can hold for arbitrarily large $m$, remains open.",
+  "since_posted": [
+    {
+      "title": "More on lines in Euclidean Ramsey theory",
+      "authors": "David Conlon, Yu-Han Wu",
+      "year": 2022,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2208.13513",
+      "arxiv_id": "2208.13513",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Constructs a single red/blue-coloring of $E^n$ (for every $n$) with no red $\\ell_3$ and no blue $\\ell_{1177}$, establishing $E^n \\not\\to (\\ell_3, \\ell_{1177})$ for all $n$ and partially answering the open problem in the positive direction for this specific $m$."
+    },
+    {
+      "title": "Avoiding short progressions in Euclidean Ramsey theory",
+      "authors": "not confirmed from fetch",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2404.19233",
+      "arxiv_id": "2404.19233",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Dramatically improves the Conlon–Wu bound, proving $E^n \\not\\to (\\ell_3, \\ell_{20})$ for every $n$; also establishes $E^n \\not\\to (\\ell_4, \\ell_{14})$ and $E^n \\not\\to (\\ell_5, \\ell_8)$."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Euclidean Ramsey theory lines ell_3 ell_m coloring Conlon Fox 1705.02166",
+    "Euclidean space Ramsey asymmetric lines 3-point m-point coloring open problem arxiv"
+  ],
+  "notes": "Two follow-up papers establish the non-arrow relation for small specific values of m (m=20 and m=1177), providing partial positive answers but not resolving the full question for all m. The original authors suspected the relation fails (arrow holds) for large m, but no proof of this has been found. The Conlon–Wu paper (2208.13513) attributes the problem to Conlon, Fox, and independently Arman and Tsaturian."
+}

@@ -1,0 +1,48 @@
+[
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Eppstein Open Problem 1 (Linear characterisation)",
+    "statement_text": "Characterise the subgraphs occurring $O(n)$ times in graphs of given genus.",
+    "context_text": "After proving Perles' conjecture independently, Eppstein [18] posed this open problem in 1993 asking for a structural characterisation of which fixed graphs $H$ satisfy $C(H, \\Sigma, n) = O(n)$ for graphs embedded in a surface $\\Sigma$. This paper answers the question as a special case of the main theorem.",
+    "attributed_to": "Eppstein",
+    "attributed_year": 1993,
+    "paper_contribution": "Theorem 1.2 shows $C(H, \\Sigma, n) = \\Theta(n^{f(H)})$ where $f(H)$ is the flap-number; a subgraph $H$ occurs $O(n)$ times if and only if $f(H) \\leq 1$, equivalently if and only if $H$ is not strongly non-planar.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "PDF source; stated as a bullet-point attributed problem, not a labelled theorem environment. Eppstein's year 1993 is stated explicitly in the paper.",
+    "arxiv_id": "2003.13777",
+    "paper_title": "Subgraph densities in a surface",
+    "paper_authors": [
+      "Tony Huynh",
+      "Gwenaël Joret",
+      "David R. Wood"
+    ],
+    "published": "2021-12-02",
+    "abs_url": "https://arxiv.org/abs/2003.13777",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Eppstein Open Problem 2 (Nonlinear characterisation)",
+    "statement_text": "Characterise the subgraphs occurring a number of times which is a nonlinear function of $n$ in graphs of given genus.",
+    "context_text": "Eppstein [18] posed this companion open problem in 1993 alongside the linear characterisation question, asking which fixed graphs $H$ yield superlinear counts $C(H, \\Sigma, n)$ in graphs embedded in a surface. This paper answers the question completely.",
+    "attributed_to": "Eppstein",
+    "attributed_year": 1993,
+    "paper_contribution": "Theorem 1.2 shows $C(H, \\Sigma, n) = \\Theta(n^{f(H)})$; a subgraph $H$ occurs a nonlinear number of times if and only if its flap-number satisfies $f(H) \\geq 2$.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "PDF source; stated as a bullet-point attributed problem, not a labelled theorem environment. Eppstein's year 1993 is stated explicitly in the paper.",
+    "arxiv_id": "2003.13777",
+    "paper_title": "Subgraph densities in a surface",
+    "paper_authors": [
+      "Tony Huynh",
+      "Gwenaël Joret",
+      "David R. Wood"
+    ],
+    "published": "2021-12-02",
+    "abs_url": "https://arxiv.org/abs/2003.13777",
+    "source": "pdf"
+  }
+]

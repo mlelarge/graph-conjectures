@@ -1,0 +1,60 @@
+[
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Open Problem (interference worsens with depth)",
+    "statement_text": "We believe that it is also the case that interference gets worst with $r$ (namely that interference worsens as $r$ increases to $r+1$ for $r > 2$), although whether this is indeed the case is an open problem.",
+    "context_text": "The paper proves that for $d$-regular networks of depth $r$ the multitasking capacity for task sets of size $n$ is at most $O\\!\\left(\\frac{r}{d^{1-1/r}}\\right)$, showing depth-$r$ networks suffer strictly more interference than depth-2 networks when $2 < r \\ll d$. The authors then conjecture that interference continues to worsen monotonically as depth increases beyond 2.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Statement appears in running prose without a labelled environment; PDF source.",
+    "arxiv_id": "1611.02400",
+    "paper_title": "A Graph-Theoretic Approach to Multitasking",
+    "paper_authors": [
+      "Noga Alon",
+      "Jonathan D. Cohen",
+      "Biswadip Dey",
+      "Tom Griffiths",
+      "Sebastian Musslick",
+      "Kayhan Ozcimder",
+      "Daniel Reichman",
+      "Igor Shinkar",
+      "Tal Wagner"
+    ],
+    "published": "2017-06-09",
+    "abs_url": "https://arxiv.org/abs/1611.02400",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Open Problem (multitasker at average degree $\\Theta(\\log n)$)",
+    "statement_text": "It is an interesting question whether there exists a multitasker with $\\alpha > 0$ independent of $n$, for average degree $\\Theta(\\log n)$, which, if true is the largest average degree possible. This is left as an open problem.",
+    "context_text": "The paper shows there exist multitaskers of average degree $\\Omega(\\log\\log n)$ with $\\alpha > 1/3 - \\varepsilon$, and that for the multitasking capacity to decay with average degree $d$ one must assume $d$ grows faster than $\\log\\log n$. The question is whether the threshold can be pushed up to $\\Theta(\\log n)$.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Statement appears in running prose without a labelled environment; PDF source.",
+    "arxiv_id": "1611.02400",
+    "paper_title": "A Graph-Theoretic Approach to Multitasking",
+    "paper_authors": [
+      "Noga Alon",
+      "Jonathan D. Cohen",
+      "Biswadip Dey",
+      "Tom Griffiths",
+      "Sebastian Musslick",
+      "Kayhan Ozcimder",
+      "Daniel Reichman",
+      "Igor Shinkar",
+      "Tal Wagner"
+    ],
+    "published": "2017-06-09",
+    "abs_url": "https://arxiv.org/abs/1611.02400",
+    "source": "pdf"
+  }
+]

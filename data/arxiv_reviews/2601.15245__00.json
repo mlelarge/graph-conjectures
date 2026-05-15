@@ -1,0 +1,33 @@
+{
+  "review_id": "2601.15245__00",
+  "safe_id": "2601.15245",
+  "arxiv_id": "2601.15245",
+  "conjecture_title": "Problem 4.1",
+  "paper_title": "Coloring small locally sparse degenerate graphs and related problems",
+  "published": "2026-01-21",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Problem 4.1 asks for the maximum fractional chromatic number of a $d$-degenerate, $K_r$-free graph. The source paper itself establishes via Theorem 1.6 a lower bound of $\\Omega_r(d/\\log^{r-2} d)$, ruling out the $O_r(d\\log\\log d/\\log d)$ bound one might expect by analogy with Johansson's theorem for bounded-degree $K_r$-free graphs. No subsequent paper resolving or settling the full question was found; the related paper arXiv:2603.17730 addresses fractional chromatic number of $d$-degenerate locally $r$-colorable graphs (a different condition from $K_r$-freeness) but does not settle Problem 4.1.",
+  "since_posted": [
+    {
+      "title": "Fractional coloring via entropy",
+      "authors": "Abhishek Dhawan",
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2603.17730",
+      "arxiv_id": "2603.17730",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves $\\chi_f(G) = O(d\\log(2r)/\\log d)$ for $d$-degenerate locally $r$-colorable graphs using an entropy-based approach, addressing a related but distinct problem class from $K_r$-free $d$-degenerate graphs; does not directly resolve Problem 4.1."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "fractional chromatic number d-degenerate Kr-free graph maximum 2026",
+    "Bradac Fox Steiner Sudakov Zhang degenerate Kr-free fractional chromatic number 2601.15245"
+  ],
+  "notes": "Problem 4.1 is posed as an open question in January 2026. The source paper provides a lower bound $\\Omega_r(d/\\log^{r-2} d)$ via Theorem 1.6, showing the answer exceeds the natural $O_r(d\\log\\log d/\\log d)$ analogy. No follow-up paper directly resolving the $K_r$-free case was found as of 2026-05-14."
+}

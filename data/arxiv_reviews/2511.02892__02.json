@@ -1,0 +1,22 @@
+{
+  "review_id": "2511.02892__02",
+  "safe_id": "2511.02892",
+  "arxiv_id": "2511.02892",
+  "conjecture_title": "Problem 3.1",
+  "paper_title": "Open problems of the 33rd Workshop on Cycles and Colourings",
+  "published": "2025-11-04",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Problem 3.1 asks whether the union of a disjoint-cycle graph $G$ and a disjoint union $H$ of $K_4$'s is 4-colourable — the $d=2$ special case of the general Strong Colouring Conjecture. Prior to the source paper, Dalal–McDonald–Shan (arXiv:2406.17723, June 2024) reduced the problem to a 3-colourability question on a more restricted class of graphs, but did not settle the conjecture. No paper published after November 2025 resolving the conjecture was found.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "strong chromatic number cycles K4 4-colourable disjoint union conjecture",
+    "strong colouring graph \"disjoint union of cycles\" K4 arxiv 2511.02892",
+    "strong chromatic number \"cycles plus K4\" 4-colourable 2025 2026 resolved proof"
+  ],
+  "notes": "The conjecture is the d=2 special case of the Strong Colouring Conjecture (Alon, Fellows, 1980s). The 2024 paper arXiv:2406.17723 (Dalal–McDonald–Shan, 'A reduction of the cycles plus K4s problem') reduces it to a 3-colourability question on triangles-and-short-paths graphs, but the core question remains open; this paper predates the source paper and is presumably known to its authors. The source paper cites Haxell (2004, Combin. Probab. Comput.) as the primary reference. No post-2025 resolution found in an exhaustive web search."
+}

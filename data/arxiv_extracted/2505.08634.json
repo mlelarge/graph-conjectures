@@ -1,0 +1,74 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Lovász Conjecture",
+    "statement_text": "Every sufficiently large connected vertex-transitive graph admits a Hamiltonian path.",
+    "context_text": "Lovász conjectured in 1969 that all sufficiently large connected vertex-transitive graphs are Hamiltonian-connected. The paper observes that any upper bound on $P(n)$ (the worst-case longest path transversal size) yields a lower bound on the longest path length in vertex-transitive graphs, making progress on $P(n)$ directly applicable here.",
+    "attributed_to": "Lovász",
+    "attributed_year": 1969,
+    "paper_contribution": "Shows that every connected vertex-transitive graph of order $n$ contains a path of length $\\Omega(n^{9/14})$, improving the previous best bound of $\\Omega(n^{13/21})$.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "Stated in prose in the introduction; no labelled conjecture environment visible. Reference [27] is Lovász 1969 (Proc. Calgary Internat. Conf.).",
+    "arxiv_id": "2505.08634",
+    "paper_title": "Small hitting sets for longest paths and cycles",
+    "paper_authors": [
+      "Sergey Norin",
+      "Raphael Steiner",
+      "Stephan Thomassé",
+      "Paul Wollan"
+    ],
+    "published": "2025-08-04",
+    "abs_url": "https://arxiv.org/abs/2505.08634",
+    "source": "html"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Thomassen Conjecture",
+    "statement_text": "Every sufficiently large connected vertex-transitive graph admits a Hamiltonian cycle.",
+    "context_text": "Thomassen conjectured in 1978 that all sufficiently large connected vertex-transitive graphs contain a Hamiltonian cycle. Via the bound $\\mathrm{lct}(G) \\leq \\sqrt{8n}$ for 2-connected graphs and the analogous path-length conversion, the paper translates improvements on $C(n)$ into long-cycle guarantees for vertex-transitive graphs.",
+    "attributed_to": "Thomassen",
+    "attributed_year": 1978,
+    "paper_contribution": "Shows that every connected vertex-transitive graph of order $n$ contains a cycle of length $\\Omega(n^{9/14})$, improving the previous best bound of $\\Omega(n^{13/21})$.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "Attributed via 'cf. [4]' (Barát and Kriesell, Discrete Math. 2010) in the paper; conjecture itself dates to 1978. Stated in prose in the introduction; no labelled conjecture environment visible.",
+    "arxiv_id": "2505.08634",
+    "paper_title": "Small hitting sets for longest paths and cycles",
+    "paper_authors": [
+      "Sergey Norin",
+      "Raphael Steiner",
+      "Stephan Thomassé",
+      "Paul Wollan"
+    ],
+    "published": "2025-08-04",
+    "abs_url": "https://arxiv.org/abs/2505.08634",
+    "source": "html"
+  },
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Walther–Zamfirescu Question",
+    "statement_text": "Does there exist an absolute constant $c > 0$ such that every connected graph $G$ satisfies $\\mathrm{lpt}(G) \\leq c$?",
+    "context_text": "Walther and Zamfirescu independently raised whether the minimum longest path transversal size is bounded by a universal constant. Despite the smallest known construction with $\\mathrm{lpt}(G) = 3$ being due to Zamfirescu and no example with $\\mathrm{lpt}(G) > 3$ having been found in over 50 years, the question remains widely open. The paper studies the growth of the worst-case functions $P(n)$ and $C(n)$ as a relaxation.",
+    "attributed_to": "Walther and Zamfirescu",
+    "attributed_year": 1972,
+    "paper_contribution": "Proves that every connected $n$-vertex graph satisfies $\\mathrm{lpt}(G) \\leq \\sqrt{8n}$ and $\\mathrm{lpt}(G) \\leq O(\\ell^{5/9})$ where $\\ell$ is the length of a longest path, improving the previous state-of-the-art bound of $O(n^{2/3})$.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "Stated in prose in the introduction as 'raised independently by Walther and Zamfirescu [36]'; reference [36] is Zamfirescu, J. Combinatorial Theory Ser. B, 1972. No labelled question environment visible.",
+    "arxiv_id": "2505.08634",
+    "paper_title": "Small hitting sets for longest paths and cycles",
+    "paper_authors": [
+      "Sergey Norin",
+      "Raphael Steiner",
+      "Stephan Thomassé",
+      "Paul Wollan"
+    ],
+    "published": "2025-08-04",
+    "abs_url": "https://arxiv.org/abs/2505.08634",
+    "source": "html"
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "review_id": "2201.09115__00",
+  "safe_id": "2201.09115",
+  "arxiv_id": "2201.09115",
+  "conjecture_title": "Question 1",
+  "paper_title": "Disproof of a Conjecture by Woodall",
+  "published": "2022-01-22",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Both questions remain open as of May 2026. The best known upper bound for K_{4,4}-minor-free graphs is 8-choosability (from Jørgensen's earlier result on 7-degeneracy), while no sharp choosability bound is known for K_{3,5}-minor-free graphs. The source paper (Steiner 2022) disproves Woodall's conjecture for sufficiently large comparable s and t but explicitly leaves K_{4,4} and K_{3,5} as the smallest unsettled parameter pairs. A wide web search returned no subsequent paper resolving either question.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "K_{4,4}-minor-free 7-choosable list coloring graph theory",
+    "K_{3,5}-minor-free 7-choosable choosability Steiner Woodall 2022",
+    "choosability K_{s,t}-minor-free graphs Jørgensen 7-choosable 2022 2023 2024",
+    "arxiv K_{4,4}-minor 7-choosable OR 7-list-colorable site:arxiv.org"
+  ],
+  "notes": "No follow-up found in 5 web calls. Jørgensen's result gives 8-choosability (via 7-degeneracy) for K_{4,4}-minor-free graphs; closing the gap to 7 and the analogous K_{3,5} question are both open. The conjecture is recent (2022) so absence of evidence is expected, not suspicious."
+}

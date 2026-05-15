@@ -1,0 +1,23 @@
+{
+  "review_id": "2305.15585__02",
+  "safe_id": "2305.15585",
+  "arxiv_id": "2305.15585",
+  "conjecture_title": "Conjecture 12",
+  "paper_title": "Chromatic number is not tournament-local",
+  "published": "2023-12-04",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 12 from arXiv:2305.15585 posits that the uniformly random tournament on $[N]$ witnesses the Scott–Seymour phenomenon with high probability: for every $k$ there exists $\\chi$ such that whp every graph $G$ on $[N]$ with $\\chi(G)\\geq\\chi$ contains a vertex $v$ whose out-neighborhood induces a subgraph of chromatic number at least $k$. The source paper disproves the deterministic Scott–Seymour conjecture using highly structured tournaments, and Conjecture 12 asserts that such structured adversarial examples cannot be replaced by a random tournament. No subsequent paper resolving or making partial progress on this specific conjecture was found in the indexed literature as of May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "random tournament chromatic number Scott-Seymour out-neighborhood arxiv 2305.15585",
+    "tournament-local chromatic number random tournament high probability Girão Hendrey Illingworth Lehner",
+    "random tournament Scott-Seymour chromatic number out-neighborhood high probability conjecture 2024 2025",
+    "arxiv 2305.15585 citing papers random tournament conjecture chromatic number 2024 2025 2026"
+  ],
+  "notes": "No follow-up found addressing Conjecture 12 specifically. The source paper itself was published in Journal of Combinatorial Theory, Series B, vol. 168 (2024), pp. 86–95. Web searches found no paper proving or disproving this random-tournament variant of the Scott–Seymour phenomenon. The conjecture is recent (≤2 years) and absence of follow-up is expected; status open with high confidence."
+}

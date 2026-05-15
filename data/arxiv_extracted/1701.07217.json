@@ -1,0 +1,50 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Gyárfás Conjecture 1.3 (long odd holes)",
+    "statement_text": "For all $\\kappa, \\ell \\geq 0$ there exists $c$ such that for every graph $G$, if $\\omega(G) \\leq \\kappa$ and $\\chi(G) > c$ then $G$ has an odd hole of length at least $\\ell$.",
+    "context_text": "András Gyárfás proposed three conjectures in [4] about the lengths of holes in graphs with large chromatic number and bounded clique number. This third conjecture is the strongest and contains the other two; the first was proved in [5] and the second in [2], but the third remained open until this paper.",
+    "attributed_to": "András Gyárfás",
+    "attributed_year": null,
+    "paper_contribution": "Proves the conjecture in full by induction on $\\kappa$, establishing that for all $\\kappa, \\ell, \\tau$ there exists $c$ such that every $(\\kappa, \\ell, \\tau)$-candidate has chromatic number at most $c$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Labelled Conjecture 1.3 in the paper; the abstract explicitly states this conjecture is proved. Full bibliographic year of reference [4] not recoverable from the extracted text.",
+    "arxiv_id": "1701.07217",
+    "paper_title": "Induced subgraphs of graphs with large chromatic number. VIII. Long odd holes",
+    "paper_authors": [
+      "Maria Chudnovsky",
+      "Alex Scott",
+      "Paul Seymour",
+      "Sophie Spirkl"
+    ],
+    "published": "2019-04-28",
+    "abs_url": "https://arxiv.org/abs/1701.07217",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Consecutive hole lengths conjecture for all clique numbers",
+    "statement_text": "For all $\\kappa, \\ell \\geq 0$, there exists $c \\geq 0$ such that for every graph $G$, if $\\omega(G) \\leq \\kappa$ and $\\chi(G) > c$, then $G$ has holes of $\\ell$ consecutive lengths.",
+    "context_text": "The case $\\kappa = 2$ (Theorem 1.5 of the paper) was proved in reference [6]: if $\\omega(G) \\leq 2$ and $\\chi(G) > c$ then $G$ has holes of $\\ell$ consecutive lengths. The extension to all fixed $\\kappa$ was conjectured in [6] but the paper notes it remains open.",
+    "attributed_to": "authors of reference [6]",
+    "attributed_year": null,
+    "paper_contribution": "The authors note they can prove a weaker partial result — that there exist two holes both of length at least $\\ell$ with consecutive lengths — by a refinement of the paper's methods, but omit the details.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "Conjecture stated in running prose without a numbered environment; full bibliographic details of reference [6] are not recoverable from the extracted text.",
+    "arxiv_id": "1701.07217",
+    "paper_title": "Induced subgraphs of graphs with large chromatic number. VIII. Long odd holes",
+    "paper_authors": [
+      "Maria Chudnovsky",
+      "Alex Scott",
+      "Paul Seymour",
+      "Sophie Spirkl"
+    ],
+    "published": "2019-04-28",
+    "abs_url": "https://arxiv.org/abs/1701.07217",
+    "source": "pdf"
+  }
+]

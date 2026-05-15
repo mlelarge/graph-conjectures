@@ -1,0 +1,34 @@
+{
+  "review_id": "1908.03694__00",
+  "safe_id": "1908.03694",
+  "arxiv_id": "1908.03694",
+  "conjecture_title": "Open problem on quantum ergodicity over small spectral windows (Remark 1.2)",
+  "paper_title": "High-girth near-Ramanujan graphs with localized eigenvectors",
+  "published": "2019-08-10",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The open problem of showing that the quantum-ergodicity average in a small spectral window of width roughly 1/log(m) fails to be equidistributed on near-Ramanujan graphs remains unresolved. Theo McKenzie (2022) studied the necessity of conditions for graph quantum ergodicity and cited 1908.03694, but addressed a different question about which graph-theoretic properties individually suffice for QE. No paper was found that controls all eigenvectors in the small spectral window to prove the QE average is not equidistributed there, nor that determines a lower bound on the smallest such window.",
+  "since_posted": [
+    {
+      "title": "The necessity of conditions for graph quantum ergodicity and Cartesian products with an infinite graph",
+      "authors": "Theo McKenzie",
+      "year": 2022,
+      "venue": "Comptes Rendus Mathématique",
+      "url": "https://www.numdam.org/item/CRMATH_2022__360_G4_399_0/",
+      "arxiv_id": null,
+      "doi": null,
+      "kind": "partial",
+      "claim": "Shows that expansion alone or high girth alone is individually insufficient for graph quantum ergodicity, citing 1908.03694 as related work, but does not address whether the QE average fails to be equidistributed in small spectral windows on near-Ramanujan graphs."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "quantum ergodicity expander graphs spectral window 1/log Alon Ganguly Srivastava 1908.03694",
+    "quantum ergodicity graphs localized eigenvectors spectral window equidistribution near-Ramanujan",
+    "quantum ergodicity small spectral window fails equidistribution expander graph 1908.03694 cite"
+  ],
+  "notes": "No follow-up paper was found that directly addresses the open problem of proving QE fails in small spectral windows of width ~1/log(m) on near-Ramanujan graphs. Theo McKenzie (2022) is the closest related work found but focuses on necessity of conditions for QE broadly, not the small-window question. The paper arXiv:2102.04169 (Quantum ergodicity for expanding quantum graphs in the regime of spectral delocalization) concerns metric/quantum graphs rather than combinatorial graphs and addresses when QE holds, not when it fails. The conjecture is from 2019 and no resolution was found across the web search."
+}

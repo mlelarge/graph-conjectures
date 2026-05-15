@@ -1,0 +1,24 @@
+[
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Informal Conjecture (error term in Proposition 1.4)",
+    "statement_text": "We believe that the error term $o(n^2)$ in Proposition 1.4 can be improved to $O(n^{2-\\delta})$ for some $\\delta := \\delta(H)$.",
+    "context_text": "Proposition 1.4 shows that for every graph $H$ with $\\chi(H) = k$ (not necessarily edge critical), any $H$-free subgraph of a sufficiently dense graph $G$ maximizing copies of $K_m(t)$ can be made $(k-1)$-colorable by deleting $o(n^2)$ edges. The authors note that Theorems 1.2 and 1.3 cannot be directly generalized to non-edge-critical $H$ since one can add an edge to any $(k-1)$-partite graph without creating a copy of such $H$, but they believe the $o(n^2)$ deletion bound in Proposition 1.4 is not tight.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated in the introduction as 'we believe'; Section 6 (concluding remarks and open problems) is not present in the extracted text and may contain additional items.",
+    "arxiv_id": "1706.05642",
+    "paper_title": "$H$-free subgraphs of dense graphs maximizing the number of cliques and their blow-ups",
+    "paper_authors": [
+      "Noga Alon",
+      "Clara Shikhelman"
+    ],
+    "published": "2017-06-18",
+    "abs_url": "https://arxiv.org/abs/1706.05642",
+    "source": "pdf"
+  }
+]

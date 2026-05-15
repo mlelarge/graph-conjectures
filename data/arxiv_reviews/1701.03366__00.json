@@ -1,0 +1,28 @@
+{
+  "review_id": "1701.03366__00",
+  "safe_id": "1701.03366",
+  "arxiv_id": "1701.03366",
+  "conjecture_title": "Antisymmetric variant of Jaeger's weak 3-flow conjecture",
+  "paper_title": "Additive bases and flows in graphs",
+  "published": "2018-02-07",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The conjecture that there exists a constant $k$ such that every directed $k$-edge-connected graph has a $\\mathbb{Z}_5$-antisymmetric flow was stated in arXiv:1701.03366 (2018) as the natural antisymmetric analogue of Jaeger's weak 3-flow conjecture (resolved by Thomassen and later sharpened to 6-edge-connectivity by Lovász et al.). No follow-up paper resolving or making substantial progress on this specific conjecture was found in the indexed literature through 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2206.00594",
+      "verified": false,
+      "note": "Paper is 'Sparse graphs with bounded induced cycle packing number have logarithmic treewidth' by Bonamy et al. — about treewidth of Ok-free sparse graphs, entirely unrelated to Z5-antisymmetric flows. The fuzz=66 match is a false positive; the 'conjecture' referenced in the contribution note concerns a different open problem in structural graph theory."
+    }
+  ],
+  "search_queries": [
+    "Z5 antisymmetric flow directed edge-connected graph conjecture Esperet Thomassé 1701.03366",
+    "antisymmetric flow Z5 Jaeger weak 3-flow conjecture graph theory solved",
+    "antisymmetric flow directed graph Z5 edge-connectivity constant 2019 2020 2021 2022 2023 2024 arXiv"
+  ],
+  "notes": "No follow-up found after broad search. The ScienceDirect article 'Antisymmetric flows and edge-connectivity' (DOI 10.1016/S0012-365X(03)003017) appeared in search results but returned HTTP 403 and could not be verified; its date (~2003) suggests it predates the conjecture. The Z5 antisymmetric flow problem remains open as of the review date."
+}

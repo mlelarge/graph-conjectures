@@ -1,0 +1,52 @@
+{
+  "review_id": "2202.05557__01",
+  "safe_id": "2202.05557",
+  "arxiv_id": "2202.05557",
+  "conjecture_title": "Question: Extending Theorem 1.6 to paths",
+  "paper_title": "Polynomial bounds for chromatic number. V. Excluding a tree of radius two and a complete multipartite graph",
+  "published": "2023-01-10",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "medium",
+  "summary": "The conjecture asks whether polynomial bounds chi(G) <= f(tau_d(G)) hold for every path-free graph G, extending Theorem 1.6 (proved for trees of radius two) to paths. A direct successor in the series, 'Polynomial bounds for chromatic number VIII. Excluding a path and a complete multipartite graph' by Nguyen (Journal of Graph Theory, 2024, DOI 10.1002/jgt.23129), bears a title that mirrors the structure of the source paper and appears to address exactly this question; however, the full theorem statement could not be verified due to paywall access. The internal corpus references (arXiv:2409.09397, arXiv:2409.09400) concern Gyarfas-Sumner stable-set bounds for forest-free graphs and do not address this specific conjecture about tau_d and chromatic number.",
+  "since_posted": [
+    {
+      "title": "Polynomial bounds for chromatic number VIII. Excluding a path and a complete multipartite graph",
+      "authors": "Nguyen",
+      "year": 2024,
+      "venue": "Journal of Graph Theory",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1002/jgt.23129",
+      "arxiv_id": null,
+      "doi": "10.1002/jgt.23129",
+      "kind": "partial",
+      "claim": "Title mirrors paper V and addresses polynomial chi-bounds for path-free graphs excluding a complete multipartite graph (the structure captured by tau_d); exact theorem scope unverified due to paywall (HTTP 402 on fetch)."
+    }
+  ],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2409.09397",
+      "verified": true,
+      "note": "Paper is about Gyarfas-Sumner stable-set (independence number) bounds for forest-free graphs, not about polynomial chi(G) <= f(tau_d(G)) bounds for path-free graphs. The paper_contribution text in the corpus (which attributes results to Gyarfas and Sumner) confirms this is a different conjecture. Not relevant to the reviewed question."
+    },
+    {
+      "arxiv_id": "2409.09400",
+      "verified": false,
+      "note": "Not directly fetched; from title 'Subdivisions and near-linear stable sets' and its corpus description (polylogarithmic alpha(G) bounds for K_t-subdivision-free graphs), this paper also concerns stable sets rather than chromatic-number/tau_d polynomial bounds. Likely not relevant."
+    },
+    {
+      "arxiv_id": "2508.14332",
+      "verified": false,
+      "note": "Title is 'Asymptotic structure IV. A counterexample to the weak coarse Menger conjecture'; unrelated to the path chi-bound question."
+    }
+  ],
+  "search_queries": [
+    "polynomial bounds chromatic number path-free tau_d Scott Seymour 2202.05557",
+    "WebFetch https://arxiv.org/abs/2202.05557",
+    "WebFetch https://arxiv.org/abs/2409.09397",
+    "WebFetch https://onlinelibrary.wiley.com/doi/10.1002/jgt.23129",
+    "WebFetch https://arxiv.org/abs/2202.10412"
+  ],
+  "notes": "Part VIII of the 'Polynomial bounds for chromatic number' series ('Excluding a path and a complete multipartite graph', Nguyen 2024, JGT, DOI 10.1002/jgt.23129) is the strongest candidate for a resolution of this conjecture: its title exactly parallels paper V's title with 'path' replacing 'tree of radius two', suggesting it proves chi(G) <= poly(tau_d(G)) for path-free graphs. Status is 'partial' rather than 'solved' because the Wiley page returned HTTP 402 (paywall) and the exact theorem statement could not be read. Part VI (arXiv:2202.10412) treats the four-vertex path in the clique-number chi-bounded framework (not tau_d) and remains limited to specific short paths. The three internal corpus references all concern different conjectures (Gyarfas-Sumner stable sets or coarse Menger) and are not relevant here."
+}

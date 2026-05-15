@@ -1,0 +1,50 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.2",
+    "statement_text": "For every $k \\in \\mathbb{N}$, there exists $c = c(k) \\in \\mathbb{N}$ satisfying the following. If $d \\in \\mathbb{N}$, $G$ is a graph and $X, Y \\subseteq V(G)$, then there exists either (1) $k$ disjoint $X$-$Y$-paths $P_1, \\ldots, P_k$ such that $\\mathrm{dist}_G(P_i, P_j) \\geq d$ for all distinct $i, j$, or (2) a set $Z \\subseteq V(G)$ of size less than $k$ such that $B_G(Z, cd)$ separates $X$ and $Y$.",
+    "context_text": "Georgakopoulos and Papasoglu, motivated by questions in metric geometry, and Albrechtsen et al. independently conjectured this 'Coarse Menger's theorem'. The conjecture of Albrechtsen et al. is stronger, as it does not allow $c$ to depend on $k$. McCarty and Seymour showed it suffices to prove the conjecture for $d = 3$ for the entire conjecture to hold.",
+    "attributed_to": "Georgakopoulos and Papasoglu; Albrechtsen et al.",
+    "attributed_year": null,
+    "paper_contribution": "Proves the $d = 2$ case for graphs with bounded maximum degree (Conjecture 1.4, as Theorem 1.5) and for graphs excluding a topological $K_r$-minor (Theorem 1.9), by showing that $2\\chi'_s(G)k$ pairwise disjoint $X$-$Y$-paths guarantee the existence of $k$ pairwise non-adjacent $X$-$Y$-paths.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source. Attributed jointly to Georgakopoulos–Papasoglu [5] and Albrechtsen et al. [1]; the latter proposed the stronger form with $c$ independent of $k$.",
+    "arxiv_id": "2309.07905",
+    "paper_title": "On an induced version of Menger's theorem",
+    "paper_authors": [
+      "Kevin Hendrey",
+      "Sergey Norin",
+      "Raphael Steiner",
+      "Jérémie Turcotte"
+    ],
+    "published": "2023-09-14",
+    "abs_url": "https://arxiv.org/abs/2309.07905",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.4",
+    "statement_text": "For every $d, \\Delta \\in \\mathbb{N}$ there exists a constant $C = C(d, \\Delta) > 0$ such that the following holds. If $k \\in \\mathbb{N}$, $G$ is a graph with $\\Delta(G) \\leq \\Delta$ and $X, Y \\subseteq V(G)$, then there exists either (1) $k$ $X$-$Y$-paths pairwise at distance at least $d$ in $G$, or (2) a set of less than $Ck$ vertices in $G$ which separates $X$ and $Y$.",
+    "context_text": "This conjecture is derived as a consequence of the stronger (c independent of k) form of Conjecture 1.2 for graphs of bounded maximum degree $\\Delta$: the ball $B_G(Z, cd)$ can be bounded in size by $\\Delta^{cd+1}k$, yielding a linear separator of size $Ck$. The paper proves this conjecture in the first non-trivial case $d = 2$ as its first main result (Theorem 1.5).",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "PDF source. The $d = 2$ case is proved within the paper (Theorem 1.5); the conjecture for $d \\geq 3$ remains open.",
+    "arxiv_id": "2309.07905",
+    "paper_title": "On an induced version of Menger's theorem",
+    "paper_authors": [
+      "Kevin Hendrey",
+      "Sergey Norin",
+      "Raphael Steiner",
+      "Jérémie Turcotte"
+    ],
+    "published": "2023-09-14",
+    "abs_url": "https://arxiv.org/abs/2309.07905",
+    "source": "pdf"
+  }
+]

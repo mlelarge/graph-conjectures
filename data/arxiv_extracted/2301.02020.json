@@ -1,0 +1,50 @@
+[
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 4",
+    "statement_text": "$D(n, 4) = n^{3-o(1)}$.",
+    "context_text": "The authors prove $D(n,3) = \\Omega(n^2/e^{O(\\sqrt{\\log n})})$ and a general lower bound $D(n,k) = n^{2\\lfloor k/3\\rfloor}/e^{O_k(\\sqrt{\\log n})}$, but were unable to show that lower and upper bounds almost match for $k \\geq 4$. In particular, it is open whether the 4-configuration graph can have super-quadratic diameter, while the upper bound is $o(n^3)$.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2301.02020",
+    "paper_title": "Extremal Independent Set Reconfiguration",
+    "paper_authors": [
+      "Nicolas Bousquet",
+      "Bastien Durain",
+      "Théo Pierron",
+      "Stéphan Thomassé"
+    ],
+    "published": "2023-01-05",
+    "abs_url": "https://arxiv.org/abs/2301.02020",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Question 8",
+    "statement_text": "What is the asymptotic behavior of $\\max_k D(n, k)$?",
+    "context_text": "The authors prove that for every $n$ and every $k$ with $3n/10 \\leq k \\leq 2n/5$, $D(n,k) = \\Omega(2^{n/5})$, and remark that it is quite surprising that this exponential lower bound holds for such a wide range of values of $k$.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2301.02020",
+    "paper_title": "Extremal Independent Set Reconfiguration",
+    "paper_authors": [
+      "Nicolas Bousquet",
+      "Bastien Durain",
+      "Théo Pierron",
+      "Stéphan Thomassé"
+    ],
+    "published": "2023-01-05",
+    "abs_url": "https://arxiv.org/abs/2301.02020",
+    "source": "pdf"
+  }
+]

@@ -1,0 +1,60 @@
+{
+  "review_id": "2202.09118__00",
+  "safe_id": "2202.09118",
+  "arxiv_id": "2202.09118",
+  "conjecture_title": "Question (which hereditary classes are poly-χ-bounded?)",
+  "paper_title": "Polynomial bounds for chromatic number VII. Disjoint holes",
+  "published": "2022-02-18",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The overarching question of characterising which hereditary classes are polynomially χ-bounded remains open. After Briański, Davies and Walczak disproved Esperet's conjecture (that every χ-bounded hereditary class is poly-χ-bounded), the Pollyanna framework was introduced to organise which hereditary classes do satisfy a polynomial binding function, with specific forbidden-subgraph families now confirmed to be poly-χ-bounded. No complete characterisation is known as of 2026.",
+  "since_posted": [
+    {
+      "title": "Polynomial bounds for chromatic number VI. Adding a four-vertex path",
+      "authors": "Maria Chudnovsky, Alex Scott, Paul Seymour, Sophie Spirkl",
+      "year": 2022,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2202.10412",
+      "arxiv_id": "2202.10412",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves polynomial χ-boundedness for {H1, H2}-free graphs when every component of H1 is a good forest and H2 is a broom or P4, extending the catalogue of poly-χ-bounded hereditary classes."
+    },
+    {
+      "title": "Pollyanna and Polynomially χ-Bounded Graph Classes",
+      "authors": "Narjes Rahimi, D. A. Mojdeh",
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2602.14542",
+      "arxiv_id": "2602.14542",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves three new strong Pollyanna results, including that for each t ≥ 2 the class of {diamond, hammer(t)⁺}-free graphs is t-strongly Pollyanna, advancing the programme of identifying which hereditary classes are poly-χ-bounded."
+    }
+  ],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2202.10412",
+      "verified": true,
+      "note": "Confirmed as a same-series paper by the same four authors proving polynomial χ-boundedness for specific H-free classes; directly contributes partial cases to the overarching question."
+    },
+    {
+      "arxiv_id": "2506.10227",
+      "verified": false,
+      "note": "Not fetched within the 5-call budget; title indicates focus on suns in triangle-free graphs attributed to Trotignon; relevance to the poly-χ-bounded characterisation question is unclear."
+    },
+    {
+      "arxiv_id": "2311.05719",
+      "verified": true,
+      "note": "Confirmed as a paper about treewidth of clock-free graphs (induced subgraph obstructions for large treewidth), not about poly-χ-bounded hereditary classes; the attributed contribution in the internal refs appears mismatched to this specific question."
+    }
+  ],
+  "search_queries": [
+    "Briański Davies Walczak Esperet conjecture disproof poly-chi-bounded hereditary classes",
+    "poly-chi-bounded hereditary classes characterization chromatic number 2022 2023 2024 2025"
+  ],
+  "notes": "Esperet's conjecture (every χ-bounded hereditary class is poly-χ-bounded) was disproved by Briański, Davies and Walczak (arXiv:2201.08814, published Combinatorica 2024); this is the direct motivation for the question as stated in the source paper. The Pollyanna framework — asking which hereditary classes C have the property that C ∩ F is poly-χ-bounded for every χ-bounded F — has been developed as a structured approach to the overarching question. A related but distinct direction (arXiv:2512.09176, Rahimi and Mojdeh 2025) studies an analogue using the domination parameter τ_d(G) rather than ω(G). Internal reference arXiv:2311.05719 appears to be a treewidth paper mismatched to this conjecture identifier."
+}

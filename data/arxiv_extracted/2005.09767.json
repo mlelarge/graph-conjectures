@@ -1,0 +1,50 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Tutte's Flow Conjectures (Conjecture 1.2)",
+    "statement_text": "Let $G$ be an oriented 2-edge-connected graph.\n1. $G$ has a nowhere-zero 5-flow.\n2. If $G$ does not have a Petersen graph minor, it has a nowhere-zero 4-flow.\n3. If $G$ is 4-edge-connected, it has a nowhere-zero 3-flow.",
+    "context_text": "Tutte initiated the study of nowhere-zero flows and observed their duality to colorings in planar graphs. He made three conjectures that have directed the field; despite a wealth of research, all three remain open.",
+    "attributed_to": "Tutte",
+    "attributed_year": null,
+    "paper_contribution": "Cited as open background motivation. The paper does not directly advance these conjectures but instead proves exponentially many nowhere-zero flows exist under related edge-connectivity hypotheses, extending results of Seymour and Jaeger.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Three sub-conjectures (5-flow, 4-flow, 3-flow) are grouped under a single labeled environment Conjecture 1.2 in the paper. References given as [13, 15, 3]; year not recoverable from the extracted text.",
+    "arxiv_id": "2005.09767",
+    "paper_title": "Many flows in the group connectivity setting",
+    "paper_authors": [
+      "Matt DeVos",
+      "Rikke Langhede",
+      "Bojan Mohar",
+      "Robert Šámal"
+    ],
+    "published": "2020-05-19",
+    "abs_url": "https://arxiv.org/abs/2005.09767",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.10",
+    "statement_text": "There exists a fixed constant $c > 1$ so that the following holds. For every 3-edge-connected oriented graph $G = (V, E)$ of order $n$, every abelian group $\\Gamma$ with $|\\Gamma| \\geq 6$, and every $f : E \\to \\Gamma$, there exist at least $c^n$ flows $\\phi : E \\to \\Gamma$ with $\\phi(e) \\neq f(e)$ for every $e \\in E$.",
+    "context_text": "Theorem 1.9 establishes an explicit exponential lower bound on the number of $\\Gamma$-connected flows for groups of size $k \\geq 8$, but yields only the existence of a single flow for $k = 6, 7$. The authors attribute this gap to a shortcoming of their techniques and conjecture the exponential bound holds for all abelian groups of size at least 6. Theorem 1.9 confirms the conjecture for all groups except $\\mathbb{Z}_6$ and $\\mathbb{Z}_7$; Theorem 1.11 gives a superpolynomial (but not exponential) lower bound for $\\mathbb{Z}_6$.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2005.09767",
+    "paper_title": "Many flows in the group connectivity setting",
+    "paper_authors": [
+      "Matt DeVos",
+      "Rikke Langhede",
+      "Bojan Mohar",
+      "Robert Šámal"
+    ],
+    "published": "2020-05-19",
+    "abs_url": "https://arxiv.org/abs/2005.09767",
+    "source": "pdf"
+  }
+]

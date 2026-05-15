@@ -1,0 +1,29 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1 (Chepoi, Estellon, and Vaxès)",
+    "statement_text": "There exists a constant $c$ such that for every integer $r \\geq 0$, every planar graph $G$, and every $r$-ball hypergraph $H$ of $G$, we have $\\tau(H) \\leq c \\cdot \\nu(H)$.",
+    "context_text": "Chepoi, Estellon, and Vaxès conjectured this in 2007 as a generalization of their earlier result showing that planar graphs of diameter at most $2r$ can be covered by a universally bounded number of balls of radius $r$. A key aspect is that the constant $c$ must be independent of the radius $r$; if $c$ is allowed to depend on $r$ the result was already known for all graph classes with bounded expansion (Dvořák). Bousquet and Thomassé gave partial evidence by proving $\\tau(H) \\leq c_t \\cdot \\nu(H)^{2t+1}$ for $K_t$-minor-free graphs.",
+    "attributed_to": "Chepoi, Estellon, and Vaxès",
+    "attributed_year": 2007,
+    "paper_contribution": "Proves the conjecture and a strictly stronger generalisation (Theorem 2): for every integer $t \\geq 1$ there exists a constant $c_t$ such that $\\tau(H) \\leq c_t \\cdot \\nu(H)$ for every $K_t$-minor-free graph $G$ and every ball hypergraph $H$ of $G$, removing both the planarity restriction and the equal-radius restriction on the balls.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "The provided PDF extraction is truncated before Section 6 (the concluding section the authors mention contains a construction and likely further open problems); no additional conjectural items were recoverable from the available text.",
+    "arxiv_id": "2001.04517",
+    "paper_title": "Packing and covering balls in graphs excluding a minor",
+    "paper_authors": [
+      "Nicolas Bousquet",
+      "Wouter Cames van Batenburg",
+      "Louis Esperet",
+      "Gwenaël Joret",
+      "William Lochet",
+      "Carole Muller",
+      "François Pirot"
+    ],
+    "published": "2020-07-28",
+    "abs_url": "https://arxiv.org/abs/2001.04517",
+    "source": "pdf"
+  }
+]

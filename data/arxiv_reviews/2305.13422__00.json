@@ -1,0 +1,27 @@
+{
+  "review_id": "2305.13422__00",
+  "safe_id": "2305.13422",
+  "arxiv_id": "2305.13422",
+  "conjecture_title": "Conjecture 1.7",
+  "paper_title": "Flashes and rainbows in tournaments",
+  "published": "2023-06-01",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 1.7 states that $t(l,k) = l^{k-1}$, where $t(l,k)$ is the smallest integer such that every edge-colouring of any tournament on more than $t(l,k)$ vertices contains an $l$-flash or a $k$-rainbow; this is a tournament strengthening of the Lefmann–Rödl–Thomas conjecture. The source paper proves the conjecture asymptotically for $l = \\omega(k^2)$ and shows transitive tournaments are not always worst-case, but the full conjecture remains open. No follow-up paper resolving the full statement was found in the literature through May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2508.14332",
+      "verified": true,
+      "note": "This paper (Nguyen, Scott, Seymour 2025) is about a counterexample to the weak coarse Menger conjecture and has no connection to flashes, rainbows, tournaments, or t(l,k). The corpus match is a false positive."
+    }
+  ],
+  "search_queries": [
+    "tournament flash rainbow t(l,k) conjecture arxiv 2305.13422 follow-up",
+    "Girão Illingworth Michel Savery Scott \"flashes rainbows\" tournament t(l,k) conjecture 2024 2025"
+  ],
+  "notes": "No follow-up found addressing Conjecture 1.7 specifically. The paper was published in Combinatorica 44 (2024), no. 3, 675–690, with a publisher erratum issued in 2024 correcting Corollary 2.5 (unrelated to the conjecture). The single internal reference (arXiv:2508.14332) is a false corpus match."
+}

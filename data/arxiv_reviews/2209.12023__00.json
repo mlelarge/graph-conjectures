@@ -1,0 +1,23 @@
+{
+  "review_id": "2209.12023__00",
+  "safe_id": "2209.12023",
+  "arxiv_id": "2209.12023",
+  "conjecture_title": "Open question on twin-width over infinite fields",
+  "paper_title": "Twin-width V: linear minors, modular counting, and matrix multiplication",
+  "published": "2022-09-24",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The open question asks whether bounded twin-width for matrix classes over infinite fields (starting with Q) can be characterized via linear-minor closure: a class of matrices over Q has bounded twin-width if and only if its closure under linear minors is not the set of all matrices. The paper's main results on FPT matrix multiplication and linear-minor characterization are proved only for finite fields F_q, and no definition of twin-width via contraction sequences is given for matrices over Q. A wide web search (5 calls) found no published or preprint follow-up that addresses this specific question about infinite fields.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "twin-width matrices infinite fields linear minors bounded",
+    "arxiv 2209.12023 twin-width cite follow-up",
+    "twin-width rational matrices Q grid rank infinite field open problem Bonnet Thomasse",
+    "\"twin-width\" \"infinite field\" OR \"rational\" OR \"reals\" matrices 2023 2024 2025"
+  ],
+  "notes": "No follow-up found addressing twin-width over infinite fields specifically. The STACS 2023 published version of the paper also confines all results to finite alphabets and finite fields. The open question remains unresolved as of May 2026."
+}

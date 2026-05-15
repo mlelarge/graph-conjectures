@@ -1,0 +1,74 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.1",
+    "statement_text": "If $\\alpha(G) \\leq 2$, there is a clique cover of size at most $|G|$.",
+    "context_text": "Described in the paper as 'long-standing' with unknown original source; Seymour recalls working on it possibly in the 1980s. It is used to characterise which graphs $H$ have the property that every $H$-free graph admits a clique cover of size at most $|G|$, namely exactly those $H$ that are induced subgraphs of $K_{1,3}$.",
+    "attributed_to": "Unknown (long-standing conjecture)",
+    "attributed_year": null,
+    "paper_contribution": "The paper makes no direct contribution to this conjecture; it is discussed as motivation and context for the main results.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Original source unknown; the paper explicitly states 'we do not know the source' and that Seymour recalls working on it, possibly in the 1980s.",
+    "arxiv_id": "2211.12065",
+    "paper_title": "Clique covers of H-free graphs",
+    "paper_authors": [
+      "Tung Nguyen",
+      "Alex Scott",
+      "Paul Seymour",
+      "Stephan Thomasse"
+    ],
+    "published": "2022-11-22",
+    "abs_url": "https://arxiv.org/abs/2211.12065",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Javadi–Hajebi Question",
+    "statement_text": "Do all graphs $G$ with $\\alpha(G)$ at most a constant admit clique covers of size $O(|G|)$?",
+    "context_text": "Javadi and Hajebi [4] asked whether bounding the stability number by an absolute constant is sufficient to guarantee a linear-size clique cover. The paper addresses this directly, disproving it.",
+    "attributed_to": "Javadi and Hajebi",
+    "attributed_year": null,
+    "paper_contribution": "Disproves the question via Theorem 1.3: there exist graphs on $n$ vertices with $\\alpha(G) \\leq 3$ that require $\\Omega(n^{6/5}/(\\log n)^2)$ cliques in any clique cover.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "Stated in running prose without a labelled theorem environment; attributed inline to Javadi and Hajebi [4].",
+    "arxiv_id": "2211.12065",
+    "paper_title": "Clique covers of H-free graphs",
+    "paper_authors": [
+      "Tung Nguyen",
+      "Alex Scott",
+      "Paul Seymour",
+      "Stephan Thomasse"
+    ],
+    "published": "2022-11-22",
+    "abs_url": "https://arxiv.org/abs/2211.12065",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.5 (Hajebi)",
+    "statement_text": "For every integer $t \\geq 1$ there exists $\\varepsilon > 0$ such that every $K_{t,t}$-free graph $G$ has a clique cover of size $O(|G|^{2-\\varepsilon})$.",
+    "context_text": "Proposed by Sepehr Hajebi [3], this conjecture asks whether forbidding a complete bipartite graph $K_{t,t}$ as an induced subgraph forces a strictly subquadratic clique cover. It is the central conjecture studied in the paper.",
+    "attributed_to": "Sepehr Hajebi",
+    "attributed_year": null,
+    "paper_contribution": "Proves the conjecture in full via Theorem 1.6: every $K_{s,t}$-free graph $G$ with sufficiently many vertices admits a clique cover of size at most $\\frac{3}{2}|G|^{2-1/(s+t)}$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2211.12065",
+    "paper_title": "Clique covers of H-free graphs",
+    "paper_authors": [
+      "Tung Nguyen",
+      "Alex Scott",
+      "Paul Seymour",
+      "Stephan Thomasse"
+    ],
+    "published": "2022-11-22",
+    "abs_url": "https://arxiv.org/abs/2211.12065",
+    "source": "pdf"
+  }
+]

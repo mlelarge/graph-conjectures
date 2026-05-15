@@ -1,0 +1,21 @@
+{
+  "review_id": "2506.07264__01",
+  "safe_id": "2506.07264",
+  "arxiv_id": "2506.07264",
+  "conjecture_title": "Conjecture 9.1",
+  "paper_title": "Refinement of a conjecture on positive square energy of graphs",
+  "published": "2025-06-08",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 9.1 from arXiv:2506.07264 proposes that for a unicyclic graph of order n whose unique cycle has odd length k, the sign of the inequalities between s⁺(G), n, and s⁻(G) is determined by k mod 4. No follow-up paper resolving or partially proving this conjecture was found in a web search conducted in May 2026. The closely related arXiv:2604.15656 (April 2026) concerns p-energies for p=3 (cube of eigenvalues) rather than p=2, and does not address this conjecture.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "unicyclic graph \"square energy\" \"positive square energy\" s+ s- odd cycle conjecture 2025",
+    "Akbari Mohar Pragada Zhang \"positive square energy\" unicyclic graphs 2025 arxiv"
+  ],
+  "notes": "No follow-up found. The conjecture is very recent (June 2025). The paper arXiv:2604.15656 (April 2026) by overlapping authors studies positive and negative p-energies for p=3, not p=2, so it is unlikely to directly address Conjecture 9.1. Absence of follow-up is expected for a conjecture of this age."
+}

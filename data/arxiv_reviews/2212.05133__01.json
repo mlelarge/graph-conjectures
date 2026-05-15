@@ -1,0 +1,33 @@
+{
+  "review_id": "2212.05133__01",
+  "safe_id": "2212.05133",
+  "arxiv_id": "2212.05133",
+  "conjecture_title": "Open question on existence of lim n(2,d)/d^2",
+  "paper_title": "New bounds on the maximum number of neighborly boxes in R^d",
+  "published": "2023-03-03",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "The question of whether $\\lim_{d\\to\\infty} n(2,d)/d^2$ exists remains open. The source paper establishes the lower bound $n(2,d) > (1-o(1))d^2/2$ and conjectures the limit equals $1/2$ if it exists. A 2024 follow-up (arXiv:2402.02199) gives new lower bounds via a recursive construction of 2-neighborly codes and proposes a conjectured explicit formula for $n(2,d)$, but explicitly acknowledges that the existence of the limit is still unknown. No paper resolving the existence question was found.",
+  "since_posted": [
+    {
+      "title": "Neighborly boxes and bipartite coverings; constructions and conjectures",
+      "authors": "not retrieved",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2402.02199",
+      "arxiv_id": "2402.02199",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Provides improved lower bounds on $n(2,d)$ via a recursive construction of k-neighborly codes and conjectures an explicit formula for $n(2,d)$, while explicitly noting that the existence of $\\lim_{d\\to\\infty} n(2,d)/d^2$ remains unknown."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "neighborly boxes n(2,d) limit d^2 Alon Grytczuk Kisielewicz Przesławski arXiv 2212.05133",
+    "neighborly boxes R^d maximum number n(2,d) asymptotic 2023 2024 2025"
+  ],
+  "notes": "A 2024 follow-up (arXiv:2402.02199) explicitly restates the open question, confirming the limit question was unresolved as of February 2024. Authors of arXiv:2402.02199 were not retrieved from the abstract fetch (PDF was not machine-readable). Confidence is medium rather than high because the conjecture is now ~3 years old and further progress since 2024 could not be ruled out within the 5-call cap."
+}

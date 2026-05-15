@@ -1,0 +1,26 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Sivaraman's Conjecture",
+    "statement_text": "Two cops can win on connected $P_5$-free graphs; more generally, the cop number of connected $P_t$-free graphs is at most $t-3$ for $t \\geq 5$.",
+    "context_text": "Joret et al. had previously shown that the cop number of connected $P_t$-free graphs is at most $t-2$ for $t \\geq 3$. Sivaraman conjectured the improved bound of $t-3$ for $t \\geq 5$, with the $P_5$-free case attracting the most attention; various partial results (for subclasses of $P_5$-free graphs, and for the weaker 2K2-free class) had been established before the present work.",
+    "attributed_to": "Sivaraman",
+    "attributed_year": null,
+    "paper_contribution": "Proves the conjecture in full for $t = 5$: every connected $P_5$-free graph has cop number at most two.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2301.13175",
+    "paper_title": "Cops and robbers on $P_5$-free graphs",
+    "paper_authors": [
+      "Maria Chudnovsky",
+      "Sergey Norin",
+      "Paul Seymour",
+      "Jérémie Turcotte"
+    ],
+    "published": "2023-01-30",
+    "abs_url": "https://arxiv.org/abs/2301.13175",
+    "source": "pdf"
+  }
+]

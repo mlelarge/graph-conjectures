@@ -1,0 +1,32 @@
+[
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Open Problem: exact constant in the exponent",
+    "statement_text": "It would be interesting to find the exact value of the constant factor in the exponent. Optimizing our proof can yield a lower bound of $n/2^{ck+o(k)}$ with $c \\approx 3.9$, but is unlikely to give the correct bound.",
+    "context_text": "Theorem 1 and Yuster's construction together show that the optimal guaranteed length of the $k$-th power of a directed path in any $n$-vertex tournament has the form $n/2^{\\Theta(k)}$. The paper provides a lower bound $n/2^{4k+6k}$ and an upper bound $k(k+1)n/2^k$, leaving a gap in the constant in the exponent.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated in prose without a labelled environment; verbatim phrasing 'It would be interesting to find the exact value of the constant factor in the exponent.'",
+    "arxiv_id": "2010.05735",
+    "paper_title": "Powers of paths in tournaments",
+    "paper_authors": [
+      "Nemanja Draganić",
+      "François Dross",
+      "Jacob Fox",
+      "António Girão",
+      "Frédéric Havet",
+      "Dániel Korándi",
+      "William Lochet",
+      "David Munhá Correia",
+      "Alex Scott",
+      "Benny Sudakov"
+    ],
+    "published": "2021-02-16",
+    "abs_url": "https://arxiv.org/abs/2010.05735",
+    "source": "pdf"
+  }
+]

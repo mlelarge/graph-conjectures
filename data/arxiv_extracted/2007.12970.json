@@ -1,0 +1,48 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Strong Erdős-Szemerédi Conjecture (Conjecture 1)",
+    "statement_text": "For every $c > 0$ and $\\varepsilon > 0$, there is a threshold, $n_0$, such that if $n \\geq n_0$ then for any $n$-element subset of reals $A \\subset \\mathbb{R}$ and any graph $G_n$ with $n$ vertices and at least $n^{1+c}$ edges $$|A +_{G_n} A| + |A \\cdot_{G_n} A| \\geq |A|^{1+c-\\varepsilon}.$$",
+    "context_text": "Erdős and Szemerédi introduced the sum-product problem along the edges of a graph. The Strong Erdős-Szemerédi Conjecture, stated here as Conjecture 1, was refuted in the authors' earlier paper [1]. The present paper describes improved constructions showing how far below the conjectured bound the sum and product sets along graph edges can be.",
+    "attributed_to": "Erdős and Szemerédi",
+    "attributed_year": 1983,
+    "paper_contribution": "Provides improved constructions (using real numbers rather than integers) giving counterexamples covering all edge densities in the range $0 \\leq \\alpha \\leq 1/5$ (Theorem 2) and, by scaling, all $0 \\leq \\nu \\leq 3/5$ (Theorem 3), yielding $|A +_{G_n} A| + |A \\cdot_{G_n} A| = \\tilde{O}(|A|^{2-4\\alpha})$ for graphs with $\\tilde{\\Omega}(|A|^{2-2\\alpha})$ edges.",
+    "opg_lookup": true,
+    "confidence": "low",
+    "notes": "PDF extraction garbled 'c > 0' as 'c >' in the theorem header; reconstructed to 'c > 0' from context. Conjecture was already refuted in the authors' earlier paper [1]; this paper extends the refutation with improved constructions.",
+    "arxiv_id": "2007.12970",
+    "paper_title": "On sums and products along the edges, II",
+    "paper_authors": [
+      "Noga Alon",
+      "Imre Ruzsa",
+      "Jozsef Solymosi"
+    ],
+    "published": "2023-07-30",
+    "abs_url": "https://arxiv.org/abs/2007.12970",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Erdős-Szemerédi Matching Sum-Product Conjecture (within Problem 5)",
+    "statement_text": "For two $n$-element sets of integers $A = \\{a_1, \\ldots, a_n\\}$ and $B = \\{b_1, \\ldots, b_n\\}$ with $S = \\{a_i + b_i \\mid 1 \\leq i \\leq n\\}$ and $P = \\{a_i \\cdot b_i \\mid 1 \\leq i \\leq n\\}$, $$|P| + |S| = \\Omega(n^{1/2+c})$$ for some constant $c > 0$.",
+    "context_text": "Problem 5 frames the matching variant of the sum-product problem where sums and products are taken along a perfect matching between two $n$-element integer sets. Erdős and Szemerédi conjectured a super-$\\sqrt{n}$ lower bound; the best unconditional result (Chang) gives $n^{1/2}\\log^{1/48} n$, while Shkredov–Solymosi (Theorem 6) achieve $c = 1/10$ conditionally under the Bombieri-Lang conjecture.",
+    "attributed_to": "Erdős and Szemerédi",
+    "attributed_year": 1983,
+    "paper_contribution": "Shows (via Theorem 4 / [1, Theorem 3]) that for the multiset matching version $|P| + |S| = \\tilde{O}(n^{4/5})$ is achievable, implying that Theorem 6's exponent $1/2 + c$ cannot be improved beyond $1/2 + 1/5 = 7/10$ by this approach.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Conjecture is embedded in the body of Problem 5 (labeled by the paper authors) rather than in a standalone conjecture environment; attributed to Erdős and Szemerédi in the surrounding text with the same reference [5] as Conjecture 1.",
+    "arxiv_id": "2007.12970",
+    "paper_title": "On sums and products along the edges, II",
+    "paper_authors": [
+      "Noga Alon",
+      "Imre Ruzsa",
+      "Jozsef Solymosi"
+    ],
+    "published": "2023-07-30",
+    "abs_url": "https://arxiv.org/abs/2007.12970",
+    "source": "pdf"
+  }
+]

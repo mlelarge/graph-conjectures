@@ -1,0 +1,28 @@
+{
+  "review_id": "2304.03567__04",
+  "safe_id": "2304.03567",
+  "arxiv_id": "2304.03567",
+  "conjecture_title": "Conjecture 1",
+  "paper_title": "Temporalizing digraphs via linear-size balanced bi-trees",
+  "published": "2024-01-11",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The conjecture that every strong digraph on $n$ vertices has an $O(\\log n)$ size forward cover remains open. The source paper (STACS 2024) verifies it for bi-oriented graphs via a centroid-decomposition argument and shows a lower bound (Proposition 4) suggesting the logarithmic bound is tight. No subsequent paper resolving the general case was found in the indexed literature.",
+  "since_posted": [],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2206.12335",
+      "verified": false,
+      "note": "This paper (Balister, Johnston, Savery, Scott) concerns 1-independent percolation on Z^n — entirely unrelated to forward covers in digraphs. It appears to be a false fuzzy match from the corpus pipeline."
+    }
+  ],
+  "search_queries": [
+    "forward cover strong digraph log n vertex orderings temporal arxiv 2304.03567",
+    "\"forward cover\" digraph \"log n\" ordering Bessy Thomassé Viennot temporalizing",
+    "\"forward cover\" \"strong digraph\" temporal reachability orderings 2025 2026"
+  ],
+  "notes": "No follow-up paper proving or disproving the O(log n) forward cover conjecture was found after 5 web calls. The conjecture is recent (STACS 2024) and likely still open. The paper also proves existence of linear-size balanced bi-trees (the main technical contribution), which is a separate resolved question. The interval nest digraphs paper arXiv:2603.08585 appeared in search results but its abstract did not mention this conjecture."
+}

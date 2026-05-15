@@ -1,0 +1,22 @@
+{
+  "review_id": "2207.07775__02",
+  "safe_id": "2207.07775",
+  "arxiv_id": "2207.07775",
+  "conjecture_title": "Conjecture 5.4",
+  "paper_title": "Ramsey multiplicity and the Turán coloring",
+  "published": "2023-06-27",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "No post-2023 paper was found that resolves Conjecture 5.4. The source paper itself proves the weaker Theorem 1.2 (pendant count $t$ exponentially large in $k$ suffices), and the conjecture asks whether any sufficiently large $t$ always works for any $k$-critical base graph. A related 2023 paper (arXiv:2309.06959) extends the Turán-coloring extremality framework to the off-diagonal setting for the same class of graphs, but does not address the threshold question on $t$. The conjecture remains open.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Fox Wigderson \"generalized lollipop\" \"bonbon\" Ramsey multiplicity 2207.07775",
+    "Fox Wigderson \"two-color bonbon\" \"k-critical\" pendant edges Ramsey multiplicity graph",
+    "Ramsey multiplicity bonbon lollipop k-critical pendant edges Fox Wigderson 2024 2025"
+  ],
+  "notes": "Web search (3 queries, 3 WebFetch calls) found no paper proving or disproving Conjecture 5.4. The paper arXiv:2309.06959 ('Turán Colourings in Off-Diagonal Ramsey Multiplicity') extends related results to the off-diagonal setting for graphs with pendant edges added to non-3-colorable graphs, but its abstract does not mention the threshold on t that is the subject of Conjecture 5.4. Confidence is medium rather than high because the conjecture is now roughly 3 years old and a resolution could have appeared without being prominently indexed."
+}

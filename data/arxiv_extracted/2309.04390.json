@@ -1,0 +1,26 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.3",
+    "statement_text": "Every (even hole, $K_{4}$)-free graph of large enough treewidth contains the diamond.",
+    "context_text": "Sintiari and Trotignon observed that their layered wheel graphs $G_{h,w}$ tend strongly to contain induced diamonds (the graph obtained from $K_4$ by deleting an edge) in order to maintain large treewidth while remaining even-hole-free, and conjectured that diamonds are unavoidable induced subgraphs in all (even hole, $K_4$)-free graphs of sufficiently large treewidth. The paper proves this conjecture as a special case of two stronger results that fully characterize which graphs $H$ must appear as induced subgraphs in such graphs.",
+    "attributed_to": "Sintiari and Trotignon",
+    "attributed_year": 2021,
+    "paper_contribution": "Proves Conjecture 1.3 in full; more precisely, proves two stronger results: (a) for every $K_4$-free chordal graph $H$, every (even hole, $K_4$)-free graph of sufficiently large treewidth contains an induced copy of $H$ (the diamond case yields the conjecture), and (b) for every forest $H$ and every $t\\in\\mathbb{N}$, every even-hole-free graph of sufficiently large treewidth contains either $K_t$ or an induced subgraph obtained from $H$ by adding a universal vertex.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2309.04390",
+    "paper_title": "Induced subgraphs and tree decompositions XI. Local structure in even-hole-free graphs of large treewidth",
+    "paper_authors": [
+      "Bogdan Alecu",
+      "Maria Chudnovsky",
+      "Sepehr Hajebi",
+      "Sophie Spirkl"
+    ],
+    "published": "2025-10-07",
+    "abs_url": "https://arxiv.org/abs/2309.04390",
+    "source": "html"
+  }
+]

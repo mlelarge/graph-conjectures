@@ -1,0 +1,48 @@
+[
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Erdős' question on c_2",
+    "statement_text": "What is the largest real number $c_2$ such that every two-coloring of the positive integers has a color class for which the upper logarithmic density of its set of subset sums is at least $c_2$? More generally, what is $c_r := \\min_{\\mathbb{N}=A_1\\sqcup\\cdots\\sqcup A_r} \\max_{i\\in[r]} \\bar{d}_{\\ell}(\\Sigma(A_i))$?",
+    "context_text": "Erdős introduced $c_r$ in his problem papers and noted that every $r$-coloring has some color class whose subset sums have upper logarithmic density at least $1/2$, and upper density $1$. He observed that an explicit two-coloring (where $n$ receives color based on $\\lfloor\\log_4\\log_2 n\\rfloor \\bmod 2$) shows each color class's subset sums has upper logarithmic density $14/15 < 1$, motivating the question of the exact value of $c_2$.",
+    "attributed_to": "Erdős",
+    "attributed_year": null,
+    "paper_contribution": "Proves that $c_2 = (2+\\sqrt{3})/4 \\approx 0.93301$, fully answering Erdős' forty-year-old question; also establishes the upper bound $c_r \\leq \\left(1-\\frac{1}{2b_0}\\right)\\left(1+\\frac{1}{2^r b_0 - r}\\right)$ for all $r\\geq 2$, where $b_0>1$ is the unique root of $b^r-2rb+r-1=0$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Attributed year unknown (bibliography not in extracted text); described as 'forty-year-old' in a paper posted May 2021, suggesting circa 1981. References cited as [3, 4] in the paper.",
+    "arxiv_id": "2105.15195",
+    "paper_title": "The upper logarithmic density of monochromatic subset sums",
+    "paper_authors": [
+      "David Conlon",
+      "Jacob Fox",
+      "Huy Tuan Pham"
+    ],
+    "published": "2022-09-22",
+    "abs_url": "https://arxiv.org/abs/2105.15195",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Conjecture on tightness of the upper bound for all r ≥ 3",
+    "statement_text": "We suspect that our upper bound $c_r \\leq \\left(1-\\frac{1}{2b_0}\\right)\\left(1+\\frac{1}{2^r b_0 - r}\\right)$ is also tight for all $r \\geq 3$, where $b_0 > 1$ is the unique root of $b^r - 2rb + r - 1 = 0$.",
+    "context_text": "Theorem 1 gives a general upper bound for $c_r$ for all $r\\geq 2$ and proves it is achieved (i.e., tight) for $r=2$, yielding $c_2=(2+\\sqrt{3})/4$. The authors believe the same formula gives the exact value for all larger $r$, but remark that their methods are insufficient to prove this, directing the reader to brief concluding remarks for further discussion.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated in prose without a labelled environment: 'We suspect that our upper bound is also tight for all r ≥ 3, but our methods do not seem sufficient for proving this.' PDF extraction may have garbled exponent notation (2^r vs 2r) in the formula.",
+    "arxiv_id": "2105.15195",
+    "paper_title": "The upper logarithmic density of monochromatic subset sums",
+    "paper_authors": [
+      "David Conlon",
+      "Jacob Fox",
+      "Huy Tuan Pham"
+    ],
+    "published": "2022-09-22",
+    "abs_url": "https://arxiv.org/abs/2105.15195",
+    "source": "pdf"
+  }
+]

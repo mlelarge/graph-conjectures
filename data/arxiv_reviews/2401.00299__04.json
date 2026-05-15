@@ -1,0 +1,22 @@
+{
+  "review_id": "2401.00299__04",
+  "safe_id": "2401.00299",
+  "arxiv_id": "2401.00299",
+  "conjecture_title": "Problem 1.10",
+  "paper_title": "Partitioning the hypercube into smaller hypercubes",
+  "published": "2024-11-07",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Problem 1.10 from arXiv:2401.00299 asks whether $f(d)/f_{\\leq 2}(d)$ is subexponential in $n = 2^{d-1}$, where $f(d)$ counts all subcube partitions of the $d$-dimensional hypercube and $f_{\\leq 2}(d)$ counts those restricted to subcubes of dimension at most 2. The source paper (published in the Illinois Journal of Mathematics, April 2025) poses this as an open problem addressing the gap between unrestricted and dimension-at-most-2 subcube partitions. No follow-up resolving this question has been found in the literature as of May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Alon Balogh Potapov hypercube subcube partition f(d) subexponential 2401.00299",
+    "hypercube partition subcubes dimension 2 counting subexponential gap arxiv 2024 2025",
+    "\"subcube partition\" \"f(d)\" \"subexponential\" hypercube Alon Balogh 2025 2026"
+  ],
+  "notes": "No follow-up resolving Problem 1.10 found after 3 targeted searches. The related paper arXiv:2411.04479 (Tarannikov, Nov 2024) addresses asymptotic counts for Z_q^n partitions into large subcubes but does not address this specific ratio. The conjecture is recent (arXiv preprint January 2024, journal publication November 2024) and absence of follow-up is consistent with an open problem."
+}

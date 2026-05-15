@@ -1,0 +1,23 @@
+{
+  "review_id": "2512.08049__00",
+  "safe_id": "2512.08049",
+  "arxiv_id": "2512.08049",
+  "conjecture_title": "Problem 1",
+  "paper_title": "Spectrally symmetric orientations of graphs",
+  "published": "2025-12-08",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The paper establishes that the minimal density constant $\\widehat{\\rho}$ satisfies $\\frac{13}{18} \\leq \\widehat{\\rho} \\leq \\frac{10}{11}$, with the lower bound witnessed by a spectrally symmetric orientation of $K_6 - E(2K_2)$ and the upper bound coming from a density obstruction for line graphs of dense graphs. No follow-up paper resolving the exact value of $\\widehat{\\rho}$ was found in the literature as of May 2026; the problem remains open.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "spectrally symmetric orientations graphs edge density threshold Akbari Mohar 2512.08049",
+    "spectrally symmetric graph adjacency spectrum density conjecture 2025 2026",
+    "Hermitian adjacency matrix oriented graph spectrum symmetric density rho-hat 13/18 10/11",
+    "Akbari Aloni Levit Mohar Xia spectrally symmetric orientation follow-up cite 2026"
+  ],
+  "notes": "No follow-up found in the indexed literature. The conjecture is approximately 5 months old (posted December 2025). Four web searches and one WebFetch on the source paper abstract were performed; all returned only the original arXiv:2512.08049 entry, confirming the open status with high confidence."
+}

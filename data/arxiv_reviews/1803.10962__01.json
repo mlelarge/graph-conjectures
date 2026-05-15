@@ -1,0 +1,33 @@
+{
+  "review_id": "1803.10962__01",
+  "safe_id": "1803.10962",
+  "arxiv_id": "1803.10962",
+  "conjecture_title": "Informal conjecture on single-conflict chromatic number of degenerate graphs",
+  "paper_title": "Single-conflict colouring",
+  "published": "2020-10-09",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "solved",
+  "confidence": "high",
+  "summary": "Bradshaw and Masařík (arXiv:2112.06333) proved that the single-conflict chromatic number of any simple d-degenerate graph G satisfies χ↮(G) ≤ ⌨12√(d(1+log((d+1)Δ))⌉, which is O(√d·log n), directly answering Question 1.5 posed by Dvořák, Esperet, Kang, and Ozeki. This resolves the conjecture in the simple-graph (μ=1) case, which is precisely the case discussed in the surrounding context concerning the μ=1 instance of Theorem 1. The paper was subsequently published in the Journal of Graph Theory (2025, DOI 10.1002/jgt.23025).",
+  "since_posted": [
+    {
+      "title": "Single-conflict colorings of degenerate graphs",
+      "authors": "Peter Bradshaw, Tomáš Masařík",
+      "year": 2021,
+      "venue": "Journal of Graph Theory",
+      "url": "https://arxiv.org/abs/2112.06333",
+      "arxiv_id": "2112.06333",
+      "doi": "10.1002/jgt.23025",
+      "kind": "proof",
+      "claim": "Proves χ↮(G) = O(√d·log n) for simple d-degenerate graphs on n vertices (Theorem 1.7), explicitly answering the conjecture (Question 1.5) of Dvořák, Esperet, Kang, and Ozeki."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "single-conflict chromatic number degenerate graphs sqrt log bound 1803.10962",
+    "single-conflict colouring Dvorak Esperet Kang Ozeki degenerate graph chromatic number"
+  ],
+  "notes": "The conjecture is fully resolved for simple graphs (μ=1), which is the case stated in the surrounding context. Bradshaw–Masařík also handle multigraphs with edge-multiplicity at most log log n. The arXiv preprint appeared December 2021; journal publication in Journal of Graph Theory is listed as 2025."
+}

@@ -1,0 +1,46 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Hadwiger's Conjecture",
+    "statement_text": "For every integer $t \\geq 1$, every graph $G$ with $\\chi(G) = t$ contains a $K_t$-minor.",
+    "context_text": "Hadwiger's conjecture is described as among the most famous and difficult open problems in graph theory. It has been verified for $t \\leq 6$ (the cases $t = 5$ and $t = 6$ relying on the Four-Color Theorem), while all cases $t \\geq 7$ remain wide open.",
+    "attributed_to": "Hadwiger",
+    "attributed_year": 1943,
+    "paper_contribution": "Proves the $t = 5$ case as a corollary (Corollary 1.4) of establishing Holroyd's Strong Hadwiger's conjecture for $t = 4$; additionally shows that every 5-chromatic graph contains a $K_5$-minor with a singleton branch-set, and that in a 5-vertex-critical graph any specified vertex may serve as that singleton branch-set.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2209.00594",
+    "paper_title": "Strengthening Hadwiger's conjecture for $4$- and $5$-chromatic graphs",
+    "paper_authors": [
+      "Anders Martinsson",
+      "Raphael Steiner"
+    ],
+    "published": "2022-09-01",
+    "abs_url": "https://arxiv.org/abs/2209.00594",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Strong Hadwiger's Conjecture (Holroyd)",
+    "statement_text": "Let $G$ be a graph with $\\chi(G) = t$, and let $S$ be a colorful set in $G$. Then $G$ contains an $S$-rooted $K_t$-minor.",
+    "context_text": "Holroyd proposed this strengthening of Hadwiger's conjecture in 1997 under the name 'Strong Hadwiger's conjecture', observing that a colorful set — one that meets every color class in every proper $\\chi(G)$-coloring — should force a $K_t$-minor rooted at that set. Holroyd proved the conjecture for $t \\leq 3$; the case $t = 4$ was the first open case.",
+    "attributed_to": "Holroyd",
+    "attributed_year": 1997,
+    "paper_contribution": "Proves the conjecture for the first open case $t = 4$ (Theorem 1.3): every graph $G$ with $\\chi(G) = 4$ and colorful set $S \\subseteq V(G)$ contains an $S$-rooted $K_4$-minor.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2209.00594",
+    "paper_title": "Strengthening Hadwiger's conjecture for $4$- and $5$-chromatic graphs",
+    "paper_authors": [
+      "Anders Martinsson",
+      "Raphael Steiner"
+    ],
+    "published": "2022-09-01",
+    "abs_url": "https://arxiv.org/abs/2209.00594",
+    "source": "pdf"
+  }
+]

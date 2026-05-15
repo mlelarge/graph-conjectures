@@ -1,0 +1,102 @@
+[
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 6.1",
+    "statement_text": "For a 3-uniform $n$-vertex hypergraph $H$ with $d_{1}(H)=d$, [statement truncated in source]",
+    "context_text": "Theorem 1.5 gives $r(H;q)\\leq\\exp^{(k-1)}(O_{k,q}(d))n$ for $k\\geq 4$-uniform hypergraphs with first skeletal degeneracy $d$. For $k=3$ the analogous bound from the proof is $\\exp^{(2)}(O_{3,q}(d))n$; Conjecture 6.1 posits a stronger bound for 3-uniform hypergraphs, stronger than a result of Bradač–Fox–Sudakov [3] in which skeletal degeneracy is replaced by $\\sqrt{e(H)}$. The inequality $d_{1}(H)\\leq O(\\sqrt{e(H)})$ shows that 6.1 would imply that result.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "Statement body truncated in the provided source after the hypothesis clause; exact bound conjectured is not fully reproduced.",
+    "arxiv_id": "2401.00359",
+    "paper_title": "Ramsey and Turán numbers of sparse hypergraphs",
+    "paper_authors": [
+      "Jacob Fox",
+      "Maya Sankar",
+      "Michael Simkin",
+      "Jonathan Tidor",
+      "Yunkun Zhou"
+    ],
+    "published": "2023-12-31",
+    "abs_url": "https://arxiv.org/abs/2401.00359",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 6.2",
+    "statement_text": "There is a constant $c_{k}>0$ such that for every $k$-uniform $k$-partite hypergraph $H$, [statement truncated in source]",
+    "context_text": "Theorem 1.4 gives $\\Omega_{k}(n^{k-C_{k}/d_{1}(H)})\\leq\\operatorname{ex}(n,H)\\leq O_{H}(n^{k-c_{k}/d_{1}(H)^{k-1}})$. The complete $k$-partite hypergraph $K^{(k)}_{d,\\ldots,d}$ shows the upper bound is tight in $d_{1}$, while the bipartite hedgehog $H_{d}^{(k)}$ shows the lower bound is tight in $d_{1}$. This gap motivates replacing $d_{1}(H)$ by the finer quantity $d_{\\mathsf{max}}(H)=\\max_{1\\leq i<k}d_{i}(H)$, and Conjecture 6.2 asserts that the Turán exponent is controlled by $d_{\\mathsf{max}}(H)$.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "Statement body truncated in the provided source after the setup clause; the precise bound in terms of $d_{\\mathsf{max}}(H)$ is not fully reproduced.",
+    "arxiv_id": "2401.00359",
+    "paper_title": "Ramsey and Turán numbers of sparse hypergraphs",
+    "paper_authors": [
+      "Jacob Fox",
+      "Maya Sankar",
+      "Michael Simkin",
+      "Jonathan Tidor",
+      "Yunkun Zhou"
+    ],
+    "published": "2023-12-31",
+    "abs_url": "https://arxiv.org/abs/2401.00359",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 6.4",
+    "statement_text": "Let $L$ be a $d\\times d$ Latin square. Define $H_{L}$ to be the 3-uniform 3-partite hypergraph on vertex set $[d]\\sqcup[d]\\sqcup[d]$ where $(i,j,k)\\in E(H_{L})$ if and only if $L(i,j)=k$. Then $\\mathrm{ex}(n,H_{L})=n^{3-\\Theta(1/d)}$.",
+    "context_text": "For every $d\\times d$ Latin square one has $d_{1}(H_{L}),d_{2}(H_{L})=\\Theta(d)$, so $d_{\\mathsf{max}}(H_{L})=\\Theta(d)$, yet Theorem 1.4 only yields $\\mathrm{ex}(n,H_{L})\\leq O(n^{3-c/d^{2}})$. The 1-skeleton of $H_{L}$ is $K_{d,d,d}$, the same as that of the complete 3-partite hypergraph $K^{(3)}_{d,d,d}$, so current techniques cannot distinguish $H_{L}$ from $K^{(3)}_{d,d,d}$ at the level of the Turán exponent. Conjecture 6.4 predicts that the exponent is $3-\\Theta(1/d)$, matching $d_{\\mathsf{max}}(H_{L})=\\Theta(d)$ via Conjecture 6.2.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2401.00359",
+    "paper_title": "Ramsey and Turán numbers of sparse hypergraphs",
+    "paper_authors": [
+      "Jacob Fox",
+      "Maya Sankar",
+      "Michael Simkin",
+      "Jonathan Tidor",
+      "Yunkun Zhou"
+    ],
+    "published": "2023-12-31",
+    "abs_url": "https://arxiv.org/abs/2401.00359",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 6.5",
+    "statement_text": "There is a constant $c>0$ such that for all $d\\geq 4$ the following holds. If $G$ is a (not necessarily linear) 3-uniform hypergraph on $n$ vertices with at least $n^{3-c/d}$ edges, then there is a linear subhypergraph of $G$ with $d$ vertices and at least $d^{2}/100$ edges.",
+    "context_text": "Proving that $\\mathrm{ex}(n,H_{L})\\leq O(n^{3-c/d})$ would require finding $H_{L}$ — a linear hypergraph — in any sufficiently dense host. The current barrier is that the techniques only find $K^{(3)}_{d,d,d}$, a non-linear structure. If Conjecture 6.5 holds, finding any dense enough linear subhypergraph (with quadratically many edges) would be the key missing step. The conjecture is known without the linearity constraint, since a hypergraph Kővári–Sós–Turán argument gives $K^{(3)}_{1,(d-1)/2,(d-1)/2}$ in any 3-uniform hypergraph with $n^{3-c/d}$ edges.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2401.00359",
+    "paper_title": "Ramsey and Turán numbers of sparse hypergraphs",
+    "paper_authors": [
+      "Jacob Fox",
+      "Maya Sankar",
+      "Michael Simkin",
+      "Jonathan Tidor",
+      "Yunkun Zhou"
+    ],
+    "published": "2023-12-31",
+    "abs_url": "https://arxiv.org/abs/2401.00359",
+    "source": "html"
+  }
+]

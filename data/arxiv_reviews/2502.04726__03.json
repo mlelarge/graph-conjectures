@@ -1,0 +1,33 @@
+{
+  "review_id": "2502.04726__03",
+  "safe_id": "2502.04726",
+  "arxiv_id": "2502.04726",
+  "conjecture_title": "Question 4.3",
+  "paper_title": "Lollipops, dense cycles and chords",
+  "published": "2025-10-10",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Question 4.3 asks whether every graph with minimum degree 3 contains a cycle of length ℓ with at least cℓ chords for some constant c>0. Draganć and Girão (arXiv:2601.08769, 2026) proved that constant minimum degree suffices to guarantee a cycle of length ℓ with Ω(ℓ/log^C ℓ) chords, citing arXiv:2502.04726 directly. This achieves almost-linear chord count under constant minimum degree, but falls short of the conjectured exactly linear bound cℓ; the full statement of Question 4.3 remains open.",
+  "since_posted": [
+    {
+      "title": "Cycles with almost linearly many chords",
+      "authors": "Nemanja Draganć, António Girão",
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2601.08769",
+      "arxiv_id": "2601.08769",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves that every graph with sufficiently large constant minimum degree δ(G) ≥ C contains a cycle of length ℓ with Ω(ℓ/log^C ℓ) chords, achieving almost-linear chord count and citing arXiv:2502.04726 explicitly, but stopping short of the linear bound cℓ asked in Question 4.3."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "arXiv 2502.04726 Dvorak Martins Thomasse Trotignon lollipops dense cycles chords",
+    "cycle chords minimum degree 3 linearly many chords graph conjecture 2025 2026"
+  ],
+  "notes": "The follow-up paper arXiv:2601.08769 directly cites the source paper and proves a related but weaker result: almost-linear (Ω(ℓ/log^C ℓ)) rather than linear (Ω(ℓ)) chord count. Whether minimum degree 3 specifically suffices (as opposed to a larger constant), and whether the chord count can be made exactly linear, both remain open."
+}

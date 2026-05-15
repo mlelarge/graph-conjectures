@@ -1,0 +1,33 @@
+{
+  "review_id": "1912.08328__00",
+  "safe_id": "1912.08328",
+  "arxiv_id": "1912.08328",
+  "conjecture_title": "Conjecture on unavoidable G-dependence in Theorem 2",
+  "paper_title": "Extremal and Ramsey results on graph blowups",
+  "published": "2020-04-06",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "solved",
+  "confidence": "high",
+  "summary": "Girão and Hancock (arXiv:2205.12826, European J. Combin. 120 (2024) 103984) proved the conjecture affirmatively: for every 3-chromatically connected graph H (including triangles), the dependence on G in the multiplicative factor a(G,H,r) of the bound B(G→rH;t) ≤ a·b^t is unavoidable. They also showed the complementary result that for forests F the factor a can be chosen independently of G.",
+  "since_posted": [
+    {
+      "title": "Two Ramsey problems in blowups of graphs",
+      "authors": "António Girão, Robert Hancock",
+      "year": 2024,
+      "venue": "European Journal of Combinatorics",
+      "url": "https://arxiv.org/abs/2205.12826",
+      "arxiv_id": "2205.12826",
+      "doi": null,
+      "kind": "proof",
+      "claim": "Proves the conjecture by establishing that for every 3-chromatically connected graph H (in particular the triangle K_3), the G-dependence in the multiplicative factor a(G,H,r) is necessary; conversely, for forests the factor a can be taken independent of G."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Fox Luo Wigderson \"graph blowups\" Ramsey \"multiplicative factor\" \"dependence on G\" 1912.08328",
+    "graph blowup Ramsey \"unavoidable\" G-dependence exponential bound arXiv 2021 2022 2023 2024"
+  ],
+  "notes": "Conjecture settled affirmatively by Girão–Hancock arXiv:2205.12826 (European J. Combin. 2024): G-dependence in the prefactor is unavoidable for 3-chromatically connected H and unnecessary for forests."
+}

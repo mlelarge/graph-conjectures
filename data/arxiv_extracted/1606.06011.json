@@ -1,0 +1,98 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Chen-Chvátal Conjecture (Conjecture 1.1)",
+    "statement_text": "Every metric space on $n$ points, where $n \\geq 2$, either has at least $n$ distinct lines or has a universal line.",
+    "context_text": "Chen and Chvátal proposed this conjecture as a generalisation of the classical result that $n$ non-collinear points in the Euclidean plane determine at least $n$ distinct lines, using betweenness-based lines in arbitrary metric spaces. The paper establishes a slightly stronger version — $\\ell(G) + \\mathrm{br}(G) \\geq |G|$ — for the hereditary graph class $\\mathcal{C}$, which contains all chordal graphs and all distance-hereditary graphs.",
+    "attributed_to": "Chen and Chvátal",
+    "attributed_year": 2008,
+    "paper_contribution": "Proves a strengthened form of the conjecture ($\\ell(G)+\\mathrm{br}(G)\\geq|G|$) for all connected graphs $G\\in\\mathcal{C}\\setminus\\mathcal{F}$, where $\\mathcal{C}$ is a hereditary class strictly containing chordal and distance-hereditary graphs.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Source is PDF; mathematical notation is simple and reads cleanly.",
+    "arxiv_id": "1606.06011",
+    "paper_title": "A new class of graphs that satisfies the Chen-Chvátal Conjecture",
+    "paper_authors": [
+      "Pierre Aboulker",
+      "Martin Matamala",
+      "Paul Rochet",
+      "Jose Zamora"
+    ],
+    "published": "2016-06-20",
+    "abs_url": "https://arxiv.org/abs/1606.06011",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 2.2",
+    "statement_text": "There is a finite set of graphs $F_0$ such that every connected graph $G \\notin F_0$ either has a pendant edge or satisfies $\\ell(G) + \\mathrm{br}(G) \\geq |G|$.",
+    "context_text": "The authors observe that replacing a bridge by a path of arbitrary length in a counter-example to $\\ell(G)+\\mathrm{br}(G)\\geq|G|$ yields infinitely many counter-examples, so finitely many minimal ones cannot account for all exceptions; they propose that graphs with a pendant edge should be excluded and that all remaining counter-examples come from a finite family. The three known minimal counter-examples with a bridge are depicted in Figure 2.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "Source is PDF; statement is cleanly readable.",
+    "arxiv_id": "1606.06011",
+    "paper_title": "A new class of graphs that satisfies the Chen-Chvátal Conjecture",
+    "paper_authors": [
+      "Pierre Aboulker",
+      "Martin Matamala",
+      "Paul Rochet",
+      "Jose Zamora"
+    ],
+    "published": "2016-06-20",
+    "abs_url": "https://arxiv.org/abs/1606.06011",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 2.3",
+    "statement_text": "For every connected graph $G$, $\\ell(G) + \\mathrm{ul}(G) \\geq |G|$.",
+    "context_text": "Here $\\mathrm{ul}(G)$ denotes the number of pairs of vertices in $G$ that induce a universal line. This variant replaces the bridge count by the universal-line-pair count; it is stronger than the original Chen-Chvátal conjecture in that it does not dismiss graphs with universal lines as trivial, and no counter-example is known to this conjecture.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "Source is PDF; statement is cleanly readable.",
+    "arxiv_id": "1606.06011",
+    "paper_title": "A new class of graphs that satisfies the Chen-Chvátal Conjecture",
+    "paper_authors": [
+      "Pierre Aboulker",
+      "Martin Matamala",
+      "Paul Rochet",
+      "Jose Zamora"
+    ],
+    "published": "2016-06-20",
+    "abs_url": "https://arxiv.org/abs/1606.06011",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Open question on counter-examples to ℓ(G)+br(G)≥|G|",
+    "statement_text": "It remains unknown whether all counter-examples to $\\ell(G) + \\mathrm{br}(G) \\geq |G|$ can be obtained from a finite set of graphs by replacing a bridge by a path of arbitrary length.",
+    "context_text": "The authors note (on the basis of an observation by Yori Zwols) that any counter-example containing a bridge generates infinitely many counter-examples by path-elongation. They ask whether this operation accounts for all counter-examples.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated as 'it remains unknown' in running prose without a labelled environment.",
+    "arxiv_id": "1606.06011",
+    "paper_title": "A new class of graphs that satisfies the Chen-Chvátal Conjecture",
+    "paper_authors": [
+      "Pierre Aboulker",
+      "Martin Matamala",
+      "Paul Rochet",
+      "Jose Zamora"
+    ],
+    "published": "2016-06-20",
+    "abs_url": "https://arxiv.org/abs/1606.06011",
+    "source": "pdf"
+  }
+]

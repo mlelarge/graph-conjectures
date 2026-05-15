@@ -1,0 +1,25 @@
+[
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Open Question on Circular Drawing Characterisation",
+    "statement_text": "Is there a theorem that says ``every appropriately connected digraph $G$ contains no thing of type $X$ if and only if $G$ admits a circular drawing''?",
+    "context_text": "Thomassen's theorem gives a characterisation of circular drawings in the presence of a specific 2-vertex separator. The authors generalise this into a motivating question and, despite fully characterising weightable digraphs in the paper, explicitly state: ``We still have not come up with the characterization we hoped for of the digraphs with circular drawings.''",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "No labelled theorem environment; stated as a motivating open question in the introduction and explicitly left unresolved at the end of the introductory discussion.",
+    "arxiv_id": "2601.12746",
+    "paper_title": "When all directed cycles have the same weight",
+    "paper_authors": [
+      "Eli Berger",
+      "Daniel Carter",
+      "Paul Seymour"
+    ],
+    "published": "2026-01-19",
+    "abs_url": "https://arxiv.org/abs/2601.12746",
+    "source": "pdf"
+  }
+]

@@ -1,0 +1,45 @@
+{
+  "review_id": "1704.02367__01",
+  "safe_id": "1704.02367",
+  "arxiv_id": "1704.02367",
+  "conjecture_title": "Open Problem: Better parameter dependence for ordered binary matrix removal",
+  "paper_title": "Testing hereditary properties of ordered graphs and matrices",
+  "published": "2017-04-07",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "medium",
+  "summary": "The open problem asks to improve the wowzer-type parameter dependence in the ordered binary matrix removal lemma (for finite families) to polynomial or at least exponential dependence between \\delta^{-1} and \\varepsilon^{-1}. Follow-up work has made partial progress: arXiv:2110.03577 characterises exactly when polynomial removal lemmas exist for ordered graphs (only for 2-vertex graphs or one specific 3-vertex configuration, up to symmetry), explicitly building on the Alon--Ben-Eliezer--Fischer framework and suggesting polynomial bounds for general families are rare; arXiv:2307.01652 proves a polynomial removal lemma for ordered matchings, a special subclass of ordered binary matrix patterns. The conjecture for arbitrary finite families of ordered binary matrices appears unresolved.",
+  "since_posted": [
+    {
+      "title": "Polynomial removal lemmas for ordered graphs",
+      "authors": "unknown",
+      "year": 2021,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2110.03577",
+      "arxiv_id": "2110.03577",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Characterises exactly when \\delta_F(\\varepsilon) can be chosen polynomially for ordered-graph removal lemmas (only for |V(F)|=2 or one specific 3-vertex case), explicitly citing the Alon--Ben-Eliezer--Fischer result; implies polynomial bounds for general ordered binary matrix families are unlikely."
+    },
+    {
+      "title": "Polynomial removal lemma for ordered matchings",
+      "authors": "unknown",
+      "year": 2023,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2307.01652",
+      "arxiv_id": "2307.01652",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves that for any ordered matching H on t vertices, an ordered n-vertex graph that is \\varepsilon-far from H-free contains poly(\\varepsilon)\\cdot n^t copies of H, establishing a polynomial removal lemma for the ordered matching special case (a subclass of ordered binary matrices)."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "ordered binary matrix removal lemma parameter dependence Alon Fischer Newman",
+    "ordered binary matrices regularity lemma polynomial dependence epsilon delta 2017",
+    "removal lemma ordered binary matrices wowzer polynomial dependence arXiv cite 1704.02367"
+  ],
+  "notes": "The paper arXiv:1609.04235 (Alon--Ben-Eliezer, submitted Sep 2016, journal 'Order' 2019) achieves polynomial dependence for a single forbidden ordered binary matrix; it predates the source paper and is therefore not listed in since_posted, but the source paper likely treats it as the starting point motivating the open problem for finite families. The two since_posted papers address ordered graphs and ordered matchings respectively -- closely related but not identical to ordered binary matrices in general. Author lists for arXiv:2110.03577 and arXiv:2307.01652 could not be confirmed from the abstract pages alone and are marked unknown."
+}

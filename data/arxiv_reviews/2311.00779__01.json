@@ -1,0 +1,22 @@
+{
+  "review_id": "2311.00779__01",
+  "safe_id": "2311.00779",
+  "arxiv_id": "2311.00779",
+  "conjecture_title": "Complexity of Flip Distance Between Rectangulations",
+  "paper_title": "Shortest paths on polymatroids and hypergraphic polytopes",
+  "published": "2023-11-06",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The computational complexity of computing the flip distance between two rectangulations of a unit square remains open as of May 2026. The source paper (Cardinal–Steiner 2023) proves NP-hardness for shortest paths on polymatroids in general — a framework that subsumes rectangulations as a special case — but this general hardness result does not resolve the specific complexity of the rectangulations instance. A wide search of the 2024–2026 literature found no follow-up paper settling this question; Cardinal’s June 2025 invited talk at CNRS still presents the rectangulations case within the same open context.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "flip distance rectangulations computational complexity unit square",
+    "rectangulations flip graph shortest path complexity arXiv 2311.00779 Cardinal Steiner",
+    "rectangulations flip distance NP-hard open problem polymatroid 2024 2025"
+  ],
+  "notes": "No follow-up paper specifically resolving the complexity of flip distance between rectangulations was found. Closely related work in the same area: (1) Ito et al. proved NP-hardness of computing combinatorial shortest paths on graph associahedra (SIAM J. Discrete Math., 2024, DOI:10.1137/24M1720317), and an FPT algorithm for the same graph-associahedra problem appeared at ICALP 2025 (DOI:10.4230/LIPIcs.ICALP.2025.63); both concern elimination-tree flip graphs, not rectangulations. (2) The Rectangulotopes paper (arXiv:2404.17349, 2024) constructs polytopes whose skeleta are flip graphs on rectangulations but does not address computational complexity. The rectangulations case remains a specific open sub-problem within the broader polymatroid shortest-path framework of 2311.00779."
+}

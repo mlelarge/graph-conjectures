@@ -1,0 +1,34 @@
+{
+  "review_id": "2005.12861__00",
+  "safe_id": "2005.12861",
+  "arxiv_id": "2005.12861",
+  "conjecture_title": "Question 1.5",
+  "paper_title": "Finding an induced path that is not a shortest path",
+  "published": "2020-05-26",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "Question 1.5 asks whether, for fixed k>1, there is a polynomial-time algorithm deciding if a graph G contains an induced uv-path of length at least d(u,v)+k. The source paper resolves k=1 (Theorem 1.1, running in O(n^18)) and notes the algorithm can be adjusted for k=2, leaving k≥3 explicitly open. A follow-up by Chiu and Lu (STACS 2022; Information and Computation 2024, arXiv:2109.15268) improves the k=1 algorithm to O(n^4.75) via Boolean matrix multiplication, but does not address the k≥3 case. No resolution of the k≥3 question was found in the indexed literature.",
+  "since_posted": [
+    {
+      "title": "Blazing a Trail via Matrix Multiplications: A Faster Algorithm for Non-shortest Induced Paths",
+      "authors": "Yung-Chung Chiu, Hsueh-I Lu",
+      "year": 2024,
+      "venue": "Information and Computation",
+      "url": "https://arxiv.org/abs/2109.15268",
+      "arxiv_id": "2109.15268",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Improves the k=1 algorithm of Berger-Seymour-Spirkl from O(n^18) to O(n^4.75) using a poly-logarithmic number of n²×n² Boolean matrix multiplications; does not address Question 1.5 for k≥3."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "induced path shortest path polynomial algorithm Berger Seymour Spirkl 2005.12861",
+    "induced uv-path length d(u,v)+k polynomial-time algorithm graph complexity",
+    "induced path \"d(u,v)+k\" OR \"non-shortest induced path\" fixed k polynomial algorithm 2021 2022 2023 2024"
+  ],
+  "notes": "The k=1 case (any induced non-shortest uv-path) was settled by the source paper itself; k=2 is also handled by a minor adjustment of the same algorithm. The question is open for all k≥3. Chiu-Lu (2022/2024) is the only confirmed follow-up and concerns runtime improvement for k=1 only."
+}

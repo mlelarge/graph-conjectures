@@ -1,0 +1,65 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 3 (List Hadwiger Conjecture)",
+    "statement_text": "There exists an absolute constant $c > 0$ such that every $K_t$-minor free graph $G$ satisfies $\\chi_\\ell(G) \\leq ct$.",
+    "context_text": "The List Hadwiger Conjecture was first stated by Kawarabayashi and Mohar in 2007 and also appears in the Open Problem Garden. It asserts that the list chromatic number of $K_t$-minor free graphs is linearly bounded in $t$, as an asymptotic substitute for the exact version of Hadwiger's conjecture which fails for list coloring.",
+    "attributed_to": "Kawarabayashi and Mohar",
+    "attributed_year": 2007,
+    "paper_contribution": "Shows that $c \\geq 2$ is necessary by constructing $K_t$-minor free graphs with list chromatic number at least $(2-o(1))t$ via the probabilistic method, improving the previous lower bound $c \\geq \\frac{4}{3}$ of Barát, Joret and Wood (2011).",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2110.09403",
+    "paper_title": "Improved lower bound for the list chromatic number of graphs with no $K_t$ minor",
+    "paper_authors": [
+      "Raphael Steiner"
+    ],
+    "published": "2021-10-18",
+    "abs_url": "https://arxiv.org/abs/2110.09403",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 4 (Kawarabayashi-Mohar, $c = \\tfrac{3}{2}$)",
+    "statement_text": "Every graph $G$ without a $K_t$-minor satisfies $\\chi_\\ell(G) \\leq \\frac{3}{2}t$.",
+    "context_text": "Kawarabayashi and Mohar stated their belief that the List Hadwiger Conjecture holds with the specific constant $c = \\frac{3}{2}$; this also appears as Conjecture 8.4 in Seymour's survey on Hadwiger's conjecture. It strengthens the general linear conjecture by pinning down the constant.",
+    "attributed_to": "Kawarabayashi and Mohar",
+    "attributed_year": 2007,
+    "paper_contribution": "Disproves this conjecture by showing that the maximum list chromatic number of $K_t$-minor free graphs is at least $(2-o(1))t$, which strictly exceeds $\\frac{3}{2}t$ for all sufficiently large $t$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2110.09403",
+    "paper_title": "Improved lower bound for the list chromatic number of graphs with no $K_t$ minor",
+    "paper_authors": [
+      "Raphael Steiner"
+    ],
+    "published": "2021-10-18",
+    "abs_url": "https://arxiv.org/abs/2110.09403",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Problem 1",
+    "statement_text": "Does every $K_t$-minor-free graph $G$ satisfy $\\chi_\\ell(G) \\leq 2t$?",
+    "context_text": "Having established the lower bound $(2-o(1))t$ for the maximum list chromatic number of $K_t$-minor free graphs, the author asks whether the probabilistic lower-bound construction is essentially optimal up to lower-order terms, or whether the lower bound can be further improved beyond $2t$.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2110.09403",
+    "paper_title": "Improved lower bound for the list chromatic number of graphs with no $K_t$ minor",
+    "paper_authors": [
+      "Raphael Steiner"
+    ],
+    "published": "2021-10-18",
+    "abs_url": "https://arxiv.org/abs/2110.09403",
+    "source": "pdf"
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "review_id": "1903.05363__00",
+  "safe_id": "1903.05363",
+  "arxiv_id": "1903.05363",
+  "conjecture_title": "Optimal degree bounds $D_c$ for small $c$",
+  "paper_title": "Bounded maximum degree conjecture holds precisely for $c$-crossing-critical graphs with $c \\leq 12$",
+  "published": "2021-05-05",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The conjecture asks to determine the optimal values $D_c$ for each $c \\in \\{2, 3, \\ldots, 12\\}$; the source paper establishes $D_1 = 4$, $D_2 \\geq 8$, and notes that $D_2$ should be within reach via the Bokal–Oporowski–Richter–Salazar characterisation of large 2-crossing-critical graphs, while the remaining $D_c$ are left to future work. A 2021 arXiv preprint (2112.04854) establishes order, maximum degree, and other parameters of large 2-crossing-critical graphs and may implicitly yield $D_2$, but its abstract does not state a specific value. No paper published strictly after 2021 that resolves any optimal $D_c$ value for $c \\in \\{2, \\ldots, 12\\}$ was found in a broad web search.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "crossing-critical graphs maximum degree bounds D_c optimal 2022 2023 2024",
+    "arxiv 1903.05363 Bokal Dvorak Hlineny crossing-critical bounded degree citations",
+    "crossing-critical graphs D_2 optimal degree bound crossing-critical maximum degree 2022 2023 2024 2025"
+  ],
+  "notes": "No follow-up paper from 2022–2026 resolving any optimal $D_c$ value was found. arXiv:2112.04854 ('Properties of Large 2-Crossing-Critical Graphs', 2021) establishes the maximum degree of large 2-crossing-critical graphs and may yield $D_2$, but its abstract does not confirm a specific numerical value; it predates the published year threshold so is not listed in since_posted. arXiv:2105.01104 ('On 13-Crossing-Critical Graphs with Arbitrarily Large Degrees', 2021) concerns $c \\geq 13$ and is unrelated to the conjecture. The question of the exact optimal $D_c$ for $c \\in \\{2, \\ldots, 12\\}$ appears to remain open."
+}

@@ -1,0 +1,25 @@
+[
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 1",
+    "statement_text": "Every 2-connected subcubic $n$-vertex graph with $n_2$ vertices of degree two has a TSP walk of length at most $\\frac{5}{4}n + \\frac{1}{4}n_2 - 1$.",
+    "context_text": "The authors construct a 2-connected cubic $n$-vertex graph with no TSP walk shorter than $\\frac{5}{4}n - 2$ (Proposition 31) and a 2-connected subcubic $n$-vertex graph with $n_2 = \\Theta(n)$ degree-two vertices and no TSP walk shorter than $\\frac{5}{4}n_2 - 1$ (Proposition 29); the cubic construction was found independently by Maz\\'ak and Lukot'ka. The authors believe these two constructions are tight and that the conjecture represents the correct improvement of Theorem 1 (which achieves the weaker bound $\\frac{9}{7}n + \\frac{2}{7}n_2 - 1$). They also remark that the stronger form of their reduction inequality (equation (1)) was kept precisely because it may be useful in an eventual proof of this conjecture.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "PDF source — 'n2' in the extracted text consistently denotes $n_2$, the number of degree-two vertices, as defined throughout the paper. The phrase 'with n2 vertices of degree' in the raw extraction is a truncation of 'degree two'. The conjecture is explicitly marked as a labelled environment.",
+    "arxiv_id": "1608.07568",
+    "paper_title": "Graphic TSP in cubic graphs",
+    "paper_authors": [
+      "Zdenek Dvorak",
+      "Daniel Kral",
+      "Bojan Mohar"
+    ],
+    "published": "2016-09-05",
+    "abs_url": "https://arxiv.org/abs/1608.07568",
+    "source": "pdf"
+  }
+]

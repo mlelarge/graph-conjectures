@@ -1,0 +1,34 @@
+{
+  "review_id": "1408.4257__00",
+  "safe_id": "1408.4257",
+  "arxiv_id": "1408.4257",
+  "conjecture_title": "Informal Conjecture (diameter bound improvement)",
+  "paper_title": "Random graphs from a block-stable class",
+  "published": "2016-05-16",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "solved",
+  "confidence": "high",
+  "summary": "The conjecture that the $\\sqrt{\\log n}$ factor in the diameter bound $5\\sqrt{n\\log n}$ for $BT(R_n)$ can be replaced by any function tending to infinity is resolved by Addario-Berry and Donderwinkel (arXiv:2201.11773). Their paper explicitly states it resolves 'a conjecture by McDiarmid and Scott on the block-diameter of a family of random graphs called block-graphs,' and the result is in fact stronger: they prove sub-Gaussian tail bounds for the block-diameter, going beyond the asymptotic tightness that was conjectured.",
+  "since_posted": [
+    {
+      "title": "Random trees have height O(\\sqrt{n})",
+      "authors": "Louigi Addario-Berry, Serte Donderwinkel",
+      "year": 2022,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2201.11773",
+      "arxiv_id": "2201.11773",
+      "doi": "10.48550/arXiv.2201.11773",
+      "kind": "proof",
+      "claim": "Theorem 25 resolves the McDiarmid–Scott conjecture on block-diameter of block-stable random graphs, and moreover provides sub-Gaussian tail bounds stronger than the original conjecture."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "McDiarmid Scott \"block-stable\" diameter random graphs arxiv 1408.4257",
+    "block tree diameter \"sqrt(n log n)\" random graphs block-stable class",
+    "McDiarmid Scott \"block-stable\" diameter \"block tree\" conjecture improvement 2017 2018 2019 2020 2021 2022 2023 2024 2025"
+  ],
+  "notes": "The resolution by Addario-Berry and Donderwinkel is stronger than the original conjecture: rather than merely showing the sqrt(log n) gap can be closed to an arbitrarily slow function, they establish sub-Gaussian tail bounds for the block-diameter. The paper arXiv:2201.11773 (v3 March 2024) was submitted to the Annals of Probability; no journal DOI was found beyond the arXiv DOI."
+}

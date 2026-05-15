@@ -1,0 +1,22 @@
+{
+  "review_id": "1603.07056__00",
+  "safe_id": "1603.07056",
+  "arxiv_id": "1603.07056",
+  "conjecture_title": "Characterization of Social Graphs",
+  "paper_title": "On the number of cliques in graphs with a forbidden minor",
+  "published": "2016-03-23",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Fox and Wei introduce social graphs—graphs $G$ in which contracting any edge does not increase the total number of cliques—as a key structural tool for bounding the number of cliques in $K_t$-minor-free graphs, proving that any very dense social graph is, apart from a small set of vertices, the complement of a matching. The full characterization of social graphs is explicitly flagged in the paper as a challenging open problem. A 2024 preprint (arXiv:2408.12082) on extremal clique counts with forbidden clique minors references questions of Wood and Fox–Wei in a related direction, but does not resolve the social graph characterization. No subsequent paper settling the characterization was found in the indexed literature through May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "social graphs edge contraction cliques Fox Wei 1603.07056",
+    "\"social graph\" \"edge contraction\" \"number of cliques\" graph theory characterization",
+    "Fox Wei \"social graph\" cliques \"forbidden minor\" characterize graph contraction 2017 2018 2019 2020"
+  ],
+  "notes": "The term 'social graph' in Fox–Wei 2016 is a technical graph-theoretic concept (edge contraction does not increase clique count), distinct from the colloquial 'social network graph'. Searches using the term return mostly unrelated social-network papers. The conjecture is from a 2016 arXiv paper published in J. Combin. Theory Ser. B in 2017; no resolution found after wide search."
+}

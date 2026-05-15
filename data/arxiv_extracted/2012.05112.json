@@ -1,0 +1,46 @@
+[
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Open Problem (asymptotic behavior of f(H,q))",
+    "statement_text": "Determine or estimate the asymptotic behavior of the best possible bound for $f(H, q)$ such that every $K_f$-minor contains a subdivision of $H$ in which every edge is replaced by a path whose length is divisible by $q$.",
+    "context_text": "Theorem 1 guarantees a finite $f = f(H,q)$ for every graph $H$ of maximum degree at most 3 and every positive integer $q$, but the proof makes essentially no attempt to optimize $f$. The authors note in the introduction and again in the concluding remarks that the problem of determining the asymptotic behavior of $f(H,q)$ remains open, and that Ramsey constructions from the literature give some improvement but still yield bounds that are surely far from optimal.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated twice: once after the remark following Theorem 1 ('the problem of determining its asymptotic behavior remains open') and once in the concluding remarks. PDF source — math notation appears clean.",
+    "arxiv_id": "2012.05112",
+    "paper_title": "Divisible subdivisions",
+    "paper_authors": [
+      "Noga Alon",
+      "Michael Krivelevich"
+    ],
+    "published": "2021-06-29",
+    "abs_url": "https://arxiv.org/abs/2012.05112",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Informal Conjecture (linearity of g(q))",
+    "statement_text": "It seems plausible to believe that the first lemma is not tight and that the function $g(q)$ in Theorem 2 is linear in $q$ for any integer $q$.",
+    "context_text": "Theorem 2 establishes $g(q) = O(q \\log q)$, and for prime $q$ the bound improves to $g(q) < 4q$. The authors note in the concluding remarks that Lemma 3.1 (which gives $\\lceil 2q \\ln q \\rceil$ vertices) is likely not tight, and conjecture informally that the logarithmic factor is an artifact of the probabilistic method used.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Expressed via 'It seems plausible to believe'; clearly conjectural but no labelled environment. PDF source — math notation appears clean.",
+    "arxiv_id": "2012.05112",
+    "paper_title": "Divisible subdivisions",
+    "paper_authors": [
+      "Noga Alon",
+      "Michael Krivelevich"
+    ],
+    "published": "2021-06-29",
+    "abs_url": "https://arxiv.org/abs/2012.05112",
+    "source": "pdf"
+  }
+]

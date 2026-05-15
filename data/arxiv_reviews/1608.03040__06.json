@@ -1,0 +1,50 @@
+{
+  "review_id": "1608.03040__06",
+  "safe_id": "1608.03040",
+  "arxiv_id": "1608.03040",
+  "conjecture_title": "Open Problem 7",
+  "paper_title": "Majority Colourings of Digraphs",
+  "published": "2016-08-10",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "solved",
+  "confidence": "high",
+  "summary": "Open Problem 7 (whether every digraph is majority $c$-choosable for some constant $c$) was answered affirmatively by Anholcer, Bosek, and Grytczuk (EJC 2017), who proved that every digraph is majority 4-choosable, establishing $c=4$ as a valid universal constant. Subsequently, Anastos, Lamaison, Steiner, and Szabó (2019) proved majority 3-choosability for sparse classes (list chromatic number at most 6, dichromatic number at most 3, or max out-degree at most 4) and showed that deciding majority 2-colorability is NP-complete; whether $c=3$ suffices for all digraphs remains open.",
+  "since_posted": [
+    {
+      "title": "Majority Choosability of Digraphs",
+      "authors": "Marcin Anholcer, Bartłomiej Bosek, Jarosław Grytczuk",
+      "year": 2017,
+      "venue": "The Electronic Journal of Combinatorics",
+      "url": "https://www.combinatorics.org/v24i3p57",
+      "arxiv_id": "1608.06912",
+      "doi": null,
+      "kind": "proof",
+      "claim": "Proves that every digraph is majority 4-choosable, giving a positive answer to Open Problem 7 with universal constant c=4."
+    },
+    {
+      "title": "Majority Colorings of Sparse Digraphs",
+      "authors": "Michael Anastos, Ander Lamaison, Raphael Steiner, Tibor Szabó",
+      "year": 2019,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/1911.01954",
+      "arxiv_id": "1911.01954",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves majority 3-choosability for digraphs with list chromatic number at most 6 or dichromatic number at most 3, and shows that deciding majority 2-colorability is NP-complete."
+    }
+  ],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "1911.01954",
+      "verified": true,
+      "note": "Abstract confirmed via WebFetch: proves majority 3-choosability for digraphs with list chromatic number ≤6 or dichromatic number ≤3 and for digraphs with Δ+(D)≤4 or Δ(D)≤7; also proves fractional majority 3.9602-coloring for all digraphs and NP-completeness of majority 2-colorability. All five claimed internal-reference contributions are consistent with the verified abstract."
+    }
+  ],
+  "search_queries": [
+    "majority choosable digraph constant c arXiv 1608.03040 Kreutzer Seymour Wood",
+    "majority 4-choosable digraph every digraph majority choosable"
+  ],
+  "notes": "Open Problem 7 is settled positively: every digraph is majority 4-choosable (c=4), proved by Anholcer-Bosek-Grytczuk whose arXiv preprint (1608.06912) appeared shortly after the source paper in the same month (August 2016) and was published in EJC in 2017. The EJC URL https://www.combinatorics.org/v24i3p57 was verified with WebFetch. The arXiv ID 1608.06912 is inferred from the NASA/ADS abstract identifier 2016arXiv160806912A and was not directly WebFetch-verified. The residual open question is whether c=3 suffices for all digraphs."
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "List (Edge) Colouring Conjecture",
+    "statement_text": "If $G$ is a graph, then $\\chi'_{\\ell}(G) = \\chi'(G)$.",
+    "context_text": "The famous List (Edge) Colouring Conjecture from the 1970s asserts that the chromatic index of any graph equals its list chromatic index. It has been confirmed for several graph classes including bipartite graphs (Galvin), $d$-regular $d$-edge-colourable planar graphs (Ellingham–Goddyn), and complete graphs of prime degree (Schauz). Kahn proved it holds asymptotically; the present paper proves a local generalization of Kahn's theorem.",
+    "attributed_to": "various researchers (1970s–1980s)",
+    "attributed_year": null,
+    "paper_contribution": "Proves a local asymptotic version: for graphs with sufficiently large maximum degree $\\Delta$ and minimum degree $\\delta \\geq \\ln^{25} \\Delta$, there is an $L$-edge-colouring whenever $|L(e)| \\geq (1+\\varepsilon)\\max\\{\\deg(u),\\deg(v)\\}$ for each edge $e = uv$; also extends this to weighted lists, correspondence colouring, and linear $k$-uniform hypergraphs.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Section 8 (open problems and questions) is referenced in the paper but was not included in the PDF extraction; additional items from that section could not be recovered.",
+    "arxiv_id": "2007.14944",
+    "paper_title": "Edge-colouring graphs with local list sizes",
+    "paper_authors": [
+      "Marthe Bonamy",
+      "Michelle Delcourt",
+      "Richard Lang",
+      "Luke Postle"
+    ],
+    "published": "2023-11-08",
+    "abs_url": "https://arxiv.org/abs/2007.14944",
+    "source": "pdf"
+  }
+]

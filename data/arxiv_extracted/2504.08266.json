@@ -1,0 +1,68 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.3 (Dreier and Toruńczyk)",
+    "statement_text": "Bounded merge-width classes are polynomially $\\chi$-bounded.",
+    "context_text": "Bounded twin-width classes were shown to be $\\chi$-bounded in [BGK+21] and subsequently shown to be polynomially $\\chi$-bounded in [PS23, BT25]. Dreier and Toruńczyk asked whether polynomial $\\chi$-boundedness also holds for bounded merge-width. The present paper proves $\\chi$-boundedness (Theorem 1.2) but leaves the polynomial strengthening open.",
+    "attributed_to": "Dreier and Toruńczyk",
+    "attributed_year": 2025,
+    "paper_contribution": "Proves $\\chi$-boundedness of bounded merge-width classes (Theorem 1.2), a strictly weaker result than polynomial $\\chi$-boundedness; the conjecture itself remains open.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2504.08266",
+    "paper_title": "$χ$-Boundedness and Neighbourhood Complexity of Bounded Merge-Width Graphs",
+    "paper_authors": [
+      "Marthe Bonamy",
+      "Colin Geniet"
+    ],
+    "published": "2025-06-16",
+    "abs_url": "https://arxiv.org/abs/2504.08266",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Question 1.4",
+    "statement_text": "Is the class $\\{G:\\operatorname{mw}_{1}(G)\\leqslant k\\}$, with $k$ arbitrary, $\\chi$-bounded?",
+    "context_text": "The proof of $\\chi$-boundedness (Theorem 1.2) uses merge-width at radius 2 in an essential way (specifically Lemma 4.1). It is unclear whether radius 1 suffices. A negative answer would require constructing a class of bounded radius-1 merge-width graphs with bounded clique number but unbounded chromatic number; such a class must contain arbitrarily large bicliques.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2504.08266",
+    "paper_title": "$χ$-Boundedness and Neighbourhood Complexity of Bounded Merge-Width Graphs",
+    "paper_authors": [
+      "Marthe Bonamy",
+      "Colin Geniet"
+    ],
+    "published": "2025-06-16",
+    "abs_url": "https://arxiv.org/abs/2504.08266",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.7",
+    "statement_text": "A class $\\mathcal{C}$ has bounded merge-width if and only if every first-order transduction of $\\mathcal{C}$ has linear neighbourhood complexity.",
+    "context_text": "Reidl, Villaamil, and Stavropoulos showed that linear neighbourhood complexity characterises bounded expansion among subgraph-closed classes; Theorem 1.5 of the present paper establishes the left-to-right direction for bounded merge-width. Proving this conjecture would also imply that flip-width and merge-width are equivalent, as conjectured by Dreier and Toruńczyk [DT25, Conjecture 1.17].",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2504.08266",
+    "paper_title": "$χ$-Boundedness and Neighbourhood Complexity of Bounded Merge-Width Graphs",
+    "paper_authors": [
+      "Marthe Bonamy",
+      "Colin Geniet"
+    ],
+    "published": "2025-06-16",
+    "abs_url": "https://arxiv.org/abs/2504.08266",
+    "source": "html"
+  }
+]

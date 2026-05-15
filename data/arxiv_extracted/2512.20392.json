@@ -1,0 +1,50 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.1 (Hadwiger's Conjecture)",
+    "statement_text": "Let $G$ be a graph. If $\\chi(G)\\geqslant t$, then $G$ has $K_{t}$ as a minor. Equivalently, if $G$ does not have $K_{t}$ as a minor, then $\\chi(G)<t$.",
+    "context_text": "Hadwiger's conjecture, formulated in 1943, is one of the central open problems in graph theory. It is only known to hold for $t\\leqslant 6$, and is stated here as the motivation and starting point for the odd Hadwiger conjecture studied in the paper.",
+    "attributed_to": "Hadwiger",
+    "attributed_year": 1943,
+    "paper_contribution": "Not directly addressed; the paper disproves the odd Hadwiger conjecture (a strict strengthening of Hadwiger's conjecture), but Hadwiger's conjecture itself remains open.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2512.20392",
+    "paper_title": "Disproof of the Odd Hadwiger Conjecture",
+    "paper_authors": [
+      "Marcus Kühn",
+      "Lisa Sauermann",
+      "Raphael Steiner",
+      "Yuval Wigderson"
+    ],
+    "published": "2025-12-23",
+    "abs_url": "https://arxiv.org/abs/2512.20392",
+    "source": "html"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.2 (Odd Hadwiger Conjecture)",
+    "statement_text": "Let $G$ be a graph. If $\\chi(G)\\geqslant t$, then $G$ has $K_{t}$ as an odd minor. Equivalently, if $G$ does not have $K_{t}$ as an odd minor, then $\\chi(G)<t$.",
+    "context_text": "Proposed by Gerards and Seymour in 1993, the odd Hadwiger conjecture strengthens Hadwiger's conjecture by replacing the ordinary minor relation with the parity-sensitive notion of an odd minor. The conjecture was known for $t\\leqslant 5$ but remained wide open for $t\\geqslant 6$.",
+    "attributed_to": "Gerards and Seymour",
+    "attributed_year": 1993,
+    "paper_contribution": "Disproves the conjecture in a strong form by constructing graphs that contain no $K_t$ as an odd minor yet have chromatic number at least $\\left(\\tfrac{3}{2}-o(1)\\right)t$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2512.20392",
+    "paper_title": "Disproof of the Odd Hadwiger Conjecture",
+    "paper_authors": [
+      "Marcus Kühn",
+      "Lisa Sauermann",
+      "Raphael Steiner",
+      "Yuval Wigderson"
+    ],
+    "published": "2025-12-23",
+    "abs_url": "https://arxiv.org/abs/2512.20392",
+    "source": "html"
+  }
+]

@@ -1,0 +1,34 @@
+{
+  "review_id": "2009.07840__01",
+  "safe_id": "2009.07840",
+  "arxiv_id": "2009.07840",
+  "conjecture_title": "Open Question (§1.2, Theorem 1.4 remarks)",
+  "paper_title": "Typical and Extremal Aspects of Friends-and-Strangers Graphs",
+  "published": "2021-06-15",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "solved",
+  "confidence": "high",
+  "summary": "The conjecture asks whether $d_{r,r} = \\lceil(3r+1)/4\\rceil$ for all $r \\equiv 1 \\pmod{4}$, i.e., whether the cutoffs for $\\mathrm{FS}(X,Y)$ to avoid isolated vertices and to have exactly two connected components coincide in this residue class. This was settled affirmatively by the paper arXiv:2309.03848 on bipartite friends-and-strangers graphs, whose Corollary 1.3 establishes $d_{r,r} = \\lceil(3r+1)/4\\rceil$ for all $r$ (including $r \\equiv 1 \\pmod{4}$), and explicitly states that this settles ADK Conjecture 7.4 (the journal-version numbering of the open question from arXiv:2009.07840). The same paper also proves, as a main theorem, that the two cutoffs are equal for all $r$.",
+  "since_posted": [
+    {
+      "title": "Bipartite Friends and Strangers Walking on Bipartite Graphs",
+      "authors": "not confirmed from fetch (see arXiv:2309.03848)",
+      "year": 2023,
+      "venue": "arXiv preprint (published Discrete Mathematics 2025)",
+      "url": "https://arxiv.org/abs/2309.03848",
+      "arxiv_id": "2309.03848",
+      "doi": null,
+      "kind": "proof",
+      "claim": "Corollary 1.3 proves $d_{r,r} = \\lceil(3r+1)/4\\rceil$ for all $r$, and the main theorem proves that the cutoffs for $\\mathrm{FS}(X,Y)$ to avoid isolated vertices and to have exactly two connected components coincide, thereby settling ADK Conjecture 7.4 (the conjecture from arXiv:2009.07840)."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "friends-and-strangers graphs FS(X,Y) isolated vertices connected components d_{r,r} threshold Alon Defant Kravitz",
+    "friends strangers graph cutoff connected components arXiv 2009.07840 follow-up",
+    "friends-and-strangers graph minimum degree threshold \"3r+1\" OR \"3r+2\" connected components r vertices 2022 2023 2024 2025"
+  ],
+  "notes": "The open question appears as 'Open Question (§1.2, Theorem 1.4 remarks)' in the arXiv preprint and as 'Conjecture 7.4' in the published journal version ([ADK23]). arXiv:2309.03848 explicitly cites '[ADK23, Conjecture 7.4]' as what its Corollary 1.3 settles. Author names for 2309.03848 were not captured in the fetch responses; the URL https://arxiv.org/abs/2309.03848 was verified. The ScienceDirect journal version appeared in 2025 (pii/S0012365X25002754)."
+}

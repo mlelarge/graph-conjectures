@@ -1,0 +1,22 @@
+{
+  "review_id": "2401.00299__02",
+  "safe_id": "2401.00299",
+  "arxiv_id": "2401.00299",
+  "conjecture_title": "Problem 1.9",
+  "paper_title": "Partitioning the hypercube into smaller hypercubes",
+  "published": "2024-11-07",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Problem 1.9 asks to determine the asymptotic behaviour of f_2(d), the number of partitions of the d-dimensional hypercube Q_d into 2-dimensional subcubes, with the authors conjecturing the same asymptotic as Proposition 1.7 (for general r) specialised to r=2. The source paper provides an upper bound f_2(d) ≤ (d+1)^n (Proposition 1.6) and a related lower bound for f_{0,2}(d) (Proposition 1.10), but the precise asymptotic of f_2(d) remains open. No follow-up paper resolving this problem was found in a wide web search as of May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "hypercube partition 2-dimensional subcubes f_2(d) asymptotic Alon Balogh Potapov 2401.00299",
+    "partitioning hypercube Q_d into squares 2-subcubes asymptotic count arXiv 2024 2025",
+    "f_2(d) hypercube partition 2-subcubes squares asymptotic 2025 follow-up \"Alon Balogh Potapov\""
+  ],
+  "notes": "No follow-up paper resolving Problem 1.9 was found. The related paper arXiv:2411.04479 (Potapov, November 2024) studies partitions of Z_q^n into large subcubes of dimension n-m (fixed m, growing n) and proves an asymptotic of n^((q^m-1)/(q-1)); this addresses a different regime (large-dimensional subcubes in a q-ary hypercube) rather than 2-dimensional subcubes of the binary hypercube, and does not appear to resolve the conjecture. The source paper was subsequently published in the Illinois Journal of Mathematics, vol. 69, issue 1 (2025), DOI 10.1215/00192082-11792788."
+}

@@ -1,0 +1,24 @@
+{
+  "review_id": "2204.10119__01",
+  "safe_id": "2204.10119",
+  "arxiv_id": "2204.10119",
+  "conjecture_title": "Informal Conjecture: min degree $\\geq 6$, max degree $\\leq 8$ forces $K_6$ minor",
+  "paper_title": "Bipartite graphs with no $K_6$ minor",
+  "published": "2022-04-21",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The conjecture that every non-null graph with minimum degree at least six and maximum degree at most eight has a $K_6$ minor is stated parenthetically in arXiv:2204.10119 as a stronger open belief than Conjecture 1.3. The main result of the source paper — every bipartite graph with minimum degree at least six has a $K_6$ minor — was published in JCTB 2024, but this wider conjecture for all graphs in the degree window $[6, 8]$ remains open. No follow-up paper addressing the general bounded-degree case was found in the indexed literature.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "K6 minor minimum degree 6 maximum degree 8 graph conjecture Chudnovsky Scott Seymour Spirkl",
+    "arXiv 2204.10119 K6 minor bipartite graphs follow-up",
+    "\"K_6 minor\" \"minimum degree\" \"degree at most\" 8 subcubic graphs 2023 2024 2025 arxiv",
+    "K_6 minor minimum degree maximum degree arXiv search (arxiv.org)",
+    "arxiv search all: K_6 minor minimum degree maximum degree"
+  ],
+  "notes": "The conjecture is an informal open belief stated parenthetically immediately after Conjecture 1.3 in the source paper; it is noted as stronger because it applies to all graphs, not only bipartite ones. The source paper's bipartite theorem was published in Journal of Combinatorial Theory Series B, vol. 164, pp. 68–104 (2024). Mader's theorem guarantees a $K_6$ minor when average degree is at least 8, but the degree window $[6, 8]$ sits below that threshold for general graphs. No follow-up resolving this conjecture was found in a wide web search."
+}

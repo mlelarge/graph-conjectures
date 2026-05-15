@@ -1,0 +1,23 @@
+{
+  "review_id": "2307.15048__00",
+  "safe_id": "2307.15048",
+  "arxiv_id": "2307.15048",
+  "conjecture_title": "Conjecture 1.4",
+  "paper_title": "Correspondence coloring of random graphs",
+  "published": "2023-07-27",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 1.4 from Dvořák–Yepremyan (arXiv:2307.15048) asserts that for every fixed $p\\in(0,1]$, the Erdős–Rényi random graph $G(n,1-p)$ a.a.s. has correspondence chromatic number $\\Theta(n/\\log n)$. The source paper itself establishes the upper bound $O(n/\\sqrt{\\log n})$, which is weaker than the conjectured bound; the lower bound $\\Omega(n/\\log n)$ follows from the independence number. No subsequent paper resolving or making partial progress on the full $\\Theta(n/\\log n)$ claim was found in a wide search of arXiv and journal literature through May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "correspondence chromatic number random graph Erdos-Renyi Dvorak Yepremyan 2307.15048",
+    "correspondence coloring random graph G(n,p) chromatic number theta n/log n 2024 2025",
+    "correspondence chromatic number upper bound n/log n random graph 2024 2025 arxiv",
+    "DP-coloring random graph \"n/log n\" OR \"correspondence chromatic\" Dvorak Yepremyan cite 2024 2025"
+  ],
+  "notes": "No follow-up resolving the conjecture was found. The related paper arXiv:2308.13742 (Bernshteyn, 'DP-Coloring of Graphs from Random Covers', published RSA 2025) treats DP-coloring thresholds for random k-fold covers of a fixed graph — a different model — and its abstract does not address Conjecture 1.4 from 2307.15048. The gap between the known upper bound $O(n/\\sqrt{\\log n})$ and the conjectured $O(n/\\log n)$ remains open; the authors note that a disproof would yield a new separation between list and correspondence chromatic numbers."
+}

@@ -1,0 +1,22 @@
+{
+  "review_id": "2208.06630__00",
+  "safe_id": "2208.06630",
+  "arxiv_id": "2208.06630",
+  "conjecture_title": "Problem 1",
+  "paper_title": "Short reachability networks",
+  "published": "2025-10-23",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Problem 1 from arXiv:2208.06630 asks for the minimum number of transpositions in a t-reachable network, including the special case of star transpositions of the form (1,·). The paper (published in DMTCS, November 2025) settles the t=2 case exactly and gives an upper bound of (2+o_t(1))n transpositions for fixed t>=3, but the true asymptotics for large t remain open; a gap between upper and lower bounds also persists in the star-transposition setting. No follow-up paper resolving either variant was found in the indexed literature.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "t-reachable network transpositions minimum Groenland Johnston Radcliffe Scott 2208.06630",
+    "reachability network star transpositions minimum permutation sorting combinatorics arxiv",
+    "t-reachable network transpositions asymptotics perfect shuffling Groenland Johnston 2025 2026"
+  ],
+  "notes": "The paper appeared in Discrete Mathematics & Theoretical Computer Science, vol. 27:3, Combinatorics (DOI: 10.46298/dmtcs.12454), published 4 November 2025. A companion manuscript 'Perfect shuffling with fewer lazy transpositions' by Groenland and Johnston is hosted on Alex Scott's webpage but its arXiv preprint status and exact bearing on Problem 1 could not be confirmed within the 5-call budget. The sole verified citing paper (arXiv:2210.13286, Janzer–Johnson–Leader 2022) concerns lazy random transpositions and uniform mixing, not the deterministic t-reachable network problem. No resolution of the open asymptotics for t>=3 or the star-transposition gap was found."
+}

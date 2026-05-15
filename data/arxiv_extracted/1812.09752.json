@@ -1,0 +1,74 @@
+[
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Question 1.1 (Butler et al.)",
+    "statement_text": "Does there exist a constant $\\alpha > 0$ independent of $n$, such that $HG(K_{n,n}) \\geq n^\\alpha$ for sufficiently large $n$?",
+    "context_text": "Butler et al. posed this question in 2008 following results showing $\\Omega(\\log n) = HG(K_{n,n}) \\leq n+1$. It asks whether the hat guessing number of the complete bipartite graph $K_{n,n}$ grows as at least a fixed positive power of $n$, despite having clique number only 2.",
+    "attributed_to": "Butler et al.",
+    "attributed_year": 2008,
+    "paper_contribution": "Answers affirmatively in a generalized sense by proving $HG(K_{n,\\ldots,n}) = \\Omega\\!\\left(n^{\\frac{r-1}{r}-o(1)}\\right)$ for the complete $r$-partite graph with equal part sizes, implying in particular $HG(K_{n,n}) = \\Omega\\!\\left(n^{\\frac{1}{2}-o(1)}\\right)$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Explicitly labelled Question 1.1 and attributed to Butler et al. [9] (2008). PDF source — exponent notation in surrounding display math may be garbled.",
+    "arxiv_id": "1812.09752",
+    "paper_title": "The hat guessing number of graphs",
+    "paper_authors": [
+      "Noga Alon",
+      "Omri Ben-Eliezer",
+      "Chong Shangguan",
+      "Itzhak Tamo"
+    ],
+    "published": "2020-01-15",
+    "abs_url": "https://arxiv.org/abs/1812.09752",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Problem 1.4",
+    "statement_text": "Do there exist functions $f_i : \\mathbb{N} \\to \\mathbb{N}$, $1 \\leq i \\leq 3$ such that (i) if the maximum degree of $G$ is $\\Delta$, then $HG(G) \\leq f_1(\\Delta)$; (ii) if $G$ is $d$-degenerate, then $HG(G) \\leq f_2(d)$; (iii) if the minimum degree of $G$ is $\\delta$, then $HG(G) \\geq f_3(\\delta)$, and $f_3(\\delta)$ tends to infinity when $\\delta$ tends to infinity.",
+    "context_text": "The authors seek to understand how basic graph parameters control the hat guessing number. The existence of $f_1$ is already known via the Lovász Local Lemma ($HG(G) < e^\\Delta$), but whether $f_2$ (degeneracy bound) or $f_3$ (minimum-degree lower bound) exist is unclear. Theorems 1.6 and 1.8 provide partial progress toward part (ii).",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1812.09752",
+    "paper_title": "The hat guessing number of graphs",
+    "paper_authors": [
+      "Noga Alon",
+      "Omri Ben-Eliezer",
+      "Chong Shangguan",
+      "Itzhak Tamo"
+    ],
+    "published": "2020-01-15",
+    "abs_url": "https://arxiv.org/abs/1812.09752",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Open question: exact value of $HG(K_{n,n})$",
+    "statement_text": "What is the exact value of $HG(K_{n,n})$?",
+    "context_text": "After establishing $\\Omega\\!\\left(n^{\\frac{1}{2}-o(1)}\\right) = HG(K_{n,n}) \\leq n+1$ by combining results of Gadouleau–Georgiou with Theorem 1.2, the authors note that the determination of the exact value of $HG(K_{n,n})$ is left as an interesting open question.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "No labelled environment; stated as an open question in running prose immediately after Theorem 1.2.",
+    "arxiv_id": "1812.09752",
+    "paper_title": "The hat guessing number of graphs",
+    "paper_authors": [
+      "Noga Alon",
+      "Omri Ben-Eliezer",
+      "Chong Shangguan",
+      "Itzhak Tamo"
+    ],
+    "published": "2020-01-15",
+    "abs_url": "https://arxiv.org/abs/1812.09752",
+    "source": "pdf"
+  }
+]

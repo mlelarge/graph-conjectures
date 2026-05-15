@@ -1,0 +1,23 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture [1] (nearly fair perfect matching representation)",
+    "statement_text": "When $G = K_{n,n}$, $P$ is arbitrary, and $H$ is a matching of size $n$, then there is always a copy $H'$ of $H$ (that is, a perfect matching $H'$ in $G$), so that $\\|x(H', P) - \\frac{1}{n} x(G, P)\\|_\\infty < 2$.",
+    "context_text": "Reference [1] conjectured this $\\ell_\\infty$-discrepancy bound of $2$ between a perfect matching's color-class edge-count vector and its proportionally fair share, and proved it for partitions into $2$ or $3$ color classes. The analogous conjecture of Stein requiring exact proportionality was disproved by Pokrovskiy and Sudakov, who showed every perfect matching can miss $\\Omega(\\log n)$ color classes.",
+    "attributed_to": "authors of [1]",
+    "attributed_year": null,
+    "paper_contribution": "Proves Theorem 2.1 establishing that for any partition of $E(K_{n,n})$ into $m$ color classes there exists a perfect matching $M$ with $\\|x(M,P) - \\frac{1}{n}x(K_{n,n},P)\\|_\\infty \\leq (m-1)^2 2^{(3m-2)/2}$, a bound independent of $n$ for any fixed number of colors $m$, via a general uniform-cover framework (Theorem 2.2).",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "Conjecture stated in running prose citing reference [1]; that reference is not identified in the provided text extract. The paper text is also truncated before the Coding Theory and Social Choice sections, so additional conjectures from those sections may be absent.",
+    "arxiv_id": "2009.12692",
+    "paper_title": "Problems and results in Extremal Combinatorics -- IV",
+    "paper_authors": [
+      "Noga Alon"
+    ],
+    "published": "2020-09-26",
+    "abs_url": "https://arxiv.org/abs/2009.12692",
+    "source": "pdf"
+  }
+]

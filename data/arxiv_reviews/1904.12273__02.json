@@ -1,0 +1,35 @@
+{
+  "review_id": "1904.12273__02",
+  "safe_id": "1904.12273",
+  "arxiv_id": "1904.12273",
+  "conjecture_title": "Open Question (running time improvement for long hole detection)",
+  "paper_title": "Detecting a long odd hole",
+  "published": "2020-09-06",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "No paper has substantially improved the $|G|^{O(\\ell)}$ exponent for detecting long holes or long odd holes for fixed $\\ell$. The closely related problem of detecting long even holes was addressed by Cook and Seymour (arXiv:2009.05691), who gave an $O(|G|^{9\\ell+3})$ algorithm — still $|G|^{O(\\ell)}$. Hardness results show W[1]-hardness when $\\ell$ is part of the input, suggesting that eliminating the $\\ell$-dependence from the exponent entirely is likely impossible under standard complexity assumptions, but the question of a substantially smaller polynomial degree for fixed $\\ell$ remains open.",
+  "since_posted": [
+    {
+      "title": "Detecting a long even hole",
+      "authors": "Linda Cook, Paul Seymour",
+      "year": 2020,
+      "venue": "European Journal of Combinatorics (2022)",
+      "url": "https://arxiv.org/abs/2009.05691",
+      "arxiv_id": "2009.05691",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Provides an $O(|G|^{9\\ell+3})$ algorithm for detecting long even holes for fixed $\\ell \\geq 4$; a closely related variant that still runs in $|G|^{O(\\ell)}$ time and does not resolve the running-time question for long holes or long odd holes."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "long odd hole detection algorithm running time Chudnovsky Scott Seymour 1904.12273",
+    "detecting long hole graph algorithm fixed ell polynomial time improvement 2021 2022 2023",
+    "arXiv 2009.05691 Cook Seymour detecting long even hole running time fixed ell improvement",
+    "long hole detection algorithm improvement FPT fixed-parameter tractable induced cycle length 2022 2023 2024 2025"
+  ],
+  "notes": "The open question asks whether the $|G|^{O(\\ell)}$ dependence can be substantially improved for fixed $\\ell$. Cook and Seymour 2020 (arXiv:2009.05691) provides adjacent progress for even holes at $O(|G|^{9\\ell+3})$, still polynomial in the same sense. W[1]-hardness when $\\ell$ is part of the input (established in the FPT literature) implies that a uniform algorithm simultaneously polynomial in both $|G|$ and $\\ell$ is unlikely, but does not rule out a smaller polynomial degree for each fixed $\\ell$. No direct improvement to the $O(|G|^{\\ell+1})$ or $O(|G|^{20\\ell+40})$ bounds was found in the indexed literature."
+}

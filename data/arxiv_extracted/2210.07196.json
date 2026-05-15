@@ -1,0 +1,74 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Bollobás–Leader–Tiba Conjecture 1",
+    "statement_text": "For subsets $A, B$ of $\\mathbb{Z}_p$ of size at most $\\alpha p$ for an appropriate constant $\\alpha > 0$, one only needs three elements $b_1, b_2, b_3 \\in B$ to guarantee $|A + \\{b_1, b_2, b_3\\}| \\geq |A| + |B| - 1$.",
+    "context_text": "Bollobás, Leader and Tiba showed that for subsets $A, B$ of $\\mathbb{Z}_p$ with $|A| \\geq |B|$, there exists a subset $B^{(C)}$ of $B$ of constant size $C$ such that $|A + B^{(C)}| \\geq \\min(p, |A| + |B| - 1)$. They conjectured that $C = 3$ suffices when the sets have size at most $\\alpha p$. This conjecture is Conjecture 1 of their paper [5].",
+    "attributed_to": "Bollobás, Leader and Tiba",
+    "attributed_year": null,
+    "paper_contribution": "Proves the conjecture in full: Theorem 1.3 establishes that for nonempty subsets $A, B$ of $\\mathbb{Z}_p$ of size $n \\leq \\alpha p$ (for some explicit $\\alpha > 0$), there exists $B^{(3)} \\subseteq B$ of size at most three such that $|A + B^{(3)}| \\geq 2n - 1$.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "PDF source — some math notation may be garbled. Statement reconstructed from the abstract and Theorem 1.3 statement in the paper body.",
+    "arxiv_id": "2210.07196",
+    "paper_title": "Small subsets with large sumset: Beyond the Cauchy--Davenport bound",
+    "paper_authors": [
+      "Jacob Fox",
+      "Sammy Luo",
+      "Huy Tuan Pham",
+      "Yunkun Zhou"
+    ],
+    "published": "2022-10-13",
+    "abs_url": "https://arxiv.org/abs/2210.07196",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Bollobás–Leader–Tiba Question 3 (medium-sized high-dimensional version)",
+    "statement_text": "For a subset $A \\subseteq \\mathbb{Z}^d$ that is not contained in the union of any $t$ parallel hyperplanes, does there exist $A' \\subseteq A$ with $|A'| \\leq C\\sqrt{|A|}$ and $|A' + A'| \\geq (2d - \\varepsilon)|A|$?",
+    "context_text": "The paper establishes (Theorem 1.4) that a bounded-size subset $A'$ of $A$ suffices to achieve $|A + A'| \\geq (2d - \\varepsilon)|A|$ when $A$ is not covered by $t$ parallel hyperplanes. Question 3 of [6] asks whether a medium-sized ($O(\\sqrt{|A|})$) subset also works for the self-sumset $A' + A'$.",
+    "attributed_to": "Bollobás, Leader and Tiba",
+    "attributed_year": null,
+    "paper_contribution": "Answers the question negatively: Proposition 4.1 gives a construction showing that no such medium-sized subset $A'$ can guarantee $|A' + A'| \\geq (2d - \\varepsilon)|A|$ in general, though the bounded-size version (Theorem 1.4) does hold.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "PDF source — math notation may be garbled. Statement reconstructed from the discussion in the introduction surrounding Theorem 1.4 and the reference to [6, Question 3].",
+    "arxiv_id": "2210.07196",
+    "paper_title": "Small subsets with large sumset: Beyond the Cauchy--Davenport bound",
+    "paper_authors": [
+      "Jacob Fox",
+      "Sammy Luo",
+      "Huy Tuan Pham",
+      "Yunkun Zhou"
+    ],
+    "published": "2022-10-13",
+    "abs_url": "https://arxiv.org/abs/2210.07196",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Bollobás–Leader–Tiba Question 5 (one-sided saturation)",
+    "statement_text": "Given constants $\\varepsilon > 0$ and $\\lambda > 0$, is there a constant $c > 0$ such that the following holds? If $A, B$ are subsets of $\\mathbb{Z}_p$ with $|A| = |B| = n$ and $|A + B| \\leq \\lambda n$, then there exist sets $A' \\subseteq A$ and $B' \\subseteq B$ such that $|A'| \\geq (1 - \\varepsilon)|A|$, $|B'| \\leq c$, and $|A' + B'| \\geq (1 - \\varepsilon)|A + B|$.",
+    "context_text": "Theorem 1.7 (due to Bollobás, Leader and Tiba) shows that one can achieve almost all of $A' + B'$ by passing both $A$ and $B$ to large subsets $A'$ and $B'$ and then selecting a bounded-size $B''$ from $B'$. Question 5 of [5] asks whether it suffices to replace only $A$ (keeping a bounded set from $B$) rather than both sets.",
+    "attributed_to": "Bollobás, Leader and Tiba",
+    "attributed_year": null,
+    "paper_contribution": "Answers the question negatively in a strong sense: Theorem 1.8 constructs a set $A \\subseteq \\mathbb{Z}_p$ of size $\\Omega_\\nu(p)$ with doubling $|A+A| \\leq \\lambda|A|$ such that for every $A' \\subseteq A$ of size at least $(1-\\varepsilon)|A|$ and every $A^{(s)} \\subseteq A$ of bounded size $s$, $|A' + A^{(s)}| \\leq \\nu|A' + A|$. The result also holds over $\\mathbb{Z}$ and $\\mathbb{F}_2^n$.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "PDF source — math notation may be garbled. Statement reconstructed from the explicit paraphrase of Question 5 in the introduction and the discussion preceding Theorem 1.8.",
+    "arxiv_id": "2210.07196",
+    "paper_title": "Small subsets with large sumset: Beyond the Cauchy--Davenport bound",
+    "paper_authors": [
+      "Jacob Fox",
+      "Sammy Luo",
+      "Huy Tuan Pham",
+      "Yunkun Zhou"
+    ],
+    "published": "2022-10-13",
+    "abs_url": "https://arxiv.org/abs/2210.07196",
+    "source": "pdf"
+  }
+]

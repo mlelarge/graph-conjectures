@@ -1,0 +1,28 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1 (Trotignon and Vušković)",
+    "statement_text": "If $G$ is $\\{ISK4, \\text{triangle}\\}$-free, then $\\chi(G) \\leq 3$.",
+    "context_text": "Trotignon and Vušković proposed this conjecture in [5] while studying the structure of ISK4-free graphs, proving several special cases. A subsequent paper [2] proved the conjecture with 3 replaced by 4, before the present paper resolves it completely.",
+    "attributed_to": "Trotignon and Vušković",
+    "attributed_year": null,
+    "paper_contribution": "Proves the conjecture in full by establishing the stronger structural result (Theorem 2) that every $\\{ISK4, \\text{triangle}\\}$-free graph either has a clique cutset, is complete bipartite, or has a vertex of degree at most two, from which 3-colorability follows easily.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1704.08104",
+    "paper_title": "Triangle-free graphs that do not contain an induced subdivision of $K_4$ are 3-colorable",
+    "paper_authors": [
+      "Maria Chudnovsky",
+      "Chun-Hung Liu",
+      "Oliver Schaudt",
+      "Sophie Spirkl",
+      "Nicolas Trotignon",
+      "Kristina Vuskovic"
+    ],
+    "published": "2017-04-26",
+    "abs_url": "https://arxiv.org/abs/1704.08104",
+    "source": "pdf"
+  }
+]

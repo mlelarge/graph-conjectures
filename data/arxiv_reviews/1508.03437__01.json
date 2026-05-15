@@ -1,0 +1,35 @@
+{
+  "review_id": "1508.03437__01",
+  "safe_id": "1508.03437",
+  "arxiv_id": "1508.03437",
+  "conjecture_title": "Informal Conjecture on Correspondence Chromatic Number of Planar Graphs Without Cycles 4–8",
+  "paper_title": "Correspondence coloring and its application to list-coloring planar graphs without cycles of lengths 4 to 8",
+  "published": "2016-10-08",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "solved",
+  "confidence": "high",
+  "summary": "Jin, Kang, and Zhu (arXiv:2412.19059, December 2024) proved the stronger Theorem 1.4: every planar graph with no cycle of length 4, 6, or 8 is DP-3-colorable. Since any planar graph without cycles of lengths 4 to 8 is a special case (having no 4-, 6-, or 8-cycles), the conjecture of Dvořák and Postle follows as an immediate corollary. The paper explicitly identifies this as resolving the conjecture from arXiv:1508.03437, describing it as a ‘more natural and stronger claim’ that such graphs are DP-3-colorable without the consistency assumption.",
+  "since_posted": [
+    {
+      "title": "Planar graphs having no cycle of length 4, 6 or 8 are DP-3-colorable",
+      "authors": "Ligang Jin, Yingli Kang, Xuding Zhu",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2412.19059",
+      "arxiv_id": "2412.19059",
+      "doi": null,
+      "kind": "proof",
+      "claim": "Proves that every planar graph with no cycle of length 4, 6, or 8 is DP-3-colorable (Theorem 1.4), which is strictly stronger than the conjecture and implies it as a corollary; the paper explicitly cites the Dvořák–Postle conjecture from 1508.03437."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "correspondence chromatic number planar graph cycles 4 to 8 Dvorak Postle 1508.03437",
+    "correspondence coloring planar graph girth DP-coloring 3-colorable cycles forbidden",
+    "DP-3-colorable planar graph without cycles 4 5 6 7 8 correspondence chromatic number full conjecture Dvorak Postle",
+    "arxiv planar graphs DP-3-colorable without cycles of lengths 4 to 8 correspondence chromatic number 2024 2025"
+  ],
+  "notes": "The conjecture is resolved as a corollary of a strictly stronger theorem proved in arXiv:2412.19059. The stronger result only requires excluding cycles of lengths 4, 6, and 8 (not all five lengths 4–8), making it a genuine strengthening rather than merely a proof of the original statement."
+}

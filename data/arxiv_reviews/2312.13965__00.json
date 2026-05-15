@@ -1,0 +1,33 @@
+{
+  "review_id": "2312.13965__00",
+  "safe_id": "2312.13965",
+  "arxiv_id": "2312.13965",
+  "conjecture_title": "Problem 1.1",
+  "paper_title": "The growth rate of multicolor Ramsey numbers of $3$-graphs",
+  "published": "2024-04-29",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The source paper's own Theorem 1.4 fully resolves Problem 1.1 for $k=3$: every 3-uniform hypergraph $G$ falls into one of three growth-rate regimes for $r(G;q)$ (polynomial, single-exponential, or double-exponential in $q$), giving tower heights $h\\in\\{1,2,3\\}$ depending on structural properties of $G$. For $k\\geq 4$ the general classification remains open; arXiv:2502.20863 (2025) establishes lower bounds on the tower height for $k$-uniform hypergraphs of bounded degree, showing the tower height can reach $k$ for $k\\geq 3$, but a complete determination of $h$ for arbitrary $k$-uniform $G$ with $k\\geq 4$ has not yet been achieved.",
+  "since_posted": [
+    {
+      "title": "Lower bounds for Ramsey numbers of bounded degree hypergraphs",
+      "authors": "Domagoj Bradač, Matthew Kendall Hunter, Benny Sudakov",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2502.20863",
+      "arxiv_id": "2502.20863",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves that for all $k\\geq 3$ there exist $k$-uniform hypergraphs of bounded degree whose 4-color Ramsey number grows as a tower of height $k$, extending tower-height lower bounds to $k\\geq 4$ for specific hypergraphs but not providing a full classification."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "multicolor Ramsey numbers k-uniform hypergraph tower height arXiv 2312.13965 cite",
+    "Bradac Fox Sudakov multicolor Ramsey 3-graphs tower growth rate follow-up 2024 2025"
+  ],
+  "notes": "Problem 1.1 is already partially self-resolved: the paper containing it (Theorem 1.4) settles the k=3 case in full generality. The open part is k≥4. arXiv:2502.20863 provides new tower-height lower bounds for bounded-degree k-uniform hypergraphs (k≥3) but stops short of a complete classification for all k-uniform hypergraphs with k≥4."
+}

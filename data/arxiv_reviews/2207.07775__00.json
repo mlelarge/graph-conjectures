@@ -1,0 +1,21 @@
+{
+  "review_id": "2207.07775__00",
+  "safe_id": "2207.07775",
+  "arxiv_id": "2207.07775",
+  "conjecture_title": "Conjecture 1.5",
+  "paper_title": "Ramsey multiplicity and the Turán coloring",
+  "published": "2023-06-27",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 1.5 of Fox–Wigderson states that every sufficiently large integer k is 'polite', meaning it satisfies two quantitative conditions on off-diagonal Ramsey numbers: r(k, ⌈k/2⌉) ≤ 2^{-31} r(k,k) and (r(k,k)−1)/r(k,k−1) ≥ 1 + 25(r(k,⌈k/2⌉)/r(k,k))^{1/4}. As the paper notes, the conjecture would follow from the (unproven) expectation that r(k, ⌈k/2⌉) grows exponentially slower than r(k,k) combined with a Burr–Erdős-type growth gap between consecutive diagonal Ramsey numbers. No follow-up paper resolving or making substantial progress on Conjecture 1.5 was found in the indexed literature.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "polite integer Ramsey multiplicity Fox Wigderson Turán coloring conjecture 2207.07775",
+    "\"polite\" integer Ramsey number r(k,k) r(k,k/2) Fox Wigderson conjecture sufficiently large"
+  ],
+  "notes": "The term 'polite' is defined in arXiv:2207.07775 via two conditions on off-diagonal Ramsey numbers r(k, ⌈k/2⌉) vs r(k,k) and r(k,k-1). The conjecture is intimately tied to two longstanding open problems in Ramsey theory (the gap between diagonal and off-diagonal Ramsey numbers, and the consecutive diagonal Ramsey growth rate), making it unlikely to be resolved without progress on those foundational questions. The related follow-up arXiv:2309.06959 ('Turán Colourings in Off-Diagonal Ramsey Multiplicity') extends some results from the paper but does not address Conjecture 1.5. No follow-up found after exhausting 5 web calls."
+}

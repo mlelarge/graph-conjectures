@@ -1,0 +1,46 @@
+[
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Erdős's Problem on Vertex-Critical Graphs Far from Edge-Criticality",
+    "statement_text": "Is it true that for every $k \\geq 4$ and $r$ there is a vertex-critical $k$-chromatic graph which remains $k$-chromatic if any $r$ of its edges are omitted?",
+    "context_text": "Erdős posed this problem in 1985 as a wide-ranging strengthening of Dirac's conjecture, asking whether $k$-chromatic vertex-critical graphs can be made arbitrarily far (in terms of edges removed) from any $(k-1)$-chromatic spanning subgraph. It is listed as Problem 5.14 in Jensen–Toft and appears in the Chung–Graham Erdős problem collection.",
+    "attributed_to": "Erdős",
+    "attributed_year": 1985,
+    "paper_contribution": "Proves the statement for every fixed $r \\in \\mathbb{N}$ and all sufficiently large $k \\geq k_0(r)$ (Theorem 1), via a probabilistic construction of uniform hypergraphs whose 2-section complements yield the required vertex-critical graphs.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "The paper's abstract explicitly states it 'partially solves a problem posed by Erdős in 1985'. The verbatim quote from Erdős (1985, p. 113) is reproduced in the introduction.",
+    "arxiv_id": "2310.12891",
+    "paper_title": "Vertex-critical graphs far from edge-criticality",
+    "paper_authors": [
+      "Anders Martinsson",
+      "Raphael Steiner"
+    ],
+    "published": "2023-10-19",
+    "abs_url": "https://arxiv.org/abs/2310.12891",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Open case of Erdős's problem for fixed small k",
+    "statement_text": "For every fixed $k \\geq 4$ and arbitrarily large $r$, does there exist a $k$-chromatic vertex-critical graph $G$ such that $\\chi(G - R) = k$ for every $R \\subseteq E(G)$ with $|R| \\leq r$?",
+    "context_text": "Theorem 1 resolves Erdős's problem for all sufficiently large $k$ (as a function of $r$), but leaves open the regime where $k \\geq 4$ is held fixed as a small constant while $r$ grows. The authors explicitly flag this as an interesting remaining open case.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated in prose without a labelled environment: 'Our result still leaves open Erdős' question when k ≥ 4 is fixed as a small value and r tends to infinity, and this remains an interesting open case of the problem.'",
+    "arxiv_id": "2310.12891",
+    "paper_title": "Vertex-critical graphs far from edge-criticality",
+    "paper_authors": [
+      "Anders Martinsson",
+      "Raphael Steiner"
+    ],
+    "published": "2023-10-19",
+    "abs_url": "https://arxiv.org/abs/2310.12891",
+    "source": "pdf"
+  }
+]

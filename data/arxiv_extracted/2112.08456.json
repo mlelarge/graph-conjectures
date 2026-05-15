@@ -1,0 +1,30 @@
+[
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Question 9",
+    "statement_text": "Is the upper bound in Theorem 2 tight up to lower-order terms?",
+    "context_text": "Theorem 2 shows that for a convex $n$-point set $P$ and every $k \\in \\mathbb{N}$, $K(P)$ admits a partition into at most $\\frac{n}{\\sqrt{2k}}$ $k$-planar subgraphs (for appropriate $s$), while at least $\\frac{n-1}{4.93\\sqrt{k}}$ subgraphs are required. Question 9 asks whether these bounds match up to lower-order terms. The authors note that for $k=2$ they can show a lower bound of $\\frac{3n}{10}$ almost matching the upper bound $\\frac{n}{3}$, but omit this from the current version.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2112.08456",
+    "paper_title": "Edge Partitions of Complete Geometric Graphs (Part 2)",
+    "paper_authors": [
+      "Oswin Aichholzer",
+      "Johannes Obenaus",
+      "Joachim Orthaber",
+      "Rosna Paul",
+      "Patrick Schnider",
+      "Raphael Steiner",
+      "Tim Taubner",
+      "Birgit Vogtenhuber"
+    ],
+    "published": "2021-12-15",
+    "abs_url": "https://arxiv.org/abs/2112.08456",
+    "source": "pdf"
+  }
+]

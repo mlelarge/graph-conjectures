@@ -1,0 +1,94 @@
+[
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Question 3.2 (Carbonero, Hompe, Moore, and Spirkl)",
+    "statement_text": "Is the class of digraphs in which every induced directed cycle has length $3$ $\\vec{\\chi}$-bounded?",
+    "context_text": "Carbonero, Hompe, Moore, and Spirkl proved that the class of digraphs with no induced directed cycle of odd length at least 5 is not $\\vec{\\chi}$-bounded, then asked whether requiring every induced directed cycle to have length exactly 3 — a directed analogue of chordal graphs — restores $\\vec{\\chi}$-boundedness. The present paper is devoted to answering this question negatively.",
+    "attributed_to": "Carbonero, Hompe, Moore, and Spirkl",
+    "attributed_year": 2022,
+    "paper_contribution": "Proves (Theorem 1) that the class $\\mathcal{C}_3$ of digraphs with no $TT_3$ and no induced directed cycle of length at least 4 has members with arbitrarily large dichromatic number, answering the question negatively and strengthening the construction of [2].",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "PDF source — $\\vec{\\chi}$ notation reconstructed from context; exact LaTeX in original may differ.",
+    "arxiv_id": "2202.01006",
+    "paper_title": "Chordal directed graphs are not $χ$-bounded",
+    "paper_authors": [
+      "Pierre Aboulker",
+      "Nicolas Bousquet",
+      "Rémi de Verclos"
+    ],
+    "published": "2022-02-02",
+    "abs_url": "https://arxiv.org/abs/2202.01006",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Question 3.3 (Carbonero, Hompe, Moore, and Spirkl)",
+    "statement_text": "For which integers $k$ is the class of digraphs whose induced directed cycles all have length exactly $k$ $\\vec{\\chi}$-bounded?",
+    "context_text": "The authors note that Theorem 1 settles the case $k=3$ in the negative, and they leave the problem open for all $k \\geq 4$. This question was posed by Carbonero, Hompe, Moore, and Spirkl as Question 3.3 in [2].",
+    "attributed_to": "Carbonero, Hompe, Moore, and Spirkl",
+    "attributed_year": 2022,
+    "paper_contribution": "Resolves the case $k=3$: the class is not $\\vec{\\chi}$-bounded; the problem remains open for $k \\geq 4$.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "PDF source — $\\vec{\\chi}$ notation reconstructed from context.",
+    "arxiv_id": "2202.01006",
+    "paper_title": "Chordal directed graphs are not $χ$-bounded",
+    "paper_authors": [
+      "Pierre Aboulker",
+      "Nicolas Bousquet",
+      "Rémi de Verclos"
+    ],
+    "published": "2022-02-02",
+    "abs_url": "https://arxiv.org/abs/2202.01006",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1 (Aboulker, Charbit, and Naserasr)",
+    "statement_text": "For every oriented tree $T$, the class of digraphs with no induced $T$ is $\\vec{\\chi}$-bounded.",
+    "context_text": "Recalled in the Further Works section as a directed analogue of the well-known Gyárfás–Sumner conjecture. It is presented as the broader open problem motivating the study of $\\vec{\\chi}$-boundedness in hereditary classes of digraphs.",
+    "attributed_to": "Aboulker, Charbit, and Naserasr",
+    "attributed_year": 2021,
+    "paper_contribution": "Paper recalls the conjecture as broader context without making direct progress on it.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Stated with an explicit 'Conjecture' label and citation [1]. Note that Pierre Aboulker is both a current paper author and one of the original conjecture authors (the two roles are distinct publications).",
+    "arxiv_id": "2202.01006",
+    "paper_title": "Chordal directed graphs are not $χ$-bounded",
+    "paper_authors": [
+      "Pierre Aboulker",
+      "Nicolas Bousquet",
+      "Rémi de Verclos"
+    ],
+    "published": "2022-02-02",
+    "abs_url": "https://arxiv.org/abs/2202.01006",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Open problem on construction size",
+    "statement_text": "It would be interesting to know if the size of the $(k+1)$-dichromatic example in $\\mathcal{C}_3$ can be reduced below the current bound of $n^{2^{\\mathrm{poly}(n)}}$, which is larger than the $2^{\\mathrm{poly}(|G_k|)}$ bound achieved by Zykov's construction for triangle-free graphs.",
+    "context_text": "The authors observe in the Further Works section that their Zykov-style digraph construction yields graphs whose size grows much faster than the analogous triangle-free undirected graphs, and they flag reducing this size as an open problem.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "PDF source — the size expression appears as 'n2poly(n)' in the extraction; the exact exponent tower has been reconstructed as $n^{2^{\\mathrm{poly}(n)}}$ based on the Lemma 3 bound $n^{4r}$ and the recursive structure, but may differ from the original LaTeX.",
+    "arxiv_id": "2202.01006",
+    "paper_title": "Chordal directed graphs are not $χ$-bounded",
+    "paper_authors": [
+      "Pierre Aboulker",
+      "Nicolas Bousquet",
+      "Rémi de Verclos"
+    ],
+    "published": "2022-02-02",
+    "abs_url": "https://arxiv.org/abs/2202.01006",
+    "source": "pdf"
+  }
+]

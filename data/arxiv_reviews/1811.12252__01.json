@@ -1,0 +1,35 @@
+{
+  "review_id": "1811.12252__01",
+  "safe_id": "1811.12252",
+  "arxiv_id": "1811.12252",
+  "conjecture_title": "Open Question: FPT Algorithm for Graph Isomorphism Parameterized by Clique-Width",
+  "paper_title": "Graph Isomorphism for $(H_1,H_2)$-free Graphs: An Almost Complete Dichotomy",
+  "published": "2019-09-03",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "As of 2026 it remains open whether Graph Isomorphism admits an FPT algorithm parameterized by clique-width; the best known result is XP membership due to Grohe and Schweitzer. A 2025 IPEC paper (Blažej, Jana, Ramanujan, Strulo) proves FPT for the new intermediate parameter cograph-modular-treewidth, which lies strictly between treewidth and clique-width, but explicitly confirms that the FPT status for clique-width itself is still open. No W[1]-hardness evidence for clique-width parameterization has been established.",
+  "since_posted": [
+    {
+      "title": "Bridging Treewidth and Clique-Width via Cograph-Modular-Treewidth",
+      "authors": "Václav Blažej, Satyabrata Jana, M. S. Ramanujan, Peter Strulo",
+      "year": 2025,
+      "venue": "20th International Symposium on Parameterized and Exact Computation (IPEC 2025), LIPIcs",
+      "url": "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.IPEC.2025.18",
+      "arxiv_id": null,
+      "doi": "10.4230/LIPIcs.IPEC.2025.18",
+      "kind": "partial",
+      "claim": "Introduces cograph-modular-treewidth (strictly between treewidth and clique-width) and proves Graph Isomorphism is FPT for this parameter, while noting the FPT status for clique-width remains open."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Graph Isomorphism FPT algorithm clique-width parameterized complexity",
+    "graph isomorphism clique-width XP FPT Grohe Schweitzer parameterized 2020 2021 2022 2023 2024 2025",
+    "graph isomorphism W[1]-hard clique-width lower bound 2022 2023 2024 2025 parameterized",
+    "arxiv cograph-modular-treewidth graph isomorphism FPT IPEC 2025"
+  ],
+  "notes": "The FPT status of Graph Isomorphism parameterized by clique-width is one of the central open problems in parameterized complexity. No internal references were supplied. The IPEC 2025 paper by Blažej et al. is the closest recent progress, establishing FPT for a strictly intermediate parameter (cograph-modular-treewidth) that does not subsume the full clique-width case."
+}

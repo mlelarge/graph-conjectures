@@ -1,0 +1,46 @@
+[
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Poset Dimension–Degree Gap Problem",
+    "statement_text": "Determine $\\dim(\\Delta)$ asymptotically, where $\\dim(\\Delta)$ is the maximum dimension of a poset whose comparability graph has maximum degree at most $\\Delta$. The known bounds are $\\dim(\\Delta) \\geq \\Omega(\\Delta \\log \\Delta)$ and $\\dim(\\Delta) \\leq O(\\Delta \\log^2 \\Delta)$.",
+    "context_text": "The gap between the lower bound $\\Omega(\\Delta\\log\\Delta)$ proved by Erd\\H{o}s, Kierstead, and Trotter and the upper bound $O(\\Delta\\log^2\\Delta)$ proved by F\\\"uredi and Kahn was described as 'an important topic for further research' by Erd\\H{o}s et al., and as 'one of the most challenging problems in dimension theory' by Wang. Trotter speculated that 'a really new idea will be necessary to improve the upper bound.' The same gap applies to $\\mathrm{box}(\\Delta)$ via the equivalence $\\dim(\\Delta)=\\Theta(\\mathrm{box}(\\Delta))$.",
+    "attributed_to": "Erdős, Kierstead, and Trotter; Füredi and Kahn",
+    "attributed_year": null,
+    "paper_contribution": "Proves $\\dim(\\Delta) = \\Delta\\log^{1+o(1)}\\Delta$ (equivalently $\\mathrm{box}(\\Delta)=\\Delta\\log^{1+o(1)}\\Delta$), improving the 30-year-old F\\\"uredi–Kahn upper bound and showing the Erd\\H{o}s–Kierstead–Trotter lower bound is sharp to within a $\\log^{o(1)}\\Delta$ factor.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF extraction is severely truncated after the start of Section 3; later sections (Theorems 14 and 15) containing the precise statements are not visible. The abstract and introduction confirm these results.",
+    "arxiv_id": "1804.03271",
+    "paper_title": "Better bounds for poset dimension and boxicity",
+    "paper_authors": [
+      "Alex Scott",
+      "David R. Wood"
+    ],
+    "published": "2019-08-12",
+    "abs_url": "https://arxiv.org/abs/1804.03271",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Esperet–Joret Open Problem on Boxicity and Euler Genus",
+    "statement_text": "Determine the maximum boxicity of a graph with Euler genus $g$. It is known that every graph with Euler genus $g$ has boxicity $O(\\sqrt{g\\log g})$ and that there exist graphs of Euler genus $g$ with boxicity $\\Omega(\\sqrt{g\\log g})$.",
+    "context_text": "Esperet and Joret proved that every graph with Euler genus $g$ has boxicity at most $5g+3$, and Esperet improved this to $O(\\sqrt{g\\log g})$ while also noting the lower bound $\\Omega(\\sqrt{g\\log g})$ from the Erd\\H{o}s–Kierstead–Trotter construction. The problem of closing the gap to a constant factor was explicitly left open.",
+    "attributed_to": "Esperet and Joret",
+    "attributed_year": null,
+    "paper_contribution": "Proves that the maximum boxicity of a graph with Euler genus $g$ is $\\Theta(\\sqrt{g\\log g})$, with the explicit upper bound $(12+o(1))\\sqrt{g\\log g}$ (Theorem 16), solving the open problem up to a constant factor.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF extraction is severely truncated; Theorem 16 itself is not visible in the extracted text, but the abstract and introduction both explicitly state this problem is solved.",
+    "arxiv_id": "1804.03271",
+    "paper_title": "Better bounds for poset dimension and boxicity",
+    "paper_authors": [
+      "Alex Scott",
+      "David R. Wood"
+    ],
+    "published": "2019-08-12",
+    "abs_url": "https://arxiv.org/abs/1804.03271",
+    "source": "pdf"
+  }
+]

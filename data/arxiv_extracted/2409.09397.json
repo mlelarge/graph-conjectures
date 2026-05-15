@@ -1,0 +1,25 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Gyárfás-Sumner Conjecture",
+    "statement_text": "For every forest $H$ and every integer $k\\geq 1$, there exists $c\\geq 1$ such that $\\chi(G)\\leq c$ for every $\\{H,K_{k+1}\\}$-free graph $G$.",
+    "context_text": "The Gyárfás-Sumner conjecture, labelled Conjecture 1.1 in the paper, asserts that excluding a fixed forest $H$ and a fixed clique $K_{k+1}$ as induced subgraphs gives a $\\chi$-bounded graph class. In particular it would imply that every such graph has a stable set of linear size — dramatically better than the $\\Omega(|G|^{1/k})$ bound available when only $K_{k+1}$ is excluded. The paper takes this as its central motivation.",
+    "attributed_to": "Gyárfás and Sumner",
+    "attributed_year": 1975,
+    "paper_contribution": "Proves that every $\\{H,K_{k+1}\\}$-free graph $G$ with $H$ a forest satisfies $\\alpha(G)\\geq |G|^{1-o(1)}$ (Theorem 1.2/1.3/1.4); proves the full linear stable-set conclusion of the conjecture for all 'multibrooms' $H$; and deduces a fractional-colouring version of the conjecture for all multibrooms.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Paper labels the conjecture as item 1.1; original sources are Gyárfás 1975 [5] and Sumner 1981 [18].",
+    "arxiv_id": "2409.09397",
+    "paper_title": "Trees and near-linear stable sets",
+    "paper_authors": [
+      "Tung Nguyen",
+      "Alex Scott",
+      "Paul Seymour"
+    ],
+    "published": "2025-07-18",
+    "abs_url": "https://arxiv.org/abs/2409.09397",
+    "source": "html"
+  }
+]

@@ -1,0 +1,71 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Caccetta-Häggkvist Conjecture",
+    "statement_text": "Let $n, k$ be positive integers. Suppose that $G$ is a simple digraph on $n$ vertices with $\\delta^+(v) \\geq \\lceil n/k \\rceil$ for all $v \\in V(G)$; then $G$ contains a directed cycle of length at most $k$.",
+    "context_text": "Conjectured by Caccetta and Häggkvist in 1978, this remains open despite much study. The paper highlights the triangle case ($k=3$) — that a simple digraph on $n$ vertices with minimum out-degree at least $n/3$ contains a directed triangle — as the hardest and most characteristic case, and uses the state-of-the-art approximation (minimum out-degree $0.3465n$ suffices, Theorem 5) as a tool.",
+    "attributed_to": "Caccetta and Häggkvist",
+    "attributed_year": 1978,
+    "paper_contribution": "Does not prove new bounds for the conjecture directly; instead uses existing approximations for the triangle case as a tool to establish improved triangularity bounds for Aharoni's rainbow generalization, and notes that improvements to those approximations would yield improvements to Theorem 3.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source — math may be garbled.",
+    "arxiv_id": "2206.10733",
+    "paper_title": "Improved bounds for the triangle case of Aharoni's rainbow generalization of the Caccetta-Häggkvist conjecture",
+    "paper_authors": [
+      "Patrick Hompe",
+      "Zishen Qu",
+      "Sophie Spirkl"
+    ],
+    "published": "2023-09-11",
+    "abs_url": "https://arxiv.org/abs/2206.10733",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Aharoni's Rainbow Conjecture (Conjecture 2)",
+    "statement_text": "Let $n, k$ be positive integers. Suppose that $G$ is a simple graph on $n$ vertices. Let $b$ be a coloring of the edges of $G$ with $n$ color classes of size at least $k$; then $G$ has rainbow girth at most $\\lceil n/k \\rceil$.",
+    "context_text": "Proposed by Aharoni in [2] as a generalization of the Caccetta-Häggkvist conjecture. The paper focuses on the triangle case, studying which pairs $(\\alpha, \\beta)$ are triangular, meaning every simple edge-colored graph on $n$ vertices with at least $\\alpha n$ color classes each of size at least $\\beta n$ contains a rainbow triangle. Prior results (Aharoni, Holzman, and DeVos [2]) established that $(9/8, 1/3)$ and $(1, 2/5)$ are triangular.",
+    "attributed_to": "Aharoni",
+    "attributed_year": null,
+    "paper_contribution": "Improves the known triangular pairs: shows $(1.1077, 1/3)$ and $(1, 0.3988)$ are triangular, improving the respective bounds of $(9/8, 1/3)$ and $(1, 2/5)$; additionally shows $(1.3481, 1/4)$ is triangular, extending results to the regime $\\beta < 1/3$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source — math may be garbled.",
+    "arxiv_id": "2206.10733",
+    "paper_title": "Improved bounds for the triangle case of Aharoni's rainbow generalization of the Caccetta-Häggkvist conjecture",
+    "paper_authors": [
+      "Patrick Hompe",
+      "Zishen Qu",
+      "Sophie Spirkl"
+    ],
+    "published": "2023-09-11",
+    "abs_url": "https://arxiv.org/abs/2206.10733",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Open problem on happy triples for $l < k/2$",
+    "statement_text": "It would be interesting to consider the best upper bound on the number of happy triples in a graph with $k$ edges and maximum degree at most $l$, for the regime when $l < k/2$.",
+    "context_text": "Lemma 2 establishes a tight bound on happy triples when $l \\geq k/2$, achieved by specific extremal graphs. The authors note that their algorithmic/dynamic-programming approach gives little insight into the $l < k/2$ regime; for example, for $l=3$ and $k=3t$ the extremal graph output is $K_{t,3}$, which does not actually have maximum degree 3 for $t \\geq 4$.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated informally in the text as 'It would be interesting to consider…'; PDF source — math may be garbled.",
+    "arxiv_id": "2206.10733",
+    "paper_title": "Improved bounds for the triangle case of Aharoni's rainbow generalization of the Caccetta-Häggkvist conjecture",
+    "paper_authors": [
+      "Patrick Hompe",
+      "Zishen Qu",
+      "Sophie Spirkl"
+    ],
+    "published": "2023-09-11",
+    "abs_url": "https://arxiv.org/abs/2206.10733",
+    "source": "pdf"
+  }
+]

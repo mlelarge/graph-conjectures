@@ -1,0 +1,23 @@
+{
+  "review_id": "2511.02892__04",
+  "safe_id": "2511.02892",
+  "arxiv_id": "2511.02892",
+  "conjecture_title": "Problem 5.1",
+  "paper_title": "Open problems of the 33rd Workshop on Cycles and Colourings",
+  "published": "2025-11-04",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Problem 5.1 asks whether every cubic graph admitting a 2-homogeneous coloring can be 2-homogeneously colored with at most 4 colors. No paper resolving this conjecture was found in the literature. The foundational connection between NMNR-colorings of hypergraphs and homogeneous colorings of graphs (Lužar–Soták, AMC 2017) underlies the background result that bipartite cubic graphs admit 2-homogeneous colorings using at most 6 colors; the conjecture would tighten this bound to 4 for all cubic graphs that admit any 2-homogeneous coloring.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "2-homogeneous coloring cubic graph 4 colors conjecture",
+    "k-homogeneous coloring cubic graph arxiv 2511.02892",
+    "\"homogeneous coloring\" \"cubic graph\" graph theory 2025 2026",
+    "\"homogeneous coloring\" \"k-homogeneous\" graph coloring Lužar Soták cubic bipartite"
+  ],
+  "notes": "No follow-up found. This is a very recent open problem posed at the 33rd Workshop on Cycles and Colourings (2025). The relevant foundational work is Lužar and Soták, 'From NMNR-coloring of hypergraphs to homogenous coloring of graphs', Ars Mathematica Contemporanea (2017), which established the NMNR/homogeneous coloring framework and the 6-color upper bound for bipartite cubic graphs. The conjecture is open with high confidence given its recency and the absence of any follow-up in indexed literature."
+}

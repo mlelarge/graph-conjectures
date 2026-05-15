@@ -1,0 +1,28 @@
+[
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Open Problem (Introduction)",
+    "statement_text": "Determine the correct dependence of $ES_{\\ell}(n)$ on $\\ell$.",
+    "context_text": "The paper establishes that $(3\\ell-1)\\cdot 2^{n-5} < ES_{\\ell}(n) < \\ell^{2}\\cdot 2^{n+C\\sqrt{n\\log n}}$, leaving a gap in the dependence on $\\ell$. In the regime where $n$ is fixed and $\\ell\\to\\infty$, the cups-caps theorem gives $ES_{\\ell}(n)=O(\\ell)$, which is best possible up to constants, but the general joint dependence on both parameters remains open.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated in running prose at the end of the introduction: \"It remains an interesting open problem to determine the correct dependence of $ES_{\\ell}(n)$ on $\\ell$.\"",
+    "arxiv_id": "2405.03455",
+    "paper_title": "Big line or big convex polygon",
+    "paper_authors": [
+      "David Conlon",
+      "Jacob Fox",
+      "Xiaoyu He",
+      "Dhruv Mubayi",
+      "Andrew Suk",
+      "Jacques Verstraete"
+    ],
+    "published": "2024-05-06",
+    "abs_url": "https://arxiv.org/abs/2405.03455",
+    "source": "html"
+  }
+]

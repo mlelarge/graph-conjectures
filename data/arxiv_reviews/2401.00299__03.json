@@ -1,0 +1,21 @@
+{
+  "review_id": "2401.00299__03",
+  "safe_id": "2401.00299",
+  "arxiv_id": "2401.00299",
+  "conjecture_title": "Informal conjecture on $f_2(d)$",
+  "paper_title": "Partitioning the hypercube into smaller hypercubes",
+  "published": "2024-11-07",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The conjecture that $f_2(d)$, the number of partitions of the vertex set of $Q_d$ into vertex-disjoint 2-dimensional subcubes, obeys the same asymptotic bound as given in Proposition 1.7 with $r=2$ (namely $N^{1\\pm o(1)}$) appears to remain open. The source paper was published in the Illinois Journal of Mathematics in April 2025. A related paper (arXiv:2411.04479, November 2024) studies partition counts of $\\mathbb{Z}_q^n$ into large subcubes of a fixed codimension, but addresses a different setting and does not resolve the $f_2(d)$ conjecture. No follow-up work settling this conjecture was found in a wide web search.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Alon Balogh Potapov \"partitioning hypercube\" subcube f_2 2401.00299",
+    "hypercube partition subcube f_2(d) asymptotic 2025 cite arXiv:2401.00299"
+  ],
+  "notes": "No follow-up paper found that settles the conjecture. The paper appeared in Illinois Journal of Mathematics 69(1), 2025. The related paper arXiv:2411.04479 ('On the number of partitions of the hypercube Z_q^n into large subcubes', November 2024) has a main result of the form n^((q^m-1)/(q-1)) for a different partition problem and does not appear to directly address f_2(d). Conjecture is recent (2024) and high-confidence open."
+}

@@ -1,0 +1,21 @@
+{
+  "review_id": "2604.09449__03",
+  "safe_id": "2604.09449",
+  "arxiv_id": "2604.09449",
+  "conjecture_title": "Problem 6.4",
+  "paper_title": "Colour-balanced subgraphs",
+  "published": "2026-04-10",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Problem 6.4 asks to improve the O(k^2) upper bound on f_h(H) for a Hamilton cycle H in complete or complete bipartite graphs. The source paper establishes this bound via a necklace-splitting argument, noting that any improvement to the bipartite matching bound yields an equal improvement for complete graphs. The paper was posted in April 2026, and no follow-up work addressing this problem has been found in the literature.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "colour-balanced subgraphs Hamilton cycle f_h bounds complete bipartite graph 2604.09449",
+    "Hogan Scott Tsarev colour-balanced subgraphs necklace-splitting Hamilton cycle 2026"
+  ],
+  "notes": "No follow-up found. The paper was posted 2026-04-10 and as of 2026-05-14 is only ~5 weeks old; absence of follow-up is expected. The conjecture is tightly coupled to the bipartite matching bound via necklace-splitting, so progress on either sub-problem would resolve both."
+}

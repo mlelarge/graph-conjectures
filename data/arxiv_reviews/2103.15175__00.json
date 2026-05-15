@@ -1,0 +1,23 @@
+{
+  "review_id": "2103.15175__00",
+  "safe_id": "2103.15175",
+  "arxiv_id": "2103.15175",
+  "conjecture_title": "Conjecture on $R_\\ell(\\mathcal{H}_s, k)$",
+  "paper_title": "Multicolor list Ramsey numbers grow exponentially",
+  "published": "2022-01-23",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The paper establishes the bounds $\\frac{1}{e} \\cdot s^k \\leq R_\\ell(\\mathcal{H}_s, k) \\leq s^k + 1$ (Theorem 8), where the upper bound matches the classical chromatic Ramsey number $R(\\mathcal{H}_s, k) = s^k + 1$. The conjecture that the lower bound can be improved to match the upper bound exactly remains open: no follow-up paper resolving it was found in a broad web search across 2022–2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "list Ramsey number chromatic number s^k multicolor Fox He Luo Xu 2103.15175",
+    "multicolor list Ramsey numbers exponential chromatic number conjecture 2022 2023 2024 2025",
+    "R_ell H_s k chromatic number list Ramsey s^k+1 conjecture Fox He arxiv",
+    "\"list Ramsey\" \"chromatic number\" \"s^k\" OR \"s^k+1\" 2023 2024 2025 arxiv"
+  ],
+  "notes": "No follow-up found in the indexed literature. The conjecture asserts that the upper bound $s^k + 1$ is tight, i.e., the list Ramsey number equals the classical chromatic Ramsey number for $\\mathcal{H}_s$. The gap between the proven lower bound ($\\frac{1}{e} \\cdot s^k$) and the conjectured exact value ($s^k + 1$) is a constant factor of $e$."
+}

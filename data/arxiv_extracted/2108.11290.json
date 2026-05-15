@@ -1,0 +1,25 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "O(n²) Edge Bound Conjecture for Separated Multigraphs",
+    "statement_text": "Any separated single-crossing topological multigraph with $n$ vertices has at most $O(n^2)$ edges.",
+    "context_text": "Kaufmann, Pach, Tóth, and Ueckerdt conjectured in [5] that the separation condition (no two parallel edges cross, and the lens enclosed by every pair of parallel edges contains at least one vertex) forces the edge count to be at most quadratic in $n$. Without any condition, the bound is $O(n^3)$ by a trivial argument.",
+    "attributed_to": "Kaufmann, Pach, Tóth, and Ueckerdt",
+    "attributed_year": 2021,
+    "paper_contribution": "Proves the upper bound $|E(G)| \\leq 64n^2 \\log n$, verifying the conjecture up to a logarithmic factor, and derives as a corollary a crossing-lemma extension giving $\\Omega\\!\\left(\\frac{e^3}{n^2 \\log(e/n)}\\right)$ crossings when $e \\geq 4n$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2108.11290",
+    "paper_title": "On the number of edges of separated multigraphs",
+    "paper_authors": [
+      "Jacob Fox",
+      "Janos Pach",
+      "Andrew Suk"
+    ],
+    "published": "2022-02-22",
+    "abs_url": "https://arxiv.org/abs/2108.11290",
+    "source": "pdf"
+  }
+]

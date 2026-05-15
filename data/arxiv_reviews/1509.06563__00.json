@@ -1,0 +1,28 @@
+{
+  "review_id": "1509.06563__00",
+  "safe_id": "1509.06563",
+  "arxiv_id": "1509.06563",
+  "conjecture_title": "Informal Conjecture (generalization of 1.3 to bounded clique number)",
+  "paper_title": "Induced subgraphs of graphs with large chromatic number. IV. Consecutive holes",
+  "published": "2018-02-12",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The conjecture — that for all ν > 0 and k ≥ 3 there exists n such that every graph with no k-clique and chromatic number ≥ n contains ν consecutive hole lengths — remains open. The source paper (arXiv:1509.06563) proves the triangle-free case (k=3) but explicitly states no progress on the general bounded-clique-number extension. A wide web search found no subsequent paper resolving or substantially advancing the full conjecture; related progress (e.g. arXiv:1701.07217 on long odd holes in Kk-free graphs) concerns different hole properties and does not settle consecutive lengths for general k.",
+  "since_posted": [],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2306.02364",
+      "verified": true,
+      "note": "WebFetch confirms this paper is a tournament-structure survey (directed graphs, domination number, dichromatic number). It does not discuss consecutive holes, bounded clique number, or arXiv:1509.06563. The supplied contribution text is a mismatch — this reference is not relevant to the conjecture."
+    }
+  ],
+  "search_queries": [
+    "consecutive holes bounded clique number chromatic number Scott Seymour induced subgraphs",
+    "arXiv 1509.06563 Scott Seymour consecutive holes clique number conjecture",
+    "consecutive hole lengths bounded clique number chromatic number graph theory 2022 2023 2024 2025"
+  ],
+  "notes": "No follow-up resolving the bounded-clique-number generalization was found in the indexed literature. The sole internal reference (arXiv:2306.02364) is about tournament structure and is unrelated to this conjecture. The conjecture is from 2018 and remains open with high confidence."
+}

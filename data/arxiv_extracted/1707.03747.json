@@ -1,0 +1,50 @@
+[
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Combinatorial Algorithm for Optimal Colouring of Perfect Graphs",
+    "statement_text": "Construct a ``combinatorial'' polynomial-time algorithm that yields an optimal colouring of a perfect graph.",
+    "context_text": "Grötschel, Lovász, and Schrijver [9] showed in 1988 that the ellipsoid method finds an $\\omega(G)$-colouring of any perfect graph in polynomial time. Finding a combinatorial algorithm achieving the same has remained a well-known open question in the field ever since.",
+    "attributed_to": "unknown",
+    "attributed_year": null,
+    "paper_contribution": "Gives a combinatorial algorithm (Algorithm 1.1) that, with input an $n$-vertex Berge graph, outputs an optimal colouring in time $O(n^{(\\omega(G)+1)^2})$, which is polynomial for fixed clique number $k = \\omega(G)$.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "Described in the paper as a 'well-known open question' with no explicit citation to an originating author; it arises naturally from the Grötschel–Lovász–Schrijver [9] result. PDF source.",
+    "arxiv_id": "1707.03747",
+    "paper_title": "Colouring perfect graphs with bounded clique number",
+    "paper_authors": [
+      "Maria Chudnovsky",
+      "Aurélie Lagoutte",
+      "Paul Seymour",
+      "Sophie Spirkl"
+    ],
+    "published": "2017-07-12",
+    "abs_url": "https://arxiv.org/abs/1707.03747",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Open Question on Number of Tight Skew Partitions",
+    "statement_text": "We do not know how many tight skew partitions there can really be; the authors do not know of a graph with more than linearly many tight skew partitions.",
+    "context_text": "The paper shows there are at most $n^3 \\log n$ tight skew partitions in an $n$-vertex graph (improving the $n^4$ bound from the Kennedy–Reed list), because for every tight skew partition $(A,B)$ the set $B$ appears at least $k_2^2$ times in the Kennedy–Reed output, where $k_2$ is the size of the second-largest anticomponent of $G[B]$. The true maximum is unknown.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated as prose without a labelled theorem environment. PDF source.",
+    "arxiv_id": "1707.03747",
+    "paper_title": "Colouring perfect graphs with bounded clique number",
+    "paper_authors": [
+      "Maria Chudnovsky",
+      "Aurélie Lagoutte",
+      "Paul Seymour",
+      "Sophie Spirkl"
+    ],
+    "published": "2017-07-12",
+    "abs_url": "https://arxiv.org/abs/1707.03747",
+    "source": "pdf"
+  }
+]

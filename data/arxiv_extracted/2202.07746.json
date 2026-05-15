@@ -1,0 +1,68 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1",
+    "statement_text": "For every simple graph of order $n$, the expected number of faces when selecting an orientable embedding of $G$ uniformly at random is $O(n)$.",
+    "context_text": "Stahl proved in 1991 that $E[F] \\leq n\\log n$ for any simple graph on $n$ vertices. Many families of graphs achieve $E[F] = \\Theta(n)$, but no examples with super-linear expected face count were known, motivating this conjecture.",
+    "attributed_to": "Halasz, Masarik, Samal, Campion Loth, and Mohar",
+    "attributed_year": null,
+    "paper_contribution": "Proved as a corollary of Theorem 3, which establishes $E[F] \\leq n(H_{2\\mu}+1)$; for simple graphs this specialises to the linear bound, further sharpened to $E[F] \\leq \\frac{\\pi^2}{6}n$ by Theorem 8.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source; conjecture header reads 'Conjecture 1 ([1])'; authors of this paper are co-proposers of the conjecture via reference [1].",
+    "arxiv_id": "2202.07746",
+    "paper_title": "Expected number of faces in a random embedding of any graph is at most linear",
+    "paper_authors": [
+      "Jesse Campion Loth",
+      "Bojan Mohar"
+    ],
+    "published": "2023-03-30",
+    "abs_url": "https://arxiv.org/abs/2202.07746",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 2",
+    "statement_text": "For every $n$-vertex multigraph $G$ with maximum edge-multiplicity $\\mu \\geq 2$, the expected number of faces when selecting an orientable embedding of $G$ uniformly at random is $O(n\\log(\\mu))$.",
+    "context_text": "A generalisation of Conjecture 1 to multigraphs. Tightness is witnessed by a chain of $n/2$ dipoles each with $\\mu$ parallel edges joined by cut edges, which satisfies $E[F] \\geq \\frac{1}{2}n(H_{\\mu}-1) = \\Theta(n\\log\\mu)$.",
+    "attributed_to": "Halasz, Masarik, Samal, Campion Loth, and Mohar",
+    "attributed_year": null,
+    "paper_contribution": "Proved as a corollary of Theorem 3: $E[F] \\leq n(H_{2\\mu}+1)$, and since $H_{2\\mu} \\sim \\log(2\\mu)+\\gamma$, this gives $O(n\\log\\mu)$; the bound is tight up to a constant factor.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source; conjecture header reads 'Conjecture 2 ([1])'; authors of this paper are co-proposers of the conjecture via reference [1].",
+    "arxiv_id": "2202.07746",
+    "paper_title": "Expected number of faces in a random embedding of any graph is at most linear",
+    "paper_authors": [
+      "Jesse Campion Loth",
+      "Bojan Mohar"
+    ],
+    "published": "2023-03-30",
+    "abs_url": "https://arxiv.org/abs/2202.07746",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 4",
+    "statement_text": "For any simple graph $G$ of order $n$, $E[F] \\leq \\frac{1}{3}n + 1$.",
+    "context_text": "The paper proves $E[F] \\leq \\frac{\\pi^2}{6}n$ for simple graphs (Theorem 8), but no examples approaching this constant are known. A chain of triangles connected by cut edges achieves $E[F] = \\frac{1}{3}n+1$, which the authors conjecture is the true optimal bound.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "PDF source; fraction $\\frac{1}{3}$ appears as '1\\n3' in raw PDF text but context is unambiguous.",
+    "arxiv_id": "2202.07746",
+    "paper_title": "Expected number of faces in a random embedding of any graph is at most linear",
+    "paper_authors": [
+      "Jesse Campion Loth",
+      "Bojan Mohar"
+    ],
+    "published": "2023-03-30",
+    "abs_url": "https://arxiv.org/abs/2202.07746",
+    "source": "pdf"
+  }
+]

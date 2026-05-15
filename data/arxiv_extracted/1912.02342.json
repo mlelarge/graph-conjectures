@@ -1,0 +1,94 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.1 (Erdős / Schur-Erdős Conjecture)",
+    "statement_text": "$\\lim_{m \\to \\infty} (r(3; m))^{1/m} < \\infty$",
+    "context_text": "Erdős offered a $100 prize for this conjecture, which asserts that the Ramsey number $r(3;m)$ grows at most exponentially in $m$. The lower bound $r(3;m) \\geq \\Omega(2^m)$ is already known; the conjecture is equivalent to $r(3;m) = 2^{\\Theta(m)}$. This paper proves the conjecture for $m$-colorings of complete graphs whose induced neighborhood set system has bounded dual VC-dimension.",
+    "attributed_to": "Erdős",
+    "attributed_year": null,
+    "paper_contribution": "Proves the conjecture for $m$-colorings with bounded dual VC-dimension: specifically establishes $r_d(k; m) \\leq 2^{cm}$ for a constant $c = c(k,d)$ (Theorem 1.3), thereby resolving the exponential growth question in this combinatorial setting.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1912.02342",
+    "paper_title": "Bounded VC-dimension implies the Schur-Erdos conjecture",
+    "paper_authors": [
+      "Jacob Fox",
+      "Janos Pach",
+      "Andrew Suk"
+    ],
+    "published": "2019-12-05",
+    "abs_url": "https://arxiv.org/abs/1912.02342",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Problem 1.2 (Erdős)",
+    "statement_text": "Determine $\\lim_{m \\to \\infty} (r(3; m))^{1/m}$.",
+    "context_text": "Erdős offered a $250 prize for the exact value of this limit, a strengthening of Conjecture 1.1. The limit is known to exist because Chung showed that $r(3;m)$ is supermultiplicative. The current best lower bound on $r(3;m)$ is due to Xiaodong et al., who showed $r(3;m) \\geq \\Omega(3.199^m)$.",
+    "attributed_to": "Erdős",
+    "attributed_year": null,
+    "paper_contribution": "Not directly addressed; the paper proves an exponential upper bound in the bounded VC-dimension setting but does not determine the value of the limiting constant.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1912.02342",
+    "paper_title": "Bounded VC-dimension implies the Schur-Erdos conjecture",
+    "paper_authors": [
+      "Jacob Fox",
+      "Janos Pach",
+      "Andrew Suk"
+    ],
+    "published": "2019-12-05",
+    "abs_url": "https://arxiv.org/abs/1912.02342",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Erdős-Hajnal Conjecture",
+    "statement_text": "For every hereditary property $\\mathcal{P}$ which is not satisfied by all graphs, there exists a constant $\\varepsilon(\\mathcal{P}) > 0$ such that every graph on $n$ vertices with property $\\mathcal{P}$ contains a clique or an independent set of size $n^{\\varepsilon(\\mathcal{P})}$.",
+    "context_text": "Erdős and Hajnal proved the weaker bound $e^{\\varepsilon(\\mathcal{P})\\sqrt{\\log n}}$ and conjectured the polynomial improvement. In the concluding remarks the authors highlight this conjecture as a major target for extending the VC-dimension approach, and note that for the special case of bounded VC-dimension their companion work achieves a bound of $e^{(\\log n)^{1-o(1)}}$.",
+    "attributed_to": "Erdős and Hajnal",
+    "attributed_year": 1989,
+    "paper_contribution": "Not proved here; mentioned in the concluding remarks as an important open problem motivating future work on graphs with bounded VC-dimension.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "Stated in prose in the concluding remarks, not in a labelled theorem environment.",
+    "arxiv_id": "1912.02342",
+    "paper_title": "Bounded VC-dimension implies the Schur-Erdos conjecture",
+    "paper_authors": [
+      "Jacob Fox",
+      "Janos Pach",
+      "Andrew Suk"
+    ],
+    "published": "2019-12-05",
+    "abs_url": "https://arxiv.org/abs/1912.02342",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 4.1",
+    "statement_text": "For $d \\geq 2$, there exists a constant $\\varepsilon(d)$ such that every graph on $n$ vertices with VC-dimension at most $d$ contains a clique or an independent set of size $n^{\\varepsilon(d)}$.",
+    "context_text": "This is the VC-dimension specialisation of the Erdős-Hajnal conjecture proposed by the paper's authors. The best known bound for graphs of bounded VC-dimension is $e^{(\\log n)^{1-o(1)}}$, established in a companion paper by the same authors; Conjecture 4.1 asks for the much stronger polynomial bound.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1912.02342",
+    "paper_title": "Bounded VC-dimension implies the Schur-Erdos conjecture",
+    "paper_authors": [
+      "Jacob Fox",
+      "Janos Pach",
+      "Andrew Suk"
+    ],
+    "published": "2019-12-05",
+    "abs_url": "https://arxiv.org/abs/1912.02342",
+    "source": "pdf"
+  }
+]

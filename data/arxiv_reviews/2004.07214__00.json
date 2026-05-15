@@ -1,0 +1,22 @@
+{
+  "review_id": "2004.07214__00",
+  "safe_id": "2004.07214",
+  "arxiv_id": "2004.07214",
+  "conjecture_title": "Conjecture 7.1",
+  "paper_title": "Enumerating minimal dominating sets in the (in)comparability graphs of bounded dimension posets",
+  "published": "2025-11-26",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "Conjecture 7.1 from arXiv:2004.07214 asks for an output-polynomial time algorithm for Dom-Enum in incomparability graphs of $S_t$-free posets, as the natural counterpart to the paper's Corollary 5.3 (which covers comparability graphs of $S_t$-free posets) and Theorem 1.1 (incomparability graphs of bounded-dimension posets). The paper, originally posted in April 2020 and published in Discrete Mathematics in 2025, leaves this as an open problem. No follow-up paper resolving the conjecture was found in the indexed literature; a related 2025 WADS paper (chordal bipartite graphs) cites the source paper but addresses a different graph class.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Bonamy Defrain Micek Nourine \"Dom-Enum\" incomparability graphs S_t-free posets output-polynomial",
+    "arXiv 2004.07214 minimal dominating sets incomparability graphs bounded dimension posets",
+    "Defrain \"S_t-free\" posets \"incomparability\" \"Dom-Enum\" enumeration minimal dominating 2022 2023 2024 2025"
+  ],
+  "notes": "The conjecture has been open since April 2020. The paper proves the comparability-graph analogue (Corollary 5.3) and the bounded-dimension case for incomparability graphs (Theorem 1.1), but the S_t-free incomparability case resists the same techniques because comparability graphs of S_t-free posets are not of bounded LMIM-width. A WADS 2025 paper on chordal bipartite graphs cites arXiv:2004.07214 but does not address this conjecture. Confidence is medium rather than high because the arXiv preprint is from 2020 (~6 years old), making the absence of a resolution somewhat surprising."
+}

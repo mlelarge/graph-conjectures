@@ -1,0 +1,29 @@
+{
+  "review_id": "1907.12999__00",
+  "safe_id": "1907.12999",
+  "arxiv_id": "1907.12999",
+  "conjecture_title": "Conjecture 1",
+  "paper_title": "Independence number in triangle-free graphs avoiding a minor",
+  "published": "2019-07-30",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The conjecture that every n-vertex K_{t+1}-minor-free graph has independence number at least n/t remains open. The source paper itself proves a weaker result restricted to triangle-free graphs (independence number at least n/t^{1-ε} for all sufficiently large t), while the best known general bound without the triangle-free restriction is the Duchet–Meyniel bound α(G) ≥ n/(2t−1) from 1982. Recent breakthroughs on Hadwiger-type coloring (Norin–Postle–Song, Delcourt–Postle giving O(t log log t)-colorability) do not suffice to resolve this independence number conjecture, and no paper proving or disproving the full statement was found.",
+  "since_posted": [],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2206.13635",
+      "verified": true,
+      "note": "Paper by Steiner concerns hypergraph coloring with excluded minors (bounding hypergraph chromatic number for K_t-minor-free hypergraphs); it does not address the independence number conjecture of Dvořák–Yepremyan."
+    }
+  ],
+  "search_queries": [
+    "independence number Kt+1 minor free graph alpha(G) >= n/t Dvorak Yepremyan 1907.12999",
+    "independence number K_{t+1} minor free triangle-free graph conjecture progress 2020 2021 2022 2023 2024",
+    "independence number minor-free graph arbitrary H Dvorak Yepremyan question answered arxiv 2020 2021 2022",
+    "Hadwiger conjecture independence number Kt minor free alpha n/t Norin Postle progress arxiv 2021 2022 2023 2024 2025"
+  ],
+  "notes": "The conjecture is a well-known weakening of Hadwiger's conjecture: Hadwiger would imply chromatic number ≤ t for K_{t+1}-minor-free graphs and thus α(G) ≥ n/t, but the conjecture may be provable independently. The best unconditional general bound remains Duchet–Meyniel (α ≥ n/(2t−1)). A related paper arXiv:2002.11100 extends the Dvořák–Yepremyan triangle-free result to arbitrary H-free graphs (clique minors given independence number), but this is a different direction and does not resolve Conjecture 1. No follow-up paper resolving the full conjecture was found in the indexed literature."
+}

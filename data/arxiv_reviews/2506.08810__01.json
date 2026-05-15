@@ -1,0 +1,22 @@
+{
+  "review_id": "2506.08810__01",
+  "safe_id": "2506.08810",
+  "arxiv_id": "2506.08810",
+  "conjecture_title": "Problem 22",
+  "paper_title": "Infinite induced-saturated graphs",
+  "published": "2025-09-01",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Problem 22 from arXiv:2506.08810 asks for which finite graphs H the flip graph G_{H,n} (whose vertices are H-free graphs on [n] and whose edges connect graphs differing by exactly one edge) is disconnected for all sufficiently large n. The paper itself establishes that G_{P_4,n} is connected for all n≥1, ruling out universal disconnectedness. No follow-up paper addressing this problem was found in the indexed literature as of May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "H-free graphs flip graph disconnected induced-saturated 2025 arXiv",
+    "G_{H,n} H-free graphs edge-flip disconnected graph conjecture Bonamy Groenland Johnston Morrison Scott",
+    "induced-saturated flip graph H-free disconnected 2506.08810 2025 2026"
+  ],
+  "notes": "No follow-up work found. Semantic Scholar returns zero citations for arXiv:2506.08810 as of May 2026. The paper appeared in the Canadian Journal of Mathematics. The problem is recent (posted June 2025) and is a weaker relaxation of H-induced-saturation: an H-induced-saturated graph on n vertices corresponds to an isolated vertex in G_{H,n}, so disconnectedness of G_{H,n} is strictly weaker. The only known case mentioned in the paper is that G_{P_4,n} is connected for all n≥1."
+}

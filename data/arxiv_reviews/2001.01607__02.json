@@ -1,0 +1,29 @@
+{
+  "review_id": "2001.01607__02",
+  "safe_id": "2001.01607",
+  "arxiv_id": "2001.01607",
+  "conjecture_title": "Open Question: (triangle, S1,2,3)-free graphs cliquewidth",
+  "paper_title": "(Theta, triangle)-free and (even hole, $K_4$)-free graphs. Part 2 : bounds on treewidth",
+  "published": "2020-10-27",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The question of whether (triangle, $S_{1,2,3}$)-free graphs have bounded cliquewidth remains open as of 2026. Bounded cliquewidth has been established for the smaller class (triangle, $S_{1,2,2}$)-free graphs (arXiv:1608.01820) and for (triangle, $H$)-free graphs when $H \\in \\{P_6, S_{1,1,3}\\}$, but the $S_{1,2,3}$ case is explicitly identified as open in the source paper. No follow-up paper resolving this question was found in a targeted web search across arXiv and the broader literature.",
+  "since_posted": [],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2203.06775",
+      "verified": false,
+      "note": "WebFetch of arXiv:2203.06775 confirms it is about (even hole, diamond, pyramid)-free graphs and bounded treewidth (Theorem 1.4), not about (triangle, S_{1,2,3})-free graphs or cliquewidth. The paper does not cite or address the open question from arXiv:2001.01607 about S_{1,2,3} and cliquewidth. The fuzzy match appears to have linked this paper to the wrong conjecture."
+    }
+  ],
+  "search_queries": [
+    "triangle S_{1,2,3}-free graphs bounded cliquewidth",
+    "\"S_{1,2,3}\" OR \"S1,2,3\" triangle-free cliquewidth \"clique-width\" 2021 2022 2023 2024 2025",
+    "arXiv search: triangle S1,2,3 cliquewidth",
+    "Dabrowski Paulusma \"clique-width\" \"triangle-free\" \"S_{1,2,3}\" open problem arxiv"
+  ],
+  "notes": "No follow-up resolving this open question was found. The closely related settled cases are: (triangle, S_{1,2,2})-free graphs (bounded cliquewidth, arXiv:1608.01820) and (triangle, P_6)-free and (triangle, S_{1,1,3})-free graphs. The S_{1,2,3} case sits just outside the resolved boundary and is the next open case in the hierarchy. The internal reference arXiv:2203.06775 was not verified to be relevant to this conjecture."
+}

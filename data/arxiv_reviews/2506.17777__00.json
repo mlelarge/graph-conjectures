@@ -1,0 +1,33 @@
+{
+  "review_id": "2506.17777__00",
+  "safe_id": "2506.17777",
+  "arxiv_id": "2506.17777",
+  "conjecture_title": "Problem 1.4",
+  "paper_title": "Extended VC-dimension, and Radon and Tverberg type theorems for unions of convex sets",
+  "published": "2026-02-27",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Problem 1.4 asks to determine or estimate f_r(d,s_1,...,s_r), the minimum number of points guaranteeing a Tverberg-type partition with s_i-convex containers. The source paper supplies an upper bound via Theorem 1.6. A follow-up by Chen, Wang, Ge, Shu, and Xu (arXiv:2510.20770, October 2025) answers two related questions of Alon and Smorodinsky negatively, proving f_r(d,s,...,s) > s^r for all r >= 2, s >= 1, d >= 2r-2, disproving polynomial boundedness in s and nearly matching the upper bound up to a log s factor. The exact determination of f_r(d,s_1,...,s_r) remains open.",
+  "since_posted": [
+    {
+      "title": "A Tverberg-type problem of Kalai: Two negative answers to questions of Alon and Smorodinsky, and the power of disjointness",
+      "authors": "Wenchong Chen, Zhouningxin Wang, Gennian Ge, Yang Shu, Zixiang Xu",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2510.20770",
+      "arxiv_id": "2510.20770",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves f_r(d,s,...,s) > s^r for r >= 2, s >= 1, d >= 2r-2, nearly matching the upper bound up to a log s factor, and disproves polynomial boundedness; the exact value of f_r(d,s_1,...,s_r) remains open."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Alon Smorodinsky \"s-convex\" Tverberg partition arXiv 2506.17777",
+    "Tverberg theorem \"s-convex sets\" intersection partition points generalization 2025 2026"
+  ],
+  "notes": "arXiv:2510.20770 (posted October 2025, after the arXiv preprint of the source paper in June 2025) directly addresses two open questions from the Alon-Smorodinsky paper with near-tight exponential lower bounds; the exact determination of f_r(d,s_1,...,s_r) for general parameters remains open."
+}

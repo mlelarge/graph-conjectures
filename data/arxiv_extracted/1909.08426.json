@@ -1,0 +1,122 @@
+[
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Classical MIS Dichotomy Conjecture",
+    "statement_text": "For every connected graph $H$, Maximum Independent Set in $H$-free graphs is in $\\mathsf{P}$ if and only if $H \\in \\{P_\\ell\\}_{\\ell} \\cup \\{S_{i,j,k}\\}_{i \\leq j \\leq k}$.",
+    "context_text": "The polynomial-time complexity of MIS in $H$-free graphs has been studied since the early 1980s. Alekseev showed that if $H$ is neither a path nor a subdivided claw then MIS is NP-complete on $H$-free graphs, motivating this conjecture about the full dichotomy. The authors note that an even stronger conjecture is postulated by Lozin [28].",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "PDF source — math may be garbled. $\\{P_\\ell\\}_\\ell$ denotes the family of paths and $\\{S_{i,j,k}\\}_{i \\leq j \\leq k}$ denotes the family of subdivided claws. Presented as a conjecture formalising a well-known open problem; no explicit citation in the header.",
+    "arxiv_id": "1909.08426",
+    "paper_title": "When Maximum Stable Set can be solved in FPT time",
+    "paper_authors": [
+      "Édouard Bonnet",
+      "Nicolas Bousquet",
+      "Stéphan Thomassé",
+      "Rémi Watrigant"
+    ],
+    "published": "2019-09-18",
+    "abs_url": "https://arxiv.org/abs/1909.08426",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Parameterized MIS Dichotomy",
+    "statement_text": "Is MIS (randomized) FPT or $W[1]$-hard in $H$-free graphs?",
+    "context_text": "This is the parameterized counterpart of the classical MIS dichotomy question. Alekseev's NP-hardness reduction does not transfer to $W[1]$-hardness, leaving a priori more candidate graphs $H$ for which the parameterized status is open. Dabrowski et al. initiated a systematic study of this question.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "PDF source. Formally labelled with a bullet marker in the paper alongside the conjectures.",
+    "arxiv_id": "1909.08426",
+    "paper_title": "When Maximum Stable Set can be solved in FPT time",
+    "paper_authors": [
+      "Édouard Bonnet",
+      "Nicolas Bousquet",
+      "Stéphan Thomassé",
+      "Rémi Watrigant"
+    ],
+    "published": "2019-09-18",
+    "abs_url": "https://arxiv.org/abs/1909.08426",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 1",
+    "statement_text": "For any integer $t$, MIS can be solved in FPT time in $P(t,t,t,t)$-free graphs.",
+    "context_text": "MIS was already shown FPT on $P(t,t,t)$-free graphs; this conjecture proposes the natural next step for four-vertex paths with clique substitutions. The present paper proves the special case $P(1,t,t,t)$-free graphs as partial progress toward Conjecture 1.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "PDF source.",
+    "arxiv_id": "1909.08426",
+    "paper_title": "When Maximum Stable Set can be solved in FPT time",
+    "paper_authors": [
+      "Édouard Bonnet",
+      "Nicolas Bousquet",
+      "Stéphan Thomassé",
+      "Rémi Watrigant"
+    ],
+    "published": "2019-09-18",
+    "abs_url": "https://arxiv.org/abs/1909.08426",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 2",
+    "statement_text": "For any integers $t$ and $\\ell$, MIS is FPT in $P_\\ell(t)$-free graphs, where $P_\\ell(t) = P(t, t, \\ldots, t)$ with the sequence $t, t, \\ldots, t$ of length $\\ell$.",
+    "context_text": "This is described as a far more distant milestone than Conjecture 1, extending the FPT claim to clique-substituted paths of arbitrary length. The authors remark that even the parameterized complexity of MIS in $P_7$-free graphs (the $t=1$, $\\ell=7$ case) is currently open.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "PDF source.",
+    "arxiv_id": "1909.08426",
+    "paper_title": "When Maximum Stable Set can be solved in FPT time",
+    "paper_authors": [
+      "Édouard Bonnet",
+      "Nicolas Bousquet",
+      "Stéphan Thomassé",
+      "Rémi Watrigant"
+    ],
+    "published": "2019-09-18",
+    "abs_url": "https://arxiv.org/abs/1909.08426",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Informal belief on FPT candidates",
+    "statement_text": "There will be very few connected candidates $H$ (as described by the structural characterisation of FPT candidate graphs) which will not end up in (randomized) FPT.",
+    "context_text": "After settling all four remaining five-vertex graph cases as (randomized) FPT, the authors express a broader belief that almost all graphs $H$ satisfying the structural conditions identified in Figure 1 will yield FPT algorithms for MIS in $H$-free graphs.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "PDF source — informal belief stated in prose, not a formally labelled environment.",
+    "arxiv_id": "1909.08426",
+    "paper_title": "When Maximum Stable Set can be solved in FPT time",
+    "paper_authors": [
+      "Édouard Bonnet",
+      "Nicolas Bousquet",
+      "Stéphan Thomassé",
+      "Rémi Watrigant"
+    ],
+    "published": "2019-09-18",
+    "abs_url": "https://arxiv.org/abs/1909.08426",
+    "source": "pdf"
+  }
+]

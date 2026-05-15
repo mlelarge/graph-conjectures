@@ -1,0 +1,80 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1 (Felsner et al.)",
+    "statement_text": "The arrangement graph of every simple arrangement of great-circles on the sphere is 3-colorable.",
+    "context_text": "Stated by Felsner, Hurtado, Noy, and Streinu in 2000 while studying connectivity, Hamiltonicity, and colorability of pseudoline and pseudocircle arrangement graphs. It is fairly well known but had seen little progress for 20 years prior to this paper.",
+    "attributed_to": "Felsner, Hurtado, Noy, and Streinu",
+    "attributed_year": 2000,
+    "paper_contribution": "Verifies the conjecture for all $\\triangle$-saturated pseudocircle arrangements (where one color class of the 2-coloring of faces consists of triangles only), for further classes of (pseudo-)circle arrangements, and computationally for all arrangements of up to 11 great-pseudocircles including non-realizable ones.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2205.08181",
+    "paper_title": "Coloring circle arrangements: New $4$-chromatic planar graphs",
+    "paper_authors": [
+      "Man-Kwun Chiu",
+      "Stefan Felsner",
+      "Manfred Scheucher",
+      "Felix Schröder",
+      "Raphael Steiner",
+      "Birgit Vogtenhuber"
+    ],
+    "published": "2022-05-17",
+    "abs_url": "https://arxiv.org/abs/2205.08181",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Gimbel–Kundgen–Li–Thomassen Conjecture (Conjecture 3.2)",
+    "statement_text": "Every 4-chromatic planar graph has fractional chromatic number strictly greater than $3$.",
+    "context_text": "Conjectured by Gimbel, Kundgen, Li, and Thomassen in their work on the fractional chromatic number of planar graphs; they argued that a positive resolution would yield an alternative proof of the Four Color Theorem.",
+    "attributed_to": "Gimbel, Kundgen, Li, and Thomassen",
+    "attributed_year": 2019,
+    "paper_contribution": "Disproves the conjecture in a strong form by constructing an infinite family of 4-edge-critical 4-regular planar graphs that are fractionally 3-colorable.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2205.08181",
+    "paper_title": "Coloring circle arrangements: New $4$-chromatic planar graphs",
+    "paper_authors": [
+      "Man-Kwun Chiu",
+      "Stefan Felsner",
+      "Manfred Scheucher",
+      "Felix Schröder",
+      "Raphael Steiner",
+      "Birgit Vogtenhuber"
+    ],
+    "published": "2022-05-17",
+    "abs_url": "https://arxiv.org/abs/2205.08181",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Belief on 4-vertex-critical arrangement graphs",
+    "statement_text": "We believe that the corona construction results in infinitely many 4-vertex-critical arrangement graphs.",
+    "context_text": "The paper's corona construction maps $\\triangle$-saturated arrangements with a pentagonal face to arrangements with 4-chromatic 4-regular arrangement graphs, yielding an infinite family. The authors believe these are all vertex-critical, though this is not proved.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Statement appears as running prose in the outline of Section 3; the exact family is defined later in that section, which is only partially present in the extracted text.",
+    "arxiv_id": "2205.08181",
+    "paper_title": "Coloring circle arrangements: New $4$-chromatic planar graphs",
+    "paper_authors": [
+      "Man-Kwun Chiu",
+      "Stefan Felsner",
+      "Manfred Scheucher",
+      "Felix Schröder",
+      "Raphael Steiner",
+      "Birgit Vogtenhuber"
+    ],
+    "published": "2022-05-17",
+    "abs_url": "https://arxiv.org/abs/2205.08181",
+    "source": "pdf"
+  }
+]

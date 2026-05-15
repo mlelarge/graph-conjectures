@@ -1,0 +1,24 @@
+[
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Informal Conjecture on similar growth of $N_{DFL}(\\varepsilon)$ and $1/\\delta_{TRL}(\\varepsilon)$",
+    "statement_text": "We suspect that $N_{DFL}(\\varepsilon)$ and $1/\\delta_{TRL}(\\varepsilon)$ have similar growth.",
+    "context_text": "The authors note that the best known lower bound on $N_{DFL}(\\varepsilon)$ has the form $(1/\\varepsilon)^{c\\log(1/\\varepsilon)}$ arising from the Behrend construction, while $1/\\delta_{TRL}(\\varepsilon)$ satisfies $1/\\delta_{TRL}(\\varepsilon) \\leq \\text{tower}(O(\\log(1/\\varepsilon)))$ (Fox [8]). Theorem 1.12 provides supporting evidence: if $N_{DFL}(\\varepsilon)$ grows subexponentially in $\\varepsilon^{-1}$, then so does $1/\\delta_{TRL}(\\varepsilon)$. If the suspected similarity holds, Theorem 1.10 and inequality (1.1) would together give comparable lower and upper bounds on $M_{TFL}(\\varepsilon)$.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "PDF source — math may be garbled; stated as 'We suspect' in running prose without a labelled environment. The PDF extraction appears truncated after the start of Section 2, so further conjectures or open problems in later sections may be missing.",
+    "arxiv_id": "2104.11626",
+    "paper_title": "Removal lemmas and approximate homomorphisms",
+    "paper_authors": [
+      "Jacob Fox",
+      "Yufei Zhao"
+    ],
+    "published": "2022-01-13",
+    "abs_url": "https://arxiv.org/abs/2104.11626",
+    "source": "pdf"
+  }
+]

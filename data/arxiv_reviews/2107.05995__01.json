@@ -1,0 +1,33 @@
+{
+  "review_id": "2107.05995__01",
+  "safe_id": "2107.05995",
+  "arxiv_id": "2107.05995",
+  "conjecture_title": "Question on Typical Hat Guessing Number of G(n,1/2)",
+  "paper_title": "On the Hat Guessing Number of Graphs",
+  "published": "2021-07-21",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "medium",
+  "summary": "A direct follow-up, arXiv:2302.04122 (2023), extends the n^{1-o(1)} lower bound from G(n,1/2) to all random graphs G(n,p) with constant edge probability p \\in (0,1), and also establishes an upper bound of (1-o(1))n with high probability. These bounds narrow the gap but do not definitively resolve whether HG(G(n,1/2)) = o(n) holds with high probability, so the precise asymptotic order remains open.",
+  "since_posted": [
+    {
+      "title": "The hat guessing number of random graphs with constant edge-chosen probability",
+      "authors": "unknown (arXiv ID 2302.04122)",
+      "year": 2023,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2302.04122",
+      "arxiv_id": "2302.04122",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Generalises the n^{1-o(1)} lower bound on HG(G(n,p)) to all constant p \\in (0,1) and establishes a matching upper bound of (1-o(1))n with high probability, extending the results of Alon-Chizewer but leaving the question of whether HG = o(n) open."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "hat guessing number random graph G(n,1/2) asymptotic 2107.05995",
+    "hat guessing number graph HG random graph typical behavior arxiv"
+  ],
+  "notes": "The follow-up paper 2302.04122 makes meaningful progress by generalising to all constant edge-probability p and tightening both bounds to n^{1-o(1)} <= HG(G(n,p)) <= (1-o(1))n. However, since n^{1-o(1)} is not necessarily o(n) (depending on the rate), and the upper bound is (1-o(1))n = Theta(n), the specific question 'is HG(G(n,1/2)) = o(n) with high probability?' remains unanswered. Authors of 2302.04122 could not be verified from available fetches."
+}

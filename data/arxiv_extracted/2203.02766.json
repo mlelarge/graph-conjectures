@@ -1,0 +1,44 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Hadwiger's Conjecture (Conjecture 1.1)",
+    "statement_text": "For every integer $t \\geq 2$, if $G$ is a graph not containing a $K_t$-minor, then $G$ is properly $(t-1)$-colorable.",
+    "context_text": "Hadwiger's conjecture from 1943 is the central motivation for the line of work studied in this paper. It has been verified for all $t \\leq 6$ but remains open from $t = 7$ onward. The paper's main result extends a known improper-coloring relaxation for $K_t$-minor-free graphs to the strictly larger class of odd $K_t$-minor-free graphs.",
+    "attributed_to": "Hadwiger",
+    "attributed_year": 1943,
+    "paper_contribution": "Does not directly prove new cases, but extends the improper-coloring relaxation of van den Heuvel and Wood (proved for $K_t$-minor-free graphs) to the broader class of odd $K_t$-minor-free graphs, thereby strengthening the landscape of results around Hadwiger's conjecture.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source; conjecture statement reads cleanly.",
+    "arxiv_id": "2203.02766",
+    "paper_title": "Improved bound for improper colorings of graphs with no odd clique minor",
+    "paper_authors": [
+      "Raphael Steiner"
+    ],
+    "published": "2022-03-05",
+    "abs_url": "https://arxiv.org/abs/2203.02766",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Odd Hadwiger's Conjecture (Conjecture 1.2)",
+    "statement_text": "For every integer $t \\geq 2$, if $G$ is a graph not containing an odd $K_t$-minor, then $G$ is properly $(t-1)$-colorable.",
+    "context_text": "Proposed by Gerards and Seymour in 1995 as a strict strengthening of Hadwiger's conjecture, since every $K_t$-minor-free graph is also odd $K_t$-minor-free but not vice versa. It has been verified for $t \\leq 4$ and announced for $t = 5$, but remains widely open for $t \\geq 6$. This conjecture is the central subject of the paper.",
+    "attributed_to": "Gerards and Seymour",
+    "attributed_year": 1995,
+    "paper_contribution": "Proves a relaxation: every graph with no odd $K_t$-minor admits a (not necessarily proper) vertex-coloring using $2t-2$ colors such that all monochromatic components have size at most $\\lceil \\frac{1}{2}(t-2) \\rceil$, improving all previous bounds for this improper-coloring variant and matching the color-count lower bound up to a factor of 2.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source; conjecture statement reads cleanly. Attribution cite is [6] (Diestel's book, Section 6.5).",
+    "arxiv_id": "2203.02766",
+    "paper_title": "Improved bound for improper colorings of graphs with no odd clique minor",
+    "paper_authors": [
+      "Raphael Steiner"
+    ],
+    "published": "2022-03-05",
+    "abs_url": "https://arxiv.org/abs/2203.02766",
+    "source": "pdf"
+  }
+]

@@ -1,0 +1,48 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 3.1",
+    "statement_text": "Let $H$ be a hero and let $F$ be an oriented forest. The set $\\{\\overleftrightarrow{K_2}, H, F\\}$ is heroic if and only if: either $F$ is the disjoint union of oriented stars, or $H$ is a transitive tournament.",
+    "context_text": "A set $\\mathcal{F}$ of digraphs is heroic if every digraph not containing any member of $\\mathcal{F}$ as an induced subdigraph has bounded dichromatic number. This conjecture is an analogue of the Gyárfás–Sumner conjecture for oriented graphs, proposed together with a proof of the only-if direction. The conjecture is stated to be still widely open at the time of submission.",
+    "attributed_to": "Aboulker, Charbit, and Naserasr",
+    "attributed_year": null,
+    "paper_contribution": "Proves the first open special case $F = S_2^+$, $H = C_3$: every locally out-transitive oriented graph has dichromatic number at most 2 (Theorem 3.2), and in fact proves the stronger Theorem 3.3 used for induction.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "PDF source; the $\\overleftrightarrow{K_2}$ symbol rendered as plain text in extraction. Reference [2] is co-authored by two of the three current paper authors (Aboulker and Charbit) together with Naserasr, so the attributed_year cannot be inferred from the extracted text.",
+    "arxiv_id": "2103.07886",
+    "paper_title": "Decomposing and colouring some locally semicomplete digraphs",
+    "paper_authors": [
+      "Pierre Aboulker",
+      "Guillaume Aubian",
+      "Pierre Charbit"
+    ],
+    "published": "2022-12-06",
+    "abs_url": "https://arxiv.org/abs/2103.07886",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Caccetta-Häggkvist Conjecture",
+    "statement_text": "Every digraph on $n$ vertices with minimum out-degree at least $r$ contains a directed cycle of length at most $\\lceil n/r \\rceil$.",
+    "context_text": "Described as 'famous' in the paper. The special case for locally in-tournament digraphs was mentioned in reference [29] as an unpublished but non-trivial result of Paul Seymour. The paper provides a new, more conceptual proof as a second application of the main decomposition theorem (Theorem 2.3), in Section 3.2.",
+    "attributed_to": "Caccetta and Häggkvist",
+    "attributed_year": 1978,
+    "paper_contribution": "Proves that every locally in-tournament digraph satisfies the Caccetta-Häggkvist conjecture, deducing it from the structural decomposition theorem (Theorem 2.3).",
+    "opg_lookup": true,
+    "confidence": "low",
+    "notes": "PDF source; Section 3.2 containing the explicit statement and proof is not present in the extracted text. The conjecture statement given here is the standard formulation from the literature, not verbatim from the paper.",
+    "arxiv_id": "2103.07886",
+    "paper_title": "Decomposing and colouring some locally semicomplete digraphs",
+    "paper_authors": [
+      "Pierre Aboulker",
+      "Guillaume Aubian",
+      "Pierre Charbit"
+    ],
+    "published": "2022-12-06",
+    "abs_url": "https://arxiv.org/abs/2103.07886",
+    "source": "pdf"
+  }
+]

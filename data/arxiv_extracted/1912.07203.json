@@ -1,0 +1,25 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Meyniel's Conjecture",
+    "statement_text": "The cop number of any connected graph on $n$ vertices can be bounded by $O(\\sqrt{n})$.",
+    "context_text": "Meyniel's conjecture is described as one of the main open questions in the Cops and Robbers area. The paper improves cop number upper bounds for graphs of bounded diameter, obtaining $c(G) < n^{3/5+o(1)}$ for diameter at most 4 and $c(G) < n^{3/7+o(1)}$ for diameter at most 3, both of which are improvements over previously known bounds and constitute partial progress toward Meyniel's conjecture for these graph classes.",
+    "attributed_to": "Meyniel",
+    "attributed_year": null,
+    "paper_contribution": "Proves improved cop number upper bounds for graphs of bounded diameter: $c(G) < n^{3/5+o(1)}$ when the diameter is at most 4 (improving the prior bound of $n^{2/3+o(1)}$) and $c(G) < n^{3/7+o(1)}$ when the diameter is at most 3 (improving the prior bound of $n^{3/5+o(1)}$), using a novel 'real and imaginary cops' strategy.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "The PDF extraction is truncated after the diameter-3 argument (the text breaks off mid-sentence and is followed by a long list of arXiv IDs), so any additional conjectures or open problems stated later in the paper (e.g., in a concluding section) are not captured here.",
+    "arxiv_id": "1912.07203",
+    "paper_title": "Cops and Robbers on graphs of bounded diameter",
+    "paper_authors": [
+      "Seyyed Aliasghar Hosseini",
+      "Fiachra Knox",
+      "Bojan Mohar"
+    ],
+    "published": "2019-12-16",
+    "abs_url": "https://arxiv.org/abs/1912.07203",
+    "source": "pdf"
+  }
+]

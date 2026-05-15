@@ -1,0 +1,77 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Erdős-Hajnal Conjecture (Conjecture 1.1)",
+    "statement_text": "For every graph $H$, there exists $\\varepsilon > 0$ such that every $H$-free graph $G$ satisfies $\\max(\\alpha(G), \\omega(G)) \\geq |V(G)|^{\\varepsilon}$.",
+    "context_text": "The Erdős-Hajnal conjecture [5, 6] is confirmed for all $H$ with at most four vertices but remains open for $H = C_5$. The case $H = C_5$ is particularly notable because $C_5$ is self-complementary, so excluding $C_5$ simultaneously excludes its complement, an approach that has been fruitful in related work.",
+    "attributed_to": "Erdős and Hajnal",
+    "attributed_year": 1977,
+    "paper_contribution": "Proves that for every $C_5$-free graph $G$ with $n > 1$ vertices, $\\max(\\alpha(G), \\omega(G)) \\geq 2^{c\\sqrt{\\log n \\log \\log n}}$, improving the previously best known general bound of $2^{c\\sqrt{\\log n}}$ when $H = C_5$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1803.03588",
+    "paper_title": "Towards Erdos-Hajnal for graphs with no 5-hole",
+    "paper_authors": [
+      "Maria Chudnovsky",
+      "Jacob Fox",
+      "Alex Scott",
+      "Paul Seymour",
+      "Sophie Spirkl"
+    ],
+    "published": "2018-03-09",
+    "abs_url": "https://arxiv.org/abs/1803.03588",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conlon-Fox-Sudakov Conjecture (Conjecture 1.4)",
+    "statement_text": "For every graph $H$ there exist $\\varepsilon, \\sigma > 0$ such that for every $H$-free graph $G$ on $n > 1$ vertices, and all $c$ with $0 \\leq c \\leq 1/2$, $V(G)$ contains two disjoint subsets $A, B$ with $|A| \\geq \\varepsilon c^{\\sigma} n$ and $|B| \\geq \\varepsilon n$, such that the edge-density between $A, B$ is either at most $c$ or at least $1 - c$.",
+    "context_text": "Conjecture 1.4, due to Conlon, Fox and Sudakov [4, problem 3.13], generalises a bipartite density-separation property for $H$-free graphs and had not been proved for any graph $H$ with more than four vertices prior to this paper. Proving it for $H = C_5$ is the key step in establishing the improved Erdős-Hajnal bound 1.3.",
+    "attributed_to": "Conlon, Fox and Sudakov",
+    "attributed_year": 2015,
+    "paper_contribution": "Proves Conjecture 1.4 for $H = C_5$ with $\\sigma = 1$, via a direct argument for sparse graphs combined with Rödl's theorem to handle the general case.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1803.03588",
+    "paper_title": "Towards Erdos-Hajnal for graphs with no 5-hole",
+    "paper_authors": [
+      "Maria Chudnovsky",
+      "Jacob Fox",
+      "Alex Scott",
+      "Paul Seymour",
+      "Sophie Spirkl"
+    ],
+    "published": "2018-03-09",
+    "abs_url": "https://arxiv.org/abs/1803.03588",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Polynomial dependence of $\\delta$ on $d$ in Rödl's theorem",
+    "statement_text": "A polynomial dependence of $\\delta$ on $d$ holds in Theorem 2.2, i.e., the $\\delta$ satisfying Rödl's theorem can be taken to be polynomial in $d$; and this would imply the Erdős-Hajnal conjecture itself.",
+    "context_text": "In the discussion following Rödl's theorem (2.2), the authors note that Rödl's original proof gives a tower-type bound for $1/\\delta$ in terms of $1/d$, while Fox and Sudakov [7] improve this to $\\delta = 2^{-|V(H)|^{15}(\\log(1/d))^2}$. A polynomial dependence is stated as a community conjecture whose truth would imply the full Erdős-Hajnal conjecture.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated in passive voice ('It is conjectured that…') without a specific citation; appears to be a community/folklore conjecture presented without explicit attribution. For $H = C_5$ the authors note one can achieve the intermediate bound $\\delta = 2^{-O((\\log(1/d))^2 / \\log\\log(1/d))}$.",
+    "arxiv_id": "1803.03588",
+    "paper_title": "Towards Erdos-Hajnal for graphs with no 5-hole",
+    "paper_authors": [
+      "Maria Chudnovsky",
+      "Jacob Fox",
+      "Alex Scott",
+      "Paul Seymour",
+      "Sophie Spirkl"
+    ],
+    "published": "2018-03-09",
+    "abs_url": "https://arxiv.org/abs/1803.03588",
+    "source": "pdf"
+  }
+]

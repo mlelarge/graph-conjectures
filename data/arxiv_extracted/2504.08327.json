@@ -1,0 +1,94 @@
+[
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 1",
+    "statement_text": "Every 5-critical graph in ${\\cal C}$ contains a vertex of degree four.",
+    "context_text": "The authors observe that 5-critical graphs have minimum degree at least four and that there is a natural way to handle degree-four vertices: if $G\\neq K_5$ is 5-critical and $v$ has degree four, one can find non-adjacent neighbours $x,y$ of $v$ and contract them. Conjecture 1 is stated as a stepping stone toward the main Conjecture 2, which implies it because 5-critical graphs contain no separating cliques.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2504.08327",
+    "paper_title": "On a conjecture concerning 4-coloring of graphs with one crossing",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Bernard Lidický",
+      "Bojan Mohar"
+    ],
+    "published": "2025-04-14",
+    "abs_url": "https://arxiv.org/abs/2504.08327",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 2",
+    "statement_text": "If a graph $G$ does not contain separating triangles and has a drawing in the plane with one crossing such that all vertices not incident with the crossed edges have degree at least five, then $G$ is 4-colorable.",
+    "context_text": "This is the central conjecture of the paper. The authors verify it by computer enumeration for all graphs with at most 28 vertices, prove that it implies Conjecture 1, and note that the assumption on separating triangles is necessary. It generalises the Four Color Theorem to graphs drawable with one crossing under a minimum-degree condition.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2504.08327",
+    "paper_title": "On a conjecture concerning 4-coloring of graphs with one crossing",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Bernard Lidický",
+      "Bojan Mohar"
+    ],
+    "published": "2025-04-14",
+    "abs_url": "https://arxiv.org/abs/2504.08327",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 5",
+    "statement_text": "Every non-4-colorable graph in ${\\cal C}_{0}$ has an internal vertex of degree four.",
+    "context_text": "The class ${\\cal C}_{0}\\subseteq{\\cal C}$ consists of graphs obtained from 4-connected plane triangulations by choosing two distinct facial triangles $xuv$ and $yuv$ sharing edge $uv$ and adding edge $xy$; vertices $x,y,u,v$ are external and all others internal. This conjecture is equivalent to Conjecture 2 (the main conjecture) and provides a more combinatorially explicit reformulation analogous to how the Four Color Theorem reduces to triangulations.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2504.08327",
+    "paper_title": "On a conjecture concerning 4-coloring of graphs with one crossing",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Bernard Lidický",
+      "Bojan Mohar"
+    ],
+    "published": "2025-04-14",
+    "abs_url": "https://arxiv.org/abs/2504.08327",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 30",
+    "statement_text": "Every bichromatic-forbidding 4-candidate can be obtained from the diamond by a sequence of the operations described in Lemmas 27, 28, and 29.",
+    "context_text": "A plane graph with outer face bounded by a 4-cycle is bichromatic-forbidding if no 4-colouring assigns the same colour to opposite pairs of the bounding 4-cycle. A 4-candidate is a specific class of such graphs arising in the structural analysis of non-4-colourable graphs in $\\mathcal{C}$. The conjecture proposes a complete recursive generation scheme for this class via three explicit expansion operations.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2504.08327",
+    "paper_title": "On a conjecture concerning 4-coloring of graphs with one crossing",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Bernard Lidický",
+      "Bojan Mohar"
+    ],
+    "published": "2025-04-14",
+    "abs_url": "https://arxiv.org/abs/2504.08327",
+    "source": "html"
+  }
+]

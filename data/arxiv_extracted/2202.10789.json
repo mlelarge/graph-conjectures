@@ -1,0 +1,28 @@
+[
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Problem 1.1",
+    "statement_text": "Let $\\sigma$ and $\\pi$ be two permutations of length $n$ chosen independently and uniformly at random. What is the expected value of $U(\\sigma, \\pi)$?",
+    "context_text": "Dudek, Grytczuk and Ruciński posed the problem of determining the minimum $\\ell$ for which two independently and uniformly random permutations of length $n$ are $\\ell$-similar, where $U(\\sigma,\\pi)$ denotes the smallest such $\\ell$. A simple $O(\\sqrt{n})$ upper bound follows by decomposing each permutation into decreasing subpermutations via Dilworth's theorem applied to the longest increasing subsequence, which has length asymptotically $2\\sqrt{n}$.",
+    "attributed_to": "Dudek, Grytczuk and Ruciński",
+    "attributed_year": null,
+    "paper_contribution": "Proves that two independent uniformly random permutations of length $n$ are $O\\!\\left(n^{1/3}\\log^{11/6}(n)\\right)$-similar with probability at least $1 - o(n^{-1})$, giving $E[U(\\sigma,\\pi)] = O\\!\\left(n^{1/3}\\log^{11/6}(n)\\right)$; this bound is tight up to a polylogarithmic factor. The result also generalises to simultaneous decompositions of $k \\geq 2$ permutations.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2202.10789",
+    "paper_title": "Decomposing random permutations into order-isomorphic subpermutations",
+    "paper_authors": [
+      "Carla Groenland",
+      "Tom Johnston",
+      "Dániel Korándi",
+      "Alexander Roberts",
+      "Alex Scott",
+      "Jane Tan"
+    ],
+    "published": "2023-01-22",
+    "abs_url": "https://arxiv.org/abs/2202.10789",
+    "source": "pdf"
+  }
+]

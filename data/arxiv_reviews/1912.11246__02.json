@@ -1,0 +1,39 @@
+{
+  "review_id": "1912.11246__02",
+  "safe_id": "1912.11246",
+  "arxiv_id": "1912.11246",
+  "conjecture_title": "Open problem: polynomial separator property for (prism, pyramid, theta, even wheel)-free graphs",
+  "paper_title": "Maximum independent sets in (pyramid, even hole)-free graphs",
+  "published": "2019-12-24",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "medium",
+  "summary": "The open problem of whether (prism, pyramid, theta, even wheel)-free graphs have polynomially many minimal separators remains unresolved as stated. Abrishami, Chudnovsky, Dibek, Thomassé, Trotignon, and Vušković (arXiv:2005.05042, 2020) proved the closely related result that (theta, pyramid, prism, turtle)-free graphs have at most $|V(G)|^{18}$ minimal separators constructible in polynomial time; this shares three of the four forbidden subgraphs with the open problem but uses turtle in place of even wheel. Whether this result implies the even-wheel-free case (via class inclusion) could not be determined from the abstract alone, leaving the exact conjecture from arXiv:1912.11246 open or at most partially addressed.",
+  "since_posted": [
+    {
+      "title": "Graphs with polynomially many minimal separators",
+      "authors": "Tara Abrishami, Maria Chudnovsky, Cemil Dibek, Stéphan Thomassé, Nicolas Trotignon, Kristina Vušković",
+      "year": 2021,
+      "venue": "Journal of Combinatorial Theory, Series B",
+      "url": "https://arxiv.org/abs/2005.05042",
+      "arxiv_id": "2005.05042",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves that (theta, pyramid, prism, turtle)-free graphs have at most $|V(G)|^{18}$ minimal separators, a polynomial bound for a four-forbidden-subgraph class that shares prism, pyramid, and theta with the open problem but replaces even wheel with turtle."
+    }
+  ],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2005.05042",
+      "verified": true,
+      "note": "Title and main result confirmed via WebFetch of arXiv abstract: the paper proves polynomially many minimal separators for (theta, pyramid, prism, turtle)-free graphs. The forbidden class differs from the open problem's (prism, pyramid, theta, even wheel)-free class; 'turtle' replaces 'even wheel' as the fourth forbidden subgraph, so this is a closely related but not directly resolving result. The internal reference's claim that it 'Proves Conjecture 1.1 in full' refers to Conjecture 1.1 within paper 2005.05042 (about the turtle-free class), not to a direct proof of the even-wheel-free conjecture from 1912.11246."
+    }
+  ],
+  "search_queries": [
+    "minimal separators prism pyramid theta even wheel free graphs polynomial 1912.11246",
+    "graphs polynomially many minimal separators turtle-free even-wheel-free Chudnovsky Thomasse"
+  ],
+  "notes": "The fourth forbidden subgraph differs between the proved result (turtle, in 2005.05042) and the open problem (even wheel, in 1912.11246). Since turtles contain even holes but even wheels may not contain turtles (and vice versa), the two graph classes are likely incomparable, so 2005.05042 does not directly resolve the stated open problem. The published version of 2005.05042 appears in JCTB (ScienceDirect pii S0095895621000848); DOI not verified. No further follow-up specifically addressing the even-wheel-free case was found within the 5-call cap."
+}

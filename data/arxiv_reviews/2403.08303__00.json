@@ -1,0 +1,28 @@
+{
+  "review_id": "2403.08303__00",
+  "safe_id": "2403.08303",
+  "arxiv_id": "2403.08303",
+  "conjecture_title": "Conjecture 10",
+  "paper_title": "Equivalence between Erdős-Hajnal and polynomial Rödl and Nikiforov conjectures",
+  "published": "2024-04-19",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 10 asserts that every proper hereditary family has the 'polynomial close Rödl property': graphs merely close to the family (not necessarily in it) still contain large homogeneous sets. By Theorem 11 of the same paper, this property is equivalent to the Erdős-Hajnal property, so Conjecture 10 is in effect a reformulation of the Erdős-Hajnal conjecture for hereditary families, which remains wide open. No follow-up paper resolving Conjecture 10 in full generality was found in the indexed literature.",
+  "since_posted": [],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2307.06455",
+      "verified": false,
+      "note": "Paper 'Induced subgraph density. IV. New graphs with the Erdős-Hajnal property' by Nguyen, Scott, Seymour was submitted July 2023, predating arXiv:2403.08303 (March 2024); its abstract does not cite 2403.08303. The internal-reference record claims an implicit connection via the equivalence of Theorem 11, but this could not be confirmed from the abstract. The contribution attributed ('Conjecture 1.7 for Fox-Sudakov polynomial Rödl') concerns a different conjecture than Conjecture 10."
+    }
+  ],
+  "search_queries": [
+    "Bucić Fox Pham \"polynomial Rödl\" \"hereditary family\" \"homogeneous set\" conjecture 2024 2025 2026",
+    "arxiv 2403.08303 \"Conjecture 10\" OR \"polynomial close Rödl\" OR \"close to F\" hereditary 2024 2025 2026",
+    "\"Erdős-Hajnal\" \"polynomial Rödl\" \"hereditary\" cite:2403.08303 2025 2026"
+  ],
+  "notes": "Conjecture 10 is equivalent to the Erdős-Hajnal conjecture via Theorem 11 of arXiv:2403.08303, making it as hard as one of the central open problems in extremal graph theory. Partial progress on the EH conjecture for specific graph classes (e.g., new prime graphs in 2307.06455) implicitly verifies Conjecture 10 for those classes via that equivalence, but the full conjecture remains open."
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Growth rate of list Ramsey numbers (Alon–Buci\\'c–Kalvari–Kuperwasser–Szab\\'o)",
+    "statement_text": "Which side of the bounds $e^{\\sqrt{k}\\log(\\chi(H)-1)/(4r)} \\leq R_\\ell(H,k) \\leq (1-\\pi(H)+o(1))^{-km(H)}$ is closer to the truth for a fixed $r$-graph $H$ that is not $r$-partite?",
+    "context_text": "Alon, Buci\\'c, Kalvari, Kuperwasser, and Szab\\'o introduced the list Ramsey number $R_\\ell(H,k)$ and proved the sub-exponential lower bound and exponential upper bound above, then asked which side better reflects the true asymptotic growth. In stark contrast, no exponential upper bound is known for the classical Ramsey number $R(K_3,k)$.",
+    "attributed_to": "Alon, Buci\\'c, Kalvari, Kuperwasser, and Szab\\'o",
+    "attributed_year": 2021,
+    "paper_contribution": "Proves that $R_\\ell(H,k) = e^{\\Theta(k)}$ for every $r$-graph $H$ that is not $r$-partite, establishing that the exponential upper bound gives the correct order of growth and fully resolving the question.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2103.15175",
+    "paper_title": "Multicolor list Ramsey numbers grow exponentially",
+    "paper_authors": [
+      "Jacob Fox",
+      "Xiaoyu He",
+      "Sammy Luo",
+      "Max Wenqiang Xu"
+    ],
+    "published": "2022-01-23",
+    "abs_url": "https://arxiv.org/abs/2103.15175",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture on $R_\\ell(\\mathcal{H}_s, k)$",
+    "statement_text": "For $s \\geq 2$, if $\\mathcal{H}_s$ is the family of graphs with chromatic number greater than $s$, then $R_\\ell(\\mathcal{H}_s, k) = s^k + 1$.",
+    "context_text": "Theorem 8 of the paper establishes $\\frac{1}{e} \\cdot s^k \\leq R_\\ell(\\mathcal{H}_s, k) \\leq s^k + 1$, where the upper bound follows from $R_\\ell(\\mathcal{H}_s, k) \\leq R(\\mathcal{H}_s, k) = s^k + 1$. The authors conjecture that the upper bound is tight.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2103.15175",
+    "paper_title": "Multicolor list Ramsey numbers grow exponentially",
+    "paper_authors": [
+      "Jacob Fox",
+      "Xiaoyu He",
+      "Sammy Luo",
+      "Max Wenqiang Xu"
+    ],
+    "published": "2022-01-23",
+    "abs_url": "https://arxiv.org/abs/2103.15175",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Determine the exponential constant in $R_\\ell(H,k)$",
+    "statement_text": "It would be interesting to determine $\\lim_{k\\to\\infty} R_\\ell(H,k)^{1/k}$, even in just the case $H = K_3$.",
+    "context_text": "Theorems 1 and 2 together give $\\frac{1}{e}\\cdot 2^k \\leq R_\\ell(K_3,k) \\leq (4+o(1))^k$, but the exact exponential constant is unknown. The authors note that their results do not even establish that the limit $\\lim_{k\\to\\infty} R_\\ell(H,k)^{1/k}$ exists.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "PDF source — the precise numerical bounds cited for $K_3$ may be garbled in extraction.",
+    "arxiv_id": "2103.15175",
+    "paper_title": "Multicolor list Ramsey numbers grow exponentially",
+    "paper_authors": [
+      "Jacob Fox",
+      "Xiaoyu He",
+      "Sammy Luo",
+      "Max Wenqiang Xu"
+    ],
+    "published": "2022-01-23",
+    "abs_url": "https://arxiv.org/abs/2103.15175",
+    "source": "pdf"
+  }
+]

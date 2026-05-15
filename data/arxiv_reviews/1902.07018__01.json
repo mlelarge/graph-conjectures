@@ -1,0 +1,23 @@
+{
+  "review_id": "1902.07018__01",
+  "safe_id": "1902.07018",
+  "arxiv_id": "1902.07018",
+  "conjecture_title": "Open problem on equality $R_\\ell(K_r, 2) = R(K_r, 2)$ for $r > 3$",
+  "paper_title": "List Ramsey numbers",
+  "published": "2020-08-12",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The question of whether the 2-colour list Ramsey number $R_\\ell(K_r, 2)$ equals the ordinary Ramsey number $R(K_r, 2)$ for $r > 3$ remains entirely open. The base case $R_\\ell(K_3, 2) = 6 = R(K_3, 2)$ is verified, but the source paper itself states that for larger complete graphs the problem is unresolved. No follow-up work settling this equality question in either direction was found in the indexed literature through May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "list Ramsey numbers complete graph equality 2-colour Alon Bucić 1902.07018",
+    "list Ramsey number K_r 2 colors equality ordinary Ramsey number",
+    "list Ramsey number cliques 2-colour equality progress 2022 2023 2024 2025",
+    "arxiv \"list Ramsey\" \"R_ell\" OR \"list chromatic\" complete graph 2-coloring equality 2021 2022 2023 2024 2025"
+  ],
+  "notes": "Four web searches and a fetch of the source abstract page returned no follow-up paper addressing $R_\\ell(K_r,2) = R(K_r,2)$ for $r>3$. The source paper (published in J. Graph Theory 2021) itself states this is open. Recent Ramsey-theory breakthroughs (e.g., Campos--Griffiths--Morris--Sahasrabudhe 2023 on diagonal Ramsey, Mattheus--Verstraete 2023 on $R(4,t)$) concern ordinary Ramsey numbers and do not address the list variant. Status: open with high confidence."
+}

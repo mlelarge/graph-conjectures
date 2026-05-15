@@ -1,0 +1,23 @@
+[
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Open Problem: m(C_t × C_s) for all t, s",
+    "statement_text": "Determine $m(C_t \\times C_s)$ for all $t, s$.",
+    "context_text": "Proposition 3.2 establishes that $m(C_3 \\times C_s) \\leq 8$ for all $s > 36$ (since $K_3 = C_3$), answering a question raised in [6] about whether the connectivity code for large tori is strictly smaller than the trivial edge-connectivity bound $2^4 = 16$. The paper explicitly notes that the broader problem of determining $m(C_t \\times C_s)$ for all $t$ and $s$ remains open.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "PDF source; $\\times$ denotes the Cartesian (box) product of graphs. The special case $t=3$ ($K_3=C_3$) is resolved by Proposition 3.2; all other cases remain open.",
+    "arxiv_id": "2308.07653",
+    "paper_title": "Connectivity Graph-Codes",
+    "paper_authors": [
+      "Noga Alon"
+    ],
+    "published": "2023-09-06",
+    "abs_url": "https://arxiv.org/abs/2308.07653",
+    "source": "pdf"
+  }
+]

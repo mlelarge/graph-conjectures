@@ -1,0 +1,39 @@
+{
+  "review_id": "1806.00825__01",
+  "safe_id": "1806.00825",
+  "arxiv_id": "1806.00825",
+  "conjecture_title": "Conjecture 12",
+  "paper_title": "Short rainbow cycles in graphs and matroids",
+  "published": "2020-05-07",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The conjecture holds for graphic matroids (by Theorem 5 of the source paper) and cographic matroids (Theorem 13 of the source paper). A 2026 paper by McGuinness (arXiv:2601.17624) extends the result to all regular matroids, proving that every simple regular matroid of rank r with r+1 colour classes of size at least 2 contains a rainbow circuit of size at most ⌈(r+1)/2⌉. The full conjecture for arbitrary simple rank-(n-1) matroids fails: the source paper itself notes that uniform matroids U_{n-1,m} (for large m) provide counterexamples, as their circuits all have size n.",
+  "since_posted": [
+    {
+      "title": "Short Rainbow Circuits in Regular Matroids",
+      "authors": "Sean McGuinness",
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2601.17624",
+      "arxiv_id": "2601.17624",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves the conjecture for the class of regular matroids, showing that every simple regular matroid M with r(M)+1 colour classes of size at least 2 contains a rainbow circuit of size at most ⌈(r(M)+1)/2⌉."
+    }
+  ],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2101.04716",
+      "verified": false,
+      "note": "This paper (Hompe, Pelikanova, Pokorna, Spirkl) concerns Aharoni's rainbow generalisation of the Caccetta-Häggkvist conjecture for directed graphs; its Conjecture 1.2 is a graph-theoretic statement unrelated to Conjecture 12 about rainbow circuits in matroids. The WebFetch of the abstract confirmed no mention of matroids or arXiv:1806.00825."
+    }
+  ],
+  "search_queries": [
+    "rainbow circuit matroid rank colouring conjecture DeVos 1806.00825",
+    "rainbow circuit matroid \"rank n-1\" \"n colours\" conjecture"
+  ],
+  "notes": "The conjecture as literally stated (for all simple rank-(n-1) matroids) is known to be false via uniform-matroid counterexamples noted in the source paper. The meaningful open question is whether the result extends beyond regular matroids to broader classes. The internal corpus references (both copies of arXiv:2101.04716) are false positives matching a different conjecture in a different paper."
+}

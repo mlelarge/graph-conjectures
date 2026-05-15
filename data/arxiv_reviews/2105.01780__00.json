@@ -1,0 +1,22 @@
+{
+  "review_id": "2105.01780__00",
+  "safe_id": "2105.01780",
+  "arxiv_id": "2105.01780",
+  "conjecture_title": "Open Problem: PTAS for weighted minimization problems in fractionally treewidth-fragile classes",
+  "paper_title": "Approximation schemes for bounded distance problems on fractionally treewidth-fragile graphs",
+  "published": "2021-05-04",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The open problem asks whether a PTAS exists for weighted Minimum Vertex Cover (and more generally for distance-1 minimization problems) in fractionally treewidth-fragile graphs or hereditary classes with sublinear separators. The main obstruction is that the local-search technique that handles the unweighted case does not extend to weighted instances. A closely related subsequent paper by Dvořák (arXiv:2103.08698, SWAT 2022) gives approximation metatheorems for monotone maximization problems in these classes but explicitly restricts to maximization and does not resolve the minimization question. No paper found in the indexed literature as of May 2026 settles this problem.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "weighted minimum vertex cover PTAS fractionally treewidth-fragile sublinear separators Dvořák",
+    "PTAS weighted vertex cover hereditary classes sublinear separators approximation scheme 2022 2023 2024",
+    "PTAS weighted minimum vertex cover sublinear separator hereditary class Dvorak 2023 2024 2025 arxiv"
+  ],
+  "notes": "No follow-up resolving this open problem was found after an exhaustive 5-call web search. The most related post-2021 work is arXiv:2103.08698 (Dvořák, SWAT 2022) which proves approximation metatheorems for monotone *maximization* problems in fractionally treewidth-fragile classes, but explicitly does not cover minimization problems. The structural paper arXiv:2208.10074 (product structure of classes with strongly sublinear separators) is also related but contains no algorithmic results for vertex cover. The conjecture is recent (2021) and the absence of follow-up in the literature supports an open status with high confidence."
+}

@@ -1,0 +1,71 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.2 (Heckman and Thomas)",
+    "statement_text": "Every subcubic triangle-free planar graph is fractionally $8/3$-colorable.",
+    "context_text": "Heckman and Thomas proved that every $n$-vertex planar subcubic triangle-free graph has an independent set of size at least $3n/8$ and proposed this corresponding fractional chromatic number strengthening. The present paper obtains the weaker bound of $11/4$ for all such graphs as a partial step toward the conjecture.",
+    "attributed_to": "Heckman and Thomas",
+    "attributed_year": null,
+    "paper_contribution": "Proves that every subcubic triangle-free planar graph is fractionally $11/4$-colorable (Corollary 1.5), since the two critical cubic exceptions $F^{(1)}_{14}$ and $F^{(2)}_{14}$ are both non-planar.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source — math notation is clean and unambiguous.",
+    "arxiv_id": "2204.12683",
+    "paper_title": "11/4-colorability of subcubic triangle-free graphs",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Bernard Lidický",
+      "Luke Postle"
+    ],
+    "published": "2025-03-28",
+    "abs_url": "https://arxiv.org/abs/2204.12683",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.3 (Cames van Batenburg et al.)",
+    "statement_text": "Every subcubic triangle-free graph avoiding $F^{(1)}_{14}$, $F^{(2)}_{14}$, $F_{11}$, $F_{22}$, $F^{(1)}_{19}$, and $F^{(2)}_{19}$ as subgraphs is fractionally $8/3$-colorable.",
+    "context_text": "Cames van Batenburg et al. proposed this conjecture as a natural fractional-coloring strengthening of their confirmation of the Fraughnaugh–Locke independence number conjecture; it would also imply Conjecture 1.2 of Heckman and Thomas. The present paper explicitly describes its main theorem as the first step towards this conjecture.",
+    "attributed_to": "Cames van Batenburg et al.",
+    "attributed_year": null,
+    "paper_contribution": "Proves the first step: every subcubic triangle-free graph with no component isomorphic to $F^{(1)}_{14}$ or $F^{(2)}_{14}$ has fractional chromatic number at most $11/4$ (Theorem 1.4).",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source — superscript/subscript notation for $F^{(1)}_{14}$ etc. reconstructed from unambiguous context.",
+    "arxiv_id": "2204.12683",
+    "paper_title": "11/4-colorability of subcubic triangle-free graphs",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Bernard Lidický",
+      "Luke Postle"
+    ],
+    "published": "2025-03-28",
+    "abs_url": "https://arxiv.org/abs/2204.12683",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.6",
+    "statement_text": "Every subcubic triangle-free graph avoiding $F^{(1)}_{14}$, $F^{(2)}_{14}$, $F_{11}$, and $F_{22}$ as subgraphs is fractionally $19/7$-colorable.",
+    "context_text": "The authors pose this as an intermediate conjecture between their main result (Theorem 1.4, giving $11/4$-colorability when only $F^{(1)}_{14}$ and $F^{(2)}_{14}$ are excluded) and Conjecture 1.3 (giving $8/3$-colorability when six graphs are excluded). It is noted that $F_{11}$ and $F_{22}$ both have fractional chromatic number exactly $11/4$, while $F^{(1)}_{19}$ and $F^{(2)}_{19}$ have fractional chromatic number $19/7$, motivating this intermediate bound.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "PDF source — the bound $19/7$ and the excluded subgraphs are stated clearly in the text.",
+    "arxiv_id": "2204.12683",
+    "paper_title": "11/4-colorability of subcubic triangle-free graphs",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Bernard Lidický",
+      "Luke Postle"
+    ],
+    "published": "2025-03-28",
+    "abs_url": "https://arxiv.org/abs/2204.12683",
+    "source": "pdf"
+  }
+]

@@ -1,0 +1,44 @@
+{
+  "review_id": "1902.06830__00",
+  "safe_id": "1902.06830",
+  "arxiv_id": "1902.06830",
+  "conjecture_title": "Remark 1.2 (Open Problem on Sparse Densities)",
+  "paper_title": "Moderate deviations of subgraph counts in the Erdős-Rényi random graphs $G(n,m)$ and $G(n,p)$",
+  "published": "2020-02-10",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The open problem of finding the asymptotic rate for moderate deviations of subgraph counts across the entire range of sparse densities in $G(n,m)$ and $G(n,p)$ remains open for general subgraphs. For triangle counts specifically, Alvarado, Gonçalves de Oliveira, and Griffiths (2023, published 2025) determined $\\log\\mathbb{P}(N_{\\triangle}(G) > (1+\\delta)p^3 n^3)$ up to a constant factor for densities above $n^{-1/2}(\\log n)^{1/2}$, and also handled the lower tail for cherries. Alvarado, Dias, and Griffiths (2024, published 2025) further resolved the lower tail for triangle counts in $G(n,m)$ in the regime $n^{-1} \\ll \\delta \\ll n^{-3/4}$. The full conjecture—covering all subgraphs and all sparse density regimes—remains open.",
+  "since_posted": [
+    {
+      "title": "Moderate deviations of triangle counts in sparse Erdős-Rényi random graphs $G(n,m)$ and $G(n,p)$",
+      "authors": "José D. Alvarado, Leonardo Gonçalves de Oliveira, Simon Griffiths",
+      "year": 2023,
+      "venue": "Probability Theory and Related Fields",
+      "url": "https://arxiv.org/abs/2305.04326",
+      "arxiv_id": "2305.04326",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Determines $\\log\\mathbb{P}(N_{\\triangle}(G) > (1+\\delta)p^3 n^3)$ up to a constant factor for densities above $n^{-1/2}(\\log n)^{1/2}$ in both $G(n,m)$ and $G(n,p)$, and achieves a $(1+o(1))$ factor in the non-localized regime of $G(n,p)$, making substantial partial progress on the sparse density open problem for triangle counts."
+    },
+    {
+      "title": "Moderate Deviations of Triangle Counts in the Erdős-Rényi Random Graph $G(n,m)$: The Lower Tail",
+      "authors": "José Alvarado, Gabriel Dias, Simon Griffiths",
+      "year": 2024,
+      "venue": "European Journal of Combinatorics",
+      "url": "https://arxiv.org/abs/2403.13792",
+      "arxiv_id": "2403.13792",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves the lower tail probability for triangle counts in $G(n,m)$ is $\\exp(-\\Theta(\\delta^2 n^3))$ in the previously unresolved regime $n^{-1} \\ll \\delta \\ll n^{-3/4}$, completing the picture for the lower tail of triangles in dense random graphs."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "moderate deviations subgraph counts sparse Erdős-Rényi random graph asymptotic rate 1902.06830",
+    "moderate deviations subgraph counts G(n,p) sparse regime Goldschmidt Griffiths Scott"
+  ],
+  "notes": "The open problem concerns all subgraphs across all sparse densities; the follow-up work focuses on triangles (and 2-paths) and specific density thresholds. The full problem remains open, but the triangle case has seen major partial progress in 2023–2024."
+}

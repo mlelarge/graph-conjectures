@@ -1,0 +1,48 @@
+{
+  "review_id": "1705.04609__00",
+  "safe_id": "1705.04609",
+  "arxiv_id": "1705.04609",
+  "conjecture_title": "Conjecture 1.8",
+  "paper_title": "Induced subgraphs of graphs with large chromatic number. X. Holes of specific residue",
+  "published": "2018-12-04",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 1.8 from arXiv:1705.04609 — that every graph with bounded clique number and sufficiently large chromatic number contains holes of ℓ consecutive lengths — remains open as of May 2026. The source paper itself provides Theorem 1.9 as the best known partial result, guaranteeing two holes of consecutive lengths both greater than ℓ. A web search capped at 5 calls returned no subsequent paper verifiably resolving the full conjecture; the related Gyárfás conjecture on long odd holes was resolved by arXiv:1701.07217 but addresses a distinct statement.",
+  "since_posted": [],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "1701.07217",
+      "verified": true,
+      "note": "Paper confirmed (correct title 'Induced subgraphs of graphs with large chromatic number. VIII. Long odd holes', authors Chudnovsky, Scott, Seymour, Spirkl). Its main result proves a Gyárfás conjecture about long odd holes in graphs with bounded clique number and large chromatic number — related to but distinct from Conjecture 1.8. The claimed contribution note (weaker partial result about two holes of consecutive lengths) could not be confirmed from the abstract alone."
+    },
+    {
+      "arxiv_id": "2206.00186",
+      "verified": false,
+      "note": "Not verified via WebFetch within the 5-call cap. Title 'Dense minors of graphs with independence number two' (Norin, Seymour) and the 'Hadwiger' attribution strongly suggest this concerns Hadwiger's conjecture on dense minors, not Conjecture 1.8 on holes of consecutive lengths. Likely a mismatched internal reference."
+    },
+    {
+      "arxiv_id": "2510.05893",
+      "verified": false,
+      "note": "Not verified via WebFetch. Title 'Immersions and Albertson's conjecture' (Fox, Pach, Suk) with 'Lescure and Meyniel' attribution indicates this is about Albertson's conjecture on graph immersions, unrelated to Conjecture 1.8. Likely a mismatched internal reference."
+    },
+    {
+      "arxiv_id": "2412.13893",
+      "verified": false,
+      "note": "Not verified via WebFetch. Title 'Erdős–Pósa property of cycles that are far apart' (Dujmović, Joret, Micek, Morin) concerns Erdős–Pósa packings of cycles, unrelated to holes in graphs with large chromatic number. Likely a mismatched internal reference."
+    },
+    {
+      "arxiv_id": "2306.02364",
+      "verified": false,
+      "note": "Not verified via WebFetch. Title 'Some results and problems on tournament structure' (Nguyen, Scott, Seymour) is about tournaments, not holes in graphs with large chromatic number. Likely a mismatched internal reference to a different conjecture within that paper."
+    }
+  ],
+  "search_queries": [
+    "Scott Seymour \"holes of consecutive lengths\" chromatic number conjecture 1705.04609",
+    "\"holes of consecutive lengths\" \"chromatic number\" \"clique number\" graph conjecture proof 2020 2021 2022 2023 2024 2025",
+    "arxiv \"holes of consecutive lengths\" \"bounded clique number\" \"chromatic number\" 2023 2024 2025 2026"
+  ],
+  "notes": "Web search explicitly returned the assessment that this conjecture remains open, with the only partial result being Theorem 1.9 of the source paper (two holes of consecutive lengths both greater than ℓ). arXiv:2303.11231 (published in Advances in Combinatorics 2025:2) appeared in a relevant search but could not be verified with a WebFetch call within the 5-call cap and so is not cited. All five internal references appear to be mismatched to other conjectures (Hadwiger, Albertson, Erdős–Pósa property, tournament structure); only arXiv:1701.07217 belongs to the same research line but resolves Gyárfás's conjecture on long odd holes rather than Conjecture 1.8."
+}

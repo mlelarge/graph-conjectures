@@ -1,0 +1,24 @@
+[
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Open Question on s((Z/kZ)^n) for fixed k",
+    "statement_text": "It remains an interesting question to estimate $s((\\mathbb{Z}/k\\mathbb{Z})^n)$ when $k$ is fixed and $n$ is large.",
+    "context_text": "Alon and Dubiner proved $s((\\mathbb{Z}/k\\mathbb{Z})^n) \\leq (cn\\log n)^n k$ for some absolute constant $c$, showing that for any fixed $n$ the quantity grows linearly in $k$. Elsholtz obtained lower bounds $s((\\mathbb{Z}/k\\mathbb{Z})^n) \\geq 2.08^n$ for odd $k\\geq 3$ and large $n$, but a large gap remains between these bounds and the upper bounds of Corollary 2 for fixed odd $k\\geq 3$ and large $n$.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated as a general open problem in the field with no labeled environment; no specific attribution to prior work given.",
+    "arxiv_id": "1708.09100",
+    "paper_title": "Erdős-Ginzburg-Ziv constants by avoiding three-term arithmetic progressions",
+    "paper_authors": [
+      "Jacob Fox",
+      "Lisa Sauermann"
+    ],
+    "published": "2018-04-17",
+    "abs_url": "https://arxiv.org/abs/1708.09100",
+    "source": "pdf"
+  }
+]

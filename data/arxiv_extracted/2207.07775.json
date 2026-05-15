@@ -1,0 +1,90 @@
+[
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.5",
+    "statement_text": "Every sufficiently large integer is polite.",
+    "context_text": "Conjecture 1.5 appears early in the paper with no surrounding context recovered. The term 'polite' is likely a graph-theoretic notion defined in the paper (possibly related to Ramsey multiplicity or the Turán coloring extremality), but the context was not captured in extraction.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "low",
+    "notes": "Statement contains no mathematical notation and context is entirely absent — likely PDF extraction artifact; 'polite' may be a technical term defined in Definition 5.1 of this paper whose full content was not provided.",
+    "arxiv_id": "2207.07775",
+    "paper_title": "Ramsey multiplicity and the Turán coloring",
+    "paper_authors": [
+      "Jacob Fox",
+      "Yuval Wigderson"
+    ],
+    "published": "2023-06-27",
+    "abs_url": "https://arxiv.org/abs/2207.07775",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 5.3",
+    "statement_text": "There exist a mixed blowup coloring of $K_{r(k)-1}[2]$ for infinitely many $k$.",
+    "context_text": "The conjecture arises from Lemma 5.2, which reduces finding a mixed blowup coloring to exhibiting two Ramsey colorings of $K_{r(k)-1}$ that differ on a single vertex. The authors note they cannot establish this for any $k$, partly because $r(k)$ is only known for $k=3,4$, and for both values the Ramsey coloring of $K_{r(k)-1}$ is unique with all vertices having the same red and blue degree.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2207.07775",
+    "paper_title": "Ramsey multiplicity and the Turán coloring",
+    "paper_authors": [
+      "Jacob Fox",
+      "Yuval Wigderson"
+    ],
+    "published": "2023-06-27",
+    "abs_url": "https://arxiv.org/abs/2207.07775",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 5.4",
+    "statement_text": "If $k\\geq 4$ and $t$ is sufficiently large in terms of $k$, then any $(k,t)$-generalized lollipop is a two-color bonbon.",
+    "context_text": "Theorem 1.2 proves that adding $t\\geq(1000kh)^{10}h^{10k}$ pendant edges to a $k$-critical graph $H_0$ with $h$ vertices yields a bonbon, but the proof requires $t$ at least exponentially large in $k$. Moreover, if $H_0=K_k$ then some lower bound on $t$ is necessary since adding $o(k^2/\\log k)$ pendant edges to $K_k$ does not produce a bonbon. The conjecture proposes that sufficiently many pendant edges always suffice for any $k$-critical base graph.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2207.07775",
+    "paper_title": "Ramsey multiplicity and the Turán coloring",
+    "paper_authors": [
+      "Jacob Fox",
+      "Yuval Wigderson"
+    ],
+    "published": "2023-06-27",
+    "abs_url": "https://arxiv.org/abs/2207.07775",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 5.5",
+    "statement_text": "If $k\\geq 4$ and $t$ is sufficiently large in terms of $k$, then $L_{k,t}$ is a two-color bonbon.",
+    "context_text": "The lollipop graph $L_{k,t}$ is obtained from $K_k$ by appending to a single vertex a path with $t-k$ edges. This is a natural special case of Conjecture 5.4 (taking $H_0=K_k$), which the authors suggest may be easier to prove than the full conjecture.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2207.07775",
+    "paper_title": "Ramsey multiplicity and the Turán coloring",
+    "paper_authors": [
+      "Jacob Fox",
+      "Yuval Wigderson"
+    ],
+    "published": "2023-06-27",
+    "abs_url": "https://arxiv.org/abs/2207.07775",
+    "source": "html"
+  }
+]

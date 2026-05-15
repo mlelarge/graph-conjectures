@@ -1,0 +1,24 @@
+{
+  "review_id": "2307.02816__00",
+  "safe_id": "2307.02816",
+  "arxiv_id": "2307.02816",
+  "conjecture_title": "Question 1",
+  "paper_title": "The grid-minor theorem revisited",
+  "published": "2023-07-06",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Question 1 from arXiv:2307.02816 asks whether the upper bound on the underlying treewidth of X-minor-free graph classes given by the paper's main theorem can be improved to a polynomial dependence on td(X). No follow-up paper resolving or substantially improving this bound was found in the indexed literature. The source paper itself was published in Combinatorica (2025), and the polynomial-bound question remains open as of the review date.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "underlying treewidth polynomial tree-depth minor-free graph arXiv 2307.02816",
+    "\"underlying treewidth\" \"tree-depth\" polynomial minor-free Dujmovic Hickingbotham Wood",
+    "WebFetch https://arxiv.org/abs/2307.02816",
+    "WebFetch https://link.springer.com/article/10.1007/s00493-025-00168-w (paywall redirect)",
+    "\"underlying treewidth\" \"utw\" polynomial \"tree-depth\" \"td\" minor-free conjecture 2024 2025"
+  ],
+  "notes": "The source paper appeared in Combinatorica 2025 (DOI 10.1007/s00493-025-00168-w) but the journal page was behind a paywall and could not be verified for any updated open-question discussion. No paper directly addressing Question 1 — whether utw(G_X) is polynomial in td(X) — was found across three targeted web searches. The conjecture is recent (2023) and the absence of follow-up evidence supports open status with high confidence."
+}

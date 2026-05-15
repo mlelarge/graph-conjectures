@@ -1,0 +1,24 @@
+[
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Erdős' question on $f_{3,k}$",
+    "statement_text": "For each fixed integer $k > 3$, is the limit $f_{3,k} := \\lim_{n\\to\\infty} \\frac{\\log f_{3,k}(n)}{\\log n}$ always strictly less than $2$?",
+    "context_text": "Erdős observed in 1973 that $\\log f_{3,4}(n)/\\log n > 1.4649$ holds for infinitely many $n$, noted that the limit $f_{3,k}$ exists for each fixed $k > 3$, and asked whether it is always less than $2$. Simmons and Abbott later showed $f_{3,4}(n) \\geq n^{1.623}$ infinitely often and that $f_{3,k} \\to 2$ as $k \\to \\infty$, but the question for fixed $k$ remained open.",
+    "attributed_to": "Erdős",
+    "attributed_year": 1973,
+    "paper_contribution": "The paper answers Erdős' question in the negative by proving the more general Theorem 1.1: for all integers $k > s \\geq 3$, $\\lim_{n\\to\\infty} \\log f_{s,k}(n)/\\log n = 2$, i.e., $f_{3,k} = 2$ for every fixed $k > 3$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1908.09905",
+    "paper_title": "Sets without $k$-term progressions can have many shorter progressions",
+    "paper_authors": [
+      "Jacob Fox",
+      "Cosmin Pohoata"
+    ],
+    "published": "2020-08-07",
+    "abs_url": "https://arxiv.org/abs/1908.09905",
+    "source": "pdf"
+  }
+]

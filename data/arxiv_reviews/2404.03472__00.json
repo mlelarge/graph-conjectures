@@ -1,0 +1,22 @@
+{
+  "review_id": "2404.03472__00",
+  "safe_id": "2404.03472",
+  "arxiv_id": "2404.03472",
+  "conjecture_title": "Problem 5.1 (cover-free families)",
+  "paper_title": "Lower bounds for graph reconstruction with maximal independent set queries",
+  "published": "2024-04-04",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Problem 5.1 from arXiv:2404.03472 asks whether $(1,r)$-cover-free families achieving $t\\in\\mathcal{O}(r^2\\log|\\mathcal{F}|/\\log r)$ exist, which would close the longstanding gap $\\Omega(r^2\\log n/\\log r)\\leq t(n,1,r)\\leq\\mathcal{O}(r^2\\log n)$ that has been open since the 1990s. A related ITCS 2025 follow-up paper on graph reconstruction via MIS queries addresses the algorithmic bounds from the same source paper but does not resolve this combinatorial problem about cover-free families. No post-2024 paper closing the $(\\log r)$-factor gap for $(1,r)$-cover-free families was found in the indexed literature.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "cover-free families '1,r' optimal bound r^2 log combinatorics 2024 2025",
+    "Michel Scott 'graph reconstruction' 'maximal independent set' 'cover-free' arXiv 2404.03472",
+    "cover-free families optimal t r^2 log n log r upper bound construction 2024 2025 2026 arXiv combinatorics"
+  ],
+  "notes": "The gap between the lower bound Omega(r^2 log n / log r) and upper bound O(r^2 log n) for t(n,1,r) has been known since the 1990s (cf. Electronic Journal of Combinatorics v23i2p45 for a survey of lower bounds). The ITCS 2025 paper 'Graph Reconstruction via MIS Queries' (LIPIcs ITCS 2025, doi:10.4230/LIPIcs.ITCS.2025.66) is a direct algorithmic follow-up to the source paper but does not address Problem 5.1. No construction achieving the conjectured O(r^2 log n / log r) bound was found."
+}

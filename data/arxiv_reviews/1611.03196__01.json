@@ -1,0 +1,40 @@
+{
+  "review_id": "1611.03196__01",
+  "safe_id": "1611.03196",
+  "arxiv_id": "1611.03196",
+  "conjecture_title": "Conjecture 1.9",
+  "paper_title": "Fair representation by independent sets",
+  "published": "2016-11-10",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Conjecture 1.9 from arXiv:1611.03196 remains open in full generality. The source paper established the conjecture for m=2 and m=3 via topological methods (Sperner's lemma). A 2024 follow-up by Othman and Berger (Discrete Mathematics) provides combinatorial reproofs for m=2 and m=3 and shows for m=4 that a perfect matching M always exists in K_{n,n} with total shortfall s(M)≤11, constituting partial progress on the m=4 case but not a full resolution. The conjecture for m≥4 remains open.",
+  "since_posted": [
+    {
+      "title": "Almost fair perfect matchings in complete bipartite graphs",
+      "authors": "Abeer Othman, Eli Berger",
+      "year": 2024,
+      "venue": "Discrete Mathematics",
+      "url": "https://cris.haifa.ac.il/en/publications/almost-fair-perfect-matchings-in-complete-bipartite-graphs",
+      "arxiv_id": null,
+      "doi": "10.1016/j.disc.2023.113865",
+      "kind": "partial",
+      "claim": "Gives combinatorial reproofs of the conjecture for m=2 and m=3, and proves for m=4 that a perfect matching M in K_{n,n} always exists with s(M)≤11, providing partial progress on the m=4 case."
+    }
+  ],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2212.11969",
+      "verified": false,
+      "note": "Paper is about inversion number of tournaments and digraphs (Alon, Powierski, Savery, Scott, Wilmer); it does not reference arXiv:1611.03196 or the fair-matching conjecture. The fuzzy-match was a false positive."
+    }
+  ],
+  "search_queries": [
+    "fair representation independent sets perfect matching K_{n,n} partition Aharoni Alon Chudnovsky 1611.03196",
+    "almost fair representation matching complex bipartite graph partition conjecture",
+    "Abeer Othman Eli Berger almost fair perfect matchings complete bipartite graphs arxiv"
+  ],
+  "notes": "No arXiv preprint was found for the Othman–Berger (2024) paper; it appears to be published only as a journal article (Discrete Mathematics Vol. 347, No. 4, Article 113865). An unpublished 2014 result (Berger, Lo, Seymour) and a later reproof by Alon establish that a function f(m) exists bounding the shortfall by a value depending only on m, but this is weaker than the conjecture and these results remain unpublished. The conjecture is thus open for m≥4."
+}

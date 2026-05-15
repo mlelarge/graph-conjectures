@@ -1,0 +1,44 @@
+{
+  "review_id": "1812.09752__00",
+  "safe_id": "1812.09752",
+  "arxiv_id": "1812.09752",
+  "conjecture_title": "Problem 1.4",
+  "paper_title": "The hat guessing number of graphs",
+  "published": "2020-01-15",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "medium",
+  "summary": "Problem 1.4 remains largely open. Part (i) (HG(G) bounded by a function of maximum degree) was already settled before the problem was stated via the Lovász Local Lemma. Parts (ii) and (iii) are unresolved: for part (ii), several papers have studied hat guessing numbers of degenerate and strongly degenerate graphs and shown that HG can grow at least as fast as $2^{2^{d-1}}$ for $d$-degenerate graphs, but whether an upper bound $f_2(d)$ exists is still open; for part (iii), no evidence of a minimum-degree lower bound was found.",
+  "since_posted": [
+    {
+      "title": "On the Hat Guessing Number of Graphs",
+      "authors": "Noga Alon, Jeremy Chizewer",
+      "year": 2021,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2107.05995",
+      "arxiv_id": "2107.05995",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Restates Problem 1.4 and notes a positive answer seems plausible but does not prove it; constructs a planar graph with HG(G)=12 and analyzes random and complete multipartite graphs."
+    }
+  ],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2107.05995",
+      "verified": true,
+      "note": "Abstract confirmed via WebFetch; paper is about hat guessing numbers and constructs a planar graph with HG=12, studies random and complete multipartite graphs, but does not resolve Problem 1.4 parts (ii)-(iii)."
+    },
+    {
+      "arxiv_id": "2409.01513",
+      "verified": true,
+      "note": "Paper is about bipartite graph list coloring (choosability bound (4/5-epsilon)*Delta/log Delta), not hat guessing numbers; not relevant to this conjecture. The internal-ref attribution appears to be a false match."
+    }
+  ],
+  "search_queries": [
+    "hat guessing number degeneracy minimum degree graph 1812.09752",
+    "hat guessing number degenerate graphs Xiaoyu He arxiv counterexample minimum degree"
+  ],
+  "notes": "Web search found two further highly relevant papers not verified by WebFetch due to the 5-call cap: arXiv:2003.04990 (Xiaoyu He, 'Hat Guessing Numbers of Degenerate Graphs', Electronic Journal of Combinatorics 2020) showing HG(G) >= 2^{2^{d-1}} for some d-degenerate G and giving new upper-bound methods, and arXiv:2112.09619 ('Hat guessing numbers of strongly degenerate graphs', SIAM J. Discrete Math. ~2023); search summaries indicate that the general degeneracy-bound question of part (ii) remains open as of those papers. Part (iii) (minimum-degree lower bound) has no follow-up evidence in indexed literature."
+}

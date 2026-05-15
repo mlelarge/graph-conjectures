@@ -1,0 +1,44 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Neumann-Lara / Škrekovski Conjecture (Conjecture 1)",
+    "statement_text": "If $G$ is a planar graph, then $\\vec{\\chi}(G) \\leq 2$.",
+    "context_text": "In analogy to the Four-Colour-Theorem, this conjecture was proposed by Neumann-Lara [NL85] and independently by Škrekovski [BFJ+04]. The paper's main result (Theorem 2) shows this conjecture is equivalent to the statement that all oriented $K_5$-minor-free graphs are 2-colourable.",
+    "attributed_to": "Neumann-Lara and Škrekovski",
+    "attributed_year": 1985,
+    "paper_contribution": "Shows that Neumann-Lara's Conjecture is equivalent to the more general statement that every $K_5$-minor-free graph $G$ satisfies $\\vec{\\chi}(G) \\leq 2$ and moreover any orientation of $G$ admits an acyclic 2-colouring without monochromatic triangles.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1907.00351",
+    "paper_title": "A Note on Graphs of Dichromatic Number 2",
+    "paper_authors": [
+      "Raphael Steiner"
+    ],
+    "published": "2019-06-30",
+    "abs_url": "https://arxiv.org/abs/1907.00351",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Question 1",
+    "statement_text": "What is the largest minor-closed class $\\mathcal{G}_2$ of undirected graphs with dichromatic number at most 2?",
+    "context_text": "The authors note that while $\\vec{\\chi}(K_6) = 2$ and $\\vec{\\chi}(K_7) = 3$, so $\\mathcal{G}_2$ is a subclass of the $K_7$-minor-free graphs, it seems to be much smaller: there exist $K_{3,3}$-minor-free graphs with dichromatic number greater than 2.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1907.00351",
+    "paper_title": "A Note on Graphs of Dichromatic Number 2",
+    "paper_authors": [
+      "Raphael Steiner"
+    ],
+    "published": "2019-06-30",
+    "abs_url": "https://arxiv.org/abs/1907.00351",
+    "source": "pdf"
+  }
+]

@@ -1,0 +1,27 @@
+[
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 2",
+    "statement_text": "For every $n$-vertex graph $G$, the extension complexity of $\\mathrm{COR}(G)$ is $2^{\\Omega(\\mathrm{tw}(G)+\\log n)}$.",
+    "context_text": "The authors prove the matching upper bound $2^{O(\\mathrm{tw}(G)+\\log n)}$ in Theorem 1 and conjecture that this is tight in general. If true, the conjecture would improve the bound of Göös, Jain and Watson ($2^{\\Omega(n/\\log n)}$ for the stable set polytope) to $2^{\\Omega(n)}$, and would yield explicit 0/1-polytopes with extension complexity exponential in their dimension, as predicted by the counting argument of Rothvoß.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "The paper proves this conjecture for the special case of proper minor-closed graph classes (Theorem 3), but the general statement remains open.",
+    "arxiv_id": "1806.00541",
+    "paper_title": "Extension Complexity of the Correlation Polytope",
+    "paper_authors": [
+      "Pierre Aboulker",
+      "Samuel Fiorini",
+      "Tony Huynh",
+      "Marco Macchia",
+      "Johanna Seif"
+    ],
+    "published": "2018-10-18",
+    "abs_url": "https://arxiv.org/abs/1806.00541",
+    "source": "pdf"
+  }
+]

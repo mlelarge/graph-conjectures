@@ -1,0 +1,48 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Clock-free graphs are clean",
+    "statement_text": "The class of clock-free graphs is clean.",
+    "context_text": "A clock is a graph consisting of an induced cycle $C$ and a vertex not in $C$ with at least two non-adjacent neighbours in $C$. A class $\\mathcal{C}$ of graphs is clean if there exists $f:\\mathbb{N}\\to\\mathbb{N}$ such that for all $t$, every $t$-clean graph $G\\in\\mathcal{C}$ satisfies $\\mathrm{tw}(G)\\leq f(t)$. The conjecture was posed in prior joint work [1] by Abrishami, Alecu, Chudnovsky, Hajebi, Spirkl, and Vušković, where a weaker version (for (clock, prism, pyramid)-free graphs) was proved.",
+    "attributed_to": "Abrishami, Alecu, Chudnovsky, Hajebi, Spirkl, and Vušković",
+    "attributed_year": null,
+    "paper_contribution": "Proves the conjecture in full (Theorem 1.1): every clock-free graph of large treewidth contains, as an induced subgraph, one of the basic obstructions — a complete graph, a subdivision of a wall, or the line graph of a subdivision of a wall.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2311.05719",
+    "paper_title": "Induced subgraphs and tree decompositions XIV. Non-adjacent neighbours in a hole",
+    "paper_authors": [
+      "Maria Chudnovsky",
+      "Sepehr Hajebi",
+      "Sophie Spirkl"
+    ],
+    "published": "2023-11-09",
+    "abs_url": "https://arxiv.org/abs/2311.05719",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.3",
+    "statement_text": "For every fixed $t \\geq 1$, the family of $t$-clock-free graphs is clean.",
+    "context_text": "A $t$-clock is a clock consisting of a hole $C$ and a vertex $v$ such that there are two neighbours $x, y \\in V(C)$ of $v$ where the distance between $x$ and $y$ along $C$ is at least $t$. The main result of the paper (Theorem 1.1) establishes cleanness for $t = 2$ (all clocks); Conjecture 1.3 proposes that cleanness persists even when clocks with close non-adjacent pairs are allowed, for every fixed threshold $t$.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2311.05719",
+    "paper_title": "Induced subgraphs and tree decompositions XIV. Non-adjacent neighbours in a hole",
+    "paper_authors": [
+      "Maria Chudnovsky",
+      "Sepehr Hajebi",
+      "Sophie Spirkl"
+    ],
+    "published": "2023-11-09",
+    "abs_url": "https://arxiv.org/abs/2311.05719",
+    "source": "pdf"
+  }
+]

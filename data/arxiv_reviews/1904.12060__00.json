@@ -1,0 +1,21 @@
+{
+  "review_id": "1904.12060__00",
+  "safe_id": "1904.12060",
+  "arxiv_id": "1904.12060",
+  "conjecture_title": "Conjecture 5",
+  "paper_title": "Every planar graph with $Δ\\geqslant 8$ is totally $(Δ+2)$-choosable",
+  "published": "2022-12-09",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "The conjecture that every simple graph $G$ satisfies $\\chi''_\\ell(G) \\leq \\Delta(G) + 2$ is the list-coloring analogue of the Total Coloring Conjecture and remains open in general. The source paper itself proves it for planar graphs with $\\Delta \\geq 8$ (Corollary 1), extending Borodin's 1989 result for $\\Delta \\geq 9$. No follow-up paper resolving the full general conjecture was found in web searches conducted up to May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "list total chromatic number conjecture chi_l'' Delta+2 graph theory",
+    "arxiv 1904.12060 citing papers list total coloring planar graph"
+  ],
+  "notes": "The List Total Coloring Conjecture is a major open problem analogous to the long-standing Total Coloring Conjecture (Behzad–Vizing). The source paper's main result (planar graphs, Δ ≥ 8) is one of the strongest known partial results. Web searches found no paper proving or disproving the full statement; the conjecture is old enough (3+ years) that medium rather than high confidence is assigned."
+}

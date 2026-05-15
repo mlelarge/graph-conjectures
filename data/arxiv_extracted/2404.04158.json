@@ -1,0 +1,24 @@
+[
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Circuit Diameter Complexity Open Problem (Sanità / Kafer)",
+    "statement_text": "Determine the computational complexity of computing the circuit diameter of a polytope given in halfspace-description.",
+    "context_text": "The circuit diameter of polytopes was introduced by Borgwardt, Finhold and Hemmecke as a fundamental tool for studying circuit augmentation schemes for linear programming and for estimating combinatorial diameters. The complexity question was posed as an open problem independently by Sanità and by Kafer, and was recently reiterated by Borgwardt, Grewe, Kafer, Lee and Sanità.",
+    "attributed_to": "Sanità; Kafer",
+    "attributed_year": null,
+    "paper_contribution": "Resolves the problem by proving that computing the circuit diameter of a polytope given in halfspace-description is strongly NP-hard, via a reduction through the NP-hardness of computing the combinatorial diameter of perfect matching polytopes of bipartite graphs.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Theorem environments and introduction body were not provided in the input; extraction is based solely on the abstract.",
+    "arxiv_id": "2404.04158",
+    "paper_title": "Complexity of polytope diameters via perfect matchings",
+    "paper_authors": [
+      "Christian Nöbel",
+      "Raphael Steiner"
+    ],
+    "published": "2025-01-21",
+    "abs_url": "https://arxiv.org/abs/2404.04158",
+    "source": "html"
+  }
+]

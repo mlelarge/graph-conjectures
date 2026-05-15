@@ -1,0 +1,46 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.1 (Burcroff)",
+    "statement_text": "If $G = \\prod_{i=1}^{n} K[u_i, t_i]$ is a direct product of balanced complete multipartite graphs, then $\\alpha(G) = IR(G)$.",
+    "context_text": "Burcroff observed that earlier proofs establishing $\\alpha(G) = \\Gamma(G)$ for the cases $t_n \\leq 2$ and $n \\leq 3$ (due to Defant and Iyer) did not use the dominating property, hence those cases actually give $\\alpha(G) = IR(G)$. She then conjectured this equality holds in full generality, strengthening the original Defant–Iyer conjecture.",
+    "attributed_to": "Burcroff",
+    "attributed_year": null,
+    "paper_contribution": "Proves $\\alpha(G) = IR(G)$ for all direct products of balanced complete multipartite graphs except at most 37 explicitly listed exceptional graphs $Z_1, \\ldots, Z_{37}$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1904.02595",
+    "paper_title": "Isoperimetry, Stability, and Irredundance in Direct Products",
+    "paper_authors": [
+      "Noga Alon",
+      "Colin Defant"
+    ],
+    "published": "2019-04-04",
+    "abs_url": "https://arxiv.org/abs/1904.02595",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.2",
+    "statement_text": "If $H_1, \\ldots, H_n$ are complete multipartite graphs and $G = \\prod_{i=1}^{n} H_i$, then $\\alpha(G) = IR(G)$.",
+    "context_text": "The authors propose this as a further strengthening of Burcroff's Conjecture 1.1, removing the assumption that the complete multipartite graphs in the direct product are balanced. It is stated at the end of the introduction after the main results are summarised.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1904.02595",
+    "paper_title": "Isoperimetry, Stability, and Irredundance in Direct Products",
+    "paper_authors": [
+      "Noga Alon",
+      "Colin Defant"
+    ],
+    "published": "2019-04-04",
+    "abs_url": "https://arxiv.org/abs/1904.02595",
+    "source": "pdf"
+  }
+]

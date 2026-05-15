@@ -1,0 +1,23 @@
+[
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Open problem on lower bound for concentration interval",
+    "statement_text": "For $p$ fixed, nothing is known from below concerning concentration: it has not even been shown that the chromatic number cannot be concentrated in an interval of constant length.",
+    "context_text": "After establishing that $\\chi(G)$ for $G \\in \\mathcal{G}(n,p)$ with $p$ fixed is concentrated in an interval of length $\\omega(n)\\sqrt{n}/\\log n$, the author notes that all known results give only upper bounds on the concentration width. Whether $\\chi(G)$ could in fact be concentrated on a bounded (or even constant) number of values remains completely open. Bollobás [4, 6] is cited for further discussion of this question.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated as a prose observation without a labelled theorem environment. The precise open question is whether one can rule out constant-length concentration of chi(G(n,p)) for fixed p.",
+    "arxiv_id": "0806.0178",
+    "paper_title": "On the concentration of the chromatic number of random graphs",
+    "paper_authors": [
+      "Alex Scott"
+    ],
+    "published": "2017-10-18",
+    "abs_url": "https://arxiv.org/abs/0806.0178",
+    "source": "pdf"
+  }
+]

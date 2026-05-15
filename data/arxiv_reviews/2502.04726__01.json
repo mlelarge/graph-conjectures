@@ -1,0 +1,23 @@
+{
+  "review_id": "2502.04726__01",
+  "safe_id": "2502.04726",
+  "arxiv_id": "2502.04726",
+  "conjecture_title": "Question 4.1",
+  "paper_title": "Lollipops, dense cycles and chords",
+  "published": "2025-10-10",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Question 4.1 asks whether there is a simple criterion for a sequence of vertices to be an active path of $K_n$, where active paths are a technical notion introduced in this paper as the key tool in the lollipop method. The paper itself establishes that not every Hamiltonian path starting at $c_1$ is active (e.g., in $K_6$ exactly 6 of the 120 paths starting at $c_1$ are non-active), but provides no characterisation. No follow-up work addressing this question was found in the indexed literature as of May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Dvořák Thomassé Trotignon \"active path\" \"lollipop\" 2025 graph Hamiltonian",
+    "arXiv 2502.04726 \"lollipops dense cycles chords\" active path criterion",
+    "\"active path\" \"lollipop method\" complete graph criterion 2025 2026 graph theory",
+    "cite 2502.04726 Dvořák Martins Thomassé Trotignon lollipop cyclic minor 2025 2026"
+  ],
+  "notes": "No follow-up found. The notion of 'active path' is introduced specifically in this paper; the question is very technical and internal to the lollipop method. The paper is recent (first posted February 2025, revised October 2025) and the concept has not yet attracted visible follow-up work."
+}

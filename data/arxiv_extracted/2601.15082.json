@@ -1,0 +1,50 @@
+[
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Problem 1",
+    "statement_text": "Which graph classes have bounded domination-to-2-independence ratio?",
+    "context_text": "The domination-to-2-independence ratio of a graph class $\\mathcal{G}$ is defined as $\\sup_{G\\in\\mathcal{G}}\\tfrac{\\gamma(G)}{\\alpha_{2}(G)}$. Since the fractional relaxations of domination number and $2$-independence number coincide, a bounded ratio would allow both parameters to be approximated via their common fractional relaxation, computable in polynomial time. The problem has been studied for trees, strongly chordal graphs, dually chordal graphs, outerplanar graphs, and other sparse graph classes.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2601.15082",
+    "paper_title": "Characterization of sparse monotone graph classes with bounded domination-to-2-independence ratio",
+    "paper_authors": [
+      "Marthe Bonamy",
+      "Zdeněk Dvořák",
+      "Lukas Michel",
+      "David Mikšaník"
+    ],
+    "published": "2026-01-21",
+    "abs_url": "https://arxiv.org/abs/2601.15082",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Problem 2",
+    "statement_text": "Which graph classes have domination tied to 2-independence?",
+    "context_text": "A graph class $\\mathcal{G}$ has domination tied to 2-independence if there exists a function $h$ such that $\\gamma(G)\\leq h(\\alpha_{2}(G))$ holds for every graph $G\\in\\mathcal{G}$. This is a relaxation of Problem 1, which requires $h$ to be linear; the authors remark that even this relaxed version seems non-trivial.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2601.15082",
+    "paper_title": "Characterization of sparse monotone graph classes with bounded domination-to-2-independence ratio",
+    "paper_authors": [
+      "Marthe Bonamy",
+      "Zdeněk Dvořák",
+      "Lukas Michel",
+      "David Mikšaník"
+    ],
+    "published": "2026-01-21",
+    "abs_url": "https://arxiv.org/abs/2601.15082",
+    "source": "html"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Problem 1",
+    "statement_text": "Does every graph $G$ admit a pivot Gray code on its spanning trees?",
+    "context_text": "A pivot Gray code for spanning trees requires that consecutive spanning trees differ by an edge exchange sharing a common endpoint (the strong revolving door property). Although the corresponding reconfiguration graph is connected for any graph $G$, it remains open whether all graphs admit such a code. Pivot Gray codes have been constructed for fan graphs and more generally for outerplanar graphs.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2603.28614",
+    "paper_title": "A Gray code for arborescences of tournaments",
+    "paper_authors": [
+      "Marthe Bonamy",
+      "Michael Hoffmann",
+      "Clément Legrand-Duchesne",
+      "Günter Rote"
+    ],
+    "published": "2026-03-30",
+    "abs_url": "https://arxiv.org/abs/2603.28614",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Problem 2 (Knuth)",
+    "statement_text": "Does every directed graph $G$ admit a pivot Gray code on its arborescences rooted in a given vertex?",
+    "context_text": "This problem was proposed by Knuth as Exercise 7.2.1.6–102 in The Art of Computer Programming with an estimated difficulty of 46/50. Gray codes on rooted arborescences naturally satisfy the strong revolving door property, so a positive answer would immediately imply a positive answer to Problem 1 on pivot Gray codes for spanning trees of undirected graphs.",
+    "attributed_to": "Knuth",
+    "attributed_year": 2011,
+    "paper_contribution": "Proves a positive answer for tournaments: for any tournament $G$ and vertex $r$, the flip graph of the arborescences of $G$ rooted in $r$ admits a Hamiltonian path (Theorem 1). Also characterises cases where an arborescence has degree 1 in the flip graph and constructs directed graphs whose flip graph is an unbalanced bipartite graph (hence has no Hamiltonian cycle), showing the general question remains open.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2603.28614",
+    "paper_title": "A Gray code for arborescences of tournaments",
+    "paper_authors": [
+      "Marthe Bonamy",
+      "Michael Hoffmann",
+      "Clément Legrand-Duchesne",
+      "Günter Rote"
+    ],
+    "published": "2026-03-30",
+    "abs_url": "https://arxiv.org/abs/2603.28614",
+    "source": "pdf"
+  }
+]

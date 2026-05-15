@@ -1,0 +1,48 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.1",
+    "statement_text": "A graph is strongly perfect if and only if it contains no odd holes, no antiholes of length at least six, and none of the Graphs I, II, III, IV, V shown in Figure 1.",
+    "context_text": "The conjecture, attributed to reference [8] and presented in 1990, proposes a forbidden induced subgraph characterisation of strongly perfect graphs via five infinite families. Graph VI (proposed by Maffray, appearing in Ravindra [9] in 1999) is an additional minimal non-strongly-perfect graph already showing the list is incomplete. The general characterisation of strongly perfect graphs remains open.",
+    "attributed_to": "unknown (cited as [8])",
+    "attributed_year": 1990,
+    "paper_contribution": "Provides several new infinite families of minimal non-strongly-perfect graphs (emanations and mutations of Graphs II–VI) that are not among Graphs I–V of the conjecture, demonstrating that the forbidden induced subgraph list in Conjecture 1.1 is incomplete.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Reference [8] is not identified by author name in the extracted text; attributed_year 1990 is stated explicitly in the paper. The five 'Graphs I–V' are infinite families whose exact LaTeX descriptions depend on figures not fully renderable from PDF extraction.",
+    "arxiv_id": "2003.01846",
+    "paper_title": "New Examples of Minimal Non-Strongly-Perfect Graphs",
+    "paper_authors": [
+      "Maria Chudnovsky",
+      "Cemil Dibek",
+      "Paul Seymour"
+    ],
+    "published": "2020-03-04",
+    "abs_url": "https://arxiv.org/abs/2003.01846",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Informal Conjecture (outerplanar strongly perfect graphs)",
+    "statement_text": "While obtaining a complete list of minimal non-strongly-perfect graphs appears to be out of reach, one might conjecture that the characterization of outerplanar strongly perfect graphs can be obtained [statement truncated in PDF source].",
+    "context_text": "At the end of the paper the authors remark that a full characterisation of minimal non-strongly-perfect graphs is currently intractable, but suggest that restricting to the outerplanar setting may be a more approachable subproblem.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "low",
+    "notes": "PDF extraction truncates the sentence at 'can be obtai'; the complete statement of the conjecture is not recoverable from the source. Confidence set to low due to truncation.",
+    "arxiv_id": "2003.01846",
+    "paper_title": "New Examples of Minimal Non-Strongly-Perfect Graphs",
+    "paper_authors": [
+      "Maria Chudnovsky",
+      "Cemil Dibek",
+      "Paul Seymour"
+    ],
+    "published": "2020-03-04",
+    "abs_url": "https://arxiv.org/abs/2003.01846",
+    "source": "pdf"
+  }
+]

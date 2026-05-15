@@ -1,0 +1,26 @@
+[
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 4",
+    "statement_text": "For any sufficiently large odd integer $k$, $m(C_k) = (k-1)!/2$.",
+    "context_text": "The extremal coloring $\\chi(k, k-1)$ of $K_{2k-1}$ contains exactly $(k-1)!/2$ monochromatic copies of $C_k$ (all in the blue clique of order $k$), giving an upper bound on $m(C_k)$. The authors suggest this upper bound is in fact tight for all sufficiently large odd $k$, strengthening the $(ck)^k$ lower bound proved as Theorem 3.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2108.00987",
+    "paper_title": "Threshold Ramsey multiplicity for odd cycles",
+    "paper_authors": [
+      "David Conlon",
+      "Jacob Fox",
+      "Benny Sudakov",
+      "Fan Wei"
+    ],
+    "published": "2021-09-20",
+    "abs_url": "https://arxiv.org/abs/2108.00987",
+    "source": "pdf"
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Problem 1 (Alon [1], Problem 4.1)",
+    "statement_text": "Does there exist an absolute constant $c > 0$ such that the following holds for all pairs of natural numbers $(n, s)$? Every $2n$-vertex digraph $D$ of minimum out-degree at least $s$ contains an $n$-vertex subdigraph of minimum out-degree at least $\\frac{s}{2} - c$.",
+    "context_text": "Alon raised this problem in 2006 in the context of digraph splitting. He proved a weaker bound: every $2n$-vertex digraph of minimum out-degree at least $s$ contains an $n$-vertex subdigraph of minimum out-degree at least $\\frac{s}{2} - O(\\sqrt{s\\log s})$. The current paper resolves the problem in the negative.",
+    "attributed_to": "Noga Alon",
+    "attributed_year": 2006,
+    "paper_contribution": "Resolves the problem in the negative: for infinitely many $n$ there exists a $2n$-vertex tournament with minimum out-degree $s = n-1$ in which every $n$-vertex subdigraph has minimum out-degree at most $\\frac{s}{2} - \\left(\\frac{1}{2}+o(1)\\right)\\log_3(s)$, so no absolute constant $c$ can work.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source — some inline math fragments were garbled; statement reconstructed from both the abstract and the body of Problem 1.",
+    "arxiv_id": "2210.12699",
+    "paper_title": "Subdigraphs of prescribed size and outdegree",
+    "paper_authors": [
+      "Raphael Steiner"
+    ],
+    "published": "2022-10-23",
+    "abs_url": "https://arxiv.org/abs/2210.12699",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Open problem: closing the gap for $d(s)$",
+    "statement_text": "It remains an interesting open problem to close the gap between the lower and upper bounds: $\\Omega(\\log s) < \\frac{s}{2} - d(s) < O(\\sqrt{s\\log s})$, where $d(s)$ denotes the largest integer such that every $2n$-vertex digraph of minimum out-degree at least $s$ contains an $n$-vertex subdigraph of minimum out-degree at least $d(s)$.",
+    "context_text": "After disproving Alon's problem, the authors note that the true asymptotic behaviour of $\\frac{s}{2} - d(s)$ lies somewhere between $\\Omega(\\log s)$ (established by their construction) and $O(\\sqrt{s\\log s})$ (established by Alon's probabilistic argument). The precise asymptotics of $d(s)$ remain open.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated in prose without a labelled environment; PDF source may garble some exponent notation.",
+    "arxiv_id": "2210.12699",
+    "paper_title": "Subdigraphs of prescribed size and outdegree",
+    "paper_authors": [
+      "Raphael Steiner"
+    ],
+    "published": "2022-10-23",
+    "abs_url": "https://arxiv.org/abs/2210.12699",
+    "source": "pdf"
+  }
+]

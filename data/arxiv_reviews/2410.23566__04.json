@@ -1,0 +1,23 @@
+{
+  "review_id": "2410.23566__04",
+  "safe_id": "2410.23566",
+  "arxiv_id": "2410.23566",
+  "conjecture_title": "Conjecture 10",
+  "paper_title": "Blow-ups and extensions of trees in tournaments",
+  "published": "2024-10-31",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 10 from arXiv:2410.23566 asserts the existence of an absolute constant C such that every k-extension of an oriented tree of order n is C^k(2n-2)-unavoidable. This would follow from Conjecture 9 (multiplicative stability under vertex addition) combined with Sumner's conjecture, but remains open. The paper itself establishes only a weaker bound of (2·3^{\\binom{2k+2}{2}}·|V(F)|)-unavoidability (Corollary 25), with super-exponential dependence on k rather than the conjectured simple exponential C^k. No subsequent work resolving or further advancing this conjecture was found in the published literature.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "k-extension oriented tree unavoidable tournament Aboulker Havet Lochet Lopes 2410.23566",
+    "blow-up extension oriented tree tournament unavoidable Sumner conjecture 2025",
+    "arXiv 2025 \"k-extension\" \"oriented tree\" \"unavoidable\" tournament \"absolute constant\"",
+    "Picasarri-Arrieta Rambaud Lopes tournament oriented tree 2025 arXiv unavoidable"
+  ],
+  "notes": "No follow-up resolving or partially resolving Conjecture 10 was found after 5 web calls. The conjecture is implied by the still-open Conjecture 9 of the same paper together with the (also open) exact form of Sumner's conjecture. Lucas Picasarri-Arrieta's personal page and Clément Rambaud's arXiv listing show no 2025 papers on this topic."
+}

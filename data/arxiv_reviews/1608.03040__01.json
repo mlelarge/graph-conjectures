@@ -1,0 +1,50 @@
+{
+  "review_id": "1608.03040__01",
+  "safe_id": "1608.03040",
+  "arxiv_id": "1608.03040",
+  "conjecture_title": "Conjecture 9",
+  "paper_title": "Majority Colourings of Digraphs",
+  "published": "2016-08-10",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "disproved",
+  "confidence": "medium",
+  "summary": "Conjecture 9 from arXiv:1608.03040 asserts that for k≥2, every digraph can be (k+1)-coloured so that each vertex shares its colour with at most 1/k of its out-neighbours (i.e. the generalised majority chromatic number m(k) equals k+1). Girão, Kittipassorn, and Popielarz (arXiv:1701.03780, CPC 2017) proved that m(k) ∈ {2k−1, 2k}, establishing in particular a lower bound m(k) ≥ 2k−1; for k≥3 this exceeds k+1, disproving the conjecture for those values of k. The special case k=2 (the majority 3-colouring conjecture) remains open; Anastos, Lamaison, Steiner, and Szabó (arXiv:1911.01954, 2019) proved it for digraphs with chromatic number at most 6 or dichromatic number at most 3, and established NP-completeness of majority 2-colourability.",
+  "since_posted": [
+    {
+      "title": "Generalised Majority Colourings of Digraphs",
+      "authors": "António Girão, Teeradej Kittipassorn, Kamil Popielarz",
+      "year": 2017,
+      "venue": "Combinatorics, Probability and Computing, Volume 26, Issue 6, pp. 850-855",
+      "url": "https://arxiv.org/abs/1701.03780",
+      "arxiv_id": "1701.03780",
+      "doi": null,
+      "kind": "counterexample",
+      "claim": "Proves m(k) ∈ {2k−1, 2k}, where m(k) is the minimum number of colours guaranteeing each vertex shares its colour with at most 1/k of its out-neighbours; the lower bound m(k) ≥ 2k−1 > k+1 for k≥3 disproves Conjecture 9 for all such k."
+    },
+    {
+      "title": "Majority Colorings of Sparse Digraphs",
+      "authors": "Michael Anastos, Ander Lamaison, Raphael Steiner, Tibor Szabó",
+      "year": 2019,
+      "venue": "Electronic Journal of Combinatorics, vol. 28 no. 2",
+      "url": "https://arxiv.org/abs/1911.01954",
+      "arxiv_id": "1911.01954",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves the k=2 case (majority 3-colouring) for digraphs with chromatic number ≤6 or dichromatic number ≤3; shows majority 2-colourability is NP-complete; obtains fractional bound m(2) ≤ 3.9602 via probabilistic methods."
+    }
+  ],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "1911.01954",
+      "verified": true,
+      "note": "Confirmed: paper focuses on the k=2 (majority 3-colouring) special case of Conjecture 9. Main results match the supplied contribution text: NP-completeness of majority 2-colourability (Theorem 9), partial results for restricted graph classes, and the fractional bound K≤3.9602 (Theorem 6). The multiple duplicate internal-ref entries all refer to the same paper."
+    }
+  ],
+  "search_queries": [
+    "majority coloring digraph \"k+1 colours\" \"1/k\" out-neighbours conjecture arXiv 1608.03040",
+    "majority coloring digraph generalized \"1/k\" Kreutzer Seymour Wood conjecture resolved 2020 2021 2022 2023 2024"
+  ],
+  "notes": "Conjecture 9 is disproved for k≥3 by arXiv:1701.03780 (Girão, Kittipassorn, Popielarz, CPC 2017), which establishes m(k)≥2k−1>k+1 for those k. The surviving open case is k=2, i.e. the majority 3-colouring conjecture (Conjecture 2 of the same source paper). Confidence is medium because the full counterexample construction in 1701.03780 was not read directly, only the Cambridge Core abstract and arXiv abstract page."
+}

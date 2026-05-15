@@ -1,0 +1,50 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Planar Linear Arboricity Conjecture (Conjecture 1)",
+    "statement_text": "For any planar graph $G$ of maximum degree $\\Delta \\geq 5$, we have $\\mathrm{la}(G) = \\left\\lceil \\frac{\\Delta}{2} \\right\\rceil$.",
+    "context_text": "Cygan et al. proved $\\mathrm{la}(G) = \\lceil \\Delta/2 \\rceil$ for planar graphs with $\\Delta \\geq 9$ and posed this conjecture extending that result to all $\\Delta \\geq 5$. The conjecture implies the Vizing Planar Graph Conjecture, which is currently open only for $\\Delta = 6$.",
+    "attributed_to": "Cygan et al.",
+    "attributed_year": null,
+    "paper_contribution": "Proves Conjecture 2 (a refined partition result) for $\\Delta = 9$, showing that edges of any planar graph with $\\Delta(G) \\leq 9$ can be partitioned into 4 linear forests and a matching; combined with Theorem 1, this yields $\\mathrm{la}(G) = \\lceil \\Delta/2 \\rceil$ for all planar $G$ with odd $\\Delta \\geq 9$ via a matching-augmented decomposition.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2302.13312",
+    "paper_title": "Partitioning edges of a planar graph into linear forests and a matching",
+    "paper_authors": [
+      "Marthe Bonamy",
+      "Jadwiga Czyżewska",
+      "Łukasz Kowalik",
+      "Michał Pilipczuk"
+    ],
+    "published": "2023-02-26",
+    "abs_url": "https://arxiv.org/abs/2302.13312",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 2",
+    "statement_text": "For every planar graph $G$ of odd maximum degree $\\Delta \\geq 7$ the edges of $G$ can be partitioned into $\\frac{\\Delta-1}{2}$ linear forests and one matching.",
+    "context_text": "This conjecture refines the known linear arboricity bound for planar graphs with odd maximum degree by replacing one linear forest with the weaker structure of a matching. The case $\\Delta \\geq 11$ follows from existing results; the paper resolves $\\Delta = 9$ (Theorem 2), leaving $\\Delta = 7$ as the sole remaining open case.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2302.13312",
+    "paper_title": "Partitioning edges of a planar graph into linear forests and a matching",
+    "paper_authors": [
+      "Marthe Bonamy",
+      "Jadwiga Czyżewska",
+      "Łukasz Kowalik",
+      "Michał Pilipczuk"
+    ],
+    "published": "2023-02-26",
+    "abs_url": "https://arxiv.org/abs/2302.13312",
+    "source": "pdf"
+  }
+]

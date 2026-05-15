@@ -1,0 +1,45 @@
+{
+  "review_id": "1808.01605__00",
+  "safe_id": "1808.01605",
+  "arxiv_id": "1808.01605",
+  "conjecture_title": "Conjecture 4",
+  "paper_title": "Triangle-free subgraphs with large fractional chromatic number",
+  "published": "2018-08-05",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "Conjecture 4 from arXiv:1808.01605 asks whether for every real x≥1 and integer g≥3 there exists k(x,g) such that every graph G with χ_f(G)≥k(x,g) contains a subgraph H of girth at least g with χ_f(H)≥x. The source paper itself establishes the g=4 case (Theorem 3), which is the fractional analog of Rödl's 1977 result on chromatic number. No subsequent paper resolving the conjecture for g≥5 was found across targeted web searches; the conjecture appears to remain open as of 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2510.11311",
+      "verified": false,
+      "note": "Paper is about extending Thomassen's conjecture to directed graphs; not related to Conjecture 4 of Mohar-Wu."
+    },
+    {
+      "arxiv_id": "2209.00594",
+      "verified": false,
+      "note": "Paper is about Hadwiger's conjecture for 4- and 5-chromatic graphs; not related to fractional chromatic number and girth."
+    },
+    {
+      "arxiv_id": "2002.11100",
+      "verified": false,
+      "note": "Paper is about clique minors in graphs with a forbidden subgraph (Hadwiger-type); not related to Conjecture 4."
+    },
+    {
+      "arxiv_id": "2411.16465",
+      "verified": true,
+      "note": "Paper resolves the fractional chromatic number vs. Hall ratio problem (Dvořák–Ossona de Mendez–Wu conjecture). WebFetch confirmed the abstract concerns Hall ratio, not girth constraints; no mention of Mohar-Wu Conjecture 4."
+    }
+  ],
+  "search_queries": [
+    "fractional chromatic number subgraph girth Mohar Wu conjecture 1808.01605",
+    "fractional chromatic number large girth subgraph high girth 2024 2025 arxiv",
+    "WebFetch https://arxiv.org/abs/2411.16465",
+    "WebFetch https://arxiv.org/abs/2403.13571",
+    "WebFetch https://arxiv.org/abs/1808.01605"
+  ],
+  "notes": "The conjecture is the natural full generalization of the paper's main Theorem 3 (g=4 case) to all girth g≥3, paralleling the classical Erdős-Hajnal / Rödl program for ordinary chromatic number. None of the five supplied internal references address this conjecture. No follow-up paper proving or disproving the full statement for g≥5 was found; the conjecture is 8 years old, so medium rather than high confidence is appropriate."
+}

@@ -1,0 +1,22 @@
+{
+  "review_id": "2112.02313__00",
+  "safe_id": "2112.02313",
+  "arxiv_id": "2112.02313",
+  "conjecture_title": "Polynomial Kempe sequences for degenerate graphs",
+  "paper_title": "Kempe changes in degenerate graphs",
+  "published": "2021-12-04",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The question of whether any two $k$-colorings of a $(k-1)$-degenerate graph on $n$ vertices can always be connected by a Kempe sequence of polynomial length remains open. The source paper (arXiv:2112.02313, published in European Journal of Combinatorics 2023) proves polynomial bounds only under stronger assumptions: $O(kn^2)$ Kempe changes when the graph has treewidth at most $k-1$, and $O(n^2)$ changes when the number of colors equals the maximum degree $\\Delta$. No follow-up paper resolving the general $(k-1)$-degenerate case was found in the indexed literature.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Kempe changes degenerate graphs polynomial sequence length arXiv 2112.02313",
+    "Kempe equivalence k-colorings degenerate graphs polynomial bound Bonamy Delecroix Legrand-Duchesne",
+    "polynomial Kempe sequence length degenerate graph coloring 2022 2023 2024 2025"
+  ],
+  "notes": "The source paper partially resolves the question: it proves polynomial bounds for the special cases of bounded treewidth (treewidth at most k-1 gives O(kn^2)) and maximum-degree colorings (O(n^2) for Delta-colorings, with one exception). The open question is specifically about general (k-1)-degenerate graphs with exactly k colors, which subsumes the treewidth case. A related 2025 paper (arXiv:2512.00695) studies Kempe changes in H-free graphs but focuses on Kempe connectivity (existence of a sequence), not polynomial length bounds. No resolution of the full conjecture was found."
+}

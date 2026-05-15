@@ -1,0 +1,48 @@
+[
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Question 1.3 (Gowers–Long)",
+    "statement_text": "Is there any pair $(q,r)$ for which one can prove a power savings $G_{q,r}(n)\\leqslant n^{q-r+1-\\delta}$, for some absolute constant $\\delta>0$?",
+    "context_text": "Gowers and Long [25] proved numerous results on the extremal functions $F_{q,r}(n)$ and $G_{q,r}(n)$, including a power-savings bound for $F_{q,q-1}(n)$, but their results for $G_{q,r}(n)$ were much more limited: the trivial upper bound $G_{q,r}(n)\\leqslant n^{q-r+1}$ remained unimproved in general. This question asks whether any power savings over that trivial bound is achievable. The present paper resolves the question affirmatively for the pair $(q,q-1)$ for every $q$ via Corollary 1.4, by combining the lower bound on $g_{q,q-1}(N)$ from Theorem 1.1 with the known equivalence between the tournament and vector formulations.",
+    "attributed_to": "Gowers and Long",
+    "attributed_year": 2021,
+    "paper_contribution": "Resolves the question affirmatively: for every $q$ and the pair $(q,q-1)$, the paper's main Theorem 1.1 implies $G_{q,q-1}(n)\\leqslant n^{q-(q-1)+1-\\delta}$ for an absolute constant $\\delta>0$, as stated in Corollary 1.4.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2512.10438",
+    "paper_title": "Color-avoiding directed paths in tournaments",
+    "paper_authors": [
+      "Jacob Fox",
+      "Benny Sudakov",
+      "Yuval Wigderson"
+    ],
+    "published": "2026-01-21",
+    "abs_url": "https://arxiv.org/abs/2512.10438",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Problem 5.1",
+    "statement_text": "For some integers $q\\geqslant 4$ and $N$, does there exist a non-transitive $q$-edge-colored $N$-vertex tournament whose longest color-avoiding path has strictly fewer than $f_{q,q-1}(N)$ vertices?",
+    "context_text": "For $q\\geqslant 4$, Proposition 1.5 shows $F_{q,q-1}(n)=G_{q,q-1}(n)$, meaning the largest $(q-1)$-comparable set is always a $(q-1)$-increasing sequence and hence corresponds to a transitive tournament. Problem 5.1 asks whether a non-transitive coloring can do strictly worse than the transitive extremum. The answer is affirmative for $q=3$ via the Hamaker–Stein construction, but Proposition 1.5 rules out any vector-based construction for $q\\geqslant 4$, leaving the problem open in that range.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2512.10438",
+    "paper_title": "Color-avoiding directed paths in tournaments",
+    "paper_authors": [
+      "Jacob Fox",
+      "Benny Sudakov",
+      "Yuval Wigderson"
+    ],
+    "published": "2026-01-21",
+    "abs_url": "https://arxiv.org/abs/2512.10438",
+    "source": "html"
+  }
+]

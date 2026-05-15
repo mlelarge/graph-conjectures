@@ -1,0 +1,23 @@
+{
+  "review_id": "2407.21360__00",
+  "safe_id": "2407.21360",
+  "arxiv_id": "2407.21360",
+  "conjecture_title": "Conjecture 7",
+  "paper_title": "Clustered Colouring of Graph Products",
+  "published": "2024-07-31",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Conjecture 7 asserts that for every fixed integer c≥2 the optimal clustering exponent c/(c²−c+1) for c-colourings of H⊠P (with H of fixed treewidth and P a path) is achieved by a matching lower bound. The source paper itself establishes this lower bound for c=2 (Lemma 15, exponent 2/3) and c=3 (Theorem 2, exponent 3/7), confirming the conjecture for those two cases. For c≥4 only a weaker lower bound is known and the conjecture remains open. No follow-up paper resolving the general case was found in a search of arXiv and journal literature through May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "clustered colouring strong product treewidth path clustering lower bound 2024 2025",
+    "arXiv 2407.21360 clustered colouring graph products Campbell Gollin Hendrey Wood",
+    "clustered colouring \"strong product\" path treewidth lower bound \"c/(c^2-c+1)\" 2025",
+    "clustered coloring graph products strong product path lower bound conjecture Wood Hendrey 2025 arxiv"
+  ],
+  "notes": "The c=2 and c=3 cases of Conjecture 7 are proved within the source paper (arXiv:2407.21360), which was subsequently published in the Electronic Journal of Combinatorics (accepted June 2025, published July 2025) as v32i3p15. For c≥4 the paper provides only the upper bound O(n^{c/(c²−c+1)}) and a weaker lower bound Ω(n^{1/(c−2/3)}); the conjecture that the tight exponent c/(c²−c+1) is achievable with a path construction remains open. No post-2024 follow-up paper addressing the general case was located."
+}

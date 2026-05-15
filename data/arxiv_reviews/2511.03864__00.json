@@ -1,0 +1,22 @@
+{
+  "review_id": "2511.03864__00",
+  "safe_id": "2511.03864",
+  "arxiv_id": "2511.03864",
+  "conjecture_title": "Question 5.2",
+  "paper_title": "Induced matching treewidth and tree-independence number, revisited",
+  "published": "2025-11-05",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Question 5.2 is left open in the source paper arXiv:2511.03864. The paper's main result (Theorem 1.2) establishes tree-α(G) = O_t(μ^{3t²+1}) for K_{t,t}-free graphs with tree-μ(G) ≤ μ, giving a polynomial bound in μ for fixed t; however, Question 5.2 asks for the reverse direction: a polynomial bound in t for fixed μ. Lemma 5.1 of the paper shows the existing bound involves N(s,s,2) which is exponential in s, motivating the question, but does not rule out a polynomial in t for fixed μ. No follow-up paper resolving this question was found in the indexed literature in the six months since posting.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "arXiv 2511.03864 tree-independence number induced matching treewidth Alon Milanič Rzążewski 2025 2026",
+    "tree-independence number K_{t,t}-free polynomial bound induced matching treewidth graph 2025 2026",
+    "Milanič Rzążewski tree-independence number K_{t,t}-free polynomial t 2025 2026 arxiv"
+  ],
+  "notes": "The paper was posted November 2025 and Question 5.2 is explicitly left open. The main theorem gives tree-α(G) = O_t(μ^{3t²+1}), a polynomial in μ (for fixed t) but with t-dependent exponent, so it does not answer Question 5.2. No follow-up resolving this specific question was found after 5 web calls; the conjecture is open with high confidence given its recency."
+}

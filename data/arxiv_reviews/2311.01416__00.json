@@ -1,0 +1,33 @@
+{
+  "review_id": "2311.01416__00",
+  "safe_id": "2311.01416",
+  "arxiv_id": "2311.01416",
+  "conjecture_title": "Informal Conjecture on h(n)",
+  "paper_title": "Homogeneous structures in subset sums and non-averaging sets",
+  "published": "2023-11-02",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "solved",
+  "confidence": "high",
+  "summary": "The conjecture that h(n) = \\Theta(n^{1/4}) (i.e., that Bosznay's 1990 lower bound is tight) was resolved in October 2024 by Pham and Zakharov, who proved that the largest non-averaging subset of \\{1,\\ldots,n\\} has size n^{1/4+o(1)}, matching the lower bound up to sub-polynomial factors. Their paper explicitly describes this as solving the Erdős–Straus problem on non-averaging sets. The journal version appeared in Geometric and Functional Analysis in 2025.",
+  "since_posted": [
+    {
+      "title": "Sharp bound for the Erdős–Straus non-averaging set problem",
+      "authors": "Huy Tuan Pham, Dmitrii Zakharov",
+      "year": 2024,
+      "venue": "Geometric and Functional Analysis",
+      "url": "https://arxiv.org/abs/2410.14624",
+      "arxiv_id": "2410.14624",
+      "doi": "10.1007/s00039-025-00728-8",
+      "kind": "proof",
+      "claim": "Proves h(n) = n^{1/4+o(1)}, establishing that the Bosznay lower bound \\Omega(n^{1/4}) is tight and thus confirming the conjecture h(n) = \\Theta(n^{1/4})."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "non-averaging set h(n) n^{1/4} tight Bosznay Erdős Sárközy upper bound",
+    "arXiv 2311.01416 Conlon Fox Pham non-averaging sets subset sums follow-up"
+  ],
+  "notes": "Pham and Zakharov's paper 2410.14624 (submitted October 18, 2024; published in GAFA 2025) directly resolves the conjecture. The result h(n) = n^{1/4+o(1)} means the upper bound matches the Bosznay construction up to a sub-polynomial factor, confirming the n^{1/4} exponent is correct."
+}

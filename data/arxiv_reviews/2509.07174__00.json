@@ -1,0 +1,39 @@
+{
+  "review_id": "2509.07174__00",
+  "safe_id": "2509.07174",
+  "arxiv_id": "2509.07174",
+  "conjecture_title": "Conjecture 1.2 (Coarse Menger conjecture for surfaces)",
+  "paper_title": "Asymptotic structure. VI. Distant paths across a disc",
+  "published": "2025-09-08",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Conjecture 1.2 (the strong Coarse Menger conjecture for surfaces) remains open but has partial progress. Blažej, Pilipczuk, and Protopapas (arXiv:2605.11112, 2026) prove the weak form for graphs embeddable on any fixed surface: if fewer than k pairwise d-apart S-T paths exist, then there is a vertex set X with |X| ≤ f(k,d) such that every S-T path is within distance d of some vertex of X. This weak form allows |X| to grow with d, whereas Conjecture 1.2 requires the stronger bound |X| ≤ k independent of the distance parameter; the full conjecture remains open.",
+  "since_posted": [
+    {
+      "title": "A coarse Menger's Theorem for planar and bounded genus graphs",
+      "authors": "Václav Blažej, Michał Pilipczuk, Evangelos Protopapas",
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2605.11112",
+      "arxiv_id": "2605.11112",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves the weak Coarse Menger conjecture for graphs embeddable on any fixed surface (Theorem 1.1): if fewer than k pairwise d-apart S-T paths exist, then there is a vertex set X with |X| ≤ f(k,d) such that every S-T path lies within distance d of X; the stronger bound |X| ≤ k required by Conjecture 1.2 is not established."
+    }
+  ],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2412.13893",
+      "verified": true,
+      "note": "False positive: this paper (Dujmović, Joret, Micek, Morin) proves an Erdős–Pósa-type result for pairwise far-apart cycles in general graphs, not the Coarse Menger conjecture for surfaces. The attributed conjecture (Chudnovsky–Seymour; Ahn–Gollin–Huynh–Kwon) and the result do not correspond to Conjecture 1.2 from 2509.07174."
+    }
+  ],
+  "search_queries": [
+    "Coarse Menger conjecture surfaces Nguyen Scott Seymour 2509.07174 distant paths",
+    "arXiv:2605.11112 coarse Menger planar bounded genus graphs"
+  ],
+  "notes": "The weak Coarse Menger conjecture for surfaces is settled by arXiv:2605.11112 (2026), which cites Nguyen–Scott–Seymour's counterexample paper (part IV) but not part VI (2509.07174), likely because 2605.11112 was largely written before part VI appeared. The strong form of Conjecture 1.2 (∣X∣ ≤ k with ℓ depending only on k and c) remains open. The internal reference 2412.13893 is a fuzz-match false positive."
+}

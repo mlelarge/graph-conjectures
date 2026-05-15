@@ -1,0 +1,25 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.1 (Dayanikli and Rautenbach)",
+    "statement_text": "The cat can localise the mouse up to distance $O(\\log n)$ on any connected graph of order $n$.",
+    "context_text": "Dayanikli and Rautenbach introduced a pursuit-evasion game on graphs in which the cat learns only whether its distance to the mouse has increased or decreased at each step. After proving that the cat can localise the mouse up to distance $4\\Delta - 6$ on trees and up to distance $8$ in $O(\\log n)$ time on the $n\\times n$ grid, they conjectured that $O(\\log n)$ localisation is achievable on any connected graph. This paper disproves the conjecture.",
+    "attributed_to": "Dayanikli and Rautenbach",
+    "attributed_year": null,
+    "paper_contribution": "Disproves the conjecture by constructing, for all sufficiently large $n$, a tree $T$ on $n$ vertices on which the mouse can avoid being localised up to distance $\\sqrt{n}/12$ indefinitely (Theorem 1.2), and complements this with an upper bound showing the cat can always localise the mouse up to distance $O(\\sqrt{n})$ within time $O(\\sqrt{n})$ on any connected graph (Theorem 1.3), establishing that the tight threshold is $\\Theta(\\sqrt{n})$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source; mathematical notation appears clean for this item.",
+    "arxiv_id": "1805.04386",
+    "paper_title": "Approximating the position of a hidden agent in a graph",
+    "paper_authors": [
+      "Hannah Guggiari",
+      "Alexander Roberts",
+      "Alex Scott"
+    ],
+    "published": "2018-05-11",
+    "abs_url": "https://arxiv.org/abs/1805.04386",
+    "source": "pdf"
+  }
+]

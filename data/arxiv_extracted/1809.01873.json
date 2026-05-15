@@ -1,0 +1,27 @@
+[
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Knuth's Minrank Problem",
+    "statement_text": "Determine the asymptotic behavior of the typical $\\mathrm{min\\text{-}rank}_{\\mathbb{R}}(G(n,p))$ for fixed $p \\in (0,1)$.",
+    "context_text": "Knuth raised this problem in 1994 in a survey on the Lov\\'asz theta function and orthogonal representations, noting that the minrank is at least $\\Omega(\\sqrt{n})$. The problem asks for the correct asymptotic order of magnitude of the typical minrank of $G(n,p)$ over the real field.",
+    "attributed_to": "Knuth",
+    "attributed_year": 1994,
+    "paper_contribution": "Proves that for every field $F = F(n)$ and every $p = p(n)$ satisfying $n^{-1} \\leq p \\leq 1 - n^{-0.99}$, $\\mathrm{min\\text{-}rank}_F(G(n,p)) = \\Theta\\!\\left(\\frac{n\\log(1/p)}{\\log n}\\right)$ w.h.p., settling the problem in full generality including the real field.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Section 5, described in the paper as containing open problems, is absent from the extracted text; author-stated conjectures or questions from that section may be missing.",
+    "arxiv_id": "1809.01873",
+    "paper_title": "The Minrank of Random Graphs over Arbitrary Fields",
+    "paper_authors": [
+      "Noga Alon",
+      "Igor Balla",
+      "Lior Gishboliner",
+      "Adva Mond",
+      "Frank Mousset"
+    ],
+    "published": "2019-01-27",
+    "abs_url": "https://arxiv.org/abs/1809.01873",
+    "source": "pdf"
+  }
+]

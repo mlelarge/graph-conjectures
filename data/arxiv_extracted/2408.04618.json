@@ -1,0 +1,77 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Lovász Conjecture",
+    "statement_text": "Every connected vertex-transitive graph admits a Hamiltonian path.",
+    "context_text": "Posed by Lovász in 1969, this is one of the two central open problems on Hamiltonicity in vertex-transitive graphs addressed in this paper. To date only four connected vertex-transitive graphs on at least 3 vertices are known which do not have a Hamiltonian cycle, one of which is the Petersen graph.",
+    "attributed_to": "Lovász",
+    "attributed_year": 1969,
+    "paper_contribution": "Shows that every connected vertex-transitive graph on $n\\geq 3$ vertices contains a cycle (and hence a path) of length at least $\\Omega(n^{13/21})$, improving the previous bound of $\\Omega(n^{3/5})$ due to DeVos (2023).",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Original reference is Lovász [40]: Proc. Calgary Internat. Conf., 1969.",
+    "arxiv_id": "2408.04618",
+    "paper_title": "Longest cycles in vertex-transitive and highly connected graphs",
+    "paper_authors": [
+      "Carla Groenland",
+      "Sean Longbrake",
+      "Raphael Steiner",
+      "Jérémie Turcotte",
+      "Liana Yepremyan"
+    ],
+    "published": "2025-10-28",
+    "abs_url": "https://arxiv.org/abs/2408.04618",
+    "source": "html"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Thomassen Conjecture",
+    "statement_text": "Apart from finitely many exceptional graphs, all connected vertex-transitive graphs contain a Hamiltonian cycle.",
+    "context_text": "Conjectured by Thomassen in 1978, this strengthens the Lovász conjecture by asserting Hamiltonicity (rather than merely a Hamiltonian path) for all but finitely many connected vertex-transitive graphs. It is the second of the two central open problems on vertex-transitive Hamiltonicity addressed in this paper.",
+    "attributed_to": "Thomassen",
+    "attributed_year": 1978,
+    "paper_contribution": "Shows that every connected vertex-transitive graph on $n\\geq 3$ vertices contains a cycle of length at least $\\Omega(n^{13/21})$, improving the previous bound of $\\Omega(n^{3/5})$ due to DeVos (2023).",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Cited as Conjecture 1 in Barát and Kriesell [6] (2010) with references therein; original formulation 1978.",
+    "arxiv_id": "2408.04618",
+    "paper_title": "Longest cycles in vertex-transitive and highly connected graphs",
+    "paper_authors": [
+      "Carla Groenland",
+      "Sean Longbrake",
+      "Raphael Steiner",
+      "Jérémie Turcotte",
+      "Liana Yepremyan"
+    ],
+    "published": "2025-10-28",
+    "abs_url": "https://arxiv.org/abs/2408.04618",
+    "source": "html"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.2 (Smith's Conjecture)",
+    "statement_text": "For all $r\\geq 2$, every two longest cycles in an $r$-connected graph meet in at least $r$ vertices.",
+    "context_text": "This conjecture, commonly attributed to Smith and dating from 1984, has been verified for $r\\leq 6$ by Grötschel and for $r\\in\\{7,8\\}$ by Stewart and Thompson, and recently for $r\\geq(n+16)/7$ by Gutiérrez and Valqui. The best general lower bound prior to this paper was $\\Omega(r^{3/5})$ due to Chen, Faudree and Gould (1998), itself improving on $\\sqrt{r}-1$ by Burr and Zamfirescu.",
+    "attributed_to": "Smith",
+    "attributed_year": 1984,
+    "paper_contribution": "Proves that in every $r$-connected graph with $r\\geq 2$, any two longest cycles meet in at least $\\Omega(r^{5/8})$ vertices, improving on the bound of $\\Omega(r^{3/5})$ from Chen, Faudree and Gould (1998).",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Labeled as Conjecture 1.2 in the paper; cited as Conjecture 5.2 in Grötschel [28] (1984) and Conjecture 4.15 in Bondy [10] (1995); proof uses combinatorial arguments and computer assistance.",
+    "arxiv_id": "2408.04618",
+    "paper_title": "Longest cycles in vertex-transitive and highly connected graphs",
+    "paper_authors": [
+      "Carla Groenland",
+      "Sean Longbrake",
+      "Raphael Steiner",
+      "Jérémie Turcotte",
+      "Liana Yepremyan"
+    ],
+    "published": "2025-10-28",
+    "abs_url": "https://arxiv.org/abs/2408.04618",
+    "source": "html"
+  }
+]

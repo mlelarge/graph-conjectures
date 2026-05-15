@@ -1,0 +1,23 @@
+{
+  "review_id": "2109.00618__00",
+  "safe_id": "2109.00618",
+  "arxiv_id": "2109.00618",
+  "conjecture_title": "Open problem: improved quantitative rank bounds",
+  "paper_title": "Rank of matrices with entries from a multiplicative group",
+  "published": "2021-09-01",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Alon and Solymosi prove rank lower bounds of order $\\log n$ (with weak polynomial dependence on the multiplicative-group rank $r$ and dimension $d$) via the Evertse–Schlickewei–Schmidt Subspace Theorem, and pose obtaining sharper quantitative bounds as an explicit open problem. No follow-up paper improving these bounds, nor any resolution of the special powers-of-2 instance, was found in a wide web search spanning 2021–2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Alon Solymosi rank matrices multiplicative group powers of two 2109.00618",
+    "rank matrix entries multiplicative group lower bound log n arxiv 2021 2022 2023",
+    "rank matrix off-diagonal powers of two sharper bounds quantitative 2022 2023 2024 2025",
+    "Alon Solymosi subspace theorem rank multiplicative group improved bound cite 2022 2023 2024 2025"
+  ],
+  "notes": "The source paper appeared in IMRN 2023 (Vol. 2023, Issue 14, pp. 12383–12399). The open problem asks for better bounds than roughly $\\log n \\leq r d^8$, highlighting the case where all off-diagonal entries are integer powers of 2 as a concrete open instance. No follow-up resolving or improving these bounds was found in the indexed literature."
+}

@@ -1,0 +1,48 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Steinberg's Conjecture",
+    "statement_text": "Every planar graph without 4- and 5-cycles is 3-colorable.",
+    "context_text": "The paper mentions this conjecture as a related interesting open problem in the context of 3-coloring planar graphs. The best result known at the time of writing, due to Borodin, Glebov, Montassier and Raspaud, shows that excluding cycles of lengths 4, 5 and 7 suffices to guarantee 3-colorability.",
+    "attributed_to": "Steinberg",
+    "attributed_year": null,
+    "paper_contribution": "The paper does not make direct progress on Steinberg's Conjecture; it is cited only as a related open problem in the context of planar graph 3-colorability.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source. Conjecture stated as still open at the time of writing (2016). It was subsequently disproved by Cohen-Addad et al. in 2017.",
+    "arxiv_id": "1010.2472",
+    "paper_title": "Three-coloring triangle-free graphs on surfaces I. Extending a coloring to a disk with one triangle",
+    "paper_authors": [
+      "Zdenek Dvorak",
+      "Dan Kral",
+      "Robin Thomas"
+    ],
+    "published": "2016-03-04",
+    "abs_url": "https://arxiv.org/abs/1010.2472",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Open Problem: polynomial-time 4-colorability on fixed surfaces",
+    "statement_text": "Is there a polynomial-time algorithm for testing 4-colorability of graphs drawn in $\\Sigma$ when $\\Sigma$ is a fixed surface other than the sphere?",
+    "context_text": "The authors note that while 5-colorability on any fixed surface can be decided in polynomial (even linear) time using the finiteness of 6-critical graphs (Theorem 1), the analogous question for 4-colorability is open, and the techniques currently available do not give much hope for a positive resolution in the near future.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated in prose without a labelled theorem environment; presented as a known open problem in the field rather than a novel conjecture of the authors. PDF source.",
+    "arxiv_id": "1010.2472",
+    "paper_title": "Three-coloring triangle-free graphs on surfaces I. Extending a coloring to a disk with one triangle",
+    "paper_authors": [
+      "Zdenek Dvorak",
+      "Dan Kral",
+      "Robin Thomas"
+    ],
+    "published": "2016-03-04",
+    "abs_url": "https://arxiv.org/abs/1010.2472",
+    "source": "pdf"
+  }
+]

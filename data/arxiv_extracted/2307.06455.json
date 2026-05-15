@@ -1,0 +1,71 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Erdős-Hajnal Conjecture (Conjecture 1.1)",
+    "statement_text": "For every graph $H$, there exists $c>0$ such that in every $H$-free graph $G$ there is a clique or a stable set of size at least $|G|^{c}$.",
+    "context_text": "Erdős and Hajnal conjectured this in 1977–1989; despite considerable attention the conjecture remains open. Until this paper, the only non-trivial prime graphs known to have the Erdős-Hajnal property were $P_4$, the bull, $C_5$, and (in progress) $P_5$.",
+    "attributed_to": "Erdős and Hajnal",
+    "attributed_year": 1977,
+    "paper_contribution": "Proves infinitely many prime graphs satisfy the conjecture: all graphs $H$ whose every non-trivial prime induced subgraph $H'$ has a vertex of degree one and a vertex of degree $|H'|-2$; more generally, proves it whenever $H_1$ and $\\overline{H_2}$ are both buildable (every prime induced subgraph with at least three vertices has a vertex of degree one).",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2307.06455",
+    "paper_title": "Induced subgraph density. IV. New graphs with the Erdős-Hajnal property",
+    "paper_authors": [
+      "Tung Nguyen",
+      "Alex Scott",
+      "Paul Seymour"
+    ],
+    "published": "2026-04-18",
+    "abs_url": "https://arxiv.org/abs/2307.06455",
+    "source": "html"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Polynomial Rödl Conjecture (Conjecture 1.7)",
+    "statement_text": "For every graph $H$, there exists $d>0$ such that for every $\\varepsilon\\in(0,\\frac{1}{2})$, and every $H$-free graph $G$, there is an $\\varepsilon$-restricted subset of $V(G)$ with size at least $\\varepsilon^{d}\\lvert G\\rvert$.",
+    "context_text": "Fox and Sudakov conjectured this polynomial strengthening of Rödl's theorem. Taking $\\varepsilon$ to be a small negative power of $n$ shows that Conjecture 1.7 implies the Erdős-Hajnal conjecture. Bucić, Fox, and Pham [4] later showed the Erdős-Hajnal property is equivalent to being viral (satisfying Conjecture 1.8), which implies Conjecture 1.7.",
+    "attributed_to": "Fox and Sudakov",
+    "attributed_year": 2008,
+    "paper_contribution": "The paper's results establishing the Erdős-Hajnal property for new (infinitely many prime) graph classes implicitly verify Conjecture 1.7 for those classes, via the equivalence proved by Bucić, Fox, and Pham.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2307.06455",
+    "paper_title": "Induced subgraph density. IV. New graphs with the Erdős-Hajnal property",
+    "paper_authors": [
+      "Tung Nguyen",
+      "Alex Scott",
+      "Paul Seymour"
+    ],
+    "published": "2026-04-18",
+    "abs_url": "https://arxiv.org/abs/2307.06455",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.8",
+    "statement_text": "For every graph $H$, there exists $d>0$ such that for every $\\varepsilon\\in(0,\\frac{1}{2})$ and every graph $G$ with $\\mathrm{ind}_{H}(G)\\leq(\\varepsilon^{d}\\lvert G\\rvert)^{\\lvert H\\rvert}$, there is an $\\varepsilon$-restricted subset of $V(G)$ with size at least $\\varepsilon^{d}\\lvert G\\rvert$.",
+    "context_text": "This 'polynomial Nikiforov' statement, introduced without external attribution, unifies Theorem 1.6 and Conjecture 1.7. A graph $H$ satisfying it is called viral; Bucić, Fox, and Pham [4] proved that having the Erdős-Hajnal property is equivalent to being viral.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2307.06455",
+    "paper_title": "Induced subgraph density. IV. New graphs with the Erdős-Hajnal property",
+    "paper_authors": [
+      "Tung Nguyen",
+      "Alex Scott",
+      "Paul Seymour"
+    ],
+    "published": "2026-04-18",
+    "abs_url": "https://arxiv.org/abs/2307.06455",
+    "source": "html"
+  }
+]

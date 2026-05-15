@@ -1,0 +1,51 @@
+{
+  "review_id": "1912.11246__01",
+  "safe_id": "1912.11246",
+  "arxiv_id": "1912.11246",
+  "conjecture_title": "Open problem: MIS complexity in even-hole-free graphs",
+  "paper_title": "Maximum independent sets in (pyramid, even hole)-free graphs",
+  "published": "2019-12-24",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The complexity of maximum independent set in even-hole-free graphs (polynomial-time vs. NP-hard) remains open. Significant partial progress has been made: Abrishami et al. (arXiv:2005.05042, 2020) give a polynomial-time MWIS algorithm for (theta, pyramid, prism, turtle)-free graphs, subsuming the (pyramid, even hole)-free result. More decisively, Chudnovsky, Gartland, Hajebi, Lokshtanov, and Spirkl (arXiv:2407.08927, 2024) prove that every n-vertex even-hole-free graph has tree independence number at most c·log^{10}(n), yielding a quasi-polynomial time algorithm for MWIS across the full even-hole-free class—a major advance that nonetheless leaves the polynomial vs. NP-hard question unresolved.",
+  "since_posted": [
+    {
+      "title": "Graphs with polynomially many minimal separators",
+      "authors": "Tara Abrishami, Maria Chudnovsky, Cemil Dibek, Stéphan Thomassé, Nicolas Trotignon",
+      "year": 2020,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2005.05042",
+      "arxiv_id": "2005.05042",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves that (theta, pyramid, prism, turtle)-free graphs have at most |V(G)|^{18} minimal separators, yielding a polynomial-time MWIS algorithm for this class (which implies polynomial time for (pyramid, even hole)-free graphs, a proper subclass of even-hole-free graphs)."
+    },
+    {
+      "title": "Tree Independence Number IV. Even-hole-free Graphs",
+      "authors": "Maria Chudnovsky, Peter Gartland, Sepehr Hajebi, Daniel Lokshtanov, Sophie Spirkl",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2407.08927",
+      "arxiv_id": "2407.08927",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves that every n-vertex even-hole-free graph has tree independence number at most c·log^{10}(n), implying MWIS is solvable in quasi-polynomial time for the entire even-hole-free class."
+    }
+  ],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2005.05042",
+      "verified": true,
+      "note": "Confirmed: paper proves polynomially many minimal separators for (theta, pyramid, prism, turtle)-free graphs and derives a polynomial-time MWIS algorithm for (pyramid, even hole)-free graphs. The internal-ref contribution text referencing 'Conjecture 1.1' concerns a structural conjecture about separator counts in a different paper's numbering; the relevance to this open problem is the polynomial-time MWIS result for a strict subclass of even-hole-free graphs, not for the full class."
+    }
+  ],
+  "search_queries": [
+    "maximum independent set even-hole-free graphs polynomial time algorithm 2020 2021 2022 2023 2024 2025",
+    "even-hole-free graphs MIS complexity NP-hard polynomial Chudnovsky Thomassé Trotignon Vušković",
+    "tree independence number even-hole-free graphs MWIS polynomial Chudnovsky 2024 2025 arxiv"
+  ],
+  "notes": "The open problem (polynomial vs. NP-hard for MIS in even-hole-free graphs) is still open as of May 2026. The quasi-polynomial algorithm of arXiv:2407.08927 is the strongest known result for the full class. Both since_posted URLs were verified via WebFetch."
+}

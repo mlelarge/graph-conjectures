@@ -1,0 +1,22 @@
+{
+  "review_id": "2205.12764__00",
+  "safe_id": "2205.12764",
+  "arxiv_id": "2205.12764",
+  "conjecture_title": "Conjecture 1.3",
+  "paper_title": "Square roots of nearly planar graphs",
+  "published": "2023-07-13",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 1.3 from arXiv:2205.12764 asserts that the H-square-root problem is NP-complete when H is the class of planar graphs. The source paper proves NP-hardness for the broader class of 6-apex graphs (a proper minor-closed class below planar in the bounded-expansion hierarchy), and the conjecture asks whether apex vertices are truly necessary. No follow-up paper resolving or making partial progress on the planar case was found in indexed literature as of May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "H-square-root problem NP-complete planar graphs Dvořák Moore Lahiri 2205.12764",
+    "graph square root NP-complete planar graphs complexity 2023 2024 2025",
+    "\"square root\" \"planar graph\" NP-hard complexity 2024 2025 arxiv"
+  ],
+  "notes": "No follow-up found after 5 web calls. The conjecture is recent (2023) and no resolution was found; open with high confidence. The paper arXiv:2211.02699 ('Characterizing and recognizing exact-distance squares of graphs') appeared in a citation API response but is unrelated to this conjecture."
+}

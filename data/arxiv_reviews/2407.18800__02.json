@@ -1,0 +1,22 @@
+{
+  "review_id": "2407.18800__02",
+  "safe_id": "2407.18800",
+  "arxiv_id": "2407.18800",
+  "conjecture_title": "Conjecture 4",
+  "paper_title": "Towards Characterization of 5-List-Colorability of Toroidal Graphs",
+  "published": "2024-07-26",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 4 of arXiv:2407.18800 — that every graph drawn on the torus with edge-width at least four is 5-choosable — remains open as of May 2026. The conjecture is proposed as an important intermediate step toward the full 5-choosability characterization of toroidal graphs (Conjecture 3 of the same paper). Postle's prior result that the edge-width of a graph critical for 5-list coloring is at most logarithmic in its genus confirms the conjecture when 4 is replaced by a sufficiently large constant, but the case of edge-width exactly four is unresolved. No follow-up paper settling the conjecture was found in a web search.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "toroidal graphs edge-width 5-choosable 5-list-coloring torus",
+    "Dvořák Moreno \"5-list\" toroidal \"edge-width\" 2024 arxiv 2407.18800",
+    "\"edge-width\" torus \"5-choosable\" OR \"5-list-colorable\" 2024 2025 graph"
+  ],
+  "notes": "No follow-up paper resolving Conjecture 4 was found. The conjecture is recent (July 2024). Postle's logarithmic edge-width bound for 5-list-critical graphs (cited in the source paper) already implies the conjecture for sufficiently large edge-width constants, but edge-width 4 remains open. The source paper itself makes partial progress by characterizing 5-list-coloring criticality under an additional cyclic-triangle structure condition."
+}

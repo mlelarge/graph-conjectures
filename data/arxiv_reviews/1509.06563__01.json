@@ -1,0 +1,28 @@
+{
+  "review_id": "1509.06563__01",
+  "safe_id": "1509.06563",
+  "arxiv_id": "1509.06563",
+  "conjecture_title": "Conjecture 1.5",
+  "paper_title": "Induced subgraphs of graphs with large chromatic number. IV. Consecutive holes",
+  "published": "2018-02-12",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "No resolution of the conjecture was found in the post-2018 literature. The source paper itself establishes the $k=3$ base case (every infinite set with bounded gaps is 3-constricting), and the related arXiv:1705.04609 (Scott–Seymour, Part X of the same series) handles arithmetic progressions as a special case of bounded-gap sets, but the full conjecture—that every infinite set with bounded gaps is $k$-constricting for every $k$—appears to remain open.",
+  "since_posted": [],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2306.02364",
+      "verified": true,
+      "note": "Title is 'Some results and problems on tournament structure' by Nguyen, Scott, Seymour. The paper concerns chromatic number of tournaments, vertex-disjoint subtournaments, and domination number. It has no connection to Conjecture 1.5, which is about constricting sets, bounded-gap integer sets, and holes in undirected graphs. This appears to be a false match (fuzz=67)."
+    }
+  ],
+  "search_queries": [
+    "Scott Seymour \"constricting\" \"bounded gaps\" chromatic number holes induced subgraphs",
+    "arXiv 1509.06563 Scott Seymour \"consecutive holes\" conjecture 1.5 follow-up",
+    "Scott Seymour \"constricting\" induced subgraphs chromatic number holes graph 2020 2021 2022 2023 2024"
+  ],
+  "notes": "No follow-up found after exhausting 5 web calls. The conjecture is relatively recent (journal 2018) and no paper explicitly proving or disproving it was located. The closely related arXiv:1705.04609 (Part X, published Combinatorica 2019) proves that sets of holes of a fixed residue modulo k form constricting sets, which is a special case of bounded-gap sets, but it predates the 2018 journal publication threshold for since_posted. The internal reference arXiv:2306.02364 was verified and is unrelated."
+}

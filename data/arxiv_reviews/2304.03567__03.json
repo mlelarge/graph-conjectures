@@ -1,0 +1,27 @@
+{
+  "review_id": "2304.03567__03",
+  "safe_id": "2304.03567",
+  "arxiv_id": "2304.03567",
+  "conjecture_title": "Problem 4",
+  "paper_title": "Temporalizing digraphs via linear-size balanced bi-trees",
+  "published": "2024-01-11",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Problem 4 asks whether a polytime constant approximation algorithm exists for RFCPP (Request Forward Connected Pairs Problem), where only a specified set R of vertex pairs in a strongly connected digraph must be made forward-connected by an enumeration. The source paper (arXiv:2304.03567, STACS 2024) shows FCPP is in APX and proves (Proposition 4) that no constant c>0 can guarantee c|R| satisfied requests for worst-case instances in the undirected sense, but the question of a constant approximation ratio for directed RFCPP is posed explicitly as open. No follow-up paper resolving or substantially progressing Problem 4 was found in the indexed literature as of May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2206.12335",
+      "verified": false,
+      "note": "False positive match: this paper concerns 1-independent percolation on Z^n (Balister, Johnston, Savery, Scott) and has no relation to RFCPP, temporal digraphs, or the source paper. Both internal-reference entries are duplicates of the same irrelevant paper."
+    }
+  ],
+  "search_queries": [
+    "RFCPP \"Request Forward Connected Pairs\" approximation algorithm temporal digraph",
+    "arXiv 2304.03567 Bessy Thomassé Viennot temporalizing digraphs FCPP approximation"
+  ],
+  "notes": "The two internal references are identical false positives (arXiv:2206.12335, about 1-independent percolation), with no connection to the source paper or RFCPP. A topically related paper arXiv:2604.27227 ('Designing sparse temporal graphs satisfying connectivity requirements') appeared in search results but its abstract does not cite arXiv:2304.03567 and no progress on Problem 4 was found in it. No post-2024 resolution of Problem 4 was identified across all web queries."
+}

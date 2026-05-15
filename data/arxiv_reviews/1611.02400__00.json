@@ -1,0 +1,22 @@
+{
+  "review_id": "1611.02400__00",
+  "safe_id": "1611.02400",
+  "arxiv_id": "1611.02400",
+  "conjecture_title": "Open Problem (interference worsens with depth)",
+  "paper_title": "A Graph-Theoretic Approach to Multitasking",
+  "published": "2017-06-09",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "The conjecture that interference in d-regular networks worsens monotonically as depth r increases beyond 2 remains open. Follow-up papers on multitasking capacity (arXiv:1809.02835) and topological limits to parallel processing (arXiv:1708.03263, published in Nature Physics 2021) address related combinatorial and statistical-mechanics questions but do not resolve the depth-monotonicity question. No paper settling this specific open problem was found in the literature.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Alon Cohen multitasking capacity d-regular network depth interference graph theory arXiv 1611.02400",
+    "multitasking capacity regular network depth monotone interference worsens graph theory conjecture",
+    "Musslick topological limits parallel processing network architectures arXiv multitasking depth"
+  ],
+  "notes": "Two directly related follow-up papers were found and checked: arXiv:1809.02835 (Alon et al., 2018) on hardness results and improved constructions for multitasking capacity, and arXiv:1708.03263 / Nature Physics 17 (2021) on topological limits. Neither addresses the depth-monotonicity conjecture. The conjecture is ~9 years old, so medium confidence is appropriate — absence of follow-up may reflect the narrowness of the specific open problem rather than an easy resolution."
+}

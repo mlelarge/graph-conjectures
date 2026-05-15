@@ -1,0 +1,52 @@
+[
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Conjecture on polynomial-time solvability of bounded sub-determinant integer programs",
+    "statement_text": "Integer programs with bounded sub-determinants can be solved in polynomial time. In particular, the stable set problem on graphs with $\\mathrm{ocp}(G) \\leq k$ is polynomial for every fixed $k$.",
+    "context_text": "The authors note that recent work links the complexity of integer programs to the magnitude of their sub-determinants, and that it is tempting to believe bounded sub-determinant integer programs are polynomial-time solvable. This would imply the stable set problem is polynomial for every fixed bound $k$ on the odd cycle packing number, which remains open for $k \\geq 2$.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated as 'it is tempting to believe'; the paper explicitly confirms the problem is open for $k \\geq 2$. No labelled theorem environment.",
+    "arxiv_id": "1908.06300",
+    "paper_title": "The stable set problem in graphs with bounded genus and bounded odd cycle packing number",
+    "paper_authors": [
+      "Michele Conforti",
+      "Samuel Fiorin",
+      "Tony Huynh",
+      "Gwenaël Joret",
+      "Stefan Weltge"
+    ],
+    "published": "2019-08-17",
+    "abs_url": "https://arxiv.org/abs/1908.06300",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Open question on stable set for bounded ocp and arbitrary Euler genus",
+    "statement_text": "Is the stable set problem polynomial-time solvable for graphs $G$ with $\\mathrm{ocp}(G) \\leq k$ (for fixed $k$) embedded in a surface of arbitrary Euler genus?",
+    "context_text": "The paper's main result (Theorem 2) gives a polynomial-time algorithm when both the odd cycle packing number and the Euler genus are fixed constants. Immediately after stating this result the authors note they do not know whether the genus bound can be dropped while retaining polynomial-time solvability.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated as 'we do not know whether'; no labelled theorem environment.",
+    "arxiv_id": "1908.06300",
+    "paper_title": "The stable set problem in graphs with bounded genus and bounded odd cycle packing number",
+    "paper_authors": [
+      "Michele Conforti",
+      "Samuel Fiorin",
+      "Tony Huynh",
+      "Gwenaël Joret",
+      "Stefan Weltge"
+    ],
+    "published": "2019-08-17",
+    "abs_url": "https://arxiv.org/abs/1908.06300",
+    "source": "pdf"
+  }
+]

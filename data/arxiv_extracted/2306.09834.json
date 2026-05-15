@@ -1,0 +1,23 @@
+[
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Question of Liu and Wood (Theorem 3)",
+    "statement_text": "Is it true that planar graphs in which no two vertices have many common neighbors are $3$-colorable with bounded clustering?",
+    "context_text": "Esperet and Joret proved that planar graphs with bounded maximum degree are $3$-colorable with bounded clustering. Liu and Wood asked whether the same conclusion holds when the bounded-maximum-degree assumption is replaced by the weaker condition that no two vertices share many common neighbors.",
+    "attributed_to": "Liu and Wood",
+    "attributed_year": 2019,
+    "paper_contribution": "Answers the question affirmatively in a stronger form: for any surface $\\Sigma$, a subgraph-closed class of graphs drawn on $\\Sigma$ is $3$-choosable with bounded clustering if and only if there exists $t$ such that $P''_t$ (the complete join of two isolated vertices with a path on $t$ vertices) does not belong to the class.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "The question is attributed to Liu and Wood [10] (arXiv:1905.08969, 2019); its exact statement is reconstructed from the abstract since the full body of Theorem 3 was not provided in the input.",
+    "arxiv_id": "2306.09834",
+    "paper_title": "Clustered coloring of (path+2K_1)-free graphs on surfaces",
+    "paper_authors": [
+      "Zdeněk Dvořák"
+    ],
+    "published": "2023-06-16",
+    "abs_url": "https://arxiv.org/abs/2306.09834",
+    "source": "html"
+  }
+]

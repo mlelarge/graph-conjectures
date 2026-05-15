@@ -1,0 +1,23 @@
+{
+  "review_id": "2009.05691__01",
+  "safe_id": "2009.05691",
+  "arxiv_id": "2009.05691",
+  "conjecture_title": "Open Question: Detecting Holes of Length Divisible by Three",
+  "paper_title": "Detecting a long even hole",
+  "published": "2020-09-12",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "No polynomial-time algorithm for detecting holes (induced cycles) whose length is divisible by three has been found in the literature, and no hardness result has been established either. Cook's subsequent PhD thesis (arXiv:2312.11876, 2023) extends the even-hole detection line of work but does not address holes divisible by three. The question posed in arXiv:2009.05691 remains fully open as of May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "detecting holes length divisible three polynomial time graph Cook Seymour 2009.05691",
+    "hole detection graph \"multiple of three\" OR \"divisible by three\" polynomial algorithm 2021 2022 2023 2024",
+    "\"no hole\" OR \"no induced cycle\" \"divisible by three\" OR \"multiple of three\" graph polynomial recognition algorithm arxiv 2021 2022 2023 2024 2025",
+    "Cook Seymour \"2009.05691\" cited detecting holes modular length recognition"
+  ],
+  "notes": "Linda Cook's PhD thesis (arXiv:2312.11876) is the most relevant follow-up work by a co-author, but it focuses on even holes of length at least l (for fixed l >= 4), not on holes of length divisible by three. A structural result on graphs with no hole divisible by three (bounded chromatic number via Parity Changing Paths) appears in unrelated literature, but recognition/detection complexity remains untouched. No follow-up found after exhaustive search."
+}

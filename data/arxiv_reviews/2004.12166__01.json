@@ -1,0 +1,29 @@
+{
+  "review_id": "2004.12166__01",
+  "safe_id": "2004.12166",
+  "arxiv_id": "2004.12166",
+  "conjecture_title": "Question: optimal approximation exponent for MIS in H-free graphs",
+  "paper_title": "An algorithmic weakening of the Erdős-Hajnal conjecture",
+  "published": "2020-04-25",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The question of determining the largest ε > 0 such that MIS admits an O(n^{1-ε})-approximation in H-free graphs remains open for most choices of H. The source paper itself proved tight bounds for specific classes: a √OPT-approximation for C_4-free graphs (from local search applied to K_{t,t}-free), and matching upper and lower bounds for triangle-free and high-girth graphs (tight up to constants in the exponent c/γ). No subsequent paper has been found that resolves the meta-question of characterising the optimal exponent as a function of H in full generality.",
+  "since_posted": [],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2301.10147",
+      "verified": true,
+      "note": "This paper (Bucić, Nguyen, Scott, Seymour 2024) proves the first improvement since 1977 on the Erdős-Hajnal existence bound — every H-free graph G has a clique or stable set of size at least 2^{c√(log|G|)loglog|G|}. It concerns the combinatorial existence problem, not the algorithmic approximation exponent question from the source paper; the fuzzy match is a false positive."
+    }
+  ],
+  "search_queries": [
+    "MIS maximum independent set H-free graphs approximation algorithm Bonnet Thomassé 2004.12166",
+    "maximum independent set approximation H-free graphs polynomial approximation exponent 2020 2021 2022 2023 2024",
+    "MIS independent set H-free graphs n^{1-epsilon} approximation exponent tight bound 2022 2023 2024 2025",
+    "Bonnet Thomassé Tran Watrigant approximation independent set H-free follow-up 2021 2022 2023 2024 2025 arxiv"
+  ],
+  "notes": "No follow-up paper directly addressing the optimal approximation exponent as a function of H was found. Related nearby work exists: (1) arXiv:2006.10444 (Bonnet, Giannopoulos, Kim, Rzążewski, Sikora, Algorithmica 2022) studies parameterised inapproximability of independent set in H-free graphs — this is FPT inapproximability rather than the polynomial-time exponent question and was not fetched to verify; (2) a STACS 2023 paper on approximating inapproximable problems on bounded-twin-width graphs was noted but not verified. The question is a fine-grained open problem within a line of work that remains very active."
+}

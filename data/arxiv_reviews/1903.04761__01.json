@@ -1,0 +1,23 @@
+{
+  "review_id": "1903.04761__01",
+  "safe_id": "1903.04761",
+  "arxiv_id": "1903.04761",
+  "conjecture_title": "FPT Algorithm for MWIS in (Long-Hole, k-Prism)-Free Graphs",
+  "paper_title": "On the Maximum Weight Independent Set Problem in graphs without induced cycles of length at least five",
+  "published": "2020-01-16",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "low",
+  "summary": "The source paper provides a polynomial-time n^{O(k)} algorithm for MWIS in (long-hole, k-prism)-free graphs and remarks that the authors do not see how to upgrade this to an FPT algorithm parameterized by k without invoking a structural result of Abrishami et al. Targeted searches across arXiv and related literature through 2026 found no follow-up paper that resolves this FPT question either positively or negatively. The problem is 6 years old, so absence of evidence may be indicative of genuine difficulty.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "MWIS \"long-hole-free\" \"k-prism-free\" FPT algorithm Chudnovsky Pilipczuk Thomassé",
+    "maximum weight independent set FPT \"prism-free\" \"hole-free\" graphs fixed-parameter tractable 2021 2022 2023 2024",
+    "Abrishami \"independent set\" \"hole-free\" FPT parameterized arxiv 2020 2021 2022",
+    "FPT MWIS \"k-prism\" \"long hole\" parameterized complexity Chudnovsky Pilipczuk 2022 2023 2024 2025"
+  ],
+  "notes": "No follow-up found. The open question is whether the n^{O(k)} algorithm of Theorem 1.1 can be made FPT in k for MWIS in (long-hole, k-prism)-free graphs. The authors note that invoking Abrishami et al. [1] (likely the series on induced subgraphs and tree decompositions of even-hole-free graphs) might be a path forward, but no paper appears to have completed this. Related progress exists on adjacent classes (no long claws, even-hole-free) but not on this specific class."
+}

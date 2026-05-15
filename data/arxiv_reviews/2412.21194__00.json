@@ -1,0 +1,24 @@
+{
+  "review_id": "2412.21194__00",
+  "safe_id": "2412.21194",
+  "arxiv_id": "2412.21194",
+  "conjecture_title": "Conjecture 5.1",
+  "paper_title": "On the clique number of random Cayley graphs and related topics",
+  "published": "2024-12-30",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 5.1 from arXiv:2412.21194 asks for a two-coloring of $\\mathbb{F}_2^n \\setminus \\{0\\}$ with no monochromatic subspace of size $Cn$; it is framed as a quantitative step toward Alon's conjecture for $\\mathbb{F}_2^n$, which itself remains wide open. The paper was posted in December 2024 and no follow-up proving or disproving this specific conjecture was found in the indexed literature as of May 2026. The paper arXiv:2509.02561 (Random Cayley graphs and random sumsets, 2025) appeared in related searches but its abstract addresses independence numbers of sparse random Cayley graphs rather than the monochromatic subspace coloring problem.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Alon conjecture monochromatic subspace two-coloring F_2^n finite unions theorem 2024 2025",
+    "arXiv 2412.21194 Conlon Fox Pham Yepremyan Cayley graphs monochromatic subspace",
+    "\"monochromatic subspace\" \"F_2^n\" OR \"GF(2)\" two-coloring quantitative size 2025",
+    "Alon conjecture vector space two-coloring monochromatic subspace size bound 2025 arxiv",
+    "\"F_2^n\" OR \"GF(2)^n\" coloring \"no monochromatic subspace\" Cayley graph Alon conjecture arxiv 2025"
+  ],
+  "notes": "No follow-up found in indexed literature. The conjecture is ≤2 years old (posted December 2024). A tangentially related 2025 paper arXiv:2509.02561 appeared in search results but does not address this conjecture. The paper arXiv:2503.01825 also appeared in a related search but could not be verified within the web-call budget."
+}

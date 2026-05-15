@@ -1,0 +1,71 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Bucić–Sudakov–Tran Conjecture (multidimensional Erdős–Szekeres)",
+    "statement_text": "A doubly exponential upper bound holds for the multidimensional Erdős–Szekeres numbers $M_d(n)$ in every dimension $d$.",
+    "context_text": "Fishburn and Graham proved a multidimensional Erdős–Szekeres theorem in 1993, and Bucić, Sudakov, and Tran later established doubly exponential upper bounds for $d=2,3$ while conjecturing such bounds extend to all dimensions. The present paper's Theorem 1.4 provides a doubly exponential upper bound for $d\\geq 4$, improving on the previous triply exponential upper bound of Bucić–Sudakov–Tran.",
+    "attributed_to": "Bucić, Sudakov, and Tran",
+    "attributed_year": 2019,
+    "paper_contribution": "Confirms the conjecture by proving a doubly exponential upper bound on $M_d(n)$ for all $d\\geq 4$, improving the previously known triply exponential upper bound.",
+    "opg_lookup": true,
+    "confidence": "low",
+    "notes": "Exact LaTeX statement not provided in the supplied paper content; statement reconstructed from context in abstract and Section 4. The conjecture is attributed to arXiv:1910.13318 (Bucić, Sudakov, Tran).",
+    "arxiv_id": "2210.09227",
+    "paper_title": "A multidimensional Ramsey Theorem",
+    "paper_authors": [
+      "António Girão",
+      "Gal Kronenberg",
+      "Alex Scott"
+    ],
+    "published": "2024-12-31",
+    "abs_url": "https://arxiv.org/abs/2210.09227",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Problem 4.1",
+    "statement_text": "Fix $r,d\\geq 2$. Is $R_{2}(2,n)$ superexponential in $n$?",
+    "context_text": "Theorem 1.1 gives a doubly exponential upper bound on the $d$-dimensional Ramsey numbers $R_r(d,n)$, while the best known lower bound is only singly exponential (from a random colouring argument). Closing this gap—determining whether a simple exponential upper bound suffices or the true growth is faster—is identified as a key open problem.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2210.09227",
+    "paper_title": "A multidimensional Ramsey Theorem",
+    "paper_authors": [
+      "António Girão",
+      "Gal Kronenberg",
+      "Alex Scott"
+    ],
+    "published": "2024-12-31",
+    "abs_url": "https://arxiv.org/abs/2210.09227",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Problem 4.2",
+    "statement_text": "Does there exist $C>0$ such that $\\log R_{2}(2,n)\\leq(\\log(M_{2}(n))^{C}$?",
+    "context_text": "Since $M_2(n)\\leq R_2(2,n)$ for every $n$, the authors ask whether the two-dimensional Ramsey number $R_2(2,n)$ can be bounded above by a fixed power of $\\log M_2(n)$, where $M_2(n)$ is the two-dimensional Erdős–Szekeres number. A singly-to-doubly exponential gap persists for both quantities.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "The statement as supplied appears to have a missing closing parenthesis: $(\\log(M_{2}(n))^{C}$ is reproduced verbatim from the source.",
+    "arxiv_id": "2210.09227",
+    "paper_title": "A multidimensional Ramsey Theorem",
+    "paper_authors": [
+      "António Girão",
+      "Gal Kronenberg",
+      "Alex Scott"
+    ],
+    "published": "2024-12-31",
+    "abs_url": "https://arxiv.org/abs/2210.09227",
+    "source": "html"
+  }
+]

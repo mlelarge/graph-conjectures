@@ -1,0 +1,25 @@
+[
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture (Section 9, characterization of 2-extremal digraphs)",
+    "statement_text": "[Statement unavailable — Section 9 content absent from PDF extraction]",
+    "context_text": "The paper's main theorem (Theorem 1.8) characterizes $k$-extremal digraphs for $k = 1$ and $k \\geq 3$, but the authors were unable to handle the case $k = 2$ (i.e., digraphs $D$ with $\\vec{\\chi}(D) = \\lambda(D)+1 = 3$). The introduction explicitly states: 'in the last section, we discuss the case of 2-extremal digraphs and propose a conjecture for their characterization.'",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "low",
+    "notes": "PDF extraction truncated after Section 2; Sections 3–9 are absent or garbled (only arXiv ID strings appear). The introduction announces a conjecture in Section 9 for 2-extremal digraphs, but the verbatim statement is unavailable.",
+    "arxiv_id": "2304.04690",
+    "paper_title": "Digraph Colouring and Arc-Connectivity",
+    "paper_authors": [
+      "Pierre Aboulker",
+      "Guillaume Aubian",
+      "Pierre Charbit"
+    ],
+    "published": "2023-09-13",
+    "abs_url": "https://arxiv.org/abs/2304.04690",
+    "source": "pdf"
+  }
+]

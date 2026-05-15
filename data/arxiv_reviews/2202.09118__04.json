@@ -1,0 +1,38 @@
+{
+  "review_id": "2202.09118__04",
+  "safe_id": "2202.09118",
+  "arxiv_id": "2202.09118",
+  "conjecture_title": "Question (are all graphs self-isolating?)",
+  "paper_title": "Polynomial bounds for chromatic number VII. Disjoint holes",
+  "published": "2022-02-18",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The question of whether all graphs are self-isolating was posed in arXiv:2202.09118, where the authors note they know very few graphs that have the self-isolating property and none that are known not to have it; the only connected graphs known to be self-isolating are complete graphs, paths of arbitrary length, and complete bipartite graphs. No follow-up paper resolving this question in either direction was found in a search of the post-2022 literature. The question remains fully open.",
+  "since_posted": [],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2311.05719",
+      "verified": false,
+      "note": "WebFetch of arXiv:2311.05719 confirms it is about clock-free graphs and tree decompositions (Induced subgraphs and tree decompositions XIV); it does not mention self-isolating graphs or arXiv:2202.09118. The fuzzy match is a false positive."
+    },
+    {
+      "arxiv_id": "2202.10412",
+      "verified": false,
+      "note": "Not fetched (5-call cap reached). Paper is in the same series (Polynomial bounds VI) and predates the self-isolating question; contribution description concerns good forests and P4-free graphs, not self-isolating graphs — likely a false positive."
+    },
+    {
+      "arxiv_id": "2506.10227",
+      "verified": false,
+      "note": "Not fetched (5-call cap reached). Title 'Suns in triangle-free graphs of large chromatic number' does not suggest relevance to the self-isolating question — likely a false positive."
+    }
+  ],
+  "search_queries": [
+    "self-isolating graphs chromatic number Chudnovsky Scott Seymour Spirkl 2202.09118",
+    "\"self-isolating\" graph theory polynomial chi-bounded 2022 2023 2024",
+    "\"self-isolating\" graph \"disjoint holes\" Chudnovsky Spirkl polynomial chromatic follow-up 2023 2024 2025"
+  ],
+  "notes": "No follow-up found after 5 web calls (3 searches, 2 fetches). The self-isolating concept is specific to the polynomial chi-boundedness programme for H-free graphs where H is a forest; the question is whether every graph H has the self-isolating property, which would simplify the overall programme. The internal references are all false positives from fuzzy matching — none address the self-isolating question."
+}

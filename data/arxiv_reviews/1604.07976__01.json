@@ -1,0 +1,34 @@
+{
+  "review_id": "1604.07976__01",
+  "safe_id": "1604.07976",
+  "arxiv_id": "1604.07976",
+  "conjecture_title": "Conjecture 2",
+  "paper_title": "Smaller Extended Formulations for the Spanning Tree Polytope of Bounded-genus Graphs",
+  "published": "2017-01-09",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The conjecture that $\\mathrm{xc}(P_{\\mathrm{sp.trees}}(G)) = O(|V|)$ for every proper minor-closed family $\\mathcal{C}$ and connected $G \\in \\mathcal{C}$ remains open. The main post-2017 progress is due to Aprile, Fiorini, Huynh, Joret, and Wood (2021), who proved an $O(n^{3/2})$ upper bound for any proper minor-closed class (and more generally $O(n^{1+\\beta})$ for classes with $O(n^\\beta)$-size balanced separators), improving the previously known $O(n^2)$ bounds. The linear $O(n)$ bound has been established for planar graphs and for graphs of bounded treewidth, but the full conjecture for all proper minor-closed families is unresolved.",
+  "since_posted": [
+    {
+      "title": "Smaller Extended Formulations for Spanning Tree Polytopes in Minor-Closed Classes and Beyond",
+      "authors": "Manuel Aprile, Samuel Fiorini, Tony Huynh, Gwenaël Joret, David R. Wood",
+      "year": 2021,
+      "venue": "The Electronic Journal of Combinatorics",
+      "url": "https://arxiv.org/abs/2106.11945",
+      "arxiv_id": "2106.11945",
+      "doi": "10.37236/10522",
+      "kind": "partial",
+      "claim": "Proves $\\mathrm{xc}(P_{\\mathrm{sp.trees}}(G)) = O(n^{3/2})$ for connected $n$-vertex graphs in any proper minor-closed class, improving the $O(n^2)$ bound, but the conjectured $O(n)$ bound remains open."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "extension complexity spanning tree polytope minor-closed family linear bound conjecture",
+    "arxiv 1604.07976 Fiorini Huynh Joret Pashkovich spanning tree extended formulation citing",
+    "extension complexity spanning tree polytope minor-closed O(n) linear 2023 2024 2025"
+  ],
+  "notes": "The conjecture is open for general proper minor-closed families. The best known upper bound as of 2021 is O(n^{3/2}) by Aprile et al. (arXiv:2106.11945, EJC 2021). No 2022–2026 paper resolving the full conjecture was found in the search."
+}

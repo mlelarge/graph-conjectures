@@ -1,0 +1,24 @@
+[
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Open Problem of Esperet, Labourel, and Ochem (induced universal graphs for odd degree)",
+    "statement_text": "Close the gap between the lower bound $g_v(\\mathcal{H}(n,\\Delta)) \\geq c\\, n^{\\Delta/2}$ and the upper bound $O(n^{\\Delta/2+1/2-1/\\Delta})$ for $g_v(\\mathcal{H}(n,\\Delta))$ when $\\Delta$ is odd.",
+    "context_text": "Butler showed $g_v(\\mathcal{H}(n,\\Delta)) = \\Theta(n^{\\Delta/2})$ for even $\\Delta$ but only $O(n^{\\Delta/2+1/2})$ for odd $\\Delta$. Esperet, Labourel, and Ochem improved the odd-$\\Delta$ upper bound to $O(n^{\\Delta/2+1/2-1/\\Delta})$ using a reduction of Chung and sparse universal graphs, and explicitly mentioned the problem of closing the remaining gap to the $\\Omega(n^{\\Delta/2})$ lower bound.",
+    "attributed_to": "Esperet, Labourel, and Ochem",
+    "attributed_year": null,
+    "paper_contribution": "Proves that $g_v(\\mathcal{H}(n,\\Delta)) = O(n^{\\Delta/2})$ for every integer $\\Delta \\geq 2$, matching the lower bound up to a constant factor and fully resolving the problem.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "No formal labeled theorem environment in the source; the problem is stated in prose. PDF source — math notation appears largely intact.",
+    "arxiv_id": "1607.03234",
+    "paper_title": "Optimal induced universal graphs for bounded-degree graphs",
+    "paper_authors": [
+      "Noga Alon",
+      "Rajko Nenadov"
+    ],
+    "published": "2016-07-12",
+    "abs_url": "https://arxiv.org/abs/1607.03234",
+    "source": "pdf"
+  }
+]

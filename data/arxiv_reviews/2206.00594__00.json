@@ -1,0 +1,34 @@
+{
+  "review_id": "2206.00594__00",
+  "safe_id": "2206.00594",
+  "arxiv_id": "2206.00594",
+  "conjecture_title": "Conjecture 1.3",
+  "paper_title": "Sparse graphs with bounded induced cycle packing number have logarithmic treewidth",
+  "published": "2024-02-16",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "Conjecture 1.3 states that Maximum Independent Set is solvable in polynomial time in all $\\mathcal{O}_k$-free graphs. The source paper itself proves the result for sparse $\\mathcal{O}_k$-free graphs (Corollary 1.2) and gives a quasi-polynomial algorithm ($n^{O(k^2 \\log n)}$) for the general case, stopping short of resolving the full conjecture. A November 2025 preprint (arXiv:2511.10019) introduces Odd-Cycle-Packing-treewidth (OCP-tw) and proves MIS polynomial for bounded OCP-tw in odd-minor-free graph classes, which is thematically related but does not directly establish the polynomial-time result for general $\\mathcal{O}_k$-free graphs. No paper resolving the full conjecture was found.",
+  "since_posted": [
+    {
+      "title": "Odd-Cycle-Packing-treewidth: On the Maximum Independent Set problem in odd-minor-free graph classes",
+      "authors": "authors not retrieved from abstract",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2511.10019",
+      "arxiv_id": "2511.10019",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Introduces OCP-treewidth and proves MIS solvable in polynomial time on graphs of bounded OCP-tw in odd-minor-free graph classes; whether $\\mathcal{O}_k$-free graphs have bounded OCP-tw is not established, so the conjecture is not directly resolved."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Maximum Independent Set polynomial time Ok-free graphs induced cycle packing",
+    "arXiv 2206.00594 Bonamy Bonnet treewidth Ok-free conjecture solved",
+    "\"Ok-free\" OR \"O_k-free\" \"Maximum Independent Set\" polynomial 2024 2025 graph theory"
+  ],
+  "notes": "The source paper's own Corollary 1.2 already settles the sparse case and gives a quasi-polynomial algorithm for the general case; Conjecture 1.3 asks for the remaining step to full polynomial time. Paper arXiv:2511.10019 (Nov 2025) is the closest related post-paper work found, proving MIS polynomial for bounded OCP-treewidth, but the relationship between OCP-treewidth and the $\\mathcal{O}_k$-free property could not be confirmed within the search budget. No direct resolution of Conjecture 1.3 was found."
+}

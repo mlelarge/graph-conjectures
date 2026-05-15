@@ -1,0 +1,33 @@
+{
+  "review_id": "1605.00442__00",
+  "safe_id": "1605.00442",
+  "arxiv_id": "1605.00442",
+  "conjecture_title": "Question 1",
+  "paper_title": "Token Sliding on Chordal Graphs",
+  "published": "2016-05-02",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "disproved",
+  "confidence": "high",
+  "summary": "Bonamy and Bousquet asked whether bounding the clique-tree degree D of a chordal graph restores polynomial tractability for deciding connectivity of TS_k(G). Adak, Nanoti, and Tale (arXiv:2502.12749, 2025) directly and negatively answer this: TS-Connectivity is co-NP-hard on chordal graphs of maximum clique-tree degree 4, and TS-Reachability is NP-hard already at degree 3. Together these results show that bounded clique-tree degree does not make the problem polynomial-time tractable.",
+  "since_posted": [
+    {
+      "title": "Revisiting Token Sliding on Chordal Graphs",
+      "authors": "Rajat Adak, Saraswati Girish Nanoti, Prafullkumar Tale",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2502.12749",
+      "arxiv_id": "2502.12749",
+      "doi": null,
+      "kind": "counterexample",
+      "claim": "Proves TS-Connectivity is co-NP-hard on chordal graphs of maximum clique-tree degree 4 (Theorem 1.1), directly and negatively answering Question 1 of arXiv:1605.00442."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "token sliding chordal graphs clique-tree degree polynomial complexity Bonamy Bousquet 1605.00442",
+    "token sliding reconfiguration chordal graphs connectivity NP-hard polynomial 2017 2018 2019 2020 2021"
+  ],
+  "notes": "The question asked whether fixing any constant D makes TS_k(G) connectivity polynomial on chordal graphs of clique-tree degree at most D. The 2025 paper arXiv:2502.12749 answers no: co-NP-hardness holds at D=4. The status d=2 and d=3 for TS-Connectivity specifically may remain open, but the question as posed (for 'any integers k, D') is answered negatively."
+}

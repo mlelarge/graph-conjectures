@@ -1,0 +1,48 @@
+[
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Brass's Question on Unit Distances in Normed Planes",
+    "statement_text": "Does there exist a $2$-norm $\\|.\\|$ with $U_{\\|.\\|}(n)\\leq O(n\\log n)$?",
+    "context_text": "Brass posed this question in 1996 when studying the unit distance problem in normed spaces. At the time, the best known upper bound for typical norms was Matoušek's $O(n\\log n\\log\\log n)$, and it was open whether the extra $\\log\\log n$ factor could be removed even for some specific norm.",
+    "attributed_to": "Brass",
+    "attributed_year": 1996,
+    "paper_contribution": "Proves that for almost all $d$-norms $\\|.\\|$ on $\\mathbb{R}^d$ (in a Baire categorical sense), any set of $n$ points determines at most $\\frac{1}{2}d\\cdot n\\log_2 n$ unit distances, answering the question affirmatively for almost all $2$-norms.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2302.09058",
+    "paper_title": "Unit and distinct distances in typical norms",
+    "paper_authors": [
+      "Noga Alon",
+      "Matija Bucić",
+      "Lisa Sauermann"
+    ],
+    "published": "2024-11-07",
+    "abs_url": "https://arxiv.org/abs/2302.09058",
+    "source": "html"
+  },
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Brass-Moser-Pach Problems 4 and 5 on Unit Distances in Higher Dimensions",
+    "statement_text": "For every $d\\geq 3$ and every $d$-norm $\\|.\\|$, is $U_{\\|.\\|}(n)$ asymptotically at least $\\Omega(n\\log n)$?",
+    "context_text": "Brass, Moser and Pach listed these as Problems 4 and 5 in Chapter 5 (p. 195) of their book on research problems in discrete geometry, conjecturing that the $\\Omega(n\\log n)$ lower bound on unit distances holds universally for all norms in dimension $d\\geq 3$.",
+    "attributed_to": "Brass, Moser, and Pach",
+    "attributed_year": 2005,
+    "paper_contribution": "Proves that for every $d$-norm $\\|.\\|$ on $\\mathbb{R}^d$ and any sufficiently large $n$, one can find $n$ points determining at least $\\frac{1}{2}(d-1-o(1))\\cdot n\\log_2 n$ unit distances, confirming the $\\Omega(n\\log n)$ lower bound for all norms in all dimensions $d\\geq 2$.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "Introduction excerpt cuts off before the complete statement; kind inferred from 'Problems 4 and 5' phrasing and surrounding text.",
+    "arxiv_id": "2302.09058",
+    "paper_title": "Unit and distinct distances in typical norms",
+    "paper_authors": [
+      "Noga Alon",
+      "Matija Bucić",
+      "Lisa Sauermann"
+    ],
+    "published": "2024-11-07",
+    "abs_url": "https://arxiv.org/abs/2302.09058",
+    "source": "html"
+  }
+]

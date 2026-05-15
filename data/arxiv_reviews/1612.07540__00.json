@@ -1,0 +1,44 @@
+{
+  "review_id": "1612.07540__00",
+  "safe_id": "1612.07540",
+  "arxiv_id": "1612.07540",
+  "conjecture_title": "Open problem: dimension of posets with planar cover graphs vs. height",
+  "paper_title": "Planar posets have dimension at most linear in their height",
+  "published": "2017-09-23",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The conjecture asks whether the dimension of posets with planar cover graphs is bounded by a polynomial (or linear) function of their height. Kozik, Micek, and Trotter (arXiv:1907.00380, 2019) resolved the polynomial part affirmatively by proving an O(h^6) upper bound; Gorsky and Seweryn (arXiv:2103.15920, 2021) subsequently improved this to O(h^3). Whether a linear bound holds—analogous to the main theorem of the source paper for genuinely planar posets—remains open.",
+  "since_posted": [
+    {
+      "title": "Dimension is polynomial in height for posets with planar cover graphs",
+      "authors": "Jakub Kozik, Piotr Micek, William T. Trotter",
+      "year": 2019,
+      "venue": "Journal of Combinatorial Theory, Series B",
+      "url": "https://arxiv.org/abs/1907.00380",
+      "arxiv_id": "1907.00380",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves that height-h posets with planar cover graphs have dimension O(h^6), establishing the first polynomial upper bound and resolving the polynomial-existence part of the conjecture."
+    },
+    {
+      "title": "Posets with k-outerplanar cover graphs have bounded dimension",
+      "authors": "Maximilian Gorsky, Michal T. Seweryn",
+      "year": 2021,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2103.15920",
+      "arxiv_id": "2103.15920",
+      "doi": null,
+      "kind": "partial",
+      "claim": "As a secondary result, improves the polynomial upper bound for posets with planar cover graphs from O(h^6) to O(h^3); the primary result establishes that k-outerplanar cover graphs force dimension O(k^3)."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "planar cover graph poset dimension height polynomial bound Joret Micek Wiechert",
+    "dimension posets planar cover graphs linear polynomial height 2018 2019 2020 2021 2022 2023 2024 2025"
+  ],
+  "notes": "The polynomial-existence part of the conjecture is resolved: dimension is O(h^3) for height-h posets with planar cover graphs (Gorsky-Seweryn 2021). The linear-bound part remains open. Planarity is essential: there exist posets with exponential dimension in height whose cover graphs exclude K_5 as a minor, showing minor-freeness alone is insufficient for polynomial bounds."
+}

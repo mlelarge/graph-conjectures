@@ -1,0 +1,50 @@
+[
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Open problem on sublinear round complexity",
+    "statement_text": "It remains interesting to obtain a bound on the round complexity that is sublinear in $n$ regardless of the value of $d$.",
+    "context_text": "After noting that network decompositions can replace the $O(d^4 \\log^3 n)$ round complexity of Theorem 1.3 by $d^3 2^{O(\\sqrt{\\log n})}$, the authors remark that these alternative bounds are unsatisfying. The problem of achieving a round complexity that is sublinear in $n$ independent of $d$ remains open.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated as an open direction in prose, no labelled environment; PDF source.",
+    "arxiv_id": "1802.05582",
+    "paper_title": "Distributed coloring in sparse graphs with fewer colors",
+    "paper_authors": [
+      "Pierre Aboulker",
+      "Marthe Bonamy",
+      "Nicolas Bousquet",
+      "Louis Esperet"
+    ],
+    "published": "2018-12-19",
+    "abs_url": "https://arxiv.org/abs/1802.05582",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Question on randomized list-coloring round complexity",
+    "statement_text": "Is it possible to avoid the multiplicative factor polynomial in $\\Delta$ in a randomized version of the distributed $\\Delta$-list-coloring algorithm (Corollary 2.1)?",
+    "context_text": "Panconesi and Srinivasan gave a randomized $\\Delta$-coloring algorithm running in $O(\\log^3 n / \\log \\Delta)$ rounds. The paper's list-coloring extension (Corollary 2.1) achieves $O(\\Delta^2 \\log^3 n)$ rounds deterministically, but it is noted to be unclear whether a randomized variant can similarly remove the polynomial dependence on $\\Delta$.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Implicit question in prose: \"it is not clear whether we can similarly avoid the multiplicative factor polynomial in $\\Delta$ in a randomized version of our algorithm\"; PDF source.",
+    "arxiv_id": "1802.05582",
+    "paper_title": "Distributed coloring in sparse graphs with fewer colors",
+    "paper_authors": [
+      "Pierre Aboulker",
+      "Marthe Bonamy",
+      "Nicolas Bousquet",
+      "Louis Esperet"
+    ],
+    "published": "2018-12-19",
+    "abs_url": "https://arxiv.org/abs/1802.05582",
+    "source": "pdf"
+  }
+]

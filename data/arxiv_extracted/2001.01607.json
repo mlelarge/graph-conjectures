@@ -1,0 +1,122 @@
+[
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Open Question: (even hole, K4, diamond)-free treewidth/cliquewidth",
+    "statement_text": "Is it true that (even hole, $K_4$, diamond)-free graphs have bounded treewidth (or cliquewidth)?",
+    "context_text": "The paper proves bounded treewidth for (theta, triangle, $S_{i,j,k}$)-free and (even hole, pyramid, $K_t$, $S_{i,j,k}$)-free graphs. The analogous question for graphs excluding the diamond ($K_4$ minus one edge) instead of a subdivided claw is explicitly listed as open.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "PDF source — math notation reconstructed; stated in the dedicated 'Open questions' section of the paper.",
+    "arxiv_id": "2001.01607",
+    "paper_title": "(Theta, triangle)-free and (even hole, $K_4$)-free graphs. Part 2 : bounds on treewidth",
+    "paper_authors": [
+      "Marcin Pilipczuk",
+      "Ni Luh Dewi Sintiari",
+      "Stéphan Thomassé",
+      "Nicolas Trotignon"
+    ],
+    "published": "2020-10-27",
+    "abs_url": "https://arxiv.org/abs/2001.01607",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Open Question: (theta, triangle)-free graphs of bounded degree",
+    "statement_text": "For every fixed integer $t \\geq 4$, do (theta, triangle)-free graphs of maximum degree $t$ have bounded treewidth?",
+    "context_text": "Treewidth of (theta, triangle)-free graphs is unbounded in general. For $t = 1, 2$ bounded treewidth is trivial; for $t = 3$ it follows from Corollary 4.3 in [2] (even-hole-free graphs with maximum degree $t$). The question for $t \\geq 4$ is explicitly stated as open.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "PDF source — math notation reconstructed; stated in the 'Open questions' section.",
+    "arxiv_id": "2001.01607",
+    "paper_title": "(Theta, triangle)-free and (even hole, $K_4$)-free graphs. Part 2 : bounds on treewidth",
+    "paper_authors": [
+      "Marcin Pilipczuk",
+      "Ni Luh Dewi Sintiari",
+      "Stéphan Thomassé",
+      "Nicolas Trotignon"
+    ],
+    "published": "2020-10-27",
+    "abs_url": "https://arxiv.org/abs/2001.01607",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Open Question: (triangle, S1,2,3)-free graphs cliquewidth",
+    "statement_text": "Do (triangle, $S_{1,2,3}$)-free graphs have bounded cliquewidth?",
+    "context_text": "Bounded cliquewidth is known for (triangle, $S_{1,2,2}$)-free graphs and for (triangle, $H$)-free graphs when $H$ is contained in a graph from $H_B = \\{P_6, S_{1,1,3}\\}$. The status of $S_{1,2,3}$ is explicitly open; the authors refer to [16] for further open problems of the same flavour.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "PDF source — math notation reconstructed; stated in the 'Open questions' section.",
+    "arxiv_id": "2001.01607",
+    "paper_title": "(Theta, triangle)-free and (even hole, $K_4$)-free graphs. Part 2 : bounds on treewidth",
+    "paper_authors": [
+      "Marcin Pilipczuk",
+      "Ni Luh Dewi Sintiari",
+      "Stéphan Thomassé",
+      "Nicolas Trotignon"
+    ],
+    "published": "2020-10-27",
+    "abs_url": "https://arxiv.org/abs/2001.01607",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Maximum Independent Set complexity for (even hole, K4)-free and (theta, triangle)-free graphs",
+    "statement_text": "Determine the computational complexity of the Maximum Independent Set problem for (even hole, $K_4$)-free graphs and for (theta, triangle)-free graphs.",
+    "context_text": "Maximum Independent Set is polynomial for (even hole, triangle)-free and (even hole, pyramid)-free graphs. The paper gives polynomial algorithms for (theta, triangle, $S_{i,j,k}$)-free and (even hole, pyramid, $K_t$, $S_{i,j,k}$)-free graphs via bounded treewidth, but the complexity for the larger classes (even hole, $K_4$)-free and (theta, triangle)-free is stated as unknown.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "PDF source — math notation reconstructed; stated in the 'Algorithmic consequences' section.",
+    "arxiv_id": "2001.01607",
+    "paper_title": "(Theta, triangle)-free and (even hole, $K_4$)-free graphs. Part 2 : bounds on treewidth",
+    "paper_authors": [
+      "Marcin Pilipczuk",
+      "Ni Luh Dewi Sintiari",
+      "Stéphan Thomassé",
+      "Nicolas Trotignon"
+    ],
+    "published": "2020-10-27",
+    "abs_url": "https://arxiv.org/abs/2001.01607",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Maximum Independent Set complexity for H-free graphs when H contains P7, S1,1,3, or S1,2,2",
+    "statement_text": "Determine the computational complexity of the Maximum Independent Set problem for $H$-free graphs whenever $H$ is some $S_{i,j,k}$ that contains either $P_7$, $S_{1,1,3}$, or $S_{1,2,2}$.",
+    "context_text": "The problem is polynomial for $H \\subseteq P_k$ with $k \\leq 6$ and for $H \\subseteq S_{i,j,k}$ with $(i,j,k) \\leq (1,1,2)$, and is NP-hard when $H$ is not an induced subgraph of any $S_{i,j,k}$. The boundary region where $H$ contains $P_7$, $S_{1,1,3}$, or $S_{1,2,2}$ is listed as completely open.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "PDF source — math notation reconstructed; stated in the 'Algorithmic consequences' section.",
+    "arxiv_id": "2001.01607",
+    "paper_title": "(Theta, triangle)-free and (even hole, $K_4$)-free graphs. Part 2 : bounds on treewidth",
+    "paper_authors": [
+      "Marcin Pilipczuk",
+      "Ni Luh Dewi Sintiari",
+      "Stéphan Thomassé",
+      "Nicolas Trotignon"
+    ],
+    "published": "2020-10-27",
+    "abs_url": "https://arxiv.org/abs/2001.01607",
+    "source": "pdf"
+  }
+]

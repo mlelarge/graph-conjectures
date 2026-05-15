@@ -1,0 +1,140 @@
+[
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Problem 1",
+    "statement_text": "Does there for every integer $d \\geq 0$ exist $\\varepsilon > 0$ such that every $d$-degenerate graph with an assignment of lists of size $d + 1$ is weighted $\\varepsilon$-flexible? Or at least $\\varepsilon$-flexible?",
+    "context_text": "Theorem 2 shows that lists of size $d+2$ suffice for weighted $\\varepsilon$-flexibility of $d$-degenerate graphs. The question is whether one extra color (size $d+1$, matching choosability) also guarantees flexibility. For $d=0$ trivial; for $d=1$ (forests with lists of size 2) weighted $1/2$-flexibility is easy; the first open case is $d=2$.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "PDF source; math is simple enough to read cleanly.",
+    "arxiv_id": "1612.08698",
+    "paper_title": "List coloring with requests",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Sergey Norin",
+      "Luke Postle"
+    ],
+    "published": "2018-11-17",
+    "abs_url": "https://arxiv.org/abs/1612.08698",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Problem 2",
+    "statement_text": "Does there for every integer $\\Delta \\geq 2$ exist $\\varepsilon > 0$ such that every connected graph of maximum degree $\\Delta$ that is not $\\Delta$-regular, with an assignment of lists of size $\\Delta$, is weighted $\\varepsilon$-flexible? Or at least $\\varepsilon$-flexible?",
+    "context_text": "This is a Brooks'-theorem-like analogue of Problem 1: Brooks' theorem says connected non-$\\Delta$-regular graphs of maximum degree $\\Delta$ are $\\Delta$-choosable, so the question asks whether such graphs are also $\\varepsilon$-flexible with lists of size exactly $\\Delta$.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "PDF source; math reads cleanly.",
+    "arxiv_id": "1612.08698",
+    "paper_title": "List coloring with requests",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Sergey Norin",
+      "Luke Postle"
+    ],
+    "published": "2018-11-17",
+    "abs_url": "https://arxiv.org/abs/1612.08698",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Problem 3",
+    "statement_text": "Does there exist $\\varepsilon > 0$ such that every planar graph with an assignment of lists of size $5$ is weighted $\\varepsilon$-flexible? Or at least $\\varepsilon$-flexible?",
+    "context_text": "Planar graphs are 5-choosable (Thomassen), so 5 is the tight choosability threshold. Theorem 4 currently gives $\\varepsilon$-flexibility only for lists of size 6. The authors believe these bounds can be improved.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "PDF source; math reads cleanly.",
+    "arxiv_id": "1612.08698",
+    "paper_title": "List coloring with requests",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Sergey Norin",
+      "Luke Postle"
+    ],
+    "published": "2018-11-17",
+    "abs_url": "https://arxiv.org/abs/1612.08698",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Problem 4",
+    "statement_text": "Does there exist $\\varepsilon > 0$ such that every planar graph of girth at least $5$ with an assignment of lists of size $3$ is weighted $\\varepsilon$-flexible? Or at least $\\varepsilon$-flexible?",
+    "context_text": "Planar graphs of girth at least 5 are 3-choosable (Thomassen). Theorem 5 (and Theorem 4) imply $\\varepsilon$-flexibility with lists of size 4; the question is whether the choosability-tight list size of 3 also yields flexibility.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "PDF source; math reads cleanly.",
+    "arxiv_id": "1612.08698",
+    "paper_title": "List coloring with requests",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Sergey Norin",
+      "Luke Postle"
+    ],
+    "published": "2018-11-17",
+    "abs_url": "https://arxiv.org/abs/1612.08698",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Problem 5",
+    "statement_text": "Does there exist $\\varepsilon > 0$ such that every planar triangle-free graph with an assignment of lists of size $4$ is weighted $\\varepsilon$-flexible? Or at least $\\varepsilon$-flexible?",
+    "context_text": "Euler's formula implies planar triangle-free graphs are 4-choosable. The paper notes this as a simpler-seeming but still nontrivial instance of the flexibility question at the choosability-tight list size.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "PDF source; math reads cleanly.",
+    "arxiv_id": "1612.08698",
+    "paper_title": "List coloring with requests",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Sergey Norin",
+      "Luke Postle"
+    ],
+    "published": "2018-11-17",
+    "abs_url": "https://arxiv.org/abs/1612.08698",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Problem 6",
+    "statement_text": "Does there exist $\\varepsilon > 0$ such that every planar graph of girth at least $6$ with an assignment of lists of size $3$ is weighted $\\varepsilon$-flexible? Or at least $\\varepsilon$-flexible?",
+    "context_text": "Euler's formula implies planar graphs of girth at least 6 are 3-choosable. Theorem 5 gives weighted $\\varepsilon$-flexibility for planar graphs of girth at least 12 with lists of size 3; Problem 6 asks whether girth 6 suffices.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "PDF source; math reads cleanly.",
+    "arxiv_id": "1612.08698",
+    "paper_title": "List coloring with requests",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Sergey Norin",
+      "Luke Postle"
+    ],
+    "published": "2018-11-17",
+    "abs_url": "https://arxiv.org/abs/1612.08698",
+    "source": "pdf"
+  }
+]

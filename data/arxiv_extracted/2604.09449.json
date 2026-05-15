@@ -1,0 +1,117 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.1 (Pardey–Rautenbach)",
+    "statement_text": "For all integers $k\\geq 2$ and $t\\geq 1$, every colour-balanced $k$-edge-coloured $K_{2kt}$ admits a perfect matching $M$ satisfying $f_{c}(M)=O(k^{2})$.",
+    "context_text": "Pardey and Rautenbach posed this conjecture after showing that colour-balanced perfect matchings need not always exist; the quantity $f_c(M)=\\sum_{i=1}^{k}|\\,|c^{-1}(i)\\cap M|-t\\,|$ measures total deviation from colour-balance. Prior to this paper, the best uniform bound was $f_c(M)\\leq 4^{k^2}$ due to Hollom.",
+    "attributed_to": "Pardey and Rautenbach",
+    "attributed_year": 2022,
+    "paper_contribution": "Fully resolves the conjecture by proving that every colour-balanced $k$-edge-colouring of $K_{2n}$ admits a perfect matching $M$ satisfying $f_c(M)=O(k^2)$, via a linear relaxation and necklace-splitting argument.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2604.09449",
+    "paper_title": "Colour-balanced subgraphs",
+    "paper_authors": [
+      "Emma Hogan",
+      "Alex Scott",
+      "Dmitry Tsarev"
+    ],
+    "published": "2026-04-10",
+    "abs_url": "https://arxiv.org/abs/2604.09449",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 6.1",
+    "statement_text": "Let $h\\colon E(K_{n,n})\\to\\mathbb{R}^{k}$ such that $\\|h(e)\\|_{1}\\leq 1$ for all $e\\in E(K_{n,n})$. Then there is a perfect matching $M$ of $K_{n,n}$ satisfying [a bound of order $O(\\sqrt{k})$ on $\\|\\sum_{e\\in M}h(e)\\|_1$].",
+    "context_text": "There is a gap between the $O(k^2)$ upper bound for representative matchings in bipartite complete graphs (Section 1.1) and the worst-case lower bound of $\\sqrt{k/2}$ constructed in Theorem 5.1. The authors conjecture that the lower bound gives the correct order, so that the true bound is $\\Theta(\\sqrt{k})$.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "The conclusion of the conjecture is truncated in the source text; the full right-hand side bound is not reproduced. Based on the surrounding context the conjectured bound is $O(\\sqrt{k})$, matching the lower bound of Theorem 5.1.",
+    "arxiv_id": "2604.09449",
+    "paper_title": "Colour-balanced subgraphs",
+    "paper_authors": [
+      "Emma Hogan",
+      "Alex Scott",
+      "Dmitry Tsarev"
+    ],
+    "published": "2026-04-10",
+    "abs_url": "https://arxiv.org/abs/2604.09449",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 6.2",
+    "statement_text": "There exists some absolute constant $C$ such that for all positive integers $k$ and $t$, every colour-balanced $k$-edge-colouring of $K_{2kt}$ admits a perfect matching $M$ satisfying $f_{c}(M)<C$.",
+    "context_text": "There is a gap between the $O(k^2)$ upper bound from Theorem 1.2 and the constant lower bound constructed in Theorem 5.3 for matchings in complete graphs. The authors conjecture the constant lower bound is tight. They note that a $\\sqrt{k}$ lower bound for perfect matchings of $K_{kt,kt}$ implies that new ideas would be necessary to prove this conjecture.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2604.09449",
+    "paper_title": "Colour-balanced subgraphs",
+    "paper_authors": [
+      "Emma Hogan",
+      "Alex Scott",
+      "Dmitry Tsarev"
+    ],
+    "published": "2026-04-10",
+    "abs_url": "https://arxiv.org/abs/2604.09449",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Problem 6.3",
+    "statement_text": "Improve the bounds on $f_{h}(F)$ for bounded-degree spanning forests $F$ in complete graphs when $k\\geq 3$.",
+    "context_text": "For $k=2$, error bounds sharp up to an additive constant are known for spanning forests of maximum degree $\\Delta$. For $k>2$ the paper shows the error remains linear in $\\Delta$, but no attempt is made to optimise the leading coefficient.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2604.09449",
+    "paper_title": "Colour-balanced subgraphs",
+    "paper_authors": [
+      "Emma Hogan",
+      "Alex Scott",
+      "Dmitry Tsarev"
+    ],
+    "published": "2026-04-10",
+    "abs_url": "https://arxiv.org/abs/2604.09449",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Problem 6.4",
+    "statement_text": "Improve the bounds on $f_{h}(H)$ for a Hamilton cycle $H$ in complete or complete bipartite graphs.",
+    "context_text": "The general upper bound from Theorem 1.2 gives $O(k^2)$ for Hamilton cycles in complete graphs, and the same bound holds for complete bipartite graphs by the paper's methods. A necklace-splitting argument shows any improvement to the bipartite matching bound yields an equal improvement here, so progress on either problem benefits the other.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2604.09449",
+    "paper_title": "Colour-balanced subgraphs",
+    "paper_authors": [
+      "Emma Hogan",
+      "Alex Scott",
+      "Dmitry Tsarev"
+    ],
+    "published": "2026-04-10",
+    "abs_url": "https://arxiv.org/abs/2604.09449",
+    "source": "html"
+  }
+]

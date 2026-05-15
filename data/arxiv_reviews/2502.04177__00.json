@@ -1,0 +1,22 @@
+{
+  "review_id": "2502.04177__00",
+  "safe_id": "2502.04177",
+  "arxiv_id": "2502.04177",
+  "conjecture_title": "Question 2",
+  "paper_title": "Shallow brambles",
+  "published": "2025-09-15",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Question 2 of arXiv:2502.04177 asks whether, for every graph class with polynomial expansion, the strong r-coloring number scol_r(G) is polynomially bounded by the depth-r bramble number bn_r(G). The paper itself establishes that the depth-r bramble number and several related parameters (depth-r tangle number, linkedness, well-linkedness) are pairwise polynomially related in polynomial-expansion classes, but the connection to scol_r(G) is left open. No follow-up paper resolving this question was found in the indexed literature as of May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "shallow coloring number bramble number polynomial expansion scol_r bn_r graph 2025 2026",
+    "arxiv 2502.04177 \"shallow brambles\" cite scol_r strong coloring number bramble polynomial 2025 2026",
+    "Bousquet Esperet Joret \"strong coloring number\" \"bramble number\" \"polynomial expansion\" 2025 2026"
+  ],
+  "notes": "No follow-up paper addressing Question 2 was found after three targeted web searches and two direct fetches of the source paper. The paper was published in DMTCS (September 2025) shortly after the arXiv preprint (February 2025). The conjecture is recent (less than 1 year at time of review), and absence of follow-up is expected. The polynomial expansion assumption is noted in the paper as essential: without it scol_r cannot be bounded by any function of r and bn_{g(r)}(G)."
+}

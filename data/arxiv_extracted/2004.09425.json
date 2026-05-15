@@ -1,0 +1,27 @@
+[
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Problem 4.4 [?] — Odd Cycle Transversal in $P_5$-free graphs",
+    "statement_text": "What is the computational complexity of the Odd Cycle Transversal problem in $P_5$-free graphs?",
+    "context_text": "The paper explicitly states: 'The complexity status of Odd Cycle Transversal in $P_5$-free graphs remains open [?, Problem 4.4]: resolving this question was the original motivation of our work.' The problem is equivalent to Maximum Induced Bipartite Subgraph (by complementation), and is known to be NP-hard in $P_6$-free graphs.",
+    "attributed_to": "Unknown (citation garbled in PDF extraction)",
+    "attributed_year": null,
+    "paper_contribution": "Provides a subexponential-time algorithm with running time $n^{O(\\sqrt{n})}$ for Odd Cycle Transversal in $P_5$-free graphs, as a corollary of the main result (R3) on Max Partial $H$-Coloring in $P_5$-free graphs running in time $n^{O(\\omega(G))}$.",
+    "opg_lookup": true,
+    "confidence": "low",
+    "notes": "PDF source — the cite key for the reference containing Problem 4.4 was garbled to '[?]' during extraction; full complexity classification (P vs NP-hard) remains open after this paper.",
+    "arxiv_id": "2004.09425",
+    "paper_title": "Finding large $H$-colorable subgraphs in hereditary graph classes",
+    "paper_authors": [
+      "Maria Chudnovsky",
+      "Jason King",
+      "Michał Pilipczuk",
+      "Paweł Rzążewski",
+      "Sophie Spirkl"
+    ],
+    "published": "2020-04-21",
+    "abs_url": "https://arxiv.org/abs/2004.09425",
+    "source": "pdf"
+  }
+]

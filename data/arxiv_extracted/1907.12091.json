@@ -1,0 +1,102 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Király's Cycle Bound Conjecture",
+    "statement_text": "The number of cycles in a simple graph with $m$ edges is $O(1.4^m)$.",
+    "context_text": "Király [8] conjectured that the number of cycles in a graph with $m$ edges is $O(1.4^m)$. This is stated as the primary motivation in the introduction, and Theorem 1 of this paper proves the conjecture by establishing the stronger bound $O(\\gamma^m)$ with $\\gamma \\approx 1.384$.",
+    "attributed_to": "Király",
+    "attributed_year": null,
+    "paper_contribution": "Proves the conjecture; Theorem 1 establishes the stronger bound $O(\\gamma^m)$ where $\\gamma \\approx 1.384 < 1.4$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source — math may be garbled. Publication year of Király [8] not determinable from extracted text.",
+    "arxiv_id": "1907.12091",
+    "paper_title": "Bounding the number of cycles in a graph in terms of its degree sequence",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Natasha Morrison",
+      "Jonathan A. Noel",
+      "Sergey Norin",
+      "Luke Postle"
+    ],
+    "published": "2019-07-28",
+    "abs_url": "https://arxiv.org/abs/1907.12091",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Király's 4-Regular Graph Conjecture",
+    "statement_text": "A $4$-regular simple graph with $m$ edges has at most $1.99^{m/2}$ cycles.",
+    "context_text": "Király [8] conjectured that 4-regular graphs have at most $1.99^{m/2}$ cycles; this paper also improves on Király's earlier result of $O((\\sqrt{2}-\\varepsilon)^m)$ for graphs of average degree at most four. Theorem 3 proves this conjecture with the stronger bound $O(1.365^m)$.",
+    "attributed_to": "Király",
+    "attributed_year": null,
+    "paper_contribution": "Proves the conjecture; Theorem 3 establishes the stronger bound $O(1.365^m)$ for simple graphs with $m$ edges and average degree $4$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source — math may be garbled. Publication year of Király [8] not determinable from extracted text.",
+    "arxiv_id": "1907.12091",
+    "paper_title": "Bounding the number of cycles in a graph in terms of its degree sequence",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Natasha Morrison",
+      "Jonathan A. Noel",
+      "Sergey Norin",
+      "Luke Postle"
+    ],
+    "published": "2019-07-28",
+    "abs_url": "https://arxiv.org/abs/1907.12091",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Arman–Tsaturian Conjecture 6.1",
+    "statement_text": "A simple graph with $n$ vertices and average degree $d$ has at most $\\left(1 + O\\!\\left(\\frac{\\log d}{d}\\right)\\right)^n \\cdot \\left(\\frac{d}{e}\\right)^n$ cycles.",
+    "context_text": "Conjecture 6.1 of Arman and Tsaturian [2] predicts an asymptotic upper bound on the number of cycles in graphs with superconstant average degree. Theorem 5 of this paper proves the conjecture, and the bound is shown to be asymptotically tight by considering random graphs.",
+    "attributed_to": "Arman and Tsaturian",
+    "attributed_year": null,
+    "paper_contribution": "Proves Conjecture 6.1 of Arman and Tsaturian; the bound is asymptotically tight as witnessed by random graphs [6].",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "PDF source — exact verbatim statement of the conjecture is not reproduced in the paper; statement inferred from Theorem 5, which the authors explicitly say proves it. Math may be garbled.",
+    "arxiv_id": "1907.12091",
+    "paper_title": "Bounding the number of cycles in a graph in terms of its degree sequence",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Natasha Morrison",
+      "Jonathan A. Noel",
+      "Sergey Norin",
+      "Luke Postle"
+    ],
+    "published": "2019-07-28",
+    "abs_url": "https://arxiv.org/abs/1907.12091",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 2",
+    "statement_text": "Every simple graph with $m$ edges has at most $O(\\kappa_1^m)$ cycles, where $\\kappa_1 = (2+2\\sqrt{2})^{1/5} \\approx 1.3701$.",
+    "context_text": "The Arman–Tsaturian construction [2] gives simple graphs with $\\Omega(\\kappa_1^m)$ cycles, which is the best known lower bound. The authors verified by computer several similar constructions and could not find a better one, leading them to conjecture that this construction is optimal. Remark 9 notes that any counterexample would necessarily have average degree in the range $(4.24, 7.18)$.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "PDF source — math may be garbled; value of $\\kappa_1$ reconstructed from surrounding prose.",
+    "arxiv_id": "1907.12091",
+    "paper_title": "Bounding the number of cycles in a graph in terms of its degree sequence",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Natasha Morrison",
+      "Jonathan A. Noel",
+      "Sergey Norin",
+      "Luke Postle"
+    ],
+    "published": "2019-07-28",
+    "abs_url": "https://arxiv.org/abs/1907.12091",
+    "source": "pdf"
+  }
+]

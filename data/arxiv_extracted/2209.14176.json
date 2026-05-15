@@ -1,0 +1,26 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Stanley-Stembridge Conjecture",
+    "statement_text": "The chromatic symmetric function of the incomparability graph of any $(3+1)$-free poset is $e$-positive.",
+    "context_text": "Described as a central driving conjecture in the chromatic symmetric function literature. Guay-Paquet made substantial progress in 2013 by reducing it to showing $e$-positivity for unit interval graphs (incomparability graphs of posets that are simultaneously $(3+1)$-free and $(2+2)$-free). The present paper develops the chromatic $k$-multisymmetric function $X_k$ and shows that Guay-Paquet's reduction arises naturally from the structure of homogeneous pairs of cliques.",
+    "attributed_to": "Stanley and Stembridge",
+    "attributed_year": 1993,
+    "paper_contribution": "Introduces the chromatic multisymmetric function $X_k$ and demonstrates that Guay-Paquet's reduction of the conjecture to unit interval graphs can be understood and generalised within the framework of homogeneous pairs of cliques, providing a systematic method for deriving further chromatic symmetric function relations of this type.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source — extracted text truncates mid-sentence in Section 3.2 and Section 6 ('further possible directions for research') is entirely absent; any open questions or conjectures stated by the paper authors in that section are not recoverable from the supplied text.",
+    "arxiv_id": "2209.14176",
+    "paper_title": "Homogeneous Sets in Graphs and a Chromatic Multisymmetric Function",
+    "paper_authors": [
+      "Logan Crew",
+      "Evan Haithcock",
+      "Josephine Reynes",
+      "Sophie Spirkl"
+    ],
+    "published": "2022-09-28",
+    "abs_url": "https://arxiv.org/abs/2209.14176",
+    "source": "pdf"
+  }
+]

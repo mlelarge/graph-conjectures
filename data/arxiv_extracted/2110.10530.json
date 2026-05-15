@@ -1,0 +1,56 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Burning Number Conjecture",
+    "statement_text": "For a connected graph $G$ of order $n$, $b(G) \\leq \\lceil \\sqrt{n} \\rceil$.",
+    "context_text": "Introduced in [BJR16], the Burning Number Conjecture claims that paths achieve the largest burning number among all connected graphs of the same order. The conjecture remains open in general; it is known to hold for several special graph classes including spiders, caterpillars, lobsters, and graphs with minimum degree at least 23.",
+    "attributed_to": "Bonato, Janssen, and Roshanbin",
+    "attributed_year": 2016,
+    "paper_contribution": "Proves the best-known general upper bound $b(G) \\leq \\lceil\\sqrt{4n/3}\\rceil + 1$ for any connected graph $G$ of order $n$, establishes that the conjecture holds for all sufficiently large graphs with minimum degree at least 4, and shows it almost holds (off by at most 2) for graphs with minimum degree at least 3. Also proves the conjecture reduces to finitely many cases for trees of any fixed bounded growth.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2110.10530",
+    "paper_title": "Improved pyrotechnics : Closer to the burning graph conjecture",
+    "paper_authors": [
+      "Paul Bastide",
+      "Marthe Bonamy",
+      "Anthony Bonato",
+      "Pierre Charbit",
+      "Shahin Kamali",
+      "Théo Pierron",
+      "Mikaël Rabie"
+    ],
+    "published": "2022-03-04",
+    "abs_url": "https://arxiv.org/abs/2110.10530",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 7",
+    "statement_text": "Let $T$ be a tree of growth $k$ and of order $n$. If $R$ is a finite set of integers such that $\\{0, 1, \\ldots, k\\} \\subseteq R$ and $\\sum_{r \\in R}(2r+1) \\geq n$, then $T$ is $R$-burnable.",
+    "context_text": "The authors propose this as a stronger version of the Burning Number Conjecture via a reformulation using $R$-burnability: the BNC states that every connected graph on $n$ vertices is $\\{0, 1, \\ldots, \\lceil\\sqrt{n}\\rceil - 1\\}$-burnable, since $\\sum_{r=0}^{\\lceil\\sqrt{n}\\rceil - 1}(2r+1) = \\lceil\\sqrt{n}\\rceil^2 \\geq n$. Conjecture 7 generalises this to trees of bounded growth by requiring the set $R$ to contain all radii up to $k$ and have sufficient total volume.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2110.10530",
+    "paper_title": "Improved pyrotechnics : Closer to the burning graph conjecture",
+    "paper_authors": [
+      "Paul Bastide",
+      "Marthe Bonamy",
+      "Anthony Bonato",
+      "Pierre Charbit",
+      "Shahin Kamali",
+      "Théo Pierron",
+      "Mikaël Rabie"
+    ],
+    "published": "2022-03-04",
+    "abs_url": "https://arxiv.org/abs/2110.10530",
+    "source": "pdf"
+  }
+]

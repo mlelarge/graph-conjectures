@@ -1,0 +1,55 @@
+{
+  "review_id": "1507.08208__00",
+  "safe_id": "1507.08208",
+  "arxiv_id": "1507.08208",
+  "conjecture_title": "Conjecture 1.2",
+  "paper_title": "Edge-partitioning a graph into paths: beyond the Barát-Thomassen conjecture",
+  "published": "2016-06-30",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "disproved",
+  "confidence": "high",
+  "summary": "Conjecture 1.2 from arXiv:1507.08208, which posits a function $f$ such that $f(\\Delta_T)$-edge-connectivity and minimum degree $f(|E(T)|)$ suffice for $T$-decomposition for any tree $T$, is disproved by Klimošová and Thomassé (arXiv:1803.03704): for trees of maximum degree 3 (specifically complete binary trees of arbitrary depth), no such function $f$ exists. The path case ($\\Delta_T \\leq 2$, already proved in the source paper) was subsequently strengthened by arXiv:1907.11600, establishing that 3-edge-connectivity is optimal for paths.",
+  "since_posted": [
+    {
+      "title": "Edge-decomposing graphs into coprime forests",
+      "authors": "Tereza Klimošová, Stéphan Thomassé",
+      "year": 2018,
+      "venue": "Journal of Graph Theory",
+      "url": "https://arxiv.org/abs/1803.03704",
+      "arxiv_id": "1803.03704",
+      "doi": null,
+      "kind": "counterexample",
+      "claim": "Constructs a counterexample to Conjecture 1.2 for trees of maximum degree 3 using complete binary trees $T_k$ of arbitrary depth $k$, showing that no function $f$ can make the conjecture hold for such trees."
+    },
+    {
+      "title": "Edge-partitioning 3-edge-connected graphs into paths",
+      "authors": "Tereza Klimošová, Stéphan Thomassé",
+      "year": 2019,
+      "venue": "Journal of Combinatorial Theory, Series B",
+      "url": "https://arxiv.org/abs/1907.11600",
+      "arxiv_id": "1907.11600",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves the path case of Conjecture 1.2 with optimal 3-edge-connectivity (replacing the 24-edge-connectivity of the source paper), establishing $f(2)=3$ is achievable, and notes the general conjecture fails for trees of maximum degree 3."
+    }
+  ],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "1803.03704",
+      "verified": true,
+      "note": "WebFetch confirmed: paper disproves Conjecture 1.2 for trees of max degree 3; published in Journal of Graph Theory 2020, 97(1), pp.21-33."
+    },
+    {
+      "arxiv_id": "1907.11600",
+      "verified": true,
+      "note": "WebFetch confirmed: paper proves optimal 3-edge-connectivity for path case; directly addresses the ΔT=2 subcase of Conjecture 1.2."
+    }
+  ],
+  "search_queries": [
+    "Bensmail Harutyunyan Le Thomasse tree T-decomposition edge-connected graph conjecture 1507.08208",
+    "tree T-decomposition edge-connected maximum degree counterexample Klimosova Thomasse 2018 2019 2020 2021"
+  ],
+  "notes": "Conjecture 1.2 is disproved in full generality by arXiv:1803.03704 for trees of maximum degree ≥ 3. The path subcase (ΔT ≤ 2) remains valid and was settled optimally at 3-edge-connectivity by arXiv:1907.11600. The related Barát-Thomassen Conjecture 1.1 (connectivity depending on |E(T)| without minimum degree condition) was proved separately and is a distinct result."
+}

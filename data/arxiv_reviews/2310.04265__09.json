@@ -1,0 +1,34 @@
+{
+  "review_id": "2310.04265__09",
+  "safe_id": "2310.04265",
+  "arxiv_id": "2310.04265",
+  "conjecture_title": "Question 5.9",
+  "paper_title": "Clique number of tournaments",
+  "published": "2023-10-06",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "medium",
+  "summary": "Question 5.9 asks whether $\\overrightarrow{\\omega}(T)\\geq k$ is always witnessed by a bounded-size subtournament (i.e., $f$ = identity). A 2026 paper by Crew, Fan, Koerts, Moore, and Spirkl (arXiv:2602.09863) proves a closely related weaker form (their Corollary 7): there exist two functions $f$ and $\\ell$ such that $\\overrightarrow{\\omega}(T)\\geq f(k)$ implies a subtournament of size $\\leq\\ell(k)$ with $\\overrightarrow{\\omega}\\geq k$; this resolves the weaker Conjecture 5.8 of the source paper. Whether $f$ can be taken as the identity — the content of Question 5.9 — remains unclear from the available evidence.",
+  "since_posted": [
+    {
+      "title": "Characterizing Large Clique Number in Tournaments",
+      "authors": "Logan Crew, Xinyue Fan, Hidde Koerts, Benjamin Moore, Sophie Spirkl",
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2602.09863",
+      "arxiv_id": "2602.09863",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves (Corollary 7) that there exist functions f and \\ell such that every tournament with \\overrightarrow{\\omega}(T) \\geq f(k) contains a subtournament of size \\leq \\ell(k) with \\overrightarrow{\\omega} \\geq k, settling the weaker Conjecture 5.8 of the source paper; the paper self-reports answering a question of Aboulker--Aubian--Charbit--Lopes (2023), but Corollary 7 uses two functions rather than the single identity function required by Question 5.9."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "arXiv 2310.04265 tournament clique number Aboulker Aubian Charbit Lopes",
+    "tournament clique number subtournament bounded omega-critical dichromatic",
+    "tournament clique number subtournament bounded size certificate 2024 2025"
+  ],
+  "notes": "arXiv:2602.09863 self-reports answering a question from Aboulker--Aubian--Charbit--Lopes (2023); their Corollary 7 establishes bounded-size witnesses for large (\\geq f(k)) clique number, which is Conjecture 5.8, not the stronger identity-function form of Question 5.9. The source paper notes that Conjecture 5.10 (infinitely many k-\\overrightarrow{\\omega}-critical tournaments) would answer Question 5.9 negatively."
+}

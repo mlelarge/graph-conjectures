@@ -1,0 +1,21 @@
+{
+  "review_id": "2405.05902__00",
+  "safe_id": "2405.05902",
+  "arxiv_id": "2405.05902",
+  "conjecture_title": "Problem 1.1",
+  "paper_title": "The largest subgraph without a forbidden induced subgraph",
+  "published": "2024-06-08",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Problem 1.1 calls for a unified Turán-type theory determining ex(Γ, 𝒫) for any (c,t)-sparse host graph Γ and any hereditary property 𝒫 that excludes some bipartite graph. The source paper itself resolves this for certain bipartite forbidden graphs when Γ is a dense random graph or a Paley graph, and the contemporaneous independent work of Clifton, Liu, Mattos, and Zheng (arXiv:2405.09486, May 2024) fully settles the G(n,p) case for all such 𝒫. No post-2024 paper addressing the complete (c,t)-sparse generalization has been found.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Fox Nenadov Pham \"hereditary property\" \"sparse graph\" \"ex(Gamma\" 2405.05902 arxiv",
+    "hereditary property bipartite \"c,t-sparse\" Turan random graph Alon Krivelevich Samotij arxiv 2024 2025"
+  ],
+  "notes": "The contemporaneous paper arXiv:2405.09486 (Clifton, Liu, Mattos, Zheng, May 2024) independently resolves the G(n,p) special case of Problem 1.1 (Theorem 1.1: for every non-trivial hereditary property 𝒫 missing some bipartite L and every fixed p∈(0,1), ex(G(n,p),𝒫) ≤ n^{2−ε} w.h.p.). The acknowledgements of that paper note that Fox, Nenadov and Pham obtained a similar result independently. Because 2405.09486 is from the same year (2024) as the source paper, it is not listed in since_posted. The full (c,t)-sparse problem (non-random-graph hosts) remains open. The source paper was published in Combinatorica 45(6), 2025."
+}

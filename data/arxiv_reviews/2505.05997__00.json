@@ -1,0 +1,22 @@
+{
+  "review_id": "2505.05997__00",
+  "safe_id": "2505.05997",
+  "arxiv_id": "2505.05997",
+  "conjecture_title": "Open Problem: polytime $f(\\mathrm{OPT})$-approximation for largest complete minor",
+  "paper_title": "A Polynomial-Time Approximation Algorithm for Complete Interval Minors",
+  "published": "2025-05-09",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The best known polynomial-time approximation for the size of a largest complete minor remains O(\\sqrt{n}), due to Alon, Lingas, and Wahlén, with no PTAS unless P=NP (Wahlén). The source paper (arXiv:2505.05997, APPROX-RANDOM 2025) resolves the analogous question for complete interval minors in ordered graphs via a polytime f(t)-approximation (f triply exponential), but the open problem for general complete minors is explicitly cited as unresolved motivation. No follow-up paper resolving the f(OPT)-approximation question for general complete minors was found in the indexed literature.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "largest complete minor approximation algorithm polynomial time arXiv 2505.05997",
+    "complete minor size approximation FPT f(OPT) graph theory 2025 2026",
+    "Alon Lingas Wahlén complete minor approximation sqrt(n) inapproximability PTAS NP-hard"
+  ],
+  "notes": "Paper published at APPROX-RANDOM 2025 (LIPIcs vol. 353, article 15). The conjecture is very recent (May 2025); absence of follow-up in web search is consistent with open status. The O(\\sqrt{n}) upper bound and no-PTAS lower bound are confirmed from the abstract and search results, but no paper closing the f(OPT)-approximation gap was found."
+}

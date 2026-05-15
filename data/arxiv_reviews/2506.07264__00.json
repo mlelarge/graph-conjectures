@@ -1,0 +1,24 @@
+{
+  "review_id": "2506.07264__00",
+  "safe_id": "2506.07264",
+  "arxiv_id": "2506.07264",
+  "conjecture_title": "Conjecture 1.2",
+  "paper_title": "Refinement of a conjecture on positive square energy of graphs",
+  "published": "2025-06-08",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 1.2 was proposed in the source paper (arXiv:2506.07264) alongside partial results: the conjecture is proved within that paper for claw-free graphs and for graphs with diameter 2, and verified computationally for all connected graphs up to 9 vertices and all graphs in the Mathematica database with n≤100 and m≥n+1. No external follow-up paper resolving the full conjecture for all connected graphs of order n and size m≥n+1 was found in the indexed literature.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "arXiv 2506.07264 positive square energy graphs Akbari Mohar Pragada Zhang conjecture",
+    "\"positive square energy\" graphs \"s+(G)\" connected conjecture 2025 2026",
+    "arxiv.org/abs/2506.07264 abstract fetch",
+    "arxiv.org/abs/2604.15656 positive negative 3-energies graphs",
+    "arxiv.org/html/2604.15656 Conjecture 1.2 s+(G) reference check"
+  ],
+  "notes": "The source paper (2506.07264) itself provides partial results: the conjecture s+(G)≥n (for connected graphs with m≥n+1) is proved for claw-free graphs and graphs with diameter 2. A related April 2026 paper on positive 3-energies (arXiv:2604.15656) cites Akbari, Kumar, Mohar, Pragada but does not reference 2506.07264 and does not address Conjecture 1.2 specifically. The conjecture is recent (≈11 months old) and no full resolution has been found."
+}

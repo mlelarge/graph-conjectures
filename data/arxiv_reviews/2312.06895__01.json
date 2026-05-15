@@ -1,0 +1,23 @@
+{
+  "review_id": "2312.06895__01",
+  "safe_id": "2312.06895",
+  "arxiv_id": "2312.06895",
+  "conjecture_title": "q-color generalization of Conjecture 1.2",
+  "paper_title": "Triangle Ramsey numbers of complete graphs",
+  "published": "2025-10-01",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The q-color generalization of Conjecture 1.2 from Fox–Tidor–Zhang (arXiv:2312.06895, published JCTB 176, 2026, pp. 268–286) concerns the q-color analogue of the F-Ramsey number identity $r_{K_3}(K_t) = \\binom{r(K_t)}{3}$ for all t. The paper proves the q-color generalizations of its three main theorems (1.1, 1.3, 1.4) by the same arguments, but leaves the q-color analogue of Conjecture 1.2 explicitly open. No follow-up paper resolving this conjecture was found in a wide literature search as of May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Fox Tidor Zhang 'triangle Ramsey' 'complete graphs' conjecture multicolor 2312.06895",
+    "triangle Ramsey numbers complete graphs q-color generalization Ramsey multiplicity 2025 2026",
+    "Fox Tidor Zhang 2312.06895 q-color conjecture r_F K_3 K_t follow-up 2025 2026",
+    "site:arxiv.org 'triangle Ramsey' 'q-color' 'multicolor' 'complete graphs' Fox Tidor Zhang conjecture 2024 2025 2026"
+  ],
+  "notes": "No follow-up found. The paper was published in Journal of Combinatorial Theory Series B 176 (2026) pp. 268–286. Conjecture 1.2 (two-color version) concerns the formula $r_{K_3}(K_t) = \\binom{r(K_t)}{3}$ for all t (not just sufficiently large t); the q-color generalization conjectures the analogous identity for q-color F-Ramsey numbers $r_{K_3}^{(q)}(K_t)$. The q-color versions of the proved theorems follow by the same proofs; only the conjecture (requiring a different argument for all t) remains open."
+}

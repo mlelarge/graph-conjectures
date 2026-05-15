@@ -1,0 +1,44 @@
+{
+  "review_id": "2212.05133__00",
+  "safe_id": "2212.05133",
+  "arxiv_id": "2212.05133",
+  "conjecture_title": "Conjecture on the asymptotic of n(2,d)",
+  "paper_title": "New bounds on the maximum number of neighborly boxes in R^d",
+  "published": "2023-03-03",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "medium",
+  "summary": "The conjecture that $\\lim_{d\\to\\infty} n(2,d)/d^2 = 1/2$ remains open. A 2024 follow-up by Grytczuk, Kisielewicz, and Przesławski (arXiv:2402.02199) gives new recursive constructions of 2-neighborly families improving the lower bound on $n(2,d)$, and poses an explicit conjectured formula for $n(2,d)$ based on their construction being optimal — this is partial progress but does not resolve the asymptotic limit. A 2025 paper (arXiv:2508.20648) on 'strings with jokers' addresses the regime $k$ close to $d$ (proving $n(d-s,d) \\sim \\frac{2^s+1}{2^{s+1}} \\cdot 2^d$) but does not directly resolve the $k=2$ question.",
+  "since_posted": [
+    {
+      "title": "Neighborly boxes and bipartite coverings; constructions and conjectures",
+      "authors": "Jarosław Grytczuk, Andrzej P. Kisielewicz, Krzysztof Przesławski",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2402.02199",
+      "arxiv_id": "2402.02199",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Provides improved lower bounds on n(2,d) via a new recursive construction using 'algebra on ternary strings', conjectures that this construction is optimal and yields an explicit formula for n(2,d), but does not prove the asymptotic limit 1/2."
+    },
+    {
+      "title": "Neighborly boxes and strings with jokers; constructions and asymptotics",
+      "authors": "authors not fully retrieved",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2508.20648",
+      "arxiv_id": "2508.20648",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves n(d-s,d) ~ (2^s+1)/(2^(s+1)) * 2^d for fixed s, improving lower bounds when k is close to d; does not directly address the k=2 asymptotic conjecture."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "neighborly boxes n(2,d) asymptotic d^2 Alon Grytczuk Kisielewicz Przesławski",
+    "arxiv 2212.05133 neighborly boxes maximum number follow-up"
+  ],
+  "notes": "The conjecture from arXiv:2212.05133 that lim n(2,d)/d^2 = 1/2 is still open as of 2026. The follow-up arXiv:2402.02199 improves the lower bound and poses a more explicit conjecture about n(2,d), but does not settle the asymptotic constant. The 2025 paper arXiv:2508.20648 targets a different parameter regime (k near d). Full text of 2402.02199 was not retrievable (HTML 404), so the precise relationship between its conjecture and the 1/2 limit could not be verified; confidence is medium."
+}

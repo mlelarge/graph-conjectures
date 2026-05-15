@@ -1,0 +1,34 @@
+{
+  "review_id": "2301.13305__04",
+  "safe_id": "2301.13305",
+  "arxiv_id": "2301.13305",
+  "conjecture_title": "Open problem: minimum edge-coloring with odd intersection property",
+  "paper_title": "Graph-codes",
+  "published": "2023-02-06",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Bennett, Heath, and Zerbib (arXiv:2307.01314, July 2023) directly study the quantity g(G,H) — the minimum number of colors to edge-color G so that every copy of H has an odd color class — introduced as a tool for bounding graph-codes. They establish g(K_n, K_5) ≤ n^{o(1)} and g(K_{n,n}, C_4) = n/2 + o(n), providing the first non-trivial estimates for specific choices of H. The general problem for arbitrary H remains open, and subsequent 2025 papers continue developing the odd-Ramsey framework.",
+  "since_posted": [
+    {
+      "title": "Edge-coloring a graph $G$ so that every copy of a graph $H$ has an odd color class",
+      "authors": "Patrick Bennett, Emily Heath, Shira Zerbib",
+      "year": 2023,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2307.01314",
+      "arxiv_id": "2307.01314",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Defines g(G,H) as the minimum number of colors to edge-color G so every copy of H has an odd color class, and proves g(K_n, K_5) ≤ n^{o(1)} and g(K_{n,n}, C_4) = n/2 + o(n), giving the first estimates for specific graphs H."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Alon \"graph-codes\" edge coloring odd intersection K_n arXiv 2301.13305",
+    "edge coloring complete graph \"odd number of edges\" color class Ramsey 2023 2024",
+    "\"odd Ramsey\" \"edge coloring\" \"graph H\" \"K_n\" 2024 2025 Bennett Heath Zerbib"
+  ],
+  "notes": "The follow-up paper arXiv:2307.01314 formalises the open problem under the name g(G,H) and solves it for G=K_n with H=K_5 and G=K_{n,n} with H=C_4, but the general problem for arbitrary H in K_n is still open. Search results also surfaced several 2025 papers on odd Ramsey numbers (arXiv:2507.19456, arXiv:2511.10497, arXiv:2605.07322) that extend this line of work further, but those were not individually verified via WebFetch within the 5-call cap."
+}

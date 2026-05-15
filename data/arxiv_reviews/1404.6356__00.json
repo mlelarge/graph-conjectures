@@ -1,0 +1,34 @@
+{
+  "review_id": "1404.6356__00",
+  "safe_id": "1404.6356",
+  "arxiv_id": "1404.6356",
+  "conjecture_title": "4-colorability on Fixed Surfaces (Open Step in Thomassen's Program)",
+  "paper_title": "Three-coloring triangle-free graphs on surfaces IV. Bounding face sizes of 4-critical graphs",
+  "published": "2020-08-04",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The question of whether 4-colorability of graphs embedded in a fixed surface can be tested in polynomial time remains open as of May 2026. Dvořák, Král, and Thomas identify this as the sole remaining open step in Thomassen's polynomial-time colorability program, having resolved the 3-coloring case for triangle-free graphs on surfaces. No polynomial-time algorithm for deciding 4-colorability on fixed surfaces in general has been established; recent work by Briański, Kráľ, Lamaison, and Shu (2024) makes structural progress on 4-colorability of Eulerian triangulations of the torus but does not address the algorithmic question.",
+  "since_posted": [
+    {
+      "title": "Four-coloring Eulerian triangulations of the torus",
+      "authors": "Briański, M., Kráľ, D., Lamaison, A., Shu, X.",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2409.19165",
+      "arxiv_id": "2409.19165",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves every Eulerian triangulation of the torus with representativity at least 10 is 4-colorable (and shows the bound is nearly tight), a structural result for a restricted class on a fixed surface that does not resolve the polynomial-time algorithmic question."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "4-colorability graphs fixed surface polynomial time Thomassen program Dvorak Kral Thomas",
+    "arXiv 1404.6356 Dvorak Kral Thomas 4-coloring surface cite follow-up",
+    "4-colorability graphs surface polynomial time algorithm open problem 2022 2023 2024 2025"
+  ],
+  "notes": "No follow-up resolving the polynomial-time complexity of 4-colorability on fixed surfaces was found. The paper arXiv:2409.19165 (Briański–Kráľ–Lamaison–Shu, 2024) proves structural 4-colorability for Eulerian triangulations of the torus with representativity ≥ 10 but does not address the algorithmic complexity question. The authors themselves judged prospects for near-term resolution as 'not very bright'."
+}

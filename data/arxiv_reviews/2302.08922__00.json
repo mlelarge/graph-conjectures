@@ -1,0 +1,23 @@
+{
+  "review_id": "2302.08922__00",
+  "safe_id": "2302.08922",
+  "arxiv_id": "2302.08922",
+  "conjecture_title": "Polynomial bounds for path-induced copy theorem (1.2)",
+  "paper_title": "A note on the Gyárfás-Sumner conjecture",
+  "published": "2023-02-17",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The question asks whether the main result of arXiv:2302.08922 (Theorem 1.2, which shows graphs with clique number at most t and large enough chromatic number contain a path-induced copy of any rooted tree (T,r)) can be strengthened to give a polynomial bound on the chromatic number. No follow-up resolving this question was found in the literature. Related work has made progress on polynomial chi-boundedness for specific induced-subgraph-free classes (P5-free graphs, box-intersection graphs), but the particular path-induced variant with bounded clique number remains unresolved.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "path-induced copy rooted tree chromatic number polynomial bound clique number graph theory",
+    "Nguyen Scott Seymour \"path-induced\" \"rooted tree\" chromatic number 2302.08922",
+    "\"Gyarfas-Sumner\" \"path-induced\" polynomial chromatic number rooted tree 2024 2025",
+    "Nguyen Scott Seymour polynomial bound chromatic number path-induced induced tree bounded clique 2024 2025 arXiv"
+  ],
+  "notes": "The concept of path-induced copy was introduced in arXiv:2302.08922 itself. Theorem 1.2 gives a (non-polynomial) chi-bound for graphs excluding a path-induced copy of (T,r) with clique number at most t. The question is whether the bound can be made polynomial in t. Closely related active research includes polynomial Gyarfas-Sumner for P5-free graphs (arXiv:2512.24907) and for box-intersection graphs (arXiv:2407.16882), but neither addresses the path-induced variant. No follow-up directly resolving this question was found after four targeted searches."
+}

@@ -1,0 +1,44 @@
+{
+  "review_id": "1710.11281__05",
+  "safe_id": "1710.11281",
+  "arxiv_id": "1710.11281",
+  "conjecture_title": "Question (Riemannian surfaces): constant curvature surfaces",
+  "paper_title": "Notes on Cops and Robber game on graphs",
+  "published": "2017-10-31",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Mohar's question asks whether constant-curvature surfaces (spherical, Euclidean, hyperbolic) admit a simpler Cops and Robber game than general Riemannian surfaces. The 2024 paper arXiv:2402.05753 by Iršič, Mohar, and Wesolek gives a strong affirmative answer for the hyperbolic case: two cops suffice on any hyperbolic surface regardless of genus. By contrast, the cop number of general compact geodesic surfaces grows as O(g) with genus (arXiv:2205.11633). Constant negative curvature is thus confirmed to impose a dramatic simplification; the spherical and Euclidean cases remain less explicitly treated in the literature.",
+  "since_posted": [
+    {
+      "title": "Cops and Robber on Hyperbolic Manifolds",
+      "authors": "Iršič, Mohar, Wesolek",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2402.05753",
+      "arxiv_id": "2402.05753",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves that two cops suffice on any hyperbolic surface of any genus, contrasting with the O(g) general bound, thereby affirmatively answering that constant negative curvature surfaces are significantly simpler for the Cops and Robber game."
+    },
+    {
+      "title": "The game of Cops and Robber on geodesic spaces",
+      "authors": "unknown (published in Canadian Journal of Mathematics)",
+      "year": 2022,
+      "venue": "Canadian Journal of Mathematics",
+      "url": "https://arxiv.org/abs/2205.11633",
+      "arxiv_id": "2205.11633",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Establishes cop-number bounds c = O(g) and c = Ω(√g) for general compact geodesic surfaces, and c = 3 for low-genus cases, providing the baseline against which constant-curvature simplicity is measured."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Cops Robber game Riemannian surfaces constant curvature Mohar 1710.11281",
+    "continuous cops robbers Riemannian manifold hyperbolic spherical surface pursuit evasion"
+  ],
+  "notes": "The question is answered affirmatively for hyperbolic (constant negative curvature) surfaces by arXiv:2402.05753, co-authored by Mohar himself. Spherical surfaces (genus 0) and flat (Euclidean) surfaces (genus 1) also have small cop numbers by general topological theory, but are not the explicit focus of 2402.05753. The explicit citation of 1710.11281 in 2402.05753 could not be confirmed from the abstract excerpt alone."
+}

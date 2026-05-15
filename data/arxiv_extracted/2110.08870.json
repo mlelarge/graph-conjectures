@@ -1,0 +1,48 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Gallai's Conjecture",
+    "statement_text": "Every connected graph on $n$ vertices can be decomposed into $\\lceil \\frac{n}{2} \\rceil$ paths.",
+    "context_text": "In 1968, Gallai conjectured that the edges of any connected graph on $n$ vertices can be partitioned into $\\lceil n/2 \\rceil$ paths. The conjecture remains open in general and had previously been confirmed only for specific graph classes such as graphs with maximum degree at most 5, series-parallel graphs, planar 3-trees, and triangle-free planar graphs.",
+    "attributed_to": "Gallai",
+    "attributed_year": 1968,
+    "paper_contribution": "Proves Gallai's conjecture for the entire class of planar graphs (Theorem 1.1): every connected planar graph on $n$ vertices can be decomposed into $\\lceil n/2 \\rceil$ paths.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2110.08870",
+    "paper_title": "Gallai's path decomposition in planar graphs",
+    "paper_authors": [
+      "Alexandre Blanché",
+      "Marthe Bonamy",
+      "Nicolas Bonichon"
+    ],
+    "published": "2022-06-21",
+    "abs_url": "https://arxiv.org/abs/2110.08870",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Bonamy–Perrett Question 1.1",
+    "statement_text": "Does every connected graph on $n$ vertices that is not an odd semi-clique admit a $\\lfloor \\frac{n}{2} \\rfloor$-path decomposition?",
+    "context_text": "Bonamy and Perrett asked in 2016 whether one can always save one path in the decomposition when $n$ is odd, for graphs that are not odd semi-cliques. An odd semi-clique is a graph obtained from a clique on $2k+1$ vertices by deleting at most $k-1$ edges.",
+    "attributed_to": "Bonamy and Perrett",
+    "attributed_year": 2016,
+    "paper_contribution": "Answers the question positively for planar graphs (Theorem 1.2): every connected planar graph on $n$ vertices, except $K_3$ and $K_5^-$ (the only two planar odd semi-cliques), can be decomposed into $\\lfloor n/2 \\rfloor$ paths.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2110.08870",
+    "paper_title": "Gallai's path decomposition in planar graphs",
+    "paper_authors": [
+      "Alexandre Blanché",
+      "Marthe Bonamy",
+      "Nicolas Bonichon"
+    ],
+    "published": "2022-06-21",
+    "abs_url": "https://arxiv.org/abs/2110.08870",
+    "source": "pdf"
+  }
+]

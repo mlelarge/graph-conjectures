@@ -1,0 +1,86 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.1 (Friedgut, Kalai and Kindler)",
+    "statement_text": "For every $\\alpha \\in (0, 1/2)$ there exists $k$ and $\\tau > 0$ such that if $G$ is a graph on $n$ vertices with maximum independent set of size $\\alpha n$, then there exist pairwise disjoint subsets of vertices $A_1, A_2, \\ldots, A_r$ in $G$ such that (1) $|A_i| = k$ for all $i$, (2) $|\\bigcup_{i=1}^r A_i| \\geq \\tau n$, (3) every maximum independent set in $G$ intersects every set $A_i$.",
+    "context_text": "This is Conjecture 3.1 of Friedgut, Kalai and Kindler (2021), motivated by questions about Hamming powers of Kneser graphs. The paper shows it is false for every fixed $\\alpha \\in (0, 1/2)$ even if requirement (2) is omitted, via an explicit infinite family of graphs; on the other hand, the assertion does hold for any $\\alpha > 1/2$ by an old result of Hajnal.",
+    "attributed_to": "Friedgut, Kalai and Kindler",
+    "attributed_year": 2021,
+    "paper_contribution": "Disproves the conjecture for every fixed $\\alpha \\in (0,1/2)$: constructs an infinite family of graphs $G_n$ with $n$ vertices, independence number at least $n/4$, and no set of fewer than $\\sqrt{n}/2$ vertices intersecting all maximum independent sets.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2103.05998",
+    "paper_title": "Hitting all maximum independent sets",
+    "paper_authors": [
+      "Noga Alon"
+    ],
+    "published": "2021-04-04",
+    "abs_url": "https://arxiv.org/abs/2103.05998",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.2 (Bollobás, Erdős and Tuza)",
+    "statement_text": "For any positive $\\alpha$, if the size $\\alpha(G)$ of a maximum independent set in an $n$-vertex graph $G$ is at least $\\alpha n$, then $h(G) = o(n)$.",
+    "context_text": "Raised by Bollobás, Erdős and Tuza (see [7] p. 224 or [5] p. 52), where $h(G)$ is the minimum cardinality of a vertex set intersecting every maximum independent set of $G$. The conjecture remains open for $n$-vertex graphs with independence number at most $n/2$ and for regular graphs with independence number at most $n/4$, and is noted to be significantly harder for graphs with independence number $\\beta n$ when $\\beta$ is a small positive constant.",
+    "attributed_to": "Bollobás, Erdős and Tuza",
+    "attributed_year": 1994,
+    "paper_contribution": "The constructions of Theorems 1.3 and 1.4 show $h(G)$ can be $\\Theta(\\sqrt{n})$ and $\\Theta(t^2)$ respectively while $\\alpha(G) > n/4$, consistent with the conjecture; the conjecture itself remains open in the stated ranges.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Originally formulated for cliques; the paper uses the equivalent independent-set formulation via complementation.",
+    "arxiv_id": "2103.05998",
+    "paper_title": "Hitting all maximum independent sets",
+    "paper_authors": [
+      "Noga Alon"
+    ],
+    "published": "2021-04-04",
+    "abs_url": "https://arxiv.org/abs/2103.05998",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.6 (Friedgut, Kalai and Kindler)",
+    "statement_text": "For any $\\alpha \\in (0, 1/2)$ there is an $\\varepsilon = \\varepsilon(\\alpha) > 0$ so that for every graph $G$ with $n$ vertices and independence number $\\alpha n$, $\\alpha'(G) \\leq \\alpha - \\varepsilon(\\alpha)$.",
+    "context_text": "This is Conjecture 2.9 of Friedgut, Kalai and Kindler (2021), where $\\alpha'(G)$ denotes the expected independence number of the induced subgraph of $G$ on a uniform random subset of vertices, divided by $n$. It remains open for $n$-vertex graphs with independence number at most $n/4$ and for regular graphs with independence number at most $n/8$, and is noted to be significantly harder for small $\\alpha$.",
+    "attributed_to": "Friedgut, Kalai and Kindler",
+    "attributed_year": 2021,
+    "paper_contribution": "Proves the conjecture for all $\\alpha > 1/4$: if $\\alpha(G) = (1/4+\\varepsilon)n$ then $\\alpha'(G) \\leq 1/4 + \\varepsilon - \\varepsilon^2/3$; also proves it for regular graphs whenever $\\alpha > 1/8$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2103.05998",
+    "paper_title": "Hitting all maximum independent sets",
+    "paper_authors": [
+      "Noga Alon"
+    ],
+    "published": "2021-04-04",
+    "abs_url": "https://arxiv.org/abs/2103.05998",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Informal Conjecture on Chromatic Number of $G_{m,t}$",
+    "statement_text": "The chromatic number of the graph $G_{m,t}$ described in the proof of Theorem 1.4, where $4t^2 \\leq m$, is $\\Theta(t^2)$.",
+    "context_text": "Alon states this as a conjecture he raised more than ten years ago, motivated by results in [2] (Alon, Hassidim, Lubetzky, Stav and Weinstein, FOCS 2008) and mentioned in several lectures. The paper establishes that the chromatic number is at least $2t$ and at most $O(t^2)$, leaving the exact order unresolved.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated informally in the Remarks section (Section 3) without a labelled theorem environment; attributed to the author himself from more than ten years prior but cited only via lectures, not a prior publication.",
+    "arxiv_id": "2103.05998",
+    "paper_title": "Hitting all maximum independent sets",
+    "paper_authors": [
+      "Noga Alon"
+    ],
+    "published": "2021-04-04",
+    "abs_url": "https://arxiv.org/abs/2103.05998",
+    "source": "pdf"
+  }
+]

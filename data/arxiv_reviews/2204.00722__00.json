@@ -1,0 +1,33 @@
+{
+  "review_id": "2204.00722__00",
+  "safe_id": "2204.00722",
+  "arxiv_id": "2204.00722",
+  "conjecture_title": "Open Question (unit segment graphs delineation)",
+  "paper_title": "Twin-width VIII: delineation and win-wins",
+  "published": "2022-04-01",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "medium",
+  "summary": "The open question of whether unit segment graphs are delineated (by twin-width) remains unresolved for the general class, but significant partial progress has been made. Geniet, Kim, and Meijer (arXiv:2512.21896, 2025) prove that delineation holds for intersection graphs of non-degenerate axis-parallel unit segment graphs, while also showing that delineation fails for visibility graphs of 1.5D terrains; additionally the paper's body discusses non-delineation for more general unit segment variants (degenerate axis-parallel and arbitrary-slope unit segments). The non-degenerate axis-parallel subcase is thus settled positively, but the status of the full class of unit segment graphs — as posed in arXiv:2204.00722 — remains unresolved or at best partially answered negatively for broader subclasses.",
+  "since_posted": [
+    {
+      "title": "First-Order Logic and Twin-Width for Some Geometric Graphs",
+      "authors": "Colin Geniet, Gunwoo Kim, Lucas Meijer",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2512.21896",
+      "arxiv_id": "2512.21896",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves that delineation holds for non-degenerate axis-parallel unit segment graphs, and that delineation fails for visibility graphs of 1.5D terrains; the paper also establishes non-delineation for degenerate axis-parallel and arbitrary-slope unit segment variants, leaving the general unit segment graph question in a nuanced state."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "unit segment graphs twin-width delineated Bonnet 2204.00722",
+    "twin-width delineation unit segment graphs bounded unbounded 2022 2023 2024"
+  ],
+  "notes": "The 2025 paper arXiv:2512.21896 makes the most direct progress on this question: it settles the non-degenerate axis-parallel case positively (delineated) but the body of the paper reportedly shows non-delineation for general/degenerate unit segment graphs. Bonnet's open problems page (perso.ens-lyon.fr/edouard.bonnet/openQuestions.html) still lists the question as open. Confidence is medium because the full-paper content was accessed via HTML rendering which may not capture all nuance; the abstract clearly establishes only the positive partial result for non-degenerate axis-parallel unit segment graphs."
+}

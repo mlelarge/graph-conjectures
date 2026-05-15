@@ -1,0 +1,34 @@
+{
+  "review_id": "2503.05562__01",
+  "safe_id": "2503.05562",
+  "arxiv_id": "2503.05562",
+  "conjecture_title": "Question 9.1",
+  "paper_title": "On graph classes with constant domination-packing ratio",
+  "published": "2025-03-07",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The full characterization of graph classes with bounded domination-packing ratio γ(G)/ρ(G) remains open. A follow-up paper (arXiv:2602.18402, Dúcz–Gujgiczer 2026) extends the list of classes with bounded ratio to chordal bipartite graphs and homogeneously orderable graphs (both with constant 2), and improves the planar bound from 10 to 7, but does not provide a characterization. The question of whether any structural characterization exists — especially in light of the 2-degenerate result ruling out purely sparse characterizations — is still unresolved.",
+  "since_posted": [
+    {
+      "title": "Domination and packing in graphs",
+      "authors": "Ákos Dúcz, Anna Gujgiczer",
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2602.18402",
+      "arxiv_id": "2602.18402",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves γ(G) ≤ 7ρ(G) for planar graphs (improving the prior bound of 10) and establishes γ(G) ≤ 2ρ(G) for chordal bipartite and homogeneously orderable graphs, extending the list of classes with bounded ratio but not providing the requested characterization."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "domination packing ratio graph classes bounded constant 2503.05562",
+    "domination number packing number ratio bounded graph classes characterization 2025 2026",
+    "Bonamy Dvorak characterization sparse monotone graph classes domination packing ratio 2026"
+  ],
+  "notes": "arXiv:2602.18402 is co-authored by Gujgiczer, one of the original authors, and explicitly cites [BCG+25] (the source paper). It contributes new cases but leaves the characterization question open."
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.7 (Neumann Lara)",
+    "statement_text": "Every oriented planar graph is 2-dicolourable.",
+    "context_text": "Neumann Lara introduced the dichromatic number in 1982 and proposed this conjecture as an analogue of Grötzsch's Theorem for directed graphs. The conjecture has been verified for planar oriented graphs on at most 26 vertices and holds for planar digraphs of digirth at least 4.",
+    "attributed_to": "Neumann Lara",
+    "attributed_year": 1982,
+    "paper_contribution": "The paper proves (Theorem 3.15) that if Conjecture 1.7 is false then S0-ORIENTED-2-DICOLOURABILITY is NP-complete, and notes that deciding whether a planar oriented graph is 2-dicolourable is NP-complete unless the conjecture holds.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2102.01034",
+    "paper_title": "On the dichromatic number of surfaces",
+    "paper_authors": [
+      "Pierre Aboulker",
+      "Frédéric Havet",
+      "Kolja Knauer",
+      "Clément Rambaud"
+    ],
+    "published": "2021-11-16",
+    "abs_url": "https://arxiv.org/abs/2102.01034",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Problem 4.4",
+    "statement_text": "What is the complexity of $\\Sigma$-$k$-\\textsc{Dicolourability} for $k \\in \\{4, 5\\}$ and $\\Sigma$ different from the sphere?",
+    "context_text": "The paper establishes that Σ-2-DICOLOURABILITY is NP-complete for any surface, and that Σ-k-DICOLOURABILITY is polynomial-time solvable for any surface Σ and any integer k ≥ 6. The complexity for k ∈ {4, 5} on surfaces other than the sphere is explicitly left open.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Problem 4.4 is referenced in the introduction but the full text of Section 4 was not present in the PDF extraction; the statement is inferred from the surrounding context.",
+    "arxiv_id": "2102.01034",
+    "paper_title": "On the dichromatic number of surfaces",
+    "paper_authors": [
+      "Pierre Aboulker",
+      "Frédéric Havet",
+      "Kolja Knauer",
+      "Clément Rambaud"
+    ],
+    "published": "2021-11-16",
+    "abs_url": "https://arxiv.org/abs/2102.01034",
+    "source": "pdf"
+  }
+]

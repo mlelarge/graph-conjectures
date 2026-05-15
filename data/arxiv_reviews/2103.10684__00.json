@@ -1,0 +1,24 @@
+{
+  "review_id": "2103.10684__00",
+  "safe_id": "2103.10684",
+  "arxiv_id": "2103.10684",
+  "conjecture_title": "Question 1.6",
+  "paper_title": "On a recolouring version of Hadwiger's conjecture",
+  "published": "2025-03-13",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The paper establishes $\\frac{1}{2} \\leq c \\leq \\frac{2}{3}$: the lower bound $c \\geq \\frac{1}{2}$ is trivial (a quasi-$K_{2t}$-minor-free graph admits a $K_t$-minor), while the upper bound $c \\leq \\frac{2}{3}$ is witnessed by the paper's explicit construction that disproves Conjecture 1.4 (yielding a graph with a quasi-$K_t$-minor but no $K_{(\\frac{2}{3}+\\varepsilon)t}$-minor for large $t$). No follow-up work narrowing these bounds or resolving the exact value of $c$ was found in the indexed literature.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "quasi-K_t-minor Hadwiger recolouring infimum Bonamy Heinrich Legrand-Duchesne Narboni 2103.10684",
+    "quasi-Kt-minor graph no K_ct-minor infimum graph theory 2025 2026",
+    "quasi-minor Hadwiger conjecture recolouring Kempe frozen coloring arXiv 2024 2025 2026 follow-up",
+    "\"quasi-K_t-minor\" OR \"quasi-minor\" infimum graph Hadwiger 2025 2026 arxiv",
+    "Bonamy Narboni quasi-minor infimum frozen Kempe coloring 2025 2026 bounds improvement"
+  ],
+  "notes": "No follow-up paper specifically addressing Question 1.6 was found. The arXiv preprint was first posted in March 2021 (revised March 2025) and published in J. Combin. Theory Ser. B 164 (2024), 364–370. The question remains open with the gap $\\frac{1}{2} \\leq c \\leq \\frac{2}{3}$."
+}

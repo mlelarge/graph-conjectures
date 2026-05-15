@@ -1,0 +1,35 @@
+{
+  "review_id": "2210.12754__00",
+  "safe_id": "2210.12754",
+  "arxiv_id": "2210.12754",
+  "conjecture_title": "Open Problem (characterizing edge probabilities for Theorem 1.1)",
+  "paper_title": "Largest subgraph from a hereditary property in a random graph",
+  "published": "2022-10-23",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "The source paper proves Theorem 1.1 for fixed p ∈ (0,1) and for p = p(n) satisfying n^{−c} ≤ p ≤ 1−n^{−c}, but the full characterization of all p = p(n) for which the conclusion holds remains open. A 2024 follow-up (arXiv:2405.09486) explicitly addresses a question of Alon, Krivelevich and Samotij in the hereditary setting but still restricts its main results to fixed p ∈ (0,1), leaving the variable-probability regime unresolved.",
+  "since_posted": [
+    {
+      "title": "Subgraphs of random graphs in hereditary families",
+      "authors": "not verified from abstract",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2405.09486",
+      "arxiv_id": "2405.09486",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Explicitly addresses a question of Alon, Krivelevich and Samotij about subgraphs in hereditary families, but its stated results remain in the regime of fixed p ∈ (0,1) rather than characterizing all p = p(n)."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Alon Krivelevich Samotij largest subgraph hereditary property random graph 2022",
+    "arxiv 2210.12754 hereditary property random graph edge probability characterize",
+    "Alon Krivelevich Samotij hereditary property G(n,p) chromatic number subgraph follow-up 2023 2024 2025",
+    "largest subgraph without forbidden induced subgraph Combinatorica 2025 arxiv hereditary random graph p(n)"
+  ],
+  "notes": "No paper found that resolves the full characterization of all p = p(n). arXiv:2405.09486 (2024) is the closest follow-up, explicitly citing the question of Alon-Krivelevich-Samotij, but its results are for fixed p. A related paper arXiv:2405.05902 (Fox, Nenadov, Pham; Combinatorica 2025, 'The Largest Subgraph Without A Forbidden Induced Subgraph') generalizes the framework to pseudorandom/quasirandom host graphs, but it was found via search only and not fully verified via WebFetch so is excluded from since_posted. The conjecture is open with medium confidence because active follow-up work exists but the specific p = p(n) characterization problem appears unaddressed."
+}

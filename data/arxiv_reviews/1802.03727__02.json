@@ -1,0 +1,44 @@
+{
+  "review_id": "1802.03727__02",
+  "safe_id": "1802.03727",
+  "arxiv_id": "1802.03727",
+  "conjecture_title": "Conjecture 1.5",
+  "paper_title": "Separation choosability and dense bipartite induced subgraphs",
+  "published": "2018-12-04",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "solved",
+  "confidence": "high",
+  "summary": "Conjecture 1.5 from arXiv:1802.03727 was first approached by Kwan, Letzter, Sudakov, and Tran (arXiv:1810.12144), who proved that any K_t-free graph with minimum degree d contains an induced bipartite subgraph of minimum degree at least c_t log d / log log d—nearly but not fully resolving the conjecture. The conjecture was then fully resolved by Martinsson (arXiv:2501.18238), who proved Harris' conjecture that triangle-free d-degenerate graphs have fractional chromatic number at most (4+o(1))d/ln d; the C log d bipartite induced subgraph bound follows as a direct consequence via the standard argument that low fractional chromatic number forces a bipartite induced subgraph of high minimum degree.",
+  "since_posted": [
+    {
+      "title": "Dense induced bipartite subgraphs in triangle-free graphs",
+      "authors": "Matthew Kwan, Shoham Letzter, Benny Sudakov, Tuan Tran",
+      "year": 2019,
+      "venue": "Combinatorica",
+      "url": "https://arxiv.org/abs/1810.12144",
+      "arxiv_id": "1810.12144",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves that any K_t-free graph with minimum degree d contains an induced bipartite subgraph of minimum degree at least c_t log d / log log d, nearly but not fully resolving Conjecture 1.5."
+    },
+    {
+      "title": "Triangle-free d-degenerate graphs have small fractional chromatic number",
+      "authors": "Anders Martinsson",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2501.18238",
+      "arxiv_id": "2501.18238",
+      "doi": null,
+      "kind": "proof",
+      "claim": "Proves Harris' conjecture (triangle-free d-degenerate graphs have fractional chromatic number at most (4+o(1))d/ln d), from which Conjecture 1.5 of Esperet, Kang, and Thomassé follows as a direct consequence according to the abstract."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "triangle-free graph bipartite induced subgraph minimum degree logarithm Esperet Kang Thomassé 1802.03727",
+    "triangle-free graph bipartite induced subgraph \"log d\" minimum degree conjecture arxiv"
+  ],
+  "notes": "The conjecture is resolved: Martinsson 2025 (arXiv:2501.18238) explicitly states Conjecture 1.5 follows from his proof of Harris' conjecture. The standard argument is that χ_f(G) ≤ (4+o(1))d/ln d and minimum degree d implies a bipartite induced subgraph of minimum degree Ω(d / (d/ln d)) = Ω(ln d). The Kwan et al. (1810.12144) paper provides the key intermediate result achieving log d / log log d."
+}

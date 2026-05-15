@@ -1,0 +1,25 @@
+[
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Open Problem: Expansion vs. Corruption Detection",
+    "statement_text": "There is still a significant gap between the expansion properties that suffice for solving the detection problem (Theorem 1.4) and the conditions in Proposition 1.6 that are necessary for such a solution. It will be interesting to obtain tighter relations between expansion and corruption detection.",
+    "context_text": "Theorem 1.4 shows that strong spectral expansion (Ramanujan-type $(n,d,\\lambda)$-graphs with $\\lambda \\leq 2\\sqrt{d-1}$) suffices for identifying most truthful and corrupt vertices. Proposition 1.6 shows that if removing at most $\\epsilon n$ vertices splits the graph into components of size at most $\\epsilon n$, then no corruption detection is possible. The gap between these two regimes is noted by the authors as an open research direction.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "No labelled theorem environment; stated as a research direction at the end of Section 1.1. Section 4, where this is said to be 'further discussed', is not present in the extracted text (PDF extraction appears truncated).",
+    "arxiv_id": "1505.05637",
+    "paper_title": "Distributed Corruption Detection in Networks",
+    "paper_authors": [
+      "Noga Alon",
+      "Elchanan Mossel",
+      "Robin Pemantle"
+    ],
+    "published": "2020-03-12",
+    "abs_url": "https://arxiv.org/abs/1505.05637",
+    "source": "pdf"
+  }
+]

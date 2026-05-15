@@ -1,0 +1,23 @@
+{
+  "review_id": "2511.07601__01",
+  "safe_id": "2511.07601",
+  "arxiv_id": "2511.07601",
+  "conjecture_title": "Open question on Schnyder woods for general half-plane triangulations",
+  "paper_title": "Infinite Schnyder Woods",
+  "published": "2025-11-10",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The paper arXiv:2511.07601 proves existence and uniqueness of the maximal Schnyder wood for infinite triangulations with finite boundary and for the UIHPT, but leaves open whether Schnyder woods exist for all half-plane triangulations (infinite boundary). Uniqueness is established conditionally: whenever a maximal Schnyder wood of the half-plane exists it is unique. A wide web search covering arXiv, Semantic Scholar, and author publication lists found no follow-up paper addressing this open question in the six months since the paper appeared.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Schnyder woods half-plane triangulations infinite boundary existence 2025 2026",
+    "Addario-Berry Hogan Michel Scott \"Schnyder woods\" half-plane triangulations arXiv 2511.07601",
+    "Schnyder woods \"half-plane triangulation\" infinite boundary 2026",
+    "arXiv search: Schnyder woods half-plane triangulation"
+  ],
+  "notes": "No follow-up found. The conjecture is very recent (November 2025); absence of evidence of resolution is expected and reported with high confidence. The key distinction is between triangulations with finite boundary (handled in the paper) and true half-plane triangulations with infinite boundary (open)."
+}

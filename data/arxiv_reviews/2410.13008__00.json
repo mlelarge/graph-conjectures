@@ -1,0 +1,22 @@
+{
+  "review_id": "2410.13008__00",
+  "safe_id": "2410.13008",
+  "arxiv_id": "2410.13008",
+  "conjecture_title": "Conjecture 1.2",
+  "paper_title": "When all directed cycles have length three",
+  "published": "2025-02-09",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 1.2 asks whether a strongly 2-connected digraph drawn (with crossings) in an annulus so that every directed cycle has winding number one can always be redrawn without crossings while preserving that winding-number condition. The author explicitly states 'we cannot prove it.' No verified follow-up paper resolving or refuting the conjecture was found in the literature as of May 2026; a co-authored paper by Seymour, Berger, and Carter titled 'When all directed cycles have the same weight' is listed as forthcoming but does not appear to address this conjecture directly.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Seymour \"2410.13008\" digraph annulus winding number conjecture",
+    "Seymour \"strongly 2-connected digraph\" annulus \"winding number\" crossing-free 2025",
+    "Daniel Carter digraph annulus winding number counterexample Seymour conjecture"
+  ],
+  "notes": "The AI-generated summary from one search result claimed the conjecture was disproved by Daniel Carter, but direct WebFetch of the arXiv HTML (arxiv.org/html/2410.13008) found no mention of Carter and no counterexample — that claim is unverifiable and likely a hallucination. Seymour's publication page lists a forthcoming paper with Berger and Carter titled 'When all directed cycles have the same weight,' which is thematically related but distinct. No follow-up found after 5 web calls; status is open with high confidence given the conjecture is less than 2 years old."
+}

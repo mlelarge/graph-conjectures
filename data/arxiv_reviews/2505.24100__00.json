@@ -1,0 +1,22 @@
+{
+  "review_id": "2505.24100__00",
+  "safe_id": "2505.24100",
+  "arxiv_id": "2505.24100",
+  "conjecture_title": "Question 1.7",
+  "paper_title": "Halfway to induced saturation for even cycles",
+  "published": "2025-06-02",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Question 1.7 from arXiv:2505.24100 asks whether the edge-addition half of the induced saturation condition can be satisfied for even cycles $C_{2t-2}$ with $t \\geq 6$: specifically, whether there exists a graph $G$ that is $C_{2t-2}$-free but such that adding any non-edge creates an induced $C_{2t-2}$. The paper proves Theorem 1.6 (the edge-deletion half) and notes that small cases ($C_4, C_6, C_8, C_{10}$) have known induced-saturated graphs (icosahedron, Cartesian product of two 5-cycles, dodecahedron, and a 28-vertex computer-found graph), but the full edge-addition problem for $t \\geq 6$ ($C_{10}$ and beyond) remains wide open. No follow-up resolving this question was found in a wide literature search.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "induced saturation even cycles C_{2t} edge-addition arxiv 2025",
+    "induced saturation number even cycles Fan Hajebi Spirkl 2025",
+    "induced saturation C_{2t} graph H-free edge-addition induced subgraph C_{2t-2} 2025 arxiv"
+  ],
+  "notes": "Paper submitted May 30 / revised June 2, 2025. The conjecture is less than one year old; absence of follow-up in the indexed literature is expected and consistent with open status. The edge-deletion half (Theorem 1.6) is the main result of the source paper; the edge-addition half (Question 1.7) is explicitly left open. Known induced-saturated examples exist only for small even cycles (C_4 through C_10), and the paper states 'it remains wide open whether induced-saturated graphs exist for even cycles on 12 or more vertices.'"
+}

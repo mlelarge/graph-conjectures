@@ -1,0 +1,24 @@
+[
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Open problem: χ-bounded vs. polynomially χ-bounded",
+    "statement_text": "Is there a hereditary graph class that is $\\chi$-bounded but (provably) not polynomially $\\chi$-bounded?",
+    "context_text": "The authors remark that no hereditary graph class is currently known to be $\\chi$-bounded while provably failing to be polynomially $\\chi$-bounded, citing [Esp17]. This observation motivates the study of polynomial $\\chi$-boundedness and frames the paper's main contribution as evidence toward a positive answer for the class of graphs of bounded cliquewidth.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated as informal running prose in the introduction; citation [Esp17] (Esperet 2017, likely a survey) is appended, suggesting the observation may originate there. The paper text is truncated before Section 5, so any further explicitly labelled open problems or conjectures in later sections are not visible and could not be extracted.",
+    "arxiv_id": "1910.00697",
+    "paper_title": "Graphs of bounded cliquewidth are polynomially $χ$-bounded",
+    "paper_authors": [
+      "Marthe Bonamy",
+      "Michał Pilipczuk"
+    ],
+    "published": "2020-07-07",
+    "abs_url": "https://arxiv.org/abs/1910.00697",
+    "source": "pdf"
+  }
+]

@@ -1,0 +1,61 @@
+{
+  "review_id": "2108.02685__01",
+  "safe_id": "2108.02685",
+  "arxiv_id": "2108.02685",
+  "conjecture_title": "Conjecture 1.2",
+  "paper_title": "Irregular Subgraphs",
+  "published": "2021-08-06",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Conjecture 1.2 from arXiv:2108.02685 remains open in full generality. Fox, Luo, and Pham (2022) proved the asymptotic version for d-regular graphs when d = o(n/(log n)^{12}) via probabilistic methods. Ma and Xie (2024) obtained the first n-independent bound for d-regular graphs (within 2d^2 of the conjectured value) and proved the conjecture in strong form for d=3 regular graphs using deterministic local-adjustment techniques. Luzar, Przybylo, and Sotak (2024) independently resolved the cubic case exactly, showing deviation from n/4 is at most 1/2 (up to three exceptions). The exact bound for general graphs with minimum degree delta is still open.",
+  "since_posted": [
+    {
+      "title": "On random irregular subgraphs",
+      "authors": "Jacob Fox, Sammy Luo, Huy Tuan Pham",
+      "year": 2022,
+      "venue": "Random Structures & Algorithms",
+      "url": "https://arxiv.org/abs/2207.13651",
+      "arxiv_id": "2207.13651",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves the asymptotic version of the conjecture for d-regular graphs when d = o(n/(log n)^{12}): with high probability the irregular random subgraph satisfies m(H,k) = (1+o(1))n/(d+1) for all 0 <= k <= d."
+    },
+    {
+      "title": "Finding irregular subgraphs via local adjustments",
+      "authors": "Jie Ma, Shengjie Xie",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2406.05675",
+      "arxiv_id": "2406.05675",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Gives the first n-independent bound for d-regular graphs (vertex degree counts within 2d^2 of n/(d+1)) and proves the conjecture in strong form for cubic (d=3) regular graphs via deterministic local-adjustment methods."
+    },
+    {
+      "title": "Degree-balanced decompositions of cubic graphs",
+      "authors": "Borut Luzar, Jakub Przybylo, Roman Sotak",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2408.16121",
+      "arxiv_id": "2408.16121",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Resolves the Alon-Wei conjecture for cubic graphs, showing that every cubic graph on n vertices has a spanning subgraph where the number of vertices of each degree deviates from n/4 by at most 1/2, up to three exceptions."
+    }
+  ],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2207.13651",
+      "verified": true,
+      "note": "All four internal-ref entries are duplicates pointing to the same paper. Abstract confirms: Fox, Luo, Pham 2022, 'On random irregular subgraphs', proves asymptotic result for d = o(n/(log n)^{12}). Contribution descriptions in the corpus are accurate except the labelling of the asymptotic result as 'Conjecture 1.2' — in the source paper Conjecture 1.2 is the exact-bound generalisation to minimum degree delta, not its asymptotic relaxation."
+    }
+  ],
+  "search_queries": [
+    "irregular subgraphs spanning subgraph minimum degree n/(delta+1) Alon Wei conjecture 2108.02685",
+    "irregular subgraph conjecture spanning subgraph minimum degree n/(d+1) arXiv 2022 2023 2024"
+  ],
+  "notes": "The conjecture is closely related to Conjecture 1.1 (the regular-graph version). Most follow-up work addresses the regular case; the minimum-degree generalisation of Conjecture 1.2 has seen partial progress only through the special case d=3 and asymptotic results. No paper found that resolves the full conjecture for arbitrary minimum degree delta."
+}

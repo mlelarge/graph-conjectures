@@ -1,0 +1,22 @@
+{
+  "review_id": "2208.06858__00",
+  "safe_id": "2208.06858",
+  "arxiv_id": "2208.06858",
+  "conjecture_title": "Conjecture 2.1",
+  "paper_title": "The success probability in Levine's hat problem, and independent sets in graphs",
+  "published": "2023-08-21",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 2.1 from arXiv:2208.06858 asserts that $p_{\\mathrm{intersecting}}(t) \\to 0$ as $t \\to \\infty$, a strengthening of Levine's Conjecture 1.1 where winning strategies based on intersecting families (rather than dictatorships) are considered. The source paper proves strict monotone decrease of $p_{\\mathrm{dict}}(t)$ but leaves the intersecting version open. A 2025 Fourier-analytic follow-up by Heilman and Tamuz (arXiv:2503.09042) studies Levine's hat puzzle via Chang's lemma but focuses only on bounding the 2-player success probability and does not address Conjecture 2.1. No paper resolving the full conjecture was found.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Levine hat problem intersecting families success probability Alon Friedgut Kalai Kindler 2208.06858",
+    "p_intersecting tends zero hat problem conjecture intersecting families graph independent sets",
+    "Heilman Tamuz Fourier Levine hat problem intersecting conjecture 2024 2025"
+  ],
+  "notes": "No follow-up found that proves or disproves Conjecture 2.1. The related 2025 paper arXiv:2503.09042 (Heilman-Tamuz) is about Levine's hat puzzle but restricts to bounding the optimal 2-player success probability via Fourier/Chang's lemma; it does not address the intersecting-families setting. Conjecture 2.1 is strictly stronger than Levine's Conjecture 1.1, and both appear open as of the search date."
+}

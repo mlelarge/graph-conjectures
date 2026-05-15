@@ -1,0 +1,68 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Sokołowski's Conjecture (Polynomial Neighborhood Complexity of Planar Graphs)",
+    "statement_text": "There exists a constant $c$ such that $|\\{N^{r}[v]\\cap A\\mid v\\in V(G)\\}|=\\operatorname{\\mathcal{O}}(r^{c}|A|)$ for every planar graph $G$, every nonempty subset $A$ of vertices, and every nonnegative integer $r$.",
+    "context_text": "Sokołowski conjectured that the neighborhood complexity of planar graphs is polynomial, following his earlier result showing a bound of $\\operatorname{\\mathcal{O}}(r^{7}|A|^{3})$, which achieved polynomial dependence on $r$ at the cost of a cubic dependence on $|A|$. The general bound given by Reidl, Sánchez Villaamil and Stravopoulos is exponential, so a polynomial bound for specific classes would be a significant improvement.",
+    "attributed_to": "Sokołowski",
+    "attributed_year": 2021,
+    "paper_contribution": "Proves the conjecture in full: the neighborhood complexity of planar graphs is in $\\operatorname{\\mathcal{O}}(r^{4})$, and moreover the strictly stronger profile complexity of planar graphs (and all proper minor-closed classes) is also in $\\operatorname{\\mathcal{O}}(r^{4})$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Abstract cites the conjecture as 'Sokołowski (2021)'; the bibliography entry [28] lists the published version as Electronic Journal of Combinatorics, 30(2):P2.3, 2023, suggesting the conjecture appeared in an earlier preprint.",
+    "arxiv_id": "2302.12633",
+    "paper_title": "Neighborhood complexity of planar graphs",
+    "paper_authors": [
+      "Gwenaël Joret",
+      "Clément Rambaud"
+    ],
+    "published": "2023-12-19",
+    "abs_url": "https://arxiv.org/abs/2302.12633",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Problem 41",
+    "statement_text": "Determine the profile and neighborhood complexities of planar graphs up to a constant factor. For profile complexity, it is known to be in $\\Omega(r^{3})$ (Theorem 36) and in $\\operatorname{\\mathcal{O}}(r^{4})$ (Theorem 2). For neighborhood complexity, it is known to be in $\\Omega(r^{2})$ (Theorem 36 and Lemma 8) and in $\\operatorname{\\mathcal{O}}(r^{4})$ (Theorem 2).",
+    "context_text": "The paper closes with two open problems. The first asks for tight bounds on the profile and neighborhood complexities of planar graphs; the existing lower bounds ($\\Omega(r^3)$ for profile, $\\Omega(r^2)$ for neighborhood) and the paper's new upper bound ($\\mathcal{O}(r^4)$ for both) leave a small gap that the authors consider tantalizingly close.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2302.12633",
+    "paper_title": "Neighborhood complexity of planar graphs",
+    "paper_authors": [
+      "Gwenaël Joret",
+      "Clément Rambaud"
+    ],
+    "published": "2023-12-19",
+    "abs_url": "https://arxiv.org/abs/2302.12633",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Problem 42",
+    "statement_text": "Are the profile and neighborhood complexities of $K_{t}$-minor-free graphs in $r^{\\operatorname{\\mathcal{O}}(t)}$?",
+    "context_text": "The second open problem asks whether the polynomial bound for proper minor-closed classes can be sharpened so that the degree of the polynomial grows only logarithmically (or polynomially) in the size $t$ of the excluded complete minor, rather than being a fixed polynomial independent of $t$.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2302.12633",
+    "paper_title": "Neighborhood complexity of planar graphs",
+    "paper_authors": [
+      "Gwenaël Joret",
+      "Clément Rambaud"
+    ],
+    "published": "2023-12-19",
+    "abs_url": "https://arxiv.org/abs/2302.12633",
+    "source": "html"
+  }
+]

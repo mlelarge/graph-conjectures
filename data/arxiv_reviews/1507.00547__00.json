@@ -1,0 +1,21 @@
+{
+  "review_id": "1507.00547__00",
+  "safe_id": "1507.00547",
+  "arxiv_id": "1507.00547",
+  "conjecture_title": "Open Problem: Reducing l to 1 in the Set Mapping Theorem",
+  "paper_title": "Short proofs of some extremal results II",
+  "published": "2016-02-11",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "The conjecture asks whether p(m,k,1)=\\Theta(m^{1/k}), reducing the parameter l in Theorem 2.1 from (k-1)! to 1. No paper directly resolving this conjecture was identified. A 2026 paper 'Set mappings for general graphs' (arXiv:2601.00766) by Gishboliner, Jin, and Sudakov (the last of whom is a co-author of the source paper) addresses related set mapping problems for general graphs but targets questions due to Caro--Patkos--Tuza--Vizer, not the specific p(m,k,1) formulation. The conjecture appears to remain open.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Conlon Fox Sudakov \"set mapping\" p(m,k,l) extremal arXiv 1507.00547",
+    "\"set mapping theorem\" p(m,k,1) graph theory Theta m^{1/k}"
+  ],
+  "notes": "A 2026 arXiv preprint 2601.00766 ('Set mappings for general graphs', Gishboliner--Jin--Sudakov) addresses related set mapping problems for general graphs with O(m) bounds tight for cliques, but it appears to address questions from Caro--Patkos--Tuza--Vizer rather than the specific p(m,k,1) conjecture from 1507.00547. The conjecture is approximately 10 years old; the combination of a related recent paper by a co-author that does not appear to resolve it, and no other follow-up found, yields medium confidence that it remains open."
+}

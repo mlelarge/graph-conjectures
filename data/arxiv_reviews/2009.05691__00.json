@@ -1,0 +1,45 @@
+{
+  "review_id": "2009.05691__00",
+  "safe_id": "2009.05691",
+  "arxiv_id": "2009.05691",
+  "conjecture_title": "Open Problem: Finding a Shortest Even Hole",
+  "paper_title": "Detecting a long even hole",
+  "published": "2020-09-12",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "solved",
+  "confidence": "high",
+  "summary": "The problem of finding a shortest even hole in polynomial time was resolved by Cheong and Lu in a paper posted to arXiv on August 15, 2020 — roughly one month before Cook and Seymour posed it as an open problem — giving an O(n^31) algorithm; Chiu, Lai, and Lu subsequently improved this to O(n^23) in July 2022.",
+  "since_posted": [
+    {
+      "title": "Finding a Shortest Even Hole in Polynomial Time",
+      "authors": "Hou-Teng Cheong, Hsueh-I Lu",
+      "year": 2020,
+      "venue": "Journal of Graph Theory",
+      "url": "https://arxiv.org/abs/2008.06740",
+      "arxiv_id": "2008.06740",
+      "doi": null,
+      "kind": "proof",
+      "claim": "Gives the first polynomial-time algorithm (O(n^31)) for finding a shortest even hole in an n-vertex graph; this preprint was posted on August 15, 2020, about one month before Cook–Seymour's paper posed the problem."
+    },
+    {
+      "title": "Improved Algorithms for Recognizing Perfect Graphs and Finding Shortest Odd and Even Holes",
+      "authors": "Yung-Chung Chiu, Kai-Yuan Lai, Hsueh-I Lu",
+      "year": 2022,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2207.07613",
+      "arxiv_id": "2207.07613",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Improves the running time for finding a shortest even hole from O(n^31) (Cheong–Lu) to O(n^23), along with improvements for odd holes and perfect graph recognition."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "shortest even hole algorithm polynomial time graph Cook Seymour 2009.05691",
+    "\"shortest even hole\" graph algorithm polynomial time 2021 2022 2023 2024",
+    "\"Improved Algorithms\" \"perfect graphs\" \"shortest odd and even holes\" arXiv 2022 2023"
+  ],
+  "notes": "The Cheong–Lu solution (arXiv:2008.06740, submitted August 15, 2020) predates the Cook–Seymour open problem posting (arXiv:2009.05691, submitted September 12, 2020) by approximately one month; Cook and Seymour were likely unaware of this concurrent work when writing. The problem is therefore fully solved. Cheong–Lu's journal version appeared in Journal of Graph Theory in 2022."
+}

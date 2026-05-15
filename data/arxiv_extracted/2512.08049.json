@@ -1,0 +1,27 @@
+[
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Problem 1",
+    "statement_text": "Find the minimal constant $\\widehat{\\rho}\\in[0,1]$ such that each spectrally symmetric graph satisfies $\\frac{2|E(G)|}{|V(G)|^{2}}\\leq\\widehat{\\rho}$.",
+    "context_text": "Motivated by the classical fact that a graph of order $n$ with more than $\\frac{n^2}{4}$ edges is not bipartite (and hence its adjacency spectrum is not symmetric), the authors ask for an analogous density threshold for spectrally symmetric orientations. The paper establishes $\\frac{13}{18}\\leq\\widehat{\\rho}\\leq\\frac{10}{11}$ but the exact value remains open.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2512.08049",
+    "paper_title": "Spectrally symmetric orientations of graphs",
+    "paper_authors": [
+      "Saieed Akbari",
+      "Jonathan Aloni",
+      "Maxwell Levit",
+      "Bojan Mohar",
+      "Steven Xia"
+    ],
+    "published": "2025-12-08",
+    "abs_url": "https://arxiv.org/abs/2512.08049",
+    "source": "html"
+  }
+]

@@ -1,0 +1,34 @@
+{
+  "review_id": "2310.04265__04",
+  "safe_id": "2310.04265",
+  "arxiv_id": "2310.04265",
+  "conjecture_title": "Conjecture 3.16",
+  "paper_title": "Clique number of tournaments",
+  "published": "2023-10-06",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "unclear",
+  "confidence": "medium",
+  "summary": "Conjecture 3.16 specialises Conjecture 3.13 to BST-orderings of tournaments, asserting the existence of a function f such that every tournament admits a BST-ordering satisfying a simultaneous bound on clique number and dichromatic number. A follow-up paper (arXiv:2401.07776, Aubian 2024) provides a counterexample to 'a conjecture of Aboulker, Aubian, Charbit and Lopes' from the source paper, but the available abstract does not identify which specific conjecture was disproved; it is not confirmed whether Conjecture 3.16 is the target.",
+  "since_posted": [
+    {
+      "title": "Computing the clique number of tournaments",
+      "authors": "Guillaume Aubian",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2401.07776",
+      "arxiv_id": "2401.07776",
+      "doi": null,
+      "kind": "counterexample",
+      "claim": "Proves that deciding whether a tournament has clique number at most k (k >= 3) is NP-complete, and provides a counterexample to an unspecified conjecture of Aboulker, Aubian, Charbit and Lopes from arXiv:2310.04265; it is not confirmed from the abstract alone whether this counterexample targets Conjecture 3.16 specifically."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "BST-ordering tournament Aboulker Aubian Charbit Lopes 2310.04265",
+    "BST-ordering tournament binary search tree conjecture graph theory 2024 2025",
+    "Aboulker Aubian Charbit Lopes clique number of tournaments BST conjecture resolved 2024 2025"
+  ],
+  "notes": "The full statement of Conjecture 3.16 was not completely retrievable from the arXiv HTML render (truncated mid-sentence). A counterexample to some conjecture in arXiv:2310.04265 is reported in arXiv:2401.07776, but identifying whether it is Conjecture 3.16 (BST-orderings) or another conjecture in the paper requires reading the full text of 2401.07776, which could not be retrieved (PDF binary). The paper arXiv:2402.10782 (NP-completeness of forest-orderings) is thematically related but does not address Conjecture 3.16 directly."
+}

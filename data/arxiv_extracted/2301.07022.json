@@ -1,0 +1,27 @@
+[
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Royle's Question on G(n)/G(n-1)",
+    "statement_text": "Does the ratio $G(n)/G(n-1)$ tend to $4$ as $n \\to \\infty$?",
+    "context_text": "Royle asked (equivalently phrased via zero-free degree sequences) whether $G(n)/G(n-1) \\to 4$. The authors note this is equivalent to asking whether $G'(n)/G'(n-1) \\to 4$, where $G'(n)$ counts degree sequences of graphs without isolated vertices, since $G'(n) = G(n-1)$ by a simple observation.",
+    "attributed_to": "Royle",
+    "attributed_year": null,
+    "paper_contribution": "Answers the question in the affirmative as an immediate corollary of the main result $G(n) = (c_{\\deg}+o(1))4^n/n^{3/4}$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Reference [37] in the paper; year not determinable from the provided text.",
+    "arxiv_id": "2301.07022",
+    "paper_title": "Counting graphic sequences via integrated random walks",
+    "paper_authors": [
+      "Paul Balister",
+      "Serte Donderwinkel",
+      "Carla Groenland",
+      "Tom Johnston",
+      "Alex Scott"
+    ],
+    "published": "2024-09-25",
+    "abs_url": "https://arxiv.org/abs/2301.07022",
+    "source": "pdf"
+  }
+]

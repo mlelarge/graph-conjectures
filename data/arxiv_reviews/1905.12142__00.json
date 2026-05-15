@@ -1,0 +1,44 @@
+{
+  "review_id": "1905.12142__00",
+  "safe_id": "1905.12142",
+  "arxiv_id": "1905.12142",
+  "conjecture_title": "Conjecture 1.12",
+  "paper_title": "Combinatorial anti-concentration inequalities, with applications",
+  "published": "2020-11-18",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Conjecture 1.12 (that Pr(X_H = x) = O(1/sqrt(Var(X_H))) = O(1/n^{h-1}) for any fixed graph H with h non-isolated vertices in G(n,p)) has been resolved affirmatively for connected graphs H by Sah and Sawhney (arXiv:2006.11369, JLMS 2022), who established a local CLT for connected subgraph counts achieving the optimal scale. However, the same paper provides a counterexample showing the bound fails for certain disconnected graphs H, so the conjecture as stated for all graphs with non-isolated vertices is disproved. A companion paper (arXiv:1905.12749, Ann. Prob. 2021) by the same authors proved the near-optimal bound O(n^{1-h+o(1)}) for connected H, confirming the conjecture up to a subpolynomial factor.",
+  "since_posted": [
+    {
+      "title": "Anti-concentration for subgraph counts in random graphs",
+      "authors": "Jacob Fox, Matthew Kwan, Lisa Sauermann",
+      "year": 2021,
+      "venue": "Annals of Probability",
+      "url": "https://arxiv.org/abs/1905.12749",
+      "arxiv_id": "1905.12749",
+      "doi": "10.1214/20-AOP1490",
+      "kind": "partial",
+      "claim": "Proves that for connected H with h vertices, Pr(X_H = x) <= n^{1-h+o(1)}, giving a near-optimal (but not tight) bound falling just short of the conjectured O(1/n^{h-1}); this is a companion paper submitted to arXiv concurrently in May 2019."
+    },
+    {
+      "title": "Local limit theorems for subgraph counts",
+      "authors": "Ashwin Sah, Mehtaab Sawhney",
+      "year": 2022,
+      "venue": "Journal of the London Mathematical Society",
+      "url": "https://arxiv.org/abs/2006.11369",
+      "arxiv_id": "2006.11369",
+      "doi": "10.1112/jlms.12523",
+      "kind": "partial",
+      "claim": "Proves a local CLT for connected subgraph counts in G(n,p) (establishing the optimal O(1/n^{h-1}) bound of Conjecture 1.12 for connected H), while also providing a counterexample showing the conjectured bound fails for certain disconnected graphs, resolving the conjecture negatively in full generality."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "anti-concentration subgraph count G(n,p) random graph local limit theorem Fox Kwan Sauermann 1905.12142",
+    "anti-concentration X_H subgraph count random graph variance clique probability \"1905.12142\""
+  ],
+  "notes": "Conjecture 1.12 is proved for connected H (full optimal bound O(1/n^{h-1}) via local CLT, Sah-Sawhney 2022) and disproved for disconnected H with no isolated vertices. The companion paper 1905.12749 achieves a near-optimal bound n^{1-h+o(1)} for connected H. The paper itself (Theorem 1.14) confirms the conjecture for cliques. Status 'partial' reflects that the positive case (connected H) is fully resolved at the optimal scale."
+}

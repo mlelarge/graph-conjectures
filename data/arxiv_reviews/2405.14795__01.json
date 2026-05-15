@@ -1,0 +1,22 @@
+{
+  "review_id": "2405.14795__01",
+  "safe_id": "2405.14795",
+  "arxiv_id": "2405.14795",
+  "conjecture_title": "Question 3.3",
+  "paper_title": "Rainbow Stackings of Random Edge-Colorings",
+  "published": "2024-05-23",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Question 3.3 asks whether every pair of proper edge-colorings of $K_n$ admits a rainbow stacking when $n$ is odd; this is known affirmatively for $n=3$ (by inspection) and $n=5$ (by computer search), contrasting with the even case where Proposition 3.2 of the source paper gives obstructing constructions via Latin squares over $\\mathbb{F}_2^k$. The source paper was published in the Bulletin of the London Mathematical Society in 2025, but this is the journal publication of the same arXiv preprint, not a follow-up resolving the question. No subsequent paper resolving the general odd-$n$ case was found in a wide web search.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "rainbow stacking proper edge-coloring complete graph odd n Alon Defant Kravitz 2405.14795",
+    "rainbow stacking edge-coloring K_n Latin squares conjecture 2024 2025",
+    "rainbow stacking odd complete graph \"Question 3.3\" OR \"rainbow stacking\" Defant Kravitz 2025 2026"
+  ],
+  "notes": "No follow-up resolving Question 3.3 found. The paper appeared in Bulletin of the London Mathematical Society 57(6):1656-1670 (2025), which is the journal version of the arXiv preprint and does not resolve the question. The question is expected to be difficult according to the authors. Web search and fetch of the HTML version confirmed the conjecture remains open as of the search date."
+}

@@ -1,0 +1,22 @@
+{
+  "review_id": "2108.00991__00",
+  "safe_id": "2108.00991",
+  "arxiv_id": "2108.00991",
+  "conjecture_title": "Conjecture 3",
+  "paper_title": "Threshold Ramsey multiplicity for paths and even cycles",
+  "published": "2022-08-07",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The paper establishes that the threshold Ramsey multiplicity m(P_k) of paths satisfies (ck)^k ≤ m(P_k) ≤ (Ck)^k for positive constants c, C, tight up to the constant. Conjecture 3 proposes exact values — m(P_k) = k!/2 for even k and m(P_k) = (k-1)/4·(k-1)! for odd k — based on specific extremal colorings χ(a_0,b_0) of K_{r(P_k)} that the authors identify. No follow-up work resolving this conjecture was found in the literature.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "threshold Ramsey multiplicity paths P_k Conlon Fox Sudakov Wei 2108.00991",
+    "Ramsey multiplicity path m(P_k) k factorial extremal coloring",
+    "threshold Ramsey multiplicity paths exact value conjecture 2023 2024 2025"
+  ],
+  "notes": "No follow-up resolving Conjecture 3 was found. The main theorem of the paper gives matching (ck)^k bounds up to constant, while the conjecture pins down the exact leading factorial constant. The companion paper arXiv:2108.00987 handles odd cycles but not this path conjecture. The paper was published in European Journal of Combinatorics vol. 107 (2023)."
+}

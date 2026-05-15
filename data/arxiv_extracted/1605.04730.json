@@ -1,0 +1,24 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Rossmanith Conjecture on Planar Induced Subgraphs",
+    "statement_text": "An upper bound of the form $f(m) \\leq \\frac{1}{6}m + o(m)$ holds for the class of planar graphs, where $f(m)$ is the least integer such that every $m$-edge graph $G$ has a set $X$ of at most $f(m)$ vertices with $G - X$ planar.",
+    "context_text": "Borradaile, Eppstein, and Zhu [1] proved $f(m) \\leq \\frac{23}{120}m$ for induced planar subgraphs and showed that if the Rossmanith bound were true it would be best possible, since for any proper minor-closed class $f(m) \\geq \\frac{1}{6}m - o(m)$. The conjecture is mentioned as an open problem in the graph-drawing context; the best known upper bound for arbitrary planar graphs remains $\\frac{23}{120}m$.",
+    "attributed_to": "Rossmanith",
+    "attributed_year": null,
+    "paper_contribution": "The paper does not make progress on this conjecture; it is cited in passing as an open problem while surveying related results on induced subgraphs in minor-closed classes.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "Attributed to Rossmanith via [1] (Borradaile, Eppstein, Zhu). The paper's main result concerns K4-minor-free (treewidth ≤ 2) induced subgraphs of connected graphs, not planar subgraphs. PDF source — math notation may be garbled.",
+    "arxiv_id": "1605.04730",
+    "paper_title": "$K_{4}$-Minor-Free Induced Subgraphs of Sparse Connected Graphs",
+    "paper_authors": [
+      "Gwenaël Joret",
+      "David R. Wood"
+    ],
+    "published": "2016-05-17",
+    "abs_url": "https://arxiv.org/abs/1605.04730",
+    "source": "pdf"
+  }
+]

@@ -1,0 +1,25 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Jungić et al. Conjecture on $T_k$",
+    "statement_text": "$T_k = \\Theta(k^2)$",
+    "context_text": "Let $T_k$ denote the smallest positive integer $t$ such that for every positive integer $m$, every equinumerous $t$-coloring of $[tm]$ contains a rainbow $k$-term arithmetic progression. Jungi\\'{c} et al.\\ proved $c'k^2 \\leq T_k \\leq ck^3$ and conjectured that the lower bound gives the correct order of magnitude; this conjecture was reiterated in a subsequent survey [47]. The lower bound $T_k \\geq c'k^2$ was later sharpened by Fox, Jungi\\'{c}, and Radoi\\v{c}i\\'{c} [34].",
+    "attributed_to": "Jungić et al.",
+    "attributed_year": null,
+    "paper_contribution": "Proves $T_k \\leq ck^2 \\log k$ via Corollary 2.4, obtained by combining Corollary 2.3 on sub-Ramsey numbers with the main independent arithmetic progression result (Theorem 2.2); this improves the previous upper bound $T_k \\leq ck^3$ and reduces the gap to a single logarithm.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source. The full resolution $T_k = \\Theta(k^2)$ remains open after this paper.",
+    "arxiv_id": "1910.08661",
+    "paper_title": "Short proofs of some extremal results III",
+    "paper_authors": [
+      "David Conlon",
+      "Jacob Fox",
+      "Benny Sudakov"
+    ],
+    "published": "2020-08-07",
+    "abs_url": "https://arxiv.org/abs/1910.08661",
+    "source": "pdf"
+  }
+]

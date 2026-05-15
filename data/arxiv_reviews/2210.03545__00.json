@@ -1,0 +1,34 @@
+{
+  "review_id": "2210.03545__00",
+  "safe_id": "2210.03545",
+  "arxiv_id": "2210.03545",
+  "conjecture_title": "Grid Ramsey Problem (gr(G_{2x2}, K_n))",
+  "paper_title": "Hypergraph Ramsey numbers of cliques versus stars",
+  "published": "2022-10-07",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The Grid Ramsey problem gr(G_{2\\times 2}, K_n) was introduced in arXiv:2210.03545 with bounds $2^{c\\log^2 n} \\le \\mathrm{gr}(G_{2\\times 2}, K_n) \\le 2^{c'n^{2/3}\\log n}$; no subsequent work has improved either bound. A 2025 paper by He et al. (arXiv:2511.01215) studied the broader family of grid Ramsey numbers and established that $G_{2\\times 2}$ is exceptional — every other cycle $C \\neq G_{2\\times 2}$ satisfies $\\mathrm{gr}(C, K_k) = k^{O_C(1)}$ — but the exact growth rate of $\\mathrm{gr}(G_{2\\times 2}, K_n)$ remains open.",
+  "since_posted": [
+    {
+      "title": "Ramsey numbers of grid graphs",
+      "authors": "Xiaoyu He, Ghaura Mahabaduge, Krishna Pothapragada, Josh Rooney, Jasper Seabold",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2511.01215",
+      "arxiv_id": "2511.01215",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves that $G_{2\\times 2}$ is exceptional among grid graphs (all other cycles have polynomial grid Ramsey numbers), confirming the problem's difficulty, but does not improve the bounds $2^{\\Omega(\\log^2 k)} \\le \\mathrm{gr}(G_{2\\times 2}, K_k) \\le 2^{O(k^{2/3}\\log k)}$."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "grid Ramsey problem rectangle clique Cartesian product complete graph 2-edge-coloring gr(G_{2x2}, K_n)",
+    "arXiv 2210.03545 Conlon Fox He Mubayi Suk Verstraete hypergraph Ramsey cliques stars follow-up",
+    "\"grid Ramsey\" \"On the grid Ramsey problem\" Conlon Fox arXiv 2023 2024 2025 rectangle clique"
+  ],
+  "notes": "The problem was introduced as a novel Ramsey-type question on grid graphs to prove the main result on $r(K^{(3)}_4, S^{(3)}_n)$. The 2025 paper arXiv:2511.01215 explicitly references the same bounds from 2210.03545 without improvement, confirming the exact growth rate of gr(G_{2\\times 2}, K_n) is open as of late 2025."
+}

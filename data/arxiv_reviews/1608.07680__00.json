@@ -1,0 +1,35 @@
+{
+  "review_id": "1608.07680__00",
+  "safe_id": "1608.07680",
+  "arxiv_id": "1608.07680",
+  "conjecture_title": "Problem 1",
+  "paper_title": "The crossing number of the cone of a graph",
+  "published": "2016-08-27",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The problem asks for a general formula for f(k), the smallest crossing number achievable by the cone of any graph with crossing number at least k. The source paper (published as SIAM J. Discrete Math. 32 (2018) 2080–2093) establishes f(k) = k + Θ(√k) for multigraphs and computes the simple-graph version φ_s(3)=3, φ_s(4)=4, φ_s(5)=5. Ding and Huang (Graphs Combin. 2021) extend this table by proving φ_s(6)=5 and φ_s(7)=6. A closed-form formula for all k remains open.",
+  "since_posted": [
+    {
+      "title": "A Note on the Crossing Number of the Cone of a Graph",
+      "authors": "Ding, Z., Huang, Y.",
+      "year": 2021,
+      "venue": "Graphs and Combinatorics",
+      "url": "https://link.springer.com/article/10.1007/s00373-021-02361-2",
+      "arxiv_id": null,
+      "doi": "10.1007/s00373-021-02361-2",
+      "kind": "partial",
+      "claim": "Proves φ_s(6) = 5 and φ_s(7) = 6 for simple graphs, extending the table of exact values of f(k) from the source paper."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "crossing number cone graph Alfaro Arroyo Mohar arXiv 1608.07680",
+    "crossing number cone graph f(k) simple graphs minimum",
+    "A Note on the Crossing Number of the Cone of a Graph Graphs Combinatorics 2021",
+    "Ding Huang crossing number cone arXiv 2021 simple graphs phi_s"
+  ],
+  "notes": "The Ding-Huang 2021 follow-up paper (Graphs Combin. 37:2351-2363) is behind a paywall; its content was confirmed via multiple consistent search results. No arXiv preprint was found for that paper. The general formula for f(k) (or φ_s(k) in the simple-graph setting) for all k ≥ 0 remains open."
+}

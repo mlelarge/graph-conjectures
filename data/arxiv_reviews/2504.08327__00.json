@@ -1,0 +1,22 @@
+{
+  "review_id": "2504.08327__00",
+  "safe_id": "2504.08327",
+  "arxiv_id": "2504.08327",
+  "conjecture_title": "Conjecture 1",
+  "paper_title": "On a conjecture concerning 4-coloring of graphs with one crossing",
+  "published": "2025-04-14",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 1 from arXiv:2504.08327 asserts that every 5-critical graph in the class C of graphs drawable with at most one crossing contains a vertex of degree four; it serves as a stepping stone toward the stronger Conjecture 2 (4-colorability). The authors verify both conjectures computationally for all graphs with at most 28 vertices but give no general proof. No follow-up paper resolving Conjecture 1 was found in over a year of indexed literature.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Dvořák Lidický Mohar 5-critical graph one crossing degree four 2504.08327",
+    "5-critical graph \"one crossing\" 4-coloring \"degree four\" conjecture 2025 2026",
+    "Dvořák Lidický Mohar \"4-coloring\" \"one crossing\" follow-up cite 2025 2026 arxiv"
+  ],
+  "notes": "No follow-up found. The conjecture is approximately 13 months old (posted April 2025). Class C is all graphs drawable in the plane with at most one crossing. The authors' own computer search confirms the conjecture for graphs up to 28 vertices. Conjecture 2, which implies Conjecture 1, is the main open problem of the paper."
+}

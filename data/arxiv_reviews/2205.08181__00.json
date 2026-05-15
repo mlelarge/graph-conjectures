@@ -1,0 +1,23 @@
+{
+  "review_id": "2205.08181__00",
+  "safe_id": "2205.08181",
+  "arxiv_id": "2205.08181",
+  "conjecture_title": "Belief on 4-vertex-critical arrangement graphs",
+  "paper_title": "Coloring circle arrangements: New $4$-chromatic planar graphs",
+  "published": "2022-05-17",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The corona construction of Chiu, Felsner, Scheucher, Schröder, Steiner, and Vogtenhuber maps triangle-saturated arrangements with a pentagonal face to arrangements with 4-chromatic 4-regular arrangement graphs, yielding an infinite family. The authors believe (but do not prove) that all resulting graphs are 4-vertex-critical. The paper was published in the European Journal of Combinatorics in 2024, but no follow-up work proving or disproving vertex-criticality was found in the indexed literature as of May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "4-vertex-critical arrangement graphs corona construction circle arrangements chromatic",
+    "arxiv 2205.08181 Chiu Felsner Scheucher coloring circle arrangements 4-chromatic",
+    "4-vertex-critical planar graph arrangement pseudocircles triangle-saturated infinite family 2023 2024",
+    "Scheucher Steiner Felsner arrangement graph vertex-critical 4-chromatic 2024 2025"
+  ],
+  "notes": "No follow-up paper addressing the vertex-criticality of the corona construction family was found. The conjecture is explicitly stated as a belief (not proved) in the source paper. The paper itself appeared in European Journal of Combinatorics 2024 (S0195669823001579), but the specific vertex-criticality question is not resolved there either."
+}

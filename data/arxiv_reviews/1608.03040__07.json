@@ -1,0 +1,41 @@
+{
+  "review_id": "1608.03040__07",
+  "safe_id": "1608.03040",
+  "arxiv_id": "1608.03040",
+  "conjecture_title": "Open Problem 8",
+  "paper_title": "Majority Colourings of Digraphs",
+  "published": "2016-08-10",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The minimum total weight k for fractional majority colourings of all digraphs remains unresolved below 3 in full generality. Anastos, Lamaison, Steiner, and Szabó (arXiv:1911.01954, EJC 2021) proved k ≤ 3.9602 for all digraphs (Theorem 6), and that digraphs with minimum out-degree Ω((1/ε)² ln(1/ε)) admit fractional majority (2+ε)-colourings (Theorem 7), placing dense digraphs below the conjectured threshold. The general question of whether k < 3 for every digraph remains open.",
+  "since_posted": [
+    {
+      "title": "Majority Colorings of Sparse Digraphs",
+      "authors": "Michael Anastos, Ander Lamaison, Raphael Steiner, Tibor Szabó",
+      "year": 2021,
+      "venue": "The Electronic Journal of Combinatorics",
+      "url": "https://arxiv.org/abs/1911.01954",
+      "arxiv_id": "1911.01954",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves k ≤ 3.9602 for all digraphs (Theorem 6) and that digraphs with sufficiently large minimum out-degree admit fractional majority (2+ε)-colourings (Theorem 7), providing partial support for but not settling the conjecture that k < 3."
+    }
+  ],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "1911.01954",
+      "verified": true,
+      "note": "Abstract confirms k ≤ 3.9602 for all digraphs and fractional majority (2+ε)-colouring for large minimum out-degree; the NP-completeness result and discrete majority-3-colouring results also present in this paper are separate from Open Problem 8."
+    }
+  ],
+  "search_queries": [
+    "fractional majority colouring digraph total weight minimum arXiv 1608.03040",
+    "majority coloring digraph fractional relaxation \"Open Problem 8\" Kreutzer Seymour Wood",
+    "fractional majority coloring digraph \"stable sets\" weight 2022 2023 2024 2025",
+    "Anastos Lamaison Steiner Szabo majority coloring digraph fractional 2022 2023 2024"
+  ],
+  "notes": "Open Problem 8 asks for the minimum total weight k over all fractional majority colourings of all digraphs, with the informal conjecture that k < 3. The best known upper bound is k ≤ 3.9602, established by arXiv:1911.01954 (Theorem 6). For dense digraphs with large minimum out-degree, k < 3 is confirmed. No paper published after 2021 specifically resolving this fractional problem was found in the indexed literature."
+}

@@ -1,0 +1,24 @@
+[
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Problem 1.4",
+    "statement_text": "Is it true that for any fixed finite family $F$ of binary matrices and any $\\varepsilon > 0$, there exists $\\delta > 0$ with $\\delta^{-1}$ polynomial in $\\varepsilon^{-1}$, such that any $n \\times n$ binary matrix $M$ that is $\\varepsilon$-far from $F$-freeness contains $\\delta n^{s+t}$ copies of some $s \\times t$ matrix $A \\in F$?",
+    "context_text": "The problem was raised in Alon, Fischer and Newman [5] (SICOMP 2007), asking whether the efficient induced removal lemma proved there for families of binary matrices closed under permutations extends to any finite family of binary matrices. The paper's abstract states it makes progress towards proving one of their conjectures, and Theorem 1.5 establishes the result for families closed under row (or column) permutations.",
+    "attributed_to": "Alon, Fischer and Newman",
+    "attributed_year": 2007,
+    "paper_contribution": "Proves the statement for any finite family $F$ of binary matrices that is closed under row permutations (Theorem 1.5), strictly generalising the earlier result that required closure under all permutations.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Labelled 'Problem 1.4' in the paper; explicitly attributed to [5] in the surrounding text ('was raised in [5] and is still open'). PDF source — minor math rendering issues possible.",
+    "arxiv_id": "1609.04235",
+    "paper_title": "Efficient Removal Lemmas for Matrices",
+    "paper_authors": [
+      "Noga Alon",
+      "Omri Ben-Eliezer"
+    ],
+    "published": "2017-06-12",
+    "abs_url": "https://arxiv.org/abs/1609.04235",
+    "source": "pdf"
+  }
+]

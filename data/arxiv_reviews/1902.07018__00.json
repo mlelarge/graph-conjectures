@@ -1,0 +1,24 @@
+{
+  "review_id": "1902.07018__00",
+  "safe_id": "1902.07018",
+  "arxiv_id": "1902.07018",
+  "conjecture_title": "Open question on $R_\\ell(K_{1,2}, k)$ for odd $k$",
+  "paper_title": "List Ramsey numbers",
+  "published": "2020-08-12",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The question of whether $R_\\ell(K_{1,2}, k) = k+1$ or $k+2$ for odd $k$ is equivalent to the List Colouring Conjecture for complete graphs of even order, asking whether $\\chi'_\\ell(K_n)$ equals $n-1 = \\chi'(K_n)$ or $n$ for even $n$. The background result of H\\\"aggkvist and Janssen (1997) resolves the odd-$n$ case ($\\chi'_\\ell(K_n) = n$ for odd $n$), and Schauz (2010) settled the conjecture for $K_n$ when $n-1$ is prime, but the general even case remains open. No post-2020 paper resolving the full problem was found in the indexed literature.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "list Ramsey numbers arXiv 1902.07018 Alon Bucic Kalvari Kuperwasser Szabo",
+    "list chromatic index complete graph even order K_n chi' conjecture resolved 2021 2022 2023 2024 2025",
+    "List Colouring Conjecture complete graphs cliques chromatic index Vizing 2022 2023 2024 2025",
+    "chi'_list K_n even n list chromatic index complete graph n-1 or n resolved arXiv 2021 2022 2023 2024 2025",
+    "\"list colouring conjecture\" \"complete graph\" \"even\" \"chromatic index\" progress 2022 2023 2024 arXiv"
+  ],
+  "notes": "The conjecture is closely related to the List Colouring Conjecture (also known as the List Edge Colouring Conjecture), which states that $\\chi'_\\ell(G) = \\chi'(G)$ for every graph $G$. For complete graphs, the odd-order case is settled (H\\\"aggkvist-Janssen 1997: $\\chi'_\\ell(K_n) = n$ for odd $n$, matching $\\chi'(K_n) = n$); the even-order case corresponds exactly to the open question in this paper. The Cambridge Core paper found (H\\\"aggkvist-Janssen, Combinatorics Probability and Computing, 1997) is the background result cited in the source paper, not a new resolution. The paper arXiv:2103.15175 (Multicolor list Ramsey numbers grow exponentially) by Conlon, Fox, He, Mubayi, Suk, Verstra\\\"ete (2021) addresses exponential growth of $R_\\ell$ for non-$r$-partite hypergraphs but does not address $R_\\ell(K_{1,2}, k)$ for odd $k$ specifically."
+}

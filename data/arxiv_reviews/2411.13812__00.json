@@ -1,0 +1,33 @@
+{
+  "review_id": "2411.13812__00",
+  "safe_id": "2411.13812",
+  "arxiv_id": "2411.13812",
+  "conjecture_title": "Conjecture 1.1",
+  "paper_title": "When are off-diagonal hypergraph Ramsey numbers polynomial?",
+  "published": "2025-10-29",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 1.1 from arXiv:2411.13812 proposes a full biconditional characterization of 3-graphs H for which r(H,K_n^(3)) grows polynomially in n. The source paper establishes the conjecture for the special cases when H is tightly connected or has at most two tight components, but the full general statement remains open. A March 2026 follow-up (arXiv:2603.16069) by co-author Xiaoyu He constructs 3-graphs with quasipolynomial growth rates n^{Theta(log n)}, contributing to the broader program of classifying growth rates but not resolving the conjecture in full generality.",
+  "since_posted": [
+    {
+      "title": "Hypergraph Ramsey numbers with quasipolynomial growth rate",
+      "authors": "Xiaoyu He",
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2603.16069",
+      "arxiv_id": "2603.16069",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Constructs a 3-graph H_2 on six vertices with r(H_2, K_n^(3)) = n^{Theta(log n)}, establishing a quasipolynomial (superpolynomial but subexponential) growth regime for specific 3-graphs, directly relevant to the classification program of Conjecture 1.1 but not resolving the full biconditional."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "off-diagonal hypergraph Ramsey numbers polynomial 3-graph iterated blowup edge 2411.13812",
+    "r(H, K_n^3) polynomial growth 3-uniform hypergraph Ramsey Conlon Fox Mubayi Suk 2025 2026"
+  ],
+  "notes": "The conjecture is very recent (October 2025); no paper fully resolving it was found in the indexed literature. The source paper itself proves the conjecture for H tightly connected or with at most two tight components. A related preprint arXiv:2507.09434 (Ascoli, He, Yu; July 2025) proves the Erdos-Hajnal conjecture for k=3 via iterated-blowup extremizers and establishes polynomial-to-exponential transition results, but predates arXiv:2411.13812 and cannot be a follow-up to Conjecture 1.1."
+}

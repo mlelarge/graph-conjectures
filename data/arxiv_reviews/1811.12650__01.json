@@ -1,0 +1,24 @@
+{
+  "review_id": "1811.12650__01",
+  "safe_id": "1811.12650",
+  "arxiv_id": "1811.12650",
+  "conjecture_title": "Informal: Exponent in Theorem 1 not optimal",
+  "paper_title": "Frozen $(\\Delta+1)$-colourings of bounded degree graphs",
+  "published": "2018-11-30",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Theorem 1 of arXiv:1811.12650 gives the upper bound $(6/7)^{n/(\\Delta+1)}$ on the probability that a uniform random $(\\Delta+1)$-colouring is frozen, while Proposition 4 provides a matching lower bound with exponent $e^{-3\\log(\\Delta)/\\Delta \\cdot n}$, leaving a gap of a $\\log\\Delta$ factor in the exponent. The authors believe the upper bound can be tightened to close this gap. No follow-up paper improving or resolving this exponent gap was found in any indexed literature searched.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "frozen colorings bounded degree graphs Bonamy Bousquet Perarnau 1811.12650 exponent probability",
+    "frozen Delta+1 coloring probability upper bound exponent improvement graph",
+    "arxiv frozen coloring bounded degree recoloring graph exponent tighten 2020 2021 2022 2023 2024",
+    "arxiv search frozen coloring bounded degree exponent",
+    "Semantic Scholar citations arXiv:1811.12650"
+  ],
+  "notes": "No follow-up found improving the log(Delta) gap in the exponent. The conjecture states informally that the dependence on Delta in the exponent of (6/7)^{n/(Delta+1)} is not best possible; the matching lower bound has exponent e^{-3 log(Delta)/Delta * n}, so the gap is a factor of log(Delta). Semantic Scholar API returned zero citations, and targeted web searches found no subsequent paper closing or narrowing this gap."
+}

@@ -1,0 +1,71 @@
+[
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Problem 1 (Erdős-Sands-Sauer-Woodrow)",
+    "statement_text": "For each $n$, is there a (least) positive integer $f(n)$ so that every finite tournament whose edges are coloured with $n$ colours contains a set $S$ of $f(n)$ vertices with the property that for every vertex $u$ not in $S$ there is a monochromatic path from $u$ to a vertex of $S$?",
+    "context_text": "In [15] Sands, Sauer and Woodrow asked this question, also due to Erdős. It concerns the existence of a bounded-size dominating set reachable by monochromatic paths in any $n$-edge-coloured tournament. The transitive closure of each colour class is a quasi-order, leading to the equivalent formulation as Conjecture 2.",
+    "attributed_to": "Sands, Sauer, and Woodrow; Erdős",
+    "attributed_year": 1982,
+    "paper_contribution": "Proves the existence of such $f(n)$ by establishing $\\gamma(T) = O(\\ln(2k) \\cdot k^{k+2})$ for complete multidigraphs whose arcs are the union of $k$ quasi-orders (Theorem 6), which implies the tournament case.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1703.08123",
+    "paper_title": "A proof of the Erdős-Sands-Sauer-Woodrow conjecture",
+    "paper_authors": [
+      "N. Bousquet",
+      "W. Lochet",
+      "S. Thomassé"
+    ],
+    "published": "2017-03-23",
+    "abs_url": "https://arxiv.org/abs/1703.08123",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 2 (Erdős-Sands-Sauer-Woodrow, quasi-order formulation)",
+    "statement_text": "For every $k$, there exists an integer $f(k)$ such that if $T$ is a complete multidigraph whose arcs are the union of $k$ quasi-orders, then $\\gamma(T) \\leq f(k)$.",
+    "context_text": "This is the restatement of Problem 1 in terms of quasi-orders and complete multidigraphs. The main goal of the paper is to prove this conjecture. It directly implies that every finite subset $X$ of $\\mathbb{R}^d$ can be covered by $f(d)$ $X$-boxes, as shown by Gyárfás and Pálvölgyi.",
+    "attributed_to": "Sands, Sauer, and Woodrow; Erdős",
+    "attributed_year": 1982,
+    "paper_contribution": "Proved in full: Theorem 6 establishes $\\gamma(T) = O(\\ln(2k) \\cdot k^{k+2})$, giving an explicit bound for $f(k)$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1703.08123",
+    "paper_title": "A proof of the Erdős-Sands-Sauer-Woodrow conjecture",
+    "paper_authors": [
+      "N. Bousquet",
+      "W. Lochet",
+      "S. Thomassé"
+    ],
+    "published": "2017-03-23",
+    "abs_url": "https://arxiv.org/abs/1703.08123",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 3 (General Sands-Sauer-Woodrow Conjecture)",
+    "statement_text": "For every $k$, there exists an integer $f(k)$ such that if $D$ is a multidigraph whose arcs are the union of $k$ quasi-orders, then $D$ has a dominating set which is the union of $f(k)$ stable sets.",
+    "context_text": "This more general conjecture was proposed by Sands, Sauer and Woodrow in their seminal 1982 paper. As a special case it implies the stable marriage theorem. It has been investigated in [1, 2, 6, 7] but remains open in general.",
+    "attributed_to": "Sands, Sauer, and Woodrow",
+    "attributed_year": 1982,
+    "paper_contribution": "Proves the conjecture for the special case of digraphs with bounded stability number, using the fact that the fractional domination of vertices by stable sets is at most 2 when the stability number is bounded.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1703.08123",
+    "paper_title": "A proof of the Erdős-Sands-Sauer-Woodrow conjecture",
+    "paper_authors": [
+      "N. Bousquet",
+      "W. Lochet",
+      "S. Thomassé"
+    ],
+    "published": "2017-03-23",
+    "abs_url": "https://arxiv.org/abs/1703.08123",
+    "source": "pdf"
+  }
+]

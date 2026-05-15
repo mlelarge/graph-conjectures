@@ -1,0 +1,44 @@
+{
+  "review_id": "2503.23191__00",
+  "safe_id": "2503.23191",
+  "arxiv_id": "2503.23191",
+  "conjecture_title": "Question 5.1",
+  "paper_title": "Two-block paths in oriented graphs of large semidegree",
+  "published": "2025-03-29",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Question 5.1 asks whether every oriented graph G with δ°(G) ≥ k/2 contains every orientation of the k-edge path except the antidirected ones; the source paper proves this for two-block paths but the general case remains open. A June 2025 preprint (arXiv:2506.11866) asymptotically proves Stein’s conjecture for the antidirected case (the excluded class), and a December 2025 preprint (arXiv:2512.04423) confirms Stein’s conjecture (δ° > k/2) for two-block paths, but no paper found resolves the full Question 5.1 at the exact threshold δ° ≥ k/2 for all non-antidirected orientations.",
+  "since_posted": [
+    {
+      "title": "Antidirected paths in oriented graphs",
+      "authors": "unknown",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2506.11866",
+      "arxiv_id": "2506.11866",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Asymptotically proves the antidirected path version of Stein’s conjecture (and of Addario-Berry–Havet–Linhares Sales–Reed–Thomassé), showing oriented graphs of minimum semidegree ≥ (3k-2)/4 contain an antidirected path of length k; addresses the excluded class in Question 5.1 but does not resolve whether δ° ≥ k/2 forces all non-antidirected orientations."
+    },
+    {
+      "title": "Paths with two blocks in oriented graphs of large minimum semi-degree",
+      "authors": "unknown",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2512.04423",
+      "arxiv_id": "2512.04423",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Confirms Stein’s conjecture (δ° > k/2) for two-block oriented paths of length k; closely related to the source paper’s main result but addresses the strict-threshold Stein conjecture rather than the exact-threshold Question 5.1."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "oriented graph semidegree k/2 orientation k-edge path antidirected Penev Thomassé 2503.23191",
+    "Stein conjecture antidirected path oriented graph semidegree threshold orientation"
+  ],
+  "notes": "No paper found that directly resolves Question 5.1. Two related 2025 preprints address adjacent problems: antidirected paths asymptotically (2506.11866) and Stein’s conjecture for two-block paths at the strict threshold (2512.04423). The conjecture is recent (≤ 1 year) and a wide search returned no resolution, supporting high-confidence open status."
+}

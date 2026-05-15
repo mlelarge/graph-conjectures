@@ -1,0 +1,22 @@
+{
+  "review_id": "2308.15721__00",
+  "safe_id": "2308.15721",
+  "arxiv_id": "2308.15721",
+  "conjecture_title": "Conjecture 2",
+  "paper_title": "Clustered Colouring of Odd-$H$-Minor-Free Graphs",
+  "published": "2024-10-18",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 2 of arXiv:2308.15721 asserts that for every graph $H$, both the defective chromatic number $\\chi_{\\Delta}(\\mathcal{G}_H^{\\text{odd}})$ and the clustered chromatic number $\\chi_{\\star}(\\mathcal{G}_H^{\\text{odd}})$ equal $\\overline{\\operatorname{td}}(H)-1$, closing the exponential gap between the known lower bound $\\overline{\\operatorname{td}}(H)-1$ and the upper bound $3 \\cdot 2^{\\overline{\\operatorname{td}}(H)}-4$ established in Theorem 1. No follow-up paper proving or disproving this conjecture was found in a wide web search through May 2026; the conjecture remains open.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "odd minor free graphs clustered chromatic number defective treedepth 2308.15721",
+    "odd H-minor-free clustered colouring defective chromatic number Hickingbotham Wood",
+    "site:arxiv.org \"2308.15721\" clustered chromatic odd minor treedepth conjecture 2025 2026"
+  ],
+  "notes": "No follow-up found after 5 web calls. The conjecture is recent (published October 2024) and posits that the exponential upper bound in Theorem 1 can be replaced by the linear lower bound td(H)-1. Semantic Scholar citation lookup for arXiv:2308.15721 returned no relevant citing papers addressing Conjecture 2. The related paper arXiv:2404.14940 (Brianski et al., defective/clustered colouring for graphs with given girth) does not appear to address the odd-minor setting of this conjecture."
+}

@@ -1,0 +1,23 @@
+{
+  "review_id": "1909.11578__01",
+  "safe_id": "1909.11578",
+  "arxiv_id": "1909.11578",
+  "conjecture_title": "Largest symmetric intersecting families are set-intersecting",
+  "paper_title": "On symmetric intersecting families of vectors",
+  "published": "2020-07-31",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The conjecture that the largest symmetric intersecting families in $[k]^n$ are set-intersecting remains open. The source paper (published in Combinatorics, Probability and Computing 2021) established only the size bound $o(k^n)$ for fixed $k \\geq 3$; the structural question about extremal families is explicitly flagged as potentially unprovable. A follow-up by Keevash (arXiv 2103.05050, JLMS 2023) reproves the size bound via forbidden intersections for codes, but no paper resolving the structural conjecture was found in an exhaustive web search through May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "symmetric intersecting families set-intersecting vectors Eberhard Kahn Narayanan Spirkl",
+    "arxiv 1909.11578 intersecting families citing papers follow-up",
+    "\"set-intersecting\" \"[k]^n\" symmetric intersecting families largest conjecture 2021 2022 2023 2024 2025",
+    "Eberhard Kahn Narayanan Spirkl \"symmetric intersecting\" structure conjecture extremal follow-up 2022 2023 2024 2025 2026"
+  ],
+  "notes": "No follow-up resolving the structural conjecture was found in the indexed literature. The authors themselves hedge the conjecture as 'maybe impossible to prove', suggesting it is widely regarded as very hard. Keevash's 2021 forbidden-intersections-for-codes paper (arXiv 2103.05050) reproves the $o(k^n)$ size bound but does not address the set-intersecting structure question; the Wiley DOI returned a paywall error so it could not be fully verified and is not included as a cite."
+}

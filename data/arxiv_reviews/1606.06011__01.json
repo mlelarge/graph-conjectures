@@ -1,0 +1,35 @@
+{
+  "review_id": "1606.06011__01",
+  "safe_id": "1606.06011",
+  "arxiv_id": "1606.06011",
+  "conjecture_title": "Open question on counter-examples to ℓ(G)+br(G)≥|G|",
+  "paper_title": "A new class of graphs that satisfies the Chen-Chvátal Conjecture",
+  "published": "2016-06-20",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "The structural question of whether all counter-examples to $\\ell(G)+\\mathrm{br}(G)\\geq|G|$ arise, up to bridge-to-path replacement, from a finite base set of graphs remains unresolved in the published literature found. Subsequent work has characterised counter-examples in restricted graph classes (bipartite graphs by Matamala and Zamora 2020, locally connected and diameter-2 graphs circa 2025) and proved the Chen-Chvátal conjecture for graphs of diameter three (arXiv:2512.12047), but none of these results directly address the bridge-elongation characterisation question posed in the source paper.",
+  "since_posted": [
+    {
+      "title": "Chen-Chvátal Conjecture for Graphs of Diameter 3",
+      "authors": "not confirmed from abstract fetch",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2512.12047",
+      "arxiv_id": "2512.12047",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves that all graphs of diameter three satisfy the Chen-Chvátal conjecture by classifying all such graphs having fewer lines than vertices; does not directly address the bridge path elongation characterisation of counter-examples."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Chen-Chvátal conjecture \"ℓ(G)\" \"br(G)\" counter-examples bridge path elongation graph",
+    "Aboulker Matamala Rochet Zamora Chen-Chvátal 1606.06011 conjecture follow-up",
+    "Chen-Chvátal conjecture \"number of lines\" \"bridge\" \"counter-example\" graph metric 2017 2018 2019 2020 2021 2022 2023 2024 2025",
+    "Matamala Zamora bipartite lines counter-example fewer lines than vertices Chen-Chvátal 2019 2020 arxiv"
+  ],
+  "notes": "The 2020 paper 'Lines in bipartite graphs and in 2-metric spaces' by Matamala and Zamora (J. Graph Theory 94(5):565–585) characterises all bipartite counter-examples to the inequality and is likely the closest related work, but its URL was not WebFetched and it is not included in since_posted. Similarly, 2025 preprints characterising counter-examples for locally connected and diameter-2 graphs were identified in search summaries but not individually verified. No paper that directly resolves the bridge path elongation question was found."
+}

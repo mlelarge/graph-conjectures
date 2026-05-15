@@ -1,0 +1,24 @@
+{
+  "review_id": "2002.11100__00",
+  "safe_id": "2002.11100",
+  "arxiv_id": "2002.11100",
+  "conjecture_title": "Informal conjecture on the generality of the probabilistic minor strategy",
+  "paper_title": "Clique minors in graphs with a forbidden subgraph",
+  "published": "2021-02-08",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The conjecture is an informal programmatic statement that the randomized star-contraction strategy introduced in arXiv:2002.11100 may find clique minors under other structural restrictions beyond K_s-free and K_{s,t}-free graphs. No subsequent paper has been found that explicitly identifies this strategy as the key tool in a new structural setting, though the broader paradigm of probabilistic methods for clique minors remains active. The statement is methodological rather than a precise mathematical claim, so it cannot be formally proved or disproved.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Bucić Fox Sudakov clique minors forbidden subgraph star contraction strategy 2002.11100 cite",
+    "clique minor star contraction randomized structural restriction graph 2021 2022 2023 2024",
+    "Semantic Scholar citing papers 2002.11100 clique minors forbidden subgraph",
+    "Bucić Fox Sudakov clique minor star contraction site:arxiv.org 2022 2023 2024 2025",
+    "clique minor forbidden subgraph independence number Ks-free probabilistic randomized 2022 2023 2024 arxiv graph theory"
+  ],
+  "notes": "This entry is an informal methodological remark rather than a precise mathematical conjecture; it cannot be formally resolved as proved or disproved. The paper was published in Random Structures and Algorithms 60 (2022), pp. 327–338. A thorough web search across Semantic Scholar, arXiv, and Google Scholar found no follow-up paper that explicitly credits the star-contraction strategy of Bucić–Fox–Sudakov as the main tool for a new structural restriction. Status is open with high confidence given the recency and absence of any indexed follow-up."
+}

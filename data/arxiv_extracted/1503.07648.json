@@ -1,0 +1,48 @@
+[
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Frankl's Question on Counting Maximum VC Classes",
+    "statement_text": "How many classes of a given VC dimension $d$ are there? How many maximum classes of a given VC dimension $d$ are there?",
+    "context_text": "Frankl posed in 1989 questions about estimates on the number of hypothesis classes and maximum classes of a given VC dimension. The paper answers these questions as an application of its upper bound technique based on the moment curve.",
+    "attributed_to": "Frankl",
+    "attributed_year": 1989,
+    "paper_contribution": "Provides estimates on the number of classes of a given VC dimension and the number of maximum classes of a given VC dimension, answering Frankl's 1989 question.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "Exact original question statement not reproduced in the paper excerpt; statement reconstructed from the description 'answering a question of Frankl from 89'. PDF source — math may be garbled.",
+    "arxiv_id": "1503.07648",
+    "paper_title": "Sign rank versus VC dimension",
+    "paper_authors": [
+      "Noga Alon",
+      "Shay Moran",
+      "Amir Yehudayoff"
+    ],
+    "published": "2016-07-08",
+    "abs_url": "https://arxiv.org/abs/1503.07648",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Ben-David, Eiron, and Simon Question on Sign Rank of Large VC Classes",
+    "statement_text": "What is the sign rank of maximum classes of large VC dimension? In particular, do there exist maximum classes $C \\subseteq \\{\\pm 1\\}^N$ with VC dimension 2 and sign rank $\\tilde{\\Theta}(N^{1/2})$?",
+    "context_text": "Ben-David, Eiron, and Simon studied the relation between VC dimension and sign rank, showing that most hypothesis classes of fixed VC dimension $d > 1$ have high sign rank. They explicitly asked about the sign rank of large VC classes (maximum classes). The present paper answers this question using the connection between spectral gaps and sign rank.",
+    "attributed_to": "Ben-David, Eiron, and Simon",
+    "attributed_year": null,
+    "paper_contribution": "Proves the existence of a maximum class $C \\subseteq \\{\\pm 1\\}^N$ with VC dimension 2 and sign rank $\\tilde{\\Theta}(N^{1/2})$, answering the question affirmatively.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "Exact original question statement not reproduced verbatim in the excerpt; statement reconstructed from the phrase 'answers a question of Ben-David et al. regarding the sign rank of large VC classes'. PDF source — math may be garbled. Section 4 (Concluding remarks and open problems) is absent from the provided text, so additional items posed by the authors may be missing.",
+    "arxiv_id": "1503.07648",
+    "paper_title": "Sign rank versus VC dimension",
+    "paper_authors": [
+      "Noga Alon",
+      "Shay Moran",
+      "Amir Yehudayoff"
+    ],
+    "published": "2016-07-08",
+    "abs_url": "https://arxiv.org/abs/1503.07648",
+    "source": "pdf"
+  }
+]

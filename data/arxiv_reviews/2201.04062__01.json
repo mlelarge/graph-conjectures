@@ -1,0 +1,32 @@
+{
+  "review_id": "2201.04062__01",
+  "safe_id": "2201.04062",
+  "arxiv_id": "2201.04062",
+  "conjecture_title": "Open question on Theorem 3.3 with stronger coherence",
+  "paper_title": "Pure pairs. VIII. Excluding a sparse graph",
+  "published": "2023-10-29",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The open question asks whether Theorem 3.3 of arXiv:2201.04062 holds under the strictly stronger coherence hypothesis $(\\ varepsilon|G|^{1-c},\\varepsilon|G|)$-coherent in place of $(\\varepsilon|G|^{1-c},\\varepsilon|G|^{1-c})$-coherent. The authors note that almost all of the proof already works under the stronger condition and that an affirmative answer would be a step toward Possibility 1.6. A wide web search through May 2026 found no follow-up paper that resolves or substantially advances this specific question.",
+  "since_posted": [],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2301.10147",
+      "verified": true,
+      "note": "Paper is 'Induced subgraph density. I. A loglog step towards Erdos-Hajnal' by Bucić, Nguyen, Scott, Seymour. Its abstract and content concern improving the Erdős-Hajnal clique/stable-set bound from 2^{c√log n} to 2^{c√(log n log log n)}; it does not mention the coherence condition or Theorem 3.3 from arXiv:2201.04062. The high fuzz score reflects shared authorship and series context, not a citation of this specific conjecture."
+    },
+    {
+      "arxiv_id": "2306.02364",
+      "verified": true,
+      "note": "Paper is 'Some results and problems on tournament structure' by Nguyen, Scott, Seymour. Abstract concerns tournaments with large chromatic number containing vertex-disjoint sub-tournaments with all edges directed one way; no mention of coherence conditions, Theorem 3.3, or arXiv:2201.04062. The fuzz match is a false positive from shared authorship."
+    }
+  ],
+  "search_queries": [
+    "Scott Seymour Spirkl \"pure pairs\" \"coherent\" sparse graph 2201.04062",
+    "arxiv \"pure pairs\" \"coherent\" \"excluding a sparse graph\" Scott Seymour Spirkl conjecture 2024 2025"
+  ],
+  "notes": "No follow-up paper addressing this specific open question was found. The conjecture is highly technical (a sharpening of an internal coherence parameter in the proof of Theorem 3.3) and may not have attracted independent attention. The two internal references are false positives caused by shared authorship: 2301.10147 is about Erdős-Hajnal density, and 2306.02364 is about tournament structure; neither cites or discusses the coherence strengthening question."
+}

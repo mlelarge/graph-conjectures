@@ -1,0 +1,86 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.2 (Erdős–Gimbel–Straight)",
+    "statement_text": "Every graph $G$ with $\\omega(G)<5$ and $\\zeta(G)>3$ satisfies $\\chi(G)\\leq\\zeta(G)+2$.",
+    "context_text": "Erdős, Gimbel and Straight found examples of $K_5$-free graphs with $\\chi(G)>\\zeta(G)+2$, but all had $\\zeta(G)\\leq 3$; they conjectured that $\\zeta(G)>3$ prevents the gap from exceeding 2. The conjecture was repeated by Erdős–Gimbel in 1993, appears as Problem 17.3 in Jensen–Toft's book, and as Problem No. 762 on the Erdős problems website.",
+    "attributed_to": "Erdős, Gimbel, and Straight",
+    "attributed_year": 1988,
+    "paper_contribution": "Disproves the conjecture via Theorem 1.4, exhibiting graphs $G$ with $\\omega(G)<5$, $\\zeta(G)>3$, and $\\chi(G)>\\zeta(G)+2$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Published year in bibliography is 1990; the paper attributes the conjecture to 1988 (likely the submission/conference date).",
+    "arxiv_id": "2408.02400",
+    "paper_title": "On the difference between the chromatic and cochromatic number",
+    "paper_authors": [
+      "Raphael Steiner"
+    ],
+    "published": "2024-08-20",
+    "abs_url": "https://arxiv.org/abs/2408.02400",
+    "source": "html"
+  },
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Problem 1.3 (Erdős–Gimbel)",
+    "statement_text": "Are there finitely many graphs $G$ with $\\omega(G)<5$ and $\\chi(G)>\\zeta(G)+2$?",
+    "context_text": "Erdős and Gimbel constructed several hundred examples of graphs $G$ with $\\omega(G)<5$ and $\\chi(G)>\\zeta(G)+2$ but suspected there might be only finitely many such graphs. This problem is closely related to Conjecture 1.2.",
+    "attributed_to": "Erdős and Gimbel",
+    "attributed_year": 1993,
+    "paper_contribution": "Answers negatively via Theorem 1.4, establishing infinitely many such graphs.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2408.02400",
+    "paper_title": "On the difference between the chromatic and cochromatic number",
+    "paper_authors": [
+      "Raphael Steiner"
+    ],
+    "published": "2024-08-20",
+    "abs_url": "https://arxiv.org/abs/2408.02400",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Problem 1.5",
+    "statement_text": "Let $k\\geq 5$. Is there a graph $G_{k}$ with $\\omega(G_{k})<5$, $\\zeta(G_{k})=k$ and $\\chi(G_{k})=\\zeta(G_{k})+3$?",
+    "context_text": "After disproving Conjecture 1.2, the authors ask whether the gap $\\chi(G)-\\zeta(G)$ can reach $3$ for graphs with $\\omega(G)<5$ and arbitrarily large cochromatic number $\\zeta(G)$. Theorem 1.4 guarantees such graphs exist with gap at least $2$ for all large $k$, but gap $3$ remains open.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2408.02400",
+    "paper_title": "On the difference between the chromatic and cochromatic number",
+    "paper_authors": [
+      "Raphael Steiner"
+    ],
+    "published": "2024-08-20",
+    "abs_url": "https://arxiv.org/abs/2408.02400",
+    "source": "html"
+  },
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Problem 1.6 (Erdős–Gimbel)",
+    "statement_text": "For every $n\\in\\mathbb{N}$, let $G_{n}\\sim G(n,\\frac{1}{2})$ be an Erdős-Rényi random graph on $n$ vertices. Is it true that, almost surely, for $n\\rightarrow\\infty$?",
+    "context_text": "Erdős and Gimbel raised this problem about the almost-sure asymptotic behaviour of $\\chi(G_n)-\\zeta(G_n)$ for $G_n\\sim G(n,1/2)$. It is listed as Problem No. 625 on the Erdős problems page; Erdős offered $100 for a positive and $1000 for a negative resolution. It is known that $\\chi(G_n)/\\zeta(G_n)\\to 1$ a.s., so the problem concerns the size of the absolute difference.",
+    "attributed_to": "Erdős and Gimbel",
+    "attributed_year": 1993,
+    "paper_contribution": "Provides positive evidence (Theorem 1.7) toward an affirmative resolution of the problem.",
+    "opg_lookup": true,
+    "confidence": "low",
+    "notes": "The statement text is truncated in the source — the mathematical assertion that is claimed to hold almost surely is missing; only the setup and question mark are present. The problem appears to ask whether $\\chi(G_n)-\\zeta(G_n)\\to\\infty$ almost surely.",
+    "arxiv_id": "2408.02400",
+    "paper_title": "On the difference between the chromatic and cochromatic number",
+    "paper_authors": [
+      "Raphael Steiner"
+    ],
+    "published": "2024-08-20",
+    "abs_url": "https://arxiv.org/abs/2408.02400",
+    "source": "html"
+  }
+]

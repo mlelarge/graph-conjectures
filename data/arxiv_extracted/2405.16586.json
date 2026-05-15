@@ -1,0 +1,77 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Tutte 4-Flow Conjecture (Conjecture 1)",
+    "statement_text": "Every 2-connected graph with no Petersen graph minor admits a nowhere-zero 4-flow.",
+    "context_text": "Tutte proposed this conjecture in 1966. While it remains open in full generality, its special case for cubic graphs was proved in 1997 by Robertson, Seymour, and Thomas. The present paper proves a strengthening for graphs on the projective plane.",
+    "attributed_to": "Tutte",
+    "attributed_year": 1966,
+    "paper_contribution": "Proves a strengthening of the conjecture for the projective plane: a 2-connected graph embedded in the projective plane admits a nowhere-zero 4-flow if and only if it is not Petersen-like (Theorem 1.6 and Corollary 1.3).",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2405.16586",
+    "paper_title": "Three-edge-coloring projective planar cubic graphs: A generalization of the Four Color Theorem",
+    "paper_authors": [
+      "Yuta Inoue",
+      "Ken-ichi Kawarabayashi",
+      "Atsuyuki Miyashita",
+      "Bojan Mohar",
+      "Tomohiro Sonobe"
+    ],
+    "published": "2024-05-26",
+    "abs_url": "https://arxiv.org/abs/2405.16586",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Grünbaum Conjecture (Conjecture 2)",
+    "statement_text": "If $G$ is a 2-connected cubic graph embedded in the torus and $G$ is not 3-edge-colorable, then $G$ contains two edges whose removal gives a planar graph.",
+    "context_text": "Grünbaum conjectured in 1968 that every cubic graph with a polyhedral embedding in an orientable surface is 3-edge-colorable; Kochol disproved this for genus 5, but whether it holds for smaller Euler genus is still unresolved. Conjecture 2 is the torus-specific refinement. The present paper proves the analogous statement for the projective plane.",
+    "attributed_to": "Grünbaum",
+    "attributed_year": 1968,
+    "paper_contribution": "Proves the projective-plane analogue: the only 2-connected cubic non-3-edge-colorable graph embeddable in the projective plane is Petersen-like (Theorem 1.2); the torus case as stated in Conjecture 2 remains open.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2405.16586",
+    "paper_title": "Three-edge-coloring projective planar cubic graphs: A generalization of the Four Color Theorem",
+    "paper_authors": [
+      "Yuta Inoue",
+      "Ken-ichi Kawarabayashi",
+      "Atsuyuki Miyashita",
+      "Bojan Mohar",
+      "Tomohiro Sonobe"
+    ],
+    "published": "2024-05-26",
+    "abs_url": "https://arxiv.org/abs/2405.16586",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Mohar's Conjecture on Projective-Planar Snarks",
+    "statement_text": "The only snark that is embeddable on the projective plane is the Petersen graph.",
+    "context_text": "Mohar conjectured this in 2004 (see [14]); Neil Robertson had already considered a similar question in the mid-1990s (Problem 5.5.19 in [15]). The main result of the paper is a proof of this conjecture, which is the central motivation for the entire work.",
+    "attributed_to": "Mohar",
+    "attributed_year": 2004,
+    "paper_contribution": "Proves the conjecture in full as Theorem 1.2: every cyclically 4-edge-connected cubic graph embeddable in the projective plane, with the single exception of the Petersen graph, is 3-edge-colorable.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Robertson formulated a similar conjecture (Problem 5.5.19 in [15]) for any surface in the mid-1990s; the paper credits both.",
+    "arxiv_id": "2405.16586",
+    "paper_title": "Three-edge-coloring projective planar cubic graphs: A generalization of the Four Color Theorem",
+    "paper_authors": [
+      "Yuta Inoue",
+      "Ken-ichi Kawarabayashi",
+      "Atsuyuki Miyashita",
+      "Bojan Mohar",
+      "Tomohiro Sonobe"
+    ],
+    "published": "2024-05-26",
+    "abs_url": "https://arxiv.org/abs/2405.16586",
+    "source": "pdf"
+  }
+]

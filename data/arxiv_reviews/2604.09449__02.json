@@ -1,0 +1,22 @@
+{
+  "review_id": "2604.09449__02",
+  "safe_id": "2604.09449",
+  "arxiv_id": "2604.09449",
+  "conjecture_title": "Problem 6.3",
+  "paper_title": "Colour-balanced subgraphs",
+  "published": "2026-04-10",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Problem 6.3 asks to improve the leading coefficient in the linear-in-$\\Delta$ error bound for $f_h(F)$ when $k \\geq 3$ colours and $F$ is a bounded-degree spanning forest of $K_{kn}$; the paper leaves this optimisation entirely open. The paper was posted on 10 April 2026 and no follow-up addressing this specific problem was found in any indexed preprint or journal.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "colour-balanced subgraphs spanning forests complete graphs Hogan Scott Tsarev 2026",
+    "arxiv 2604.09449 colour-balanced subgraphs bounded-degree spanning forest",
+    "colour-balanced f_h spanning forest bounded degree complete graph k colors error bounds 2026"
+  ],
+  "notes": "Paper verified via WebFetch of https://arxiv.org/abs/2604.09449. The paper is only ~5 weeks old; absence of follow-up is expected. No internal references were supplied for this problem."
+}

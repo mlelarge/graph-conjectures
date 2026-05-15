@@ -1,0 +1,22 @@
+{
+  "review_id": "2503.20045__02",
+  "safe_id": "2503.20045",
+  "arxiv_id": "2503.20045",
+  "conjecture_title": "Question 4.1",
+  "paper_title": "Orientations of cycles in digraphs of high chromatic number and high minimum out-degree",
+  "published": "2025-03-25",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Question 4.1 from arXiv:2503.20045 asks for which fixed digraphs H there exists a constant c_ε ≥ 1 for all ε > 0 such that every digraph D with χ(D) ≥ c_ε and minimum out-degree at least ε|V(D)| contains H as a subdigraph; this generalises the paper's main result (Theorem 1.3), which settles the question for all cycle orientations. The paper itself notes two families with affirmative answers: the cycle orientations characterised by Theorem 1.3, and subdigraphs of directed complete bipartite digraphs. No follow-up paper addressing the general question was found.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Koerts Moore Spirkl digraph chromatic number minimum out-degree subdigraph 2025",
+    "digraph high chromatic number minimum out-degree fixed subdigraph forced 2025 2026 arXiv",
+    "arXiv 2503.20045 citing follow-up digraph subdigraph forced chromatic Koerts Spirkl Moore 2025 2026"
+  ],
+  "notes": "The source paper was published in Combinatorica 46, 12 (2026) (doi:10.1007/s00493-026-00207-0). Question 4.1 is a broad open problem posed in the paper; the characterisation for cycle orientations (Theorem 1.3) and the Ramsey-type argument for subdigraphs of directed complete bipartite digraphs are the only known partial answers. No follow-up resolving the general question was found in the indexed literature as of 2026-05-14."
+}

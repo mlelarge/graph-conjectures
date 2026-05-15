@@ -1,0 +1,71 @@
+[
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Conjecture on Sufficiency of Conditions E, R, T for Generic Tuples",
+    "statement_text": "When $\\Lambda$ is generic, Conditions E, R, and T are necessary and sufficient for an $m \\times (n+1)$ matrix to be the multiplicity matrix of some polynomial $P$ with respect to $\\Lambda$.",
+    "context_text": "Theorem 1 of the paper establishes that Conditions E, R, T are necessary and sufficient for a $2 \\times (n+1)$ matrix to be a multiplicity matrix. The authors note that for $m > 2$ these three conditions are not sufficient in general (almost all matrices satisfying E, R, C for large $m = n$ are not multiplicity matrices), but conjecture sufficiency is restored when $\\Lambda$ is generic. Further discussion is deferred to Section 8.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated in running prose in Section 3 without a labelled theorem environment; the authors write 'we conjecture that when $\\Lambda$ is generic, Conditions E, R, and T are necessary and sufficient'.",
+    "arxiv_id": "2205.09302",
+    "paper_title": "Counting Dope Matrices",
+    "paper_authors": [
+      "Noga Alon",
+      "Noah Kravitz",
+      "Kevin O'Bryant"
+    ],
+    "published": "2022-12-10",
+    "abs_url": "https://arxiv.org/abs/2205.09302",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Nathanson's Extension Problem [Open Question 4]",
+    "statement_text": "Given an $m \\times (n+1)$ $\\{0,1\\}$-matrix $D$ (which may or may not itself be dope), does there exist a polynomial $P$ and an $m$-tuple $\\Lambda$ of distinct complex numbers such that $D$ appears in $D_P(\\Lambda)$ as the submatrix consisting of the first $n+1$ columns?",
+    "context_text": "Nathanson posed this extension problem in [7, Open Question 4], asking whether any $\\{0,1\\}$-matrix can be realised as the leading columns of some dope matrix. The paper notes a stronger form is of interest: whether $\\Lambda$ can also be fixed beforehand.",
+    "attributed_to": "Nathanson",
+    "attributed_year": null,
+    "paper_contribution": "Resolves the problem affirmatively via Theorem 7: for any $m \\times (n+1)$ $\\{0,1\\}$-matrix $D$ and any pre-specified $m$-tuple $\\Lambda$ of distinct complex numbers, there exists a polynomial $P$ with $n \\leq \\deg(P) \\leq m(n+2)$ such that $D$ appears in $D_P(\\Lambda)$ as the submatrix of the first $n+1$ columns; moreover $P$ may be chosen with coefficients in any subfield containing the entries of $\\Lambda$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2205.09302",
+    "paper_title": "Counting Dope Matrices",
+    "paper_authors": [
+      "Noga Alon",
+      "Noah Kravitz",
+      "Kevin O'Bryant"
+    ],
+    "published": "2022-12-10",
+    "abs_url": "https://arxiv.org/abs/2205.09302",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Nathanson's Open Question 5 (Tightness of Degree Bound)",
+    "statement_text": "Is the degree bound $\\deg(P) \\leq m(n+2)$ in the extension problem (Theorem 7) essentially tight?",
+    "context_text": "Nathanson asked in [7, Open Question 5] about the sharpness of the degree bound required for an extending polynomial. The paper shows that when $D$ is the all-1's matrix the extending polynomial must have degree at least $m(n+1)$, giving a near-matching lower bound.",
+    "attributed_to": "Nathanson",
+    "attributed_year": null,
+    "paper_contribution": "Answers affirmatively: for $D$ the all-1's $m \\times (n+1)$ matrix, any extending polynomial $P$ must satisfy $\\deg(P) \\geq m(n+1)$, showing the upper bound $\\deg(P) \\leq m(n+2)$ of Theorem 7 is nearly tight.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "Exact statement of Nathanson's Open Question 5 is not reproduced verbatim in this paper; the statement is reconstructed from the authors' description of their answer. PDF extraction also garbled after the proof of Corollary 2, so Section 8 open problems are unavailable.",
+    "arxiv_id": "2205.09302",
+    "paper_title": "Counting Dope Matrices",
+    "paper_authors": [
+      "Noga Alon",
+      "Noah Kravitz",
+      "Kevin O'Bryant"
+    ],
+    "published": "2022-12-10",
+    "abs_url": "https://arxiv.org/abs/2205.09302",
+    "source": "pdf"
+  }
+]

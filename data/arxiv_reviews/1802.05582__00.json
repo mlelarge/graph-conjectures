@@ -1,0 +1,21 @@
+{
+  "review_id": "1802.05582__00",
+  "safe_id": "1802.05582",
+  "arxiv_id": "1802.05582",
+  "conjecture_title": "Open problem on sublinear round complexity",
+  "paper_title": "Distributed coloring in sparse graphs with fewer colors",
+  "published": "2018-12-19",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "The open problem asks for a distributed algorithm coloring $d$-degenerate graphs with $(1+\\varepsilon)d$ colors in a number of rounds that is sublinear in $n$ for every fixed $d$, without the round bound growing with $d$. The source paper achieves $O(d^4\\log^3 n)$ rounds, improvable to $d^3 \\cdot 2^{O(\\sqrt{\\log n})}$ via the Panconesi--Srinivasan network decomposition. The 2020 breakthrough of Rozhoň and Ghaffari (STOC 2020) provides a poly$(\\log n)$-time deterministic network decomposition and resolves the $2^{O(\\sqrt{\\log n})}$ factor, but the resulting bound on $d$-degenerate coloring still carries a $d$-dependent multiplicative factor, leaving the requirement of independence from $d$ unmet. No paper directly resolving the conjecture was found in the indexed literature.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "distributed coloring sparse graphs sublinear round complexity degeneracy arXiv 1802.05582",
+    "network decomposition distributed graph coloring sublinear rounds Rozhoň Ghaffari 2020"
+  ],
+  "notes": "The conjecture is closely related to the Rozhoň--Ghaffari (STOC 2020) polylogarithmic network decomposition breakthrough (arXiv:1907.05254, STOC proceedings DOI 10.1145/3357713.3384298), which eliminates $2^{O(\\sqrt{\\log n})}$ factors for many distributed problems. However, for this specific problem the resulting algorithms still carry a polynomial dependence on $d$, so the full requirement of being sublinear in $n$ independently of $d$ remains unresolved. A PODC 2024 paper on adaptive MPC coloring in sparse graphs also appeared in search results but could not be fetched (HTTP 403). No verified citation resolving the conjecture was found after 5 web calls."
+}

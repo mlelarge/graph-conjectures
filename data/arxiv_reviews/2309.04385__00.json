@@ -1,0 +1,33 @@
+{
+  "review_id": "2309.04385__00",
+  "safe_id": "2309.04385",
+  "arxiv_id": "2309.04385",
+  "conjecture_title": "Question 1",
+  "paper_title": "Boundary rigidity of 3D CAT(0) cube complexes",
+  "published": "2023-09-08",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The CAT(0) case of Question 1 has been fully resolved: Chalopin and Chepoi (arXiv:2310.04223) proved that all finite CAT(0) cube complexes of any dimension are reconstructible up to isomorphism from their boundary distances (computed in the 1-skeleton), explicitly confirming the conjecture of Haslegrave–Scott–Tamitegama–Tan and in particular settling the open k≥4 cases. The broader question of what conditions beyond CAT(0) might suffice, and whether CAT(0) is in any sense necessary, remains open.",
+  "since_posted": [
+    {
+      "title": "Boundary rigidity of finite CAT(0) cube complexes",
+      "authors": "Jérémie Chalopin, Victor Chepoi",
+      "year": 2023,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2310.04223",
+      "arxiv_id": "2310.04223",
+      "doi": null,
+      "kind": "proof",
+      "claim": "Proves that all finite CAT(0) cube complexes of any dimension k can be reconstructed from their boundary distances via median-graph corner-peeling techniques, resolving the k≥4 open case of Question 1 under the CAT(0) condition."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "CAT(0) cube complex boundary rigidity boundary distances reconstructible 2309.04385",
+    "boundary rigidity cube complex higher dimensional k-dimensional reconstructible combinatorial type arxiv 2024 2025"
+  ],
+  "notes": "Chalopin–Chepoi (arXiv:2310.04223) resolve the CAT(0) case for all k, explicitly citing this as a conjecture of Haslegrave–Scott–Tamitegama–Tan. The paper also appears to have a journal version listed on ScienceDirect (pii S0095895624000625, likely JCTB 2024), though this was not verified by WebFetch. The original Question 1 is broader—asking for a full characterization of conditions—so the status is 'partial'; a complete necessary-and-sufficient characterization remains open."
+}

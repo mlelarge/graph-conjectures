@@ -1,0 +1,34 @@
+{
+  "review_id": "2110.09403__00",
+  "safe_id": "2110.09403",
+  "arxiv_id": "2110.09403",
+  "conjecture_title": "Problem 1",
+  "paper_title": "Improved lower bound for the list chromatic number of graphs with no $K_t$ minor",
+  "published": "2021-10-18",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The conjecture asks whether the list chromatic number of every $K_t$-minor-free graph is at most $2t$. The source paper itself established the lower bound $(2-o(1))t$, showing that if the conjecture holds the bound $2t$ would be essentially tight. As of 2026, the best known upper bound for $\\chi_\\ell$ of $K_t$-minor-free graphs remains superlinear in $t$ (of the form $O(t(\\log\\log t)^6)$), leaving a gap. A follow-up by Fischer and Steiner (2023) generalises the lower bound to all $H$-minor-free graphs but does not resolve the upper bound question.",
+  "since_posted": [
+    {
+      "title": "On the choosability of $H$-minor-free graphs",
+      "authors": "Olivier Fischer, Raphael Steiner",
+      "year": 2023,
+      "venue": "Combinatorics, Probability & Computing",
+      "url": "https://arxiv.org/abs/2304.04246",
+      "arxiv_id": "2304.04246",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Generalises the $(2-o(1))t$ lower bound from $K_t$-minor-free graphs to all $H$-minor-free graphs (showing $f_\\ell(H) \\ge (1-\\varepsilon)(v(H)+\\kappa(H))$ for large $H$), strengthening the source paper's result but not establishing the conjectured upper bound $2t$."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "list chromatic number Kt minor-free 2t upper bound Steiner 2021 arxiv 2110.09403",
+    "list coloring minor-free graphs Hadwiger choosability upper bound 2t",
+    "Raphael Steiner list chromatic number minor-free 2022 2023 2024 progress choosability"
+  ],
+  "notes": "The current best upper bound for the list chromatic number of $K_t$-minor-free graphs is $O(t(\\log\\log t)^6)$, far above the conjectured $2t$. The conjecture is open with high confidence: the source paper is from 2021, a broad web search and Steiner's own research page confirm no proof of the $2t$ upper bound has appeared. The Fischer–Steiner follow-up (arXiv:2304.04246) only improves the lower-bound side."
+}

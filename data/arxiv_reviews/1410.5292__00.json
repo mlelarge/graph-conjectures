@@ -1,0 +1,34 @@
+{
+  "review_id": "1410.5292__00",
+  "safe_id": "1410.5292",
+  "arxiv_id": "1410.5292",
+  "conjecture_title": "Open problem: ordered Ramsey number of matchings vs triangles",
+  "paper_title": "Ordered Ramsey numbers",
+  "published": "2016-04-25",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The conjecture asks for the correct order of magnitude of $r_<(M, K_3)$ for an ordered matching $M$ on $n$ vertices, with the original gap between a lower bound of $\\Omega((n/\\log n)^{4/3})$ and the trivial upper bound $O(n^2/\\log n)$. Balko and Poljak (2024) made significant partial progress: for almost all $n$-vertex ordered matchings with interval chromatic number 2, they establish $r_<(M^<, K^<_3) \\in \\Omega((n/\\log n)^{4/3}) \\cap O(n^{7/4})$, improving the upper-bound exponent from 2 to 7/4 for this class. The correct order of magnitude for general ordered matchings remains open.",
+  "since_posted": [
+    {
+      "title": "On ordered Ramsey numbers of matchings versus triangles",
+      "authors": "Balko, Martin; Poljak, Marian",
+      "year": 2024,
+      "venue": "Electronic Journal of Combinatorics",
+      "url": "https://arxiv.org/abs/2305.17933",
+      "arxiv_id": "2305.17933",
+      "doi": null,
+      "kind": "partial",
+      "claim": "For almost all $n$-vertex ordered matchings with interval chromatic number 2, proves $r_<(M^<,K^<_3) \\in \\Omega((n/\\log n)^{4/3}) \\cap O(n^{7/4})$, narrowing the exponent gap from $[4/3, 2]$ to $[4/3, 7/4]$ for this class; also shows matchings with interval chromatic number $\\geq 3$ attain the general lower bound $\\Omega((n/\\log n)^{4/3})$; the full question for all ordered matchings remains open."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "ordered Ramsey number matching triangle r_< M K_3 upper bound",
+    "ordered Ramsey numbers matching 1410.5292 Conlon Fox Lee Sudakov follow-up",
+    "ordered Ramsey matching triangle Balko Poljak 2024 2025 interval chromatic arxiv"
+  ],
+  "notes": "Balko and Poljak (arXiv:2305.17933, published in Electronic Journal of Combinatorics 2024, vol. 31(2), P2.23) is the main follow-up directly addressing this problem. An extended abstract appeared at EuroComb 2023. The paper cites an earlier partial result by Rohatgi (2019) as prior art. The correct order of magnitude for all ordered matchings — not just those with bounded interval chromatic number — remains open."
+}

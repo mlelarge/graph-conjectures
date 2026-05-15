@@ -1,0 +1,25 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Erdős-Hajnal Conjecture",
+    "statement_text": "For every graph $H$, there exists $\\varepsilon > 0$ such that every graph $G$ not containing $H$ as an induced subgraph has a stable set or clique of cardinality at least $\\Omega(|V(G)|^{\\varepsilon})$.",
+    "context_text": "The research on near-domination was motivated by the Erdős-Hajnal conjecture [4]. The paper discusses connections with this conjecture and an application of the main near-domination theorem to it in the final section.",
+    "attributed_to": "Erdős and Hajnal",
+    "attributed_year": 1989,
+    "paper_contribution": "Applies the main result (Theorem 1.1, that every $t$-dominating graph has bounded local difference from a $0$-dominating graph) to the Erdős-Hajnal conjecture; the details are in the final section of the paper.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "PDF source — the extracted text is truncated before the final section where the application to the Erdős-Hajnal conjecture is developed. The cardinality lower bound in the PDF reads 'O(|V(G)|^ε)' which is a likely garbling of 'Ω(|V(G)|^ε)' or '|V(G)|^ε'.",
+    "arxiv_id": "1710.06680",
+    "paper_title": "Near-domination in graphs",
+    "paper_authors": [
+      "Bruce Reed",
+      "Alex Scott",
+      "Paul Seymour"
+    ],
+    "published": "2019-02-28",
+    "abs_url": "https://arxiv.org/abs/1710.06680",
+    "source": "pdf"
+  }
+]

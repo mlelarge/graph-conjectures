@@ -1,0 +1,25 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 5 (Aboulker et al.)",
+    "statement_text": "If $C$ is an orientation of $C_\\ell$, then $\\mathrm{mader}_{\\vec{\\chi}}(C) = \\ell$.",
+    "context_text": "Aboulker, Cohen, Havet, Lochet, Moura, and Thomassé initiated the study of subdivisions in digraphs of large dichromatic number and conjectured that the dichromatic Mader number of any orientation of an $\\ell$-cycle equals $\\ell$, which is the smallest it could possibly be. In [1], the conjecture was proved for directed cycles and an upper bound of $2\\ell-1$ was established for arbitrary orientations.",
+    "attributed_to": "Aboulker, Cohen, Havet, Lochet, Moura, and Thomassé",
+    "attributed_year": null,
+    "paper_contribution": "The paper fully resolves the conjecture: Theorem 7 proves $\\mathrm{mader}_{\\vec{\\chi}}(F)=v(F)$ for every octus digraph $F$, and Corollary 8 specialises this to every orientation of a cactus graph, which in particular covers all orientations of cycles.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2008.09888",
+    "paper_title": "Dichromatic number and forced subdivisions",
+    "paper_authors": [
+      "Lior Gishboliner",
+      "Raphael Steiner",
+      "Tibor Szabó"
+    ],
+    "published": "2020-08-22",
+    "abs_url": "https://arxiv.org/abs/2008.09888",
+    "source": "pdf"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Combinatorial Polynomial-Time Algorithm for MIS/MWIS in Perfect Graphs",
+    "statement_text": "No combinatorial polynomial-time algorithm is known for any of MIS, MWIS, MC, and MWC in perfect graphs; finding one is a major open problem in the field. At the moment we do not even have a polynomial-time combinatorial algorithm to solve MIS in perfect graphs with no hole of length four.",
+    "context_text": "The Grötschel–Lovász–Schrijver algorithm solves MWIS on perfect graphs via the ellipsoid method, which the authors distinguish from combinatorial algorithms (roughly, algorithms not using division and operating directly on vertices and edges). Even the restricted case of MIS in perfect graphs with no $C_4$ (hole of length four) lacks a combinatorial polynomial-time algorithm.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "A long-standing community open problem cited as motivation in the introduction; not introduced by these authors. PDF source — math may be garbled.",
+    "arxiv_id": "1903.04761",
+    "paper_title": "On the Maximum Weight Independent Set Problem in graphs without induced cycles of length at least five",
+    "paper_authors": [
+      "Maria Chudnovsky",
+      "Marcin Pilipczuk",
+      "Michał Pilipczuk",
+      "Stéphan Thomassé"
+    ],
+    "published": "2020-01-16",
+    "abs_url": "https://arxiv.org/abs/1903.04761",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "FPT Algorithm for MWIS in (Long-Hole, k-Prism)-Free Graphs",
+    "statement_text": "We do not see how to turn Theorem 1.1 into an FPT-algorithm (without using the result of [1]).",
+    "context_text": "Theorem 1.1 gives a polynomial-time algorithm running in time $n^{O(k)}$ for MWIS in (long-hole, $k$-prism)-free $n$-vertex graphs for any fixed integer $k > 0$. Immediately after stating the theorem the authors remark that extending this to a fixed-parameter tractable algorithm parameterized by $k$ appears to be out of reach with their techniques, unless the result of Abrishami et al. [1] is invoked.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Implicit open question stated in prose without a labelled environment. PDF source — math may be garbled.",
+    "arxiv_id": "1903.04761",
+    "paper_title": "On the Maximum Weight Independent Set Problem in graphs without induced cycles of length at least five",
+    "paper_authors": [
+      "Maria Chudnovsky",
+      "Marcin Pilipczuk",
+      "Michał Pilipczuk",
+      "Stéphan Thomassé"
+    ],
+    "published": "2020-01-16",
+    "abs_url": "https://arxiv.org/abs/1903.04761",
+    "source": "pdf"
+  }
+]

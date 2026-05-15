@@ -1,0 +1,44 @@
+{
+  "review_id": "2402.08418__00",
+  "safe_id": "2402.08418",
+  "arxiv_id": "2402.08418",
+  "conjecture_title": "Conjecture 1.12",
+  "paper_title": "Variations on Sidorenko's conjecture in tournaments",
+  "published": "2024-02-13",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The conjecture remains open in full generality. The source paper (2402.08418) already confirms it for trees with at most one vertex of even degree. A follow-up paper (arXiv:2512.11222, He–Mani–Nie–Tung–Wei, 2025) proves the conjecture for all caterpillars (Theorem 1.4) and reduces the full conjecture to a restricted class: trees that are not caterpillars with at least 2 vertices of even degree and no isomorphic pair (their Conjecture 1.5). Specific open cases such as the '2-3-4 tree' are identified as Problem 1.6.",
+  "since_posted": [
+    {
+      "title": "New Sidorenko-type inequalities in tournaments",
+      "authors": "Xiaoyu He, Nitya Mani, Jiaxi Nie, Nathan Tung, Fan Wei",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2512.11222",
+      "arxiv_id": "2512.11222",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves every caterpillar has a tournament anti-Sidorenko orientation (Theorem 1.4) and reduces Conjecture 1.12 to the subclass of non-caterpillar trees with at least 2 vertices of even degree and no isomorphic pair (Conjecture 1.5); the full conjecture remains open."
+    }
+  ],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2312.15572",
+      "verified": true,
+      "note": "Paper is 'Induced subgraph density. VI. Bounded VC-dimension' by Nguyen, Scott, Seymour — concerns the Erdos-Hajnal conjecture for two-colourable tournaments, not Sidorenko's conjecture in tournaments. The internal reference attribution is a false positive; this paper does not address Conjecture 1.12 from 2402.08418."
+    },
+    {
+      "arxiv_id": "2312.15333",
+      "verified": true,
+      "note": "Paper is 'Induced subgraph density. VII. The five-vertex path' by Nguyen, Scott, Seymour — proves the Erdos-Hajnal conjecture for P_5, unrelated to tournament anti-Sidorenko orientation of trees. The internal reference attribution is a false positive."
+    }
+  ],
+  "search_queries": [
+    "tournament anti-Sidorenko tree orientation conjecture arXiv 2402.08418",
+    "Sidorenko conjecture tournaments trees Fox Himwich Mani Zhou anti-Sidorenko orientation"
+  ],
+  "notes": "The two internal references (2312.15572 and 2312.15333) are false positives from fuzzy matching — both are about Erdos-Hajnal / induced subgraph density and have no bearing on Conjecture 1.12. The only confirmed follow-up is arXiv:2512.11222 (verified via WebFetch), which gives substantial partial progress."
+}

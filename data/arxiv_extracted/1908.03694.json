@@ -1,0 +1,25 @@
+[
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Open problem on quantum ergodicity over small spectral windows (Remark 1.2)",
+    "statement_text": "The problem of controlling the other eigenvectors well enough to say that the quantum-ergodicity average in a small spectral window $I \\subset (-2\\sqrt{d}, 2\\sqrt{d})$ of width roughly $1/\\log(m)$ is not equidistributed is not pursued here and remains open. It would also be interesting to determine whether the constructions of Theorem 1.3 can prove a lower bound on the length of the smallest such window that is possible.",
+    "context_text": "The works [ALM15, BLML15] prove quantum ergodicity on sequences of expander graphs when the spectral average (3) is taken over a window $I$ of width roughly $1/\\log(m)$. Theorem 1.3 produces many localized eigenvectors concentrated in a very small spectral window due to high eigenvalue multiplicity, but whether this implies that the QE average itself fails to be equidistributed in that window requires controlling all other eigenvectors in the window, which the paper does not achieve.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated in prose inside Remark 1.2, not a labelled theorem environment. PDF source — surrounding math may be partially garbled.",
+    "arxiv_id": "1908.03694",
+    "paper_title": "High-girth near-Ramanujan graphs with localized eigenvectors",
+    "paper_authors": [
+      "Noga Alon",
+      "Shirshendu Ganguly",
+      "Nikhil Srivastava"
+    ],
+    "published": "2019-08-10",
+    "abs_url": "https://arxiv.org/abs/1908.03694",
+    "source": "pdf"
+  }
+]

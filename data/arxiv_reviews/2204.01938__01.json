@@ -1,0 +1,22 @@
+{
+  "review_id": "2204.01938__01",
+  "safe_id": "2204.01938",
+  "arxiv_id": "2204.01938",
+  "conjecture_title": "Suspected directed surplus of a random B-free orientation (Remark 1.6)",
+  "paper_title": "Extremal results on feedback arc sets in digraphs",
+  "published": "2022-04-19",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "No follow-up resolving Remark 1.6 was found in the published or preprint literature. The conjecture, stated informally as a remark rather than a formal conjecture in the paper, asks whether a random orientation of a B-free graph with m = ex(n, B) edges achieves directed surplus Omega(sqrt(mn)) even when the auxiliary condition ex(n, B) = Theta(n^{2-epsilon(B)}) is dropped; the main paper (published 2024 in Random Structures & Algorithms) proves the bound only under that additional density condition. A 2024 preprint (arXiv:2409.16443) on feedback arc sets in random Erdos-Renyi graphs cites the Fox-Himwich-Mani paper but does not address this specific remark.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Fox Himwich Mani \"feedback arc set\" digraphs \"directed surplus\" \"B-free orientation\" 2022",
+    "arxiv 2204.01938 \"directed surplus\" \"feedback arc\" citing papers follow-up",
+    "\"B-free orientation\" \"directed surplus\" \"feedback arc\" extremal graph sqrt tournament 2023 2024 2025"
+  ],
+  "notes": "Remark 1.6 is not labeled a conjecture in the paper — it is a brief informal remark. The main theorem (Theorem 1.5) proves beta(G) = m/2 - Omega(sqrt(mn)) for B-free orientations under the condition ex(n,B) = Theta(n^{2-epsilon(B)}); Remark 1.6 conjectures the same bound holds without that density condition. No paper specifically targeting this remark was found after five web calls. The paper was published in Random Structures & Algorithms 64.2 (2024), pp. 287-308 (doi available via Wiley)."
+}

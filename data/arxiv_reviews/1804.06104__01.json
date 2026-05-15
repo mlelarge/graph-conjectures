@@ -1,0 +1,23 @@
+{
+  "review_id": "1804.06104__01",
+  "safe_id": "1804.06104",
+  "arxiv_id": "1804.06104",
+  "conjecture_title": "Informal Conjecture: probabilistic methods insufficient for the $\\Delta+2$ bound",
+  "paper_title": "Progress on the adjacent vertex distinguishing edge colouring conjecture",
+  "published": "2020-07-22",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "This is an informal meta-conjecture by Joret and Lochet that probabilistic methods such as the Lovász Local Lemma or entropy compression will not suffice on their own to prove the $\\Delta+2$ bound for adjacent vertex distinguishing edge colouring. As of 2026, the full $\\Delta+2$ conjecture of Zhang, Liu, and Wang remains open, with the best known general upper bound still being $\\Delta+19$ established in the source paper itself. No subsequent work has achieved $\\Delta+2$ by any method (which would have forced a reassessment of the conjecture's plausibility), and no formal analysis has appeared confirming or refuting the insufficiency claim about probabilistic techniques.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "adjacent vertex distinguishing edge colouring Delta+2 bound proof 2021 2022 2023 2024",
+    "Joret Lochet adjacent vertex distinguishing entropy compression arXiv 1804.06104 citing papers",
+    "adjacent vertex distinguishing edge coloring Delta+3 OR Delta+2 proof 2023 2024 2025 arXiv graph theory",
+    "Przybylo adjacent vertex distinguishing edge coloring 2022 2023 2024 arXiv improved bound"
+  ],
+  "notes": "This conjecture is informal and not mathematically falsifiable in the usual sense — it would be 'disproved' only if someone produced a proof of the $\\Delta+2$ bound using purely probabilistic methods. No such proof exists as of the review date. The status 'open' reflects that the underlying $\\Delta+2$ conjecture is unresolved and no follow-up paper has addressed the probabilistic-methods limitation claim directly. The best general bound remains $\\Delta+19$ (Joret–Lochet 2020, the source paper). A December 2025 arXiv paper (2512.10827) addresses vertex-distinguishing edge coloring but is a distinct problem."
+}

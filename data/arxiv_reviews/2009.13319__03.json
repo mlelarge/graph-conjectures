@@ -1,0 +1,32 @@
+{
+  "review_id": "2009.13319__03",
+  "safe_id": "2009.13319",
+  "arxiv_id": "2009.13319",
+  "conjecture_title": "Research direction: minimal heroic tournament families",
+  "paper_title": "Extension of Gyarfas-Sumner conjecture to digraphs",
+  "published": "2020-09-28",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "No paper has been found that directly addresses the characterization of all finite minimal families of tournaments forming heroic sets of the form $\\{\\overrightarrow{K_2}, \\overleftrightarrow{K_2}, H_1, \\ldots, H_k\\}$; the single-hero case ($|\\mathcal{H}|=1$) was already settled by Berger et al. before the source paper. Related activity around heroic sets and dichromatic number bounds has continued (heroes in oriented complete multipartite graphs, chi-boundedness for specific forbidden structures), but the general multi-tournament minimal family characterization remains open. Confidence is medium rather than high because the paper is over five years old and related heroic-set questions have attracted ongoing attention.",
+  "since_posted": [],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2103.07886",
+      "verified": true,
+      "note": "Paper exists (Decomposing and colouring some locally semicomplete digraphs, Aboulker–Aubian–Charbit, 2021/2022). WebFetch confirms it does not discuss heroic sets or the minimal heroic tournament families direction; it proves a conjecture about oriented graphs whose out-neighborhoods are transitive tournaments (dichromatic number ≤ 2). The internal reference contribution ($F=S_2^+$, $H=C_3$) relates to a different conjecture from arXiv:2009.13319 about chi-boundedness, not this research direction."
+    },
+    {
+      "arxiv_id": "2212.02272",
+      "verified": true,
+      "note": "Paper exists ((P6, triangle)-free digraphs have bounded dichromatic number, Aboulker–Aubian–Charbit–Thomassé, 2022/2023). WebFetch confirms it does not discuss heroic sets or the minimal heroic tournament families direction; it bounds the dichromatic number for (P6, triangle)-free digraphs. The internal reference contribution ($\\overrightarrow{P}_6$-free, $\\omega(D)\\leq 2$) relates to a different conjecture from arXiv:2009.13319, not this research direction."
+    }
+  ],
+  "search_queries": [
+    "heroic set tournament digraph minimal Aboulker Charbit Naserasr",
+    "arXiv 2009.13319 Gyarfas-Sumner conjecture digraph heroic"
+  ],
+  "notes": "Both internal references address other conjectures from arXiv:2009.13319 (chi-boundedness and dichromatic number for specific forbidden structures) rather than the minimal heroic tournament families research direction. A related verified paper, arXiv:2202.13306 (Aboulker, Aubian, Charbit 2022, 'Heroes in oriented complete multipartite graphs'), characterizes heroes in oriented complete multipartite graphs and quasi-transitive oriented graphs, showing heroes there coincide with those in tournaments (with one unresolved 6-vertex exception); this is related background but concerns individual-tournament heroic sets (closer to the already-resolved $|\\mathcal{H}|=1$ case), not the multi-tournament minimal family characterization. No follow-up paper specifically addressing the multi-tournament minimal heroic family characterization was found within the 5-call budget."
+}

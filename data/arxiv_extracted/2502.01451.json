@@ -1,0 +1,80 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "3-Flow Conjecture (Tutte)",
+    "statement_text": "Every 4-edge-connected graph admits a nowhere-zero 3-flow.",
+    "context_text": "Tutte proved that a planar graph admits a 3-colouring if and only if its dual admits a nowhere-zero 3-flow, so Grötzsch's theorem implies 4-edge-connected planar graphs have nowhere-zero 3-flows. Tutte conjectured planarity is not required. The paper's density results on flow-critical graphs and its extension of the Lovász et al. theorem are motivated as a possible approach toward this conjecture.",
+    "attributed_to": "Tutte",
+    "attributed_year": 1954,
+    "paper_contribution": "Proves a density bound $|E(G)| \\leq 3|V(G)| - 5$ for flow-critical graphs with at most one vertex of degree at least 7 (Theorem 1.6), and extends the Lovász et al. 6-edge-connectivity theorem to allow the tip vertex $z$ to have arbitrary degree when another high-degree vertex exists with no small separating cut.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2502.01451",
+    "paper_title": "Flow-critical graphs",
+    "paper_authors": [
+      "Arnbjörg Soffía Árnadóttir",
+      "Zdeněk Dvořák",
+      "Bernard Lidický",
+      "Benjamin Moore",
+      "Evelyne Smith-Roberge",
+      "Robert Šámal"
+    ],
+    "published": "2026-02-07",
+    "abs_url": "https://arxiv.org/abs/2502.01451",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.4 (Li et al.)",
+    "statement_text": "For any connected-flow-critical graph $G$ on at least seven vertices, $|E(G)| \\leq 3|V(G)| - 8$.",
+    "context_text": "Li et al. proposed this upper bound on edge density for connected-flow-critical graphs, noting it implies Theorem 1.3 (Lovász et al.) and is achieved by infinitely many examples. The paper states Conjecture 1.4 is still wide open aside from lower-bound progress in [11] and genus-bounded cases in [6], but proves an analogous bound for the more general notion of flow-criticality.",
+    "attributed_to": "Li et al.",
+    "attributed_year": null,
+    "paper_contribution": "Proves the analogous density bound $|E(G)| \\leq 3|V(G)| - 5$ for (non-connected) flow-critical graphs $G$ with at most one vertex of degree at least 7 (Theorem 1.6), a strictly more general graph class than connected-flow-critical graphs.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2502.01451",
+    "paper_title": "Flow-critical graphs",
+    "paper_authors": [
+      "Arnbjörg Soffía Árnadóttir",
+      "Zdeněk Dvořák",
+      "Bernard Lidický",
+      "Benjamin Moore",
+      "Evelyne Smith-Roberge",
+      "Robert Šámal"
+    ],
+    "published": "2026-02-07",
+    "abs_url": "https://arxiv.org/abs/2502.01451",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.5 (Li et al.)",
+    "statement_text": "For any connected-flow-critical graph $G$ on at least seven vertices with $n_3$ vertices of degree 3, we have $|E(G)| < \\frac{5|V(G)|}{2} + n_3$.",
+    "context_text": "Li et al. proposed this stronger density bound incorporating the count $n_3$ of degree-3 vertices, motivated by the observation that the extremal examples for Conjecture 1.4 all have many degree-3 vertices. If true, this stronger bound would imply the 3-flow conjecture. The paper notes this conjecture as background motivation alongside Conjecture 1.4.",
+    "attributed_to": "Li et al.",
+    "attributed_year": null,
+    "paper_contribution": "Not directly proved; the paper's Theorem 1.6 establishes a related but weaker density bound for (non-connected) flow-critical graphs restricted to those with at most one vertex of degree at least 7.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2502.01451",
+    "paper_title": "Flow-critical graphs",
+    "paper_authors": [
+      "Arnbjörg Soffía Árnadóttir",
+      "Zdeněk Dvořák",
+      "Bernard Lidický",
+      "Benjamin Moore",
+      "Evelyne Smith-Roberge",
+      "Robert Šámal"
+    ],
+    "published": "2026-02-07",
+    "abs_url": "https://arxiv.org/abs/2502.01451",
+    "source": "pdf"
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "review_id": "2410.23566__01",
+  "safe_id": "2410.23566",
+  "arxiv_id": "2410.23566",
+  "conjecture_title": "Conjecture 7",
+  "paper_title": "Blow-ups and extensions of trees in tournaments",
+  "published": "2024-10-31",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Conjecture 7 asks whether the $k$-blow-up operation preserves linear unavoidability under a bounded maximum average degree condition. The source paper itself proves the conjecture for the special case where $\\mathcal{F}$ is the family of oriented trees, establishing that $k$-blow-ups of oriented trees are linearly unavoidable. No subsequent paper resolving the full conjecture has been found in the literature as of May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "linearly unavoidable blow-up bounded maximum average degree tournament arxiv 2410.23566",
+    "linearly unavoidable k-blow-up oriented graphs tournaments Aboulker Havet Lochet Lopes",
+    "\"linearly unavoidable\" \"blow-up\" tournament conjecture 2025 2026",
+    "Aboulker Havet Picasarri-Arrieta Rambaud linearly unavoidable 2025 tournaments digraphs"
+  ],
+  "notes": "The paper proves the conjecture for the family of oriented trees (a significant partial result). The bounded maximum average degree condition in the conjecture is noted as necessary, as demonstrated by a counterexample using disjoint unions of transitive tournaments. No follow-up paper addressing the full conjecture was found after searching author homepages and arXiv. Clément Rambaud's 2026 preprint concerns graph minors and is unrelated."
+}

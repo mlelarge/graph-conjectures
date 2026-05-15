@@ -1,0 +1,22 @@
+{
+  "review_id": "1809.08324__01",
+  "safe_id": "1809.08324",
+  "arxiv_id": "1809.08324",
+  "conjecture_title": "Conjecture 1.5",
+  "paper_title": "Short directed cycles in bipartite digraphs",
+  "published": "2019-07-24",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "Conjecture 1.5 from arXiv:1809.08324 generalizes the Caccetta-Häggkvist conjecture to bipartite digraphs with asymmetric degree conditions. The original paper (Combinatorica 2020) proves the conjecture for k=1 and k=2, and a weaker bound (α+β > 2/(k+1)) for k=3 and k=4. No follow-up paper specifically resolving the full conjecture was found across searches covering 2019–2026; the conjecture remains open alongside the still-unsettled Caccetta-Häggkvist conjecture.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Seymour Spirkl bipartite digraph girth Caccetta-Häggkvist conjecture 1809.08324",
+    "bipartite digraph girth short directed cycles alpha beta conjecture Caccetta-Haggkvist 2020 2021 2022 2023 2024",
+    "arxiv \"1809.08324\" bipartite digraph girth conjecture cite 2021 2022 2023 2024 2025"
+  ],
+  "notes": "The conjecture implies the Caccetta-Häggkvist conjecture (via β→0) and is best possible for infinitely many pairs (α,β). The SIAM paper 'Nonuniform Degrees and Rainbow Versions of the Caccetta-Häggkvist Conjecture' (doi:10.1137/22M1529658, 2023) appeared in searches as potentially related but its content could not be retrieved via WebFetch. arXiv:2102.12830 (Grzesik-Volec, 2021) concerns optimal semidegree thresholds for directed cycles in general oriented graphs, not the bipartite asymmetric setting of this conjecture. No confirmed resolution found."
+}

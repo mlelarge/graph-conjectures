@@ -1,0 +1,25 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.1 (Tutte's 3-edge-coloring conjecture)",
+    "statement_text": "Every 2-edge-connected cubic graph that does not topologically contain the Petersen graph is 3-edge-colorable.",
+    "context_text": "Stated as the primary motivation for the paper. The authors describe a multi-paper program to reduce this conjecture to 'apex' and 'doublecross' graphs (classes close to planar graphs), and then to adapt their proof of the Four Color Theorem to handle those classes. The structure theory of cyclically 5-connected cubic graphs developed in this paper is a key ingredient in the first part of that program.",
+    "attributed_to": "Tutte",
+    "attributed_year": 1966,
+    "paper_contribution": "Develops the structure theory of cyclically 5-connected cubic graphs (proving how such graphs can be built up by handle and circuit expansions from five minimal graphs) that is applied in a companion paper [11] to understand cubic graphs not topologically containing the Petersen graph, as part of the broader reduction program toward proving this conjecture.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1503.02298",
+    "paper_title": "Cyclically five-connected cubic graphs",
+    "paper_authors": [
+      "Neil Robertson",
+      "P. D. Seymour",
+      "Robin Thomas"
+    ],
+    "published": "2017-03-25",
+    "abs_url": "https://arxiv.org/abs/1503.02298",
+    "source": "pdf"
+  }
+]

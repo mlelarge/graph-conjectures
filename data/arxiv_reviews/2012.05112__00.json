@@ -1,0 +1,44 @@
+{
+  "review_id": "2012.05112__00",
+  "safe_id": "2012.05112",
+  "arxiv_id": "2012.05112",
+  "conjecture_title": "Open Problem (asymptotic behavior of f(H,q))",
+  "paper_title": "Divisible subdivisions",
+  "published": "2021-06-29",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "solved",
+  "confidence": "high",
+  "summary": "Das, Draganić, and Steiner (arXiv:2111.05723, JCTB 2023) resolved the asymptotic behavior of f(H,q) by proving f(H,q) ≤ (21/2)qn + 8n + 14q for subcubic H on n vertices, and showing this bound is optimal up to a constant multiplicative factor. This settles the open problem: the asymptotic order of f(H,q) is linear in qn. A 2025 follow-up by Hou and Wang (arXiv:2510.05697) studies the related function s_q(H) in complete-graph subdivisions and achieves further improvements for special cases.",
+  "since_posted": [
+    {
+      "title": "Tight bounds for divisible subdivisions",
+      "authors": "Shagnik Das, Nemanja Draganić, Raphael Steiner",
+      "year": 2021,
+      "venue": "Journal of Combinatorial Theory, Series B",
+      "url": "https://arxiv.org/abs/2111.05723",
+      "arxiv_id": "2111.05723",
+      "doi": null,
+      "kind": "proof",
+      "claim": "Proves f(H,q) ≤ (21/2)qn + 8n + 14q for subcubic H on n vertices and shows this is optimal up to a constant factor, resolving the asymptotic behavior of f(H,q) posed in arXiv:2012.05112."
+    },
+    {
+      "title": "Divisible subdivisions of graphs in subdivisions of complete graphs",
+      "authors": "Xinmin Hou, Xiangyang Wang",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2510.05697",
+      "arxiv_id": "2510.05697",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Studies the related function s_q(H) (minimum complete-graph order for a q-divisible subdivision of H), proving improved upper bounds and resolving the case q=2 completely for 5-degenerate graphs and trees."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "divisible subdivisions f(H,q) minor graph Alon Krivelevich arxiv 2012.05112",
+    "subdivision divisible path length modulo graph minor bounds 2022 2023 2024"
+  ],
+  "notes": "The key resolution is arXiv:2111.05723 (Das–Draganić–Steiner), which appeared on arXiv in November 2021 (after the June 2021 journal publication of the source paper) and was published in JCTB in 2023. The bound f(H,q) = Θ(qn) is tight up to constants, so the asymptotic question is answered. The 2025 paper (arXiv:2510.05697) addresses a variant with complete-graph subdivisions rather than K_f-minors."
+}

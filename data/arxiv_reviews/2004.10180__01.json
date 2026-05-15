@@ -1,0 +1,23 @@
+{
+  "review_id": "2004.10180__01",
+  "safe_id": "2004.10180",
+  "arxiv_id": "2004.10180",
+  "conjecture_title": "Improvement of the bound in Theorem 1.12",
+  "paper_title": "The regularity method for graphs with few 4-cycles",
+  "published": "2021-09-25",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "No follow-up work has been found that improves the bound from $o(\\sqrt{n})$ to $n^{1/2-\\varepsilon}$ for subsets of $[n]$ without a nontrivial solution to $x_1+x_2+2x_3=x_4+3x_5$. Prendiville (arXiv:2005.03484, 2020) gave an alternative proof of the $o(\\sqrt{n})$ result of Conlon--Fox--Sudakov--Zhao with effective (quantitative) bounds and extensions to equations in more variables, but this work predates the 2021 publication and does not establish a polynomial gain. The open question of whether $n^{1/2-\\varepsilon}$ holds for some $\\varepsilon>0$ remains unresolved.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "x1+x2+2x3=x4+3x5 subset [n] bound n^{1/2} additive combinatorics Conlon Fox Sudakov Zhao",
+    "arXiv 2004.10180 regularity method graphs few 4-cycles citations follow-up",
+    "Prendiville solving equations in dense Sidon sets translation-invariant linear equations arXiv",
+    "Sidon set linear equation n^{1/2-epsilon} additive combinatorics subset bound improvement 2022 2023 2024"
+  ],
+  "notes": "Prendiville (arXiv:2005.03484, 2020, published Math. Proc. Cambridge Phil. Soc. 2022) provides an alternative proof of the o(sqrt(n)) result and effective bounds, but predates the paper's formal 2021 publication and does not address the polynomial improvement question. No papers after 2021 found that resolve or make progress on the n^{1/2-epsilon} question."
+}

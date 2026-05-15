@@ -1,0 +1,25 @@
+[
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.3",
+    "statement_text": "The $\\mathcal{H}$-square-root problem is NP-complete for the class $\\mathcal{H}$ of planar graphs.",
+    "context_text": "The authors prove NP-completeness of the H-square-root problem for the class of 6-apex graphs (a proper minor-closed class), and note that 6-apex graphs lie at the bottom of the bounded-expansion hierarchy. They ask whether apex vertices are truly necessary or whether planarity alone already makes the problem hard, and state they believe the latter is the case.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2205.12764",
+    "paper_title": "Square roots of nearly planar graphs",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Benjamin Moore",
+      "Abhiruk Lahiri"
+    ],
+    "published": "2023-07-13",
+    "abs_url": "https://arxiv.org/abs/2205.12764",
+    "source": "pdf"
+  }
+]

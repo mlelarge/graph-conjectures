@@ -1,0 +1,27 @@
+[
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.3",
+    "statement_text": "There exists a constant $c$ such that for any positive integers $n$ and $\\kappa_1 \\geq \\cdots \\geq \\kappa_n$, the partition polytope $\\mathrm{PP}(\\kappa_1, \\ldots, \\kappa_n)$ has diameter at most $\\lceil 4\\kappa_1/3 \\rceil + c$.",
+    "context_text": "Theorem 1.1 establishes an upper bound of $\\lceil 3\\kappa_1/2 \\rceil$ on the diameter of $\\mathrm{PP}(\\kappa_1,\\ldots,\\kappa_n)$, while the known lower bound (generalizing a construction from [6]) is $\\lceil 4\\kappa_1/3 \\rceil$. The authors suspect the true diameter is closer to the lower bound, motivating this conjecture. They also note that the natural proof strategy—showing diameter at most 4 when $\\kappa_1 = 3$—fails, so new techniques will be required.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2507.12748",
+    "paper_title": "Improved Decomposition Bounds for Partition Polytopes and Odd-Covers",
+    "paper_authors": [
+      "Steffen Borgwardt",
+      "Zdeněk Dvořák",
+      "Bryce Frederickson",
+      "Abigail Nix",
+      "Youngho Yoo"
+    ],
+    "published": "2025-07-28",
+    "abs_url": "https://arxiv.org/abs/2507.12748",
+    "source": "pdf"
+  }
+]

@@ -1,0 +1,48 @@
+[
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Characterization of ABC-minimal trees",
+    "statement_text": "Characterize all trees with minimum ABC-index (ABC-minimal trees), i.e., for each order $n$, describe every tree $T$ of order $n$ that minimizes $\\mathrm{ABC}(T) = \\sum_{uv \\in E(T)} \\sqrt{\\frac{d_u + d_v - 2}{d_u d_v}}$.",
+    "context_text": "Despite many attempts over several years, characterizing trees with minimum ABC-index remained an open problem in mathematical chemistry, described by some as one of the most intriguing open problems in the area. A computer-aided study (reference [24]) produced a structural conjecture that was subsequently disproved by later work [2, 3], indicating the true structure is more complex.",
+    "attributed_to": "open problem in mathematical chemistry",
+    "attributed_year": null,
+    "paper_contribution": "Fully resolves the problem by describing the exact structure of ABC-minimal trees for all sufficiently large $n$: radius at most 5, all vertices except one of degree at most 54, all but $O(1)$ vertices of degree 1, 2, 4, or 53, and $\\gamma_n = \\frac{1}{53}\\sqrt{\\frac{1+26\\sqrt{\\frac{55+156}{106}}}{365}}\\,n + O(1) \\approx 0.67737178\\,n + O(1)$.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "PDF source — no formal problem-environment label; described in introductory prose as an open problem. Math in the asymptotic formula may be garbled due to PDF extraction.",
+    "arxiv_id": "1804.02098",
+    "paper_title": "The evolution of the structure of ABC-minimal trees",
+    "paper_authors": [
+      "Seyyed Aliasghar Hosseini",
+      "Bojan Mohar",
+      "Mohammad Bagher Ahmadi"
+    ],
+    "published": "2019-11-04",
+    "abs_url": "https://arxiv.org/abs/1804.02098",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "B3-branches main component conjecture",
+    "statement_text": "$B_3$-branches are the main structural component of ABC-minimal trees.",
+    "context_text": "Earlier computational and theoretical works (references [24] and [13]) expected ABC-minimal trees to be composed primarily of $B_3$-branches, with only a small number of $B_k$-branches for $k \\neq 3$. Reference [1] later indicated that $C$-branches would play a prominent role, but the full picture was not established.",
+    "attributed_to": "authors of references [24] and [13]",
+    "attributed_year": null,
+    "paper_contribution": "Disproves the conjecture for sufficiently large $n$ by proving (Theorem 5.3) that for large trees only $C_{52}$-branches occur as the dominant structural component, so $B_3$-branches are not the main building block in the asymptotic regime.",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "PDF source — statement reconstructed from introductory prose; bibliography not available in extraction so authors of [24] and [13] cannot be identified precisely.",
+    "arxiv_id": "1804.02098",
+    "paper_title": "The evolution of the structure of ABC-minimal trees",
+    "paper_authors": [
+      "Seyyed Aliasghar Hosseini",
+      "Bojan Mohar",
+      "Mohammad Bagher Ahmadi"
+    ],
+    "published": "2019-11-04",
+    "abs_url": "https://arxiv.org/abs/1804.02098",
+    "source": "pdf"
+  }
+]

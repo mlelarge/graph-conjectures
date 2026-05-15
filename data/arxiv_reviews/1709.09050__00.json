@@ -1,0 +1,22 @@
+{
+  "review_id": "1709.09050__00",
+  "safe_id": "1709.09050",
+  "arxiv_id": "1709.09050",
+  "conjecture_title": "Classification of planar graphs by cop number",
+  "paper_title": "Topological directions in Cops and Robbers",
+  "published": "2018-04-22",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The problem of classifying which connected planar graphs have cop number 1, 2, or 3 remains fully open as of 2026. Cop-win planar graphs (cop number 1) are precisely the dismantlable ones, and outerplanar graphs have cop number at most 2 with the chordal outerplanar ones being cop-win, but no complete structural characterisation of planar graphs with cop number 2 or 3 is known. Multiple recent surveys and follow-up papers confirm this is still an active open problem.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "planar graphs cop number classification 1 2 3 dismantlable",
+    "cop number planar graphs Bonato Mohar arXiv 1709.09050",
+    "planar cop number 2 characterization classification 2020 2021 2022 2023 2024 2025"
+  ],
+  "notes": "No follow-up paper resolving the full classification was found in up to 5 web searches. The 2024 paper arXiv:2409.16279 studies 1-planar graphs (a broader class) and does not resolve the planar classification. The toroidal result (arXiv:1904.07946, Lehner) is for toroidal graphs, not planar. The conjecture remains open with high confidence."
+}

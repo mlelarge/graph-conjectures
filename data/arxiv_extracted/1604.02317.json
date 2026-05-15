@@ -1,0 +1,25 @@
+[
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Informal Conjecture (vertex-disjoint paths, stability number two)",
+    "statement_text": "We suspect the $k$ vertex-disjoint paths problem might be NP-complete for digraphs with stability number two.",
+    "context_text": "The authors discuss whether their polynomial-time result for semicomplete digraphs (Theorem 1.2) can be extended to digraphs with bounded stability number. The edge-disjoint version is known to be polynomial-time solvable in this setting, but the vertex-disjoint version remains out of reach. The authors remark that they suspect NP-completeness already at stability number two.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated as 'we suspect' in running prose with no labelled theorem environment. The full paper text appears truncated after Section 3; additional conjectures or open problems in later sections may have been missed.",
+    "arxiv_id": "1604.02317",
+    "paper_title": "Disjoint paths in unions of tournaments",
+    "paper_authors": [
+      "Maria Chudnovsky",
+      "Alex Scott",
+      "Paul Seymour"
+    ],
+    "published": "2018-12-23",
+    "abs_url": "https://arxiv.org/abs/1604.02317",
+    "source": "pdf"
+  }
+]

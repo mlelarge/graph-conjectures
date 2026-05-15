@@ -1,0 +1,35 @@
+{
+  "review_id": "1608.07680__02",
+  "safe_id": "1608.07680",
+  "arxiv_id": "1608.07680",
+  "conjecture_title": "Conjecture on $f_s(k)$ asymptotics",
+  "paper_title": "The crossing number of the cone of a graph",
+  "published": "2016-08-27",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "The conjecture that $f_s(k) = k + \\sqrt{2}\\,k^{3/4}(1+o(1))$ for simple graphs appears to remain open as of 2026. The original paper (published in SIAM J. Discrete Math. 32, 2018) established $f_s(k) = k + o(k)$. A 2021 follow-up by Ding and Huang computed additional specific small values of the related function $\\varphi_s(k) = f_s(k) - k$ (proving $\\varphi_s(6) = 5$ and $\\varphi_s(7) = 6$), but did not resolve the asymptotic conjecture. No paper resolving the full asymptotic formula was found.",
+  "since_posted": [
+    {
+      "title": "A Note on the Crossing Number of the Cone of a Graph",
+      "authors": "Zongpeng Ding, Yuanqiu Huang",
+      "year": 2021,
+      "venue": "Graphs and Combinatorics",
+      "url": "https://link.springer.com/article/10.1007/s00373-021-02361-2",
+      "arxiv_id": null,
+      "doi": "10.1007/s00373-021-02361-2",
+      "kind": "partial",
+      "claim": "Proves $\\varphi_s(6)=5$ and $\\varphi_s(7)=6$ (additional specific values of the cone crossing-number gap function), extending the table of known values from the original paper but leaving the asymptotic conjecture open."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "crossing number cone graph Alfaro Arroyo Mohar 1608.07680 f_s(k) asymptotics",
+    "crossing number cone graph \"simple graph\" k^{3/4} asymptotic conjecture",
+    "\"Note on the Crossing Number of the Cone of a Graph\" arXiv Graphs Combinatorics 2021",
+    "Ding Huang \"cone of a graph\" crossing number phi_s arXiv 2020 2021"
+  ],
+  "notes": "Full text of the Ding-Huang 2021 paper was behind a paywall; its basic facts (title, authors, journal, DOI, and the results on $\\varphi_s(6)$ and $\\varphi_s(7)$) were confirmed by multiple independent search-result snippets. The conjecture concerns the precise asymptotic $k + \\sqrt{2}\\,k^{3/4}(1+o(1))$ for simple graphs; the established bound $f_s(k) = k + o(k)$ is consistent with it but far weaker. No resolution of the full asymptotic statement was found in the indexed literature."
+}

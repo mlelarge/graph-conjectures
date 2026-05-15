@@ -1,0 +1,34 @@
+{
+  "review_id": "1912.07722__01",
+  "safe_id": "1912.07722",
+  "arxiv_id": "1912.07722",
+  "conjecture_title": "Conjecture 4.1",
+  "paper_title": "Acyclic subgraphs of tournaments with high chromatic number",
+  "published": "2024-05-30",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The conjecture that every n-vertex tournament has an acyclic subgraph with chromatic number at least n^{3/4-o(1)} (equivalently g(k) ≤ k^{4/3+o(1)}) remains open. The source paper itself establishes the bounds n^{5/9-o(1)} ≤ f(G) ≤ n^{3/4+o(1)}, leaving a gap between the proven lower bound and the conjectured tight value. A 2025 follow-up by Yuster extends the n^{5/9-o(1)} lower bound to digraphs with small bipartite independence number but does not improve the tournament lower bound or resolve the conjecture.",
+  "since_posted": [
+    {
+      "title": "Acyclic subgraphs of digraphs with high chromatic number",
+      "authors": "Raphael Yuster",
+      "year": 2025,
+      "venue": "European Journal of Combinatorics",
+      "url": "https://arxiv.org/abs/2512.21950",
+      "arxiv_id": "2512.21950",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Generalises the n^{5/9-o(1)} lower bound of Fox–Kwan–Sudakov from tournaments to digraphs satisfying f(G) ≥ n^{5/9-o(1)} s^{-14/9} where s is the bipartite independence number, but does not improve the lower bound for tournaments and leaves Conjecture 4.1 open."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "tournament acyclic subgraph chromatic number Fox Kwan Sudakov 1912.07722",
+    "tournament acyclic subgraph chromatic number g(k) upper bound conjecture 2024 2025",
+    "tournament acyclic subgraph chromatic number n^{3/4} conjecture progress 2025 arxiv"
+  ],
+  "notes": "The paper itself already establishes the matching upper bound n^{3/4+o(1)} via a randomised projective-plane construction, so the conjecture would pin down the correct exponent as 3/4. As of May 2026, the best proven lower bound for tournaments remains n^{5/9-o(1)} from the source paper; no follow-up has closed the gap to n^{3/4-o(1)}."
+}

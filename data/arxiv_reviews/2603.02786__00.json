@@ -1,0 +1,28 @@
+{
+  "review_id": "2603.02786__00",
+  "safe_id": "2603.02786",
+  "arxiv_id": "2603.02786",
+  "conjecture_title": "Conjecture 1",
+  "paper_title": "Packing arithmetic progressions",
+  "published": "2026-03-03",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The source paper (Alon, Dębski, Grytczuk, Przybyło, 2026) proves $m(n)=\\Theta(n^{3/2}/\\ln n)$ with matching constants 4/3 (lower bound) and 5/3 (upper bound) in Theorem 1, but the exact leading constant remains open. The conjecture that $m(n)\\sim\\frac{4}{3}\\cdot\\frac{n^{3/2}}{\\ln n}$ is the authors' own expectation stated in the paper. No follow-up work resolving the gap was found in the literature as of May 2026, consistent with the paper being only ~10 weeks old.",
+  "since_posted": [],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2603.02786",
+      "verified": true,
+      "note": "This is the source paper itself (listed twice in the internal refs); the abstract confirms the Theta bound with constants 4/3 and 5/3 but does not resolve the conjecture."
+    }
+  ],
+  "search_queries": [
+    "packing arithmetic progressions Alon Debski Grytczuk Przybylo 2026 arxiv 2603.02786",
+    "m(n) arithmetic progressions n^{3/2} log n constant 4/3 packing conjecture 2026",
+    "packing arithmetic progressions minimum interval 4/3 constant asymptotic 2026 arxiv"
+  ],
+  "notes": "No follow-up paper found. The conjecture pinning down the constant to 4/3 is very recent (~10 weeks old as of review date). The paper 2605.13628 appeared in search results but is unrelated (it concerns cap sets in finite fields via slice rank). The open gap is between constants 4/3 and 5/3 in the leading coefficient of n^{3/2}/ln n."
+}

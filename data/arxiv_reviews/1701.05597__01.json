@@ -1,0 +1,33 @@
+{
+  "review_id": "1701.05597__01",
+  "safe_id": "1701.05597",
+  "arxiv_id": "1701.05597",
+  "conjecture_title": "Conjecture 1.10",
+  "paper_title": "Induced subgraphs of graphs with large chromatic number. VI. Banana trees",
+  "published": "2019-08-27",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "No post-2019 paper resolving or making verified progress on Conjecture 1.10 (equivalently, Conjecture 1.8 that every multigraph is widespread) was found across five targeted web searches. The conjecture has been in circulation since the January 2017 arXiv posting and the 2020 JCTB publication, but it is highly specialized and concerns the interplay between χ₂, induced subdivisions, and widespread multigraphs in a way that may limit its visibility in standard searches. Both candidate internal references turned out to address entirely different conjectures (tournament domination and a coarse Menger analogue), so no verified partial progress is recorded.",
+  "since_posted": [],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2306.02364",
+      "verified": true,
+      "note": "Paper is 'Some results and problems on tournament structure' by Nguyen, Scott, Seymour. Abstract concerns tournaments with large chromatic number containing vertex-disjoint subtournaments, and related domination questions. No mention of induced subdivisions, χ₂, or widespread multigraphs. The supplied contribution text (cyclic triangles, domination number) does not match Conjecture 1.10 from 1701.05597; this reference appears to have been matched to the wrong conjecture by the extraction process."
+    },
+    {
+      "arxiv_id": "2508.14332",
+      "verified": true,
+      "note": "Paper is 'Asymptotic structure. IV. A counterexample to the weak coarse Menger conjecture' by Nguyen, Scott, Seymour. Abstract concerns coarse graph theory and a falsification of a weak coarse analogue to Menger's theorem via S–T path constructions. No mention of induced subdivisions, χ₂, or widespread multigraphs. The supplied contribution text (disproval with c=k=3, sets S and T) matches the actual paper but not Conjecture 1.10 from 1701.05597; this reference is a false positive from the extraction process."
+    }
+  ],
+  "search_queries": [
+    "Scott Seymour \"widespread\" multigraph \"chromatic number\" \"induced subdivision\" chi_2 conjecture 1701.05597",
+    "Scott Seymour \"banana trees\" \"widespread\" induced subgraph chromatic number follow-up 2020 2021 2022 2023 2024 2025",
+    "\"widespread\" multigraph Scott Seymour \"chi_2\" OR \"χ₂\" induced subgraph chromatic conjecture arXiv 2022 2023 2024 2025"
+  ],
+  "notes": "Conjecture 1.10 is stated in the paper as equivalent to Conjecture 1.8 (that every multigraph is widespread), via the auxiliary result from [3] that every ρ-controlled class of J-subdivision-free graphs is 2-controlled. Both internal candidate references are false positives from the fuzz-matching extraction pipeline and address unrelated conjectures. No evidence of resolution was found; the conjecture remains open as far as the indexed literature shows."
+}

@@ -1,0 +1,48 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Erdős-Hajnal Conjecture (Conjecture 1.1)",
+    "statement_text": "For every graph $H$, there exists $\\tau>0$ such that every $n$-vertex $H$-free graph has a clique or stable set of size at least $n^{\\tau}$.",
+    "context_text": "A celebrated conjecture of Erdős and Hajnal from 1977, this had been verified for all graphs with at most four vertices by Erdős and Hajnal themselves, and for the bull and $C_5$ among five-vertex graphs, leaving $P_5$ as the last open case. The paper closes this gap by proving the conjecture for $P_5$, completing verification for all five-vertex graphs.",
+    "attributed_to": "Erdős and Hajnal",
+    "attributed_year": 1977,
+    "paper_contribution": "Proves that $P_5$ satisfies the Erdős-Hajnal conjecture (Theorem 1.2), thereby completing the verification of the conjecture for all five-vertex graphs.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2312.15333",
+    "paper_title": "Induced subgraph density. VII. The five-vertex path",
+    "paper_authors": [
+      "Tung Nguyen",
+      "Alex Scott",
+      "Paul Seymour"
+    ],
+    "published": "2026-02-23",
+    "abs_url": "https://arxiv.org/abs/2312.15333",
+    "source": "html"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Polynomial Rödl Conjecture (Conjecture 1.4)",
+    "statement_text": "Every graph $H$ has the polynomial Rödl property.",
+    "context_text": "Fox and Sudakov strengthened Rödl's theorem by conjecturing that in every $H$-free graph $G$ one can find an $\\varepsilon$-restricted induced subgraph on at least $\\delta|G|$ vertices where $\\delta$ can be taken to be a polynomial power of $\\varepsilon$, rather than the previously known quasi-polynomial bounds. This conjecture implies the Erdős-Hajnal conjecture.",
+    "attributed_to": "Fox and Sudakov",
+    "attributed_year": 2008,
+    "paper_contribution": "Proves that Conjecture 1.4 holds for $H = P_5$ (Theorem 1.5), which in particular implies the Erdős-Hajnal conjecture for $P_5$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2312.15333",
+    "paper_title": "Induced subgraph density. VII. The five-vertex path",
+    "paper_authors": [
+      "Tung Nguyen",
+      "Alex Scott",
+      "Paul Seymour"
+    ],
+    "published": "2026-02-23",
+    "abs_url": "https://arxiv.org/abs/2312.15333",
+    "source": "html"
+  }
+]

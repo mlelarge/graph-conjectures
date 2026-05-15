@@ -1,0 +1,34 @@
+{
+  "review_id": "2204.12330__01",
+  "safe_id": "2204.12330",
+  "arxiv_id": "2204.12330",
+  "conjecture_title": "Question (explicit group with infinite twin-width)",
+  "paper_title": "Twin-width VII: groups",
+  "published": "2022-07-15",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "As of 2025, no explicit finitely generated group with infinite twin-width (nor an explicit bounded-degree graph with unbounded twin-width) is known; the original existence proof relies on probabilistic methods via Osajda's embedding result. A 2025 paper on near-regular graphs (arXiv:2504.02342) notes that extremal bounded-degree graphs with high twin-width are asymmetric, offering a structural explanation for why explicit examples remain elusive. The question stated in arXiv:2204.12330 is still open.",
+  "since_posted": [
+    {
+      "title": "On the twin-width of near-regular graphs",
+      "authors": "unknown (fetched abstract only)",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2504.02342",
+      "arxiv_id": "2504.02342",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Shows that extremal bounded-degree graphs with high twin-width are asymmetric, partly explaining why no explicit bounded-degree graph with unbounded twin-width (and hence no explicit group with infinite twin-width) is yet known; notes that no explicit cubic graph with twin-width greater than 4 is known."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "twin-width infinite groups explicit construction bounded degree graphs arXiv 2204.12330",
+    "twin-width unbounded infinite explicit construction graph group 2023 2024 2025",
+    "Cayley graph infinite twin-width explicit finitely generated group Bonnet Geniet Tessera Thomassé"
+  ],
+  "notes": "No follow-up paper resolving the question was found after 5 web calls. The related paper arXiv:2504.02342 (2025) provides structural evidence that explicit high-twin-width bounded-degree examples are hard to construct, confirming the question remains open. The original proof in arXiv:2204.12330 (Theorem 1.1) is non-constructive, using probabilistic embeddings via Osajda's result."
+}

@@ -1,0 +1,28 @@
+{
+  "review_id": "2304.03567__01",
+  "safe_id": "2304.03567",
+  "arxiv_id": "2304.03567",
+  "conjecture_title": "Problem 2",
+  "paper_title": "Temporalizing digraphs via linear-size balanced bi-trees",
+  "published": "2024-01-11",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Problem 2 of arXiv:2304.03567 asks for the maximum constant $c_b$ such that every strongly connected directed graph on $n$ vertices has a balanced bi-tree of size at least $c_b \\cdot n$. The source paper establishes $c_b \\geq 1/3$ (Theorem 4), with both the out-tree and in-tree of size at least $n/6$ each. No subsequent work improving this bound or determining the exact value of $c_b$ was found in a thorough web search.",
+  "since_posted": [],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2206.12335",
+      "verified": false,
+      "note": "This paper (Balister, Johnston, Savery, Scott on 1-independent percolation on Z^n) is entirely unrelated to balanced bi-trees in digraphs. It appears to be a false positive from the fuzzy matching pipeline."
+    }
+  ],
+  "search_queries": [
+    "balanced bi-tree strongly connected directed graph Bessy Thomassé Viennot 2304.03567",
+    "\"balanced bi-tree\" digraph \"strongly connected\" constant optimal arxiv 2024 2025",
+    "Bessy Thomassé Viennot \"bi-tree\" digraph cite follow-up 2024 2025 2026"
+  ],
+  "notes": "No follow-up work found after 5 web calls. The conjecture was published at STACS 2024 and remains open. The internal references supplied (arXiv:2206.12335, twice) are false matches from the fuzzy-matching pipeline — they concern 1-independent percolation on Z^n and have no connection to this problem."
+}

@@ -1,0 +1,25 @@
+[
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Alon–Krivelevich problem on divisible subdivision bounds",
+    "statement_text": "Improve the superexponential upper bound on $f(H, q)$ for subcubic graphs $H$ on $n$ vertices with $m$ edges, where $f(H,q)$ is the smallest integer such that every $K_f$-minor contains a $q$-divisible subdivision of $H$.",
+    "context_text": "Alon and Krivelevich proved the existence of $f(H,q)$ for every subcubic graph $H$ and integer $q \\geq 2$, but their proof yielded a bound of order $(q^2 n)^{q^3 n}$. The best known lower bound was $m(q-1)+n \\leq f(H,q)$, leaving a vast gap. Alon and Krivelevich explicitly posed the problem of improving the upper bound.",
+    "attributed_to": "Alon and Krivelevich",
+    "attributed_year": null,
+    "paper_contribution": "Proves $f(H,q) \\leq 7mq + 8n + 14q$ for every subcubic $n$-vertex graph $H$ with $m$ edges and every integer $q \\geq 2$, matching the lower bound up to a constant multiplicative factor and thus establishing $f(H,q) = \\Theta(mq+n)$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Section 4 (concluding remarks and open questions) is absent from the extracted text; additional open problems stated there are not captured here.",
+    "arxiv_id": "2111.05723",
+    "paper_title": "Tight bounds for divisible subdivisions",
+    "paper_authors": [
+      "Shagnik Das",
+      "Nemanja Draganić",
+      "Raphael Steiner"
+    ],
+    "published": "2021-11-10",
+    "abs_url": "https://arxiv.org/abs/2111.05723",
+    "source": "pdf"
+  }
+]

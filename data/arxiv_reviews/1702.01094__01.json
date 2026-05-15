@@ -1,0 +1,34 @@
+{
+  "review_id": "1702.01094__01",
+  "safe_id": "1702.01094",
+  "arxiv_id": "1702.01094",
+  "conjecture_title": "Question (uniquely-covered vertices in an induced path)",
+  "paper_title": "Induced subgraphs of graphs with large chromatic number. IX. Rainbow paths",
+  "published": "2017-07-03",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The Question asks whether every triangle-free graph with very large chromatic number admits, for any stable-set cover of its vertices, an induced path whose vertices are each uniquely covered by some member of the cover. This strictly generalizes the paper's main rainbow-path theorem (proper colorings are a special case) and remains open. The closely related proper-coloring variant (the Aravind conjecture on induced rainbow paths of length k) has seen partial progress: a 2026 preprint improves the lower bound on the rainbow path length from (log log log k)^{1/3-o(1)} to (log k)^{1/2-o(1)}, but neither this nor any other identified work addresses the uniquely-covered formulation with arbitrary stable-set covers.",
+  "since_posted": [
+    {
+      "title": "Towards a conjecture on long induced rainbow paths in triangle-free graphs",
+      "authors": "Julien Duron, Jean-Florent Raymond",
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2601.00602",
+      "arxiv_id": "2601.00602",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Improves the lower bound on induced rainbow path length in triangle-free graphs from (log log log k)^{1/3-o(1)} to (log k)^{1/2-o(1)}, and shows the path can see at least k/2 colors, advancing the proper-coloring special case of the question but not the general stable-set-cover formulation."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Scott Seymour \"rainbow paths\" \"induced path\" \"uniquely covered\" chromatic number triangle-free",
+    "arXiv 1702.01094 Scott Seymour induced subgraphs chromatic number citations follow-up",
+    "\"induced rainbow path\" \"stable set\" \"uniquely covered\" chromatic number triangle-free 2024 2025"
+  ],
+  "notes": "The Question in 1702.01094 is a strict generalization of the paper's own main theorem: a proper k-coloring is a partition into stable sets where each path vertex is trivially uniquely covered by its color class, so any resolution of the Question implies the rainbow-path conjecture. No paper found after 2017 addresses this general uniquely-covered formulation directly; progress in the literature (arXiv:2601.00602) targets only the proper-coloring variant."
+}

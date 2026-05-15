@@ -1,0 +1,23 @@
+{
+  "review_id": "1606.06810__01",
+  "safe_id": "1606.06810",
+  "arxiv_id": "1606.06810",
+  "conjecture_title": "Conjecture on optimal exponential constant for $K_t$-subdivision clique count",
+  "paper_title": "On the number of cliques in graphs with a forbidden subdivision or immersion",
+  "published": "2018-08-07",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The conjecture that the maximum number of cliques in an $n$-vertex graph with no $K_t$-subdivision is $3^{2t/3+o(t)}n$ remains open. The best known upper bound from the source paper is $2^{1.817t+o(t)}n$, improving on Lee--Oum's $2^{(5+o(1))t}n$, while Wood's lower-bound construction (which is also $K_t$-subdivision free) shows the exponent cannot drop below $\\frac{2}{3}\\log_2 3 \\approx 1.06$. A wide web search through May 2026 found no paper improving the upper bound toward the conjectured optimum.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "cliques K_t subdivision forbidden graph Fox Wei 1606.06810",
+    "maximum cliques Kt-subdivision exponential constant 3^(2t/3) graph",
+    "number cliques Kt subdivision upper bound improvement 2019 2020 2021 2022 2023 2024 2025",
+    "arxiv Kt-subdivision OR K_t-subdivision cliques upper bound 2019 2020 2021 2022 2023 2024 2025"
+  ],
+  "notes": "No follow-up resolving the conjecture was found. The related paper arXiv:2408.12082 (Shi--Wei, 2024) determines sharp bounds for fixed clique sizes in $K_t$-minor free graphs (a different, stronger restriction than $K_t$-subdivision free), and does not address the subdivision variant. The conjecture posits that the gap between the proved $3^{2t/3+o(t)}n$ bound for $K_t$-minor free graphs and the $2^{1.817t+o(t)}n$ bound for $K_t$-subdivision free graphs can be closed to match the minor bound."
+}

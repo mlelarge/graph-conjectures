@@ -1,0 +1,22 @@
+{
+  "review_id": "2306.04710__02",
+  "safe_id": "2306.04710",
+  "arxiv_id": "2306.04710",
+  "conjecture_title": "Open problem: hero status of $\\Delta(1,2,2)$",
+  "paper_title": "On heroes in digraphs with forbidden induced forests",
+  "published": "2023-06-07",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The question of whether $\\Delta(1,2,2)$ is a hero in $\\{K_1+\\vec{P}_2\\}$-free digraphs (equivalently, whether $\\{\\Delta(1,2,2), K_1+\\vec{P}_2\\}$ is $\\vec{\\chi}$-finite) remains unresolved as of 2026. It is the sole unresolved case in the near-complete characterisation of heroes in this class given by Aboulker–Aubian–Charbit (Theorem 1.11 of the source paper) and extended to $\\{H, rK_1+\\vec{P}_3\\}$-free digraphs by the source paper itself. No follow-up paper resolving this specific open problem was found in the indexed literature.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Delta(1,2,2) hero digraph chi-finite Carbonero Koerts Moore Spirkl 2306.04710",
+    "heroes digraphs K1+P2-free chi-finite Delta(1,2,2) Aboulker Aubian Charbit",
+    "arxiv 2024 2025 heroes digraphs Delta(1,2,2) chi-finite K1+P2-free dichromatic number"
+  ],
+  "notes": "No follow-up found after 5 web calls (3 searches, 2 fetches). The most closely related recent paper is arXiv:2602.08736 (Claw,C3-free digraphs with unbounded dichromatic number, 2026), which improves on work by the same authors on a different conjecture (Aboulker–Charbit–Naserasr) and does not address Delta(1,2,2) in K1+P2-free digraphs."
+}

@@ -1,0 +1,23 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Ziegler–Drewnowski–Łuczak–Alon Conjecture (stable Kneser hypergraph chromatic number)",
+    "statement_text": "The chromatic number of $KG^r(k, n)_{r-\\mathrm{stab}}$ is $\\left\\lceil \\dfrac{n - r(k-1)}{r-1} \\right\\rceil$, the same as the chromatic number of the full Kneser hypergraph $KG^r(k, n)$.",
+    "context_text": "The hypergraph $KG^r(k,n)_{r-\\mathrm{stab}}$ is the induced sub-hypergraph of $KG^r(k,n)$ whose vertices are the $r$-stable $k$-subsets of $[n]$ (any two elements are at distance at least $r$ in the cyclic order on $[n]$). The $r=2$ case was proved by Schrijver; the conjecture asks whether the chromatic number of the $r$-stable subgraph equals that of the full Kneser hypergraph for all $r$. The paper invokes the known power-of-2 case of this conjecture as a key tool in the proof of its main theorem.",
+    "attributed_to": "Ziegler and Drewnowski, Łuczak, Alon",
+    "attributed_year": 2002,
+    "paper_contribution": "The paper uses the confirmed power-of-2 case of this conjecture (Theorem 2.1, proved in Schrijver [8] and Alon–Drewnowski–Łuczak [2]) as a key step to show that the family of all $k$-subsets of an $n$-set cannot be partitioned into fewer than $\\lceil n - \\tfrac{r}{r-1}(k-1) \\rceil$ $r$-wise intersecting families when $r$ is a power of 2.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "PDF source — conjecture stated in prose within the proof section without a labelled theorem environment. Attributed jointly to Ziegler [9] (Invent. Math. 147, 2002) and to Drewnowski, Łuczak, and Alon [2] (Proc. Amer. Math. Soc. 2009). The paper's own original conjecture (the main Theorem 1.1) is now fully proved via Azarpendar–Jafari [4] and is therefore not extracted as an open problem.",
+    "arxiv_id": "2107.12741",
+    "paper_title": "Partitioning all $k$-subsets into $r$-wise intersecting families",
+    "paper_authors": [
+      "Noga Alon"
+    ],
+    "published": "2021-09-24",
+    "abs_url": "https://arxiv.org/abs/2107.12741",
+    "source": "pdf"
+  }
+]

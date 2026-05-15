@@ -1,0 +1,52 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Gyárfás-Sumner Conjecture (Conjecture 1.5)",
+    "statement_text": "For every tree $T$ and complete graph $K$, there is an integer $c$ such that if $G$ is a graph containing neither $T$ nor $K$ as an induced subgraph, then $\\chi(G) \\leq c$.",
+    "context_text": "This conjecture is invoked as the graph-theoretic motivation for the paper's study of induced restrictions in binary matroids, where matroids $I_t$ play the role of trees and projective geometries $PG(t-1,2)$ play the role of cliques. The paper notes the conjecture remains open in general, though proved for many specific trees $T$.",
+    "attributed_to": "Gyárfás and Sumner",
+    "attributed_year": null,
+    "paper_contribution": "Theorem 1.3 refutes the matroidal analogue of this conjecture by showing that for every integer $k$ there exists a matroid $M \\in \\mathcal{E}_3$ containing neither $I_3$ nor $F_7$ as an induced restriction with $\\chi(M) \\geq k$, establishing that bounding $\\chi$ by excluding a fixed $I_s$ and a fixed $PG(t-1,2)$ as induced restrictions is impossible in general.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1806.04188",
+    "paper_title": "The structure of binary matroids with no induced claw or Fano plane restriction",
+    "paper_authors": [
+      "Marthe Bonamy",
+      "Frantisek Kardos",
+      "Tom Kelly",
+      "Peter Nelson",
+      "Luke Postle"
+    ],
+    "published": "2019-11-13",
+    "abs_url": "https://arxiv.org/abs/1806.04188",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.6",
+    "statement_text": "For all $s \\geq 1$ there exists an integer $k$ such that if $M$ is a simple binary matroid with no induced $I_s$-restriction or $PG(1, 2)$-restriction, then $\\chi(M) \\leq k$.",
+    "context_text": "After showing that the full matroidal Gyárfás-Sumner analogue fails (Theorem 1.3), the authors conjecture that fixing $t = 2$—that is, excluding a triangle $PG(1,2)$ rather than an arbitrary projective geometry—restores a bound on the critical number. The conjecture is verified for $s \\in \\{1, 2, 3\\}$ by Corollary 5.2, which gives $k = 1$; new ideas are needed for larger $s$.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1806.04188",
+    "paper_title": "The structure of binary matroids with no induced claw or Fano plane restriction",
+    "paper_authors": [
+      "Marthe Bonamy",
+      "Frantisek Kardos",
+      "Tom Kelly",
+      "Peter Nelson",
+      "Luke Postle"
+    ],
+    "published": "2019-11-13",
+    "abs_url": "https://arxiv.org/abs/1806.04188",
+    "source": "pdf"
+  }
+]

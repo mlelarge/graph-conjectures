@@ -1,0 +1,22 @@
+{
+  "review_id": "2508.08703__00",
+  "safe_id": "2508.08703",
+  "arxiv_id": "2508.08703",
+  "conjecture_title": "Problem 5.2",
+  "paper_title": "Critical edge sets in vertex-critical graphs",
+  "published": "2025-08-12",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Problem 5.2 asks whether a 6-regular (4,1)-graph exists, i.e., a 6-regular 4-vertex-critical graph containing no critical edge. This is part of the still-open k=4 case of Dirac's 1970 conjecture (proved for k≥5 by Jensen in 2002). The source paper arXiv:2508.08703 resolves Erdős' stronger version of the problem for k>4 but explicitly leaves the k=4 case open; no follow-up resolving Problem 5.2 was found in the indexed literature as of May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "vertex-critical graph critical edge 6-regular (4,1)-graph Erdős 2025",
+    "4-vertex-critical graph no critical edge 6-regular 2025 2026 Skottova Steiner",
+    "arXiv 2508.08703 cite \"4-vertex-critical\" \"critical edge\" regular 2026"
+  ],
+  "notes": "No follow-up found. The k=4 case of Dirac's conjecture (existence of any 4-vertex-critical graph with no critical edge) remains open; Problem 5.2 is a refined question asking for a 6-regular example. The related paper arXiv:2310.12891 ('Vertex-critical graphs far from edge-criticality', published in Combinatorics, Probability and Computing) addresses large k but not k=4. The ResearchGate entry on a '6-regular 4-critical graph' concerns 4-edge-critical graphs (4-chromatic with all edges critical), a different concept."
+}

@@ -1,0 +1,39 @@
+{
+  "review_id": "1702.01607__01",
+  "safe_id": "1702.01607",
+  "arxiv_id": "1702.01607",
+  "conjecture_title": "Problem 4",
+  "paper_title": "Coloring tournaments: from local to global",
+  "published": "2017-03-15",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Problem 4 from Harutyunyan–Le–Thomassé–Wu (arXiv:1702.01607) asks whether sufficiently large dominating number forces a bounded-size subtournament of large dominating number. As of 2026, the conjecture remains open. Aboulker, Aubian, Charbit, and Lopes (arXiv:2310.04265, 2023) revisited this in their study of clique number of tournaments: their Section 5 ('Local to Global – Links with domination number') references the HLTW work, introduces an intermediate conjecture (their Conjecture 5.3, stating large dominating number implies an $\\overrightarrow{\\omega}$-cluster), and establishes logical implications among three related statements, but does not resolve the original conjecture.",
+  "since_posted": [
+    {
+      "title": "Clique number of tournaments",
+      "authors": "Pierre Aboulker, Guillaume Aubian, Pierre Charbit, Raul Lopes",
+      "year": 2023,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2310.04265",
+      "arxiv_id": "2310.04265",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Introduces Conjecture 5.3 (large dominating number implies an $\\overrightarrow{\\omega}$-cluster) as an intermediate statement between Theorem 5.1 and Conjecture 5.2 (the original Problem 4), and establishes implications among the three statements without resolving the conjecture."
+    }
+  ],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2310.04265",
+      "verified": true,
+      "note": "HTML version of the paper confirms Section 5 is titled 'Local to Global – Links with domination number' and explicitly references Harutyunyan, Le, Thomassé, and Wu [19] regarding dichromatic number and domination number. The property dom(T) ≤ ω→(T) ≤ χ→(T) is established (Property 3.2). The specific conjecture numbering (5.2, 5.3) and implication chain described in the internal reference are consistent with the paper's structure, though the section was partially truncated in the fetched HTML."
+    }
+  ],
+  "search_queries": [
+    "tournament \"dominating number\" subtournament \"large dominating number\" Harutyunyan Thomassé 1702.01607",
+    "tournament \"dominating number\" subtournament Aboulker Aubian Charbit Lopes 2023"
+  ],
+  "notes": "No paper resolving this conjecture was found. Aboulker et al. 2023 (arXiv:2310.04265) is the main post-2017 work engaging with Problem 4; it situates the conjecture within a broader framework of clique-number and domination-number inequalities in tournaments and introduces a potentially easier intermediate conjecture, but the original statement remains open."
+}

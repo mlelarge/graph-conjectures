@@ -1,0 +1,52 @@
+{
+  "review_id": "2202.09118__02",
+  "safe_id": "2202.09118",
+  "arxiv_id": "2202.09118",
+  "conjecture_title": "Informal conjecture (polynomial Gyárfás–Sumner)",
+  "paper_title": "Polynomial bounds for chromatic number VII. Disjoint holes",
+  "published": "2022-02-18",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The conjecture that every forest H is good (i.e., H-free graphs are polynomially χ-bounded) remains fully open for general H-free graph classes. Partial progress exists: companion paper arXiv:2202.10412 (same 2022 series) proves compositional closure results (H good implies H∪P₄ good), and arXiv:2407.16882 (2024) proves the polynomial Gyárfás–Sumner conjecture holds for the restricted class of intersection graphs of axis-aligned boxes in ℝ^d with no induced forest subgraph. The full statement for arbitrary H-free graphs is unresolved.",
+  "since_posted": [
+    {
+      "title": "Polynomial Gyárfás-Sumner conjecture for graphs of bounded boxicity",
+      "authors": "Unknown (arXiv:2407.16882)",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2407.16882",
+      "arxiv_id": "2407.16882",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves the polynomial Gyárfás–Sumner conjecture for intersection graphs of axis-aligned boxes in ℝ^d: for every forest F and positive integer d, such graphs with no induced F subgraph are polynomially χ-bounded."
+    }
+  ],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2202.10412",
+      "verified": true,
+      "note": "Confirmed as companion paper VI in the same 2022 series (same four authors, posted Feb 2022 concurrently). Proves that if H is good then H∪P₄ is good, and more generally that {H₁,H₂}-free graphs are polynomially χ-bounded when every component of H₁ is good and H₂ is a path or broom. This is a partial/compositional result; the full conjecture remains open. Because the arXiv ID (2202.xxxxx) places it in the same month as the source paper, it is not a strict follow-up and is excluded from since_posted."
+    },
+    {
+      "arxiv_id": "2506.10227",
+      "verified": false,
+      "note": "Not fetched within the 5-call budget. Based on title ('Suns in triangle-free graphs of large chromatic number') and attribution to Trotignon, this paper appears to address a different conjecture about sun-free graphs and is likely off-topic for the polynomial Gyárfás–Sumner conjecture; inclusion in internal refs appears to be a fuzzy-match artifact."
+    },
+    {
+      "arxiv_id": "2311.05719",
+      "verified": true,
+      "note": "WebFetch confirms this paper ('Induced subgraphs and tree decompositions XIV') proves that every clock-free graph of large treewidth contains a basic obstruction (complete graph, wall subdivision, or line graph of wall subdivision). It concerns treewidth and induced subgraph structure in clock-free graphs, not polynomial χ-boundedness for forests. The supplied contribution text ('Proves the conjecture in full') is mismatched to this conjecture; this reference appears three times in the internal refs, all with the same erroneous contribution text."
+    }
+  ],
+  "search_queries": [
+    "polynomial chi-bounded H-free graphs forest Gyárfás-Sumner conjecture 2022 2023 2024 2025",
+    "arxiv:2202.10412 abstract (WebFetch)",
+    "arxiv:2311.05719 abstract (WebFetch)",
+    "arxiv:2407.16882 abstract (WebFetch)",
+    "arxiv:2310.11167 abstract (WebFetch)"
+  ],
+  "notes": "The polynomial Gyárfás–Sumner conjecture is an active open problem. Known good forests (as of early 2026) include paths up to P₄, some trees, and their disjoint unions under certain conditions, but P₅ was still open at the time of the source paper. The 2024 result (arXiv:2407.16882) restricts to bounded-boxicity graphs, not general H-free graphs. Esperet's conjecture that every χ-bounded class is polynomially χ-bounded has been disproved, making the polynomial Gyárfás–Sumner conjecture even more specific and harder."
+}

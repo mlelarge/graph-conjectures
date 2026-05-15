@@ -1,0 +1,22 @@
+{
+  "review_id": "2310.04265__06",
+  "safe_id": "2310.04265",
+  "arxiv_id": "2310.04265",
+  "conjecture_title": "Conjecture 4.11",
+  "paper_title": "Clique number of tournaments",
+  "published": "2023-10-06",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "Conjecture 4.11 of arXiv:2310.04265 asserts that for any ordered graph $(M,\\prec)$ with maximum degree $1$, the class of $(M,\\prec)$-free ordered graphs is $\\chi$-bounded; this would imply $\\overrightarrow{\\chi}$-boundedness results for certain tournament classes via the paper's backedge-graph correspondence. No paper resolving this conjecture was found. Two papers citing the source were identified via Semantic Scholar — arXiv:2602.09863 (Crew et al., 2026) on characterising large clique number in tournaments, and arXiv:2407.19270 (Aboulker et al., 2024) on degreewidth of digraphs — but neither could be verified as addressing the ordered-graph chi-boundedness conjecture within the web-call budget.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Aboulker Aubian Charbit Lopes ordered graphs chi-bounded maximum degree 2310.04265",
+    "ordered graphs chi-bounded M-free matching ordered graph conjecture 2024 2025",
+    "semanticscholar API citations arXiv:2310.04265"
+  ],
+  "notes": "Two papers citing arXiv:2310.04265 were located via the Semantic Scholar API: arXiv:2602.09863 (Crew, Fan, Koerts, Moore, Spirkl 2026, 'Characterizing Large Clique Number in Tournaments') and arXiv:2407.19270 (Aboulker, Oijid, Petit, Rocton, Simon 2024, 'Computing the degreewidth of a digraph is hard'). Their full texts were not fetched (5-call cap reached), so it is unknown whether either addresses Conjecture 4.11. The conjecture is a supporting technical statement linking ordered-graph chi-boundedness to tournament chi-bar-boundedness; no direct resolution was found in the indexed literature."
+}

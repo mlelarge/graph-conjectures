@@ -1,0 +1,22 @@
+{
+  "review_id": "2506.07264__03",
+  "safe_id": "2506.07264",
+  "arxiv_id": "2506.07264",
+  "conjecture_title": "Conjecture 9.3",
+  "paper_title": "Refinement of a conjecture on positive square energy of graphs",
+  "published": "2025-06-08",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 9.3 appears in the open problems section (Section 9) of arXiv:2506.07264, where the authors characterize the equality case s^+(G)=n of their main conjecture (Conjecture 1.2) as being achieved precisely by bipartite unicyclic graphs. The conjecture is motivated by computational evidence and the structural properties of bipartite unicyclic graphs. No follow-up paper addressing or resolving this conjecture was found in a broad web search covering the period June 2025 through May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Akbari Kumar Mohar Pragada Zhang \"positive square energy\" bipartite unicyclic 2506.07264",
+    "\"positive square energy\" \"bipartite unicyclic\" graph conjecture 2025 2026",
+    "Akbari Mohar \"square energy\" graph \"s+(G) = n\" unicyclic characterization 2025 2026"
+  ],
+  "notes": "No follow-up found. The conjecture is very recent (June 2025) and sits in the open problems section of the source paper. The related paper arXiv:2604.15656 on positive and negative p-energies was examined but does not address this specific conjecture. The equality characterisation s^+(G)=n <=> bipartite unicyclic is supported by computational evidence only."
+}

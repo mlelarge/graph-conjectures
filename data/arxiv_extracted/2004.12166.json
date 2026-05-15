@@ -1,0 +1,74 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Erdős-Hajnal Conjecture (Conjecture 3)",
+    "statement_text": "Every graph $H$ satisfies the Erdős-Hajnal property, i.e., there exists a constant $\\delta > 0$ such that every $H$-free graph $G$ with $n$ vertices contains either a clique or an independent set of size $n^\\delta$.",
+    "context_text": "The Erdős-Hajnal conjecture asserts that forbidding a fixed graph $H$ as an induced subgraph forces large homogeneous sets, in sharp contrast with random graphs where the maximum clique/independent set is only $O(\\log n)$. The conjecture has been verified for all graphs on at most four vertices, the bull, cliques, and graphs constructible from them by substitution.",
+    "attributed_to": "Erdős and Hajnal",
+    "attributed_year": 1989,
+    "paper_contribution": "Proves that a constructive version of the Erdős-Hajnal conjecture implies the improved approximation conjecture (Conjecture 5), and shows the improved approximation property is closed under graph substitution, establishing Conjecture 5 for many graphs $H$ (e.g., $P_6$-free, fork-free) where the Erdős-Hajnal conjecture remains open.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2004.12166",
+    "paper_title": "An algorithmic weakening of the Erdős-Hajnal conjecture",
+    "paper_authors": [
+      "Édouard Bonnet",
+      "Stéphan Thomassé",
+      "Xuan Thang Tran",
+      "Rémi Watrigant"
+    ],
+    "published": "2020-04-25",
+    "abs_url": "https://arxiv.org/abs/2004.12166",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 5 (Improved Approximation Conjecture)",
+    "statement_text": "Every graph $H$ satisfies the improved approximation property, i.e., there exists a constant $\\varepsilon > 0$ such that MIS admits a (randomized) $n^{1-\\varepsilon}$-approximation polynomial algorithm on every $H$-free $n$-vertex graph $G$.",
+    "context_text": "This conjecture is introduced as an algorithmic weakening of the Erdős-Hajnal conjecture. It states informally that the inapproximability of MIS in general graphs can always be beaten in any proper hereditary class. It is strictly weaker than the Erdős-Hajnal conjecture, since MIS is polynomial in $P_6$-free graphs while it is open whether $P_5$ satisfies the Erdős-Hajnal property.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2004.12166",
+    "paper_title": "An algorithmic weakening of the Erdős-Hajnal conjecture",
+    "paper_authors": [
+      "Édouard Bonnet",
+      "Stéphan Thomassé",
+      "Xuan Thang Tran",
+      "Rémi Watrigant"
+    ],
+    "published": "2020-04-25",
+    "abs_url": "https://arxiv.org/abs/2004.12166",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Question: optimal approximation exponent for MIS in H-free graphs",
+    "statement_text": "For a given $H$, what is the largest $\\varepsilon > 0$ such that MIS admits an $O(n^{1-\\varepsilon})$-approximation algorithm in $H$-free graphs?",
+    "context_text": "After establishing that many graphs $H$ satisfy the improved approximation property, the authors ask how to optimise the approximation ratio. They investigate this in Sections 3 and 4, proving e.g. a $\\sqrt{OPT}$-approximation in $C_4$-free graphs and a tight inapproximability bound in triangle-free and high-girth graphs.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Posed as an open research direction in running prose in the 'Results and organization' section; partially investigated within the paper but not fully resolved.",
+    "arxiv_id": "2004.12166",
+    "paper_title": "An algorithmic weakening of the Erdős-Hajnal conjecture",
+    "paper_authors": [
+      "Édouard Bonnet",
+      "Stéphan Thomassé",
+      "Xuan Thang Tran",
+      "Rémi Watrigant"
+    ],
+    "published": "2020-04-25",
+    "abs_url": "https://arxiv.org/abs/2004.12166",
+    "source": "pdf"
+  }
+]

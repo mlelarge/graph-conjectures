@@ -1,0 +1,33 @@
+{
+  "review_id": "1808.10370__00",
+  "safe_id": "1808.10370",
+  "arxiv_id": "1808.10370",
+  "conjecture_title": "2-Approximation Conjecture for Cluster-VD",
+  "paper_title": "Improved approximation algorithms for hitting 3-vertex paths",
+  "published": "2019-02-22",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "solved",
+  "confidence": "high",
+  "summary": "The conjecture that Cluster-VD admits a 2-approximation in polynomial time was resolved affirmatively by Aprile, Drescher, Fiorini, and Huynh in 2020. Their paper arXiv:2007.08057 presents the first 2-approximation algorithm for the (weighted) cluster vertex deletion problem, matching the UGC-hardness lower bound of 2 established via a reduction from Vertex Cover. The result was published in Mathematical Programming in 2021.",
+  "since_posted": [
+    {
+      "title": "A Tight Approximation Algorithm for the Cluster Vertex Deletion Problem",
+      "authors": "Manuel Aprile, Matthew Drescher, Samuel Fiorini, Tony Huynh",
+      "year": 2020,
+      "venue": "Mathematical Programming (published 2021)",
+      "url": "https://arxiv.org/abs/2007.08057",
+      "arxiv_id": "2007.08057",
+      "doi": "10.1007/s10107-021-01744-w",
+      "kind": "proof",
+      "claim": "Proves the first 2-approximation algorithm for weighted Cluster Vertex Deletion, establishing that the approximation ratio is tight under the Unique Games Conjecture."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Cluster Vertex Deletion 2-approximation algorithm polynomial time",
+    "Fiorini Joret Schaudt \"cluster vertex deletion\" approximation 2019 arXiv 1808.10370"
+  ],
+  "notes": "The conjecture was posed in the source paper (arXiv:1808.10370) and resolved the same year as the journal publication of the source paper. Two of the four authors of the resolving paper (Fiorini and Huynh) are connected to the graph-theory community tracked in the curated corpus. No internal corpus references to this conjecture were supplied."
+}

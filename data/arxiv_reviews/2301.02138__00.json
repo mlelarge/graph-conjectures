@@ -1,0 +1,34 @@
+{
+  "review_id": "2301.02138__00",
+  "safe_id": "2301.02138",
+  "arxiv_id": "2301.02138",
+  "conjecture_title": "Informal Conjecture (chordal modulator characterization for even-hole-free graphs)",
+  "paper_title": "Induced subgraphs and tree decompositions VIII. Excluding a forest in (theta, prism)-free graphs",
+  "published": "2023-01-28",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The conjecture that every chordal graph of clique number at most three modulates even-hole-free graphs (the converse of Theorem 1.2 of Sintiari–Trotignon) remains open in full generality. The source paper itself proved the case when H is a forest (Theorem 1.6). Subsequently, Hajebi (2024/2025) proved the conjecture for H = cone(cone(F)) for any forest F and for H a 'crystal' (a graph built from coned double stars), substantially extending the known special cases, but the full statement for all K₄-free chordal H is still open.",
+  "since_posted": [
+    {
+      "title": "Chordal graphs, even-hole-free graphs and sparse obstructions to bounded treewidth",
+      "authors": "Sepehr Hajebi",
+      "year": 2024,
+      "venue": "Journal of Graph Theory",
+      "url": "https://arxiv.org/abs/2401.01299",
+      "arxiv_id": "2401.01299",
+      "doi": "10.1002/jgt.23276",
+      "kind": "partial",
+      "claim": "Proves the conjecture (in the equivalent treewidth-obstruction formulation) for H = cone(cone(F)) for any forest F and for H a crystal, extending the t=4 and H=cone(F) special cases; the full conjecture for all K₄-free chordal H remains open."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "chordal graph clique number modulates even-hole-free Abrishami Chudnovsky Spirkl",
+    "arXiv 2301.02138 even-hole-free chordal modulator conjecture follow-up",
+    "Sintiari Trotignon even-hole-free modulator chordal clique number conjecture 2023 2024 2025"
+  ],
+  "notes": "The conjecture from 2301.02138 is equivalent to the main Conjecture 1.8 of arXiv:2401.01299 (bounded-treewidth characterization for even-hole-free graphs): 'K₄-free chordal graphs' equals 'chordal graphs of clique number at most three'. arXiv:2401.01299 proves new cases (Theorems 1.11 and 1.12) but the full conjecture remains open. A strengthening (Conjecture 1.14 in 2401.01299) was disproved by Chudnovsky and Trotignon via a new variant of layered wheels, but this does not affect the main conjecture."
+}

@@ -1,0 +1,48 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Erdős-Szemerédi Conjecture (Conjecture 1)",
+    "statement_text": "Every finite set of integers $A$ having large enough cardinality, satisfies $\\max(|A+A|, |AA|) \\geq |A|^{2-\\varepsilon}$, where $\\varepsilon \\to 0$ as $|A| \\to \\infty$.",
+    "context_text": "Erdős and Szemerédi raised this foundational conjecture asserting that for any finite set of integers, at least one of the sumset or product set must be nearly quadratic in size. The original conjecture would follow from the stronger graph-based Conjecture 2 by taking the complete graph $G_n = K_n$.",
+    "attributed_to": "Erdős and Szemerédi",
+    "attributed_year": 1983,
+    "paper_contribution": "The paper refutes the strictly stronger graph-based form (Conjecture 2), showing that the approach of proving Conjecture 1 via the strong form fails; the original conjecture is not directly addressed.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1802.06405",
+    "paper_title": "Sums, products and ratios along the edges of a graph",
+    "paper_authors": [
+      "Noga Alon",
+      "Imre Ruzsa",
+      "Jozsef Solymosi"
+    ],
+    "published": "2018-02-18",
+    "abs_url": "https://arxiv.org/abs/1802.06405",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Strong Erdős-Szemerédi Conjecture (Conjecture 2)",
+    "statement_text": "For every $c > 0$ and $\\varepsilon > 0$, there is a threshold $n_0$, such that if $n \\geq n_0$ then for any $n$-element subset of integers $A \\subset \\mathbb{N}$ and any graph $G_n$ with $n$ vertices and at least $n^{1+c}$ edges, $|A +_{G_n} A| + |A \\cdot_{G_n} A| \\geq |A|^{1+c-\\varepsilon}$.",
+    "context_text": "Erdős and Szemerédi formulated this stronger variant of their sum-product conjecture in which sums and products are restricted to pairs forming edges of a dense graph. The original Erdős-Szemerédi conjecture (inequality (1)) is a special case obtained by taking $G_n = K_n$. This conjecture is the central subject of the paper.",
+    "attributed_to": "Erdős and Szemerédi",
+    "attributed_year": 1983,
+    "paper_contribution": "The paper disproves this conjecture for every $1 > c > 0$: Theorem 3 gives a construction with $\\Omega(m^{5/3}/\\log^{1/3} m)$ edges and both sumset and product set of size $O(|A|(\\log|A|)^{4/3})$, and Theorem 4 extends this to all $c\\in(0,1)$ by exhibiting an $n$-element integer set and a graph with $\\Omega_l(n^{1+c})$ edges satisfying $|A +_{H_n} A| + |A \\cdot_{H_n} A| = O_l(|A|^{1+c-\\delta})$ for an explicit $\\delta > 0$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF extraction renders the hypothesis as 'c > and ε > 0'; clearly a garbling of 'c > 0 and ε > 0'; statement reconstructed accordingly.",
+    "arxiv_id": "1802.06405",
+    "paper_title": "Sums, products and ratios along the edges of a graph",
+    "paper_authors": [
+      "Noga Alon",
+      "Imre Ruzsa",
+      "Jozsef Solymosi"
+    ],
+    "published": "2018-02-18",
+    "abs_url": "https://arxiv.org/abs/1802.06405",
+    "source": "pdf"
+  }
+]

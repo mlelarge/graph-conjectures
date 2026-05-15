@@ -1,0 +1,34 @@
+{
+  "review_id": "2010.05992__01",
+  "safe_id": "2010.05992",
+  "arxiv_id": "2010.05992",
+  "conjecture_title": "Informal conjecture on non-tightness of upper bound for binary focal families",
+  "paper_title": "Near-sunflowers and focal families",
+  "published": "2020-10-12",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "medium",
+  "summary": "A 2024 follow-up by Huang, Shangguan, Zhang, and Zhao (arXiv:2410.23611) establishes asymptotically optimal bounds on the maximum size of focal-free uniform hypergraphs and codes, proving that the Alon–Holzman multiplicative constant (r-1) in the upper bound is not tight in general (specifically showing the true constant is strictly smaller as q→∞). This supports the spirit of the conjecture that the binary (q=2) bound is not tight, but the paper's sharpest results are in the large-q regime; whether the full q=2 conjecture is resolved for all large n remains unclear from available abstracts.",
+  "since_posted": [
+    {
+      "title": "Focal-free uniform hypergraphs and codes",
+      "authors": "Xinqi Huang, Chong Shangguan, Xiande Zhang, Yuhao Zhao",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2410.23611",
+      "arxiv_id": "2410.23611",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves asymptotically optimal bounds on focal-free codes, showing the Alon–Holzman multiplicative constant (r-1) is not tight (the true limit is strictly smaller), thereby confirming non-tightness of the upper bound; the sharpest explicit result concerns q→∞ rather than q=2 specifically."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "focal families binary q=2 upper bound near-sunflowers Alon Holzman 2010.05992",
+    "focal family set system binary vectors tight bound sunflower conjecture arXiv",
+    "arxiv 2410.23611 focal-free hypergraphs codes Huang Shangguan Zhang Zhao"
+  ],
+  "notes": "The 2024 paper arXiv:2410.23611 is the main follow-up and clearly improves the Alon–Holzman bound, establishing non-tightness in general via an asymptotic argument. However, the conjecture specifically targets q=2 (binary vectors) for large n; the most explicit result in the follow-up holds as q→∞, so it is not clear whether the binary case is fully settled. Status is therefore 'partial' rather than 'solved'."
+}

@@ -1,0 +1,48 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Gyárfás-Sumner Conjecture (Conjecture 1.1)",
+    "statement_text": "For every forest $H$, there is a function $f$ such that $\\chi(G) \\leq f(\\omega(G))$ for every $H$-free graph $G$.",
+    "context_text": "The Gyárfás-Sumner conjecture [4, 13] is introduced at the outset as the principal motivation for the paper's line of research. It has been proved for some special families of trees but remains open in general. The paper's results concern a strengthened $\\tau(G)$-analogue (replacing $\\omega(G)$ by the largest $t$ such that $K_{t,t}$ is a subgraph), providing polynomial degeneracy bounds in that setting.",
+    "attributed_to": "Gyárfás and Sumner",
+    "attributed_year": null,
+    "paper_contribution": "Proves that for every tree $H$ there exists $c>0$ such that every $H$-free graph $G$ with no $K_{t,t}$ subgraph satisfies $\\partial(G)\\leq(|H|\\zeta t)^c$, establishing polynomial bounds for the $\\tau(G)$-analogue of the conjecture and giving a further strengthening of earlier results of Rödl and of Kierstead–Penrice.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Labelled as Conjecture 1.1 in the paper; attributed to references [4] and [13]. Attributed year cannot be determined from the excerpt.",
+    "arxiv_id": "2104.07927",
+    "paper_title": "Polynomial bounds for chromatic number. I. Excluding a biclique and an induced tree",
+    "paper_authors": [
+      "Alex Scott",
+      "Paul Seymour",
+      "Sophie Spirkl"
+    ],
+    "published": "2021-07-25",
+    "abs_url": "https://arxiv.org/abs/2104.07927",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Esperet's Question on Polynomial χ-Boundedness",
+    "statement_text": "For every $\\chi$-bounded class $\\mathcal{C}$, can the bounding function $f$ (satisfying $\\chi(G)\\leq f(\\omega(G))$ for every induced subgraph $G$ of a member of $\\mathcal{C}$) always be chosen to be a polynomial?",
+    "context_text": "Esperet [3] asked whether every χ-bounded class admits a polynomial bounding function. The paper notes that neither the Gyárfás-Sumner conjecture nor Esperet's question has been settled in general, and motivates its main results as answering the direct analogue of Esperet's question for the $\\tau(G)$-version of χ-boundedness.",
+    "attributed_to": "Esperet",
+    "attributed_year": null,
+    "paper_contribution": "Answers the $\\tau(G)$-analogue of Esperet's question: for every forest $H$ there exists $c>0$ such that every $H$-free graph $G$ satisfies $\\partial(G)\\leq\\tau(G)^c$, showing that the degeneracy bound is polynomial in $\\tau(G)$.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "Stated in running prose without a labelled theorem environment; attributed to reference [3], whose year is not determinable from the excerpt provided.",
+    "arxiv_id": "2104.07927",
+    "paper_title": "Polynomial bounds for chromatic number. I. Excluding a biclique and an induced tree",
+    "paper_authors": [
+      "Alex Scott",
+      "Paul Seymour",
+      "Sophie Spirkl"
+    ],
+    "published": "2021-07-25",
+    "abs_url": "https://arxiv.org/abs/2104.07927",
+    "source": "pdf"
+  }
+]

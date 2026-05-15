@@ -1,0 +1,23 @@
+{
+  "review_id": "2407.21360__01",
+  "safe_id": "2407.21360",
+  "arxiv_id": "2407.21360",
+  "conjecture_title": "Conjecture 8",
+  "paper_title": "Clustered Colouring of Graph Products",
+  "published": "2024-07-31",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 8 asks whether the O(|V(H_1 \\boxtimes H_2)|^{4/7}) upper bound proved in the paper for 3-colourings of strong products of bounded-treewidth graphs is asymptotically tight; the paper's own lower bound reaches only \\Omega(|V(H_1 \\boxtimes H_2)|^{1/2}), leaving a gap between exponents 1/2 and 4/7. The source paper was published in The Electronic Journal of Combinatorics (Volume 32, Issue 3, 2025, DOI 10.37236/13247). No follow-up work closing this gap was found in the indexed literature.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "clustered colouring strong product treewidth 4/7 exponent clustering arXiv 2407.21360",
+    "clustered chromatic number strong graph product treewidth lower bound 2024 2025",
+    "Campbell Gollin Hendrey Wood clustered colouring graph products conjecture 4/7 tight lower bound 2025",
+    "semantic scholar 2407.21360 clustered colouring graph products citing papers"
+  ],
+  "notes": "No follow-up found. The source paper was published as ELJC Volume 32, Issue 3 (2025), DOI 10.37236/13247. The conjecture claims the 4/7 exponent in the 3-colouring upper bound is tight; the best lower bound established in the paper is 1/2, so the gap [1/2, 4/7] remains open."
+}

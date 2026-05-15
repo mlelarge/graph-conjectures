@@ -1,0 +1,48 @@
+[
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Problem 1.1 (Conlon, Fox, and Sudakov)",
+    "statement_text": "Show that for any $q \\geq 2$, there exists $c_q$ such that $r_3(H; q) \\leq 2^{2^{c_q\\sqrt{m}}}$ for any 3-uniform hypergraph $H$ with $m$ edges and no isolated vertices.",
+    "context_text": "Conlon, Fox and Sudakov proved that any $k$-uniform hypergraph $H$ with $m$ edges satisfies $r_k(H; q) \\leq \\mathrm{tw}_k(c\\sqrt{m\\log m})$ for $k=3$, and asked whether the logarithmic factor could be removed. This problem was posed in their survey on graph Ramsey theory.",
+    "attributed_to": "Conlon, Fox, and Sudakov",
+    "attributed_year": null,
+    "paper_contribution": "Resolves Problem 1.1 in full: Theorem 1.2 proves $r_k(H; q) \\leq \\mathrm{tw}_k(C_{k,q}\\sqrt{m})$ for all $k \\geq 3$ and any fixed number of colors $q$, with a unified proof covering all uniformities.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2308.10833",
+    "paper_title": "Ramsey numbers of hypergraphs of a given size",
+    "paper_authors": [
+      "Domagoj Bradač",
+      "Jacob Fox",
+      "Benny Sudakov"
+    ],
+    "published": "2023-08-21",
+    "abs_url": "https://arxiv.org/abs/2308.10833",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Informal Problem: extending the $\\sqrt{m}$ Ramsey bound to more than two colors for graphs",
+    "statement_text": "It would be interesting to extend the result $r_2(G; 2) \\leq 2^{c\\sqrt{m}}$ (for any graph $G$ with $m$ edges and no isolated vertices) to more than two colors.",
+    "context_text": "Sudakov [22] resolved Erdős's conjecture by showing $r_2(G; 2) \\leq 2^{c\\sqrt{m}}$, but the argument works only for two colors. The paper notes this gap immediately after mentioning the resolution of the conjecture.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated as a brief remark in the introduction without a labelled environment.",
+    "arxiv_id": "2308.10833",
+    "paper_title": "Ramsey numbers of hypergraphs of a given size",
+    "paper_authors": [
+      "Domagoj Bradač",
+      "Jacob Fox",
+      "Benny Sudakov"
+    ],
+    "published": "2023-08-21",
+    "abs_url": "https://arxiv.org/abs/2308.10833",
+    "source": "pdf"
+  }
+]

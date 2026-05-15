@@ -1,0 +1,112 @@
+[
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Question 1 (Rao–Shinkar Question 6.1)",
+    "statement_text": "Is there a mapping from Dictator to XOR that is $O(1)$-local and $O(1)$-bi-Lipschitz?",
+    "context_text": "Rao and Shinkar constructed a map from Dictator to XOR that is 2-Lipschitz and 3-local but whose inverse is only $O(\\log n)$-Lipschitz, and asked whether an $O(1)$-bi-Lipschitz and $O(1)$-local map could exist. The question concerns the interplay between locality and bi-Lipschitz stretch for mappings between these two boolean functions.",
+    "attributed_to": "Rao and Shinkar",
+    "attributed_year": null,
+    "paper_contribution": "Answers in the negative (Theorem 1): any $C$-Lipschitz mapping from Dictator to XOR where each output bit depends on at most $k$ input bits has inverse that is not $\\delta\\log(n)$-Lipschitz for $\\delta = \\Omega(1/(k+\\log(C)))$, so no $O(1)$-local $O(1)$-bi-Lipschitz map can exist.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1812.09215",
+    "paper_title": "Lipschitz bijections between boolean functions",
+    "paper_authors": [
+      "Tom Johnston",
+      "Alex Scott"
+    ],
+    "published": "2021-12-10",
+    "abs_url": "https://arxiv.org/abs/1812.09215",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Question 2 (Rao–Shinkar Question 6.3)",
+    "statement_text": "Is there a mapping $\\phi$ from XOR to Majority such that $\\mathrm{avgStretch}(\\phi) = O(\\sqrt{n})$?",
+    "context_text": "Rao and Shinkar proved that any mapping from XOR to Majority must have average stretch $\\Omega(\\sqrt{n})$ in any direction, and asked whether this lower bound is tight. The question concerns the optimal average stretch achievable by a bijection between these two boolean functions.",
+    "attributed_to": "Rao and Shinkar",
+    "attributed_year": null,
+    "paper_contribution": "Answers in the positive (Theorem 2): constructs an explicit bijection from XOR to Majority via a symmetric chain decomposition argument that achieves average stretch $O(\\sqrt{n})$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1812.09215",
+    "paper_title": "Lipschitz bijections between boolean functions",
+    "paper_authors": [
+      "Tom Johnston",
+      "Alex Scott"
+    ],
+    "published": "2021-12-10",
+    "abs_url": "https://arxiv.org/abs/1812.09215",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Question 3 (Rao–Shinkar Question 6.4)",
+    "statement_text": "Is there a Lipschitz embedding $\\phi : \\{0,1\\}^n \\to \\{0,1\\}^{\\mathrm{poly}(n)}$ such that $\\mathrm{XOR}(x) = \\mathrm{Majority}(\\phi(x))$ for all $x \\in \\{0,1\\}^n$?",
+    "context_text": "Since any bijection from XOR to Majority requires large average stretch ($\\Omega(\\sqrt{n})$), Rao and Shinkar asked whether the problem becomes easier if one relaxes from a bijection on $\\{0,1\\}^n$ to an injection into a polynomially larger hypercube, allowing a $O(1)$-Lipschitz solution.",
+    "attributed_to": "Rao and Shinkar",
+    "attributed_year": null,
+    "paper_contribution": "Answers in the positive (Theorem 3): constructs a 3-Lipschitz embedding $\\phi : \\{0,1\\}^n \\to \\{0,1\\}^{2n+1}$ defined by $\\phi(x) = (x^c, \\mathrm{XOR}(x), x)$ such that $\\mathrm{XOR}(x) = \\mathrm{Majority}(\\phi(x))$ for all $x \\in \\{0,1\\}^n$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1812.09215",
+    "paper_title": "Lipschitz bijections between boolean functions",
+    "paper_authors": [
+      "Tom Johnston",
+      "Alex Scott"
+    ],
+    "published": "2021-12-10",
+    "abs_url": "https://arxiv.org/abs/1812.09215",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Question 4 (Rao–Shinkar Question 6.2)",
+    "statement_text": "Is it true that with high probability there is a $O(1)$-bi-Lipschitz mapping from Dictator to a uniformly random balanced function $f$?",
+    "context_text": "Building on a construction of Håstad, Leighton and Newman, Rao and Shinkar showed that with high probability there is a bijection from Dictator to a uniformly random balanced function with $O(1)$ average stretch, and asked whether the stronger property of $O(1)$-bi-Lipschitz can also be guaranteed with high probability.",
+    "attributed_to": "Rao and Shinkar",
+    "attributed_year": null,
+    "paper_contribution": "Answers in the positive (Theorem 4): proves that with high probability there exists a mapping $\\phi$ from Dictator to $f$ satisfying $\\mathrm{dist}(x,\\phi(x)) \\leq C$ for an absolute constant $C$ and all $x$, which implies $\\phi$ is $(2C+1)$-bi-Lipschitz.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1812.09215",
+    "paper_title": "Lipschitz bijections between boolean functions",
+    "paper_authors": [
+      "Tom Johnston",
+      "Alex Scott"
+    ],
+    "published": "2021-12-10",
+    "abs_url": "https://arxiv.org/abs/1812.09215",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Informal Question (Section 2)",
+    "statement_text": "Does there exist a map $\\phi$ from Dictator to XOR which is $C$-Lipschitz, where each output bit depends on at most $k$ input bits, and such that $\\phi^{-1}$ is $o(\\log n / \\log k)$-Lipschitz as $n, k \\to \\infty$?",
+    "context_text": "Theorem 1 shows that for general maps the inverse must be at least $\\Omega(1/k)\\cdot\\log n$-Lipschitz, while for linear maps the bound is $\\Omega(1/\\log k)\\cdot\\log n$-Lipschitz. Rao and Shinkar's construction achieves $\\delta(2,k)=O(1/\\log k)$ for linear maps, matching the linear-map lower bound, but a gap remains for general maps between $\\Omega(1/k)$ and $O(1/\\log k)$.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated in running prose as 'This raises the following question:' without a labelled theorem environment.",
+    "arxiv_id": "1812.09215",
+    "paper_title": "Lipschitz bijections between boolean functions",
+    "paper_authors": [
+      "Tom Johnston",
+      "Alex Scott"
+    ],
+    "published": "2021-12-10",
+    "abs_url": "https://arxiv.org/abs/1812.09215",
+    "source": "pdf"
+  }
+]

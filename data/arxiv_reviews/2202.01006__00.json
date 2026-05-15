@@ -1,0 +1,21 @@
+{
+  "review_id": "2202.01006__00",
+  "safe_id": "2202.01006",
+  "arxiv_id": "2202.01006",
+  "conjecture_title": "Open problem on construction size",
+  "paper_title": "Chordal directed graphs are not $χ$-bounded",
+  "published": "2022-02-02",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "No follow-up work was found that reduces the $n^{2^{\\mathrm{poly}(n)}}$ size bound for the $(k+1)$-dichromatic construction in $\\mathcal{C}_3$ from arXiv:2202.01006. The paper appeared in the Electronic Journal of Combinatorics (v29i2p17, 2022). Related work (arXiv:2309.17385, Bessy–Havet–Picasarri-Arrieta, 2023) studies dichromatic numbers of chordal graph orientations but does not address this specific size-reduction question. The open problem of closing the gap between $n^{2^{\\mathrm{poly}(n)}}$ and the $2^{\\mathrm{poly}(|G_k|)}$ Zykov bound for triangle-free undirected graphs appears unresolved.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "arXiv 2202.01006 chordal directed graphs chi-bounded dichromatic construction size",
+    "dichromatic number Zykov construction digraph size bound Aboulker Bousquet de Verclos"
+  ],
+  "notes": "No follow-up found addressing the specific size-reduction question. The paper arXiv:2309.17385 ('Dichromatic number of chordal graphs', Bessy–Havet–Picasarri-Arrieta, 2023) is thematically related but its abstract does not reference the construction size open problem from 2202.01006."
+}

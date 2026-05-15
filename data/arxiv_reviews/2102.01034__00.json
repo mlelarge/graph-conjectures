@@ -1,0 +1,22 @@
+{
+  "review_id": "2102.01034__00",
+  "safe_id": "2102.01034",
+  "arxiv_id": "2102.01034",
+  "conjecture_title": "Problem 4.4",
+  "paper_title": "On the dichromatic number of surfaces",
+  "published": "2021-11-16",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Problem 4.4 from arXiv:2102.01034 asks for the computational complexity of \\Sigma-k-DICOLOURABILITY for k \\in {4, 5} and \\Sigma different from the sphere; the source paper establishes NP-completeness for k=2 and polynomial-time solvability for k \\geq 6, leaving the intermediate cases k=4 and k=5 explicitly open. A wide literature search found no follow-up paper that resolves (or even substantially advances) this complexity question for either value of k on any non-spherical surface. The problem remains open as of May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "dichromatic number surfaces dicolourability complexity NP-complete k=4 k=5 arXiv 2102.01034",
+    "Aboulker Havet Knauer Rambaud dichromatic number surfaces dicolourability complexity follow-up",
+    "dicolourability complexity surfaces k=4 k=5 digraph NP-complete polynomial 2022 2023 2024 2025"
+  ],
+  "notes": "No follow-up found. Five web calls were used (2 WebSearch + 3 WebFetch). The paper was published in the Electronic Journal of Combinatorics (2022, v29i1p30). The open problem is sandwiched between the known NP-complete case k=2 and the known polynomial-time case k>=6; resolving k in {4,5} likely requires new structural insight into digraphs on surfaces. The thesis 'Digraph colouring' (HAL tel-04633967, 2024) appeared in the search but was access-denied; it may contain partial progress and warrants manual inspection."
+}

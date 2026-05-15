@@ -1,0 +1,98 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Aboulker–Charbit–Naserasr Conjecture (every hero is a superhero)",
+    "statement_text": "Every hero is a superhero, i.e., a tournament $H$ is a superhero if and only if $H$ is a hero.",
+    "context_text": "A digraph $H$ is a superhero if for every integer $\\alpha \\geq 1$ there is a number $g(H,\\alpha)$ such that $\\chi(D) \\leq g(H,\\alpha)$ for every $H$-free digraph $D$ with $\\alpha(D) \\leq \\alpha$. It was already known that every superhero is a hero; Aboulker, Charbit and Naserasr asked whether the converse holds. The paper's abstract states this answers their question.",
+    "attributed_to": "Aboulker, Charbit and Naserasr",
+    "attributed_year": null,
+    "paper_contribution": "Proves the conjecture in full as Theorem 1.3 (every hero is a superhero), thereby completely characterizing all superheroes.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source. Stated as a conjecture/question in the introduction and resolved by the main result of the paper.",
+    "arxiv_id": "1704.07219",
+    "paper_title": "Coloring dense digraphs",
+    "paper_authors": [
+      "Ararat Harutyunyan",
+      "Tien-Nam Le",
+      "Alantha Newman",
+      "Stéphan Thomassé"
+    ],
+    "published": "2019-10-23",
+    "abs_url": "https://arxiv.org/abs/1704.07219",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.1",
+    "statement_text": "For every digraph $H$, there is $\\varepsilon > 0$ such that if $D$ is an $H$-free digraph, then $\\chi(D) \\leq |V(D)|^{1-\\varepsilon}$.",
+    "context_text": "This conjecture (attributed to reference [8] in the paper) generalises the Erdős–Hajnal conjecture to digraphs. It is open even when $H$ is the oriented triangle $C_3$, and can be viewed as a strengthening of the Erdős–Hajnal conjecture. The superhero framework of the paper is motivated by it.",
+    "attributed_to": "unknown (reference [8] in the paper)",
+    "attributed_year": null,
+    "paper_contribution": "Not directly proved; mentioned as primary motivation. The paper's results (Theorem 1.3 and Theorem 1.7) are partial steps toward understanding this conjecture in the dense digraph setting.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source. The authorship of reference [8] is not given in the extracted text.",
+    "arxiv_id": "1704.07219",
+    "paper_title": "Coloring dense digraphs",
+    "paper_authors": [
+      "Ararat Harutyunyan",
+      "Tien-Nam Le",
+      "Alantha Newman",
+      "Stéphan Thomassé"
+    ],
+    "published": "2019-10-23",
+    "abs_url": "https://arxiv.org/abs/1704.07219",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Erdős–Hajnal Conjecture (Conjecture 1.2)",
+    "statement_text": "For every tournament $H$, there exists a constant $\\varepsilon(H) > 0$ such that every $H$-free tournament $T$ satisfies $\\beta(T) \\geq \\varepsilon(H)|V(T)|$.",
+    "context_text": "Here $\\beta(T)$ denotes the maximum size of an acyclic subset of $V(T)$. The paper presents this as one formulation of the Erdős–Hajnal conjecture and notes that Conjecture 1.1 can be viewed as a strengthening of it. The special case $H = C_3$ would follow from the paper's own Conjecture 1.6 with $\\varepsilon = 1/(2\\ell)$.",
+    "attributed_to": "Erdős and Hajnal",
+    "attributed_year": null,
+    "paper_contribution": "Mentioned as background; the paper's Conjecture 1.6, if true, would imply the $H = C_3$ special case.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source. Stated in its digraph/acyclicity formulation using $\\beta(T)$.",
+    "arxiv_id": "1704.07219",
+    "paper_title": "Coloring dense digraphs",
+    "paper_authors": [
+      "Ararat Harutyunyan",
+      "Tien-Nam Le",
+      "Alantha Newman",
+      "Stéphan Thomassé"
+    ],
+    "published": "2019-10-23",
+    "abs_url": "https://arxiv.org/abs/1704.07219",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.6",
+    "statement_text": "There is an integer $\\ell$ such that if $D$ is a $C_3$-free digraph with $\\alpha(D) \\leq \\alpha$, then $\\chi(D) \\leq \\alpha^\\ell$.",
+    "context_text": "The authors propose this polynomial bound as a target for the chromatic number of $C_3$-free digraphs with bounded independence number. They note that if true, it would imply the $H = C_3$ special case of the Erdős–Hajnal conjecture with $\\varepsilon := 1/(2\\ell)$. As partial evidence, they prove the weaker factorial bound $\\chi(D) \\leq 35^{\\alpha-1}\\alpha!$ in Theorem 1.7.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "PDF source. Introduced with the phrase \"we believe that the following statement may be true.\"",
+    "arxiv_id": "1704.07219",
+    "paper_title": "Coloring dense digraphs",
+    "paper_authors": [
+      "Ararat Harutyunyan",
+      "Tien-Nam Le",
+      "Alantha Newman",
+      "Stéphan Thomassé"
+    ],
+    "published": "2019-10-23",
+    "abs_url": "https://arxiv.org/abs/1704.07219",
+    "source": "pdf"
+  }
+]

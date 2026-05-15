@@ -1,0 +1,23 @@
+{
+  "review_id": "2207.13651__00",
+  "safe_id": "2207.13651",
+  "arxiv_id": "2207.13651",
+  "conjecture_title": "Informal Conjecture on Property (*) for d = o(n/log n)",
+  "paper_title": "On random irregular subgraphs",
+  "published": "2022-07-27",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Fox, Luo, and Pham prove Property (*) for the random irregular subgraph model when d = o(n/(log n)^{12}) (Theorem 1.3), and conjecture the result extends to the wider range d = o(n/log n). No subsequent paper resolving this conjecture was found in a web search; the conjecture remains open as of May 2026. The paper appeared in Random Structures & Algorithms (2024).",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Fox Luo Pham \"irregular subgraph\" \"property (*)\" conjecture 2207.13651",
+    "random irregular subgraph m(H,k) property star d=o(n/log n) graph theory",
+    "arxiv \"irregular subgraph\" \"d-regular\" \"o(n/log n)\" 2023 2024 2025 2026",
+    "Fox Pham Luo \"random irregular\" conjecture 1.2 \"o(n/log n)\" cite 2207.13651 arxiv"
+  ],
+  "notes": "The paper's main theorem (Theorem 1.3) covers d = o(n/(log n)^{12}); the informal conjecture asks to push this to d = o(n/log n). The authors also remark that for d = omega(n/log n) the model likely fails Property (*). No follow-up resolving or extending this conjecture was found in the indexed literature."
+}

@@ -1,0 +1,46 @@
+[
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Chvátal–Tuza Question on Maximum Induced Cycles",
+    "statement_text": "What is the maximum possible number of induced cycles in a graph on $n$ vertices?",
+    "context_text": "Chvátal and Tuza raised this problem in the 1980s (see references [15] and [16] of the paper). Robson showed independently in the 1980s that a graph on $n$ vertices has at most $3^{(1+o(1))n/3}$ induced cycles, but the exact maximum and the extremal graphs remained unknown.",
+    "attributed_to": "Chvátal and Tuza",
+    "attributed_year": null,
+    "paper_contribution": "Proves that for all sufficiently large $n$, $H_n$ is the unique $n$-vertex graph achieving the maximum $m(n)$ induced cycles, and determines $m(n)$ exactly as a closed-form function of $n \\bmod 3$ (Theorem 1.2 and Corollary 1.3).",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "Stated in prose in the introduction, not in a labelled theorem environment. The abstract explicitly confirms this paper answers the question. Section 6 of the paper discusses further open questions but is not included in the provided text.",
+    "arxiv_id": "1603.02960",
+    "paper_title": "Maximising the number of induced cycles in a graph",
+    "paper_authors": [
+      "Natasha Morrison",
+      "Alex Scott"
+    ],
+    "published": "2017-04-12",
+    "abs_url": "https://arxiv.org/abs/1603.02960",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Chvátal–Tuza Conjecture on Maximum Odd Induced Cycles",
+    "statement_text": "The maximum possible number of odd induced cycles in a graph on $n$ vertices is $3^{n/3}$.",
+    "context_text": "Tuza conjectured this jointly with Chvátal in 1988 (see references [14], [15] and [16] of the paper) as a companion to their question on total induced cycles. The abstract of this paper states that this conjecture is resolved by the results herein.",
+    "attributed_to": "Chvátal and Tuza",
+    "attributed_year": 1988,
+    "paper_contribution": "Proves Theorem 1.6: for all sufficiently large $n$, $G_n$ is the unique $n$-vertex graph containing $m_o(n)$ induced odd cycles, resolving the conjecture; $m_o(n)$ is within an $O(n)$ additive term of $3^{n/3}$ when $n \\not\\equiv 3 \\pmod{6}$ and within a constant factor when $n \\equiv 3 \\pmod{6}$.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "Stated in prose in the introduction, not in a labelled theorem environment. The abstract explicitly states this paper resolves the conjecture.",
+    "arxiv_id": "1603.02960",
+    "paper_title": "Maximising the number of induced cycles in a graph",
+    "paper_authors": [
+      "Natasha Morrison",
+      "Alex Scott"
+    ],
+    "published": "2017-04-12",
+    "abs_url": "https://arxiv.org/abs/1603.02960",
+    "source": "pdf"
+  }
+]

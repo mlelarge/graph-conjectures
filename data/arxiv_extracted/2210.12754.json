@@ -1,0 +1,71 @@
+[
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Open Problem (characterizing edge probabilities for Theorem 1.1)",
+    "statement_text": "Characterize all edge probabilities $p = p(n)$ for which the assertion of Theorem 1.1 holds.",
+    "context_text": "Theorem 1.1 is proved for fixed $p \\in (0,1)$ and (via Proposition 2.1) for $p = p(n)$ satisfying $n^{-c} \\leq p \\leq 1-n^{-c}$. The authors note that hereditary (even monotone) properties exist for which the fraction of edges of $G(n,p)$ lying in a maximum in-$\\mathcal{P}$ subgraph changes, whp, several times as $p$ increases from 0 to 1.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "PDF source; stated as an informal open problem in the concluding remarks without a labelled environment.",
+    "arxiv_id": "2210.12754",
+    "paper_title": "Largest subgraph from a hereditary property in a random graph",
+    "paper_authors": [
+      "Noga Alon",
+      "Michael Krivelevich",
+      "Wojciech Samotij"
+    ],
+    "published": "2022-10-23",
+    "abs_url": "https://arxiv.org/abs/2210.12754",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Open Problem (accurate estimate in the bipartite case)",
+    "statement_text": "Provide a more accurate estimate for $\\mathrm{ex}(G, \\mathcal{P})$ when $\\mathcal{P}$ misses a bipartite graph (i.e., when Theorem 1.1 gives only $\\mathrm{ex}(G(n,p),\\mathcal{P}) = o(n^2)$ whp).",
+    "context_text": "When the minimum chromatic number $k$ of a graph not in $\\mathcal{P}$ equals 2, Theorem 1.1 yields $\\mathrm{ex}(G(n,p),\\mathcal{P}) = o(n^2)$ whp but does not determine the precise order of magnitude. The authors ask for a sharper asymptotic in this regime.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "PDF source; stated as an open problem in the concluding remarks without a labelled environment.",
+    "arxiv_id": "2210.12754",
+    "paper_title": "Largest subgraph from a hereditary property in a random graph",
+    "paper_authors": [
+      "Noga Alon",
+      "Michael Krivelevich",
+      "Wojciech Samotij"
+    ],
+    "published": "2022-10-23",
+    "abs_url": "https://arxiv.org/abs/2210.12754",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Informal Conjecture (polynomial saving in the bipartite case)",
+    "statement_text": "It seems plausible that in the bipartite case $\\mathrm{ex}(G, \\mathcal{P}) \\leq n^{2-\\varepsilon}$ for some $\\varepsilon = \\varepsilon(\\mathcal{P}) > 0$.",
+    "context_text": "When $\\mathcal{P}$ misses a bipartite graph, Theorem 1.1 gives only $\\mathrm{ex}(G(n,p),\\mathcal{P}) = o(n^2)$ whp. The authors speculate that the saving over the trivial $O(n^2)$ bound is in fact polynomial, not merely sub-polynomial.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "PDF source; signaled by the phrase 'It seems plausible that'. Math notation appears clean despite PDF extraction.",
+    "arxiv_id": "2210.12754",
+    "paper_title": "Largest subgraph from a hereditary property in a random graph",
+    "paper_authors": [
+      "Noga Alon",
+      "Michael Krivelevich",
+      "Wojciech Samotij"
+    ],
+    "published": "2022-10-23",
+    "abs_url": "https://arxiv.org/abs/2210.12754",
+    "source": "pdf"
+  }
+]

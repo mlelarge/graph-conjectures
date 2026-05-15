@@ -1,0 +1,71 @@
+{
+  "review_id": "2110.00278__00",
+  "safe_id": "2110.00278",
+  "arxiv_id": "2110.00278",
+  "conjecture_title": "Conjecture 1.3",
+  "paper_title": "Polynomial bounds for chromatic number. IV. A near-polynomial bound for excluding the five-vertex path",
+  "published": "2022-10-02",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Conjecture 1.3 — that for every forest H there exists c > 0 such that every H-free graph G satisfies chi(G) <= omega(G)^c — remains open in full generality. It has been established for star-forests and double stars (Scott–Seymour–Spirkl), and a fractional-colouring version has been proved for all multibrooms by Nguyen–Scott–Seymour (2024). For trees of radius two a polynomial bound in tau_d(G) is known (Scott–Seymour 2023), which yields a doubly-exponential but not polynomial bound in omega(G). For P_5-free graphs the best known bound is chi(G) <= omega(G)^{log_2(omega(G))}, a near-polynomial result proved in the source paper itself.",
+  "since_posted": [
+    {
+      "title": "Trees and near-linear stable sets",
+      "authors": "Tung Nguyen, Alex Scott, Paul Seymour",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2409.09397",
+      "arxiv_id": "2409.09397",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves a fractional-colouring version of the polynomial chi-bound conjecture for all multibrooms H, and shows that every {H, K_{k+1}}-free graph G with H a forest satisfies alpha(G) >= |G|^{1-o(1)}, but does not prove the full chi(G) <= omega(G)^c for general forests."
+    },
+    {
+      "title": "Polynomial bounds for chromatic number. V. Excluding a tree of radius two and a complete multipartite graph",
+      "authors": "Alex Scott, Paul Seymour",
+      "year": 2023,
+      "venue": "Journal of Combinatorial Theory, Series B",
+      "url": "https://arxiv.org/abs/2202.05557",
+      "arxiv_id": "2202.05557",
+      "doi": null,
+      "kind": "partial",
+      "claim": "For every tree H of radius two and integer d >= 1 proves chi(G) <= f(tau_d(G)) polynomially for H-free graphs, yielding a doubly-exponential bound in omega(G) — partial progress toward a polynomial bound in omega(G) but with an additional multipartite-graph exclusion."
+    }
+  ],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2409.09397",
+      "verified": true,
+      "note": "Confirmed: proves alpha(G) >= |G|^{1-o(1)} for {H, K_{k+1}}-free graphs when H is any forest, and full fractional chi polynomial bound for multibrooms. Full chi(G) <= omega(G)^c for general forests not proved."
+    },
+    {
+      "arxiv_id": "2409.09400",
+      "verified": false,
+      "note": "Not fetched; contribution concerns K_t-subdivision-free graphs (near-linear stable sets), tangential to this conjecture."
+    },
+    {
+      "arxiv_id": "2202.05557",
+      "verified": true,
+      "note": "Confirmed: focuses on trees of radius two combined with complete-multipartite exclusion; polynomial bound in tau_d(G) not directly in omega(G). Partial progress only."
+    },
+    {
+      "arxiv_id": "2301.10147",
+      "verified": false,
+      "note": "Not fetched; contribution is a loglog improvement on the Erdos-Hajnal conjecture bound, tangential to this polynomial chi-bound conjecture."
+    },
+    {
+      "arxiv_id": "2009.09426",
+      "verified": false,
+      "note": "Not fetched; cited twice in internal refs — once for bipartite Erdos-Hajnal analogues, and once explicitly noting the conjecture remains an important open problem beyond the paper's main results."
+    }
+  ],
+  "search_queries": [
+    "polynomial chi-bounded forest-free chi(G) omega(G)^c Scott Seymour Spirkl conjecture",
+    "arxiv 2110.00278 polynomial bounds chromatic number forest H-free follow-up 2023 2024 2025",
+    "Towards Esperet Conjecture polynomial chi-bounds structured graph classes arxiv 2512.09186"
+  ],
+  "notes": "This conjecture is the polynomial strengthening of the Gyarfas-Sumner conjecture (sometimes linked to Esperet's general polynomial chi-boundedness conjecture). It is open for general forests; the source paper's own best result for P_5-free graphs is the near-polynomial bound omega^{log_2(omega)}. A survey paper arxiv:2512.09186 ('Towards Esperet's Conjecture', Dec 2025) addresses polynomial chi-bounds for structured classes including broom-free and C_4-free graphs, but does not appear to resolve the general forest case."
+}

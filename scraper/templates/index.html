@@ -2,16 +2,34 @@
 
 {% block main %}
 <div class="index-controls">
-  <input type="search" id="filter" placeholder="Filter by title, author, subject, keyword, status…" autofocus>
-  <span class="index-count"><span id="visible-count">{{ problems|length }}</span> / {{ problems|length }} problems</span>
+  <input type="search" id="filter" placeholder="Filter by title, author, subject, keyword, status, source…" autofocus>
+  <span class="index-count"><span id="visible-count">{{ rows|length }}</span> / {{ rows|length }} rows</span>
   {% if review_count %}
-  <span class="status-summary" title="literature-review status counts">
+  <span class="status-summary" title="OPG literature-review status counts">
+    OPG:
     {% for s in ['open','partial','solved','disproved','unclear'] -%}
       {% if review_status_counts.get(s) -%}
         <span class="status-badge status-{{ s }}">{{ s }} {{ review_status_counts[s] }}</span>
       {%- endif %}
     {%- endfor %}
-    <span class="status-pending">{{ problem_count - review_count }} not yet reviewed</span>
+    {% if problem_count - review_count > 0 %}<span class="status-pending">{{ problem_count - review_count }} unreviewed</span>{% endif %}
+  </span>
+  {% endif %}
+  {% if arxiv_review_count %}
+  <span class="status-summary" title="arXiv conjecture-review status counts">
+    arXiv:
+    {% for s in ['open','partial','solved','disproved','unclear'] -%}
+      {% if arxiv_review_status_counts.get(s) -%}
+        <span class="status-badge status-{{ s }}">{{ s }} {{ arxiv_review_status_counts[s] }}</span>
+      {%- endif %}
+    {%- endfor %}
+    {% if arxiv_count - arxiv_review_count > 0 %}<span class="status-pending">{{ arxiv_count - arxiv_review_count }} unreviewed</span>{% endif %}
+  </span>
+  {% endif %}
+  {% if arxiv_count %}
+  <span class="source-summary">
+    <span class="badge source source-opg" data-source="opg">OPG {{ problem_count }}</span>
+    <span class="badge source source-arxiv" data-source="arxiv">arXiv {{ arxiv_count }}</span>
   </span>
   {% endif %}
 </div>
@@ -20,26 +38,38 @@
 <thead>
 <tr>
   <th class="col-title">Title</th>
+  <th class="col-source">Source</th>
   <th class="col-status">Status</th>
-  <th class="col-subject">Subject</th>
+  <th class="col-subject">Subject / attribution</th>
   <th class="col-authors">Authors</th>
   <th class="col-importance">Imp.</th>
   <th class="col-posted">Posted</th>
 </tr>
 </thead>
 <tbody>
-{% for p in problems %}
-<tr data-search="{{ p._search }}{% if p._review %} status:{{ p._review.status }}{% endif %}">
+{% for p in rows %}
+<tr data-search="{{ p._search }}{% if p._review %} status:{{ p._review.status }}{% endif %}" data-source="{{ p._source }}">
   <td>
-    <a href="op/{{ p.slug }}/">{{ p.title }}</a>
+    {% if p._source == 'arxiv' %}
+      <a href="arxiv/{{ p.safe_id }}/">{{ p.title }}</a>
+    {% else %}
+      <a href="op/{{ p.slug }}/">{{ p.title }}</a>
+    {% endif %}
     {%- if p._erdos %} <a class="badge erdos" href="{{ p._erdos.erdos_url }}" title="Also at erdosproblems.com">EP #{{ p._erdos.erdos_id }}</a>{% endif -%}
   </td>
+  <td class="col-source"><span class="badge source source-{{ p._source }}">{{ p._source }}</span></td>
   <td class="col-status">
     {% if p._review %}<span class="status-badge status-{{ p._review.status }}">{{ p._review.status }}</span>{% endif %}
   </td>
-  <td>{{ p.subject_path | map(attribute='label') | join(' » ') }}</td>
+  <td>
+    {% if p._source == 'arxiv' %}
+      {% if p.attributed_to and p.attributed_to != 'paper authors' %}{{ p.attributed_to }}{% if p.attributed_year %} ({{ p.attributed_year }}){% endif %}{% endif %}
+    {% else %}
+      {{ p.subject_path | map(attribute='label') | join(' » ') }}
+    {% endif %}
+  </td>
   <td>{{ p.authors | map(attribute='label') | join('; ') }}</td>
-  <td class="importance-{{ p.importance.label|lower }}">{{ '★' * p.importance.stars }}</td>
+  <td class="importance-{{ p.importance.label|lower }}">{% if p.importance.stars %}{{ '★' * p.importance.stars }}{% endif %}</td>
   <td>{{ p.posted_at or '' }}</td>
 </tr>
 {% endfor %}
@@ -53,18 +83,34 @@
   var tbody = table.querySelector('tbody');
   var rows = Array.from(tbody.querySelectorAll('tr'));
   var counter = document.getElementById('visible-count');
+  var sourceFilter = null;   // null = all; "opg" | "arxiv" otherwise
 
   function applyFilter() {
     var q = input.value.trim().toLowerCase();
     var visible = 0;
     rows.forEach(function(r) {
-      var match = q === '' || r.dataset.search.indexOf(q) !== -1;
+      var textOk   = q === '' || r.dataset.search.indexOf(q) !== -1;
+      var sourceOk = sourceFilter === null || r.dataset.source === sourceFilter;
+      var match = textOk && sourceOk;
       r.style.display = match ? '' : 'none';
       if (match) visible++;
     });
     counter.textContent = visible;
   }
   input.addEventListener('input', applyFilter);
+
+  // Click a source badge in the summary to toggle a source filter
+  document.querySelectorAll('.source-summary .badge.source').forEach(function(b) {
+    b.style.cursor = 'pointer';
+    b.addEventListener('click', function() {
+      var src = b.dataset.source;
+      sourceFilter = (sourceFilter === src) ? null : src;
+      document.querySelectorAll('.source-summary .badge.source').forEach(function(other) {
+        other.classList.toggle('active', other.dataset.source === sourceFilter);
+      });
+      applyFilter();
+    });
+  });
 
   // Click a status badge in the summary to toggle a status: filter
   document.querySelectorAll('.status-summary .status-badge').forEach(function(badge) {
@@ -91,7 +137,6 @@
       rows.sort(function(a, b) {
         var av = (a.cells[i].textContent || '').trim().toLowerCase();
         var bv = (b.cells[i].textContent || '').trim().toLowerCase();
-        // empty values always sort to the end
         if (av === '' && bv !== '') return 1;
         if (bv === '' && av !== '') return -1;
         return sign * av.localeCompare(bv, undefined, {numeric: true});

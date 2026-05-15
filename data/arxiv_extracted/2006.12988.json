@@ -1,0 +1,25 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Erdős Distinct Subset Sums Conjecture",
+    "statement_text": "If $\\{a_1, \\ldots, a_n\\}$ is a set of positive integers with $a_1 < \\cdots < a_n$ and all subset sums distinct, then $a_n \\geq c \\cdot 2^n$ for some constant $c > 0$.",
+    "context_text": "Erdős conjectured this and offered $500 for a proof or disproof. Erdős and Moser proved $a_n \\geq \\frac{1}{4} \\cdot n^{-1/2} \\cdot 2^n$ using the second moment method; subsequent improvements on the constant factor were made by Guy, Elkies, Bae, and Aliev, with the best published constant being $\\sqrt{3/2\\pi}$ due to Aliev.",
+    "attributed_to": "Erdős",
+    "attributed_year": 1955,
+    "paper_contribution": "Gives two short proofs of the best known asymptotic lower bound $a_n \\geq \\left(\\sqrt{2/\\pi} - o(1)\\right) \\cdot n^{-1/2} \\cdot 2^n$, matching an unpublished result of Elkies and Gleason; the first proof combines the Berry–Esseen theorem with Moser's second-moment argument, and the second uses Harper's vertex-isoperimetric inequality.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "PDF source — math may be garbled. The conjecture statement is rendered clearly in context but is stated informally in prose rather than in a labelled theorem environment.",
+    "arxiv_id": "2006.12988",
+    "paper_title": "A note on the Erdős distinct subset sums problem",
+    "paper_authors": [
+      "Quentin Dubroff",
+      "Jacob Fox",
+      "Max Wenqiang Xu"
+    ],
+    "published": "2020-07-20",
+    "abs_url": "https://arxiv.org/abs/2006.12988",
+    "source": "pdf"
+  }
+]

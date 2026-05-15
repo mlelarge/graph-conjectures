@@ -1,0 +1,71 @@
+[
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Problem 1.1",
+    "statement_text": "Given a fixed $k$-uniform hypergraph $G$, determine the integer $h$ (if it exists) such that $r(G;q)$ grows as a tower of height $h$ as $q$ tends to infinity.",
+    "context_text": "In the graph case, $r(G;q)$ grows as a tower of height $1$ if $G$ is bipartite (with at least two edges) and as a tower of height $2$ otherwise. For 3-uniform hypergraphs, Abbott and Williams showed that $r(K_4^{(3)};q)$ grows as a tower of height $3$. The paper's main theorem (Theorem 1.4) resolves this problem for $k=3$ in full generality.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2312.13965",
+    "paper_title": "The growth rate of multicolor Ramsey numbers of $3$-graphs",
+    "paper_authors": [
+      "Domagoj Bradač",
+      "Jacob Fox",
+      "Benny Sudakov"
+    ],
+    "published": "2024-04-29",
+    "abs_url": "https://arxiv.org/abs/2312.13965",
+    "source": "html"
+  },
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Problem 1.2 (Axenovich, Gyárfás, Hong and Mubayi)",
+    "statement_text": "For which $3$-uniform hypergraphs $G$, is $r(G;q)$ double exponential? Are there other jumps that the Ramsey function exhibits?",
+    "context_text": "This question was posed by Axenovich, Gyárfás, Hong and Mubayi in their 2014 study of multicolor Ramsey numbers for triple systems. The present paper identifies it as the central open problem motivating the work and resolves it completely for 3-uniform hypergraphs.",
+    "attributed_to": "Axenovich, Gyárfás, Hong and Mubayi",
+    "attributed_year": 2014,
+    "paper_contribution": "Fully resolves the problem by proving that for every non-tripartite 3-uniform hypergraph $G$, either $2^{\\Omega(q)} < r(G;q) < 2^{q^C}$ for some $C=C(G)$, or $2^{2^{q/2}} < r(G;q)$, and characterizes exactly which 3-graphs fall into each class.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "The abstract refers to the fourth author as 'Liu' while the bibliography [4] lists 'L. Hong'; these likely refer to the same person (Liu Hong).",
+    "arxiv_id": "2312.13965",
+    "paper_title": "The growth rate of multicolor Ramsey numbers of $3$-graphs",
+    "paper_authors": [
+      "Domagoj Bradač",
+      "Jacob Fox",
+      "Benny Sudakov"
+    ],
+    "published": "2024-04-29",
+    "abs_url": "https://arxiv.org/abs/2312.13965",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Problem 4.1",
+    "statement_text": "Does there exist, for every $\\ell\\geq 1,$ a $3$-uniform hypergraph $G_{\\ell}$ with $r(G_{\\ell};q)=2^{q^{\\ell+o(1)}}$?",
+    "context_text": "For 3-uniform hypergraphs in the exponential-growth class $\\mathcal{U}$, the upper and lower bounds often have different powers of $q$ in the exponent. Known cases include $r(\\mathrm{Star}^{(3)}(4);q)=2^{q^{1+o(1)}}$ (exponent $\\ell=1$) and a construction from Proposition 3.3 achieving exponent $\\ell=2$, but for $\\ell\\geq 3$ the best upper bound is only of the form $2^{q^{\\ell+1}\\mathrm{polylog}(q)}$.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2312.13965",
+    "paper_title": "The growth rate of multicolor Ramsey numbers of $3$-graphs",
+    "paper_authors": [
+      "Domagoj Bradač",
+      "Jacob Fox",
+      "Benny Sudakov"
+    ],
+    "published": "2024-04-29",
+    "abs_url": "https://arxiv.org/abs/2312.13965",
+    "source": "html"
+  }
+]

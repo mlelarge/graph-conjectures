@@ -1,0 +1,71 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.3",
+    "statement_text": "Let $S$ be a graph of genus $g$. Then $c(S) = O(\\sqrt{g})$.",
+    "context_text": "For graphs embeddable in a surface of genus $g$ the cop number is known to be at most linear in $g$, and there are examples (e.g.\\ binomial random graphs) with cop number at least $g^{1/2-o(1)}$. The gap between upper and lower bounds is large. Conjecture 1.3 is also noted to imply the Weak Meyniel's Conjecture via results of Hosseini, Mohar, and Gonzalez Hermosillo de la Maza.",
+    "attributed_to": "authors of refs [24, 26]",
+    "attributed_year": null,
+    "paper_contribution": "No direct proof of Conjecture 1.3 for graphs; however, because Conjecture 1.5 (for geodesic surfaces) implies Conjecture 1.3, and this paper settles Conjecture 1.5 for constant-curvature (hyperbolic) surfaces of arbitrary genus by proving $c(M)=2$, it confirms the graph analogue for the special family of graphs embeddable in such surfaces.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "PDF source — math may be garbled. Attributed to refs [24, 26]; full bibliographic details not available in the provided excerpt.",
+    "arxiv_id": "2402.05753",
+    "paper_title": "Cops and Robber on Hyperbolic Manifolds",
+    "paper_authors": [
+      "Vesna Iršič",
+      "Bojan Mohar",
+      "Alexandra Wesolek"
+    ],
+    "published": "2024-02-08",
+    "abs_url": "https://arxiv.org/abs/2402.05753",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Meyniel's Conjecture (Conjecture 1.4)",
+    "statement_text": "Let $G$ be a graph of order $n$. Then $c(G) = O(\\sqrt{n})$.",
+    "context_text": "Meyniel's Conjecture is a long-standing open problem; the best known upper bound is $O\\!\\left(\\tfrac{n}{2^{(1-o(1))\\sqrt{\\log_2 n}}}\\right)$. Even the weaker form asserting $c(G) \\le O(n^{1-\\varepsilon})$ for some $\\varepsilon>0$ remains open. The paper notes that Conjecture 1.3 implies the Weak Meyniel's Conjecture, providing an indirect motivation for the surface-genus conjectures studied here.",
+    "attributed_to": "Meyniel",
+    "attributed_year": null,
+    "paper_contribution": "No direct contribution to Meyniel's Conjecture; cited as motivation — if Conjecture 1.3 (which Conjecture 1.5 implies) were established, it would yield the Weak Meyniel's Conjecture.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "PDF source. Attributed to ref [12] in the paper; Meyniel's conjecture dates to approximately 1985.",
+    "arxiv_id": "2402.05753",
+    "paper_title": "Cops and Robber on Hyperbolic Manifolds",
+    "paper_authors": [
+      "Vesna Iršič",
+      "Bojan Mohar",
+      "Alexandra Wesolek"
+    ],
+    "published": "2024-02-08",
+    "abs_url": "https://arxiv.org/abs/2402.05753",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.5",
+    "statement_text": "Let $S$ be a geodesic surface of genus $g$. Then $c(S) = O(\\sqrt{g})$.",
+    "context_text": "This conjecture is the geodesic-space analogue of Conjecture 1.3 and is described as a tough conjecture since it implies Conjecture 1.3. The cop win number for a geodesic surface of genus $g$ is known to be at most linear in $g$, and there exist compact surfaces of genus $g$ with cop win number at least $g^{1/2-o(1)}$. The paper's abstract explicitly states that its main result shows the upper bound in this conjecture can be significantly improved for surfaces of constant curvature.",
+    "attributed_to": "authors of ref [26]",
+    "attributed_year": null,
+    "paper_contribution": "Proves $c(M)=2$ for every compact hyperbolic manifold (Theorem 1.6), regardless of genus, establishing a bound far stronger than $O(\\sqrt{g})$ for this entire family of constant-curvature geodesic surfaces; the conjecture is fully confirmed (and surpassed) for constant-curvature hyperbolic surfaces.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "PDF source — math may be garbled. This is the conjecture most directly studied by the paper. Attributed to ref [26]; full bibliographic details not available in the provided excerpt.",
+    "arxiv_id": "2402.05753",
+    "paper_title": "Cops and Robber on Hyperbolic Manifolds",
+    "paper_authors": [
+      "Vesna Iršič",
+      "Bojan Mohar",
+      "Alexandra Wesolek"
+    ],
+    "published": "2024-02-08",
+    "abs_url": "https://arxiv.org/abs/2402.05753",
+    "source": "pdf"
+  }
+]

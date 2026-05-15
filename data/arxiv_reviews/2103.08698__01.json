@@ -1,0 +1,23 @@
+{
+  "review_id": "2103.08698__01",
+  "safe_id": "2103.08698",
+  "arxiv_id": "2103.08698",
+  "conjecture_title": "Problem 6",
+  "paper_title": "Approximation metatheorems for classes with bounded expansion",
+  "published": "2021-10-09",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Problem 6 of arXiv:2103.08698 asks whether monotone minimization problems expressible in first-order logic admit constant-factor approximations in bounded-expansion classes and PTASes in efficiently fractionally treewidth-fragile classes. The source paper itself establishes these results only for maximization problems; the paper explicitly notes that for minimization the error is bounded only by a fraction of the total vertex weight rather than the optimum, leaving both parts of the problem open. No subsequent paper resolving either part was found in a targeted literature search spanning arXiv and conference proceedings through May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Dvořák bounded expansion first-order logic approximation PTAS fractionally treewidth-fragile 2103.08698",
+    "monotone minimization first-order logic bounded expansion constant factor approximation PTAS vertex cover",
+    "Dvořák approximation metatheorem minimization bounded expansion first-order 2022 2023 2024",
+    "PTAS weighted vertex cover fractionally treewidth-fragile graph classes first-order logic"
+  ],
+  "notes": "No follow-up paper addressing the minimization side of Problem 6 was found. The source paper's own discussion identifies weighted vertex cover in fractionally treewidth-fragile classes as the simplest concrete open case. The related literature on PTAS for sparse general-valued CSPs (e.g. arXiv:2012.12607) works with Max-CSP frameworks and does not resolve the FO-minimization question in bounded-expansion classes."
+}

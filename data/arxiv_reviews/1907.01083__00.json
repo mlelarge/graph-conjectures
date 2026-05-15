@@ -1,0 +1,23 @@
+{
+  "review_id": "1907.01083__00",
+  "safe_id": "1907.01083",
+  "arxiv_id": "1907.01083",
+  "conjecture_title": "Open problem: Combinatorial algorithm for MIS on perfect graphs",
+  "paper_title": "The independent set problem is FPT for even-hole-free graphs",
+  "published": "2019-10-06",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The problem of finding a combinatorial algorithm for maximum independent set on perfect graphs — avoiding the ellipsoid method of Grötschel-Lovász-Schrijver — has been open since the early 1980s and remains unresolved as of 2026. The source paper raises this as a side remark noting that not even a combinatorial FPT algorithm for MIS on perfect graphs is known. A wide web search covering publications through 2026 found no paper that resolves either the polynomial or FPT combinatorial question for the full class of perfect graphs; recent algorithmic progress has focused on subclasses such as even-hole-free graphs and H-free graphs, leaving the perfect-graph case open.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "combinatorial algorithm maximum independent set perfect graphs beyond ellipsoid method",
+    "FPT algorithm maximum independent set perfect graphs 2020 2021 2022 2023 2024 2025",
+    "combinatorial algorithm maximum weighted independent set perfect graphs open problem 2022 2023 2024 2025 arxiv",
+    "Husic Thomasse Trotignon 1907.01083 even-hole-free graphs independent set cited by 2021 2022 2023 2024"
+  ],
+  "notes": "No follow-up paper resolving this open problem was found. The problem is long-standing (open since Grötschel-Lovász-Schrijver 1981) and is mentioned only as a motivating side remark in the source paper. Recent work (e.g., quasi-polynomial-time algorithms for H-free graphs, polynomial algorithms for graphs excluding subdivided claws) addresses related but strictly different questions. The conjecture is closely related to the broader open question of de-linearizing the Lovász theta function machinery for graph optimization."
+}

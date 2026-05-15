@@ -1,0 +1,26 @@
+[
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Explicit Construction of Short Minimal Codes",
+    "statement_text": "Give an explicit construction of $\\mathbb{F}_q$-linear minimal codes of length $n$ and dimension $k$ such that $n = O(qk)$, i.e., $n$ is at most linear in $k$ for fixed $q$.",
+    "context_text": "Any minimal code of length $n$ and dimension $k$ over $\\mathbb{F}_q$ must satisfy $n \\geq (q+1)(k-1)$. While a probabilistic argument establishes the existence of minimal codes with $n$ linear in $k$, giving good explicit constructions has been identified as a challenging and central open problem in the area. Such codes with $n$ linear in $k$ yield asymptotically good error-correcting codes.",
+    "attributed_to": "Alfarano, Borello, Neri et al. (inferred from [21])",
+    "attributed_year": null,
+    "paper_contribution": "Provides the first explicit construction of strong blocking sets of size $O(qk)$ in $\\mathrm{PG}(k-1,q)$ for every prime power $q$, yielding the first explicit $k$-dimensional minimal $\\mathbb{F}_q$-linear code of length $n \\leq cqk$ for an absolute constant $c$; the construction improves the previous best explicit constructions for every fixed $q \\geq 7$.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "The paper's abstract states this 'solves one of the main open problems on minimal codes.' Reference [21] is not resolved from the provided text, so attribution is approximate. PDF source — math notation appears clean.",
+    "arxiv_id": "2305.15297",
+    "paper_title": "Strong blocking sets and minimal codes from expander graphs",
+    "paper_authors": [
+      "Noga Alon",
+      "Anurag Bishnoi",
+      "Shagnik Das",
+      "Alessandro Neri"
+    ],
+    "published": "2023-05-24",
+    "abs_url": "https://arxiv.org/abs/2305.15297",
+    "source": "pdf"
+  }
+]

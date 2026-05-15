@@ -1,0 +1,22 @@
+{
+  "review_id": "2404.03472__02",
+  "safe_id": "2404.03472",
+  "arxiv_id": "2404.03472",
+  "conjecture_title": "Problem 5.3 (adaptive vs non-adaptive gap)",
+  "paper_title": "Lower bounds for graph reconstruction with maximal independent set queries",
+  "published": "2024-04-04",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Problem 5.3 asks whether a deterministic adaptive algorithm can reconstruct any graph of maximum degree $\\Delta$ using $o(\\Delta^3 \\log(n/\\Delta))$ MIS queries, potentially exploiting the gap with the adaptive lower bound of $\\Omega(\\Delta^2 \\log(n/\\Delta)/\\log\\Delta)$. The best known deterministic adaptive upper bound remains $O(\\Delta^3 \\log(n/\\Delta))$ (using $O(\\log\\Delta)$ rounds of adaptivity), matching the non-adaptive case and established in Konrad–O'Sullivan–Traistaru (arXiv:2401.05845, ITCS 2025). No subsequent paper has closed the gap or shown a sub-cubic (in $\\Delta$) deterministic adaptive algorithm.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "graph reconstruction maximal independent set queries adaptive algorithm Michel Scott 2404.03472",
+    "graph reconstruction maximum degree delta adaptive queries complexity 2024 2025",
+    "deterministic adaptive graph reconstruction MIS queries delta upper bound 2025 arxiv"
+  ],
+  "notes": "The conjecture is closely related to Konrad, O'Sullivan, Traistaru (arXiv:2401.05845, ITCS 2025), which predates the source paper (v1 January 2024) and already established the $O(\\Delta^3 \\log(n/\\Delta))$ deterministic adaptive bound (Corollary 2 of v4, December 2024). That paper does not reference Problem 5.3 explicitly. No follow-up was found in the indexed literature that beats this bound or proves adaptivity provably helps for deterministic algorithms. The randomised adaptive lower bound $\\Omega(\\Delta^2 \\log(n/\\Delta)/\\log\\Delta)$ from the source paper still leaves a factor-$\\Delta\\log\\Delta$ gap with the upper bound, making this an appealing open problem."
+}

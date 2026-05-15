@@ -1,0 +1,23 @@
+{
+  "review_id": "1902.06473__00",
+  "safe_id": "1902.06473",
+  "arxiv_id": "1902.06473",
+  "conjecture_title": "Conjecture on LB and QLB equivalence",
+  "paper_title": "Information-theoretic lower bounds for quantum sorting",
+  "published": "2019-02-18",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "The conjecture posits that the classical lower bound LB(P) = n(ln n - H(P)) and the quantum lower bound QLB(P) = n(H_n - QH(P)) for sorting under partial information are within a constant factor of each other for all posets P, where H(P) is the entropy and QH(P) is its averaged variant. The source paper (arXiv:1902.06473) itself proves the conjecture for a wide class of posets (including series-parallel posets), improving on Yao's 2004 result, but the full conjecture for arbitrary posets remains open. No follow-up paper resolving the full conjecture was found in searches covering the period 2019–2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Cardinal Joret Roland quantum sorting lower bounds LB QLB posets 1902.06473",
+    "quantum sorting poset entropy QH LB QLB equivalence constant factor",
+    "Cardinal Joret quantum sorting poset lower bound 2020 2021 2022 2023 2024 follow-up",
+    "quantum sorting comparison complexity poset quantum lower bound classical lower bound constant factor arxiv 2020 2021 2022 2023 2024 2025"
+  ],
+  "notes": "The paper itself establishes QLB(P) >= c * LB(P) for series-parallel posets (and more generally for a wide class of posets), which is a partial result toward the full conjecture. The conjecture that LB(P) and QLB(P) are within a constant factor for ALL posets appears to remain open. The PDF source was not machine-readable for full text extraction; the conjecture statement in the input is noted as partially corrupted. No follow-up paper settling the full conjecture was found in four targeted web searches."
+}

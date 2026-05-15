@@ -1,0 +1,22 @@
+{
+  "review_id": "2404.03472__01",
+  "safe_id": "2404.03472",
+  "arxiv_id": "2404.03472",
+  "conjecture_title": "Problem 5.2 (randomised non-adaptive optimality)",
+  "paper_title": "Lower bounds for graph reconstruction with maximal independent set queries",
+  "published": "2024-04-04",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Problem 5.2 asks whether the Ω(Δ²log(n/Δ)) lower bound for randomised non-adaptive MIS-query reconstruction algorithms is tight, i.e., whether an O(Δ²log(n/Δ)) algorithm exists. The current best upper bound remains O(Δ²log n) due to Konrad, O'Sullivan, and Traistaru (ITCS 2025), leaving a log Δ gap in the n-dependence. No follow-up paper closing this gap has been found as of May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "graph reconstruction maximal independent set queries non-adaptive randomised O(Delta^2 log n) 2024",
+    "arXiv 2404.03472 Michel Scott graph reconstruction lower bounds citing papers",
+    "graph reconstruction MIS queries upper bound \"log(n/Delta)\" randomised non-adaptive 2024 2025"
+  ],
+  "notes": "The conjecture is posed against the backdrop of two contemporaneous papers: arXiv:2404.03472 (Michel–Scott, April 2024) proving the Ω(Δ²log(n/Δ)) lower bound, and arXiv:2401.05845 (Konrad–O'Sullivan–Traistaru, January 2024, published as ITCS 2025 LIPIcs proceedings) providing the O(Δ²log n) randomised non-adaptive upper bound. The ITCS 2025 proceedings version of arXiv:2401.05845 explicitly cites arXiv:2404.03472 (as reference [23]), confirming mutual awareness, but does not improve the upper bound. No subsequent paper achieving O(Δ²log(n/Δ)) was found across multiple searches covering 2024–2026."
+}

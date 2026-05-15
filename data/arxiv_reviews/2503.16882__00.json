@@ -1,0 +1,33 @@
+{
+  "review_id": "2503.16882__00",
+  "safe_id": "2503.16882",
+  "arxiv_id": "2503.16882",
+  "conjecture_title": "Conjecture 2",
+  "paper_title": "Vertex Partitioning and $p$-Energy of Graphs",
+  "published": "2025-06-20",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The source paper itself settles the case $p \\geq 4$ (Theorem 1), so the conjecture was already partially resolved upon publication. A subsequent paper by Chen, Wang, and Zhang (arXiv:2604.15656, April 2026) extends this to all integers $p \\geq 3$ (Corollary 1.7), improving Theorem 1 of the source paper. The case $p = 2$ remains open. Note: the verified HTML of arXiv:2503.16882 shows that Conjecture 2 actually compares to the complete graph $K_n$ (i.e., $\\mathcal{E}^{-}_{p}(G) \\geq \\mathcal{E}^{-}_{p}(K_n)$), not to $P_n$ as stated in the input; the two bounds coincide at $p = 2$ since $\\mathcal{E}^{-}_{2}(P_n) = \\mathcal{E}^{-}_{2}(K_n) = n-1$.",
+  "since_posted": [
+    {
+      "title": "Positive and negative 3-energies of graphs",
+      "authors": "Zhengbo Chen, Zhouningxin Wang, Xiao-Dong Zhang",
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2604.15656",
+      "arxiv_id": "2604.15656",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Corollary 1.7 proves Conjecture 2 of the source paper for all integers $p \\geq 3$, improving the previously known bound of $p \\geq 4$; the case $p = 2$ remains open."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "negative p-energy graphs path conjecture Akbari Kumar Mohar Pragada 2503.16882",
+    "negative p-energy path graph minimum connected graphs p=2 p=3 conjecture 2025 2026"
+  ],
+  "notes": "Discrepancy in conjecture statement: the input states Conjecture 2 as $\\mathcal{E}^{-}_{p}(G) \\geq \\mathcal{E}^{-}_{p}(P_n)$ (path as comparator), but the verified HTML of arXiv:2503.16882 shows the actual Conjecture 2 uses $K_n$ (complete graph) as comparator. The two bounds are equal at $p=2$ (both equal $n-1$), explaining the context remark about 'symmetry of the path spectrum'. The follow-up arXiv:2604.15656 (April 2026) labels the conjecture as 'Conjecture 1.3 (Akbari et al. 2025b)' and confirms the $K_n$ form. Only the $p=2$ case remains unresolved."
+}

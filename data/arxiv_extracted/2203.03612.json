@@ -1,0 +1,29 @@
+[
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Girth Conjecture (strengthening of Theorem 3)",
+    "statement_text": "For every triangle-free graph $F$, there is a constant $c_F$ and graphs $G$ of arbitrarily large chromatic number and the same girth as $F$ such that every $F$-free induced subgraph of $G$ is $c_F$-colourable.",
+    "context_text": "Theorem 3 guarantees, for triangle-free $F$, a triangle-free $G$, but does not control the girth of $G$. The authors ask whether $G$ can be taken to have the same girth as $F$, conjecture that this is so, but are unable to prove it. As a partial result they prove Theorem 4, the weaker analogue where girth is replaced by odd girth.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated in prose as 'We conjecture that this is the case, but have been unable to prove it' without a labelled theorem environment. PDF source — math may be garbled. Section 8 is explicitly stated to contain further open problems but is not present in the extracted text.",
+    "arxiv_id": "2203.03612",
+    "paper_title": "Induced subgraphs of induced subgraphs of large chromatic number",
+    "paper_authors": [
+      "António Girão",
+      "Freddie Illingworth",
+      "Emil Powierski",
+      "Michael Savery",
+      "Alex Scott",
+      "Youri Tamitegama",
+      "Jane Tan"
+    ],
+    "published": "2023-09-18",
+    "abs_url": "https://arxiv.org/abs/2203.03612",
+    "source": "pdf"
+  }
+]

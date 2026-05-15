@@ -1,0 +1,23 @@
+{
+  "review_id": "1809.05439__00",
+  "safe_id": "1809.05439",
+  "arxiv_id": "1809.05439",
+  "conjecture_title": "Informal conjecture on improved color ratio in Theorem 5",
+  "paper_title": "Fractional coloring of planar graphs of girth five",
+  "published": "2018-09-14",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "No follow-up work addressing this specific informal conjecture was found in the indexed literature. The conjecture proposes a modest improvement over Theorem 5 of the source paper: a coloring by subsets of {1,...,9} where every vertex receives at least 3 colors and the distinguished vertex x receives 5 colors. The source paper was published in SIAM Journal on Discrete Mathematics (2019), but subsequent work on fractional/circular coloring of planar graphs of girth five (e.g., Hu 2022, arXiv:2007.00182) does not appear to address this specific ratio improvement.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Dvořák Hu fractional coloring planar graphs girth five 1809.05439",
+    "fractional coloring planar girth five subset coloring wheel subdivided spoke hub",
+    "Hu circular coloring fractional planar girth five 2022 \"9 colors\" OR \"five colors\" OR \"subset coloring\" vertex hub",
+    "Dvořák Hu \"girth five\" fractional coloring cite 2019 2020 2021 2022 2023 2024 planar subset hub wheel"
+  ],
+  "notes": "No follow-up found after 4 web searches (plus 1 WebFetch on arXiv:2007.00182). The conjecture is very specific and informal, embedded in a remark following Theorem 5 of the source paper. The paper appeared in SIAM J. Discrete Math. (DOI: 10.1137/18M1214068). The conjecture is recent (2018) and the absence of any follow-up is consistent with open status at high confidence."
+}

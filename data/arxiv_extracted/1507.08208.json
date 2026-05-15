@@ -1,0 +1,50 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Barát-Thomassen Conjecture (Conjecture 1.1)",
+    "statement_text": "For any fixed tree $T$, there is an integer $c_T$ such that every $c_T$-edge-connected graph with its number of edges divisible by $|E(T)|$ can be $T$-decomposed.",
+    "context_text": "Barát and Thomassen raised this conjecture in 2006, asserting that highly edge-connected graphs can be decomposed into copies of any fixed tree. The conjecture was fully solved by the current authors and Merker [1]; the present paper focuses on the path case and seeks an alternative proof under weaker hypotheses.",
+    "attributed_to": "Barát and Thomassen",
+    "attributed_year": 2006,
+    "paper_contribution": "Provides an alternative proof of the path case ($T = P_\\ell$) with a strictly weaker hypothesis: every 24-edge-connected graph with minimum degree at least $d_\\ell$ admits a decomposition into paths of length $\\ell$ (plus at most one shorter path), with edge-connectivity constant and independent of $\\ell$; also proves the bound drops to 4 for eulerian graphs.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source — math symbols rendered as unicode in extraction; LaTeX reconstructed from context.",
+    "arxiv_id": "1507.08208",
+    "paper_title": "Edge-partitioning a graph into paths: beyond the Barát-Thomassen conjecture",
+    "paper_authors": [
+      "Julien Bensmail",
+      "Ararat Harutyunyan",
+      "Tien-Nam Le",
+      "Stéphan Thomassé"
+    ],
+    "published": "2016-06-30",
+    "abs_url": "https://arxiv.org/abs/1507.08208",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.2",
+    "statement_text": "There is a function $f$ such that, for any fixed tree $T$ with maximum degree $\\Delta_T$, every $f(\\Delta_T)$-edge-connected graph with its number of edges divisible by $|E(T)|$ and minimum degree at least $f(|E(T)|)$ can be $T$-decomposed.",
+    "context_text": "The authors propose this as a refinement of the Barát-Thomassen Conjecture (Conjecture 1.1), arguing that the large edge-connectivity required in Conjecture 1.1 can be replaced by a constant depending only on the maximum degree of $T$, provided the host graph has sufficiently large minimum degree. The present paper proves Conjecture 1.2 in the case $\\Delta_T \\leq 2$, i.e., when $T$ is a path.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "PDF source — math symbols rendered as unicode in extraction; LaTeX reconstructed from context.",
+    "arxiv_id": "1507.08208",
+    "paper_title": "Edge-partitioning a graph into paths: beyond the Barát-Thomassen conjecture",
+    "paper_authors": [
+      "Julien Bensmail",
+      "Ararat Harutyunyan",
+      "Tien-Nam Le",
+      "Stéphan Thomassé"
+    ],
+    "published": "2016-06-30",
+    "abs_url": "https://arxiv.org/abs/1507.08208",
+    "source": "pdf"
+  }
+]

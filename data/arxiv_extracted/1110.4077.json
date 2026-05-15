@@ -1,0 +1,112 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "List Edge Colouring Conjecture",
+    "statement_text": "$\\chi'(G) = \\mathrm{ch}'(G)$ for any graph $G$.",
+    "context_text": "The List (Edge) Colouring Conjecture asserts that the list edge chromatic number equals the ordinary edge chromatic number for any graph $G$. It would immediately imply Vizing's conjecture (1976) that $\\mathrm{ch}'(G) \\leq \\Delta(G)+1$. Neither conjecture has been proved except for certain special classes of graphs, and the best general bound is Kahn's asymptotic result.",
+    "attributed_to": "unknown (discussed in references [1, 5, 18] of the paper)",
+    "attributed_year": null,
+    "paper_contribution": "Proves a special case as Theorem 2.8: for any graph $G$ of treewidth at most $k$ with $\\Delta(G) \\geq (k+2)^{2k+2}$, $\\mathrm{ch}'(G) = \\chi'(G) = \\Delta(G)$.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "PDF source — prime character appears as (cid:48) in extraction; LaTeX reconstructed from context.",
+    "arxiv_id": "1110.4077",
+    "paper_title": "The Parameterised Complexity of List Problems on Graphs of Bounded Treewidth",
+    "paper_authors": [
+      "Kitty Meeks",
+      "Alexander Scott"
+    ],
+    "published": "2016-08-04",
+    "abs_url": "https://arxiv.org/abs/1110.4077",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Vizing's List Edge Chromatic Number Conjecture (1976)",
+    "statement_text": "$\\mathrm{ch}'(G) \\leq \\Delta(G) + 1$ for any graph $G$.",
+    "context_text": "Vizing's 1976 conjecture that the list edge chromatic number is at most $\\Delta(G)+1$ would follow immediately from the List (Edge) Colouring Conjecture. It remains unproved in general; the paper's Theorem 2.8 establishes the stronger equality $\\mathrm{ch}'(G) = \\Delta(G)$ for bounded-treewidth graphs with large maximum degree.",
+    "attributed_to": "Vizing",
+    "attributed_year": 1976,
+    "paper_contribution": "Proves the stronger result $\\mathrm{ch}'(G) = \\Delta(G)$ for graphs of treewidth at most $k$ with $\\Delta(G) \\geq (k+2)^{2k+2}$, which implies the conjecture for this graph class.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "PDF source — math reconstructed from context; explicitly named 'Vizing's conjecture (1976)' in the paper.",
+    "arxiv_id": "1110.4077",
+    "paper_title": "The Parameterised Complexity of List Problems on Graphs of Bounded Treewidth",
+    "paper_authors": [
+      "Kitty Meeks",
+      "Alexander Scott"
+    ],
+    "published": "2016-08-04",
+    "abs_url": "https://arxiv.org/abs/1110.4077",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Total Colouring Conjecture",
+    "statement_text": "$\\chi_T(G) \\leq \\Delta(G) + 2$ for any graph $G$.",
+    "context_text": "The Total Colouring Conjecture, attributed to references [3, 30] in the paper (likely Behzad 1965 and Vizing 1968), is described as a long-standing unproved conjecture. The trivial bounds give $\\Delta(G)+1 \\leq \\chi_T(G) \\leq \\mathrm{ch}_T(G) \\leq 2\\Delta(G)+1$. A special case of the conjecture is proved as the key step enabling a linear-time algorithm for List Total Chromatic Number on bounded-treewidth graphs.",
+    "attributed_to": "Behzad; Vizing",
+    "attributed_year": 1965,
+    "paper_contribution": "Proves a special case as Theorem 2.8: for any graph $G$ of treewidth at most $k$ with $\\Delta(G) \\geq (k+2)^{2k+2}$, $\\mathrm{ch}_T(G) = \\chi_T(G) = \\Delta(G)+1$, yielding a stronger form of the conjecture for this class.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "PDF source — subscript T garbled in extraction; attributed to [3, 30], year 1965 inferred as Behzad's original conjecture.",
+    "arxiv_id": "1110.4077",
+    "paper_title": "The Parameterised Complexity of List Problems on Graphs of Bounded Treewidth",
+    "paper_authors": [
+      "Kitty Meeks",
+      "Alexander Scott"
+    ],
+    "published": "2016-08-04",
+    "abs_url": "https://arxiv.org/abs/1110.4077",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Open Question on FPT Status of List Edge Chromatic Number and List Total Chromatic Number (Fellows et al. 2011)",
+    "statement_text": "Are List Edge Chromatic Number and List Total Chromatic Number fixed-parameter tractable when parameterised by the treewidth bound $k$?",
+    "context_text": "Fellows, Fomin, Lokshtanov, Rosamond, Saurabh, Szeider and Thomassen (2011) left open the parameterised complexity of List Edge Chromatic Number and List Total Chromatic Number with respect to treewidth, after establishing that List Colouring is W[1]-hard and that both list edge- and total-colouring problems are NP-hard on series-parallel graphs (treewidth $\\leq 2$).",
+    "attributed_to": "Fellows, Fomin, Lokshtanov, Rosamond, Saurabh, Szeider and Thomassen",
+    "attributed_year": 2011,
+    "paper_contribution": "Fully resolves the question affirmatively (Theorem 2.1): both problems are FPT parameterised by treewidth and solvable in linear time for any fixed treewidth bound $k$.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "Not stated in a formal labelled environment; reconstructed from the abstract and introduction of the paper.",
+    "arxiv_id": "1110.4077",
+    "paper_title": "The Parameterised Complexity of List Problems on Graphs of Bounded Treewidth",
+    "paper_authors": [
+      "Kitty Meeks",
+      "Alexander Scott"
+    ],
+    "published": "2016-08-04",
+    "abs_url": "https://arxiv.org/abs/1110.4077",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Open Question on FPT Status of List Hamilton Path (Fellows et al. 2011)",
+    "statement_text": "Is List Hamilton Path fixed-parameter tractable when parameterised by the pathwidth of the graph?",
+    "context_text": "Fellows, Fomin, Lokshtanov, Rosamond, Saurabh, Szeider and Thomassen (2011) left open the parameterised complexity of List Hamilton Path with respect to pathwidth, noting that the standard Hamilton Path problem is solvable in linear time on graphs of bounded treewidth. The list variant adds to each vertex a list of permitted positions on the path.",
+    "attributed_to": "Fellows, Fomin, Lokshtanov, Rosamond, Saurabh, Szeider and Thomassen",
+    "attributed_year": 2011,
+    "paper_contribution": "Fully resolves the question negatively (Section 3): List Hamilton Path is W[1]-hard even parameterised by pathwidth, and assuming the exponential time hypothesis admits no $f(k)n^{o(k)}$ algorithm.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "Not stated in a formal labelled environment; reconstructed from the abstract and introduction of the paper.",
+    "arxiv_id": "1110.4077",
+    "paper_title": "The Parameterised Complexity of List Problems on Graphs of Bounded Treewidth",
+    "paper_authors": [
+      "Kitty Meeks",
+      "Alexander Scott"
+    ],
+    "published": "2016-08-04",
+    "abs_url": "https://arxiv.org/abs/1110.4077",
+    "source": "pdf"
+  }
+]

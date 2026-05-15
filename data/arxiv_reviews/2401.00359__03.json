@@ -1,0 +1,24 @@
+{
+  "review_id": "2401.00359__03",
+  "safe_id": "2401.00359",
+  "arxiv_id": "2401.00359",
+  "conjecture_title": "Conjecture 6.5",
+  "paper_title": "Ramsey and Turán numbers of sparse hypergraphs",
+  "published": "2023-12-31",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 6.5 from arXiv:2401.00359 asks for a constant c>0 such that every n-vertex 3-uniform hypergraph with at least n^{3-c/d} edges contains a linear subhypergraph with d vertices and at least d^2/100 edges. No resolution or substantial partial progress on this conjecture was found in the literature through May 2026. The authors note that the non-linear analogue is known (by a hypergraph Kővári–Sós–Turán argument), and the conjecture represents the key missing step toward proving ex(n,H_L) ≤ O(n^{3-c/d}) for linear 3-uniform hypergraphs H_L of bounded skeletal degeneracy.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Fox Sankar Simkin Tidor Zhou \"linear subhypergraph\" \"3-uniform\" conjecture 2401.00359",
+    "linear hypergraph dense 3-uniform \"quadratically many edges\" Turan extremal 2024 2025",
+    "Fox Sankar \"linear subhypergraph\" \"skeletal degeneracy\" Turan conjecture cite 2024 2025",
+    "\"3-uniform hypergraph\" \"linear subhypergraph\" \"d vertices\" \"d^2\" edges dense extremal 2024 2025",
+    "Maya Sankar hypergraph linear Turan 2024 2025 arxiv \"Kővári–Sós–Turán\" 3-uniform"
+  ],
+  "notes": "No follow-up found after five web searches covering the source paper's arXiv page, the authors' recent output, and the relevant mathematical terms. The conjecture was posed in the concluding remarks of the paper as a key open problem; its resolution would require a new technique beyond the hypergraph Kővári–Sós–Turán argument (which handles only the non-linear version). The paper arXiv:2408.09029 ('An Improved Turán Exponent for 2-Complexes') by related authors appeared in August 2024 but could not be verified within the call cap as addressing this specific conjecture."
+}

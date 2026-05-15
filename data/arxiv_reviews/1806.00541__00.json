@@ -1,0 +1,23 @@
+{
+  "review_id": "1806.00541__00",
+  "safe_id": "1806.00541",
+  "arxiv_id": "1806.00541",
+  "conjecture_title": "Conjecture 2",
+  "paper_title": "Extension Complexity of the Correlation Polytope",
+  "published": "2018-10-18",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The source paper proves the matching upper bound 2^{O(tw(G)+log n)} for the extension complexity of COR(G) and establishes tightness for minor-closed graph classes, but Conjecture 2 — that 2^{Omega(tw(G)+log n)} holds for every n-vertex graph G — remains open in full generality. Five web searches spanning 2019–2026 found no follow-up paper proving or disproving the conjecture for arbitrary graphs. The conjecture would imply 2^{Omega(n)} extension complexity for the stable set polytope of dense graphs and explicit 0/1-polytopes with extension complexity exponential in their dimension.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "extension complexity correlation polytope treewidth lower bound 1806.00541",
+    "extension complexity correlation polytope treewidth \"tw(G)\" exponential lower bound arXiv",
+    "Aboulker Fiorini Huynh \"correlation polytope\" extension complexity conjecture lower bound 2019 2020 2021 2022 2023 2024 2025",
+    "\"extension complexity\" \"correlation polytope\" treewidth lower bound \"2^{Omega\" graph conjecture resolved 2020 2021 2022 2023 2024 2025"
+  ],
+  "notes": "No follow-up found resolving Conjecture 2 in full generality. The paper does prove tightness for graphs in minor-closed classes (e.g. planar graphs), but the conjecture asks for all n-vertex graphs. The related Springer paper 'New limits of treewidth-based tractability in optimization' (Math. Program. 2021) could not be accessed but appears to address parameterized complexity limits rather than the exact conjecture. arXiv:2106.11945 (Smaller Extended Formulations for Spanning Tree Polytopes) is unrelated."
+}

@@ -1,0 +1,33 @@
+{
+  "review_id": "1507.01120__00",
+  "safe_id": "1507.01120",
+  "arxiv_id": "1507.01120",
+  "conjecture_title": "Queue Number of Planar Graphs",
+  "paper_title": "Sparsity and dimension",
+  "published": "2017-01-09",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "solved",
+  "confidence": "high",
+  "summary": "The conjecture that planar graphs have bounded (constant) queue number was resolved affirmatively by Dujmović, Joret, Micek, Morin, Ueckerdt, and Wood in a 2019 arXiv preprint (published in J. ACM 2020), proving that every planar graph has queue number at most 49. The proof introduces layered partitions as a key structural tool and also shows that every proper minor-closed class of graphs has bounded queue number. Notably, Joret and Micek, two of the three authors of the source paper 1507.01120, are among the co-authors of the solving paper.",
+  "since_posted": [
+    {
+      "title": "Planar graphs have bounded queue-number",
+      "authors": "Vida Dujmović, Gwenaël Joret, Piotr Micek, Pat Morin, Torsten Ueckerdt, David R. Wood",
+      "year": 2020,
+      "venue": "Journal of the ACM",
+      "url": "https://arxiv.org/abs/1904.04791",
+      "arxiv_id": "1904.04791",
+      "doi": "10.1145/3385731",
+      "kind": "proof",
+      "claim": "Proves that planar graphs have bounded queue number (at most 49), resolving the long-standing conjecture of Heath, Leighton, and Rosenberg from 1992 and cited as open in the source paper."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "planar graphs bounded queue number proof Dujmovic 2020",
+    "queue number planar graphs constant solved arXiv 2019 2020"
+  ],
+  "notes": "The conjecture is fully resolved. The solving paper arXiv:1904.04791 (J. ACM 67(4):22, 2020) was verified via WebFetch of https://arxiv.org/abs/1904.04791. Two of the three authors of the source paper (Joret and Micek) are co-authors of the solving paper."
+}

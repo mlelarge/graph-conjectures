@@ -1,0 +1,44 @@
+{
+  "review_id": "1710.11281__04",
+  "safe_id": "1710.11281",
+  "arxiv_id": "1710.11281",
+  "conjecture_title": "Question (Riemannian surfaces): supremum of cop number for geometrically bounded surfaces",
+  "paper_title": "Notes on Cops and Robber game on graphs",
+  "published": "2017-10-31",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "medium",
+  "summary": "No paper appears to directly resolve the question for arbitrary Riemannian surfaces with positive injectivity radius (cut locus ≥1) and bounded area. Two closely related developments have appeared since 2017: arXiv:2205.11633 establishes that the cop number of any compact geodesic surface is bounded as a function of its genus (c=3 for low genus, c=O(g) in general), and arXiv:2402.05753 shows that two cops suffice (in the sense of coming arbitrarily close to the robber) on hyperbolic surfaces of any genus. Because bounded injectivity radius together with bounded area classically forces bounded genus, the result of 2205.11633 indirectly supports an affirmative answer to the question, but this connection does not appear to be made explicit in either paper.",
+  "since_posted": [
+    {
+      "title": "The game of Cops and Robber on geodesic spaces",
+      "authors": "not confirmed via WebFetch",
+      "year": 2022,
+      "venue": "Canadian Journal of Mathematics",
+      "url": "https://arxiv.org/abs/2205.11633",
+      "arxiv_id": "2205.11633",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves that for every compact geodesic surface the cop number satisfies c=3 for orientable surfaces of genus ≤1 and c=O(g), c=Ω(√g) for larger genus g; combined with the classical fact that bounded injectivity radius and bounded area imply bounded genus, this indirectly suggests the supremum is finite in the setting of the question."
+    },
+    {
+      "title": "Cops and Robber on Hyperbolic Manifolds",
+      "authors": "not confirmed via WebFetch",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2402.05753",
+      "arxiv_id": "2402.05753",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Shows that two cops can come arbitrarily close to the robber on hyperbolic surfaces with constant curvature −1 independently of the genus, establishing strong boundedness of the cop number for the most natural class of geometrically bounded Riemannian surfaces."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "cop number Riemannian surface injectivity radius bounded area Mohar",
+    "cops robbers Riemannian manifold geodesic game pursuit evasion"
+  ],
+  "notes": "No paper was found that explicitly addresses the question's exact formulation (injectivity radius ≥1, area ≤α). The indirect connection via arXiv:2205.11633 relies on the packing-based genus bound from geometric data, which is classical Riemannian geometry but is not spelled out in that paper's abstract. Author names for both since_posted entries were not confirmed via WebFetch (abstract pages did not display author lists). Confidence is medium because neither paper's full text was accessible to confirm whether the connection to the geometrically bounded setting is made explicit."
+}

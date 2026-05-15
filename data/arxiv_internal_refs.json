@@ -1,0 +1,2731 @@
+{
+  "2509.07174": [
+    {
+      "studies_paper": "2412.13893",
+      "studies_paper_title": "Erdős--Pósa property of cycles that are far apart",
+      "studies_paper_authors": [
+        "Vida Dujmović",
+        "Gwenaël Joret",
+        "Piotr Micek",
+        "Pat Morin"
+      ],
+      "studies_published": "2026-05-01",
+      "studies_abs_url": "https://arxiv.org/abs/2412.13893",
+      "paper_contribution": "Proves the conjecture in full generality with explicit bounds $f(k)\\in\\mathcal{O}(k^{18}\\operatorname{polylog}k)$ and $g(d)=19d$.",
+      "attributed_to": "Chudnovsky and Seymour; also Ahn, Gollin, Huynh, and Kwon",
+      "fuzzy_score": 68,
+      "attribution_overlap": [
+        "seymour"
+      ]
+    }
+  ],
+  "2508.14332": [
+    {
+      "studies_paper": "2412.13893",
+      "studies_paper_title": "Erdős--Pósa property of cycles that are far apart",
+      "studies_paper_authors": [
+        "Vida Dujmović",
+        "Gwenaël Joret",
+        "Piotr Micek",
+        "Pat Morin"
+      ],
+      "studies_published": "2026-05-01",
+      "studies_abs_url": "https://arxiv.org/abs/2412.13893",
+      "paper_contribution": "Proves the conjecture in full generality with explicit bounds $f(k)\\in\\mathcal{O}(k^{18}\\operatorname{polylog}k)$ and $g(d)=19d$.",
+      "attributed_to": "Chudnovsky and Seymour; also Ahn, Gollin, Huynh, and Kwon",
+      "fuzzy_score": 69,
+      "attribution_overlap": [
+        "seymour"
+      ]
+    }
+  ],
+  "2403.08303": [
+    {
+      "studies_paper": "2307.06455",
+      "studies_paper_title": "Induced subgraph density. IV. New graphs with the Erdős-Hajnal property",
+      "studies_paper_authors": [
+        "Tung Nguyen",
+        "Alex Scott",
+        "Paul Seymour"
+      ],
+      "studies_published": "2026-04-18",
+      "studies_abs_url": "https://arxiv.org/abs/2307.06455",
+      "paper_contribution": "The paper's results establishing the Erdős-Hajnal property for new (infinitely many prime) graph classes implicitly verify Conjecture 1.7 for those classes, via the equivalence proved by Bucić, Fox, and Pham.",
+      "attributed_to": "Fox and Sudakov",
+      "fuzzy_score": 65,
+      "attribution_overlap": [
+        "fox"
+      ]
+    }
+  ],
+  "2404.02021": [
+    {
+      "studies_paper": "2312.15572",
+      "studies_paper_title": "Induced subgraph density. VI. Bounded VC-dimension",
+      "studies_paper_authors": [
+        "Tung Nguyen",
+        "Alex Scott",
+        "Paul Seymour"
+      ],
+      "studies_published": "2025-09-10",
+      "studies_abs_url": "https://arxiv.org/abs/2312.15572",
+      "paper_contribution": "Fully confirms the conjecture, proving that every graph $G$ of VC-dimension at most $d$ contains a clique or stable set of size at least $|G|^{c_d}$ for an explicit $c_d>0$ satisfying $c_d \\geq 2^{-2^{O(d)}}$.",
+      "attributed_to": "Fox, Pach, and Suk",
+      "fuzzy_score": 70,
+      "attribution_overlap": [
+        "fox",
+        "suk"
+      ]
+    }
+  ],
+  "2402.08418": [
+    {
+      "studies_paper": "2312.15572",
+      "studies_paper_title": "Induced subgraph density. VI. Bounded VC-dimension",
+      "studies_paper_authors": [
+        "Tung Nguyen",
+        "Alex Scott",
+        "Paul Seymour"
+      ],
+      "studies_published": "2025-09-10",
+      "studies_abs_url": "https://arxiv.org/abs/2312.15572",
+      "paper_contribution": "Proves the conjecture for every two-colourable tournament, which in particular completes the verification of the conjecture for all six-vertex tournaments.",
+      "attributed_to": "Erdős and Hajnal",
+      "fuzzy_score": 83,
+      "attribution_overlap": []
+    },
+    {
+      "studies_paper": "2312.15333",
+      "studies_paper_title": "Induced subgraph density. VII. The five-vertex path",
+      "studies_paper_authors": [
+        "Tung Nguyen",
+        "Alex Scott",
+        "Paul Seymour"
+      ],
+      "studies_published": "2026-02-23",
+      "studies_abs_url": "https://arxiv.org/abs/2312.15333",
+      "paper_contribution": "Proves that Conjecture 1.4 holds for $H = P_5$ (Theorem 1.5), which in particular implies the Erdős-Hajnal conjecture for $P_5$.",
+      "attributed_to": "Fox and Sudakov",
+      "fuzzy_score": 65,
+      "attribution_overlap": [
+        "fox"
+      ]
+    }
+  ],
+  "2302.04986": [
+    {
+      "studies_paper": "2507.06169",
+      "studies_paper_title": "A simple layered-wheel-like construction",
+      "studies_paper_authors": [
+        "Maria Chudnovsky",
+        "David Fischer",
+        "Sepehr Hajebi",
+        "Sophie Spirkl",
+        "Bartosz Walczak"
+      ],
+      "studies_published": "2025-07-29",
+      "studies_abs_url": "https://arxiv.org/abs/2507.06169",
+      "paper_contribution": "Provides a second, simpler counterexample to Conjecture 1.5 that additionally has arbitrarily large girth and does not contain all trees as induced subgraphs; the proof establishes a slightly stronger property than (v) — see Theorem 6.2.",
+      "attributed_to": "Trotignon",
+      "fuzzy_score": 81,
+      "attribution_overlap": []
+    }
+  ],
+  "2304.03567": [
+    {
+      "studies_paper": "2206.12335",
+      "studies_paper_title": "Improved bounds for 1-independent percolation on $\\mathbb{Z}^n$",
+      "studies_paper_authors": [
+        "Paul Balister",
+        "Tom Johnston",
+        "Michael Savery",
+        "Alex Scott"
+      ],
+      "studies_published": "2025-06-23",
+      "studies_abs_url": "https://arxiv.org/abs/2206.12335",
+      "paper_contribution": "Obtains improved upper and lower bounds: $0.555197\\dots \\leq p_{\\mathrm{max}}(\\Z^{2}) \\leq 0.8457$.",
+      "attributed_to": "Balister and Bollobás",
+      "fuzzy_score": 89,
+      "attribution_overlap": []
+    },
+    {
+      "studies_paper": "2206.12335",
+      "studies_paper_title": "Improved bounds for 1-independent percolation on $\\mathbb{Z}^n$",
+      "studies_paper_authors": [
+        "Paul Balister",
+        "Tom Johnston",
+        "Michael Savery",
+        "Alex Scott"
+      ],
+      "studies_published": "2025-06-23",
+      "studies_abs_url": "https://arxiv.org/abs/2206.12335",
+      "paper_contribution": "Significantly improves the best known upper bound, establishing $\\lim_{n\\to\\infty}p_{\\mathrm{max}}(\\Z^{n})\\leq 0.5847$.",
+      "attributed_to": "Balister and Bollobás",
+      "fuzzy_score": 89,
+      "attribution_overlap": []
+    }
+  ],
+  "2307.08361": [
+    {
+      "studies_paper": "2508.14332",
+      "studies_paper_title": "Asymptotic structure. IV. A counterexample to the weak coarse Menger conjecture",
+      "studies_paper_authors": [
+        "Tung Nguyen",
+        "Alex Scott",
+        "Paul Seymour"
+      ],
+      "studies_published": "2025-08-20",
+      "studies_abs_url": "https://arxiv.org/abs/2508.14332",
+      "paper_contribution": "Disproves this conjecture by constructing, for all integers $\\ell, m \\geq 1$, a graph $G$ and sets $S, T \\subseteq V(G)$ witnessing its failure when $c = k = 3$ (Theorem 1.3); a variant of the counterexample has only one vertex of degree more than three.",
+      "attributed_to": "Nguyen, Scott, and Seymour",
+      "fuzzy_score": 67,
+      "attribution_overlap": [
+        "scott"
+      ]
+    }
+  ],
+  "2201.04062": [
+    {
+      "studies_paper": "2301.10147",
+      "studies_paper_title": "Induced subgraph density. I. A loglog step towards Erdos-Hajnal",
+      "studies_paper_authors": [
+        "Matija Bucić",
+        "Tung Nguyen",
+        "Alex Scott",
+        "Paul Seymour"
+      ],
+      "studies_published": "2024-02-19",
+      "studies_abs_url": "https://arxiv.org/abs/2301.10147",
+      "paper_contribution": "Proves that every $H$-free graph $G$ with $|G|\\geq 2$ satisfies $\\kappa(G)\\geq 2^{c\\sqrt{\\log|G|}\\,\\log\\log|G|}$ (Theorem 1.3), the first improvement over the $2^{c\\sqrt{\\log|G|}}$ bound for general $H$ since 1977, obtained as a corollary of a stronger quantitative result (Theorem 1.8) that also strengthens theorems of Rödl, Nikiforov, and Fox–Sudakov.",
+      "attributed_to": "Erdős and Hajnal",
+      "fuzzy_score": 88,
+      "attribution_overlap": []
+    },
+    {
+      "studies_paper": "2306.02364",
+      "studies_paper_title": "Some results and problems on tournament structure",
+      "studies_paper_authors": [
+        "Tung Nguyen",
+        "Alex Scott",
+        "Paul Seymour"
+      ],
+      "studies_published": "2024-09-24",
+      "studies_abs_url": "https://arxiv.org/abs/2306.02364",
+      "paper_contribution": "Proves two partial results in its favour: Theorem 1.3 establishes the case where $A$ is a cyclic triangle (and $\\chi(B)\\geq c$), and Theorem 1.4 establishes the conjecture for all tournaments with sufficiently large domination number.",
+      "attributed_to": "Nguyen, Scott, and Seymour",
+      "fuzzy_score": 66,
+      "attribution_overlap": [
+        "scott",
+        "seymour"
+      ]
+    }
+  ],
+  "2309.07905": [
+    {
+      "studies_paper": "2307.06455",
+      "studies_paper_title": "Induced subgraph density. IV. New graphs with the Erdős-Hajnal property",
+      "studies_paper_authors": [
+        "Tung Nguyen",
+        "Alex Scott",
+        "Paul Seymour"
+      ],
+      "studies_published": "2026-04-18",
+      "studies_abs_url": "https://arxiv.org/abs/2307.06455",
+      "paper_contribution": "Proves infinitely many prime graphs satisfy the conjecture: all graphs $H$ whose every non-trivial prime induced subgraph $H'$ has a vertex of degree one and a vertex of degree $|H'|-2$; more generally, proves it whenever $H_1$ and $\\overline{H_2}$ are both buildable (every prime induced subgraph with at least three vertices has a vertex of degree one).",
+      "attributed_to": "Erdős and Hajnal",
+      "fuzzy_score": 80,
+      "attribution_overlap": []
+    }
+  ],
+  "2305.13422": [
+    {
+      "studies_paper": "2508.14332",
+      "studies_paper_title": "Asymptotic structure. IV. A counterexample to the weak coarse Menger conjecture",
+      "studies_paper_authors": [
+        "Tung Nguyen",
+        "Alex Scott",
+        "Paul Seymour"
+      ],
+      "studies_published": "2025-08-20",
+      "studies_abs_url": "https://arxiv.org/abs/2508.14332",
+      "paper_contribution": "Disproves this conjecture by constructing, for all integers $\\ell, m \\geq 1$, a graph $G$ and sets $S, T \\subseteq V(G)$ witnessing its failure when $c = k = 3$ (Theorem 1.3); a variant of the counterexample has only one vertex of degree more than three.",
+      "attributed_to": "Nguyen, Scott, and Seymour",
+      "fuzzy_score": 65,
+      "attribution_overlap": [
+        "scott"
+      ]
+    }
+  ],
+  "2202.05557": [
+    {
+      "studies_paper": "2409.09397",
+      "studies_paper_title": "Trees and near-linear stable sets",
+      "studies_paper_authors": [
+        "Tung Nguyen",
+        "Alex Scott",
+        "Paul Seymour"
+      ],
+      "studies_published": "2025-07-18",
+      "studies_abs_url": "https://arxiv.org/abs/2409.09397",
+      "paper_contribution": "Proves that every $\\{H,K_{k+1}\\}$-free graph $G$ with $H$ a forest satisfies $\\alpha(G)\\geq |G|^{1-o(1)}$ (Theorem 1.2/1.3/1.4); proves the full linear stable-set conclusion of the conjecture for all 'multibrooms' $H$; and deduces a fractional-colouring version of the conjecture for all multibrooms.",
+      "attributed_to": "Gyárfás and Sumner",
+      "fuzzy_score": 80,
+      "attribution_overlap": []
+    },
+    {
+      "studies_paper": "2409.09400",
+      "studies_paper_title": "Subdivisions and near-linear stable sets",
+      "studies_paper_authors": [
+        "Tung Nguyen",
+        "Alex Scott",
+        "Paul Seymour"
+      ],
+      "studies_published": "2025-03-25",
+      "studies_abs_url": "https://arxiv.org/abs/2409.09400",
+      "paper_contribution": "Proves a polylogarithmic analogue for $K_t$-subdivision-free graphs: every such graph $G$ with $|G|\\geq 2$ satisfies $\\alpha(G)\\geq c_t|G|/(\\log|G|)^{3t-5}$, showing that the Gyárfás-Sumner phenomenon (large stable sets in $\\chi$-bounded classes) extends — in a near sense — well beyond the forest-exclusion setting.",
+      "attributed_to": "Gyárfás and Sumner",
+      "fuzzy_score": 80,
+      "attribution_overlap": []
+    },
+    {
+      "studies_paper": "2409.09397",
+      "studies_paper_title": "Trees and near-linear stable sets",
+      "studies_paper_authors": [
+        "Tung Nguyen",
+        "Alex Scott",
+        "Paul Seymour"
+      ],
+      "studies_published": "2025-07-18",
+      "studies_abs_url": "https://arxiv.org/abs/2409.09397",
+      "paper_contribution": "Proves that every $\\{H,K_{k+1}\\}$-free graph $G$ with $H$ a forest satisfies $\\alpha(G)\\geq |G|^{1-o(1)}$ (Theorem 1.2/1.3/1.4); proves the full linear stable-set conclusion of the conjecture for all 'multibrooms' $H$; and deduces a fractional-colouring version of the conjecture for all multibrooms.",
+      "attributed_to": "Gyárfás and Sumner",
+      "fuzzy_score": 80,
+      "attribution_overlap": []
+    },
+    {
+      "studies_paper": "2409.09400",
+      "studies_paper_title": "Subdivisions and near-linear stable sets",
+      "studies_paper_authors": [
+        "Tung Nguyen",
+        "Alex Scott",
+        "Paul Seymour"
+      ],
+      "studies_published": "2025-03-25",
+      "studies_abs_url": "https://arxiv.org/abs/2409.09400",
+      "paper_contribution": "Proves a polylogarithmic analogue for $K_t$-subdivision-free graphs: every such graph $G$ with $|G|\\geq 2$ satisfies $\\alpha(G)\\geq c_t|G|/(\\log|G|)^{3t-5}$, showing that the Gyárfás-Sumner phenomenon (large stable sets in $\\chi$-bounded classes) extends — in a near sense — well beyond the forest-exclusion setting.",
+      "attributed_to": "Gyárfás and Sumner",
+      "fuzzy_score": 80,
+      "attribution_overlap": []
+    },
+    {
+      "studies_paper": "2508.14332",
+      "studies_paper_title": "Asymptotic structure. IV. A counterexample to the weak coarse Menger conjecture",
+      "studies_paper_authors": [
+        "Tung Nguyen",
+        "Alex Scott",
+        "Paul Seymour"
+      ],
+      "studies_published": "2025-08-20",
+      "studies_abs_url": "https://arxiv.org/abs/2508.14332",
+      "paper_contribution": "Disproves this conjecture by constructing, for all integers $\\ell, m \\geq 1$, a graph $G$ and sets $S, T \\subseteq V(G)$ witnessing its failure when $c = k = 3$ (Theorem 1.3); a variant of the counterexample has only one vertex of degree more than three.",
+      "attributed_to": "Nguyen, Scott, and Seymour",
+      "fuzzy_score": 65,
+      "attribution_overlap": [
+        "scott",
+        "seymour"
+      ]
+    }
+  ],
+  "2210.16971": [
+    {
+      "studies_paper": "2312.15333",
+      "studies_paper_title": "Induced subgraph density. VII. The five-vertex path",
+      "studies_paper_authors": [
+        "Tung Nguyen",
+        "Alex Scott",
+        "Paul Seymour"
+      ],
+      "studies_published": "2026-02-23",
+      "studies_abs_url": "https://arxiv.org/abs/2312.15333",
+      "paper_contribution": "Proves that Conjecture 1.4 holds for $H = P_5$ (Theorem 1.5), which in particular implies the Erdős-Hajnal conjecture for $P_5$.",
+      "attributed_to": "Fox and Sudakov",
+      "fuzzy_score": 65,
+      "attribution_overlap": [
+        "fox"
+      ]
+    },
+    {
+      "studies_paper": "2312.15333",
+      "studies_paper_title": "Induced subgraph density. VII. The five-vertex path",
+      "studies_paper_authors": [
+        "Tung Nguyen",
+        "Alex Scott",
+        "Paul Seymour"
+      ],
+      "studies_published": "2026-02-23",
+      "studies_abs_url": "https://arxiv.org/abs/2312.15333",
+      "paper_contribution": "Proves that Conjecture 1.4 holds for $H = P_5$ (Theorem 1.5), which in particular implies the Erdős-Hajnal conjecture for $P_5$.",
+      "attributed_to": "Fox and Sudakov",
+      "fuzzy_score": 65,
+      "attribution_overlap": [
+        "fox"
+      ]
+    }
+  ],
+  "2203.06775": [
+    {
+      "studies_paper": "2507.06169",
+      "studies_paper_title": "A simple layered-wheel-like construction",
+      "studies_paper_authors": [
+        "Maria Chudnovsky",
+        "David Fischer",
+        "Sepehr Hajebi",
+        "Sophie Spirkl",
+        "Bartosz Walczak"
+      ],
+      "studies_published": "2025-07-29",
+      "studies_abs_url": "https://arxiv.org/abs/2507.06169",
+      "paper_contribution": "Provides a second, simpler counterexample to Conjecture 1.5 that additionally has arbitrarily large girth and does not contain all trees as induced subgraphs; the proof establishes a slightly stronger property than (v) — see Theorem 6.2.",
+      "attributed_to": "Trotignon",
+      "fuzzy_score": 87,
+      "attribution_overlap": []
+    },
+    {
+      "studies_paper": "2402.14211",
+      "studies_paper_title": "Induced subgraphs and tree decompositions XV. Even-hole-free graphs with bounded clique number have logarithmic treewidth",
+      "studies_paper_authors": [
+        "Maria Chudnovsky",
+        "Peter Gartland",
+        "Sepehr Hajebi",
+        "Daniel Lokshtanov",
+        "Sophie Spirkl"
+      ],
+      "studies_published": "2024-05-03",
+      "studies_abs_url": "https://arxiv.org/abs/2402.14211",
+      "paper_contribution": "Proves the conjecture in full: for every integer $t\\geq 1$ there exists $c_t\\geq 1$ such that every $n$-vertex even-hole-free graph with no clique of size $t$ has $\\operatorname{tw}(G)\\leq c_t\\log n$.",
+      "attributed_to": "Sintiari and Trotignon",
+      "fuzzy_score": 82,
+      "attribution_overlap": []
+    },
+    {
+      "studies_paper": "2509.08762",
+      "studies_paper_title": "Asymptotic structure. V. The coarse Menger conjecture in bounded path-width",
+      "studies_paper_authors": [
+        "Tung Nguyen",
+        "Alex Scott",
+        "Paul Seymour"
+      ],
+      "studies_published": "2025-09-10",
+      "studies_abs_url": "https://arxiv.org/abs/2509.08762",
+      "paper_contribution": "Proves the conjecture for all graphs of bounded path-width (and, further, for graphs of bounded coarse path-width); also notes the conjecture remains false for bounded tree-width.",
+      "attributed_to": "Albrechtsen, Huynh, Jacobs, Knappe, and Wollan; and independently Georgakopoulos and Papasoglu",
+      "fuzzy_score": 81,
+      "attribution_overlap": []
+    },
+    {
+      "studies_paper": "2508.14332",
+      "studies_paper_title": "Asymptotic structure. IV. A counterexample to the weak coarse Menger conjecture",
+      "studies_paper_authors": [
+        "Tung Nguyen",
+        "Alex Scott",
+        "Paul Seymour"
+      ],
+      "studies_published": "2025-08-20",
+      "studies_abs_url": "https://arxiv.org/abs/2508.14332",
+      "paper_contribution": "The authors established in their prior work [9] that this conjecture is false for all $k \\geq 3$, even when $c = 3$ and $G$ has maximum degree three; the present paper then addresses the weaker Conjecture 1.2.",
+      "attributed_to": "Albrechtsen, Huynh, Jacobs, Knappe, and Wollan; and independently Georgakopoulos and Papasoglu",
+      "fuzzy_score": 80,
+      "attribution_overlap": []
+    },
+    {
+      "studies_paper": "2412.13893",
+      "studies_paper_title": "Erdős--Pósa property of cycles that are far apart",
+      "studies_paper_authors": [
+        "Vida Dujmović",
+        "Gwenaël Joret",
+        "Piotr Micek",
+        "Pat Morin"
+      ],
+      "studies_published": "2026-05-01",
+      "studies_abs_url": "https://arxiv.org/abs/2412.13893",
+      "paper_contribution": "Proves the conjecture in full generality with explicit bounds $f(k)\\in\\mathcal{O}(k^{18}\\operatorname{polylog}k)$ and $g(d)=19d$.",
+      "attributed_to": "Chudnovsky and Seymour; also Ahn, Gollin, Huynh, and Kwon",
+      "fuzzy_score": 76,
+      "attribution_overlap": [
+        "chudnovsky"
+      ]
+    }
+  ],
+  "2110.00278": [
+    {
+      "studies_paper": "2409.09397",
+      "studies_paper_title": "Trees and near-linear stable sets",
+      "studies_paper_authors": [
+        "Tung Nguyen",
+        "Alex Scott",
+        "Paul Seymour"
+      ],
+      "studies_published": "2025-07-18",
+      "studies_abs_url": "https://arxiv.org/abs/2409.09397",
+      "paper_contribution": "Proves that every $\\{H,K_{k+1}\\}$-free graph $G$ with $H$ a forest satisfies $\\alpha(G)\\geq |G|^{1-o(1)}$ (Theorem 1.2/1.3/1.4); proves the full linear stable-set conclusion of the conjecture for all 'multibrooms' $H$; and deduces a fractional-colouring version of the conjecture for all multibrooms.",
+      "attributed_to": "Gyárfás and Sumner",
+      "fuzzy_score": 90,
+      "attribution_overlap": []
+    },
+    {
+      "studies_paper": "2409.09400",
+      "studies_paper_title": "Subdivisions and near-linear stable sets",
+      "studies_paper_authors": [
+        "Tung Nguyen",
+        "Alex Scott",
+        "Paul Seymour"
+      ],
+      "studies_published": "2025-03-25",
+      "studies_abs_url": "https://arxiv.org/abs/2409.09400",
+      "paper_contribution": "Proves a polylogarithmic analogue for $K_t$-subdivision-free graphs: every such graph $G$ with $|G|\\geq 2$ satisfies $\\alpha(G)\\geq c_t|G|/(\\log|G|)^{3t-5}$, showing that the Gyárfás-Sumner phenomenon (large stable sets in $\\chi$-bounded classes) extends — in a near sense — well beyond the forest-exclusion setting.",
+      "attributed_to": "Gyárfás and Sumner",
+      "fuzzy_score": 90,
+      "attribution_overlap": []
+    },
+    {
+      "studies_paper": "2202.05557",
+      "studies_paper_title": "Polynomial bounds for chromatic number. V. Excluding a tree of radius two and a complete multipartite graph",
+      "studies_paper_authors": [
+        "Alex Scott",
+        "Paul Seymour"
+      ],
+      "studies_published": "2023-01-10",
+      "studies_abs_url": "https://arxiv.org/abs/2202.05557",
+      "paper_contribution": "Proves that for every tree $H$ of radius two and every integer $d \\geq 1$, there is a polynomial $f$ such that $\\chi(G) \\leq f(\\tau_d(G))$ for every $H$-free graph $G$ (Theorem 1.6), which in particular yields a doubly-exponential bound on $\\chi(G)$ in terms of $\\omega(G)$ for $H$-free graphs when $H$ is a tree of radius two.",
+      "attributed_to": "Gyárfás and Sumner",
+      "fuzzy_score": 88,
+      "attribution_overlap": []
+    },
+    {
+      "studies_paper": "2301.10147",
+      "studies_paper_title": "Induced subgraph density. I. A loglog step towards Erdos-Hajnal",
+      "studies_paper_authors": [
+        "Matija Bucić",
+        "Tung Nguyen",
+        "Alex Scott",
+        "Paul Seymour"
+      ],
+      "studies_published": "2024-02-19",
+      "studies_abs_url": "https://arxiv.org/abs/2301.10147",
+      "paper_contribution": "Proves that every $H$-free graph $G$ with $|G|\\geq 2$ satisfies $\\kappa(G)\\geq 2^{c\\sqrt{\\log|G|}\\,\\log\\log|G|}$ (Theorem 1.3), the first improvement over the $2^{c\\sqrt{\\log|G|}}$ bound for general $H$ since 1977, obtained as a corollary of a stronger quantitative result (Theorem 1.8) that also strengthens theorems of Rödl, Nikiforov, and Fox–Sudakov.",
+      "attributed_to": "Erdős and Hajnal",
+      "fuzzy_score": 85,
+      "attribution_overlap": []
+    },
+    {
+      "studies_paper": "2009.09426",
+      "studies_paper_title": "Pure pairs. IV. Trees in bipartite graphs",
+      "studies_paper_authors": [
+        "Alex Scott",
+        "Paul Seymour",
+        "Sophie Spirkl"
+      ],
+      "studies_published": "2023-03-03",
+      "studies_abs_url": "https://arxiv.org/abs/2009.09426",
+      "paper_contribution": "Proves bipartite analogues of the strong Erdős-Hajnal property (Theorems 1.5 and 1.6), establishing that excluding a forest bigraph and its bicomplement forces linear-sized pure pairs in each part, and providing one-sided sparse versions; these results imply bipartite Erdős-Hajnal-type bounds.",
+      "attributed_to": "Erdős and Hajnal",
+      "fuzzy_score": 84,
+      "attribution_overlap": []
+    },
+    {
+      "studies_paper": "2009.09426",
+      "studies_paper_title": "Pure pairs. IV. Trees in bipartite graphs",
+      "studies_paper_authors": [
+        "Alex Scott",
+        "Paul Seymour",
+        "Sophie Spirkl"
+      ],
+      "studies_published": "2023-03-03",
+      "studies_abs_url": "https://arxiv.org/abs/2009.09426",
+      "paper_contribution": "No progress is made on this conjecture in the paper; it is highlighted as an important open problem that goes beyond the main results.",
+      "attributed_to": "Korándi, Pach, and Tomon",
+      "fuzzy_score": 82,
+      "attribution_overlap": []
+    },
+    {
+      "studies_paper": "2307.00801",
+      "studies_paper_title": "Induced subgraph density. II. Sparse and dense sets in cographs",
+      "studies_paper_authors": [
+        "Jacob Fox",
+        "Tung Nguyen",
+        "Alex Scott",
+        "Paul Seymour"
+      ],
+      "studies_published": "2024-09-08",
+      "studies_abs_url": "https://arxiv.org/abs/2307.00801",
+      "paper_contribution": "Proves the conjecture for $H=P_4$ with the optimal $\\delta=\\varepsilon$ (and a stronger maximum-degree bound), and more generally for all graphs $H$ obtainable by vertex-substitution from copies of $P_4$ and its subgraphs, via the stronger 'viral' property.",
+      "attributed_to": "Fox and Sudakov",
+      "fuzzy_score": 80,
+      "attribution_overlap": []
+    },
+    {
+      "studies_paper": "2305.15585",
+      "studies_paper_title": "Chromatic number is not tournament-local",
+      "studies_paper_authors": [
+        "António Girão",
+        "Kevin Hendrey",
+        "Freddie Illingworth",
+        "Florian Lehner",
+        "Lukas Michel",
+        "Michael Savery",
+        "Raphael Steiner"
+      ],
+      "studies_published": "2023-12-04",
+      "studies_abs_url": "https://arxiv.org/abs/2305.15585",
+      "paper_contribution": "Disproves the conjecture for all $k\\geqslant 3$ by constructing $G$ and $T$ such that the out-neighbourhood of any set of at most $\\frac{\\log|V(T)|}{2\\chi^2}$ vertices is bipartite.",
+      "attributed_to": "Scott and Seymour",
+      "fuzzy_score": 72,
+      "attribution_overlap": [
+        "scott",
+        "seymour"
+      ]
+    },
+    {
+      "studies_paper": "2412.13893",
+      "studies_paper_title": "Erdős--Pósa property of cycles that are far apart",
+      "studies_paper_authors": [
+        "Vida Dujmović",
+        "Gwenaël Joret",
+        "Piotr Micek",
+        "Pat Morin"
+      ],
+      "studies_published": "2026-05-01",
+      "studies_abs_url": "https://arxiv.org/abs/2412.13893",
+      "paper_contribution": "Proves the conjecture in full generality with explicit bounds $f(k)\\in\\mathcal{O}(k^{18}\\operatorname{polylog}k)$ and $g(d)=19d$.",
+      "attributed_to": "Chudnovsky and Seymour; also Ahn, Gollin, Huynh, and Kwon",
+      "fuzzy_score": 69,
+      "attribution_overlap": [
+        "seymour"
+      ]
+    },
+    {
+      "studies_paper": "2508.14332",
+      "studies_paper_title": "Asymptotic structure. IV. A counterexample to the weak coarse Menger conjecture",
+      "studies_paper_authors": [
+        "Tung Nguyen",
+        "Alex Scott",
+        "Paul Seymour"
+      ],
+      "studies_published": "2025-08-20",
+      "studies_abs_url": "https://arxiv.org/abs/2508.14332",
+      "paper_contribution": "Disproves this conjecture by constructing, for all integers $\\ell, m \\geq 1$, a graph $G$ and sets $S, T \\subseteq V(G)$ witnessing its failure when $c = k = 3$ (Theorem 1.3); a variant of the counterexample has only one vertex of degree more than three.",
+      "attributed_to": "Nguyen, Scott, and Seymour",
+      "fuzzy_score": 66,
+      "attribution_overlap": [
+        "scott",
+        "seymour"
+      ]
+    }
+  ],
+  "2202.09118": [
+    {
+      "studies_paper": "2202.10412",
+      "studies_paper_title": "Polynomial bounds for chromatic number VI. Adding a four-vertex path",
+      "studies_paper_authors": [
+        "Maria Chudnovsky",
+        "Alex Scott",
+        "Paul Seymour",
+        "Sophie Spirkl"
+      ],
+      "studies_published": "2023-03-22",
+      "studies_abs_url": "https://arxiv.org/abs/2202.10412",
+      "paper_contribution": "Proves that if $H$ is a good forest then the disjoint union of $H$ and $P_4$ is also good (polynomially $\\chi$-bounded), in particular showing that $2P_4$-free graphs satisfy $\\chi(G) \\leq \\omega(G)^{16}$; more generally proves polynomial $\\chi$-boundedness for $\\{H_1, H_2\\}$-free graphs when every component of $H_1$ is good and $H_2$ is a broom or disjoint union of a good forest and paths.",
+      "attributed_to": "Gyárfás and Sumner",
+      "fuzzy_score": 85,
+      "attribution_overlap": []
+    },
+    {
+      "studies_paper": "2506.10227",
+      "studies_paper_title": "Suns in triangle-free graphs of large chromatic number",
+      "studies_paper_authors": [
+        "Sepehr Hajebi",
+        "Sophie Spirkl"
+      ],
+      "studies_published": "2026-03-08",
+      "studies_abs_url": "https://arxiv.org/abs/2506.10227",
+      "paper_contribution": "Derives a partial answer analogous to their main Theorem 1.3 by combining it with Hajebi's result on bull-free graphs (Theorem 1.5), extending the chromatic-boundedness conclusion to the net-free sun-free setting under analogous exclusion conditions.",
+      "attributed_to": "Trotignon",
+      "fuzzy_score": 81,
+      "attribution_overlap": []
+    },
+    {
+      "studies_paper": "2311.05719",
+      "studies_paper_title": "Induced subgraphs and tree decompositions XIV. Non-adjacent neighbours in a hole",
+      "studies_paper_authors": [
+        "Maria Chudnovsky",
+        "Sepehr Hajebi",
+        "Sophie Spirkl"
+      ],
+      "studies_published": "2023-11-09",
+      "studies_abs_url": "https://arxiv.org/abs/2311.05719",
+      "paper_contribution": "Proves the conjecture in full (Theorem 1.1): every clock-free graph of large treewidth contains, as an induced subgraph, one of the basic obstructions — a complete graph, a subdivision of a wall, or the line graph of a subdivision of a wall.",
+      "attributed_to": "Abrishami, Alecu, Chudnovsky, Hajebi, Spirkl, and Vušković",
+      "fuzzy_score": 70,
+      "attribution_overlap": [
+        "chudnovsky",
+        "spirkl"
+      ]
+    },
+    {
+      "studies_paper": "2311.05719",
+      "studies_paper_title": "Induced subgraphs and tree decompositions XIV. Non-adjacent neighbours in a hole",
+      "studies_paper_authors": [
+        "Maria Chudnovsky",
+        "Sepehr Hajebi",
+        "Sophie Spirkl"
+      ],
+      "studies_published": "2023-11-09",
+      "studies_abs_url": "https://arxiv.org/abs/2311.05719",
+      "paper_contribution": "Proves the conjecture in full (Theorem 1.1): every clock-free graph of large treewidth contains, as an induced subgraph, one of the basic obstructions — a complete graph, a subdivision of a wall, or the line graph of a subdivision of a wall.",
+      "attributed_to": "Abrishami, Alecu, Chudnovsky, Hajebi, Spirkl, and Vušković",
+      "fuzzy_score": 70,
+      "attribution_overlap": [
+        "chudnovsky",
+        "spirkl"
+      ]
+    },
+    {
+      "studies_paper": "2311.05719",
+      "studies_paper_title": "Induced subgraphs and tree decompositions XIV. Non-adjacent neighbours in a hole",
+      "studies_paper_authors": [
+        "Maria Chudnovsky",
+        "Sepehr Hajebi",
+        "Sophie Spirkl"
+      ],
+      "studies_published": "2023-11-09",
+      "studies_abs_url": "https://arxiv.org/abs/2311.05719",
+      "paper_contribution": "Proves the conjecture in full (Theorem 1.1): every clock-free graph of large treewidth contains, as an induced subgraph, one of the basic obstructions — a complete graph, a subdivision of a wall, or the line graph of a subdivision of a wall.",
+      "attributed_to": "Abrishami, Alecu, Chudnovsky, Hajebi, Spirkl, and Vušković",
+      "fuzzy_score": 70,
+      "attribution_overlap": [
+        "chudnovsky",
+        "spirkl"
+      ]
+    }
+  ],
+  "2103.05036": [
+    {
+      "studies_paper": "2202.07746",
+      "studies_paper_title": "Expected number of faces in a random embedding of any graph is at most linear",
+      "studies_paper_authors": [
+        "Jesse Campion Loth",
+        "Bojan Mohar"
+      ],
+      "studies_published": "2023-03-30",
+      "studies_abs_url": "https://arxiv.org/abs/2202.07746",
+      "paper_contribution": "Proved as a corollary of Theorem 3, which establishes $E[F] \\leq n(H_{2\\mu}+1)$; for simple graphs this specialises to the linear bound, further sharpened to $E[F] \\leq \\frac{\\pi^2}{6}n$ by Theorem 8.",
+      "attributed_to": "Halasz, Masarik, Samal, Campion Loth, and Mohar",
+      "fuzzy_score": 97,
+      "attribution_overlap": [
+        "halasz",
+        "loth",
+        "masarik",
+        "mohar",
+        "samal"
+      ]
+    },
+    {
+      "studies_paper": "2202.07746",
+      "studies_paper_title": "Expected number of faces in a random embedding of any graph is at most linear",
+      "studies_paper_authors": [
+        "Jesse Campion Loth",
+        "Bojan Mohar"
+      ],
+      "studies_published": "2023-03-30",
+      "studies_abs_url": "https://arxiv.org/abs/2202.07746",
+      "paper_contribution": "Proved as a corollary of Theorem 3: $E[F] \\leq n(H_{2\\mu}+1)$, and since $H_{2\\mu} \\sim \\log(2\\mu)+\\gamma$, this gives $O(n\\log\\mu)$; the bound is tight up to a constant factor.",
+      "attributed_to": "Halasz, Masarik, Samal, Campion Loth, and Mohar",
+      "fuzzy_score": 92,
+      "attribution_overlap": [
+        "halasz",
+        "loth",
+        "masarik",
+        "mohar",
+        "samal"
+      ]
+    },
+    {
+      "studies_paper": "2211.01032",
+      "studies_paper_title": "Random Embeddings of Graphs: The Expected Number of Faces in Most Graphs is Logarithmic",
+      "studies_paper_authors": [
+        "Jesse Campion Loth",
+        "Kevin Halasz",
+        "Tomáš Masařík",
+        "Bojan Mohar",
+        "Robert Šámal"
+      ],
+      "studies_published": "2025-04-09",
+      "studies_abs_url": "https://arxiv.org/abs/2211.01032",
+      "paper_contribution": "Proves (Theorem 1.8) that $\\mathbb{E}[F(K_n)] = \\Theta(\\ln n)$, confirming the logarithmic order; the exact constant $2\\ln n + O(1)$ remains open.",
+      "attributed_to": "Mauk and Stahl",
+      "fuzzy_score": 80,
+      "attribution_overlap": []
+    }
+  ],
+  "2108.00987": [
+    {
+      "studies_paper": "2105.03956",
+      "studies_paper_title": "Pure pairs. V. Excluding some long subdivision",
+      "studies_paper_authors": [
+        "Alex Scott",
+        "Paul Seymour",
+        "Sophie Spirkl"
+      ],
+      "studies_published": "2022-10-09",
+      "studies_abs_url": "https://arxiv.org/abs/2105.03956",
+      "paper_contribution": "Proves this conjecture in full; specifically establishes (1.6) that for all $c > 0$ and sufficiently large $n$, every $n$-vertex perfect graph $G$ admits a pure pair $A, B$ with $|A|, |B| \\geq n^{1-c}$, and further strengthens it (1.7–1.9) by making one side linear, relaxing the perfect graph hypothesis to excluding a single long hole and a single long antihole, and ultimately excluding any graph of sufficiently large branch-length and its complement.",
+      "attributed_to": "Fox",
+      "fuzzy_score": 70,
+      "attribution_overlap": [
+        "fox"
+      ]
+    }
+  ],
+  "2004.07457": [
+    {
+      "studies_paper": "2409.01513",
+      "studies_paper_title": "Bipartite graphs are $(\\frac{4}{5}-\\varepsilon) \\fracΔ{\\log Δ}$-choosable",
+      "studies_paper_authors": [
+        "Peter Bradshaw",
+        "Bojan Mohar",
+        "Ladislav Stacho"
+      ],
+      "studies_published": "2024-09-03",
+      "studies_abs_url": "https://arxiv.org/abs/2409.01513",
+      "paper_contribution": "Proves that every bipartite graph $G$ of sufficiently large maximum degree $\\Delta$ satisfies $\\operatorname{ch}(G)<(\\frac{4}{5}-\\varepsilon)\\frac{\\Delta}{\\log\\Delta}$ for $\\varepsilon=10^{-3}$, giving the first upper bound with leading constant strictly less than $1$ and showing that list coloring behaves fundamentally differently for bipartite graphs than for general triangle-free graphs.",
+      "attributed_to": "Alon and Krivelevich",
+      "fuzzy_score": 79,
+      "attribution_overlap": [
+        "alon"
+      ]
+    }
+  ],
+  "2108.02685": [
+    {
+      "studies_paper": "2207.13651",
+      "studies_paper_title": "On random irregular subgraphs",
+      "studies_paper_authors": [
+        "Jacob Fox",
+        "Sammy Luo",
+        "Huy Tuan Pham"
+      ],
+      "studies_published": "2022-07-27",
+      "studies_abs_url": "https://arxiv.org/abs/2207.13651",
+      "paper_contribution": "The paper does not resolve Conjecture 1.1; it confirms the weaker asymptotic version (Conjecture 1.2) for $d = o(n/(\\log n)^{12})$ via the irregular random subgraph model.",
+      "attributed_to": "Alon and Wei",
+      "fuzzy_score": 97,
+      "attribution_overlap": [
+        "alon",
+        "wei"
+      ]
+    },
+    {
+      "studies_paper": "2207.13651",
+      "studies_paper_title": "On random irregular subgraphs",
+      "studies_paper_authors": [
+        "Jacob Fox",
+        "Sammy Luo",
+        "Huy Tuan Pham"
+      ],
+      "studies_published": "2022-07-27",
+      "studies_abs_url": "https://arxiv.org/abs/2207.13651",
+      "paper_contribution": "Confirms Conjecture 1.2 for all $d = o(n/(\\log n)^{12})$ by proving (Theorem 1.3) that the irregular random subgraph $H = H(G)$ satisfies $m(H,k) = (1+o(1))n/(d+1)$ for all $0 \\leq k \\leq d$ with high probability, via a martingale Bernstein inequality argument.",
+      "attributed_to": "Alon and Wei",
+      "fuzzy_score": 88,
+      "attribution_overlap": [
+        "alon",
+        "wei"
+      ]
+    },
+    {
+      "studies_paper": "2207.13651",
+      "studies_paper_title": "On random irregular subgraphs",
+      "studies_paper_authors": [
+        "Jacob Fox",
+        "Sammy Luo",
+        "Huy Tuan Pham"
+      ],
+      "studies_published": "2022-07-27",
+      "studies_abs_url": "https://arxiv.org/abs/2207.13651",
+      "paper_contribution": "The paper does not resolve Conjecture 1.1; it confirms the weaker asymptotic version (Conjecture 1.2) for $d = o(n/(\\log n)^{12})$ via the irregular random subgraph model.",
+      "attributed_to": "Alon and Wei",
+      "fuzzy_score": 71,
+      "attribution_overlap": [
+        "alon",
+        "wei"
+      ]
+    },
+    {
+      "studies_paper": "2207.13651",
+      "studies_paper_title": "On random irregular subgraphs",
+      "studies_paper_authors": [
+        "Jacob Fox",
+        "Sammy Luo",
+        "Huy Tuan Pham"
+      ],
+      "studies_published": "2022-07-27",
+      "studies_abs_url": "https://arxiv.org/abs/2207.13651",
+      "paper_contribution": "Confirms Conjecture 1.2 for all $d = o(n/(\\log n)^{12})$ by proving (Theorem 1.3) that the irregular random subgraph $H = H(G)$ satisfies $m(H,k) = (1+o(1))n/(d+1)$ for all $0 \\leq k \\leq d$ with high probability, via a martingale Bernstein inequality argument.",
+      "attributed_to": "Alon and Wei",
+      "fuzzy_score": 70,
+      "attribution_overlap": [
+        "alon",
+        "wei"
+      ]
+    }
+  ],
+  "1609.00314": [
+    {
+      "studies_paper": "2110.00278",
+      "studies_paper_title": "Polynomial bounds for chromatic number. IV. A near-polynomial bound for excluding the five-vertex path",
+      "studies_paper_authors": [
+        "Alex Scott",
+        "Paul Seymour",
+        "Sophie Spirkl"
+      ],
+      "studies_published": "2022-10-02",
+      "studies_abs_url": "https://arxiv.org/abs/2110.00278",
+      "paper_contribution": "Proves the near-polynomial bound $\\chi(G) \\leq \\omega(G)^{\\log_2(\\omega(G))}$ for $P_5$-free graphs with $\\omega(G) \\geq 3$, making progress towards establishing the Erdős-Hajnal conjecture for $P_5$, currently the smallest open case.",
+      "attributed_to": "Erdős and Hajnal",
+      "fuzzy_score": 85,
+      "attribution_overlap": []
+    },
+    {
+      "studies_paper": "2301.10147",
+      "studies_paper_title": "Induced subgraph density. I. A loglog step towards Erdos-Hajnal",
+      "studies_paper_authors": [
+        "Matija Bucić",
+        "Tung Nguyen",
+        "Alex Scott",
+        "Paul Seymour"
+      ],
+      "studies_published": "2024-02-19",
+      "studies_abs_url": "https://arxiv.org/abs/2301.10147",
+      "paper_contribution": "Proves that every $H$-free graph $G$ with $|G|\\geq 2$ satisfies $\\kappa(G)\\geq 2^{c\\sqrt{\\log|G|}\\,\\log\\log|G|}$ (Theorem 1.3), the first improvement over the $2^{c\\sqrt{\\log|G|}}$ bound for general $H$ since 1977, obtained as a corollary of a stronger quantitative result (Theorem 1.8) that also strengthens theorems of Rödl, Nikiforov, and Fox–Sudakov.",
+      "attributed_to": "Erdős and Hajnal",
+      "fuzzy_score": 83,
+      "attribution_overlap": []
+    },
+    {
+      "studies_paper": "2409.09397",
+      "studies_paper_title": "Trees and near-linear stable sets",
+      "studies_paper_authors": [
+        "Tung Nguyen",
+        "Alex Scott",
+        "Paul Seymour"
+      ],
+      "studies_published": "2025-07-18",
+      "studies_abs_url": "https://arxiv.org/abs/2409.09397",
+      "paper_contribution": "Proves that every $\\{H,K_{k+1}\\}$-free graph $G$ with $H$ a forest satisfies $\\alpha(G)\\geq |G|^{1-o(1)}$ (Theorem 1.2/1.3/1.4); proves the full linear stable-set conclusion of the conjecture for all 'multibrooms' $H$; and deduces a fractional-colouring version of the conjecture for all multibrooms.",
+      "attributed_to": "Gyárfás and Sumner",
+      "fuzzy_score": 83,
+      "attribution_overlap": []
+    },
+    {
+      "studies_paper": "2409.09400",
+      "studies_paper_title": "Subdivisions and near-linear stable sets",
+      "studies_paper_authors": [
+        "Tung Nguyen",
+        "Alex Scott",
+        "Paul Seymour"
+      ],
+      "studies_published": "2025-03-25",
+      "studies_abs_url": "https://arxiv.org/abs/2409.09400",
+      "paper_contribution": "Proves a polylogarithmic analogue for $K_t$-subdivision-free graphs: every such graph $G$ with $|G|\\geq 2$ satisfies $\\alpha(G)\\geq c_t|G|/(\\log|G|)^{3t-5}$, showing that the Gyárfás-Sumner phenomenon (large stable sets in $\\chi$-bounded classes) extends — in a near sense — well beyond the forest-exclusion setting.",
+      "attributed_to": "Gyárfás and Sumner",
+      "fuzzy_score": 83,
+      "attribution_overlap": []
+    },
+    {
+      "studies_paper": "2201.08204",
+      "studies_paper_title": "A counterexample to a conjecture about triangle-free induced subgraphs of graphs with large chromatic number",
+      "studies_paper_authors": [
+        "Alvaro Carbonero",
+        "Patrick Hompe",
+        "Benjamin Moore",
+        "Sophie Spirkl"
+      ],
+      "studies_published": "2022-09-15",
+      "studies_abs_url": "https://arxiv.org/abs/2201.08204",
+      "paper_contribution": "Disproves Conjecture 1.1 for all $r \\geq 5$ by constructing, for every $n$, a graph $G$ with $\\chi(G) \\geq n$ and $\\omega(G) \\leq 3$ such that every induced subgraph $H$ with $\\omega(H) \\leq 2$ satisfies $\\chi(H) \\leq 4$; the case $r = 4$ remains open.",
+      "attributed_to": "Galvin and Rödl",
+      "fuzzy_score": 82,
+      "attribution_overlap": []
+    }
+  ],
+  "2103.10497": [
+    {
+      "studies_paper": "2009.09426",
+      "studies_paper_title": "Pure pairs. IV. Trees in bipartite graphs",
+      "studies_paper_authors": [
+        "Alex Scott",
+        "Paul Seymour",
+        "Sophie Spirkl"
+      ],
+      "studies_published": "2023-03-03",
+      "studies_abs_url": "https://arxiv.org/abs/2009.09426",
+      "paper_contribution": "No progress is made on this conjecture in the paper; it is highlighted as an important open problem that goes beyond the main results.",
+      "attributed_to": "Korándi, Pach, and Tomon",
+      "fuzzy_score": 67,
+      "attribution_overlap": [
+        "pach"
+      ]
+    }
+  ],
+  "2102.10220": [
+    {
+      "studies_paper": "2105.03956",
+      "studies_paper_title": "Pure pairs. V. Excluding some long subdivision",
+      "studies_paper_authors": [
+        "Alex Scott",
+        "Paul Seymour",
+        "Sophie Spirkl"
+      ],
+      "studies_published": "2022-10-09",
+      "studies_abs_url": "https://arxiv.org/abs/2105.03956",
+      "paper_contribution": "Proves this conjecture in full; specifically establishes (1.6) that for all $c > 0$ and sufficiently large $n$, every $n$-vertex perfect graph $G$ admits a pure pair $A, B$ with $|A|, |B| \\geq n^{1-c}$, and further strengthens it (1.7–1.9) by making one side linear, relaxing the perfect graph hypothesis to excluding a single long hole and a single long antihole, and ultimately excluding any graph of sufficiently large branch-length and its complement.",
+      "attributed_to": "Fox",
+      "fuzzy_score": 65,
+      "attribution_overlap": [
+        "fox"
+      ]
+    }
+  ],
+  "1810.00058": [
+    {
+      "studies_paper": "2301.10147",
+      "studies_paper_title": "Induced subgraph density. I. A loglog step towards Erdos-Hajnal",
+      "studies_paper_authors": [
+        "Matija Bucić",
+        "Tung Nguyen",
+        "Alex Scott",
+        "Paul Seymour"
+      ],
+      "studies_published": "2024-02-19",
+      "studies_abs_url": "https://arxiv.org/abs/2301.10147",
+      "paper_contribution": "Proves that every $H$-free graph $G$ with $|G|\\geq 2$ satisfies $\\kappa(G)\\geq 2^{c\\sqrt{\\log|G|}\\,\\log\\log|G|}$ (Theorem 1.3), the first improvement over the $2^{c\\sqrt{\\log|G|}}$ bound for general $H$ since 1977, obtained as a corollary of a stronger quantitative result (Theorem 1.8) that also strengthens theorems of Rödl, Nikiforov, and Fox–Sudakov.",
+      "attributed_to": "Erdős and Hajnal",
+      "fuzzy_score": 81,
+      "attribution_overlap": []
+    },
+    {
+      "studies_paper": "2403.08303",
+      "studies_paper_title": "Equivalence between Erdős-Hajnal and polynomial Rödl and Nikiforov conjectures",
+      "studies_paper_authors": [
+        "Matija Bucić",
+        "Jacob Fox",
+        "Huy Tuan Pham"
+      ],
+      "studies_published": "2024-04-19",
+      "studies_abs_url": "https://arxiv.org/abs/2403.08303",
+      "paper_contribution": "Proves that the polynomial Rödl conjecture is equivalent to the Erdős-Hajnal conjecture; as a corollary deduces that the family of string graphs satisfies the polynomial Rödl conjecture.",
+      "attributed_to": "Fox and Sudakov",
+      "fuzzy_score": 71,
+      "attribution_overlap": [
+        "fox"
+      ]
+    },
+    {
+      "studies_paper": "2301.10147",
+      "studies_paper_title": "Induced subgraph density. I. A loglog step towards Erdos-Hajnal",
+      "studies_paper_authors": [
+        "Matija Bucić",
+        "Tung Nguyen",
+        "Alex Scott",
+        "Paul Seymour"
+      ],
+      "studies_published": "2024-02-19",
+      "studies_abs_url": "https://arxiv.org/abs/2301.10147",
+      "paper_contribution": "The paper takes a different approach via blockades and leaves this conjecture open, proving the same conclusion (Theorem 1.3) by other means without establishing the conjecture.",
+      "attributed_to": "Conlon, Fox, and Sudakov",
+      "fuzzy_score": 69,
+      "attribution_overlap": [
+        "fox"
+      ]
+    },
+    {
+      "studies_paper": "2307.06455",
+      "studies_paper_title": "Induced subgraph density. IV. New graphs with the Erdős-Hajnal property",
+      "studies_paper_authors": [
+        "Tung Nguyen",
+        "Alex Scott",
+        "Paul Seymour"
+      ],
+      "studies_published": "2026-04-18",
+      "studies_abs_url": "https://arxiv.org/abs/2307.06455",
+      "paper_contribution": "The paper's results establishing the Erdős-Hajnal property for new (infinitely many prime) graph classes implicitly verify Conjecture 1.7 for those classes, via the equivalence proved by Bucić, Fox, and Pham.",
+      "attributed_to": "Fox and Sudakov",
+      "fuzzy_score": 69,
+      "attribution_overlap": [
+        "fox"
+      ]
+    },
+    {
+      "studies_paper": "2307.00801",
+      "studies_paper_title": "Induced subgraph density. II. Sparse and dense sets in cographs",
+      "studies_paper_authors": [
+        "Jacob Fox",
+        "Tung Nguyen",
+        "Alex Scott",
+        "Paul Seymour"
+      ],
+      "studies_published": "2024-09-08",
+      "studies_abs_url": "https://arxiv.org/abs/2307.00801",
+      "paper_contribution": "Proves the conjecture for $H=P_4$ with the optimal $\\delta=\\varepsilon$ (and a stronger maximum-degree bound), and more generally for all graphs $H$ obtainable by vertex-substitution from copies of $P_4$ and its subgraphs, via the stronger 'viral' property.",
+      "attributed_to": "Fox and Sudakov",
+      "fuzzy_score": 68,
+      "attribution_overlap": [
+        "fox"
+      ]
+    },
+    {
+      "studies_paper": "2403.08303",
+      "studies_paper_title": "Equivalence between Erdős-Hajnal and polynomial Rödl and Nikiforov conjectures",
+      "studies_paper_authors": [
+        "Matija Bucić",
+        "Jacob Fox",
+        "Huy Tuan Pham"
+      ],
+      "studies_published": "2024-04-19",
+      "studies_abs_url": "https://arxiv.org/abs/2403.08303",
+      "paper_contribution": "Proves that the polynomial Rödl conjecture is equivalent to the Erdős-Hajnal conjecture; as a corollary deduces that the family of string graphs satisfies the polynomial Rödl conjecture.",
+      "attributed_to": "Fox and Sudakov",
+      "fuzzy_score": 68,
+      "attribution_overlap": [
+        "fox"
+      ]
+    },
+    {
+      "studies_paper": "2307.06455",
+      "studies_paper_title": "Induced subgraph density. IV. New graphs with the Erdős-Hajnal property",
+      "studies_paper_authors": [
+        "Tung Nguyen",
+        "Alex Scott",
+        "Paul Seymour"
+      ],
+      "studies_published": "2026-04-18",
+      "studies_abs_url": "https://arxiv.org/abs/2307.06455",
+      "paper_contribution": "The paper's results establishing the Erdős-Hajnal property for new (infinitely many prime) graph classes implicitly verify Conjecture 1.7 for those classes, via the equivalence proved by Bucić, Fox, and Pham.",
+      "attributed_to": "Fox and Sudakov",
+      "fuzzy_score": 67,
+      "attribution_overlap": [
+        "fox"
+      ]
+    },
+    {
+      "studies_paper": "2307.00801",
+      "studies_paper_title": "Induced subgraph density. II. Sparse and dense sets in cographs",
+      "studies_paper_authors": [
+        "Jacob Fox",
+        "Tung Nguyen",
+        "Alex Scott",
+        "Paul Seymour"
+      ],
+      "studies_published": "2024-09-08",
+      "studies_abs_url": "https://arxiv.org/abs/2307.00801",
+      "paper_contribution": "Proves the conjecture for $H=P_4$ with the optimal $\\delta=\\varepsilon$ (and a stronger maximum-degree bound), and more generally for all graphs $H$ obtainable by vertex-substitution from copies of $P_4$ and its subgraphs, via the stronger 'viral' property.",
+      "attributed_to": "Fox and Sudakov",
+      "fuzzy_score": 65,
+      "attribution_overlap": [
+        "fox"
+      ]
+    }
+  ],
+  "2001.01607": [
+    {
+      "studies_paper": "2203.06775",
+      "studies_paper_title": "Induced subgraphs and tree decompositions IV. (Even hole, diamond, pyramid)-free graphs",
+      "studies_paper_authors": [
+        "Tara Abrishami",
+        "Maria Chudnovsky",
+        "Sepehr Hajebi",
+        "Sophie Spirkl"
+      ],
+      "studies_published": "2022-10-21",
+      "studies_abs_url": "https://arxiv.org/abs/2203.06775",
+      "paper_contribution": "Proves Theorem 1.4, that for all $t > 0$ there exists $d_t \\geq 0$ such that every (even hole, diamond, pyramid, $K_t$)-free graph has treewidth at most $d_t$, which is a special case of Conjecture 1.5.",
+      "attributed_to": "Sintiari and Trotignon",
+      "fuzzy_score": 72,
+      "attribution_overlap": [
+        "sintiari",
+        "trotignon"
+      ]
+    },
+    {
+      "studies_paper": "2203.06775",
+      "studies_paper_title": "Induced subgraphs and tree decompositions IV. (Even hole, diamond, pyramid)-free graphs",
+      "studies_paper_authors": [
+        "Tara Abrishami",
+        "Maria Chudnovsky",
+        "Sepehr Hajebi",
+        "Sophie Spirkl"
+      ],
+      "studies_published": "2022-10-21",
+      "studies_abs_url": "https://arxiv.org/abs/2203.06775",
+      "paper_contribution": "Proves Theorem 1.4, that for all $t > 0$ there exists $d_t \\geq 0$ such that every (even hole, diamond, pyramid, $K_t$)-free graph has treewidth at most $d_t$, which is a special case of Conjecture 1.5.",
+      "attributed_to": "Sintiari and Trotignon",
+      "fuzzy_score": 67,
+      "attribution_overlap": [
+        "sintiari",
+        "trotignon"
+      ]
+    }
+  ],
+  "2009.13319": [
+    {
+      "studies_paper": "2103.07886",
+      "studies_paper_title": "Decomposing and colouring some locally semicomplete digraphs",
+      "studies_paper_authors": [
+        "Pierre Aboulker",
+        "Guillaume Aubian",
+        "Pierre Charbit"
+      ],
+      "studies_published": "2022-12-06",
+      "studies_abs_url": "https://arxiv.org/abs/2103.07886",
+      "paper_contribution": "Proves the first open special case $F = S_2^+$, $H = C_3$: every locally out-transitive oriented graph has dichromatic number at most 2 (Theorem 3.2), and in fact proves the stronger Theorem 3.3 used for induction.",
+      "attributed_to": "Aboulker, Charbit, and Naserasr",
+      "fuzzy_score": 100,
+      "attribution_overlap": [
+        "aboulker",
+        "charbit",
+        "naserasr"
+      ]
+    },
+    {
+      "studies_paper": "2103.07886",
+      "studies_paper_title": "Decomposing and colouring some locally semicomplete digraphs",
+      "studies_paper_authors": [
+        "Pierre Aboulker",
+        "Guillaume Aubian",
+        "Pierre Charbit"
+      ],
+      "studies_published": "2022-12-06",
+      "studies_abs_url": "https://arxiv.org/abs/2103.07886",
+      "paper_contribution": "Proves the first open special case $F = S_2^+$, $H = C_3$: every locally out-transitive oriented graph has dichromatic number at most 2 (Theorem 3.2), and in fact proves the stronger Theorem 3.3 used for induction.",
+      "attributed_to": "Aboulker, Charbit, and Naserasr",
+      "fuzzy_score": 66,
+      "attribution_overlap": [
+        "aboulker",
+        "charbit",
+        "naserasr"
+      ]
+    },
+    {
+      "studies_paper": "2212.02272",
+      "studies_paper_title": "(P6, triangle)-free digraphs have bounded dichromatic number",
+      "studies_paper_authors": [
+        "Pierre Aboulker",
+        "Guillaume Aubian",
+        "Pierre Charbit",
+        "Stéphan Thomassé"
+      ],
+      "studies_published": "2023-01-18",
+      "studies_abs_url": "https://arxiv.org/abs/2212.02272",
+      "paper_contribution": "Proves the conjecture for the special case of $\\overrightarrow{P}_6$-free digraphs with $\\omega(D) \\leq 2$ (triangle-free), establishing $\\overrightarrow{\\chi}(D) \\leq 382$ (Theorem 1.3).",
+      "attributed_to": "Aboulker, Charbit, and Naserasr",
+      "fuzzy_score": 65,
+      "attribution_overlap": [
+        "aboulker",
+        "charbit",
+        "naserasr"
+      ]
+    }
+  ],
+  "2008.05504": [
+    {
+      "studies_paper": "2108.01162",
+      "studies_paper_title": "Induced subgraphs and tree decompositions II. Toward walls and their line graphs in graphs of bounded degree",
+      "studies_paper_authors": [
+        "Tara Abrishami",
+        "Maria Chudnovsky",
+        "Cemil Dibek",
+        "Sepehr Hajebi",
+        "Paweł Rzążewski",
+        "Sophie Spirkl",
+        "Kristina Vušković"
+      ],
+      "studies_published": "2023-10-30",
+      "studies_abs_url": "https://arxiv.org/abs/2108.01162",
+      "paper_contribution": "Proves three theorems supporting the conjecture: (1) every $S_{t,t,t}$-free graph of maximum degree at most $\\Delta$ and sufficiently large treewidth contains the line graph of a subdivision of $W_{k\\times k}$ as an induced subgraph (Theorem 1.8); (2) every $(t$-theta, $t$-pyramid)-free graph of maximum degree at most $\\Delta$ and sufficiently large treewidth contains the line graph of a subdivision of $W_{k\\times k}$ as an induced subgraph (Theorem 1.10); (3) for every subcubic subdivided caterpillar $T$, every graph of maximum degree at most $\\Delta$ and sufficiently large treewidth contains a subdivision of $T$ or the line graph of a subdivision of $T$ as an induced subgraph (Theorem 1.11).",
+      "attributed_to": "Aboulker, Adler, Kim, Sintiari and Trotignon",
+      "fuzzy_score": 88,
+      "attribution_overlap": [
+        "aboulker",
+        "adler",
+        "kim",
+        "sintiari",
+        "trotignon"
+      ]
+    },
+    {
+      "studies_paper": "2108.01162",
+      "studies_paper_title": "Induced subgraphs and tree decompositions II. Toward walls and their line graphs in graphs of bounded degree",
+      "studies_paper_authors": [
+        "Tara Abrishami",
+        "Maria Chudnovsky",
+        "Cemil Dibek",
+        "Sepehr Hajebi",
+        "Paweł Rzążewski",
+        "Sophie Spirkl",
+        "Kristina Vušković"
+      ],
+      "studies_published": "2023-10-30",
+      "studies_abs_url": "https://arxiv.org/abs/2108.01162",
+      "paper_contribution": "Proves three theorems supporting the conjecture: (1) every $S_{t,t,t}$-free graph of maximum degree at most $\\Delta$ and sufficiently large treewidth contains the line graph of a subdivision of $W_{k\\times k}$ as an induced subgraph (Theorem 1.8); (2) every $(t$-theta, $t$-pyramid)-free graph of maximum degree at most $\\Delta$ and sufficiently large treewidth contains the line graph of a subdivision of $W_{k\\times k}$ as an induced subgraph (Theorem 1.10); (3) for every subcubic subdivided caterpillar $T$, every graph of maximum degree at most $\\Delta$ and sufficiently large treewidth contains a subdivision of $T$ or the line graph of a subdivision of $T$ as an induced subgraph (Theorem 1.11).",
+      "attributed_to": "Aboulker, Adler, Kim, Sintiari and Trotignon",
+      "fuzzy_score": 78,
+      "attribution_overlap": [
+        "aboulker",
+        "adler",
+        "kim",
+        "sintiari",
+        "trotignon"
+      ]
+    },
+    {
+      "studies_paper": "2507.06169",
+      "studies_paper_title": "A simple layered-wheel-like construction",
+      "studies_paper_authors": [
+        "Maria Chudnovsky",
+        "David Fischer",
+        "Sepehr Hajebi",
+        "Sophie Spirkl",
+        "Bartosz Walczak"
+      ],
+      "studies_published": "2025-07-29",
+      "studies_abs_url": "https://arxiv.org/abs/2507.06169",
+      "paper_contribution": "Provides a second, simpler counterexample to Conjecture 1.5 that additionally has arbitrarily large girth and does not contain all trees as induced subgraphs; the proof establishes a slightly stronger property than (v) — see Theorem 6.2.",
+      "attributed_to": "Trotignon",
+      "fuzzy_score": 69,
+      "attribution_overlap": [
+        "trotignon"
+      ]
+    }
+  ],
+  "2006.09877": [
+    {
+      "studies_paper": "2102.03117",
+      "studies_paper_title": "Twin-width IV: ordered graphs and matrices",
+      "studies_paper_authors": [
+        "Édouard Bonnet",
+        "Ugo Giocanti",
+        "Patrice Ossona de Mendez",
+        "Pierre Simon",
+        "Stéphan Thomassé",
+        "Szymon Toruńczyk"
+      ],
+      "studies_published": "2021-07-05",
+      "studies_abs_url": "https://arxiv.org/abs/2102.03117",
+      "paper_contribution": "Theorem 1 (i),(iii) resolves the conjecture for hereditary classes of ordered graphs by showing that bounded twin-width and growth $2^{O(n)}$ (i.e., smallness up to isomorphism) are equivalent in this setting.",
+      "attributed_to": "Bonnet, Kim, Thomassé, and Watrigant",
+      "fuzzy_score": 100,
+      "attribution_overlap": [
+        "bonnet",
+        "kim",
+        "thomasse",
+        "watrigant"
+      ]
+    },
+    {
+      "studies_paper": "2204.12330",
+      "studies_paper_title": "Twin-width VII: groups",
+      "studies_paper_authors": [
+        "Édouard Bonnet",
+        "Colin Geniet",
+        "Romain Tessera",
+        "Stéphan Thomassé"
+      ],
+      "studies_published": "2022-07-15",
+      "studies_abs_url": "https://arxiv.org/abs/2204.12330",
+      "paper_contribution": "Disproves the conjecture by constructing (via Theorem 1.1, a finitely generated group with infinite twin-width) a small class of graphs closed under induced subgraphs with unbounded twin-width (Corollary 1.4).",
+      "attributed_to": "Bonnet et al. [3] (previous twin-width work)",
+      "fuzzy_score": 80,
+      "attribution_overlap": []
+    }
+  ],
+  "1804.01060": [
+    {
+      "studies_paper": "2508.14332",
+      "studies_paper_title": "Asymptotic structure. IV. A counterexample to the weak coarse Menger conjecture",
+      "studies_paper_authors": [
+        "Tung Nguyen",
+        "Alex Scott",
+        "Paul Seymour"
+      ],
+      "studies_published": "2025-08-20",
+      "studies_abs_url": "https://arxiv.org/abs/2508.14332",
+      "paper_contribution": "Disproves this conjecture by constructing, for all integers $\\ell, m \\geq 1$, a graph $G$ and sets $S, T \\subseteq V(G)$ witnessing its failure when $c = k = 3$ (Theorem 1.3); a variant of the counterexample has only one vertex of degree more than three.",
+      "attributed_to": "Nguyen, Scott, and Seymour",
+      "fuzzy_score": 69,
+      "attribution_overlap": [
+        "scott",
+        "seymour"
+      ]
+    }
+  ],
+  "2005.09767": [
+    {
+      "studies_paper": "2409.18220",
+      "studies_paper_title": "A Linear Lower Bound for the Square Energy of Graphs",
+      "studies_paper_authors": [
+        "Saieed Akbari",
+        "Hitesh Kumar",
+        "Bojan Mohar",
+        "Shivaramakrishna Pragada"
+      ],
+      "studies_published": "2024-09-26",
+      "studies_abs_url": "https://arxiv.org/abs/2409.18220",
+      "paper_contribution": "Proves the first known linear lower bound $s(G) \\geq \\frac{3n}{4}$ for every connected graph $G$ of order $n \\geq 4$, via a superadditivity result for positive and negative square energies over vertex-induced subgraphs.",
+      "attributed_to": "Elphick, Farber, Goldberg, and Wocjan",
+      "fuzzy_score": 81,
+      "attribution_overlap": []
+    }
+  ],
+  "1806.00825": [
+    {
+      "studies_paper": "2101.04716",
+      "studies_paper_title": "On Aharoni's rainbow generalization of the Caccetta-Häggkvist conjecture",
+      "studies_paper_authors": [
+        "Patrick Hompe",
+        "Petra Pelikanova",
+        "Aneta Pokorna",
+        "Sophie Spirkl"
+      ],
+      "studies_published": "2021-10-01",
+      "studies_abs_url": "https://arxiv.org/abs/2101.04716",
+      "paper_contribution": "Proves Conjecture 1.2 in the case where every color class has size at least $301k \\log k$, i.e., when the color class size is $\\Omega(k \\log k)$.",
+      "attributed_to": "Aharoni, Devos, and Holzman",
+      "fuzzy_score": 76,
+      "attribution_overlap": [
+        "devos"
+      ]
+    },
+    {
+      "studies_paper": "2101.04716",
+      "studies_paper_title": "On Aharoni's rainbow generalization of the Caccetta-Häggkvist conjecture",
+      "studies_paper_authors": [
+        "Patrick Hompe",
+        "Petra Pelikanova",
+        "Aneta Pokorna",
+        "Sophie Spirkl"
+      ],
+      "studies_published": "2021-10-01",
+      "studies_abs_url": "https://arxiv.org/abs/2101.04716",
+      "paper_contribution": "Proves Conjecture 1.2 in the case where every color class has size at least $301k \\log k$, i.e., when the color class size is $\\Omega(k \\log k)$.",
+      "attributed_to": "Aharoni, Devos, and Holzman",
+      "fuzzy_score": 70,
+      "attribution_overlap": [
+        "devos"
+      ]
+    }
+  ],
+  "2004.12166": [
+    {
+      "studies_paper": "2301.10147",
+      "studies_paper_title": "Induced subgraph density. I. A loglog step towards Erdos-Hajnal",
+      "studies_paper_authors": [
+        "Matija Bucić",
+        "Tung Nguyen",
+        "Alex Scott",
+        "Paul Seymour"
+      ],
+      "studies_published": "2024-02-19",
+      "studies_abs_url": "https://arxiv.org/abs/2301.10147",
+      "paper_contribution": "Proves that every $H$-free graph $G$ with $|G|\\geq 2$ satisfies $\\kappa(G)\\geq 2^{c\\sqrt{\\log|G|}\\,\\log\\log|G|}$ (Theorem 1.3), the first improvement over the $2^{c\\sqrt{\\log|G|}}$ bound for general $H$ since 1977, obtained as a corollary of a stronger quantitative result (Theorem 1.8) that also strengthens theorems of Rödl, Nikiforov, and Fox–Sudakov.",
+      "attributed_to": "Erdős and Hajnal",
+      "fuzzy_score": 80,
+      "attribution_overlap": []
+    }
+  ],
+  "1812.07327": [
+    {
+      "studies_paper": "2411.16465",
+      "studies_paper_title": "Fractional chromatic number vs. Hall ratio",
+      "studies_paper_authors": [
+        "Raphael Steiner"
+      ],
+      "studies_published": "2024-11-25",
+      "studies_abs_url": "https://arxiv.org/abs/2411.16465",
+      "paper_contribution": "Affirmatively solves the problem by constructing graphs with bounded Hall ratio, arbitrarily large fractional chromatic number, and $\\alpha_{\\mathrm{deg}_H}(H)\\geq |E(H)|/c$ for all subgraphs $H$ (Theorem 1.5).",
+      "attributed_to": "Dvořák, Ossona de Mendez, and Wu",
+      "fuzzy_score": 97,
+      "attribution_overlap": [
+        "dvorak",
+        "mendez",
+        "wu"
+      ]
+    },
+    {
+      "studies_paper": "2007.11853",
+      "studies_paper_title": "On weighted sublinear separators",
+      "studies_paper_authors": [
+        "Zdeněk Dvořák"
+      ],
+      "studies_published": "2021-09-17",
+      "studies_abs_url": "https://arxiv.org/abs/2007.11853",
+      "paper_contribution": "Proves that for every polynomial $p$ and integer $a \\geq 0$ there exists a polynomial $q$ such that $G$ has a balanced separator which is $(\\rho/t)$-cheap with $\\exp(q(t))\\log^{(a)} n$ outliers (Theorem 3), and with $q(t)\\,\\mathrm{wcol}_{5q(t)}(G)\\log^{(a)} n$ outliers in terms of weak coloring numbers (Theorem 4), improving the prior bound of $q(t \\log n)$ outliers and replacing the $\\log n$ dependence by any fixed iterated logarithm.",
+      "attributed_to": "Dvořák",
+      "fuzzy_score": 71,
+      "attribution_overlap": [
+        "dvorak"
+      ]
+    },
+    {
+      "studies_paper": "2007.11853",
+      "studies_paper_title": "On weighted sublinear separators",
+      "studies_paper_authors": [
+        "Zdeněk Dvořák"
+      ],
+      "studies_published": "2021-09-17",
+      "studies_abs_url": "https://arxiv.org/abs/2007.11853",
+      "paper_contribution": "Proves that for every polynomial $p$ and integer $a \\geq 0$ there exists a polynomial $q$ such that $G$ has a balanced separator which is $(\\rho/t)$-cheap with $\\exp(q(t))\\log^{(a)} n$ outliers (Theorem 3), and with $q(t)\\,\\mathrm{wcol}_{5q(t)}(G)\\log^{(a)} n$ outliers in terms of weak coloring numbers (Theorem 4), improving the prior bound of $q(t \\log n)$ outliers and replacing the $\\log n$ dependence by any fixed iterated logarithm.",
+      "attributed_to": "Dvořák",
+      "fuzzy_score": 67,
+      "attribution_overlap": [
+        "dvorak"
+      ]
+    }
+  ],
+  "1812.09752": [
+    {
+      "studies_paper": "2107.05995",
+      "studies_paper_title": "On the Hat Guessing Number of Graphs",
+      "studies_paper_authors": [
+        "Noga Alon",
+        "Jeremy Chizewer"
+      ],
+      "studies_published": "2021-07-21",
+      "studies_abs_url": "https://arxiv.org/abs/2107.05995",
+      "paper_contribution": "The paper restates the question and notes that a positive answer seems plausible, but does not prove it.",
+      "attributed_to": "Alon, Ben-Eliezer, Shangguan, and Tamo",
+      "fuzzy_score": 80,
+      "attribution_overlap": [
+        "alon",
+        "ben-eliezer",
+        "shangguan",
+        "tamo"
+      ]
+    },
+    {
+      "studies_paper": "2409.01513",
+      "studies_paper_title": "Bipartite graphs are $(\\frac{4}{5}-\\varepsilon) \\fracΔ{\\log Δ}$-choosable",
+      "studies_paper_authors": [
+        "Peter Bradshaw",
+        "Bojan Mohar",
+        "Ladislav Stacho"
+      ],
+      "studies_published": "2024-09-03",
+      "studies_abs_url": "https://arxiv.org/abs/2409.01513",
+      "paper_contribution": "Proves that every bipartite graph $G$ of sufficiently large maximum degree $\\Delta$ satisfies $\\operatorname{ch}(G)<(\\frac{4}{5}-\\varepsilon)\\frac{\\Delta}{\\log\\Delta}$ for $\\varepsilon=10^{-3}$, giving the first upper bound with leading constant strictly less than $1$ and showing that list coloring behaves fundamentally differently for bipartite graphs than for general triangle-free graphs.",
+      "attributed_to": "Alon and Krivelevich",
+      "fuzzy_score": 72,
+      "attribution_overlap": [
+        "alon"
+      ]
+    }
+  ],
+  "1912.11246": [
+    {
+      "studies_paper": "2005.05042",
+      "studies_paper_title": "Graphs with polynomially many minimal separators",
+      "studies_paper_authors": [
+        "Tara Abrishami",
+        "Maria Chudnovsky",
+        "Cemil Dibek",
+        "Stéphan Thomassé",
+        "Nicolas Trotignon",
+        "Kristina Vušković"
+      ],
+      "studies_published": "2021-12-28",
+      "studies_abs_url": "https://arxiv.org/abs/2005.05042",
+      "paper_contribution": "Proves Conjecture 1.1 in full, establishing as Theorem 1.2 that every (theta, pyramid, prism, turtle)-free graph $G$ has at most $|V(G)|^{18}$ minimal separators, constructible in polynomial time.",
+      "attributed_to": "authors of [7]",
+      "fuzzy_score": 99,
+      "attribution_overlap": []
+    }
+  ],
+  "1912.02342": [
+    {
+      "studies_paper": "2012.03686",
+      "studies_paper_title": "Degeneracy of $P_t$-free and $C_{\\geq t}$-free graphs with no large complete bipartite subgraphs",
+      "studies_paper_authors": [
+        "Marthe Bonamy",
+        "Nicolas Bousquet",
+        "Michał Pilipczuk",
+        "Paweł Rzążewski",
+        "Stéphan Thomassé",
+        "Bartosz Walczak"
+      ],
+      "studies_published": "2021-10-15",
+      "studies_abs_url": "https://arxiv.org/abs/2012.03686",
+      "paper_contribution": "Presents Theorem 4 (degeneracy of $C_{\\geq t}$-free graphs excluding $K_{\\ell,\\ell}$) as the $C_{\\geq t}$-free analogue of the Fox–Sudakov biclique version of the conjecture, drawing an explicit structural parallel between the two settings.",
+      "attributed_to": "Erdős and Hajnal",
+      "fuzzy_score": 86,
+      "attribution_overlap": []
+    },
+    {
+      "studies_paper": "2312.15572",
+      "studies_paper_title": "Induced subgraph density. VI. Bounded VC-dimension",
+      "studies_paper_authors": [
+        "Tung Nguyen",
+        "Alex Scott",
+        "Paul Seymour"
+      ],
+      "studies_published": "2025-09-10",
+      "studies_abs_url": "https://arxiv.org/abs/2312.15572",
+      "paper_contribution": "Fully confirms the conjecture, proving that every graph $G$ of VC-dimension at most $d$ contains a clique or stable set of size at least $|G|^{c_d}$ for an explicit $c_d>0$ satisfying $c_d \\geq 2^{-2^{O(d)}}$.",
+      "attributed_to": "Fox, Pach, and Suk",
+      "fuzzy_score": 84,
+      "attribution_overlap": [
+        "fox",
+        "pach",
+        "suk"
+      ]
+    },
+    {
+      "studies_paper": "2004.12166",
+      "studies_paper_title": "An algorithmic weakening of the Erdős-Hajnal conjecture",
+      "studies_paper_authors": [
+        "Édouard Bonnet",
+        "Stéphan Thomassé",
+        "Xuan Thang Tran",
+        "Rémi Watrigant"
+      ],
+      "studies_published": "2020-04-25",
+      "studies_abs_url": "https://arxiv.org/abs/2004.12166",
+      "paper_contribution": "Proves that a constructive version of the Erdős-Hajnal conjecture implies the improved approximation conjecture (Conjecture 5), and shows the improved approximation property is closed under graph substitution, establishing Conjecture 5 for many graphs $H$ (e.g., $P_6$-free, fork-free) where the Erdős-Hajnal conjecture remains open.",
+      "attributed_to": "Erdős and Hajnal",
+      "fuzzy_score": 81,
+      "attribution_overlap": []
+    },
+    {
+      "studies_paper": "2403.08303",
+      "studies_paper_title": "Equivalence between Erdős-Hajnal and polynomial Rödl and Nikiforov conjectures",
+      "studies_paper_authors": [
+        "Matija Bucić",
+        "Jacob Fox",
+        "Huy Tuan Pham"
+      ],
+      "studies_published": "2024-04-19",
+      "studies_abs_url": "https://arxiv.org/abs/2403.08303",
+      "paper_contribution": "Proves that the polynomial Nikiforov conjecture is equivalent to the Erdős-Hajnal conjecture, establishing all three conjectures as mutually equivalent.",
+      "attributed_to": "Fox, Nguyen, Scott and Seymour",
+      "fuzzy_score": 69,
+      "attribution_overlap": [
+        "fox"
+      ]
+    },
+    {
+      "studies_paper": "2403.08303",
+      "studies_paper_title": "Equivalence between Erdős-Hajnal and polynomial Rödl and Nikiforov conjectures",
+      "studies_paper_authors": [
+        "Matija Bucić",
+        "Jacob Fox",
+        "Huy Tuan Pham"
+      ],
+      "studies_published": "2024-04-19",
+      "studies_abs_url": "https://arxiv.org/abs/2403.08303",
+      "paper_contribution": "Proves that the polynomial Rödl conjecture is equivalent to the Erdős-Hajnal conjecture; as a corollary deduces that the family of string graphs satisfies the polynomial Rödl conjecture.",
+      "attributed_to": "Fox and Sudakov",
+      "fuzzy_score": 68,
+      "attribution_overlap": [
+        "fox"
+      ]
+    },
+    {
+      "studies_paper": "2307.06455",
+      "studies_paper_title": "Induced subgraph density. IV. New graphs with the Erdős-Hajnal property",
+      "studies_paper_authors": [
+        "Tung Nguyen",
+        "Alex Scott",
+        "Paul Seymour"
+      ],
+      "studies_published": "2026-04-18",
+      "studies_abs_url": "https://arxiv.org/abs/2307.06455",
+      "paper_contribution": "The paper's results establishing the Erdős-Hajnal property for new (infinitely many prime) graph classes implicitly verify Conjecture 1.7 for those classes, via the equivalence proved by Bucić, Fox, and Pham.",
+      "attributed_to": "Fox and Sudakov",
+      "fuzzy_score": 65,
+      "attribution_overlap": [
+        "fox"
+      ]
+    }
+  ],
+  "1805.06848": [
+    {
+      "studies_paper": "1809.01352",
+      "studies_paper_title": "A Completion of the Proof of the Edge-statistics Conjecture",
+      "studies_paper_authors": [
+        "Jacob Fox",
+        "Lisa Sauermann"
+      ],
+      "studies_published": "2020-02-25",
+      "studies_abs_url": "https://arxiv.org/abs/1809.01352",
+      "paper_contribution": "Completes the proof of the conjecture by handling the remaining cases $1 \\leq \\ell \\leq C \\cdot k$ (Theorem 1.2), together with the earlier result of Kwan, Sudakov and Tran which covered $C \\cdot k \\leq \\ell \\leq \\binom{k}{2}/2$.",
+      "attributed_to": "Alon, Hefetz, Krivelevich and Tyomkyn",
+      "fuzzy_score": 85,
+      "attribution_overlap": [
+        "alon",
+        "hefetz",
+        "krivelevich",
+        "tyomkyn"
+      ]
+    },
+    {
+      "studies_paper": "1809.01352",
+      "studies_paper_title": "A Completion of the Proof of the Edge-statistics Conjecture",
+      "studies_paper_authors": [
+        "Jacob Fox",
+        "Lisa Sauermann"
+      ],
+      "studies_published": "2020-02-25",
+      "studies_abs_url": "https://arxiv.org/abs/1809.01352",
+      "paper_contribution": "Proves the conjecture for the sublinear range $1 \\leq \\ell < k/r$ via Theorem 1.4, establishing $\\mathrm{ind}_r(k,\\ell) \\leq \\mathrm{ind}_{\\leq r}(k,\\ell) \\leq \\frac{k}{k-r\\ell} \\cdot \\frac{1}{e}$, which yields $e^{-1}+o_k(1)$ when $r\\ell = o(k)$; further quantitative bounds for the range $1 \\leq \\ell \\leq (1-\\varepsilon)k/r$ are given in Theorem 1.5.",
+      "attributed_to": "Alon, Hefetz, Krivelevich and Tyomkyn",
+      "fuzzy_score": 73,
+      "attribution_overlap": [
+        "alon",
+        "hefetz",
+        "krivelevich",
+        "tyomkyn"
+      ]
+    }
+  ],
+  "1701.05597": [
+    {
+      "studies_paper": "2306.02364",
+      "studies_paper_title": "Some results and problems on tournament structure",
+      "studies_paper_authors": [
+        "Tung Nguyen",
+        "Alex Scott",
+        "Paul Seymour"
+      ],
+      "studies_published": "2024-09-24",
+      "studies_abs_url": "https://arxiv.org/abs/2306.02364",
+      "paper_contribution": "Proves two partial results in its favour: Theorem 1.3 establishes the case where $A$ is a cyclic triangle (and $\\chi(B)\\geq c$), and Theorem 1.4 establishes the conjecture for all tournaments with sufficiently large domination number.",
+      "attributed_to": "Nguyen, Scott, and Seymour",
+      "fuzzy_score": 67,
+      "attribution_overlap": [
+        "scott",
+        "seymour"
+      ]
+    },
+    {
+      "studies_paper": "2508.14332",
+      "studies_paper_title": "Asymptotic structure. IV. A counterexample to the weak coarse Menger conjecture",
+      "studies_paper_authors": [
+        "Tung Nguyen",
+        "Alex Scott",
+        "Paul Seymour"
+      ],
+      "studies_published": "2025-08-20",
+      "studies_abs_url": "https://arxiv.org/abs/2508.14332",
+      "paper_contribution": "Disproves this conjecture by constructing, for all integers $\\ell, m \\geq 1$, a graph $G$ and sets $S, T \\subseteq V(G)$ witnessing its failure when $c = k = 3$ (Theorem 1.3); a variant of the counterexample has only one vertex of degree more than three.",
+      "attributed_to": "Nguyen, Scott, and Seymour",
+      "fuzzy_score": 65,
+      "attribution_overlap": [
+        "scott",
+        "seymour"
+      ]
+    }
+  ],
+  "1907.12999": [
+    {
+      "studies_paper": "2206.13635",
+      "studies_paper_title": "Coloring hypergraphs with excluded minors",
+      "studies_paper_authors": [
+        "Raphael Steiner"
+      ],
+      "studies_published": "2024-04-19",
+      "studies_abs_url": "https://arxiv.org/abs/2206.13635",
+      "paper_contribution": "Proves a weak hypergraph extension: for every $t\\geq 1$ there exists a finite integer $h(t)$ such that every hypergraph with no $K_t$-minor is $h(t)$-colorable, and establishes $\\left\\lceil\\frac{3}{2}(t-1)\\right\\rceil\\leq h(t)\\leq 2g(t)$ where $g(t)$ is the maximum chromatic number of $K_t$-minor-free graphs.",
+      "attributed_to": "Hadwiger",
+      "fuzzy_score": 80,
+      "attribution_overlap": []
+    }
+  ],
+  "1705.04609": [
+    {
+      "studies_paper": "1701.07217",
+      "studies_paper_title": "Induced subgraphs of graphs with large chromatic number. VIII. Long odd holes",
+      "studies_paper_authors": [
+        "Maria Chudnovsky",
+        "Alex Scott",
+        "Paul Seymour",
+        "Sophie Spirkl"
+      ],
+      "studies_published": "2019-04-28",
+      "studies_abs_url": "https://arxiv.org/abs/1701.07217",
+      "paper_contribution": "The authors note they can prove a weaker partial result — that there exist two holes both of length at least $\\ell$ with consecutive lengths — by a refinement of the paper's methods, but omit the details.",
+      "attributed_to": "authors of reference [6]",
+      "fuzzy_score": 83,
+      "attribution_overlap": []
+    },
+    {
+      "studies_paper": "2206.00186",
+      "studies_paper_title": "Dense minors of graphs with independence number two",
+      "studies_paper_authors": [
+        "Sergey Norin",
+        "Paul Seymour"
+      ],
+      "studies_published": "2022-06-01",
+      "studies_abs_url": "https://arxiv.org/abs/2206.00186",
+      "paper_contribution": "Proves that every graph $G$ with $\\alpha(G) \\leq 2$ contains a minor $H$ with $|V(H)| = \\lceil|V(G)|/2\\rceil$ and at least $(\\gamma - o(1))\\binom{|V(H)|}{2}$ edges where $\\gamma = 0.986882\\ldots$, establishing a dense minor of the exact size predicted by the conjecture for this case (fewer than $1/76$ of all possible edges missing), as progress toward the complete minor.",
+      "attributed_to": "Hadwiger",
+      "fuzzy_score": 81,
+      "attribution_overlap": []
+    },
+    {
+      "studies_paper": "2510.05893",
+      "studies_paper_title": "Immersions and Albertson's conjecture",
+      "studies_paper_authors": [
+        "Jacob Fox",
+        "Janos Pach",
+        "Andrew Suk"
+      ],
+      "studies_published": "2025-10-07",
+      "studies_abs_url": "https://arxiv.org/abs/2510.05893",
+      "paper_contribution": "Proves the conjecture for graphs with chromatic number $k$ and at most $(1.64-\\varepsilon)k$ vertices (for any $\\varepsilon>0$ and $k$ sufficiently large), and unconditionally for graphs with fewer than $1.4k-0.6$ vertices.",
+      "attributed_to": "Lescure and Meyniel",
+      "fuzzy_score": 81,
+      "attribution_overlap": []
+    },
+    {
+      "studies_paper": "2412.13893",
+      "studies_paper_title": "Erdős--Pósa property of cycles that are far apart",
+      "studies_paper_authors": [
+        "Vida Dujmović",
+        "Gwenaël Joret",
+        "Piotr Micek",
+        "Pat Morin"
+      ],
+      "studies_published": "2026-05-01",
+      "studies_abs_url": "https://arxiv.org/abs/2412.13893",
+      "paper_contribution": "Proves the conjecture in full generality with explicit bounds $f(k)\\in\\mathcal{O}(k^{18}\\operatorname{polylog}k)$ and $g(d)=19d$.",
+      "attributed_to": "Chudnovsky and Seymour; also Ahn, Gollin, Huynh, and Kwon",
+      "fuzzy_score": 71,
+      "attribution_overlap": [
+        "seymour"
+      ]
+    },
+    {
+      "studies_paper": "2306.02364",
+      "studies_paper_title": "Some results and problems on tournament structure",
+      "studies_paper_authors": [
+        "Tung Nguyen",
+        "Alex Scott",
+        "Paul Seymour"
+      ],
+      "studies_published": "2024-09-24",
+      "studies_abs_url": "https://arxiv.org/abs/2306.02364",
+      "paper_contribution": "Proves two partial results in its favour: Theorem 1.3 establishes the case where $A$ is a cyclic triangle (and $\\chi(B)\\geq c$), and Theorem 1.4 establishes the conjecture for all tournaments with sufficiently large domination number.",
+      "attributed_to": "Nguyen, Scott, and Seymour",
+      "fuzzy_score": 67,
+      "attribution_overlap": [
+        "scott",
+        "seymour"
+      ]
+    }
+  ],
+  "1612.08698": [
+    {
+      "studies_paper": "1902.02971",
+      "studies_paper_title": "Flexibility of triangle-free planar graphs",
+      "studies_paper_authors": [
+        "Zdeněk Dvořák",
+        "Tomáš Masařík",
+        "Jan Musílek",
+        "Ondřej Pangrác"
+      ],
+      "studies_published": "2019-02-08",
+      "studies_abs_url": "https://arxiv.org/abs/1902.02971",
+      "paper_contribution": "Proves part (b) in the affirmative: there exists $\\varepsilon > 0$ such that every triangle-free planar graph with an assignment of lists of size four is weighted $\\varepsilon$-flexible.",
+      "attributed_to": "Dvořák, Norin and Postle",
+      "fuzzy_score": 78,
+      "attribution_overlap": [
+        "dvorak",
+        "norin",
+        "postle"
+      ]
+    },
+    {
+      "studies_paper": "1902.04069",
+      "studies_paper_title": "Flexibility of planar graphs of girth at least six",
+      "studies_paper_authors": [
+        "Zdeněk Dvořák",
+        "Tomáš Masařík",
+        "Jan Musílek",
+        "Ondřej Pangrác"
+      ],
+      "studies_published": "2019-02-11",
+      "studies_abs_url": "https://arxiv.org/abs/1902.04069",
+      "paper_contribution": "Proves Theorem 2: there exists $\\varepsilon > 0$ such that every planar graph of girth at least six with lists of size three is weighted $\\varepsilon$-flexible, resolving part (c) for girth $\\geq 6$ and improving the prior threshold of girth $\\geq 12$; part (b) was resolved affirmatively in a companion paper by the same authors.",
+      "attributed_to": "Dvořák, Norin and Postle",
+      "fuzzy_score": 78,
+      "attribution_overlap": [
+        "dvorak",
+        "norin",
+        "postle"
+      ]
+    }
+  ],
+  "1810.00811": [
+    {
+      "studies_paper": "2310.04265",
+      "studies_paper_title": "Clique number of tournaments",
+      "studies_paper_authors": [
+        "Pierre Aboulker",
+        "Guillaume Aubian",
+        "Pierre Charbit",
+        "Raul Lopes"
+      ],
+      "studies_published": "2023-10-06",
+      "studies_abs_url": "https://arxiv.org/abs/2310.04265",
+      "paper_contribution": "The paper discusses the conjecture alongside its own Conjecture 4.3 and notes that no inclusion between $\\operatorname{\\overrightarrow{\\chi}}$-binding and the strong Erdős-Hajnal property has been proved, while believing the two conjectures are independent.",
+      "attributed_to": "Chudnovsky, Scott, Seymour and Spirkl",
+      "fuzzy_score": 83,
+      "attribution_overlap": [
+        "seymour",
+        "spirkl"
+      ]
+    }
+  ],
+  "1808.01605": [
+    {
+      "studies_paper": "2510.11311",
+      "studies_paper_title": "Extending Thomassen's conjecture to directed graphs",
+      "studies_paper_authors": [
+        "Micha Christoph",
+        "Barnabás Janzer",
+        "Kalina Petrova",
+        "Raphael Steiner"
+      ],
+      "studies_published": "2025-10-13",
+      "studies_abs_url": "https://arxiv.org/abs/2510.11311",
+      "paper_contribution": "Shows that the most direct extension of Thomassen's conjecture to digraphs (using minimum out-degree) is false; proves all orientations of $C_3$ and $C_5$ are avoidable; and fully characterizes which digraphs are avoidable when restricted to regular host digraphs.",
+      "attributed_to": "Thomassen",
+      "fuzzy_score": 85,
+      "attribution_overlap": []
+    },
+    {
+      "studies_paper": "2209.00594",
+      "studies_paper_title": "Strengthening Hadwiger's conjecture for $4$- and $5$-chromatic graphs",
+      "studies_paper_authors": [
+        "Anders Martinsson",
+        "Raphael Steiner"
+      ],
+      "studies_published": "2022-09-01",
+      "studies_abs_url": "https://arxiv.org/abs/2209.00594",
+      "paper_contribution": "Proves the $t = 5$ case as a corollary (Corollary 1.4) of establishing Holroyd's Strong Hadwiger's conjecture for $t = 4$; additionally shows that every 5-chromatic graph contains a $K_5$-minor with a singleton branch-set, and that in a 5-vertex-critical graph any specified vertex may serve as that singleton branch-set.",
+      "attributed_to": "Hadwiger",
+      "fuzzy_score": 80,
+      "attribution_overlap": []
+    },
+    {
+      "studies_paper": "2510.11311",
+      "studies_paper_title": "Extending Thomassen's conjecture to directed graphs",
+      "studies_paper_authors": [
+        "Micha Christoph",
+        "Barnabás Janzer",
+        "Kalina Petrova",
+        "Raphael Steiner"
+      ],
+      "studies_published": "2025-10-13",
+      "studies_abs_url": "https://arxiv.org/abs/2510.11311",
+      "paper_contribution": "Shows that the most direct extension of Thomassen's conjecture to digraphs (using minimum out-degree) is false; proves all orientations of $C_3$ and $C_5$ are avoidable; and fully characterizes which digraphs are avoidable when restricted to regular host digraphs.",
+      "attributed_to": "Thomassen",
+      "fuzzy_score": 80,
+      "attribution_overlap": []
+    },
+    {
+      "studies_paper": "2002.11100",
+      "studies_paper_title": "Clique minors in graphs with a forbidden subgraph",
+      "studies_paper_authors": [
+        "M. Bucić",
+        "J. Fox",
+        "B. Sudakov"
+      ],
+      "studies_published": "2021-02-08",
+      "studies_abs_url": "https://arxiv.org/abs/2002.11100",
+      "paper_contribution": "Proves that any $K_s$-free $n$-vertex graph with $\\alpha(G) \\leq r$ has a clique minor of order at least $(n/r)^{1+\\frac{1}{10(s-2)}}$ (Theorem 1), which substantially exceeds the bound $n/\\alpha(G)$ that Hadwiger's conjecture would imply for those graphs.",
+      "attributed_to": "Hadwiger",
+      "fuzzy_score": 80,
+      "attribution_overlap": []
+    },
+    {
+      "studies_paper": "2411.16465",
+      "studies_paper_title": "Fractional chromatic number vs. Hall ratio",
+      "studies_paper_authors": [
+        "Raphael Steiner"
+      ],
+      "studies_published": "2024-11-25",
+      "studies_abs_url": "https://arxiv.org/abs/2411.16465",
+      "paper_contribution": "Affirmatively solves the problem by constructing graphs with bounded Hall ratio, arbitrarily large fractional chromatic number, and $\\alpha_{\\mathrm{deg}_H}(H)\\geq |E(H)|/c$ for all subgraphs $H$ (Theorem 1.5).",
+      "attributed_to": "Dvořák, Ossona de Mendez, and Wu",
+      "fuzzy_score": 65,
+      "attribution_overlap": [
+        "wu"
+      ]
+    }
+  ],
+  "1708.02370": [
+    {
+      "studies_paper": "2012.05554",
+      "studies_paper_title": "Clustered colouring of graph classes with bounded treedepth or pathwidth",
+      "studies_paper_authors": [
+        "Sergey Norin",
+        "Alex Scott",
+        "David R. Wood"
+      ],
+      "studies_published": "2022-01-20",
+      "studies_abs_url": "https://arxiv.org/abs/2012.05554",
+      "paper_contribution": "Proves Conjecture 4 for all minor-closed classes with bounded pathwidth by establishing $\\chi^\\star(\\mathcal{G}) \\leq 2\\,\\mathrm{tcn}(\\mathcal{G}) - 2$ in that setting (Theorem 2), and shows this bound is best possible; the general conjecture remains open.",
+      "attributed_to": "Norin et al.",
+      "fuzzy_score": 94,
+      "attribution_overlap": []
+    },
+    {
+      "studies_paper": "2012.05554",
+      "studies_paper_title": "Clustered colouring of graph classes with bounded treedepth or pathwidth",
+      "studies_paper_authors": [
+        "Sergey Norin",
+        "Alex Scott",
+        "David R. Wood"
+      ],
+      "studies_published": "2022-01-20",
+      "studies_abs_url": "https://arxiv.org/abs/2012.05554",
+      "paper_contribution": "Proves Conjecture 3 for all minor-closed classes with bounded treedepth by establishing $\\chi_{\\Delta}(\\mathcal{G}) = \\chi^\\star(\\mathcal{G}) = \\mathrm{tcn}(\\mathcal{G}) - 1$ in that setting (Theorem 1); the general conjecture remains open.",
+      "attributed_to": "Ossona de Mendez et al.",
+      "fuzzy_score": 84,
+      "attribution_overlap": []
+    },
+    {
+      "studies_paper": "2508.14332",
+      "studies_paper_title": "Asymptotic structure. IV. A counterexample to the weak coarse Menger conjecture",
+      "studies_paper_authors": [
+        "Tung Nguyen",
+        "Alex Scott",
+        "Paul Seymour"
+      ],
+      "studies_published": "2025-08-20",
+      "studies_abs_url": "https://arxiv.org/abs/2508.14332",
+      "paper_contribution": "Disproves this conjecture by constructing, for all integers $\\ell, m \\geq 1$, a graph $G$ and sets $S, T \\subseteq V(G)$ witnessing its failure when $c = k = 3$ (Theorem 1.3); a variant of the counterexample has only one vertex of degree more than three.",
+      "attributed_to": "Nguyen, Scott, and Seymour",
+      "fuzzy_score": 67,
+      "attribution_overlap": [
+        "scott",
+        "seymour"
+      ]
+    }
+  ],
+  "1710.06282": [
+    {
+      "studies_paper": "2108.01162",
+      "studies_paper_title": "Induced subgraphs and tree decompositions II. Toward walls and their line graphs in graphs of bounded degree",
+      "studies_paper_authors": [
+        "Tara Abrishami",
+        "Maria Chudnovsky",
+        "Cemil Dibek",
+        "Sepehr Hajebi",
+        "Paweł Rzążewski",
+        "Sophie Spirkl",
+        "Kristina Vušković"
+      ],
+      "studies_published": "2023-10-30",
+      "studies_abs_url": "https://arxiv.org/abs/2108.01162",
+      "paper_contribution": "Proves three theorems supporting the conjecture: (1) every $S_{t,t,t}$-free graph of maximum degree at most $\\Delta$ and sufficiently large treewidth contains the line graph of a subdivision of $W_{k\\times k}$ as an induced subgraph (Theorem 1.8); (2) every $(t$-theta, $t$-pyramid)-free graph of maximum degree at most $\\Delta$ and sufficiently large treewidth contains the line graph of a subdivision of $W_{k\\times k}$ as an induced subgraph (Theorem 1.10); (3) for every subcubic subdivided caterpillar $T$, every graph of maximum degree at most $\\Delta$ and sufficiently large treewidth contains a subdivision of $T$ or the line graph of a subdivision of $T$ as an induced subgraph (Theorem 1.11).",
+      "attributed_to": "Aboulker, Adler, Kim, Sintiari and Trotignon",
+      "fuzzy_score": 67,
+      "attribution_overlap": [
+        "aboulker"
+      ]
+    },
+    {
+      "studies_paper": "2404.05992",
+      "studies_paper_title": "Graphs of bounded chordality",
+      "studies_paper_authors": [
+        "Aristotelis Chaniotis",
+        "Babak Miraftab",
+        "Sophie Spirkl"
+      ],
+      "studies_published": "2024-04-09",
+      "studies_abs_url": "https://arxiv.org/abs/2404.05992",
+      "paper_contribution": "Shows this problem is equivalent to Problem 1.2 (Gyárfás's question on $\\chi$-boundedness of $\\mathcal{C}\\overset{\\mathfrak{g}}{\\cap}\\mathcal{C}$), and notes that Felsner et al. answered it in the negative.",
+      "attributed_to": "Dujmovic, Joret, Morin, Norin, and Wood",
+      "fuzzy_score": 65,
+      "attribution_overlap": [
+        "joret"
+      ]
+    }
+  ],
+  "1803.03588": [
+    {
+      "studies_paper": "2301.10147",
+      "studies_paper_title": "Induced subgraph density. I. A loglog step towards Erdos-Hajnal",
+      "studies_paper_authors": [
+        "Matija Bucić",
+        "Tung Nguyen",
+        "Alex Scott",
+        "Paul Seymour"
+      ],
+      "studies_published": "2024-02-19",
+      "studies_abs_url": "https://arxiv.org/abs/2301.10147",
+      "paper_contribution": "Improves the exponent to $\\delta = 2^{-c(\\log(1/x))^2/\\log\\log(1/x)}$ via Theorem 1.8, a loglog improvement over the Fox–Sudakov bound, but does not achieve the conjectured polynomial bound.",
+      "attributed_to": "Fox and Sudakov",
+      "fuzzy_score": 67,
+      "attribution_overlap": [
+        "fox"
+      ]
+    }
+  ],
+  "1803.01051": [
+    {
+      "studies_paper": "2012.13916",
+      "studies_paper_title": "A note on connected greedy edge colouring",
+      "studies_paper_authors": [
+        "Marthe Bonamy",
+        "Carla Groenland",
+        "Carole Muller",
+        "Jonathan Narboni",
+        "Jakub Pekárek",
+        "Alexandra Wesolek"
+      ],
+      "studies_published": "2020-12-27",
+      "studies_abs_url": "https://arxiv.org/abs/2012.13916",
+      "paper_contribution": "Proves the special case $\\chi'_c(G) \\leq 4$ when $G$ has maximum degree at most 3 (i.e., $\\Delta + 1 = 4$), via a reachability lemma for Kempe chains (Theorem 3 and Lemma 7).",
+      "attributed_to": "authors of reference [5]",
+      "fuzzy_score": 87,
+      "attribution_overlap": []
+    }
+  ],
+  "1509.06563": [
+    {
+      "studies_paper": "2306.02364",
+      "studies_paper_title": "Some results and problems on tournament structure",
+      "studies_paper_authors": [
+        "Tung Nguyen",
+        "Alex Scott",
+        "Paul Seymour"
+      ],
+      "studies_published": "2024-09-24",
+      "studies_abs_url": "https://arxiv.org/abs/2306.02364",
+      "paper_contribution": "Proves two partial results in its favour: Theorem 1.3 establishes the case where $A$ is a cyclic triangle (and $\\chi(B)\\geq c$), and Theorem 1.4 establishes the conjecture for all tournaments with sufficiently large domination number.",
+      "attributed_to": "Nguyen, Scott, and Seymour",
+      "fuzzy_score": 67,
+      "attribution_overlap": [
+        "scott",
+        "seymour"
+      ]
+    }
+  ],
+  "1701.03366": [
+    {
+      "studies_paper": "2206.00594",
+      "studies_paper_title": "Sparse graphs with bounded induced cycle packing number have logarithmic treewidth",
+      "studies_paper_authors": [
+        "Marthe Bonamy",
+        "Édouard Bonnet",
+        "Hugues Déprés",
+        "Louis Esperet",
+        "Colin Geniet",
+        "Claire Hilaire",
+        "Stéphan Thomassé",
+        "Alexandra Wesolek"
+      ],
+      "studies_published": "2024-02-16",
+      "studies_abs_url": "https://arxiv.org/abs/2206.00594",
+      "paper_contribution": "Theorem 1.1 of this paper (logarithmic feedback vertex set for sparse $\\mathcal{O}_k$-free graphs) was the key tool used by Nguyen, Scott, and Seymour [NSS24] to resolve this conjecture in the more general $\\mathcal{O}_k$-free case.",
+      "attributed_to": "Ngoc-Khang Le",
+      "fuzzy_score": 66,
+      "attribution_overlap": [
+        "le"
+      ]
+    }
+  ],
+  "1302.2158": [
+    {
+      "studies_paper": "1508.03663",
+      "studies_paper_title": "Planar Graphs of Girth at least Five are Square $(Δ+ 2)$-Choosable",
+      "studies_paper_authors": [
+        "Marthe Bonamy",
+        "Daniel W. Cranston",
+        "Luke Postle"
+      ],
+      "studies_published": "2018-06-21",
+      "studies_abs_url": "https://arxiv.org/abs/1508.03663",
+      "paper_contribution": "Proves the conjecture in full and strengthens it to list-coloring and paintability: every planar graph of girth at least 5 with $\\Delta(G) \\geq \\Delta_0 = 2{,}992{,}901$ is square $(\\Delta(G)+2)$-choosable and square $(\\Delta(G)+2)$-paintable.",
+      "attributed_to": "Dvořák, Král, Nejedlý, and Škrekovski",
+      "fuzzy_score": 81,
+      "attribution_overlap": [
+        "dvorak",
+        "kral"
+      ]
+    },
+    {
+      "studies_paper": "1809.05439",
+      "studies_paper_title": "Fractional coloring of planar graphs of girth five",
+      "studies_paper_authors": [
+        "Zdeněk Dvořák",
+        "Xiaolan Hu"
+      ],
+      "studies_published": "2018-09-14",
+      "studies_abs_url": "https://arxiv.org/abs/1809.05439",
+      "paper_contribution": "Proves Conjecture 2 for planar graphs of girth at least five with maximum degree at most $\\Delta$: such graphs are $(6M_\\Delta : 2M_\\Delta+1)$-colorable and thus have fractional chromatic number at most $3 - \\frac{3}{2M_\\Delta+1}$.",
+      "attributed_to": "Dvořák and Mnich",
+      "fuzzy_score": 77,
+      "attribution_overlap": [
+        "dvorak"
+      ]
+    },
+    {
+      "studies_paper": "1805.11507",
+      "studies_paper_title": "(3a:a)-list-colorability of embedded graphs of girth at least five",
+      "studies_paper_authors": [
+        "Zdeněk Dvořák",
+        "Xiaolan Hu"
+      ],
+      "studies_published": "2019-10-11",
+      "studies_abs_url": "https://arxiv.org/abs/1805.11507",
+      "paper_contribution": "Proves that the class of minimal obstructions of girth at least five to list $(3a:a)$-colorability is strongly hyperbolic (Theorem 5), which is stated as a key step in a forthcoming proof that the conjecture holds for planar graphs of girth at least five with bounded maximum degree.",
+      "attributed_to": "Dvořák and Mnich",
+      "fuzzy_score": 76,
+      "attribution_overlap": [
+        "dvorak"
+      ]
+    }
+  ],
+  "1702.01607": [
+    {
+      "studies_paper": "2310.04265",
+      "studies_paper_title": "Clique number of tournaments",
+      "studies_paper_authors": [
+        "Pierre Aboulker",
+        "Guillaume Aubian",
+        "Pierre Charbit",
+        "Raul Lopes"
+      ],
+      "studies_published": "2023-10-06",
+      "studies_abs_url": "https://arxiv.org/abs/2310.04265",
+      "paper_contribution": "The paper introduces Conjecture 5.3 (large dom implies an $\\operatorname{\\overrightarrow{\\omega}}$-cluster) as an intermediate conjecture between Theorem 5.1 and Conjecture 5.2, and establishes implications among the three statements.",
+      "attributed_to": "Harutyunyan, Le, Thomassé and Wu",
+      "fuzzy_score": 78,
+      "attribution_overlap": [
+        "harutyunyan",
+        "le",
+        "thomasse",
+        "wu"
+      ]
+    },
+    {
+      "studies_paper": "2310.04265",
+      "studies_paper_title": "Clique number of tournaments",
+      "studies_paper_authors": [
+        "Pierre Aboulker",
+        "Guillaume Aubian",
+        "Pierre Charbit",
+        "Raul Lopes"
+      ],
+      "studies_published": "2023-10-06",
+      "studies_abs_url": "https://arxiv.org/abs/2310.04265",
+      "paper_contribution": "The paper notes that proving $S_k$ is a rebel for every $k$ would imply Conjecture 5.3, thereby connecting this conjecture to the clique-number framework developed in the paper.",
+      "attributed_to": "Chudnovsky, Kim, Liu, Seymour and Thomassé",
+      "fuzzy_score": 69,
+      "attribution_overlap": [
+        "thomasse"
+      ]
+    },
+    {
+      "studies_paper": "2310.04265",
+      "studies_paper_title": "Clique number of tournaments",
+      "studies_paper_authors": [
+        "Pierre Aboulker",
+        "Guillaume Aubian",
+        "Pierre Charbit",
+        "Raul Lopes"
+      ],
+      "studies_published": "2023-10-06",
+      "studies_abs_url": "https://arxiv.org/abs/2310.04265",
+      "paper_contribution": "The paper introduces Conjecture 5.3 (large dom implies an $\\operatorname{\\overrightarrow{\\omega}}$-cluster) as an intermediate conjecture between Theorem 5.1 and Conjecture 5.2, and establishes implications among the three statements.",
+      "attributed_to": "Harutyunyan, Le, Thomassé and Wu",
+      "fuzzy_score": 68,
+      "attribution_overlap": [
+        "harutyunyan",
+        "le",
+        "thomasse",
+        "wu"
+      ]
+    }
+  ],
+  "1611.03196": [
+    {
+      "studies_paper": "2212.11969",
+      "studies_paper_title": "Invertibility of digraphs and tournaments",
+      "studies_paper_authors": [
+        "Noga Alon",
+        "Emil Powierski",
+        "Michael Savery",
+        "Alex Scott",
+        "Elizabeth Wilmer"
+      ],
+      "studies_published": "2024-01-22",
+      "studies_abs_url": "https://arxiv.org/abs/2212.11969",
+      "paper_contribution": "Disproves the conjecture by showing $\\operatorname{inv}(n) = (1+o(1))n$; specifically, $\\operatorname{inv}(n) \\geq n - \\sqrt{2n\\log n}$ for sufficiently large $n$ via a random construction (Theorem 8), far exceeding $\\lfloor(n-1)/2\\rfloor$.",
+      "attributed_to": "Belkhechine, Bouaziz, Boudabbous, and Pouzet",
+      "fuzzy_score": 80,
+      "attribution_overlap": []
+    }
+  ],
+  "1610.00876": [
+    {
+      "studies_paper": "2008.13224",
+      "studies_paper_title": "Oriented cycles in digraphs of large outdegree",
+      "studies_paper_authors": [
+        "Lior Gishboliner",
+        "Raphael Steiner",
+        "Tibor Szabó"
+      ],
+      "studies_published": "2020-08-30",
+      "studies_abs_url": "https://arxiv.org/abs/2008.13224",
+      "paper_contribution": "Resolves the second question in the negative by proving that neither $\\overleftrightarrow{K_4}$ nor $\\overleftrightarrow{S_4}$ is $\\kappa'$-maderian (Propositions 10 and 11); the $\\kappa$-maderian question remains open.",
+      "attributed_to": "Aboulker, Cohen, Havet, Lochet, Moura, and Thomassé",
+      "fuzzy_score": 80,
+      "attribution_overlap": [
+        "aboulker",
+        "cohen",
+        "havet",
+        "lochet",
+        "moura",
+        "thomasse"
+      ]
+    },
+    {
+      "studies_paper": "2008.13224",
+      "studies_paper_title": "Oriented cycles in digraphs of large outdegree",
+      "studies_paper_authors": [
+        "Lior Gishboliner",
+        "Raphael Steiner",
+        "Tibor Szabó"
+      ],
+      "studies_published": "2020-08-30",
+      "studies_abs_url": "https://arxiv.org/abs/2008.13224",
+      "paper_contribution": "No direct progress on this conjecture is made in this paper; the paper instead proves the related Conjecture 5 concerning oriented cycles.",
+      "attributed_to": "Aboulker, Cohen, Havet, Lochet, Moura, and Thomassé",
+      "fuzzy_score": 79,
+      "attribution_overlap": [
+        "aboulker",
+        "cohen",
+        "havet",
+        "lochet",
+        "moura",
+        "thomasse"
+      ]
+    },
+    {
+      "studies_paper": "2008.13224",
+      "studies_paper_title": "Oriented cycles in digraphs of large outdegree",
+      "studies_paper_authors": [
+        "Lior Gishboliner",
+        "Raphael Steiner",
+        "Tibor Szabó"
+      ],
+      "studies_published": "2020-08-30",
+      "studies_abs_url": "https://arxiv.org/abs/2008.13224",
+      "paper_contribution": "Proves this conjecture in full generality (Theorem 6), establishing that $\\mathrm{mader}_{\\delta^+}$ of an oriented cycle of length $\\ell$ is bounded by a polynomial function $K(\\ell)$.",
+      "attributed_to": "Aboulker, Cohen, Havet, Lochet, Moura, and Thomassé",
+      "fuzzy_score": 79,
+      "attribution_overlap": [
+        "aboulker",
+        "cohen",
+        "havet",
+        "lochet",
+        "moura",
+        "thomasse"
+      ]
+    },
+    {
+      "studies_paper": "2008.09888",
+      "studies_paper_title": "Dichromatic number and forced subdivisions",
+      "studies_paper_authors": [
+        "Lior Gishboliner",
+        "Raphael Steiner",
+        "Tibor Szabó"
+      ],
+      "studies_published": "2020-08-22",
+      "studies_abs_url": "https://arxiv.org/abs/2008.09888",
+      "paper_contribution": "The paper fully resolves the conjecture: Theorem 7 proves $\\mathrm{mader}_{\\vec{\\chi}}(F)=v(F)$ for every octus digraph $F$, and Corollary 8 specialises this to every orientation of a cactus graph, which in particular covers all orientations of cycles.",
+      "attributed_to": "Aboulker, Cohen, Havet, Lochet, Moura, and Thomassé",
+      "fuzzy_score": 75,
+      "attribution_overlap": [
+        "aboulker",
+        "cohen",
+        "havet",
+        "lochet",
+        "moura",
+        "thomasse"
+      ]
+    },
+    {
+      "studies_paper": "2008.09888",
+      "studies_paper_title": "Dichromatic number and forced subdivisions",
+      "studies_paper_authors": [
+        "Lior Gishboliner",
+        "Raphael Steiner",
+        "Tibor Szabó"
+      ],
+      "studies_published": "2020-08-22",
+      "studies_abs_url": "https://arxiv.org/abs/2008.09888",
+      "paper_contribution": "The paper fully resolves the conjecture: Theorem 7 proves $\\mathrm{mader}_{\\vec{\\chi}}(F)=v(F)$ for every octus digraph $F$, and Corollary 8 specialises this to every orientation of a cactus graph, which in particular covers all orientations of cycles.",
+      "attributed_to": "Aboulker, Cohen, Havet, Lochet, Moura, and Thomassé",
+      "fuzzy_score": 70,
+      "attribution_overlap": [
+        "aboulker",
+        "cohen",
+        "havet",
+        "lochet",
+        "moura",
+        "thomasse"
+      ]
+    },
+    {
+      "studies_paper": "2202.01006",
+      "studies_paper_title": "Chordal directed graphs are not $χ$-bounded",
+      "studies_paper_authors": [
+        "Pierre Aboulker",
+        "Nicolas Bousquet",
+        "Rémi de Verclos"
+      ],
+      "studies_published": "2022-02-02",
+      "studies_abs_url": "https://arxiv.org/abs/2202.01006",
+      "paper_contribution": "Paper recalls the conjecture as broader context without making direct progress on it.",
+      "attributed_to": "Aboulker, Charbit, and Naserasr",
+      "fuzzy_score": 69,
+      "attribution_overlap": [
+        "aboulker"
+      ]
+    },
+    {
+      "studies_paper": "2008.13224",
+      "studies_paper_title": "Oriented cycles in digraphs of large outdegree",
+      "studies_paper_authors": [
+        "Lior Gishboliner",
+        "Raphael Steiner",
+        "Tibor Szabó"
+      ],
+      "studies_published": "2020-08-30",
+      "studies_abs_url": "https://arxiv.org/abs/2008.13224",
+      "paper_contribution": "Improves the upper bound to $\\mathrm{mader}_{\\delta^+}(C(k_1,k_2)) \\leq k_1 + 3k_2 - 5$ for $k_1 \\geq k_2 \\geq 2$ (Theorem 8); shows the bound is sharp for $k_2=2$, giving $\\mathrm{mader}_{\\delta^+}(C(k,2)) = k+1$ for every $k \\geq 1$.",
+      "attributed_to": "Aboulker, Cohen, Havet, Lochet, Moura, and Thomassé",
+      "fuzzy_score": 68,
+      "attribution_overlap": [
+        "aboulker",
+        "cohen",
+        "havet",
+        "lochet",
+        "moura",
+        "thomasse"
+      ]
+    }
+  ],
+  "1609.06257": [
+    {
+      "studies_paper": "2110.08870",
+      "studies_paper_title": "Gallai's path decomposition in planar graphs",
+      "studies_paper_authors": [
+        "Alexandre Blanché",
+        "Marthe Bonamy",
+        "Nicolas Bonichon"
+      ],
+      "studies_published": "2022-06-21",
+      "studies_abs_url": "https://arxiv.org/abs/2110.08870",
+      "paper_contribution": "Answers the question positively for planar graphs (Theorem 1.2): every connected planar graph on $n$ vertices, except $K_3$ and $K_5^-$ (the only two planar odd semi-cliques), can be decomposed into $\\lfloor n/2 \\rfloor$ paths.",
+      "attributed_to": "Bonamy and Perrett",
+      "fuzzy_score": 85,
+      "attribution_overlap": [
+        "bonamy",
+        "perrett"
+      ]
+    }
+  ],
+  "1608.03040": [
+    {
+      "studies_paper": "1911.01954",
+      "studies_paper_title": "Majority Colorings of Sparse Digraphs",
+      "studies_paper_authors": [
+        "Michael Anastos",
+        "Ander Lamaison",
+        "Raphael Steiner",
+        "Tibor Szabó"
+      ],
+      "studies_published": "2019-11-05",
+      "studies_abs_url": "https://arxiv.org/abs/1911.01954",
+      "paper_contribution": "Answers the question negatively by proving that deciding whether a given digraph is majority 2-colorable is NP-complete (Theorem 9).",
+      "attributed_to": "Kreutzer, Oum, Seymour, van der Zypen and Wood",
+      "fuzzy_score": 98,
+      "attribution_overlap": [
+        "kreutzer",
+        "oum",
+        "seymour",
+        "wood",
+        "zypen"
+      ]
+    },
+    {
+      "studies_paper": "1911.01954",
+      "studies_paper_title": "Majority Colorings of Sparse Digraphs",
+      "studies_paper_authors": [
+        "Michael Anastos",
+        "Ander Lamaison",
+        "Raphael Steiner",
+        "Tibor Szabó"
+      ],
+      "studies_published": "2019-11-05",
+      "studies_abs_url": "https://arxiv.org/abs/1911.01954",
+      "paper_contribution": "Proves the conjecture for digraphs with chromatic number at most 6 or dichromatic number at most 3; proves the stronger majority 3-choosability for digraphs with $\\Delta^+(D) \\leq 4$ or $\\Delta(D) \\leq 7$, which covers 3-regular and 4-regular digraphs.",
+      "attributed_to": "Kreutzer, Oum, Seymour, van der Zypen and Wood",
+      "fuzzy_score": 83,
+      "attribution_overlap": [
+        "kreutzer",
+        "oum",
+        "seymour",
+        "wood",
+        "zypen"
+      ]
+    },
+    {
+      "studies_paper": "1911.01954",
+      "studies_paper_title": "Majority Colorings of Sparse Digraphs",
+      "studies_paper_authors": [
+        "Michael Anastos",
+        "Ander Lamaison",
+        "Raphael Steiner",
+        "Tibor Szabó"
+      ],
+      "studies_published": "2019-11-05",
+      "studies_abs_url": "https://arxiv.org/abs/1911.01954",
+      "paper_contribution": "Proves the conjecture for digraphs with chromatic number at most 6 or dichromatic number at most 3; proves the stronger majority 3-choosability for digraphs with $\\Delta^+(D) \\leq 4$ or $\\Delta(D) \\leq 7$, which covers 3-regular and 4-regular digraphs.",
+      "attributed_to": "Kreutzer, Oum, Seymour, van der Zypen and Wood",
+      "fuzzy_score": 79,
+      "attribution_overlap": [
+        "kreutzer",
+        "oum",
+        "seymour",
+        "wood",
+        "zypen"
+      ]
+    },
+    {
+      "studies_paper": "1911.01954",
+      "studies_paper_title": "Majority Colorings of Sparse Digraphs",
+      "studies_paper_authors": [
+        "Michael Anastos",
+        "Ander Lamaison",
+        "Raphael Steiner",
+        "Tibor Szabó"
+      ],
+      "studies_published": "2019-11-05",
+      "studies_abs_url": "https://arxiv.org/abs/1911.01954",
+      "paper_contribution": "Proves the conjecture for digraphs with chromatic number at most 6 or dichromatic number at most 3; proves the stronger majority 3-choosability for digraphs with $\\Delta^+(D) \\leq 4$ or $\\Delta(D) \\leq 7$, which covers 3-regular and 4-regular digraphs.",
+      "attributed_to": "Kreutzer, Oum, Seymour, van der Zypen and Wood",
+      "fuzzy_score": 79,
+      "attribution_overlap": [
+        "kreutzer",
+        "oum",
+        "seymour",
+        "wood",
+        "zypen"
+      ]
+    },
+    {
+      "studies_paper": "1911.01954",
+      "studies_paper_title": "Majority Colorings of Sparse Digraphs",
+      "studies_paper_authors": [
+        "Michael Anastos",
+        "Ander Lamaison",
+        "Raphael Steiner",
+        "Tibor Szabó"
+      ],
+      "studies_published": "2019-11-05",
+      "studies_abs_url": "https://arxiv.org/abs/1911.01954",
+      "paper_contribution": "Shows $K \\leq 3.9602$ (Theorem 6) via a probabilistic coloring with deterministic alteration; also shows that every digraph $D$ with $\\delta^+(D) \\geq C(1/\\varepsilon)^2 \\ln(2/\\varepsilon)$ has a fractional majority $(2+\\varepsilon)$-coloring (Theorem 7).",
+      "attributed_to": "Kreutzer, Oum, Seymour, van der Zypen and Wood",
+      "fuzzy_score": 75,
+      "attribution_overlap": [
+        "kreutzer",
+        "oum",
+        "seymour",
+        "wood",
+        "zypen"
+      ]
+    },
+    {
+      "studies_paper": "1911.01954",
+      "studies_paper_title": "Majority Colorings of Sparse Digraphs",
+      "studies_paper_authors": [
+        "Michael Anastos",
+        "Ander Lamaison",
+        "Raphael Steiner",
+        "Tibor Szabó"
+      ],
+      "studies_published": "2019-11-05",
+      "studies_abs_url": "https://arxiv.org/abs/1911.01954",
+      "paper_contribution": "Shows $K \\leq 3.9602$ (Theorem 6) via a probabilistic coloring with deterministic alteration; also shows that every digraph $D$ with $\\delta^+(D) \\geq C(1/\\varepsilon)^2 \\ln(2/\\varepsilon)$ has a fractional majority $(2+\\varepsilon)$-coloring (Theorem 7).",
+      "attributed_to": "Kreutzer, Oum, Seymour, van der Zypen and Wood",
+      "fuzzy_score": 73,
+      "attribution_overlap": [
+        "kreutzer",
+        "oum",
+        "seymour",
+        "wood",
+        "zypen"
+      ]
+    },
+    {
+      "studies_paper": "1911.01954",
+      "studies_paper_title": "Majority Colorings of Sparse Digraphs",
+      "studies_paper_authors": [
+        "Michael Anastos",
+        "Ander Lamaison",
+        "Raphael Steiner",
+        "Tibor Szabó"
+      ],
+      "studies_published": "2019-11-05",
+      "studies_abs_url": "https://arxiv.org/abs/1911.01954",
+      "paper_contribution": "Proves the conjecture for digraphs with chromatic number at most 6 or dichromatic number at most 3; proves the stronger majority 3-choosability for digraphs with $\\Delta^+(D) \\leq 4$ or $\\Delta(D) \\leq 7$, which covers 3-regular and 4-regular digraphs.",
+      "attributed_to": "Kreutzer, Oum, Seymour, van der Zypen and Wood",
+      "fuzzy_score": 73,
+      "attribution_overlap": [
+        "kreutzer",
+        "oum",
+        "seymour",
+        "wood",
+        "zypen"
+      ]
+    },
+    {
+      "studies_paper": "2310.04265",
+      "studies_paper_title": "Clique number of tournaments",
+      "studies_paper_authors": [
+        "Pierre Aboulker",
+        "Guillaume Aubian",
+        "Pierre Charbit",
+        "Raul Lopes"
+      ],
+      "studies_published": "2023-10-06",
+      "studies_abs_url": "https://arxiv.org/abs/2310.04265",
+      "paper_contribution": "The paper notes that proving $S_k$ is a rebel for every $k$ would imply Conjecture 5.3, thereby connecting this conjecture to the clique-number framework developed in the paper.",
+      "attributed_to": "Chudnovsky, Kim, Liu, Seymour and Thomassé",
+      "fuzzy_score": 69,
+      "attribution_overlap": [
+        "seymour"
+      ]
+    }
+  ],
+  "1507.08208": [
+    {
+      "studies_paper": "1803.03704",
+      "studies_paper_title": "Edge-decomposing graphs into coprime forests",
+      "studies_paper_authors": [
+        "Tereza Klimošová",
+        "Stéphan Thomassé"
+      ],
+      "studies_published": "2018-03-09",
+      "studies_abs_url": "https://arxiv.org/abs/1803.03704",
+      "paper_contribution": "The paper disproves Conjecture 3 for trees of maximum degree three by constructing a counterexample based on complete binary trees $T_k$ of arbitrary depth $k$, showing that no function $f$ can make the conjecture hold in that case.",
+      "attributed_to": "authors of [4]",
+      "fuzzy_score": 96,
+      "attribution_overlap": []
+    },
+    {
+      "studies_paper": "1907.11600",
+      "studies_paper_title": "Edge-partitioning 3-edge-connected graphs into paths",
+      "studies_paper_authors": [
+        "Tereza Klimošová",
+        "Stéphan Thomassé"
+      ],
+      "studies_published": "2019-07-26",
+      "studies_abs_url": "https://arxiv.org/abs/1907.11600",
+      "paper_contribution": "Proves the path case with optimal 3-edge-connectivity (replacing the 24-edge-connectivity of [3]), establishing that $f(2) = 3$ is achievable; notes the general conjecture is false for trees of maximum degree three.",
+      "attributed_to": "authors of [3]",
+      "fuzzy_score": 96,
+      "attribution_overlap": []
+    }
+  ],
+  "1605.07411": [
+    {
+      "studies_paper": "2212.02272",
+      "studies_paper_title": "(P6, triangle)-free digraphs have bounded dichromatic number",
+      "studies_paper_authors": [
+        "Pierre Aboulker",
+        "Guillaume Aubian",
+        "Pierre Charbit",
+        "Stéphan Thomassé"
+      ],
+      "studies_published": "2023-01-18",
+      "studies_abs_url": "https://arxiv.org/abs/2212.02272",
+      "paper_contribution": "Proves the conjecture for the special case of $\\overrightarrow{P}_6$-free digraphs with $\\omega(D) \\leq 2$ (triangle-free), establishing $\\overrightarrow{\\chi}(D) \\leq 382$ (Theorem 1.3).",
+      "attributed_to": "Aboulker, Charbit, and Naserasr",
+      "fuzzy_score": 87,
+      "attribution_overlap": [
+        "aboulker",
+        "charbit"
+      ]
+    },
+    {
+      "studies_paper": "2202.01006",
+      "studies_paper_title": "Chordal directed graphs are not $χ$-bounded",
+      "studies_paper_authors": [
+        "Pierre Aboulker",
+        "Nicolas Bousquet",
+        "Rémi de Verclos"
+      ],
+      "studies_published": "2022-02-02",
+      "studies_abs_url": "https://arxiv.org/abs/2202.01006",
+      "paper_contribution": "Paper recalls the conjecture as broader context without making direct progress on it.",
+      "attributed_to": "Aboulker, Charbit, and Naserasr",
+      "fuzzy_score": 75,
+      "attribution_overlap": [
+        "aboulker",
+        "charbit"
+      ]
+    },
+    {
+      "studies_paper": "2103.07886",
+      "studies_paper_title": "Decomposing and colouring some locally semicomplete digraphs",
+      "studies_paper_authors": [
+        "Pierre Aboulker",
+        "Guillaume Aubian",
+        "Pierre Charbit"
+      ],
+      "studies_published": "2022-12-06",
+      "studies_abs_url": "https://arxiv.org/abs/2103.07886",
+      "paper_contribution": "Proves the first open special case $F = S_2^+$, $H = C_3$: every locally out-transitive oriented graph has dichromatic number at most 2 (Theorem 3.2), and in fact proves the stronger Theorem 3.3 used for induction.",
+      "attributed_to": "Aboulker, Charbit, and Naserasr",
+      "fuzzy_score": 70,
+      "attribution_overlap": [
+        "aboulker",
+        "charbit"
+      ]
+    }
+  ],
+  "1602.05184": [
+    {
+      "studies_paper": "2402.05753",
+      "studies_paper_title": "Cops and Robber on Hyperbolic Manifolds",
+      "studies_paper_authors": [
+        "Vesna Iršič",
+        "Bojan Mohar",
+        "Alexandra Wesolek"
+      ],
+      "studies_published": "2024-02-08",
+      "studies_abs_url": "https://arxiv.org/abs/2402.05753",
+      "paper_contribution": "No direct contribution to Meyniel's Conjecture; cited as motivation — if Conjecture 1.3 (which Conjecture 1.5 implies) were established, it would yield the Weak Meyniel's Conjecture.",
+      "attributed_to": "Meyniel",
+      "fuzzy_score": 80,
+      "attribution_overlap": []
+    }
+  ]
+}

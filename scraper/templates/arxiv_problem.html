@@ -1,0 +1,122 @@
+{% extends "base.html" %}
+{% block title %}{{ p.title }} — Graph-theory open problems (arXiv){% endblock %}
+
+{% block main %}
+<article class="problem arxiv">
+<header>
+  <h1>{{ p.title }}</h1>
+  <div class="meta">
+    <span class="badge source source-arxiv">arXiv</span>
+    <span class="kind">{{ p.kind }}</span>
+    {% if p.confidence %}<span class="confidence confidence-{{ p.confidence }}">{{ p.confidence }} confidence</span>{% endif %}
+    {% if p.published %}<span class="posted">— first stated {{ p.published }}</span>{% endif %}
+  </div>
+  <div class="byline">
+    <strong>Author{{ 's' if p.authors|length > 1 else '' }}:</strong>
+    {% for a in p.authors -%}
+      {% if a.slug %}<a href="{{ root }}author/{{ a.slug }}/">{{ a.label }}</a>{% else %}{{ a.label }}{% endif %}{% if not loop.last %}, {% endif %}
+    {%- endfor %}
+    {% if p.attributed_to and p.attributed_to != "paper authors" %}
+      — attributed to <strong>{{ p.attributed_to }}</strong>{% if p.attributed_year %} ({{ p.attributed_year }}){% endif %}
+    {% endif %}
+  </div>
+</header>
+
+{% if opg_match %}
+<aside class="intersection">
+  This appears to relate to an OPG problem:
+  <a href="{{ root }}op/{{ opg_match.slug }}/">{{ opg_match.title }}</a>
+  (fuzzy-match score {{ opg_match.score }}{% if not opg_match.confirmed %}, not yet manually confirmed{% endif %}).
+</aside>
+{% endif %}
+
+{% if p._review %}
+<section class="lit-review">
+  <h2>
+    Status
+    <span class="status-badge status-{{ p._review.status }}">{{ p._review.status }}</span>
+    <span class="confidence confidence-{{ p._review.confidence }}">{{ p._review.confidence }} confidence</span>
+  </h2>
+  <p class="summary">{{ p._review.summary }}</p>
+
+  {% if p._review.since_posted %}
+  <h3>Cited literature ({{ p._review.since_posted|length }})</h3>
+  <ul class="since-posted">
+  {% for ref in p._review.since_posted %}
+    <li>
+      <div class="ref-line">
+        {% if ref.kind %}<span class="ref-kind kind-{{ ref.kind }}">{{ ref.kind }}</span>{% endif %}
+        <strong class="ref-title">{% if ref.url %}<a href="{{ ref.url }}">{{ ref.title }}</a>{% else %}{{ ref.title }}{% endif %}</strong>
+        <span class="ref-year">({{ ref.year }})</span>
+      </div>
+      <div class="ref-meta">
+        {{ ref.authors }}{% if ref.venue %} · <em>{{ ref.venue }}</em>{% endif %}
+        {%- if ref.arxiv_id %} · <a href="https://arxiv.org/abs/{{ ref.arxiv_id }}">arXiv:{{ ref.arxiv_id }}</a>{% endif -%}
+        {%- if ref.doi %} · <a href="https://doi.org/{{ ref.doi }}">doi:{{ ref.doi }}</a>{% endif -%}
+      </div>
+      {% if ref.claim %}<p class="ref-claim">{{ ref.claim }}</p>{% endif %}
+    </li>
+  {% endfor %}
+  </ul>
+  {% endif %}
+
+  {% if p._review.notes %}
+  <p class="notes"><strong>Reviewer notes.</strong> {{ p._review.notes }}</p>
+  {% endif %}
+
+  <p class="review-meta">
+    Auto-reviewed {{ p._review.reviewed_at }} with <code>{{ p._review.model }}</code>
+    {%- if p._review.search_enabled %} (web search enabled){% endif -%}
+    .
+  </p>
+</section>
+{% endif %}
+
+<section class="statements">
+<div class="envtheorem envtheorem-{{ p.kind|lower|replace(' ','-') }}">
+<strong>{{ p.kind }}.</strong> {{ p.statement_text }}
+</div>
+</section>
+
+{% if p.context_text %}
+<section class="discussion">
+<h2>Context</h2>
+<p>{{ p.context_text }}</p>
+</section>
+{% endif %}
+
+{% if p.also_stated_in %}
+<section class="also-stated">
+<h2>Also stated in</h2>
+<ul>
+{% for it in p.also_stated_in %}
+  <li>
+    {% if it.abs_url %}<a href="{{ it.abs_url }}">{{ it.title or it.arxiv_id }}</a>{% else %}{{ it.title or it.arxiv_id }}{% endif %}
+    {% if it.published %} ({{ it.published }}){% endif %}
+  </li>
+{% endfor %}
+</ul>
+</section>
+{% endif %}
+
+{% if p.notes %}
+<section class="notes">
+<p><strong>Notes.</strong> {{ p.notes }}</p>
+</section>
+{% endif %}
+
+<section class="source-paper">
+<h2>Source paper</h2>
+<p>
+  <strong>{{ p.paper_title }}</strong><br>
+  {{ p.paper_authors | join(', ') }}{% if p.published %} · {{ p.published }}{% endif %}<br>
+  <a href="{{ p.abs_url }}">{{ p.abs_url }}</a>
+  {% if p.source == "pdf" %} <span class="badge pdf-source" title="extracted from PDF — math may be approximate">PDF source</span>{% endif %}
+</p>
+</section>
+
+<footer class="canonical">
+<a href="{{ p.abs_url }}">View on arXiv</a>
+</footer>
+</article>
+{% endblock %}

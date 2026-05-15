@@ -1,0 +1,90 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Thomas Conjecture (additive approximation of chromatic number)",
+    "statement_text": "There exists $\\alpha \\geq 0$ with the following property: for every proper minor-closed class $\\mathcal{G}$, there exists a polynomial-time algorithm taking as an input a graph $G \\in \\mathcal{G}$ and returning an integer $c$ such that $\\chi(G) \\leq c \\leq \\chi(G) + \\alpha$.",
+    "context_text": "Robin Thomas conjectured that the chromatic number of graphs in any proper minor-closed class can be approximated in polynomial time up to a constant additive error independent of the class (this is the affirmative answer to Question 2 of the paper). The conjecture was motivated by the analogous result for graphs embedded in a fixed surface, where additive error 2 suffices.",
+    "attributed_to": "Thomas",
+    "attributed_year": null,
+    "paper_contribution": "Disproves the conjecture: unless P = NP, for every integer $k_0 \\geq 1$ and every $1 \\leq \\beta \\leq 4/3$, there is no polynomial-time algorithm to color a $K_{4k_0+1}$-minor-free graph $G$ using fewer than $\\beta\\chi(G) + (4 - 3\\beta)k_0$ colors (Theorem 3 and Corollary 4).",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "PDF source; statement reconstructed from Question 2 and the prose 'Thomas [15] conjectured that such a constant α exists'. No year inferrable from the extracted text.",
+    "arxiv_id": "1707.03888",
+    "paper_title": "Additive non-approximability of chromatic number in proper minor-closed classes",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Ken-ichi Kawarabayashi"
+    ],
+    "published": "2017-07-12",
+    "abs_url": "https://arxiv.org/abs/1707.03888",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Kawarabayashi et al. Conjecture (additive approximation for list coloring)",
+    "statement_text": "There exists $\\alpha \\geq 0$ with the following property: for every proper minor-closed class $\\mathcal{G}$, there exists a polynomial-time algorithm taking as an input a graph $G \\in \\mathcal{G}$ and returning an integer $c$ such that $\\chi_{\\ell}(G) \\leq c \\leq \\chi_{\\ell}(G) + \\alpha$.",
+    "context_text": "Kawarabayashi et al. conjectured that the additive approximability of chromatic number in proper minor-closed classes by a constant independent of the class holds even for list coloring. This strengthens the Thomas conjecture to the list-coloring setting.",
+    "attributed_to": "Kawarabayashi et al.",
+    "attributed_year": null,
+    "paper_contribution": "Disproves the conjecture as a consequence of Theorem 3 and Corollary 4; the non-approximability construction yields graphs for which no constant additive approximation of the list chromatic number is possible in polynomial time unless P = NP.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "PDF source; statement inferred from prose 'Kawarabayashi et al. [10] conjectured that this is the case even for list coloring'. The precise list-coloring formulation is reconstructed from context.",
+    "arxiv_id": "1707.03888",
+    "paper_title": "Additive non-approximability of chromatic number in proper minor-closed classes",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Ken-ichi Kawarabayashi"
+    ],
+    "published": "2017-07-12",
+    "abs_url": "https://arxiv.org/abs/1707.03888",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Open question: additive approximation for triangle-free graphs",
+    "statement_text": "Does there exist $\\alpha \\geq 0$ such that for every proper minor-closed class $\\mathcal{G}$, the chromatic number of triangle-free graphs in $\\mathcal{G}$ can be approximated in polynomial time within additive error $\\alpha$?",
+    "context_text": "Forbidding triangles makes coloring more tractable for embedded graphs (all planar graphs are 3-colorable and 3-colorability in any fixed surface is linear-time decidable). The authors show forbidding cliques of size 4 is insufficient (Theorem 6), but explicitly state the triangle-free case remains open.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "PDF source; stated in prose as 'this question is still open'.",
+    "arxiv_id": "1707.03888",
+    "paper_title": "Additive non-approximability of chromatic number in proper minor-closed classes",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Ken-ichi Kawarabayashi"
+    ],
+    "published": "2017-07-12",
+    "abs_url": "https://arxiv.org/abs/1707.03888",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Open question: better additive approximation for $K_{4k_0+1}$-minor-free graphs",
+    "statement_text": "Is there a polynomial-time additive approximation algorithm for the chromatic number of $K_{4k_0+1}$-minor-free graphs with additive error strictly between $k_0/4$ (the lower bound of Corollary 4) and $k_0 - 2$ (the upper bound of Kawarabayashi et al.)?",
+    "context_text": "Kawarabayashi et al. showed the chromatic number of $K_k$-minor-free graphs can be approximated additively up to $k-2$. Corollary 4 of this paper establishes that an additive error of $k_0 - 1$ is NP-hard to achieve, leaving a gap of roughly a factor of 4 between the best known algorithm and the hardness bound.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "PDF source; stated in prose as 'We leave open the question whether a better additive approximation (of course above the bound ≈ k/4 given by Corollary 4) is possible'.",
+    "arxiv_id": "1707.03888",
+    "paper_title": "Additive non-approximability of chromatic number in proper minor-closed classes",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Ken-ichi Kawarabayashi"
+    ],
+    "published": "2017-07-12",
+    "abs_url": "https://arxiv.org/abs/1707.03888",
+    "source": "pdf"
+  }
+]

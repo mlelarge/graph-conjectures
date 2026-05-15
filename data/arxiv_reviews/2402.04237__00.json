@@ -1,0 +1,21 @@
+{
+  "review_id": "2402.04237__00",
+  "safe_id": "2402.04237",
+  "arxiv_id": "2402.04237",
+  "conjecture_title": "Problem 11",
+  "paper_title": "A note on graphs of $k$-colourings",
+  "published": "2024-02-29",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Problem 11 asks for which graphs $H$ there exists $H'$ such that $\\pi_G^{(H')}$ determines $\\pi_G^{(H)}$ for every graph $G$; it remains open. The motivating special case — Conjecture 5.2 of Asgarli, Krehbiel, Levinson, and Russell (arXiv:2401.12883), that $\\pi_G^{(K_2)}$ determines the chromatic polynomial $\\pi_G^{(K_1)}$ — is itself still unresolved as of the source paper. No post-2024 follow-up resolving the general problem was found in the indexed literature.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "arXiv 2402.04237 \"graphs of k-colourings\" Hogan Scott Tamitegama Tan",
+    "Asgarli \"colouring graph\" chromatic polynomial \"edge-count polynomial\" determines"
+  ],
+  "notes": "The Asgarli et al. paper arXiv:2401.12883 (published in Graphs and Combinatorics, 2025) is the source of Conjecture 5.2 that motivates Problem 11; it predates 2402.04237 and so is not a since_posted entry. Remark 10 of the source paper shows that for any connected H, a finite family (not a single H') suffices to determine pi_G^(H), making Problem 11's single-graph H' requirement the non-trivial constraint. No paper resolving or significantly advancing Problem 11 was found within the 5-call cap."
+}

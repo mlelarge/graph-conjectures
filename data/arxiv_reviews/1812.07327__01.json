@@ -1,0 +1,43 @@
+{
+  "review_id": "1812.07327__01",
+  "safe_id": "1812.07327",
+  "arxiv_id": "1812.07327",
+  "conjecture_title": "Problem 5",
+  "paper_title": "1-subdivisions, fractional chromatic number and Hall ratio",
+  "published": "2020-01-30",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "solved",
+  "confidence": "high",
+  "summary": "Problem 5 was affirmatively solved by Raphael Steiner (arXiv:2411.16465, published in Combinatorica 2025). Theorem 1.5 of that paper constructs, for every fixed δ > 0 and sufficiently large n, an n-vertex graph G with χ_f(G) ≥ log log n / (50 log log log n), ρ(G) ≤ 4 + δ, and α_{deg_H}(H) ≥ |E(H)| / (4 + δ) for every subgraph H ⊆ G, directly answering the problem in the affirmative. The companion arXiv:2007.11853 (Dvořák, on weighted sublinear separators) does not bear on Problem 5.",
+  "since_posted": [
+    {
+      "title": "Fractional chromatic number vs. Hall ratio",
+      "authors": "Raphael Steiner",
+      "year": 2024,
+      "venue": "Combinatorica",
+      "url": "https://arxiv.org/abs/2411.16465",
+      "arxiv_id": "2411.16465",
+      "doi": "10.1007/s00493-025-00164-0",
+      "kind": "proof",
+      "claim": "Theorem 1.5 constructs graphs with ρ(G) ≤ 4+δ, arbitrarily large fractional chromatic number, and α_{deg_H}(H) ≥ |E(H)|/(4+δ) for every H ⊆ G, affirmatively solving Problem 5 (labeled Problem 1.4 in this paper)."
+    }
+  ],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2411.16465",
+      "verified": true,
+      "note": "Confirmed: Theorem 1.5 directly and affirmatively solves Problem 5 from arXiv:1812.07327 (called Problem 1.4 in Steiner's paper); paper published in Combinatorica 2025, DOI 10.1007/s00493-025-00164-0."
+    },
+    {
+      "arxiv_id": "2007.11853",
+      "verified": true,
+      "note": "Paper by Dvořák on weighted sublinear separators; abstract and content do not address Hall ratio, fractional chromatic number, or degree-weighted independence — appears to be a false positive from the internal reference matching system."
+    }
+  ],
+  "search_queries": [
+    "fractional chromatic number Hall ratio degree-weighted independence 1812.07327 Dvořák Ossona de Mendez Wu"
+  ],
+  "notes": "Problem 5 is fully resolved. The two duplicate entries for arXiv:2007.11853 in the internal references (fuzz scores 71 and 67) are false positives; that paper concerns weighted balanced separators and shares only authorship (Dvořák) with the source paper."
+}

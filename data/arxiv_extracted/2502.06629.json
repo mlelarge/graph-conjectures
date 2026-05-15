@@ -1,0 +1,28 @@
+[
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Question 1 (Benjamini, Kalifa and Tzalik)",
+    "statement_text": "Which (if either) of the two bounds $\\Omega\\!\\left(\\frac{2^{d}}{d}\\right)$ and $O\\!\\left(\\frac{2^{d}}{\\sqrt{d}}\\right)$ on the minor-universality threshold of $Q_{d}$ is tight?",
+    "context_text": "Benjamini, Kalifa and Tzalik (Theorem A in [5]) proved that $Q_{d}$ is $\\Omega(2^{d}/d)$-minor-universal, but is not $(K\\cdot 2^{d}/\\sqrt{d})$-minor-universal for an absolute constant $K>0$. The upper and lower bounds differ by a factor of $\\sqrt{d}$, and they asked in [5, Question 1] which bound, if either, is tight.",
+    "attributed_to": "Benjamini, Kalifa and Tzalik",
+    "attributed_year": 2025,
+    "paper_contribution": "Resolves the question by showing that $Q_{d}$ does not contain 3-uniform expander graphs with $C\\cdot 2^{d}/d$ edges as minors, establishing that the lower bound $\\Omega(2^{d}/d)$ is tight up to a constant factor.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Reference [5] is arXiv:2501.13730 (2025); the exact wording of Question 1 is paraphrased from the introduction since the full text of [5] is not provided.",
+    "arxiv_id": "2502.06629",
+    "paper_title": "Tight Bounds for Hypercube Minor-Universality",
+    "paper_authors": [
+      "Emma Hogan",
+      "Lukas Michel",
+      "Alex Scott",
+      "Youri Tamitegama",
+      "Jane Tan",
+      "Dmitry Tsarev"
+    ],
+    "published": "2025-02-10",
+    "abs_url": "https://arxiv.org/abs/2502.06629",
+    "source": "html"
+  }
+]

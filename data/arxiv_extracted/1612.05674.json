@@ -1,0 +1,25 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Ossona de Mendez–Oum–Wood Conjecture",
+    "statement_text": "$f(H) = \\mathrm{td}(H) - 1$.",
+    "context_text": "Ossona de Mendez, Oum, and Wood [19] proved that $f(H) > \\mathrm{td}(H) - 1$ for every connected graph $H$, where $f(H)$ is the minimum number of colours $c$ such that every $H$-minor-free graph has a $c$-colouring with every monochromatic component having bounded maximum degree, and $\\mathrm{td}(H)$ denotes the tree-depth of $H$. They conjectured that this lower bound is tight. The present paper proves $f(k) \\leq \\lfloor 3\\log_2 k\\rfloor$, which is within a factor of 3 of the conjecture for excluded cycles and paths.",
+    "attributed_to": "Ossona de Mendez, Oum, and Wood",
+    "attributed_year": 2016,
+    "paper_contribution": "Proves that $f(C_{k+1}) \\leq \\lfloor 3\\log_2 k\\rfloor$, which is within a constant factor of 3 of the conjectured value $\\mathrm{td}(C_{k+1})-1 = \\lceil\\log_2(k+1)\\rceil$, improving the previous best upper bound from linear in $k$ to $O(\\log k)$; the same improvement is obtained for excluded paths $P_{k+1}$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1612.05674",
+    "paper_title": "Colourings with Bounded Monochromatic Components in Graphs of Given Circumference",
+    "paper_authors": [
+      "Bojan Mohar",
+      "Bruce Reed",
+      "David R. Wood"
+    ],
+    "published": "2017-01-17",
+    "abs_url": "https://arxiv.org/abs/1612.05674",
+    "source": "pdf"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.3 (Jovović, Koledin and Stanić)",
+    "statement_text": "In $T(n)$, the spectral gap $\\lambda_1 - \\lambda_2$ is minimized by a double comet $DC(k, k, \\ell)$ such that $2k + \\ell = n$.",
+    "context_text": "The authors observe that extremal trees for both $\\lambda_1$ and $\\lambda_2$ individually are always double comets, and note that $\\lambda_1 - \\lambda_2$ is maximized by a star. This conjecture posits that double comets also realize the minimum spectral gap among all $n$-vertex trees, motivating the paper's broader investigation of convex combinations of $\\lambda_1$ and $\\lambda_2$.",
+    "attributed_to": "Jovović, Koledin and Stanić",
+    "attributed_year": null,
+    "paper_contribution": "The paper does not directly address this conjecture; it is cited as background motivation for studying the convex combination $\\alpha\\lambda_1 + (1-\\alpha)\\lambda_2$ over trees, a related but distinct optimization problem.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2601.10036",
+    "paper_title": "Convex combination of first and second eigenvalues of trees",
+    "paper_authors": [
+      "Hitesh Kumar",
+      "Bojan Mohar",
+      "Shivaramakrishna Pragada",
+      "Hanmeng Zhan"
+    ],
+    "published": "2026-01-15",
+    "abs_url": "https://arxiv.org/abs/2601.10036",
+    "source": "pdf"
+  }
+]

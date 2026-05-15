@@ -1,0 +1,80 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.1 (Dallard, Milanič and Štorgel)",
+    "statement_text": "A class $\\mathcal{C}$ of graphs is $(\\operatorname{tw},\\omega)$-bounded if and only if it has bounded $\\operatorname{tree-\\alpha}$.",
+    "context_text": "A graph class $\\mathcal{G}$ is called $(\\operatorname{tw},\\omega)$-bounded if there exists a function $f:\\mathbb{N}\\to\\mathbb{N}$ such that for every graph $G\\in\\mathcal{G}$ and every induced subgraph $H$ of $G$, $\\operatorname{tw}(H)\\leq f(\\omega(H))$. By Ramsey's theorem, graph classes of bounded tree independence number are $(\\operatorname{tw},\\omega)$-bounded, but the converse is open. The conjecture would settle whether the $(\\operatorname{tw},\\omega)$-bounded property has algorithmic implications for the MWIS problem.",
+    "attributed_to": "Dallard, Milanič and Štorgel",
+    "attributed_year": 2022,
+    "paper_contribution": "Proves that the class $\\mathcal{C}$ of (even hole, diamond, pyramid)-free graphs has bounded $\\operatorname{tree-\\alpha}$, corroborating the conjecture for this class (which was already known to be $(\\operatorname{tw},\\omega)$-bounded).",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2305.16258",
+    "paper_title": "Tree independence number I. (Even hole, diamond, pyramid)-free graphs",
+    "paper_authors": [
+      "Tara Abrishami",
+      "Bogdan Alecu",
+      "Maria Chudnovsky",
+      "Sepehr Hajebi",
+      "Sophie Spirkl",
+      "Kristina Vušković"
+    ],
+    "published": "2024-02-22",
+    "abs_url": "https://arxiv.org/abs/2305.16258",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.6",
+    "statement_text": "The class of (even hole, diamond)-free graph has bounded tree-$\\alpha$.",
+    "context_text": "The paper's main result handles (even hole, diamond, pyramid)-free graphs; extending to (even hole, diamond)-free graphs (dropping the pyramid-free condition) is posed as the next natural step. No polynomial-time algorithm for MWIS is yet known for the larger (even hole, diamond)-free class, and the authors suggest that the methods developed here might be extendable to settle this conjecture.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2305.16258",
+    "paper_title": "Tree independence number I. (Even hole, diamond, pyramid)-free graphs",
+    "paper_authors": [
+      "Tara Abrishami",
+      "Bogdan Alecu",
+      "Maria Chudnovsky",
+      "Sepehr Hajebi",
+      "Sophie Spirkl",
+      "Kristina Vušković"
+    ],
+    "published": "2024-02-22",
+    "abs_url": "https://arxiv.org/abs/2305.16258",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.7",
+    "statement_text": "The class of (even hole, $K_{t}$)-free graph has logarithmic treewidth.",
+    "context_text": "It is known that (even hole, $K_3$)-free graphs have treewidth at most 5, while (even hole, $K_4$)-free graphs do not have bounded treewidth due to layered-wheel constructions. Removing diamonds from the (even hole, $K_4$)-free class restores bounded treewidth; this conjecture posits that for general $t$ the (even hole, $K_t$)-free class has logarithmic treewidth, in line with an upcoming preprint of some of the same authors.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2305.16258",
+    "paper_title": "Tree independence number I. (Even hole, diamond, pyramid)-free graphs",
+    "paper_authors": [
+      "Tara Abrishami",
+      "Bogdan Alecu",
+      "Maria Chudnovsky",
+      "Sepehr Hajebi",
+      "Sophie Spirkl",
+      "Kristina Vušković"
+    ],
+    "published": "2024-02-22",
+    "abs_url": "https://arxiv.org/abs/2305.16258",
+    "source": "html"
+  }
+]

@@ -1,0 +1,77 @@
+[
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Question 1",
+    "statement_text": "Is it true that for every graph class $\\mathcal{C}$ with polynomial expansion, there exists a polynomial function $f$ such that for every integer $r\\geqslant 0$ and every graph $G\\in\\mathcal{C}$, $$\\mathrm{scol}_{r}(G)\\leqslant f(r)?$$",
+    "context_text": "Esperet and Raymond asked whether polynomial expansion of a graph class implies polynomial strong $r$-coloring numbers. A positive answer would yield a new characterization of polynomial expansion in terms of polynomial strong coloring numbers. The present paper introduces four new bounded-radius parameters (depth-$r$ bramble number, tangle number, linkedness, well-linkedness) hoping they provide tools toward a positive answer.",
+    "attributed_to": "Esperet and Raymond",
+    "attributed_year": 2018,
+    "paper_contribution": "Introduces depth-$r$ bramble number, tangle number, linkedness, and well-linkedness, proves they are pairwise polynomially related and all polynomially bounded in $r$ for classes with polynomial expansion, providing potential new tools toward resolving the question positively.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2502.04177",
+    "paper_title": "Shallow brambles",
+    "paper_authors": [
+      "Nicolas Bousquet",
+      "Wouter Cames van Batenburg",
+      "Louis Esperet",
+      "Gwenaël Joret",
+      "Piotr Micek"
+    ],
+    "published": "2025-09-15",
+    "abs_url": "https://arxiv.org/abs/2502.04177",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Question 2",
+    "statement_text": "Is it true that for every graph class $\\mathcal{C}$ with polynomial expansion, there exists a polynomial function $f$ such that for every integer $r\\geqslant 0$ and every graph $G\\in\\mathcal{C}$, $$\\mathrm{scol}_{r}(G)\\leqslant f(r,\\mathrm{bn}_{r}(G))?$$",
+    "context_text": "A positive answer to this question would be sufficient to answer Question 1 positively. The polynomial expansion assumption on $\\mathcal{C}$ is essential: without it, $\\mathrm{scol}_r(G)$ cannot be bounded by any function of $r$ and the depth-$r$ bramble number $\\mathrm{bn}_r(G)$, even if the bramble number is replaced by $\\mathrm{bn}_{g(r)}(G)$ for an arbitrary function $g$.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2502.04177",
+    "paper_title": "Shallow brambles",
+    "paper_authors": [
+      "Nicolas Bousquet",
+      "Wouter Cames van Batenburg",
+      "Louis Esperet",
+      "Gwenaël Joret",
+      "Piotr Micek"
+    ],
+    "published": "2025-09-15",
+    "abs_url": "https://arxiv.org/abs/2502.04177",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Question 13",
+    "statement_text": "Is it true that for every graph class $\\mathcal{C}$ with polynomial expansion, there exists a polynomial function $f$ such that for every integer $r\\geqslant 0$ and every graph $G\\in\\mathcal{C}$, $$\\mathrm{scol}_{r}(G)\\leqslant f(r,\\mathrm{grid}_{\\mathrm{poly}(r)}(G))?$$",
+    "context_text": "For $r=\\infty$, grid minors are intimately related to $\\mathrm{scol}_r$ via treewidth, but for finite $r$ this connection breaks down: for every $r,k\\geqslant 1$ and every non-forest $H$, there exist graphs without $H$ as a depth-$k$ minor but with arbitrarily large strong $r$-coloring number. The question asks whether the connection survives when restricted to classes with polynomial expansion.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2502.04177",
+    "paper_title": "Shallow brambles",
+    "paper_authors": [
+      "Nicolas Bousquet",
+      "Wouter Cames van Batenburg",
+      "Louis Esperet",
+      "Gwenaël Joret",
+      "Piotr Micek"
+    ],
+    "published": "2025-09-15",
+    "abs_url": "https://arxiv.org/abs/2502.04177",
+    "source": "html"
+  }
+]

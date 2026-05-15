@@ -1,0 +1,22 @@
+{
+  "review_id": "2502.05289__00",
+  "safe_id": "2502.05289",
+  "arxiv_id": "2502.05289",
+  "conjecture_title": "Conjecture 1.5",
+  "paper_title": "Induced Disjoint Paths Without an Induced Minor",
+  "published": "2025-02-07",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 1.5 from arXiv:2502.05289 proposes that for any subcubic graph $H$, the $H$-ISC problem (detecting $H$ as an induced subdivision) is in $\\mathsf{P}$ if and only if $H$ is planar. The source paper provides the key hardness evidence: it exhibits a specific non-planar subcubic graph $H$ for which $H$-ISC is NP-complete (Theorem 3, also appearing as LIPIcs.ICALP.2025.4). No follow-up paper resolving or substantially advancing the full conjecture was found in the literature indexed as of May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "subcubic graph induced subdivision containment planar NP-complete polynomial Aboulker Bonnet",
+    "\"induced subdivision\" subcubic planar \"if and only if\" complexity 2025 2026 Aboulker Trotignon Picavet",
+    "arxiv \"H-ISC\" OR \"induced subdivision containment\" subcubic planar conjecture 2025 2026"
+  ],
+  "notes": "The conjecture is supported by the paper's own main result (NP-completeness for a specific non-planar subcubic H) and known polynomial algorithms for planar cases (net, K_4). The ICALP 2025 published version (LIPIcs vol. 334) numbers this as Conjecture 5.1 rather than 1.5. No follow-up resolving the full if-and-only-if characterization was found across three targeted searches."
+}

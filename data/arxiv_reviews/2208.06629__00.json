@@ -1,0 +1,33 @@
+{
+  "review_id": "2208.06629__00",
+  "safe_id": "2208.06629",
+  "arxiv_id": "2208.06629",
+  "conjecture_title": "Problem 3",
+  "paper_title": "Perfect shuffling with fewer lazy transpositions",
+  "published": "2022-08-13",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "medium",
+  "summary": "Problem 3 asks whether U_t(n) = tn - C(t+1,2) holds for all t, where the upper bound is already established by sweeping/divide-and-conquer constructions and the t=n case is answered negatively by Theorem 2 of the source paper. A follow-up by Janzer, Johnson, and Leader (arXiv:2210.13286, October 2022) proves that U_2(n) = 2n-3, confirming the formula for t=2 and settling the corresponding conjecture of Groenland et al. Whether the formula holds for intermediate values of t remains open.",
+  "since_posted": [
+    {
+      "title": "Partial Shuffles by Lazy Swaps",
+      "authors": "Barnabas Janzer, Robert Johnson, Imre Leader",
+      "year": 2022,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2210.13286",
+      "arxiv_id": "2210.13286",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves U_2(n) = 2n-3, confirming the t=2 case of Problem 3 (since 2n-3 = 2n - C(3,2)) and explicitly settling a conjecture of Groenland, Johnston, Radcliffe, and Scott."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Groenland Johnston Radcliffe Scott \"lazy transpositions\" shuffling arXiv 2208.06629",
+    "\"lazy transpositions\" shuffling \"distinguishable counters\" positions conjecture 2022 2023 2024"
+  ],
+  "notes": "The formula U_t(n) = tn - C(t+1,2) is confirmed for t=2 by Janzer et al. (arXiv:2210.13286); the case t=n is answered negatively in the source paper itself (Theorem 2). The general problem for intermediate t remains open. Confidence is medium because the Janzer et al. abstract was verified but the full paper was not read to confirm exact scope."
+}

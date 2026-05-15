@@ -1,0 +1,44 @@
+{
+  "review_id": "1812.07327__00",
+  "safe_id": "1812.07327",
+  "arxiv_id": "1812.07327",
+  "conjecture_title": "Problem 4",
+  "paper_title": "1-subdivisions, fractional chromatic number and Hall ratio",
+  "published": "2020-01-30",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Problem 4 asks for the exact growth rate of the smallest function $g$ such that $\\chi_f(G) \\leq \\rho(G)\\,g(|V(G)|)$ for all graphs $G$; at the time of posting the bounds were $\\Omega(\\log\\log n) \\leq g(n) \\leq O(\\log n)$. Steiner (2024, arXiv:2411.16465, published in Combinatorica) substantially narrows this gap by proving a lower bound of $\\Omega(\\log n/(\\log\\log n)^3)$, establishing $g(n) = (\\log n)^{1-o(1)}$ and showing the growth rate is essentially logarithmic. The exact smallest $g$ (precise constant factors) remains undetermined, so the problem is partially resolved.",
+  "since_posted": [
+    {
+      "title": "Fractional chromatic number vs. Hall ratio",
+      "authors": "Raphael Steiner",
+      "year": 2024,
+      "venue": "Combinatorica",
+      "url": "https://arxiv.org/abs/2411.16465",
+      "arxiv_id": "2411.16465",
+      "doi": "10.1007/s00493-025-00164-0",
+      "kind": "partial",
+      "claim": "Proves $g(n) = (\\log n)^{1-o(1)}$ by establishing a lower bound of $\\Omega(\\log n/(\\log\\log n)^3)$, reducing the gap from $[\\Omega(\\log\\log n),\\, O(\\log n)]$ to essentially $\\Theta(\\log n)$ up to lower-order factors, and additionally constructs graphs with bounded Hall ratio, arbitrarily large fractional chromatic number, and good degree-weighted independence number in every subgraph (Theorem 1.5)."
+    }
+  ],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2411.16465",
+      "verified": true,
+      "note": "Confirmed: Steiner 2024 addresses Problem 4 (Problem 1.2 in that paper), proving g(n)=(log n)^{1-o(1)} via a lower bound of Omega(log n/(log log n)^3); published in Combinatorica (DOI 10.1007/s00493-025-00164-0). The internal-ref claim of 'affirmatively solves' overstates: the exact growth rate is nearly but not fully pinned down."
+    },
+    {
+      "arxiv_id": "2007.11853",
+      "verified": false,
+      "note": "The described contribution (balanced separators with cheap outliers, weak coloring numbers) concerns structural graph theory separators, not the chi_f vs rho(G) growth-rate problem; the two duplicate fuzz-match entries appear to be false positives unrelated to Problem 4."
+    }
+  ],
+  "search_queries": [
+    "fractional chromatic number Hall ratio Dvorak Ossona de Mendez Wu 1812.07327 growth rate g(n)",
+    "arxiv 2411.16465 Steiner fractional chromatic Hall ratio"
+  ],
+  "notes": "Steiner's paper (arXiv:2411.16465) is the primary follow-up; it nearly resolves Problem 4 by showing g(n)=(log n)^{1-o(1)}, collapsing an exponential gap to a polylogarithmic one. The exact smallest g (constant factors) is still open. The Dvořák 2007.11853 internal-ref entries appear to be false positives unrelated to Problem 4."
+}

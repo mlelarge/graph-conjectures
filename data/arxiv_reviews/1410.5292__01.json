@@ -1,0 +1,44 @@
+{
+  "review_id": "1410.5292__01",
+  "safe_id": "1410.5292",
+  "arxiv_id": "1410.5292",
+  "conjecture_title": "Open problem: true ordered Ramsey number of matchings",
+  "paper_title": "Ordered Ramsey numbers",
+  "published": "2016-04-25",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The gap between the lower bound $r_<(M) \\geq n^{c\\log n/\\log\\log n}$ and the upper bound $r_<(M) \\leq n^{\\lceil\\log n\\rceil}$ for the ordered Ramsey number of an ordered matching on $n$ vertices remains open as of 2025. A 2025 survey by Balko explicitly lists this as Problem 1 in the field. Partial progress has been made for restricted classes of matchings (non-crossing matchings and matchings with interval chromatic number 2), but the main diagonal question is unresolved.",
+  "since_posted": [
+    {
+      "title": "Off-diagonal ordered Ramsey numbers of matchings",
+      "authors": "Dhruv Rohatgi",
+      "year": 2018,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/1808.04025",
+      "arxiv_id": "1808.04025",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves near-linear bounds for non-crossing ordered matchings and a sub-quadratic upper bound for random matchings with interval chromatic number 2, but does not resolve the main diagonal gap between n^{c log n/log log n} and n^{log n}."
+    },
+    {
+      "title": "A Survey on Ordered Ramsey Numbers",
+      "authors": "Martin Balko",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2502.02155",
+      "arxiv_id": "2502.02155",
+      "doi": null,
+      "kind": "survey",
+      "claim": "Explicitly lists the gap between the lower and upper bounds for ordered Ramsey numbers of matchings as Problem 1, confirming the conjecture remains open; also records an improved lower bound of \\Omega((n/\\log n)^2) for matchings with interval chromatic number 2 by Balko-Jelínek-Valtr."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "ordered Ramsey number matching superpolynomial Conlon Fox Lee Sudakov 1410.5292",
+    "ordered Ramsey number ordered matching upper bound log n exponent arxiv"
+  ],
+  "notes": "The 2025 survey by Balko (arXiv:2502.02155) is the most comprehensive recent reference; it confirms the main diagonal gap is still open and records it as Problem 1. For the off-diagonal variant (matchings vs triangles), bounds have improved but that is a different question from the one posed here."
+}

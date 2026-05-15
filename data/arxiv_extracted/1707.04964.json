@@ -1,0 +1,25 @@
+[
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Question 1 (Reed and Seymour)",
+    "statement_text": "Does every graph have a chordal partition such that each part is bipartite?",
+    "context_text": "Reed and Seymour [1998] introduced chordal partitions as a tool for studying Hadwiger's Conjecture. A positive answer would imply that every graph with no $K_{t+1}$-minor is $2t$-colourable, representing a major breakthrough. The question was repeated in subsequent surveys.",
+    "attributed_to": "Reed and Seymour",
+    "attributed_year": 1998,
+    "paper_contribution": "Proves the answer is 'no' via Theorem 2: for every integer $k \\geq 1$ there is a graph $G$ such that for every chordal partition $P$ of $G$, some part of $P$ contains $K_k$; moreover, for every integer $t \\geq 4$ there is a graph $G$ with tree-width at most $t-1$ (and thus no $K_{t+1}$-minor) such that some part of every chordal partition contains a complete graph on at least $\\lfloor(3t-11)^{1/3}\\rfloor$ vertices.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1707.04964",
+    "paper_title": "Bad News for Chordal Partitions",
+    "paper_authors": [
+      "Alex Scott",
+      "Paul Seymour",
+      "David R. Wood"
+    ],
+    "published": "2018-04-11",
+    "abs_url": "https://arxiv.org/abs/1707.04964",
+    "source": "pdf"
+  }
+]

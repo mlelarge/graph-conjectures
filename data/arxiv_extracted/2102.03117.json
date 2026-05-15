@@ -1,0 +1,54 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Balogh–Bollobás–Morris Conjecture (Speed gap for ordered graphs)",
+    "statement_text": "A hereditary class of (totally) ordered graphs has, up to isomorphism, either at most $2^{O(n)}$ graphs with $n$ elements, or at least $n^{n/2+o(n)}$ such graphs.",
+    "context_text": "Balogh, Bollobás, and Morris [4, Conjecture 2] conjectured this dichotomy for the growth of hereditary ordered graph classes, extending Marcus–Tardos ideas to new settings, and proved it for weakly sparse classes. Klazar repeated the question, and Gunby and Pálvölgyi observed the general case remained open at the time of this paper.",
+    "attributed_to": "Balogh, Bollobás, and Morris",
+    "attributed_year": 2006,
+    "paper_contribution": "Theorem 1 (iii),(iii') settles the conjecture in full generality, establishing the optimal lower bound $\\sum_{k=0}^{\\lfloor n/2\\rfloor}\\binom{n}{2k}k!\\geq \\lfloor n/2\\rfloor!$ for hereditary ordered graph classes of superexponential growth.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2102.03117",
+    "paper_title": "Twin-width IV: ordered graphs and matrices",
+    "paper_authors": [
+      "Édouard Bonnet",
+      "Ugo Giocanti",
+      "Patrice Ossona de Mendez",
+      "Pierre Simon",
+      "Stéphan Thomassé",
+      "Szymon Toruńczyk"
+    ],
+    "published": "2021-07-05",
+    "abs_url": "https://arxiv.org/abs/2102.03117",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Small Conjecture (Twin-width II, SODA 2021)",
+    "statement_text": "Every small hereditary class of graphs — containing at most $n!\\cdot c^n$ distinct labeled $n$-vertex structures for some constant $c$ — has bounded twin-width.",
+    "context_text": "It was established in Twin-width II [7] that every hereditary class of bounded twin-width is small. The converse direction, that smallness implies bounded twin-width for hereditary classes, was conjectured in the same work. The abstract of the current paper explicitly states it 'answers our small conjecture [SODA '21] in the case of ordered graphs'.",
+    "attributed_to": "Bonnet, Kim, Thomassé, and Watrigant",
+    "attributed_year": 2021,
+    "paper_contribution": "Theorem 1 (i),(iii) resolves the conjecture for hereditary classes of ordered graphs by showing that bounded twin-width and growth $2^{O(n)}$ (i.e., smallness up to isomorphism) are equivalent in this setting.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2102.03117",
+    "paper_title": "Twin-width IV: ordered graphs and matrices",
+    "paper_authors": [
+      "Édouard Bonnet",
+      "Ugo Giocanti",
+      "Patrice Ossona de Mendez",
+      "Pierre Simon",
+      "Stéphan Thomassé",
+      "Szymon Toruńczyk"
+    ],
+    "published": "2021-07-05",
+    "abs_url": "https://arxiv.org/abs/2102.03117",
+    "source": "pdf"
+  }
+]

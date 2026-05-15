@@ -1,0 +1,40 @@
+{
+  "review_id": "1608.03040__03",
+  "safe_id": "1608.03040",
+  "arxiv_id": "1608.03040",
+  "conjecture_title": "Open Problem 2",
+  "paper_title": "Majority Colourings of Digraphs",
+  "published": "2016-08-10",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The question of whether every tournament admits a majority 3-colouring remains open as of May 2026. Anastos, Lamaison, Steiner, and Szabó (2019) proved the broader majority 3-coloring conjecture for digraphs with chromatic number at most 6 or dichromatic number at most 3, and majority 3-choosability for digraphs with maximum out-degree at most 4 or maximum degree at most 7, covering some but not all tournaments. Multiple recent surveys confirm the general majority 3-coloring conjecture for digraphs is 'far from being resolved', and no complete resolution for tournaments has been found.",
+  "since_posted": [
+    {
+      "title": "Majority Colorings of Sparse Digraphs",
+      "authors": "Michael Anastos, Ander Lamaison, Raphael Steiner, Tibor Szabó",
+      "year": 2019,
+      "venue": "The Electronic Journal of Combinatorics",
+      "url": "https://arxiv.org/abs/1911.01954",
+      "arxiv_id": "1911.01954",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves the majority 3-coloring conjecture for digraphs with chromatic number at most 6 or dichromatic number at most 3 (covering some tournaments) and majority 3-choosability for digraphs with maximum out-degree at most 4 or maximum degree at most 7; the general tournament case remains open."
+    }
+  ],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "1911.01954",
+      "verified": true,
+      "note": "Confirmed as 'Majority Colorings of Sparse Digraphs' by Anastos et al. (2019). Paper does not specifically target tournaments; it proves partial results for sparse digraphs generally. The fuzz=98 record's claim that it 'answers the question negatively via NP-completeness of majority 2-colorability' refers to Theorem 9 about 2-colorability of general digraphs (a different question), not to Open Problem 2 about tournament majority 3-colorability. All five internal records de-duplicate to this single paper."
+    }
+  ],
+  "search_queries": [
+    "majority 3-colouring tournament digraph 1608.03040 Kreutzer Seymour Wood",
+    "majority coloring tournament 3-colouring resolved solved open 2020 2021 2022 2023 2024 2025",
+    "majority 3-coloring tournament arxiv 2021 2022 2023 2024 2025 digraph conjecture"
+  ],
+  "notes": "All five internal reference records de-duplicate to arXiv:1911.01954. The fuzz=98 record's attribution of 'answering the question negatively' is misleading for this specific open problem: Theorem 9 of that paper establishes NP-completeness of deciding majority 2-colorability for general digraphs, which is unrelated to Open Problem 2 (3-colorability of tournaments). Web search results from 2025 confirm the general majority 3-coloring conjecture is described as far from resolved. No paper specifically resolving the tournament case was found."
+}

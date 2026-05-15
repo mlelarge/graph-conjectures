@@ -1,0 +1,68 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Gerbner–Keszegh–Methuku–Abhishek–Nagy–Patkós–Tompkins–Xiao Conjecture",
+    "statement_text": "The size of pairs of set systems satisfying both the Two Families hypotheses of Bollob\\'{a}s and an intersection condition on the first family is bounded by the Ahlswede-Khachatrian bound on the size of $t$-intersecting families.",
+    "context_text": "Gerbner, Keszegh, Methuku, Abhishek, Nagy, Patk\\'{o}s, Tompkins, and Xiao conjectured a bound for pairs of families satisfying simultaneously the Bollob\\'{a}s Two Families condition and a cross-intersection condition. Section 5 of the paper is devoted to its affirmative resolution.",
+    "attributed_to": "Gerbner, Keszegh, Methuku, Abhishek, Nagy, Patkós, Tompkins, and Xiao",
+    "attributed_year": null,
+    "paper_contribution": "The authors affirmatively resolve the conjecture, proving that such pairs of families are bounded in size by the Ahlswede-Khachatrian bound for $t$-intersecting families.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "Exact LaTeX statement not reproduced verbatim in the provided excerpt; paraphrased from the abstract and the Section 5 overview in the introduction. PDF source.",
+    "arxiv_id": "1907.06019",
+    "paper_title": "Combinatorics in the exterior algebra and the Bollobás Two Families Theorem",
+    "paper_authors": [
+      "Alex Scott",
+      "Elizabeth Wilmer"
+    ],
+    "published": "2020-07-14",
+    "abs_url": "https://arxiv.org/abs/1907.06019",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Question on extremal self-annihilating subspaces (Theorem 2.3)",
+    "statement_text": "For $r < n/2$, are all extremal self-annihilating subspaces $W \\subseteq \\bigwedge^r V$ with $\\dim W = \\binom{n-1}{r-1}$ of the form $\\{v \\wedge z : z \\in \\bigwedge^{r-1} V\\}$ for some fixed $v \\in V$?",
+    "context_text": "Theorem 2.3 shows that a self-annihilating subspace $W \\subseteq \\bigwedge^r V$ satisfies $\\dim W \\leq \\binom{n-1}{r-1}$ for $r \\leq n/2$, with equality achieved by spaces of the form $\\{v \\wedge z : z \\in \\bigwedge^{r-1} V\\}$. The authors verify this characterization for $r = 1$ and $r = 2$ and ask whether it holds in general.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated in running prose after Theorem 2.3: 'It is an interesting question to describe the extremal examples for Theorem 2.3 ... Could all extremal examples be of this form?' PDF source.",
+    "arxiv_id": "1907.06019",
+    "paper_title": "Combinatorics in the exterior algebra and the Bollobás Two Families Theorem",
+    "paper_authors": [
+      "Alex Scott",
+      "Elizabeth Wilmer"
+    ],
+    "published": "2020-07-14",
+    "abs_url": "https://arxiv.org/abs/1907.06019",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Question on extremal mutually annihilating pairs (Theorem 2.4)",
+    "statement_text": "For $r, s < n/2$, characterize all pairs of subspaces $U \\subseteq \\bigwedge^r V$ and $W \\subseteq \\bigwedge^s V$ that are mutually annihilating and attain $\\dim U \\cdot \\dim W = \\binom{n-1}{r-1}\\binom{n-1}{s-1}$.",
+    "context_text": "Theorem 2.4 bounds $\\dim U \\cdot \\dim W$ for mutually annihilating pairs $U \\subseteq \\bigwedge^r V$, $W \\subseteq \\bigwedge^s V$ with $r, s \\leq n/2$. Equality is achieved by fixing $v \\in V$ and setting $U = \\{v \\wedge z : z \\in \\bigwedge^{r-1} V\\}$ and $W = \\{v \\wedge z : z \\in \\bigwedge^{s-1} V\\}$, and the authors ask for a full characterization of all extremal examples.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated in running prose after Theorem 2.4: 'it would be interesting to characterize the extremal examples when $r, s < n/2$.' PDF source.",
+    "arxiv_id": "1907.06019",
+    "paper_title": "Combinatorics in the exterior algebra and the Bollobás Two Families Theorem",
+    "paper_authors": [
+      "Alex Scott",
+      "Elizabeth Wilmer"
+    ],
+    "published": "2020-07-14",
+    "abs_url": "https://arxiv.org/abs/1907.06019",
+    "source": "pdf"
+  }
+]

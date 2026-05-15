@@ -1,0 +1,22 @@
+{
+  "review_id": "2101.03537__00",
+  "safe_id": "2101.03537",
+  "arxiv_id": "2101.03537",
+  "conjecture_title": "Informal belief on Conjecture 1.7 and polylog bound",
+  "paper_title": "Pure pairs. VII. Homogeneous submatrices in 0/1-matrices with a forbidden submatrix",
+  "published": "2021-01-10",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "Conjecture 1.7 (due to Korándi, Pach, and Tomon) asserts that $f_H(n)$ is linear in $n$ for every acyclic matrix $H$. Scott, Seymour, and Spirkl informally believe this conjecture is false and suggest $n/\\operatorname{polylog}(n)$ as a plausible correct bound; their paper establishes the weaker result $f_H(n) = n^{1-o(1)}$ for every acyclic $H$. No subsequent work found in the indexed literature has resolved either Conjecture 1.7 or the informal $n/\\operatorname{polylog}(n)$ belief.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "pure pairs homogeneous submatrix 0/1 matrix polylog bound Scott Seymour Spirkl 2101.03537",
+    "arXiv 2101.03537 citing papers pure pairs forbidden submatrix conjecture",
+    "\"pure pairs\" \"homogeneous submatrix\" \"polylog\" OR \"n/log\" 0/1-matrix forbidden submatrix linear bound"
+  ],
+  "notes": "Conjecture 1.7 is by Korándi, Pach, and Tomon (linear bound for $f_H(n)$ for every acyclic $H$). The informal belief reviewed here is the authors' meta-conjecture that 1.7 is false and $n/\\operatorname{polylog}(n)$ is the right bound. The source paper itself proves $f_H(n)=n^{1-o(1)}$, which is an intermediate result. No follow-up paper was found in the indexed literature resolving either question. Confidence is medium rather than high because the conjecture is now 4+ years old and absence of follow-up may reflect difficulty rather than lack of activity."
+}

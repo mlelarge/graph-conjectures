@@ -1,0 +1,23 @@
+{
+  "review_id": "2304.04246__00",
+  "safe_id": "2304.04246",
+  "arxiv_id": "2304.04246",
+  "conjecture_title": "Problem 1",
+  "paper_title": "On the choosability of $H$-minor-free graphs",
+  "published": "2023-04-09",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Problem 1 of arXiv:2304.04246 asks for a structural characterization of the subgraph-closed family of graphs H for which f_\\ell(H') = v(H')-1 for all H' \\subseteq H. The paper itself (published in Combinatorics, Probability and Computing, Vol. 33, March 2024) provides strong negative evidence by showing that for large graphs H with non-trivial connectivity, f_\\ell(H) \\geq (1-\\varepsilon)(v(H)+\\kappa(H)), ruling out many candidate classes. No subsequent paper resolving or significantly advancing Problem 1 was found in the indexed literature as of May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Fischer Steiner \"H-minor-free\" choosability list chromatic number 2304.04246",
+    "arXiv 2304.04246 citing papers choosability minor-free graphs characterization",
+    "\"minor-free\" \"list chromatic\" \"f_ell\" OR \"f_l\" characterization subgraph-closed 2024 2025",
+    "Fischer Steiner choosability \"H-minor-free\" 2024 2025 arxiv follow-up"
+  ],
+  "notes": "No follow-up paper addressing Problem 1 was found. The source paper was published in Combinatorics, Probability and Computing (online November 2023, print March 2024). The Cambridge Core page for the published article did not list citing papers. The problem is posed in the spirit of perfect graph theory and is likely difficult; the paper's main theorems (Theorems 2 and 4) already sharply limit the positive instances. Conjecture is recent (2023) so absence of follow-up is expected."
+}

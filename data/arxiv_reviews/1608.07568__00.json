@@ -1,0 +1,35 @@
+{
+  "review_id": "1608.07568__00",
+  "safe_id": "1608.07568",
+  "arxiv_id": "1608.07568",
+  "conjecture_title": "Conjecture 1",
+  "paper_title": "Graphic TSP in cubic graphs",
+  "published": "2016-09-05",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "solved",
+  "confidence": "high",
+  "summary": "The conjecture is fully resolved. Wigal, Yoo, and Yu (arXiv:2112.06278, December 2021) prove that every simple 2-connected subcubic graph on n vertices with n_2 vertices of degree two has a TSP walk of length at most (5n+n_2)/4 - 1, confirming Conjecture 1 of Dvořák, Král', and Mohar. The bound is shown to be tight, and they also provide a quadratic-time combinatorial algorithm, yielding a 5/4-approximation for the graphic TSP on cubic graphs (improving the prior 9/7 ratio). The result was subsequently published in the Journal of Combinatorial Theory, Series B.",
+  "since_posted": [
+    {
+      "title": "Approximating TSP walks in subcubic graphs",
+      "authors": "Wigal, Michael C.; Yoo, Youngho; Yu, Xingxing",
+      "year": 2021,
+      "venue": "Journal of Combinatorial Theory, Series B",
+      "url": "https://arxiv.org/abs/2112.06278",
+      "arxiv_id": "2112.06278",
+      "doi": null,
+      "kind": "proof",
+      "claim": "Proves the full conjecture: every simple 2-connected subcubic n-vertex graph with n_2 degree-two vertices has a TSP walk of length at most (5n+n_2)/4 - 1, characterizes extremal graphs, and gives a quadratic-time algorithm."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "TSP walk subcubic graph 5/4 bound Dvorak Kral Mohar conjecture",
+    "graphic TSP cubic graph 2-connected TSP walk length conjecture arXiv 1608.07568",
+    "WebFetch https://arxiv.org/abs/2112.06278",
+    "WebFetch https://www.sciencedirect.com/science/article/abs/pii/S0095895622000879"
+  ],
+  "notes": "arXiv:2112.06278 (Wigal, Yoo, Yu, December 2021) explicitly confirms this conjecture and states the bound is best possible, matching both extremal constructions (Proposition 29 and 31) from the source paper. The ScienceDirect page (pii/S0095895622000879, ISSN 0095-8956 = JCTB) confirmed journal publication but returned HTTP 403 so the DOI could not be retrieved; venue identified from ISSN prefix."
+}

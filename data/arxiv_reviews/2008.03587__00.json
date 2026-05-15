@@ -1,0 +1,22 @@
+{
+  "review_id": "2008.03587__00",
+  "safe_id": "2008.03587",
+  "arxiv_id": "2008.03587",
+  "conjecture_title": "Question 4.1",
+  "paper_title": "A note on deterministic zombies",
+  "published": "2021-06-03",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Question 4.1 from arXiv:2008.03587 asks whether adding pendant (degree-1) vertices to a graph G always leaves the zombie number unchanged, i.e., z(G') = z(G). No resolution of this question has been found in the literature since the paper's publication in Discrete Applied Mathematics (2021). Follow-up work on deterministic zombies (e.g., arXiv:2204.11926 on lazy zombies, and a 2022 IWOCA chapter on zombie numbers of various graph classes) does not appear to address this specific question about pendant vertices.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "zombie number pendant vertices graph \"2008.03587\" deterministic zombies",
+    "zombie number graph theory \"pendant vertices\" \"degree 1\" leaves invariant",
+    "deterministic zombies graph survivor \"zombie number\" leaves pendant 2022 2023 2024 2025"
+  ],
+  "notes": "No follow-up addressing the pendant-vertex invariance question was found across three targeted searches. Related papers (arXiv:2204.11926 on lazy zombies; SpringerLink chapter 10.1007/978-3-031-20624-5_32 on zombie numbers of graph classes) focus on other aspects of the zombie number. The conjecture is recent (2021) and the absence of evidence is consistent with it remaining open."
+}

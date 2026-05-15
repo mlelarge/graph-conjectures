@@ -1,0 +1,20 @@
+{
+  "review_id": "2510.01791__00",
+  "safe_id": "2510.01791",
+  "arxiv_id": "2510.01791",
+  "conjecture_title": "Conjecture 1.3",
+  "paper_title": "On cuts of small chromatic number in sparse graphs",
+  "published": "2025-10-02",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "disproved",
+  "confidence": "high",
+  "summary": "Conjecture 1.3 is disproved in the same paper that states it. The authors prove that the conjecture 'fails dramatically': whereas Conjecture 1.3 asserts ℓ_k = k for all k, the paper establishes that for every ε > 0 and all sufficiently large k, ℓ_k ≤ (1+ε)k/2, showing that the trivial lower bound ℓ_k ≥ k/2 is asymptotically tight. The paper is to appear in Discrete Mathematics. No subsequent follow-up papers addressing Conjecture 1.3 were found in the indexed literature.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Aubian Bonamy Bourneuf Fontaine Picasarri-Arrieta \"cuts\" \"chromatic number\" \"sparse graphs\" 2510.01791 conjecture"
+  ],
+  "notes": "The conjecture is disproved within the source paper itself (arXiv:2510.01791). The paper proposes Conjecture 1.3 as the natural bold generalization of the confirmed cases ℓ_1=1, ℓ_2=2 and the conjectured ℓ_3=3, and then proves it is far from correct by showing ℓ_k ≤ (1+ε)k/2 asymptotically. No external follow-up papers were found; the disproof is complete and contained in the source paper."
+}

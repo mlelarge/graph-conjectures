@@ -1,0 +1,22 @@
+{
+  "review_id": "2003.01846__00",
+  "safe_id": "2003.01846",
+  "arxiv_id": "2003.01846",
+  "conjecture_title": "Informal Conjecture (outerplanar strongly perfect graphs)",
+  "paper_title": "New Examples of Minimal Non-Strongly-Perfect Graphs",
+  "published": "2020-03-04",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The conjecture suggests that characterizing outerplanar strongly perfect graphs (equivalently, listing all minimal non-strongly-perfect outerplanar graphs) is a tractable subproblem, even though a full characterization of minimal non-strongly-perfect graphs appears out of reach. No follow-up paper resolving or making substantial progress on this specific conjecture was found in indexed literature through May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "outerplanar strongly perfect graphs characterization minimal non-strongly-perfect",
+    "Chudnovsky Dibek Seymour strongly perfect outerplanar 2003.01846",
+    "outerplanar strongly perfect graphs 2021 2022 2023 2024 2025 arxiv"
+  ],
+  "notes": "No follow-up paper addressing outerplanar strongly perfect graphs was found. The conjecture is informal (no precise statement is given in the truncated PDF source) and relatively recent (2020); absence of follow-up is consistent with it remaining open. The published journal version appeared in Discrete Mathematics (S0012365X21000479) but was behind a paywall and could not be fetched."
+}

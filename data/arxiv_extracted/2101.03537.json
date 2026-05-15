@@ -1,0 +1,71 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.6 (Korándi, Pach, and Tomon)",
+    "statement_text": "Let $H$ be an ordered bigraph such that both $H$ and its bicomplement are forests. Then there exists $\\varepsilon > 0$ with the following property. Let $G$ be an ordered bigraph that does not contain $H$, with $|V_1(G)|, |V_2(G)| \\geq n$; then there is a pure pair $(Z_1, Z_2)$ with $Z_i \\subseteq V_i(G)$ and $|Z_i| \\geq \\varepsilon n$ for $i = 1, 2$.",
+    "context_text": "Korándi, Pach, and Tomon observed that any ordered bigraph $H$ satisfying a linear pure-pair conclusion must itself be a forest whose bicomplement is also a forest, and conjectured this condition is also sufficient. They proved the conjecture for certain matrices with at most two rows. The present paper cannot resolve the full conjecture but proves $f_H(n) = n^{1-o(1)}$ for every acyclic matrix $H$ via Theorems 1.12 and 1.14.",
+    "attributed_to": "Korándi, Pach, and Tomon",
+    "attributed_year": null,
+    "paper_contribution": "Proves that for every ordered tree bigraph $T$, there is a pure pair $(Z_1, Z_2)$ with $|Z_i| \\geq n^{1-o(1)}$, establishing $f_H(n) = n^{1-o(1)}$ for every acyclic matrix $H$, which falls short of the conjectured linear bound but significantly strengthens the polynomial lower bound previously known.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2101.03537",
+    "paper_title": "Pure pairs. VII. Homogeneous submatrices in 0/1-matrices with a forbidden submatrix",
+    "paper_authors": [
+      "Alex Scott",
+      "Paul Seymour",
+      "Sophie Spirkl"
+    ],
+    "published": "2021-01-10",
+    "abs_url": "https://arxiv.org/abs/2101.03537",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.7 (Korándi, Pach, and Tomon)",
+    "statement_text": "For every ordered forest bigraph $H$, there exists $\\varepsilon > 0$ with the following property. Let $G$ be an ordered bigraph that does not contain $H$ or its bicomplement, with $|V_1(G)|, |V_2(G)| \\geq n$: then there is a pure pair $(Z_1, Z_2)$ with $Z_i \\subseteq V_i(G)$ and $|Z_i| \\geq \\varepsilon n$ for $i = 1, 2$.",
+    "context_text": "Korándi, Pach, and Tomon proposed this stronger conjecture as a natural ordered-bigraph analogue of the unordered results 1.1 and 1.2; it implies Conjecture 1.6. The present paper notes the analogy but expresses doubt about its truth, and does not resolve it.",
+    "attributed_to": "Korándi, Pach, and Tomon",
+    "attributed_year": null,
+    "paper_contribution": "Does not prove or disprove Conjecture 1.7; the paper's authors believe it is likely false, and suggest $n/\\operatorname{polylog}(n)$ as a possible correct bound.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2101.03537",
+    "paper_title": "Pure pairs. VII. Homogeneous submatrices in 0/1-matrices with a forbidden submatrix",
+    "paper_authors": [
+      "Alex Scott",
+      "Paul Seymour",
+      "Sophie Spirkl"
+    ],
+    "published": "2021-01-10",
+    "abs_url": "https://arxiv.org/abs/2101.03537",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Informal belief on Conjecture 1.7 and polylog bound",
+    "statement_text": "Our guess is that Conjecture 1.7 is false. Perhaps $n/\\operatorname{polylog}(n)$ might be true?",
+    "context_text": "After stating Conjecture 1.7, the authors remark that while it is a natural extension of the unordered theory, they do not believe it holds, and informally suggest that a bound of $n/\\operatorname{polylog}(n)$ for the sizes of the pure pair might be the correct weaker conclusion.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated as an informal belief/guess in running prose; no labelled theorem environment.",
+    "arxiv_id": "2101.03537",
+    "paper_title": "Pure pairs. VII. Homogeneous submatrices in 0/1-matrices with a forbidden submatrix",
+    "paper_authors": [
+      "Alex Scott",
+      "Paul Seymour",
+      "Sophie Spirkl"
+    ],
+    "published": "2021-01-10",
+    "abs_url": "https://arxiv.org/abs/2101.03537",
+    "source": "pdf"
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Problem 1.3 (Bárány–Kalai, Problem 6.6 in [6])",
+    "statement_text": "Determine or estimate the least integer $f=f(d,s,t)$ such that for any set $P$ of $f$ points in $\\mathbb{R}^{d}$ there is a partition $P=A\\cup B$ such that any $s$-convex set containing $A$ must intersect any $t$-convex set containing $B$.",
+    "context_text": "This is a generalization of Radon's theorem to unions of convex sets, posed by Kalai in the 1970s and reiterated by Bárány and Kalai in their 2022 survey [6]. Bárány and Kalai showed $f(d,s,t)$ is finite via a Ramsey-type argument but noted the upper bound obtained is horrible; the correct behavior of this function remained unknown for more than fifty years despite substantial attention.",
+    "attributed_to": "Bárány and Kalai",
+    "attributed_year": 2022,
+    "paper_contribution": "Proves the near-optimal upper bound $f(d,s,t)=O(dst\\log(st+1))$, settling the open problem.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Originally posed by Kalai in the 1970s; formally stated as Problem 6.6 in the Bárány–Kalai 2022 Bulletin AMS survey. The abstract explicitly states the paper settles this open problem.",
+    "arxiv_id": "2506.17777",
+    "paper_title": "Extended VC-dimension, and Radon and Tverberg type theorems for unions of convex sets",
+    "paper_authors": [
+      "Noga Alon",
+      "Shakhar Smorodinsky"
+    ],
+    "published": "2026-02-27",
+    "abs_url": "https://arxiv.org/abs/2506.17777",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Problem 1.4",
+    "statement_text": "Determine or estimate the least integer $f=f_{r}(d,s_{1},\\ldots,s_{r})$ such that for any set $P$ of $f$ points in $\\mathbb{R}^{d}$ there is a partition into $r$ pairwise disjoint sets $P=\\bigcup_{i=1}^{r}P_{i}$ such that for any family of sets $C_{1},\\ldots,C_{r}$ with $P_{i}\\subset C_{i}$ where $C_{i}$ is an $s_{i}$-convex set for every $i\\in[r]$ we have that $\\bigcap_{i=1}^{r}C_{i}\\neq\\emptyset$.",
+    "context_text": "This is a Tverberg-type generalization of Problem 1.3 to $r$ parts and $r$ families of $s_i$-convex sets. Radon's theorem is equivalent to $f(d,1,1)=d+2$ and Tverberg's theorem is equivalent to $f_{r}(d,1,\\ldots,1)=(r-1)(d+1)+1$. The paper provides an upper bound via Theorem 1.6 but the exact determination remains open.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "The paper proves the upper bound $f_{r}(d,s_{1},\\ldots,s_{r})=O\\left(dr^{2}\\cdot\\log r\\cdot\\prod_{i=1}^{r}s_{i}\\cdot\\ln(1+\\prod_{i=1}^{r}s_{i})\\right)$ via Theorem 1.6, partially addressing this problem. A 2025 paper by Chen et al. (reference [9]) is titled 'A Tverberg-type problem of Kalai: Two negative answers to questions of Alon and Smorodinsky', suggesting specific sub-questions of this problem are attributed to the paper authors.",
+    "arxiv_id": "2506.17777",
+    "paper_title": "Extended VC-dimension, and Radon and Tverberg type theorems for unions of convex sets",
+    "paper_authors": [
+      "Noga Alon",
+      "Shakhar Smorodinsky"
+    ],
+    "published": "2026-02-27",
+    "abs_url": "https://arxiv.org/abs/2506.17777",
+    "source": "html"
+  }
+]

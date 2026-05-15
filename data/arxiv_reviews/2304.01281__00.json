@@ -1,0 +1,35 @@
+{
+  "review_id": "2304.01281__00",
+  "safe_id": "2304.01281",
+  "arxiv_id": "2304.01281",
+  "conjecture_title": "Conjecture 1.3",
+  "paper_title": "The limit points of the top and bottom eigenvalues of regular graphs",
+  "published": "2023-10-13",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "solved",
+  "confidence": "high",
+  "summary": "Conjecture 1.3 from arXiv:2304.01281 has been fully resolved by Dingding Dong and Theo McKenzie in December 2024. Their paper 'Arbitrary Spectral Edge of Regular Graphs' (arXiv:2412.09570) proves that for any d >= 3 and k >= 2, the set of all limit points of the vectors (lambda_1(G_i), ..., lambda_k(G_i)) for infinite sequences of d-regular graphs is exactly B(d,k) = {(mu_1,...,mu_k) : d = mu_1 >= ... >= mu_k >= 2sqrt(d-1)}, confirming the conjecture in full. The authors explicitly state that the k=2 case was due to Alon and Wei and that their result confirms the conjecture of theirs.",
+  "since_posted": [
+    {
+      "title": "Arbitrary Spectral Edge of Regular Graphs",
+      "authors": "Dingding Dong, Theo McKenzie",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2412.09570",
+      "arxiv_id": "2412.09570",
+      "doi": "10.48550/arXiv.2412.09570",
+      "kind": "proof",
+      "claim": "Proves the full conjecture: for any d >= 3 and k >= 2, the set of limit points of the first k eigenvalues of d-regular graph sequences is exactly {(mu_1,...,mu_k) : d = mu_1 >= ... >= mu_k >= 2sqrt(d-1)}, confirming Conjecture 1.3 of Alon and Wei."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "arxiv 2304.01281 Alon Wei limit points eigenvalues regular graphs citing",
+    "limit points top k eigenvalues d-regular graphs 2sqrt(d-1) conjecture",
+    "WebFetch https://arxiv.org/abs/2412.09570",
+    "WebFetch https://www.sciencedirect.com/science/article/abs/pii/S0024379524000028"
+  ],
+  "notes": "The resolving paper arXiv:2412.09570 was verified via WebFetch; it explicitly cites the k=2 result of Alon and Wei and confirms their conjecture for all k >= 2."
+}

@@ -1,0 +1,23 @@
+{
+  "review_id": "2401.00299__00",
+  "safe_id": "2401.00299",
+  "arxiv_id": "2401.00299",
+  "conjecture_title": "Problem 1.1",
+  "paper_title": "Partitioning the hypercube into smaller hypercubes",
+  "published": "2024-11-07",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "Problem 1.1 asks to determine or estimate four functions: m(d) (perfect matchings of Q_d), m'(d) (all matchings), f(d) (partitions into subhypercubes), and f_{\\leq 2}(d) (a restricted variant introduced by the authors). The source paper itself establishes that the asymptotic order of f(d) is not much larger than m(d), providing bounds but leaving precise determination of all four functions open. A potentially related November 2024 preprint (arXiv:2411.04479) proves asymptotic counts for partitions of the q-ary hypercube Z_q^n into subcubes of fixed dimension, which for q=2 may address special cases of f(d), but it does not appear to directly cite or fully resolve Problem 1.1.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "arXiv 2401.00299 hypercube partition subhypercubes Alon Balogh Potapov",
+    "hypercube vertex partition subhypercubes f(d) matchings Gadouleau British Combinatorial Conference",
+    "Gadouleau hypercube partition subcubes enumeration 2023 2024 2025",
+    "\"partitioning hypercube\" \"subhypercubes\" enumeration \"perfect matchings\" 2025 arXiv"
+  ],
+  "notes": "The source paper was published in Illinois Journal of Mathematics, Vol. 69, Issue 1 (April 2025). Problem (iii) on f(d) was originally raised by Gadouleau at the 29th British Combinatorial Conference in 2022. A related paper arXiv:2411.04479 ('On the number of partitions of the hypercube Z_q^n into large subcubes', November 2024) proves that for fixed q and m the count of partitions of Z_q^n into q^m subcubes of dimension n-m is asymptotically n^{(q^m-1)/(q-1)}; for q=2 this covers partitions where all parts have the same fixed dimension, a special case of f(d). However, the WebFetch response was ambiguous and could not confirm authors, a direct citation of 2401.00299, or coverage of m(d), m'(d), or f_{leq2}(d). No other confirmed follow-up resolving the full problem was found."
+}

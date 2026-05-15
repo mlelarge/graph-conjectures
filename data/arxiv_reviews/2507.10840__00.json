@@ -1,0 +1,22 @@
+{
+  "review_id": "2507.10840__00",
+  "safe_id": "2507.10840",
+  "arxiv_id": "2507.10840",
+  "conjecture_title": "Conjecture 1.4",
+  "paper_title": "Covering Complete Geometric Graphs by Monotone Paths",
+  "published": "2026-01-10",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 1.4 from arXiv:2507.10840 asks whether covering the edge set of K_n[A] for some (possibly every) alpha-dense n-element point set A in general position requires a superlinear number of monotone paths. The source paper establishes an O(n^{3/2}) upper bound (Theorem 1.3) for alpha-dense point sets and an O(n log n) upper bound for random uniform point sets, while constructing worst-case point sets requiring Theta(n^2) paths; the gap between these bounds motivates the conjecture. No follow-up work resolving or making progress on the conjecture was found in four months of indexed literature since the paper's publication.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Dumitrescu Pach Saghafian Scott monotone paths covering complete geometric graphs 2507.10840",
+    "monotone paths cover complete geometric graph dense point set superlinear lower bound",
+    "arxiv 2507.10840 citing papers monotone paths geometric graph 2026"
+  ],
+  "notes": "No follow-up found. The paper is very recent (January 2026) and the conjecture is a suspicion stated by the authors without supporting evidence beyond the upper/lower bound gap. No internal references were supplied. The paper was originally submitted July 2025 and revised January 2026."
+}

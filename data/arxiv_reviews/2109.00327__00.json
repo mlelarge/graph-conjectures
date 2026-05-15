@@ -1,0 +1,22 @@
+{
+  "review_id": "2109.00327__00",
+  "safe_id": "2109.00327",
+  "arxiv_id": "2109.00327",
+  "conjecture_title": "Open Problem (Section 1): Balanced Separator for $U_t$",
+  "paper_title": "Universality in minor-closed graph classes",
+  "published": "2021-09-01",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "The conjecture asks whether the countable universal graph $U_t$ for $K_t$-minor-free graphs, as constructed in arXiv:2109.00327, satisfies property (K2): every finite $n$-vertex subgraph has a balanced separator of order $O(\\sqrt{n})$. The paper itself establishes a weaker $O(n^{3/4}\\log n)$ bound from Plotkin–Rao–Smith as the best known result, while proving $U_t$ satisfies properties (K1), (K3), and (K4). A broad search of follow-up literature through May 2026 found no paper resolving or substantially improving upon this open problem.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "balanced separator minor-free universal graph Huynh Mohar Wood 2109.00327",
+    "Kt-minor-free balanced separator O(sqrt n) universal graph 2021",
+    "universality minor-closed balanced separator U_t subgraph 2022 2023 2024 2025"
+  ],
+  "notes": "No follow-up resolving (K2) for U_t was found. The paper arXiv:2504.19582 (Faithful universal graphs for minor-closed classes, 2025) addresses polynomial-size universal graphs but resolves different open problems. arXiv:2512.01587 improves the algorithmic runtime for finding O(sqrt(n)) separators in minor-free graphs to linear time but does not address the U_t universal graph question. The weaker O(n^{3/4} log n) bound from Plotkin, Rao, and Smith is the only progress stated in the source paper itself. Confidence is medium rather than high because the conjecture is approximately 5 years old."
+}

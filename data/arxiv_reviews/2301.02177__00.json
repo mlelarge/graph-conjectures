@@ -1,0 +1,22 @@
+{
+  "review_id": "2301.02177__00",
+  "safe_id": "2301.02177",
+  "arxiv_id": "2301.02177",
+  "conjecture_title": "Grassmannian Subvariety Construction Problem",
+  "paper_title": "The Kromatic Symmetric Function: A $K$-theoretic Analogue of $X_G$",
+  "published": "2023-05-18",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "No follow-up work addressing the Grassmannian subvariety construction problem has been found. Subsequent papers on the Kromatic symmetric function (2024–2025) focus on power-sum expansions and graph-distinguishing properties, leaving the geometric question — an explicit construction of Grassmannian subvarieties whose cohomology class is $X_G$ and K-theoretic structure sheaf class is $\\overline{X}_G$ for each claw-free incomparability graph — entirely open.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Kromatic symmetric function Grassmannian subvariety claw-free incomparability graph K-theory",
+    "Crew Pechenik Spirkl Kromatic symmetric function 2301.02177 follow-up",
+    "Grassmannian subvariety cohomology K-theory claw-free incomparability graph chromatic symmetric function Grothendieck"
+  ],
+  "notes": "Three follow-up papers were found on Kromatic symmetric functions (arXiv:2408.01395, 2502.21285, 2508.17682), but all address algebraic properties (power-sum expansions, graph distinguishing) rather than the geometric Grassmannian construction. The conjecture is stated informally as a geometric desideratum motivated by the $\\overline{s}$-positivity result; no follow-up on the geometric side was found in the indexed literature."
+}

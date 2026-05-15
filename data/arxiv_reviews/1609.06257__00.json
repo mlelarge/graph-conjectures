@@ -1,0 +1,50 @@
+{
+  "review_id": "1609.06257__00",
+  "safe_id": "1609.06257",
+  "arxiv_id": "1609.06257",
+  "conjecture_title": "Question 1.1",
+  "paper_title": "Gallai's path decomposition conjecture for graphs of small maximum degree",
+  "published": "2016-09-20",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Question 1.1 — whether every connected graph that is not an odd semi-clique admits a path decomposition into \\lfloor |V(G)|/2 \\rfloor paths — remains open in full generality. It has been settled positively for planar graphs (Blanché, Bonamy, Bonichon 2021: every connected planar graph except K_3 and K_5^- decomposes into \\lfloor n/2 \\rfloor paths) and for 2-degenerate graphs (Anto, Basavaraju 2022: every connected 2-degenerate graph except the triangle decomposes into \\lfloor n/2 \\rfloor paths). Search results also indicate partial progress for 3-degenerate graphs (2024) but those could not be verified within the call budget.",
+  "since_posted": [
+    {
+      "title": "Gallai's path decomposition in planar graphs",
+      "authors": "Alexandre Blanché, Marthe Bonamy, Nicolas Bonichon",
+      "year": 2021,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2110.08870",
+      "arxiv_id": "2110.08870",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves the conjecture for planar graphs: every connected planar graph except K_3 and K_5^- (the only two planar odd semi-cliques) can be decomposed into \\lfloor n/2 \\rfloor paths."
+    },
+    {
+      "title": "Gallai's Path Decomposition for 2-degenerate Graphs",
+      "authors": "Nevil Anto, Manu Basavaraju",
+      "year": 2022,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2211.07159",
+      "arxiv_id": "2211.07159",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves the conjecture for 2-degenerate graphs: every connected 2-degenerate graph on n vertices can be decomposed into at most \\lfloor n/2 \\rfloor paths unless it is a triangle (the only 2-degenerate odd semi-clique)."
+    }
+  ],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2110.08870",
+      "verified": true,
+      "note": "Confirmed: paper by Blanché, Bonamy, Bonichon proves \\lfloor n/2 \\rfloor decomposition for planar graphs with K_3 and K_5^- as the only exceptions, matching the internal reference description exactly."
+    }
+  ],
+  "search_queries": [
+    "Gallai path decomposition conjecture \"floor n/2\" \"odd semi-clique\" connected graph 2022 2023 2024 2025",
+    "Gallai path decomposition \"1609.06257\" cite arXiv"
+  ],
+  "notes": "Question 1.1 has been answered positively for planar graphs and 2-degenerate graphs but is open for general connected graphs. A ScienceDirect paper titled 'Gallai's conjecture and the path number of odd semi-cliques' appeared in search results (doi likely 10.1016/j.disc.2025...) but could not be fetched (HTTP 403). Additional partial results for 3-degenerate graphs were indicated in search results but could not be verified within the 5-call budget."
+}

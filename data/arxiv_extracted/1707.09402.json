@@ -1,0 +1,27 @@
+[
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Complexity of Independent Feedback Vertex Set for H-free graphs (linear forest cases)",
+    "statement_text": "Only the cases where $H$ is a linear forest, that is, a disjoint union of paths, remain open for the complexity classification of \\textsc{Independent Feedback Vertex Set} on $H$-free graphs. In particular, the case where $H$ is a single path $P_h$ with $h \\geq 6$ has not yet been resolved.",
+    "context_text": "The authors prove NP-completeness when $H$ contains a claw or cycle, and polynomial-time solvability for $P_4$-free and $P_5$-free graphs, completing those cases. This leaves all linear-forest cases open toward a full complexity dichotomy for $H$-free graphs.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "PDF source — stated in prose without a labelled environment. The provided text is truncated after Section 3; Section 6 is described in the introduction as explicitly surveying related open problems but its content was not included in the extraction, so additional formal conjectures/questions from that section may be missing.",
+    "arxiv_id": "1707.09402",
+    "paper_title": "Independent Feedback Vertex Set for $P_5$-free Graphs",
+    "paper_authors": [
+      "Marthe Bonamy",
+      "Konrad K. Dabrowski",
+      "Carl Feghali",
+      "Matthew Johnson",
+      "Daniel Paulusma"
+    ],
+    "published": "2017-07-28",
+    "abs_url": "https://arxiv.org/abs/1707.09402",
+    "source": "pdf"
+  }
+]

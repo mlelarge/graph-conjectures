@@ -1,0 +1,52 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.1 (Sintiari–Trotignon)",
+    "statement_text": "For every integer $t$, there exists a constant $c_{t}$ such that every even-hole-free graph $G$ with no diamond and no clique of size $t$ satisfies $\\operatorname{tw}(G)\\leq c_{t}$.",
+    "context_text": "Sintiari and Trotignon observed that even-hole-free graphs of bounded clique number can have arbitrarily large treewidth, and conjectured that adding a diamond-free assumption restores bounded treewidth. The diamond is the unique simple graph with four vertices and five edges. The conjecture (stated for $t=4$ in [21]) was subsequently proved in a companion paper of the series [6].",
+    "attributed_to": "Sintiari and Trotignon",
+    "attributed_year": 2021,
+    "paper_contribution": "The paper does not directly prove this conjecture; it notes that Conjecture 1.1 was proved in a companion paper [6] (Alecu, Chudnovsky, Hajebi, Spirkl), and uses structural results from that work as ingredients for its own results on Conjecture 1.2.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2307.13684",
+    "paper_title": "Induced subgraphs and tree decompositions X. Towards logarithmic treewidth for even-hole-free graphs",
+    "paper_authors": [
+      "Tara Abrishami",
+      "Bogdan Alecu",
+      "Maria Chudnovsky",
+      "Sepehr Hajebi",
+      "Sophie Spirkl"
+    ],
+    "published": "2025-04-03",
+    "abs_url": "https://arxiv.org/abs/2307.13684",
+    "source": "html"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.2 (Sintiari–Trotignon)",
+    "statement_text": "For every integer $t$, there exists a constant $c_{t}$ such that every even-hole-free graph $G$ with no clique of size $t$ satisfies $\\operatorname{tw}(G)\\leq c_{t}\\log|V(G)|$.",
+    "context_text": "Without the diamond-free assumption of Conjecture 1.1, Sintiari and Trotignon conjectured that even-hole-free graphs of bounded clique number still have treewidth at most logarithmic in the number of vertices; this bound is tight by the constructions in [21]. The conjecture was originally stated only for $t=4$. The full conjecture is proved in a forthcoming companion paper [12].",
+    "attributed_to": "Sintiari and Trotignon",
+    "attributed_year": 2021,
+    "paper_contribution": "Proves a special case: every $n$-vertex even-hole-free graph with no clique of size $t$ and no induced subgraph isomorphic to a generalized $t$-pyramid has treewidth at most $c(t)\\log n$, establishing that the logarithmic bound is tight for this class.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2307.13684",
+    "paper_title": "Induced subgraphs and tree decompositions X. Towards logarithmic treewidth for even-hole-free graphs",
+    "paper_authors": [
+      "Tara Abrishami",
+      "Bogdan Alecu",
+      "Maria Chudnovsky",
+      "Sepehr Hajebi",
+      "Sophie Spirkl"
+    ],
+    "published": "2025-04-03",
+    "abs_url": "https://arxiv.org/abs/2307.13684",
+    "source": "html"
+  }
+]

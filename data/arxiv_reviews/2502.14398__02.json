@@ -1,0 +1,33 @@
+{
+  "review_id": "2502.14398__02",
+  "safe_id": "2502.14398",
+  "arxiv_id": "2502.14398",
+  "conjecture_title": "Question 3.9",
+  "paper_title": "Circular sorting",
+  "published": "2025-08-06",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Question 3.9 asks whether the function $t(n)$—the diameter of the all-swaps graph on cyclic permutations of order $n$—is monotone. As of early 2026 the question remains open. A follow-up paper (arXiv:2510.18529) directly engages with it: it provides computational bounds pinpointing the first potential failure of monotonicity at $n=24$ or $n=30$, exhibits concrete permutations whose individual $t$-values decrease under extension (ruling out naive arguments), and proposes an alternative Conjecture 35 ($c(nm) \\geq c(n)$ for all $n,m\\geq 2$ where $c(n)=n-t(n)$) as a possibly more tractable reformulation.",
+  "since_posted": [
+    {
+      "title": "Circular sorting, strong complete mappings and wreath product constructions",
+      "authors": "(not retrieved from abstract page)",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2510.18529",
+      "arxiv_id": "2510.18529",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Directly discusses Question 3.9: establishes computational bounds on $t(24)$ and $t(30)$ as first potential monotonicity failures, shows individual $t$-values can decrease when extending a permutation, and proposes an alternative monotonicity conjecture (Conjecture 35); the full monotonicity of $t(n)$ is left open."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "arXiv 2502.14398 \"circular sorting\" Adin Alon Roichman all-swaps graph cyclic permutations",
+    "\"all-swaps graph\" \"cyclic permutations\" diameter monotone t(n) 2025 2026"
+  ],
+  "notes": "arXiv:2601.12597 ('Conjugating full cycles by adjacent transpositions: diameter and sorting time', January 2026) also appeared in search results and studies the diameter of a related Schreier graph on cyclic permutations, but could not be fully verified within the 5-call cap. Authors of arXiv:2510.18529 were not retrieved from the abstract page and are not included to avoid fabrication."
+}

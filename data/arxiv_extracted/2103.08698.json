@@ -1,0 +1,65 @@
+[
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Informal Conjecture (fractional treewidth-fragility of sublinear-separator classes)",
+    "statement_text": "All classes with sublinear separators are fractionally treewidth-fragile.",
+    "context_text": "The author notes that efficiently fractionally treewidth-fragile classes include all hereditary classes with sublinear separators and bounded maximum degree, all proper minor-closed classes, and many geometric graph classes. The author then remarks that it is possible, and has been conjectured by them, that the property extends to all classes with sublinear separators.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated in running prose as 'it is possible (and I have conjectured) that all classes with sublinear separators are fractionally treewidth-fragile'.",
+    "arxiv_id": "2103.08698",
+    "paper_title": "Approximation metatheorems for classes with bounded expansion",
+    "paper_authors": [
+      "Zdeněk Dvořák"
+    ],
+    "published": "2021-10-09",
+    "abs_url": "https://arxiv.org/abs/2103.08698",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Problem 6",
+    "statement_text": "Do monotone minimization problems expressible in the first order logic admit constant factor approximation in all classes with bounded expansion? And PTASes in all efficiently fractionally treewidth-fragile graph classes?",
+    "context_text": "The paper's techniques apply to minimization problems only with error bounded by a fraction of the total vertex weight rather than the optimal, so constant-factor approximation in bounded-expansion classes and PTASes in fractionally treewidth-fragile classes for minimization remain open. As a concrete simplest case, it is unknown whether a PTAS exists for weighted vertex cover in fractionally treewidth-fragile graph classes.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2103.08698",
+    "paper_title": "Approximation metatheorems for classes with bounded expansion",
+    "paper_authors": [
+      "Zdeněk Dvořák"
+    ],
+    "published": "2021-10-09",
+    "abs_url": "https://arxiv.org/abs/2103.08698",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Problem 7",
+    "statement_text": "Do monotone maximization problems expressible in the first order logic admit an $O(n^{o(1)})$-factor approximation for $n$-vertex graphs from nowhere-dense classes?",
+    "context_text": "Many results for classes with bounded expansion extend to nowhere-dense graph classes with constants replaced by $n^{o(1)}$ terms. The paper's approach does not apply to nowhere-dense classes because it relies on a quantifier elimination result specific to bounded-expansion classes, leaving the approximability question in nowhere-dense classes open.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2103.08698",
+    "paper_title": "Approximation metatheorems for classes with bounded expansion",
+    "paper_authors": [
+      "Zdeněk Dvořák"
+    ],
+    "published": "2021-10-09",
+    "abs_url": "https://arxiv.org/abs/2103.08698",
+    "source": "pdf"
+  }
+]

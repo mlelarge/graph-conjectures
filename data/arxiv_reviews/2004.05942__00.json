@@ -1,0 +1,22 @@
+{
+  "review_id": "2004.05942__00",
+  "safe_id": "2004.05942",
+  "arxiv_id": "2004.05942",
+  "conjecture_title": "Algorithm Termination Conjecture",
+  "paper_title": "Pentagon contact representations",
+  "published": "2020-04-13",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The conjecture that the algorithm for computing homothetic pentagon contact representations always terminates remains open as of 2026. No follow-up paper resolving or making partial progress on the termination question was found in the indexed literature. The analogous algorithms for homothetic triangle and square contact representations likewise lack termination proofs, suggesting this is a structurally difficult problem across the family.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "pentagon contact representations homothetic algorithm termination Felsner Schrezenmaier Steiner 2004.05942",
+    "pentagon contact representations five color forests algorithm termination conjecture graph theory",
+    "Schrezenmaier Steiner pentagon contact representations algorithm termination proof 2021 2022 2023 2024"
+  ],
+  "notes": "No follow-up found. Searches returned only the original paper and its published version in Electronic Journal of Combinatorics (v25i3p39). DBLP page for Schrezenmaier shows no subsequent work on pentagon contact representations or algorithm termination. Semantic Scholar API returned no citing papers."
+}

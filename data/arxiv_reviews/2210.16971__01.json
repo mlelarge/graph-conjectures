@@ -1,0 +1,27 @@
+{
+  "review_id": "2210.16971__01",
+  "safe_id": "2210.16971",
+  "arxiv_id": "2210.16971",
+  "conjecture_title": "Conjecture 1.7",
+  "paper_title": "A note on directed analogues of the Sidorenko and forcing conjectures",
+  "published": "2022-10-30",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 1.7 from arXiv:2210.16971 posits that admitting a homomorphism to a directed edge and having a cycle in the underlying undirected graph are together sufficient for an oriented graph to have the directed forcing property — a directed analogue of the Skokan–Thoma forcing conjecture. The source paper (published in Electronic Journal of Combinatorics) proves these two conditions are necessary (Theorem 1.6) but the conjectured sufficiency remains open. A wide web search covering related work on directed Sidorenko and forcing properties found no follow-up paper resolving the conjecture as of May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2312.15333",
+      "verified": false,
+      "note": "Paper concerns the Erdős–Hajnal conjecture for P_5 (Conjecture 1.4 attributed to Fox–Sudakov), unrelated to the directed forcing property; this is a false positive from the matching pipeline."
+    }
+  ],
+  "search_queries": [
+    "directed forcing property oriented graph homomorphism edge cycle arXiv 2210.16971",
+    "\"directed forcing\" conjecture oriented graph Sidorenko Fox Himwich Mani Zhou 2022"
+  ],
+  "notes": "No follow-up paper resolving or partially resolving Conjecture 1.7 was found. The source paper was published in the Electronic Journal of Combinatorics (v32i3p38). Related papers on tournament Sidorenko inequalities (arXiv:2402.08418, arXiv:2512.11222) were fetched and verified to not address the directed forcing conjecture. Both supplied internal references (arXiv:2312.15333, duplicated) are false positives from the matching pipeline."
+}

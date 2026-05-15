@@ -1,0 +1,21 @@
+{
+  "review_id": "2210.13720__00",
+  "safe_id": "2210.13720",
+  "arxiv_id": "2210.13720",
+  "conjecture_title": "Conjecture 14",
+  "paper_title": "Graphs of Linear Growth have Bounded Treewidth",
+  "published": "2022-10-25",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 14 from arXiv:2210.13720 proposes that every graph with growth at most cr is a subgraph of T \\boxtimes K_{g(c)} for some tree T with linear growth, giving a tight characterisation of linear-growth graphs via tree products. The source paper (Theorem 13) establishes the product structure but only with a tree T that may have exponential growth; the conjecture asks that T itself be constrained to linear growth. No follow-up paper resolving the conjecture was found in a targeted web search covering publications through 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "arXiv 2210.13720 \"linear growth\" treewidth graph cite follow-up 2023 2024",
+    "\"linear growth\" graph \"strong product\" tree \"boxtimes\" treewidth Campbell Distel Gollin Harvey Wood conjecture"
+  ],
+  "notes": "No follow-up found. Related paper arXiv:2206.02395 ('Product Structure of Graph Classes with Bounded Treewidth') predates 2210.13720 and does not address Conjecture 14. arXiv:2410.19295 ('Treewidth, Hadwiger Number, and Induced Minors', 2024) by overlapping authors focuses on Hadwiger number and does not address linear growth or this conjecture. The conjecture is open with high confidence."
+}

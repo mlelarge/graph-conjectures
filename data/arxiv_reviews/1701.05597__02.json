@@ -1,0 +1,33 @@
+{
+  "review_id": "1701.05597__02",
+  "safe_id": "1701.05597",
+  "arxiv_id": "1701.05597",
+  "conjecture_title": "Open Question: first pervasiveness characterisation",
+  "paper_title": "Induced subgraphs of graphs with large chromatic number. VI. Banana trees",
+  "published": "2019-08-27",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "No follow-up paper resolving this open question was found in the indexed literature. The question asks which multigraphs H are 'pervasive' in the weak sense that H-subdivision-free graphs with bounded clique number have bounded chromatic number; banana trees are known to have this property (the main result of arXiv:1701.05597), but a full characterisation remains elusive. The Scott–Seymour chi-boundedness survey (arXiv:1812.07500) covers related material but its full text was inaccessible for verification. The two supplied internal references were verified and are unrelated to this question.",
+  "since_posted": [],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2306.02364",
+      "verified": true,
+      "note": "Paper is about tournament structure (whether large-chromatic-number tournaments contain vertex-disjoint subtournaments with directed edges between them); it does not address H-subdivision-free graphs or the pervasiveness question. Supplied contribution text is incorrect for this conjecture — likely a cross-match artefact."
+    },
+    {
+      "arxiv_id": "2508.14332",
+      "verified": true,
+      "note": "Paper is the fourth instalment of the 'Asymptotic structure' series and provides a counterexample to the weak coarse Menger conjecture; it does not discuss H-subdivision-free graphs, clique number, or chromatic number pervasiveness. Supplied contribution text is incorrect for this conjecture — likely a cross-match artefact."
+    }
+  ],
+  "search_queries": [
+    "Scott Seymour \"subdivision-free\" \"chromatic number\" \"clique number\" pervasive multigraph characterization",
+    "arXiv 1701.05597 Scott Seymour banana trees H-subdivision chromatic number pervasiveness",
+    "Scott Seymour \"pervasive\" multigraph H-subdivision chromatic number characterization 2020 2021 2022 2023 2024"
+  ],
+  "notes": "No follow-up resolution found after 3 web searches and 2 WebFetch calls. The arXiv preprint dates to January 2017 (published 2019), making this an 8-year-old open problem; absence of a found resolution with medium confidence. The chi-boundedness survey arXiv:1812.07500 (Scott–Seymour, 2020) is a likely secondary source but its PDF could not be parsed. Both supplied internal references are false positives from the fuzzy-matching pipeline and do not cite or address this conjecture."
+}

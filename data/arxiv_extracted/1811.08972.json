@@ -1,0 +1,26 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Fabila-Monroy et al. Conjecture (2009)",
+    "statement_text": "$\\chi(\\mathcal{A}_{n})\\in O(\\log n)$.",
+    "context_text": "Fabila-Monroy et al. [10] first studied the chromatic number of the associahedron $\\mathcal{A}_n$, gave an explicit $\\lceil{\\frac{n}{2}}\\rceil$-colouring, and observed $\\chi(\\mathcal{A}_n)\\in O(n/\\log n)$ via Johansson's result on triangle-free graphs. They conjectured the stronger $O(\\log n)$ upper bound. No non-constant lower bound is known; the best known lower bound is $\\chi(\\mathcal{A}_{10})\\geqslant 4$.",
+    "attributed_to": "Fabila-Monroy, Flores-Peñaloza, Huemer, Hurtado, Urrutia, and Wood",
+    "attributed_year": 2009,
+    "paper_contribution": "Proves the conjecture in full by establishing $\\chi(\\mathcal{A}_n)\\in O(\\log n)$ as Theorem 1.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1811.08972",
+    "paper_title": "A logarithmic bound for the chromatic number of the associahedron",
+    "paper_authors": [
+      "Louigi Addario Berry",
+      "Bruce Reed",
+      "Alex Scott",
+      "David R. Wood"
+    ],
+    "published": "2025-02-20",
+    "abs_url": "https://arxiv.org/abs/1811.08972",
+    "source": "html"
+  }
+]

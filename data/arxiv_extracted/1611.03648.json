@@ -1,0 +1,27 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.5",
+    "statement_text": "For $n$ even any $2n$ matchings of size $n$ in any graph have a rainbow matching of size $n$, and for $n$ odd any $2n-1$ matchings of size $n$ have a rainbow matching of size $n$.",
+    "context_text": "Barát, Gyárfás and Sárkőzy considered the rainbow matching problem in general graphs. The conjecture extends Drisko's bipartite theorem to general graphs, distinguishing even and odd $n$. Example 1.8 shows that for $n$ even, $2n-1$ matchings of size $n$ do not always suffice, confirming the case split is necessary.",
+    "attributed_to": "Barát, Gyárfás and Sárkőzy",
+    "attributed_year": null,
+    "paper_contribution": "Proves the weaker bound that any $3n-2$ matchings of size $n$ in any graph have a rainbow matching of size $n$ (Theorem 1.9).",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source — statement appears clean. The abstract uses 'we conjecture' but the body of the paper attributes the conjecture to Barát, Gyárfás and Sárkőzy via citation [7].",
+    "arxiv_id": "1611.03648",
+    "paper_title": "Large rainbow matchings in general graphs",
+    "paper_authors": [
+      "Ron Aharoni",
+      "Eli Berger",
+      "Maria Chudnovsky",
+      "David Howard",
+      "Paul Seymour"
+    ],
+    "published": "2018-07-07",
+    "abs_url": "https://arxiv.org/abs/1611.03648",
+    "source": "pdf"
+  }
+]

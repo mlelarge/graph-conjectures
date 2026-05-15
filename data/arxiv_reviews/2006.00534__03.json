@@ -1,0 +1,23 @@
+{
+  "review_id": "2006.00534__03",
+  "safe_id": "2006.00534",
+  "arxiv_id": "2006.00534",
+  "conjecture_title": "Question 10",
+  "paper_title": "Inverse problems for minimal complements and maximal supplements",
+  "published": "2020-12-30",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Question 10 asks whether the probability that a Bernoulli-p random subset of a finite group G is a minimal complement (or maximal supplement) exhibits a (sharp) threshold as a function of p = p(|G|). The source paper itself provides evidence for threshold behavior: Theorems 1 and 3 there show that for small p the random set is a minimal complement with high probability, and for large p it is not, but the existence and sharpness of a threshold are left open. No follow-up paper resolving this question was found in a broad search of the literature through May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "minimal complement finite group random subset threshold Alon Kravitz Larson 2006.00534",
+    "minimal complement maximal supplement random set threshold probability finite group",
+    "random minimal complement sharp threshold additive combinatorics group 2021 2022 2023 2024 2025",
+    "Noah Kravitz minimal complement finite group random threshold arxiv 2022 2023 2024"
+  ],
+  "notes": "No follow-up paper addressing the threshold question was found. The property of being a minimal complement is non-monotone, which makes standard sharp-threshold machinery (e.g., Friedgut–Kalai) not directly applicable; this non-monotonicity is explicitly noted in the source paper as the main obstacle. Searches on arXiv and via Kravitz's publication list returned no paper on this specific question. Status open with high confidence."
+}

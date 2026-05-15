@@ -1,0 +1,83 @@
+[
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Question 1.1",
+    "statement_text": "Given a graph $\\Gamma$, can we decompose it as the joined union of smaller graphs?",
+    "context_text": "This question is motivated by the study of multilayer networks and phase oscillators, where decomposing a network as a joined union of smaller graphs allows solutions to be broadcast from a reduced representation system to the full network. The paper addresses this question specifically for Cayley graphs using tools from group theory and ring theory.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "The paper answers this question in the special case of Cayley graphs; the general question for arbitrary graphs is classical and studied via modular decomposition theory.",
+    "arxiv_id": "2401.06062",
+    "paper_title": "On prime Cayley graphs",
+    "paper_authors": [
+      "Maria Chudnovsky",
+      "Michal Cizek",
+      "Logan Crew",
+      "Ján Mináč",
+      "Tung T. Nguyen",
+      "Sophie Spirkl",
+      "Nguyên Duy Tân"
+    ],
+    "published": "2024-01-11",
+    "abs_url": "https://arxiv.org/abs/2401.06062",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Question 4.28",
+    "statement_text": "When is $X_{R}$ prime?",
+    "context_text": "$X_R$ denotes the Cayley graph constructed from a finite ring $R$ using its group of units and a connection set derived from the ring structure. This question is the central driving question of Section 4, and is reduced first to the semisimple case (showing non-semisimple $R$ gives non-prime $X_R$) and then to a combinatorial question about tensor products of complete graphs.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "This question appears to be answered within the paper via Theorem 4.35; it is posed as the key structural question leading to the main results.",
+    "arxiv_id": "2401.06062",
+    "paper_title": "On prime Cayley graphs",
+    "paper_authors": [
+      "Maria Chudnovsky",
+      "Michal Cizek",
+      "Logan Crew",
+      "Ján Mináč",
+      "Tung T. Nguyen",
+      "Sophie Spirkl",
+      "Nguyên Duy Tân"
+    ],
+    "published": "2024-01-11",
+    "abs_url": "https://arxiv.org/abs/2401.06062",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Question 4.31",
+    "statement_text": "Let $n_{1},\\ldots,n_{d}$ be positive integers. When is $\\prod_{i=1}^{d}K_{n_{i}}$ prime?",
+    "context_text": "For a semisimple ring $R = \\prod_{i=1}^d k_i$ (a product of finite fields of sizes $q_i$), the associated Cayley graph satisfies $X_R \\cong \\prod_{i=1}^d K_{q_i}$, reducing Question 4.28 for the semisimple case to this combinatorial question about tensor products (Kronecker products) of complete graphs. The vertex set of $\\prod_{i=1}^d K_{n_i}$ consists of $d$-tuples $(s_1,\\ldots,s_d)$ with two vertices adjacent iff they differ in every coordinate.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "This question is addressed by Theorem 4.35 within the paper; it is the combinatorial core to which the algebraic problem of Question 4.28 is reduced.",
+    "arxiv_id": "2401.06062",
+    "paper_title": "On prime Cayley graphs",
+    "paper_authors": [
+      "Maria Chudnovsky",
+      "Michal Cizek",
+      "Logan Crew",
+      "Ján Mináč",
+      "Tung T. Nguyen",
+      "Sophie Spirkl",
+      "Nguyên Duy Tân"
+    ],
+    "published": "2024-01-11",
+    "abs_url": "https://arxiv.org/abs/2401.06062",
+    "source": "html"
+  }
+]

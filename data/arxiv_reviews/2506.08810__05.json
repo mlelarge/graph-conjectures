@@ -1,0 +1,23 @@
+{
+  "review_id": "2506.08810__05",
+  "safe_id": "2506.08810",
+  "arxiv_id": "2506.08810",
+  "conjecture_title": "Conjecture 26",
+  "paper_title": "Infinite induced-saturated graphs",
+  "published": "2025-09-01",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 26 of arXiv:2506.08810 proposes an edge-coloured analogue of the paper's main theorem: given any k-colouring c of the edges of a finite clique K using every colour, there should exist a colouring of the complete countably infinite graph such that every locally finite perturbation contains a copy of K with colouring c. The source paper was published in the Canadian Journal of Mathematics (online March 2026) but no follow-up work addressing this specific conjecture was found in an extensive web search.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Bonamy Groenland Johnston Morrison Scott \"induced-saturated\" infinite graphs 2506.08810",
+    "\"locally finite perturbation\" \"edge-coloured\" \"complete countably infinite graph\" conjecture",
+    "induced-saturated infinite graphs \"locally finite perturbation\" edge colouring Bonamy 2025 2026",
+    "arxiv 2506.08810 cite \"edge-coloured\" \"complete graph\" \"locally finite\" infinite 2025 2026"
+  ],
+  "notes": "The source paper appeared in the Canadian Journal of Mathematics (published online 2026-03-24). Conjecture 26 is a proposed edge-coloured analogue of the paper's central Theorem 1, stated without attribution to prior work. No follow-up paper resolving or partially addressing this conjecture was found; the conjecture is recent (< 1 year old) and absence of evidence is strong evidence it remains open."
+}

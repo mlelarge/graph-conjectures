@@ -1,0 +1,37 @@
+{
+  "review_id": "2001.03794__00",
+  "safe_id": "2001.03794",
+  "arxiv_id": "2001.03794",
+  "conjecture_title": "FPT on $H_{t,t}$-free graphs for Grundy Coloring and b-Chromatic Core",
+  "paper_title": "Grundy Coloring & friends, Half-Graphs, Bicliques",
+  "published": "2020-01-11",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The question of whether Grundy Coloring and b-Chromatic Core are FPT on $H_{t,t}$-free graphs (parameterized by $k$) was explicitly left open in the source paper and remains unresolved as of 2026. A STACS 2025 paper (arXiv:2410.20629) establishes FPT for Grundy Coloring on $K_{i,j}$-free graphs and for Partial Grundy Coloring on general graphs, advancing the broader parameterized landscape for greedy coloring problems, but does not directly address the $H_{t,t}$-free case. No paper resolving or disproving the conjecture was found.",
+  "since_posted": [
+    {
+      "title": "Parameterized Saga of First-Fit and Last-Fit Coloring",
+      "authors": "not confirmed in fetch",
+      "year": 2025,
+      "venue": "STACS 2025 (LIPIcs, vol. 327)",
+      "url": "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.STACS.2025.5",
+      "arxiv_id": "2410.20629",
+      "doi": "10.4230/LIPIcs.STACS.2025.5",
+      "kind": "partial",
+      "claim": "Proves FPT algorithms for Partial Grundy Coloring on general graphs and for Grundy Coloring on $K_{i,j}$-free graphs, the closest known advance to the $H_{t,t}$-free question, but the $H_{t,t}$-free case is not settled."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Grundy Coloring b-Chromatic Core FPT half-graphs H_{t,t}-free fixed-parameter tractable",
+    "Grundy Coloring fixed-parameter tractable half-graphs Aboulker Bonnet Kim Sikora 2001.03794",
+    "arxiv:2412.10082 Grundy Coloring dense graphs cluster modulator FPT",
+    "LIPIcs.STACS.2025.5 Parameterized Saga First-Fit Last-Fit Coloring K_{i,j}-free",
+    "arxiv:2410.20629 Grundy Coloring Partial Grundy K_{i,j}-free FPT general graphs",
+    "\"H_{t,t}-free\" OR \"half-graph-free\" Grundy Coloring FPT parameterized 2021 2022 2023 2024 2025"
+  ],
+  "notes": "The source paper already achieves FPT on $K_{t,t}$-free graphs for b-Chromatic Core and Partial Grundy Coloring; the open question is whether excluding $H_{t,t}$ (the half-graph, which drives the W[1]-hardness construction) suffices to give FPT for the full Grundy Coloring and b-Chromatic Core. The key combinatorial lemma for $K_{t,t}$-free graphs was shown to collapse on $H_{t,t}$-free graphs. The STACS 2025 result on $K_{i,j}$-free graphs is the closest known related progress but does not directly resolve the conjecture. No follow-up resolving or disproving the $H_{t,t}$-free case was found in the indexed literature."
+}

@@ -1,0 +1,24 @@
+[
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.4",
+    "statement_text": "For every fixed positive $p \\leq 1$, Erdős-Rényi random graph $G(n, 1-p)$ a.a.s. has correspondence chromatic number $\\Theta(n/\\log n)$.",
+    "context_text": "Theorem 1.1 gives the upper bound $O(n/\\sqrt{\\log n})$, and both extreme cases of the correspondence assignment—matching the list-coloring setting and a fully random assignment for $K_n$ (Theorem 1.3)—only require $O(n/\\log n)$ colors. The authors suspect the upper bound can be improved to match the lower bound $\\Omega(n/\\log n)$ coming from the independence number. They also note that a disproof would yield a new example separating list and correspondence chromatic numbers.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "PDF source; special characters (Erdős-Rényi) rendered via ASCII in extraction but mathematical content is unambiguous.",
+    "arxiv_id": "2307.15048",
+    "paper_title": "Correspondence coloring of random graphs",
+    "paper_authors": [
+      "Zdenek Dvorak",
+      "Liana Yepremyan"
+    ],
+    "published": "2023-07-27",
+    "abs_url": "https://arxiv.org/abs/2307.15048",
+    "source": "pdf"
+  }
+]

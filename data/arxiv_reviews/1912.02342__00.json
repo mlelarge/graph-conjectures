@@ -1,0 +1,59 @@
+{
+  "review_id": "1912.02342__00",
+  "safe_id": "1912.02342",
+  "arxiv_id": "1912.02342",
+  "conjecture_title": "Conjecture 4.1",
+  "paper_title": "Bounded VC-dimension implies the Schur-Erdos conjecture",
+  "published": "2019-12-05",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "solved",
+  "confidence": "high",
+  "summary": "Conjecture 4.1 from arXiv:1912.02342 has been fully resolved. Nguyen, Scott, and Seymour (arXiv:2312.15572, 2023) proved that for every d > 0, every n-vertex graph of VC-dimension at most d contains a clique or stable set of size at least n^c for an explicit constant c > 0 depending only on d, with the bound c_d ≥ 2^{-2^{O(d)}}. The proof also settles a related conjecture of Chernikov, Starchenko, and Thomas on graphs definable in NIP structures.",
+  "since_posted": [
+    {
+      "title": "Induced subgraph density. VI. Bounded VC-dimension",
+      "authors": "Tung Nguyen, Alex Scott, Paul Seymour",
+      "year": 2023,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2312.15572",
+      "arxiv_id": "2312.15572",
+      "doi": null,
+      "kind": "proof",
+      "claim": "Proves the conjecture in full: for every d > 0 there exists c > 0 such that every n-vertex graph of VC-dimension at most d contains a clique or stable set of size at least n^c, with explicit bound c_d ≥ 2^{-2^{O(d)}}."
+    }
+  ],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2312.15572",
+      "verified": true,
+      "note": "Abstract confirmed via WebFetch: paper proves exactly Conjecture 4.1; also settles the Chernikov–Starchenko–Thomas conjecture on NIP-definable graphs and the Erdős–Hajnal conjecture for six-vertex tournaments."
+    },
+    {
+      "arxiv_id": "2403.08303",
+      "verified": true,
+      "note": "Paper confirmed via WebFetch: establishes equivalence of Erdős–Hajnal, polynomial Rödl, and polynomial Nikiforov conjectures; does not directly address the VC-dimension specialisation (Conjecture 4.1 from arXiv:1912.02342)."
+    },
+    {
+      "arxiv_id": "2012.03686",
+      "verified": false,
+      "note": "Not fetched; contribution text describes a degeneracy result for C_{≥t}-free graphs excluding large complete bipartite subgraphs, drawn as an analogue of Fox–Sudakov's biclique result, not directly about VC-dimension or Conjecture 4.1."
+    },
+    {
+      "arxiv_id": "2004.12166",
+      "verified": false,
+      "note": "Not fetched; contribution text is about an algorithmic weakening of the Erdős–Hajnal conjecture and graph substitution closure, not specifically about the VC-dimension polynomial bound."
+    },
+    {
+      "arxiv_id": "2307.06455",
+      "verified": false,
+      "note": "Not fetched; contribution text concerns new graph classes satisfying the Erdős–Hajnal property via equivalences proved by Bucić–Fox–Pham, not directly about VC-dimension."
+    }
+  ],
+  "search_queries": [
+    "arxiv:2312.15572 Nguyen Scott Seymour induced subgraph density VC-dimension",
+    "arxiv:2403.08303 Bucic Fox Pham Erdos-Hajnal polynomial Rodl Nikiforov"
+  ],
+  "notes": "The conjecture is solved by arXiv:2312.15572 (Nguyen, Scott, Seymour, submitted December 2023, revised September 2025). The internal reference entry for this paper was verified by WebFetch and confirms the proof matches Conjecture 4.1 exactly. The two internal reference entries for arXiv:2403.08303 concern a related but distinct set of equivalences among Erdős–Hajnal and polynomial Rödl/Nikiforov conjectures and do not directly resolve Conjecture 4.1."
+}

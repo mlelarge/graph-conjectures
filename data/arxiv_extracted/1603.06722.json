@@ -1,0 +1,27 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1 (Plummer-Toft Conjecture)",
+    "statement_text": "Every 3-connected plane graph with maximum face size $\\Delta^\\star$ has a cyclic coloring with at most $\\Delta^\\star + 2$ colors.",
+    "context_text": "Plummer and Toft conjectured in 1987 that 3-connectivity removes the tight examples (which have degree-2 vertices) that force the $\\lfloor 3\\Delta^\\star/2 \\rfloor$ bound of the general Cyclic Coloring Conjecture, allowing a much smaller bound of $\\Delta^\\star + 2$. Prior to this paper the conjecture had been established for $\\Delta^\\star \\in \\{3,4\\}$ and for all $\\Delta^\\star \\geq 18$, leaving a finite gap of open cases.",
+    "attributed_to": "Plummer and Toft",
+    "attributed_year": 1987,
+    "paper_contribution": "Proves the conjecture for $\\Delta^\\star = 16$ and $\\Delta^\\star = 17$ using the discharging method with computer-verified reducible configurations, closing two of the remaining open cases.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1603.06722",
+    "paper_title": "Cyclic Coloring of Plane Graphs with Maximum Face Size 16 and 17",
+    "paper_authors": [
+      "Zdenek Dvorak",
+      "Michael Hebdige",
+      "Filip Hlasek",
+      "Daniel Kral",
+      "Jonathan Noel"
+    ],
+    "published": "2020-12-08",
+    "abs_url": "https://arxiv.org/abs/1603.06722",
+    "source": "pdf"
+  }
+]

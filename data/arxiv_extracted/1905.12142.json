@@ -1,0 +1,71 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.3 (Alon–Hefetz–Krivelevich–Tyomkyn)",
+    "statement_text": "Suppose $k \\to \\infty$ and $n/k \\to \\infty$, and consider $\\ell$ satisfying $\\binom{k}{2} - \\ell = \\Omega(k^2)$ and $\\ell = \\Omega(k^2)$. Then $\\Pr(X_{G,k} = \\ell) = O\\!\\left(1/\\sqrt{k}\\right)$.",
+    "context_text": "Alon, Hefetz, Krivelevich and Tyomkyn initiated the study of anti-concentration of $X_{G,k}$ (edges induced by a uniformly random $k$-subset of an $n$-vertex graph $G$), motivated by connections to graph inducibility. Prior to this paper, Kwan, Sudakov and Tran proved the weaker bound $(\\log k)^{O(1)}/\\sqrt{k}$ using the Meka–Nguyen–Vu polynomial anti-concentration inequality.",
+    "attributed_to": "Alon, Hefetz, Krivelevich, and Tyomkyn",
+    "attributed_year": null,
+    "paper_contribution": "Proves a stronger Bernoulli-model version for $r$-uniform hypergraphs (Proposition 1.6): if $\\ell = \\Omega(k^r)$ then $\\Pr(|X^{\\mathrm{Ber}}_{G,k} - \\ell| \\leq k^{r-1}) = O(1/\\sqrt{k})$, removing the polylogarithmic factor via Theorem 1.2.",
+    "opg_lookup": true,
+    "confidence": "low",
+    "notes": "PDF source — the hypothesis on $\\ell$ is garbled in the extraction; statement reconstructed from context and the discussion of Proposition 1.6.",
+    "arxiv_id": "1905.12142",
+    "paper_title": "Combinatorial anti-concentration inequalities, with applications",
+    "paper_authors": [
+      "Jacob Fox",
+      "Matthew Kwan",
+      "Lisa Sauermann"
+    ],
+    "published": "2020-11-18",
+    "abs_url": "https://arxiv.org/abs/1905.12142",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.5 (Alon–Hefetz–Krivelevich–Tyomkyn)",
+    "statement_text": "Suppose $k \\to \\infty$ and $n$ grows sufficiently rapidly in terms of $k$. Then for all $0 < \\ell < \\binom{k}{2}$ we have $\\Pr(X_{G,k} = \\ell) \\leq 1/e + o(1)$.",
+    "context_text": "This is the central conjecture of Alon, Hefetz, Krivelevich and Tyomkyn on edge-statistics of random induced subgraphs, and the primary motivation for this paper's development of Poisson-type anti-concentration inequalities. The conjecture was proved independently by Fox–Sauermann [19] and Martinsson–Mousset–Noever–Trujić [29] before this paper's completion.",
+    "attributed_to": "Alon, Hefetz, Krivelevich, and Tyomkyn",
+    "attributed_year": null,
+    "paper_contribution": "Proves a Bernoulli-model analogue for $r$-uniform hypergraphs (Proposition 1.7): if $n/k \\to \\infty$ and $\\ell \\neq 0$, then for any $r$-uniform hypergraph $G$, $\\Pr(X^{\\mathrm{Ber}}_{G,k} = \\ell) \\leq 1/e + o(1)$, as a consequence of the new Theorem 1.10.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1905.12142",
+    "paper_title": "Combinatorial anti-concentration inequalities, with applications",
+    "paper_authors": [
+      "Jacob Fox",
+      "Matthew Kwan",
+      "Lisa Sauermann"
+    ],
+    "published": "2020-11-18",
+    "abs_url": "https://arxiv.org/abs/1905.12142",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.12",
+    "statement_text": "Fix $p \\in (0,1)$ and fix a graph $H$ with $h$ non-isolated vertices. Let $G \\in G(n,p)$. Then for any $x \\in \\mathbb{N}$, $$\\Pr(X_H = x) = O\\!\\left(1/\\sqrt{\\mathrm{Var}(X_H)}\\right) = O\\!\\left(1/n^{h-1}\\right).$$",
+    "context_text": "The authors establish via Corollary 1.11 that $\\Pr(X_H = x) = O(1/\\sqrt{r})$ where $r$ is the number of edge-disjoint copies of $H$ in $G$, giving $O(1/n)$ in $G(n,p)$, but believe this is far from optimal. The conjectured bound matches the Gaussian scale and is best-possible given the known CLT for $X_H$. Theorem 1.14 confirms the conjecture for cliques $H = K_h$.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1905.12142",
+    "paper_title": "Combinatorial anti-concentration inequalities, with applications",
+    "paper_authors": [
+      "Jacob Fox",
+      "Matthew Kwan",
+      "Lisa Sauermann"
+    ],
+    "published": "2020-11-18",
+    "abs_url": "https://arxiv.org/abs/1905.12142",
+    "source": "pdf"
+  }
+]

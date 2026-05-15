@@ -1,0 +1,25 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Polynomial-time algorithm conjecture for the crossing-exchange-and-smoothing relation [42]",
+    "statement_text": "For each fixed link $L$, there is a polynomial-time algorithm that solves $\\succcurlyeq L$. That is, there is a polynomial $p(n)$ and an algorithm $A_L$ that takes as input any diagram $D$ with $n$ crossings, and answers whether or not $D \\succcurlyeq L$ in at most $p(n)$ steps.",
+    "context_text": "The relation $D \\succcurlyeq L$ holds if there is a sequence of crossing exchanges and smoothings taking diagram $D$ to a diagram of link $L$. Reference [42] proved polynomial-time algorithms when $L$ is a torus link $T_{2,m}$ or a twist knot, and when $L$ is any prime link with crossing number at most 5, and conjectured that such algorithms exist for every fixed link $L$.",
+    "attributed_to": "authors of reference [42]",
+    "attributed_year": null,
+    "paper_contribution": "Proves the conjecture completely: using the well-quasi-order of plane minors (Theorem 1.1) and an $O(n^2 \\log n)$ sphere-minor testing algorithm (Theorem 1.3), the paper establishes that for each fixed link $L$ there is an $O(n^2 \\log n)$ algorithm deciding whether $D \\succcurlyeq L$ for any input diagram $D$ on $n$ crossings (Theorem 1.4).",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source — the relation symbol is rendered as '(cid:59)' in the extraction and is likely a custom or Unicode symbol for the crossing-exchange-and-smoothing relation; approximated here as $\\succcurlyeq$. The full identity of reference [42] cannot be determined from the available text (bibliography section is garbled in the PDF extraction).",
+    "arxiv_id": "1905.01830",
+    "paper_title": "Well-quasi-order of plane minors and an application to link diagrams",
+    "paper_authors": [
+      "Carolina Medina",
+      "Bojan Mohar",
+      "Gelasio Salazar"
+    ],
+    "published": "2019-05-06",
+    "abs_url": "https://arxiv.org/abs/1905.01830",
+    "source": "pdf"
+  }
+]

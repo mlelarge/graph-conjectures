@@ -1,0 +1,74 @@
+[
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Dujmović et al. Question (bounded pathwidth, general graphs)",
+    "statement_text": "Is the Thue choice number $\\pi_l(G)$ bounded by a function of the pathwidth of $G$, for every graph $G$ of bounded pathwidth?",
+    "context_text": "Dujmović et al. observed that $\\pi_l(G)$ is bounded when $G$ has pathwidth 1 (since such graphs are caterpillars) and asked whether this extends to all graphs of bounded pathwidth, given that the Thue chromatic number $\\pi(G)$ is indeed bounded for pathwidth-$k$ graphs. This paper answers the question negatively via Theorem 1.",
+    "attributed_to": "Dujmović et al.",
+    "attributed_year": null,
+    "paper_contribution": "Proves that for every $\\ell \\geq 1$ there exists a graph $G$ of pathwidth 2 with $\\pi_l(G) \\geq \\ell$, giving a definitive negative answer.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "No labelled theorem environment; question described in prose of the introduction with attribution to reference [6].",
+    "arxiv_id": "1601.01886",
+    "paper_title": "Pathwidth and nonrepetitive list coloring",
+    "paper_authors": [
+      "Adam Gągol",
+      "Gwenaël Joret",
+      "Jakub Kozik",
+      "Piotr Micek"
+    ],
+    "published": "2016-10-02",
+    "abs_url": "https://arxiv.org/abs/1601.01886",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Dujmović et al. Question (bounded pathwidth, trees)",
+    "statement_text": "Is the Thue choice number $\\pi_l(T)$ bounded by a function of the pathwidth of $T$, for every tree $T$ of bounded pathwidth?",
+    "context_text": "Dujmović et al. also asked this restricted version of the pathwidth question for trees, motivated partly by the fact that the trees with arbitrarily large Thue choice number constructed by Fiorenzi et al. also have unbounded pathwidth. This paper answers the question positively via Theorem 2.",
+    "attributed_to": "Dujmović et al.",
+    "attributed_year": null,
+    "paper_contribution": "Proves there exists a function $b:\\mathbb{N}\\to\\mathbb{N}$ (doubly exponential in $k$) such that $\\pi_l(T) \\leq b(k)$ for every tree $T$ of pathwidth $k$.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "No labelled theorem environment; question described in prose of the introduction with attribution to reference [6].",
+    "arxiv_id": "1601.01886",
+    "paper_title": "Pathwidth and nonrepetitive list coloring",
+    "paper_authors": [
+      "Adam Gągol",
+      "Gwenaël Joret",
+      "Jakub Kozik",
+      "Piotr Micek"
+    ],
+    "published": "2016-10-02",
+    "abs_url": "https://arxiv.org/abs/1601.01886",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Optimality of factor 2 in Lemma 4",
+    "statement_text": "We do not know whether the factor 2 is unavoidable in the bound of Lemma 4, which states that every tree of pathwidth $k$ has a path-partition of height at most $2k$.",
+    "context_text": "Lemma 4 is a key structural tool used in the proof of Theorem 2. The authors note that they made no effort to optimise the bound and leave open whether the factor 2 can be reduced.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated as 'we do not know whether the factor 2 is unavoidable' in prose immediately following the proof of Lemma 4; no labelled environment.",
+    "arxiv_id": "1601.01886",
+    "paper_title": "Pathwidth and nonrepetitive list coloring",
+    "paper_authors": [
+      "Adam Gągol",
+      "Gwenaël Joret",
+      "Jakub Kozik",
+      "Piotr Micek"
+    ],
+    "published": "2016-10-02",
+    "abs_url": "https://arxiv.org/abs/1601.01886",
+    "source": "pdf"
+  }
+]

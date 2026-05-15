@@ -1,0 +1,89 @@
+{
+  "review_id": "1612.08698__00",
+  "safe_id": "1612.08698",
+  "arxiv_id": "1612.08698",
+  "conjecture_title": "Problem 1",
+  "paper_title": "List coloring with requests",
+  "published": "2018-11-17",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Problem 1 remains open in full generality: no paper has proved epsilon-flexibility for all d-degenerate graphs with (d+1)-lists for every d >= 2. Substantial partial progress exists: the d=2 case has been confirmed for planar graphs of girth >= 6 (lists of size 3) and for all graphs of maximum average degree < 3; the d=3 case has been confirmed for triangle-free planar graphs (lists of size 4); and epsilon-flexibility has been established for graphs of treewidth 2, treedepth k, and bipartite d-degenerate graphs. The general conjecture for arbitrary d-degenerate graphs with (d+1)-lists remains open for d >= 2.",
+  "since_posted": [
+    {
+      "title": "Flexibility of triangle-free planar graphs",
+      "authors": "Zdeněk Dvořák, Tomáš Masařík, Jan Musílek, Ondřej Pangrác",
+      "year": 2019,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/1902.02971",
+      "arxiv_id": "1902.02971",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves that triangle-free planar graphs (which are 3-degenerate) with lists of size at least four are weighted epsilon-flexible for some constant epsilon > 0, resolving the conjecture for this class."
+    },
+    {
+      "title": "Flexibility of planar graphs of girth at least six",
+      "authors": "Zdeněk Dvořák, Tomáš Masařík, Jan Musílek, Ondřej Pangrác",
+      "year": 2019,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/1902.04069",
+      "arxiv_id": "1902.04069",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves that planar graphs of girth at least six (which are 2-degenerate) with lists of size three are weighted epsilon-flexible, resolving the d=2 case for this subclass."
+    },
+    {
+      "title": "Flexible List Colorings in Graphs with Special Degeneracy Conditions",
+      "authors": "Peter Bradshaw, Tomáš Masařík, Ladislav Stacho",
+      "year": 2020,
+      "venue": "ISAAC 2020 (LIPIcs)",
+      "url": "https://arxiv.org/abs/2006.15837",
+      "arxiv_id": "2006.15837",
+      "doi": "10.4230/LIPIcs.ISAAC.2020.31",
+      "kind": "partial",
+      "claim": "Proves epsilon-flexibility for graphs of treewidth 2 (which are (1/3)-flexibly 3-choosable), treedepth k graphs, and characterizes which maximum-degree-Delta graphs are epsilon-flexibly Delta-choosable."
+    },
+    {
+      "title": "Flexible list colorings: Maximizing the number of requests satisfied",
+      "authors": "Hemanshu Kaul, Rogers Mathew, Jeffrey A. Mudrock, Michael J. Pelsmajer",
+      "year": 2022,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2211.09048",
+      "arxiv_id": "2211.09048",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Extends flexibility results to bipartite d-degenerate graphs and introduces the list flexibility number, without resolving the full conjecture for arbitrary d-degenerate graphs."
+    },
+    {
+      "title": "Flexible list coloring of graphs with maximum average degree less than 3",
+      "authors": "Richard Bi, Peter Bradshaw",
+      "year": 2023,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2310.02979",
+      "arxiv_id": "2310.02979",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves that every graph with maximum average degree less than 3 is epsilon-flexibly 3-choosable, resolving the d=2 case of the conjecture for a broad class of 2-degenerate graphs (including planar graphs of girth >= 6)."
+    }
+  ],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "1902.02971",
+      "verified": true,
+      "note": "Confirmed: proves weighted epsilon-flexibility for triangle-free planar graphs with lists of size >= 4. Abstract matches the claimed contribution exactly."
+    },
+    {
+      "arxiv_id": "1902.04069",
+      "verified": true,
+      "note": "Confirmed: proves weighted epsilon-flexibility for planar graphs of girth >= 6 with lists of size 3. Abstract matches the claimed contribution exactly."
+    }
+  ],
+  "search_queries": [
+    "d-degenerate graph epsilon-flexible list coloring size d+1 Dvorak Norin Postle 1612.08698",
+    "flexible list colorings special degeneracy conditions Bradshaw Masarik Stacho",
+    "flexible list coloring maximum average degree less than 3 Bi Bradshaw"
+  ],
+  "notes": "The conjecture splits into two sub-questions (epsilon-flexible vs. weighted epsilon-flexible); partial results address both variants. The d=1 case (forests with 2-lists) was settled in the original paper. For d=2, several major subclasses are now resolved including maximum average degree < 3 (Bi-Bradshaw 2023). For d=3, triangle-free planar graphs are settled. The full conjecture for arbitrary d-degenerate graphs remains open for d >= 2."
+}

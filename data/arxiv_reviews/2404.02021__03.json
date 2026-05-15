@@ -1,0 +1,42 @@
+{
+  "review_id": "2404.02021__03",
+  "safe_id": "2404.02021",
+  "arxiv_id": "2404.02021",
+  "conjecture_title": "Conjecture 4.7",
+  "paper_title": "On off-diagonal hypergraph Ramsey numbers",
+  "published": "2024-04-02",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 4.7 asks for an absolute constant C > 0 such that r(F, K_n^(3)) ≤ 2^{O_F(n^C)} for every fixed linear 3-graph F. The source paper itself (Theorem 1.4) disproves the stronger polynomial upper bound, motivating this weaker subexponential form. A 2024 follow-up by essentially the same author group (arXiv:2411.13812) characterizes polynomial growth of r(H, K_n^(3)) for tightly connected and sparse-component 3-graphs, but does not establish any subexponential upper bound for arbitrary linear 3-graphs; the conjecture remains open.",
+  "since_posted": [
+    {
+      "title": "When are off-diagonal hypergraph Ramsey numbers polynomial?",
+      "authors": "Conlon, Fox, Gunby, He, Mubayi, Suk, Verstraete, Yu",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2411.13812",
+      "arxiv_id": "2411.13812",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Characterizes polynomial growth of r(H, K_n^(3)) for tightly connected and sparse-component 3-graphs (showing polynomial iff H is contained in an iterated blowup of an edge), confirms superpolynomial growth for some linear 3-graphs, but does not prove the subexponential upper bound asserted in Conjecture 4.7."
+    }
+  ],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2312.15572",
+      "verified": false,
+      "note": "WebFetch confirms this paper is 'Induced subgraph density. VI. Bounded VC-dimension' by Nguyen, Scott, Seymour, which proves that graphs of bounded VC-dimension contain large cliques or stable sets. It is entirely unrelated to off-diagonal hypergraph Ramsey numbers r(F, K_n^(3)) for linear 3-graphs; the attributed contribution is a false match."
+    }
+  ],
+  "search_queries": [
+    "off-diagonal hypergraph Ramsey linear 3-graph subexponential Conlon Fox Mubayi Suk 2404.02021",
+    "r(F, K_n) linear 3-uniform hypergraph Ramsey number upper bound 2^{n^C}",
+    "WebFetch arxiv.org/abs/2312.15572 title and abstract verification",
+    "WebFetch arxiv.org/abs/2411.13812 abstract and main results",
+    "WebFetch arxiv.org/html/2411.13812 reference to Conjecture 4.7 and subexponential linear 3-graph bounds"
+  ],
+  "notes": "The internal reference arXiv:2312.15572 does not address this conjecture — it is about VC-dimension in graphs, not hypergraph Ramsey theory, and should be discarded as a false positive. The most relevant post-statement work is arXiv:2411.13812 (same authors + Yu), which tackles the related polynomial-characterization question but leaves the subexponential conjecture fully open."
+}

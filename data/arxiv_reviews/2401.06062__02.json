@@ -1,0 +1,24 @@
+{
+  "review_id": "2401.06062__02",
+  "safe_id": "2401.06062",
+  "arxiv_id": "2401.06062",
+  "conjecture_title": "Question 4.31",
+  "paper_title": "On prime Cayley graphs",
+  "published": "2024-01-11",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Question 4.31 from arXiv:2401.06062 asks for a characterization of when the tensor product $\\prod_{i=1}^d K_{n_i}$ (vertices are $d$-tuples, adjacent iff differing in every coordinate) is prime. The source paper was published in the Journal of Combinatorics (2026, vol. 17, no. 2, pp. 223–252), where the question appears as an open problem. No follow-up paper specifically resolving this combinatorial question was found in a targeted literature search.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "prime Cayley graphs tensor product complete graphs K_n primality 2401.06062",
+    "Kronecker product complete graphs prime graph Chudnovsky Spirkl 2024",
+    "tensor product complete graphs prime \"differ in every coordinate\" graph theory 2024 2025",
+    "prime Cayley graphs \"complete graph\" \"tensor product\" primality characterization arxiv 2024 2025 2026",
+    "\"prime Cayley graphs\" Chudnovsky Cizek Crew Minac Nguyen Spirkl 2024 follow-up citing"
+  ],
+  "notes": "The source paper itself was published in the Journal of Combinatorics (2026). Question 4.31 arises as the combinatorial core of the semisimple ring case of a broader open problem (Question 4.28) about primality of ring Cayley graphs. No follow-up paper resolving or partially resolving this question was found after 5 web queries."
+}

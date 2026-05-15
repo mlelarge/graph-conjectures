@@ -1,0 +1,48 @@
+[
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Problem 8",
+    "statement_text": "Improve the range of $|S|$ in Theorem 1.",
+    "context_text": "Theorem 1 establishes that if $q$ is an odd prime power and $S\\subseteq\\mathbb{F}_{q}$ with $0\\in S$ and $|S|>(q+1)/2$, then any $A\\subseteq\\mathbb{F}_{q}^{n}$ containing no three-term arithmetic progression with common difference in $S^{n}$ satisfies $|A|\\leq q^{(1-\\varepsilon_{q})n}$. The problem asks whether the condition $|S|>(q+1)/2$ can be weakened.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2605.13628",
+    "paper_title": "A note on arithmetic progressions with restricted differences",
+    "paper_authors": [
+      "David Conlon",
+      "Jacob Fox",
+      "Huy Tuan Pham"
+    ],
+    "published": "2026-05-13",
+    "abs_url": "https://arxiv.org/abs/2605.13628",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Problem 9",
+    "statement_text": "Is there an arithmetic triangle removal lemma with restricted differences?",
+    "context_text": "The multicolor sum-free result was used to prove an arithmetic triangle removal lemma in $\\mathbb{F}_{q}^{n}$. In line with this, it is natural to wonder if there is a restricted differences version extending Theorem 2.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2605.13628",
+    "paper_title": "A note on arithmetic progressions with restricted differences",
+    "paper_authors": [
+      "David Conlon",
+      "Jacob Fox",
+      "Huy Tuan Pham"
+    ],
+    "published": "2026-05-13",
+    "abs_url": "https://arxiv.org/abs/2605.13628",
+    "source": "html"
+  }
+]

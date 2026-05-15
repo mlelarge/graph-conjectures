@@ -1,0 +1,22 @@
+{
+  "review_id": "2510.11311__01",
+  "safe_id": "2510.11311",
+  "arxiv_id": "2510.11311",
+  "conjecture_title": "Question 6.2",
+  "paper_title": "Extending Thomassen's conjecture to directed graphs",
+  "published": "2025-10-13",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Question 6.2 asks whether every digraph admitting a height function is non-avoidable, motivated by the observation that all digraphs proved non-avoidable in the paper (one-directed complete bipartite graphs and oriented trees) do allow a height function. The paper was posted in October 2025 and no follow-up resolving this question was found in the literature as of May 2026. The question remains open alongside related open problems (Conjecture 6.1 on odd-cycle orientations, Questions 6.3–6.4 on C4 orientations), all part of the broader program of characterizing avoidable digraphs.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Christoph Janzer Petrova Steiner \"Extending Thomassen's conjecture to directed graphs\" avoidable digraphs height function 2025",
+    "digraph avoidable height function non-avoidable Thomassen conjecture directed graphs arxiv 2510.11311",
+    "avoidable digraph \"height function\" non-avoidable characterization graph theory 2025 2026"
+  ],
+  "notes": "No follow-up paper addressing Question 6.2 found after 3 web searches and fetching both the arXiv abstract page and the HTML full text. The question is recent (October 2025) and is explicitly posed as open by the authors. The HTML version of the paper confirms the exact statement and motivation of Question 6.2."
+}

@@ -1,0 +1,21 @@
+{
+  "review_id": "2503.20045__00",
+  "safe_id": "2503.20045",
+  "arxiv_id": "2503.20045",
+  "conjecture_title": "Question 1.1",
+  "paper_title": "Orientations of cycles in digraphs of high chromatic number and high minimum out-degree",
+  "published": "2025-03-25",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "solved",
+  "confidence": "high",
+  "summary": "Question 1.1 is the chromatic-threshold problem for odd cycles: for which ε>0 and k>0 does every graph with minimum degree at least ε|V(G)| that contains no C_{2k+1} have bounded chromatic number? This is fully resolved by pre-existing literature cited in the source paper itself. Thomassen proved the answer affirmative for k≥2 at all ε>0 and for k=1 at all ε>1/3; Erdős–Simonovits–Hajnal showed no such bound exists for k=1 when ε<1/3; and Allen, Böttcher, Griffiths, Kohayakawa, and Morris completely resolved the chromatic-threshold problem for all fixed graphs. The question is presented as known background motivation for the paper's novel digraph generalization.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Koerts Moore Spirkl odd cycle chromatic number minimum degree 2025 digraphs",
+    "arXiv 2503.20045 Question 1.1 odd cycle chromatic number epsilon"
+  ],
+  "notes": "Question 1.1 is resolved entirely by literature predating the source paper; no post-2025 follow-up is needed or found. The complete resolution comes from Thomassen (affirmative cases) and Allen–Böttcher–Griffiths–Kohayakawa–Morris (full chromatic threshold characterisation for all graphs). The source paper's contribution is the digraph analogue of this result, published in Combinatorica (March 2026). arXiv:2511.18961 (Wang, 2025) addresses related cycle-length and minimum-degree questions but does not reference 2503.20045 or this specific question."
+}

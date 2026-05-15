@@ -1,0 +1,48 @@
+[
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Question 1",
+    "statement_text": "Assuming only that each $a_i \\neq 0$, what geometric constraints can be imposed on a set $S \\subset \\mathbb{R}^d$ which imply non-trivial uniform upper bounds on $\\Pr(X \\in S)$?",
+    "context_text": "The paper introduces a new generalisation of the Littlewood–Offord problem to $\\mathbb{R}^d$ in which no assumption is made on the sizes of the nonzero vectors $a_1,\\ldots,a_n$, only that they are nonzero. The authors observe that this makes the question much more about the geometry of $S$ than about spatial anti-concentration of $X = a_1\\xi_1 + \\cdots + a_n\\xi_n$, giving it a very different flavour from previous Littlewood–Offord variants.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2106.04894",
+    "paper_title": "Geometric and o-minimal Littlewood-Offord problems",
+    "paper_authors": [
+      "Jacob Fox",
+      "Matthew Kwan",
+      "Hunter Spink"
+    ],
+    "published": "2022-06-14",
+    "abs_url": "https://arxiv.org/abs/2106.04894",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.2",
+    "statement_text": "In Theorem 1.1 we have $\\Pr(X \\in S) \\leq C_S/\\sqrt{n}$, for some $C_S$ depending only on $S$.",
+    "context_text": "Theorem 1.1 establishes $\\Pr(X \\in S) \\leq n^{-1/2+\\alpha}$ for any $\\alpha > 0$ when $S \\subseteq \\mathbb{R}^d$ is definable with respect to an o-minimal structure and contains no line segment; the conjecture posits that the optimal $O(1/\\sqrt{n})$ bound from the classical Erd\\H{o}s–Littlewood–Offord theorem also holds in this geometric setting. The authors prove it when $S$ satisfies the generic intersection property, which covers convex or irreducible algebraic plane curves in $\\mathbb{R}^2$, irreducible complex algebraic curves, and the boundary of a 3-dimensional ball. They also remark that a full resolution of the Gotsman–Linial conjecture would imply Conjecture 1.2 for all semi-algebraic sets not containing a line segment.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2106.04894",
+    "paper_title": "Geometric and o-minimal Littlewood-Offord problems",
+    "paper_authors": [
+      "Jacob Fox",
+      "Matthew Kwan",
+      "Hunter Spink"
+    ],
+    "published": "2022-06-14",
+    "abs_url": "https://arxiv.org/abs/2106.04894",
+    "source": "pdf"
+  }
+]

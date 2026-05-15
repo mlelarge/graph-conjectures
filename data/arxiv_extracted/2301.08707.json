@@ -1,0 +1,77 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1",
+    "statement_text": "Every graph on $n$ vertices admits a strongly-separating path system of size $O(n)$.",
+    "context_text": "The weakly-separating version of this conjecture was independently posed by Falgas-Ravry, Kittipassorn, Korándi, Letzter, and Narayanan (2014), and later strengthened to strongly-separating path systems by Balogh, Csaba, Martin, and Pluhár (2016). Letzter had previously made major progress by proving an $O(n \\log^\\star n)$ bound. The question originates from G.O.H. Katona (2013) in the tradition of separating systems initiated by Rényi in 1961.",
+    "attributed_to": "Balogh, Csaba, Martin, and Pluhár; Falgas-Ravry, Kittipassorn, Korándi, Letzter, and Narayanan",
+    "attributed_year": 2016,
+    "paper_contribution": "Confirms the conjecture by proving that every graph on $n$ vertices admits a strongly-separating path system of size $19n$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2301.08707",
+    "paper_title": "Separating the edges of a graph by a linear number of paths",
+    "paper_authors": [
+      "Marthe Bonamy",
+      "Fábio Botler",
+      "François Dross",
+      "Tássio Naia",
+      "Jozef Skokan"
+    ],
+    "published": "2023-10-10",
+    "abs_url": "https://arxiv.org/abs/2301.08707",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Problem 3",
+    "statement_text": "Does every graph on $n$ vertices admit a strongly-separating path system of size $2n$?",
+    "context_text": "The upper bound of $19n$ from Theorem 2 is likely far from optimal. Balogh et al. showed that the complete bipartite graph $K_{\\varepsilon n,(1-\\varepsilon)n}$ cannot be strongly separated by fewer than $2(1-2\\varepsilon)n$ paths, but no graph with a larger lower bound is known, suggesting the optimal constant might be $2$.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2301.08707",
+    "paper_title": "Separating the edges of a graph by a linear number of paths",
+    "paper_authors": [
+      "Marthe Bonamy",
+      "Fábio Botler",
+      "François Dross",
+      "Tássio Naia",
+      "Jozef Skokan"
+    ],
+    "published": "2023-10-10",
+    "abs_url": "https://arxiv.org/abs/2301.08707",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Problem 4",
+    "statement_text": "Does every properly edge-colored graph $G$ admit $O(|V(G)|)$ rainbow paths that cover $E(G)$?",
+    "context_text": "This question arose from initial attempts to solve Conjecture 1; a rainbow path is a path containing no two edges of the same color. An affirmative answer would yield an alternative proof of Conjecture 1 via a path decomposition argument, and the authors note that a version with 'trails' replacing 'paths' can already be verified.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2301.08707",
+    "paper_title": "Separating the edges of a graph by a linear number of paths",
+    "paper_authors": [
+      "Marthe Bonamy",
+      "Fábio Botler",
+      "François Dross",
+      "Tássio Naia",
+      "Jozef Skokan"
+    ],
+    "published": "2023-10-10",
+    "abs_url": "https://arxiv.org/abs/2301.08707",
+    "source": "pdf"
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "review_id": "2004.10180__00",
+  "safe_id": "2004.10180",
+  "arxiv_id": "2004.10180",
+  "conjecture_title": "Optimality of the $o(n^{3/2})$ bound in Corollary 1.4",
+  "paper_title": "The regularity method for graphs with few 4-cycles",
+  "published": "2021-09-25",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "No follow-up work settling the question of whether the exponent $3/2$ in Corollary 1.4 is best possible was found in the literature. Corollary 1.4 of arXiv:2004.10180 asserts that every $n$-vertex $C_5$-free graph can be made triangle-free by deleting $o(n^{3/2})$ edges; the tightness of this exponent remains an open question as of 2026. Related work (PCMI 2025 lecture notes by Wigderson) discusses $C_5$-free graph structure and edge-deletion bounds for bipartiteness but does not directly address the triangle-free exponent.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "C5-free triangle-free edge deletion n^{3/2} Conlon Fox Sudakov Zhao 2004.10180",
+    "C5-free graph triangle-free deletion exponent 3/2 optimality regularity method",
+    "arxiv \"2004.10180\" C5-free triangle-free tight exponent cite 2022 2023 2024 2025",
+    "\"C5-free\" \"triangle-free\" \"n^{3/2}\" edges deleted tightness extremal graph 2022 2023 2024 2025"
+  ],
+  "notes": "No follow-up paper found that proves or disproves the optimality of the $3/2$ exponent. Searches covered the paper's arXiv ID, the authors' names, and the key mathematical terms; the conjecture appears to remain open. The PCMI 2025 lecture notes (Wigderson) mention $C_5$-free graphs and edge-deletion bounds but target bipartiteness rather than triangle-freeness and do not resolve this specific question."
+}

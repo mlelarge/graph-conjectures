@@ -1,0 +1,59 @@
+{
+  "review_id": "2203.06775__00",
+  "safe_id": "2203.06775",
+  "arxiv_id": "2203.06775",
+  "conjecture_title": "Conjecture 1.6",
+  "paper_title": "Induced subgraphs and tree decompositions IV. (Even hole, diamond, pyramid)-free graphs",
+  "published": "2022-10-21",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "Conjecture 1.6 posits a constant treewidth bound $\\mathrm{tw}(G) \\leq c_t$ for all $G \\in \\mathcal{C}^*_t$ ($(C_4$, diamond, theta, prism, even wheel, $K_t)$-free graphs). No verified proof or counterexample of the full conjecture was found. The closely related Sintiari–Trotignon conjecture (Conjecture 1.5 in the source paper) on even-hole-free $K_t$-free graphs was resolved in 2024 by arXiv:2402.14211 with a logarithmic bound $c_t \\log n$ shown to be asymptotically tight, which does not settle Conjecture 1.6 since $\\mathcal{C}^*_t$ is a more restricted class and the conjecture asks for a constant bound. Web searches suggest possible counterexamples to related bounded-treewidth conjectures by Hajebi (a co-author) appearing in 2025, but these could not be verified within the search budget.",
+  "since_posted": [
+    {
+      "title": "Induced subgraphs and tree decompositions XV. Even-hole-free graphs with bounded clique number",
+      "authors": "Maria Chudnovsky, Peter Gartland, Sepehr Hajebi, Daniel Lokshtanov, Sophie Spirkl",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2402.14211",
+      "arxiv_id": "2402.14211",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves every $n$-vertex even-hole-free graph with no $K_t$ satisfies $\\mathrm{tw}(G) \\leq c_t \\log n$ and shows this logarithmic bound is tight, resolving Conjecture 1.5 (Sintiari–Trotignon) but leaving Conjecture 1.6's constant bound for the more restricted class $\\mathcal{C}^*_t$ open."
+    }
+  ],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2507.06169",
+      "verified": true,
+      "note": "Fetched: paper constructs layered-wheel-like graphs that disprove Trotignon's conjecture on outerstring-graph structure and induced minors; it does not concern the bounded-treewidth conjecture for $\\mathcal{C}^*_t$ (Conjecture 1.6 from 2203.06775)."
+    },
+    {
+      "arxiv_id": "2402.14211",
+      "verified": true,
+      "note": "Fetched: proves $\\mathrm{tw}(G) \\leq c_t \\log n$ for even-hole-free $K_t$-free graphs and shows the logarithmic bound is asymptotically best possible; addresses Conjecture 1.5 (Sintiari–Trotignon), not Conjecture 1.6's constant bound."
+    },
+    {
+      "arxiv_id": "2509.08762",
+      "verified": false,
+      "note": "Not fetched; contribution text indicates this concerns the coarse Menger conjecture, unrelated to Conjecture 1.6."
+    },
+    {
+      "arxiv_id": "2508.14332",
+      "verified": false,
+      "note": "Not fetched; contribution text indicates this concerns the coarse Menger conjecture, unrelated to Conjecture 1.6."
+    },
+    {
+      "arxiv_id": "2412.13893",
+      "verified": false,
+      "note": "Not fetched; contribution text indicates this concerns the Erdős–Pósa property of cycles, unrelated to Conjecture 1.6."
+    }
+  ],
+  "search_queries": [
+    "treewidth bounded \"C4 diamond theta prism even wheel\" \"Kt-free\" conjecture Abrishami Chudnovsky Hajebi Spirkl 2022",
+    "arXiv 2203.06775 Conjecture 1.6 treewidth pyramid-free \"C*_t\" 2024 2025"
+  ],
+  "notes": "Conjecture 1.6 asks for a CONSTANT bound $c_t$ on $\\mathrm{tw}$ for $\\mathcal{C}^*_t$, which is a harder question than the logarithmic bound proved for the strictly larger even-hole-free $K_t$-free class by arXiv:2402.14211. Web searches surfaced a 2025 Journal of Graph Theory paper by Hajebi ('Chordal Graphs, Even-Hole-Free Graphs and Sparse Obstructions to Bounded Treewidth') and a mention of counterexamples to a Hajebi-attributed bounded-treewidth conjecture, but these could not be verified within the 5-call budget; confidence is set to medium rather than high for this reason."
+}

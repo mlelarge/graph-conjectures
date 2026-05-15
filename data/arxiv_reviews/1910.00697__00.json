@@ -1,0 +1,45 @@
+{
+  "review_id": "1910.00697__00",
+  "safe_id": "1910.00697",
+  "arxiv_id": "1910.00697",
+  "conjecture_title": "Open problem: χ-bounded vs. polynomially χ-bounded",
+  "paper_title": "Graphs of bounded cliquewidth are polynomially $χ$-bounded",
+  "published": "2020-07-07",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "solved",
+  "confidence": "high",
+  "summary": "Briański, Davies, and Walczak (2022) answered the open problem affirmatively: they construct hereditary graph classes that are χ-bounded but not polynomially χ-bounded, published in Combinatorica. This resolves the question posed by Bonamy and Pilipczuk and refutes the hope (attributed to Esperet) that every χ-bounded hereditary class admits a polynomial bounding function. Follow-up work by Chudnovsky, Cook, Davies, and Oum (arXiv:2310.11167) introduced the ‘Pollyanna’ framework to study which graph classes preserve polynomial χ-boundedness when intersected with an arbitrary χ-bounded class.",
+  "since_posted": [
+    {
+      "title": "Separating polynomial χ-boundedness from χ-boundedness",
+      "authors": "Marcin Briański, James Davies, Bartosz Walczak",
+      "year": 2022,
+      "venue": "Combinatorica",
+      "url": "https://arxiv.org/abs/2201.08814",
+      "arxiv_id": "2201.08814",
+      "doi": "10.1007/s00493-023-00054-3",
+      "kind": "proof",
+      "claim": "Constructs, for every sufficiently fast-growing function f, a hereditary graph class where the maximum chromatic number of a graph with clique number n equals f(n), proving the existence of hereditary classes that are χ-bounded but not polynomially χ-bounded."
+    },
+    {
+      "title": "Reuniting χ-boundedness with polynomial χ-boundedness",
+      "authors": "Maria Chudnovsky, Linda Cook, James Davies, Sang-il Oum",
+      "year": 2023,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2310.11167",
+      "arxiv_id": "2310.11167",
+      "doi": null,
+      "kind": "survey",
+      "claim": "Introduces the Pollyanna framework: a class ℱ is Pollyanna if ℱ ∩ ℳ is polynomially χ-bounded for every χ-bounded class ℳ, and establishes which structured graph classes satisfy this property in the wake of the Briański–Davies–Walczak separation."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "hereditary graph class chi-bounded not polynomially chi-bounded conjecture 1910.00697",
+    "polynomially chi-bounded hereditary graph class counterexample 2021 2022 2023 2024 2025",
+    "Briański Davies Walczak chi-bounded not polynomially chi-bounded hereditary arxiv 2022"
+  ],
+  "notes": "The open problem asked for existence of a hereditary class that is χ-bounded but provably not polynomially χ-bounded. arXiv:2201.08814 (Combinatorica 2023) answers YES. The 2310.11167 entry is based on a WebFetch confirming the Chudnovsky–Cook–Davies–Oum authorship and Pollyanna framework; journal publication year may be 2026. No internal corpus references were supplied for this conjecture."
+}

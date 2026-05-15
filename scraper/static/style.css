@@ -95,12 +95,35 @@ table.problems-table th {
 }
 table.problems-table th.sorted-asc::after  { content: ' ▲'; font-size: 0.7em; color: var(--muted); }
 table.problems-table th.sorted-desc::after { content: ' ▼'; font-size: 0.7em; color: var(--muted); }
-.col-title { width: 28%; }
+.col-title { width: 26%; }
+.col-source { width: 6%; white-space: nowrap; }
 .col-status { width: 8%; white-space: nowrap; }
-.col-subject { width: 20%; }
-.col-authors { width: 20%; }
-.col-importance { width: 8%; white-space: nowrap; }
+.col-subject { width: 18%; }
+.col-authors { width: 18%; }
+.col-importance { width: 6%; white-space: nowrap; }
 .col-posted { width: 10%; white-space: nowrap; color: var(--muted); }
+
+.source-summary {
+  display: inline-flex;
+  gap: 0.35rem;
+  align-items: center;
+  margin-left: 0.5rem;
+  font-size: 0.85rem;
+}
+.source-summary .badge.source { cursor: pointer; }
+.source-summary .badge.source.active { outline: 2px solid var(--accent); }
+
+.badge.source {
+  font-size: 0.7rem;
+  padding: 0.05rem 0.4rem;
+  border-radius: 3px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-weight: 600;
+}
+.badge.source-opg   { background: var(--accent-bg); color: var(--accent); }
+.badge.source-arxiv { background: #fff3e0;          color: #b85c00;       }
+.badge.pdf-source   { background: #ececec;          color: #555;           font-size: 0.7rem; padding: 0.05rem 0.35rem; border-radius: 3px; }
 
 .status-summary {
   display: inline-flex;

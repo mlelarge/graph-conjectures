@@ -1,0 +1,22 @@
+{
+  "review_id": "1907.11429__00",
+  "safe_id": "1907.11429",
+  "arxiv_id": "1907.11429",
+  "conjecture_title": "Open problem on minimum independence ratio of Mycielski graphs",
+  "paper_title": "Revisiting a theorem by Folkman on graph colouring",
+  "published": "2020-03-23",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The exact value of the minimum independence ratio mir(M_k) of Mycielski graphs remains unknown. Cropper, Gyárfás, and Lehel (Discrete Mathematics, 2006) established asymptotic bounds c_1·sqrt(log m)/m ≤ mir(M_s) ≤ c_2·log(m)/m (where s = R(3,m)−1), and small exact values (mir(M_2)=1/2, mir(M_3)=1/5) are known, but no general exact formula has been found. Multiple literature searches across 2020–2026 confirm no subsequent paper has resolved this open problem.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "minimum independence ratio Mycielski graphs exact formula mir(M_k)",
+    "Cropper Gyárfás Lehel independence ratio Mycielski Ramsey arXiv",
+    "minimum independence ratio Mycielski graph exact value 2021 2022 2023 2024 2025"
+  ],
+  "notes": "No follow-up resolving the exact formula was found. The Cropper–Gyárfás–Lehel paper (Discrete Math. 306, 2006, pp. 1988–1990) provides the best known asymptotic bounds. The problem is closely related to the Hall ratio of Mycielski graphs. The open problem arises in the source paper in the context of why a natural generalisation of Folkman's theorem (replacing constant 2 by a larger integer k) fails."
+}

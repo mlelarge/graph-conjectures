@@ -1,0 +1,26 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Hoang–McDiarmid Conjecture",
+    "statement_text": "A graph $G$ has every induced subgraph $2$-divisible if and only if $G$ contains no induced odd cycle of length at least five.",
+    "context_text": "A graph is $k$-divisible if it can be $k$-coloured so that no maximum clique of size at least two is monochromatic. Since an odd cycle of length at least five is not $2$-divisible, containing no such induced odd cycle is a necessary condition for every induced subgraph to be $2$-divisible; Hoang and McDiarmid conjectured this is also sufficient. Combined with the Perfect Graph Theorem, this would yield: every induced subgraph of $G$ is $\\omega(G)$-colourable if and only if every induced subgraph of both $G$ and its complement is $2$-divisible.",
+    "attributed_to": "Hoang and McDiarmid",
+    "attributed_year": null,
+    "paper_contribution": "The conjecture is discussed in Section 3 as related context on connections between clique colourings and perfect graphs; no new results concerning it are proved in this paper.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "PDF source — bibliography entry [6] (Hoang and McDiarmid, 'On the divisibility of graphs', Discrete Mathematics) is truncated so the publication year is unknown. The conjecture is not the central subject of the paper and no progress on it is made.",
+    "arxiv_id": "2006.11353",
+    "paper_title": "Tight Bounds on the Clique Chromatic Number",
+    "paper_authors": [
+      "Gwenaël Joret",
+      "Piotr Micek",
+      "Bruce Reed",
+      "Michiel Smid"
+    ],
+    "published": "2021-08-25",
+    "abs_url": "https://arxiv.org/abs/2006.11353",
+    "source": "pdf"
+  }
+]

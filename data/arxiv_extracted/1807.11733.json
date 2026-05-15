@@ -1,0 +1,25 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Reconstruction Conjecture (Conjecture 1.1)",
+    "statement_text": "For $n > 2$, two graphs $G$ and $H$ of order $n$ are isomorphic if and only if $\\mathcal{D}(G) = \\mathcal{D}(H)$.",
+    "context_text": "Kelly and Ulam proposed this conjecture asking whether any graph on more than 2 vertices is uniquely determined (up to isomorphism) by its multiset of vertex-deleted subgraphs. The conjecture remains open, though it is known to hold for trees and for almost all graphs. The present paper studies a weaker reconstructibility question — recovering the number of edges from an incomplete deck — in this broader context.",
+    "attributed_to": "Kelly and Ulam",
+    "attributed_year": 1960,
+    "paper_contribution": "The paper does not directly prove new cases of the Reconstruction Conjecture, but establishes the related result that the number of edges of any graph on $n$ vertices is reconstructible from any deck missing at most $\\frac{1}{20}\\sqrt{n}$ cards (Theorem 1.2), contributing to the programme of partial-deck reconstruction.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Section 3 of the paper is described as containing open problems ('some open problems are given in Section 3') but the full text of Section 3 is absent from the supplied PDF extraction; any conjectures or questions stated there could not be captured.",
+    "arxiv_id": "1807.11733",
+    "paper_title": "Size reconstructibility of graphs",
+    "paper_authors": [
+      "Carla Groenland",
+      "Hannah Guggiari",
+      "Alex Scott"
+    ],
+    "published": "2020-03-09",
+    "abs_url": "https://arxiv.org/abs/1807.11733",
+    "source": "pdf"
+  }
+]

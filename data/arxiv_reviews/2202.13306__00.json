@@ -1,0 +1,22 @@
+{
+  "review_id": "2202.13306__00",
+  "safe_id": "2202.13306",
+  "arxiv_id": "2202.13306",
+  "conjecture_title": "Question 1.4",
+  "paper_title": "Heroes in oriented complete multipartite graphs",
+  "published": "2023-12-11",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "disproved",
+  "confidence": "high",
+  "summary": "Question 1.4 is answered negatively: Δ(1,2,2) is not a hero in oriented complete multipartite graphs. Remark 1.5 of the revised paper (v2, December 2023; published Journal of Graph Theory 105(4):652–669, 2024) records that Bartosz Walczak proved non-interlaced ordered graphs have unbounded chromatic number, which together with Theorem 4.2 of the paper implies Δ(1,2,2) is not a hero. Consequently, heroes in oriented complete multipartite graphs are precisely those characterised in Theorem 1.3.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Delta(1,2,2) hero oriented complete multipartite graphs Aboulker Aubian Charbit",
+    "heroes oriented complete multipartite graphs arXiv 2202.13306 cite",
+    "Walczak non-interlaced ordered graphs unbounded chromatic number arXiv"
+  ],
+  "notes": "The resolution of Question 1.4 appears in Remark 1.5 of the revised source paper itself (verified at https://arxiv.org/html/2202.13306): 'Between the submission of this paper and its acceptation, Bartosz Walczak proved that non-interlaced ordered graphs have unbounded chromatic number, which, together with Theorem 4.2, implies that Δ(1,2,2) is not a hero.' The authors add that they preferred not to upgrade Theorem 1.3 to a full characterisation theorem until Walczak's result receives official review and publication. No separate published Walczak paper was independently verified in this search (5-call cap reached). The JGT journal version (2024) appears at https://onlinelibrary.wiley.com/doi/abs/10.1002/jgt.23061 (not fetched)."
+}

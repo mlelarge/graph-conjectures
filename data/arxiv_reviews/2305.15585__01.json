@@ -1,0 +1,23 @@
+{
+  "review_id": "2305.15585__01",
+  "safe_id": "2305.15585",
+  "arxiv_id": "2305.15585",
+  "conjecture_title": "Conjecture 11",
+  "paper_title": "Chromatic number is not tournament-local",
+  "published": "2023-12-04",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 11 from arXiv:2305.15585 asks whether sufficiently large chromatic number of a graph G forces, for every tournament T on the same vertex set, some out-neighbourhood G[N+_T(v)] to contain a cycle; this is the d=2 (weakest non-trivial) case of the degeneracy Question 10 from the same paper. The source paper was published in Journal of Combinatorial Theory, Series B 168 (2024), pp. 86–95, but no subsequent work resolving Conjecture 11 was identified through web searches covering the period up to May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "arxiv 2305.15585 chromatic number tournament out-neighbourhood cycle conjecture",
+    "tournament out-neighbourhood cycle chromatic number Girão Hendrey Illingworth Steiner graph",
+    "high chromatic number tournament out-neighbourhood acyclic cycle 2024 2025 arxiv graph theory",
+    "Girão Hendrey Savery Steiner chromatic tournament acyclic out-neighbourhood 2024 2025"
+  ],
+  "notes": "No follow-up paper addressing Conjecture 11 was found. The conjecture is the d=2 case of the degeneracy Question 10; the paper's main results concern the chromatic-number version (disproving Scott–Seymour), while Conjecture 11 targets the much weaker cycle-containment requirement. The paper notes that bipartite (1-degenerate) graphs appear in their counterexamples, making d=2 the first open degeneracy case. Searches also retrieved arXiv:2306.02364 (Nguyen–Seymour survey on tournament structure) and arXiv:2503.20045 (Koerts–Moore–Spirkl on cycle orientations in digraphs), neither of which was confirmed to address this specific conjecture."
+}

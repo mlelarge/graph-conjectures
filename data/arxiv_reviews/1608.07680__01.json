@@ -1,0 +1,22 @@
+{
+  "review_id": "1608.07680__01",
+  "safe_id": "1608.07680",
+  "arxiv_id": "1608.07680",
+  "conjecture_title": "Problem 4",
+  "paper_title": "The crossing number of the cone of a graph",
+  "published": "2016-08-27",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "Problem 4 from arXiv:1608.07680 asks for a general upper bound on the crossings of an optimal 2-page drawing of G (with fixed spine order) given a 1-page drawing with k crossings; the paper itself provides only a partial answer via the Edwards max-cut bound. A 2021 follow-up note by Ding and Huang (Graphs and Combinatorics) builds on the original work by improving values of the function f(k) for small k, but I could not access its full text to confirm whether it resolves Problem 4. No paper specifically solving the general 1-page-to-2-page bound question was found in the verified literature.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "crossing number cone graph 1-page 2-page drawing Alfaro Arroyo Mohar arXiv 1608.07680",
+    "1-page drawing 2-page drawing crossing number spine fixed order upper bound",
+    "\"Note on the Crossing Number of the Cone of a Graph\" arXiv 2021"
+  ],
+  "notes": "A follow-up paper titled 'A Note on the Crossing Number of the Cone of a Graph' by Ding and Huang was published in Graphs and Combinatorics in 2021 (DOI: 10.1007/s00373-021-02361-2). Search snippets indicate it shows ϕs(6)=5 and ϕs(7)=6 (exact values of f(k) for simple graphs), which concerns the f(k) function rather than the 1-page-to-2-page bound of Problem 4 specifically. The Springer URL was inaccessible (authentication redirect) and no arXiv preprint was found, so this paper is not included in since_posted per the verification requirement. The original paper's partial answer via the Edwards max-cut bound remains the only known published result directly addressing Problem 4."
+}

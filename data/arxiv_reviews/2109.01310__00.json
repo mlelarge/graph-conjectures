@@ -1,0 +1,23 @@
+{
+  "review_id": "2109.01310__00",
+  "safe_id": "2109.01310",
+  "arxiv_id": "2109.01310",
+  "conjecture_title": "Conjecture 1.10",
+  "paper_title": "Induced subgraphs and tree decompositions III. Three-path-configurations and logarithmic treewidth",
+  "published": "2022-09-07",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "Conjecture 1.10 from arXiv:2109.01310 posits logarithmic treewidth for graphs excluding K_t, K_{t,t}, subdivisions of W_{t\\times t}, and line graphs of subdivisions of W_{t\\times t} as induced subgraphs. No paper resolving this conjecture was found in five targeted web searches covering the period 2022–2026. The closely related work arXiv:2311.05066 (Alecu, Chudnovsky, Hajebi, Spirkl, 2023) characterises when H-free graph classes contain only basic treewidth obstructions, but does not prove the specific logarithmic bound of the conjecture. The conjecture remains open as of May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Abrishami Chudnovsky Hajebi Spirkl treewidth logarithmic induced subgraphs subdivided wall 2109.01310",
+    "logarithmic treewidth complete bipartite subdivided wall induced subgraphs conjecture",
+    "Hajebi Spirkl \"logarithmic treewidth\" \"K_{t,t}\" \"subdivided wall\" conjecture solved 2023 2024 2025",
+    "Chudnovsky \"induced subgraphs tree decompositions XIII\" \"basic obstructions\" treewidth arXiv 2024 2025"
+  ],
+  "notes": "No follow-up resolving Conjecture 1.10 was found after 5 web calls. The conjecture is ~4.5 years old (arXiv ID 2109.01310, paper published 2022), so confidence is set to medium rather than high. The related paper arXiv:2311.05066 addresses basic obstructions in H-free graph classes but focuses on a structural characterisation (cleanness of the class) rather than the quantitative logarithmic treewidth bound that Conjecture 1.10 asserts."
+}

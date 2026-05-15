@@ -1,0 +1,22 @@
+{
+  "review_id": "1610.00239__00",
+  "safe_id": "1610.00239",
+  "arxiv_id": "1610.00239",
+  "conjecture_title": "Conjecture 2.4",
+  "paper_title": "Optimal compression of approximate inner products and dimension reduction",
+  "published": "2017-04-02",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "Conjecture 2.4 from arXiv:1610.00239 asserts that the bipartite Johnson-Lindenstrauss reduction to dimension $t = \\lfloor C\\log(2+\\varepsilon^2 n)/\\varepsilon^2 \\rfloor$ can be achieved with the additional guarantee that all output vectors have Euclidean norm at most $O(1)$. No resolution or significant partial progress has been found in the literature as of May 2026. The conjecture has been open since 2017; if proved it would close the gap in the space complexity bounds of Theorem 2.2 for $\\varepsilon \\geq 2/\\sqrt{n}$.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Alon Klartag \"inner products\" \"dimension reduction\" \"bounded norm\" Johnson-Lindenstrauss bipartite",
+    "arXiv 1610.00239 Alon Klartag conjecture dimension reduction inner products norm",
+    "\"bipartite Johnson-Lindenstrauss\" \"bounded norm\" inner products dimension reduction conjecture 2024 2025"
+  ],
+  "notes": "No follow-up paper addressing Conjecture 2.4 was found across three targeted searches. The conjecture is roughly 9 years old; the medium confidence reflects that this age makes pure absence of indexed results somewhat less conclusive than for a very recent paper."
+}

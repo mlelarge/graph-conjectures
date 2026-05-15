@@ -1,0 +1,46 @@
+[
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.1",
+    "statement_text": "Every $d$-regular graph $G$ on $n$ vertices contains a spanning subgraph $H$ so that for every $k$, $0 \\leq k \\leq d$, $\\left|m(H, k) - \\frac{n}{d+1}\\right| \\leq 2$.",
+    "context_text": "The paper introduces this conjecture as one of two central open problems on irregular spanning subgraphs. A small value of $m(H)$ measures the irregularity of $H$, and the conjecture asserts that every $d$-regular graph has a spanning subgraph nearly as irregular as its degree permits. The conjecture is tight: the vertex-disjoint union of two 4-cycles shows the additive 2 cannot be reduced to 1 in general.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "Source is PDF extraction; mathematical notation appears clean for this statement.",
+    "arxiv_id": "2108.02685",
+    "paper_title": "Irregular Subgraphs",
+    "paper_authors": [
+      "Noga Alon",
+      "Fan Wei"
+    ],
+    "published": "2021-08-06",
+    "abs_url": "https://arxiv.org/abs/2108.02685",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.2",
+    "statement_text": "Every graph $G$ with $n$ vertices and minimum degree $\\delta$ contains a spanning subgraph $H$ satisfying $m(H) \\leq \\frac{n}{\\delta+1} + 2$.",
+    "context_text": "This is the second of the two central conjectures introduced by the authors, generalising Conjecture 1.1 from regular graphs to arbitrary graphs with minimum degree $\\delta$. Both conjectures remain open; the paper proves asymptotic relaxations showing the bound $(1+o(1))\\frac{n}{\\delta+1}+2$ is achievable when $n$ is large.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "Source is PDF extraction; mathematical notation appears clean for this statement.",
+    "arxiv_id": "2108.02685",
+    "paper_title": "Irregular Subgraphs",
+    "paper_authors": [
+      "Noga Alon",
+      "Fan Wei"
+    ],
+    "published": "2021-08-06",
+    "abs_url": "https://arxiv.org/abs/2108.02685",
+    "source": "pdf"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Problem 1 (Albertson)",
+    "statement_text": "Does there exist a constant $d$ such that whenever $G$ is a planar graph with list assignment $L$ that gives lists of size one or five to its vertices and the distance between any pair of vertices with lists of size one is at least $d$, then $G$ is $L$-colorable?",
+    "context_text": "Voigt gave an example of a non-4-choosable planar graph, establishing that vertices with lists smaller than 5 must be restricted in some way. Albertson posed this problem to ask whether 5-list-coloring of planar graphs remains possible when precolored (list-size-one) vertices are mutually sufficiently far apart. The paper answers this question positively.",
+    "attributed_to": "Albertson",
+    "attributed_year": null,
+    "paper_contribution": "Proves the answer is positive with explicit constant $d = 20780$ (Theorem 2), fully resolving the problem.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1209.0366",
+    "paper_title": "5-list-coloring planar graphs with distant precolored vertices",
+    "paper_authors": [
+      "Zdenek Dvorak",
+      "Bernard Lidicky",
+      "Bojan Mohar",
+      "Luke Postle"
+    ],
+    "published": "2016-02-03",
+    "abs_url": "https://arxiv.org/abs/1209.0366",
+    "source": "pdf"
+  }
+]

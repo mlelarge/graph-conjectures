@@ -1,0 +1,52 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Benjamini–Tzalik Conjecture on connectivity and reconstructibility",
+    "statement_text": "There exists a connectivity threshold $k_0$ such that every $k_0$-connected graph embedded in $\\mathbb{R}$ has its full vertex set reconstructible from the edge lengths.",
+    "context_text": "It is folklore that a graph is globally rigid in $\\mathbb{R}$ if and only if it is 2-connected. Benjamini and Tzalik conjectured an analogous connectivity condition would guarantee reconstructibility for arbitrary point sets in $\\mathbb{R}$. The current paper disproves this via Theorem 1.5.",
+    "attributed_to": "Benjamini and Tzalik",
+    "attributed_year": 2022,
+    "paper_contribution": "Disproves the conjecture via Theorem 1.5: for every positive integer $k$, there exist $k$-connected graphs on arbitrarily many vertices embeddable in the real line such that the largest reconstructible subset of vertices has size exactly $k$.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "The exact statement of the Benjamini–Tzalik conjecture is not quoted verbatim in the paper; reconstructed from context. PDF source — math may be garbled.",
+    "arxiv_id": "2301.11019",
+    "paper_title": "Reconstructing a point set from a random subset of its pairwise distances",
+    "paper_authors": [
+      "António Girão",
+      "Freddie Illingworth",
+      "Lukas Michel",
+      "Emil Powierski",
+      "Alex Scott"
+    ],
+    "published": "2023-01-26",
+    "abs_url": "https://arxiv.org/abs/2301.11019",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Informal conjecture on sharp threshold for linear-proportion reconstruction",
+    "statement_text": "The correct threshold for the existence of a reconstructible set of size $\\Omega(n)$ is $p = (1+\\varepsilon)/n$.",
+    "context_text": "Theorem 1.2a is proved with constant 42, i.e., $p \\geq 42/n$ suffices. The authors note in footnote 2 that the best their methods could give is $9/n$, and they believe the true threshold is $(1+\\varepsilon)/n$, with further discussion deferred to Section 4 on open problems.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Appears in footnote 2 as an informal belief. Section 4 (open problems) is not present in the extracted text, so additional conjectures from that section may be missing.",
+    "arxiv_id": "2301.11019",
+    "paper_title": "Reconstructing a point set from a random subset of its pairwise distances",
+    "paper_authors": [
+      "António Girão",
+      "Freddie Illingworth",
+      "Lukas Michel",
+      "Emil Powierski",
+      "Alex Scott"
+    ],
+    "published": "2023-01-26",
+    "abs_url": "https://arxiv.org/abs/2301.11019",
+    "source": "pdf"
+  }
+]

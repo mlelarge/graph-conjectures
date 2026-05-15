@@ -1,0 +1,48 @@
+[
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Gimbel–Thomassen Problem 3",
+    "statement_text": "Is there a polynomial-time algorithm to test the 3-colorability of triangle-free graphs embeddable in a fixed surface?",
+    "context_text": "For non-planar surfaces, Grötzsch's theorem does not directly generalise and no uniform characterisation of 3-colorability (analogous to Theorem 1.3 for the projective plane) is known. Gimbel and Thomassen raised this algorithmic question as Problem 3 in their paper on quadrangulations and 3-colorability.",
+    "attributed_to": "Gimbel and Thomassen",
+    "attributed_year": null,
+    "paper_contribution": "This paper develops the foundational technical theory — specifically a linear bound $|V(H)| \\leq 1715|V(C)|$ on the size of 4-critical subgraphs in a disk (Theorem 1.6) — that is used in the subsequent papers of this series to resolve this question in the affirmative.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Bibliography entry [7] is not reproduced in the extracted text, so the year of the original problem cannot be confirmed.",
+    "arxiv_id": "1302.2158",
+    "paper_title": "Three-coloring triangle-free graphs on surfaces II. 4-critical graphs in a disk",
+    "paper_authors": [
+      "Zdenek Dvorak",
+      "Daniel Kral",
+      "Robin Thomas"
+    ],
+    "published": "2017-07-05",
+    "abs_url": "https://arxiv.org/abs/1302.2158",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.7",
+    "statement_text": "For every integer $k \\geq 5$, there exists an integer $K$ with the following property. Let $G$ be a planar graph of girth at least five, let $C_1, C_2$ be two cycles in $G$ of lengths at most $k$, and for every $v \\in V(G)$ let $L(v)$ be a set such that $|L(v)| = 1$ if $v \\in V(C_1 \\cup C_2)$ and $|L(v)| \\geq 3$ otherwise. If there exists no proper coloring $\\phi$ of $G$ such that $\\phi(v) \\in L(v)$ for every $v \\in V(G)$, then $G$ has a subgraph $H$ on at most $K$ vertices such that $C_1$ and $C_2$ are subgraphs of $H$ and there exists no proper coloring $\\psi$ of $H$ such that $\\psi(v) \\in L(v)$ for every $v \\in V(H)$.",
+    "context_text": "The conjecture is a list-coloring generalisation of the paper's main result (Theorem 1.6). The authors note that an affirmative answer would imply an analogue of Theorem 1.4 for graphs of girth at least five in the list-coloring setting, and that Luke Postle (private communication) believes he has a proof, though it had not yet been written down at the time of submission.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "The PDF extraction renders the final clause with $\\phi$ instead of $\\psi$; from context the intended quantifier variable in the conclusion is $\\psi$, corrected here.",
+    "arxiv_id": "1302.2158",
+    "paper_title": "Three-coloring triangle-free graphs on surfaces II. 4-critical graphs in a disk",
+    "paper_authors": [
+      "Zdenek Dvorak",
+      "Daniel Kral",
+      "Robin Thomas"
+    ],
+    "published": "2017-07-05",
+    "abs_url": "https://arxiv.org/abs/1302.2158",
+    "source": "pdf"
+  }
+]

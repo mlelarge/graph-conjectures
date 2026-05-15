@@ -1,0 +1,48 @@
+[
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Open Problem: 5-Coloring complexity for H-free graphs with a P4 component",
+    "statement_text": "The complexity of the $5$-Coloring Problem restricted to $H$-free graphs remains open when $H$ has exactly one connected component $C$ isomorphic to $P_4$, and $H - V(C)$ is an induced subgraph of $rP_3$ containing at least one edge for some $r \\geq 1$.",
+    "context_text": "After proving that the $k$-Coloring Problem on $2P_4$-free graphs is NP-complete for all $k \\geq 5$ (Theorem 7), the authors observe that combined with Theorem 4 this leaves the 5-Coloring complexity unresolved only for the described family of forbidden subgraphs $H$. This is the last remaining gap toward a full dichotomy for the $5$-Coloring Problem on $H$-free graphs.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated implicitly as a remaining open case after Theorem 7; no labelled environment.",
+    "arxiv_id": "2105.01787",
+    "paper_title": "Complexity dichotomy for List-5-Coloring with a forbidden induced subgraph",
+    "paper_authors": [
+      "Sepehr Hajebi",
+      "Yanjia Li",
+      "Sophie Spirkl"
+    ],
+    "published": "2022-08-30",
+    "abs_url": "https://arxiv.org/abs/2105.01787",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Open Question: NP-hardness of List-k-Coloring on rP3-free graphs",
+    "statement_text": "Does there exist $k \\in \\mathbb{N}$ for which the List-$k$-Coloring Problem restricted to $rP_3$-free graphs is NP-hard?",
+    "context_text": "The authors note that while Theorems 13 and 17 (the main results of Sections 2 and 3) are proved for the List-$k$-Coloring Problem on $rP_3$-free graphs for arbitrary $k$, the tools of Section 4 fail to extend beyond $k = 5$. The authors were unable to settle whether the general List-$k$-Coloring Problem on $rP_3$-free graphs can be NP-hard for some $k$.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated in running prose at the end of Section 1; no labelled environment.",
+    "arxiv_id": "2105.01787",
+    "paper_title": "Complexity dichotomy for List-5-Coloring with a forbidden induced subgraph",
+    "paper_authors": [
+      "Sepehr Hajebi",
+      "Yanjia Li",
+      "Sophie Spirkl"
+    ],
+    "published": "2022-08-30",
+    "abs_url": "https://arxiv.org/abs/2105.01787",
+    "source": "pdf"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Polynomial-time solvability of totally $\\Delta$-modular integer programs",
+    "statement_text": "Can integer programs defined by totally $\\Delta$-modular matrices be solved in polynomial time whenever $\\Delta$ is a constant?",
+    "context_text": "Artmann, Weismantel, and Zenklusen [2] showed that totally 2-modular IPs are solvable in strongly polynomial time, extending the classical totally unimodular case. In view of further work on programs with bounded subdeterminants [42, 44, 4, 12, 14, 34], the question of whether polynomial-time solvability extends to every fixed $\\Delta$ is natural but remains open even for $\\Delta = 3$.",
+    "attributed_to": "unattributed (community open question)",
+    "attributed_year": null,
+    "paper_contribution": "Proves a strongly polynomial-time algorithm for the special case where the totally $\\Delta$-modular matrix $A$ contains at most two nonzero entries in each row or in each column (Theorem 1), thereby settling this restricted case for all constant $\\Delta$.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "No specific author attribution is given in the paper; stated in introduction prose as 'still open (even for $\\Delta=3$)'. Statement text is a faithful paraphrase of the prose since no formal environment exists.",
+    "arxiv_id": "2106.05947",
+    "paper_title": "Integer programs with bounded subdeterminants and two nonzeros per row",
+    "paper_authors": [
+      "Samuel Fiorini",
+      "Gwenaël Joret",
+      "Stefan Weltge",
+      "Yelena Yuditsky"
+    ],
+    "published": "2024-09-10",
+    "abs_url": "https://arxiv.org/abs/2106.05947",
+    "source": "html"
+  }
+]

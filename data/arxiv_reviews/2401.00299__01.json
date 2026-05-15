@@ -1,0 +1,22 @@
+{
+  "review_id": "2401.00299__01",
+  "safe_id": "2401.00299",
+  "arxiv_id": "2401.00299",
+  "conjecture_title": "Problem 1.2",
+  "paper_title": "Partitioning the hypercube into smaller hypercubes",
+  "published": "2024-11-07",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Problem 1.2 asks which of the four ratios m'(d)/m(d), f_{\\leq 2}(d)/m'(d), f(d)/f_{\\leq 2}(d), and f(d)/m(d) is exponential in n=2^{d-1}. The source paper itself resolves two parts: part (iv) f(d)/m(d) is proved exponential in n, and part (i) m'(d)/m(d) is proved subexponential. Parts (ii) and (iii) remain explicitly open in the paper. No follow-up work specifically resolving parts (ii) or (iii) was found in the literature through May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Alon Balogh Potapov \"partitioning hypercube\" 2401.00299 follow-up",
+    "hypercube partition subcubes \"f(d)\" \"m(d)\" exponential order magnitude",
+    "Alon Balogh Potapov hypercube subcube partition 2025 2026 follow-up citing"
+  ],
+  "notes": "Parts (i) and (iv) of Problem 1.2 are resolved within the original paper itself: f(d)/m(d) is exponential in n (part iv), and m'(d)/m(d) is subexponential (part i). Parts (ii) f_{\\leq 2}(d)/m'(d) and (iii) f(d)/f_{\\leq 2}(d) are stated as open. The paper was published in Illinois Journal of Mathematics, Vol. 69, Issue 1, April 2025. An unrelated paper 2411.04479 studies partitions of Z_q^n into subcubes (a different algebraic setting) and does not address Problem 1.2. No other citing paper addressing the open parts was found."
+}

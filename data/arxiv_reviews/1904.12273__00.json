@@ -1,0 +1,39 @@
+{
+  "review_id": "1904.12273__00",
+  "safe_id": "1904.12273",
+  "arxiv_id": "1904.12273",
+  "conjecture_title": "Open Problem (induced st-path of excess length three)",
+  "paper_title": "Detecting a long odd hole",
+  "published": "2020-09-06",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "No polynomial-time algorithm and no NP-hardness proof is known for detecting an induced st-path of length at least three more than the shortest st-path. The related and strictly easier problem of excess ≥ 1 was solved in polynomial time by Berger, Spirkl, and Seymour (arXiv:2005.12861, 2020), with the running time subsequently improved from O(n^{18}) to O(n^{4.75}) by Chiu and Lu (arXiv:2109.15268, 2021); neither work addresses excess ≥ 3 or the intermediate case of excess ≥ 2.",
+  "since_posted": [
+    {
+      "title": "Blazing a Trail via Matrix Multiplications: A Faster Algorithm for Non-shortest Induced Paths",
+      "authors": "Jia-Hao Chiu, Hsueh-I Lu",
+      "year": 2021,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2109.15268",
+      "arxiv_id": "2109.15268",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Improves the polynomial algorithm for detecting an induced st-path longer than the shortest (excess ≥ 1) from O(n^{18}) to O(n^{4.75}) via Boolean matrix multiplications, but does not address the open problem of excess ≥ 3."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "induced path excess length polynomial algorithm Chudnovsky Scott Seymour 1904.12273",
+    "induced st-path shortest path excess length three polynomial algorithm graph theory",
+    "Berger Spirkl Seymour induced path longer shortest polynomial algorithm",
+    "induced path excess length two three polynomial NP-hard Chudnovsky 2021 2022 2023 2024 2025",
+    "https://arxiv.org/abs/2005.12861 (WebFetch)",
+    "https://arxiv.org/abs/2109.15268 (WebFetch)",
+    "https://people.maths.ox.ac.uk/scott/Papers/detectinglongodd.pdf (WebFetch, failed — PDF binary)",
+    "https://arxiv.org/abs/2209.01873 (WebFetch — unrelated)"
+  ],
+  "notes": "No follow-up resolving the excess ≥ 3 case was found. The contemporaneous paper arXiv:2005.12861 (Berger, Spirkl, Seymour; arXiv 2020, journal Discrete Mathematics 2021) solved the easier excess ≥ 1 problem polynomially. The intermediate cases (excess = 2 or excess = 3) remain open with no complexity determination in the indexed literature."
+}

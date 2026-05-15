@@ -1,0 +1,74 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 3 (Nýdl's Conjecture)",
+    "statement_text": "For any $n \\geq 4$ and $\\ell \\geq \\lfloor n/2 \\rfloor + 1$, any two trees on $n$ vertices with the same $\\ell$-deck are isomorphic.",
+    "context_text": "Nýdl conjectured in 1990 that no two non-isomorphic trees have the same $\\ell$-deck when $\\ell$ is slightly larger than $n/2$. The conjectured bound would be sharp: Nýdl presented trees for which $\\ell \\geq \\lfloor n/2 \\rfloor + 1$ is necessary. There had been no progress on this conjecture since 1990, with the best previous result being Giles' 1976 bound handling only $r \\leq 2$.",
+    "attributed_to": "Nýdl",
+    "attributed_year": 1990,
+    "paper_contribution": "Proves that any $n$-vertex tree $T$ can be reconstructed from its $(n-r)$-deck for all $r < n/9 + o(n)$ (Theorem 4), making substantial progress toward the conjecture and vastly improving the previous best result. Also notes the conjecture is false for $n = 13$ but verified true for all $4 \\leq n \\leq 25$ with $n \\neq 13$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source — math notation reconstructed from text. Conjecture is explicitly labelled 'Conjecture 3 (Nýdl [31])' in the paper.",
+    "arxiv_id": "2103.13359",
+    "paper_title": "Reconstruction from smaller cards",
+    "paper_authors": [
+      "Carla Groenland",
+      "Tom Johnston",
+      "Alex Scott",
+      "Jane Tan"
+    ],
+    "published": "2023-11-13",
+    "abs_url": "https://arxiv.org/abs/2103.13359",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1 (Kelly–Manvel Conjecture on Reconstruction from Smaller Cards)",
+    "statement_text": "For every $r \\in \\mathbb{N}$, there is an integer $N_r$ such that every graph with at least $N_r$ vertices is reconstructible from its $(n-r)$-deck.",
+    "context_text": "Reconstruction from small cards is generally attributed to Kelly, with this strengthened formulation due to Manvel, who calls it 'Kelly's Conjecture'. Kelly and Ulam's classical Reconstruction Conjecture posits $N_1 = 3$; this conjecture asserts that for any fixed $r$, sufficiently large graphs are always reconstructible from the $(n-r)$-deck.",
+    "attributed_to": "Kelly and Manvel",
+    "attributed_year": 1974,
+    "paper_contribution": "Contributes to the case of trees by proving (Theorem 4) that any $n$-vertex tree can be reconstructed from its $(n-r)$-deck for $r < n/9 + o(n)$, confirming the conjecture holds for trees with an explicit linear bound on $r$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source — math may be garbled. Explicitly labelled 'Conjecture 1 ([19, 27])'; attribution year 1974 refers to Manvel's formulation [27], with Kelly [19] (1957) as the originator of the small-cards framework.",
+    "arxiv_id": "2103.13359",
+    "paper_title": "Reconstruction from smaller cards",
+    "paper_authors": [
+      "Carla Groenland",
+      "Tom Johnston",
+      "Alex Scott",
+      "Jane Tan"
+    ],
+    "published": "2023-11-13",
+    "abs_url": "https://arxiv.org/abs/2103.13359",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Informal",
+    "title": "Spinoza–West Connectedness Threshold Belief",
+    "statement_text": "For $n \\geq 6$ and $\\ell \\geq \\lfloor n/2 \\rfloor + 1$, the connectedness of an $n$-vertex graph $G$ is determined by $\\mathcal{D}_\\ell(G)$.",
+    "context_text": "Spinoza and West constructed two graphs $G_1 = P_n$ and $G_2 = C_{\\lceil n/2 \\rceil+1} \\sqcup P_{\\lfloor n/2 \\rfloor - 1}$ which share the same $\\ell$-deck for all $\\ell \\leq \\lfloor n/2 \\rfloor$ yet differ in connectedness, showing the threshold $\\lfloor n/2 \\rfloor + 1$ would be sharp if the belief holds. Spinoza and West proved connectedness is recognisable for $\\ell \\geq n - (1+o(1))\\sqrt{2\\log n / \\log\\log n}$.",
+    "attributed_to": "Spinoza and West",
+    "attributed_year": null,
+    "paper_contribution": "Proves (Theorem 5) that the connectedness of an $n$-vertex graph can be recognised from $\\mathcal{D}_\\ell(G)$ provided $\\ell \\geq 9n/10$, giving a linear gap and significantly improving the Spinoza–West bound.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "PDF source — stated in the paper as 'Spinoza and West believe that…', not a formally named conjecture. Math notation reconstructed from PDF.",
+    "arxiv_id": "2103.13359",
+    "paper_title": "Reconstruction from smaller cards",
+    "paper_authors": [
+      "Carla Groenland",
+      "Tom Johnston",
+      "Alex Scott",
+      "Jane Tan"
+    ],
+    "published": "2023-11-13",
+    "abs_url": "https://arxiv.org/abs/2103.13359",
+    "source": "pdf"
+  }
+]

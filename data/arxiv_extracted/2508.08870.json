@@ -1,0 +1,46 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.1",
+    "statement_text": "A $d$-dimensional set of $n$ points determines at least $(d-1)n-O(d^{2})$ lines with pairwise distinct directions.",
+    "context_text": "This conjecture is suggested in Brass, Moser, and Pach [4] (page 272), motivated by earlier related results of Jamison and of Blokhuis and Seress. The matching upper bound is witnessed by taking $n-d+1$ collinear points plus $d-1$ points in general position, giving $(d-1)(n-d+1)+\\binom{d-1}{2}+1=(d-1)n-O(d^{2})$ distinct directions.",
+    "attributed_to": "Brass, Moser, and Pach",
+    "attributed_year": 2005,
+    "paper_contribution": "Proves a weaker linear lower bound: any $d$-dimensional set of $n$ points determines at least $bdn$ lines with pairwise distinct directions for an absolute constant $b \\geq \\frac{1}{48}$, providing the first result linear in $dn$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2508.08870",
+    "paper_title": "Distinct Directions and Distinct Distances in $\\mathbb{R}^d$",
+    "paper_authors": [
+      "Noga Alon",
+      "Rom Pinchasi"
+    ],
+    "published": "2025-11-07",
+    "abs_url": "https://arxiv.org/abs/2508.08870",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.5",
+    "statement_text": "For every fixed $d$ the following holds for all $d$-norms $\\|\\cdot\\|$ but a meagre set. For all $n>n_{0}(d)$, any set of $n$ points in $\\mathbb{R}^{d}$ that do not all lie in an affine hyperplane determine at least $(d-o(1))n$ distinct distances with respect to $\\|\\cdot\\|$, where the $o(1)$-term tends to $0$ as $n$ tends to infinity.",
+    "context_text": "The conjecture concerns distinct distances in typical $d$-dimensional norms; the space of $d$-norms is a Baire space under the Hausdorff metric on unit balls, so 'all but a meagre set' is a strong genericity condition. The paper notes this is open already for $d=2$, as the result in [1] only ensures $(1-o(1))n$ distinct distances; the paper proves a weaker version (Theorem 1.6) by combining Theorem 1.2 with the arguments of [1].",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2508.08870",
+    "paper_title": "Distinct Directions and Distinct Distances in $\\mathbb{R}^d$",
+    "paper_authors": [
+      "Noga Alon",
+      "Rom Pinchasi"
+    ],
+    "published": "2025-11-07",
+    "abs_url": "https://arxiv.org/abs/2508.08870",
+    "source": "html"
+  }
+]

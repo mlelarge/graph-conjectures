@@ -1,0 +1,48 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.2 (Saad and Wolf)",
+    "statement_text": "Let $k \\geq 2$ be an integer. A linear equation of the form $a_1x_1 + \\cdots + a_{2k}x_{2k} = 0$ is common in $\\mathbb{F}_q^n$ if and only if we can partition $\\{a_1, \\ldots, a_{2k}\\}$ into $k$ pairs, each summing to $0$.",
+    "context_text": "Saad and Wolf explored analogues of Sidorenko and common graphs in the arithmetic setting and posed this conjecture for linear equations with an even number of variables. They noted that the 'if' direction follows easily from the Cauchy-Schwarz inequality; the 'only if' direction was open.",
+    "attributed_to": "Saad and Wolf",
+    "attributed_year": null,
+    "paper_contribution": "Proves the conjecture in full via Theorem 1.4: the 'only if' direction (part (b)) is established by constructing a function with randomly chosen Fourier coefficients, while parts (a) and (c) complete the characterization for all parities of $k$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1910.06436",
+    "paper_title": "Common and Sidorenko Linear Equations",
+    "paper_authors": [
+      "Jacob Fox",
+      "Huy Tuan Pham",
+      "Yufei Zhao"
+    ],
+    "published": "2020-12-15",
+    "abs_url": "https://arxiv.org/abs/1910.06436",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Question 1.3 (Alon)",
+    "statement_text": "Is it true that adding sufficiently many free variables makes any linear system not common?",
+    "context_text": "This question was attributed to Alon and recorded in Saad and Wolf [19, Question 4.1]. It asks whether the 'common' property is always destroyed by appending free (zero-coefficient) variables to a linear equation.",
+    "attributed_to": "Alon",
+    "attributed_year": null,
+    "paper_contribution": "Resolves the question affirmatively via Theorem 1.5: adding $\\ell \\geq 1$ free variables to $L$ yields $L'$ that is common if and only if $a_1, \\ldots, a_k$ can be partitioned into pairs each summing to zero (the same condition as for $L$ itself), so any equation that is not common remains not common regardless of how many free variables are added.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1910.06436",
+    "paper_title": "Common and Sidorenko Linear Equations",
+    "paper_authors": [
+      "Jacob Fox",
+      "Huy Tuan Pham",
+      "Yufei Zhao"
+    ],
+    "published": "2020-12-15",
+    "abs_url": "https://arxiv.org/abs/1910.06436",
+    "source": "pdf"
+  }
+]

@@ -1,0 +1,48 @@
+{
+  "review_id": "1609.00314__00",
+  "safe_id": "1609.00314",
+  "arxiv_id": "1609.00314",
+  "conjecture_title": "Conjecture: every forest of lanterns is pervasive",
+  "paper_title": "Induced subgraphs of graphs with large chromatic number. V. Chandeliers and strings",
+  "published": "2021-05-21",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The conjecture that every forest of lanterns is pervasive in the class of all graphs remains open. The source paper itself establishes the result for all ρ-controlled ideals (ρ ≥ 2) and for the class of string graphs (which is 2-controlled), but the question for the ideal of all graphs is explicitly noted as open in the abstract. A wide web search through 2026 found no subsequent paper resolving the full conjecture.",
+  "since_posted": [],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2110.00278",
+      "verified": false,
+      "note": "Paper is about near-polynomial χ-boundedness for P_5-free graphs (Erdős–Hajnal direction); no mention of forest of lanterns or pervasiveness. False positive from corpus matching."
+    },
+    {
+      "arxiv_id": "2301.10147",
+      "verified": false,
+      "note": "Paper is about Erdős–Hajnal loglog improvement; no connection to forest-of-lanterns conjecture. False positive from corpus matching."
+    },
+    {
+      "arxiv_id": "2409.09397",
+      "verified": true,
+      "note": "WebFetch confirmed: paper addresses Gyárfás–Sumner conjecture (stable sets in H-free graphs), does not mention forest of lanterns or the pervasiveness conjecture from 1609.00314."
+    },
+    {
+      "arxiv_id": "2409.09400",
+      "verified": false,
+      "note": "Paper concerns subdivisions and near-linear stable sets in the Gyárfás–Sumner direction; no connection to forest-of-lanterns pervasiveness conjecture. False positive from corpus matching."
+    },
+    {
+      "arxiv_id": "2201.08204",
+      "verified": true,
+      "note": "WebFetch confirmed: paper disproves a conjecture about triangle-free induced subgraphs (attributed to Galvin–Rödl), does not mention forest of lanterns or arXiv:1609.00314. False positive from corpus matching."
+    }
+  ],
+  "search_queries": [
+    "forest of lanterns pervasive induced subgraph chromatic number Chudnovsky Scott Seymour 1609.00314",
+    "\"forest of lanterns\" pervasive graph theory induced subgraph subdivision",
+    "\"forest of lanterns\" pervasive all graphs 2022 2023 2024 2025 arxiv Chudnovsky Scott Seymour"
+  ],
+  "notes": "All five supplied internal references are false positives — none address the forest-of-lanterns pervasiveness conjecture. The conjecture is explicitly open in the source paper for the class of all graphs; the paper's own positive results (ρ-controlled ideals, string graphs) are the deepest known partial results. No follow-up resolving the full conjecture was found in the indexed literature through May 2026."
+}

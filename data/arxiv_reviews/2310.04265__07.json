@@ -1,0 +1,34 @@
+{
+  "review_id": "2310.04265__07",
+  "safe_id": "2310.04265",
+  "arxiv_id": "2310.04265",
+  "conjecture_title": "Conjecture 5.3 (Large dom implies an ω̄-cluster)",
+  "paper_title": "Clique number of tournaments",
+  "published": "2023-10-06",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "solved",
+  "confidence": "high",
+  "summary": "Conjecture 5.3 asks whether large dom(T) forces a bounded-size subtournament with large clique number ω̄. Crew, Fan, Koerts, Moore, and Spirkl (arXiv:2602.09863, 2026) prove Corollary 7 of their paper, which is exactly Conjecture 5.8 of the source paper: every tournament T with ω̄(T) ≥ f(k) contains a subtournament X of size at most ℓ(k) with ω̄(X) ≥ k. Since Property 3.2 of the source paper establishes dom(T) ≤ ω̄(T) for every tournament T, Conjecture 5.3 follows immediately as a corollary: dom(T) ≥ f(k) implies ω̄(T) ≥ f(k), after which Corollary 7 applies.",
+  "since_posted": [
+    {
+      "title": "Characterizing Large Clique Number in Tournaments",
+      "authors": "Logan Crew, Xinyue Fan, Hidde Koerts, Benjamin Moore, Sophie Spirkl",
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2602.09863",
+      "arxiv_id": "2602.09863",
+      "doi": null,
+      "kind": "proof",
+      "claim": "Proves Corollary 7 (= Conjecture 5.8 of Aboulker et al.): every tournament with sufficiently large ω̄ contains a bounded-size subtournament with large ω̄; since dom(T) ≤ ω̄(T), this immediately resolves Conjecture 5.3."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "tournament \"clique number\" \"dom\" subtournament cluster Aboulker Aubian Charbit Lopes 2310.04265",
+    "tournament \"dichromatic number\" \"domination number\" \"omega-cluster\" conjecture 2023 2024 2025",
+    "arXiv \"2310.04265\" citing tournament clique domination 2024 2025"
+  ],
+  "notes": "arXiv:2602.09863 explicitly targets Conjecture 5.8 of the source paper (its Corollary 7), not Conjecture 5.3 directly; however, Conjecture 5.3 is an immediate logical consequence via the inequality dom(T) ≤ ω̄(T) ≤ χ̄(T) established as Property 3.2 in the source paper."
+}

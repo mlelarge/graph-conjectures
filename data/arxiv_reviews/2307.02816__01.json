@@ -1,0 +1,22 @@
+{
+  "review_id": "2307.02816__01",
+  "safe_id": "2307.02816",
+  "arxiv_id": "2307.02816",
+  "conjecture_title": "Question 2",
+  "paper_title": "The grid-minor theorem revisited",
+  "published": "2023-07-06",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Question 2 asks whether the main result of arXiv:2307.02816 (which holds in the excluded-minor setting) extends to the excluded-topological-minor setting, with the treewidth of H bounded by f(td(X)) rather than |V(X)|. Campbell et al. (arXiv:2206.02395) proved the weaker version with tw(H) ≤ |V(X)|, and that bound is tight for complete graphs. Subsequent product-structure work (arXiv:2410.20333, Liu–Norin–Wood 2024) addresses odd-minor-free graphs but not the topological-minor setting. No paper resolving Question 2 was found in the indexed literature as of May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "arXiv 2307.02816 grid-minor theorem topological minor treewidth treedepth strong product",
+    "Campbell excluded topological minor treewidth strong product treedepth graph structure 2024 2025",
+    "topological minor product structure treewidth treedepth strong product graph 2024 2025 2026"
+  ],
+  "notes": "Campbell et al. (arXiv:2206.02395, published in Combinatorics Probability and Computing 2023) proved the topological-minor analogue with tw(H) ≤ |V(X)|; this bound is tight for complete graphs. The source paper's Theorem 2 achieves tw(H) ≤ f(td(X)) in the excluded-minor setting (not topological minor). The gap between |V(X)| and f(td(X)) in the topological-minor setting is the open question. No follow-up resolving this was found; arXiv:2410.20333 (Liu–Norin–Wood 2024) works in the minor and odd-minor settings only."
+}

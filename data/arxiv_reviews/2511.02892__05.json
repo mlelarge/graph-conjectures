@@ -1,0 +1,23 @@
+{
+  "review_id": "2511.02892__05",
+  "safe_id": "2511.02892",
+  "arxiv_id": "2511.02892",
+  "conjecture_title": "Problem 5.2",
+  "paper_title": "Open problems of the 33rd Workshop on Cycles and Colourings",
+  "published": "2025-11-04",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The conjecture asserts that only finitely many connected bridgeless cubic graphs fail to admit a 2-homogeneous coloring. The main prior result is a 2017 paper by Janicová, Madaras, Soták, and Lužar (Ars Mathematica Contemporanea) establishing that every bipartite cubic graph admits a 2-homogeneous coloring; known exceptions are non-bipartite graphs such as the triangular prism with a subdivided edge. No paper resolving or partially resolving the full conjecture was found in a targeted search covering searches through May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "2-homogeneous coloring cubic graphs bridgeless finite exceptions",
+    "arXiv 2511.02892 \"2-homogeneous coloring\" cubic graph conjecture",
+    "\"homogeneous coloring\" cubic graph Lužar Soták bridgeless finite",
+    "\"2-homogeneous coloring\" cubic graph 2025 2026 finite bridgeless"
+  ],
+  "notes": "No follow-up found. The conjecture was posed at the November 2025 workshop and is very recent (~6 months old). The 2017 AMC paper by Janicová, Madaras, Soták, and Lužar (https://amc-journal.eu/index.php/amc/article/view/1083) established the bipartite cubic graph case via a connection to NMNR-colorings of 3-uniform 3-regular hypergraphs; this is the closest background result but predates the conjecture."
+}

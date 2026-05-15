@@ -1,0 +1,27 @@
+{
+  "review_id": "2404.02021__00",
+  "safe_id": "2404.02021",
+  "arxiv_id": "2404.02021",
+  "conjecture_title": "Conjecture 4.1",
+  "paper_title": "On off-diagonal hypergraph Ramsey numbers",
+  "published": "2024-04-02",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "Conjecture 4.1 from arXiv:2404.02021 asks whether every Ramsey coloring of order N for 3-graphs G,H with pair-construction complexity p > r(G,H)^{o(1)} must have complexity at least r(G,H)^a for an absolute constant a>0. No follow-up paper confirming or refuting this conjecture was found. A related 2026 preprint by He (arXiv:2603.16069) constructs 3-graphs with quasipolynomial Ramsey growth rates in the same research area, but its abstract does not address the pair-construction complexity framework of Conjecture 4.1.",
+  "since_posted": [],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2312.15572",
+      "verified": true,
+      "note": "This paper (Nguyen–Scott–Seymour, 'Induced subgraph density. VI. Bounded VC-dimension') confirms a conjecture of Fox, Pach, and Suk about cliques/stable sets in graphs of bounded VC-dimension. It is unrelated to Conjecture 4.1 from arXiv:2404.02021, which concerns pair constructions of complexity p for 3-uniform hypergraph Ramsey numbers. The internal reference is a false match."
+    }
+  ],
+  "search_queries": [
+    "hypergraph Ramsey pair construction complexity stepping-up Conlon Fox Gunby He Mubayi Suk 2024",
+    "arxiv 2404.02021 cite pair construction r^p hypergraph Ramsey complexity 2024 2025"
+  ],
+  "notes": "The conjecture is a structural/framework-level claim asserting that pair constructions of low complexity are essentially universal for hypergraph Ramsey lower bounds. The source paper was published in IMRN (Volume 2025, Issue 11). A 2026 preprint arXiv:2603.16069 by He (a co-author) constructs 3-graphs with quasipolynomial Ramsey growth rates n^{Theta(log n)}, directly relevant to the surrounding discussion, but could not be confirmed to address Conjecture 4.1 specifically within the 5-call budget."
+}

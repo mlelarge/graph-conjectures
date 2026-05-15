@@ -1,0 +1,23 @@
+{
+  "review_id": "2206.00594__01",
+  "safe_id": "2206.00594",
+  "arxiv_id": "2206.00594",
+  "conjecture_title": "Open Question: bounded twin-width for sparse $\\mathcal{O}_k$-free graphs",
+  "paper_title": "Sparse graphs with bounded induced cycle packing number have logarithmic treewidth",
+  "published": "2024-02-16",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The open question from arXiv:2206.00594 asks whether $\\mathcal{O}_k$-free graphs that exclude $K_{t,t}$ as a subgraph have twin-width bounded by a function of $t$ and $k$. The source paper establishes that such graphs have treewidth at most $O_{t,k}(\\log n)$, but the twin-width question is explicitly left open. A related result (arXiv:2307.01732) shows the converse direction for twin-width 2: sparse graphs of twin-width at most 2 have bounded treewidth, but this does not imply bounded twin-width for the $\\mathcal{O}_k$-free class. No follow-up resolving the question was found in a wide web search through May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "twin-width \"O_k-free\" \"K_{t,t}\" bounded sparse graphs",
+    "twin-width induced cycle packing sparse graphs 2206.00594",
+    "twin-width bounded \"induced cycle packing\" biclique-free Bonamy Bonnet 2024 2025",
+    "twin-width \"O_k-free\" biclique-free bounded function arxiv 2025"
+  ],
+  "notes": "No follow-up resolving or disproving the conjecture was found. Paper 2307.01732 ('Sparse Graphs of Twin-Width 2 Have Bounded Tree-Width') is tangentially related but addresses the inverse direction and is restricted to twin-width 2. The conjecture remains open with high confidence as of May 2026."
+}

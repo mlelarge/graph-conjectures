@@ -1,0 +1,24 @@
+[
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Lorenzini's cyclic sandpile group problem",
+    "statement_text": "How often is the sandpile group $S(G)$ cyclic, that is $\\mu(G) = 1$?",
+    "context_text": "Lorenzini [33] raised the question of how frequently the sandpile group of a graph is cyclic. This motivates the paper's analysis of the minimum number of generators of the sandpile group of polygon flowers, culminating in a necessary and sufficient condition for cyclicity.",
+    "attributed_to": "Lorenzini",
+    "attributed_year": null,
+    "paper_contribution": "Proves a necessary and sufficient condition for $S(F)$ to be cyclic for any polygon flower $F = (C_t; P_1, \\ldots, P_t)$, expressed in terms of arithmetic properties of the spanning tree counts $\\tau(P_i)$ and $\\tau(P_i/e_i)$.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "Mentioned in introduction prose without a labelled theorem environment; attributed to reference [33]. PDF source — math may be garbled. The paper addresses a special case (polygon flowers) of this general question.",
+    "arxiv_id": "1907.08450",
+    "paper_title": "The sandpile group of a polygon flower",
+    "paper_authors": [
+      "Haiyan Chen",
+      "Bojan Mohar"
+    ],
+    "published": "2019-07-19",
+    "abs_url": "https://arxiv.org/abs/1907.08450",
+    "source": "pdf"
+  }
+]

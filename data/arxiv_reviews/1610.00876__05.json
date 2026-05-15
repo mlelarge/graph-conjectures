@@ -1,0 +1,48 @@
+{
+  "review_id": "1610.00876__05",
+  "safe_id": "1610.00876",
+  "arxiv_id": "1610.00876",
+  "conjecture_title": "Problem 16",
+  "paper_title": "Subdivisions in digraphs of large out-degree or large dichromatic number",
+  "published": "2016-10-04",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "medium",
+  "summary": "Problem 16 asks two questions: whether all digraphs are $\\kappa$-maderian (large strong connectivity forces subdivisions) and whether all digraphs are $\\kappa'$-maderian (large strong arc-connectivity forces subdivisions). The $\\kappa'$-maderian question was answered negatively by Gishboliner, Steiner, and Szabó (arXiv:2008.13224, Propositions 10--11), who showed that neither $\\overleftrightarrow{K_4}$ nor $\\overleftrightarrow{S_4}$ is $\\kappa'$-maderian. The $\\kappa$-maderian question remains open; Thomassen's Conjecture 17 from the source paper would imply a positive answer for that part.",
+  "since_posted": [
+    {
+      "title": "Oriented cycles in digraphs of large outdegree",
+      "authors": "Lior Gishboliner, Raphael Steiner, Tibor Szabó",
+      "year": 2021,
+      "venue": "Combinatorica",
+      "url": "https://arxiv.org/abs/2008.13224",
+      "arxiv_id": "2008.13224",
+      "doi": "10.1007/s00493-021-4750-z",
+      "kind": "counterexample",
+      "claim": "Proves (Propositions 10 and 11) that neither $\\overleftrightarrow{K_4}$ nor $\\overleftrightarrow{S_4}$ is $\\kappa'$-maderian, answering the $\\kappa'$-maderian half of Problem 16 negatively; the $\\kappa$-maderian question is noted as remaining open."
+    }
+  ],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2008.13224",
+      "verified": true,
+      "note": "WebFetch confirmed the paper exists and addresses open questions from Aboulker et al. Abstract does not detail Propositions 10--11 on κ'-maderianness explicitly; specific claim taken from the fuzz=80 internal reference, which is treated as reliable. The two fuzz=79 entries for the same arXiv ID appear to correspond to different conjectures in the source paper (Conjecture 5 on oriented cycles; mader_{δ+} bound)."
+    },
+    {
+      "arxiv_id": "2008.09888",
+      "verified": true,
+      "note": "WebFetch confirmed the paper focuses on mader_χ (dichromatic number) results for octi/cactus digraphs. Its internal references claiming it 'fully resolves the conjecture' refer to a different conjecture (mader_χ for cycle orientations), not to Problem 16's κ/κ'-maderianness questions."
+    },
+    {
+      "arxiv_id": "2202.01006",
+      "verified": false,
+      "note": "Not fetched within the 5-call cap. Internal reference indicates the paper only cites the conjecture as broader context without direct progress."
+    }
+  ],
+  "search_queries": [
+    "kappa-maderian digraph strong connectivity subdivision Mader 1610.00876"
+  ],
+  "notes": "The three internal references for arXiv:2008.13224 are contradictory because the fuzzy matcher extracted text associated with different problems in the source paper. The fuzz=80 entry is the most specific to Problem 16. The κ-maderian question (strong connectivity version) remains open as of the latest literature found. No additional follow-up papers beyond arXiv:2008.13224 were found in the web search."
+}

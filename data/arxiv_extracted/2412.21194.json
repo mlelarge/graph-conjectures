@@ -1,0 +1,50 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.9 (Alon's Conjecture on Ramsey Cayley Graphs)",
+    "statement_text": "There is a constant $C$ such that every finite group has a $C$-Ramsey Cayley graph.",
+    "context_text": "Alon [2] conjectured that every finite group of order $N$ has a Cayley graph whose clique number and independence number are both $O(\\log N)$. This was verified for cyclic groups by Green [23] using the uniform Cayley graph, but essentially nothing was known in the general case. Over groups such as $\\mathbb{F}_{2}^{n}$, the uniform random Cayley graph cannot serve as a witness since its clique number is $\\Omega(\\log N \\log\\log N)$ with high probability.",
+    "attributed_to": "Alon",
+    "attributed_year": 1995,
+    "paper_contribution": "Proves Alon's conjecture for all abelian groups of order $N$ for almost all $N$; additionally, for finite vector spaces of order $N$ with characteristic $\\equiv 1\\pmod{4}$, proves the existence of a self-complementary Cayley graph with clique number and independence number both at most $(2+o(1))\\log N$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "The conjecture is also listed on the Open Problem Garden [ref 4 in the bibliography].",
+    "arxiv_id": "2412.21194",
+    "paper_title": "On the clique number of random Cayley graphs and related topics",
+    "paper_authors": [
+      "David Conlon",
+      "Jacob Fox",
+      "Huy Tuan Pham",
+      "Liana Yepremyan"
+    ],
+    "published": "2024-12-30",
+    "abs_url": "https://arxiv.org/abs/2412.21194",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 5.1",
+    "statement_text": "There exists $C>0$ and a two-coloring of $\\mathbb{F}_{2}^{n}\\setminus\\{0\\}$ such that there is no subspace $H$ of size $Cn$ for which all nonzero elements of the subspace are monochromatic.",
+    "context_text": "Alon's conjecture remains wide open for $\\mathbb{F}_{2}^{n}$ and $\\mathbb{F}_{3}^{n}$. The finite unions theorem rules out a two-coloring with no monochromatic subspace at all over $\\mathbb{F}_{2}^{n}$ for large $n$, so progress requires understanding the quantitative threshold. Establishing this conjecture would be an important step toward proving Alon's conjecture for $\\mathbb{F}_{2}^{n}$, though the true bound on the minimum monochromatic subspace size may be considerably smaller.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2412.21194",
+    "paper_title": "On the clique number of random Cayley graphs and related topics",
+    "paper_authors": [
+      "David Conlon",
+      "Jacob Fox",
+      "Huy Tuan Pham",
+      "Liana Yepremyan"
+    ],
+    "published": "2024-12-30",
+    "abs_url": "https://arxiv.org/abs/2412.21194",
+    "source": "html"
+  }
+]

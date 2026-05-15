@@ -1,0 +1,23 @@
+{
+  "review_id": "2511.07601__02",
+  "safe_id": "2511.07601",
+  "arxiv_id": "2511.07601",
+  "conjecture_title": "Open question on local limit of uniformly random wooded triangulations",
+  "paper_title": "Infinite Schnyder Woods",
+  "published": "2025-11-10",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The conjecture, posed in the November 2025 paper arXiv:2511.07601, asks whether uniformly random wooded triangulations (triangulations paired with an arbitrary Schnyder wood) possess a local limit as the boundary length tends to infinity, and if so, whether it differs from the maximal-Schnyder-wood half-plane triangulation constructed in the same work. The paper notes that tree heights in uniformly random wooded triangulations are Theta(sqrt(n)), whereas the maximal-Schnyder-wood setting yields order n^{3/4}, indicating a fundamentally different combinatorial regime. No follow-up work addressing this question was found in the literature as of May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "wooded triangulations local limit Schnyder woods half-plane random 2025",
+    "Addario-Berry Hogan Michel Scott \"Infinite Schnyder Woods\" 2511.07601",
+    "random wooded triangulation local limit half-plane boundary length Schnyder wood 2025 2026",
+    "\"wooded triangulation\" \"local limit\" 2026 arXiv random planar"
+  ],
+  "notes": "The source paper (arXiv:2511.07601) is very recent (November 2025). Four web searches and one WebFetch of the arXiv abstract page found no follow-up paper addressing this open question. The question is clearly stated as open by the authors, distinguishing the uniformly random wooded triangulation regime (tree height Theta(sqrt(n))) from the maximal Schnyder wood regime (order n^{3/4}), and asking whether a local limit exists and what it would look like."
+}

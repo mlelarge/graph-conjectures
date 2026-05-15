@@ -1,0 +1,27 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.2 (Sintiari and Trotignon)",
+    "statement_text": "For every integer $t\\geq 1$, there exists a constant $C_{t}$ such that every even-hole-free graph $G$ with no clique of size $t$ satisfies $\\operatorname{tw}(G)\\leq C_{t}\\log|V(G)|$.",
+    "context_text": "Sintiari and Trotignon observed that even-hole-free graphs can have arbitrarily large treewidth even when large cliques are excluded, and conjectured that the growth is at most logarithmic in the number of vertices. Their own construction shows the logarithmic bound is asymptotically best possible.",
+    "attributed_to": "Sintiari and Trotignon",
+    "attributed_year": 2021,
+    "paper_contribution": "Proves the conjecture in full: for every integer $t\\geq 1$ there exists $c_t\\geq 1$ such that every $n$-vertex even-hole-free graph with no clique of size $t$ has $\\operatorname{tw}(G)\\leq c_t\\log n$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2402.14211",
+    "paper_title": "Induced subgraphs and tree decompositions XV. Even-hole-free graphs with bounded clique number have logarithmic treewidth",
+    "paper_authors": [
+      "Maria Chudnovsky",
+      "Peter Gartland",
+      "Sepehr Hajebi",
+      "Daniel Lokshtanov",
+      "Sophie Spirkl"
+    ],
+    "published": "2024-05-03",
+    "abs_url": "https://arxiv.org/abs/2402.14211",
+    "source": "html"
+  }
+]

@@ -1,0 +1,25 @@
+{
+  "review_id": "2305.15585__03",
+  "safe_id": "2305.15585",
+  "arxiv_id": "2305.15585",
+  "conjecture_title": "Conjecture 13",
+  "paper_title": "Chromatic number is not tournament-local",
+  "published": "2023-12-04",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 13 from arXiv:2305.15585 asks whether a function f(N)=o(log N) exists such that for every N-vertex graph G with \\chi(G)\\geq f(N) and every tournament T on the same vertex set, some vertex v satisfies \\chi(G[N^+_T(v)])\\geq 3. The paper itself (published in JCTB 168, 2024) establishes this only with a bound of \\lceil\\log_2(N)/\\lfloor\\chi/2-1\\rfloor\\rceil out-neighbourhoods rather than a single vertex. No follow-up paper resolving Conjecture 13 was found in the indexed literature as of May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "chromatic number tournament-local out-neighbourhood arXiv 2305.15585",
+    "tournament out-neighbourhood chromatic number o(log N) vertex-critical graph conjecture",
+    "WebFetch https://arxiv.org/abs/2305.15585",
+    "WebFetch https://arxiv.org/html/2305.15585",
+    "WebFetch https://arxiv.org/html/2306.02364",
+    "Girão Hendrey Illingworth chromatic number tournament out-neighbourhood 2024 2025 follow-up"
+  ],
+  "notes": "No follow-up found. Conjecture 13 is presented as an open question in the closing remarks of the source paper. The paper was published as JCTB 168 (2024) 86-95. The related paper arXiv:2306.02364 (Nguyen, Scott, Seymour on tournament structure problems) does not appear to address this conjecture. The conjecture is recent (2023) and the absence of evidence of resolution supports high-confidence open status."
+}

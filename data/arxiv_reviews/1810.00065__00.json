@@ -1,0 +1,23 @@
+{
+  "review_id": "1810.00065__00",
+  "safe_id": "1810.00065",
+  "arxiv_id": "1810.00065",
+  "conjecture_title": "Open Problem: 3-colourability of ternary graphs",
+  "paper_title": "Proof of the Kalai-Meshulam conjecture",
+  "published": "2018-09-28",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The conjecture that all ternary graphs (graphs with no induced cycle of length divisible by 3) are 3-colourable remains open. Bonamy, Charbit and Thomassé proved that ternary graphs have bounded chromatic number (arXiv:1408.2172), and Chudnovsky, Scott, Seymour and Spirkl extended this to graphs avoiding induced cycles of any fixed residue class. A proposed approach via a question of Král’ (whether every ternary graph has an edge whose deletion preserves being ternary, which would imply 3-colourability) was ruled out by Wrochna’s counterexample, but this does not disprove 3-colourability itself. No paper resolving whether the chromatic number bound can be taken to be exactly 3 was found.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "ternary graphs 3-colourable chromatic number Chudnovsky Scott Seymour Spirkl",
+    "ternary graphs 3-colorable arXiv 1810.00065 Kalai-Meshulam",
+    "\"ternary graphs\" \"3-colourable\" OR \"3-colorable\" chromatic number conjecture",
+    "Bonamy Charbit Thomasse ternary graphs bounded chromatic number no induced cycle divisible 3"
+  ],
+  "notes": "No follow-up resolving the 3-colourability question was found in the indexed literature. The bounded-chromatic-number result (Bonamy-Charbit-Thomassé, arXiv:1408.2172) and the more general Chudnovsky-Scott-Seymour-Spirkl result on holes of specific residue (Combinatorica 2020, arXiv series) establish finiteness of the chromatic bound but leave open whether 3 suffices. A natural approach via Král’s edge-deletion question was disproved by Wrochna, removing one plausible proof strategy without settling the conjecture."
+}

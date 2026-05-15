@@ -1,0 +1,34 @@
+{
+  "review_id": "2003.05185__00",
+  "safe_id": "2003.05185",
+  "arxiv_id": "2003.05185",
+  "conjecture_title": "Combinatorial polynomial-time algorithm for MWIS in perfect graphs",
+  "paper_title": "Induced subgraphs of bounded treewidth and the container method",
+  "published": "2020-03-11",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The problem of designing a combinatorial polynomial-time algorithm for MWIS in perfect graphs (bypassing the ellipsoid-method-based algorithm of Grötschel, Lovász, and Schrijver) remains open in full generality. A verified partial result was published in 2024: Abrishami, Chudnovsky, Dibek, and Vušković give a combinatorial polynomial-time algorithm for perfect graphs of bounded degree that exclude a prism or a hole of length four as an induced subgraph, using even-set balanced separators and submodular function minimization. No paper resolving the full problem for all perfect graphs was found.",
+  "since_posted": [
+    {
+      "title": "Submodular Functions and Perfect Graphs",
+      "authors": "Tara Abrishami, Maria Chudnovsky, Cemil Dibek, Kristina Vušković",
+      "year": 2024,
+      "venue": "Mathematics of Operations Research",
+      "url": "https://arxiv.org/abs/2110.00108",
+      "arxiv_id": "2110.00108",
+      "doi": "10.1287/moor.2021.0302",
+      "kind": "partial",
+      "claim": "Gives a combinatorial polynomial-time algorithm for MWIS in perfect graphs of bounded degree that do not contain a prism or a hole of length four as an induced subgraph, by showing such graphs admit a balanced separator that is a union of boundedly many even sets."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "combinatorial polynomial-time algorithm maximum weight independent set perfect graphs open problem",
+    "MWIS perfect graphs combinatorial algorithm Grötschel Lovász Schrijver ellipsoid method progress 2021 2022 2023 2024 2025",
+    "combinatorial algorithm MWIS perfect graphs arxiv 2022 2023 2024 2025 Abrishami Chudnovsky Pilipczuk"
+  ],
+  "notes": "The full problem for all perfect graphs is open; the partial result (arXiv:2110.00108) handles only the bounded-degree prism-free C4-free case. The approach reduces to submodular function minimization, which the authors classify as combinatorial. No resolution of the general case was found in indexed literature up to May 2026."
+}

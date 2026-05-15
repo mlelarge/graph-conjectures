@@ -1,0 +1,46 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 2 (Bensmail et al. [3])",
+    "statement_text": "There is a function $f$ such that, for any fixed tree $T$ with maximum degree $\\Delta_T$, every $f(\\Delta_T)$-edge-connected graph with minimum degree at least $f(|E(T)|)$ and number of edges divisible by $|E(T)|$ has a $T$-decomposition.",
+    "context_text": "This is a strengthened version of the Barát–Thomassen conjecture posed in [3], where the path case (T a path) was also proved with 24-edge-connectivity. The conjecture as stated for general trees was subsequently disproved by the current paper's authors (in [7]) even for trees of maximum degree three.",
+    "attributed_to": "authors of [3]",
+    "attributed_year": null,
+    "paper_contribution": "Proves the path case with optimal 3-edge-connectivity (replacing the 24-edge-connectivity of [3]), establishing that $f(2) = 3$ is achievable; notes the general conjecture is false for trees of maximum degree three.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "The conjecture carries no widely-used name; it is numbered Conjecture 2 within this paper. The bibliography entry [3] is not spelled out in the extracted text, so full attribution details are unavailable.",
+    "arxiv_id": "1907.11600",
+    "paper_title": "Edge-partitioning 3-edge-connected graphs into paths",
+    "paper_authors": [
+      "Tereza Klimošová",
+      "Stéphan Thomassé"
+    ],
+    "published": "2019-07-26",
+    "abs_url": "https://arxiv.org/abs/1907.11600",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 5",
+    "statement_text": "There is a function $f$ such that, for any fixed tree $T$ with $m$ leaves, every $f(m)$-edge-connected graph with minimum degree at least $f(|E(T)|)$ and number of edges divisible by $|E(T)|$ has a $T$-decomposition.",
+    "context_text": "This conjecture is posed by the paper's authors as an alternative to Conjecture 2 (which fails for trees of maximum degree three), bounding the required edge-connectivity in terms of the number of leaves of $T$ rather than its maximum degree. The paper's main result implies $f(2) = 3$ is achievable, and the authors note that establishing the existence of $f(3)$ would already contain the claw case.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1907.11600",
+    "paper_title": "Edge-partitioning 3-edge-connected graphs into paths",
+    "paper_authors": [
+      "Tereza Klimošová",
+      "Stéphan Thomassé"
+    ],
+    "published": "2019-07-26",
+    "abs_url": "https://arxiv.org/abs/1907.11600",
+    "source": "pdf"
+  }
+]

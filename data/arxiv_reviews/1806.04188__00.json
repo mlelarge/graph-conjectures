@@ -1,0 +1,45 @@
+{
+  "review_id": "1806.04188__00",
+  "safe_id": "1806.04188",
+  "arxiv_id": "1806.04188",
+  "conjecture_title": "Conjecture 1.6",
+  "paper_title": "The structure of binary matroids with no induced claw or Fano plane restriction",
+  "published": "2019-11-13",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The conjecture is verified for $s \\in \\{1,2,3\\}$ with $k=1$ in the source paper (Corollary 5.2). Nelson and Nomoto (arXiv:2005.00089, SIAM JDM 2022) subsequently proved the case $s=4$, showing $I_4$-free and triangle-free binary matroids have critical number at most 2. The full conjecture for all $s \\geq 5$ remains open.",
+  "since_posted": [
+    {
+      "title": "The structure of $I_4$-free and triangle-free binary matroids",
+      "authors": "Peter Nelson, Kazuhiro Nomoto",
+      "year": 2022,
+      "venue": "SIAM Journal on Discrete Mathematics",
+      "url": "https://arxiv.org/abs/2005.00089",
+      "arxiv_id": "2005.00089",
+      "doi": "10.1137/20M1343099",
+      "kind": "partial",
+      "claim": "Proves a decomposition theorem for $I_4$-free and triangle-free binary matroids, establishing that such matroids have critical number at most 2, thereby settling Conjecture 1.6 for the case $s=4$."
+    },
+    {
+      "title": "The critical number of $I_{1,t}$-free triangle-free binary matroids",
+      "authors": "Peter Nelson, Kazuhiro Nomoto",
+      "year": 2020,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2011.06625",
+      "arxiv_id": "2011.06625",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves that simple $I_{1,t}$-free and triangle-free binary matroids have bounded critical number for any $t \\geq 1$, extending the bounded-critical-number programme to a broader family of excluded induced restrictions."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "binary matroid critical number induced restriction Gyarfas-Sumner conjecture Nelson Postle",
+    "arXiv 1806.04188 binary matroids claw Fano plane conjecture follow-up",
+    "Nelson Nomoto I4-free triangle-free binary matroids critical number arXiv 2021"
+  ],
+  "notes": "Conjecture 1.6 is proved for s=1,2,3 (k=1) in the source paper and for s=4 (k=2) by Nelson–Nomoto 2020 (arXiv:2005.00089, SIAM JDM 2022). The companion paper arXiv:2011.06625 handles I_{1,t}-free variants, which may not directly address I_s for large s. The conjecture for s≥5 remains open."
+}

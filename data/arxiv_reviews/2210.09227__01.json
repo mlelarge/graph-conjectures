@@ -1,0 +1,25 @@
+{
+  "review_id": "2210.09227__01",
+  "safe_id": "2210.09227",
+  "arxiv_id": "2210.09227",
+  "conjecture_title": "Problem 4.2",
+  "paper_title": "A multidimensional Ramsey Theorem",
+  "published": "2024-12-31",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Problem 4.2 asks whether there exists a fixed $C>0$ such that $\\log R_2(2,n) \\leq (\\log M_2(n))^C$, i.e., whether the two-dimensional Ramsey number $R_2(2,n)$ is bounded above by a fixed power of $\\log M_2(n)$, the logarithm of the two-dimensional Erdős–Szekeres number. No follow-up paper addressing this specific question was found in the literature as of May 2026, some 16 months after the paper's publication in Discrete Analysis.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Girão Kronenberg Scott \"multidimensional Ramsey\" R_2 M_2 two-dimensional Erdős–Szekeres",
+    "arXiv 2210.09227 Girão Kronenberg Scott two-dimensional Ramsey number Erdős–Szekeres follow-up",
+    "WebFetch https://arxiv.org/html/2210.09227",
+    "WebFetch https://people.maths.ox.ac.uk/scott/Papers/multiramsey.pdf",
+    "cite:2210.09227 \"two-dimensional\" Ramsey Erdős–Szekeres 2025 2026 multidimensional",
+    "Girão Kronenberg Scott \"multidimensional Ramsey\" 2025 2026 two-dimensional problem open question"
+  ],
+  "notes": "No follow-up found in indexed literature. The conjecture concerns whether the singly-to-doubly exponential gap between $M_2(n)$ and $R_2(2,n)$ collapses in logarithmic terms; this remains open. The paper was published in Discrete Analysis (December 2024)."
+}

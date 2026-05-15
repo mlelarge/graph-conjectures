@@ -1,0 +1,49 @@
+{
+  "review_id": "2508.14332__00",
+  "safe_id": "2508.14332",
+  "arxiv_id": "2508.14332",
+  "conjecture_title": "Open case: Coarse Menger Conjecture for c=2",
+  "paper_title": "Asymptotic structure. IV. A counterexample to the weak coarse Menger conjecture",
+  "published": "2025-08-20",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The Coarse Menger Conjecture for c=2 was explicitly left open in the source paper, which disproves the weak coarse Menger conjecture for c≥3. Subsequent work (arXiv:2509.08762) proves the coarse Menger conjecture for all graphs of bounded path-width, giving a partial positive result that applies to c=2 in that restricted class. A further paper (arXiv:2605.11112) establishes a coarse Menger theorem for planar and bounded-genus graphs. The c=2 case for general graphs remains open.",
+  "since_posted": [
+    {
+      "title": "Asymptotic structure. V. The coarse Menger conjecture in bounded path-width",
+      "authors": "Tung Nguyen, Alex Scott, Paul Seymour",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2509.08762",
+      "arxiv_id": "2509.08762",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves the coarse Menger conjecture for all graphs of bounded path-width (across all values of c), providing a partial positive result for the c=2 open case in this restricted graph class."
+    },
+    {
+      "title": "A coarse Menger's Theorem for planar and bounded genus graphs",
+      "authors": "unconfirmed",
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2605.11112",
+      "arxiv_id": "2605.11112",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves a coarse version of Menger's theorem for planar and bounded-genus graphs, giving partial progress on the coarse Menger conjecture (including the c=2 case) for those surface-embeddable graph families."
+    }
+  ],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2412.13893",
+      "verified": false,
+      "note": "This paper ('Erdős–Pósa property of cycles that are far apart' by Dujmović, Joret, Micek, Morin) concerns the Erdős–Pósa property for cycles at distance >d, not the Coarse Menger Conjecture for c=2. The internal reference's contribution description is incorrect for this paper; low fuzz score (69) reflects a false match."
+    }
+  ],
+  "search_queries": [
+    "Coarse Menger Conjecture c=2 paths distance graph theory 2025 2026"
+  ],
+  "notes": "The c=2 case of the Coarse Menger Conjecture remains open for general graphs. The source paper's main contribution is a counterexample for c≥3. Partial results exist for bounded path-width (arXiv:2509.08762) and planar/bounded-genus graphs (arXiv:2605.11112). The internal reference arXiv:2412.13893 is a false match and does not concern this conjecture."
+}

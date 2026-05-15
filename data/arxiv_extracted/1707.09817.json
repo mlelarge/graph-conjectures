@@ -1,0 +1,27 @@
+[
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Colouring Reconfiguration Complexity Classification (Feghali et al.)",
+    "statement_text": "Determine the complexity of finding a path in the vertex colouring reconfiguration graph $R_\\ell(G)$ between two given $\\ell$-colourings of a graph $G$ of maximum degree $\\Delta$, for all pairs $(\\ell, \\Delta)$.",
+    "context_text": "The $k$-colouring reconfiguration problem is PSPACE-hard even if $k=4$ and $G$ is planar bipartite. Feghali et al. [JGT, 2016] initiated the complexity classification for graphs of maximum degree $\\Delta$, leaving exactly one open case $(k,\\Delta)$. Resolving that case requires finding in polynomial time a partition $(A,B)$ of the vertex set of a graph of maximum degree $k$ such that $A$ is an independent set and $B$ induces a $(k-2)$-degenerate graph.",
+    "attributed_to": "Feghali, Johnson, and Paulusma",
+    "attributed_year": 2016,
+    "paper_contribution": "Provides O(n)-time (for $k=1$) and O(n^2)-time (for $k\\geq 2$) algorithms for finding $k$-degenerate decompositions of graphs of maximum degree $k$, thereby resolving the remaining open case and completing the complexity classification.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Reference [24] in the paper is cited as 'Feghali et al. [JGT, 2016]'; the exact values of the remaining open case $(k,\\Delta)$ are not spelled out in the available text excerpt.",
+    "arxiv_id": "1707.09817",
+    "paper_title": "Recognizing Graphs Close to Bipartite Graphs with an Application to Colouring Reconfiguration",
+    "paper_authors": [
+      "Marthe Bonamy",
+      "Konrad K. Dabrowski",
+      "Carl Feghali",
+      "Matthew Johnson",
+      "Daniel Paulusma"
+    ],
+    "published": "2017-07-31",
+    "abs_url": "https://arxiv.org/abs/1707.09817",
+    "source": "pdf"
+  }
+]

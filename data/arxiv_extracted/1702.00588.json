@@ -1,0 +1,46 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1 (Thomassen)",
+    "statement_text": "There exists a positive real number $\\beta$ such that every triangle-free planar graph $G$ has at least $2^{\\beta|V(G)|}$ different 3-colorings.",
+    "context_text": "Thomassen conjectured this in 2007 [12, Conjecture 2.1(b)]. Prior to this paper the best lower bound was the sub-exponential $2^{\\sqrt{|V(G)|}/212}$ of Asadi et al. The conjecture is known to hold for triangle-free planar graphs with bounded maximum degree.",
+    "attributed_to": "Thomassen",
+    "attributed_year": 2007,
+    "paper_contribution": "Proves that the conjecture is equivalent to the statement (RGEN)/(TRIA) that there exists $\\alpha>0$ such that every planar triangle-free request graph admits a 3-coloring satisfying an $\\alpha$-fraction of its requests; also establishes this equivalent form in the special case where all non-equality requests share a common neighbor (Corollary 3).",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1702.00588",
+    "paper_title": "Do triangle-free planar graphs have exponentially many 3-colorings?",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Jean-Sébastien Sereni"
+    ],
+    "published": "2017-09-19",
+    "abs_url": "https://arxiv.org/abs/1702.00588",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Problem 1",
+    "statement_text": "Is there a positive real number $\\alpha$ such that every planar triangle-free request graph admits a 3-coloring satisfying $\\alpha$-fraction of its requests?",
+    "context_text": "This problem arises from the work of Asadi et al. [1] and is introduced as a reformulation vehicle for Thomassen's exponential-coloring conjecture. A request graph $(G, R_=, R_{\\neq}, w)$ consists of a planar triangle-free graph $G$ together with degree-two vertices partitioned into equality requests $R_=$ and inequality requests $R_{\\neq}$ with positive rational weights; a coloring satisfies a request if the two neighbors receive equal (resp. different) colors.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1702.00588",
+    "paper_title": "Do triangle-free planar graphs have exponentially many 3-colorings?",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Jean-Sébastien Sereni"
+    ],
+    "published": "2017-09-19",
+    "abs_url": "https://arxiv.org/abs/1702.00588",
+    "source": "pdf"
+  }
+]

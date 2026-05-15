@@ -1,0 +1,24 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Gyárfás-Sumner Conjecture (Conjecture 3.1)",
+    "statement_text": "All forests are $\\chi$-bounding.",
+    "context_text": "A graph $H$ is called $\\chi$-bounding if the ideal of all $H$-free graphs is $\\chi$-bounded. No graph containing a cycle is $\\chi$-bounding (since graphs of arbitrarily large girth can have arbitrarily large chromatic number), so only forests can be $\\chi$-bounding. Gyárfás and Sumner independently conjectured the converse. The conjecture is known for paths, brooms, subdivisions of stars, trees of radius two, and certain trees with far-apart high-degree vertices, but remains open in general.",
+    "attributed_to": "Gyárfás and Sumner",
+    "attributed_year": null,
+    "paper_contribution": "This survey reviews all known cases where the conjecture has been verified, including paths (Gyárfás), trees of radius two (Gyárfás–Szemerédi–Tuza; Kierstead–Penrice), Kierstead–Zhu trees, and new results by Scott–Seymour and Scott–Seymour–Chudnovsky on trees with far-apart high-degree vertices, while noting the conjecture remains open in full generality.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Full paper text was truncated after section 3; the survey states it contains additional open problems at the end that were not present in the extracted text.",
+    "arxiv_id": "1812.07500",
+    "paper_title": "A survey of $χ$-boundedness",
+    "paper_authors": [
+      "Alex Scott",
+      "Paul Seymour"
+    ],
+    "published": "2020-05-25",
+    "abs_url": "https://arxiv.org/abs/1812.07500",
+    "source": "pdf"
+  }
+]

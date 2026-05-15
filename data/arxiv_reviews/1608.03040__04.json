@@ -1,0 +1,40 @@
+{
+  "review_id": "1608.03040__04",
+  "safe_id": "1608.03040",
+  "arxiv_id": "1608.03040",
+  "conjecture_title": "Open Problem 3",
+  "paper_title": "Majority Colourings of Digraphs",
+  "published": "2016-08-10",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Open Problem 3 — whether every Eulerian digraph has a majority 3-colouring — remains unresolved as of May 2026. The source paper already establishes that Eulerian digraphs admit a 3-colouring in which each vertex v has at most (2/3)deg(v) same-colour in-or-out-neighbours, but the stricter majority bound of (1/2)deg^+(v) same-colour out-neighbours is still open. Anastos, Lamaison, Steiner and Szabó (2019, arXiv:1911.01954) made substantial progress on the broader Open Problem 1 (majority 3-coloring for all digraphs), proving partial cases for sparse digraphs, but their results do not directly resolve the Eulerian case. No subsequent paper found in the literature settles Open Problem 3.",
+  "since_posted": [
+    {
+      "title": "Majority Colorings of Sparse Digraphs",
+      "authors": "Michael Anastos, Ander Lamaison, Raphael Steiner, Tibor Szabó",
+      "year": 2021,
+      "venue": "The Electronic Journal of Combinatorics",
+      "url": "https://arxiv.org/abs/1911.01954",
+      "arxiv_id": "1911.01954",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves the broader majority 3-coloring conjecture (Open Problem 1) for digraphs with chromatic number at most 6 or dichromatic number at most 3, and proves majority 3-choosability for digraphs with max out-degree at most 4 or max degree at most 7; does not specifically address Eulerian digraphs (Open Problem 3)."
+    }
+  ],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "1911.01954",
+      "verified": true,
+      "note": "Paper exists and is confirmed. Its abstract focuses on sparse digraphs with bounded chromatic/dichromatic number and bounded degree — the multiple internal-reference entries (fuzz 98/83/79/79/75/73) all correspond to this single paper. The contributions attributed in the internal refs (NP-completeness of majority 2-colorability, partial results for bounded chromatic/dichromatic number, K ≤ 3.9602 bound, fractional majority coloring) concern Open Problem 1 (all digraphs), not Open Problem 3 (Eulerian digraphs) specifically. The Eulerian case is not mentioned in the abstract."
+    }
+  ],
+  "search_queries": [
+    "Eulerian digraph majority 3-colouring conjecture arXiv 1608.03040",
+    "majority coloring Eulerian digraph 3-coloring open problem Kreutzer Oum Seymour Wood",
+    "Eulerian digraph majority 3-coloring solved 2020 2021 2022 2023 2024 2025"
+  ],
+  "notes": "All six internal-reference entries reduce to a single paper (arXiv:1911.01954). Open Problem 3 is strictly about Eulerian digraphs and is a weaker conjecture than Open Problem 1; no paper found that exploits the Eulerian structure to achieve a full majority 3-colouring. The conjecture is open with high confidence."
+}

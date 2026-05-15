@@ -1,0 +1,98 @@
+[
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Plane Matching Decomposition Problem",
+    "statement_text": "Does there exist a constant $c>0$ such that every complete geometric graph on $n$ vertices can be partitioned into at most $cn$ plane matchings?",
+    "context_text": "In 2005, Araujo, Dumitrescu, Hurtado, Noy, and Urrutia asked whether the edge set of every complete geometric graph can be partitioned into a small number of crossing-free matchings. For convex position the answer is $n-1$ (or $n$), but the best known upper bound for general position is only $O(n^{3/2})$, which seems far off.",
+    "attributed_to": "Araujo, Dumitrescu, Hurtado, Noy, and Urrutia",
+    "attributed_year": 2005,
+    "paper_contribution": "Proves that for $n$ random points in $[0,1]^2$, with probability tending to 1, the edge set of $K_n[A]$ can be covered by $O(n\\log n)$ crossing-free paths and $O(n\\sqrt{\\log n})$ crossing-free matchings, improving the general $O(n^{3/2})$ bound from [3] for this setting.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "The problem header uses the LaTeX auto-counter macro \\thetheorem rather than an explicit number; attribution is given unambiguously in the surrounding prose referencing [3].",
+    "arxiv_id": "2507.10840",
+    "paper_title": "Covering Complete Geometric Graphs by Monotone Paths",
+    "paper_authors": [
+      "Adrian Dumitrescu",
+      "János Pach",
+      "Morteza Saghafian",
+      "Alex Scott"
+    ],
+    "published": "2026-01-10",
+    "abs_url": "https://arxiv.org/abs/2507.10840",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.4",
+    "statement_text": "For some (possibly, for every) dense $n$-element point set $A$ in general position in the plane, covering the edge set of $K_{n}[A]$ requires a superlinear number of monotone paths.",
+    "context_text": "Theorem 1.3 shows that $O(n^{3/2})$ monotone paths suffice to cover $K_n[A]$ for any $\\alpha$-dense point set $A$. The authors suspect this upper bound is not tight and that a superlinear lower bound holds. This is contrasted with the worst-case arbitrary point sets, for which a quadratic number of monotone paths is required.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2507.10840",
+    "paper_title": "Covering Complete Geometric Graphs by Monotone Paths",
+    "paper_authors": [
+      "Adrian Dumitrescu",
+      "János Pach",
+      "Morteza Saghafian",
+      "Alex Scott"
+    ],
+    "published": "2026-01-10",
+    "abs_url": "https://arxiv.org/abs/2507.10840",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Problem 5.1",
+    "statement_text": "Does there exist a constant $c>1/2$ with the property that, for infinitely many values of $n$, there are $n$-element point sets $A$ in the plane such that every covering of the edge set of $K_{n}[A]$ by crossing-free paths requires at least $cn$ paths?",
+    "context_text": "Pach, Saghafian, and Schnider proved that every complete convex geometric graph can be decomposed into $n/2 + o(n)$ plane subgraphs. It is open whether a linear lower bound strictly above $n/2$ holds for crossing-free path coverings over general point sets.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2507.10840",
+    "paper_title": "Covering Complete Geometric Graphs by Monotone Paths",
+    "paper_authors": [
+      "Adrian Dumitrescu",
+      "János Pach",
+      "Morteza Saghafian",
+      "Alex Scott"
+    ],
+    "published": "2026-01-10",
+    "abs_url": "https://arxiv.org/abs/2507.10840",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Problem 5.2",
+    "statement_text": "What is the smallest number $z=z(n)$ such that the edge set of every complete geometric graph on $n$ vertices can be covered by $z$ plane zig-zag paths?",
+    "context_text": "The authors show that for any finite point set $A$ in general position in the plane, one can cover the edge set of $K_n[A]$ by plane Hamiltonian zig-zag paths, but the minimum number of such paths needed in the worst case is left open.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2507.10840",
+    "paper_title": "Covering Complete Geometric Graphs by Monotone Paths",
+    "paper_authors": [
+      "Adrian Dumitrescu",
+      "János Pach",
+      "Morteza Saghafian",
+      "Alex Scott"
+    ],
+    "published": "2026-01-10",
+    "abs_url": "https://arxiv.org/abs/2507.10840",
+    "source": "html"
+  }
+]

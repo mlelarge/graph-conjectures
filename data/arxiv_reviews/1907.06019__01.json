@@ -1,0 +1,22 @@
+{
+  "review_id": "1907.06019__01",
+  "safe_id": "1907.06019",
+  "arxiv_id": "1907.06019",
+  "conjecture_title": "Question on extremal mutually annihilating pairs (Theorem 2.4)",
+  "paper_title": "Combinatorics in the exterior algebra and the Bollobás Two Families Theorem",
+  "published": "2020-07-14",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "No follow-up paper characterizing all extremal mutually annihilating pairs U ⊆ ∧^r V, W ⊆ ∧^s V with dim U · dim W = C(n-1,r-1)·C(n-1,s-1) was found in the literature. The source paper was published in the Journal of the London Mathematical Society in 2021 (from the 2019 preprint). A related 2024 paper by Bulavka (arXiv:2406.17857) answers a Hilton-Milner-type extension question posed by Scott and Wilmer, but it concerns self-annihilating subspaces and an additive bound, not the multiplicative extremal characterization of Theorem 2.4.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "mutually annihilating subspaces exterior algebra extremal characterization Scott Wilmer",
+    "arXiv 1907.06019 Bollobás exterior algebra mutually annihilating pairs",
+    "exterior algebra \"mutually annihilating\" extremal characterization \"wedge product\" subspaces 2021 2022 2023 2024"
+  ],
+  "notes": "The conjecture is from 2020 (6 years old), so medium rather than high confidence. The only post-2020 paper found that addresses Scott-Wilmer questions in this setting is arXiv:2406.17857 (Bulavka, Transactions of the London Mathematical Society, 2025), which answers the Hilton-Milner extension for self-annihilating subspaces — a distinct open question from the same paper. The specific extremal characterization for the product bound dim U · dim W = C(n-1,r-1)·C(n-1,s-1) remains unresolved in all indexed literature found."
+}

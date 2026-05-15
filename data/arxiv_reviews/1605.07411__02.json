@@ -1,0 +1,48 @@
+{
+  "review_id": "1605.07411__02",
+  "safe_id": "1605.07411",
+  "arxiv_id": "1605.07411",
+  "conjecture_title": "Conjecture 5",
+  "paper_title": "$χ$-bounded families of oriented graphs",
+  "published": "2016-05-24",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "solved",
+  "confidence": "medium",
+  "summary": "Conjecture 5 asserts that $\\mathrm{Forb}(\\mathcal{P})$ is $\\chi$-bounded for every non-empty $\\mathcal{P} \\subseteq \\mathrm{Or}(P_4)$ with $\\mathcal{P} \\neq \\{P^+(3)\\}$ and $\\mathcal{P} \\neq \\{P^+(1,1,1)\\}$. The source paper itself proved the case $P^+(3) \\in \\mathcal{P}$ (Corollary 35). Cook, Masařík, Pilipczuk, Reinald, and Souza (EJC 2023) subsequently proved the directed analogue of the Gyárfás–Sumner conjecture for all orientations of $P_4$, establishing $\\chi$-boundedness of $\\mathrm{Forb}(F)$ for each non-exceptional orientation $F$ of $P_4$; together with Corollary 35 this resolves all remaining cases of Conjecture 5.",
+  "since_posted": [
+    {
+      "title": "Proving a Directed Analogue of the Gyárfás-Sumner Conjecture for Orientations of $P_4$",
+      "authors": "Linda Cook, Tomáš Masařík, Marcin Pilipczuk, Amadeus Reinald, Uéverton S. Souza",
+      "year": 2023,
+      "venue": "Electronic Journal of Combinatorics",
+      "url": "https://www.combinatorics.org/ojs/index.php/eljc/article/view/v30i3p36",
+      "arxiv_id": null,
+      "doi": null,
+      "kind": "proof",
+      "claim": "Proves the directed analogue of the Gyárfás–Sumner conjecture for all orientations of $P_4$, establishing $\\chi$-boundedness of $\\mathrm{Forb}(F)$ for each orientation $F$ of $P_4$ other than the two known exceptions $P^+(3)$ and $P^+(1,1,1)$, thereby resolving the open cases of Conjecture 5."
+    }
+  ],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2212.02272",
+      "verified": true,
+      "note": "Abstract confirmed: paper proves dichromatic number is bounded for $(P_6, \\text{triangle})$-free digraphs. The corpus attribution claims a partial case toward Conjecture 5, but the WebFetch of the abstract page did not confirm an explicit citation of Conjecture 5 from 1605.07411."
+    },
+    {
+      "arxiv_id": "2202.01006",
+      "verified": true,
+      "note": "Abstract confirmed: proves chordal directed graphs are not $\\chi$-bounded, addressing a question of Carbonero et al. Paper likely recalls Conjecture 5 as broader context; WebFetch of abstract did not confirm explicit citation."
+    },
+    {
+      "arxiv_id": "2103.07886",
+      "verified": true,
+      "note": "Abstract confirmed: proves decomposition and colouring results for locally semicomplete digraphs, resolving a conjecture of Naserasr and co-authors. WebFetch did not confirm explicit citation of Conjecture 5 from 1605.07411."
+    }
+  ],
+  "search_queries": [
+    "chi-bounded oriented graphs P4 Forb Aboulker Bang-Jensen 1605.07411 conjecture"
+  ],
+  "notes": "Cook et al. (EJC 2023, v30i3p36) proves the directed Gyárfás–Sumner analogue for all orientations of P4; combined with Corollary 35 of the source paper, this fully resolves Conjecture 5. Confidence is medium rather than high because the WebFetch of the Cook et al. article page did not return enough text to confirm an explicit citation of Conjecture 5 by number, though the mathematical content squarely aligns."
+}

@@ -1,0 +1,48 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.1 (Le's Induced Paths Conjecture)",
+    "statement_text": "There exists $c > 0$ such that every $2\\mathcal{O}$-free graph $G$ has at most $|G|^c$ induced paths.",
+    "context_text": "Ngoc Khang Le proposed this conjecture (unpublished, [4]) as the stronger of two conjectures motivated by the search for a polynomial-time algorithm to recognise $2\\mathcal{O}$-free graphs. A graph is $s\\mathcal{O}$-free if no $s$ of its cycles are pairwise vertex-disjoint and anticomplete. If the conjecture holds, one can enumerate all induced paths, check each pair of induced cycles formed by extending them, and decide $2\\mathcal{O}$-freeness in polynomial time.",
+    "attributed_to": "Ngoc Khang Le",
+    "attributed_year": null,
+    "paper_contribution": "Proves the conjecture in full, and its generalisation to all $s\\geq 1$: for every integer $s\\geq 1$ there exists $c>0$ such that every $s\\mathcal{O}$-free graph $G$ has at most $|G|^c$ induced paths (Theorem 1.2), yielding a poly-time algorithm to test $s\\mathcal{O}$-freeness for any fixed $s$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source; the symbol rendered as 'O' throughout the text is a cycle/circle symbol, here approximated as $\\mathcal{O}$. The conjecture is formally labelled '1.1 Conjecture' in the paper with attribution to Le in the surrounding prose.",
+    "arxiv_id": "2212.01089",
+    "paper_title": "Induced paths in graphs without anticomplete cycles",
+    "paper_authors": [
+      "Tung Nguyen",
+      "Alex Scott",
+      "Paul Seymour"
+    ],
+    "published": "2023-01-10",
+    "abs_url": "https://arxiv.org/abs/2212.01089",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Le's Induced Cycles Conjecture",
+    "statement_text": "There exists $c > 0$ such that every $2\\mathcal{O}$-free graph $G$ has at most $|G|^c$ induced cycles.",
+    "context_text": "This weaker conjecture of Le is mentioned alongside the stronger path conjecture (Conjecture 1.1) in the introduction; both were proposed in the unpublished manuscript [4] in an attempt to find a polynomial-time recognition algorithm for $2\\mathcal{O}$-free graphs.",
+    "attributed_to": "Ngoc Khang Le",
+    "attributed_year": null,
+    "paper_contribution": "Proved as an immediate consequence of Theorem 1.2, which establishes the stronger statement for induced paths and for all $s\\geq 1$.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "Stated only in prose in the introduction, not in a labelled theorem environment. PDF source; 'O' approximated as $\\mathcal{O}$.",
+    "arxiv_id": "2212.01089",
+    "paper_title": "Induced paths in graphs without anticomplete cycles",
+    "paper_authors": [
+      "Tung Nguyen",
+      "Alex Scott",
+      "Paul Seymour"
+    ],
+    "published": "2023-01-10",
+    "abs_url": "https://arxiv.org/abs/2212.01089",
+    "source": "pdf"
+  }
+]

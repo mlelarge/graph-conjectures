@@ -1,0 +1,26 @@
+[
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Open Question on Bounded Proper Orientation Number of Planar Graphs",
+    "statement_text": "Which classes of graphs have bounded proper orientation number? In particular, is $\\overrightarrow{\\chi}(G)$ bounded by a constant for all planar graphs $G$?",
+    "context_text": "Araujo et al. raised the question of which graph classes have bounded proper orientation number, and specifically whether planar graphs have this property. Partial progress was made by showing cacti and claw-free planar graphs have proper orientation number at most 7 and 6 respectively (both tight), but the question for general planar graphs remained open at the time of this paper.",
+    "attributed_to": "Araujo, Havet, Linhares Sales, and Silva",
+    "attributed_year": null,
+    "paper_contribution": "Proves that every 3-connected planar bipartite graph has proper orientation number at most 6, thereby providing a new class of planar graphs with bounded proper orientation number, and moreover yields a polynomial-time algorithm to find such an orientation.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "The question is stated in prose without a formal numbered environment: 'They raised the question about which classes of graphs have bounded proper orientation number, and particularly, if this would be the case for planar graphs... the main question remains open.' Attributed to Araujo et al. [3] per the introduction; reference [3] is listed as accepted but not yet published (no year given). PDF source — math notation may be garbled.",
+    "arxiv_id": "1609.06778",
+    "paper_title": "Proper Orientations of Planar Bipartite Graphs",
+    "paper_authors": [
+      "Fiachra Knox",
+      "Sebastián González Hermosillo de la Maza",
+      "Bojan Mohar",
+      "Cláudia Linhares Sales"
+    ],
+    "published": "2016-09-21",
+    "abs_url": "https://arxiv.org/abs/1609.06778",
+    "source": "pdf"
+  }
+]

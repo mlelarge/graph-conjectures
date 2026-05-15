@@ -1,0 +1,52 @@
+[
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Combinatorial polynomial-time algorithm for MWIS in perfect graphs",
+    "statement_text": "Design a combinatorial polynomial-time algorithm for the Maximum Weight Independent Set problem in perfect graphs.",
+    "context_text": "The polynomial-time algorithm of Grötschel, Lovász, and Schrijver for MWIS in perfect graphs relies on the ellipsoid method. The authors explicitly note that designing a combinatorial polynomial-time algorithm for this problem remains an important open problem.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated in prose without a labelled environment: 'Designing a combinatorial polynomial-time algorithm for MWIS in perfect graphs remains an important open problem.' A classical community-wide open problem acknowledged by the authors as ongoing context.",
+    "arxiv_id": "2003.05185",
+    "paper_title": "Induced subgraphs of bounded treewidth and the container method",
+    "paper_authors": [
+      "Tara Abrishami",
+      "Maria Chudnovsky",
+      "Marcin Pilipczuk",
+      "Paweł Rzążewski",
+      "Paul Seymour"
+    ],
+    "published": "2020-03-11",
+    "abs_url": "https://arxiv.org/abs/2003.05185",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "MWIS in P7-free graphs",
+    "statement_text": "Determine the computational complexity of the Maximum Weight Independent Set problem in $P_7$-free graphs.",
+    "context_text": "Polynomial-time algorithms for MWIS in $P_5$-free graphs (2014) and $P_6$-free graphs (2019) were previously known. This paper extends tractability to the class $\\mathcal{C}$ (which contains all $P_5$-free graphs), but the authors note that the case of $P_7$-free graphs remains open.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated in passing prose: 'the case of P7-free graphs remains open.' No labelled theorem environment.",
+    "arxiv_id": "2003.05185",
+    "paper_title": "Induced subgraphs of bounded treewidth and the container method",
+    "paper_authors": [
+      "Tara Abrishami",
+      "Maria Chudnovsky",
+      "Marcin Pilipczuk",
+      "Paweł Rzążewski",
+      "Paul Seymour"
+    ],
+    "published": "2020-03-11",
+    "abs_url": "https://arxiv.org/abs/2003.05185",
+    "source": "pdf"
+  }
+]

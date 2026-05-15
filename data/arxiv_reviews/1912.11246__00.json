@@ -1,0 +1,39 @@
+{
+  "review_id": "1912.11246__00",
+  "safe_id": "1912.11246",
+  "arxiv_id": "1912.11246",
+  "conjecture_title": "Conjecture 2.2",
+  "paper_title": "Maximum independent sets in (pyramid, even hole)-free graphs",
+  "published": "2019-12-24",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "solved",
+  "confidence": "high",
+  "summary": "Conjecture 2.2 from arXiv:1912.11246 was proved in full by Abrishami, Chudnovsky, Dibek, Thomassé, Trotignon, and Vušković in arXiv:2005.05042. Their Theorem 1.2 establishes that every (theta, pyramid, prism, turtle)-free graph G has at most |V(G)|^18 minimal separators, constructible in polynomial time. The result is optimal in the sense that excluding only three of the four forbidden subgraphs still permits exponentially many minimal separators.",
+  "since_posted": [
+    {
+      "title": "Graphs with polynomially many minimal separators",
+      "authors": "Tara Abrishami, Maria Chudnovsky, Cemil Dibek, Stéphan Thomassé, Nicolas Trotignon, Kristina Vušković",
+      "year": 2022,
+      "venue": "Journal of Combinatorial Theory, Series B",
+      "url": "https://arxiv.org/abs/2005.05042",
+      "arxiv_id": "2005.05042",
+      "doi": "10.1016/j.jctb.2021.10.003",
+      "kind": "proof",
+      "claim": "Proves the conjecture in full (as Theorem 1.2): every (theta, pyramid, prism, turtle)-free graph G has at most |V(G)|^18 minimal separators, constructible in polynomial time, and as a consequence gives a polynomial-time algorithm for maximum weight independent set in this class."
+    }
+  ],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2005.05042",
+      "verified": true,
+      "note": "WebFetch of https://arxiv.org/abs/2005.05042 confirmed: authors are Abrishami, Chudnovsky, Dibek, Thomassé, Trotignon, Vušković; result is exactly the conjecture's statement; published in JCTB vol. 152 pp. 248-280 (2022), DOI 10.1016/j.jctb.2021.10.003. Abstract does not explicitly name the source conjecture but the mathematical content matches precisely."
+    }
+  ],
+  "search_queries": [
+    "minimal separators prism pyramid theta turtle polynomial bound graph Chudnovsky Thomassé Trotignon 2005.05042",
+    "polynomial minimal separators \"(theta, pyramid, prism, turtle)-free\" graph conjecture proved 2021 2022 2023"
+  ],
+  "notes": "The conjecture was stated as Conjecture 2.2 in arXiv:1912.11246 and is restated as Conjecture 1.1 in the follow-up paper arXiv:2005.05042, where it is proved as Theorem 1.2. The bound |V(G)|^18 is explicit. The result is tight: for any subset of three of the four forbidden patterns there exist graphs with exponentially many minimal separators."
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Sidorenko's Conjecture (Conjecture 1.2)",
+    "statement_text": "For every bipartite undirected graph $H$ and every undirected graph $G$, $t_H(G) \\geq t_{K_2}(G)^{e(H)}$.",
+    "context_text": "Independently posed by Erdős–Simonovits and Sidorenko, this conjecture asserts that the Erdős–Rényi random graph minimises the homomorphism density of any bipartite graph. The paper systematically develops tournament analogues of this conjecture, defining tournament Sidorenko and tournament anti-Sidorenko properties and studying their structural characterisations.",
+    "attributed_to": "Erdős–Simonovits and Sidorenko",
+    "attributed_year": 1993,
+    "paper_contribution": "Develops tournament analogues of Sidorenko's conjecture: proves asymptotically tight bounds on the maximum number of edges in a tournament anti-Sidorenko digraph, gives novel constructions of tournament Sidorenko digraphs, and fully characterises which orientations of stars are tournament Sidorenko or tournament anti-Sidorenko.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2402.08418",
+    "paper_title": "Variations on Sidorenko's conjecture in tournaments",
+    "paper_authors": [
+      "Jacob Fox",
+      "Zoe Himwich",
+      "Nitya Mani",
+      "Yunkun Zhou"
+    ],
+    "published": "2024-02-13",
+    "abs_url": "https://arxiv.org/abs/2402.08418",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.12",
+    "statement_text": "For every undirected tree, there exists some orientation that has the tournament anti-Sidorenko property.",
+    "context_text": "After characterising exactly which orientations of stars are tournament anti-Sidorenko (Theorem 1.11), the authors note it is natural to ask whether every undirected tree admits at least one anti-Sidorenko orientation. They confirm the conjecture for all undirected trees with at most one vertex of even degree (Proposition 1.13).",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2402.08418",
+    "paper_title": "Variations on Sidorenko's conjecture in tournaments",
+    "paper_authors": [
+      "Jacob Fox",
+      "Zoe Himwich",
+      "Nitya Mani",
+      "Yunkun Zhou"
+    ],
+    "published": "2024-02-13",
+    "abs_url": "https://arxiv.org/abs/2402.08418",
+    "source": "pdf"
+  }
+]

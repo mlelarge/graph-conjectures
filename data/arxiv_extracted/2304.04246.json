@@ -1,0 +1,68 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1 (Hadwiger's Conjecture)",
+    "statement_text": "Let $t \\in \\mathbb{N}$. If a graph $G$ is $K_t$-minor-free, then $\\chi(G) \\leq t-1$.",
+    "context_text": "Hadwiger's coloring conjecture, first stated in 1943, is among the most famous open problems in graph theory. It claims a deep relationship between chromatic number and graph minor containment. The paper studies the list coloring analog, showing that a corresponding statement for the list chromatic number fails for large classes of graphs $H$.",
+    "attributed_to": "Hadwiger",
+    "attributed_year": 1943,
+    "paper_contribution": "The paper shows that a list coloring extension of Hadwiger's conjecture fails broadly: for every $\\varepsilon > 0$ and all sufficiently large graphs $H$, $f_\\ell(H) \\geq (1-\\varepsilon)(v(H)+\\kappa(H))$, which exceeds the conjectured chromatic bound $v(H)-1$ by a constant factor for all large graphs of linear connectivity.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2304.04246",
+    "paper_title": "On the choosability of $H$-minor-free graphs",
+    "paper_authors": [
+      "Olivier Fischer",
+      "Raphael Steiner"
+    ],
+    "published": "2023-04-09",
+    "abs_url": "https://arxiv.org/abs/2304.04246",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 2 (H-Hadwiger Conjecture)",
+    "statement_text": "$H$-minor-free graphs are $(v(H)-1)$-colorable.",
+    "context_text": "The $H$-Hadwiger conjecture, proposed by Seymour, generalizes Hadwiger's conjecture by replacing $K_t$ with an arbitrary graph $H$ on $t$ vertices. The paper's central aim is to explore the limits of a list coloring extension of this conjecture by proving new lower bounds on $f_\\ell(H)$.",
+    "attributed_to": "Seymour",
+    "attributed_year": null,
+    "paper_contribution": "Proves that $f_\\ell(H) \\geq (1-\\varepsilon)(v(H)+\\kappa(H))$ for all sufficiently large graphs $H$, and that asymptotically almost every $n$-vertex graph $H$ with $\\lceil Cn\\log n\\rceil$ edges satisfies $f_\\ell(H) \\geq (2-\\varepsilon)n$, showing that a list coloring analog of the $H$-Hadwiger conjecture fails widely.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2304.04246",
+    "paper_title": "On the choosability of $H$-minor-free graphs",
+    "paper_authors": [
+      "Olivier Fischer",
+      "Raphael Steiner"
+    ],
+    "published": "2023-04-09",
+    "abs_url": "https://arxiv.org/abs/2304.04246",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Problem 1",
+    "statement_text": "Characterize the class $\\mathcal{H}$ of graphs $H$ such that $f_\\ell(H') = v(H')-1$ for all $H' \\subseteq H$.",
+    "context_text": "The authors ask for a structural characterization of graphs $H$ for which the list chromatic number of $H$-minor-free graphs matches the trivial lower bound $v(H)-1$. The problem is posed in the spirit of perfect graph theory, seeking the largest subgraph-closed class with this property; the paper's main results (Theorems 2 and 4) strongly limit the horizon for positive instances.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2304.04246",
+    "paper_title": "On the choosability of $H$-minor-free graphs",
+    "paper_authors": [
+      "Olivier Fischer",
+      "Raphael Steiner"
+    ],
+    "published": "2023-04-09",
+    "abs_url": "https://arxiv.org/abs/2304.04246",
+    "source": "pdf"
+  }
+]

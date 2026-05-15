@@ -1,0 +1,26 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Aharoni's Rainbow Generalization of the Caccetta-Häggkvist Conjecture (Conjecture 1.2)",
+    "statement_text": "Let $n, k$ be positive integers, and let $G$ be a simple graph on $n$ vertices. Let $c : E(G) \\to \\{1, \\ldots, n\\}$ be a coloring of the edges of $G$ with color classes of size at least $k$; then $G$ has a rainbow cycle of length at most $\\lceil n/k \\rceil$.",
+    "context_text": "Aharoni, Devos, and Holzman proposed this conjecture in 2019 as a rainbow/edge-colored generalization of the classical Caccetta-Häggkvist conjecture. Devos et al. had previously confirmed the $k=2$ case. This paper proves the conjecture under the stronger hypothesis that each color class has size at least $301k \\log k$.",
+    "attributed_to": "Aharoni, Devos, and Holzman",
+    "attributed_year": 2019,
+    "paper_contribution": "Proves Conjecture 1.2 in the case where every color class has size at least $301k \\log k$, i.e., when the color class size is $\\Omega(k \\log k)$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2101.04716",
+    "paper_title": "On Aharoni's rainbow generalization of the Caccetta-Häggkvist conjecture",
+    "paper_authors": [
+      "Patrick Hompe",
+      "Petra Pelikanova",
+      "Aneta Pokorna",
+      "Sophie Spirkl"
+    ],
+    "published": "2021-10-01",
+    "abs_url": "https://arxiv.org/abs/2101.04716",
+    "source": "pdf"
+  }
+]

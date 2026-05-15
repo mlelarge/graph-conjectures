@@ -1,0 +1,117 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Harris' Conjecture",
+    "statement_text": "The fractional chromatic number $\\chi_f(G)$ can be upper bounded by a function (in fact, even a linear function) of the Hall ratio $\\rho(G)$.",
+    "context_text": "The Hall ratio $\\rho(G) = \\max_{H \\subseteq G} |V(H)|/\\alpha(H)$ is a natural lower bound for $\\chi_f(G)$. Harris conjectured that the converse holds functionally; this question is also implicit in Johnson Jr [8]. The paper's abstract states it answers this question in the negative.",
+    "attributed_to": "Harris",
+    "attributed_year": null,
+    "paper_contribution": "Disproves the conjecture by establishing Corollary 3: for every positive integer $c$ there exists a graph with fractional chromatic number at least $c$ and Hall ratio at most $18$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1812.07327",
+    "paper_title": "1-subdivisions, fractional chromatic number and Hall ratio",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Patrice Ossona de Mendez",
+      "Hehui Wu"
+    ],
+    "published": "2020-01-30",
+    "abs_url": "https://arxiv.org/abs/1812.07327",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Blumenthal et al. Question 16",
+    "statement_text": "Can the fractional chromatic number $\\chi_f(G)$ be bounded by a fast-growing function of the Hall ratio $\\rho(G)$?",
+    "context_text": "Blumenthal et al. [2] showed that $\\chi_f$ cannot be bounded by any polynomial in $\\rho$, but their counterexample graphs still have unbounded Hall ratio, leaving open the possibility of a super-polynomial functional bound. The paper references this as [2, Question 16].",
+    "attributed_to": "Blumenthal et al.",
+    "attributed_year": null,
+    "paper_contribution": "Resolves the question negatively: Corollary 3 yields graphs with Hall ratio at most $18$ and $\\chi_f$ arbitrarily large, so no function of $\\rho$ alone can bound $\\chi_f$.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "Not directly quoted; referenced as [2, Question 16] in the introduction.",
+    "arxiv_id": "1812.07327",
+    "paper_title": "1-subdivisions, fractional chromatic number and Hall ratio",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Patrice Ossona de Mendez",
+      "Hehui Wu"
+    ],
+    "published": "2020-01-30",
+    "abs_url": "https://arxiv.org/abs/1812.07327",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Problem 4",
+    "statement_text": "Determine the smallest function $g : \\mathbb{Z}^+ \\to \\mathbb{R}^+$ such that for every graph $G$, $\\chi_f(G) \\leq \\rho(G)\\,g(|V(G)|)$.",
+    "context_text": "Since $\\chi_f(G) = O(\\rho(G) \\log n)$ follows from a greedy independent-set argument, and the graphs produced by Corollary 3 have doubly exponential size in their fractional chromatic number (giving $g(n) = \\Omega(\\log\\log n)$), the true growth rate of the smallest such $g$ is unknown.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1812.07327",
+    "paper_title": "1-subdivisions, fractional chromatic number and Hall ratio",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Patrice Ossona de Mendez",
+      "Hehui Wu"
+    ],
+    "published": "2020-01-30",
+    "abs_url": "https://arxiv.org/abs/1812.07327",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Problem 5",
+    "statement_text": "Do there exist, for some constant $c > 0$, graphs $G$ of arbitrarily large fractional chromatic number such that $\\rho(G) \\leq c$ and $\\alpha_{\\deg_H}(H) \\geq |E(H)|/c$ for every $H \\subseteq G$?",
+    "context_text": "To lower-bound $\\chi_f$ of the probabilistically constructed graphs in Theorem 1, the authors assign vertex weights proportional to degrees. Problem 5 asks whether such degree-weighted independence certificates can simultaneously be large while the ordinary Hall ratio remains bounded, motivating a search for intermediate weight families $\\mathcal{F}$ between $\\{0,1\\}$-valued weights (Hall ratio) and all non-negative weights (fractional chromatic number).",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "PDF source — the notation $\\alpha_{\\deg_H}$ for the degree-weighted maximum independent set weight may be slightly garbled.",
+    "arxiv_id": "1812.07327",
+    "paper_title": "1-subdivisions, fractional chromatic number and Hall ratio",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Patrice Ossona de Mendez",
+      "Hehui Wu"
+    ],
+    "published": "2020-01-30",
+    "abs_url": "https://arxiv.org/abs/1812.07327",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Problem 8",
+    "statement_text": "Is it true that a class $\\mathcal{C}$ has bounded expansion if and only if there exists a function $f_6 : \\mathbb{N} \\to \\mathbb{N}$ such that for every $r \\in \\mathbb{N}$ and every $G \\in \\mathcal{C} \\mathbin{\\triangledown} r$, $\\rho(G) \\leq f_6(r)$?",
+    "context_text": "Corollary 7 gives an analogous characterisation of bounded expansion via $\\chi_f$ in shallow minors. The forward direction (bounded expansion implies bounded Hall ratio in shallow minors) is clear; the converse argument fails by Theorem 2. Proposition 1 shows a nowhere-dense class with unbounded Hall ratio, but no class with unbounded expansion and bounded Hall ratio in all shallow minors is known.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1812.07327",
+    "paper_title": "1-subdivisions, fractional chromatic number and Hall ratio",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Patrice Ossona de Mendez",
+      "Hehui Wu"
+    ],
+    "published": "2020-01-30",
+    "abs_url": "https://arxiv.org/abs/1812.07327",
+    "source": "pdf"
+  }
+]

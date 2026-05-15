@@ -1,0 +1,23 @@
+{
+  "review_id": "2301.13305__03",
+  "safe_id": "2301.13305",
+  "arxiv_id": "2301.13305",
+  "conjecture_title": "Open problem: binary vectors with cube-length forbidden symmetric difference",
+  "paper_title": "Graph-codes",
+  "published": "2023-02-06",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The problem asks for the exact maximum cardinality of a collection of binary vectors on [n] in which no symmetric difference of two distinct members forms an interval of cube length. The Furstenberg–Sárközy theorem and its polynomial extensions already guarantee the answer is o(2^n), and the corresponding Cayley graph is triangle-free by Fermat's Last Theorem for cubes; however, the precise asymptotics appear entirely open. A wide literature search found no follow-up work resolving or substantially advancing this specific problem.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Alon \"graph-codes\" 2301.13305 binary vectors symmetric difference cube interval",
+    "binary vectors symmetric difference cube length Furstenberg-Sarkozy Cayley graph independence number",
+    "Alon \"graph-codes\" \"cube\" \"symmetric difference\" \"interval\" binary 2023 2024 2025 follow-up",
+    "Furstenberg-Sarkozy \"cube\" extension \"perfect cube\" difference set binary vectors combinatorics 2023 2024 2025"
+  ],
+  "notes": "The problem is posed as an illustrative extension of graph-code questions to other combinatorial structures. The o(2^n) upper bound is immediate from known additive combinatorics (Furstenberg–Sárközy and its polynomial extensions to k^3 differences); the triangle-freeness of the Cayley graph follows from Fermat's Last Theorem for cubes. The open question is the precise asymptotic of the maximum cardinality. No post-2023 paper resolving or significantly narrowing this was found."
+}

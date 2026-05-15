@@ -1,0 +1,23 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1 (Dvořák [5])",
+    "statement_text": "For every polynomial $p$, there exists a function $q : \\mathbb{N} \\to \\mathbb{N}$ such that the following holds. Let $G$ be a graph with expansion bounded by $p$ and let $\\rho : V(G) \\to \\mathbb{R}^+_0$ be a cost assignment for $G$. For every integer $t \\geq 1$, $G$ has a balanced separator which is $(\\rho/t)$-cheap with $q(t)$ outliers.",
+    "context_text": "The conjecture concerns the weighted version of sublinear separators: even though a graph with polynomial expansion always has a small balanced separator, the separator may be costly under an arbitrary cost assignment $\\rho$. The conjecture asks that a $(\\rho/t)$-cheap balanced separator always exists after removing only a bounded number $q(t)$ of outlier vertices, with the bound depending only on $t$ and not on the number of vertices. It is noted to be a weakening of the author's earlier conjecture that graphs with polynomial expansion are fractionally treewidth-fragile.",
+    "attributed_to": "Dvořák",
+    "attributed_year": null,
+    "paper_contribution": "Proves that for every polynomial $p$ and integer $a \\geq 0$ there exists a polynomial $q$ such that $G$ has a balanced separator which is $(\\rho/t)$-cheap with $\\exp(q(t))\\log^{(a)} n$ outliers (Theorem 3), and with $q(t)\\,\\mathrm{wcol}_{5q(t)}(G)\\log^{(a)} n$ outliers in terms of weak coloring numbers (Theorem 4), improving the prior bound of $q(t \\log n)$ outliers and replacing the $\\log n$ dependence by any fixed iterated logarithm.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Conjecture originally stated by the same author in prior work [5]. PDF source — math reconstructed from context; notation appears clean.",
+    "arxiv_id": "2007.11853",
+    "paper_title": "On weighted sublinear separators",
+    "paper_authors": [
+      "Zdeněk Dvořák"
+    ],
+    "published": "2021-09-17",
+    "abs_url": "https://arxiv.org/abs/2007.11853",
+    "source": "pdf"
+  }
+]

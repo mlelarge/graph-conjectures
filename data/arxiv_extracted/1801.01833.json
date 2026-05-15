@@ -1,0 +1,26 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Seymour's Conjecture (Conjecture 1.2)",
+    "statement_text": "For every apex-forest $H_1$ and outerplanar graph $H_2$ there is an integer $p$ such that every 2-connected graph of pathwidth at least $p$ contains $H_1$ or $H_2$ as a minor.",
+    "context_text": "In 1993, Paul Seymour proposed this conjecture as a 2-connected analogue of the Robertson–Seymour theorem that every graph of large pathwidth contains any fixed forest as a minor. Equivalently, it characterises the minor-closed classes in which every 2-connected member has bounded pathwidth: precisely those excluding some apex-forest and some outerplanar graph. The motivation was also to seek evidence for a matroid version of the forest-pathwidth theorem.",
+    "attributed_to": "Seymour",
+    "attributed_year": 1993,
+    "paper_contribution": "Proves the conjecture in full by establishing two explicit unavoidable families of minors ($\\Gamma^+_\\ell$ and $\\nabla_\\ell$) for 2-connected graphs of large pathwidth, and showing every apex-forest (resp. outerplanar graph) is a minor of a sufficiently large member of the first (resp. second) family.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source; statement text is prose-heavy with minimal display math and is cleanly legible. An independent proof by Dang and Thomas (arXiv:1712.04549) is noted in the abstract.",
+    "arxiv_id": "1801.01833",
+    "paper_title": "Seymour's conjecture on 2-connected graphs of large pathwidth",
+    "paper_authors": [
+      "Tony Huynh",
+      "Gwenaël Joret",
+      "Piotr Micek",
+      "David R. Wood"
+    ],
+    "published": "2020-02-05",
+    "abs_url": "https://arxiv.org/abs/1801.01833",
+    "source": "pdf"
+  }
+]

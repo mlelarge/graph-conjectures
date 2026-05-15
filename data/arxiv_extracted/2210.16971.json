@@ -1,0 +1,122 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Sidorenko's Conjecture (Conjecture 1.2)",
+    "statement_text": "For every bipartite graph $A$ and graph $H$, we have $t(A, H) \\geq t(K_2, H)^{e(A)}$.",
+    "context_text": "Independently posed by Erdős–Simonovits and Sidorenko, this conjecture states that every bipartite graph has asymptotically at least as many copies in any dense graph as expected in an Erdős–Rényi random graph of the same edge density. The Möbius ladder on 10 vertices remains a notorious small open case.",
+    "attributed_to": "Erdős–Simonovits and Sidorenko",
+    "attributed_year": 1984,
+    "paper_contribution": "Shows that an oriented graph $B$ admitting a homomorphism $B \\to \\vec{K}_2$ has the directed Sidorenko property if and only if its underlying undirected bipartite graph has the asymmetric Sidorenko property (Theorem 1.5), reducing the directed problem to the asymmetric undirected setting.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source — exponent notation for $e(A)$ is garbled in extraction; reconstructed as superscript.",
+    "arxiv_id": "2210.16971",
+    "paper_title": "A note on directed analogues of the Sidorenko and forcing conjectures",
+    "paper_authors": [
+      "Jacob Fox",
+      "Zoe Himwich",
+      "Nitya Mani",
+      "Yunkun Zhou"
+    ],
+    "published": "2022-10-30",
+    "abs_url": "https://arxiv.org/abs/2210.16971",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Forcing Conjecture (Skokan–Thoma)",
+    "statement_text": "A graph $A$ is forcing if and only if it is bipartite and contains a cycle.",
+    "context_text": "Initially posed by Skokan and Thoma, the forcing conjecture characterises which graphs $A$ have the property that edge density together with $A$-density being asymptotically extremal forces the host graph sequence to be quasirandom. That bipartiteness and containing a cycle are necessary is straightforward.",
+    "attributed_to": "Skokan and Thoma",
+    "attributed_year": 2004,
+    "paper_contribution": "Proves two necessary conditions for the directed forcing property (Theorem 1.6) and shows that an oriented graph $B$ with a homomorphism $B \\to \\vec{K}_2$ has the directed forcing property if and only if its underlying undirected bipartite graph has the asymmetric forcing property (Theorem 1.8).",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2210.16971",
+    "paper_title": "A note on directed analogues of the Sidorenko and forcing conjectures",
+    "paper_authors": [
+      "Jacob Fox",
+      "Zoe Himwich",
+      "Nitya Mani",
+      "Yunkun Zhou"
+    ],
+    "published": "2022-10-30",
+    "abs_url": "https://arxiv.org/abs/2210.16971",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.4",
+    "statement_text": "If $B$ is a bipartite oriented graph with a homomorphism $B \\to \\vec{K}_2$, then $B$ has the directed Sidorenko property.",
+    "context_text": "Observation 3.1 establishes that having a homomorphism to a directed edge is a necessary condition for the directed Sidorenko property. The authors conjecture this condition is also sufficient for bipartite oriented graphs, giving a directed analogue of Sidorenko's conjecture.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "PDF source.",
+    "arxiv_id": "2210.16971",
+    "paper_title": "A note on directed analogues of the Sidorenko and forcing conjectures",
+    "paper_authors": [
+      "Jacob Fox",
+      "Zoe Himwich",
+      "Nitya Mani",
+      "Yunkun Zhou"
+    ],
+    "published": "2022-10-30",
+    "abs_url": "https://arxiv.org/abs/2210.16971",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.7",
+    "statement_text": "If $B$ is an oriented graph with a homomorphism to an edge and whose underlying undirected graph has a cycle, then $B$ has the directed forcing property.",
+    "context_text": "Theorem 1.6 establishes that admitting a homomorphism to a directed edge and having a cycle in the underlying undirected graph are both necessary conditions for the directed forcing property. The authors conjecture these two conditions together are also sufficient, providing a directed analogue of the Skokan–Thoma forcing conjecture.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "PDF source.",
+    "arxiv_id": "2210.16971",
+    "paper_title": "A note on directed analogues of the Sidorenko and forcing conjectures",
+    "paper_authors": [
+      "Jacob Fox",
+      "Zoe Himwich",
+      "Nitya Mani",
+      "Yunkun Zhou"
+    ],
+    "published": "2022-10-30",
+    "abs_url": "https://arxiv.org/abs/2210.16971",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Equivalence of asymmetric and classical Sidorenko properties",
+    "statement_text": "It is conjectured that the asymmetric Sidorenko property and the classical Sidorenko property are equivalent for bipartite graphs.",
+    "context_text": "The asymmetric Sidorenko property is a priori stronger than the classical Sidorenko property. The authors note that essentially all bipartite graphs known to satisfy the classical Sidorenko property are also known to satisfy the asymmetric version, lending credence to the belief that the two properties coincide.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Reported as a widely held community belief without explicit attribution to specific authors; no formal labelled environment.",
+    "arxiv_id": "2210.16971",
+    "paper_title": "A note on directed analogues of the Sidorenko and forcing conjectures",
+    "paper_authors": [
+      "Jacob Fox",
+      "Zoe Himwich",
+      "Nitya Mani",
+      "Yunkun Zhou"
+    ],
+    "published": "2022-10-30",
+    "abs_url": "https://arxiv.org/abs/2210.16971",
+    "source": "pdf"
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Plummer–Zha Conjecture",
+    "statement_text": "Every $3$-connected, internally $4$-connected pentagraph is three-colourable.",
+    "context_text": "A pentagraph is a graph in which every cycle has length at least five and every induced cycle of odd length has length five. Plummer and Zha proposed this conjecture in 2014 in the same paper in which they disproved Robertson's earlier conjecture that the Petersen graph is the only 3-connected, internally 4-connected pentagraph. The weaker form (bounded chromatic number for such graphs) had already been settled by Xu, Yu, and Zha, who proved all pentagraphs are four-colourable.",
+    "attributed_to": "Plummer and Zha",
+    "attributed_year": 2014,
+    "paper_contribution": "Proves the conjecture in a strictly stronger form: every pentagraph (with no connectivity assumption whatsoever) is three-colourable, via a structural decomposition theorem showing every non-bipartite pentagraph is either the Petersen graph, has a vertex of degree at most two, or admits a $P_3$-cutset or a strong parity star-cutset.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2201.11505",
+    "paper_title": "Proof of a conjecture of Plummer and Zha",
+    "paper_authors": [
+      "Maria Chudnovsky",
+      "Paul Seymour"
+    ],
+    "published": "2022-01-31",
+    "abs_url": "https://arxiv.org/abs/2201.11505",
+    "source": "pdf"
+  }
+]

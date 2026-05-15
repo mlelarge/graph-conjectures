@@ -1,0 +1,39 @@
+{
+  "review_id": "2302.04986__00",
+  "safe_id": "2302.04986",
+  "arxiv_id": "2302.04986",
+  "conjecture_title": "Conjecture 1.8",
+  "paper_title": "Hitting all maximum stable sets in $P_5$-free graphs",
+  "published": "2024-01-16",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "medium",
+  "summary": "Conjecture 1.8 proposes that for every forest $H$, the class of $H$-free graphs is $\\eta$-bounded (i.e., $\\eta(G) \\leq f(\\omega(G))$), by analogy with the Gyárfás–Sumner conjecture for $\\chi$-boundedness. The source paper proves it for stars, subdivided stars, and $P_t$ for $t \\leq 5$. A subsequent paper in the Electronic Journal of Combinatorics (2025) extends $\\eta$-boundedness to graphs without large induced matchings ($tK_2$-free), resolving a related conjecture from the source paper and adding another family of forests for which the conjecture holds. The full conjecture for all forests $H$ remains open, and the case of $P_t$-free graphs for $t \\geq 6$ is explicitly listed as open.",
+  "since_posted": [
+    {
+      "title": "Piercing Independent Sets in Graphs without Large Induced Matching",
+      "authors": "unknown (not retrieved within web-call budget)",
+      "year": 2025,
+      "venue": "Electronic Journal of Combinatorics",
+      "url": "https://www.combinatorics.org/ojs/index.php/eljc/article/view/v32i1p10",
+      "arxiv_id": null,
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves that any graph $G$ without induced matching of size $t$ satisfies $\\eta(G) \\leq \\omega(G)^{3t-3+o(1)}$, resolving a conjecture of Hajebi, Li, and Spirkl from the source paper and establishing $\\eta$-boundedness for $tK_2$-free graphs, a special case of Conjecture 1.8."
+    }
+  ],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2507.06169",
+      "verified": true,
+      "note": "Paper addresses Trotignon's conjecture on outerstring graphs and bounded treewidth; it does not reference arXiv:2302.04986 or $\\eta$-boundedness. The internal reference is a false match unrelated to Conjecture 1.8."
+    }
+  ],
+  "search_queries": [
+    "eta-boundedness H-free graphs forest conjecture Hajebi Li Spirkl 2302.04986",
+    "hitting maximum stable sets eta-bounded forest-free graphs Gyarfas-Sumner analogue 2024 2025"
+  ],
+  "notes": "The EJC paper (v32i1p10, verified via WebFetch) resolves a specific conjecture from the source paper about graphs without large induced matchings ($tK_2$-free), adding a new forest family to the confirmed cases. Author list and arxiv ID for this EJC paper were not retrievable within the 5-call budget. The full Conjecture 1.8 for all forests $H$ remains open; $P_t$-free graphs for $t \\geq 6$ are explicitly open per the source paper."
+}

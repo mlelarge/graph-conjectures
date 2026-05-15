@@ -1,0 +1,31 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Hajós' Conjecture (k=5)",
+    "statement_text": "Every $5$-chromatic graph contains a subdivision of $K_{5}$.",
+    "context_text": "Hajós conjectured that every $k$-chromatic graph contains a subdivision of $K_k$. For $k=4$ this is classical (Dirac); for $k\\geq 7$ it is false (Catlin 1979; Erdős–Fajtlowicz 1981); the $k=5$ case remains open. The abstract explicitly states that the paper's main theorem makes progress towards this conjecture on $K_5$-subdivisions in 5-chromatic graphs.",
+    "attributed_to": "Hajós",
+    "attributed_year": 1961,
+    "paper_contribution": "Proves that every 5-chromatic graph contains a dominating $K_{5}$-model $(T_1,\\dots,T_5)$ with $T_4=\\{v\\}$ and $T_5=\\{w\\}$ singletons and $v,w$ adjacent, providing structural progress strictly stronger than the known $K_5$-minor result and contributing towards the existence of a $K_5$-subdivision in every 5-chromatic graph.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Verbatim statement of the conjecture is not given in the provided paper text (only named in the abstract as 'Hajós' conjecture on $K_5$-subdivisions in 5-chromatic graphs'); standard formulation used.",
+    "arxiv_id": "2605.10112",
+    "paper_title": "The Dominating 4-Colour Theorem",
+    "paper_authors": [
+      "António Girão",
+      "Freddie Illingworth",
+      "Bojan Mohar",
+      "Sergey Norin",
+      "Raphael Steiner",
+      "Youri Tamitegama",
+      "Jane Tan",
+      "David R. Wood",
+      "Jung Hon Yip"
+    ],
+    "published": "2026-05-11",
+    "abs_url": "https://arxiv.org/abs/2605.10112",
+    "source": "html"
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Problem 3",
+    "statement_text": "For integers $k \\geq 4$ and $t \\geq k - 1$, what is the maximum chromatic number of $K_k$-free graphs of tree-width at most $t$?",
+    "context_text": "Theorem 2 establishes that $g(t,k) > \\bigl(1 - \\frac{1}{2^{k-2}}\\bigr)t$ for all $t \\geq 0$ and $k \\geq 2$, providing a lower bound on the maximum chromatic number. The case $k = 3$ (triangle-free) is completely resolved by Theorem 1, which gives the tight bound $\\lceil(t+3)/2\\rceil$, but the question remains open for $k \\geq 4$.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "PDF source — references section is garbled with a list of arXiv IDs; the problem statement itself is clearly legible",
+    "arxiv_id": "1706.00337",
+    "paper_title": "Triangle-free graphs of tree-width t are ceil((t + 3)/2)-colorable",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Ken-ichi Kawarabayashi"
+    ],
+    "published": "2017-06-09",
+    "abs_url": "https://arxiv.org/abs/1706.00337",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Problem 4",
+    "statement_text": "For integers $g \\geq 4$ and $t \\geq g - 1$, what is the maximum chromatic number of graphs of tree-width at most $t$ and girth at least $g$?",
+    "context_text": "The construction of Blanche Descartes produces $d$-degenerate graphs of girth six that are not $d$-colorable, and Kostochka and Nešetřil generalise this to graphs of arbitrarily large girth, showing no improvement is possible via degeneracy alone. The paper asks whether bounding tree-width instead of degeneracy yields a girth-dependent improvement analogous to Theorem 1.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "PDF source — references section is garbled with a list of arXiv IDs; the problem statement itself is clearly legible",
+    "arxiv_id": "1706.00337",
+    "paper_title": "Triangle-free graphs of tree-width t are ceil((t + 3)/2)-colorable",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Ken-ichi Kawarabayashi"
+    ],
+    "published": "2017-06-09",
+    "abs_url": "https://arxiv.org/abs/1706.00337",
+    "source": "pdf"
+  }
+]

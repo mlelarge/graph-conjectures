@@ -1,0 +1,46 @@
+{
+  "review_id": "2004.14789__01",
+  "safe_id": "2004.14789",
+  "arxiv_id": "2004.14789",
+  "conjecture_title": "Question (common superclass for FPT FO model checking)",
+  "paper_title": "Twin-width I: tractable FO model checking",
+  "published": "2021-10-25",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The natural candidate common superclass — monadically NIP (monadically dependent) classes — has been identified in the literature and is known to contain both bounded twin-width and nowhere dense classes. Significant partial progress has been made: FPT FO model checking was proved for all monadically stable graph classes (which strictly contain all nowhere dense classes) in 2023, and for all classes of bounded merge-width (which unify bounded twin-width and bounded expansion) in 2025. The full question of whether all monadically NIP/dependent classes admit FPT FO model checking remains an open conjecture, widely regarded as the central problem in the area.",
+  "since_posted": [
+    {
+      "title": "First-Order Model Checking on Monadically Stable Graph Classes",
+      "authors": "Jan Dreier et al.",
+      "year": 2023,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2311.18740",
+      "arxiv_id": "2311.18740",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves FPT FO model checking for all monadically stable graph classes, a strict superclass of nowhere dense that does not subsume bounded twin-width, extending one half of the question."
+    },
+    {
+      "title": "Merge-width and First-Order Model Checking",
+      "authors": "Jan Dreier, Szymon Toruńczyk",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2502.18065",
+      "arxiv_id": "2502.18065",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Introduces merge-width, a parameter whose bounded classes subsume both bounded expansion and bounded twin-width, and proves FPT FO model checking for all classes of bounded merge-width, giving a unified common superclass for the algorithmic part of the question."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "twin-width nowhere dense common superclass FPT FO model checking",
+    "bounded twin-width nowhere dense unification first-order model checking tractable arXiv 2004.14789",
+    "monadically NIP twin-width nowhere dense FPT first-order model checking superclass 2024 2025",
+    "merge-width first-order model checking FPT arXiv 2025 monadically dependent NIP graph"
+  ],
+  "notes": "Monadically NIP (= monadically dependent) is the broadly accepted natural candidate for the common superclass asked about: it contains both bounded twin-width and nowhere dense classes, and the conjecture that FPT FO model checking holds exactly on monadically NIP hereditary classes is the central open problem in parameterized model checking. The two papers cited give FPT for important proper sub-cases: monadically stable (⊇ nowhere dense, published as arXiv:2311.18740) and bounded merge-width (⊇ bounded twin-width ∪ bounded expansion, published as arXiv:2502.18065 and appearing at STOC 2025). The question is therefore partially resolved: a natural common superclass with FPT is known (bounded merge-width), and evidence strongly points to monadically NIP as the tight characterisation, but the full statement for all monadically NIP classes is open."
+}

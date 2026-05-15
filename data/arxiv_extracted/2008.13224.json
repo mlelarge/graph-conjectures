@@ -1,0 +1,117 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Mader's Conjecture (Conjecture 3)",
+    "statement_text": "Every acyclic digraph is $\\delta^+$-maderian.",
+    "context_text": "Mader conjectured in 1985 that for every acyclic digraph $F$ there exists $K = K(F)$ such that every digraph $D$ with minimum out-degree at least $K$ contains a subdivision of $F$. The conjecture remains widely open even for digraphs on five vertices. The paper's main result confirms the special case for all oriented cycles.",
+    "attributed_to": "Mader",
+    "attributed_year": 1985,
+    "paper_contribution": "Proves the special case that every orientation of a cycle is $\\delta^+$-maderian (Theorem 6), which is a special case of this conjecture proposed by Aboulker et al.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source — math may be garbled",
+    "arxiv_id": "2008.13224",
+    "paper_title": "Oriented cycles in digraphs of large outdegree",
+    "paper_authors": [
+      "Lior Gishboliner",
+      "Raphael Steiner",
+      "Tibor Szabó"
+    ],
+    "published": "2020-08-30",
+    "abs_url": "https://arxiv.org/abs/2008.13224",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 4 (Aboulker et al.)",
+    "statement_text": "Every orientation of a forest is $\\delta^+$-maderian.",
+    "context_text": "Aboulker et al. proposed this as a special case of Mader's conjecture. They proved two sub-cases: every orientation of a path, and every in-arborescence, is $\\delta^+$-maderian. The general case remains open.",
+    "attributed_to": "Aboulker, Cohen, Havet, Lochet, Moura, and Thomassé",
+    "attributed_year": null,
+    "paper_contribution": "No direct progress on this conjecture is made in this paper; the paper instead proves the related Conjecture 5 concerning oriented cycles.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source — math may be garbled",
+    "arxiv_id": "2008.13224",
+    "paper_title": "Oriented cycles in digraphs of large outdegree",
+    "paper_authors": [
+      "Lior Gishboliner",
+      "Raphael Steiner",
+      "Tibor Szabó"
+    ],
+    "published": "2020-08-30",
+    "abs_url": "https://arxiv.org/abs/2008.13224",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 5 (Aboulker et al.)",
+    "statement_text": "Every orientation of a cycle is $\\delta^+$-maderian.",
+    "context_text": "Aboulker et al. proposed this as a special case of Mader's conjecture and proved it for oriented cycles consisting of exactly two blocks (exactly one source and one sink). The paper proves this conjecture in full generality as its central contribution.",
+    "attributed_to": "Aboulker, Cohen, Havet, Lochet, Moura, and Thomassé",
+    "attributed_year": null,
+    "paper_contribution": "Proves this conjecture in full generality (Theorem 6), establishing that $\\mathrm{mader}_{\\delta^+}$ of an oriented cycle of length $\\ell$ is bounded by a polynomial function $K(\\ell)$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source — math may be garbled",
+    "arxiv_id": "2008.13224",
+    "paper_title": "Oriented cycles in digraphs of large outdegree",
+    "paper_authors": [
+      "Lior Gishboliner",
+      "Raphael Steiner",
+      "Tibor Szabó"
+    ],
+    "published": "2020-08-30",
+    "abs_url": "https://arxiv.org/abs/2008.13224",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Problem 7 (Aboulker et al., Problem 25)",
+    "statement_text": "For $k_1, k_2 \\geq 1$, what is the value of $\\mathrm{mader}_{\\delta^+}(C(k_1, k_2))$?",
+    "context_text": "Aboulker et al. proved $\\mathrm{mader}_{\\delta^+}(C(k_1,k_2)) \\leq 2(k_1+k_2)-1$ and showed the trivial lower bound $k_1+k_2-1$ is tight when $k_2=1$, giving $\\mathrm{mader}_{\\delta^+}(C(k,1))=k$. They asked whether their upper bound is tight in general.",
+    "attributed_to": "Aboulker, Cohen, Havet, Lochet, Moura, and Thomassé",
+    "attributed_year": null,
+    "paper_contribution": "Improves the upper bound to $\\mathrm{mader}_{\\delta^+}(C(k_1,k_2)) \\leq k_1 + 3k_2 - 5$ for $k_1 \\geq k_2 \\geq 2$ (Theorem 8); shows the bound is sharp for $k_2=2$, giving $\\mathrm{mader}_{\\delta^+}(C(k,2)) = k+1$ for every $k \\geq 1$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source — math may be garbled",
+    "arxiv_id": "2008.13224",
+    "paper_title": "Oriented cycles in digraphs of large outdegree",
+    "paper_authors": [
+      "Lior Gishboliner",
+      "Raphael Steiner",
+      "Tibor Szabó"
+    ],
+    "published": "2020-08-30",
+    "abs_url": "https://arxiv.org/abs/2008.13224",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Problem 9 (Aboulker et al., Problem 16)",
+    "statement_text": "Is every digraph $\\kappa$-maderian? Is every digraph $\\kappa'$-maderian?",
+    "context_text": "Since $\\kappa \\leq \\kappa' \\leq \\delta^+$, every $\\delta^+$-maderian digraph is trivially $\\kappa'$- and $\\kappa$-maderian. Aboulker et al. asked whether strong connectivity conditions yield a strictly richer family of forcible subdivisions. The first question (for $\\kappa$) remains open.",
+    "attributed_to": "Aboulker, Cohen, Havet, Lochet, Moura, and Thomassé",
+    "attributed_year": null,
+    "paper_contribution": "Resolves the second question in the negative by proving that neither $\\overleftrightarrow{K_4}$ nor $\\overleftrightarrow{S_4}$ is $\\kappa'$-maderian (Propositions 10 and 11); the $\\kappa$-maderian question remains open.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source — math may be garbled",
+    "arxiv_id": "2008.13224",
+    "paper_title": "Oriented cycles in digraphs of large outdegree",
+    "paper_authors": [
+      "Lior Gishboliner",
+      "Raphael Steiner",
+      "Tibor Szabó"
+    ],
+    "published": "2020-08-30",
+    "abs_url": "https://arxiv.org/abs/2008.13224",
+    "source": "pdf"
+  }
+]

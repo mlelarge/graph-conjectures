@@ -1,0 +1,22 @@
+{
+  "review_id": "2604.09449__00",
+  "safe_id": "2604.09449",
+  "arxiv_id": "2604.09449",
+  "conjecture_title": "Conjecture 6.1",
+  "paper_title": "Colour-balanced subgraphs",
+  "published": "2026-04-10",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 6.1 of Hogan–Scott–Tsarev (arXiv:2604.09449) posits that the worst-case $\\ell_1$-discrepancy of a representative perfect matching in $K_{n,n}$ under $\\mathbb{R}^k$-valued edge weights of $\\ell_1$-norm at most 1 is $\\Theta(\\sqrt{k})$, bridging the authors' own $O(k^2)$ upper bound and the $\\sqrt{k/2}$ lower bound from Theorem 5.1 of the same paper. No follow-up resolving this conjecture has been found in the five weeks since posting; the conjecture is open.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "representative matching bipartite graph sqrt(k) L1 norm bound colour-balanced 2026",
+    "Hogan Scott Tsarev \"colour-balanced\" conjecture perfect matching 2026",
+    "arxiv 2604.09449 \"representative matching\" \"perfect matching\" \"sqrt\" bound 2026"
+  ],
+  "notes": "Paper posted 2026-04-10; only ~5 weeks old at review date. Three web searches and a direct arXiv fetch returned no citing or follow-up papers. The O(k^2) upper bound and the Omega(sqrt(k)) lower bound are both established in arXiv:2604.09449 itself; the conjecture that the true order is Theta(sqrt(k)) remains open with high confidence."
+}

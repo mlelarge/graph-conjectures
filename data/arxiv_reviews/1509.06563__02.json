@@ -1,0 +1,28 @@
+{
+  "review_id": "1509.06563__02",
+  "safe_id": "1509.06563",
+  "arxiv_id": "1509.06563",
+  "conjecture_title": "Problem 1.6",
+  "paper_title": "Induced subgraphs of graphs with large chromatic number. IV. Consecutive holes",
+  "published": "2018-02-12",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Problem 1.6 asks whether there exists an infinite constricting set of positive integers with density 0. The source paper establishes that sets with bounded gaps are 3-constricting and that not every infinite set (not even those with upper density 1) is constricting, with lower density appearing to be closer to the right threshold. No follow-up work resolving this problem was found in the indexed literature after an exhaustive web search.",
+  "since_posted": [],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2306.02364",
+      "verified": true,
+      "note": "WebFetch of arXiv:2306.02364 confirms this paper ('Some results and problems on tournament structure' by Nguyen, Scott, Seymour) is about tournament chromatic structure and does not discuss constricting sets of positive integers or Problem 1.6. The fuzzy match (fuzz=67) is a false positive; the attributed contribution text does not correspond to this problem."
+    }
+  ],
+  "search_queries": [
+    "constricting set positive integers density chromatic number induced holes Scott Seymour 1509.06563",
+    "\"constricting\" \"density 0\" graph chromatic number induced cycles holes",
+    "Scott Seymour \"induced subgraphs\" \"large chromatic number\" \"constricting\" 2019 2020 2021 2022 2023 2024"
+  ],
+  "notes": "No follow-up paper resolving Problem 1.6 was found. The conjecture is stated positively by the authors (they expect the answer is yes, i.e., such a set exists). The problem is closely related to the broader programme of characterising which sets of integers are constricting in the context of chi-boundedness. The internal reference arXiv:2306.02364 is unrelated to this problem."
+}

@@ -1,0 +1,68 @@
+[
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Borodin's Question on 3-Choosability",
+    "statement_text": "Is every planar graph without cycles of lengths 4 to 8 3-choosable?",
+    "context_text": "Borodin noted in his survey [7] that it had been open for more than 15 years whether every planar graph without cycles of lengths 4 to 8 is 3-choosable. The paper is devoted to answering this question affirmatively as its central result (Theorem 1).",
+    "attributed_to": "Borodin",
+    "attributed_year": null,
+    "paper_contribution": "Proves that every planar graph without cycles of lengths 4 to 8 is 3-choosable (Theorem 1), via the stronger correspondence-coloring statement Theorem 6.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1508.03437",
+    "paper_title": "Correspondence coloring and its application to list-coloring planar graphs without cycles of lengths 4 to 8",
+    "paper_authors": [
+      "Zdenek Dvorak",
+      "Luke Postle"
+    ],
+    "published": "2016-10-08",
+    "abs_url": "https://arxiv.org/abs/1508.03437",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Open Question on 3-Choosability for Forbidden Cycles 4–7 and 4–6",
+    "statement_text": "It is not known whether excluding cycles of lengths 4 to 7, or even 4 to 6, forces a planar graph to be 3-choosable. The latter question is wide open even for ordinary coloring.",
+    "context_text": "After establishing 3-choosability for planar graphs without cycles of lengths 4 to 8, the authors remark that the analogous questions for shorter forbidden cycle ranges remain open. They note that the case of forbidden lengths 4 to 7 might be approachable with the methods of the paper, whereas the case 4 to 6 is wide open even for ordinary 3-colorability.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "",
+    "arxiv_id": "1508.03437",
+    "paper_title": "Correspondence coloring and its application to list-coloring planar graphs without cycles of lengths 4 to 8",
+    "paper_authors": [
+      "Zdenek Dvorak",
+      "Luke Postle"
+    ],
+    "published": "2016-10-08",
+    "abs_url": "https://arxiv.org/abs/1508.03437",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Informal Conjecture on Correspondence Chromatic Number of Planar Graphs Without Cycles 4–8",
+    "statement_text": "Every planar graph $G$ without cycles of lengths 4 to 8 has correspondence chromatic number at most 3, i.e., $G$ is $C$-colorable for every 3-correspondence assignment $C$ (without the additional assumption of consistency on closed walks of length 3).",
+    "context_text": "Theorem 6 is proved only for 3-correspondence assignments that are consistent on every closed walk of length 3, a restriction needed to carry out the main reduction. The authors remark that they do not know any counterexample to the stronger claim that the full correspondence chromatic number is at most 3.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "",
+    "arxiv_id": "1508.03437",
+    "paper_title": "Correspondence coloring and its application to list-coloring planar graphs without cycles of lengths 4 to 8",
+    "paper_authors": [
+      "Zdenek Dvorak",
+      "Luke Postle"
+    ],
+    "published": "2016-10-08",
+    "abs_url": "https://arxiv.org/abs/1508.03437",
+    "source": "pdf"
+  }
+]

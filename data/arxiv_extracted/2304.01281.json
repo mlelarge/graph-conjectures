@@ -1,0 +1,24 @@
+[
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.3",
+    "statement_text": "For any $d \\geq 3$ and any fixed $k$, the set of all limit points of the vectors $(\\lambda_1(G_i), \\lambda_2(G_i), \\ldots, \\lambda_k(G_i))$ for an infinite sequence $G_i$ of $d$-regular graphs is exactly the set $$B(d,k) = \\{(\\mu_1, \\mu_2, \\ldots, \\mu_k) : d = \\mu_1 \\geq \\mu_2 \\geq \\mu_3 \\geq \\ldots \\geq \\mu_k \\geq 2\\sqrt{d-1}\\}.$$",
+    "context_text": "Theorem 1.1 establishes the case $k=2$ (the set of limit points of $\\lambda_2$ for $d$-regular graphs is $[2\\sqrt{d-1}, d]$). The authors conjecture this extends to vectors of the top $k$ eigenvalues for any fixed $k$, noting that the containment $\\subseteq B(d,k)$ is already known but they have not been able to prove that every point of $B(d,k)$ is a limit point even for $k=3$. Theorem 1.5 shows every point of a slightly smaller set (with $2\\sqrt{d-1}$ replaced by $2\\sqrt{d-1} + 1/\\sqrt{d-1}$) is indeed a limit point of $d$-regular graph sequences.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2304.01281",
+    "paper_title": "The limit points of the top and bottom eigenvalues of regular graphs",
+    "paper_authors": [
+      "Noga Alon",
+      "Fan Wei"
+    ],
+    "published": "2023-10-13",
+    "abs_url": "https://arxiv.org/abs/2304.01281",
+    "source": "pdf"
+  }
+]

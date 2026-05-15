@@ -1,0 +1,24 @@
+{
+  "review_id": "2308.07653__00",
+  "safe_id": "2308.07653",
+  "arxiv_id": "2308.07653",
+  "conjecture_title": "Open Problem: m(C_t × C_s) for all t, s",
+  "paper_title": "Connectivity Graph-Codes",
+  "published": "2023-09-06",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The problem of determining $m(C_t \\times C_s)$ for all $t, s$ was posed in Alon's paper arXiv:2308.07653 (published in Random Structures & Algorithms 65, 2024). The paper establishes the partial result $m(C_3 \\times C_s) \\leq 8$ for all $s > 36$, and notes that $m(C_3 \\times C_3) = 16$. No subsequent paper resolving the full problem was found in a broad web search across arXiv and journal databases.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "connectivity graph-codes m(C_t C_s) torus Alon 2308.07653",
+    "connectivity code Cartesian product cycles graph-codes arXiv 2023 2024 2025",
+    "\"connectivity graph-codes\" \"C_t\" \"C_s\" torus open problem follow-up 2024 2025",
+    "arxiv search: connectivity graph-codes torus 2024 2025",
+    "Semantic Scholar citations of arXiv:2308.07653"
+  ],
+  "notes": "The source paper was published in Random Structures & Algorithms (2024, vol. 65, no. 3, pp. 451-459). The open problem asks for the exact value of $m(C_t \\times C_s)$ for all pairs $t, s$; the only known result in the paper beyond $m(C_3 \\times C_3) = 16$ is the upper bound $m(C_3 \\times C_s) \\leq 8$ for $s > 36$. Five web searches and fetches found no follow-up paper resolving or substantially advancing the general problem."
+}

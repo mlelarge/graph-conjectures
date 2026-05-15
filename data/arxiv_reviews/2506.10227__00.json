@@ -1,0 +1,22 @@
+{
+  "review_id": "2506.10227__00",
+  "safe_id": "2506.10227",
+  "arxiv_id": "2506.10227",
+  "conjecture_title": "Informal conjecture on sun-free $\\chi$-boundedness without net exclusion",
+  "paper_title": "Suns in triangle-free graphs of large chromatic number",
+  "published": "2026-03-08",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The conjecture that the class of all sun-free graphs is $\\chi$-bounded was posed informally in arXiv:2506.10227, motivated by the authors' uncertainty about whether net-freeness is genuinely needed alongside sun-freeness. The main result of the paper proves that every triangle-free graph of chromatic number at least 48 contains an induced $t$-sun ($t\\ge 5$) or a near-4-sun, giving structural leverage but not settling $\\chi$-boundedness of sun-free graphs. No follow-up paper resolving or refuting this informal conjecture was found in the literature through May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "sun-free graphs chi-bounded conjecture Hajebi Spirkl 2025",
+    "arxiv 2506.10227 \"sun-free\" \"chi-bounded\" net-free triangle-free chromatic number",
+    "\"sun-free\" \"chi-bounded\" OR \"χ-bounded\" graph theory 2025 2026"
+  ],
+  "notes": "The conjecture is informal (a remark after Problem 1.4) and attributed to the paper's authors. It is closely related to the formal Problem 1.4 (χ-boundedness of (sun,net)-free graphs). The Barbados 2026 open-problems document was located but could not be parsed for additional context. No evidence of resolution found."
+}

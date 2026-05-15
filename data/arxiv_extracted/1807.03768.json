@@ -1,0 +1,24 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Gyárfás–Sumner Conjecture (Conjecture 1.1)",
+    "statement_text": "For every forest $T$ and every integer $\\kappa$, there exists $c$ such that $\\chi(G) \\leq c$ for every $T$-free graph $G$ with $\\omega(G) \\leq \\kappa$.",
+    "context_text": "Gyárfás [3] and Sumner [10] independently conjectured that for every tree $T$, the class of graphs not containing $T$ as an induced subgraph is $\\chi$-bounded (chromatic numbers bounded above by a function of clique numbers). The conjecture remains open for general trees, though it has been proved for paths, subdivisions of stars, and certain other families.",
+    "attributed_to": "Gyárfás and Sumner",
+    "attributed_year": 1975,
+    "paper_contribution": "Proves that every $(1,\\ldots,1,2,\\ldots,2)$-multibroom satisfies the Gyárfás–Sumner conjecture, giving a common generalisation of the Kierstead–Penrice result (for $(1,\\ldots,1)$-multibrooms) and the Kierstead–Zhu result (for $(2,\\ldots,2)$-multibrooms).",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1807.03768",
+    "paper_title": "Induced subgraphs of graphs with large chromatic number. XIII. New brooms",
+    "paper_authors": [
+      "Alex Scott",
+      "Paul Seymour"
+    ],
+    "published": "2018-07-10",
+    "abs_url": "https://arxiv.org/abs/1807.03768",
+    "source": "pdf"
+  }
+]

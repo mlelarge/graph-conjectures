@@ -1,0 +1,37 @@
+{
+  "review_id": "1610.00876__00",
+  "safe_id": "1610.00876",
+  "arxiv_id": "1610.00876",
+  "conjecture_title": "Conjecture 3",
+  "paper_title": "Subdivisions in digraphs of large out-degree or large dichromatic number",
+  "published": "2016-10-04",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 3 from arXiv:1610.00876 — that a least integer $\\mathrm{mader}_{\\delta^0}(TT_k)$ exists forcing a $TT_k$ subdivision in every digraph of minimum semi-degree at least that threshold — remains open. It is shown in the source paper to be equivalent to Mader's 1985 conjecture (Conjecture 2) on minimum out-degree; the full conjecture is unresolved even for $k=5$. Related papers in the curated corpus (arXiv:2008.13224, arXiv:2008.09888) make progress on other conjectures from the same paper (oriented-cycle subdivisions and dichromatic-number thresholds, respectively) but do not settle the $TT_k$ semi-degree question.",
+  "since_posted": [],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2008.13224",
+      "verified": true,
+      "note": "Abstract confirmed: this paper (Gishboliner–Steiner–Szabó, 'Oriented cycles in digraphs of large outdegree') proves results about oriented-cycle subdivisions (Conjecture 5 of the source paper), not about TT_k. The corpus entry claiming it 'proves this conjecture in full generality (Theorem 6)' refers to the oriented-cycle conjecture, not Conjecture 3. No direct progress on mader_{delta^0}(TT_k)."
+    },
+    {
+      "arxiv_id": "2008.09888",
+      "verified": true,
+      "note": "Abstract confirmed: this paper (Gishboliner–Steiner–Szabó, 'Dichromatic number and forced subdivisions') addresses mader_{vec{chi}} (dichromatic number threshold), proving mader_{vec{chi}}(F)=4 for every tournament F of order 4. The corpus entries claiming it 'fully resolves the conjecture' refer to a different parameter (dichromatic number, not semi-degree delta^0); no progress on Conjecture 3."
+    },
+    {
+      "arxiv_id": "2202.01006",
+      "verified": false,
+      "note": "Not individually fetched (cap reached). Corpus entry states conjecture is recalled as broader context with no direct progress, consistent with the paper's focus on chi-boundedness of chordal directed graphs."
+    }
+  ],
+  "search_queries": [
+    "Mader conjecture transitive tournament subdivision digraph semi-degree delta0 TT_k",
+    "subdivision transitive tournament digraph minimum semi-degree 1610.00876 progress 2021 2022 2023 2024 2025"
+  ],
+  "notes": "Mader's conjecture on TT_k subdivision with large out-degree (equivalently, large minimum semi-degree via Conjecture 3) remains a major open problem as of May 2026; even the existence of the threshold for TT_5 is unknown. Related positive results exist for immersions of transitive tournaments (Lochet, arXiv:1710.11482) and for 1-subdivisions, but the full vertex-disjoint subdivision conjecture is unresolved. The contradictory corpus contributions for arXiv:2008.13224 arise because different extracted snippets describe different conjectures from the source paper."
+}

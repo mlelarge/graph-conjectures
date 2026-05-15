@@ -1,0 +1,30 @@
+{
+  "review_id": "1803.01051__01",
+  "safe_id": "1803.01051",
+  "arxiv_id": "1803.01051",
+  "conjecture_title": "List-chromatic analogue of Reed's Conjecture",
+  "paper_title": "Bounding $χ$ by a fraction of $Δ$ for graphs without large cliques",
+  "published": "2018-03-02",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The list-chromatic analogue of Reed's Conjecture, asserting $\\chi_\\ell(G) \\leq \\lceil \\frac{1}{2}(\\Delta + 1 + \\omega) \\rceil$ for every graph $G$, remains open. The source paper itself proves only a weaker asymptotic bound $O(\\Delta \\sqrt{\\ln(\\omega)/\\ln(\\Delta)})$ that holds for the list-chromatic number, but does not settle the tight Reed-type bound. A paper on the list-coloring version of Reed's conjecture exists in the literature but predates the source paper; no post-2018 paper resolving the full conjecture was found in five web searches.",
+  "since_posted": [],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2012.13916",
+      "verified": true,
+      "note": "Paper is about connected greedy edge colouring (NP-hardness and χ'_c(G) ≤ 4 for subcubic graphs); it has no relation to the list-chromatic analogue of Reed's Conjecture. The fuzzy match (fuzz=87) is a false positive."
+    }
+  ],
+  "search_queries": [
+    "list-chromatic number Reed conjecture \"chi_l\" ceiling Delta omega graph 1803.01051",
+    "list chromatic number Reed conjecture Bonamy Kelly Nelson Postle 2018",
+    "WebFetch arxiv.org/abs/2012.13916",
+    "\"list coloring\" \"Reed's conjecture\" \"chi_l\" OR \"list chromatic\" ceil Delta omega 2019 2020 2021 2022 2023 2024",
+    "WebFetch arxiv.org/abs/1803.01051"
+  ],
+  "notes": "The conjecture is stated tentatively in the paper ('It is possible that...') rather than as a firm conjecture. Web searches confirmed that a paper titled 'On the List Coloring Version of Reed's Conjecture' exists (Electronic Notes in Discrete Mathematics, 2017) but predates the source paper and so is not a since_posted entry. A 'local epsilon version' of the Reed conjecture for list-chromatic number was studied in JCTB 2019, suggesting the field was still working toward partial results at that time. No post-2018 paper resolving the full conjecture χ_ℓ(G) ≤ ⌈(Δ+1+ω)/2⌉ was found."
+}

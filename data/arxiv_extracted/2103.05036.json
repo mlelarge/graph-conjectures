@@ -1,0 +1,52 @@
+[
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 1",
+    "statement_text": "For every $n$-vertex simple graph $G$, the expected number of faces when selecting an orientable embedding of $G$ uniformly at random is $O(n)$.",
+    "context_text": "The authors exhibit a general construction of graph families achieving a linear number of expected faces but were unable to find any family with a superlinear number of expected faces. Results for $d$-regular and $d$-degenerate graphs (Theorem 11 and Corollary 12) are presented as supporting evidence.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2103.05036",
+    "paper_title": "Random 2-cell embeddings of multistars",
+    "paper_authors": [
+      "Jesse Campion Loth",
+      "Kevin Halasz",
+      "Tomáš Masařík",
+      "Bojan Mohar",
+      "Robert Šámal"
+    ],
+    "published": "2021-10-06",
+    "abs_url": "https://arxiv.org/abs/2103.05036",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 2",
+    "statement_text": "For every $n$-vertex multigraph $G$ with maximum edge-multiplicity $\\mu$, the expected number of faces when selecting an orientable embedding of $G$ uniformly at random is $O(n\\log(2\\mu))$.",
+    "context_text": "Conjecture 1 must be adjusted when multiple edges are allowed. The dipole family shows Conjecture 2 is tight, and a long path in which every second edge is replaced by a dipole with $\\mu \\geq 2$ edges gives a tight family in which each of $n$ and $\\mu$ can independently tend to infinity.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2103.05036",
+    "paper_title": "Random 2-cell embeddings of multistars",
+    "paper_authors": [
+      "Jesse Campion Loth",
+      "Kevin Halasz",
+      "Tomáš Masařík",
+      "Bojan Mohar",
+      "Robert Šámal"
+    ],
+    "published": "2021-10-06",
+    "abs_url": "https://arxiv.org/abs/2103.05036",
+    "source": "pdf"
+  }
+]

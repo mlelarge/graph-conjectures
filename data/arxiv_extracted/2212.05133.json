@@ -1,0 +1,50 @@
+[
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Conjecture on the asymptotic of n(2,d)",
+    "statement_text": "A general conjecture is posed in the final section which, together with the lower bound $n(2,d) > (1-o(1))\\frac{d^2}{2}$, would imply that $\\lim_{d\\to\\infty} \\frac{n(2,d)}{d^2} = \\frac{1}{2}$.",
+    "context_text": "The authors establish the lower bound $n(2,d) > (1-o(1))\\frac{d^2}{2}$, improving the previous bound $n(2,d) > \\frac{d^2}{4}$. They remark that determining the precise asymptotic order of $n(2,d)$ seems to be a hard task (as noted earlier by Alon and by Huang–Sudakov), and refer to a formal conjecture in the final section concerning lamination-based constructions.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "The formal conjecture appears in Section 3 (the final section on total laminations and computational experiments), which is not present in the provided PDF extract. Only the informal forward-reference in the introduction is available; math may be garbled due to PDF source.",
+    "arxiv_id": "2212.05133",
+    "paper_title": "New bounds on the maximum number of neighborly boxes in R^d",
+    "paper_authors": [
+      "Noga Alon",
+      "Jarosław Grytczuk",
+      "Andrzej P. Kisielewicz",
+      "Krzysztof Przesławski"
+    ],
+    "published": "2023-03-03",
+    "abs_url": "https://arxiv.org/abs/2212.05133",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Open question on existence of lim n(2,d)/d^2",
+    "statement_text": "Does $\\lim_{d\\to\\infty} \\frac{n(2,d)}{d^2}$ exist?",
+    "context_text": "The authors conjecture that if the limit exists it equals $\\frac{1}{2}$, but explicitly remark that even the existence of the limit is currently unknown. The paper provides the lower bound $n(2,d) > (1-o(1))\\frac{d^2}{2}$ via Theorem 2.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Explicitly stated in the introduction: 'as yet we do not even know whether the limit above exists'. PDF source — math notation may be garbled.",
+    "arxiv_id": "2212.05133",
+    "paper_title": "New bounds on the maximum number of neighborly boxes in R^d",
+    "paper_authors": [
+      "Noga Alon",
+      "Jarosław Grytczuk",
+      "Andrzej P. Kisielewicz",
+      "Krzysztof Przesławski"
+    ],
+    "published": "2023-03-03",
+    "abs_url": "https://arxiv.org/abs/2212.05133",
+    "source": "pdf"
+  }
+]

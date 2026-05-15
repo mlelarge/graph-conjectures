@@ -1,0 +1,44 @@
+{
+  "review_id": "1705.02166__00",
+  "safe_id": "1705.02166",
+  "arxiv_id": "1705.02166",
+  "conjecture_title": "Question 1.1",
+  "paper_title": "Lines in Euclidean Ramsey theory",
+  "published": "2018-03-20",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "medium",
+  "summary": "Question 1.1 asks for which K every red/blue-coloring of E^n contains a red unit-distance pair or a blue isometric copy of K; the source paper resolves this for K = ℓ_m (m collinear unit-spaced points) up to the constant in the exponent 2^(cn). Conlon–Wu (2022) extends the analysis to asymmetric variants involving ℓ_3 vs. ℓ_m colorings, and Führer–Tóth (2024) sharpens those explicit bounds from m = 10^50 down to m = 1177. The question for general K beyond collinear configurations remains open.",
+  "since_posted": [
+    {
+      "title": "More on lines in Euclidean Ramsey theory",
+      "authors": "David Conlon, Yu-Han Wu",
+      "year": 2022,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2208.13513",
+      "arxiv_id": "2208.13513",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves that for every n there exists a red/blue-coloring of ℝⁿ with no red copy of ℓ₃ and no blue copy of ℓ_m for some explicit m, extending the lines-case analysis of Question 1.1 to asymmetric ℓ_3 vs. ℓ_m variants."
+    },
+    {
+      "title": "Progressions in Euclidean Ramsey theory",
+      "authors": "Jakob Führer, Géza Tóth",
+      "year": 2024,
+      "venue": "European Journal of Combinatorics, Volume 125, 2025",
+      "url": "https://arxiv.org/abs/2402.12567",
+      "arxiv_id": "2402.12567",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Improves the explicit threshold in the Conlon–Wu coloring construction from m = 10^50 to m = 1177, giving a sharper quantitative answer for the lines/progressions case of the question."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Conlon Fox \"Euclidean Ramsey theory\" lines chromatic number unit distance arxiv 1705.02166",
+    "Euclidean Ramsey theory \"red/blue coloring\" unit distance isometric copy follow-up 2019 2020 2021 2022 2023 2024"
+  ],
+  "notes": "Question 1.1 is a broad meta-question rather than a single conjecture; the source paper itself partially answers it for K = ℓ_m (collinear progressions). Follow-up papers address line/progression subsets and improve quantitative bounds, but the question for general K (spherical sets, non-collinear configurations, arbitrary point sets) remains largely open."
+}

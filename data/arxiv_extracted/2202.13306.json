@@ -1,0 +1,71 @@
+[
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Question 1.4",
+    "statement_text": "Is $\\Delta(1,2,2)$ a hero in oriented complete multipartite graphs?",
+    "context_text": "The paper characterizes heroes in oriented complete multipartite graphs up to the status of $\\Delta(1,2,2)$. If the answer is no, heroes in oriented complete multipartite graphs are precisely those described in Theorem 1.3; if the answer is yes, a different complete characterization involving $\\Delta(1,2,2)$ holds.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2202.13306",
+    "paper_title": "Heroes in oriented complete multipartite graphs",
+    "paper_authors": [
+      "Pierre Aboulker",
+      "Guillaume Aubian",
+      "Pierre Charbit"
+    ],
+    "published": "2023-12-11",
+    "abs_url": "https://arxiv.org/abs/2202.13306",
+    "source": "html"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 5.1",
+    "statement_text": "For every oriented forest $F$, every transitive tournament is a hero in $Forb_{ind}(F)$.",
+    "context_text": "This conjecture, posed by Aboulker, Charbit, and Naserasr as an oriented analogue of the well-known Gyárfás-Sumner conjecture, concerns dichromatic boundedness in $F$-free digraphs. It is known that if $F$ is not a disjoint union of oriented stars, the only possible heroes in $Forb_{ind}(F)$ are transitive tournaments, and the conjecture has been verified for oriented stars.",
+    "attributed_to": "Aboulker, Charbit, and Naserasr",
+    "attributed_year": 2021,
+    "paper_contribution": "The paper proves Theorems 5.2 and 5.3 establishing new partial results towards this conjecture in the setting of oriented forests, building on the known reduction to trees.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2202.13306",
+    "paper_title": "Heroes in oriented complete multipartite graphs",
+    "paper_authors": [
+      "Pierre Aboulker",
+      "Guillaume Aubian",
+      "Pierre Charbit"
+    ],
+    "published": "2023-12-11",
+    "abs_url": "https://arxiv.org/abs/2202.13306",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Question 5.4",
+    "statement_text": "Let $H$ and $F$ be digraphs such that $\\Delta(1,1,H)$ is a hero in $Forb_{ind}(F)$ and $H$ is a hero in $Forb_{ind}(K_{1}+F)$. Then $\\Delta(1,1,H)$ is a hero in $Forb_{ind}(K_{1}+F)$.",
+    "context_text": "This question asks whether a compositional hero property transfers across the $K_1 + F$ operation. It is motivated by the observation that knowing heroes in $Forb_{ind}(\\bar{K}_t)$ does not straightforwardly help in understanding heroes in $Forb_{ind}(\\bar{K}_{t+1})$, even though such a transfer would be natural.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2202.13306",
+    "paper_title": "Heroes in oriented complete multipartite graphs",
+    "paper_authors": [
+      "Pierre Aboulker",
+      "Guillaume Aubian",
+      "Pierre Charbit"
+    ],
+    "published": "2023-12-11",
+    "abs_url": "https://arxiv.org/abs/2202.13306",
+    "source": "html"
+  }
+]

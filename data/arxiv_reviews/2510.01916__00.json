@@ -1,0 +1,21 @@
+{
+  "review_id": "2510.01916__00",
+  "safe_id": "2510.01916",
+  "arxiv_id": "2510.01916",
+  "conjecture_title": "Conjecture 21",
+  "paper_title": "Short circuit walks in fixed dimension",
+  "published": "2025-10-02",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 21 from arXiv:2510.01916 posits that Circuit Distance (the non-monotone variant) is NP-hard for polygons. The paper's main result (Theorem 1) already establishes NP-hardness for the monotone variant, and the authors remark that their proof techniques seem likely to extend to the non-monotone setting. No follow-up paper resolving this conjecture was found in a wide web search; the conjecture is very recent (October 2025) and remains open.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "circuit distance NP-hard polygons polytope circuit walk Black Nöbel Steiner 2025",
+    "arXiv 2510.01916 \"circuit distance\" NP-hard polygon conjecture"
+  ],
+  "notes": "The paper proves NP-hardness of Monotone Circuit Distance for polygons (Theorem 1) and conjectures the same holds for the non-monotone Circuit Distance problem (Conjecture 21). The conjecture is recent (≤ 1 year) and a wide search found no resolution; open with high confidence. A related ScienceDirect paper 'On the hardness of short and sign-compatible circuit walks' (pii/S0166218X25000678) may be relevant background work but returned HTTP 403 and could not be verified."
+}

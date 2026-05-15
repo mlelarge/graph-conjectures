@@ -1,0 +1,40 @@
+{
+  "review_id": "2001.01607__04",
+  "safe_id": "2001.01607",
+  "arxiv_id": "2001.01607",
+  "conjecture_title": "Maximum Independent Set complexity for H-free graphs when H contains P7, S1,1,3, or S1,2,2",
+  "paper_title": "(Theta, triangle)-free and (even hole, $K_4$)-free graphs. Part 2 : bounds on treewidth",
+  "published": "2020-10-27",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "medium",
+  "summary": "The computational complexity of Maximum Independent Set for $H$-free graphs when $H$ contains $P_7$, $S_{1,1,3}$, or $S_{1,2,2}$ remains unresolved as a full polynomial/NP-hard dichotomy. Partial progress exists: quasi-polynomial-time algorithms apply to all $P_k$-free graphs (hence $P_7$-free), and polynomial-time algorithms have been obtained for bounded-degree graphs excluding any fixed subdivided claw as an induced subgraph, covering $S_{1,1,3}$- and $S_{1,2,2}$-free cases under bounded degree. No polynomial-time algorithm or NP-hardness result for the general unbounded-degree cases has been found.",
+  "since_posted": [
+    {
+      "title": "Polynomial-time algorithm for Maximum Independent Set in bounded-degree graphs with no long induced claws",
+      "authors": "Tara Abrishami, Maria Chudnovsky, Cemil Dibek, Paweł Rzążewski",
+      "year": 2022,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2107.05434",
+      "arxiv_id": "2107.05434",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Gives a polynomial-time algorithm for Maximum Independent Set in $H$-free graphs of bounded degree for any fixed subdivided claw $H$, resolving the bounded-degree special cases of $S_{1,1,3}$- and $S_{1,2,2}$-free graphs but not the general (unbounded-degree) question."
+    }
+  ],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2203.06775",
+      "verified": true,
+      "note": "Verified: paper proves that (even hole, diamond, pyramid, K_t)-free graphs have bounded treewidth (Theorem 1.4), confirming it is a special case of the treewidth Conjecture 1.5 in arXiv:2001.01607. This reference concerns a distinct open problem (bounded treewidth) in the same source paper and is not about the MIS complexity question being reviewed here."
+    }
+  ],
+  "search_queries": [
+    "Maximum Independent Set P7-free graphs complexity polynomial NP-hard 2021 2022 2023 2024",
+    "MIS H-free graphs S1,1,3 S1,2,2 complexity dichotomy arxiv",
+    "independent set P7-free graphs polynomial algorithm arxiv 2022 2023 2024 2025"
+  ],
+  "notes": "Quasi-polynomial-time algorithms for Independent Set in P_k-free graphs (Gartland–Lokshtanov 2020, arXiv:2005.00690; Pilipczuk et al. 2021, arXiv:2009.13494) provide sub-exponential progress for P_7-free graphs but fall short of polynomial time. The bounded-degree result (arXiv:2107.05434) makes partial inroads on the S_{i,j,k} cases. The full dichotomy determining which S_{i,j,k} yield polynomial-time solvability vs NP-hardness remains open. The internal reference 2203.06775 was verified to be about a different conjecture in the same source paper (treewidth of (even hole, K_4)-free graphs, Conjecture 1.5), not the MIS complexity problem."
+}

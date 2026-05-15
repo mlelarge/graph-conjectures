@@ -1,0 +1,22 @@
+{
+  "review_id": "2308.15387__01",
+  "safe_id": "2308.15387",
+  "arxiv_id": "2308.15387",
+  "conjecture_title": "Question 4.3",
+  "paper_title": "The power of many colours",
+  "published": "2024-06-10",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Question 4.3 of arXiv:2308.15387 asks for the precise threshold in s (as a function of r) at which the functions f(n,r,s) and g(n,r,s) — measuring, respectively, the maximum guaranteed connected-component size and the minimum guaranteed vertex-coverage when using up to s colors in an r-edge-coloring of K_n — transition from behaving differently to behaving similarly. The paper establishes that they differ for s ≪ √r/log r and agree for s ≥ √(r log r), leaving the exact crossover point open. No follow-up work resolving this question was found in the indexed literature.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Alon Bucic Christoph Krivelevich \"power of many colours\" 2308.15387 Question 4.3 threshold functions f g",
+    "Alon Bucic \"power of many colours\" monochromatic component r-coloring s colors threshold arXiv 2024 follow-up",
+    "monochromatic component \"s colors\" \"r-coloring\" complete graph threshold \"sqrt(r)\" functions f g 2025 arXiv"
+  ],
+  "notes": "The verbatim statement of Question 4.3 was not recoverable from the HTML/PDF renders attempted (Section 4 was truncated in all fetched versions). The context is clear: it asks for the exact threshold s*(r) separating the regime where f and g have different asymptotic behaviour from the regime where they coincide. The paper is published in Forum of Mathematics, Sigma (Cambridge Core, December 2024). No citing paper addressing Question 4.3 was found across three web searches and three fetches."
+}

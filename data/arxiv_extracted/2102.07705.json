@@ -1,0 +1,25 @@
+[
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Open Complexity Problem (2-F-PFC for oriented trees of maximum degree ≥ 3)",
+    "statement_text": "The complexity of the $2$-$F$-PFC where the underlying undirected tree of $F$ has maximum degree at least $3$ remains partially open. In particular, the complexity for those graphs $F$ where successively deleting all leaves yields a star $K_{1,n}$ is not determined.",
+    "context_text": "The paper proves NP-hardness of 2-$\\vec{T}$-PFC when the oriented tree $\\vec{T}$ reduces to an oriented path of length 2 or 3 after repeatedly removing all leaves. The analogous question for oriented trees whose leaf-pruned form is a star $K_{1,n}$ is explicitly left open in the introduction.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated in prose in the introduction without a formal labelled environment. PDF source — math notation may be garbled.",
+    "arxiv_id": "2102.07705",
+    "paper_title": "Colorings of oriented planar graphs avoiding a monochromatic subgraph",
+    "paper_authors": [
+      "Helena Bergold",
+      "Winfried Hochstättler",
+      "Raphael Steiner"
+    ],
+    "published": "2022-06-07",
+    "abs_url": "https://arxiv.org/abs/2102.07705",
+    "source": "pdf"
+  }
+]

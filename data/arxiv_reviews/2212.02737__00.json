@@ -1,0 +1,33 @@
+{
+  "review_id": "2212.02737__00",
+  "safe_id": "2212.02737",
+  "arxiv_id": "2212.02737",
+  "conjecture_title": "Question: finite families yielding clean H-free classes",
+  "paper_title": "Induced subgraphs and tree-decompositions VII. Basic obstructions in $H$-free graphs",
+  "published": "2023-11-07",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The companion paper (arXiv:2311.05066, published in Advances in Combinatorics) by Alecu, Chudnovsky, Hajebi, and Spirkl proves Theorem 1.4: for a finite set $\\mathcal{H}$ of graphs, the class of all $\\mathcal{H}$-free graphs is clean if and only if there are only finitely many $n \\in \\mathbb{N}$ for which an $\\mathcal{H}$-free $n$-array exists. This provides a complete necessary and sufficient condition in terms of $n$-arrays and reduces the question to understanding when $\\mathcal{H}$-free arrays can be constructed for all large $n$. A direct structural characterization of exactly which families $\\mathcal{H}$ satisfy this array condition — analogous to the single-graph case where $H$ must be a subdivided star forest — does not appear to follow immediately from these results.",
+  "since_posted": [
+    {
+      "title": "Induced subgraphs and tree decompositions XIII. Basic obstructions in $\\mathcal{H}$-free graphs for finite $\\mathcal{H}$",
+      "authors": "Bogdan Alecu, Maria Chudnovsky, Sepehr Hajebi, Sophie Spirkl",
+      "year": 2024,
+      "venue": "Advances in Combinatorics",
+      "url": "https://arxiv.org/abs/2311.05066",
+      "arxiv_id": "2311.05066",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves Theorem 1.4: the class of $\\mathcal{H}$-free graphs is clean if and only if only finitely many $n$ admit an $\\mathcal{H}$-free $n$-array; this is the companion paper [6] promised in arXiv:2212.02737, addressing the finite-family question via an array-based characterization."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Abrishami Chudnovsky Hajebi Spirkl \"clean\" \"H-free\" finite families graphs tree decomposition",
+    "arXiv 2212.02737 \"clean\" \"H-free\" companion paper induced subgraphs tree decompositions"
+  ],
+  "notes": "The companion paper [6] referenced in arXiv:2212.02737 is arXiv:2311.05066 (Part XIII of the series), by four of the five original authors (Alecu, Chudnovsky, Hajebi, Spirkl — without Abrishami), submitted to arXiv on November 9, 2023 and published in Advances in Combinatorics. It fully resolves the question in terms of $n$-arrays (Theorem 1.4), but the status is classified 'partial' because the array condition itself may not admit a simple structural description of $\\mathcal{H}$; Theorem 1.6 additionally connects the condition to 'tasselled' families. A purely structural characterization of the clean finite families analogous to the single-graph case appears to remain open."
+}

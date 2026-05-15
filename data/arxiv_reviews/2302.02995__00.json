@@ -1,0 +1,22 @@
+{
+  "review_id": "2302.02995__00",
+  "safe_id": "2302.02995",
+  "arxiv_id": "2302.02995",
+  "conjecture_title": "Open Problem: sharpness of the treedepth bound in Theorem 1",
+  "paper_title": "Tight bound on treedepth in terms of pathwidth and longest path",
+  "published": "2023-11-06",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The paper establishes that every graph of treewidth less than $t$ with no complete binary tree of height $h$ as a minor and no $2^b$-vertex path has treedepth $O(thb)$ (Theorem 1), while the constituent sub-bounds (Theorems 2 and 3) are each individually sharp up to constant factors. Whether the combined bound $O(thb)$ is optimal or can be reduced remains open. No follow-up work resolving this problem was found in a web search covering arXiv and journal literature through May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "treedepth treewidth binary tree minor pathwidth bound tight 2302.02995",
+    "treedepth treewidth pathwidth longest path Hatzel Joret Micek Pilipczuk optimal bound",
+    "treedepth treewidth \"binary tree minor\" \"longest path\" tight bound lower bound 2024 2025"
+  ],
+  "notes": "The individual bounds O(th) (treewidth × binary-tree height → pathwidth) and O(pathwidth × longest-path exponent) are each known to be sharp. The open question is whether the product structure in the combined bound O(thb) can be broken — e.g. whether O(th + hb + tb) or some sub-product suffices. No counterexample or improvement was found in the literature as of this review date. The paper was published in Combinatorica 44, 417–427 (2024)."
+}

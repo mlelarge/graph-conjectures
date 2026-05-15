@@ -1,0 +1,25 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Huang's Conjecture (4-coloring $P_6$-free graphs)",
+    "statement_text": "The 4-coloring problem can be solved in polynomial time for the class of $P_6$-free graphs.",
+    "context_text": "Huang conjectured that 4-coloring $P_6$-free graphs is polynomial-time tractable. This was the sole remaining open case in the complexity classification of 4-coloring $H$-free graphs for connected $H$: Huang had already proved NP-completeness of 4-coloring $P_7$-free graphs and of $k$-coloring $P_6$-free graphs for $k \\geq 5$.",
+    "attributed_to": "Huang",
+    "attributed_year": null,
+    "paper_contribution": "This paper (the first in a two-paper series) proves Theorem 8, a polynomial-time algorithm for extending an excellent starred precoloring of a $P_6$-free graph with bounded seed; together with Theorem 7 proved in the companion paper, these imply Theorem 6—a polynomial-time algorithm for the 4-precoloring extension problem on $P_6$-free graphs—whose corollary is a polynomial-time 4-coloring algorithm, fully proving Huang's conjecture.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Conjecture explicitly attributed to Huang [6]; bibliography not included in the supplied text so attributed_year cannot be confirmed.",
+    "arxiv_id": "1802.02282",
+    "paper_title": "Four-coloring $P_6$-free graphs. I. Extending an excellent precoloring",
+    "paper_authors": [
+      "Maria Chudnovsky",
+      "Sophie Spirkl",
+      "Mingxian Zhong"
+    ],
+    "published": "2018-07-12",
+    "abs_url": "https://arxiv.org/abs/1802.02282",
+    "source": "pdf"
+  }
+]

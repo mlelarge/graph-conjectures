@@ -1,0 +1,25 @@
+[
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Informal Conjecture on reflexive graphs and coloring abundance",
+    "statement_text": "Graphs with a large number of colorings tend to be reflexive.",
+    "context_text": "The authors note that their results and extensive computational evidence support this observation, while acknowledging it appears counterintuitive: a large coloring complex might have too many colorings for the original graph to be reflexive. The underlying open question of why so many reflexive graphs exist (and why any exist at all) is stated as the central remaining problem.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated in prose in the introduction without a labelled environment; backed by 'extensive computational evidence' but not given a precise mathematical formulation. The paper text is truncated mid-proof, so further conjectures in later sections may be missing.",
+    "arxiv_id": "2004.06788",
+    "paper_title": "Reflexive coloring complexes for 3-edge-colorings of cubic graphs",
+    "paper_authors": [
+      "Fiachra Knox",
+      "Bojan Mohar",
+      "Nathan Singer"
+    ],
+    "published": "2020-04-14",
+    "abs_url": "https://arxiv.org/abs/2004.06788",
+    "source": "pdf"
+  }
+]

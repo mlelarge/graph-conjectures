@@ -1,0 +1,27 @@
+{
+  "review_id": "2309.07905__00",
+  "safe_id": "2309.07905",
+  "arxiv_id": "2309.07905",
+  "conjecture_title": "Conjecture 1.4",
+  "paper_title": "On an induced version of Menger's theorem",
+  "published": "2023-09-14",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "Conjecture 1.4 from arXiv:2309.07905 asks, for every d and bounded-degree graph, for either k pairwise distance-d X-Y paths or a linear separator of size Ck. The source paper itself proves the first non-trivial case d=2 (Theorem 1.5), and independent concurrent work by Gartland–Korhonen–Lokshtanov (arXiv:2309.08169) establishes a similar result for bounded-degree graphs. An active line of research by Nguyen–Scott–Seymour on 'coarse Menger' problems addresses related settings (planar graphs, bounded path-width) but the general conjecture for all d and bounded degree Δ has not been resolved in the verified literature.",
+  "since_posted": [],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2307.06455",
+      "verified": true,
+      "note": "Paper is 'Induced subgraph density. IV. New graphs with the Erdős-Hajnal property' by Nguyen, Scott, Seymour; it concerns the Erdős-Hajnal conjecture and has no relation to the induced Menger conjecture, X-Y paths at distance d, or bounded-degree separators. The internal reference is a false match (fuzz=80)."
+    }
+  ],
+  "search_queries": [
+    "arXiv 2309.07905 induced Menger theorem paths distance separator bounded degree",
+    "Hendrey Norin Steiner Turcotte induced Menger paths pairwise distance bounded degree conjecture"
+  ],
+  "notes": "The d=2 case was already proved in the source paper as Theorem 1.5, so no 'since_posted' entry is warranted for that. Related 'coarse Menger' work (arXiv:2509.07174; arXiv:2605.11112) targets planar and bounded-genus settings or stronger Conjectures 1.2 of the same paper, not specifically Conjecture 1.4 for all d and bounded degree; those papers could not be confirmed to address the conjecture directly within the 5-call budget. Confidence is medium because the research area is very active and further progress may exist but was not found."
+}

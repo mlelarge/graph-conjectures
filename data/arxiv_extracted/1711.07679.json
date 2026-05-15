@@ -1,0 +1,48 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Aboulker et al. Conjecture (→←← is χ-bounding)",
+    "statement_text": "The oriented three-edge path $\\to\\leftarrow\\leftarrow$ is $\\chi$-bounding, i.e., there exists a function $f$ such that $\\chi(G) \\leq f(\\omega(G))$ for every oriented graph $G$ containing no induced copy of $\\to\\leftarrow\\leftarrow$.",
+    "context_text": "Kierstead and Rödl [12] first asked whether $\\to\\leftarrow\\leftarrow$ is $\\chi$-bounding and showed the class with no induced $\\to\\leftarrow\\leftarrow$ and no cyclic triangle is $\\chi$-bounded. Aboulker et al. [1] subsequently conjectured the full affirmative answer and proved further special cases. The remaining two orientations of the three-edge path ($\\to\\to\\to$ and $\\to\\leftarrow\\to$) were already known to be non-$\\chi$-bounding.",
+    "attributed_to": "Aboulker et al.",
+    "attributed_year": null,
+    "paper_contribution": "Proves Theorem 1.1: the oriented paths $\\to\\leftarrow\\leftarrow$ and $\\leftarrow\\to\\to$ are $\\chi$-bounding, fully resolving the conjecture.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source; arrow notation →←← is ASCII representation of the orientation of a three-edge path with both outer edges directed towards the interior. Kierstead–Rödl [12] originally posed the question; Aboulker et al. [1] elevated it to a conjecture.",
+    "arxiv_id": "1711.07679",
+    "paper_title": "Induced subgraphs of graphs with large chromatic number. XI. Orientations",
+    "paper_authors": [
+      "Maria Chudnovsky",
+      "Alex Scott",
+      "Paul Seymour"
+    ],
+    "published": "2018-09-05",
+    "abs_url": "https://arxiv.org/abs/1711.07679",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Aboulker et al. Conjecture (every oriented star is χ-bounding)",
+    "statement_text": "Every oriented star is $\\chi$-bounding, i.e., for every oriented star $H$ there exists a function $f$ such that $\\chi(G) \\leq f(\\omega(G))$ for every oriented graph $G$ containing no induced copy of $H$.",
+    "context_text": "Gyárfás [8] asked whether every oriented star $H$ gives a $\\chi$-bounded class of acyclic oriented graphs with no induced $H$. Kierstead and Rödl [12] proved the stronger result that the class with no induced $H$ and no cyclic triangle is $\\chi$-bounded, and asked the full question. Aboulker et al. [1] conjectured the affirmative and showed the result when additionally no transitive triangle is present.",
+    "attributed_to": "Aboulker et al.",
+    "attributed_year": null,
+    "paper_contribution": "Proves Theorem 1.2: every oriented star is $\\chi$-bounding, fully resolving the conjecture; as a corollary, if $F$ is a forest all of whose components are stars then every orientation of $F$ is $\\chi$-bounding.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source; Kierstead–Rödl [12] originally asked the question; Aboulker et al. [1] elevated it to a conjecture. The easy cases (all edges directed away from or all towards the centre) were known; the mixed-direction case is the main difficulty.",
+    "arxiv_id": "1711.07679",
+    "paper_title": "Induced subgraphs of graphs with large chromatic number. XI. Orientations",
+    "paper_authors": [
+      "Maria Chudnovsky",
+      "Alex Scott",
+      "Paul Seymour"
+    ],
+    "published": "2018-09-05",
+    "abs_url": "https://arxiv.org/abs/1711.07679",
+    "source": "pdf"
+  }
+]

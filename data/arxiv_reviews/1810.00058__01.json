@@ -1,0 +1,42 @@
+{
+  "review_id": "1810.00058__01",
+  "safe_id": "1810.00058",
+  "arxiv_id": "1810.00058",
+  "conjecture_title": "Open case H = K3 for Conjecture 1.4",
+  "paper_title": "Sparse graphs with no polynomial-sized anticomplete pairs",
+  "published": "2020-12-07",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "The $K_3$ (triangle) case of Conjecture 1.4 from arXiv:1810.00058 remains open as of May 2026. The paper's main result covers all almost-bipartite $H$, but since $K_3$ contains a triangle it lies outside this class. Substantial follow-up work by Buci\\'c, Fox, Nguyen, Pham, Scott, and Seymour has made progress on related conjectures in the same paper (the polynomial R\\\"odl / Fox-Sudakov conjecture, Conjecture 1.7) and on the Erd\\H{o}s-Hajnal programme more broadly, but no paper specifically resolving the $K_3$ case of Conjecture 1.4 was found.",
+  "since_posted": [],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2301.10147",
+      "verified": false,
+      "note": "Abstract-level fetch could not confirm citation of 1810.00058 or discussion of K_3 case of Conjecture 1.4; the contributions listed in the corpus concern Theorem 1.3 (Erd\\H{o}s-Hajnal loglog bound) and appear unrelated to Conjecture 1.4 specifically."
+    },
+    {
+      "arxiv_id": "2403.08303",
+      "verified": false,
+      "note": "Abstract-level fetch confirmed this paper proves equivalence of the polynomial R\\\"odl conjecture and Erd\\H{o}s-Hajnal conjecture; could not confirm it cites 1810.00058 or addresses Conjecture 1.4 for K_3. The result concerns Conjecture 1.7 of 1810.00058 (polynomial R\\\"odl) rather than Conjecture 1.4 (anticomplete pairs)."
+    },
+    {
+      "arxiv_id": "2307.06455",
+      "verified": false,
+      "note": "Not fetched within call budget. Corpus contribution references Conjecture 1.7 (via the Buci\\'c-Fox-Pham equivalence), not Conjecture 1.4 for K_3."
+    },
+    {
+      "arxiv_id": "2307.00801",
+      "verified": true,
+      "note": "HTML fetch confirmed this paper (Fox, Nguyen, Scott, Seymour) proves the Fox-Sudakov conjecture for H=P_4 and vertex-substitution variants. The paper does not address Conjecture 1.4 for K_3; its main conjecture (Conjecture 1.2 / Fox-Sudakov) is a different conjecture in the same family."
+    }
+  ],
+  "search_queries": [
+    "arxiv 1810.00058 Conjecture 1.4 K3 triangle anticomplete pairs Chudnovsky Fox Scott Seymour Spirkl",
+    "triangle-free sparse graphs polynomial anticomplete pairs Pure Pairs Chudnovsky Scott Seymour K_3 conjecture resolved 2022 2023 2024 2025"
+  ],
+  "notes": "The internal references from the curated corpus appear to concern Conjecture 1.7 (polynomial R\\\"odl / Fox-Sudakov conjecture) from the same paper, not Conjecture 1.4 about polynomial-sized anticomplete pairs. The equivalence result of Buci\\'c-Fox-Pham (2403.08303) and the Erd\\H{o}s-Hajnal loglog improvement (2301.10147) are part of the same broad programme but do not directly settle Conjecture 1.4 for K_3. The K_3 case of Conjecture 1.4 is noted as still open in the 2020 paper and no follow-up resolving it was found in the indexed literature."
+}

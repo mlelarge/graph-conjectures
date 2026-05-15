@@ -1,0 +1,22 @@
+{
+  "review_id": "2401.00359__02",
+  "safe_id": "2401.00359",
+  "arxiv_id": "2401.00359",
+  "conjecture_title": "Conjecture 6.4",
+  "paper_title": "Ramsey and Turán numbers of sparse hypergraphs",
+  "published": "2023-12-31",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 6.4 predicts that for any d×d Latin square L, the Turán number satisfies ex(n, H_L) = n^{3-Θ(1/d)}, which would match the bound predicted by the skeletal degeneracy d_max(H_L) = Θ(d) via Conjecture 6.2. The source paper only achieves the weaker upper bound O(n^{3-c/d^2}) via Theorem 1.4. No follow-up work addressing this conjecture was found in a search of the literature through May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Latin square hypergraph Turán exponent 3-uniform 2401.00359",
+    "Latin square hypergraph extremal number \"Turán exponent\" Fox Sankar Simkin Tidor",
+    "\"Latin square\" \"3-uniform\" hypergraph \"Turán\" exponent \"1/d\" extremal 2024 2025"
+  ],
+  "notes": "No follow-up found in the indexed literature. The four papers citing arXiv:2401.00359 (per Semantic Scholar) address unrelated topics: hypergraph universality, subhypergraph counting, canonical Ramsey numbers, and blowups of triangle-free graphs. The conjecture is recent (posted 2023-12-31) and the gap between the proven bound O(n^{3-c/d^2}) and the conjectured exponent n^{3-Θ(1/d)} remains open."
+}

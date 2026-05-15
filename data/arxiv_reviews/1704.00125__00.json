@@ -1,0 +1,21 @@
+{
+  "review_id": "1704.00125__00",
+  "safe_id": "1704.00125",
+  "arxiv_id": "1704.00125",
+  "conjecture_title": "Informal Conjecture (Section 1.2): dropping bounded-degree assumption",
+  "paper_title": "Thin graph classes and polynomial-time approximation schemes",
+  "published": "2017-04-01",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "low",
+  "summary": "No verified follow-up paper has been found that resolves the conjecture that the bounded-maximum-degree assumption can be dropped from the result that subgraph-closed graph classes with strongly sublinear separators admit thin systems of overlays. The conjecture is from 2017 and is thus old enough that the absence of evidence in a web search is suspicious. A 2022 paper (arXiv:2208.10074) characterises hereditary graph classes with strongly sublinear separators structurally (as subgraphs of strong products of a star and a complete graph) but could not be confirmed to address the thin-overlay conjecture directly.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Dvořák \"thin graph classes\" \"sublinear separators\" \"bounded degree\" PTAS 2017 arXiv 1704.00125",
+    "Dvořák \"thin\" \"overlays\" \"subgraph-closed\" \"bounded degree\" conjecture polynomial approximation scheme graph"
+  ],
+  "notes": "Web search found two potentially related papers: arXiv:2208.10074 (Dujmović et al., 2022, 'Product structure of graph classes with strongly sublinear separators') and arXiv:2103.08698 (Dvořák, 2021, 'Approximation metatheorems for classes with bounded expansion'). The 2208.10074 abstract discusses hereditary classes with strongly sublinear separators but does not mention thin systems of overlays. The 2103.08698 paper generalises PTAS results to bounded-expansion classes (a stronger assumption than sublinear separators), so it does not settle the conjecture of dropping bounded degree. No paper directly proving or disproving the conjecture was found within the 5-call cap; status is open with low confidence given the 9-year age of the conjecture."
+}

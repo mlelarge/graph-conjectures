@@ -1,0 +1,29 @@
+{
+  "review_id": "1509.06563__03",
+  "safe_id": "1509.06563",
+  "arxiv_id": "1509.06563",
+  "conjecture_title": "Informal Question (on 2.1 for ℓ = 4)",
+  "paper_title": "Induced subgraphs of graphs with large chromatic number. IV. Consecutive holes",
+  "published": "2018-02-12",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The informal question of whether every (2,φ)-controlled triangle-free graph with sufficiently large chromatic number must contain a 4-hole remains open. Scott and Seymour proved Statement 2.1 for all ℓ ≥ 5 in the source paper, explicitly noting they could not decide the ℓ = 4 case. A thorough web search found no subsequent paper resolving this question, and the sole internal-corpus candidate (arXiv:2306.02364) is about tournament structure and is unrelated.",
+  "since_posted": [],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2306.02364",
+      "verified": true,
+      "note": "Paper is 'Some results and problems on tournament structure' by Nguyen, Scott, Seymour. Its abstract concerns subtournaments with large chromatic number and domination number in tournaments; it makes no mention of 4-holes, (2,φ)-controlled graphs, or the ℓ=4 question from arXiv:1509.06563. The fuzz-67 match is a false positive."
+    }
+  ],
+  "search_queries": [
+    "Scott Seymour \"controlled\" \"triangle-free\" \"4-hole\" chromatic number induced subgraphs",
+    "arxiv 1509.06563 Scott Seymour consecutive holes 4-hole conjecture follow-up",
+    "\"triangle-free\" \"4-hole\" chromatic number \"controlled\" graph conjecture Scott Seymour 2020 2021 2022 2023 2024 2025",
+    "Semantic Scholar citations for arXiv:1509.06563"
+  ],
+  "notes": "The conjecture is phrased as an informal question in the paper, not a numbered conjecture. Statement 2.1 (for ℓ ≥ 5) is fully proved; the ℓ = 4 case is singled out as the remaining open instance. A 2021 paper by Davies (arXiv:2104.05907) disproves a different Scott–Seymour conjecture (about induced wheels in triangle-free Burling graphs) but does not address the 4-hole controlled question. No follow-up resolving the ℓ = 4 case was found in any searched source."
+}

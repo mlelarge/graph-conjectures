@@ -1,0 +1,22 @@
+{
+  "review_id": "2305.14132__00",
+  "safe_id": "2305.14132",
+  "arxiv_id": "2305.14132",
+  "conjecture_title": "Informal Conjecture (Equality in Theorem 1.1 near the zero-rate threshold)",
+  "paper_title": "Set-coloring Ramsey numbers and error-correcting codes near the zero-rate threshold",
+  "published": "2023-08-14",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "No follow-up work proving or disproving the conjectured equality R(q+1;r,s) = A_q(r,s)+1 near the zero-rate threshold was found. The source paper was subsequently published in IEEE Transactions on Information Theory (2024). A related paper by Aragão, Collares, Marciano, Martins, and Morris (Random Structures & Algorithms, 2024) studies lower bounds for set-coloring Ramsey numbers in a different parameter regime (fixed clique size, varying r and s) and does not address the equality conjecture in the zero-rate threshold setting.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "set-coloring Ramsey numbers error-correcting codes zero-rate threshold Conlon Fox Pham Zhao 2305.14132",
+    "R(q+1;r,s) A_q(r,s) set-coloring Ramsey equality lower bound sharp",
+    "set-coloring Ramsey \"zero-rate threshold\" \"A_q\" equality 2024 2025 arxiv"
+  ],
+  "notes": "Wide search across arXiv, Semantic Scholar, Conlon's publication page, and PubMed returned no evidence of a paper resolving the equality conjecture. The conjecture is ~3 years old; open with high confidence. A related paper by Aragão et al. (PMC10952192, RSA 2024) addresses a different parameterization and is not a follow-up to this specific conjecture."
+}

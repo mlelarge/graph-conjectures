@@ -1,0 +1,35 @@
+{
+  "review_id": "1903.04761__00",
+  "safe_id": "1903.04761",
+  "arxiv_id": "1903.04761",
+  "conjecture_title": "Combinatorial Polynomial-Time Algorithm for MIS/MWIS in Perfect Graphs",
+  "paper_title": "On the Maximum Weight Independent Set Problem in graphs without induced cycles of length at least five",
+  "published": "2020-01-16",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "medium",
+  "summary": "The open problem of finding a combinatorial polynomial-time algorithm for MIS/MWIS in perfect graphs remains largely unresolved. Abrishami and Chudnovsky (arXiv:2110.00108, 2021) made partial progress by giving a combinatorial polynomial-time algorithm for MWIS in perfect graphs of bounded degree that contain no prism and no hole of length four as induced subgraphs—directly addressing the C4-free subcase highlighted in the source paper, but under additional structural restrictions. No combinatorial poly-time algorithm is known for all perfect graphs or even for all C4-free perfect graphs without the bounded-degree and prism-free conditions.",
+  "since_posted": [
+    {
+      "title": "Submodular functions and perfect graphs",
+      "authors": "Tara Abrishami, Maria Chudnovsky",
+      "year": 2021,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2110.00108",
+      "arxiv_id": "2110.00108",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Gives a combinatorial polynomial-time algorithm for MWIS in perfect graphs of bounded degree with no prism and no hole of length four, making partial progress on the C4-free case of the open problem."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "combinatorial polynomial-time algorithm maximum independent set perfect graphs 2021 2022 2023 2024 2025",
+    "MIS MWIS perfect graphs no C4 hole combinatorial algorithm arxiv 1903.04761",
+    "Grotschel Lovász Schrijver ellipsoid method perfect graphs combinatorial alternative MIS algorithm 2022 2023 2024 2025",
+    "maximum independent set perfect graphs C4-free hole-free combinatorial algorithm Chudnovsky Abrishami 2022 2023 2024 2025"
+  ],
+  "notes": "The full open problem (combinatorial poly-time for all perfect graphs, or even all C4-free perfect graphs) remains open as of 2026. The 2110.00108 result is the closest identified partial progress, but requires both bounded degree and absence of prisms in addition to no C4. No purely combinatorial algorithm for general perfect graphs or even unbounded-degree C4-free perfect graphs has been found."
+}

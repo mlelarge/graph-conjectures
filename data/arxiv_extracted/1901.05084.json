@@ -1,0 +1,25 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Jungić et al. Conjecture on $T_k$",
+    "statement_text": "$T_k = \\Theta(k^2)$",
+    "context_text": "Jungić, Licht (Fox), Mahdian, Nešetřil, and Radoičić proved that there are positive constants $c, c'$ such that $c'k^2 \\leq T_k \\leq ck^3$, where $T_k$ is the smallest positive integer $t$ such that for every positive integer $m$, every equinumerous $t$-coloring of $[tm]$ contains a rainbow $k$-term arithmetic progression. They conjectured that the lower bound is correct, i.e., $T_k = \\Theta(k^2)$, a problem reiterated in the survey of Jungić, Nešetřil, and Radoičić.",
+    "attributed_to": "Jungić, Licht (Fox), Mahdian, Nešetřil, and Radoičić",
+    "attributed_year": 2003,
+    "paper_contribution": "Proves $T_k \\leq ck^2 \\log k$ (Corollary 4), improving the previous upper bound of $ck^3$ and making progress toward the conjectured tight bound $T_k = \\Theta(k^2)$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1901.05084",
+    "paper_title": "Independent arithmetic progressions",
+    "paper_authors": [
+      "David Conlon",
+      "Jacob Fox",
+      "Benny Sudakov"
+    ],
+    "published": "2019-01-15",
+    "abs_url": "https://arxiv.org/abs/1901.05084",
+    "source": "pdf"
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "review_id": "1706.02896__00",
+  "safe_id": "1706.02896",
+  "arxiv_id": "1706.02896",
+  "conjecture_title": "Problem 1.2",
+  "paper_title": "Embedding Quartic Eulerian Digraphs on the Plane",
+  "published": "2017-06-09",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "Problem 1.2 asks to determine the complete set of obstructions for diplanar quartic Eulerian digraphs under the partial order defined by cycle removal and suppression of degree-2 vertices. The source paper (Archdeacon, Bonnington, Mohar, AJC 67, 2017) makes partial progress by classifying all obstructions that contain parallel arcs, but the complete list remains open. A related 2022 AJC paper on directed embeddings of 2-regular diplanar digraphs was found but concerns a different subproblem (counting embeddings) and could not be verified as addressing Problem 1.2. No complete resolution was found in the indexed literature.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "diplanar quartic Eulerian digraph obstructions Archdeacon Bonnington Mohar 1706.02896",
+    "diplanar quartic Eulerian digraph obstructions graph embedding",
+    "2-regular diplanar digraphs embedding plane arXiv"
+  ],
+  "notes": "No follow-up paper resolving the complete obstruction set for diplanar quartic Eulerian digraphs was found. A 2022 AJC paper (vol. 82, pp. 256-267) on 'Directed embeddings of 2-regular diplanar digraphs' appeared in searches but its PDF was unreadable (binary) and from available metadata appears to address counting directed embeddings of 2-regular diplanar digraphs rather than classifying obstructions for quartic Eulerian digraphs. The problem is from 2017 and the area is highly specialized, so confidence is medium rather than high."
+}

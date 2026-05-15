@@ -1,0 +1,26 @@
+[
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Fractional Chromatic Number Bound for Planar Triangle-Free Graphs",
+    "statement_text": "The fractional chromatic number of $n$-vertex planar triangle-free graphs might be bounded by $3 - 3/(n+1)$.",
+    "context_text": "Since $\\alpha(G) \\geq |V(G)|/\\chi_f(G)$, the bound $\\alpha(G) \\geq (n+1)/3$ from Steinberg–Tovey and Theorem 2 indicate this potential upper bound on $\\chi_f$. Dvořák et al. [6] confirmed it for planar triangle-free graphs of maximum degree at most 4; in general only the weaker bound $3 - 3/(3n+1)$ is known.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated with hedged language ('might be bounded'); the paper presents it as a consequence suggested by its main results together with the known partial result for maximum degree at most 4.",
+    "arxiv_id": "1606.06265",
+    "paper_title": "Triangle-free planar graphs with the smallest independence number",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Tomáš Masařík",
+      "Jan Musílek",
+      "Ondřej Pangrác"
+    ],
+    "published": "2016-06-20",
+    "abs_url": "https://arxiv.org/abs/1606.06265",
+    "source": "pdf"
+  }
+]

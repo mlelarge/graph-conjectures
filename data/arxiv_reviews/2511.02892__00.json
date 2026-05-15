@@ -1,0 +1,33 @@
+{
+  "review_id": "2511.02892__00",
+  "safe_id": "2511.02892",
+  "arxiv_id": "2511.02892",
+  "conjecture_title": "Problem 1.1",
+  "paper_title": "Open problems of the 33rd Workshop on Cycles and Colourings",
+  "published": "2025-11-04",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Problem 1.1 asks for the smallest $m$ guaranteeing a monochromatic non-nested matching of size $n$ in every 2-coloring of ordered $K_m$. The answer lies between $3n-1$ (the lower bound, conjectured by Barát to be exact) and $(2+\\sqrt{3})n \\approx 3.73n$ (a Turán-type upper bound established in arXiv:2512.15461 by Barát, Freschi, and Tóth). The conjecture that $3n-1$ is the precise threshold remains open.",
+  "since_posted": [
+    {
+      "title": "Matchings avoiding ordered patterns",
+      "authors": "János Barát, Andrea Freschi, Géza Tóth",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2512.15461",
+      "arxiv_id": "2512.15461",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Establishes via a Turán-type extremal argument that every 2-coloring of ordered $K_m$ with $m > (2+\\sqrt{3})n$ contains a monochromatic non-nested matching of size $n$, improving the prior upper bound of $4n-2$; the conjecture $m = 3n-1$ remains open."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "non-nested matching ordered complete graph 2-coloring monochromatic arXiv 2511.02892",
+    "non-nested matching ordered complete graph Ramsey 3n-1 lower bound conjecture"
+  ],
+  "notes": "Reference [2] of the source paper is Barát–Gyárfás–Tóth (J. Graph Theory 105(4):523–541, 2024; arXiv:2210.10135), which first conjectured that $3n-1$ is the exact answer. The source paper restates this as Problem 1.1 and already records the $(2+\\sqrt{3})n$ upper bound (its Proposition 1.1) as obtained from unpublished work; arXiv:2512.15461 is the formal public write-up of that Turán-type argument, posted one month after the source paper."
+}

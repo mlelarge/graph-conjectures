@@ -1,0 +1,23 @@
+{
+  "review_id": "0911.0885__00",
+  "safe_id": "0911.0885",
+  "arxiv_id": "0911.0885",
+  "conjecture_title": "Conjecture 1.4",
+  "paper_title": "Three-coloring triangle-free graphs on surfaces V. Coloring planar graphs with distant anomalies",
+  "published": "2020-04-15",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "Conjecture 1.4 from arXiv:0911.0885 (Dvořák, Král, Thomas), first posted in 2009 and published in 2020, asserts the existence of an absolute constant d such that any precoloring of pairwise-distant vertices in a triangle-free plane graph extends to a 3-coloring. The source paper reduces it to the simpler Conjecture 1.5 (Theorem 5.1), but no paper resolving either conjecture was found in a wide web search. Related work on flexibility of triangle-free planar graphs (arXiv:1902.02971) and further extensions of Grötzsch's theorem (arXiv:2110.01862) addresses adjacent but distinct questions. The conjecture has been open for over 15 years, making confident assessment of open status moderately uncertain.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Dvorak Kral Thomas triangle-free planar graph 3-coloring precolored vertices distant conjecture",
+    "arXiv 0911.0885 Conjecture 1.4 triangle-free planar precoloring extension",
+    "triangle-free planar graph precoloring distant vertices 3-coloring extension solved Dvorak",
+    "Dvorak flexibility of triangle-free planar graphs arxiv precoloring"
+  ],
+  "notes": "The conjecture was first posted on arXiv in November 2009 and published in 2020. The source paper itself notes that Conjecture 1.4 is implied by Conjecture 1.5 (via Theorem 5.1). No follow-up paper resolving either conjecture was found. Related work: arXiv:1902.02971 (Dvořák et al., 2021, flexibility of list-colorings for triangle-free planar graphs) and arXiv:2110.01862 (further extensions of Grötzsch's theorem) address neighboring problems but not this specific conjecture. The conjecture is old enough (~15 years) that a resolution may exist but was not surfaced by this search."
+}

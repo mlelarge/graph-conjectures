@@ -1,0 +1,52 @@
+[
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 2",
+    "statement_text": "There is a function $f : \\mathbb{N} \\to \\mathbb{N}$ such that every even-hole-free graph of degree at most $d$ has tree-width at most $f(d)$.",
+    "context_text": "The class of even-hole-free graphs has unbounded tree-width in general (e.g., complete graphs and chordal graphs). Bounded degree is conjectured to be a sufficient structural restriction. If true, it would imply that even-hole-freeness is testable with constant query complexity and polylogarithmic running time in the bounded-degree graph model, via CMSO testability on bounded tree-width graphs. The paper proves the conjecture for $d \\leq 3$ (subcubic graphs) and proves a weakening for $d = 4$.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2008.05504",
+    "paper_title": "On the tree-width of even-hole-free graphs",
+    "paper_authors": [
+      "Pierre Aboulker",
+      "Isolde Adler",
+      "Eun Jung Kim",
+      "Ni Luh Dewi Sintiari",
+      "Nicolas Trotignon"
+    ],
+    "published": "2020-08-12",
+    "abs_url": "https://arxiv.org/abs/2008.05504",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 3",
+    "statement_text": "For every $d \\in \\mathbb{N}$ there is a function $f_d : \\mathbb{N} \\to \\mathbb{N}$ such that every graph with degree at most $d$ and tree-width at least $f_d(k)$ contains a $(k \\times k)$-wall or the line graph of a $(k \\times k)$-wall as an induced subgraph.",
+    "context_text": "This is an induced grid theorem analogue for bounded-degree graphs, motivated by the construction of (even hole, $K_4$)-free graphs of unbounded tree-width that requires vertices of large degree and large clique minors. The conjecture is described as 'wide open' and formally implies Conjecture 2. The paper's Theorem 1.1 (the induced grid theorem for minor-free graphs) can be seen as a step in the direction of its proof.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2008.05504",
+    "paper_title": "On the tree-width of even-hole-free graphs",
+    "paper_authors": [
+      "Pierre Aboulker",
+      "Isolde Adler",
+      "Eun Jung Kim",
+      "Ni Luh Dewi Sintiari",
+      "Nicolas Trotignon"
+    ],
+    "published": "2020-08-12",
+    "abs_url": "https://arxiv.org/abs/2008.05504",
+    "source": "pdf"
+  }
+]

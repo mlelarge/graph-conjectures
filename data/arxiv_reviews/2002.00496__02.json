@@ -1,0 +1,22 @@
+{
+  "review_id": "2002.00496__02",
+  "safe_id": "2002.00496",
+  "arxiv_id": "2002.00496",
+  "conjecture_title": "Conjecture 6",
+  "paper_title": "Excluding a ladder",
+  "published": "2021-04-06",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 6 from arXiv:2002.00496 proposes that a graph H is unavoidable if and only if H is a minor of some graph from Kelly's construction (equivalently, a minor of some graph obtained by gluing copies of K_4 along edges in a path-like way and subdividing all horizontal edges once). The 'only if' direction is established in the source paper itself: Kelly's construction yields posets with unbounded dimension whose cover graphs are planar with pathwidth 3, so every unavoidable graph must be a minor of some graph in this family. No follow-up paper proving or disproving the 'if' direction (the sufficiency claim) was found in five web searches covering the period 2021–2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "arxiv 2002.00496 \"Excluding a ladder\" unavoidable graph Kelly construction minor",
+    "unavoidable graph minor \"Kelly's construction\" poset dimension cover graph pathwidth",
+    "\"unavoidable\" graph minor \"Kelly\" poset dimension conjecture Huynh Joret Micek Seweryn 2022 2023 2024 2025"
+  ],
+  "notes": "No follow-up paper resolving this conjecture was found in five web searches (three WebSearch calls plus WebFetch of arXiv:2509.04026 and Semantic Scholar citations). The paper arXiv:2509.04026 ('Excluding a Ladder as an Induced Minor in Graphs Without Induced Stars', 2025) studies related ladder-exclusion problems but focuses on induced minors and tree-independence number, not on this specific conjecture. The conjecture is recent (source paper posted 2021, published in Combinatorica 2022, Vol. 42(3)), so absence of follow-up evidence supports high-confidence open status."
+}

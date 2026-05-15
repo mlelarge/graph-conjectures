@@ -1,0 +1,52 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Meyniel's Conjecture (Conjecture 1.1)",
+    "statement_text": "Let $G$ be a connected graph on $n$ vertices. Then $c(G) = O(\\sqrt{n})$.",
+    "context_text": "Described as perhaps the most well-known conjecture in the cops-and-robber area. Despite much interest, the best known general upper bound remains $n^{2-(1+o(1))\\sqrt{\\log n}}$, far from the conjectured $O(\\sqrt{n})$. The paper proves an analogue for random $k$-uniform hypergraphs and introduces Conjecture 1.4 as a direct generalisation.",
+    "attributed_to": "Meyniel (communicated by Frankl)",
+    "attributed_year": null,
+    "paper_contribution": "Proves that whp the cop number of the $k$-uniform binomial random hypergraph $G^k(n,p)$ is $\\tilde{O}\\!\\left(\\sqrt{n/k}\\right)$ for a broad range of $k$ and $p$ (Corollary 1.8), establishing the hypergraph analogue of Meyniel's conjecture in the random setting.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source — math notation may be garbled; $O(\\sqrt{n})$ bound reconstructed from abstract and standard literature.",
+    "arxiv_id": "2307.15512",
+    "paper_title": "Catching a robber on a random $k$-uniform hypergraph",
+    "paper_authors": [
+      "Joshua Erde",
+      "Mihyun Kang",
+      "Florian Lehner",
+      "Bojan Mohar",
+      "Dominik Schmid"
+    ],
+    "published": "2024-04-11",
+    "abs_url": "https://arxiv.org/abs/2307.15512",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.4",
+    "statement_text": "Let $H$ be a connected $k$-graph on $n$ vertices. Then $c(H) = O\\!\\left(\\sqrt{\\dfrac{n}{k}}\\right)$.",
+    "context_text": "The authors introduce this as a generalisation of Meyniel's conjecture to $k$-uniform hypergraphs, motivated by a blow-up construction that shows $c(H) = \\Omega\\!\\left(\\sqrt{n/k}\\right)$ is achievable. They further observe that for any polynomial $k = n^\\alpha$ with $\\alpha < 1$, Conjecture 1.4 implies Meyniel's conjecture.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "PDF source — LaTeX reconstructed from abstract statement and the formal conjecture environment; statement is unambiguous from context.",
+    "arxiv_id": "2307.15512",
+    "paper_title": "Catching a robber on a random $k$-uniform hypergraph",
+    "paper_authors": [
+      "Joshua Erde",
+      "Mihyun Kang",
+      "Florian Lehner",
+      "Bojan Mohar",
+      "Dominik Schmid"
+    ],
+    "published": "2024-04-11",
+    "abs_url": "https://arxiv.org/abs/2307.15512",
+    "source": "pdf"
+  }
+]

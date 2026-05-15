@@ -1,0 +1,140 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Balliu et al. Conjecture (arc-disjoint linear branchings)",
+    "statement_text": "In any strongly connected digraph, there exist arc-disjoint in-branching $T^{-}$ and out-branching $T^{+}$ (allowing arbitrary overlapping in terms of vertices), both with linear size and rooted at the same vertex $r$.",
+    "context_text": "This conjecture was introduced in [2] to suggest that MRET (Maximum Reachability Edge Temporalisation) is in APX for strongly connected digraphs, since arc-disjoint linear branchings with the same root yield a quadratic number of temporally connected pairs. The present paper proves this conjecture by constructing a linear-size balanced bi-tree inside any strongly connected digraph.",
+    "attributed_to": "Balliu, Brunelli, Crescenzi, Olivetti, and Viennot",
+    "attributed_year": 2023,
+    "paper_contribution": "Proves the conjecture by showing that every strongly connected digraph on $n$ vertices contains arc-disjoint in- and out-branchings of linear size rooted at the same vertex, constructed via a balanced bi-tree of size at least $n/3$.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "Conjecture stated in prose in the introduction without a labelled theorem environment; attributed to reference [2] (Balliu et al., CoRR 2023).",
+    "arxiv_id": "2304.03567",
+    "paper_title": "Temporalizing digraphs via linear-size balanced bi-trees",
+    "paper_authors": [
+      "Stéphane Bessy",
+      "Stéphan Thomassé",
+      "Laurent Viennot"
+    ],
+    "published": "2024-01-11",
+    "abs_url": "https://arxiv.org/abs/2304.03567",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Problem 1",
+    "statement_text": "What is the value of $r_{t}$?",
+    "context_text": "The quantity $r_{t}$ denotes the best approximation ratio achievable for FCPP (Forward Connected Pairs Problem) in strongly connected digraphs. The paper establishes $r_{t}>0$ as its central result, but the exact value of $r_{t}$ remains open. The paper shows $r_{t}\\geq 1/9$ via its bi-tree construction.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2304.03567",
+    "paper_title": "Temporalizing digraphs via linear-size balanced bi-trees",
+    "paper_authors": [
+      "Stéphane Bessy",
+      "Stéphan Thomassé",
+      "Laurent Viennot"
+    ],
+    "published": "2024-01-11",
+    "abs_url": "https://arxiv.org/abs/2304.03567",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Problem 2",
+    "statement_text": "What is the maximum $c_{b}$ for which every strongly connected directed graph on $n$ vertices has a balanced bi-tree of size at least $c_{b}.n$?",
+    "context_text": "The paper proves $c_{b}\\geq 1/3$ (Theorem 4), where both the out-tree $|T^{+}|$ and in-tree $|T^{-}|$ of the bi-tree each have size at least $n/6$. The exact optimal constant $c_{b}$ is unknown.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2304.03567",
+    "paper_title": "Temporalizing digraphs via linear-size balanced bi-trees",
+    "paper_authors": [
+      "Stéphane Bessy",
+      "Stéphan Thomassé",
+      "Laurent Viennot"
+    ],
+    "published": "2024-01-11",
+    "abs_url": "https://arxiv.org/abs/2304.03567",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Problem 3",
+    "statement_text": "Can we compute a left-maximal dfs-tree in $o(n^{2})$ time in minimally strongly connected digraphs? What about the complexity in the general case?",
+    "context_text": "The Left-DFS tree is a key algorithmic ingredient introduced in the paper for constructing balanced bi-trees. The current construction runs in $O(n^{2})$ time; whether this can be improved is left open, both for the minimally strongly connected special case and for general strongly connected digraphs.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2304.03567",
+    "paper_title": "Temporalizing digraphs via linear-size balanced bi-trees",
+    "paper_authors": [
+      "Stéphane Bessy",
+      "Stéphan Thomassé",
+      "Laurent Viennot"
+    ],
+    "published": "2024-01-11",
+    "abs_url": "https://arxiv.org/abs/2304.03567",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Problem 4",
+    "statement_text": "Is there a polytime constant approximation algorithm for RFCPP?",
+    "context_text": "RFCPP (Request Forward Connected Pairs Problem) is the variant of FCPP where only a specified set $R\\subseteq\\binom{V}{2}$ of pairs needs to be forward connected. Since FCPP (the case $R=\\binom{V}{2}$) is in APX, the question is whether a constant-factor approximation also exists for RFCPP, and in particular whether a linear fraction of requests in $R$ can always be satisfied.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2304.03567",
+    "paper_title": "Temporalizing digraphs via linear-size balanced bi-trees",
+    "paper_authors": [
+      "Stéphane Bessy",
+      "Stéphan Thomassé",
+      "Laurent Viennot"
+    ],
+    "published": "2024-01-11",
+    "abs_url": "https://arxiv.org/abs/2304.03567",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 1",
+    "statement_text": "Every strong digraph $D$ on $n$ vertices has a $O(\\log n)$ size forward cover.",
+    "context_text": "A forward cover is a small set of vertex orderings such that every pair of vertices is forward connected in at least one ordering. The conjecture is verified for bi-oriented graphs (undirected graphs with each edge replaced by two arcs) using a centroid-decomposition argument. The general case for arbitrary strongly connected digraphs remains open.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2304.03567",
+    "paper_title": "Temporalizing digraphs via linear-size balanced bi-trees",
+    "paper_authors": [
+      "Stéphane Bessy",
+      "Stéphan Thomassé",
+      "Laurent Viennot"
+    ],
+    "published": "2024-01-11",
+    "abs_url": "https://arxiv.org/abs/2304.03567",
+    "source": "html"
+  }
+]

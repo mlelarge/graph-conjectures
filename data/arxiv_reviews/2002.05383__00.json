@@ -1,0 +1,33 @@
+{
+  "review_id": "2002.05383__00",
+  "safe_id": "2002.05383",
+  "arxiv_id": "2002.05383",
+  "conjecture_title": "Problem 3",
+  "paper_title": "An update on reconfiguring $10$-colorings of planar graphs",
+  "published": "2020-02-13",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "medium",
+  "summary": "Problem 3 asks for the minimum $\\kappa$ such that $R_\\kappa(G)$ has diameter $O(n)$ for every $n$-vertex planar graph $G$. The source paper establishes $7 \\leq \\kappa \\leq 10$. A 2024 paper (arXiv:2411.00679, EJC 2025) proves a conjecture of Dvo\\v{r}\\'ak and Feghali in the list-coloring setting, showing that any two 10-list-colorings of a planar graph can be connected by a recoloring sequence of length linear in the number of vertices. The exact minimum $\\kappa$ for uniform $k$-colorings of general planar graphs remains open.",
+  "since_posted": [
+    {
+      "title": "10-list Recoloring of Planar Graphs",
+      "authors": "unverified",
+      "year": 2024,
+      "venue": "European Journal of Combinatorics",
+      "url": "https://arxiv.org/abs/2411.00679",
+      "arxiv_id": "2411.00679",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Confirms a conjecture of Dvo\\v{r}\\'ak and Feghali: for any 10-list assignment of a planar graph, any two list-colorings can be connected by a recoloring sequence of length linear in the number of vertices, published in EJC December 2025."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "planar graph recoloring reconfiguration diameter linear Dvo\\u0159\\'ak Feghali 2002.05383",
+    "k-coloring reconfiguration planar graph diameter O(n) minimum kappa"
+  ],
+  "notes": "The gap 7 \\leq \\kappa \\leq 10 established in the source paper has not been fully closed for general planar graphs. arXiv:2006.09269 ('A Thomassen-type method for planar graph recoloring', June 2020) gives related bounds via a different technique but falls within the same calendar year as the source paper and was not included in since_posted. arXiv:2411.00679 resolves the generalized list-coloring variant. Author names for since_posted entries could not be confirmed within the web-call cap."
+}

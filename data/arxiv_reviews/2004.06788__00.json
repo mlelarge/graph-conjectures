@@ -1,0 +1,22 @@
+{
+  "review_id": "2004.06788__00",
+  "safe_id": "2004.06788",
+  "arxiv_id": "2004.06788",
+  "conjecture_title": "Informal Conjecture on reflexive graphs and coloring abundance",
+  "paper_title": "Reflexive coloring complexes for 3-edge-colorings of cubic graphs",
+  "published": "2020-04-14",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "low",
+  "summary": "The conjecture, informal by the authors' own admission, posits that cubic graphs admitting many 3-edge-colorings tend to satisfy B(B(X)) ≅ X (reflexivity). The paper established reflexivity for line graphs of connected cubic triangle-free outerplanar graphs and noted extensive computational support, but left the general claim open as the central remaining problem. No follow-up paper resolving or substantially advancing this specific informal observation was found in searches covering 2020–2026; the conjecture's imprecise ('tend to be') formulation may explain the absence of traceable progress.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Knox Mohar Singer reflexive coloring complex cubic graphs 3-edge-colorings 2004.06788",
+    "reflexive coloring complex cubic graphs large number colorings reflexive conjecture",
+    "reflexive graph coloring complex abundance 2021 2022 2023 2024 follow-up Knox Mohar Singer"
+  ],
+  "notes": "No follow-up found in indexed literature. The conjecture is deliberately informal ('tend to be reflexive'), which makes it hard to state as a precise theorem and likely explains the absence of direct citations targeting this specific claim. The paper has a published journal version in Discrete Mathematics (ScienceDirect pii/S0012365X21000224, paywalled), but no follow-up addressing the informal abundance conjecture was discovered. Confidence is low rather than high because the paper is approximately 6 years old, making the absence of follow-up somewhat suspicious even for an informal statement."
+}

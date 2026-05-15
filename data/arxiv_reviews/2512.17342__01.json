@@ -1,0 +1,21 @@
+{
+  "review_id": "2512.17342__01",
+  "safe_id": "2512.17342",
+  "arxiv_id": "2512.17342",
+  "conjecture_title": "Problem 2.6",
+  "paper_title": "Nowhere-zero flow reconfiguration",
+  "published": "2026-05-04",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Problem 2.6 asks whether connectivity of the group flow reconfiguration graph $\\mathcal{F}(G,\\mathbb{Z}_k)$ implies connectivity of the integer flow reconfiguration graph $\\mathcal{F}(G,k)$. The source paper establishes the easier converse direction (Observation 2.5) and explicitly states they cannot prove the forward implication even for $k=4$. A wide web search and inspection of the first author's publication list found no subsequent paper resolving this problem as of May 2026, consistent with the conjecture being less than six months old.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "nowhere-zero flow reconfiguration F(G,k) F(G,Z_k) connectivity 2512.17342",
+    "nowhere-zero flow reconfiguration integer group connectivity Esperet Hendrey Lagoutte Steiner 2025 2026"
+  ],
+  "notes": "No follow-up found. The paper (arXiv:2512.17342) is the sole work on this specific problem; Problem 2.6 is posed as an open question therein. The authors note the difficulty of even the k=4 case."
+}

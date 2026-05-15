@@ -1,0 +1,22 @@
+{
+  "review_id": "2008.09692__00",
+  "safe_id": "2008.09692",
+  "arxiv_id": "2008.09692",
+  "conjecture_title": "Conjecture 11",
+  "paper_title": "Coloring Drawings of Graphs",
+  "published": "2022-08-26",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "No follow-up paper specifically proving or disproving Conjecture 11 was found in the literature. The conjecture is closely entangled with the open Tutte 3-Flow Conjecture (a positive resolution of Conjecture 11 would imply Tutte's conjecture), placing it among the hardest open problems in flow theory. The original paper established the conjecture for subcubic graphs and for K_{3,3}-minor-free graphs; no extension of these partial results has been identified.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "universally cell 3-colorable 3-flowable subcontraction Tutte conjecture Hertrich Schröder Steiner",
+    "arXiv 2008.09692 coloring drawings cell colorable nowhere-zero flow follow-up",
+    "Weinberger Zeng plane structures complete graph drawings 2026 cell colorable flow"
+  ],
+  "notes": "Semantic Scholar lists one post-2022 citing paper (Weinberger & Zeng, arXiv:2603.05208, 2026) but its abstract makes no mention of cell 3-colorability, 3-flowability, or Conjecture 11; it concerns plane structures in complete-graph drawings and is not relevant to this conjecture. The conjecture's connection to Tutte's 3-Flow Conjecture (itself wide open) suggests it is unlikely to have been resolved quietly."
+}

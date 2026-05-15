@@ -1,0 +1,24 @@
+[
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Informal Conjecture (diameter bound improvement)",
+    "statement_text": "The extra factor $\\sqrt{\\log n}$ (compared with the random tree $T_n$) in the diameter bound $5\\sqrt{n \\log n}$ for the block tree $BT(R_n)$ could be replaced by any function tending to $\\infty$.",
+    "context_text": "Theorem 1.2 establishes that, for $R_n$ sampled uniformly from the connected graphs in a block-stable class, the block forest $BF(R_n)$ has diameter at most $5\\sqrt{n \\log n}$ whp. Random labelled trees have diameter of order $\\sqrt{n}$, so a gap of $\\sqrt{\\log n}$ remains between the two bounds. The authors conjecture this gap can be closed down to an arbitrarily slowly growing function.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated in prose immediately before Theorem 1.2: 'We conjecture that the extra factor √log n (compared with the random tree Tn) could be replaced by any function tending to ∞.' No labelled conjecture environment.",
+    "arxiv_id": "1408.4257",
+    "paper_title": "Random graphs from a block-stable class",
+    "paper_authors": [
+      "Colin McDiarmid",
+      "Alex Scott"
+    ],
+    "published": "2016-05-16",
+    "abs_url": "https://arxiv.org/abs/1408.4257",
+    "source": "pdf"
+  }
+]

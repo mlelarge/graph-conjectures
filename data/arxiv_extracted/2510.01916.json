@@ -1,0 +1,25 @@
+[
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 21",
+    "statement_text": "Circuit Distance is $\\mathsf{NP}$-hard for polygons.",
+    "context_text": "The authors focus on monotone circuit walks as most directly relevant to circuit augmentation schemes, but note the non-monotone variant is natural too. The Circuit Distance problem asks whether there is a circuit walk from $\\mathbf{s}$ to $\\mathbf{t}$ of length at most $k$ in a polytope $P=\\{\\mathbf{x}\\in\\mathbb{R}^{n}\\colon Ax\\leq\\mathbf{b}\\}$. The authors remark that their proof techniques seem likely to extend to this non-monotone setting.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "Polygons are 2-dimensional polytopes; in this case circuit directions coincide with edge directions (as noted in Observation 9 of the paper).",
+    "arxiv_id": "2510.01916",
+    "paper_title": "Short circuit walks in fixed dimension",
+    "paper_authors": [
+      "Alexander E. Black",
+      "Christian Nöbel",
+      "Raphael Steiner"
+    ],
+    "published": "2025-10-02",
+    "abs_url": "https://arxiv.org/abs/2510.01916",
+    "source": "html"
+  }
+]

@@ -1,0 +1,34 @@
+{
+  "review_id": "2202.07293__00",
+  "safe_id": "2202.07293",
+  "arxiv_id": "2202.07293",
+  "conjecture_title": "Optimal bound question",
+  "paper_title": "Asymptotic dimension of intersection graphs",
+  "published": "2022-10-04",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The question of whether the asymptotic dimension bound of $2n+1$ in Theorems 1–2 of the source paper can be decreased to $n$ remains open. The lower bound of $n$ is already established in the source paper via $n$-dimensional grids as touching graphs of balls in $\\mathbb{R}^n$. A 2025 follow-up (arXiv:2504.00932, SoCG 2025) proves that all sphere intersection graphs in $\\mathbb{R}^d$ have asymptotic dimension at most $2d+2$, and that $K_{t,t}$-free subclasses admit strongly sublinear separators; this does not close the gap between $n$ and $2n+1$.",
+  "since_posted": [
+    {
+      "title": "Strongly Sublinear Separators and Bounded Asymptotic Dimension for Sphere Intersection Graphs",
+      "authors": "Davies, Georgakopoulos, Hatzel, McCarty",
+      "year": 2025,
+      "venue": "41st International Symposium on Computational Geometry (SoCG 2025), LIPIcs",
+      "url": "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.SoCG.2025.36",
+      "arxiv_id": "2504.00932",
+      "doi": "10.4230/LIPIcs.SoCG.2025.36",
+      "kind": "partial",
+      "claim": "Proves that sphere intersection graphs in $\\mathbb{R}^d$ have asymptotic dimension at most $2d+2$ and that $K_{t,t}$-free subclasses admit strongly sublinear separators; does not improve the bound toward $n$."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "asymptotic dimension intersection graphs Assouad-Nagata 2202.07293 bound",
+    "asymptotic dimension intersection graphs ball touching space-filling optimal bound Dvořák Norin",
+    "arxiv asymptotic dimension sphere intersection graphs strongly sublinear separators 2025 bound improved"
+  ],
+  "notes": "The conjecture asks whether the upper bound $2n+1$ can be reduced to $n$; the source paper already gives $n$ as a lower bound. The only relevant post-2022 work found is arXiv:2504.00932 (SoCG 2025), which obtains $2d+2$ for sphere intersection graphs (without bounded aspect-ratio hypothesis) but does not make progress toward $n$. No paper resolving the optimal bound question was found."
+}

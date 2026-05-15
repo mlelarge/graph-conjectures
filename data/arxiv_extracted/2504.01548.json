@@ -1,0 +1,46 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.1 (Guo, Kang and Zwaneveld)",
+    "statement_text": "For every graph $G$ and every integer $d\\geq 0$, we have $\\chi(G)=\\chi^{d}(G\\boxtimes K_{d+1})$.",
+    "context_text": "Motivated by studying the tightness of Hoffman's spectral bound on the chromatic number and its $d$-defective extension by Bilu, Guo, Kang and Zwaneveld conjectured an exact equality between the ordinary chromatic number of $G$ and the $d$-defective chromatic number of its $(d+1)$-fold clique blowup. The conjecture was also posed as an open problem at the 2025 Graph Theory workshop in Oberwolfach. The easy direction $\\chi^{d}(G\\boxtimes K_{d+1})\\leq\\chi(G)$ holds by lifting an optimal proper coloring; the heart of the conjecture is the reverse inequality.",
+    "attributed_to": "Guo, Kang and Zwaneveld",
+    "attributed_year": 2024,
+    "paper_contribution": "Disproves the conjecture by constructing graphs $G$ of arbitrarily large chromatic number such that $\\chi(G)\\geq\\frac{30}{29}\\chi^{d}(G\\boxtimes K_{d+1})$ for infinitely many $d$; on the positive side proves the constant-factor version $\\chi^{d}(G\\boxtimes K_{d+1})\\leq\\chi(G)\\leq 2\\chi^{d}(G\\boxtimes K_{d+1})$ for every graph $G$ and $d\\geq 0$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2504.01548",
+    "paper_title": "Defective coloring of blowups",
+    "paper_authors": [
+      "Sergey Norin",
+      "Raphael Steiner"
+    ],
+    "published": "2025-04-02",
+    "abs_url": "https://arxiv.org/abs/2504.01548",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Problem 1.4",
+    "statement_text": "Determine the smallest value of $c$ for which the inequality $\\chi(G)\\leq c\\cdot\\chi^{d}(G\\boxtimes K_{d+1})$ always holds.",
+    "context_text": "Theorem 1.2 (for $d=2$) provides a graph showing that $c\\geq\\frac{30}{29}$ is necessary, while Theorem 1.3 gives the upper bound $c\\leq 2$. A bootstrapped version of Theorem 1.2 further shows that assuming $\\chi(G)$ or $d$ to be large cannot reduce the constant factor arbitrarily close to $1$.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "The theorem environment statement is truncated to 'Determine' in the source; the full problem is reconstructed from the immediately preceding context.",
+    "arxiv_id": "2504.01548",
+    "paper_title": "Defective coloring of blowups",
+    "paper_authors": [
+      "Sergey Norin",
+      "Raphael Steiner"
+    ],
+    "published": "2025-04-02",
+    "abs_url": "https://arxiv.org/abs/2504.01548",
+    "source": "html"
+  }
+]

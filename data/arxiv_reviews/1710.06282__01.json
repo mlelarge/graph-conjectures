@@ -1,0 +1,34 @@
+{
+  "review_id": "1710.06282__01",
+  "safe_id": "1710.06282",
+  "arxiv_id": "1710.06282",
+  "conjecture_title": "Conjecture 1.4",
+  "paper_title": "A tight Erdős-Pósa function for wheel minors",
+  "published": "2018-07-05",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 1.4 from arXiv:1710.06282 — that every graph of treewidth at least f(r)·k·log(k+1) has k vertex-disjoint subgraphs each of treewidth at least r — remains open as of May 2026. No resolution was found in the indexed literature; the conjecture is a treewidth-level analogue of the more general planar-H Erdős-Pósa conjecture (Conjecture 1.2 of the same paper), and is implied by it via the r×r grid. The Chekuri–Chuzhoy framework (arXiv:1304.1577) achieves a weaker c′≥1 factor but does not attain the tight k log(k+1) bound asserted here.",
+  "since_posted": [],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2108.01162",
+      "verified": false,
+      "note": "WebFetch of the abstract confirms this paper addresses a different conjecture (Aboulker, Adler, Kim, Sintiari, Trotignon) about unavoidable induced subgraphs of bounded-degree graphs with large treewidth, not Conjecture 1.4 of arXiv:1710.06282. The candidate match appears to be a false positive."
+    },
+    {
+      "arxiv_id": "2404.05992",
+      "verified": false,
+      "note": "WebFetch of the abstract confirms this paper is about chordality, χ-boundedness of intersection graph classes, and Gyárfás-type questions; it does not mention the treewidth decomposition conjecture of arXiv:1710.06282. The candidate match is a false positive."
+    }
+  ],
+  "search_queries": [
+    "treewidth vertex-disjoint subgraphs k log k Erdos-Posa arXiv 1710.06282",
+    "treewidth k vertex-disjoint treewidth at least k log k conjecture Aboulker Huynh Joret Raymond 2019 2020 2021 2022 2023",
+    "Chekuri Chuzhoy treewidth decomposition k log k conjecture resolved proof 2020 2021 2022 2023 2024 2025",
+    "Erdos-Posa treewidth k vertex-disjoint subgraphs treewidth 2022 2023 2024 2025 arxiv proof"
+  ],
+  "notes": "No follow-up paper was found that proves, disproves, or makes substantial partial progress on Conjecture 1.4 specifically. The conjecture is implied by the broader Conjecture 1.2 (Erdős-Pósa for any fixed planar H), which also appears to remain open. The two internal-corpus candidate references (2108.01162 and 2404.05992) are false positives from fuzzy matching and do not address this conjecture."
+}

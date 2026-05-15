@@ -1,0 +1,34 @@
+{
+  "review_id": "1811.12252__02",
+  "safe_id": "1811.12252",
+  "arxiv_id": "1811.12252",
+  "conjecture_title": "Open Cases: Clique-Width Classification for $(H_1,H_2)$-Free Graphs",
+  "paper_title": "Graph Isomorphism for $(H_1,H_2)$-free Graphs: An Almost Complete Dichotomy",
+  "published": "2019-09-03",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "The paper (arXiv:1811.12252) reduces the number of open pairs $(H_1,H_2)$ for clique-width boundedness to five. A 2023 follow-up by Dabrowski, Masařík, Novotná, Paulusma, and Rzążewski (arXiv:2006.03578, Journal of Graph Theory 2023) initiates a systematic study via atoms of hereditary graph classes and leaves 18 atom cases open, but its relationship to the specific five pairs from 1811.12252 could not be confirmed without the full text. No paper definitively resolving all five open pairs was found in the indexed literature.",
+  "since_posted": [
+    {
+      "title": "Clique-width: Harnessing the power of atoms",
+      "authors": "Konrad K. Dabrowski, Tomáš Masařík, Jana Novotná, Daniël Paulusma, Paweł Rzążewski",
+      "year": 2023,
+      "venue": "Journal of Graph Theory",
+      "url": "https://arxiv.org/abs/2006.03578",
+      "arxiv_id": "2006.03578",
+      "doi": "10.1002/jgt.23000",
+      "kind": "partial",
+      "claim": "Initiates a systematic study of clique-width boundedness of atoms of hereditary graph classes, settling boundedness for $(H_1,H_2)$-free atoms in all but 18 cases; its overlap with the five open pairs from 1811.12252 could not be verified from the abstract alone."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "clique-width H-free graphs bounded unbounded classification Dabrowski Paulusma 2020 2021 2022",
+    "arXiv 1811.12252 clique-width H1 H2 free graphs open cases five pairs",
+    "clique-width (H1 H2)-free graphs dichotomy bounded unbounded 2021 2022 2023 2024 Dabrowski Paulusma"
+  ],
+  "notes": "The five remaining open pairs are not listed in the abstract of 1811.12252. The 2023 atoms paper (2006.03578) is the strongest candidate for partial progress but could not be confirmed as resolving any of the five specific pairs without full-text access. Confidence is medium rather than high because the conjecture is old enough (2019) that absence of a clear resolution is somewhat suspicious for an active research area."
+}

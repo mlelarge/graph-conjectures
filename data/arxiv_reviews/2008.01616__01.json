@@ -1,0 +1,22 @@
+{
+  "review_id": "2008.01616__01",
+  "safe_id": "2008.01616",
+  "arxiv_id": "2008.01616",
+  "conjecture_title": "Open subproblem: conditional superlinear lower bound",
+  "paper_title": "Automorphism groups of maps in linear time",
+  "published": "2021-01-07",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "No follow-up paper proving a conditional superlinear lower bound for map isomorphism or simultaneous conjugation was found. The best known lower bounds remain the communication complexity bound of Omega(dn log n) for d>1 and the decision tree search-version bound of Omega(n log n), both mentioned in the source paper itself; a conditional lower bound ruling out O(n polylog n) algorithms is still open. The paper was subsequently published as Kawarabayashi et al., ACM Transactions on Algorithms (2024, doi:10.1145/3686798), with the open problem presumably unchanged.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "map isomorphism simultaneous conjugation superlinear lower bound complexity arXiv 2008.01616",
+    "simultaneous conjugation permutations lower bound decision tree complexity 2021 2022 2023 2024",
+    "map isomorphism lower bound polylog superlinear conditional graph isomorphism ETH 2022 2023 2024 2025"
+  ],
+  "notes": "The open problem is a conditional complexity lower bound (e.g. under SETH or ETH) that would rule out O(n polylog n) algorithms for map isomorphism or simultaneous conjugation. The algorithmic side has progressed (subquadratic algorithm for simultaneous conjugacy, arXiv:2007.05870, J. Graph Theory 2022), but no matching lower bound result was found in the indexed literature as of May 2026. The published journal version of the source paper (ACM ToA, doi:10.1145/3686798) returned HTTP 403 and could not be verified for any updated open-problem discussion."
+}

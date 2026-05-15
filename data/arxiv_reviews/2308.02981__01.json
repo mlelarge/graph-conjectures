@@ -1,0 +1,22 @@
+{
+  "review_id": "2308.02981__01",
+  "safe_id": "2308.02981",
+  "arxiv_id": "2308.02981",
+  "conjecture_title": "Question 1.3",
+  "paper_title": "Factoring Pattern-Free Permutations into Separable ones",
+  "published": "2023-08-06",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Question 1.3 asks for the parameterised complexity of computing the separable index sep(σ) — the smallest k such that a permutation σ factors as a product of k separable permutations — and of approximating it within a constant factor. The paper's main theorem (Theorem 1.1) yields an FPT approximation algorithm, but the approximation ratio is a triple-exponential function of the parameter k, which the authors note is very far from constant. No follow-up work addressing the exact complexity or a constant-factor approximation of sep(σ) has been found in the literature as of May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "separable index permutation parameterized complexity sep(sigma) Bonnet Bourneuf Geniet Thomassé",
+    "arXiv 2308.02981 separable permutations factoring pattern-free complexity",
+    "\"separable index\" permutation complexity approximation 2024 2025 2026"
+  ],
+  "notes": "No follow-up found after three targeted searches and direct PDF inspection. The conjecture is recent (2023, published SODA 2024) and quite specific; open with high confidence. The arxiv:2507.07606 paper on Ramsey-like theorems for separable permutations was inspected but its abstract does not address the complexity of sep(σ)."
+}

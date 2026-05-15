@@ -1,0 +1,33 @@
+{
+  "review_id": "2504.08266__01",
+  "safe_id": "2504.08266",
+  "arxiv_id": "2504.08266",
+  "conjecture_title": "Conjecture 1.7",
+  "paper_title": "$χ$-Boundedness and Neighbourhood Complexity of Bounded Merge-Width Graphs",
+  "published": "2025-06-16",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The source paper itself establishes the left-to-right direction (Theorem 1.5): every first-order transduction of a bounded merge-width class has linear neighbourhood complexity. The converse—that linear neighbourhood complexity of all first-order transductions implies bounded merge-width—remains open as of early 2026. A February 2026 follow-up (arXiv:2602.12926) makes related partial progress by showing that in K_{t,t}-free graphs flip-width coincides with bounded expansion and with bounded merge-width, which is relevant to the flip-width/merge-width equivalence conjecture (implied by Conjecture 1.7) but does not address the neighbourhood-complexity characterisation directly.",
+  "since_posted": [
+    {
+      "title": "Flips and Merge-Width in Sparse Graphs",
+      "authors": "Karolina Drabik, Maël Dumas, Nikolas Mählmann, Wojciech Przybyszewski, Szymon Toruńczyk",
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2602.12926",
+      "arxiv_id": "2602.12926",
+      "doi": null,
+      "kind": "partial",
+      "claim": "In K_{t,t}-free graphs, shows that every short sequence of flips can be simulated by vertex deletions, and derives that flip-width, bounded expansion, and bounded merge-width all coincide in the sparse setting; this constitutes partial progress toward the merge-width/flip-width equivalence conjecture implied by Conjecture 1.7 but does not resolve the neighbourhood-complexity characterisation."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "bounded merge-width linear neighbourhood complexity first-order transduction Bonamy Geniet 2025",
+    "flip-width merge-width equivalent conjecture Dreier Torunczyk 2025"
+  ],
+  "notes": "The left-to-right direction of Conjecture 1.7 is already proven in the source paper (Theorem 1.5). The conjecture is stated as open and, if resolved, would also imply the equivalence of flip-width and merge-width (Dreier–Toruńczyk Conjecture 1.17 in arXiv:2502.18065). No paper directly resolving the full conjecture was found after 5 web calls."
+}

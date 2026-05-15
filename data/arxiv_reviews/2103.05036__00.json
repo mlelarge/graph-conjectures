@@ -1,0 +1,54 @@
+{
+  "review_id": "2103.05036__00",
+  "safe_id": "2103.05036",
+  "arxiv_id": "2103.05036",
+  "conjecture_title": "Conjecture 1",
+  "paper_title": "Random 2-cell embeddings of multistars",
+  "published": "2021-10-06",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "solved",
+  "confidence": "high",
+  "summary": "Conjecture 1 from arXiv:2103.05036 is fully resolved by Campion Loth and Mohar (2023), who proved that for any $n$-vertex multigraph with maximum edge-multiplicity $\\mu$, the expected number of faces satisfies $E[F] \\leq n(H_{2\\mu}+1)$; for simple graphs this specialises to the conjectured $O(n)$ bound, further sharpened to $E[F] \\leq \\frac{\\pi^2}{6}n$ by the same paper. Subsequent work (arXiv:2211.01032, SODA 2024) shows that for complete graphs and most natural graph families the expectation is in fact $\\Theta(\\ln n)$, far below the linear upper bound.",
+  "since_posted": [
+    {
+      "title": "Expected number of faces in a random embedding of any graph is at most linear",
+      "authors": "Jesse Campion Loth, Bojan Mohar",
+      "year": 2023,
+      "venue": "Combinatorics, Probability and Computing",
+      "url": "https://arxiv.org/abs/2202.07746",
+      "arxiv_id": "2202.07746",
+      "doi": "10.1017/S096354832300010X",
+      "kind": "proof",
+      "claim": "Proves Conjecture 1 by establishing $E[F] \\leq n(H_{2\\mu}+1)$ for any multigraph (Theorem 3), which specialises to $O(n)$ for simple graphs and is further sharpened to $E[F] \\leq \\frac{\\pi^2}{6}n$ by Theorem 8."
+    },
+    {
+      "title": "Random Embeddings of Graphs: The Expected Number of Faces in Most Graphs is Logarithmic",
+      "authors": "Jesse Campion Loth, Kevin Halasz, Tomáš Masařík, Bojan Mohar, Robert Šámal",
+      "year": 2024,
+      "venue": "ACM-SIAM Symposium on Discrete Algorithms (SODA 2024)",
+      "url": "https://arxiv.org/abs/2211.01032",
+      "arxiv_id": "2211.01032",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Goes beyond the resolved conjecture by proving $E[F(K_n)] = \\Theta(\\ln n)$ and logarithmic bounds for random graphs $G(n,p)$ and bounded-degree models, showing the O(n) bound is far from tight for most graphs."
+    }
+  ],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2202.07746",
+      "verified": true,
+      "note": "Confirmed: published in Combinatorics, Probability and Computing 32(4):682-690, July 2023, DOI 10.1017/S096354832300010X. Directly proves the conjecture. The two internal-ref entries for this arXiv ID are duplicates of the same paper."
+    },
+    {
+      "arxiv_id": "2211.01032",
+      "verified": true,
+      "note": "Confirmed: submitted November 2022, accepted to SODA 2024. Proves logarithmic bounds for complete graphs and most natural families, going well beyond the O(n) conjecture. Internal ref listed year as 2025, possibly a journal version not separately verified."
+    }
+  ],
+  "search_queries": [
+    "expected number faces random orientable embedding graph O(n) conjecture Campion Loth Mohar 2103.05036"
+  ],
+  "notes": "Conjecture 1 is fully proved by arXiv:2202.07746. The three internal references reduce to two distinct papers (2202.07746 appears twice with fuzz scores 97 and 92). arXiv:2211.01032 strengthens the result considerably by showing logarithmic behaviour for most graphs."
+}

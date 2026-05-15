@@ -1,0 +1,21 @@
+{
+  "review_id": "2008.01616__00",
+  "safe_id": "2008.01616",
+  "arxiv_id": "2008.01616",
+  "conjecture_title": "Conjecture 1.2",
+  "paper_title": "Automorphism groups of maps in linear time",
+  "published": "2021-01-07",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 1.2 asserts that map isomorphism for unrestricted genus admits no truly subquadratic algorithm (i.e., no $O(n^{2-\\varepsilon})$ bound for any $\\varepsilon>0$). The best known algorithm runs in $O(n^2/\\log n)$ via a reduction to the simultaneous conjugacy problem in symmetric groups (Brodnik et al., arXiv:2007.05870), which predates the conjecture; the source paper's authors were already aware of it when formulating the conjecture. No follow-up paper resolving or refuting Conjecture 1.2 was found in the indexed literature as of May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "map isomorphism unrestricted genus subquadratic algorithm Kawarabayashi Mohar Nedela Zeman 2008.01616",
+    "simultaneous conjugation problem map isomorphism lower bound subquadratic complexity"
+  ],
+  "notes": "The $O(n^2\\log d/\\log n + dn\\log n)$ simultaneous conjugacy algorithm (Brodnik et al., arXiv:2007.05870, Journal of Graph Theory 2022) achieves $o(n^2)$ but not a polynomial improvement; this is precisely why the authors conjectured no $O(n^{2-\\varepsilon})$ algorithm exists. The SIAM paper 'Isomorphism Testing Parameterized by Genus and Beyond' (doi:10.1137/22M1514076) appeared in the search but could not be fetched (paywall); its title suggests it concerns bounded-genus parameterised algorithms rather than unrestricted-genus hardness. The published version of the source paper appeared in ACM Transactions on Algorithms (doi:10.1145/3686798, also paywalled) with no indication of conjecture resolution."
+}

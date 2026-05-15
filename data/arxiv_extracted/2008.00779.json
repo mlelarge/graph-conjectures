@@ -1,0 +1,98 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Kawarabayashi–Rossman Conjecture",
+    "statement_text": "There exists a universal constant $c$ such that every graph with pathwidth $\\Omega(k^c)$ has treewidth at least $k$ or contains a subdivision of a complete binary tree of height $k$.",
+    "context_text": "Kawarabayashi and Rossman stated this conjecture in the context of studying treedepth and pathwidth (SODA 2018). The paper's Theorem 1.1 implies the conjecture with $c = 2$, which the authors show is best possible.",
+    "attributed_to": "Kawarabayashi and Rossman",
+    "attributed_year": 2018,
+    "paper_contribution": "Proves the conjecture with $c = 2$ via Theorem 1.1: every graph with treewidth at most $t-1$ has pathwidth at most $th+1$ or contains a subdivision of a complete binary tree of height $h+1$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2008.00779",
+    "paper_title": "Approximating pathwidth for graphs of small treewidth",
+    "paper_authors": [
+      "Carla Groenland",
+      "Gwenaël Joret",
+      "Wojciech Nadara",
+      "Bartosz Walczak"
+    ],
+    "published": "2022-12-08",
+    "abs_url": "https://arxiv.org/abs/2008.00779",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Wood's Conjecture on Pathwidth and Binary Trees",
+    "statement_text": "Every graph with treewidth $t$ and not containing a subdivision of a complete binary tree of height $h$ has pathwidth at most $f(t) \\cdot h$ for some function $f$.",
+    "context_text": "Wood conjectured a bound of the form $f(t) \\cdot h$ on the pathwidth for graphs of treewidth $t$ that avoid a subdivision of a complete binary tree of height $h$. The paper notes that Theorem 1.1 implies this conjecture.",
+    "attributed_to": "Wood",
+    "attributed_year": null,
+    "paper_contribution": "Theorem 1.1 establishes the conjecture with $f(t) = t$, showing pathwidth at most $th+1$ for graphs of treewidth at most $t-1$ that avoid a subdivision of a complete binary tree of height $h+1$.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "Exact original statement not reproduced in the paper; described only as 'a bound of the form f(t) · h on the pathwidth for some function f'. Also referenced at [20, Conjecture 6.4.1].",
+    "arxiv_id": "2008.00779",
+    "paper_title": "Approximating pathwidth for graphs of small treewidth",
+    "paper_authors": [
+      "Carla Groenland",
+      "Gwenaël Joret",
+      "Wojciech Nadara",
+      "Bartosz Walczak"
+    ],
+    "published": "2022-12-08",
+    "abs_url": "https://arxiv.org/abs/2008.00779",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Dean's Problem on FPT Pathwidth Parameterized by Treewidth",
+    "statement_text": "Is pathwidth fixed-parameter tractable when parameterized by treewidth? That is, does there exist a computable function $f$ and an algorithm that computes $\\mathrm{pw}(G)$ for an $n$-vertex graph $G$ in $f(\\mathrm{tw}(G)) \\cdot n^{O(1)}$ time?",
+    "context_text": "First raised by Dean, this long-standing open problem asks whether pathwidth can be computed exactly in FPT time parameterized by treewidth. The known XP algorithm of Bodlaender and Kloks runs in $n^{f(\\mathrm{tw}(G))}$ time, which is not FPT.",
+    "attributed_to": "Dean",
+    "attributed_year": null,
+    "paper_contribution": "Partially addresses the problem by providing the first polynomial-time approximation algorithm for pathwidth whose ratio depends only on treewidth, achieving an $O(\\mathrm{tw}(G)\\sqrt{\\log \\mathrm{tw}(G)})$-approximation; described as a step toward the exact FPT question.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2008.00779",
+    "paper_title": "Approximating pathwidth for graphs of small treewidth",
+    "paper_authors": [
+      "Carla Groenland",
+      "Gwenaël Joret",
+      "Wojciech Nadara",
+      "Bartosz Walczak"
+    ],
+    "published": "2022-12-08",
+    "abs_url": "https://arxiv.org/abs/2008.00779",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Fomin–Thilikos Open Problem on Approximating Pathwidth Parameterized by Treewidth",
+    "statement_text": "Is there a polynomial-time algorithm that approximates the pathwidth of an $n$-vertex graph $G$ to within a factor $g(\\mathrm{tw}(G))$ for some function $g$, with running time polynomial in $n$?",
+    "context_text": "Fomin and Thilikos observed that even obtaining any approximation of pathwidth when parameterized by treewidth (with polynomial running time in $n$) was open, complementing the exact FPT question of Dean.",
+    "attributed_to": "Fomin and Thilikos",
+    "attributed_year": null,
+    "paper_contribution": "Fully resolves the problem: gives a polynomial-time $O(\\mathrm{tw}(G)\\sqrt{\\log \\mathrm{tw}(G)})$-approximation algorithm for pathwidth, with running time polynomial in the graph size.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "Problem is stated informally in the introduction without a labelled environment; paper describes its algorithm as 'a solution to the latter problem (in a strong sense)'.",
+    "arxiv_id": "2008.00779",
+    "paper_title": "Approximating pathwidth for graphs of small treewidth",
+    "paper_authors": [
+      "Carla Groenland",
+      "Gwenaël Joret",
+      "Wojciech Nadara",
+      "Bartosz Walczak"
+    ],
+    "published": "2022-12-08",
+    "abs_url": "https://arxiv.org/abs/2008.00779",
+    "source": "pdf"
+  }
+]

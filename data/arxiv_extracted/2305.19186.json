@@ -1,0 +1,23 @@
+[
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Problem 1 (Brass et al.)",
+    "statement_text": "Is there a set $\\mathcal{G} = \\{G_1, G_2\\}$ consisting of two planar graphs of the same order such that $\\mathcal{G}$ is not simultaneously embeddable?",
+    "context_text": "A set of planar graphs of the same order with no simultaneous embedding is called a conflict collection. This problem asks whether a conflict collection of the smallest conceivable size — just two graphs — can exist. It was posed in 2007 and remains widely open; the function $\\sigma(n)$ denotes the smallest size of a conflict collection of $n$-vertex planar graphs, and Problem 1 is equivalent to asking whether $\\sigma(n) = 2$ for some $n$.",
+    "attributed_to": "Brass, Cenek, Duncan, Efrat, Erten, Ismailescu, Kobourov, Lubiw and Mitchell",
+    "attributed_year": 2007,
+    "paper_contribution": "Proves that $\\sigma(n) \\leq (3+o(1))\\log_2(n)$, a double-exponential improvement over the previous best bound of $O(n \\cdot 4^{n/11})$, and gives a computer-free proof that a conflict collection of size 30 exists; the existence of a conflict collection of size 2 remains open.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2305.19186",
+    "paper_title": "A logarithmic bound for simultaneous embeddings of planar graphs",
+    "paper_authors": [
+      "Raphael Steiner"
+    ],
+    "published": "2023-09-13",
+    "abs_url": "https://arxiv.org/abs/2305.19186",
+    "source": "pdf"
+  }
+]

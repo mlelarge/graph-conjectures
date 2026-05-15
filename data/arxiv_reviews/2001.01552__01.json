@@ -1,0 +1,22 @@
+{
+  "review_id": "2001.01552__01",
+  "safe_id": "2001.01552",
+  "arxiv_id": "2001.01552",
+  "conjecture_title": "Informal conjecture: negative answer to Question 6",
+  "paper_title": "Sublinear separators in intersection graphs of convex shapes",
+  "published": "2020-01-06",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "No follow-up paper resolving this conjecture was found in a search of the published literature. The informal suspicion — that there exist graphs with $\\mathrm{col}_r(G)$ polynomially bounded in $r$ that admit no $(c,\\sqsubseteq_s)$-tame representation in any $\\mathbb{R}^d$ — remains unresolved as of May 2026. Related work (SoCG 2022) has studied weak and strong coloring numbers of geometric intersection graphs and found classes with polynomial strong coloring numbers but exponential weak coloring numbers, which is thematically adjacent but does not address the tame-representation question directly.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Dvorak McCarty Norin \"sublinear separators\" \"intersection graphs\" convex shapes tame representation 2001.01552",
+    "col_r graph \"tame representation\" \"r-coloring number\" polynomial sublinear separator conjecture",
+    "Dvorak Norin McCarty \"Question 6\" \"tame\" coloring number convex shapes arXiv 2001"
+  ],
+  "notes": "No follow-up directly addressing the negative-answer conjecture for Question 6 was found after 5 web calls. The SoCG 2022 paper 'Weak Coloring Numbers of Intersection Graphs' (drops.dagstuhl.de/entities/document/10.4230/LIPIcs.SoCG.2022.39) studies related parameters but does not resolve the tame-representation question. Confidence is medium rather than high because the conjecture dates from 2020 (6 years old), so absence of indexed evidence is somewhat suspicious."
+}

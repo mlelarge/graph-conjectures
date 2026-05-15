@@ -1,0 +1,24 @@
+{
+  "review_id": "2107.02882__00",
+  "safe_id": "2107.02882",
+  "arxiv_id": "2107.02882",
+  "conjecture_title": "Open problem: no-kernel lower bound at twin-width 4 for Connected/Total k-Dominating Set",
+  "paper_title": "Twin-width and polynomial kernels",
+  "published": "2021-09-14",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The source paper (arXiv:2107.02882) establishes that Connected k-Dominating Set and Total k-Dominating Set have no polynomial kernel on graphs of bounded twin-width via local gadget modifications of their main reduction, but with a worse upper bound on the twin-width than 4. The open problem asks whether the twin-width bound can be brought down to exactly 4 (matching the result for plain k-Dominating Set in Theorem 1). No follow-up paper resolving this specific question was found in five targeted web searches covering the period 2021–2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "twin-width \"polynomial kernel\" \"Connected k-Dominating Set\" \"Total k-Dominating Set\" arxiv 2107.02882",
+    "twin-width 4 \"no polynomial kernel\" \"k-dominating set\" parameterized complexity 2022 2023 2024 2025",
+    "twin-width \"connected dominating\" OR \"total dominating\" kernel lower bound coNP NP/poly arxiv 2022 2023 2024 2025",
+    "Bonnet Reinald Thomassé Watrigant twin-width kernelization dominating set 2023 2024 2025 arxiv",
+    "WebFetch: https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.MFCS.2025.13 (Solving Partial Dominating Set Using Twin-Width, MFCS 2025)"
+  ],
+  "notes": "No follow-up paper resolving or partially addressing this open problem was found. The MFCS 2025 paper on dominating set variants and twin-width (LIPIcs.MFCS.2025.13) addresses FPT algorithms rather than kernelization lower bounds and is unrelated. The conjecture is open with high confidence."
+}

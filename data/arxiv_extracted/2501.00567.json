@@ -1,0 +1,68 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.1 (Kelly–Postle)",
+    "statement_text": "For every triangle-free graph there exists a probability distribution on its independent sets such that every vertex $v\\in V(G)$ appears with probability at least $(1-o(1))\\frac{\\ln d_{G}(v)}{d_{G}(v)}$ in a random independent set chosen from the distribution. Here, the $o(1)$ term represents any function that tends to $0$ as the degree grows.",
+    "context_text": "Posed by Kelly and Postle in 2018 as a 'local strengthening' of Shearer's bounds and a degree-sequence generalization of Molloy's bound for fractional coloring. The distribution it posits recovers Shearer's second (stronger) lower bound on the independence number up to lower-order terms, while additionally guaranteeing that every individual vertex is covered with high probability by the random independent set.",
+    "attributed_to": "Kelly and Postle",
+    "attributed_year": 2018,
+    "paper_contribution": "Proves the conjecture in full: for every triangle-free graph there exists a probability distribution on independent sets such that every vertex $v$ is contained with probability $(1-o(1))\\frac{\\ln d_{G}(v)}{d_{G}(v)}$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Referred to in [35] as Conjecture 2.2 / Proposition 1.4; described in the abstract as the 'main conjecture' resolved by this paper.",
+    "arxiv_id": "2501.00567",
+    "paper_title": "Local Shearer bound",
+    "paper_authors": [
+      "Anders Martinsson",
+      "Raphael Steiner"
+    ],
+    "published": "2024-12-31",
+    "abs_url": "https://arxiv.org/abs/2501.00567",
+    "source": "html"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.3 (Cames van Batenburg et al.)",
+    "statement_text": "As $n\\rightarrow\\infty$, every triangle-free graph on $n$ vertices has fractional chromatic number at most $(\\sqrt{2}+o(1))\\sqrt{\\frac{n}{\\ln n}}$.",
+    "context_text": "Raised in 2018 by Cames van Batenburg, de Joannis de Verclos, Kang, and Pirot, motivated by Erdős's question on the maximum chromatic number of triangle-free graphs and its connection to the Ramsey number $R(3,k)$. Prior to this paper, the best known upper bound on $\\chi_f$ for triangle-free graphs on $n$ vertices was $(2+o(1))\\sqrt{\\frac{n}{\\ln n}}$, established by the same authors.",
+    "attributed_to": "Cames van Batenburg, de Joannis de Verclos, Kang, and Pirot",
+    "attributed_year": 2018,
+    "paper_contribution": "Confirms the conjecture by combining the paper's proof of Conjecture 1.1 with a connection between the two conjectures established by Kelly and Postle [35, Proposition 5.2].",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Corresponds to Conjecture 4.3 in [12] (Cames van Batenburg et al., Electron. J. Combin. 2020).",
+    "arxiv_id": "2501.00567",
+    "paper_title": "Local Shearer bound",
+    "paper_authors": [
+      "Anders Martinsson",
+      "Raphael Steiner"
+    ],
+    "published": "2024-12-31",
+    "abs_url": "https://arxiv.org/abs/2501.00567",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.7",
+    "statement_text": "Every triangle-free graph $G$ satisfies $\\chi(G)\\leq(1+o(1))\\frac{\\rho(G)}{\\ln\\rho(G)}$.",
+    "context_text": "Motivated by Harris's conjecture [27] that every triangle-free $d$-degenerate graph satisfies $\\chi_f(G)\\leq O(\\frac{d}{\\ln d})$ and by Molloy's bound $(1+o(1))\\frac{\\Delta(G)}{\\ln\\Delta(G)}$ in terms of the maximum degree. Since the spectral radius $\\rho(G)$ is sandwiched between the degeneracy and the maximum degree, Theorem 1.6 of this paper (a new spectral upper bound on $\\chi_f$) is presented as a first step toward interpolating between these two regimes.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2501.00567",
+    "paper_title": "Local Shearer bound",
+    "paper_authors": [
+      "Anders Martinsson",
+      "Raphael Steiner"
+    ],
+    "published": "2024-12-31",
+    "abs_url": "https://arxiv.org/abs/2501.00567",
+    "source": "html"
+  }
+]

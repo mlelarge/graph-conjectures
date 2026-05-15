@@ -1,0 +1,33 @@
+{
+  "review_id": "2202.11988__00",
+  "safe_id": "2202.11988",
+  "arxiv_id": "2202.11988",
+  "conjecture_title": "Conjecture 3",
+  "paper_title": "Exact Matching in Graphs of Bounded Independence Number",
+  "published": "2022-07-13",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "solved",
+  "confidence": "high",
+  "summary": "Conjecture 3 from arXiv:2202.11988, asserting that counting perfect matchings in graphs of independence number at most 2 is #P-complete, was resolved by El Maalouly and Wang in arXiv:2210.15014 (October 2022). Their paper proves #P-completeness for both general graphs with independence number ≤ 2 and bipartite graphs with bipartite independence number ≤ 2, via reductions from counting perfect matchings in bipartite graphs using graph-theoretic constructions.",
+  "since_posted": [
+    {
+      "title": "Counting Perfect Matchings in Dense Graphs Is Hard",
+      "authors": "Nicolas El Maalouly, Yanheng Wang",
+      "year": 2022,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2210.15014",
+      "arxiv_id": "2210.15014",
+      "doi": null,
+      "kind": "proof",
+      "claim": "Proves that counting perfect matchings is #P-complete when restricted to graphs with independence number at most 2 (and bipartite graphs with bipartite independence number at most 2), directly resolving the conjecture."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "counting perfect matchings independence number 2 #P-complete El Maalouly Steiner",
+    "arxiv 2202.11988 exact matching independence number counting #P"
+  ],
+  "notes": "The conjecture was resolved by a follow-up paper by one of the original authors (El Maalouly) together with Wang, submitted approximately three months after the conjecture paper's final arXiv revision. Both papers are from 2022."
+}

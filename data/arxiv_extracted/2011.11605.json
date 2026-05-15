@@ -1,0 +1,23 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Lichiardopol's Conjecture (Conjecture 2)",
+    "statement_text": "For every $k \\in \\mathbb{N}$ there exists an integer $g(k) \\in \\mathbb{N}$ such that every digraph $D$ with $\\delta^+(D) \\geq g(k)$ contains $k$ vertex-disjoint directed cycles of pairwise distinct lengths.",
+    "context_text": "Lichiardopol [17] proved that every digraph with $\\delta^+(D) \\geq 4$ contains two vertex-disjoint directed cycles of distinct lengths, and conjectured this far-reaching qualitative generalization. The conjecture remains open even for $k = 3$; earlier work verified it for tournaments, regular digraphs, and digraphs of small order.",
+    "attributed_to": "Lichiardopol",
+    "attributed_year": null,
+    "paper_contribution": "Proves the conjecture for strongly $s(k)$-connected digraphs for every $k$ (Theorem 3), and establishes the existence of an integer $K$ such that every digraph with $\\delta^+(D), \\delta^-(D) \\geq K$ contains three vertex-disjoint directed cycles of pairwise distinct lengths (Theorem 5), making progress on the open case $k = 3$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Section 5, which the paper states contains a closing conjecture by the paper's own authors, is not included in the provided text and could not be extracted.",
+    "arxiv_id": "2011.11605",
+    "paper_title": "Disjoint cycles with length constraints in digraphs of large connectivity or minimum degree",
+    "paper_authors": [
+      "Raphael Steiner"
+    ],
+    "published": "2020-11-23",
+    "abs_url": "https://arxiv.org/abs/2011.11605",
+    "source": "pdf"
+  }
+]

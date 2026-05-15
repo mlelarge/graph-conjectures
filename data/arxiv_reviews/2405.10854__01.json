@@ -1,0 +1,21 @@
+{
+  "review_id": "2405.10854__01",
+  "safe_id": "2405.10854",
+  "arxiv_id": "2405.10854",
+  "conjecture_title": "Conjecture 11",
+  "paper_title": "Strong log-convexity of genus sequences",
+  "published": "2025-12-27",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 11 from arXiv:2405.10854 proposes that every graph triangulating some surface has log-concave genus distribution. It was introduced by Mohar as a plausible strengthening of unimodality (Conjecture 10) and a positive replacement for the disproved Gross–Robbins–Tucker LCGD Conjecture. The paper (originally submitted May 2024, revised December 2025) is very recent, and no follow-up work resolving or partially addressing this specific conjecture was found in the indexed literature.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "log-concave genus distribution triangulates surface graph Mohar 2405.10854",
+    "genus distribution log-concavity triangulation graph surface 2025 2026"
+  ],
+  "notes": "No follow-up found in web searches or by checking citing papers. The conjecture is very recent (2024/2025) and highly specific — restricted to graphs that triangulate some surface — which distinguishes it from the general LCGD Conjecture disproved in the same paper. The paper arXiv:2212.09971 (Annals of Combinatorics 2025) on non-log-concave cubic genus polynomials does not cite 2405.10854 and predates it."
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Linial's Problem on Topological Turán Numbers for 3-Graphs",
+    "statement_text": "For any 3-graph $H$, does there exist a constant $C_H > 0$ such that any $n$-vertex 3-graph with at least $C_H n^{\\alpha}$ edges (for some universal exponent $\\alpha$ independent of $H$) contains a homeomorphic copy of $H$?",
+    "context_text": "This is the 3-graph analogue of Mader's classical theorem for graphs. Linial raised this question in 2006 as part of the high-dimensional combinatorics programme; while answers were known for a few specific 3-graphs, no general result in the spirit of Mader's theorem was previously known.",
+    "attributed_to": "Linial",
+    "attributed_year": 2006,
+    "paper_contribution": "Proves Theorem 1.1, establishing that the universal exponent $\\alpha = 3 - 1/5$ suffices: any $n$-vertex 3-graph with at least $C_H n^{3-1/5}$ edges contains a homeomorph of $H$, with $C_H = 2000\\,v(H)^6$ for all sufficiently large $n$.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "The problem is not stated as a formal labelled environment in the paper; it is described in the introduction as 'an old problem of Linial from 2006' with citations [8,9]. The exact original formulation is paraphrased here.",
+    "arxiv_id": "2004.02657",
+    "paper_title": "A universal exponent for homeomorphs",
+    "paper_authors": [
+      "Peter Keevash",
+      "Jason Long",
+      "Bhargav Narayanan",
+      "Alex Scott"
+    ],
+    "published": "2020-04-06",
+    "abs_url": "https://arxiv.org/abs/2004.02657",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.2",
+    "statement_text": "For each 3-graph $H$, there exists $C_H > 0$ such that any 3-graph $G$ on $n$ vertices with at least $C_H n^{5/2}$ edges contains a homeomorph of $H$.",
+    "context_text": "The paper proves the exponent $3-1/5$ is universal but does not believe it to be tight. The conjectured optimal exponent $5/2 = 3 - 1/2$ is motivated by the Brown–Erdős–Sós result that $5/2$ is the correct exponent for the sphere $S^2$ (i.e., $K^3_4$), and by the analogy that homeomorphs in 3-graphs should appear roughly once spheres (homeomorphs of $S^2$) can be found, just as homeomorphs in graphs appear roughly once cycles (homeomorphs of $S^1$) can be found.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2004.02657",
+    "paper_title": "A universal exponent for homeomorphs",
+    "paper_authors": [
+      "Peter Keevash",
+      "Jason Long",
+      "Bhargav Narayanan",
+      "Alex Scott"
+    ],
+    "published": "2020-04-06",
+    "abs_url": "https://arxiv.org/abs/2004.02657",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Torus Homeomorph Turán Problem (Linial)",
+    "statement_text": "Determine the minimum number of edges in an $n$-vertex 3-graph that guarantees a homeomorphic copy of a triangulation of the torus.",
+    "context_text": "This is the specialisation of Conjecture 1.2 to $H$ being a triangulation of the torus. The authors note that even this specific case remains open and has been reiterated by Linial on multiple occasions as a natural starting point, since the Brown–Erdős–Sós arguments are specific to 'double-pyramidal' complexes such as the sphere.",
+    "attributed_to": "Linial",
+    "attributed_year": null,
+    "paper_contribution": "Theorem 1.1 implies the torus homeomorph Turán number is $O(n^{3-1/5})$; the conjectured correct order is $\\Theta(n^{5/2})$.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "Stated in prose without a labelled environment; attributed to Linial via citations [8,9] but no specific year is recoverable from the provided text.",
+    "arxiv_id": "2004.02657",
+    "paper_title": "A universal exponent for homeomorphs",
+    "paper_authors": [
+      "Peter Keevash",
+      "Jason Long",
+      "Bhargav Narayanan",
+      "Alex Scott"
+    ],
+    "published": "2020-04-06",
+    "abs_url": "https://arxiv.org/abs/2004.02657",
+    "source": "pdf"
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "review_id": "2104.11626__00",
+  "safe_id": "2104.11626",
+  "arxiv_id": "2104.11626",
+  "conjecture_title": "Informal Conjecture on similar growth of $N_{DFL}(\\varepsilon)$ and $1/\\delta_{TRL}(\\varepsilon)$",
+  "paper_title": "Removal lemmas and approximate homomorphisms",
+  "published": "2022-01-13",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The conjecture that $N_{DFL}(\\varepsilon)$ and $1/\\delta_{TRL}(\\varepsilon)$ have similar growth remains open as of May 2026. No follow-up paper resolving or substantially advancing this informal conjecture was found in the literature. The gap between the known lower bound $(1/\\varepsilon)^{c\\log(1/\\varepsilon)}$ (from the Behrend construction) and the upper bound tower$(O(\\log(1/\\varepsilon)))$ (Fox) remains unresolved. A 2025 paper (arXiv:2507.05231) improves the constant in the lower-bound construction for the triangle removal lemma but does not address the specific comparison between $N_{DFL}$ and $1/\\delta_{TRL}$.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Fox Zhao \"removal lemmas\" \"approximate homomorphisms\" 2104.11626 N_DFL delta_TRL growth",
+    "arxiv 2104.11626 Fox Zhao \"triangle removal lemma\" \"Behrend\" tower bound similar growth",
+    "Fox Zhao \"approximate homomorphisms\" \"dense graph\" \"removal\" N_DFL delta_TRL subexponential 2022 2023 2024 follow-up",
+    "\"triangle-free lemma\" \"removal lemma\" bounds tower subexponential 2023 2024 2025 Fox Zhao arxiv"
+  ],
+  "notes": "No follow-up found that directly addresses the conjecture. The paper arXiv:2507.05231 ('An improved construction for the triangle removal lemma', 2025) is tangentially related—it improves the constant in the lower-bound construction showing $1/\\delta_{TRL}(\\varepsilon) \\geq (1/\\varepsilon)^{C_{\\rm new}\\log_2(1/\\varepsilon)}$—but does not address the comparison with $N_{DFL}(\\varepsilon)$. The conjecture is phrased informally ('We suspect') and is likely a long-horizon open problem given the difficulty of the existing bounds."
+}

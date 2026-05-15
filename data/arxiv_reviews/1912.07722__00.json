@@ -1,0 +1,22 @@
+{
+  "review_id": "1912.07722__00",
+  "safe_id": "1912.07722",
+  "arxiv_id": "1912.07722",
+  "conjecture_title": "Problem 1.1",
+  "paper_title": "Acyclic subgraphs of tournaments with high chromatic number",
+  "published": "2024-05-30",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Problem 1.1 asks for the exact growth rate of f(k), the minimum chromatic number of an oriented graph that guarantees an acyclic k-chromatic subgraph. The best known upper bound remains f(k) ≤ k² - 2k + 2 and the best known lower bound is f(k) ≥ 1 + ⌊√(k-1)⌋, leaving a large gap. The closely related arXiv:2512.21950 (Yuster, 2025) extends the Fox-Kwan-Sudakov tournament result to general digraphs with bounded bipartite independence number but does not address the f(k) question for oriented graphs. No resolution of Problem 1.1 was found in the indexed literature.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Fox Kwan Sudakov acyclic subgraph oriented graph chromatic number 1912.07722",
+    "acyclic k-chromatic subgraph oriented graph f(k) chromatic number Burr conjecture",
+    "acyclic subgraph chromatic number oriented graph f(k) subquadratic bound 2024 2025"
+  ],
+  "notes": "No paper resolving Problem 1.1 was found. The related arXiv:2512.21950 (Yuster, 2025, published in European Journal of Combinatorics) extends Fox-Kwan-Sudakov's tournament result to general digraphs with bounded bipartite independence number and mentions f(k) in passing (noting f(k) ≥ 1+⌊√(k-1)⌋), but its main contribution is the vertex-count setting, not the chromatic-number formulation of Problem 1.1. The upper bound f(k) ≤ k²-2k+2 from the source paper appears to remain the best known."
+}

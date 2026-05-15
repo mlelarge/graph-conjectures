@@ -1,0 +1,28 @@
+[
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Open Problem (Bravyi et al. [2])",
+    "statement_text": "Does there exist a $k$-pairable state of size $n = \\mathrm{poly}(k)$?",
+    "context_text": "Bravyi et al. constructed $k$-pairable states of size exponential in $k$, namely $n = 2^{3k}$, using Reed–Muller codes, and left the existence of a $k$-pairable state of size $n = \\mathrm{poly}(k)$ as an open problem. This paper addresses this question in the more general setting of $k$-stabilizer universal graph states.",
+    "attributed_to": "Bravyi, Sharma, Szegedy, and de Wolf",
+    "attributed_year": 2023,
+    "paper_contribution": "Provides two explicit constructions of $k$-stabilizer universal graph states (a generalisation of $k$-pairable states) on $n = O(k^{4})$ qubits using the incidence graph of the projective plane over a finite field $\\mathbb{F}_{q}$, giving a polynomial improvement over the previously known explicit $n = O(2^{3k})$ construction.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "The open problem is stated verbatim in the introduction: 'leaving the existence of a k-pairable states of size n=poly(k) as an open problem'. Attribution is to reference [2] (Bravyi et al., Quantum Information Processing, 2023, arXiv:2211.06497).",
+    "arxiv_id": "2402.06260",
+    "paper_title": "Vertex-minor universal graphs for generating entangled quantum subsystems",
+    "paper_authors": [
+      "Maxime Cautrès",
+      "Nathan Claudet",
+      "Mehdi Mhalla",
+      "Simon Perdrix",
+      "Valentin Savin",
+      "Stéphan Thomassé"
+    ],
+    "published": "2024-05-14",
+    "abs_url": "https://arxiv.org/abs/2402.06260",
+    "source": "html"
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Ito-Kakimura-Kamiyama-Kobayashi-Okamoto Conjecture",
+    "statement_text": "There exists a constant-factor approximation algorithm for the problem of finding a shortest path between two perfect matchings on the perfect matching polytope of a bipartite graph.",
+    "context_text": "Ito, Kakimura, Kamiyama, Kobayashi, and Okamoto proved a 3/2-inapproximability result for shortest paths on perfect matching polytopes of bipartite graphs, yet conjectured that a constant-factor polynomial-time approximation algorithm still exists. This conjecture is the central target of the present paper, which disproves it.",
+    "attributed_to": "Ito, Kakimura, Kamiyama, Kobayashi, and Okamoto",
+    "attributed_year": 2022,
+    "paper_contribution": "Disproves the conjecture under P $\\neq$ NP by showing that for every fixed integer $k \\geq 2$ no polynomial-time algorithm can output a path of length at most $k$ between two vertices at distance 2 of the perfect matching polytope of a bipartite graph; under ETH this is strengthened to show no polynomial-time algorithm can achieve approximation ratio less than $\\left(\\frac{1}{4}-o(1)\\right)\\frac{\\log N}{\\log\\log N}$ on $N$-vertex instances.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "The conjecture is stated in running prose in the introduction without a labelled theorem environment; the statement above is a direct transcription of the paper's own description of it.",
+    "arxiv_id": "2210.14608",
+    "paper_title": "Inapproximability of shortest paths on perfect matching polytopes",
+    "paper_authors": [
+      "Jean Cardinal",
+      "Raphael Steiner"
+    ],
+    "published": "2022-10-26",
+    "abs_url": "https://arxiv.org/abs/2210.14608",
+    "source": "pdf"
+  }
+]

@@ -1,0 +1,33 @@
+{
+  "review_id": "2503.20045__03",
+  "safe_id": "2503.20045",
+  "arxiv_id": "2503.20045",
+  "conjecture_title": "Question 4.2",
+  "paper_title": "Orientations of cycles in digraphs of high chromatic number and high minimum out-degree",
+  "published": "2025-03-25",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Question 4.2 defines the directed chromatic threshold ε_H for a fixed digraph H as the minimum ε ≥ 0 such that digraphs with sufficiently high chromatic number and minimum out-degree at least ε|V(D)| must contain H as a subdigraph. The source paper itself settles the ε_H = 0 case for orientations of cycles (Theorem 1.3); the general question for arbitrary digraphs H remains open. A September 2025 follow-up (arXiv:2509.07760) studies the closely related notion of chromatic profiles δ_χ^+(H, k) for oriented cycles, proving exact thresholds for transitive tournaments and specific oriented cycles, and explicitly cites the source paper—but does not resolve Question 4.2 in general.",
+  "since_posted": [
+    {
+      "title": "A directed Andrásfai-Erdős-Sós theorem and chromatic profiles of oriented cycles",
+      "authors": "unverified (not extracted from fetch)",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2509.07760",
+      "arxiv_id": "2509.07760",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Introduces and studies chromatic profiles δ_χ^+(H, k) for oriented cycles—a refinement of the directed chromatic threshold—proving exact out-degree thresholds for transitive tournaments and several oriented cycles; cites arXiv:2503.20045 for the ε_H = 0 characterisation but does not resolve ε_H for general digraphs H."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Koerts Moore Spirkl \"directed chromatic threshold\" digraph 2503.20045",
+    "directed chromatic threshold digraph \"minimum out-degree\" chromatic number subdigraph 2025 2026"
+  ],
+  "notes": "Question 4.2 is a broad open research question rather than a specific conjecture: it asks for ε_H for every fixed digraph H. The source paper itself resolves the ε_H = 0 case for oriented cycles. The closely related chromatic profile δ_χ^+(H, k) studied in arXiv:2509.07760 provides partial progress on the structure of the threshold for specific oriented cycles. The source paper was published in Combinatorica (Springer, 2026, doi:10.1007/s00493-026-00207-0)."
+}

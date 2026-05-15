@@ -1,0 +1,140 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Ryser's Conjecture (Conjecture 1.1)",
+    "statement_text": "Every $r$-partite $r$-uniform hypergraph $\\mathcal{H}$ satisfies $$\\tau(\\mathcal{H})\\leq(r-1)\\nu(\\mathcal{H}).$$",
+    "context_text": "Attributed to Herbert Ryser and appearing in Henderson's 1971 PhD thesis, this conjecture generalises Kőnig's theorem to $r$-partite $r$-uniform hypergraphs. It was proved for $r=3$ by Aharoni in 2001 and remains open for all $r\\geq 4$.",
+    "attributed_to": "Ryser",
+    "attributed_year": 1971,
+    "paper_contribution": "The paper disproves Lovász's Conjecture 1.2 (which would have implied Ryser's conjecture via iterated matching-number reduction), thereby ruling out one proposed proof route; Ryser's conjecture itself remains open for $r\\geq 4$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2505.05339",
+    "paper_title": "A Counterexample to a Conjecture of Lovász",
+    "paper_authors": [
+      "Alexander Clow",
+      "Penny Haxell",
+      "Bojan Mohar"
+    ],
+    "published": "2025-06-10",
+    "abs_url": "https://arxiv.org/abs/2505.05339",
+    "source": "html"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Lovász Conjecture (Conjecture 1.2)",
+    "statement_text": "Every $r$-partite, $r$-uniform hypergraph with at least one edge contains $r-1$ vertices whose deletion reduces the matching number.",
+    "context_text": "Conjectured by Lovász in 1975 as a strengthening of Ryser's conjecture: if true, it would yield a vertex cover of size $(r-1)\\nu(\\mathcal{H})$ by iterative application. It was widely circulated through Füredi's 1988 survey on matchings and covers in hypergraphs.",
+    "attributed_to": "Lovász",
+    "attributed_year": 1975,
+    "paper_contribution": "Disproves the conjecture for $r=3$ by exhibiting the line hypergraph of the Biggs-Smith graph (a cubic edge-transitive graph on 102 vertices) as an explicit counterexample; a second counterexample, the line hypergraph of the graph F168D on 168 vertices, is also identified.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2505.05339",
+    "paper_title": "A Counterexample to a Conjecture of Lovász",
+    "paper_authors": [
+      "Alexander Clow",
+      "Penny Haxell",
+      "Bojan Mohar"
+    ],
+    "published": "2025-06-10",
+    "abs_url": "https://arxiv.org/abs/2505.05339",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Question 4.1",
+    "statement_text": "Do there exist infinitely many $3$-edge colourable cubic graphs $G$ such that for all edges $(u,v),(x,y)\\in E(G)$, [remainder of condition not captured in source]",
+    "context_text": "The authors verified computationally that the Biggs-Smith graph is the unique cubic edge-transitive graph on at most 166 vertices satisfying the key lemma's conclusion, and that F168D is the only other such graph on at most 300 vertices. This question asks whether infinitely many such graphs exist.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "low",
+    "notes": "Statement truncated in source data — the condition following 'for all edges $(u,v),(x,y)\\in E(G)$' was not captured; likely a PDF extraction issue.",
+    "arxiv_id": "2505.05339",
+    "paper_title": "A Counterexample to a Conjecture of Lovász",
+    "paper_authors": [
+      "Alexander Clow",
+      "Penny Haxell",
+      "Bojan Mohar"
+    ],
+    "published": "2025-06-10",
+    "abs_url": "https://arxiv.org/abs/2505.05339",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Question 4.2",
+    "statement_text": "Does there exist a $d$-regular $d$-edge colourable graph $G$ where $d\\geq 4$ such that for all edges $(u_{1},v_{1}),\\dots,(u_{d-1},v_{d-1})\\in E(G)$, [remainder of condition not captured in source]",
+    "context_text": "After finding only two counterexamples to Lovász's conjecture among line hypergraphs of cubic graphs, the authors ask whether counterexamples exist for higher regularity $d\\geq 4$, generalising the $r=3$ construction.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "low",
+    "notes": "Statement truncated in source data — the condition following the list of edges was not captured; likely a PDF extraction issue.",
+    "arxiv_id": "2505.05339",
+    "paper_title": "A Counterexample to a Conjecture of Lovász",
+    "paper_authors": [
+      "Alexander Clow",
+      "Penny Haxell",
+      "Bojan Mohar"
+    ],
+    "published": "2025-06-10",
+    "abs_url": "https://arxiv.org/abs/2505.05339",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 4.3",
+    "statement_text": "For every $r$-partite $r$-uniform hypergraph $\\mathcal{H}$ there exists some $k$ with $1\\leq k\\leq r-1$ such that $\\mathcal{H}$ contains $k(r-1)$ vertices whose deletion reduces the matching number by at least $k$.",
+    "context_text": "Proposed as a weakening of Lovász's (now disproved) conjecture that still implies Ryser's conjecture. The authors verified it holds for the line hypergraph of the Biggs-Smith graph, and note that only two counterexamples to Lovász's original conjecture are known, suggesting a slightly weaker statement may be true.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2505.05339",
+    "paper_title": "A Counterexample to a Conjecture of Lovász",
+    "paper_authors": [
+      "Alexander Clow",
+      "Penny Haxell",
+      "Bojan Mohar"
+    ],
+    "published": "2025-06-10",
+    "abs_url": "https://arxiv.org/abs/2505.05339",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Question 4.4",
+    "statement_text": "Is it true that if $\\mathcal{L}$ is the line hypergraph of an $r$-regular $r$-edge colourable Cayley graph, then $\\mathcal{L}$ contains $r-1$ vertices whose deletion reduces its matching number?",
+    "context_text": "Both known counterexamples to Lovász's conjecture (the Biggs-Smith graph and F168D) are non-Cayley graphs. The authors observe that while symmetry aids in identifying counterexamples, it is unclear why not being a Cayley graph is relevant, motivating this restricted version of Lovász's conjecture.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2505.05339",
+    "paper_title": "A Counterexample to a Conjecture of Lovász",
+    "paper_authors": [
+      "Alexander Clow",
+      "Penny Haxell",
+      "Bojan Mohar"
+    ],
+    "published": "2025-06-10",
+    "abs_url": "https://arxiv.org/abs/2505.05339",
+    "source": "html"
+  }
+]

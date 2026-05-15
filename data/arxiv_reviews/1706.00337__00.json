@@ -1,0 +1,23 @@
+{
+  "review_id": "1706.00337__00",
+  "safe_id": "1706.00337",
+  "arxiv_id": "1706.00337",
+  "conjecture_title": "Problem 3",
+  "paper_title": "Triangle-free graphs of tree-width t are ceil((t + 3)/2)-colorable",
+  "published": "2017-06-09",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "Problem 3 of Dvořák–Kawarabayashi (arXiv:1706.00337) asks for the exact maximum chromatic number of K_k-free graphs of tree-width at most t for k≥4, generalising their tight answer ⌈(t+3)/2⌉ for k=3. No paper fully resolving the question for any fixed k≥4 was found. A 2025 paper (Discrete Mathematics, ScienceDirect pii/S0012365X25001037) explicitly addresses the fractional version of the same question—the maximum fractional chromatic number of K_r-free partial t-trees—and may constitute partial progress, but the URL could not be verified (HTTP 403) so it is recorded only in the notes.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "chromatic number K_k-free graphs tree-width Dvorak Kawarabayashi 1706.00337",
+    "chromatic number clique-free bounded treewidth upper bound conjecture 2020 2021 2022 2023 2024",
+    "arxiv \"fractional colorings\" \"partial t-trees\" \"no large clique\" treewidth chromatic number",
+    "arxiv \"fractional colorings of partial t-trees\" Dvorak 2024 2025"
+  ],
+  "notes": "No verified follow-up paper that resolves Problem 3 (k≥4) was found. A 2025 paper titled 'Fractional colorings of partial t-trees with no large clique' (Discrete Mathematics, https://www.sciencedirect.com/science/article/pii/S0012365X25001037) was identified via web search as explicitly addressing the Dvořák–Kawarabayashi question for the fractional chromatic number, but ScienceDirect returned HTTP 403 and no arxiv preprint was located, so it cannot be cited with verified coordinates. If this paper proves tight bounds for the fractional chromatic number of K_r-free partial t-trees, the status might be upgraded to 'partial'. The lower bound g(t,k) > (1 − 1/2^{k−2})t from the source paper remains the best published lower bound known. The problem is open for k≥4 with high probability."
+}

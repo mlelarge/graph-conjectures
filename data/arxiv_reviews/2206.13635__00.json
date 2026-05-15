@@ -1,0 +1,24 @@
+{
+  "review_id": "2206.13635__00",
+  "safe_id": "2206.13635",
+  "arxiv_id": "2206.13635",
+  "conjecture_title": "Conjecture 2",
+  "paper_title": "Coloring hypergraphs with excluded minors",
+  "published": "2024-04-19",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 2 of Steiner (arXiv:2206.13635) — that h(t) = ⌈3/2(t-1)⌉ for all t ≥ 2 — remains open as of 2026. The paper establishes the matching lower bound by construction and proves the conjecture for hypergraphs with independence number at most 2; the best general upper bound is h(t) = O(t log log t) via Delcourt–Postle. Even the t=3 case (asking whether every K_3-minor-free hypergraph is 3-colorable) is open, with a gap between the lower bound of 3 and the best known upper bound of 4. No follow-up paper resolving the full conjecture was found in a wide literature search.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Steiner hypergraph coloring Kt minor chromatic number h(t) 2206.13635",
+    "hypergraph minor-free coloring \"3/2\" ceiling conjecture Steiner 2024",
+    "WebFetch https://arxiv.org/abs/2206.13635",
+    "hypergraph coloring excluded minor Kt-minor-free chromatic 2025 cite Steiner",
+    "WebFetch https://arxiv.org/html/2206.13635"
+  ],
+  "notes": "The paper was first posted June 2022 and published in European Journal of Combinatorics in 2024 (ScienceDirect doi:10.1016/j.ejc.2024.…). The conjecture is proven for the special case of hypergraphs with independence number ≤ 2, and for t ∈ {2,3,4,5,6} the bound χ(H) ≤ 2t-2 holds. The t=3 case (Problem 1 in the paper) is the most immediate open question. No citing paper resolving the conjecture was found."
+}

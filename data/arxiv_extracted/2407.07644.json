@@ -1,0 +1,26 @@
+[
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Letzter–Morrison Problem on asymptotically optimal bounds for $n(\\mathbb{Z}_p^d)$",
+    "statement_text": "Prove an asymptotically optimal upper bound for $n(\\mathbb{Z}_p^d)$, the smallest $n$ such that every $\\mathbb{Z}_p^d$-labelling of the complete digraph on $n$ vertices contains a zero-sum directed cycle.",
+    "context_text": "Letzter and Morrison showed that $n(\\mathbb{Z}_p^d) \\leq O(pd(\\log d)^2)$ and $n(\\mathbb{Z}_2^d) \\leq O(d\\log d)$, significantly improving the general bound $n(\\Gamma)\\leq|\\Gamma|+1$ when $\\Gamma$ is far from cyclic. They then posed the problem of obtaining an asymptotically optimal upper bound for $n(\\mathbb{Z}_p^d)$.",
+    "attributed_to": "Letzter and Morrison",
+    "attributed_year": 2024,
+    "paper_contribution": "Proves improved upper bounds for $n(\\mathbb{Z}_p^d)$, advancing toward the asymptotically optimal bound posed by Letzter and Morrison.",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "The exact statement of the problem as posed by Letzter–Morrison is truncated in the provided abstract excerpt; the problem is clearly identified from context but its full formulation is not fully visible in the supplied content.",
+    "arxiv_id": "2407.07644",
+    "paper_title": "Improved bounds for zero-sum cycles in $\\mathbb{Z}_p^d$",
+    "paper_authors": [
+      "Micha Christoph",
+      "Charlotte Knierim",
+      "Anders Martinsson",
+      "Raphael Steiner"
+    ],
+    "published": "2024-07-10",
+    "abs_url": "https://arxiv.org/abs/2407.07644",
+    "source": "html"
+  }
+]

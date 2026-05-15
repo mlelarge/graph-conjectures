@@ -1,0 +1,44 @@
+{
+  "review_id": "1812.09752__01",
+  "safe_id": "1812.09752",
+  "arxiv_id": "1812.09752",
+  "conjecture_title": "Open question: exact value of $HG(K_{n,n})$",
+  "paper_title": "The hat guessing number of graphs",
+  "published": "2020-01-15",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The exact value of $HG(K_{n,n})$ remains unknown. The source paper established $\\Omega(n^{1/2-o(1)}) = HG(K_{n,n}) \\leq n+1$, with a substantial gap between the bounds. A 2021 follow-up by Alon and Chizewer (arXiv:2107.05995) studies the linear hat guessing number of complete multipartite graphs and restates the question as open, noting a positive answer seems plausible. No subsequent paper resolving the exact value was found in the indexed literature.",
+  "since_posted": [
+    {
+      "title": "On the Hat Guessing Number of Graphs",
+      "authors": "Noga Alon, Jeremy Chizewer",
+      "year": 2021,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2107.05995",
+      "arxiv_id": "2107.05995",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Considers the linear hat guessing number of complete multipartite graphs and restates the question of the exact value of $HG(K_{n,n})$ as open, noting a positive answer seems plausible without proving it."
+    }
+  ],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2107.05995",
+      "verified": true,
+      "note": "WebFetch of the abstract confirms the paper addresses complete multipartite graphs and the linear hat guessing number; full-text details on K_{n,n} bounds were not accessible, consistent with the internal reference description that the question is restated but not resolved."
+    },
+    {
+      "arxiv_id": "2409.01513",
+      "verified": false,
+      "note": "This paper concerns list coloring choosability of bipartite graphs (attributed to Alon and Krivelevich), not hat guessing numbers; it appears to be a false positive match unrelated to HG(K_{n,n})."
+    }
+  ],
+  "search_queries": [
+    "hat guessing number complete bipartite graph K_n,n exact value",
+    "hat guessing number graphs arxiv 1812.09752 follow-up"
+  ],
+  "notes": "The gap between the lower bound $\\Omega(n^{1/2-o(1)})$ and the upper bound $n+1$ remains unresolved. The internal reference 2409.01513 (Bradshaw, Mohar, Stacho on choosability) appears to be a corpus match on bipartite graphs generally, not on hat guessing numbers specifically, and was not verified as relevant."
+}

@@ -1,0 +1,22 @@
+{
+  "review_id": "2510.11311__04",
+  "safe_id": "2510.11311",
+  "arxiv_id": "2510.11311",
+  "conjecture_title": "Question 6.4",
+  "paper_title": "Extending Thomassen's conjecture to directed graphs",
+  "published": "2025-10-13",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Question 6.4 asks whether every orientation of $C_4$ is Eulerian-avoidable, i.e., whether for every orientation $F$ of $C_4$ there exists a function $d_F$ such that every Eulerian digraph of minimum out-degree at least $d_F(k)$ contains an $F$-free subdigraph of minimum out-degree at least $k$. The source paper (arXiv:2510.11311) shows that the anti-directed orientation of $C_4$ (which is the complete bipartite digraph $\\vec{K}_{2,2}$) is not avoidable in the general setting, but leaves the Eulerian-avoidable status of all orientations of $C_4$ open. No follow-up work addressing this specific question was found in a web search conducted in May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Eulerian-avoidable orientation C4 directed graphs Thomassen conjecture 2510.11311",
+    "Eulerian-avoidable digraph C4 orientation 2025 2026 graph theory",
+    "Christoph Janzer Petrova Steiner \"Thomassen\" directed graphs avoidable 2025 2026 arXiv"
+  ],
+  "notes": "No follow-up found. The paper establishes the general (non-Eulerian) framework and shows the anti-directed C4 is not avoidable, but Question 6.4 specifically asks about the Eulerian-restricted setting, which is entirely open. The conjecture is very recent (October 2025) and the absence of follow-up is expected."
+}

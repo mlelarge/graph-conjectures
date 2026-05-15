@@ -1,0 +1,23 @@
+{
+  "review_id": "2407.18800__00",
+  "safe_id": "2407.18800",
+  "arxiv_id": "2407.18800",
+  "conjecture_title": "Conjecture 2",
+  "paper_title": "Towards Characterization of 5-List-Colorability of Toroidal Graphs",
+  "published": "2024-07-26",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The conjecture that a graph drawn on the torus is critical for 5-choosability if and only if it is 6-critical remains open. The source paper (arXiv:2407.18800) establishes this equivalence under the additional assumption that there exists a cyclic system of non-contractible triangles around the torus with consecutive triangles at distance at most four, with K_7 as the sole exceptional case handled separately. A wide web search covering Dvořák's publication record through 2026 found no follow-up paper proving or disproving the full conjecture.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "toroidal graphs 5-choosability 6-critical Dvořák Moreno arXiv 2407.18800",
+    "torus graph critical 5-list-coloring 6-critical equivalence 2024 2025",
+    "Dvořák 5-choosability toroidal critical 2025 arxiv list coloring torus",
+    "Zdeněk Dvořák DBLP publications 2024 2025 2026 toroidal 5-choosability"
+  ],
+  "notes": "The HTML version of the paper labels the criticality formulation as 'Conjecture 3 (equivalent formulation)' while 'Conjecture 2' states the equivalent 'A toroidal graph is 5-choosable if and only if it is 5-colorable'; these are logically equivalent statements. The paper's Theorem 1 resolves a special case (cyclic non-contractible triangle systems of spacing ≤ 4). No resolution of the full conjecture was found in the indexed literature as of May 2026."
+}

@@ -1,0 +1,117 @@
+[
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Problem 1.1",
+    "statement_text": "Determine or estimate the functions \n(i) $m(d)$,     (ii) $m^{\\prime}(d)$,\n    (iii) $f(d)$,\n    (iv) $f_{\\leq 2}(d).$",
+    "context_text": "$Q_d := \\{0,1\\}^d$ is the $d$-dimensional hypercube; $f(d)$ counts partitions of its vertex set into subhypercubes; $m(d)$ and $m^{\\prime}(d)$ count perfect matchings and all matchings respectively. Problem (iii) was originally raised by Gadouleau at the 29th British Combinatorial Conference in 2022; problem (iv) is introduced by the authors as a closely related variant.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "Part (iii) attributed to Gadouleau (2022, unpublished talk); parts (i), (ii), (iv) are the authors' own formulations.",
+    "arxiv_id": "2401.00299",
+    "paper_title": "Partitioning the hypercube into smaller hypercubes",
+    "paper_authors": [
+      "Noga Alon",
+      "Jozsef Balogh",
+      "Vladimir N. Potapov"
+    ],
+    "published": "2024-11-07",
+    "abs_url": "https://arxiv.org/abs/2401.00299",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Problem 1.2",
+    "statement_text": "What is the order of magnitude of the\nfollowing ratios? In particular, which one of them is an\nexponential function of $n$? \n(i) $m^{\\prime}(d)/m(d)$,   (ii) $f_{\\leq 2}(d)/m^{\\prime}(d)$,\n  (iii) $f(d)/f_{\\leq 2}(d),$    (iv) $f(d)/m(d)$.",
+    "context_text": "The hierarchy $m(d) \\leq m^{\\prime}(d) \\leq f_{\\leq 2}(d) \\leq f(d)$ holds by definition, where $n = 2^{d-1}$. The paper proves that $f(d)/m(d)$ (part iv) is exponential in $n$, and shows part (i) is subexponential; parts (ii) and (iii) remain open.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2401.00299",
+    "paper_title": "Partitioning the hypercube into smaller hypercubes",
+    "paper_authors": [
+      "Noga Alon",
+      "Jozsef Balogh",
+      "Vladimir N. Potapov"
+    ],
+    "published": "2024-11-07",
+    "abs_url": "https://arxiv.org/abs/2401.00299",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Problem 1.9",
+    "statement_text": "Determine the asymptotic behaviour of the number $f_{2}(d).$",
+    "context_text": "It is natural to ask what happens if only $2$-dimensional subcubes are allowed in a partition of $Q_d$. The authors believe the same asymptotic bound as given by Proposition 1.7 (for general $r$) holds with $r=2$.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2401.00299",
+    "paper_title": "Partitioning the hypercube into smaller hypercubes",
+    "paper_authors": [
+      "Noga Alon",
+      "Jozsef Balogh",
+      "Vladimir N. Potapov"
+    ],
+    "published": "2024-11-07",
+    "abs_url": "https://arxiv.org/abs/2401.00299",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Informal conjecture on $f_2(d)$",
+    "statement_text": "We believe that the same bound as in Proposition 1.7, with $r=2$, holds [for $f_2(d)$].",
+    "context_text": "Introduced immediately before Problem 1.9 as motivation for that problem. Proposition 1.7 provides asymptotic bounds for $f_S(d)$ for general fixed dimension $r$; the authors conjecture the $r=2$ case obeys the same estimate.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated in prose without a labelled environment, directly preceding Problem 1.9.",
+    "arxiv_id": "2401.00299",
+    "paper_title": "Partitioning the hypercube into smaller hypercubes",
+    "paper_authors": [
+      "Noga Alon",
+      "Jozsef Balogh",
+      "Vladimir N. Potapov"
+    ],
+    "published": "2024-11-07",
+    "abs_url": "https://arxiv.org/abs/2401.00299",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Problem 1.10",
+    "statement_text": "Is it true that\n$f(d)/f_{\\leq 2}(d)$ is subexponential in $n$?",
+    "context_text": "This addresses Problem 1.2 (iii), asking whether the gap between counting all subcube partitions and counting those restricted to subcubes of dimension at most 2 grows at most subexponentially in $n = 2^{d-1}$.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2401.00299",
+    "paper_title": "Partitioning the hypercube into smaller hypercubes",
+    "paper_authors": [
+      "Noga Alon",
+      "Jozsef Balogh",
+      "Vladimir N. Potapov"
+    ],
+    "published": "2024-11-07",
+    "abs_url": "https://arxiv.org/abs/2401.00299",
+    "source": "html"
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "review_id": "2209.09107__00",
+  "safe_id": "2209.09107",
+  "arxiv_id": "2209.09107",
+  "conjecture_title": "Question 6.1",
+  "paper_title": "List-avoiding orientations",
+  "published": "2024-06-20",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Question 6.1 from arXiv:2209.09107 asks whether every graph G has a spanning subgraph admitting an Alon-Tarsi orientation in which each vertex v has out-degree at least (deg_G(v)-1)/2; an affirmative answer would prove Conjecture 1.1 for all graphs via Theorem 1.4 and give AT(H) ≤ ⌊(Δ+3)/2⌋ for a dense subgraph H. No resolution or partial progress on this specific question has been found in the literature indexed since the paper's 2024 publication.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Alon-Tarsi orientation spanning subgraph out-degree Bradshaw Mohar list-avoiding 2209.09107",
+    "Alon-Tarsi orientation spanning subgraph half degree graph conjecture 2024 2025",
+    "arxiv 2406.05095 On orientations with forbidden out-degrees",
+    "arxiv 2509.00657 On Alon-Tarsi orientations of sparse graphs",
+    "cite:2209.09107 list-avoiding orientations Alon-Tarsi Question 6.1 spanning subgraph out-degree"
+  ],
+  "notes": "No follow-up found after 5 web searches. The two most relevant nearby papers — arXiv:2406.05095 (Henderschedt–McDonald, forbidden out-degrees in regular graphs) and arXiv:2509.00657 (Cho–Choi–Park–Zhu, AT-extendability of sparse graphs) — address related but distinct problems and do not mention Question 6.1. The question was posed in June 2024 and remains open with high confidence."
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Question 1.7",
+    "statement_text": "Let $t\\geq 6$ be an integer. Does there exist a graph $G$ with $E(\\overline{G})\\neq\\varnothing$ such that $G$ is $H$-free but $G+e$ has an induced subgraph isomorphic to $C_{2t-2}$ for every $e\\in E(\\overline{G})$?",
+    "context_text": "The authors prove Theorem 1.6 constructing graphs that are $C_{2t}$-free but where removing any edge creates an induced copy of $C_{2t}$ (half of the induced saturation condition). Question 1.7 asks about the other half: whether the edge-addition condition can also be satisfied, which would be a key step toward solving the induced saturation problem for all even cycles.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2505.24100",
+    "paper_title": "Halfway to induced saturation for even cycles",
+    "paper_authors": [
+      "Xinyue Fan",
+      "Sahab Hajebi",
+      "Sepehr Hajebi",
+      "Sophie Spirkl"
+    ],
+    "published": "2025-06-02",
+    "abs_url": "https://arxiv.org/abs/2505.24100",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Question 1.8",
+    "statement_text": "Does there exist a polynomial $f$ such that for every $t\\geq 3$, there is a graph $G$ on at most $f(t)$ vertices with $E(G)\\neq\\varnothing$, such that $G$ is $H$-free but $G-e$ has an induced subgraph isomorphic to $C_{2t-2}$ for every $e\\in E(G)$?",
+    "context_text": "The construction of $G_t$ in Theorem 1.6 has doubly exponential size in $t$. The authors remark they do not even have a rationale for expecting the number of vertices to be more than linear in $t$, making this a natural question about the efficiency of the construction.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2505.24100",
+    "paper_title": "Halfway to induced saturation for even cycles",
+    "paper_authors": [
+      "Xinyue Fan",
+      "Sahab Hajebi",
+      "Sepehr Hajebi",
+      "Sophie Spirkl"
+    ],
+    "published": "2025-06-02",
+    "abs_url": "https://arxiv.org/abs/2505.24100",
+    "source": "html"
+  }
+]

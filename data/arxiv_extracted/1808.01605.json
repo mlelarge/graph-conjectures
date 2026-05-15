@@ -1,0 +1,134 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Erdős–Hajnal Conjecture (Conjecture 1)",
+    "statement_text": "For every positive integers $k$ and $g$, there exists an integer $h(k,g)$ such that every graph $G$ with $\\chi(G) \\geq h(k,g)$ contains a subgraph with chromatic number at least $k$ and girth at least $g$.",
+    "context_text": "Proposed by Erdős and Hajnal in the 1960s, this conjecture generalises the existence of graphs with large girth and large chromatic number to a Ramsey-type statement. The only non-trivial confirmed case is $g=4$ (triangle-free subgraphs), proved by Rödl in 1977. The paper also notes it holds for Kneser graphs (Theorem 16, Corollary 17).",
+    "attributed_to": "Erdős and Hajnal",
+    "attributed_year": 1969,
+    "paper_contribution": "Proves the fractional chromatic number analogue of Rödl's $g=4$ case (Theorem 3): for every real $x \\geq 1$ there exists $k(x)$ such that every graph $G$ with $\\chi_f(G) \\geq k(x)$ contains a triangle-free subgraph $H$ with $\\chi_f(H) \\geq x$. Also verifies the conjecture for Kneser graphs.",
+    "opg_lookup": true,
+    "confidence": "low",
+    "notes": "PDF source — the extracted statement text is partially garbled (the quantifier clause 'such that every graph $G$ with $\\chi(G) \\geq h(k,g)$' is missing from the raw extraction); statement has been reconstructed from context.",
+    "arxiv_id": "1808.01605",
+    "paper_title": "Triangle-free subgraphs with large fractional chromatic number",
+    "paper_authors": [
+      "Bojan Mohar",
+      "Hehui Wu"
+    ],
+    "published": "2018-08-05",
+    "abs_url": "https://arxiv.org/abs/1808.01605",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 4",
+    "statement_text": "For every real number $x \\geq 1$ and any integer $g \\geq 3$, there exists a positive number $k(x,g)$ such that every graph $G$ with $\\chi_f(G) \\geq k(x,g)$ contains a subgraph $H$ of girth at least $g$ and with $\\chi_f(H) \\geq x$.",
+    "context_text": "Proposed immediately after Theorem 3 as the natural full generalisation to arbitrary girth. Theorem 3 of this paper establishes the case $g = 4$ (triangle-free subgraphs), and Conjecture 4 asks whether the same holds for every girth.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "PDF source — math appears readable.",
+    "arxiv_id": "1808.01605",
+    "paper_title": "Triangle-free subgraphs with large fractional chromatic number",
+    "paper_authors": [
+      "Bojan Mohar",
+      "Hehui Wu"
+    ],
+    "published": "2018-08-05",
+    "abs_url": "https://arxiv.org/abs/1808.01605",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Problem 1 (Bukh)",
+    "statement_text": "Does there exist a constant $c$ so that for every graph $G$, $\\mathbb{E}(\\chi(G_{1/2})) > c\\,\\dfrac{\\chi(G)}{\\log \\chi(G)}$?",
+    "context_text": "Asked by Boris Bukh as a weaker form of whether a random subgraph of a graph with large chromatic number retains comparably large chromatic number. Here $G_p$ denotes the random subgraph of $G$ in which each edge is retained independently with probability $p$.",
+    "attributed_to": "Bukh",
+    "attributed_year": null,
+    "paper_contribution": "The methods developed in this paper led to a solution of the fractional chromatic number version of this problem, established in the companion paper [11] (Mohar–Wu).",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "PDF source — math appears readable. The paper does not directly prove this problem; it solves the fractional version in a separate companion paper.",
+    "arxiv_id": "1808.01605",
+    "paper_title": "Triangle-free subgraphs with large fractional chromatic number",
+    "paper_authors": [
+      "Bojan Mohar",
+      "Hehui Wu"
+    ],
+    "published": "2018-08-05",
+    "abs_url": "https://arxiv.org/abs/1808.01605",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Thomassen's Conjecture (Conjecture 5)",
+    "statement_text": "For every positive integers $k$ and $g \\geq 3$, there exists a positive number $d(k,g)$ such that every graph with average degree at least $d(k,g)$ contains a subgraph of girth at least $g$ and average degree at least $k$.",
+    "context_text": "Proposed by Carsten Thomassen in 1983, this conjecture asks whether sufficiently high average degree forces a subgraph of prescribed girth and average degree. Partial results are known for $g \\leq 6$ (Kühn–Osthus) and under bounded maximum-degree assumptions (Pyber et al.; Dellamonica–Rödl).",
+    "attributed_to": "Thomassen",
+    "attributed_year": 1983,
+    "paper_contribution": "The paper does not prove this conjecture; it introduces Conjecture 6 as a weakening (replacing average degree in the hypothesis by chromatic number) that combines this conjecture with the Erdős–Hajnal framework.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "PDF source — math appears readable. Mentioned as motivation for Conjecture 6; no direct progress on this conjecture is made in the paper.",
+    "arxiv_id": "1808.01605",
+    "paper_title": "Triangle-free subgraphs with large fractional chromatic number",
+    "paper_authors": [
+      "Bojan Mohar",
+      "Hehui Wu"
+    ],
+    "published": "2018-08-05",
+    "abs_url": "https://arxiv.org/abs/1808.01605",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 6",
+    "statement_text": "For every positive integers $k$ and $g \\geq 3$, there exists a positive number $c(k,g)$ such that every graph with chromatic number at least $c(k,g)$ contains a subgraph of girth at least $g$ and with average degree at least $k$.",
+    "context_text": "Proposed by the authors as a weakening of both the Erdős–Hajnal conjecture and Thomassen's conjecture: the hypothesis uses chromatic number (rather than average degree) and the conclusion asks only for large average degree (rather than large chromatic number) in the subgraph.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "PDF source — math appears readable.",
+    "arxiv_id": "1808.01605",
+    "paper_title": "Triangle-free subgraphs with large fractional chromatic number",
+    "paper_authors": [
+      "Bojan Mohar",
+      "Hehui Wu"
+    ],
+    "published": "2018-08-05",
+    "abs_url": "https://arxiv.org/abs/1808.01605",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 7",
+    "statement_text": "For every positive integers $k$ and $g$, there exists an integer $h(k,g)$ such that every graph $G$ with $\\chi(G) \\geq h(k,g)$ contains a subgraph with chromatic number at least $k$ and odd girth at least $g$.",
+    "context_text": "An odd-girth variant of the Erdős–Hajnal conjecture. The paper notes that the analogous statement for Thomassen's conjecture (with odd girth replacing girth) is trivially true, making this chromatic-number version a natural open problem.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "PDF source — math appears readable.",
+    "arxiv_id": "1808.01605",
+    "paper_title": "Triangle-free subgraphs with large fractional chromatic number",
+    "paper_authors": [
+      "Bojan Mohar",
+      "Hehui Wu"
+    ],
+    "published": "2018-08-05",
+    "abs_url": "https://arxiv.org/abs/1808.01605",
+    "source": "pdf"
+  }
+]

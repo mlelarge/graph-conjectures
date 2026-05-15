@@ -1,0 +1,44 @@
+{
+  "review_id": "2509.08762__00",
+  "safe_id": "2509.08762",
+  "arxiv_id": "2509.08762",
+  "conjecture_title": "Informal conjecture: coarse Menger for bounded genus",
+  "paper_title": "Asymptotic structure. V. The coarse Menger conjecture in bounded path-width",
+  "published": "2025-09-10",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "solved",
+  "confidence": "medium",
+  "summary": "The informal conjecture that the coarse Menger conjecture holds for graphs of bounded genus was confirmed in May 2026 by Blažej, Pilipczuk, and Protopapas (arXiv:2605.11112), which proves that for every surface Σ there is a function f(d,k) such that in any Σ-embeddable graph, the absence of k pairwise d-distant S–T paths implies a set of at most f(d,k) vertices covering all S–T paths within distance d. Independently, Liu (arXiv:2605.10068) establishes the weak coarse Menger property for all minor-closed families, which subsumes bounded-genus graphs.",
+  "since_posted": [
+    {
+      "title": "A coarse Menger's Theorem for planar and bounded genus graphs",
+      "authors": "Václav Blažej, Michał Pilipczuk, Evangelos Protopapas",
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2605.11112",
+      "arxiv_id": "2605.11112",
+      "doi": null,
+      "kind": "proof",
+      "claim": "Proves a coarse Menger theorem for every surface-embeddable graph, confirming the conjecture from arXiv:2509.08762 for bounded-genus graphs and partially answering questions of Nguyen, Scott, and Seymour."
+    },
+    {
+      "title": "Coarse Menger property of quasi-minor excluded graphs and length spaces",
+      "authors": "Chun-Hung Liu",
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2605.10068",
+      "arxiv_id": "2605.10068",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves the weak coarse Menger property for locally finite graphs with an excluded finite minor (optimal bounds), which covers bounded-genus graphs and extends to Riemannian surfaces of finite Euler genus."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "coarse Menger conjecture bounded genus Nguyen Scott Seymour",
+    "coarse Menger conjecture graphs bounded genus arXiv 2025"
+  ],
+  "notes": "arXiv:2605.11112 directly addresses the open problem and its title ('A coarse Menger's Theorem for planar and bounded genus graphs') confirms the conjecture is resolved; the WebFetch abstract notes it 'partially answers questions of Nguyen, Scott, and Seymour,' suggesting some related problems remain open. The confidence is medium rather than high because the exact form of the proved theorem versus the informal conjecture statement was not verified from the full paper text."
+}

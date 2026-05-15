@@ -1,0 +1,71 @@
+[
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Erdős-Faudree-Rousseau-Schelp Problem (complete bipartite graphs)",
+    "statement_text": "Determine, up to a constant factor, the size Ramsey number $\\hat{r}(K_{s,t})$ for $s \\leq t$.",
+    "context_text": "Erdős, Faudree, Rousseau, and Schelp proved $\\Omega(st^{2s}) \\leq \\hat{r}(K_{s,t}) \\leq O(s^2 t^{2s})$ for $s \\leq t$ and ended their foundational 1978 paper by asking for the asymptotic order of $\\hat{r}(K_{s,t})$. Pikhurko later found an asymptotic formula for fixed $s$ as $t \\to \\infty$, implying $\\hat{r}(K_{s,t}) = \\Theta(s^2 t^{2s})$ for $t$ sufficiently large in terms of $s$, but with no quantitative bound on how large $t$ must be.",
+    "attributed_to": "Erdős, Faudree, Rousseau, and Schelp",
+    "attributed_year": 1978,
+    "paper_contribution": "Proves the improved lower bound $\\hat{r}(K_{s,t}) = \\Omega(s^{2-s/t} t^{2s})$ for all $s \\leq t$ via a hypergeometric random coloring argument, and deduces $\\hat{r}(K_{s,t}) = \\Theta(s^2 t^{2s})$ whenever $t = \\Omega(s \\log s)$; the range $s \\leq t = o(s \\log s)$ remains open.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source — exponent in Theorem 1.1 extracted as 'S2-s/t' and may be slightly garbled; interpreted as $s^{2-s/t}$.",
+    "arxiv_id": "2111.05420",
+    "paper_title": "Three early problems on size Ramsey numbers",
+    "paper_authors": [
+      "David Conlon",
+      "Jacob Fox",
+      "Yuval Wigderson"
+    ],
+    "published": "2023-02-08",
+    "abs_url": "https://arxiv.org/abs/2111.05420",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Erdős-Faudree-Rousseau-Schelp Problem (book graphs)",
+    "statement_text": "Determine, up to a constant factor, the size Ramsey number $\\hat{r}(B_n^{(k)})$ of the book graph $B_n^{(k)}$ (the join of $K_k$ and an independent set of order $n$), as a function of both $k$ and $n$.",
+    "context_text": "Erdős, Faudree, Rousseau, and Schelp proved $\\Omega(k^2 n^2) \\leq \\hat{r}(B_n^{(k)}) \\leq O(16^k n^2)$ for $n$ sufficiently large in terms of $k$, establishing quadratic dependence on $n$ but leaving a massive gap in the dependence on $k$.",
+    "attributed_to": "Erdős, Faudree, Rousseau, and Schelp",
+    "attributed_year": 1978,
+    "paper_contribution": "Fully resolves the problem by proving $\\hat{r}(B_n^{(k)}) = \\Theta(k \\cdot 2^k n^2)$ for every fixed $k \\geq 2$ and all sufficiently large $n$, closing the exponential gap in the $k$-dependence.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source — math notation appears clean for this result.",
+    "arxiv_id": "2111.05420",
+    "paper_title": "Three early problems on size Ramsey numbers",
+    "paper_authors": [
+      "David Conlon",
+      "Jacob Fox",
+      "Yuval Wigderson"
+    ],
+    "published": "2023-02-08",
+    "abs_url": "https://arxiv.org/abs/2111.05420",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Erdős-Faudree-Rousseau-Schelp Problem (starburst graphs)",
+    "statement_text": "Determine, up to a constant factor, the size Ramsey number $\\hat{r}(S_n^{(k)})$ of the starburst graph $S_n^{(k)}$ (obtained from $K_k$ by adding $n$ pendant edges to every vertex of $K_k$), as a function of both $k$ and $n$.",
+    "context_text": "Erdős, Faudree, Rousseau, and Schelp proved $\\Omega(k^3 n^2) \\leq \\hat{r}(S_n^{(k)}) \\leq O(k^4 n^2)$ for $k$ fixed and $n$ sufficiently large, leaving only a $\\Theta(k)$ gap between the bounds.",
+    "attributed_to": "Erdős, Faudree, Rousseau, and Schelp",
+    "attributed_year": 1978,
+    "paper_contribution": "Fully resolves the problem by proving $\\hat{r}(S_n^{(k)}) = \\Theta(k^3 n^2)$ for every fixed $k \\geq 2$ and all sufficiently large $n$, confirming that the lower bound is tight up to a constant factor.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source — math notation appears clean for this result; starburst graphs appear to be unnamed in prior literature according to the authors.",
+    "arxiv_id": "2111.05420",
+    "paper_title": "Three early problems on size Ramsey numbers",
+    "paper_authors": [
+      "David Conlon",
+      "Jacob Fox",
+      "Yuval Wigderson"
+    ],
+    "published": "2023-02-08",
+    "abs_url": "https://arxiv.org/abs/2111.05420",
+    "source": "pdf"
+  }
+]

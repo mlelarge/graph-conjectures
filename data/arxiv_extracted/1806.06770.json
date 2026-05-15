@@ -1,0 +1,50 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1 (You–Liu; Zhai–Shu–Hong)",
+    "statement_text": "For any graph $G$ of order $n \\geq 2$, the following holds: $$\\lambda_n(G) - \\lambda_2(G) \\leq n - 1,$$ or equivalently $\\lambda_2(G) + \\lambda_2(\\bar{G}) \\geq 1$, with equality if and only if $G$ or $\\bar{G}$ is isomorphic to the join of an isolated vertex and a disconnected graph of order $n - 1$.",
+    "context_text": "The Laplacian spread $\\lambda_n(G)-\\lambda_2(G)$ of a graph is trivially at most $n$; the conjecture sharpens this to $n-1$. It has been verified for trees, unicyclic, bicyclic, tricyclic, cactus, quasi-tree graphs, graphs of diameter $\\neq 3$, and bipartite/$K_3$-free graphs.",
+    "attributed_to": "You and Liu; Zhai, Shu, and Hong",
+    "attributed_year": 2011,
+    "paper_contribution": "Proves that $\\max\\{\\lambda_2(G), \\lambda_2(\\bar{G})\\} \\geq \\tfrac{2}{5}$, establishing the first unconditional positive constant lower bound for $\\lambda_2(G)+\\lambda_2(\\bar{G})$ over all graphs of order $n \\geq 2$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1806.06770",
+    "paper_title": "The Algebraic Connectivity of a Graph and its Complement",
+    "paper_authors": [
+      "B. Afshari",
+      "S. Akbari",
+      "M. J. Moghaddamzadeh",
+      "B. Mohar"
+    ],
+    "published": "2018-06-18",
+    "abs_url": "https://arxiv.org/abs/1806.06770",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Closing Question",
+    "statement_text": "What is the supremum of all real numbers $c$ such that for any graph $G$ of order at least $2$, $$\\max\\{\\lambda_2(G), \\lambda_2(\\bar{G})\\} \\geq c\\,?$$",
+    "context_text": "The paper proves the supremum is at least $\\tfrac{2}{5}$. The self-complementary path $P_4$ satisfies $\\lambda_2(P_4) = 2 - \\sqrt{2} < 0.5858$, giving an upper bound on the supremum. The exact value is left open.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1806.06770",
+    "paper_title": "The Algebraic Connectivity of a Graph and its Complement",
+    "paper_authors": [
+      "B. Afshari",
+      "S. Akbari",
+      "M. J. Moghaddamzadeh",
+      "B. Mohar"
+    ],
+    "published": "2018-06-18",
+    "abs_url": "https://arxiv.org/abs/1806.06770",
+    "source": "pdf"
+  }
+]

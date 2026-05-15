@@ -1,0 +1,32 @@
+{
+  "review_id": "2502.14398__00",
+  "safe_id": "2502.14398",
+  "arxiv_id": "2502.14398",
+  "conjecture_title": "Conjecture 3.4",
+  "paper_title": "Circular sorting",
+  "published": "2025-08-06",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Conjecture 3.4 asserts t(n)=n-2 iff n is prime; the source paper establishes the forward direction (n prime implies t(n)=n-2). A November 2025 follow-up (arXiv:2510.18529) proves the converse direction t(n)≤n-3 for all composite n divisible by 2 or 3, and for composite n whose permutations admit a polynomial representation over Z_n, giving a tight bound t(3p)=3p-3 for primes p. The conjecture remains open for composite n not divisible by 2 or 3 (e.g., n=25, 35, 49).",
+  "since_posted": [
+    {
+      "title": "Circular sorting, strong complete mappings and wreath product constructions",
+      "authors": "Paul Bastide, Anurag Bishnoi, Carla Groenland, Dion Gijswijt, Rohinee Joshi",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2510.18529",
+      "arxiv_id": "2510.18529",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves t(n)≤n-3 for all composite n divisible by 2 or 3, and for composite n admitting permutation polynomials; establishes the tight bound t(3p)=3p-3 for primes p; the full conjecture remains open for composite n coprime to 6."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Adin Alon Roichman \"circular sorting\" swap graph cyclic permutations diameter prime 2502.14398"
+  ],
+  "notes": "Paper 2601.12597 (Adin, Bagno, Roichman, Jan 2026) concerns a Schreier graph under adjacent transpositions, not the all-swaps setting of Conjecture 3.4, and is not directly relevant. A secondary conjecture in the source paper (that t([pi])=n-2 forces pi to be affine) was disproved by 2510.18529 via non-affine quadratic orthomorphisms for n=23."
+}

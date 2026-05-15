@@ -1,0 +1,50 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Mohar's Conjecture",
+    "statement_text": "For $k \\geq 3$, all $k$-colourings of a $k$-regular graph that is not complete are Kempe equivalent.",
+    "context_text": "Mohar conjectured in 2007 that for every connected non-complete $k$-regular graph with $k \\geq 3$, the set of $k$-colourings forms a single Kempe class. The first non-trivial case $k=3$ was partially resolved: van den Heuvel found a counterexample (the triangular prism), and Feghali et al. showed it is the only one for $k=3$. This paper addresses the conjecture for all $k \\geq 4$.",
+    "attributed_to": "Mohar",
+    "attributed_year": 2007,
+    "paper_contribution": "Proves the conjecture for all $k \\geq 4$: if $G$ is a connected non-complete $k$-regular graph with $k \\geq 4$, then the set of $k$-colourings of $G$ is a Kempe class (Theorem 1.1).",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1510.06964",
+    "paper_title": "On a conjecture of Mohar concerning Kempe equivalence of regular graphs",
+    "paper_authors": [
+      "Marthe Bonamy",
+      "Nicolas Bousquet",
+      "Carl Feghali",
+      "Matthew Johnson"
+    ],
+    "published": "2016-09-22",
+    "abs_url": "https://arxiv.org/abs/1510.06964",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Open case: WSK algorithm on the triangular lattice for q=5",
+    "statement_text": "Determine whether the Wang-Swendsen-Koteck\\'{y} algorithm for $q = 5$ colourings of the triangular lattice (with periodic boundary conditions) is valid (i.e., whether the set of $5$-colourings of the triangular lattice is a Kempe class).",
+    "context_text": "Theorem 2.2 establishes that the WSK algorithm on the triangular lattice is valid for $q \\geq 6$ (via Theorem 1.1 and a degeneracy lemma) and invalid for $q \\leq 4$ (Mohar and Salas). The authors explicitly note that $q = 5$ is the single remaining open case.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated as an observation ('We observe that this leaves the single open case of a triangular lattice with q = 5') rather than in a formal labelled environment.",
+    "arxiv_id": "1510.06964",
+    "paper_title": "On a conjecture of Mohar concerning Kempe equivalence of regular graphs",
+    "paper_authors": [
+      "Marthe Bonamy",
+      "Nicolas Bousquet",
+      "Carl Feghali",
+      "Matthew Johnson"
+    ],
+    "published": "2016-09-22",
+    "abs_url": "https://arxiv.org/abs/1510.06964",
+    "source": "pdf"
+  }
+]

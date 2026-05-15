@@ -1,0 +1,29 @@
+{
+  "review_id": "2311.05066__00",
+  "safe_id": "2311.05066",
+  "arxiv_id": "2311.05066",
+  "conjecture_title": "Question 8.3",
+  "paper_title": "Induced subgraphs and tree decompositions XIII. Basic obstructions in $\\mathcal{H}$-free graphs for finite $\\mathcal{H}$",
+  "published": "2024-11-26",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Question 8.3 of arXiv:2311.05066 asks for a characterisation of sets $\\mathcal{S}$ of strings that are $c$-unavoidable languages (every $c$-padded string contains a member of $\\mathcal{S}$ or its reverse as a consecutive substring for some constant $c$). The question is motivated by the structure theory of tasselled graph families developed in the same paper. No follow-up work resolving or substantially advancing this question was found in the indexed literature as of May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2311.05066",
+      "verified": true,
+      "note": "Source paper confirmed published in Advances in Combinatorics; abstract page accessed at arxiv.org/abs/2311.05066. Full text of Question 8.3 not retrievable from abstract page alone, but surrounding context matches the supplied statement."
+    }
+  ],
+  "search_queries": [
+    "c-unavoidable language padded string consecutive substring graph theory 2311.05066",
+    "Alecu Chudnovsky Hajebi Spirkl \"unavoidable language\" tassel induced subgraphs tree decomposition",
+    "\"unavoidable language\" \"padded string\" \"tassel\" graph theory Hajebi Spirkl 2025",
+    "Alecu Chudnovsky Hajebi Spirkl \"tasselled\" induced subgraphs tree decompositions XIV XV 2025 arxiv"
+  ],
+  "notes": "No follow-up found. The question is highly specific (combinatorics of string patterns arising from tasselled graph families) and appears in a 2024 paper; absence of follow-up is consistent with it being open. The only singleton $c$-unavoidable languages identified in the paper itself are $\\mathcal{S}=\\{0\\cdots01\\}$ (up to reversal) and $\\mathcal{S}=\\{0\\cdots0\\}$. The series continues at least through paper XIX (arXiv:2506.05602) but none of the subsequent papers in the series appear to address this string-combinatorics question."
+}

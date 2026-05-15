@@ -1,0 +1,50 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Erdős-Hajnal Conjecture",
+    "statement_text": "For every graph $H$, there exists $\\tau > 0$ such that every $H$-free graph $G$ satisfies $\\max(\\alpha(G), \\omega(G)) \\geq |G|^\\tau$.",
+    "context_text": "The Erdős-Hajnal conjecture asserts that for proper hereditary graph classes, the largest clique or stable set is guaranteed to have polynomial (rather than merely logarithmic) size. Prior to this paper it was known for $K_2$, $P_4$, the bull, and their closures under complements and substitution, but remained open for $C_5$, $P_5$, and $\\overline{P_5}$ among graphs on five vertices.",
+    "attributed_to": "Erdős and Hajnal",
+    "attributed_year": 1989,
+    "paper_contribution": "Proves the conjecture for $H = C_5$: every $C_5$-free graph $G$ satisfies $\\max(\\alpha(G), \\omega(G)) \\geq |G|^\\tau$ for some absolute constant $\\tau > 0$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2102.04994",
+    "paper_title": "Erdos-Hajnal for graphs with no 5-hole",
+    "paper_authors": [
+      "Maria Chudnovsky",
+      "Alex Scott",
+      "Paul Seymour",
+      "Sophie Spirkl"
+    ],
+    "published": "2021-02-09",
+    "abs_url": "https://arxiv.org/abs/2102.04994",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Erdős-Hajnal property for $\\{C_8, \\overline{C_8}\\}$",
+    "statement_text": "Does $\\{C_8, \\overline{C_8}\\}$ have the Erdős-Hajnal property?",
+    "context_text": "The paper proves that $\\{C_6, \\overline{C_6}\\}$ (result 1.7) and $\\{C_7, \\overline{C_7}\\}$ (result 1.8) each have the Erdős-Hajnal property. The authors remark that it would be nice to know whether the same holds for $\\{C_8, \\overline{C_8}\\}$, but that this remains open.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated in running prose as 'it would be nice to know if the same is true for $\\{C_8,\\overline{C_8}\\}$, but this remains open'; no formal theorem environment.",
+    "arxiv_id": "2102.04994",
+    "paper_title": "Erdos-Hajnal for graphs with no 5-hole",
+    "paper_authors": [
+      "Maria Chudnovsky",
+      "Alex Scott",
+      "Paul Seymour",
+      "Sophie Spirkl"
+    ],
+    "published": "2021-02-09",
+    "abs_url": "https://arxiv.org/abs/2102.04994",
+    "source": "pdf"
+  }
+]

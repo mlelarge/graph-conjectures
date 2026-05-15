@@ -1,0 +1,25 @@
+[
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Queue Number of Planar Graphs",
+    "statement_text": "A challenging open problem in the area of queue layouts is to decide whether planar graphs have constant queue number.",
+    "context_text": "Mentioned in the applications section where the authors note that graphs with bounded queue number form a class with bounded expansion (Dujmović and Wood), so Theorem 1 implies that posets whose cover graphs have bounded queue number have dimension bounded by a function of the queue number and the height. The queue-number problem for planar graphs is cited as independently interesting.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "This is an existing open problem from the queue-layout literature, referenced via citation [3]; it is not introduced by the paper's authors but is presented in running prose as background motivation. No labelled theorem environment. PDF source — math notation appears clean for this item.",
+    "arxiv_id": "1507.01120",
+    "paper_title": "Sparsity and dimension",
+    "paper_authors": [
+      "Gwenaël Joret",
+      "Piotr Micek",
+      "Veit Wiechert"
+    ],
+    "published": "2017-01-09",
+    "abs_url": "https://arxiv.org/abs/1507.01120",
+    "source": "pdf"
+  }
+]

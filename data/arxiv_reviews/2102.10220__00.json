@@ -1,0 +1,29 @@
+{
+  "review_id": "2102.10220__00",
+  "safe_id": "2102.10220",
+  "arxiv_id": "2102.10220",
+  "conjecture_title": "Conjecture on sharpness of Theorem 1.1",
+  "paper_title": "Making an $H$-Free Graph $k$-Colorable",
+  "published": "2021-03-19",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Fox, Himwich, and Mani prove the upper bound h(n, k, K_r) ≤ c_r n²/k^{(r-1)/(r-2)} for all r ≥ 3 and establish the matching lower bound for r = 3, leaving the sharpness for r ≥ 4 as an open conjecture. No follow-up paper proving or disproving the conjecture for general r ≥ 4 was found in the indexed literature. The paper was published in the Journal of Graph Theory (2022/2023).",
+  "since_posted": [],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2105.03956",
+      "verified": true,
+      "note": "WebFetch of the abstract confirms this paper is about pure pairs in perfect graphs (A,B disjoint subsets with A complete or anticomplete to B) and has no connection to h(n,k,K_r) or the sharpness conjecture. The fuzz=65 match is a false positive; this paper does not cite arXiv:2102.10220 in any relevant way."
+    }
+  ],
+  "search_queries": [
+    "Fox Himwich Mani \"H-free graph k-colorable\" h(n,k,K_r) sharp lower bound 2102.10220",
+    "\"h(n,k,K_r)\" OR \"making H-free graph k-colorable\" lower bound sharp Turan 2022 2023 2024",
+    "Fox Himwich Mani \"k-colorable\" clique free edges deleted lower bound conjecture cite 2021 2022 2023 2024 2025",
+    "arxiv \"2102.10220\" cite graph k-colorable sharp Turan clique 2022 2023 2024 2025"
+  ],
+  "notes": "The conjecture is open for r ≥ 4. The r = 3 case (triangle-free) is settled by the authors themselves in the original paper. No indexed follow-up paper addressing the general case was found across four targeted web searches. The internal reference arXiv:2105.03956 (Scott–Seymour–Spirkl, pure pairs) is unrelated and was discarded after abstract verification."
+}

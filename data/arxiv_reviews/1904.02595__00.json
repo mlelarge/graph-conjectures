@@ -1,0 +1,23 @@
+{
+  "review_id": "1904.02595__00",
+  "safe_id": "1904.02595",
+  "arxiv_id": "1904.02595",
+  "conjecture_title": "Conjecture 1.2",
+  "paper_title": "Isoperimetry, Stability, and Irredundance in Direct Products",
+  "published": "2019-04-04",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "Conjecture 1.2 of Alon–Defant (arXiv:1904.02595) asserts that α(G) = IR(G) for any direct product G of complete multipartite graphs (not necessarily balanced). The paper itself proves the weaker balanced version (Burcroff's Conjecture 1.1) in all but at most 37 exceptional cases, but leaves the general unbalanced strengthening (Conjecture 1.2) open. A search of the literature up to May 2026 found no follow-up paper resolving Conjecture 1.2; Defant's subsequent research has moved toward algebraic combinatorics, and no other authors appear to have published on this specific problem.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "irredundance independence number direct product complete multipartite graphs Alon Defant 1904.02595",
+    "alpha IR direct product complete multipartite graph irredundance conjecture graph theory",
+    "Burcroff irredundance direct product complete multipartite conjecture progress 2020 2021 2022 2023",
+    "Colin Defant irredundance independence direct product graph 2020 2021 2022 2023 2024 arxiv"
+  ],
+  "notes": "No follow-up resolving the conjecture was found. The source paper proves most of the balanced special case (Burcroff's Conjecture 1.1) but explicitly leaves Conjecture 1.2 (the unbalanced generalization) open. Confidence is medium rather than high because the conjecture is 7 years old and absence of visible follow-up in a moderately specific search is less conclusive than for a very recent conjecture."
+}

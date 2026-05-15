@@ -1,0 +1,22 @@
+{
+  "review_id": "2208.06858__01",
+  "safe_id": "2208.06858",
+  "arxiv_id": "2208.06858",
+  "conjecture_title": "Conjecture 2.2",
+  "paper_title": "The success probability in Levine's hat problem, and independent sets in graphs",
+  "published": "2023-08-21",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 2.2 from arXiv:2208.06858 states that $p_{\\mathrm{monotone}}(t) \\to 0$ as $t \\to \\infty$, where $p_{\\mathrm{monotone}}(t)$ is the best success probability in Levine's hat problem using balanced monotone winning families. The source paper itself only establishes the weaker result that the success probability is strictly decreasing in the number of players. No follow-up paper resolving this conjecture was found in a targeted web search across arXiv and published literature as of May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Levine hat problem monotone success probability independent sets graphs Alon Friedgut Kalai Kindler 2208.06858",
+    "hat problem guessing strategies monotone families success probability tends zero arXiv 2024 2025",
+    "\"p_monotone\" OR \"monotone hat\" Levine conjecture balanced monotone families independent sets arXiv cite 2208.06858"
+  ],
+  "notes": "No follow-up found. The source paper proves the weaker statement that the success probability is strictly decreasing (Conjecture 1.1 partial progress), but Conjecture 2.2 (which is strictly stronger than Conjecture 2.1 and Conjecture 1.1) — that $p_{\\mathrm{monotone}}(t) \\to 0$ — remains open. A Fourier-analytic approach paper by Heilman–Tamuz on Levine's hat puzzle was found but its PDF was unreadable; it appears to predate the 2022 conjecture formulation and is unlikely to address it."
+}

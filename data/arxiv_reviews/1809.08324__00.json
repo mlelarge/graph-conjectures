@@ -1,0 +1,23 @@
+{
+  "review_id": "1809.08324__00",
+  "safe_id": "1809.08324",
+  "arxiv_id": "1809.08324",
+  "conjecture_title": "Conjecture 1.2",
+  "paper_title": "Short directed cycles in bipartite digraphs",
+  "published": "2019-07-24",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The source paper (published in Combinatorica 2020) itself proves Conjecture 1.2 for k = 1, 2, 3, 4, 6 and all k ≥ 224,539, establishing substantial partial progress. The full conjecture remains open for the intermediate values 5 and 7 ≤ k ≤ 224,538. No post-2019 follow-up paper extending these results to additional cases was found across multiple targeted searches.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "bipartite digraph girth out-degree Caccetta-Häggkvist Seymour Spirkl conjecture",
+    "arXiv 1809.08324 Seymour Spirkl short directed cycles bipartite digraphs",
+    "bipartite digraph girth 2k out-degree n/(k+1) conjecture proof 2020 2021 2022 2023 2024 2025",
+    "Caccetta-Häggkvist bipartite analogue directed cycle 2k out-degree 2022 2023 2024 2025 arXiv"
+  ],
+  "notes": "The partial results (k=1,2,3,4,6 and k≥224,539) are all from the source paper itself, not from subsequent literature. The conjecture is implied by the Caccetta-Häggkvist conjecture; resolving the latter would settle this one. No follow-up paper found in indexed literature as of May 2026."
+}

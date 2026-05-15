@@ -1,0 +1,23 @@
+{
+  "review_id": "2206.13635__01",
+  "safe_id": "2206.13635",
+  "arxiv_id": "2206.13635",
+  "conjecture_title": "Problem 1",
+  "paper_title": "Coloring hypergraphs with excluded minors",
+  "published": "2024-04-19",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Problem 1 asks whether every $K_3$-minor-free hypergraph is 3-colorable, which is the smallest open case of the broader Conjecture 2 (that $h(t)=\\lceil\\tfrac{3}{2}(t-1)\\rceil$) from the source paper. The best known upper bound remains 4 colors, established by Corollary 2 of that paper. A wide web search across arXiv, Semantic Scholar, and ScienceDirect found no subsequent work that resolves this specific problem.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "K3-minor-free hypergraph 3-colorable chromatic number Steiner",
+    "hypergraph minor chromatic number colorability 2206.13635 cite",
+    "\"K_3-minor-free\" OR \"K3-minor-free\" hypergraph 3-colorable 2024 2025 arxiv",
+    "Steiner \"coloring hypergraphs\" \"excluded minors\" \"K_3\" minor-free 3-colorable solved 2024 2025 arxiv"
+  ],
+  "notes": "No follow-up found in indexed literature. The conjecture is recent (arXiv June 2022, published European Journal of Combinatorics 2024) and the absence of any citing paper that resolves it is consistent with it remaining open. The gap between the known upper bound (4 colors) and the conjectured bound (3 colors) remains unresolved."
+}

@@ -1,0 +1,68 @@
+[
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Problem 1",
+    "statement_text": "Does there exist a polynomial-time algorithm which, given a near-triangulation $G$ with the outer face bounded by a 4-cycle $C$ and a 4-coloring $\\psi$ of $C$, correctly decides whether $\\psi$ extends to a 4-coloring of $G$?",
+    "context_text": "The authors note that even very basic precoloring extension questions for planar graphs are wide open. There exist infinitely many near-triangulations $G$ whose outer 4-cycle has a precoloring that does not extend to a 4-coloring of $G$, yet no good characterization of such graphs is known.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "PDF source — math notation may be garbled",
+    "arxiv_id": "1907.04066",
+    "paper_title": "Coloring count cones of planar graphs",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Bernard Lidický"
+    ],
+    "published": "2021-10-25",
+    "abs_url": "https://arxiv.org/abs/1907.04066",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 8",
+    "statement_text": "Every plane near-cubic graph $\\tilde{G}$ with $d(\\tilde{G}) = 5$ satisfies $n_{\\tilde{G}} \\in B'_5$.",
+    "context_text": "The cone $B'_5$ is defined as the subcone of $B_5$ spanned by the rays $\\operatorname{ray}(\\tilde{R}_{5,1}), \\ldots, \\operatorname{ray}(\\tilde{R}_{5,11})$, excluding the ray corresponding to the non-planar graph $\\tilde{R}_{5,12}$. By Lemma 7, membership of $n_{\\tilde{G}}$ in the full cone $B_5$ is equivalent to the Four Color Theorem, so this conjecture is a strict strengthening of the Four Color Theorem. The authors verify it for all plane near-cubic graphs with fewer than 30 vertices.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "PDF source — math may be garbled",
+    "arxiv_id": "1907.04066",
+    "paper_title": "Coloring count cones of planar graphs",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Bernard Lidický"
+    ],
+    "published": "2021-10-25",
+    "abs_url": "https://arxiv.org/abs/1907.04066",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 9",
+    "statement_text": "Every plane near-cubic graph $\\tilde{G}$ with $d(\\tilde{G}) = 5$ satisfies $$\\sum_{i=0}^{4} n_{\\tilde{G}}(\\psi^{5,a}_i) \\geq \\sum_{i=0}^{4} n_{\\tilde{G}}(\\psi^{5,b}_i).$$",
+    "context_text": "The cone $B'_5$ has exactly one facet that is not also a facet of $B_5$, and this inequality captures precisely that facet, giving an equivalent reformulation of Conjecture 8. Here $\\psi^{5,a}_i$ and $\\psi^{5,b}_i$ are specific 5-precolorings (for $i \\in \\{0,\\ldots,4\\}$) defined by rotating two base precolorings of the 5-half-edges around $v$.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "PDF source — math may be garbled",
+    "arxiv_id": "1907.04066",
+    "paper_title": "Coloring count cones of planar graphs",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Bernard Lidický"
+    ],
+    "published": "2021-10-25",
+    "abs_url": "https://arxiv.org/abs/1907.04066",
+    "source": "pdf"
+  }
+]

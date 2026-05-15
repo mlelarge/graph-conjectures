@@ -1,0 +1,22 @@
+{
+  "review_id": "2312.13965__01",
+  "safe_id": "2312.13965",
+  "arxiv_id": "2312.13965",
+  "conjecture_title": "Problem 4.1",
+  "paper_title": "The growth rate of multicolor Ramsey numbers of $3$-graphs",
+  "published": "2024-04-29",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Problem 4.1 asks whether for every $\\ell\\geq 1$ there exists a 3-uniform hypergraph $G_\\ell$ with $r(G_\\ell;q)=2^{q^{\\ell+o(1)}}$, i.e., whether every integer exponent is achievable in the exponential-growth class $\\mathcal{U}$. The source paper itself settles $\\ell=1$ (via $\\mathrm{Star}^{(3)}(4)$) and $\\ell=2$ (via Proposition 3.3), but for $\\ell\\geq 3$ the best upper bound remains $2^{q^{\\ell+1}\\mathrm{polylog}(q)}$, leaving a gap. No follow-up paper resolving the general problem for all $\\ell\\geq 1$ was found in the literature.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Bradač Fox Sudakov multicolor Ramsey 3-uniform hypergraph 2312.13965 growth rate",
+    "multicolor Ramsey number 3-graphs exponential growth r(G;q) 2^{q^ell} hypergraph",
+    "Bradač Fox Sudakov 3-uniform hypergraph Ramsey \"Problem 4.1\" OR \"exponential growth class\" 2024 2025"
+  ],
+  "notes": "No follow-up paper resolving Problem 4.1 found. The cases ell=1 (Star^(3)(4)) and ell=2 (Proposition 3.3 construction) are settled in the source paper itself. The question of whether all integer exponents ell>=3 are achievable with tight r(G_ell;q)=2^{q^{ell+o(1)}} bounds remains open. A related 2026 paper by Xiaoyu He (arXiv:2603.16069) constructs 3-graphs with quasipolynomial 2-color Ramsey growth, which is a different regime."
+}

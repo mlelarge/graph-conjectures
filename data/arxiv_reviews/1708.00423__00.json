@@ -1,0 +1,28 @@
+{
+  "review_id": "1708.00423__00",
+  "safe_id": "1708.00423",
+  "arxiv_id": "1708.00423",
+  "conjecture_title": "Conjecture 3.5",
+  "paper_title": "Domination and fractional domination in digraphs",
+  "published": "2018-04-27",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "low",
+  "summary": "Conjecture 3.5 of arXiv:1708.00423 asserts that there is an integer \\ell such that every directed-triangle-free digraph satisfies \\gamma(G) \\le \\alpha^{\\ell}. The paper itself proves only the weaker factorial bound \\gamma(G) \\le \\alpha(G)\\cdot\\alpha(G)!, and presents the conjecture as a necessary consequence of the authors' earlier dichromatic-number conjecture (polynomial bound on \\vec{\\chi} in terms of \\alpha). No follow-up paper resolving Conjecture 3.5 was found in the literature across searches targeting the source arXiv ID, key mathematical terms, and the authors.",
+  "since_posted": [],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "1704.07219",
+      "verified": true,
+      "note": "Verified abstract of 'Coloring dense digraphs' (Combinatorica 2019). The abstract discusses dichromatic-number bounds in terms of independence number for oriented graphs, consistent with its role as the paper containing the stronger dichromatic conjecture that implies Conjecture 3.5. The domination conjecture itself is not explicitly visible in the abstract."
+    }
+  ],
+  "search_queries": [
+    "directed-triangle-free digraph domination number independence number polynomial bound Harutyunyan Thomassé",
+    "arXiv 1708.00423 domination digraph conjecture dichromatic number",
+    "directed triangle free digraph domination independence number polynomial 2020 2021 2022 2023 2024 2025"
+  ],
+  "notes": "No follow-up resolving Conjecture 3.5 was found. The conjecture is from 2018 (~8 years old), so the absence of a follow-up is mildly suspicious and warrants low confidence. Related work found: arXiv:2602.08736 constructs (claw, directed-C3)-free digraphs with unbounded dichromatic number, disproving a conjecture of Aboulker–Charbit–Naserasr, but that result concerns a different (stronger) formulation and does not directly settle Conjecture 3.5. The parent dichromatic-number conjecture by the same authors remains the key open problem; Conjecture 3.5 would follow if it is ever proved."
+}

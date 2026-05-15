@@ -1,0 +1,33 @@
+{
+  "review_id": "2205.09302__00",
+  "safe_id": "2205.09302",
+  "arxiv_id": "2205.09302",
+  "conjecture_title": "Conjecture on Sufficiency of Conditions E, R, T for Generic Tuples",
+  "paper_title": "Counting Dope Matrices",
+  "published": "2022-12-10",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "solved",
+  "confidence": "high",
+  "summary": "Ankit Bisain (arXiv:2209.13811, September 2022; published BLMS 2024) resolves the conjecture by classifying dope matrices when the entries of Λ are algebraically independent (i.e., generic), establishing that Conditions E, R, T are necessary and sufficient for an m×(n+1) matrix to be the multiplicity matrix of a polynomial with respect to a generic tuple. The paper also provides asymptotic upper and lower bounds on the total number of m×(n+1) dope matrices.",
+  "since_posted": [
+    {
+      "title": "Generic Classification and Asymptotic Enumeration of Dope Matrices",
+      "authors": "Ankit Bisain",
+      "year": 2022,
+      "venue": "Bulletin of the London Mathematical Society",
+      "url": "https://arxiv.org/abs/2209.13811",
+      "arxiv_id": "2209.13811",
+      "doi": "10.1112/blms.12924",
+      "kind": "proof",
+      "claim": "Resolves the conjecture by classifying dope matrices when Λ is algebraically independent (generic), proving that Conditions E, R, T are necessary and sufficient for an m×(n+1) matrix to be the multiplicity matrix of some polynomial P with respect to Λ."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Alon Kravitz O'Bryant \"dope matrices\" \"multiplicity matrix\" conjecture 2205.09302",
+    "\"dope matrix\" \"multiplicity matrix\" polynomial generic tuple conditions sufficient 2022 2023 2024"
+  ],
+  "notes": "Bisain's paper (arXiv:2209.13811) was submitted to arXiv in September 2022, shortly after the source paper appeared in May 2022, and was published in the Bulletin of the London Mathematical Society in 2024 (doi:10.1112/blms.12924). The arXiv abstract page confirms it 'resolves a conjecture of Alon, Kravitz, and O'Bryant' by classifying dope matrices when Λ is algebraically independent; a secondary search result explicitly states that conditions E, R, T are necessary and sufficient for generic tuples, matching the conjecture exactly. The BLMS journal page returned HTTP 402 (paywall) and the PDF was binary-encoded, so the conclusion relies on the arXiv abstract and search-result descriptions."
+}

@@ -1,0 +1,45 @@
+{
+  "review_id": "0806.0178__00",
+  "safe_id": "0806.0178",
+  "arxiv_id": "0806.0178",
+  "conjecture_title": "Open problem on lower bound for concentration interval",
+  "paper_title": "On the concentration of the chromatic number of random graphs",
+  "published": "2017-10-18",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "solved",
+  "confidence": "high",
+  "summary": "Heckel (2019, arXiv:1906.11808) proved that the chromatic number of G(n,1/2) is not concentrated on fewer than n^{1/4-epsilon} consecutive values, directly resolving the open problem by showing chi(G) cannot be confined to any constant-length interval. Heckel (2021, arXiv:2103.14014, JLMS) further improved the lower bound to at least n^{1/2-o(1)}, nearly matching the Alon-Scott upper bound of O(sqrt(n)/log n).",
+  "since_posted": [
+    {
+      "title": "Non-concentration of the chromatic number of a random graph",
+      "authors": "Annika Heckel",
+      "year": 2019,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/1906.11808",
+      "arxiv_id": "1906.11808",
+      "doi": null,
+      "kind": "proof",
+      "claim": "Proves that the chromatic number of G(n,1/2) is not concentrated on fewer than n^{1/4-epsilon} consecutive values, establishing the first non-trivial lower bound on the concentration width and settling the open problem that no such lower bound was known."
+    },
+    {
+      "title": "How does the chromatic number of a random graph vary?",
+      "authors": "Annika Heckel",
+      "year": 2021,
+      "venue": "Journal of the London Mathematical Society",
+      "url": "https://arxiv.org/abs/2103.14014",
+      "arxiv_id": "2103.14014",
+      "doi": "10.1112/jlms.12794",
+      "kind": "partial",
+      "claim": "Strengthens the lower bound on the concentration width to at least n^{1/2-o(1)}, nearly matching the upper bound, and under additional assumptions improves to approximately sqrt(n) log log n / log^3 n."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "chromatic number random graphs concentration lower bound interval G(n,p) Scott",
+    "chromatic number G(n,p) concentration two values Shamir Spencer Bollobas",
+    "Heckel non-concentration chromatic number G(n,1/2) arxiv lower bound"
+  ],
+  "notes": "The open problem asked whether one could show chi(G(n,p)) for fixed p is not concentrated on a constant number of values; Heckel (2019) settled this decisively by proving a non-concentration result of n^{1/4-epsilon}, far stronger than the minimum needed. The 2021 follow-up essentially closes the gap with the Alon-Scott upper bound. The doi 10.1112/jlms.12794 was inferred from the JLMS direct-PDF URL in search results and not independently verified via WebFetch."
+}

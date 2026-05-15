@@ -1,0 +1,71 @@
+[
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 3.4",
+    "statement_text": "$t(n)=n-2$ if and only if $n$ is prime.",
+    "context_text": "The function $t(n)$ denotes the diameter of the swap graph on cyclic permutations when all swaps (not necessarily adjacent) are allowed. Observation 3.1 and Proposition 3.2 together establish that the condition holds whenever $n=2$ or $n$ is an odd prime, providing one direction of the biconditional.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2502.14398",
+    "paper_title": "Circular sorting",
+    "paper_authors": [
+      "Ron M. Adin",
+      "Noga Alon",
+      "Yuval Roichman"
+    ],
+    "published": "2025-08-06",
+    "abs_url": "https://arxiv.org/abs/2502.14398",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 3.6",
+    "statement_text": "If $n>2$ and $\\pi\\in S_{n}$ satisfies [the condition that $\\operatorname{cyc}(\\sigma)=2$ for every $\\sigma\\in\\pi C_{n}$], then $n$ is prime and [\\pi = \\pi_{n,a}$] for some $a\\in{\\mathbb{Z}}_{n}^{\\times}$.",
+    "context_text": "Conjecture 3.6 is a structural strengthening of Conjecture 3.4: it characterises the permutations $\\pi$ achieving $t([\\pi])=n-2$ as exactly the permutations $\\pi_{n,a}$ (defined via multiplication by $a$ in $\\mathbb{Z}_n$) when $n$ is prime. The implication 'Conjecture 3.6 $\\Rightarrow$ Conjecture 3.4' holds, and both have been verified for $n\\leq 11$.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "PDF source — the hypothesis clause of the statement is garbled (a condition on $\\pi$ is missing from the extracted text). The statement has been reconstructed from context.",
+    "arxiv_id": "2502.14398",
+    "paper_title": "Circular sorting",
+    "paper_authors": [
+      "Ron M. Adin",
+      "Noga Alon",
+      "Yuval Roichman"
+    ],
+    "published": "2025-08-06",
+    "abs_url": "https://arxiv.org/abs/2502.14398",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Question 3.9",
+    "statement_text": "Is the function $t(n)$ monotone?",
+    "context_text": "The function $t(n)$ gives the diameter of the all-swaps graph on cyclic permutations of order $n$. Monotonicity would allow the bounds proved for prime powers to be transferred to composite integers; however, the authors note that adding a fixed point to a permutation can decrease its individual $t$-value, complicating a naive monotonicity argument.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2502.14398",
+    "paper_title": "Circular sorting",
+    "paper_authors": [
+      "Ron M. Adin",
+      "Noga Alon",
+      "Yuval Roichman"
+    ],
+    "published": "2025-08-06",
+    "abs_url": "https://arxiv.org/abs/2502.14398",
+    "source": "html"
+  }
+]

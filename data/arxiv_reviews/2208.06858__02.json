@@ -1,0 +1,46 @@
+{
+  "review_id": "2208.06858__02",
+  "safe_id": "2208.06858",
+  "arxiv_id": "2208.06858",
+  "conjecture_title": "Conjecture 2.6",
+  "paper_title": "The success probability in Levine's hat problem, and independent sets in graphs",
+  "published": "2023-08-21",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 2.6 (the graph-theoretic restatement of Levine's conjecture, that $\\lim_{t\\to\\infty}\\lim_{n\\to\\infty}\\bar{\\alpha}(K(n)^{\\square t})=0$) remains open as of May 2026. Two subsequent papers address the hat problem using analytic methods: Heilman–Tamuz (arXiv:2503.09042, 2025) obtain an upper bound on the two-player success probability via Chang’s lemma in Boolean harmonic analysis, and Bouquet et al. (arXiv:2508.01737, 2025) develop a geometric/integral framework and derive a 7/20 winning probability for two players. Neither paper resolves the double-limit conjecture on Kneser–Hamming products.",
+  "since_posted": [
+    {
+      "title": "A Fourier approach to Levine's hat puzzle",
+      "authors": "Steven M. Heilman, Omer Tamuz",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2503.09042",
+      "arxiv_id": "2503.09042",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Provides an upper bound on the success probability in the two-player case using Chang's lemma in Boolean harmonic analysis, offering partial analytic progress toward the conjecture without resolving the full double-limit statement."
+    },
+    {
+      "title": "An analytical framework for the Levine hats problem: new strategies, bounds and generalizations",
+      "authors": "C. Bouquet, Salah Chikhi, Timothé Charles, Yang Zhou, Eric Wang",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2508.01737",
+      "arxiv_id": "2508.01737",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Develops a geometric/integral framework for hat-problem strategies, constructs a recursive strategy achieving 7/20 winning probability for two players, and solves a generalization with infinite hat stacks, without addressing the Kneser–Hamming double-limit conjecture."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Kneser graph Hamming product fractional independence number Levine hat problem arXiv 2208.06858",
+    "Alon Friedgut Kalai Kindler \"hat problem\" \"independent sets\" Kneser graph conjecture 2023",
+    "\"p_intersecting\" \"Kneser graph\" \"Hamming product\" fractional independence 2024 2025",
+    "Levine hat problem \"fractional independence\" \"goes to zero\" graph theory cite 2208.06858 2024 2025 2026"
+  ],
+  "notes": "Conjecture 2.6 is a graph-theoretic restatement of Levine's main conjecture (Conjecture 2.1) via the identity p_intersecting(t,n) = \\bar{\\alpha}(K(n)^{\\square t}). Subsequent work focuses on specific cases (two players) and analytic upper bounds, but the full double-limit conjecture on Kneser–Hamming products remains open. No verified paper directly resolves the graph-theoretic formulation."
+}

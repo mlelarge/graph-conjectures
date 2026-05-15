@@ -1,0 +1,22 @@
+{
+  "review_id": "2308.02981__00",
+  "safe_id": "2308.02981",
+  "arxiv_id": "2308.02981",
+  "conjecture_title": "Question 1.2",
+  "paper_title": "Factoring Pattern-Free Permutations into Separable ones",
+  "published": "2023-08-06",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The source paper (SODA 2024) establishes a doubly exponential upper bound 2^{2^{O(k)}} on the separable index of permutations avoiding a pattern of size k, while Fox's results give a lower bound of Omega(k^{1/4-epsilon}). Question 1.2 asks whether a polynomial upper bound holds, closing this large gap. No follow-up work resolving this question was found in a search of the literature through May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "separable index pattern-avoiding permutations polynomial Bonnet Bourneuf Geniet Thomassé 2308.02981",
+    "separable index permutations avoiding pattern size k polynomial upper bound",
+    "separable index permutations \"pattern of size k\" polynomial Bonnet Bourneuf 2024 2025 follow-up"
+  ],
+  "notes": "No follow-up found resolving Question 1.2. The paper appeared at SODA 2024. The question is recent (2023) and the gap between the doubly-exponential upper bound and the polynomial lower bound is still unresolved as of the search. Colin Geniet's 2024 PhD thesis (hal-04643807) may contain related material but was inaccessible during this review."
+}

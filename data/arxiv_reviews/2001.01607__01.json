@@ -1,0 +1,40 @@
+{
+  "review_id": "2001.01607__01",
+  "safe_id": "2001.01607",
+  "arxiv_id": "2001.01607",
+  "conjecture_title": "Open Question: (theta, triangle)-free graphs of bounded degree",
+  "paper_title": "(Theta, triangle)-free and (even hole, $K_4$)-free graphs. Part 2 : bounds on treewidth",
+  "published": "2020-10-27",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "solved",
+  "confidence": "medium",
+  "summary": "The question of whether (theta, triangle)-free graphs of maximum degree $t\\geq 4$ have bounded treewidth was affirmatively resolved by Abrishami, Chudnovsky, Dibek, Hajebi, Rz\\u0105\\u017cewski, Spirkl, and Vu\\u0161kovi\\u0107 (arXiv:2108.01162, 2021). That paper proves that every graph of bounded maximum degree with sufficiently large treewidth must contain either a theta or a triangle as an induced subgraph; by contrapositive this immediately gives bounded treewidth for (theta, triangle)-free graphs of bounded maximum degree, settling the open question for all $t$. The internal reference arXiv:2203.06775 addresses a related but distinct conjecture (Conjecture 1.5 of the source paper) about (even hole, diamond, pyramid, $K_t$)-free graphs.",
+  "since_posted": [
+    {
+      "title": "Induced subgraphs and tree decompositions II. Toward walls and their line graphs in graphs of bounded degree",
+      "authors": "Tara Abrishami, Maria Chudnovsky, Cemil Dibek, Sepehr Hajebi, Paweł Rzążewski, Sophie Spirkl, Kristina Vušković",
+      "year": 2021,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2108.01162",
+      "arxiv_id": "2108.01162",
+      "doi": null,
+      "kind": "proof",
+      "claim": "Proves that every graph of bounded maximum degree with sufficiently large treewidth contains either a theta or a triangle as an induced subgraph, affirmatively answering the question from arXiv:2001.01607 (the contrapositive yields bounded treewidth for (theta, triangle)-free bounded-degree graphs for all $t\\geq 4$)."
+    }
+  ],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2203.06775",
+      "verified": true,
+      "note": "Paper exists and addresses treewidth for (even hole, diamond, pyramid, K_t)-free graphs (Theorem 1.4), which is a special case of Conjecture 1.5 of the source paper — a related but distinct conjecture from the bounded-degree open question reviewed here. The WebFetch of the abstract did not explicitly mention the bounded-degree question."
+    }
+  ],
+  "search_queries": [
+    "theta triangle-free graphs bounded degree treewidth Pilipczuk Sintiari Thomassé Trotignon 2001.01607",
+    "theta triangle-free maximum degree treewidth bounded 2022 2023 2024",
+    "Dibek Rzążewski Vušković theta triangle-free bounded degree treewidth bounded"
+  ],
+  "notes": "The open question is logically equivalent to: does every bounded-degree graph with sufficiently large treewidth contain a theta or a triangle? arXiv:2108.01162 affirmatively answers this equivalent form. Confidence is medium rather than high because the WebFetch analysis of 2108.01162 described the result as answering 'a related but narrower question,' and the full paper text was not read to confirm the exact theorem statement; however, the mathematical equivalence is clear and multiple secondary sources confirm the resolution."
+}

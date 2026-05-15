@@ -1,0 +1,22 @@
+{
+  "review_id": "2511.02892__03",
+  "safe_id": "2511.02892",
+  "arxiv_id": "2511.02892",
+  "conjecture_title": "Problem 4.1",
+  "paper_title": "Open problems of the 33rd Workshop on Cycles and Colourings",
+  "published": "2025-11-04",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Problem 4.1 asks whether every diamond-free claw-free cubic graph is strongly 6-edge-colorable, equivalently whether $\\chi'_s(T(G))=6$ for every cubic graph $G$. Before the November 2025 posting, Han and Cui (2023) confirmed the conjecture for truncated prisms as a partial result, while Lv, Li, and Zhang (2022) proved $\\chi'_s \\le 8$ and Lin and Lin (2023) established the tight bound of 7 for the broader class of claw-free subcubic graphs. No post-November 2025 paper resolving the full conjecture was found.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "strong chromatic index claw-free cubic graph diamond-free 6-edge-colorable",
+    "strong edge coloring truncated prism claw-free subcubic graph strong chromatic index",
+    "Han Cui strong 6-edge-colorable truncated prism cubic graph arXiv 2024 2025"
+  ],
+  "notes": "The conjecture was posed in November 2025. Relevant prior work: Han and Cui (2023) proved χ'_s(T(G))=6 for all truncated n-prisms (partial case); Lin and Lin (2023) proved the tight bound 7 for claw-free subcubic graphs generally; Lv, Li, and Zhang (2022) proved the bound 8 for the same class. These papers predate the conjecture's posting and are not listed in since_posted. No follow-up paper resolving Problem 4.1 in full was found in the indexed literature."
+}

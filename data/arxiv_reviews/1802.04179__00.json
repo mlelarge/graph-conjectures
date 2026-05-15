@@ -1,0 +1,35 @@
+{
+  "review_id": "1802.04179__00",
+  "safe_id": "1802.04179",
+  "arxiv_id": "1802.04179",
+  "conjecture_title": "Problem 1.3",
+  "paper_title": "Planar graphs without cycles of length 4 or 5 are (11:3)-colorable",
+  "published": "2019-07-14",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The exact infimum of fractional chromatic numbers of planar graphs without cycles of length 4 or 5 remains open. The original upper bound of 11/3 from the source paper was subsequently improved to 7/2 by Wang (referenced in arXiv:2511.12914). A November 2025 paper (arXiv:2511.12914) further establishes that these graphs are (7m:2m)-DP-colorable for every positive integer m, confirming the 7/2 upper bound via DP-coloring. The lower bound is 3, so the infimum lies in [3, 7/2].",
+  "since_posted": [
+    {
+      "title": "Planar graphs without cycles of length 4 or 5 are (7m:2m)-DP-colorable",
+      "authors": "unknown (see arXiv:2511.12914)",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2511.12914",
+      "arxiv_id": "2511.12914",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves that planar graphs without cycles of length 4 or 5 are (7m:2m)-DP-colorable for any positive integer m, extending Wang's (7:2)-colorability result and improving the upper bound on the fractional chromatic number from 11/3 to 7/2."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "fractional chromatic number planar graphs without cycles length 4 5 infimum",
+    "Dvořák Hu planar graphs 11:3 colorable fractional chromatic 1802.04179",
+    "Wang planar graphs without cycles length 4 5 (7:2)-colorable fractional chromatic",
+    "Wang \"planar graphs\" \"without\" \"4\" \"5\" \"(7:2)-colorable\" OR \"(7,2)-colorable\" arxiv"
+  ],
+  "notes": "Wang's paper proving (7:2)-colorability is cited in arXiv:2511.12914 but its full bibliographic details (title, year, venue, arXiv ID) could not be retrieved within the 5-call budget. The 2511.12914 paper was verified via WebFetch. The conjecture (exact infimum) remains open with best known bounds 3 ≤ inf ≤ 7/2."
+}

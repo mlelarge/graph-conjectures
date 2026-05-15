@@ -1,0 +1,48 @@
+[
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Schur–Erdős Problem on R(p; m)",
+    "statement_text": "Is it true that $R(p; m) = 2^{O(m)}$ for every fixed $p \\geq 3$?",
+    "context_text": "Schur (1916) proved the existence of $R(3; m)$ and established $\\Omega(2^m) \\leq R(3; m) \\leq O(m!)$. It is a major open problem in Ramsey theory, for which Erdős offered prize money, to close the gap; the current lower-bound record is $R(3; m) \\geq \\Omega(3.199^m)$ due to Xiaodong et al.",
+    "attributed_to": "Schur and Erdős",
+    "attributed_year": 1916,
+    "paper_contribution": "Proves that $R_{d,t}(p; m) = 2^{O(m)}$ for every fixed $p \\geq 3$ and fixed $d, t \\geq 1$ when each color class is defined by a semi-algebraic relation of complexity at most $t$, and shows the order of magnitude is tight.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "Described as an open problem in prose without a labelled conjecture environment; PDF source — math may be garbled.",
+    "arxiv_id": "1505.07429",
+    "paper_title": "Semi-algebraic colorings of complete graphs",
+    "paper_authors": [
+      "Jacob Fox",
+      "Janos Pach",
+      "Andrew Suk"
+    ],
+    "published": "2018-12-05",
+    "abs_url": "https://arxiv.org/abs/1505.07429",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Erdős–Shelah Problem on multicolor clique-coloring thresholds",
+    "statement_text": "For positive integers $p \\geq 3$ and $2 \\leq q \\leq \\binom{p}{2}$, determine how the minimum number of colors $m$ needed so that any $m$-coloring of $K_n$ forces every $p$ vertices to span at least $q$ distinct colors depends on $n$, $p$, and $q$.",
+    "context_text": "Erdős and Shelah posed a general Ramsey-type problem asking for the minimum number of colors in an edge-coloring of $K_n$ such that every $p$ vertices induce at least $q$ colors. The paper introduces $f_{d,t}(n,p,q)$ as the semi-algebraic analogue and applies the multicolored regularity lemma (Theorem 1.2) to resolve the threshold.",
+    "attributed_to": "Erdős and Shelah",
+    "attributed_year": null,
+    "paper_contribution": "Solves the semi-algebraic variant: for fixed $d, t \\geq 1$ and $p \\geq 3$, proves $f_{d,t}(n, p, \\lceil \\log p \\rceil + 1) \\geq \\Omega(n^{1/(c\\log^2 p)})$ and (for $t \\geq 4$) $f_{d,t}(n, p, \\lceil \\log p \\rceil) \\leq O(\\log n)$, precisely locating the transition from logarithmic to polynomial in $n$.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "The original Erdős–Shelah problem statement is not reproduced verbatim; inferred from the paper's description of the semi-algebraic variant. PDF source — math may be garbled.",
+    "arxiv_id": "1505.07429",
+    "paper_title": "Semi-algebraic colorings of complete graphs",
+    "paper_authors": [
+      "Jacob Fox",
+      "Janos Pach",
+      "Andrew Suk"
+    ],
+    "published": "2018-12-05",
+    "abs_url": "https://arxiv.org/abs/1505.07429",
+    "source": "pdf"
+  }
+]

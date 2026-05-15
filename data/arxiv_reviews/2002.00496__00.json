@@ -1,0 +1,23 @@
+{
+  "review_id": "2002.00496__00",
+  "safe_id": "2002.00496",
+  "arxiv_id": "2002.00496",
+  "conjecture_title": "Informal Conjecture on Universal N0 for Bumping a Ladder",
+  "paper_title": "Excluding a ladder",
+  "published": "2021-04-06",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The conjecture asks whether the value of N in Theorem 2 (Bumping a ladder) can be taken as a universal constant N0 independent of k, possibly N0=4. The source paper (published in Combinatorica 2022) leaves this as an open question. A broad web search across arXiv and journal literature through May 2026 found no follow-up paper that resolves or makes partial progress on the universal-N0 question; the conjecture appears to remain open.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "arXiv 2002.00496 \"excluding a ladder\" Huynh Joret Micek Seweryn Wollan citing",
+    "\"ladder minor\" \"3-connected\" \"bumping\" graph theory \"vertex-disjoint\" universal constant",
+    "Seweryn \"ladder\" minor \"bumping\" \"universal\" OR \"N_0\" graph 2022 2023 2024 2025",
+    "Huynh Joret Micek Seweryn Wollan \"ladder\" minor 2023 2024 2025 arXiv graph conjecture"
+  ],
+  "notes": "No follow-up found after 5 web calls. The paper was published in Combinatorica 42 (2022) 405-432. Recent arXiv papers on related topics (e.g., arXiv:2501.11617 on excluding rectangular grid minors, arXiv:2508.04445 on 2-treedepth) were identified in search results but none appear to address the universal-N0 question directly. The conjecture is recent (source paper 2021) and the absence of any citing follow-up is consistent with it remaining open."
+}

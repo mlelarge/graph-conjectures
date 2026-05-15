@@ -1,0 +1,23 @@
+{
+  "review_id": "2206.10733__00",
+  "safe_id": "2206.10733",
+  "arxiv_id": "2206.10733",
+  "conjecture_title": "Open problem on happy triples for $l < k/2$",
+  "paper_title": "Improved bounds for the triangle case of Aharoni's rainbow generalization of the Caccetta-Häggkvist conjecture",
+  "published": "2023-09-11",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The open problem asks for the best upper bound on the number of happy triples in a graph with $k$ edges and maximum degree at most $l$ in the regime $l < k/2$. Lemma 2 of arXiv:2206.10733 settles the $l \\geq k/2$ case with tight extremal graphs, but the authors explicitly note that their dynamic-programming approach gives no insight into the $l < k/2$ regime. A wide web search found no follow-up work addressing this specific open problem.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "happy triples maximum degree edges graph Caccetta-Häggkvist rainbow Hompe Qu Spirkl 2206.10733",
+    "\"happy triples\" graph edges maximum degree upper bound extremal",
+    "Hompe Spirkl \"happy triple\" OR \"happy triples\" edges maximum degree 2023 2024 graph theory",
+    "arxiv 2206.10733 cite \"happy triple\" rainbow triangle Caccetta Häggkvist 2024 2025"
+  ],
+  "notes": "No follow-up found after 5 web calls. The term 'happy triples' appears to be internal to arXiv:2206.10733 and has not been adopted in subsequent literature indexed by web search. The $l < k/2$ regime remains open as of May 2026."
+}

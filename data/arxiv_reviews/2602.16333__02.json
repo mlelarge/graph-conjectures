@@ -1,0 +1,21 @@
+{
+  "review_id": "2602.16333__02",
+  "safe_id": "2602.16333",
+  "arxiv_id": "2602.16333",
+  "conjecture_title": "Question 4.3",
+  "paper_title": "Long cycles in vertex transitive digraphs",
+  "published": "2026-02-18",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Question 4.3 of arXiv:2602.16333 asks whether vertex transitivity is sufficient to guarantee that any two longest directed cycles in a connected vertex-transitive digraph share a common vertex. The closely related paper arXiv:2508.17438 (Ma–Zhao, 2025) resolves Babai's analogous 1979 problem for undirected vertex-transitive graphs, showing that longest cycles must intersect in at least f(n) vertices where f(n)→∞; however, that work is confined to undirected graphs and does not address the directed case. No follow-up paper resolving the directed version has been found in the indexed literature.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "vertex transitive digraph longest directed cycles intersection common vertex 2602.16333",
+    "longest cycles vertex transitive digraph intersection 2025 2026 Bucic Hendrey Mohar Steiner Yepremyan"
+  ],
+  "notes": "arXiv:2508.17438 (Ma–Zhao, 'Intersections of longest cycles in vertex-transitive and highly connected graphs', August 2025) is the closest related work but treats undirected graphs only; it does not cite 2602.16333 and does not address Question 4.3. The conjecture is very recent (February 2026) and no resolution was found after a broad web search."
+}

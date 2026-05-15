@@ -1,0 +1,24 @@
+{
+  "review_id": "2308.15387__00",
+  "safe_id": "2308.15387",
+  "arxiv_id": "2308.15387",
+  "conjecture_title": "Conjecture 4.2",
+  "paper_title": "The power of many colours",
+  "published": "2024-06-10",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 4.2 from arXiv:2308.15387 posits the precise asymptotic $f(n,r,s)=\\frac{s^{2}(\\log r)^{1-o_{r}(1)}}{r}\\cdot n$ in the regime $1\\leq s\\leq\\sqrt{r}/\\log r$; the paper itself only establishes this up to an absolute constant factor (between 4 and 8). The paper was published in Forum of Mathematics, Sigma (December 2024) without resolving the conjecture. No follow-up paper resolving or substantially advancing Conjecture 4.2 was found in a targeted search of arXiv and the authors' subsequent work.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Alon Bucić Christoph Krivelevich \"power of many colours\" f(n,r,s) edge colouring complete graph follow-up 2024 2025",
+    "arXiv 2308.15387 \"power of many colours\" citing papers f(n,r,s) conjecture",
+    "f(n,r,s) \"s colours\" \"r-edge colouring\" \"complete graph\" conjecture 2025 2026 arXiv",
+    "Bucić Christoph \"power of many colours\" \"Conjecture 4.2\" OR \"f(n,r,s)\" 2025 2026",
+    "arXiv author search Micha Christoph papers list"
+  ],
+  "notes": "No follow-up found. The conjecture is recent (paper published June 2024 in Forum of Mathematics, Sigma). Micha Christoph's subsequent arXiv papers (2024–2026) do not address f(n,r,s). The conjecture is closely related to the classical monochromatic connectivity problem and the results of Liu–Morris–Prince (2007). The gap between upper and lower bounds in the paper is a constant factor (4 to 8); the conjecture asserts the lower bound is the truth up to a $(\\log r)^{o(1)}$ factor."
+}

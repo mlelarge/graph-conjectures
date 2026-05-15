@@ -1,0 +1,24 @@
+{
+  "review_id": "2111.00532__02",
+  "safe_id": "2111.00532",
+  "arxiv_id": "2111.00532",
+  "conjecture_title": "Informal: characterization of graphs with the strong transversal property",
+  "paper_title": "Pure pairs. IX. Transversal trees",
+  "published": "2024-02-06",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The question of which graphs H have the strong transversal property — i.e., for which H there exists epsilon > 0 guaranteeing a B-transversal copy of H in every graph with an (epsilon W, epsilon W)-cohesive blockade of local degree less than epsilon W — is posed as an open problem in Section 2 of the source paper. The paper establishes that H must be a forest, proves the property for paths and certain caterpillar-like trees, and shows it fails for trees containing a vertex of degree d with 2^{d-1} >= |H|. No complete characterization has been found, and no follow-up paper resolving or substantially extending this question was found in five targeted web searches covering arXiv and the published literature through May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Scott Seymour Spirkl \"strong transversal property\" \"pure pairs\" transversal trees forest",
+    "arxiv 2111.00532 \"transversal trees\" \"cohesive blockade\" strong transversal property characterization",
+    "WebFetch https://arxiv.org/abs/2305.05713 (On density conditions for transversal trees in multipartite graphs)",
+    "WebFetch https://arxiv.org/abs/2310.06354 (Transversals in a collections of trees)",
+    "WebFetch https://arxiv.org/abs/2111.00532 (source paper abstract page)"
+  ],
+  "notes": "Two superficially related arXiv papers were checked: arXiv:2305.05713 studies density thresholds for connected/Hamiltonian transversals in multipartite graphs (a different setting, not blockades/local-degree conditions), and arXiv:2310.06354 studies rainbow transversals in families of trees — neither addresses the strong transversal property as defined in 2111.00532. The source paper was published in SIAM J. Discrete Math. 38(1), 2024, pp. 645–667. No follow-up found."
+}

@@ -1,0 +1,29 @@
+[
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Question 1 (Question 5.2 in Fujiwara–Papasoglu)",
+    "statement_text": "Is there a constant $k$ such that for any graph $H$, the class of $H$-minor free graphs has asymptotic dimension at most $k$? Can we take $k = 2$?",
+    "context_text": "Fujiwara and Papasoglu proved that the class of planar graphs has asymptotic dimension at most 3 and asked whether there exists a uniform upper bound on the asymptotic dimension of proper minor-closed families. Ostrovskii and Rosenthal had earlier proved that for every integer $t$, the class of $K_t$-minor free graphs has asymptotic dimension at most $4t$; this question is posed as a possible common strengthening of both results.",
+    "attributed_to": "Fujiwara and Papasoglu",
+    "attributed_year": null,
+    "paper_contribution": "Proves that for any graph $H$ the class of $H$-minor free graphs has asymptotic dimension at most 2 (Theorem 1.1), giving a complete and optimal solution to both parts of the question.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "The paper text is truncated; additional conjectures or questions appearing later in the manuscript may not be captured here.",
+    "arxiv_id": "2012.02435",
+    "paper_title": "Asymptotic Dimension of Minor-Closed Families and Assouad-Nagata Dimension of Surfaces",
+    "paper_authors": [
+      "Marthe Bonamy",
+      "Nicolas Bousquet",
+      "Louis Esperet",
+      "Carla Groenland",
+      "Chun-Hung Liu",
+      "François Pirot",
+      "Alex Scott"
+    ],
+    "published": "2021-05-21",
+    "abs_url": "https://arxiv.org/abs/2012.02435",
+    "source": "pdf"
+  }
+]

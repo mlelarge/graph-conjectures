@@ -1,0 +1,50 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Erdős-Hajnal Conjecture (Conjecture 1.1)",
+    "statement_text": "For every graph $H$, there exists $c > 0$ such that every $H$-free graph $G$ satisfies $\\alpha(G)\\omega(G) \\geq |G|^c$.",
+    "context_text": "The Erdős-Hajnal conjecture is a central open problem asserted for every graph $H$ and every proper ideal of graphs. The paper proves the Erdős-Hajnal property (as a corollary of its main result) for the special class of ideals defined by excluding a forest $H$ and its complement simultaneously.",
+    "attributed_to": "Erdős and Hajnal",
+    "attributed_year": 1989,
+    "paper_contribution": "Proves that for every forest $H$ there exists $c > 0$ such that every graph $G$ that is both $H$-free and $\\bar{H}$-free satisfies $\\alpha(G)\\omega(G) \\geq |G|^c$, establishing the Erdős-Hajnal property for all finitely-defined ideals excluding a forest and its complement.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1809.00919",
+    "paper_title": "Pure pairs. I. Trees and linear anticomplete pairs",
+    "paper_authors": [
+      "Maria Chudnovsky",
+      "Alex Scott",
+      "Paul Seymour",
+      "Sophie Spirkl"
+    ],
+    "published": "2020-09-06",
+    "abs_url": "https://arxiv.org/abs/1809.00919",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Liebenau-Pilipczuk Conjecture (1.2)",
+    "statement_text": "For every forest $H$, there exists $\\varepsilon > 0$ such that for every graph $G$ with $|G| > 1$ that is both $H$-free and $\\bar{H}$-free, there is a pure pair $(A, B)$ with $|A|, |B| \\geq \\varepsilon|G|$.",
+    "context_text": "Liebenau and Pilipczuk conjectured this strong Erdős-Hajnal property for all forests, building on prior results for paths (Bousquet–Lagoutte–Thomassé), paths with an added leaf (Choromanski et al.), and subdivided caterpillars (Liebenau–Pilipczuk–Seymour–Spirkl). The random graph argument shows forests are the only graphs for which this can hold.",
+    "attributed_to": "Liebenau and Pilipczuk",
+    "attributed_year": null,
+    "paper_contribution": "Proves the conjecture in full generality as a consequence of the paper's main result (Theorem 1.4) combined with Rödl's theorem; this completes the classification of finitely-defined ideals with the strong Erdős-Hajnal property.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1809.00919",
+    "paper_title": "Pure pairs. I. Trees and linear anticomplete pairs",
+    "paper_authors": [
+      "Maria Chudnovsky",
+      "Alex Scott",
+      "Paul Seymour",
+      "Sophie Spirkl"
+    ],
+    "published": "2020-09-06",
+    "abs_url": "https://arxiv.org/abs/1809.00919",
+    "source": "pdf"
+  }
+]

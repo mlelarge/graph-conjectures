@@ -1,0 +1,22 @@
+{
+  "review_id": "2109.09205__00",
+  "safe_id": "2109.09205",
+  "arxiv_id": "2109.09205",
+  "conjecture_title": "Informal Belief on Non-Optimality of p-Goodness Bound",
+  "paper_title": "Ramsey goodness of books revisited",
+  "published": "2023-07-14",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "Fox, He, and Wigderson establish in Theorem 1.1 of arXiv:2109.09205 that every book $B_{k,n}$ with $n \\geq 2^{k^{10p}}$ is $p$-good, and remark (without formal conjecture) that this bound is not best possible. No verified follow-up paper that explicitly improves this bound was found. A 2025 Discrete Mathematics paper titled 'Ramsey goodness of large books revisited' exists on ScienceDirect but was inaccessible for content verification.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Fox He Wigderson \"Ramsey goodness of books\" arXiv 2109.09205 bound improvement",
+    "Ramsey goodness books p-good bound \"2^{k^{10p}}\" improved 2024 2025",
+    "\"Ramsey goodness of large books\" arXiv improved bound p-good 2024 2025"
+  ],
+  "notes": "A 2025 paper titled 'Ramsey goodness of large books revisited' (Discrete Mathematics, ScienceDirect pii/S0012365X2500545X) appeared in searches but returned HTTP 403 and could not be verified for content. It may address the bound, but cannot be confirmed. Confidence is medium rather than high due to this unverified candidate. The informal belief is a soft authorial remark in the concluding section, not a formal conjecture with a precise target bound."
+}

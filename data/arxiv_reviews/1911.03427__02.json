@@ -1,0 +1,34 @@
+{
+  "review_id": "1911.03427__02",
+  "safe_id": "1911.03427",
+  "arxiv_id": "1911.03427",
+  "conjecture_title": "Informal Conjecture (Polynomial Quantitative Bound for Complexity 1 Systems)",
+  "paper_title": "Induced arithmetic removal: complexity 1 patterns over finite fields",
+  "published": "2019-11-08",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "The conjecture that $\\delta = \\epsilon^{O_A(1)}$ (polynomial dependence) holds for complexity 1 systems in the induced arithmetic removal lemma over finite fields remains open as of May 2026. A 2024 follow-up (arXiv:2412.15170) extends the qualitative removal result to all partition-regular patterns of complexity 1 but does not address the polynomial quantitative bound and inherits tower-type bounds from Green's arithmetic regularity lemma. No paper establishing or refuting polynomial dependence for the general complexity 1 case was found in the literature.",
+  "since_posted": [
+    {
+      "title": "Induced arithmetic removal for partition-regular patterns of complexity 1",
+      "authors": "not retrieved",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2412.15170",
+      "arxiv_id": "2412.15170",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Extends the induced arithmetic removal result to all partition-regular patterns of complexity 1, achieving complete pattern elimination with no exceptions, but does not address the polynomial quantitative conjecture $\\delta = \\epsilon^{O(1)}$ and retains tower-type bounds."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Fox Tidor Zhao \"induced arithmetic removal\" \"complexity 1\" polynomial bounds finite fields",
+    "arXiv 1911.03427 Fox Tidor Zhao complexity 1 systems polynomial quantitative",
+    "\"complexity 1\" \"arithmetic removal\" \"polynomial bounds\" OR \"polynomial dependence\" \"delta\" \"epsilon\" finite fields 2020 2021 2022 2023 2024"
+  ],
+  "notes": "Reference [20] in the source paper (cited for further discussion of the quantitative question) is likely the Alon–Fox paper on efficient arithmetic regularity and removal lemmas for induced bipartite patterns (Discrete Analysis 2019). The 2024 paper arXiv:2412.15170 qualitatively extends the main theorem to partition-regular patterns but makes no progress on the polynomial quantitative conjecture. Authors of arXiv:2412.15170 could not be retrieved within the web call budget. The source paper describes the quantitative question as 'wide open', and no evidence of subsequent resolution was found."
+}

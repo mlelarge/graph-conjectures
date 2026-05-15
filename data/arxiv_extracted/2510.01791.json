@@ -1,0 +1,52 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.2",
+    "statement_text": "Any $n$-vertex graph with fewer than $3n-6$ edges admits a bipartite cut, while some graphs with $3n-6$ edges do not. In particular, $\\ell_{3}=3$.",
+    "context_text": "The case $k=3$ was investigated by Bogdanov, Neustroeva, Sokolov, Volostnov, Russkin, and Voronov, who formulated this conjecture. The extremal examples are provided by $3$-trees. Partial progress on related statements (forest cuts and bipartite cuts) was obtained in the same work and subsequently by Botler et al. and Cheng, Tang and Zhan.",
+    "attributed_to": "Bogdanov, Neustroeva, Sokolov, Volostnov, Russkin, and Voronov",
+    "attributed_year": 2025,
+    "paper_contribution": "The paper does not directly prove or disprove Conjecture 1.2; it cites it as motivation for the general Conjecture 1.3, which the paper refutes for all sufficiently large $k$, showing that $\\ell_k \\sim \\frac{k}{2}$ rather than $\\ell_k = k$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2510.01791",
+    "paper_title": "On cuts of small chromatic number in sparse graphs",
+    "paper_authors": [
+      "Guillaume Aubian",
+      "Marthe Bonamy",
+      "Romain Bourneuf",
+      "Oscar Fontaine",
+      "Lucas Picasarri-Arrieta"
+    ],
+    "published": "2025-10-02",
+    "abs_url": "https://arxiv.org/abs/2510.01791",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.3",
+    "statement_text": "For every integer $k$ and every graph $G$ on at least $k$ vertices, if $$|E(G)|<k|V(G)|-\\tfrac{k(k+1)}{2},$$ then $G$ admits a cut $X$ with $\\chi(G[X])<k$. In particular, $\\ell_{k}=k$.",
+    "context_text": "Motivated by the confirmed cases $\\ell_1=1$, $\\ell_2=2$ (Theorem 1.1), and the conjectured $\\ell_3=3$ (Conjecture 1.2), the paper's authors propose this bold generalization asserting that $\\ell_k=k$ for all $k$. The main purpose of the paper is then to show that this conjecture is far from correct.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "This conjecture is introduced by the paper's own authors and immediately refuted within the same paper: Theorem 1.4 shows $\\ell_k \\leq (1+\\varepsilon)\\frac{k}{2}$ for all sufficiently large $k$, so that asymptotically $\\ell_k \\sim \\frac{k}{2}$ rather than $\\ell_k = k$.",
+    "arxiv_id": "2510.01791",
+    "paper_title": "On cuts of small chromatic number in sparse graphs",
+    "paper_authors": [
+      "Guillaume Aubian",
+      "Marthe Bonamy",
+      "Romain Bourneuf",
+      "Oscar Fontaine",
+      "Lucas Picasarri-Arrieta"
+    ],
+    "published": "2025-10-02",
+    "abs_url": "https://arxiv.org/abs/2510.01791",
+    "source": "html"
+  }
+]

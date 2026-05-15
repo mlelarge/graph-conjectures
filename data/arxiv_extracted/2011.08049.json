@@ -1,0 +1,46 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.1",
+    "statement_text": "Approximating the genus of cubic graphs is APX-hard.",
+    "context_text": "In the spherical density regime (graphs with average degree at most 6), there is no evidence of efficient constant-factor approximation algorithms for the genus. The second named author conjectured in prior work (2018) that approximation in this range is hard; the conjecture is stated at the outset to motivate the paper's focus on the dense-graph regime where tractable approximation is possible.",
+    "attributed_to": "Mohar",
+    "attributed_year": 2018,
+    "paper_contribution": "States the conjecture as background motivation for focusing on the dense-graph regime; the paper does not prove or disprove it.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "The attributed author (Mohar, 2018) is also the second named author of this paper; the conjecture originates from a prior 2018 work, not the present paper.",
+    "arxiv_id": "2011.08049",
+    "paper_title": "Efficient polynomial-time approximation scheme for the genus of dense graphs",
+    "paper_authors": [
+      "Yifan Jing",
+      "Bojan Mohar"
+    ],
+    "published": "2024-08-27",
+    "abs_url": "https://arxiv.org/abs/2011.08049",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Open Problem (Spherical Density Regime)",
+    "statement_text": "Determine whether efficient constant-factor approximation algorithms exist for the genus of graphs with average degree at most 6 (spherical density regime), or prove that approximating the genus in this regime is hard.",
+    "context_text": "The authors partition the genus approximation problem into three density regimes. The spherical density regime (average degree $\\leq 6$) is described as 'probably most interesting'; no efficient constant-factor approximation algorithm is known for it, and the authors identify resolving this as 'the major open problem'. Conjecture 1.1 (APX-hardness for cubic graphs) is the leading candidate resolution.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated in prose: 'resolving this is the major open problem'; no formal labelled theorem environment.",
+    "arxiv_id": "2011.08049",
+    "paper_title": "Efficient polynomial-time approximation scheme for the genus of dense graphs",
+    "paper_authors": [
+      "Yifan Jing",
+      "Bojan Mohar"
+    ],
+    "published": "2024-08-27",
+    "abs_url": "https://arxiv.org/abs/2011.08049",
+    "source": "html"
+  }
+]

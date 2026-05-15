@@ -1,0 +1,23 @@
+{
+  "review_id": "1905.05312__00",
+  "safe_id": "1905.05312",
+  "arxiv_id": "1905.05312",
+  "conjecture_title": "Conjecture 1.1",
+  "paper_title": "Books versus triangles at the extremal density",
+  "published": "2019-10-20",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Conjecture 1.1 remains open in full generality. The authors themselves proved it for the boundary case b = n/6 and for the near-upper-boundary range 0.2495n ≤ b < n/4, leaving the bulk of the interval n/6 < b < 0.2495n unresolved. No subsequent paper resolving the remaining cases was found in the indexed literature as of May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Conlon Fox Sudakov \"books versus triangles\" extremal density conjecture 1905.05312",
+    "book number triangles extremal density \"3-prism\" blowup graph conjecture",
+    "Mubayi \"book number\" triangles extremal graph Conjecture 1.1 Conlon Fox Sudakov progress 2020 2021 2022 2023 2024",
+    "arxiv \"books versus triangles\" \"extremal density\" cite 1905.05312 triangles book number 2021 2022 2023 2024 2025"
+  ],
+  "notes": "The conjecture was partially proved in the source paper itself: it holds at b = n/6 and for 0.2495n ≤ b < n/4. Web searches and a Semantic Scholar citation query returned no follow-up paper resolving the remaining range n/6 < b < 0.2495n. The conjecture is classified as partial (proved in special cases by the authors) with high confidence that no full resolution has appeared."
+}

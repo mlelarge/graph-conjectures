@@ -1,0 +1,24 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "KAMAK tree conjecture (Conjecture 1.2)",
+    "statement_text": "Every grounded forest is $\\delta^{+}$-enforcible.",
+    "context_text": "Hons, Klimošová, Kucheriya, Mikšaník, Tkadlec, and Tyomkyn studied which digraphs must appear as a subgraph in every digraph of sufficiently large minimum out-degree, showed that all such digraphs must be oriented forests with a specific (grounded) structure, and conjectured that vice-versa every grounded forest is $\\delta^{+}$-enforcible. The conjecture reduces to the case of oriented trees (connected components), since disjoint copies can be embedded sequentially.",
+    "attributed_to": "Hons, Klimošová, Kucheriya, Mikšaník, Tkadlec, and Tyomkyn",
+    "attributed_year": 2025,
+    "paper_contribution": "Proves the conjecture in full: every grounded forest is $\\delta^{+}$-enforcible, i.e., it appears as a subdigraph in every digraph of sufficiently large minimum out-degree.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2505.21367",
+    "paper_title": "Proof of the KAMAK tree conjecture",
+    "paper_authors": [
+      "Micha Christoph",
+      "Raphael Steiner"
+    ],
+    "published": "2025-05-27",
+    "abs_url": "https://arxiv.org/abs/2505.21367",
+    "source": "html"
+  }
+]

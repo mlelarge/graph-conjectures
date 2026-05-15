@@ -1,0 +1,46 @@
+[
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Tiwary's Open Problem on Matching Lower Bound for Convex Independence in Minkowski Sums",
+    "statement_text": "Does there exist a matching lower bound for $\\mathrm{ci}(P + Q) = O\\bigl((n+m)\\log(n+m)\\bigr)$ when $P$ and $Q$ are a convex $n$-gon and a convex $m$-gon, respectively?",
+    "context_text": "Tiwary (2014) proved that $\\mathrm{ci}(P+Q) = O((n+m)\\log(n+m))$ when $P$ and $Q$ are convex polygons, remarking that the bound seemed very generous. He explicitly left as an open problem whether this upper bound is tight, i.e., whether a matching lower bound construction exists.",
+    "attributed_to": "Tiwary",
+    "attributed_year": 2014,
+    "paper_contribution": "Resolves the problem affirmatively by exhibiting families $(P_k)_{k>1}$ and $(Q_k)_{k>1}$ of convexly independent sets with $|P_k| = |Q_k| = 2^k$ and $\\mathrm{ci}(P_k + Q_k) > (k+2)2^{k-1}$, establishing $\\mathrm{ci}(P+Q) = \\Theta(n \\log n)$ for convex $n$-gons.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1903.11287",
+    "paper_title": "Convexly independent subsets of Minkowski sums of convex polygons",
+    "paper_authors": [
+      "Mateusz Skomra",
+      "Stéphan Thomassé"
+    ],
+    "published": "2021-06-02",
+    "abs_url": "https://arxiv.org/abs/1903.11287",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Open Question on Convex Unit Distance Realization of Graphs $G_k$",
+    "statement_text": "Can the graphs $G_k$ arising from the construction be realized as convex unit distance graphs?",
+    "context_text": "The construction yields a family of bipartite graphs $(G_k)_{k\\geq 1}$ with $2^{k+1}$ vertices and $(k+2)2^{k-1}$ edges, connected to the Erdős–Moser unit distance problem for convex $n$-gons. The authors note that if $G_k$ cannot be so realized, finding a forbidden pattern in $G_k$ would extend the list of forbidden matrices of Aggarwal [1], since none of those matrices appears in $G_k$.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated in running prose without a labelled environment; a secondary conditional direction (finding forbidden patterns in $G_k$) is folded into the same passage.",
+    "arxiv_id": "1903.11287",
+    "paper_title": "Convexly independent subsets of Minkowski sums of convex polygons",
+    "paper_authors": [
+      "Mateusz Skomra",
+      "Stéphan Thomassé"
+    ],
+    "published": "2021-06-02",
+    "abs_url": "https://arxiv.org/abs/1903.11287",
+    "source": "pdf"
+  }
+]

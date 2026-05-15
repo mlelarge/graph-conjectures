@@ -1,0 +1,44 @@
+[
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Informal Conjecture (Section 1.2): dropping bounded-degree assumption",
+    "statement_text": "It seems plausible that this additional assumption [bounded maximum degree] could be dropped, leading to a much more general result strengthening majority of the algorithms mentioned in the previous subsection.",
+    "context_text": "The paper proves that subgraph-closed graph classes with strongly sublinear separators admit thin systems of overlays under the additional assumption that their maximum degree is bounded. The authors conjecture this extra condition is unnecessary, which would subsume a much wider class of results.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated informally in the 'Limitations of our technique' subsection; no labelled theorem environment.",
+    "arxiv_id": "1704.00125",
+    "paper_title": "Thin graph classes and polynomial-time approximation schemes",
+    "paper_authors": [
+      "Zdeněk Dvořák"
+    ],
+    "published": "2017-04-01",
+    "abs_url": "https://arxiv.org/abs/1704.00125",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Open Problem (Section 1.2): APX-hardness on classes without sublinear separators",
+    "statement_text": "It would be interesting to see whether this intuition can be made precise and for example show that the maximum independent set problem is APX-hard on any subgraph-closed class of graphs that does not have sublinear separators (or at least has exponential expansion).",
+    "context_text": "The paper notes that maximum independent set is APX-hard on bounded-degree graphs, so results cannot extend to classes containing all 3-regular graphs. Classes studied all have strongly sublinear separators; the authors ask whether APX-hardness can be proved for any subgraph-closed class lacking this property.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated as an open research question in prose; no labelled theorem environment.",
+    "arxiv_id": "1704.00125",
+    "paper_title": "Thin graph classes and polynomial-time approximation schemes",
+    "paper_authors": [
+      "Zdeněk Dvořák"
+    ],
+    "published": "2017-04-01",
+    "abs_url": "https://arxiv.org/abs/1704.00125",
+    "source": "pdf"
+  }
+]

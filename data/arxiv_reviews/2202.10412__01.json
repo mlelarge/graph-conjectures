@@ -1,0 +1,23 @@
+{
+  "review_id": "2202.10412__01",
+  "safe_id": "2202.10412",
+  "arxiv_id": "2202.10412",
+  "conjecture_title": "Conjecture 2.3",
+  "paper_title": "Polynomial bounds for chromatic number VI. Adding a four-vertex path",
+  "published": "2023-03-22",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 2.3 from arXiv:2202.10412 would extend the self-isolating property (proved for paths as Corollary 2.4 of the same paper) to brooms, asserting that a graph of sufficiently large chromatic number relative to its clique number and containing no (ψ,q)-scattering must contain a σ-nondominating copy of any given broom H. The authors themselves described it as 'an appealing possible strengthening of 2.2 that we could not prove.' No subsequent paper resolving or substantially advancing this conjecture was found in the literature through May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Chudnovsky Scott Seymour Spirkl \"polynomial bounds chromatic number\" broom \"sigma-nondominating\" 2022 2023",
+    "arxiv 2202.10412 \"Conjecture 2.3\" broom scattering nondominating chromatic",
+    "Chudnovsky Scott Seymour Spirkl broom \"nondominating\" \"scattering\" chromatic polynomial 2024 2025",
+    "\"polynomial bounds for chromatic number\" broom \"self-isolating\" nondominating 2024 2025 arxiv"
+  ],
+  "notes": "No follow-up found. Sophie Spirkl's arXiv listing (arxiv.org/a/spirkl_s_1.html) and Paul Seymour's publication page show no paper specifically addressing sigma-nondominating broom copies or (psi,q)-scattering after 2023. The related 2025 preprint arXiv:2504.21127 (Nguyen, 'On Polynomially High-Chromatic Pure Pairs') extends broom-related poly-chi-bounding results but does not reference Conjecture 2.3 or the scattering/nondominating framework."
+}

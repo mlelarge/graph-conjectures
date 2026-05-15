@@ -1,0 +1,22 @@
+{
+  "review_id": "2511.07601__00",
+  "safe_id": "2511.07601",
+  "arxiv_id": "2511.07601",
+  "conjecture_title": "Conjecture 1.5",
+  "paper_title": "Infinite Schnyder Woods",
+  "published": "2025-11-10",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 1.5 from arXiv:2511.07601 asks whether the unique maximal Schnyder wood of the UIHPT is the weak limit of maximal Schnyder woods of uniformly random triangulations from T^m_n as n → ∞ then m → ∞. The paper establishes the analogous result for fixed boundary length m (Theorem 1.2) but was unable to pass to the m → ∞ limit. No follow-up paper resolving this conjecture was found in searches covering the period through May 2026; the conjecture is less than six months old and almost certainly still open.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Schnyder wood UIHPT weak limit triangulation Addario-Berry 2025 conjecture",
+    "arxiv 2511.07601 \"Infinite Schnyder Woods\" citing papers 2025 2026",
+    "UIHPT Schnyder wood convergence maximal triangulation 2026 Addario-Berry Hogan Michel Scott"
+  ],
+  "notes": "No follow-up found after 4 web calls (1 WebFetch + 3 WebSearch). The conjecture was posted November 2025; as of May 2026 it is very recent. The source paper proves the fixed-m case (Theorem 1.2) and leaves the double limit (n → ∞ then m → ∞) as this open conjecture."
+}

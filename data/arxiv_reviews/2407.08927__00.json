@@ -1,0 +1,34 @@
+{
+  "review_id": "2407.08927__00",
+  "safe_id": "2407.08927",
+  "arxiv_id": "2407.08927",
+  "conjecture_title": "Open Problem: Polynomial-time MWIS on even-hole-free graphs",
+  "paper_title": "Tree Independence Number IV. Even-hole-free Graphs",
+  "published": "2024-07-12",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The source paper (arXiv:2407.08927, published at SODA 2025) establishes a quasi-polynomial-time algorithm for MWIS on even-hole-free graphs by proving that every n-vertex even-hole-free graph has a tree decomposition with each bag having independence number at most c log^{10} n; the polynomial-time question is explicitly left open. A 2026 preprint (arXiv:2604.01816) proves bounded treewidth (≤ 4) for the more restricted class of (even-hole, triangle)-free graphs, implying polynomial-time MWIS for that proper subclass, but the general even-hole-free case remains unresolved. No paper has been found that settles the polynomial-time question for all even-hole-free graphs.",
+  "since_posted": [
+    {
+      "title": "(Even hole, triangle)-free graphs revisited",
+      "authors": "Unknown (not extracted from abstract)",
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2604.01816",
+      "arxiv_id": "2604.01816",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves treewidth ≤ 4 for (theta, triangle, wac)-free graphs (a proper subclass of even-hole-free graphs also excluding triangles), implying polynomial-time MWIS for that restricted subclass but not for general even-hole-free graphs."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Maximum Weight Independent Set even-hole-free graphs polynomial algorithm 2024 2025",
+    "MWIS even-hole-free polynomial time algorithm Chudnovsky Hajebi Spirkl arXiv 2407.08927",
+    "polynomial-time independent set even-hole-free graphs 2025 2026 arxiv"
+  ],
+  "notes": "The source paper itself (SODA 2025) is the strongest known positive result: quasi-polynomial time via tree independence number O(log^10 n). The paper explicitly notes that the quasi-polynomial bound is consistent with NP-hardness, so the complexity of MWIS on even-hole-free graphs remains open. The 2026 paper arXiv:2604.01816 about (even hole, triangle)-free graphs achieves treewidth ≤ 4 for a more restricted subclass; authors were not extractable from the abstract page within the 5-call cap."
+}

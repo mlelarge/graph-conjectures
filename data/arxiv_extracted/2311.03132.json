@@ -1,0 +1,46 @@
+[
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Grünbaum's Problem on Edge Density of 4-Critical Planar Graphs",
+    "statement_text": "Determine the precise value of $L := \\limsup |E(G)|/|V(G)|$ over all $4$-critical planar graphs $G$.",
+    "context_text": "Grünbaum defined $L := \\limsup |E(G)|/|V(G)|$ over all $4$-critical planar graphs $G$, proved $L \\geq 79/39$, and asked for the precise value. The problem is motivated by pre-processing algorithms for $3$-coloring planar graphs: upper bounds on $H(4,n)$ yield polynomial-time edge-reduction steps before applying more expensive algorithms.",
+    "attributed_to": "Grünbaum",
+    "attributed_year": 1988,
+    "paper_contribution": "Proves $L = 2.5$ by constructing, for each sufficiently large integer $m$, a $4$-critical planar graph $P_m$ on at most $m$ vertices with $\\lim_{m\\to\\infty} |E(P_m)|/m = 2.5$, matching the upper bound $L \\leq 2.5$ previously established by Koester (1991).",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2311.03132",
+    "paper_title": "Solution to a problem of Grünbaum on the edge density of $4$-critical planar graphs",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Carl Feghali"
+    ],
+    "published": "2023-11-06",
+    "abs_url": "https://arxiv.org/abs/2311.03132",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Yao–Zhou Conjecture on Edge Density of 4-Critical Planar Graphs",
+    "statement_text": "$L := \\limsup_{G\\,4\\text{-critical planar}} |E(G)|/|V(G)| = 7/3$.",
+    "context_text": "Yao and Zhou established the lower bound $L \\geq 7/3$ and conjectured this to be the exact value. Their bound improved earlier constructions of Grünbaum and Koester, and the conjecture represented the state of the art on the lower-bound side before the present paper.",
+    "attributed_to": "Yao and Zhou",
+    "attributed_year": null,
+    "paper_contribution": "Refutes the conjecture by proving $L = 2.5 > 7/3$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Reference [13] is truncated in the supplied PDF text; publication year cannot be determined from the available content.",
+    "arxiv_id": "2311.03132",
+    "paper_title": "Solution to a problem of Grünbaum on the edge density of $4$-critical planar graphs",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Carl Feghali"
+    ],
+    "published": "2023-11-06",
+    "abs_url": "https://arxiv.org/abs/2311.03132",
+    "source": "pdf"
+  }
+]

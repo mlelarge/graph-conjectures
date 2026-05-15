@@ -1,0 +1,33 @@
+{
+  "review_id": "2410.20498__00",
+  "safe_id": "2410.20498",
+  "arxiv_id": "2410.20498",
+  "conjecture_title": "Conjecture on $\\lambda(d,1)$",
+  "paper_title": "On hypercube statistics",
+  "published": "2024-10-27",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "No follow-up paper has proven or disproven the conjecture that $\\lambda(d,1)=(1+o(1))/e$. A March 2025 paper (arXiv:2503.03408) studies the same $\\lambda(d,s)$ statistics framework using flag algebras, proving exact values for $(d,s)\\in\\{(3,2),(4,2),(4,4)\\}$, but explicitly treats $\\lambda(2,1)$ as an intriguing open problem without addressing the $d\\to\\infty$ asymptotic. An April 2026 preprint (arXiv:2604.13402) extends the framework to affine (non-axis-aligned) subspaces of $\\mathbb{F}_2^n$, motivated by the source paper, but its results concern a different statistic $\\lambda^*(d,s)$ and do not bear on the axis-aligned conjecture.",
+  "since_posted": [
+    {
+      "title": "Some exact values of the inducibility and statistics constants for hypercubes",
+      "authors": "unknown (authors not returned by abstract page fetch)",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2503.03408",
+      "arxiv_id": "2503.03408",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves exact values $\\lambda(3,2)=8/9$, $\\lambda(4,2)=264/343$, $\\lambda(4,4)=26/27$ via flag algebras, and explicitly identifies $\\lambda(2,1)$ as an open problem, but does not address the $d\\to\\infty$ asymptotic of $\\lambda(d,1)$."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Alon Axenovich Goldwasser hypercube statistics lambda arXiv 2410.20498",
+    "hypercube statistics lambda(d,1) 1/e asymptotic 2025 2026"
+  ],
+  "notes": "The conjecture is recent (October 2024) and no resolution was found. arXiv:2503.03408 (March 2025) is the closest follow-up in the same research line: it proves exact values for other (d,s) pairs using flag algebras, cites Alon-Axenovich-Goldwasser as the initiating work, and mentions $\\lambda(d,1)$ cases as open problems, confirming the conjecture remains unresolved as of early 2025. arXiv:2604.13402 (April 2026) is motivated by the source paper but works with affine subspaces and a different statistic $\\lambda^*(d,s)$; for odd $s$ it proves $\\lambda^*(d,s)\\le 1/2$, which is structurally different from the axis-aligned setting."
+}

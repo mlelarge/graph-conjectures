@@ -1,0 +1,50 @@
+[
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Problem 6 (Scott)",
+    "statement_text": "For $n$ even, what is the probability that $G_{n,1/2}$ can be partitioned into two sets, each inducing odd subgraphs?",
+    "context_text": "Described by the authors as 'one of the starting points in the random setting.' It was previously known from [10] that the answer is at least $1/2 + o(1)$.",
+    "attributed_to": "Scott",
+    "attributed_year": null,
+    "paper_contribution": "The paper proves the answer is $2/3 + o(1)$ and, more precisely, determines the full asymptotic distributions of $X_n^{(2,0)}$, $X_n^{(1,1)}$, and $X_n^{(0,2)}$ explicitly (Theorem 7).",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2105.12612",
+    "paper_title": "Counting partitions of $G_{n,1/2}$ with degree congruence conditions",
+    "paper_authors": [
+      "Paul Balister",
+      "Emil Powierski",
+      "Alex Scott",
+      "Jane Tan"
+    ],
+    "published": "2022-11-22",
+    "abs_url": "https://arxiv.org/abs/2105.12612",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Question on $q$ parts (Ferber, Hardiman and Krivelevich)",
+    "statement_text": "Does Theorem 3 still hold with $q$ parts instead of $q+1$ parts? That is, does almost every $G_{n,1/2}$ have a vertex partition into $q$ sets $A_1, \\ldots, A_q$ such that in each induced subgraph $G[A_i]$ all degrees are $x \\bmod q$?",
+    "context_text": "Ferber, Hardiman and Krivelevich [4] proved that $q+1$ parts always suffice for any $q$ and $x$, and asked whether $q$ parts would also suffice. A first-moment argument already shows $q-1$ parts are insufficient.",
+    "attributed_to": "Ferber, Hardiman and Krivelevich",
+    "attributed_year": null,
+    "paper_contribution": "The paper provides a negative answer: Theorems 4 and 5 show that the number of good $q$-partitions converges in distribution to a Poisson random variable with finite mean, implying that almost surely no such $q$-partition exists.",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Not given an explicit numbered label; identified from the phrase 'a natural question asked in [4]'.",
+    "arxiv_id": "2105.12612",
+    "paper_title": "Counting partitions of $G_{n,1/2}$ with degree congruence conditions",
+    "paper_authors": [
+      "Paul Balister",
+      "Emil Powierski",
+      "Alex Scott",
+      "Jane Tan"
+    ],
+    "published": "2022-11-22",
+    "abs_url": "https://arxiv.org/abs/2105.12612",
+    "source": "pdf"
+  }
+]

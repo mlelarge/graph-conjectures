@@ -1,0 +1,54 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.1",
+    "statement_text": "There is a polynomial $P$ such that every graph $G$ that contains no theta, pyramid, prism, or turtle has at most $P(|V(G)|)$ minimal separators.",
+    "context_text": "Thetas, pyramids, prisms, and turtles each give rise to graphs with exponentially many minimal separators (e.g., $k$-theta, $k$-pyramid, $k$-prism, $k$-turtle). The conjecture asks whether excluding all four is sufficient to obtain a polynomially bounded number of minimal separators, motivating the main theorem of this paper.",
+    "attributed_to": "authors of [7]",
+    "attributed_year": null,
+    "paper_contribution": "Proves Conjecture 1.1 in full, establishing as Theorem 1.2 that every (theta, pyramid, prism, turtle)-free graph $G$ has at most $|V(G)|^{18}$ minimal separators, constructible in polynomial time.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Reference [7] is cited but the bibliography is not included in the extracted text; attributed year is unknown.",
+    "arxiv_id": "2005.05042",
+    "paper_title": "Graphs with polynomially many minimal separators",
+    "paper_authors": [
+      "Tara Abrishami",
+      "Maria Chudnovsky",
+      "Cemil Dibek",
+      "Stéphan Thomassé",
+      "Nicolas Trotignon",
+      "Kristina Vušković"
+    ],
+    "published": "2021-12-28",
+    "abs_url": "https://arxiv.org/abs/2005.05042",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.4",
+    "statement_text": "There exists $f : \\mathbb{N} \\to \\mathbb{N}$ such that if no induced subgraph of $G$ is a $k$-creature, then $G$ has at most $|V(G)|^{f(k)}$ minimal separators.",
+    "context_text": "A $k$-creature is a graph whose vertex set partitions into sets $A, B, \\{x_1,\\ldots,x_k\\}, \\{y_1,\\ldots,y_k\\}$ satisfying connectivity, anticomplete, and matching conditions; every $k$-creature contains a theta, pyramid, prism, or turtle. The authors propose this as a stronger generalisation of Theorem 1.2, noting that even if true it does not fully characterise classes with the polynomial separator property (the class $\\mathcal{D}$ of induced subgraphs of $k$-turtles with very long paths has the polynomial separator property yet contains $k$-creatures of arbitrarily large $k$).",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "The paper proves a weaker version (Theorem 1.5) replacing $k$-creatures by the stricter notion of immature $k$-creatures.",
+    "arxiv_id": "2005.05042",
+    "paper_title": "Graphs with polynomially many minimal separators",
+    "paper_authors": [
+      "Tara Abrishami",
+      "Maria Chudnovsky",
+      "Cemil Dibek",
+      "Stéphan Thomassé",
+      "Nicolas Trotignon",
+      "Kristina Vušković"
+    ],
+    "published": "2021-12-28",
+    "abs_url": "https://arxiv.org/abs/2005.05042",
+    "source": "pdf"
+  }
+]

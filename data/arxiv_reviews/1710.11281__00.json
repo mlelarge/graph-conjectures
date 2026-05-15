@@ -1,0 +1,34 @@
+{
+  "review_id": "1710.11281__00",
+  "safe_id": "1710.11281",
+  "arxiv_id": "1710.11281",
+  "conjecture_title": "Conjecture 8",
+  "paper_title": "Notes on Cops and Robber game on graphs",
+  "published": "2017-10-31",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Mohar's Conjecture 8 posits that both the orientable cop number c(g) and the nonorientable cop number ec(g) grow as g^{1/2+o(1)} with genus g. The lower bound g^{1/2-o(1)} is already established via random graphs. The best known upper bound remains linear in g: Bowler, Erde, Lehner, and Pitz (arXiv:1911.01758, SIAM J. Discrete Math.) improved Schröder's bound to c(G) ≤ 4g(G)/3 + 10/3, but this is far above the conjectured g^{1/2+ε} threshold, leaving the conjecture fully open.",
+  "since_posted": [
+    {
+      "title": "Bounding the Cop Number of a Graph by Its Genus",
+      "authors": "Nathan Bowler, Joshua Erde, Florian Lehner, Max Pitz",
+      "year": 2021,
+      "venue": "SIAM Journal on Discrete Mathematics",
+      "url": "https://arxiv.org/abs/1911.01758",
+      "arxiv_id": "1911.01758",
+      "doi": "10.1137/20M1312150",
+      "kind": "partial",
+      "claim": "Improves the upper bound on cop number by genus to c(G) ≤ 4g(G)/3 + 10/3, better than Schröder's classical bound, but still linear in g and far from the conjectured g^{1/2+o(1)}."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "cop number genus graph g^{1/2} Mohar 1710.11281",
+    "cops robbers genus surface cop number growth rate square root",
+    "bounding cop number genus arxiv 1911.01758"
+  ],
+  "notes": "The conjecture is open with a large gap: the lower bound is g^{1/2-o(1)} (random graphs) while the best upper bound is O(g), not O(g^{1/2+ε}). No paper has resolved the conjecture for either c(g) or ec(g). The Springer chapter 'Improved Bounds on the Cop Number of a Graph Drawn on a Surface' (2021, doi:10.1007/978-3-030-83823-2_18) could not be verified due to paywall."
+}

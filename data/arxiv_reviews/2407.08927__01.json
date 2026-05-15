@@ -1,0 +1,22 @@
+{
+  "review_id": "2407.08927__01",
+  "safe_id": "2407.08927",
+  "arxiv_id": "2407.08927",
+  "conjecture_title": "Open Problem: Polynomial-time Coloring on even-hole-free graphs",
+  "paper_title": "Tree Independence Number IV. Even-hole-free Graphs",
+  "published": "2024-07-12",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The question of whether a polynomial-time algorithm for computing the chromatic number exists on even-hole-free graphs remains open as of May 2026. The source paper (arXiv:2407.08927) established only quasi-polynomial-time results via tree independence number, explicitly leaving the polynomial-time coloring question unresolved. No subsequent paper was found that resolves this problem; related polynomial-time results exist only for strict subclasses such as (cap, even-hole)-free graphs and even-hole-free graphs with no star cutset.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "even-hole-free graphs coloring chromatic number polynomial-time algorithm 2024 2025",
+    "arxiv 2407.08927 citing papers tree independence number even-hole-free",
+    "polynomial-time coloring even-hole-free graphs chromatic number algorithm 2025 arxiv"
+  ],
+  "notes": "No follow-up paper resolving the conjecture was found across three web searches and two WebFetch calls to the arxiv abstract page and Semantic Scholar. Polynomial-time coloring is known for restricted subclasses (e.g., (cap, even-hole)-free graphs, even-hole-free graphs with no star cutset) but the full even-hole-free class remains open. The paper's quasi-polynomial-time QPTAS via tree independence number (tree-independence number O(log^10 n)) does not resolve chromatic number computation."
+}

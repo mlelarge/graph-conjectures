@@ -1,0 +1,35 @@
+{
+  "review_id": "2301.13305__00",
+  "safe_id": "2301.13305",
+  "arxiv_id": "2301.13305",
+  "conjecture_title": "Question 1.1",
+  "paper_title": "Graph-codes",
+  "published": "2023-02-06",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "medium",
+  "summary": "The full Question 1.1 — whether $d_H(n)\\to 0$ for every fixed graph $H$ with an even number of edges — remains open for general H-codes. Versteegen (arXiv:2310.19891, 2023) proved the analogous statement for the linear variant: if $H$ has an even number of edges then the density of a linear graph code avoiding $H$ is $O(2^{\\binom{n}{2}}/\\log n)$, and for almost all such $H$ it is at most $2^{\\binom{n}{2}/n^{\\varepsilon_H}}$ for some $\\varepsilon_H>0$. This constitutes partial progress on Alon's question but does not settle it for non-linear codes.",
+  "since_posted": [
+    {
+      "title": "Upper bounds for linear graph codes",
+      "authors": "Leo Versteegen",
+      "year": 2023,
+      "venue": "Random Structures & Algorithms",
+      "url": "https://arxiv.org/abs/2310.19891",
+      "arxiv_id": "2310.19891",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves that linear H-codes with H having an even number of edges have density O(1/log n), and for almost all such H an exponentially smaller density bound; explicitly described as progress on Alon's question."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Alon \"graph-codes\" \"H-code\" \"even number of edges\" symmetric difference 2023",
+    "arxiv 2301.13305 Alon graph-codes follow-up citation",
+    "arxiv \"graph codes\" \"H-code\" \"even number of edges\" \"d_H(n)\" tends to zero 2024 2025",
+    "arxiv \"upper bounds for linear graph codes\" OR \"structured codes of graphs\" Alon 2023 2024"
+  ],
+  "notes": "Versteegen's partial result is for the linear subproblem (codes closed under symmetric difference); it does not imply the general case since linear codes form a strict subset of all H-codes. The paper was published in Random Structures & Algorithms (Wiley) in 2025. The pre-existing 'Structured Codes of Graphs' by Alon and Gujgiczer (arXiv:2202.06810, SIAM J. Discrete Math. 2023) predates the graph-codes paper and is not a follow-up. The full non-linear question appears to remain open as of May 2026."
+}

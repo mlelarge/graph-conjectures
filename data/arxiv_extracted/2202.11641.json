@@ -1,0 +1,25 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Barnette's Conjecture (Conjecture 1.1)",
+    "statement_text": "All graphs in $\\mathcal{B}$ are Hamiltonian.",
+    "context_text": "Let $\\mathcal{B}$ be the class of all cubic, 3-connected, planar, bipartite graphs. Barnette's Conjecture from 1969 is the central subject of this paper. Since all known counterexamples to Tait's conjecture are non-bipartite and all known counterexamples to Tutte's conjecture are non-planar, Barnette's conjecture represents a natural compromise, and has received considerable attention with partial solutions known for some subclasses of $\\mathcal{B}$.",
+    "attributed_to": "Barnette",
+    "attributed_year": 1969,
+    "paper_contribution": "Provides a matching-theoretic translation showing that Conjecture 1.1 holds if and only if all cubic, 3-connected, Pfaffian, bipartite graphs are Hamiltonian (Theorem 1.3), and reduces the conjecture to cubic, planar braces (Lemma 1.2), also proving analogous reductions for four stronger Hamiltonicity properties in cubic, 3-connected, bipartite graphs without requiring planarity.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2202.11641",
+    "paper_title": "Matching Theory and Barnette's Conjecture",
+    "paper_authors": [
+      "Maximilian Gorsky",
+      "Raphael Steiner",
+      "Sebastian Wiederrecht"
+    ],
+    "published": "2022-08-15",
+    "abs_url": "https://arxiv.org/abs/2202.11641",
+    "source": "pdf"
+  }
+]

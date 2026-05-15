@@ -1,0 +1,22 @@
+{
+  "review_id": "2505.24100__01",
+  "safe_id": "2505.24100",
+  "arxiv_id": "2505.24100",
+  "conjecture_title": "Question 1.8",
+  "paper_title": "Halfway to induced saturation for even cycles",
+  "published": "2025-06-02",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Question 1.8 from arXiv:2505.24100 asks whether a polynomial $f$ suffices to bound the size of an induced-saturated graph for $C_{2t-2}$, replacing the doubly-exponential construction of Theorem 1.6. The authors themselves state they have no rationale for expecting the vertex count to exceed linear in $t$, but no polynomial construction or impossibility result has been found in the literature as of May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "induced saturation even cycles polynomial size graph 2025 Fan Hajebi Spirkl",
+    "arxiv 2505.24100 citing papers induced saturation polynomial size conjecture",
+    "induced saturation even cycles C_{2t} polynomial vertices 2025 2026 arxiv graph theory"
+  ],
+  "notes": "No follow-up paper resolving or making partial progress on Question 1.8 was found in five web calls. The paper is approximately 11 months old. The conjecture is open: the only known construction (Theorem 1.6 of the source paper) is doubly exponential in t, while the question asks whether polynomial size in t is achievable."
+}

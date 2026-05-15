@@ -1,0 +1,23 @@
+{
+  "review_id": "2111.00532__01",
+  "safe_id": "2111.00532",
+  "arxiv_id": "2111.00532",
+  "conjecture_title": "Informal: which graphs H admit polynomial-size pure pairs",
+  "paper_title": "Pure pairs. IX. Transversal trees",
+  "published": "2024-02-06",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The question of which ordered graphs H yield polynomial-size pure pairs (|X|,|Y| >= epsilon W^c for fixed c>0) when excluding ordered B-transversal copies in a blockade of width W remains open in its general form. The source paper (Pure pairs IX) itself provides partial answers for trees and caterpillars, but the full characterisation is not resolved. Searches across the Pure pairs series (which runs through Pure pairs X, on tournaments) and recent literature found no follow-up paper directly settling this question.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "pure pairs polynomial ordered graphs blockade transversal Scott Seymour Spirkl",
+    "arxiv 2111.00532 pure pairs transversal trees follow-up",
+    "Sophie Spirkl research page pure pairs series 2024 2025",
+    "Paul Seymour pure pairs XI polynomial blockade ordered graph"
+  ],
+  "notes": "No follow-up found. The Pure pairs series continues to Pure pairs X (arXiv not retrieved; published European J. Combinatorics 2023, about tournaments and the strong Erdos-Hajnal property), which does not address the polynomial-size question for the blockade/transversal setting. A related but distinct body of work on 'polynomially high-chromatic pure pairs' (Nguyen, arXiv:2504.21127, superseded by arXiv:2512.24907) concerns the chromatic Gyarfas-Sumner setting, not the ordered-graph blockade setting of this conjecture. The conjecture is recent (posted 2021, published 2024) and the absence of follow-up is expected."
+}

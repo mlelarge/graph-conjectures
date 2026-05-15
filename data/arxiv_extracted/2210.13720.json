@@ -1,0 +1,58 @@
+[
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 14",
+    "statement_text": "There exist functions $g : \\mathbb{R} \\to \\mathbb{N}$ and $h : \\mathbb{R} \\to \\mathbb{R}$ such that for any $c > 1$, every graph $G$ with growth $f_G(r) \\leq cr$ is isomorphic to a subgraph of $T \\boxtimes K_{g(c)}$ for some tree $T$ with growth $f_T(r) \\leq h(c)r$.",
+    "context_text": "Theorem 13 shows that every graph $G$ with growth $f_G(r) \\leq cr$ is a subgraph of $T \\boxtimes K_{\\lfloor 882c^3 \\rfloor}$ for some tree $T$, but the tree $T$ itself may have exponential growth. Conjecture 14 proposes a rough characterisation of graphs of linear growth: if true, every subgraph $H$ of $T \\boxtimes K_{g(c)}$ has growth $f_H(r) \\leq g(c)h(c)r \\in O(r)$, making the characterisation tight.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2210.13720",
+    "paper_title": "Graphs of Linear Growth have Bounded Treewidth",
+    "paper_authors": [
+      "Rutger Campbell",
+      "Marc Distel",
+      "J. Pascal Gollin",
+      "Daniel J. Harvey",
+      "Kevin Hendrey",
+      "Robert Hickingbotham",
+      "Bojan Mohar",
+      "David R. Wood"
+    ],
+    "published": "2022-10-25",
+    "abs_url": "https://arxiv.org/abs/2210.13720",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 15",
+    "statement_text": "There exist functions $g : \\mathbb{R} \\times \\mathbb{N} \\to \\mathbb{N}$ and $h : \\mathbb{R} \\times \\mathbb{N} \\to \\mathbb{R}$ such that for any $c > 1$ and $d \\in \\mathbb{N}$, every graph $G$ with growth $f_G(r) \\leq cr^d$ is isomorphic to a subgraph of $T_1 \\boxtimes \\cdots \\boxtimes T_d \\boxtimes K_{g(c,d)}$, where each $T_i$ is a tree of growth $f_{T_i}(r) \\leq h(c,d)r$.",
+    "context_text": "Conjecture 15 generalises Conjecture 14 to graphs of degree-$d$ polynomial growth. If true, it would approximately characterise such graphs, since any subgraph $H$ of $T_1 \\boxtimes \\cdots \\boxtimes T_d \\boxtimes K_{g(c,d)}$ satisfies $f_H(r) \\leq g(c,d)(h(c,d)r)^d \\in O(r^d)$. This is motivated by a result of Krauthgamer and Lee showing that every graph of growth $f_G(r) \\leq r^d$ embeds as a subgraph of the strong product of $O(d \\log d)$ sufficiently long paths.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2210.13720",
+    "paper_title": "Graphs of Linear Growth have Bounded Treewidth",
+    "paper_authors": [
+      "Rutger Campbell",
+      "Marc Distel",
+      "J. Pascal Gollin",
+      "Daniel J. Harvey",
+      "Kevin Hendrey",
+      "Robert Hickingbotham",
+      "Bojan Mohar",
+      "David R. Wood"
+    ],
+    "published": "2022-10-25",
+    "abs_url": "https://arxiv.org/abs/2210.13720",
+    "source": "pdf"
+  }
+]

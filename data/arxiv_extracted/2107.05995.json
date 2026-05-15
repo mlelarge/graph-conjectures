@@ -1,0 +1,134 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture on Planar Hat Guessing Number (Bosek et al. [4])",
+    "statement_text": "The maximum possible hat guessing number of a planar graph is $4$.",
+    "context_text": "Bosek, Dudek, Farnik, Grytczuk, and Mazur conjectured that $\\mathrm{HG}(G) \\leq 4$ for every planar graph $G$. This conjecture is the primary motivation for the paper's first main result.",
+    "attributed_to": "Bosek, Dudek, Farnik, Grytczuk, and Mazur",
+    "attributed_year": 2019,
+    "paper_contribution": "Disproves the conjecture by constructing a planar graph $G$ with $\\mathrm{HG}(G) = 12$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2107.05995",
+    "paper_title": "On the Hat Guessing Number of Graphs",
+    "paper_authors": [
+      "Noga Alon",
+      "Jeremy Chizewer"
+    ],
+    "published": "2021-07-21",
+    "abs_url": "https://arxiv.org/abs/2107.05995",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture on Hat Guessing Number vs. Hadwiger Number (Bosek et al. [4])",
+    "statement_text": "The hat guessing number of any graph is at most its Hadwiger number, that is, the order of the largest clique minor of the graph.",
+    "context_text": "Bosek et al. conjectured that $\\mathrm{HG}(G)$ is bounded above by the Hadwiger number of $G$. The paper notes that the planar graph with $\\mathrm{HG}(G)=12$ already provides a counterexample, and that for larger Hadwiger numbers $d$ the hat guessing number can in fact be at least doubly-exponential in $d$.",
+    "attributed_to": "Bosek, Dudek, Farnik, Grytczuk, and Mazur",
+    "attributed_year": 2019,
+    "paper_contribution": "Disproves the conjecture; the planar graph constructed has $\\mathrm{HG}(G)=12$ while planar graphs exclude $K_5$ as a minor, giving Hadwiger number at most $4$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2107.05995",
+    "paper_title": "On the Hat Guessing Number of Graphs",
+    "paper_authors": [
+      "Noga Alon",
+      "Jeremy Chizewer"
+    ],
+    "published": "2021-07-21",
+    "abs_url": "https://arxiv.org/abs/2107.05995",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Question on Degeneracy Bound for Hat Guessing Number (Alon et al. [1])",
+    "statement_text": "Does there exist a function $f : \\mathbb{N} \\to \\mathbb{N}$ such that if $G$ is $d$-degenerate, then $\\mathrm{HG}(G) \\leq f(d)$?",
+    "context_text": "This question was raised in [1] (Alon, Ben-Eliezer, Shangguan, Tamo). A positive answer would imply that the hat guessing number of any planar graph is bounded by an absolute constant (since planar graphs are $5$-degenerate) and that $\\mathrm{HG}(G)$ is bounded by a function of the Hadwiger number (since graphs with Hadwiger number $k$ are $O(k\\sqrt{\\log k})$-degenerate).",
+    "attributed_to": "Alon, Ben-Eliezer, Shangguan, and Tamo",
+    "attributed_year": 2020,
+    "paper_contribution": "The paper restates the question and notes that a positive answer seems plausible, but does not prove it.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2107.05995",
+    "paper_title": "On the Hat Guessing Number of Graphs",
+    "paper_authors": [
+      "Noga Alon",
+      "Jeremy Chizewer"
+    ],
+    "published": "2021-07-21",
+    "abs_url": "https://arxiv.org/abs/2107.05995",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Informal Belief on Degeneracy Bound for Hat Guessing Number",
+    "statement_text": "It seems plausible that there exists a function $f : \\mathbb{N} \\to \\mathbb{N}$ such that for every $d$-degenerate graph $G$, $\\mathrm{HG}(G) \\leq f(d)$.",
+    "context_text": "The authors remark in the open problems section that such a bounding function seems plausible, noting that it would imply absolute constant bounds on the hat guessing number of planar graphs (which are $5$-degenerate) and a Hadwiger-number bound via degeneracy results.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "",
+    "arxiv_id": "2107.05995",
+    "paper_title": "On the Hat Guessing Number of Graphs",
+    "paper_authors": [
+      "Noga Alon",
+      "Jeremy Chizewer"
+    ],
+    "published": "2021-07-21",
+    "abs_url": "https://arxiv.org/abs/2107.05995",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Question on Typical Hat Guessing Number of G(n,1/2)",
+    "statement_text": "What is the typical asymptotic behavior of the hat guessing number of the random graph $G(n,1/2)$? In particular, is $\\mathrm{HG}(G(n,1/2))$ equal to $o(n)$ with high probability?",
+    "context_text": "The paper improves the known lower bound from $(2-o(1))\\log_2 n$ to $n^{1-o(1)}$ with high probability, but the true order of growth remains unknown. The upper bound is $n$ trivially.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2107.05995",
+    "paper_title": "On the Hat Guessing Number of Graphs",
+    "paper_authors": [
+      "Noga Alon",
+      "Jeremy Chizewer"
+    ],
+    "published": "2021-07-21",
+    "abs_url": "https://arxiv.org/abs/2107.05995",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Problem on Hat Guessing Number After Adding a Universal Vertex",
+    "statement_text": "Establish an upper bound for $\\mathrm{HG}(G')$ as a function of $\\mathrm{HG}(G)$, where $G'$ is obtained from $G$ by adding a single vertex connected to all vertices of $G$, or show that no such function exists.",
+    "context_text": "Using the graphs $G_d(N)$ from [10], the authors show that for arbitrarily large $q = \\mathrm{HG}(G)$ the hat guessing number of $G'$ can exceed $q^2$ (specifically reaching $q^2+q$), so adding a universal vertex can dramatically increase the hat guessing number.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2107.05995",
+    "paper_title": "On the Hat Guessing Number of Graphs",
+    "paper_authors": [
+      "Noga Alon",
+      "Jeremy Chizewer"
+    ],
+    "published": "2021-07-21",
+    "abs_url": "https://arxiv.org/abs/2107.05995",
+    "source": "pdf"
+  }
+]

@@ -1,0 +1,80 @@
+[
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Research Question (Introduction)",
+    "statement_text": "Is it possible to determine the computational complexity of Graph Isomorphism for $(H_1, H_2)$-free graphs for all pairs $H_1, H_2$?",
+    "context_text": "Kratsch and Schweitzer [22] initiated the classification of Graph Isomorphism for $(H_1,H_2)$-free graphs, and Schweitzer [30] later proved that only finitely many cases remain open without specifying them. This question frames the paper's programme to complete the dichotomy.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "Explicitly posed as a research question in the introduction; the paper resolves all but six pairs $(H_1,H_2)$, leaving those six as the residual open cases.",
+    "arxiv_id": "1811.12252",
+    "paper_title": "Graph Isomorphism for $(H_1,H_2)$-free Graphs: An Almost Complete Dichotomy",
+    "paper_authors": [
+      "Marthe Bonamy",
+      "Nicolas Bousquet",
+      "Konrad K. Dabrowski",
+      "Matthew Johnson",
+      "Daniël Paulusma",
+      "Théo Pierron"
+    ],
+    "published": "2019-09-03",
+    "abs_url": "https://arxiv.org/abs/1811.12252",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Open Question: FPT Algorithm for Graph Isomorphism Parameterized by Clique-Width",
+    "statement_text": "Whether an FPT algorithm exists for Graph Isomorphism when parameterized by clique-width is still open.",
+    "context_text": "Lokshtanov et al. [23] gave an FPT algorithm parameterized by treewidth, and Grohe and Schweitzer [20] proved XP membership parameterized by clique-width (i.e., polynomial-time solvability for each fixed clique-width). The question of whether the parameter clique-width admits an FPT algorithm remains unresolved.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated as an existing open problem in the introduction without attribution to specific authors; not a formally labelled environment. PDF source — math notation appears clean for this item.",
+    "arxiv_id": "1811.12252",
+    "paper_title": "Graph Isomorphism for $(H_1,H_2)$-free Graphs: An Almost Complete Dichotomy",
+    "paper_authors": [
+      "Marthe Bonamy",
+      "Nicolas Bousquet",
+      "Konrad K. Dabrowski",
+      "Matthew Johnson",
+      "Daniël Paulusma",
+      "Théo Pierron"
+    ],
+    "published": "2019-09-03",
+    "abs_url": "https://arxiv.org/abs/1811.12252",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Open Cases: Clique-Width Classification for $(H_1,H_2)$-Free Graphs",
+    "statement_text": "Determine, for each of the five remaining pairs $(H_1, H_2)$, whether the class of $(H_1, H_2)$-free graphs has bounded or unbounded clique-width.",
+    "context_text": "The paper continues a project [4,8,11,12,14,15] classifying the boundedness of clique-width of $(H_1,H_2)$-free graph classes. By showing that (gem, $P_1+2P_2$)-free graphs have unbounded clique-width, the authors reduce the number of open pairs from six to five.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Not a formally labelled problem environment; inferred from the paper's statement that five open cases for clique-width boundedness remain after their contribution. PDF source.",
+    "arxiv_id": "1811.12252",
+    "paper_title": "Graph Isomorphism for $(H_1,H_2)$-free Graphs: An Almost Complete Dichotomy",
+    "paper_authors": [
+      "Marthe Bonamy",
+      "Nicolas Bousquet",
+      "Konrad K. Dabrowski",
+      "Matthew Johnson",
+      "Daniël Paulusma",
+      "Théo Pierron"
+    ],
+    "published": "2019-09-03",
+    "abs_url": "https://arxiv.org/abs/1811.12252",
+    "source": "pdf"
+  }
+]

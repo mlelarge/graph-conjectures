@@ -1,0 +1,34 @@
+{
+  "review_id": "1802.03727__01",
+  "safe_id": "1802.03727",
+  "arxiv_id": "1802.03727",
+  "conjecture_title": "Conjecture 1.4",
+  "paper_title": "Separation choosability and dense bipartite induced subgraphs",
+  "published": "2018-12-04",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "medium",
+  "summary": "Conjecture 1.4 from arXiv:1802.03727 — that any graph with minimum degree $d$ contains either a clique on $x_2(d)$ vertices or a bipartite induced subgraph with minimum degree $x_3(d)$ (both functions tending to infinity) — appears to remain open as a general statement. Kwan, Sudakov, and Tran (Combinatorica 2020, arXiv:1810.12144) proved that any $K_t$-free graph with minimum degree at least $d$ contains a bipartite induced subgraph of minimum degree at least $c_t \\log d/\\log\\log d$, which confirms Conjecture 1.3 from the same source paper (the consequence that Conjecture 1.4 was designed to imply) but does not settle Conjecture 1.4 in full generality. No paper proving or disproving the general dichotomy was found in the indexed literature.",
+  "since_posted": [
+    {
+      "title": "Dense induced bipartite subgraphs in triangle-free graphs",
+      "authors": "Matthew Kwan, Benny Sudakov, Tuan Tran",
+      "year": 2020,
+      "venue": "Combinatorica",
+      "url": "https://arxiv.org/abs/1810.12144",
+      "arxiv_id": "1810.12144",
+      "doi": "10.1007/s00493-019-4086-0",
+      "kind": "partial",
+      "claim": "Proves that any $K_t$-free graph with minimum degree at least $d$ contains a bipartite induced subgraph of minimum degree at least $c_t \\log d/\\log\\log d$, confirming Conjecture 1.3 of Esperet–Kang–Thomassé (which Conjecture 1.4 would imply), but the full dichotomy of Conjecture 1.4 is not established."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "minimum degree complete subgraph bipartite induced subgraph Esperet Kang Thomassé conjecture",
+    "separation choosability dense bipartite induced subgraph arxiv 1802.03727",
+    "\"minimum degree\" \"complete subgraph\" OR \"clique\" \"bipartite induced subgraph\" Ramsey graph conjecture 2019 2020 2021"
+  ],
+  "notes": "Conjecture 1.4 is a Ramsey-type dichotomy for general graphs: clique vs. dense bipartite induced subgraph. It is strictly stronger than Conjecture 1.3 (H-free case), which was resolved by arXiv:1810.12144. The general conjecture does not appear to have been settled; no resolving paper was found after 5 web calls."
+}

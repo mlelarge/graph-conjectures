@@ -1,0 +1,21 @@
+{
+  "review_id": "2601.15245__04",
+  "safe_id": "2601.15245",
+  "arxiv_id": "2601.15245",
+  "conjecture_title": "Problem 6.4",
+  "paper_title": "Coloring small locally sparse degenerate graphs and related problems",
+  "published": "2026-01-21",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Problem 6.4 asks whether the maximum fractional chromatic number of K_r-free d-degenerate graphs is o_r(d) for each fixed r>=4. The source paper itself provides a lower bound of Omega_r(d/log^(r-2) d) via Theorem 1.6, which approaches linear in d as r grows, but no matching or sublinear upper bound is known for any r>=4. No follow-up paper resolving this question was found in the literature published after January 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "fractional chromatic number Kr-free degenerate graphs sublinear 2601.15245",
+    "fractional chromatic number Kr-free d-degenerate graphs sublinear Bradac Fox Steiner Sudakov Zhang"
+  ],
+  "notes": "The r=3 (triangle-free) analogue was settled before this paper by arXiv:2501.18238, which proves an upper bound of (4+o(1))d/ln(d). Problem 6.4 concerns r>=4 only, where the question of sublinearity remains fully open. The paper arXiv:2603.17730 ('Fractional coloring via entropy', March 2026) proves bounds for locally r-colorable graphs and r-uniform hypergraphs but does not address K_r-free d-degenerate graphs and is not a follow-up to Problem 6.4."
+}

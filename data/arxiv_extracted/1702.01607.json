@@ -1,0 +1,98 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1 (Berger et al.)",
+    "statement_text": "There is a function $f$ such that every $t$-local tournament $T$ satisfies $\\vec{\\chi}(T) \\leq f(t)$.",
+    "context_text": "A tournament is $t$-local if for every vertex $v$ the subtournament induced by the out-neighbors of $v$ has chromatic number at most $t$. The conjecture was raised in Berger et al. [3] as Conjecture 2.6 and settled for $t = 2$ in [7]; the present paper proves it for all $t$.",
+    "attributed_to": "Berger, Choromanski, Chudnovsky, Fox, Loebl, Scott, Seymour, and Thomassé",
+    "attributed_year": 2013,
+    "paper_contribution": "Proves the conjecture for all $t$: every $t$-local tournament has chromatic number at most $f(t) = \\max\\{(t+1)K,\\,(t+1)\\ell\\}$ for explicit constants $K$ and $\\ell$ depending only on $t$, derived via a new result on dominating number and bounded-size subtournaments.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source — directed chromatic number notation ~χ interpreted as $\\vec{\\chi}$.",
+    "arxiv_id": "1702.01607",
+    "paper_title": "Coloring tournaments: from local to global",
+    "paper_authors": [
+      "Ararat Harutyunyan",
+      "Tien-Nam Le",
+      "Stéphan Thomassé",
+      "Hehui Wu"
+    ],
+    "published": "2017-03-15",
+    "abs_url": "https://arxiv.org/abs/1702.01607",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Problem 3",
+    "statement_text": "For every integer $i \\geq 1$, there exists $f(i)$ such that every tournament $T$ with dominating number at least $f(i)$ contains an isomorphic copy of $S_i$.",
+    "context_text": "The tournaments $S_i$ are defined recursively: $S_1$ is a single vertex, and for $i > 1$, $S_i$ is the tournament on $2^i - 1$ vertices obtained by blowing up two vertices of an oriented triangle into two copies of $S_{i-1}$; one can check $\\vec{\\chi}(S_i) \\geq i$. The problem is trivial for $i \\leq 2$, verified for $i = 3$ in [7], and open for all $i \\geq 4$.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "PDF source — math notation may be partially garbled; recursive definition of $S_i$ reconstructed from surrounding text.",
+    "arxiv_id": "1702.01607",
+    "paper_title": "Coloring tournaments: from local to global",
+    "paper_authors": [
+      "Ararat Harutyunyan",
+      "Tien-Nam Le",
+      "Stéphan Thomassé",
+      "Hehui Wu"
+    ],
+    "published": "2017-03-15",
+    "abs_url": "https://arxiv.org/abs/1702.01607",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Problem 4",
+    "statement_text": "For every integer $k \\geq 1$, there exist integers $K$ and $\\ell$ such that every tournament $T$ with dominating number at least $K$ contains a subtournament with $\\ell$ vertices and dominating number at least $k$.",
+    "context_text": "Theorem 2 shows that sufficiently large dominating number forces a bounded-size subtournament of large chromatic number. The analogous statement with dominating number in place of chromatic number in the conclusion remains open; the note observes that replacing dominating-number hypothesis by large chromatic number alone fails for any $k \\geq 3$.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1702.01607",
+    "paper_title": "Coloring tournaments: from local to global",
+    "paper_authors": [
+      "Ararat Harutyunyan",
+      "Tien-Nam Le",
+      "Stéphan Thomassé",
+      "Hehui Wu"
+    ],
+    "published": "2017-03-15",
+    "abs_url": "https://arxiv.org/abs/1702.01607",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 7 (Scott and Seymour)",
+    "statement_text": "For every $k$, there exists $K$ such that if $T$ and $G$ are respectively a tournament and a graph on the same set of vertices with $G$ of chromatic number at least $K$, then there is a vertex $v$ such that $G$ induces on $N^+_T(v)$ a subgraph of $G$ of chromatic number at least $k$.",
+    "context_text": "Motivated by the paper's main result on out-neighborhoods in tournaments, the authors observe that a suitable notion of 'large' hypergraph would imply a statement about high-chromatic graphs and tournament out-neighborhoods; they note that a very similar conjecture was independently proposed by Alex Scott and Paul Seymour (personal communication [14]).",
+    "attributed_to": "Scott and Seymour",
+    "attributed_year": null,
+    "paper_contribution": "Mentioned as a related open conjecture inspired by the paper's main results; the paper provides motivation via the notion of 'large' hypergraphs but offers no proof or partial progress.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Attribution via personal communication [14]; no publication year available.",
+    "arxiv_id": "1702.01607",
+    "paper_title": "Coloring tournaments: from local to global",
+    "paper_authors": [
+      "Ararat Harutyunyan",
+      "Tien-Nam Le",
+      "Stéphan Thomassé",
+      "Hehui Wu"
+    ],
+    "published": "2017-03-15",
+    "abs_url": "https://arxiv.org/abs/1702.01607",
+    "source": "pdf"
+  }
+]

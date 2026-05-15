@@ -1,0 +1,32 @@
+{
+  "review_id": "1812.07327__02",
+  "safe_id": "1812.07327",
+  "arxiv_id": "1812.07327",
+  "conjecture_title": "Problem 8",
+  "paper_title": "1-subdivisions, fractional chromatic number and Hall ratio",
+  "published": "2020-01-30",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "Problem 8 asks whether a graph class has bounded expansion if and only if the Hall ratio is uniformly bounded in all shallow minors. The forward direction is established in the source paper (Corollary 7 analogue). The converse remains open: no paper has been found that either proves or disproves it. The paper arXiv:2411.16465 (Steiner, 2024) was flagged as a candidate resolution but in fact addresses a distinct problem — whether χ_f is bounded by a function of ρ for individual graphs — and does not resolve the shallow-minor characterization of bounded expansion.",
+  "since_posted": [],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2411.16465",
+      "verified": true,
+      "note": "Paper is 'Fractional chromatic number vs. Hall ratio' by Raphael Steiner (submitted Nov 2024). Its Theorem 1.5 constructs graphs with bounded Hall ratio (ρ(G) ≤ 4+δ) and arbitrarily large fractional chromatic number, together with strong α_deg properties. This resolves a different problem from the same source paper (the question of whether χ_f is bounded by a function of ρ for individual graphs). The paper does not mention bounded expansion, shallow minors, or graph classes, so it does not address Problem 8."
+    },
+    {
+      "arxiv_id": "2007.11853",
+      "verified": true,
+      "note": "Paper is 'On weighted sublinear separators' by Zdeněk Dvořák (2020, revised 2021). It concerns balanced separators with weighted outlier bounds in graphs whose subgraphs admit sublinear separators. The topic is adjacent to sparse graph theory but the abstract contains no mention of Hall ratio, fractional chromatic number, or the bounded-expansion characterization asked in Problem 8; the connection to Problem 8 is not established from the abstract."
+    }
+  ],
+  "search_queries": [
+    "bounded expansion Hall ratio shallow minors characterization arXiv 1812.07327 Dvořák",
+    "Steiner \"fractional chromatic number\" \"Hall ratio\" \"bounded expansion\" 2024 arXiv"
+  ],
+  "notes": "Neither verified internal reference resolves Problem 8. arXiv:2411.16465 was likely matched at fuzz=97 because it shares key terms (Hall ratio, fractional chromatic number) with the source paper and addresses a closely related but distinct problem. The conjecture dates to 2020; as of May 2026 no follow-up resolving the equivalence between bounded expansion and bounded Hall ratio in all shallow minors has been located. Confidence is medium rather than high because the paper is six years old and the absence of a follow-up in a relatively active area warrants caution."
+}

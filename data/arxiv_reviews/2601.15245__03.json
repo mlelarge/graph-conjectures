@@ -1,0 +1,23 @@
+{
+  "review_id": "2601.15245__03",
+  "safe_id": "2601.15245",
+  "arxiv_id": "2601.15245",
+  "conjecture_title": "Problem 6.3",
+  "paper_title": "Coloring small locally sparse degenerate graphs and related problems",
+  "published": "2026-01-21",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Problem 6.3 asks whether every $K_r$-free $d$-degenerate graph with chromatic number $d+1$ must have $e^{\\Omega_r(d)}$ vertices, extending the paper's main result from the triangle-free case ($r=3$) to all $r$. The source paper establishes the $r=3$ case, proving $e^{\\Omega(d)} \\le f(d) \\le e^{O(d^2 \\log d)}$ for triangle-free $d$-degenerate graphs, but leaves the general $r$ case open. No follow-up resolving this problem was found in a wide literature search conducted in May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Bradač Fox Steiner Sudakov Zhang degenerate chromatic number K_r-free exponential 2601.15245",
+    "chromatic number K_r-free d-degenerate graph exponential vertices lower bound 2026",
+    "K_r-free d-degenerate chromatic number d+1 exponential vertices clique-free 2025 2026",
+    "arxiv 2601.15245 citing follow-up clique-free degenerate graph chromatic exponential 2026"
+  ],
+  "notes": "The paper is very recent (January 2026). The triangle-free case ($r=3$) is settled by the main results of arXiv:2601.15245 itself. For general $r \\ge 4$, the paper shows that $K_r$-free $d$-degenerate graphs can have fractional chromatic number $\\Omega_r(d/\\log^{r-2} d)$, but whether the minimum order of a $(d+1)$-chromatic example must be exponential in $d$ (Problem 6.3) remains unresolved. No citing or follow-up paper addressing this problem was identified."
+}

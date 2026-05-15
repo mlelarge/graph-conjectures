@@ -1,0 +1,23 @@
+{
+  "review_id": "1904.12273__01",
+  "safe_id": "1904.12273",
+  "arxiv_id": "1904.12273",
+  "conjecture_title": "Informal Conjecture (heavy path extension)",
+  "paper_title": "Detecting a long odd hole",
+  "published": "2020-09-06",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "The heavy path conjecture from Conjecture (informal) in arXiv:1904.12273 — that when one vertex of a C-major set M is nonadjacent to all others, a single path of C of bounded length catches every vertex of M — was explicitly left unresolved by the authors, who replaced it with a more complicated argument. A targeted web search across 2020–2026 found no follow-up paper proving or disproving this specific statement. Given the conjecture is ~6 years old and the search returned nothing, absence of published progress is plausible but not certain for such a technical algorithmic lemma.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Chudnovsky Scott Seymour \"long odd hole\" \"heavy path\" conjecture graph theory",
+    "arxiv 1904.12273 \"detecting a long odd hole\" follow-up citations",
+    "Chudnovsky Scott Seymour \"C-major\" \"long odd hole\" \"bounded length\" path 2021 2022 2023 2024",
+    "\"long odd hole\" \"heavy path\" OR \"C-major\" graph algorithm Chudnovsky Seymour 2022 2023 2024 2025"
+  ],
+  "notes": "No follow-up paper specifically addressing the heavy path extension was found after 5 web calls. The statement is informal (not labelled as a formal conjecture in the paper) and concerns a structural lemma internal to an algorithmic proof; progress may exist in unpublished notes or in successor papers not indexed by the queries used. Related follow-up work by the same group (arXiv:2004.11874 on shortest odd hole, arXiv:2009.05691 on long even holes) was identified but not verified to address this specific conjecture."
+}

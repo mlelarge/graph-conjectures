@@ -1,0 +1,68 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Ryser's Conjecture",
+    "statement_text": "Every $r$-partite $r$-uniform hypergraph $H$ satisfies $\\tau(H) \\leq (r-1)\\nu(H)$, where $\\tau(H)$ denotes the minimum size of a vertex cover and $\\nu(H)$ denotes the maximum size of a set of pairwise disjoint edges in $H$.",
+    "context_text": "Ryser's Conjecture, posed in 1967, is known to hold in general only for $r=2$ (König's Theorem) and $r=3$, and for intersecting hypergraphs only for $r\\leq 5$. A key open question is how tight the bound $r-1$ on the cover number of intersecting $r$-partite $r$-uniform hypergraphs can be.",
+    "attributed_to": "Ryser",
+    "attributed_year": 1967,
+    "paper_contribution": "Constructs $r$-partite $r$-uniform intersecting hypergraphs with cover number at least $r-4$ for all sufficiently large $r$, showing that Ryser's Conjecture is close to best possible for every value of $r$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1609.05458",
+    "paper_title": "A note on intersecting hypergraphs with large cover number",
+    "paper_authors": [
+      "Penny Haxell",
+      "Alex Scott"
+    ],
+    "published": "2017-10-06",
+    "abs_url": "https://arxiv.org/abs/1609.05458",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Question of Abu-Khazneh, Barát, Pokrovskiy and Szabó",
+    "statement_text": "Does there exist a constant $K$ such that for every $r$ there exists an intersecting $r$-partite $r$-uniform hypergraph $H$ with $\\tau(H) \\geq r - K$?",
+    "context_text": "Abu-Khazneh, Barát, Pokrovskiy and Szabó asked this question in their study of extremal hypergraphs for Ryser's Conjecture, after establishing that intersecting $r$-Ryser hypergraphs exist for $r = p+1$ (prime power $p$) and $r = p+2$. An affirmative answer would show Ryser's conjecture is close to best possible for every $r$.",
+    "attributed_to": "Abu-Khazneh, Barát, Pokrovskiy and Szabó",
+    "attributed_year": 2016,
+    "paper_contribution": "Answers in the affirmative, proving that $K \\leq 4$ suffices for all sufficiently large integers $r$ (Theorem 6), and $K \\leq 3$ when $r$ is even.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1609.05458",
+    "paper_title": "A note on intersecting hypergraphs with large cover number",
+    "paper_authors": [
+      "Penny Haxell",
+      "Alex Scott"
+    ],
+    "published": "2017-10-06",
+    "abs_url": "https://arxiv.org/abs/1609.05458",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Informal Problem (projective plane structure in near-extremal constructions)",
+    "statement_text": "It would be interesting either to find a different type of construction of near-extremal intersecting $r$-partite hypergraphs $H$ with $\\tau(H)$ close to $r$, or to show that near-extremal constructions must contain large pieces from a projective plane.",
+    "context_text": "The authors observe that except for a few sporadic small examples, all known constructions of intersecting $r$-partite hypergraphs $H$ with $\\tau(H)$ close to $r$ are based in some way on finite projective planes.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated as a closing remark in prose without a labelled environment.",
+    "arxiv_id": "1609.05458",
+    "paper_title": "A note on intersecting hypergraphs with large cover number",
+    "paper_authors": [
+      "Penny Haxell",
+      "Alex Scott"
+    ],
+    "published": "2017-10-06",
+    "abs_url": "https://arxiv.org/abs/1609.05458",
+    "source": "pdf"
+  }
+]

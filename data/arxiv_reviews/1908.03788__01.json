@@ -1,0 +1,33 @@
+{
+  "review_id": "1908.03788__01",
+  "safe_id": "1908.03788",
+  "arxiv_id": "1908.03788",
+  "conjecture_title": "Question 4.1",
+  "paper_title": "Avoidable paths in graphs",
+  "published": "2019-08-10",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "medium",
+  "summary": "Question 4.1 is directly addressed by Gurvich, Krnc, Milanič, and Vyalyi in 'Avoidability beyond paths' (arXiv:2208.12803, published in Electronic Journal of Combinatorics 2025). That paper introduces a framework of two-rooted graphs to generalise avoidability beyond paths, and provides both positive and negative results about which connected non-path structures admit an avoidability property. The question is not fully resolved: no family H satisfying the exact condition of Question 4.1 is identified, but the framework clarifies structural obstructions and establishes partial answers for restricted graph classes such as C5-free graphs.",
+  "since_posted": [
+    {
+      "title": "Avoidability beyond paths",
+      "authors": "Vladimir Gurvich, Matjaž Krnc, Martin Milanič, Mikhail Vyalyi",
+      "year": 2022,
+      "venue": "The Electronic Journal of Combinatorics",
+      "url": "https://arxiv.org/abs/2208.12803",
+      "arxiv_id": "2208.12803",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Directly addresses Question 4.1 by introducing a two-rooted graph framework for avoidability beyond paths; provides both positive results (for special graph classes) and negative results, but does not produce a family H satisfying the full question."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "avoidable paths graphs Bonamy Defrain Hatzel Thiebaut 1908.03788 follow-up",
+    "avoidable graph family connected non-path structure chordal graphs"
+  ],
+  "notes": "The follow-up paper arXiv:2208.12803 is the primary response to Question 4.1; it was published in the Electronic Journal of Combinatorics (v32i2p27). The paper addresses the question with a generalised framework but does not settle it with a definitive yes or no for the full statement. Confidence is medium because the full text was not read — only the abstract and partial HTML were accessible."
+}

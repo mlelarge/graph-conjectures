@@ -1,0 +1,46 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Wood's Conjecture on Exact Clique Count for $K_t$-Minor Free Graphs",
+    "statement_text": "The maximum number of cliques a $K_t$-minor free graph on $n$ vertices can have is $2^{t-2}(n-t+3)$ if and only if $t \\leq 49$.",
+    "context_text": "Wood determined for $t \\leq 9$ and $n \\geq 4$ that the exact maximum number of cliques in a $K_t$-minor free graph on $n$ vertices is $2^{t-2}(n-t+3)$, and conjectured this formula gives the true maximum precisely for $t \\leq 49$. For larger $t$, a different construction — the disjoint union of complements of perfect matchings on $2\\lceil 2t/3 \\rceil - 2$ vertices — achieves $3^{2t/3-o(t)}n$ cliques, eventually surpassing the conjectured bound.",
+    "attributed_to": "Wood",
+    "attributed_year": null,
+    "paper_contribution": "Determines the correct exponential constant, proving every $K_t$-minor free graph on $n$ vertices has at most $3^{2t/3+o(t)}n$ cliques (tight for $n \\geq 4t/3$); since $3^{2t/3} > 2^{t-2}$ for large $t$, this confirms that Wood's exact formula fails for sufficiently large $t$, consistent with the conjectured threshold $t = 49$.",
+    "opg_lookup": true,
+    "confidence": "low",
+    "notes": "PDF source — the formula $2^{t-2}(n-t+3)$ is reconstructed from garbled PDF rendering; attributed to Wood [18] cited as 'very recently' relative to the 2016 submission date.",
+    "arxiv_id": "1603.07056",
+    "paper_title": "On the number of cliques in graphs with a forbidden minor",
+    "paper_authors": [
+      "Jacob Fox",
+      "Fan Wei"
+    ],
+    "published": "2016-03-23",
+    "abs_url": "https://arxiv.org/abs/1603.07056",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Characterization of Social Graphs",
+    "statement_text": "Characterize social graphs, i.e., graphs $G$ such that contracting any edge of $G$ does not increase the number of cliques of $G$.",
+    "context_text": "Social graphs are introduced as a key structural tool in the proof of Theorem 1.2: the authors show that any very dense social graph is, apart from a small number of vertices, the complement of a (not necessarily perfect) matching. The paper explicitly notes that a full characterization of social graphs appears to be a challenging problem.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated in running prose: 'It appears to be a challenging problem to characterize social graphs.'",
+    "arxiv_id": "1603.07056",
+    "paper_title": "On the number of cliques in graphs with a forbidden minor",
+    "paper_authors": [
+      "Jacob Fox",
+      "Fan Wei"
+    ],
+    "published": "2016-03-23",
+    "abs_url": "https://arxiv.org/abs/1603.07056",
+    "source": "pdf"
+  }
+]

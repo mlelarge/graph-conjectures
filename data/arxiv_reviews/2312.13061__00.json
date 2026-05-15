@@ -1,0 +1,22 @@
+{
+  "review_id": "2312.13061__00",
+  "safe_id": "2312.13061",
+  "arxiv_id": "2312.13061",
+  "conjecture_title": "Conjecture 3",
+  "paper_title": "Precoloring extension in planar near-Eulerian-triangulations",
+  "published": "2023-12-20",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 3 — that for every fixed $\\ell$ there is a polynomial-time algorithm deciding precoloring extension to a 4-coloring in planar near-Eulerian-triangulations with outer face of length at most $\\ell$ — remains open. The source paper, published in the European Journal of Combinatorics in 2025 (Vol. 127, art. 104138), resolves only the special cases of outer face length at most five and the case where all outer-face vertices have odd degree and the precoloring uses only three colors. No subsequent paper proving or disproving the general conjecture was found in the literature as of May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "precoloring extension planar near-Eulerian-triangulation 4-coloring polynomial algorithm Dvořák Moore",
+    "arxiv 2312.13061 Dvorak Moore Seifrtova Samal precoloring planar triangulation cite",
+    "precoloring extension near-Eulerian-triangulation 4-coloring fixed outer face polynomial-time 2024 2025"
+  ],
+  "notes": "The full paper appeared as European Journal of Combinatorics 127 (2025) 104138. An extended abstract was published at EUROCOMB'23. No follow-up paper proving Conjecture 3 (the general polynomial-time case) was found in three targeted searches. The conjecture is likely still open; confidence is high given the paper is recent (< 3 years) and the problem is technically demanding."
+}

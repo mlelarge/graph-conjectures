@@ -1,0 +1,21 @@
+{
+  "review_id": "2605.13628__00",
+  "safe_id": "2605.13628",
+  "arxiv_id": "2605.13628",
+  "conjecture_title": "Problem 8",
+  "paper_title": "A note on arithmetic progressions with restricted differences",
+  "published": "2026-05-13",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Problem 8 asks whether the condition $|S|>(q+1)/2$ in Theorem 1 can be weakened; the authors note that the boundary case $|S|=\\lfloor(q+1)/2\\rfloor$ is already interesting, and cite Green's suggestion that the result may extend all the way down to $|S|=2$. The paper was posted on 2026-05-13 and no follow-up work addressing this specific problem has been found in the literature.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Conlon Fox Pham arithmetic progressions restricted differences finite field 2026 arXiv",
+    "three-term arithmetic progression common difference S^n finite field cap set restricted differences 2025 2026"
+  ],
+  "notes": "Paper posted 2026-05-13 (one day before review date); no follow-up found. The authors cite Green's unpublished '100 open problems' manuscript as motivation for pushing down to |S|=2. A related paper (Discrete Analysis, arXiv:2308.06600) on effective bounds for {0,1,2}^n-restricted progressions addresses a specific instance of a neighbouring problem but does not resolve Problem 8 or weaken the |S|>(q+1)/2 threshold."
+}

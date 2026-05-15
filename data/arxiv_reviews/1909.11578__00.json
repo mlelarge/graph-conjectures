@@ -1,0 +1,23 @@
+{
+  "review_id": "1909.11578__00",
+  "safe_id": "1909.11578",
+  "arxiv_id": "1909.11578",
+  "conjecture_title": "Size of symmetric intersecting families in $[k]^n$",
+  "paper_title": "On symmetric intersecting families of vectors",
+  "published": "2020-07-31",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Eberhard, Kahn, Narayanan, and Spirkl (arXiv:1909.11578) proved that any symmetric intersecting $A \\subset [k]^n$ has size $o(k^n)$ for fixed $k \\geq 3$, but the precise asymptotics remain open. The best known constructions, based on set-intersecting families derived from projective planes $PG(2,q)$, achieve size roughly $k^{n-\\sqrt{n}}$. No matching upper bound or improvement to the construction is known, and no follow-up resolving the question was found in the indexed literature.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "symmetric intersecting families vectors k^n Eberhard Kahn Narayanan Spirkl 1909.11578",
+    "symmetric intersecting subfamily [k]^n upper bound asymptotic projective plane construction",
+    "cite:1909.11578 symmetric intersecting families size bound improvement 2021 2022 2023 2024 2025",
+    "arxiv search symmetric intersecting families vectors 2020-2025"
+  ],
+  "notes": "No follow-up resolving the precise asymptotics of the maximum size of a symmetric intersecting family in $[k]^n$ was found. The gap between the known upper bound $o(k^n)$ and the best construction $k^{n-\\sqrt{n}}$ remains wide. The Keevash 2023 paper on 'forbidden intersections for codes' appeared in search results but was behind a paywall; it may or may not address this specific question."
+}

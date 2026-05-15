@@ -1,0 +1,46 @@
+[
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 2.4",
+    "statement_text": "Under the assumptions of Theorem 1.2, the conclusion holds together with the further requirement that $\\|x_i\\| \\leq O(1)$ and $\\|y_i\\| \\leq O(1)$ for all $1 \\leq i \\leq n$.",
+    "context_text": "Theorem 1.2 establishes a bipartite Johnson-Lindenstrauss reduction to dimension $t = \\lfloor C\\log(2+\\varepsilon^2 n)/\\varepsilon^2 \\rfloor$ that approximates inner products up to additive error $\\varepsilon$, but does not control the norms of the output vectors. The authors conjecture that the output vectors can simultaneously be taken to have bounded Euclidean norm $O(1)$. If true, this would close the gap between the upper and lower bounds in the first bullet of Theorem 2.2 for all $\\varepsilon \\geq 2/\\sqrt{n}$.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "PDF source — norm notation $\\|\\cdot\\|$ appears as bare vertical bars in the raw extract; reconstructed from context. The paper proves two partial results supporting the conjecture: the case $t = \\Omega(n)$ (i.e., $\\varepsilon = \\Theta(1/\\sqrt{n})$) is established as Theorem 2.5, and a matching bit-count estimate is proved for the column-query variant.",
+    "arxiv_id": "1610.00239",
+    "paper_title": "Optimal compression of approximate inner products and dimension reduction",
+    "paper_authors": [
+      "Noga Alon",
+      "Bo'az Klartag"
+    ],
+    "published": "2017-04-02",
+    "abs_url": "https://arxiv.org/abs/1610.00239",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Larsen–Nelson Question on Improved Johnson-Lindenstrauss Dimension",
+    "statement_text": "For any $\\varepsilon$, can the target dimension in the Johnson-Lindenstrauss Lemma be improved by replacing $\\frac{\\log n}{\\varepsilon^2}$ with $t = \\frac{\\log(2 + \\varepsilon^2 n)}{\\varepsilon^2}$?",
+    "context_text": "Larsen and Nelson [18] asked whether the Johnson-Lindenstrauss dimension bound $\\log n / \\varepsilon^2$ can be replaced by the smaller quantity $\\log(2+\\varepsilon^2 n)/\\varepsilon^2$ for small $\\varepsilon$. This is non-trivial only for $\\varepsilon < 1/n^{0.49}$; the present paper's Theorem 1.2 and the lower-bound results in Corollary 2.3 are explicitly motivated by this question.",
+    "attributed_to": "Larsen and Nelson",
+    "attributed_year": null,
+    "paper_contribution": "Proves a bipartite version (Theorem 1.2): for any $a_1,\\ldots,a_n, b_1,\\ldots,b_n \\in \\mathbb{R}^n$ of norm at most 1 and $t = \\lfloor C\\log(2+\\varepsilon^2 n)/\\varepsilon^2 \\rfloor$, there exist $x_1,\\ldots,x_n, y_1,\\ldots,y_n \\in \\mathbb{R}^t$ with $|\\langle x_i, y_j\\rangle - \\langle a_i, b_j\\rangle| \\leq \\varepsilon$ for all $i,j$, computable in randomized polynomial time. Also proves a matching lower bound (Corollary 2.3) showing no embedding into dimension $o(\\log(2+\\varepsilon^2 n)/\\varepsilon^2)$ is possible for any $\\varepsilon \\geq 2/\\sqrt{n}$.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "PDF source. The question is stated informally in the introduction without a labelled theorem environment; reference [18] is cited but publication year is not recoverable from the provided text.",
+    "arxiv_id": "1610.00239",
+    "paper_title": "Optimal compression of approximate inner products and dimension reduction",
+    "paper_authors": [
+      "Noga Alon",
+      "Bo'az Klartag"
+    ],
+    "published": "2017-04-02",
+    "abs_url": "https://arxiv.org/abs/1610.00239",
+    "source": "pdf"
+  }
+]

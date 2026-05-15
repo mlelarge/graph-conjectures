@@ -1,0 +1,24 @@
+[
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Chung's Question on Efficient Generalized Regularity",
+    "statement_text": "Can good (i.e., slowly-growing) upper bounds be derived for the number of parts in the partition supplied by the clustering regularity lemma? More generally, is there an efficient $(H,F)$-regularity lemma (one where the number of parts in the partition is a slow-growing function of the regularity parameter $1/\\varepsilon$) for some pair $(H,F)$ with $F \\subsetneq H$?",
+    "context_text": "Fan Chung [1] proved a regularity lemma for clustering graphs—graphs whose clustering coefficient $c_{K_3,P_2}(G)$ is bounded away from zero—and raised as the first open question whether the clustering property could yield an efficient regularity lemma with a slowly-growing partition size. The authors generalise this to all $(H,F)$-regularity lemmas and answer every instance in the negative.",
+    "attributed_to": "Fan Chung",
+    "attributed_year": 2019,
+    "paper_contribution": "Proves that for every pair $F \\subsetneq H$ of graphs on $k$ vertices, there exists a graph whose every $\\varepsilon$-$(H,F)$-regular partition has order at least $\\mathrm{twr}(1/\\mathrm{poly}(\\varepsilon^{k^k}))$, establishing tower-type lower bounds for all generalized regularity lemmas and answering Chung's question in the negative.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "The question is paraphrased from two passages in the introduction; no single labelled environment exists for it. The attribution year is inferred from the 2019 reference [1] (Chung's clustering regularity paper); exact year of [1] is not given in the extracted text.",
+    "arxiv_id": "1911.02000",
+    "paper_title": "On Generalized Regularity",
+    "paper_authors": [
+      "Noga Alon",
+      "Guy Moshkovitz"
+    ],
+    "published": "2019-11-05",
+    "abs_url": "https://arxiv.org/abs/1911.02000",
+    "source": "pdf"
+  }
+]

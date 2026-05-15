@@ -1,0 +1,48 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Thomason's Conjecture on Book Ramsey Numbers",
+    "statement_text": "For all $n$ and $k$, $r(B^{(k)}_n) \\leq 2^k(n + k - 2) + 2$.",
+    "context_text": "Thomason conjectured that the random lower bound $r(B^{(k)}_n) \\geq 2^k n - o_k(n)$ is asymptotically tight, and stated the stronger quantitative form above. If true, this would yield a significant improvement on the upper bound for the clique Ramsey numbers $r(K_r)$, since $B^{(r-1)}_n = K_r$ when $n = r(K_r, K_1)$.",
+    "attributed_to": "Thomason",
+    "attributed_year": null,
+    "paper_contribution": "Provides a simpler proof that $r(B^{(k)}_n) = 2^k n + o_k(n)$ (Theorem 1.1) and, avoiding the regularity lemma, improves the error term to $O_k\\!\\left(n/(\\log\\log\\log n)^{1/25}\\right)$ (Theorem 1.2), eliminating the tower-type dependence of the earlier proof.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "PDF source — superscripts are lost in extraction; '2k' in the raw text is read as $2^k$ throughout based on context.",
+    "arxiv_id": "2001.00407",
+    "paper_title": "Ramsey numbers of books and quasirandomness",
+    "paper_authors": [
+      "David Conlon",
+      "Jacob Fox",
+      "Yuval Wigderson"
+    ],
+    "published": "2022-02-09",
+    "abs_url": "https://arxiv.org/abs/2001.00407",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Nikiforov–Rousseau–Schelp Conjecture on Quasirandomness of Extremal Book Colorings",
+    "statement_text": "For any $k \\geq 2$ and any $0 < \\theta < \\tfrac{1}{2}$, there exists $c = c(\\theta, k) > 0$ such that if a $2$-coloring of $K_N$ is not $\\theta$-quasirandom for $N$ sufficiently large, then it contains a monochromatic $B^{(k)}_n$ with $n = (2^{-k} + c)N$.",
+    "context_text": "Analogous to Sós's conjecture that all extremal colorings for clique Ramsey numbers are quasirandom, Nikiforov, Rousseau, and Schelp conjectured the same phenomenon for book Ramsey numbers. They themselves proved the case $k = 2$ using the then-known asymptotics of $r(B^{(2)}_n)$; the general case remained open until this paper.",
+    "attributed_to": "Nikiforov, Rousseau, and Schelp",
+    "attributed_year": null,
+    "paper_contribution": "Proves the conjecture in full generality for all $k \\geq 2$ (Theorem 1.3); additionally proves the stronger Theorem 1.4 showing that at least $c_1 N^k$ monochromatic $K_k$ each individually have at least $(2^{-k}+c_1)N$ extensions to a monochromatic $K_{k+1}$, and a converse characterising $o(1)$-quasirandomness (Theorem 1.5).",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "PDF source — the conjecture is not set in a labelled theorem environment; the statement reconstructed from Theorem 1.3, which the authors explicitly identify as the conjecture of Nikiforov, Rousseau, and Schelp.",
+    "arxiv_id": "2001.00407",
+    "paper_title": "Ramsey numbers of books and quasirandomness",
+    "paper_authors": [
+      "David Conlon",
+      "Jacob Fox",
+      "Yuval Wigderson"
+    ],
+    "published": "2022-02-09",
+    "abs_url": "https://arxiv.org/abs/2001.00407",
+    "source": "pdf"
+  }
+]

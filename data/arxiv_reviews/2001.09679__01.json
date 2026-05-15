@@ -1,0 +1,22 @@
+{
+  "review_id": "2001.09679__01",
+  "safe_id": "2001.09679",
+  "arxiv_id": "2001.09679",
+  "conjecture_title": "Informal conjecture $b'_\\varepsilon = b_\\varepsilon$ for $0<\\varepsilon<\\tfrac{1}{2}$",
+  "paper_title": "A note on sublinear separators and expansion",
+  "published": "2020-07-07",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "low",
+  "summary": "No follow-up work resolving the conjecture $b'_\\varepsilon = b_\\varepsilon$ for $0 < \\varepsilon < \\frac{1}{2}$ was found in five web calls. Dvořák published related work on weighted sublinear separators (Journal of Graph Theory, 2022) and, with Wood, on product structure of graph classes with strongly sublinear separators (arXiv:2208.10074, 2022), but neither paper appears to address this specific parameter-equality question. The conjecture is now six years old; absence of a resolution in the indexed literature is somewhat surprising for a problem of this age, but the question is technically narrow and may simply not yet have attracted a focused attack.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Dvořák \"sublinear separators\" expansion b_epsilon 2001.09679",
+    "Dvorak \"sublinear separators\" expansion separator function graph classes 2020 2021 2022 2023 2024",
+    "Dvořák \"weighted sublinear separators\" arXiv 2021 2022 b_epsilon expansion"
+  ],
+  "notes": "The Wiley page for Dvořák's 2022 JGT paper 'On weighted sublinear separators' (DOI 10.1002/jgt.22777) returned HTTP 402 (paywall) so its relevance to the conjecture could not be verified; it is not included in since_posted. The arXiv:2208.10074 paper by Dvořák–Wood works in an adjacent area but its abstract does not mention the b_epsilon/b'_epsilon parameters or the conjecture. No arXiv preprint for the 2022 JGT paper was found."
+}

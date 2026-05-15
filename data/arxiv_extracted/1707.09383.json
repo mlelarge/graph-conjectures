@@ -1,0 +1,27 @@
+[
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Open Question on Near-Bipartiteness for Diameter 3 (Yang–Yuan / Brandstädt et al.)",
+    "statement_text": "What is the complexity of Near-Bipartiteness for graphs of diameter 3?",
+    "context_text": "Yang and Yuan proved that Near-Bipartiteness is polynomial-time solvable for graphs of diameter 2 and NP-complete for graphs of diameter 4, leaving the diameter-3 case open. The same question was independently posed by Brandstädt et al. The paper resolves this by proving NP-completeness for diameter 3, completing the full complexity classification for all diameters.",
+    "attributed_to": "Yang and Yuan; Brandstädt et al.",
+    "attributed_year": null,
+    "paper_contribution": "Proves that Near-Bipartiteness (and thus Independent Feedback Vertex Set) is NP-complete for graphs of diameter 3, fully resolving the open question and establishing a dichotomy: polynomial-time solvable for diameter at most 2, NP-complete for diameter at least 3.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1707.09383",
+    "paper_title": "Independent Feedback Vertex Sets for Graphs of Bounded Diameter",
+    "paper_authors": [
+      "Marthe Bonamy",
+      "Konrad K. Dabrowski",
+      "Carl Feghali",
+      "Matthew Johnson",
+      "Daniel Paulusma"
+    ],
+    "published": "2017-07-28",
+    "abs_url": "https://arxiv.org/abs/1707.09383",
+    "source": "pdf"
+  }
+]

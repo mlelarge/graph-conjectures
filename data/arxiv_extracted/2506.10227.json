@@ -1,0 +1,68 @@
+[
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Problem 1.1 (Trotignon)",
+    "statement_text": "Is $\\chi(G)$ bounded for every triangle-free sun-free graph $G$?",
+    "context_text": "Trotignon posed this problem at the 2025 Barbados Graph Theory Workshop. A $t$-sun ($t\\geq 4$) is the graph obtained from a $t$-vertex cycle by adding a degree-one neighbor for each vertex; a graph is sun-free if it contains no induced $t$-sun for any $t\\geq 4$.",
+    "attributed_to": "Trotignon",
+    "attributed_year": 2025,
+    "paper_contribution": "Proves that every triangle-free graph of chromatic number at least $48$ has an induced subgraph that is either a $t$-sun for some $t\\geq 5$ or a $4$-sunspot (a $4$-sun with a single degree-one vertex deleted); more generally, for all $\\ell\\geq 5$ there exists $c(\\ell)\\in\\mathbb{N}$ such that every triangle-free graph with $\\chi\\geq c(\\ell)$ has such an induced subgraph.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2506.10227",
+    "paper_title": "Suns in triangle-free graphs of large chromatic number",
+    "paper_authors": [
+      "Sepehr Hajebi",
+      "Sophie Spirkl"
+    ],
+    "published": "2026-03-08",
+    "abs_url": "https://arxiv.org/abs/2506.10227",
+    "source": "html"
+  },
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Problem 1.4 (Trotignon)",
+    "statement_text": "Is the class of all net-free sun-free graphs $\\chi$-bounded?",
+    "context_text": "Trotignon proposed this as an extension of Problem 1.1 to graphs of bounded clique number. A net is the graph obtained from a $3$-vertex cycle by adding a degree-one neighbor for each vertex of the cycle; a graph class $\\mathcal{C}$ is $\\chi$-bounded if there is a function $f:\\mathbb{N}\\rightarrow\\mathbb{N}$ such that $\\chi(G)\\leq f(\\omega(G))$ for every $G\\in\\mathcal{C}$.",
+    "attributed_to": "Trotignon",
+    "attributed_year": 2025,
+    "paper_contribution": "Derives a partial answer analogous to their main Theorem 1.3 by combining it with Hajebi's result on bull-free graphs (Theorem 1.5), extending the chromatic-boundedness conclusion to the net-free sun-free setting under analogous exclusion conditions.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2506.10227",
+    "paper_title": "Suns in triangle-free graphs of large chromatic number",
+    "paper_authors": [
+      "Sepehr Hajebi",
+      "Sophie Spirkl"
+    ],
+    "published": "2026-03-08",
+    "abs_url": "https://arxiv.org/abs/2506.10227",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Informal conjecture on sun-free $\\chi$-boundedness without net exclusion",
+    "statement_text": "It could be true that the class of all sun-free graphs is already $\\chi$-bounded.",
+    "context_text": "After stating Problem 1.4, the authors remark that they are not sure why the net needs to be excluded, suggesting that sun-freeness alone might suffice for $\\chi$-boundedness without additionally requiring net-freeness.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Expressed as a tentative remark (\"it could be true that\") following Problem 1.4, not as a labelled conjecture environment.",
+    "arxiv_id": "2506.10227",
+    "paper_title": "Suns in triangle-free graphs of large chromatic number",
+    "paper_authors": [
+      "Sepehr Hajebi",
+      "Sophie Spirkl"
+    ],
+    "published": "2026-03-08",
+    "abs_url": "https://arxiv.org/abs/2506.10227",
+    "source": "html"
+  }
+]

@@ -1,0 +1,27 @@
+[
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Question: finite families yielding clean H-free classes",
+    "statement_text": "For which finite families $\\mathcal{H}$ of graphs is the class of all $\\mathcal{H}$-free graphs clean?",
+    "context_text": "After proving Theorem 1.5 — which characterizes all single graphs $H$ for which the class $\\mathcal{F}_H$ of $H$-free graphs is clean (precisely the subdivided star forests) — the authors pose the next natural step. They observe that any finite set $\\mathcal{H}$ containing a subdivided star forest yields a clean class, but note that the converse fails (e.g., $\\mathcal{H}=\\{H, K_3\\}$ for the unique double star on six vertices is also clean). A full description is deferred to a companion paper [6] by four of the five authors.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Posed as a natural next step in running prose (no labelled theorem environment). The companion paper [6] is announced to resolve it; PDF source is truncated after Section 2, so later sections may contain additional items not captured here.",
+    "arxiv_id": "2212.02737",
+    "paper_title": "Induced subgraphs and tree-decompositions VII. Basic obstructions in $H$-free graphs",
+    "paper_authors": [
+      "Tara Abrishami",
+      "Bogdan Alecu",
+      "Maria Chudnovsky",
+      "Sepehr Hajebi",
+      "Sophie Spirkl"
+    ],
+    "published": "2023-11-07",
+    "abs_url": "https://arxiv.org/abs/2212.02737",
+    "source": "pdf"
+  }
+]

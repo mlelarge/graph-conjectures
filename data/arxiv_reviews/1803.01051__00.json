@@ -1,0 +1,28 @@
+{
+  "review_id": "1803.01051__00",
+  "safe_id": "1803.01051",
+  "arxiv_id": "1803.01051",
+  "conjecture_title": "Question 1.5",
+  "paper_title": "Bounding $χ$ by a fraction of $Δ$ for graphs without large cliques",
+  "published": "2018-03-02",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "solved",
+  "confidence": "high",
+  "summary": "Question 1.5 is answered affirmatively by the paper’s own main theorem (Theorem 1.1 of arXiv:1803.01051): for sufficiently large $\\Delta$, every graph $G$ with maximum degree at most $\\Delta$ and $\\omega(G) \\leq \\omega$ satisfies $\\chi_c(G) \\leq 72\\Delta\\sqrt{\\ln\\omega/\\ln\\Delta}$. Setting $\\omega = \\Delta^{1/f(c)}$ gives $\\chi_c(G) \\leq 72\\Delta/\\sqrt{f(c)}$, which is at most $\\Delta/c$ whenever $f(c) \\geq (72c)^2$; since $\\chi_\\ell \\leq \\chi_c$, the function $f(c) = (72c)^2$ witnesses a positive answer to the question. No subsequent paper is needed to resolve it.",
+  "since_posted": [],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2012.13916",
+      "verified": true,
+      "note": "Paper is about connected greedy edge colouring (χ’_c in the sense of greedy edge-coloring along connected orderings) and the bound χ’_c(G) ≤ 4 for subcubic graphs. This topic is entirely unrelated to Question 1.5, which concerns the list (or correspondence) chromatic number χ_ℓ as a fraction of Δ. The internal-reference attribution appears to be a spurious match."
+    }
+  ],
+  "search_queries": [
+    "list chromatic number fraction Delta clique-free graphs Bonamy Kelly Nelson Postle 1803.01051",
+    "chi_l leq Delta/c clique-free graphs list coloring maximum degree sublinear clique",
+    "list chromatic number Delta/c clique number sublinear exponent 2018 2019 2020 2021 2022 follow-up Bonamy Kelly Nelson Postle"
+  ],
+  "notes": "Question 1.5 is posed in the introduction of 1803.01051 to motivate the paper’s main result, and that same result resolves it positively. The Kelly PhD thesis (University of Waterloo) explicitly records the corollary: if $\\omega(G) \\leq \\Delta^{1/(72c)^2}$ and $\\Delta$ is sufficiently large, then $\\chi_c(G) \\leq \\Delta/c$. The internal reference 2012.13916 concerns a different notion ($\\chi’_c$ for edge colouring) and is not relevant to this conjecture."
+}

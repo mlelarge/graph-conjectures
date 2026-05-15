@@ -1,0 +1,22 @@
+{
+  "review_id": "2204.10119__02",
+  "safe_id": "2204.10119",
+  "arxiv_id": "2204.10119",
+  "conjecture_title": "Open Question: minimum degree five in Theorem 1.6",
+  "paper_title": "Bipartite graphs with no $K_6$ minor",
+  "published": "2022-04-21",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "Theorem 1.6 of arXiv:2204.10119 establishes that every non-null bipartite graph with minimum degree at least six has a $K_6$ minor. The open question of whether 'six' can be replaced by 'five' remains unresolved: no published paper proving or disproving the degree-five analogue was found in a broad web search spanning 2022–2026. The problem appears in the journal version (JCTB 2024) with the same status.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "bipartite graph minimum degree five K6 minor Chudnovsky Scott Seymour Spirkl",
+    "bipartite graph K6 minor minimum degree 2204.10119",
+    "bipartite graph minimum degree five K6 minor open problem 2023 2024 2025"
+  ],
+  "notes": "Three web searches and two WebFetch calls (arXiv abstract page and Seymour's Barbados 2025 open-problems PDF — the latter was unreadable binary) returned no follow-up resolving the degree-five question. The conjecture is ~4 years old; medium confidence reflects that a resolution could exist in the literature without surfacing prominently in these searches."
+}

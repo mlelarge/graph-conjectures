@@ -1,0 +1,35 @@
+{
+  "review_id": "1702.01094__00",
+  "safe_id": "1702.01094",
+  "arxiv_id": "1702.01094",
+  "conjecture_title": "Question (rainbow hole with $s$ consecutive rainbow vertices)",
+  "paper_title": "Induced subgraphs of graphs with large chromatic number. IX. Rainbow paths",
+  "published": "2017-07-03",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The question asks whether, for all fixed $s$ and $\\kappa$, every graph $G$ with $\\omega(G)\\leq\\kappa$ and sufficiently large $\\chi(G)$ must contain, in every colouring, a hole with some $s$ consecutive rainbow vertices. The source paper (1702.01094) shows that the stronger property — a fully rainbow hole, or even one in which every three consecutive vertices are rainbow — fails via a shift-graph construction, leaving the weaker $s$-consecutive variant open. A 2026 preprint (arXiv:2601.00602) improves quantitative bounds on induced rainbow paths in triangle-free graphs but does not address holes. No resolution of the hole question was found in the indexed literature.",
+  "since_posted": [
+    {
+      "title": "Towards a conjecture on long induced rainbow paths in Δ-free graphs",
+      "authors": "unknown (see arXiv:2601.00602)",
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2601.00602",
+      "arxiv_id": "2601.00602",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Improves quantitative bounds on induced rainbow paths (not holes) in triangle-free graphs beyond Scott–Seymour's earlier bound, but does not address the rainbow-hole question."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "rainbow hole consecutive vertices chromatic number Scott Seymour induced subgraphs",
+    "rainbow path hole graph coloring chi-bounded clique-free 1702.01094",
+    "Scott Seymour \"induced subgraphs large chromatic number\" rainbow hole 2020 2021 2022 2023 2024 2025",
+    "rainbow hole \"consecutive rainbow\" vertices graph chromatic number 2018 2019 2020 2021 2022 2023 2024"
+  ],
+  "notes": "The shift graph of triples (coloured by middle elements) rules out a fully rainbow hole and a hole in which every three consecutive vertices are rainbow, but the weaker question of $s$ consecutive rainbow vertices in a hole is open. The paper arXiv:2601.00602 is the closest follow-up found; it handles paths only. No paper resolving the hole variant was found after five web calls."
+}

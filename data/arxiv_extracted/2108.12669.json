@@ -1,0 +1,24 @@
+[
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 1",
+    "statement_text": "There exists a constant $c > 1$ such that every $n$-vertex triangle-free planar graph has at least $c^{n^{\\log_{9/2} 3}}$ distinct proper 3-colorings.",
+    "context_text": "Theorem 1 of the paper provides, for infinitely many $n$, an $n$-vertex triangle-free planar graph with at most $64^{n^{\\log_{9/2} 3}} < 64^{n^{0.731}}$ 3-colorings, improving Thomassen's construction. The authors conjecture that the exponent $\\log_{9/2} 3 \\approx 0.731$ in the upper bound is optimal, making Conjecture 1 the matching lower-bound statement.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "PDF source — the exponent 'nlog9/23' in the raw extraction is read as $n^{\\log_{9/2} 3}$, consistent with the stated numerical approximation $n^{0.731}$ and the analytic derivation in the proof.",
+    "arxiv_id": "2108.12669",
+    "paper_title": "Triangle-free planar graphs with at most $64^{n^{0.731}}$ 3-colorings",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Luke Postle"
+    ],
+    "published": "2021-08-28",
+    "abs_url": "https://arxiv.org/abs/2108.12669",
+    "source": "pdf"
+  }
+]

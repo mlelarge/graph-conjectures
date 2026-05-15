@@ -1,0 +1,25 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.1 (Alon–Krivelevich)",
+    "statement_text": "If $G$ is a bipartite graph of maximum degree $\\Delta$, then $\\operatorname{ch}(G)=O(\\log\\Delta)$.",
+    "context_text": "Alon and Krivelevich made this conjecture in 1998, asserting that the lower bound $\\operatorname{ch}(G)\\geq(1+o(1))\\log_2\\delta$ of Saxton and Thomason is best possible up to a constant factor for bipartite graphs. The conjecture is still widely open; prior to this work the best known upper bound was $(1+o(1))\\frac{\\Delta}{\\log\\Delta}$, which holds for the larger class of triangle-free graphs.",
+    "attributed_to": "Alon and Krivelevich",
+    "attributed_year": 1998,
+    "paper_contribution": "Proves that every bipartite graph $G$ of sufficiently large maximum degree $\\Delta$ satisfies $\\operatorname{ch}(G)<(\\frac{4}{5}-\\varepsilon)\\frac{\\Delta}{\\log\\Delta}$ for $\\varepsilon=10^{-3}$, giving the first upper bound with leading constant strictly less than $1$ and showing that list coloring behaves fundamentally differently for bipartite graphs than for general triangle-free graphs.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2409.01513",
+    "paper_title": "Bipartite graphs are $(\\frac{4}{5}-\\varepsilon) \\fracΔ{\\log Δ}$-choosable",
+    "paper_authors": [
+      "Peter Bradshaw",
+      "Bojan Mohar",
+      "Ladislav Stacho"
+    ],
+    "published": "2024-09-03",
+    "abs_url": "https://arxiv.org/abs/2409.01513",
+    "source": "html"
+  }
+]

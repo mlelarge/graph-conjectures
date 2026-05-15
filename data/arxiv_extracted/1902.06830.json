@@ -1,0 +1,25 @@
+[
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Remark 1.2 (Open Problem on Sparse Densities)",
+    "statement_text": "The problem of finding the asymptotic rate across the whole range of sparse densities remains open.",
+    "context_text": "Theorem 1.1 establishes the asymptotic rate for moderate deviations of subgraph counts in $G(n,m)$ when $t(n)$ is bounded away from 1, with a partial extension to sparser regimes satisfying $\\max\\{t^{1/2}n^{-1/2}\\log n,\\, t^{e-3/2}\\} \\ll \\alpha_n \\ll \\min\\{t^{2e-5/2}n^{1/2},\\, t^{e+2}n^{1/2}\\}$. The authors note they initially proved results only in the dense case $t\\in(0,1)$ constant and have only partially extended to sparser regimes.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated in Remark 1.2 as an open problem in prose form, without a dedicated labeled theorem environment. PDF source — math notation in surrounding theorems may be partially garbled.",
+    "arxiv_id": "1902.06830",
+    "paper_title": "Moderate deviations of subgraph counts in the Erdős-Rényi random graphs $G(n,m)$ and $G(n,p)$",
+    "paper_authors": [
+      "Christina Goldschmidt",
+      "Simon Griffiths",
+      "Alex Scott"
+    ],
+    "published": "2020-02-10",
+    "abs_url": "https://arxiv.org/abs/1902.06830",
+    "source": "pdf"
+  }
+]

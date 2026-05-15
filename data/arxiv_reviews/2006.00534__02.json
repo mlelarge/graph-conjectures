@@ -1,0 +1,24 @@
+{
+  "review_id": "2006.00534__02",
+  "safe_id": "2006.00534",
+  "arxiv_id": "2006.00534",
+  "conjecture_title": "Question 9",
+  "paper_title": "Inverse problems for minimal complements and maximal supplements",
+  "published": "2020-12-30",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Question 9 asks for the optimal size threshold below which every non-empty solid subset of a finite abelian group G is guaranteed to be a maximal supplement; Theorem 5 in the source paper establishes the bound O((|G|/log|G|)^{1/4}) but the authors note it is unlikely to be optimal. A targeted search across arXiv and the published literature found no follow-up work improving or matching this bound, and the question appears to remain open.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "maximal supplement solid subset finite abelian group optimal bound Alon Kravitz Larson 2006.00534",
+    "minimal complement maximal supplement finite abelian group solid subset bound 2021 2022 2023 2024 2025",
+    "arxiv 2006.00534 cite minimal complement supplement 2022 2023 2024 2025",
+    "Kravitz Larson maximal supplement solid abelian group 2022 2023 2024 arxiv",
+    "arxiv search maximal supplement solid abelian group"
+  ],
+  "notes": "No follow-up papers addressing Question 9 were found after five web searches and fetches. The question concerns the sharpness of the O((|G|/log|G|)^{1/4}) bound in Theorem 5 of arXiv:2006.00534; the source paper itself flags the bound as likely not optimal. Status is open with high confidence given the targeted search and the 5-year gap since publication."
+}

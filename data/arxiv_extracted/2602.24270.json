@@ -1,0 +1,27 @@
+[
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Question of Blanco, Cook, Hatzel, Hilaire, Illingworth, and McCarty",
+    "statement_text": "Is it true that every connected graph $G$ has a tree decomposition whose indexing tree is a subgraph of $G$, and whose width is bounded by some function of the pathwidth of $G$?",
+    "context_text": "Blanco et al. (2024) answered Dvořák's original question negatively by showing that no such tree decomposition exists with width bounded by a function of the treewidth — not even if the indexing tree is only required to be a minor of $G$. They observed that their counterexamples have bounded pathwidth (treewidth 2 but unbounded pathwidth) and proposed the relaxed question replacing treewidth by pathwidth.",
+    "attributed_to": "Blanco, Cook, Hatzel, Hilaire, Illingworth, and McCarty",
+    "attributed_year": 2024,
+    "paper_contribution": "Answers the question positively: proves (Theorem 1) that every connected graph $G$ of pathwidth less than $k$ has a tree decomposition of width at most $f(k)$ indexed by a spanning tree $T$ of $G$ in which every vertex belongs to its own bag, where $f:\\mathbb{N}\\to\\mathbb{N}$ is an explicit function.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2602.24270",
+    "paper_title": "Tree decompositions whose trees are subgraphs: An application of Simon's factorization",
+    "paper_authors": [
+      "Romain Bourneuf",
+      "Gwenaël Joret",
+      "Piotr Micek",
+      "Martin Milanič",
+      "Michał Pilipczuk"
+    ],
+    "published": "2026-02-27",
+    "abs_url": "https://arxiv.org/abs/2602.24270",
+    "source": "html"
+  }
+]

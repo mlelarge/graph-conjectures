@@ -1,0 +1,25 @@
+[
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Question 1 (Brass et al.)",
+    "statement_text": "Is there a conflict collection of size 2?",
+    "context_text": "A conflict collection is a set of planar graphs that cannot be simultaneously straight-line embedded on any common point set. Cardinal, Hoffmann, and Kusters [CHK15] found a conflict collection of 7,393 planar graphs on $n=35$ vertices; this paper provides 49 stacked triangulations on 11 vertices as a conflict collection, representing another step towards a (negative) answer to this question.",
+    "attributed_to": "Brass, Cenek, Duncan, Efrat, Erten, Ismailescu, Kobourov, Lubiw, and Mitchell",
+    "attributed_year": 2007,
+    "paper_contribution": "Provides a conflict collection of 49 stacked triangulations on 11 vertices (reducing the vertex count from 35 and the collection size from 7,393), further stepping towards a negative answer; also shows that no conflict collection of stacked 11-vertex triangulations has size fewer than 36.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1811.06482",
+    "paper_title": "A Note On Universal Point Sets for Planar Graphs",
+    "paper_authors": [
+      "Manfred Scheucher",
+      "Hendrik Schrezenmaier",
+      "Raphael Steiner"
+    ],
+    "published": "2019-09-25",
+    "abs_url": "https://arxiv.org/abs/1811.06482",
+    "source": "pdf"
+  }
+]

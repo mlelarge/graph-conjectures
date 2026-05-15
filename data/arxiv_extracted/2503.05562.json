@@ -1,0 +1,74 @@
+[
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Question 1.1",
+    "statement_text": "Given a graph class $\\mathcal{G}$, is there a constant $c_{\\mathcal{G}}$ such that $$\\frac{\\gamma(G)}{\\rho(G)}\\leqslant c_{\\mathcal{G}}\\quad\\text{ for each }\\quad G\\in\\mathcal{G}~{}~{}?$$",
+    "context_text": "The paper studies the ratio between the dominating number $\\gamma(G)$ and the packing number $\\rho(G)$ of a graph $G$. A positive answer immediately gives the bound $c_{\\mathcal{G}}$ on the integrality gap of both the dominating and the packing integer programs for any $G\\in\\mathcal{G}$.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2503.05562",
+    "paper_title": "On graph classes with constant domination-packing ratio",
+    "paper_authors": [
+      "Marthe Bonamy",
+      "Mónika Csikós",
+      "Anna Gujgiczer",
+      "Yelena Yuditsky"
+    ],
+    "published": "2025-03-07",
+    "abs_url": "https://arxiv.org/abs/2503.05562",
+    "source": "html"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.2 (Henning, Löwenstein, and Rautenbach)",
+    "statement_text": "Let $G$ be a connected graph with $\\Delta(G)\\leqslant 3$, then $\\gamma(G)\\leqslant 2\\rho(G)+1$. The equality holds only for three well-defined graphs, one of which being the Petersen graph.",
+    "context_text": "Henning, Löwenstein, and Rautenbach showed that if $\\Delta(G)\\leqslant 2$ then $\\gamma(G)\\leqslant\\rho(G)+1$, and that if $G$ is claw-free with $\\Delta(G)\\leqslant 3$ then $\\gamma(G)\\leqslant 2\\rho(G)$. They then stated this conjecture for general subcubic graphs. The general upper bound $\\gamma(G)\\leqslant\\Delta(G)\\rho(G)$ serves as the trivial baseline.",
+    "attributed_to": "Henning, Löwenstein, and Rautenbach",
+    "attributed_year": 2011,
+    "paper_contribution": "The paper sharpens Conjecture 1.2, improving related constants and providing new structural context through results on 2-degenerate graphs and other graph classes.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2503.05562",
+    "paper_title": "On graph classes with constant domination-packing ratio",
+    "paper_authors": [
+      "Marthe Bonamy",
+      "Mónika Csikós",
+      "Anna Gujgiczer",
+      "Yelena Yuditsky"
+    ],
+    "published": "2025-03-07",
+    "abs_url": "https://arxiv.org/abs/2503.05562",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Question 9.1",
+    "statement_text": "Characterize those graph classes $\\mathcal{G}$ for which there is a constant $c_{\\mathcal{G}}$ such that $\\dfrac{\\gamma(G)}{\\rho(G)}\\leqslant c_{\\mathcal{G}}$ for each $G\\in\\mathcal{G}$.",
+    "context_text": "In the conclusion, after extending both the list of graph classes with bounded $\\gamma/\\rho$ ratio and those with unbounded ratio (notably showing 2-degenerate graphs have bounded ratio), the authors note that Theorem 6.1 on 2-degenerate graphs rules out any characterization purely in terms of sparse graph classes.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "Statement text is partially cut off in the provided content; the formula is inferred from context and from the identical formulation in Question 1.1.",
+    "arxiv_id": "2503.05562",
+    "paper_title": "On graph classes with constant domination-packing ratio",
+    "paper_authors": [
+      "Marthe Bonamy",
+      "Mónika Csikós",
+      "Anna Gujgiczer",
+      "Yelena Yuditsky"
+    ],
+    "published": "2025-03-07",
+    "abs_url": "https://arxiv.org/abs/2503.05562",
+    "source": "html"
+  }
+]

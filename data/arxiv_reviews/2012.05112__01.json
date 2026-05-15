@@ -1,0 +1,44 @@
+{
+  "review_id": "2012.05112__01",
+  "safe_id": "2012.05112",
+  "arxiv_id": "2012.05112",
+  "conjecture_title": "Informal Conjecture (linearity of g(q))",
+  "paper_title": "Divisible subdivisions",
+  "published": "2021-06-29",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "solved",
+  "confidence": "high",
+  "summary": "Das, Draganić, and Steiner (arXiv:2111.05723, 2021) proved that for any subcubic $n$-vertex graph $H$ and integer $q \\geq 2$, the Alon–Krivelevich function satisfies $f(H,q) \\leq \\frac{21}{2}qn + 8n + 14q$, which is linear in $q$ and optimal up to a constant factor. Since cycles are subcubic, this directly establishes $g(q) = O(q)$, confirming Conjecture (linearity of $g(q)$) from arXiv:2012.05112 and removing the $\\log q$ factor that Alon and Krivelevich attributed to the probabilistic method. The paper was subsequently published in the Journal of Combinatorial Theory, Series B (2024).",
+  "since_posted": [
+    {
+      "title": "Tight bounds for divisible subdivisions",
+      "authors": "Shagnik Das, Nemanja Draganić, Raphael Steiner",
+      "year": 2021,
+      "venue": "Journal of Combinatorial Theory, Series B",
+      "url": "https://arxiv.org/abs/2111.05723",
+      "arxiv_id": "2111.05723",
+      "doi": null,
+      "kind": "proof",
+      "claim": "Proves f(H,q) ≤ (21/2)qn + 8n + 14q for all subcubic H, establishing g(q) = O(q) and confirming the conjecture that the O(q log q) bound is not tight."
+    },
+    {
+      "title": "Divisible subdivisions of graphs in subdivisions of complete graphs",
+      "authors": "Xinmin Hou, Xiangyang Wang",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2510.05697",
+      "arxiv_id": "2510.05697",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Improves the linear bounds of Das–Draganić–Steiner for specific cases (trees, cycles, 5-degenerate graphs) and works toward the exact value s_q(H) = m(q-1)+n."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Alon Krivelevich \"divisible subdivisions\" arxiv 2012.05112 cite",
+    "\"divisible subdivisions\" graph theory linear g(q) Alon Krivelevich"
+  ],
+  "notes": "The conjecture is resolved by arXiv:2111.05723. The key insight is that a subdivision of C_3 with all edge-paths of length divisible by q yields a cycle of length divisible by q, so f(C_3,q) = O(q) implies g(q) = O(q). The 2025 follow-up (arXiv:2510.05697) refines the constant factors and addresses exact values in special cases."
+}

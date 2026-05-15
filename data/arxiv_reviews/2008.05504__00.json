@@ -1,0 +1,46 @@
+{
+  "review_id": "2008.05504__00",
+  "safe_id": "2008.05504",
+  "arxiv_id": "2008.05504",
+  "conjecture_title": "Conjecture 2",
+  "paper_title": "On the tree-width of even-hole-free graphs",
+  "published": "2020-08-12",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "solved",
+  "confidence": "high",
+  "summary": "Conjecture 2 from arXiv:2008.05504 — that every even-hole-free graph of degree at most $d$ has tree-width at most $f(d)$ for some function $f$ — was resolved affirmatively within weeks of being posted. Abrishami, Chudnovsky, and Vušković (arXiv:2009.01297, submitted September 2020) proved the full statement by showing that decomposition cutsets in even-hole-free bounded-degree graphs can be organized into a bounded number of well-behaved collections, yielding bounded treewidth. The internal reference arXiv:2108.01162 addresses a related but distinct conjecture about unavoidable induced subgraphs in bounded-degree graphs; arXiv:2507.06169 provides a counterexample to a different conjecture of Trotignon about outerstring induced subgraphs, not to Conjecture 2.",
+  "since_posted": [
+    {
+      "title": "Induced subgraphs and tree decompositions I. Even-hole-free graphs of bounded degree",
+      "authors": "Tara Abrishami, Maria Chudnovsky, Kristina Vušković",
+      "year": 2020,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2009.01297",
+      "arxiv_id": "2009.01297",
+      "doi": null,
+      "kind": "proof",
+      "claim": "Proves the full conjecture: every even-hole-free graph with bounded degree has bounded treewidth, resolving the conjecture of Aboulker, Adler, Kim, Sintiari, and Trotignon."
+    }
+  ],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2108.01162",
+      "verified": true,
+      "note": "Paper title confirmed as 'Induced subgraphs and tree decompositions II. Toward walls and their line graphs in graphs of bounded degree'. It addresses a related conjecture about unavoidable induced subgraphs (t-theta, t-pyramid, line graph of wall subdivision) in bounded-degree graphs with large treewidth, not Conjecture 2 of 2008.05504 directly. Since Conjecture 2 was already resolved by 2009.01297, this paper extends the structural picture around a distinct question."
+    },
+    {
+      "arxiv_id": "2507.06169",
+      "verified": true,
+      "note": "Paper confirmed as 'A simple layered-wheel-like construction'. The counterexample it provides is to a conjecture by Trotignon about graphs with large treewidth that exclude large walls, large complete bipartite induced minors, and large cliques — not to Conjecture 2 of 2008.05504. No relevance to the even-hole-free bounded-degree treewidth conjecture."
+    }
+  ],
+  "search_queries": [
+    "even-hole-free graph tree-width bounded degree conjecture 2008.05504",
+    "WebFetch https://arxiv.org/abs/2108.01162",
+    "WebFetch https://arxiv.org/abs/2507.06169",
+    "WebFetch https://arxiv.org/abs/2009.01297"
+  ],
+  "notes": "Conjecture 2 was proved by Abrishami, Chudnovsky, and Vušković in arXiv:2009.01297, submitted 2020-09-02, just three weeks after the source paper appeared. A ScienceDirect search result (pii S0095895622000533) suggests the paper was subsequently published in the Journal of Combinatorial Theory, Series B, but the DOI was not verified via WebFetch within the 5-call cap."
+}

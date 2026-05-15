@@ -1,0 +1,22 @@
+{
+  "review_id": "2107.05995__02",
+  "safe_id": "2107.05995",
+  "arxiv_id": "2107.05995",
+  "conjecture_title": "Problem on Hat Guessing Number After Adding a Universal Vertex",
+  "paper_title": "On the Hat Guessing Number of Graphs",
+  "published": "2021-07-21",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "No follow-up paper was found that establishes a general upper bound for HG(G') in terms of HG(G) when G' is obtained by adding a universal vertex to G, nor one that proves no such function exists. The source paper itself shows the gap can be large (HG(G') can reach q^2+q where q = HG(G)), so any bounding function must grow at least quadratically. Searches across arXiv and related literature on hat guessing numbers (including papers on degenerate graphs, random graphs, and proper colorings) found no subsequent resolution of this specific problem as of May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "hat guessing number universal vertex graph 2107.05995 Alon Chizewer",
+    "hat guessing number HG universal vertex upper bound graph theory arxiv",
+    "\"hat guessing\" \"universal vertex\" graph HG function upper bound"
+  ],
+  "notes": "No follow-up found in 5 web calls. The problem dates from 2021; absence of resolution after ~5 years lowers confidence slightly below high. Related active literature (degenerate graphs, random graphs, proper colorings) does not address the universal vertex addition problem. The lower bound q^2 <= HG(G') is implicit in the source paper via the G_d(N) construction."
+}

@@ -1,0 +1,24 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.1 (Reed's Conjecture)",
+    "statement_text": "Every non-null even-hole-free graph has a bisimplicial vertex.",
+    "context_text": "Reed conjectured that every even-hole-free graph has a bisimplicial vertex (a vertex whose neighbourhood is the union of two cliques). A previous claimed proof by Addario-Berry, Havet, Reed, Chudnovsky, and Seymour [1] was found to contain a serious error in the proof of theorem 3.1 of that paper, making this paper's new proof necessary.",
+    "attributed_to": "Reed",
+    "attributed_year": null,
+    "paper_contribution": "Provides a complete new proof of the conjecture via two decomposition theorems for even-hole-free graphs, bypassing the flawed step in the earlier proof [1].",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1909.10967",
+    "paper_title": "Even-hole-free graphs still have bisimplicial vertices",
+    "paper_authors": [
+      "Maria Chudnovsky",
+      "Paul Seymour"
+    ],
+    "published": "2020-05-15",
+    "abs_url": "https://arxiv.org/abs/1909.10967",
+    "source": "pdf"
+  }
+]

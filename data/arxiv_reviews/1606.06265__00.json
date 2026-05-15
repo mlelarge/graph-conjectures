@@ -1,0 +1,35 @@
+{
+  "review_id": "1606.06265__00",
+  "safe_id": "1606.06265",
+  "arxiv_id": "1606.06265",
+  "conjecture_title": "Fractional Chromatic Number Bound for Planar Triangle-Free Graphs",
+  "paper_title": "Triangle-free planar graphs with the smallest independence number",
+  "published": "2016-06-20",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "The conjecture that every n-vertex planar triangle-free graph satisfies chi_f(G) <= 3 - 3/(n+1) remains open. The special case for graphs of maximum degree at most 4 was confirmed prior to the 2016 source paper (cited as [6] therein); the best general bound at the time of posting was 3 - 3/(3n+1) (Dvořák–Sereni–Volec, EJC 2015). A 2018 paper by Dvořák (arXiv:1809.05439) on fractional coloring of girth-five planar graphs reports improvements for triangle-free planar graphs, but the exact improvement relative to the conjectured 3 - 3/(n+1) could not be confirmed from the abstract. No complete resolution of the full conjecture was found.",
+  "since_posted": [
+    {
+      "title": "Fractional coloring of planar graphs of girth five",
+      "authors": "Zdeněk Dvořák",
+      "year": 2018,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/1809.05439",
+      "arxiv_id": "1809.05439",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves fractional coloring results for triangle-free planar graphs (the abstract indicates a bound improving the general 3 - 3/(3n+1) result of Dvořák–Sereni–Volec), but the exact bound relative to the conjectured 3 - 3/(n+1) could not be verified from the abstract alone."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "fractional chromatic number planar triangle-free graphs bound Dvořák Masařík 1606.06265",
+    "fractional chromatic number planar triangle-free \"3 - 3/(n+1)\" independence number",
+    "planar triangle-free graphs fractional chromatic number \"n+1\" upper bound conjecture 2017 2018 2019 2020 2021 2022 2023 2024",
+    "Dvorak Masarik Musílek Pangrác \"independence number\" \"fractional chromatic\" planar triangle-free 2017 2018 2019 2020 2021"
+  ],
+  "notes": "The conjectured bound 3 - 3/(n+1) is motivated by the tight independence-number lower bound alpha(G) >= (n+1)/3 via alpha(G) >= n/chi_f(G). The max-degree-4 special case was already established before the source paper. The general bound 3 - 3/(3n+1) (Dvořák–Sereni–Volec 2015, arXiv:1402.5331) predates the conjecture statement; arXiv:1809.05439 (Dvořák 2018) may improve this for triangle-free planar graphs but exact bound unverified. No post-2016 paper explicitly resolving the full conjecture was found."
+}

@@ -1,0 +1,22 @@
+{
+  "review_id": "1912.07205__00",
+  "safe_id": "1912.07205",
+  "arxiv_id": "1912.07205",
+  "conjecture_title": "Conjecture 8",
+  "paper_title": "The Last Temptation of William T. Tutte",
+  "published": "2019-12-16",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 8 from arXiv:1912.07205 (Mohar and Singer, published in European Journal of Combinatorics 2021) asserts that every planar triangulation with a disconnected 4-coloring complex must contain at least one even-parity and one odd-parity component. The conjecture was posed as an open problem based on extensive computation, after the paper resolved Tutte's original question by constructing planar triangulations with arbitrarily many same-parity components. No follow-up work resolving this conjecture was found in the indexed literature through May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "planar triangulation 4-coloring complex disconnected parity components Mohar Singer arXiv 1912.07205",
+    "4-coloring complex planar triangulation even odd parity component graph theory 2020 2021 2022 2023 2024 2025",
+    "Kempe equivalence planar triangulation parity coloring complex cite \"1912.07205\" OR \"Mohar Singer\" 2020 2021 2022 2023 2024 2025"
+  ],
+  "notes": "The source paper was published as: European Journal of Combinatorics, vol. 91 (2021), article 103221, DOI:10.1016/j.ejc.2020.103221. A thematically adjacent paper arXiv:2101.04065 (Kempe equivalence of 4-critical planar graphs, showing every 4-critical planar graph has its 4-colorings forming a single Kempe class) was found but addresses a different structural question and does not directly resolve Conjecture 8. No follow-up found in indexed literature."
+}

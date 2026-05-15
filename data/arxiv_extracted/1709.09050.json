@@ -1,0 +1,178 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Schroeder's Conjecture",
+    "statement_text": "If $G$ is a graph of genus $g$, then $c(G) \\leq g + 3$.",
+    "context_text": "Schroeder conjectured in 2001 that the cop number of any genus-$g$ graph is at most $g+3$, meaning one additional cop per handle beyond the planar bound of 3. The conjecture holds for $g=0$ (planar, by Theorem 1) and $g=1$ (toroidal), but remains open for all $g \\geq 3$.",
+    "attributed_to": "Schroeder",
+    "attributed_year": 2001,
+    "paper_contribution": "This survey reviews all progress toward Schroeder's conjecture, including the upper bounds $c(G) \\leq \\lfloor 3g/2 \\rfloor + 3$ (Schroeder) and the improvement $c(G) \\leq \\lfloor 4g/3 \\rfloor + D$ (Bowler, Erde, Lehner, Pitz), confirms the conjecture for $g=0$ and $g=1$, and discusses capture time implications.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source — math may be garbled; central conjecture of this survey",
+    "arxiv_id": "1709.09050",
+    "paper_title": "Topological directions in Cops and Robbers",
+    "paper_authors": [
+      "Anthony Bonato",
+      "Bojan Mohar"
+    ],
+    "published": "2018-04-22",
+    "abs_url": "https://arxiv.org/abs/1709.09050",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Andreae-Schroeder Conjecture",
+    "statement_text": "Any toroidal graph has cop number at most $3$.",
+    "context_text": "Andreae first asked whether toroidal graphs have cop number at most 3; this problem was referenced in Schroeder's paper. No example of a toroidal graph with cop number 4 is known, while the best known upper bound from Schroeder's theorem yields cop number at most 4 for toroidal graphs.",
+    "attributed_to": "Andreae and Schroeder",
+    "attributed_year": null,
+    "paper_contribution": "The survey presents this as an open conjecture and notes that no counterexample is known; the best current upper bound gives cop number at most 4 for toroidal graphs.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source",
+    "arxiv_id": "1709.09050",
+    "paper_title": "Topological directions in Cops and Robbers",
+    "paper_authors": [
+      "Anthony Bonato",
+      "Bojan Mohar"
+    ],
+    "published": "2018-04-22",
+    "abs_url": "https://arxiv.org/abs/1709.09050",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Clarke-Fiorini-Joret-Theis Conjecture",
+    "statement_text": "If $g$ is a positive integer, then $\\tilde{c}(g) = c(\\lfloor g/2 \\rfloor)$.",
+    "context_text": "Clarke, Fiorini, Joret, and Theis conjectured that the lower bound in their Theorem 14 is always tight, relating the maximum cop number $\\tilde{c}(g)$ over all non-orientable genus $g$ graphs to the maximum cop number $c(\\lfloor g/2 \\rfloor)$ over orientable genus $\\lfloor g/2 \\rfloor$ graphs.",
+    "attributed_to": "Clarke, Fiorini, Joret, and Theis",
+    "attributed_year": null,
+    "paper_contribution": "The survey presents this conjecture alongside Theorem 14, which establishes $c(\\lfloor g/2 \\rfloor) \\leq \\tilde{c}(g) \\leq \\frac{3}{2}(g+1)$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source — math may be garbled; $\\tilde{c}(g)$ denotes the maximum cop number over all graphs of non-orientable genus $g$, and $c(g)$ denotes the maximum over orientable genus $g$",
+    "arxiv_id": "1709.09050",
+    "paper_title": "Topological directions in Cops and Robbers",
+    "paper_authors": [
+      "Anthony Bonato",
+      "Bojan Mohar"
+    ],
+    "published": "2018-04-22",
+    "abs_url": "https://arxiv.org/abs/1709.09050",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Smallest 3-cop-win planar graph conjecture",
+    "statement_text": "The smallest order $3$-cop-win planar graph is the dodecahedron.",
+    "context_text": "It has been proved that the smallest order 3-cop-win graph overall is the Petersen graph. It is conjectured that the smallest planar graph with cop number 3 is the dodecahedron, but this remains open.",
+    "attributed_to": "reference [5] in the paper (exact authors not identified in extracted text)",
+    "attributed_year": null,
+    "paper_contribution": "The survey mentions this conjecture as an open problem concerning small-order planar graphs with cop number 3.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source; attributed to reference [5] whose full citation is not visible in the provided extraction",
+    "arxiv_id": "1709.09050",
+    "paper_title": "Topological directions in Cops and Robbers",
+    "paper_authors": [
+      "Anthony Bonato",
+      "Bojan Mohar"
+    ],
+    "published": "2018-04-22",
+    "abs_url": "https://arxiv.org/abs/1709.09050",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Classification of planar graphs by cop number",
+    "statement_text": "Classify which planar graphs have cop number $i$, for $1 \\leq i \\leq 3$.",
+    "context_text": "By Theorem 1, every connected planar graph has cop number 1, 2, or 3. Cop-win graphs are precisely the dismantlable ones, which may eventually aid in classifying planar cop-win graphs, but a complete classification for all three cop number values remains open.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "PDF source; stated as open in survey prose",
+    "arxiv_id": "1709.09050",
+    "paper_title": "Topological directions in Cops and Robbers",
+    "paper_authors": [
+      "Anthony Bonato",
+      "Bojan Mohar"
+    ],
+    "published": "2018-04-22",
+    "abs_url": "https://arxiv.org/abs/1709.09050",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Classification of outerplanar graphs by cop number",
+    "statement_text": "Classify which outerplanar graphs are $1$-cop-win and which are $2$-cop-win.",
+    "context_text": "By Theorem 3, every outerplanar graph has cop number at most 2. The smallest outerplanar graph with cop number 2 is the four cycle, but a full classification of outerplanar graphs by cop number remains open.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "PDF source",
+    "arxiv_id": "1709.09050",
+    "paper_title": "Topological directions in Cops and Robbers",
+    "paper_authors": [
+      "Anthony Bonato",
+      "Bojan Mohar"
+    ],
+    "published": "2018-04-22",
+    "abs_url": "https://arxiv.org/abs/1709.09050",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Tightness of linear capture time bound for planar graphs",
+    "statement_text": "Is the bound $\\mathrm{capt}_3(G) \\leq 2n$ tight for planar graphs of order $n$? Does there exist a planar graph $G$ of order $n$ with $\\mathrm{capt}(G) > n$?",
+    "context_text": "Theorem 5 establishes $\\mathrm{capt}_3(G) \\leq 2n$ for planar graphs of order $n$, improving the earlier $O(n^2)$ bound of Theorem 4. Whether this linear bound is tight is unknown; even finding a single planar graph with capture time exceeding $n$ remains open.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "PDF source",
+    "arxiv_id": "1709.09050",
+    "paper_title": "Topological directions in Cops and Robbers",
+    "paper_authors": [
+      "Anthony Bonato",
+      "Bojan Mohar"
+    ],
+    "published": "2018-04-22",
+    "abs_url": "https://arxiv.org/abs/1709.09050",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Capture time bounds for higher genus graphs",
+    "statement_text": "What are the bounds on the capture time for graphs of higher genus? If Schroeder's conjecture holds and $\\gamma(G) = g$, is it true that $\\mathrm{capt}_k(G) = O(n^{g+4})$ for every $k \\geq g+3$?",
+    "context_text": "The paper identifies bounding the capture time of graphs embedded on surfaces as an interesting open question. If Schroeder's conjecture holds, giving $c(G) \\leq g+3$ for genus-$g$ graphs, then a natural bound on $\\mathrm{capt}_k(G)$ would follow for $k \\geq g+3$.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "PDF source",
+    "arxiv_id": "1709.09050",
+    "paper_title": "Topological directions in Cops and Robbers",
+    "paper_authors": [
+      "Anthony Bonato",
+      "Bojan Mohar"
+    ],
+    "published": "2018-04-22",
+    "abs_url": "https://arxiv.org/abs/1709.09050",
+    "source": "pdf"
+  }
+]

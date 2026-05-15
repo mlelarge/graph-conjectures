@@ -1,0 +1,50 @@
+[
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.2",
+    "statement_text": "There is no $\\varepsilon > 0$ for which there is an algorithm for testing isomorphism of maps of unrestricted genus in time $O(n^{2-\\varepsilon})$.",
+    "context_text": "The best known algorithm for the simultaneous conjugation problem runs in time $O(n^2 \\log d / \\log n + dn \\log n)$, yielding an $O(n^2/\\log n)$ algorithm for map isomorphism and automorphism problems of unrestricted genus. In complexity theory this is not considered 'truly subquadratic', which motivates the conjecture.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2008.01616",
+    "paper_title": "Automorphism groups of maps in linear time",
+    "paper_authors": [
+      "Ken-ichi Kawarabayashi",
+      "Bojan Mohar",
+      "Roman Nedela",
+      "Peter Zeman"
+    ],
+    "published": "2021-01-07",
+    "abs_url": "https://arxiv.org/abs/2008.01616",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Open subproblem: conditional superlinear lower bound",
+    "statement_text": "An interesting open subproblem is to prove a conditional ``truly superlinear'' lower bound for any of the mentioned problems (map isomorphism, simultaneous conjugation).",
+    "context_text": "Some progress has been made: the communication complexity of the simultaneous conjugation problem is $\\Omega(dn\\log n)$ for $d>1$, and under the decision tree model the search version has lower bound $\\Omega(n\\log n)$. A conditional lower bound ruling out, e.g., $O(n\\,\\mathrm{polylog}\\,n)$ algorithms remains open.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated in prose without a labelled environment; full paper text is truncated so further items in later sections may be missing.",
+    "arxiv_id": "2008.01616",
+    "paper_title": "Automorphism groups of maps in linear time",
+    "paper_authors": [
+      "Ken-ichi Kawarabayashi",
+      "Bojan Mohar",
+      "Roman Nedela",
+      "Peter Zeman"
+    ],
+    "published": "2021-01-07",
+    "abs_url": "https://arxiv.org/abs/2008.01616",
+    "source": "pdf"
+  }
+]

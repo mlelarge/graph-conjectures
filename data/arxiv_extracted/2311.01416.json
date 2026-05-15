@@ -1,0 +1,25 @@
+[
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Informal Conjecture on h(n)",
+    "statement_text": "The current best lower bound $h(n) = \\Omega(n^{1/4})$ is tight, i.e., $h(n) = \\Theta(n^{1/4})$.",
+    "context_text": "The bounds $\\Omega(n^{1/4}) \\leq h(n) \\leq n^{1/2+o(1)}$ were both known by 1990, with the lower bound due to Bosznay [6] and the upper bound to Erdős and Sárközy [10]. The lower bound follows from a simple construction: fixing integer $q$, the set $\\{n_i = iq^3 + i(i+1)/2 : i = 1,\\ldots,q-1\\}$ is a non-averaging subset of $[n]$ with $n = q^4$. The authors state 'which we suspect to be tight' immediately after citing this bound.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated as running prose: 'The current best lower bound, h(n) = Ω(n^{1/4}), which we suspect to be tight'. No labelled conjecture environment.",
+    "arxiv_id": "2311.01416",
+    "paper_title": "Homogeneous structures in subset sums and non-averaging sets",
+    "paper_authors": [
+      "David Conlon",
+      "Jacob Fox",
+      "Huy Tuan Pham"
+    ],
+    "published": "2023-11-02",
+    "abs_url": "https://arxiv.org/abs/2311.01416",
+    "source": "pdf"
+  }
+]

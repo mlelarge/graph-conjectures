@@ -1,0 +1,48 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Tutte's Flow Conjectures (Conjecture 1.2)",
+    "statement_text": "\\begin{itemize}\n\\item Every 4-edge-connected graph has a nowhere-zero 3-flow.\n\\item Every 2-edge-connected graph with no Petersen minor has a nowhere-zero 4-flow.\n\\item Every 2-edge-connected graph has a nowhere-zero 5-flow.\n\\end{itemize}",
+    "context_text": "These conjectures were motivated by the Grötzsch Theorem and the Four Color Theorem, connecting flow problems to chromatic number via the planar duality of Theorem 1.1. They remain open and inspired the partial existence results of Seymour (Theorem 1.4), Jaeger (Theorem 1.5), and Lovász–Thomassen–Wu–Zhang (Theorem 1.6) that the paper revisits from a counting perspective.",
+    "attributed_to": "Tutte",
+    "attributed_year": null,
+    "paper_contribution": "Proves counting analogues in related settings: at least $2^{n/7}$ nowhere-zero $Z_2\\times Z_3$-flows in 3-edge-connected graphs ($2^{2(m-n)/9}$ for 2-edge-connected), at least $2^{n/250}$ nowhere-zero $Z_2^2$-flows in 4-edge-connected graphs, and at least $2^{(n-2)/12}$ nowhere-zero $Z_3$-flows in 6-edge-connected graphs. These are exponential counting versions of the existence theorems that are partial results toward Tutte's conjectures, but do not directly resolve them.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Conjecture 1.2 has three parts stated as bullet points in the paper. The paper's contribution is indirect: it proves counting results in related but stronger connectivity settings, not the existence results asserted by the conjectures.",
+    "arxiv_id": "1708.09579",
+    "paper_title": "Exponentially many nowhere-zero $Z_3$-, $Z_4$-, and $Z_6$-flows",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Bojan Mohar",
+      "Robert Šámal"
+    ],
+    "published": "2019-04-06",
+    "abs_url": "https://arxiv.org/abs/1708.09579",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Thomassen's Question on 3-Colorings of Planar Triangle-Free Graphs",
+    "statement_text": "Does every planar triangle-free graph have exponentially many 3-colorings?",
+    "context_text": "Thomassen proved that every planar graph has exponentially many (list) 5-colorings and asked the analogous counting question for 3-colorings of triangle-free planar graphs. Thomassen gave a subexponential lower bound, later improved by Asadi et al., but the question remains open. By Theorem 1.1, it is equivalent to asking whether every 4-edge-connected planar graph has exponentially many nowhere-zero $Z_3$-flows.",
+    "attributed_to": "Thomassen",
+    "attributed_year": null,
+    "paper_contribution": "Proves that every 6-edge-connected graph (not necessarily planar) has at least $2^{(n-2)/12}$ nowhere-zero $Z_3$-flows, providing a related exponential counting result in a stronger connectivity regime. The paper explicitly states it does not attempt to prove Thomassen's conjecture but hopes its results inspire further work.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "The question appears only in prose (abstract and introduction), not in a labeled theorem environment. The statement_text is reconstructed from the description 'Thomassen [11] also asked the same question for 3-colorings of triangle-free planar graphs' in context of exponential counting.",
+    "arxiv_id": "1708.09579",
+    "paper_title": "Exponentially many nowhere-zero $Z_3$-, $Z_4$-, and $Z_6$-flows",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Bojan Mohar",
+      "Robert Šámal"
+    ],
+    "published": "2019-04-06",
+    "abs_url": "https://arxiv.org/abs/1708.09579",
+    "source": "pdf"
+  }
+]

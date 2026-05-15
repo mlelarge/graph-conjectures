@@ -1,0 +1,48 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Lescure-Meyniel Conjecture (Conjecture 1.1)",
+    "statement_text": "Every graph with chromatic number $k$ contains a weak immersion of the complete graph $K_{k}$.",
+    "context_text": "Lescure and Meyniel suggested this conjecture in 1989 as a weakening of Hajós' conjecture, replacing vertex-disjoint subdivisions with edge-disjoint paths that may pass through branch vertices. It has been verified for $4\\leq k\\leq 6$ by DeVos, Kawarabayashi, Mohar, and Okamura, and remains open for $k\\geq 7$.",
+    "attributed_to": "Lescure and Meyniel",
+    "attributed_year": 1989,
+    "paper_contribution": "Proves the conjecture for graphs with chromatic number $k$ and at most $(1.64-\\varepsilon)k$ vertices (for any $\\varepsilon>0$ and $k$ sufficiently large), and unconditionally for graphs with fewer than $1.4k-0.6$ vertices.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2510.05893",
+    "paper_title": "Immersions and Albertson's conjecture",
+    "paper_authors": [
+      "Jacob Fox",
+      "Janos Pach",
+      "Andrew Suk"
+    ],
+    "published": "2025-10-07",
+    "abs_url": "https://arxiv.org/abs/2510.05893",
+    "source": "html"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Albertson's Conjecture (Conjecture 1.3)",
+    "statement_text": "Every graph $G$ with chromatic number $k$ satisfies $\\mathrm{cr}(G)\\geq\\mathrm{cr}(K_{k})$.",
+    "context_text": "Conjectured by Albertson in 2007, this asserts that among all graphs of a given chromatic number the complete graph minimises the crossing number. It vacuously holds for $k\\leq 4$, is equivalent to the four colour theorem for $k=5$, has been confirmed for $k\\leq 18$, and is open for $k\\geq 19$.",
+    "attributed_to": "Albertson",
+    "attributed_year": 2007,
+    "paper_contribution": "Shows the conjecture holds for all graphs of chromatic number $k$ that have at most $(1.64-o(1))k$ vertices, as an application of the authors' new result on weak immersions of complete graphs.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2510.05893",
+    "paper_title": "Immersions and Albertson's conjecture",
+    "paper_authors": [
+      "Jacob Fox",
+      "Janos Pach",
+      "Andrew Suk"
+    ],
+    "published": "2025-10-07",
+    "abs_url": "https://arxiv.org/abs/2510.05893",
+    "source": "html"
+  }
+]

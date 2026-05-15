@@ -1,0 +1,48 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Yao's Conjecture (Quantum Sorting Lower Bound)",
+    "statement_text": "The quantum query complexity of sorting under partial information, given any poset $P$ on $n$ elements, is at least $c \\log(|\\Delta(P)|)$ for some universal constant $c > 0$.",
+    "context_text": "Yao (STOC'04) proved a weaker lower bound of $c\\log(|\\Delta(P)|) - c'n$ for universal constants $c, c' > 0$, which is useless when the information-theoretic lower bound is $o(n)$. He conjectured that the linear correction term is unnecessary and the information-theoretic lower bound holds for any partial order $P$ up to a constant factor. Section 4 of the paper is titled 'A proof of Yao's conjecture for series-parallel posets'.",
+    "attributed_to": "Yao",
+    "attributed_year": 2004,
+    "paper_contribution": "Proves the conjecture for the class of series-parallel posets (Theorem 2) and extends it to the wider class of extended series-parallel posets, which includes posets with $\\Omega(n^4)$ induced $N$-subposets (Corollary 1).",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1902.06473",
+    "paper_title": "Information-theoretic lower bounds for quantum sorting",
+    "paper_authors": [
+      "Jean Cardinal",
+      "Gwenaël Joret",
+      "Jérémie Roland"
+    ],
+    "published": "2019-02-18",
+    "abs_url": "https://arxiv.org/abs/1902.06473",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Conjecture on LB and QLB equivalence",
+    "statement_text": "The two lower bounds $\\mathrm{LB}(P)$ and $\\mathrm{QLB}(P)$ are within a constant factor of each other for all posets $P$.",
+    "context_text": "In the Conclusion, the authors present a table comparing the classical quantity $\\mathrm{LB}(P) = n(\\ln n - H(P))$ and the quantum quantity $\\mathrm{QLB}(P) = n(H_n - QH(P))$, where $H(P) = \\min_{z \\in C(P)} h(z)$ is the entropy and $QH(P) = \\mathbb{E}_{z \\in C(P)}[h(z)]$ is its averaged variant. The authors state their findings support a conjecture relating these two bounds, but the remainder of the statement is corrupted in the PDF source.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "low",
+    "notes": "PDF source — the statement is truncated after 'QLB(P)' and replaced with garbled content (a list of arXiv IDs). The statement above is inferred from context; the exact formulation cannot be verified.",
+    "arxiv_id": "1902.06473",
+    "paper_title": "Information-theoretic lower bounds for quantum sorting",
+    "paper_authors": [
+      "Jean Cardinal",
+      "Gwenaël Joret",
+      "Jérémie Roland"
+    ],
+    "published": "2019-02-18",
+    "abs_url": "https://arxiv.org/abs/1902.06473",
+    "source": "pdf"
+  }
+]

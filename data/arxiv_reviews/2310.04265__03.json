@@ -1,0 +1,44 @@
+{
+  "review_id": "2310.04265__03",
+  "safe_id": "2310.04265",
+  "arxiv_id": "2310.04265",
+  "conjecture_title": "Conjecture 3.13",
+  "paper_title": "Clique number of tournaments",
+  "published": "2023-10-06",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "unclear",
+  "confidence": "low",
+  "summary": "Conjecture 3.13 from arXiv:2310.04265 asserts the existence of a function f such that every tournament T admits a single vertex ordering simultaneously witnessing structural and coloring properties, and is described as a strengthening that implies Conjecture 3.12 on the chi-arrow-boundedness of bounded-twin-width tournaments. A January 2024 follow-up paper (arXiv:2401.07776) proves NP-completeness of computing the clique number of tournaments and provides a counterexample to some conjecture of the same authors, but the full text could not be retrieved to confirm whether Conjecture 3.13 is specifically targeted. Since Conjecture 3.13 logically implies Conjecture 3.12, a refutation of 3.12 would also refute 3.13, leaving the status unclear pending full-text verification.",
+  "since_posted": [
+    {
+      "title": "Computing the clique number of tournaments",
+      "authors": "unverified",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2401.07776",
+      "arxiv_id": "2401.07776",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves that deciding whether a tournament has clique number at most k is NP-complete, and provides a counterexample to some conjecture of Aboulker, Aubian, Charbit, and Lopes from arXiv:2310.04265; which specific conjecture (possibly 3.12 or another) could not be confirmed from the abstract."
+    },
+    {
+      "title": "Characterizing Large Clique Number in Tournaments",
+      "authors": "unverified",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2602.09863",
+      "arxiv_id": "2602.09863",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Shows that large clique number in tournaments is always certified by a bounded-size subtournament from one of two simple families; does not appear to directly address the ordering conjecture (Conjecture 3.13)."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "arXiv 2310.04265 Aboulker Aubian Charbit Lopes clique number tournaments citations 2024 2025",
+    "tournament twin-width ordering dichromatic chi-boundedness conjecture 2024 2025"
+  ],
+  "notes": "The paper arXiv:2401.07776 explicitly constructs a counterexample to 'a conjecture' of Aboulker et al. in arXiv:2310.04265, but the HTML version returned 404 and the PDF was unreadable binary, so it was not possible to confirm this is Conjecture 3.13 rather than 3.12 or another. Since Conjecture 3.13 implies Conjecture 3.12 (by the paper's own framing), a counterexample to 3.12 would also render 3.13 vacuously false as a standalone statement. Full-text access to arXiv:2401.07776 is required to resolve the status definitively."
+}

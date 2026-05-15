@@ -1,0 +1,25 @@
+[
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Problem 1 (Albertson)",
+    "statement_text": "Does there exist a constant $d$ such that whenever $G$ is a planar graph with list assignment $L$ that gives a list of size one or five to each vertex and the distance between any pair of vertices with list of size one is at least $d$, then $G$ is $L$-colorable?",
+    "context_text": "This problem is posed as motivation for Theorem 5 of the paper, which establishes a related result for lists of size four. It is also connected to Voigt's result that not all planar graphs are 4-choosable. The authors state that building upon the ideas of the paper they give a positive answer to this problem in a separate companion paper [7].",
+    "attributed_to": "Albertson",
+    "attributed_year": null,
+    "paper_contribution": "Theorem 5 proves a related result: every planar graph $G$ with a set $N \\subseteq V(G)$ of vertices at mutual distance at least 11 is $L$-colorable for any list assignment $L$ with $|L(v)|=4$ for $v\\in N$ and $|L(v)|\\geq 5$ for $v\\in V(G)\\setminus N$. The full positive answer to Albertson's problem is deferred to companion paper [7].",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1201.3014",
+    "paper_title": "5-choosability of graphs with crossings far apart",
+    "paper_authors": [
+      "Zdenek Dvorak",
+      "Bernard Lidicky",
+      "Bojan Mohar"
+    ],
+    "published": "2016-08-11",
+    "abs_url": "https://arxiv.org/abs/1201.3014",
+    "source": "pdf"
+  }
+]

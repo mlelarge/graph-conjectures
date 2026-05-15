@@ -1,0 +1,23 @@
+{
+  "review_id": "2201.09115__02",
+  "safe_id": "2201.09115",
+  "arxiv_id": "2201.09115",
+  "conjecture_title": "Open problem: Woodall's conjecture for fixed s",
+  "paper_title": "Disproof of a Conjecture by Woodall",
+  "published": "2022-01-22",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The specific regime of fixed $s$ and $t \\to \\infty$ for Woodall's conjecture (that every $K_{s,t}$-minor-free graph is $(s+t-1)$-choosable) remains open as of 2026. Steiner's 2022 disproof (arXiv:2201.09115) only applies when $s$ and $t$ are of comparable size ($s \\le t \\le Cs$), and a 2025 follow-up by Vanderbush (Graphs Combin. 41, 2025) improves the disproof to much smaller comparable-size parameters (e.g., $t \\ge 48$ for the $(t,t)$ case), but still entirely within the comparable-size regime. No analogous list-chromatic result to Kostochka's chromatic-number theorem is known for fixed $s$ with $t \\to \\infty$.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Woodall conjecture Ks,t minor list chromatic choosable fixed s large t",
+    "Steiner 2201.09115 Woodall conjecture disproof Ks,t minor list coloring follow-up",
+    "\"New Counterexamples\" Woodall conjecture graph minors list coloring arxiv 2024 2025",
+    "Vanderbush \"Woodall\" counterexamples Ks,t minor list coloring choosable arxiv"
+  ],
+  "notes": "No follow-up resolving the fixed-$s$ case was found. A related follow-up, Vanderbush, 'New Counterexamples to a Conjecture by Woodall on Graph Minors and List Coloring', Graphs and Combinatorics 41, 103 (2025), DOI:10.1007/s00373-025-02957-y, improves Steiner's counterexample parameters (e.g., provides explicit counterexamples for $(s,t)=(t,t)$ with $t \\ge 48$, $t \\ne 49$, and $(s,t)=(t,t+1)$ with $t \\ge 54$, $t \\ne 55$) but remains in the comparable-size regime and does not address fixed $s$ with $t \\to \\infty$. The URL for this Springer paper could not be fully verified via WebFetch due to paywall redirection, so it is excluded from since_posted. The Fischer–Steiner paper arXiv:2304.04246 (Combin. Probab. Comput. 33, 2024) on choosability of $H$-minor-free graphs also does not address the fixed-$s$ regime of Woodall's conjecture."
+}

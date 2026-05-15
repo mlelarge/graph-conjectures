@@ -1,0 +1,107 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Gyárfás-Sumner Conjecture",
+    "statement_text": "If $F$ is a forest and $k \\in \\mathbb{N}$, then there exists an integer $c(F, k) \\geq 1$ such that every graph $G$ excluding $F$ and $K_k$ as induced subgraphs satisfies $\\chi(G) \\leq c(F, k)$.",
+    "context_text": "Described as maybe the most famous open problem in the area of chromatic number of graph classes defined by forbidden induced subgraphs. It can be equivalently restated as: $\\mathrm{Forb_{ind}}(\\mathcal{F})$ has bounded chromatic number if and only if $\\mathcal{F}$ contains a clique and a forest. The paper studies directed analogues of this conjecture for digraphs.",
+    "attributed_to": "Gyárfás and Sumner",
+    "attributed_year": 1975,
+    "paper_contribution": "The paper studies directed extensions of this conjecture (Conjectures 1.4 and 1.5) and proves several special cases, explicitly framed as resolving special cases of an extension of the Gyárfás-Sumner conjecture to directed graphs.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source. The paper studies directed analogues rather than the undirected conjecture directly; Conjecture 1.1 appears as background motivation.",
+    "arxiv_id": "2103.04191",
+    "paper_title": "On coloring digraphs with forbidden induced subgraphs",
+    "paper_authors": [
+      "Raphael Steiner"
+    ],
+    "published": "2021-03-06",
+    "abs_url": "https://arxiv.org/abs/2103.04191",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Problem 1.2",
+    "statement_text": "Let $\\mathcal{F}$ be a finite set of digraphs. Under which circumstances does there exist $C \\in \\mathbb{N}$ such that every digraph $D$ without an induced subdigraph isomorphic to a member of $\\mathcal{F}$ satisfies $\\vec{\\chi}(D) \\leq C$?",
+    "context_text": "Aboulker, Charbit and Naserasr initiated the systematic study of the relation between excluded induced subdigraphs and the dichromatic number, asking when the class $\\mathrm{Forb_{ind}}(\\mathcal{F})$ of digraphs has bounded dichromatic number — calling such $\\mathcal{F}$ 'heroic'. This is the central overarching open problem motivating the paper.",
+    "attributed_to": "Aboulker, Charbit, and Naserasr",
+    "attributed_year": null,
+    "paper_contribution": "Proves several special cases contributing to the characterization of heroic sets of size 3, including resolving Conjecture 1.7 (Theorem 1), verifying Conjecture 1.4 for additional heroes (Theorems 3–4), and proving a new case of Conjecture 1.5 (Theorem 5).",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source.",
+    "arxiv_id": "2103.04191",
+    "paper_title": "On coloring digraphs with forbidden induced subgraphs",
+    "paper_authors": [
+      "Raphael Steiner"
+    ],
+    "published": "2021-03-06",
+    "abs_url": "https://arxiv.org/abs/2103.04191",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.4",
+    "statement_text": "For every orientation of a star forest $F$ and every hero $H$ the oriented graphs excluding $F$ and $H$ as induced subdigraphs have bounded dichromatic number.",
+    "context_text": "This is one of two oriented variants of the Gyárfás-Sumner conjecture proposed by Aboulker, Charbit and Naserasr, arising from their classification of necessary conditions for heroic sets of size 3. It concerns triples of the form $\\{\\overleftrightarrow{K_2}, F, H\\}$ where $F$ is an oriented star forest and $H$ is a hero.",
+    "attributed_to": "Aboulker, Charbit, and Naserasr",
+    "attributed_year": null,
+    "paper_contribution": "Proves special cases: Theorem 1 proves it for $F \\in \\{S_2^+, S_2^-\\}$ and $H = \\vec{C}_3$ (resolving Conjecture 1.7); Theorem 3 proves it for $F = S_2^+$ and $H = W_3^-$; Theorem 4 shows the property is preserved when replacing $H$ by the hero obtained by adding a dominating sink.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source. The conjecture is restated from [1] (Aboulker, Charbit, Naserasr) without an explicit citation in the theorem header, but the surrounding text makes the attribution clear.",
+    "arxiv_id": "2103.04191",
+    "paper_title": "On coloring digraphs with forbidden induced subgraphs",
+    "paper_authors": [
+      "Raphael Steiner"
+    ],
+    "published": "2021-03-06",
+    "abs_url": "https://arxiv.org/abs/2103.04191",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.5",
+    "statement_text": "For every orientation of a forest $F$ and every $k \\in \\mathbb{N}$ the oriented graphs excluding $F$ and $\\vec{K}_k$ as induced subdigraphs have bounded dichromatic number.",
+    "context_text": "This is the second oriented variant of the Gyárfás-Sumner conjecture from Aboulker et al., concerning heroic sets of size 3 of the form $\\{\\overleftrightarrow{K_2}, F, \\vec{K}_k\\}$ where $F$ is an oriented forest. By Proposition 1.6 proved in the paper, it suffices to establish the conjecture when $F$ is an oriented tree.",
+    "attributed_to": "Aboulker, Charbit, and Naserasr",
+    "attributed_year": null,
+    "paper_contribution": "Proves the conjecture for $F = P^+(1,1,1)$ (the alternating orientation of the path on four vertices) and $k = 3$ via Theorem 5, complementing an earlier result of Aboulker et al. for $F = \\vec{P}_4$ and $k = 3$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source. Attributed to [1] per surrounding text; no explicit citation appears in the theorem header.",
+    "arxiv_id": "2103.04191",
+    "paper_title": "On coloring digraphs with forbidden induced subgraphs",
+    "paper_authors": [
+      "Raphael Steiner"
+    ],
+    "published": "2021-03-06",
+    "abs_url": "https://arxiv.org/abs/2103.04191",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.7",
+    "statement_text": "$\\vec{\\chi}(\\mathrm{Forbind}(\\overleftrightarrow{K_2}, S_2^+, \\vec{C}_3)) = \\vec{\\chi}(\\mathrm{Forbind}(\\overleftrightarrow{K_2}, S_2^-, \\vec{C}_3)) = 2.$",
+    "context_text": "This conjecture (Conjecture 6.2 in [1]) concerns the dichromatic number of directed-triangle-free oriented graphs in which every vertex's out-neighborhood (resp. in-neighborhood) induces a tournament. It is a special case of Conjecture 1.4 for $F \\in \\{S_2^+, S_2^-\\}$ and $H = \\vec{C}_3$, and was left open in [1] after heroicness was established for the three other 3-vertex star forests.",
+    "attributed_to": "Aboulker, Charbit, and Naserasr",
+    "attributed_year": null,
+    "paper_contribution": "Fully proved as Theorem 1; in fact, a strictly stronger result is proved as Theorem 2, namely $\\vec{\\chi}(\\mathrm{Forbind}(\\overleftrightarrow{K_2}, S_2^+, W_3^+)) = 2$, from which Conjecture 1.7 follows as an immediate corollary.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source. Explicitly labeled '(cf. [1], Conjecture 6.2)' in the paper.",
+    "arxiv_id": "2103.04191",
+    "paper_title": "On coloring digraphs with forbidden induced subgraphs",
+    "paper_authors": [
+      "Raphael Steiner"
+    ],
+    "published": "2021-03-06",
+    "abs_url": "https://arxiv.org/abs/2103.04191",
+    "source": "pdf"
+  }
+]

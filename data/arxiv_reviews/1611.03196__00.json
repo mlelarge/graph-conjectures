@@ -1,0 +1,39 @@
+{
+  "review_id": "1611.03196__00",
+  "safe_id": "1611.03196",
+  "arxiv_id": "1611.03196",
+  "conjecture_title": "Conjecture 1.6",
+  "paper_title": "Fair representation by independent sets",
+  "published": "2016-11-10",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "No follow-up paper was found that resolves the full statement of Conjecture 1.6 from arXiv:1611.03196, which asks for an independent set in a partitioned path satisfying both the global budget condition (sum b_i ≤ m/2) and the per-part cap (b_i ≤ 1) simultaneously. Related work has appeared on fair representation in cycles (computational complexity, PPA-completeness) and sparse graphs, but these address different graph classes. Alishahi and Meunier (2017, arXiv:1704.02921) proved 'a conjecture of Ron Aharoni and coauthors' about colored paths, but this could not be confirmed to be specifically Conjecture 1.6; it may instead resolve a different conjecture from the same paper.",
+  "since_posted": [
+    {
+      "title": "Fair splitting of colored paths",
+      "authors": "Meysam Alishahi, Frédéric Meunier",
+      "year": 2017,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/1704.02921",
+      "arxiv_id": "1704.02921",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves 'a conjecture of Ron Aharoni and coauthors' about fair splitting of colored paths into two disjoint independent sets, but which specific conjecture from arXiv:1611.03196 this resolves could not be confirmed; it may be a different conjecture from the same paper rather than Conjecture 1.6."
+    }
+  ],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2212.11969",
+      "verified": false,
+      "note": "This paper ('Invertibility of digraphs and tournaments' by Alon, Powierski, Savery, Scott, Wilmer) is entirely about the inversion number of directed graphs and tournaments; it contains no mention of fair representation by independent sets, paths, or Conjecture 1.6. The fuzz=80 internal-reference match is a false positive — the contribution text describes a different conjecture being disproved."
+    }
+  ],
+  "search_queries": [
+    "fair representation independent sets path partition Aharoni Alon Berger Chudnovsky 1611.03196",
+    "\"fair representation\" \"independent set\" path \"independence complex\" conjecture 2017 2018 2019 2020 2021 2022 2023 2024"
+  ],
+  "notes": "Conjecture 1.6 is a joint condition combining two separately-provable bounds (Theorem 1.7 of the source paper). Related literature has grown around cycles and sparse graphs (fair representation in cycles, PPA-completeness of finding such sets), but no paper explicitly claiming to prove or disprove Conjecture 1.6 for paths was found. The conjecture is 9 years old, so medium rather than high confidence in 'open' status."
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Question (Section 3, implicit representation for speed $2^{O(n\\log n)}$)",
+    "statement_text": "Is it possible that hereditary families with speed $f(n) \\leq 2^{O(n \\log n)}$ always admit an implicit representation of size $O(n^{1/2} \\log n)$?",
+    "context_text": "Hatami and Hatami [13] showed that for every $\\delta > 0$ there are hereditary families with speed $f(n) \\leq 2^{O(n \\log n)}$ for which any implicit representation requires labels of size at least $\\Omega(n^{1/2-\\delta})$, and they raise the question of whether the exponent $1/2$ can be improved. Alon here asks the complementary upper-bound question: whether $O(n^{1/2} \\log n)$ always suffices in this speed range.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Posed as an explicit question in Section 3 but without a labelled theorem environment; PDF source.",
+    "arxiv_id": "2201.00328",
+    "paper_title": "Implicit representation of sparse hereditary families",
+    "paper_authors": [
+      "Noga Alon"
+    ],
+    "published": "2022-01-02",
+    "abs_url": "https://arxiv.org/abs/2201.00328",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Question (Section 3, implicit representation for speed $2^{n^{1+\\varepsilon}}$)",
+    "statement_text": "If the speed of a hereditary family satisfies $f(n) < 2^{n^{1+\\varepsilon}}$ for a sufficiently small fixed $\\varepsilon > 0$, is there always an implicit representation of size at most $O(n^{2/3} \\log n)$?",
+    "context_text": "This is posed as a follow-up to the $O(n^{1/2}\\log n)$ question for the slower-speed regime. Theorem 1.1 guarantees only $O(n^{1-1/d}\\log n)$ under the weaker bound $f(n) \\leq 2^{(1/4-\\varepsilon)n^2}$, and the question asks whether the intermediate speed range $f(n) < 2^{n^{1+\\varepsilon}}$ forces a sub-polynomial improvement to $n^{2/3}$.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Posed as an explicit question in Section 3 but without a labelled theorem environment; PDF source.",
+    "arxiv_id": "2201.00328",
+    "paper_title": "Implicit representation of sparse hereditary families",
+    "paper_authors": [
+      "Noga Alon"
+    ],
+    "published": "2022-01-02",
+    "abs_url": "https://arxiv.org/abs/2201.00328",
+    "source": "pdf"
+  }
+]

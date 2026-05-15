@@ -1,0 +1,27 @@
+[
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Optimal n for $L^d_n$-list-colorability",
+    "statement_text": "Fixing $d$, what is the optimal value of $n$ such that $[n]^d$ is $L^d_n$-list-colorable?",
+    "context_text": "Theorem 1.2 establishes that $[n]^d$ is $L^d_n$-list-colorable whenever $n \\geq d+2$. The paper shows this threshold is not achieved for $n < d+2$ in specific cases (e.g., $[2]^3$ is not $L^3_2$-list-colorable), making the optimal threshold an open question whose notion of optimality is justified by Proposition 3.3.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated in running prose: 'Fixing d, the question of the optimal value of n such that [n]^d is L^d_n-list-colorable remains.' Section 5 (not fully reproduced in the extracted text) apparently contains additional formal open questions including a labeled Question 5.7 concerning whether $[n]^2$ is $\\min\\{L^2_n, 3\\}$-list-colorable; its full statement could not be extracted.",
+    "arxiv_id": "1903.11685",
+    "paper_title": "Mixing properties of colorings of the $\\mathbb{Z}^d$ lattice",
+    "paper_authors": [
+      "Noga Alon",
+      "Raimundo Briceño",
+      "Nishant Chandgotia",
+      "Alexander Magazinov",
+      "Yinon Spinka"
+    ],
+    "published": "2019-12-25",
+    "abs_url": "https://arxiv.org/abs/1903.11685",
+    "source": "pdf"
+  }
+]

@@ -1,0 +1,90 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Hadwiger's Conjecture",
+    "statement_text": "Let $t \\geq 1$ be an integer, and let $\\mathcal{G}$ be a minor-closed class of graphs. Then $\\chi(\\mathcal{G}) \\leq t$ if and only if $K_{t+1} \\notin \\mathcal{G}$.",
+    "context_text": "Hadwiger's conjecture is presented as the motivating characterization of minor-closed classes by chromatic number. The paper pursues a clustered analogue: bounding the clustered chromatic number of minor-closed classes, with the sequel proving the clustered weakening $\\chi^\\star(\\mathcal{X}(K_t)) = t-1$.",
+    "attributed_to": "Hadwiger",
+    "attributed_year": 1943,
+    "paper_contribution": "This paper provides the technical foundations (island theory, clustered coloring numbers) that the companion sequel uses to prove the clustered weakening $\\chi^\\star(\\mathcal{X}(K_t)) = \\chi^\\star_{\\ell}(\\mathcal{X}(K_t)) = t-1$; the conjecture itself is not proved here.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source — '6∈' in the extraction is ∉; statement reads cleanly.",
+    "arxiv_id": "1710.02727",
+    "paper_title": "Islands in minor-closed classes. I. Bounded treewidth and separators",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Sergey Norin"
+    ],
+    "published": "2017-10-07",
+    "abs_url": "https://arxiv.org/abs/1710.02727",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Esperet–Ochem Conjecture 3",
+    "statement_text": "For every surface $\\Sigma$, $\\chi^\\star(\\mathcal{G}(\\Sigma)) = 4$.",
+    "context_text": "Kleinberg–Motwani–Raghavan–Venkatasubramanian and, independently, Alon–Ding–Oporowski–Vertigan established $\\chi^\\star(\\mathcal{G}(\\Sigma)) \\geq 4$ for every surface $\\Sigma$. Esperet and Ochem conjectured that this lower bound is tight, i.e., the clustered chromatic number of the class of graphs embeddable on any fixed surface equals exactly four.",
+    "attributed_to": "Esperet and Ochem",
+    "attributed_year": null,
+    "paper_contribution": "Fully proved as Corollary 13: for every surface $\\Sigma$, $\\chi^\\star(\\mathcal{G}(\\Sigma)) = \\chi^\\star_{\\ell}(\\mathcal{G}(\\Sigma)) = \\mathrm{col}^\\star(\\mathcal{G}(\\Sigma)) = 4$, via Corollary 12 applied to the Euler-formula density bound $|E(G)| \\leq 3|V(G)| + c(\\Sigma)$.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "Referenced as [11, Conjecture 3] but not restated verbatim; statement reconstructed from Corollary 13 and surrounding prose.",
+    "arxiv_id": "1710.02727",
+    "paper_title": "Islands in minor-closed classes. I. Bounded treewidth and separators",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Sergey Norin"
+    ],
+    "published": "2017-10-07",
+    "abs_url": "https://arxiv.org/abs/1710.02727",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Esperet–Ochem Conjecture 7",
+    "statement_text": "For every surface $\\Sigma$, $\\mathrm{col}^\\star(\\mathcal{G}_5(\\Sigma)) = 2$.",
+    "context_text": "The question of determining $\\chi^\\star(\\mathcal{G}_5(\\mathbb{R}^2))$ for planar graphs of girth at least five was open until this work. Esperet and Ochem conjectured the value 2 for the clustered coloring number of surface-embeddable graphs of girth at least five.",
+    "attributed_to": "Esperet and Ochem",
+    "attributed_year": null,
+    "paper_contribution": "Fully proved as Corollary 14: for every surface $\\Sigma$, $\\chi^\\star(\\mathcal{G}_5(\\Sigma)) = \\chi^\\star_{\\ell}(\\mathcal{G}_5(\\Sigma)) = \\mathrm{col}^\\star(\\mathcal{G}_5(\\Sigma)) = 2$, using the density bound $|E(G)| \\leq \\tfrac{5}{3}|V(G)| + c(\\Sigma)$ from Euler's formula.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "Referenced as [11, Conjecture 7] but not restated verbatim; statement reconstructed from Corollary 14 and surrounding prose.",
+    "arxiv_id": "1710.02727",
+    "paper_title": "Islands in minor-closed classes. I. Bounded treewidth and separators",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Sergey Norin"
+    ],
+    "published": "2017-10-07",
+    "abs_url": "https://arxiv.org/abs/1710.02727",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 4",
+    "statement_text": "A minor-closed class of graphs $\\mathcal{G}$ satisfies $\\mathrm{col}^\\star(\\mathcal{G}) \\leq t$ if and only if there exists $m \\geq 1$ such that $K_{t,m} \\notin \\mathcal{G}$ and $I_{t-1}+P_m \\notin \\mathcal{G}$.",
+    "context_text": "Observation 3 shows that any class $\\mathcal{G}$ with $\\mathrm{col}^\\star(\\mathcal{G}) \\leq t$ can contain only finitely many graphs of the form $K_{t,m}$ or $I_{t-1}+P_m$; the conjecture asserts that this necessary condition is also sufficient for minor-closed classes. Theorem 7 confirms the conjecture for the special case of minor-closed classes of bounded treewidth, and Conjecture 4 would imply $\\chi^\\star_{\\ell}(\\mathcal{G}) = \\mathrm{col}^\\star(\\mathcal{G})$ for every minor-closed class.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "PDF source — '6∈' in the extraction is ∉; statement reads cleanly.",
+    "arxiv_id": "1710.02727",
+    "paper_title": "Islands in minor-closed classes. I. Bounded treewidth and separators",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Sergey Norin"
+    ],
+    "published": "2017-10-07",
+    "abs_url": "https://arxiv.org/abs/1710.02727",
+    "source": "pdf"
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "review_id": "2211.01032__00",
+  "safe_id": "2211.01032",
+  "arxiv_id": "2211.01032",
+  "conjecture_title": "Conjecture 1.13",
+  "paper_title": "Random Embeddings of Graphs: The Expected Number of Faces in Most Graphs is Logarithmic",
+  "published": "2025-04-09",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 1.13 from arXiv:2211.01032 asserts that the expected number of faces in a random embedding of G(n,p) is (1+o(1))ln(pn^2). The authors prove a weaker log-squared upper bound E[F(G(n,p))] <= ln^2(n) + 1/p (Theorem 1.10), and obtain tight Theta(log n) results for bounded-degree random graph models, but the full conjecture for arbitrary G(n,p) remains open. No subsequent paper resolving the conjecture was found in a search of the literature through May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "random embedding graphs expected faces logarithmic G(n,p) Mohar Samal arXiv 2211.01032",
+    "random embedding faces G(n,p) expected logarithmic ln(pn^2) conjecture 2025 2026",
+    "random graph embedding faces orientable surface Campion Loth Halasz Masarik Mohar Samal cite 2211.01032 follow-up 2025 2026"
+  ],
+  "notes": "The paper was submitted to arXiv in November 2022 and revised to its current form in April 2025 (SODA 2024 extended abstract). The authors explicitly note that extending their proof technique from complete graphs and bounded-degree models to general G(n,p) 'requires further ideas' and list this as an open problem in Section 9. No follow-up paper resolving the conjecture was found in four web searches; the conjecture is recent and open with high confidence."
+}

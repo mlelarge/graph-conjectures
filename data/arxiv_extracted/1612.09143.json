@@ -1,0 +1,25 @@
+[
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Motivating Question (Introduction)",
+    "statement_text": "For which values of $p$ is it true that $\\mathrm{ex}(G(n,p), K_m, H) = (1+o(1))\\binom{k-1}{m}\\left(\\frac{n}{k-1}\\right)^m p^{\\binom{m}{2}}$ w.h.p.?",
+    "context_text": "For any fixed $H$ with $\\chi(H)=k>m$ the deterministic extremal result gives $\\mathrm{ex}(n,K_m,H)=(1+o(1))\\binom{k-1}{m}(n/(k-1))^m$. Analogous to the edge case characterised by Theorem 1.1, the authors ask for which values of $p$ this extremal count is achieved with high probability in $G(n,p)$. The paper answers the question fully when $m_2(H)\\geq m_2(K_m)$ (Theorem 1.2) and only partially when $m_2(H)<m_2(K_m)$ (Theorem 1.4), leaving the exact transition threshold in the latter case open; the paper closes with a dedicated Section 6 of open problems not included in the provided text.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Posed in introductory prose without a labelled environment. Section 6 (open problems) is absent from the provided PDF extraction, so further explicit open-problem formulations may be missing. PDF source — math may be garbled.",
+    "arxiv_id": "1612.09143",
+    "paper_title": "Many cliques in $H$-free subgraphs of random graphs",
+    "paper_authors": [
+      "Noga Alon",
+      "Alexandr Kostochka",
+      "Clara Shikhelman"
+    ],
+    "published": "2017-11-19",
+    "abs_url": "https://arxiv.org/abs/1612.09143",
+    "source": "pdf"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Fox-Sudakov Conjecture (Conjecture 1.2)",
+    "statement_text": "For every graph $H$ there exists $c>0$ such that for every $\\varepsilon$ with $0<\\varepsilon\\leq 1/2$ and every $H$-free graph $G$, there exists $X\\subseteq V(G)$ with $|X|\\geq\\varepsilon^{c}|G|$ such that one of $G[X],\\overline{G}[X]$ has edge-density at most $\\varepsilon$.",
+    "context_text": "Fox and Sudakov proposed this conjecture (Conjecture 7.1 in [10]) as a polynomial-dependence strengthening of Rödl's theorem on induced subgraph density. It implies the Erdős-Hajnal conjecture and had not been verified for any nontrivial graph $H$ prior to this work.",
+    "attributed_to": "Fox and Sudakov",
+    "attributed_year": 2008,
+    "paper_contribution": "Proves the conjecture for $H=P_4$ with the optimal $\\delta=\\varepsilon$ (and a stronger maximum-degree bound), and more generally for all graphs $H$ obtainable by vertex-substitution from copies of $P_4$ and its subgraphs, via the stronger 'viral' property.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Conjecture 7.1 of Fox–Sudakov (2008). A footnote in the paper notes that subsequent work by Bucić, Fox and Pham [4] (arXiv:2403.08303) has since shown that all graphs satisfying the Erdős-Hajnal conjecture also satisfy the Fox-Sudakov conjecture.",
+    "arxiv_id": "2307.00801",
+    "paper_title": "Induced subgraph density. II. Sparse and dense sets in cographs",
+    "paper_authors": [
+      "Jacob Fox",
+      "Tung Nguyen",
+      "Alex Scott",
+      "Paul Seymour"
+    ],
+    "published": "2024-09-08",
+    "abs_url": "https://arxiv.org/abs/2307.00801",
+    "source": "html"
+  }
+]

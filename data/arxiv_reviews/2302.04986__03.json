@@ -1,0 +1,41 @@
+{
+  "review_id": "2302.04986__03",
+  "safe_id": "2302.04986",
+  "arxiv_id": "2302.04986",
+  "conjecture_title": "Conjecture 1.20",
+  "paper_title": "Hitting all maximum stable sets in $P_5$-free graphs",
+  "published": "2024-01-16",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "solved",
+  "confidence": "high",
+  "summary": "Conjecture 1.20 asserts that for every integer $t \\geq 3$, $M_t$-free graphs (graphs containing no induced matching of size $t$) are polynomially $\\eta$-bounded. This was resolved by Ai, Liu, Xu, and Zhou in arXiv:2403.19737 (published in the Electronic Journal of Combinatorics, 2025), who proved that any graph $G$ without an induced matching of size $t$ satisfies $\\eta(G) \\leq \\omega(G)^{3t-3+o(1)}$, establishing polynomial $\\eta$-boundedness for all $t \\geq 1$ and explicitly resolving the conjecture of Hajebi, Li, and Spirkl.",
+  "since_posted": [
+    {
+      "title": "Piercing Independent Sets in Graphs without Large Induced Matching",
+      "authors": "Jiangdong Ai, Hong Liu, Zixiang Xu, Qiang Zhou",
+      "year": 2025,
+      "venue": "The Electronic Journal of Combinatorics",
+      "url": "https://www.combinatorics.org/ojs/index.php/eljc/article/view/v32i1p10",
+      "arxiv_id": "2403.19737",
+      "doi": null,
+      "kind": "proof",
+      "claim": "Proves that any graph $G$ without an induced matching of size $t$ satisfies $\\eta(G) \\leq \\omega(G)^{3t-3+o(1)}$, fully resolving Conjecture 1.20 by establishing polynomial $\\eta$-boundedness for all $M_t$-free graph classes."
+    }
+  ],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2507.06169",
+      "verified": true,
+      "note": "Paper is about treewidth and layered-wheel-like constructions providing a counterexample to a conjecture of Trotignon; it does not mention Conjecture 1.20, $M_t$-free graphs, or $\\eta$-boundedness. The internal reference is unrelated to this conjecture."
+    }
+  ],
+  "search_queries": [
+    "Mt-free graphs polynomially eta-bounded Hajebi Spirkl 2302.04986",
+    "eta-bounded \"M_t-free\" graphs polynomial stable sets hitting",
+    "Hajebi Spirkl \"eta-bounded\" \"M_t\" OR \"Mt-free\" hitting maximum stable sets 2024 2025",
+    "Ai Liu Xu Zhou \"Piercing Independent Sets\" \"induced matching\" arxiv 2025"
+  ],
+  "notes": "Conjecture 1.20 is fully resolved by arXiv:2403.19737 (Ai, Liu, Xu, Zhou; EJC 2025), posted just two months after the source paper appeared as a final journal version. The EJC article explicitly states it resolves the conjecture of Hajebi, Li, and Spirkl. The internal reference arXiv:2507.06169 concerns treewidth obstructions and is unrelated to this conjecture."
+}

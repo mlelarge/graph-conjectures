@@ -1,0 +1,48 @@
+[
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Converse to Theorem 1.1 (3-Coloring dichotomy for $H$-free graphs)",
+    "statement_text": "If every component of $H$ is a path, then the $3$-Coloring Problem restricted to $H$-free graphs can be solved in polynomial time.",
+    "context_text": "Theorem 1.1 (Holyer; Kamiński and Lozin) establishes that if $H$ has at least one component which is not a path then the $3$-Coloring Problem on $H$-free graphs is NP-hard. Immediately after stating this theorem the paper notes: 'The converse to Theorem 1.1 is wide open.'",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Not a labelled environment; the open problem is identified by the remark 'The converse to Theorem 1.1 is wide open.' The statement of the converse is implicit and reconstructed from Theorem 1.1.",
+    "arxiv_id": "2311.05713",
+    "paper_title": "List-$k$-Coloring $H$-free graphs for all $k>4$",
+    "paper_authors": [
+      "Maria Chudnovsky",
+      "Sepehr Hajebi",
+      "Sophie Spirkl"
+    ],
+    "published": "2023-11-09",
+    "abs_url": "https://arxiv.org/abs/2311.05713",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Full dichotomy for $k$-Coloring on $H$-free graphs ($k\\geq 3$)",
+    "statement_text": "For every integer $k \\geq 3$, characterise the graphs $H$ for which the $k$-Coloring Problem restricted to $H$-free graphs is polynomial-time solvable versus NP-hard.",
+    "context_text": "The paper observes that, in contrast with the List-$k$-Coloring Problem (now settled for all $k>4$), 'for the $k$-Coloring Problem, no value of $k\\geq 3$ is known for which the \"easy\" choices of $H$ are completely distinguished from the \"hard\" ones.' This identifies a broad open problem motivating the paper's List-$k$-Coloring results.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Not a labelled environment; the open problem is implicit in the motivating remark in the introduction. Statement reconstructed from context.",
+    "arxiv_id": "2311.05713",
+    "paper_title": "List-$k$-Coloring $H$-free graphs for all $k>4$",
+    "paper_authors": [
+      "Maria Chudnovsky",
+      "Sepehr Hajebi",
+      "Sophie Spirkl"
+    ],
+    "published": "2023-11-09",
+    "abs_url": "https://arxiv.org/abs/2311.05713",
+    "source": "pdf"
+  }
+]

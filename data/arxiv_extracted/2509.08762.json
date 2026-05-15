@@ -1,0 +1,48 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Coarse Menger Conjecture (Conjecture 1.1)",
+    "statement_text": "For all integers $k\\geq 0$ and $c\\geq 1$ there exists $\\ell\\geq 0$ with the following property. Let $G$ be a graph and let $S,T\\subseteq V(G)$. Then either there are $k+1$ paths between $S,T$, pairwise at distance at least $c$; or there is a set $X\\subseteq V(G)$ with $|X|\\leq k$ such that every path between $S,T$ contains a vertex with distance at most $\\ell$ from some member of $X$.",
+    "context_text": "Two independent groups — Albrechtsen, Huynh, Jacobs, Knappe and Wollan, and Georgakopoulos and Papasoglu — proposed this coarse analogue of Menger's theorem. It was shown to be true for $k=1$ by both groups, and for bounded-degree graphs with $c=2$ by Gartland–Korhonen–Lokshtanov and Hendrey–Norin–Steiner–Turcotte; however, the same authors of the present paper disproved it for all $k\\geq 2$ and $c\\geq 3$ in an earlier work.",
+    "attributed_to": "Albrechtsen, Huynh, Jacobs, Knappe, and Wollan; and independently Georgakopoulos and Papasoglu",
+    "attributed_year": 2024,
+    "paper_contribution": "Proves the conjecture for all graphs of bounded path-width (and, further, for graphs of bounded coarse path-width); also notes the conjecture remains false for bounded tree-width.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2509.08762",
+    "paper_title": "Asymptotic structure. V. The coarse Menger conjecture in bounded path-width",
+    "paper_authors": [
+      "Tung Nguyen",
+      "Alex Scott",
+      "Paul Seymour"
+    ],
+    "published": "2025-09-10",
+    "abs_url": "https://arxiv.org/abs/2509.08762",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Informal conjecture: coarse Menger for bounded genus",
+    "statement_text": "It might be true that the coarse Menger conjecture holds for graphs of bounded genus.",
+    "context_text": "The counterexamples to the coarse Menger conjecture constructed in the authors' earlier paper have unbounded genus. The present paper proves the conjecture for bounded path-width; the authors note that the bounded-genus case is open and mention [13] for some progress in that direction.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated as a possibility in running prose (\"it might be true … but this is open\"); no formal conjecture label.",
+    "arxiv_id": "2509.08762",
+    "paper_title": "Asymptotic structure. V. The coarse Menger conjecture in bounded path-width",
+    "paper_authors": [
+      "Tung Nguyen",
+      "Alex Scott",
+      "Paul Seymour"
+    ],
+    "published": "2025-09-10",
+    "abs_url": "https://arxiv.org/abs/2509.08762",
+    "source": "html"
+  }
+]

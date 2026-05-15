@@ -1,0 +1,44 @@
+[
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.2",
+    "statement_text": "Let $G$ be a strongly 2-connected digraph drawn (possibly with crossings) in an annulus $\\Sigma$, such that every directed cycle has winding number one around the annulus in the natural sense. Then $G$ can be drawn in $\\Sigma$ without crossings, such that every directed cycle has winding number one.",
+    "context_text": "This conjecture arises from an analogy with Thomassen's theorem on acyclic digraphs: gluing the north and south sides of a rectangle produces an annulus, and the question becomes whether a drawing with crossings in the annulus can be continuously deformed to a crossing-free drawing while preserving winding numbers of directed cycles. The author states explicitly that 'we cannot prove it.'",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2410.13008",
+    "paper_title": "When all directed cycles have length three",
+    "paper_authors": [
+      "Paul Seymour"
+    ],
+    "published": "2025-02-09",
+    "abs_url": "https://arxiv.org/abs/2410.13008",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Informal Question (NP-characterization of weightable digraphs)",
+    "statement_text": "Can we give a construction for all weightable digraphs (i.e., an NP-characterization)?",
+    "context_text": "A digraph $G$ is weightable if one can assign a real weight $w(e)$ to each edge $e$ such that $\\sum_{e\\in E(C)}w(e)=1$ for each directed cycle $C$. The paper shows weightability is characterizable by excluded subdigraphs (giving a co-NP characterization), but an NP-characterization via explicit construction remains open. For strongly 2-connected digraphs, Conjecture 1.2 would provide such a construction.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated as prose question in the introduction without a labelled environment.",
+    "arxiv_id": "2410.13008",
+    "paper_title": "When all directed cycles have length three",
+    "paper_authors": [
+      "Paul Seymour"
+    ],
+    "published": "2025-02-09",
+    "abs_url": "https://arxiv.org/abs/2410.13008",
+    "source": "html"
+  }
+]

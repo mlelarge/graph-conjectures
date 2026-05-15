@@ -1,0 +1,22 @@
+{
+  "review_id": "2603.02786__02",
+  "safe_id": "2603.02786",
+  "arxiv_id": "2603.02786",
+  "conjecture_title": "Conjecture 5",
+  "paper_title": "Packing arithmetic progressions",
+  "published": "2026-03-03",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 5 of arXiv:2603.02786 proposes the asymptotic formula $m_k(n) \\sim \\left(1 - \\frac{k^2}{3n}\\right) \\frac{k}{\\ln k} \\cdot n$ for every $k$ satisfying $\\Omega(\\sqrt{n}) = k < \\sqrt{n}$. The paper establishes matching upper and lower bounds with this correction factor in Theorem 4 but stops short of closing the gap to a full asymptotic. No follow-up paper resolving or refuting this conjecture was found in the indexed literature as of May 2026, consistent with the paper being only two months old.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Alon Dębski Grytczuk Przybyło \"packing arithmetic progressions\" m_k(n) conjecture 2026",
+    "arxiv 2603.02786 \"packing arithmetic progressions\" follow-up cite",
+    "\"packing arithmetic progressions\" \"m_k\" \"sqrt\" 2026 Alon Grytczuk follow-up progress"
+  ],
+  "notes": "No follow-up found. The paper is very recent (March 2026). Conjecture 5 addresses the only remaining open asymptotic regime for m_k(n): the intermediate range Omega(sqrt(n)) = k < sqrt(n). The conjectured formula m_k(n) ~ (1 - k^2/(3n)) * k/ln(k) * n interpolates between the small-k result m_k(n) ~ kn/ln(k) and the large-k regime resolved via Theorem 4 assuming Conjecture 1."
+}

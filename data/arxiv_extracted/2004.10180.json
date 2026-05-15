@@ -1,0 +1,98 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Brown–Erdős–Sós Conjecture",
+    "statement_text": "$f(n, e+3, e) = o(n^2)$ for any fixed $e \\geq 3$.",
+    "context_text": "The function $f(n,v,e)$ denotes the maximum number of edges in an $n$-vertex 3-graph without a $(v,e)$-configuration. The conjecture arose from Brown, Erdős, and Sós's systematic study of this function. The case $e=3$ was resolved by Ruzsa and Szemerédi, but the problem of showing $f(n,e+3,e)=o(n^2)$ remains open for all $e\\geq 4$.",
+    "attributed_to": "Brown, Erdős, and Sós",
+    "attributed_year": null,
+    "paper_contribution": "Proves the case $e=5$ with the stronger bound $f(n,10,5)=o(n^{3/2})$ (Corollary 1.8), as an application of the sparse $C_5$-removal lemma for $C_4$-free graphs.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2004.10180",
+    "paper_title": "The regularity method for graphs with few 4-cycles",
+    "paper_authors": [
+      "David Conlon",
+      "Jacob Fox",
+      "Benny Sudakov",
+      "Yufei Zhao"
+    ],
+    "published": "2021-09-25",
+    "abs_url": "https://arxiv.org/abs/2004.10180",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Erdős–Simonovits Compactness Conjecture",
+    "statement_text": "For every finite set $\\mathcal{F}$ of graphs, $\\mathrm{ex}(n,\\mathcal{F}) \\geq c \\cdot \\min_{F\\in\\mathcal{F}} \\mathrm{ex}(n,F)$ for some constant $c>0$.",
+    "context_text": "This is a well-known conjecture in extremal graph theory. The analogous statement is false for $r$-graphs with $r\\geq 3$ by the Ruzsa–Szemerédi theorem, but remains open for graphs. The paper's Theorem 1.13 shows the analogous statement also fails for linear equations, providing the first example of a lack of compactness in that setting.",
+    "attributed_to": "Erdős and Simonovits",
+    "attributed_year": null,
+    "paper_contribution": "Shows that the analogous compactness statement fails for linear equations (Theorem 1.13): the maximum size of a Sidon subset of $[n]$ simultaneously avoiding nontrivial solutions to two linear equations is $o(\\sqrt{n})$, much smaller than the minimum of the two individual extremal sizes.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2004.10180",
+    "paper_title": "The regularity method for graphs with few 4-cycles",
+    "paper_authors": [
+      "David Conlon",
+      "Jacob Fox",
+      "Benny Sudakov",
+      "Yufei Zhao"
+    ],
+    "published": "2021-09-25",
+    "abs_url": "https://arxiv.org/abs/2004.10180",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Optimality of the $o(n^{3/2})$ bound in Corollary 1.4",
+    "statement_text": "Is the exponent $3/2$ in the conclusion of Corollary 1.4 best possible? (Corollary 1.4 states: every $n$-vertex $C_5$-free graph can be made triangle-free by deleting $o(n^{3/2})$ edges.)",
+    "context_text": "Immediately after stating Corollary 1.4, the authors note that they do not know whether the exponent $3/2$ is best possible. Proposition 1.5 shows that the hypothesis in the related Corollary 1.3 cannot be relaxed, but does not directly address the tightness of the exponent in Corollary 1.4. Proposition 1.7 shows the exponent $3/2$ in Theorem 1.6 is tight.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "",
+    "arxiv_id": "2004.10180",
+    "paper_title": "The regularity method for graphs with few 4-cycles",
+    "paper_authors": [
+      "David Conlon",
+      "Jacob Fox",
+      "Benny Sudakov",
+      "Yufei Zhao"
+    ],
+    "published": "2021-09-25",
+    "abs_url": "https://arxiv.org/abs/2004.10180",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Improvement of the bound in Theorem 1.12",
+    "statement_text": "Can the bound $o(\\sqrt{n})$ for subsets of $[n]$ without a nontrivial solution to $x_1+x_2+2x_3=x_4+3x_5$ be improved to $n^{1/2-\\varepsilon}$ for some $\\varepsilon>0$?",
+    "context_text": "Theorem 1.12 shows that every subset of $[n]$ without a nontrivial solution to $x_1+x_2+2x_3=x_4+3x_5$ has size $o(\\sqrt{n})$, improving on the trivial Sidon-set upper bound of $(1+o(1))\\sqrt{n}$. The authors explicitly identify as an open problem whether the bound can be further strengthened to $n^{1/2-\\varepsilon}$.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "",
+    "arxiv_id": "2004.10180",
+    "paper_title": "The regularity method for graphs with few 4-cycles",
+    "paper_authors": [
+      "David Conlon",
+      "Jacob Fox",
+      "Benny Sudakov",
+      "Yufei Zhao"
+    ],
+    "published": "2021-09-25",
+    "abs_url": "https://arxiv.org/abs/2004.10180",
+    "source": "pdf"
+  }
+]

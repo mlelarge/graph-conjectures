@@ -1,0 +1,64 @@
+{
+  "review_id": "1810.00058__02",
+  "safe_id": "1810.00058",
+  "arxiv_id": "1810.00058",
+  "conjecture_title": "Conjecture 3.4",
+  "paper_title": "Sparse graphs with no polynomial-sized anticomplete pairs",
+  "published": "2020-12-07",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "medium",
+  "summary": "Conjecture 3.4 from arXiv:1810.00058, asserting the existence of c-sparse pairs in H-free ε-bounded graphs with quantitative polynomial bounds, remains open in general. Partial progress was made in arXiv:2307.00801 (Fox, Nguyen, Scott, Seymour), which proves the conjecture for H = P_4 with the optimal parameter and more generally for all graphs obtainable by vertex-substitution from P_4 and its subgraphs. The parent Conjecture 3.3 (which implies 3.4) was shown by Bucić, Fox, and Pham (arXiv:2403.08303) to be equivalent to the Erdős–Hajnal conjecture, placing Conjecture 3.4 in the broader landscape of open Ramsey-type problems.",
+  "since_posted": [
+    {
+      "title": "Induced subgraph density. II. Sparse and dense sets in cographs",
+      "authors": "Jacob Fox, Tung Nguyen, Alex Scott, Paul Seymour",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2307.00801",
+      "arxiv_id": "2307.00801",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves Conjecture 3.4 for H = P_4 with the optimal parameter δ = ε and a stronger maximum-degree bound, and more generally for all graphs H obtainable by vertex-substitution from copies of P_4 and its subgraphs, via the stronger 'viral' property."
+    },
+    {
+      "title": "Equivalence between Erdős-Hajnal and polynomial Rödl and Nikiforov conjectures",
+      "authors": "Matija Bucić, Jacob Fox, Huy Tuan Pham",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2403.08303",
+      "arxiv_id": "2403.08303",
+      "doi": null,
+      "kind": "reduction",
+      "claim": "Proves that the polynomial Rödl conjecture (Conjecture 3.3 in 1810.00058, which implies Conjecture 3.4) is equivalent to the Erdős–Hajnal conjecture; as a corollary deduces that string graphs satisfy the polynomial Rödl conjecture."
+    }
+  ],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2301.10147",
+      "verified": true,
+      "note": "Abstract confirms paper is about induced subgraph density and a loglog improvement towards Erdős–Hajnal; internal-reference contribution states the paper leaves Conjecture 3.4 open while proving its main theorem by different means."
+    },
+    {
+      "arxiv_id": "2403.08303",
+      "verified": true,
+      "note": "Abstract confirms the paper proves equivalence between the Erdős–Hajnal and polynomial Rödl/Nikiforov conjectures; relevant because Conjecture 3.3 (which implies 3.4) is the polynomial Rödl conjecture in the 1810.00058 framework."
+    },
+    {
+      "arxiv_id": "2307.06455",
+      "verified": true,
+      "note": "Abstract confirms the paper establishes the Erdős–Hajnal property for new graph classes; internal-reference contribution links it to Conjecture 3.4 only indirectly via the Bucić–Fox–Pham equivalence."
+    },
+    {
+      "arxiv_id": "2307.00801",
+      "verified": true,
+      "note": "Abstract confirms the paper studies sparse and dense sets in cographs (= P_4-free graphs); consistent with the claimed partial proof of Conjecture 3.4 for H = P_4."
+    }
+  ],
+  "search_queries": [
+    "H-free epsilon-bounded c-sparse pair conjecture Chudnovsky Fox Scott Seymour Spirkl 1810.00058"
+  ],
+  "notes": "Conjecture 3.4 is the ε-bounded specialization of Conjecture 3.3; the implication chain 3.3 ⟹ 3.4 ⟹ Conjecture 1.4 holds. Progress on 3.4 comes primarily through the 'Induced subgraph density' series; 2307.00801 gives the strongest direct partial result (cograph/P_4 case). The full conjecture for general H remains open."
+}

@@ -1,0 +1,71 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Gyárfás-Sumner Conjecture (Conjecture 1.1)",
+    "statement_text": "For every forest $H$, there is a function $f$ such that $\\chi(G) \\leq f(\\omega(G))$ for every $H$-free graph $G$.",
+    "context_text": "The Gyárfás-Sumner conjecture asserts that the class of $H$-free graphs is $\\chi$-bounded for every forest $H$. It remains open in general and has been proved only for restricted families of trees. Any forest satisfying Esperet's polynomial strengthening (Conjecture 1.2) automatically satisfies this conjecture.",
+    "attributed_to": "Gyárfás and Sumner",
+    "attributed_year": 1973,
+    "paper_contribution": "Proves the conjecture for all star-forests $H$ as an implicit consequence of the main theorem establishing polynomial $\\chi$-binding functions for those forests.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2107.11780",
+    "paper_title": "Polynomial bounds for chromatic number. II. Excluding a star-forest",
+    "paper_authors": [
+      "Alex Scott",
+      "Paul Seymour",
+      "Sophie Spirkl"
+    ],
+    "published": "2021-07-25",
+    "abs_url": "https://arxiv.org/abs/2107.11780",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Esperet's Conjecture (Conjecture 1.2)",
+    "statement_text": "There is a polynomial $f_H$ such that $\\chi(G) \\leq f_H(\\omega(G))$ for every $H$-free graph $G$.",
+    "context_text": "Esperet conjectured that every $\\chi$-bounded class is polynomially $\\chi$-bounded. For forest exclusion specifically, the conjecture was previously verified only for disjoint unions of $K_2$, graphs obtained from a star by subdividing one edge once, and their induced subgraphs. In particular, it was not known for $H = P_5$.",
+    "attributed_to": "Esperet",
+    "attributed_year": 2017,
+    "paper_contribution": "Proves Esperet's conjecture for all star-forests $H$ (forests in which every component is a star), via the main theorem: if $H'$ satisfies the conjecture and $H$ is the disjoint union of $H'$ and a star, then $H$ also satisfies the conjecture.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2107.11780",
+    "paper_title": "Polynomial bounds for chromatic number. II. Excluding a star-forest",
+    "paper_authors": [
+      "Alex Scott",
+      "Paul Seymour",
+      "Sophie Spirkl"
+    ],
+    "published": "2021-07-25",
+    "abs_url": "https://arxiv.org/abs/2107.11780",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Informal remark on completeness of known forests satisfying Esperet's conjecture",
+    "statement_text": "As far as we know (although it seems unlikely), [the forests described in results 1.4–1.6 and their induced subgraphs] might be all the forests that satisfy [Esperet's conjecture 1.2].",
+    "context_text": "After establishing their main results on star-forests and double stars, the authors pause to note the state of knowledge: the only forests known to satisfy Esperet's polynomial conjecture are those built from disjoint unions of stars, double stars, and $K_2$. They remark that these may be all such forests, though they consider this unlikely.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Authors signal explicit scepticism ('although it seems unlikely'), so this is a note on the limits of current knowledge rather than a firm conjecture.",
+    "arxiv_id": "2107.11780",
+    "paper_title": "Polynomial bounds for chromatic number. II. Excluding a star-forest",
+    "paper_authors": [
+      "Alex Scott",
+      "Paul Seymour",
+      "Sophie Spirkl"
+    ],
+    "published": "2021-07-25",
+    "abs_url": "https://arxiv.org/abs/2107.11780",
+    "source": "pdf"
+  }
+]

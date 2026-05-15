@@ -1,0 +1,46 @@
+[
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Informal Question (correct exponential constant in r(n,m))",
+    "statement_text": "Is $3$, the lower bound on $r(n,m)$ given by considering a random set, the right exponential constant? That is, does $r(n,m) = N^{1-\\varepsilon_m}$ hold with the same exponential base $3$ as in the random lower bound $r(n,m) \\geq N^{1-(m+1)3^{-m}}$, rather than the base $C \\approx 13.901$ appearing in the upper bound $r(n,m) \\leq (1+o(1))N^{1-C^{-m}}$?",
+    "context_text": "The lower and upper bounds for $r(n,m)$ (the maximum size of a subset of $\\mathbb{F}_3^n$ containing no affine $m$-dimensional subspace) both have the form $N^{1-\\varepsilon_m}$ with $\\varepsilon_m \\to 0$ exponentially fast in $m$, but with different exponential constants: $3$ in the random lower bound and $C \\approx 13.901$ in the upper bound derived from the cap set supersaturation result. The authors note that resolving this question is closely tied to whether $n_3(\\alpha,\\beta)$ is small enough for $\\beta = \\alpha^{3+o(1)}$, and their main result provides evidence that the approach via popular differences likely cannot resolve it.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated as an open question in running prose in the introduction without a formal labelled environment. PDF source — exponent notation in r(n,m) bounds may be garbled.",
+    "arxiv_id": "1708.08486",
+    "paper_title": "Popular progression differences in vector spaces II",
+    "paper_authors": [
+      "Jacob Fox",
+      "Huy Tuan Pham"
+    ],
+    "published": "2019-11-21",
+    "abs_url": "https://arxiv.org/abs/1708.08486",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Conjecture (Theorem 2 extends to primes p < 19)",
+    "statement_text": "The bounds on the tower height of $n_p(\\alpha,\\beta)$ given in Theorem 2 should also hold for all primes $p < 19$.",
+    "context_text": "Theorem 2 is proved only for primes $p \\geq 19$. The authors note that the upper bounds in Theorem 2 hold for all primes, and the lower bound holds when $\\varepsilon = \\alpha^3 - \\beta$ is small. The obstacle for $p < 19$ in the large-$\\varepsilon$ regime is that the best known bounds on the largest subset of $\\mathbb{F}_p^n$ without a three-term arithmetic progression are not strong enough to imply the required lower bound estimate in that case.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated in prose immediately before Theorem 2 with the words 'We conjecture these bounds should also hold for p < 19.' No formal labelled environment.",
+    "arxiv_id": "1708.08486",
+    "paper_title": "Popular progression differences in vector spaces II",
+    "paper_authors": [
+      "Jacob Fox",
+      "Huy Tuan Pham"
+    ],
+    "published": "2019-11-21",
+    "abs_url": "https://arxiv.org/abs/1708.08486",
+    "source": "pdf"
+  }
+]

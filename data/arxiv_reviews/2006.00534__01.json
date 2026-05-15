@@ -1,0 +1,22 @@
+{
+  "review_id": "2006.00534__01",
+  "safe_id": "2006.00534",
+  "arxiv_id": "2006.00534",
+  "conjecture_title": "Question 8",
+  "paper_title": "Inverse problems for minimal complements and maximal supplements",
+  "published": "2020-12-30",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "Question 8 asks whether T(n) behaves differently when n is prime and how much T(G) depends on group structure beyond just the order. The source paper itself notes that the best known upper bound for T(p) (prime p) is only O(p^{3/4+epsilon}), which may not be tight, since the constructions achieving better bounds for composite n rely on proper subgroups unavailable in Z/pZ. No follow-up paper resolving either part of this question was found in a wide web search across arXiv, Journal of Number Theory, and the Ramanujan Journal.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "minimal complements maximal supplements T(n) prime Alon Kravitz Larson 2006.00534",
+    "minimal complement additive combinatorics T(G) group structure upper bound prime",
+    "T(n) minimal complement prime order cyclic group Kravitz OR Larson follow-up 2021 2022 2023"
+  ],
+  "notes": "No follow-up paper specifically addressing Question 8 was found. A Ramanujan Journal paper (DOI: 10.1007/s11139-025-01281-6) on minimal additive complements appeared in a 2025 search result but was inaccessible due to authentication redirect. The gap between the O(p^{3/4+epsilon}) bound for prime p and the better O(sqrt(n)) bound achievable when n has divisors of suitable size is the core open issue; the structural question (T(G) vs |G|) is related but broader."
+}

@@ -1,0 +1,24 @@
+{
+  "review_id": "2312.13061__01",
+  "safe_id": "2312.13061",
+  "arxiv_id": "2312.13061",
+  "conjecture_title": "Conjecture 4",
+  "paper_title": "Precoloring extension in planar near-Eulerian-triangulations",
+  "published": "2023-12-20",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 4 from arXiv:2312.13061 posits a sufficient structural condition (sufficiently many well-separated long faces in G-U, a bipartite subgraph) under which every viable 4-coloring of the outer cycle extends to a full 4-coloring of a planar near-Eulerian-triangulation. The source paper was subsequently published as a journal article in the European Journal of Combinatorics 127 (2025), 104138, but this is the same work. No follow-up paper proving or disproving this conjecture was found in the indexed literature.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Dvořák Moore Seifrtová Šámal \"precoloring extension\" \"near-Eulerian-triangulation\" 4-coloring 2023",
+    "arxiv 2312.13061 \"precoloring extension\" planar near-Eulerian-triangulation cite",
+    "\"near-Eulerian-triangulation\" \"viable 4-coloring\" OR \"viable precoloring\" bipartite independent set 4-coloring planar 2024 2025",
+    "Dvořák Moore Šámal \"precoloring extension\" planar 4-coloring 2024 2025 arxiv",
+    "DBLP fetch for Zdeněk Dvořák 2024-2025 publications"
+  ],
+  "notes": "The source paper was published as European Journal of Combinatorics 127 (2025) 104138 (same title, same authors — journal version only). A second EJC entry (vol. 129, 104183) by the same authors may be a corrigendum or companion piece. The related paper arXiv:2409.19165 (four-coloring Eulerian triangulations of the torus, Brianski–Kral–Lamaison–Shu) does not address this conjecture. No paper specifically resolving Conjecture 4 was found after a wide web search."
+}

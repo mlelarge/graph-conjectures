@@ -1,0 +1,102 @@
+[
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Mandache's question on the optimal exponent for m(δ)",
+    "statement_text": "What is the optimal exponent $\\alpha$ such that $m(\\delta) \\sim \\delta^\\alpha$ as $\\delta \\to 0$, where $m(\\delta)$ denotes the minimum triforce density $\\int_{[0,1]^6} W(x',y,z)W(x,y',z)W(x,y,z')\\,dx\\,dy\\,dz\\,dx'\\,dy'\\,dz'$ among all measurable $W:[0,1]^3\\to[0,1]$ with $\\int W = \\delta$?",
+    "context_text": "Mandache showed that $\\delta^4 \\leq m(\\delta) \\lesssim \\delta^{3.13}$ and asked what the optimal exponent on $\\delta$ is. This question motivates the paper's main results on triforce densities.",
+    "attributed_to": "Mandache",
+    "attributed_year": null,
+    "paper_contribution": "Proves that the optimal exponent is $4$: $m(\\delta) = \\delta^{4-o(1)}$ and $m(\\delta) = \\omega(\\delta^4)$ as $\\delta \\to 0$ (Theorem 1.2), settling Mandache's question.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source — math may be garbled in places. Mandache's question is explicitly stated in the introduction.",
+    "arxiv_id": "1903.04863",
+    "paper_title": "Triforce and Corners",
+    "paper_authors": [
+      "Jacob Fox",
+      "Ashwin Sah",
+      "Mehtaab Sawhney",
+      "David Stoner",
+      "Yufei Zhao"
+    ],
+    "published": "2019-07-02",
+    "abs_url": "https://arxiv.org/abs/1903.04863",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Green's Problem 19 (Popular Corners)",
+    "statement_text": "Determine $M(\\delta)$, the maximum constant such that for every $\\varepsilon > 0$ and every sufficiently large $n$, every $A \\subseteq G \\times G$ with $|A| \\geq \\delta|G|^2$ contains at least $(M(\\delta) - \\varepsilon)|G|^2$ corners $(x,y),(x+d,y),(x,y+d) \\in A$ for some nonzero $d \\in G$.",
+    "context_text": "Ben Green posed this problem in his collection of open problems. Mandache and Chu had established that the naive extension (finding as many corners as in the random case) fails, but the correct order of $M(\\delta)$ was open.",
+    "attributed_to": "Ben Green",
+    "attributed_year": null,
+    "paper_contribution": "Corollary 1.3 proves $M(\\delta) \\leq \\delta^{4-o(1)}$ for all sequences of finite abelian groups $G_n$ with $|G_n| \\to \\infty$, and $M(\\delta) = \\omega(\\delta^4)$ for $G_n = \\mathbb{F}_p^n$ with fixed prime $p$, thereby solving the problem.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "PDF source — math may be garbled. The paper states 'This result solves Problem 19 from Ben Green's collection of open problems [11]'; the exact verbatim statement of Problem 19 is not reproduced in the paper, so the statement above is reconstructed from context.",
+    "arxiv_id": "1903.04863",
+    "paper_title": "Triforce and Corners",
+    "paper_authors": [
+      "Jacob Fox",
+      "Ashwin Sah",
+      "Mehtaab Sawhney",
+      "David Stoner",
+      "Yufei Zhao"
+    ],
+    "published": "2019-07-02",
+    "abs_url": "https://arxiv.org/abs/1903.04863",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Informal question on Behrend-style sets avoiding affine patterns with mixed-sign coefficients",
+    "statement_text": "We do not know if there are subsets of $[N]$, in the style of Behrend's construction, with $N^{1-o(1)}$ elements avoiding such patterns (e.g., $2x + 2y = 3w + z$).",
+    "context_text": "In Section 3.1, the authors discuss why the Ruzsa–Bergelson–Host–Kra approach for constructing popular-difference counterexamples fails for certain linear identities $a_1P(b_1)+\\cdots+a_4P(b_4)=0$ in which there are two positive and two negative $a_i$'s (rather than the symmetric case). They note that it is unknown whether large Behrend-style sets avoiding such patterns exist.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated in running prose in Section 3.1 without a labelled environment. PDF source.",
+    "arxiv_id": "1903.04863",
+    "paper_title": "Triforce and Corners",
+    "paper_authors": [
+      "Jacob Fox",
+      "Ashwin Sah",
+      "Mehtaab Sawhney",
+      "David Stoner",
+      "Yufei Zhao"
+    ],
+    "published": "2019-07-02",
+    "abs_url": "https://arxiv.org/abs/1903.04863",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Informal conjecture on extending Mandache's Theorem 1.1 to all abelian groups",
+    "statement_text": "It seems likely that the result [the lower bound $M(\\delta) \\geq m_{\\mathrm{convex}}(\\delta)$] can be extended to all abelian groups via Bohr sets, though as far as we know this has not yet been worked out.",
+    "context_text": "Theorem 1.1 (Mandache) establishes the lower bound $M(\\delta) \\geq m_{\\mathrm{convex}}(\\delta)$ only for $G_n = \\mathbb{F}_p^n$ with fixed prime $p$, via an arithmetic regularity argument combined with Fourier-analytic ideas. The authors believe a Bohr-set analogue would extend this to arbitrary abelian groups.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated in running prose in the introduction without a labelled environment. PDF source.",
+    "arxiv_id": "1903.04863",
+    "paper_title": "Triforce and Corners",
+    "paper_authors": [
+      "Jacob Fox",
+      "Ashwin Sah",
+      "Mehtaab Sawhney",
+      "David Stoner",
+      "Yufei Zhao"
+    ],
+    "published": "2019-07-02",
+    "abs_url": "https://arxiv.org/abs/1903.04863",
+    "source": "pdf"
+  }
+]

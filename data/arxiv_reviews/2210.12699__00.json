@@ -1,0 +1,24 @@
+{
+  "review_id": "2210.12699__00",
+  "safe_id": "2210.12699",
+  "arxiv_id": "2210.12699",
+  "conjecture_title": "Open problem: closing the gap for $d(s)$",
+  "paper_title": "Subdigraphs of prescribed size and outdegree",
+  "published": "2022-10-23",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "The open problem of closing the gap $\\Omega(\\log s) < s/2 - d(s) < O(\\sqrt{s\\log s})$ remains unresolved. The source paper (Steiner, arXiv:2210.12699, published Journal of Graph Theory 2024) established the lower bound $\\Omega(\\log s)$ by disproving Alon's conjecture that $s/2 - d(s) = O(1)$, while the upper bound $O(\\sqrt{s\\log s})$ is due to Alon's probabilistic argument. A paper titled 'New results on a problem of Alon' appeared in Discrete Mathematics (2024), but its arXiv preprint could not be located and its content could not be verified within the search limit.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "digraph minimum out-degree subdigraph d(s) gap bounds Steiner 2210.12699",
+    "subdigraph prescribed size outdegree \"d(s)\" asymptotic log sqrt digraph Alon",
+    "\"New results on a problem of Alon\" digraph subdigraph outdegree arXiv",
+    "subdigraph outdegree Alon gap arXiv search",
+    "arXiv:2210.12699 citing papers semantic scholar"
+  ],
+  "notes": "A paper 'New results on a problem of Alon' appeared in Discrete Mathematics 2024 (ScienceDirect pii S0012365X24004680) which is directly relevant by title, but the ScienceDirect page returned HTTP 403 and no arXiv preprint was found within the 5-call limit. It is unclear whether it improves the bounds or addresses a related but different Alon problem. The gap $\\Omega(\\log s) < s/2 - d(s) < O(\\sqrt{s\\log s})$ should be regarded as open with medium confidence pending verification of that paper."
+}

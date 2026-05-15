@@ -1,0 +1,22 @@
+{
+  "review_id": "1909.12175__00",
+  "safe_id": "1909.12175",
+  "arxiv_id": "1909.12175",
+  "conjecture_title": "Open problem: p-entropic matroids linear for prime p",
+  "paper_title": "Entropic matroids and their representation",
+  "published": "2019-09-26",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "The conjecture that p-entropic matroids are F_p-representable (linear) for every prime p remains open as of 2026. The source paper proved this for p=2 and p=3, and ruled out linearity for p=9 (a composite), but no follow-up work resolving the question for larger primes (p=5, 7, 11, ...) was found in the literature. The related 2022 paper by Kühne and Yashfe (arXiv:2206.03465) on entropic and almost-multilinear representability of matroids touches adjacent territory but does not appear to settle this specific conjecture.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "entropic matroids linear prime representation Abbe Spirkl",
+    "p-entropic matroids Fp-representable prime arXiv 1909.12175",
+    "\"entropic matroids\" prime \"p=5\" OR \"p=7\" OR \"p=11\" linear representable 2020 2021 2022 2023 2024"
+  ],
+  "notes": "No follow-up found that resolves the conjecture for primes p > 3. The paper arXiv:2206.03465 (Kühne–Yashfe, 2022) is titled 'On entropic and almost multilinear representability of matroids' and is the closest related post-2019 work found, but WebFetch of its abstract did not confirm it addresses the p-entropic/prime conjecture specifically. Confidence is medium rather than high because the conjecture is ~6 years old and the searches, while covering the main venues, may not have caught all relevant work."
+}

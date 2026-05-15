@@ -1,0 +1,23 @@
+{
+  "review_id": "1907.12091__00",
+  "safe_id": "1907.12091",
+  "arxiv_id": "1907.12091",
+  "conjecture_title": "Conjecture 2",
+  "paper_title": "Bounding the number of cycles in a graph in terms of its degree sequence",
+  "published": "2019-07-28",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 2 from arXiv:1907.12091 asserts that every simple graph with $m$ edges has at most $O(\\kappa_1^m)$ cycles, where $\\kappa_1 = (2+2\\sqrt{2})^{1/5} \\approx 1.3701$, matching the Arman–Tsaturian lower bound. The source paper itself resolved several conjectures of Király and Arman–Tsaturian, but Conjecture 2 — that the Arman–Tsaturian construction is tight — was left open. No subsequent paper proving or disproving this conjecture was found in a targeted web search; the best known upper bound for the number of cycles in a simple graph with $m$ edges remains approximately $1.443^m$, leaving a significant gap.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "cycles graph edges Arman-Tsaturian maximum cycles conjecture Dvorak Morrison Noel Norin Postle",
+    "arxiv 1907.12091 cycles degree sequence kappa cycles upper bound",
+    "maximum cycles graph edges 1.3701 OR (2+2sqrt(2))^{1/5} conjecture simple graph",
+    "number of cycles simple graph edges upper bound tight Dvorak Morrison Noel Norin Postle 2019 2020 2021 2022 2023 2024"
+  ],
+  "notes": "No follow-up resolving Conjecture 2 was found. The Arman–Tsaturian construction (arXiv:1702.02662, EJC 2019) provides the best known lower bound $\\Omega(\\kappa_1^m)$. The source paper improves the upper bound and resolves several related conjectures, but the precise constant for simple graphs remains open. Any counterexample would necessarily have average degree in $(4.24, 7.18)$ per Remark 9 of the source paper."
+}

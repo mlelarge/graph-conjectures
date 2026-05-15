@@ -1,0 +1,50 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.5 (Sintiari–Trotignon)",
+    "statement_text": "(Even hole, diamond, $K_4$)-free graphs have bounded treewidth.",
+    "context_text": "Sintiari and Trotignon constructed (even hole, pyramid, $K_4$)-free graphs of arbitrarily large treewidth; these graphs contain diamonds, motivating the question of whether excluding diamonds restores bounded treewidth. The present paper's Theorem 1.4 — that (even hole, diamond, pyramid, $K_t$)-free graphs have bounded treewidth for every fixed $t$ — is explicitly identified as a special case of this conjecture.",
+    "attributed_to": "Sintiari and Trotignon",
+    "attributed_year": null,
+    "paper_contribution": "Proves Theorem 1.4, that for all $t > 0$ there exists $d_t \\geq 0$ such that every (even hole, diamond, pyramid, $K_t$)-free graph has treewidth at most $d_t$, which is a special case of Conjecture 1.5.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2203.06775",
+    "paper_title": "Induced subgraphs and tree decompositions IV. (Even hole, diamond, pyramid)-free graphs",
+    "paper_authors": [
+      "Tara Abrishami",
+      "Maria Chudnovsky",
+      "Sepehr Hajebi",
+      "Sophie Spirkl"
+    ],
+    "published": "2022-10-21",
+    "abs_url": "https://arxiv.org/abs/2203.06775",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.6",
+    "statement_text": "For all $t > 0$ there exists $c_t \\geq 0$ such that $\\mathrm{tw}(G) \\leq c_t$ for every $G \\in \\mathcal{C}^*_t$.",
+    "context_text": "Here $\\mathcal{C}^*_t$ denotes the class of $(C_4, \\text{diamond}, \\text{theta}, \\text{prism}, \\text{even wheel}, K_t)$-free graphs — a relaxation of $\\mathcal{C}_t$ in which pyramids are no longer excluded. The authors pose this as a slight generalization of Sintiari–Trotignon's Conjecture 1.5, noting that Theorem 1.4 (the main result of the paper) would serve as the base case if the conjecture could be proved by the same techniques.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2203.06775",
+    "paper_title": "Induced subgraphs and tree decompositions IV. (Even hole, diamond, pyramid)-free graphs",
+    "paper_authors": [
+      "Tara Abrishami",
+      "Maria Chudnovsky",
+      "Sepehr Hajebi",
+      "Sophie Spirkl"
+    ],
+    "published": "2022-10-21",
+    "abs_url": "https://arxiv.org/abs/2203.06775",
+    "source": "pdf"
+  }
+]

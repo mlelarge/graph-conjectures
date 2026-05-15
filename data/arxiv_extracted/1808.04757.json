@@ -1,0 +1,52 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Graham's Conjecture on Optimal Addressings",
+    "statement_text": "$N_2(G) = n-1$ for almost all graphs $G$ on $n$ vertices.",
+    "context_text": "In [7, page 148], Ron Graham writes that it is natural to guess that $N_2(G) = n-1$ for almost all connected graphs on $n$ vertices. Computations by the paper's authors on all connected graphs with up to 10 vertices contradicted this belief, motivating a proof of the opposite.",
+    "attributed_to": "Ron Graham",
+    "attributed_year": null,
+    "paper_contribution": "Disproves the conjecture by proving that $N_2(G) \\leq n - (2 - o(1))\\log_2 n$ for almost all connected graphs $G$ on $n$ vertices.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "Described as a 'suggested conjecture' in prose without a labelled theorem environment; attributed to [7, page 148].",
+    "arxiv_id": "1808.04757",
+    "paper_title": "Addressing Johnson graphs, complete multipartite graphs, odd cycles and other graphs",
+    "paper_authors": [
+      "Noga Alon",
+      "Sebastian M. Cioabă",
+      "Brandon D. Gilbert",
+      "Jack H. Koolen",
+      "Brendan D. McKay"
+    ],
+    "published": "2018-10-29",
+    "abs_url": "https://arxiv.org/abs/1808.04757",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Question of Watanabe, Ishii, and Sawa on N3 of odd cycles",
+    "statement_text": "Does the formula for $N_3(C_{2n+1})$ established by Watanabe, Ishii, and Sawa hold for all (larger) values of $n$?",
+    "context_text": "Watanabe, Ishii, and Sawa [14] proved a formula for $N_3(C_{2n+1})$ for small odd cycles and explicitly asked whether it extends to all $n$. The paper computes specific values $N_3(C_{11}), N_3(C_{13}), N_3(C_{15}), N_3(C_{17}), N_3(C_{19})$ to investigate this.",
+    "attributed_to": "Watanabe, Ishii, and Sawa",
+    "attributed_year": null,
+    "paper_contribution": "Resolves the question: the formula is confirmed for $n \\in \\{6, 7, 8, 9\\}$ (corresponding odd cycles $C_{13}, C_{15}, C_{17}, C_{19}$) but shown to fail for $n = 11$.",
+    "opg_lookup": true,
+    "confidence": "low",
+    "notes": "PDF source — the exact formula for $N_3(C_{2n+1})$ from [14] is heavily garbled in the extraction; the precise index range for the true/false cases may also be garbled.",
+    "arxiv_id": "1808.04757",
+    "paper_title": "Addressing Johnson graphs, complete multipartite graphs, odd cycles and other graphs",
+    "paper_authors": [
+      "Noga Alon",
+      "Sebastian M. Cioabă",
+      "Brandon D. Gilbert",
+      "Jack H. Koolen",
+      "Brendan D. McKay"
+    ],
+    "published": "2018-10-29",
+    "abs_url": "https://arxiv.org/abs/1808.04757",
+    "source": "pdf"
+  }
+]

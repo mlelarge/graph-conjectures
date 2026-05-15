@@ -1,0 +1,28 @@
+{
+  "review_id": "1611.03196__02",
+  "safe_id": "1611.03196",
+  "arxiv_id": "1611.03196",
+  "conjecture_title": "Conjecture 1.14",
+  "paper_title": "Fair representation by independent sets",
+  "published": "2016-11-10",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "low",
+  "summary": "Conjecture 1.14 from arXiv:1611.03196 asserts a fair-representation guarantee for matchings in edge-partitioned graphs: for any partition E_1,...,E_m of E(H) there exists a matching M with |M cap E_i| >= floor(|E_i|/(Delta(H)+2)) for all i. Proposed as a strengthening of the rainbow matching conjecture (Conjecture 1.12) via the connectivity bound for independence complexes of line graphs, the conjecture targets general graphs with no bipartiteness assumption. Multiple searches found no subsequent paper that resolves, refutes, or substantially advances this specific conjecture; the broader rainbow-matching program remains active, but this edge-partition variant appears unaddressed in the indexed literature. Given that the conjecture is nearly a decade old, the absence of any visible resolution warrants low confidence.",
+  "since_posted": [],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2212.11969",
+      "verified": false,
+      "note": "WebFetch of arXiv:2212.11969 confirms the paper is 'Invertibility of digraphs and tournaments' (Alon, Powierski, Savery, Scott, Wilmer), which studies inversion numbers of digraphs and tournaments and has no connection to Conjecture 1.14 or edge-partitioned graph matchings. The attribution text in the internal reference (mentioning inv(n) and tournament inversion) belongs to an entirely different conjecture; this is a false corpus match."
+    }
+  ],
+  "search_queries": [
+    "arXiv 1611.03196 fair representation matching conjecture edge partition Delta(H)+2",
+    "fair representation matching rainbow matching independent sets conjecture 1.14 Aharoni Alon Chudnovsky",
+    "matching edge partition Delta(H)+2 maximum degree rainbow Aharoni Alon 1611.03196 cite 2020 2021 2022 2023 2024"
+  ],
+  "notes": "No follow-up paper found that directly addresses Conjecture 1.14. The sole internal reference (arXiv:2212.11969) is a false match verified by WebFetch. The conjecture is a strict strengthening of Conjecture 1.12 (rainbow matching conjecture for general graphs), and since 1.12 itself remains open in full generality, 1.14 is almost certainly open. Low confidence reflects the conjecture's age (~9 years) making the absence of a resolution somewhat suspicious, though the niche nature of the exact Delta(H)+2 bound may explain limited follow-up."
+}

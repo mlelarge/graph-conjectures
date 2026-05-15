@@ -1,0 +1,71 @@
+[
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Question 1.3",
+    "statement_text": "Do there exist $c, \\varepsilon > 0$ with the following property? Let $\\mathcal{B} = (B_1, B_2, B_3)$ be a blockade in a graph $G$, and let $W$ be its width. If there is no $\\mathcal{B}$-transversal triangle, then there exist distinct $i, j \\in \\{1, 2, 3\\}$ and $X \\subseteq B_i$ and $Y \\subseteq B_j$, such that $X, Y$ is a pure pair, and $|X|, |Y| \\geq \\varepsilon W^c$.",
+    "context_text": "This is a variant of a conjecture of Conlon, Fox and Sudakov. Settling Question 1.3 was the authors' initial goal, though they were unable to do so. It is also equivalent to the $k=3$ case of Theorem 1.4 (which handles cycles of length $k \\geq 4$), and can be reduced to the sparse case where every vertex in $B_i$ has at most $|B_j|/100$ neighbours in $B_j$ for all distinct $i, j \\in \\{1,2,3\\}$.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2111.00532",
+    "paper_title": "Pure pairs. IX. Transversal trees",
+    "paper_authors": [
+      "Alex Scott",
+      "Paul Seymour",
+      "Sophie Spirkl"
+    ],
+    "published": "2024-02-06",
+    "abs_url": "https://arxiv.org/abs/2111.00532",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Informal: which graphs H admit polynomial-size pure pairs",
+    "statement_text": "For which ordered graphs $H$ can we get $|X|, |Y| \\geq \\varepsilon W^c$ (for some fixed $c > 0$ depending only on $H$) as the pure pair conclusion when there is no ordered $\\mathcal{B}$-transversal copy of $H$ in a blockade of width $W$?",
+    "context_text": "Immediately after stating Theorem 1.2 (Erdős–Hajnal–Pach), the authors ask for which $H$ the pure pair conclusion can be made polynomial in $W$. They note that $c = 1$ (linear pure pairs) is achievable only for $|H| \\leq 2$, and flag the polynomial question as 'more promising'. The bulk of the paper provides partial answers for trees and caterpillars.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "PDF source — the exact threshold formulas around this informal question may be partially garbled; overall intent is clear from context.",
+    "arxiv_id": "2111.00532",
+    "paper_title": "Pure pairs. IX. Transversal trees",
+    "paper_authors": [
+      "Alex Scott",
+      "Paul Seymour",
+      "Sophie Spirkl"
+    ],
+    "published": "2024-02-06",
+    "abs_url": "https://arxiv.org/abs/2111.00532",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Informal: characterization of graphs with the strong transversal property",
+    "statement_text": "Which graphs $H$ have the strong transversal property, i.e., for which $H$ does there exist $\\varepsilon > 0$ such that every graph $G$ with an $(\\varepsilon W, \\varepsilon W)$-cohesive blockade $\\mathcal{B} = (B_1, \\ldots, B_{|H|})$ of local degree less than $\\varepsilon W$ contain a $\\mathcal{B}$-transversal copy of $H$?",
+    "context_text": "The question opens Section 2. The authors note that $H$ must be a forest, and give partial results in Theorem 2.1: paths have the property; certain caterpillar-like trees do; trees with a vertex of degree $d$ satisfying $2^{d-1} \\geq |H|$ do not. No complete characterization is given, and the converse of the component-wise criterion fails.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Posed as a driving question for Section 2 without a formal label or environment.",
+    "arxiv_id": "2111.00532",
+    "paper_title": "Pure pairs. IX. Transversal trees",
+    "paper_authors": [
+      "Alex Scott",
+      "Paul Seymour",
+      "Sophie Spirkl"
+    ],
+    "published": "2024-02-06",
+    "abs_url": "https://arxiv.org/abs/2111.00532",
+    "source": "pdf"
+  }
+]

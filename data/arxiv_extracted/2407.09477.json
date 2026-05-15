@@ -1,0 +1,29 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Totally $\\Delta$-modular IP Conjecture",
+    "statement_text": "For every constant $\\Delta \\in \\mathbb{Z}_{\\geq 1}$, integer programs of the form $\\max\\{p^{\\intercal}x : Mx \\leq b,\\, x \\in \\mathbb{Z}^{n}\\}$, where $M$ is an integer matrix whose subdeterminants are all in $\\{-\\Delta, \\dots, \\Delta\\}$, can be solved in polynomial time.",
+    "context_text": "It is a notorious open question whether IPs with a totally $\\Delta$-modular coefficient matrix $M$ can be solved in polynomial time for every fixed constant $\\Delta$. Artmann, Weismantel and Zenklusen [AWZ17] established the $\\Delta=2$ case, leading to the conjecture that polynomial-time solvability holds for every constant $\\Delta$. The paper refers to this as the totally $\\Delta$-modular IP conjecture and provides further evidence by solving it for the class of nearly totally unimodular matrices whose TU submatrix is the transpose of a network matrix.",
+    "attributed_to": "Artmann, Weismantel, and Zenklusen",
+    "attributed_year": 2017,
+    "paper_contribution": "Answers the conjecture in the affirmative for the special case where $M$ is totally $\\Delta$-modular and nearly totally unimodular with the unimodular submatrix $A$ (obtained by removing a constant number of rows and columns) being the transpose of a network matrix.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2407.09477",
+    "paper_title": "Integer programs with nearly totally unimodular matrices: the cographic case",
+    "paper_authors": [
+      "Manuel Aprile",
+      "Samuel Fiorini",
+      "Gwenaël Joret",
+      "Stefan Kober",
+      "Michał T. Seweryn",
+      "Stefan Weltge",
+      "Yelena Yuditsky"
+    ],
+    "published": "2026-01-22",
+    "abs_url": "https://arxiv.org/abs/2407.09477",
+    "source": "html"
+  }
+]

@@ -1,0 +1,140 @@
+[
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Burr–Erdős Problem on 2-Ramsey Complete Sequences (gap problem)",
+    "statement_text": "Can the gap between the upper bound $|A \\cap [n]| \\leq C\\log^3 n$ for the sparsest entirely 2-Ramsey complete sequence and the lower bound showing no 2-Ramsey complete sequence satisfies $|A \\cap [n]| \\leq c\\log^2 n$ for all sufficiently large $n$ be narrowed?",
+    "context_text": "Burr and Erdős constructed an entirely 2-Ramsey complete sequence with $|A \\cap [n]| \\leq C\\log^3 n$ for all $n$, and showed there is a constant $c > 0$ for which no 2-Ramsey complete sequence satisfies $|A \\cap [n]| \\leq c\\log^2 n$ for all sufficiently large $n$. They asked whether this gap could be narrowed; Erdős later offered $100 for an improvement.",
+    "attributed_to": "Burr and Erdős",
+    "attributed_year": null,
+    "paper_contribution": "Theorem 1.1 resolves the problem completely, showing that the sparsest $r$-Ramsey complete sequence has $|A \\cap [n]| = \\Theta(r\\log^2 n)$, hence the correct order for $r=2$ is $\\Theta(\\log^2 n)$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source — one of three Burr–Erdős problems; Erdős offered $100 prize. Math reconstructed from garbled PDF.",
+    "arxiv_id": "2104.14766",
+    "paper_title": "Subset sums, completeness and colorings",
+    "paper_authors": [
+      "David Conlon",
+      "Jacob Fox",
+      "Huy Tuan Pham"
+    ],
+    "published": "2021-04-30",
+    "abs_url": "https://arxiv.org/abs/2104.14766",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Burr–Erdős Problem on r-Ramsey Complete Sequences (r ≥ 3)",
+    "statement_text": "For $r \\geq 3$, does there exist an $r$-Ramsey complete sequence $A$ with $|A \\cap [n]| = n^{o(1)}$? More generally, find any non-trivial upper bound on the density of the sparsest $r$-Ramsey complete sequence.",
+    "context_text": "Burr and Erdős showed that for $r \\geq 3$ there is no $r$-Ramsey complete sequence with $|A \\cap [n]| \\leq c\\log^2 n$, but were unable to construct an $r$-Ramsey complete sequence with $|A \\cap [n]| = n^{o(1)}$. Given the lack of progress, Erdős later offered $250 for any non-trivial result.",
+    "attributed_to": "Burr and Erdős",
+    "attributed_year": null,
+    "paper_contribution": "Theorem 1.1 resolves this by constructing, for every $r \\geq 2$, an $r$-Ramsey complete sequence with $|A \\cap [n]| \\leq Cr\\log^2 n$, and showing this is tight up to an absolute constant factor.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source — one of three Burr–Erdős problems; Erdős offered $250 prize. Math reconstructed from garbled PDF.",
+    "arxiv_id": "2104.14766",
+    "paper_title": "Subset sums, completeness and colorings",
+    "paper_authors": [
+      "David Conlon",
+      "Jacob Fox",
+      "Huy Tuan Pham"
+    ],
+    "published": "2021-04-30",
+    "abs_url": "https://arxiv.org/abs/2104.14766",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Burr–Erdős Question on Ramsey Complete Polynomial Sequences",
+    "statement_text": "Which polynomial sequences $(P(m))_{m \\geq 1}$ are $r$-Ramsey complete?",
+    "context_text": "After Graham characterized all complete real polynomial sequences, Burr and Erdős asked which such sequences are $r$-Ramsey complete. Burr reportedly proved (unpublished) that the sequence of $k$th powers is $r$-Ramsey complete for all $r \\geq 2$.",
+    "attributed_to": "Burr and Erdős",
+    "attributed_year": null,
+    "paper_contribution": "Theorem 1.2 answers this completely: for any degree-$k$ polynomial $P$ for which $(P(m))_{m\\geq 1}$ is complete and any $r \\geq 2$, there is an $r$-Ramsey complete subsequence $A \\subseteq (P(m))_{m\\geq 1}$ with $|A \\cap [n]| \\leq C(k)r\\log^2 n$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source — identified as the third of the three Burr–Erdős problems referenced in the abstract (combined $350 prize).",
+    "arxiv_id": "2104.14766",
+    "paper_title": "Subset sums, completeness and colorings",
+    "paper_authors": [
+      "David Conlon",
+      "Jacob Fox",
+      "Huy Tuan Pham"
+    ],
+    "published": "2021-04-30",
+    "abs_url": "https://arxiv.org/abs/2104.14766",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Alon–Erdős Conjecture on f(n)",
+    "statement_text": "The upper bound $f(n) \\leq \\frac{c_2 n^{1/3}(\\log\\log n)^{1/3}}{(\\log n)^{1/3}}$ is closer to the true order of magnitude of $f(n)$ than the lower bound $f(n) \\geq \\frac{c_1 n^{1/3}}{\\log^{4/3} n}$, where $f(n)$ is the minimum number of colors needed to color the positive integers less than $n$ so that $n$ cannot be written as a monochromatic sum of distinct integers.",
+    "context_text": "After Erdős asked whether $f(n) = n^{1/3-o(1)}$, Alon and Erdős proved the two-sided bound $\\frac{c_1 n^{1/3}}{\\log^{4/3} n} \\leq f(n) \\leq \\frac{c_2 n^{1/3}(\\log\\log n)^{1/3}}{(\\log n)^{1/3}}$ and added that they suspect the upper bound is closer to the truth. Vu later refined the lower bound to $f(n) \\geq \\frac{c_1 n^{1/3}}{\\log n}$.",
+    "attributed_to": "Alon and Erdős",
+    "attributed_year": null,
+    "paper_contribution": "Theorem 1.5 confirms the conjecture by determining $f(n) = \\Theta\\!\\left(\\frac{n^{1/3}(n/\\varphi(n))}{(\\log n)^{1/3}(\\log\\log n)^{2/3}}\\right)$, showing the upper bound order is essentially correct and the lower bound is not sharp.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source — stated informally as a suspicion by Alon and Erdős; math reconstructed from garbled PDF.",
+    "arxiv_id": "2104.14766",
+    "paper_title": "Subset sums, completeness and colorings",
+    "paper_authors": [
+      "David Conlon",
+      "Jacob Fox",
+      "Huy Tuan Pham"
+    ],
+    "published": "2021-04-30",
+    "abs_url": "https://arxiv.org/abs/2104.14766",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Erdős–Graham Extremal Function Problem",
+    "statement_text": "Determine the exact value of the extremal function $f$ introduced by Erdős and Graham giving the maximum size of a subset of $[n]$ that avoids a given subset sum.",
+    "context_text": "Erdős and Graham introduced an extremal function studying the maximum size of a set of integers in $[n]$ that avoids a particular prescribed subset sum; also studied by Alon, Erdős, and Graham. The exact determination of this function was open.",
+    "attributed_to": "Erdős and Graham",
+    "attributed_year": null,
+    "paper_contribution": "The paper determines the extremal function exactly.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "PDF source — only briefly mentioned in abstract and introduction; full statement not visible in the provided text excerpt. Attributed also to Alon, Erdős, and Graham [1, 18].",
+    "arxiv_id": "2104.14766",
+    "paper_title": "Subset sums, completeness and colorings",
+    "paper_authors": [
+      "David Conlon",
+      "Jacob Fox",
+      "Huy Tuan Pham"
+    ],
+    "published": "2021-04-30",
+    "abs_url": "https://arxiv.org/abs/2104.14766",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Question on Homogeneous Strengthening of Szemerédi–Vu Theorem",
+    "statement_text": "Is there a homogeneous version of the Szemerédi–Vu theorem, i.e., does the conclusion that $\\Sigma(A)$ contains a long arithmetic progression hold under the additional requirement that the progression is witnessed monochromatically (or homogeneously) with respect to a coloring of $A$?",
+    "context_text": "Szemerédi and Vu proved that any subset $A$ of $[n]$ with $|A| \\geq C\\sqrt{n}$ that meets every infinite arithmetic progression contains a long arithmetic progression in $\\Sigma(A)$. A homogeneous strengthening of this result was asked for by Erdős and Sárközy, by Sárközy, and independently by Tran, Vu, and Wood.",
+    "attributed_to": "Erdős and Sárközy",
+    "attributed_year": null,
+    "paper_contribution": "The paper proves a homogeneous strengthening of the Szemerédi–Vu theorem, answering the question reiterated by multiple groups of authors.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "PDF source — question attributed to multiple groups: Erdős–Sárközy [22], Sárközy [36], and Tran–Vu–Wood [42]; precise statement not fully visible in the provided text excerpt.",
+    "arxiv_id": "2104.14766",
+    "paper_title": "Subset sums, completeness and colorings",
+    "paper_authors": [
+      "David Conlon",
+      "Jacob Fox",
+      "Huy Tuan Pham"
+    ],
+    "published": "2021-04-30",
+    "abs_url": "https://arxiv.org/abs/2104.14766",
+    "source": "pdf"
+  }
+]

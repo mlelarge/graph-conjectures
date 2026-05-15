@@ -1,0 +1,35 @@
+{
+  "review_id": "2310.04265__05",
+  "safe_id": "2310.04265",
+  "arxiv_id": "2310.04265",
+  "conjecture_title": "Conjecture 4.3 (Gyárfás-Sumner for Tournaments)",
+  "paper_title": "Clique number of tournaments",
+  "published": "2023-10-06",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The 'only if' direction of this biconditional conjecture was established in the source paper itself (Theorem 4.4), and the open 'if' direction was further reduced to the case of trees. No subsequent work proving the remaining implication has been found. A closely related follow-up by three of the four original authors (arXiv:2402.10782, revised January 2026) proves that deciding whether a tournament admits a forest-ordering — the right-hand-side structural condition — is NP-complete, indicating computational hardness around that condition but leaving the χ̄-binding implication open.",
+  "since_posted": [
+    {
+      "title": "Finding forest-orderings of tournaments is NP-complete",
+      "authors": "Pierre Aboulker, Guillaume Aubian, Raul Lopes",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2402.10782",
+      "arxiv_id": "2402.10782",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves that deciding whether a tournament admits an ordering whose backedge graph is a forest (the right-hand-side condition of Conjecture 4.3) is NP-complete, and connects this to dichromatic number and Erdős-Hajnal properties, but does not resolve the χ̄-binding implication."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "chi-binding tournament Gyarfas-Sumner backedge forest arXiv 2310.04265",
+    "dichromatic number tournament chi-bounded subtournament Aboulker Aubian Charbit Lopes 2024 2025",
+    "tournament chi-bounded backedge forest ordering NP-complete 2024 2025 graph theory",
+    "\"chi-binding\" OR \"χ-binding\" tournament \"forest-ordering\" 2024 2025 2026 Aboulker Aubian"
+  ],
+  "notes": "The conjecture as stated already has the 'only if' direction proved in the source paper (Theorem 4.4), so the genuinely open part is the 'if' direction, further reduced to trees. arXiv:2402.10782 establishes NP-completeness of detecting the forest-ordering condition but does not prove the χ̄-binding implication. The conjecture is the directed analogue of the undirected Gyárfás-Sumner conjecture, which is itself still open in general."
+}

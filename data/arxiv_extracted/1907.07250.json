@@ -1,0 +1,25 @@
+[
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Gap problem for 1-ball reconstruction threshold",
+    "statement_text": "Determine the correct threshold $q^*(n)$ such that almost every $q$-colouring of the hypercube $Q_n$ is reconstructible from the multiset of its coloured 1-balls, narrowing the gap between the lower bound $q = \\Omega(n)$ and the upper bound $q \\geq n^{2+\\varepsilon}$.",
+    "context_text": "Theorem 1.2 shows that for $q \\geq n^{2+\\varepsilon}$ almost every $q$-colouring of $Q_n$ is 1-distinguishable, while a counting argument shows that $\\Omega(n)$ colours are necessary for reconstruction from 1-balls. The authors note explicitly that 'it would be interesting to narrow the gap', with further discussion deferred to Section 6 (open questions).",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated informally in the introduction without a labelled environment: 'It is easy to show that Ω(n) colours are required for reconstructability, and it would be interesting to narrow the gap (see Sections 1.1 and 6 for further discussion).' Section 6, which reportedly contains further open questions, was not included in the provided text extract.",
+    "arxiv_id": "1907.07250",
+    "paper_title": "Shotgun reconstruction in the hypercube",
+    "paper_authors": [
+      "Michał Przykucki",
+      "Alexander Roberts",
+      "Alex Scott"
+    ],
+    "published": "2019-07-16",
+    "abs_url": "https://arxiv.org/abs/1907.07250",
+    "source": "pdf"
+  }
+]

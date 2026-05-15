@@ -1,0 +1,122 @@
+[
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Question 1.2",
+    "statement_text": "Could it be that $f(\\ell)=O(\\ell\\sqrt{\\log\\ell})$, matching the bound for standard minors from [Kos82, dlV83]?",
+    "context_text": "The authors define $f(\\ell)$ as the smallest integer $\\delta$ such that every graph of minimum degree at least $\\delta$ contains $K_{\\ell}$ as a cyclic minor. They prove $f(4)=3$, $6\\leq f(5)\\leq 8$, and more generally $f(\\ell)=O(\\ell^{2})$, and ask whether this quadratic bound can be improved to match the $O(\\ell\\sqrt{\\log\\ell})$ bound known for standard $K_\\ell$-minors.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2502.04726",
+    "paper_title": "Lollipops, dense cycles and chords",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Beatriz Martins",
+      "Stéphan Thomassé",
+      "Nicolas Trotignon"
+    ],
+    "published": "2025-10-10",
+    "abs_url": "https://arxiv.org/abs/2502.04726",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Question 4.1",
+    "statement_text": "Is there a simple criterion for a sequence of vertices to be an active path of $K_{n}$?",
+    "context_text": "The authors introduce active paths as a key tool in the lollipop method. They note that not every Hamiltonian path starting at $c_1$ is active: in $K_6$ with Hamiltonian cycle $(c_1,\\dots,c_6)$, the path $Q=c_1c_2c_5c_4c_3c_6$ is not active (there are 6 non-active paths among the 120 starting at $c_1$). The question asks for a simple characterisation of activity.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2502.04726",
+    "paper_title": "Lollipops, dense cycles and chords",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Beatriz Martins",
+      "Stéphan Thomassé",
+      "Nicolas Trotignon"
+    ],
+    "published": "2025-10-10",
+    "abs_url": "https://arxiv.org/abs/2502.04726",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Question 4.2",
+    "statement_text": "Is there a simple way to compute all the active vertices in the cycle of an optimal lollipop?",
+    "context_text": "Active vertices determine the number of distinct chords produced by the lollipop argument. In the lollipop argument, the number of distinct active vertices (and thus chords) increases with the girth $g$ of the host graph, motivating the search for an efficient procedure to identify them.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2502.04726",
+    "paper_title": "Lollipops, dense cycles and chords",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Beatriz Martins",
+      "Stéphan Thomassé",
+      "Nicolas Trotignon"
+    ],
+    "published": "2025-10-10",
+    "abs_url": "https://arxiv.org/abs/2502.04726",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Question 4.3",
+    "statement_text": "Is there a constant $c>0$ such that every graph with minimum degree 3 contains a cycle of length $\\ell$ with at least $c\\ell$ chords?",
+    "context_text": "While high minimum degree guarantees cycles with many chords, the authors ask whether minimum degree 3 alone suffices to guarantee a cycle whose chord count is proportional to its length. The disjoint union of copies of $K_4$ shows one cannot simply require many chords without controlling cycle length, motivating the search for a linearly-chorded cycle.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2502.04726",
+    "paper_title": "Lollipops, dense cycles and chords",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Beatriz Martins",
+      "Stéphan Thomassé",
+      "Nicolas Trotignon"
+    ],
+    "published": "2025-10-10",
+    "abs_url": "https://arxiv.org/abs/2502.04726",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Question 4.4",
+    "statement_text": "Is there a function $f$ that tends to $+\\infty$ such that every graph with minimum degree 3 contains a cycle of length $\\ell$ with at least $f(\\ell)$ chords?",
+    "context_text": "This is a relaxation of Question 4.3: instead of requiring $c\\ell$ chords, the authors ask only for a diverging (but possibly very slow) lower bound $f(\\ell)$ on the number of chords in terms of cycle length, for graphs of minimum degree 3. The authors note they are far from answering even this weaker version.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2502.04726",
+    "paper_title": "Lollipops, dense cycles and chords",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Beatriz Martins",
+      "Stéphan Thomassé",
+      "Nicolas Trotignon"
+    ],
+    "published": "2025-10-10",
+    "abs_url": "https://arxiv.org/abs/2502.04726",
+    "source": "html"
+  }
+]

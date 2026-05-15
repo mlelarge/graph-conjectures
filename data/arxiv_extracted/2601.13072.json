@@ -1,0 +1,25 @@
+[
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Problem 1",
+    "statement_text": "Can 3-colouring be solved on diameter-2 graphs in quasi-polynomial time?",
+    "context_text": "The paper improves the algorithm for 3-colouring diameter-3 graphs, leaving the complexity of 3-colouring diameter-2 graphs as the main outstanding challenge. The authors note this is one of the two 'notorious' open cases identified by Paulusma, and that the polynomial-time solvability of 3-colouring on diameter-2 graphs is the most intriguing open problem in the area. The quasi-polynomial formulation is highlighted as an explicit intermediate target.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2601.13072",
+    "paper_title": "Faster 3-colouring algorithm for graphs of diameter 3",
+    "paper_authors": [
+      "Carla Groenland",
+      "Hidde Koerts",
+      "Sophie Spirkl"
+    ],
+    "published": "2026-01-19",
+    "abs_url": "https://arxiv.org/abs/2601.13072",
+    "source": "html"
+  }
+]

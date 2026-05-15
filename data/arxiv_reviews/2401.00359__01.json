@@ -1,0 +1,23 @@
+{
+  "review_id": "2401.00359__01",
+  "safe_id": "2401.00359",
+  "arxiv_id": "2401.00359",
+  "conjecture_title": "Conjecture 6.2",
+  "paper_title": "Ramsey and Turán numbers of sparse hypergraphs",
+  "published": "2023-12-31",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 6.2 from arXiv:2401.00359 asserts that for every k-uniform k-partite hypergraph H there exists a constant c_k > 0 such that the Turán exponent is controlled by d_max(H) = max_{1 ≤ i < k} d_i(H), refining Theorem 1.4 which gives bounds in terms of the coarser quantity d_1(H). No follow-up paper resolving or substantially advancing this conjecture was found in the indexed literature as of May 2026; the conjecture appears to remain fully open.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "arXiv 2401.00359 Fox Sankar Simkin Tidor Zhou Turán hypergraph d_max conjecture",
+    "Turán exponent k-uniform k-partite hypergraph d_max degeneracy Fox Sankar 2024 2025",
+    "Turán number hypergraph d_max k-partite exponent 2024 2025 arXiv",
+    "Fox Sankar Tidor sparse hypergraphs Turán conjecture follow-up 2024 2025 Conjecture 6.2 OR d_max OR skeletal degeneracy"
+  ],
+  "notes": "No follow-up found after five web queries. The conjecture was posted December 2023 and asks whether d_max(H) = max_{1 ≤ i < k} d_i(H) controls the Turán exponent for k-uniform k-partite hypergraphs; Theorem 1.4 of the same paper establishes matching upper and lower bounds only in terms of the 1-skeleton degeneracy d_1(H), leaving a polynomial gap between the two bounds that motivates the conjecture. The related paper arXiv:2510.07997 on apex partite hypergraphs (2025) addresses a conjecture of Lee rather than Conjecture 6.2."
+}

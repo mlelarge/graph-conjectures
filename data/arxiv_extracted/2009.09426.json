@@ -1,0 +1,71 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Erdős-Hajnal Conjecture (Conjecture 1.1)",
+    "statement_text": "For every graph $H$, there exists $c > 0$ such that every $H$-free graph $G$ satisfies $\\alpha(G)\\omega(G) \\geq |G|^c$.",
+    "context_text": "The Erdős-Hajnal conjecture is the central motivation for the study of pure pairs and the strong Erdős-Hajnal property. The paper proves bipartite analogues of the strong Erdős-Hajnal property for forest bigraphs, extending the pure-pairs programme introduced in earlier work in the series.",
+    "attributed_to": "Erdős and Hajnal",
+    "attributed_year": null,
+    "paper_contribution": "Proves bipartite analogues of the strong Erdős-Hajnal property (Theorems 1.5 and 1.6), establishing that excluding a forest bigraph and its bicomplement forces linear-sized pure pairs in each part, and providing one-sided sparse versions; these results imply bipartite Erdős-Hajnal-type bounds.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Labeled explicitly as 'Conjecture 1.1' in the paper with attribution to references [6,7]. The paper's central contribution is the bipartite analogue rather than a direct special case of the EH conjecture itself.",
+    "arxiv_id": "2009.09426",
+    "paper_title": "Pure pairs. IV. Trees in bipartite graphs",
+    "paper_authors": [
+      "Alex Scott",
+      "Paul Seymour",
+      "Sophie Spirkl"
+    ],
+    "published": "2023-03-03",
+    "abs_url": "https://arxiv.org/abs/2009.09426",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Alecu-Atminas-Lozin-Zamaraev / Axenovich-Tompkins-Weber Bipartite Strong Erdős-Hajnal Conjecture",
+    "statement_text": "For every forest bigraph $H$ with bicomplement $J$, there exists $\\varepsilon > 0$ such that, if $G$ is a bigraph that is both $H$-free and $J$-free, then there is a pure pair $(Z_1, Z_2)$ in $G$ with $Z_i \\subseteq V_i(G)$ and $|Z_i| \\geq \\varepsilon|V_i(G)|$ for $i = 1, 2$.",
+    "context_text": "This conjecture posits the bipartite analogue of the strong Erdős-Hajnal property: excluding a forest bigraph and its bicomplement forces a linear-sized pure pair in each part of a bigraph. It was independently conjectured by Alecu, Atminas, Lozin and Zamaraev [1] and by Axenovich, Tompkins and Weber [3], and the paper states it is proved in full as the main result (Theorem 1.5).",
+    "attributed_to": "Alecu, Atminas, Lozin, and Zamaraev; Axenovich, Tompkins, and Weber",
+    "attributed_year": null,
+    "paper_contribution": "Proves the conjecture in full as the main result of the paper (Theorem 1.5), establishing the bipartite strong Erdős-Hajnal property for all forest bigraphs, and also proves one-sided sparse and not-very-dense variants (Theorems 1.6 and 1.7).",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "The conjecture is not given a dedicated labeled theorem environment in the extracted text but is explicitly named as a conjecture of those authors and identified as the paper's main result.",
+    "arxiv_id": "2009.09426",
+    "paper_title": "Pure pairs. IV. Trees in bipartite graphs",
+    "paper_authors": [
+      "Alex Scott",
+      "Paul Seymour",
+      "Sophie Spirkl"
+    ],
+    "published": "2023-03-03",
+    "abs_url": "https://arxiv.org/abs/2009.09426",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Korándi-Pach-Tomon Conjecture (ordered bigraphs)",
+    "statement_text": "The statement of Theorem 1.7 still holds when $G$ and $H$ are ordered bigraphs (bigraphs $G$ with fixed linear orders on $V_1(G)$ and on $V_2(G)$) and containment is required to respect the linear orders: for every forest ordered bigraph $H$ and every $\\tau$ with $0 < \\tau \\leq 1$, there exists $\\varepsilon > 0$ such that if $G$ is an $H$-free ordered bigraph with at most $(1-\\tau)|V_1(G)|\\cdot|V_2(G)|$ edges, then there are anticomplete sets $Z_i \\subseteq V_i(G)$ with $|Z_i| \\geq \\varepsilon|V_i(G)|$ for $i = 1, 2$.",
+    "context_text": "Korándi, Pach and Tomon [10] made a much stronger conjecture than Theorem 1.7, asking that the sparse-bigraph result extend to the ordered setting (equivalently, to 0-1 matrices with the Zarankiewicz-type forbidden pattern condition). The paper explicitly notes this conjecture remains open and refers the reader to a companion paper [12] for further discussion.",
+    "attributed_to": "Korándi, Pach, and Tomon",
+    "attributed_year": null,
+    "paper_contribution": "No progress is made on this conjecture in the paper; it is highlighted as an important open problem that goes beyond the main results.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "Statement reconstructed from prose description; not given in a labeled theorem environment. Described by the paper as 'much stronger' than Theorem 1.7 and explicitly noted to remain open.",
+    "arxiv_id": "2009.09426",
+    "paper_title": "Pure pairs. IV. Trees in bipartite graphs",
+    "paper_authors": [
+      "Alex Scott",
+      "Paul Seymour",
+      "Sophie Spirkl"
+    ],
+    "published": "2023-03-03",
+    "abs_url": "https://arxiv.org/abs/2009.09426",
+    "source": "pdf"
+  }
+]

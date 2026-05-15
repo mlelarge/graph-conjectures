@@ -1,0 +1,27 @@
+[
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 2",
+    "statement_text": "For every graph $H$, $\\chi_{\\_{\\Delta}}(\\mathcal{G}_{\\_{H}}^{\\text{odd}}) = \\chi_{\\_{\\star}}(\\mathcal{G}_{\\_{H}}^{\\text{odd}}) = \\overline{\\operatorname{td}}(H)-1$.",
+    "context_text": "Theorem 1 establishes the chain $\\overline{\\operatorname{td}}(H)-1=\\chi_{\\_{\\Delta}}(\\mathcal{G}_{\\_{H}})\\leqslant\\chi_{\\_{\\Delta}}(\\mathcal{G}_{\\_{H}}^{\\text{odd}})\\leqslant\\chi_{\\_{\\star}}(\\mathcal{G}_{\\_{H}}^{\\text{odd}})\\leqslant 3\\cdot 2^{\\overline{\\operatorname{td}}(H)}-4$. Conjecture 2 posits that both the defective and clustered chromatic numbers of $H$-odd-minor-free graphs equal the lower bound $\\overline{\\operatorname{td}}(H)-1$, closing the exponential gap left by the main theorem.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "The STATEMENT field in the source shows only the opening quantifier 'For every graph $H$,' — the full predicate is reconstructed from the established upper/lower bounds in the surrounding context (CONTEXT_BEFORE) and the standard form such conjectures take in this literature; mathematical content may be partially inferred.",
+    "arxiv_id": "2308.15721",
+    "paper_title": "Clustered Colouring of Odd-$H$-Minor-Free Graphs",
+    "paper_authors": [
+      "Robert Hickingbotham",
+      "Dong Yeap Kang",
+      "Sang-il Oum",
+      "Raphael Steiner",
+      "David R. Wood"
+    ],
+    "published": "2024-10-18",
+    "abs_url": "https://arxiv.org/abs/2308.15721",
+    "source": "html"
+  }
+]

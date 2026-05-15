@@ -1,0 +1,45 @@
+{
+  "review_id": "2410.16495__00",
+  "safe_id": "2410.16495",
+  "arxiv_id": "2410.16495",
+  "conjecture_title": "Question 1.1",
+  "paper_title": "Induced subgraphs and tree decompositions XVI. Complete bipartite induced minors",
+  "published": "2026-02-18",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Question 1.1 is the central programmatic goal of the entire 'Induced subgraphs and tree decompositions' series and remains fully open as of 2026. The series now extends through at least paper XIX, with each installment adding structural tools or resolving important special cases. Paper XIX (arXiv:2506.05602) proves a polynomial treewidth bound for theta-free hereditary classes excluding line graphs of wall subdivisions, while arXiv:2507.06169 provides a simpler construction of layered-wheel-like graphs, the obstruction class identified as the last major barrier. A complete characterization of the unavoidable induced subgraphs for arbitrary large treewidth has not yet been achieved.",
+  "since_posted": [
+    {
+      "title": "Induced subgraphs and tree decompositions XIX. Thetas and forests",
+      "authors": "Maria Chudnovsky, Sepehr Hajebi, Sophie Spirkl",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2506.05602",
+      "arxiv_id": "2506.05602",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves treewidth is polynomially bounded by clique number in hereditary classes that are theta-free and exclude line graphs of subdivisions of some wall, making partial progress toward the full characterization sought by Question 1.1."
+    },
+    {
+      "title": "A simple layered-wheel-like construction",
+      "authors": "Authors unconfirmed from fetch",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2507.06169",
+      "arxiv_id": "2507.06169",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Constructs layered-wheel-like graphs achieving high girth with bounded outerstring treewidth, providing a simpler approach to the obstruction class identified as the last barrier to a complete induced-subgraph/treewidth characterization; also disproves a conjecture of Trotignon."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "induced subgraphs treewidth unavoidable obstructions Chudnovsky Hajebi Spirkl 2410.16495",
+    "induced subgraphs tree decompositions large treewidth complete bipartite subdivided wall layered wheels 2025 2026",
+    "Chudnovsky Hajebi Spirkl induced subgraphs tree decompositions treewidth characterization 2025 2026 survey complete"
+  ],
+  "notes": "Question 1.1 is a broad programmatic question rather than a specific yes/no conjecture; it is the stated central goal of the series and is addressed incrementally across each installment. Paper XVIII (arXiv:2412.17756, December 2024, same year as the source paper's arXiv posting) fully resolves the analogous question for pathwidth but is not included in since_posted as it falls in the same calendar year as the source preprint. Layered wheels are explicitly identified in the surrounding context as the last remaining non-basic obstruction class requiring full treatment."
+}

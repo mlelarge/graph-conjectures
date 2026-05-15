@@ -1,0 +1,163 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Bollobás–Erdős–Tuza Conjecture (Conjecture 1.1)",
+    "statement_text": "For every real $\\delta>0$, every graph $G$ with $\\alpha(G)\\geq\\delta|V(G)|$ satisfies $\\eta(G)\\leq o(|V(G)|)$.",
+    "context_text": "Bollobás, Erdős and Tuza raised this conjecture asserting that any graph with a stable set larger than a constant fraction of the vertex set has a hitting set of all maximum stable sets that is sublinear in the number of vertices. The conjecture is still open; Hajnal proved it for $\\delta>1/2$, and Alon provided constructions showing $\\eta(G)$ can be arbitrarily large even when $\\alpha(G)$ is linear in $|V(G)|$.",
+    "attributed_to": "Bollobás, Erdős and Tuza",
+    "attributed_year": 1994,
+    "paper_contribution": "The paper introduces the $\\eta$-boundedness framework as a structured approach to this conjecture, and proves $\\eta$-boundedness for several hereditary graph classes (including $P_5$-free graphs of bounded clique number), contributing indirectly to the study of Conjecture 1.1 for graphs of bounded chromatic number.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2302.04986",
+    "paper_title": "Hitting all maximum stable sets in $P_5$-free graphs",
+    "paper_authors": [
+      "Sepehr Hajebi",
+      "Yanjia Li",
+      "Sophie Spirkl"
+    ],
+    "published": "2024-01-16",
+    "abs_url": "https://arxiv.org/abs/2302.04986",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.8",
+    "statement_text": "For every forest $H$, there exists a function $f:\\mathbb{N}\\rightarrow\\mathbb{N}$ such that every $H$-free graph $G$ satisfies $\\eta(G)\\leq f(\\omega(G))$.",
+    "context_text": "Proposed as an analogue of the Gyárfás–Sumner conjecture ($\\chi$-boundedness) for $\\eta$-boundedness: just as $H$-free graphs are conjectured to be $\\chi$-bounded for every forest $H$, the authors conjecture the same for $\\eta$-boundedness. The paper proves this conjecture for an assortment of special forests, including stars and paths $P_t$ with $t\\leq 5$.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2302.04986",
+    "paper_title": "Hitting all maximum stable sets in $P_5$-free graphs",
+    "paper_authors": [
+      "Sepehr Hajebi",
+      "Yanjia Li",
+      "Sophie Spirkl"
+    ],
+    "published": "2024-01-16",
+    "abs_url": "https://arxiv.org/abs/2302.04986",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.13",
+    "statement_text": "For every integer $t\\geq 6$, the class of $P_{t}$-free graphs is $\\eta$-bounded.",
+    "context_text": "After proving $\\eta$-boundedness for $P_5$-free graphs (Theorem 1.12), the authors note that it remains open whether $P_t$-free graphs are $\\eta$-bounded for $t\\geq 6$, and state this as a conjecture paralleling the known $\\chi$-boundedness of $P_t$-free graphs for all $t$.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2302.04986",
+    "paper_title": "Hitting all maximum stable sets in $P_5$-free graphs",
+    "paper_authors": [
+      "Sepehr Hajebi",
+      "Yanjia Li",
+      "Sophie Spirkl"
+    ],
+    "published": "2024-01-16",
+    "abs_url": "https://arxiv.org/abs/2302.04986",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.16",
+    "statement_text": "For every forest $H$, there exists $d\\in\\mathbb{N}$ such that every $H$-free graph $G$ satisfies $\\eta(G)\\leq\\omega(G)^{d}$.",
+    "context_text": "A polynomial strengthening of Conjecture 1.8, proposed in connection with the Erdős–Hajnal conjecture. The authors note that the analogous polynomial strengthening of the Gyárfás–Sumner conjecture is also open, and that there exist $\\chi$-bounded classes that are not polynomially $\\chi$-bounded.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2302.04986",
+    "paper_title": "Hitting all maximum stable sets in $P_5$-free graphs",
+    "paper_authors": [
+      "Sepehr Hajebi",
+      "Yanjia Li",
+      "Sophie Spirkl"
+    ],
+    "published": "2024-01-16",
+    "abs_url": "https://arxiv.org/abs/2302.04986",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.17",
+    "statement_text": "There exists $d\\in\\mathbb{N}$ such that every $P_{5}$-free graph $G$ satisfies $\\eta(G)\\leq\\omega(G)^{d}$.",
+    "context_text": "A special case of Conjecture 1.16 singled out because of its connection to the Erdős–Hajnal conjecture: by Theorem 1.6, a polynomial $\\eta$-bound for $P_5$-free graphs would imply the Erdős–Hajnal conjecture for $P_5$-free graphs. The bound in the paper's main theorem (Theorem 1.12) is super-exponential.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2302.04986",
+    "paper_title": "Hitting all maximum stable sets in $P_5$-free graphs",
+    "paper_authors": [
+      "Sepehr Hajebi",
+      "Yanjia Li",
+      "Sophie Spirkl"
+    ],
+    "published": "2024-01-16",
+    "abs_url": "https://arxiv.org/abs/2302.04986",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.20",
+    "statement_text": "For every integer $t\\geq 3$, $M_{t}$-free graphs are polynomially $\\eta$-bounded.",
+    "context_text": "Proposed as a strengthening of Theorem 1.19; the authors note that it is not even known whether $M_3$-free graphs are $\\eta$-bounded, making this a particularly bold conjecture even for the base case.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2302.04986",
+    "paper_title": "Hitting all maximum stable sets in $P_5$-free graphs",
+    "paper_authors": [
+      "Sepehr Hajebi",
+      "Yanjia Li",
+      "Sophie Spirkl"
+    ],
+    "published": "2024-01-16",
+    "abs_url": "https://arxiv.org/abs/2302.04986",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Open problem on $\\eta$-boundedness for disjoint union of two stars",
+    "statement_text": "It remains open whether the disjoint union of two stars satisfies Conjecture 1.8, i.e., whether the class of $(S_{a}\\cup S_{b})$-free graphs is $\\eta$-bounded for all $a,b\\geq 1$.",
+    "context_text": "For the Gyárfás–Sumner conjecture, $\\chi$-boundedness of an $H$-free class reduces to $\\chi$-boundedness of the component-free classes. The authors do not know whether the analogous reduction holds for Conjecture 1.8, and in particular whether the disjoint union of two stars satisfies $\\eta$-boundedness.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated as 'it remains open' in prose following Conjecture 1.13, without a labelled environment.",
+    "arxiv_id": "2302.04986",
+    "paper_title": "Hitting all maximum stable sets in $P_5$-free graphs",
+    "paper_authors": [
+      "Sepehr Hajebi",
+      "Yanjia Li",
+      "Sophie Spirkl"
+    ],
+    "published": "2024-01-16",
+    "abs_url": "https://arxiv.org/abs/2302.04986",
+    "source": "html"
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "review_id": "2204.10119__00",
+  "safe_id": "2204.10119",
+  "arxiv_id": "2204.10119",
+  "conjecture_title": "Conjecture 1.3",
+  "paper_title": "Bipartite graphs with no $K_6$ minor",
+  "published": "2022-04-21",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 1.3 of arXiv:2204.10119 asks whether every non-null 6-regular graph has a $K_6$ minor. The source paper proves the bipartite analogue (every bipartite graph with minimum degree at least six has a $K_6$ minor), but the general 6-regular case remains open. The authors note the existence of $K_6$-minor-free graphs with minimum degree six and maximum degree at most nine, showing that minimum degree six alone is insufficient for general graphs — so 6-regularity (fixing both minimum and maximum degree to six) is the precise boundary being tested. No follow-up paper resolving this conjecture was found in the indexed literature as of May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "6-regular graph K6 minor conjecture Chudnovsky Scott Seymour Spirkl",
+    "arXiv 2204.10119 \"K_6 minor\" bipartite follow-up",
+    "\"6-regular\" \"K_6 minor\" OR \"K6 minor\" graph conjecture 2023 2024 2025",
+    "Seymour \"6-regular\" \"K_6\" minor graph theory 2024 2025 arxiv"
+  ],
+  "notes": "No follow-up found. The conjecture is stated explicitly as Conjecture 1.3 in the source paper. The source paper itself resolves the bipartite case (its main theorem), but the 6-regular general case is left open. A wide search across Seymour's publications page and general arXiv/journal databases returned no resolution. Open with high confidence given the conjecture is recent (2022) and the bipartite special case required a substantial paper in its own right."
+}

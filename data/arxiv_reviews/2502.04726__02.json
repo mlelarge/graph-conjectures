@@ -1,0 +1,22 @@
+{
+  "review_id": "2502.04726__02",
+  "safe_id": "2502.04726",
+  "arxiv_id": "2502.04726",
+  "conjecture_title": "Question 4.2",
+  "paper_title": "Lollipops, dense cycles and chords",
+  "published": "2025-10-10",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Question 4.2 from arXiv:2502.04726 asks whether there is a simple way to compute all active vertices in the cycle of an optimal lollipop; it appears in the concluding open problems section of the paper. The paper itself establishes that finding an optimal lollipop is NP-hard (solving it in polynomial time would imply finding a Hamiltonian cycle in polynomial time), and provides a weaker polynomial-time procedure that finds only sufficiently many active paths with distinct ends. No follow-up work addressing this specific algorithmic question was found in a broad web search conducted in May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "active vertices optimal lollipop cycle chords girth graph theory 2502.04726",
+    "Dvorak Martins Thomasse Trotignon lollipop dense cycles chords active vertices 2025 2026",
+    "arxiv citing 2502.04726 lollipop optimal chords graph 2025 2026"
+  ],
+  "notes": "No follow-up found. The question is inherently tied to NP-hardness of optimal lollipop computation, making a simple closed-form characterization of active vertices unlikely without additional structural assumptions. Paper 2502.10657 (Chords of longest cycles passing through a specified small set) uses related lollipop-style techniques but does not address Question 4.2."
+}

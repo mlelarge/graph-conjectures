@@ -1,0 +1,71 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.4 (Ordered Binary Matrix Removal Lemma)",
+    "statement_text": "For any finite family $\\mathcal{F}$ of ordered binary matrices and any $\\varepsilon > 0$ there exists $\\delta = \\delta(\\mathcal{F}, \\varepsilon)$ such that any $n \\times n$ binary matrix which is $\\varepsilon$-far from $\\mathcal{F}$-freeness contains at least $\\delta n^{a+b}$ copies of some $a \\times b$ matrix from $\\mathcal{F}$.",
+    "context_text": "Alon, Fischer and Newman obtained an efficient conditional regularity lemma for ordered binary matrices and conjectured that it could be used to yield a removal lemma for ordered binary matrices. This paper proves Theorem 1.8, an infinite ordered matrix removal lemma that settles a generalized form of this conjecture, extending it to finite or infinite families over any finite alphabet.",
+    "attributed_to": "Alon, Fischer and Newman",
+    "attributed_year": 2007,
+    "paper_contribution": "Proves Theorem 1.8 (Infinite Ordered Matrix Removal Lemma), which settles a generalized form of this conjecture for any finite or infinite family of ordered matrices over any finite alphabet $\\Sigma$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1704.02367",
+    "paper_title": "Testing hereditary properties of ordered graphs and matrices",
+    "paper_authors": [
+      "Noga Alon",
+      "Omri Ben-Eliezer",
+      "Eldar Fischer"
+    ],
+    "published": "2017-04-07",
+    "abs_url": "https://arxiv.org/abs/1704.02367",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Open Problem: Regularity-free proof for the ordered removal lemma",
+    "statement_text": "It will be interesting to try to obtain a proof for the ordered graph removal lemma that does not go through the strong regularity lemma needed in the current proof.",
+    "context_text": "The proofs of the ordered removal lemmas rely on strong variants of the graph regularity lemma, which impose a wowzer-type (tower-of-towers) dependence between the parameters $\\delta^{-1}$ and $\\varepsilon^{-1}$. Fox gave the first regularity-free proof of the unordered graph removal lemma, though still with tower-type dependence; an analogous approach for the ordered setting remains open.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated as a research direction in Section 1.3 without a formal labelled environment.",
+    "arxiv_id": "1704.02367",
+    "paper_title": "Testing hereditary properties of ordered graphs and matrices",
+    "paper_authors": [
+      "Noga Alon",
+      "Omri Ben-Eliezer",
+      "Eldar Fischer"
+    ],
+    "published": "2017-04-07",
+    "abs_url": "https://arxiv.org/abs/1704.02367",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Open Problem: Better parameter dependence for ordered binary matrix removal",
+    "statement_text": "It will be interesting to combine the ideas from the current proof with the binary matrix regularity lemma of Alon, Fischer and Newman to obtain a removal lemma for finite families of ordered binary matrices with better dependence between the parameters $\\delta^{-1}$ and $\\varepsilon^{-1}$; ideally polynomial dependence, but even exponential dependence would be interesting.",
+    "context_text": "For ordered binary matrices, Alon, Fischer and Newman obtained an efficient conditional regularity lemma in which $\\delta^{-1}$ is polynomial in $\\varepsilon^{-1}$. The general ordered removal lemma proved in this paper inherits a wowzer-type dependence from the strong regularity lemma, and improving this for finite families of ordered binary matrices is posed as an open problem.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated as a research direction in Section 1.3 without a formal labelled environment.",
+    "arxiv_id": "1704.02367",
+    "paper_title": "Testing hereditary properties of ordered graphs and matrices",
+    "paper_authors": [
+      "Noga Alon",
+      "Omri Ben-Eliezer",
+      "Eldar Fischer"
+    ],
+    "published": "2017-04-07",
+    "abs_url": "https://arxiv.org/abs/1704.02367",
+    "source": "pdf"
+  }
+]

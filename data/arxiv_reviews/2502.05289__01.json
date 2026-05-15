@@ -1,0 +1,22 @@
+{
+  "review_id": "2502.05289__01",
+  "safe_id": "2502.05289",
+  "arxiv_id": "2502.05289",
+  "conjecture_title": "Informal Question on Complexity Gap Between Induced Disjoint Paths Variants",
+  "paper_title": "Induced Disjoint Paths Without an Induced Minor",
+  "published": "2025-02-07",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The informal question asks whether there is a hereditary graph class separating the complexity of Induced k-Disjoint Paths (NP-complete) from Induced Disjoint S–T Paths with |S|=|T|=k (polynomial), with k=2 being the focal case. The source paper (ICALP 2025) motivates this by observing that known polynomial algorithms tend to cover the linkage variant broadly while hardness reductions tend to cover the flow variant; no follow-up resolving or making progress on this separation question was found in the literature as of May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Induced Disjoint Paths hereditary graph class complexity NP-complete polynomial Aboulker Bonnet Trotignon 2502.05289",
+    "induced disjoint paths linkage flow complexity separation hereditary class NP-complete polynomial 2025",
+    "\"Induced Disjoint Paths\" \"S-T paths\" complexity gap hereditary class 2025 2026 Aboulker Bonnet Picavet Trotignon"
+  ],
+  "notes": "No follow-up found. The conjecture is recent (February 2025, ICALP 2025, DOI 10.4230/LIPIcs.ICALP.2025.4); absence of evidence for resolution is credible at this stage. The DROPS page lists no citing papers that address this open question."
+}

@@ -1,0 +1,34 @@
+{
+  "review_id": "1908.06300__00",
+  "safe_id": "1908.06300",
+  "arxiv_id": "1908.06300",
+  "conjecture_title": "Conjecture on polynomial-time solvability of bounded sub-determinant integer programs",
+  "paper_title": "The stable set problem in graphs with bounded genus and bounded odd cycle packing number",
+  "published": "2019-08-17",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The conjecture has two components: the general claim that all bounded sub-determinant integer programs are polynomial-time solvable, and the specific claim that the stable set problem is polynomial for every fixed odd cycle packing bound $k$. The latter was settled by arXiv:2106.05947 (FOCS 2021), which gives the first polynomial-time algorithm for the weighted stable set problem on graphs with at most $k$ vertex-disjoint odd cycles for any constant $k$, extending the previously known cases $k=0$ (bipartite) and $k=1$. The broader claim about all bounded sub-determinant IPs remains open in full generality; known positive results cover bimodular matrices and matrices with at most two nonzero entries per row.",
+  "since_posted": [
+    {
+      "title": "Integer programs with bounded subdeterminants and two nonzeros per row",
+      "authors": "authors unverified; see arXiv:2106.05947",
+      "year": 2021,
+      "venue": "Proceedings of the 2021 IEEE 62nd Annual Symposium on Foundations of Computer Science (FOCS), pages 13-24",
+      "url": "https://arxiv.org/abs/2106.05947",
+      "arxiv_id": "2106.05947",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves the first polynomial-time algorithm for the weighted stable set problem on graphs with at most k vertex-disjoint odd cycles (any constant k), thereby resolving the graph-theoretic 'in particular' part of the conjecture; the general bounded sub-determinant IP claim is addressed only for coefficient matrices with at most two nonzero entries per row."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "bounded sub-determinants integer programs polynomial time solvable conjecture",
+    "odd cycle packing number stable set polynomial time graph 1908.06300",
+    "stable set odd cycle packing number polynomial algorithm 2020 2021 2022 2023 2024 2025"
+  ],
+  "notes": "The 'in particular' part of the conjecture (stable set polynomial for every fixed ocp bound k) is proved by arXiv:2106.05947 (FOCS 2021). The broader conjecture that all bounded sub-determinant IPs are polynomial remains open; partial progress includes bimodular matrices (Artmann-Weismantel-Zenklusen, STOC 2017) and matrices with two nonzeros per row (arXiv:2106.05947). Authors of 2106.05947 could not be confirmed from fetched abstract content; the URL was verified via two WebFetch calls."
+}

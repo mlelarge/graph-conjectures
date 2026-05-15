@@ -1,0 +1,74 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1 (Kreutzer, Oum, Seymour, van der Zypen and Wood)",
+    "statement_text": "Every digraph is majority 3-colorable.",
+    "context_text": "Kreutzer, Oum, Seymour, van der Zypen and Wood proved every digraph is majority 4-colorable and conjectured the bound can be reduced to 3. Odd directed cycles show at least 3 colors are sometimes necessary, but no digraph requiring 4 colors is known. The paper's main motivation is to verify this conjecture for sparse digraphs, complementing existing probabilistic results for dense digraphs.",
+    "attributed_to": "Kreutzer, Oum, Seymour, van der Zypen and Wood",
+    "attributed_year": 2017,
+    "paper_contribution": "Proves the conjecture for digraphs with chromatic number at most 6 or dichromatic number at most 3; proves the stronger majority 3-choosability for digraphs with $\\Delta^+(D) \\leq 4$ or $\\Delta(D) \\leq 7$, which covers 3-regular and 4-regular digraphs.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1911.01954",
+    "paper_title": "Majority Colorings of Sparse Digraphs",
+    "paper_authors": [
+      "Michael Anastos",
+      "Ander Lamaison",
+      "Raphael Steiner",
+      "Tibor Szabó"
+    ],
+    "published": "2019-11-05",
+    "abs_url": "https://arxiv.org/abs/1911.01954",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Fractional Majority Coloring Weight Question (Kreutzer et al.)",
+    "statement_text": "What is the smallest constant $K$ such that every digraph admits a fractional majority coloring with total weight at most $K$?",
+    "context_text": "Kreutzer et al. introduced fractional majority coloring as an LP-relaxation of majority coloring and raised the question of determining the optimal constant $K$. The trivial bound $K \\leq 4$ follows from majority 4-colorability; proving $K \\leq 3$ would be an easier analogue of the majority 3-coloring conjecture.",
+    "attributed_to": "Kreutzer, Oum, Seymour, van der Zypen and Wood",
+    "attributed_year": 2017,
+    "paper_contribution": "Shows $K \\leq 3.9602$ (Theorem 6) via a probabilistic coloring with deterministic alteration; also shows that every digraph $D$ with $\\delta^+(D) \\geq C(1/\\varepsilon)^2 \\ln(2/\\varepsilon)$ has a fractional majority $(2+\\varepsilon)$-coloring (Theorem 7).",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1911.01954",
+    "paper_title": "Majority Colorings of Sparse Digraphs",
+    "paper_authors": [
+      "Michael Anastos",
+      "Ander Lamaison",
+      "Raphael Steiner",
+      "Tibor Szabó"
+    ],
+    "published": "2019-11-05",
+    "abs_url": "https://arxiv.org/abs/1911.01954",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Majority 2-Colorability Recognition Question (Kreutzer et al.)",
+    "statement_text": "Is there a characterisation of digraphs that have a majority 2-coloring, or a polynomial time algorithm to recognise such digraphs?",
+    "context_text": "Kreutzer et al. posed the question of whether majority 2-colorable digraphs admit an efficient recognition algorithm or a structural characterisation. The paper answers this negatively, resolving the open problem.",
+    "attributed_to": "Kreutzer, Oum, Seymour, van der Zypen and Wood",
+    "attributed_year": 2017,
+    "paper_contribution": "Answers the question negatively by proving that deciding whether a given digraph is majority 2-colorable is NP-complete (Theorem 9).",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Section 6 of the paper, which reportedly contains additional open problems posed by the authors, was not included in the provided text and could not be extracted.",
+    "arxiv_id": "1911.01954",
+    "paper_title": "Majority Colorings of Sparse Digraphs",
+    "paper_authors": [
+      "Michael Anastos",
+      "Ander Lamaison",
+      "Raphael Steiner",
+      "Tibor Szabó"
+    ],
+    "published": "2019-11-05",
+    "abs_url": "https://arxiv.org/abs/1911.01954",
+    "source": "pdf"
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "review_id": "2509.09035__00",
+  "safe_id": "2509.09035",
+  "arxiv_id": "2509.09035",
+  "conjecture_title": "Informal question: validity of Conjecture 1.2 for trees and planar graphs",
+  "paper_title": "Asymptotic structure. III. Excluding a fat tree",
+  "published": "2025-09-13",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 1.2 of Georgakopoulos and Papasoglu — that fat-$H$-minor-free graphs are quasi-isometric to $H$-minor-free graphs — was disproved in general by Davies, Hickingbotham, Illingworth, and McCarty with a counterexample $H$ containing a clique of size 15. The source paper (arXiv:2509.09035) proves a weaker result for trees: fat-tree-minor-free graphs admit quasi-isometries to graphs of bounded line-width, but the full conjecture for $H$ a tree or planar graph remains open. No follow-up resolving the tree or planar special case was found in the indexed literature as of May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Georgakopoulos Papasoglu conjecture minor tree planar graph asymptotic structure",
+    "Nguyen Scott Seymour \"fat tree\" \"line-width\" \"Conjecture 1.2\" tree planar 2025",
+    "Georgakopoulos Papasoglu \"graph minors metric spaces\" conjecture fat minor tree quasi-isometric 2025 2026"
+  ],
+  "notes": "The question is raised informally in arXiv:2509.09035 (September 2025). The paper's own main result handles trees but with a strictly weaker conclusion (quasi-isometry to bounded line-width rather than to H-minor-free), so Conjecture 1.2 for H a tree or H planar remains open. A related April 2026 paper (arXiv:2604.11318, Bonnet–Le–Pilipczuk–Pilipczuk) on coarse balanced separators in fat-minor-free graphs was found but its abstract does not address this specific conjecture."
+}

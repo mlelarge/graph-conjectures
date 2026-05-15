@@ -1,0 +1,23 @@
+{
+  "review_id": "1802.03727__03",
+  "safe_id": "1802.03727",
+  "arxiv_id": "1802.03727",
+  "conjecture_title": "Conjecture 1.6",
+  "paper_title": "Separation choosability and dense bipartite induced subgraphs",
+  "published": "2018-12-04",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "No resolution of Conjecture 1.6 was found in the literature. The closely related triangle-free variant (Conjecture 1.4 of the same paper) was addressed asymptotically by Kwan, Sudakov, and Tran (arXiv:1810.12144), who proved that any K_t-free graph of minimum degree d contains an induced bipartite subgraph of minimum degree Ω(log d / log log d); but that result concerns K_t-free graphs and does not imply the large-girth statement. The girth-based Conjecture 1.6 — asking merely for existence of constants d_0, g_0 yielding minimum degree 3 — remains a distinct open problem, and no follow-up paper specifically addressing it was found across multiple targeted searches.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Esperet Kang Thomassé \"bipartite induced subgraph\" \"minimum degree\" girth 1802.03727",
+    "bipartite induced subgraph minimum degree 3 girth conjecture graph theory",
+    "\"1802.03727\" cite girth \"minimum degree\" bipartite induced conjecture solved 2019 2020 2021 2022 2023 2024",
+    "graph large girth \"bipartite induced subgraph\" \"minimum degree 3\" Esperet Kang Thomassé conjecture"
+  ],
+  "notes": "Conjecture 1.6 uses large girth as a sparsity condition rather than triangle-freeness (Conjecture 1.4). The paper notes that the weaker form (containing an even hole, i.e., min degree 2) is already settled by Radovanović–Vušković with g_0=4, d_0=3, and that detecting bipartite induced subgraphs of min degree ≥ 3 is NP-complete. The related paper arXiv:1810.12144 (Kwan, Sudakov, Tran, Combinatorica 2021) confirms several EKT conjectures asymptotically for K_t-free graphs but does not address the large-girth case. No follow-up specifically resolving Conjecture 1.6 was found."
+}

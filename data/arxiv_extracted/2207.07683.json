@@ -1,0 +1,46 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Nowhere FO Dense Conjecture",
+    "statement_text": "A hereditary class of structures is nowhere FO dense if and only if first-order model checking is fixed-parameter tractable on it, equivalently, if and only if the class is monadically NIP.",
+    "context_text": "Gajarský et al. [19] conjectured a general correspondence between monadic NIP (model-theoretic tameness) and tractability of first-order model checking. The paper cites this conjecture in the introduction and notes that its main dichotomy result confirms it in the special case of tournaments.",
+    "attributed_to": "Gajarský et al.",
+    "attributed_year": null,
+    "paper_contribution": "Confirms the conjecture for hereditary classes of tournaments: FO model checking is FPT if and only if the class is monadically NIP, which coincides with having bounded twin-width (Theorem 1.1).",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "Exact statement of the conjecture is not reproduced verbatim in the available text; reconstructed from context. Attributed to reference [19] in the paper. PDF extraction may be incomplete.",
+    "arxiv_id": "2207.07683",
+    "paper_title": "First Order Logic and Twin-Width in Tournaments and Dense Oriented Graphs",
+    "paper_authors": [
+      "Colin Geniet",
+      "Stéphan Thomassé"
+    ],
+    "published": "2025-10-07",
+    "abs_url": "https://arxiv.org/abs/2207.07683",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Delineation of Tournaments",
+    "statement_text": "Are tournaments delineated, i.e., is every hereditary subclass of tournaments monadically NIP if and only if it has bounded twin-width?",
+    "context_text": "The notion of a delineated class was introduced in reference [11] of the paper. The paper notes that Theorem 1.1 answers affirmatively the question of whether tournaments form a delineated class, as posed in [11].",
+    "attributed_to": "authors of [11]",
+    "attributed_year": null,
+    "paper_contribution": "Proves that tournaments are delineated: every hereditary subclass of tournaments is monadically NIP if and only if it has bounded twin-width (Theorem 1.1, condition 5).",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "The question is attributed to reference [11] whose authors and year are not identified in the available text. Statement reconstructed from the sentence 'answering a question posed in [11]'. PDF extraction is truncated.",
+    "arxiv_id": "2207.07683",
+    "paper_title": "First Order Logic and Twin-Width in Tournaments and Dense Oriented Graphs",
+    "paper_authors": [
+      "Colin Geniet",
+      "Stéphan Thomassé"
+    ],
+    "published": "2025-10-07",
+    "abs_url": "https://arxiv.org/abs/2207.07683",
+    "source": "pdf"
+  }
+]

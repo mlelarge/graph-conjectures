@@ -1,0 +1,56 @@
+{
+  "review_id": "2009.13319__00",
+  "safe_id": "2009.13319",
+  "arxiv_id": "2009.13319",
+  "conjecture_title": "Problem 1.2",
+  "paper_title": "Extension of Gyarfas-Sumner conjecture to digraphs",
+  "published": "2020-09-28",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Problem 1.2 asks for a full characterization of all finite sets of digraphs that are heroic (i.e., whose avoidance guarantees bounded dichromatic number); this characterization remains open. Partial progress includes: locally out-transitive oriented graphs shown to have dichromatic number at most 2 (arXiv:2103.07886); (P6, triangle)-free oriented graphs shown to have dichromatic number at most 382 (arXiv:2212.02272); heroes in oriented complete multipartite graphs nearly fully characterized (arXiv:2202.13306). A 2026 preprint (arXiv:2602.08736) disproves the related conjecture that {oriented star forest, hero} always forms a heroic pair, by constructing (Claw, C3)-free orientations of rook graphs with unbounded dichromatic number.",
+  "since_posted": [
+    {
+      "title": "Heroes in oriented complete multipartite graphs",
+      "authors": "Pierre Aboulker et al.",
+      "year": 2022,
+      "venue": "Journal of Graph Theory",
+      "url": "https://arxiv.org/abs/2202.13306",
+      "arxiv_id": "2202.13306",
+      "doi": "10.1002/jgt.23061",
+      "kind": "partial",
+      "claim": "Provides a nearly complete characterization of heroes in oriented complete multipartite graphs, showing heroes in quasi-transitive oriented graphs coincide with those in tournaments, while disproving an analogous equivalence for general oriented multipartite graphs."
+    },
+    {
+      "title": "(Claw, C3)-free Digraphs with Unbounded Dichromatic Number",
+      "authors": "unverified",
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2602.08736",
+      "arxiv_id": "2602.08736",
+      "doi": null,
+      "kind": "counterexample",
+      "claim": "Disproves the conjecture of Aboulker, Charbit and Naserasr that for any hero H and any oriented star forest S, the class of (S,H)-free oriented graphs has bounded dichromatic number, by constructing (Claw, C3)-free orientations of rook graphs with unbounded dichromatic number."
+    }
+  ],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2103.07886",
+      "verified": true,
+      "note": "Confirmed: Aboulker, Aubian, Charbit prove that oriented graphs in which every out-neighbourhood induces a transitive tournament can be 2-colored (dichromatic number at most 2), settling a conjecture attributed to Naserasr and the other authors. The stronger inductive Theorem 3.3 is also present. Internal reference claim about locally out-transitive oriented graphs is accurate."
+    },
+    {
+      "arxiv_id": "2212.02272",
+      "verified": true,
+      "note": "Confirmed: Aboulker, Aubian, Charbit, Thomasse prove that oriented graphs with no induced directed path on 6 vertices and no triangle have bounded dichromatic number, described as a step toward the general conjecture about tree-free clique-bounded digraphs. The bound of 382 (Theorem 1.3) cited internally is consistent with the abstract."
+    }
+  ],
+  "search_queries": [
+    "heroic digraphs dichromatic number Forb_ind bounded Aboulker Charbit Naserasr 2009.13319",
+    "2202.13306 heroes oriented complete multipartite graphs dichromatic number",
+    "2602.08736 claw C3-free digraphs unbounded dichromatic number counterexample"
+  ],
+  "notes": "Problem 1.2 is a broad open question rather than a specific falsifiable conjecture; it has generated substantial partial results and at least one disproof of a specific related conjecture (the star-forest + hero conjecture from the same paper). A Steiner 2023 paper in J. Graph Theory on coloring digraphs with forbidden induced subgraphs appeared in search results but was not fetched due to the 5-call cap."
+}

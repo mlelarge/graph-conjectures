@@ -1,0 +1,25 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "(am:bm)-Conjecture (Erdős, Rubin and Taylor)",
+    "statement_text": "For all positive integers $a$, $b$, and $m$, every $(a:b)$-choosable graph is also $(am:bm)$-choosable.",
+    "context_text": "In their seminal 1980 work on list coloring, Erdős, Rubin and Taylor asked whether $(a:b)$-choosability is preserved under scaling of both parameters by the same positive integer $m$. The naive argument that replaces each color in an $(a:b)$-coloring by $m$ new colors works for ordinary colorings but fails in the list-coloring setting. A positive answer is sometimes called 'the $(am:bm)$-conjecture'. Tuza and Voigt confirmed it for $a=2$, $b=1$ using the characterization of $2$-choosable graphs.",
+    "attributed_to": "Erdős, Rubin and Taylor",
+    "attributed_year": 1980,
+    "paper_contribution": "Provides a negative answer for $a=4$, $b=1$, $m=2$ by explicitly constructing a graph $G$ that is $4$-choosable but not $(8:2)$-choosable.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1806.03880",
+    "paper_title": "A $4$-choosable graph that is not $(8:2)$-choosable",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Xiaolan Hu",
+      "Jean-Sébastien Sereni"
+    ],
+    "published": "2019-10-25",
+    "abs_url": "https://arxiv.org/abs/1806.03880",
+    "source": "pdf"
+  }
+]

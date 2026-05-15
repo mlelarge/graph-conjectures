@@ -1,0 +1,22 @@
+{
+  "review_id": "2311.05713__00",
+  "safe_id": "2311.05713",
+  "arxiv_id": "2311.05713",
+  "conjecture_title": "Converse to Theorem 1.1 (3-Coloring dichotomy for $H$-free graphs)",
+  "paper_title": "List-$k$-Coloring $H$-free graphs for all $k>4$",
+  "published": "2023-11-09",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The conjecture that 3-Coloring is polynomial-time solvable on $H$-free graphs whenever every component of $H$ is a path is explicitly called 'wide open' in the source paper. The complexity of 3-Coloring on $H$-free graphs has been settled for all $H$ on at most seven vertices, with the two remaining open cases being $H = P_8$ and $H = 2P_4$; no follow-up paper resolving the full conjecture was found in the literature through May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "3-coloring H-free graphs polynomial time path components dichotomy",
+    "Chudnovsky Hajebi Spirkl 3-coloring H-free polynomial path 2311.05713",
+    "3-coloring P8-free graphs 2P4-free polynomial time 2024 2025 2026"
+  ],
+  "notes": "The source paper (arXiv:2311.05713) proves a full dichotomy for List-k-Coloring with k>4 but explicitly leaves the k=3 case open. The main bottleneck cases identified in the literature are P8-free graphs and 2P4-free graphs. A 2025 paper (arXiv:2509.02423) studies 4-coloring of (Pt,C3)-free graphs (NP-hardness direction) but does not touch the 3-coloring/path conjecture. The STACS 2026 paper on list coloring ordered graphs addresses k=4 in a different setting and does not resolve this conjecture."
+}

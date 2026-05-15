@@ -1,0 +1,112 @@
+[
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Informal Conjecture (generalization of 1.3 to bounded clique number)",
+    "statement_text": "The corresponding result to 1.3 is true for graphs with bounded clique number rather than just triangle-free graphs: for all integers $\\nu > 0$ and $k \\geq 3$ there exists $n$ such that if $G$ has no clique of cardinality $k$ and has chromatic number at least $n$, then for some $t$, $G$ has a hole of length $t+i$ for $1 \\leq i \\leq \\nu$.",
+    "context_text": "Immediately after the statement of the main result (1.3), which establishes $\\nu$ consecutive hole lengths for triangle-free graphs, the authors conjecture the same conclusion holds under the weaker assumption that $G$ has bounded clique number. They note they have made no progress in proving this.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "PDF source — exact statement inferred from prose; the phrase 'the corresponding result' refers to Theorem 1.3 in context",
+    "arxiv_id": "1509.06563",
+    "paper_title": "Induced subgraphs of graphs with large chromatic number. IV. Consecutive holes",
+    "paper_authors": [
+      "Alex Scott",
+      "Paul Seymour"
+    ],
+    "published": "2018-02-12",
+    "abs_url": "https://arxiv.org/abs/1509.06563",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.5",
+    "statement_text": "Let $F$ be an infinite set of positive integers with bounded gaps. Then $F$ is constricting.",
+    "context_text": "A set $F$ of integers is $k$-constricting if there exists $n$ such that every graph with chromatic number at least $n$ contains either a clique with $k$ vertices or a hole with length in $F$; $F$ is constricting if it is $k$-constricting for every $k$. The authors prove (1.4) that every infinite set with bounded gaps is 3-constricting, and conjecture 1.5 as the natural generalization to all $k$.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "PDF source — math appears cleanly readable",
+    "arxiv_id": "1509.06563",
+    "paper_title": "Induced subgraphs of graphs with large chromatic number. IV. Consecutive holes",
+    "paper_authors": [
+      "Alex Scott",
+      "Paul Seymour"
+    ],
+    "published": "2018-02-12",
+    "abs_url": "https://arxiv.org/abs/1509.06563",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Problem 1.6",
+    "statement_text": "Is there an infinite set $F$ of positive integers such that $F$ is constricting and has density $0$?",
+    "context_text": "The authors discuss which infinite sets are constricting, noting that not every infinite set is constricting (not even sets with upper density one), while sets with bounded gaps are 3-constricting. Lower density seems closer to the truth, and the authors conjecture the answer to Problem 1.6 is positive.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "PDF source — math appears cleanly readable; authors conjecture the answer is positive",
+    "arxiv_id": "1509.06563",
+    "paper_title": "Induced subgraphs of graphs with large chromatic number. IV. Consecutive holes",
+    "paper_authors": [
+      "Alex Scott",
+      "Paul Seymour"
+    ],
+    "published": "2018-02-12",
+    "abs_url": "https://arxiv.org/abs/1509.06563",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Problem 1.7",
+    "statement_text": "Is there an infinite set $F = \\{f_1, f_2, \\ldots\\}$ of positive integers such that $F$ is constricting and $f_{i+1} - f_i \\to \\infty$ as $i \\to \\infty$?",
+    "context_text": "This is a strengthening of Problem 1.6; an affirmative answer would show that a constricting set can have gaps tending to infinity. The authors note it would be very interesting to answer both Problems 1.6 and 1.7 even in the weaker case of 3-constricting sets.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "PDF source — math appears cleanly readable",
+    "arxiv_id": "1509.06563",
+    "paper_title": "Induced subgraphs of graphs with large chromatic number. IV. Consecutive holes",
+    "paper_authors": [
+      "Alex Scott",
+      "Paul Seymour"
+    ],
+    "published": "2018-02-12",
+    "abs_url": "https://arxiv.org/abs/1509.06563",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Informal Question (on 2.1 for ℓ = 4)",
+    "statement_text": "Statement 2.1 might be true when $\\ell = 4$: let $\\varphi : \\mathbb{N} \\to \\mathbb{N}$ be a non-decreasing function; does there exist $n$ such that every $(2,\\varphi)$-controlled triangle-free graph with chromatic number more than $n$ has a $4$-hole?",
+    "context_text": "Statement 2.1 is proved in the paper for all $\\ell \\geq 5$ (with $\\ell = 7$ handled by a prior paper). The authors remark that 2.1 might also hold for $\\ell = 4$ but that they have not been able to decide this.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "PDF source — phrased by authors as 'might be true … but we have not been able to decide this'; no formal conjecture label",
+    "arxiv_id": "1509.06563",
+    "paper_title": "Induced subgraphs of graphs with large chromatic number. IV. Consecutive holes",
+    "paper_authors": [
+      "Alex Scott",
+      "Paul Seymour"
+    ],
+    "published": "2018-02-12",
+    "abs_url": "https://arxiv.org/abs/1509.06563",
+    "source": "pdf"
+  }
+]

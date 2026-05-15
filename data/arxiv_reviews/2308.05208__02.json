@@ -1,0 +1,35 @@
+{
+  "review_id": "2308.05208__02",
+  "safe_id": "2308.05208",
+  "arxiv_id": "2308.05208",
+  "conjecture_title": "Five-point protrusive-but-not-witnessed construction",
+  "paper_title": "Ordering Candidates via Vantage Points",
+  "published": "2023-08-09",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "solved",
+  "confidence": "high",
+  "summary": "Adrian Beker answered the question positively in arXiv:2309.12809 (2023), constructing an explicit 5-element set in ℝ² that has a protrusive ordering not realised by any finite multiset of vantage points, i.e., not contained in Ψ(C). The paper explicitly states it answers a question of Alon, Defant, Kravitz, and Zhu, and was published in Archiv der Mathematik (DOI 10.1007/s00013-024-02020-x).",
+  "since_posted": [
+    {
+      "title": "A protrusive ordering of 5 points not witnessed by any finite multiset",
+      "authors": "Adrian Beker",
+      "year": 2023,
+      "venue": "Archiv der Mathematik",
+      "url": "https://arxiv.org/abs/2309.12809",
+      "arxiv_id": "2309.12809",
+      "doi": "10.1007/s00013-024-02020-x",
+      "kind": "proof",
+      "claim": "Constructs an explicit 5-element set C ⊆ ℝ² with a protrusive ordering that cannot be obtained by ranking points by distance-sum to any finite multiset, thereby answering the open question of Alon–Defant–Kravitz–Zhu affirmatively."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "protrusive ordering vantage points arXiv 2308.05208 Alon Defant Kravitz Zhu",
+    "protrusive ordering candidates witnessing set five points plane geometry",
+    "cite:2308.05208 protrusive ordering five points Psi witnessed 2024 2025",
+    "Semantic Scholar citations for arXiv:2308.05208"
+  ],
+  "notes": "The question is resolved: a 5-point counterexample exists (yes). Beker's paper arXiv:2309.12809 was submitted in September 2023, only weeks after the source paper, and published in Archiv der Mathematik in 2024."
+}

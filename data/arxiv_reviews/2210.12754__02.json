@@ -1,0 +1,33 @@
+{
+  "review_id": "2210.12754__02",
+  "safe_id": "2210.12754",
+  "arxiv_id": "2210.12754",
+  "conjecture_title": "Informal Conjecture (polynomial saving in the bipartite case)",
+  "paper_title": "Largest subgraph from a hereditary property in a random graph",
+  "published": "2022-10-23",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "solved",
+  "confidence": "high",
+  "summary": "Clifton, Liu, Mattos, and Zheng (arXiv:2405.09486, 2024) fully resolve the conjecture by proving as Theorem 1.1 that for every non-trivial hereditary property $\\mathcal{P}$ missing some bipartite graph $L$, we have $\\mathrm{ex}(G(n,p),\\mathcal{P}) \\leq n^{2-\\varepsilon}$ whp for some $\\varepsilon = \\varepsilon(\\mathcal{P}) > 0$. Their paper explicitly states it answers a question of Alon, Krivelevich, and Samotij.",
+  "since_posted": [
+    {
+      "title": "Subgraphs of random graphs in hereditary families",
+      "authors": "Alexander Clifton, Hong Liu, Leticia Mattos, Michael Zheng",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2405.09486",
+      "arxiv_id": "2405.09486",
+      "doi": "10.48550/arXiv.2405.09486",
+      "kind": "proof",
+      "claim": "Proves Theorem 1.1: for every hereditary property missing a bipartite graph, ex(G(n,p),P) <= n^(2-epsilon) whp, directly answering the conjecture of Alon, Krivelevich, and Samotij."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Alon Krivelevich Samotij hereditary property random graph bipartite polynomial saving ex(G,P) 2022",
+    "arXiv 2210.12754 citing papers hereditary property extremal bipartite"
+  ],
+  "notes": "Conjecture fully resolved by arXiv:2405.09486 (5-page paper, submitted May 2024). No journal publication listed at time of review."
+}

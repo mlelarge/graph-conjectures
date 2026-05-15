@@ -1,0 +1,55 @@
+{
+  "review_id": "2302.08922__01",
+  "safe_id": "2302.08922",
+  "arxiv_id": "2302.08922",
+  "conjecture_title": "Polynomial bounds for the Gyárfás-Sumner conjecture",
+  "paper_title": "A note on the Gyárfás-Sumner conjecture",
+  "published": "2023-02-17",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The conjecture that the Gyárfás-Sumner conjecture holds with polynomial χ-bounding functions (chromatic number bounded by a polynomial in the clique number t) remains open in full generality. Significant partial progress has been made since 2023: polynomial χ-boundedness was established for P₅-free graphs (arXiv:2512.24907, Dec 2024), and the polynomial version of the conjecture was proved for intersection graphs of axis-aligned boxes of any fixed dimension (arXiv:2407.16882, Jul 2024). A further 2025 preprint (arXiv:2504.21127) improves bounds for P₅-free graphs and gives compositional results, but the full polynomial conjecture for all trees is still open.",
+  "since_posted": [
+    {
+      "title": "Polynomial Gyárfás-Sumner conjecture for graphs of bounded boxicity",
+      "authors": "not confirmed in fetch",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2407.16882",
+      "arxiv_id": "2407.16882",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves the polynomial Gyárfás-Sumner conjecture for intersection graphs of axis-aligned boxes in ℝ^d (graphs of bounded boxicity): for every positive integer d and forest F, such graphs with no induced F are polynomially χ-bounded."
+    },
+    {
+      "title": "Polynomial χ-boundedness for excluding P₅",
+      "authors": "not confirmed in fetch",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2512.24907",
+      "arxiv_id": "2512.24907",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves that the chromatic number is polynomially bounded by the clique number for graphs with no induced five-vertex path P₅, resolving this case of the polynomial Gyárfás-Sumner conjecture via a chromatic density framework."
+    },
+    {
+      "title": "On polynomially high-chromatic pure pairs",
+      "authors": "Tung H. Nguyen",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2504.21127",
+      "arxiv_id": "2504.21127",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Improves the best known bound for P₅-free graphs from χ(G) ≤ ω^(log ω) to χ(G) ≤ ω^(O(log ω / log log ω)), and establishes that if T and a broom each satisfy the polynomial Gyárfás-Sumner conjecture then so does their disjoint union."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Gyárfás-Sumner conjecture polynomial chi-bounding function chromatic number 2024 2025",
+    "arxiv 2302.08922 Nguyen Scott Seymour polynomial bounds Gyarfas-Sumner"
+  ],
+  "notes": "Esperet's broader conjecture that every χ-bounded hereditary class is polynomially χ-bounded was disproved by Briański, Davies and Walczak, but that does not affect this specific conjecture about forest-free graphs. The most notable advance is arXiv:2512.24907 (Dec 2024) proving polynomial χ-boundedness for P₅-free graphs. Author names for arXiv:2407.16882 and arXiv:2512.24907 were not returned by WebFetch and are marked accordingly."
+}

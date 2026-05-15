@@ -1,0 +1,44 @@
+[
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Problem 1.2 (Problem 4 in Dvořák–Ossona de Mendez–Wu)",
+    "statement_text": "Determine the function $g:\\mathbb{N}\\rightarrow\\mathbb{R}_{+}$, where $g(n)$ is defined as the maximum of the ratio $\\frac{\\chi_{f}(G)}{\\rho(G)}$ over all $n$-vertex graphs $G$.",
+    "context_text": "Dvořák et al. showed that $\\chi_f(G)$ cannot be bounded by any function of $\\rho(G)$, which naturally motivates quantifying how quickly the ratio $\\chi_f(G)/\\rho(G)$ can grow with the number of vertices. They established $\\Omega(\\log\\log n)\\leq g(n)\\leq O(\\log n)$, leaving an exponential gap.",
+    "attributed_to": "Dvořák, Ossona de Mendez, and Wu",
+    "attributed_year": 2020,
+    "paper_contribution": "Proves that $g(n)=(\\log n)^{1-o(1)}$, almost fully resolving the problem by showing the truth is close to the $O(\\log n)$ upper bound.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2411.16465",
+    "paper_title": "Fractional chromatic number vs. Hall ratio",
+    "paper_authors": [
+      "Raphael Steiner"
+    ],
+    "published": "2024-11-25",
+    "abs_url": "https://arxiv.org/abs/2411.16465",
+    "source": "html"
+  },
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Problem 1.4 (Problem 5 in Dvořák–Ossona de Mendez–Wu)",
+    "statement_text": "Do there for some constant $c>0$ exist graphs $G$ of arbitrarily large fractional chromatic number such that $\\rho(G)\\leq c$ and $\\alpha_{\\mathrm{deg}_{H}}(H)\\geq|E(H)|/c$ for every $H\\subseteq G$?",
+    "context_text": "Motivated by the fact that restricting weight functions in the formula for $\\chi_f(G)$ to $\\{0,1\\}$-functions can be too restrictive, Dvořák et al. proposed studying weight functions proportional to degrees of a subgraph as a natural alternative class, asking whether degree-weighted Hall-type ratios can still be bounded while $\\chi_f$ is large.",
+    "attributed_to": "Dvořák, Ossona de Mendez, and Wu",
+    "attributed_year": 2020,
+    "paper_contribution": "Affirmatively solves the problem by constructing graphs with bounded Hall ratio, arbitrarily large fractional chromatic number, and $\\alpha_{\\mathrm{deg}_H}(H)\\geq |E(H)|/c$ for all subgraphs $H$ (Theorem 1.5).",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2411.16465",
+    "paper_title": "Fractional chromatic number vs. Hall ratio",
+    "paper_authors": [
+      "Raphael Steiner"
+    ],
+    "published": "2024-11-25",
+    "abs_url": "https://arxiv.org/abs/2411.16465",
+    "source": "html"
+  }
+]

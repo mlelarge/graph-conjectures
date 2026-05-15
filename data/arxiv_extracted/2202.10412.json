@@ -1,0 +1,74 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Gyárfás-Sumner Conjecture",
+    "statement_text": "For every forest $H$, the class of $H$-free graphs is $\\chi$-bounded.",
+    "context_text": "The Gyárfás-Sumner conjecture [4, 14] is the central backdrop of the paper. The authors work toward a polynomial strengthening, asking which forests $H$ make the class of $H$-free graphs polynomially $\\chi$-bounded (i.e., 'good'). The paper establishes polynomial $\\chi$-boundedness for $2P_4$-free graphs and more general classes.",
+    "attributed_to": "Gyárfás and Sumner",
+    "attributed_year": null,
+    "paper_contribution": "Proves that if $H$ is a good forest then the disjoint union of $H$ and $P_4$ is also good (polynomially $\\chi$-bounded), in particular showing that $2P_4$-free graphs satisfy $\\chi(G) \\leq \\omega(G)^{16}$; more generally proves polynomial $\\chi$-boundedness for $\\{H_1, H_2\\}$-free graphs when every component of $H_1$ is good and $H_2$ is a broom or disjoint union of a good forest and paths.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2202.10412",
+    "paper_title": "Polynomial bounds for chromatic number VI. Adding a four-vertex path",
+    "paper_authors": [
+      "Maria Chudnovsky",
+      "Alex Scott",
+      "Paul Seymour",
+      "Sophie Spirkl"
+    ],
+    "published": "2023-03-22",
+    "abs_url": "https://arxiv.org/abs/2202.10412",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Informal Conjecture (every forest is good)",
+    "statement_text": "Perhaps every forest is good (i.e., for every forest $H$, the class of $H$-free graphs is polynomially $\\chi$-bounded).",
+    "context_text": "After recalling that Esperet's conjecture that every $\\chi$-bounded hereditary class is polynomially $\\chi$-bounded was disproved, the authors ask which hereditary classes are polynomially $\\chi$-bounded and raise in particular whether the Gyárfás-Sumner conjecture can be strengthened to polynomial $\\chi$-boundedness. They note that among trees, only those not containing $P_5$ are currently known to be good, and that it is not even known whether $P_5$ is good.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "",
+    "arxiv_id": "2202.10412",
+    "paper_title": "Polynomial bounds for chromatic number VI. Adding a four-vertex path",
+    "paper_authors": [
+      "Maria Chudnovsky",
+      "Alex Scott",
+      "Paul Seymour",
+      "Sophie Spirkl"
+    ],
+    "published": "2023-03-22",
+    "abs_url": "https://arxiv.org/abs/2202.10412",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 2.3",
+    "statement_text": "Let $\\psi, \\sigma : \\mathbb{N} \\to \\mathbb{N}$ be non-decreasing polynomials, let $q \\geq 0$ an integer, and let $H$ be a broom. Then there is a non-decreasing polynomial $\\phi : \\mathbb{N} \\to \\mathbb{N}$ such that if $G$ is a graph, and $\\chi(G) > \\phi(\\omega(G))$, and $G$ contains no $(\\psi, q)$-scattering, then $G$ [contains] a $\\sigma$-nondominating copy of $H$.",
+    "context_text": "The authors remark that Conjecture 2.3 is 'an appealing possible strengthening of 2.2 that we could not prove.' Theorem 2.2 (which is proved) requires $H$ to be a broom and $J$ a path, finding both; Conjecture 2.3 would give a $\\sigma$-nondominating copy of a broom alone without needing a path. This would extend the self-isolating property (proved for paths as Corollary 2.4) to brooms.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "PDF extraction: the phrase 'then G a σ-nondominating copy of H' is missing the word 'contains'; reconstructed in brackets. Statement otherwise clear.",
+    "arxiv_id": "2202.10412",
+    "paper_title": "Polynomial bounds for chromatic number VI. Adding a four-vertex path",
+    "paper_authors": [
+      "Maria Chudnovsky",
+      "Alex Scott",
+      "Paul Seymour",
+      "Sophie Spirkl"
+    ],
+    "published": "2023-03-22",
+    "abs_url": "https://arxiv.org/abs/2202.10412",
+    "source": "pdf"
+  }
+]

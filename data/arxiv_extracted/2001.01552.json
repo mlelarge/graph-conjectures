@@ -1,0 +1,48 @@
+[
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Question 6",
+    "statement_text": "Given a polynomial $p$, do there necessarily exist real numbers $c, s \\geq 1$ and a positive integer $d$, such that the following holds: every graph $G$ satisfying $\\mathrm{col}_r(G) \\leq p(r)$ for every non-negative integer $r$ admits a $(c, \\sqsubseteq_s)$-tame representation in $\\mathbb{R}^d$?",
+    "context_text": "Theorem 4 shows that graphs with $(c,\\sqsubseteq_s)$-tame representations in $\\mathbb{R}^d$ have strong coloring numbers bounded by $\\delta r^d$, paralleling Krauthgamer–Lee's characterization (Theorem 5) of polynomial-growth graph classes via grid embeddings. Answering Question 6 would determine whether Theorem 4 yields an analogous geometric characterization of graphs with polynomially bounded strong coloring numbers.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "The notation $(c,\\sqsubseteq_s)$-tame and $\\sqsubseteq_s$ are rendered as '(cid:118)s' in the PDF extraction; interpreted as the paper's comparability relation defined via volume overlap.",
+    "arxiv_id": "2001.01552",
+    "paper_title": "Sublinear separators in intersection graphs of convex shapes",
+    "paper_authors": [
+      "Zdenek Dvorak",
+      "Rose McCarty",
+      "Sergey Norin"
+    ],
+    "published": "2020-01-06",
+    "abs_url": "https://arxiv.org/abs/2001.01552",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Informal conjecture: negative answer to Question 6",
+    "statement_text": "The answer to Question 6 is negative: there exist graphs $G$ with $\\mathrm{col}_r(G)$ polynomially bounded in $r$ that do not admit any $(c, \\sqsubseteq_s)$-tame representation in any $\\mathbb{R}^d$.",
+    "context_text": "The authors write 'We suspect that the answer to Question 6 is negative based on the following.' They then demonstrate (Theorem 7) that a box-shaped version of such a representation fails, which motivates the suspicion that the full statement also fails.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated as suspicion in prose ('we suspect'); Theorem 7 provides partial supporting evidence by ruling out box-shaped tame representations, but the full Question 6 remains open. PDF source — math notation may be garbled.",
+    "arxiv_id": "2001.01552",
+    "paper_title": "Sublinear separators in intersection graphs of convex shapes",
+    "paper_authors": [
+      "Zdenek Dvorak",
+      "Rose McCarty",
+      "Sergey Norin"
+    ],
+    "published": "2020-01-06",
+    "abs_url": "https://arxiv.org/abs/2001.01552",
+    "source": "pdf"
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.1",
+    "statement_text": "Every triangle-free planar graph contains an induced 2-degenerate subgraph on at least $\\frac{7}{8}$ of its vertices.",
+    "context_text": "The authors introduce this as the central open problem motivating the paper, noting it would be tight for the cube (the unique 3-regular triangle-free planar graph on 8 vertices). The paper's main theorems (Theorems 1.2 and 1.3) prove weaker bounds of $\\frac{4}{5}$ and $\\frac{7}{8}n - 18n_3$ respectively as partial progress.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1709.04036",
+    "paper_title": "Induced 2-degenerate Subgraphs of Triangle-free Planar Graphs",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Tom Kelly"
+    ],
+    "published": "2018-02-19",
+    "abs_url": "https://arxiv.org/abs/1709.04036",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Informal belief: 5/6 bound attainable",
+    "statement_text": "We believe the argument we use can be strengthened to give a bound $\\frac{5}{6}$, however the technical issues are substantial and since we do not see this as a viable way to prove Conjecture 1.1 in full, we prefer to present the easier argument giving the bound $\\frac{4}{5}$.",
+    "context_text": "Immediately after stating Theorem 1.2 (the $\\frac{4}{5}$ bound), the authors remark that their method is likely improvable to $\\frac{5}{6}$ but that pursuing this is not a practical route to proving the full $\\frac{7}{8}$ conjecture.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated as an authorial belief in running prose, not a labelled environment.",
+    "arxiv_id": "1709.04036",
+    "paper_title": "Induced 2-degenerate Subgraphs of Triangle-free Planar Graphs",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Tom Kelly"
+    ],
+    "published": "2018-02-19",
+    "abs_url": "https://arxiv.org/abs/1709.04036",
+    "source": "pdf"
+  }
+]

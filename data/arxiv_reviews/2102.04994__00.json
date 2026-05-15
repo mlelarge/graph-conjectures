@@ -1,0 +1,22 @@
+{
+  "review_id": "2102.04994__00",
+  "safe_id": "2102.04994",
+  "arxiv_id": "2102.04994",
+  "conjecture_title": "Erdős-Hajnal property for $\\{C_8, \\overline{C_8}\\}$",
+  "paper_title": "Erdos-Hajnal for graphs with no 5-hole",
+  "published": "2021-02-09",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The source paper (arXiv:2102.04994) proves that $\\{C_6, \\overline{C_6}\\}$ and $\\{C_7, \\overline{C_7}\\}$ each have the Erdős-Hajnal property, but explicitly leaves open whether the same holds for $\\{C_8, \\overline{C_8}\\}$. A wide search of the post-2021 literature — including a survey of new Erdős-Hajnal results through 2024–2025 and a review of the key follow-up paper arXiv:2307.06455 — found no work resolving this question. The conjecture remains open as of May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Erdős-Hajnal property C8 complement 8-cycle graph theory 2102.04994",
+    "Erdos-Hajnal property C8 overline C8 hole graph Chudnovsky Scott Seymour Spirkl",
+    "Erdos-Hajnal property even cycle C8 graph 2022 2023 2024 2025 2026"
+  ],
+  "notes": "No follow-up paper resolving the conjecture was found. The conjecture was posted in 2021 as an explicit open problem; the related arXiv:2307.06455 ('New graphs with the Erdős-Hajnal property') does not mention C8. Absence of evidence is strong given the conjecture's specificity and the breadth of the search."
+}

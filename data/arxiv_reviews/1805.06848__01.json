@@ -1,0 +1,50 @@
+{
+  "review_id": "1805.06848__01",
+  "safe_id": "1805.06848",
+  "arxiv_id": "1805.06848",
+  "conjecture_title": "Conjecture 1.2 (The Large Inducibility Conjecture)",
+  "paper_title": "Edge-statistics on large graphs",
+  "published": "2019-11-01",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "solved",
+  "confidence": "high",
+  "summary": "The Large Inducibility Conjecture is settled as a corollary of the Edge-statistics Conjecture (Conjecture 1.1 of arXiv:1805.06848), which the source paper explicitly states implies it. The Edge-statistics Conjecture was fully proved by the combination of Kwan, Sudakov, and Tran (handling the intermediate range) and Fox and Sauermann (arXiv:1809.01352, Advances in Combinatorics 2020, handling the remaining cases 1 ≤ ℓ ≤ C·k). The 2024 paper arXiv:2411.17362 further characterizes which non-trivial graphs achieve inducibility close to 1/e, strengthening the structural picture.",
+  "since_posted": [
+    {
+      "title": "A Completion of the Proof of the Edge-statistics Conjecture",
+      "authors": "Jacob Fox, Lisa Sauermann",
+      "year": 2020,
+      "venue": "Advances in Combinatorics",
+      "url": "https://arxiv.org/abs/1809.01352",
+      "arxiv_id": "1809.01352",
+      "doi": null,
+      "kind": "proof",
+      "claim": "Proves the full Edge-statistics Conjecture (Conjecture 1.1) by handling the cases 1 ≤ ℓ ≤ C·k; since the source paper explicitly states the Large Inducibility Conjecture is implied by the Edge-statistics Conjecture, this settles Conjecture 1.2 as a corollary."
+    },
+    {
+      "title": "Characterizing graphs with high inducibility",
+      "authors": "unextracted from fetch",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2411.17362",
+      "arxiv_id": "2411.17362",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Characterizes which graphs achieve inducibility close to 1/e: establishes ind(H) ≤ 1/e + o_k(1) for all H ∉ {K_k, ĀK_k} and shows that graphs other than stars and their complements have inducibility bounded away from 1/e by an absolute constant."
+    }
+  ],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "1809.01352",
+      "verified": true,
+      "note": "Confirmed via WebFetch of both the arXiv abstract and the Advances in Combinatorics page: proves the full Edge-statistics Conjecture of Alon-Hefetz-Krivelevich-Tyomkyn, published in Advances in Combinatorics 2020. The paper resolves the hardest remaining cases (1 ≤ ℓ ≤ C·k and near-complete), completing earlier work of Kwan-Sudakov-Tran."
+    }
+  ],
+  "search_queries": [
+    "graph inducibility \"1/e\" conjecture Alon Hefetz Krivelevich Tyomkyn 1805.06848",
+    "graph \"large inducibility conjecture\" inducibility \"1/e\" limsup solved proved"
+  ],
+  "notes": "The conjecture is implicitly resolved via the proved Edge-statistics Conjecture: the source paper states Conjecture 1.2 is implied by Conjecture 1.1, and the latter is now fully proved (Fox-Sauermann 2020 + Kwan-Sudakov-Tran, arXiv:1809.02576, not independently WebFetched). Fox-Sauermann do not explicitly name or cite Conjecture 1.2, so the resolution is by logical implication rather than an explicit statement in the follow-up papers. Author names for arXiv:2411.17362 were not extracted from the WebFetch response."
+}

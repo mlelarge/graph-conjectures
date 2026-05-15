@@ -343,14 +343,14 @@ def run_claude(user_prompt: str, system_prompt: str,
     """
     cmd = [
         sys.executable, str(TIMEOUT_SCRIPT),
+        str(timeout),                          # <-- timeout seconds (was missing)
         "claude", "-p", user_prompt,
         "--system-prompt", system_prompt,
         "--output-format", "text",
-        "--model", "claude-sonnet-4-20250514",
+        "--model", "claude-sonnet-4-6",
     ]
     logger.debug("Running claude (timeout=%ds) …", timeout)
     env = __import__("os").environ.copy()
-    env["PER_ITEM_TIMEOUT"] = str(timeout)
 
     try:
         result = subprocess.run(
@@ -480,15 +480,17 @@ def main(argv: Optional[list[str]] = None) -> int:
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog=__doc__,
     )
-    ap.add_argument("--author",  required=True, metavar="NAME",
-                    help='e.g. "Jean-Pierre Serre"')
-    ap.add_argument("--since",   required=True, type=int, metavar="YEAR")
+    ap.add_argument("--author",  required=False, metavar="NAME", default=None,
+                    help='Curated-author display name (e.g. "Pierre Aboulker"). '
+                         'Optional when --paper is given: extractor will search '
+                         'cache/arxiv/*/papers.json to locate the paper.')
+    ap.add_argument("--since",   required=False, type=int, metavar="YEAR", default=2000)
     ap.add_argument("--cache",   default=None, metavar="DIR",
-                    help="Cache directory (default: cache/arxiv/<slug>)")
+                    help="Cache directory (default: cache/arxiv/<slug> or auto-detect)")
     ap.add_argument("--out",     default=None, metavar="DIR",
-                    help="Output directory (default: data/arxiv/<slug>)")
+                    help="Output directory (default: data/arxiv_extracted, flat)")
     ap.add_argument("--paper",   default=None, metavar="ARXIV_ID",
-                    help="Process only this paper ID (smoke-test)")
+                    help="Process only this paper ID")
     ap.add_argument("--system-prompt", default=None, metavar="FILE",
                     help=f"System prompt file (default: {SYSTEM_PROMPT_PATH})")
     ap.add_argument("--refresh",  action="store_true",
@@ -506,10 +508,42 @@ def main(argv: Optional[list[str]] = None) -> int:
     )
 
     # ── paths ──────────────────────────────────────────────────────────────────
-    slug      = _slug_from_name(args.author)
-    cache_dir = Path(args.cache) if args.cache else Path("cache/arxiv") / slug
-    data_dir  = Path(args.out)   if args.out   else Path("data/arxiv")  / slug
+    # Output directory is FLAT by default so each unique safe_id is extracted at
+    # most once across the whole corpus (per the user's "dedup by paper, credit
+    # all co-authors at aggregation time" decision).
+    data_dir = Path(args.out) if args.out else Path("data/arxiv_extracted")
     data_dir.mkdir(parents=True, exist_ok=True)
+
+    # ── resolve which author's cache to read from ──────────────────────────────
+    # Two modes:
+    #   1) --author NAME  → use that author's cache directly.
+    #   2) --paper ID without --author → scan cache/arxiv/*/papers.json to find
+    #      the first manifest containing the paper, use that for HTML/PDF lookup.
+    slug = None
+    cache_dir: Path | None = None
+    if args.author:
+        slug = _slug_from_name(args.author)
+        cache_dir = Path(args.cache) if args.cache else Path("cache/arxiv") / slug
+    elif args.paper:
+        target_safe = args.paper.replace("/", "_")
+        for manifest_path in sorted(Path("cache/arxiv").glob("*/papers.json")):
+            try:
+                ms = json.loads(manifest_path.read_text(encoding="utf-8"))
+            except json.JSONDecodeError:
+                continue
+            for p in ms:
+                if p.get("safe_id") == target_safe or p.get("arxiv_id") == args.paper:
+                    slug = manifest_path.parent.name
+                    cache_dir = manifest_path.parent
+                    break
+            if cache_dir is not None:
+                break
+        if cache_dir is None:
+            logger.error("Paper %s not found in any cache/arxiv/*/papers.json", args.paper)
+            return 1
+    else:
+        logger.error("Either --author or --paper must be given.")
+        return 1
 
     # ── system prompt ──────────────────────────────────────────────────────────
     sp_path = Path(args.system_prompt) if args.system_prompt else SYSTEM_PROMPT_PATH
@@ -534,8 +568,9 @@ def main(argv: Optional[list[str]] = None) -> int:
             logger.error("Paper %s not found in manifest.", args.paper)
             return 1
 
-    logger.info("Author : %s  (slug: %s)", args.author, slug)
-    logger.info("Papers : %d to process", len(papers))
+    logger.info("Source cache : %s  (slug: %s)", cache_dir, slug)
+    logger.info("Output dir   : %s", data_dir)
+    logger.info("Papers       : %d to process", len(papers))
 
     # ── process ────────────────────────────────────────────────────────────────
     n_ok = n_skip = n_fail = 0

@@ -1,0 +1,30 @@
+{
+  "review_id": "2210.16971__02",
+  "safe_id": "2210.16971",
+  "arxiv_id": "2210.16971",
+  "conjecture_title": "Equivalence of asymmetric and classical Sidorenko properties",
+  "paper_title": "A note on directed analogues of the Sidorenko and forcing conjectures",
+  "published": "2022-10-30",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The conjecture that the asymmetric Sidorenko property and the classical Sidorenko property coincide for bipartite graphs was posed in arXiv:2210.16971 and remains open. The source paper was published in the Electronic Journal of Combinatorics in 2025 (vol. 32(3), P3.38). Subsequent work on tournament Sidorenko-type inequalities (arXiv:2512.11222) cites the source paper and summarises its reduction of directed Sidorenko to the asymmetric undirected setting, but does not address the bipartite equivalence conjecture; no resolution has been found in the indexed literature.",
+  "since_posted": [],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2312.15333",
+      "verified": false,
+      "note": "Paper is 'Induced subgraph density. VII. The five-vertex path' by Nguyen, Scott, Seymour; it proves an Erdős-Hajnal-type result for P_5, not anything related to Sidorenko properties. The internal-reference match is a false positive (fuzz=65)."
+    }
+  ],
+  "search_queries": [
+    "asymmetric Sidorenko property bipartite graphs equivalence classical Sidorenko 2022",
+    "Fox Himwich Mani Zhou directed Sidorenko forcing conjecture arXiv 2210.16971",
+    "https://arxiv.org/abs/2512.11222 (WebFetch)",
+    "https://arxiv.org/abs/2402.08418 (WebFetch)",
+    "https://arxiv.org/html/2512.11222 (WebFetch)"
+  ],
+  "notes": "No follow-up found that resolves the bipartite equivalence. The source paper was published in Electron. J. Combin. 32 (2025) no. 3, P3.38. arXiv:2512.11222 ('New Sidorenko-type inequalities in tournaments', 2025) cites the source as [genFHMZ22] and notes the directed/asymmetric undirected equivalence established there, but works on tournament variants and does not address whether asymmetric = classical for bipartite graphs. arXiv:2402.08418 ('Variations on Sidorenko's conjecture in tournaments', 2024) is similarly tangential. The conjecture is plausible given that all known examples satisfying the classical property also satisfy the asymmetric version, but no proof is known."
+}

@@ -1,0 +1,52 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Dujmović–Joret–Morin–Norin–Wood Question on 2-tree-width and chromatic number",
+    "statement_text": "There exists a function $f : \\mathbb{N} \\to \\mathbb{N}$ such that every graph $G$ with 2-tree-width at most $k$ has chromatic number at most $f(k)$.",
+    "context_text": "The authors of [5] asked whether $\\chi(G)$ is bounded from above by a function of the 2-tree-width of $G$, motivated by the fact that this holds for 2-path-width (via the Asplund–Grünbaum theorem on rectangle intersection graphs). The present paper provides a negative answer, showing triangle-free Burling graphs with arbitrarily large chromatic number have 2-tree-width (and even mixed tree/path-decomposition width) at most 2.",
+    "attributed_to": "Dujmović, Joret, Morin, Norin, and Wood",
+    "attributed_year": 2017,
+    "paper_contribution": "Disproves the question by constructing, for every $k \\geq 1$, a Burling graph $G_k$ with a tree-decomposition and a path-decomposition such that each bag of the first intersects each bag of the second in at most 2 vertices, while $\\chi(G_k) \\geq k$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1703.07871",
+    "paper_title": "Burling graphs, chromatic number, and orthogonal tree-decompositions",
+    "paper_authors": [
+      "Stefan Felsner",
+      "Gwenaël Joret",
+      "Piotr Micek",
+      "William T. Trotter",
+      "Veit Wiechert"
+    ],
+    "published": "2018-01-29",
+    "abs_url": "https://arxiv.org/abs/1703.07871",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 3",
+    "statement_text": "There exists a function $f : \\mathbb{N} \\to \\mathbb{N}$ such that $\\chi(G) \\leq f(k)$ for every $k \\geq 1$ and every graph $G$ admitting a spaghetti tree-decomposition $(T, \\{B_t\\}_{t \\in V(T)})$ and a path-decomposition $(P, \\{B_p\\}_{p \\in V(P)})$ such that $|B_t \\cap B_p| \\leq k$ for every $t \\in V(T)$ and $p \\in V(P)$.",
+    "context_text": "The authors conclude the paper with this conjecture as an open problem in the spirit of exploring how the Asplund–Grünbaum result could be extended. A spaghetti tree-decomposition is a tree-decomposition rooted at some vertex $r$ such that, orienting edges away from $r$, the subtree induced by bags containing any fixed vertex $v$ forms a directed path. The authors remark that the conjecture could even hold with two spaghetti tree-decompositions.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1703.07871",
+    "paper_title": "Burling graphs, chromatic number, and orthogonal tree-decompositions",
+    "paper_authors": [
+      "Stefan Felsner",
+      "Gwenaël Joret",
+      "Piotr Micek",
+      "William T. Trotter",
+      "Veit Wiechert"
+    ],
+    "published": "2018-01-29",
+    "abs_url": "https://arxiv.org/abs/1703.07871",
+    "source": "pdf"
+  }
+]

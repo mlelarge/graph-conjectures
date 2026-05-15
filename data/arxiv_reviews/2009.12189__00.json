@@ -1,0 +1,22 @@
+{
+  "review_id": "2009.12189__00",
+  "safe_id": "2009.12189",
+  "arxiv_id": "2009.12189",
+  "conjecture_title": "Conjecture 1.1",
+  "paper_title": "Fractional vertex-arboricity of planar graphs",
+  "published": "2020-09-25",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "No verified resolution of Conjecture 1.1 (every planar graph has fractional vertex-arboricity at most two) was found in the literature since 2020. The source paper itself established partial progress: every planar graph of girth at least five has fractional vertex-arboricity at most 2 − 1/324. A May 2025 preprint (arXiv:2505.16808, Naserasr, Pham, Pujol, Zhou) on fractional balanced arboricity of planar signed graphs surfaced in searches and was flagged by AI-generated summaries as possibly refuting the conjecture, but a direct WebFetch of the PDF established that it addresses edge arboricity and signed-graph variants rather than fractional vertex-arboricity of unsigned planar graphs; the connection to Conjecture 1.1 is unconfirmed.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "fractional vertex-arboricity planar graphs conjecture Bonamy Kardos Kelly Postle",
+    "fractional vertex-arboricity planar graph at most two arXiv 2009.12189",
+    "\"fractional vertex-arboricity\" planar 2021 2022 2023 2024 2025 counterexample resolved"
+  ],
+  "notes": "Conjecture 1.1 is a fractional generalisation of the Albertson-Berman conjecture and would imply fractional chromatic number ≤ 4 for every planar graph. The source paper proves the bound for girth ≥ 5. arXiv:2505.16808 (Naserasr et al., 2025) appeared prominently in searches; AI-generated summaries inconsistently attributed a refutation of the Bonamy et al. conjecture to it, but direct fetching of the PDF showed the paper focuses on fractional arboricity (edge decomposition) of planar signed graphs, a distinct concept from fractional vertex-arboricity. Confidence is medium rather than high because the May 2025 paper could not be ruled out entirely without reading its full text."
+}

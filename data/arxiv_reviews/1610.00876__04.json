@@ -1,0 +1,60 @@
+{
+  "review_id": "1610.00876__04",
+  "safe_id": "1610.00876",
+  "arxiv_id": "1610.00876",
+  "conjecture_title": "Problem 12",
+  "paper_title": "Subdivisions in digraphs of large out-degree or large dichromatic number",
+  "published": "2016-10-04",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Problem 12 asks for the exact value of $\\mathrm{mader}_{\\vec{\\chi}}(\\vec{K}_n)$; the source paper only establishes the doubly-exponential upper bound $4^{n^2-2n+1}(n-1)+1$. The most relevant follow-up, Gishboliner–Steiner–Szabó (2020, arXiv:2008.09888), proves $\\mathrm{mader}_{\\vec{\\chi}}(F)=v(F)$ for octus digraphs and orientations of cactus graphs, but the complete digraph $\\vec{K}_n$ falls outside these classes and the exact value remains unknown. No paper resolving Problem 12 was found in the indexed literature.",
+  "since_posted": [
+    {
+      "title": "Dichromatic number and forced subdivisions",
+      "authors": "Lior Gishboliner, Raphael Steiner, Tibor Szabó",
+      "year": 2020,
+      "venue": "Journal of Combinatorial Theory, Series B",
+      "url": "https://arxiv.org/abs/2008.09888",
+      "arxiv_id": "2008.09888",
+      "doi": "10.1016/j.jctb.2021.06.003",
+      "kind": "partial",
+      "claim": "Proves $\\mathrm{mader}_{\\vec{\\chi}}(F)=v(F)$ for every octus digraph $F$ and for every orientation of a cactus graph; $\\vec{K}_n$ is not in these classes, so the exact value of $\\mathrm{mader}_{\\vec{\\chi}}(\\vec{K}_n)$ is not settled."
+    },
+    {
+      "title": "Oriented cycles in digraphs of large outdegree",
+      "authors": "Lior Gishboliner, Raphael Steiner, Tibor Szabó",
+      "year": 2020,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2008.13224",
+      "arxiv_id": "2008.13224",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves that every digraph with minimum out-degree at least $K(\\ell)$ contains a subdivision of every orientation of a cycle of length $\\ell$; addresses $\\mathrm{mader}_{\\delta^+}$ for oriented cycles rather than $\\mathrm{mader}_{\\vec{\\chi}}(\\vec{K}_n)$."
+    }
+  ],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2008.13224",
+      "verified": true,
+      "note": "Confirmed: proves the oriented-cycle conjecture (mader_{delta+} variant, Theorem 6) but does not address mader_chi(K_n). Internal-ref claims about kappa'-maderian and kappa-maderian pertain to a different pair of questions in the source paper, not Problem 12."
+    },
+    {
+      "arxiv_id": "2008.09888",
+      "verified": true,
+      "note": "Confirmed: proves mader_chi(F)=v(F) for octus digraphs and cactus orientations (Theorem 7, Corollary 8), published in JCTB. The internal-ref claim that this 'fully resolves the conjecture' is overstated for Problem 12: K_n is not an octus digraph or cactus orientation, so the exact value of mader_chi(K_n) remains open."
+    },
+    {
+      "arxiv_id": "2202.01006",
+      "verified": true,
+      "note": "Confirmed: 'Chordal directed graphs are not chi-bounded' by Aboulker, Bousquet, de Verclos; cites the source paper as broader context only, no direct progress on Problem 12."
+    }
+  ],
+  "search_queries": [
+    "mader dichromatic number complete digraph K_n subdivision 1610.00876",
+    "mader_chi K_n complete digraph dichromatic subdivision forced"
+  ],
+  "notes": "The search also surfaced arXiv:2101.04590 (Mészáros–Steiner, 2021, 'Complete minors in digraphs with given dichromatic number'), which improves bounds on forced complete *minors* under dichromatic number; minors are weaker than subdivisions and this paper does not resolve Problem 12. No paper giving the exact value of mader_chi(K_n) was found."
+}

@@ -1,0 +1,49 @@
+{
+  "review_id": "1302.2158__00",
+  "safe_id": "1302.2158",
+  "arxiv_id": "1302.2158",
+  "conjecture_title": "Conjecture 1.7",
+  "paper_title": "Three-coloring triangle-free graphs on surfaces II. 4-critical graphs in a disk",
+  "published": "2017-07-05",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "No paper was found that directly and verifiably proves Conjecture 1.7 from arXiv:1302.2158. Postle's arXiv:1710.06898 (2017) proves a linear isoperimetric bound for 3-list-coloring of graphs of girth at least five on surfaces and finiteness of 4-list-critical graphs of girth at least five on any fixed surface; this machinery is closely related and may imply the conjecture as a corollary for planar graphs, but the direct connection was not confirmed. The three internal references appear to address different conjectures from adjacent papers rather than Conjecture 1.7 specifically.",
+  "since_posted": [
+    {
+      "title": "3 List Coloring Graphs of Girth at least Five on Surfaces",
+      "authors": "Luke Postle",
+      "year": 2017,
+      "venue": "Journal of Combinatorial Theory, Series B",
+      "url": "https://arxiv.org/abs/1710.06898",
+      "arxiv_id": "1710.06898",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves a linear isoperimetric bound for 3-list-coloring of girth-at-least-five graphs on surfaces and finiteness of 4-list-critical graphs of girth at least five on any fixed surface, machinery that may imply the bounded-obstruction conclusion of Conjecture 1.7 as a special case for planar graphs; the explicit connection to Conjecture 1.7 was not verified."
+    }
+  ],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "1508.03663",
+      "verified": true,
+      "note": "Paper (Bonamy, Cranston, Postle) proves square (Delta+2)-choosability and paintability for planar graphs of girth at least 5, addressing a conjecture by Dvorak, Kral, Nejedly, and Skrekovski about square coloring — unrelated to Conjecture 1.7 of arXiv:1302.2158; the corpus attribution is for a different conjecture."
+    },
+    {
+      "arxiv_id": "1809.05439",
+      "verified": false,
+      "note": "Not fetched within the 5-call limit; corpus attribution refers to 'Conjecture 2' about fractional coloring of planar graphs of girth five, not Conjecture 1.7 of arXiv:1302.2158."
+    },
+    {
+      "arxiv_id": "1805.11507",
+      "verified": true,
+      "note": "Paper (Dvorak, Hu) proves minimal obstructions to list (3a:a)-colorability of girth-at-least-five graphs form a strongly hyperbolic family — thematically related to bounded-obstruction results but addresses a different colorability setting; does not appear to explicitly prove Conjecture 1.7."
+    }
+  ],
+  "search_queries": [
+    "Postle list-coloring planar graph girth five two cycles Dvorak Kral Thomas 1302.2158",
+    "Postle Thomas 5-list-coloring surfaces two precolored cycles planar girth five"
+  ],
+  "notes": "The source paper notes that Luke Postle (private communication) believed he had a proof at the time of submission. Postle's subsequent arXiv:1710.06898 proves a linear isoperimetric bound for 3-list-coloring of girth-at-least-five graphs, and the published JCTB version appears in ScienceDirect (doi lookup not performed). The conjecture is closely related to the bounded-obstruction / hyperbolic-family framework developed by Postle and Thomas; however, Conjecture 1.7 specifically concerns planar graphs with two precolored cycles of bounded length and 3-element lists elsewhere, and no paper was found that cites or proves it by name within the 5-call budget."
+}

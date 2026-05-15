@@ -1,0 +1,23 @@
+{
+  "review_id": "1812.02420__00",
+  "safe_id": "1812.02420",
+  "arxiv_id": "1812.02420",
+  "conjecture_title": "Problem 2.15",
+  "paper_title": "On the Complexity of Digraph Colourings and Vertex Arboricity",
+  "published": "2020-01-09",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "medium",
+  "summary": "Problem 2.15 asks for the complexity of deciding circular F-colourability for a fixed digraph F. Conjecture 2.16 (stated in the same paper) asserts this problem is NP-complete whenever F contains a directed cycle. Theorem 2.17 of the source paper already establishes NP-completeness for almost all such F: specifically for digon-free digraphs with directed cycles, digraphs whose symmetric part contains an odd cycle, and 2-colourable digraphs. The remaining open case is digraphs F that contain a directed cycle whose symmetric part is non-empty and bipartite. No external follow-up paper resolving the full conjecture was found in the literature.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "circular homomorphism digraph NP-complete complexity Hochstättler Schröder Steiner 1812.02420",
+    "circularly F-colourable digraph directed cycle NP-completeness complexity 2020 2021 2022 2023 2024",
+    "circular homomorphism digraph complexity \"circular F-colourable\" follow-up 2021 2022 2023 2024 2025",
+    "Hochstättler Steiner digraph coloring complexity \"circular\" 2021 2022 2023 2024 arxiv"
+  ],
+  "notes": "The source paper (arXiv:1812.02420, published DMTCS 2020) itself partially resolves the conjecture via Theorem 2.17, proving NP-completeness for three broad families of F. The open subcase involves digraphs F with a directed cycle and a non-empty bipartite symmetric part. No follow-up paper fully resolving Problem 2.15 / Conjecture 2.16 was found after 4 web searches and targeted fetches."
+}

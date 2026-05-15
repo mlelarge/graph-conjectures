@@ -1,0 +1,25 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Two-Colour-Conjecture (Conjecture 1.1)",
+    "statement_text": "Every oriented planar digraph $D$ is $2$-colourable.",
+    "context_text": "The Two-Colour-Conjecture was posed by Erdős and Neumann-Lara and independently by Skrekovski as a directed analogue of the Four-Colour-Theorem. The strongest prior partial result (Mohar and Li) established 2-colourability for oriented planar digraphs of girth at least 4. The paper's main theorem (Theorem 1.10) yields a proof of the conjecture for the non-trivial intersection of non-even digraphs with planar oriented digraphs.",
+    "attributed_to": "Erdős, Neumann-Lara, and Skrekovski",
+    "attributed_year": 1982,
+    "paper_contribution": "Proves that every non-even digraph has dichromatic number at most 2, which settles Conjecture 1.1 for all planar oriented digraphs that are non-even.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1903.02872",
+    "paper_title": "Colouring Non-Even Digraphs",
+    "paper_authors": [
+      "Marcelo Garlet Millani",
+      "Raphael Steiner",
+      "Sebastian Wiederrecht"
+    ],
+    "published": "2019-05-17",
+    "abs_url": "https://arxiv.org/abs/1903.02872",
+    "source": "pdf"
+  }
+]

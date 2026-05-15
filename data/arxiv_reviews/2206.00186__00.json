@@ -1,0 +1,34 @@
+{
+  "review_id": "2206.00186__00",
+  "safe_id": "2206.00186",
+  "arxiv_id": "2206.00186",
+  "conjecture_title": "Informal conjecture on improving the $g(t)$ lower bound",
+  "paper_title": "Dense minors of graphs with independence number two",
+  "published": "2022-06-01",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The conjecture that the factor $1/4$ in $g(t) \\geq t(t+2)/8$ can be significantly improved has seen partial progress. Hendrey, Norin, Steiner, and Turcotte (arXiv:2307.01184, J. Graph Theory 2025) proved that graphs of average degree at least $t-1$ contain a $t$-vertex minor with at least $(\\sqrt{2}-1-o(1))\\binom{t}{2}$ edges — improving the density from $1/4$ to approximately $0.414$ — with an upper bound of $3/4+o(1)$. Since every graph with chromatic number $\\geq t$ contains a $t$-critical subgraph of minimum degree $\\geq t-1$, this result improves $g(t)$ accordingly. The conjecture's harder target of density $9/10$ (at most one tenth of edges missing) remains open.",
+  "since_posted": [
+    {
+      "title": "Finding dense minors using average degree",
+      "authors": "Kevin Hendrey, Sergey Norin, Raphael Steiner, Jérémie Turcotte",
+      "year": 2023,
+      "venue": "Journal of Graph Theory",
+      "url": "https://arxiv.org/abs/2307.01184",
+      "arxiv_id": "2307.01184",
+      "doi": "10.1002/jgt.23169",
+      "kind": "partial",
+      "claim": "Improves the density lower bound for $t$-vertex minors from $1/4$ to $(\\sqrt{2}-1-o(1))$ under the average degree $\\geq t-1$ condition (which applies to graphs with chromatic number $\\geq t$ via $t$-critical subgraphs), and shows the bound cannot exceed $3/4+o(1)$; the target density $9/10$ remains open."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "dense minors chromatic number g(t) lower bound Norin Seymour 2206.00186",
+    "dense minor chromatic number Mader theorem edge density improvement 2023 2024 2025",
+    "arXiv cite 2206.00186 dense minors graph chromatic number minor edge density follow-up"
+  ],
+  "notes": "The conjecture is informal and does not have a canonical name. The follow-up 2307.01184 (Hendrey–Norin–Steiner–Turcotte) explicitly states its motivation as improving the $1/4$ density lower bound and achieves $\\sqrt{2}-1 \\approx 0.414$ for the average degree condition; the connection to the chromatic number formulation of $g(t)$ holds via the standard reduction through $t$-critical subgraphs. The upper bound $3/4+o(1)$ in the same paper shows there is still a significant gap before any density close to $9/10$ could hold even under average degree conditions."
+}

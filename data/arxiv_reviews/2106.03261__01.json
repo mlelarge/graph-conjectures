@@ -1,0 +1,24 @@
+{
+  "review_id": "2106.03261__01",
+  "safe_id": "2106.03261",
+  "arxiv_id": "2106.03261",
+  "conjecture_title": "Open Problem 2.17",
+  "paper_title": "Which graphs can be counted in $C_4$-free graphs?",
+  "published": "2021-06-06",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The question of whether the dodecahedral and Petersen graphs (both 3-regular, girth 5) are countable in $C_4$-free graphs remains open. The source paper by Conlon, Fox, Sudakov, and Zhao (published in Pure and Applied Mathematics Quarterly 18 (2022), 2413--2432) explicitly poses this as a central open problem, noting that their 'islands and bridges' recursive construction appears insufficient for 3-regular graphs of girth at least 5. No follow-up paper resolving the problem in either direction was found across five targeted web searches.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Conlon Fox Sudakov Zhao \"C4-free\" countable graphs Petersen dodecahedral 2021",
+    "arxiv 2106.03261 \"countable\" Petersen graph girth 5 C4-free homomorphism counting",
+    "\"Petersen graph\" \"dodecahedral\" countable \"C4-free\" graph counting lemma 2022 2023 2024 2025",
+    "Conlon Fox Sudakov Zhao \"girth 5\" \"3-regular\" countable graph C4-free 2022 2023 2024",
+    "Yufei Zhao research page for follow-up to arXiv 2106.03261"
+  ],
+  "notes": "No follow-up found after five web calls. The conjecture is ~5 years old (paper appeared in Pure and Applied Mathematics Quarterly in 2022); the absence of any hit across author pages, arXiv, and general keyword searches is strong evidence the problem remains open. The paper notes that countability requires girth at least 5 and that any d-regular countable graph must satisfy d <= 3, so the Petersen and dodecahedral graphs are the simplest cubic cases."
+}

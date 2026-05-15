@@ -1,0 +1,117 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Gyárfás-Sumner Conjecture",
+    "statement_text": "Given two graphs $F_1$ and $F_2$ the class of graphs with no induced $F_1$ or $F_2$ has bounded chromatic number if and only if one of $F_1$, $F_2$ is a complete graph and the other is a forest.",
+    "context_text": "This conjecture, described as 'tantalizing and still widely open', characterizes the minimal finite families whose induced-subgraph-free classes have bounded chromatic number. The 'only if' direction follows from cliques having unbounded chromatic number and Erdős's high-girth high-chromatic-number construction. The paper extends this interrogation to digraphs via the dichromatic number.",
+    "attributed_to": "Gyárfás and Sumner",
+    "attributed_year": null,
+    "paper_contribution": "Proposes Conjecture 4.2 as a digraph analog characterizing heroic sets of size three in terms of dichromatic number, proves the 'only if' direction of that analog (Section 6.1), and establishes positive special cases (Theorems 4.1 and 4.3).",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2009.13319",
+    "paper_title": "Extension of Gyarfas-Sumner conjecture to digraphs",
+    "paper_authors": [
+      "Pierre Aboulker",
+      "Pierre Charbit",
+      "Reza Naserasr"
+    ],
+    "published": "2020-09-28",
+    "abs_url": "https://arxiv.org/abs/2009.13319",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Problem 1.2",
+    "statement_text": "What are the finite sets $\\mathcal{F}$ of digraphs for which the class $\\mathrm{Forb}_{\\mathrm{ind}}(\\mathcal{F})$ has bounded dichromatic number?",
+    "context_text": "This is the central problem of the paper, extending the Gyárfás-Sumner interrogation to directed graphs via the dichromatic number $\\vec{\\chi}$. A finite set $\\mathcal{F}$ of digraphs is called heroic if $\\mathrm{Forb}_{\\mathrm{ind}}(\\mathcal{F})$ has bounded dichromatic number. The paper focuses primarily on characterizing heroic sets of size three.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2009.13319",
+    "paper_title": "Extension of Gyarfas-Sumner conjecture to digraphs",
+    "paper_authors": [
+      "Pierre Aboulker",
+      "Pierre Charbit",
+      "Reza Naserasr"
+    ],
+    "published": "2020-09-28",
+    "abs_url": "https://arxiv.org/abs/2009.13319",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 4.2",
+    "statement_text": "Let $H$ be a hero and let $F$ be an oriented forest. The set $\\{\\overleftrightarrow{K_2}, H, F\\}$ is heroic if and only if: either $F$ is the disjoint union of oriented stars, or $H$ is a transitive tournament.",
+    "context_text": "This is the main conjecture of the paper, a digraph analog of the Gyárfás-Sumner conjecture for oriented graphs. The 'only if' direction is proved in Section 6.1. The case where both conditions hold simultaneously (H a transitive tournament and F a disjoint union of oriented stars) is already settled by Chudnovsky, Scott and Seymour [6].",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "PDF source — key symbols ($\\overleftrightarrow{K_2}$, dichromatic number) inferred from context; the dichromatic number notation appears as '(cid:126)χ' in the raw PDF extraction.",
+    "arxiv_id": "2009.13319",
+    "paper_title": "Extension of Gyarfas-Sumner conjecture to digraphs",
+    "paper_authors": [
+      "Pierre Aboulker",
+      "Pierre Charbit",
+      "Reza Naserasr"
+    ],
+    "published": "2020-09-28",
+    "abs_url": "https://arxiv.org/abs/2009.13319",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 4.4",
+    "statement_text": "Given an oriented forest $F$ and for every integer $k$, $\\{\\overleftrightarrow{K_2}, K_k, F\\}$ is heroic.",
+    "context_text": "This conjecture is equivalent to the special case of Conjecture 4.2 where $H = TT_k$ is a transitive tournament, since every tournament on at least $2k$ vertices contains $TT_k$ as an induced subdigraph. It generalises the heroic-set result for $\\{\\overleftrightarrow{K_2}, K_k, P^+(3)\\}$ proved in Theorem 4.3, where $K_k$ denotes the digraph on $k$ vertices with no arc.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "PDF source — the raw text reads 'for every integer l' but uses $K_k$ in the set; the variable $l$ is likely a PDF extraction artifact for $k$. Here $K_k$ denotes the independent set (edgeless digraph) on $k$ vertices, as per the paper's notation.",
+    "arxiv_id": "2009.13319",
+    "paper_title": "Extension of Gyarfas-Sumner conjecture to digraphs",
+    "paper_authors": [
+      "Pierre Aboulker",
+      "Pierre Charbit",
+      "Reza Naserasr"
+    ],
+    "published": "2020-09-28",
+    "abs_url": "https://arxiv.org/abs/2009.13319",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Research direction: minimal heroic tournament families",
+    "statement_text": "Characterize all finite and minimal families $\\mathcal{H} = \\{H_1, H_2, \\ldots, H_k\\}$ of tournaments such that $\\{\\overrightarrow{K_2}, \\overleftrightarrow{K_2}, H_1, H_2, \\ldots, H_k\\}$ is a heroic set.",
+    "context_text": "Theorem 2.2 of Berger et al. [4] characterizes minimal heroic sets of this form with $|\\mathcal{H}|=1$ (i.e., single-hero extensions). The authors note that a minimal heroic subset of order 2 or more cannot contain a hero tournament, making the general classification a natural open direction.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Expressed as 'an interesting direction of research' in the paper prose, without a formal labelled conjecture or problem environment.",
+    "arxiv_id": "2009.13319",
+    "paper_title": "Extension of Gyarfas-Sumner conjecture to digraphs",
+    "paper_authors": [
+      "Pierre Aboulker",
+      "Pierre Charbit",
+      "Reza Naserasr"
+    ],
+    "published": "2020-09-28",
+    "abs_url": "https://arxiv.org/abs/2009.13319",
+    "source": "pdf"
+  }
+]

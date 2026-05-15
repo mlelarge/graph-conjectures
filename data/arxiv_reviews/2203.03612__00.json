@@ -1,0 +1,24 @@
+{
+  "review_id": "2203.03612__00",
+  "safe_id": "2203.03612",
+  "arxiv_id": "2203.03612",
+  "conjecture_title": "Girth Conjecture (strengthening of Theorem 3)",
+  "paper_title": "Induced subgraphs of induced subgraphs of large chromatic number",
+  "published": "2023-09-18",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The conjecture asks whether, for every triangle-free graph F, one can find graphs G of arbitrarily large chromatic number with the same girth as F in which every F-free induced subgraph is c_F-colourable, strengthening Theorem 3 of the source paper (which only guarantees G is triangle-free, not that it matches the girth of F). The paper itself proves the weaker analogue where girth is replaced by odd girth (Theorem 4), but the full girth version remains unresolved. No subsequent work proving or disproving the conjecture was found in a wide search of the literature through May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "triangle-free graph girth chromatic number F-free induced subgraph colourable 2203.03612",
+    "Girão Illingworth Powierski Savery Scott induced subgraphs large chromatic number girth conjecture",
+    "triangle-free girth chromatic number induced subgraph coloring 2024 2025 arxiv graph theory",
+    "WebFetch: https://sites.google.com/view/antonio-girao/papers-and-preprints",
+    "\"same girth\" \"F-free\" induced subgraph \"chromatic number\" conjecture resolved proved arxiv 2024 2025"
+  ],
+  "notes": "No follow-up found. The partial result in the source paper (Theorem 4) replaces girth with odd girth, which is weaker. The conjecture is recent (posted 2022, published 2023 in Combinatorica) and the absence of follow-up is consistent with it being genuinely open."
+}

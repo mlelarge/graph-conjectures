@@ -1,0 +1,50 @@
+[
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Question 1 (Hörsch) — Arborescence balancing in digraphs",
+    "statement_text": "Is there a constant $C$ such that the following holds for every digraph $D$ that is the union of two arc-disjoint arborescences? The edges of $D$ can be coloured blue and red such that the blue and red graphs are both arborescences and the blue and red out-degrees of each vertex differ by at most $C$?",
+    "context_text": "Hörsch asked whether the balancing result for undirected double trees extends to digraphs, with the role of spanning trees played by arborescences (rooted trees with all edges directed away from the root). The question asks for a universal constant bound on the out-degree imbalance.",
+    "attributed_to": "Hörsch",
+    "attributed_year": null,
+    "paper_contribution": "Provides an infinite family of counterexamples showing that any valid $C$ must satisfy $C > |V(D)| - 2$, answering Hörsch's question in the negative.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2205.04984",
+    "paper_title": "Balancing connected colourings of graphs",
+    "paper_authors": [
+      "Freddie Illingworth",
+      "Emil Powierski",
+      "Alex Scott",
+      "Youri Tamitegama"
+    ],
+    "published": "2022-05-10",
+    "abs_url": "https://arxiv.org/abs/2205.04984",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Question 2 (Hörsch) — Algorithmic complexity of perfectly balanced double tree decomposition",
+    "statement_text": "Does there exist a polynomial time algorithm to decide if a given Eulerian double tree has a perfectly balanced double tree decomposition?",
+    "context_text": "Hörsch asked this algorithmic question about the computational complexity of deciding whether an Eulerian double tree admits a perfectly balanced decomposition into two spanning trees. It is a natural computational companion to the existential balancing results.",
+    "attributed_to": "Hörsch",
+    "attributed_year": null,
+    "paper_contribution": "Answers in the negative by reducing the NP-complete problem of finding two edge-disjoint Hamiltonian cycles in a 4-regular graph (Péroche) to this decision problem, showing the problem is NP-hard.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2205.04984",
+    "paper_title": "Balancing connected colourings of graphs",
+    "paper_authors": [
+      "Freddie Illingworth",
+      "Emil Powierski",
+      "Alex Scott",
+      "Youri Tamitegama"
+    ],
+    "published": "2022-05-10",
+    "abs_url": "https://arxiv.org/abs/2205.04984",
+    "source": "pdf"
+  }
+]

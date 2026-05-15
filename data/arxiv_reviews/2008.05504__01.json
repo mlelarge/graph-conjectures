@@ -1,0 +1,54 @@
+{
+  "review_id": "2008.05504__01",
+  "safe_id": "2008.05504",
+  "arxiv_id": "2008.05504",
+  "conjecture_title": "Conjecture 3",
+  "paper_title": "On the tree-width of even-hole-free graphs",
+  "published": "2020-08-12",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "solved",
+  "confidence": "high",
+  "summary": "Conjecture 3 from arXiv:2008.05504 was proved by Korhonen (arXiv:2203.13233, JCTB 2023), who showed that every graph of bounded maximum degree and sufficiently large treewidth contains a large wall or the line graph of a large wall as an induced subgraph. Prior partial progress by Abrishami, Chudnovsky, Dibek, Hajebi, and Rzążewski (arXiv:2108.01162) established the conclusion for $S_{t,t,t}$-free graphs and $(t$-theta, $t$-pyramid)-free graphs of bounded degree and large treewidth.",
+  "since_posted": [
+    {
+      "title": "Induced subgraphs and tree decompositions II. Toward walls and their line graphs in graphs of bounded degree",
+      "authors": "Tara Abrishami, Maria Chudnovsky, Cemil Dibek, Sepehr Hajebi, Paweł Rzążewski",
+      "year": 2021,
+      "venue": "Journal of Combinatorial Theory, Series B",
+      "url": "https://arxiv.org/abs/2108.01162",
+      "arxiv_id": "2108.01162",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves the conjecture for $S_{t,t,t}$-free bounded-degree graphs (obtaining the line graph of a subdivision of $W_{k\\times k}$ as an induced subgraph) and for $(t$-theta, $t$-pyramid)-free graphs of bounded degree and sufficiently large treewidth."
+    },
+    {
+      "title": "Grid Induced Minor Theorem for Graphs of Small Degree",
+      "authors": "Tuukka Korhonen",
+      "year": 2022,
+      "venue": "Journal of Combinatorial Theory, Series B",
+      "url": "https://arxiv.org/abs/2203.13233",
+      "arxiv_id": "2203.13233",
+      "doi": null,
+      "kind": "proof",
+      "claim": "Proves the conjecture of Aboulker, Adler, Kim, Sintiari, and Trotignon in full: every graph of bounded maximum degree and sufficiently large treewidth contains a large wall or the line graph of a large wall as an induced subgraph, with explicit bounds f(k,d) = O(k^10 + 2^(d^5))."
+    }
+  ],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2108.01162",
+      "verified": true,
+      "note": "Confirmed as proving partial results toward Conjecture 3: the wall-or-line-graph-of-wall conclusion for S_{t,t,t}-free and (t-theta, t-pyramid)-free bounded-degree graphs of large treewidth."
+    },
+    {
+      "arxiv_id": "2507.06169",
+      "verified": true,
+      "note": "This paper constructs a simpler counterexample to a conjecture attributed to Trotignon (about layered-wheel-like graphs, with arbitrarily large girth), not to Conjecture 3 of arXiv:2008.05504; it is not directly relevant to the conjecture under review."
+    }
+  ],
+  "search_queries": [
+    "induced wall treewidth bounded degree conjecture Aboulker Adler Kim Sintiari Trotignon 2008.05504"
+  ],
+  "notes": "Conjecture 3 is solved by Korhonen (arXiv:2203.13233, JCTB Vol. 160, 2023, pp. 206-214), which the paper's abstract explicitly states proves the Aboulker, Adler, Kim, Sintiari, Trotignon conjecture. The internal reference arXiv:2507.06169 concerns a different conjecture of Trotignon and is not directly relevant to Conjecture 3."
+}

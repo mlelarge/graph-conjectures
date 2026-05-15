@@ -1,0 +1,34 @@
+{
+  "review_id": "1709.04440__00",
+  "safe_id": "1709.04440",
+  "arxiv_id": "1709.04440",
+  "conjecture_title": "Question 1.4",
+  "paper_title": "A polynomial bound for the arithmetic $k$-cycle removal lemma in vector spaces",
+  "published": "2018-09-04",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "medium",
+  "summary": "Question 1.4 asks for the exact optimal exponent $C_{p,k}$ in Theorem 1.3. The source paper achieves $C_{p,k} = \\frac{k-2}{c_{p,3}}+1$ and shows the lower bound is at least $\\frac{k-2}{c_{p,k}}+1$, leaving a gap of $O(\\log p)$. A direct follow-up by L.M. Lovász (arXiv:1804.08837, 2019) tightens the k-colored sum-free bound in $\\mathbb{Z}_m^n$—showing the lower-bound construction is essentially sharp—thereby pinning down $c_{p,k}$ precisely and sharpening the lower bound on $C_{p,k}$. However, closing the remaining gap between the upper bound (which uses $c_{p,3}$) and the now-exact lower bound (using $c_{p,k}$) remains open.",
+  "since_posted": [
+    {
+      "title": "A lower bound for the $k$-multicolored sum-free problem in $\\mathbb{Z}^n_m$",
+      "authors": "László Miklós Lovász",
+      "year": 2019,
+      "venue": "Proceedings of the London Mathematical Society",
+      "url": "https://arxiv.org/abs/1804.08837",
+      "arxiv_id": "1804.08837",
+      "doi": "10.1112/plms.12223",
+      "kind": "partial",
+      "claim": "Proves a lower bound for k-colored sum-free sets in $\\mathbb{Z}_m^n$ that matches (up to lower-order terms) the known upper bound when $m$ is a prime power, thereby determining $c_{p,k}$ and sharpening the lower bound on the exponent $C_{p,k}$ from Question 1.4."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Fox Lovász Sauermann arithmetic k-cycle removal lemma vector spaces exponent 1709.04440",
+    "arithmetic cycle removal lemma vector spaces k-colored sum-free sets exponent optimal 2019 2020 2021 2022 2023 2024",
+    "Lovász k-multicolored sum-free lower bound exponent 1709.04440 2019 2020 2021"
+  ],
+  "notes": "arXiv:1804.08837 (Lovász 2019) makes concrete progress by tightening the k-colored sum-free bound, which determines the lower bound on $C_{p,k}$. The precise value of $C_{p,k}$ (closing the gap between the $c_{p,3}$-based upper bound and the $c_{p,k}$-based lower bound) remains open as of the search date. No further post-2019 papers resolving the full question were found within the 5-call cap."
+}

@@ -1,0 +1,22 @@
+{
+  "review_id": "2507.10840__01",
+  "safe_id": "2507.10840",
+  "arxiv_id": "2507.10840",
+  "conjecture_title": "Problem 5.1",
+  "paper_title": "Covering Complete Geometric Graphs by Monotone Paths",
+  "published": "2026-01-10",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Problem 5.1 asks whether there exists a constant c > 1/2 such that for infinitely many n there are n-element point sets A where every crossing-free-path covering of K_n[A] requires at least cn paths. The source paper proves that every complete convex geometric graph decomposes into n/2 + o(n) plane subgraphs (Pach–Saghafian–Schnider), establishing n/2 as a known threshold, but whether the crossing-free path covering number can exceed cn for c > 1/2 on general point sets remains open. No subsequent paper resolving this problem was found in a wide web search.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "complete geometric graph crossing-free paths covering lower bound Dumitrescu Pach Saghafian Scott 2026",
+    "monotone paths covering complete geometric graph plane subgraphs n/2 lower bound arxiv 2507.10840",
+    "arxiv 2507.06477 plane covering paths complete geometric graph"
+  ],
+  "notes": "No follow-up resolving Problem 5.1 found. The concurrent paper arXiv:2507.06477 (An Improved Bound for Plane Covering Paths) addresses a different problem (covering point sets by plane paths, bound 6n/7) and does not cite or resolve Problem 5.1. The source paper itself provides quadratic lower bounds for monotone paths (requiring ≥ n²/15 monotone paths) but the open question concerns the linear regime for general crossing-free paths."
+}

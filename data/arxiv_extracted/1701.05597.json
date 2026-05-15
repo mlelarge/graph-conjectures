@@ -1,0 +1,68 @@
+[
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.8",
+    "statement_text": "Every multigraph is widespread.",
+    "context_text": "Scott [6] conjectured that every multigraph is pervasive in the ideal of all graphs, but this was disproved by a construction in [5]. The authors introduce the notion of 'widespread' and present Conjecture 1.8 as a resuscitated version of Scott's conjecture. They note they are very far from proving it, cannot verify it even for every chandelier, and that all multigraphs proved widespread so far are subdivisions of outerplanar graphs.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1701.05597",
+    "paper_title": "Induced subgraphs of graphs with large chromatic number. VI. Banana trees",
+    "paper_authors": [
+      "Alex Scott",
+      "Paul Seymour"
+    ],
+    "published": "2019-08-27",
+    "abs_url": "https://arxiv.org/abs/1701.05597",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.10",
+    "statement_text": "For all graphs $J$ and for all integers $\\tau \\geq 0$, there exists $c$ such that if $G$ is a graph with chromatic number more than $c$, then either some induced subgraph of $G$ is a subdivision of $J$ or $\\chi_2(G) > \\tau$.",
+    "context_text": "This conjecture is shown to be equivalent to Conjecture 1.8 (every multigraph is widespread), using the result from [3] that for all $\\rho \\geq 2$ and every multigraph $J$, every $\\rho$-controlled class of $J$-subdivision-free graphs is $2$-controlled. The authors present 1.10 as a nicer reformulation of 1.8, though they do not use it directly in the paper.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "PDF source — subscript in $\\chi_2(G)$ rendered as 'χ2(G)' in the extraction; reconstructed as $\\chi_2(G)$.",
+    "arxiv_id": "1701.05597",
+    "paper_title": "Induced subgraphs of graphs with large chromatic number. VI. Banana trees",
+    "paper_authors": [
+      "Alex Scott",
+      "Paul Seymour"
+    ],
+    "published": "2019-08-27",
+    "abs_url": "https://arxiv.org/abs/1701.05597",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Open Question: first pervasiveness characterisation",
+    "statement_text": "Which multigraphs $H$ have the property that for all $\\kappa$ there exists $c$ such that every $H$-subdivision-free graph with clique number at most $\\kappa$ has chromatic number at most $c$?",
+    "context_text": "The paper poses two bullet-point questions about characterising multigraphs $H$ by a pervasiveness-type condition. For the second (stronger) question, which involves all subdivisions of $H$, the answer is known for controlled classes; the first question, which asks about $H$-subdivision-free graphs directly, is explicitly stated to remain open.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "No numbered label in the paper; appears as a bullet-point question with the subsequent remark 'the first remains open'.",
+    "arxiv_id": "1701.05597",
+    "paper_title": "Induced subgraphs of graphs with large chromatic number. VI. Banana trees",
+    "paper_authors": [
+      "Alex Scott",
+      "Paul Seymour"
+    ],
+    "published": "2019-08-27",
+    "abs_url": "https://arxiv.org/abs/1701.05597",
+    "source": "pdf"
+  }
+]

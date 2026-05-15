@@ -1,0 +1,122 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.1",
+    "statement_text": "For all $k, r \\in \\mathbb{N}$ there is an $n \\in \\mathbb{N}$ such that for every graph $G$ with $\\chi(G) \\geq n$ and $\\omega(G) \\leq k$, there is an induced subgraph $H$ of $G$ with $\\chi(H) \\geq r$ and $\\omega(H) = 2$.",
+    "context_text": "This conjecture is the induced-subgraph analogue of a theorem of Rödl on non-induced subgraphs of high chromatic number. Its origin is described as unclear in the paper: it is attributed to Louis Esperet in [10] (Scott–Seymour survey, 2020), while a footnote states it first appeared in Nešetřil [6] (1979) attributed to Fred Galvin and Vojtěch Rödl.",
+    "attributed_to": "Galvin and Rödl",
+    "attributed_year": 1979,
+    "paper_contribution": "Disproves Conjecture 1.1 for all $r \\geq 5$ by constructing, for every $n$, a graph $G$ with $\\chi(G) \\geq n$ and $\\omega(G) \\leq 3$ such that every induced subgraph $H$ with $\\omega(H) \\leq 2$ satisfies $\\chi(H) \\leq 4$; the case $r = 4$ remains open.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Attributed to Louis Esperet in Scott–Seymour [10]; footnote clarifies original source is Nešetřil 1979 [6], attributed to Galvin and Rödl.",
+    "arxiv_id": "2201.08204",
+    "paper_title": "A counterexample to a conjecture about triangle-free induced subgraphs of graphs with large chromatic number",
+    "paper_authors": [
+      "Alvaro Carbonero",
+      "Patrick Hompe",
+      "Benjamin Moore",
+      "Sophie Spirkl"
+    ],
+    "published": "2022-09-15",
+    "abs_url": "https://arxiv.org/abs/2201.08204",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Question 3.1",
+    "statement_text": "Are there graphs with clique number $3$ and arbitrarily large chromatic number whose all triangle-free induced subgraphs have chromatic number at most $3$?",
+    "context_text": "After Theorem 1.3 disposes of all cases $r \\geq 5$ in Conjecture 1.1, the case $r = 4$ is the only one remaining open. This question, which captures exactly that case, was first asked by James Davies (private communication).",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "First asked by James Davies (private communication), as acknowledged in the paper.",
+    "arxiv_id": "2201.08204",
+    "paper_title": "A counterexample to a conjecture about triangle-free induced subgraphs of graphs with large chromatic number",
+    "paper_authors": [
+      "Alvaro Carbonero",
+      "Patrick Hompe",
+      "Benjamin Moore",
+      "Sophie Spirkl"
+    ],
+    "published": "2022-09-15",
+    "abs_url": "https://arxiv.org/abs/2201.08204",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Question 3.2",
+    "statement_text": "Is there a function $f : \\mathbb{N} \\to \\mathbb{N}$ such that for every digraph $D$ with no induced directed cycle of odd length, we have $\\vec{\\chi}(D) \\leq f(\\omega(D))$?",
+    "context_text": "Motivated by Theorem 1.5, which shows that the digraph analogue of the Scott–Seymour theorem on odd holes fails, the authors ask whether banning all odd-length induced directed cycles forces the dichromatic number to be bounded by a function of the clique number.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "The paper states that Questions 3.2 and 3.4 were subsequently answered in the negative by the same authors in arXiv:2203.15575.",
+    "arxiv_id": "2201.08204",
+    "paper_title": "A counterexample to a conjecture about triangle-free induced subgraphs of graphs with large chromatic number",
+    "paper_authors": [
+      "Alvaro Carbonero",
+      "Patrick Hompe",
+      "Benjamin Moore",
+      "Sophie Spirkl"
+    ],
+    "published": "2022-09-15",
+    "abs_url": "https://arxiv.org/abs/2201.08204",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Question 3.3",
+    "statement_text": "Is there a function $f : \\mathbb{N} \\to \\mathbb{N}$ such that for every digraph $D$ with no induced directed cycle of length at least $4$, we have $\\vec{\\chi}(D) \\leq f(\\omega(D))$?",
+    "context_text": "This asks whether the directed analogue of chordal graphs (digraphs forbidding induced directed cycles of length $\\geq 4$) has dichromatic number bounded by a function of the clique number.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "Answered in the negative by Aboulker, Bousquet, and de Verclos [1] (arXiv:2202.01006, 2022), as noted in the paper itself.",
+    "arxiv_id": "2201.08204",
+    "paper_title": "A counterexample to a conjecture about triangle-free induced subgraphs of graphs with large chromatic number",
+    "paper_authors": [
+      "Alvaro Carbonero",
+      "Patrick Hompe",
+      "Benjamin Moore",
+      "Sophie Spirkl"
+    ],
+    "published": "2022-09-15",
+    "abs_url": "https://arxiv.org/abs/2201.08204",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Question 3.4",
+    "statement_text": "For which $l$ is there a function $f : \\mathbb{N} \\to \\mathbb{N}$ such that for every digraph $D$ with no induced directed cycle of length not equal to $l$, we have $\\vec{\\chi}(D) \\leq f(\\omega(D))$?",
+    "context_text": "A more general question subsuming Questions 3.2 and 3.3, asking which forbidden induced cycle lengths force the dichromatic number to be bounded by a function of the clique number.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "Answered in the negative by the paper's own authors in arXiv:2203.15575 [2], building on ideas of Aboulker–Bousquet–de Verclos.",
+    "arxiv_id": "2201.08204",
+    "paper_title": "A counterexample to a conjecture about triangle-free induced subgraphs of graphs with large chromatic number",
+    "paper_authors": [
+      "Alvaro Carbonero",
+      "Patrick Hompe",
+      "Benjamin Moore",
+      "Sophie Spirkl"
+    ],
+    "published": "2022-09-15",
+    "abs_url": "https://arxiv.org/abs/2201.08204",
+    "source": "pdf"
+  }
+]

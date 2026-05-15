@@ -1,0 +1,34 @@
+{
+  "review_id": "1604.07976__00",
+  "safe_id": "1604.07976",
+  "arxiv_id": "1604.07976",
+  "conjecture_title": "Conjecture 1",
+  "paper_title": "Smaller Extended Formulations for the Spanning Tree Polytope of Bounded-genus Graphs",
+  "published": "2017-01-09",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 1 from arXiv:1604.07976 — that xc(P_{sp.trees}(G)) = O(|V|) for any connected graph G embedded in a fixed surface — remains open as of 2026. The best known upper bound for fixed-genus graphs is still O(n^{3/2}) (the bound from the source paper). A 2021 follow-up by Aprile, Fiorini, Huynh, Joret, and Wood (arXiv:2106.11945) extends the O(n^{3/2}) result to all proper minor-closed classes and beyond, but does not improve the exponent for surface-embedded graphs or establish the conjectured linear bound.",
+  "since_posted": [
+    {
+      "title": "Smaller extended formulations for spanning tree polytopes in minor-closed classes and beyond",
+      "authors": "Manuel Aprile, Samuel Fiorini, Tony Huynh, Gwenaël Joret, David R. Wood",
+      "year": 2021,
+      "venue": "Electronic Journal of Combinatorics",
+      "url": "https://arxiv.org/abs/2106.11945",
+      "arxiv_id": "2106.11945",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves xc(P_{sp.trees}(G)) = O(n^{3/2}) for connected n-vertex graphs in any proper minor-closed class, extending the O(n^{3/2}) bound of the source paper beyond genus-bounded graphs, but leaving the conjectured O(|V|) bound for fixed-surface graphs unresolved."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "spanning tree polytope extension complexity genus surface embedded graphs linear bound",
+    "Fiorini Huynh Joret Pashkovich \"spanning tree polytope\" \"bounded-genus\" extension complexity 1604.07976",
+    "\"extension complexity\" \"spanning tree\" \"fixed surface\" OR \"fixed genus\" linear O(n) 2022 2023 2024 2025"
+  ],
+  "notes": "The O(n) bound is known for planar graphs (Williams 2002) and is the conjectured bound for all fixed-genus surfaces. The 2021 paper arXiv:2106.11945 (published in EJC v28i4p47) is the only identified follow-up; it broadens the O(n^{3/2}) result but does not break the exponent barrier for surface-embedded graphs. Tony Huynh's paper list (verified via WebFetch) confirms no further paper resolving this conjecture."
+}

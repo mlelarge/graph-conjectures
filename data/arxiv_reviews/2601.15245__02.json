@@ -1,0 +1,23 @@
+{
+  "review_id": "2601.15245__02",
+  "safe_id": "2601.15245",
+  "arxiv_id": "2601.15245",
+  "conjecture_title": "Problem 6.2",
+  "paper_title": "Coloring small locally sparse degenerate graphs and related problems",
+  "published": "2026-01-21",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Problem 6.2 from arXiv:2601.15245 asks whether every $d$-degenerate triangle-free graph with maximum degree at most $e^{d^{1-\\varepsilon}}$ satisfies some chromatic upper bound (full statement truncated in source); an affirmative answer would imply immersion analogues of Hadwiger's conjecture as conjectured by Lescure and Meyniel (1988). The paper was posted in January 2026 and no subsequent preprint or journal article resolving or making partial progress on this specific problem was found in web searches conducted in May 2026. The closely related paper arXiv:2501.18238 (Martinsson, January 2025) proves triangle-free $d$-degenerate graphs have fractional chromatic number at most $(4+o(1))d/\\ln d$, but predates the source paper and does not reference Problem 6.2.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Bradač Fox Steiner Sudakov Zhang degenerate triangle-free coloring 2601.15245",
+    "degenerate triangle-free graph chromatic number immersion Hadwiger Lescure Meyniel 2025 2026",
+    "d-degenerate triangle-free chromatic number Lovász Local Lemma random coloring 2025 2026 arxiv",
+    "\"2601.15245\" cite follow-up degenerate triangle-free immersion 2026"
+  ],
+  "notes": "No follow-up found. The conjecture is very recent (January 2026). The key challenge noted in the paper is localizing the random coloring process to allow use of the Lovász Local Lemma in place of a union bound. A related preprint arXiv:2501.18238 (Martinsson 2025) on fractional chromatic number of triangle-free d-degenerate graphs predates the source paper and is not a follow-up to Problem 6.2."
+}

@@ -1,0 +1,23 @@
+{
+  "review_id": "2208.10074__00",
+  "safe_id": "2208.10074",
+  "arxiv_id": "2208.10074",
+  "conjecture_title": "Conjecture (product structure with bounded tree-depth and tight clique size)",
+  "paper_title": "Product structure of graph classes with strongly sublinear separators",
+  "published": "2023-09-27",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The conjecture in its strongest form — that every n-vertex graph in a hereditary class with O(n^{1-\\epsilon}) separators is a subgraph of the strong product of a graph H with bounded (constant) tree-depth and a complete graph of size O(n^{1-\\epsilon}) — remains open. The source paper itself proves two approximations: constant tree-depth with clique size O(n^{1-\\epsilon+\\delta}) for any \\delta > 0, and exact clique size O(n^{1-\\epsilon}) with tree-depth O(\\log\\log n); both gaps are shown to be inherent via isoperimetric inequalities on grid graphs. No subsequent paper resolving the full conjecture was found in a search covering arXiv through 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Dvořák Wood \"strongly sublinear separators\" \"tree-depth\" \"strong product\" 2208.10074",
+    "\"product structure\" \"tree-depth\" \"sublinear separators\" hereditary graph class strong product clique",
+    "arxiv \"product structure\" \"tree-depth\" separator \"strong product\" conjecture Dvořák Wood 2024 2025",
+    "arxiv 2410.20333 product structure tree-decompositions Liu Norin Wood"
+  ],
+  "notes": "Search found two potentially related post-2023 arXiv papers: 2410.20333 (Liu, Norin, Wood, 'Product Structure and Tree-Decompositions', Oct 2024) addresses minor-excluded graphs via strong products of bounded-treewidth digraphs, and 2502.20182 (Abrishami et al., 'On coarse tree decompositions and coarse balanced separators', Feb 2025) studies coarse balanced separators — neither was verified to address the specific conjecture about constant tree-depth with tight clique size O(n^{1-\\epsilon})."
+}

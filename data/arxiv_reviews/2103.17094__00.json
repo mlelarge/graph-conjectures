@@ -1,0 +1,23 @@
+{
+  "review_id": "2103.17094__00",
+  "safe_id": "2103.17094",
+  "arxiv_id": "2103.17094",
+  "conjecture_title": "Question (polynomial weak coloring numbers for intersection graph classes)",
+  "paper_title": "Weak Coloring Numbers of Intersection Graphs",
+  "published": "2021-04-07",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The question asks whether the k-th weak coloring numbers are polynomial in k for the restricted intersection graph classes of Lemma 1 (t-thin sets of convex objects, comparable axis-aligned boxes, b-ball-like objects), motivated by the possible survival of the Joret–Wood conjecture in the geometric setting after Grohe et al.'s edge-subdivision disproof in the general setting. No follow-up paper resolving this question was found in the indexed literature as of May 2026. The 2024 paper on weak coloring numbers of minor-closed graph classes (arXiv:2407.04588, SODA 2025) addresses polynomial bounds for a different class of graphs (X-minor-free graphs) and does not touch the geometric intersection graph question.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "weak coloring numbers intersection graphs polynomial convex objects 2103.17094",
+    "weak coloring numbers t-thin sets ball-like objects polynomial arxiv Dvořák Ueckerdt",
+    "polynomial weak coloring numbers convex intersection graphs 2022 2023 2024 2025 arxiv",
+    "\"weak coloring numbers\" \"intersection graphs\" \"polynomial\" site:arxiv.org 2022 2023 2024 2025"
+  ],
+  "notes": "The source paper itself (published at SoCG 2022) demonstrates that for comparable axis-aligned boxes the weak coloring numbers are exponential, which gives a negative answer for part of class (a). The open question appears to concern whether the exponential dependence might be avoidable for the more tightly constrained sub-classes of Lemma 1 (e.g., homothets of a fixed centrally symmetric convex body or b-ball-like objects). No paper specifically resolving this was found after 5 web calls."
+}

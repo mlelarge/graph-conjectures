@@ -1,0 +1,26 @@
+[
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Open Problem (constant c vs. |H|)",
+    "statement_text": "Find good bounds on $c$ as a function of $|H|$ in the bounding function $f(k) = ck\\log(k+1)$; in particular, determine whether $c$ could depend polynomially on $|H|$.",
+    "context_text": "The constant $c = c(H)$ obtained in the proof of Theorem 1.1 is enormous and not even known to be computable, whereas Chekuri and Chuzhoy's earlier result achieves $c$ depending polynomially on $|H|$ (at the cost of a poly-logarithmic factor $\\log^d k$). The authors explicitly leave the question of good bounds on $c$ as a function of $|H|$ as an open problem.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated in prose in the introduction without a labelled environment: \"Finding good bounds on c as a function of |H| is left as an open problem, in particular it would be interesting to determine whether c could depend polynomially on |H|.\"",
+    "arxiv_id": "1807.04969",
+    "paper_title": "A tight Erdős-Pósa function for planar minors",
+    "paper_authors": [
+      "Wouter Cames van Batenburg",
+      "Tony Huynh",
+      "Gwenaël Joret",
+      "Jean-Florent Raymond"
+    ],
+    "published": "2019-10-23",
+    "abs_url": "https://arxiv.org/abs/1807.04969",
+    "source": "pdf"
+  }
+]

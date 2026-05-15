@@ -1,0 +1,25 @@
+[
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.2 (Coarse Menger conjecture for surfaces)",
+    "statement_text": "Let $\\mathcal{S}$ be a fixed surface. For all integers $k,c\\geq 0$ there exists $\\ell>0$ with the following property. Let $G$ be a graph that embeds on $\\mathcal{S}$ and let $S,T\\subseteq V(G)$. Then either\n\n$\\bullet$ there are $k+1$ paths between $S,T$, pairwise $c$-distant; or\n\n$\\bullet$ there is a set $X\\subseteq V(G)$ with $|X|\\leq k$ such that every path between $S,T$ contains a vertex with distance at most $\\ell$ from some member of $X$.",
+    "context_text": "The original Coarse Menger conjecture (attributed to Albrechtsen, Huynh, Jacobs, Knappe and Wollan, and independently to Georgakopoulos and Papasoglu) was shown to be false for general graphs by the same authors (Nguyen–Scott–Seymour) in [11], with counterexamples that are highly non-planar (unbounded genus). Since the counterexamples rely on non-planarity, the authors propose that a surface-restricted version may still hold.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "The paper proves a special case (Theorem 1.3): the conjecture holds when $G$ is planar and all vertices of $S\\cup T$ lie on the infinite region, with the blocking structure being at most $k$ connected subgraphs whose diameters sum to at most $200k^3c$.",
+    "arxiv_id": "2509.07174",
+    "paper_title": "Asymptotic structure. VI. Distant paths across a disc",
+    "paper_authors": [
+      "Tung Nguyen",
+      "Alex Scott",
+      "Paul Seymour"
+    ],
+    "published": "2025-09-08",
+    "abs_url": "https://arxiv.org/abs/2509.07174",
+    "source": "html"
+  }
+]

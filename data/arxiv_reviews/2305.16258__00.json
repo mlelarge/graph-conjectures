@@ -1,0 +1,34 @@
+{
+  "review_id": "2305.16258__00",
+  "safe_id": "2305.16258",
+  "arxiv_id": "2305.16258",
+  "conjecture_title": "Conjecture 1.6",
+  "paper_title": "Tree independence number I. (Even hole, diamond, pyramid)-free graphs",
+  "published": "2024-02-22",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "medium",
+  "summary": "Conjecture 1.6 asks for a constant (n-independent) bound on tree-α for the class of (even hole, diamond)-free graphs. The source paper itself established this for the smaller class also excluding pyramids. The follow-up paper arXiv:2407.08927 (Tree Independence Number IV, 2024) proves that the strictly larger class of all even-hole-free graphs has tree-α at most O(log^10 n), a polylogarithmic bound that does not imply the conjectured constant bound. No verified source found establishes the constant bound for the full (even hole, diamond)-free class.",
+  "since_posted": [
+    {
+      "title": "Tree independence number IV. Even-hole-free graphs",
+      "authors": "Chudnovsky, M., Gartland, P., Hajebi, S., Lokshtanov, D., Spirkl, S.",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2407.08927",
+      "arxiv_id": "2407.08927",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves that every n-vertex even-hole-free graph (a superclass of (even hole, diamond)-free) has tree-α at most c·log^10(n), giving a polylogarithmic but not a constant bound, hence partial progress toward Conjecture 1.6."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "tree independence number \"even hole\" \"diamond-free\" bounded arXiv 2305.16258",
+    "tree-alpha \"even hole\" \"diamond-free\" graph conjecture Abrishami Chudnovsky Spirkl",
+    "\"tree independence number\" \"even hole\" \"diamond-free\" 2024 2025 bounded conjecture settled"
+  ],
+  "notes": "The TIN series (papers I–IV by overlapping author groups) is the main research program. Paper IV (arXiv:2407.08927) handles even-hole-free graphs with a polylogarithmic bound, which is weaker than the constant bound conjectured for (even hole, diamond)-free graphs. Conjecture 1.6 remains open: no source confirming a constant tree-α for the (even hole, diamond)-free class was found in the indexed literature."
+}

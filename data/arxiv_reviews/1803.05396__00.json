@@ -1,0 +1,47 @@
+{
+  "review_id": "1803.05396__00",
+  "safe_id": "1803.05396",
+  "arxiv_id": "1803.05396",
+  "conjecture_title": "Open Problem: Complexity of 3-colourability of $P_t$-free graphs",
+  "paper_title": "$H$-colouring $P_t$-free graphs in subexponential time",
+  "published": "2019-03-22",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The open problem asks to determine whether 3-colourability of $P_t$-free graphs (for $t \\geq 8$) can be decided in polynomial time or is NP-hard; the question is not settled. The subexponential-time algorithm of the source paper was significantly improved to quasi-polynomial time $n^{\\mathcal{O}(\\log^2 n)}$ by Pilipczuk, Pilipczuk, and Rz\\k{a}\\.zewski (2020), using techniques from Independent Set in $P_t$-free graphs. A 2025 paper by Zhou, Zhong, and Huang establishes a polynomial-time algorithm for the restricted class $\\mathcal{G}_{10,7}$ ($P_{10}$-free graphs with all induced odd cycles of the same length 7), but the full complexity boundary for $t \\geq 8$ remains open.",
+  "since_posted": [
+    {
+      "title": "Quasi-polynomial-time algorithm for Independent Set in $P_t$-free graphs via shrinking the space of induced paths",
+      "authors": "Marcin Pilipczuk, Michał Pilipczuk, Paweł Rzążewski",
+      "year": 2020,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2009.13494",
+      "arxiv_id": "2009.13494",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Extends the quasi-polynomial-time Independent Set framework to 3-Coloring of $P_t$-free graphs, achieving runtime $n^{\\mathcal{O}(\\log^2 n)}$, a major improvement over the subexponential bound of the source paper."
+    },
+    {
+      "title": "3-Coloring $P_t$-Free Graphs With Only One Prescribed Induced Odd Cycle Length",
+      "authors": "Yidong Zhou, Mingxian Zhong, Shenwei Huang",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2512.06367",
+      "arxiv_id": "2512.06367",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Gives a polynomial-time algorithm for 3-coloring graphs in $\\mathcal{G}_{10,7}$ (the class of $P_{10}$-free graphs whose induced odd cycles all have length exactly 7), extending polynomial tractability to a new subclass."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "3-colourability P_t-free graphs complexity polynomial algorithm t=8",
+    "3-colorability Pt-free graphs complexity NP-hard polynomial 2020 2021 2022 2023 2024 2025",
+    "Chudnovsky \"3-colorable\" \"P8-free\" arxiv polynomial algorithm",
+    "\"quasi-polynomial\" \"3-coloring\" OR \"3-colouring\" \"Pt-free\" OR \"P_t-free\" arxiv breakthrough",
+    "Gartland Lokshtanov \"3-coloring\" \"P_t-free\" quasi-polynomial arxiv"
+  ],
+  "notes": "Polynomial-time solvability vs.~NP-hardness for 3-colourability of $P_t$-free graphs with $t \\geq 8$ remains open. The strongest known upper bound is quasi-polynomial time $n^{\\mathcal{O}(\\log^2 n)}$ (Pilipczuk et al., 2020), improving the subexponential bound of Conjecture 1803.05396. Polynomial-time results exist only for restricted subclasses (e.g., $\\mathcal{G}_{10,7}$). No NP-hardness result for any fixed $t \\geq 8$ is known."
+}

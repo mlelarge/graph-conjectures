@@ -1,0 +1,26 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.1 (Drier–Linial)",
+    "statement_text": "For $\\ell\\geq\\Omega(n)$ almost all $\\ell$-lifts of $K_{n}$ have Hajós number equal to $\\Theta(n)$.",
+    "context_text": "The problem of determining the Hajós number (size of the largest topological clique) in random lifts was first raised by Drier and Linial [16] in 2006. They showed that almost every $\\ell$-lift of $K_n$ contains a topological clique of order at least $(1-o(1))\\frac{\\ell}{3}$ when $\\ell < (1-o(1))\\frac{n}{2}$, which together with the trivial upper bound of $n$ established the $\\Theta(n)$ order for that range of $\\ell$, but left the full range open. Witkowski [42] later verified the conjecture for $\\ell$ exponential in $n$.",
+    "attributed_to": "Drier and Linial",
+    "attributed_year": 2006,
+    "paper_contribution": "Confirms the conjecture in a strong form: for $\\ell \\geq (1+o(1))n$ one can almost surely find a subdivision of $K_n$ itself (Hajós number exactly $n$), and the result is tight since for $\\ell \\leq (1-o(1))n$ almost all $\\ell$-lifts do not contain a subdivision of $K_n$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2407.10565",
+    "paper_title": "Topological Minors in Typical Lifts",
+    "paper_authors": [
+      "Matija Bucić",
+      "Micha Christoph",
+      "Alp Müyesser",
+      "Raphael Steiner"
+    ],
+    "published": "2024-07-15",
+    "abs_url": "https://arxiv.org/abs/2407.10565",
+    "source": "html"
+  }
+]

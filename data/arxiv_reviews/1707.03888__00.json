@@ -1,0 +1,24 @@
+{
+  "review_id": "1707.03888__00",
+  "safe_id": "1707.03888",
+  "arxiv_id": "1707.03888",
+  "conjecture_title": "Open question: additive approximation for triangle-free graphs",
+  "paper_title": "Additive non-approximability of chromatic number in proper minor-closed classes",
+  "published": "2017-07-12",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "The open question—whether a uniform additive approximation for the chromatic number of triangle-free graphs exists across all proper minor-closed classes—remains unresolved. The source paper (Dvořák and Kawarabayashi, ICALP 2018) establishes hardness for K_{4k+1}-minor-free graphs in general, and a weaker hardness bound for K_{4k+1}-minor-free graphs with no K_4 cliques (Theorem 6), but explicitly leaves the triangle-free case open. No follow-up paper resolving this question was found in a wide web search across the 2017–2026 period.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "chromatic number triangle-free graphs minor-closed class additive approximation polynomial time",
+    "Dvořák Kawarabayashi 1707.03888 chromatic number approximation triangle-free minor-closed",
+    "WebFetch https://arxiv.org/abs/1707.03888",
+    "chromatic number triangle-free minor-closed class approximation algorithm 2018 2019 2020 2021 2022 2023 2024 2025",
+    "WebFetch https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ICALP.2018.47"
+  ],
+  "notes": "No follow-up paper resolving the triangle-free open question was found. The published version of the source paper appeared at ICALP 2018 (LIPIcs vol. 107, article 47) and in Journal of Combinatorial Theory Series B (ScienceDirect, 2020). The known positive special case is that every triangle-free K_5-minor-free graph is 3-colorable (extending Grötzsch's theorem), but this does not address the uniform additive approximation across all proper minor-closed classes. Confidence is medium because the conjecture is roughly 9 years old, so absence of a resolution in the search is somewhat suspicious; the question may simply be very hard."
+}

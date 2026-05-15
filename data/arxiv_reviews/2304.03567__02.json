@@ -1,0 +1,28 @@
+{
+  "review_id": "2304.03567__02",
+  "safe_id": "2304.03567",
+  "arxiv_id": "2304.03567",
+  "conjecture_title": "Problem 3",
+  "paper_title": "Temporalizing digraphs via linear-size balanced bi-trees",
+  "published": "2024-01-11",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Problem 3 from arXiv:2304.03567 asks whether a left-maximal DFS-tree can be computed in o(n²) time in minimally strongly connected digraphs, and what the complexity is in the general strongly connected case. The current O(n²) algorithm is identified by the authors as the complexity bottleneck of their balanced bi-tree construction. No follow-up work addressing this algorithmic question was found in a web search covering the period since the paper's appearance at STACS 2024.",
+  "since_posted": [],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2206.12335",
+      "verified": true,
+      "note": "Paper is about 1-independent bond percolation on Z^n (Balister, Johnston, Savery, Scott). Completely unrelated to DFS trees or strongly connected digraphs; the internal-reference match is a false positive."
+    }
+  ],
+  "search_queries": [
+    "arXiv 2304.03567 Bessy Thomassé Viennot temporalizing digraphs balanced bi-trees",
+    "left-maximal DFS-tree minimally strongly connected digraph complexity o(n^2)",
+    "temporal digraph DFS-tree strongly connected 2024 2025 site:arxiv.org Bessy Viennot"
+  ],
+  "notes": "No follow-up found after four web calls (two searches + two fetches). The problem is a concrete algorithmic open question: improve the O(n²) bottleneck for computing a left-maximal DFS-tree in minimally (or generally) strongly connected digraphs. The paper appeared at STACS 2024; the problem is roughly 2 years old with no resolution found."
+}

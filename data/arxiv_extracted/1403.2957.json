@@ -1,0 +1,25 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Erdős Conjecture on Arithmetic Progressions",
+    "statement_text": "Any subset $A$ of $\\mathbb{N}$ with divergent harmonic sum, i.e., $\\sum_{a \\in A} 1/a = \\infty$, must contain arbitrarily long arithmetic progressions.",
+    "context_text": "Erdős conjectured that the density of the primes alone should guarantee the existence of long APs. The Green-Tao theorem confirms the case $A = $ primes (since $\\sum_p 1/p$ diverges), but the general conjecture remains open and has not been proved even for 3-term APs.",
+    "attributed_to": "Erdős",
+    "attributed_year": null,
+    "paper_contribution": "This exposition of the Green-Tao theorem establishes a special case of the conjecture: the prime numbers, whose reciprocal sum diverges, contain arbitrarily long arithmetic progressions.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "Stated in prose in the introduction without a labelled theorem environment; PDF extraction — math rendered from Unicode.",
+    "arxiv_id": "1403.2957",
+    "paper_title": "The Green-Tao theorem: an exposition",
+    "paper_authors": [
+      "David Conlon",
+      "Jacob Fox",
+      "Yufei Zhao"
+    ],
+    "published": "2018-03-04",
+    "abs_url": "https://arxiv.org/abs/1403.2957",
+    "source": "pdf"
+  }
+]

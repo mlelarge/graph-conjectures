@@ -1,0 +1,48 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Borodin-Kostochka Conjecture",
+    "statement_text": "For every graph $G$ such that $\\Delta(G)\\geq 9$, if $\\omega(G)\\leq\\Delta(G)-1$, then $\\chi(G)\\leq\\Delta(G)-1$.",
+    "context_text": "Borodin and Kostochka conjectured in 1977 that graphs with maximum degree at least 9 and clique number at most $\\Delta(G)-1$ can be properly colored with at most $\\Delta(G)-1$ colors. The assumption $\\Delta(G)\\geq 9$ is necessary, as shown by the graph $C_5\\boxtimes K_3$.",
+    "attributed_to": "Borodin and Kostochka",
+    "attributed_year": 1977,
+    "paper_contribution": "Proves the conjecture for the stronger correspondence chromatic number $\\chi_{DP}$, showing that for every graph $G$ with $\\Delta(G)\\geq 3\\cdot 10^9$, $\\chi_{DP}(G)\\leq\\max(\\omega(G),\\Delta(G)-1)$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2603.14427",
+    "paper_title": "On Borodin-Kostochka conjecture for correspondence coloring",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Ross J. Kang",
+      "David Mikšaník"
+    ],
+    "published": "2026-03-15",
+    "abs_url": "https://arxiv.org/abs/2603.14427",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Question 5",
+    "statement_text": "What is the smallest number $\\Delta_{0}$ such that every graph $G$ with $\\Delta(G)\\geq\\Delta_{0}$ and $\\omega(G)=\\Delta(G)-1$ satisfies $\\chi(G)=\\chi_{\\ell}(G)=\\chi_{DP}(G)$?",
+    "context_text": "Theorem 4 of this paper gives an upper bound $\\Delta_0 \\leq 3\\cdot 10^9$ for the correspondence coloring analogue. The equality $\\chi(G)=\\chi_\\ell(G)=\\chi_{DP}(G)$ clearly holds for all graphs $G$ with $\\omega(G)=\\Delta(G)+1$, and the parameters also coincide for graphs with $\\omega(G)=\\Delta(G)$; the smallest threshold $\\Delta_0$ for the case $\\omega(G)=\\Delta(G)-1$ remains unknown.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2603.14427",
+    "paper_title": "On Borodin-Kostochka conjecture for correspondence coloring",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Ross J. Kang",
+      "David Mikšaník"
+    ],
+    "published": "2026-03-15",
+    "abs_url": "https://arxiv.org/abs/2603.14427",
+    "source": "html"
+  }
+]

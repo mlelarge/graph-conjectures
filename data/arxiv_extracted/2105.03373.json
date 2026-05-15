@@ -1,0 +1,46 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1 (Caccetta–Häggkvist)",
+    "statement_text": "Let $n, k$ be positive integers, and let $G$ be a simple digraph on $n$ vertices with $\\delta^+(v) \\geq k$ for all $v \\in V(G)$. Then $G$ contains a directed cycle of length at most $\\lceil n/k \\rceil$.",
+    "context_text": "The Caccetta–Häggkvist conjecture is a central open problem on short directed cycles in digraphs with prescribed minimum out-degree. It is the direct precursor and motivation for Aharoni's rainbow generalization (Conjecture 2). Existing approximate results toward it—in particular Shen's bound (Theorem 6)—are used as tools in the proofs of the paper.",
+    "attributed_to": "Caccetta and Häggkvist",
+    "attributed_year": 1978,
+    "paper_contribution": "No new direct progress on Conjecture 1 is claimed; existing approximate results for it are applied as ingredients in the proof of the rainbow analogue.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source — the strict inequality $\\delta^+(v) > k$ in the extracted text is likely a rendering artefact for $\\delta^+(v) \\geq k$; statement corrected to the standard formulation.",
+    "arxiv_id": "2105.03373",
+    "paper_title": "Further approximations for Aharoni's rainbow generalization of the Caccetta-Häggkvist conjecture",
+    "paper_authors": [
+      "Patrick Hompe",
+      "Sophie Spirkl"
+    ],
+    "published": "2023-08-10",
+    "abs_url": "https://arxiv.org/abs/2105.03373",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 2 (Aharoni's Rainbow Generalization of the Caccetta–Häggkvist Conjecture)",
+    "statement_text": "Let $n, k$ be positive integers, and let $G$ be a simple graph on $n$ vertices. Let $b$ be a coloring of the edges of $G$ with $n$ color classes of size at least $k$. Then $G$ has rainbow girth at most $\\lceil n/k \\rceil$.",
+    "context_text": "Aharoni proposed this rainbow analogue of the Caccetta–Häggkvist conjecture. Prior work (Conjecture 2 was proved for $k=2$; Hompe–Spirkl–Pelikánová–Pokornà showed it holds when every color class has size at least $301k\\log k$). The present paper is entirely centered on closing the gap between the $\\Omega(k\\log k)$ bound and Aharoni's conjectured $k$.",
+    "attributed_to": "Aharoni",
+    "attributed_year": null,
+    "paper_contribution": "Proves Conjecture 2 under the relaxed assumption that each color class has size at least $ck$ for the explicit constant $c = 10^{11}$, improving the previously known $\\Omega(k\\log k)$ threshold to $\\Omega(k)$ and thus achieving a result only a constant factor from the conjecture.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2105.03373",
+    "paper_title": "Further approximations for Aharoni's rainbow generalization of the Caccetta-Häggkvist conjecture",
+    "paper_authors": [
+      "Patrick Hompe",
+      "Sophie Spirkl"
+    ],
+    "published": "2023-08-10",
+    "abs_url": "https://arxiv.org/abs/2105.03373",
+    "source": "pdf"
+  }
+]

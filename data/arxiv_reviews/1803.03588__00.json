@@ -1,0 +1,50 @@
+{
+  "review_id": "1803.03588__00",
+  "safe_id": "1803.03588",
+  "arxiv_id": "1803.03588",
+  "conjecture_title": "Polynomial dependence of $\\delta$ on $d$ in Rödl's theorem",
+  "paper_title": "Towards Erdos-Hajnal for graphs with no 5-hole",
+  "published": "2018-03-09",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The polynomial bound on $\\delta$ in Rödl's theorem remains unproved for general $H$; the best known bound is the loglog improvement $\\delta = 2^{-c(\\log(1/d))^2/\\log\\log(1/d)}$ of Bucić–Nguyen–Scott–Seymour (2023), confirming the gap between the exponential status quo and the conjectured polynomial dependence. Notably, Bucić–Fox–Pham (2024) proved that the polynomial Rödl conjecture is in fact *equivalent* to the full Erdős–Hajnal conjecture (strengthening the mere implication stated in the source paper), and also verified the polynomial Rödl property for the special class of string graphs.",
+  "since_posted": [
+    {
+      "title": "Induced subgraph density. I. A loglog step towards Erdos-Hajnal",
+      "authors": "Matija Bucić, Tung Nguyen, Alex Scott, Paul Seymour",
+      "year": 2023,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2301.10147",
+      "arxiv_id": "2301.10147",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Improves the exponent in Rödl's bound to $\\delta = 2^{-c(\\log(1/d))^2/\\log\\log(1/d)}$, a loglog gain over Fox–Sudakov, but does not achieve the conjectured polynomial dependence."
+    },
+    {
+      "title": "Equivalence between Erdős-Hajnal and polynomial Rödl and Nikiforov conjectures",
+      "authors": "Matija Bucić, Jacob Fox, Huy Tuan Pham",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2403.08303",
+      "arxiv_id": "2403.08303",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves that the polynomial Rödl conjecture (and the polynomial Nikiforov conjecture) are each equivalent to the Erdős–Hajnal conjecture, upgrading the one-directional implication stated in the source paper to a full equivalence; also verifies the polynomial Rödl property for string graphs as a special case."
+    }
+  ],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2301.10147",
+      "verified": true,
+      "note": "Abstract confirmed: paper achieves loglog improvement δ = 2^{-c(log(1/x))^2/log log(1/x)} over Fox–Sudakov; does not prove the polynomial bound. The internal reference attribution to Fox and Sudakov refers to the prior bound being improved, not to authorship of this paper."
+    }
+  ],
+  "search_queries": [
+    "Rodl theorem polynomial dependence Erdos-Hajnal conjecture induced subgraph Fox Sudakov improvement 2024 2025",
+    "induced subgraph density polynomial Rodl Nikiforov conjecture Erdos-Hajnal 2025 arxiv"
+  ],
+  "notes": "The conjecture as stated in the source paper has two components: (1) that polynomial δ holds in Rödl's theorem, and (2) that this implies Erdős–Hajnal. Component (2) was already known in 2018; arXiv:2403.08303 (2024) strengthens it to a full equivalence. Component (1) — the polynomial bound itself — remains open for general H, with the loglog bound of arXiv:2301.10147 being the current state of the art."
+}

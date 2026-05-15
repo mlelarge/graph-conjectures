@@ -1,0 +1,39 @@
+{
+  "review_id": "1608.03040__05",
+  "safe_id": "1608.03040",
+  "arxiv_id": "1608.03040",
+  "conjecture_title": "Open Problem 5",
+  "paper_title": "Majority Colourings of Digraphs",
+  "published": "2016-08-10",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The algorithmic half of Open Problem 5 is settled: Anastos, Lamaison, Steiner, and Szabó (arXiv:1911.01954) proved that deciding whether a given digraph is majority 2-colorable is NP-complete (Theorem 9), ruling out a polynomial-time recognition algorithm unless P=NP. The structural-characterisation half of the question remains open, as no combinatorial characterisation of majority 2-colorable digraphs is known.",
+  "since_posted": [
+    {
+      "title": "Majority Colorings of Sparse Digraphs",
+      "authors": "Michael Anastos, Ander Lamaison, Raphael Steiner, Tibor Szabó",
+      "year": 2019,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/1911.01954",
+      "arxiv_id": "1911.01954",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves that deciding whether a digraph is majority 2-colorable is NP-complete (Theorem 9), answering the polynomial-time algorithm part of Open Problem 5 negatively; the structural characterisation question remains open."
+    }
+  ],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "1911.01954",
+      "verified": true,
+      "note": "Abstract explicitly states 'we answer an open question posed by Kreutzer et al. negatively, by showing that deciding whether a given digraph is majority 2-colorable is NP-complete'; confirms Theorem 9 claim from internal refs."
+    }
+  ],
+  "search_queries": [
+    "majority 2-coloring digraph NP-complete characterization arXiv 1608.03040",
+    "majority coloring digraph characterization recognition complexity 2024 2025"
+  ],
+  "notes": "Open Problem 5 asks two things: (1) a characterisation of majority 2-colorable digraphs, or (2) a polynomial-time algorithm. The NP-completeness result in 1911.01954 definitively closes question (2). Question (1) remains open; a 2025 paper (Acta Math. Appl. Sinica) on majority coloring of digraphs was found but is behind a paywall and could not be verified. A 2024 arXiv paper (2406.04189) on countable DAGs addresses a different variant and does not resolve the finite characterisation question."
+}

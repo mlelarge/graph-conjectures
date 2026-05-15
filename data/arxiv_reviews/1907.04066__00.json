@@ -1,0 +1,34 @@
+{
+  "review_id": "1907.04066__00",
+  "safe_id": "1907.04066",
+  "arxiv_id": "1907.04066",
+  "conjecture_title": "Problem 1",
+  "paper_title": "Coloring count cones of planar graphs",
+  "published": "2021-10-25",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Problem 1 asks whether a polynomial-time algorithm exists to decide if a 4-coloring of the outer 4-cycle of a near-triangulation extends to the whole graph; the general question remains open. Dvořák, Moore, Seifrtová, and Šámal (arXiv:2312.13061) provide partial progress by giving linear-time algorithms for the special subclass of planar near-Eulerian-triangulations (all interior vertices have even degree) when the outer face has length at most 5, which covers the 4-cycle case within that restricted class. No resolution of the full statement for arbitrary near-triangulations was found in the literature.",
+  "since_posted": [
+    {
+      "title": "Precoloring extension in planar near-Eulerian-triangulations",
+      "authors": "Dvořák, Moore, Seifrtová, Šámal",
+      "year": 2023,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2312.13061",
+      "arxiv_id": "2312.13061",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Gives linear-time algorithms for 4-precoloring extension in planar near-Eulerian-triangulations with outer face length at most 5 (including the 4-cycle case), constituting a special-case resolution of Problem 1 restricted to the Eulerian interior-degree setting."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "near-triangulation precoloring extension 4-coloring 4-cycle polynomial algorithm planar graph",
+    "Dvořák Lidický \"1907.04066\" precoloring extension near-triangulation",
+    "Dvořák Lidický \"precoloring extension\" \"near-triangulation\" \"4-cycle\" outer face polynomial decidable 2022 2023 2024 2025"
+  ],
+  "notes": "The paper arXiv:2312.13061 addresses a strictly more restricted class (near-Eulerian-triangulations, where all interior vertices have even degree) rather than arbitrary near-triangulations. Its Conjecture 3 further conjectures a polynomial-time algorithm for all bounded outer-face lengths in the near-Eulerian setting, suggesting the general Problem 1 is still open. A 2025 European Journal of Combinatorics paper (vol. 127, art. 104138) appears related but its content could not be verified via WebFetch."
+}

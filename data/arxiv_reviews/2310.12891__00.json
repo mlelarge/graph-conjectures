@@ -1,0 +1,33 @@
+{
+  "review_id": "2310.12891__00",
+  "safe_id": "2310.12891",
+  "arxiv_id": "2310.12891",
+  "conjecture_title": "Open case of Erdős's problem for fixed small k",
+  "paper_title": "Vertex-critical graphs far from edge-criticality",
+  "published": "2023-10-19",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Skottova and Steiner (arXiv:2508.08703, August 2025) resolve the conjecture affirmatively for all k ≥ 5: for every fixed k ≥ 5 and every r ≥ 1, a k-chromatic vertex-critical graph G with χ(G − R) = k for all R ⊆ E(G), |R| ≤ r, exists; they further establish f_k(n) = Ω(n^{1/3}) for k ≥ 5. The case k = 4 remains open, coinciding with the longstanding open case of Dirac's conjecture on 4-vertex-critical graphs with no critical edge.",
+  "since_posted": [
+    {
+      "title": "Critical edge sets in vertex-critical graphs",
+      "authors": "Ema Skottova, Raphael Steiner",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2508.08703",
+      "arxiv_id": "2508.08703",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves that for every fixed k ≥ 5 and r ≥ 1 the required k-chromatic vertex-critical graphs exist (resolving the conjecture for all k ≥ 5 via f_k(n) = Ω(n^{1/3})), while the k = 4 case remains open."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "vertex-critical graph chromatic number edge removal Erdős problem fixed k Martinsson Steiner 2023",
+    "k-chromatic vertex-critical graph edge-critical fixed chromatic number 2024 2025"
+  ],
+  "notes": "The residual open case k = 4 coincides with the longstanding open case of Dirac's 1970 conjecture (whether a 4-vertex-critical graph with no critical edge exists). arXiv:2508.08703 (Skottova–Steiner, August 2025) explicitly targets the fixed-k regime left open by the source paper and closes it for all k ≥ 5."
+}

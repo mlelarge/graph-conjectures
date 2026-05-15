@@ -1,0 +1,46 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.1 (Flandrin et al.)",
+    "statement_text": "If $G$ is a connected graph of order at least three different from the cycle $C_5$, then $\\chi'_{\\Sigma}(G) \\leq \\Delta(G) + 2$.",
+    "context_text": "This conjecture on the neighbour sum distinguishing index was proposed by Flandrin et al. in [14] and verified there for paths, cycles, complete graphs, complete bipartite graphs, and trees. It is the proper-edge-colouring analogue of the 1–2–3 Conjecture and is the central object of study in the paper.",
+    "attributed_to": "Flandrin et al.",
+    "attributed_year": null,
+    "paper_contribution": "Proves the stronger bound $\\chi'_{\\Sigma}(G) \\leq \\Delta(G)+1$ for every planar graph $G$ with $\\Delta(G) \\geq 28$ and no isolated edges, which in particular confirms Conjecture 1.1 for this infinite family.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source — the paper uses both $\\chi'_P(G)$ and $\\chi'_{\\Sigma}(G)$ for the same invariant; notation may be garbled by PDF extraction.",
+    "arxiv_id": "1408.3190",
+    "paper_title": "On the neighbour sum distinguishing index of planar graphs",
+    "paper_authors": [
+      "Marthe Bonamy",
+      "Jakub Przybyło"
+    ],
+    "published": "2018-03-05",
+    "abs_url": "https://arxiv.org/abs/1408.3190",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.3 (Zhang, Liu and Wang)",
+    "statement_text": "If $G$ is a connected graph of order at least three different from the cycle $C_5$, then $\\chi'_a(G) \\leq \\Delta(G) + 2$.",
+    "context_text": "The neighbour set distinguishing index (adjacent strong chromatic index) conjecture was introduced by Zhang, Liu and Wang in 2002 and is described in the paper as a weaker protoplast of Conjecture 1.1. The main result is presented as a significant strengthening of Bonamy–Bousquet–Hocquard's result $\\chi'_a(G) \\leq \\Delta(G)+1$ for planar graphs.",
+    "attributed_to": "Zhang, Liu and Wang",
+    "attributed_year": 2002,
+    "paper_contribution": "Implies Conjecture 1.3 for planar graphs with $\\Delta(G) \\geq 28$ as a corollary, since $\\chi'_a(G) \\leq \\chi'_{\\Sigma}(G)$ and the paper establishes $\\chi'_{\\Sigma}(G) \\leq \\Delta(G)+1$ for this class.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source — Conjecture 1.3 is a secondary consequence; the paper's primary focus is Conjecture 1.1.",
+    "arxiv_id": "1408.3190",
+    "paper_title": "On the neighbour sum distinguishing index of planar graphs",
+    "paper_authors": [
+      "Marthe Bonamy",
+      "Jakub Przybyło"
+    ],
+    "published": "2018-03-05",
+    "abs_url": "https://arxiv.org/abs/1408.3190",
+    "source": "pdf"
+  }
+]

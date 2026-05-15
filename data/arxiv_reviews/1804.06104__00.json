@@ -1,0 +1,22 @@
+{
+  "review_id": "1804.06104__00",
+  "safe_id": "1804.06104",
+  "arxiv_id": "1804.06104",
+  "conjecture_title": "Open Problem: $\\Delta + O(1)$ bound for neighbour sum distinguishing colourings",
+  "paper_title": "Progress on the adjacent vertex distinguishing edge colouring conjecture",
+  "published": "2020-07-22",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The open problem asks whether the number of colours for a neighbour sum distinguishing edge colouring can be bounded by $\\Delta + O(1)$. The best known asymptotic upper bound remains $\\Delta + O(\\Delta^{1/2})$, due to Przyby\\l{}o (arXiv:1703.00406, Random Structures & Algorithms 2015/2017). The stronger Flandrin et al.\\ conjecture that $\\Delta + 2$ colours suffice also remains open. No paper found after 2020 closes the gap between $\\Delta + O(\\Delta^{1/2})$ and $\\Delta + O(1)$.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "neighbour sum distinguishing edge colouring Delta O(1) bound Przybylo",
+    "neighbour sum distinguishing edge colouring conjecture Flandrin arxiv 2021 2022 2023 2024",
+    "neighbour sum distinguishing index Delta constant bound proof 2023 2024 2025 arxiv"
+  ],
+  "notes": "No follow-up resolving the Delta + O(1) open problem was found. The best known bound Delta + O(Delta^{1/2}) due to Przybylo (arXiv:1703.00406) already predates the 2020 source paper. A 2025 paper (arXiv:2511.01835) studies a quasi-majority variant of neighbour sum distinguishing edge-colourings but does not address the classical Delta + O(1) open problem."
+}

@@ -1,0 +1,68 @@
+[
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Question 3 (Esperet and Joret)",
+    "statement_text": "Consider a surface $\\Sigma$ and a positive integer $\\Delta$. Is it true that the class of triangle-free graphs of maximum degree $\\Delta$ than can be drawn on $\\Sigma$ has clustered chromatic number at most two?",
+    "context_text": "Esperet and Joret proved that graphs of bounded maximum degree drawn on any fixed surface have clustered chromatic number at most three, and asked whether the bound can be improved to two under the triangle-free assumption. The paper resolves this question positively via the more general Theorem 5(ii) in the list (choosability) setting.",
+    "attributed_to": "Esperet and Joret",
+    "attributed_year": null,
+    "paper_contribution": "Theorem 5(ii) answers this question positively, showing that the class of triangle-free graphs drawn on any fixed surface has weak diameter choosability at most two (which implies clustered choosability at most two for bounded-degree graphs).",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2111.07147",
+    "paper_title": "Weak diameter coloring of graphs on surfaces",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Sergey Norin"
+    ],
+    "published": "2021-11-13",
+    "abs_url": "https://arxiv.org/abs/2111.07147",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Question 4 (Wood, Open Problem 18)",
+    "statement_text": "Consider a surface $\\Sigma$ and a positive integer $\\Delta$. Is it true that the class of graphs of maximum degree $\\Delta$ than can be drawn on $\\Sigma$ has clustered choosability at most three?",
+    "context_text": "For any surface $\\Sigma$, the class of graphs drawn on $\\Sigma$ has clustered choosability at most four, but this bound cannot be improved in general. Wood asked in his survey whether the bound drops to three when restricted to graphs of bounded maximum degree, matching the non-list result of Esperet and Joret. The paper resolves this question positively.",
+    "attributed_to": "Wood",
+    "attributed_year": null,
+    "paper_contribution": "Theorem 5(i) answers this question positively, proving that the class of graphs drawn on any fixed surface $\\Sigma$ has weak diameter choosability at most three (which implies clustered choosability at most three for bounded-degree graphs).",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2111.07147",
+    "paper_title": "Weak diameter coloring of graphs on surfaces",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Sergey Norin"
+    ],
+    "published": "2021-11-13",
+    "abs_url": "https://arxiv.org/abs/2111.07147",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Question 6",
+    "statement_text": "For a non-negative integer $r$, let $\\mathcal{G}_r$ be the class of plane graphs with no separating triangles such that each vertex is at distance at most $r$ from a face of length at least four. Does $\\mathcal{G}_r$ have weak diameter chromatic number at most two?",
+    "context_text": "The authors suspect that a substantial relaxation of the triangle-free assumption is sufficient to allow coloring by two colors. They note that the HEX-lemma-based example with triangulated grids shows that non-triangular faces are essential, and remark that the question has a positive answer in the special case where the graph has exactly one non-triangular face (since proximity to a fixed face forces bounded treewidth and hence asymptotic dimension one).",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2111.07147",
+    "paper_title": "Weak diameter coloring of graphs on surfaces",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Sergey Norin"
+    ],
+    "published": "2021-11-13",
+    "abs_url": "https://arxiv.org/abs/2111.07147",
+    "source": "pdf"
+  }
+]

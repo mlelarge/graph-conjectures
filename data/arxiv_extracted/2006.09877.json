@@ -1,0 +1,77 @@
+[
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "The Small Conjecture",
+    "statement_text": "Every small hereditary class has bounded twin-width.",
+    "context_text": "The paper proves that every bounded twin-width class is small (has at most $n! c^n$ labeled $n$-vertex graphs for some constant $c$), unifying results for bounded treewidth, proper subclasses of permutation graphs, and proper minor-closed classes. The small conjecture posits the converse. The authors explore it by verifying bounded twin-width for many natural small hereditary classes that could serve as counterexamples, including subdivisions of $K_n$, graphs of bounded stack or queue number, and cubic expanders from iterated random 2-lifts.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Explicitly named 'the small conjecture' repeatedly in the abstract and introduction; no labelled theorem environment visible in the extracted text. The PDF extraction is truncated, so later numbered conjecture environments may exist.",
+    "arxiv_id": "2006.09877",
+    "paper_title": "Twin-width II: small classes",
+    "paper_authors": [
+      "Édouard Bonnet",
+      "Colin Geniet",
+      "Eun Jung Kim",
+      "Stéphan Thomassé",
+      "Rémi Watrigant"
+    ],
+    "published": "2020-06-17",
+    "abs_url": "https://arxiv.org/abs/2006.09877",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Implicit Graph Conjecture",
+    "statement_text": "Every factorial hereditary class (i.e., hereditary class with growth $n!^{O(1)}$) admits an $O(\\log n)$-adjacency labeling scheme.",
+    "context_text": "The implicit graph conjecture posits that any hereditary graph class with at most $n!^{O(1)}$ labeled $n$-vertex graphs has an adjacency labeling scheme using $O(\\log n)$ bits per vertex. The paper obtains such a scheme for all bounded twin-width classes as a second consequence of the linear-arity contraction tree, confirming the conjecture for this broad family.",
+    "attributed_to": "Kannan, Naor, and Rudich",
+    "attributed_year": 1992,
+    "paper_contribution": "Proves that every graph class of bounded twin-width admits an $O(\\log n)$-adjacency labeling scheme, confirming the implicit graph conjecture for all bounded twin-width hereditary classes.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "No labelled theorem environment for the conjecture statement visible in the extracted text. Attribution to Kannan–Naor–Rudich 1992 is standard in the literature; the paper does not include an explicit citation in the visible portion of the extracted text.",
+    "arxiv_id": "2006.09877",
+    "paper_title": "Twin-width II: small classes",
+    "paper_authors": [
+      "Édouard Bonnet",
+      "Colin Geniet",
+      "Eun Jung Kim",
+      "Stéphan Thomassé",
+      "Rémi Watrigant"
+    ],
+    "published": "2020-06-17",
+    "abs_url": "https://arxiv.org/abs/2006.09877",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Question: polynomial expansion and twin-width",
+    "statement_text": "Do classes with polynomial expansion have bounded twin-width?",
+    "context_text": "Towards the small conjecture, the authors identify showing that small sparse classes have bounded (sparse) twin-width as a first, challenging step. Since classes with polynomial expansion are small, confirming bounded twin-width for them would constitute meaningful progress.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated as an explicit open question in the introduction without a labelled environment. PDF extraction is truncated; additional numbered questions may appear in later sections.",
+    "arxiv_id": "2006.09877",
+    "paper_title": "Twin-width II: small classes",
+    "paper_authors": [
+      "Édouard Bonnet",
+      "Colin Geniet",
+      "Eun Jung Kim",
+      "Stéphan Thomassé",
+      "Rémi Watrigant"
+    ],
+    "published": "2020-06-17",
+    "abs_url": "https://arxiv.org/abs/2006.09877",
+    "source": "pdf"
+  }
+]

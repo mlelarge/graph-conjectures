@@ -1,0 +1,60 @@
+[
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Gantert's Question",
+    "statement_text": "Let $G$ be a connected graph and let $r,v\\in V(G)$. If $w\\in\\mathbb{R}_{\\geq 0}^{V(G)}$ is edge-reachable from $\\mathds{1}_{\\{r\\}}$, must we have $w(v)\\leq\\frac{1}{d_{G}(r,v)+1}$?",
+    "context_text": "The SAD-procedure (Sharing A Drink), introduced by Häggström, repeatedly equalises weights along edges of a graph. Nina Gantert asked whether the weight at any vertex $v$ reachable from a single unit at $r$ is bounded above by $1/(d_G(r,v)+1)$. The paper's first main result, Theorem 1.1, resolves this question affirmatively and shows the bound is tight.",
+    "attributed_to": "Nina Gantert",
+    "attributed_year": 2024,
+    "paper_contribution": "Proves the bound $w(v)\\leq\\frac{1}{d_{G}(r,v)+1}$ for all graphs $G$ and all weight distributions edge-reachable from a single unit at $r$, and extends it to arbitrary sharing moves via Corollary 1.2; the bound is shown to be best possible.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Gantert's question is a personal communication (2024), not a published paper.",
+    "arxiv_id": "2405.15353",
+    "paper_title": "Sharing tea on a graph",
+    "paper_authors": [
+      "J. Pascal Gollin",
+      "Kevin Hendrey",
+      "Hao Huang",
+      "Tony Huynh",
+      "Bojan Mohar",
+      "Sang-il Oum",
+      "Ningyuan Yang",
+      "Wei-Hsuan Yu",
+      "Xuding Zhu"
+    ],
+    "published": "2025-09-22",
+    "abs_url": "https://arxiv.org/abs/2405.15353",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Question 6.1",
+    "statement_text": "For every finite graph $G$, every ${w\\in\\mathbb{R}_{\\geq 0}^{V(G)}}$, and every ${v\\in V(G)}$, is there always a ${(w,v)}$-optimal sequence whose length is at most $2^{{\\left\\lvert{V(G)}\\right\\rvert}}$?",
+    "context_text": "The authors prove that for finite graphs the maximum amount of tea at any vertex $v$ can always be achieved after a finite number of sharing moves, but the sharp upper bound on the length of a shortest optimal sequence is unknown. One natural approach—showing that an optimal sequence need not repeat any sharing move—is complicated by Proposition 6.2, which shows that there need not exist an optimal sequence in which no move is a subset of a later move.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2405.15353",
+    "paper_title": "Sharing tea on a graph",
+    "paper_authors": [
+      "J. Pascal Gollin",
+      "Kevin Hendrey",
+      "Hao Huang",
+      "Tony Huynh",
+      "Bojan Mohar",
+      "Sang-il Oum",
+      "Ningyuan Yang",
+      "Wei-Hsuan Yu",
+      "Xuding Zhu"
+    ],
+    "published": "2025-09-22",
+    "abs_url": "https://arxiv.org/abs/2405.15353",
+    "source": "html"
+  }
+]

@@ -1,0 +1,48 @@
+[
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Conjecture on $\\lambda(d,1)$",
+    "statement_text": "$\\lambda(d,1)=(1+o(1))/e$ where the $o(1)$-term tends to $0$ as $d$ tends to infinity.",
+    "context_text": "The lower bound in Theorem 2, $(1-2^{-d})^{2^{d}-1}$, approaches $e^{-1}\\approx 0.37$ as $d\\to\\infty$. The authors suspect this lower bound is asymptotically sharp, making $1/e$ the true limit of $\\lambda(d,1)$.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated in the abstract with the words 'We suspect'; no labelled conjecture environment.",
+    "arxiv_id": "2410.20498",
+    "paper_title": "On hypercube statistics",
+    "paper_authors": [
+      "Noga Alon",
+      "Maria Axenovich",
+      "John Goldwasser"
+    ],
+    "published": "2024-10-27",
+    "abs_url": "https://arxiv.org/abs/2410.20498",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Open problem on tight bounds for $\\lambda(d,s)$",
+    "statement_text": "Obtain tight bounds for $\\lambda(d,s)$ for essentially all admissible values of $d$ and $s$.",
+    "context_text": "The paper proves several upper and lower bounds on $\\lambda(d,s)$ and determines the exact set of $s$ for which $\\lambda(d,s)=1$, but tight asymptotic characterisation of $\\lambda(d,s)$ for general $s$ remains open.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated implicitly in the abstract alongside the conjecture on $\\lambda(d,1)$; no labelled problem environment.",
+    "arxiv_id": "2410.20498",
+    "paper_title": "On hypercube statistics",
+    "paper_authors": [
+      "Noga Alon",
+      "Maria Axenovich",
+      "John Goldwasser"
+    ],
+    "published": "2024-10-27",
+    "abs_url": "https://arxiv.org/abs/2410.20498",
+    "source": "html"
+  }
+]

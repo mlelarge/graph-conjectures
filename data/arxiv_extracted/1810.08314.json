@@ -1,0 +1,27 @@
+[
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Open problem on queue-number of bounded layered treewidth graphs",
+    "statement_text": "It is open whether graphs of bounded layered treewidth have bounded queue-number.",
+    "context_text": "Dujmović et al. proved that every $n$-vertex graph with layered treewidth $k$ has queue-number $O(k \\log n)$. Subsequent to the submission of this paper, improved bounds on queue-number were obtained, but the question of whether a constant bound holds for graphs of bounded layered treewidth remains open.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated in a footnote without a formal labeled environment.",
+    "arxiv_id": "1810.08314",
+    "paper_title": "Minor-closed graph classes with bounded layered pathwidth",
+    "paper_authors": [
+      "Vida Dujmović",
+      "David Eppstein",
+      "Gwenaël Joret",
+      "Pat Morin",
+      "David R. Wood"
+    ],
+    "published": "2020-06-04",
+    "abs_url": "https://arxiv.org/abs/1810.08314",
+    "source": "pdf"
+  }
+]

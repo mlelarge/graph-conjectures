@@ -1,0 +1,28 @@
+{
+  "review_id": "1804.01060__00",
+  "safe_id": "1804.01060",
+  "arxiv_id": "1804.01060",
+  "conjecture_title": "Conjecture 2.4",
+  "paper_title": "Pure pairs. II. Excluding all subdivisions of a graph",
+  "published": "2020-06-02",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 2.4 from arXiv:1804.01060 states that for every graph H and every forest P of H, every coherent ideal contains a P-filleting of H. The paper's main Theorem 2.3 establishes the case where P is a path of H; the conjecture extends this to all forests. No follow-up paper confirming or disproving the full conjecture was found in a targeted web search covering literature through 2026. The sole internal reference (arXiv:2508.14332) concerns a counterexample to the weak coarse Menger conjecture and is unrelated to the P-filleting conjecture.",
+  "since_posted": [],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2508.14332",
+      "verified": false,
+      "note": "WebFetch confirms this paper disproves the weak coarse Menger conjecture (about vertex separators in a coarse analogue of Menger's theorem); it does not address the P-filleting / coherent-ideal conjecture from 1804.01060. The fuzz match (score 69) appears to be a false positive."
+    }
+  ],
+  "search_queries": [
+    "coherent ideal filleting graph forest conjecture Chudnovsky Scott Seymour Spirkl 1804.01060",
+    "pure pairs subdivisions graph conjecture filleting forest 2021 2022 2023 2024 2025",
+    "P-filleting coherent ideal graph theory conjecture \"pure pairs\" follow-up resolved 2023 2024 2025 2026"
+  ],
+  "notes": "No follow-up resolving or disproving the conjecture was found after five web calls. The conjecture is a strengthening of Theorem 2.3 (proven for P a path); the authors note it is best possible since the conclusion fails when P contains a cycle of H. It remains open as of the review date."
+}

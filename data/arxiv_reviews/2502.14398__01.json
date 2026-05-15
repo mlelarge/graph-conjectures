@@ -1,0 +1,33 @@
+{
+  "review_id": "2502.14398__01",
+  "safe_id": "2502.14398",
+  "arxiv_id": "2502.14398",
+  "conjecture_title": "Conjecture 3.6",
+  "paper_title": "Circular sorting",
+  "published": "2025-08-06",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "disproved",
+  "confidence": "high",
+  "summary": "Conjecture 3.6, which asserts that any permutation π satisfying cyc(σ)=2 for every σ∈πC_n must have n prime and be of the affine form π_{n,a}, is disproved by Bastide, Bishnoi, Groenland, Gijswijt, and Joshi (arXiv:2510.18529). The smallest counterexample occurs at n=23: a specific non-affine permutation satisfies t([π])=21=n−2 yet is not of the form π_{n,a}; all counterexamples found have the structure of quadratic orthomorphisms. The implied Conjecture 3.4 (t(n)=n−2 iff n is prime) remains open but is further supported.",
+  "since_posted": [
+    {
+      "title": "Circular sorting, strong complete mappings and wreath product constructions",
+      "authors": "Paul Bastide, Anurag Bishnoi, Carla Groenland, Dion Gijswijt, Rohinee Joshi",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2510.18529",
+      "arxiv_id": "2510.18529",
+      "doi": null,
+      "kind": "counterexample",
+      "claim": "Disproves Conjecture 3.6 by exhibiting non-affine quadratic orthomorphisms achieving t([π])=n−2 for prime n, with the smallest counterexample an explicit permutation of length n=23."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Adin Alon Roichman \"circular sorting\" conjecture permutations cyclic 2502.14398",
+    "circular sorting permutation \"cyc\" cyclic group prime characterization arXiv 2025"
+  ],
+  "notes": "Conjecture 3.6 is a structural strengthening of Conjecture 3.4; its disproof does not immediately disprove 3.4. arXiv:2510.18529 also provides evidence for Conjecture 3.4 (t(n)≤n−3 when n is composite) and proves a tight upper bound for n=25 via exhaustive search using strong complete mappings."
+}

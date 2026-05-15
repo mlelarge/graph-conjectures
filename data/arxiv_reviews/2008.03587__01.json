@@ -1,0 +1,22 @@
+{
+  "review_id": "2008.03587__01",
+  "safe_id": "2008.03587",
+  "arxiv_id": "2008.03587",
+  "conjecture_title": "Question 4.2",
+  "paper_title": "A note on deterministic zombies",
+  "published": "2021-06-03",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Question 4.2 asks whether for any graph G there exists an integer k such that z(G'_k) > z(G) + 1, where G'_k is obtained by subdividing every edge k times and re-adding the original edges; the authors suggest k = 5 may work universally. No follow-up paper addressing this specific question was found in indexed literature through 2026, across searches covering zombie-number graph theory, the source paper's citations, and related pursuit-evasion work on graph products and subdivisions.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "zombie number graph subdivision \"deterministic zombies\" arXiv 2008.03587",
+    "\"zombie number\" graph \"edge subdivision\" \"original edges\" conjecture",
+    "\"zombie number\" \"various graph classes\" arXiv subdivision question"
+  ],
+  "notes": "No follow-up found. The three web searches and two successful WebFetch calls (arXiv abstract page and a 2022 Bose-De Carufel-Shermer pursuit-evasion paper on lazy zombies) returned no reference to Question 4.2 or the specific G'_k construction. The Manitoba 2024 thesis on zombie numbers across graph classes also does not appear to address this question. The conjecture remains open with high confidence."
+}

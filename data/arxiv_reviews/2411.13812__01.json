@@ -1,0 +1,22 @@
+{
+  "review_id": "2411.13812__01",
+  "safe_id": "2411.13812",
+  "arxiv_id": "2411.13812",
+  "conjecture_title": "Conjecture 4.2",
+  "paper_title": "When are off-diagonal hypergraph Ramsey numbers polynomial?",
+  "published": "2025-10-29",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 4.2 from arXiv:2411.13812 posits a tower-height lower bound $t_s$ for the Ramsey number $r(H, K_n^{(k)})$ whenever $H$ is $s$-tightly connected, $k > s$, and $H$ is not $k$-partite, generalising the $k=3$, $s=2$ case proved as Theorem 4.1 in the same paper. The authors themselves describe the conjecture as 'likely difficult'. A broad web search spanning arXiv and journal sources up to May 2026 found no follow-up paper proving, disproving, or making substantial partial progress on this conjecture. Several related recent papers (e.g., arXiv:2603.16069 on quasipolynomial hypergraph Ramsey growth rates, arXiv:2502.20863 on bounded-degree hypergraph Ramsey lower bounds) work in adjacent territory but do not address this specific statement.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "hypergraph Ramsey numbers s-tightly connected tower function lower bound 2411.13812",
+    "off-diagonal hypergraph Ramsey polynomial Conlon Fox Mubayi Suk tightly connected k-partite",
+    "arXiv 2025 2026 s-tightly connected k-graph hypergraph Ramsey tower height conjecture Conlon Fox"
+  ],
+  "notes": "No follow-up found. The conjecture is very recent (paper first posted November 2024, revised October 2025) and is explicitly flagged as 'likely difficult' by the authors. Adjacent work on quasipolynomial growth rates (arXiv:2603.16069) and bounded-degree lower bounds (arXiv:2502.20863) does not address this conjecture."
+}

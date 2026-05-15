@@ -1,0 +1,54 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Groenland–Joret–Nadara–Walczak Conjecture on treedepth vs. pathwidth",
+    "statement_text": "Every graph of pathwidth less than $a$ containing no $2^b$-vertex path has treedepth $O(ab)$.",
+    "context_text": "Theorem 1 (Czerwiński, Nadara, Pilipczuk) had previously given a bound of $O(a^2 b)$ for such graphs by combining treewidth and binary-tree-minor bounds. The authors of [5] conjectured the bound could be reduced to $O(ab)$, matching the natural product of the two parameters.",
+    "attributed_to": "Groenland, Joret, Nadara, and Walczak",
+    "attributed_year": null,
+    "paper_contribution": "Proves the conjecture by establishing Theorem 3: every graph of pathwidth less than $a$ containing no $2^b$-vertex path has treedepth at most $10ab$, and shows this bound is tight up to a constant factor.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Reference [5] is Groenland, Joret, Nadara, Walczak; year could not be confirmed from the extracted text. PDF source — exponent notation (2^b vs 2b) inferred from context.",
+    "arxiv_id": "2302.02995",
+    "paper_title": "Tight bound on treedepth in terms of pathwidth and longest path",
+    "paper_authors": [
+      "Meike Hatzel",
+      "Gwenaël Joret",
+      "Piotr Micek",
+      "Marcin Pilipczuk",
+      "Torsten Ueckerdt",
+      "Bartosz Walczak"
+    ],
+    "published": "2023-11-06",
+    "abs_url": "https://arxiv.org/abs/2302.02995",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Open Problem: sharpness of the treedepth bound in Theorem 1",
+    "statement_text": "Whether the bound $O(thb)$ in Theorem 1 — that every graph of treewidth less than $t$ with no complete binary tree of height $h$ as a minor and no $2^b$-vertex path has treedepth $O(thb)$ — can be improved remains an open problem.",
+    "context_text": "Theorems 2 and 3 together imply Theorem 1, and their individual bounds are each sharp up to constant factors. However, it is unknown whether the combined bound $O(thb)$ in Theorem 1 is optimal or can be reduced.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated as prose without a labelled theorem environment. PDF source — exponent notation inferred from context.",
+    "arxiv_id": "2302.02995",
+    "paper_title": "Tight bound on treedepth in terms of pathwidth and longest path",
+    "paper_authors": [
+      "Meike Hatzel",
+      "Gwenaël Joret",
+      "Piotr Micek",
+      "Marcin Pilipczuk",
+      "Torsten Ueckerdt",
+      "Bartosz Walczak"
+    ],
+    "published": "2023-11-06",
+    "abs_url": "https://arxiv.org/abs/2302.02995",
+    "source": "pdf"
+  }
+]

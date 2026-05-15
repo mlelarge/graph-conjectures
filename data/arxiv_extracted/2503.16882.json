@@ -1,0 +1,74 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1 (Tang, Liu, and Wang)",
+    "statement_text": "For every connected graph $G$ of order $n$ and $p\\geq 2$, $$\\mathcal{E}^{+}_{p}(G)\\geq\\mathcal{E}^{+}_{p}(P_{n}).$$",
+    "context_text": "Tang, Liu, and Wang initiated the study of positive and negative $p$-energies of graphs and posed this conjecture about the minimality of the path $P_n$ for positive $p$-energy among connected graphs. The present paper poses and partially settles an analogous conjecture for negative $p$-energy.",
+    "attributed_to": "Tang, Liu, and Wang",
+    "attributed_year": 2025,
+    "paper_contribution": "The paper does not directly settle Conjecture 1; instead it poses and proves the negative $p$-energy analogue (Conjecture 2) for $p\\geq 4$, and establishes sub-matrix energy inequalities giving lower bounds for $p$-energy via vertex partitioning.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2503.16882",
+    "paper_title": "Vertex Partitioning and $p$-Energy of Graphs",
+    "paper_authors": [
+      "Saieed Akbari",
+      "Hitesh Kumar",
+      "Bojan Mohar",
+      "Shivaramakrishna Pragada"
+    ],
+    "published": "2025-06-20",
+    "abs_url": "https://arxiv.org/abs/2503.16882",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 2",
+    "statement_text": "For every connected graph $G$ of order $n$ and $p\\geq 2$, $$\\mathcal{E}^{-}_{p}(G)\\geq\\mathcal{E}^{-}_{p}(P_{n}).$$",
+    "context_text": "The paper's authors pose this as the natural negative $p$-energy analogue of Conjecture 1 of Tang, Liu, and Wang. Together, Conjectures 1 and 2 generalize Conjecture 3 of Elphick, Farber, Goldberg, and Wocjan, since at $p=2$ both give the bound $n-1$ by symmetry of the path spectrum. The paper settles this conjecture for $p\\geq 4$ via Theorem 1.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "The theorem-environment text captures only the preamble clause; the displayed formula $\\mathcal{E}^{-}_{p}(G)\\geq\\mathcal{E}^{-}_{p}(P_{n})$ is reconstructed from the stated analogy with Conjecture 1, the generalisation claim for Conjecture 3, and the fact that Theorem 1 (proved bound $\\mathcal{E}_{p}^{-}(G)\\geq n$ for $p\\geq 4$, $G\\ncong K_n$) is said to settle this conjecture for $p\\geq 4$. The case $2\\leq p<4$ remains open.",
+    "arxiv_id": "2503.16882",
+    "paper_title": "Vertex Partitioning and $p$-Energy of Graphs",
+    "paper_authors": [
+      "Saieed Akbari",
+      "Hitesh Kumar",
+      "Bojan Mohar",
+      "Shivaramakrishna Pragada"
+    ],
+    "published": "2025-06-20",
+    "abs_url": "https://arxiv.org/abs/2503.16882",
+    "source": "html"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 3 (Elphick, Farber, Goldberg, and Wocjan)",
+    "statement_text": "For every connected graph $G$ of order $n$, $$\\min\\{\\mathcal{E}_{2}^{+}(G),\\mathcal{E}_{2}^{-}(G)\\}\\geq n-1.$$",
+    "context_text": "Posed by Elphick, Farber, Goldberg, and Wocjan in 2016, this conjecture is a special case ($p=2$) of Conjectures 1 and 2. Zhang proved the linear bound $\\min\\{\\mathcal{E}_{2}^{+}(G),\\mathcal{E}_{2}^{-}(G)\\}\\geq n/2$ via the domination number, and the same authors as the present paper proved $3n/4$ for $n\\geq 4$ in a companion work, but the conjecture remains open.",
+    "attributed_to": "Elphick, Farber, Goldberg, and Wocjan",
+    "attributed_year": 2016,
+    "paper_contribution": "The paper develops sub-matrix block energy inequalities and vertex-partitioning lower bounds for $p$-energy that are relevant tools for this conjecture, but explicitly states that Conjecture 3 still remains elusive.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2503.16882",
+    "paper_title": "Vertex Partitioning and $p$-Energy of Graphs",
+    "paper_authors": [
+      "Saieed Akbari",
+      "Hitesh Kumar",
+      "Bojan Mohar",
+      "Shivaramakrishna Pragada"
+    ],
+    "published": "2025-06-20",
+    "abs_url": "https://arxiv.org/abs/2503.16882",
+    "source": "html"
+  }
+]

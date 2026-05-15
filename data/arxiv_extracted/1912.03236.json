@@ -1,0 +1,26 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Tomescu's Graph Coloring Conjecture",
+    "statement_text": "If $G$ is a connected graph on $n$ vertices and $\\chi(G) = k \\geq 4$, then $P_G(k) \\leq k!(k-1)^{n-k}$, with equality if and only if the $2$-core of $G$ is a $k$-clique.",
+    "context_text": "Conjectured by Tomescu in 1971 for connected $n$-vertex $k$-chromatic graphs, this was the central open problem on maximizing the chromatic polynomial in this family. It was recently resolved by Fox, He, and Manners. The present paper investigates the analogous extremal problem under the additional constraint that $G$ is $\\ell$-connected.",
+    "attributed_to": "Tomescu",
+    "attributed_year": 1971,
+    "paper_contribution": "Proves analogues for $\\ell$-connected graphs: the exact tight bound $P_G(k) \\leq (k-1)!((k-1)^{n-k+1}+(-1)^{n-k})$ for $2$-connected graphs (with equality iff $G \\cong G_{n,k}$), and the asymptotically tight bound $P_G(k) \\leq k!(k-1)^{n-\\ell-k+1}+O((k-2)^n)$ for $\\ell \\geq 3$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "The original conjecture was proved by Fox, He, and Manners [10]; this paper extends the framework to ℓ-connected graphs. The paper states that open problems and conjectures appear in a final section, but that section is absent from the extracted PDF text and could not be processed.",
+    "arxiv_id": "1912.03236",
+    "paper_title": "Tomescu's graph coloring conjecture for $\\ell$-connected graphs",
+    "paper_authors": [
+      "John Engbers",
+      "Aysel Erey",
+      "Jacob Fox",
+      "Xiaoyu He"
+    ],
+    "published": "2019-12-06",
+    "abs_url": "https://arxiv.org/abs/1912.03236",
+    "source": "pdf"
+  }
+]

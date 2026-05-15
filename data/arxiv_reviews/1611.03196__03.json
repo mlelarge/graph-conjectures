@@ -1,0 +1,29 @@
+{
+  "review_id": "1611.03196__03",
+  "safe_id": "1611.03196",
+  "arxiv_id": "1611.03196",
+  "conjecture_title": "Conjecture 1.15",
+  "paper_title": "Fair representation by independent sets",
+  "published": "2016-11-10",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "Conjecture 1.15 from arXiv:1611.03196 asks for an additive constant c(m) guaranteeing that any bipartite graph G with m edge-sets E_1,...,E_m admits a large matching (of size at least |E(G)|/Delta(G) - c(m)) in which no E_i is over-represented beyond the ceiling of |E_i|/Delta(G). No verified resolution of this conjecture was found in the literature after an exhaustive web search. The conjecture is from 2016 and appears to remain open as of May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2212.11969",
+      "verified": true,
+      "note": "Paper is 'Invertibility of digraphs and tournaments' by Alon, Powierski, Savery, Scott, Wilmer; its topic is the inversion number of directed graphs and NP-completeness of related decision problems. It does not cite or discuss Conjecture 1.15 from arXiv:1611.03196. The fuzzy match (score 80) is a false positive."
+    }
+  ],
+  "search_queries": [
+    "arXiv:1611.03196 \"fair representation\" bipartite matching conjecture cite",
+    "Aharoni Alon \"fair representation\" bipartite matching \"independent sets\" conjecture 2017 2018 2019 2020",
+    "\"fair representation\" bipartite matching \"c(m)\" \"Delta\" edges conjecture Aharoni Alon 2020 2021 2022 2023 2024",
+    "\"almost fair\" bipartite matching \"1611.03196\" OR \"Aharoni Alon Berger Chudnovsky\" arXiv"
+  ],
+  "notes": "No verified follow-up paper addressing Conjecture 1.15 was found after 5 web calls. A ScienceDirect paper titled 'Almost fair perfect matchings in complete bipartite graphs' appeared in search results but returned HTTP 403 and could not be verified; it is not included in since_posted. The internal reference arXiv:2212.11969 is a false positive from the corpus fuzzy-matching step. Confidence is medium rather than high because the conjecture is approximately 9 years old, making the absence of indexed follow-up somewhat less conclusive."
+}

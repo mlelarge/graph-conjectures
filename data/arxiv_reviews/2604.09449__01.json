@@ -1,0 +1,22 @@
+{
+  "review_id": "2604.09449__01",
+  "safe_id": "2604.09449",
+  "arxiv_id": "2604.09449",
+  "conjecture_title": "Conjecture 6.2",
+  "paper_title": "Colour-balanced subgraphs",
+  "published": "2026-04-10",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 6.2 from arXiv:2604.09449 was stated by the paper's authors in April 2026 and remains open. The paper establishes an O(k^2) upper bound (Theorem 1.2) on the minimum f_c value achievable by a perfect matching in any colour-balanced k-edge-colouring of K_{2kt}, and constructs a constant lower bound (Theorem 5.3); the conjecture asserts the constant lower bound is tight, i.e. that an absolute constant C independent of both k and t suffices. No follow-up resolving the conjecture was found in the ~5 weeks since posting.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "colour-balanced subgraphs perfect matching complete graph absolute constant Hogan Scott Tsarev 2604.09449",
+    "colour-balanced edge-colouring perfect matching f_c constant 2026 Hogan Scott Tsarev arxiv",
+    "arxiv 2604.09449 colour-balanced perfect matching constant conjecture 2026"
+  ],
+  "notes": "The conjecture is very recent (April 2026). The closest precursor is arXiv:2410.07993, which proved a uniform bound of 4^(k^2) (n-independent but k-dependent) for the analogous f(M) measure; the source paper improves this to O(k^2) and conjectures an absolute constant. The paper also notes that a sqrt(k) lower bound for perfect matchings in K_{kt,kt} implies new ideas would be needed. No follow-up paper resolving Conjecture 6.2 was found."
+}

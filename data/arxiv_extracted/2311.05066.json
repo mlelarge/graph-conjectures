@@ -1,0 +1,50 @@
+[
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Question 8.3",
+    "statement_text": "For which sets $\\mathcal{S}$ of strings is it true that there is a constant $c=c(\\mathcal{S})\\in\\mathbb{N}$ such that every $c$-padded string $S$ contains either a string in $\\mathcal{S}$ or the reverse of a string in $\\mathcal{S}$ as a consecutive substring?",
+    "context_text": "This question arises in the special case where every graph in $\\mathcal{H}$ is a $c'$-tassel for some $c'\\in\\mathbb{N}$, where each tassel has a unique string $\\mathcal{S}_{H,v}$ associated to each neck $v$. A set $\\mathcal{S}$ satisfying the condition is called a $c$-unavoidable language, and identifying minimal such languages is key to characterising tasselled families. The only singleton $c$-unavoidable languages are $\\mathcal{S}=\\{0\\cdots 01\\}$ (up to reversal) and $\\mathcal{S}=\\{0\\cdots 0\\}$.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2311.05066",
+    "paper_title": "Induced subgraphs and tree decompositions XIII. Basic obstructions in $\\mathcal{H}$-free graphs for finite $\\mathcal{H}$",
+    "paper_authors": [
+      "Bogdan Alecu",
+      "Maria Chudnovsky",
+      "Sepehr Hajebi",
+      "Sophie Spirkl"
+    ],
+    "published": "2024-11-26",
+    "abs_url": "https://arxiv.org/abs/2311.05066",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Question 8.4",
+    "statement_text": "For which sets $\\mathcal{S}$ of strings is it true that every sufficiently long string contains a string in $\\mathcal{S}$ as a consecutive substring?",
+    "context_text": "These sets $\\mathcal{S}$ are the classical unavoidable languages; it is known (from [4,5]) that every minimal unavoidable language is finite. This finiteness fails for $c$-unavoidable languages (e.g., $\\mathcal{S}=\\{01^{k}0:k\\in\\mathbb{N}\\}$ is $1$-unavoidable), and the paper poses the question of which results on unavoidable languages generalise to the $c$-unavoidable setting introduced in Question 8.3.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2311.05066",
+    "paper_title": "Induced subgraphs and tree decompositions XIII. Basic obstructions in $\\mathcal{H}$-free graphs for finite $\\mathcal{H}$",
+    "paper_authors": [
+      "Bogdan Alecu",
+      "Maria Chudnovsky",
+      "Sepehr Hajebi",
+      "Sophie Spirkl"
+    ],
+    "published": "2024-11-26",
+    "abs_url": "https://arxiv.org/abs/2311.05066",
+    "source": "html"
+  }
+]

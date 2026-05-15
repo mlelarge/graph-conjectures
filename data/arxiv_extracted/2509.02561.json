@@ -1,0 +1,46 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 2 (Alon [2])",
+    "statement_text": "Let $G$ be a group of size $n$. The independence number of the random Cayley graph $G(p)$ is at most $\\tilde{O}(p^{-1})$ whp.",
+    "context_text": "It is natural to conjecture that random Cayley graphs behave similarly to random regular graphs of the same degree in terms of independence number. The best prior general bound was $O(\\min(p^{-2}(\\log n)^{2}, \\sqrt{n(\\log n)/p}))$ (Theorem 1). The conjecture is significantly harder to approach than its random-regular-graph analogue due to limited randomness and strong dependencies in the Cayley graph model.",
+    "attributed_to": "Alon",
+    "attributed_year": 2013,
+    "paper_contribution": "Proves improved bounds on the independence number of sparse random Cayley and Cayley-sum graphs, making progress toward the conjectured $\\tilde{O}(p^{-1})$ bound; a companion follow-up work achieves sharp asymptotics for $G=\\mathbb{Z}_n$ at density $(\\log n)^{-2+o(1)}$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Reference [2] is: N. Alon, 'The chromatic number of random Cayley graphs', European J. Combin. 34 (2013), 1232–1243.",
+    "arxiv_id": "2509.02561",
+    "paper_title": "Random Cayley graphs and random sumsets",
+    "paper_authors": [
+      "Noga Alon",
+      "Huy Tuan Pham"
+    ],
+    "published": "2025-09-02",
+    "abs_url": "https://arxiv.org/abs/2509.02561",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 15",
+    "statement_text": "There exist collections of sets $\\mathcal{F}_{\\ell}$ such that [size/complexity conditions] and such that for every $|A|=s$ with $|A+A|\\leq K|A|$, there exists $\\ell\\leq\\log_{2}K$ and $F\\in\\mathcal{F}_{\\ell}$ such that $A+A\\supseteq F$.",
+    "context_text": "The authors believe the main covering lemma — showing sumsets of sets with small doubling contain dense subsets of low complexity — will have further applications beyond those discussed in the paper. This conjecture proposes an optimal or strengthened form of that covering lemma, and is motivated in part by a version of Lovett's question (from Green's list of open problems [14]) asking whether sumsets $A+A$ of dense sets contain large subsets that are iterated sumsets $B+B+B+B$.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "The statement text as extracted appears truncated: the clause 'such that and such that' suggests that the size or complexity conditions on the collections $\\mathcal{F}_{\\ell}$ were lost in the source extraction. The mathematical content may be incomplete or garbled.",
+    "arxiv_id": "2509.02561",
+    "paper_title": "Random Cayley graphs and random sumsets",
+    "paper_authors": [
+      "Noga Alon",
+      "Huy Tuan Pham"
+    ],
+    "published": "2025-09-02",
+    "abs_url": "https://arxiv.org/abs/2509.02561",
+    "source": "html"
+  }
+]

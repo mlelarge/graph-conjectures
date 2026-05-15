@@ -1,0 +1,44 @@
+{
+  "review_id": "2307.02816__02",
+  "safe_id": "2307.02816",
+  "arxiv_id": "2307.02816",
+  "conjecture_title": "Question 3",
+  "paper_title": "The grid-minor theorem revisited",
+  "published": "2023-07-06",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "solved",
+  "confidence": "high",
+  "summary": "Question 3 asks for a function $g$ such that every $X$-minor-free graph $G$ satisfies $\\chi_p(G)\\leqslant c\\cdot p^{g(\\operatorname{td}(X))}$. Hodor, La, Micek, and Rambaud (arXiv:2411.02122, 2024) prove that $K_t$-minor-free graphs satisfy $\\chi_p(G)=O(p^{t-1})$; since tree-depth is minor-monotone, any graph $X$ with $\\operatorname{td}(X)=h$ satisfies $|V(X)|\\leqslant 2^h-1$, so $X$ is a minor of $K_{2^h-1}$, and hence every $X$-minor-free graph is $K_{2^h-1}$-minor-free, yielding $\\chi_p(G)=O(p^{2^h-2})$ and answering Question 3 affirmatively. The same team further sharpens these bounds in arXiv:2603.13097 (2026), determining the maximum $q$-centered chromatic number of $K_t$-minor-free graphs within an $O(q)$-factor.",
+  "since_posted": [
+    {
+      "title": "Centered colorings in minor-closed graph classes",
+      "authors": "Jędrzej Hodor, Hoang La, Piotr Micek, Clément Rambaud",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2411.02122",
+      "arxiv_id": "2411.02122",
+      "doi": null,
+      "kind": "proof",
+      "claim": "Proves $\\chi_p(G)=O(p^{t-1})$ for $K_t$-minor-free graphs; combined with the minor-monotonicity of tree-depth this gives a positive answer to Question 3 with $g(h)=2^h-2$; the paper also notes $O(p^{t-1}\\log p)$ for general $X$-minor-free graphs with $\\operatorname{td}(X)=t$, with a manuscript in preparation."
+    },
+    {
+      "title": "Centered colorings and weak coloring numbers in minor-closed graph classes",
+      "authors": "Jędrzej Hodor, Hoang La, Piotr Micek, Clément Rambaud",
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2603.13097",
+      "arxiv_id": "2603.13097",
+      "doi": null,
+      "kind": "proof",
+      "claim": "Determines the maximum $q$-centered chromatic number of $K_t$-minor-free graphs within an $O(q)$-factor, establishing $O(q^{t-1})$ as essentially tight and providing refined bounds for the function $g$ in Question 3."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "p-centered coloring minor-free graphs tree-depth function 2307.02816",
+    "p-centered coloring X-minor-free chi_p td(X) arxiv 2024 2025"
+  ],
+  "notes": "arXiv:2411.02122 is authored by Hodor, La, Micek, Rambaud — a subset of the Question 3 authors — confirming it is a direct follow-up. The key chain: tree-depth is minor-monotone, so td(X)=h implies |V(X)| ≤ 2^h−1, which implies X is a minor of K_{2^h−1}, which implies X-minor-free ⊆ K_{2^h−1}-minor-free; combined with O(p^{t-1}) for K_t-minor-free from 2411.02122, this gives g(h)=2^h−2. arXiv:2603.13097 (March 2026) appears to be the 'manuscript in preparation' referenced in 2411.02122."
+}

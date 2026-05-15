@@ -1,0 +1,23 @@
+{
+  "review_id": "1710.02727__00",
+  "safe_id": "1710.02727",
+  "arxiv_id": "1710.02727",
+  "conjecture_title": "Conjecture 4",
+  "paper_title": "Islands in minor-closed classes. I. Bounded treewidth and separators",
+  "published": "2017-10-07",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "Conjecture 4 from arXiv:1710.02727 asserts that a minor-closed class satisfies col*(G) ≤ t if and only if it excludes K_{t,m} and I_{t-1}+P_m for some m. The source paper (Theorem 7) establishes the conjecture in the special case of minor-closed classes of bounded treewidth. No follow-up paper resolving the full conjecture was found in an exhaustive web search; the conjecture appears to remain open as of 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Dvořák Norin \"col*\" minor-closed \"K_{t,m}\" conjecture islands treewidth",
+    "arxiv 1710.02727 Dvořák Norin islands minor-closed conjecture coloring",
+    "Norin Scott \"clustered colouring\" minor-closed \"col*\" \"I_{t-1}\" conjecture 2019 2020 2021",
+    "Dvořák Norin \"islands in minor-closed\" \"Conjecture 4\" OR \"col*\" \"I_{t-1}+P_m\" progress resolved"
+  ],
+  "notes": "The conjecture is from 2017 (part I of a planned series); no part II was found in the indexed literature. The bounded treewidth special case (Theorem 7 of the source paper) is proven therein. The related Norin–Scott paper arXiv:1708.02370 on clustered colouring in minor-closed classes predates 1710.02727 and does not address Conjecture 4. The conjecture would imply χ*_ℓ(G) = col*(G) for every minor-closed class. Confidence is medium rather than high because the conjecture is nearly 9 years old and absence of a resolution in web search is somewhat suspicious for an active research area."
+}

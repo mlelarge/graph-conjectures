@@ -1,0 +1,23 @@
+{
+  "review_id": "1601.01886__00",
+  "safe_id": "1601.01886",
+  "arxiv_id": "1601.01886",
+  "conjecture_title": "Optimality of factor 2 in Lemma 4",
+  "paper_title": "Pathwidth and nonrepetitive list coloring",
+  "published": "2016-10-02",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "The open question asks whether the bound of $2k$ in Lemma 4 of arXiv:1601.01886 — every tree of pathwidth $k$ has a path-partition of height at most $2k$ — can be improved, i.e., whether the factor of 2 is necessary. No follow-up paper addressing the optimality of this factor was found in searches covering the period 2016–2026. Related work by overlapping authors (Joret, Micek et al.) on tight pathwidth bounds concerns different structural parameters (treedepth, treewidth) and does not resolve this specific question. The conjecture remains open with medium confidence given its age of roughly 9 years.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "arXiv 1601.01886 pathwidth nonrepetitive list coloring Gagol Joret Kozik Micek citations",
+    "tree pathwidth \"path-partition\" height \"factor 2\" optimality conjecture",
+    "nonrepetitive coloring pathwidth tree \"path partition\" 2k bound tight 2017 2018 2019 2020 2021",
+    "\"Gagol\" OR \"Joret\" OR \"Micek\" tree pathwidth \"path-partition\" OR \"path partition\" height bound 2022 2023 2024 2025"
+  ],
+  "notes": "No follow-up paper resolving or improving the factor-2 bound in Lemma 4 was found after 5 web calls (2 WebSearch + 3 WebFetch). The survey on nonrepetitive graph colouring (Wood, arXiv:2009.02001) was identified as a potentially relevant source but its full content could not be verified within the call budget. The question is quite specific — it concerns the sharpness of a structural tool rather than the main theorem — and may have received little independent attention. Confidence is medium rather than high because the conjecture is ~9 years old."
+}

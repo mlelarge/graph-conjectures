@@ -1,0 +1,28 @@
+{
+  "review_id": "2004.12166__00",
+  "safe_id": "2004.12166",
+  "arxiv_id": "2004.12166",
+  "conjecture_title": "Conjecture 5 (Improved Approximation Conjecture)",
+  "paper_title": "An algorithmic weakening of the Erdős-Hajnal conjecture",
+  "published": "2020-04-25",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "No follow-up paper resolving or disproving Conjecture 5 from arXiv:2004.12166 was found after targeted searches. The conjecture remains open: it is known to hold for all H whose H-free class admits a polynomial-time MIS algorithm (e.g., P_6-free, fork-free graphs) by closure under graph substitution, but the full statement for every graph H is unresolved. The internal candidate reference arXiv:2301.10147 addresses the classical Erdős-Hajnal conjecture (clique/stable-set size bounds) and does not bear on the algorithmic/approximation formulation.",
+  "since_posted": [],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2301.10147",
+      "verified": true,
+      "note": "This paper (Bucić, Nguyen, Scott, Seymour 2024) proves a new lower bound on the clique/stable-set size in H-free graphs, improving the 1977 Erdős-Hajnal bound from 2^{c sqrt(log n)} to 2^{c sqrt(log n) log log n}. It addresses the classical combinatorial Erdős-Hajnal conjecture, not the algorithmic weakening (MIS approximation) that is the subject of Conjecture 5. The fuzz=80 corpus match is a false positive on the shared Erdős-Hajnal topic."
+    }
+  ],
+  "search_queries": [
+    "MIS approximation H-free graphs improved approximation conjecture Bonnet Thomassé 2004.12166",
+    "maximum independent set approximation H-free hereditary class polynomial Erdős-Hajnal algorithmic weakening",
+    "\"improved approximation\" \"H-free\" MIS independent set conjecture Bonnet Thomassé 2021 2022 2023 2024"
+  ],
+  "notes": "Searches returned only the source paper (ESA 2020), closely related prior work on quasi-PTAS for MIS in H-free graphs (Chudnovsky et al. 2020), and a parameterized inapproximability paper in H-free graphs (Algorithmica 2022) whose content could not be verified due to a paywall redirect. Confidence is medium rather than high because the conjecture is ~6 years old, making absence of indexed progress mildly suspicious, though no counterexample or proof was found."
+}

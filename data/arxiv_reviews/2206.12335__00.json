@@ -1,0 +1,22 @@
+{
+  "review_id": "2206.12335__00",
+  "safe_id": "2206.12335",
+  "arxiv_id": "2206.12335",
+  "conjecture_title": "Conjecture 6.2",
+  "paper_title": "Improved bounds for 1-independent percolation on $\\mathbb{Z}^n$",
+  "published": "2025-06-23",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 6.2 from arXiv:2206.12335 asserts that for p > 0.55, the signs model minimises the probability that Q_3 is connected among all 1-independent models with marginal edge probability at least p. The conjecture is supported only by computational evidence cited in the source paper, and no subsequent published or preprint work resolving or significantly advancing it was found in the indexed literature as of May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Balister Johnston Savery Scott \"1-independent percolation\" \"signs model\" \"Q_3\" connected 2206.12335",
+    "\"1-independent percolation\" \"signs model\" cube \"minimises\" connectivity probability",
+    "Balister Johnston Savery Scott \"signs model\" \"hypercube\" connectivity \"1-independent\" 2024 2025 2026"
+  ],
+  "notes": "No follow-up found in 4 web searches. The conjecture appears only in the open problems section of arXiv:2206.12335 (journal-published in EJP 2025), backed solely by computational evidence. The paper was posted to arXiv in June 2022 and published in Electronic Journal of Probability volume 30 (2025, DOI 10.1214/25-EJP1341)."
+}

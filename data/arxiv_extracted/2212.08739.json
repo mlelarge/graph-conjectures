@@ -1,0 +1,60 @@
+[
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Open Problem of Illingworth–Scott–Wood on absolute constant treewidth bound",
+    "statement_text": "Is $f(\\mathcal{G})$ upper bounded by an absolute constant, where $f(\\mathcal{G})$ is the minimum integer such that for some $c$, every $n$-vertex graph $G\\in\\mathcal{G}$ is contained in $H\\boxtimes K_{\\!m}$ for some graph $H$ with treewidth at most $f(\\mathcal{G})$, with $m\\leqslant c\\sqrt{n}$?",
+    "context_text": "Illingworth, Scott and Wood introduced the parameter $f(\\mathcal{G})$ for a proper minor-closed class $\\mathcal{G}$ and showed $f(\\mathcal{G}_t)\\leqslant t-2$ for the class $\\mathcal{G}_t$ of $K_t$-minor-free graphs. They asked whether this parameter is bounded by a constant independent of $t$.",
+    "attributed_to": "Illingworth, Scott, and Wood",
+    "attributed_year": 2022,
+    "paper_contribution": "Proves affirmatively that $f(\\mathcal{G})\\leqslant 4$ for every proper minor-closed class $\\mathcal{G}$, by showing every $n$-vertex $K_t$-minor-free graph is contained in $H\\boxtimes K_{\\!m}$ for some graph $H$ of treewidth at most $4$, where $m\\in O_t(\\sqrt{n})$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2212.08739",
+    "paper_title": "Product structure extension of the Alon--Seymour--Thomas theorem",
+    "paper_authors": [
+      "Marc Distel",
+      "Vida Dujmović",
+      "David Eppstein",
+      "Robert Hickingbotham",
+      "Gwenaël Joret",
+      "Piotr Micek",
+      "Pat Morin",
+      "Michał T. Seweryn",
+      "David R. Wood"
+    ],
+    "published": "2024-04-06",
+    "abs_url": "https://arxiv.org/abs/2212.08739",
+    "source": "html"
+  },
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Open Problem of Illingworth–Scott–Wood on planar graph product structure",
+    "statement_text": "Is $f(\\mathcal{L})\\leqslant 2$, where $\\mathcal{L}$ is the class of planar graphs?",
+    "context_text": "Illingworth, Scott and Wood showed $f(\\mathcal{L})\\leqslant 3$ as a consequence of planar graphs being $K_5$-minor-free, and posed the open problem of whether the treewidth could be reduced to $2$ in the product structure decomposition of planar graphs.",
+    "attributed_to": "Illingworth, Scott, and Wood",
+    "attributed_year": 2022,
+    "paper_contribution": "Resolves the problem by proving that every $n$-vertex planar graph is contained in $H\\boxtimes K_{\\!m}$ where $H$ has treewidth $2$ and $m\\in O(\\sqrt{n})$; the treewidth bound of $2$ is best possible.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2212.08739",
+    "paper_title": "Product structure extension of the Alon--Seymour--Thomas theorem",
+    "paper_authors": [
+      "Marc Distel",
+      "Vida Dujmović",
+      "David Eppstein",
+      "Robert Hickingbotham",
+      "Gwenaël Joret",
+      "Piotr Micek",
+      "Pat Morin",
+      "Michał T. Seweryn",
+      "David R. Wood"
+    ],
+    "published": "2024-04-06",
+    "abs_url": "https://arxiv.org/abs/2212.08739",
+    "source": "html"
+  }
+]

@@ -1,0 +1,94 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Erdős-Hajnal Conjecture",
+    "statement_text": "For every graph $H$ there is $c_{H}>0$ such that any $n$-vertex $H$-free graph $G$ has $\\hom(G)\\geq n^{c_{H}}$.",
+    "context_text": "Stated in 1977, this is among the most prominent open problems in extremal and structural combinatorics, asserting that $H$-free graphs contain polynomial-sized homogeneous sets. Erdős and Hajnal proved the weaker lower bound $e^{c_H\\sqrt{\\log n}}$; the conjecture in its polynomial form remains open.",
+    "attributed_to": "Erdős and Hajnal",
+    "attributed_year": 1977,
+    "paper_contribution": "Proves that the Erdős-Hajnal conjecture is equivalent to both the polynomial Rödl conjecture (Conjecture 2) and the polynomial Nikiforov conjecture (Conjecture 3), extending several previous partial equivalence results.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2403.08303",
+    "paper_title": "Equivalence between Erdős-Hajnal and polynomial Rödl and Nikiforov conjectures",
+    "paper_authors": [
+      "Matija Bucić",
+      "Jacob Fox",
+      "Huy Tuan Pham"
+    ],
+    "published": "2024-04-19",
+    "abs_url": "https://arxiv.org/abs/2403.08303",
+    "source": "html"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Polynomial Rödl Conjecture",
+    "statement_text": "For any graph $H$ there exists a $C_{H}>0$ such that for any $0<\\varepsilon\\leq 1/2$ any $n$-vertex $H$-free graph contains an $\\varepsilon$-homogeneous set with at least $\\varepsilon^{C_{H}}n$ vertices.",
+    "context_text": "Conjectured by Fox and Sudakov in 2008 as a quantitative polynomial strengthening of a classical theorem of Rödl (1986). A graph satisfying this conjecture is said to have the polynomial Rödl property, which implies the Erdős-Hajnal property via an application of Turán's theorem.",
+    "attributed_to": "Fox and Sudakov",
+    "attributed_year": 2008,
+    "paper_contribution": "Proves that the polynomial Rödl conjecture is equivalent to the Erdős-Hajnal conjecture; as a corollary deduces that the family of string graphs satisfies the polynomial Rödl conjecture.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2403.08303",
+    "paper_title": "Equivalence between Erdős-Hajnal and polynomial Rödl and Nikiforov conjectures",
+    "paper_authors": [
+      "Matija Bucić",
+      "Jacob Fox",
+      "Huy Tuan Pham"
+    ],
+    "published": "2024-04-19",
+    "abs_url": "https://arxiv.org/abs/2403.08303",
+    "source": "html"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Polynomial Nikiforov Conjecture",
+    "statement_text": "For any graph $H$ there are constants $C_{H},D_{H}$ such that for any $0<\\varepsilon\\leq 1/2$, any $n$-vertex graph with at most $\\varepsilon^{D_{H}}n^{|H|}$ induced copies of $H$ contains an $\\varepsilon$-homogeneous set with at least $\\varepsilon^{C_{H}}n$ vertices.",
+    "context_text": "Conjectured by Fox, Nguyen, Scott and Seymour as a quantitative polynomial strengthening of a theorem of Nikiforov (2006) and of the polynomial Rödl conjecture. A graph satisfying this conjecture is called viral; every graph known to have the Erdős-Hajnal property is also known to be viral.",
+    "attributed_to": "Fox, Nguyen, Scott and Seymour",
+    "attributed_year": 2023,
+    "paper_contribution": "Proves that the polynomial Nikiforov conjecture is equivalent to the Erdős-Hajnal conjecture, establishing all three conjectures as mutually equivalent.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2403.08303",
+    "paper_title": "Equivalence between Erdős-Hajnal and polynomial Rödl and Nikiforov conjectures",
+    "paper_authors": [
+      "Matija Bucić",
+      "Jacob Fox",
+      "Huy Tuan Pham"
+    ],
+    "published": "2024-04-19",
+    "abs_url": "https://arxiv.org/abs/2403.08303",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 10",
+    "statement_text": "For each proper hereditary family $\\mathcal{F}$ of graphs there are $C_{\\mathcal{F}},d_{\\mathcal{F}}>0$ such that if $0<\\varepsilon<1/2$, every graph on $n$ vertices which is $\\varepsilon^{d_{\\mathcal{F}}}$-close to $\\mathcal{F}$ contains an $\\varepsilon$-homogeneous set of size at least $\\varepsilon^{C_{\\mathcal{F}}}n$.",
+    "context_text": "A graph on $n$ vertices is $\\alpha$-close to a family $\\mathcal{F}$ if one can add or delete at most $\\alpha n^2/2$ edges to obtain a graph in $\\mathcal{F}$. This conjecture, introduced as a natural extension for hereditary families, defines the polynomial close Rödl property; a family with this property also has the polynomial Rödl property.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2403.08303",
+    "paper_title": "Equivalence between Erdős-Hajnal and polynomial Rödl and Nikiforov conjectures",
+    "paper_authors": [
+      "Matija Bucić",
+      "Jacob Fox",
+      "Huy Tuan Pham"
+    ],
+    "published": "2024-04-19",
+    "abs_url": "https://arxiv.org/abs/2403.08303",
+    "source": "html"
+  }
+]

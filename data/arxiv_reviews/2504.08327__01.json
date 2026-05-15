@@ -1,0 +1,23 @@
+{
+  "review_id": "2504.08327__01",
+  "safe_id": "2504.08327",
+  "arxiv_id": "2504.08327",
+  "conjecture_title": "Conjecture 2",
+  "paper_title": "On a conjecture concerning 4-coloring of graphs with one crossing",
+  "published": "2025-04-14",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 2 from arXiv:2504.08327 remains open. The authors verify it computationally for all graphs with at most 28 vertices and prove it implies their Conjecture 1 (on 5-critical graphs with one crossing). No follow-up paper resolving the conjecture in either direction was found in indexed literature as of May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Dvořák Lidický Mohar 4-coloring one crossing separating triangles 2025 arXiv 2504.08327",
+    "4-colorable graphs one crossing degree five no separating triangles Dvořák Mohar conjecture 2025 2026",
+    "cite:2504.08327 \"one crossing\" \"4-colorable\" 2025 2026 graph theory",
+    "4-colorable one crossing separating triangles arXiv search 2025 2026"
+  ],
+  "notes": "No follow-up found after five web calls. The conjecture is recent (April 2025). The paper establishes: (i) computer verification for all graphs up to 28 vertices; (ii) Conjecture 2 implies Conjecture 1; (iii) equivalence with precoloring extension problems in plane graphs with four-cycle outer faces (Theorem 10); (iv) a structural characterisation of non-4-colorable graphs in the class assuming the conjecture (Theorem 6). The separating-triangle-free assumption is noted to be necessary."
+}

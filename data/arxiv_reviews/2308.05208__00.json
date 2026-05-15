@@ -1,0 +1,23 @@
+{
+  "review_id": "2308.05208__00",
+  "safe_id": "2308.05208",
+  "arxiv_id": "2308.05208",
+  "conjecture_title": "Gap in $r$-dependence of sign-pattern bound",
+  "paper_title": "Ordering Candidates via Vantage Points",
+  "published": "2023-08-09",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The conjecture asks to close the gap between the linear lower bound on $r$-dependence (from Proposition 2.5, which shows $r = 2^{m+1}$ functions suffice to realise all $2^m$ proper sign patterns) and the exponential upper bound in Theorem 2.2. No follow-up paper addressing this gap was found in a web search; the source paper was published in Combinatorica in 2025 as a direct journal version of the arXiv preprint with no announced resolution of this open problem.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "arXiv 2308.05208 sign pattern vantage points ordering candidates Alon Defant Kravitz",
+    "sign pattern bound r-dependence polynomial exponential gap vantage points graph theory 2024 2025",
+    "Defant Kravitz Zhu sign patterns sums of radicals polynomial bound 2024 2025 arXiv",
+    "2308.05208 cite sign pattern r-dependence gap closed 2024 2025 2026"
+  ],
+  "notes": "The paper was published in Combinatorica 45, 25 (2025) (DOI: 10.1007/s00493-025-00148-0), but this is the journal version of the same preprint, not a follow-up. No independent paper closing the linear-vs-exponential gap in $r$-dependence was found in up to 5 web calls."
+}

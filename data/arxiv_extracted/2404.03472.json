@@ -1,0 +1,68 @@
+[
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Problem 5.1 (cover-free families)",
+    "statement_text": "Are there $(1,r)$-cover-free families $\\mathcal{F}\\subseteq\\mathcal{P}(t)$ with $t\\in\\mathcal{O}(r^{2}\\log\\lvert\\mathcal{F}\\rvert/\\log r)$?",
+    "context_text": "The paper's lower bound for deterministic non-adaptive reconstruction ($\\Omega(\\Delta^{3}\\log n/\\log\\Delta)$) is tied to a longstanding gap for cover-free families: $\\Omega(r^{w+1}\\log n/\\log r)\\leq t(n,w,r)\\leq\\mathcal{O}(r^{w+1}\\log n)$. Closing this gap for $(1,r)$-cover-free families would directly improve the graph-reconstruction bounds.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "Parser assigned the label 'Problem 5.0' to all three problems in Section 5; this is likely Problem 5.1 or the first of several unnumbered problems.",
+    "arxiv_id": "2404.03472",
+    "paper_title": "Lower bounds for graph reconstruction with maximal independent set queries",
+    "paper_authors": [
+      "Lukas Michel",
+      "Alex Scott"
+    ],
+    "published": "2024-04-04",
+    "abs_url": "https://arxiv.org/abs/2404.03472",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Problem 5.2 (randomised non-adaptive optimality)",
+    "statement_text": "Is there a randomised non-adaptive algorithm which uses $\\mathcal{O}(\\Delta^{2}\\log(n/\\Delta))$ queries to reconstruct any graph of maximum degree $\\Delta$ with high probability?",
+    "context_text": "The paper proves an $\\Omega(\\Delta^{2}\\log(n/\\Delta))$ lower bound for randomised non-adaptive algorithms, while the existing upper bound of Konrad, O'Sullivan, and Traistaru is $\\mathcal{O}(\\Delta^{2}\\log n)$. The question asks whether the new lower bound is tight, i.e., whether the $\\log\\Delta$ gap in the $n$-dependence can be closed.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "Parser assigned the label 'Problem 5.0' to all three problems in Section 5; this is likely Problem 5.2 or the second of several unnumbered problems.",
+    "arxiv_id": "2404.03472",
+    "paper_title": "Lower bounds for graph reconstruction with maximal independent set queries",
+    "paper_authors": [
+      "Lukas Michel",
+      "Alex Scott"
+    ],
+    "published": "2024-04-04",
+    "abs_url": "https://arxiv.org/abs/2404.03472",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Problem 5.3 (adaptive vs non-adaptive gap)",
+    "statement_text": "Is there a deterministic adaptive algorithm that uses $o(\\Delta^{3}\\log(n/\\Delta))$ queries to reconstruct any graph of maximum degree $\\Delta$?",
+    "context_text": "For adaptive algorithms the best lower bound drops to $\\Omega(\\Delta^{2}\\log(n/\\Delta)/\\log\\Delta)$ in both the deterministic and randomised settings, while the upper bounds match the non-adaptive case. This gap suggests adaptive algorithms might outperform non-adaptive ones, motivating the question of whether adaptivity yields a provable saving.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "Parser assigned the label 'Problem 5.0' to all three problems in Section 5; this is likely Problem 5.3 or the third of several unnumbered problems.",
+    "arxiv_id": "2404.03472",
+    "paper_title": "Lower bounds for graph reconstruction with maximal independent set queries",
+    "paper_authors": [
+      "Lukas Michel",
+      "Alex Scott"
+    ],
+    "published": "2024-04-04",
+    "abs_url": "https://arxiv.org/abs/2404.03472",
+    "source": "html"
+  }
+]

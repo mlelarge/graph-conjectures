@@ -1,0 +1,22 @@
+{
+  "review_id": "2409.05039__00",
+  "safe_id": "2409.05039",
+  "arxiv_id": "2409.05039",
+  "conjecture_title": "Open question on strong 2-kernels in split digraphs",
+  "paper_title": "Distant digraph domination",
+  "published": "2024-09-08",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The source paper (Theorem 2.4) proves that every split digraph with no sources has a standard 2-kernel of size at most |G|/2, resolving the Erdős–Székely conjecture for this class. The open question asks whether the size bound survives when the 2-kernel is required to be strong — i.e., every vertex v in the tournament part T is either 1-covered by some vertex of K, or 2-covered by some vertex of K ∩ T. No follow-up work addressing this stronger variant was found in the indexed literature. The conjecture is recent (posted September 2024) and a targeted web search returns no evidence of resolution.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "strong 2-kernel split digraph size bound arXiv 2409.05039",
+    "split digraph strong 2-kernel tournament \"no sources\" Nguyen Scott Seymour",
+    "\"strong 2-kernel\" split digraph size \"|G|/2\" 2025"
+  ],
+  "notes": "No follow-up found on this specific open question. The source paper was published in The Electronic Journal of Combinatorics (v33i1p32, 2025). The main 2-kernel result (Theorem 2.4) is fully established; the strong 2-kernel variant asks whether the additional covering requirement for vertices in the tournament part T still allows a kernel of size at most |G|/2. The authors explicitly note they do not know the answer."
+}

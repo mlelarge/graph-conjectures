@@ -1,0 +1,23 @@
+{
+  "review_id": "2211.01032__03",
+  "safe_id": "2211.01032",
+  "arxiv_id": "2211.01032",
+  "conjecture_title": "Conjecture 9.5",
+  "paper_title": "Random Embeddings of Graphs: The Expected Number of Faces in Most Graphs is Logarithmic",
+  "published": "2025-04-09",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 9.5 from arXiv:2211.01032 posits that the expected number of faces in a non-orientable random embedding of $K_n$ (defined via a random rotation system combined with a random signature assigning each edge a sign independently with probability $1/2$) is at most $\\ln(n) + O(1)$. This is the non-orientable analogue of the paper's main theorem for orientable embeddings. The conjecture is supported only by computer simulations reported by the authors; no subsequent work resolving or making partial progress on it has been found in the literature. The conjecture first appeared in the April 2025 (v3) version of the paper, so it is very recent.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "non-orientable random embedding complete graph expected faces logarithmic Mohar Šámal 2211.01032",
+    "random embedding Kn non-orientable surface expected number faces rotation system signature",
+    "non-orientable random graph embedding expected faces Campion Loth Masarik Mohar conjecture 2024 2025",
+    "arxiv \"non-orientable\" \"random embedding\" \"complete graph\" faces logarithmic 2023 2024 2025 2026"
+  ],
+  "notes": "No follow-up found. The conjecture was introduced in the v3 (April 2025) of the paper, making it at most one year old at review time. All web searches returned only the source paper and its orientable predecessors; no citing paper addressing the non-orientable case was found."
+}

@@ -1,0 +1,22 @@
+{
+  "review_id": "2506.08810__04",
+  "safe_id": "2506.08810",
+  "arxiv_id": "2506.08810",
+  "conjecture_title": "Conjecture 25",
+  "paper_title": "Infinite induced-saturated graphs",
+  "published": "2025-09-01",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 25 proposes the natural extension of the paper's main theorem (Theorem 1) to k-uniform hypergraphs: every finite k-uniform hypergraph H with both an edge and a non-edge admits a countably infinite k-uniform hypergraph G_H such that every locally finite perturbation of G_H has an induced copy of H. The paper itself proves the k=2 (graph) case as its central result; the conjecture is explicitly stated as an open problem for general k ≥ 3. The paper has appeared in the Canadian Journal of Mathematics (published March 2026), but no follow-up work resolving or partially resolving this hypergraph extension was found in any search.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "arXiv 2506.08810 induced-saturated hypergraph conjecture",
+    "k-uniform hypergraph induced-saturated locally finite perturbation countably infinite Bonamy Groenland Johnston Morrison Scott 2025",
+    "induced-saturated k-uniform hypergraph infinite locally finite perturbation 2025 2026"
+  ],
+  "notes": "No follow-up found. The conjecture is the hypergraph generalisation of the paper's main theorem. The paper was posted June 2025 and published in the Canadian Journal of Mathematics (Cambridge University Press, March 2026); Conjecture 25 appears in the open problems section. The condition that H has both an edge and a non-edge is the k-uniform analogue of H being neither a clique nor an independent set."
+}

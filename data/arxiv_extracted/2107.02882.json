@@ -1,0 +1,27 @@
+[
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Open problem: no-kernel lower bound at twin-width 4 for Connected/Total k-Dominating Set",
+    "statement_text": "Can one show that Connected $k$-Dominating Set and Total $k$-Dominating Set on graphs of twin-width at most $4$ do not admit a polynomial kernel (unless $\\mathrm{coNP} \\subseteq \\mathrm{NP/poly}$), even when a $4$-sequence of the graph is given?",
+    "context_text": "The authors establish via local gadget modifications of their main reduction (Theorem 1) that Connected $k$-Dominating Set and Total $k$-Dominating Set have no polynomial kernel on graphs of bounded twin-width, but with a worse upper bound on the twin-width than 4. Bringing the twin-width bound down to 4—as achieved for plain $k$-Dominating Set in Theorem 1—would require additional work.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Implicit open problem stated in prose: 'More work would be necessary to get the lower bound for twin-width at most 4.' Confirmed by Table 1, which lists no 'no PK' entry for Connected k-Dominating Set at twin-width at most 4. PDF source — math notation may be partially garbled.",
+    "arxiv_id": "2107.02882",
+    "paper_title": "Twin-width and polynomial kernels",
+    "paper_authors": [
+      "Édouard Bonnet",
+      "Eun Jung Kim",
+      "Amadeus Reinald",
+      "Stéphan Thomassé",
+      "Rémi Watrigant"
+    ],
+    "published": "2021-09-14",
+    "abs_url": "https://arxiv.org/abs/2107.02882",
+    "source": "pdf"
+  }
+]

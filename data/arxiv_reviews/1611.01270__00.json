@@ -1,0 +1,34 @@
+{
+  "review_id": "1611.01270__00",
+  "safe_id": "1611.01270",
+  "arxiv_id": "1611.01270",
+  "conjecture_title": "Open Problem (better query complexity bounds for property testing)",
+  "paper_title": "Fast property testing and metrics for permutations",
+  "published": "2018-04-04",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "Fox and Wei (arXiv:1611.01270) established a universal polynomial-in-1/ε query complexity bound for two-sided testing of hereditary permutation properties under rectangular distance, improving prior Ackermann-type bounds from Klimošová--Kráļ. The open problem asks whether similarly improved (polynomial or better) bounds hold for other metrics (e.g., Kendall's tau) and other testing regimes. A 2025 survey by Gishboliner and Shapira on polynomial property testing (arXiv:2508.16878) includes a section on permutations covering this area, but no paper found in the indexed literature definitively resolves the full open problem.",
+  "since_posted": [
+    {
+      "title": "Polynomial Property Testing",
+      "authors": "Lior Gishboliner, Asaf Shapira",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2508.16878",
+      "arxiv_id": "2508.16878",
+      "doi": null,
+      "kind": "survey",
+      "claim": "A 2025 survey on polynomial property testing includes a dedicated section on permutations (Section 6) covering hereditary permutation property testing under Kendall's tau distance and citing Fox-Wei's polynomial bounds, situating the open problem in the broader landscape of which properties admit poly(1/ε) testers."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Fox Wei permutation property testing query complexity polynomial bounds hereditary 1611.01270",
+    "permutation property testing rectangular distance query complexity polynomial epsilon 2019 2020 2021 2022 2023 2024",
+    "Gishboliner Shapira polynomial property testing permutation 2025 Fox Wei hereditary"
+  ],
+  "notes": "The open problem as stated is deliberately broad ('various property testing results'), making definitive resolution hard to pinpoint. Fox-Wei itself already established polynomial bounds for rectangular distance; the remaining question concerns other metrics and tighter bounds. The Gishboliner-Shapira 2025 survey (arXiv:2508.16878) covers this landscape but its full content on permutations was not accessible to verify whether it proves new results beyond surveying. No counterexample or full resolution was found."
+}

@@ -1,0 +1,24 @@
+[
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Open Problem: PTAS for weighted minimization problems in fractionally treewidth-fragile classes",
+    "statement_text": "For the minimization problems, we do not know whether fractional treewidth-fragility is sufficient even for the distance-1 problems. In particular, consider the Minimum Vertex Cover problem in fractionally treewidth-fragile graphs, or more generally in hereditary classes with sublinear separators: while the unweighted version can be dealt with by the local search method, we do not know whether there exists a PTAS for the weighted version of this problem.",
+    "context_text": "The paper's main results (Theorem 2 and its corollaries) apply exclusively to maximization problems; the authors extend fractional treewidth-fragility techniques to handle bounded-distance dependencies for near-monotone maximization. For minimization problems the analogous question is left open, with weighted Minimum Vertex Cover in fractionally treewidth-fragile (or sublinear-separator) classes offered as a concrete test case.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated in running prose without a labelled environment; PDF extraction — surrounding math is clean but statement itself is purely verbal.",
+    "arxiv_id": "2105.01780",
+    "paper_title": "Approximation schemes for bounded distance problems on fractionally treewidth-fragile graphs",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Abhiruk Lahiri"
+    ],
+    "published": "2021-05-04",
+    "abs_url": "https://arxiv.org/abs/2105.01780",
+    "source": "pdf"
+  }
+]

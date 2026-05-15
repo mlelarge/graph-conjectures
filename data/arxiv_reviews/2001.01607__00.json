@@ -1,0 +1,40 @@
+{
+  "review_id": "2001.01607__00",
+  "safe_id": "2001.01607",
+  "arxiv_id": "2001.01607",
+  "conjecture_title": "Open Question: (even hole, K4, diamond)-free treewidth/cliquewidth",
+  "paper_title": "(Theta, triangle)-free and (even hole, $K_4$)-free graphs. Part 2 : bounds on treewidth",
+  "published": "2020-10-27",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "medium",
+  "summary": "The conjecture asks whether (even hole, $K_4$, diamond)-free graphs have bounded treewidth or cliquewidth. Abrishami, Chudnovsky, Hajebi, and Spirkl (arXiv:2203.06775, 2022) proved a partial result: for every $t > 0$, every (even hole, diamond, pyramid, $K_t$)-free graph has bounded treewidth — a special case of the conjecture that additionally requires pyramid-free graphs. Search results indicate that a structure theorem (every even-hole-free graph of sufficiently large treewidth contains $K_4$ or a diamond as an induced subgraph) was subsequently proved, which would directly resolve the conjecture, but the specific paper establishing this result could not be verified within the search budget.",
+  "since_posted": [
+    {
+      "title": "Induced subgraphs and tree decompositions IV. (Even hole, diamond, pyramid)-free graphs",
+      "authors": "Tara Abrishami, Maria Chudnovsky, Sepehr Hajebi, Sophie Spirkl",
+      "year": 2022,
+      "venue": "Electronic Journal of Combinatorics",
+      "url": "https://arxiv.org/abs/2203.06775",
+      "arxiv_id": "2203.06775",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves that for every $t > 0$ there exists $d_t \\geq 0$ such that every (even hole, diamond, pyramid, $K_t$)-free graph has treewidth at most $d_t$; this is a special case of the conjecture with the additional requirement of pyramid-free."
+    }
+  ],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2203.06775",
+      "verified": true,
+      "note": "Confirmed: paper proves bounded treewidth for (even hole, diamond, pyramid, Kt)-free graphs for every fixed t (published in Electronic Journal of Combinatorics). The main result requires pyramid-free as an additional exclusion beyond K4 and diamond, so it is a proper partial result toward the conjecture, consistent with the internal reference describing it as a special case of Conjecture 1.5."
+    }
+  ],
+  "search_queries": [
+    "even hole diamond K4 free graphs treewidth cliquewidth bounded 2001.01607",
+    "Abrishami Chudnovsky Hajebi Spirkl \"even hole\" \"diamond\" \"K4\" treewidth bounded conjecture resolved",
+    "Pilipczuk Sintiari Thomassé Trotignon \"even hole\" \"K4\" \"diamond\" treewidth cliquewidth open question 2022 2023 2024 2025"
+  ],
+  "notes": "The partial result in arXiv:2203.06775 proves bounded treewidth for the subclass that additionally excludes pyramids, explicitly identified as a special case of the conjecture. Search results strongly suggest a structure theorem — that every even-hole-free graph of large treewidth must contain $K_4$ or a diamond as an induced subgraph — was subsequently proved (likely in arXiv:2309.04390, 'Induced subgraphs and tree decompositions XI'), which would directly resolve the conjecture; this paper could not be verified within the 5-call budget. Status therefore set to partial rather than solved."
+}

@@ -1,0 +1,27 @@
+[
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "The $\\varepsilon$-$t$-Net Problem",
+    "statement_text": "How small are the smallest $\\varepsilon$-$t$-nets for $H$? Can we compute them efficiently?",
+    "context_text": "Given a finite hypergraph $H=(V,E)$, a positive integer $t$, and $\\varepsilon\\in(t/|V|,1)$, an $\\varepsilon$-$t$-net is a family $S\\subseteq\\binom{V}{t}$ of $t$-element subsets of $V$ such that every hyperedge $e\\in E$ with $|e|\\geq\\varepsilon|V|$ contains some $s\\in S$. The problem generalises the classical $\\varepsilon$-net problem ($t=1$) and the Mnet notion ($t=\\Theta(\\varepsilon|V|)$), and arises naturally in secret sharing and other combinatorial contexts.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "Stated as an explicitly labelled Problem environment in Section 1.2. PDF source causes epsilon to render as (cid:15) throughout, but the statement itself is unambiguous.",
+    "arxiv_id": "2003.07061",
+    "paper_title": "The $ε$-$t$-Net Problem",
+    "paper_authors": [
+      "Noga Alon",
+      "Bruno Jartoux",
+      "Chaya Keller",
+      "Shakhar Smorodinsky",
+      "Yelena Yuditsky"
+    ],
+    "published": "2020-03-16",
+    "abs_url": "https://arxiv.org/abs/2003.07061",
+    "source": "pdf"
+  }
+]

@@ -1,0 +1,71 @@
+[
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Problem 1.1",
+    "statement_text": "What is the minimum integer $f\\mathopen{}\\mathclose{{}\\left(k}\\right)$ such that every $f\\mathopen{}\\mathclose{{}\\left(k}\\right)$-chromatic oriented graph has an acyclic $k$-chromatic subgraph?",
+    "context_text": "Addario-Berry, Havet, Sales, Reed, and Thomassé observed that if a $k$-chromatic oriented graph has no directed cycle it contains every oriented tree of order $k$, and suggested that proving acyclic subgraphs of high chromatic number exist in $k$-chromatic oriented graphs could yield improved bounds towards Burr's conjecture. The trivial two-part partition gives $f(k)\\leq k^{2}$, subsequently refined to $f(k)\\leq k^{2}-2k+2$, but substantially improving this bound seems to require new ideas.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1912.07722",
+    "paper_title": "Acyclic subgraphs of tournaments with high chromatic number",
+    "paper_authors": [
+      "Jacob Fox",
+      "Matthew Kwan",
+      "Benny Sudakov"
+    ],
+    "published": "2024-05-30",
+    "abs_url": "https://arxiv.org/abs/1912.07722",
+    "source": "html"
+  },
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Problem 1.2 (Nassar–Yuster)",
+    "statement_text": "What is the minimum integer $g\\mathopen{}\\mathclose{{}\\left(k}\\right)$ such that every $g\\mathopen{}\\mathclose{{}\\left(k}\\right)$-vertex tournament has an acyclic $k$-chromatic subgraph?",
+    "context_text": "Nassar and Yuster introduced this tournament-restricted version of Problem 1.1, proved $k^{8/7}/4\\leq g(k)\\leq k^{2}-(2-1/\\sqrt{2})k+2$, and further conjectured that $g(k)=o(k^{2})$. The paper under review resolves this conjecture in strong form.",
+    "attributed_to": "Nassar and Yuster",
+    "attributed_year": 2019,
+    "paper_contribution": "Proves $k^{4/3-o(1)}\\leq g(k)\\leq k^{9/5+o(1)}$, establishing $g(k)=o(k^{2})$ in strong form and simultaneously improving both the upper and lower bounds of Nassar and Yuster.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "The specific conjecture $g(k)=o(k^{2})$ appears in prose in the context immediately following Problem 1.2 and is the central target stated in the abstract.",
+    "arxiv_id": "1912.07722",
+    "paper_title": "Acyclic subgraphs of tournaments with high chromatic number",
+    "paper_authors": [
+      "Jacob Fox",
+      "Matthew Kwan",
+      "Benny Sudakov"
+    ],
+    "published": "2024-05-30",
+    "abs_url": "https://arxiv.org/abs/1912.07722",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 4.1",
+    "statement_text": "Every $n$-vertex tournament has an acyclic subgraph with chromatic number at least $n^{3/4-o\\mathopen{}\\mathclose{{}\\left(1}\\right)}$. That is, $g\\mathopen{}\\mathclose{{}\\left(k}\\right)\\leq k^{4/3+o\\mathopen{}\\mathclose{{}\\left(1}\\right)}$.",
+    "context_text": "Having established $k^{4/3-o(1)}\\leq g(k)\\leq k^{9/5+o(1)}$, the authors suspect the lower bound is closer to the truth and propose this conjecture. The lower bound is achieved via a randomized projective-plane construction, and the authors also wonder whether a simpler explicit construction on $n=q^{2}$ vertices attains the same bound.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1912.07722",
+    "paper_title": "Acyclic subgraphs of tournaments with high chromatic number",
+    "paper_authors": [
+      "Jacob Fox",
+      "Matthew Kwan",
+      "Benny Sudakov"
+    ],
+    "published": "2024-05-30",
+    "abs_url": "https://arxiv.org/abs/1912.07722",
+    "source": "html"
+  }
+]

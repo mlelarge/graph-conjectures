@@ -1,0 +1,27 @@
+[
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Bounded-degree product structure question for planar graphs",
+    "statement_text": "For each $\\Delta\\in\\mathbb{N}$, let $\\mathcal{G}_{\\Delta}$ be the family of planar graphs of maximum degree $\\Delta$. Do there exist functions $t:\\mathbb{N}\\to\\mathbb{N}$, $d:\\mathbb{N}\\to\\mathbb{N}$, and $c:\\mathbb{N}\\to\\mathbb{N}$ such that, for each $\\Delta\\in\\mathbb{N}$ and each $G\\in\\mathcal{G}_{\\Delta}$ there exists a graph $H$ of treewidth at most $t(\\Delta)$ and maximum degree $d(\\Delta)$ and a path $P$ such that $G\\subseteq H\\boxtimes P\\boxtimes K_{c(\\Delta)}$?",
+    "context_text": "Product structure theorems guarantee every planar graph $G$ satisfies $G\\subseteq H\\boxtimes P\\boxtimes K_3$ for some graph $H$ of treewidth $3$ and some path $P$. In several applications it is useful for $H$ to inherit properties of $G$; in this spirit multiple researchers had repeatedly asked the authors whether $H$ can be taken to have bounded maximum degree whenever $G$ does.",
+    "attributed_to": "a number of researchers (unnamed)",
+    "attributed_year": null,
+    "paper_contribution": "Answers the question negatively: for infinitely many $n$ there exists an $n$-vertex planar graph $G$ of maximum degree $5$ such that any embedding $G\\subseteq H\\boxtimes P\\boxtimes K_c$ with $H$ of treewidth $t$ and maximum degree $\\Delta$ requires $t\\Delta c\\geqslant 2^{\\Omega(\\sqrt{\\log\\log n})}$, so no bounded-degree strengthening of the product structure theorem is possible.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "The question is stated as a displayed prose block in the introduction without a formal theorem-environment label and is attributed only to 'a number of researchers' without specific names or citations; the paper fully resolves it (negatively) via Theorem 1.",
+    "arxiv_id": "2212.02388",
+    "paper_title": "Bounded-Degree Planar Graphs Do Not Have Bounded-Degree Product Structure",
+    "paper_authors": [
+      "Vida Dujmović",
+      "Gwenaël Joret",
+      "Piotr Micek",
+      "Pat Morin",
+      "David R. Wood"
+    ],
+    "published": "2024-05-13",
+    "abs_url": "https://arxiv.org/abs/2212.02388",
+    "source": "html"
+  }
+]

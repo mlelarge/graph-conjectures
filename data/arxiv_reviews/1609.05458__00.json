@@ -1,0 +1,22 @@
+{
+  "review_id": "1609.05458__00",
+  "safe_id": "1609.05458",
+  "arxiv_id": "1609.05458",
+  "conjecture_title": "Informal Problem (projective plane structure in near-extremal constructions)",
+  "paper_title": "A note on intersecting hypergraphs with large cover number",
+  "published": "2017-10-06",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The informal problem asks whether near-extremal intersecting r-partite hypergraphs H with \\tau(H) close to r must contain large pieces from a finite projective plane, or whether genuinely different constructions exist. No follow-up paper specifically resolving either direction was found. The broader literature on Ryser's conjecture confirms that truncated projective planes remain essentially the only known near-extremal constructions, consistent with the authors' observation, but no structural theorem characterising near-extremal examples has been established.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "intersecting r-partite hypergraph cover number projective plane near-extremal Haxell Scott 1609.05458",
+    "intersecting hypergraph cover number tau projective plane construction extremal arxiv",
+    "Ryser conjecture r-partite intersecting hypergraph cover number projective plane 2020 2021 2022 2023 2024 2025"
+  ],
+  "notes": "No follow-up found specifically addressing this informal problem. Related papers checked: arXiv:2503.14918 (Bucic-Jain-Sivashankar 2025) addresses the Erdos-Lovasz problem with a vertex constraint and does not discuss r-partite near-extremal structure; arXiv:2011.04444 (Barat 2020) studies maximal covering number in the non-partite setting; arXiv:2001.04132 (Bishnoi-Das-Morris-Szabo 2020) addresses Ryser's conjecture for t-intersecting hypergraphs. Projective plane constructions (truncated projective planes) remain the only known near-extremal families."
+}

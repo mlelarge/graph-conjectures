@@ -1,0 +1,22 @@
+{
+  "review_id": "2508.08870__00",
+  "safe_id": "2508.08870",
+  "arxiv_id": "2508.08870",
+  "conjecture_title": "Conjecture 1.5",
+  "paper_title": "Distinct Directions and Distinct Distances in $\\mathbb{R}^d$",
+  "published": "2025-11-07",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 1.5 is explicitly stated as open in the source paper, including already for d=2. The paper itself proves only a weaker bound: Theorem 1.6 establishes that for all but a meagre set of d-norms, any d-dimensional set of n points determines at least (bd-o(1))n distinct distances with b ≥ 1/48, falling short of the conjectured (d-o(1))n. The precursor result of Alon, Bucć, and Sauermann (arXiv:2302.09058) gives the d=1 base case and the (1-o(1))n bound without the d-dimensional constraint. No post-publication resolution was found in the indexed literature through May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Alon Pinchasi \"distinct distances\" \"d-norms\" meagre arxiv 2508.08870",
+    "distinct distances d-dimensional norms affine hyperplane meagre set 2025 2026",
+    "Alon Pinchasi \"distinct directions\" \"distinct distances\" Rd conjecture 2025 arxiv follow-up"
+  ],
+  "notes": "No follow-up found in web search. The conjecture is open per the authors themselves even for d=2; Theorem 1.6 in the same paper is the best known partial result, with constant factor b≥1/48 replacing the conjectured factor 1. Reference [1] (Alon, Bucć, Sauermann, arXiv:2302.09058) predates the source paper and is the prior work being strengthened, not a follow-up."
+}

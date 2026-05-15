@@ -1,0 +1,22 @@
+{
+  "review_id": "1709.09050__01",
+  "safe_id": "1709.09050",
+  "arxiv_id": "1709.09050",
+  "conjecture_title": "Classification of outerplanar graphs by cop number",
+  "paper_title": "Topological directions in Cops and Robbers",
+  "published": "2018-04-22",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Every outerplanar graph has cop number at most 2, and the four-cycle is the smallest outerplanar graph requiring 2 cops, but a complete characterization of which outerplanar graphs are 1-cop-win versus 2-cop-win remains open as of 2026. No follow-up paper resolving this classification was found in the searched literature.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "outerplanar graphs cop number classification 1-cop-win 2-cop-win",
+    "cops robbers outerplanar cop number Bonato Mohar 1709.09050",
+    "outerplanar graph cop number characterization chordal 1-cop-win classification theorem"
+  ],
+  "notes": "Searches returned no paper providing a complete classification of outerplanar graphs by cop number. One hit (arXiv:2409.16279) addresses 1-planar graphs with bounded cop-number (a different graph class). Another (arXiv:2508.10443) treats the localization game on outerplanar graphs, not the standard cops-and-robbers classification. The AI-generated search summaries suggested 'outerplanar + chordal iff 1-cop-win' but this claim could not be attributed to any specific verified publication, so it is not cited here."
+}

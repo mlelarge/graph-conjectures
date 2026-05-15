@@ -1,0 +1,50 @@
+[
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Question 1.1",
+    "statement_text": "For which graphs $F$ is there an $F$-counting lemma in $C_4$-free graphs?",
+    "context_text": "This is the central open problem of the paper. The authors formally define what it means for a graph $F$ to be 'countable' (Definition 1.3) and construct infinite families of countable graphs, but a complete characterization remains open. They note that a necessary condition is that $F$ has girth at least 5 (Remark 1.6).",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "Labeled '(Main question, informal)' in the paper; the informal qualifier refers to the prose level of precision, not the environment type.",
+    "arxiv_id": "2106.03261",
+    "paper_title": "Which graphs can be counted in $C_4$-free graphs?",
+    "paper_authors": [
+      "David Conlon",
+      "Jacob Fox",
+      "Benny Sudakov",
+      "Yufei Zhao"
+    ],
+    "published": "2021-06-06",
+    "abs_url": "https://arxiv.org/abs/2106.03261",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Open Problem 2.17",
+    "statement_text": "Are the dodecahedral and Petersen graphs countable?",
+    "context_text": "After constructing many countable graphs of girth at least 5 via a recursive 'islands and bridges' method, the authors observe that their techniques appear insufficient to handle 3-regular graphs of girth at least 5. The dodecahedral graph (girth 5, 3-regular) and the Petersen graph (girth 5, 3-regular) are highlighted as the simplest open cases.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "PDF source — figures of the two graphs referenced in the problem statement are not recoverable from the text extraction.",
+    "arxiv_id": "2106.03261",
+    "paper_title": "Which graphs can be counted in $C_4$-free graphs?",
+    "paper_authors": [
+      "David Conlon",
+      "Jacob Fox",
+      "Benny Sudakov",
+      "Yufei Zhao"
+    ],
+    "published": "2021-06-06",
+    "abs_url": "https://arxiv.org/abs/2106.03261",
+    "source": "pdf"
+  }
+]

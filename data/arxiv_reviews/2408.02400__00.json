@@ -1,0 +1,21 @@
+{
+  "review_id": "2408.02400__00",
+  "safe_id": "2408.02400",
+  "arxiv_id": "2408.02400",
+  "conjecture_title": "Problem 1.5",
+  "paper_title": "On the difference between the chromatic and cochromatic number",
+  "published": "2024-08-20",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Problem 1.5 asks whether for all k≥5 there exists a graph G_k with ω(G_k)<5, cochromatic number ζ(G_k)=k, and χ(G_k)=ζ(G_k)+3. The source paper establishes via Theorem 1.4 that the gap χ-ζ can reach at least 2 for graphs with ω<5 and arbitrarily large ζ, but gap 3 is left open. No follow-up resolving this specific problem was found in the indexed literature as of May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Steiner 2408.02400 chromatic cochromatic number difference arXiv 2024",
+    "cochromatic number chromatic number gap omega clique triangle-free graph 2024 2025"
+  ],
+  "notes": "Two related 2024 papers were found and fetched: arXiv:2408.13839 ('On a question of Erdős and Gimbel on the cochromatic number') addresses a different Erdős–Gimbel question about random graphs; arXiv:2409.17614 ('The difference between the chromatic and the cochromatic number of a random graph') proves χ-ζ→∞ whp for G_{n,1/2} for ~95% of n. Neither addresses Problem 1.5 (bounded clique number, deterministic graph construction, gap exactly 3). No follow-up found in 5 web calls."
+}

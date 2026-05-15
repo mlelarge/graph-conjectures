@@ -1,0 +1,22 @@
+{
+  "review_id": "2307.15512__00",
+  "safe_id": "2307.15512",
+  "arxiv_id": "2307.15512",
+  "conjecture_title": "Conjecture 1.4",
+  "paper_title": "Catching a robber on a random $k$-uniform hypergraph",
+  "published": "2024-04-11",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "No follow-up paper proving or disproving Conjecture 1.4 was found. The source paper itself (arXiv:2307.15512, published in Canadian Journal of Mathematics 2025) provides the best-known upper bound of O(sqrt(n/k) log n) for the cop number of the random k-uniform hypergraph G^k(n,p), falling short of the conjectured O(sqrt(n/k)) by a logarithmic factor. The conjecture remains open as a hypergraph analogue of Meyniel's conjecture.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "cop number k-uniform hypergraph Meyniel conjecture sqrt(n/k) Erde Kang Lehner Mohar",
+    "cops robbers hypergraph cop number conjecture 2307.15512 arXiv",
+    "arXiv 2307.15512 citing papers Meyniel conjecture hypergraph cop number 2024 2025"
+  ],
+  "notes": "The EUROCOMB 2023 proceedings paper (journals.phil.muni.cz/eurocomb/article/view/35592) is the conference version of the same paper, not a follow-up. The journal version appeared in Canadian Journal of Mathematics Vol. 77 Issue 4 (August 2025). No independent follow-up addressing the full conjecture was found in three targeted web searches."
+}

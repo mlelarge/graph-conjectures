@@ -1,0 +1,24 @@
+[
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Open problem: p-entropic matroids linear for prime p",
+    "statement_text": "Our results leave open the possibility for $p$-entropic matroids to be linear whenever $p$ is prime.",
+    "context_text": "The paper proves that $p$-entropic matroids are $\\mathbb{F}_p$-representable for $p=2$ and $p=3$, and shows they are not linear for $p=9$ (a composite). The central remaining open problem is whether $p$-entropic matroids are always $\\mathbb{F}_p$-representable when $p$ is prime, with only partial cases resolved in this work.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "PDF source — statement appears in the abstract as a description of what remains open; no labeled conjecture/problem environment visible in the extracted text. Full paper text is truncated, so additional explicit conjecture environments later in the paper may not have been captured.",
+    "arxiv_id": "1909.12175",
+    "paper_title": "Entropic matroids and their representation",
+    "paper_authors": [
+      "Emmanuel Abbe",
+      "Sophie Spirkl"
+    ],
+    "published": "2019-09-26",
+    "abs_url": "https://arxiv.org/abs/1909.12175",
+    "source": "pdf"
+  }
+]

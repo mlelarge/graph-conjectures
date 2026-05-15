@@ -1,0 +1,26 @@
+[
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 3.5",
+    "statement_text": "There is an integer $\\ell$ such that if $G$ is a directed-triangle-free digraph with $\\alpha(D) = \\alpha$, then $\\gamma(G) \\leq \\alpha^{\\ell}$.",
+    "context_text": "The same authors previously conjectured in [8] that the dichromatic number $\\vec{\\chi}(G)$ of a directed-triangle-free digraph can be bounded as a polynomial function of $\\alpha(G)$. Because $\\gamma(G) \\leq \\alpha(G) \\cdot \\vec{\\chi}(G)$ (Observation 3.4), Conjecture 3.5 is presented as a necessary consequence: if the dichromatic-number conjecture holds, so must this domination bound.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "The hypothesis uses $\\alpha(D) = \\alpha$ in the PDF source, but the digraph is consistently called $G$ throughout the paper; this appears to be a typo for $\\alpha(G) = \\alpha$.",
+    "arxiv_id": "1708.00423",
+    "paper_title": "Domination and fractional domination in digraphs",
+    "paper_authors": [
+      "Ararat Harutyunyan",
+      "Tien-Nam Le",
+      "Alantha Newman",
+      "Stéphan Thomassé"
+    ],
+    "published": "2018-04-27",
+    "abs_url": "https://arxiv.org/abs/1708.00423",
+    "source": "pdf"
+  }
+]

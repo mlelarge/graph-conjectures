@@ -1,0 +1,34 @@
+{
+  "review_id": "1611.02400__01",
+  "safe_id": "1611.02400",
+  "arxiv_id": "1611.02400",
+  "conjecture_title": "Open Problem (multitasker at average degree $\\Theta(\\log n)$)",
+  "paper_title": "A Graph-Theoretic Approach to Multitasking",
+  "published": "2017-06-09",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "No paper resolving the open problem has been found. The follow-up work arXiv:1809.02835 (Multitasking Capacity: Hardness Results and Improved Constructions, published in SIAM J. Discrete Math.) proves hardness of approximation results and provides improved constructions achieving $\\alpha = 1/2 - \\varepsilon$ for matchings of size $n/\\mathrm{poly}(d)$, but does not construct multitaskers with $\\alpha > 0$ independent of $n$ at average degree $\\Theta(\\log n)$. The specific threshold question — whether $\\Theta(\\log n)$ average degree suffices for constant $\\alpha$ — remains open as of the search date.",
+  "since_posted": [
+    {
+      "title": "Multitasking Capacity: Hardness Results and Improved Constructions",
+      "authors": "Noga Alon, Jonathan D. Cohen, Biswadip Dey, Tom Griffiths, Sebastian Musslick, Kayhan Ozcimder, Daniel Reichman, Igor Shinkar, Tal Wagner",
+      "year": 2018,
+      "venue": "arXiv preprint (published in SIAM Journal on Discrete Mathematics)",
+      "url": "https://arxiv.org/abs/1809.02835",
+      "arxiv_id": "1809.02835",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves computational hardness for approximating multitasking capacity and gives improved constructions achieving $\\alpha = 1/2 - \\varepsilon$ for matchings of size $n/\\mathrm{poly}(d)$, but does not resolve the $\\Theta(\\log n)$ average-degree threshold question."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "multitasker graph theory \"average degree\" \"log n\" multitasking capacity Alon Reichman arXiv 1611.02400",
+    "graph-theoretic multitasking \"multitasking capacity\" \"independent set\" alpha Musslick Shinkar follow-up",
+    "\"multitasking capacity\" \"log n\" graph multitasker construction Reichman Shinkar Wagner 2018 2019 2020"
+  ],
+  "notes": "The main follow-up paper arXiv:1809.02835 was verified via WebFetch; it improves constructions and proves hardness but does not address the specific open problem about $\\Theta(\\log n)$ average degree. No other paper specifically resolving this threshold question was found in the search."
+}

@@ -1,0 +1,33 @@
+{
+  "review_id": "2401.06062__00",
+  "safe_id": "2401.06062",
+  "arxiv_id": "2401.06062",
+  "conjecture_title": "Question 1.1",
+  "paper_title": "On prime Cayley graphs",
+  "published": "2024-01-11",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Question 1.1 asks whether a given graph can be decomposed as the joined union of smaller graphs, which is equivalent to detecting non-trivial homogeneous sets (modules). The source paper itself provides a complete algebraic characterization for Cayley graphs: Cay(G,S) has a non-trivial homogeneous set if and only if there exists a non-trivial subgroup H such that every right coset Hc (for c in S minus H) is entirely contained in S (Theorem 3.4). The paper has since appeared in the Journal of Combinatorics (2025). A 2024 follow-up (arXiv:2403.05635) extends this line of research to p-unitary Cayley graphs over finite rings, providing necessary and sufficient conditions for primality (non-decomposability) in that more general setting.",
+  "since_posted": [
+    {
+      "title": "On certain properties of the p-unitary Cayley graph over a finite ring",
+      "authors": "not confirmed (authors not retrieved from abstract page)",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2403.05635",
+      "arxiv_id": "2403.05635",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Extends the prime Cayley graph characterization from arXiv:2401.06062 to p-unitary Cayley graphs over finite rings, providing necessary and sufficient conditions for such graphs to be prime (i.e., not decomposable as a joined union of smaller graphs)."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Cayley graph \"joined union\" prime graph decomposition Chudnovsky Spirkl 2401.06062",
+    "\"joined union\" graph decomposition \"prime graph\" Cayley \"homogeneous set\" 2024 2025"
+  ],
+  "notes": "Question 1.1 is a broad motivating question that the source paper answers for Cayley graphs via algebraic conditions on the group and generating set; for general graphs, decomposition as a joined union is the classical modular decomposition problem (well-studied). The paper has been published in the Journal of Combinatorics (Volume 0, 2025). The follow-up arXiv:2403.05635 explicitly builds on 'prior classification of prime unitary Cayley graphs' (its reference [7]) and extends to p-unitary Cayley graphs, strongly suggesting it continues the program of arXiv:2401.06062. Author names of arXiv:2403.05635 were not retrieved."
+}

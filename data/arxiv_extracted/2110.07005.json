@@ -1,0 +1,94 @@
+[
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Problem 1.1 (Araujo et al.)",
+    "statement_text": "Does there exist a constant $C$ such that every bipartite graph $G$ satisfies $\\vec{\\chi}(G) \\leq \\frac{\\Delta(G)}{2} + C$?",
+    "context_text": "Motivated by their upper bound $\\vec{\\chi}(G) \\leq \\lfloor\\frac{1}{2}\\Delta(G) + \\sqrt{\\Delta(G)}\\rfloor + 1$ for bipartite graphs, Araujo et al. [5] asked whether a constant additive correction suffices. This was the best known general bound for bipartite graphs prior to the present paper.",
+    "attributed_to": "Araujo, Cohen, de Rezende, Havet, and Moura",
+    "attributed_year": null,
+    "paper_contribution": "Resolves the problem affirmatively by proving that every bipartite graph $G$ satisfies $\\lfloor\\frac{1}{2}\\mathrm{mad}(G)\\rfloor \\leq \\vec{\\chi}(G) \\leq \\lfloor\\frac{1}{2}\\mathrm{mad}(G)\\rfloor + 3$ (Theorem 1.2), which is essentially best possible.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source — proper orientation number rendered as ~χ(G) in extraction; transcribed as $\\vec{\\chi}(G)$.",
+    "arxiv_id": "2110.07005",
+    "paper_title": "Proper orientations and proper chromatic number",
+    "paper_authors": [
+      "Yaobin Chen",
+      "Bojan Mohar",
+      "Hehui Wu"
+    ],
+    "published": "2022-12-08",
+    "abs_url": "https://arxiv.org/abs/2110.07005",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Folklore Conjecture: Bounded Proper Orientation Number for Planar Graphs",
+    "statement_text": "The proper orientation number $\\vec{\\chi}(G)$ is bounded above by a finite constant on the class of all planar graphs.",
+    "context_text": "Described in the paper as 'a folklore conjecture' cited to [6]; no finite upper bound on $\\vec{\\chi}(G)$ for all planar graphs had ever been established before this work, making it 'the most intriguing question' in the area.",
+    "attributed_to": "folklore",
+    "attributed_year": null,
+    "paper_contribution": "Confirms the conjecture by proving $\\vec{\\chi}(G) \\leq 14$ for every planar graph $G$ (Theorem 1.4), using the Four-Color Theorem in the proof.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "No specific attributed author; described as 'folklore conjecture' with a reference to [6] (Araujo, Havet, Linhares Sales, and Silva). PDF source — math may be garbled.",
+    "arxiv_id": "2110.07005",
+    "paper_title": "Proper orientations and proper chromatic number",
+    "paper_authors": [
+      "Yaobin Chen",
+      "Bojan Mohar",
+      "Hehui Wu"
+    ],
+    "published": "2022-12-08",
+    "abs_url": "https://arxiv.org/abs/2110.07005",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture on Bounded Proper Orientation Number of Outerplanar Graphs (Araujo et al. [6])",
+    "statement_text": "All outerplanar graphs $G$ have bounded $\\vec{\\chi}(G)$.",
+    "context_text": "Araujo et al. [6] conjectured that the proper orientation number is uniformly bounded on the class of outerplanar graphs, having verified it for cactus graphs, triangle-free 2-edge-connected outerplanar graphs, and maximal outerplanar graphs whose inner dual is a path. A lower bound of $\\vec{\\chi}(G) \\geq 7$ was also established by [6].",
+    "attributed_to": "Araujo, Havet, Linhares Sales, and Silva",
+    "attributed_year": null,
+    "paper_contribution": "Resolves the conjecture affirmatively, proving $\\vec{\\chi}(G) \\leq 10$ for every outerplanar graph $G$ as part of Theorem 1.5.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source — proper orientation number rendered as ~χ(G) in extraction; transcribed as $\\vec{\\chi}(G)$.",
+    "arxiv_id": "2110.07005",
+    "paper_title": "Proper orientations and proper chromatic number",
+    "paper_authors": [
+      "Yaobin Chen",
+      "Bojan Mohar",
+      "Hehui Wu"
+    ],
+    "published": "2022-12-08",
+    "abs_url": "https://arxiv.org/abs/2110.07005",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Problem 1.7 (Araujo et al. [5])",
+    "statement_text": "Can $\\vec{\\chi}(G)$ be bounded above by a function of $\\mathrm{mad}(G)$?",
+    "context_text": "Building on their bipartite results, Araujo et al. [5] asked whether the proper orientation number can always be controlled purely by the maximum average degree, without any direct dependence on the chromatic number. This is described in the paper as one of the two 'major conjectures' about the proper orientation number that are resolved.",
+    "attributed_to": "Araujo, Cohen, de Rezende, Havet, and Moura",
+    "attributed_year": null,
+    "paper_contribution": "Resolves the problem affirmatively: for any graph $G$ with chromatic number $r$, $\\vec{\\chi}(G) = O\\!\\left(\\frac{r\\log r}{\\log\\log r}\\right) + \\frac{1}{2}\\mathrm{mad}(G)$ (Theorem 1.8), implying $\\vec{\\chi}(G) = O\\!\\left(\\frac{d\\log d}{\\log\\log d}\\right)$ when $\\mathrm{mad}(G) = d$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source — proper orientation number rendered as ~χ(G) in extraction; transcribed as $\\vec{\\chi}(G)$.",
+    "arxiv_id": "2110.07005",
+    "paper_title": "Proper orientations and proper chromatic number",
+    "paper_authors": [
+      "Yaobin Chen",
+      "Bojan Mohar",
+      "Hehui Wu"
+    ],
+    "published": "2022-12-08",
+    "abs_url": "https://arxiv.org/abs/2110.07005",
+    "source": "pdf"
+  }
+]

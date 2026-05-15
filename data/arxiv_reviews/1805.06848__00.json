@@ -1,0 +1,61 @@
+{
+  "review_id": "1805.06848__00",
+  "safe_id": "1805.06848",
+  "arxiv_id": "1805.06848",
+  "conjecture_title": "Conjecture 1.1 (The Edge-statistics Conjecture)",
+  "paper_title": "Edge-statistics on large graphs",
+  "published": "2019-11-01",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "solved",
+  "confidence": "high",
+  "summary": "The Edge-statistics Conjecture was fully resolved within months of its arXiv posting. Kwan, Sudakov and Tran (arXiv:1807.05202) proved the conjecture for the range Ω(k) ≤ ℓ ≤ binom(k,2)/2, and Fox and Sauermann (arXiv:1809.01352, Advances in Combinatorics 2020:4) completed the proof by handling the remaining case 1 ≤ ℓ ≤ C·k; Martinsson, Mousset, Noever and Trujić independently covered the sublinear regime ℓ ≪ k^{6/5}. The hypergraph generalisation suggested in the original paper was subsequently proved by Jain, Kwan, Mubayi and Tran (arXiv:2505.03954, IMRN 2025).",
+  "since_posted": [
+    {
+      "title": "Anticoncentration for subgraph statistics",
+      "authors": "Matthew Kwan, Benny Sudakov, Tuan Tran",
+      "year": 2018,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/1807.05202",
+      "arxiv_id": "1807.05202",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves the Edge-statistics Conjecture for the linear range Ω(k) ≤ ℓ ≤ binom(k,2)/2, establishing ind(k,ℓ) ≤ log^{O(1)}(ℓ*/k) · sqrt(k/ℓ*) where ℓ* = min{ℓ, binom(k,2) − ℓ}."
+    },
+    {
+      "title": "A Completion of the Proof of the Edge-statistics Conjecture",
+      "authors": "Jacob Fox, Lisa Sauermann",
+      "year": 2020,
+      "venue": "Advances in Combinatorics, 2020:4",
+      "url": "https://arxiv.org/abs/1809.01352",
+      "arxiv_id": "1809.01352",
+      "doi": null,
+      "kind": "proof",
+      "claim": "Completes the full proof of the conjecture by handling the remaining case 1 ≤ ℓ ≤ C·k (Theorem 1.2), together with Kwan–Sudakov–Tran which covered C·k ≤ ℓ ≤ binom(k,2)/2, establishing ind(k,ℓ) ≤ 1/e + o_k(1) for all 0 < ℓ < binom(k,2)."
+    },
+    {
+      "title": "The edge-statistics conjecture for hypergraphs",
+      "authors": "Vishesh Jain, Matthew Kwan, Dhruv Mubayi, Tuan Tran",
+      "year": 2025,
+      "venue": "International Mathematics Research Notices, 2025:18",
+      "url": "https://arxiv.org/abs/2505.03954",
+      "arxiv_id": "2505.03954",
+      "doi": null,
+      "kind": "proof",
+      "claim": "Proves the hypergraph generalisation of the conjecture suggested by Alon–Hefetz–Krivelevich–Tyomkyn: for r-uniform hypergraphs the fraction of k-vertex subsets spanning exactly ℓ edges is at most 1/e + ε for k sufficiently large whenever ℓ is neither 0 nor maximal."
+    }
+  ],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "1809.01352",
+      "verified": true,
+      "note": "WebFetch confirms title 'A Completion of the Proof of the Edge-statistics Conjecture', authors Fox and Sauermann, and that it completes the proof by handling 1 ≤ ℓ ≤ C·k; published in Advances in Combinatorics 2020:4 as stated in the contribution text."
+    }
+  ],
+  "search_queries": [
+    "Edge-statistics Conjecture ind(k,l) 1/e Kwan Sudakov Tran proof",
+    "Kwan Sudakov Tran \"edge-statistics\" arXiv ind(k,l) conjecture proof 2018 2019"
+  ],
+  "notes": "Martinsson, Mousset, Noever and Trujić (arXiv:1809.02576, Israel Journal of Mathematics) independently proved the conjecture for ℓ ≪ k^{6/5}; their paper appeared in search results but was not WebFetched, so it is noted here rather than included in since_posted. The Fox–Sauermann paper (1809.01352) is the canonical completion cited in the literature, with the Kwan–Sudakov–Tran paper covering the complementary linear range."
+}

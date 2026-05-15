@@ -1,0 +1,22 @@
+{
+  "review_id": "2310.04265__11",
+  "safe_id": "2310.04265",
+  "arxiv_id": "2310.04265",
+  "conjecture_title": "Conjecture 6.1",
+  "paper_title": "Clique number of tournaments",
+  "published": "2023-10-06",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 6.1 asks whether the class of $\\overrightarrow{\\chi}$-bounded digraphs is closed under substitution in full generality. The tournament case is already settled affirmatively by Theorem 3.9 of the source paper, which shows that if a tournament class is $\\overrightarrow{\\chi}$-bounded then so is its closure under substitution (with an explicit bound). The authors note that key tools used for tournaments fail for general digraphs, so the conjecture remains open for the broader digraph setting. No follow-up paper addressing the general digraph case was found in the indexed literature.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "dichromatic number chi-bounded digraphs closure substitution Aboulker Aubian Charbit Lopes 2310.04265",
+    "dichromatic number bounded digraph class closed substitution conjecture arXiv 2024 2025",
+    "arXiv 2310.04265 \"Conjecture 6.1\" OR \"closure under substitution\" dichromatic chi-bounded digraph 2024 2025 2026"
+  ],
+  "notes": "The tournament case is already proven in the source paper (Theorem 3.9): if a tournament class is $\\overrightarrow{\\chi}$-bounded by function $f$, its closure under substitution is $\\overrightarrow{\\chi}$-bounded by $g(w)=(3wf(w))^w$. Conjecture 6.1 is the generalisation to all digraphs; the authors note that Theorem 3.3 (a key ingredient for tournaments) does not hold for general digraphs, making the full conjecture harder. No follow-up paper resolving or substantially advancing the general digraph case was found after a targeted web search."
+}

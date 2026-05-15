@@ -1,0 +1,22 @@
+{
+  "review_id": "2201.09115__01",
+  "safe_id": "2201.09115",
+  "arxiv_id": "2201.09115",
+  "conjecture_title": "Question 2",
+  "paper_title": "Disproof of a Conjecture by Woodall",
+  "published": "2022-01-22",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "Steiner's paper disproves Woodall's original conjecture (s+t-1 choosability) and proves that the list chromatic number of K_{s,t}-minor-free graphs can exceed (1-ε)(2s+t) for large comparable s and t. Question 2 asks whether the matching upper bound 2s+t always holds; no follow-up paper proving or disproving this universal bound was found in the indexed literature as of 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "list chromatic number K_{s,t} minor 2s+t Steiner 2201.09115",
+    "list coloring K_{s,t} subdivision chi_l upper bound 2s+t graph",
+    "Steiner Woodall list chromatic K_{s,t} minor 2022 arXiv citations follow-up"
+  ],
+  "notes": "Semantic Scholar citation scraping returned no content (dynamic page); three independent searches found no paper resolving the 2s+t upper bound conjecture. The related arXiv:2110.09403 (Steiner, 2021) concerns K_t-minor-free graphs (single parameter), not K_{s,t}. The 2024 paper arXiv:2406.02643 concerns a different Woodall conjecture (complete bipartite minors vs chromatic number). No follow-up on Question 2 found."
+}

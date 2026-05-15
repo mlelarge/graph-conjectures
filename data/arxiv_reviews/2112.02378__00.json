@@ -1,0 +1,22 @@
+{
+  "review_id": "2112.02378__00",
+  "safe_id": "2112.02378",
+  "arxiv_id": "2112.02378",
+  "conjecture_title": "Problem 1.2",
+  "paper_title": "Quasiplanar Graphs, String Graphs, and the Erdos-Gallai Problem",
+  "published": "2022-10-25",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Problem 1.2 asks whether every K_r-free segment graph on n vertices contains an induced K_{r-1}-free subgraph on \\Omega_r(n) vertices. The source paper (Fox–Pach–Suk 2022) establishes analogous results for string graphs with a log^2(n) factor loss (Theorems 1.5–1.6), but the segment-graph case with a linear guarantee remains explicitly unresolved. A wide search of the post-2022 literature found no paper resolving the segment-graph case; the conjecture is open with high confidence.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "arXiv 2112.02378 Fox Pach Suk segment graph citing papers",
+    "K_r-free segment graph induced subgraph K_{r-1}-free linear size Fox Pach Suk",
+    "segment graph Kr-free induced subgraph linear Omega(n) 2023 2024 2025"
+  ],
+  "notes": "The closest post-2022 work found is arXiv:2409.06650 ('Induced Subgraphs of K_r-Free Graphs and the Erdős–Rogers Problem', Combinatorica 2025), which studies the Erdős–Rogers problem for general (non-geometric) K_r-free graphs; it does not address segment graphs and does not cite 2112.02378. No paper specifically resolving Problem 1.2 for segment graphs was found in the indexed literature."
+}

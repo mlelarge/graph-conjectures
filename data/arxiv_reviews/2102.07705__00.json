@@ -1,0 +1,23 @@
+{
+  "review_id": "2102.07705__00",
+  "safe_id": "2102.07705",
+  "arxiv_id": "2102.07705",
+  "conjecture_title": "Open Complexity Problem (2-F-PFC for oriented trees of maximum degree ≥ 3)",
+  "paper_title": "Colorings of oriented planar graphs avoiding a monochromatic subgraph",
+  "published": "2022-06-07",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "The paper arXiv:2102.07705, published in Discrete Applied Mathematics (2022), establishes NP-hardness of 2-F-PFC for oriented trees whose leaf-pruned form is an oriented path of length 2 or 3, but explicitly leaves open the analogous question for oriented trees whose leaf-pruned form is a star K_{1,n}. No follow-up paper resolving this complexity question was found in a web search or via Semantic Scholar (which returned zero citations to this paper); the conjecture remains open as of May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Bergold Hochstättler Steiner \"oriented planar graphs\" \"monochromatic subgraph\" 2102.07705 complexity PFC",
+    "NP-hardness \"2-F-PFC\" oriented trees star complexity coloring",
+    "arxiv cite:2102.07705 Bergold Hochstättler Steiner oriented coloring NP-hard tree",
+    "\"oriented trees\" \"F-free coloring\" OR \"subgraph-free coloring\" NP-hard planar complexity 2023 2024 2025"
+  ],
+  "notes": "Semantic Scholar API returned zero citing papers for arXiv:2102.07705. The published journal version appeared in Discrete Applied Mathematics (ScienceDirect, 2022, doi not verified). The conjecture is moderately recent (≈3 years); absence of follow-up may reflect genuine openness or limited visibility of this specialized complexity question. Confidence is medium rather than high because the paper is old enough that a resolution could exist without being indexed."
+}

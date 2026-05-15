@@ -1,0 +1,22 @@
+{
+  "review_id": "2504.08327__02",
+  "safe_id": "2504.08327",
+  "arxiv_id": "2504.08327",
+  "conjecture_title": "Conjecture 5",
+  "paper_title": "On a conjecture concerning 4-coloring of graphs with one crossing",
+  "published": "2025-04-14",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 5 from arXiv:2504.08327 states that every non-4-colorable graph in the class C_0 has an internal vertex of degree four. The paper establishes that this conjecture is equivalent to the paper's main Conjecture 2 (that every graph of minimum degree five with no separating triangles drawn in the plane with one crossing is 4-colorable), and verifies both computationally for all graphs up to 28 vertices. The conjecture remains open in general; no follow-up paper resolving it was found in the literature.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Dvořák Lidický Mohar 4-coloring graphs one crossing plane triangulation 2025",
+    "4-connected plane triangulation 4-coloring one crossing C_0 degree four internal vertex conjecture 2025 2026",
+    "arxiv 2504.08327 cite \"one crossing\" 4-colorable 2025 2026"
+  ],
+  "notes": "No follow-up found. The paper is very recent (April 2025). Conjecture 5 is explicitly stated as open and equivalent to the main Conjecture 2. Computer enumeration verifies it for graphs up to 28 vertices. The structural reformulation via C_0 provides a combinatorially explicit analogue of how the Four Color Theorem reduces to triangulations."
+}

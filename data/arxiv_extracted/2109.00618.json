@@ -1,0 +1,24 @@
+[
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Open problem: improved quantitative rank bounds",
+    "statement_text": "It would be very interesting to get better bounds even for cases where the rank of the multiplicative group is very small, for example when all non-diagonal elements are powers of two.",
+    "context_text": "After the first proof of Theorem 1, the authors note that the quantitative bound obtained (essentially $\\log\\log n \\leq r d^7$, improved to $\\log n \\leq r d^8$ in Section 4) is quite weak. They pose the challenge of obtaining sharper rank lower bounds, highlighting the special case where all off-diagonal entries are integer powers of $2$ as a concrete open instance.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "No labelled theorem environment; expressed as an open research direction following the first proof. PDF source — the surrounding mathematical bounds may be garbled, but this prose statement is clear.",
+    "arxiv_id": "2109.00618",
+    "paper_title": "Rank of matrices with entries from a multiplicative group",
+    "paper_authors": [
+      "Noga Alon",
+      "Jozsef Solymosi"
+    ],
+    "published": "2021-09-01",
+    "abs_url": "https://arxiv.org/abs/2109.00618",
+    "source": "pdf"
+  }
+]

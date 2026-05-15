@@ -1,0 +1,24 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Yang's Conjecture",
+    "statement_text": "For any planar graph $G$, $c_2(G) \\leq 3$.",
+    "context_text": "Gao and Yang constructed a planar graph $G$ with $c_1(G) \\geq 4$, showing that allowing only one cop to move per turn can push the cop number above 3 even for planar graphs. Yang conjectured that permitting at most two cops to move simultaneously is enough to restore the classical bound of 3 cops for all planar graphs.",
+    "attributed_to": "Yang",
+    "attributed_year": 2018,
+    "paper_contribution": "Proves that $c_2(G) \\leq 3$ for every planar graph $G$, confirming Yang's conjecture and simultaneously strengthening the classical theorem of Aigner and Fromme that $c(G) \\leq 3$ for planar graphs.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "The introduction text is truncated before the full conjecture statement is shown; the statement is reconstructed from the abstract and surrounding context. Reference [17] is a 2018 conference talk by Boting Yang.",
+    "arxiv_id": "2406.01068",
+    "paper_title": "Guarding isometric subgraphs and Cops and Robber in planar graphs",
+    "paper_authors": [
+      "Sebastián González Hermosillo de la Maza",
+      "Bojan Mohar"
+    ],
+    "published": "2024-06-03",
+    "abs_url": "https://arxiv.org/abs/2406.01068",
+    "source": "html"
+  }
+]

@@ -1,0 +1,25 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Scott's Conjecture",
+    "statement_text": "For every graph $H$, the class of graphs which do not contain any subdivision of $H$ as an induced subgraph is $\\chi$-bounded.",
+    "context_text": "Scott (1997) conjectured this topological generalisation of the Gyárfás–Sumner conjecture, proving it for trees and for $K_4$. The conjecture was disproved in full generality by Pawlik et al. (2014), but determining which specific graphs $H$ satisfy it remains an active area of research.",
+    "attributed_to": "Scott",
+    "attributed_year": 1997,
+    "paper_contribution": "Proves the conjecture holds when $H = P_{a,b}$, i.e., the complete bipartite graph $K_{a,b+2}$ together with an additional vertex adjacent to exactly two vertices on the larger side of the bipartition, for all $a,b \\geq 1$; as a special case this covers $H = K_4^{++}$, the graph obtained from $K_4$ by subdividing two disjoint edges.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2602.11990",
+    "paper_title": "A positive instance of Scott's Conjecture on induced subdivisions",
+    "paper_authors": [
+      "Kathie Cameron",
+      "Ni Luh Dewi Sintiari",
+      "Sophie Spirkl"
+    ],
+    "published": "2026-02-12",
+    "abs_url": "https://arxiv.org/abs/2602.11990",
+    "source": "pdf"
+  }
+]

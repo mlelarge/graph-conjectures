@@ -1,0 +1,28 @@
+{
+  "review_id": "2102.10220__02",
+  "safe_id": "2102.10220",
+  "arxiv_id": "2102.10220",
+  "conjecture_title": "Question 2.1",
+  "paper_title": "Making an $H$-Free Graph $k$-Colorable",
+  "published": "2021-03-19",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Question 2.1 from arXiv:2102.10220 asks how many edges of a graph $G$ can be covered by the union of $k$ vertex neighborhoods, formalised via $u(G,k)$ and $m(n,k) = \\min_G(e(G)-u(G,k))$. The paper itself proves bounds on $m(n,k)$ as a tool for upper bounds on $h(n,k,H)$, but the general question is explicitly left open. No subsequent paper resolving or substantially advancing Question 2.1 was found in the indexed literature as of May 2026. The source paper appeared in the Journal of Graph Theory in 2023.",
+  "since_posted": [],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2105.03956",
+      "verified": true,
+      "note": "Paper is 'Pure pairs. V. Excluding some long subdivision' by Scott, Seymour, Spirkl. Its main result concerns pure pairs in graphs with forbidden holes/antiholes, with no connection to covering edges by vertex neighborhoods or to Fox-Himwich-Mani 2102.10220. The supplied contribution text describes a different conjecture; this internal reference is a false match for Question 2.1."
+    }
+  ],
+  "search_queries": [
+    "Fox Himwich Mani \"H-free graph k-colorable\" neighborhood edge cover 2102.10220 cite",
+    "covering edges union vertex neighborhoods graph \"u(G,k)\" OR \"m(n,k)\" Fox Himwich Mani",
+    "arxiv 2102.10220 \"Question 2.1\" OR \"neighborhood cover\" edges k neighborhoods graph coloring cite 2022 2023 2024 2025"
+  ],
+  "notes": "No follow-up paper addressing Question 2.1 was found after a wide web search (3 searches + 3 fetches). The conjecture is recent (2021, published 2023) and the absence of follow-up is consistent with status open with high confidence. The internal reference arXiv:2105.03956 is unrelated to this question and should be disregarded."
+}

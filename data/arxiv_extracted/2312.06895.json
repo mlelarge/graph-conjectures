@@ -1,0 +1,48 @@
+[
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.2",
+    "statement_text": "For all $s \\leq t$, $r_{K_s}(K_t) = \\binom{r(K_t)}{s}$.",
+    "context_text": "Motivated by a question of Sam Spiro asking whether an analogue of Chvatal's theorem holds for $r_{K_s}(K_t)$, the authors conjecture that the complete graph on $r(K_t)$ vertices minimises the number of $K_s$ copies among all $K_t$-Ramsey graphs. The paper verifies this conjecture for $s = 3$ and all sufficiently large $t$ as its main result (Theorem 1.3).",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2312.06895",
+    "paper_title": "Triangle Ramsey numbers of complete graphs",
+    "paper_authors": [
+      "Jacob Fox",
+      "Jonathan Tidor",
+      "Shengtong Zhang"
+    ],
+    "published": "2025-10-01",
+    "abs_url": "https://arxiv.org/abs/2312.06895",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "q-color generalization of Conjecture 1.2",
+    "statement_text": "The $q$-color generalization of Conjecture 1.2 holds.",
+    "context_text": "After noting that the $q$-color generalizations of Theorems 1.1, 1.3, and 1.4 all hold by the same proofs, the authors conjecture that the $q$-color analogue of the main conjecture (Conjecture 1.2) likewise holds.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated in prose without a formal label. The paper text reads 'the q-color generalization of Theorem 1.2', which is almost certainly a typo for 'Conjecture 1.2', since no Theorem 1.2 exists in this paper. No explicit formula for the q-color version is given in the extracted text.",
+    "arxiv_id": "2312.06895",
+    "paper_title": "Triangle Ramsey numbers of complete graphs",
+    "paper_authors": [
+      "Jacob Fox",
+      "Jonathan Tidor",
+      "Shengtong Zhang"
+    ],
+    "published": "2025-10-01",
+    "abs_url": "https://arxiv.org/abs/2312.06895",
+    "source": "pdf"
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Alon–Grytczuk–Hałuszczak–Riordan Conjecture",
+    "statement_text": "Planar graphs have bounded nonrepetitive chromatic number, i.e., there exists a constant $k$ such that every planar graph $G$ satisfies $\\pi(G) \\leq k$.",
+    "context_text": "It is widely recognised that the most important open problem in the field of nonrepetitive graph colouring is whether planar graphs have bounded nonrepetitive chromatic number. It was first asked by Alon, Grytczuk, Hałuszczak, and Riordan [3] in 2002. The best known lower bound prior to this paper was 11 and the best known upper bound was $O(\\log n)$.",
+    "attributed_to": "Alon, Grytczuk, Hałuszczak, and Riordan",
+    "attributed_year": 2002,
+    "paper_contribution": "Proves the conjecture by showing that every planar graph $G$ satisfies $\\pi(G) \\leq 768$ (Theorem 1), via a product structure theorem for planar graphs combined with strongly nonrepetitive colourings.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1904.05269",
+    "paper_title": "Planar graphs have bounded nonrepetitive chromatic number",
+    "paper_authors": [
+      "Vida Dujmović",
+      "Louis Esperet",
+      "Gwenaël Joret",
+      "Bartosz Walczak",
+      "David R. Wood"
+    ],
+    "published": "2022-01-20",
+    "abs_url": "https://arxiv.org/abs/1904.05269",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Grytczuk Conjecture (excluded minors)",
+    "statement_text": "For every graph $X$, there is an integer $k$ such that every $X$-minor-free graph $G$ satisfies $\\pi(G) \\leq k$.",
+    "context_text": "The result for graphs excluding a fixed minor confirms a conjecture of Grytczuk [28, 29]. This is a natural generalisation of the planar case, since planar graphs are $K_5$-minor-free and $K_{3,3}$-minor-free.",
+    "attributed_to": "Grytczuk",
+    "attributed_year": null,
+    "paper_contribution": "Proves the conjecture as Theorem 3, using the Robertson–Seymour graph minor structure theorem together with a nonrepetitive colouring bound for almost-embeddable graphs derived from product structure.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1904.05269",
+    "paper_title": "Planar graphs have bounded nonrepetitive chromatic number",
+    "paper_authors": [
+      "Vida Dujmović",
+      "Louis Esperet",
+      "Gwenaël Joret",
+      "Bartosz Walczak",
+      "David R. Wood"
+    ],
+    "published": "2022-01-20",
+    "abs_url": "https://arxiv.org/abs/1904.05269",
+    "source": "pdf"
+  }
+]

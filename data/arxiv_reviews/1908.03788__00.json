@@ -1,0 +1,21 @@
+{
+  "review_id": "1908.03788__00",
+  "safe_id": "1908.03788",
+  "arxiv_id": "1908.03788",
+  "conjecture_title": "Question 1.12",
+  "paper_title": "Avoidable paths in graphs",
+  "published": "2019-08-10",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "disproved",
+  "confidence": "high",
+  "summary": "Question 1.12 is resolved negatively within the same paper: the authors provide an explicit counterexample for every k >= 3 (a cycle on 2k-1 vertices with one additional vertex adjacent to two consecutive cycle vertices), showing that two disjoint P_k need not contain two disjoint avoidable P_k. The cases k in {1,2} have positive answers by results of Beisegel et al. A web search found no follow-up papers further studying this specific question.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "avoidable paths disjoint graphs Bonamy Defrain Hatzel Thiebaut 1908.03788",
+    "avoidability beyond paths disjoint P_k counterexample 2208.12803"
+  ],
+  "notes": "The counterexample is given within the source paper itself (not in a follow-up), so there are no since_posted entries. The related paper 'Avoidability beyond paths' (arXiv:2208.12803, Gurvich, Krnc, Milanič, 2022) extends avoidability to two-rooted graphs but does not directly address Question 1.12 about disjoint paths."
+}

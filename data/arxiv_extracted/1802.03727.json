@@ -1,0 +1,94 @@
+[
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.3",
+    "statement_text": "There is a function $x_1(d)$ that satisfies $x_1(d) \\to \\infty$ as $d \\to \\infty$ such that $\\mathrm{ch}_{\\mathrm{sep}}(G) \\geq x_1(d)$ for any graph $G$ with minimum degree $d$.",
+    "context_text": "The authors prove Theorem 1.2 that separation choosability grows logarithmically in minimum degree for bipartite graphs, and ask whether the bipartiteness assumption can be dropped. The difficulty is that a bad list assignment with maximum separation on a graph does not necessarily retain maximum separation when edges are added, so the standard bipartite-subgraph reduction used for ordinary choosability fails.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "PDF source — math appears cleanly extracted for this statement.",
+    "arxiv_id": "1802.03727",
+    "paper_title": "Separation choosability and dense bipartite induced subgraphs",
+    "paper_authors": [
+      "Louis Esperet",
+      "Ross J. Kang",
+      "Stéphan Thomassé"
+    ],
+    "published": "2018-12-04",
+    "abs_url": "https://arxiv.org/abs/1802.03727",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.4",
+    "statement_text": "There are functions $x_2(d)$ and $x_3(d)$ satisfying $x_2(d) \\to \\infty$ and $x_3(d) \\to \\infty$ as $d \\to \\infty$ such that any graph with minimum degree at least $d$ contains a complete subgraph on $x_2(d)$ vertices or a bipartite induced subgraph with minimum degree at least $x_3(d)$.",
+    "context_text": "This conjecture, if true, would imply Conjecture 1.3: since $\\mathrm{ch}_{\\mathrm{sep}}(K_{d+1}) \\sim \\sqrt{d}$ (Kratochvíl–Tuza–Voigt) and Theorem 1.2 handles the dense bipartite induced subgraph case, the two alternatives together would give a separation-choosability lower bound tending to infinity for any graph of large minimum degree.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "PDF source — math appears cleanly extracted for this statement.",
+    "arxiv_id": "1802.03727",
+    "paper_title": "Separation choosability and dense bipartite induced subgraphs",
+    "paper_authors": [
+      "Louis Esperet",
+      "Ross J. Kang",
+      "Stéphan Thomassé"
+    ],
+    "published": "2018-12-04",
+    "abs_url": "https://arxiv.org/abs/1802.03727",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.5",
+    "statement_text": "There is a constant $C > 0$ such that any triangle-free graph with minimum degree at least $d$ contains a bipartite induced subgraph of minimum degree at least $C \\log d$.",
+    "context_text": "This is a quantitative sharpening of Conjecture 1.4 restricted to triangle-free graphs; the logarithmic bound would be sharp up to the choice of $C$ (Theorem 3.7). The second part of the paper offers partial progress through Theorem 1.7 and several subcases proved in Section 3.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "PDF source — math appears cleanly extracted for this statement.",
+    "arxiv_id": "1802.03727",
+    "paper_title": "Separation choosability and dense bipartite induced subgraphs",
+    "paper_authors": [
+      "Louis Esperet",
+      "Ross J. Kang",
+      "Stéphan Thomassé"
+    ],
+    "published": "2018-12-04",
+    "abs_url": "https://arxiv.org/abs/1802.03727",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.6",
+    "statement_text": "There exist $d_0$ and $g_0$ such that any graph of girth at least $g_0$ with minimum degree at least $d_0$ contains a bipartite induced subgraph of minimum degree at least $3$.",
+    "context_text": "This is a further variation on Conjecture 1.4 using large girth instead of triangle-freeness. The weaker statement with 3 replaced by 2 (i.e., containing an even hole) is true with $g_0 = 4$ and $d_0 = 3$ by Radovanović–Vušković; detecting bipartite induced subgraphs of minimum degree at least 3 is NP-complete.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "PDF source — math appears cleanly extracted for this statement.",
+    "arxiv_id": "1802.03727",
+    "paper_title": "Separation choosability and dense bipartite induced subgraphs",
+    "paper_authors": [
+      "Louis Esperet",
+      "Ross J. Kang",
+      "Stéphan Thomassé"
+    ],
+    "published": "2018-12-04",
+    "abs_url": "https://arxiv.org/abs/1802.03727",
+    "source": "pdf"
+  }
+]

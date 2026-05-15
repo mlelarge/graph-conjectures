@@ -1,0 +1,26 @@
+[
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Question 1.1",
+    "statement_text": "Does every non-null even-hole-free claw-free graph have a simplicial clique?",
+    "context_text": "This question was raised by the authors of [4] in the context of condensed matter physics and quantum information theory, where a new method for 'solving' spin models (finding the spectrum and eigenvectors of the Hamiltonian) applies whenever the frustration graph is even-hole-free, claw-free, and has a simplicial clique. The question asks whether the even-hole-free claw-free hypothesis alone suffices to guarantee a simplicial clique, making the solvability result universal for this graph class.",
+    "attributed_to": "authors of [4]",
+    "attributed_year": null,
+    "paper_contribution": "Answers the question affirmatively: proves that every non-null even-hole-free claw-free graph has a simplicial clique, and establishes the stronger result (Theorem 2.2) that every non-null clean graph (claw-free and containing no jewel, line wheel, short prism, or seven-antihole) has a simplicial clique.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Reference [4] is cited throughout but the authors' names are not given in the extracted text. The question is fully resolved (proved) by this paper.",
+    "arxiv_id": "2012.05287",
+    "paper_title": "A note on simplicial cliques",
+    "paper_authors": [
+      "Maria Chudnovsky",
+      "Alex Scott",
+      "Paul Seymour",
+      "Sophie Spirkl"
+    ],
+    "published": "2021-10-01",
+    "abs_url": "https://arxiv.org/abs/2012.05287",
+    "source": "pdf"
+  }
+]

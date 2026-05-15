@@ -1,0 +1,44 @@
+{
+  "review_id": "1710.06282__00",
+  "safe_id": "1710.06282",
+  "arxiv_id": "1710.06282",
+  "conjecture_title": "Conjecture 1.2",
+  "paper_title": "A tight Erdős-Pósa function for wheel minors",
+  "published": "2018-07-05",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "solved",
+  "confidence": "high",
+  "summary": "Conjecture 1.2 was resolved by Cames van Batenburg, Huynh, Joret, and Raymond in arXiv:1807.04969, submitted just eight days after the journal publication date of the source paper. They prove that for every planar graph H, the Erdős-Pósa property holds for H-models with a c(H)·k log k bounding function, which is best possible up to the constant for any H containing a cycle. The result was published in Advances in Combinatorics in 2019, fully settling the growth rate of the Erdős-Pósa function for all planar graphs H.",
+  "since_posted": [
+    {
+      "title": "A tight Erdős-Pósa function for planar minors",
+      "authors": "Wouter Cames van Batenburg, Tony Huynh, Gwenaël Joret, Jean-Florent Raymond",
+      "year": 2018,
+      "venue": "Advances in Combinatorics (2019)",
+      "url": "https://arxiv.org/abs/1807.04969",
+      "arxiv_id": "1807.04969",
+      "doi": null,
+      "kind": "proof",
+      "claim": "Proves the full conjecture: for every planar graph H, every graph G either contains k vertex-disjoint H-models or a hitting set of at most c(H)·k log k vertices, establishing the tight Θ(k log k) growth rate."
+    }
+  ],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2108.01162",
+      "verified": true,
+      "note": "Paper concerns induced subgraphs and tree decompositions in bounded-degree graphs; does not address the Erdős-Pósa conjecture or arXiv:1710.06282. The internal reference is a false positive (fuzz=67, different topic)."
+    },
+    {
+      "arxiv_id": "2404.05992",
+      "verified": true,
+      "note": "Paper concerns graphs of bounded chordality and χ-boundedness; does not address the Erdős-Pósa conjecture or arXiv:1710.06282. The internal reference is a false positive (fuzz=65, different topic)."
+    }
+  ],
+  "search_queries": [
+    "Erdős-Pósa planar graph H-models O(k log k) bounding function conjecture 1710.06282",
+    "Erdős-Pósa property planar graph minors tight bounding function k log k 2019 2020 2021 2022 2023 2024"
+  ],
+  "notes": "The conjecture was settled by arXiv:1807.04969 (Cames van Batenburg, Huynh, Joret, Raymond), submitted July 13 2018 — eight days after the journal publication date of the source paper (the source arXiv preprint 1710.06282 appeared in October 2017). Both internal references are false positives unrelated to the Erdős-Pósa topic."
+}

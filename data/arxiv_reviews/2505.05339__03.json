@@ -1,0 +1,33 @@
+{
+  "review_id": "2505.05339__03",
+  "safe_id": "2505.05339",
+  "arxiv_id": "2505.05339",
+  "conjecture_title": "Question 4.4",
+  "paper_title": "A Counterexample to a Conjecture of Lovász",
+  "published": "2025-06-10",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "disproved",
+  "confidence": "high",
+  "summary": "Question 4.4 asks whether the line hypergraph of every $r$-regular $r$-edge-colourable Cayley graph must contain $r-1$ vertices whose deletion reduces its matching number. This was answered negatively by Abiad, Garbe, Povill, and Spiegel (arXiv:2506.21286, June 2025), who found a cubic Cayley graph on 36 vertices and a quartic Cayley graph on 96 vertices whose line hypergraphs are counterexamples to Lovász's conjecture, thus disproving the conjecture even in the Cayley graph setting.",
+  "since_posted": [
+    {
+      "title": "Infinitely many counterexamples to a conjecture of Lovász",
+      "authors": "Aida Abiad, Frederik Garbe, Xavier Povill, Christoph Spiegel",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2506.21286",
+      "arxiv_id": "2506.21286",
+      "doi": null,
+      "kind": "counterexample",
+      "claim": "Provides a cubic Cayley graph on 36 vertices and a quartic Cayley graph on 96 vertices whose line hypergraphs are counterexamples to Lovász's conjecture, directly answering Question 4.4 in the negative."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "line hypergraph Cayley graph matching number Lovász conjecture 2505.05339",
+    "infinitely many counterexamples Lovász conjecture 2506.21286"
+  ],
+  "notes": "The follow-up paper arXiv:2506.21286 explicitly addresses Question 4.4 from the source paper, noting 'while the generalized Petersen graphs we use for Theorem 2 are not Cayley, we did find a specific example of a cubic Cayley graph on 36 vertices … as well as a quartic Cayley graph on 96 vertices.' This directly disproves the conjecture."
+}

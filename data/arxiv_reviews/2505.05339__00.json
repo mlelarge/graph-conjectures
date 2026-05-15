@@ -1,0 +1,34 @@
+{
+  "review_id": "2505.05339__00",
+  "safe_id": "2505.05339",
+  "arxiv_id": "2505.05339",
+  "conjecture_title": "Question 4.1",
+  "paper_title": "A Counterexample to a Conjecture of Lovász",
+  "published": "2025-06-10",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "solved",
+  "confidence": "high",
+  "summary": "Question 4.1 asks whether infinitely many 3-edge-colourable cubic graphs exist such that for every pair of edges $(u,v),(x,y)\\in E(G)$ the key lemma condition holds (i.e. the line hypergraph of $G$ is a counterexample to the Lovász conjecture for $r=3$). Abiad, Garbe, Povill, and Spiegel (arXiv:2506.21286, June 2025) answer this affirmatively by constructing a simple infinite family of such counterexamples based on generalized Petersen graphs, and additionally provide specific counterexamples for $r=4$.",
+  "since_posted": [
+    {
+      "title": "Infinitely many counterexamples to a conjecture of Lovász",
+      "authors": "Aida Abiad, Frederik Garbe, Xavier Povill, Christoph Spiegel",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2506.21286",
+      "arxiv_id": "2506.21286",
+      "doi": null,
+      "kind": "proof",
+      "claim": "Constructs an infinite family of 3-edge-colourable cubic graphs (generalized Petersen graphs) whose line hypergraphs are counterexamples to Lovász's conjecture for $r=3$, directly answering Question 4.1 in the affirmative; also provides counterexamples for $r=4$."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Biggs-Smith graph F168D cubic edge-transitive 3-edge-colourable infinitely many Clow Haxell Mohar 2025",
+    "arxiv 2505.05339 Lovász conjecture counterexample Biggs-Smith cubic graphs 2025 2026 follow-up",
+    "Ryser conjecture r=3 Lovász counterexample cubic 3-edge-colorable infinitely many graphs 2025 2026"
+  ],
+  "notes": "The follow-up paper (2506.21286) was submitted on 2025-06-26, just 16 days after the source paper. It explicitly credits Clow–Haxell–Mohar as the motivation and extends their single example to an infinite family, resolving Question 4.1."
+}

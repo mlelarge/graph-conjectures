@@ -1,0 +1,28 @@
+[
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Informal Conjecture on R(n;r,s) vs R'(n;r,s) near Turán density",
+    "statement_text": "We clearly have $R(n; r, s) \\geq R'(n; r, s)$ and we believe that this estimate should be close to an equality when $s/r$ is close to the Turán density $1 - \\frac{1}{n-1}$.",
+    "context_text": "The authors introduce the variant $R'(n;r,s)$, defined as the minimum $N$ such that every $(r,s)$-coloring of $K_N$ yields a color class with chromatic number at least $n$. They observe that $R(n;r,s) \\geq R'(n;r,s)$ always holds, and that for the special case $s = r-1$ near-equality is confirmed by prior work of Alon et al. [1]. The informal belief is stated in Section 4 while studying the fixed-$n$ regime.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "PDF source — math may be garbled. Statement reconstructed from prose; no labelled conjecture environment. The problems/further-remarks section mentioned at the end of the introduction is not present in the extracted text, so additional posed problems from that section may be missing.",
+    "arxiv_id": "2206.11371",
+    "paper_title": "Set-coloring Ramsey numbers via codes",
+    "paper_authors": [
+      "David Conlon",
+      "Jacob Fox",
+      "Xiaoyu He",
+      "Dhruv Mubayi",
+      "Andrew Suk",
+      "Jacques Verstraete"
+    ],
+    "published": "2022-06-22",
+    "abs_url": "https://arxiv.org/abs/2206.11371",
+    "source": "pdf"
+  }
+]

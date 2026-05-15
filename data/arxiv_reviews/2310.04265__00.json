@@ -1,0 +1,33 @@
+{
+  "review_id": "2310.04265__00",
+  "safe_id": "2310.04265",
+  "arxiv_id": "2310.04265",
+  "conjecture_title": "Question 3.5",
+  "paper_title": "Clique number of tournaments",
+  "published": "2023-10-06",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "unclear",
+  "confidence": "medium",
+  "summary": "A follow-up paper arXiv:2401.07776 (Aubian, 2024) titled 'Computing the clique number of tournaments' explicitly provides a counterexample to a conjecture of Aboulker, Aubian, Charbit and Lopes, but its abstract does not specify which conjecture from the source paper is disproved. It is unconfirmed whether this counterexample addresses Question 3.5 (existence of a simultaneous omega-ordering and chi-ordering for every tournament) or a different conjecture from the same paper. No other follow-up directly addressing Question 3.5 was found.",
+  "since_posted": [
+    {
+      "title": "Computing the clique number of tournaments",
+      "authors": "Guillaume Aubian",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2401.07776",
+      "arxiv_id": "2401.07776",
+      "doi": null,
+      "kind": "counterexample",
+      "claim": "Proves NP-completeness of deciding whether a tournament has clique number at most k (for k >= 3), and modifies the construction to provide a counterexample to a conjecture of Aboulker, Aubian, Charbit and Lopes; it is unconfirmed whether Question 3.5 is the specific conjecture disproved."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Aboulker Aubian Charbit Lopes \"clique number of tournaments\" omega-ordering chi-ordering 2310.04265",
+    "tournament \"omega-ordering\" \"chi-ordering\" dichromatic number clique ordering arxiv 2024 2025"
+  ],
+  "notes": "arXiv:2401.07776 (Aubian 2024) reports a counterexample to a conjecture from arXiv:2310.04265 but does not name it in the abstract; full-text access would be required to confirm whether Question 3.5 specifically is the conjecture disproved. Question 3.5 concerns simultaneous existence of omega-orderings and chi-orderings, a structural existence question, whereas 2401.07776 is primarily focused on computational complexity of the clique number — so the counterexample may concern a different conjecture in the source paper."
+}

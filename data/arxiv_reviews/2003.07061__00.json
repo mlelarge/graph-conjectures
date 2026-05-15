@@ -1,0 +1,34 @@
+{
+  "review_id": "2003.07061__00",
+  "safe_id": "2003.07061",
+  "arxiv_id": "2003.07061",
+  "conjecture_title": "The $\\varepsilon$-$t$-Net Problem",
+  "paper_title": "The $ε$-$t$-Net Problem",
+  "published": "2020-03-16",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The problem asks how small the smallest $\\varepsilon$-$t$-nets for a hypergraph $H$ can be and whether they can be computed efficiently. The source paper proved existence of $\\varepsilon$-$t$-nets of size $O((1+\\log t)d/\\varepsilon \\cdot \\log(1/\\varepsilon))$ for VC-dimension-$d$ hypergraphs and $O(1/\\varepsilon)$ for certain geometric classes; whether these bounds are tight and whether efficient algorithms exist in general remains open. A 2024 paper by Keller and Smorodinsky (arXiv:2311.13662, SoCG 2024) applies $\\varepsilon$-$t$-nets as a tool to Zarankiewicz’s problem, extending the utility of the framework but not resolving the original minimization or algorithmic questions.",
+  "since_posted": [
+    {
+      "title": "Zarankiewicz's problem via ε-t-nets",
+      "authors": "Chaya Keller, Shakhar Smorodinsky",
+      "year": 2024,
+      "venue": "40th International Symposium on Computational Geometry (LIPIcs SoCG 2024)",
+      "url": "https://arxiv.org/abs/2311.13662",
+      "arxiv_id": "2311.13662",
+      "doi": "10.4230/LIPIcs.SoCG.2024.66",
+      "kind": "partial",
+      "claim": "Applies $\\varepsilon$-$t$-nets as a tool to Zarankiewicz’s problem, obtaining a sharp $O(n)$ bound for intersection graphs of two families of pseudo-discs and an $O(n\\log n/\\log\\log n)$ bound for axis-parallel rectangles, demonstrating the power of the $\\varepsilon$-$t$-net framework but not resolving the original question on minimum net sizes."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "epsilon-t-net hypergraph problem Alon Jartoux Keller Smorodinsky Yuditsky 2003.07061",
+    "epsilon t-net t-element subsets hyperedge secret sharing combinatorics arxiv",
+    "Zarankiewicz epsilon-t-net Keller Smorodinsky 2024 arxiv"
+  ],
+  "notes": "The ε-t-Net Problem is the core open problem of the paper; the specific questions on tight bounds for general hypergraphs and efficient computation remain unresolved. The journal version appeared in Discrete & Computational Geometry (2022), DOI 10.1007/s00454-022-00376-x. A 2024 SoCG paper by two of the original authors (Keller and Smorodinsky) uses ε-t-nets as a productive combinatorial tool for Zarankiewicz-type problems in geometry. No paper was found that directly proves or disproves optimal bounds for the general ε-t-net minimization problem."
+}

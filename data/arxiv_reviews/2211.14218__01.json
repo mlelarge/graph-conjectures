@@ -1,0 +1,23 @@
+{
+  "review_id": "2211.14218__01",
+  "safe_id": "2211.14218",
+  "arxiv_id": "2211.14218",
+  "conjecture_title": "Question",
+  "paper_title": "Shotgun assembly of random graphs",
+  "published": "2025-06-23",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The question concerns the exact threshold for $r$-reconstructibility of $\\mathcal{G}(n,p)$ for $r \\in \\{1,2\\}$, the two radii for which Johnston, Kronenberg, Roberts, and Scott provide only upper and lower bounds rather than a sharp threshold. For $r=2$, a gap remains around $n^{-3/4}$ (up to polylogarithmic factors); for $r=1$, a gap persists around $n^{-1/2}$. No follow-up paper resolving either case was found in the indexed literature.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "shotgun assembly random graphs r-reconstructibility threshold Johnston Kronenberg Roberts Scott arXiv 2211.14218",
+    "shotgun reconstruction random graph G(n,p) radius 1 2 threshold Erdos Renyi 2024 2025",
+    "r-reconstructibility G(n,p) exact threshold r=1 r=2 shotgun Gaudio Mossel Huang Tikhomirov follow-up 2024 2025 2026",
+    "shotgun assembly graph reconstruction r=2 threshold sharp 2024 2025 2026 follow-up arxiv"
+  ],
+  "notes": "No follow-up paper resolving the exact threshold for r=1 or r=2 was found. The paper (arXiv:2211.14218) was first posted in November 2022 and published in Probability Theory and Related Fields in June 2025; the sharp threshold for all r≥3 is fully resolved in the paper itself. For r=2, the open question is whether the threshold is near n^{-3/4} (up to polylogarithmic factors); for r=1, the gap is around n^{-1/2}. Searched arXiv and web through May 2026 without finding any resolution."
+}

@@ -1,0 +1,25 @@
+[
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Hebbinghaus–Srivastav Open Problem",
+    "statement_text": "Determine $\\mathrm{disc}(\\mathcal{A}_p)$ up to a constant factor for prime $p$, i.e., close the $O(\\sqrt{\\log p})$ multiplicative gap between the lower bound $c_1\\sqrt{p}$ and the upper bound $c_2\\sqrt{p\\log p}$.",
+    "context_text": "Hebbinghaus and Srivastav proved that for prime $p$ there exist positive constants $c_1, c_2$ such that $c_1\\sqrt{p} \\leq \\mathrm{disc}(\\mathcal{A}_p) \\leq c_2\\sqrt{p\\log p}$, and wrote that closing the $O(\\sqrt{\\log p})$ multiplicative gap seemed to be a difficult open problem. Alon and Spencer (Theorem 13.1.1 in [1]) also contributed to the upper bound side.",
+    "attributed_to": "Hebbinghaus and Srivastav",
+    "attributed_year": null,
+    "paper_contribution": "Removes the $\\sqrt{\\log p}$ factor from the upper bound, establishing $\\mathrm{disc}(\\mathcal{A}_p) = \\Theta(\\sqrt{p})$ for prime $p$ as a special case of the main Theorem 1.1.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "PDF source — math may be garbled; statement reconstructed from prose description of the gap between lower and upper bounds.",
+    "arxiv_id": "2104.03929",
+    "paper_title": "Discrepancy in modular arithmetic progressions",
+    "paper_authors": [
+      "Jacob Fox",
+      "Max Wenqiang Xu",
+      "Yunkun Zhou"
+    ],
+    "published": "2021-04-08",
+    "abs_url": "https://arxiv.org/abs/2104.03929",
+    "source": "pdf"
+  }
+]

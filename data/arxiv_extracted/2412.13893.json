@@ -1,0 +1,26 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Chudnovsky–Seymour Coarse Erdős–Pósa Conjecture",
+    "statement_text": "There exist functions $f,\\,g:\\mathbb{N}\\to\\mathbb{N}$ such that for all integers $k\\geq 1$ and $d\\geq 1$, for every graph $G$, either $G$ contains $k$ cycles where the distance between each pair of cycles is greater than $d$, or there exists a subset $X$ of vertices of $G$ with $|X|\\leq f(k)$ such that $G-B_{G}(X,g(d))$ is a forest.",
+    "context_text": "Georgakopoulos and Papasoglu proposed a research theme combining graph minors and coarse geometry, including the Coarse Erdős–Pósa statement [3, Conjecture 9.7]. The specific variant above was conjectured by Chudnovsky and Seymour (discussed at the Barbados Graph Theory Workshop, March 2024) and independently posed as a conjecture by Ahn et al. [1], who solved the cases $k=2$ with arbitrary $d$, and $d=1$ with arbitrary $k$.",
+    "attributed_to": "Chudnovsky and Seymour; also Ahn, Gollin, Huynh, and Kwon",
+    "attributed_year": 2024,
+    "paper_contribution": "Proves the conjecture in full generality with explicit bounds $f(k)\\in\\mathcal{O}(k^{18}\\operatorname{polylog}k)$ and $g(d)=19d$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Attribution to Chudnovsky and Seymour is via a footnote referencing the Barbados workshop (March 2024), not a formal citation. Ahn et al. [1] (SODA 2025) independently posed the same conjecture.",
+    "arxiv_id": "2412.13893",
+    "paper_title": "Erdős--Pósa property of cycles that are far apart",
+    "paper_authors": [
+      "Vida Dujmović",
+      "Gwenaël Joret",
+      "Piotr Micek",
+      "Pat Morin"
+    ],
+    "published": "2026-05-01",
+    "abs_url": "https://arxiv.org/abs/2412.13893",
+    "source": "html"
+  }
+]

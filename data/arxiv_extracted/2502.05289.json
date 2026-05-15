@@ -1,0 +1,98 @@
+[
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Korhonen–Lokshtanov Question on Induced Disjoint Paths in Induced-Minor-Free Classes",
+    "statement_text": "Is Induced $k$-Disjoint Paths NP-hard in $H$-induced-minor-free graphs for some fixed $k$ and $H$?",
+    "context_text": "Korhonen and Lokshtanov posed this question to understand the tractability frontier of Induced $k$-Disjoint Paths when graphs are restricted by excluding a fixed induced minor. The problem is NP-complete in general graphs for $k=2$ but polynomial in planar and bounded-genus graphs, leaving the induced-minor-free setting open.",
+    "attributed_to": "Korhonen and Lokshtanov",
+    "attributed_year": 2024,
+    "paper_contribution": "Resolves the question affirmatively for $k=2$ and $H$ equal to the 1-subdivision of $K_{5}$ (or $K_{3,3}$): Induced 2-Disjoint Paths (and the stronger Induced Disjoint $S$–$T$ Paths with $|S|=|T|=2$) is NP-complete in string graphs, which exclude every 1-subdivision of a non-planar graph as an induced minor.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2502.05289",
+    "paper_title": "Induced Disjoint Paths Without an Induced Minor",
+    "paper_authors": [
+      "Pierre Aboulker",
+      "Édouard Bonnet",
+      "Timothé Picavet",
+      "Nicolas Trotignon"
+    ],
+    "published": "2025-02-07",
+    "abs_url": "https://arxiv.org/abs/2502.05289",
+    "source": "html"
+  },
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Chudnovsky–Seymour–Trotignon Question on Subcubic Induced Subdivision Containment",
+    "statement_text": "Is there a subcubic graph $H$ such that deciding whether an input graph contains $H$ as an induced subdivision ($H$-\\textsc{ISC}) is NP-complete?",
+    "context_text": "Until this paper, every graph $H$ for which $H$-ISC was known to be NP-complete had a vertex of degree at least 4. Chudnovsky, Seymour, and Trotignon (the fourth author of the present paper) asked whether NP-hardness of induced subdivision containment can occur for subcubic graphs.",
+    "attributed_to": "Chudnovsky, Seymour, and Trotignon",
+    "attributed_year": null,
+    "paper_contribution": "Answers the question affirmatively: by leveraging the NP-completeness of Induced 2-Disjoint Paths in string graphs (Theorem 1.1), the paper exhibits a fixed subcubic graph $H$ for which $H$-ISC is NP-complete (Theorems 1.3–1.4).",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "The abstract is truncated before the full attribution text; attributed to Chudnovsky, Seymour, and Trotignon based on context and the related bibliography entry [5] (Detecting an induced net subdivision, 2013); attributed_year left null as the precise source paper is uncertain.",
+    "arxiv_id": "2502.05289",
+    "paper_title": "Induced Disjoint Paths Without an Induced Minor",
+    "paper_authors": [
+      "Pierre Aboulker",
+      "Édouard Bonnet",
+      "Timothé Picavet",
+      "Nicolas Trotignon"
+    ],
+    "published": "2025-02-07",
+    "abs_url": "https://arxiv.org/abs/2502.05289",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.5",
+    "statement_text": "For any subcubic graph $H$, $H$-\\textsc{ISC} is in $\\mathsf{P}$ if and only if $H$ is planar.",
+    "context_text": "The conjecture is proposed by the paper's authors as a natural open question following their proof that a specific non-planar subcubic graph yields NP-complete induced subdivision containment. It complements known polynomial-time algorithms for planar induced subdivision detection (e.g., for the net and $K_{4}$) and the new hardness results of the paper.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "The 'only if' direction (NP-hardness for non-planar subcubic $H$) implicitly assumes $\\mathsf{P}\\neq\\mathsf{NP}$.",
+    "arxiv_id": "2502.05289",
+    "paper_title": "Induced Disjoint Paths Without an Induced Minor",
+    "paper_authors": [
+      "Pierre Aboulker",
+      "Édouard Bonnet",
+      "Timothé Picavet",
+      "Nicolas Trotignon"
+    ],
+    "published": "2025-02-07",
+    "abs_url": "https://arxiv.org/abs/2502.05289",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Informal Question on Complexity Gap Between Induced Disjoint Paths Variants",
+    "statement_text": "Is there a hereditary graph class in which Induced $k$-Disjoint Paths is NP-complete but Induced Disjoint $S$–$T$ Paths with $|S|=|T|=k$ is polynomial-time solvable? The case $k=2$ is of particular interest.",
+    "context_text": "The authors observe a structural asymmetry: polynomial-time algorithms in the literature tend to apply more broadly to Induced $k$-Disjoint Paths (the linkage variant), while hardness proofs tend to apply more broadly to Induced Disjoint $S$–$T$ Paths (the flow variant with $|S|=|T|=k$). This raises the question of whether the two problems can be separated in complexity on some hereditary class.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Appears in running prose with 'we wonder if' in the preamble to the open questions section (context before Conjecture 1.5); no labelled theorem environment.",
+    "arxiv_id": "2502.05289",
+    "paper_title": "Induced Disjoint Paths Without an Induced Minor",
+    "paper_authors": [
+      "Pierre Aboulker",
+      "Édouard Bonnet",
+      "Timothé Picavet",
+      "Nicolas Trotignon"
+    ],
+    "published": "2025-02-07",
+    "abs_url": "https://arxiv.org/abs/2502.05289",
+    "source": "html"
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "review_id": "2410.23566__06",
+  "safe_id": "2410.23566",
+  "arxiv_id": "2410.23566",
+  "conjecture_title": "Problem 12",
+  "paper_title": "Blow-ups and extensions of trees in tournaments",
+  "published": "2024-10-31",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Problem 12 asks for the minimum function $f$ such that every $k$-extension of every forest of order $n$ is $(2^{f(k)}\\cdot n)$-unavoidable in tournaments. As of the source paper (October 2024), the gap between the quadratic upper bound $f(k)\\leq\\binom{2k+2}{2}$ (Corollary 25) and the linear lower bound from Proposition 28 remains open. No follow-up paper resolving or narrowing this gap was found in a search of the literature up to May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "k-extension forest tournament unavoidable Aboulker Havet Lochet Lopes 2410.23566",
+    "k-extension forest unavoidable tournament blow-up trees arXiv 2024 2025",
+    "Picasarri-Arrieta Rambaud extensions forests tournaments unavoidable 2025"
+  ],
+  "notes": "No follow-up found. The problem is recent (October 2024) and the wide web search covering author homepages (Lucas Picasarri-Arrieta's site, Clément Rambaud's DBLP) returned no paper addressing the gap between the linear lower bound and the quadratic upper bound on $f$. Status open with high confidence."
+}

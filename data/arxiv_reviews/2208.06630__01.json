@@ -1,0 +1,23 @@
+{
+  "review_id": "2208.06630__01",
+  "safe_id": "2208.06630",
+  "arxiv_id": "2208.06630",
+  "conjecture_title": "Conjecture 1",
+  "paper_title": "Short reachability networks",
+  "published": "2025-10-23",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The conjecture that the minimum number of lazy transpositions in a 2-uniformity network is 2n-3 was posed in arXiv:2208.06630 (published in DMTCS 2025); the authors supply a matching construction and note an analogy with selection networks. No follow-up paper proving or disproving the conjecture was found in a broad web search. The companion paper arXiv:2208.06629 (same authors, same submission date) studies a related but distinct problem—perfect shuffling by lazy transpositions whose composition is uniform—and does not address the 2-uniformity lower bound.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "lazy transpositions 2-uniformity network reachability Groenland Johnston Radcliffe Scott",
+    "arXiv 2208.06630 Short reachability networks lazy transpositions conjecture",
+    "perfect shuffling lazy transpositions 2-uniformity Groenland Johnston 2024 2025",
+    "arXiv Perfect shuffling with fewer lazy transpositions Groenland Johnston"
+  ],
+  "notes": "No follow-up found after searching multiple queries. The paper was first posted August 2022 and published in DMTCS in October 2025. The companion paper arXiv:2208.06629 by the same authors concerns a different notion (lazy transpositions composing to a uniform permutation) and does not resolve Conjecture 1. The conjecture appears to remain open."
+}

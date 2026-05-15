@@ -1,0 +1,22 @@
+{
+  "review_id": "2601.12746__00",
+  "safe_id": "2601.12746",
+  "arxiv_id": "2601.12746",
+  "conjecture_title": "Open Question on Circular Drawing Characterisation",
+  "paper_title": "When all directed cycles have the same weight",
+  "published": "2026-01-19",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The paper by Berger, Carter, and Seymour (arXiv:2601.12746, January 2026) fully characterises weightable digraphs and derives a polynomial-time algorithm for testing weightability, but explicitly leaves open the question of whether there is a forbidden-structure characterisation of digraphs that admit a circular drawing. No follow-up work addressing this specific open question was found in the four months since posting.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "circular drawing digraph characterization Thomassen Berger Seymour 2026",
+    "circular drawing digraph forbidden structure characterization arxiv 2601.12746",
+    "weightable digraph circular drawing characterization open problem 2026"
+  ],
+  "notes": "The source paper is very recent (January 2026). The open question asks for a Thomassen-style forbidden-substructure theorem that characterises circular drawings of sufficiently connected digraphs. The authors explicitly state they could not find such a characterisation despite fully resolving the weightability question. No follow-up was found after three targeted web searches."
+}

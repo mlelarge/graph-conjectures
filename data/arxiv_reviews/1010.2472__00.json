@@ -1,0 +1,29 @@
+{
+  "review_id": "1010.2472__00",
+  "safe_id": "1010.2472",
+  "arxiv_id": "1010.2472",
+  "conjecture_title": "Open Problem: polynomial-time 4-colorability on fixed surfaces",
+  "paper_title": "Three-coloring triangle-free graphs on surfaces I. Extending a coloring to a disk with one triangle",
+  "published": "2016-03-04",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The question of whether 4-colorability of graphs on a fixed surface (other than the sphere) admits a polynomial-time algorithm remains open as of 2026. By contrast, 5-colorability on any fixed surface can be decided in linear time (via finiteness of 6-critical graphs), and 3-colorability of triangle-free graphs on any fixed surface can be decided in linear time (Dvořák, Král, Thomas, Part VII of this series). The structural paper arXiv:1801.10457 on irreducible 4-critical triangle-free toroidal graphs provides structural insight but does not resolve the algorithmic question. No follow-up paper resolving this problem was found in the published literature.",
+  "since_posted": [],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "1801.10457",
+      "verified": true,
+      "note": "Paper characterizes 4-critical triangle-free irreducible toroidal graphs via computer-assisted structural enumeration; it addresses structural properties (bounding number and sizes of faces) but does not resolve the polynomial-time 4-colorability question."
+    }
+  ],
+  "search_queries": [
+    "polynomial-time algorithm 4-colorability graphs fixed surface Dvorak Kral Thomas",
+    "4-colorability graphs surface NP-hard fixed surface complexity",
+    "4-critical graphs fixed surface polynomial algorithm Dvorak 2020 2021 2022 2023 2024",
+    "arxiv 4-colorability fixed surface polynomial NP-complete Dvorak 2022 2023 2024 2025"
+  ],
+  "notes": "The analogous 3-colorability (triangle-free) and 5-colorability questions on fixed surfaces are both resolved in polynomial (linear) time. The 4-colorability question is explicitly stated open by the authors with the remark that the techniques currently available do not give much hope for a positive resolution in the near future. No follow-up paper resolving this problem was found after exhaustive search."
+}

@@ -1,0 +1,27 @@
+[
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Goemans' Open Problem on Spanning Tree Extension Complexity",
+    "statement_text": "Improve either the lower bound $\\mathrm{xc}(P(G)) \\geq |E(G)| - |V(G)|$ or the upper bound $\\mathrm{xc}(P(G)) \\in O(|V(G)| \\cdot |E(G)|)$ for the extension complexity of the spanning tree polytope of a connected graph $G$.",
+    "context_text": "Wong (1980) and Martin (1991) proved the $O(|V(G)| \\cdot |E(G)|)$ upper bound for every connected graph $G$, while the only known lower bound is $|E(G)| - |V(G)|$ (the dimension of the polytope). Michel Goemans posed the open problem of improving either bound; the paper describes it as notoriously difficult and still wide open, citing Khoshkhah and Theis for further discussion.",
+    "attributed_to": "Michel Goemans",
+    "attributed_year": null,
+    "paper_contribution": "Proves $\\mathrm{xc}(P(G)) \\in O(n^{3/2})$ for every connected $n$-vertex graph $G$ in any proper minor-closed class, and more generally $\\mathrm{xc}(P(G)) \\in O(n^{1+\\beta})$ for graph classes closed under induced subgraphs that admit $\\frac{1}{2}$-balanced separators of size $O(n^{\\beta})$, strictly improving the $O(n^2)$ bound for all such classes.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "PDF source — problem is stated in prose without a labelled theorem environment. Section 5 ('some open problems' as announced by the authors) was not recoverable from the PDF extraction, so any additional open problems or conjectures posed there could not be captured.",
+    "arxiv_id": "2106.11945",
+    "paper_title": "Smaller extended formulations for spanning tree polytopes in minor-closed classes and beyond",
+    "paper_authors": [
+      "Manuel Aprile",
+      "Samuel Fiorini",
+      "Tony Huynh",
+      "Gwenaël Joret",
+      "David R. Wood"
+    ],
+    "published": "2021-12-02",
+    "abs_url": "https://arxiv.org/abs/2106.11945",
+    "source": "pdf"
+  }
+]

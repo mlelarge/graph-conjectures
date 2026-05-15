@@ -1,0 +1,98 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.3 (Small conjecture)",
+    "statement_text": "A class of graphs closed under induced subgraphs is small if and only if it has bounded twin-width.",
+    "context_text": "Small classes contain at most $n! \\cdot c^n$ graphs on vertex set $\\{1,\\ldots,n\\}$ for some constant $c$. This conjecture generalises the Stanley-Wilf conjecture to graphs, motivated by Theorem 1.2 which establishes one direction: classes with bounded twin-width are small. The conjecture was proposed in a previous paper in the twin-width series.",
+    "attributed_to": "Bonnet et al. [3] (previous twin-width work)",
+    "attributed_year": null,
+    "paper_contribution": "Disproves the conjecture by constructing (via Theorem 1.1, a finitely generated group with infinite twin-width) a small class of graphs closed under induced subgraphs with unbounded twin-width (Corollary 1.4).",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Conjecture header reads '(Small conjecture [3])'; reference [3] is a previous paper in the twin-width series. PDF extraction — bibliography not fully visible.",
+    "arxiv_id": "2204.12330",
+    "paper_title": "Twin-width VII: groups",
+    "paper_authors": [
+      "Édouard Bonnet",
+      "Colin Geniet",
+      "Romain Tessera",
+      "Stéphan Thomassé"
+    ],
+    "published": "2022-07-15",
+    "abs_url": "https://arxiv.org/abs/2204.12330",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Informal Conjecture (uniform twin-width strictly stronger than twin-width)",
+    "statement_text": "Uniform twin-width is strictly stronger than twin-width, i.e. there are groups with finite twin-width and infinite uniform twin-width.",
+    "context_text": "Uniform twin-width requires a uniform bound on the permutation width of the action of every group element, whereas finite twin-width only requires each action to have finite width individually. Having finite uniform twin-width implies finite twin-width, but the converse is not established. The group of finitely supported permutations on $\\mathbb{Z}$ is proposed as a candidate counterexample.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated in prose in Section 1.2 with 'We conjecture that'.",
+    "arxiv_id": "2204.12330",
+    "paper_title": "Twin-width VII: groups",
+    "paper_authors": [
+      "Édouard Bonnet",
+      "Colin Geniet",
+      "Romain Tessera",
+      "Stéphan Thomassé"
+    ],
+    "published": "2022-07-15",
+    "abs_url": "https://arxiv.org/abs/2204.12330",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Question (explicit group with infinite twin-width)",
+    "statement_text": "Can we find a more explicit construction of a group with infinite twin-width, or one with a direct proof that twin-width is infinite?",
+    "context_text": "The group constructed in Theorem 1.1 relies on probabilistic methods and starts from a sequence of bounded degree graphs with unbounded twin-width; it does not yield an explicit bounded degree graph with unbounded twin-width. A more explicit or combinatorially direct construction would significantly advance understanding of twin-width for bounded degree graphs.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated as a question in prose at the end of Section 1.3.",
+    "arxiv_id": "2204.12330",
+    "paper_title": "Twin-width VII: groups",
+    "paper_authors": [
+      "Édouard Bonnet",
+      "Colin Geniet",
+      "Romain Tessera",
+      "Stéphan Thomassé"
+    ],
+    "published": "2022-07-15",
+    "abs_url": "https://arxiv.org/abs/2204.12330",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Open Problem (separating twin-width and queue number on sparse graphs)",
+    "statement_text": "Separating twin-width and queue number on sparse graphs is an open problem.",
+    "context_text": "Finite queue number implies finite twin-width, so the two parameters are not equivalent in general. However, no example of a group (or sparse graph) with finite twin-width and infinite queue number is known, and the same gap exists for the corresponding uniform variants. Many results of the paper hold simultaneously for both parameters, making a separation elusive.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Explicitly declared an open problem in Section 1.4.",
+    "arxiv_id": "2204.12330",
+    "paper_title": "Twin-width VII: groups",
+    "paper_authors": [
+      "Édouard Bonnet",
+      "Colin Geniet",
+      "Romain Tessera",
+      "Stéphan Thomassé"
+    ],
+    "published": "2022-07-15",
+    "abs_url": "https://arxiv.org/abs/2204.12330",
+    "source": "pdf"
+  }
+]

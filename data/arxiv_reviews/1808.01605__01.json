@@ -1,0 +1,43 @@
+{
+  "review_id": "1808.01605__01",
+  "safe_id": "1808.01605",
+  "arxiv_id": "1808.01605",
+  "conjecture_title": "Conjecture 6",
+  "paper_title": "Triangle-free subgraphs with large fractional chromatic number",
+  "published": "2018-08-05",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "Conjecture 6 from arXiv:1808.01605, asserting that high chromatic number forces a subgraph of girth at least g with average degree at least k for all k and g, remains open in full generality. The source paper itself establishes the g=4 case (triangle-free subgraphs with large fractional chromatic number), and the g=3 case is trivial via the degeneracy bound. No follow-up paper resolving or substantially advancing the g≥5 cases was found in a targeted web search through 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2510.11311",
+      "verified": false,
+      "note": "Paper extends Thomassen's conjecture to directed graphs; addresses different host graphs (digraphs) and a different structural parameter. Not directly relevant to the undirected chromatic-number/girth/average-degree conjecture."
+    },
+    {
+      "arxiv_id": "2209.00594",
+      "verified": false,
+      "note": "Paper concerns Hadwiger's conjecture and clique minors in chromatic-critical graphs; unrelated to Conjecture 6."
+    },
+    {
+      "arxiv_id": "2002.11100",
+      "verified": false,
+      "note": "Paper proves clique-minor bounds in K_s-free graphs; unrelated to Conjecture 6."
+    },
+    {
+      "arxiv_id": "2411.16465",
+      "verified": false,
+      "note": "WebFetch of abstract page returned insufficient content for confirmation. Based on the corpus-extracted contribution (constructing graphs with bounded Hall ratio and large fractional chromatic number), the paper addresses a different open problem attributed to Dvořák, Ossona de Mendez, and Wu — not Conjecture 6 from 1808.01605."
+    }
+  ],
+  "search_queries": [
+    "chromatic number girth average degree subgraph conjecture Mohar Wu 1808.01605",
+    "Thomassen conjecture chromatic number girth large average degree subgraph progress 2020 2021 2022 2023 2024",
+    "high chromatic number subgraph large girth large average degree conjecture Mohar Wu graph theory 2019 2020 2021 2022 2023 2024 2025"
+  ],
+  "notes": "No follow-up found in indexed literature. The conjecture is a weakening of the Erdős–Hajnal conjecture (using chromatic number as hypothesis and requiring only large average degree, not large chromatic number, in the subgraph). The g=3 case is trivially true by degeneracy; the g=4 case is proved in the source paper. The Keevash–Li–Mohar preprint 'Digraph girth via chromatic number' (Mohar is a co-author) appeared in search results but treats directed graphs and could not be read in full. arXiv:2605.02543 (2026) proves a different variant of Thomassen's conjecture (highly connected subgraphs with large chromatic number), not girth/average-degree. Confidence is medium rather than high because the conjecture is 7 years old and absence of indexed evidence for an open problem of this age carries moderate uncertainty."
+}

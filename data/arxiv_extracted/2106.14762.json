@@ -1,0 +1,25 @@
+[
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Direct Proof of Horizontal Uniformity",
+    "statement_text": "The pointwise density of $R$ in $C^+ = \\{(x,y)\\in[0,1]^2 : x < ye^{1-y}\\}$ depends only on the vertical coordinate $y$ (``horizontal uniformity''). The authors state they do not know how to establish this directly, that is, without recourse to the explicit characterization of $R$.",
+    "context_text": "After defining the runsort permuton $R$ and noting that its absolutely continuous part has support $C^+$, the authors observe that the density in $C^+$ is independent of $x$. They remark that this horizontal uniformity is not combinatorially obvious and that a direct combinatorial proof is unknown.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "PDF source — math may be garbled. The open problem is implicit: find a direct combinatorial argument establishing horizontal uniformity without using the explicit formula for $R$. Section 6 (generalizations) is referenced in the introduction but not included in the extracted text, so additional items from that section may be missing.",
+    "arxiv_id": "2106.14762",
+    "paper_title": "The runsort permuton",
+    "paper_authors": [
+      "Noga Alon",
+      "Colin Defant",
+      "Noah Kravitz"
+    ],
+    "published": "2021-06-28",
+    "abs_url": "https://arxiv.org/abs/2106.14762",
+    "source": "pdf"
+  }
+]

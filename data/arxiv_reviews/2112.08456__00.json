@@ -1,0 +1,22 @@
+{
+  "review_id": "2112.08456__00",
+  "safe_id": "2112.08456",
+  "arxiv_id": "2112.08456",
+  "conjecture_title": "Question 9",
+  "paper_title": "Edge Partitions of Complete Geometric Graphs (Part 2)",
+  "published": "2021-12-15",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Question 9 asks whether the gap between the upper bound of approximately n/sqrt(2k) and the lower bound of approximately (n-1)/(4.93*sqrt(k)) on the number of k-planar subgraphs needed to partition K(P) for a convex n-point set is tight up to lower-order terms. No follow-up paper addressing the tightness of these bounds was found after an exhaustive search of the literature through May 2026. The paper was published at SoCG 2022; subsequent related work (GD 2024, arXiv:2405.17172) addresses plane (k=0) partitions on dense point sets, not the k-planar tightness question.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "arxiv 2112.08456 edge partitions complete geometric graphs k-planar",
+    "k-planar subgraphs partition convex point set complete geometric graph lower bound upper bound",
+    "Aichholzer Obenaus Orthaber Paul Schnider Steiner Taubner Vogtenhuber k-planar partition convex tight bound 2022 2023 2024"
+  ],
+  "notes": "No follow-up work closing the constant-factor gap between O(n/sqrt(k)) upper bound and Omega(n/sqrt(k)) lower bound was found. The paper notes that for k=2 a lower bound of 3n/10 nearly matching the upper bound n/3 can be shown, but this specialised case does not settle the general question. The conjecture is open with high confidence as of May 2026."
+}

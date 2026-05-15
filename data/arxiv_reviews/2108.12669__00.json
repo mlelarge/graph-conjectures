@@ -1,0 +1,22 @@
+{
+  "review_id": "2108.12669__00",
+  "safe_id": "2108.12669",
+  "arxiv_id": "2108.12669",
+  "conjecture_title": "Conjecture 1",
+  "paper_title": "Triangle-free planar graphs with at most $64^{n^{0.731}}$ 3-colorings",
+  "published": "2021-08-28",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 1 from arXiv:2108.12669 asserts that the exponent $\\log_{9/2} 3 \\approx 0.731$ in the upper bound of the same paper is optimal, i.e., every $n$-vertex triangle-free planar graph has at least $c^{n^{\\log_{9/2} 3}}$ distinct proper 3-colorings for some constant $c > 1$. The best known lower bounds on the number of 3-colorings of triangle-free planar graphs (e.g., sub-polynomial exponents from Thomassen's work and related reformulations such as arXiv:1702.00588) fall far short of the conjectured exponent. No paper proving or disproving the full conjecture was found in a wide web search.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "triangle-free planar graph 3-colorings lower bound exponent Dvořák Postle 2021",
+    "triangle-free planar graph number of 3-colorings exponential lower bound arxiv 2108.12669",
+    "Asadi Dvořák Postle Thomas triangle-free planar 3-colorings lower bound exponential arxiv"
+  ],
+  "notes": "No follow-up paper resolving the conjecture was found. The conjecture is closely related to Thomassen's conjecture that triangle-free planar graphs have exponentially many 3-colorings, which itself remains open. The paper arXiv:1702.00588 (Dvořák–Postle, 2017) reformulates Thomassen's conjecture as an edge-deletion equivalence but proves no lower bound on colorings. The best known unconditional lower bounds achieve a much smaller exponent than the conjectured $\\log_{9/2} 3 \\approx 0.731$."
+}

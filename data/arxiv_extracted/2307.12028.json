@@ -1,0 +1,27 @@
+[
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Question of Kamčev, Liebenau, Wood and Yepremyan on planar graphs",
+    "statement_text": "What are general bounds on the size-Ramsey numbers of bounded-degree planar graphs?",
+    "context_text": "Kamčev, Liebenau, Wood and Yepremyan [21] asked for general bounds for bounded-degree planar graphs. Prior to this work, only the grid graph (bound $O(n^{3/2})$, recently improved to $O(n^{5/4})$ by Conlon, Nenadov and Trujić), cycles, and bounded-degree trees (linear bounds) had been studied in this class.",
+    "attributed_to": "Kamčev, Liebenau, Wood and Yepremyan",
+    "attributed_year": null,
+    "paper_contribution": "Proves that for every proper minor-closed class $\\mathcal{G}$ and every $n$-vertex graph $G \\in \\mathcal{G}$ of maximum degree $\\Delta$, $\\hat{r}_k(G) = \\tilde{O}(n^{3/2 - \\frac{1}{2\\Delta}})$, which in particular applies to planar graphs, thereby answering this question.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "The question is described in prose in the introduction and abstract with citation [21]; no labeled theorem environment. The paper explicitly states it addresses this question.",
+    "arxiv_id": "2307.12028",
+    "paper_title": "Size-Ramsey numbers of structurally sparse graphs",
+    "paper_authors": [
+      "Nemanja Draganić",
+      "Marc Kaufmann",
+      "David Munhá Correia",
+      "Kalina Petrova",
+      "Raphael Steiner"
+    ],
+    "published": "2023-09-02",
+    "abs_url": "https://arxiv.org/abs/2307.12028",
+    "source": "pdf"
+  }
+]

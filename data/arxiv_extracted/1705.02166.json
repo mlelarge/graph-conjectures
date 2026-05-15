@@ -1,0 +1,112 @@
+[
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Question 1.1",
+    "statement_text": "For which subsets $K \\subset E^n$ does every red/blue-coloring of $E^n$ contain a red pair of points of distance one or a blue isometric copy of $K$?",
+    "context_text": "This is the central question studied throughout the paper. The notation $E^n \\to (\\ell_2, K)$ means every red/blue-coloring of $E^n$ contains a red copy of $\\ell_2$ or a blue copy of $K$, and $E^n \\not\\to (\\ell_2, K)$ means there is a coloring avoiding both. The paper says it follows Erdős et al. [4] in studying this question.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "The theorem header carries no parenthetical attribution; the paper notes it follows Erdős et al. [4] in studying this general question.",
+    "arxiv_id": "1705.02166",
+    "paper_title": "Lines in Euclidean Ramsey theory",
+    "paper_authors": [
+      "David Conlon",
+      "Jacob Fox"
+    ],
+    "published": "2018-03-20",
+    "abs_url": "https://arxiv.org/abs/1705.02166",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Erdős–Graham–Montgomery–Rothschild–Spencer–Straus Question on $\\ell_2$ vs large sets",
+    "statement_text": "For every natural number $n$, is there a set $K \\subset E^1$ and a red/blue-coloring of $E^n$ containing no red copy of $\\ell_2$ and no blue copy of $K$? More generally, for every natural number $d$, is there a natural number $n$ depending only on $d$ such that $E^n \\not\\to (\\ell_2, K)$ for every $K \\subset E^d$?",
+    "context_text": "Erdős et al. stressed the case $d = 1$ and stated they expected the answer to be negative. The present paper's main theorem, Theorem 1.1, shows that for $m = 10^5 n$ one has $E^n \\not\\to (\\ell_2, \\ell_m)$, answering the question affirmatively and showing $n$ must grow logarithmically in $|K|$.",
+    "attributed_to": "Erdős, Graham, Montgomery, Rothschild, Spencer and Straus",
+    "attributed_year": 1973,
+    "paper_contribution": "Answers the question affirmatively for $d = 1$: for $m = 10^5 n$ there is a red/blue-coloring of $E^n$ with no red copy of $\\ell_2$ and no blue copy of $\\ell_m$, contradicting the authors' expectation.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source — question referenced in both the abstract and Section 1; attributed to [3] (1973) and [4] (1975) in the text.",
+    "arxiv_id": "1705.02166",
+    "paper_title": "Lines in Euclidean Ramsey theory",
+    "paper_authors": [
+      "David Conlon",
+      "Jacob Fox"
+    ],
+    "published": "2018-03-20",
+    "abs_url": "https://arxiv.org/abs/1705.02166",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Open problem: $E^n \\not\\to (\\ell_3, \\ell_m)$ for large $m$",
+    "statement_text": "For every natural number $m$, does there exist a natural number $n$ such that $E^n \\not\\to (\\ell_3, \\ell_m)$?",
+    "context_text": "In the concluding remarks the authors say they were unable to decide this question. They consider it unlikely to hold for large $m$ but were unable to exhibit a coloring confirming their suspicion. Erdős et al. [3] showed that $E^n \\to (\\ell_6, \\ell_6)$ for all $n$, providing related context.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "PDF source — stated in prose in the concluding remarks without a labelled theorem environment.",
+    "arxiv_id": "1705.02166",
+    "paper_title": "Lines in Euclidean Ramsey theory",
+    "paper_authors": [
+      "David Conlon",
+      "Jacob Fox"
+    ],
+    "published": "2018-03-20",
+    "abs_url": "https://arxiv.org/abs/1705.02166",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Erdős–Graham–Montgomery–Rothschild–Spencer–Straus Problem on universal two-coloring bound",
+    "statement_text": "For every natural number $n$, does there exist a natural number $m$ depending only on $n$ such that for every set $K \\subset E^n$ of size $m$ there is a two-coloring of $E^n$ with no monochromatic copy of $K$?",
+    "context_text": "This problem from Erdős et al. [4] asks whether a universal size threshold $m(n)$ exists guaranteeing a monochromatic-free two-coloring for all point sets of that size in $E^n$. By rescaling one may assume $K$ is $1$-separated, so $\\ell_2 \\subset K$. Theorem 1.1 gives a partial answer when the diameter of $K$ is bounded.",
+    "attributed_to": "Erdős, Graham, Montgomery, Rothschild, Spencer and Straus",
+    "attributed_year": 1975,
+    "paper_contribution": "Partially answers the problem: if the diameter of $K \\subset E^n$ is at most $R$ and $|K| > 10^4 n \\log R$, then a two-coloring of $E^n$ with no monochromatic copy of $K$ exists; a complete answer requires removing the dependence on the diameter $R$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source — stated in concluding remarks and attributed to [4].",
+    "arxiv_id": "1705.02166",
+    "paper_title": "Lines in Euclidean Ramsey theory",
+    "paper_authors": [
+      "David Conlon",
+      "Jacob Fox"
+    ],
+    "published": "2018-03-20",
+    "abs_url": "https://arxiv.org/abs/1705.02166",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Open problem: removing diameter dependence from Theorem 1.1",
+    "statement_text": "Can the dependence on the diameter $R$ be removed from Theorem 1.1? That is, does there exist a function $f(n)$, independent of the diameter of $K$, such that $E^n \\not\\to (\\ell_2, K)$ for every $1$-separated set $K \\subset E^n$ with $|K| > f(n)$?",
+    "context_text": "Theorem 1.1 requires $|K| > 10^4 n \\log R$ where $R$ is the diameter of $K$. The authors note in the concluding remarks that a complete answer to the Erdős et al. problem on a universal two-coloring bound would follow from resolving this problem, and describe it as interesting in its own right.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "PDF source — stated in prose in the concluding remarks without a labelled theorem environment.",
+    "arxiv_id": "1705.02166",
+    "paper_title": "Lines in Euclidean Ramsey theory",
+    "paper_authors": [
+      "David Conlon",
+      "Jacob Fox"
+    ],
+    "published": "2018-03-20",
+    "abs_url": "https://arxiv.org/abs/1705.02166",
+    "source": "pdf"
+  }
+]

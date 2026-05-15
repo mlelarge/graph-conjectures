@@ -1,0 +1,23 @@
+{
+  "review_id": "2204.12683__00",
+  "safe_id": "2204.12683",
+  "arxiv_id": "2204.12683",
+  "conjecture_title": "Conjecture 1.6",
+  "paper_title": "11/4-colorability of subcubic triangle-free graphs",
+  "published": "2025-03-28",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 1.6 from arXiv:2204.12683 posits fractional 19/7-colorability for subcubic triangle-free graphs avoiding four specific forbidden subgraphs, serving as an intermediate step between the paper's main result (11/4-colorability avoiding two graphs) and the stronger Conjecture 1.3 (8/3-colorability avoiding six graphs). No follow-up work addressing this specific intermediate conjecture was found in five web searches spanning arXiv and related literature through May 2026. The conjecture remains open.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "subcubic triangle-free \"19/7\" fractional chromatic number Dvořák Lidický Postle",
+    "arxiv 2204.12683 subcubic triangle-free fractional colorability conjecture",
+    "subcubic triangle-free \"fractional chromatic\" \"19/7\" F11 F22 forbidden subgraph 2025 2026",
+    "Dvořák Lidický Postle \"8/3\" subcubic triangle-free fractional coloring 2025 2026 follow-up"
+  ],
+  "notes": "No follow-up found after 5 web calls. The conjecture is posed as an intermediate result between Theorem 1.4 (11/4-colorability, two forbidden graphs) and Conjecture 1.3 (8/3-colorability, six forbidden graphs). The paper itself was posted to arXiv in April 2022 and published in Advances in Combinatorics in 2025; the conjecture is at most ~4 years old with no known resolution."
+}

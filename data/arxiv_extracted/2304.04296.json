@@ -1,0 +1,28 @@
+[
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Problem 2.3",
+    "statement_text": "Is the closure of a $\\chi$-bounded class under substitution and gluing along a bounded number of vertices also $\\chi$-bounded?",
+    "context_text": "Chudnovsky, Penev, Scott, and Trotignon [3] established that the closure of a $\\chi$-bounded class under substitution alone is $\\chi$-bounded (with polynomial $\\chi$-boundedness preserved), and the same holds for gluing along bounded vertex sets alone. They asked whether combining both operations still preserves $\\chi$-boundedness. The problem is also cited in the survey of Scott and Seymour [14].",
+    "attributed_to": "Chudnovsky, Penev, Scott, and Trotignon",
+    "attributed_year": 2013,
+    "paper_contribution": "Gives a strong negative answer by constructing twincut graphs — a hereditary triangle-free class with unbounded chromatic number that lies in the closure of $\\{K_1, K_2\\}$ under vertex replication and gluing on stable sets of size at most two, a very special case of the closure considered in the problem.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2304.04296",
+    "paper_title": "A tamed family of triangle-free graphs with unbounded chromatic number",
+    "paper_authors": [
+      "Édouard Bonnet",
+      "Romain Bourneuf",
+      "Julien Duron",
+      "Colin Geniet",
+      "Stéphan Thomassé",
+      "Nicolas Trotignon"
+    ],
+    "published": "2023-04-09",
+    "abs_url": "https://arxiv.org/abs/2304.04296",
+    "source": "pdf"
+  }
+]

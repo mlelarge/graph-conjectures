@@ -1,0 +1,23 @@
+{
+  "review_id": "2403.02298__01",
+  "safe_id": "2403.02298",
+  "arxiv_id": "2403.02298",
+  "conjecture_title": "Conjecture 4",
+  "paper_title": "Minimum acyclic number and maximum dichromatic number of oriented triangle-free graphs of a given order",
+  "published": "2024-03-04",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 4 from arXiv:2403.02298 asserts $\\vec{t}(n)=\\Theta\\sqrt{n/\\log n}$ for the maximum dichromatic number of oriented triangle-free graphs on $n$ vertices. The paper itself establishes an upper bound $\\vec{t}(n)\\leq(\\sqrt{2}+o(1))\\sqrt{n/\\log n}$ and a lower bound $\\vec{t}(n)\\geq\\frac{8}{107}\\frac{\\sqrt{n}}{\\log n}$, leaving a $\\sqrt{\\log n}$ gap on the lower side. No follow-up paper closing this gap or otherwise resolving the conjecture was found in the indexed literature.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Aboulker Havet Pirot Schabanel dichromatic number triangle-free oriented graphs 2403.02298",
+    "maximum dichromatic number oriented triangle-free graphs acyclic number sqrt n log n",
+    "dichromatic number oriented triangle-free graphs lower bound 2024 2025 improvement Pirot Schabanel",
+    "vec_t(n) oriented triangle-free dichromatic number Theta sqrt acyclic number 2025 arxiv"
+  ],
+  "notes": "No follow-up resolving Conjecture 4 was found. The conjecture follows from Conjecture 3 of the same paper (about $\\vec{a}(n)$). The source paper has been published as Electronic Journal of Combinatorics vol. 32, issue 4, P4.27 (2025-11-03), URL https://www.combinatorics.org/ojs/index.php/eljc/article/view/v32i4p27. The paper arXiv:2511.20246 ('Acyclic dichromatic number of oriented graphs', Nov 2025) introduces a related but distinct parameter and does not address Conjecture 4."
+}

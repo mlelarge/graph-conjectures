@@ -1,0 +1,54 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Jones' Conjecture",
+    "statement_text": "Every planar graph $G$ satisfies $\\mathrm{fvs}(G) \\leq 2 \\cdot \\mathrm{cp}(G)$.",
+    "context_text": "Jones' Conjecture was attributed to Kloks, Lee and Liu (2002) and asserts a tight bound relating the feedback vertex set number and the cycle packing number for planar graphs. It is known to be tight for wheels and the dodecahedron. The best prior bound was $\\mathrm{fvs}(G) \\leq 3 \\cdot \\mathrm{cp}(G)$.",
+    "attributed_to": "Kloks, Lee and Liu",
+    "attributed_year": 2002,
+    "paper_contribution": "Proves Jones' Conjecture for all subcubic planar multigraphs, i.e., establishes $\\mathrm{fvs}(G) \\leq 2 \\cdot \\mathrm{cp}(G)$ when the maximum degree is at most 3.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1912.01570",
+    "paper_title": "Jones' Conjecture in subcubic graphs",
+    "paper_authors": [
+      "Marthe Bonamy",
+      "François Dross",
+      "Tomáš Masařík",
+      "Wojciech Nadara",
+      "Marcin Pilipczuk",
+      "Michał Pilipczuk"
+    ],
+    "published": "2019-12-03",
+    "abs_url": "https://arxiv.org/abs/1912.01570",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 2",
+    "statement_text": "For every planar graph $G$, we have $\\mathrm{fvs}(G) \\leq 2 \\cdot \\mathrm{fp}(G)$, where $\\mathrm{fp}(G)$ is the maximum size of a face-packing of $G$, i.e., a cycle-packing where, for some embedding of $G$, every cycle bounds a face.",
+    "context_text": "The authors pose this stronger conjecture to highlight how little is understood around Jones' Conjecture. They note that the example of many nested disjoint cycles shows the embedding cannot be fixed, and that the simple discharging argument giving $\\mathrm{fvs}(G) \\leq 3\\,\\mathrm{cp}(G)$ does not imply this conjecture even with factor 3 instead of 2.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1912.01570",
+    "paper_title": "Jones' Conjecture in subcubic graphs",
+    "paper_authors": [
+      "Marthe Bonamy",
+      "François Dross",
+      "Tomáš Masařík",
+      "Wojciech Nadara",
+      "Marcin Pilipczuk",
+      "Michał Pilipczuk"
+    ],
+    "published": "2019-12-03",
+    "abs_url": "https://arxiv.org/abs/1912.01570",
+    "source": "pdf"
+  }
+]

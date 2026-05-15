@@ -1,0 +1,44 @@
+{
+  "review_id": "1708.02370__00",
+  "safe_id": "1708.02370",
+  "arxiv_id": "1708.02370",
+  "conjecture_title": "Conjecture 4",
+  "paper_title": "Clustered Colouring in Minor-Closed Classes",
+  "published": "2018-07-29",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Conjecture 4 from arXiv:1708.02370 — that $\\chi^*(\\mathcal{M}_H) \\leq 2\\,\\mathrm{td}(H) - 2$ for every graph $H$ — has been proved for the special cases of minor-closed classes with bounded treedepth and bounded pathwidth by Norin, Scott, and Wood (arXiv:2012.05554, 2022), with the pathwidth bound shown to be best possible. The general statement remains open. The internal reference arXiv:2508.14332 is a false match and concerns the unrelated weak coarse Menger conjecture.",
+  "since_posted": [
+    {
+      "title": "Clustered colouring of graph classes with bounded treedepth or pathwidth",
+      "authors": "Sergey Norin, Alex Scott, David R. Wood",
+      "year": 2022,
+      "venue": "Combinatorics, Probability and Computing",
+      "url": "https://arxiv.org/abs/2012.05554",
+      "arxiv_id": "2012.05554",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves Conjecture 4 for minor-closed classes with bounded treedepth (Theorem 1, exact value $\\chi^\\star(\\mathcal{G}) = \\mathrm{tcn}(\\mathcal{G}) - 1$) and bounded pathwidth (Theorem 2, best-possible bound), while the general conjecture remains open."
+    }
+  ],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2012.05554",
+      "verified": true,
+      "note": "Confirmed: paper proves Conjecture 4 for bounded-treedepth and bounded-pathwidth minor-closed classes; the two internal references with different attributions both point to this same paper and are accurate in substance."
+    },
+    {
+      "arxiv_id": "2508.14332",
+      "verified": true,
+      "note": "False match: this paper disproves the weak coarse Menger conjecture and has no bearing on Conjecture 4 from 1708.02370; the supplied contribution text is incorrect."
+    }
+  ],
+  "search_queries": [
+    "clustered colouring minor-closed treedepth \"chi*\" \"2td\" Norin Scott Wood conjecture",
+    "clustered chromatic number minor-closed treedepth conjecture 1708.02370 solved 2023 2024 2025"
+  ],
+  "notes": "Conjecture 4 is proved for bounded-treedepth and bounded-pathwidth minor-closed classes (arXiv:2012.05554, 2022); the general case chi*(M_H) <= 2*td(H) - 2 remains open. Third internal reference (arXiv:2508.14332) is a false match unrelated to this conjecture."
+}

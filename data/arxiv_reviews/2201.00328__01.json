@@ -1,0 +1,22 @@
+{
+  "review_id": "2201.00328__01",
+  "safe_id": "2201.00328",
+  "arxiv_id": "2201.00328",
+  "conjecture_title": "Question (Section 3, implicit representation for speed $2^{n^{1+\\varepsilon}}$)",
+  "paper_title": "Implicit representation of sparse hereditary families",
+  "published": "2022-01-02",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "No follow-up work resolving this question was found. The source paper (published in Discrete & Computational Geometry, 2024) establishes only the weaker bound O(n^{1-1/d} log n) under the hypothesis f(n) \\leq 2^{(1/4-\\varepsilon)n^2}; the specific question of whether the intermediate speed regime f(n) < 2^{n^{1+\\varepsilon}} forces a label size of O(n^{2/3} log n) appears unresolved in the indexed literature as of May 2026. A 2025 paper on implicit representations via the polynomial method (arXiv:2602.10922) addresses semialgebraic families but does not treat this speed regime or the n^{2/3} exponent.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "hereditary family implicit representation speed 2^n^{1+epsilon} n^{2/3} log n Alon 2022",
+    "implicit representation hereditary graph family speed subpolynomial arXiv 2201.00328",
+    "hereditary family implicit representation \"n^{2/3}\" OR \"n^(2/3)\" speed 2022 2023 2024 2025 graph"
+  ],
+  "notes": "No follow-up found that addresses this specific question. The paper arXiv:2602.10922 ('Implicit representations via the polynomial method', 2025) is thematically related but focuses on semialgebraic graphs and cites only Alon's main theorem (O(n^{1-1/d} log n)), not this open question. The source paper was published as Discrete Comput. Geom. (2024); the question about the n^{2/3} exponent for the intermediate speed range f(n) < 2^{n^{1+\\varepsilon}} remains open with high confidence."
+}

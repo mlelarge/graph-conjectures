@@ -1,0 +1,48 @@
+[
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Conjecture on r-free digraphs with r > 2n/3",
+    "statement_text": "All $r$-free digraphs on $n$ vertices with $r > 2n/3$ are at most one edge away from being acyclic.",
+    "context_text": "The authors first construct a family of $r$-free digraphs $G$ on $n$ vertices with $\\beta(G) \\geq n^2/(r+1)^2$, implying that if every $r$-free digraph satisfies $\\beta(G) = O(1)$ then $r = \\Omega(n)$. In the converse direction they pose this conjecture, noting tightness: for $n$ a multiple of $3$ there exists an $(r-1)$-free digraph $G$ on $n$ vertices with $r = 2n/3$ and $\\beta(G) = 2$.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated in running prose with explicit 'we conjecture' language; no labelled theorem environment.",
+    "arxiv_id": "2204.01938",
+    "paper_title": "Extremal results on feedback arc sets in digraphs",
+    "paper_authors": [
+      "Jacob Fox",
+      "Zoe Himwich",
+      "Nitya Mani"
+    ],
+    "published": "2022-04-19",
+    "abs_url": "https://arxiv.org/abs/2204.01938",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Suspected directed surplus of a random B-free orientation (Remark 1.6)",
+    "statement_text": "A random orientation of a $\\mathcal{B}$-free undirected graph on $n$ vertices with $m = \\mathrm{ex}(n, \\mathcal{B})$ edges likely satisfies $\\beta(G) = m/2 - \\Omega(\\sqrt{mn})$.",
+    "context_text": "In Remark 1.6 the authors note that the proof of Theorem 1.5 uses the auxiliary condition $\\mathrm{ex}(n,\\mathcal{B}) = \\Theta(n^{2-\\varepsilon(\\mathcal{B})})$ only for convenience, and that without it a random $\\mathcal{B}$-free orientation is suspected to already achieve the stated directed-surplus bound.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated with 'we suspect' in Remark 1.6; no labelled theorem environment. PDF math is readable.",
+    "arxiv_id": "2204.01938",
+    "paper_title": "Extremal results on feedback arc sets in digraphs",
+    "paper_authors": [
+      "Jacob Fox",
+      "Zoe Himwich",
+      "Nitya Mani"
+    ],
+    "published": "2022-04-19",
+    "abs_url": "https://arxiv.org/abs/2204.01938",
+    "source": "pdf"
+  }
+]

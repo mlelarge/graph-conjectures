@@ -1,0 +1,23 @@
+{
+  "review_id": "2208.06858__03",
+  "safe_id": "2208.06858",
+  "arxiv_id": "2208.06858",
+  "conjecture_title": "Conjecture 2.8",
+  "paper_title": "The success probability in Levine's hat problem, and independent sets in graphs",
+  "published": "2023-08-21",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 2.8 states that ε*(α) > 0 for all α ∈ (0, 1/2), where ε*(α) measures a positivity gap between the fractional independence ratio α*(G) and the independence ratio ᾱ(G) under a Bernoulli(1/2)-marginal random-subset distribution. No paper resolving this conjecture was found. A related but distinct conjecture of Friedgut–Kalai–Kindler (about hitting sets for maximum independent sets) was disproved by Alon in arXiv:2103.05998, but that paper predates arXiv:2208.06858 and addresses a different statement.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Alon Friedgut Kalai Kindler hat problem independent sets arXiv 2208.06858 conjecture",
+    "Levine hat problem independent sets success probability conjecture epsilon alpha graph",
+    "Friedgut Kalai Kindler conjecture disproved independent sets graphs 2024 2025",
+    "Alon hitting all maximum independent sets arXiv counterexample Friedgut Kalai Kindler conjecture"
+  ],
+  "notes": "Conjecture 2.8 (ε*(α) > 0 for all α ∈ (0,1/2)) is the strongest of the three conjectures in §2: it implies Conjecture 2.6 which implies Levine's conjecture. The related conjecture about small hitting sets for maximum independent sets (Conjecture 1.1 in arXiv:2103.01541, which overlaps with this paper) was disproved by Alon in arXiv:2103.05998, but Conjecture 2.8 about ε*(α) is a separate and harder positivity statement. The source paper was published as SIAM J. Discrete Math. (DOI: 10.1137/22M1515975). No resolution of Conjecture 2.8 was found in the literature up to May 2026."
+}

@@ -1,0 +1,24 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.3 (Gyárfás and Sárközy)",
+    "statement_text": "Fix $k \\geq 3$. Let $G$ be any graph with $n$ vertices and $\\delta(G) \\geq \\left(1 - \\frac{k-1}{k^2}\\right)n$. If the edges of $G$ are $k$-coloured, then there exists a monochromatic component of order at least $\\frac{n}{k-1}$.",
+    "context_text": "Gyárfás and Sárközy showed that, for $k \\geq 3$, the complete graph in Gyárfás's theorem can be replaced by any graph $G$ with $\\delta(G) \\geq (1-\\varepsilon_k)n$ for some constant $\\varepsilon_k > 0$. They conjectured that the optimal threshold is $\\varepsilon_k = \\frac{k-1}{k^2}$. The paper's main results determine the exact value $\\varepsilon_3 = \\frac{1}{6}$ and construct counterexamples for infinitely many $k \\geq 3$.",
+    "attributed_to": "Gyárfás and Sárközy",
+    "attributed_year": null,
+    "paper_contribution": "Disproves the conjecture: for $k=3$, Theorem 1.7 shows $\\varepsilon_3 = \\frac{1}{6}$ (matching the conjectured value but via a tight construction requiring $\\delta(G) \\geq \\frac{5}{6}n$, while the conjectured minimum degree threshold $\\left(1-\\frac{2}{9}\\right)n$ is strictly weaker); for infinitely many prime-power values $k \\geq 3$, Theorem 1.8 gives graphs showing $\\varepsilon_k \\leq \\frac{k-2}{k(k-1)}$, which is strictly less than the conjectured $\\frac{k-1}{k^2}$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1909.09178",
+    "paper_title": "Monochromatic Components in Edge-Coloured Graphs with Large Minimum Degree",
+    "paper_authors": [
+      "Hannah Guggiari",
+      "Alex Scott"
+    ],
+    "published": "2020-12-29",
+    "abs_url": "https://arxiv.org/abs/1909.09178",
+    "source": "pdf"
+  }
+]

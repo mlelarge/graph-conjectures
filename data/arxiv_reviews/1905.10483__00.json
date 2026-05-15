@@ -1,0 +1,22 @@
+{
+  "review_id": "1905.10483__00",
+  "safe_id": "1905.10483",
+  "arxiv_id": "1905.10483",
+  "conjecture_title": "Open Problem: asymptotic behavior of $Q(s,r)$ when $s$ and $r$ grow together",
+  "paper_title": "On the product dimension of clique factors",
+  "published": "2020-02-26",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Alon and Alweiss (2020) proved Q(s,r) = (1+o(1)) log_2 r for every fixed s as r tends to infinity, but the asymptotic behavior of Q(s,r) when both s and r grow simultaneously remains open. A wide search of arXiv and Semantic Scholar found no follow-up paper addressing this joint-growth regime. The problem appears to be genuinely open with no published progress as of May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "product dimension clique factors Q(s,r) asymptotic Alon Alweiss 1905.10483",
+    "product dimension graph clique factor arxiv 2020 2021 2022 follow-up",
+    "\"product dimension\" \"clique\" \"Q(s,r)\" OR \"product dimension\" \"clique factors\" site:arxiv.org 2021 2022 2023 2024 2025"
+  ],
+  "notes": "No follow-up work found in indexed literature. The open problem concerns the joint regime s,r -> infinity simultaneously; the fixed-s regime was fully resolved in the source paper. Five web calls used: arxiv abstract fetch, ar5iv HTML fetch, Semantic Scholar page fetch, and two broad web searches."
+}

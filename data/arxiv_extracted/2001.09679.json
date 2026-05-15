@@ -1,0 +1,65 @@
+[
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Question of Esperet and Raymond on improvability of expansion bounds",
+    "statement_text": "Can either of the bounds $\\max\\!\\left(\\tfrac{1}{2\\varepsilon}-1,\\,0\\right)\\leq b_\\varepsilon\\leq\\tfrac{1}{\\varepsilon}-1$ and $B_\\varepsilon\\leq\\tfrac{1}{\\varepsilon}-1$ be improved (in particular, in terms of the multiplicative constants in the exponents)?",
+    "context_text": "Corollary 2 (derived from Plotkin–Rao–Smith) and Theorem 5 (Esperet–Raymond) together yield the bounds on $b_\\varepsilon$ and $B_\\varepsilon$, the extreme exponents governing the expansion of hereditary graph classes whose balanced-separator function satisfies $s_\\mathcal{G}(n)=\\Theta(n^{1-\\varepsilon})$. Esperet and Raymond asked whether either bound could be substantially improved, suggesting that $d$-dimensional grids might provide insight.",
+    "attributed_to": "Esperet and Raymond",
+    "attributed_year": 2018,
+    "paper_contribution": "Shows that neither exponent can be substantially improved: $B_\\varepsilon=\\frac{1}{\\varepsilon}-1$ exactly (matching the upper bound), $b_\\varepsilon=0$ for $\\frac{1}{2}\\leq\\varepsilon\\leq 1$, and $b_\\varepsilon\\leq\\frac{1}{2\\varepsilon}-\\frac{1}{2}$ for $0<\\varepsilon<\\frac{1}{2}$, leaving a gap of at most $\\frac{1}{2}$ above the lower bound $\\frac{1}{2\\varepsilon}-1$.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "The original question is not stated in a formal labelled environment in this paper; reconstructed from prose. PDF source.",
+    "arxiv_id": "2001.09679",
+    "paper_title": "A note on sublinear separators and expansion",
+    "paper_authors": [
+      "Zdeněk Dvořák"
+    ],
+    "published": "2020-07-07",
+    "abs_url": "https://arxiv.org/abs/2001.09679",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Informal open question on the exact value of $b_\\varepsilon$",
+    "statement_text": "It is unclear whether the upper or the lower bound on $b_\\varepsilon$ can be improved for $0<\\varepsilon<\\frac{1}{2}$. While the fact that $b_{1/2}=0$ matches the lower bound suggests that a better construction improving the upper bound in general could exist, it is also plausible that this is just a \"dimension 2\" artifact and in fact the lower bound might be possible to improve for $\\varepsilon<1/2$ (possibly leading to discontinuity of $b_\\varepsilon$ at $\\varepsilon=1/2$).",
+    "context_text": "After establishing $\\frac{1}{2\\varepsilon}-1\\leq b_\\varepsilon\\leq\\frac{1}{2\\varepsilon}-\\frac{1}{2}$ for $0<\\varepsilon<\\frac{1}{2}$ and $b_\\varepsilon=0$ for $\\frac{1}{2}\\leq\\varepsilon\\leq 1$, the paper notes that the remaining gap of $\\frac{1}{2}$ in the bounds on $b_\\varepsilon$ is unresolved, and that the behaviour at $\\varepsilon=1/2$ makes the problem structurally interesting.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated as an open remark in the concluding summary. PDF source.",
+    "arxiv_id": "2001.09679",
+    "paper_title": "A note on sublinear separators and expansion",
+    "paper_authors": [
+      "Zdeněk Dvořák"
+    ],
+    "published": "2020-07-07",
+    "abs_url": "https://arxiv.org/abs/2001.09679",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Informal conjecture $b'_\\varepsilon = b_\\varepsilon$ for $0<\\varepsilon<\\tfrac{1}{2}$",
+    "statement_text": "It seems likely that $b'_\\varepsilon = b_\\varepsilon$ when $0 < \\varepsilon < \\frac{1}{2}$ as well.",
+    "context_text": "The parameter $b'_\\varepsilon$ is defined analogously to $b_\\varepsilon$ but with the one-sided condition $s_\\mathcal{G}(n)=\\Omega(n^{1-\\varepsilon})$ rather than $\\Theta(n^{1-\\varepsilon})$; equality $b'_\\varepsilon=b_\\varepsilon=0$ already holds for $\\frac{1}{2}\\leq\\varepsilon\\leq 1$, but extending this to $0<\\varepsilon<\\frac{1}{2}$ requires showing that a one-sided lower bound on separators alone forces the same expansion lower bound, which is not obvious.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Conjectural language 'It seems likely' appears in the final section. PDF source.",
+    "arxiv_id": "2001.09679",
+    "paper_title": "A note on sublinear separators and expansion",
+    "paper_authors": [
+      "Zdeněk Dvořák"
+    ],
+    "published": "2020-07-07",
+    "abs_url": "https://arxiv.org/abs/2001.09679",
+    "source": "pdf"
+  }
+]

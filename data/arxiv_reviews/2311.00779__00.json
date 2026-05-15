@@ -1,0 +1,33 @@
+{
+  "review_id": "2311.00779__00",
+  "safe_id": "2311.00779",
+  "arxiv_id": "2311.00779",
+  "conjecture_title": "Complexity of Rotation Distance Between Binary Search Trees",
+  "paper_title": "Shortest paths on polymatroids and hypergraphic polytopes",
+  "published": "2023-11-06",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "solved",
+  "confidence": "high",
+  "summary": "The question of the computational complexity of rotation distance between binary search trees (equivalently, flip distance between triangulations of a convex polygon) has been resolved. Joseph Dorfer (arXiv:2602.22874, February 2026) proves that both problems are NP-complete, settling a question open since at least the 1980s. This rules out the possibility of a polynomial-time exact algorithm (unless P=NP), despite the known polynomial-time 2-approximation and several FPT algorithms.",
+  "since_posted": [
+    {
+      "title": "Flip Distance of Triangulations of Convex Polygons / Rotation Distance of Binary Trees is NP-complete",
+      "authors": "Joseph Dorfer",
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2602.22874",
+      "arxiv_id": "2602.22874",
+      "doi": null,
+      "kind": "proof",
+      "claim": "Proves that computing the flip distance between triangulations of a convex polygon—equivalently, the rotation distance between binary search trees—is NP-complete, resolving a decades-long open problem."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "rotation distance binary search trees computational complexity polynomial algorithm NP-hard 2024 2025",
+    "flip distance triangulations convex polygon complexity exact algorithm arxiv 2024 2025"
+  ],
+  "notes": "The NP-completeness result (arXiv:2602.22874) was submitted February 26, 2026, about 27 months after the source paper. The proof extends techniques for flip sequences in non-crossing spanning trees. The problem is in NP since a flip sequence of length k can be verified in polynomial time, so NP-hardness implies NP-completeness."
+}

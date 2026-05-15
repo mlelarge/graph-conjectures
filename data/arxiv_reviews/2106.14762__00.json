@@ -1,0 +1,24 @@
+{
+  "review_id": "2106.14762__00",
+  "safe_id": "2106.14762",
+  "arxiv_id": "2106.14762",
+  "conjecture_title": "Direct Proof of Horizontal Uniformity",
+  "paper_title": "The runsort permuton",
+  "published": "2021-06-28",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The horizontal uniformity of the runsort permuton density in $C^+$ (i.e., that the density depends only on $y$) is established in the original 2021 paper indirectly via the explicit characterization of $R$, but the authors note that no direct combinatorial proof is known. A search of 15 papers citing arXiv:2106.14762 (via Semantic Scholar) and targeted arXiv and web searches found no subsequent work addressing this specific open question. The problem remains open as of May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "runsort permuton horizontal uniformity density Alon Defant Kravitz 2106.14762",
+    "runsort permuton Defant Kravitz follow-up 2022 2023 2024",
+    "runsort permuton horizontal uniformity (arXiv search)",
+    "citations of arXiv:2106.14762 via Semantic Scholar API",
+    "Colin Defant runsort permuton density direct proof combinatorial 2022 2023 2024 2025"
+  ],
+  "notes": "The statement whose direct proof is sought is not a conjecture about an unknown truth — horizontal uniformity is already proven (indirectly). The open question is purely about proof technique: a direct combinatorial argument that avoids the explicit characterization of $R$. No such argument has appeared in the literature found. The 15 citing papers retrieved from Semantic Scholar cover unrelated permuton topics (Baxter permuton, large deviation principles, Latin square limits, etc.) and none address horizontal uniformity of the runsort permuton."
+}

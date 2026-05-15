@@ -1,0 +1,23 @@
+{
+  "review_id": "2308.10833__00",
+  "safe_id": "2308.10833",
+  "arxiv_id": "2308.10833",
+  "conjecture_title": "Informal Problem: extending the $\\sqrt{m}$ Ramsey bound to more than two colors for graphs",
+  "paper_title": "Ramsey numbers of hypergraphs of a given size",
+  "published": "2023-08-21",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The conjecture asks whether the two-color bound $r_2(G; 2) \\leq 2^{c\\sqrt{m}}$ for graphs $G$ with $m$ edges and no isolated vertices extends to $q \\geq 3$ colors. The source paper itself resolves the analogous problem for $k$-uniform hypergraphs with $k \\geq 3$, proving an upper bound of $\\mathrm{tw}_k(O(\\sqrt{m}))$ for all $q \\geq 2$, but the argument is specific to $k \\geq 3$ and does not apply to graphs ($k=2$). No follow-up paper resolving or substantially advancing this specific $k=2$, $q \\geq 3$ problem was found in the literature.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Ramsey number graph multicolor \"sqrt(m)\" OR \"square root m\" edges bound arXiv 2024 2025",
+    "Bradač Fox Sudakov Ramsey hypergraphs 2308.10833 multicolor extension follow-up",
+    "Upper bounds multicolour Ramsey numbers arXiv:2410.17197",
+    "multicolor size-Ramsey connected graphs arXiv:2404.05856"
+  ],
+  "notes": "No follow-up resolving the k=2 multicolor case was found. The paper arXiv:2312.13965 (Bradač, Fox, Sudakov, 2024, Research in the Mathematical Sciences) addresses the growth rate of multicolor Ramsey numbers of 3-uniform hypergraphs but is a different question. The arXiv:2410.17197 improvement on multicolor Ramsey numbers concerns diagonal Ramsey numbers R_r(k) for complete graphs, not the general-graph sqrt(m) bound. The open problem remains: prove or disprove r_2(G; q) \\leq 2^{c_q \\sqrt{m}} for q \\geq 3."
+}

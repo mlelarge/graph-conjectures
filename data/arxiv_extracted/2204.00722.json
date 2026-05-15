@@ -1,0 +1,54 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 2",
+    "statement_text": "For every hereditary class $C$ of structures, FO model checking is FPT on $C$ if and only if $C$ is monadically dependent.",
+    "context_text": "This conjecture (cited as [28, Conjecture 8.2]) underpins the paper's notion of delineation: a class $C$ is delineated by twin-width if, for every hereditary closure $D$ of a subclass of $C$, $D$ has bounded twin-width if and only if $D$ is monadically dependent, which would confirm Conjecture 2 within $C$. The paper proves effective delineation for interval graphs and rooted directed path graphs, thereby settling Conjecture 2 for all hereditary subclasses of those classes.",
+    "attributed_to": "[28] (unresolved from provided text)",
+    "attributed_year": null,
+    "paper_contribution": "Proves Conjecture 2 for all hereditary subclasses of interval graphs and rooted directed path graphs by establishing that these classes are effectively delineated by twin-width; also shows Conjecture 2 cannot be settled this way for directed path graphs (multiple roots), axis-parallel two-lengthed segment graphs, and visibility graphs of simple polygons.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Attributed to [28, Conjecture 8.2] in the paper; the exact authors of reference [28] cannot be determined from the provided text extract. The paper says 'see for instance', suggesting this is a known community conjecture with multiple attributions.",
+    "arxiv_id": "2204.00722",
+    "paper_title": "Twin-width VIII: delineation and win-wins",
+    "paper_authors": [
+      "Édouard Bonnet",
+      "Dibyayan Chakraborty",
+      "Eun Jung Kim",
+      "Noleen Köhler",
+      "Raul Lopes",
+      "Stéphan Thomassé"
+    ],
+    "published": "2022-04-01",
+    "abs_url": "https://arxiv.org/abs/2204.00722",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Open Question (unit segment graphs delineation)",
+    "statement_text": "Are unit segment graphs delineated (by twin-width)?",
+    "context_text": "The paper establishes that axis-parallel $H_t$-free unit segment graphs have bounded twin-width, while axis-parallel $H_4$-free two-lengthed segment graphs have unbounded twin-width, and that (triangle-free) pure axis-parallel unit segment graphs have unbounded twin-width. This places unit segment graphs at the frontier between delineated and non-delineated intersection graph classes, and the authors explicitly leave their delineation status as an open question.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "Stated verbatim in the abstract: 'We leave as an open question whether unit segment graphs are delineated.'",
+    "arxiv_id": "2204.00722",
+    "paper_title": "Twin-width VIII: delineation and win-wins",
+    "paper_authors": [
+      "Édouard Bonnet",
+      "Dibyayan Chakraborty",
+      "Eun Jung Kim",
+      "Noleen Köhler",
+      "Raul Lopes",
+      "Stéphan Thomassé"
+    ],
+    "published": "2022-04-01",
+    "abs_url": "https://arxiv.org/abs/2204.00722",
+    "source": "pdf"
+  }
+]

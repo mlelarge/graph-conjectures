@@ -1,0 +1,22 @@
+{
+  "review_id": "1709.09050__03",
+  "safe_id": "1709.09050",
+  "arxiv_id": "1709.09050",
+  "conjecture_title": "Capture time bounds for higher genus graphs",
+  "paper_title": "Topological directions in Cops and Robbers",
+  "published": "2018-04-22",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The question asks whether capt_k(G) = O(n^{g+4}) holds for genus-g graphs whenever k >= g+3, conditional on Schroeder's conjecture (c(G) <= g+3 for genus g). Schroeder's conjecture itself remains open beyond the planar and toroidal cases, making the capture-time question doubly open. Kinnersley (2019) established that the general bound O(n^{k+1}) is tight for arbitrary graphs, but no work specifically addresses the genus-restricted capture-time question. No resolution has been found in the literature.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "capture time cops robbers higher genus graphs Schroeder conjecture capt_k",
+    "cops robbers capture time genus surface Bonato Mohar 1709.09050",
+    "capture time cops robbers surface genus polynomial bound 2019 2020 2021 2022 2023 2024"
+  ],
+  "notes": "Schroeder's conjecture (c(G) <= g+3 for genus-g graphs) remains open for g >= 2, so the conditional question about capt_k(G) = O(n^{g+4}) has not been addressed. The general tight bound O(n^{k+1}) for capture time (Kinnersley) does not specialise to a genus-dependent improvement. The 2025 paper arXiv:2504.13813 on cops and robbers for graphs on surfaces with crossings uses a different distance-d variant and does not address this question. No follow-up found in indexed literature."
+}

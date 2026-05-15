@@ -1,0 +1,34 @@
+{
+  "review_id": "1806.09726__01",
+  "safe_id": "1806.09726",
+  "arxiv_id": "1806.09726",
+  "conjecture_title": "Conjecture 9",
+  "paper_title": "Online Ramsey Numbers and the Subgraph Query Problem",
+  "published": "2018-11-04",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "medium",
+  "summary": "Conjecture 9 asserts $f(K_m, p) = 2^{o(m)} p^{-\\frac{2}{3}m + c_m}$ for all $m \\geq 4$; the source paper itself proves the upper bound (Section 5.2) and verifies the full conjecture (upper and matching lower bounds) for $m = 4$ and $m = 5$. A direct follow-up, arXiv:1911.04413 by Alweiss, Ben Hamida, He, and Moreira (2019, published in Combinatorics, Probability and Computing 2021), further studies $f(H, p)$ and improves upper bounds for all graphs $H$, but resolution of Conjecture 9 for all $m \\geq 6$ could not be confirmed from the publicly accessible abstract. No paper fully resolving the conjecture for general $m$ was found.",
+  "since_posted": [
+    {
+      "title": "On the subgraph query problem",
+      "authors": "Ryan Alweiss, Chady Ben Hamida, Xiaoyu He, Alexander Moreira",
+      "year": 2019,
+      "venue": "Combinatorics, Probability and Computing",
+      "url": "https://arxiv.org/abs/1911.04413",
+      "arxiv_id": "1911.04413",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Improves upper bounds on f(H, p) for every fixed graph H beyond the trivial O(p^{-d}) (where d is the degeneracy of H) and establishes superpolynomial lower bounds for certain 2-degenerate graphs, directly extending the subgraph query research program of arXiv:1806.09726; whether it resolves Conjecture 9 for all K_m (m >= 6) could not be confirmed from the abstract alone."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "subgraph query game f(K_m, p) Conlon Fox Grinshpun He 1806.09726",
+    "\"subgraph query\" \"online Ramsey\" clique random graph query complexity 2019 2020 2021 2022 2023 2024",
+    "Alweiss \"Ben Hamida\" He Moreira \"subgraph query problem\" arXiv 2019 2020"
+  ],
+  "notes": "The source paper itself already proves the upper bound in Conjecture 9 for all m >= 4 (Section 5.2) and verifies the complete conjecture (matching upper and lower bounds) for m=4 and m=5 via Theorem 12. The follow-up arXiv:1911.04413 is a direct continuation of this research line (shared author Xiaoyu He) but its abstract does not explicitly mention Conjecture 9 or give bounds for K_m with m >= 6. No paper fully resolving Conjecture 9 for general m was found within the cap of 5 web calls."
+}

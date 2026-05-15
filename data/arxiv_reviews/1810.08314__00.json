@@ -1,0 +1,34 @@
+{
+  "review_id": "1810.08314__00",
+  "safe_id": "1810.08314",
+  "arxiv_id": "1810.08314",
+  "conjecture_title": "Open problem on queue-number of bounded layered treewidth graphs",
+  "paper_title": "Minor-closed graph classes with bounded layered pathwidth",
+  "published": "2020-06-04",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "No resolution of the conjecture has been found in the published literature. Dujmović et al. (arXiv:1810.08314) proved an O(k log n) upper bound on queue-number for n-vertex graphs of layered treewidth k, and the question of a constant bound remains open. A subsequent paper (arXiv:2105.01230) establishes a structural reduction showing that bounded layered treewidth implies bounded queue-number if and only if layered treewidth 1 graphs have bounded queue-number, but does not resolve the conjecture. No proof or disproof was found across targeted searches covering literature through 2025.",
+  "since_posted": [
+    {
+      "title": "Separating Layered Treewidth and Row Treewidth",
+      "authors": "Bose, Dujmović, Morin, Wood",
+      "year": 2021,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2105.01230",
+      "arxiv_id": "2105.01230",
+      "doi": null,
+      "kind": "reduction",
+      "claim": "Proves an equivalence: graphs of bounded layered treewidth have bounded queue-number if and only if graphs of layered treewidth 1 have bounded queue-number, reducing the open problem to its simplest special case without resolving it."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "queue-number bounded layered treewidth graph theory 2021 2022 2023 2024",
+    "Dujmovic Joret Morin Wood layered treewidth queue-number arXiv 1810.08314",
+    "\"layered treewidth\" \"queue-number\" bounded solved proved 2022 2023 2024 2025"
+  ],
+  "notes": "No proof or disproof of the conjecture was found across multiple targeted searches. The paper arXiv:2105.01230 reduces the problem to the special case of layered treewidth 1 but leaves the main question open. The O(k log n) upper bound by Dujmović et al. remains the best known result."
+}

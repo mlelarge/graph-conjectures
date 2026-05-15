@@ -1,0 +1,26 @@
+[
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Open question on twin-width over infinite fields",
+    "statement_text": "An intriguing question concerns the existence of such results over infinite fields (starting with $\\mathbb{Q}$). We do not have a direct definition of twin-width of matrices over $\\mathbb{Q}$ based on contraction sequences. However linear-minor freeness naturally carries to infinite fields, and thus, it is natural to consider that a class of matrices over $\\mathbb{Q}$ has bounded twin-width if its closure under linear minors is not the set of all matrices.",
+    "context_text": "After establishing FPT matrix multiplication algorithms for matrices over finite fields $\\mathbb{F}_q$ with bounded twin-width (Theorems 5–7), the authors raise the question of whether analogous results hold for matrices over infinite fields such as $\\mathbb{Q}$. The text is truncated at this point, so the precise formulation of the question (likely involving the grid rank of a matrix) is not fully visible.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "low",
+    "notes": "PDF source — the statement is cut off mid-sentence after the introduction of grid rank; full question not visible in the extracted text.",
+    "arxiv_id": "2209.12023",
+    "paper_title": "Twin-width V: linear minors, modular counting, and matrix multiplication",
+    "paper_authors": [
+      "Édouard Bonnet",
+      "Ugo Giocanti",
+      "Patrice Ossona de Mendez",
+      "Stéphan Thomassé"
+    ],
+    "published": "2022-09-24",
+    "abs_url": "https://arxiv.org/abs/2209.12023",
+    "source": "pdf"
+  }
+]

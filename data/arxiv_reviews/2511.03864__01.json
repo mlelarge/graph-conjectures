@@ -1,0 +1,22 @@
+{
+  "review_id": "2511.03864__01",
+  "safe_id": "2511.03864",
+  "arxiv_id": "2511.03864",
+  "conjecture_title": "Question 5.3",
+  "paper_title": "Induced matching treewidth and tree-independence number, revisited",
+  "published": "2025-11-05",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The source paper (arXiv:2511.03864) itself establishes the main partial result: for any K_{t,t}-free graph class, tree-independence number and induced matching treewidth are polynomially related via the Kövári–Sós–Turán theorem, improving the exponential bound of Abrishami et al. (arXiv:2405.04617). Question 5.3 asks whether this polynomial relationship holds in full generality—bounding tree-independence number by a polynomial in both induced matching treewidth and the induced biclique number—without assuming K_{t,t}-freeness a priori. No follow-up paper resolving this question was found in the literature as of May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "induced matching treewidth tree-independence number induced biclique number polynomial bound",
+    "arXiv 2511.03864 Alon Milanič Rzążewski induced matching treewidth tree-independence",
+    "tree-independence number induced biclique number polynomial 2025 2026 graph theory"
+  ],
+  "notes": "No follow-up resolving Question 5.3 was found. The conjecture is equivalent to Question 5.2 (as stated in the paper) and was posted in November 2025; absence of resolution after a wide search gives high confidence it remains open. A related 2026 paper (arXiv:2604.01999) studies tree-independence number for graphs excluding a 6-vertex path and a (2,t)-biclique, but addresses a different conjecture. The paper arXiv:2405.04617 (Abrishami et al., SIAM JDM 2025) proved the qualitative boundedness result with an exponential bound, predating the source paper."
+}

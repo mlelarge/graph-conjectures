@@ -1,0 +1,65 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Log-Concavity Genus Distribution Conjecture (LCGD Conjecture)",
+    "statement_text": "The genus distribution of every graph is log-concave.",
+    "context_text": "While computing embedding distributions of various infinite families of graphs, Gross, Robbins, and Tucker proposed this conjecture in 1989. It had been confirmed for many families including bouquets of loops, dipoles, graphs constructed by vertex and edge-amalgamations, linear sequences of graphs, ring-like families, and Halin graphs. The conjecture is reminiscent of the Heron–Rota–Welsh log-concavity conjecture and is related to $\\Delta$-matroids and the Bollobás–Riordan polynomial.",
+    "attributed_to": "Gross, Robbins, and Tucker",
+    "attributed_year": 1989,
+    "paper_contribution": "Disproves the LCGD Conjecture by providing explicit examples exhibiting strong deviation from log-concavity at multiple terms of their genus sequences (Theorems 3 and 9).",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2405.10854",
+    "paper_title": "Strong log-convexity of genus sequences",
+    "paper_authors": [
+      "Bojan Mohar"
+    ],
+    "published": "2025-12-27",
+    "abs_url": "https://arxiv.org/abs/2405.10854",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 10",
+    "statement_text": "The genus distribution of every graph $G$ is unimodal.",
+    "context_text": "After disproving the LCGD Conjecture, the author notes that the counterexamples constructed are still unimodal. The author suggests that the unimodal weakening of the LCGD Conjecture could, and actually should, still be true.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2405.10854",
+    "paper_title": "Strong log-convexity of genus sequences",
+    "paper_authors": [
+      "Bojan Mohar"
+    ],
+    "published": "2025-12-27",
+    "abs_url": "https://arxiv.org/abs/2405.10854",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 11",
+    "statement_text": "Every graph that triangulates some surface has log-concave genus distribution.",
+    "context_text": "After proposing unimodality as a positive replacement for the disproved LCGD Conjecture, the author notes this stronger statement as also looking plausible, restricting log-concavity to graphs that triangulate some surface.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2405.10854",
+    "paper_title": "Strong log-convexity of genus sequences",
+    "paper_authors": [
+      "Bojan Mohar"
+    ],
+    "published": "2025-12-27",
+    "abs_url": "https://arxiv.org/abs/2405.10854",
+    "source": "html"
+  }
+]

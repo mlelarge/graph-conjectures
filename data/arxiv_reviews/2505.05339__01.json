@@ -1,0 +1,36 @@
+{
+  "review_id": "2505.05339__01",
+  "safe_id": "2505.05339",
+  "arxiv_id": "2505.05339",
+  "conjecture_title": "Question 4.2",
+  "paper_title": "A Counterexample to a Conjecture of Lovász",
+  "published": "2025-06-10",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "solved",
+  "confidence": "high",
+  "summary": "Question 4.2 from arXiv:2505.05339 asks whether a d-regular d-edge colourable graph witnessing a counterexample to Lovász's conjecture exists for d≥4. Abiad, Garbe, Povill, and Spiegel (arXiv:2506.21286) answer this affirmatively: they prove that there exist quartic (4-regular, 4-edge-colourable) graphs whose line hypergraphs are counterexamples to Lovász's conjecture for r=4, and they explicitly cite Question 4.2 from [CHM2025] as the question being resolved.",
+  "since_posted": [
+    {
+      "title": "Infinitely many counterexamples to a conjecture of Lovász",
+      "authors": "Aida Abiad, Frederik Garbe, Xavier Povill, Christoph Spiegel",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2506.21286",
+      "arxiv_id": "2506.21286",
+      "doi": null,
+      "kind": "proof",
+      "claim": "Proves Theorem 3: there exist quartic graphs whose line hypergraphs are counterexamples to Lovász's conjecture for r=4, directly answering Question 4.2 from arXiv:2505.05339 affirmatively; also constructs an infinite family of cubic counterexamples (generalized Petersen graphs GP(5k+11,2)) for r=3."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Clow Haxell Mohar counterexample Lovász conjecture d-regular edge colourable 2505.05339",
+    "WebFetch https://arxiv.org/abs/2505.05339",
+    "WebFetch https://arxiv.org/html/2505.05339",
+    "WebFetch https://arxiv.org/abs/2506.21286",
+    "WebFetch https://arxiv.org/html/2506.21286"
+  ],
+  "notes": "Question 4.2 is answered for d=4 by arXiv:2506.21286, which explicitly cites it. The follow-up paper was submitted June 26, 2025, less than three weeks after the source paper's publication date."
+}

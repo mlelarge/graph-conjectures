@@ -1,0 +1,30 @@
+[
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Open Question: Recognition of Switchable Graphs",
+    "statement_text": "It is not clear whether graphs in the Switchable class (the hereditary class of graphs for which the reconfiguration graph of perfect matchings under flips is connected) can be recognized in polynomial time.",
+    "context_text": "The authors of [14] characterize the hereditary class of general (non-bipartite) graphs for which the reconfiguration graph of perfect matchings under flips is connected, calling it Switchable. The paper notes that the recognition complexity of this class remains open.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated as a passing remark rather than a labelled problem; paper text is truncated before any concluding open-problems section, so additional conjectures may be present in the full paper.",
+    "arxiv_id": "1904.06184",
+    "paper_title": "The Perfect Matching Reconfiguration Problem",
+    "paper_authors": [
+      "Marthe Bonamy",
+      "Nicolas Bousquet",
+      "Marc Heinrich",
+      "Takehiro Ito",
+      "Yusuke Kobayashi",
+      "Arnaud Mary",
+      "Moritz Mühlenthaler",
+      "Kunihiro Wasa"
+    ],
+    "published": "2019-04-12",
+    "abs_url": "https://arxiv.org/abs/1904.06184",
+    "source": "pdf"
+  }
+]

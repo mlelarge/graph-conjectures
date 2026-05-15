@@ -1,0 +1,23 @@
+{
+  "review_id": "1812.09215__00",
+  "safe_id": "1812.09215",
+  "arxiv_id": "1812.09215",
+  "conjecture_title": "Informal Question (Section 2)",
+  "paper_title": "Lipschitz bijections between boolean functions",
+  "published": "2021-12-10",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The informal question asks whether the gap between the general-map lower bound Ω(1/k)·log n and the linear-map upper bound O(1/log k)·log n (achieved by Rao–Shinkar) for the Lipschitz constant of φ⁻¹ can be closed for general maps. No follow-up paper resolving this gap was found in an extensive web search; the problem appears in an Oxford thesis/problems collection (Johnston) as still open. The conjecture is recent and narrowly specialised, so absence of a follow-up is credible.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Johnston Scott \"Lipschitz bijections\" boolean functions Dictator XOR arxiv 1812.09215",
+    "Lipschitz bijection Dictator XOR boolean hypercube \"log n\" \"log k\" Lipschitz inverse",
+    "cite arxiv 1812.09215 Lipschitz bijections boolean functions follow-up 2022 2023 2024 2025",
+    "Johnston Scott \"boolean functions\" Lipschitz \"Rao Shinkar\" XOR Dictator gap 2023 2024 2025"
+  ],
+  "notes": "The paper was published in Combinatorics, Probability and Computing 30 (2021) 513–525 (DOI 10.1017/S0963548320000541). The earlier related paper arXiv:1501.03016 (Rao–Shinkar) gives the O(1/log k) linear-map construction that achieves the upper bound. An Oxford DPhil thesis/problems document (ORA uuid:970b5eb2) explicitly lists the Ω(1/k) vs O(1/log k) gap as an open problem. No follow-up resolving the informal question was found after five web calls."
+}

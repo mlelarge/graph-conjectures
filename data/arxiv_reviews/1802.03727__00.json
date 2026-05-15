@@ -1,0 +1,24 @@
+{
+  "review_id": "1802.03727__00",
+  "safe_id": "1802.03727",
+  "arxiv_id": "1802.03727",
+  "conjecture_title": "Conjecture 1.3",
+  "paper_title": "Separation choosability and dense bipartite induced subgraphs",
+  "published": "2018-12-04",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "Conjecture 1.3 from arXiv:1802.03727 asks whether separation choosability ch_sep(G) tends to infinity with the minimum degree d for general graphs, dropping the bipartite assumption of Theorem 1.2. No follow-up paper proving or disproving this conjecture for general graphs was found in the indexed literature through 2026. The related 2025 preprint arXiv:2509.13913 on separation choosability does not address this conjecture, focusing instead on comparisons among coloring parameters for sparse graph families. The conjecture has been open since 2018 and remains unresolved.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "separation choosability minimum degree Esperet Kang Thomassé 1802.03727",
+    "separation choosability ch_sep minimum degree graph conjecture",
+    "\"separation choosability\" \"minimum degree\" general graphs 2019 2020 2021 2022 2023 2024",
+    "WebFetch: https://arxiv.org/abs/1802.03727",
+    "WebFetch: https://arxiv.org/html/2509.13913"
+  ],
+  "notes": "Theorem 1.2 of the source paper proves ch_sep(G) = Ω(log d / log log d) for bipartite G with minimum degree d; Conjecture 1.3 asks for the same unbounded growth for all graphs. The difficulty noted by the authors is that a bad list assignment with maximum separation does not retain maximum separation when edges are added, so the standard bipartite-reduction argument for ordinary choosability fails. A related Ramsey-type question (does every triangle-free graph of min-degree d contain a bipartite induced subgraph of min-degree Ω(log d)?) was studied by Kwan et al. (arXiv:1810.12144, Combinatorica 2020) but this does not directly resolve Conjecture 1.3. No post-2018 paper resolving the conjecture for general graphs was found."
+}

@@ -1,0 +1,22 @@
+{
+  "review_id": "2504.00153__00",
+  "safe_id": "2504.00153",
+  "arxiv_id": "2504.00153",
+  "conjecture_title": "Question 1 (Intersectionwise χ-guarding)",
+  "paper_title": "Intersections of graphs and $χ$-boundedness",
+  "published": "2025-03-31",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Question 1 of arXiv:2504.00153 asks which graph classes are intersectionwise χ-guarding, i.e., whose graph-intersection with every χ-bounded class is again χ-bounded. The source paper makes substantial partial progress: it characterizes the intersectionwise χ-guarding classes defined by a single forbidden induced subgraph and provides necessary conditions for finite sets H, but the general characterization remains open. The paper has been published in SIAM Journal on Discrete Mathematics (Vol. 40, Issue 1, 2026, pp. 420–448, DOI 10.1137/25M1751967); no follow-up paper addressing the full question was found in the indexed literature as of the review date.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "intersectionwise chi-guarding graph classes chi-bounded Chaniotis Koerts Spirkl 2025",
+    "arxiv 2504.00153 intersections graphs chi-boundedness citing papers",
+    "graph intersection chi-bounded class chi-guarding 2025 2026 forbidden induced subgraph"
+  ],
+  "notes": "The question was introduced in the paper itself (March 31, 2025) and is explicitly open therein. The paper was published in SIAM JDM in March 2026, which is the only post-preprint development found. No follow-up resolving the full general characterization was found after 4 web calls (3 searches + 2 fetches)."
+}

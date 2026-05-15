@@ -1,0 +1,24 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 4 (Dvořák and Mnich)",
+    "statement_text": "There exists a constant $c < 3$ such that every planar graph of girth at least five has fractional chromatic number at most $c$.",
+    "context_text": "Jones found for each $n \\equiv 2 \\pmod{3}$ an $n$-vertex triangle-free planar graph with fractional chromatic number exactly $3 - \\frac{3}{n+1}$; these extremal examples all have many 4-cycles, motivating Dvořák and Mnich to conjecture that forbidding 4-cycles (i.e., requiring girth at least five) suffices to bring the fractional chromatic number strictly below 3. The conjecture remains open in general.",
+    "attributed_to": "Dvořák and Mnich",
+    "attributed_year": null,
+    "paper_contribution": "Proves that the class of minimal obstructions of girth at least five to list $(3a:a)$-colorability is strongly hyperbolic (Theorem 5), which is stated as a key step in a forthcoming proof that the conjecture holds for planar graphs of girth at least five with bounded maximum degree.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1805.11507",
+    "paper_title": "(3a:a)-list-colorability of embedded graphs of girth at least five",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Xiaolan Hu"
+    ],
+    "published": "2019-10-11",
+    "abs_url": "https://arxiv.org/abs/1805.11507",
+    "source": "pdf"
+  }
+]

@@ -1,0 +1,33 @@
+{
+  "review_id": "2301.08707__00",
+  "safe_id": "2301.08707",
+  "arxiv_id": "2301.08707",
+  "conjecture_title": "Problem 3",
+  "paper_title": "Separating the edges of a graph by a linear number of paths",
+  "published": "2023-10-10",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Problem 3 of Bonamy et al.—whether every $n$-vertex graph admits a strongly-separating path system of size $2n$—remains open. The source paper establishes a $19n$ upper bound for all graphs. A subsequent paper (arXiv:2312.14879, Fernandes et al.) shows that for complete graphs and certain regular graphs $(1+o(1))n$ paths suffice, a notable partial result that does not settle the general conjecture. The lower bound of $2(1-2\\varepsilon)n$ from $K_{\\varepsilon n,(1-\\varepsilon)n}$ keeps $2$ as the best-known candidate for the optimal constant over all graphs.",
+  "since_posted": [
+    {
+      "title": "Separating Path Systems in Complete Graphs",
+      "authors": "Fernandes et al.",
+      "year": 2023,
+      "venue": "Random Structures & Algorithms",
+      "url": "https://arxiv.org/abs/2312.14879",
+      "arxiv_id": "2312.14879",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves that the complete graph $K_n$ admits a strongly-separating path system of size $(1+o(1))n$ (best possible up to the $o(1)$ term), and extends the result to certain regular graphs; this improves the $19n$ bound for these classes but leaves the general $2n$ conjecture open."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "strongly-separating path system 2n graph edges Bonamy Botler Dross Skokan",
+    "arxiv 2301.08707 separating edges graph linear number paths citing"
+  ],
+  "notes": "The $(1+o(1))n$ result for complete graphs and certain regular graphs (arXiv:2312.14879, also published in Random Structures & Algorithms 2025 and presented at LATIN 2024) is the most significant post-conjecture progress found. The paper 'Rainbow Separating Path Systems' (arXiv:2604.16046) treats a colored variant and is not directly relevant. The paper arXiv:2506.14011 addresses separation by subdivisions, a related but distinct problem. The tight constant for general graphs is conjectured to be $2$, driven by the near-complete-bipartite lower bound; no paper resolving this was found."
+}

@@ -1,0 +1,22 @@
+{
+  "review_id": "2407.18800__01",
+  "safe_id": "2407.18800",
+  "arxiv_id": "2407.18800",
+  "conjecture_title": "Conjecture 3",
+  "paper_title": "Towards Characterization of 5-List-Colorability of Toroidal Graphs",
+  "published": "2024-07-26",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The conjecture that a toroidal graph is 5-choosable if and only if it is 5-colorable remains open as of May 2026. The source paper (arXiv:2407.18800) provides partial computational evidence by enumerating minimal obstructions under a cyclic-triangle-system condition and finding no new obstructions beyond previously known ones. A wide web search found no follow-up paper resolving the full conjecture.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "toroidal graph 5-choosable 5-colorable Dvořák Moreno Peñarrubia 2024",
+    "arXiv 2407.18800 toroidal graph list coloring choosability",
+    "toroidal graph 5-choosable 5-colorable Thomassen characterization torus 2025"
+  ],
+  "notes": "No follow-up paper resolving the conjecture was found. The conjecture is closely related to Thomassen's characterization of 5-colorability on the torus and is stated in the source paper as equivalent to Conjecture 2. The paper arXiv:2502.17133 (Toroidal graphs without K5- and 6-cycles, 2025) addresses 4-choosability for a restricted subclass and is not directly related."
+}

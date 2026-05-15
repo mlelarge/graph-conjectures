@@ -1,0 +1,27 @@
+[
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Informal Conjecture (chordal modulator characterization for even-hole-free graphs)",
+    "statement_text": "Every chordal graph of clique number at most three modulates even-hole-free graphs.",
+    "context_text": "Theorem 1.2 (Sintiari–Trotignon) shows that a graph $H$ can modulate even-hole-free graphs only if $H$ is a chordal graph of clique number at most three; the authors state that the converse may also be true. The paper proves the forest case (Theorem 1.6) but explicitly notes that extending to all chordal graphs of clique number at most three remains open.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated as \"as far as we know, the converse may also be true\" in the introduction; confirmed open by the subsequent remark \"while the former remains open\".",
+    "arxiv_id": "2301.02138",
+    "paper_title": "Induced subgraphs and tree decompositions VIII. Excluding a forest in (theta, prism)-free graphs",
+    "paper_authors": [
+      "Tara Abrishami",
+      "Bogdan Alecu",
+      "Maria Chudnovsky",
+      "Sepehr Hajebi",
+      "Sophie Spirkl"
+    ],
+    "published": "2023-01-28",
+    "abs_url": "https://arxiv.org/abs/2301.02138",
+    "source": "pdf"
+  }
+]

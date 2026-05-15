@@ -1,0 +1,71 @@
+[
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Open Problem (induced st-path of excess length three)",
+    "statement_text": "Is there a polynomial-time algorithm to test whether a graph contains an induced path between specified vertices $s, t$ of length at least three more than the shortest $st$-path?",
+    "context_text": "Berger, Spirkl, and Seymour (including a co-author of the present paper) have a poly-time algorithm to detect an induced $st$-path longer than the shortest $st$-path. Whether a poly-time algorithm exists to detect one that is at least three longer remains open, as noted in the introduction.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated in passing as 'It is open whether...' with no formal label. Arises from related work by Berger, Spirkl, and Seymour; one of the present paper's authors (Seymour) is involved in the related work.",
+    "arxiv_id": "1904.12273",
+    "paper_title": "Detecting a long odd hole",
+    "paper_authors": [
+      "Maria Chudnovsky",
+      "Alex Scott",
+      "Paul Seymour"
+    ],
+    "published": "2020-09-06",
+    "abs_url": "https://arxiv.org/abs/1904.12273",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Informal Conjecture (heavy path extension)",
+    "statement_text": "If $C$ is a shortest long odd hole in a graph $G$ and $M$ is a set of $C$-major vertices such that one vertex of $M$ is nonadjacent to all the others, then there exists a path of $C$ of bounded length such that every vertex of $M$ has a neighbour in that path.",
+    "context_text": "The authors attempted to extend the 'heavy edge' lemma from the odd hole algorithm of [6] to the long odd hole setting: a 'heavy path' of bounded length containing a neighbour of every vertex in $M$ would suffice for constructing the cleaning list. The authors believe the extension is plausible but were unable to prove it, and had to use a more complicated replacement argument instead.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated as 'this extension might be true, but we were unable to prove it.' No formal labelled environment. PDF source — math notation may be partially garbled.",
+    "arxiv_id": "1904.12273",
+    "paper_title": "Detecting a long odd hole",
+    "paper_authors": [
+      "Maria Chudnovsky",
+      "Alex Scott",
+      "Paul Seymour"
+    ],
+    "published": "2020-09-06",
+    "abs_url": "https://arxiv.org/abs/1904.12273",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Open Question (running time improvement for long hole detection)",
+    "statement_text": "Can the running times of $O(|G|^{\\ell+1})$ for detecting a long hole and $O(|G|^{20\\ell+40})$ for detecting a long odd hole — both $|G|^{O(\\ell)}$ — be substantially improved for fixed $\\ell$?",
+    "context_text": "The paper gives algorithms with running time $|G|^{O(\\ell)}$ for both long hole and long odd hole detection. Both problems are NP-hard when $\\ell$ is part of the input, but whether the dependence on $\\ell$ in the exponent can be reduced for fixed $\\ell$ is left as an open question.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated as 'We do not know if either can be substantially improved.' No formal labelled environment.",
+    "arxiv_id": "1904.12273",
+    "paper_title": "Detecting a long odd hole",
+    "paper_authors": [
+      "Maria Chudnovsky",
+      "Alex Scott",
+      "Paul Seymour"
+    ],
+    "published": "2020-09-06",
+    "abs_url": "https://arxiv.org/abs/1904.12273",
+    "source": "pdf"
+  }
+]

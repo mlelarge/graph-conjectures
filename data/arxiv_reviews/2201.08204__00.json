@@ -1,0 +1,22 @@
+{
+  "review_id": "2201.08204__00",
+  "safe_id": "2201.08204",
+  "arxiv_id": "2201.08204",
+  "conjecture_title": "Question 3.1",
+  "paper_title": "A counterexample to a conjecture about triangle-free induced subgraphs of graphs with large chromatic number",
+  "published": "2022-09-15",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "The source paper arXiv:2201.08204 itself provides a construction achieving the bound 4: for every n there is a graph G with \\chi(G) \\geq n and \\omega(G) \\leq 3 such that every triangle-free induced subgraph H satisfies \\chi(H) \\leq 4. Question 3.1 asks whether the bound 4 can be improved to 3, i.e., whether graphs with clique number 3 and large chromatic number exist where all triangle-free induced subgraphs have chromatic number at most 3. This specific refinement (optimal constant 3 vs 4) appears to remain open; the contemporary generalization in arXiv:2203.03612 proves that a finite constant c_{K_3} exists but does not resolve whether it equals 3 or 4, and no subsequent paper resolving this was found.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "clique number 3 chromatic number triangle-free induced subgraphs Carbonero Hompe Moore Spirkl 2201.08204",
+    "triangle-free induced subgraphs chromatic number clique number 3 Davies graph conjecture arxiv",
+    "Brianski Davies Walczak induced subgraphs chromatic number clique number triangle-free arxiv 2023 2024"
+  ],
+  "notes": "The source paper itself already answers Question 3.1 affirmatively with bound 4: such graphs exist but with triangle-free induced subgraphs having \\chi \\leq 4, not \\leq 3. The conjecture as stated (bound exactly 3) is the open refinement. The paper arXiv:2203.03612 (Carbonero, Hompe, Moore, Spirkl, 2022) proves a general theorem: for every graph F with at least one edge, there is a constant c_F such that graphs of arbitrarily large chromatic number with clique number = \\omega(F) exist where every F-free induced subgraph has \\chi \\leq c_F. For F = K_3 this confirms c_{K_3} \\leq 4 but does not establish whether c_{K_3} = 3 is achievable. Search result text notes that 'for triangles, the optimal value is either 3 or 4', confirming the question is open. No 2023 or later paper resolving this refinement was found in the literature searched."
+}

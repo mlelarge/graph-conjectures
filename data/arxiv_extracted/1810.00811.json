@@ -1,0 +1,74 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Erdős-Hajnal Conjecture",
+    "statement_text": "For every graph $H$, there exists $c > 0$ such that every $H$-free graph $G$ satisfies $\\max(\\omega(G), \\alpha(G)) \\geq |V(G)|^c$.",
+    "context_text": "Stated as Conjecture 1.1 and attributed to Erdős and Hajnal [6, 7], this conjecture has been proved only for very restricted graphs $H$; in particular it remains open when $H$ is a five-vertex path. The paper's title and results are directly situated within the programme of verifying special cases of this conjecture.",
+    "attributed_to": "Erdős and Hajnal",
+    "attributed_year": null,
+    "paper_contribution": "Proves that for every caterpillar subdivision $H$ there exists $c > 0$ such that every graph $G$ that is both $H$-free and $\\bar{H}$-free satisfies $\\max(\\omega(G), \\alpha(G)) \\geq |V(G)|^c$, extending results of Bousquet–Lagoutte–Thomassé (paths) and Choromanski–Falik–Liebenau–Patel–Pilipczuk (hooks).",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Referenced as [6, 7] in the paper; bibliography not reproduced in the extracted text so attributed_year is left null.",
+    "arxiv_id": "1810.00811",
+    "paper_title": "Caterpillars in Erdős-Hajnal",
+    "paper_authors": [
+      "Anita Liebenau",
+      "Marcin Pilipczuk",
+      "Paul Seymour",
+      "Sophie Spirkl"
+    ],
+    "published": "2018-10-01",
+    "abs_url": "https://arxiv.org/abs/1810.00811",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.5 (sparse strong EH-property)",
+    "statement_text": "A graph $H$ has the sparse strong EH-property if and only if $H$ is a forest.",
+    "context_text": "The sparse strong EH-property of $H$ requires that there exists $\\varepsilon > 0$ such that every $H$-free graph $G$ with $|V(G)| \\geq 2$ either has a vertex with at least $\\varepsilon|V(G)|$ neighbours or contains two anticomplete sets of vertices each of cardinality at least $\\varepsilon|V(G)|$. Erdős's construction shows the property forces $H$ to be a forest; the conjecture asserts the converse.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "The paper explicitly notes that since submission both conjectures in 1.5 have been proved in reference [4].",
+    "arxiv_id": "1810.00811",
+    "paper_title": "Caterpillars in Erdős-Hajnal",
+    "paper_authors": [
+      "Anita Liebenau",
+      "Marcin Pilipczuk",
+      "Paul Seymour",
+      "Sophie Spirkl"
+    ],
+    "published": "2018-10-01",
+    "abs_url": "https://arxiv.org/abs/1810.00811",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.5 (symmetric strong EH-property)",
+    "statement_text": "A graph $H$ has the symmetric strong EH-property if and only if one of $H$, $\\bar{H}$ is a forest.",
+    "context_text": "The symmetric strong EH-property of $H$ requires that there exists $\\varepsilon > 0$ such that every graph $G$ that is both $H$-free and $\\bar{H}$-free with $|V(G)| \\geq 2$ contains two disjoint sets of vertices each of cardinality at least $\\varepsilon|V(G)|$ that are either complete or anticomplete to each other. The first conjecture of 1.5 implies the second via a theorem of Rödl [13]; both are described as reminiscent of the Gyárfás–Sumner conjecture.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "The paper explicitly notes that since submission both conjectures in 1.5 have been proved in reference [4].",
+    "arxiv_id": "1810.00811",
+    "paper_title": "Caterpillars in Erdős-Hajnal",
+    "paper_authors": [
+      "Anita Liebenau",
+      "Marcin Pilipczuk",
+      "Paul Seymour",
+      "Sophie Spirkl"
+    ],
+    "published": "2018-10-01",
+    "abs_url": "https://arxiv.org/abs/1810.00811",
+    "source": "pdf"
+  }
+]

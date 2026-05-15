@@ -1,0 +1,77 @@
+[
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Informal Conjecture on Universal N0 for Bumping a Ladder",
+    "statement_text": "There exists a constant $N_0$ such that for every $k$, Theorem 2 holds with $N = N_0$. For all we know, this might even be true with $N_0 = 4$.",
+    "context_text": "Theorem 2 (Bumping a ladder) asserts that every 3-connected graph containing a union of $N$ vertex-disjoint copies of $L_k$ as a minor contains $L_{k+1}$ as a minor, but the value of $N$ a priori depends on $k$. The authors remark that while 3-connectivity is necessary (see Figure 1), they believe the dependence of $N$ on $k$ is not.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated in prose immediately after Theorem 2 with the phrase 'We conjecture'; no labelled environment.",
+    "arxiv_id": "2002.00496",
+    "paper_title": "Excluding a ladder",
+    "paper_authors": [
+      "Tony Huynh",
+      "Gwenaël Joret",
+      "Piotr Micek",
+      "Michał T. Seweryn",
+      "Paul Wollan"
+    ],
+    "published": "2021-04-06",
+    "abs_url": "https://arxiv.org/abs/2002.00496",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Open Problem: Characterization of Unavoidable Graphs",
+    "statement_text": "Obtain a full characterization of unavoidable graphs, where a graph $H$ is unavoidable if the cover graph of every poset with large enough dimension contains $H$ as a minor.",
+    "context_text": "The known positive results are that every ladder and $K_4$ are unavoidable. Kelly's construction shows that every unavoidable graph must be a minor of some graph from that construction, providing a necessary condition. The paper's Conjecture 6 proposes that this necessary condition is also sufficient.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated in prose as 'it is an open problem'; no labelled environment. Conjecture 6 in the same paper proposes a conjectured answer.",
+    "arxiv_id": "2002.00496",
+    "paper_title": "Excluding a ladder",
+    "paper_authors": [
+      "Tony Huynh",
+      "Gwenaël Joret",
+      "Piotr Micek",
+      "Michał T. Seweryn",
+      "Paul Wollan"
+    ],
+    "published": "2021-04-06",
+    "abs_url": "https://arxiv.org/abs/2002.00496",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 6",
+    "statement_text": "A graph $H$ is unavoidable if and only if $H$ is a minor of some graph from Kelly's construction.",
+    "context_text": "Kelly's construction gives posets with unbounded dimension whose cover graphs are planar and have pathwidth 3, implying every unavoidable graph must be a minor of some graph in this family. The authors conjecture this necessary condition is also sufficient, and note an equivalent reformulation: $H$ is unavoidable if and only if $H$ is a minor of some graph obtained by gluing copies of $K_4$ along edges in a path-like way and subdividing all horizontal edges once.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2002.00496",
+    "paper_title": "Excluding a ladder",
+    "paper_authors": [
+      "Tony Huynh",
+      "Gwenaël Joret",
+      "Piotr Micek",
+      "Michał T. Seweryn",
+      "Paul Wollan"
+    ],
+    "published": "2021-04-06",
+    "abs_url": "https://arxiv.org/abs/2002.00496",
+    "source": "pdf"
+  }
+]

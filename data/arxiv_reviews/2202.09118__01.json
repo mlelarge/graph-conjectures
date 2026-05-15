@@ -1,0 +1,38 @@
+{
+  "review_id": "2202.09118__01",
+  "safe_id": "2202.09118",
+  "arxiv_id": "2202.09118",
+  "conjecture_title": "Open problem (poly-χ-bounded for k-multihole with only odd cycles)",
+  "paper_title": "Polynomial bounds for chromatic number VII. Disjoint holes",
+  "published": "2022-02-18",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The source paper (arXiv:2202.09118) establishes polynomial χ-boundedness for graphs with no k-multihole in general, and also for the variant where holes are odd or of length four, but explicitly leaves open the case where all holes have odd length. This class contains {P5, C5}-free graphs, for which the best known bound remains exponential (2^(ω−1)), not polynomial. A broad web search and inspection of the authors' subsequent publication record found no follow-up paper resolving this open problem as of May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2202.10412",
+      "verified": false,
+      "note": "The contribution text describes polynomial χ-boundedness results for graphs excluding a good forest together with P4. This is about a different forbidden-subgraph setting (H∪P4 free) and does not address the open problem about k-multiholes with all odd cycles. Not directly verified by WebFetch due to cap."
+    },
+    {
+      "arxiv_id": "2506.10227",
+      "verified": false,
+      "note": "The contribution text describes results on suns in triangle-free graphs. No evident connection to k-multiholes with odd cycles. Not directly verified by WebFetch due to cap."
+    },
+    {
+      "arxiv_id": "2311.05719",
+      "verified": true,
+      "note": "WebFetch confirms this paper is about clock-free graphs and treewidth (Theorem 1.1: every clock-free graph of large treewidth contains a complete graph, wall subdivision, or line graph of a wall subdivision as an induced subgraph). It does not address polynomial χ-boundedness of graphs with no odd-cycle k-multihole. The internal-ref contribution text is a false fuzzy match (fuzz=70)."
+    }
+  ],
+  "search_queries": [
+    "k-multihole odd cycles polynomially chi-bounded Chudnovsky Scott Seymour Spirkl 2202.09118",
+    "multihole odd length cycles chromatic number polynomial bound graph theory 2022 2023 2024",
+    "P5 C5 free graphs polynomially chi-bounded chromatic number 2023 2024 2025"
+  ],
+  "notes": "The conjecture is closely related to polynomial χ-boundedness of {P5, C5}-free graphs, which is a well-known open problem. The best known bound for {P5, C5}-free graphs is χ(G) ≤ 2^(ω(G)−1) (Chudnovsky–Sivaraman), which is exponential. No follow-up paper resolving or making partial progress specifically on the k-multihole odd-cycle variant was found in the indexed literature."
+}

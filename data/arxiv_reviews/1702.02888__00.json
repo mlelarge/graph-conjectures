@@ -1,0 +1,22 @@
+{
+  "review_id": "1702.02888__00",
+  "safe_id": "1702.02888",
+  "arxiv_id": "1702.02888",
+  "conjecture_title": "Open Problem (independence number of planar graphs)",
+  "paper_title": "Triangle-free planar graphs with small independence number",
+  "published": "2017-02-09",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The open problem asks for a structural characterisation of planar graphs on $n$ vertices whose independence number is exactly $n/4$, and whether there is a polynomial-time algorithm to decide if an $n$-vertex planar graph has an independent set larger than $n/4$. No follow-up paper resolving either question was found in a targeted web search across arXiv and related databases. The maximum independent set problem is NP-hard on planar graphs in general, but the specific decision problem at the n/4 threshold—which is the Four Colour Theorem's trivial lower bound—remains open, and its complexity (polynomial vs. NP-hard) appears unresolved.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "planar graph independence number n/4 polynomial algorithm Dvořák Venters 1702.02888",
+    "planar graph independence number exactly n/4 NP-hard complexity four color theorem",
+    "planar graph independence number n/4 NP-hard algorithm 2018 2019 2020 2021 2022 2023 2024 2025"
+  ],
+  "notes": "No follow-up paper resolving either part of the open problem was found after 5 web calls (3 WebSearch + 2 WebFetch attempts including Semantic Scholar). The conjecture is recent (2017) and concerns a subtle threshold question distinct from the known NP-hardness of maximum independent set on planar graphs. Status open with high confidence."
+}

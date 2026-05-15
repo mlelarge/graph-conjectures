@@ -1,0 +1,23 @@
+{
+  "review_id": "2202.06810__00",
+  "safe_id": "2202.06810",
+  "arxiv_id": "2202.06810",
+  "conjecture_title": "Open case of Theorem 3 for odd $n$",
+  "paper_title": "Structured Codes of Graphs",
+  "published": "2022-04-01",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The question of determining $M_{F_{2c}}(n)$ for odd $n \\geq 5$ remains open. The upper bound $M_{F_{2c}}(n) \\leq 2^{n-2}$ is established in the source paper, but the best-known construction for odd $n$ gives only $2^{n-2} - \\binom{n-2}{(n-3)/2}$, leaving a gap. A 2023 follow-up by Bai, Gao, Ma, and Wu (arXiv:2307.08266, SIAM J. Discrete Math.) studies related phase-transition problems for $M_{\\mathcal{F}}(n)$ and announces a partial solution to a problem from the source paper, but this refers to Problem 3 about spanning trees with many leaves, not to the 2-connected code problem; no paper found closes the odd-$n$ gap for $M_{F_{2c}}$.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "structured codes graphs M_F2c odd n Alon Gujgiczer Körner Simonyi 2202.06810",
+    "structured codes graphs F2c-free graph codes upper bound 2^{n-2} binomial odd",
+    "Gujgiczer Simonyi 2-connected graph codes structured codes 2023 2024 2025",
+    "Gujgiczer Simonyi graph coloring parameters graph codes arXiv 2023 2024 2025"
+  ],
+  "notes": "The Semantic Scholar citation list for arXiv:2202.06810 contains 17 citing papers (as of May 2026); the most topically adjacent is arXiv:2307.08266 (Bai–Gao–Ma–Wu, SIAM JDM 2024), whose 'partial solution to a recent problem posed by Alon et al.' addresses Problem 3 (spanning-tree leaf sequences), not the 2-connected code problem. Alon's 'Connectivity graph-codes' (arXiv:2308.07653, Random Struct. Algorithms 2024) and Versteegen's 'Upper Bounds for Linear Graph Codes' (arXiv:2310.19891) were identified as citing papers but do not appear to address $M_{F_{2c}}$ for odd $n$ specifically. No follow-up resolving the odd-$n$ gap was found."
+}

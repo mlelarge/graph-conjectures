@@ -1,0 +1,23 @@
+{
+  "review_id": "2209.09107__01",
+  "safe_id": "2209.09107",
+  "arxiv_id": "2209.09107",
+  "conjecture_title": "Question 6.2",
+  "paper_title": "List-avoiding orientations",
+  "published": "2024-06-20",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Question 6.2 asks whether there exists a constant $C$ such that every graph $G$ of maximum degree $\\Delta$ has a matching $M$ with $\\operatorname{AT}(G-M)\\leq\\frac{1}{2}\\Delta+C$. No follow-up paper resolving this question was found in targeted searches through May 2026. The question is motivated by Grytczuk--Zhu's result for planar graphs and the known lower bound showing $C$ cannot be smaller than $\\frac{1}{2}$ (from $K_n$ with a maximum matching).",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Alon-Tarsi number matching maximum degree graph 2209.09107 Bradshaw Mohar",
+    "\"Alon-Tarsi number\" matching \"half delta\" graph \"list-avoiding orientations\"",
+    "\"AT(G-M)\" matching \"Alon-Tarsi\" graph \"maximum degree\" coloring 2024 2025",
+    "Alon-Tarsi number matching removal half maximum degree graph Bradshaw Zhu Grytczuk 2024 2025 2026"
+  ],
+  "notes": "No follow-up paper resolving Question 6.2 was found. The source paper was published in Combinatorica (2024). The conjecture is closely related to Grytczuk--Zhu's theorem (arXiv:1811.12012) that every planar graph G has a matching M with AT(G-M) ≤ 4, and to Huang et al.'s result that AT(K_n - N) = ⌈n/2⌉ for a maximum matching N in K_n, which establishes the lower bound C ≥ 1/2."
+}

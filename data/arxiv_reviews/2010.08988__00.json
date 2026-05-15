@@ -1,0 +1,22 @@
+{
+  "review_id": "2010.08988__00",
+  "safe_id": "2010.08988",
+  "arxiv_id": "2010.08988",
+  "conjecture_title": "Problem 1.4",
+  "paper_title": "Even Circuits in Oriented Matroids",
+  "published": "2020-10-18",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Problem 1.4 asks for a decision procedure for the existence of an even directed circuit in a general oriented matroid. The source paper (published in Combinatorial Theory 2022) shows via Theorem 1.6 that the problem is polynomially equivalent to recognising non-even oriented regular matroids, and provides a forbidden-minor characterisation for non-even oriented bond matroids; however, the general problem for arbitrary oriented matroids is shown to require super-polynomially many signed-circuit oracle calls, leaving its exact computational complexity open. No subsequent paper resolving Problem 1.4 in full generality was found in a targeted web search.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "even directed circuit oriented matroid Heuer Steiner Wiederrecht 2010.08988",
+    "even dicycle oriented matroid polynomial algorithm complexity",
+    "Heuer Steiner Wiederrecht oriented matroid even circuit follow-up 2021 2022 2023 2024"
+  ],
+  "notes": "The paper itself (Combinatorial Theory, vol. 2 no. 1, 2022) already provides partial resolution: for regular oriented matroids the problem reduces to non-even recognition, and odd directed circuits are detectable in polynomial time. For general oriented matroids the signed-circuit oracle lower bound rules out a polynomial oracle algorithm. The open question is whether a poly-time algorithm exists when the matroid is given by an explicit representation rather than an oracle. No follow-up found after five web calls."
+}

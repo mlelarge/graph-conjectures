@@ -1,0 +1,71 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Gyárfás-Sumner Conjecture (Conjecture 1.1)",
+    "statement_text": "For every tree $T$, and every integer $t \\geq 1$, if $G$ is a graph with no induced subgraph isomorphic to $T$, and with no clique of size $t$, then its chromatic number is bounded.",
+    "context_text": "The Gyárfás-Sumner conjecture, posed independently by Gyárfás and Sumner, asserts that graphs with no induced copy of a fixed tree $T$ and bounded clique number have bounded chromatic number. It has been proved for several families of trees but remains open in general.",
+    "attributed_to": "Gyárfás and Sumner",
+    "attributed_year": 1975,
+    "paper_contribution": "Proves that under the same hypotheses (no clique of size $t$, sufficiently large chromatic number), $G$ contains a path-induced copy of $(T,r)$ for any rooting $r$ of $T$, establishing a weakening of the full conjecture in which induced subgraph containment is replaced by the intermediate notion of path-induced containment.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2302.08922",
+    "paper_title": "A note on the Gyárfás-Sumner conjecture",
+    "paper_authors": [
+      "Tung Nguyen",
+      "Alex Scott",
+      "Paul Seymour"
+    ],
+    "published": "2023-02-17",
+    "abs_url": "https://arxiv.org/abs/2302.08922",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Polynomial bounds for path-induced copy theorem (1.2)",
+    "statement_text": "Is there any hope for a comparable strengthening of 1.2, giving a polynomial bound on the chromatic number of graphs with no path-induced copy of a rooted tree $(T,r)$ and with clique number at most $t$?",
+    "context_text": "Scott, Seymour and Spirkl proved (Theorem 3.2) that excluding an induced tree and $K_{t,t}$ as a subgraph yields a polynomial bound $f(t)$ on average degree. The authors ask whether an analogous polynomial bound on chromatic number can be obtained for 1.2, which imposes the weaker hypothesis of bounded clique number at the cost of weakening the conclusion to a path-induced copy.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Question appears as rhetorical prose without a labelled environment; the sentence 'Is there any hope for a comparable strengthening of 1.2?' is the explicit formulation.",
+    "arxiv_id": "2302.08922",
+    "paper_title": "A note on the Gyárfás-Sumner conjecture",
+    "paper_authors": [
+      "Tung Nguyen",
+      "Alex Scott",
+      "Paul Seymour"
+    ],
+    "published": "2023-02-17",
+    "abs_url": "https://arxiv.org/abs/2302.08922",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Polynomial bounds for the Gyárfás-Sumner conjecture",
+    "statement_text": "It is possible that the Gy\\'{a}rf\\'{a}s-Sumner conjecture holds with polynomial bounds; that is, 1.1 holds with a bound on the chromatic number that is polynomial in $t$.",
+    "context_text": "The authors note that polynomial bounds on the $\\chi$-bounding function have recently been established for trees not containing $P_5$ as an induced subgraph, and suggest that the full Gyárfás-Sumner conjecture may admit a polynomial $\\chi$-bounding function in $t$ for every fixed tree $T$.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated in prose as 'it is possible that…' without a labelled conjecture environment.",
+    "arxiv_id": "2302.08922",
+    "paper_title": "A note on the Gyárfás-Sumner conjecture",
+    "paper_authors": [
+      "Tung Nguyen",
+      "Alex Scott",
+      "Paul Seymour"
+    ],
+    "published": "2023-02-17",
+    "abs_url": "https://arxiv.org/abs/2302.08922",
+    "source": "pdf"
+  }
+]

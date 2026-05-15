@@ -1,0 +1,27 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Barát-Thomassen Conjecture",
+    "statement_text": "For any tree $T$ on $m$ edges, there exists an integer $k_T$ such that every $k_T$-edge-connected graph with size divisible by $m$ has a $T$-decomposition.",
+    "context_text": "Barát and Thomassen observed in 2006 that $T$-decompositions are intimately related to nowhere-zero flows, motivating this conjecture. Prior to this paper, the conjecture had been verified only for stars, some bistars, paths, and trees of diameter at most 4.",
+    "attributed_to": "Barát and Thomassen",
+    "attributed_year": 2006,
+    "paper_contribution": "Proves the full statement of the conjecture for every tree $T$, completely settling it in the affirmative.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1603.00197",
+    "paper_title": "A Proof of the Barát-Thomassen Conjecture",
+    "paper_authors": [
+      "Julien Bensmail",
+      "Ararat Harutyunyan",
+      "Tien-Nam Le",
+      "Martin Merker",
+      "Stéphan Thomassé"
+    ],
+    "published": "2016-11-08",
+    "abs_url": "https://arxiv.org/abs/1603.00197",
+    "source": "pdf"
+  }
+]

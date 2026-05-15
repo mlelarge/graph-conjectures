@@ -1,0 +1,27 @@
+[
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Open problem: convex drawings vs. pseudocircular drawings",
+    "statement_text": "The relation between convex drawings and pseudocircular drawings remains open.",
+    "context_text": "Arroyo, Richter, and Sunohara proved that hereditary-convex drawings are precisely the pseudospherical drawings (i.e., pseudocircular drawings satisfying two additional properties). The analogous characterisation for (non-hereditary) convex drawings in terms of pseudocircular drawings has not been established.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated in running prose without a labelled environment, in Section 2.1. The dedicated open-problems section (Section 7, explicitly announced in the introduction) is not present in the provided PDF extraction, so further conjectures and questions from that section could not be captured.",
+    "arxiv_id": "2005.12568",
+    "paper_title": "Topological Drawings meet Classical Theorems from Convex Geometry",
+    "paper_authors": [
+      "Helena Bergold",
+      "Stefan Felsner",
+      "Manfred Scheucher",
+      "Felix Schröder",
+      "Raphael Steiner"
+    ],
+    "published": "2024-07-27",
+    "abs_url": "https://arxiv.org/abs/2005.12568",
+    "source": "pdf"
+  }
+]

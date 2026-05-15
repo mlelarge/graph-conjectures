@@ -1,0 +1,74 @@
+[
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.5",
+    "statement_text": "The unique maximal Schnyder wood of the UIHPT is the weak limit of the maximal Schnyder wood of a uniformly random triangulation from $T^m_n$ as $n \\to \\infty$ and then $m \\to \\infty$.",
+    "context_text": "Theorem 1.2 establishes that the maximal Schnyder wood of the UIPT with boundary length $m$ is the weak limit of maximal Schnyder woods of uniformly random triangulations from $T^m_n$ as $n \\to \\infty$. The authors were unable to extend this convergence result to the UIHPT (letting $m \\to \\infty$ after $n \\to \\infty$), and leave it as a conjecture. They discuss potential consequences for geodesic paths and the winding behaviour of monochromatic trees in large finite triangulations.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2511.07601",
+    "paper_title": "Infinite Schnyder Woods",
+    "paper_authors": [
+      "Louigi Addario-Berry",
+      "Emma Hogan",
+      "Lukas Michel",
+      "Alex Scott"
+    ],
+    "published": "2025-11-10",
+    "abs_url": "https://arxiv.org/abs/2511.07601",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Open question on Schnyder woods for general half-plane triangulations",
+    "statement_text": "It would be interesting to know whether Schnyder woods exist on all half-plane triangulations, and if not, to characterise the ones for which they do exist.",
+    "context_text": "The paper proves existence and uniqueness of the maximal Schnyder wood for all infinite triangulations with finite boundary (Theorem 1.1) and for the UIHPT specifically (Theorem 1.3), but does not treat arbitrary triangulations of the half-plane (infinite boundary). The authors note that whenever a maximal Schnyder wood of the half-plane exists it is unique, leaving existence for the general case open.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "",
+    "arxiv_id": "2511.07601",
+    "paper_title": "Infinite Schnyder Woods",
+    "paper_authors": [
+      "Louigi Addario-Berry",
+      "Emma Hogan",
+      "Lukas Michel",
+      "Alex Scott"
+    ],
+    "published": "2025-11-10",
+    "abs_url": "https://arxiv.org/abs/2511.07601",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Open question on local limit of uniformly random wooded triangulations",
+    "statement_text": "It would be interesting to understand the local limit of uniformly random wooded triangulations as the boundary length tends to infinity, and whether such wooded triangulations have a local limit, which would be a random wooded triangulation of the half-plane different from the one constructed in this work.",
+    "context_text": "The authors remark that uniformly random wooded triangulations (triangulations paired with an arbitrary Schnyder wood) are quite different from maximal Schnyder woods of uniformly random triangulations: tree heights in the former are $\\Theta(\\sqrt{n})$ in probability, while the expected height of a uniformly random vertex in the latter is of order $n^{3/4}$. Whether these wooded triangulations possess a local limit as the boundary length grows is left open.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "",
+    "arxiv_id": "2511.07601",
+    "paper_title": "Infinite Schnyder Woods",
+    "paper_authors": [
+      "Louigi Addario-Berry",
+      "Emma Hogan",
+      "Lukas Michel",
+      "Alex Scott"
+    ],
+    "published": "2025-11-10",
+    "abs_url": "https://arxiv.org/abs/2511.07601",
+    "source": "pdf"
+  }
+]

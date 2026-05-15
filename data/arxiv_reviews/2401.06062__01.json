@@ -1,0 +1,33 @@
+{
+  "review_id": "2401.06062__01",
+  "safe_id": "2401.06062",
+  "arxiv_id": "2401.06062",
+  "conjecture_title": "Question 4.28",
+  "paper_title": "On prime Cayley graphs",
+  "published": "2024-01-11",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "medium",
+  "summary": "Question 4.28 asks when $X_R$ is prime, where $X_R$ is the Cayley graph on a finite ring $R$ built from its group of units. The source paper itself reduces the question to the semisimple case (non-semisimple $R$ yields non-prime $X_R$) and further to a combinatorial question about primality of tensor products of complete graphs. A March 2024 follow-up (arXiv:2403.05635) establishes necessary and sufficient conditions for primality in the related $p$-unitary Cayley graph setting, partially addressing the broader question for certain classes of finite commutative rings, but the full general question for arbitrary finite rings appears to remain open.",
+  "since_posted": [
+    {
+      "title": "On certain properties of the p-unitary Cayley graph over a finite ring",
+      "authors": "Authors not confirmed from abstract fetch",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2403.05635",
+      "arxiv_id": "2403.05635",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Establishes necessary and sufficient conditions for p-unitary Cayley graphs over finite commutative rings to be prime (under mild conditions), addressing a related but more restricted variant of Question 4.28."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "prime Cayley graph finite ring tensor product complete graphs Chudnovsky Spirkl 2024",
+    "arXiv 2401.06062 \"prime Cayley\" cited \"X_R\" finite ring primality 2024 2025"
+  ],
+  "notes": "The source paper (2401.06062) was published in the Journal of Combinatorics (2025/2026). The paper reduces Question 4.28 to the semisimple case and then to tensor-product primality. arXiv:2403.05635 (March 2024) provides necessary and sufficient conditions for the p-unitary Cayley graph to be prime, which is a related but distinct graph construction from X_R. A further paper arXiv:2603.21239 ('On U-unitary Cayley graphs over finite rings', March 2026) appeared in search results but could not be verified within the 5-call cap. Author names for 2403.05635 were not retrieved from the abstract fetch."
+}

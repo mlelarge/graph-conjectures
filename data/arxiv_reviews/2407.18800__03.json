@@ -1,0 +1,23 @@
+{
+  "review_id": "2407.18800__03",
+  "safe_id": "2407.18800",
+  "arxiv_id": "2407.18800",
+  "conjecture_title": "Conjecture 8",
+  "paper_title": "Towards Characterization of 5-List-Colorability of Toroidal Graphs",
+  "published": "2024-07-26",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 8 from arXiv:2407.18800 asserts that there is no critical prism-canvas of spacing at least five. It was motivated by a computer-assisted enumeration that found 510, 2719, 300, and 5 candidates at spacings one through four respectively, suggesting the list becomes empty at spacing five. No follow-up paper addressing or resolving this conjecture has been found as of May 2026; Semantic Scholar also shows zero citations to the source paper.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Dvořák Moreno \"prism-canvas\" \"toroidal graphs\" 5-list-coloring 2024",
+    "\"critical prism-canvas\" \"spacing\" list-coloring toroidal",
+    "Dvořák \"toroidal graphs\" \"5-list\" \"prism\" 2025 arxiv",
+    "Moreno Peñarrubia \"5-choosability\" toroidal 2025 arxiv list coloring"
+  ],
+  "notes": "No follow-up found. Semantic Scholar API returns an empty citations list for arXiv:2407.18800 as of May 2026. The conjecture is recent (posted July 2024) and highly specific to the computer-assisted classification program for 5-list-colorability of toroidal graphs; absence of follow-up literature is expected."
+}

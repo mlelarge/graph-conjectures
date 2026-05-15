@@ -1,0 +1,26 @@
+[
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Question of Agrawal et al. (2024)",
+    "statement_text": "Can the WML$k$CIS problem be solved in polynomial time for $P_5$-free graphs (and more generally for $(P_5+rK_1)$-free graphs)?",
+    "context_text": "After giving a polynomial-time algorithm for the Odd Cycle Transversal problem (the $k=2$ special case of WML$k$CIS) on $P_5$-free graphs, Agrawal et al. [1] asked whether the full WML$k$CIS problem is also tractable for $P_5$-free graphs. The present paper answers this question affirmatively and extends the result to all $(P_5+rK_1)$-free graphs for any nonnegative integer $r$.",
+    "attributed_to": "Agrawal, Lima, Lokshtanov, Rzążewski, Saurabh, and Sharma",
+    "attributed_year": 2024,
+    "paper_contribution": "Provides an explicit polynomial-time algorithm solving the Weighted Maximum List-$k$-Colourable Induced Subgraph problem for every $(P_5+rK_1)$-free graph, for any fixed $k$ and any nonnegative integer $r$.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "The introduction excerpt is cut off mid-sentence; the exact original phrasing of the question is not fully reproduced. Statement reconstructed from the abstract and surrounding context.",
+    "arxiv_id": "2410.08077",
+    "paper_title": "Maximum $k$-colourable induced subgraphs in $(P_5+rK_1)$-free graphs",
+    "paper_authors": [
+      "Cicely Henderson",
+      "Evelyne Smith-Roberge",
+      "Sophie Spirkl",
+      "Rebecca Whitman"
+    ],
+    "published": "2025-11-14",
+    "abs_url": "https://arxiv.org/abs/2410.08077",
+    "source": "html"
+  }
+]

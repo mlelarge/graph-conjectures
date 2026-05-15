@@ -1,0 +1,25 @@
+[
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Question 1 (Intersectionwise χ-guarding)",
+    "statement_text": "Which graph classes have the property that their graph-intersection with every $\\chi$-bounded class of graphs is $\\chi$-bounded?",
+    "context_text": "The authors introduce the term \"intersectionwise $\\chi$-guarding\" for such classes. They prove that classes admitting a certain decomposition are intersectionwise $\\chi$-guarding, characterize single-forbidden-induced-subgraph intersectionwise $\\chi$-guarding classes, and provide necessary conditions on $\\mathcal{H}$ for the class of $\\mathcal{H}$-free graphs to be intersectionwise $\\chi$-guarding.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Extracted from abstract only; no labelled theorem environments or introduction text were supplied. The abstract announces two central questions; the second question is truncated in the provided content and cannot be reliably stated.",
+    "arxiv_id": "2504.00153",
+    "paper_title": "Intersections of graphs and $χ$-boundedness",
+    "paper_authors": [
+      "Aristotelis Chaniotis",
+      "Hidde Koerts",
+      "Sophie Spirkl"
+    ],
+    "published": "2025-03-31",
+    "abs_url": "https://arxiv.org/abs/2504.00153",
+    "source": "html"
+  }
+]

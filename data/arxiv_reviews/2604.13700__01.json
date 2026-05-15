@@ -1,0 +1,22 @@
+{
+  "review_id": "2604.13700__01",
+  "safe_id": "2604.13700",
+  "arxiv_id": "2604.13700",
+  "conjecture_title": "Informal Question on optimal directed tree-width constant for regular digraphs",
+  "paper_title": "Openly disjoint cycles and directed tree-width of regular digraphs",
+  "published": "2026-04-26",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The paper (arXiv:2604.13700) establishes that every r-regular digraph has directed tree-width Omega(r), resolving the existence of such a linear lower bound, and proves a specific constant of at least 3/22 via the connection to openly disjoint cycles. The optimal constant epsilon in the lower bound dtw >= epsilon*r remains unknown. The paper was posted 18 days before this review, and no follow-up addressing the optimal constant has been found.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "directed tree-width regular digraph linear lower bound optimal constant Steiner 2026",
+    "arxiv 2604.13700 directed tree-width r-regular digraph epsilon",
+    "Raphael Steiner directed tree-width regular digraph openly disjoint cycles 2026"
+  ],
+  "notes": "No follow-up found; the paper is fewer than 3 weeks old. The paper proves dtw >= (3/22)r as the current best lower bound on epsilon, leaving a gap to the true optimal constant. Steiner's own research page lists this paper as 'submitted' with no citing work yet."
+}

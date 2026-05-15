@@ -1,0 +1,36 @@
+{
+  "review_id": "2301.13305__01",
+  "safe_id": "2301.13305",
+  "arxiv_id": "2301.13305",
+  "conjecture_title": "Informal question: is $d_{K_4}(n) = o(1)$?",
+  "paper_title": "Graph-codes",
+  "published": "2023-02-06",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "medium",
+  "summary": "The question whether $d_{K_4}(n) = o(1)$ for general graph codes remains open as of May 2026. Versteegen (arXiv:2310.19891, 2023) made partial progress by proving that any linear graph code on $n$ vertices containing no copy of a graph $H$ with an even number of edges has size $O(2^{\\binom{n}{2}}/\\log n)$, which settles the analogue for linear codes; however, the general (non-linear) case of the question from Conjecture 1.1 / Question 1.1 of arXiv:2301.13305 is not resolved by this work. Several further papers cite arXiv:2301.13305 (including Gishboliner–Jin–Sudakov 2312.06610, Conlon–Lee–Versteegen 2404.17467, and Rancourt–Dodos–Tyros 2602.03298) but none were verified to resolve the full question.",
+  "since_posted": [
+    {
+      "title": "Upper Bounds for Linear Graph Codes",
+      "authors": "Leo Versteegen",
+      "year": 2023,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2310.19891",
+      "arxiv_id": "2310.19891",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves that a linear graph code on $n$ vertices with no copy of $H$ (even number of edges) has size $O(2^{\\binom{n}{2}}/\\log n)$, settling the linear-code variant of the $d_{K_4}(n)=o(1)$ question but leaving the general non-linear case open."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Alon \"graph-codes\" 2301.13305 K4 d_K4 conjecture follow-up",
+    "arXiv 2301.13305 \"graph codes\" K4 upper bound o(1) citing papers",
+    "semantic scholar citations 2301.13305 Alon graph codes d_K4",
+    "arxiv 2310.19891 abstract linear graph codes upper bounds",
+    "arxiv 2602.03298 uniformity extremal graph-codes Rancourt Dodos Tyros"
+  ],
+  "notes": "The Semantic Scholar citation list for arXiv:2301.13305 returned 20 citing papers (as of May 2026). The most directly relevant verified follow-up is arXiv:2310.19891 (Versteegen), which addresses only linear graph codes. The papers arXiv:2312.06610, arXiv:2404.17467, and arXiv:2602.03298 also cite the source paper but their specific results regarding $d_{K_4}(n)=o(1)$ were not verified within the 5-call budget. The lower bound $d_{K_4}(n) \\geq 1/n^{o(1)}$ is established within the source paper itself via Hunter–Mubayi."
+}

@@ -1,0 +1,21 @@
+{
+  "review_id": "2602.16333__01",
+  "safe_id": "2602.16333",
+  "arxiv_id": "2602.16333",
+  "conjecture_title": "Conjecture 4.2",
+  "paper_title": "Long cycles in vertex transitive digraphs",
+  "published": "2026-02-18",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 4.2 from arXiv:2602.16333 proposes that the minimum circumference of connected vertex transitive digraphs and undirected graphs on n vertices are asymptotically equivalent: d(n) = Θ(c(n)). The source paper establishes the first nontrivial lower bound Ω(n^{1/3}) for the directed case, while the best undirected bound stands at Ω(n^{9/14}) (improved to Ω(n^{13/21}) by Groenland et al., arXiv:2408.04618, predating this conjecture). No follow-up paper resolving or making further progress on the conjecture has been found in the three months since posting.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "vertex transitive digraph circumference minimum cycle Bucic Hendrey Mohar Steiner Yepremyan 2026",
+    "arxiv 2026 vertex transitive digraph circumference \"d(n)\" \"c(n)\" minimum cycle directed undirected"
+  ],
+  "notes": "No follow-up found. The conjecture is very recent (posted 2026-02-18, reviewed 2026-05-14). The gap between the directed bound Omega(n^{1/3}) and the undirected bound Omega(n^{9/14}) is the main motivation. The related undirected paper arXiv:2408.04618 (Groenland et al., 2024) improves the undirected bound to Omega(n^{13/21}) but predates the conjecture."
+}

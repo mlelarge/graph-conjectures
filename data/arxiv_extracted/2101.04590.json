@@ -1,0 +1,46 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Hadwiger's Conjecture",
+    "statement_text": "For every $t \\geq 1$, $m_\\chi(t) = t$, i.e., every graph with chromatic number at least $t$ contains a $K_t$-minor.",
+    "context_text": "Hadwiger's conjecture is described as one of the most important open problems in graph theory; the paper is directly inspired by it and reduces the directed problem of forcing complete strong minors in digraphs with given dichromatic number to the undirected setting via Theorem 1. The conjecture remains unsolved for $t \\geq 7$; the best known general upper bound prior to recent work was $m_\\chi(t) = O(t\\sqrt{\\log t})$ due to Kostochka and Thomason independently.",
+    "attributed_to": "Hadwiger",
+    "attributed_year": 1943,
+    "paper_contribution": "Proves $\\mathrm{sm}_{\\tilde{\\chi}}(t) \\leq 2m_\\chi(t) - 1$ and $\\mathrm{bm}_{\\tilde{\\chi}}(t) \\leq 2m_\\chi(2t) - 1 = O(t(\\log\\log t)^6)$, reducing the asymptotics of these dichromatic forcing functions to the undirected Hadwiger problem and obtaining almost-linear bounds by combining with Postle's result $m_\\chi(t) = O(t(\\log\\log t)^6)$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source — math notation may be garbled; the directed analog studied is $\\mathrm{sm}_{\\tilde{\\chi}}(t)$, the least dichromatic number guaranteeing a strong $\\overleftrightarrow{K}_t$-minor.",
+    "arxiv_id": "2101.04590",
+    "paper_title": "Complete minors in digraphs with given dichromatic number",
+    "paper_authors": [
+      "Tamás Mészáros",
+      "Raphael Steiner"
+    ],
+    "published": "2021-01-12",
+    "abs_url": "https://arxiv.org/abs/2101.04590",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Gishboliner–Steiner–Szabó Conjecture on dichromatic Mader number",
+    "statement_text": "$\\mathrm{mader}_{\\tilde{\\chi}}(\\overleftrightarrow{K}_t) \\leq Ct^2$ for some absolute constant $C$.",
+    "context_text": "Gishboliner, Steiner and Szabó introduced the dichromatic Mader number $\\mathrm{mader}_{\\tilde{\\chi}}(H)$ as the least integer such that every digraph $D$ with $\\tilde{\\chi}(D) \\geq \\mathrm{mader}_{\\tilde{\\chi}}(H)$ contains a subdivision of $H$, and conjectured a quadratic upper bound for $H = \\overleftrightarrow{K}_t$. The paper notes that it seems surprisingly hard to find even a polynomial upper bound for quite simple digraphs $H$.",
+    "attributed_to": "Gishboliner, Steiner and Szabó",
+    "attributed_year": null,
+    "paper_contribution": "Proves Corollary 2: if $\\tilde{\\chi}(D) \\geq 2^{2n}$ then $D$ contains a subdivision of every subcubic digraph on at most $n$ vertices, contributing a linear bound for the class of subcubic digraphs (distinct from $\\overleftrightarrow{K}_t$) along the same line of inquiry.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source — math notation may be garbled; the paper's Corollary 2 addresses subcubic digraphs rather than $\\overleftrightarrow{K}_t$ directly.",
+    "arxiv_id": "2101.04590",
+    "paper_title": "Complete minors in digraphs with given dichromatic number",
+    "paper_authors": [
+      "Tamás Mészáros",
+      "Raphael Steiner"
+    ],
+    "published": "2021-01-12",
+    "abs_url": "https://arxiv.org/abs/2101.04590",
+    "source": "pdf"
+  }
+]

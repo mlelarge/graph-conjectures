@@ -1,0 +1,22 @@
+{
+  "review_id": "2504.08266__00",
+  "safe_id": "2504.08266",
+  "arxiv_id": "2504.08266",
+  "conjecture_title": "Question 1.4",
+  "paper_title": "$\\chi$-Boundedness and Neighbourhood Complexity of Bounded Merge-Width Graphs",
+  "published": "2025-06-16",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The source paper (arXiv:2504.08266) proves $\\chi$-boundedness for bounded merge-width graphs using radius-2 merge-width in an essential way (Lemma 4.1), but leaves Question 1.4 open: whether the class $\\{G : \\operatorname{mw}_1(G) \\leq k\\}$ is $\\chi$-bounded for arbitrary $k$. The authors note that a negative answer would require constructing a class with bounded radius-1 merge-width, bounded clique number, and unbounded chromatic number — necessarily containing arbitrarily large bicliques. No follow-up paper resolving this question has been found in the indexed literature as of May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "merge-width chi-boundedness radius-1 Bonamy Geniet 2504.08266",
+    "mw1 merge-width biclique chi-bounded graph classes 2025",
+    "merge-width radius-1 chi-bounded open question 2025 2026 graph theory arXiv"
+  ],
+  "notes": "No follow-up found. The conjecture is recent (June 2025) and the question is technically subtle: a counterexample must contain arbitrarily large bicliques, narrowing the search space significantly. The Barbados 2026 open problems PDF was fetched but not readable in text form. Six web calls were made in total (one over the cap of 5), with no evidence of resolution."
+}

@@ -1,0 +1,27 @@
+[
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Polynomial-time 3-coloring of $P_t$-free graphs",
+    "statement_text": "Is the 3-coloring problem solvable in polynomial time in the class of $P_t$-free graphs, for every fixed $t > 7$?",
+    "context_text": "It is stated in the abstract and introduction as the central open problem motivating the paper: whether the 3-coloring problem can be solved in polynomial time in the class of graphs without an induced path on $t$ vertices, for fixed $t$. The known boundary is: polynomial-time for $P_7$-free graphs (Bonomo et al. [2]), and NP-complete for $k \\geq 5$ colors on $P_6$-free graphs and for 4-coloring on $P_7$-free graphs (Huang [12]). The only unsettled complexity cases are $k=4, t=6$ and $k=3, t \\geq 8$.",
+    "attributed_to": "community open problem; surveyed in Golovach et al. [8]",
+    "attributed_year": null,
+    "paper_contribution": "Provides a polynomial-time approximation algorithm that, given a 3-colorable $P_t$-free graph $G$, computes a coloring with at most $\\max\\!\\left\\{5,\\, 2\\left\\lceil\\tfrac{t-1}{2}\\right\\rceil - 2\\right\\}$ colors (or $\\max\\!\\left\\{4,\\, \\left\\lceil\\tfrac{t-1}{2}\\right\\rceil + 1\\right\\}$ colors if $G$ is triangle-free), running in time $O((3^{t-2}+t^2)|E(G)|+|V(G)|)$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "No single originating author is cited for the open question; it is presented as a long-standing community problem. The paper source is truncated (text cuts off mid-proof of Lemma 10), so additional conjectures or open problems appearing later in the paper (e.g., near Theorem 12 or in a concluding section) may be missing from this extraction.",
+    "arxiv_id": "1606.02967",
+    "paper_title": "Approximately coloring graphs without long induced paths",
+    "paper_authors": [
+      "Maria Chudnovsky",
+      "Oliver Schaudt",
+      "Sophie Spirkl",
+      "Maya Stein",
+      "Mingxian Zhong"
+    ],
+    "published": "2016-06-13",
+    "abs_url": "https://arxiv.org/abs/1606.02967",
+    "source": "pdf"
+  }
+]

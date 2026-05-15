@@ -1,0 +1,28 @@
+{
+  "review_id": "1907.12999__01",
+  "safe_id": "1907.12999",
+  "arxiv_id": "1907.12999",
+  "conjecture_title": "Conjecture on $MR_t(s,k)$ for $s \\geq 4$",
+  "paper_title": "Independence number in triangle-free graphs avoiding a minor",
+  "published": "2019-07-30",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "The conjecture that $MR_t(s,k) \\leq t^{1-\\varepsilon}k$ for $s \\geq 4$ and sufficiently large $t$ (with tightness at $\\varepsilon = 1/s$) remains open. The source paper (arXiv:1907.12999) establishes the $s=3$ case (triangle-free) and appeared in Proceedings of the AMS in 2025, but no follow-up resolving or substantially advancing the $s \\geq 4$ case was found in the indexed literature. The internal candidate reference (arXiv:2206.13635) addresses hypergraph coloring with excluded minors and does not engage with $MR_t(s,k)$ or independence numbers in $K_s$-free graphs.",
+  "since_posted": [],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2206.13635",
+      "verified": false,
+      "note": "Abstract is about hypergraph colorings with excluded $K_t$-minors (a Hadwiger-type result by Steiner); no mention of Dvořák-Yepremyan, $MR_t(s,k)$, or independence numbers in $K_s$-free graphs. Not directly relevant to this conjecture."
+    }
+  ],
+  "search_queries": [
+    "independence number Ks-minor-free triangle-free graphs Dvorak Yepremyan 1907.12999",
+    "MR_t independence number Ks-free minor-free graphs epsilon bound conjecture",
+    "independence number Ks-free Ks-minor-free graphs epsilon bound 2020 2021 2022 2023 2024 Dvorak Yepremyan follow-up"
+  ],
+  "notes": "No follow-up resolving the $s \\geq 4$ case was found after 5+ web queries. The paper was published in Proc. Amer. Math. Soc. (2025) — an AMS proceedings URL was found but returned HTTP 403. Confidence is medium rather than high because the conjecture dates to 2019 (nearly 7 years old), making the absence of a follow-up in this search less conclusive than for a very recent conjecture. The Semantic Scholar API indicated ~4 citing papers but their titles/content could not be fully retrieved within the call budget."
+}

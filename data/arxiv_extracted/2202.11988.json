@@ -1,0 +1,46 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Papadimitriou–Yannakakis NP-completeness Conjecture",
+    "statement_text": "The Exact Matching problem (EM) is NP-complete.",
+    "context_text": "Papadimitriou and Yannakakis introduced EM in 1982 while studying restricted minimum weight spanning tree problems, and conjectured it to be NP-complete. This was later cast into doubt when Mulmuley, Vazirani and Vazirani showed EM $\\in$ RP, making NP-hardness unlikely under standard complexity assumptions.",
+    "attributed_to": "Papadimitriou and Yannakakis",
+    "attributed_year": 1982,
+    "paper_contribution": "Proves EM is solvable in deterministic polynomial time for graphs of independence number at most $\\alpha$ (running time $n^{O(2^{O(\\alpha)})}$) and for bipartite graphs of bipartite independence number at most $\\beta$, providing new infinite families of graph classes for which EM is in P.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2202.11988",
+    "paper_title": "Exact Matching in Graphs of Bounded Independence Number",
+    "paper_authors": [
+      "Nicolas El Maalouly",
+      "Raphael Steiner"
+    ],
+    "published": "2022-07-13",
+    "abs_url": "https://arxiv.org/abs/2202.11988",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 3",
+    "statement_text": "The problem of counting perfect matchings in input graphs of independence number $2$ is $\\#P$-complete.",
+    "context_text": "The authors note that for all previously known graph classes on which EM is tractable (planar graphs, $K_{3,3}$-minor-free graphs, complete and complete bipartite graphs), counting perfect matchings is also polynomial. Their new results for graphs of independence number 2 break this alignment, since no polynomial counting scheme is known for this class and the authors believe counting is hard.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "The paper text is truncated before Section 6 (open problems), so additional open problems stated there could not be extracted.",
+    "arxiv_id": "2202.11988",
+    "paper_title": "Exact Matching in Graphs of Bounded Independence Number",
+    "paper_authors": [
+      "Nicolas El Maalouly",
+      "Raphael Steiner"
+    ],
+    "published": "2022-07-13",
+    "abs_url": "https://arxiv.org/abs/2202.11988",
+    "source": "pdf"
+  }
+]

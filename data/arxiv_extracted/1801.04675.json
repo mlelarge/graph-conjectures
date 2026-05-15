@@ -1,0 +1,48 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Polynomial Freiman–Ruzsa Conjecture",
+    "statement_text": "The bound in the Bogolyubov–Ruzsa lemma can be improved to $c_r(K) = K^{-O_r(1)}$.",
+    "context_text": "Theorem 2.3 (Bogolyubov–Ruzsa lemma) states that if $|A+A| \\leq K|A|$ in an abelian group of exponent at most $r$, then $2A-2A$ contains a subgroup of size at least $c_r(K)|A|$; the current best bound due to Sanders is $c_r(K) = e^{-O_r(\\log^4 2K)}$. The paper notes that the polynomial Freiman–Ruzsa conjecture, described as 'a central open problem in additive combinatorics', would follow from improving this to $c_r(K) = K^{-O_r(1)}$, which would also sharpen the exponent in the paper's Theorem 1.1.",
+    "attributed_to": "Freiman and Ruzsa",
+    "attributed_year": null,
+    "paper_contribution": "Uses Sanders's current best bound $c_r(K) = e^{-O_r(\\log^4 2K)}$ as an ingredient in the proof of the arithmetic regularity lemma (Theorem 1.1); the conjecture is cited only as motivating context for why the exponent $-d - o(1)$ in Theorem 1.1 might be improvable.",
+    "opg_lookup": true,
+    "confidence": "low",
+    "notes": "PDF source — the expression 'cr(K) = K−Or(1)' appears garbled; reconstructed as $c_r(K) = K^{-O_r(1)}$ from context. No specific attribution year or citation is given in the paper for the PFR conjecture itself.",
+    "arxiv_id": "1801.04675",
+    "paper_title": "Efficient arithmetic regularity and removal lemmas for induced bipartite patterns",
+    "paper_authors": [
+      "Noga Alon",
+      "Jacob Fox",
+      "Yufei Zhao"
+    ],
+    "published": "2019-04-11",
+    "abs_url": "https://arxiv.org/abs/1801.04675",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "General Induced Arithmetic Removal Lemma [27, Conjecture 5.3]",
+    "statement_text": "There exists a general induced arithmetic removal lemma.",
+    "context_text": "The paper observes that the standard reduction from arithmetic removal lemmas to (hyper)graph removal lemmas fails for induced patterns, and states that finding a general induced arithmetic removal lemma 'remains open', citing it as Conjecture 5.3 of reference [27] on arithmetic removal lemmas for linear systems. The present paper establishes such a lemma with polynomial bounds for the special case of bi-induced bipartite patterns in finite abelian groups of bounded exponent.",
+    "attributed_to": "authors of reference [27]",
+    "attributed_year": null,
+    "paper_contribution": "Proves Theorem 1.2, an arithmetic removal lemma with polynomial bounds: if $A \\subseteq G$ (finite abelian, exponent at most $r$) is $\\varepsilon$-far from bi-induced-$F$-free, then a uniform random map $\\phi: V(F) \\to G$ bi-induces $F$ with probability at least $\\varepsilon^{O(|V(F)|^3)}$, resolving the conjecture for bi-induced bipartite patterns.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "Reference [27] is not identified by full citation in the extracted text; the conjecture is cited only as '[27, Conjecture 5.3]'. Statement text is necessarily paraphrased as the precise original formulation is not reproduced in this paper.",
+    "arxiv_id": "1801.04675",
+    "paper_title": "Efficient arithmetic regularity and removal lemmas for induced bipartite patterns",
+    "paper_authors": [
+      "Noga Alon",
+      "Jacob Fox",
+      "Yufei Zhao"
+    ],
+    "published": "2019-04-11",
+    "abs_url": "https://arxiv.org/abs/1801.04675",
+    "source": "pdf"
+  }
+]

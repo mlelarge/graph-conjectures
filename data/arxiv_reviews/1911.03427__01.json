@@ -1,0 +1,34 @@
+{
+  "review_id": "1911.03427__01",
+  "safe_id": "1911.03427",
+  "arxiv_id": "1911.03427",
+  "conjecture_title": "Informal Conjecture (Induced Arithmetic Removal for Arbitrary Abelian Groups)",
+  "paper_title": "Induced arithmetic removal: complexity 1 patterns over finite fields",
+  "published": "2019-11-08",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The conjecture asking for an induced arithmetic removal lemma for arbitrary complexity-1 patterns with integer coefficients over arbitrary abelian groups remains open. A 2024 paper by Gladkova (arXiv:2412.15170) extends the Fox–Tidor–Zhao result by achieving complete removal for partition-regular complexity-1 patterns, but stays within the finite-field setting and does not address the arbitrary abelian group case. No work resolving the conjecture over general abelian groups was found in the indexed literature.",
+  "since_posted": [
+    {
+      "title": "Induced arithmetic removal for partition-regular patterns of complexity 1",
+      "authors": "V. Gladkova",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2412.15170",
+      "arxiv_id": "2412.15170",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves complete induced arithmetic removal for partition-regular complexity-1 patterns over finite fields, extending the Fox–Tidor–Zhao framework, but does not address the extension to arbitrary abelian groups."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Fox Tidor Zhao \"induced arithmetic removal\" abelian groups conjecture",
+    "arxiv 1911.03427 induced arithmetic removal complexity finite fields citations",
+    "\"induced arithmetic removal\" \"abelian groups\" 2022 2023 2024 2025 generalization"
+  ],
+  "notes": "The conjecture is deliberately left informal in the source paper due to unresolved issues with infinite-complexity patterns and trivial solutions. The 2024 Gladkova paper is the most directly related follow-up work but remains restricted to finite fields. No resolution over arbitrary abelian groups was found."
+}

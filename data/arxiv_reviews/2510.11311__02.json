@@ -1,0 +1,23 @@
+{
+  "review_id": "2510.11311__02",
+  "safe_id": "2510.11311",
+  "arxiv_id": "2510.11311",
+  "conjecture_title": "Question 6.3",
+  "paper_title": "Extending Thomassen's conjecture to directed graphs",
+  "published": "2025-10-13",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Question 6.3 of arXiv:2510.11311 asks which orientations of C_4 are avoidable; it remains open as of May 2026. The paper itself partially resolves the question: the anti-directed orientation of C_4 is not avoidable (as a corollary of Theorem 1.3, which shows one-directed complete bipartite graphs are unavoidable). The orientation consisting of two parallel directed paths of length two is identified as the hardest remaining case, with the authors expecting its resolution to settle the full question. No follow-up work resolving Question 6.3 was found.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "avoidable orientation C4 directed graph height function digraph 2025",
+    "Christoph Janzer Petrova Steiner Thomassen conjecture directed graphs arXiv 2510.11311",
+    "avoidable digraph orientation C4 \"two parallel directed paths\" 2025 2026",
+    "Christoph Janzer Petrova Steiner avoidable digraph C4 orientation 2026 follow-up"
+  ],
+  "notes": "The paper partially answers its own question: the anti-directed C_4 is unavoidable (Theorem 1.3), while the directed C_4 (one direction) falls under avoidable orientations of even cycles. The orientation of two parallel directed paths of length two remains the key open case. Question 6.4 (Eulerian-avoidability of all C_4 orientations) is a related open problem. No follow-up paper addressing Question 6.3 was found in searches through May 2026."
+}

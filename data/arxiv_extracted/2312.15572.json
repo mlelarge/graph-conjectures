@@ -1,0 +1,117 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Erdős-Hajnal Conjecture (Conjecture 1.1)",
+    "statement_text": "Every proper hereditary class of graphs has the Erdős-Hajnal property.",
+    "context_text": "A hereditary class $\\mathcal{C}$ has the Erdős-Hajnal property if there exists $c>0$ such that every graph $G\\in\\mathcal{C}$ has a clique or stable set of size at least $|G|^{c}$. This is one of the central open problems in graph theory, with surveys in MR1425208 and MR3150572.",
+    "attributed_to": "Erdős and Hajnal",
+    "attributed_year": 1977,
+    "paper_contribution": "Proves the conjecture for the special case of all proper hereditary classes of bounded VC-dimension (Theorem 1.2), and for all two-colourable tournaments in the tournament setting (Theorem 6.3).",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2312.15572",
+    "paper_title": "Induced subgraph density. VI. Bounded VC-dimension",
+    "paper_authors": [
+      "Tung Nguyen",
+      "Alex Scott",
+      "Paul Seymour"
+    ],
+    "published": "2025-09-10",
+    "abs_url": "https://arxiv.org/abs/2312.15572",
+    "source": "html"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Fox-Pach-Suk Conjecture",
+    "statement_text": "For every $d>0$, there exists $c>0$ such that every $n$-vertex graph of VC-dimension at most $d$ has a clique or stable set of size at least $n^{c}$.",
+    "context_text": "Fox, Pach, and Suk came close to settling this in their 2019 paper by proving a bound of $2^{(\\log n)^{1-o(1)}}$, where the constant depending on the VC-dimension is hidden in the $o(1)$ term. The conjecture is a special case of the Erdős-Hajnal conjecture for the hereditary class of graphs of bounded VC-dimension.",
+    "attributed_to": "Fox, Pach, and Suk",
+    "attributed_year": 2019,
+    "paper_contribution": "Fully confirms the conjecture, proving that every graph $G$ of VC-dimension at most $d$ contains a clique or stable set of size at least $|G|^{c_d}$ for an explicit $c_d>0$ satisfying $c_d \\geq 2^{-2^{O(d)}}$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Stated without a separate labelled conjecture environment; attributed explicitly in the abstract and introduction with cite MR3943496.",
+    "arxiv_id": "2312.15572",
+    "paper_title": "Induced subgraph density. VI. Bounded VC-dimension",
+    "paper_authors": [
+      "Tung Nguyen",
+      "Alex Scott",
+      "Paul Seymour"
+    ],
+    "published": "2025-09-10",
+    "abs_url": "https://arxiv.org/abs/2312.15572",
+    "source": "html"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Chernikov-Starchenko-Thomas Conjecture",
+    "statement_text": "Every graph definable in NIP structures has a clique or anti-clique of polynomial size.",
+    "context_text": "In the language of model theory, NIP (Not the Independence Property) structures generalise many natural algebraic examples. Chernikov, Starchenko, and Thomas conjectured a polynomial Erdős-Hajnal-type bound for graphs definable in such structures, extending the classical Erdős-Hajnal problem to a model-theoretic setting.",
+    "attributed_to": "Chernikov, Starchenko, and Thomas",
+    "attributed_year": 2021,
+    "paper_contribution": "Settles the conjecture as a corollary of the main result (Theorem 1.2), since graphs definable in NIP structures have bounded VC-dimension.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Stated without a separate labelled conjecture environment; attributed explicitly in the abstract with cite corresponding to reference [12].",
+    "arxiv_id": "2312.15572",
+    "paper_title": "Induced subgraph density. VI. Bounded VC-dimension",
+    "paper_authors": [
+      "Tung Nguyen",
+      "Alex Scott",
+      "Paul Seymour"
+    ],
+    "published": "2025-09-10",
+    "abs_url": "https://arxiv.org/abs/2312.15572",
+    "source": "html"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Polynomial Rödl Property Conjecture (Conjecture 1.4)",
+    "statement_text": "Every proper hereditary class of graphs has the polynomial Rödl property.",
+    "context_text": "Rödl's 1986 theorem showed that for any proper hereditary class there exists $\\delta(\\varepsilon)>0$ guaranteeing an $\\varepsilon$-dense induced bipartite subgraph; Fox and Sudakov conjectured the dependence can be taken polynomial in $\\varepsilon$ (i.e.~$\\delta = \\varepsilon^{c}$ for some $c>0$). This polynomial Rödl property would imply the Erdős-Hajnal conjecture, and the equivalence with related conjectures was further studied in subsequent work.",
+    "attributed_to": "Fox and Sudakov",
+    "attributed_year": 2008,
+    "paper_contribution": "Proves Conjecture 1.4 for every hereditary class of graphs of bounded VC-dimension, as a consequence of the main result (Theorem 1.5).",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2312.15572",
+    "paper_title": "Induced subgraph density. VI. Bounded VC-dimension",
+    "paper_authors": [
+      "Tung Nguyen",
+      "Alex Scott",
+      "Paul Seymour"
+    ],
+    "published": "2025-09-10",
+    "abs_url": "https://arxiv.org/abs/2312.15572",
+    "source": "html"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Tournament Erdős-Hajnal Conjecture (Conjecture 6.1)",
+    "statement_text": "Every tournament has the Erdős-Hajnal property.",
+    "context_text": "A tournament $Q$ has the Erdős-Hajnal property if there exists $c>0$ such that every $n$-vertex $Q$-free tournament admits a transitive subtournament with at least $n^{c}$ vertices. Alon, Pach, and Solymosi proved that this statement is equivalent to the Erdős-Hajnal conjecture (Conjecture 1.1), making it a central reformulation of that problem.",
+    "attributed_to": "Erdős and Hajnal",
+    "attributed_year": 1977,
+    "paper_contribution": "Proves the conjecture for every two-colourable tournament, which in particular completes the verification of the conjecture for all six-vertex tournaments.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "This statement is equivalent to Conjecture 1.1 (Erdős-Hajnal conjecture) as proved by Alon, Pach, and Solymosi (2001, MR1832443).",
+    "arxiv_id": "2312.15572",
+    "paper_title": "Induced subgraph density. VI. Bounded VC-dimension",
+    "paper_authors": [
+      "Tung Nguyen",
+      "Alex Scott",
+      "Paul Seymour"
+    ],
+    "published": "2025-09-10",
+    "abs_url": "https://arxiv.org/abs/2312.15572",
+    "source": "html"
+  }
+]

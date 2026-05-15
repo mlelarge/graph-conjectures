@@ -1,0 +1,46 @@
+[
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Problem 1",
+    "statement_text": "How large can a $(c, s)$-normal graph be?",
+    "context_text": "The authors define $N(c,s)$ as the maximum number of vertices of a $(c,s)$-normal graph, where a graph is $(c,s)$-normal if it admits a normal cover with cliques of sizes at most $c$ and stable sets of sizes at most $s$. They prove $N(c,s) \\leq 2^{c+s}$ and a lower bound of roughly $\\sqrt{5}^{\\,c}$ for $N(c,c)$, but describe the results as 'far from conclusive,' with the exact asymptotics analogous to open questions in Ramsey theory.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1601.01129",
+    "paper_title": "Minimal normal graph covers",
+    "paper_authors": [
+      "David Gajser",
+      "Bojan Mohar"
+    ],
+    "published": "2016-01-06",
+    "abs_url": "https://arxiv.org/abs/1601.01129",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Open Question (normality of random graphs)",
+    "statement_text": "Are random graphs $G(n,p)$ normal with high probability?",
+    "context_text": "The authors note that partial motivation for studying normal graphs with small clique and independence numbers came from this question. They explicitly state that as of the time of writing this question 'is still unresolved.'",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated in running prose without a labelled environment; explicitly flagged as unresolved by the authors.",
+    "arxiv_id": "1601.01129",
+    "paper_title": "Minimal normal graph covers",
+    "paper_authors": [
+      "David Gajser",
+      "Bojan Mohar"
+    ],
+    "published": "2016-01-06",
+    "abs_url": "https://arxiv.org/abs/1601.01129",
+    "source": "pdf"
+  }
+]

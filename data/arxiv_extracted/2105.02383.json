@@ -1,0 +1,48 @@
+[
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Problem 1.1 (Bucić–Letzter–Sudakov)",
+    "statement_text": "Is it true that $\\overrightarrow{r}_1(H) = O_\\Delta(n)$ for every acyclic digraph $H$ with $n$ vertices and maximum degree $\\Delta$?",
+    "context_text": "This is the directed analogue of the classical Burr–Erdős conjecture. Bucić, Letzter, and Sudakov posed it after proving that oriented Ramsey numbers of bounded-degree oriented trees are linear in the number of vertices. The present paper is centrally devoted to answering it.",
+    "attributed_to": "Bucić, Letzter, and Sudakov",
+    "attributed_year": null,
+    "paper_contribution": "Disproves the problem by constructing, for any $\\Delta \\geq 2$ and $n$ sufficiently large, an acyclic digraph $H$ on $n$ vertices with maximum degree at most $\\Delta$ satisfying $\\overrightarrow{r}_1(H) \\geq n^{\\Omega(\\Delta^{2/3}/\\log^{5/3}\\Delta)}$, showing that $\\overrightarrow{r}_1(H)$ is not always linear in $n$ for bounded-degree acyclic digraphs.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source; statement is simple and reads cleanly.",
+    "arxiv_id": "2105.02383",
+    "paper_title": "Ramsey numbers of sparse digraphs",
+    "paper_authors": [
+      "Jacob Fox",
+      "Xiaoyu He",
+      "Yuval Wigderson"
+    ],
+    "published": "2022-01-21",
+    "abs_url": "https://arxiv.org/abs/2105.02383",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Open problem on parameters governing $\\overrightarrow{r}_1(H)$",
+    "statement_text": "What natural parameters (analogous to degeneracy and vertex count for undirected graphs) determine the growth order of $\\overrightarrow{r}_1(H)$ for acyclic digraphs? In particular, is $\\overrightarrow{r}_1(H)$ polynomial or super-polynomial in $n$ when $H$ has bounded degree?",
+    "context_text": "For undirected graphs, the Ramsey number is governed by degeneracy and vertex count (Conlon–Fox–Sudakov conjecture, verified up to a $\\log^2 d$ factor). The authors introduce the notion of 'multiscale complexity' as a candidate parameter for the directed setting, but stress that the full picture remains unresolved and deserves further research.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated as prose in the introduction (no formal theorem environment); also reiterated in the conclusion.",
+    "arxiv_id": "2105.02383",
+    "paper_title": "Ramsey numbers of sparse digraphs",
+    "paper_authors": [
+      "Jacob Fox",
+      "Xiaoyu He",
+      "Yuval Wigderson"
+    ],
+    "published": "2022-01-21",
+    "abs_url": "https://arxiv.org/abs/2105.02383",
+    "source": "pdf"
+  }
+]

@@ -1,0 +1,34 @@
+{
+  "review_id": "1806.09726__02",
+  "safe_id": "1806.09726",
+  "arxiv_id": "1806.09726",
+  "conjecture_title": "Informal conjecture on generalization of Theorem 4 to all $\\tilde{r}(m,n)$",
+  "paper_title": "Online Ramsey Numbers and the Subgraph Query Problem",
+  "published": "2018-11-04",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "medium",
+  "summary": "The informal conjecture asks whether Krivelevich's generalization of the alteration method to all $r(m,n)$ can be extended to the online setting for all $\\tilde{r}(m,n)$. Guo and Warnke (arXiv:1909.02691, published 2023 in Journal of Graph Theory) apply a refined alteration method specifically to online graph Ramsey games, which is directly in the spirit of the conjecture; however, the abstract does not confirm that bounds for all $m$ are established, so a full resolution cannot be verified from available sources.",
+  "since_posted": [
+    {
+      "title": "Bounds on Ramsey Games via Alterations",
+      "authors": "He Guo, Lutz Warnke",
+      "year": 2019,
+      "venue": "Journal of Graph Theory",
+      "url": "https://arxiv.org/abs/1909.02691",
+      "arxiv_id": "1909.02691",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Refines the classical alteration method and applies it to online graph Ramsey games, extending beyond Krivelevich's single-edge-removal approach and likely addressing the conjecture about $\\tilde{r}(m,n)$ for general $m$, though the abstract does not specify the exact range of $m$ covered."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "online Ramsey numbers tilde r(m,n) lower bound alteration method Krivelevich 2018 2019 2020",
+    "arXiv 1806.09726 Conlon Fox Grinshpun He online Ramsey subgraph query problem",
+    "Guo online Ramsey alteration method lower bound arXiv 2022 2023"
+  ],
+  "notes": "The conjecture is informal, paralleling Krivelevich's extension of Erdős's alteration method from triangles to general cliques in the classical Ramsey setting. Guo and Warnke (1909.02691) is the most directly relevant follow-up: it refines the alteration method and applies it to online Ramsey games, but the abstract stops short of specifying whether all $m$ are covered. No counterexample or explicit full resolution was found. Xiaoyu He's personal papers page lists no subsequent work on $\\tilde{r}(m,n)$."
+}

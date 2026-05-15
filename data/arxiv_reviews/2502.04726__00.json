@@ -1,0 +1,23 @@
+{
+  "review_id": "2502.04726__00",
+  "safe_id": "2502.04726",
+  "arxiv_id": "2502.04726",
+  "conjecture_title": "Question 1.2",
+  "paper_title": "Lollipops, dense cycles and chords",
+  "published": "2025-10-10",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The paper introduces cyclic minors and defines f(ℓ) as the smallest minimum degree guaranteeing K_ℓ as a cyclic minor, proving f(ℓ)=O(ℓ²) in general and f(4)=3, 6≤f(5)≤ 8 exactly. Question 1.2 asks whether f(ℓ)=O(ℓ√ log ℓ), matching the classical Kostochka–de la Vega bound for standard K_ℓ-minors. No follow-up paper addressing this question has been found in the indexed literature as of May 2026, and the question remains open.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "cyclic minor minimum degree K_ell Dvořák Thomassé Trotignon 2025",
+    "\"cyclic minor\" \"minimum degree\" clique minor bound \"sqrt log\" graph theory 2025 2026",
+    "arXiv 2502.04726 cyclic minor lollipop chords cites follow-up",
+    "Dvořák Martins Thomassé Trotignon \"cyclic minor\" \"f(ell)\" OR \"f(l)\" OR \"cyclic clique minor\" 2025 2026"
+  ],
+  "notes": "No follow-up found after 5 web calls. The concept of cyclic minor is introduced in this paper itself, so Question 1.2 is the founding open problem for this new parameter. The classical [Kos82] and [dlV83] references establish O(ℓ√ log ℓ) for standard minors; bridging to cyclic minors is the open gap."
+}

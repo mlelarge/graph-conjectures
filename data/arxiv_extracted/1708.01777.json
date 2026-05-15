@@ -1,0 +1,71 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1 (Bang-Jensen et al.)",
+    "statement_text": "For every digraph $F$, the $F$-\\textsc{Subdivision} problem is polynomial-time solvable or NP-complete.",
+    "context_text": "Bang-Jensen et al. conjectured a full dichotomy for the $F$-Subdivision problem. The paper describes this as the central motivating conjecture and provides further support by classifying all 4-vertex digraphs $F$ (up to five exceptions) as tractable or intractable.",
+    "attributed_to": "Bang-Jensen et al.",
+    "attributed_year": null,
+    "paper_contribution": "Classifies all digraphs $F$ of order 4 as polynomial-time solvable or NP-complete, up to five exceptions $O_i$, $1 \\leq i \\leq 5$, providing strong evidence for the dichotomy in this case.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "The labeled header reads 'Conjecture 1' without an inline parenthetical, but the immediately preceding sentence explicitly attributes the conjecture to Bang-Jensen et al. [2].",
+    "arxiv_id": "1708.01777",
+    "paper_title": "Finding a subdivision of a prescribed digraph of order 4",
+    "paper_authors": [
+      "Frédéric Havet",
+      "A. Karolinna Maia",
+      "Bojan Mohar"
+    ],
+    "published": "2017-08-05",
+    "abs_url": "https://arxiv.org/abs/1708.01777",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 5 (Bang-Jensen et al.)",
+    "statement_text": "$F$-\\textsc{Subdivision} is NP-complete for every non-planar digraph $F$.",
+    "context_text": "Proposed by Bang-Jensen et al. as a counterpart to the tractability result for planar digraphs with no big vertices (Corollary 4), this conjecture predicts that non-planarity of $F$ is a sufficient condition for NP-completeness of $F$-Subdivision.",
+    "attributed_to": "Bang-Jensen et al.",
+    "attributed_year": null,
+    "paper_contribution": "Confirms the conjecture for all non-planar 4-vertex digraphs except possibly the five open cases $O_i$, $1 \\leq i \\leq 5$, since every other non-planar digraph of order 4 is shown to be intractable.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Header explicitly reads 'Conjecture 5 (Bang-Jensen et al. [2])'.",
+    "arxiv_id": "1708.01777",
+    "paper_title": "Finding a subdivision of a prescribed digraph of order 4",
+    "paper_authors": [
+      "Frédéric Havet",
+      "A. Karolinna Maia",
+      "Bojan Mohar"
+    ],
+    "published": "2017-08-05",
+    "abs_url": "https://arxiv.org/abs/1708.01777",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Complexity of W3-Subdivision (Bang-Jensen et al.)",
+    "statement_text": "Is $W_3$-\\textsc{Subdivision} polynomial-time solvable or NP-complete, where $W_3$ is the wheel digraph obtained from the directed 3-cycle $\\vec{C}_3$ by adding a dominating centre vertex?",
+    "context_text": "Bang-Jensen et al. proved that $W_2$-Subdivision is tractable and that $W_k$-Subdivision is NP-complete for all $k \\geq 4$, explicitly leaving the case $k = 3$ as an open problem. This paper resolves it as a by-product of the 4-vertex classification.",
+    "attributed_to": "Bang-Jensen et al.",
+    "attributed_year": null,
+    "paper_contribution": "Resolves the open problem: Theorem 6 implies $W_3$-Subdivision is polynomial-time solvable, since $W_3$ is an oriented graph of order 4 and all oriented graphs of order 4 are shown to be tractable.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "No labeled Problem environment in the source paper; open status is asserted in prose: 'The case of W3 was left as an open problem.'",
+    "arxiv_id": "1708.01777",
+    "paper_title": "Finding a subdivision of a prescribed digraph of order 4",
+    "paper_authors": [
+      "Frédéric Havet",
+      "A. Karolinna Maia",
+      "Bojan Mohar"
+    ],
+    "published": "2017-08-05",
+    "abs_url": "https://arxiv.org/abs/1708.01777",
+    "source": "pdf"
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.1 (Gallai's Path Decomposition Conjecture)",
+    "statement_text": "Every connected graph on $n$ vertices can be decomposed into $\\lceil \\frac{n}{2} \\rceil$ paths.",
+    "context_text": "Posed by Gallai in answer to a question of Erdős (see [4]). It is sharp: if every vertex has odd degree, each vertex must be an endpoint of some path in any path decomposition, requiring at least $\\lceil n/2 \\rceil$ paths. Lovász proved that every graph on $n$ vertices has a decomposition into paths and cycles of size $\\lfloor n/2 \\rfloor$, which settles the conjecture for graphs with at most one even-degree vertex.",
+    "attributed_to": "Gallai",
+    "attributed_year": null,
+    "paper_contribution": "Proves Gallai's conjecture for all connected graphs $G$ with $\\Delta(G) \\leq 5$, by showing that any smallest counterexample cannot contain any of five reducible configurations, forcing $G_E$ to be a forest and applying Pyber's earlier theorem.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1609.06257",
+    "paper_title": "Gallai's path decomposition conjecture for graphs of small maximum degree",
+    "paper_authors": [
+      "Marthe Bonamy",
+      "Thomas Perrett"
+    ],
+    "published": "2016-09-20",
+    "abs_url": "https://arxiv.org/abs/1609.06257",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Question 1.1",
+    "statement_text": "Does every connected graph $G$ that is not an odd semi-clique admit a path decomposition into $\\lfloor \\frac{|V(G)|}{2} \\rfloor$ paths?",
+    "context_text": "An odd semi-clique is a graph obtained from a clique on $2k+1$ vertices by deleting at most $k-1$ edges; a simple counting argument shows such a graph cannot be decomposed into $k$ paths. The authors ask whether odd semi-cliques are the only obstructions to a stronger, ceiling-free version of Gallai's conjecture.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1609.06257",
+    "paper_title": "Gallai's path decomposition conjecture for graphs of small maximum degree",
+    "paper_authors": [
+      "Marthe Bonamy",
+      "Thomas Perrett"
+    ],
+    "published": "2016-09-20",
+    "abs_url": "https://arxiv.org/abs/1609.06257",
+    "source": "pdf"
+  }
+]

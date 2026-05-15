@@ -1,0 +1,33 @@
+{
+  "review_id": "2301.13305__02",
+  "safe_id": "2301.13305",
+  "arxiv_id": "2301.13305",
+  "conjecture_title": "Open problem: tighter bounds for linear graph-codes",
+  "paper_title": "Graph-codes",
+  "published": "2023-02-06",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Versteegen (2023, arXiv:2310.19891) made significant progress on this problem: for any fixed graph H with an even number of edges, the maximum size of a linear H-code is O(2^{\\binom{n}{2}} / \\log n), and for almost all such H there exists \\varepsilon_H > 0 giving the stronger bound 2^{\\binom{n}{2}/n^{\\varepsilon_H}}. These are substantially tighter than the original Ramsey-based bounds from the source paper. However, tight bounds matching a lower construction are not yet established in general, so the full problem remains open.",
+  "since_posted": [
+    {
+      "title": "Upper bounds for linear graph codes",
+      "authors": "Leo Versteegen",
+      "year": 2023,
+      "venue": "Random Structures & Algorithms",
+      "url": "https://arxiv.org/abs/2310.19891",
+      "arxiv_id": "2310.19891",
+      "doi": "10.1002/rsa.21263",
+      "kind": "partial",
+      "claim": "Proves that for any fixed graph H with an even number of edges the maximum size of a linear H-code is O(2^{\\binom{n}{2}}/\\log n), and for almost all such H obtains the stronger polynomial-suppression bound 2^{\\binom{n}{2}/n^{\\varepsilon_H}}, directly addressing the open problem from Alon (2301.13305)."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Noga Alon \"graph-codes\" \"linear graph-codes\" symmetric difference arxiv 2301.13305",
+    "\"linear H-code\" \"symmetric difference\" graphs \"even number of edges\" tight bounds"
+  ],
+  "notes": "The open problem asks for tight (matching upper and lower) bounds; Versteegen's paper gives substantially improved upper bounds but full tightness for general H is still open. The published version appeared in Random Structures & Algorithms (2025)."
+}

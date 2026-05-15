@@ -1,0 +1,34 @@
+{
+  "review_id": "1803.10962__00",
+  "safe_id": "1803.10962",
+  "arxiv_id": "1803.10962",
+  "conjecture_title": "Conjecture 3",
+  "paper_title": "Single-conflict colouring",
+  "published": "2020-10-09",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 3 from arXiv:1803.10962 asserts a Heawood-type threshold for single-conflict colouring on surfaces: conflict k-colourability holds for graphs on a surface of Euler genus g when k ≥ C'√g and each edge carries at most Ck conflicts. The source paper itself establishes an O(√g log g) upper bound in this regime, leaving a logarithmic gap. A follow-up by Bradshaw and Masařík (arXiv:2112.06333, JGT 2025) resolves a separate question from the same paper concerning degenerate graphs but does not address Conjecture 3 for surfaces. No resolution of Conjecture 3 was found in the indexed literature.",
+  "since_posted": [
+    {
+      "title": "Single-conflict colorings of degenerate graphs",
+      "authors": "Peter Bradshaw, Tomáš Masařík",
+      "year": 2025,
+      "venue": "Journal of Graph Theory",
+      "url": "https://arxiv.org/abs/2112.06333",
+      "arxiv_id": "2112.06333",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves χ≠(G) = O(√d log n) for simple d-degenerate graphs, answering Question 1.5 of Dvořák–Esperet–Kang–Ozeki, but does not address Conjecture 3 about graphs embeddable on surfaces."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "single-conflict colouring surface Euler genus conflict k-colourable Dvořák Esperet Kang Ozeki",
+    "arxiv 1803.10962 conflict colouring conjecture surface genus follow-up",
+    "\"conflict colourable\" \"Euler genus\" surface conjecture 2022 2023 2024 2025"
+  ],
+  "notes": "Conjecture 3 was adjusted in v2 of the source paper (October 2020); the surrounding context specifies that C < 1/2 is forced by an instructive example, and a previous version incorrectly allowed C arbitrarily close to 1. The Bradshaw–Masařík paper (2112.06333) is the only confirmed post-2020 follow-up to the source paper, but it targets a different open problem (degenerate graphs). No paper resolving the surface-specific Conjecture 3 was found."
+}

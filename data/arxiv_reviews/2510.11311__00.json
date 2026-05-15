@@ -1,0 +1,21 @@
+{
+  "review_id": "2510.11311__00",
+  "safe_id": "2510.11311",
+  "arxiv_id": "2510.11311",
+  "conjecture_title": "Conjecture 6.1",
+  "paper_title": "Extending Thomassen's conjecture to directed graphs",
+  "published": "2025-10-13",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 6.1 from arXiv:2510.11311 asserts that all orientations of odd cycles are avoidable in the sense that for any orientation F of an odd cycle there exists d_F such that every digraph of minimum out-degree at least d_F(k) contains an F-free subdigraph of minimum out-degree at least k. The source paper establishes the base cases C_3 and C_5 (Theorem 1.1) as evidence, while the full conjecture remains open. No follow-up paper resolving or significantly extending Conjecture 6.1 was found in the indexed literature as of May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "avoidable orientations odd cycles digraph minimum out-degree Christoph Janzer Petrova Steiner 2025",
+    "arXiv 2510.11311 Thomassen conjecture directed graphs avoidable"
+  ],
+  "notes": "The closest related post-2025 work found is arXiv:2503.20045 ('Orientations of cycles in digraphs of high chromatic number and high minimum out-degree', published in Combinatorica 2026), but it predates the source paper (submitted March 2025 vs. October 2025) and works in a different framework (high chromatic number rather than the avoidability/minimum-out-degree-subgraph framework). No paper citing 2510.11311 and making progress on Conjecture 6.1 was found within the cap of 5 web calls."
+}

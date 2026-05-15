@@ -1,0 +1,48 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Gyárfás–Sumner Conjecture",
+    "statement_text": "For every forest $F$ and every integer $k \\geq 0$, every graph $G$ with $\\omega(G) \\leq k$ and $\\chi(G)$ sufficiently large contains $F$ as an induced subgraph.",
+    "context_text": "The paper notes that if $G$ has bounded clique number and very large chromatic number, no graph $H$ with a cycle can be a guaranteed induced subgraph (since $G$ can have arbitrarily large girth), but Gyárfás [9] and Sumner [20] conjectured that every forest does appear. The authors note they have nothing new to say about it in general, but prove it for string graphs as a consequence of their main results.",
+    "attributed_to": "Gyárfás and Sumner",
+    "attributed_year": null,
+    "paper_contribution": "The paper inadvertently proves the Gyárfás–Sumner conjecture for string graphs: since every tree is a tree of lamps, and the main result (1.9) shows every tree of lamps appears as an induced subgraph in every string graph with bounded clique number and sufficiently large chromatic number (using $\\mu = 3$ so that $K^1_{3,3}$ is excluded), the conjecture holds for the class of all string graphs.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1609.00314",
+    "paper_title": "Induced subgraphs of graphs with large chromatic number. V. Chandeliers and strings",
+    "paper_authors": [
+      "Maria Chudnovsky",
+      "Alex Scott",
+      "Paul Seymour"
+    ],
+    "published": "2021-05-21",
+    "abs_url": "https://arxiv.org/abs/1609.00314",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Conjecture: every forest of lanterns is pervasive",
+    "statement_text": "Every forest of lanterns $H$ is pervasive; that is, for all $\\nu, \\ell \\geq 0$ there exists $c$ such that every graph $G$ with $\\omega(G) \\leq \\nu$ and $\\chi(G) > c$ contains an induced subgraph isomorphic to an $(\\geq \\ell)$-subdivision of $H$.",
+    "context_text": "Results of Chalopin, Esperet, Li and Ossona de Mendez (via the Burling/Pawlik graphs) show that every pervasive graph must be a forest of lanterns. The authors state 'perhaps the converse is true, that every forest of lanterns is pervasive', and the abstract notes 'it is not known whether every forest of lanterns is pervasive in the class of all graphs.' The paper proves pervasiveness of all forests of lanterns in every $\\rho$-controlled ideal ($\\rho \\geq 2$) and in the class of string graphs, but the question for the ideal of all graphs remains open.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated as 'perhaps the converse is true' in the introduction and as an explicitly open problem in the abstract; no formal conjecture environment.",
+    "arxiv_id": "1609.00314",
+    "paper_title": "Induced subgraphs of graphs with large chromatic number. V. Chandeliers and strings",
+    "paper_authors": [
+      "Maria Chudnovsky",
+      "Alex Scott",
+      "Paul Seymour"
+    ],
+    "published": "2021-05-21",
+    "abs_url": "https://arxiv.org/abs/1609.00314",
+    "source": "pdf"
+  }
+]

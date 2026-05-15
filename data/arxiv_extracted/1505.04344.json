@@ -1,0 +1,25 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.1 (Bandelt and Dress)",
+    "statement_text": "The maximum quartet distance between two phylogenetic trees on $n$ leaves is $\\left(\\frac{2}{3} + o(1)\\right)\\binom{n}{4}$.",
+    "context_text": "Bandelt and Dress showed that the maximum quartet distance between two phylogenetic trees on $n$ leaves is always strictly smaller than $\\frac{14}{15}\\binom{n}{4}$ for $n \\geq 6$, and conjectured that the ratio between the maximum quartet distance and $\\binom{n}{4}$ converges to $2/3$ as $n \\to \\infty$. The lower bound of $2/3$ is achieved in expectation by the random leaf-labelling argument (Proposition 2.3), so the conjecture asserts that the average and maximum distances are asymptotically equal.",
+    "attributed_to": "Bandelt and Dress",
+    "attributed_year": null,
+    "paper_contribution": "Improves the best known upper bound from $\\frac{9}{10}\\binom{n}{4}$ to $(0.69 + o(1))\\binom{n}{4}$ using the flag-algebra machinery of Razborov; also establishes the conjecture exactly for the subclass of caterpillar trees, proving the maximum caterpillar quartet distance is at most $\\left(\\frac{2}{3} + o(1)\\right)\\binom{n}{4}$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source — math notation partially garbled in extraction, but the conjecture statement is unambiguous from context.",
+    "arxiv_id": "1505.04344",
+    "paper_title": "On the maximum quartet distance between phylogenetic trees",
+    "paper_authors": [
+      "Noga Alon",
+      "Humberto Naves",
+      "Benny Sudakov"
+    ],
+    "published": "2016-02-03",
+    "abs_url": "https://arxiv.org/abs/1505.04344",
+    "source": "pdf"
+  }
+]

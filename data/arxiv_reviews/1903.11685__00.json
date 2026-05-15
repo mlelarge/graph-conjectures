@@ -1,0 +1,23 @@
+{
+  "review_id": "1903.11685__00",
+  "safe_id": "1903.11685",
+  "arxiv_id": "1903.11685",
+  "conjecture_title": "Optimal n for $L^d_n$-list-colorability",
+  "paper_title": "Mixing properties of colorings of the $\\mathbb{Z}^d$ lattice",
+  "published": "2019-12-25",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Theorem 1.2 of arXiv:1903.11685 establishes that $[n]^d$ is $L^d_n$-list-colorable whenever $n \\geq d+2$, while the paper demonstrates non-list-colorability for $n < d+2$ in specific cases (e.g., $[2]^3$ is not $L^3_2$-list-colorable). The optimal threshold $n$ as a function of $d$ — that is, whether $n = d+2$ is always tight or whether improvements are possible for particular dimensions — remains an open question. No follow-up paper resolving this question was found in the published literature after the paper's posting.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "arXiv 1903.11685 list-colorable Z^d lattice colorings Chandgotia Spinka",
+    "list-colorability threshold lattice colorings mixing \"d+2\" Alon Briceño Chandgotia Magazinov Spinka",
+    "Chandgotia Spinka \"list-colorable\" lattice colorings optimal threshold follow-up 2020 2021 2022 2023 2024",
+    "Chandgotia \"list-colorability\" \"[n]^d\" optimal threshold lattice 2021 2022 2023 2024 2025"
+  ],
+  "notes": "No follow-up found across 5 web calls (2 searches + 3 fetches). The conjecture is recent (posted 2019, published in Combinatorics, Probability and Computing 2021) and the question of optimality of the $n \\geq d+2$ threshold is stated as an open problem in the paper itself (justified by Proposition 3.3). Absence of indexed follow-up supports high-confidence open status."
+}

@@ -1,0 +1,25 @@
+[
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Open Problem (linear-time 3-coloring output)",
+    "statement_text": "Does there exist a linear-time algorithm to output a 3-coloring of a triangle-free graph embedded in a fixed surface (with a bounded number of precolored boundary vertices), using ideas similar to those of Theorem 1.3?",
+    "context_text": "Theorem 1.4 gives a quadratic-time algorithm to output a 3-coloring in the affirmative case. The authors believe a linear-time algorithm for the output step exists via ideas analogous to those of the linear-time decision algorithm (Theorem 1.3), but note significant technical challenges in realising it.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated in running prose in the introduction: 'we believe that there exists a linear-time algorithm to output a 3-coloring using ideas similar to those of Theorem 1.3; however, there are significant technical challenges in designing it and we leave this as an open problem.' No labelled theorem environment.",
+    "arxiv_id": "1601.01197",
+    "paper_title": "Three-coloring triangle-free graphs on surfaces VII. A linear-time algorithm",
+    "paper_authors": [
+      "Zdenek Dvorak",
+      "Daniel Kral",
+      "Robin Thomas"
+    ],
+    "published": "2020-11-05",
+    "abs_url": "https://arxiv.org/abs/1601.01197",
+    "source": "pdf"
+  }
+]

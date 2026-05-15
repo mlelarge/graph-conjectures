@@ -1,0 +1,23 @@
+{
+  "review_id": "2604.13700__00",
+  "safe_id": "2604.13700",
+  "arxiv_id": "2604.13700",
+  "conjecture_title": "Problem 2",
+  "paper_title": "Openly disjoint cycles and directed tree-width of regular digraphs",
+  "published": "2026-04-26",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The paper defines $c_r$ as the minimum, over all $r$-regular digraphs $D$, of the largest number of openly disjoint cycles through a common vertex, proves that $c_r/r$ converges to a limit $L \\in [3/22, 1]$, and asks for the exact value of $L$. The paper was posted on 2026-04-26 and no follow-up work determining $L$ has appeared in the indexed literature as of 2026-05-14. The problem remains fully open.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Steiner \"openly disjoint cycles\" \"directed tree-width\" regular digraphs limit 2026",
+    "arxiv 2604.13700 Steiner \"c_r\" regular digraph cycle limit",
+    "Raphael Steiner \"Mader conjecture\" openly disjoint cycles r-regular digraph 2026",
+    "\"openly disjoint cycles\" \"regular digraph\" limit \"c_r\" Mader 2025 2026"
+  ],
+  "notes": "No follow-up found. The paper is very recent (posted 2026-04-26). The lower bound 3/22 comes from the main theorem of the paper; the upper bound 1 is trivial. The exact limit is unknown. Steiner's research page lists this paper as submitted but shows no companion or follow-up preprint."
+}

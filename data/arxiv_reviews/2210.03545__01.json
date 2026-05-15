@@ -1,0 +1,34 @@
+{
+  "review_id": "2210.03545__01",
+  "safe_id": "2210.03545",
+  "arxiv_id": "2210.03545",
+  "conjecture_title": "Informal Conjecture: r(K^(3)_4, S^(3)_n) and gr(G_{2x2}, K_n) have the same order",
+  "paper_title": "Hypergraph Ramsey numbers of cliques versus stars",
+  "published": "2022-10-07",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "The conjecture that $r(K^{(3)}_4, S^{(3)}_n)$ and $\\mathrm{gr}(G_{2\\times 2}, K_n)$ are of the same order remains open. A 2025 paper on Ramsey numbers of grid graphs (arXiv:2511.01215) establishes bounds $2^{\\Omega(\\log^2 k)} \\le \\mathrm{gr}(G_{2\\times 2}, K_k) \\le 2^{O(k^{2/3}\\log k)}$, which match in shape the known bounds for $r(K^{(3)}_4, S^{(3)}_n)$ and are consistent with the conjecture, but no polynomial relationship between the two quantities has been established. No paper has directly proved or disproved the conjecture.",
+  "since_posted": [
+    {
+      "title": "Ramsey numbers of grid graphs",
+      "authors": "not retrieved",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2511.01215",
+      "arxiv_id": "2511.01215",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Establishes $2^{\\Omega(\\log^2 k)} \\le \\mathrm{gr}(G_{2\\times 2}, K_k) \\le 2^{O(k^{2/3}\\log k)}$ and characterises $G_{2\\times 2}$ as exceptional among grid subgraphs; the bounds match the shape of the known bounds for $r(K^{(3)}_4, S^{(3)}_n)$, consistent with the conjecture, but no direct implication between the two quantities is established."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "hypergraph Ramsey cliques stars r(K4,Sn) gr(G_{2x2},K_n) 2210.03545",
+    "Conlon Fox He Mubayi Suk Verstraete hypergraph Ramsey clique star 2023 2024 follow-up",
+    "gr(G_{2x2} K_n) grid Ramsey number 2-coloring rectangle hypergraph 2023 2024 2025"
+  ],
+  "notes": "No paper directly resolves the conjecture. arXiv:2511.01215 (2025) provides new bounds on gr(G_{2x2}, K_k) whose shape matches those known for r(K^(3)_4, S^(3)_n), lending some plausibility to the conjecture, but does not prove the two quantities are polynomially related. Confidence is medium because the 2025 paper requires full-text reading to determine whether it contains a more precise comparison."
+}

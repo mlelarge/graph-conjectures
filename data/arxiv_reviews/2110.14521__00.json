@@ -1,0 +1,22 @@
+{
+  "review_id": "2110.14521__00",
+  "safe_id": "2110.14521",
+  "arxiv_id": "2110.14521",
+  "conjecture_title": "Conjecture 5",
+  "paper_title": "Active clustering for labeling training data",
+  "published": "2021-10-27",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 5 of arXiv:2110.14521 asserts that among all active clustering (AC) algorithms, the clique algorithm achieves minimal average query complexity when items are assigned to classes independently with fixed probabilities p_1 >= p_2 >= ... >= p_k. The paper itself provides Theorem 6 as supporting evidence, showing the clique algorithm's asymptotic expected query count equals sum_{i=1}^k i*p_i*n. A search of citing literature (via Semantic Scholar) yields six citing papers as of May 2026, none of which address this conjecture; the conjecture appears to remain open.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "active clustering clique algorithm optimal complexity Lutz de Panafieu Scott Stein 2110.14521",
+    "active clustering labeling training data clique algorithm minimal complexity random partition",
+    "arxiv cite 2110.14521 active clustering optimal algorithm pairwise queries 2022 2023 2024"
+  ],
+  "notes": "Semantic Scholar lists 6 citing papers (as of May 2026): Bastide & Groenland 2025 (distance query reconstruction), A3S 2024 (arXiv:2407.10196, general active clustering), Bastide & Groenland 2023 (arXiv:2306.05979), a handwriting paper, a deep constrained clustering paper, and a lexicographic unranking paper. None of these appears to address Conjecture 5. The conjecture is recent (NeurIPS 2021) and highly specific to the probabilistic AC model; no follow-up was found in the indexed literature."
+}

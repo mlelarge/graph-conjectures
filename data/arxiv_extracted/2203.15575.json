@@ -1,0 +1,26 @@
+[
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Question on $\\vec{\\chi}$-boundedness of $t$-chordal digraphs (Carbonero, Hompe, Moore, Spirkl [3])",
+    "statement_text": "For which integers $t \\geq 3$ is it true that the class of $t$-chordal digraphs (digraphs in which every induced directed cycle has length exactly $t$) with bounded clique number has bounded dichromatic number? That is, for which $t$ is this class $\\vec{\\chi}$-bounded?",
+    "context_text": "In their earlier paper [3], the same authors asked for which $t \\geq 3$ the class of $t$-chordal digraphs is $\\vec{\\chi}$-bounded. Aboulker, Bousquet, and de Verclos [1] subsequently answered this negatively for $t = 3$ by constructing 3-chordal digraphs with clique number at most 3 and arbitrarily large dichromatic number. The present paper extends the negative answer to all $t \\geq 3$.",
+    "attributed_to": "Carbonero, Hompe, Moore, and Spirkl",
+    "attributed_year": null,
+    "paper_contribution": "Proves that for every $t \\geq 3$ and every $N \\in \\mathbb{N}$ there exists a $t$-chordal digraph $D$ with $\\omega(D) \\leq 3$ (and $\\omega(D) \\leq 2$ when $t > 3$) and $\\vec{\\chi}(D) \\geq N$, thereby answering the question in the negative for all $t \\geq 3$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "The question was posed by the identical author group in their prior paper [3]; reference [3] is not fully identified in the extracted text, so attributed_year is null.",
+    "arxiv_id": "2203.15575",
+    "paper_title": "Digraphs with all induced directed cycles of the same length are not $\\vecχ$-bounded",
+    "paper_authors": [
+      "Alvaro Carbonero",
+      "Patrick Hompe",
+      "Benjamin Moore",
+      "Sophie Spirkl"
+    ],
+    "published": "2022-10-14",
+    "abs_url": "https://arxiv.org/abs/2203.15575",
+    "source": "pdf"
+  }
+]

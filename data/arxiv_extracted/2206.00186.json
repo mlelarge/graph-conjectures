@@ -1,0 +1,46 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Hadwiger's Conjecture",
+    "statement_text": "Every graph with chromatic number at least $t$ contains the complete graph $K_t$ on $t$ vertices as a minor.",
+    "context_text": "Hadwiger conjectured this in 1943; it remains wide open for every $t \\geq 7$. The paper focuses on the special case $\\alpha(G) \\leq 2$, where the conjecture predicts a $K_{\\lceil|V(G)|/2\\rceil}$ minor, described as \"still very challenging\" even in this restricted setting.",
+    "attributed_to": "Hadwiger",
+    "attributed_year": 1943,
+    "paper_contribution": "Proves that every graph $G$ with $\\alpha(G) \\leq 2$ contains a minor $H$ with $|V(H)| = \\lceil|V(G)|/2\\rceil$ and at least $(\\gamma - o(1))\\binom{|V(H)|}{2}$ edges where $\\gamma = 0.986882\\ldots$, establishing a dense minor of the exact size predicted by the conjecture for this case (fewer than $1/76$ of all possible edges missing), as progress toward the complete minor.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2206.00186",
+    "paper_title": "Dense minors of graphs with independence number two",
+    "paper_authors": [
+      "Sergey Norin",
+      "Paul Seymour"
+    ],
+    "published": "2022-06-01",
+    "abs_url": "https://arxiv.org/abs/2206.00186",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Informal conjecture on improving the $g(t)$ lower bound",
+    "statement_text": "The factor $1/4$ in $g(t) \\geq t(t+2)/8$ can likely be significantly improved. However it appears to be quite challenging, for example, to show that every graph with chromatic number at least $t$ contains a minor on $t$ vertices with at most one tenth of all possible edges missing.",
+    "context_text": "The authors define $g(t)$ as the maximum number of edges guaranteed in a $t$-vertex minor of any graph with chromatic number at least $t$. Mader's theorem yields $g(t) \\geq t(t+2)/8$; the authors believe this is far from the true value, posing a density of $9/10$ as an example of a seemingly hard intermediate target for general graphs.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated as a remark in the introduction without a labelled environment; language 'can likely' and 'appears to be quite challenging' signals authorial belief rather than a formal conjecture.",
+    "arxiv_id": "2206.00186",
+    "paper_title": "Dense minors of graphs with independence number two",
+    "paper_authors": [
+      "Sergey Norin",
+      "Paul Seymour"
+    ],
+    "published": "2022-06-01",
+    "abs_url": "https://arxiv.org/abs/2206.00186",
+    "source": "pdf"
+  }
+]

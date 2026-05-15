@@ -1,0 +1,52 @@
+[
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Question 1.7",
+    "statement_text": "For fixed $k \\geq 4$, is there a polynomial-time algorithm that, given a $k$-connected graph $G$ with maximal local connectivity $k$, finds a $k$-colouring of $G$, or determines that none exists?",
+    "context_text": "Theorem 1.2 gives a polynomial-time algorithm for $k$-colouring when restricted to $\\hat{\\mathcal{C}}^k_1$ (k-connected graphs with maximal local edge-connectivity $k$). The complexity for the more general class $\\hat{\\mathcal{C}}^k_2$ (k-connected graphs with maximal local connectivity $k$) remains open for $k \\geq 4$.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1505.01616",
+    "paper_title": "Colouring graphs with constraints on connectivity",
+    "paper_authors": [
+      "Pierre Aboulker",
+      "Nick Brettell",
+      "Frédéric Havet",
+      "Dániel Marx",
+      "Nicolas Trotignon"
+    ],
+    "published": "2016-10-14",
+    "abs_url": "https://arxiv.org/abs/1505.01616",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.8",
+    "statement_text": "For fixed $k \\geq 4$, there is a polynomial-time algorithm that, given a graph $G$ with maximal local edge-connectivity $k$, finds a $k$-colouring of $G$, or determines that none exists.",
+    "context_text": "The paper shows that 3-colourability is NP-complete for graphs in $\\hat{\\mathcal{C}}^k_1$ when $k \\geq 4$, so computing the chromatic number or 3-colouring is NP-hard in this class; however, the complexity of $k$-colouring itself for graphs with maximal local edge-connectivity $k$ is unresolved, motivating this conjecture.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "The paper remarks that Stiebitz and Toft have recently announced a resolution of this conjecture in the affirmative [24].",
+    "arxiv_id": "1505.01616",
+    "paper_title": "Colouring graphs with constraints on connectivity",
+    "paper_authors": [
+      "Pierre Aboulker",
+      "Nick Brettell",
+      "Frédéric Havet",
+      "Dániel Marx",
+      "Nicolas Trotignon"
+    ],
+    "published": "2016-10-14",
+    "abs_url": "https://arxiv.org/abs/1505.01616",
+    "source": "pdf"
+  }
+]

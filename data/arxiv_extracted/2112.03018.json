@@ -1,0 +1,23 @@
+[
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Open Problem (Bollobás, Leader, and Walters)",
+    "statement_text": "Is it possible that $\\mathrm{Val}_C < \\mathrm{Val}_R$ for some game space $X$ and some $k$? In particular, is it possible that both players, the cops and the robber, win the game?",
+    "context_text": "Bollobás, Leader, and Walters posed this as the main open problem in their influential work providing a general setup for pursuit-evasion games on metric spaces. The question asks whether a gap can exist between the guaranteed outcomes for the two sides, i.e., whether the game fails to have a min-max value.",
+    "attributed_to": "Bollobás, Leader, and Walters",
+    "attributed_year": 2012,
+    "paper_contribution": "Answers the question in the negative for the geodesic-space version of the game: the paper's definition of the game and its approximation by finite discrete games yields $\\mathrm{Val}_C = \\mathrm{Val}_R$ (Theorem 12), establishing a min-max theorem.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "PDF source — statement reconstructed from prose description; no labelled theorem environment visible. Attribution year inferred from knowledge of Bollobás–Leader–Walters (GAFA 2012); not confirmed from bibliography in extracted text, which is truncated.",
+    "arxiv_id": "2112.03018",
+    "paper_title": "Min-max theorem for the game of Cops and Robber on geodesic spaces",
+    "paper_authors": [
+      "Bojan Mohar"
+    ],
+    "published": "2021-12-06",
+    "abs_url": "https://arxiv.org/abs/2112.03018",
+    "source": "pdf"
+  }
+]

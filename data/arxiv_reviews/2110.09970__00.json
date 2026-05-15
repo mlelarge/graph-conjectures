@@ -1,0 +1,22 @@
+{
+  "review_id": "2110.09970__00",
+  "safe_id": "2110.09970",
+  "arxiv_id": "2110.09970",
+  "conjecture_title": "Open Problem: characterisation of ℓ-holed graphs for ℓ ∈ {4, 5, 6}",
+  "paper_title": "Graphs with all holes the same length",
+  "published": "2023-12-21",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The source paper establishes a complete structural description of $\\ell$-holed graphs for all $\\ell \\geq 7$ (Theorem 1.3) but explicitly leaves the cases $\\ell \\in \\{4, 5, 6\\}$ open. A related preprint (arXiv:2203.11571, 'When all holes have the same length') also restricts to $\\ell \\geq 7$ and does not address the open cases. No follow-up work providing a structural characterisation for $\\ell = 4$, $5$, or $6$ was found in the indexed literature as of May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "graphs all holes same length structural description 4-holed 5-holed 6-holed Cook Seymour Trotignon Vušković",
+    "arxiv 2110.09970 citing papers l-holed graphs characterization",
+    "\"5-holed graphs\" OR \"4-holed graphs\" structural characterization holes length five four 2024 2025 2026"
+  ],
+  "notes": "arXiv:2203.11571 ('When all holes have the same length', submitted March 2022) addresses the same class of graphs but is also restricted to $\\ell \\geq 7$; it does not resolve the open problem for $\\ell \\in \\{4, 5, 6\\}$. The case $\\ell = 5$ is noted in the source paper as connected to algebraic combinatorics and commutative algebra (via reference [12]), but no complete structural description exists. No citing papers resolving the conjecture were found after five web calls."
+}

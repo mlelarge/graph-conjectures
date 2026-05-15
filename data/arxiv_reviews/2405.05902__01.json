@@ -1,0 +1,33 @@
+{
+  "review_id": "2405.05902__01",
+  "safe_id": "2405.05902",
+  "arxiv_id": "2405.05902",
+  "conjecture_title": "Conjecture 6.1",
+  "paper_title": "The largest subgraph without a forbidden induced subgraph",
+  "published": "2024-06-08",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "solved",
+  "confidence": "high",
+  "summary": "Conjecture 6.1 from arXiv:2405.05902, asserting that ex(Gamma, P_{C_{2l}}) <= C t^{1-1/l} n^{1+1/l} for every (c,t)-sparse graph Gamma, was resolved by Ding, Gao, Liu, Luan, and Sun in November 2024. Their paper arXiv:2411.12659 proves that if an n-vertex (c,t)-sparse graph has at least C t^{1-1/l} n^{1+1/l} edges then it must contain an induced copy of C_{2l}, establishing the conjectured bound.",
+  "since_posted": [
+    {
+      "title": "Induced even cycles in locally sparse graphs",
+      "authors": "Laihao Ding, Jun Gao, Hong Liu, Bingyu Luan, Shumin Sun",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2411.12659",
+      "arxiv_id": "2411.12659",
+      "doi": null,
+      "kind": "proof",
+      "claim": "Proves that every (c,t)-sparse n-vertex graph with at least C t^{1-1/l} n^{1+1/l} edges contains an induced copy of C_{2l}, thereby resolving the conjecture of Fox, Nenadov, and Pham."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "induced Turán number even cycles sparse graph Fox Nenadov Pham 2405.05902",
+    "ex(Gamma, P_{C_{2l}}) sparse graph \"induced Turán\" even cycle clique quotient"
+  ],
+  "notes": "arXiv:2411.12659 (submitted 2024-11-19) explicitly states in its abstract that it resolves the conjecture of Fox, Nenadov and Pham, with the bound matching Conjecture 6.1 exactly."
+}

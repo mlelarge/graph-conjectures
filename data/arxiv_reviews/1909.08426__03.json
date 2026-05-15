@@ -1,0 +1,35 @@
+{
+  "review_id": "1909.08426__03",
+  "safe_id": "1909.08426",
+  "arxiv_id": "1909.08426",
+  "conjecture_title": "Conjecture 2",
+  "paper_title": "When Maximum Stable Set can be solved in FPT time",
+  "published": "2019-09-18",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 2 from arXiv:1909.08426 asserts that MIS is FPT in $P_\\ell(t)$-free graphs for all integers $t$ and $\\ell$; as of May 2026 it remains open. The source paper itself establishes the $\\ell=4$, first-coordinate-1 case (MIS FPT in $P(1,t,t,t)$-free graphs for every fixed $t\\geq 1$). The smallest explicitly open instance, P$_7$-free graphs ($t=1$, $\\ell=7$), is still not known to be FPT; a 2025 ISAAC paper proves polynomial-time tractability of CMSO$_2$-definable problems (including MIS) in P$_7$-free graphs of bounded clique number, which is a weaker and structurally different result from FPT on all P$_7$-free graphs.",
+  "since_posted": [
+    {
+      "title": "Sparse Induced Subgraphs in P₇-Free Graphs of Bounded Clique Number",
+      "authors": "authors not retrieved",
+      "year": 2025,
+      "venue": "ISAAC 2025 (LIPIcs)",
+      "url": "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ISAAC.2025.20",
+      "arxiv_id": null,
+      "doi": "10.4230/LIPIcs.ISAAC.2025.20",
+      "kind": "partial",
+      "claim": "Proves polynomial-time algorithms for CMSO₂-definable problems including MIS on P₇-free graphs of bounded clique number, extending prior quasipolynomial and polynomial results to this restricted subclass but not resolving FPT for general P₇-free graphs."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Maximum Independent Set FPT P7-free graphs parameterized complexity",
+    "MIS FPT clique-substituted path free graphs 1909.08426 Bonnet Bousquet Thomassé Watrigant",
+    "Independent Set FPT P_ell Pl(t) clique-substituted path free graphs 2021 2022 2023 2024 2025",
+    "Maximum Independent Set FPT P7-free OR P_7-free parameterized 2022 2023 2024 2025 arxiv"
+  ],
+  "notes": "No follow-up paper resolving the full conjecture or proving FPT for general P₇-free graphs was found across five web searches. The 2025 ISAAC paper (verified via WebFetch) makes progress on P₇-free graphs of bounded clique number in polynomial time, but does not cite 1909.08426 explicitly and addresses a different complexity notion than FPT. Authors of the ISAAC 2025 paper were not retrieved. The conjecture is relatively recent (~6 years) and the absence of resolution in the literature supports high-confidence open status."
+}

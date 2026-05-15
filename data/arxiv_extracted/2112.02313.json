@@ -1,0 +1,71 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Mohar's Conjecture",
+    "statement_text": "All the $k$-colorings of a graph are Kempe equivalent for $k > \\Delta$.",
+    "context_text": "Mohar conjectured that in the setting of Brooks' theorem, all $k$-colorings of a graph with maximum degree $\\Delta$ are Kempe equivalent when $k > \\Delta$. This was confirmed for non-regular graphs by Las Vergnas and Meyniel, for cubic graphs (except the 3-prism) by Feghali et al., and for $\\Delta$-regular graphs with $\\Delta > 4$ by Bonamy et al., but all known proofs yield potentially exponential-length sequences.",
+    "attributed_to": "Mohar",
+    "attributed_year": 2006,
+    "paper_contribution": "Proves that all $k$-colorings of an $n$-vertex graph $G$ with maximum degree at most $\\Delta \\leq k$ are equivalent up to $O(n^2)$ Kempe changes (Theorem 0.1), with the sole exception being $k = 3$ and $G$ the 3-prism, thereby establishing a polynomial diameter bound for the reconfiguration graph.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "PDF source — stated in prose without a labeled conjecture environment.",
+    "arxiv_id": "2112.02313",
+    "paper_title": "Kempe changes in degenerate graphs",
+    "paper_authors": [
+      "Marthe Bonamy",
+      "Vincent Delecroix",
+      "Clément Legrand-Duchesne"
+    ],
+    "published": "2021-12-04",
+    "abs_url": "https://arxiv.org/abs/2112.02313",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Cereceda's Conjecture",
+    "statement_text": "Any two $k$-colorings of a $d$-degenerate graph on $n$ vertices are equivalent up to $O(n^2)$ trivial Kempe changes (single-vertex recolorings) when $k > d + 2$.",
+    "context_text": "Cereceda conjectured a quadratic bound on the number of vertex recolorings needed to transform any $k$-coloring of a $d$-degenerate graph into any other. Bousquet and Heinrich proved an $O(n^{d+3})$ upper bound, but the conjecture remains open even for $d = 2$. Bonamy and Bousquet confirmed it for graphs of bounded treewidth.",
+    "attributed_to": "Cereceda",
+    "attributed_year": 2007,
+    "paper_contribution": "Extends the treewidth confirmation of Cereceda's conjecture (due to Bonamy and Bousquet) to the setting of non-trivial Kempe changes with one fewer color: proves any two $k$-colorings of an $n$-vertex graph of treewidth $\\mathrm{tw}$ are equivalent up to $O(\\mathrm{tw}\\cdot n^2)$ Kempe changes when $k > \\mathrm{tw} + 1$ (Theorem 0.3).",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "PDF source — stated in prose without a labeled conjecture environment. The paper's Theorem 0.3 is an analogue for non-trivial Kempe changes rather than a direct proof of Cereceda's conjecture, which remains open.",
+    "arxiv_id": "2112.02313",
+    "paper_title": "Kempe changes in degenerate graphs",
+    "paper_authors": [
+      "Marthe Bonamy",
+      "Vincent Delecroix",
+      "Clément Legrand-Duchesne"
+    ],
+    "published": "2021-12-04",
+    "abs_url": "https://arxiv.org/abs/2112.02313",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Polynomial Kempe sequences for degenerate graphs",
+    "statement_text": "Can any two $k$-colorings of a $(k-1)$-degenerate graph on $n$ vertices always be connected by a sequence of Kempe changes whose length is polynomial in $n$?",
+    "context_text": "Las Vergnas and Meyniel proved in 1981 that all $k$-colorings of a $d$-degenerate graph are Kempe equivalent when $k > d+1$, but their proof yields a sequence that may be exponential in the number of vertices. Whether a polynomial bound can be achieved is posed as an intriguing open question and is the central motivation for all three main results of the paper.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "PDF source — stated as an open question in the abstract and introduction without a labeled environment; no explicit attribution to prior authors.",
+    "arxiv_id": "2112.02313",
+    "paper_title": "Kempe changes in degenerate graphs",
+    "paper_authors": [
+      "Marthe Bonamy",
+      "Vincent Delecroix",
+      "Clément Legrand-Duchesne"
+    ],
+    "published": "2021-12-04",
+    "abs_url": "https://arxiv.org/abs/2112.02313",
+    "source": "pdf"
+  }
+]

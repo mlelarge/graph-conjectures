@@ -1,0 +1,65 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Hadwiger's Conjecture (Conjecture 1)",
+    "statement_text": "For every integer $t\\geq 2$, if $G$ is a graph which does not contain $K_{t}$ as a minor, then $\\chi(G)\\leq t-1$.",
+    "context_text": "Hadwiger's conjecture is described as perhaps the most important open problem in graph coloring. The entire paper is motivated by developing a hypergraph analogue of this conjecture, generalizing the notion of graph minors to hypergraphs and studying the resulting chromatic bounds.",
+    "attributed_to": "Hadwiger",
+    "attributed_year": 1943,
+    "paper_contribution": "Proves a weak hypergraph extension: for every $t\\geq 1$ there exists a finite integer $h(t)$ such that every hypergraph with no $K_t$-minor is $h(t)$-colorable, and establishes $\\left\\lceil\\frac{3}{2}(t-1)\\right\\rceil\\leq h(t)\\leq 2g(t)$ where $g(t)$ is the maximum chromatic number of $K_t$-minor-free graphs.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2206.13635",
+    "paper_title": "Coloring hypergraphs with excluded minors",
+    "paper_authors": [
+      "Raphael Steiner"
+    ],
+    "published": "2024-04-19",
+    "abs_url": "https://arxiv.org/abs/2206.13635",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 2",
+    "statement_text": "For every integer $t\\geq 2$ we have $h(t)=\\left\\lceil\\frac{3}{2}(t-1)\\right\\rceil$. In other words, if a hypergraph $H$ does not contain $K_{t}$ as a minor, then $\\chi(H)\\leq\\left\\lceil\\frac{3}{2}(t-1)\\right\\rceil$.",
+    "context_text": "The function $h(t)$ is the smallest integer such that every $K_t$-minor-free hypergraph is $h(t)$-colorable. The paper proves the lower bound $h(t)\\geq\\left\\lceil\\frac{3}{2}(t-1)\\right\\rceil$ by an explicit construction, and conjectures this lower bound is tight. The conjecture remains open even for $t=3$, where the best known upper bound is $4$.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2206.13635",
+    "paper_title": "Coloring hypergraphs with excluded minors",
+    "paper_authors": [
+      "Raphael Steiner"
+    ],
+    "published": "2024-04-19",
+    "abs_url": "https://arxiv.org/abs/2206.13635",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Problem 1",
+    "statement_text": "Is every $K_{3}$-minor-free hypergraph $3$-colorable?",
+    "context_text": "Conjecture 2 predicts $h(3)=3$, but the best known upper bound for the chromatic number of $K_3$-minor-free hypergraphs is $4$ (from Corollary 2 of the paper). Problem 1 isolates the smallest open case of Conjecture 2.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2206.13635",
+    "paper_title": "Coloring hypergraphs with excluded minors",
+    "paper_authors": [
+      "Raphael Steiner"
+    ],
+    "published": "2024-04-19",
+    "abs_url": "https://arxiv.org/abs/2206.13635",
+    "source": "html"
+  }
+]

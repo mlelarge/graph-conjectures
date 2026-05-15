@@ -1,0 +1,25 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Linear Arboricity Conjecture (Conjecture 1.1)",
+    "statement_text": "Let $G$ be a graph of maximum degree $\\Delta$. Then, $la(G) \\leq \\left\\lceil \\frac{\\Delta + 1}{2} \\right\\rceil$.",
+    "context_text": "The linear arboricity of a graph $G$, denoted $la(G)$, is the minimum number of edge-disjoint linear forests whose union covers all edges of $G$. The lower bound $la(G) \\geq \\lceil \\Delta/2 \\rceil$ follows from a simple counting argument for regular graphs, and this conjecture asserts it is tight. The conjecture has been verified in special cases and for almost all regular graphs of constant degree, but no asymptotic improvement to the error term in the general upper bound had been made since Alon and Spencer in 1992.",
+    "attributed_to": "Akiyama, Exoo, and Harary",
+    "attributed_year": 1980,
+    "paper_contribution": "Proves that for any $\\Delta$-regular graph $G$, $la(G) \\leq \\frac{\\Delta}{2} + C\\Delta^{2/3-\\alpha}$ for absolute constants $\\alpha > 0$ and $C > 0$, improving the Alon–Spencer bound $\\frac{\\Delta}{2} + O(\\Delta^{2/3}(\\log\\Delta)^{1/3})$ by a polynomial factor; also gives better bounds for graphs that are sufficiently good spectral expanders.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source; the conjecture statement and notation are cleanly readable. The paper title 'Towards the linear arboricity conjecture' directly signals this is the central object of study.",
+    "arxiv_id": "1809.04716",
+    "paper_title": "Towards the linear arboricity conjecture",
+    "paper_authors": [
+      "Asaf Ferber",
+      "Jacob Fox",
+      "Vishesh Jain"
+    ],
+    "published": "2018-09-13",
+    "abs_url": "https://arxiv.org/abs/1809.04716",
+    "source": "pdf"
+  }
+]

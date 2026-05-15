@@ -1,0 +1,25 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.2 (Dvořák–Král–Nejedlý–Škrekovski)",
+    "statement_text": "There exists $\\Delta_0$ such that if $G$ is a planar graph with girth at least 5 and $\\Delta(G) \\geq \\Delta_0$ then $\\chi(G^2) \\leq \\Delta(G) + 2$.",
+    "context_text": "Dvořák, Král, Nejedlý, and Škrekovski conjectured this in 2008 as an analogue of their girth-6 result, where they showed $\\chi(G^2) \\leq \\Delta + 2$ for planar graphs of girth at least 6 with $\\Delta \\geq 8821$. The conjecture posits that a similar bound holds one girth level lower, at girth at least 5.",
+    "attributed_to": "Dvořák, Král, Nejedlý, and Škrekovski",
+    "attributed_year": 2008,
+    "paper_contribution": "Proves the conjecture in full and strengthens it to list-coloring and paintability: every planar graph of girth at least 5 with $\\Delta(G) \\geq \\Delta_0 = 2{,}992{,}901$ is square $(\\Delta(G)+2)$-choosable and square $(\\Delta(G)+2)$-paintable.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1508.03663",
+    "paper_title": "Planar Graphs of Girth at least Five are Square $(Δ+ 2)$-Choosable",
+    "paper_authors": [
+      "Marthe Bonamy",
+      "Daniel W. Cranston",
+      "Luke Postle"
+    ],
+    "published": "2018-06-21",
+    "abs_url": "https://arxiv.org/abs/1508.03663",
+    "source": "pdf"
+  }
+]

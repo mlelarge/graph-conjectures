@@ -1,0 +1,34 @@
+{
+  "review_id": "1710.10663__00",
+  "safe_id": "1710.10663",
+  "arxiv_id": "1710.10663",
+  "conjecture_title": "Informal Conjecture on exact asymptotics of maxcode_L for even L",
+  "paper_title": "List-decodable zero-rate codes",
+  "published": "2018-05-14",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "The source paper (Theorem 2) already established the lower bound $\\mathrm{maxcode}_L(\\varepsilon) \\geq c_L\\varepsilon^{-1}+O(1)$ for even $L$; the conjecture asks whether the matching upper bound also has leading constant $c_L$. A 2023/2025 follow-up by Resch, Yuan, and Zhang (arXiv:2309.01800, ITCS 2025) proves tight $\\Theta(1/\\varepsilon)$ bounds for list-decodable and list-recoverable zero-rate codes over general alphabets with unspecified constants, extending the Alon--Bukh--Polyanskiy framework but not addressing the exact leading constant $c_L$ for the binary even-$L$ case. No paper in the indexed literature appears to resolve the exact-constant question.",
+  "since_posted": [
+    {
+      "title": "Tight Bounds on List-Decodable and List-Recoverable Zero-Rate Codes",
+      "authors": "Nicolas Resch, Chen Yuan, Yihan Zhang",
+      "year": 2025,
+      "venue": "ITCS 2025 (LIPIcs vol. 325, article 82)",
+      "url": "https://arxiv.org/abs/2309.01800",
+      "arxiv_id": "2309.01800",
+      "doi": "10.4230/LIPIcs.ITCS.2025.82",
+      "kind": "partial",
+      "claim": "Proves matching upper and lower bounds of $\\Theta_{q,\\ell,L}(1/\\varepsilon)$ for zero-rate list-decodable and list-recoverable codes over general alphabets, generalising Alon--Bukh--Polyanskiy to $q\\geq 3$ and arbitrary list sizes, but the constants absorbed in $\\Theta_{q,\\ell,L}$ are not identified as $c_L$ for the binary even-$L$ case."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Alon Bukh Polyanskiy list-decodable zero-rate codes maxcode exact asymptotics 1710.10663",
+    "list-decodable codes zero-rate maxcode_L even asymptotics leading coefficient c_L",
+    "Resch Yuan Zhang tight bounds list-decodable zero-rate codes ITCS 2025 arxiv maxcode exact leading constant"
+  ],
+  "notes": "The closest follow-up, Resch--Yuan--Zhang (arXiv:2309.01800), proves tight-order bounds for general alphabets but does not pin down the exact binary constant $c_L=2^{-\\lfloor L/2\\rfloor}\\binom{L}{\\lfloor L/2\\rfloor}$ for even $L$. The specific conjecture on the exact leading coefficient appears to remain open in the published literature as of May 2026."
+}

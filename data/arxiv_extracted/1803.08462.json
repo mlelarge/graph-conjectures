@@ -1,0 +1,50 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Scott's Conjecture (Problem 4.1)",
+    "statement_text": "If $m = \\binom{n}{k}$, complete $k$-graphs have the smallest max-$r$-cut among all $m$-edge $k$-graphs.",
+    "context_text": "Scott proposed this conjecture for $r = 2$ as a natural generalisation of the graph case, where complete graphs are known to be extremal for the Edwards bound on max-2-cut excess. As a corollary of Theorem 3.1, it would imply a lower bound of $\\Omega(m^{(k-1)/k})$ on the maximum excess of an $m$-edge $k$-graph.",
+    "attributed_to": "Scott",
+    "attributed_year": null,
+    "paper_contribution": "Disproves the conjecture for all $k \\geq 3$: for $k = 3$, Theorem 1.1 shows that Steiner triple systems are extremal (not complete graphs); for $k > 3$, Theorem 1.3 shows that in the binomial random $k$-graph $G^k(n, n^{3-k})$, a.a.s. every $r$-cut has excess at most $O(n^2) = O(m^{2/3})$, which is smaller than the complete $k$-graph bound.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Referenced as [31, Problem 4.1]; publication year of [31] not recoverable from extracted text.",
+    "arxiv_id": "1803.08462",
+    "paper_title": "Hypergraph cuts above the average",
+    "paper_authors": [
+      "David Conlon",
+      "Jacob Fox",
+      "Matthew Kwan",
+      "Benny Sudakov"
+    ],
+    "published": "2019-06-27",
+    "abs_url": "https://arxiv.org/abs/1803.08462",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Θ(√m) excess conjecture for hypergraph cuts",
+    "statement_text": "For any fixed $2 \\leq r \\leq k$, the smallest maximum $r$-cut over all $m$-edge $k$-graphs has excess $\\Theta(\\sqrt{m})$.",
+    "context_text": "The authors describe this as a 'second plausible conjecture', motivated by: chromatic-number methods giving $\\Omega(\\sqrt{m})$ lower bounds; the standard deviation of a random cut in a linear $k$-graph being $\\Theta(\\sqrt{m})$; and the bound being tight for $r=k=2$ and for $r=2$, $k=3$. The paper's main Theorem 1.2 disproves this for all cases with $r \\geq 3$ or $k \\geq 4$, showing the excess is in fact $\\Omega(m^{5/9})$ in those cases.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated in the introduction as a 'natural guess' without a labelled environment; largely disproved by Theorem 1.2 of this same paper — the conjecture holds only for $r=2$, $k \\in \\{2,3\\}$.",
+    "arxiv_id": "1803.08462",
+    "paper_title": "Hypergraph cuts above the average",
+    "paper_authors": [
+      "David Conlon",
+      "Jacob Fox",
+      "Matthew Kwan",
+      "Benny Sudakov"
+    ],
+    "published": "2019-06-27",
+    "abs_url": "https://arxiv.org/abs/1803.08462",
+    "source": "pdf"
+  }
+]

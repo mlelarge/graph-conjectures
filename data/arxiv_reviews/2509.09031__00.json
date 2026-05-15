@@ -1,0 +1,21 @@
+{
+  "review_id": "2509.09031__00",
+  "safe_id": "2509.09031",
+  "arxiv_id": "2509.09031",
+  "conjecture_title": "Conjecture 1.2",
+  "paper_title": "Asymptotic structure. II. Path-width and additive quasi-isometry",
+  "published": "2025-10-02",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 1.2 from arXiv:2509.09031 proposes that for any graph class closed under edge contraction and edge subdivision, every (L,C)-quasi-isometry to a member of the class can be upgraded to a (1,C')-quasi-isometry. The source paper itself proves the special case where the class consists of graphs of bounded path-width. No post-October-2025 paper specifically resolving the full conjecture was found in a 5-call web search. A March 2025 paper (arXiv:2503.00798) on K_{2,3}-induced minor-free graphs establishes a related quasi-isometry result for bounded tree-width classes, but it predates this conjecture's statement.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "quasi-isometry graph class edge contraction subdivision multiplicative additive distortion Nguyen Scott Seymour 2025",
+    "arXiv 2509.09031 quasi-isometry path-width conjecture graph"
+  ],
+  "notes": "The conjecture is ≤ 1 year old (October 2025). The paper proves the bounded path-width special case. arXiv:2503.07448 (March 2025) reportedly disproves a conjecture about multiplicative-to-additive distortion improvement for general graphs, but that is distinct from Conjecture 1.2 which restricts to classes closed under edge contraction and subdivision. arXiv:2503.00798 (Chakraborty, March 2025) on K_{2,3}-induced minor-free graphs predates 2509.09031 and so cannot be a follow-up. No verified post-statement resolution was found."
+}

@@ -1,0 +1,94 @@
+[
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Havel's Problem",
+    "statement_text": "Does there exist a constant $d$ such that every planar graph in which every two distinct triangles are at distance at least $d$ is 3-colorable?",
+    "context_text": "Grünbaum conjectured that every planar graph with no intersecting triangles is 3-colorable, but this was disproved by Havel, who then formulated this more cautious question. Havel showed that if such a constant exists then $d \\geq 3$, and Aksionov and Mel'nikov later improved this lower bound to $d \\geq 4$.",
+    "attributed_to": "Havel",
+    "attributed_year": null,
+    "paper_contribution": "Proves a positive answer (Theorem 1.2): there exists an absolute constant $d$ such that every planar graph with every two distinct triangles at distance at least $d$ is 3-colorable; the proof yields an explicit but very large upper bound of roughly $10^{100}$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "0911.0885",
+    "paper_title": "Three-coloring triangle-free graphs on surfaces V. Coloring planar graphs with distant anomalies",
+    "paper_authors": [
+      "Zdenek Dvorak",
+      "Daniel Kral",
+      "Robin Thomas"
+    ],
+    "published": "2020-04-15",
+    "abs_url": "https://arxiv.org/abs/0911.0885",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Thomassen's Conjecture (exponentially many 3-colorings)",
+    "statement_text": "Every triangle-free planar graph has exponentially many 3-colorings.",
+    "context_text": "Thomassen conjectured that all triangle-free planar graphs have exponentially many 3-colorings. The paper resolves a special case via Corollary 1.6 by prescribing colors to a large independent set of vertices guaranteed by bounded maximum degree.",
+    "attributed_to": "Thomassen",
+    "attributed_year": null,
+    "paper_contribution": "Proves a special case (Corollary 1.6): for every $k \\geq 0$ there exists $c > 1$ such that every planar triangle-free graph $G$ of maximum degree at most $k$ and without separating 4-cycles has at least $c^{|V(G)|}$ distinct 3-colorings.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "The paper notes that once Conjecture 1.5 was confirmed by Dvořák and Lidický, the assumption of no separating 4-cycles in Corollary 1.6 can be dropped.",
+    "arxiv_id": "0911.0885",
+    "paper_title": "Three-coloring triangle-free graphs on surfaces V. Coloring planar graphs with distant anomalies",
+    "paper_authors": [
+      "Zdenek Dvorak",
+      "Daniel Kral",
+      "Robin Thomas"
+    ],
+    "published": "2020-04-15",
+    "abs_url": "https://arxiv.org/abs/0911.0885",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.4",
+    "statement_text": "There exists an absolute constant $d \\geq 2$ with the following property. Let $G$ be a plane triangle-free graph, let $S$ be a set of vertices of $G$ and let $\\psi : S \\to \\{1, 2, 3\\}$ be an arbitrary function. If the distance between every two vertices of $S$ is at least $d$, then $\\psi$ extends to a 3-coloring of $G$.",
+    "context_text": "This is a natural extension of Theorem 1.3 to the case of precolored single vertices, where forbidding separating 4-cycles should not be necessary. The paper shows in Theorem 5.1 that Conjecture 1.4 is implied by the seemingly simpler Conjecture 1.5.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "The paper states that Conjecture 1.5 was subsequently confirmed by Dvořák and Lidický [16], which implies Conjecture 1.4 is also true.",
+    "arxiv_id": "0911.0885",
+    "paper_title": "Three-coloring triangle-free graphs on surfaces V. Coloring planar graphs with distant anomalies",
+    "paper_authors": [
+      "Zdenek Dvorak",
+      "Daniel Kral",
+      "Robin Thomas"
+    ],
+    "published": "2020-04-15",
+    "abs_url": "https://arxiv.org/abs/0911.0885",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.5",
+    "statement_text": "There exists an absolute constant $d \\geq 2$ with the following property. Let $G$ be a plane triangle-free graph, let $C$ be a 4-cycle bounding a face of $G$ and let $v$ be a vertex of $G$. Let $\\psi$ be a 3-coloring of $C + v$. If the distance between $C$ and $v$ is at least $d$, then $\\psi$ extends to a 3-coloring of $G$.",
+    "context_text": "This statement, concerning the extendability of a precoloring of a facial 4-cycle together with a single distant vertex, is shown in Theorem 5.1 to imply Conjecture 1.4, making it a key reduction in the authors' framework.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "The paper explicitly states that Conjecture 1.5 was confirmed by Dvořák and Lidický [16] while the paper was under review.",
+    "arxiv_id": "0911.0885",
+    "paper_title": "Three-coloring triangle-free graphs on surfaces V. Coloring planar graphs with distant anomalies",
+    "paper_authors": [
+      "Zdenek Dvorak",
+      "Daniel Kral",
+      "Robin Thomas"
+    ],
+    "published": "2020-04-15",
+    "abs_url": "https://arxiv.org/abs/0911.0885",
+    "source": "pdf"
+  }
+]

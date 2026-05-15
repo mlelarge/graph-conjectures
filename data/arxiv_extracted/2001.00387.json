@@ -1,0 +1,46 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Meshulam's Conjecture on Ruzsa-Szemerédi Graphs",
+    "statement_text": "There are no $(r,t)$-Ruzsa-Szemer\\'edi graphs with both $rt = \\Theta\\!\\left(\\binom{n}{2}\\right)$ and $r \\geq n^{\\Omega(1)}$.",
+    "context_text": "Meshulam conjectured that dense Ruzsa-Szemerédi graphs cannot simultaneously have near-complete edge density and a polynomial-size matching. This was disproved in a strong form by Alon, Moitra, and Sudakov [1], who constructed $(r,t)$-Ruzsa-Szemerédi graphs on $n$ vertices with $r = n^{1-o(1)}$ and $rt = (1-o(1))\\binom{n}{2}$, vastly improving an earlier construction of Birk, Linial, and Meshulam [4].",
+    "attributed_to": "Meshulam",
+    "attributed_year": null,
+    "paper_contribution": "Provides an explicit, algorithmic Number-On-the-Forehead (NOF) protocol yielding a strongly explicit and somewhat simpler version of the construction from [1] that disproves the conjecture, and extends the disproof to uniform hypergraphs via Theorem 1.2.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "The conjecture is stated in prose without a labelled theorem environment; attribution to Meshulam is explicit in the text. Conjecture is already known to be false; the paper supplies an algorithmic re-derivation of the disproof.",
+    "arxiv_id": "2001.00387",
+    "paper_title": "Algorithmic Number On the Forehead Protocols Yielding Dense Ruzsa-Szemerédi Graphs and Hypergraphs",
+    "paper_authors": [
+      "Noga Alon",
+      "Adi Shraibman"
+    ],
+    "published": "2020-01-02",
+    "abs_url": "https://arxiv.org/abs/2001.00387",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Erdős–Rothschild Problem on $h(n,c)$",
+    "statement_text": "Determine or estimate $h(n,c)$, the maximum number such that any $n$-vertex graph with at least $cn^2$ edges in which every edge is contained in a triangle must contain an edge lying in at least $h(n,c)$ triangles.",
+    "context_text": "Erdős and Rothschild asked to determine $h(n,c)$; see [5, 8, 9, 10]. Szemerédi observed that the triangle removal lemma implies $h(n,c)\\to\\infty$ for fixed $c>0$, and the improved quantitative removal lemma [12] gives a lower bound exponential in $\\log^* n$. Fox and Loh [13] showed $h(n,c) \\leq n^{O(1/\\log\\log n)}$ for any fixed $c < 1/4$, establishing $h(n,c)=n^{o(1)}$. The paper extends the question to uniform hypergraphs via $h_{k-1}(n,c)$.",
+    "attributed_to": "Erdős and Rothschild",
+    "attributed_year": null,
+    "paper_contribution": "Provides algorithmic NOF protocols that recover and make strongly explicit the Fox–Loh upper bound $h(n,c)\\leq n^{O(1/\\log\\log n)}$ for $c<1/4$, and proves its hypergraph generalization: for any fixed $c < d_k$ there exists $b>0$ such that $h_{k-1}(n,c) \\leq n^{b/\\log\\log n}$ (Theorem 1.1).",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source; $h(n,c)$ notation and surrounding inequalities are clear from context despite PDF extraction.",
+    "arxiv_id": "2001.00387",
+    "paper_title": "Algorithmic Number On the Forehead Protocols Yielding Dense Ruzsa-Szemerédi Graphs and Hypergraphs",
+    "paper_authors": [
+      "Noga Alon",
+      "Adi Shraibman"
+    ],
+    "published": "2020-01-02",
+    "abs_url": "https://arxiv.org/abs/2001.00387",
+    "source": "pdf"
+  }
+]

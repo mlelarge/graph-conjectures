@@ -1,0 +1,26 @@
+[
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 5",
+    "statement_text": "For an $n$-set with a random partition with probabilities $p_1, p_2, \\ldots, p_k$, the clique algorithm has minimal average complexity among all AC algorithms.",
+    "context_text": "In the model where each of $n$ items independently belongs to class $C_i$ with probability $p_i$ (with $p_1 \\geq p_2 \\geq \\cdots \\geq p_k$), the authors argue that an optimal algorithm should compare each new element first to the largest identified class. The clique algorithm does exactly this, comparing each new item to blocks in decreasing order of size. The conjecture is stated directly before Theorem 6, which characterises the asymptotic expected query count of the clique algorithm as $\\sum_{i=1}^k i p_i n$, offered as supporting evidence.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2110.14521",
+    "paper_title": "Active clustering for labeling training data",
+    "paper_authors": [
+      "Quentin Lutz",
+      "Élie de Panafieu",
+      "Alex Scott",
+      "Maya Stein"
+    ],
+    "published": "2021-10-27",
+    "abs_url": "https://arxiv.org/abs/2110.14521",
+    "source": "pdf"
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Fox's Question on $m_k(n)$",
+    "statement_text": "Is $m_{3}(n)=\\Omega\\left(\\frac{n}{\\log n}\\right)$? More generally, can the lower bound $m_{2^{k}}(n)\\geq\\frac{c^{k}n}{(\\log n)^{2k-1}}$ (obtained by iterating the $k=2$ case) be improved?",
+    "context_text": "The quantity $m_k(n)$ denotes the largest integer such that every partially ordered set on $n$ elements contains $k$ disjoint subsets each of size $m_k(n)$ that are either forming a chain $A_1>A_2>\\dots>A_k$ or pairwise totally incomparable. Fox proved $m_2(n)=\\Theta(n/\\log n)$ in [5] and asked whether iterating this bound—yielding $m_{2^k}(n)\\geq c^k n/(\\log n)^{2k-1}$—can be improved, and in particular whether $m_3(n)=\\Omega(n/\\log n)$.",
+    "attributed_to": "Jacob Fox",
+    "attributed_year": 2006,
+    "paper_contribution": "Proves $m_k(n)\\geq \\frac{n}{40k^2\\log n}$ for all $k\\geq 2$ and $n$ sufficiently large in terms of $k$, establishing $m_k(n)=\\Omega(n/(k^2\\log n))$ and thus answering the question affirmatively.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2401.00827",
+    "paper_title": "A multipartite analogue of Dilworth's Theorem",
+    "paper_authors": [
+      "Jacob Fox",
+      "Huy Tuan Pham"
+    ],
+    "published": "2024-01-01",
+    "abs_url": "https://arxiv.org/abs/2401.00827",
+    "source": "html"
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.4 (Sintiari and Trotignon)",
+    "statement_text": "There exists a constant $c$ such that if $G$ is a (theta, triangle)-free graph, then $\\mathrm{tw}(G) \\leq c \\log(|V(G)|)$.",
+    "context_text": "Sintiari and Trotignon conjectured this after observing that their graphs $G_\\ell$ witnessing unbounded treewidth in the (theta, triangle)-free class have vertex counts exponential in their treewidth, in stark contrast to walls and their line graphs where vertex count is polynomial in treewidth. Their construction (Theorem 1.3) shows the logarithmic bound, if true, is asymptotically tight.",
+    "attributed_to": "Sintiari and Trotignon",
+    "attributed_year": null,
+    "paper_contribution": "Proves the conjecture in full, as a special case of the more general Theorem 1.5: every (theta, pyramid, generalized prism, $K_t$)-free graph $G$ satisfies $\\mathrm{tw}(G) \\leq c_t \\log(|V(G)|)$ for a constant $c_t$ depending only on $t$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source — math appears clean. Central conjecture of the paper.",
+    "arxiv_id": "2109.01310",
+    "paper_title": "Induced subgraphs and tree decompositions III. Three-path-configurations and logarithmic treewidth",
+    "paper_authors": [
+      "Tara Abrishami",
+      "Maria Chudnovsky",
+      "Sepehr Hajebi",
+      "Sophie Spirkl"
+    ],
+    "published": "2022-09-07",
+    "abs_url": "https://arxiv.org/abs/2109.01310",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.9",
+    "statement_text": "For all $k, \\Delta > 0$, there exists $c = c(k, \\Delta)$ such that every graph with maximum degree at most $\\Delta$ and treewidth more than $c$ contains a subdivision of $W_{k \\times k}$ or the line graph of a subdivision of $W_{k \\times k}$ as an induced subgraph.",
+    "context_text": "This conjecture from [1] is a bounded-maximum-degree restriction of Question 1.2 (which was answered negatively in full generality by Sintiari and Trotignon). The paper notes the conjecture remains open, while several special cases were proved in earlier papers of this series.",
+    "attributed_to": "unknown, see [1] in paper's bibliography",
+    "attributed_year": null,
+    "paper_contribution": "This paper does not directly prove new cases of Conjecture 1.9; special cases were established in earlier papers of the same series [2, 4].",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source — math appears clean. Attribution author cannot be determined from the provided text; paper cites reference [1].",
+    "arxiv_id": "2109.01310",
+    "paper_title": "Induced subgraphs and tree decompositions III. Three-path-configurations and logarithmic treewidth",
+    "paper_authors": [
+      "Tara Abrishami",
+      "Maria Chudnovsky",
+      "Sepehr Hajebi",
+      "Sophie Spirkl"
+    ],
+    "published": "2022-09-07",
+    "abs_url": "https://arxiv.org/abs/2109.01310",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.10",
+    "statement_text": "For all $t \\geq 0$ there exists $c = c(t)$ such that if $G$ is a graph with no $K_t$, no $K_{t,t}$, no subdivision of $W_{t \\times t}$ and no line graph of a subdivision of $W_{t \\times t}$ as induced subgraphs, then $\\mathrm{tw}(G) \\leq c \\log(|V(G)|)$.",
+    "context_text": "The authors propose this as a natural extension of the main results and describe it as a variant of a conjecture of Sintiari and Trotignon [17]. It posits that excluding the four known families responsible for large treewidth (complete graphs, complete bipartite graphs, subdivided walls, line graphs of subdivided walls) as induced subgraphs forces treewidth to be at most logarithmic in the number of vertices.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "PDF source — math appears clean.",
+    "arxiv_id": "2109.01310",
+    "paper_title": "Induced subgraphs and tree decompositions III. Three-path-configurations and logarithmic treewidth",
+    "paper_authors": [
+      "Tara Abrishami",
+      "Maria Chudnovsky",
+      "Sepehr Hajebi",
+      "Sophie Spirkl"
+    ],
+    "published": "2022-09-07",
+    "abs_url": "https://arxiv.org/abs/2109.01310",
+    "source": "pdf"
+  }
+]

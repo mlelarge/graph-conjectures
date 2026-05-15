@@ -1,0 +1,22 @@
+{
+  "review_id": "1707.03888__01",
+  "safe_id": "1707.03888",
+  "arxiv_id": "1707.03888",
+  "conjecture_title": "Open question: better additive approximation for $K_{4k_0+1}$-minor-free graphs",
+  "paper_title": "Additive non-approximability of chromatic number in proper minor-closed classes",
+  "published": "2017-07-12",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The question of whether the additive approximation gap for chromatic number of $K_{4k_0+1}$-minor-free graphs can be tightened remains open. The source paper (arXiv:1707.03888, ICALP 2018, J. Combin. Theory Ser. B 2020) establishes a hardness lower bound showing no poly-time algorithm achieves additive error below $k_0/4$, while Kawarabayashi et al.'s prior algorithm achieves additive error $k_0-2$, leaving a gap of roughly a factor of 4. No subsequent work narrowing this gap was found in the indexed literature.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "chromatic number additive approximation minor-free graphs Dvořák Kawarabayashi 1707.03888",
+    "chromatic number Kt-minor-free additive approximation algorithm NP-hard approximability 2018 2019 2020 2021 2022 2023 2024",
+    "chromatic number minor-free additive approximation gap algorithm Dvorak Kawarabayashi follow-up 2020 2021 2022 2023 2024 2025"
+  ],
+  "notes": "No follow-up resolving the approximation gap between $k_0/4$ and $k_0-2$ was found in the indexed literature. The paper appeared as ICALP 2018 (LIPIcs) and was later published in J. Combin. Theory Ser. B (2020, doi:10.1016/j.jctb.2020.02.001); these are the same work and do not constitute follow-up. The conjecture is now approximately 8 years old with no known progress on closing the factor-of-4 gap."
+}

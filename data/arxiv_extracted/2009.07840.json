@@ -1,0 +1,48 @@
+[
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Informal Conjecture (§1.2, Theorem 1.1 remarks)",
+    "statement_text": "The threshold for $\\mathrm{FS}(X, Y)$ to be connected when $X, Y \\sim G(n,p)$ is determined by the isolated-vertex threshold: ``it seems that (as in the usual case of a binomial random graph) this local obstruction to connectedness tells essentially the whole story.''",
+    "context_text": "Theorem 1.1 establishes a lower bound $p \\leq (2^{-1/2}-\\varepsilon)/n^{1/2}$ arising from isolated vertices and an upper bound $p \\geq \\exp(2(\\log n)^{2/3})/n^{1/2}$ for the high-probability connectivity threshold of $\\mathrm{FS}(X,Y)$. The authors suggest the gap between these bounds is an artifact of the proof method and that the two thresholds should coincide up to lower-order factors.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "PDF source; prose conjecture without a labelled environment. Section 7 (explicitly titled as containing open questions and conjectures) is absent from the supplied text, so further items from that section could not be extracted.",
+    "arxiv_id": "2009.07840",
+    "paper_title": "Typical and Extremal Aspects of Friends-and-Strangers Graphs",
+    "paper_authors": [
+      "Noga Alon",
+      "Colin Defant",
+      "Noah Kravitz"
+    ],
+    "published": "2021-06-15",
+    "abs_url": "https://arxiv.org/abs/2009.07840",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Open Question (§1.2, Theorem 1.4 remarks)",
+    "statement_text": "Do the cutoff for $\\mathrm{FS}(X, Y)$ to avoid isolated vertices and the cutoff for $\\mathrm{FS}(X, Y)$ to have exactly 2 connected components coincide when $r \\equiv 1 \\pmod{4}$? That is, is $d_{r,r} = \\lceil (3r+1)/4 \\rceil$ for all $r \\equiv 1 \\pmod{4}$?",
+    "context_text": "Theorem 1.4 proves $\\lceil (3r+1)/4 \\rceil \\leq d_{r,r} \\leq \\lceil (3r+2)/4 \\rceil$; the two bounds differ by 1 exactly when $r \\equiv 1 \\pmod{4}$ and are equal otherwise. The lower bound is the isolated-vertex threshold, and the authors note: ``we do not know how to prove that the cutoffs are exactly the same when $r \\equiv 1 \\pmod{4}$.''",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "PDF source; implicit open question from prose, without a labelled environment. Section 7 of the paper is not present in the supplied text.",
+    "arxiv_id": "2009.07840",
+    "paper_title": "Typical and Extremal Aspects of Friends-and-Strangers Graphs",
+    "paper_authors": [
+      "Noga Alon",
+      "Colin Defant",
+      "Noah Kravitz"
+    ],
+    "published": "2021-06-15",
+    "abs_url": "https://arxiv.org/abs/2009.07840",
+    "source": "pdf"
+  }
+]

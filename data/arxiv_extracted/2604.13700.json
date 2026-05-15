@@ -1,0 +1,170 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1 (Caccetta-Häggkvist Conjecture)",
+    "statement_text": "Let $r,g\\in\\mathbb{N}$. Every digraph $D$ with minimum out-degree $\\delta^{+}(D)\\geq r$ and girth at least $g$ contains at least $r(g-1)+1$ vertices.",
+    "context_text": "Proposed by Caccetta and Häggkvist in 1978, this is described as one of the most important open problems in extremal graph theory. It remains widely open even for $g=4$. The study of openly disjoint cycles through a vertex was partly motivated by attempts to approach this conjecture.",
+    "attributed_to": "Caccetta and Häggkvist",
+    "attributed_year": 1978,
+    "paper_contribution": "The paper proves Mader's Conjecture 4 that $\\lim_{r\\to\\infty}c_r=\\infty$ in a strong linear form, a result motivated by attempts to bound $c(D)$ as a route toward this conjecture.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2604.13700",
+    "paper_title": "Openly disjoint cycles and directed tree-width of regular digraphs",
+    "paper_authors": [
+      "Raphael Steiner"
+    ],
+    "published": "2026-04-26",
+    "abs_url": "https://arxiv.org/abs/2604.13700",
+    "source": "html"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 2 (Behzad-Chartrand-Wall Conjecture)",
+    "statement_text": "Let $r,g\\in\\mathbb{N}$. Every $r$-regular digraph with girth at least $g$ has at least $r(g-1)+1$ vertices.",
+    "context_text": "Conjectured by Behzad, Chartrand and Wall in 1970, eight years before the Caccetta-Häggkvist conjecture, this is the restriction to regular digraphs and remains open. Seymour's Problem 1 and Mader's Conjecture 4 were both directly motivated by this conjecture.",
+    "attributed_to": "Behzad, Chartrand and Wall",
+    "attributed_year": 1970,
+    "paper_contribution": "The paper proves $c_r\\geq\\lceil\\frac{3}{22}r\\rceil$ for all $r$-regular digraphs, establishing linear growth of $c_r$, which was the approach toward proving this conjecture.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2604.13700",
+    "paper_title": "Openly disjoint cycles and directed tree-width of regular digraphs",
+    "paper_authors": [
+      "Raphael Steiner"
+    ],
+    "published": "2026-04-26",
+    "abs_url": "https://arxiv.org/abs/2604.13700",
+    "source": "html"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 3 (Hoang-Reed Conjecture)",
+    "statement_text": "Let $r\\in\\mathbb{N}$. Every digraph $D$ with $\\delta^{+}(D)\\geq r$ contains a sequence $C_{1},\\ldots,C_{r}$ of directed cycles such that for each $i\\in[r]$ it holds that $$\\left|V(C_{i})\\cap\\bigcup_{1\\leq j<i}V(C_{j})\\right|\\leq 1.$$",
+    "context_text": "This conjecture from 1978 remains open and would directly imply the Caccetta-Häggkvist conjecture. The notion of openly disjoint cycles through a vertex studied in this paper is a particularly simple special case of the cycle sequences required by this conjecture.",
+    "attributed_to": "Hoang and Reed",
+    "attributed_year": 1987,
+    "paper_contribution": "The paper studies openly disjoint cycles through a vertex as a special instance of the cycle sequences in this conjecture, but does not directly prove or disprove the conjecture itself.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "The conjecture header in the paper states '1978' but the referenced paper [12] (Hoàng and Reed, 'A note on short cycles in digraphs') was published in 1987; attributed_year reflects the bibliography date.",
+    "arxiv_id": "2604.13700",
+    "paper_title": "Openly disjoint cycles and directed tree-width of regular digraphs",
+    "paper_authors": [
+      "Raphael Steiner"
+    ],
+    "published": "2026-04-26",
+    "abs_url": "https://arxiv.org/abs/2604.13700",
+    "source": "html"
+  },
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Problem 1 (Seymour's Problem)",
+    "statement_text": "Does every $r$-regular digraph $D$ satisfy $c(D)\\geq r$?",
+    "context_text": "Posed by Seymour in 2005 as a potential route to the Behzad-Chartrand-Wall conjecture. Mader proved the answer is positive for $r=3$ but showed it is negative for $r\\geq 8$ by constructing $r$-regular digraphs with $c(D)\\leq r-1$; it remains open for $r\\in\\{4,5,6,7\\}$.",
+    "attributed_to": "Seymour",
+    "attributed_year": 2005,
+    "paper_contribution": "The paper does not directly resolve Problem 1 for the remaining open cases, but proves the related Mader conjecture that $c_r\\to\\infty$, showing regular digraphs are fundamentally better behaved than general digraphs.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2604.13700",
+    "paper_title": "Openly disjoint cycles and directed tree-width of regular digraphs",
+    "paper_authors": [
+      "Raphael Steiner"
+    ],
+    "published": "2026-04-26",
+    "abs_url": "https://arxiv.org/abs/2604.13700",
+    "source": "html"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 4 (Mader's Conjecture)",
+    "statement_text": "For every $k\\in\\mathbb{N}$ there exists some $r_{0}\\in\\mathbb{N}$ such that $c_{r}\\geq k$ for every $r\\geq r_{0}$. In other words, $\\lim_{r\\rightarrow\\infty}c_{r}=\\infty$.",
+    "context_text": "Conjectured by Mader in 2008 after proving $c_3=3$ and constructing $r$-regular digraphs with $c(D)\\leq r-1$ for $r\\geq 8$, refuting Seymour's Problem 1. This conjecture is a first main result proved in the paper.",
+    "attributed_to": "Mader",
+    "attributed_year": 2008,
+    "paper_contribution": "Proved in strong form: the paper establishes $c_r\\geq\\lceil\\frac{3}{22}r\\rceil$ for every $r\\in\\mathbb{N}$, showing $c_r$ grows linearly in $r$, which is asymptotically best possible.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "The conjecture header states '2008' but the referenced paper [23] appears as Mader (2010) in the bibliography.",
+    "arxiv_id": "2604.13700",
+    "paper_title": "Openly disjoint cycles and directed tree-width of regular digraphs",
+    "paper_authors": [
+      "Raphael Steiner"
+    ],
+    "published": "2026-04-26",
+    "abs_url": "https://arxiv.org/abs/2604.13700",
+    "source": "html"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 5 (Mader's Subdivision Conjecture)",
+    "statement_text": "For every acyclic digraph $F$ there exists a number $K=K(F)$ such that every digraph $D$ with $\\delta^{+}(D)\\geq K$ contains a subdivision of $F$.",
+    "context_text": "Conjectured by Mader in 1985 as a directed analogue of the Bollobás-Thomason and Komlós-Szemerédi results for undirected graphs. It remains known only for precious few digraphs $F$ such as orientations of paths and cycles, certain orientations of trees, and acyclic digraphs on at most four vertices.",
+    "attributed_to": "Mader",
+    "attributed_year": 1985,
+    "paper_contribution": "Corollary 10 shows that subdivisions of digraphs in a significantly richer class of (not necessarily acyclic) digraphs can be guaranteed in regular digraphs, making progress beyond the previously known special cases.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2604.13700",
+    "paper_title": "Openly disjoint cycles and directed tree-width of regular digraphs",
+    "paper_authors": [
+      "Raphael Steiner"
+    ],
+    "published": "2026-04-26",
+    "abs_url": "https://arxiv.org/abs/2604.13700",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Problem 2",
+    "statement_text": "Determine $\\lim_{r\\rightarrow\\infty}\\frac{c_{r}}{r}$.",
+    "context_text": "The paper proves that the sequence $(c_r/r)_{r\\in\\mathbb{N}}$ converges to some limit $L\\in[\\frac{3}{22},1]$; Problem 2 asks for the exact value of this limit. The problem is stated immediately after the proof of convergence.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2604.13700",
+    "paper_title": "Openly disjoint cycles and directed tree-width of regular digraphs",
+    "paper_authors": [
+      "Raphael Steiner"
+    ],
+    "published": "2026-04-26",
+    "abs_url": "https://arxiv.org/abs/2604.13700",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Informal Question on optimal directed tree-width constant for regular digraphs",
+    "statement_text": "What is the best-possible constant $\\varepsilon>0$ such that every $r$-regular digraph $D$ has directed tree-width at least $\\varepsilon r$?",
+    "context_text": "Motivated by Theorem 7 of the paper, which establishes that every $r$-regular digraph has directed tree-width growing with $r$, the authors pose this question about the optimal linear constant in such a lower bound.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Posed in the text as 'it would be interesting to determine' following Problem 2, without a formal labelled environment.",
+    "arxiv_id": "2604.13700",
+    "paper_title": "Openly disjoint cycles and directed tree-width of regular digraphs",
+    "paper_authors": [
+      "Raphael Steiner"
+    ],
+    "published": "2026-04-26",
+    "abs_url": "https://arxiv.org/abs/2604.13700",
+    "source": "html"
+  }
+]

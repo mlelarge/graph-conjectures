@@ -1,0 +1,34 @@
+{
+  "review_id": "1806.06770__00",
+  "safe_id": "1806.06770",
+  "arxiv_id": "1806.06770",
+  "conjecture_title": "Closing Question",
+  "paper_title": "The Algebraic Connectivity of a Graph and its Complement",
+  "published": "2018-06-18",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The closing question asks for the exact supremum c such that max{\\lambda_2(G), \\lambda_2(\\bar{G})} \\geq c holds for all graphs G of order at least 2; the source paper proved c \\geq 2/5. Einollahzadeh and Karkhaneei (arXiv:1901.02047, 2019) subsequently proved the sum conjecture \\lambda_2(G) + \\lambda_2(\\bar{G}) \\geq 1, which implies max{\\lambda_2(G), \\lambda_2(\\bar{G})} \\geq 1/2, improving the lower bound. The exact supremum remains open, lying in the interval [1/2,\\, 2-\\sqrt{2}] \\approx [0.5, 0.5858], where the upper bound comes from the self-complementary path P_4.",
+  "since_posted": [
+    {
+      "title": "Proof of a conjecture on the algebraic connectivity of a graph and its complement",
+      "authors": "Mostafa Einollahzadeh, Mohammad Mahdi Karkhaneei",
+      "year": 2019,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/1901.02047",
+      "arxiv_id": "1901.02047",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves \\lambda_2(G) + \\lambda_2(\\bar{G}) \\geq 1 for all graphs G, which implies max{\\lambda_2(G), \\lambda_2(\\bar{G})} \\geq 1/2, thereby improving the lower bound on the supremum from 2/5 to 1/2."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "algebraic connectivity graph complement supremum lambda2 Afshari Akbari Mohar 1806.06770",
+    "max algebraic connectivity graph complement lower bound Fiedler eigenvalue 2019 2020 2021 2022 2023 2024 2025",
+    "\"algebraic connectivity\" \"complement\" \"supremum\" \"lambda_2\" graph conjecture solved 2020 2021 2022 2023 2024 2025"
+  ],
+  "notes": "The sum conjecture \\lambda_2(G)+\\lambda_2(\\bar{G}) \\geq 1, proved in arXiv:1901.02047, gives partial progress by improving the lower bound on the supremum from 2/5 to 1/2. The exact supremum remains open; no paper resolving it was found in the indexed literature."
+}

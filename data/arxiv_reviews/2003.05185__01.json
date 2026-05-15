@@ -1,0 +1,47 @@
+{
+  "review_id": "2003.05185__01",
+  "safe_id": "2003.05185",
+  "arxiv_id": "2003.05185",
+  "conjecture_title": "MWIS in P7-free graphs",
+  "paper_title": "Induced subgraphs of bounded treewidth and the container method",
+  "published": "2020-03-11",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The full complexity of Maximum Weight Independent Set in P7-free graphs remains open. Gartland and Lokshtanov (FOCS 2020) established a quasi-polynomial time algorithm running in n^{O(k^2 log^3 n)} for all Pk-free graphs (including P7-free), the first super-polynomial upper bound beyond NP-hardness evidence. More recently, Chudnovsky, Czyzewska, Kluk, Pilipczuk, and Rzazewski (ISAAC 2025) extended polynomial-time tractability to P7-free graphs of bounded clique number. The full polynomial-time resolution for all P7-free graphs remains open as of 2026.",
+  "since_posted": [
+    {
+      "title": "Independent Set on P_k-Free Graphs in Quasi-Polynomial Time",
+      "authors": "Peter Gartland, Daniel Lokshtanov",
+      "year": 2020,
+      "venue": "FOCS 2020",
+      "url": "https://arxiv.org/abs/2005.00690",
+      "arxiv_id": "2005.00690",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Gives a quasi-polynomial time algorithm (n^{O(k^2 log^3 n)}) for Maximum Weight Independent Set on Pk-free graphs for any fixed k, directly applying to P7-free graphs but not achieving polynomial time."
+    },
+    {
+      "title": "Sparse Induced Subgraphs in P_7-Free Graphs of Bounded Clique Number",
+      "authors": "Maria Chudnovsky, Jadwiga Czyzewska, Kacper Kluk, Marcin Pilipczuk, Pawel Rzazewski",
+      "year": 2025,
+      "venue": "ISAAC 2025",
+      "url": "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ISAAC.2025.20",
+      "arxiv_id": null,
+      "doi": "10.4230/LIPIcs.ISAAC.2025.20",
+      "kind": "partial",
+      "claim": "Extends polynomial-time tractability of MWIS and related sparse induced subgraph problems to P7-free graphs of bounded clique number, but the general P7-free case remains open."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Maximum Weight Independent Set P7-free graphs polynomial algorithm complexity 2021 2022 2023 2024 2025",
+    "MWIS P7-free OR P_7-free computational complexity tractable",
+    "Gartland Lokshtanov independent set Pk-free quasipolynomial arxiv 2021 2022 2023",
+    "maximum weight independent set P7-free polynomial time algorithm 2023 2024 2025 arxiv",
+    "Sparse Induced Subgraphs P7-Free Bounded Clique Number arxiv"
+  ],
+  "notes": "General P7-free case still open (no polynomial-time algorithm known). Two verified partial advances since posting: quasi-polynomial time for all Pk-free graphs (Gartland-Lokshtanov, FOCS 2020, arXiv:2005.00690) and polynomial time for P7-free graphs restricted to bounded clique number (Chudnovsky et al., ISAAC 2025, LIPIcs). A polynomial-time algorithm for P6-free graphs was also achieved circa SODA 2024, but that is for a smaller graph class and was not directly verified here."
+}

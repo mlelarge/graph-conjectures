@@ -1,0 +1,50 @@
+[
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Question 1.2",
+    "statement_text": "Is the maximum separable index among permutations avoiding a pattern of size $k$ polynomial in $k$?",
+    "context_text": "The authors' main theorem gives a doubly exponential upper bound $2^{2^{O(k)}}$ on the separable index of permutations avoiding a pattern of size $k$. Lower bounds from Fox's results on growth of pattern-avoiding classes show the maximum separable index is at least $\\Omega(k^{1/4-\\varepsilon})$ for any $\\varepsilon > 0$, leaving a large gap. The question asks whether a polynomial upper bound might hold.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2308.02981",
+    "paper_title": "Factoring Pattern-Free Permutations into Separable ones",
+    "paper_authors": [
+      "Édouard Bonnet",
+      "Romain Bourneuf",
+      "Colin Geniet",
+      "Stéphan Thomassé"
+    ],
+    "published": "2023-08-06",
+    "abs_url": "https://arxiv.org/abs/2308.02981",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Question 1.3",
+    "statement_text": "What is the parameterised complexity of computing $\\mathrm{sep}(\\sigma)$, and of approximating it within a constant factor?",
+    "context_text": "The paper's main result implies an FPT approximation for the separable index $\\mathrm{sep}(\\sigma)$ via pattern recognition, but the approximation function is triple exponential in $k$. The authors ask whether the complexity of computing or approximating $\\mathrm{sep}(\\sigma)$ exactly can be improved, possibly to an exact algorithm.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2308.02981",
+    "paper_title": "Factoring Pattern-Free Permutations into Separable ones",
+    "paper_authors": [
+      "Édouard Bonnet",
+      "Romain Bourneuf",
+      "Colin Geniet",
+      "Stéphan Thomassé"
+    ],
+    "published": "2023-08-06",
+    "abs_url": "https://arxiv.org/abs/2308.02981",
+    "source": "pdf"
+  }
+]

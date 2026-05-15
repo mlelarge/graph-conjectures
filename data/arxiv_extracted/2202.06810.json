@@ -1,0 +1,52 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Perfect 1-Factorization Conjecture (P1FC)",
+    "statement_text": "The complete graph $K_n$ has a perfect 1-factorization for all even $n > 2$.",
+    "context_text": "A perfect 1-factorization is a partition of the edge set of $K_n$ into perfect matchings such that the union of any two of them is a Hamiltonian cycle. The conjecture is still open in general; the paper notes that the smallest open case, according to Rosa's survey, is $n = 64$. The paper's Hamiltonicity results (Theorems 5 and 6) are conditional on P1FC.",
+    "attributed_to": "Kotzig",
+    "attributed_year": null,
+    "paper_contribution": "Proves that $M_{F_{Hp}}(n) = 2^{n-1}$ for all odd $n$ where P1FC holds for $K_{n+1}$ (in particular when $n = p$ or $n = 2p-1$ for an odd prime $p$), and that $M_{F_{Hc}}(n) = 2^{n-2}$ for all even $n$ where P1FC holds (in particular when $n = p+1$ or $n = 2p$ for an odd prime $p$), linking optimal structured graph-code sizes to P1FC.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "P1FC is explicitly named and labelled in the paper and discussed as still open in general; the paper uses it as a sufficient condition rather than making direct progress on it, but its Hamiltonicity results are fully conditional on P1FC.",
+    "arxiv_id": "2202.06810",
+    "paper_title": "Structured Codes of Graphs",
+    "paper_authors": [
+      "Noga Alon",
+      "Anna Gujgiczer",
+      "János Körner",
+      "Aleksa Milojević",
+      "Gábor Simonyi"
+    ],
+    "published": "2022-04-01",
+    "abs_url": "https://arxiv.org/abs/2202.06810",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Open case of Theorem 3 for odd $n$",
+    "statement_text": "Determine $M_{F_{2c}}(n)$ for odd $n \\geq 5$. The upper bound $M_{F_{2c}}(n) \\leq 2^{n-2}$ holds for all $n$, but the best construction for odd $n$ yields only $2^{n-2} - \\binom{n-2}{(n-3)/2}$ graphs.",
+    "context_text": "Theorem 3 establishes $M_{F_{2c}}(n) = 2^{n-2}$ for all even $n$ via matching upper and lower bounds. For odd $n$ the upper bound still holds, but the construction from the even case fails; the best the authors could achieve gives $2^{n-2} - \\binom{n-2}{(n-3)/2}$, leaving a gap. For $n = 3$ the upper bound is attained (a triangle and the empty graph), but no general matching construction is known.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated as Remark 2 without a formal Problem/Conjecture environment; the authors do not explicitly conjecture the true value for odd $n$ but clearly identify it as an open case.",
+    "arxiv_id": "2202.06810",
+    "paper_title": "Structured Codes of Graphs",
+    "paper_authors": [
+      "Noga Alon",
+      "Anna Gujgiczer",
+      "János Körner",
+      "Aleksa Milojević",
+      "Gábor Simonyi"
+    ],
+    "published": "2022-04-01",
+    "abs_url": "https://arxiv.org/abs/2202.06810",
+    "source": "pdf"
+  }
+]

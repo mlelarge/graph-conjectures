@@ -1,0 +1,33 @@
+{
+  "review_id": "2503.05562__00",
+  "safe_id": "2503.05562",
+  "arxiv_id": "2503.05562",
+  "conjecture_title": "Question 1.1",
+  "paper_title": "On graph classes with constant domination-packing ratio",
+  "published": "2025-03-07",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Question 1.1 asks for which graph classes the domination-packing ratio $\\gamma(G)/\\rho(G)$ is bounded by a class-specific constant. The source paper itself gives positive answers for 2-degenerate, AT-free, and unit-disk graphs, with improved bounds for planar graphs and graphs of bounded treewidth or twin-width. A 2026 follow-up (arXiv:2602.18402) extends the positive answers further to chordal bipartite graphs and homogeneously orderable graphs, and provides an improved bound for planar graphs and a direct proof for trees. The general question — whether every natural graph class admits such a constant — remains open.",
+  "since_posted": [
+    {
+      "title": "Domination and packing in graphs",
+      "authors": "unknown (not extracted from fetch)",
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2602.18402",
+      "arxiv_id": "2602.18402",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Extends positive answers to the domination-packing ratio question to chordal bipartite graphs and homogeneously orderable graphs, gives an improved bound for planar graphs, and provides a simplified direct proof for trees."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "domination number packing number ratio constant graph classes Bonamy Csikós Gujgiczer Yuditsky 2025",
+    "domination packing ratio bounded graph class gamma rho integrality gap 2025 arxiv"
+  ],
+  "notes": "The source paper already gives a rich set of positive answers to Question 1.1 for specific graph classes. The follow-up arXiv:2602.18402 (verified via WebFetch) directly continues this research thread. Authors of 2602.18402 were not extracted from the abstract page. The general meta-question of characterising all graph classes with bounded ratio remains open."
+}

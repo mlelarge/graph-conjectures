@@ -1,0 +1,34 @@
+{
+  "review_id": "1508.03437__00",
+  "safe_id": "1508.03437",
+  "arxiv_id": "1508.03437",
+  "conjecture_title": "Open Question on 3-Choosability for Forbidden Cycles 4–7 and 4–6",
+  "paper_title": "Correspondence coloring and its application to list-coloring planar graphs without cycles of lengths 4 to 8",
+  "published": "2016-10-08",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "As of May 2026, both questions remain open. Planar graphs without cycles of lengths 4 to 7 are known to be 3-colorable (Borodin et al. 2005, predating the source paper), but 3-choosability for this forbidden range is unresolved. The strictly harder question—whether planar graphs without cycles of lengths 4 to 6 are 3-colorable (let alone 3-choosable)—is still wide open. A 2024 arXiv paper (2412.19059) proves DP-3-colorability for planar graphs without cycles of lengths 4, 6, or 8, which is a related but distinct forbidden set and does not resolve either question.",
+  "since_posted": [
+    {
+      "title": "Planar graphs having no cycle of length 4, 6 or 8 are DP-3-colorable",
+      "authors": "Ligang Jin, Yingli Kang, Xuding Zhu",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2412.19059",
+      "arxiv_id": "2412.19059",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves DP-3-colorability for planar graphs missing cycles of lengths 4, 6, and 8, a related but distinct forbidden set from the {4,5,6} and {4,5,6,7} cases left open by the source paper."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "planar graph 3-choosable forbidden cycles lengths 4 to 7 list coloring",
+    "planar graph 3-colorable no cycles lengths 4 5 6 Dvorak Postle 1508.03437",
+    "planar graphs without cycles 4 to 6 3-colorable 3-choosable open problem Borodin"
+  ],
+  "notes": "The 3-colorability of planar graphs without cycles of lengths 4 to 7 was established by Borodin et al. in 2005 (prior to the source paper), so the conjecture's first question is really about lifting that to 3-choosability. The conjecture's second question (3-colorability for forbidden cycles 4–6) remains completely open. No follow-up paper resolving either question was found in the literature search."
+}

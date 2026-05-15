@@ -1,0 +1,23 @@
+{
+  "review_id": "1812.02420__01",
+  "safe_id": "1812.02420",
+  "arxiv_id": "1812.02420",
+  "conjecture_title": "Conjecture 2.16",
+  "paper_title": "On the Complexity of Digraph Colourings and Vertex Arboricity",
+  "published": "2020-01-09",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Conjecture 2.16 asserts NP-completeness of circular F-colouring for every digraph F containing a directed cycle. Theorem 2.17 in the same paper confirms the conjecture for all such F that are digon-free, have an odd cycle in their symmetric part, or are 2-colourable. The sole remaining open case is F containing a directed cycle whose symmetric part is non-empty, bipartite, and such that F is not 2-colourable; no subsequent work resolving this case was found in the literature.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "circular F-colouring NP-complete digraph directed cycle complexity 1812.02420",
+    "Hochstättler Schröder Steiner digraph colouring vertex arboricity circular homomorphism complexity",
+    "circular F-colouring NP-complete digraph acyclic complexity 2021 2022 2023 2024",
+    "circular F-colouring NP-complete bipartite symmetric part digraph directed cycle open case Steiner 2021 2022 2023 2024 2025"
+  ],
+  "notes": "Theorem 2.17 within the source paper already settles the conjecture for almost all cases; the single remaining open case involves F with a directed cycle, a non-empty bipartite symmetric part, and chromatic number > 2. A wide web search (5 calls) returned no follow-up paper addressing this residual case."
+}

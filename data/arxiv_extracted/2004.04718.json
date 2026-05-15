@@ -1,0 +1,48 @@
+[
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Erdős–Hajnal Problem on Locally Ramsey Graphs",
+    "statement_text": "Over all $n$-vertex graphs $G$, what is the smallest possible value of $m$ for which any $m$ vertices of $G$ contain both a clique and an independent set of size $\\log n$?",
+    "context_text": "Erdős and Hajnal raised this problem in the early 1990s, asking for the smallest $m = m_G(k)$ such that every $m$-vertex subset of an $n$-vertex graph $G$ contains both a clique and an independent set of size $k$. For $k = \\log n$ the random graph gives an upper bound of order $\\sqrt{n}$, and understanding this quantity is closely tied to the structure of Ramsey graphs.",
+    "attributed_to": "Erdős and Hajnal",
+    "attributed_year": null,
+    "paper_contribution": "Proves (Theorem 1) the existence of an $n$-vertex graph $G$ with $m_G(\\log n) \\leq 2^{2(\\log\\log n)^{1/2}+o(1)}$, a twofold sub-polynomial improvement over the $O(\\sqrt{n})$ upper bound coming from the random graph; also gives a general bound in Theorem 2 and determines $m_n(k) = \\Theta(k\\log n)$ for small $k$ in Proposition 3.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "PDF source. Problem raised 'in the early 90's' per the introduction; exact year unknown so left null. Reference [13] is the Erdős–Hajnal paper.",
+    "arxiv_id": "2004.04718",
+    "paper_title": "Large cliques and independent sets all over the place",
+    "paper_authors": [
+      "N. Alon",
+      "M. Bucić",
+      "B. Sudakov"
+    ],
+    "published": "2020-08-11",
+    "abs_url": "https://arxiv.org/abs/2004.04718",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Erdős Question: does $m_G(\\log n) = (\\log n)^3$ exist?",
+    "statement_text": "Does there exist an $n$-vertex graph $G$ with $m_G(\\log n) = (\\log n)^3$?",
+    "context_text": "Erdős singled out the case $k = \\log n$ and asked whether graphs with $m_G(\\log n) = (\\log n)^3$ exist. A positive answer would yield $((\\log n)^3, \\log n)$-locally Ramsey graphs very different from the random graph. The paper states explicitly that this question remains open; the companion lower bound $m_G(\\log n) \\geq \\Omega((\\log n)^3/\\log\\log n)$ from reference [4] gives partial support to Erdős's choice of parameters.",
+    "attributed_to": "Erdős",
+    "attributed_year": null,
+    "paper_contribution": "Improves the best known upper bound from $O(\\sqrt{n})$ to $2^{2(\\log\\log n)^{1/2}+o(1)}$ (Theorem 1), narrowing the gap but leaving the specific $(\\log n)^3$ target unresolved.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "PDF source. Attributed to Erdős alone via reference [13] (an Erdős–Hajnal paper). Explicitly marked open: 'This question remains open.'",
+    "arxiv_id": "2004.04718",
+    "paper_title": "Large cliques and independent sets all over the place",
+    "paper_authors": [
+      "N. Alon",
+      "M. Bucić",
+      "B. Sudakov"
+    ],
+    "published": "2020-08-11",
+    "abs_url": "https://arxiv.org/abs/2004.04718",
+    "source": "pdf"
+  }
+]

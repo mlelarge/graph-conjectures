@@ -1,0 +1,34 @@
+{
+  "review_id": "2010.05735__00",
+  "safe_id": "2010.05735",
+  "arxiv_id": "2010.05735",
+  "conjecture_title": "Open Problem: exact constant in the exponent",
+  "paper_title": "Powers of paths in tournaments",
+  "published": "2021-02-16",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The open problem asks for the exact constant $c$ in the exponent such that every $n$-vertex tournament contains the $k$-th power of a directed path of length $n/2^{ck}$; the source paper establishes the form is $n/2^{\\Theta(k)}$ with lower bound constant optimisable to $c \\approx 3.9$ and upper bound constant $c = 1$ (from Yuster's construction). A follow-up paper (arXiv:2105.12484, Gir\\~ao and Kor\\'{a}ndi, 2021) studies the related problem of partitioning tournaments into at most $2^{ck}$ $k$-th powers of paths (tight up to the exponential constant) but does not address the exact constant for containment. No subsequent work resolving the exact value of $c$ was found in a thorough web search.",
+  "since_posted": [
+    {
+      "title": "Powers of paths and cycles in tournaments",
+      "authors": "António Girão, Dániel Korándi",
+      "year": 2021,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2105.12484",
+      "arxiv_id": "2105.12484",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Shows any tournament can be partitioned into at most $2^{ck}$ $k$-th powers of directed paths (tight up to the exponential constant), a related but distinct result that does not determine the exact constant for the containment problem."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "powers paths tournaments k-th power directed path exponent constant Draganic Fox Havet 2010.05735",
+    "tournament k-th power directed path guaranteed length n/2^{ck} constant exponent arxiv",
+    "\"powers of paths in tournaments\" \"exact constant\" exponent tournament path 2022 2023 2024 2025 arxiv"
+  ],
+  "notes": "The specific open problem is to find the exact value of $c$ in $n/2^{ck}$, where the current gap is $c \\in [1, \\approx 3.9]$. The follow-up arXiv:2105.12484 is verified and relevant to the broader topic but addresses tournament decomposition, not containment. No paper resolving the exact constant was found after an exhaustive 5-call web search spanning 2021–2026."
+}

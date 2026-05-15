@@ -1,0 +1,24 @@
+[
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.8",
+    "statement_text": "For every graph $T$, family of graphs $\\mathcal{F}$ such that no $F \\in \\mathcal{F}$ is a subgraph of a blow-up of $T$, and $\\epsilon > 0$, it is NP-hard to approximate $\\mathrm{ex}(G, T, \\mathcal{F})$ up to additive error of $n^{v(T)-\\epsilon}$ for a given input graph $G$ on $n$ vertices.",
+    "context_text": "The authors prove Theorem 1.7 as a special case (for $T = K_m$, $\\mathcal{F} = \\{K_k\\}$ with $k \\geq m+2$) and note that Proposition 1.5 covers the complementary easy regime (when some $F \\in \\mathcal{F}$ is a subgraph of a blow-up of $T$). They believe that excluding those easy cases no significantly better approximation than $\\epsilon n^{v(T)}$ is achievable in polynomial time, leading to this conjecture. Section 6 of the paper contains further remarks on this conjecture and related open problems.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1811.08750",
+    "paper_title": "Additive Approximation of Generalized Turán Questions",
+    "paper_authors": [
+      "Noga Alon",
+      "Clara Shikhelman"
+    ],
+    "published": "2018-11-21",
+    "abs_url": "https://arxiv.org/abs/1811.08750",
+    "source": "pdf"
+  }
+]

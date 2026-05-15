@@ -1,0 +1,44 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Hill Conjecture",
+    "statement_text": "The minimum number of crossings in any drawing of the complete graph $K_n$ in the plane is $$H(n) = \\frac{1}{4} \\left\\lfloor \\frac{n}{2} \\right\\rfloor \\left\\lfloor \\frac{n-1}{2} \\right\\rfloor \\left\\lfloor \\frac{n-2}{2} \\right\\rfloor \\left\\lfloor \\frac{n-3}{2} \\right\\rfloor = \\begin{cases} \\frac{1}{64} n(n-2)^2(n-4), & n \\text{ even};\\\\ \\frac{1}{64}(n-1)^2(n-3)^2, & n \\text{ odd.} \\end{cases}$$",
+    "context_text": "In the 1950s, English painter Anthony Hill described drawings of $K_n$ in the plane with exactly $H(n)$ crossings; it became a conjecture that this number is the minimum possible. Despite serious efforts the conjecture remains widely open. The only previous classes of Hill drawings were the cylindrical drawings and the 2-page drawings of Blažek–Koman (1963); it has been proved that neither class can beat $H(n)$.",
+    "attributed_to": "Anthony Hill (Harary and Hill)",
+    "attributed_year": 1962,
+    "paper_contribution": "Provides the first very general construction of drawings of $K_n$ attaining exactly $H(n)$ crossings via antipodal geodesic drawings on the unit sphere $S^2$, gives a 'book proof' that each such drawing achieves $H(n)$, and derives as a corollary that $\\mathrm{cr}_{S^2}(K_n) \\leq H(n)$; also gives a simple explanation of Moon's 1968 asymptotic result that random geodesic drawings approach $H(n)$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source; formula notation (floor functions) is readable and consistent with the known Hill formula.",
+    "arxiv_id": "2009.03418",
+    "paper_title": "On a conjecture by Anthony Hill",
+    "paper_authors": [
+      "Bojan Mohar"
+    ],
+    "published": "2020-09-07",
+    "abs_url": "https://arxiv.org/abs/2009.03418",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 5",
+    "statement_text": "The crossing number of $M_{n,t}$ is equal to $$H(n) - \\frac{1}{2}\\,t(k-1)(k-2),$$ where $k = \\lfloor n/2 \\rfloor$.",
+    "context_text": "Here $M_{n,t}$ denotes the graph obtained from $K_n$ by removing a matching of size $t$, and $k = \\lfloor n/2 \\rfloor$. Corollary 4 shows that geodesic drawings of $M_{n,t}$ built from sets of strength $0$ achieve this crossing count; the existence of many such sets of strength $0$ motivates the conjecture that this value is optimal.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "PDF source; the algebraic expression is unambiguous.",
+    "arxiv_id": "2009.03418",
+    "paper_title": "On a conjecture by Anthony Hill",
+    "paper_authors": [
+      "Bojan Mohar"
+    ],
+    "published": "2020-09-07",
+    "abs_url": "https://arxiv.org/abs/2009.03418",
+    "source": "pdf"
+  }
+]

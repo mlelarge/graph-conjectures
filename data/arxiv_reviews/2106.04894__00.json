@@ -1,0 +1,33 @@
+{
+  "review_id": "2106.04894__00",
+  "safe_id": "2106.04894",
+  "arxiv_id": "2106.04894",
+  "conjecture_title": "Question 1",
+  "paper_title": "Geometric and o-minimal Littlewood-Offord problems",
+  "published": "2022-06-14",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Question 1 from arXiv:2106.04894 asks, for arbitrary nonzero vectors $a_i$, which geometric constraints on $S \\subset \\mathbb{R}^d$ yield non-trivial uniform upper bounds on $\\Pr(X \\in S)$. The source paper itself answers this for o-minimal sets (those definable in an o-minimal structure) not containing a line segment, giving a bound of $n^{-1/2+o(1)}$. A 2025 paper by Grebennikov and Kwan (arXiv:2505.24699) extends this programme substantially, proving that sets in convex position and algebraic varieties of prescribed dimension and degree also yield such bounds, thereby resolving Conjecture 10.1 of Fox-Kwan-Spink as well as a conjecture of Kwan-Sauermann; the general question of characterising all admissible geometric constraints remains an open research direction.",
+  "since_posted": [
+    {
+      "title": "Geometric Littlewood–Offord problems via lattice point counting",
+      "authors": "Alexandr Grebennikov, Matthew Kwan",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2505.24699",
+      "arxiv_id": "2505.24699",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Resolves Conjecture 10.1 of Fox-Kwan-Spink (convex position) and the Kwan-Sauermann conjecture on algebraic varieties, providing new classes of geometric constraints on S that imply anti-concentration bounds of the form asked for in Question 1."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Fox Kwan Spink Littlewood-Offord geometric o-minimal 2106.04894",
+    "Littlewood-Offord geometric anti-concentration set R^d nonzero vectors 2022 2023 2024"
+  ],
+  "notes": "Question 1 is an open-ended research programme rather than a single falsifiable conjecture; new classes of admissible geometric constraints continue to be identified. The 2025 Grebennikov-Kwan paper (2505.24699) is the main follow-up and explicitly cites Fox-Kwan-Spink [16] as the source of the resolved conjecture (their Conjecture 10.1). The general characterisation question remains open."
+}

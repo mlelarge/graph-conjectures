@@ -1,0 +1,23 @@
+{
+  "review_id": "2402.10782__01",
+  "safe_id": "2402.10782",
+  "arxiv_id": "2402.10782",
+  "conjecture_title": "Problem 4.4",
+  "paper_title": "Finding forest-orderings of tournaments is NP-complete",
+  "published": "2026-01-23",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Problem 4.4 asks whether the C-FAS Problem is tractable when C is the set of all paths or the set of matchings (graphs with maximum degree at most 1), motivated by the NP-completeness established for forests (Theorem 1.1). No follow-up paper resolving either question was found in the indexed literature as of May 2026. The problem remains open for both cases.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Aboulker Aubian Lopes \"C-FAS\" tournament paths complexity arXiv 2402.10782",
+    "feedback arc set tournament paths matchings complexity polynomial NP 2024 2025",
+    "\"forest-ordering\" tournament \"path-FAS\" OR \"matching-FAS\" OR \"C-FAS paths\" complexity 2024 2025 2026",
+    "Aboulker Aubian Lopes tournament \"feedback arc set\" paths polynomial complexity 2025 2026"
+  ],
+  "notes": "No follow-up found. The C-FAS Problem for C = paths and C = matchings (max degree 1) is posed as an open problem in the paper following the NP-completeness proof for forests. The paper (v3, January 2026) is recent; absence of follow-up in the indexed literature suggests the problem remains open. Pierre Aboulker's DBLP page lists no subsequent paper on this topic."
+}

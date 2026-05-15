@@ -1,0 +1,27 @@
+[
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Question of Aboulker, Aubian, Charbit, and Lopes (2023)",
+    "statement_text": "Is large clique number in tournaments always certified by a bounded-size set? Specifically, if $T$ is a tournament of sufficiently large clique number $\\overrightarrow{\\omega}(T)$, must $T$ contain a subtournament of large clique number belonging to one of two simple families of tournaments?",
+    "context_text": "Aboulker, Aubian, Charbit, and Lopes (2023) introduced the clique number $\\overrightarrow{\\omega}(T)$ of a tournament $T$, defined as $\\min_{B}\\omega(B)$ over all backedge graphs $B$ of $T$. They asked whether, analogously to clique number in undirected graphs, large values of $\\overrightarrow{\\omega}(T)$ are always witnessed by a simple, bounded-size subtournament structure. This question also connects to a line of research by Kim and Kim (2018) on unavoidable subtournaments in tournaments with large dichromatic number.",
+    "attributed_to": "Aboulker, Aubian, Charbit, and Lopes",
+    "attributed_year": 2023,
+    "paper_contribution": "Proves that if $T$ is a tournament of sufficiently large clique number, then $T$ contains a subtournament of large clique number from one of two simple families of tournaments, thereby confirming that large clique number is always certified by a bounded-size set and fully answering the question.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "The verbatim statement of the original question from [original] (Aboulker et al. 2023) is not reproduced in the provided paper content; the statement_text is reconstructed from the abstract. Confidence is medium accordingly.",
+    "arxiv_id": "2602.09863",
+    "paper_title": "Characterizing Large Clique Number in Tournaments",
+    "paper_authors": [
+      "Logan Crew",
+      "Xinyue Fan",
+      "Hidde Koerts",
+      "Benjamin Moore",
+      "Sophie Spirkl"
+    ],
+    "published": "2026-02-10",
+    "abs_url": "https://arxiv.org/abs/2602.09863",
+    "source": "html"
+  }
+]

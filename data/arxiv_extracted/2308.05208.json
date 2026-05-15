@@ -1,0 +1,74 @@
+[
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Gap in $r$-dependence of sign-pattern bound",
+    "statement_text": "The bound in Theorem 2.2 must have at least a linear dependence on $r$ if it is to depend polynomially on $m$; the current bound is exponential in $r$. It would be interesting to close this gap.",
+    "context_text": "Proposition 2.5 demonstrates that $r = 2^{m+1}$ functions suffice to realise all $2^m$ proper sign patterns even when $N = 1$ and $\\Delta = s = 2$ are fixed, yielding a linear lower bound on the $r$-dependence that is far below the exponential upper bound in Theorem 2.2. The paper notes this discrepancy and calls for closing it.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated informally in prose; no labelled environment.",
+    "arxiv_id": "2308.05208",
+    "paper_title": "Ordering Candidates via Vantage Points",
+    "paper_authors": [
+      "Noga Alon",
+      "Colin Defant",
+      "Noah Kravitz",
+      "Daniel G. Zhu"
+    ],
+    "published": "2023-08-09",
+    "abs_url": "https://arxiv.org/abs/2308.05208",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Gap in connected-component count for sums of square roots",
+    "statement_text": "For $f : \\mathbb{R} \\to \\mathbb{R}$ a linear combination of $r$ square roots of everywhere-positive quadratic polynomials, the number of connected components of $\\mathbb{R} \\setminus V(f)$ is at most $2^{r-1}+1$, while at least $2r-1$ components are achievable. It would be interesting to narrow the gap between this linear lower bound and the exponential upper bound.",
+    "context_text": "As a simpler companion question to the sign-pattern gap, the authors fix $N = m = 1$ and $\\Delta = s = 2$. The upper bound $2^{r-1}+1$ follows from the same conjugate-multiplication trick as Theorem 2.2; an explicit construction with parameters $0 < a_1 < \\cdots < a_{r-1}$ growing extremely quickly achieves $2r - 1$ connected components, giving a linear lower bound versus an exponential upper bound.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "low",
+    "notes": "PDF source — mathematical expressions (e.g. $2^{r-1}+1$ vs $2r-1$) may be garbled; values interpreted from the authors' explicit statement 'linear lower bound and exponential upper bound'.",
+    "arxiv_id": "2308.05208",
+    "paper_title": "Ordering Candidates via Vantage Points",
+    "paper_authors": [
+      "Noga Alon",
+      "Colin Defant",
+      "Noah Kravitz",
+      "Daniel G. Zhu"
+    ],
+    "published": "2023-08-09",
+    "abs_url": "https://arxiv.org/abs/2308.05208",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Five-point protrusive-but-not-witnessed construction",
+    "statement_text": "Does there exist a 5-element set $C \\subseteq \\mathbb{R}^2$ such that some protrusive ordering of $C$ is not contained in $\\Psi(C)$?",
+    "context_text": "The authors construct a 6-element set $C \\subseteq \\mathbb{R}^2$ for which $\\Psi(C)$ is strictly smaller than the set of all protrusive orderings, showing that the equality $\\Psi(C) = \\{\\text{protrusive orderings of } C\\}$ (which holds for $d=1$, $n \\le 4$, and vertex-transitive polytopes) fails in general. Whether 5 points suffice for a counterexample is explicitly left open.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "",
+    "arxiv_id": "2308.05208",
+    "paper_title": "Ordering Candidates via Vantage Points",
+    "paper_authors": [
+      "Noga Alon",
+      "Colin Defant",
+      "Noah Kravitz",
+      "Daniel G. Zhu"
+    ],
+    "published": "2023-08-09",
+    "abs_url": "https://arxiv.org/abs/2308.05208",
+    "source": "pdf"
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "review_id": "1703.05380__00",
+  "safe_id": "1703.05380",
+  "arxiv_id": "1703.05380",
+  "conjecture_title": "Conjecture 1.1",
+  "paper_title": "The Interactive Sum Choice Number of Graphs",
+  "published": "2021-01-06",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "No follow-up paper resolving Conjecture 1.1 from arXiv:1703.05380 was found in the indexed literature. The conjecture remains open as of May 2026; the source paper itself provides evidence by confirming it for sc-greedy graphs, trees, unbalanced complete bipartite graphs, and grids, but the general statement is unproved.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "interactive sum choice number graphs Bonamy Meeks conjecture 1703.05380",
+    "\"interactive sum choice number\" \"sum choice number\" graph theory conjecture",
+    "\"chi_ISC\" OR \"chi_{ISC}\" \"sum choice\" graph conjecture complete graph 2022 2023 2024 2025",
+    "site:arxiv.org \"interactive sum choice\" OR \"sum choice number\" Bonamy Meeks 2022 2023 2024 2025"
+  ],
+  "notes": "No follow-up found after four web searches and one WebFetch. The conjecture was published in Discrete Applied Mathematics (January 2021). Semantic Scholar page returned no content. The conjecture is niche enough that absence of indexed follow-up after ~5 years is consistent with it being genuinely open."
+}

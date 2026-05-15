@@ -1,0 +1,46 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Gyárfás' Complementation Conjecture (Conjecture 6.3)",
+    "statement_text": "Let $c \\geq 0$, and let $\\mathcal{C}$ be a class of graphs such that $\\chi(H) \\leq \\omega(H) + c$ for all $G \\in \\mathcal{C}$ and every induced subgraph $H$ of $G$. Let $\\mathcal{C}'$ be the class of complements of members of $\\mathcal{C}$. Then $\\mathcal{C}'$ is $\\chi$-bounded.",
+    "context_text": "In 1987, Gyárfás conjectured (conjecture 6.3 of [4]) that for all $c$, the function $f(x) = x + c$ has a complementary bounding function. Gyárfás had proved that if $f$ has a complementary bounding function then $\\inf f(x)/x = 1$, making $f(x) = x + c$ the natural boundary case. This is the central subject of the paper, stated as Theorem 1.1.",
+    "attributed_to": "Gyárfás",
+    "attributed_year": 1987,
+    "paper_contribution": "Proves the conjecture in full; more generally, establishes (Theorem 1.2) that a class of graphs is $\\chi$-bounded if no graph in the class contains $c+1$ odd holes pairwise anticomplete, from which the conjecture follows by applying this to complements.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1701.06301",
+    "paper_title": "Induced subgraphs of graphs with large chromatic number. VII. Gyárfás' complementation conjecture",
+    "paper_authors": [
+      "Alex Scott",
+      "Paul Seymour"
+    ],
+    "published": "2019-03-14",
+    "abs_url": "https://arxiv.org/abs/1701.06301",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Gyárfás Conjecture 6.8",
+    "statement_text": "Let $\\mathcal{C}$ be the class of graphs $G$ such that $\\alpha(H)\\omega(H) \\geq |V(H)| - 1$ for every induced subgraph $H$ of $G$. Then $\\mathcal{C}$ is $\\chi$-bounded.",
+    "context_text": "Vaidy Sivaraman observed (private communication) that Theorem 1.2 of the paper also implies conjecture 6.8 of Gyárfás [4]. The implication is immediate since if $H$ is the disjoint union of two odd cycles of length at least four, then $\\alpha(H)\\omega(H) = |V(H)| - 2$, so any graph in $\\mathcal{C}$ cannot contain two pairwise anticomplete odd holes.",
+    "attributed_to": "Gyárfás",
+    "attributed_year": 1987,
+    "paper_contribution": "Proves the conjecture as an immediate corollary of Theorem 1.2 (the $\\chi$-boundedness result for classes with no $c+1$ pairwise anticomplete odd holes).",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1701.06301",
+    "paper_title": "Induced subgraphs of graphs with large chromatic number. VII. Gyárfás' complementation conjecture",
+    "paper_authors": [
+      "Alex Scott",
+      "Paul Seymour"
+    ],
+    "published": "2019-03-14",
+    "abs_url": "https://arxiv.org/abs/1701.06301",
+    "source": "pdf"
+  }
+]

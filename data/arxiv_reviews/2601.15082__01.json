@@ -1,0 +1,22 @@
+{
+  "review_id": "2601.15082__01",
+  "safe_id": "2601.15082",
+  "arxiv_id": "2601.15082",
+  "conjecture_title": "Problem 2",
+  "paper_title": "Characterization of sparse monotone graph classes with bounded domination-to-2-independence ratio",
+  "published": "2026-01-21",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Problem 2 is explicitly stated as open in the source paper itself: the authors note that their main result (Theorem 9, characterizing sparse monotone classes with bounded domination-to-2-independence ratio) does not resolve the relaxed question, because classes such as C_{k,d} can have domination tied to 2-independence yet an unbounded ratio. The paper concludes that Problem 2 for sparse monotone graph classes remains a natural open question. No follow-up paper addressing this problem was found in a web search conducted in May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "domination 2-independence graph classes Bonamy Dvořák Michel Mikšaník 2601.15082",
+    "\"domination tied to 2-independence\" graph classes sparse monotone",
+    "arxiv 2026 domination 2-independence number graph class characterization Dvořák Michel Mikšaník"
+  ],
+  "notes": "The paper was published 2026-01-21 (only ~4 months before this review). The HTML version of the paper confirms Problem 2 is open: 'Problem 2 for sparse monotone graph classes remains as a natural open question.' No internal references were supplied for this problem. No follow-up was found in the indexed literature."
+}

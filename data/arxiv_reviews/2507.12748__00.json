@@ -1,0 +1,23 @@
+{
+  "review_id": "2507.12748__00",
+  "safe_id": "2507.12748",
+  "arxiv_id": "2507.12748",
+  "conjecture_title": "Conjecture 1.3",
+  "paper_title": "Improved Decomposition Bounds for Partition Polytopes and Odd-Covers",
+  "published": "2025-07-28",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 1.3 from arXiv:2507.12748 posits that the diameter of the partition polytope PP(κ₁,…,κₙ) is at most ⌈4κ₁/3⌉ + c for some absolute constant c. The source paper itself establishes the upper bound ⌈3κ₁/2⌉ (Theorem 1.1) and notes the known lower bound is ⌈4κ₁/3⌉; the conjecture asserts the true diameter matches the lower bound up to a constant. No follow-up paper resolving or making further progress on this conjecture was found in the ~10 months since posting.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "partition polytope diameter Borgwardt Dvořák Frederickson Nix Yoo 2507.12748",
+    "partition polytope diameter 4kappa1/3 conjecture odd-cover decomposition 2025 2026",
+    "\"partition polytope\" diameter \"odd-cover\" Borgwardt Yoo 2026",
+    "arxiv 2507.12748 citing \"partition polytope\" diameter conjecture 2025 2026"
+  ],
+  "notes": "No follow-up found. The paper is recent (posted 2025-07-28); the conjecture is open with high confidence. The source paper notes that even the special case κ₁=3 (diameter ≤ 4) is open, suggesting the conjecture requires substantially new techniques."
+}

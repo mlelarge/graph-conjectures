@@ -1,0 +1,71 @@
+[
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Problem 1 (Problem 1.4 in [1])",
+    "statement_text": "Do there exist functions $f_1, f_2 : \\mathbb{N} \\to \\mathbb{N}$ such that the following hold?\n1. If a graph $G$ is $d$-degenerate, then $\\mathrm{HG}(G) \\leq f_1(d)$.\n2. If a graph $G$ has minimum degree at least $f_2(d)$, then $\\mathrm{HG}(G) \\geq d$.",
+    "context_text": "Intuitively, very sparse graphs should not allow winning with arbitrarily many colours, and graphs with sufficiently high minimum degree should. This problem, raised in [1] and [9], asks in effect whether the hat guessing number is an equivalent parameter to the degeneracy. It was proved in [13] that there exist $d$-degenerate graphs with hat guessing number as large as $2^{2^{d-1}}$, showing $f_1$ must grow at least doubly-exponentially if it exists.",
+    "attributed_to": "Alon et al.",
+    "attributed_year": null,
+    "paper_contribution": "Provides positive evidence for part (1.) by introducing strong degeneracy and proving that every strongly $d$-degenerate graph $G$ satisfies $\\mathrm{HG}(G) \\leq (2d)^d$ (Theorem 1.2), together with an exact characterisation of graph classes with bounded strong degeneracy (Theorem 1.3) covering outerplanar graphs, $C_4$-free planar graphs, $K_{2,s}$-free graphs of bounded expansion, and sparse Erdős–Rényi random graphs.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Restated verbatim as Problem 1 in this paper; originally Problem 1.4 in reference [1]. PDF source — some LaTeX may be garbled.",
+    "arxiv_id": "2112.09619",
+    "paper_title": "Hat guessing numbers of strongly degenerate graphs",
+    "paper_authors": [
+      "Charlotte Knierim",
+      "Anders Martinsson",
+      "Raphael Steiner"
+    ],
+    "published": "2021-12-17",
+    "abs_url": "https://arxiv.org/abs/2112.09619",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Open Problem (constant bound on hat guessing number of planar graphs)",
+    "statement_text": "Whether or not planar graphs allow for a constant bound on their hat guessing number.",
+    "context_text": "Stated explicitly in [2, 4, 6]. The best known lower bound for the hat guessing number of planar graphs is 14. Bradshaw [6] proved that outerplanar graphs have hat guessing number at most $2^{125000}$ and suspected that there exist outerplanar graphs with hat guessing number as large as 1000.",
+    "attributed_to": "Alon and Chizewer, Bosek et al., Bradshaw",
+    "attributed_year": null,
+    "paper_contribution": "Proves $\\mathrm{HG}(G) \\leq 40$ for every outerplanar graph $G$ (Theorem 1.4), drastically improving Bradshaw's bound of $2^{125000}$; also proves $\\mathrm{HG}(G) \\leq 14^7 \\approx 10^8$ for every $C_4$-free planar graph $G$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source — some LaTeX may be garbled.",
+    "arxiv_id": "2112.09619",
+    "paper_title": "Hat guessing numbers of strongly degenerate graphs",
+    "paper_authors": [
+      "Charlotte Knierim",
+      "Anders Martinsson",
+      "Raphael Steiner"
+    ],
+    "published": "2021-12-17",
+    "abs_url": "https://arxiv.org/abs/2112.09619",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Open Problem (hat guessing number bounded by Hadwiger number)",
+    "statement_text": "Whether the hat guessing number of graphs can be bounded in terms of their Hadwiger number $h(G)$.",
+    "context_text": "The Hadwiger number $h(G)$ is the largest $t \\geq 1$ such that $G$ contains a $K_t$-minor. Alon and Chizewer [2] raised this question; it was also observed in [2] that there exist graphs with no $K_t$-minor whose hat guessing number equals $2^{2^{t-3}}$.",
+    "attributed_to": "Alon and Chizewer",
+    "attributed_year": null,
+    "paper_contribution": "Gives a positive answer for $K_{2,s}$-free graphs: every $K_{2,s}$-free graph with no $K_t$-minor is strongly $d$-degenerate with $d = O(st\\sqrt{\\log t})$, so $\\mathrm{HG}(G) \\leq 2^{O(st\\sqrt{\\log t}\\,\\log(st))}$ (Corollary 1.5).",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source — some LaTeX may be garbled.",
+    "arxiv_id": "2112.09619",
+    "paper_title": "Hat guessing numbers of strongly degenerate graphs",
+    "paper_authors": [
+      "Charlotte Knierim",
+      "Anders Martinsson",
+      "Raphael Steiner"
+    ],
+    "published": "2021-12-17",
+    "abs_url": "https://arxiv.org/abs/2112.09619",
+    "source": "pdf"
+  }
+]

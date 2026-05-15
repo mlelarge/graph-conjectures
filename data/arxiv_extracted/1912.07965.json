@@ -1,0 +1,25 @@
+[
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Open Problem (edge-EP property characterization for planar graph expansions)",
+    "statement_text": "Finding a characterization for the planar graphs $J$ such that $J$-expansions have the edge-Erd\\H{o}s-P\\'osa property remains an intriguing open problem.",
+    "context_text": "Robertson and Seymour showed that $J$-expansions have the vertex-EP property if and only if $J$ is planar. By contrast, it was shown in [4] that there exist planar graphs $J$ — in particular sufficiently large ladders and subcubic trees with sufficiently large pathwidth — for which $J$-expansions do not have the edge-EP property. The precise characterization of which planar $J$ yield the edge-EP property is unknown.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated in prose in the introduction as 'an intriguing open problem'; no labelled theorem environment. Section 5, which the paper explicitly announces contains further open problems, appears to be missing from the PDF extraction — additional items likely exist there.",
+    "arxiv_id": "1912.07965",
+    "paper_title": "Erdős-Pósa from ball packing",
+    "paper_authors": [
+      "Wouter Cames van Batenburg",
+      "Gwenaël Joret",
+      "Arthur Ulmer"
+    ],
+    "published": "2020-06-08",
+    "abs_url": "https://arxiv.org/abs/1912.07965",
+    "source": "pdf"
+  }
+]

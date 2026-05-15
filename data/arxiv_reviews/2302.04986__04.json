@@ -1,0 +1,30 @@
+{
+  "review_id": "2302.04986__04",
+  "safe_id": "2302.04986",
+  "arxiv_id": "2302.04986",
+  "conjecture_title": "Open problem on $\\eta$-boundedness for disjoint union of two stars",
+  "paper_title": "Hitting all maximum stable sets in $P_5$-free graphs",
+  "published": "2024-01-16",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The open problem of whether $(S_a \\cup S_b)$-free graphs are $\\eta$-bounded for all $a,b \\geq 1$ remains unresolved. No paper resolving this specific conjecture was found in the indexed literature. A related paper (arXiv:2403.19737) resolves a different conjecture from the same source paper, concerning graphs without large induced matchings, confirming activity in this area but leaving the disjoint-union-of-stars question open.",
+  "since_posted": [],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2507.06169",
+      "verified": true,
+      "note": "Paper confirmed as 'A simple layered-wheel-like construction' by Chudnovsky, Fischer, Hajebi, Spirkl, Walczak. It provides a counterexample to a conjecture attributed to Trotignon (Conjecture 1.5 in some paper) about treewidth and induced subgraphs. It does not discuss η-boundedness, disjoint union of two stars, or the open problem reviewed here. The fuzz match was a false positive driven by shared authors."
+    }
+  ],
+  "search_queries": [
+    "eta-bounded star-free graphs disjoint union two stars 2302.04986 Hajebi Spirkl",
+    "η-boundedness Sa∪Sb-free graphs stable sets hitting conjecture graph theory",
+    "WebFetch https://arxiv.org/abs/2507.06169",
+    "WebFetch https://arxiv.org/abs/2512.23887",
+    "WebFetch https://arxiv.org/abs/2403.19737"
+  ],
+  "notes": "arXiv:2403.19737 ('Piercing independent sets in graphs without large induced matching') resolves a different conjecture from the same source paper (about $2K_2$-free or bounded induced matching graphs), not the disjoint-union-of-stars η-boundedness question. The source paper itself notes the analogy with the Gyárfás–Sumner conjecture: for χ-boundedness, H-free classes reduce to component-free classes, but the analogous reduction for η-boundedness (Conjecture 1.8) is unknown. No follow-up found in the indexed literature for the specific open problem."
+}

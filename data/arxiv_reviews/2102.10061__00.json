@@ -1,0 +1,33 @@
+{
+  "review_id": "2102.10061__00",
+  "safe_id": "2102.10061",
+  "arxiv_id": "2102.10061",
+  "conjecture_title": "Conjecture 4",
+  "paper_title": "Improved bounds for weak coloring numbers",
+  "published": "2022-03-25",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The conjecture that all planar graphs have r-th weak coloring numbers in O(r^2 \\log r) remains open as of 2025. Hodor, La, Micek, and Rambaud (arXiv:2407.04588, SODA 2025) proved this bound for planar graphs of bounded treewidth and more generally for X-minor-free graphs via the 2-treedepth of X, but explicitly state that the exact growth rate for all planar graphs is unknown. The lower bound \\Omega(r^2 \\log r) from Joret--Micek and the upper bound O(r^3) for general planar graphs still leave a gap.",
+  "since_posted": [
+    {
+      "title": "Weak coloring numbers of minor-closed graph classes",
+      "authors": "Jędrzej Hodor, Hoang La, Piotr Micek, Clément Rambaud",
+      "year": 2024,
+      "venue": "Proceedings of SODA 2025 / arXiv preprint",
+      "url": "https://arxiv.org/abs/2407.04588",
+      "arxiv_id": "2407.04588",
+      "doi": "10.1137/1.9781611978322.107",
+      "kind": "partial",
+      "claim": "Proves O(r² log r) weak coloring numbers for planar graphs of bounded treewidth (Corollary 3), and more generally for X-minor-free graphs in terms of the 2-treedepth of X, but explicitly states that the exact growth rate for all planar graphs remains unknown."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "weak coloring numbers planar graphs r^2 log r Joret Micek 2102.10061",
+    "weak coloring numbers planar graphs upper bound O(r^2 log r) 2022 2023 2024"
+  ],
+  "notes": "Conjecture 4 from arXiv:2102.10061 is partially resolved: the O(r² log r) bound holds for bounded-treewidth planar graphs (Hodor, La, Micek, Rambaud 2024, SODA 2025), but the full conjecture for all planar graphs is explicitly stated as open in that paper."
+}

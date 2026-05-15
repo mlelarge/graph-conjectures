@@ -1,0 +1,23 @@
+{
+  "review_id": "2211.01032__01",
+  "safe_id": "2211.01032",
+  "arxiv_id": "2211.01032",
+  "conjecture_title": "Conjecture 9.1",
+  "paper_title": "Random Embeddings of Graphs: The Expected Number of Faces in Most Graphs is Logarithmic",
+  "published": "2025-04-09",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 9.1 from arXiv:2211.01032 asserts that for any density function p(n), almost all graphs in G(n,p) have E[F] = O(log n). The paper itself proves this for dense graphs (p >= 1/polylog n, Corollary 7.3, polylogarithmic bound) and for sparse random graphs (Section 8, logarithmic bound), leaving the general case open. The conjecture would follow from the stronger Conjecture 1.13. No subsequent work resolving the full conjecture was found in the literature.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "arXiv 2211.01032 random embeddings graphs expected number faces logarithmic Mohar",
+    "G(n,p) random graph expected faces embedding logarithmic conjecture 2023 2024 2025",
+    "Campion Loth Masarik Mohar Samal random graph embedding faces all densities p(n) 2023 2024 2025",
+    "\"random embedding\" \"G(n,p)\" \"expected faces\" \"logarithmic\" \"almost all\" 2024 2025 2026 arxiv"
+  ],
+  "notes": "No follow-up paper resolving Conjecture 9.1 was found. The paper's latest revision (v3, April 2025) still lists the conjecture as open. Conjecture 9.1 is a consequence of the stronger Conjecture 1.13 (also open), which predicts E[F] = (1+o(1)) ln(pn^2) for G(n,p)."
+}

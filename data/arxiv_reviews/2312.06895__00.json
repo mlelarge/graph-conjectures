@@ -1,0 +1,24 @@
+{
+  "review_id": "2312.06895__00",
+  "safe_id": "2312.06895",
+  "arxiv_id": "2312.06895",
+  "conjecture_title": "Conjecture 1.2",
+  "paper_title": "Triangle Ramsey numbers of complete graphs",
+  "published": "2025-10-01",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Conjecture 1.2 posits that for all $s \\leq t$, $r_{K_s}(K_t) = \\binom{r(K_t)}{s}$. The case $s = 2$ is classical (Chv\\u00e1tal). The source paper itself resolves $s = 3$ for all sufficiently large $t$ as its main result (Theorem 1.3), via a chromatic-graph lemma: every $r$-chromatic graph in which every edge lies in at least $K$ triangles contains at least $\\binom{r}{3}$ triangles. No subsequent work extending the result to $s \\geq 4$ was found in the indexed literature as of May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Fox Tidor Zhang \"triangle Ramsey numbers\" complete graphs arXiv 2312.06895",
+    "Ramsey number complete graph \"r_{K_s}(K_t)\" \"binomial\" conjecture Spiro",
+    "Fox Tidor Zhang \"r_{K_s}(K_t)\" conjecture Spiro Ramsey complete graph clique minimum copies 2024 2025",
+    "Spiro \"F-Ramsey number\" \"K_s\" \"K_t\" minimum clique Ramsey graph 2024 2025 arXiv",
+    "arXiv 2503.22094 recent progress Ramsey theory Fox Tidor Zhang"
+  ],
+  "notes": "The conjecture is partially settled in the source paper itself ($s = 3$ proved for all sufficiently large $t$). The general case ($s \\geq 4$) remains open. The paper was published in Journal of Combinatorial Theory, Series B, vol. 176 (2026), pp. 268–286. No follow-up paper resolving additional cases was found."
+}

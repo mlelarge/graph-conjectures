@@ -1,0 +1,24 @@
+[
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Problem 1 (Bukh)",
+    "statement_text": "Does there exist a constant $c$ so that for every graph $G$, the expected chromatic number of its random subgraphs satisfies: $$E(\\chi(G_{1/2})) > c\\,\\frac{\\chi(G)}{\\log \\chi(G)}\\,?$$",
+    "context_text": "Boris Bukh asked whether the same $\\Theta(n/\\log n)$ behaviour known for the chromatic number of a random subgraph of the complete graph $K_n$ occurs for random subgraphs of any $n$-chromatic graph, at least in expectation when $p$ is constant. The problem remains open for the ordinary chromatic number.",
+    "attributed_to": "Boris Bukh",
+    "attributed_year": null,
+    "paper_contribution": "Proves an affirmative answer to a strengthening of Bukh's question for the fractional chromatic number: for every graph $G$ with $\\chi_f(G) \\geq t$, the fractional chromatic number of $G_p$ is at least $t/(8\\log_{1/p}(et)+4)$ with probability at least $1-1/(2t)$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Reference [5] is a webpage with no publication year; attributed_year set to null. Statement extracted from a clearly readable labelled Problem environment despite PDF source.",
+    "arxiv_id": "1807.06285",
+    "paper_title": "Fractional chromatic number of a random subgraph",
+    "paper_authors": [
+      "Bojan Mohar",
+      "Hehui Wu"
+    ],
+    "published": "2018-07-17",
+    "abs_url": "https://arxiv.org/abs/1807.06285",
+    "source": "pdf"
+  }
+]

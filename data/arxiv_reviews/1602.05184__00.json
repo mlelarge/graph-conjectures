@@ -1,0 +1,28 @@
+{
+  "review_id": "1602.05184__00",
+  "safe_id": "1602.05184",
+  "arxiv_id": "1602.05184",
+  "conjecture_title": "Conjecture 5",
+  "paper_title": "On the difference between the Szeged and Wiener index",
+  "published": "2016-02-16",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "Conjecture 5 from arXiv:1602.05184 strengthens the main result of the same paper (η(G) ≥ 2n−6 for 2-connected non-complete graphs) to η(G) ≥ 2n for n ≥ 10, excluding three specific graph families. A web search spanning 2016–2026 found no published paper that proves or disproves this stronger bound; the conjecture appears to remain open. Confidence is medium rather than high because the conjecture is now nine years old and absence of a resolution in the indexed literature is somewhat suspicious for a concretely stated bound.",
+  "since_posted": [],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2402.05753",
+      "verified": true,
+      "note": "Paper is 'Cops and Robber on Hyperbolic Manifolds' by Iršič, Mohar, Wesolek — completely unrelated to the Szeged–Wiener index. The fuzzy match (fuzz=80) was a false positive; this paper does not cite arXiv:1602.05184 nor discuss η(G)."
+    }
+  ],
+  "search_queries": [
+    "Szeged Wiener index difference eta 2-connected graph 2n conjecture Bonamy Knor",
+    "arXiv 1602.05184 Szeged Wiener index cite follow-up",
+    "Szeged Wiener index \"eta(G)\" OR \"Sz(G)-W(G)\" \"2n\" 2-connected conjecture solved proved 2017 2018 2019 2020 2021 2022 2023 2024"
+  ],
+  "notes": "The source paper itself proves the weaker bound η(G) ≥ 2n−6 (resolving a conjecture of Nadjafi-Arani, Khodashenas and Ashrafi) and published Conjecture 5 as a further challenge. A 2021 paper (arXiv:2108.04157) resolves different conjectures of Hriňáková, Knor and Škrekovski (2019) about variable Wiener/Szeged indices, and a 2023 survey (arXiv:2303.11405) covers Wiener index topics, but neither could be verified as addressing Conjecture 5 specifically. No resolution of the full η(G) ≥ 2n statement was found."
+}

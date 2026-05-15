@@ -1,0 +1,46 @@
+[
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Open Problem: Finding a Shortest Even Hole",
+    "statement_text": "Finding a shortest even hole in a graph (if one exists).",
+    "context_text": "After surveying polynomial-time algorithms for detecting even holes, the authors note that finding a shortest even hole remains open: \"Another is finding a shortest even hole if there is one; this we have not yet been able to solve.\" This is posed as an analogue of the result of Chudnovsky, Scott and Seymour [8] that finds a shortest odd hole in $O(|G|^{14})$ time.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated informally in the introduction without a labelled environment.",
+    "arxiv_id": "2009.05691",
+    "paper_title": "Detecting a long even hole",
+    "paper_authors": [
+      "Linda Cook",
+      "Paul Seymour"
+    ],
+    "published": "2020-09-12",
+    "abs_url": "https://arxiv.org/abs/2009.05691",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Open Question: Detecting Holes of Length Divisible by Three",
+    "statement_text": "Can holes whose length is a multiple of three be detected in polynomial time?",
+    "context_text": "Having focused on even and odd holes, the authors remark: \"what about holes of length a multiple of three, can we detect them in polynomial time? Triangle-free graphs with no holes of length a multiple of three have some very interesting properties [9], but we currently have no idea how to recognize such graphs.\" This suggests the problem of recognising graphs with no hole of length $\\equiv 0 \\pmod{3}$ as a natural next direction.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated informally in the introduction as a rhetorical open question; no labelled environment.",
+    "arxiv_id": "2009.05691",
+    "paper_title": "Detecting a long even hole",
+    "paper_authors": [
+      "Linda Cook",
+      "Paul Seymour"
+    ],
+    "published": "2020-09-12",
+    "abs_url": "https://arxiv.org/abs/2009.05691",
+    "source": "pdf"
+  }
+]

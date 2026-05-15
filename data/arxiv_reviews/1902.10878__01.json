@@ -1,0 +1,22 @@
+{
+  "review_id": "1902.10878__01",
+  "safe_id": "1902.10878",
+  "arxiv_id": "1902.10878",
+  "conjecture_title": "Open Question — symmetry of $\\psi$ (biconstrained case)",
+  "paper_title": "Concatenating bipartite graphs",
+  "published": "2020-12-07",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The question of whether $\\psi(x,y) = \\psi(y,x)$ for all $x,y \\in (0,1]$ remains open. The companion paper arXiv:1908.07453 (Hompe, 2019), which extended the results to additional parameter ranges for $\\phi$ and $\\psi$, was withdrawn in June 2022 and its content incorporated back into arXiv:1902.10878; neither version appears to resolve the symmetry question for $\\psi$. No other follow-up addressing this specific open question was found in the literature.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Chudnovsky Hompe Scott Seymour Spirkl \"concatenating bipartite graphs\" psi biconstrained symmetry",
+    "arXiv 1902.10878 \"concatenating bipartite graphs\" citing papers follow-up",
+    "Chudnovsky Hompe Scott Seymour Spirkl \"concatenating bipartite\" psi symmetry biconstrained 2021 2022 2023 2024"
+  ],
+  "notes": "The companion paper arXiv:1908.07453 was withdrawn (June 2022) with its results merged into the current version of arXiv:1902.10878; it extended computations of $\\phi$ and $\\psi$ for specific parameter values (e.g., $\\geq 3/4$, $2/5$, $3/5$) but did not resolve the symmetry question. The published EJC version (2022, v29i2p47) confirms $\\phi(x,y)=\\phi(y,x)$ as proven but gives no indication that $\\psi(x,y)=\\psi(y,x)$ has been settled. No external follow-up paper addressing this question was found."
+}

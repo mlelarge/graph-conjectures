@@ -1,0 +1,25 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Coarse Menger Conjecture (Conjecture 1.2)",
+    "statement_text": "For all integers $k,d\\geq 1$ there exists $\\ell>0$ with the following property. Let $G$ be a graph and let $S,T\\subseteq V(G)$. Then either\n\\begin{itemize}\n\\item there are $k$ paths between $S,T$, pairwise at distance at least $d$; or\n\\item there is a set $X\\subseteq V(G)$ with $|X|\\leq k-1$ such that every path between $S,T$ contains a vertex with distance at most $\\ell$ from some member of $X$.\n\\end{itemize}",
+    "context_text": "This conjecture is a coarse analogue of Menger's classical 1927 theorem, motivated by coarse graph theory (large-scale geometric structure of graphs) and complexity-theoretic questions about finding vertex-disjoint paths at distance at least $d$. Both groups of authors proved the $k=2$ case; the $k\\geq 3$ case was open. The case $d=3$ is of special interest because truth for $d=3$ implies truth for all $d\\geq 3$ (via the $d$th power of $G$).",
+    "attributed_to": "Albrechtsen, Huynh, Jacobs, Knappe and Wollan; and independently Georgakopoulos and Papasoglu",
+    "attributed_year": 2023,
+    "paper_contribution": "Provides an explicit counterexample with $d=k=3$ and maximum degree at most three, showing the conjecture is false for all $k\\geq 3$; also gives a simpler proof of the $k=2$ case.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2401.06685",
+    "paper_title": "A counterexample to the coarse Menger conjecture",
+    "paper_authors": [
+      "Tung Nguyen",
+      "Alex Scott",
+      "Paul Seymour"
+    ],
+    "published": "2025-01-15",
+    "abs_url": "https://arxiv.org/abs/2401.06685",
+    "source": "html"
+  }
+]

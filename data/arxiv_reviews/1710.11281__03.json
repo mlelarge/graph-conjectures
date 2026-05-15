@@ -1,0 +1,44 @@
+{
+  "review_id": "1710.11281__03",
+  "safe_id": "1710.11281",
+  "arxiv_id": "1710.11281",
+  "conjecture_title": "Question (Riemannian surfaces): worst surfaces of fixed genus",
+  "paper_title": "Notes on Cops and Robber game on graphs",
+  "published": "2017-10-31",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "The question of which Riemannian surfaces of fixed genus maximise the cop number in the continuous Cops and Robbers game remains open. Mohar's follow-up work (arXiv:2205.11633) develops the geodesic-space framework and establishes that the cop number of genus-$g$ surfaces satisfies $c = O(g)$ and $c = \\Omega(\\sqrt{g})$, bounding the worst case but not identifying which geometric realisations achieve it. Ir\\v{s}i\\v{c}, Mohar, and Wesolek (arXiv:2402.05753) show that on surfaces of constant negative curvature (hyperbolic manifolds) two cops suffice to come arbitrarily close to the robber regardless of genus, ruling out hyperbolic surfaces as the worst-case examples.",
+  "since_posted": [
+    {
+      "title": "The game of Cops and Robber on geodesic spaces",
+      "authors": "Mohar, B.",
+      "year": 2022,
+      "venue": "Canadian Journal of Mathematics",
+      "url": "https://arxiv.org/abs/2205.11633",
+      "arxiv_id": "2205.11633",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Develops the geodesic-space framework for the continuous Cops and Robbers game and proves that for surfaces of genus $g$ the cop number satisfies $c = O(g)$ and $c = \\Omega(\\sqrt{g})$, bounding the worst case over all Riemannian metrics but not identifying which specific metric achieves the maximum."
+    },
+    {
+      "title": "Cops and Robber on Hyperbolic Manifolds",
+      "authors": "Ir\\v{s}i\\v{c}, V., Mohar, B., Wesolek, A.",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2402.05753",
+      "arxiv_id": "2402.05753",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves that on surfaces of constant negative curvature (hyperbolic manifolds) two cops have a strategy to come arbitrarily close to the robber independently of the genus, ruling out hyperbolic surfaces as worst-case examples for the cop number."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "cops robbers Riemannian surfaces cop number genus continuous game Mohar",
+    "continuous cops robbers game surfaces genus worst cop number arXiv"
+  ],
+  "notes": "No internal refs were supplied. The specific question — which Riemannian metric on a genus-$g$ surface maximises the cop number in the continuous game — remains open. Partial progress: worst-case bounds $\\Omega(\\sqrt{g}) \\le c \\le O(g)$ are established by arXiv:2205.11633, and the hyperbolic (constant negative curvature) case is resolved by arXiv:2402.05753 (cop number $\\le 2$ there, regardless of genus). The author attribution for arXiv:2205.11633 (Mohar, B.) is inferred from contextual evidence — same research programme and ADS identifier suffix — and was not directly confirmed in the abstract-page fetch."
+}

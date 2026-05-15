@@ -1,0 +1,21 @@
+{
+  "review_id": "2004.14789__00",
+  "safe_id": "2004.14789",
+  "arxiv_id": "2004.14789",
+  "conjecture_title": "Informal Conjecture (polynomial expansion and bounded twin-width)",
+  "paper_title": "Twin-width I: tractable FO model checking",
+  "published": "2021-10-25",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The conjecture that all classes of polynomial expansion have bounded twin-width remains open as of 2026. Bonnet's TWIN-WIDTH ANR JCJC open-questions page explicitly lists this question and remarks 'If this is true, we are quite far from proving it.' No paper resolving or disproving the conjecture has been found in the indexed literature. The closely related question of whether every K_{t,t}-free string-graph class has twin-width bounded by a function of t is also listed as open.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "polynomial expansion bounded twin-width conjecture graph theory",
+    "twin-width polynomial expansion 2004.14789 Bonnet Kim Thomasse Watrigant"
+  ],
+  "notes": "Bonnet's open-questions page (https://perso.ens-lyon.fr/edouard.bonnet/openQuestions.html) was verified via WebFetch and confirms the conjecture is still open with the remark 'If this is true, we are quite far from proving it.' No follow-up paper resolving it in either direction was found after four web calls."
+}

@@ -1,0 +1,22 @@
+{
+  "review_id": "1710.03117__00",
+  "safe_id": "1710.03117",
+  "arxiv_id": "1710.03117",
+  "conjecture_title": "Informal Conjecture (constant-size M)",
+  "paper_title": "On classes of graphs with strongly sublinear separators",
+  "published": "2018-02-09",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "No published paper resolving this conjecture was found. Dvořák's 2022 Journal of Graph Theory paper 'On weighted sublinear separators' is a likely follow-up, but its full content is behind a paywall and could not be verified. The conjecture that the polylogarithmic-in-n bound on |M| in the weighted balanced separator C∪M can be replaced by a constant depending only on the graph class and ℓ remains, as far as can be determined from open-access sources, open.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Dvořák \"strongly sublinear separators\" balanced separator constant size 1710.03117",
+    "graph \"balanced separator\" \"constant size\" \"polynomial expansion\" \"omega-expansion\" separator conjecture",
+    "Dvořák \"weighted sublinear separators\" 2022 \"constant size\" conjecture separator"
+  ],
+  "notes": "Dvořák published a follow-up paper 'On weighted sublinear separators' in J. Graph Theory 2022 (DOI 10.1002/jgt.22777) which may address this conjecture, but the paper is paywalled and the abstract does not explicitly mention the constant-size M conjecture. The 2022 paper 'Product Structure of Graph Classes with Strongly Sublinear Separators' (arXiv:2208.10074) and the 2026 paper 'Coarse Balanced Separators in Fat-Minor-Free Graphs' (arXiv:2604.11318) do not appear to reference this specific conjecture. Confidence is medium rather than high because the conjecture is ~8 years old and a relevant paywalled paper could not be fully verified."
+}

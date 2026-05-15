@@ -1,0 +1,74 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Meyniel's Conjecture",
+    "statement_text": "For every connected graph $G$ of order $n$, $c(G) \\leq O(\\sqrt{n})$.",
+    "context_text": "This fundamental conjecture about cop number appeared in a paper by Frankl [8] as a personal communication from Henri Meyniel in 1985. The paper proves that the 'weak' Meyniel's conjecture holds for expander graph families of bounded degree, as a byproduct of computing an upper bound on the cop number of Ramanujan graphs.",
+    "attributed_to": "Henri Meyniel",
+    "attributed_year": 1985,
+    "paper_contribution": "Proves that the 'weak' Meyniel's conjecture holds for expander graph families of bounded degree.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2005.10849",
+    "paper_title": "On the cop number of graphs of high girth",
+    "paper_authors": [
+      "Peter Bradshaw",
+      "Seyyed Aliasghar Hosseini",
+      "Bojan Mohar",
+      "Ladislav Stacho"
+    ],
+    "published": "2020-05-21",
+    "abs_url": "https://arxiv.org/abs/2005.10849",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.3 (Folklore)",
+    "statement_text": "For any positive integers $g$ and $d$, there exists a $d$-regular graph $G$ of girth at least $g$, and order $\\Theta\\!\\left((d-1)^{\\left(\\frac{1}{2}+o(1)\\right)g}\\right)$.",
+    "context_text": "This folklore conjecture is related to the Moore bound and generalises a conjecture of Bollobás and Szemerédi for cubic graphs. The paper invokes it, together with Meyniel's conjecture, to argue that no lower bound of the form $\\Omega((d-1)^{cg})$ with $c > \\frac{1}{4}$ can hold for all graphs of girth $g$ and minimum degree $d$.",
+    "attributed_to": "Folklore (Bollobás and Szemerédi for the cubic case)",
+    "attributed_year": null,
+    "paper_contribution": "Uses this conjecture conditionally to support the claim that the exponent $\\frac{1}{4}$ in their lower bound is best possible; does not prove the conjecture itself.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source — the exponent '( 1 2 +o(1))g' appears garbled; interpreted as $\\left(\\tfrac{1}{2}+o(1)\\right)g$.",
+    "arxiv_id": "2005.10849",
+    "paper_title": "On the cop number of graphs of high girth",
+    "paper_authors": [
+      "Peter Bradshaw",
+      "Seyyed Aliasghar Hosseini",
+      "Bojan Mohar",
+      "Ladislav Stacho"
+    ],
+    "published": "2020-05-21",
+    "abs_url": "https://arxiv.org/abs/2005.10849",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Optimality of the exponent 1/4",
+    "statement_text": "Is the coefficient $\\frac{1}{4}$ of $g$ in the lower bound $\\Omega\\!\\left((\\delta-1)^{g/4}\\right)$ for the cop number of graphs of girth $g$ and minimum degree $\\delta$ best possible, i.e., can the exponent be improved to $\\left(\\frac{1}{4}+\\varepsilon\\right)g$ for some $\\varepsilon > 0$?",
+    "context_text": "Immediately after stating Theorem 1.1, the authors note: 'One may naturally ask if the coefficient $\\frac{1}{4}$ of $g$ is best possible. While we do not have an answer to this question …'. They exhibit conditional evidence (via Meyniel's conjecture and Conjecture 1.3) that $\\frac{1}{4}$ is optimal, and also prove via Ramanujan graphs that the true exponent cannot exceed $\\frac{3}{8}$.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated as prose without a labelled environment; the abstract frames it as 'several reasons for conjecturing that the exponent $\\frac{1}{4}g$ cannot be improved to $(\\frac{1}{4}+\\varepsilon)g$'.",
+    "arxiv_id": "2005.10849",
+    "paper_title": "On the cop number of graphs of high girth",
+    "paper_authors": [
+      "Peter Bradshaw",
+      "Seyyed Aliasghar Hosseini",
+      "Bojan Mohar",
+      "Ladislav Stacho"
+    ],
+    "published": "2020-05-21",
+    "abs_url": "https://arxiv.org/abs/2005.10849",
+    "source": "pdf"
+  }
+]

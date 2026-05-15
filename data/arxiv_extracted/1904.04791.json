@@ -1,0 +1,80 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Heath-Leighton-Rosenberg Conjecture",
+    "statement_text": "Planar graphs have bounded queue-number.",
+    "context_text": "Heath, Leighton, and Rosenberg posed this conjecture in 1992 as part of a graph-theoretic comparison of the power of stacks versus queues. For 27 years it remained the most important open question in the field of queue layouts, with the best prior upper bound being $O(\\log n)$ for $n$-vertex planar graphs (Dujmović, 2010).",
+    "attributed_to": "Heath, Leighton, and Rosenberg",
+    "attributed_year": 1992,
+    "paper_contribution": "Proves the conjecture: the queue-number of planar graphs is bounded, with explicit upper bound 49. The result is extended to graphs of Euler genus $g$ (queue-number at most $4g+49$) and to every proper minor-closed class of graphs via a new structural tool called layered partitions.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1904.04791",
+    "paper_title": "Planar graphs have bounded queue-number",
+    "paper_authors": [
+      "Vida Dujmović",
+      "Gwenaël Joret",
+      "Piotr Micek",
+      "Pat Morin",
+      "Torsten Ueckerdt",
+      "David R. Wood"
+    ],
+    "published": "2020-04-30",
+    "abs_url": "https://arxiv.org/abs/1904.04791",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Heath-Rosenberg Conjecture (unbounded queue-number)",
+    "statement_text": "Planar graphs have unbounded queue-number.",
+    "context_text": "In a later paper, Heath and Rosenberg conjectured the converse of their earlier conjecture with Leighton — that the queue-number of planar graphs is in fact unbounded. The paper notes this as a curiosity in a footnote in the introduction.",
+    "attributed_to": "Heath and Rosenberg",
+    "attributed_year": null,
+    "paper_contribution": "Disproves this conjecture as an immediate consequence of proving that planar graphs have bounded queue-number (at most 49).",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Mentioned only in footnote 1; no year is given for this later Heath-Rosenberg paper. PDF source.",
+    "arxiv_id": "1904.04791",
+    "paper_title": "Planar graphs have bounded queue-number",
+    "paper_authors": [
+      "Vida Dujmović",
+      "Gwenaël Joret",
+      "Piotr Micek",
+      "Pat Morin",
+      "Torsten Ueckerdt",
+      "David R. Wood"
+    ],
+    "published": "2020-04-30",
+    "abs_url": "https://arxiv.org/abs/1904.04791",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Stack-number vs. Queue-number Bounding Question",
+    "statement_text": "Is every graph's stack-number bounded by a function of its queue-number? Or is every graph's queue-number bounded by a function of its stack-number?",
+    "context_text": "Heath et al. and a co-cited reference pose this as an open question about the relative power of stacks versus queues as data structures when measured via graph-theoretic parameters. The paper notes that it is known the stack-number can be much larger than queue-number (e.g., ternary Hamming graphs), yet neither direction of bounding is known in general.",
+    "attributed_to": "Heath, Leighton, and Rosenberg",
+    "attributed_year": 1992,
+    "paper_contribution": "This paper makes no direct progress on this question; it is cited as open background in the introduction.",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Attributed to references [55, 67] in the paper; [67] is the 1992 Heath-Leighton-Rosenberg paper; the identity and year of [55] cannot be determined from the extracted text. PDF source — bibliography not fully extracted.",
+    "arxiv_id": "1904.04791",
+    "paper_title": "Planar graphs have bounded queue-number",
+    "paper_authors": [
+      "Vida Dujmović",
+      "Gwenaël Joret",
+      "Piotr Micek",
+      "Pat Morin",
+      "Torsten Ueckerdt",
+      "David R. Wood"
+    ],
+    "published": "2020-04-30",
+    "abs_url": "https://arxiv.org/abs/1904.04791",
+    "source": "pdf"
+  }
+]

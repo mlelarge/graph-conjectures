@@ -1,0 +1,22 @@
+{
+  "review_id": "2405.03455__00",
+  "safe_id": "2405.03455",
+  "arxiv_id": "2405.03455",
+  "conjecture_title": "Open Problem (Introduction)",
+  "paper_title": "Big line or big convex polygon",
+  "published": "2024-05-06",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The paper establishes $(3\\ell-1)\\cdot 2^{n-5} < ES_{\\ell}(n) < \\ell^{2}\\cdot 2^{n+C\\sqrt{n\\log n}}$, leaving a gap between the linear lower bound and the quadratic upper bound in $\\ell$. No follow-up paper resolving the correct joint dependence on $\\ell$ was found in the indexed literature. The paper appeared in Computational Geometry, vol. 131 (2026).",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "ES_ell(n) Erdos-Szekeres collinear convex \"big line\" \"big convex polygon\" 2405.03455",
+    "Conlon Fox He Mubayi Suk Verstraete \"big line or big convex polygon\" ES dependence ell follow-up",
+    "arxiv \"ES_ell\" OR \"ES_l(n)\" collinear convex polygon dependence ell linear quadratic 2025 2026"
+  ],
+  "notes": "No follow-up paper resolving the ell-dependence question was found after three targeted searches and two fetches. The related paper arXiv:2409.03122 (Furukawa, 'Happy ending or many concurrent lines') studies a dual line-version of the problem and does not address the point-version open problem. The paper itself was published in Computational Geometry, vol. 131 (2026), article 102218, without revision of the open problem."
+}

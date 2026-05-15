@@ -1,0 +1,22 @@
+{
+  "review_id": "2601.15245__01",
+  "safe_id": "2601.15245",
+  "arxiv_id": "2601.15245",
+  "conjecture_title": "Problem 6.1",
+  "paper_title": "Coloring small locally sparse degenerate graphs and related problems",
+  "published": "2026-01-21",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Problem 6.1 of arXiv:2601.15245 asks whether the upper bound $2^{cd}$ on the number of vertices in Theorems 1.1 and 1.2 can be weakened to $e^{\\omega(d)}$, with a corresponding improvement of the chromatic number bound, and whether large constant girth additionally helps. The paper itself establishes $e^{\\Omega(d)} \\leq f(d) \\leq e^{O(d^2 \\log d)}$ for the minimum order of a $d$-degenerate triangle-free $(d+1)$-chromatic graph, showing an exponential gap between the lower bound on $f(d)$ and the vertex regime covered by the main theorems. No follow-up resolving or making partial progress on Problem 6.1 has been found in the literature as of May 2026, which is expected given the paper's January 2026 submission date.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "locally sparse degenerate graphs chromatic number vertex bound 2601.15245 Bradac Fox Steiner Sudakov Zhang",
+    "locally sparse degenerate graphs chi coloring exponential vertex bound girth Erdos Ramsey triangle-free 2026",
+    "degenerate graphs chromatic number e^{omega(d)} vertex bound girth coloring 2026 arxiv"
+  ],
+  "notes": "No follow-up found. The conjecture is very recent (January 2026). The key open gap is between the vertex regime $n \\leq 2^{cd}$ covered by the main theorems and the sub-exponential regime $n = e^{\\omega(d)}$; resolving it is noted by the authors as the most important open problem from their paper and would have implications for Erd\\H{o}s's problem on graph Ramsey numbers for triangle-free graphs."
+}

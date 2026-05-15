@@ -1,0 +1,22 @@
+{
+  "review_id": "2507.04254__00",
+  "safe_id": "2507.04254",
+  "arxiv_id": "2507.04254",
+  "conjecture_title": "Conjecture 13",
+  "paper_title": "On Modular Edge Colourings of Graphs",
+  "published": "2025-12-05",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 13 from arXiv:2507.04254 asserts that every $0_k$-graph $G$ satisfies $\\chi'_k(G) \\leq k + o(k)$, which would match the lower bound and close the gap in the main result of the paper. The source paper itself improves the general upper bound to $\\chi'_k(G) \\leq 9k$; the conjecture, if true, would yield $\\chi'_k(G) \\leq k + o(k)$ for all graphs as a corollary via their proof strategy. No follow-up work resolving or partially resolving this specific conjecture was found in the indexed literature as of May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "modular edge colouring 0k-graph chromatic index Bonamy Botler 2507.04254",
+    "arXiv 2507.04254 \"modular edge coloring\" conjecture chi'_k 0k-graph",
+    "\"0_k-graph\" OR \"0k-graph\" modular edge colouring chromatic index 2026 Berthe Bonamy Botler"
+  ],
+  "notes": "The conjecture was introduced in December 2025 and no follow-up paper addressing it was found after three targeted web searches and two WebFetch verifications. The related paper arXiv:2510.04334 (on modular chromatic index of random hypergraphs) predates the source and does not address Conjecture 13."
+}

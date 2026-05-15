@@ -1,0 +1,34 @@
+{
+  "review_id": "2201.09115__03",
+  "safe_id": "2201.09115",
+  "arxiv_id": "2201.09115",
+  "conjecture_title": "Open problem: smallest counterexample to Woodall's conjecture",
+  "paper_title": "Disproof of a Conjecture by Woodall",
+  "published": "2022-01-22",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "medium",
+  "summary": "Steiner's 2022 disproof of Woodall's conjecture used a probabilistic argument that only yields counterexamples for astronomically large parameters (estimated around 10^29). A 2025 follow-up by Vanderbush in Graphs and Combinatorics substantially reduced this, constructing explicit counterexamples for (s,t)=(t,t) with t ≥ 48 (t ≠ 49) and (s,t)=(t,t+1) with t ≥ 54 (t ≠ 55). The question of determining the absolute smallest s and t for which the conjecture fails remains open.",
+  "since_posted": [
+    {
+      "title": "New Counterexamples to a Conjecture by Woodall on Graph Minors and List Coloring",
+      "authors": "Vanderbush",
+      "year": 2025,
+      "venue": "Graphs and Combinatorics",
+      "url": "https://link.springer.com/article/10.1007/s00373-025-02957-y",
+      "arxiv_id": null,
+      "doi": "10.1007/s00373-025-02957-y",
+      "kind": "partial",
+      "claim": "By adapting Steiner's probabilistic construction, constructs explicit counterexamples to Woodall's conjecture for (s,t)=(t,t) whenever t ≥ 48 (t ≠ 49) and (s,t)=(t,t+1) whenever t ≥ 54 (t ≠ 55), reducing the previously astronomically large parameter bounds to small explicit values."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Woodall conjecture Kst minor choosable list coloring counterexample smallest Steiner 2022",
+    "arXiv 2201.09115 Steiner Woodall conjecture disproof citing papers",
+    "\"New Counterexamples to a Conjecture by Woodall\" \"Graph Minors and List Coloring\" arXiv 2025"
+  ],
+  "notes": "The Springer URL for the Vanderbush (2025) paper could not be directly fetched (authentication redirect), but was consistently returned by two independent search queries with matching details. The open problem (smallest s+t for a counterexample) has significant partial progress — the bound is now explicit and small (t ≥ 48) rather than astronomical — but the exact minimum remains undetermined."
+}

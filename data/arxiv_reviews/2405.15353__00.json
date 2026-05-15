@@ -1,0 +1,23 @@
+{
+  "review_id": "2405.15353__00",
+  "safe_id": "2405.15353",
+  "arxiv_id": "2405.15353",
+  "conjecture_title": "Question 6.1",
+  "paper_title": "Sharing tea on a graph",
+  "published": "2025-09-22",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Question 6.1 from arXiv:2405.15353 asks whether every finite graph G, weight vector w in R_>=0^{V(G)}, and vertex v in V(G) admit a (w,v)-optimal sequence of length at most 2^{|V(G)|}. The source paper proves that a finite optimal sequence always exists but leaves the sharp exponential upper bound open. Proposition 6.2 of the same paper shows that a natural approach—finding an optimal sequence with no move that is a subset of a later move—fails, indicating the problem is nontrivial. A wide web search covering the arXiv ID, all authors, and the key mathematical terms returned no follow-up paper resolving or making partial progress on this question.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "sharing tea on a graph Gollin Hendrey Huang Huynh Mohar Oum optimal sequence 2405.15353",
+    "arxiv 2405.15353 sharing tea graph optimal sequence upper bound exponential",
+    "\"sharing tea\" graph \"optimal sequence\" \"sharing moves\" w-optimal follow-up 2025 2026",
+    "Gollin Hendrey Huynh Mohar Oum Zhu tea sharing graph sequence length exponential bound cite 2405.15353"
+  ],
+  "notes": "No follow-up found after 5 web calls (4 WebSearch + 1 WebFetch on the arXiv abstract page). The paper appeared on arXiv in May 2024 (v1) and was revised to v2 in September 2025; Question 6.1 is stated in the v2 text. The conjecture is recent (< 2 years from today) and the absence of a follow-up is expected. Status open with high confidence."
+}

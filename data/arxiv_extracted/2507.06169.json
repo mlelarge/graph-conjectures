@@ -1,0 +1,27 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.5",
+    "statement_text": "For all $r,t\\in\\mathbb{N}$, there exists $c=c(r,t)\\in\\mathbb{N}$ such that for every graph $G$, if $G$ does not contain $W_{t\\times t}$ or $K_{t,t}$ as an induced minor, and every induced subgraph $H$ of $G$ that is an outerstring graph satisfies $\\operatorname{tw}(H)\\leq r$, then $\\operatorname{tw}(G)\\leq c$.",
+    "context_text": "This conjecture is closely related to property (v) of the paper's construction — that every outerstring induced subgraph of the constructed graphs has treewidth bounded by an absolute constant. It was already refuted by the construction of Alecu, Bonnet, Villafana, and Trotignon [5], and the present paper provides a further counterexample.",
+    "attributed_to": "Trotignon",
+    "attributed_year": 2025,
+    "paper_contribution": "Provides a second, simpler counterexample to Conjecture 1.5 that additionally has arbitrarily large girth and does not contain all trees as induced subgraphs; the proof establishes a slightly stronger property than (v) — see Theorem 6.2.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Attributed to a private communication (Trotignon, 2025); the conjecture is disproved (not proved) by this paper.",
+    "arxiv_id": "2507.06169",
+    "paper_title": "A simple layered-wheel-like construction",
+    "paper_authors": [
+      "Maria Chudnovsky",
+      "David Fischer",
+      "Sepehr Hajebi",
+      "Sophie Spirkl",
+      "Bartosz Walczak"
+    ],
+    "published": "2025-07-29",
+    "abs_url": "https://arxiv.org/abs/2507.06169",
+    "source": "html"
+  }
+]

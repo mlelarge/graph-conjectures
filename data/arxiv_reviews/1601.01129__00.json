@@ -1,0 +1,23 @@
+{
+  "review_id": "1601.01129__00",
+  "safe_id": "1601.01129",
+  "arxiv_id": "1601.01129",
+  "conjecture_title": "Problem 1",
+  "paper_title": "Minimal normal graph covers",
+  "published": "2016-01-06",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Problem 1 asks for the exact asymptotics of N(c,s), the maximum number of vertices in a (c,s)-normal graph. The source paper proves N(c,s) ≤ 2^(c+s) and a lower bound of roughly √5^c for N(c,c), but the authors describe these bounds as 'far from conclusive' and explicitly compare the open question to unsolved problems in Ramsey theory. No follow-up paper resolving or substantially improving these bounds was found in a search of the published literature through May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Gajser Mohar \"normal graph covers\" \"(c,s)-normal\" graph maximum vertices",
+    "arXiv 1601.01129 \"minimal normal graph covers\" citing papers",
+    "\"normal graph\" \"N(c,s)\" OR \"cs-normal\" clique stable set cover maximum vertices Ramsey",
+    "Gajser Mohar \"normal cover\" \"clique\" \"stable set\" follow-up 2018 2019 2020 2021 2022 2023 2024"
+  ],
+  "notes": "No follow-up found. The paper was published in Combinatorica 38 (2018), 1415–1436 (DOI 10.1007/s00493-017-3559-2). The authors themselves frame the open question as analogous to Ramsey-type problems, suggesting it is expected to be hard. Semantic Scholar and Mohar's publication page returned no relevant citing work on the N(c,s) extremal question specifically."
+}

@@ -1,0 +1,24 @@
+[
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 4",
+    "statement_text": "For every integer $k\\geq 3$, there exists a set $X$ of vertices and a set $C$ of $k$-colorings of $X$ such that no $X$-rooted-$K_{k}$-minor-free graph $G$ realizes $C$.",
+    "context_text": "The conjecture asserts that Theorem 3 (the generalization of the DeVos–Seymour result to $X$-rooted-$K_{k+1}$-minor-free $K_{k+2}$-minor-free graphs) does not further extend to $X$-rooted-$K_{k}$-minor-free graphs, i.e., reducible configurations cannot exploit the full global structure when the number of colors falls below what Hadwiger's conjecture postulates. Holroyd's conjecture — that if $G$ is $k$-colorable and every $k$-coloring uses all $k$ colors on $X$ then $K_k$ is an $X$-rooted minor of $G$ — would imply this conjecture if true in general.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2504.07764",
+    "paper_title": "A note on extendable sets of colorings and rooted minors",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Jan M. Swart"
+    ],
+    "published": "2025-04-10",
+    "abs_url": "https://arxiv.org/abs/2504.07764",
+    "source": "html"
+  }
+]

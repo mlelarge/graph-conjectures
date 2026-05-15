@@ -1,0 +1,50 @@
+[
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 3",
+    "statement_text": "For every positive integer $\\ell$, there is a polynomial-time algorithm that given a planar near-Eulerian-triangulation $G$ with the outer face of length at most $\\ell$ and a precoloring $\\varphi$ of the vertices incident with the outer face decides whether $\\varphi$ extends to a 4-coloring of $G$.",
+    "context_text": "The paper provides only a necessary topological condition for precoloring extension in general, and resolves the problem completely only for outer faces of length at most five and in the case where all vertices of the outer face have odd degree and are colored with three colors. The authors conjecture that combining the topological condition with further ideas will resolve the disk case in full, and that a polynomial-time decision algorithm exists for any fixed outer face length $\\ell$.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2312.13061",
+    "paper_title": "Precoloring extension in planar near-Eulerian-triangulations",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Benjamin Moore",
+      "Michaela Seifrtová",
+      "Robert Šámal"
+    ],
+    "published": "2023-12-20",
+    "abs_url": "https://arxiv.org/abs/2312.13061",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 4",
+    "statement_text": "For every positive even integer $\\ell$, there exists an integer $d$ such that the following claim holds. Let $G$ be a planar near-Eulerian-triangulation with the outer face bounded by a cycle $C$ of length $\\ell$ and let $U$ be an independent set disjoint from $C$ such that $G-U$ is bipartite. Moreover, suppose that $G-U$ has a set $S$ of $d$ faces of length at least six such that there is no 4-cycle in $G-U$ separating a face of $S$ from the outer face, and for distinct faces $s_{1},s_{2}\\in S$, the distance between $s_{1}$ and $s_{2}$ in $G-U$ is at least $d$ and there is no closed walk of length less than $\\ell$ in $G-U$ separating both $s_{1}$ and $s_{2}$ from the outer face. Then any viable 4-coloring of $C$ extends to a 4-coloring of $G$.",
+    "context_text": "This conjecture captures a 'sufficiently generic' structural condition under which the necessary topological condition for precoloring extension is also sufficient. It is posed as an intermediate step toward Conjecture 3, asserting that when $G-U$ is bipartite and contains sufficiently many well-separated long faces, every viable precoloring of the outer face extends to a full 4-coloring.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2312.13061",
+    "paper_title": "Precoloring extension in planar near-Eulerian-triangulations",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Benjamin Moore",
+      "Michaela Seifrtová",
+      "Robert Šámal"
+    ],
+    "published": "2023-12-20",
+    "abs_url": "https://arxiv.org/abs/2312.13061",
+    "source": "html"
+  }
+]

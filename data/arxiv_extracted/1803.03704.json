@@ -1,0 +1,24 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 3",
+    "statement_text": "There is a function $f$ such that, for any fixed tree $T$ with maximum degree $\\Delta_T$, every $f(\\Delta_T)$-edge-connected graph with minimum degree at least $f(|E(T)|)$ and number of edges divisible by $|E(T)|$ has a $T$-decomposition.",
+    "context_text": "Posed in [4] as a strengthened, minimum-degree version of the Barát–Thomassen conjecture, replacing a single large edge-connectivity constant by a function of the maximum degree of $T$. The case $\\Delta_T = 2$ (paths) was proved in [4] (Theorem 4 of the paper under review). This paper investigates whether the conjecture holds for trees of higher maximum degree.",
+    "attributed_to": "authors of [4]",
+    "attributed_year": null,
+    "paper_contribution": "The paper disproves Conjecture 3 for trees of maximum degree three by constructing a counterexample based on complete binary trees $T_k$ of arbitrary depth $k$, showing that no function $f$ can make the conjecture hold in that case.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source; LaTeX reads cleanly. The authors of reference [4] are not named in the body text.",
+    "arxiv_id": "1803.03704",
+    "paper_title": "Edge-decomposing graphs into coprime forests",
+    "paper_authors": [
+      "Tereza Klimošová",
+      "Stéphan Thomassé"
+    ],
+    "published": "2018-03-09",
+    "abs_url": "https://arxiv.org/abs/1803.03704",
+    "source": "pdf"
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "review_id": "1907.11600__00",
+  "safe_id": "1907.11600",
+  "arxiv_id": "1907.11600",
+  "conjecture_title": "Conjecture 5",
+  "paper_title": "Edge-partitioning 3-edge-connected graphs into paths",
+  "published": "2019-07-26",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "No verified proof or disproof of Conjecture 5 was found. The conjecture asks for a function f bounding the required edge-connectivity for T-decompositions in terms of the number of leaves of T, with the paper's main result establishing f(2)=3 for paths. A Semantic Scholar citation query identified at least two post-2019 papers citing the source paper — Hasanvand (arXiv:2205.10871, 2022) on O(m)-edge-connected tree decompositions and Hylasová–Kaiser (arXiv:2405.02049, 2024) — but neither could be fully fetched to confirm specific claims about Conjecture 5 within the web-call budget.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Klimošová Thomassé \"T-decomposition\" tree leaves edge-connected graph 2019",
+    "tree decomposition edge-connected graph \"number of leaves\" function arXiv 1907.11600",
+    "\"T-decomposition\" tree \"edge-connected\" leaves conjecture Klimošová Thomassé graph decomposition 2020 2021 2022 2023 2024"
+  ],
+  "notes": "The Barát–Thomassen conjecture (bounding connectivity by maximum degree of T) was already proved before 2019; Conjecture 5 proposes the sharper bound via number of leaves. Two candidate follow-up papers were surfaced via the Semantic Scholar citations API but could not be verified by WebFetch within the 5-call cap: (1) Hasanvand, 'Edge-decompositions of O(m)-edge-connected graphs into isomorphic copies of a fixed tree of size m' (arXiv:2205.10871, 2022), whose title suggests potential partial progress; (2) Hylasová and Kaiser, 'Hypertree Shrinking Avoiding Low Degree Vertices' (arXiv:2405.02049, 2024). These should be checked in a follow-up review."
+}

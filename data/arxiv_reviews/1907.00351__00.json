@@ -1,0 +1,22 @@
+{
+  "review_id": "1907.00351__00",
+  "safe_id": "1907.00351",
+  "arxiv_id": "1907.00351",
+  "conjecture_title": "Question 1",
+  "paper_title": "A Note on Graphs of Dichromatic Number 2",
+  "published": "2019-06-30",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Question 1 asks for the largest minor-closed class of undirected graphs with dichromatic number at most 2. The source paper itself establishes that this class lies strictly between K_5-minor-free and K_7-minor-free graphs: K_5-minor-free graphs are contained in it (conditional on the Neumann-Lara–Škrekovski conjecture for planar digraphs), while K_{3,3}-minor-free graphs are not. No subsequent paper has been found that resolves the exact boundary. Steiner's follow-up work (2021–2022) addresses complete minors in digraphs and dichromatic subdivisions but does not settle this specific question.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "dichromatic number minor-closed graphs K7-minor-free Steiner 2019",
+    "dichromatic number 2 minor-closed class undirected graphs arxiv 1907.00351",
+    "Raphael Steiner dichromatic number 2 K5-minor-free planar graphs minor-closed 2020 2021 2022"
+  ],
+  "notes": "No follow-up paper resolving Question 1 was found in 5 web calls. The question of identifying the largest minor-closed class G_2 of undirected graphs with dichromatic number at most 2 remains open as of 2026-05-15. The paper was published in DMTCS 22(4) #11 (2021). Related work by Steiner (arXiv:2101.04590, arXiv:2008.09888) addresses complete minors and subdivisions in digraphs with given dichromatic number but does not directly address Question 1."
+}

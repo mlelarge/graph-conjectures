@@ -1,0 +1,26 @@
+[
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Problem 1 (Dvořák, Norin and Postle)",
+    "statement_text": "Does there exist $\\varepsilon > 0$ such that every planar graph $G$ and assignment $L$ of lists of size (a) five in general, (b) four if $G$ is triangle-free, (c) three if $G$ has girth at least five is (weighted) $\\varepsilon$-flexible?",
+    "context_text": "Dvořák, Norin and Postle introduced the notion of $\\varepsilon$-flexibility for graph classes and proved flexibility for planar graphs with lists of size 6 and for planar graphs of girth at least 5 with lists of size 4. They raised Problem 1 as a natural next step, asking whether the list sizes matching the choosability threshold suffice for flexibility. The present paper resolves part (b) affirmatively (Theorem 2); parts (a) and (c) remain open.",
+    "attributed_to": "Dvořák, Norin and Postle",
+    "attributed_year": null,
+    "paper_contribution": "Proves part (b) in the affirmative: there exists $\\varepsilon > 0$ such that every triangle-free planar graph with an assignment of lists of size four is weighted $\\varepsilon$-flexible.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Parts (a) and (c) of Problem 1 are not resolved by this paper and remain open. The tail of the extracted text is garbled PDF noise (a list of arXiv IDs); no further mathematical content could be recovered from it.",
+    "arxiv_id": "1902.02971",
+    "paper_title": "Flexibility of triangle-free planar graphs",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Tomáš Masařík",
+      "Jan Musílek",
+      "Ondřej Pangrác"
+    ],
+    "published": "2019-02-08",
+    "abs_url": "https://arxiv.org/abs/1902.02971",
+    "source": "pdf"
+  }
+]

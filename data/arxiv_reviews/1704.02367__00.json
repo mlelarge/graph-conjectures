@@ -1,0 +1,56 @@
+{
+  "review_id": "1704.02367__00",
+  "safe_id": "1704.02367",
+  "arxiv_id": "1704.02367",
+  "conjecture_title": "Open Problem: Regularity-free proof for the ordered removal lemma",
+  "paper_title": "Testing hereditary properties of ordered graphs and matrices",
+  "published": "2017-04-07",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "medium",
+  "summary": "The open problem of finding a regularity-free proof of the ordered graph removal lemma (analogous to Fox's 2011 proof for unordered graphs) remains open in general. Partial progress has been made: the paper arXiv:2110.03577 characterizes exactly which ordered graphs F admit a polynomial bound on delta_F(epsilon) in the induced ordered removal lemma; and arXiv:2307.01652 proves a polynomial removal lemma for ordered matchings via a novel nested-partition technique that avoids the regularity lemma for that special case. A full regularity-free proof for arbitrary ordered graphs has not been found.",
+  "since_posted": [
+    {
+      "title": "Polynomial removal lemmas for ordered graphs",
+      "authors": "unknown",
+      "year": 2021,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2110.03577",
+      "arxiv_id": "2110.03577",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Characterizes exactly which ordered graphs F admit a polynomial bound delta_F(epsilon) in the induced ordered removal lemma (if and only if |V(F)|=2 or F is a specific three-vertex ordered graph up to symmetry), giving a complete picture of when the wowzer-type dependence can be avoided."
+    },
+    {
+      "title": "Polynomial removal lemma for ordered matchings",
+      "authors": "unknown (includes Tomon)",
+      "year": 2023,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2307.01652",
+      "arxiv_id": "2307.01652",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves a polynomial removal lemma for ordered matchings using a novel nested-partition cleaning argument that avoids the regularity lemma, achieving poly(epsilon) bounds for the special case of ordered matchings."
+    },
+    {
+      "title": "A Removal Lemma for Ordered Hypergraphs",
+      "authors": "Towsner, Henry",
+      "year": 2021,
+      "venue": "Proceedings of the London Mathematical Society",
+      "url": "https://arxiv.org/abs/2101.09769",
+      "arxiv_id": "2101.09769",
+      "doi": "10.1112/plms.70015",
+      "kind": "partial",
+      "claim": "Generalizes the Alon-Ben-Eliezer-Fischer ordered graph removal lemma to induced ordered hypergraphs, but does not address the regularity-free question."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "ordered graph removal lemma regularity-free proof",
+    "ordered removal lemma Fox approach tower-type dependence arxiv",
+    "Alon Ben-Eliezer Fischer 1704.02367 ordered removal lemma regularity-free 2018 2019 2020 2021 2022 2023 2024 2025"
+  ],
+  "notes": "Fox's 2011 regularity-free proof for unordered graphs (arXiv:1006.1300) used entropy/energy-increment ideas. The analogous approach for ordered graphs remains open for general ordered graphs. arXiv:2307.01652 makes partial progress by proving polynomial bounds for ordered matchings via a regularity-free technique (nested partitions), and arXiv:2110.03577 characterizes the polynomial-bound regime for ordered graphs. Authors of 2110.03577 and 2307.01652 were not fully identified from available abstracts."
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 7.1",
+    "statement_text": "For every $t$, there is an output-polynomial time algorithm for Dom-Enum in incomparability graphs of $S_{t}$-free posets.",
+    "context_text": "The algorithm of Corollary 5.3 already covers all comparability graphs of $S_{t}$-free posets. The paper asks what can be said about Dom-Enum in $H$-free incomparability graphs; since co-bipartite graphs are incomparability graphs, the question is only interesting for co-bipartite $H$. This conjecture is proposed as the natural counterpart of Theorem 1.2 for the $S_t$-free setting.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2004.07214",
+    "paper_title": "Enumerating minimal dominating sets in the (in)comparability graphs of bounded dimension posets",
+    "paper_authors": [
+      "Marthe Bonamy",
+      "Oscar Defrain",
+      "Piotr Micek",
+      "Lhouari Nourine"
+    ],
+    "published": "2025-11-26",
+    "abs_url": "https://arxiv.org/abs/2004.07214",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 7.2",
+    "statement_text": "For every $p$, there is an output-polynomial time algorithm for Dom-Enum in $2K_{p}$-free incomparability graphs.",
+    "context_text": "This is described as a directly easier version of Conjecture 7.1: an $S_{2p}$ suborder in a poset yields a $2K_p$ in the incomparability graph, so Conjecture 7.2 would follow from 7.1. It holds trivially for $p=1$ (such graphs are cliques) and is true for $p=2$ via results of [bonamy2020kt]; the case $p=3$ is widely open even without the incomparability assumption.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2004.07214",
+    "paper_title": "Enumerating minimal dominating sets in the (in)comparability graphs of bounded dimension posets",
+    "paper_authors": [
+      "Marthe Bonamy",
+      "Oscar Defrain",
+      "Piotr Micek",
+      "Lhouari Nourine"
+    ],
+    "published": "2025-11-26",
+    "abs_url": "https://arxiv.org/abs/2004.07214",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 7.3",
+    "statement_text": "For any co-bipartite $H$, there is an output-polynomial time algorithm for Dom-Enum in $H$-free incomparability graphs.",
+    "context_text": "This is the broadest of the three conjectures in the concluding section, subsuming Conjecture 7.2. The authors note there is no blatant reason why the incomparability condition should be necessary, leaving open whether the result might hold for all $H$-free graphs with co-bipartite $H$.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2004.07214",
+    "paper_title": "Enumerating minimal dominating sets in the (in)comparability graphs of bounded dimension posets",
+    "paper_authors": [
+      "Marthe Bonamy",
+      "Oscar Defrain",
+      "Piotr Micek",
+      "Lhouari Nourine"
+    ],
+    "published": "2025-11-26",
+    "abs_url": "https://arxiv.org/abs/2004.07214",
+    "source": "html"
+  }
+]

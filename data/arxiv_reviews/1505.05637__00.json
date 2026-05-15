@@ -1,0 +1,22 @@
+{
+  "review_id": "1505.05637__00",
+  "safe_id": "1505.05637",
+  "arxiv_id": "1505.05637",
+  "conjecture_title": "Open Problem: Expansion vs. Corruption Detection",
+  "paper_title": "Distributed Corruption Detection in Networks",
+  "published": "2020-03-12",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The open problem asks for a tight characterization of which graph expansion properties are necessary and sufficient for corruption detection, closing the gap between the Ramanujan-type spectral sufficiency (Theorem 1.4, requiring \\lambda \\leq 2\\sqrt{d-1}) and the vertex-separator impossibility (Proposition 1.6). Two directly related papers appeared before the 2020 journal publication: Jin, Mossel, and Ramnarayan (arXiv:1809.10325, ITCS 2019) characterize corruption detection on arbitrary graphs via a vertex separability parameter but do not close the spectral expansion gap; Alweiss (arXiv:1908.07493, 2019) addresses a noisy variant of the model. No post-2020 paper resolving the specific expansion gap was found in a broad web search.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Alon Mossel Pemantle \"corruption detection\" expansion spectral graph arXiv 1505.05637",
+    "\"corruption detection\" networks expansion Ramanujan spectral gap graph theory 2021 2022 2023 2024",
+    "site:arxiv.org \"corruption detection\" expansion spectral \"vertex separator\" graph 2020 2021 2022 2023 2024 2025"
+  ],
+  "notes": "Two pre-2020 follow-up papers address related but distinct questions: arXiv:1809.10325 (Jin, Mossel, Ramnarayan, 2018; ITCS 2019) characterizes detectable corruption on general graphs via a vertex-separability parameter m(G) and proves that finding an optimal corruption strategy is NP-hard under the Small Set Expansion Hypothesis; arXiv:1908.07493 (Alweiss, 2019) extends the model to a noisy setting and claims to answer a question of the original authors, but in the noisy (not expansion-gap) sense. Neither directly closes the gap between Ramanujan-type spectral conditions (sufficient) and vertex-separator conditions (necessary for impossibility). No post-2020 literature resolving this specific open problem was found."
+}

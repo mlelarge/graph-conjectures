@@ -1,0 +1,23 @@
+{
+  "review_id": "2202.13306__01",
+  "safe_id": "2202.13306",
+  "arxiv_id": "2202.13306",
+  "conjecture_title": "Question 5.4",
+  "paper_title": "Heroes in oriented complete multipartite graphs",
+  "published": "2023-12-11",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Question 5.4 asks whether a compositional hero property transfers across the $K_1+F$ join operation: if $\\Delta(1,1,H)$ is a hero in $\\mathrm{Forb}_{\\mathrm{ind}}(F)$ and $H$ is a hero in $\\mathrm{Forb}_{\\mathrm{ind}}(K_1+F)$, must $\\Delta(1,1,H)$ also be a hero in $\\mathrm{Forb}_{\\mathrm{ind}}(K_1+F)$? A broad search over citing papers returned no follow-up work resolving this question. The source paper appeared in the Journal of Graph Theory in 2024, and subsequent work on heroes (Carbonero--Koerts--Moore--Spirkl 2023 on forbidden induced forests; Aubian--Kuffner 2026 on claw-free digraphs) addresses related but distinct problems.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "hero digraph Forb_ind oriented multipartite Aboulker Aubian Charbit 2202.13306",
+    "hero digraph Delta(1,1,H) Forb_ind K1+F induced subdigraph",
+    "Aubian Charbit hero dichromatic number Forb_ind compositional 2023 2024 2025 arxiv",
+    "Carbonero Koerts Moore Spirkl heroes in digraphs forbidden induced forests arxiv"
+  ],
+  "notes": "No follow-up found specifically addressing Question 5.4. The closest citing papers are arXiv:2306.04710 (Carbonero, Koerts, Moore, Spirkl -- heroes with forbidden induced forests) and arXiv:2602.08736 (Aubian, Kuffner -- claw-free digraphs with unbounded dichromatic number, disproving an Aboulker--Charbit--Naserasr conjecture), neither of which addresses the compositional transfer property of Question 5.4."
+}

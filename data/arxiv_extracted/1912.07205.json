@@ -1,0 +1,46 @@
+[
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Tutte's Question on Same-Parity Components",
+    "statement_text": "Does there exist a triangulation of the plane whose 4-coloring complex has more than one component of the same parity?",
+    "context_text": "In 1999, at one of his last public lectures, Tutte discussed this question he had considered since the times of the Four Color Conjecture. He examined numerous examples including the icosahedron (which has a connected colouring complex) and was resistant to formalising the absence of such examples as a conjecture, remarking 'the data are too few to justify a Conjecture.'",
+    "attributed_to": "Tutte",
+    "attributed_year": 1999,
+    "paper_contribution": "Provides examples of 4-connected triangulations of the plane whose 4-coloring complexes have arbitrarily many components with odd colorings and arbitrarily many components with even colorings (Theorems 4 and 5), answering Tutte's question in the affirmative.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "The question appears in prose in the introduction attributed to Tutte [3]; no labelled theorem environment. The paper resolves it affirmatively.",
+    "arxiv_id": "1912.07205",
+    "paper_title": "The Last Temptation of William T. Tutte",
+    "paper_authors": [
+      "Bojan Mohar",
+      "Nathan Singer"
+    ],
+    "published": "2019-12-16",
+    "abs_url": "https://arxiv.org/abs/1912.07205",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 8",
+    "statement_text": "For every planar triangulation whose 4-coloring complex is disconnected, there is a component of even parity and a component of odd parity.",
+    "context_text": "After resolving Tutte's original question by constructing triangulations with arbitrarily many same-parity components, the authors identify this closely related conjecture based on extensive computation. It refines the picture by asserting that disconnected coloring complexes always contain both parities.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "The conjecture is described verbatim in both the abstract and the introduction with a forward reference to 'Conjecture 8', but the formal conjecture environment itself is not present in the extracted PDF text (the paper body appears truncated after Section 5). Statement reconstructed from the abstract and introduction prose.",
+    "arxiv_id": "1912.07205",
+    "paper_title": "The Last Temptation of William T. Tutte",
+    "paper_authors": [
+      "Bojan Mohar",
+      "Nathan Singer"
+    ],
+    "published": "2019-12-16",
+    "abs_url": "https://arxiv.org/abs/1912.07205",
+    "source": "pdf"
+  }
+]

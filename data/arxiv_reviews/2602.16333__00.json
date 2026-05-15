@@ -1,0 +1,23 @@
+{
+  "review_id": "2602.16333__00",
+  "safe_id": "2602.16333",
+  "arxiv_id": "2602.16333",
+  "conjecture_title": "Conjecture 4.1",
+  "paper_title": "Long cycles in vertex transitive digraphs",
+  "published": "2026-02-18",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 4.1 from arXiv:2602.16333 asserts that the perimeter gap in connected vertex transitive digraphs can be linear in the order n, i.e., there exist ε > 0 and infinitely many n for which the gap is at least εn. The source paper itself establishes only a logarithmic lower bound of (1-o(1)) ln n on the maximum perimeter gap and a circumference lower bound of Ω(n^{1/3}), and proposes the conjecture as a natural intermediate target asserting the logarithmic bound is far from tight. No follow-up paper addressing this conjecture was found in the three months since the paper was posted.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "vertex transitive digraph perimeter gap circumference conjecture Bucić Hendrey Mohar Steiner Yepremyan 2026",
+    "arxiv 2602.16333 vertex transitive digraph long cycles perimeter gap",
+    "vertex transitive digraph \"perimeter gap\" epsilon n 2026 follow-up",
+    "Bucić Hendrey Mohar Steiner \"perimeter gap\" digraph 2026 cite"
+  ],
+  "notes": "No follow-up found. The paper is very recent (February 2026, ~3 months before review date). The related undirected paper arXiv:2408.04618 (Longest cycles in vertex-transitive and highly connected graphs, Bulletin of the London Mathematical Society 2025) predates the source paper and addresses the undirected setting only; it is not a follow-up to this conjecture."
+}

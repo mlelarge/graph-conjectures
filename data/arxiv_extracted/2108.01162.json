@@ -1,0 +1,29 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.6 (Aboulker, Adler, Kim, Sintiari and Trotignon)",
+    "statement_text": "For every $\\Delta > 0$ there is a function $f_\\Delta : \\mathbb{N} \\to \\mathbb{N}$ such that every graph with maximum degree at most $\\Delta$ and treewidth at least $f_\\Delta(k)$ contains a subdivision of $W_{k\\times k}$ or the line graph of a subdivision of $W_{k\\times k}$ as an induced subgraph.",
+    "context_text": "This conjecture addresses the question of what are the unavoidable induced subgraphs of graphs with large treewidth in the bounded maximum degree setting. Examples of Sintiari and Trotignon show that unbounded degree makes the conjecture false. The conjecture was proved for proper minor-closed classes in the same paper where it was stated, and was eventually proved in full generality by a different method while the present paper was under review.",
+    "attributed_to": "Aboulker, Adler, Kim, Sintiari and Trotignon",
+    "attributed_year": null,
+    "paper_contribution": "Proves three theorems supporting the conjecture: (1) every $S_{t,t,t}$-free graph of maximum degree at most $\\Delta$ and sufficiently large treewidth contains the line graph of a subdivision of $W_{k\\times k}$ as an induced subgraph (Theorem 1.8); (2) every $(t$-theta, $t$-pyramid)-free graph of maximum degree at most $\\Delta$ and sufficiently large treewidth contains the line graph of a subdivision of $W_{k\\times k}$ as an induced subgraph (Theorem 1.10); (3) for every subcubic subdivided caterpillar $T$, every graph of maximum degree at most $\\Delta$ and sufficiently large treewidth contains a subdivision of $T$ or the line graph of a subdivision of $T$ as an induced subgraph (Theorem 1.11).",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2108.01162",
+    "paper_title": "Induced subgraphs and tree decompositions II. Toward walls and their line graphs in graphs of bounded degree",
+    "paper_authors": [
+      "Tara Abrishami",
+      "Maria Chudnovsky",
+      "Cemil Dibek",
+      "Sepehr Hajebi",
+      "Paweł Rzążewski",
+      "Sophie Spirkl",
+      "Kristina Vušković"
+    ],
+    "published": "2023-10-30",
+    "abs_url": "https://arxiv.org/abs/2108.01162",
+    "source": "pdf"
+  }
+]

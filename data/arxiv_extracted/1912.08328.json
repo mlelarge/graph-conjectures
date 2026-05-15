@@ -1,0 +1,48 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Souza's Conjecture on Blowup Ramsey Numbers",
+    "statement_text": "In the bound $B(G \\xrightarrow{r} H; t) \\leq c^t$, the exponential constant $c$ can be chosen to depend only on $H$ and $r$, and not on $G$.",
+    "context_text": "Souza introduced blowup Ramsey numbers and proved $B(G \\xrightarrow{r} H; t) \\leq c(G,H,r)^t$. He conjectured that the dependence on $G$ in the exponential constant is unnecessary, motivated by the fact that his lower bound constant $c'$ already does not depend on $G$.",
+    "attributed_to": "Souza",
+    "attributed_year": null,
+    "paper_contribution": "Proves Theorem 2: $B(G \\xrightarrow{r} H; t) \\leq a \\cdot b^t$ where $b = b(H,r)$ is independent of $G$, confirming that the exponential growth rate does not depend on $G$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1912.08328",
+    "paper_title": "Extremal and Ramsey results on graph blowups",
+    "paper_authors": [
+      "Jacob Fox",
+      "Sammy Luo",
+      "Yuval Wigderson"
+    ],
+    "published": "2020-04-06",
+    "abs_url": "https://arxiv.org/abs/1912.08328",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Conjecture on unavoidable G-dependence in Theorem 2",
+    "statement_text": "For some graph $H$, the dependence on $G$ in the multiplicative factor $a = a(G, H, r)$ of the bound $B(G \\xrightarrow{r} H; t) \\leq a \\cdot b^t$ (Theorem 2) is unavoidable.",
+    "context_text": "Theorem 2 shows that the exponential constant $b$ can be taken independent of $G$, but the multiplicative prefactor $a$ still depends on $G$. The authors believe this residual dependence is necessary for some $H$, and refer to the concluding remarks for further details.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated in both the abstract and the introduction as a belief/conjecture without a labelled theorem environment; concluding remarks section was not fully captured in the PDF extraction.",
+    "arxiv_id": "1912.08328",
+    "paper_title": "Extremal and Ramsey results on graph blowups",
+    "paper_authors": [
+      "Jacob Fox",
+      "Sammy Luo",
+      "Yuval Wigderson"
+    ],
+    "published": "2020-04-06",
+    "abs_url": "https://arxiv.org/abs/1912.08328",
+    "source": "pdf"
+  }
+]

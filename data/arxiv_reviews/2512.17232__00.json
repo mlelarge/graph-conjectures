@@ -1,0 +1,23 @@
+{
+  "review_id": "2512.17232__00",
+  "safe_id": "2512.17232",
+  "arxiv_id": "2512.17232",
+  "conjecture_title": "Conjecture 6",
+  "paper_title": "An Induced $A$-Path Theorem",
+  "published": "2025-12-19",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 6 from arXiv:2512.17232 posits an optimal induced Menger-type theorem: for any $k$, $G$, and $X,Y\\subseteq V(G)$, either $G$ contains $k$ pairwise anti-complete $(X,Y)$-paths or there is a set $Z$ of size at most $k-1$ whose closed neighbourhood hits all $(X,Y)$-paths. The source paper itself proves a weaker form with separator bound $78(k-1)$ (improvable to $4(k-1)$ using radius-4 balls), leaving the optimal $k-1$ bound as an open conjecture. No follow-up paper resolving or partially resolving Conjecture 6 was found in the five months since the preprint appeared.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Hickingbotham Joret \"induced A-path\" anti-complete paths separator arxiv 2512.17232",
+    "anti-complete XY-paths closed neighborhood separator conjecture induced minors 2026",
+    "Hickingbotham Joret induced path theorem anti-complete paths pairwise 2025 2026 graph theory",
+    "\"induced grid minor\" \"K_{1,t}\" Dallard \"pairwise anti-complete\" \"(X,Y)-paths\" 2026"
+  ],
+  "notes": "The conjecture, if proved, would imply an Induced Grid Minor Theorem for $K_{1,t}$-induced-subgraph-free graphs conjectured by Dallard et al. The paper is only ~5 months old; no follow-up was found in indexed literature. Conjecture 6 is closely related to but distinct from Conjecture 2 in the same paper (the $A$-path version), for which Albrechtsen, Knappe, and Wollan independently announced a partial solution ($d=2$ case). No such concurrent progress on Conjecture 6 (the $(X,Y)$-path variant) was identified."
+}

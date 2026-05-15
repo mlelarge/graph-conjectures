@@ -1,0 +1,68 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Caccetta-Häggkvist Conjecture (Conjecture 1.1)",
+    "statement_text": "For every integer $k \\geq 1$, and all $n > 0$, every $n$-vertex digraph in which every vertex has out-degree at least $n/k$ has girth at most $k$.",
+    "context_text": "One of the most well-known open questions in graph theory, especially for $k = 3$, with numerous partial results. The paper studies a bipartite analogue and shows that this conjecture implies the bipartite version (Conjecture 1.2).",
+    "attributed_to": "Caccetta and Häggkvist",
+    "attributed_year": 1978,
+    "paper_contribution": "Shows that the Caccetta-Häggkvist conjecture implies the bipartite analogue Conjecture 1.2; uses CH-approximations to prove 1.2 for $k = 1, 2, 3, 4, 6$, and all $k \\geq 224{,}539$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1809.08324",
+    "paper_title": "Short directed cycles in bipartite digraphs",
+    "paper_authors": [
+      "Paul Seymour",
+      "Sophie Spirkl"
+    ],
+    "published": "2019-07-24",
+    "abs_url": "https://arxiv.org/abs/1809.08324",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.2",
+    "statement_text": "For every integer $k \\geq 1$, if $G$ is a bipartite digraph, with $n > 0$ vertices in each part, and every vertex has out-degree more than $n/(k+1)$, then $G$ has girth at most $2k$.",
+    "context_text": "The central bipartite analogue of the Caccetta-Häggkvist conjecture, motivated by an extremal construction with bipartition into parts of cardinality $(k+1)t$ in which every vertex has out-degree exactly $n/(k+1)$ and no directed cycle of length at most $2k$ exists. The conjecture is implied by the Caccetta-Häggkvist conjecture.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1809.08324",
+    "paper_title": "Short directed cycles in bipartite digraphs",
+    "paper_authors": [
+      "Paul Seymour",
+      "Sophie Spirkl"
+    ],
+    "published": "2019-07-24",
+    "abs_url": "https://arxiv.org/abs/1809.08324",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.5",
+    "statement_text": "For every integer $k \\geq 1$, and every pair of reals $\\alpha, \\beta > 0$ with $k\\alpha + \\beta > 1$, if $G$ is a non-null bipartite digraph with bipartition $(A, B)$, where every vertex in $A$ has out-degree at least $\\beta|B|$, and every vertex in $B$ has out-degree at least $\\alpha|A|$, then $G$ has girth at most $2k$.",
+    "context_text": "A conjecture stronger than Conjecture 1.2 (the case $\\alpha = \\beta$) that also implies the Caccetta-Häggkvist conjecture (via $\\beta \\to 0$). It is best possible for infinitely many pairs $(\\alpha, \\beta)$, as witnessed by an explicit circulant-type extremal construction; the maximal bad pairs all lie on the lines $\\alpha + k\\beta = 1$ or $k\\alpha + \\beta = 1$.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1809.08324",
+    "paper_title": "Short directed cycles in bipartite digraphs",
+    "paper_authors": [
+      "Paul Seymour",
+      "Sophie Spirkl"
+    ],
+    "published": "2019-07-24",
+    "abs_url": "https://arxiv.org/abs/1809.08324",
+    "source": "pdf"
+  }
+]

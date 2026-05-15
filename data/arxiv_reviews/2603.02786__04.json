@@ -1,0 +1,22 @@
+{
+  "review_id": "2603.02786__04",
+  "safe_id": "2603.02786",
+  "arxiv_id": "2603.02786",
+  "conjecture_title": "Conjecture 7",
+  "paper_title": "Packing arithmetic progressions",
+  "published": "2026-03-03",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 7 of arXiv:2603.02786 asserts that for fixed n and k tending to infinity, the minimum interval length M_k(n) needed to pack the arithmetic progressions B_d = {d, 2d, ..., nd} for d = 1, ..., k satisfies M_k(n) = (1+o(1))nk, i.e., the trivial lower bound nk is asymptotically tight. The paper itself establishes Theorem 3, which proves M_k(n) < 3nk for sufficiently large k (beyond a threshold k_0(n)), confirming the right order of magnitude but with a constant factor of 3 instead of 1. No follow-up papers resolving the conjecture were found in the literature, consistent with the paper's very recent publication date of March 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Alon Dębski Grytczuk Przybyło \"packing arithmetic progressions\" 2603.02786",
+    "packing arithmetic progressions \"trivial lower bound\" nk asymptotic chromatic number",
+    "Alon Grytczuk \"packing arithmetic progressions\" conjecture 2026 follow-up"
+  ],
+  "notes": "No follow-up papers found. The paper is very recent (March 2026). The authors' own Theorem 3 provides a partial result: M_k(n) < 3nk for k > k_0(n), which establishes the correct order but leaves the asymptotic constant open. Conjecture 7 predicts the constant is 1."
+}

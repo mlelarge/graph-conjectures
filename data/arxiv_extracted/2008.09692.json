@@ -1,0 +1,48 @@
+[
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 11",
+    "statement_text": "If $G$ is a universally cell 3-colorable graph which does not have a subcontraction isomorphic to $K^+_{3,n-3}$ for some $n \\geq 7$, then $G$ is 3-flowable.",
+    "context_text": "The paper exhibits an infinite family of universally cell 3-colorable graphs ($K^+_{3,n-3}$ for $n \\geq 7$) that do not admit a nowhere-zero 3-flow, showing the two properties are not equivalent in general. The authors believe excluding these graphs as subcontractions is sufficient to recover equivalence between universal cell 3-colorability and 3-flowability. Remarkably, a positive resolution of this conjecture would also imply Tutte's 3-Flow Conjecture.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2008.09692",
+    "paper_title": "Coloring Drawings of Graphs",
+    "paper_authors": [
+      "Christoph Hertrich",
+      "Felix Schröder",
+      "Raphael Steiner"
+    ],
+    "published": "2022-08-26",
+    "abs_url": "https://arxiv.org/abs/2008.09692",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Tutte's 3-Flow Conjecture",
+    "statement_text": "Every 4-edge-connected graph admits a nowhere-zero 3-flow.",
+    "context_text": "Tutte's 3-Flow Conjecture is a long-standing central open problem in the theory of nowhere-zero flows. The paper formulates Conjecture 11 about universal cell 3-colorability and proves (Claim 13) that Conjecture 11 implies Tutte's 3-Flow Conjecture. The paper also proves Conjecture 11 for subcubic graphs and for $K_{3,3}$-minor-free graphs, yielding partial progress toward Tutte's conjecture in those graph classes.",
+    "attributed_to": "Tutte",
+    "attributed_year": 1954,
+    "paper_contribution": "Shows that the authors' Conjecture 11 (on universal cell 3-colorability without $K^+_{3,n-3}$ subcontractions) implies Tutte's 3-Flow Conjecture; establishes Conjecture 11 for subcubic and $K_{3,3}$-minor-free graphs, giving new special-case confirmations of Tutte's conjecture.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Cited as Conjecture 1.1.8 in Zhang [24]. The paper's Corollary 7 independently reproves that every 4-edge-connected graph is universally cell 3-colorable, consistent with but not resolving Tutte's conjecture.",
+    "arxiv_id": "2008.09692",
+    "paper_title": "Coloring Drawings of Graphs",
+    "paper_authors": [
+      "Christoph Hertrich",
+      "Felix Schröder",
+      "Raphael Steiner"
+    ],
+    "published": "2022-08-26",
+    "abs_url": "https://arxiv.org/abs/2008.09692",
+    "source": "pdf"
+  }
+]

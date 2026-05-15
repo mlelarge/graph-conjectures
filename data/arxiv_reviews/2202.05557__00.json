@@ -1,0 +1,61 @@
+{
+  "review_id": "2202.05557__00",
+  "safe_id": "2202.05557",
+  "arxiv_id": "2202.05557",
+  "conjecture_title": "Conjecture 1.3",
+  "paper_title": "Polynomial bounds for chromatic number. V. Excluding a tree of radius two and a complete multipartite graph",
+  "published": "2023-01-10",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Conjecture 1.3 — polynomial chi-boundedness for every forest-free graph class — remains open in full generality as of May 2026. Significant partial progress has been made: Nguyen (arXiv:2512.24907, 2025) proved the conjecture for H = P_5, the five-vertex path, resolving a case open since 1985; Davies and Yuditsky (arXiv:2407.16882, 2024) proved it for all forests H when the host graphs have bounded boxicity. The ongoing Scott–Seymour series establishes polynomial bounds for several additional tree families, but no uniform proof for all forests exists.",
+  "since_posted": [
+    {
+      "title": "Polynomial χ-boundedness for excluding P₅",
+      "authors": "Tung H. Nguyen",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2512.24907",
+      "arxiv_id": "2512.24907",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves that every P₅-free graph G satisfies χ(G) ≤ f(ω(G)) for a polynomial f, establishing Conjecture 1.3 for the specific forest H = P₅ (the five-vertex path)."
+    },
+    {
+      "title": "Polynomial Gyárfás-Sumner conjecture for graphs of bounded boxicity",
+      "authors": "James Davies, Yelena Yuditsky",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2407.16882",
+      "arxiv_id": "2407.16882",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves Conjecture 1.3 for every forest H when restricted to intersection graphs of axis-aligned boxes in ℝ^d (graphs of bounded boxicity)."
+    }
+  ],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2409.09397",
+      "verified": true,
+      "note": "Paper proves near-linear stable sets (size |G|^{1-o(1)}) for {H, K_{k+1}}-free graphs when H is a forest, and linear stable sets for multibroom-free graphs; deduces a fractional-colouring version of the polynomial chi-boundedness conjecture for multibrooms. Does not establish polynomial chi(G) <= f(omega(G)) for ordinary chromatic number in general."
+    },
+    {
+      "arxiv_id": "2409.09400",
+      "verified": true,
+      "note": "Paper concerns stable sets in K_t-subdivision-free graphs (polylogarithmic bound), not forest-free graphs; has at most indirect relevance to Conjecture 1.3."
+    },
+    {
+      "arxiv_id": "2508.14332",
+      "verified": false,
+      "note": "Paper disproves the weak coarse Menger conjecture; no apparent connection to Conjecture 1.3 about polynomial chi-boundedness for forest-free graphs."
+    }
+  ],
+  "search_queries": [
+    "polynomial chi-bounded forest-free graphs conjecture Scott Seymour 2202.05557",
+    "Polynomial chi-boundedness excluding P5 Nguyen 2025 arxiv",
+    "Polynomial Gyarfas-Sumner conjecture bounded boxicity Davies Yuditsky 2024"
+  ],
+  "notes": "Conjecture 1.3 is closely related to Esperet's conjecture (polynomial chi-boundedness for hereditary classes, now disproved in general) and to the Gyárfás-Sumner conjecture (which concerns bounded chromatic number, not polynomial bounds). The P5 case (arXiv:2512.24907) and the bounded-boxicity case (arXiv:2407.16882) are the most notable post-2023 advances. Internal reference 2508.14332 appears unrelated."
+}

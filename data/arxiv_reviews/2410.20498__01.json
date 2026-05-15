@@ -1,0 +1,33 @@
+{
+  "review_id": "2410.20498__01",
+  "safe_id": "2410.20498",
+  "arxiv_id": "2410.20498",
+  "conjecture_title": "Open problem on tight bounds for $\\lambda(d,s)$",
+  "paper_title": "On hypercube statistics",
+  "published": "2024-10-27",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The open problem of obtaining tight bounds for $\\lambda(d,s)$ for essentially all admissible $(d,s)$ remains open in general. Bodnár and Pikhurko (2025) made partial progress by determining exact values for the three specific pairs $(3,2)$, $(4,2)$, and $(4,4)$ using flag algebras, with lower bounds coming from blowups of small Hamming codes. The general asymptotic characterisation for all admissible $d$ and $s$ is unresolved.",
+  "since_posted": [
+    {
+      "title": "Some exact values of the inducibility and statistics constants for hypercubes",
+      "authors": "Levente Bodnár, Oleg Pikhurko",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2503.03408",
+      "arxiv_id": "2503.03408",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Determines exact values of $\\lambda(d,s)$ for the specific pairs $(d,s) \\in \\{(3,2),(4,2),(4,4)\\}$ via flag algebras, with lower bounds from blowups of small Hamming codes."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "hypercube statistics lambda(d,s) Alon Axenovich Goldwasser 2410.20498",
+    "hypercube statistics tight bounds lambda d s subcube 2024 2025"
+  ],
+  "notes": "Exact values for three small pairs established by Bodnár–Pikhurko (arXiv:2503.03408), but the general tight-bounds question remains open. A related paper arXiv:2604.13402 (Xu, 2026) studies an analogous quantity $\\lambda^*(d,s)$ for affine subspaces rather than axis-aligned subcubes and does not directly resolve the original open problem."
+}

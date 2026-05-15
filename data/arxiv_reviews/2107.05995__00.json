@@ -1,0 +1,34 @@
+{
+  "review_id": "2107.05995__00",
+  "safe_id": "2107.05995",
+  "arxiv_id": "2107.05995",
+  "conjecture_title": "Informal Belief on Degeneracy Bound for Hat Guessing Number",
+  "paper_title": "On the Hat Guessing Number of Graphs",
+  "published": "2021-07-21",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The conjecture that there exists f : N → N with HG(G) ≤ f(d) for every d-degenerate graph G remains open. The closest follow-up (arXiv:2112.09619, SIAM JDM 2023) introduces a stronger graph parameter called strong degeneracy and proves HG(G) is bounded above by a function of strong degeneracy—notably reducing the upper bound for outerplanar graphs from ~2^125000 down to 40—but explicitly leaves the question for standard degeneracy open. Prior work (arXiv:2003.04990, E-JC 2020, predating this paper) established doubly-exponential lower bounds HG(G) ≥ 2^(2^(d-1)) for d-degenerate graphs, but this does not preclude a bounding function existing.",
+  "since_posted": [
+    {
+      "title": "Hat guessing numbers of strongly degenerate graphs",
+      "authors": "see arXiv:2112.09619",
+      "year": 2023,
+      "venue": "SIAM Journal on Discrete Mathematics",
+      "url": "https://arxiv.org/abs/2112.09619",
+      "arxiv_id": "2112.09619",
+      "doi": "10.1137/22M1479154",
+      "kind": "partial",
+      "claim": "Proves HG(G) is bounded above by a function of strong degeneracy (a parameter stronger than degeneracy), reducing the outerplanar upper bound to 40, but explicitly leaves open whether HG(G) is bounded by a function of standard degeneracy."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "hat guessing number degenerate graphs arXiv 2107.05995",
+    "hat guessing number planar graphs degeneracy bound 2022 2023 2024",
+    "hat guessing number degenerate graph bounded disproved counterexample 2024 2025"
+  ],
+  "notes": "The conjecture is explicitly discussed as open in arXiv:2112.09619. The doubly-exponential lower bounds from arXiv:2003.04990 (E-JC 2020) predate the source paper. A separate line of work (arXiv:2301.10305) shows the hat guessing number of some planar graph is at least 22, meaning f(5) ≥ 22 if the conjecture holds, but this does not resolve the conjecture. No resolution found in 2022–2026 literature."
+}

@@ -1,0 +1,128 @@
+[
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Question 1.1",
+    "statement_text": "Let $\\mathcal{H}$ be a family of graphs closed under isomorphism. Is it true that $d_{\\mathcal{H}}(n)$ tends to $0$ as $n$ tends to infinity if and only if $\\mathcal{H}$ contains a graph with an even number of edges? Equivalently: is it true that for any fixed graph $H$ with an even number of edges, $d_H(n)$ tends to $0$ as $n$ tends to infinity?",
+    "context_text": "The authors define $d_H(n)$ as the maximum fraction of all graphs on $[n]$ forming an $H$-code (a family with no two members whose symmetric difference is a copy of $H$). If every member of $\\mathcal{H}$ has an odd number of edges then $d_{\\mathcal{H}}(n) \\geq 1/2$, motivating the question of whether containing an even-edge graph is exactly the condition that forces $d_{\\mathcal{H}}(n) \\to 0$. The question is stated as the central open problem and noted in the concluding remarks to remain wide open.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2301.13305",
+    "paper_title": "Graph-codes",
+    "paper_authors": [
+      "Noga Alon"
+    ],
+    "published": "2023-02-06",
+    "abs_url": "https://arxiv.org/abs/2301.13305",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Gowers Conjecture (graph-clique symmetric difference)",
+    "statement_text": "Any family of a constant fraction of all graphs on $[n]$, where $n$ is sufficiently large, contains two graphs $G_1, G_2$ such that $G_2$ is a subgraph of $G_1$ and the symmetric difference of the two graphs (the set of all edges of $G_1$ that are not in $G_2$) forms a clique.",
+    "context_text": "Gowers raised this conjecture in a 2009 blog post [9]. It is strictly stronger than the assertion that $d_{\\mathcal{K}}(n) \\to 0$ (where $\\mathcal{K}$ is the family of all cliques), which is itself open. As noted in [9], the question can be viewed as the first unknown case of a polynomial version of the density Hales-Jewett Theorem.",
+    "attributed_to": "Gowers",
+    "attributed_year": 2009,
+    "paper_contribution": "The paper discusses the conjecture in the concluding remarks, notes it remains open, and establishes the related lower bound $d_{K_4}(n) \\geq 1/n^{o(1)}$ using constructions from Hunter and Mubayi (references [5], [11], [4]).",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Reference [9] is Gowers' 2009 blog post. The weaker assertion $d_{\\mathcal{K}}(n) \\to 0$ is also explicitly noted as open.",
+    "arxiv_id": "2301.13305",
+    "paper_title": "Graph-codes",
+    "paper_authors": [
+      "Noga Alon"
+    ],
+    "published": "2023-02-06",
+    "abs_url": "https://arxiv.org/abs/2301.13305",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Informal question: is $d_{K_4}(n) = o(1)$?",
+    "statement_text": "Is it true that $d_{K_4}(n) = o(1)$?",
+    "context_text": "In the concluding remarks the authors single this out as an interesting special case of Question 1.1. The companion question of whether $d_{K_4}(n) \\geq 1/n^{o(1)}$ is answered affirmatively within the paper by appealing to an edge-coloring construction of Hunter and Mubayi [5] (modifying [11] and [4]); the upper-bound direction $d_{K_4}(n) = o(1)$ remains open.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "The lower bound $d_{K_4}(n) \\geq 1/n^{o(1)}$ is established in the paper; only the question of whether $d_{K_4}(n) = o(1)$ remains open.",
+    "arxiv_id": "2301.13305",
+    "paper_title": "Graph-codes",
+    "paper_authors": [
+      "Noga Alon"
+    ],
+    "published": "2023-02-06",
+    "abs_url": "https://arxiv.org/abs/2301.13305",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Open problem: tighter bounds for linear graph-codes",
+    "statement_text": "Establish tighter bounds for the maximum possible cardinality of a linear family of graphs on $[n]$ in which no symmetric difference is a copy of a fixed graph $H$ with an even number of edges.",
+    "context_text": "The paper notes that for any fixed graph $H$ with an even number of edges the maximum size of a linear $H$-code is $o\\bigl(2^{\\binom{n}{2}}\\bigr)$, but the proof via Ramsey's Theorem yields very weak quantitative bounds. Theorem 1.6 gives a tight result for the family $\\mathcal{K}$ of all cliques as a model for what such tight results could look like.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "",
+    "arxiv_id": "2301.13305",
+    "paper_title": "Graph-codes",
+    "paper_authors": [
+      "Noga Alon"
+    ],
+    "published": "2023-02-06",
+    "abs_url": "https://arxiv.org/abs/2301.13305",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Open problem: binary vectors with cube-length forbidden symmetric difference",
+    "statement_text": "What is the maximum possible cardinality of a collection of binary vectors whose coordinates are indexed by the elements of the ordered set $[n]$, where no symmetric difference of two distinct members of the collection forms an interval of length which is a cube of an integer?",
+    "context_text": "This is posed as an illustrative example of extending graph-code questions to other combinatorial structures. The corresponding Cayley graph has $2^n$ vertices and is triangle-free by Fermat's Last Theorem for cubes; its independence number is $o(2^n)$ by the Furstenberg–Sárközy Theorem and its extensions.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "",
+    "arxiv_id": "2301.13305",
+    "paper_title": "Graph-codes",
+    "paper_authors": [
+      "Noga Alon"
+    ],
+    "published": "2023-02-06",
+    "abs_url": "https://arxiv.org/abs/2301.13305",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Open problem: minimum edge-coloring with odd intersection property",
+    "statement_text": "Determine or estimate the smallest number of colors in an edge coloring of $K_n$ in which every copy of a given graph $H$ (or every copy of any member of a prescribed family $\\mathcal{H}$ of graphs) intersects at least one color class by an odd number of edges.",
+    "context_text": "The authors propose this in the concluding remarks as a natural variant of classical Ramsey Theory questions arising from the coloring method used throughout the paper to produce lower bounds on independence numbers of Cayley graphs.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "",
+    "arxiv_id": "2301.13305",
+    "paper_title": "Graph-codes",
+    "paper_authors": [
+      "Noga Alon"
+    ],
+    "published": "2023-02-06",
+    "abs_url": "https://arxiv.org/abs/2301.13305",
+    "source": "pdf"
+  }
+]

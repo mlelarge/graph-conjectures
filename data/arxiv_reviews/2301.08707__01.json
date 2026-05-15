@@ -1,0 +1,23 @@
+{
+  "review_id": "2301.08707__01",
+  "safe_id": "2301.08707",
+  "arxiv_id": "2301.08707",
+  "conjecture_title": "Problem 4",
+  "paper_title": "Separating the edges of a graph by a linear number of paths",
+  "published": "2023-10-10",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Problem 4 of arXiv:2301.08707 asks whether every properly edge-colored graph G admits O(|V(G)|) rainbow paths that cover E(G). The authors note that a version with trails instead of paths is already verifiable, but the path case remains open. No follow-up paper specifically addressing this problem was found in the literature through May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "rainbow paths cover edges properly edge-colored graph linear number arXiv 2301.08707",
+    "rainbow paths cover E(G) properly edge-colored O(|V(G)|) graph conjecture",
+    "Bonamy Botler Dross Naia Skokan separating edges rainbow paths 2023 2024 2025",
+    "rainbow paths properly edge-colored cover linear 2024 2025 conjecture graph"
+  ],
+  "notes": "No follow-up found in 5 web calls. The paper was published in Advances in Combinatorics (2023). A related follow-up arXiv:2407.02102 by Botler et al. extends the separating-system theme to cycles and K_4 subdivisions, but does not address Problem 4. The problem is recent (2023) and the absence of follow-up is expected; open with high confidence."
+}

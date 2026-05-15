@@ -1,0 +1,46 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Edge-statistics Conjecture (Conjecture 1.1)",
+    "statement_text": "For all integers $k$ and $\\ell$ with $0 < \\ell < \\binom{k}{2}$, we have $\\mathrm{ind}(k,\\ell) \\leq \\frac{1}{e} + o_k(1)$.",
+    "context_text": "Alon, Hefetz, Krivelevich and Tyomkyn introduced the edge-inducibility $\\mathrm{ind}(k,\\ell) = \\lim_{n\\to\\infty} I(n,k,\\ell)$ and conjectured this universal upper bound. The constant $1/e$ is tight: considering $G(n,p)$ with $p = 1/\\binom{k}{2}$ gives $\\mathrm{ind}(k,1) \\geq e^{-1}+o_k(1)$, and a complete bipartite graph gives $\\mathrm{ind}(k,k-1) \\geq e^{-1}+o_k(1)$.",
+    "attributed_to": "Alon, Hefetz, Krivelevich and Tyomkyn",
+    "attributed_year": null,
+    "paper_contribution": "Completes the proof of the conjecture by handling the remaining cases $1 \\leq \\ell \\leq C \\cdot k$ (Theorem 1.2), together with the earlier result of Kwan, Sudakov and Tran which covered $C \\cdot k \\leq \\ell \\leq \\binom{k}{2}/2$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1809.01352",
+    "paper_title": "A Completion of the Proof of the Edge-statistics Conjecture",
+    "paper_authors": [
+      "Jacob Fox",
+      "Lisa Sauermann"
+    ],
+    "published": "2020-02-25",
+    "abs_url": "https://arxiv.org/abs/1809.01352",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Hypergraph Edge-statistics Conjecture",
+    "statement_text": "For fixed $r$, $\\mathrm{ind}_r(k,\\ell) \\leq e^{-1} + o_k(1)$ for all $0 < \\ell < \\binom{k}{r}$.",
+    "context_text": "Alon et al. suggested this natural $r$-uniform hypergraph analogue of the Edge-statistics Conjecture. The lower bound $\\mathrm{ind}_r(k,\\ell) \\geq e^{-1}+o_k(1)$ holds whenever $\\ell = \\binom{k-s}{r-s}$ for some $1 \\leq s \\leq r$, confirming that the constant $e^{-1}$ would be tight. The paper also extends results to not-necessarily-uniform hypergraphs with edge size bounded by $r$.",
+    "attributed_to": "Alon, Hefetz, Krivelevich and Tyomkyn",
+    "attributed_year": null,
+    "paper_contribution": "Proves the conjecture for the sublinear range $1 \\leq \\ell < k/r$ via Theorem 1.4, establishing $\\mathrm{ind}_r(k,\\ell) \\leq \\mathrm{ind}_{\\leq r}(k,\\ell) \\leq \\frac{k}{k-r\\ell} \\cdot \\frac{1}{e}$, which yields $e^{-1}+o_k(1)$ when $r\\ell = o(k)$; further quantitative bounds for the range $1 \\leq \\ell \\leq (1-\\varepsilon)k/r$ are given in Theorem 1.5.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "Described in the paper as 'a natural analogue of Conjecture 1.1, suggested by Alon et al.' rather than given a formal label; statement reconstructed from prose.",
+    "arxiv_id": "1809.01352",
+    "paper_title": "A Completion of the Proof of the Edge-statistics Conjecture",
+    "paper_authors": [
+      "Jacob Fox",
+      "Lisa Sauermann"
+    ],
+    "published": "2020-02-25",
+    "abs_url": "https://arxiv.org/abs/1809.01352",
+    "source": "pdf"
+  }
+]

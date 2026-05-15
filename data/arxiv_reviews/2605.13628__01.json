@@ -1,0 +1,21 @@
+{
+  "review_id": "2605.13628__01",
+  "safe_id": "2605.13628",
+  "arxiv_id": "2605.13628",
+  "conjecture_title": "Problem 9",
+  "paper_title": "A note on arithmetic progressions with restricted differences",
+  "published": "2026-05-13",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Problem 9 from arXiv:2605.13628 asks whether an arithmetic triangle removal lemma exists for the restricted-differences setting over $\\mathbb{F}_q^n$, analogous to how the multicolor sum-free result was used to prove such a lemma in the unrestricted setting. The paper was submitted on 2026-05-13; no follow-up work addressing this problem was found in the indexed literature, consistent with its status as a brand-new open question.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "arithmetic triangle removal lemma restricted differences Conlon Fox Pham 2026",
+    "arithmetic triangle removal lemma restricted differences finite field"
+  ],
+  "notes": "Paper published the day before review (2026-05-13). No follow-up found in indexed literature. The natural context is the arithmetic triangle removal lemma in $\\mathbb{F}_q^n$ (cf. Green's lemma and the tight bound of Fox–Tidor–Zhao), and the question asks for a restricted-differences variant extending Theorem 2 of the paper."
+}

@@ -1,0 +1,22 @@
+{
+  "review_id": "2511.02892__01",
+  "safe_id": "2511.02892",
+  "arxiv_id": "2511.02892",
+  "conjecture_title": "Problem 2.1",
+  "paper_title": "Open problems of the 33rd Workshop on Cycles and Colourings",
+  "published": "2025-11-04",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Problem 2.1 asks whether the graph polynomial $P_G = \\prod_{uv \\in E(G)}(u-v)$ for a random 4-regular graph has a.a.s. non-zero coefficient at $\\prod_{v \\in V(G)} v^2$; by the Alon-Tarsi method this would imply that random 4-regular graphs are a.a.s. 3-choosable. The paper notes the expected value of the coefficient is zero in the two-Hamiltonian-cycles model, so any proof requires an anti-concentration inequality. No follow-up paper resolving this problem was found in the literature as of May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "graph polynomial random 4-regular graph coefficient Hamiltonian cycles anti-concentration",
+    "arXiv 2511.02892 Workshop on Cycles and Colourings graph polynomial",
+    "Alon-Tarsi conjecture random 4-regular graph 3-choosable Eulerian subgraphs anti-concentration 2024 2025"
+  ],
+  "notes": "No follow-up found. The problem is closely related to the Alon-Tarsi method: a non-zero coefficient at $\\prod_v v^2$ is equivalent to the number of even Eulerian subgraphs differing from the number of odd Eulerian subgraphs (EE ≠ EO), which would establish a.a.s. 3-choosability of random 4-regular graphs. The paper explicitly flags that an anti-concentration inequality would be needed."
+}

@@ -1,0 +1,28 @@
+{
+  "review_id": "2304.03567__00",
+  "safe_id": "2304.03567",
+  "arxiv_id": "2304.03567",
+  "conjecture_title": "Problem 1",
+  "paper_title": "Temporalizing digraphs via linear-size balanced bi-trees",
+  "published": "2024-01-11",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Problem 1 asks for the exact value of $r_t$, the best constant-factor approximation ratio achievable for FCPP in strongly connected digraphs. The source paper (STACS 2024) establishes $r_t > 0$ as its central result via a linear-size balanced bi-tree construction of size at least $n/3$, yielding a lower bound on $r_t$; the exact value remains open. No follow-up work resolving or improving upon this bound was found in a thorough web search as of May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2206.12335",
+      "verified": true,
+      "note": "Completely unrelated: this paper concerns 1-independent bond percolation on Z^n (improving bounds on p_max). It has no connection to temporal digraphs, FCPP, or forward connected pairs. The internal-reference match is a false positive."
+    }
+  ],
+  "search_queries": [
+    "FCPP \"Forward Connected Pairs\" approximation ratio temporal digraph strongly connected 2304.03567",
+    "temporalizing digraphs bi-tree approximation ratio Bessy Thomassé Viennot FCPP",
+    "\"temporal reachability\" \"forward connected pairs\" approximation ratio digraph 2024 2025"
+  ],
+  "notes": "Three web searches and fetches of the source paper HTML and arXiv abstract page found no follow-up resolving the exact value of r_t. The paper appeared at STACS 2024 (LIPIcs vol. 289, article 13). The supplied internal references (arXiv:2206.12335, listed twice) are confirmed unrelated via WebFetch — they are a percolation paper by Balister, Johnston, Savery, and Scott, a clear fuzzy-match false positive."
+}

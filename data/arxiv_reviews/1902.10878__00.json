@@ -1,0 +1,22 @@
+{
+  "review_id": "1902.10878__00",
+  "safe_id": "1902.10878",
+  "arxiv_id": "1902.10878",
+  "conjecture_title": "Informal Conjecture (Introduction) — analogue of Kneser's theorem",
+  "paper_title": "Concatenating bipartite graphs",
+  "published": "2020-12-07",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The conjecture asks whether $\\phi(x,y)$ is always of the form $(\\lceil kx \\rceil + \\lceil ky \\rceil - 1)/k$ for some positive integer $k$, as an analogue of Kneser's theorem from additive group theory. The source paper itself notes that the stronger 'wild conjecture' (that the upper bound in Theorem 1.3 is always tight) is false, and leaves the correct characterisation of $\\phi(x,y)$ open. A follow-up preprint by Hompe (arXiv:1908.07453) extending threshold computations for $\\phi$ was withdrawn and incorporated into the source paper. No subsequent paper resolving or substantially advancing this specific conjecture has been found.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Chudnovsky Hompe Scott Seymour Spirkl \"concatenating bipartite graphs\" phi characterization 1902.10878",
+    "bipartite graphs concatenation \"Kneser's theorem\" phi(x,y) ceil characterization graph theory",
+    "arxiv \"1902.10878\" cite \"phi\" bipartite concatenating follow-up 2021 2022 2023 2024 2025"
+  ],
+  "notes": "The only follow-up paper found (arXiv:1908.07453, Hompe 2019) was withdrawn by its author and folded into the source paper; it extends threshold computations for specific values of $\\phi$ but does not address the general characterisation conjecture. The Princeton DataSpace entry 'The girth of digraphs and concatenating bipartite graphs' (dsp01h415pd397) could not be retrieved (HTTP 401). No resolution found in indexed literature."
+}

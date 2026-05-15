@@ -1,0 +1,46 @@
+[
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Complexity of Rotation Distance Between Binary Search Trees",
+    "statement_text": "What is the computational complexity of computing the rotation distance between two binary search trees (equivalently, the flip distance between two triangulations of a convex polygon)?",
+    "context_text": "The paper identifies the rotation distance problem as a central motivation for studying shortest paths on polymatroids. Despite a known polynomial-time 2-approximation and several FPT algorithms, the problem is neither known to be NP-hard nor known to admit a polynomial-time exact algorithm, making it a widely open question.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated in prose as 'another widely open question'; not a newly posed problem but an existing open question highlighted as a primary motivation. PDF source — math notation appears clean for this item.",
+    "arxiv_id": "2311.00779",
+    "paper_title": "Shortest paths on polymatroids and hypergraphic polytopes",
+    "paper_authors": [
+      "Jean Cardinal",
+      "Raphael Steiner"
+    ],
+    "published": "2023-11-06",
+    "abs_url": "https://arxiv.org/abs/2311.00779",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Complexity of Flip Distance Between Rectangulations",
+    "statement_text": "What is the computational complexity of computing the flip distance between two rectangulations of a unit square?",
+    "context_text": "Rectangulations are tessellations of the unit square by axis-aligned rectangles, whose flip graphs are skeletons of polytopes that are polymatroids (and special cases of quotientopes). Since they fall under Problem 2 (shortest paths on a polymatroid), the authors note explicitly that the complexity of the flip distance problems between rectangulations remains open.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated in prose as 'The complexity of these problems is open.' PDF source — math notation appears clean for this item.",
+    "arxiv_id": "2311.00779",
+    "paper_title": "Shortest paths on polymatroids and hypergraphic polytopes",
+    "paper_authors": [
+      "Jean Cardinal",
+      "Raphael Steiner"
+    ],
+    "published": "2023-11-06",
+    "abs_url": "https://arxiv.org/abs/2311.00779",
+    "source": "pdf"
+  }
+]

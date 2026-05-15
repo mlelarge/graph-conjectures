@@ -1,0 +1,94 @@
+[
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Erdős–Hajnal Set Mapping Problem",
+    "statement_text": "Let $p(m,k,l)$ be the maximum $p$ such that for every mapping $f:\\binom{M}{k}\\to\\binom{M}{l}$ with $|M|=m$ and $X\\cap f(X)=\\emptyset$ for all $X\\in\\binom{M}{k}$, there is a subset $P\\subset M$ with $|P|=p$ and $f(X)\\cap P=\\emptyset$ for all $X\\in\\binom{P}{k}$. Determine the exact dependence of $p(m,k,l)$ on $m$.",
+    "context_text": "In 1958, Erdős and Hajnal proved $cm^{1/(k+1)}\\leq p(m,k,l)\\leq c'(m\\log m)^{1/k}$ and asked for a more exact determination. Spencer (1972) improved the lower bound to $p(m,k,l)\\geq cm^{1/k}$, but the upper bound had not been improved for decades.",
+    "attributed_to": "Erdős and Hajnal",
+    "attributed_year": 1958,
+    "paper_contribution": "Solves the problem when $l$ is sufficiently large as a function of $k$, showing $p(m,k,(k-1)!)=\\Theta(m^{1/k})$, where the implied constants depend only on $k$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1507.00547",
+    "paper_title": "Short proofs of some extremal results II",
+    "paper_authors": [
+      "David Conlon",
+      "Jacob Fox",
+      "Benny Sudakov"
+    ],
+    "published": "2016-02-11",
+    "abs_url": "https://arxiv.org/abs/1507.00547",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Caro's Set Mapping Question on q(m,k,d)",
+    "statement_text": "Let $q(m,k,d)$ be the maximum $q$ such that for every mapping $f:\\binom{M}{k}\\to\\binom{M}{k}$ with $|M|=m$ and $|X\\cap f(X)|\\leq d$ for all $X\\in\\binom{M}{k}$, there is a subset $Q\\subset M$ with $|Q|=q$ and $f(X)\\not\\subset Q$ for any $X\\in\\binom{Q}{k}$. Estimate $q(m,k,d)$; in particular, determine whether the logarithmic factor in the upper bound $q(m,k,d)\\leq c'(m\\log m)^t$ is necessary.",
+    "context_text": "Caro proved $cm^t\\leq q(m,k,d)\\leq c'(m\\log m)^t$ where $t=(k-d)/(2k-d-1)$. The problem asks whether the logarithmic gap between the bounds can be closed.",
+    "attributed_to": "Caro",
+    "attributed_year": null,
+    "paper_contribution": "Partially answers the question by removing the log factor from the upper bound when $k=2$, proving $q(m,2,1)\\leq c_1 m^{1/2}$ and $q(m,2,0)\\leq c_2 m^{2/3}$.",
+    "opg_lookup": true,
+    "confidence": "low",
+    "notes": "PDF source — the formula for $t$ is garbled in the extracted text; value $t=(k-d)/(2k-d-1)$ inferred from surrounding context.",
+    "arxiv_id": "1507.00547",
+    "paper_title": "Short proofs of some extremal results II",
+    "paper_authors": [
+      "David Conlon",
+      "Jacob Fox",
+      "Benny Sudakov"
+    ],
+    "published": "2016-02-11",
+    "abs_url": "https://arxiv.org/abs/1507.00547",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Bollobás–Erdős Problem on Large C4-free Subgraphs",
+    "statement_text": "Does every graph with $m$ edges contain a $C_4$-free subgraph with $\\Omega(m^{3/4})$ edges? More precisely, determine $f(m, C_4)$, the size of the largest $C_4$-free subgraph guaranteed in any graph with $m$ edges.",
+    "context_text": "The problem of estimating $f(m,\\mathcal{H})$ was first raised by Bollobás and Erdős at a 1966 workshop. Erdős later conjectured the answer is $\\Theta(m^{2/3})$ based on an example due to Folkman and private communication from Szemerédi.",
+    "attributed_to": "Bollobás and Erdős",
+    "attributed_year": 1966,
+    "paper_contribution": "Determines $f(m, K_{r,r})=\\Theta(m^{r/(r+1)})$ for all $r\\geq 2$ via Theorems 3.1 and 3.3, which as the special case $r=2$ (noting $K_{2,2}\\cong C_4$) confirms Erdős's conjecture $f(m,C_4)=\\Theta(m^{2/3})$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1507.00547",
+    "paper_title": "Short proofs of some extremal results II",
+    "paper_authors": [
+      "David Conlon",
+      "Jacob Fox",
+      "Benny Sudakov"
+    ],
+    "published": "2016-02-11",
+    "abs_url": "https://arxiv.org/abs/1507.00547",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Open Problem: Reducing l to 1 in the Set Mapping Theorem",
+    "statement_text": "Determine whether $l$ can be decreased to $1$ for all $k$; that is, whether $p(m,k,1)=\\Theta(m^{1/k})$.",
+    "context_text": "Theorem 2.1 establishes $p(m,k,(k-1)!)=\\Theta(m^{1/k})$. The case $l=(k-1)!$ is noted to be best possible when $k=2$ (independently solved earlier by Füredi). The authors remark it would be very interesting to determine whether $l$ can be decreased to $1$ for all $k$.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated in running prose: 'It would be very interesting to determine whether l can be decreased to 1 for all k.' No labelled environment.",
+    "arxiv_id": "1507.00547",
+    "paper_title": "Short proofs of some extremal results II",
+    "paper_authors": [
+      "David Conlon",
+      "Jacob Fox",
+      "Benny Sudakov"
+    ],
+    "published": "2016-02-11",
+    "abs_url": "https://arxiv.org/abs/1507.00547",
+    "source": "pdf"
+  }
+]

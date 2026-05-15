@@ -1,0 +1,34 @@
+{
+  "review_id": "2004.02657__00",
+  "safe_id": "2004.02657",
+  "arxiv_id": "2004.02657",
+  "conjecture_title": "Conjecture 1.2",
+  "paper_title": "A universal exponent for homeomorphs",
+  "published": "2020-04-06",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Conjecture 1.2 posits that the optimal exponent for homeomorphs of any fixed 3-graph $H$ is $5/2$; the source paper itself establishes the weaker universal bound $3-1/5 \\approx 2.8$. Maya Sankar (2024) subsequently improved this upper bound to $8/3 \\approx 2.667$ for all 2-dimensional simplicial complexes, bringing it closer to the conjectured optimum. The full conjecture remains open.",
+  "since_posted": [
+    {
+      "title": "An Improved Turán Exponent for 2-Complexes",
+      "authors": "Maya Sankar",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2408.09029",
+      "arxiv_id": "2408.09029",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves that any $n$-vertex 2-dimensional simplicial complex with at least $C_S n^{8/3}$ facets contains a homeomorphic copy of any fixed 2-complex $S$, improving the universal exponent from $3-1/5$ toward the conjectured optimal $5/2$."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "3-graph homeomorph universal exponent 5/2 Keevash Long Narayanan Scott 2004.02657",
+    "hypergraph homeomorph threshold n^{5/2} Brown-Erdos-Sos conjecture 3-uniform",
+    "homeomorphs 3-uniform hypergraph Turan exponent 5/2 conjecture 2021 2022 2023 2024 2025"
+  ],
+  "notes": "The Long-Narayanan-Yap paper (Discrete Analysis, ~2020) extends the universal exponent framework to all dimensions k with exponent $\\lambda_k \\geq k^{-2k^2}$, but does not improve the 2-dimensional case over the source paper. Sankar (2024) is the primary improvement for 2-complexes specifically. The conjecture that $5/2$ is the correct universal exponent for 3-graph homeomorphs remains open."
+}

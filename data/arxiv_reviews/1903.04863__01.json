@@ -1,0 +1,34 @@
+{
+  "review_id": "1903.04863__01",
+  "safe_id": "1903.04863",
+  "arxiv_id": "1903.04863",
+  "conjecture_title": "Informal conjecture on extending Mandache's Theorem 1.1 to all abelian groups",
+  "paper_title": "Triforce and Corners",
+  "published": "2019-07-02",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "solved",
+  "confidence": "high",
+  "summary": "The conjecture that Mandache's lower bound $M(\\delta) \\geq m_{\\mathrm{convex}}(\\delta)$ could be extended to all abelian groups via Bohr sets was resolved by Aaron Berger in a paper submitted in September 2019, just months after the Fox–Sah–Sawhney–Stoner–Zhao preprint. Berger generalizes Mandache's popular-differences result for corners from finite fields $\\mathbb{F}_p^n$ to all compact abelian groups (which includes all finite abelian groups) and to corners in $\\mathbb{Z}^2$. The paper was published in the Mathematical Proceedings of the Cambridge Philosophical Society in 2021.",
+  "since_posted": [
+    {
+      "title": "Popular differences for corners in Abelian groups",
+      "authors": "Aaron Berger",
+      "year": 2019,
+      "venue": "Mathematical Proceedings of the Cambridge Philosophical Society",
+      "url": "https://arxiv.org/abs/1909.12350",
+      "arxiv_id": "1909.12350",
+      "doi": null,
+      "kind": "proof",
+      "claim": "Extends Mandache's popular-differences lower bound for corners from finite fields to all compact abelian groups and to $\\mathbb{Z}^2$, resolving the conjecture that a Bohr-set analogue would yield such an extension."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Mandache corners lower bound abelian groups Bohr sets 1903.04863",
+    "triforce corners Fox Sah Sawhney Stoner Zhao corners abelian groups extension Mandache",
+    "Aaron Berger \"Popular differences for corners in Abelian groups\" arXiv MIT 2020"
+  ],
+  "notes": "Berger's paper (arXiv:1909.12350) was submitted September 26, 2019, a few months after the Fox et al. preprint (March 2019). It covers compact abelian groups (which includes all finite abelian groups via discrete topology) and $\\mathbb{Z}^2$, matching the scope the conjecture had in mind. The Cambridge Core page confirms publication in volume 171, issue 1 (July 2021)."
+}

@@ -1,0 +1,51 @@
+{
+  "review_id": "2307.08361__00",
+  "safe_id": "2307.08361",
+  "arxiv_id": "2307.08361",
+  "conjecture_title": "Polynomial degree-bounding function for hereditary degree-bounded classes",
+  "paper_title": "Induced $C_4$-free subgraphs with large average degree",
+  "published": "2023-11-01",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "solved",
+  "confidence": "high",
+  "summary": "The conjecture was answered affirmatively by Girão and Hunter in a 2025 paper in the International Mathematics Research Notices, which proves that every hereditary degree-bounded class has a polynomial degree-bounding function, fully resolving the question left open in arXiv:2307.08361. A related earlier result by Bourneuf, Bucćić, Cook, and Davies (arXiv:2311.03341, published in Advances in Combinatorics 2024) proved polynomial bounds for hereditary classes defined by excluding induced subdivisions of a fixed graph, establishing a key step toward the full result.",
+  "since_posted": [
+    {
+      "title": "On polynomial degree-boundedness",
+      "authors": "Romain Bourneuf, Matija Bucćić, Linda Cook, James Davies",
+      "year": 2024,
+      "venue": "Advances in Combinatorics",
+      "url": "https://arxiv.org/abs/2311.03341",
+      "arxiv_id": "2311.03341",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves that for every graph H there is a polynomial p such that every graph of average degree at least p(s) contains either K_{s,s} or an induced subdivision of H, establishing polynomial bounds for hereditary degree-bounded classes defined by forbidden induced subdivisions."
+    },
+    {
+      "title": "Induced Subdivisions in $K_{s,s}$-Free Graphs With Polynomial Average Degree",
+      "authors": "António Girão, Zach Hunter",
+      "year": 2025,
+      "venue": "International Mathematics Research Notices",
+      "url": "https://academic.oup.com/imrn/article/2025/4/rnaf025/8016262",
+      "arxiv_id": null,
+      "doi": "10.1093/imrn/rnaf025",
+      "kind": "proof",
+      "claim": "Proves that every hereditary degree-bounded class has a polynomial degree-bounding function, fully resolving the open question from arXiv:2307.08361."
+    }
+  ],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2508.14332",
+      "verified": true,
+      "note": "This paper (Nguyen, Scott, Seymour 2025) disproves the weak coarse Menger conjecture and has no connection to polynomial degree-bounding functions for hereditary graph classes; the internal reference is a false match from the corpus extraction."
+    }
+  ],
+  "search_queries": [
+    "hereditary degree-bounded polynomial degree-bounding function graph theory 2307.08361",
+    "\"degree-bounding\" \"hereditary\" \"polynomial\" tau-bounded graphs Du Girão Hunter McCarty Scott",
+    "Girão Hunter \"polynomial degree-bounded\" hereditary 2024 2025 arxiv"
+  ],
+  "notes": "The conjecture is solved: Girão and Hunter (IMRN 2025, DOI 10.1093/imrn/rnaf025) proved polynomial bounds suffice for every hereditary degree-bounded class. The arXiv preprint ID for the Girão-Hunter paper was not found in the sources consulted. The internal reference arXiv:2508.14332 is a false corpus match unrelated to this conjecture. The survey arXiv:2403.05737 (Girão, Hunter, 2024) provides additional context on the degree-boundedness landscape."
+}

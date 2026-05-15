@@ -1,0 +1,54 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Richter's Bounded Maximum Degree Conjecture",
+    "statement_text": "For every positive integer $c$, there exists an integer $D(c)$ such that every $c$-crossing-critical graph has maximum degree fewer than $D(c)$.",
+    "context_text": "Richter conjectured in 2003 that the maximum degree in $c$-crossing-critical graphs is bounded by a function of $c$ alone. The conjecture was disproved non-constructively by Dvořák and Mohar for $c \\geq 171$ in 2010. The paper resolves the conjecture completely by showing it holds exactly for $c \\leq 12$ and fails for all $c \\geq 13$.",
+    "attributed_to": "Richter",
+    "attributed_year": 2003,
+    "paper_contribution": "Proves the conjecture holds for every $c \\leq 12$ (Theorem 1.1) and disproves it for every $c \\geq 13$ via explicit constructions of 3-connected $c$-crossing-critical graphs containing arbitrarily many vertices of arbitrarily large degree (Theorem 1.2, Corollary 1.3).",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1903.05363",
+    "paper_title": "Bounded maximum degree conjecture holds precisely for $c$-crossing-critical graphs with $c \\leq 12$",
+    "paper_authors": [
+      "Drago Bokal",
+      "Zdeněk Dvořák",
+      "Petr Hliněný",
+      "Jesús Leaños",
+      "Bojan Mohar",
+      "Tilo Wiedera"
+    ],
+    "published": "2021-05-05",
+    "abs_url": "https://arxiv.org/abs/1903.05363",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Optimal degree bounds $D_c$ for small $c$",
+    "statement_text": "Determine the optimal values of $D_c$ for each $c \\in \\{2, 3, \\ldots, 12\\}$, where $D_c$ is the smallest integer such that every $c$-crossing-critical graph has maximum degree at most $D_c$.",
+    "context_text": "Theorem 1.1 guarantees the existence of finite bounds $D_c$ for each $c \\leq 12$, but the proof is asymptotic and does not yield explicit values. The paper notes $D_1 = 4$, $D_2 \\geq 8$, and that the optimal $D_2$ should be within reach using existing characterisation results, while the remaining bounds are left to future investigations.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated as a future-work direction rather than a formally labelled open problem; Section 7 (open problems) was not included in the provided text excerpt.",
+    "arxiv_id": "1903.05363",
+    "paper_title": "Bounded maximum degree conjecture holds precisely for $c$-crossing-critical graphs with $c \\leq 12$",
+    "paper_authors": [
+      "Drago Bokal",
+      "Zdeněk Dvořák",
+      "Petr Hliněný",
+      "Jesús Leaños",
+      "Bojan Mohar",
+      "Tilo Wiedera"
+    ],
+    "published": "2021-05-05",
+    "abs_url": "https://arxiv.org/abs/1903.05363",
+    "source": "pdf"
+  }
+]

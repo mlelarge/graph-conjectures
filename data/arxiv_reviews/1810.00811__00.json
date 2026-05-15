@@ -1,0 +1,42 @@
+{
+  "review_id": "1810.00811__00",
+  "safe_id": "1810.00811",
+  "arxiv_id": "1810.00811",
+  "conjecture_title": "Conjecture 1.5 (sparse strong EH-property)",
+  "paper_title": "Caterpillars in Erdős-Hajnal",
+  "published": "2018-10-01",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "solved",
+  "confidence": "high",
+  "summary": "Conjecture 1.5 is fully resolved. The 'only if' direction — that the sparse strong EH-property forces H to be a forest — was already known from Erdős's construction. The converse — that every forest H has the sparse strong EH-property — was proved by Chudnovsky, Scott, Seymour, and Spirkl in 'Pure Pairs. I. Trees and Linear Anticomplete Pairs' (arXiv:1809.00919), which appeared as an arXiv preprint in September 2018 (one month before the caterpillar paper) and was published in Advances in Mathematics in 2020; Seymour and Spirkl are co-authors on both papers.",
+  "since_posted": [
+    {
+      "title": "Pure pairs. I. Trees and linear anticomplete pairs",
+      "authors": "Maria Chudnovsky, Alex Scott, Paul Seymour, Sophie Spirkl",
+      "year": 2020,
+      "venue": "Advances in Mathematics",
+      "url": "https://arxiv.org/abs/1809.00919",
+      "arxiv_id": "1809.00919",
+      "doi": null,
+      "kind": "proof",
+      "claim": "Proves that for every forest H there exists c > 0 such that every H-free graph G with |V(G)| > 1 either has a vertex of degree at least c|V(G)| or contains two disjoint anticomplete sets each of size at least c|V(G)|, establishing the 'if H is a forest' direction and thereby completing the proof of Conjecture 1.5."
+    }
+  ],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2310.04265",
+      "verified": false,
+      "note": "WebFetch returned only the abstract (about clique number of tournaments and dichromatic number); the abstract does not mention the sparse strong EH-property. Unable to confirm the attributed discussion of Conjecture 1.5 alongside Conjecture 4.3 from the abstract alone."
+    }
+  ],
+  "search_queries": [
+    "sparse strong EH-property forest Erdős-Hajnal Liebenau Pilipczuk Seymour Spirkl",
+    "arXiv 1810.00811 sparse strong conjecture forest H-free",
+    "sparse strong EH-property proved forest conjecture 2019 2020 2021 2022 2023 2024",
+    "Sparse graphs without linear anticomplete pairs Chudnovsky arxiv forest EH-property",
+    "arxiv Pure pairs trees and linear anticomplete pairs Chudnovsky Scott Seymour Spirkl 2019 2020"
+  ],
+  "notes": "arXiv:1809.00919 was submitted in September 2018, one month before arXiv:1810.00811 (October 2018). Seymour and Spirkl are co-authors of both papers; the caterpillar paper may have been written concurrently and states the conjecture for context. The journal publication (Advances in Mathematics, 2020) is the post-2018 venue cited here. The URL https://arxiv.org/abs/1809.00919 was confirmed by multiple independent search results but was not directly WebFetched due to the call-count limit."
+}

@@ -1,0 +1,34 @@
+{
+  "review_id": "1802.04179__01",
+  "safe_id": "1802.04179",
+  "arxiv_id": "1802.04179",
+  "conjecture_title": "Informal conjecture on optimality of 11/3",
+  "paper_title": "Planar graphs without cycles of length 4 or 5 are (11:3)-colorable",
+  "published": "2019-07-14",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Dvořák and Hu proved every planar graph without cycles of length 4 or 5 has fractional chromatic number at most 11/3, and suspected this bound is not tight. This suspicion was confirmed by Xu and Zhu (arXiv:2511.12914, 2025), who proved such graphs are (7m:2m)-DP-colorable for every positive integer m, establishing an improved upper bound of 7/2 = 3.5 < 11/3 ≈ 3.667. The exact infimum of fractional chromatic numbers for this class remains open, currently bounded between 3 + 1/12 and 7/2.",
+  "since_posted": [
+    {
+      "title": "Planar graphs without cycles of length 4 or 5 are (7m:2m)-DP-colorable",
+      "authors": "Xiaoyan Xu, Xuding Zhu",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2511.12914",
+      "arxiv_id": "2511.12914",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves that planar graphs without 4- or 5-cycles are (7m:2m)-DP-colorable for all positive integers m, improving the upper bound on the fractional chromatic number from 11/3 ≈ 3.667 to 7/2 = 3.5, thereby confirming that 11/3 is not the tight infimum."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "fractional chromatic number planar graphs without cycles length 4 5 infimum Dvorak Hu 1802.04179",
+    "planar graphs no 4-cycles no 5-cycles fractional coloring 11/3 tight bound arxiv",
+    "Xu Zhu planar graphs no 4-cycles 5-cycles fractional chromatic lower bound infimum 2024 2025"
+  ],
+  "notes": "The conjecture that 11/3 is not the best possible upper bound is confirmed: Xu and Zhu (2025, arXiv:2511.12914) improved the upper bound to 7/2 = 3.5 via (7m:2m)-DP-colorability. The strong fractional DP-chromatic number for this graph class satisfies 3 + 1/12 ≤ χ**_DP ≤ 7/2, but the exact infimum of the fractional chromatic number is still open."
+}

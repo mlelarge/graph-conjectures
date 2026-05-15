@@ -1,0 +1,22 @@
+{
+  "review_id": "1908.06300__01",
+  "safe_id": "1908.06300",
+  "arxiv_id": "1908.06300",
+  "conjecture_title": "Open question on stable set for bounded ocp and arbitrary Euler genus",
+  "paper_title": "The stable set problem in graphs with bounded genus and bounded odd cycle packing number",
+  "published": "2019-08-17",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The source paper (arXiv:1908.06300, SODA 2020) establishes a polynomial-time algorithm for the stable set problem when both ocp(G) \\leq k and the Euler genus are fixed constants, but leaves open whether the genus restriction can be dropped for k \\geq 2. A closely related follow-up by the same authors (arXiv:1911.12179, Mathematical Programming 2022) gives polynomial-size extended formulations for the case ocp(G) \\leq 1 without any genus constraint, but that case was already polynomial-time via the bimodular algorithm before the source paper. No paper resolving the general question (bounded ocp, arbitrary Euler genus, k \\geq 2) was found in the literature through May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "stable set problem odd cycle packing number surface Euler genus polynomial algorithm",
+    "Conforti Huynh Joret Weltge \"odd cycle packing\" \"stable set\" 2019 arxiv 1908.06300",
+    "\"odd cycle packing\" \"stable set\" \"arbitrary genus\" OR \"unbounded genus\" polynomial complexity 2020 2021 2022 2023 2024 2025"
+  ],
+  "notes": "The open question for arbitrary Euler genus with ocp(G) \\leq k (k \\geq 2) remains unresolved as of May 2026. The k=1 case (no two disjoint odd cycles) was already tractable before the source paper via the bimodular algorithm; arXiv:1911.12179 (Conforti, Fiorini, Huynh, Weltge, Math. Programming 2022) further gives an O(n^2)-size extended formulation for k=1 without genus restriction, but this does not directly resolve the open question for larger k. No counterexample or general algorithm dropping the genus constraint was found."
+}

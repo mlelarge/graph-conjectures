@@ -1,0 +1,22 @@
+{
+  "review_id": "2208.06858__04",
+  "safe_id": "2208.06858",
+  "arxiv_id": "2208.06858",
+  "conjecture_title": "Conjecture 2.9",
+  "paper_title": "The success probability in Levine's hat problem, and independent sets in graphs",
+  "published": "2023-08-21",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "medium",
+  "summary": "Conjecture 2.9 asserts that for every graph $G$ on $n$ vertices with independence number $\\alpha n$ ($\\alpha < 1/2$), the expected size of the maximal independent set in a binomial random half-subset satisfies $\\alpha^{**}(G) \\leq \\alpha - \\varepsilon^{**}(\\alpha)$ for some positive $\\varepsilon^{**}(\\alpha)$ depending only on $\\alpha$. The source paper itself establishes the conjecture for $\\alpha > 1/4$ (Theorem 2.10) and for regular graphs when $\\alpha > 1/8$ (Theorem 2.11), leaving the full range $(0, 1/4]$ for general graphs open. Semantic Scholar lists five citing papers (to May 2026), none of which could be verified to make further progress on this specific conjecture; the closest follow-ups concern the hat-puzzle side of the paper or the related Bollobás–Erdős–Tuza conjecture.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Alon Friedgut Kalai Kindler independent sets binomial random subset maximal independent set hat problem 2208.06858",
+    "independent set random subset alpha** graph conjecture maximal independent set expected size gap",
+    "independent sets graph \"alpha star star\" OR \"epsilon star star\" binomial random subset conjecture Alon 2024 2025"
+  ],
+  "notes": "Semantic Scholar returns five citing papers (arXiv:2503.09042, arXiv:2405.18264, arXiv:2404.01639, arXiv:2405.18264 duplicate, and one without an arXiv ID); WebFetch of 2503.09042 ('A Fourier approach to Levine's hat puzzle', Heilman–Tamuz 2025) confirmed it addresses the two-player hat puzzle via Boolean harmonic analysis, not Conjecture 2.9 on independent sets; WebFetch of 2405.18264 (Cheng–Xu 2024) confirmed it concerns the Bollobás–Erdős–Tuza conjecture for $K_{s,t}$-free graphs and does not address Conjecture 2.9 directly. No paper found that resolves the conjecture for $\\alpha \\in (0, 1/4]$ on general graphs."
+}

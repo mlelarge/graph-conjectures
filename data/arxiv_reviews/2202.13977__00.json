@@ -1,0 +1,33 @@
+{
+  "review_id": "2202.13977__00",
+  "safe_id": "2202.13977",
+  "arxiv_id": "2202.13977",
+  "conjecture_title": "Conjecture 1.5",
+  "paper_title": "Pure pairs. X. Tournaments and the strong Erdos-Hajnal property",
+  "published": "2023-08-08",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 1.5 of arXiv:2202.13977 asserts that the strong EH-property for tournaments is characterised exactly by the existence of a numbering whose backedge graph is a forest. The necessary direction (strong EH-property implies forest numbering) was established as Theorem 1.4 in the source paper, but the converse remains open. A 2024 paper (arXiv:2402.10782) proved that deciding whether a tournament admits such a forest-ordering is NP-complete, which is computationally related to the conjecture but does not resolve it.",
+  "since_posted": [
+    {
+      "title": "Finding forest-orderings of tournaments is NP-complete",
+      "authors": "(not extracted from abstract page)",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2402.10782",
+      "arxiv_id": "2402.10782",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves that the problem of deciding whether a tournament admits a forest-ordering (equivalently, a feedback arc set inducing a forest) is NP-complete; explicitly motivated by the connection to the strong Erdos-Hajnal property but does not resolve Conjecture 1.5."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "tournament \"strong EH-property\" backedge forest conjecture 2202.13977",
+    "tournament \"strong Erdos-Hajnal property\" numbering backedge graph forest Chudnovsky Seymour Spirkl"
+  ],
+  "notes": "The conjecture is recent (posted 2022, published 2023). The only post-statement follow-up found is arXiv:2402.10782 (2024), which addresses the computational complexity of verifying the forest-ordering condition (NP-complete) rather than the logical equivalence itself. No counterexample or proof of the converse direction was found. Conjecture 1.5 remains fully open."
+}

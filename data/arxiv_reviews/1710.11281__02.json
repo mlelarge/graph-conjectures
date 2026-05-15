@@ -1,0 +1,44 @@
+{
+  "review_id": "1710.11281__02",
+  "safe_id": "1710.11281",
+  "arxiv_id": "1710.11281",
+  "conjecture_title": "Question (Riemannian surfaces): cop converging to robber",
+  "paper_title": "Notes on Cops and Robber game on graphs",
+  "published": "2017-10-31",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "medium",
+  "summary": "The question asks whether a winning cop strategy on a Riemannian surface (where capture means coming within distance 1/2) can always be strengthened so that a cop converges to the robber's exact position. For hyperbolic surfaces (constant negative curvature), arXiv:2402.05753 (2024) proves a positive partial answer: two cops have a strategy to come arbitrarily close to the robber, regardless of the genus. The general question for arbitrary Riemannian surfaces appears to remain open.",
+  "since_posted": [
+    {
+      "title": "The game of Cops and Robber on geodesic spaces",
+      "authors": "unknown (ADS ID: 2022arXiv220511633M)",
+      "year": 2022,
+      "venue": "Canadian Journal of Mathematics",
+      "url": "https://arxiv.org/abs/2205.11633",
+      "arxiv_id": "2205.11633",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Introduces the Cops and Robber game on compact geodesic spaces, proves that every compact geodesic surface has finite cop number depending only on genus, and establishes the framework in which Mohar's convergence question is most naturally formulated."
+    },
+    {
+      "title": "Cops and Robber on Hyperbolic Manifolds",
+      "authors": "unknown",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2402.05753",
+      "arxiv_id": "2402.05753",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves that on surfaces of constant negative curvature (hyperbolic surfaces), two cops have a strategy to come arbitrarily close to the robber independently of the genus, giving a positive partial answer to Mohar's convergence question for hyperbolic Riemannian surfaces."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "cops robbers Riemannian surface continuous game cop number Mohar 1710.11281",
+    "continuous cops robbers geodesic metric space cop convergence catching strategy"
+  ],
+  "notes": "The question is specifically about whether winning strategies can be strengthened to convergence-to-exact-position strategies. arXiv:2402.05753 provides a positive answer for hyperbolic surfaces (two cops can come arbitrarily close), which is a direct partial resolution. The general case for non-constant-curvature Riemannian surfaces appears open. Author names for both since_posted entries could not be verified from the fetched abstract pages."
+}

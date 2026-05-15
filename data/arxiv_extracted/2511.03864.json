@@ -1,0 +1,71 @@
+[
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Question 5.2",
+    "statement_text": "Is is true that for every positive integer $\\mu$ there exists a polynomial $\\mathsf{p}_{\\mu}$ such that every $K_{t,t}$-free graph $G$ with $\\operatorname{tree\\textnormal{-}\\mu}(G)\\leqslant\\mu$ satisfies $\\operatorname{tree\\textnormal{-}\\alpha}(G)\\leqslant\\mathsf{p}_{\\mu}(t)$?",
+    "context_text": "Lemma 5.1 shows that the smallest integer $\\mathsf{N}(s,s,2)$ appearing in the bound from Abrishami et al. is not bounded by any polynomial in both parameters, motivating the question of whether a polynomial bound in $t$ alone (for fixed $\\mu$) is achievable. The question asks specifically whether tree-independence number can be bounded polynomially in the induced biclique exclusion parameter $t$ for graphs of bounded induced matching treewidth.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2511.03864",
+    "paper_title": "Induced matching treewidth and tree-independence number, revisited",
+    "paper_authors": [
+      "Noga Alon",
+      "Martin Milanič",
+      "Paweł Rzążewski"
+    ],
+    "published": "2025-11-05",
+    "abs_url": "https://arxiv.org/abs/2511.03864",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Question 5.3",
+    "statement_text": "Is it true that for classes of graphs with bounded induced matching treewidth, tree-independence number is bounded from above by a polynomial function of the induced biclique number?",
+    "context_text": "The induced biclique number of $G$ is the largest nonnegative integer $t$ such that $G$ contains an induced subgraph isomorphic to $K_{t,t}$. This question is an equivalent restatement of Question 5.2 using the induced biclique number, and is noted as closely related to recent work bounding tree-independence number in terms of clique-like parameters.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "Explicitly stated by the authors to be equivalent to Question 5.2.",
+    "arxiv_id": "2511.03864",
+    "paper_title": "Induced matching treewidth and tree-independence number, revisited",
+    "paper_authors": [
+      "Noga Alon",
+      "Martin Milanič",
+      "Paweł Rzążewski"
+    ],
+    "published": "2025-11-05",
+    "abs_url": "https://arxiv.org/abs/2511.03864",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Question 5.4",
+    "statement_text": "Is is true that for every positive integer $\\mu$ there exists a polynomial $\\mathsf{p}_{\\mu}$ such that every graph $G$ with $\\operatorname{tree\\textnormal{-}\\mu}(G)\\leqslant\\mu$ and clique number at most $\\omega$ satisfies $\\chi(G)\\leqslant\\mathsf{p}_{\\mu}(\\omega)$?",
+    "context_text": "Abrishami et al. proved that any class of graphs with bounded induced matching treewidth is $\\chi$-bounded, i.e., the chromatic number can be upper-bounded in terms of the clique number. However, the bound obtained is at least exponential in the clique number, and the authors ask whether a polynomial bound suffices — i.e., whether such graph classes are polynomially $\\chi$-bounded.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2511.03864",
+    "paper_title": "Induced matching treewidth and tree-independence number, revisited",
+    "paper_authors": [
+      "Noga Alon",
+      "Martin Milanič",
+      "Paweł Rzążewski"
+    ],
+    "published": "2025-11-05",
+    "abs_url": "https://arxiv.org/abs/2511.03864",
+    "source": "html"
+  }
+]

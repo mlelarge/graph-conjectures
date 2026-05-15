@@ -1,0 +1,33 @@
+{
+  "review_id": "1710.11281__01",
+  "safe_id": "1710.11281",
+  "arxiv_id": "1710.11281",
+  "conjecture_title": "Question (Riemannian surfaces): cop number bounded by genus",
+  "paper_title": "Notes on Cops and Robber game on graphs",
+  "published": "2017-10-31",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "solved",
+  "confidence": "high",
+  "summary": "The question asks whether the cop number of a Riemannian surface is a finite function of its topological genus. Mohar himself answered this affirmatively in a 2024 Canadian Journal of Mathematics paper extending the cops-and-robbers game to compact geodesic spaces: for a compact geodesic surface of genus g, the cop number is O(g) (upper bound) and Omega(sqrt(g)) (lower bound), with three cops sufficing for genus 0 or 1.",
+  "since_posted": [
+    {
+      "title": "The game of Cops and Robber on geodesic spaces",
+      "authors": "Bojan Mohar",
+      "year": 2024,
+      "venue": "Canadian Journal of Mathematics",
+      "url": "https://www.cambridge.org/core/journals/canadian-journal-of-mathematics/article/game-of-cops-and-robber-on-geodesic-spaces/E33876051132DB114E090A9340774B49",
+      "arxiv_id": null,
+      "doi": null,
+      "kind": "proof",
+      "claim": "Proves that the cop number of any compact geodesic surface of genus g is at most O(g) and at least Omega(sqrt(g)), answering the question affirmatively: the cop number is a finite function of the genus."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "cop number Riemannian surfaces genus Mohar 2017",
+    "cops robbers continuous game Riemannian manifold genus bounded"
+  ],
+  "notes": "The 2024 paper in Canadian Journal of Mathematics by Mohar (Volume 77, Issue 6, published online 4 October 2024) has a different title from the 2017 arXiv notes ('The game of Cops and Robber on geodesic spaces' vs 'Notes on Cops and Robber game on graphs') and appears to be the dedicated publication that resolves the question for compact geodesic surfaces, which include compact Riemannian surfaces. A parallel line of research (Compact Metric Spaces with Infinite Cop Number, Discrete & Computational Geometry 2024) constructs a 3-dimensional compact metric space with infinite cop number, but this does not affect the positive resolution for 2-dimensional surfaces."
+}

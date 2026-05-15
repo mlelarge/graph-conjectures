@@ -1,0 +1,48 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.1 (r-Quasiplanar Graph Conjecture)",
+    "statement_text": "The number of edges of every $r$-quasiplanar graph of $n$ vertices is $O_r(n)$.",
+    "context_text": "Described as a longstanding unsolved problem in the theory of topological graphs. It has been verified for $r \\leq 4$. The paper's Theorem 1.7 provides an improved upper bound for $r = 2s$, $s \\geq 3$, giving at most $n\\bigl(\\frac{c\\log n}{s}\\bigr)^{2s-4}$ edges, which substantially beats the previously best known bounds of $n(\\log n)^{O(\\log r)}$ and $O(n(\\log n)^{4r-16})$.",
+    "attributed_to": "Combinatorial geometry community; see Brass, Moser, and Pach [BrMP05]",
+    "attributed_year": 2005,
+    "paper_contribution": "Proves that every $r$-quasiplanar graph with $n \\geq r$ vertices, for $r = 2s$ and $s \\geq 3$, has at most $n\\bigl(\\frac{c\\log n}{s}\\bigr)^{2s-4}$ edges, where $c > 0$ is an absolute constant, improving all previously known upper bounds.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Header carries no parenthetical attribution, but the surrounding text explicitly labels this a longstanding open problem with reference [BrMP05]; treated as 'studies' accordingly.",
+    "arxiv_id": "2112.02378",
+    "paper_title": "Quasiplanar Graphs, String Graphs, and the Erdos-Gallai Problem",
+    "paper_authors": [
+      "Jacob Fox",
+      "Janos Pach",
+      "Andrew Suk"
+    ],
+    "published": "2022-10-25",
+    "abs_url": "https://arxiv.org/abs/2112.02378",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Problem 1.2",
+    "statement_text": "Fix an integer $r \\geq 4$. Is it true that every $K_r$-free segment graph on $n$ vertices has an induced subgraph on $\\Omega_r(n)$ vertices which is $K_{r-1}$-free?",
+    "context_text": "Motivated by the approach of coloring $K_r$-free string graphs to prove Conjecture 1.1: if each color class could be made $K_4$-free, Ackerman's result would bound the edges per class by $O(n)$. Although Krawczyk–Walczak showed $K_r$-free string graphs can require $\\Omega_r(\\log\\log n)$ colors with $K_{r-1}$-free classes, the question of finding a linearly large $K_{r-1}$-free induced subgraph in a $K_r$-free segment graph remains open. The paper's Theorems 1.5 and 1.6 address analogous questions for string graphs (with a $\\log^2 n$ loss), but the segment-graph case with a linear guarantee is unresolved.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2112.02378",
+    "paper_title": "Quasiplanar Graphs, String Graphs, and the Erdos-Gallai Problem",
+    "paper_authors": [
+      "Jacob Fox",
+      "Janos Pach",
+      "Andrew Suk"
+    ],
+    "published": "2022-10-25",
+    "abs_url": "https://arxiv.org/abs/2112.02378",
+    "source": "pdf"
+  }
+]

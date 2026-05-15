@@ -1,0 +1,74 @@
+[
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 7",
+    "statement_text": "(a) The diagonal online random Ramsey numbers satisfy $$\\tilde{r}_{rand}(n, n) = 2^{(1+o(1)) \\frac{2}{3} n}.$$ (b) The off-diagonal online random Ramsey numbers ($m \\geq 3$ fixed and $n \\to \\infty$) satisfy $$\\tilde{r}_{rand}(m, n) = n^{(1+o(1)) \\frac{2}{3} m}.$$",
+    "context_text": "The authors define the online random Ramsey number $\\tilde{r}_{rand}(m,n)$ as the maximum over $p \\in (0,1)$ of $\\tilde{r}(m,n;p)$, where Painter independently colors each edge red with probability $p$. These conjectures on the growth rate are motivated by a connection with the Subgraph Query Problem; Theorem 10 and Conjecture 9 together imply both parts of this conjecture.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1806.09726",
+    "paper_title": "Online Ramsey Numbers and the Subgraph Query Problem",
+    "paper_authors": [
+      "David Conlon",
+      "Jacob Fox",
+      "Andrey Grinshpun",
+      "Xiaoyu He"
+    ],
+    "published": "2018-11-04",
+    "abs_url": "https://arxiv.org/abs/1806.09726",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 9",
+    "statement_text": "For any $m \\geq 4$, $$f(K_m, p) = 2^{o(m)} p^{-\\frac{2}{3}m + c_m},$$ where $c_m$ is a constant depending on $m \\bmod 3$ (exact case formula garbled in PDF extraction).",
+    "context_text": "Here $f(K_m, p)$ is the minimum number of queries needed to find a copy of $K_m$ with probability at least $1/2$ in the Subgraph Query Game on $G(\\mathbb{Z}, p)$. The upper bound in this conjecture is proved in Section 5.2, and together with Theorem 12 (the matching lower bound) it is fully verified for $m = 4$ and $m = 5$.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "PDF source — the piecewise formula defining $c_m$ for $m \\equiv 0, 1, 2 \\pmod{3}$ is garbled in the extraction and cannot be read cleanly.",
+    "arxiv_id": "1806.09726",
+    "paper_title": "Online Ramsey Numbers and the Subgraph Query Problem",
+    "paper_authors": [
+      "David Conlon",
+      "Jacob Fox",
+      "Andrey Grinshpun",
+      "Xiaoyu He"
+    ],
+    "published": "2018-11-04",
+    "abs_url": "https://arxiv.org/abs/1806.09726",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Informal conjecture on generalization of Theorem 4 to all $\\tilde{r}(m,n)$",
+    "statement_text": "We suspect that Theorem 4 can be generalized to $\\tilde{r}(m, n)$ in the same way.",
+    "context_text": "Theorem 4 establishes $\\tilde{r}(3,n) = \\Omega(n^3/\\log^2 n)$ via a Painter strategy that avoids red triangles, in an argument close in spirit to Erdős's alteration method. The authors note that Krivelevich generalized this alteration method to all $r(m,n)$ and conjecture informally that the same can be done for $\\tilde{r}(m,n)$.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "No explicit quantitative bound for general $m$ is stated; only the suspicion of generalizability is expressed.",
+    "arxiv_id": "1806.09726",
+    "paper_title": "Online Ramsey Numbers and the Subgraph Query Problem",
+    "paper_authors": [
+      "David Conlon",
+      "Jacob Fox",
+      "Andrey Grinshpun",
+      "Xiaoyu He"
+    ],
+    "published": "2018-11-04",
+    "abs_url": "https://arxiv.org/abs/1806.09726",
+    "source": "pdf"
+  }
+]

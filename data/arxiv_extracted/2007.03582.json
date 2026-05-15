@@ -1,0 +1,80 @@
+[
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Fujiwara-Papasoglu question on planar graphs (asdim ≤ 2)",
+    "statement_text": "Does the class of planar graphs have asymptotic dimension at most $2$?",
+    "context_text": "Fujiwara and Papasoglu proved that the class of planar graphs has asymptotic dimension at most 3, and asked whether this bound can be improved to 2. The paper cites answering this as one of its primary motivations, giving a positive answer via Theorem 1.2.",
+    "attributed_to": "Fujiwara and Papasoglu",
+    "attributed_year": null,
+    "paper_contribution": "Proves that the class of planar graphs has asymptotic dimension at most 2 (Theorem 1.2), with a 2-dimensional control function of linear type $f(r) = O(r)$; the result further extends to geodesic Riemannian planes.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "Not given an explicit numbered question environment in this paper; described in the introduction and abstract as 'a recent question of Fujiwara and Papasoglu' (reference [17]).",
+    "arxiv_id": "2007.03582",
+    "paper_title": "Surfaces have (asymptotic) dimension 2",
+    "paper_authors": [
+      "Marthe Bonamy",
+      "Nicolas Bousquet",
+      "Louis Esperet",
+      "Carla Groenland",
+      "François Pirot",
+      "Alex Scott"
+    ],
+    "published": "2020-12-07",
+    "abs_url": "https://arxiv.org/abs/2007.03582",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Question 1 (Question 5.2 in Fujiwara-Papasoglu [17])",
+    "statement_text": "Is there a constant $k$ such that for any graph $H$, the class of graphs excluding $H$ as a minor has asymptotic dimension at most $k$? Can we take $k = 2$?",
+    "context_text": "Fujiwara and Papasoglu raised this question in their work on asymptotic dimension of planar graphs, asking whether a uniform bound exists for all proper minor-closed classes and whether $k=2$ suffices. The paper makes substantial progress, proving the answer is yes for $H = K_{3,p}$, for apex-forests $H$, and for arbitrary $H$ with a bounded-degree restriction.",
+    "attributed_to": "Fujiwara and Papasoglu",
+    "attributed_year": null,
+    "paper_contribution": "Proves a positive answer ($k=2$) when $H = K_{3,p}$ for any fixed $p$ (Theorem 1.3), when $H$ is an apex-forest (Corollary 7.6), and for any graph $H$ when restricted to $H$-minor-free graphs of bounded degree (Theorem 1.6); the general case remains open.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2007.03582",
+    "paper_title": "Surfaces have (asymptotic) dimension 2",
+    "paper_authors": [
+      "Marthe Bonamy",
+      "Nicolas Bousquet",
+      "Louis Esperet",
+      "Carla Groenland",
+      "François Pirot",
+      "Alex Scott"
+    ],
+    "published": "2020-12-07",
+    "abs_url": "https://arxiv.org/abs/2007.03582",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Question 2 (Problem 4.1 in Ostrovskii-Rosenthal [30])",
+    "statement_text": "Let $G$ be a finitely generated group and $S$ a finite generating set such that $\\mathrm{Cay}(G, S)$ is minor excluded. Does it follow that $G$ has asymptotic dimension at most $2$?",
+    "context_text": "Ostrovskii and Rosenthal posed this as a special case of the general question about asymptotic dimension of minor-excluded graph classes, in the setting of Cayley graphs of finitely generated groups. The paper resolves it completely.",
+    "attributed_to": "Ostrovskii and Rosenthal",
+    "attributed_year": null,
+    "paper_contribution": "Gives a complete positive answer (Corollary 1.7): since all induced subgraphs of a minor-excluded Cayley graph have bounded degree and exclude the same minor, Theorem 1.6 applies directly to yield asymptotic dimension at most 2.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2007.03582",
+    "paper_title": "Surfaces have (asymptotic) dimension 2",
+    "paper_authors": [
+      "Marthe Bonamy",
+      "Nicolas Bousquet",
+      "Louis Esperet",
+      "Carla Groenland",
+      "François Pirot",
+      "Alex Scott"
+    ],
+    "published": "2020-12-07",
+    "abs_url": "https://arxiv.org/abs/2007.03582",
+    "source": "pdf"
+  }
+]

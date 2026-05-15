@@ -1,0 +1,34 @@
+{
+  "review_id": "1909.11578__02",
+  "safe_id": "1909.11578",
+  "arxiv_id": "1909.11578",
+  "conjecture_title": "Polynomial improvement on symmetric intersecting family size bound",
+  "paper_title": "On symmetric intersecting families of vectors",
+  "published": "2020-07-31",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "The conjecture asks for constants $c, \\delta > 0$ (possibly depending on $k$) such that every symmetric intersecting $A \\subset [k]^n$ satisfies $\\log_k |A| \\leq n - cn^{\\delta}$, a polynomial improvement over the qualitative $o(k^n)$ bound of Theorem 1.1 for fixed $k \\geq 3$. Keller, Lifshitz, and Marcus (arXiv:2307.01356, 2023) prove the first quantitative upper bound in the transitive-symmetric vector-intersecting setting via sharp hypercontractivity, but their result applies only for $k$ growing with $n$ (specifically $2\\log n \\leq k \\leq \\sqrt{n}\\log n$), leaving the fixed-$k$ case open. No paper resolving the polynomial improvement for fixed $k$ was found in the indexed literature.",
+  "since_posted": [
+    {
+      "title": "Sharp Hypercontractivity for Global Functions",
+      "authors": "Keller, Lifshitz, Marcus",
+      "year": 2023,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2307.01356",
+      "arxiv_id": "2307.01356",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves the first quantitative upper bound on transitive-symmetric vector-intersecting families (Theorem 1.6): for $k \\in [2\\log n, \\sqrt{n}\\log n]$, any such family satisfies $|\\mathcal{A}|/k^n \\leq c_1 \\exp(-c_2 k/\\log n)$; this is a polynomial improvement in $n$ for $k$ polynomial in $n$, but does not address the fixed-$k$ regime targeted by the conjecture."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "symmetric intersecting families vectors polynomial improvement Eberhard Kahn Narayanan Spirkl 1909.11578",
+    "symmetric intersecting family \"log_k |A|\" polynomial bound k^n conjecture",
+    "symmetric intersecting vectors \"polynomial gain\" OR \"polynomial improvement\" log_k n^delta arxiv 2021 2022 2023 2024 2025"
+  ],
+  "notes": "The conjecture targets fixed $k \\geq 3$ with $n \\to \\infty$; arXiv:2307.01356 makes partial progress for $k$ growing with $n$ via sharp hypercontractivity (Theorem 1.6), but this regime does not overlap with fixed $k$. The qualitative $o(k^n)$ bound from the source paper may also follow from earlier work of Dinur, Friedgut, and Regev (as noted in the paper's revised version). Author names for 2307.01356 are from PDF metadata extraction and may need independent verification."
+}

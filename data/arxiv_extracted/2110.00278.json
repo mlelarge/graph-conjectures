@@ -1,0 +1,71 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Gyárfás-Sumner Conjecture (Conjecture 1.1)",
+    "statement_text": "For every forest $H$ there is a function $f$ such that $\\chi(G) \\leq f(\\omega(G))$ for every $H$-free graph $G$.",
+    "context_text": "The Gyárfás-Sumner conjecture is open in general but has been proved when $H$ is a path. The paper studies $P_5$-free graphs, where $\\chi$-boundedness is already established, and focuses on improving the quantitative dependence of $\\chi(G)$ on $\\omega(G)$.",
+    "attributed_to": "Gyárfás and Sumner",
+    "attributed_year": 1973,
+    "paper_contribution": "Proves the near-polynomial bound $\\chi(G) \\leq \\omega(G)^{\\log_2(\\omega(G))}$ for $P_5$-free graphs with $\\omega(G) \\geq 3$, significantly improving the previously best known exponential bound $(5/27)3^{\\omega(G)}$ within the Gyárfás-Sumner framework.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "The $\\chi$-boundedness case for paths (including $P_5$) is already proved; the paper's contribution is an improved quantitative bound, not a new case of the conjecture itself.",
+    "arxiv_id": "2110.00278",
+    "paper_title": "Polynomial bounds for chromatic number. IV. A near-polynomial bound for excluding the five-vertex path",
+    "paper_authors": [
+      "Alex Scott",
+      "Paul Seymour",
+      "Sophie Spirkl"
+    ],
+    "published": "2022-10-02",
+    "abs_url": "https://arxiv.org/abs/2110.00278",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.3",
+    "statement_text": "For every forest $H$, there exists $c > 0$ such that $\\chi(G) \\leq \\omega(G)^c$ for every $H$-free graph $G$.",
+    "context_text": "This polynomial $\\chi$-boundedness conjecture for forest-free graphs is described as beautiful and still open; it has been proved only for a smaller collection of forests and has not been settled for any tree containing $P_5$. Showing it for $H = P_5$ would imply the Erdős-Hajnal conjecture for $P_5$.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2110.00278",
+    "paper_title": "Polynomial bounds for chromatic number. IV. A near-polynomial bound for excluding the five-vertex path",
+    "paper_authors": [
+      "Alex Scott",
+      "Paul Seymour",
+      "Sophie Spirkl"
+    ],
+    "published": "2022-10-02",
+    "abs_url": "https://arxiv.org/abs/2110.00278",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Erdős-Hajnal Conjecture (Conjecture 1.6)",
+    "statement_text": "For every graph $H$ there exists $c > 0$ such that $\\alpha(G)\\omega(G) \\geq |G|^c$ for every $H$-free graph $G$.",
+    "context_text": "The Erdős-Hajnal conjecture is open in general despite great effort; the smallest graph $H$ for which it remains undecided is $P_5$. A polynomial $\\chi$-binding function for $P_5$-free graphs would imply the conjecture for $H = P_5$, and the paper's near-polynomial bound is explicitly framed as an attempt to approach this goal.",
+    "attributed_to": "Erdős and Hajnal",
+    "attributed_year": 1977,
+    "paper_contribution": "Proves the near-polynomial bound $\\chi(G) \\leq \\omega(G)^{\\log_2(\\omega(G))}$ for $P_5$-free graphs with $\\omega(G) \\geq 3$, making progress towards establishing the Erdős-Hajnal conjecture for $P_5$, currently the smallest open case.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2110.00278",
+    "paper_title": "Polynomial bounds for chromatic number. IV. A near-polynomial bound for excluding the five-vertex path",
+    "paper_authors": [
+      "Alex Scott",
+      "Paul Seymour",
+      "Sophie Spirkl"
+    ],
+    "published": "2022-10-02",
+    "abs_url": "https://arxiv.org/abs/2110.00278",
+    "source": "pdf"
+  }
+]

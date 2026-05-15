@@ -1,0 +1,68 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.3 (Li et al.)",
+    "statement_text": "Every $Z_3$-flow-critical graph $G$ satisfies $|E(G)| \\leq 3|V(G)|-5$. Moreover, if $|V(G)| \\geq 7$, then $|E(G)| \\leq 3|V(G)| - 8$.",
+    "context_text": "Li et al. observed that the planar upper bound $|E(G)| \\leq \\frac{5|V(G)|-8}{2}$ cannot extend to non-planar graphs: for $n \\geq 7$ the graph $K^+_{3,n-3}$ is $Z_3$-flow-critical with $3n-8$ edges. They conjectured this construction gives the worst case in general. The paper notes the version without the restriction $|V(G)| \\geq 7$ follows by inspection of small graphs.",
+    "attributed_to": "Li et al.",
+    "attributed_year": null,
+    "paper_contribution": "Proves Conjecture 1.3 for every $Z_3$-flow-critical graph $G$ whose Euler genus satisfies $g(G) \\leq (|V(G)|-8)/5$ via Theorem 1.5; shows the conjecture can be verified on any fixed surface by examining finitely many graphs; proves (Theorem 1.9) that Conjecture 1.8 (Jaeger et al.) implies the first part $|E(G)| \\leq 3|V(G)|-5$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2205.07498",
+    "paper_title": "On density of $Z_3$-flow-critical graphs",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Bojan Mohar"
+    ],
+    "published": "2022-12-04",
+    "abs_url": "https://arxiv.org/abs/2205.07498",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Problem 1.6",
+    "statement_text": "What is the smallest constant $\\alpha$ such that every $Z_3$-flow-critical graph $G$ satisfies $|E(G)| \\leq \\frac{5}{2}|V(G)| + \\alpha g(G) + O(1)$?",
+    "context_text": "Theorem 1.5 establishes $\\alpha \\leq 5/2$, while the example of $K^+_{3,n-3}$ (which has Euler genus $\\lceil\\frac{n-5}{2}\\rceil$) shows $\\alpha \\geq 1$, giving $1 \\leq \\alpha \\leq 5/2$. The authors remark that the dependence on genus in Theorem 1.5 is likely not optimal.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2205.07498",
+    "paper_title": "On density of $Z_3$-flow-critical graphs",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Bojan Mohar"
+    ],
+    "published": "2022-12-04",
+    "abs_url": "https://arxiv.org/abs/2205.07498",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.8 (Jaeger et al.)",
+    "statement_text": "Every 5-edge-connected graph is $Z_3$-connected.",
+    "context_text": "This is the group-connectivity analogue of Tutte's 3-flow conjecture; the 3-flow conjecture can be reduced to 5-edge-connected graphs and is implied by this stronger statement. Lovász et al. proved $Z_3$-connectedness for 6-edge-connected graphs.",
+    "attributed_to": "Jaeger et al.",
+    "attributed_year": 1992,
+    "paper_contribution": "Proves Conjecture 1.8 for planar and projective-planar graphs as a corollary of Theorem 1.7 (since every flow-critical $Z_3$-bordered graph of Euler genus at most one has average degree less than five); also establishes it for graphs that can be made planar by removing at most three edges, even when the flow on those edges is prescribed arbitrarily.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2205.07498",
+    "paper_title": "On density of $Z_3$-flow-critical graphs",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Bojan Mohar"
+    ],
+    "published": "2022-12-04",
+    "abs_url": "https://arxiv.org/abs/2205.07498",
+    "source": "pdf"
+  }
+]

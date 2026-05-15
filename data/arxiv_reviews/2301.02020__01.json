@@ -1,0 +1,23 @@
+{
+  "review_id": "2301.02020__01",
+  "safe_id": "2301.02020",
+  "arxiv_id": "2301.02020",
+  "conjecture_title": "Question 8",
+  "paper_title": "Extremal Independent Set Reconfiguration",
+  "published": "2023-01-05",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The source paper establishes D(n,k) = Ω(2^{n/5}) for the range 3n/10 ≤ k ≤ 2n/5, giving an exponential lower bound on max_k D(n,k), and leaves the precise asymptotics as Question 8. No follow-up paper resolving or improving this asymptotic question was found in searches covering arXiv and published literature through May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Bousquet Durain Pierron Thomassé \"independent set reconfiguration\" D(n,k) asymptotic 2023",
+    "arxiv 2301.02020 \"extremal independent set reconfiguration\" follow-up",
+    "independent set reconfiguration diameter exponential lower bound \"max_k\" OR \"D(n,k)\" 2024 2025",
+    "Bousquet \"independent set reconfiguration\" exponential diameter \"2^\" asymptotic 2024 2025 arxiv"
+  ],
+  "notes": "No follow-up work addressing the asymptotic behavior of max_k D(n,k) was found. The source paper itself is the state of the art: it proves the exponential lower bound D(n,k) = Ω(2^{n/5}) for k in [3n/10, 2n/5], which implies max_k D(n,k) grows at least exponentially in n, but the exact asymptotic (upper and matching lower bound) remains open."
+}

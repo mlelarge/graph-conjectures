@@ -1,0 +1,22 @@
+{
+  "review_id": "2103.15175__01",
+  "safe_id": "2103.15175",
+  "arxiv_id": "2103.15175",
+  "conjecture_title": "Determine the exponential constant in $R_\\ell(H,k)$",
+  "paper_title": "Multicolor list Ramsey numbers grow exponentially",
+  "published": "2022-01-23",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Fox, He, Luo, and Xu (arXiv:2103.15175) established $\\frac{1}{e}\\cdot 2^k \\leq R_\\ell(K_3,k) \\leq (4+o(1))^k$, proving exponential growth but leaving a gap between the constants $2/e$ and $4+o(1)$. The question of whether $\\lim_{k\\to\\infty} R_\\ell(H,k)^{1/k}$ even exists, let alone its value, remains open. A targeted web search (May 2026) found no follow-up paper that resolves the exponential constant for any fixed $H$.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "list Ramsey numbers exponential constant limit K3 multicolor Fox He Luo Xu 2103.15175",
+    "multicolor list Ramsey exponential growth rate triangle lim R_ell k 1/k",
+    "\"list Ramsey\" \"exponential constant\" OR \"lim_{k\" OR \"growth rate\" 2023 2024 2025 K_3 triangle"
+  ],
+  "notes": "No follow-up found. The closely related paper arXiv:2312.13965 (published in Research in the Mathematical Sciences 2024) determines the tower height of multicolor Ramsey numbers for 3-uniform hypergraphs in the classical (non-list) setting, but does not address list Ramsey numbers. The exact value of $\\lim_{k\\to\\infty} R_\\ell(K_3,k)^{1/k}$ — and even its existence — remains unknown."
+}

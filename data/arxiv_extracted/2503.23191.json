@@ -1,0 +1,52 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Stein's Conjecture (Conjecture 1.1)",
+    "statement_text": "Every oriented graph $G$ with $\\delta^{0}(G)>k/2$ contains every orientation of the $k$-edge path.",
+    "context_text": "Stein conjectured this as a generalization of Jackson's theorem on directed paths in oriented graphs with minimum semidegree at least $k/2$. The conjecture has been confirmed for directed paths (Jackson), for oriented graphs without oriented 4-cycles (Stein–Trujillo-Negrete), and partially for antidirected paths (Klimošová–Stein, Chen–Hou–Zhou, Skokan–Tyomkyn).",
+    "attributed_to": "Stein",
+    "attributed_year": 2021,
+    "paper_contribution": "Proves that every oriented graph $G$ satisfying an explicit semidegree lower bound (depending on block sizes $\\ell$ and $k-\\ell$) contains every two-block oriented path with $k$ arcs, and in particular that $\\delta^{0}(G)\\geq 3k/4$ suffices for all two-block paths, extending the evidence for Stein's conjecture.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2503.23191",
+    "paper_title": "Two-block paths in oriented graphs of large semidegree",
+    "paper_authors": [
+      "Irena Penev",
+      "S Taruni",
+      "Stéphan Thomassé",
+      "Ana Trujillo-Negrete",
+      "Mykhaylo Tyomkyn"
+    ],
+    "published": "2025-03-29",
+    "abs_url": "https://arxiv.org/abs/2503.23191",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Question 5.1",
+    "statement_text": "Is it true that every oriented graph $G$ with $\\delta^{0}(G)\\geq k/2$ contains every orientation of the $k$-edge path, save for the antidirected orientations?",
+    "context_text": "The tightness of Stein's conjecture for the antidirected orientation is witnessed by the $k/2$-blowup of the directed triangle. More generally, a regular tournament $T$ on $k+1$ vertices has $\\delta^{0}(T)=k/2$ and, by Havet–Thomassé, contains every oriented $k$-arc path except (with three small exceptions) the antidirected one, suggesting that antidirected paths may be the only obstruction at the threshold $\\delta^{0}(G)=k/2$.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2503.23191",
+    "paper_title": "Two-block paths in oriented graphs of large semidegree",
+    "paper_authors": [
+      "Irena Penev",
+      "S Taruni",
+      "Stéphan Thomassé",
+      "Ana Trujillo-Negrete",
+      "Mykhaylo Tyomkyn"
+    ],
+    "published": "2025-03-29",
+    "abs_url": "https://arxiv.org/abs/2503.23191",
+    "source": "html"
+  }
+]

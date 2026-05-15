@@ -1,0 +1,34 @@
+{
+  "review_id": "1909.05988__00",
+  "safe_id": "1909.05988",
+  "arxiv_id": "1909.05988",
+  "conjecture_title": "Exact Ramsey growth rate dependence on G for link hypergraphs",
+  "paper_title": "Independent sets in hypergraphs with a forbidden link",
+  "published": "2021-03-18",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Fox and He (arXiv:1909.05988) established that for a non-bipartite graph G on s vertices with odd girth g ≥ 3, Ω(1/g) ≤ log r(LG, K_n^{(3)})/(n log n) ≤ O(s), but the exact asymptotic constant as a function of G (or of s and g) remains open. A 2025 IMRN paper (arXiv:2404.02021) by Conlon, Fox, Gunby, He, Mubayi, Suk, and Verstraëte generalizes and strengthens the Fox–He lower-bound construction to a broader class of hypergraphs including links of odd cycles, but does not determine the exact constant as a function of G.",
+  "since_posted": [
+    {
+      "title": "On off-diagonal hypergraph Ramsey numbers",
+      "authors": "David Conlon, Jacob Fox, Benjamin Gunby, Xiaoyu He, Dhruv Mubayi, Andrew Suk, Jacques Verstraëte",
+      "year": 2025,
+      "venue": "International Mathematics Research Notices",
+      "url": "https://arxiv.org/abs/2404.02021",
+      "arxiv_id": "2404.02021",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Generalizes and simplifies the Fox–He lower-bound construction, establishing r(H, K_n^{(3)}) ≥ 2^{Ω_H(n log n)} for a broad class including links of odd cycles and tight cycles of length not divisible by three, but does not resolve the exact constant as a function of G, s, or g."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Fox He 'independent sets in hypergraphs' 'forbidden link' Ramsey link hypergraph odd girth 2021",
+    "arxiv 1909.05988 'link hypergraph' Ramsey K_n^{(3)} odd girth exact asymptotic",
+    "'link hypergraph' 'odd girth' Ramsey 'n log n' Fox He exact constant 2022 2023 2024 2025"
+  ],
+  "notes": "The exact asymptotic constant for log r(LG, K_n^{(3)})/(n log n) as a function of G (or of s and g) is open. No paper resolving the full conjecture was found. arXiv:2404.02021 (IMRN 2025) is the most closely related subsequent work, extending the Ω(n log n) lower bound to a broader class of link hypergraphs, but the gap between the Ω(1/g) lower bound and the O(s) upper bound on the constant is not closed."
+}

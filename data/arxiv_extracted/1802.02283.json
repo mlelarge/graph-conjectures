@@ -1,0 +1,25 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Huang's Conjecture",
+    "statement_text": "The 4-precoloring extension problem can be solved in polynomial time for the class of $P_6$-free graphs.",
+    "context_text": "Huang conjectured that 4-coloring (and 4-precoloring extension) is polynomial-time solvable for $P_6$-free graphs. This was the last unresolved case in the complexity classification of the 4-coloring problem for graphs with a connected forbidden induced subgraph, since all cases with $k\\geq 5$ or $t\\leq 5$ or $t\\geq 7$ were already settled. Resolving this conjecture also immediately implies that the 4-coloring problem for $P_6$-free graphs is solvable in polynomial time.",
+    "attributed_to": "Huang",
+    "attributed_year": null,
+    "paper_contribution": "This paper (the second in a two-paper series) gives a polynomial-time algorithm that converts any 4-precoloring of a $P_6$-free graph into a polynomial-size collection of excellent starred precolorings; combined with the companion paper's algorithm for excellent precolorings, the two papers together prove Huang's conjecture in full.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1802.02283",
+    "paper_title": "Four-coloring $P_6$-free graphs. II. Finding an excellent precoloring",
+    "paper_authors": [
+      "Maria Chudnovsky",
+      "Sophie Spirkl",
+      "Mingxian Zhong"
+    ],
+    "published": "2018-02-08",
+    "abs_url": "https://arxiv.org/abs/1802.02283",
+    "source": "pdf"
+  }
+]

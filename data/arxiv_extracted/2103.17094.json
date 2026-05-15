@@ -1,0 +1,26 @@
+[
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Question (polynomial weak coloring numbers for intersection graph classes)",
+    "statement_text": "Are the $k$-th weak coloring numbers polynomial in $k$ for the graph classes described in Lemma 1: intersection graphs of $t$-thin sets of (a) scaled and translated copies of the same centrally symmetric compact convex object, or comparable axis-aligned boxes; or (b) $b$-ball-like objects for some $b\\geq 1$?",
+    "context_text": "Joret and Wood conjectured that every graph class with polynomial strong coloring numbers also has polynomial weak coloring numbers; Grohe et al. disproved this via edge-subdivision constructions. The authors argue the conjecture might still hold for natural geometric classes such as those covered by Lemma 1 (thin intersection graphs of convex objects in $\\mathbb{R}^d$), and explicitly ask whether this is the case.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated as a prose question without a labelled theorem environment. Theorem 3 of the paper gives polynomial (in $k$) upper bounds for scaled/translated centrally symmetric objects and $b$-ball-like objects, giving a positive partial answer; Theorem 4(i) shows exponential lower bounds for touching comparable axis-aligned boxes in $\\mathbb{R}^3$, giving a negative answer for that subclass. PDF source — surrounding math may be garbled in the extracted text.",
+    "arxiv_id": "2103.17094",
+    "paper_title": "Weak Coloring Numbers of Intersection Graphs",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Jakub Pekárek",
+      "Torsten Ueckerdt",
+      "Yelena Yuditsky"
+    ],
+    "published": "2021-04-07",
+    "abs_url": "https://arxiv.org/abs/2103.17094",
+    "source": "pdf"
+  }
+]

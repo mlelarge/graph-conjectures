@@ -1,0 +1,50 @@
+[
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 3",
+    "statement_text": "For sufficiently large $k$, if $k$ is even, then $m(P_k) = k!/2$ and if $k$ is odd, then $m(P_k) = \\frac{k-1}{4}(k-1)!$.",
+    "context_text": "The authors identify specific extremal colorings $\\chi(a_0, b_0)$ of $K_{r(P_k)}$ that achieve exact counts of monochromatic $P_k$, demonstrating tightness of Theorem 2 up to the constant $c$. These colorings are believed to realize the threshold Ramsey multiplicity for all sufficiently large $k$.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "PDF source — fraction $\\frac{k-1}{4}$ reconstructed from line-break artifact in extraction.",
+    "arxiv_id": "2108.00991",
+    "paper_title": "Threshold Ramsey multiplicity for paths and even cycles",
+    "paper_authors": [
+      "David Conlon",
+      "Jacob Fox",
+      "Benny Sudakov",
+      "Fan Wei"
+    ],
+    "published": "2022-08-07",
+    "abs_url": "https://arxiv.org/abs/2108.00991",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 4",
+    "statement_text": "For sufficiently large $k$, if $k$ is even, then $m(C_k) = \\frac{k-3}{2}(k-2)!$ and if $k$ is odd, then $m(C_k) = (k-1)!/2$.",
+    "context_text": "For even $k \\geq 6$, a modification of the extremal coloring $\\chi(a_0+1, b_0)$ obtained by recoloring one edge in the blue clique of order $k$ to red yields exactly $\\frac{k-3}{2}(k-2)!$ monochromatic $C_k$; for odd $k$, the coloring $\\chi(k, k-1)$ yields $(k-1)!/2$ monochromatic $C_k$. The authors conjecture these are optimal for large $k$.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "PDF source — fraction $\\frac{k-3}{2}$ reconstructed from line-break artifact in extraction.",
+    "arxiv_id": "2108.00991",
+    "paper_title": "Threshold Ramsey multiplicity for paths and even cycles",
+    "paper_authors": [
+      "David Conlon",
+      "Jacob Fox",
+      "Benny Sudakov",
+      "Fan Wei"
+    ],
+    "published": "2022-08-07",
+    "abs_url": "https://arxiv.org/abs/2108.00991",
+    "source": "pdf"
+  }
+]

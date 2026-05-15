@@ -1,0 +1,27 @@
+{
+  "review_id": "2404.02021__04",
+  "safe_id": "2404.02021",
+  "arxiv_id": "2404.02021",
+  "conjecture_title": "Informal conjecture on tripartite off-diagonal Ramsey numbers",
+  "paper_title": "On off-diagonal hypergraph Ramsey numbers",
+  "published": "2024-04-02",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "No follow-up paper resolving the conjecture that $r(H,K_{n,n,n}^{(3)})\\leq 2^{O_H(n\\log n)}$ for all $H$ was found. A closely related successor paper (arXiv:2411.13812, same author group, November 2024) addresses the polynomial-vs-exponential threshold for $r(H,K_n^{(3)})$ — the non-tripartite complete 3-graph — but does not treat the tripartite $K_{n,n,n}^{(3)}$ version. The known upper bound of $2^{O_H(n^{2-\\epsilon})}$ and the $2^{\\Theta(n\\log n)}$ threshold in constructions for $K_n^{(3)}$ remain the closest context.",
+  "since_posted": [],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2312.15572",
+      "verified": false,
+      "note": "Paper is 'Induced subgraph density. VI. Bounded VC-dimension' by Nguyen, Scott, Seymour — it proves a conjecture of Fox, Pach, and Suk about cliques/stable sets in graphs of bounded VC-dimension. It has no connection to hypergraph Ramsey numbers or $r(H,K_{n,n,n}^{(3)})$; the fuzz match is a false positive."
+    }
+  ],
+  "search_queries": [
+    "hypergraph Ramsey numbers tripartite K_nnn r(H, K_nnn) 2^{n log n} bound 2024 2025",
+    "off-diagonal hypergraph Ramsey Conlon Fox Gunby He Mubayi Suk Verstraete 2404.02021 follow-up"
+  ],
+  "notes": "The conjecture concerns $r(H,K_{n,n,n}^{(3)})$, the off-diagonal Ramsey number against the complete tripartite 3-uniform hypergraph. The companion paper arXiv:2411.13812 (Conlon et al., November 2024) characterises when $r(H,K_n^{(3)})$ is polynomial, but $K_n^{(3)}$ and $K_{n,n,n}^{(3)}$ are distinct objects and that paper does not address the tripartite setting. A 2026 paper (arXiv:2603.16069, He–Nie–Post–Verstraete) studies quasipolynomial growth for a different Ramsey function. No paper resolving the $2^{O_H(n\\log n)}$ upper bound for the tripartite case was found after an exhaustive 5-call search."
+}

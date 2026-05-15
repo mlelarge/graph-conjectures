@@ -1,0 +1,34 @@
+{
+  "review_id": "2201.00328__00",
+  "safe_id": "2201.00328",
+  "arxiv_id": "2201.00328",
+  "conjecture_title": "Question (Section 3, implicit representation for speed $2^{O(n\\log n)}$)",
+  "paper_title": "Implicit representation of sparse hereditary families",
+  "published": "2022-01-02",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "The question of whether every hereditary family with speed $f(n) \\leq 2^{O(n\\log n)}$ admits an implicit representation of size $O(n^{1/2}\\log n)$ remains open as of May 2026. The matching lower bound $\\Omega(n^{1/2-\\delta})$ for every $\\delta>0$ (Hatami–Hatami, 2022, cited in the source paper) shows that the exponent $1/2$ cannot be improved. Partial progress within the same speed regime was made in 2026 by Cardinal and Sharir, who proved $O(n^{1-2/(d+1)+\\varepsilon})$-bit labels for $d$-dimensional semialgebraic families (which have speed $2^{\\Theta(n\\log n)}$), beating the $n^{1/2}$ threshold for $d=1$, but the question for all hereditary families of this speed remains unresolved.",
+  "since_posted": [
+    {
+      "title": "Implicit representations via the polynomial method",
+      "authors": "Jean Cardinal, Micha Sharir",
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2602.10922",
+      "arxiv_id": "2602.10922",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves O(n^{1-2/(d+1)+ε})-bit adjacency labeling schemes for d-dimensional semialgebraic hereditary families, which lie in the speed-2^{Θ(n log n)} regime; for d=1 this gives sub-n^{1/2} labels, providing partial evidence for the upper-bound question, but does not resolve it for all hereditary families of this speed."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "implicit representation hereditary families speed n log n label size arXiv 2201.00328",
+    "Hatami implicit representation hereditary graph families n^{1/2} label size upper bound",
+    "hereditary families speed implicit representation label n^{1/2} adjacency labeling 2022 2023 2024 2025"
+  ],
+  "notes": "No direct resolution found. Hatami–Hatami (arXiv:2111.13198, 2022) established the lower bound Ω(n^{1/2−δ}) for every δ>0, which was already known at the time Alon posed the question. Cardinal and Sharir (arXiv:2602.10922, 2026) give better-than-n^{1/2} bounds for semialgebraic families specifically (a subfamily of speed-2^{O(n log n)} hereditary families) but the general upper-bound question is unresolved. A separate line of work by Bonnet–Duron–Sylvester–Zamaraev (arXiv:2409.04821, ITCS 2025) proves O(log³n) for structurally defined 'small classes', which may not coincide with the full speed-2^{O(n log n)} regime."
+}

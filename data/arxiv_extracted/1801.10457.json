@@ -1,0 +1,24 @@
+[
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Open Problem: Polynomial-time 4-colorability on fixed surfaces",
+    "statement_text": "Is there a polynomial time algorithm for testing 4-colorability of graphs in a fixed surface $\\Sigma$ other than the sphere?",
+    "context_text": "The paper notes that since 2-colorability is polynomial-time solvable and 3-colorability of planar graphs is NP-complete, 4-colorability is the only remaining non-trivial case for graphs on surfaces. A characterization by finitely many obstructions (analogous to $k\\geq 5$) does not exist for $k=4$, as shown by Fisk's construction, making algorithmic resolution unclear.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated in running prose as a 'long-standing open problem' without attribution to specific authors or a labelled theorem environment.",
+    "arxiv_id": "1801.10457",
+    "paper_title": "Irreducible 4-critical triangle-free toroidal graphs",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Jakub Pekárek"
+    ],
+    "published": "2018-01-31",
+    "abs_url": "https://arxiv.org/abs/1801.10457",
+    "source": "pdf"
+  }
+]

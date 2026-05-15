@@ -1,0 +1,46 @@
+[
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Demaine et al. Open Question on Token Sliding for Interval and Chordal Graphs",
+    "statement_text": "Can determining whether two independent sets are in the same connected component of $TS_k(G)$ be decided in polynomial time for interval graphs, and more generally for chordal graphs?",
+    "context_text": "Demaine et al. [8] asked whether the Token Sliding reconfiguration problem is polynomial time solvable on interval graphs and more generally in chordal graphs. Yamada and Uehara [21] had previously shown that a polynomial time transformation can be found in proper interval graphs.",
+    "attributed_to": "Demaine et al.",
+    "attributed_year": null,
+    "paper_contribution": "Proves that the connectivity of $TS_k(G)$ can be decided in polynomial time when $G$ is an interval graph (Theorems 2 and 3), fully answering the interval graph case; also shows the problem is co-NP-hard and co-W[2]-hard parameterized by the size of the independent set for split graphs, a subclass of chordal graphs (Theorem 1).",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1605.00442",
+    "paper_title": "Token Sliding on Chordal Graphs",
+    "paper_authors": [
+      "Marthe Bonamy",
+      "Nicolas Bousquet"
+    ],
+    "published": "2016-05-02",
+    "abs_url": "https://arxiv.org/abs/1605.00442",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Question 1",
+    "statement_text": "For any integers $k$, $D$, for any chordal graph $G$ of clique-tree degree at most $D$, can the connectivity of $TS_k(G)$ be decided in polynomial time?",
+    "context_text": "Motivated by the contrast between the polynomial time result for interval graphs (clique-tree degree 1) and the co-NP-hardness for split graphs, the authors introduce the clique-tree degree of a chordal graph $G$ as the smallest maximum degree of a clique-tree of $G$, and ask whether bounding this parameter restores polynomial tractability.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1605.00442",
+    "paper_title": "Token Sliding on Chordal Graphs",
+    "paper_authors": [
+      "Marthe Bonamy",
+      "Nicolas Bousquet"
+    ],
+    "published": "2016-05-02",
+    "abs_url": "https://arxiv.org/abs/1605.00442",
+    "source": "pdf"
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 2 (Conjecture 6.1 [1])",
+    "statement_text": "For any graph $G$, the collection $\\{\\mathcal{C}_{k}(G)\\}_{k\\in\\mathbb{N}}$ uniquely determines $G$.",
+    "context_text": "Asgarli, Krehbiel, Levinson and Russell conjectured that the collection of all $k$-colouring graphs of $G$, or equivalently the collection of all generalised chromatic polynomials $\\{\\pi^{(H)}_{G}(k)\\}_{H\\in\\mathcal{G}}$, forms a complete graph invariant. This is the weaker of their two conjectures on the topic.",
+    "attributed_to": "Asgarli, Krehbiel, Levinson and Russell",
+    "attributed_year": 2024,
+    "paper_contribution": "Confirmed by proving Theorem 4: for any graph $G$ on $n$ vertices and any $k > 5n^2$, the single colouring graph $\\mathcal{C}_k(G)$ already uniquely determines $G$ up to isomorphism.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2402.04237",
+    "paper_title": "A note on graphs of $k$-colourings",
+    "paper_authors": [
+      "Emma Hogan",
+      "Alex Scott",
+      "Youri Tamitegama",
+      "Jane Tan"
+    ],
+    "published": "2024-02-29",
+    "abs_url": "https://arxiv.org/abs/2402.04237",
+    "source": "html"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 3 (Conjecture 6.2 [1])",
+    "statement_text": "There exists some function $f:\\mathcal{G}\\to\\mathbb{N}$ such that for any graph $G$, the collection $\\{\\mathcal{C}_{k}(G)\\}^{f(G)}_{k=1}$ uniquely determines $G$.",
+    "context_text": "This is the stronger companion conjecture to Conjecture 6.1 of Asgarli et al., asserting that finitely many colouring graphs (depending on $G$) suffice to reconstruct $G$, rather than the full infinite collection.",
+    "attributed_to": "Asgarli, Krehbiel, Levinson and Russell",
+    "attributed_year": 2024,
+    "paper_contribution": "Confirmed as a consequence of Theorem 4: taking $f(G) = 5n^2 + 1$ where $n = |V(G)|$, a single colouring graph $\\mathcal{C}_k(G)$ with $k > 5n^2$ suffices to uniquely determine $G$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2402.04237",
+    "paper_title": "A note on graphs of $k$-colourings",
+    "paper_authors": [
+      "Emma Hogan",
+      "Alex Scott",
+      "Youri Tamitegama",
+      "Jane Tan"
+    ],
+    "published": "2024-02-29",
+    "abs_url": "https://arxiv.org/abs/2402.04237",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Problem 11",
+    "statement_text": "For which graphs $H$ does there exist an $H^{\\prime}$ such that $\\pi_{G}^{(H^{\\prime})}$ determines $\\pi_{G}^{(H)}$ for every graph $G$?",
+    "context_text": "Asgarli et al. conjectured (their Conjecture 5.2) that $\\pi_{G}^{(K_{2})}$ determines the chromatic polynomial $\\pi_{G}^{(K_{1})}$, i.e., that equal edge-count polynomials of colouring graphs imply equal chromatic polynomials. This broader problem asks for which pairs $(H, H')$ such a determination holds, motivated by Remark 10 in the paper.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2402.04237",
+    "paper_title": "A note on graphs of $k$-colourings",
+    "paper_authors": [
+      "Emma Hogan",
+      "Alex Scott",
+      "Youri Tamitegama",
+      "Jane Tan"
+    ],
+    "published": "2024-02-29",
+    "abs_url": "https://arxiv.org/abs/2402.04237",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Problem 12",
+    "statement_text": "Is there a finite set of graphs $H_{1},\\dotsc,H_{t}$ such that, for almost every $G\\in\\mathcal{G}(n,\\frac{1}{2})$, if $\\pi_{G^{\\prime}}^{(H_{i})}=\\pi_{G}^{(H_{i})}$ for all $i$ then $G^{\\prime}\\cong G$?",
+    "context_text": "Theorem 5 of the paper shows that no finite family of generalised chromatic polynomials can distinguish all graphs; this problem asks whether the situation is better for typical (Erdős–Rényi random) graphs. It is posed as a weakening of the Bollobás–Pebody–Riordan conjecture that almost every graph is determined by its chromatic polynomial.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2402.04237",
+    "paper_title": "A note on graphs of $k$-colourings",
+    "paper_authors": [
+      "Emma Hogan",
+      "Alex Scott",
+      "Youri Tamitegama",
+      "Jane Tan"
+    ],
+    "published": "2024-02-29",
+    "abs_url": "https://arxiv.org/abs/2402.04237",
+    "source": "html"
+  }
+]

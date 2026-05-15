@@ -1,0 +1,48 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "LCGD Conjecture",
+    "statement_text": "For every graph $G$, the genus polynomial $\\Gamma_G(x) = \\sum_{k \\geq 0} g_k(G)x^k$ is log-concave.",
+    "context_text": "The Log-Concavity Genus Distribution (LCGD) Conjecture was proposed by Gross, Robbins, and Tucker in 1989. It asserts that the sequence of coefficients $g_0(G), g_1(G), \\ldots$ satisfies $(g_k(G))^2 \\geq g_{k-1}(G)g_{k+1}(G)$ for every $k$. The conjecture has been confirmed for various graph classes but remains widely open for general graphs.",
+    "attributed_to": "Gross, Robbins, and Tucker",
+    "attributed_year": 1989,
+    "paper_contribution": "Identifies six cubic graphs (including generalized Petersen graphs $G(8,2)$, $G(10,2)$, $G(12,2)$, and three others) whose genus polynomials are log-concave overall yet possess quadratic real factors that are not log-concave, clarifying the boundary between real-rootedness and log-concavity in relation to this conjecture.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2212.09971",
+    "paper_title": "Genus Polynomials of Cubic Graphs with Non-Real Roots",
+    "paper_authors": [
+      "MacKenzie Carr",
+      "Varpreet Dhaliwal",
+      "Bojan Mohar"
+    ],
+    "published": "2022-12-20",
+    "abs_url": "https://arxiv.org/abs/2212.09971",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1 (Stahl)",
+    "statement_text": "For every graph $G$, the genus polynomial $\\Gamma_G(x)$ has only real roots.",
+    "context_text": "Stahl conjectured in 1997 that genus polynomials of all graphs are real-rooted, a property that would have implied the LCGD Conjecture via log-concavity preservation under multiplication. Chen and Liu disproved this conjecture in 2010 by exhibiting two graphs with non-real roots; the present paper significantly extends the set of known counterexamples.",
+    "attributed_to": "Stahl",
+    "attributed_year": 1997,
+    "paper_contribution": "By computing genus polynomials for all cubic graphs with up to 16 vertices, identifies 226 cubic graphs whose genus polynomials have at least one non-real root, and exhibits six specific graphs whose complex roots satisfy $|\\Re(z)| < |\\Im(z)|/\\sqrt{3}$, lying outside the cone guaranteed to yield log-concave quadratic factors.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2212.09971",
+    "paper_title": "Genus Polynomials of Cubic Graphs with Non-Real Roots",
+    "paper_authors": [
+      "MacKenzie Carr",
+      "Varpreet Dhaliwal",
+      "Bojan Mohar"
+    ],
+    "published": "2022-12-20",
+    "abs_url": "https://arxiv.org/abs/2212.09971",
+    "source": "pdf"
+  }
+]

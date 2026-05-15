@@ -1,0 +1,35 @@
+{
+  "review_id": "2204.01938__00",
+  "safe_id": "2204.01938",
+  "arxiv_id": "2204.01938",
+  "conjecture_title": "Conjecture on r-free digraphs with r > 2n/3",
+  "paper_title": "Extremal results on feedback arc sets in digraphs",
+  "published": "2022-04-19",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "solved",
+  "confidence": "medium",
+  "summary": "A January 2026 MIT PRIMES research paper by Kai Lum (mentored by Nitya Mani, one of the conjecture's authors) proves that β(G) ≤ 1 for all r-free digraphs on n vertices with r > ⌊2n/3⌋, directly resolving the conjecture. The source paper (arXiv:2204.01938) was subsequently published in Random Structures & Algorithms (2024). No peer-reviewed journal or arXiv paper proving this conjecture was found; the only identified proof is in an unreviewed PRIMES preprint whose PDF could not be fully read, hence medium confidence.",
+  "since_posted": [
+    {
+      "title": "Extremal Structural Results for Feedback Arc Sets and Graph Inversions",
+      "authors": "Kai Lum",
+      "year": 2026,
+      "venue": "MIT PRIMES Research Paper (preprint, not peer-reviewed)",
+      "url": "https://math.mit.edu/research/highschool/primes/materials/2025/Lum.pdf",
+      "arxiv_id": null,
+      "doi": null,
+      "kind": "proof",
+      "claim": "Proves that β(G) ≤ 1 for all r-free digraphs on n vertices with r > ⌊2n/3⌋, as well as β(G) ≤ 2 for r > n/2 under an additional forbidden-structure condition; the work is mentored by Nitya Mani, a co-author of the original conjecture."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "arxiv 2204.01938 feedback arc set r-free digraphs acyclic Fox Himwich Mani",
+    "\"r-free digraph\" \"feedback arc set\" acyclic conjecture digraph",
+    "Lum \"feedback arc set\" \"graph inversions\" MIT PRIMES 2025 extremal structural digraph conjecture",
+    "\"r-free digraph\" \"beta\" acyclic \"at most one edge\" 2024 2025"
+  ],
+  "notes": "The Lum PRIMES paper (posted January 2026, PDF available at the MIT PRIMES site) was indexed by search engines with text indicating it proves β(G) ≤ 1 when r > ⌊2n/3⌋; the mentor Nitya Mani is a co-author of the source paper, lending credibility to this claim. However, the PDF was unreadable via WebFetch (binary), and the paper is not peer-reviewed, so confidence is medium rather than high. The source paper itself appeared in Random Structures & Algorithms in 2024 (DOI: 10.1002/rsa.21179, behind paywall). The arXiv paper 2511.22562 (Bang-Jensen et al., 2025) on making oriented graphs acyclic via inversions does not address this conjecture."
+}

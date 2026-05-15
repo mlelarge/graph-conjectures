@@ -1,0 +1,50 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Kohayakawa–Kreuter Conjecture (Conjecture 1.3)",
+    "statement_text": "Let $H_{1},\\dots,H_{r}$ be graphs, and suppose that $m_{2}(H_{1})\\geq\\dotsb\\geq m_{2}(H_{r})$ and $m_{2}(H_{2})>1$. There exist constants $C>c>0$ such that $G_{n,p}$ is a.a.s. Ramsey for $(H_{1},\\dots,H_{r})$ if $p\\geq Cn^{-1/m_{2}(H_{1},H_{2})}$, and a.a.s. not Ramsey if $p\\leq cn^{-1/m_{2}(H_{1},H_{2})}$, where $$m_{2}(H_{1},H_{2})\\coloneqq\\max\\left\\{\\frac{{\\mathsf{e}}(J)}{{\\mathsf{v}}(J)-2+1/m_{2}(H_{2})}:J\\subseteq H_{1},{\\mathsf{v}}(J)\\geq 2\\right\\}.$$",
+    "context_text": "Kohayakawa and Kreuter formulated this conjecture nearly thirty years ago for the threshold of the asymmetric Ramsey property of $G_{n,p}$ for an arbitrary $r$-tuple of graphs. The assumption $m_{2}(H_{2})>1$ (i.e., $H_2$ is not a forest) was added by Kohayakawa, Schacht, and Spöhel to rule out sporadic counterexamples. Earlier work of Mousset–Nenadov–Samotij, Bowtell–Hancock–Hyde, and Kuperwasser–Samotij–Wigderson had reduced the probabilistic problem to a deterministic graph decomposition conjecture.",
+    "attributed_to": "Kohayakawa and Kreuter",
+    "attributed_year": 1997,
+    "paper_contribution": "Resolves the deterministic graph decomposition problem to which the conjecture had been reduced, thereby proving the Kohayakawa–Kreuter conjecture in full generality for all $r$-tuples of graphs.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Statement text partially reconstructed from context; the input truncates after 'There exist constants $C>c>0$ such that'. The mixed 2-density formula $m_2(H_1,H_2)$ is taken verbatim from the paper's display math.",
+    "arxiv_id": "2402.03045",
+    "paper_title": "Resolution of the Kohayakawa-Kreuter conjecture",
+    "paper_authors": [
+      "Micha Christoph",
+      "Anders Martinsson",
+      "Raphael Steiner",
+      "Yuval Wigderson"
+    ],
+    "published": "2024-08-20",
+    "abs_url": "https://arxiv.org/abs/2402.03045",
+    "source": "html"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 7.1 (Kuperwasser–Samotij–Wigderson)",
+    "statement_text": "Let $m>0$ be a real number. Every graph $G$ with $m(G)\\leq m$ contains a forest $F\\subseteq G$ such that $m_{2}(G-F)\\leq m$.",
+    "context_text": "This conjecture of Kuperwasser, Samotij, and Wigderson strengthens the conclusion of Theorem 1.6 by requiring $F$ to be a forest rather than a pseudoforest, and is in fact a common strengthening of both Theorem 1.6 and Theorem 1.7. If true, it would imply a natural generalization of the Kohayakawa–Kreuter conjecture to the setting where one wishes to avoid a finite family of graphs $\\{H_i^{(1)},\\dots,H_i^{(t)}\\}$ in each color class of $G_{n,p}$.",
+    "attributed_to": "Kuperwasser, Samotij, and Wigderson",
+    "attributed_year": null,
+    "paper_contribution": "The paper proves related graph decomposition results (Theorems 1.6 and 1.7) that are implied by this conjecture, but does not resolve Conjecture 7.1 itself; it is highlighted as a natural open direction.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Original source is Kuperwasser–Samotij–Wigderson [19, Conjecture 1.5], arXiv:2307.16611. Attributed year not determinable from the bibliography entry (listed as preprint).",
+    "arxiv_id": "2402.03045",
+    "paper_title": "Resolution of the Kohayakawa-Kreuter conjecture",
+    "paper_authors": [
+      "Micha Christoph",
+      "Anders Martinsson",
+      "Raphael Steiner",
+      "Yuval Wigderson"
+    ],
+    "published": "2024-08-20",
+    "abs_url": "https://arxiv.org/abs/2402.03045",
+    "source": "html"
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "review_id": "2211.01032__02",
+  "safe_id": "2211.01032",
+  "arxiv_id": "2211.01032",
+  "conjecture_title": "Conjecture 9.3",
+  "paper_title": "Random Embeddings of Graphs: The Expected Number of Faces in Most Graphs is Logarithmic",
+  "published": "2025-04-09",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 9.3 from arXiv:2211.01032 states that every graph on n vertices with minimum degree Omega(n) satisfies E[F] = Theta(log n) in a random embedding. The source paper confirms this for the complete graph K_n via Theorem 1.8, establishing (1/2)ln(n) - 2 < E[F(K_n)] <= 3.65 ln(n) + o(1). The general case for all dense graphs remains open; a thorough search of the literature found no follow-up paper resolving or substantially advancing the conjecture beyond what is proved in the source paper itself.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "random embeddings graphs expected number faces dense graph minimum degree logarithmic arXiv 2211.01032",
+    "random graph embedding expected faces E[F] Theta log n minimum degree Omega n Campion Loth Mohar",
+    "random embedding dense graph minimum degree logarithmic faces 2025 2026 arXiv Campion Loth Mohar Masarik Samal",
+    "\"random embedding\" \"expected number of faces\" \"minimum degree\" dense graph 2025 2026"
+  ],
+  "notes": "Theorem 1.8 of the source paper itself confirms the conjecture for K_n. No follow-up paper extending this to general graphs with minimum degree Omega(n) was found after four web searches. The conjecture was stated in the final published version (April 2025), so its open status with high confidence is expected."
+}

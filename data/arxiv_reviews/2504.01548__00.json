@@ -1,0 +1,23 @@
+{
+  "review_id": "2504.01548__00",
+  "safe_id": "2504.01548",
+  "arxiv_id": "2504.01548",
+  "conjecture_title": "Problem 1.4",
+  "paper_title": "Defective coloring of blowups",
+  "published": "2025-04-02",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Problem 1.4 asks for the smallest constant $c$ such that $\\chi(G) \\leq c \\cdot \\chi^d(G \\boxtimes K_{d+1})$ holds for all graphs $G$ and $d \\geq 0$. The paper itself establishes the bounds $30/29 \\leq c \\leq 2$: the lower bound comes from an explicit counterexample to the original Guo--Kang--Zwaneveld equality conjecture, while the upper bound $c \\leq 2$ is proved as Theorem 1.3. No subsequent work narrowing this gap was found in a thorough web search conducted in May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Norin Steiner \"defective coloring\" blowups arxiv 2504.01548 chromatic number strong product",
+    "defective coloring blowups chromatic number strong product K_{d+1} 2025 2026 graph theory",
+    "chromatic number defective coloring strong product blowup constant factor \"30/29\" OR \"30 29\" 2025 2026 arxiv",
+    "Norin Steiner \"defective coloring\" \"blowup\" 2025 2026 follow-up arxiv graph chromatic"
+  ],
+  "notes": "The paper was published in The Electronic Journal of Combinatorics 33(1), P1.17 (January 2026). Problem 1.4 is equivalent to determining the supremum of $\\chi(G)/\\chi^d(G \\boxtimes K_{d+1})$ over all graphs $G$ and $d \\geq 0$. The current bounds give $30/29 \\leq c \\leq 2$; no follow-up work narrowing this gap was found."
+}

@@ -1,0 +1,23 @@
+{
+  "review_id": "1903.11287__00",
+  "safe_id": "1903.11287",
+  "arxiv_id": "1903.11287",
+  "conjecture_title": "Open Question on Convex Unit Distance Realization of Graphs $G_k$",
+  "paper_title": "Convexly independent subsets of Minkowski sums of convex polygons",
+  "published": "2021-06-02",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "No follow-up work addressing the question of whether the bipartite graphs $G_k$ (with $2^{k+1}$ vertices and $(k+2)2^{k-1}$ edges) can be realized as convex unit distance graphs was found in the literature. Skomra's subsequent research has shifted entirely to stochastic games and tropical geometry, and no paper in the Erdős–Moser unit-distance literature appears to resolve or substantially progress this specific question. The open question remains open as of May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Skomra Thomassé \"convex unit distance\" graphs Erdős-Moser Minkowski sums convex polygons",
+    "Aggarwal \"forbidden matrices\" \"convex unit distance\" \"unit distances\" convex polygon 2022 2023 2024",
+    "arxiv 1903.11287 \"Skomra\" \"Thomassé\" cited \"convex unit distance\" bipartite graphs G_k forbidden",
+    "\"Erdős-Moser\" \"unit distances\" \"convex polygon\" \"forbidden\" OR \"bipartite\" 2022 2023 2024 2025 arXiv"
+  ],
+  "notes": "No follow-up found after 5 web calls (1 WebFetch on source paper abstract, 1 WebFetch on Skomra's homepage confirming no related follow-up, 3 WebSearches on related terms). The question is niche — connecting the specific bipartite graph family G_k from the Minkowski sum construction to convex unit distance realizability — and sits at an intersection of combinatorial geometry and forbidden-pattern theory (Aggarwal's forbidden matrices). Skomra's homepage lists no follow-up work on this topic; his research has moved to stochastic games and tropical geometry."
+}

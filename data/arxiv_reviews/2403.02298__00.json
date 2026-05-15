@@ -1,0 +1,22 @@
+{
+  "review_id": "2403.02298__00",
+  "safe_id": "2403.02298",
+  "arxiv_id": "2403.02298",
+  "conjecture_title": "Conjecture 3",
+  "paper_title": "Minimum acyclic number and maximum dichromatic number of oriented triangle-free graphs of a given order",
+  "published": "2024-03-04",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 3 of arXiv:2403.02298 asserts that the minimum acyclic number over all oriented triangle-free graphs of order n satisfies $\\vec{a}(n)=\\Theta(\\sqrt{n\\log n})$. The source paper establishes matching lower bound $(\\frac{1}{\\sqrt{2}}-\\varepsilon)\\sqrt{n\\log n}$ and upper bound $\\frac{107}{8}\\sqrt{n}\\log n$, leaving a logarithmic gap; the authors conjecture the upper bound can be tightened to $C\\sqrt{n\\log n}$ via the triangle-free process. No subsequent paper resolving or significantly advancing this conjecture was found in a broad web search conducted through May 2026; the paper appeared in the Electronic Journal of Combinatorics (2025) without amendment to the conjecture's status.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "acyclic number oriented triangle-free graphs Aboulker Havet Pirot Schabanel 2403.02298",
+    "minimum acyclic number dichromatic number oriented triangle-free sqrt(n log n) conjecture",
+    "\"acyclic number\" \"triangle-free\" oriented graph \"triangle-free process\" sqrt \"n log n\" 2024 2025 2026"
+  ],
+  "notes": "No follow-up resolving the conjecture was found. The paper 2511.20246 ('Acyclic dichromatic number of oriented graphs', Nov 2025) introduces a related but distinct parameter and does not address this conjecture. The paper 2603.02947 ('Acyclic sets and colorings in digraphs under restrictions on degrees and cycle lengths', Mar 2026) treats random regular digraphs and does not treat the triangle-free oriented setting. The source paper was published in Electronic Journal of Combinatorics v32i4p27 (2025)."
+}

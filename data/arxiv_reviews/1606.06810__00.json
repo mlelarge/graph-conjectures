@@ -1,0 +1,22 @@
+{
+  "review_id": "1606.06810__00",
+  "safe_id": "1606.06810",
+  "arxiv_id": "1606.06810",
+  "conjecture_title": "Conjecture on maximum cliques with no $K_t$-immersion",
+  "paper_title": "On the number of cliques in graphs with a forbidden subdivision or immersion",
+  "published": "2018-08-07",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Fox and Wei construct a graph achieving $2^{t-2}(n-t+3)$ cliques with no $K_t$-immersion (take $K_{t-2}$ and attach $n-t+2$ universal vertices over it), and conjecture this is optimal. Their paper proves an upper bound of $2^{t+\\log^2 t}n$, which falls short of the conjectured exact value by a factor of $2^{O(\\log^2 t)}$. No follow-up paper proving or disproving the sharp bound was found in an exhaustive web search as of May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "maximum cliques Kt-immersion forbidden graph Fox Wei 1606.06810",
+    "number of cliques forbidden immersion graph 2^(t-2)(n-t+3) conjecture",
+    "cliques Kt-immersion \"2^(t-2)\" OR \"2^{t-2}\" maximum graph conjecture solved"
+  ],
+  "notes": "The Fox-Wei paper proves an upper bound of $2^{t+\\log^2 t}n$ cliques for $K_t$-immersion-free graphs (Theorem 1.3), which is sharp up to a $2^{O(\\log^2 t)}$ factor. The conjecture asks for the exact extremal value $2^{t-2}(n-t+3)$, a linear function in $n$ with leading coefficient $2^{t-2}$. No published or arXiv paper resolving this sharp form was found in five web searches."
+}

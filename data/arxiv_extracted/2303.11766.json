@@ -1,0 +1,48 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Gyárfás-Sumner Conjecture (Conjecture 1.1)",
+    "statement_text": "For every forest $H$, and every $k$, every $H$-free graph that does not contain a clique on $k$ vertices has bounded chromatic number.",
+    "context_text": "The Gyárfás-Sumner conjecture is the central motivation for this paper's line of research. It is known when $H$ is a path (Gyárfás [6], the original paper proposing the conjecture), but remains open for general forests. The present paper strengthens the path case by proving polynomial bounds under exclusion of complete $d$-partite graphs.",
+    "attributed_to": "Gyárfás and Sumner",
+    "attributed_year": 1975,
+    "paper_contribution": "Proves Theorem 1.5 (paths are multibounding): for every path $H$ and all $d \\geq 1$ there is a polynomial $f$ such that every $H$-free graph with no $K_d(t)$ subgraph satisfies $\\chi(G) \\leq f(t)$. Taking $t=1$ recovers Gyárfás' path case of the conjecture; the result is strictly stronger and extends to brooms and disjoint unions of multibounding forests.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Attributed via citations [6] (Gyárfás) and [20] (Sumner) in the paper's introduction.",
+    "arxiv_id": "2303.11766",
+    "paper_title": "Polynomial bounds for chromatic number VIII. Excluding a path and a complete multipartite graph",
+    "paper_authors": [
+      "Tung Nguyen",
+      "Alex Scott",
+      "Paul Seymour"
+    ],
+    "published": "2023-03-21",
+    "abs_url": "https://arxiv.org/abs/2303.11766",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.6",
+    "statement_text": "Every forest is multibounding.",
+    "context_text": "A graph $H$ is multibounding if for every $d \\geq 1$ there is a polynomial $f(t)$ such that, for all $t \\geq 1$, every $H$-free graph with no $K_d(t)$ subgraph satisfies $\\chi(G) \\leq f(t)$. Every multibounding graph must be a forest satisfying the Gyárfás-Sumner conjecture, and any forest satisfying the polynomial-bound Conjecture 1.2 is multibounding. The paper establishes that paths, brooms, and disjoint unions of multibounding forests are multibounding, motivating the general conjecture.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "Explicitly introduced with 'We propose: 1.6 Conjecture' in the paper.",
+    "arxiv_id": "2303.11766",
+    "paper_title": "Polynomial bounds for chromatic number VIII. Excluding a path and a complete multipartite graph",
+    "paper_authors": [
+      "Tung Nguyen",
+      "Alex Scott",
+      "Paul Seymour"
+    ],
+    "published": "2023-03-21",
+    "abs_url": "https://arxiv.org/abs/2303.11766",
+    "source": "pdf"
+  }
+]

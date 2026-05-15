@@ -1,0 +1,25 @@
+[
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Kierstead et al. Question on Two-Coloring Number of Planar Graphs",
+    "statement_text": "Is the two-coloring number of all planar graphs bounded by $8$?",
+    "context_text": "A planar graph with two-coloring number equal to $8$ was constructed earlier, and Kierstead et al. found simpler examples yielding the same lower bound — namely, any 5-connected triangulation in which the degree-5 vertices are non-adjacent. They then asked whether the two-coloring number of all planar graphs is at most $8$.",
+    "attributed_to": "Kierstead et al.",
+    "attributed_year": 2009,
+    "paper_contribution": "Proves that the two-coloring number of any planar graph is at most $8$ (Theorem 1), answering the question affirmatively and establishing that the bound is optimal.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "The question is stated in prose in the introduction without a labelled theorem environment; the paper resolves it completely. Reference is SIAM J. Discrete Math. 23 (2009), 1548–1560.",
+    "arxiv_id": "1506.01412",
+    "paper_title": "Planar graphs have two-coloring number at most 8",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Adam Kabela",
+      "Tomáš Kaiser"
+    ],
+    "published": "2018-06-21",
+    "abs_url": "https://arxiv.org/abs/1506.01412",
+    "source": "pdf"
+  }
+]

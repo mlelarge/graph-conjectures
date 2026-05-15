@@ -1,0 +1,48 @@
+[
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Problem 1.1 (El-Zahar and Erdős)",
+    "statement_text": "Is the following true? For all integers $t,c\\geq 1$, there exists $d\\geq 1$, such that if a graph $G$ satisfies $\\chi(G)\\geq d$ and has no clique with $t$ vertices, then there are subsets $A,B\\subseteq V(G)$ with $\\chi(G[A]),\\chi(G[B])\\geq c$, such that there are no edges between $A$ and $B$.",
+    "context_text": "This problem of El-Zahar and Erdős [6] asks whether sufficiently large chromatic number without large cliques forces two non-neighbouring induced subgraphs each of large chromatic number. It is the direct motivation for the tournament analogue (Conjecture 1.2) that is the central subject of this survey. Klingelhoefer and Newman subsequently proved that Problem 1.1 and Conjecture 1.2 are equivalent.",
+    "attributed_to": "El-Zahar and Erdős",
+    "attributed_year": 1985,
+    "paper_contribution": "Proves the equivalence of Problem 1.1 with Conjecture 1.2 (the tournament analogue), giving a simpler and shorter proof of the equivalence than Klingelhoefer and Newman [10], though using some of the same ideas.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Stated as Problem 1.1 in the paper. The paper's authors note that [10] (Klingelhoefer–Newman, Combinatorica 44 (2024)) first established this equivalence.",
+    "arxiv_id": "2306.02364",
+    "paper_title": "Some results and problems on tournament structure",
+    "paper_authors": [
+      "Tung Nguyen",
+      "Alex Scott",
+      "Paul Seymour"
+    ],
+    "published": "2024-09-24",
+    "abs_url": "https://arxiv.org/abs/2306.02364",
+    "source": "html"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.2",
+    "statement_text": "For all $c\\geq 0$ there exists $d\\geq 0$ such that if $T$ is a tournament with $\\chi(T)\\geq d$, there is a complete pair $(A,B)$ of $T$ such that $\\chi(A),\\chi(B)\\geq c$.",
+    "context_text": "This tournament analogue of the El-Zahar–Erdős problem was introduced by the same authors in [11] and is proved equivalent to Problem 1.1 by Klingelhoefer and Newman. The entire survey is organised around partial progress on this conjecture. The authors themselves caution that it 'may well be false', despite its equivalence with a long-standing graph-colouring question.",
+    "attributed_to": "Nguyen, Scott, and Seymour",
+    "attributed_year": 2023,
+    "paper_contribution": "Proves two partial results in its favour: Theorem 1.3 establishes the case where $A$ is a cyclic triangle (and $\\chi(B)\\geq c$), and Theorem 1.4 establishes the conjecture for all tournaments with sufficiently large domination number.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Originally stated in arXiv:2303.13449, published as J. Combin. Theory Ser. B 165 (2024) 211–222. The paper authors are the same group; the conjecture is attributed here via an explicit citation to that prior work [11].",
+    "arxiv_id": "2306.02364",
+    "paper_title": "Some results and problems on tournament structure",
+    "paper_authors": [
+      "Tung Nguyen",
+      "Alex Scott",
+      "Paul Seymour"
+    ],
+    "published": "2024-09-24",
+    "abs_url": "https://arxiv.org/abs/2306.02364",
+    "source": "html"
+  }
+]

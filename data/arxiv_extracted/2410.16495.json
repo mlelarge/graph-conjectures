@@ -1,0 +1,25 @@
+[
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Question 1.1",
+    "statement_text": "What are the unavoidable induced subgraphs of graphs with large treewidth?",
+    "context_text": "This question is the central goal of the series of papers on induced subgraphs and tree decompositions. The answer is known when 'induced subgraphs' is replaced by 'subgraphs' or 'minors' via Robertson and Seymour's grid theorem, but the induced setting is more complex, requiring all basic obstructions (complete graphs, complete bipartite graphs, subdivided walls, and their line graphs) as well as non-basic ones such as Pohoata-Davies graphs, occultations, and layered wheels.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2410.16495",
+    "paper_title": "Induced subgraphs and tree decompositions XVI. Complete bipartite induced minors",
+    "paper_authors": [
+      "Maria Chudnovsky",
+      "Sepehr Hajebi",
+      "Sophie Spirkl"
+    ],
+    "published": "2026-02-18",
+    "abs_url": "https://arxiv.org/abs/2410.16495",
+    "source": "html"
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "review_id": "1709.04036__01",
+  "safe_id": "1709.04036",
+  "arxiv_id": "1709.04036",
+  "conjecture_title": "Informal belief: 5/6 bound attainable",
+  "paper_title": "Induced 2-degenerate Subgraphs of Triangle-free Planar Graphs",
+  "published": "2018-02-19",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Dvořák and Kelly prove $\\alpha_2(G) \\ge \\frac{4}{5}n$ for triangle-free planar graphs and informally believe the same argument can be pushed to $\\frac{5}{6}$, but they do not pursue it because it would not suffice to prove the full $\\frac{7}{8}$ conjecture. No subsequent paper has been found that establishes the $\\frac{5}{6}$ bound or otherwise resolves this informal belief; a 2025 survey of degenerate induced subgraphs in sparse graphs (arXiv:2511.13693) cites the $\\frac{4}{5}$ result without improvement.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Dvořák Kelly \"induced 2-degenerate\" \"triangle-free planar\" 5/6 bound",
+    "arXiv 1709.04036 Dvorak Kelly induced 2-degenerate subgraphs planar citing papers",
+    "\"triangle-free planar\" \"induced 2-degenerate\" \"5/6\" OR \"seven-eighths\" 2019 2020 2021 2022 2023 2024 2025"
+  ],
+  "notes": "The 5/6 claim is an informal belief stated in the paper, not a formally labelled conjecture. A 2025 paper (arXiv:2511.13693, 'A Note on Large Degenerate Induced Subgraphs in Sparse Graphs') cites the Dvořák–Kelly 4/5 result but does not improve upon it for the triangle-free planar case. The full 7/8 conjecture (Conjecture 1.1 of the source paper) also remains open."
+}

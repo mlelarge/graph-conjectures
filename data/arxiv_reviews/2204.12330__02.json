@@ -1,0 +1,24 @@
+{
+  "review_id": "2204.12330__02",
+  "safe_id": "2204.12330",
+  "arxiv_id": "2204.12330",
+  "conjecture_title": "Open Problem (separating twin-width and queue number on sparse graphs)",
+  "paper_title": "Twin-width VII: groups",
+  "published": "2022-07-15",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The problem of separating twin-width and queue number on sparse graphs (or groups) remains open as of 2026. It is known that finite queue number implies finite twin-width, but no example of a group or sparse graph with finite twin-width and infinite queue number has been found. While a separation between sparse twin-width and stack number exists, the analogous question for queue number is unresolved, and recent papers on sparse twin-width (2023–2024) do not address this problem.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "twin-width queue number sparse graphs separation 2204.12330",
+    "twin-width queue number finite infinite sparse graph example separation",
+    "queue number bounded twin-width sparse graph counterexample 2023 2024 2025",
+    "arxiv 2307.01732 twin-width treewidth sparse graphs queue number",
+    "arxiv 2312.03688 twin-width sparse random graphs queue number"
+  ],
+  "notes": "No follow-up paper resolving this open problem was found in the indexed literature. Three web searches and two WebFetch calls returned no evidence of a separation or a proof of equivalence between twin-width and queue number on sparse graphs. The problem is stated informally (not as a numbered conjecture) in 2204.12330, and the only known direction is that bounded queue number implies bounded twin-width."
+}

@@ -1,0 +1,40 @@
+{
+  "review_id": "2302.04986__02",
+  "safe_id": "2302.04986",
+  "arxiv_id": "2302.04986",
+  "conjecture_title": "Conjecture 1.17",
+  "paper_title": "Hitting all maximum stable sets in $P_5$-free graphs",
+  "published": "2024-01-16",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 1.17 — that there exists $d\\in\\mathbb{N}$ with $\\eta(G)\\leq\\omega(G)^{d}$ for every $P_5$-free graph $G$ — remains open as of May 2026. The source paper establishes only a super-exponential $\\eta$-bound for $P_5$-free graphs. A 2025 Electronic Journal of Combinatorics paper resolves a related conjecture from the same paper (polynomial $\\eta$-bound for graphs with no induced matching of size $t$), but this does not settle Conjecture 1.17 because $P_5$-free graphs can have arbitrarily large induced matchings.",
+  "since_posted": [
+    {
+      "title": "Piercing Independent Sets in Graphs without Large Induced Matching",
+      "authors": "Unknown",
+      "year": 2025,
+      "venue": "Electronic Journal of Combinatorics",
+      "url": "https://www.combinatorics.org/ojs/index.php/eljc/article/view/v32i1p10",
+      "arxiv_id": null,
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves $\\eta(G)\\leq\\omega(G)^{3t-3+o(1)}$ for graphs with no induced matching of size $t$, explicitly resolving a conjecture of Hajebi, Li, and Spirkl from the source paper; does not resolve Conjecture 1.17 since $P_5$-free graphs need not have bounded induced matching number."
+    }
+  ],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2507.06169",
+      "verified": true,
+      "note": "Paper constructs a simpler layered-wheel-like counterexample to a conjecture of Trotignon (about treewidth/outerstring graphs); it does not mention or address Conjecture 1.17 about polynomial $\\eta$-boundedness of $P_5$-free graphs. The fuzz match in the corpus appears spurious."
+    }
+  ],
+  "search_queries": [
+    "arXiv 2302.04986 Hajebi Li Spirkl P5-free hitting maximum stable sets eta bound omega polynomial",
+    "P5-free graphs eta omega polynomial bound Erdős-Hajnal conjecture hitting stable sets 2024 2025",
+    "Hajebi Spirkl polynomially eta-bounded P5-free graphs clique number 2025 hitting set maximum independent"
+  ],
+  "notes": "A closely related 2025 result in the Electronic Journal of Combinatorics resolves a conjecture of Hajebi–Li–Spirkl about graphs without large induced matchings (proving a polynomial $\\eta$-bound for that class), but leaves Conjecture 1.17 open. Separately, arXiv:2512.24907 (Dec 2025) proves polynomial $\\chi$-boundedness for $P_5$-free graphs (resolving a 1985 Gyárfás problem), which concerns chromatic number rather than $\\eta$. No paper found proving or disproving Conjecture 1.17 in full generality."
+}

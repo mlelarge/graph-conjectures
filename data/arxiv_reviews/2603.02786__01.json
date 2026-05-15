@@ -1,0 +1,22 @@
+{
+  "review_id": "2603.02786__01",
+  "safe_id": "2603.02786",
+  "arxiv_id": "2603.02786",
+  "conjecture_title": "Conjecture 4",
+  "paper_title": "Packing arithmetic progressions",
+  "published": "2026-03-03",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 4 of arXiv:2603.02786 asserts the precise asymptotic $M_{\\mathbb{P}(n)}(n)\\sim\\frac{1}{6}\\cdot\\frac{n^{3}}{\\ln n}$, where $\\mathbb{P}(n)$ denotes the set of primes up to $n$ and $M_{\\mathbb{P}(n)}(n)$ is the minimum interval length needed to pack the corresponding arithmetic progressions. The authors establish the matching lower bound (Theorem 5); the upper bound remains open. No follow-up resolving the conjecture was found in the two months since posting.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "packing arithmetic progressions Alon Debski Grytczuk Przybyo 2603.02786 conjecture asymptotic primes",
+    "packing arithmetic progressions primes asymptotic n^3/ln n conjecture 2026",
+    "arxiv 2603.02786 cite packing arithmetic progressions Alon 2026"
+  ],
+  "notes": "The paper was posted on 2026-03-03, only ~10 weeks before this review. The lower bound $M_{\\mathbb{P}(n)}(n)=\\Omega(n^3/\\ln n)$ is established in the paper (Theorem 5); the upper bound that would nail the constant 1/6 is explicitly listed as open. arXiv:2605.13628 (Conlon, Fox, Pham) appeared in the search but concerns cap sets in finite fields and is unrelated. No other citing paper was found."
+}

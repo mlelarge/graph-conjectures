@@ -1,0 +1,34 @@
+{
+  "review_id": "1909.08426__00",
+  "safe_id": "1909.08426",
+  "arxiv_id": "1909.08426",
+  "conjecture_title": "Classical MIS Dichotomy Conjecture",
+  "paper_title": "When Maximum Stable Set can be solved in FPT time",
+  "published": "2019-09-18",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The conjecture that MIS in H-free graphs is in P if and only if H is a path or subdivided claw remains open at the polynomial-time level. The landmark post-2019 development is arXiv:2305.15738 (Gartland, Lokshtanov, Masařík, M. Pilipczuk, M. Pilipczuk, Rzążewski; STOC 2024), which proves MWIS is solvable in quasi-polynomial time for every H-free graph class where H is a path or subdivided claw, closing the gap between predicted-tractable cases and NP-hardness. Polynomial-time algorithms are established for specific subclasses (P_t-free for t ≤ 6, fork-free/S_{1,1,2}-free), but polynomial-time solvability for all S_{i,j,k}-free graphs remains open.",
+  "since_posted": [
+    {
+      "title": "Maximum Weight Independent Set in Graphs with no Long Claws in Quasi-Polynomial Time",
+      "authors": "Peter Gartland, Daniel Lokshtanov, Tomáš Masařík, Marcin Pilipczuk, Michał Pilipczuk, Paweł Rzążewski",
+      "year": 2023,
+      "venue": "Proceedings of the 56th Annual ACM Symposium on Theory of Computing (STOC 2024)",
+      "url": "https://arxiv.org/abs/2305.15738",
+      "arxiv_id": "2305.15738",
+      "doi": "10.1145/3618260.3649791",
+      "kind": "partial",
+      "claim": "Proves that MWIS is solvable in quasi-polynomial time on H-free graphs whenever each connected component of H is a path or a subdivided claw, showing all conjectured-tractable cases are not NP-hard but stopping short of the conjectured polynomial-time bound."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Maximum Independent Set H-free graphs polynomial dichotomy subdivided claw path",
+    "MIS H-free graphs complexity dichotomy 1909.08426 Bonnet Bousquet Thomasse Watrigant",
+    "Maximum Independent Set S_{i,j,k}-free polynomial time algorithm 2023 2024 2025 dichotomy resolved"
+  ],
+  "notes": "The quasi-polynomial result of arXiv:2305.15738 is the major post-2019 development: it shows all cases predicted tractable by the conjecture are at worst quasi-polynomial, confirming the NP-hard/tractable boundary but not yet establishing polynomial time for the full class S_{i,j,k}-free. No paper resolving the full polynomial-time dichotomy was found."
+}

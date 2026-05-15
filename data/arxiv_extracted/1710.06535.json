@@ -1,0 +1,24 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.1 (Tomescu, 1971)",
+    "statement_text": "Let $G$ be a connected $k$-chromatic graph with $k \\geq 4$. Then $G$ has at most $k!(k-1)^{|G|-k}$ $k$-colourings. Moreover, the extremal graphs are precisely the graphs obtained from $K_k$ by adding trees rooted at each vertex of the clique.",
+    "context_text": "Tomescu conjectured in 1971 that the bound $x_k(x-1)^{n-k}$ for the number of $x$-colourings — attained by graphs formed from $K_k$ by growing arbitrary trees from each vertex — holds for every connected $k$-chromatic graph, whether or not it contains a $k$-clique, as long as $k \\geq 4$. The requirement $k \\neq 3$ is necessary since odd cycles of length at least 5 exceed this bound.",
+    "attributed_to": "Tomescu",
+    "attributed_year": 1971,
+    "paper_contribution": "Proves a strengthening of the conjecture for $k = 5$: every connected 5-chromatic graph $G$ satisfies $Q_G(y) \\leq (y+1)y^{|G|-4}(y-1)(y-2)(y-3)$ for every integer $y \\geq 4$, with equality characterised by graphs obtained from $K_5$ by adding a tree on each vertex.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1710.06535",
+    "paper_title": "Maximum number of colourings. II. 5-chromatic graphs",
+    "paper_authors": [
+      "Fiachra Knox",
+      "Bojan Mohar"
+    ],
+    "published": "2017-10-18",
+    "abs_url": "https://arxiv.org/abs/1710.06535",
+    "source": "pdf"
+  }
+]

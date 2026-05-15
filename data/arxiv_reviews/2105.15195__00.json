@@ -1,0 +1,22 @@
+{
+  "review_id": "2105.15195__00",
+  "safe_id": "2105.15195",
+  "arxiv_id": "2105.15195",
+  "conjecture_title": "Conjecture on tightness of the upper bound for all r ≥ 3",
+  "paper_title": "The upper logarithmic density of monochromatic subset sums",
+  "published": "2022-09-22",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conlon, Fox, and Pham prove in Theorem 1 that $c_r \\leq \\left(1-\\frac{1}{2b_0}\\right)\\left(1+\\frac{1}{2^r b_0 - r}\\right)$ for all $r \\geq 2$ and establish tightness for $r=2$ (giving $c_2=(2+\\sqrt{3})/4$). They conjecture the same formula gives the exact value of $c_r$ for all $r \\geq 3$, but acknowledge their methods are insufficient. No follow-up paper resolving or substantially advancing this conjecture for $r \\geq 3$ was found in an exhaustive web search covering arXiv through May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "monochromatic subset sums upper logarithmic density Conlon Fox Pham 2105.15195",
+    "monochromatic subset sums logarithmic density c_r tight coloring follow-up 2023 2024 2025",
+    "arxiv \"monochromatic subset sums\" r-coloring logarithmic density c_r exact value 2023 2024 2025"
+  ],
+  "notes": "No follow-up found. The conjecture is open for all r >= 3. The paper was published in Mathematika (2022). Huy Tuan Pham's publication page and Semantic Scholar citation search returned no citing papers that address the r >= 3 case. The companion paper arXiv:2104.14766 ('Subset sums, completeness and colorings') develops the general techniques but does not resolve the tightness conjecture for r >= 3 either."
+}

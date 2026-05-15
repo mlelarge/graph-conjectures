@@ -1,0 +1,94 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 5.3 of [24] (Induced Arithmetic Removal Lemma)",
+    "statement_text": "An induced arithmetic removal lemma holds in general: for a fixed finite collection of $r$-colored arithmetic patterns, every coloring with $o(1)$ density of each such pattern can be recolored on an $o(1)$-fraction of the ambient space so that no such pattern remains.",
+    "context_text": "The paper identifies this as a natural common extension of both the induced graph removal lemma and the arithmetic removal lemma. It is noted as not currently known, with [24, Conjecture 5.3] cited as one explicit formulation. The technique of deducing arithmetic removal from graph removal does not appear to extend to the induced setting.",
+    "attributed_to": "authors of [24]",
+    "attributed_year": null,
+    "paper_contribution": "Proves the conjecture for complexity 1 patterns over finite fields $\\mathbb{F}_q$: for every $\\epsilon > 0$ there exists $\\delta > 0$ such that if $\\phi : V \\setminus \\{0\\} \\to [r]$ has $H$-density at most $\\delta$ for every $H \\in \\mathcal{H}$, then there is a recoloring $\\phi'$ that is $\\mathcal{H}$-free and differs from $\\phi$ on at most $\\epsilon|V|$ elements (Theorem 1.14).",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "The exact statement of [24, Conjecture 5.3] is not reproduced verbatim in this paper; statement_text is reconstructed from the surrounding prose. Bibliography entry for [24] is not present in the extracted text, so attributed_to cannot be made more precise.",
+    "arxiv_id": "1911.03427",
+    "paper_title": "Induced arithmetic removal: complexity 1 patterns over finite fields",
+    "paper_authors": [
+      "Jacob Fox",
+      "Jonathan Tidor",
+      "Yufei Zhao"
+    ],
+    "published": "2019-11-08",
+    "abs_url": "https://arxiv.org/abs/1911.03427",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Open Problem (Extending Induced Arithmetic Removal to Higher Complexity and General Groups)",
+    "statement_text": "Extend the induced arithmetic removal lemma beyond complexity 1 patterns over finite fields to higher complexity patterns and to general abelian groups (even the case of $\\mathbb{Z}$ is open).",
+    "context_text": "After establishing Theorem 1.14 for complexity 1 patterns over $\\mathbb{F}_q$, the authors note that extending to higher complexity and to general groups remains open. They observe that for affine-invariant patterns (which avoid a regularisation difficulty near the origin), the problem for bounded complexity patterns over finite fields has been solved, but the general induced setting is still unresolved.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1911.03427",
+    "paper_title": "Induced arithmetic removal: complexity 1 patterns over finite fields",
+    "paper_authors": [
+      "Jacob Fox",
+      "Jonathan Tidor",
+      "Yufei Zhao"
+    ],
+    "published": "2019-11-08",
+    "abs_url": "https://arxiv.org/abs/1911.03427",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Informal Conjecture (Induced Arithmetic Removal for Arbitrary Abelian Groups)",
+    "statement_text": "A statement analogous to Theorem 1.14 holds for arbitrary patterns with coefficients in $\\mathbb{Z}$ over arbitrary abelian groups, subject to appropriate caveats concerning infinite complexity patterns and trivial solutions.",
+    "context_text": "Immediately following the statement of the main theorem (Theorem 1.14) and its remark on tower-type bounds, the authors write: 'We conjecture that a similar statement holds for arbitrary patterns (with coefficients in $\\mathbb{Z}$) in arbitrary abelian groups.' They decline to give a precise formulation due to unresolved issues with infinite complexity and trivial solutions.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Authors explicitly decline to state a precise conjecture: 'we do not state a precise conjecture here'. Classified as Informal accordingly.",
+    "arxiv_id": "1911.03427",
+    "paper_title": "Induced arithmetic removal: complexity 1 patterns over finite fields",
+    "paper_authors": [
+      "Jacob Fox",
+      "Jonathan Tidor",
+      "Yufei Zhao"
+    ],
+    "published": "2019-11-08",
+    "abs_url": "https://arxiv.org/abs/1911.03427",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Informal Conjecture (Polynomial Quantitative Bound for Complexity 1 Systems)",
+    "statement_text": "For complexity 1 systems, the dependence of $\\delta$ on $\\epsilon$ in Definition 1.10 satisfies $\\delta = \\epsilon^{O_A(1)}$, i.e., polynomial dependence.",
+    "context_text": "In Section 1.2, after defining complexity 1 (Definition 1.10), the authors remark that the general dependence of $\\delta$ on $\\epsilon$ is a wide open problem and state conjecturally that polynomial dependence holds. Reference [20] is cited for further discussion of this quantitative question.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated as 'conjecturally' in running prose without a labelled environment and without explicit attribution to named individuals; reference [20] is cited for discussion but no author names are given in the extracted text.",
+    "arxiv_id": "1911.03427",
+    "paper_title": "Induced arithmetic removal: complexity 1 patterns over finite fields",
+    "paper_authors": [
+      "Jacob Fox",
+      "Jonathan Tidor",
+      "Yufei Zhao"
+    ],
+    "published": "2019-11-08",
+    "abs_url": "https://arxiv.org/abs/1911.03427",
+    "source": "pdf"
+  }
+]

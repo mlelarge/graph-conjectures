@@ -1,0 +1,98 @@
+[
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Richter's Question",
+    "statement_text": "Given an integer $n \\geq 5$ and a graph $G$ with crossing number at least $\\operatorname{cr}(K_n)$, does it follow that the crossing number of its cone $CG$ is at least $\\operatorname{cr}(K_{n+1})$?",
+    "context_text": "Richter posed this question during the Crossing Numbers Workshop in 2013 in an attempt to understand Albertson's conjecture. Simple examples show the two values can differ arbitrarily, but the question asks whether the cone's crossing number is always at least as large as the next complete-graph threshold.",
+    "attributed_to": "Richter",
+    "attributed_year": 2013,
+    "paper_contribution": "Shows the answer is positive for $n = 5$ via Kuratowski's theorem, but negative for $n = 6$ by exhibiting a graph with crossing number 3 whose cone has crossing number at most 6, strictly less than $\\operatorname{cr}(K_7) = 9$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1608.07680",
+    "paper_title": "The crossing number of the cone of a graph",
+    "paper_authors": [
+      "Carlos A. Alfaro",
+      "Alan Arroyo",
+      "Marek Derunár",
+      "Bojan Mohar"
+    ],
+    "published": "2016-08-27",
+    "abs_url": "https://arxiv.org/abs/1608.07680",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Problem 1",
+    "statement_text": "For each $k \\geq 0$, find the smallest integer $f(k)$ for which there is a graph $G$ with crossing number at least $k$ and its cone has $\\operatorname{cr}(CG) = f(k)$.",
+    "context_text": "Motivated by the negative answer to Richter's question for $n=6$, the authors reformulate the problem as finding the minimum possible crossing number of a cone over all graphs of a given crossing number. Equivalently, $f(k)$ is the largest integer such that every graph with $\\operatorname{cr}(G) \\geq k$ satisfies $\\operatorname{cr}(CG) \\geq f(k)$. The paper proves $f(k) = k + \\Theta(\\sqrt{k})$ for multigraphs.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1608.07680",
+    "paper_title": "The crossing number of the cone of a graph",
+    "paper_authors": [
+      "Carlos A. Alfaro",
+      "Alan Arroyo",
+      "Marek Derunár",
+      "Bojan Mohar"
+    ],
+    "published": "2016-08-27",
+    "abs_url": "https://arxiv.org/abs/1608.07680",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Problem 4",
+    "statement_text": "Given a 1-page drawing of a graph $G$ with $k$ crossings, find an upper bound on the number of crossings of an optimal 2-page drawing of $G$ while having the order of vertices of $G$ on the spine unchanged.",
+    "context_text": "This problem asks: if all vertices of $G$ are incident to the outer face (equivalently, $G$ admits a 1-page drawing), what is the most efficient way to redraw some edges in a new page to reduce crossings? It is intimately related to bounding the crossing number of the cone, and the Edwards max-cut bound (Lemma 5) is applied to answer it partially.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1608.07680",
+    "paper_title": "The crossing number of the cone of a graph",
+    "paper_authors": [
+      "Carlos A. Alfaro",
+      "Alan Arroyo",
+      "Marek Derunár",
+      "Bojan Mohar"
+    ],
+    "published": "2016-08-27",
+    "abs_url": "https://arxiv.org/abs/1608.07680",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture on $f_s(k)$ asymptotics",
+    "statement_text": "$f_s(k) = k + \\sqrt{2}\\, k^{3/4}(1 + o(1))$.",
+    "context_text": "Section 5 proves $f_s(k) = k + o(k)$ for simple graphs, improving on the upper bound $f_s(k) \\leq 2k$ suggested by small cases ($f_s(1)=3,\\, f_s(2)=5,\\, f_s(3)=6,\\, f_s(4)=8,\\, f_s(5)=10$). The authors provide additional justification for this more precise asymptotic conjecture on the simple-graph version of $f$.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated as an informal conjecture in running prose without a labelled theorem environment; PDF source — math notation ($\\sqrt{2}\\,k^{3/4}$) may be partially garbled.",
+    "arxiv_id": "1608.07680",
+    "paper_title": "The crossing number of the cone of a graph",
+    "paper_authors": [
+      "Carlos A. Alfaro",
+      "Alan Arroyo",
+      "Marek Derunár",
+      "Bojan Mohar"
+    ],
+    "published": "2016-08-27",
+    "abs_url": "https://arxiv.org/abs/1608.07680",
+    "source": "pdf"
+  }
+]

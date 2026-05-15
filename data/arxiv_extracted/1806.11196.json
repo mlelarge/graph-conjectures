@@ -1,0 +1,26 @@
+[
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Question 1.1",
+    "statement_text": "Is it true that for every (fixed) integer $t > 0$, the 3-coloring problem can be solved in polynomial time when restricted to the class of $P_t$-free graphs?",
+    "context_text": "Theorem 1.1 (from the literature) states that if the $k$-coloring problem is polynomial on $H$-free graphs then every connected component of $H$ must be a path. For $k=3$ the converse may hold — it is known to fail for $k>4$ — so the question of whether $P_t$-free graphs always admit a polynomial-time 3-coloring algorithm remains open. The present paper contributes a positive result for the subclass of $(P_6+rP_3)$-free graphs.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "The question has no explicit attribution citation in the header; it is recorded as a standing open problem in the field by the paper's authors. Full paper text was truncated in the supplied PDF extraction, so later sections could not be checked for additional conjectural statements.",
+    "arxiv_id": "1806.11196",
+    "paper_title": "List-three-coloring graphs with no induced $P_6+rP_3$",
+    "paper_authors": [
+      "Maria Chudnovsky",
+      "Shenwei Huang",
+      "Sophie Spirkl",
+      "Mingxian Zhong"
+    ],
+    "published": "2018-07-02",
+    "abs_url": "https://arxiv.org/abs/1806.11196",
+    "source": "pdf"
+  }
+]

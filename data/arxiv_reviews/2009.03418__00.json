@@ -1,0 +1,23 @@
+{
+  "review_id": "2009.03418__00",
+  "safe_id": "2009.03418",
+  "arxiv_id": "2009.03418",
+  "conjecture_title": "Conjecture 5",
+  "paper_title": "On a conjecture by Anthony Hill",
+  "published": "2020-09-07",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "Conjecture 5 from arXiv:2009.03418 posits that the crossing number of $M_{n,t}$ (the complete graph $K_n$ minus a matching of size $t$) equals $H(n) - \\frac{1}{2}t(k-1)(k-2)$ where $k=\\lfloor n/2\\rfloor$. Mohar proves a matching upper bound via geodesic drawings built from strength-0 point sets, making the conjecture that this count is optimal. No paper resolving or making substantial progress on this specific conjecture was found in web searches; the underlying Hill conjecture for $K_n$ itself remains open, making resolution of this generalization unlikely to have been achieved unnoticed.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "crossing number Kn minus matching Hill conjecture Mohar 2009.03418",
+    "crossing number complete graph minus matching geodesic drawings Hill formula",
+    "crossing number M_{n,t} OR Kn minus matching OR complete graph minus matching 2021 2022 2023 2024 2025",
+    "arxiv search: crossing number matching geodesic Hill"
+  ],
+  "notes": "No follow-up paper specifically addressing Conjecture 5 of arXiv:2009.03418 was found. The conjecture is a natural extension of the long-standing open Hill conjecture (cr(K_n) = H(n)), which itself remains unresolved; the upper bound matching the conjectured value is established by Mohar via geodesic drawings of K_n minus a matching using strength-0 configurations. The paper appeared in a Springer proceedings volume (Graph Drawing 2020). Confidence is medium rather than high because the conjecture is ~6 years old and absence of web evidence for a conjecture with this level of notoriety is slightly suspicious, though consistent with the broader open status of Hill-type problems."
+}

@@ -1,0 +1,24 @@
+[
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Open Problem (better query complexity bounds for property testing)",
+    "statement_text": "It remains a major open problem if better bounds hold for the various property testing results.",
+    "context_text": "General results in combinatorial property testing show that natural properties can be tested with constant query complexity depending only on $\\varepsilon$ and the property, but the upper bounds arising from proofs are often enormous: wowzer-type or Ackermann-type in $1/\\varepsilon$, or established only via compactness with no explicit bound at all. The paper makes progress on this problem for permutations by establishing a universal polynomial-in-$1/\\varepsilon$ query complexity bound for two-sided testing of hereditary properties with respect to the rectangular distance.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "PDF source — paper text is truncated (ends mid-sentence in the introduction); this open problem is presented as a known community-level motivation rather than a fresh conjecture introduced by the paper's authors. No formal labelled environment. Any conjectures or questions posed in later sections of the paper are not visible in the supplied extract.",
+    "arxiv_id": "1611.01270",
+    "paper_title": "Fast property testing and metrics for permutations",
+    "paper_authors": [
+      "Jacob Fox",
+      "Fan Wei"
+    ],
+    "published": "2018-04-04",
+    "abs_url": "https://arxiv.org/abs/1611.01270",
+    "source": "pdf"
+  }
+]

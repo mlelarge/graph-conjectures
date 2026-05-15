@@ -1,0 +1,65 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Hadwiger's Conjecture",
+    "statement_text": "Let $t$ be a positive integer. Every graph $G$ satisfying $\\chi(G)\\geq t$ contains $K_{t}$ as a minor.",
+    "context_text": "Hadwiger's conjecture, formulated more than 80 years ago, is the major open problem in the theory of graph coloring and arguably one of the most challenging open problems in all of combinatorics. It is known to hold for $t\\leq 6$ but remains widely open for $t\\geq 7$. The paper investigates whether the hierarchy of topological lower bounds on the chromatic number forms a potential avenue to a disproof.",
+    "attributed_to": "Hadwiger",
+    "attributed_year": 1943,
+    "paper_contribution": "Proves that if the Dol'nikov-Kříž topological lower bound on the chromatic number of a graph $G$ attains a value of at least $t$, then $G$ contains $K_{t}$ as a minor, showing that this family of lower bounds cannot yield counterexamples to Hadwiger's conjecture.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2312.17130",
+    "paper_title": "Hadwiger's conjecture and topological bounds",
+    "paper_authors": [
+      "Raphael Steiner"
+    ],
+    "published": "2024-01-02",
+    "abs_url": "https://arxiv.org/abs/2312.17130",
+    "source": "html"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Odd Hadwiger's Conjecture",
+    "statement_text": "Let $t$ be a positive integer. Every graph $G$ satisfying $\\chi(G)\\geq t$ contains $K_{t}$ as an odd-minor.",
+    "context_text": "Proposed by Gerards and Seymour in 1995, this is a substantial qualitative strengthening of Hadwiger's conjecture; odd-minors are significantly more restricted than ordinary minors since they preserve the parity of cycle-lengths. The conjecture has been proven for $t\\leq 4$ and the case $t=5$ was announced but not yet published. The paper investigates topological lower bounds as a potential route to counterexamples of this conjecture.",
+    "attributed_to": "Gerards and Seymour",
+    "attributed_year": 1995,
+    "paper_contribution": "Proves the conjecture for all Schrijver graphs and Kneser graphs for any choice of parameters; also proves that every graph $G$ with $\\mathrm{zig}(G)\\geq t$ contains $K_{\\lfloor t/2\\rfloor+1}$ as an odd-minor, showing topological lower bounds cannot yield counterexamples.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2312.17130",
+    "paper_title": "Hadwiger's conjecture and topological bounds",
+    "paper_authors": [
+      "Raphael Steiner"
+    ],
+    "published": "2024-01-02",
+    "abs_url": "https://arxiv.org/abs/2312.17130",
+    "source": "html"
+  },
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Problem 1",
+    "statement_text": "Does there exist an absolute constant $c>0$ for which the following is true? If a graph $G$ satisfies $\\mathrm{zig}(G)\\geq t$, then $G$ contains an odd complete minor on at least $ct$ vertices.",
+    "context_text": "Simonyi and Zsbán posed this problem after observing that known results imply every graph for which a topological lower bound attains value at least $t$ contains $K_{\\lfloor t/2\\rfloor,\\lceil t/2\\rceil}$ as a subgraph and hence $K_{\\lfloor t/2\\rfloor+1}$ as a minor; they focused on the stronger Odd Hadwiger's conjecture and asked whether the zig-zag number gives a linear lower bound on the size of an odd clique minor.",
+    "attributed_to": "Simonyi and Zsbán",
+    "attributed_year": 2010,
+    "paper_contribution": "Solves the problem in the affirmative, proving that the constant $c=\\frac{1}{2}$ works: every graph $G$ with $\\mathrm{zig}(G)\\geq t$ contains $K_{\\lfloor t/2\\rfloor+1}$ as an odd-minor.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2312.17130",
+    "paper_title": "Hadwiger's conjecture and topological bounds",
+    "paper_authors": [
+      "Raphael Steiner"
+    ],
+    "published": "2024-01-02",
+    "abs_url": "https://arxiv.org/abs/2312.17130",
+    "source": "html"
+  }
+]

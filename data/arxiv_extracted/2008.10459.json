@@ -1,0 +1,25 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Asymptotic Zarankiewicz Conjecture (Conjecture 1)",
+    "statement_text": "$\\lambda = \\lambda_0 = \\dfrac{1}{16}$, where $\\lambda := \\lim_{n\\to\\infty} n^{-4}\\operatorname{cr}(K_{n,n})$ and $\\lambda_0 := \\lim_{n\\to\\infty} n^{-4}\\operatorname{cr}_0(K_{n,n})$.",
+    "context_text": "Zarankiewicz and Urbanik exhibited drawings of $K_{n,n}$ achieving $Z(n,n)$ crossings; whether this is optimal remains open. The authors introduce the limiting crossing numbers $\\lambda$ and $\\lambda_0$ for the usual and geodesic crossing numbers, note that equation (2) gives $\\lambda \\leq \\lambda_0 \\leq \\frac{1}{16}$, and phrase the conjecture that both limits equal $\\frac{1}{16}$ as the asymptotic version of the classical Zarankiewicz (Turán Brickyard) problem.",
+    "attributed_to": "Zarankiewicz",
+    "attributed_year": 1954,
+    "paper_contribution": "Proves (Theorem 3) that for any nondegenerate antipodally-symmetric probability measures $\\mu_1, \\mu_2$ on $\\mathbb{S}^2$, the edge density of the crossing graphon satisfies $t(K_2, W(\\mu_1,\\mu_2)) = \\frac{1}{8}$, confirming that such random geodesic drawings of $K_{n,n}$ asymptotically saturate the Zarankiewicz bound; also shows (Theorems 4 and 6) that triangle densities in crossing graphons can attain any value in $\\left(\\frac{83}{12288}, \\frac{128}{12288}\\right)$, revealing rich structure beyond edge density.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source — the paper text is truncated mid-sentence in the bundle-crossing counting section, so later parts of the paper (if any additional conjectures appear there) could not be examined.",
+    "arxiv_id": "2008.10459",
+    "paper_title": "Limiting crossing numbers for geodesic drawings on the sphere",
+    "paper_authors": [
+      "Marthe Bonamy",
+      "Bojan Mohar",
+      "Alexandra Wesolek"
+    ],
+    "published": "2020-08-24",
+    "abs_url": "https://arxiv.org/abs/2008.10459",
+    "source": "pdf"
+  }
+]

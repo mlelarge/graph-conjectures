@@ -1,0 +1,23 @@
+{
+  "review_id": "1708.07369__00",
+  "safe_id": "1708.07369",
+  "arxiv_id": "1708.07369",
+  "conjecture_title": "Question 1.1",
+  "paper_title": "Ramsey-nice families of graphs",
+  "published": "2018-04-16",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Question 1.1 from arXiv:1708.07369 asks whether every finite family of graphs containing at least one forest is k-nice for all sufficiently large k. The source paper proves this for families containing a forest with at most 2 edges and for each of the three two-graph families of connected 3-edge graphs. A targeted search across arXiv and the published literature found no follow-up paper resolving the full conjecture, and the arXiv full-text search for 'Ramsey-nice k-nice forest' returned zero results beyond the original paper.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Ramsey-nice families graphs k-nice forest conjecture Aharoni Alon 1708.07369",
+    "Ramsey-nice graph family forest k-nice eventually arXiv",
+    "\"k-nice\" \"Ramsey-nice\" graph family forest conjecture 2019 2020 2021 2022 2023 2024 2025",
+    "arXiv search: all:Ramsey-nice k-nice forest"
+  ],
+  "notes": "No follow-up resolving the conjecture was found. The arXiv full-text search returned zero results for the distinctive terminology 'Ramsey-nice k-nice forest'. The paper itself was published in European Journal of Combinatorics 72 (2018) 29–44. Question 1.1 remains open as of 2026-05-15."
+}

@@ -1,0 +1,23 @@
+{
+  "review_id": "2001.01552__00",
+  "safe_id": "2001.01552",
+  "arxiv_id": "2001.01552",
+  "conjecture_title": "Question 6",
+  "paper_title": "Sublinear separators in intersection graphs of convex shapes",
+  "published": "2020-01-06",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "Question 6 asks whether polynomial strong coloring numbers (col_r(G) ≤ p(r) for all r) force a graph to admit a (c, ⊑_s)-tame geometric representation in some R^d, which would give a geometric characterization of graphs with polynomially bounded strong coloring numbers analogous to Krauthgamer–Lee's grid-embedding characterization of polynomial-growth classes. No follow-up paper resolving this question in either direction was found in a systematic search of the literature through May 2026. Related work on weak coloring numbers of intersection graphs (Dvořák, Pekárek, Ueckerdt, Yuditsky, SoCG 2022) and on strongly sublinear separators for sphere intersection graphs (Davies et al., SoCG 2025) works in adjacent territory but does not address this specific question.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Dvorak McCarty Norin \"tame representation\" \"strong coloring numbers\" polynomial arxiv 2001.01552",
+    "\"col_r\" \"tame\" \"coloring numbers\" polynomial growth geometric characterization graph 2020 2021 2022",
+    "Dvorak McCarty Norin \"sublinear separators\" intersection graphs convex follow-up \"tame\" geometric characterization 2021 2022 2023 2024",
+    "\"strong coloring numbers\" polynomial \"tame\" representation R^d geometric characterization graph arxiv 2022 2023 2024 2025"
+  ],
+  "notes": "No follow-up resolving Question 6 was found despite 5 web calls covering the period 2020–2026. The question is now 5+ years old, making the medium confidence appropriate — a wide search returned no resolution but the conjecture is old enough that absence of evidence is worth noting. The paper was published in SIAM J. Discrete Math. 35(2):1149–1164, 2021. Dvořák, Pekárek, Ueckerdt, and Yuditsky (SoCG 2022, arXiv:2106.02537 region) studied weak/strong coloring numbers of intersection graphs but did not address the tame-representation direction of Question 6. Davies, Georgakopoulos, Hatzel, McCarty (SoCG 2025) proved strongly sublinear separators and bounded asymptotic dimension for sphere intersection graphs excluding K_{t,t}, again adjacent but not resolving Question 6."
+}

@@ -1,0 +1,52 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1 (Nadjafi-Arani, Khodashenas, and Ashrafi, 2012)",
+    "statement_text": "Let $G$ be a connected graph and let $B_1, \\ldots, B_k$ be all its non-complete blocks of respective orders $n_1, \\ldots, n_k$. Then $$\\eta(G) \\geq \\sum_{i=1}^{k}(2n_i - 6).$$",
+    "context_text": "Nadjafi-Arani et al. investigated properties of $\\eta(G) = \\mathrm{Sz}(G) - W(G)$ and proposed this lower bound in terms of the non-complete blocks of a graph. The conjecture generalises the 2-connected case and is the central result the paper sets out to prove.",
+    "attributed_to": "Nadjafi-Arani, Khodashenas, and Ashrafi",
+    "attributed_year": 2012,
+    "paper_contribution": "Proves the conjecture in full: first Theorem 2 establishes $\\eta(G) \\geq 2n-6$ for every 2-connected non-complete graph on $n$ vertices, and Corollary 3 then derives the general block-sum bound as a direct consequence.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1602.05184",
+    "paper_title": "On the difference between the Szeged and Wiener index",
+    "paper_authors": [
+      "Marthe Bonamy",
+      "Martin Knor",
+      "Borut Lužar",
+      "Alexandre Pinlou",
+      "Riste Škrekovski"
+    ],
+    "published": "2016-02-16",
+    "abs_url": "https://arxiv.org/abs/1602.05184",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 5",
+    "statement_text": "Let $G$ be a 2-connected graph of order $n \\geq 10$ not isomorphic to $K_n$, $K^2_n$, or $K^{n-2}_n$. Then $\\eta(G) \\geq 2n$.",
+    "context_text": "The authors note that while $\\eta(K_n)=0$ and $\\eta(K^2_n)=\\eta(K^{n-2}_n)=2n-6$, computer search found only finitely many 2-connected graphs with $\\eta(G)<2n$ and none on 10 or more vertices, motivating this stronger bound beyond the three exceptional families.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1602.05184",
+    "paper_title": "On the difference between the Szeged and Wiener index",
+    "paper_authors": [
+      "Marthe Bonamy",
+      "Martin Knor",
+      "Borut Lužar",
+      "Alexandre Pinlou",
+      "Riste Škrekovski"
+    ],
+    "published": "2016-02-16",
+    "abs_url": "https://arxiv.org/abs/1602.05184",
+    "source": "pdf"
+  }
+]

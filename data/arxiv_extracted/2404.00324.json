@@ -1,0 +1,24 @@
+[
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Question of Li et al. (2022) on edge density of 3-flow-critical graphs",
+    "statement_text": "What is the minimum number of edges in an $n$-vertex $3$-flow-critical graph (other than $K_2$ and $K_4$)?",
+    "context_text": "Li, Ma, Shi, Wang, and Wu studied 3-flow-critical graphs in 2022 and raised the question of determining the minimum edge density of such graphs. The paper under review proves that the answer is at least $\\tfrac{5}{3}n$ edges, and that this bound is tight up to lower-order terms, fully answering their question.",
+    "attributed_to": "Li, Ma, Shi, Wang, and Wu",
+    "attributed_year": 2022,
+    "paper_contribution": "Proves that every $n$-vertex $3$-flow-critical graph other than $K_2$ and $K_4$ has at least $\\tfrac{5}{3}n$ edges, and that this bound is tight up to lower-order terms, thereby completely answering the question.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "The verbatim statement of the question is not reproduced in the provided text; it is reconstructed from the abstract, which states the result 'answers a question of Li et al. (2022)'. Reference [LMS+22]: Li et al., European Journal of Combinatorics, 100:103451, 2022.",
+    "arxiv_id": "2404.00324",
+    "paper_title": "Sparsity of 3-flow critical graphs",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Sergey Norin"
+    ],
+    "published": "2024-03-30",
+    "abs_url": "https://arxiv.org/abs/2404.00324",
+    "source": "html"
+  }
+]

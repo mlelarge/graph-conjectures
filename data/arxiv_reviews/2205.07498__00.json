@@ -1,0 +1,23 @@
+{
+  "review_id": "2205.07498__00",
+  "safe_id": "2205.07498",
+  "arxiv_id": "2205.07498",
+  "conjecture_title": "Problem 1.6",
+  "paper_title": "On density of $Z_3$-flow-critical graphs",
+  "published": "2022-12-04",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Problem 1.6 asks for the exact value of the smallest constant $\\alpha$ governing the genus-dependent term in the edge-density bound for $Z_3$-flow-critical graphs; the paper itself establishes $1 \\leq \\alpha \\leq 5/2$ via Theorem 1.5 and the extremal example $K^+_{3,n-3}$. No subsequent paper resolving or substantially narrowing this range was found in the indexed literature through May 2026. The problem remains open.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Z3-flow-critical graphs density Euler genus Dvorak Mohar 2205.07498",
+    "Z3 flow critical graph edge density genus alpha conjecture",
+    "citing 2205.07498 Z3-flow-critical graphs surface genus density 2023 2024 2025",
+    "Dvorak Mohar flow-critical graphs genus density 2023 2024 arxiv"
+  ],
+  "notes": "No follow-up paper addressing Problem 1.6 found after exhausting 5 web calls. The source paper was published in SIAM J. Discrete Math. 37 (2023), 699-717, so it is well-indexed; absence of follow-up evidence supports open status with high confidence."
+}

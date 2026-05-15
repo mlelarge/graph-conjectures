@@ -1,0 +1,22 @@
+{
+  "review_id": "2202.07746__00",
+  "safe_id": "2202.07746",
+  "arxiv_id": "2202.07746",
+  "conjecture_title": "Conjecture 4",
+  "paper_title": "Expected number of faces in a random embedding of any graph is at most linear",
+  "published": "2023-03-30",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "No follow-up paper proving or disproving Conjecture 4 (E[F] \\leq \\frac{1}{3}n + 1 for simple graphs) has been found. The source paper itself establishes E[F] \\leq \\frac{\\pi^2}{6}n (Theorem 8) and notes that a chain of triangles connected by cut edges achieves E[F] = \\frac{1}{3}n + 1, making this the conjectured tight constant. A related follow-up (arXiv:2211.01032, SODA 2024) by Campion Loth, Halasz, Masarik, Mohar, and Samal proves logarithmic expected face counts for many specific graph families (complete graphs, random graphs, degree-bounded models), but does not address the worst-case tight linear conjecture.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Campion Loth Mohar random embedding expected faces graph 2202.07746",
+    "expected number faces random embedding simple graph E[F] linear conjecture arxiv",
+    "\"random embedding\" \"expected faces\" \"1/3\" graph conjecture tight bound Mohar"
+  ],
+  "notes": "The conjecture is recent (journal published 2023) and a wide search found no follow-up addressing the tight constant 1/3. The related paper arXiv:2211.01032 (SODA 2024, by partially overlapping authors) shows logarithmic bounds for most graphs but does not address this specific extremal conjecture. Absence of evidence is not suspicious given the difficulty of improving worst-case linear constants in random embedding theory."
+}

@@ -1,0 +1,24 @@
+{
+  "review_id": "2011.08049__00",
+  "safe_id": "2011.08049",
+  "arxiv_id": "2011.08049",
+  "conjecture_title": "Open Problem (Spherical Density Regime)",
+  "paper_title": "Efficient polynomial-time approximation scheme for the genus of dense graphs",
+  "published": "2024-08-27",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "No resolution of the spherical density regime open problem has been found in the literature. The source paper (published in J. ACM 71(6), 2024) identifies the genus approximation problem for graphs with average degree at most 6 as the major open problem in its density-regime framework; Conjecture 1.1 of the paper (APX-hardness for cubic graphs) is the authors' leading candidate resolution but remains unproved. A wide search across arXiv, Jing's research page, and general queries on genus approximation hardness returned no follow-up paper addressing either the spherical regime or the APX-hardness conjecture for cubic graphs.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Jing Mohar genus approximation cubic graphs APX-hardness spherical density 2011.08049",
+    "graph genus approximation average degree 6 spherical regime NP-hard 2024 2025",
+    "WebFetch https://arxiv.org/abs/2011.08049",
+    "WebFetch https://yifanjing.wordpress.com/research/",
+    "genus cubic graphs APX-hard approximation Mohar conjecture 2024 2025 2026"
+  ],
+  "notes": "The open problem has two possible resolutions: (a) an efficient constant-factor approximation algorithm for genus in the spherical density regime (average degree ≤ 6), or (b) a proof that approximation is hard in this regime. Conjecture 1.1 of the paper conjectures APX-hardness for cubic graphs as the most likely resolution; this conjecture itself remains open. No follow-up found in indexed literature as of 2026-05-14."
+}

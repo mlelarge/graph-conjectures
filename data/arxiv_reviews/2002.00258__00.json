@@ -1,0 +1,23 @@
+{
+  "review_id": "2002.00258__00",
+  "safe_id": "2002.00258",
+  "arxiv_id": "2002.00258",
+  "conjecture_title": "Informal Conjecture on Existence of Hoppers for Large Euler Genus",
+  "paper_title": "Excluded minors for the Klein Bottle I. Low connectivity case",
+  "published": "2020-02-01",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Hoppers are a special class of 3-connected building blocks for obstructions of connectivity two for surface embeddings of arbitrary Euler genus. Mohar and Škoda prove in arXiv:2002.00258 that hoppers do not exist for Euler genus 2 (the Klein bottle case), while the companion Part II (arXiv:2002.00261) handles cascades. The authors believe hoppers will appear for sufficiently large Euler genus but provide no construction, and no subsequent paper constructing or ruling out hoppers for any larger genus has been identified in the indexed literature.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Mohar Škoda hoppers Euler genus excluded minors graph theory",
+    "hoppers obstructions connectivity two Euler genus graph minor arXiv",
+    "Mohar Škoda excluded minors Euler genus hoppers 2021 2022 2023 2024 2025",
+    "\"hoppers\" \"Euler genus\" graph obstructions surface embedding 2024 2025 2026"
+  ],
+  "notes": "The companion paper arXiv:2002.00261 (posted the same date) classifies cascades for Euler genus 2 but does not address hoppers for larger genus. The source paper was published in J. Combinatorial Theory, Series B, Vol. 164, pp. 299–320, 2024, but this is merely the journal version of the 2020 preprint. No follow-up constructing or disproving hoppers for any Euler genus > 2 was found after four targeted web searches."
+}

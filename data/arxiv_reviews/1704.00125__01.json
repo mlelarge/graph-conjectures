@@ -1,0 +1,24 @@
+{
+  "review_id": "1704.00125__01",
+  "safe_id": "1704.00125",
+  "arxiv_id": "1704.00125",
+  "conjecture_title": "Open Problem (Section 1.2): APX-hardness on classes without sublinear separators",
+  "paper_title": "Thin graph classes and polynomial-time approximation schemes",
+  "published": "2017-04-01",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Dvořák asks whether maximum independent set is APX-hard on every subgraph-closed graph class that lacks sublinear separators (or at least has exponential expansion). No follow-up paper proving or disproving this was found after an exhaustive search. Related positive results (PTAS, QPTAS for bounded-expansion and sublinear-separator classes) confirm the structural boundary the problem targets, but the hardness side remains unresolved as of 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "APX-hard maximum independent set subgraph-closed class sublinear separators",
+    "Dvořák 1704.00125 thin graph classes PTAS independent set",
+    "APX-hard independent set exponential expansion graph class 2019 2020 2021 2022",
+    "Dvořák \"sublinear separator\" \"independent set\" APX hardness \"bounded expansion\" arxiv",
+    "\"maximum independent set\" \"APX\" \"subgraph-closed\" OR \"hereditary\" \"expansion\" hardness lower bound 2020 2021 2022 2023 2024 2025"
+  ],
+  "notes": "No follow-up resolving the hardness question was found in 5 web calls. The conjecture sits at the boundary between tractability (PTAS on classes with strongly sublinear separators) and hardness (APX-hard on 3-regular graphs, which have no sublinear separators); the intermediate regime—subgraph-closed classes with exponential expansion but no 3-regular graphs—appears untouched in the indexed literature."
+}

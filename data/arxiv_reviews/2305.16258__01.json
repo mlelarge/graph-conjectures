@@ -1,0 +1,33 @@
+{
+  "review_id": "2305.16258__01",
+  "safe_id": "2305.16258",
+  "arxiv_id": "2305.16258",
+  "conjecture_title": "Conjecture 1.7",
+  "paper_title": "Tree independence number I. (Even hole, diamond, pyramid)-free graphs",
+  "published": "2024-02-22",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "solved",
+  "confidence": "high",
+  "summary": "Conjecture 1.7 from arXiv:2305.16258, asserting that (even hole, $K_t$)-free graphs have logarithmic treewidth, was proved in arXiv:2402.14211 (Chudnovsky, Gartland, Hajebi, Lokshtanov, Spirkl, 2024). That paper establishes that for every integer $t\\geq 1$ there exists a constant $c_t$ such that every $n$-vertex even-hole-free graph with no clique of size $t$ has treewidth at most $c_t \\log n$, resolving Conjecture 1.2 of Sintiari and Trotignon and matching the 'upcoming preprint by some of the same authors' referenced in the source paper. The logarithmic bound is asymptotically best possible.",
+  "since_posted": [
+    {
+      "title": "Induced subgraphs and tree decompositions XV. Even-hole-free graphs with bounded clique number have logarithmic treewidth",
+      "authors": "Maria Chudnovsky, Peter Gartland, Sepehr Hajebi, Daniel Lokshtanov, Sophie Spirkl",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2402.14211",
+      "arxiv_id": "2402.14211",
+      "doi": null,
+      "kind": "proof",
+      "claim": "Proves that for every integer t≥1 there exists c_t such that every n-vertex even-hole-free graph with no clique of size t has treewidth at most c_t log n, directly establishing the conjecture."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "even hole free logarithmic treewidth Kt-free graphs Abrishami Chudnovsky Spirkl 2305.16258",
+    "even hole-free graphs logarithmic treewidth clique-free treewidth 2024 2025"
+  ],
+  "notes": "arXiv:2402.14211 is almost certainly the 'upcoming preprint by some of the same authors' referenced in the source paper: its authors include Chudnovsky, Hajebi, and Spirkl, who are also co-authors of 2305.16258. The proved statement coincides with Conjecture 1.2 of Sintiari and Trotignon. No internal references were supplied for this conjecture."
+}

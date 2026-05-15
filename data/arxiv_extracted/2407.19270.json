@@ -1,0 +1,27 @@
+[
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Open question on 1-Degreewidth complexity (Keeney and Lokshtanov)",
+    "statement_text": "What is the computational complexity of deciding whether a digraph has degreewidth at most $1$?",
+    "context_text": "Keeney and Lokshtanov [WG 2024] proved that deciding if a digraph has degreewidth $\\leq 2$ is $\\mathsf{NP}$-complete and left the complexity of the $k=1$ case open. This is the last unresolved case for oriented graphs, since $0$-Degreewidth (acyclicity) is trivially in $\\mathsf{P}$.",
+    "attributed_to": "Keeney and Lokshtanov",
+    "attributed_year": 2024,
+    "paper_contribution": "Proves that $1$-Degreewidth is $\\mathsf{NP}$-complete, and more generally that $k$-Degreewidth is $\\mathsf{NP}$-complete for every integer $k \\geq 1$, settling the last open case for oriented graphs.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2407.19270",
+    "paper_title": "Computing the degreewidth of a digraph is hard",
+    "paper_authors": [
+      "Pierre Aboulker",
+      "Nacim Oijid",
+      "Robin Petit",
+      "Mathis Rocton",
+      "Christopher-Lloyd Simon"
+    ],
+    "published": "2026-04-03",
+    "abs_url": "https://arxiv.org/abs/2407.19270",
+    "source": "html"
+  }
+]

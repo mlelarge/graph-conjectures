@@ -1,0 +1,71 @@
+{
+  "review_id": "1605.07411__00",
+  "safe_id": "1605.07411",
+  "arxiv_id": "1605.07411",
+  "conjecture_title": "Conjecture 2",
+  "paper_title": "$χ$-bounded families of oriented graphs",
+  "published": "2016-05-24",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Conjecture 2 from arXiv:1605.07411 — that $\\mathrm{Forb}(H)$ is $\\chi$-bounded if and only if $H$ is a forest in the directed/oriented setting — is explicitly stated in the source paper to be equivalent to the Gyárfás–Sumner conjecture and remains open in full generality. Substantial partial progress has been made: the conjecture is proved for every orientation of $P_4$ (Cook et al., 2022/2023), for $(\\overrightarrow{P}_6, \\text{triangle})$-free digraphs (Aboulker et al., 2022), and for locally out-transitive oriented graphs, i.e., the $H = S_2^+$ case (Aboulker et al., 2021). No counterexample has been found and the full conjecture remains open.",
+  "since_posted": [
+    {
+      "title": "Decomposing and colouring some locally semicomplete digraphs",
+      "authors": "Pierre Aboulker, Guillaume Aubian, Pierre Charbit",
+      "year": 2021,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2103.07886",
+      "arxiv_id": "2103.07886",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves that oriented graphs in which the out-neighbourhood of every vertex induces a transitive tournament have dichromatic number at most 2, establishing the conjecture for the special case $H = S_2^+$."
+    },
+    {
+      "title": "Proving a directed analogue of the Gyárfás-Sumner conjecture for orientations of $P_4$",
+      "authors": "Linda Cook, Tomáš Masařík, Marcin Pilipczuk, Amadeus Reinald, Uéverton S. Souza",
+      "year": 2023,
+      "venue": "The Electronic Journal of Combinatorics",
+      "url": "https://arxiv.org/abs/2209.06171",
+      "arxiv_id": "2209.06171",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves the directed Gyárfás–Sumner conjecture for the case where $H$ is any orientation of a path on four vertices ($P_4$), showing such $H$-free oriented graphs have dichromatic number bounded by a function of $\\omega$."
+    },
+    {
+      "title": "(P6, triangle)-free digraphs have bounded dichromatic number",
+      "authors": "Pierre Aboulker, Guillaume Aubian, Pierre Charbit, Stéphan Thomassé",
+      "year": 2022,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2212.02272",
+      "arxiv_id": "2212.02272",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves that oriented graphs with no induced $\\overrightarrow{P}_6$ and no triangle have dichromatic number at most 382, establishing the conjecture for the $(\\overrightarrow{P}_6, \\text{triangle-free})$ special case."
+    }
+  ],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2212.02272",
+      "verified": true,
+      "note": "Confirmed: paper by Aboulker, Aubian, Charbit, Thomassé on (P6, triangle)-free digraphs. Abstract references the Aboulker–Charbit–Naserasr dichromatic chi-boundedness conjecture; contribution aligns with the internal reference description."
+    },
+    {
+      "arxiv_id": "2202.01006",
+      "verified": false,
+      "note": "Not verified via WebFetch due to call budget; listed as contextual reference only with no direct progress on the conjecture."
+    },
+    {
+      "arxiv_id": "2103.07886",
+      "verified": true,
+      "note": "Confirmed: paper by Aboulker, Aubian, Charbit on locally semicomplete digraphs. Abstract confirmed decomposition and dichromatic number results for locally out-transitive digraphs, consistent with the internal reference description."
+    }
+  ],
+  "search_queries": [
+    "Gyárfás-Sumner conjecture chi-bounded forest oriented graphs 2024 2025",
+    "Forb(H) chi-bounded if and only if H forest Aboulker 1605.07411"
+  ],
+  "notes": "Conjecture 2 is explicitly equivalent to the Gyárfás–Sumner conjecture (Conjecture 1 of the same paper), so progress is tracked through both the directed (dichromatic number) and undirected (chromatic number) literature. The directed analogue is attributed to Aboulker, Charbit, and Naserasr. The full conjecture is open as of 2026; partial results cover $P_4$ orientations, $P_6$-free triangle-free digraphs, and locally out-transitive graphs."
+}

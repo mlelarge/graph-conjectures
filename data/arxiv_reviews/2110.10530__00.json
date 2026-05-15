@@ -1,0 +1,22 @@
+{
+  "review_id": "2110.10530__00",
+  "safe_id": "2110.10530",
+  "arxiv_id": "2110.10530",
+  "conjecture_title": "Conjecture 7",
+  "paper_title": "Improved pyrotechnics : Closer to the burning graph conjecture",
+  "published": "2022-03-04",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 7 proposes that every tree of growth k and order n is R-burnable whenever R is a finite set containing {0,1,...,k} with sufficient total volume sum_{r in R}(2r+1) >= n. No paper directly addressing this specific conjecture was found in a broad literature search. The broader Burning Number Conjecture has seen significant partial progress since 2022 (proven for trees without degree-2 vertices in arXiv:2312.13972, and for trees with at most floor(sqrt(n-1)) degree-2 vertices in arXiv:2509.03144), but these results target the standard BNC and do not resolve Conjecture 7, which is a strictly stronger generalisation requiring R-burnability for arbitrary valid sets R.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "burning number conjecture trees R-burnable \"growth\" arxiv 2110.10530",
+    "burning number conjecture trees solved 2023 2024 2025",
+    "\"R-burnable\" OR \"R-burnability\" graph trees conjecture burning arxiv"
+  ],
+  "notes": "No follow-up paper addressing R-burnability or Conjecture 7 from arXiv:2110.10530 was found. The closest related work is progress on the standard Burning Number Conjecture: arXiv:2312.13972 (trees without degree-2 vertices, published in Graphs and Combinatorics 2024) and arXiv:2509.03144 (trees with at most floor(sqrt(n-1)) degree-2 vertices, 2025). Neither paper addresses the R-burnability framework. The conjecture is likely open."
+}

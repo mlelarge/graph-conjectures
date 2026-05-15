@@ -1,0 +1,24 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 3 (Akbari et al.)",
+    "statement_text": "Every graph $G$ with minimum degree at least $2$ has an induced linear forest with at least $\\sum_{v\\in V(G)}\\frac{2}{d(v)+1}$ vertices.",
+    "context_text": "Akbari, Amanihamedani, Mousavi, Nikpey, and Sheybani conjectured in 2019 that the Alon–Kahn–Seymour bound for induced forests (the $k=1$ case) can be achieved by a linear forest—one in which every component is a path—provided the graph has minimum degree at least 2. The minimum-degree condition is necessary, as shown by the claw $K_{1,3}$. The original authors proved the conjecture for regular graphs as supporting evidence.",
+    "attributed_to": "Akbari, Amanihamedani, Mousavi, Nikpey, and Sheybani",
+    "attributed_year": 2019,
+    "paper_contribution": "Proves Conjecture 3 in full generality as a corollary of Theorem 4, which shows every graph $G$ (with no minimum-degree restriction) has an induced linear forest with at least $f(G)$ vertices where $f(d)=1$ for $d=0$, $f(d)=5/6$ for $d=1$, and $f(d)=2/(d+1)$ for $d\\geqslant 2$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2403.17568",
+    "paper_title": "A Caro-Wei bound for induced linear forests in graphs",
+    "paper_authors": [
+      "Gwenaël Joret",
+      "Robin Petit"
+    ],
+    "published": "2025-03-14",
+    "abs_url": "https://arxiv.org/abs/2403.17568",
+    "source": "html"
+  }
+]

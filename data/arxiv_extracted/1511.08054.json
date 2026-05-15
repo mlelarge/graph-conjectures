@@ -1,0 +1,26 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Sitharam–Willoughby Conjecture on excluded minors for $f_\\infty(G) \\leq 2$",
+    "statement_text": "$W_4$ is an excluded minor for $f_\\infty(G) \\leq 2$, and $W_4$ is the only excluded minor for $f_\\infty(G) \\leq 2$.",
+    "context_text": "Using techniques from rigidity matroids, Sitharam and Willoughby determined $f_\\infty(G)$ for all graphs $G$ with at most 5 vertices, except for $W_4$. They then posed two conjectures: first that $W_4$ is an excluded minor for $f_\\infty(G) \\leq 2$, and second that $W_4$ is the only such excluded minor. The present paper takes these conjectures as its central subject.",
+    "attributed_to": "Sitharam and Willoughby",
+    "attributed_year": null,
+    "paper_contribution": "Verifies the first conjecture ($W_4$ is indeed an excluded minor for $f_\\infty(G) \\leq 2$) but disproves the second by showing that $K_4 +_e K_4$ is also an excluded minor; the complete set of excluded minors for $f_\\infty(G) \\leq 2$ is exactly $\\{W_4,\\, K_4 +_e K_4\\}$ (Theorem 3).",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "Stated in running prose without a labelled theorem environment; attributed to Sitharam and Willoughby [17] but the bibliography is absent from the extracted text so the year cannot be determined. PDF source — math may be garbled in places.",
+    "arxiv_id": "1511.08054",
+    "paper_title": "The excluded minors for isometric realizability in the plane",
+    "paper_authors": [
+      "Samuel Fiorini",
+      "Tony Huynh",
+      "Gwenaël Joret",
+      "Antonios Varvitsiotis"
+    ],
+    "published": "2016-09-16",
+    "abs_url": "https://arxiv.org/abs/1511.08054",
+    "source": "pdf"
+  }
+]

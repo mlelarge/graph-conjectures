@@ -1,0 +1,71 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 2 (Krivelevich–Alon)",
+    "statement_text": "There is some absolute constant $C > 0$ such that any bipartite graph of maximum degree at most $\\Delta$ is $k$-choosable if $k \\geq C \\log \\Delta$.",
+    "context_text": "Krivelevich and the first author conjectured in 1998 that the upper bound ch$(K_{n,n}) \\sim \\log_2 n$ generalises: every bipartite graph with maximum degree $\\Delta$ has choosability $O(\\log \\Delta)$. Johansson's result for triangle-free graphs gives only $k \\geq C\\Delta/\\log\\Delta$, and apart from constant factors no progress had been made before this paper.",
+    "attributed_to": "Krivelevich and Alon",
+    "attributed_year": 1998,
+    "paper_contribution": "Proves Corollary 10: for any $\\varepsilon > 0$ and $\\Delta$ large enough, every bipartite graph with maximum degree at most $\\Delta$ is $((1+\\varepsilon)\\Delta/\\log^4\\Delta,\\,2)$- and $((1+\\varepsilon)\\Delta/\\log\\Delta,\\,\\log\\Delta)$-choosable, constituting the first asymmetric progress toward the conjecture.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source — math notation verified readable; reference [2] in the paper.",
+    "arxiv_id": "2004.07457",
+    "paper_title": "Asymmetric list sizes in bipartite graphs",
+    "paper_authors": [
+      "Noga Alon",
+      "Stijn Cambie",
+      "Ross J. Kang"
+    ],
+    "published": "2021-08-30",
+    "abs_url": "https://arxiv.org/abs/2004.07457",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Problem 3",
+    "statement_text": "Given $\\Delta_A$ and $\\Delta_B$, what are optimal choices of $k_A \\leq \\Delta_A$ and $k_B \\leq \\Delta_B$ for which any bipartite graph $G = (V = A \\cup B, E)$ with parts $A$ and $B$ having maximum degrees at most $\\Delta_A$ and $\\Delta_B$, respectively, is $(k_A, k_B)$-choosable?",
+    "context_text": "The authors introduce $(k_A, k_B)$-choosability as an asymmetric generalisation of ordinary list colouring of bipartite graphs, where vertices in part $A$ receive lists of size $k_A$ and vertices in part $B$ receive lists of size $k_B$. Problem 3 asks for the optimal list-size pairs in terms of the one-sided maximum degrees $\\Delta_A$ and $\\Delta_B$, and subsumes Conjecture 2 as its symmetric special case.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "PDF source — math notation verified readable.",
+    "arxiv_id": "2004.07457",
+    "paper_title": "Asymmetric list sizes in bipartite graphs",
+    "paper_authors": [
+      "Noga Alon",
+      "Stijn Cambie",
+      "Ross J. Kang"
+    ],
+    "published": "2021-08-30",
+    "abs_url": "https://arxiv.org/abs/2004.07457",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 7",
+    "statement_text": "Let the positive integers $\\Delta_A, \\Delta_B, k_A, k_B$ satisfy one of the following.\n(i) Given $\\varepsilon > 0$, we have $\\Delta_A, \\Delta_B \\geq \\Delta_0$ for some $\\Delta_0 = \\Delta_0(\\varepsilon)$, and $k_A \\geq \\Delta_A^\\varepsilon$ and $k_B \\geq \\Delta_B^\\varepsilon$.\n(ii) For some absolute constant $C > 1$, $k_A \\geq C \\log \\Delta_B$ and $k_B \\geq C \\log \\Delta_A$.\n(iii) $\\Delta_A = \\Delta_B = \\Delta$, and, for some absolute constant $C > 0$, $k_B \\geq C(\\Delta/\\log\\Delta)^{1/k_A} \\log\\Delta$ or $k_A \\geq C(\\Delta/\\log\\Delta)^{1/k_B} \\log\\Delta$.\nThen any bipartite graph $G = (V = A \\cup B, E)$ with parts $A$ and $B$ having maximum degrees at most $\\Delta_A$ and $\\Delta_B$, respectively, is $(k_A, k_B)$-choosable.",
+    "context_text": "Motivated by the asymptotic behaviour of $(k_A, k_B)$-choosability for complete bipartite graphs (Theorem 6 and Theorem 16), the authors conjecture three concrete asymmetric analogues of the Krivelevich–Alon conjecture. Condition (i) is weaker than Conjecture 2; conditions (ii) and (iii) are stronger. The paper shows Conjecture 7 holds for complete bipartite graphs (Theorem 15) and provides partial progress in the general case via Theorem 4 and its corollaries.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "PDF source — math notation verified readable. Three-part conjecture; each part is a separate asymmetric generalisation of Conjecture 2.",
+    "arxiv_id": "2004.07457",
+    "paper_title": "Asymmetric list sizes in bipartite graphs",
+    "paper_authors": [
+      "Noga Alon",
+      "Stijn Cambie",
+      "Ross J. Kang"
+    ],
+    "published": "2021-08-30",
+    "abs_url": "https://arxiv.org/abs/2004.07457",
+    "source": "pdf"
+  }
+]

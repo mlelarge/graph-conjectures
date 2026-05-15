@@ -1,0 +1,46 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Patchell–Spiro Conjecture (asymptotic optimality of CAT count)",
+    "statement_text": "The construction giving $(3/2)n^2 - O(n)$ occurrences of the word CAT in an $n \\times n$ grid (allowing horizontal, vertical, and diagonal occurrences) is asymptotically optimal; that is, the maximum number of CAT occurrences is $(3/2)n^2 + o(n^2)$.",
+    "context_text": "Patchell and Spiro showed the number of CAT's in an $n\\times n$ grid is at most $2n^2$, then constructed a labeling with $(3/2)n^2 - O(n)$ CAT's and conjectured it to be asymptotically optimal. The present paper confirms this in a precise form, proving the exact maximum is $(3^{d-1}/2)n^d$ on $(\\mathbb{Z}/n\\mathbb{Z})^d$ for all $d\\geq 1$.",
+    "attributed_to": "Patchell and Spiro",
+    "attributed_year": 2022,
+    "paper_contribution": "Proves the exact tight bound $(3^{d-1}/2)n^d$ in all dimensions $d\\geq 1$ and completely characterises equality cases as the $d\\cdot 2^{2d-1+1}$ generalized Patchell–Spiro labelings (Theorem 1).",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "The conjecture is stated informally in the paper's introduction without a labelled environment; the exact wording in [2] is not reproduced. PDF source — math may be garbled.",
+    "arxiv_id": "2211.14887",
+    "paper_title": "Cats in cubes",
+    "paper_authors": [
+      "Noga Alon",
+      "Noah Kravitz"
+    ],
+    "published": "2022-11-27",
+    "abs_url": "https://arxiv.org/abs/2211.14887",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Patchell–Spiro Conjecture 1 (words with all distinct letters)",
+    "statement_text": "For a word $w$ of length $r\\geq 2$ in which all letters are distinct, the maximum number of occurrences of $w$ in a labeling of $(\\mathbb{Z}/n\\mathbb{Z})^d$ is at most $\\bigl(3^{d-1}/(r-1)\\bigr)n^d$, with equality achieved by an appropriate generalization of the Patchell–Spiro labeling.",
+    "context_text": "Patchell and Spiro asked what happens when CAT is replaced by another word, in particular words with all distinct letters such as LION and TIGER, and stated Conjecture 1 of [2] in this direction. The spectral argument used for CAT generalizes cleanly to this setting.",
+    "attributed_to": "Patchell and Spiro",
+    "attributed_year": 2022,
+    "paper_contribution": "Completely confirms Conjecture 1 of [2] via Theorem 3, establishing the tight bound $(3^{d-1}/(r-1))n^d$ for any word of length $r$ with all distinct letters in all dimensions $d$, with a full characterization of equality.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "The exact statement of Conjecture 1 from [2] is not reproduced in this paper; the statement is reconstructed from context. PDF source — math may be garbled.",
+    "arxiv_id": "2211.14887",
+    "paper_title": "Cats in cubes",
+    "paper_authors": [
+      "Noga Alon",
+      "Noah Kravitz"
+    ],
+    "published": "2022-11-27",
+    "abs_url": "https://arxiv.org/abs/2211.14887",
+    "source": "pdf"
+  }
+]

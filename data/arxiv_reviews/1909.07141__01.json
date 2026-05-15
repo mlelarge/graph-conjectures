@@ -1,0 +1,22 @@
+{
+  "review_id": "1909.07141__01",
+  "safe_id": "1909.07141",
+  "arxiv_id": "1909.07141",
+  "conjecture_title": "Conjecture 3.1",
+  "paper_title": "Disproportionate division",
+  "published": "2019-09-16",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "Conjecture 3.1 from arXiv:1909.07141 remains open as of May 2026. The n=2 case is settled by the Stromquist–Woodall theorem, but the conjecture is already open for n=3. The paper itself establishes f(n) ≤ 3n−4 cuts, while the conjecture would imply the optimal bound f(n) = 2n−2; no subsequent paper resolving or substantially advancing Conjecture 3.1 was found in the indexed literature.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "arXiv 1909.07141 \"disproportionate division\" Crew Narayanan Spirkl citing",
+    "\"disproportionate division\" \"Stromquist-Woodall\" circle partition measures conjecture",
+    "\"disproportionate division\" \"2n-2\" circle measures partition conjecture 2020 2021 2022 2023 2024 2025"
+  ],
+  "notes": "No follow-up paper resolving Conjecture 3.1 was found across three web searches and two fetches (arXiv abstract page; mass-partitions survey arXiv:2010.00478). The paper was published in Bull. London Math. Soc. 52 (2020) 885–890. Confidence is medium rather than high because the conjecture has been open for ~7 years, making the absence of a resolution mildly surprising but not conclusive."
+}

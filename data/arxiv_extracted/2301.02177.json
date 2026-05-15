@@ -1,0 +1,48 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Stanley–Stembridge Conjecture",
+    "statement_text": "Unit interval graphs have chromatic symmetric functions that expand positively in the $e$-basis of the ring $\\mathrm{Sym}$ of symmetric functions.",
+    "context_text": "Proposed by Stanley and Stembridge in 1993 and reformulated by Guay-Paquet in 2013, this conjecture has driven a large body of research on the chromatic symmetric function $X_G$. The paper shows that the conjecture does not have a K-theoretic lift: the Kromatic symmetric functions $\\overline{X}_{P_n}$ of path graphs are not positive in either of two proposed K-analogues of the $e$-basis.",
+    "attributed_to": "Stanley and Stembridge",
+    "attributed_year": 1993,
+    "paper_contribution": "Demonstrates that the Stanley–Stembridge conjecture does not lift to K-theory, as $\\overline{X}_{P_3}$ is not positive in either of two natural K-theoretic deformations of the $e$-basis, suggesting the conjecture is unlikely to be amenable to a topological/Schubert-calculus approach.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2301.02177",
+    "paper_title": "The Kromatic Symmetric Function: A $K$-theoretic Analogue of $X_G$",
+    "paper_authors": [
+      "Logan Crew",
+      "Oliver Pechenik",
+      "Sophie Spirkl"
+    ],
+    "published": "2023-05-18",
+    "abs_url": "https://arxiv.org/abs/2301.02177",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Grassmannian Subvariety Construction Problem",
+    "statement_text": "For each claw-free incomparability graph $G$, there should exist a subvariety of the Grassmannian whose cohomology class is represented by $X_G$ and whose K-theoretic structure sheaf class is represented by $\\overline{X}_G$. It would be very interesting to have an explicit construction of such subvarieties.",
+    "context_text": "The authors lift Gasharov's theorem to K-theory by showing that the Kromatic symmetric function of a claw-free incomparability graph is $\\overline{s}$-positive. The existence of both a cohomological and a K-theoretic representative suggests a geometric interpretation in terms of Grassmannian subvarieties.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated as 'there should be' and 'it would be very interesting'; no labelled theorem environment. PDF source — overline notation for $\\overline{X}_G$ may be garbled in extraction.",
+    "arxiv_id": "2301.02177",
+    "paper_title": "The Kromatic Symmetric Function: A $K$-theoretic Analogue of $X_G$",
+    "paper_authors": [
+      "Logan Crew",
+      "Oliver Pechenik",
+      "Sophie Spirkl"
+    ],
+    "published": "2023-05-18",
+    "abs_url": "https://arxiv.org/abs/2301.02177",
+    "source": "pdf"
+  }
+]

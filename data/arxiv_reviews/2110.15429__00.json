@@ -1,0 +1,33 @@
+{
+  "review_id": "2110.15429__00",
+  "safe_id": "2110.15429",
+  "arxiv_id": "2110.15429",
+  "conjecture_title": "Conjecture (Section 7)",
+  "paper_title": "Discrepancy of arithmetic progressions in grids",
+  "published": "2021-10-28",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The conjecture that the lower bound in Theorem 1.3 is tight up to a constant factor (i.e., no logarithmic factor) remains open. Li and Nikolov (2025, arXiv:2504.12598) improved the upper bound gap from a factor of log|Omega_N|/(log log|Omega_N|) to sqrt(log|Omega_N|), using factorization norms, but explicitly state that removing this final sqrt(log) factor is beyond their methods. The conjecture itself is restated as open in that paper.",
+  "since_posted": [
+    {
+      "title": "Discrepancy of Arithmetic Progressions in Boxes and Convex Bodies",
+      "authors": "Lily Li, Aleksandar Nikolov",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2504.12598",
+      "arxiv_id": "2504.12598",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Improves the upper bound for disc(A_N) from a log|Omega_N|/(log log|Omega_N|) factor above the conjectured tight bound to a sqrt(log|Omega_N|) factor, via factorization norms; the tight constant-factor conjecture remains explicitly open."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "discrepancy arithmetic progressions grids Fox Xu Zhou 2110.15429 tight upper bound",
+    "discrepancy arithmetic progressions d-dimensional grid upper bound logarithmic factor"
+  ],
+  "notes": "The source paper was published in Mathematika (2024). The main open question is whether the sqrt(log) gap in arXiv:2504.12598 can be removed to match the lower bound by a constant depending only on d."
+}

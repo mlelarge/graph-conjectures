@@ -1,0 +1,23 @@
+{
+  "review_id": "2109.09205__01",
+  "safe_id": "2109.09205",
+  "arxiv_id": "2109.09205",
+  "conjecture_title": "Question on Eliminating the Regularity Lemma from Nikiforov–Rousseau's General Theorem",
+  "paper_title": "Ramsey goodness of books revisited",
+  "published": "2023-07-14",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Fox, He, and Wigderson show that their techniques avoid the regularity lemma for Theorem 1.3 (books are p-good) and a partial case of Nikiforov–Rousseau's general goodness result (Theorem 2.1 of Nikiforov–Rousseau), but explicitly ask whether the elimination can be extended to the full generality of that theorem. No subsequent paper has been found that resolves this question for the full Nikiforov–Rousseau general theorem; related work on fan-complete Ramsey numbers (arXiv:2208.05829) proves regularity-free goodness results for other specific graph families, but does not address the general theorem.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Ramsey goodness regularity lemma Nikiforov Rousseau Fox He Wigderson 2109.09205",
+    "Ramsey goodness regularity lemma elimination general theorem 2023 2024 2025",
+    "Nikiforov Rousseau Ramsey goodness general theorem regularity lemma 2024 2025 arxiv",
+    "\"Ramsey goodness\" \"regularity lemma\" \"Nikiforov\" site:arxiv.org 2024 2025"
+  ],
+  "notes": "No follow-up found that resolves the full generality of Nikiforov–Rousseau Theorem 2.1 without the regularity lemma. The paper arXiv:2208.05829 (Fan-complete Ramsey numbers, updated Jan 2025) proves regularity-free Ramsey goodness for fan-complete graphs K₁+nH using a stability-supersaturation approach, representing related but not fully general progress; it was not verified to directly address the open question. The conjecture is recent (arXiv 2021, journal 2023) and a thorough web search returned no resolution, supporting high confidence that it remains open."
+}

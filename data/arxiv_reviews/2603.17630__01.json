@@ -1,0 +1,22 @@
+{
+  "review_id": "2603.17630__01",
+  "safe_id": "2603.17630",
+  "arxiv_id": "2603.17630",
+  "conjecture_title": "Conjecture 4.2",
+  "paper_title": "Anticoncentration of random spanning trees in graphs with large minimum degree",
+  "published": "2026-03-18",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 4.2 from arXiv:2603.17630 (March 2026) asserts that Ω(n^{d-1}) is the correct lower bound for the number of non-isomorphic spanning trees in connected n-vertex graphs with minimum degree at least d, with K_{d,n-d} as the conjectured extremal example. The same paper establishes the weaker bound n^{Ω(d)} (tight only up to the constant in the exponent), which proves Lee's conjecture in strong form but falls short of the d-1 exponent claimed in Conjecture 4.2. No follow-up paper resolving or making partial progress on this specific conjecture was found in the indexed literature as of May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "arXiv 2603.17630 Bitonti Michel Scott spanning trees anticoncentration",
+    "non-isomorphic spanning trees minimum degree lower bound graph 2026",
+    "\"non-isomorphic spanning trees\" \"n^{d-1}\" OR \"K_{d,n-d}\" minimum degree extremal 2026"
+  ],
+  "notes": "The conjecture is very recent (March 2026). The source paper itself proves n^{Omega(d)} non-isomorphic spanning trees for graphs of minimum degree d, which is tight only up to the constant in the exponent; Conjecture 4.2 asks for the sharp exponent d-1, achieved by K_{d,n-d}. The predecessor paper arXiv:2601.07740 (Anticoncentration of random spanning trees in almost regular graphs) established a similar result for almost regular graphs and predates the source paper. No follow-up addressing Conjecture 4.2 was found after 5 web calls."
+}

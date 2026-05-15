@@ -1,0 +1,50 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Kalai-Meshulam Conjecture",
+    "statement_text": "For every ternary graph, the number of stable sets with even cardinality and the number with odd cardinality differ by at most one. Equivalently, if $f_G = \\sum_{A\\text{ stable}} (-1)^{|A|}$, then $|f_G| \\leq 1$.",
+    "context_text": "A graph is ternary if no induced cycle has length a multiple of three. In the late 1990s, Kalai and Meshulam [8] proposed two conjectures about ternary graphs; the first (bounded chromatic number) was settled by Bonamy, Charbit and Thomassé, while this second conjecture remained open until the present paper. The conjecture was motivated by topological considerations.",
+    "attributed_to": "Kalai and Meshulam",
+    "attributed_year": null,
+    "paper_contribution": "Proves the conjecture in full by establishing that for every ternary graph $G$ and every counter $g$ on $G$, $|g(\\emptyset,\\emptyset)| \\leq 1$, via an inductive argument using the notion of a 'good counter'.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Exact publication year of reference [8] not present in the extracted text; the paper says 'late 1990's'.",
+    "arxiv_id": "1810.00065",
+    "paper_title": "Proof of the Kalai-Meshulam conjecture",
+    "paper_authors": [
+      "Maria Chudnovsky",
+      "Alex Scott",
+      "Paul Seymour",
+      "Sophie Spirkl"
+    ],
+    "published": "2018-09-28",
+    "abs_url": "https://arxiv.org/abs/1810.00065",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Open Problem: 3-colourability of ternary graphs",
+    "statement_text": "It may be that all ternary graphs are 3-colourable.",
+    "context_text": "Bonamy, Charbit and Thomassé proved that every ternary graph is $c$-colourable for some absolute constant $c$, and a stronger result by two of the present authors shows bounded chromatic number whenever clique number is bounded and no induced cycle has length $p\\bmod q$. The paper notes that whether the bound can be taken to be 3 for ternary graphs specifically remains open.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated as a parenthetical remark in the introduction ('it may be that all ternary graphs are 3-colourable, and this remains open'); no formal conjecture environment.",
+    "arxiv_id": "1810.00065",
+    "paper_title": "Proof of the Kalai-Meshulam conjecture",
+    "paper_authors": [
+      "Maria Chudnovsky",
+      "Alex Scott",
+      "Paul Seymour",
+      "Sophie Spirkl"
+    ],
+    "published": "2018-09-28",
+    "abs_url": "https://arxiv.org/abs/1810.00065",
+    "source": "pdf"
+  }
+]

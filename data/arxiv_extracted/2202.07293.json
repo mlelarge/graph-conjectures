@@ -1,0 +1,24 @@
+[
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Optimal bound question",
+    "statement_text": "Is it possible to decrease the bound to $n$ in Theorem 2 (or at least in Theorem 1)?",
+    "context_text": "The paper proves that intersection graphs of $f$-space-filling systems of subsets of a metric space of Assouad-Nagata dimension $n$ have asymptotic dimension at most $2n+1$. The authors remark that this bound is likely not optimal, noting that interval graphs (intersection graphs of balls in $\\mathbb{R}^1$) have asymptotic dimension $1$ rather than $3$. They also observe that $n$-dimensional grids have asymptotic dimension $n$ and can be represented as touching graphs of balls in $\\mathbb{R}^n$, so the bound cannot be decreased below $n$.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "PDF source — stated as 'it is natural to ask' without a labelled theorem environment.",
+    "arxiv_id": "2202.07293",
+    "paper_title": "Asymptotic dimension of intersection graphs",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Sergey Norin"
+    ],
+    "published": "2022-10-04",
+    "abs_url": "https://arxiv.org/abs/2202.07293",
+    "source": "pdf"
+  }
+]

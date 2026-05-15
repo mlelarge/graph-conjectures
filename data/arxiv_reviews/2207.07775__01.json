@@ -1,0 +1,21 @@
+{
+  "review_id": "2207.07775__01",
+  "safe_id": "2207.07775",
+  "arxiv_id": "2207.07775",
+  "conjecture_title": "Conjecture 5.3",
+  "paper_title": "Ramsey multiplicity and the Turán coloring",
+  "published": "2023-06-27",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "No resolution of the conjecture has been found in the literature. The obstacle noted in the source paper remains: $r(k)$ is known only for $k=3$ and $k=4$, and for both values the Ramsey coloring of $K_{r(k)-1}$ is unique with all vertices of equal red and blue degree, which prevents the approach of Lemma 5.2 from working. A direct follow-up (arXiv:2309.06959) extends the Fox–Wigderson Ramsey multiplicity framework to off-diagonal variants but does not appear to address Conjecture 5.3 on mixed blowup colorings.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Fox Wigderson \"Ramsey multiplicity\" \"Turán coloring\" \"mixed blowup\" arXiv 2207.07775",
+    "\"mixed blowup coloring\" \"Ramsey multiplicity\" graph coloring conjecture"
+  ],
+  "notes": "No follow-up paper was found that directly addresses Conjecture 5.3. The related paper arXiv:2309.06959 ('Turán Colourings in Off-Diagonal Ramsey Multiplicity', Electronic Journal of Combinatorics) extends the Fox–Wigderson Ramsey multiplicity work to off-diagonal variants but does not discuss mixed blowup colorings. The conjecture is also intrinsically hard because progress depends on knowledge of $r(k)$ beyond $k=4$, which remains open."
+}

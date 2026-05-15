@@ -1,0 +1,49 @@
+{
+  "review_id": "1605.07411__01",
+  "safe_id": "1605.07411",
+  "arxiv_id": "1605.07411",
+  "conjecture_title": "Conjecture 4",
+  "paper_title": "$χ$-bounded families of oriented graphs",
+  "published": "2016-05-24",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Conjecture 4 from arXiv:1605.07411 — that Forb(S) is χ-bounded for every oriented star S — remains open in full generality. The source paper proved the cases k=0, k=ℓ=1, and the TT_3-free setting; subsequent work (arXiv:2103.07886) proved the S_2^+ special case (locally out-transitive oriented graphs have dichromatic number at most 2). The related Aboulker–Charbit–Naserasr conjecture for oriented trees has seen additional progress (P4 orientations in arXiv:2209.06171, P6-free triangle-free in arXiv:2212.02272), but the full oriented-star conjecture appears open for general k ≥ 2.",
+  "since_posted": [
+    {
+      "title": "Decomposing and colouring some locally semicomplete digraphs",
+      "authors": "Pierre Aboulker, Guillaume Aubian, Pierre Charbit",
+      "year": 2022,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2103.07886",
+      "arxiv_id": "2103.07886",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves the conjecture for the oriented star S_2^+ by showing that every locally out-transitive oriented graph (in which the out-neighbourhood of every vertex induces a transitive tournament) has dichromatic number at most 2."
+    }
+  ],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2212.02272",
+      "verified": false,
+      "note": "WebFetch shows the paper proves that oriented graphs with no induced directed path on six vertices and no triangle have bounded dichromatic number — a result about P6-free digraphs, not directly about oriented stars. The internal-ref description attributing progress on Conjecture 4 appears to conflate this with the broader Aboulker–Charbit–Naserasr conjecture on oriented trees."
+    },
+    {
+      "arxiv_id": "2202.01006",
+      "verified": true,
+      "note": ""
+    },
+    {
+      "arxiv_id": "2103.07886",
+      "verified": true,
+      "note": "WebFetch confirmed: paper proves that locally out-transitive oriented graphs (out-neighbourhood always a transitive tournament) can be 2-coloured acyclically, consistent with the S_2^+ special case of Conjecture 4."
+    }
+  ],
+  "search_queries": [
+    "oriented star Forb chi-bounded oriented graphs Aboulker 1605.07411",
+    "Forb oriented star chi-bounded dichromatic number S_k,k Gyarfas-Sumner oriented graphs"
+  ],
+  "notes": "No paper resolving the full conjecture was found. Special cases proven in the source paper (k=0, k=ℓ=1, TT_3-free) and in arXiv:2103.07886 (S_2^+ case). The closely related conjecture on oriented trees (Aboulker–Charbit–Naserasr) has seen active progress through 2023, but Conjecture 4 for general oriented stars S_{k,k} with k ≥ 2 appears open."
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Open Problem: polytime $f(\\mathrm{OPT})$-approximation for largest complete minor",
+    "statement_text": "It is open whether finding the size of a largest complete minor admits a polynomial-time $f(\\mathrm{OPT})$-approximation algorithm.",
+    "context_text": "The best known polynomial-time approximation factor for the size of a largest complete minor is $O(\\sqrt{n})$, due to Alon, Lingas and Wahlén [1]. No PTAS exists unless $\\mathsf{P}=\\mathsf{NP}$ (Wahlén [32]). The authors cite this open problem as direct motivation for studying the analogous question for complete interval minors in ordered graphs, where they obtain a polytime $f(t)$-approximation.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated in the introduction as a known open problem without a labelled environment and without explicit attribution to specific authors; captured because the authors explicitly flag it as open and use it to motivate the paper.",
+    "arxiv_id": "2505.05997",
+    "paper_title": "A Polynomial-Time Approximation Algorithm for Complete Interval Minors",
+    "paper_authors": [
+      "Romain Bourneuf",
+      "Julien Cocquet",
+      "Chaoliang Tang",
+      "Stéphan Thomassé"
+    ],
+    "published": "2025-05-09",
+    "abs_url": "https://arxiv.org/abs/2505.05997",
+    "source": "html"
+  }
+]

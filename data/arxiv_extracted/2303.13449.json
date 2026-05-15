@@ -1,0 +1,25 @@
+[
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Problem 1.1 (El-Zahar and Erdős)",
+    "statement_text": "Is the following true? For all integers $t, c \\geq 1$, there exists $d \\geq 1$, such that if $\\chi(G) \\geq d$ and $\\omega(G) < t$, then there are anticomplete subsets $A, B \\subseteq V(G)$ with $\\chi(A), \\chi(B) \\geq c$.",
+    "context_text": "El-Zahar and Erdős raised this problem in 1986; it remains open. El-Zahar and Erdős themselves proved that under the same hypotheses there are anticomplete subsets $A, B \\subseteq V(G)$ with $\\chi(A) \\geq 3$ and $\\chi(B) \\geq c$, but little further progress has been made. Omitting the hypothesis on $\\omega(G)$ makes the statement false, as a large complete graph shows.",
+    "attributed_to": "El-Zahar and Erdős",
+    "attributed_year": 1986,
+    "paper_contribution": "Proves two partial results: (1.2) for all $t, c \\geq 1$ there exists $d$ such that if $\\chi(G) \\geq d$ and $\\omega(G) < t$ then there are anticomplete subsets $A, B$ with $G[A]$ having minimum degree at least $c$ and $\\chi(B) \\geq c$; and (1.3) a bipartite variant replacing $\\omega(G) < t$ by $\\tau(G) < t$ (no $K_{t,t}$ subgraph) and the chromatic-number hypothesis by a minimum-degree hypothesis, yielding two anticomplete subgraphs both with minimum degree at least $c$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source; mathematical notation reads cleanly. The paper title 'On a problem of El-Zahar and Erdős' directly signals this as the central studied conjecture.",
+    "arxiv_id": "2303.13449",
+    "paper_title": "On a problem of El-Zahar and Erdoos",
+    "paper_authors": [
+      "Tung Nguyen",
+      "Alex Scott",
+      "Paul Seymour"
+    ],
+    "published": "2023-03-23",
+    "abs_url": "https://arxiv.org/abs/2303.13449",
+    "source": "pdf"
+  }
+]

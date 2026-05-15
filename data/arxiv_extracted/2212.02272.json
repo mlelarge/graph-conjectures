@@ -1,0 +1,74 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.1 (Gyárfás-Sumner)",
+    "statement_text": "For any forest $F$, $\\mathrm{Forb}_{\\mathrm{ind}}(F)$ is $\\chi$-bounded.",
+    "context_text": "Described as a 'celebrated and still wide open question in the area of graph colouring', the Gyárfás-Sumner conjecture asks which forbidden induced subgraph conditions force bounded chromatic number. The paper studies a directed analogue of this conjecture as its primary motivation.",
+    "attributed_to": "Gyárfás and Sumner",
+    "attributed_year": null,
+    "paper_contribution": "The paper does not directly address this conjecture but proves a special case of its digraph analogue (Conjecture 1.2), contributing one step towards the broader programme.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source — math notation may be garbled.",
+    "arxiv_id": "2212.02272",
+    "paper_title": "(P6, triangle)-free digraphs have bounded dichromatic number",
+    "paper_authors": [
+      "Pierre Aboulker",
+      "Guillaume Aubian",
+      "Pierre Charbit",
+      "Stéphan Thomassé"
+    ],
+    "published": "2023-01-18",
+    "abs_url": "https://arxiv.org/abs/2212.02272",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.2 (Aboulker-Charbit-Naserasr)",
+    "statement_text": "For any oriented forest $\\overrightarrow{F}$, $\\mathrm{Forb}_{\\mathrm{ind}}(\\overrightarrow{F})$ is $\\overrightarrow{\\chi}$-bounded.",
+    "context_text": "This is the digraph analogue of the Gyárfás-Sumner conjecture, asserting that forbidding an oriented forest as an induced subdigraph forces bounded dichromatic number. Proving it even for directed paths is described as 'a very challenging case', and the paper makes progress by handling $\\overrightarrow{P}_6$ in the triangle-free setting.",
+    "attributed_to": "Aboulker, Charbit, and Naserasr",
+    "attributed_year": null,
+    "paper_contribution": "Proves the conjecture for the special case of $\\overrightarrow{P}_6$-free digraphs with $\\omega(D) \\leq 2$ (triangle-free), establishing $\\overrightarrow{\\chi}(D) \\leq 382$ (Theorem 1.3).",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source — dichromatic number and directed-path symbols (rendered as #» in extraction) may be garbled; reconstructed from context.",
+    "arxiv_id": "2212.02272",
+    "paper_title": "(P6, triangle)-free digraphs have bounded dichromatic number",
+    "paper_authors": [
+      "Pierre Aboulker",
+      "Guillaume Aubian",
+      "Pierre Charbit",
+      "Stéphan Thomassé"
+    ],
+    "published": "2023-01-18",
+    "abs_url": "https://arxiv.org/abs/2212.02272",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Heroes in $\\mathrm{Forb}_{\\mathrm{ind}}(\\overrightarrow{K}_{1,2})$ conjecture",
+    "statement_text": "Heroes in $\\mathrm{Forb}_{\\mathrm{ind}}(\\overrightarrow{K}_{1,2})$ are the same as heroes in tournaments.",
+    "context_text": "Here $\\overrightarrow{K}_{1,2}$ denotes the oriented star on three vertices with a vertex of out-degree 2; digraphs in $\\mathrm{Forb}_{\\mathrm{ind}}(\\overrightarrow{K}_{1,2})$ are called locally-out tournaments. The conjecture arises from the systematic study of heroes in forbidden-induced-subdigraph classes initiated in reference [4], and is described as still open.",
+    "attributed_to": "authors of references [1] and [14] in the paper",
+    "attributed_year": null,
+    "paper_contribution": "The paper mentions this conjecture as still open without making new progress on it.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "Attribution is to references [1] and [14] whose author names are not given in the extracted text. PDF source — math notation may be garbled. Conjecture appears only as a parenthetical remark in the introduction.",
+    "arxiv_id": "2212.02272",
+    "paper_title": "(P6, triangle)-free digraphs have bounded dichromatic number",
+    "paper_authors": [
+      "Pierre Aboulker",
+      "Guillaume Aubian",
+      "Pierre Charbit",
+      "Stéphan Thomassé"
+    ],
+    "published": "2023-01-18",
+    "abs_url": "https://arxiv.org/abs/2212.02272",
+    "source": "pdf"
+  }
+]

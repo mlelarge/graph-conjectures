@@ -1,0 +1,22 @@
+{
+  "review_id": "2601.15082__00",
+  "safe_id": "2601.15082",
+  "arxiv_id": "2601.15082",
+  "conjecture_title": "Problem 1",
+  "paper_title": "Characterization of sparse monotone graph classes with bounded domination-to-2-independence ratio",
+  "published": "2026-01-21",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Problem 1 asks which graph classes have bounded domination-to-2-independence ratio (i.e., sup gamma(G)/alpha_2(G) < infinity). The source paper itself (Theorem 4) gives an exact characterization for monotone graph classes with bounded average degree: such a class has bounded ratio if and only if it contains no cascades of arbitrarily large slope. However, the question remains fully open for hereditary graph classes (closed under induced subgraphs) and for dense graphs. No follow-up paper resolving the general problem was found in the four months since posting.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "domination 2-independence ratio bounded graph classes arXiv 2601.15082",
+    "domination number 2-independence number ratio sparse graph classes Bonamy Dvořák 2026",
+    "\"domination-to-2-independence\" ratio graph classes 2026"
+  ],
+  "notes": "The source paper itself provides the main progress on Problem 1, characterizing the bounded-ratio property within sparse monotone graph classes. The general question — covering hereditary classes and dense graphs — is explicitly left open (Problem 2 in the paper concerns a related non-linear variant). No citing or follow-up paper was found via web search as of 2026-05-14."
+}

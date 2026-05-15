@@ -1,0 +1,23 @@
+{
+  "review_id": "1707.09402__00",
+  "safe_id": "1707.09402",
+  "arxiv_id": "1707.09402",
+  "conjecture_title": "Complexity of Independent Feedback Vertex Set for H-free graphs (linear forest cases)",
+  "paper_title": "Independent Feedback Vertex Set for $P_5$-free Graphs",
+  "published": "2017-07-28",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "No follow-up paper resolving the complexity of Independent Feedback Vertex Set for P_h-free graphs (h ≥ 6) or for general linear forests has been identified. Related problems—standard Feedback Vertex Set and Even Cycle Transversal on linear-forest-free graphs—have seen progress (polynomial time for sP₃-free and (sP₁+P₅)-free graphs, arXiv:2105.02736), but those results do not carry over to the independent variant. The classification for linear-forest cases of Independent Feedback Vertex Set therefore appears to remain open as of 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Independent Feedback Vertex Set H-free graphs complexity dichotomy linear forest P6-free",
+    "arxiv 1707.09402 Independent Feedback Vertex Set P5-free complexity classification",
+    "Independent Feedback Vertex Set linear forest complexity Bonamy Dabrowski Paulusma 2018 2019 2020 2021 2022",
+    "\"Independent Feedback Vertex Set\" \"P6-free\" OR \"P7-free\" OR \"linear forest\" complexity polynomial 2020 2021 2022 2023 2024 2025"
+  ],
+  "notes": "The conjecture is from 2017; no resolution found after ~9 years in the indexed literature, which warrants medium rather than high confidence. The related (non-independent) Feedback Vertex Set and Even Cycle Transversal problems have been extended to broader linear-forest classes (arXiv:2105.02736), but techniques there rely on block-graph structure and do not obviously extend to the independent setting. Absence of visible progress over this timescale may indicate the problem is genuinely hard."
+}

@@ -1,0 +1,46 @@
+[
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Conlon–Fox–Rödl Question on hedgehog Ramsey numbers",
+    "statement_text": "Is $r(H_t; 2) = t^{2+o(1)}$?",
+    "context_text": "Conlon, Fox, and Rödl proved $r(H_t; 2) \\leq 4t^3$ and asked whether the two-color Ramsey number of the hedgehog $H_t$ is nearly linear in the number of its vertices $t + \\binom{t}{2}$. This is the central open question motivating the paper, set against the backdrop of whether a Burr–Erdős-type bound holds for 1-degenerate 3-uniform hypergraphs under 2-colorings.",
+    "attributed_to": "Conlon, Fox, and Rödl",
+    "attributed_year": null,
+    "paper_contribution": "Proves $r(H_t) < 200t^2 \\ln t + 400t^2 + 1$, establishing $r(H_t) = O(t^2 \\ln t)$ and thus confirming $r(H_t; 2) = t^{2+o(1)}$ affirmatively.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1902.10221",
+    "paper_title": "On Ramsey numbers of hedgehogs",
+    "paper_authors": [
+      "Jacob Fox",
+      "Ray Li"
+    ],
+    "published": "2019-02-26",
+    "abs_url": "https://arxiv.org/abs/1902.10221",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "3-uniform 2-color Burr–Erdős analogue",
+    "statement_text": "Does there exist a constant $c(d)$ depending only on $d$ such that, for every $d$-degenerate 3-uniform hypergraph $H$ on $n$ vertices, $r(H; 2) \\leq c(d) \\cdot n$?",
+    "context_text": "The Burr–Erdős conjecture for graphs was proved by Lee. Conlon, Fox, and Rödl showed the 4-uniform analogue is false (the 4-uniform hedgehog $H_t^{(4)}$ is 1-degenerate yet has $r(H_t^{(4)};2) \\geq 2^{ct}$) and the 3-uniform analogue fails for 3 or more colors. The paper states that the 3-uniform 2-color case 'remains open' and that it was not previously known whether $r(H_t;2)$ is even near-linear.",
+    "attributed_to": "Burr and Erdős",
+    "attributed_year": null,
+    "paper_contribution": "Proves $r(H_t; 2) = O(t^2 \\ln t)$ for the hedgehog $H_t$, a canonical 1-degenerate 3-uniform hypergraph, providing the first nearly-linear upper bound for a non-trivial family in this setting.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "Stated only in prose as 'remains open' with no formal conjecture environment; the 3-uniform 2-color variant is a natural extension of the original Burr–Erdős conjecture but no specific attribution for this precise variant is given in the paper.",
+    "arxiv_id": "1902.10221",
+    "paper_title": "On Ramsey numbers of hedgehogs",
+    "paper_authors": [
+      "Jacob Fox",
+      "Ray Li"
+    ],
+    "published": "2019-02-26",
+    "abs_url": "https://arxiv.org/abs/1902.10221",
+    "source": "pdf"
+  }
+]

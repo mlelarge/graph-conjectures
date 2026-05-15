@@ -1,0 +1,56 @@
+{
+  "review_id": "2202.10412__00",
+  "safe_id": "2202.10412",
+  "arxiv_id": "2202.10412",
+  "conjecture_title": "Informal Conjecture (every forest is good)",
+  "paper_title": "Polynomial bounds for chromatic number VI. Adding a four-vertex path",
+  "published": "2023-03-22",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The conjecture that every forest H is good (H-free graphs are polynomially χ-bounded) remains open in general, but has seen major progress. At the time of the source paper, P₅ was the smallest forest not known to be good; in December 2025 Tung H. Nguyen (arXiv:2512.24907) proved that P₅-free graphs are polynomially χ-bounded, resolving that open case. The polynomial Gyárfás-Sumner conjecture has also been established for bounded-boxicity graphs (arXiv:2407.16882). Forests requiring longer induced paths (P₆ and beyond) remain open.",
+  "since_posted": [
+    {
+      "title": "Polynomial Gyárfás-Sumner conjecture for graphs of bounded boxicity",
+      "authors": "not retrieved",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2407.16882",
+      "arxiv_id": "2407.16882",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves that for every positive integer d and every forest F, the class of intersection graphs of axis-aligned boxes in ℝ^d with no induced F is polynomially χ-bounded, establishing the polynomial Gyárfás-Sumner conjecture for bounded-boxicity graphs."
+    },
+    {
+      "title": "On polynomially high-chromatic pure pairs",
+      "authors": "Tung H. Nguyen",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2504.21127",
+      "arxiv_id": "2504.21127",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Provides further supporting evidence for the polynomial Gyárfás-Sumner conjecture for P₅ by proving that every P₅-free graph with clique number ω≥2 contains a polynomially high-chromatic complete pair of induced subgraphs."
+    },
+    {
+      "title": "Polynomial χ-boundedness for excluding P₅",
+      "authors": "Tung H. Nguyen",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2512.24907",
+      "arxiv_id": "2512.24907",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves that chromatic number is polynomially bounded by clique number for graphs with no induced P₅, resolving the P₅ case of the conjecture and a 1985 open problem of Gyárfás; the full conjecture for all forests remains open."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "forest H-free graphs polynomially chi-bounded Gyarfas-Sumner polynomial 2023 2024 2025",
+    "P5-free polynomial chi-bounded chromatic number Chudnovsky Scott Seymour Spirkl",
+    "arXiv 2202.10412 forest good polynomial chi-bounded follow-up"
+  ],
+  "notes": "The P₅ case (the smallest open case noted in the source paper) was resolved by Nguyen in December 2025 (arXiv:2512.24907). However, the full conjecture for every forest remains open: proving P₅-free is polynomially χ-bounded does not directly yield polynomial bounds for P₆-free or other larger-forest-free classes, since P₆-free is a strictly larger class. Authors for arXiv:2407.16882 were not extracted from the fetch."
+}

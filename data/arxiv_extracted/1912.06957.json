@@ -1,0 +1,48 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Meyniel's Conjecture",
+    "statement_text": "For a connected graph $G$, if $n = |V(G)|$, then $c(G) = O(\\sqrt{n})$.",
+    "context_text": "Described as one of the most important open problems in the Cops and Robbers area, Meyniel's Conjecture was communicated by Frankl and has received much attention but remains far from being proved. The paper's central results concern this conjecture restricted to graphs of bounded degree and its implications for the general case.",
+    "attributed_to": "Meyniel (communicated by Frankl)",
+    "attributed_year": 1987,
+    "paper_contribution": "Proves that Meyniel's conjecture for subcubic graphs implies the Weak Meyniel's Conjecture with exponent 3/4 for all graphs (Lemma 7 and Corollary 8); also constructs arbitrarily large subcubic graphs with cop number at least $n^{1/2-o(1)}$ (Theorem 5), strengthening the known lower bounds for bounded-degree graphs.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1912.06957",
+    "paper_title": "Meyniel's conjecture on graphs of bounded degree",
+    "paper_authors": [
+      "Seyyed Aliasghar Hosseini",
+      "Bojan Mohar",
+      "Sebastian Gonzalez Hermosillo de la Maza"
+    ],
+    "published": "2020-11-21",
+    "abs_url": "https://arxiv.org/abs/1912.06957",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Weak Meyniel's Conjecture",
+    "statement_text": "There is an $\\varepsilon > 0$ such that every graph $G$ of order $n$ has $c(G) = O(n^{1-\\varepsilon})$.",
+    "context_text": "Also known as the Soft Meyniel's Conjecture, this strictly weaker form of Meyniel's Conjecture is described as 'still widely open'. The paper shows that progress on Meyniel's Conjecture for bounded-degree graphs yields explicit exponents for this conjecture in the general case.",
+    "attributed_to": "unknown",
+    "attributed_year": null,
+    "paper_contribution": "Shows (Lemma 7) that if Meyniel's conjecture holds for subcubic graphs then the Weak Meyniel's Conjecture holds with exponent 3/4 for all graphs; more generally (Corollary 8), the weak conjecture for subcubic graphs with exponent $1-\\varepsilon$ implies the weak conjecture with exponent $1 - \\frac{1}{2}\\varepsilon$ for the general case.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "No explicit attribution or citation is given in the paper; the conjecture is introduced as a well-known named open problem without a parenthesised author credit.",
+    "arxiv_id": "1912.06957",
+    "paper_title": "Meyniel's conjecture on graphs of bounded degree",
+    "paper_authors": [
+      "Seyyed Aliasghar Hosseini",
+      "Bojan Mohar",
+      "Sebastian Gonzalez Hermosillo de la Maza"
+    ],
+    "published": "2020-11-21",
+    "abs_url": "https://arxiv.org/abs/1912.06957",
+    "source": "pdf"
+  }
+]

@@ -1,0 +1,54 @@
+[
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.1",
+    "statement_text": "For every $d\\in\\mathbb{Q}$, $d>1$, and $n\\in\\mathbb{N}$, there exists a graph $G$ with $$e(G)\\leq Cn^{2-1/d}$$ edges which is $\\mathcal{H}_{d}(n)$-universal, where $C=C(d)$.",
+    "context_text": "The authors initiate the study of universality for graphs with bounded density, unifying earlier results on bounded-degree graphs, forests, and degenerate graphs. They note that a simple counting argument shows $e(G)=o(n^{2-1/d})$ is insufficient, making the conjectured bound tight up to the constant $C$. The paper proves constructions achieving $O_d(n^{2-1/(\\lceil d\\rceil+1)})$ edges, approaching but not yet matching this conjecture.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "The complete edge bound $e(G)\\leq Cn^{2-1/d}$ appears in the introduction prose; the theorem-environment extraction was truncated. Statement reconstructed from the introduction.",
+    "arxiv_id": "2311.05500",
+    "paper_title": "Universality for graphs with bounded density",
+    "paper_authors": [
+      "Noga Alon",
+      "Natalie Dodson",
+      "Carmen Jackson",
+      "Rose McCarty",
+      "Rajko Nenadov",
+      "Lani Southern"
+    ],
+    "published": "2024-01-11",
+    "abs_url": "https://arxiv.org/abs/2311.05500",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.6",
+    "statement_text": "For every $D,n\\in\\mathbb{N}$ and $d\\in\\mathbb{Q}$, $d\\geq 1$, there exists a graph $G$ with $$e(G)\\leq Cn^{2-1/d}$$ edges which is $\\mathcal{H}_{d}^{D}(n)$-universal, where $C=C(D,d)$.",
+    "context_text": "This is the bounded-maximum-degree analogue of Conjecture 1.1, where $\\mathcal{H}_{d}^{D}(n)$ is the family of all $n$-vertex graphs with density at most $d$ and maximum degree at most $D$. The authors note that unlike the unbounded-degree case, no additional $\\log n$ factor is expected to be necessary even for forests, so the condition is relaxed to $d\\geq 1$. Proposition 1.2 shows the lower bound $e(G)\\geq \\alpha n^{2-1/d}$ holds in this setting, confirming the conjectured bound would be tight.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "The edge bound formula was truncated in the theorem-environment extraction; it is inferred from context (Proposition 1.2 lower bound and analogy with Conjecture 1.1) to be $e(G)\\leq Cn^{2-1/d}$.",
+    "arxiv_id": "2311.05500",
+    "paper_title": "Universality for graphs with bounded density",
+    "paper_authors": [
+      "Noga Alon",
+      "Natalie Dodson",
+      "Carmen Jackson",
+      "Rose McCarty",
+      "Rajko Nenadov",
+      "Lani Southern"
+    ],
+    "published": "2024-01-11",
+    "abs_url": "https://arxiv.org/abs/2311.05500",
+    "source": "html"
+  }
+]

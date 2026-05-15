@@ -1,0 +1,40 @@
+{
+  "review_id": "1806.00825__00",
+  "safe_id": "1806.00825",
+  "arxiv_id": "1806.00825",
+  "conjecture_title": "Conjecture 4",
+  "paper_title": "Short rainbow cycles in graphs and matroids",
+  "published": "2020-05-07",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "Conjecture 4 from arXiv:1806.00825, which asks for a short proper cycle (no two incident edges share a color) of length at most \\lceil n/r \\rceil in an n-vertex graph with n color classes each of size at least r, remains open as a specific target. It is strictly weaker than Aharoni's rainbow cycle conjecture. Progress on Aharoni's conjecture — proven for color class size \\Omega(k \\log k) by Hompe et al. (2021) and advanced further in 2024 — is indirectly relevant but does not settle Conjecture 4. No paper directly addressing the proper-cycle variant was found in the searched literature.",
+  "since_posted": [
+    {
+      "title": "On Aharoni's rainbow generalization of the Caccetta-Häggkvist conjecture",
+      "authors": "Patrick Hompe, Petra Pelikanova, Aneta Pokorna, Sophie Spirkl",
+      "year": 2021,
+      "venue": "Discrete Mathematics, Volume 344, Issue 5",
+      "url": "https://arxiv.org/abs/2101.04716",
+      "arxiv_id": "2101.04716",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves Aharoni's rainbow conjecture (strictly stronger than Conjecture 4) when each color class has size at least \\Omega(k \\log k); only indirectly relevant to Conjecture 4 via the implication that a solved stronger conjecture would settle the weaker one."
+    }
+  ],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2101.04716",
+      "verified": true,
+      "note": "Confirmed to address Aharoni's rainbow generalization of the Caccetta-Häggkvist conjecture, proving it for color class size \\Omega(k \\log k). Published in Discrete Mathematics vol. 344, issue 5 (2021). Does not mention Conjecture 4 from 1806.00825 specifically; its contribution is to the stronger full-rainbow (not proper-cycle) conjecture. The duplicate internal reference record is the same paper."
+    }
+  ],
+  "search_queries": [
+    "rainbow cycles Caccetta-Häggkvist proper edge coloring incident arXiv 1806.00825",
+    "DeVos Drescher Funk \"short rainbow cycles\" conjecture proper coloring incident edges 2020 2021 2022 2023 2024 2025",
+    "\"proper cycle\" OR \"properly colored cycle\" \"color class\" \"n/r\" rainbow Caccetta-Häggkvist short cycle conjecture 2022 2023 2024 2025"
+  ],
+  "notes": "Conjecture 4 requires only that no two incident edges of the found cycle share a color (proper edge-coloring condition on the cycle), which is strictly weaker than Aharoni's rainbow condition (all edges distinct colors). No dedicated follow-up paper addressing this proper-cycle variant was found. A 2024 JCTB paper ('Aharoni's rainbow cycle conjecture holds up to an additive constant', doi:10.1016/j.jctb.2024.12.004) and a 2022 result showing Aharoni's conjecture holds for \\Omega(k) color class size advance the stronger rainbow conjecture, but access to the 2024 paper was blocked (HTTP 403) and it cannot be cited as verified. Confidence is medium because the 2024 JCTB paper may implicitly cover Conjecture 4 but could not be confirmed."
+}

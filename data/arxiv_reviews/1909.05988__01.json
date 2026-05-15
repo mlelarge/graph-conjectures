@@ -1,0 +1,24 @@
+{
+  "review_id": "1909.05988__01",
+  "safe_id": "1909.05988",
+  "arxiv_id": "1909.05988",
+  "conjecture_title": "Determine the order of f_k(N; s, t) in general",
+  "paper_title": "Independent sets in hypergraphs with a forbidden link",
+  "published": "2021-03-18",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The source paper (Fox–He, 2021) resolves the Erdős–Hajnal threshold conjectures and establishes $f_3(N;s,t)=\\Theta(\\log N/\\log\\log N)$ for a constant fraction of $t$-values in the range $(e(s),E(s)]$ for each fixed $s\\ge 4$, but the full problem of determining the order of $f_k(N;s,t)$ for all valid parameters $k\\ge 3$, $s\\ge k+1$, and $1\\le t\\le\\binom{s}{k}$ remains open. A wide web search through May 2026 found no follow-up paper settling the general question; the problem is still active.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Fox He \"independent sets hypergraphs forbidden link\" f_k(N;s,t) order arXiv",
+    "hypergraph independent sets \"forbidden link\" \"Erdos-Hajnal\" threshold phase transition 2022 2023 2024 2025",
+    "\"f_k(N\" \"s,t\" hypergraph \"independent set\" order forbidden 2022 2023 2024 2025 2026",
+    "arxiv.org 1909.05988 abstract and citing papers",
+    "arxiv.org 2603.16069 He Ramsey quasipolynomial hypergraph"
+  ],
+  "notes": "No follow-up resolving the general order of f_k(N;s,t) was found. The 2026 preprint arXiv:2603.16069 (He) concerns quasipolynomial Ramsey numbers for 3-graphs but does not address the f_k(N;s,t) order problem. A Cambridge Core paper on forbidden order-size pairs is thematically related but uses a different framework and does not resolve this conjecture."
+}

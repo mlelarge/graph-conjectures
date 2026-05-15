@@ -1,0 +1,22 @@
+{
+  "review_id": "1812.02420__03",
+  "safe_id": "1812.02420",
+  "arxiv_id": "1812.02420",
+  "conjecture_title": "Problem 5.40",
+  "paper_title": "On the Complexity of Digraph Colourings and Vertex Arboricity",
+  "published": "2020-01-09",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "No paper has been found that constructs the directed Kneser graphs $\\vec{K}(k,b)$ of Problem 5.40 for general $k\\geq b$, or refutes their existence. Related work studies the dichromatic number of Kneser-type digraphs (arXiv:2309.16565, arXiv:2511.12553) and develops circular homomorphism theory, but none directly resolves whether the intersection-acyclicity equivalence required by Problem 5.40 can be achieved. The only confirmed case ($k=b+1$, the directed $(b+1)$-cycle) remains as stated in the source paper.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "directed Kneser graph fractional dichromatic number circular homomorphism digraph",
+    "Hochstättler Schröder Steiner digraph colourings vertex arboricity 1812.02420",
+    "\"directed Kneser graph\" \"b-tuple\" digraph coloring acyclic intersection arXiv 2020 2021 2022 2023 2024 2025"
+  ],
+  "notes": "Search surfaced two related papers: arXiv:2309.16565 ('Colouring Complete Multipartite and Kneser-type Digraphs', 2023) studies dichromatic numbers of Kneser digraphs with canonical orientations; arXiv:2511.12553 ('On the Dichromatic Number of Generalized Kneser and Johnson Digraphs', 2025) extends this to generalized Kneser and Johnson digraphs. Neither addresses the specific intersection-acyclicity construction of Problem 5.40. No follow-up resolving the problem was found in the indexed literature."
+}

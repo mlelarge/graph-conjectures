@@ -1,0 +1,22 @@
+{
+  "review_id": "2512.10438__00",
+  "safe_id": "2512.10438",
+  "arxiv_id": "2512.10438",
+  "conjecture_title": "Problem 5.1",
+  "paper_title": "Color-avoiding directed paths in tournaments",
+  "published": "2026-01-21",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Problem 5.1 asks whether, for some integers q≥4 and N, a non-transitive q-edge-colored N-vertex tournament can have a longest color-avoiding path strictly shorter than the transitive extremum f_{q,q-1}(N). For q=3 the answer is affirmative via the Hamaker–Stein/Gowers–Long construction, but for q≥4 Proposition 1.5 of the source paper rules out any vector-based construction achieving this. No follow-up paper resolving Problem 5.1 for q≥4 was found in the four months since posting.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "color-avoiding directed paths tournaments q-edge-colored Fox Sudakov Wigderson 2512.10438",
+    "color-avoiding path tournament non-transitive coloring f_{q,q-1} 2026",
+    "arxiv 2512.10438 cite follow-up 2026 color-avoiding tournament non-transitive"
+  ],
+  "notes": "Paper is very recent (revised 2026-01-21, approximately 4 months before review date). Wide web search returned no follow-up addressing Problem 5.1. The q=3 case is settled affirmatively by the Hamaker–Stein construction; Proposition 1.5 rules out vector-based constructions for q≥4, which is the key obstruction motivating the open problem in that range."
+}

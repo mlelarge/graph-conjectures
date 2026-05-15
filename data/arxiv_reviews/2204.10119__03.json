@@ -1,0 +1,23 @@
+{
+  "review_id": "2204.10119__03",
+  "safe_id": "2204.10119",
+  "arxiv_id": "2204.10119",
+  "conjecture_title": "Informal Conjecture: average degree $\\geq 5$ and max degree $\\leq 6$ forces $K_5$ minor in bipartite graphs",
+  "paper_title": "Bipartite graphs with no $K_6$ minor",
+  "published": "2022-04-21",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The conjecture is explicitly informal in the source paper: the authors write 'perhaps average degree at least five and maximum degree at most six will guarantee a $K_5$ minor in a bipartite graph, but we have not worked this out.' The paper (published in Journal of Combinatorial Theory, Series B, 2023) focuses on $K_6$ minors in bipartite graphs and leaves the $K_5$ question open. A wide web search across arXiv, Semantic Scholar, and general literature found no follow-up paper addressing this specific degree-constrained $K_5$ minor question in bipartite graphs.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "bipartite graph K5 minor average degree five maximum degree six Chudnovsky Scott Seymour Spirkl",
+    "arxiv 2204.10119 citing papers K5 minor bipartite graph degree",
+    "K5 minor bipartite graph average degree five maximum degree six conjecture 2023 2024 2025",
+    "\"bipartite\" \"K_5 minor\" OR \"K5 minor\" \"average degree\" site:arxiv.org 2023 2024 2025 2026"
+  ],
+  "notes": "No follow-up found. The conjecture is stated speculatively by the authors themselves ('perhaps...but we have not worked this out'), so it was open even at the time of the paper's writing. The paper was published in JCTB 164 (2024) 68–104 (arXiv posted 2022). Semantic Scholar API returned zero citations for arXiv:2204.10119, and targeted keyword searches found no addressing paper."
+}

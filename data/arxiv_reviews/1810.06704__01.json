@@ -1,0 +1,33 @@
+{
+  "review_id": "1810.06704__01",
+  "safe_id": "1810.06704",
+  "arxiv_id": "1810.06704",
+  "conjecture_title": "Question 1.4",
+  "paper_title": "Colouring Graphs with Sparse Neighbourhoods: Bounds and Applications",
+  "published": "2018-10-15",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "medium",
+  "summary": "The exact optimal function ε(δ) characterising the best chromatic bound for δ-sparse graphs remains unknown. Hurley, de Joannis de Verclos, and Kang (arXiv:2007.07874, Advances in Combinatorics 2022) directly improved the lower bound on ε(δ) via an iterated colouring procedure for graphs of bounded local density (the same σ-sparse setting), claiming their leading term is asymptotically optimal as σ→0 and surpassing the Bonamy–Perrett–Postle bound. No paper has determined the exact value of ε(δ) for any specific δ > 0.",
+  "since_posted": [
+    {
+      "title": "An improved procedure for colouring graphs of bounded local density",
+      "authors": "Eoin Hurley, Rémi de Joannis de Verclos, Ross J. Kang",
+      "year": 2022,
+      "venue": "Advances in Combinatorics",
+      "url": "https://arxiv.org/abs/2007.07874",
+      "arxiv_id": "2007.07874",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Improves the lower bound on ε(σ) for σ-sparse (equivalently δ-sparse) graphs, obtaining a leading term claimed asymptotically optimal as σ→0, and simultaneously improving Reed's conjecture ε from 1/26 to 0.119 and the strong chromatic index bound from 1.835Δ² to 1.772Δ²."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "delta-sparse graph chromatic number neighbourhood sparsity Bonamy Perrett Postle 1810.06704",
+    "sparse neighbourhood chromatic number epsilon delta improvement graph colouring 2020 2021 2022 2023 2024 2025"
+  ],
+  "notes": "Question 1.4 is a quantitative optimisation question (find the exact ε(δ)), not a yes/no conjecture; it cannot be 'solved' until the exact function is determined. The Hurley–de Joannis de Verclos–Kang paper (2007.07874) is the clearest post-2018 follow-up on the same sparse-neighbourhood colouring framework and improves the bound, but leaves the exact ε(δ) open. The Dhawan paper (2403.03054) studies (k,r)-locally-sparse graphs, a different sparsity notion not directly relevant to this question."
+}

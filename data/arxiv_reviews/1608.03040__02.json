@@ -1,0 +1,51 @@
+{
+  "review_id": "1608.03040__02",
+  "safe_id": "1608.03040",
+  "arxiv_id": "1608.03040",
+  "conjecture_title": "Open Problem 1",
+  "paper_title": "Majority Colourings of Digraphs",
+  "published": "2016-08-10",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "solved",
+  "confidence": "high",
+  "summary": "Open Problem 1 asks whether a universal constant β < 1 exists such that every digraph admits a 3-colouring where at most β·deg⁺(v) out-neighbours of each vertex v share its colour. Knox and Šámal (EJC 2018) resolve this affirmatively with β = 2/3: they prove that for any list assignment of size k, every digraph has a 2/k-majority list-colouring; specialising to k = 3 with all lists identical gives an ordinary 3-colouring with β = 2/3 < 1. The stronger majority 3-colouring conjecture (β = 1/2) remains open; Anastos, Lamaison, Steiner, and Szabó (2019) established it for digraphs with chromatic number ≤ 6 or dichromatic number ≤ 3, and for digraphs with maximum out-degree ≤ 4.",
+  "since_posted": [
+    {
+      "title": "Linear Bound for Majority Colourings of Digraphs",
+      "authors": "Fiachra Knox, Robert Šámal",
+      "year": 2018,
+      "venue": "The Electronic Journal of Combinatorics",
+      "url": "https://www.combinatorics.org/ojs/index.php/eljc/article/view/v25i3p29",
+      "arxiv_id": null,
+      "doi": null,
+      "kind": "proof",
+      "claim": "Proves that every digraph with list assignments of size k has a 2/k-majority list-colouring (best possible for even k); setting k = 3 and all lists equal to {1,2,3} resolves Open Problem 1 with the universal constant β = 2/3 < 1."
+    },
+    {
+      "title": "Majority Colorings of Sparse Digraphs",
+      "authors": "Michael Anastos, Ander Lamaison, Raphael Steiner, Tibor Szabó",
+      "year": 2019,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/1911.01954",
+      "arxiv_id": "1911.01954",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves the stronger majority (β = 1/2) 3-choosability conjecture for digraphs with chromatic number ≤ 6 or dichromatic number ≤ 3, and for max out-degree ≤ 4 or max degree ≤ 7; shows every digraph has a fractional majority 3.9602-colouring; establishes NP-completeness of majority 2-colourability."
+    }
+  ],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "1911.01954",
+      "verified": true,
+      "note": "Confirmed via WebFetch: the five internal-reference entries all correspond to this single paper. Its results address the stronger β = 1/2 (majority) 3-colouring conjecture for special graph classes, not Open Problem 1 directly (which is resolved by Knox-Šámal 2018 with β = 2/3). The contribution attributed 'answers the question negatively' refers to NP-completeness of majority 2-colourability, a different problem."
+    }
+  ],
+  "search_queries": [
+    "majority coloring digraphs 3-coloring beta outdegree fraction Kreutzer Oum Seymour Wood 2016",
+    "majority 3-coloring digraph beta fraction out-neighbours universal constant 2022 2023 2024 2025",
+    "Knox Šámal linear bound majority colourings digraphs arXiv 2017 2018"
+  ],
+  "notes": "Open Problem 1 is resolved by Knox and Šámal (EJC 2018, v25i3p29) with β = 2/3, since their list-colouring result specialises to ordinary 3-colourings. The stronger majority 3-colouring conjecture (β = 1/2) remains open as of 2026. The five internal references all point to the same paper (arXiv:1911.01954), which targets the harder β = 1/2 conjecture for sparse digraphs."
+}

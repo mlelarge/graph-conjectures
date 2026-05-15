@@ -1,0 +1,22 @@
+{
+  "review_id": "2509.02561__00",
+  "safe_id": "2509.02561",
+  "arxiv_id": "2509.02561",
+  "conjecture_title": "Conjecture 15",
+  "paper_title": "Random Cayley graphs and random sumsets",
+  "published": "2025-09-02",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 15 of arXiv:2509.02561 proposes an optimal covering lemma: collections \\mathcal{F}_{\\ell} of complexity \\log|\\mathcal{F}_{\\ell}|=\\tilde{O}(2^{\\ell}) and minimum member size \\tilde{\\Omega}(2^{\\ell}s) such that every set A with |A|=s and |A+A|\\leq K|A| has its sumset containing some F\\in\\mathcal{F}_{\\ell} for \\ell\\leq\\log_2 K. The paper establishes a weaker version (Theorem 6) with complexity exponential in 2^{2\\ell} rather than 2^{\\ell}, and the conjecture asks to close this gap. No follow-up resolving the conjecture was found; the paper was posted in September 2025 and the conjecture appears to remain open.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Alon Pham \"Random Cayley graphs and random sumsets\" 2509.02561 covering lemma sumset doubling",
+    "sumset doubling covering lemma \"low complexity\" Lovett question iterated sumsets additive combinatorics 2025 2026",
+    "arxiv 2509.02561 Alon Pham cite follow-up 2025 2026 sumset small doubling covering"
+  ],
+  "notes": "No follow-up found in indexed literature. The conjecture is an optimal strengthening of Theorem 6 of the same paper, reducing the complexity bound from \\exp(O(2^{2\\ell})) to \\exp(\\tilde{O}(2^{\\ell})). It is motivated by Lovett's question (from Green's open problems list) on whether sumsets A+A of dense sets contain large subsets of the form B+B+B+B. The paper is very recent (September 2025), so the open status is expected."
+}

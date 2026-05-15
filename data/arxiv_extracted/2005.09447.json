@@ -1,0 +1,26 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Chen-Chvatal Conjecture",
+    "statement_text": "Every finite metric space $M = (V, d)$ satisfies the de Bruijn-Erd\\H{o}s property: $M$ has a universal line, or at least $|V|$ distinct lines.",
+    "context_text": "Chen and Chv\\'atal posed this in 2008 as Question 1 of [5], asking whether all finite metric spaces satisfy the de Bruijn-Erd\\H{o}s property (DBE). By lack of a counterexample the question has since grown into a conjecture; it remains open even for graph metrics.",
+    "attributed_to": "Chen and Chvatal",
+    "attributed_year": 2008,
+    "paper_contribution": "Proves that graph metrics induced by \\{house, hole\\}-free graphs (graphs with no induced house and no induced cycle of length at least 5) satisfy the de Bruijn-Erd\\H{o}s property, thereby resolving Problem 3 of Chv\\'atal's 2018 survey.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2005.09447",
+    "paper_title": "Graphs with no induced house nor induced hole have the de Bruijn-Erdős property",
+    "paper_authors": [
+      "Pierre Aboulker",
+      "Laurent Beaudou",
+      "Martín Matamala",
+      "José Zamora"
+    ],
+    "published": "2020-05-19",
+    "abs_url": "https://arxiv.org/abs/2005.09447",
+    "source": "pdf"
+  }
+]

@@ -1,0 +1,48 @@
+[
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Problem 1.2 (Gyárfás)",
+    "statement_text": "Is the class $\\mathcal{C}\\overset{\\mathfrak{g}}{\\cap}\\mathcal{C}$ $\\chi$-bounded? In particular, is $\\mathcal{C}\\overset{\\mathfrak{g}}{\\cap}\\mathcal{I}$ $\\chi$-bounded?",
+    "context_text": "Gyárfás (1985) asked, motivated by Asplund and Grünbaum's result that the class $\\mathcal{I}\\overset{\\mathfrak{g}}{\\cap}\\mathcal{I}$ (intersection graphs of axis-aligned rectangles) is $\\chi$-bounded, whether the class of graphs of chordality at most two is also $\\chi$-bounded. The paper shows that Burling graphs are contained in $\\mathcal{C}\\overset{\\mathfrak{g}}{\\cap}\\mathcal{I}$, and thus the answer to Gyárfás's question is negative.",
+    "attributed_to": "Gyárfás",
+    "attributed_year": 1985,
+    "paper_contribution": "Shows the answer is negative by noting that Burling graphs (which have unbounded chromatic number and clique number one) lie in $\\mathcal{C}\\overset{\\mathfrak{g}}{\\cap}\\mathcal{I}$, using a result of Felsner, Joret, Micek, Trotter and Wiechert.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2404.05992",
+    "paper_title": "Graphs of bounded chordality",
+    "paper_authors": [
+      "Aristotelis Chaniotis",
+      "Babak Miraftab",
+      "Sophie Spirkl"
+    ],
+    "published": "2024-04-09",
+    "abs_url": "https://arxiv.org/abs/2404.05992",
+    "source": "html"
+  },
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Problem 3.3 (Dujmovic, Joret, Morin, Norin, and Wood)",
+    "statement_text": "Is there a function $f$ such that every graph $G$ that has two $k$-orthogonal tree-decompositions is $f(k)$-colorable?",
+    "context_text": "Dujmovic, Joret, Morin, Norin, and Wood posed this question and conjectured a positive answer. The paper shows via Proposition 3.2 that this question is equivalent to the first part of Gyárfás's question (Problem 1.2) about whether graphs of chordality at most two are $\\chi$-bounded.",
+    "attributed_to": "Dujmovic, Joret, Morin, Norin, and Wood",
+    "attributed_year": 2018,
+    "paper_contribution": "Shows this problem is equivalent to Problem 1.2 (Gyárfás's question on $\\chi$-boundedness of $\\mathcal{C}\\overset{\\mathfrak{g}}{\\cap}\\mathcal{C}$), and notes that Felsner et al. answered it in the negative.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2404.05992",
+    "paper_title": "Graphs of bounded chordality",
+    "paper_authors": [
+      "Aristotelis Chaniotis",
+      "Babak Miraftab",
+      "Sophie Spirkl"
+    ],
+    "published": "2024-04-09",
+    "abs_url": "https://arxiv.org/abs/2404.05992",
+    "source": "html"
+  }
+]

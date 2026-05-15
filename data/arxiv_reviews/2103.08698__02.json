@@ -1,0 +1,22 @@
+{
+  "review_id": "2103.08698__02",
+  "safe_id": "2103.08698",
+  "arxiv_id": "2103.08698",
+  "conjecture_title": "Problem 7",
+  "paper_title": "Approximation metatheorems for classes with bounded expansion",
+  "published": "2021-10-09",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "Problem 7 asks whether monotone maximization problems expressible in first-order logic admit an O(n^{o(1)})-factor approximation on n-vertex graphs from nowhere-dense classes. The paper's own approach does not extend to nowhere-dense classes because it relies on a quantifier elimination result specific to bounded-expansion classes. A 2022 SWAT conference version of the paper and a 2024 SWAT paper on related multivariate optimization both remain confined to bounded-expansion classes. The ESA 2023 paper by Dreier, Mock, and Rossmanith addresses restricted FO counting evaluation on nowhere-dense classes, but targets counting queries rather than monotone maximization. No follow-up resolving Problem 7 was found in the indexed literature.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "nowhere-dense \"first order\" \"monotone maximization\" approximation Dvořák 2021",
+    "nowhere-dense graphs FO approximation sublinear factor 2103.08698",
+    "approximation \"nowhere-dense\" \"first-order logic\" O(n^{o(1)}) factor 2022 2023 2024"
+  ],
+  "notes": "No follow-up paper resolving Problem 7 was found after 5 web calls. The SWAT 2024 paper (LIPIcs.SWAT.2024.35) on multivariate optimization on bounded expansion classes is thematically adjacent but does not address nowhere-dense classes. The problem is from 2021 (4+ years old), so medium confidence is assigned: absence of evidence is mildly suspicious for a problem of this age, but the question sits at a technically hard frontier (FO approximation beyond bounded expansion) where open problems routinely remain unresolved for many years."
+}

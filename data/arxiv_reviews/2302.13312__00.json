@@ -1,0 +1,24 @@
+{
+  "review_id": "2302.13312__00",
+  "safe_id": "2302.13312",
+  "arxiv_id": "2302.13312",
+  "conjecture_title": "Conjecture 2",
+  "paper_title": "Partitioning edges of a planar graph into linear forests and a matching",
+  "published": "2023-02-26",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The conjecture holds for all odd Δ ≥ 9: the case Δ ≥ 11 follows from prior linear arboricity results, and the source paper (arXiv:2302.13312) resolves Δ = 9. The sole remaining open case is Δ = 7. A targeted web search and citation lookup (Semantic Scholar) found no post-2023 paper resolving the Δ = 7 case.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "planar graph linear forests matching linear arboricity delta 7 2302.13312",
+    "planar graph maximum degree 7 linear forests matching edge partition arxiv 2024 2025",
+    "Bonamy Czyzewska Kowalik Pilipczuk linear forests matching planar degree 7 conjecture 2024 2025 2026",
+    "semanticscholar API citations arXiv:2302.13312",
+    "arxiv.org/abs/2304.03256 matching bounded linear forest complexity"
+  ],
+  "notes": "The Δ = 7 case is the only remaining open instance. One citing paper was found (arXiv:2304.03256, Banerjee et al., 2023, JGT) but it studies the computational complexity of decomposing into a matching and a k-bounded linear forest and makes no claim about the planar Δ = 7 conjecture. No resolution of the full conjecture found after 5 web calls."
+}

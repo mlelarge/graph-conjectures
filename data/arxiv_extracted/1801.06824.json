@@ -1,0 +1,25 @@
+[
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Open Problem: Characterization of parameters satisfying (CC)",
+    "statement_text": "Characterize the (hereditary, connected) graph parameters $f$ satisfying property (CC): for all integers $p$ and $s$, there exist two integers $p'$ and $s'$ such that $\\mathrm{col}_{f,p'}(G) \\leq s'$ for every graph $G$ satisfying $\\chi^\\ell_{f,p}(G) \\leq s$.",
+    "context_text": "The authors show that the fan parameter does not satisfy (CC) (Lemma 2), and provide two sufficient conditions (via property (CD) and via Lemma 4) covering all parameters previously studied in the literature, but explicitly state they were unable to fully describe the class of parameters satisfying (CC). This leaves the characterization problem open.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated in prose without a labelled environment: 'While we were unable to fully describe the graph parameters satisfying (CC), we provide two sufficient conditions…'. The paper text appears truncated before Section 2, so additional conjectures or open problems in later sections may not be visible in the supplied text.",
+    "arxiv_id": "1801.06824",
+    "paper_title": "On generalized choice and coloring numbers",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Jakub Pekárek",
+      "Jean-Sébastien Sereni"
+    ],
+    "published": "2019-02-26",
+    "abs_url": "https://arxiv.org/abs/1801.06824",
+    "source": "pdf"
+  }
+]

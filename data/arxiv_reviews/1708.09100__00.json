@@ -1,0 +1,22 @@
+{
+  "review_id": "1708.09100__00",
+  "safe_id": "1708.09100",
+  "arxiv_id": "1708.09100",
+  "conjecture_title": "Open Question on s((Z/kZ)^n) for fixed k",
+  "paper_title": "Erdős-Ginzburg-Ziv constants by avoiding three-term arithmetic progressions",
+  "published": "2018-04-17",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The open question of estimating s((Z/kZ)^n) for fixed k and large n remains unresolved. For prime k=p, Fox–Sauermann (2018) established s(F_p^n) ≤ 2p·r(F_p^n), giving an exponential upper bound via Ellenberg–Gijswijt, but a gap between this and Elsholtz's exponential lower bound (base ~2.08 for odd k≥3) remains open. For composite k the Alon–Dubiner bound (cn log n)^n·k remains the state of the art, far exceeding the exponential lower bound. No subsequent verified paper closes this gap.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Erdos-Ginzburg-Ziv constant s((Z/kZ)^n) fixed k large n bounds Fox Sauermann 1708.09100",
+    "EGZ constant (Z/kZ)^n fixed k exponential lower bound Elsholtz Alon Dubiner",
+    "\"Exponential bounds for the Erdős-Ginzburg-Ziv constant\" arXiv"
+  ],
+  "notes": "No verified post-2018 paper found that resolves or substantially narrows the gap between the exponential lower bound (base ~2.08 for odd k≥3, Elsholtz) and the upper bounds for s((Z/kZ)^n) with fixed k and large n. Naslund (arXiv:1701.04942) proved exponential upper bounds for prime-order groups before the Fox–Sauermann paper; Hegedüs (arXiv:1712.00228, 2017) extended these to arbitrary finite abelian groups; both arXiv versions predate Fox–Sauermann and are not post-2018 results. The question for composite fixed k remains fully open, with a large gap between polynomial-exponential upper bounds and exponential lower bounds."
+}

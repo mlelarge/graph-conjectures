@@ -1,0 +1,102 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Grünbaum's Conjecture (Conjecture 2)",
+    "statement_text": "If $G$ is a 2-connected cubic graph embedded in the torus and $G$ is not 3-edge-colorable, then $G$ contains two edges on the same face of the embedding, whose removal gives a planar graph in which the four endpoints of the removed edges lie on the boundaries of two faces.",
+    "context_text": "Grünbaum posed this conjecture in 1968 alongside a more general question of whether any snark can be the dual of a triangulation of a surface. Although the general statement fails for genus 5 (Kochol), the torus case is the central subject of this paper. The conjecture also motivated a further generalization by Thompson concerning $d$-edge-colorability of duals of triangulations of $(d-1)$-dimensional manifolds.",
+    "attributed_to": "Grünbaum",
+    "attributed_year": 1968,
+    "paper_contribution": "Proves a strengthening: the only snarks embeddable in the torus are the Petersen graph and its dot products (the Blanuša-$H_k$ ($k\\geq 1$) and Blanuša-$V_k$ ($k\\geq 1$) families), implying that every dual of a triangulation of the torus has a Grünbaum coloring (proper 3-edge-coloring).",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2505.07002",
+    "paper_title": "Three-edge-coloring (Tait coloring) cubic graphs on the torus: A proof of Grünbaum's conjecture",
+    "paper_authors": [
+      "Yuta Inoue",
+      "Ken-ichi Kawarabayashi",
+      "Atsuyuki Miyashita",
+      "Bojan Mohar",
+      "Tomohiro Sonobe"
+    ],
+    "published": "2025-05-11",
+    "abs_url": "https://arxiv.org/abs/2505.07002",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Tutte 4-Flow Conjecture (Conjecture 1)",
+    "statement_text": "Every 2-connected graph without a Petersen graph minor admits a nowhere-zero 4-flow.",
+    "context_text": "Tutte's 4-Flow Conjecture remains open in general; its special case for cubic graphs was proved by Robertson, Seymour, and Thomas in 1997. The paper's main structural theorem implies a very strong version for toroidal graphs, well beyond what the conjecture requires on that surface.",
+    "attributed_to": "Tutte",
+    "attributed_year": null,
+    "paper_contribution": "Proves that every 2-edge-connected graph embedded in the torus admits a nowhere-zero 4-flow unless it is Petersen-like (in which case it provably does not); this vastly strengthens the Tutte 4-Flow Conjecture on the torus because almost all toroidal graphs contain a Petersen minor but almost none are Petersen-like.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2505.07002",
+    "paper_title": "Three-edge-coloring (Tait coloring) cubic graphs on the torus: A proof of Grünbaum's conjecture",
+    "paper_authors": [
+      "Yuta Inoue",
+      "Ken-ichi Kawarabayashi",
+      "Atsuyuki Miyashita",
+      "Bojan Mohar",
+      "Tomohiro Sonobe"
+    ],
+    "published": "2025-05-11",
+    "abs_url": "https://arxiv.org/abs/2505.07002",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Robertson's 4-Flow Conjecture for the Torus (Conjecture 3)",
+    "statement_text": "Every 2-edge-connected graph in the torus whose representativity is at least 3, has a nowhere-zero 4-flow.",
+    "context_text": "Robertson posed this conjecture in the mid-1990s (recorded as Problem 5.5.19 in [24]); it is a surface-specific instance of his more general Conjecture 4. The paper's Theorem 1.4 implies this conjecture.",
+    "attributed_to": "Robertson",
+    "attributed_year": 1994,
+    "paper_contribution": "Proved as a corollary of Theorem 1.4, which establishes nowhere-zero 4-flows for all 2-edge-connected toroidal graphs that are not Petersen-like.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2505.07002",
+    "paper_title": "Three-edge-coloring (Tait coloring) cubic graphs on the torus: A proof of Grünbaum's conjecture",
+    "paper_authors": [
+      "Yuta Inoue",
+      "Ken-ichi Kawarabayashi",
+      "Atsuyuki Miyashita",
+      "Bojan Mohar",
+      "Tomohiro Sonobe"
+    ],
+    "published": "2025-05-11",
+    "abs_url": "https://arxiv.org/abs/2505.07002",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Robertson's 4-Flow Conjecture for General Surfaces (Conjecture 4)",
+    "statement_text": "For every surface $S$, there is a constant $r$ such that every 2-edge-connected graph embedded in $S$ with representativity at least $r$ has a nowhere-zero 4-flow.",
+    "context_text": "Robertson made this conjecture in the mid-1990s as a surface-theoretic analogue of Grünbaum's Conjecture. It remains open for surfaces beyond the projective plane and the torus; the paper settles the torus case with $r=3$.",
+    "attributed_to": "Robertson",
+    "attributed_year": 1994,
+    "paper_contribution": "Establishes the conjecture for the torus with constant $r=3$ via Theorem 1.4; the projective-plane case ($r=4$) was resolved by earlier work [16].",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2505.07002",
+    "paper_title": "Three-edge-coloring (Tait coloring) cubic graphs on the torus: A proof of Grünbaum's conjecture",
+    "paper_authors": [
+      "Yuta Inoue",
+      "Ken-ichi Kawarabayashi",
+      "Atsuyuki Miyashita",
+      "Bojan Mohar",
+      "Tomohiro Sonobe"
+    ],
+    "published": "2025-05-11",
+    "abs_url": "https://arxiv.org/abs/2505.07002",
+    "source": "pdf"
+  }
+]

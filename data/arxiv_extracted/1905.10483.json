@@ -1,0 +1,46 @@
+[
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Lovász–Nešetřil–Pultr Problem on product dimension of clique factors",
+    "statement_text": "Estimate $Q(s, r)$, the product dimension of $K_s(r)$ (the vertex-disjoint union of $r$ copies of the complete graph $K_s$), for values of $s \\geq 3$.",
+    "context_text": "Lovász, Nešetřil and Pultr proved in 1980 that $Q(2,r) = \\lceil \\log_2(2r) \\rceil$ and raised the problem of estimating $Q(s,r)$ for larger values of $s$. More recently, Kleinberg and Weinberg independently considered the same problem, motivated by prophet inequalities for intersections of matroids.",
+    "attributed_to": "Lovász, Nešetřil, and Pultr",
+    "attributed_year": 1980,
+    "paper_contribution": "Proves that for every fixed $s \\geq 2$, $Q(s,r) = (1+o(1))\\log_2 r$ where the $o(1)$-term tends to 0 as $r \\to \\infty$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1905.10483",
+    "paper_title": "On the product dimension of clique factors",
+    "paper_authors": [
+      "Noga Alon",
+      "Ryan Alweiss"
+    ],
+    "published": "2020-02-26",
+    "abs_url": "https://arxiv.org/abs/1905.10483",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Open Problem: asymptotic behavior of $Q(s,r)$ when $s$ and $r$ grow together",
+    "statement_text": "Determine the asymptotic behavior of $Q(s, r)$ when $s$ and $r$ grow together (i.e., when $s$ is not fixed as $r \\to \\infty$).",
+    "context_text": "The paper resolves $Q(s,r) = (1+o(1))\\log_2 r$ for every fixed $s$ as $r \\to \\infty$, but explicitly states in the abstract that the problem of determining the asymptotic behavior of $Q(s,r)$ when both $s$ and $r$ grow simultaneously remains open.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "Section 4 (concluding remarks and open problems) is referenced in the introduction but its full content is not present in the extracted PDF text; additional open problems from that section may be missing.",
+    "arxiv_id": "1905.10483",
+    "paper_title": "On the product dimension of clique factors",
+    "paper_authors": [
+      "Noga Alon",
+      "Ryan Alweiss"
+    ],
+    "published": "2020-02-26",
+    "abs_url": "https://arxiv.org/abs/1905.10483",
+    "source": "pdf"
+  }
+]

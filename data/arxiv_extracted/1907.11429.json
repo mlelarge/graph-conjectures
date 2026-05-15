@@ -1,0 +1,30 @@
+[
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Open problem on minimum independence ratio of Mycielski graphs",
+    "statement_text": "The exact value of the minimum independence ratio of Mycielski graphs seems to be unknown.",
+    "context_text": "While Cropper, Gyárfás and Lehel [CGL06] established asymptotic bounds $c_1 \\cdot \\frac{\\sqrt{\\log m}}{m} \\leq \\mathrm{mir}(M_s) \\leq c_2 \\cdot \\frac{\\log m}{m}$ for every integer $m > 3$ (where $s$ is one less than the Ramsey number $R(3,m)$), no exact formula for $\\mathrm{mir}(M_k)$ is known. The authors flag this gap while discussing why replacing the constant $2$ by a larger integer $k$ fails to generalise Observation 1.1.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated informally in passing ('seems to be unknown'); no labelled environment. Question 1.2 is posed in the paper but immediately resolved negatively and so is not extracted as an open problem.",
+    "arxiv_id": "1907.11429",
+    "paper_title": "Revisiting a theorem by Folkman on graph colouring",
+    "paper_authors": [
+      "Marthe Bonamy",
+      "Pierre Charbit",
+      "Oscar Defrain",
+      "Gwenaël Joret",
+      "Aurélie Lagoutte",
+      "Vincent Limouzy",
+      "Lucas Pastor",
+      "Jean-Sébastien Sereni"
+    ],
+    "published": "2020-03-23",
+    "abs_url": "https://arxiv.org/abs/1907.11429",
+    "source": "pdf"
+  }
+]

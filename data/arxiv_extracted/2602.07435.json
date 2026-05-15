@@ -1,0 +1,54 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Meyniel's Conjecture",
+    "statement_text": "$\\operatorname{cop}(G)=\\mathcal{O}(\\sqrt{n})$ for every $n$-vertex connected graph $G$.",
+    "context_text": "Meyniel's conjecture from 1985 is the most famous open problem in the cops and robber game. The best known upper bound prior to this paper is $\\operatorname{cop}(G)\\leqslant n/2^{(1-o(1))\\sqrt{\\log n}}$, obtained independently by Lu and Peng (2011) and Scott and Sudakov (2011). This paper extends that bound to the vertex cover number parameter.",
+    "attributed_to": "Meyniel",
+    "attributed_year": 1985,
+    "paper_contribution": "Proves that every connected graph with vertex cover number $k$ has cop number at most $k/2^{(1-o(1))\\sqrt{\\log k}}$, giving the first sublinear upper bound on the cop number in terms of the vertex cover number.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2602.07435",
+    "paper_title": "Cops and robber in graphs with bounded vertex cover number",
+    "paper_authors": [
+      "Prosenjit Bose",
+      "Louis Esperet",
+      "Jędrzej Hodor",
+      "Gwenaël Joret",
+      "Piotr Micek",
+      "Clément Rambaud"
+    ],
+    "published": "2026-02-07",
+    "abs_url": "https://arxiv.org/abs/2602.07435",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Problem 9",
+    "statement_text": "Is it true that for connected graphs $G$, $\\operatorname{cop}(G)=o(\\mathrm{td}(G))$?",
+    "context_text": "The authors ask whether a sublinear bound on the cop number in terms of treedepth holds, viewing treedepth as a natural intermediate parameter between vertex cover number and treewidth. They note that the bound $\\operatorname{cop}(G)\\leqslant\\tfrac{1}{2}(\\mathrm{td}(G)+1)$ is easily deducible from existing results on treewidth, but improving significantly on it seems difficult.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2602.07435",
+    "paper_title": "Cops and robber in graphs with bounded vertex cover number",
+    "paper_authors": [
+      "Prosenjit Bose",
+      "Louis Esperet",
+      "Jędrzej Hodor",
+      "Gwenaël Joret",
+      "Piotr Micek",
+      "Clément Rambaud"
+    ],
+    "published": "2026-02-07",
+    "abs_url": "https://arxiv.org/abs/2602.07435",
+    "source": "html"
+  }
+]

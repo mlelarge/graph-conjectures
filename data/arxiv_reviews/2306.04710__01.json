@@ -1,0 +1,21 @@
+{
+  "review_id": "2306.04710__01",
+  "safe_id": "2306.04710",
+  "arxiv_id": "2306.04710",
+  "conjecture_title": "Open problem: hero status of $\\Delta(1,m,m')$ for degree-4 oriented stars",
+  "paper_title": "On heroes in digraphs with forbidden induced forests",
+  "published": "2023-06-07",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The source paper (published in European Journal of Combinatorics 125, 2025) establishes that for an oriented star $F$ of degree 4, the only heroes in $F$-free digraphs are transitive tournaments or digraphs of the form $\\Delta(1,m,m')$, but leaves open the question of which pairs $(m,m')$ make $\\{\\Delta(1,m,m'), F\\}$ $\\vec{\\chi}$-finite. A wide web search found no subsequent paper resolving this problem for any specific values of $m, m' \\geq 1$.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "heroes digraphs chi-finite oriented star degree 4 Delta(1,m,m') Carbonero Koerts Moore Spirkl 2306.04710",
+    "chi-bounded dichromatic heroes digraphs oriented star forbidden induced forest arXiv 2023 2024"
+  ],
+  "notes": "No follow-up found resolving the open problem. The paper itself appeared in European Journal of Combinatorics 125 (2025). The related paper arXiv:2602.08736 ('(Claw, C_3)-free Digraphs with Unbounded Dichromatic Number') was found but its abstract does not address the Delta(1,m,m') question. The conjecture remains open with high confidence."
+}

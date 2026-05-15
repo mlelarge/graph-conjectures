@@ -1,0 +1,25 @@
+[
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Algorithm Termination Conjecture",
+    "statement_text": "We conjecture that the algorithm always terminates.",
+    "context_text": "The paper proposes an algorithm for computing homothetic pentagon contact representations based on systems of linear equations derived from five color forests. When the solution is non-negative it encodes distances between pentagon corners and the representation is constructed; otherwise negative variables guide a local change of the five color forest and the procedure restarts. The authors note that a proof of this conjecture would yield an existence proof for pentagon contact representations independent of Schramm's Monster Packing Theorem. Analogous algorithms for homothetic triangle and square contact representations exist but also lack termination proofs.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated in running prose in the introduction without a labelled theorem environment. PDF extraction quality is adequate for this prose statement.",
+    "arxiv_id": "2004.05942",
+    "paper_title": "Pentagon contact representations",
+    "paper_authors": [
+      "Stefan Felsner",
+      "Hendrik Schrezenmaier",
+      "Raphael Steiner"
+    ],
+    "published": "2020-04-13",
+    "abs_url": "https://arxiv.org/abs/2004.05942",
+    "source": "pdf"
+  }
+]

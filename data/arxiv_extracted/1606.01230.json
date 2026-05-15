@@ -1,0 +1,46 @@
+[
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Green's Problem on Polynomial Bounds for Arithmetic Triangle Removal",
+    "statement_text": "For every $\\epsilon > 0$ and prime $p$, does there exist a polynomial bound on $\\delta = \\delta(\\epsilon, p) > 0$ such that if $X, Y, Z \\subset \\mathbb{F}_p^n$ and the number of triangles in $X \\times Y \\times Z$ is at most $\\delta N^2$ (where $N = p^n$), then one can delete $\\epsilon N$ elements from $X$, $Y$, and $Z$ so that no triangle remains?",
+    "context_text": "Green [13] originally proved the arithmetic triangle removal lemma using a Fourier-analytic regularity argument, with a bound on $1/\\delta$ that is a tower of twos of height polynomial in $1/\\epsilon$. He posed the problem of improving the quantitative bounds, in particular asking whether a polynomial bound $\\delta = \\epsilon^{O(1)}$ holds. Prior to this paper the best known bound was a tower of twos of height logarithmic in $1/\\epsilon$, due to the first author via a reduction from the graph triangle removal lemma.",
+    "attributed_to": "Green",
+    "attributed_year": null,
+    "paper_contribution": "Solves Green's problem completely: proves that a polynomial bound holds and determines the best possible exponent for every prime $p$. Specifically, one may take $\\delta = (\\epsilon/3)^{C_p}$ with $C_p = 1 + 1/c_p$ an explicit constant, and conversely $\\delta \\leq \\epsilon^{C_p - o(1)}$ is necessary, making the bound essentially tight.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Green's problem is stated in prose in the abstract and introduction rather than in a labelled theorem environment; statement_text is a faithful reconstruction from the prose description.",
+    "arxiv_id": "1606.01230",
+    "paper_title": "A tight bound for Green's arithmetic triangle removal lemma in vector spaces",
+    "paper_authors": [
+      "Jacob Fox",
+      "László Miklós Lovász"
+    ],
+    "published": "2017-09-08",
+    "abs_url": "https://arxiv.org/abs/1606.01230",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Wide Conjecture on Suboptimality of Exponent $C_2$",
+    "statement_text": "The exponent $C_2 \\approx 13.239$ appearing in the lower bound $\\delta \\leq \\epsilon^{C_2 - o(1)}$ for the arithmetic triangle removal lemma over $\\mathbb{F}_2^n$ is not optimal; the true exponent may be strictly smaller, or the correct bound may even be superpolynomial in $1/\\epsilon$.",
+    "context_text": "After Fu and Kleinberg [11] established the lower bound $\\delta \\leq \\epsilon^{C_2 - o(1)}$ for $p = 2$ using a construction from the Coppersmith--Winograd matrix multiplication algorithm, it was widely believed that the true threshold exponent was smaller than $C_2$, or possibly that no polynomial bound existed at all. Haviv and Xie [15] developed an approach toward obtaining improved upper bounds in this direction.",
+    "attributed_to": "community (unattributed)",
+    "attributed_year": null,
+    "paper_contribution": "Disproves this conjecture: proves that $C_2 = 1 + 1/c_2 \\approx 13.239$ is in fact the correct (essentially tight) exponent, with both $\\delta = (\\epsilon/3)^{C_2}$ sufficient and $\\delta \\leq \\epsilon^{C_2 - o(1)}$ necessary.",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated informally in the introduction as 'widely conjectured' with no specific attribution or citation; not associated with a named conjecture in the literature.",
+    "arxiv_id": "1606.01230",
+    "paper_title": "A tight bound for Green's arithmetic triangle removal lemma in vector spaces",
+    "paper_authors": [
+      "Jacob Fox",
+      "László Miklós Lovász"
+    ],
+    "published": "2017-09-08",
+    "abs_url": "https://arxiv.org/abs/1606.01230",
+    "source": "pdf"
+  }
+]

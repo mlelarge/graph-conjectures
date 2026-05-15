@@ -1,0 +1,27 @@
+{
+  "review_id": "2404.02021__02",
+  "safe_id": "2404.02021",
+  "arxiv_id": "2404.02021",
+  "conjecture_title": "Conjecture 4.6",
+  "paper_title": "On off-diagonal hypergraph Ramsey numbers",
+  "published": "2024-04-02",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "No post-2024 paper resolving Conjecture 4.6 was found. The conjecture asks whether every polynomial growth rate $2^{n^c}$ is achievable as a lower bound for $r(K_s^{(3)}, K_n^{(3)})$ for some fixed $s$ depending on $c$. The closest follow-up work (arXiv:2411.13812) studies the complementary polynomial-growth regime for general $H$, and arXiv:2603.16069 achieves quasipolynomial rates for specific non-complete hypergraphs; neither directly addresses the complete-hypergraph setting of Conjecture 4.6. The sole internal reference (arXiv:2312.15572) concerns a different conjecture about VC-dimension and is unrelated.",
+  "since_posted": [],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2312.15572",
+      "verified": false,
+      "note": "Paper is about induced subgraph density and VC-dimension (proving a Fox-Pach-Suk conjecture on clique/stable-set size in graphs of bounded VC-dimension). It has no connection to hypergraph Ramsey numbers r(K_s^{(3)}, K_n^{(3)}), and its fuzz=70 match was a false positive. The paper_contribution text in the internal reference describes a completely different conjecture."
+    }
+  ],
+  "search_queries": [
+    "off-diagonal hypergraph Ramsey numbers r(K_s^3 K_n^3) lower bound 2^n^c arXiv 2404.02021",
+    "Conlon Fox Gunby He Mubayi Suk Verstraete hypergraph Ramsey 2024 conjecture polynomial exponential"
+  ],
+  "notes": "Two related follow-up papers were found but do not resolve Conjecture 4.6: arXiv:2411.13812 ('When are off-diagonal hypergraph Ramsey numbers polynomial?', 2024) characterizes polynomial growth for general H, the complementary direction; arXiv:2603.16069 ('Hypergraph Ramsey numbers with quasipolynomial growth rate', Xiaoyu He, 2026) constructs specific 3-graphs achieving n^{Theta(log n)} Ramsey numbers, demonstrating intermediate growth rates but for non-complete hypergraphs. Neither paper addresses the complete hypergraph K_s^{(3)} setting of Conjecture 4.6. The conjecture is closely related to the stepping-up paradigm (Erdős-Hajnal-Rado) applied to complete hypergraphs, but no explicit resolution via that approach was located in the indexed literature."
+}

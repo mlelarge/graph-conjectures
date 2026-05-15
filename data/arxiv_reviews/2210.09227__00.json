@@ -1,0 +1,22 @@
+{
+  "review_id": "2210.09227__00",
+  "safe_id": "2210.09227",
+  "arxiv_id": "2210.09227",
+  "conjecture_title": "Problem 4.1",
+  "paper_title": "A multidimensional Ramsey Theorem",
+  "published": "2024-12-31",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Problem 4.1 of arXiv:2210.09227 asks whether the 2-dimensional Ramsey number R_2(2,n) is superexponential in n. The paper proves a doubly exponential upper bound on R_r(d,n) for all r,d≥2, while the best known lower bound is only singly exponential from a random colouring argument; closing this gap is explicitly identified as a key open problem. No subsequent work resolving this question was found in a thorough search of the 2025–2026 literature.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "multidimensional Ramsey numbers R_2(2,n) superexponential Girão Kronenberg Scott",
+    "d-dimensional Ramsey numbers doubly exponential upper bound lower bound 2210.09227",
+    "multidimensional Ramsey Cartesian product superexponential lower bound 2025 2026"
+  ],
+  "notes": "No follow-up paper addressing Problem 4.1 found. The Ma–Shen–Xie paper arXiv:2507.12926 proves an exponential improvement for classical diagonal Ramsey lower bounds but concerns r(ℓ,n), not the multidimensional numbers R_r(d,n). The paper was published in Discrete Analysis (2024). The conjecture is recent (≤2 years from publication) and no evidence of resolution was found, supporting high confidence in the open status."
+}

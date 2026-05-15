@@ -1,0 +1,44 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Folklore Conjecture on γ_d",
+    "statement_text": "$\\gamma_d = \\frac{1}{d+1}$",
+    "context_text": "Here $\\gamma_d = \\lim_{n\\to\\infty} g(n,d)/2^n$, where $g(n,d)$ is the smallest cardinality of a subset of vertices of the $n$-cube intersecting every $d$-subcube. This conjecture (see [3]) was refuted by Ellis, Ivan and Leader [4], who proved $(\\gamma_d)^{1/d}\\leq 2^{-1/8+o(1)}$; the present paper sharpens that refutation.",
+    "attributed_to": "Bollobás, Leader, and Malvenuto",
+    "attributed_year": 2011,
+    "paper_contribution": "Proves that $(\\gamma_d)^{1/d}\\leq 2^{-1/2+o(1)}$, substantially improving the bound of Ellis, Ivan and Leader [4] that originally refuted the conjecture.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "The conjecture is already refuted; this paper contributes a sharper quantitative bound on γ_d.",
+    "arxiv_id": "2403.16319",
+    "paper_title": "Erasure codes and Turán hypercube problems",
+    "paper_authors": [
+      "Noga Alon"
+    ],
+    "published": "2024-03-24",
+    "abs_url": "https://arxiv.org/abs/2403.16319",
+    "source": "html"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture on L(d)",
+    "statement_text": "$L(d)=\\binom{d}{\\lfloor d/2\\rfloor}$",
+    "context_text": "Here $L(d)$ denotes the smallest $L$ such that there exists $\\varepsilon=\\varepsilon(d)>0$ with the property that for every $n$ there is a $(d,L,n)$-code of cardinality at least $\\varepsilon 2^n$. The conjectured value equals the upper bound that comes from a natural combinatorial construction, and equality holds for $d\\leq 3$.",
+    "attributed_to": "Bollobás, Leader, and Malvenuto",
+    "attributed_year": 2011,
+    "paper_contribution": "Builds on the refutation by Ellis, Ivan and Leader [4], who showed $L(d)\\leq\\frac{5}{6}\\binom{d}{\\lfloor d/2\\rfloor}$ for $d\\geq 4$; the paper analyzes their construction further and obtains improved bounds via Turán density arguments for hypergraph augmentations.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "The conjecture was refuted by [4] before this paper appeared; Alon's contribution is quantitative improvement rather than a new disproof.",
+    "arxiv_id": "2403.16319",
+    "paper_title": "Erasure codes and Turán hypercube problems",
+    "paper_authors": [
+      "Noga Alon"
+    ],
+    "published": "2024-03-24",
+    "abs_url": "https://arxiv.org/abs/2403.16319",
+    "source": "html"
+  }
+]

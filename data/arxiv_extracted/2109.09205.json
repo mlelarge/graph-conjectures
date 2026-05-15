@@ -1,0 +1,71 @@
+[
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Nikiforov–Rousseau Question on Best p-Goodness Threshold for Books",
+    "statement_text": "What is the best possible $n$ (in terms of $k$ and $p$) such that $B_{k,n}$ is $p$-good, i.e., such that $r(K_p, B_{k,n}) = (p-1)(n-1)+1$?",
+    "context_text": "Nikiforov and Rousseau proved via Szemerédi's regularity lemma that for every $k, p \\geq 2$ and every sufficiently large $n$, the book $B_{k,n}$ is $p$-good, but their proof yields only a tower-type bound on $n$. They raised the question of determining the best possible $n$. The present paper addresses this by providing a regularity-free proof with a single-exponential bound.",
+    "attributed_to": "Nikiforov and Rousseau",
+    "attributed_year": null,
+    "paper_contribution": "Provides a new proof avoiding the regularity lemma, establishing that $B_{k,n}$ is $p$-good for all $n \\geq 2^{k^{10p}}$, replacing the tower-type bound with a single exponential; the authors note the bound is not expected to be best possible.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "PDF source — exponent in bound reconstructed as $k^{10p}$ from proof context ($z^z = 2^{2z\\log z} \\leq 2^{k^{10p}}$); question attributed to Nikiforov–Rousseau in prose without a labelled environment.",
+    "arxiv_id": "2109.09205",
+    "paper_title": "Ramsey goodness of books revisited",
+    "paper_authors": [
+      "Jacob Fox",
+      "Xiaoyu He",
+      "Yuval Wigderson"
+    ],
+    "published": "2023-07-14",
+    "abs_url": "https://arxiv.org/abs/2109.09205",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Informal Belief on Non-Optimality of p-Goodness Bound",
+    "statement_text": "The bound $n \\geq 2^{k^{10p}}$ in Theorem 1.1 is not best possible.",
+    "context_text": "Immediately after stating Theorem 1.1, the authors remark that they do not expect the bound $n \\geq 2^{k^{10p}}$ to be best possible, and indicate that they discuss this further in the concluding remarks (Section 4).",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "PDF source — exponent reconstructed as $k^{10p}$ from surrounding proof; stated in prose as 'We do not expect the bound $n \\geq 2k^{10p}$ to be best possible'.",
+    "arxiv_id": "2109.09205",
+    "paper_title": "Ramsey goodness of books revisited",
+    "paper_authors": [
+      "Jacob Fox",
+      "Xiaoyu He",
+      "Yuval Wigderson"
+    ],
+    "published": "2023-07-14",
+    "abs_url": "https://arxiv.org/abs/2109.09205",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Question on Eliminating the Regularity Lemma from Nikiforov–Rousseau's General Theorem",
+    "statement_text": "Is it possible to completely eliminate the use of the regularity lemma from the proof of the general Ramsey goodness theorem of Nikiforov and Rousseau (Theorem 2.1 of \\cite{28})?",
+    "context_text": "The authors show that their techniques can avoid the regularity lemma for Theorem 1.3, a special case of Nikiforov–Rousseau's most general goodness result. They ask whether this elimination can be extended to the full generality of that theorem, noting it would be very interesting to see how far these ideas can be pushed.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Posed in prose in the introduction as 'for example, is it possible to completely eliminate the use of the regularity lemma from the proof of [28, Theorem 2.1]?'.",
+    "arxiv_id": "2109.09205",
+    "paper_title": "Ramsey goodness of books revisited",
+    "paper_authors": [
+      "Jacob Fox",
+      "Xiaoyu He",
+      "Yuval Wigderson"
+    ],
+    "published": "2023-07-14",
+    "abs_url": "https://arxiv.org/abs/2109.09205",
+    "source": "pdf"
+  }
+]

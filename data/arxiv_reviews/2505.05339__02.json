@@ -1,0 +1,33 @@
+{
+  "review_id": "2505.05339__02",
+  "safe_id": "2505.05339",
+  "arxiv_id": "2505.05339",
+  "conjecture_title": "Conjecture 4.3",
+  "paper_title": "A Counterexample to a Conjecture of Lovász",
+  "published": "2025-06-10",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 4.3 from arXiv:2505.05339, proposed as a weakening of Lovász's (now disproved) conjecture that still implies Ryser's conjecture, remains open as of 2026. The subsequent paper arXiv:2506.21286 (Abiad, Garbe, Povill, Spiegel, 2025) explicitly discusses it in its concluding remarks, reporting computational verification for some smaller r=3 counterexamples to Lovász's conjecture, but acknowledging that larger cases are computationally infeasible and that the conjecture cannot be resolved by their theoretical methods.",
+  "since_posted": [
+    {
+      "title": "Infinitely many counterexamples to a conjecture of Lovász",
+      "authors": "Aida Abiad, Frederik Garbe, Xavier Povill, Christoph Spiegel",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2506.21286",
+      "arxiv_id": "2506.21286",
+      "doi": null,
+      "kind": "partial",
+      "claim": "In the concluding remarks (Section 5), the authors mention the conjecture explicitly, report computational verification that it holds for smaller r=3 counterexamples to Lovász's conjecture, but conclude that checking larger graphs or r=4 counterexamples is computationally infeasible and that their theoretical tools are insufficient to settle the question."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Ryser conjecture r-partite hypergraph matching number vertex deletion Lovász counterexample 2025",
+    "Clow Haxell Mohar \"Conjecture 4.3\" OR \"k(r-1) vertices\" hypergraph matching number reduction Ryser 2025 2026"
+  ],
+  "notes": "Conjecture 4.3 is a weakening of Lovász's original conjecture (now disproved by the source paper for r=3) designed to still imply Ryser's conjecture. The follow-up paper arXiv:2506.21286 constructs infinitely many counterexamples to Lovász's original conjecture (using generalized Petersen graphs for r=3 and specific constructions for r=4) but leaves Conjecture 4.3 open, having only verified it computationally for small cases."
+}

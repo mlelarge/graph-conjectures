@@ -1,0 +1,23 @@
+{
+  "review_id": "1907.04585__00",
+  "safe_id": "1907.04585",
+  "arxiv_id": "1907.04585",
+  "conjecture_title": "Conjecture 1.3",
+  "paper_title": "Quasi-polynomial time approximation schemes for the Maximum Weight Independent Set Problem in H-free graphs",
+  "published": "2023-11-14",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 1.3 — that MWIS admits a QPTAS and a subexponential-time algorithm in graphs excluding any subdivision of a forest H of maximum degree at most three as an induced subgraph — remains open in full generality. The source paper itself proves the special case where H has at most three vertices of degree three. A 2024 STACS paper (Gartland et al.) extends polynomial-time tractability to sparse graphs (excluding a fixed biclique) with no long subdivided claws, which is a more restrictive setting and does not subsume the conjecture. A 2026 preprint (arXiv:2602.18317) extends QPTAS results to graphs with few independent long induced holes, a structurally different class. No verified follow-up fully resolves the conjecture.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Maximum Weight Independent Set QPTAS subdivision induced subgraph forest Chudnovsky Pilipczuk 1907.04585",
+    "MWIS subexponential H-free subdivision forest degree three induced subgraph algorithm 2024 2025",
+    "Maximum Independent Set QPTAS \"subdivision of H\" forest \"degree at most three\" induced subgraph 2024 2025 2026",
+    "Pilipczuk \"Conjecture 1.3\" OR \"subdivision\" \"forest\" MWIS QPTAS arxiv 2024 2025 2026"
+  ],
+  "notes": "No follow-up paper fully resolving Conjecture 1.3 was found across 7 web calls (4 searches + 3 fetches). The related 2024 STACS paper (Max Weight Independent Set in Sparse Graphs with No Long Claws, LIPIcs STACS 2024:4) achieves polynomial-time results only in the additional presence of biclique-freeness, which is a different and more restrictive setting. The 2026 preprint arXiv:2602.18317 (Bonnet, Czyzewska, Masarik, M. Pilipczuk, Rzazewski) handles graphs with few independent long holes via induced-minor exclusion, not subdivision-of-forest exclusion. The conjecture is recent (effective publication 2023) and the absence of a resolution is consistent with the high difficulty of the problem."
+}

@@ -1,0 +1,22 @@
+{
+  "review_id": "2601.13072__00",
+  "safe_id": "2601.13072",
+  "arxiv_id": "2601.13072",
+  "conjecture_title": "Problem 1",
+  "paper_title": "Faster 3-colouring algorithm for graphs of diameter 3",
+  "published": "2026-01-19",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Problem 1 of arXiv:2601.13072 asks whether 3-colouring can be solved on diameter-2 graphs in quasi-polynomial time; this is highlighted by the authors as an explicit intermediate target toward polynomial-time solvability, which they call the most intriguing open problem in the area. The best known algorithm for diameter-2 graphs remains the subexponential 2^O(sqrt(n log n)) bound of Mertzios and Spirakis, with no improvement found since the paper's posting. A wide web search conducted in May 2026 returned no follow-up paper addressing the quasi-polynomial or polynomial solvability of 3-colouring on diameter-2 graphs.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "3-coloring diameter-2 graphs quasi-polynomial time complexity",
+    "Paulusma 3-colouring diameter graphs open problem Groenland Spirkl",
+    "3-colouring diameter-2 graphs quasi-polynomial 2025 2026 arxiv algorithm"
+  ],
+  "notes": "The conjecture was posed in January 2026 and is less than 6 months old at review time. No follow-up resolving it was found in the indexed literature. The related paper arXiv:2511.09707 achieves quasi-polynomial time for 3-colouring circle graphs (n^O(log n)), but that is a different graph class. The notorious open status of diameter-2 3-colouring is attributed to Paulusma's survey of the area; the source paper itself introduces the quasi-polynomial intermediate target explicitly."
+}

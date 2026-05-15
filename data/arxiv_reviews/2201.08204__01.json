@@ -1,0 +1,45 @@
+{
+  "review_id": "2201.08204__01",
+  "safe_id": "2201.08204",
+  "arxiv_id": "2201.08204",
+  "conjecture_title": "Question 3.2",
+  "paper_title": "A counterexample to a conjecture about triangle-free induced subgraphs of graphs with large chromatic number",
+  "published": "2022-09-15",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "No paper has been found that resolves Question 3.2 either positively or negatively. The closely related questions about t-chordal digraphs (all induced directed cycles of the same length t) have been answered negatively — for each t ≥ 3 there exist t-chordal digraphs with clique number at most 3 and arbitrarily large dichromatic number (arXiv:2203.15575, arXiv:2202.01006) — but these results concern digraphs where induced cycles are restricted to a fixed length, not digraphs where all odd-length induced directed cycles are absent. The distinction is material: banning every odd-length induced directed cycle is a much stronger condition, and the question of whether it forces χ⃗(D) ≤ f(ω(D)) remains open to the best of available search results.",
+  "since_posted": [
+    {
+      "title": "Digraphs with all induced directed cycles of the same length are not $\\vec{\\chi}$-bounded",
+      "authors": "Carbonero, Hompe, Moore, Spirkl",
+      "year": 2022,
+      "venue": "The Electronic Journal of Combinatorics, v29i4p4",
+      "url": "https://arxiv.org/abs/2203.15575",
+      "arxiv_id": "2203.15575",
+      "doi": null,
+      "kind": "partial",
+      "claim": "For each t ≥ 3, there exist t-chordal digraphs (all induced directed cycles have length t) with clique number at most 3 and arbitrarily large dichromatic number, showing that t-chordal digraph classes are not χ⃗-bounded; this is a related but distinct condition from the one in Question 3.2."
+    },
+    {
+      "title": "Chordal directed graphs are not $\\vec{\\chi}$-bounded",
+      "authors": "Aboulker, Bousquet, de Verclos",
+      "year": 2022,
+      "venue": "The Electronic Journal of Combinatorics, v29i2p17",
+      "url": "https://arxiv.org/abs/2202.01006",
+      "arxiv_id": "2202.01006",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Digraphs with no transitive tournament on 3 vertices in which every induced directed cycle has length 3 can have arbitrarily large dichromatic number, negatively answering a related question from the same source paper but not Question 3.2 directly."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "dichromatic number digraph induced directed cycle odd length clique number Carbonero Spirkl",
+    "digraph dichromatic number odd induced cycle chi-boundedness arXiv 2201.08204",
+    "digraph \"no induced directed cycle of odd length\" dichromatic number bounded clique number 2023 2024 2025"
+  ],
+  "notes": "The construction in arXiv:2201.08204 itself is a digraph with bounded clique number, large dichromatic number, and no induced directed cycles of odd length at least 5 (i.e., it avoids odd cycles of length ≥ 5, but may have odd cycles of length 3). Question 3.2 asks whether banning ALL odd-length induced directed cycles (including length 3) suffices to bound the dichromatic number. No resolution of this stronger question was found in the indexed literature within the cap of 5 web calls."
+}

@@ -1,0 +1,44 @@
+{
+  "review_id": "2210.15076__00",
+  "safe_id": "2210.15076",
+  "arxiv_id": "2210.15076",
+  "conjecture_title": "Extension to H-free graphs",
+  "paper_title": "Turán graphs with bounded matching number",
+  "published": "2022-10-26",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Gerbner (arXiv 2211.03272, J. Graph Theory 2024) directly took up this problem immediately after Alon–Frankl's paper, determining the maximum number of edges in n-vertex F-free graphs with matching number at most s apart from a constant additive term for all fixed F and s, with several exact results also obtained. The asymptotic form of the answer is thus settled for fixed parameters, but a complete exact determination for all H, n, s remains open. Ma and Hou (arXiv 2301.05625) subsequently extended the framework to the generalized Turán setting (counting copies of K_r).",
+  "since_posted": [
+    {
+      "title": "On Turán problems with bounded matching number",
+      "authors": "Dániel Gerbner",
+      "year": 2022,
+      "venue": "Journal of Graph Theory",
+      "url": "https://arxiv.org/abs/2211.03272",
+      "arxiv_id": "2211.03272",
+      "doi": "10.1002/jgt.23067",
+      "kind": "partial",
+      "claim": "Determines the maximum number of edges in n-vertex F-free graphs with matching number at most s apart from a constant additive term for all fixed F and s, providing several exact results; directly extends the Alon–Frankl program to general forbidden subgraphs H."
+    },
+    {
+      "title": "Generalized Turán problem with bounded matching number",
+      "authors": "Yue Ma, Xinmin Hou",
+      "year": 2023,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2301.05625",
+      "arxiv_id": "2301.05625",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Extends the bounded-matching-number framework to the generalized Turán problem, determining ex(n, K_r, {K_{k+1}, M_{s+1}}) exactly for r ≥ 3 and providing O(1)-error bounds for general H."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "H-free graph matching number Turán edges maximum Alon Frankl 2022 arXiv 2210.15076",
+    "H-free graphs bounded matching number maximum edges color-critical forbidden subgraph"
+  ],
+  "notes": "Gerbner's paper 2211.03272 was submitted just 12 days after the Alon–Frankl paper and is the principal follow-up; it is published in J. Graph Theory (DOI 10.1002/jgt.23067). The asymptotic answer for fixed F and s is settled, so the status is 'partial' rather than 'open'. Full exact determination for all parameters and all H remains open."
+}

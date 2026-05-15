@@ -1,0 +1,22 @@
+{
+  "review_id": "1802.05582__01",
+  "safe_id": "1802.05582",
+  "arxiv_id": "1802.05582",
+  "conjecture_title": "Question on randomized list-coloring round complexity",
+  "paper_title": "Distributed coloring in sparse graphs with fewer colors",
+  "published": "2018-12-19",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "The question asks whether a randomized distributed algorithm for Delta-list-coloring can achieve round complexity without a polynomial factor in Delta, analogously to the O(log^3 n / log Delta)-round randomized algorithm of Panconesi and Srinivasan for Delta-coloring. Subsequent work has made substantial progress on randomized Delta-coloring (Ghaffari et al. 2018 reduced to O(log Delta) + 2^{O(sqrt{log log n})} rounds; a 2025 preprint further improved deterministic bounds), and a 2024 paper achieves poly-log log n rounds for Delta-coloring in CONGEST, but none of these works specifically address Delta-list-coloring (with exactly Delta colors per vertex from individual lists). The question, which concerns a strictly harder list variant, appears to remain open as of 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "randomized distributed list-coloring round complexity Delta Panconesi Srinivasan 2019 2020 2021 2022 2023 2024 2025",
+    "Aboulker Bonamy Bousquet Esperet distributed coloring sparse graphs 1802.05582 citing",
+    "randomized distributed \"list-coloring\" \"Delta\" rounds \"polynomial\" 2019 2020 2021 2022 2023 2024 arXiv graph theory distributed"
+  ],
+  "notes": "Web searches found significant follow-up on randomized distributed Delta-coloring (not list-coloring): Ghaffari-Hirvonen 2018 (arXiv:1803.03248) achieves O(log Delta) + 2^{O(sqrt{log log n})} rounds for Delta-coloring; arXiv:2504.03080 (2025) improves deterministic bounds further; arXiv:2405.09975 (2024) achieves poly-log-log n randomized rounds for Delta-coloring in CONGEST. None of these papers address the specific question about Delta-LIST-coloring (Corollary 2.1 of the source paper). The distinction matters: standard Delta-coloring exploits graph structure globally, while Delta-list-coloring with arbitrary per-vertex palettes of size exactly Delta is strictly harder and different techniques apply. No resolution of this specific open question was found."
+}

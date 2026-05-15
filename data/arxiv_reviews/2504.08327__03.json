@@ -1,0 +1,24 @@
+{
+  "review_id": "2504.08327__03",
+  "safe_id": "2504.08327",
+  "arxiv_id": "2504.08327",
+  "conjecture_title": "Conjecture 30",
+  "paper_title": "On a conjecture concerning 4-coloring of graphs with one crossing",
+  "published": "2025-04-14",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 30 from arXiv:2504.08327 proposes a complete recursive generation scheme for bichromatic-forbidding 4-candidates via three explicit expansion operations starting from the diamond graph. The conjecture was posed by the authors in April 2025 as part of the structural analysis underlying their main 4-coloring conjecture for graphs with one crossing. No follow-up work addressing this conjecture was found in the indexed literature as of May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Dvořák Lidický Mohar \"4-coloring\" \"one crossing\" bichromatic-forbidding 4-candidate arxiv 2025",
+    "arXiv 2504.08327 \"bichromatic-forbidding\" \"4-candidate\" conjecture 2025 2026",
+    "\"bichromatic-forbidding\" \"4-candidate\" diamond graph 4-coloring plane graph 2025 2026",
+    "Dvorak Lidicky Mohar \"one crossing\" 4-coloring cite 2025 2026 follow-up",
+    "Lidicky arXiv papers 2025 2026 bichromatic-forbidding 4-candidate"
+  ],
+  "notes": "No follow-up paper addressing Conjecture 30 was found after 5 web calls. The conjecture is a highly technical structural claim internal to the proof strategy of the paper: it asserts that the class of bichromatic-forbidding 4-candidates is closed under and exhausted by three specific expansion operations applied to the diamond graph (Lemmas 27, 28, 29). The paper is recent (April 2025) and this specific conjecture is likely too specialized to attract independent attention yet."
+}

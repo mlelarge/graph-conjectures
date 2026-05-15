@@ -1,0 +1,23 @@
+{
+  "review_id": "1707.03747__00",
+  "safe_id": "1707.03747",
+  "arxiv_id": "1707.03747",
+  "conjecture_title": "Open Question on Number of Tight Skew Partitions",
+  "paper_title": "Colouring perfect graphs with bounded clique number",
+  "published": "2017-07-12",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The paper establishes an upper bound of $n^3 \\log n$ tight skew partitions in any $n$-vertex graph (improving the prior $n^4$ Kennedy--Reed bound), but the true maximum remains unknown. The authors observe they know of no graph with more than linearly many tight skew partitions, leaving open whether the correct order is $\\Theta(n)$ or something between linear and $n^3 \\log n$. A broad literature search spanning 2017--2026 found no follow-up paper resolving or improving this bound.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "tight skew partition perfect graph Chudnovsky Seymour Spirkl 1707.03747",
+    "tight skew partitions number bound graph coloring perfect graph",
+    "skew partition \"linearly many\" tight bound graph arxiv 2018 2019 2020 2021 2022 2023 2024",
+    "\"tight skew partition\" \"n^3\" OR \"n^4\" OR \"linear\" Chudnovsky Lagoutte Seymour Spirkl perfect graph"
+  ],
+  "notes": "No follow-up found after five web calls. The open question asks for the true order of the maximum number of tight skew partitions in an $n$-vertex graph; the gap is between $\\Omega(n)$ (no known super-linear example) and $O(n^3 \\log n)$ (the paper's upper bound). The conjecture is closely related to the algorithmic complexity of finding balanced skew partitions in perfect graphs."
+}

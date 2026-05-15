@@ -1,0 +1,25 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.1",
+    "statement_text": "Fix $p \\in (0,1)$ and fix a graph $H$ with no isolated vertices. Then $$\\max_{x \\in \\mathbb{N}} \\Pr(X_H = x) = O\\!\\left(n^{1-v(H)}\\right),$$ where $v(H)$ is the number of vertices of $H$.",
+    "context_text": "The conjecture is motivated by the fact that $\\operatorname{Var} X_H = \\Theta(n^{2v(H)-2})$ for fixed $p$, so asymptotic normality implies $X_H$ is concentrated on an interval of length $\\Theta(n^{v(H)-1})$; if the distribution is sufficiently smooth, each value in this interval should have comparable probability. The bound $n^{1-v(H)}$ would be best possible by Chebyshev's inequality. The assumption that $H$ has no isolated vertices is necessary, since removing them makes $X_H$ a deterministic multiple of the reduced count.",
+    "attributed_to": "Fox, Kwan, and Sauermann",
+    "attributed_year": null,
+    "paper_contribution": "Proves Theorem 1.2, an approximate version: $\\max_{x \\in \\mathbb{Z}} \\Pr(X_H = x) = n^{1-v(H)+o(1)}$ for every connected graph $H$ and fixed $p \\in (0,1)$, matching the conjectured bound up to the $o(1)$ term in the exponent.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source. Conjecture attributed to the same authors via their prior paper [19]; the present paper proves an asymptotically tight approximate version for all connected H. The conjecture statement uses $x \\in \\mathbb{N}$ while Theorem 1.2 is stated for $x \\in \\mathbb{Z}$.",
+    "arxiv_id": "1905.12749",
+    "paper_title": "Anticoncentration for subgraph counts in random graphs",
+    "paper_authors": [
+      "Jacob Fox",
+      "Matthew Kwan",
+      "Lisa Sauermann"
+    ],
+    "published": "2020-11-18",
+    "abs_url": "https://arxiv.org/abs/1905.12749",
+    "source": "pdf"
+  }
+]

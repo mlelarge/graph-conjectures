@@ -1,0 +1,40 @@
+{
+  "review_id": "2001.01607__03",
+  "safe_id": "2001.01607",
+  "arxiv_id": "2001.01607",
+  "conjecture_title": "Maximum Independent Set complexity for (even hole, K4)-free and (theta, triangle)-free graphs",
+  "paper_title": "(Theta, triangle)-free and (even hole, $K_4$)-free graphs. Part 2 : bounds on treewidth",
+  "published": "2020-10-27",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The computational complexity of Maximum Independent Set for (even hole, $K_4$)-free graphs and for (theta, triangle)-free graphs remains open. Partial progress exists for subclasses: the source paper gives polynomial algorithms for (theta, triangle, $S_{i,j,k}$)-free and (even hole, pyramid, $K_t$, $S_{i,j,k}$)-free graphs via bounded treewidth, and arXiv:2203.06775 (2022) extends this by proving bounded treewidth for (even hole, diamond, pyramid, $K_t$)-free graphs, implying polynomial MIS for that subclass. Web searches through 2026 confirm that the full complexity question for the stated classes is unresolved.",
+  "since_posted": [
+    {
+      "title": "Induced subgraphs and tree decompositions IV. (Even hole, diamond, pyramid)-free graphs",
+      "authors": "Tara Abrishami, Maria Chudnovsky, Sepehr Hajebi, Sophie Spirkl",
+      "year": 2022,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2203.06775",
+      "arxiv_id": "2203.06775",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves that for all $t > 0$ there exists $d_t \\geq 0$ such that every (even hole, diamond, pyramid, $K_t$)-free graph has treewidth at most $d_t$ (Theorem 1.4), establishing a special case of Conjecture 1.5 from the source paper and implying polynomial-time MIS for this subclass of (even hole, $K_4$)-free graphs."
+    }
+  ],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2203.06775",
+      "verified": true,
+      "note": "WebFetch of arxiv.org/abs/2203.06775 confirms the paper proves bounded treewidth for (even hole, pyramid, diamond, $K_t$)-free graphs using non-crossing decomposition methods; consistent with the internal ref description attributing it as a special case of Conjecture 1.5 from arXiv:2001.01607."
+    }
+  ],
+  "search_queries": [
+    "Maximum Independent Set \"even hole\" \"K4-free\" polynomial complexity graph theory",
+    "Maximum Independent Set \"theta, triangle\"-free graphs complexity 2001.01607",
+    "\"even hole\" \"K4-free\" OR \"theta, triangle\" \"Maximum Independent Set\" polynomial algorithm 2022 2023 2024 2025"
+  ],
+  "notes": "No paper resolving the full complexity question for (even hole, $K_4$)-free or (theta, triangle)-free graphs was found within the 5-call web search budget. A 2026 paper arXiv:2604.01816 '(Even hole, triangle)-free graphs revisited' appeared in search results and may be relevant (the (even hole, triangle)-free class is a proper subclass of (even hole, $K_4$)-free), but could not be verified within the call cap. The $O(\\log n)$ treewidth bound for (theta, triangle)-free graphs from the source paper yields only quasi-polynomial MIS; polynomial-time complexity remains open."
+}

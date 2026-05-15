@@ -1,0 +1,90 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.1",
+    "statement_text": "A hereditary class $\\mathcal{G}$ has bounded $\\operatorname{{\\text{\\sf{tree}}-\\alpha}}$ if (and only if) $\\mathcal{G}$ is $(\\operatorname{{\\sf tw}},\\omega)$-bounded.",
+    "context_text": "Dallard, Milanič, and Štorgel conjectured that for hereditary graph classes, bounded tree-independence number is equivalent to (tw,ω)-boundedness. Chudnovsky and Trotignon subsequently refuted this in a strong sense for general hereditary classes. The present paper proves the positive direction holds when the hereditary class is defined by finitely many excluded induced subgraphs.",
+    "attributed_to": "Dallard, Milanič, and Štorgel",
+    "attributed_year": 2024,
+    "paper_contribution": "Proves the conjecture for the special case of hereditary classes defined by finitely many excluded induced subgraphs, as a corollary of the main result Theorem 1.4.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2605.01223",
+    "paper_title": "Tree-alpha and excluding finitely many graphs",
+    "paper_authors": [
+      "Sepehr Hajebi",
+      "Sophie Spirkl"
+    ],
+    "published": "2026-05-02",
+    "abs_url": "https://arxiv.org/abs/2605.01223",
+    "source": "html"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.2",
+    "statement_text": "Let $\\mathcal{F}$ be a finite class of graphs. Then the class of all $\\mathcal{F}$-free graphs has bounded $\\operatorname{{\\text{\\sf{tree}}-\\alpha}}$ if (and only if) it is $(\\operatorname{{\\sf tw}},\\omega)$-bounded.",
+    "context_text": "Dallard, Krnc, Kwon, Milanič, Munaro, Štorgel, and Wiederrecht posed this conjecture asserting that the (tw,ω)-boundedness characterisation of bounded tree-α holds for all hereditary classes defined by finitely many excluded induced subgraphs. This is one of the two main conjectures resolved by the present paper.",
+    "attributed_to": "Dallard, Krnc, Kwon, Milanič, Munaro, Štorgel, and Wiederrecht",
+    "attributed_year": 2024,
+    "paper_contribution": "Proved completely by this paper.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2605.01223",
+    "paper_title": "Tree-alpha and excluding finitely many graphs",
+    "paper_authors": [
+      "Sepehr Hajebi",
+      "Sophie Spirkl"
+    ],
+    "published": "2026-05-02",
+    "abs_url": "https://arxiv.org/abs/2605.01223",
+    "source": "html"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.3",
+    "statement_text": "Let $\\mathcal{F}$ be a finite class of graphs. Then the class of all $\\mathcal{F}$-free graphs has bounded $\\operatorname{{\\text{\\sf{tree}}-\\alpha}}$ if (and only if) there exist $F_{1},F_{2},F_{3}\\in\\mathcal{F}$ where $F_{1}$ is complete bipartite, $F_{2}$ is a subdivided multiclaw, and $F_{3}$ is the line graph of a subdivided multiclaw.",
+    "context_text": "This is the explicit equivalent reformulation of Conjecture 1.2, also due to Dallard et al. [23], made precise via the observation that (tw,ω)-boundedness for $\\mathcal{F}$-free classes is equivalent to excluding a complete bipartite graph, a subdivided multiclaw, and the line graph of a subdivided multiclaw. The paper proves a stronger statement replacing the line graph of a subdivided multiclaw with line graphs of all subdivisions of a wall.",
+    "attributed_to": "Dallard, Krnc, Kwon, Milanič, Munaro, Štorgel, and Wiederrecht",
+    "attributed_year": 2024,
+    "paper_contribution": "Proved by this paper via Theorem 1.4, which establishes a stronger result replacing 'line graph of a subdivided multiclaw' with 'line graphs of all subdivisions of some wall'.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2605.01223",
+    "paper_title": "Tree-alpha and excluding finitely many graphs",
+    "paper_authors": [
+      "Sepehr Hajebi",
+      "Sophie Spirkl"
+    ],
+    "published": "2026-05-02",
+    "abs_url": "https://arxiv.org/abs/2605.01223",
+    "source": "html"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.5",
+    "statement_text": "For all $a,b\\in\\mathbb{N}$, the class of all $K_{a,a}$-free graphs with no induced subgraph isomorphic to the $b$-vertex path has bounded $\\operatorname{{\\text{\\sf{tree}}-\\alpha}}$.",
+    "context_text": "This weaker conjecture of Dallard, Krnc, Kwon, Milanič, Munaro, Štorgel, and Wiederrecht was already open for $(a,b)\\in\\{(2,7),(3,5)\\}$ and had only recently been proved for $(a,b)=(2,6)$. It is a special case of Conjecture 1.2 obtained by taking $\\mathcal{F}=\\{K_{a,a}, P_b\\}$.",
+    "attributed_to": "Dallard, Krnc, Kwon, Milanič, Munaro, Štorgel, and Wiederrecht",
+    "attributed_year": 2024,
+    "paper_contribution": "Settled completely as a consequence of the main result.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2605.01223",
+    "paper_title": "Tree-alpha and excluding finitely many graphs",
+    "paper_authors": [
+      "Sepehr Hajebi",
+      "Sophie Spirkl"
+    ],
+    "published": "2026-05-02",
+    "abs_url": "https://arxiv.org/abs/2605.01223",
+    "source": "html"
+  }
+]

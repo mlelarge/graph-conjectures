@@ -1,0 +1,24 @@
+{
+  "review_id": "1708.08486__00",
+  "safe_id": "1708.08486",
+  "arxiv_id": "1708.08486",
+  "conjecture_title": "Informal Question (correct exponential constant in r(n,m))",
+  "paper_title": "Popular progression differences in vector spaces II",
+  "published": "2019-11-21",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The question asks whether the exponential base in the exponent of r(n,m) (the maximum size of a subset of F_3^n containing no affine m-dimensional subspace) is 3 (as in the random lower bound r(n,m) >= N^{1-(m+1)3^{-m}}) rather than C≈13.901 (as in the cap-set-supersaturation upper bound). Fox and Pham's paper itself provides evidence that the popular-differences approach cannot close this gap, and no subsequent work resolving or substantially narrowing it was found in the literature search.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Fox Pham \"popular progression differences\" vector spaces r(n,m) affine subspace F_3^n exponential constant",
+    "arxiv 1708.08486 cap set affine subspace bound exponential constant follow-up",
+    "affine m-dimensional subspace free subset F_3^n r(n,m) bound cap set supersaturation 2020 2021 2022 2023 2024",
+    "Fox Pham 1708.08486 \"n_3\" \"popular differences\" \"exponential base\" affine subspace F_3 citing paper 2021 2022 2023 2024 2025",
+    "\"r(n,m)\" \"affine subspace\" \"F_3^n\" \"exponential\" 2020 2021 2022 2023 2024 2025 bounds subspace-free sets"
+  ],
+  "notes": "No follow-up paper resolving or substantially advancing the question was found in five web searches. The paper itself proves that the popular-differences/density-increment approach via Green's arithmetic regularity lemma cannot settle the correct exponential base, leaving the gap between 3 and C≈13.901 open. The question is closely tied to sharp bounds on n_3(alpha,beta) for beta=alpha^{3+o(1)}, which also remains open."
+}

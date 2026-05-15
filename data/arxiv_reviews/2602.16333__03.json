@@ -1,0 +1,22 @@
+{
+  "review_id": "2602.16333__03",
+  "safe_id": "2602.16333",
+  "arxiv_id": "2602.16333",
+  "conjecture_title": "Question 4.4",
+  "paper_title": "Long cycles in vertex transitive digraphs",
+  "published": "2026-02-18",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Question 4.4 asks whether there exists a constant C>0 such that in any vertex transitive digraph the length of a longest path is at most a factor of C larger than the length of a longest directed cycle. The source paper itself establishes Omega(n^{1/3}) for cycles and Omega(sqrt(n)) for paths, exhibiting a gap between the two quantities, and notes that in the undirected setting the analogous ratio is bounded by a constant. No follow-up resolving this question was found in the three months since posting.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "vertex transitive digraph long cycles Bucic Hendrey Mohar Steiner Yepremyan 2602.16333",
+    "vertex transitive digraph Hamilton cycle directed cycle Bucic Hendrey Mohar 2026 follow-up",
+    "vertex transitive digraph longest path longest cycle ratio bounded 2026 arxiv"
+  ],
+  "notes": "Question 4.4 full statement (retrieved from arXiv HTML): 'Does there exist C>0 such that in any vertex transitive digraph, the length of a longest path is by at most a factor of C larger than the length of a longest directed cycle?' The paper's own results show Omega(n^{1/3}) cycle length and Omega(sqrt(n)) path length, so the ratio is not trivially 1, but whether it is bounded by a constant remains open. No follow-up paper addressing this question was found; the conjecture is very recent (February 2026)."
+}

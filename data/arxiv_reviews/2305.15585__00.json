@@ -1,0 +1,23 @@
+{
+  "review_id": "2305.15585__00",
+  "safe_id": "2305.15585",
+  "arxiv_id": "2305.15585",
+  "conjecture_title": "Question 10",
+  "paper_title": "Chromatic number is not tournament-local",
+  "published": "2023-12-04",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Question 10 of arXiv:2305.15585 asks whether high chromatic number forces some out-neighbourhood to have high degeneracy; the authors explicitly state they have been unable to determine this. The paper establishes a positive analogue for the degeneracy-to-degeneracy setting (Theorem 6: high degeneracy forces a two-vertex out-neighbourhood with high degeneracy), but the chromatic-number version for a single vertex remains open. No follow-up paper resolving the question was found in a search covering literature through May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "chromatic number tournament out-neighbourhood degeneracy arXiv 2305.15585",
+    "tournament local chromatic number degeneracy out-neighbourhood graph 2024 2025",
+    "Barbados 2025 graph theory workshop open problems chromatic tournament degeneracy",
+    "Some results and problems on tournament structure Nguyen 2306.02364 chromatic degeneracy"
+  ],
+  "notes": "No follow-up found after a 5-call web search. The paper (published in JCTB 2024) itself poses Question 10 as genuinely open, distinguishing it from the degeneracy-to-degeneracy case which the authors resolve positively. The Barbados 2025 open-problems PDF was inaccessible (binary/compressed), and the related survey arXiv:2306.02364 focuses on tournament colouring structure rather than this specific question."
+}

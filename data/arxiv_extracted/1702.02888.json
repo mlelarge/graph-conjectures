@@ -1,0 +1,24 @@
+[
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Open Problem (independence number of planar graphs)",
+    "statement_text": "It is an intriguing open problem to describe planar graphs on $n$ vertices whose independence number is exactly $n/4$, and we do not even know any polynomial-time algorithm to decide whether an $n$-vertex planar graph has an independent set larger than $n/4$.",
+    "context_text": "By the Four Colour Theorem every planar graph is 4-colourable, giving an independent set of size at least $n/4$, and there are infinitely many planar graphs for which this bound is tight. The paper studies the easier related problem for triangle-free planar graphs (where Grötzsch's theorem raises the bound to $n/3$) as a tractable surrogate for this harder general question.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated in prose in the introduction without a labelled environment and without attribution to specific prior authors; the full paper text is truncated after Corollary 17's proof, so further conjectures or problems in Sections 2–4 may be missing.",
+    "arxiv_id": "1702.02888",
+    "paper_title": "Triangle-free planar graphs with small independence number",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Jordan Venters"
+    ],
+    "published": "2017-02-09",
+    "abs_url": "https://arxiv.org/abs/1702.02888",
+    "source": "pdf"
+  }
+]

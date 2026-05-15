@@ -1,0 +1,23 @@
+{
+  "review_id": "2005.12568__00",
+  "safe_id": "2005.12568",
+  "arxiv_id": "2005.12568",
+  "conjecture_title": "Open problem: convex drawings vs. pseudocircular drawings",
+  "paper_title": "Topological Drawings meet Classical Theorems from Convex Geometry",
+  "published": "2024-07-27",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The open problem of characterizing (non-hereditary) convex drawings in terms of pseudocircular drawings remains unresolved. Arroyo, Richter, and Sunohara (arXiv:2001.06053) established that hereditary-convex drawings coincide precisely with pseudospherical drawings (pseudocircular drawings satisfying two additional properties), but the analogous characterization for general convex drawings has not appeared in the subsequent literature. No paper resolving this structural question was found across searches through May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "convex drawings pseudocircular drawings characterization topological graph Bergold Felsner Scheucher Schröder Steiner 2005.12568",
+    "pseudocircular drawings convex drawings hereditary-convex pseudospherical Arroyo Richter Sunohara characterization",
+    "convex drawings pseudocircular characterization complete graph topological 2024 2025 arxiv",
+    "Bergold Felsner Scheucher Schröder Steiner convex drawings pseudocircular 2024 2025 2026"
+  ],
+  "notes": "No follow-up paper resolving this open problem was found. The problem asks for an analogue of the Arroyo–Richter–Sunohara characterisation (hereditary-convex = pseudospherical) for non-hereditary convex drawings. Recent papers by subsets of the same authors (holes in convex drawings, separable drawings, plane Hamiltonian cycles) address related questions but do not resolve this one."
+}

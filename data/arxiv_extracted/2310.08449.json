@@ -1,0 +1,25 @@
+[
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Alon–Stiebitz Digraph Splitting Problem (Problem 1)",
+    "statement_text": "Does there exist, for all $s, t \\geq 1$, a number $F(s,t) \\in \\mathbb{N}$ such that every digraph $D$ with $\\delta^+(D) \\geq F(s,t)$ has a partition $V(D) = A \\sqcup B$ such that $\\delta^+(D[A]) \\geq s$ and $\\delta^+(D[B]) \\geq t$?",
+    "context_text": "This is the main open problem in the area of digraph splitting with minimum out-degree constraints, posed independently by Stiebitz in 1995 and by Alon in 2006. The only known finite case prior to this paper is $F(1,1) < \\infty$, which is equivalent to the existence of two disjoint directed cycles in any digraph of sufficiently large minimum out-degree; whether $F(2,2) < \\infty$ or even $F(1,2) < \\infty$ remained open. An entry for this problem exists on the Open Problem Garden.",
+    "attributed_to": "Stiebitz and Alon",
+    "attributed_year": 1995,
+    "paper_contribution": "Proves that if $F(2,2) < \\infty$ then $F(s,t) = \\Theta(s+t)$ for all $s, t \\geq 1$ (and analogously $F(s,1) = \\Theta(s)$ if $F(2,1) < \\infty$), thereby reducing the entire problem to deciding whether $F(2,2) < \\infty$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2310.08449",
+    "paper_title": "A note on digraph splitting",
+    "paper_authors": [
+      "Micha Christoph",
+      "Kalina Petrova",
+      "Raphael Steiner"
+    ],
+    "published": "2023-10-12",
+    "abs_url": "https://arxiv.org/abs/2310.08449",
+    "source": "pdf"
+  }
+]

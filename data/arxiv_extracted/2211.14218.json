@@ -1,0 +1,50 @@
+[
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "Informal Conjecture (second phase transition for all radii)",
+    "statement_text": "It seems likely that for every radius $r$ there should be a second phase transition around some threshold $t=t(n)$. By which we mean that, if $p=\\omega(t(n))$, then $G$ is with high probability reconstructible from its $r$-neighbourhoods, while if $p=o(t(n))$ and $p=\\omega(n^{-\\frac{2r+1}{2r}})$, then with high probability $G$ is not reconstructible from its $r$-neighbourhoods.",
+    "context_text": "The paper establishes the existence of this second phase transition for all $r\\geq 3$, but the question remains open for $r=1$ and $r=2$, for which only improved (but not matching) bounds are given.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Proved within the paper for $r\\geq 3$; remains open for $r=1,2$. The conjecture as universally quantified over all $r$ is therefore still open.",
+    "arxiv_id": "2211.14218",
+    "paper_title": "Shotgun assembly of random graphs",
+    "paper_authors": [
+      "Tom Johnston",
+      "Gal Kronenberg",
+      "Alexander Roberts",
+      "Alex Scott"
+    ],
+    "published": "2025-06-23",
+    "abs_url": "https://arxiv.org/abs/2211.14218",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Question",
+    "statement_text": "[Full statement text was not included in the supplied input; the environment is labelled \\texttt{[qu]\\ Question} and, from context, concerns the exact threshold for $r$-reconstructibility of $\\mathcal{G}(n,p)$ for $r\\in\\{1,2\\}$, the two radii for which the paper provides only upper and lower bounds rather than a sharp threshold.]",
+    "context_text": "The paper determines the sharp threshold for $r$-reconstructibility for every $r\\geq 3$. For $r=2$ it improves bounds of Gaudio and Mossel by polynomial factors, and for $r=1$ it sharpens a result of Huang and Tikhomirov, but in neither case is the exact threshold pinned down.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "low",
+    "notes": "The labelled [qu] environment confirms an explicit open question is posed; its verbatim statement was not provided in the supplied paper content, so the statement_text above is inferred from context.",
+    "arxiv_id": "2211.14218",
+    "paper_title": "Shotgun assembly of random graphs",
+    "paper_authors": [
+      "Tom Johnston",
+      "Gal Kronenberg",
+      "Alexander Roberts",
+      "Alex Scott"
+    ],
+    "published": "2025-06-23",
+    "abs_url": "https://arxiv.org/abs/2211.14218",
+    "source": "html"
+  }
+]

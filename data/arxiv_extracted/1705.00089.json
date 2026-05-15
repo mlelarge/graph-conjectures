@@ -1,0 +1,71 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Wegner's Conjecture",
+    "statement_text": "For every finite family $\\mathcal{F}$ of axis-parallel rectangles in $\\mathbb{R}^2$, $\\tau(\\mathcal{F}) \\leq 2\\nu(\\mathcal{F})$.",
+    "context_text": "Wegner conjectured in 1965 that the ratio $\\tau/\\nu$ is bounded by $2$ for hypergraphs of axis-parallel rectangles in $\\mathbb{R}^2$. The best known lower bound $\\tau = \\lfloor 5\\nu/3 \\rfloor$ is due to Fon-Der-Flaass and Kostochka.",
+    "attributed_to": "Wegner",
+    "attributed_year": 1965,
+    "paper_contribution": "Proves $\\tau(\\mathcal{F}) \\leq c\\nu(\\mathcal{F})$ for special families of axis-parallel rectangles in $\\mathbb{R}^2$ (e.g., $r$-bounded aspect ratio in Theorem 1.10, corner intersections with a maximum matching in Corollary 1.9), establishing a constant ratio in these special cases but not the specific bound of $2$ in general.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "The paper's results yield $\\tau/\\nu = O(1)$ under additional assumptions; the conjecture for general families of rectangles with bound $2$ remains open.",
+    "arxiv_id": "1705.00089",
+    "paper_title": "Piercing axis-parallel boxes",
+    "paper_authors": [
+      "Maria Chudnovsky",
+      "Sophie Spirkl",
+      "Shira Zerbib"
+    ],
+    "published": "2017-07-30",
+    "abs_url": "https://arxiv.org/abs/1705.00089",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Gyárfás–Lehel Conjecture",
+    "statement_text": "For every finite family $\\mathcal{F}$ of axis-parallel rectangles in $\\mathbb{R}^2$, the ratio $\\tau(\\mathcal{F})/\\nu(\\mathcal{F})$ is bounded by a constant.",
+    "context_text": "Gyárfás and Lehel conjectured that $\\tau/\\nu$ is bounded by a constant for families of axis-parallel rectangles in $\\mathbb{R}^2$, a weaker form of Wegner's conjecture. This remains open in full generality.",
+    "attributed_to": "Gyárfás and Lehel",
+    "attributed_year": null,
+    "paper_contribution": "Proves $\\tau(\\mathcal{F}) \\leq c\\nu(\\mathcal{F})$ for families of axis-parallel rectangles with $r$-bounded aspect ratio (Theorem 1.10, explicit constant $14 + 2r^2$) and for families where intersections with a maximum matching occur at corners (Corollary 1.9, constant $16$), resolving the conjecture for these special cases.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1705.00089",
+    "paper_title": "Piercing axis-parallel boxes",
+    "paper_authors": [
+      "Maria Chudnovsky",
+      "Sophie Spirkl",
+      "Shira Zerbib"
+    ],
+    "published": "2017-07-30",
+    "abs_url": "https://arxiv.org/abs/1705.00089",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Question",
+    "title": "Weak ε-net question for axis-parallel rectangles",
+    "statement_text": "Do there exist weak $\\varepsilon$-nets of size $O\\!\\left(\\frac{1}{\\varepsilon}\\right)$ for families of axis-parallel rectangles in $\\mathbb{R}^2$?",
+    "context_text": "Pach and Tardos showed the smallest strong $\\varepsilon$-net for axis-parallel rectangles in $\\mathbb{R}^2$ has size $\\Omega\\!\\left(\\frac{1}{\\varepsilon}\\log\\log\\frac{1}{\\varepsilon}\\right)$; the question of whether weak $\\varepsilon$-nets of size $O(1/\\varepsilon)$ exist for axis-parallel rectangles was raised in both [3] (Aronov–Ezra–Sharir) and [10] (Pach–Tardos).",
+    "attributed_to": "Aronov, Ezra, and Sharir; Pach and Tardos",
+    "attributed_year": null,
+    "paper_contribution": "Proves existence of weak $\\varepsilon$-nets of size $O(1/\\varepsilon)$ for families of axis-parallel rectangles in $\\mathbb{R}^2$ whose aspect ratio is bounded by a fixed constant $r$ (Corollary 1.12), giving a positive partial answer.",
+    "opg_lookup": true,
+    "confidence": "medium",
+    "notes": "PDF source — the exact size bound in the original question may be garbled; context suggests the question concerns $O(1/\\varepsilon)$ weak nets, while the known weak-net upper bound is $O(1/\\varepsilon \\log\\log 1/\\varepsilon)$.",
+    "arxiv_id": "1705.00089",
+    "paper_title": "Piercing axis-parallel boxes",
+    "paper_authors": [
+      "Maria Chudnovsky",
+      "Sophie Spirkl",
+      "Shira Zerbib"
+    ],
+    "published": "2017-07-30",
+    "abs_url": "https://arxiv.org/abs/1705.00089",
+    "source": "pdf"
+  }
+]

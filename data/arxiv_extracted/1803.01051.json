@@ -1,0 +1,74 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Reed's Conjecture (Conjecture 1.3)",
+    "statement_text": "If $G$ is a graph of maximum degree at most $\\Delta$ with no clique of size greater than $\\omega$, then $\\chi(G) \\leq \\left\\lceil \\frac{1}{2}(\\Delta + 1 + \\omega) \\right\\rceil$.",
+    "context_text": "Reed's Conjecture, also called Reed's $\\omega$, $\\Delta$, $\\chi$ Conjecture, proposes that the chromatic number is bounded by the average of the trivial greedy upper bound $\\Delta+1$ and the clique number $\\omega$. Reed proved a partial result (Theorem 1.4) showing $\\chi(G) \\leq \\lceil (1-\\varepsilon)(\\Delta+1) + \\varepsilon\\omega \\rceil$ for some $\\varepsilon > 0$; subsequent work improved $\\varepsilon$ to $1/26$ and $1/13$ for large $\\Delta$.",
+    "attributed_to": "Reed",
+    "attributed_year": 1998,
+    "paper_contribution": "The paper's Theorem 1.6 implies Conjecture 1.3 when $\\omega = o\\!\\left(\\frac{\\ln\\Delta}{\\ln\\ln\\Delta}\\right)$, establishing a linear improvement on the greedy bound in this regime and extending the known family of graphs for which the conjecture holds.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "1803.01051",
+    "paper_title": "Bounding $χ$ by a fraction of $Δ$ for graphs without large cliques",
+    "paper_authors": [
+      "Marthe Bonamy",
+      "Tom Kelly",
+      "Peter Nelson",
+      "Luke Postle"
+    ],
+    "published": "2018-03-02",
+    "abs_url": "https://arxiv.org/abs/1803.01051",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Question",
+    "title": "Question 1.5",
+    "statement_text": "Does there exist a function $f : \\mathbb{R} \\to \\mathbb{R}$ such that, for every $c > 1$ and every graph $G$ of maximum degree at most $\\Delta$ with no clique of size greater than $\\Delta^{1/f(c)}$, we have $\\chi_\\ell(G) \\leq \\Delta/c$?",
+    "context_text": "A linear improvement on the greedy bound for graphs without large cliques was notably missing before this paper. Molloy's Theorem 1.2 gives a bound of $200\\omega\\,\\frac{\\Delta\\ln\\ln\\Delta}{\\ln\\Delta}$, and Spencer's Ramsey-theory result shows the bound cannot be improved when $\\omega = \\Omega(\\Delta^{1/2})$, motivating the question of whether a sublinear clique-number condition suffices for a $\\Delta/c$ bound on $\\chi_\\ell$.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "The paper answers Question 1.5 in the affirmative via Theorem 1.6, with $f(c) = (72c)^2$ sufficing for large enough $\\Delta$.",
+    "arxiv_id": "1803.01051",
+    "paper_title": "Bounding $χ$ by a fraction of $Δ$ for graphs without large cliques",
+    "paper_authors": [
+      "Marthe Bonamy",
+      "Tom Kelly",
+      "Peter Nelson",
+      "Luke Postle"
+    ],
+    "published": "2018-03-02",
+    "abs_url": "https://arxiv.org/abs/1803.01051",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "List-chromatic analogue of Reed's Conjecture",
+    "statement_text": "It is possible that Conjecture 1.3 is also true for the list-chromatic number, i.e., $\\chi_\\ell(G) \\leq \\left\\lceil \\frac{1}{2}(\\Delta + 1 + \\omega) \\right\\rceil$ for every graph $G$ of maximum degree at most $\\Delta$ with no clique of size greater than $\\omega$.",
+    "context_text": "After stating Reed's Conjecture 1.3 for the ordinary chromatic number and noting Reed's partial result as evidence, the authors remark that the same bound may extend to the list-chromatic number. The correspondence chromatic number is always at least as large as the list-chromatic number, so such an extension would be nontrivial.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated informally in the introduction: 'It is possible that Conjecture 1.3 is also true for the list-chromatic number.'",
+    "arxiv_id": "1803.01051",
+    "paper_title": "Bounding $χ$ by a fraction of $Δ$ for graphs without large cliques",
+    "paper_authors": [
+      "Marthe Bonamy",
+      "Tom Kelly",
+      "Peter Nelson",
+      "Luke Postle"
+    ],
+    "published": "2018-03-02",
+    "abs_url": "https://arxiv.org/abs/1803.01051",
+    "source": "pdf"
+  }
+]

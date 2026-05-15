@@ -1,0 +1,50 @@
+[
+  {
+    "role": "studies",
+    "kind": "Problem",
+    "title": "Problem 1 (Fitzsimons; Angel and Holroyd)",
+    "statement_text": "Does $U(n) = \\binom{n}{2}$ for all $n$?",
+    "context_text": "Fitzsimons raised this question on Stack Exchange in 2011 and Angel and Holroyd independently asked it in 2018; both had given constructions of transposition shuffles achieving length $\\binom{n}{2}$ and asked whether this is optimal. The paper resolves the question negatively.",
+    "attributed_to": "Fitzsimons; Angel and Holroyd",
+    "attributed_year": 2011,
+    "paper_contribution": "Answers Problem 1 negatively: constructs a transposition shuffle of length $(1-\\varepsilon)\\binom{n}{2}$ for some $\\varepsilon>0$ and all $n\\geq 6$, and more precisely of length $\\frac{2}{3}\\binom{n}{2}+O(n\\log n)$.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source — binomial-coefficient notation rendered as (cid:0)...(cid:1) in raw extraction; LaTeX reconstructed from context.",
+    "arxiv_id": "2208.06629",
+    "paper_title": "Perfect shuffling with fewer lazy transpositions",
+    "paper_authors": [
+      "Carla Groenland",
+      "Tom Johnston",
+      "Jamie Radcliffe",
+      "Alex Scott"
+    ],
+    "published": "2022-08-13",
+    "abs_url": "https://arxiv.org/abs/2208.06629",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Problem 3",
+    "statement_text": "Does $U_t(n) = tn - \\binom{t+1}{2}$?",
+    "context_text": "This generalises Problem 1 to the setting of shuffling $t$ distinguishable counters across $n$ positions using the fewest lazy transpositions. The upper bound $U_t(n)\\leq tn-\\binom{t+1}{2}$ is achieved by existing sweeping/divide-and-conquer constructions. When $t=n$ the problem reduces to Problem 1, which Theorem 2 answers negatively; the paper asks whether the trivial bound is tight for other values of $t$.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "PDF source — binomial-coefficient notation garbled in raw extraction; LaTeX reconstructed from context. The paper also proves (Theorem 4) that for $3\\leq t\\leq n$ the bound can likewise be beaten by a constant factor, so the answer is negative for all $t\\geq 3$.",
+    "arxiv_id": "2208.06629",
+    "paper_title": "Perfect shuffling with fewer lazy transpositions",
+    "paper_authors": [
+      "Carla Groenland",
+      "Tom Johnston",
+      "Jamie Radcliffe",
+      "Alex Scott"
+    ],
+    "published": "2022-08-13",
+    "abs_url": "https://arxiv.org/abs/2208.06629",
+    "source": "pdf"
+  }
+]

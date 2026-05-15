@@ -1,0 +1,33 @@
+{
+  "review_id": "2106.04894__01",
+  "safe_id": "2106.04894",
+  "arxiv_id": "2106.04894",
+  "conjecture_title": "Conjecture 1.2",
+  "paper_title": "Geometric and o-minimal Littlewood-Offord problems",
+  "published": "2022-06-14",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "medium",
+  "summary": "Conjecture 1.2 — the optimal $O(1/\\sqrt{n})$ anti-concentration bound for random signed sums landing in an o-minimal set containing no line segment — has been established for the semialgebraic case by Grebennikov and Kwan (2025, arXiv:2505.24699), who prove $\\Pr[\\xi_1 a_1+\\cdots+\\xi_n a_n \\in S] \\le O_S(n^{-1/2})$ via a lattice-point-counting reduction; the paper explicitly states it resolves conjectures of Fox–Kwan–Spink and Kwan–Sauermann. Whether this covers the full conjecture for all o-minimal (not just semialgebraic) structures is not confirmed from the available abstract and HTML.",
+  "since_posted": [
+    {
+      "title": "Geometric Littlewood–Offord problems via lattice point counting",
+      "authors": "Alexandr Grebennikov, Matthew Kwan",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2505.24699",
+      "arxiv_id": "2505.24699",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves Pr(X in S) = O_S(n^{-1/2}) for semialgebraic sets S containing no line segment (Theorem 1.8), removing the logarithmic factors from prior work and explicitly resolving conjectures of Fox–Kwan–Spink and Kwan–Sauermann."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Fox Kwan Spink Littlewood-Offord o-minimal conjecture 2106.04894 follow-up",
+    "Littlewood-Offord o-minimal definable sets 1/sqrt(n) bound arxiv 2023 2024 2025"
+  ],
+  "notes": "The Grebennikov–Kwan paper (2505.24699, May 2025) claims to resolve Fox–Kwan–Spink conjectures and proves the optimal O(n^{-1/2}) bound for semialgebraic sets; this is a major special case of o-minimal sets. Status is marked 'partial' rather than 'solved' because the fetched content does not confirm the result for all o-minimal structures beyond the semialgebraic case. Confidence is 'medium' due to this ambiguity."
+}

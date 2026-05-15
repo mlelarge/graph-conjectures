@@ -1,0 +1,23 @@
+{
+  "review_id": "1407.5833__00",
+  "safe_id": "1407.5833",
+  "arxiv_id": "1407.5833",
+  "conjecture_title": "VC-Dimension Dichotomy for Identifying Codes (Approximation)",
+  "paper_title": "Identifying codes in hereditary classes of graphs and VC-dimension",
+  "published": "2017-04-14",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "The source paper (arXiv:1407.5833, published SIAM Journal on Discrete Mathematics 29(4):2047–2064, 2015) proves both halves of the size dichotomy: infinite VC-dimension forces a logarithmic lower bound and log-APX-hardness, while finite VC-dimension forces a polynomial lower bound. The conjectured complementary algorithmic half — that finite VC-dimension also entails constant-factor approximability of Min Identifying Code — remains open; four targeted web searches found no follow-up paper proving or disproving this claim as of May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "identifying codes hereditary classes VC-dimension approximation log-APX 1407.5833",
+    "minimum identifying code constant factor approximation hereditary graph class VC-dimension dichotomy",
+    "identifying code approximation algorithm finite VC-dimension polynomial lower bound Bousquet Parreau 2018 2019 2020 2021 2022 2023 2024",
+    "arxiv \"identifying code\" \"hereditary\" \"VC-dimension\" site:arxiv.org 2018 OR 2019 OR 2020 OR 2021 OR 2022 OR 2023 OR 2024 OR 2025"
+  ],
+  "notes": "No follow-up paper was found that resolves the conjectured constant-factor approximability of Min Identifying Code in finite VC-dimension hereditary classes. The paper itself (confirmed via WebFetch of the arXiv abstract page) notes that C₄-free bipartite graphs (finite VC-dimension) exhibit non-trivial intermediate behavior, illustrating the difficulty of the algorithmic half of the dichotomy. The conjecture is at least 9 years old; absence of a resolution in indexed literature suggests it is a hard open problem. Confidence is medium rather than high because the paper is old enough that a resolution in a journal paper not prominently indexed on arXiv could have been missed."
+}

@@ -1,0 +1,24 @@
+[
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.1",
+    "statement_text": "If any connected component of $G$ is not a complete graph, then $\\chi_{ISC}(G) < \\chi_{SC}(G)$.",
+    "context_text": "The authors show that the interactive sum choice number satisfies $\\chi_{ISC}(G) \\leq \\chi_{SC}(G)$ for all graphs $G$, and that equality holds when $G$ is a disjoint union of complete graphs (since Bob can force every vertex to receive colours $1, 2, \\ldots$ in order). They believe this is the only case of equality, motivating the conjecture. The paper provides evidence by confirming it for sc-greedy graphs, trees, unbalanced complete bipartite graphs, and grids.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "Source is PDF; the conjecture statement itself contains only simple inequality notation and is cleanly readable.",
+    "arxiv_id": "1703.05380",
+    "paper_title": "The Interactive Sum Choice Number of Graphs",
+    "paper_authors": [
+      "Marthe Bonamy",
+      "Kitty Meeks"
+    ],
+    "published": "2021-01-06",
+    "abs_url": "https://arxiv.org/abs/1703.05380",
+    "source": "pdf"
+  }
+]

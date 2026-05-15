@@ -1,0 +1,24 @@
+[
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 1.8",
+    "statement_text": "For all integers $\\kappa, \\ell \\geq 0$, there exists $c \\geq 0$ such that every graph with chromatic number greater than $c$ contains either a complete subgraph on $\\kappa$ vertices or holes of $\\ell$ consecutive lengths.",
+    "context_text": "The authors proved in [14] (a prior paper in this series) that every triangle-free graph with sufficiently large chromatic number contains holes of $\\ell$ consecutive lengths (result 1.7 of the present paper). Conjecture 1.8 extends this to graphs with clique number bounded by any $\\kappa$. The conjecture remains open; this paper makes a partial step by proving 1.9, which guarantees holes of two consecutive lengths both greater than $\\ell$.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "Explicitly labelled 'Conjecture' in the paper. The authors state it was conjectured in their earlier paper [14]; the theorem header carries no parenthetical attribution, so classified as 'states' per schema rules. Theorem 1.9 of this paper (holes of two consecutive long lengths) is proved as a step towards this conjecture.",
+    "arxiv_id": "1705.04609",
+    "paper_title": "Induced subgraphs of graphs with large chromatic number. X. Holes of specific residue",
+    "paper_authors": [
+      "Alex Scott",
+      "Paul Seymour"
+    ],
+    "published": "2018-12-04",
+    "abs_url": "https://arxiv.org/abs/1705.04609",
+    "source": "pdf"
+  }
+]

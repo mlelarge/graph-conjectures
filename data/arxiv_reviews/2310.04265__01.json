@@ -1,0 +1,22 @@
+{
+  "review_id": "2310.04265__01",
+  "safe_id": "2310.04265",
+  "arxiv_id": "2310.04265",
+  "conjecture_title": "Question 3.10",
+  "paper_title": "Clique number of tournaments",
+  "published": "2023-10-06",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Question 3.10 asks whether polynomial $\\overrightarrow{\\chi}$-boundedness of a class of tournaments is preserved under substitution closure, in analogy with the result of Chudnovsky et al. for undirected graphs. The source paper itself establishes that (non-polynomial) $\\overrightarrow{\\chi}$-boundedness is preserved under substitution but only with an exponential binding function $g(w)=(3wf(w))^w$, motivating the question. No follow-up paper resolving Question 3.10 was found in the indexed literature as of May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "tournament polynomially chi-bounded substitution closure dichromatic number Aboulker Aubian Charbit Lopes 2310.04265",
+    "tournament dichromatic polynomial chi-bounded substitution closure 2024 2025 2026 graph theory arxiv",
+    "\"polynomially chi-bounded\" tournament substitution \"clique number\" 2024 2025 arxiv Aboulker"
+  ],
+  "notes": "A related 2026 paper arXiv:2602.09863 ('Characterizing Large Clique Number in Tournaments') answers a different question from the same source paper (about certification of large clique number by bounded-size sets), not Question 3.10. The paper arXiv:2401.07776 establishes NP-completeness of computing clique number of tournaments and refutes a different conjecture from Aboulker et al. 2023. Question 3.10 on polynomial preservation under substitution closure remains open with no follow-up found."
+}

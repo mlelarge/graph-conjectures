@@ -1,0 +1,46 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Conjecture 1 (Cereceda)",
+    "statement_text": "If $G$ is a $k$-degenerate graph on $n$ vertices, then $R_{k+2}(G)$ has diameter $O(n^2)$.",
+    "context_text": "Cereceda conjectured this quadratic diameter bound for the reconfiguration graph with $k+2$ colors on $k$-degenerate graphs, and the bound would be best possible. Despite several efforts and partial results, the conjecture remains open even for $k=2$.",
+    "attributed_to": "Cereceda",
+    "attributed_year": null,
+    "paper_contribution": "The paper does not directly prove any case of this conjecture; it is cited as foundational motivation for the study of reconfiguration of colorings of planar graphs, and the techniques developed (reducible configurations, valid recoloring sequences) are in the same research program.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2002.05383",
+    "paper_title": "An update on reconfiguring $10$-colorings of planar graphs",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Carl Feghali"
+    ],
+    "published": "2020-02-13",
+    "abs_url": "https://arxiv.org/abs/2002.05383",
+    "source": "pdf"
+  },
+  {
+    "role": "states",
+    "kind": "Problem",
+    "title": "Problem 3",
+    "statement_text": "What is the minimum integer $\\kappa$ such that for every planar graph $G$ with $n$ vertices, $R_{\\kappa}(G)$ has diameter $O(n)$?",
+    "context_text": "Planar graphs are 5-degenerate and have maximum average degree less than 6; prior results give $R_8(G)$ diameter $O(n(\\log n)^7)$ and $R_{12}(G)$ diameter at most $6n$ for planar $G$. The paper improves the upper bound to $\\kappa \\leq 10$ via Theorem 4, and an isolated 6-coloring of the icosahedron shows $\\kappa \\geq 7$; the authors note that $\\kappa = 7$ cannot be excluded.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2002.05383",
+    "paper_title": "An update on reconfiguring $10$-colorings of planar graphs",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Carl Feghali"
+    ],
+    "published": "2020-02-13",
+    "abs_url": "https://arxiv.org/abs/2002.05383",
+    "source": "pdf"
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Reconstruction Conjecture",
+    "statement_text": "For $n \\geq 3$, two graphs $G$ and $H$ of order $n$ are isomorphic if and only if $\\mathcal{D}(G) = \\mathcal{D}(H)$.",
+    "context_text": "Kelly and Ulam raised the question of whether two non-isomorphic graphs can have the same deck. The Reconstruction Conjecture remains open even for basic classes of graphs such as planar graphs and graphs of bounded maximum degree, and motivates the study of which graph parameters are reconstructible from full or partial decks.",
+    "attributed_to": "Kelly and Ulam",
+    "attributed_year": 1960,
+    "paper_contribution": "Proves that the degree sequence of any graph with average degree at most $d$ can be reconstructed from any deck missing at most $\\frac{n}{10^4 d^3}$ cards; in particular, for graphs embeddable on a fixed surface (e.g., planar graphs), the degree sequence is reconstructible even when a linear number of cards are missing.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "Conjecture 1 in the paper, attributed via citations [10, 11, 18] to Kelly and Ulam. The paper's central contribution concerns degree-sequence reconstruction from partial decks rather than full graph reconstruction; the Reconstruction Conjecture is the motivating background for the reconstruction literature. The open-problems section (Section 4) is truncated in the PDF source and could not be extracted.",
+    "arxiv_id": "2102.08679",
+    "paper_title": "Reconstructing the degree sequence of a sparse graph from a partial deck",
+    "paper_authors": [
+      "Carla Groenland",
+      "Tom Johnston",
+      "Andrey Kupavskii",
+      "Kitty Meeks",
+      "Alex Scott",
+      "Jane Tan"
+    ],
+    "published": "2022-08-04",
+    "abs_url": "https://arxiv.org/abs/2102.08679",
+    "source": "pdf"
+  }
+]

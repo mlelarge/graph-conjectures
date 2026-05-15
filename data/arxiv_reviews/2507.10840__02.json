@@ -1,0 +1,22 @@
+{
+  "review_id": "2507.10840__02",
+  "safe_id": "2507.10840",
+  "arxiv_id": "2507.10840",
+  "conjecture_title": "Problem 5.2",
+  "paper_title": "Covering Complete Geometric Graphs by Monotone Paths",
+  "published": "2026-01-10",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Problem 5.2 asks for the smallest z=z(n) such that every complete geometric graph on n vertices can be covered by z plane zig-zag paths. The source paper (arXiv:2507.10840) proves that for any finite point set in general position, the edge set can be covered by plane Hamiltonian zig-zag paths, establishing that z(n) is finite, but the exact asymptotics remain unknown. No follow-up work resolving this problem was found in a wide web search conducted in May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Dumitrescu Pach Saghafian Scott complete geometric graph zig-zag paths monotone paths covering arXiv 2507.10840",
+    "plane zig-zag paths complete geometric graph covering point set minimum number 2025 2026",
+    "Dumitrescu Pach zig-zag Hamiltonian geometric graph covering 2025 2026 arXiv"
+  ],
+  "notes": "No follow-up found. The paper proves existence of a covering by plane Hamiltonian zig-zag paths (upper bound on z(n)), but neither upper nor lower bounds on z(n) are established. The paper is recent (arXiv submission July 2025, published January 2026) and the problem is newly posed, making the absence of follow-up expected."
+}

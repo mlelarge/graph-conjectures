@@ -1,0 +1,90 @@
+[
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 2",
+    "statement_text": "A graph drawn on the torus is critical for 5-choosability if and only if it is $6$-critical.",
+    "context_text": "Theorem 1 establishes this result under the additional assumption that there exists a cyclic system of non-contractible triangles around the torus with consecutive triangles at distance at most four. The authors verified that $K_7$ is the only graph critical for 5-list coloring but not for 5-choosability satisfying the assumptions of Theorem 1, and believe the cyclic system assumption can be dropped entirely.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2407.18800",
+    "paper_title": "Towards Characterization of 5-List-Colorability of Toroidal Graphs",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Félix Moreno Peñarrubia"
+    ],
+    "published": "2024-07-26",
+    "abs_url": "https://arxiv.org/abs/2407.18800",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 3",
+    "statement_text": "A toroidal graph is $5$-choosable if and only if it is $5$-colorable.",
+    "context_text": "This conjecture is stated as equivalent to Conjecture 2 and represents the central goal of the paper: a complete choosability analogue of Thomassen's characterization of 5-colorability on the torus. The computational results of the paper, enumerating minimal obstructions under a cyclic-triangle-system condition, provide supporting evidence.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2407.18800",
+    "paper_title": "Towards Characterization of 5-List-Colorability of Toroidal Graphs",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Félix Moreno Peñarrubia"
+    ],
+    "published": "2024-07-26",
+    "abs_url": "https://arxiv.org/abs/2407.18800",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 4",
+    "statement_text": "Every graph drawn on the torus with edge-width at least four is 5-choosable.",
+    "context_text": "This is proposed as an important intermediate step towards Conjecture 3, focusing on toroidal graphs with no non-contractible cycle of length less than four. Postle proved that the edge-width of a graph critical for 5-list coloring is at most logarithmic in its genus, so the conjecture holds when four is replaced by a sufficiently large constant.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2407.18800",
+    "paper_title": "Towards Characterization of 5-List-Colorability of Toroidal Graphs",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Félix Moreno Peñarrubia"
+    ],
+    "published": "2024-07-26",
+    "abs_url": "https://arxiv.org/abs/2407.18800",
+    "source": "html"
+  },
+  {
+    "role": "states",
+    "kind": "Conjecture",
+    "title": "Conjecture 8",
+    "statement_text": "There is no critical prism-canvas of spacing at least five.",
+    "context_text": "This conjecture arises from the paper's computer-assisted enumeration: using the classification of chordless critical cycle-canvases, the authors obtained 510, 2719, 300, and 5 candidates for critical prism-canvases of spacing at most four (after eliminating provably non-critical ones), and conjecture the list is empty at spacing five and beyond.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2407.18800",
+    "paper_title": "Towards Characterization of 5-List-Colorability of Toroidal Graphs",
+    "paper_authors": [
+      "Zdeněk Dvořák",
+      "Félix Moreno Peñarrubia"
+    ],
+    "published": "2024-07-26",
+    "abs_url": "https://arxiv.org/abs/2407.18800",
+    "source": "html"
+  }
+]

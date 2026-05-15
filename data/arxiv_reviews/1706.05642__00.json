@@ -1,0 +1,22 @@
+{
+  "review_id": "1706.05642__00",
+  "safe_id": "1706.05642",
+  "arxiv_id": "1706.05642",
+  "conjecture_title": "Informal Conjecture (error term in Proposition 1.4)",
+  "paper_title": "$H$-free subgraphs of dense graphs maximizing the number of cliques and their blow-ups",
+  "published": "2017-06-18",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Proposition 1.4 of Alon–Shikhelman (arXiv:1706.05642) asserts that for every graph $H$ with $\\chi(H)=k$, any $H$-free subgraph of a sufficiently dense graph maximizing copies of $K_m(t)$ can be made $(k-1)$-colorable by deleting $o(n^2)$ edges; the authors conjecture that $o(n^2)$ can be sharpened to $O(n^{2-\\delta})$ for some $\\delta=\\delta(H)>0$. No published or posted paper resolving or making partial progress on this specific conjecture was found in a broad web search covering 2017–2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Alon Shikhelman H-free subgraphs cliques blow-ups error term improvement 1706.05642",
+    "H-free subgraph dense graph cliques chromatic number edge deletion o(n^2) O(n^{2-delta}) improvement",
+    "Alon Shikhelman H-free subgraphs dense graphs cliques chromatic number cite 2019 2020 2021 2022"
+  ],
+  "notes": "No follow-up found addressing the conjectured improvement of the error term. The conjecture is a quantitative sharpening of Proposition 1.4 (which covers non-edge-critical $H$); Theorems 1.2–1.3 handle edge-critical $H$ with exact $(k-1)$-colorability. The $o(n^2)$ deletion bound is standard in graph removal / regularity arguments; improving it to $O(n^{2-\\delta})$ would require new techniques (e.g. arithmetic or algebraic methods), which may explain the lack of progress."
+}

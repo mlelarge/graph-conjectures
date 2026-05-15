@@ -1,0 +1,55 @@
+{
+  "review_id": "2006.09877__01",
+  "safe_id": "2006.09877",
+  "arxiv_id": "2006.09877",
+  "conjecture_title": "Question: polynomial expansion and twin-width",
+  "paper_title": "Twin-width II: small classes",
+  "published": "2020-06-17",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The question of whether classes with polynomial expansion have bounded twin-width remains open as of 2026, confirmed by Bonnet's own open-problems page which lists it with the note 'we are quite far from proving it.' Twin-width IV (arXiv:2102.03117) gives a partial resolution for hereditary classes of ordered graphs, showing bounded twin-width and sub-exponential growth are equivalent in that setting. The related but strictly more general 'small conjecture' (every small class has bounded twin-width) was disproved by Twin-width VII (arXiv:2204.12330), which constructs via a Cayley-graph argument a small class with unbounded twin-width; however, that counterexample does not have polynomial expansion, so the polynomial-expansion question remains open and isolated.",
+  "since_posted": [
+    {
+      "title": "Twin-width IV: ordered graphs and matrices",
+      "authors": "Édouard Bonnet, Ugo Giocanti, Patrice Ossona de Mendez, Pierre Simon, Stéphan Thomassé, Rémi Watrigant",
+      "year": 2021,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2102.03117",
+      "arxiv_id": "2102.03117",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves that for hereditary classes of ordered graphs, bounded twin-width is equivalent to sub-exponential (2^{O(n)}) growth, giving a partial resolution of the conjecture in the ordered setting."
+    },
+    {
+      "title": "Twin-width VII: groups",
+      "authors": "Édouard Bonnet, Colin Geniet, Romain Tessera, Stéphan Thomassé",
+      "year": 2022,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2204.12330",
+      "arxiv_id": "2204.12330",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Disproves the more general 'small conjecture' by constructing (via a finitely generated group with infinite twin-width, Theorem 1.1) a small hereditary class with unbounded twin-width (Corollary 1.4); the counterexample is not a class with polynomial expansion, so the polynomial-expansion question itself remains open."
+    }
+  ],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2102.03117",
+      "verified": true,
+      "note": "Abstract confirms the paper characterises bounded twin-width for ordered binary structures and relates it to sub-exponential labelled growth; the claimed contribution (partial resolution for ordered graphs) is consistent with the abstract, though the full theorem numbering could not be confirmed from the abstract alone."
+    },
+    {
+      "arxiv_id": "2204.12330",
+      "verified": true,
+      "note": "Abstract confirms the paper proves groups with polynomial growth (among other classes) have finite twin-width, and constructs an example with infinite twin-width. However, the internal-ref claim that this 'disproves the conjecture' (polynomial expansion → bounded twin-width) is inaccurate: it disproves the more general small conjecture, and Bonnet's current open-problems page explicitly still lists the polynomial-expansion question as open."
+    }
+  ],
+  "search_queries": [
+    "polynomial expansion bounded twin-width classes graph theory arXiv 2006.09877",
+    "twin-width \"polynomial expansion\" small class conjecture disproved 2022 2023 2024"
+  ],
+  "notes": "Bonnet's open-problems page (fetched 2026-05-15) explicitly lists this question as open with the remark 'we are quite far from proving it.' The small conjecture (small ⇒ bounded twin-width) was disproved by Twin-width VII; the polynomial expansion question is a strictly harder sub-question that survives the disproof because the Cayley-graph counterexample lacks polynomial expansion."
+}

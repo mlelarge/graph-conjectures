@@ -1,0 +1,25 @@
+[
+  {
+    "role": "states",
+    "kind": "Informal",
+    "title": "2-Approximation Conjecture for Cluster-VD",
+    "statement_text": "Cluster-VD can be 2-approximated in polynomial time.",
+    "context_text": "The authors establish a 9/4-approximation algorithm for the weighted Cluster Vertex Deletion problem (finding a minimum cost vertex set whose deletion leaves no induced $P_3$). Since Cluster-VD is UGC-hard to approximate to within any ratio better than 2 (via a reduction from Vertex Cover), a 2-approximation is the natural target. The authors note their 9/4-approximation already achieves ratio 2 when the largest clique has size at most 4, and can be modified to a 2-approximation on diamond-free graphs, providing partial support for the conjecture.",
+    "attributed_to": "paper authors",
+    "attributed_year": null,
+    "paper_contribution": "",
+    "opg_lookup": false,
+    "confidence": "medium",
+    "notes": "Stated in prose in both the abstract and the introduction without a labelled conjecture environment; language is unambiguously conjectural ('We further conjecture that …').",
+    "arxiv_id": "1808.10370",
+    "paper_title": "Improved approximation algorithms for hitting 3-vertex paths",
+    "paper_authors": [
+      "Samuel Fiorini",
+      "Gwenaël Joret",
+      "Oliver Schaudt"
+    ],
+    "published": "2019-02-22",
+    "abs_url": "https://arxiv.org/abs/1808.10370",
+    "source": "pdf"
+  }
+]

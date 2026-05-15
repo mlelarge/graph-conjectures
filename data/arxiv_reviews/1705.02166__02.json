@@ -1,0 +1,21 @@
+{
+  "review_id": "1705.02166__02",
+  "safe_id": "1705.02166",
+  "arxiv_id": "1705.02166",
+  "conjecture_title": "Open problem: removing diameter dependence from Theorem 1.1",
+  "paper_title": "Lines in Euclidean Ramsey theory",
+  "published": "2018-03-20",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "The open problem asks whether the log R diameter term in Theorem 1.1 (which requires |K| > 10^4 n log R) can be eliminated, yielding a bound f(n) independent of the diameter of K. No follow-up paper resolving this question was found in the indexed literature. Related subsequent work (arXiv:2406.07718, 'Non-spherical sets versus lines in Euclidean Ramsey theory') cites Conlon–Fox but addresses a different extension (non-spherical sets versus arithmetic progressions) and does not touch the diameter-dependence question. The problem thus appears to remain open.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Euclidean Ramsey theory 1-separated set diameter dependence Conlon Fox 1705.02166",
+    "Euclidean Ramsey monochromatic line 1-separated diameter independent bound arxiv"
+  ],
+  "notes": "Searches returned several related papers in Euclidean Ramsey theory (arXiv:2406.07718, arXiv:2402.12567, arXiv:2512.15516, arXiv:2404.11454) but none address the specific open problem of removing the diameter R dependence from Theorem 1.1. The problem is from 2018 (8 years old), so medium rather than high confidence is assigned for the open status."
+}

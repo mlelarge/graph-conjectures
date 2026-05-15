@@ -1,0 +1,26 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Erdős Conjecture on $ex(n;\\{C_3,C_4\\})$",
+    "statement_text": "$$ex(n;\\{C_{3},C_{4}\\})=\\left(\\frac{1}{2\\sqrt{2}}+o(1)\\right)n\\sqrt{n}.$$",
+    "context_text": "Erdős conjectured this asymptotic formula for the maximum number of edges in an $n$-vertex graph of girth at least 5. The conjecture is still open; the best known asymptotic bounds give $\\frac{1}{2\\sqrt{2}}\\leqslant\\limsup_{n\\to\\infty}\\frac{ex(n;\\{C_{3},C_{4}\\})}{n\\sqrt{n}}\\leqslant\\frac{1}{2}$, due to Garnick, Kwong and Lazebnik.",
+    "attributed_to": "Erdős",
+    "attributed_year": 1975,
+    "paper_contribution": "Improves lower bounds on $ex(n;\\{C_{3},C_{4}\\})$ for all $n\\in\\{74,75,\\dots,198\\}$ (except $n=96,97$) via a new hill-climbing propagation algorithm, strengthening the computational evidence for the lower bound side of the conjecture.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "",
+    "arxiv_id": "2508.05562",
+    "paper_title": "Improved lower bounds on the maximum size of graphs with girth 5",
+    "paper_authors": [
+      "Jan Goedgebeur",
+      "Jorik Jooken",
+      "Gwenaël Joret",
+      "Tibo Van den Eede"
+    ],
+    "published": "2025-08-07",
+    "abs_url": "https://arxiv.org/abs/2508.05562",
+    "source": "html"
+  }
+]

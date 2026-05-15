@@ -1,0 +1,22 @@
+{
+  "review_id": "1709.09050__02",
+  "safe_id": "1709.09050",
+  "arxiv_id": "1709.09050",
+  "conjecture_title": "Tightness of linear capture time bound for planar graphs",
+  "paper_title": "Topological directions in Cops and Robbers",
+  "published": "2018-04-22",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The conjecture from Bonato and Mohar (arXiv:1709.09050) asks whether the bound capt_3(G) ≤ 2n for planar graphs of order n is tight and, more specifically, whether any planar graph exists with capture time exceeding n. No follow-up paper resolving either question was found in the indexed literature as of May 2026. The most related general result — showing O(n^{k+1}) is asymptotically tight for k ≥ 2 cops in arbitrary graphs (Brandt et al., 2020) — does not apply to the planar setting with k = 3.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "capture time cops robbers planar graphs linear bound tight 2019 2020 2021 2022 2023 2024",
+    "capt_3 planar graph n capture time cops robbers arXiv 1709.09050 Bonato Mohar",
+    "capture time planar graph lower bound tight cops robbers 2020 2021 2022 2023 2024 2025 arXiv"
+  ],
+  "notes": "No follow-up found. The Brandt-Emek-Uitto-Wattenhofer paper (Theoretical Computer Science, 2020; doi:10.1016/j.tcs.2020.07.016) shows O(n^{k+1}) capture-time is tight for k ≥ 2 cops in general graphs, but this does not address the planar restriction. The paper arXiv:2406.01068 (2024) studies guarding isometric subgraphs and proves c_2(G) ≤ 3 for planar graphs (cop-move number variant), which is unrelated to the capt_3 tightness question. The conjecture remains open."
+}

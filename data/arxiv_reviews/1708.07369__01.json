@@ -1,0 +1,23 @@
+{
+  "review_id": "1708.07369__01",
+  "safe_id": "1708.07369",
+  "arxiv_id": "1708.07369",
+  "conjecture_title": "Conjecture 1.5",
+  "paper_title": "Ramsey-nice families of graphs",
+  "published": "2018-04-16",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Conjecture 1.5 from arXiv:1708.07369 asserts that any finite family of graphs containing at least one forest is $k$-nice for infinitely many integers $k$. The source paper itself provides the main supporting evidence via Theorem 1.6 (families containing a star $K_{1,r+1}$ plus only cycle graphs are $k$-nice for infinitely many $k$), and verifies the conjecture for families with a forest of at most 2 edges and for three specific two-graph families of 3-edge graphs. No subsequent paper resolving or disproving the full conjecture was found in the indexed literature after four targeted web searches and a citation-graph check.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Ramsey-nice families graphs forest k-nice conjecture arXiv 1708.07369",
+    "\"Ramsey-nice\" family graphs forest \"infinitely many\" k-nice",
+    "Aharoni Alon Haxell Hefetz \"Ramsey-nice\" forest conjecture 2019 2020 2021 2022 2023 2024",
+    "\"k-nice\" forest graphs Ramsey \"Conjecture 1.5\" OR \"nice families\" site:arxiv.org"
+  ],
+  "notes": "No follow-up resolving this conjecture was found. The Semantic Scholar citation graph for arXiv:1708.07369 lists only 4 citing papers (as of May 2026), none of which address Conjecture 1.5. Danny Hefetz's publication page (one of the paper's co-authors) shows no direct follow-up on Ramsey-nice families after 2018. The conjecture is a weakening of Question 1.1 (which asks for k-nice for all sufficiently large k); even this weaker form appears to remain open."
+}

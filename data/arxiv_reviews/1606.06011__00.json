@@ -1,0 +1,29 @@
+{
+  "review_id": "1606.06011__00",
+  "safe_id": "1606.06011",
+  "arxiv_id": "1606.06011",
+  "conjecture_title": "Conjecture 2.2",
+  "paper_title": "A new class of graphs that satisfies the Chen-Chvátal Conjecture",
+  "published": "2016-06-20",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "Conjecture 2.2 from arXiv:1606.06011 proposes that all counterexamples to ℓ(G) + br(G) ≥ |G| among graphs without a pendant edge form a finite exceptional family F_0; the source paper identified three minimal counterexamples with a bridge. Searches of the subsequent Chen-Chvátal literature (including papers on bisplit graphs, diameter-3 graphs, and improved metric-space lower bounds) found no paper that resolves or substantially advances this specific finite-family conjecture. The conjecture appears to remain open as of 2026, though the 10-year gap and limited indexed coverage leave medium confidence.",
+  "since_posted": [],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "1606.06011",
+      "verified": true,
+      "note": "This is the source paper itself (self-reference in the 'Also stated in' field). Published as J. Graph Theory 87(1):77-88, 2018. Conjecture 2.2 is stated therein; no separate verification needed beyond confirming the paper's existence and publication."
+    }
+  ],
+  "search_queries": [
+    "Aboulker Matamala Rochet Zamora pendant edge bridge conjecture graph Chen-Chvátal 1606.06011",
+    "Chen-Chvátal conjecture pendant edge bridge graph lines metric space arXiv 2017 2018 2019 2020",
+    "arxiv 2310.15058 improved lower bound Chen-Chvátal conjecture pendant edge br(G)",
+    "arxiv 2512.12047 Chen-Chvátal conjecture diameter 3 pendant edge finite family"
+  ],
+  "notes": "No follow-up paper addressing Conjecture 2.2 specifically (the finite exceptional family F_0 for graphs without pendant edges) was found. Related Chen-Chvátal papers found (2310.15058 on metric-space lower bounds; 2512.12047 on diameter-3 graphs; 1808.08710 on bisplit graphs) do not discuss the pendant-edge/bridge finite-family conjecture. Confidence is medium rather than high because the conjecture is ~10 years old and resolution in a venue not indexed by our searches cannot be ruled out."
+}

@@ -1,0 +1,48 @@
+[
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "The Normal Graph Conjecture (Conjecture 1.1)",
+    "statement_text": "A graph with no $C_5$, $C_7$ and $\\bar{C_7}$ as induced subgraph is normal.",
+    "context_text": "De Simone and Körner conjectured this in 1999, motivated by the fact that $C_5$, $C_7$, and $\\bar{C_7}$ are the only minimally known graphs which are not normal and by analogy with the Strong Perfect Graph Theorem. The paper disproves this conjecture by proving the stronger result that there exists a graph of girth at least 8 that is not normal.",
+    "attributed_to": "De Simone and Körner",
+    "attributed_year": 1999,
+    "paper_contribution": "Disproves the conjecture by constructing, via the probabilistic method, a graph of girth at least 8 (hence containing no $C_5$, $C_7$, or $\\bar{C_7}$ as an induced subgraph) that is not normal.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source — the overline on the third forbidden subgraph ($\\bar{C_7}$) is lost in extraction and has been reconstructed from context.",
+    "arxiv_id": "1508.05487",
+    "paper_title": "Disproving the normal graph conjecture",
+    "paper_authors": [
+      "Ararat Harutyunyan",
+      "Lucas Pastor",
+      "Stéphan Thomassé"
+    ],
+    "published": "2020-08-28",
+    "abs_url": "https://arxiv.org/abs/1508.05487",
+    "source": "pdf"
+  },
+  {
+    "role": "studies",
+    "kind": "Conjecture",
+    "title": "Strong Normal Graph Conjecture (Conjecture 1.2)",
+    "statement_text": "A graph $G$ is strongly normal if and only if neither $G$ nor its complement contain a $C_5$ or a $C_7$ as an induced subgraph.",
+    "context_text": "This is presented as a restatement of Conjecture 1.1 in terms of strongly normal graphs (graphs in which every induced subgraph is normal), arising by analogy with the characterisation of perfect graphs via forbidden induced subgraphs. It is attributed to De Simone and Körner [3].",
+    "attributed_to": "De Simone and Körner",
+    "attributed_year": 1999,
+    "paper_contribution": "Implicitly disproved as a corollary of disproving Conjecture 1.1: the graph of girth at least 8 constructed in Theorem 1.3 is not normal, hence not strongly normal, yet contains no $C_5$ or $C_7$ as an induced subgraph.",
+    "opg_lookup": true,
+    "confidence": "high",
+    "notes": "PDF source — math notation is otherwise clean for this statement.",
+    "arxiv_id": "1508.05487",
+    "paper_title": "Disproving the normal graph conjecture",
+    "paper_authors": [
+      "Ararat Harutyunyan",
+      "Lucas Pastor",
+      "Stéphan Thomassé"
+    ],
+    "published": "2020-08-28",
+    "abs_url": "https://arxiv.org/abs/1508.05487",
+    "source": "pdf"
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "review_id": "2304.04690__00",
+  "safe_id": "2304.04690",
+  "arxiv_id": "2304.04690",
+  "conjecture_title": "Conjecture (Section 9, characterization of 2-extremal digraphs)",
+  "paper_title": "Digraph Colouring and Arc-Connectivity",
+  "published": "2023-09-13",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The conjecture proposes a characterization of 2-extremal digraphs D satisfying \\vec{\\chi}(D) = \\lambda(D)+1 = 3, complementing the main theorem of arXiv:2304.04690 which handles k=1 and k\\geq 3. The verbatim statement could not be extracted from the PDF, and no follow-up paper resolving or substantially advancing this case was found in the indexed literature as of May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Aboulker Aubian Charbit \"2-extremal\" digraph dichromatic arc-connectivity 2023",
+    "arXiv 2304.04690 \"digraph colouring arc-connectivity\" 2-extremal conjecture",
+    "dichromatic number arc-connectivity \"2-extremal\" digraph characterization conjecture Aboulker 2024 2025"
+  ],
+  "notes": "No follow-up paper found. The conjecture statement itself was absent from PDF extraction (Section 9 content not available). Searches confirmed the paper is cited in the literature (e.g., survey arXiv:2307.08661) but no resolution of the k=2 case was identified. The conjecture is recent (2023) so open status with high confidence is appropriate."
+}

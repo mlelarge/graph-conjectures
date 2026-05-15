@@ -1,0 +1,21 @@
+{
+  "review_id": "2210.03545__02",
+  "safe_id": "2210.03545",
+  "arxiv_id": "2210.03545",
+  "conjecture_title": "Informal Conjecture: r(K^(3)_{4-e}, S^(3)_n) = Theta(n^2 / log n)",
+  "paper_title": "Hypergraph Ramsey numbers of cliques versus stars",
+  "published": "2022-10-07",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The conjecture that $r(K^{(3)}_{4-e}, S^{(3)}_n) = \\Theta(n^2/\\log n)$ remains open. The source paper (Proposition 1.1) establishes the bounds $c\\,n^2/\\log^2 n \\le r(K^{(3)}_{4-e}, S^{(3)}_n) \\le c'\\,n^2/\\log n$, leaving a logarithmic gap. A targeted search of the 2022–2026 literature found no follow-up paper closing this gap; the two most relevant subsequent papers on off-diagonal hypergraph Ramsey numbers (arXiv:2404.02021 and arXiv:2411.13812) address clique-vs-clique settings rather than clique-vs-star.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "hypergraph Ramsey K4-e star 3-uniform r(K4-e, S_n) Theta n^2/log n",
+    "arXiv 2210.03545 Conlon Fox He Mubayi Suk Verstraete hypergraph Ramsey cliques stars follow-up"
+  ],
+  "notes": "No follow-up resolving the conjecture found after 5 web calls. The closest related papers (arXiv:2404.02021, arXiv:2411.13812) concern off-diagonal Ramsey numbers against complete hypergraphs K_n^(3), not against stars S_n^(3). The conjecture is closely related to the classical result r(K_3, K_n) = Theta(n^2/log n) via the analogy noted by the authors; the suggested proof strategy via the (K^{(3)}_{4-e})-free process has not been carried out in the indexed literature."
+}

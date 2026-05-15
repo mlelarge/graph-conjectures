@@ -1,0 +1,23 @@
+{
+  "review_id": "2506.08810__02",
+  "safe_id": "2506.08810",
+  "arxiv_id": "2506.08810",
+  "conjecture_title": "Problem 23",
+  "paper_title": "Infinite induced-saturated graphs",
+  "published": "2025-09-01",
+  "reviewed_at": "2026-05-14",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Problem 23 of arXiv:2506.08810 asks for a characterisation of finite tournaments H admitting a countable H-free tournament G such that reversing any single arc introduces H as a subtournament—a tournament analogue of induced saturation. The paper itself establishes two base cases: no finite G exists for the directed triangle (but the rationals under < provide an infinite one), while the transitive tournament on 3 vertices does admit a finite example. No follow-up paper resolving the general question was found in a broad web search conducted in May 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "tournament induced saturation arc reversal countable subtournament 2506.08810",
+    "tournament induced saturated arc reversal Bonamy Groenland Johnston Morrison Scott 2025",
+    "induced saturation tournament \"arc reversal\" \"countable\" graph theory 2025 2026",
+    "\"tournament saturation\" OR \"induced-saturated tournament\" subtournament \"reversing arcs\" 2025 2026 arxiv"
+  ],
+  "notes": "No follow-up found across 5 web calls. The conjecture was posted September 2025 and is under one year old; absence of indexed follow-up supports high-confidence open status."
+}

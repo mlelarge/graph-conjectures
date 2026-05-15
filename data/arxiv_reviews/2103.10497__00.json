@@ -1,0 +1,39 @@
+{
+  "review_id": "2103.10497__00",
+  "safe_id": "2103.10497",
+  "arxiv_id": "2103.10497",
+  "conjecture_title": "Conjecture 1.1",
+  "paper_title": "Sunflowers in set systems of bounded dimension",
+  "published": "2021-03-25",
+  "reviewed_at": "2026-05-15",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The conjecture that $f^d_r(k) \\leq C^k$ for all $d \\geq 1$ and $r \\geq 3$ is proven for $d=1$ by the original paper (Theorem 1.2). For $d \\geq 2$, Balogh, Bernshteyn, Delcourt, Ferber, and Pham (arXiv:2408.04165, 2024) substantially improved the bound from $2^{10k(dr)^2 \\log^* k}$ to $(Cr(\\log d + \\log^* k))^k$, but the pure exponential $C^k$ with $C = C(d,r)$ independent of $k$ remains open for $d \\geq 2$. The $d=1$ case is also resolved sharply in 2408.04165 with the tight bound $(r-1)^k$.",
+  "since_posted": [
+    {
+      "title": "Sunflowers in Set Systems with Small VC-Dimension",
+      "authors": "József Balogh, Anton Bernshteyn, Michelle Delcourt, Asaf Ferber, Huy Tuan Pham",
+      "year": 2024,
+      "venue": "Combinatorica",
+      "url": "https://arxiv.org/abs/2408.04165",
+      "arxiv_id": "2408.04165",
+      "doi": "10.1007/s00493-025-00186-8",
+      "kind": "partial",
+      "claim": "Proves that any family of $\\ell$-element sets with VC-dimension at most $d$ and size exceeding $(Cr(\\log d + \\log^* \\ell))^\\ell$ contains an $r$-sunflower, improving Fox–Pach–Suk's bound; also obtains the sharp bound $(r-1)^k$ for $d=1$, but the conjecture for $d \\geq 2$ (pure exponential $C^k$) remains open."
+    }
+  ],
+  "internal_refs_verified": [
+    {
+      "arxiv_id": "2009.09426",
+      "verified": false,
+      "note": "Abstract of 'Pure pairs. IV. Trees in bipartite graphs' (Scott, Seymour, Spirkl) makes no mention of sunflowers, VC-dimension, or the conjecture; the internal-reference match (fuzz=67) is likely a false positive from the name Pach appearing in a different conjecture context."
+    }
+  ],
+  "search_queries": [
+    "sunflower VC-dimension bounded Fox Pach Suk 2103.10497 conjecture progress",
+    "sunflower set systems bounded dimension exponential bound VC-dimension 2022 2023 2024 2025"
+  ],
+  "notes": "The paper arXiv:2408.04165 (published in Combinatorica 2025) is the main follow-up; it removes the double-exponential dependence on $\\log^* k$ from the exponent but the base still contains a $\\log^* k$ factor, so the conjecture for $d \\geq 2$ is not yet resolved. No other post-2021 paper resolving the full conjecture was found."
+}
