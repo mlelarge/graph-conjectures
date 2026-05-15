@@ -79,26 +79,41 @@ def _build_search_text(p: dict) -> str:
 def _virtual_problem_from_arxiv(rec: dict) -> dict:
     """Project a `states` arxiv record into the same row shape as an OPG problem.
 
-    `authors` lists every co-author of the source paper. For curated authors
-    (those whose slug appears in rec.matched_authors) the slug is set so the
-    template links to /author/<slug>/; for non-curated co-authors the slug is
-    empty and the template renders plain text.
+    `authors` lists every co-author of the source paper. For curated authors,
+    we link to /author/<curated_slug>/ — matched via last name + first initial,
+    because arxiv author strings often drop middle names (e.g. our curated entry
+    "Raphael Mario Steiner" appears in papers as just "Raphael Steiner").
+    Non-curated co-authors render as plain text.
     """
     arxiv_id = rec.get("arxiv_id", "") or ""
     safe_id  = _safe_id_from_arxiv(arxiv_id)
     title    = rec.get("title") or rec.get("paper_title") or arxiv_id
 
     paper_authors = rec.get("paper_authors") or []
-    curated = {ma["slug"]: ma.get("display", "")
-               for ma in rec.get("matched_authors", [])
-               if ma.get("slug")}
+
+    # Build (last_name, first_initial) → curated_slug lookup from matched_authors.
+    # The curated slug has shape "<last>_<first_token>..." (underscores between tokens).
+    curated_by_lastinit: dict[tuple[str, str], str] = {}
+    for ma in rec.get("matched_authors", []):
+        slug = ma.get("slug")
+        if not slug or "_" not in slug:
+            continue
+        last_curated, _, first_curated = slug.partition("_")
+        first_init = first_curated[:1] if first_curated else ""
+        curated_by_lastinit[(last_curated, first_init)] = slug
+
+    def _match_curated_slug(name: str) -> str:
+        parts = name.split()
+        if len(parts) < 2:
+            return ""
+        last = _asc(parts[-1]).strip()
+        first_init = _asc(parts[0])[:1] if parts[0] else ""
+        return curated_by_lastinit.get((last, first_init), "")
+
     authors: list[dict] = []
     for name in paper_authors:
-        s = _author_slug_from_name(name)
-        if s in curated:
-            authors.append({"label": name, "slug": s})
-        else:
-            authors.append({"label": name, "slug": ""})  # plain text in template
+        slug = _match_curated_slug(name)
+        authors.append({"label": name, "slug": slug})   # slug="" => plain text
 
     statements = [{
         "kind": rec.get("kind", "Conjecture"),
