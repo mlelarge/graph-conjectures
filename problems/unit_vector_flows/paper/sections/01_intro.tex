@@ -1,0 +1,191 @@
+\section{Introduction}
+\label{sec:intro}
+
+\subsection{The problem}
+\label{sec:intro-problem}
+
+Let $G$ be a finite simple graph and let $A$ be an abelian group. An
+\emph{$A$-flow} on $G$ is an assignment $\varphi$ of a value
+$\varphi(e) \in A$ to every edge $e$, together with an orientation of
+$e$, such that for every vertex $v$ the oriented sum
+$\sum_{e \ni v}\sigma(v,e)\,\varphi(e)$ equals zero (Kirchhoff's
+conservation law), where $\sigma(v,e) \in \{\pm 1\}$ records whether
+$v$ is the head or tail of $e$. The flow is \emph{nowhere-zero} if
+$\varphi(e) \ne 0$ for every $e$. The classical objects in this area
+are nowhere-zero $k$-flows ($A = \Z$ and $\varphi(e) \in \{\pm 1, \dots,
+\pm(k-1)\}$); a long-standing conjecture of Tutte asserts that every
+bridgeless graph admits a nowhere-zero $5$-flow.
+
+This paper is concerned with a continuous variant. An
+\emph{$\Sphere$-flow} on $G$ assigns a unit vector $\varphi(e) \in \Sphere
+\subset \R^{3}$ to every (oriented) edge so that Kirchhoff's law holds
+at every vertex:
+\begin{equation}
+\label{eq:kirchhoff}
+  \sum_{e \ni v} \sigma(v,e)\,\varphi(e) \;=\; 0 \qquad \text{for every } v \in V(G).
+\end{equation}
+The values are themselves unit vectors, so the nowhere-zero condition
+is automatic. The natural existence question is:
+
+\begin{quote}
+  \textbf{Jain's first conjecture.} \emph{Every bridgeless graph
+  admits an $\Sphere$-flow.}
+\end{quote}
+
+The conjecture is unsettled. For cubic graphs the Kirchhoff equation
+at every vertex specialises to a constraint that three unit vectors
+sum to zero; by an elementary calculation
+(\cref{lem:120-degree}, after~\cite{HMM26}) this means the three are
+coplanar with the origin and pairwise at angle $2\pi/3$.
+
+\subsection{Jain's two conjectures and what is and is not known}
+\label{sec:intro-disambiguation}
+
+Jain proposed two conjectures, only the first of which is in scope
+here. The second was a finite-labeling conjecture: there exists a map
+$q : \Sphere \to \{\pm 1, \pm 2, \pm 3, \pm 4\}$ with $q(-x) = -q(x)$
+and zero-sum on every great-circle triple of pairwise-equilateral
+points. Were both conjectures true, they would jointly imply Tutte's
+$5$-flow conjecture; this was the original motivation for the package.
+
+Ulyanov~\cite{Uly26} recently \emph{disproved} the second conjecture
+by exhibiting two finite point-set obstructions:
+a 25-antipodal-pair instance whose nonexistence is certified by a SAT
+instance with 200 variables and 19{,}765 clauses, and a 36-point
+instance whose nonexistence at label range $\{\pm 1, \dots, \pm 5\}$
+is certified by a 144-variable, 6710-clause SAT instance and verified
+in Lean~4 via \texttt{bv\_decide}. The first conjecture is not touched
+by Ulyanov's work; it remains the live problem. We will refer to it
+simply as \emph{the conjecture} throughout.
+
+A second relevant strand of recent work is the geometric
+characterisation due to Houdrouge, Miraftab, and Morin~\cite{HMM26}.
+They prove that for cubic graphs an $\Sphere$-flow is the same data as
+an \emph{equiangular $\Sphere$-immersion} of the graph (every edge a
+geodesic arc of fixed angular length, every face-flag of three edges
+at a vertex meeting at angle $2\pi/3$). They also show that the
+$\Sphere$-flow class is closed under \emph{triangle blow-up} of a
+cubic vertex (the gadget we revisit and extend in
+\cref{sec:gadget-closure}), and they give a rank obstruction: an
+$\Sphere$-flow $\varphi$ with $\rank S_{\Q}(\varphi) \le 2$ and
+odd-coordinate-free rational support induces a nowhere-zero $4$-flow.
+The rank obstruction \emph{excludes} certain kinds of $\Sphere$-flow
+on snarks but does not rule out arbitrary $\Sphere$-flows on them.
+
+Closer to the route we follow, Mattiolo, Mazzuoccolo, Rajnik, and
+Tabarelli~\cite{MMRT25} give an equivalence between oriented
+cycle-double-covers and $H_d$-flows on cubic graphs, with the
+consequence that an oriented $d$-CDC induces a nowhere-zero
+$\Z_2^{d-2}$-flow and hence an $S^{d-2}$-flow. We will use the case
+$d = 4$ as a sharp negative calibration in
+\cref{sec:cdc-obstruction}.
+
+\subsection{Our contributions}
+\label{sec:intro-contributions}
+
+We give three theorems, all with replayable computer-verified
+certificates of the kind described in \cref{sec:certification}.
+
+\begin{theorem}[Finite enumeration]
+\label{thm:A-intro}
+Every nontrivial snark on at most $28$ vertices admits an
+$\Sphere$-flow. There are exactly $3\,247$ such graphs, with
+per-order counts
+\[
+   |V| \;:\; 10\;(1),\; 18\;(2),\; 20\;(6),\; 22\;(20),\;
+            24\;(38),\; 26\;(280),\; 28\;(2\,900),
+\]
+(no nontrivial snarks exist at any other order in this range). For
+each we exhibit a numerical witness, refine it to $50$ decimal digits
+in $\Q[s]/(s^{2}-3)$, and certify uniqueness in an explicit interval
+box by the Krawczyk operator. The full certificate package is
+replayable bit-for-bit; an independent cold-environment replay
+re-verifies all $3\,247$ certificates.
+\end{theorem}
+
+\begin{theorem}[Constructive closure]
+\label{thm:B-intro}
+Let $\base$ be the set of $3\,247$ graphs of \cref{thm:A-intro} with
+their certificates. Let $\closure$ be the closure of $\base$ under
+\textbf{triangle blow-up} and \textbf{$3$-edge-cut dot product}. Every
+$G \in \closure$ admits an $\Sphere$-flow that is produced
+\emph{constructively}: the new flow is given in closed form from the
+base witness(es) and the gadget data, and is verified directly by the
+Kirchhoff and unit-norm equations at machine precision (residual at
+most $5.9 \cdot 10^{-16}$ on every instance recorded here). No
+per-graph Krawczyk solve is needed beyond the $3\,247$ base
+certificates.
+\end{theorem}
+
+\begin{theorem}[Decomposition frontier]
+\label{thm:C-intro}
+Every graph in $\base$ is \emph{irreducible} under the two inverse
+operations: there are no contractible triangles, and no cyclic
+$3$-edge cuts (both verified by exhaustive scan). The catalogue
+$\base$ is therefore exactly the base of $\closure$ under these
+gadgets. Furthermore, for any cubic graph $G$, there is a memoised
+dynamic program over canonical \texttt{graph6} strings
+that returns a decomposition tree certifying
+$G \in \closure$, or reports $G \notin \closure$ exhaustively.
+\end{theorem}
+
+We complement these positive results with three independent
+\emph{negative} observations on the flower-snark family $J_{2k+1}$.
+Each rules out one natural attempt to extend the gadget closure to a
+uniform infinite family by structural means:
+\begin{enumerate}[label=(\roman*)]
+  \item a parity obstruction to a parametric (oriented) CDC on
+        $J_{2k+1}$ for odd $n$ (\cref{sec:flower-cdc-fail});
+  \item no $3$-edge-cut or $4$-edge-cut decomposition exists: $J_5$
+        is cyclically exactly $5$-edge-connected and $J_{2k+1}$ for
+        $k \ge 3$ is cyclically at least $6$-edge-connected (verified
+        through $k = 6$), exceeding the textbook lower bound of $4$
+        (\cref{sec:flower-no-dot-splice});
+  \item the direct monodromy formulation has a transverse-mod-gauge
+        fixed point on every certified $J_n$, but the LM-random
+        witnesses do not converge to a smooth asymptotic limit and no
+        stable small-period two-scale model fits them
+        (\cref{sec:flower-monodromy-fail}).
+\end{enumerate}
+
+The flower question itself remains open; we do, however, conclude
+that none of three standard structural attacks succeeds, and we leave
+the diagnostic infrastructure available for future work.
+
+\subsection{Why this package matters}
+\label{sec:intro-why}
+
+The finite theorem (\cref{thm:A-intro}) is, to our knowledge, the
+largest interval-certified $\Sphere$-flow enumeration to date and a
+natural baseline against which future symbolic or asymptotic
+techniques can be compared. The closure theorem
+(\cref{thm:B-intro}) is the first \emph{parametric} $\Sphere$-flow
+construction that crosses outside the snark world while preserving
+the geometric structure of~\cite{HMM26}: triangle blow-up shatters
+girth $\ge 5$ and the dot product shatters cyclic $4$-edge-connectivity,
+so $\closure$ properly extends $\base$ as a class of cubic graphs.
+The decomposition theorem (\cref{thm:C-intro}) converts a positive
+existence statement into a \emph{replayable} membership test: every
+positive answer comes with a small operation tree that a third party
+can re-execute against the base certificates.
+
+The package is bookended by the prior work cited above: Jain's
+formulation, Ulyanov's disambiguation, HMM's geometric characterisation,
+and MMRT's CDC bridge. It does not settle Jain's first conjecture in
+general; it does, however, give a publishable computational and
+structural skeleton, with all the components either constructive or
+ruled out by an explicit obstruction.
+
+\subsection{Organisation}
+\label{sec:intro-organisation}
+
+\Cref{sec:preliminaries} fixes notation and recalls the geometric
+characterisation. \Cref{sec:certification} describes the
+interval-Krawczyk certifier and the schema-v2 replayable certificate
+format. \Cref{sec:finite-theorem} states and proves
+\cref{thm:A-intro}. \Cref{sec:cdc-obstruction} gives the CDC negative
+calibration. \Cref{sec:gadget-closure} states and proves
+\cref{thm:B-intro}. \Cref{sec:decomposition-frontier} states and
+proves \cref{thm:C-intro}. \Cref{sec:flower-negatives} documents the
+three independent obstructions on the flower family.
+\Cref{sec:reproducibility} contains the reproducibility appendix.

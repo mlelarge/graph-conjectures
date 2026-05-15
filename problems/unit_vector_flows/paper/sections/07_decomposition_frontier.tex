@@ -1,0 +1,76 @@
+\section{The decomposition frontier and replayable membership}
+\label{sec:decomposition-frontier}
+
+\TODO{Prose from \path{docs/preprint_outline.md} Section~7 and
+\path{docs/gadget_decomposition_frontier.md}. Formal statement of
+\cref{thm:C-intro} and the dynamic programming decision procedure.}
+
+\subsection{Inverse operations}
+\label{sec:decomposition-inverses}
+
+\TODO{Definitions of inverse triangle reduction and inverse 3-edge-cut
+dot product. Correctness lemmas that each is the left inverse of the
+corresponding forward operation up to isomorphism.}
+
+\begin{lemma}[Inverse triangle reduction]
+\label{lem:inverse-triangle}
+\TODO{A triangle $\{u_1, u_2, u_3\}$ in a cubic graph $G$ is
+\emph{contractible} iff each $u_i$ has exactly one external neighbour
+$e_i$ and $e_1, e_2, e_3$ are pairwise distinct. The contraction
+yields a simple cubic graph with $|V(G)| - 2$ vertices, isomorphic to
+the unique cubic graph $G'$ such that the triangle blow-up of $G'$ at
+some vertex is $G$.}
+\end{lemma}
+
+\begin{lemma}[Inverse 3-edge-cut dot product]
+\label{lem:inverse-dot}
+\TODO{A cyclic $3$-edge cut $C$ in a cubic graph $G$ splits $G$ into
+two pieces, each containing a cycle; adding a fresh vertex on each
+side connected to the three cut-edge endpoints recovers the unique
+ordered pair of cubic graphs whose dot product (along $C$) is $G$ up
+to isomorphism.}
+\end{lemma}
+
+\subsection{Isomorphism via canonical \texttt{graph6}}
+\label{sec:decomposition-canonical}
+
+\TODO{Use \texttt{labelg} from \texttt{nauty}~\cite{nauty} to compute
+the canonical \texttt{graph6} string of each candidate piece. Two
+graphs are isomorphic iff their canonical strings are equal. The DP
+memoises by canonical string.}
+
+\subsection{The decomposition theorem}
+\label{sec:decomposition-theorem}
+
+\begin{theorem}[Decomposition frontier, formal version]
+\label{thm:C}
+\TODO{Formal restatement of \cref{thm:C-intro}. Proof:
+\begin{enumerate}[label=(\arabic*)]
+  \item Every $G \in \base$ has girth $\ge 5$ (no triangles) and is
+        cyclically $\ge 4$-edge-connected (no cyclic 3-cuts); thus
+        $G$ is irreducible under both inverse operations.
+        Empirically verified by exhaustive scan over all 3247
+        catalogue graphs.
+  \item The DP procedure \texttt{decompose\_tree}$(G, \base)$
+        terminates because every inverse operation strictly decreases
+        the vertex count; correctness follows from the
+        \cref{lem:inverse-triangle,lem:inverse-dot} round-trip
+        properties.
+\end{enumerate}}
+\end{theorem}
+
+\subsection{Replayable membership certificates}
+\label{sec:decomposition-replay}
+
+\TODO{Format: a \texttt{DecompTree} with operation labels at each
+internal node and base-graph6 strings at the leaves. To verify $G \in
+\closure$ a third party: (i) reconstructs $G$ from its graph6; (ii)
+follows the tree, performing the indicated inverse operations,
+canonicalising each intermediate; (iii) checks that each leaf's
+graph6 matches a certified base entry; (iv) reads off the constructive
+$\Sphere$-flow by composing the gadget extensions from the leaves up.}
+
+\paragraph{Verified positive examples.}
+\TODO{Table: blow-up of Petersen (depth 1), double blow-up (depth 2),
+$P \oplus P$ (depth 1), $P \oplus P \oplus B_1$ (depth 2), blow-up of
+triple chain (depth 3). All decompositions verified by replay.}

@@ -1,0 +1,72 @@
+\section{Failed flower routes}
+\label{sec:flower-negatives}
+
+\TODO{Prose from \path{docs/preprint_outline.md} Section~8 and the
+three doc files \path{docs/flower_snarks_cdc.md},
+\path{docs/no_flower_dot_decomposition.md},
+\path{docs/splice4.md}, \path{docs/flower_monodromy.md},
+\path{docs/flower_asymptotic.md}, \path{docs/flower_twoscale.md}.
+
+The structure of the section is honest negative reporting: each
+subsection identifies a natural extension of the methods of
+\cref{sec:gadget-closure,sec:decomposition-frontier} to the flower
+family, then proves or computationally verifies that the extension
+fails.}
+
+\subsection{The parity obstruction on parametric CDCs}
+\label{sec:flower-cdc-fail}
+
+\TODO{Statement: a parametric CDC ansatz on $J_{2k+1}$ requires each
+star's pass-count triple $(b\text{-}c, b\text{-}d, c\text{-}d)$ to be
+$(1, 1, 1)$; each length-$6$ shuttle covers exactly $2$ stars; thus
+$n_T \times 2 = n$, forcing $n$ even. But $J_{2k+1}$ has $n = 2k+1$
+odd. The relaxation to weighted CDC removes this parity, but does
+not yield a parametric family covering all odd $n$ (only ad-hoc
+witnesses for Petersen, Blanu\v{s}a-2, $J_5$).}
+
+\subsection{No 3- or 4-cut decomposition exists}
+\label{sec:flower-no-dot-splice}
+
+\begin{lemma}[Flower-snark cyclic edge-connectivity]
+\label{lem:flower-cyc-conn}
+\TODO{$J_5$ is cyclically exactly $5$-edge-connected, and $J_{2k+1}$
+for $k \ge 3$ is cyclically $\ge 6$-edge-connected. Verified by
+exhaustive enumeration of cyclic edge cuts of size $\le 5$ for
+$J_5, J_7, J_9, J_{11}, J_{13}$.}
+\end{lemma}
+
+\TODO{Consequences: no $3$-edge-cut dot product decomposition of any
+$J_{2k+1}$ exists (already a corollary of the catalogue's cyclic
+$4$-edge-connectivity); furthermore, no $4$-edge-cut splice
+decomposition exists for $J_n$ with $n \ge 7$, and not even a $5$-cut
+surgery would suffice for $n \ge 7$. The closure of
+\cref{thm:B-intro} therefore does not contain $J_{2k+1}$ for $k \ge 2$,
+$2k + 1 > 28$, by these gadgets alone.}
+
+\subsection{The direct monodromy formulation and its limitations}
+\label{sec:flower-monodromy-fail}
+
+\TODO{Sketch the spoke-elimination reduction of the $\Sphere$-flow
+problem on $J_{2k+1}$ to a 3-dim discrete dynamical system with a
+conserved sum $S$ and a twist monodromy $T^n(X_0) = \pi(X_0)$. State
+the transversality result: at every certified $J_n$ witness for
+$k \in \{2, 3, 4, 5\}$, the reduced 2-by-2 Jacobian after gauge
+fixing has determinant $\ge 6$ in magnitude. This is local
+persistence under twist deformation.
+
+Then state the two failures: (i) no smooth asymptotic limit on
+LM-random witnesses, (ii) no stable small-period two-scale
+$X_i \approx R^i Y_{i \bmod p}$ fits the data. Plus the
+divisibility obstruction $p \mid n$ for odd $n$ that forbids $p = 2$
+or $p = 4$ except as approximations.}
+
+\subsection{What remains open}
+\label{sec:flower-open}
+
+\TODO{Summarise: three independent natural structural routes all fail
+on the flower family. Jain's conjecture restricted to flower snarks
+remains open; the diagnostic infrastructure (transfer map,
+gauge-fixed Jacobian, continuation, asymptotic and two-scale
+diagnostics) stays in the repository for future work using a
+different ansatz, e.g. constrained witness search, cyclic-symmetric
+ansatz, or symbolic elimination of the 2D Newton step.}

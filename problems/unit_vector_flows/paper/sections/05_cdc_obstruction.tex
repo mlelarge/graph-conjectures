@@ -1,0 +1,43 @@
+\section{The CDC obstruction: oriented \texorpdfstring{$4$}{4}-CDCs are absent on snarks}
+\label{sec:cdc-obstruction}
+
+\TODO{Prose from \path{docs/preprint_outline.md} Section~5 and
+\path{docs/cdc_negative_calibration.md}. The story: an early attempt
+sought oriented $4$-CDCs on snarks as a route to $\Sphere$-flows; the
+MMRT bridge collapses this into a known contradiction.}
+
+\subsection{The MMRT bridge specialised to \texorpdfstring{$d = 4$}{d=4}}
+\label{sec:cdc-mmrt}
+
+\TODO{Statement of MMRT~\cite{MMRT25} Theorem~4: on a cubic graph,
+oriented $d$-CDC iff $H_d$-flow, where $H_d$ is the boundary group of
+the $(d-1)$-cube. Specialising to $d = 4$, an $H_4$-flow restricts
+modulo $2$ to a nowhere-zero $\Z_2 \oplus \Z_2$-flow, which is a
+nowhere-zero $4$-flow.}
+
+\begin{lemma}[CDC negative calibration]
+\label{lem:cdc-negative}
+\TODO{Let $G$ be a cubic graph. If $G$ admits an oriented $4$-CDC, then
+$G$ has a nowhere-zero $4$-flow, hence $\chi'(G) = 3$. In particular,
+a snark cannot admit an oriented $4$-CDC.}
+\end{lemma}
+
+\subsection{Implementation as a triple-negative test}
+\label{sec:cdc-triple-negative}
+
+\TODO{Computational triple-negative chain implemented in
+\path{scripts/cdc.py}: oriented 4-CDC $\to$ $H_4$-flow $\to$
+$\Z_2^2$-flow $\to$ NZ 4-flow $\to$ $\chi' = 3$. Run on Petersen,
+Blanu\v{s}a, $J_5$ (all snarks); each correctly reports
+``no oriented 4-CDC''.
+See \path{tests/test_cdc_negative_calibration.py}.}
+
+\subsection{The right relaxation: weighted CDC}
+\label{sec:cdc-weighted}
+
+\TODO{Replace oriented $4$-CDC by \emph{weighted CDC}: continuous cycle
+vectors $w_k \in \Sigma_4$ summing to zero, per-edge constraint
+$|v_e|^2 = 2$ in $\Sigma_4 \cong \Sphere$ (radius $\sqrt 2$). No
+orientation hypothesis. The relaxation admits explicit certificates
+on Petersen, Blanu\v{s}a-2, and $J_5$. See
+\path{docs/weighted_cdc_certificates.md}.}

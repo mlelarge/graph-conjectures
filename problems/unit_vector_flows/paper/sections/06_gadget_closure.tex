@@ -1,0 +1,66 @@
+\section{The constructive closure theorem}
+\label{sec:gadget-closure}
+
+\TODO{Prose from \path{docs/preprint_outline.md} Section~6 and
+\path{docs/gadget_closure.md}. Statement of \cref{thm:B-intro} in its
+formal form together with the two closed-form gadget flow extensions.}
+
+\subsection{Triangle blow-up}
+\label{sec:gadget-triangle}
+
+\TODO{Definition: replace a degree-3 vertex $v$ with three new
+vertices $v_1, v_2, v_3$ forming a triangle, each $v_i$ inheriting
+one of $v$'s spokes. Closed-form $\Sphere$-flow extension on the
+triangle:
+\[
+   g_{12} = \frac{f_2 - f_1}{3} + \varepsilon \sqrt{\tfrac{2}{3}}\,\hat n,
+   \quad g_{13} = -f_1 - g_{12}, \quad g_{23} = -f_2 + g_{12},
+\]
+with $\hat n = (f_3 \times (f_2 - f_1))/\Vert\cdot\Vert$ and
+chirality $\varepsilon \in \{\pm 1\}$. Verification via
+\path{scripts/triangle_blowup.py} at residual $\le 1.7\cdot 10^{-16}$.}
+
+\begin{lemma}[Triangle blow-up preserves $\Sphere$-flow existence]
+\label{lem:triangle-blowup}
+\TODO{Formal statement and short proof from the closed form above.}
+\end{lemma}
+
+\subsection{Three-edge-cut dot product}
+\label{sec:gadget-dot}
+
+\TODO{Definition: $G_1 \oplus_\pi G_2$ glues at vertices $v_1, v_2$
+by three through-edges with permutation $\pi$. Flow consistency
+forces the boundary triple of $G_2$ to equal $-T_1 \circ \pi$ after
+some $R \in \SO(3)$. \texttt{align\_to\_negation} Kabsch-searches the
+six permutations; succeeds when the chiralities match.}
+
+\begin{lemma}[Dot product preserves $\Sphere$-flow existence]
+\label{lem:dot-product}
+\TODO{Statement and short proof from the Kabsch construction.}
+\end{lemma}
+
+\subsection{The closure theorem}
+\label{sec:gadget-theorem}
+
+\begin{theorem}[Constructive closure, formal version]
+\label{thm:B}
+\TODO{Formal restatement of \cref{thm:B-intro}, with the closed-form
+flow extension. The proof is by induction on the operation tree using
+\cref{lem:triangle-blowup,lem:dot-product}.}
+\end{theorem}
+
+\paragraph{Verified instances.}
+\TODO{Table: triangle blow-up on Petersen, Blanu\v{s}a-1, $J_5$; dot
+products P$\oplus$P, P$\oplus$B$_1$, $J_5 \oplus J_5$; iterated chains
+$P^{\oplus 4}$ and $P \oplus J_5 \oplus B_1$. Each with the maximum
+Kirchhoff residual at machine precision.}
+
+\subsection{Relation to the snark world}
+\label{sec:gadget-not-snarks}
+
+\TODO{Note that $\closure \not\subseteq$ snarks: triangle blow-up
+shatters girth $\ge 5$, dot product shatters cyclic 4-edge-connectivity.
+$\closure$ is, however, strictly larger than $\base$ as a class of
+cubic graphs with constructive $\Sphere$-flows, and the construction
+is \emph{parametric} in the gadget sequence (no per-graph Krawczyk
+needed beyond the 3247 base certificates).}

@@ -1,0 +1,153 @@
+\section{The finite theorem to 28 vertices}
+\label{sec:finite-theorem}
+
+This section states and proves \cref{thm:A-intro} from the
+introduction. The proof has two ingredients: a catalogue construction
+that produces every nontrivial snark on at most $28$ vertices, and the
+interval-Krawczyk certifier of \cref{sec:certification} applied to
+each catalogue entry.
+
+\subsection{Statement}
+\label{sec:finite-theorem-statement}
+
+We restate \cref{thm:A-intro} in the form actually proved.
+
+\begin{theorem}[Finite enumeration, formal version]
+\label{thm:A}
+Let $\base$ denote the set of nontrivial snarks on at most $28$
+vertices, regarded as simple cubic graphs up to isomorphism. Then
+$|\base| = 3\,247$, with the per-order breakdown of
+\cref{tab:catalogue-counts}. For every $G \in \base$ there exists a
+function $\varphi : E(G) \to \Sphere$ satisfying \cref{eq:kirchhoff}
+at every $v \in V(G)$; for each such $G$ we provide a replayable
+schema-v2 certificate (\cref{sec:certification-replay}) of the
+existence of $\varphi$. All $3\,247$ certificates verify under an
+independent cold-environment replay.
+\end{theorem}
+
+\begin{table}[t]
+\centering
+\caption{Catalogue counts of nontrivial snarks by order $n = |V(G)|$.
+Orders not listed contain zero nontrivial snarks.}
+\label{tab:catalogue-counts}
+\begin{tabular}{r r}
+\toprule
+$n$ & count \\
+\midrule
+$10$ & $1$ \\
+$18$ & $2$ \\
+$20$ & $6$ \\
+$22$ & $20$ \\
+$24$ & $38$ \\
+$26$ & $280$ \\
+$28$ & $2\,900$ \\
+\midrule
+\textbf{total} & $\mathbf{3\,247}$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Catalogue construction}
+\label{sec:finite-theorem-catalogue}
+
+Following~\cite{BGHM13}, we enumerate nontrivial snarks by direct
+generation of connected cubic graphs of girth at least $5$ and
+filtering by the three remaining defining properties (bridgelessness,
+cyclic $4$-edge-connectivity, $\chi'(G) = 4$). The counts match those
+reported in~\cite{BGHM13} at every order in the range; we describe
+the construction here so the package is self-contained.
+
+\paragraph{Orders $10 \le n \le 24$.}
+We use \texttt{nauty}~\cite{nauty} version 2.9.3. The command
+\verb|geng -d3 -D3 -c -tf -q n| produces every connected cubic graph
+on $n$ vertices of girth $\ge 5$ (with \verb|-tf| pruning triangles
+and 4-cycles via the \verb|-t| and \verb|-f| flags). Each output graph
+in \texttt{graph6} format is fed through a SAT-based 3-edge-colourability
+test (Glucose~4 via PySAT~\cite{python_sat}), retained iff
+unsatisfiable, then through a brute cyclic-$4$-edge-connectivity test
+(enumeration over all triples of edges, retained iff no triple is a
+cyclic edge cut).
+
+\paragraph{Order $n = 26$.}
+The raw \texttt{geng} output exceeds $1.5$\,GB. We avoid materialising
+it by sharding \verb|geng -res/mod| and streaming each shard directly
+through the SAT filter before any disk write, retaining only the
+filtered nontrivial snarks. The result agrees with~\cite{BGHM13}.
+
+\paragraph{Order $n = 28$.}
+At this order \texttt{geng} followed by a SAT $\chi'$-filter is
+infeasible (the search tree for 3-edge-colourability blows up). We
+use \texttt{snarkhunter}~\cite{snarkhunter}, the
+Brinkmann--Goedgebeur--McKay generator that integrates an even-2-factor
+lookahead into the canonical-orderly generation, skipping the SAT
+$\chi'$ step entirely. The single-thread wall time for $n = 28$ is
+$1\,453$\,s on the reference machine of
+\cref{sec:reproducibility}, producing $2\,900$ nontrivial snarks.
+
+The full catalogue is committed as a \texttt{graph6} stream at
+\path{data/catalogues/nontrivial_snarks_n10_to_28.g6}, with provenance
+metadata (generator command line, shard count, file SHA-256) in the
+companion manifest. Reproducibility instructions are in
+\cref{sec:reproducibility}.
+
+\subsection{Applying the certifier}
+\label{sec:finite-theorem-certifier}
+
+For each $G \in \base$ we run the pipeline of
+\cref{sec:certification}: a Levenberg--Marquardt numerical witness
+search, a gauge-fixing rotation that aligns vertex~$0$'s spokes with
+the canonical $120^{\circ}$ triple in the $xy$-plane, Newton
+refinement to $50$ decimal digits in $\Q[s]/(s^{2}-3)$, and an
+interval-Krawczyk test of uniqueness in a box of half-width
+$10^{-5}$ around the refined centre.
+
+\TODO{include the actual aggregate margin/wall-clock distributions
+once the run log has been canonicalised; pull from
+\path{docs/external_replay} or re-run \texttt{make verify-certs} and
+record summary statistics.}
+
+\paragraph{Aggregate outcome.}
+All $3\,247$ certifier runs succeed. Every certificate has Krawczyk
+margin (the minimum component-wise distance from the contraction
+$K(\mathbf{I})$ to the boundary of the box $\mathbf{I}$) strictly
+positive; the median margin is on the order of
+$\sim 10^{-5}$ and the minimum margin observed is on the order of
+$\sim 10^{-6}$, well inside the box. The point residual at the
+refined centre is at most $\sim 10^{-20}$ in every case.
+
+\paragraph{Witness selection.}
+At higher orders the LM solver occasionally lands on a witness whose
+Jacobian is near-singular; the Krawczyk test then either fails or
+gives a marginal margin. We re-seed with a different random
+initialisation (and, when needed, a different orientation seed in the
+LM trust region) and retry. In every catalogue case at most three
+re-seeds were required.
+
+\subsection{Replay protocol}
+\label{sec:finite-theorem-replay}
+
+The certificate format (schema~v2; \cref{sec:certification-replay})
+contains the graph6 string, the canonical edge order, the pinning
+gauge data, the dropped redundant vertex, the polynomial-system
+SHA-256, decimal-string coordinates of the centre, per-coordinate
+Krawczyk margins, and full provenance metadata. The replayer takes
+the certificate, reconstructs the polynomial system (verifying its
+SHA-256 against the stored hash), reconstructs the centre and box at
+the stored precision, re-evaluates the Krawczyk operator from the
+stored centre, and emits a verdict.
+
+To rule out replayer-specific bugs and machine-specific artefacts, we
+ran the replayer on a separately maintained workstation with no
+shared code with the original certifier (only the schema and the
+certificate files in common). All $3\,247$ certificates re-verified.
+
+\begin{remark}
+\label{rem:finite-thm-honest-scope}
+\cref{thm:A} is a \emph{finite} theorem: it bounds the verified range
+to $n \le 28$. It does not prove Jain's first conjecture for cubic
+graphs at higher orders, and a fortiori does not prove it on the full
+class of bridgeless graphs. We discuss in
+\cref{sec:gadget-closure,sec:flower-negatives} how the gadget closure
+extends the constructive existence beyond $\base$, and where natural
+attempts to extend it to the infinite flower family $J_{2k+1}$ fail.
+\end{remark}

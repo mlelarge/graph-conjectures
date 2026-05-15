@@ -1,0 +1,56 @@
+\section{The interval-Krawczyk certification method}
+\label{sec:certification}
+
+\TODO{Full prose drawn from \path{docs/preprint_outline.md} Section~3
+and \path{THEOREM.md} provenance section. Implementation pointers:
+\path{scripts/witness.py}, \path{scripts/exact.py},
+\path{scripts/interval.py}, \path{scripts/certificate.py},
+\path{scripts/sweep.py}, \path{scripts/verify_sweep.py}.}
+
+\subsection{Numerical witness search}
+\label{sec:certification-witness}
+
+\TODO{Levenberg--Marquardt on the Kirchhoff~+~unit-norm system with
+multi-seed retry. Discuss the two failure modes (saddle plateau and
+near-singular Jacobian) and the seed-rotation remedy.}
+
+\subsection{Gauge fix and Newton refinement}
+\label{sec:certification-refine}
+
+\TODO{Pin vertex 0's spokes; Newton refinement to 50 decimal digits
+in \texttt{mpmath} over $\Q[s]/(s^{2}-3)$ to keep $\sqrt 3$ exact.
+Drop one redundant vertex to get a square system
+(\cref{lem:square-system}).}
+
+\subsection{Interval Krawczyk}
+\label{sec:certification-krawczyk}
+
+\TODO{State the Krawczyk theorem and the operator
+\[
+   K(\mathbf{I}) \;=\; c - Y\,F(c) + (E - Y\,J(\mathbf{I}))(\mathbf{I} - c),
+   \qquad Y = J(c)^{-1},
+\]
+with $\mathbf{I} = [c - 10^{-5},\, c + 10^{-5}]$ componentwise.
+Containment $K(\mathbf{I}) \subset \mathrm{int}(\mathbf{I})$ implies a
+unique zero of $F$ in $\mathbf{I}$.}
+
+\paragraph{Numerical gotchas.}
+\TODO{Two implementation points worth flagging: (i) the centre term
+$F(c)$ must be evaluated at a \emph{point}, not on the interval box,
+otherwise the Krawczyk margin grows linearly in the box radius;
+(ii) \texttt{sympy.lambdify} with \texttt{modules=None} keeps
+half-integer coefficients as Python floats (exact for halves), while
+\texttt{modules='mpmath'} introduces \texttt{mpf}/\texttt{iv.mpf}
+conversion errors. See \path{scripts/interval.py} for the exact form.}
+
+\subsection{Schema-v2 replayable certificate}
+\label{sec:certification-replay}
+
+\TODO{JSON document containing: graph6, canonical edge order, pinning
+data, dropped redundant vertex index, free-variable list,
+polynomial-system SHA-256, decimal-string centre, per-coordinate
+Krawczyk margins, full provenance metadata
+(Python/mpmath/sympy/networkx versions, OS, hostname). Replayer
+reconstructs the polynomial system, verifies the hash, re-evaluates
+the Krawczyk operator, and emits a verdict. See
+\path{docs/external_replay} for the cold-environment log.}

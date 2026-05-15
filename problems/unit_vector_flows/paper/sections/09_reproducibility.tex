@@ -1,0 +1,52 @@
+\section{Reproducibility}
+\label{sec:reproducibility}
+
+\TODO{Prose from \path{docs/preprint_outline.md} Section~9. The whole
+package replays bit-for-bit from the committed certificate files.}
+
+\subsection{Hardware and software stack}
+\label{sec:repro-stack}
+
+\TODO{Reference machine specification (single laptop class, CPU
+model). Software: Python~3.12, mpmath~1.3, sympy~1.13, networkx~3.6,
+scipy~1.14, nauty~2.9.3, snarkhunter~2.0b, python-sat~1.8.}
+
+\subsection{Build and run}
+\label{sec:repro-build}
+
+\TODO{Instructions:
+\begin{itemize}
+  \item Clone the repository.
+  \item Create a uv virtual environment: \texttt{uv venv}, then
+        \texttt{uv pip install -r requirements.txt}.
+  \item Build nauty and snarkhunter from the included source archives.
+  \item \texttt{make verify}: full \texttt{pytest} suite ($\sim 2$~min).
+  \item \texttt{make verify-certs}: replay all 3247 interval-Krawczyk
+        certificates ($\sim 30$~min single-thread).
+  \item \texttt{make catalogue}: regenerate the catalogue from scratch
+        ($\sim 30$~min through $n = 26$; $\sim 25$~min for $n = 28$
+        via snarkhunter).
+  \item \texttt{make manifest}: verify catalogue SHA-256 against the
+        committed manifest.
+\end{itemize}
+}
+
+\subsection{File-level provenance}
+\label{sec:repro-provenance}
+
+\TODO{Schema-v2 certificate format documented in
+\cref{sec:certification-replay}. Graph6 canonicalisation contract:
+\texttt{nauty} \texttt{labelg} is the canonical form; commits include
+the version pin. Cold-environment replay log at
+\path{docs/external_replay} records the $3247/3247$ re-verification
+on an unrelated machine with no shared code with the original
+certifier.}
+
+\subsection{What is and is not committed}
+\label{sec:repro-commits}
+
+\TODO{The Krawczyk certificates and the catalogue graph6 streams are
+committed. The raw geng/snarkhunter output is not committed (gigabytes
+of intermediate data); the reproducibility instructions tell a third
+party how to regenerate it. The numerical witnesses are committed
+inside the certificates (decimal-string form, full precision).}

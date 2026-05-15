@@ -1,0 +1,99 @@
+\documentclass[11pt,a4paper]{article}
+
+%% ----- Packages -----------------------------------------------------------
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{microtype}
+\usepackage{url}
+\usepackage{xcolor}
+\usepackage[colorlinks=true,linkcolor=blue!50!black,citecolor=blue!50!black,urlcolor=blue!50!black]{hyperref}
+\usepackage{cleveref}
+
+%% ----- Theorem environments ----------------------------------------------
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{example}[theorem]{Example}
+
+\crefname{theorem}{Theorem}{Theorems}
+\crefname{lemma}{Lemma}{Lemmas}
+\crefname{corollary}{Corollary}{Corollaries}
+\crefname{definition}{Definition}{Definitions}
+\crefname{section}{Section}{Sections}
+
+%% ----- Macros -------------------------------------------------------------
+\newcommand{\Sphere}{S^{2}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\F}{\mathcal{F}}
+\newcommand{\base}{\mathcal{F}_0}
+\newcommand{\closure}{\mathcal{F}}
+\newcommand{\SO}{\mathrm{SO}}
+\DeclareMathOperator{\rank}{rank}
+
+% Highlight TODOs while drafting; turn off by uncommenting:
+%   \long\def\TODO#1{}
+% Use \long\def + \color (paragraph-safe) so the argument may span
+% multiple paragraphs without breaking compilation.
+\long\def\TODO#1{{\color{red!70!black}\bfseries[TODO: #1]}}
+
+%% ----- Front matter -------------------------------------------------------
+\title{Replayable \( S^{2} \)-flow certificates on cubic graphs:\\
+       a finite theorem to 28 vertices and a constructive closure}
+
+\author{
+  \TODO{author}
+}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We give a computer-assisted study of nowhere-zero unit-vector flows
+($\Sphere$-flows) on cubic graphs, in the form pursued by Jain (first
+conjecture) and recently disambiguated by Ulyanov. Three results.
+\textbf{(A)} Every nontrivial snark on at most 28 vertices admits an
+$\Sphere$-flow, with an independently replayable interval-Krawczyk
+certificate. \textbf{(B)} The class of cubic graphs that admit a
+constructive $\Sphere$-flow is closed under triangle blow-up and
+$3$-edge-cut dot product; starting from the 3\,247 graphs of (A),
+the closure $\closure$ contains a strict superset with explicit
+operation-tree certificates. \textbf{(C)} Every catalogue snark of
+(A) is irreducible under the two inverse operations, so the
+catalogue is exactly the base of $\closure$ under these gadgets, and
+$\closure$-membership for any cubic graph admits a replayable
+decomposition certificate. We also document three independent
+obstructions encountered on flower snarks $J_{2k+1}$ and discuss why
+they do not extend to a uniform infinite-family theorem by the
+methods of this paper.
+\end{abstract}
+
+\tableofcontents
+
+\input{sections/01_intro}
+\input{sections/02_preliminaries}
+\input{sections/03_certification}
+\input{sections/04_finite_theorem}
+\input{sections/05_cdc_obstruction}
+\input{sections/06_gadget_closure}
+\input{sections/07_decomposition_frontier}
+\input{sections/08_flower_negatives}
+\input{sections/09_reproducibility}
+
+\bibliographystyle{plain}
+\bibliography{refs}
+
+\end{document}
