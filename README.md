@@ -1,10 +1,10 @@
 # graph-conjectures
 
-![Resolved graph conjectures timeline](scraper/static/resolved-conjecture-timeline-marketing.png)
+![Resolved graph conjectures timeline](scraper/static/resolved-conjectures-timeline.png)
 
 Resolved-conjecture timeline: 96 solved or disproved conjectures, split across
 OPG literature reviews and arXiv-extracted conjectures. Editable SVG:
-[`scraper/static/resolved-conjecture-timeline-marketing.svg`](scraper/static/resolved-conjecture-timeline-marketing.svg).
+[`scraper/static/resolved-conjectures-timeline.svg`](scraper/static/resolved-conjectures-timeline.svg).
 
 A browseable, status-annotated mirror of the **graph-theory category** of
 [openproblemgarden.org](http://www.openproblemgarden.org/category/graph_theory),
