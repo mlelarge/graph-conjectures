@@ -1,0 +1,881 @@
+{
+  "by_status": {
+    "impossible_C_cycle_cannot_close": [
+      {
+        "chi": [
+          "C_TC",
+          "M_TT"
+        ],
+        "pi": []
+      },
+      {
+        "chi": [
+          "C_TC",
+          "T_CC"
+        ],
+        "pi": [
+          [
+            1
+          ]
+        ]
+      },
+      {
+        "chi": [
+          "C_TC",
+          "T_T"
+        ],
+        "pi": [
+          [
+            1
+          ]
+        ]
+      },
+      {
+        "chi": [
+          "C_TC",
+          "T_TM"
+        ],
+        "pi": [
+          [
+            1
+          ]
+        ]
+      },
+      {
+        "chi": [
+          "M_TT",
+          "C_TC"
+        ],
+        "pi": []
+      },
+      {
+        "chi": [
+          "T_CC",
+          "C_TC"
+        ],
+        "pi": [
+          [
+            0
+          ]
+        ]
+      },
+      {
+        "chi": [
+          "T_T",
+          "C_TC"
+        ],
+        "pi": [
+          [
+            0
+          ]
+        ]
+      },
+      {
+        "chi": [
+          "T_TM",
+          "C_TC"
+        ],
+        "pi": [
+          [
+            0
+          ]
+        ]
+      }
+    ],
+    "impossible_TCC_in_shared_block": [
+      {
+        "chi": [
+          "T_CC",
+          "T_T"
+        ],
+        "pi": [
+          [
+            0,
+            1
+          ]
+        ]
+      },
+      {
+        "chi": [
+          "T_CC",
+          "T_TM"
+        ],
+        "pi": [
+          [
+            0,
+            1
+          ]
+        ]
+      },
+      {
+        "chi": [
+          "T_T",
+          "T_CC"
+        ],
+        "pi": [
+          [
+            0,
+            1
+          ]
+        ]
+      },
+      {
+        "chi": [
+          "T_TM",
+          "T_CC"
+        ],
+        "pi": [
+          [
+            0,
+            1
+          ]
+        ]
+      }
+    ],
+    "impossible_no_T_stub_for_internal": [
+      {
+        "chi": [
+          "C_TC",
+          "C_TC"
+        ],
+        "pi": []
+      },
+      {
+        "chi": [
+          "M_TT",
+          "M_TT"
+        ],
+        "pi": []
+      },
+      {
+        "chi": [
+          "M_TT",
+          "T_CC"
+        ],
+        "pi": [
+          [
+            1
+          ]
+        ]
+      },
+      {
+        "chi": [
+          "T_CC",
+          "M_TT"
+        ],
+        "pi": [
+          [
+            0
+          ]
+        ]
+      },
+      {
+        "chi": [
+          "T_CC",
+          "T_CC"
+        ],
+        "pi": [
+          [
+            0
+          ],
+          [
+            1
+          ]
+        ]
+      },
+      {
+        "chi": [
+          "T_CC",
+          "T_CC"
+        ],
+        "pi": [
+          [
+            0,
+            1
+          ]
+        ]
+      }
+    ],
+    "open": [],
+    "realised": [
+      {
+        "chi": [
+          "M_TT",
+          "T_T"
+        ],
+        "pi": [
+          [
+            1
+          ]
+        ]
+      },
+      {
+        "chi": [
+          "M_TT",
+          "T_TM"
+        ],
+        "pi": [
+          [
+            1
+          ]
+        ]
+      },
+      {
+        "chi": [
+          "T_CC",
+          "T_T"
+        ],
+        "pi": [
+          [
+            0
+          ],
+          [
+            1
+          ]
+        ]
+      },
+      {
+        "chi": [
+          "T_CC",
+          "T_TM"
+        ],
+        "pi": [
+          [
+            0
+          ],
+          [
+            1
+          ]
+        ]
+      },
+      {
+        "chi": [
+          "T_T",
+          "M_TT"
+        ],
+        "pi": [
+          [
+            0
+          ]
+        ]
+      },
+      {
+        "chi": [
+          "T_T",
+          "T_CC"
+        ],
+        "pi": [
+          [
+            0
+          ],
+          [
+            1
+          ]
+        ]
+      },
+      {
+        "chi": [
+          "T_T",
+          "T_T"
+        ],
+        "pi": [
+          [
+            0
+          ],
+          [
+            1
+          ]
+        ]
+      },
+      {
+        "chi": [
+          "T_T",
+          "T_T"
+        ],
+        "pi": [
+          [
+            0,
+            1
+          ]
+        ]
+      },
+      {
+        "chi": [
+          "T_T",
+          "T_TM"
+        ],
+        "pi": [
+          [
+            0
+          ],
+          [
+            1
+          ]
+        ]
+      },
+      {
+        "chi": [
+          "T_T",
+          "T_TM"
+        ],
+        "pi": [
+          [
+            0,
+            1
+          ]
+        ]
+      },
+      {
+        "chi": [
+          "T_TM",
+          "M_TT"
+        ],
+        "pi": [
+          [
+            0
+          ]
+        ]
+      },
+      {
+        "chi": [
+          "T_TM",
+          "T_CC"
+        ],
+        "pi": [
+          [
+            0
+          ],
+          [
+            1
+          ]
+        ]
+      },
+      {
+        "chi": [
+          "T_TM",
+          "T_T"
+        ],
+        "pi": [
+          [
+            0
+          ],
+          [
+            1
+          ]
+        ]
+      },
+      {
+        "chi": [
+          "T_TM",
+          "T_T"
+        ],
+        "pi": [
+          [
+            0,
+            1
+          ]
+        ]
+      },
+      {
+        "chi": [
+          "T_TM",
+          "T_TM"
+        ],
+        "pi": [
+          [
+            0
+          ],
+          [
+            1
+          ]
+        ]
+      },
+      {
+        "chi": [
+          "T_TM",
+          "T_TM"
+        ],
+        "pi": [
+          [
+            0,
+            1
+          ]
+        ]
+      }
+    ]
+  },
+  "rows": [
+    {
+      "chi": [
+        "C_TC",
+        "C_TC"
+      ],
+      "pi": [],
+      "reason": "Neither port has state in {T_T, T_TM}, so no port contributes a T-boundary stub to any T_H component containing an internal vertex. (T_CC has T-boundary but degT_H = 0, contributing only a singleton T-component.)",
+      "status": "impossible_no_T_stub_for_internal"
+    },
+    {
+      "chi": [
+        "C_TC",
+        "M_TT"
+      ],
+      "pi": [],
+      "reason": "Exactly one port has C-boundary (state C_TC). The global C-cycle through that boundary edge enters H and cannot exit: the other port has no C-boundary, so the cycle cannot close.",
+      "status": "impossible_C_cycle_cannot_close"
+    },
+    {
+      "chi": [
+        "C_TC",
+        "T_CC"
+      ],
+      "pi": [
+        [
+          1
+        ]
+      ],
+      "reason": "Exactly one port has C-boundary (state C_TC). The global C-cycle through that boundary edge enters H and cannot exit: the other port has no C-boundary, so the cycle cannot close.",
+      "status": "impossible_C_cycle_cannot_close"
+    },
+    {
+      "chi": [
+        "C_TC",
+        "T_T"
+      ],
+      "pi": [
+        [
+          1
+        ]
+      ],
+      "reason": "Exactly one port has C-boundary (state C_TC). The global C-cycle through that boundary edge enters H and cannot exit: the other port has no C-boundary, so the cycle cannot close.",
+      "status": "impossible_C_cycle_cannot_close"
+    },
+    {
+      "chi": [
+        "C_TC",
+        "T_TM"
+      ],
+      "pi": [
+        [
+          1
+        ]
+      ],
+      "reason": "Exactly one port has C-boundary (state C_TC). The global C-cycle through that boundary edge enters H and cannot exit: the other port has no C-boundary, so the cycle cannot close.",
+      "status": "impossible_C_cycle_cannot_close"
+    },
+    {
+      "chi": [
+        "M_TT",
+        "C_TC"
+      ],
+      "pi": [],
+      "reason": "Exactly one port has C-boundary (state C_TC). The global C-cycle through that boundary edge enters H and cannot exit: the other port has no C-boundary, so the cycle cannot close.",
+      "status": "impossible_C_cycle_cannot_close"
+    },
+    {
+      "chi": [
+        "M_TT",
+        "M_TT"
+      ],
+      "pi": [],
+      "reason": "Neither port has state in {T_T, T_TM}, so no port contributes a T-boundary stub to any T_H component containing an internal vertex. (T_CC has T-boundary but degT_H = 0, contributing only a singleton T-component.)",
+      "status": "impossible_no_T_stub_for_internal"
+    },
+    {
+      "chi": [
+        "M_TT",
+        "T_CC"
+      ],
+      "pi": [
+        [
+          1
+        ]
+      ],
+      "reason": "Neither port has state in {T_T, T_TM}, so no port contributes a T-boundary stub to any T_H component containing an internal vertex. (T_CC has T-boundary but degT_H = 0, contributing only a singleton T-component.)",
+      "status": "impossible_no_T_stub_for_internal"
+    },
+    {
+      "chi": [
+        "M_TT",
+        "T_T"
+      ],
+      "pi": [
+        [
+          1
+        ]
+      ],
+      "reason": "in lattice universe",
+      "status": "realised"
+    },
+    {
+      "chi": [
+        "M_TT",
+        "T_TM"
+      ],
+      "pi": [
+        [
+          1
+        ]
+      ],
+      "reason": "in lattice universe",
+      "status": "realised"
+    },
+    {
+      "chi": [
+        "T_CC",
+        "C_TC"
+      ],
+      "pi": [
+        [
+          0
+        ]
+      ],
+      "reason": "Exactly one port has C-boundary (state C_TC). The global C-cycle through that boundary edge enters H and cannot exit: the other port has no C-boundary, so the cycle cannot close.",
+      "status": "impossible_C_cycle_cannot_close"
+    },
+    {
+      "chi": [
+        "T_CC",
+        "M_TT"
+      ],
+      "pi": [
+        [
+          0
+        ]
+      ],
+      "reason": "Neither port has state in {T_T, T_TM}, so no port contributes a T-boundary stub to any T_H component containing an internal vertex. (T_CC has T-boundary but degT_H = 0, contributing only a singleton T-component.)",
+      "status": "impossible_no_T_stub_for_internal"
+    },
+    {
+      "chi": [
+        "T_CC",
+        "T_CC"
+      ],
+      "pi": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "reason": "Neither port has state in {T_T, T_TM}, so no port contributes a T-boundary stub to any T_H component containing an internal vertex. (T_CC has T-boundary but degT_H = 0, contributing only a singleton T-component.)",
+      "status": "impossible_no_T_stub_for_internal"
+    },
+    {
+      "chi": [
+        "T_CC",
+        "T_CC"
+      ],
+      "pi": [
+        [
+          0,
+          1
+        ]
+      ],
+      "reason": "Neither port has state in {T_T, T_TM}, so no port contributes a T-boundary stub to any T_H component containing an internal vertex. (T_CC has T-boundary but degT_H = 0, contributing only a singleton T-component.)",
+      "status": "impossible_no_T_stub_for_internal"
+    },
+    {
+      "chi": [
+        "T_CC",
+        "T_T"
+      ],
+      "pi": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "reason": "in lattice universe",
+      "status": "realised"
+    },
+    {
+      "chi": [
+        "T_CC",
+        "T_T"
+      ],
+      "pi": [
+        [
+          0,
+          1
+        ]
+      ],
+      "reason": "pi block (0, 1) contains port 0 (state T_CC); T_CC has degT_H = 0 and is isolated in T_H, so it cannot share a T-component with another port.",
+      "status": "impossible_TCC_in_shared_block"
+    },
+    {
+      "chi": [
+        "T_CC",
+        "T_TM"
+      ],
+      "pi": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "reason": "in lattice universe",
+      "status": "realised"
+    },
+    {
+      "chi": [
+        "T_CC",
+        "T_TM"
+      ],
+      "pi": [
+        [
+          0,
+          1
+        ]
+      ],
+      "reason": "pi block (0, 1) contains port 0 (state T_CC); T_CC has degT_H = 0 and is isolated in T_H, so it cannot share a T-component with another port.",
+      "status": "impossible_TCC_in_shared_block"
+    },
+    {
+      "chi": [
+        "T_T",
+        "C_TC"
+      ],
+      "pi": [
+        [
+          0
+        ]
+      ],
+      "reason": "Exactly one port has C-boundary (state C_TC). The global C-cycle through that boundary edge enters H and cannot exit: the other port has no C-boundary, so the cycle cannot close.",
+      "status": "impossible_C_cycle_cannot_close"
+    },
+    {
+      "chi": [
+        "T_T",
+        "M_TT"
+      ],
+      "pi": [
+        [
+          0
+        ]
+      ],
+      "reason": "in lattice universe",
+      "status": "realised"
+    },
+    {
+      "chi": [
+        "T_T",
+        "T_CC"
+      ],
+      "pi": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "reason": "in lattice universe",
+      "status": "realised"
+    },
+    {
+      "chi": [
+        "T_T",
+        "T_CC"
+      ],
+      "pi": [
+        [
+          0,
+          1
+        ]
+      ],
+      "reason": "pi block (0, 1) contains port 1 (state T_CC); T_CC has degT_H = 0 and is isolated in T_H, so it cannot share a T-component with another port.",
+      "status": "impossible_TCC_in_shared_block"
+    },
+    {
+      "chi": [
+        "T_T",
+        "T_T"
+      ],
+      "pi": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "reason": "in lattice universe",
+      "status": "realised"
+    },
+    {
+      "chi": [
+        "T_T",
+        "T_T"
+      ],
+      "pi": [
+        [
+          0,
+          1
+        ]
+      ],
+      "reason": "in lattice universe",
+      "status": "realised"
+    },
+    {
+      "chi": [
+        "T_T",
+        "T_TM"
+      ],
+      "pi": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "reason": "in lattice universe",
+      "status": "realised"
+    },
+    {
+      "chi": [
+        "T_T",
+        "T_TM"
+      ],
+      "pi": [
+        [
+          0,
+          1
+        ]
+      ],
+      "reason": "in lattice universe",
+      "status": "realised"
+    },
+    {
+      "chi": [
+        "T_TM",
+        "C_TC"
+      ],
+      "pi": [
+        [
+          0
+        ]
+      ],
+      "reason": "Exactly one port has C-boundary (state C_TC). The global C-cycle through that boundary edge enters H and cannot exit: the other port has no C-boundary, so the cycle cannot close.",
+      "status": "impossible_C_cycle_cannot_close"
+    },
+    {
+      "chi": [
+        "T_TM",
+        "M_TT"
+      ],
+      "pi": [
+        [
+          0
+        ]
+      ],
+      "reason": "in lattice universe",
+      "status": "realised"
+    },
+    {
+      "chi": [
+        "T_TM",
+        "T_CC"
+      ],
+      "pi": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "reason": "in lattice universe",
+      "status": "realised"
+    },
+    {
+      "chi": [
+        "T_TM",
+        "T_CC"
+      ],
+      "pi": [
+        [
+          0,
+          1
+        ]
+      ],
+      "reason": "pi block (0, 1) contains port 1 (state T_CC); T_CC has degT_H = 0 and is isolated in T_H, so it cannot share a T-component with another port.",
+      "status": "impossible_TCC_in_shared_block"
+    },
+    {
+      "chi": [
+        "T_TM",
+        "T_T"
+      ],
+      "pi": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "reason": "in lattice universe",
+      "status": "realised"
+    },
+    {
+      "chi": [
+        "T_TM",
+        "T_T"
+      ],
+      "pi": [
+        [
+          0,
+          1
+        ]
+      ],
+      "reason": "in lattice universe",
+      "status": "realised"
+    },
+    {
+      "chi": [
+        "T_TM",
+        "T_TM"
+      ],
+      "pi": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "reason": "in lattice universe",
+      "status": "realised"
+    },
+    {
+      "chi": [
+        "T_TM",
+        "T_TM"
+      ],
+      "pi": [
+        [
+          0,
+          1
+        ]
+      ],
+      "reason": "in lattice universe",
+      "status": "realised"
+    }
+  ],
+  "summary": {
+    "apriori_count": 34,
+    "by_status_counts": {
+      "impossible_C_cycle_cannot_close": 8,
+      "impossible_TCC_in_shared_block": 4,
+      "impossible_no_T_stub_for_internal": 6,
+      "open": 0,
+      "realised": 16
+    }
+  }
+}

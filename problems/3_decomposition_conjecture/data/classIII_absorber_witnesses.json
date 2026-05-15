@@ -1,0 +1,472 @@
+{
+  "is_compatibility_universal": true,
+  "lattice": "/Users/lelarge/Recherche/graph-conjectures/problems/3_decomposition_conjecture/data/gadget_lattice_2pole_n10_both.json",
+  "residual": {
+    "graph6": "K?AB?qQT@WWG",
+    "ports": [
+      2,
+      4
+    ]
+  },
+  "residual_trace_count": 12,
+  "uncovered_opposite_traces": [],
+  "universal_gadget": {
+    "class": "C58",
+    "graph6": "I?B@t`gs?",
+    "ports": [
+      4,
+      5
+    ]
+  },
+  "universe_trace_count": 16,
+  "witnesses": [
+    {
+      "compatible_witness_count": 2,
+      "opposite_trace": {
+        "chi": [
+          "M_TT",
+          "T_T"
+        ],
+        "pi": [
+          [
+            1
+          ]
+        ]
+      },
+      "witness_trace_on_residual": {
+        "chi": [
+          "M_TT",
+          "T_T"
+        ],
+        "pi": [
+          [
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "compatible_witness_count": 2,
+      "opposite_trace": {
+        "chi": [
+          "M_TT",
+          "T_TM"
+        ],
+        "pi": [
+          [
+            1
+          ]
+        ]
+      },
+      "witness_trace_on_residual": {
+        "chi": [
+          "M_TT",
+          "T_T"
+        ],
+        "pi": [
+          [
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "compatible_witness_count": 3,
+      "opposite_trace": {
+        "chi": [
+          "T_CC",
+          "T_T"
+        ],
+        "pi": [
+          [
+            0
+          ],
+          [
+            1
+          ]
+        ]
+      },
+      "witness_trace_on_residual": {
+        "chi": [
+          "T_T",
+          "T_T"
+        ],
+        "pi": [
+          [
+            0,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "compatible_witness_count": 3,
+      "opposite_trace": {
+        "chi": [
+          "T_CC",
+          "T_TM"
+        ],
+        "pi": [
+          [
+            0
+          ],
+          [
+            1
+          ]
+        ]
+      },
+      "witness_trace_on_residual": {
+        "chi": [
+          "T_T",
+          "T_T"
+        ],
+        "pi": [
+          [
+            0,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "compatible_witness_count": 2,
+      "opposite_trace": {
+        "chi": [
+          "T_T",
+          "M_TT"
+        ],
+        "pi": [
+          [
+            0
+          ]
+        ]
+      },
+      "witness_trace_on_residual": {
+        "chi": [
+          "T_T",
+          "M_TT"
+        ],
+        "pi": [
+          [
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "compatible_witness_count": 3,
+      "opposite_trace": {
+        "chi": [
+          "T_T",
+          "T_CC"
+        ],
+        "pi": [
+          [
+            0
+          ],
+          [
+            1
+          ]
+        ]
+      },
+      "witness_trace_on_residual": {
+        "chi": [
+          "T_T",
+          "T_T"
+        ],
+        "pi": [
+          [
+            0,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "compatible_witness_count": 3,
+      "opposite_trace": {
+        "chi": [
+          "T_T",
+          "T_T"
+        ],
+        "pi": [
+          [
+            0
+          ],
+          [
+            1
+          ]
+        ]
+      },
+      "witness_trace_on_residual": {
+        "chi": [
+          "T_T",
+          "T_T"
+        ],
+        "pi": [
+          [
+            0,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "compatible_witness_count": 5,
+      "opposite_trace": {
+        "chi": [
+          "T_T",
+          "T_T"
+        ],
+        "pi": [
+          [
+            0,
+            1
+          ]
+        ]
+      },
+      "witness_trace_on_residual": {
+        "chi": [
+          "T_CC",
+          "T_T"
+        ],
+        "pi": [
+          [
+            0
+          ],
+          [
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "compatible_witness_count": 3,
+      "opposite_trace": {
+        "chi": [
+          "T_T",
+          "T_TM"
+        ],
+        "pi": [
+          [
+            0
+          ],
+          [
+            1
+          ]
+        ]
+      },
+      "witness_trace_on_residual": {
+        "chi": [
+          "T_T",
+          "T_T"
+        ],
+        "pi": [
+          [
+            0,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "compatible_witness_count": 5,
+      "opposite_trace": {
+        "chi": [
+          "T_T",
+          "T_TM"
+        ],
+        "pi": [
+          [
+            0,
+            1
+          ]
+        ]
+      },
+      "witness_trace_on_residual": {
+        "chi": [
+          "T_CC",
+          "T_T"
+        ],
+        "pi": [
+          [
+            0
+          ],
+          [
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "compatible_witness_count": 2,
+      "opposite_trace": {
+        "chi": [
+          "T_TM",
+          "M_TT"
+        ],
+        "pi": [
+          [
+            0
+          ]
+        ]
+      },
+      "witness_trace_on_residual": {
+        "chi": [
+          "T_T",
+          "M_TT"
+        ],
+        "pi": [
+          [
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "compatible_witness_count": 3,
+      "opposite_trace": {
+        "chi": [
+          "T_TM",
+          "T_CC"
+        ],
+        "pi": [
+          [
+            0
+          ],
+          [
+            1
+          ]
+        ]
+      },
+      "witness_trace_on_residual": {
+        "chi": [
+          "T_T",
+          "T_T"
+        ],
+        "pi": [
+          [
+            0,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "compatible_witness_count": 3,
+      "opposite_trace": {
+        "chi": [
+          "T_TM",
+          "T_T"
+        ],
+        "pi": [
+          [
+            0
+          ],
+          [
+            1
+          ]
+        ]
+      },
+      "witness_trace_on_residual": {
+        "chi": [
+          "T_T",
+          "T_T"
+        ],
+        "pi": [
+          [
+            0,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "compatible_witness_count": 5,
+      "opposite_trace": {
+        "chi": [
+          "T_TM",
+          "T_T"
+        ],
+        "pi": [
+          [
+            0,
+            1
+          ]
+        ]
+      },
+      "witness_trace_on_residual": {
+        "chi": [
+          "T_CC",
+          "T_T"
+        ],
+        "pi": [
+          [
+            0
+          ],
+          [
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "compatible_witness_count": 3,
+      "opposite_trace": {
+        "chi": [
+          "T_TM",
+          "T_TM"
+        ],
+        "pi": [
+          [
+            0
+          ],
+          [
+            1
+          ]
+        ]
+      },
+      "witness_trace_on_residual": {
+        "chi": [
+          "T_T",
+          "T_T"
+        ],
+        "pi": [
+          [
+            0,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "compatible_witness_count": 5,
+      "opposite_trace": {
+        "chi": [
+          "T_TM",
+          "T_TM"
+        ],
+        "pi": [
+          [
+            0,
+            1
+          ]
+        ]
+      },
+      "witness_trace_on_residual": {
+        "chi": [
+          "T_CC",
+          "T_T"
+        ],
+        "pi": [
+          [
+            0
+          ],
+          [
+            1
+          ]
+        ]
+      }
+    }
+  ]
+}

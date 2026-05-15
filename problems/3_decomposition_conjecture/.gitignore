@@ -1,0 +1,12 @@
+# Sweep / build intermediates and process artefacts (not load-bearing)
+*.log
+*.shard*.jsonl
+__pycache__/
+.pytest_cache/
+
+# Intermediate lattice build checkpoint (the final JSON is committed instead)
+data/gadget_lattice_2pole_n12_both.jsonl
+
+# Superseded by data/n14_full.{jsonl,summary.json}
+data/n14_essential3conn_sample_sweep.json
+data/n14_essentially_3conn_full.summary.json

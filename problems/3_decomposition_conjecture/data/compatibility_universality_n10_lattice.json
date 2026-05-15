@@ -1,0 +1,1618 @@
+{
+  "atomic_universal_classes": [
+    {
+      "id": "C4",
+      "member_count": 2,
+      "min_order": 10,
+      "trace_count": 4
+    }
+  ],
+  "axis_characterisation_agreement_count": 59,
+  "compatibility_universal_class_count": 43,
+  "lattice": "/Users/lelarge/Recherche/graph-conjectures/problems/3_decomposition_conjecture/data/gadget_lattice_2pole_n10_both.json",
+  "lattice_class_count": 59,
+  "n12_atomic_universal_failures": [
+    {
+      "all_axes_present": true,
+      "axis_signature": {
+        "MT": true,
+        "TM": true,
+        "TT_joined": true,
+        "TT_split": true
+      },
+      "compatibility_universal": true,
+      "graph6": "K?AB?pa[CWP_",
+      "missing_opposite_traces": [],
+      "occurrences": 2,
+      "ports": [
+        3,
+        7
+      ],
+      "trace_count": 4
+    }
+  ],
+  "n12_failures_universality": [
+    {
+      "all_axes_present": true,
+      "axis_signature": {
+        "MT": true,
+        "TM": true,
+        "TT_joined": true,
+        "TT_split": true
+      },
+      "compatibility_universal": true,
+      "graph6": "K?AB?pa[CWP_",
+      "missing_opposite_traces": [],
+      "occurrences": 2,
+      "ports": [
+        3,
+        7
+      ],
+      "trace_count": 4
+    },
+    {
+      "all_axes_present": true,
+      "axis_signature": {
+        "MT": true,
+        "TM": true,
+        "TT_joined": true,
+        "TT_split": true
+      },
+      "compatibility_universal": true,
+      "graph6": "K?`@CQWSPKCo",
+      "missing_opposite_traces": [],
+      "occurrences": 1,
+      "ports": [
+        1,
+        3
+      ],
+      "trace_count": 7
+    },
+    {
+      "all_axes_present": true,
+      "axis_signature": {
+        "MT": true,
+        "TM": true,
+        "TT_joined": true,
+        "TT_split": true
+      },
+      "compatibility_universal": true,
+      "graph6": "K?`@CQWSPKCo",
+      "missing_opposite_traces": [],
+      "occurrences": 1,
+      "ports": [
+        3,
+        1
+      ],
+      "trace_count": 7
+    },
+    {
+      "all_axes_present": true,
+      "axis_signature": {
+        "MT": true,
+        "TM": true,
+        "TT_joined": true,
+        "TT_split": true
+      },
+      "compatibility_universal": true,
+      "graph6": "K?ABAaKh@oGW",
+      "missing_opposite_traces": [],
+      "occurrences": 4,
+      "ports": [
+        3,
+        4
+      ],
+      "trace_count": 9
+    },
+    {
+      "all_axes_present": true,
+      "axis_signature": {
+        "MT": true,
+        "TM": true,
+        "TT_joined": true,
+        "TT_split": true
+      },
+      "compatibility_universal": true,
+      "graph6": "K?AB?qQT@WWG",
+      "missing_opposite_traces": [],
+      "occurrences": 2,
+      "ports": [
+        2,
+        4
+      ],
+      "trace_count": 12
+    }
+  ],
+  "per_class": [
+    {
+      "all_axes_present": false,
+      "axis_signature": {
+        "MT": false,
+        "TM": false,
+        "TT_joined": true,
+        "TT_split": true
+      },
+      "compatibility_universal": false,
+      "id": "C0",
+      "member_count": 2,
+      "min_order": 4,
+      "missing_opposite_traces": [
+        {
+          "chi": [
+            "M_TT",
+            "T_T"
+          ],
+          "pi": [
+            [
+              1
+            ]
+          ]
+        },
+        {
+          "chi": [
+            "M_TT",
+            "T_TM"
+          ],
+          "pi": [
+            [
+              1
+            ]
+          ]
+        },
+        {
+          "chi": [
+            "T_T",
+            "M_TT"
+          ],
+          "pi": [
+            [
+              0
+            ]
+          ]
+        },
+        {
+          "chi": [
+            "T_TM",
+            "M_TT"
+          ],
+          "pi": [
+            [
+              0
+            ]
+          ]
+        }
+      ],
+      "trace_count": 3
+    },
+    {
+      "all_axes_present": false,
+      "axis_signature": {
+        "MT": false,
+        "TM": false,
+        "TT_joined": true,
+        "TT_split": true
+      },
+      "compatibility_universal": false,
+      "id": "C1",
+      "member_count": 2,
+      "min_order": 6,
+      "missing_opposite_traces": [
+        {
+          "chi": [
+            "M_TT",
+            "T_T"
+          ],
+          "pi": [
+            [
+              1
+            ]
+          ]
+        },
+        {
+          "chi": [
+            "M_TT",
+            "T_TM"
+          ],
+          "pi": [
+            [
+              1
+            ]
+          ]
+        },
+        {
+          "chi": [
+            "T_T",
+            "M_TT"
+          ],
+          "pi": [
+            [
+              0
+            ]
+          ]
+        },
+        {
+          "chi": [
+            "T_TM",
+            "M_TT"
+          ],
+          "pi": [
+            [
+              0
+            ]
+          ]
+        }
+      ],
+      "trace_count": 4
+    },
+    {
+      "all_axes_present": false,
+      "axis_signature": {
+        "MT": true,
+        "TM": false,
+        "TT_joined": true,
+        "TT_split": true
+      },
+      "compatibility_universal": false,
+      "id": "C2",
+      "member_count": 1,
+      "min_order": 10,
+      "missing_opposite_traces": [
+        {
+          "chi": [
+            "T_T",
+            "M_TT"
+          ],
+          "pi": [
+            [
+              0
+            ]
+          ]
+        },
+        {
+          "chi": [
+            "T_TM",
+            "M_TT"
+          ],
+          "pi": [
+            [
+              0
+            ]
+          ]
+        }
+      ],
+      "trace_count": 4
+    },
+    {
+      "all_axes_present": false,
+      "axis_signature": {
+        "MT": false,
+        "TM": true,
+        "TT_joined": true,
+        "TT_split": true
+      },
+      "compatibility_universal": false,
+      "id": "C3",
+      "member_count": 1,
+      "min_order": 10,
+      "missing_opposite_traces": [
+        {
+          "chi": [
+            "M_TT",
+            "T_T"
+          ],
+          "pi": [
+            [
+              1
+            ]
+          ]
+        },
+        {
+          "chi": [
+            "M_TT",
+            "T_TM"
+          ],
+          "pi": [
+            [
+              1
+            ]
+          ]
+        }
+      ],
+      "trace_count": 4
+    },
+    {
+      "all_axes_present": true,
+      "axis_signature": {
+        "MT": true,
+        "TM": true,
+        "TT_joined": true,
+        "TT_split": true
+      },
+      "compatibility_universal": true,
+      "id": "C4",
+      "member_count": 2,
+      "min_order": 10,
+      "missing_opposite_traces": [],
+      "trace_count": 4
+    },
+    {
+      "all_axes_present": true,
+      "axis_signature": {
+        "MT": true,
+        "TM": true,
+        "TT_joined": true,
+        "TT_split": true
+      },
+      "compatibility_universal": true,
+      "id": "C5",
+      "member_count": 12,
+      "min_order": 6,
+      "missing_opposite_traces": [],
+      "trace_count": 5
+    },
+    {
+      "all_axes_present": false,
+      "axis_signature": {
+        "MT": false,
+        "TM": false,
+        "TT_joined": true,
+        "TT_split": true
+      },
+      "compatibility_universal": false,
+      "id": "C6",
+      "member_count": 4,
+      "min_order": 8,
+      "missing_opposite_traces": [
+        {
+          "chi": [
+            "M_TT",
+            "T_T"
+          ],
+          "pi": [
+            [
+              1
+            ]
+          ]
+        },
+        {
+          "chi": [
+            "M_TT",
+            "T_TM"
+          ],
+          "pi": [
+            [
+              1
+            ]
+          ]
+        },
+        {
+          "chi": [
+            "T_T",
+            "M_TT"
+          ],
+          "pi": [
+            [
+              0
+            ]
+          ]
+        },
+        {
+          "chi": [
+            "T_TM",
+            "M_TT"
+          ],
+          "pi": [
+            [
+              0
+            ]
+          ]
+        }
+      ],
+      "trace_count": 5
+    },
+    {
+      "all_axes_present": false,
+      "axis_signature": {
+        "MT": true,
+        "TM": true,
+        "TT_joined": true,
+        "TT_split": false
+      },
+      "compatibility_universal": false,
+      "id": "C7",
+      "member_count": 14,
+      "min_order": 8,
+      "missing_opposite_traces": [
+        {
+          "chi": [
+            "T_T",
+            "T_T"
+          ],
+          "pi": [
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "chi": [
+            "T_T",
+            "T_TM"
+          ],
+          "pi": [
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "chi": [
+            "T_TM",
+            "T_T"
+          ],
+          "pi": [
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "chi": [
+            "T_TM",
+            "T_TM"
+          ],
+          "pi": [
+            [
+              0,
+              1
+            ]
+          ]
+        }
+      ],
+      "trace_count": 5
+    },
+    {
+      "all_axes_present": false,
+      "axis_signature": {
+        "MT": false,
+        "TM": false,
+        "TT_joined": true,
+        "TT_split": true
+      },
+      "compatibility_universal": false,
+      "id": "C8",
+      "member_count": 2,
+      "min_order": 6,
+      "missing_opposite_traces": [
+        {
+          "chi": [
+            "M_TT",
+            "T_T"
+          ],
+          "pi": [
+            [
+              1
+            ]
+          ]
+        },
+        {
+          "chi": [
+            "M_TT",
+            "T_TM"
+          ],
+          "pi": [
+            [
+              1
+            ]
+          ]
+        },
+        {
+          "chi": [
+            "T_T",
+            "M_TT"
+          ],
+          "pi": [
+            [
+              0
+            ]
+          ]
+        },
+        {
+          "chi": [
+            "T_TM",
+            "M_TT"
+          ],
+          "pi": [
+            [
+              0
+            ]
+          ]
+        }
+      ],
+      "trace_count": 6
+    },
+    {
+      "all_axes_present": true,
+      "axis_signature": {
+        "MT": true,
+        "TM": true,
+        "TT_joined": true,
+        "TT_split": true
+      },
+      "compatibility_universal": true,
+      "id": "C9",
+      "member_count": 10,
+      "min_order": 8,
+      "missing_opposite_traces": [],
+      "trace_count": 6
+    },
+    {
+      "all_axes_present": true,
+      "axis_signature": {
+        "MT": true,
+        "TM": true,
+        "TT_joined": true,
+        "TT_split": true
+      },
+      "compatibility_universal": true,
+      "id": "C10",
+      "member_count": 1,
+      "min_order": 10,
+      "missing_opposite_traces": [],
+      "trace_count": 6
+    },
+    {
+      "all_axes_present": true,
+      "axis_signature": {
+        "MT": true,
+        "TM": true,
+        "TT_joined": true,
+        "TT_split": true
+      },
+      "compatibility_universal": true,
+      "id": "C11",
+      "member_count": 1,
+      "min_order": 10,
+      "missing_opposite_traces": [],
+      "trace_count": 6
+    },
+    {
+      "all_axes_present": false,
+      "axis_signature": {
+        "MT": false,
+        "TM": false,
+        "TT_joined": true,
+        "TT_split": true
+      },
+      "compatibility_universal": false,
+      "id": "C12",
+      "member_count": 2,
+      "min_order": 10,
+      "missing_opposite_traces": [
+        {
+          "chi": [
+            "M_TT",
+            "T_T"
+          ],
+          "pi": [
+            [
+              1
+            ]
+          ]
+        },
+        {
+          "chi": [
+            "M_TT",
+            "T_TM"
+          ],
+          "pi": [
+            [
+              1
+            ]
+          ]
+        },
+        {
+          "chi": [
+            "T_T",
+            "M_TT"
+          ],
+          "pi": [
+            [
+              0
+            ]
+          ]
+        },
+        {
+          "chi": [
+            "T_TM",
+            "M_TT"
+          ],
+          "pi": [
+            [
+              0
+            ]
+          ]
+        }
+      ],
+      "trace_count": 6
+    },
+    {
+      "all_axes_present": false,
+      "axis_signature": {
+        "MT": false,
+        "TM": false,
+        "TT_joined": true,
+        "TT_split": true
+      },
+      "compatibility_universal": false,
+      "id": "C13",
+      "member_count": 1,
+      "min_order": 8,
+      "missing_opposite_traces": [
+        {
+          "chi": [
+            "M_TT",
+            "T_T"
+          ],
+          "pi": [
+            [
+              1
+            ]
+          ]
+        },
+        {
+          "chi": [
+            "M_TT",
+            "T_TM"
+          ],
+          "pi": [
+            [
+              1
+            ]
+          ]
+        },
+        {
+          "chi": [
+            "T_T",
+            "M_TT"
+          ],
+          "pi": [
+            [
+              0
+            ]
+          ]
+        },
+        {
+          "chi": [
+            "T_TM",
+            "M_TT"
+          ],
+          "pi": [
+            [
+              0
+            ]
+          ]
+        }
+      ],
+      "trace_count": 7
+    },
+    {
+      "all_axes_present": false,
+      "axis_signature": {
+        "MT": false,
+        "TM": false,
+        "TT_joined": true,
+        "TT_split": true
+      },
+      "compatibility_universal": false,
+      "id": "C14",
+      "member_count": 1,
+      "min_order": 8,
+      "missing_opposite_traces": [
+        {
+          "chi": [
+            "M_TT",
+            "T_T"
+          ],
+          "pi": [
+            [
+              1
+            ]
+          ]
+        },
+        {
+          "chi": [
+            "M_TT",
+            "T_TM"
+          ],
+          "pi": [
+            [
+              1
+            ]
+          ]
+        },
+        {
+          "chi": [
+            "T_T",
+            "M_TT"
+          ],
+          "pi": [
+            [
+              0
+            ]
+          ]
+        },
+        {
+          "chi": [
+            "T_TM",
+            "M_TT"
+          ],
+          "pi": [
+            [
+              0
+            ]
+          ]
+        }
+      ],
+      "trace_count": 7
+    },
+    {
+      "all_axes_present": true,
+      "axis_signature": {
+        "MT": true,
+        "TM": true,
+        "TT_joined": true,
+        "TT_split": true
+      },
+      "compatibility_universal": true,
+      "id": "C15",
+      "member_count": 8,
+      "min_order": 6,
+      "missing_opposite_traces": [],
+      "trace_count": 8
+    },
+    {
+      "all_axes_present": true,
+      "axis_signature": {
+        "MT": true,
+        "TM": true,
+        "TT_joined": true,
+        "TT_split": true
+      },
+      "compatibility_universal": true,
+      "id": "C16",
+      "member_count": 3,
+      "min_order": 8,
+      "missing_opposite_traces": [],
+      "trace_count": 8
+    },
+    {
+      "all_axes_present": true,
+      "axis_signature": {
+        "MT": true,
+        "TM": true,
+        "TT_joined": true,
+        "TT_split": true
+      },
+      "compatibility_universal": true,
+      "id": "C17",
+      "member_count": 3,
+      "min_order": 8,
+      "missing_opposite_traces": [],
+      "trace_count": 8
+    },
+    {
+      "all_axes_present": false,
+      "axis_signature": {
+        "MT": false,
+        "TM": false,
+        "TT_joined": true,
+        "TT_split": true
+      },
+      "compatibility_universal": false,
+      "id": "C18",
+      "member_count": 6,
+      "min_order": 8,
+      "missing_opposite_traces": [
+        {
+          "chi": [
+            "M_TT",
+            "T_T"
+          ],
+          "pi": [
+            [
+              1
+            ]
+          ]
+        },
+        {
+          "chi": [
+            "M_TT",
+            "T_TM"
+          ],
+          "pi": [
+            [
+              1
+            ]
+          ]
+        },
+        {
+          "chi": [
+            "T_T",
+            "M_TT"
+          ],
+          "pi": [
+            [
+              0
+            ]
+          ]
+        },
+        {
+          "chi": [
+            "T_TM",
+            "M_TT"
+          ],
+          "pi": [
+            [
+              0
+            ]
+          ]
+        }
+      ],
+      "trace_count": 8
+    },
+    {
+      "all_axes_present": true,
+      "axis_signature": {
+        "MT": true,
+        "TM": true,
+        "TT_joined": true,
+        "TT_split": true
+      },
+      "compatibility_universal": true,
+      "id": "C19",
+      "member_count": 1,
+      "min_order": 10,
+      "missing_opposite_traces": [],
+      "trace_count": 8
+    },
+    {
+      "all_axes_present": true,
+      "axis_signature": {
+        "MT": true,
+        "TM": true,
+        "TT_joined": true,
+        "TT_split": true
+      },
+      "compatibility_universal": true,
+      "id": "C20",
+      "member_count": 1,
+      "min_order": 10,
+      "missing_opposite_traces": [],
+      "trace_count": 8
+    },
+    {
+      "all_axes_present": false,
+      "axis_signature": {
+        "MT": true,
+        "TM": false,
+        "TT_joined": true,
+        "TT_split": true
+      },
+      "compatibility_universal": false,
+      "id": "C21",
+      "member_count": 1,
+      "min_order": 10,
+      "missing_opposite_traces": [
+        {
+          "chi": [
+            "T_T",
+            "M_TT"
+          ],
+          "pi": [
+            [
+              0
+            ]
+          ]
+        },
+        {
+          "chi": [
+            "T_TM",
+            "M_TT"
+          ],
+          "pi": [
+            [
+              0
+            ]
+          ]
+        }
+      ],
+      "trace_count": 8
+    },
+    {
+      "all_axes_present": false,
+      "axis_signature": {
+        "MT": false,
+        "TM": true,
+        "TT_joined": true,
+        "TT_split": true
+      },
+      "compatibility_universal": false,
+      "id": "C22",
+      "member_count": 1,
+      "min_order": 10,
+      "missing_opposite_traces": [
+        {
+          "chi": [
+            "M_TT",
+            "T_T"
+          ],
+          "pi": [
+            [
+              1
+            ]
+          ]
+        },
+        {
+          "chi": [
+            "M_TT",
+            "T_TM"
+          ],
+          "pi": [
+            [
+              1
+            ]
+          ]
+        }
+      ],
+      "trace_count": 8
+    },
+    {
+      "all_axes_present": true,
+      "axis_signature": {
+        "MT": true,
+        "TM": true,
+        "TT_joined": true,
+        "TT_split": true
+      },
+      "compatibility_universal": true,
+      "id": "C23",
+      "member_count": 2,
+      "min_order": 10,
+      "missing_opposite_traces": [],
+      "trace_count": 8
+    },
+    {
+      "all_axes_present": true,
+      "axis_signature": {
+        "MT": true,
+        "TM": true,
+        "TT_joined": true,
+        "TT_split": true
+      },
+      "compatibility_universal": true,
+      "id": "C24",
+      "member_count": 2,
+      "min_order": 8,
+      "missing_opposite_traces": [],
+      "trace_count": 9
+    },
+    {
+      "all_axes_present": true,
+      "axis_signature": {
+        "MT": true,
+        "TM": true,
+        "TT_joined": true,
+        "TT_split": true
+      },
+      "compatibility_universal": true,
+      "id": "C25",
+      "member_count": 34,
+      "min_order": 8,
+      "missing_opposite_traces": [],
+      "trace_count": 9
+    },
+    {
+      "all_axes_present": true,
+      "axis_signature": {
+        "MT": true,
+        "TM": true,
+        "TT_joined": true,
+        "TT_split": true
+      },
+      "compatibility_universal": true,
+      "id": "C26",
+      "member_count": 1,
+      "min_order": 10,
+      "missing_opposite_traces": [],
+      "trace_count": 9
+    },
+    {
+      "all_axes_present": true,
+      "axis_signature": {
+        "MT": true,
+        "TM": true,
+        "TT_joined": true,
+        "TT_split": true
+      },
+      "compatibility_universal": true,
+      "id": "C27",
+      "member_count": 1,
+      "min_order": 10,
+      "missing_opposite_traces": [],
+      "trace_count": 9
+    },
+    {
+      "all_axes_present": false,
+      "axis_signature": {
+        "MT": false,
+        "TM": false,
+        "TT_joined": true,
+        "TT_split": true
+      },
+      "compatibility_universal": false,
+      "id": "C28",
+      "member_count": 4,
+      "min_order": 10,
+      "missing_opposite_traces": [
+        {
+          "chi": [
+            "M_TT",
+            "T_T"
+          ],
+          "pi": [
+            [
+              1
+            ]
+          ]
+        },
+        {
+          "chi": [
+            "M_TT",
+            "T_TM"
+          ],
+          "pi": [
+            [
+              1
+            ]
+          ]
+        },
+        {
+          "chi": [
+            "T_T",
+            "M_TT"
+          ],
+          "pi": [
+            [
+              0
+            ]
+          ]
+        },
+        {
+          "chi": [
+            "T_TM",
+            "M_TT"
+          ],
+          "pi": [
+            [
+              0
+            ]
+          ]
+        }
+      ],
+      "trace_count": 9
+    },
+    {
+      "all_axes_present": true,
+      "axis_signature": {
+        "MT": true,
+        "TM": true,
+        "TT_joined": true,
+        "TT_split": true
+      },
+      "compatibility_universal": true,
+      "id": "C29",
+      "member_count": 1,
+      "min_order": 10,
+      "missing_opposite_traces": [],
+      "trace_count": 10
+    },
+    {
+      "all_axes_present": true,
+      "axis_signature": {
+        "MT": true,
+        "TM": true,
+        "TT_joined": true,
+        "TT_split": true
+      },
+      "compatibility_universal": true,
+      "id": "C30",
+      "member_count": 1,
+      "min_order": 10,
+      "missing_opposite_traces": [],
+      "trace_count": 10
+    },
+    {
+      "all_axes_present": true,
+      "axis_signature": {
+        "MT": true,
+        "TM": true,
+        "TT_joined": true,
+        "TT_split": true
+      },
+      "compatibility_universal": true,
+      "id": "C31",
+      "member_count": 1,
+      "min_order": 10,
+      "missing_opposite_traces": [],
+      "trace_count": 10
+    },
+    {
+      "all_axes_present": true,
+      "axis_signature": {
+        "MT": true,
+        "TM": true,
+        "TT_joined": true,
+        "TT_split": true
+      },
+      "compatibility_universal": true,
+      "id": "C32",
+      "member_count": 1,
+      "min_order": 10,
+      "missing_opposite_traces": [],
+      "trace_count": 10
+    },
+    {
+      "all_axes_present": false,
+      "axis_signature": {
+        "MT": true,
+        "TM": false,
+        "TT_joined": true,
+        "TT_split": true
+      },
+      "compatibility_universal": false,
+      "id": "C33",
+      "member_count": 1,
+      "min_order": 10,
+      "missing_opposite_traces": [
+        {
+          "chi": [
+            "T_T",
+            "M_TT"
+          ],
+          "pi": [
+            [
+              0
+            ]
+          ]
+        },
+        {
+          "chi": [
+            "T_TM",
+            "M_TT"
+          ],
+          "pi": [
+            [
+              0
+            ]
+          ]
+        }
+      ],
+      "trace_count": 10
+    },
+    {
+      "all_axes_present": false,
+      "axis_signature": {
+        "MT": false,
+        "TM": true,
+        "TT_joined": true,
+        "TT_split": true
+      },
+      "compatibility_universal": false,
+      "id": "C34",
+      "member_count": 1,
+      "min_order": 10,
+      "missing_opposite_traces": [
+        {
+          "chi": [
+            "M_TT",
+            "T_T"
+          ],
+          "pi": [
+            [
+              1
+            ]
+          ]
+        },
+        {
+          "chi": [
+            "M_TT",
+            "T_TM"
+          ],
+          "pi": [
+            [
+              1
+            ]
+          ]
+        }
+      ],
+      "trace_count": 10
+    },
+    {
+      "all_axes_present": true,
+      "axis_signature": {
+        "MT": true,
+        "TM": true,
+        "TT_joined": true,
+        "TT_split": true
+      },
+      "compatibility_universal": true,
+      "id": "C35",
+      "member_count": 1,
+      "min_order": 10,
+      "missing_opposite_traces": [],
+      "trace_count": 10
+    },
+    {
+      "all_axes_present": true,
+      "axis_signature": {
+        "MT": true,
+        "TM": true,
+        "TT_joined": true,
+        "TT_split": true
+      },
+      "compatibility_universal": true,
+      "id": "C36",
+      "member_count": 1,
+      "min_order": 10,
+      "missing_opposite_traces": [],
+      "trace_count": 10
+    },
+    {
+      "all_axes_present": true,
+      "axis_signature": {
+        "MT": true,
+        "TM": true,
+        "TT_joined": true,
+        "TT_split": true
+      },
+      "compatibility_universal": true,
+      "id": "C37",
+      "member_count": 2,
+      "min_order": 10,
+      "missing_opposite_traces": [],
+      "trace_count": 10
+    },
+    {
+      "all_axes_present": true,
+      "axis_signature": {
+        "MT": true,
+        "TM": true,
+        "TT_joined": true,
+        "TT_split": true
+      },
+      "compatibility_universal": true,
+      "id": "C38",
+      "member_count": 3,
+      "min_order": 10,
+      "missing_opposite_traces": [],
+      "trace_count": 10
+    },
+    {
+      "all_axes_present": true,
+      "axis_signature": {
+        "MT": true,
+        "TM": true,
+        "TT_joined": true,
+        "TT_split": true
+      },
+      "compatibility_universal": true,
+      "id": "C39",
+      "member_count": 3,
+      "min_order": 10,
+      "missing_opposite_traces": [],
+      "trace_count": 10
+    },
+    {
+      "all_axes_present": true,
+      "axis_signature": {
+        "MT": true,
+        "TM": true,
+        "TT_joined": true,
+        "TT_split": true
+      },
+      "compatibility_universal": true,
+      "id": "C40",
+      "member_count": 4,
+      "min_order": 8,
+      "missing_opposite_traces": [],
+      "trace_count": 11
+    },
+    {
+      "all_axes_present": true,
+      "axis_signature": {
+        "MT": true,
+        "TM": true,
+        "TT_joined": true,
+        "TT_split": true
+      },
+      "compatibility_universal": true,
+      "id": "C41",
+      "member_count": 4,
+      "min_order": 8,
+      "missing_opposite_traces": [],
+      "trace_count": 11
+    },
+    {
+      "all_axes_present": true,
+      "axis_signature": {
+        "MT": true,
+        "TM": true,
+        "TT_joined": true,
+        "TT_split": true
+      },
+      "compatibility_universal": true,
+      "id": "C42",
+      "member_count": 4,
+      "min_order": 8,
+      "missing_opposite_traces": [],
+      "trace_count": 11
+    },
+    {
+      "all_axes_present": true,
+      "axis_signature": {
+        "MT": true,
+        "TM": true,
+        "TT_joined": true,
+        "TT_split": true
+      },
+      "compatibility_universal": true,
+      "id": "C43",
+      "member_count": 4,
+      "min_order": 8,
+      "missing_opposite_traces": [],
+      "trace_count": 11
+    },
+    {
+      "all_axes_present": true,
+      "axis_signature": {
+        "MT": true,
+        "TM": true,
+        "TT_joined": true,
+        "TT_split": true
+      },
+      "compatibility_universal": true,
+      "id": "C44",
+      "member_count": 10,
+      "min_order": 8,
+      "missing_opposite_traces": [],
+      "trace_count": 11
+    },
+    {
+      "all_axes_present": true,
+      "axis_signature": {
+        "MT": true,
+        "TM": true,
+        "TT_joined": true,
+        "TT_split": true
+      },
+      "compatibility_universal": true,
+      "id": "C45",
+      "member_count": 2,
+      "min_order": 10,
+      "missing_opposite_traces": [],
+      "trace_count": 11
+    },
+    {
+      "all_axes_present": true,
+      "axis_signature": {
+        "MT": true,
+        "TM": true,
+        "TT_joined": true,
+        "TT_split": true
+      },
+      "compatibility_universal": true,
+      "id": "C46",
+      "member_count": 2,
+      "min_order": 10,
+      "missing_opposite_traces": [],
+      "trace_count": 11
+    },
+    {
+      "all_axes_present": true,
+      "axis_signature": {
+        "MT": true,
+        "TM": true,
+        "TT_joined": true,
+        "TT_split": true
+      },
+      "compatibility_universal": true,
+      "id": "C47",
+      "member_count": 2,
+      "min_order": 10,
+      "missing_opposite_traces": [],
+      "trace_count": 12
+    },
+    {
+      "all_axes_present": true,
+      "axis_signature": {
+        "MT": true,
+        "TM": true,
+        "TT_joined": true,
+        "TT_split": true
+      },
+      "compatibility_universal": true,
+      "id": "C48",
+      "member_count": 2,
+      "min_order": 10,
+      "missing_opposite_traces": [],
+      "trace_count": 12
+    },
+    {
+      "all_axes_present": true,
+      "axis_signature": {
+        "MT": true,
+        "TM": true,
+        "TT_joined": true,
+        "TT_split": true
+      },
+      "compatibility_universal": true,
+      "id": "C49",
+      "member_count": 28,
+      "min_order": 8,
+      "missing_opposite_traces": [],
+      "trace_count": 13
+    },
+    {
+      "all_axes_present": true,
+      "axis_signature": {
+        "MT": true,
+        "TM": true,
+        "TT_joined": true,
+        "TT_split": true
+      },
+      "compatibility_universal": true,
+      "id": "C50",
+      "member_count": 1,
+      "min_order": 10,
+      "missing_opposite_traces": [],
+      "trace_count": 13
+    },
+    {
+      "all_axes_present": true,
+      "axis_signature": {
+        "MT": true,
+        "TM": true,
+        "TT_joined": true,
+        "TT_split": true
+      },
+      "compatibility_universal": true,
+      "id": "C51",
+      "member_count": 1,
+      "min_order": 10,
+      "missing_opposite_traces": [],
+      "trace_count": 13
+    },
+    {
+      "all_axes_present": true,
+      "axis_signature": {
+        "MT": true,
+        "TM": true,
+        "TT_joined": true,
+        "TT_split": true
+      },
+      "compatibility_universal": true,
+      "id": "C52",
+      "member_count": 1,
+      "min_order": 10,
+      "missing_opposite_traces": [],
+      "trace_count": 13
+    },
+    {
+      "all_axes_present": true,
+      "axis_signature": {
+        "MT": true,
+        "TM": true,
+        "TT_joined": true,
+        "TT_split": true
+      },
+      "compatibility_universal": true,
+      "id": "C53",
+      "member_count": 1,
+      "min_order": 10,
+      "missing_opposite_traces": [],
+      "trace_count": 13
+    },
+    {
+      "all_axes_present": true,
+      "axis_signature": {
+        "MT": true,
+        "TM": true,
+        "TT_joined": true,
+        "TT_split": true
+      },
+      "compatibility_universal": true,
+      "id": "C54",
+      "member_count": 2,
+      "min_order": 10,
+      "missing_opposite_traces": [],
+      "trace_count": 13
+    },
+    {
+      "all_axes_present": true,
+      "axis_signature": {
+        "MT": true,
+        "TM": true,
+        "TT_joined": true,
+        "TT_split": true
+      },
+      "compatibility_universal": true,
+      "id": "C55",
+      "member_count": 16,
+      "min_order": 8,
+      "missing_opposite_traces": [],
+      "trace_count": 14
+    },
+    {
+      "all_axes_present": true,
+      "axis_signature": {
+        "MT": true,
+        "TM": true,
+        "TT_joined": true,
+        "TT_split": true
+      },
+      "compatibility_universal": true,
+      "id": "C56",
+      "member_count": 16,
+      "min_order": 8,
+      "missing_opposite_traces": [],
+      "trace_count": 14
+    },
+    {
+      "all_axes_present": true,
+      "axis_signature": {
+        "MT": true,
+        "TM": true,
+        "TT_joined": true,
+        "TT_split": true
+      },
+      "compatibility_universal": true,
+      "id": "C57",
+      "member_count": 8,
+      "min_order": 10,
+      "missing_opposite_traces": [],
+      "trace_count": 14
+    },
+    {
+      "all_axes_present": true,
+      "axis_signature": {
+        "MT": true,
+        "TM": true,
+        "TT_joined": true,
+        "TT_split": true
+      },
+      "compatibility_universal": true,
+      "id": "C58",
+      "member_count": 26,
+      "min_order": 10,
+      "missing_opposite_traces": [],
+      "trace_count": 16
+    }
+  ],
+  "smallest_universal_class": {
+    "compatibility_universal": true,
+    "id": "C5",
+    "member_count": 12,
+    "min_order": 6,
+    "trace_count": 5
+  },
+  "trace_count_threshold": {
+    "all_classes_with_trace_count_at_least_11_are_universal": true,
+    "max_non_universal_trace_count": 10,
+    "min_universal_trace_count": 4
+  },
+  "universe_size": 16
+}

@@ -1,0 +1,86 @@
+{
+  "summary": {
+    "total_oriented_failures": 10,
+    "structural_classes": {
+      "class_I_bridge_or_articulation": {
+        "oriented_count": 6,
+        "unoriented_count": 2,
+        "kv": 1,
+        "ke": 1,
+        "examples": [
+          {
+            "graph6": "K?AB?pa[CWP_",
+            "ports": [
+              3,
+              7
+            ],
+            "trace_count": 4,
+            "occurrences": 2
+          },
+          {
+            "graph6": "K?`@CQWSPKCo",
+            "ports": [
+              1,
+              3
+            ],
+            "trace_count": 7,
+            "occurrences": 1
+          },
+          {
+            "graph6": "K?`@CQWSPKCo",
+            "ports": [
+              3,
+              1
+            ],
+            "trace_count": 7,
+            "occurrences": 1
+          }
+        ],
+        "reduction_hint": "Lemma 1 (bridge reduction) applies to bridges. Articulation vertices give 2-pole sub-side splits."
+      },
+      "class_II_non_port_trivial_2cut": {
+        "oriented_count": 2,
+        "unoriented_count": 1,
+        "kv": 2,
+        "ke": 2,
+        "examples": [
+          {
+            "graph6": "K?ABAaKh@oGW",
+            "ports": [
+              3,
+              4
+            ],
+            "trace_count": 9,
+            "occurrences": 4,
+            "non_port_trivial_2cut": [
+              2,
+              7
+            ]
+          }
+        ],
+        "reduction_hint": "Non-port-trivial 2-vertex-cut gives a recursive 2-cut reduction inside the side."
+      },
+      "class_III_essentially_3_connected": {
+        "oriented_count": 2,
+        "unoriented_count": 1,
+        "kv": 2,
+        "ke": 2,
+        "examples": [
+          {
+            "graph6": "K?AB?qQT@WWG",
+            "ports": [
+              2,
+              4
+            ],
+            "trace_count": 12,
+            "occurrences": 2,
+            "girth": 5,
+            "non_planar": true,
+            "ports_share_neighbour": 10
+          }
+        ],
+        "reduction_hint": "Genuinely well-connected. Trace-containment route fundamentally fails for this graph."
+      }
+    }
+  }
+}

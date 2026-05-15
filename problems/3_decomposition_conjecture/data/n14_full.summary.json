@@ -1,0 +1,108 @@
+{
+  "compat_universal_not_contained_count": 2,
+  "compat_universal_not_contained_records": [
+    {
+      "absorbing_class_id": null,
+      "absorbing_class_min_order": null,
+      "absorbing_class_trace_count": null,
+      "graph6": "M??CB?W`cKKGF?WG?",
+      "is_compatibility_universal": true,
+      "is_trace_contained": false,
+      "ports": [
+        3,
+        4
+      ],
+      "status": "compat_universal_not_contained",
+      "structural_class": "bridge",
+      "trace_count": 5
+    },
+    {
+      "absorbing_class_id": null,
+      "absorbing_class_min_order": null,
+      "absorbing_class_trace_count": null,
+      "graph6": "M??CB?W`cKKGF?WG?",
+      "is_compatibility_universal": true,
+      "is_trace_contained": false,
+      "ports": [
+        4,
+        3
+      ],
+      "status": "compat_universal_not_contained",
+      "structural_class": "bridge",
+      "trace_count": 5
+    }
+  ],
+  "distinct_absorbing_classes": 10,
+  "lattice_meta": {
+    "checkpoint": "problems/3_decomposition_conjecture/data/gadget_lattice_2pole_n12_both.jsonl",
+    "counts_by_order": {
+      "10": 226,
+      "12": 1670,
+      "4": 2,
+      "6": 8,
+      "8": 38
+    },
+    "gadget_count": 1944,
+    "inclusion_convention": "cover edge A->B means Trace(A) is a proper subset of Trace(B)",
+    "limit_per_order": null,
+    "n_max": 12,
+    "n_min": 4,
+    "order_convention": "ports are ordered; trace pi uses port indices 0 and 1",
+    "orientations": "both",
+    "trace_class_count": 133
+  },
+  "neither_count": 0,
+  "neither_records": [],
+  "status_counts": {
+    "compat_universal_not_contained": 2,
+    "trace_contained": 15176
+  },
+  "structural_counts": {
+    "bridge": 1370,
+    "essentially_3conn": 7120,
+    "non_port_2cut": 6688
+  },
+  "top_absorbing_classes": [
+    [
+      "C0",
+      10474
+    ],
+    [
+      "C6",
+      3248
+    ],
+    [
+      "C8",
+      768
+    ],
+    [
+      "C7",
+      296
+    ],
+    [
+      "C2",
+      124
+    ],
+    [
+      "C3",
+      104
+    ],
+    [
+      "C4",
+      104
+    ],
+    [
+      "C5",
+      26
+    ],
+    [
+      "C22",
+      26
+    ],
+    [
+      "C23",
+      6
+    ]
+  ],
+  "total_oriented_sides_processed": 15178
+}
