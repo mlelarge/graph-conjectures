@@ -76,6 +76,167 @@ def _build_search_text(p: dict) -> str:
     return " ".join(parts).lower().replace('"', "").replace("'", "")
 
 
+def _year_from_date(s: str | None) -> int | None:
+    if not s or len(s) < 4 or not s[:4].isdigit():
+        return None
+    return int(s[:4])
+
+
+def _years_from_text(s: str | None) -> list[int]:
+    if not s:
+        return []
+    return [int(y) for y in re.findall(r"\b(18\d{2}|19\d{2}|20\d{2})\b", s)]
+
+
+def _claim_year_for_problem(problem: dict) -> tuple[int | None, str]:
+    """Best available start year for a timeline bar.
+
+    Prefer years from references marked as original. If those are absent, use
+    the earliest bibliographic year we can extract, then finally the OPG posting
+    year. The label explains the provenance so the rendered chart is honest
+    about fallbacks.
+    """
+    original_years: list[int] = []
+    all_reference_years: list[int] = []
+    for ref in problem.get("references", []):
+        years = _years_from_text(ref.get("raw_text", ""))
+        all_reference_years.extend(years)
+        if ref.get("is_original"):
+            original_years.extend(years)
+
+    if original_years:
+        return min(original_years), "original reference"
+    if all_reference_years:
+        return min(all_reference_years), "bibliography"
+
+    posted_year = _year_from_date(problem.get("posted_at"))
+    if posted_year is not None:
+        return posted_year, "OPG posting"
+    return None, "unknown"
+
+
+def _claim_year_for_arxiv(row: dict) -> tuple[int | None, str]:
+    attributed_year = row.get("attributed_year")
+    if isinstance(attributed_year, int):
+        return attributed_year, "attribution"
+    if isinstance(attributed_year, str) and attributed_year.isdigit():
+        return int(attributed_year), "attribution"
+
+    published_year = _year_from_date(row.get("published") or row.get("posted_at"))
+    if published_year is not None:
+        return published_year, "arXiv posting"
+    return None, "unknown"
+
+
+def _resolution_ref(review: dict) -> tuple[dict | None, str]:
+    status = review.get("status")
+    preferred_kind = {
+        "solved": "proof",
+        "disproved": "counterexample",
+    }.get(status)
+    refs = [
+        ref for ref in review.get("since_posted", [])
+        if isinstance(ref.get("year"), int)
+    ]
+    if not refs:
+        return None, "unknown"
+
+    preferred = [ref for ref in refs if ref.get("kind") == preferred_kind]
+    if preferred:
+        return min(preferred, key=lambda ref: ref["year"]), preferred_kind or "resolution"
+    return min(refs, key=lambda ref: ref["year"]), "resolution citation"
+
+
+def _timeline_row(
+    item: dict,
+    review: dict,
+    start_year: int | None,
+    start_basis: str,
+    source: str,
+) -> dict | None:
+    resolution, resolution_basis = _resolution_ref(review)
+    if start_year is None or resolution is None:
+        return None
+
+    end_year = resolution["year"]
+    if not isinstance(end_year, int):
+        return None
+    if end_year < start_year:
+        return None
+
+    if source == "arxiv":
+        page_slug = item.get("_review_id") or item.get("safe_id") or item.get("slug", "")
+        url = f"arxiv/{page_slug}/"
+        subtitle = item.get("paper_title", "")
+    else:
+        url = f"op/{item.get('slug', '')}/"
+        subtitle = ""
+
+    return {
+        "title":            item.get("title", ""),
+        "subtitle":         subtitle,
+        "slug":             item.get("slug", ""),
+        "source":           source,
+        "url":              url,
+        "status":           review.get("status"),
+        "start_year":       start_year,
+        "start_basis":      start_basis,
+        "end_year":         end_year,
+        "resolution_basis": resolution_basis,
+        "duration":         end_year - start_year,
+        "resolution_title": resolution.get("title", ""),
+        "resolution_url":   resolution.get("url", ""),
+    }
+
+
+def _build_timeline_rows(
+    problems: list[dict],
+    arxiv_rows: list[dict],
+) -> tuple[list[dict], list[dict]]:
+    rows: list[dict] = []
+    for problem in problems:
+        review = problem.get("_review")
+        if not review or review.get("status") not in {"solved", "disproved"}:
+            continue
+
+        start_year, start_basis = _claim_year_for_problem(problem)
+        row = _timeline_row(problem, review, start_year, start_basis, "opg")
+        if row:
+            rows.append(row)
+
+    for arxiv_row in arxiv_rows:
+        review = arxiv_row.get("_review")
+        if not review or review.get("status") not in {"solved", "disproved"}:
+            continue
+
+        start_year, start_basis = _claim_year_for_arxiv(arxiv_row)
+        row = _timeline_row(arxiv_row, review, start_year, start_basis, "arxiv")
+        if row:
+            rows.append(row)
+
+    if not rows:
+        return [], []
+
+    min_year = min(row["start_year"] for row in rows)
+    max_year = max(row["end_year"] for row in rows)
+    first_tick = (min_year // 10) * 10
+    last_tick = ((max_year + 9) // 10) * 10
+    span = max(last_tick - first_tick, 1)
+    for row in rows:
+        row["left_pct"] = round((row["start_year"] - first_tick) / span * 100, 3)
+        row["width_pct"] = round((row["end_year"] - row["start_year"]) / span * 100, 3)
+    ticks = [
+        {
+            "year": year,
+            "left_pct": round((year - first_tick) / span * 100, 3),
+        }
+        for year in range(first_tick, last_tick + 1, 10)
+    ]
+
+    rows.sort(key=lambda row: (row["start_year"], row["end_year"], row["source"], row["title"].lower()))
+    return rows, ticks
+
+
 def _virtual_problem_from_arxiv(rec: dict) -> dict:
     """Project a `states` arxiv record into the same row shape as an OPG problem.
 
@@ -334,6 +495,15 @@ def main(argv: list[str] | None = None) -> int:
             s = r["_review"].get("status", "unclear")
             arxiv_review_status_counts[s] = arxiv_review_status_counts.get(s, 0) + 1
 
+    timeline_rows, timeline_ticks = _build_timeline_rows(problems, arxiv_rows)
+    timeline_status_counts: dict[str, int] = {}
+    timeline_source_counts: dict[str, int] = {}
+    for row in timeline_rows:
+        s = row.get("status", "unclear")
+        timeline_status_counts[s] = timeline_status_counts.get(s, 0) + 1
+        src = row.get("source", "opg")
+        timeline_source_counts[src] = timeline_source_counts.get(src, 0) + 1
+
     rows_sorted = sorted(
         problems + arxiv_rows,
         key=lambda r: (
@@ -362,6 +532,10 @@ def main(argv: list[str] | None = None) -> int:
         "arxiv_count":          len(arxiv_rows),
         "arxiv_review_count":   arxiv_review_count,
         "arxiv_review_status_counts": arxiv_review_status_counts,
+        "timeline_count":       len(timeline_rows),
+        "timeline_status_counts": timeline_status_counts,
+        "timeline_source_counts": timeline_source_counts,
+        "timeline_ticks":       timeline_ticks,
     }
 
     # ── output ─────────────────────────────────────────────────────────────────
@@ -379,6 +553,17 @@ def main(argv: list[str] | None = None) -> int:
     )
     log.info("wrote index.html (%d rows: %d OPG + %d arXiv)",
              len(rows_sorted), len(problems), len(arxiv_rows))
+
+    # Timeline of resolved OPG and arXiv conjectures
+    timeline_dir = args.site_dir / "timeline"
+    timeline_dir.mkdir(parents=True, exist_ok=True)
+    (timeline_dir / "index.html").write_text(
+        env.get_template("timeline.html").render(
+            root="../", timeline_rows=timeline_rows, **common,
+        ),
+        encoding="utf-8",
+    )
+    log.info("wrote timeline/ (%d resolved row(s))", len(timeline_rows))
 
     # About page
     about_dir = args.site_dir / "about"

@@ -1,0 +1,104 @@
+{% extends "base.html" %}
+{% block title %}Resolved conjecture timeline -- Graph-theory open problems{% endblock %}
+
+{% block main %}
+<section class="timeline-page">
+  <header class="timeline-header">
+    <div>
+      <h1>Resolved Conjecture Timeline</h1>
+      <p>
+        Solved and disproved OPG and arXiv conjectures, from first claimed year to the review's resolution year.
+      </p>
+    </div>
+    <div class="timeline-actions">
+      <div class="timeline-filter-group" aria-label="Status filters">
+        <button type="button" class="timeline-filter active" data-filter="status" data-value="">All {{ timeline_count }}</button>
+        <button type="button" class="timeline-filter" data-filter="status" data-value="solved">Solved {{ timeline_status_counts.get('solved', 0) }}</button>
+        <button type="button" class="timeline-filter" data-filter="status" data-value="disproved">Disproved {{ timeline_status_counts.get('disproved', 0) }}</button>
+      </div>
+      <div class="timeline-filter-group" aria-label="Source filters">
+        <button type="button" class="timeline-filter active" data-filter="source" data-value="">All sources</button>
+        <button type="button" class="timeline-filter" data-filter="source" data-value="opg">OPG {{ timeline_source_counts.get('opg', 0) }}</button>
+        <button type="button" class="timeline-filter" data-filter="source" data-value="arxiv">arXiv {{ timeline_source_counts.get('arxiv', 0) }}</button>
+      </div>
+    </div>
+  </header>
+
+  {% if timeline_rows %}
+  <div class="timeline-shell">
+    <div class="timeline-axis" aria-hidden="true">
+      <span></span>
+      <div class="timeline-axis-track">
+        {% for tick in timeline_ticks %}
+        <span class="timeline-tick" style="left: {{ tick.left_pct }}%;">
+          {{ tick.year }}
+        </span>
+        {% endfor %}
+      </div>
+      <span></span>
+    </div>
+
+    <div class="timeline-list">
+      {% for row in timeline_rows %}
+      <div class="timeline-row" data-status="{{ row.status }}" data-source="{{ row.source }}">
+        <a class="timeline-name" href="{{ root }}{{ row.url }}">
+          <span>{{ row.title }}</span>
+          {% if row.subtitle %}<span class="timeline-subtitle">{{ row.subtitle }}</span>{% endif %}
+        </a>
+        <div class="timeline-track" title="{{ row.start_year }} ({{ row.start_basis }}) to {{ row.end_year }} ({{ row.resolution_basis }})">
+          <a
+            class="timeline-bar timeline-{{ row.status }}"
+            href="{{ root }}{{ row.url }}"
+            style="left: {{ row.left_pct }}%; width: {{ row.width_pct }}%;"
+            aria-label="{{ row.title }}: {{ row.start_year }} to {{ row.end_year }}"
+          ></a>
+        </div>
+        <div class="timeline-years">
+          <span>{{ row.start_year }}</span>
+          <span class="timeline-arrow">-></span>
+          <span>{{ row.end_year }}</span>
+          <span class="badge source source-{{ row.source }}">{{ row.source }}</span>
+          <span class="status-badge status-{{ row.status }}">{{ row.status }}</span>
+          <span class="timeline-duration">{{ row.duration }}y</span>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <p class="timeline-note">
+    Start years prefer references marked original, then the earliest bibliography year, then the OPG posting year.
+    For arXiv-extracted conjectures, the source-paper year is used when no attribution year is recorded.
+    End years prefer proof/counterexample citations, then the earliest cited resolving item in the literature review.
+  </p>
+  {% else %}
+  <p>No solved or disproved conjectures with usable timeline dates were found.</p>
+  {% endif %}
+</section>
+
+<script>
+(function() {
+  var buttons = Array.from(document.querySelectorAll('.timeline-filter'));
+  var rows = Array.from(document.querySelectorAll('.timeline-row'));
+  var filters = { status: '', source: '' };
+
+  function applyFilter() {
+    rows.forEach(function(row) {
+      var statusOk = !filters.status || row.dataset.status === filters.status;
+      var sourceOk = !filters.source || row.dataset.source === filters.source;
+      row.style.display = statusOk && sourceOk ? '' : 'none';
+    });
+    buttons.forEach(function(button) {
+      button.classList.toggle('active', filters[button.dataset.filter] === button.dataset.value);
+    });
+  }
+
+  buttons.forEach(function(button) {
+    button.addEventListener('click', function() {
+      filters[button.dataset.filter] = button.dataset.value;
+      applyFilter();
+    });
+  });
+})();
+</script>
+{% endblock %}
