@@ -1,0 +1,896 @@
+{
+  "absorbing_class_count": 10,
+  "absorbing_classes": [
+    {
+      "axis_coverage": {
+        "MT": false,
+        "TM": false,
+        "TT_join": true,
+        "TT_split": true
+      },
+      "id": "C0",
+      "member_count": 2,
+      "min_order": 4,
+      "n14_absorption_by_structural_class": {
+        "bridge": 114,
+        "essentially_3conn": 7106,
+        "non_port_2cut": 3254
+      },
+      "n14_absorption_fraction": 0.6900777441033075,
+      "n14_absorption_total": 10474,
+      "representative": {
+        "graph6": "C^",
+        "n": 4,
+        "ports": [
+          0,
+          1
+        ]
+      },
+      "trace_count": 3,
+      "traces": [
+        {
+          "chi": [
+            "T_CC",
+            "T_T"
+          ],
+          "pi": [
+            [
+              0
+            ],
+            [
+              1
+            ]
+          ]
+        },
+        {
+          "chi": [
+            "T_T",
+            "T_CC"
+          ],
+          "pi": [
+            [
+              0
+            ],
+            [
+              1
+            ]
+          ]
+        },
+        {
+          "chi": [
+            "T_TM",
+            "T_TM"
+          ],
+          "pi": [
+            [
+              0,
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "axis_coverage": {
+        "MT": true,
+        "TM": true,
+        "TT_join": true,
+        "TT_split": true
+      },
+      "id": "C6",
+      "member_count": 24,
+      "min_order": 6,
+      "n14_absorption_by_structural_class": {
+        "bridge": 168,
+        "non_port_2cut": 3080
+      },
+      "n14_absorption_fraction": 0.21399393859533536,
+      "n14_absorption_total": 3248,
+      "representative": {
+        "graph6": "EUZO",
+        "n": 6,
+        "ports": [
+          2,
+          4
+        ]
+      },
+      "trace_count": 5,
+      "traces": [
+        {
+          "chi": [
+            "M_TT",
+            "T_T"
+          ],
+          "pi": [
+            [
+              1
+            ]
+          ]
+        },
+        {
+          "chi": [
+            "T_T",
+            "M_TT"
+          ],
+          "pi": [
+            [
+              0
+            ]
+          ]
+        },
+        {
+          "chi": [
+            "T_T",
+            "T_T"
+          ],
+          "pi": [
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "chi": [
+            "T_TM",
+            "T_TM"
+          ],
+          "pi": [
+            [
+              0
+            ],
+            [
+              1
+            ]
+          ]
+        },
+        {
+          "chi": [
+            "T_TM",
+            "T_TM"
+          ],
+          "pi": [
+            [
+              0,
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "axis_coverage": {
+        "MT": true,
+        "TM": true,
+        "TT_join": true,
+        "TT_split": false
+      },
+      "id": "C8",
+      "member_count": 74,
+      "min_order": 8,
+      "n14_absorption_by_structural_class": {
+        "bridge": 500,
+        "non_port_2cut": 268
+      },
+      "n14_absorption_fraction": 0.050599551983133484,
+      "n14_absorption_total": 768,
+      "representative": {
+        "graph6": "GCXe`W",
+        "n": 8,
+        "ports": [
+          0,
+          3
+        ]
+      },
+      "trace_count": 5,
+      "traces": [
+        {
+          "chi": [
+            "M_TT",
+            "T_TM"
+          ],
+          "pi": [
+            [
+              1
+            ]
+          ]
+        },
+        {
+          "chi": [
+            "T_T",
+            "T_TM"
+          ],
+          "pi": [
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "chi": [
+            "T_TM",
+            "M_TT"
+          ],
+          "pi": [
+            [
+              0
+            ]
+          ]
+        },
+        {
+          "chi": [
+            "T_TM",
+            "T_T"
+          ],
+          "pi": [
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "chi": [
+            "T_TM",
+            "T_TM"
+          ],
+          "pi": [
+            [
+              0,
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "axis_coverage": {
+        "MT": false,
+        "TM": false,
+        "TT_join": true,
+        "TT_split": true
+      },
+      "id": "C7",
+      "member_count": 6,
+      "min_order": 8,
+      "n14_absorption_by_structural_class": {
+        "bridge": 296
+      },
+      "n14_absorption_fraction": 0.01950191066016603,
+      "n14_absorption_total": 296,
+      "representative": {
+        "graph6": "GCdbM_",
+        "n": 8,
+        "ports": [
+          2,
+          4
+        ]
+      },
+      "trace_count": 5,
+      "traces": [
+        {
+          "chi": [
+            "T_CC",
+            "T_TM"
+          ],
+          "pi": [
+            [
+              0
+            ],
+            [
+              1
+            ]
+          ]
+        },
+        {
+          "chi": [
+            "T_T",
+            "T_TM"
+          ],
+          "pi": [
+            [
+              0
+            ],
+            [
+              1
+            ]
+          ]
+        },
+        {
+          "chi": [
+            "T_TM",
+            "T_CC"
+          ],
+          "pi": [
+            [
+              0
+            ],
+            [
+              1
+            ]
+          ]
+        },
+        {
+          "chi": [
+            "T_TM",
+            "T_T"
+          ],
+          "pi": [
+            [
+              0
+            ],
+            [
+              1
+            ]
+          ]
+        },
+        {
+          "chi": [
+            "T_TM",
+            "T_TM"
+          ],
+          "pi": [
+            [
+              0,
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "axis_coverage": {
+        "MT": true,
+        "TM": true,
+        "TT_join": true,
+        "TT_split": true
+      },
+      "id": "C2",
+      "member_count": 6,
+      "min_order": 10,
+      "n14_absorption_by_structural_class": {
+        "bridge": 34,
+        "essentially_3conn": 10,
+        "non_port_2cut": 80
+      },
+      "n14_absorption_fraction": 0.008169719330610094,
+      "n14_absorption_total": 124,
+      "representative": {
+        "graph6": "I?`adQWP_",
+        "n": 10,
+        "ports": [
+          2,
+          3
+        ]
+      },
+      "trace_count": 4,
+      "traces": [
+        {
+          "chi": [
+            "M_TT",
+            "T_T"
+          ],
+          "pi": [
+            [
+              1
+            ]
+          ]
+        },
+        {
+          "chi": [
+            "T_T",
+            "M_TT"
+          ],
+          "pi": [
+            [
+              0
+            ]
+          ]
+        },
+        {
+          "chi": [
+            "T_T",
+            "T_T"
+          ],
+          "pi": [
+            [
+              0
+            ],
+            [
+              1
+            ]
+          ]
+        },
+        {
+          "chi": [
+            "T_T",
+            "T_T"
+          ],
+          "pi": [
+            [
+              0,
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "axis_coverage": {
+        "MT": true,
+        "TM": false,
+        "TT_join": true,
+        "TT_split": true
+      },
+      "id": "C3",
+      "member_count": 6,
+      "min_order": 10,
+      "n14_absorption_by_structural_class": {
+        "bridge": 104
+      },
+      "n14_absorption_fraction": 0.006852022664382659,
+      "n14_absorption_total": 104,
+      "representative": {
+        "graph6": "ICOce_kJ?",
+        "n": 10,
+        "ports": [
+          1,
+          6
+        ]
+      },
+      "trace_count": 4,
+      "traces": [
+        {
+          "chi": [
+            "M_TT",
+            "T_TM"
+          ],
+          "pi": [
+            [
+              1
+            ]
+          ]
+        },
+        {
+          "chi": [
+            "T_T",
+            "T_CC"
+          ],
+          "pi": [
+            [
+              0
+            ],
+            [
+              1
+            ]
+          ]
+        },
+        {
+          "chi": [
+            "T_T",
+            "T_T"
+          ],
+          "pi": [
+            [
+              0
+            ],
+            [
+              1
+            ]
+          ]
+        },
+        {
+          "chi": [
+            "T_T",
+            "T_TM"
+          ],
+          "pi": [
+            [
+              0,
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "axis_coverage": {
+        "MT": false,
+        "TM": true,
+        "TT_join": true,
+        "TT_split": true
+      },
+      "id": "C4",
+      "member_count": 6,
+      "min_order": 10,
+      "n14_absorption_by_structural_class": {
+        "bridge": 104
+      },
+      "n14_absorption_fraction": 0.006852022664382659,
+      "n14_absorption_total": 104,
+      "representative": {
+        "graph6": "ICOce_kJ?",
+        "n": 10,
+        "ports": [
+          6,
+          1
+        ]
+      },
+      "trace_count": 4,
+      "traces": [
+        {
+          "chi": [
+            "T_CC",
+            "T_T"
+          ],
+          "pi": [
+            [
+              0
+            ],
+            [
+              1
+            ]
+          ]
+        },
+        {
+          "chi": [
+            "T_T",
+            "T_T"
+          ],
+          "pi": [
+            [
+              0
+            ],
+            [
+              1
+            ]
+          ]
+        },
+        {
+          "chi": [
+            "T_TM",
+            "M_TT"
+          ],
+          "pi": [
+            [
+              0
+            ]
+          ]
+        },
+        {
+          "chi": [
+            "T_TM",
+            "T_T"
+          ],
+          "pi": [
+            [
+              0,
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "axis_coverage": {
+        "MT": true,
+        "TM": true,
+        "TT_join": true,
+        "TT_split": true
+      },
+      "id": "C22",
+      "member_count": 1,
+      "min_order": 12,
+      "n14_absorption_by_structural_class": {
+        "bridge": 20,
+        "non_port_2cut": 6
+      },
+      "n14_absorption_fraction": 0.0017130056660956648,
+      "n14_absorption_total": 26,
+      "representative": {
+        "graph6": "K?`@CQWSPKCo",
+        "n": 12,
+        "ports": [
+          1,
+          3
+        ]
+      },
+      "trace_count": 7,
+      "traces": [
+        {
+          "chi": [
+            "M_TT",
+            "T_T"
+          ],
+          "pi": [
+            [
+              1
+            ]
+          ]
+        },
+        {
+          "chi": [
+            "M_TT",
+            "T_TM"
+          ],
+          "pi": [
+            [
+              1
+            ]
+          ]
+        },
+        {
+          "chi": [
+            "T_T",
+            "M_TT"
+          ],
+          "pi": [
+            [
+              0
+            ]
+          ]
+        },
+        {
+          "chi": [
+            "T_T",
+            "T_T"
+          ],
+          "pi": [
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "chi": [
+            "T_T",
+            "T_TM"
+          ],
+          "pi": [
+            [
+              0
+            ],
+            [
+              1
+            ]
+          ]
+        },
+        {
+          "chi": [
+            "T_T",
+            "T_TM"
+          ],
+          "pi": [
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "chi": [
+            "T_TM",
+            "T_T"
+          ],
+          "pi": [
+            [
+              0
+            ],
+            [
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "axis_coverage": {
+        "MT": true,
+        "TM": true,
+        "TT_join": true,
+        "TT_split": true
+      },
+      "id": "C5",
+      "member_count": 2,
+      "min_order": 12,
+      "n14_absorption_by_structural_class": {
+        "bridge": 22,
+        "essentially_3conn": 4
+      },
+      "n14_absorption_fraction": 0.0017130056660956648,
+      "n14_absorption_total": 26,
+      "representative": {
+        "graph6": "K?AB?pa[CWP_",
+        "n": 12,
+        "ports": [
+          3,
+          7
+        ]
+      },
+      "trace_count": 4,
+      "traces": [
+        {
+          "chi": [
+            "M_TT",
+            "T_T"
+          ],
+          "pi": [
+            [
+              1
+            ]
+          ]
+        },
+        {
+          "chi": [
+            "T_T",
+            "M_TT"
+          ],
+          "pi": [
+            [
+              0
+            ]
+          ]
+        },
+        {
+          "chi": [
+            "T_T",
+            "T_T"
+          ],
+          "pi": [
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "chi": [
+            "T_TM",
+            "T_TM"
+          ],
+          "pi": [
+            [
+              0
+            ],
+            [
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "axis_coverage": {
+        "MT": true,
+        "TM": true,
+        "TT_join": true,
+        "TT_split": true
+      },
+      "id": "C23",
+      "member_count": 1,
+      "min_order": 12,
+      "n14_absorption_by_structural_class": {
+        "bridge": 6
+      },
+      "n14_absorption_fraction": 0.00039530899986823034,
+      "n14_absorption_total": 6,
+      "representative": {
+        "graph6": "K?`@CQWSPKCo",
+        "n": 12,
+        "ports": [
+          3,
+          1
+        ]
+      },
+      "trace_count": 7,
+      "traces": [
+        {
+          "chi": [
+            "M_TT",
+            "T_T"
+          ],
+          "pi": [
+            [
+              1
+            ]
+          ]
+        },
+        {
+          "chi": [
+            "T_T",
+            "M_TT"
+          ],
+          "pi": [
+            [
+              0
+            ]
+          ]
+        },
+        {
+          "chi": [
+            "T_T",
+            "T_T"
+          ],
+          "pi": [
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "chi": [
+            "T_T",
+            "T_TM"
+          ],
+          "pi": [
+            [
+              0
+            ],
+            [
+              1
+            ]
+          ]
+        },
+        {
+          "chi": [
+            "T_TM",
+            "M_TT"
+          ],
+          "pi": [
+            [
+              0
+            ]
+          ]
+        },
+        {
+          "chi": [
+            "T_TM",
+            "T_T"
+          ],
+          "pi": [
+            [
+              0
+            ],
+            [
+              1
+            ]
+          ]
+        },
+        {
+          "chi": [
+            "T_TM",
+            "T_T"
+          ],
+          "pi": [
+            [
+              0,
+              1
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "lattice_meta": {
+    "checkpoint": "problems/3_decomposition_conjecture/data/gadget_lattice_2pole_n12_both.jsonl",
+    "counts_by_order": {
+      "10": 226,
+      "12": 1670,
+      "4": 2,
+      "6": 8,
+      "8": 38
+    },
+    "gadget_count": 1944,
+    "inclusion_convention": "cover edge A->B means Trace(A) is a proper subset of Trace(B)",
+    "limit_per_order": null,
+    "n_max": 12,
+    "n_min": 4,
+    "order_convention": "ports are ordered; trace pi uses port indices 0 and 1",
+    "orientations": "both",
+    "trace_class_count": 133
+  },
+  "n14_records_total": 15178
+}

@@ -1108,6 +1108,118 @@ the side bridge would be a bridge of the whole graph. The example is
 therefore good evidence for the two-branch replacement dichotomy, but
 not evidence of a new essentially-3-connected obstruction.
 
+### 3.19 The 10-class absorbing core and its per-stratum signature
+
+The full n=14 sweep (15178 oriented sides) absorbs into exactly 10
+distinct lattice classes. Their breakdown by structural stratum reveals
+that the absorbing core is **not uniform** — it depends on the side's
+structural class. Per
+[data/n14_absorbing_core.json](../data/n14_absorbing_core.json):
+
+| Class | $|T|$ | min_order | n=14 absorbs | Axes covered |
+|---|---:|---:|---:|---|
+| $C_0$ | 3 | 4 | 10 474 | TT_join, TT_split (no M-axes) |
+| $C_6$ | 5 | 6 | 3 248 | all 4 |
+| $C_8$ | 5 | 8 | 768 | TT_join, TM, MT (no TT_split) |
+| $C_7$ | 5 | 8 | 296 | TT_join, TT_split (no M-axes) |
+| $C_2$ | 4 | 10 | 124 | all 4 |
+| $C_3$ | 4 | 10 | 104 | TT_join, TT_split, MT |
+| $C_4$ | 4 | 10 | 104 | TT_join, TT_split, TM |
+| $C_{22}$ | 7 | 12 | 26 | all 4 |
+| $C_5$ | 4 | 12 | 26 | all 4 |
+| $C_{23}$ | 7 | 12 | 6 | all 4 |
+
+(Class ids are local to the n≤12 lattice; do not confuse with n≤10
+lattice ids.)
+
+**Striking observation:** $C_0$ (which absorbs 69% of all n=14 sides)
+is **not** compatibility-universal — it lacks M-boundary traces. The
+sides it absorbs nevertheless contain its three traces $(T_{CC},T_T)$
+split, $(T_T,T_{CC})$ split, $(T_{TM},T_{TM})$ joined. So absorption is
+strictly weaker than compatibility-universality of the absorbing class.
+
+**Per-stratum absorption signature.**
+
+| Stratum | Records | Distinct absorbers | Dominant (≥1%) |
+|---|---:|---:|---|
+| `essentially_3conn` | 7 120 | **3** | $C_0$ 99.80%, $C_2$ 0.14%, $C_5$ 0.06% |
+| `non_port_2cut` | 6 688 | 5 | $C_0$ 48.65%, $C_6$ 46.05%, $C_8$ 4.01%, $C_2$ 1.20% |
+| `bridge` | 1 370 | 10 | $C_8$ 36.55%, $C_7$ 21.64%, $C_6$ 12.28%, $C_0$ 8.33%, $C_3, C_4$ 7.60% each, $C_2$ 2.49%, $C_5$ 1.61%, $C_{22}$ 1.46% |
+
+The `essentially_3conn` stratum collapses to 3 absorbing classes; the
+`non_port_2cut` stratum to 5; the `bridge` stratum spreads across all
+10. This is structurally informative:
+
+1. **essentially_3conn** is the cleanest. Every side contains $C_0$'s 3
+   traces (or one of the 14 occurrences of $C_2/C_5$). The "default
+   absorber" is $C_0 = K_4 - e$, the smallest possible 2-pole gadget.
+
+2. **non_port_2cut** is dominated by the pair $\{C_0, C_6\}$ (95% of
+   records). This is consistent with a recursive 2-vertex-cut
+   structure: the side splits along the non-port-trivial 2-cut into
+   pieces, each of which can be absorbed by a small core class.
+
+3. **bridge** spreads across all 10. But every bridge side in a
+   minimal counterexample is killable by Lemma 3.9 anyway (the side
+   bridges become bridges of the whole graph, contradicting
+   bridgelessness). So the bridge stratum's spread doesn't constrain
+   the proof.
+
+### 3.20 Core Absorption Lemma (target statement)
+
+The data of §3.19 supports the following theorem-shaped formulation:
+
+**Conjecture (Core Absorption Lemma, n≤14).** Let $G$ be a smallest
+counterexample to the 3-Decomposition Conjecture and let $H$ be a
+2-pole side of an essential 2-edge-cut of $G$ with $|V(H)| \le 14$.
+Then at least one of the following holds:
+
+(a) $H$ contains a bridge that is also a bridge of $G$ → contradiction
+   with bridgelessness (Lemma 3.9 Case 1);
+
+(b) $H$ contains a bridge giving a strictly smaller essential
+   2-edge-cut of $G$ → contradiction with minimality (Lemma 3.9 Cases
+   2a, 2b);
+
+(c) $\mathrm{Trace}(H)$ contains the trace set of at least one of the
+   10 core classes
+   $\{C_0, C_2, C_3, C_4, C_5, C_6, C_7, C_8, C_{22}, C_{23}\}$ in the
+   n≤12 lattice → trace-containment reduction;
+
+(d) $\mathrm{Trace}(H)$ is compatibility-universal → Lemma 3.13
+   reduction.
+
+The empirical sweep at $n=14$ verifies that exactly one of (a)-(d)
+applies to every 2-pole side: 15176 sides are covered by (c), 2 sides
+by (a) (since the compat-only bridge's bridges are zero-port-cutting),
+and 0 sides escape.
+
+**Proof shape (open).** Each of (a)-(d) is a finite, structural
+condition. Item (a) is Lemma 3.9 Case 1 (proved). Items (b) and (a)'s
+sibling are Lemma 3.9 (proved). Item (c) is a finite collection of 10
+trace-containment checks against fixed gadgets. Item (d) is a finite
+axis-coverage check (Theorem 3.14).
+
+To upgrade to a theorem, one of two routes is required:
+
+(i) **Structural classification:** prove that the disjunction of
+    (a)-(d) holds for every 2-pole side of any $|V|$, not just
+    $|V| \le 14$. This would require characterising when a side fails
+    all four conditions — and showing no such side exists.
+
+(ii) **Stabilisation:** show that the 10-class core is **closed** in
+     the sense that any side at $|V| > 14$ contains the trace set of
+     some core class. (Even smaller: the 3-class set
+     $\{C_0, C_2, C_5\}$ suffices for the essentially-3-connected
+     stratum, and $\{C_0, C_6, C_8, C_2, C_{22}\}$ for the
+     non-port-2cut stratum.)
+
+A stabilisation theorem of the form "every essentially-3-connected
+2-pole subcubic side at $|V| \ge 14$ realises $C_0$'s 3 traces" would
+close the essentially-3-connected case structurally, leaving only the
+non-port-2cut analysis (which connects to the 2-vertex-cut boundary-
+trace lemma the proof needs anyway) and the bridge case (Lemma 3.9).
+
 ## §4. Target theorem
 
 **Theorem (target; assumes Sub-lemma 1$'$ and Lemma 2).**
