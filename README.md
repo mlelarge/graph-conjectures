@@ -32,6 +32,17 @@ The output site is inspired by
 [erdosproblems.com](https://www.erdosproblems.com/), which itself is an
 excellent companion source.
 
+## Marketing illustration
+
+The resolved-conjecture timeline can be used as a compact visual summary of the
+project: 96 solved or disproved conjectures, split across OPG literature reviews
+and arXiv-extracted conjectures.
+
+![Resolved graph conjectures timeline](scraper/static/resolved-conjecture-timeline-marketing.png)
+
+The editable SVG version is also available at
+[`scraper/static/resolved-conjecture-timeline-marketing.svg`](scraper/static/resolved-conjecture-timeline-marketing.svg).
+
 ## Quick start
 
 ```bash
