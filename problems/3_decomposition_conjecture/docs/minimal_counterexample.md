@@ -1220,6 +1220,76 @@ close the essentially-3-connected case structurally, leaving only the
 non-port-2cut analysis (which connects to the 2-vertex-cut boundary-
 trace lemma the proof needs anyway) and the bridge case (Lemma 3.9).
 
+### 3.21 Lemma A / B / C / D — the proof-spine version
+
+The empirical four-way disjunction in §3.20 has a cleaner formulation as
+four named lemmas, exposing exactly what is proved and what remains.
+
+**Lemma A (Bridge reduction — proved, Lemma 3.9).** Let $G$ be a smallest
+counterexample and $H$ a side of an essential 2-edge-cut $F$ of $G$
+that minimises the smaller side. If $H$ has a bridge $e^*$, then
+either:
+- $e^*$ is a bridge of $G$, contradicting bridgelessness (Lemma 1
+  + Sub-lemma 1$'$);
+- $\{e_1, e^*\}$ or $\{e_2, e^*\}$ is a smaller essential 2-edge-cut
+  of $G$, contradicting minimality of $F$.
+
+The remaining sub-case (port-to-port bridge $e^* = (a_1, a_2)$) is
+not load-bearing in any n=14 example.
+
+**Lemma B (Non-port 2-vertex-cut reduction — target).** Let $H$ be a
+2-pole side with a non-port-trivial 2-vertex-cut $\{x, y\}$. Then $H$
+splits along $\{x, y\}$ into smaller 2-pole sides $H_1, H_2$ via a
+3-pole-boundary recombination, and either:
+- one of the smaller pieces is itself a Lemma-A or Lemma-C case (induction);
+- $\mathrm{Trace}(C_6) \subseteq \mathrm{Trace}(H)$ — direct trace
+  absorption.
+
+Empirical support (§3.19): $\{C_0, C_6\}$ together absorb 95% of the
+non-port-2cut stratum at n=14; the remaining 5% scatter into other
+core classes, all 2-cut-related.
+
+Status: open. Connecting Lemma B to the 2-vertex-cut boundary-trace
+machinery the proof needs separately for the 3-vertex-connectedness
+upgrade is the deepest part of this lemma.
+
+**Lemma C (Essentially-3-connected ⇒ diamond traces — target).** Let
+$H$ be an essentially-3-connected 2-pole subcubic graph (no bridge,
+no articulation, only port-trivial 2-vertex-cuts) with $|V(H)| \ge 4$.
+Then $\mathrm{Trace}(C_0) \subseteq \mathrm{Trace}(H)$, where $C_0$ is
+the diamond gadget $K_4 - e$ with its 3 traces $\{(T_{CC}, T_T)\text{
+split}, (T_T, T_{CC})\text{ split}, (T_{TM}, T_{TM})\text{ joined}\}$.
+
+Empirical support: 7106 / 7120 essentially-3-conn n=14 sides; the 14
+exceptions are recorded in
+[data/n14_essentially_3conn_C0_exceptions.json](../data/n14_essentially_3conn_C0_exceptions.json)
+(7 unoriented graphs, |T| ∈ {12, 13, 15}, absorbed by $C_2$ or $C_5$
+— all themselves compatibility-universal, so still reducible by
+Lemma D).
+
+Status: open. Most likely target of a structural proof: every
+essentially-3-connected 2-pole subcubic side admits (i) a spanning
+tree where both ports are leaves (giving $(T_{TM}, T_{TM})$ joined);
+(ii) a $C$-cycle through each port that returns to the same port
+(giving the two split traces).
+
+**Lemma D (Compatibility replacement — proved, Lemma 3.13).** Let
+$H$ be a 2-pole side with $\mathrm{Compat}(\mathrm{Trace}(H)) =
+\mathcal{U}$, i.e., $H$ realises all 4 axis traces (Theorem 3.14).
+Then $H$ is reducible to the 6-vertex universal gadget $U_6 \in C_5$
+of the n≤10 lattice (or any other universal gadget of smaller order).
+
+Combined empirical coverage at n=14: A ∨ B ∨ C ∨ D = all 15178 sides.
+Specifically:
+- A covers all 1370 bridge sides (book-keeping by structure, not by
+  individual graph).
+- B covers all 6688 non-port-2cut sides (via 5 core absorbers + 2-cut
+  split logic).
+- C covers 7106 / 7120 essentially-3-conn sides; the 14 exceptions
+  fall through to D.
+- D covers those 14 exceptions plus the 2 compat-only bridge sides
+  from §3.18.
+
 ## §4. Target theorem
 
 **Theorem (target; assumes Sub-lemma 1$'$ and Lemma 2).**

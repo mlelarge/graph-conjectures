@@ -1,0 +1,221 @@
+{
+  "absorber_breakdown": {
+    "C2": 10,
+    "C5": 4
+  },
+  "count": 14,
+  "description": "The 14 essentially-3-connected n=14 oriented sides NOT absorbed by C0.",
+  "distinct_unoriented_graphs": 7,
+  "records": [
+    {
+      "absorbing_class_id": "C5",
+      "absorbing_class_min_order": 12,
+      "absorbing_class_trace_count": 4,
+      "graph6": "M??CB?WDU_OoI_PG?",
+      "is_compatibility_universal": true,
+      "is_trace_contained": true,
+      "ports": [
+        2,
+        4
+      ],
+      "status": "trace_contained",
+      "structural_class": "essentially_3conn",
+      "trace_count": 12
+    },
+    {
+      "absorbing_class_id": "C5",
+      "absorbing_class_min_order": 12,
+      "absorbing_class_trace_count": 4,
+      "graph6": "M??CB?WDU_OoI_PG?",
+      "is_compatibility_universal": true,
+      "is_trace_contained": true,
+      "ports": [
+        4,
+        2
+      ],
+      "status": "trace_contained",
+      "structural_class": "essentially_3conn",
+      "trace_count": 12
+    },
+    {
+      "absorbing_class_id": "C5",
+      "absorbing_class_min_order": 12,
+      "absorbing_class_trace_count": 4,
+      "graph6": "M??CB?WPU_EOB_gG?",
+      "is_compatibility_universal": true,
+      "is_trace_contained": true,
+      "ports": [
+        4,
+        5
+      ],
+      "status": "trace_contained",
+      "structural_class": "essentially_3conn",
+      "trace_count": 12
+    },
+    {
+      "absorbing_class_id": "C5",
+      "absorbing_class_min_order": 12,
+      "absorbing_class_trace_count": 4,
+      "graph6": "M??CB?WPU_EOB_gG?",
+      "is_compatibility_universal": true,
+      "is_trace_contained": true,
+      "ports": [
+        5,
+        4
+      ],
+      "status": "trace_contained",
+      "structural_class": "essentially_3conn",
+      "trace_count": 12
+    },
+    {
+      "absorbing_class_id": "C2",
+      "absorbing_class_min_order": 10,
+      "absorbing_class_trace_count": 4,
+      "graph6": "M??CB?WSRGT?B_`G?",
+      "is_compatibility_universal": true,
+      "is_trace_contained": true,
+      "ports": [
+        3,
+        6
+      ],
+      "status": "trace_contained",
+      "structural_class": "essentially_3conn",
+      "trace_count": 13
+    },
+    {
+      "absorbing_class_id": "C2",
+      "absorbing_class_min_order": 10,
+      "absorbing_class_trace_count": 4,
+      "graph6": "M??CB?WSRGT?B_`G?",
+      "is_compatibility_universal": true,
+      "is_trace_contained": true,
+      "ports": [
+        6,
+        3
+      ],
+      "status": "trace_contained",
+      "structural_class": "essentially_3conn",
+      "trace_count": 13
+    },
+    {
+      "absorbing_class_id": "C2",
+      "absorbing_class_min_order": 10,
+      "absorbing_class_trace_count": 4,
+      "graph6": "M??CB?WSUGT?H_BG?",
+      "is_compatibility_universal": true,
+      "is_trace_contained": true,
+      "ports": [
+        3,
+        6
+      ],
+      "status": "trace_contained",
+      "structural_class": "essentially_3conn",
+      "trace_count": 13
+    },
+    {
+      "absorbing_class_id": "C2",
+      "absorbing_class_min_order": 10,
+      "absorbing_class_trace_count": 4,
+      "graph6": "M??CB?WSUGT?H_BG?",
+      "is_compatibility_universal": true,
+      "is_trace_contained": true,
+      "ports": [
+        6,
+        3
+      ],
+      "status": "trace_contained",
+      "structural_class": "essentially_3conn",
+      "trace_count": 13
+    },
+    {
+      "absorbing_class_id": "C2",
+      "absorbing_class_min_order": 10,
+      "absorbing_class_trace_count": 4,
+      "graph6": "M??CB?WXB_PGB_`G?",
+      "is_compatibility_universal": true,
+      "is_trace_contained": true,
+      "ports": [
+        3,
+        6
+      ],
+      "status": "trace_contained",
+      "structural_class": "essentially_3conn",
+      "trace_count": 13
+    },
+    {
+      "absorbing_class_id": "C2",
+      "absorbing_class_min_order": 10,
+      "absorbing_class_trace_count": 4,
+      "graph6": "M??CB?WXB_PGB_`G?",
+      "is_compatibility_universal": true,
+      "is_trace_contained": true,
+      "ports": [
+        6,
+        3
+      ],
+      "status": "trace_contained",
+      "structural_class": "essentially_3conn",
+      "trace_count": 13
+    },
+    {
+      "absorbing_class_id": "C2",
+      "absorbing_class_min_order": 10,
+      "absorbing_class_trace_count": 4,
+      "graph6": "M??ED@OBCSF?DGWC?",
+      "is_compatibility_universal": true,
+      "is_trace_contained": true,
+      "ports": [
+        5,
+        7
+      ],
+      "status": "trace_contained",
+      "structural_class": "essentially_3conn",
+      "trace_count": 15
+    },
+    {
+      "absorbing_class_id": "C2",
+      "absorbing_class_min_order": 10,
+      "absorbing_class_trace_count": 4,
+      "graph6": "M??ED@OBCSF?DGWC?",
+      "is_compatibility_universal": true,
+      "is_trace_contained": true,
+      "ports": [
+        7,
+        5
+      ],
+      "status": "trace_contained",
+      "structural_class": "essentially_3conn",
+      "trace_count": 15
+    },
+    {
+      "absorbing_class_id": "C2",
+      "absorbing_class_min_order": 10,
+      "absorbing_class_trace_count": 4,
+      "graph6": "M?AA@AOY@c@WPOaG?",
+      "is_compatibility_universal": true,
+      "is_trace_contained": true,
+      "ports": [
+        3,
+        5
+      ],
+      "status": "trace_contained",
+      "structural_class": "essentially_3conn",
+      "trace_count": 13
+    },
+    {
+      "absorbing_class_id": "C2",
+      "absorbing_class_min_order": 10,
+      "absorbing_class_trace_count": 4,
+      "graph6": "M?AA@AOY@c@WPOaG?",
+      "is_compatibility_universal": true,
+      "is_trace_contained": true,
+      "ports": [
+        5,
+        3
+      ],
+      "status": "trace_contained",
+      "structural_class": "essentially_3conn",
+      "trace_count": 13
+    }
+  ]
+}
