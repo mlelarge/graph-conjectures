@@ -5,15 +5,23 @@
 <article class="prose">
 <h1>About</h1>
 
-<p>This site is a browseable index of open problems in graph theory, derived from the
-<a href="http://www.openproblemgarden.org/category/graph_theory">graph theory category of the Open Problem Garden</a>.</p>
+<p>This site is a browseable, status-annotated index of graph-theory conjectures.
+It combines the <a href="http://www.openproblemgarden.org/category/graph_theory">graph theory category of the Open Problem Garden</a>
+with conjectures extracted from recent arXiv papers by a curated set of graph theorists.</p>
+
+<p>The merged index contains {{ problem_count }} OPG problems and {{ arxiv_count }} arXiv-extracted conjectures.
+Each reviewed item is classified as <code>open</code>, <code>partial</code>, <code>solved</code>,
+<code>disproved</code>, or <code>unclear</code>. The <a href="{{ root }}timeline/">timeline</a>
+shows {{ timeline_count }} solved or disproved conjectures as horizontal intervals from
+first claimed year to proof or counterexample year.</p>
 
 <h2>Source &amp; licence</h2>
 <p>All problem statements, attributions, and bibliographies are reproduced from
 <a href="http://www.openproblemgarden.org">openproblemgarden.org</a> under the
 <a href="https://www.gnu.org/licenses/fdl-1.2.html">GNU Free Documentation License</a>.
-Each problem page links back to its canonical Open Problem Garden URL.
-This site itself is published under the same licence.</p>
+Each OPG problem page links back to its canonical Open Problem Garden URL.
+arXiv-derived records link back to their source paper via the arXiv abstract page.
+The project code is MIT licensed; data derived from OPG remains under the GFDL.</p>
 
 <h2>How it was built</h2>
 <ul>
@@ -21,16 +29,43 @@ This site itself is published under the same licence.</p>
 <li><code>scraper/parse.py</code> turns the cached HTML into one JSON record per problem (selectors and quirks documented in <code>PLAN.md</code> Appendix A). Math is preserved in its LaTeX form (extracted from the <code>alt</code> attribute of OPG's pre-rendered TeX images).</li>
 <li><code>scraper/erdos_index.py</code> indexes the graph-theory problems on <a href="https://www.erdosproblems.com/tags/graph%20theory">erdosproblems.com</a> for cross-referencing.</li>
 <li><code>scraper/intersect.py</code> identifies likely duplicates between the two sources via citation overlap and fuzzy statement matching. Confirmed matches are surfaced as <span class="badge erdos">EP #N</span> badges.</li>
-<li><code>scraper/build.py</code> renders Jinja2 templates over the JSON into the static HTML you are reading. Math is typeset client-side by <a href="https://katex.org">KaTeX</a>.</li>
+<li>The arXiv pipeline harvests paper metadata, downloads available HTML/PDF content, extracts conjectures, deduplicates them, and reviews each conjecture's current status.</li>
+<li><code>scraper/build.py</code> renders Jinja2 templates over the JSON into the static HTML you are reading, including the merged index, per-item pages, author/tag pages, and resolved timeline. Math is typeset client-side by <a href="https://katex.org">KaTeX</a>.</li>
 </ul>
 
 <h2>Stats</h2>
 <ul>
-<li>{{ problem_count }} problems indexed</li>
+<li>{{ problem_count + arxiv_count }} total index rows: {{ problem_count }} OPG and {{ arxiv_count }} arXiv</li>
+<li>OPG review statuses:
+{% for s in ['open','partial','solved','disproved','unclear'] -%}
+  {% if review_status_counts.get(s) -%}
+    <span class="status-badge status-{{ s }}">{{ s }} {{ review_status_counts[s] }}</span>
+  {%- endif %}
+{%- endfor %}
+</li>
+<li>arXiv review statuses:
+{% for s in ['open','partial','solved','disproved','unclear'] -%}
+  {% if arxiv_review_status_counts.get(s) -%}
+    <span class="status-badge status-{{ s }}">{{ s }} {{ arxiv_review_status_counts[s] }}</span>
+  {%- endif %}
+{%- endfor %}
+</li>
+<li>{{ timeline_count }} solved or disproved conjectures on the resolved timeline:
+{% for source in ['opg','arxiv'] -%}
+  {% if timeline_source_counts.get(source) -%}
+    <span class="badge source source-{{ source }}">{{ source }} {{ timeline_source_counts[source] }}</span>
+  {%- endif %}
+{%- endfor %}
+</li>
 <li>{{ category_count }} distinct subject / keyword / author categories</li>
 <li>{{ erdos_match_count }} cross-references to erdosproblems.com</li>
 <li>Last build: {{ build_date }}</li>
 </ul>
+
+<h2>Review caveat</h2>
+<p>The status reviews are automated literature reviews with verified cited URLs.
+They are designed as a research aid and should be spot-checked before being used
+as definitive mathematical or bibliographic claims.</p>
 
 <h2>Inspiration</h2>
 <p>Layout is inspired by Thomas Bloom's <a href="https://www.erdosproblems.com">erdosproblems.com</a>.</p>
