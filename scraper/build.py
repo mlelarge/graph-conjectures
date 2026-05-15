@@ -405,7 +405,10 @@ def main(argv: list[str] | None = None) -> int:
                     "score": m.get("score", 0),
                     "confirmed": bool(m.get("manual_confirmed")),
                 }
-            sub_dir = arxiv_dir / row["safe_id"]
+            # Use review_id (<safe_id>__<NN>) so papers with multiple conjectures
+            # get one page per conjecture instead of overwriting each other.
+            page_slug = row.get("_review_id") or row["safe_id"]
+            sub_dir = arxiv_dir / page_slug
             sub_dir.mkdir(parents=True, exist_ok=True)
             (sub_dir / "index.html").write_text(
                 ax_template.render(

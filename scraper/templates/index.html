@@ -51,7 +51,7 @@
 <tr data-search="{{ p._search }}{% if p._review %} status:{{ p._review.status }}{% endif %}" data-source="{{ p._source }}">
   <td>
     {% if p._source == 'arxiv' %}
-      <a href="arxiv/{{ p.safe_id }}/">{{ p.title }}</a>
+      <a href="arxiv/{{ p._review_id or p.safe_id }}/">{{ p.title }}</a>
     {% else %}
       <a href="op/{{ p.slug }}/">{{ p.title }}</a>
     {% endif %}

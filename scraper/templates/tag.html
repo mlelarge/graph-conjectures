@@ -21,7 +21,7 @@
 <tr>
   <td>
     {% if p._source == 'arxiv' %}
-      <a href="{{ root }}arxiv/{{ p.safe_id }}/">{{ p.title }}</a>
+      <a href="{{ root }}arxiv/{{ p._review_id or p.safe_id }}/">{{ p.title }}</a>
     {% else %}
       <a href="{{ root }}op/{{ p.slug }}/">{{ p.title }}</a>
     {% endif %}
