@@ -89,21 +89,24 @@ three "natural" partitions of any 2-pole subcubic side:
   2-edge-connected 2-pole subcubic graph with enough internal
   structure (a deletion argument suffices for $|V(H)| \ge 4$).
 
-**Forcing lemma candidate (Lemma C₀):**
+**Forcing lemma candidate (Lemma C₀/D):**
 
 > Let $H$ be an essentially-3-connected 2-pole subcubic graph with
-> $|V(H)| \ge 4$. Then $\mathrm{Trace}(C_0) \subseteq \mathrm{Trace}(H)$.
+> $|V(H)| \ge 4$. Then either
+> $\mathrm{Trace}(C_0) \subseteq \mathrm{Trace}(H)$, or
+> $\mathrm{Trace}(H)$ is compatibility-universal.
 
-Empirical support at $n = 14$: 7106 / 7120 essentially-3-connected
-sides satisfy this, with only 14 exceptions (absorbed by $C_2$ or
-$C_5$ instead). The 14 exceptions are candidates for explicit
-structural analysis (see §"Open: the 14 essentially-3-connected
-exceptions" below).
+Empirical support at $n = 14$: all 7120 essentially-3-connected sides
+satisfy this dichotomy. The $C_0$ branch covers 7106; the remaining 14
+exceptions are compatibility-universal and are absorbed by $C_2$ or
+$C_5$. Those 14 exceptions are candidates for explicit structural
+analysis (see §"Open: the 14 essentially-3-connected exceptions" below).
 
-A proof of Lemma C₀ would close the essentially-3-connected stratum
-almost entirely, reducing the proof problem to bridges (Lemma 3.9),
-non-port-2cuts (Lemma C₆ candidate below), and the 14 finite
-exceptions plus their analogues at higher $n$.
+A proof of Lemma C₀/D would close the essentially-3-connected stratum,
+reducing the proof problem to bridges (Lemma 3.9) and non-port-2cuts
+(Lemma C₆ candidate below). The old stronger claim
+"essentially-3-connected implies $C_0$ containment" is false at n=14:
+the 14 explicit exceptions are exactly the obstruction.
 
 ### $C_6$ — the non-port-2cut workhorse
 
@@ -245,6 +248,89 @@ analysis (see [docs/minimal_counterexample.md §3.7](minimal_counterexample.md))
 That $C_5$ absorbs 4 essentially-3-connected n=14 sides is interesting:
 those sides realise the same 4-trace pattern as the n=12 failure side,
 which is itself a bridge graph. Worth a closer look.
+
+## The single-trace obstruction at n=14
+
+Direct trace-set computation on each of the 7 unoriented essentially-3-
+connected n=14 exceptions reveals a sharp structural pattern:
+
+**Empirical Theorem (n ≤ 14, exhaustive).** For every essentially-3-
+connected 2-pole subcubic graph $H$ with $|V(H)| \le 14$, exactly one of
+the following holds:
+
+(C) $H$ realises all 3 of $C_0$'s traces:
+   $(T_{CC}, T_T)$ split, $(T_T, T_{CC})$ split, $(T_{TM}, T_{TM})$ joined
+   — 7106 / 7120 cases (99.80%).
+
+(D) $H$ realises $(T_{CC}, T_T)$ split AND $(T_T, T_{CC})$ split (so
+   two of $C_0$'s three traces) AND additionally $(M_{TT}, T_T)$ AND
+   $(T_T, M_{TT})$ (the two M-axis traces). $H$ misses **exactly**
+   $(T_{TM}, T_{TM})$ joined — 14 cases (0.20%).
+
+In branch (D), $H$ is compatibility-universal, satisfying all 4 axes
+through *different* port-state choices than $C_0$ uses:
+
+- TT_split: $(T_{CC}, T_T)$ split or $(T_T, T_{CC})$ split (from the
+  $C_0$ traces $H$ still realises);
+- TT_join: $(T_T, T_T)$ joined (a $V_T$-pure version), inherited from
+  $C_2$ or $C_5$ — the side's joined-$(T,T)$ axis is satisfied via
+  $V_T$ ports rather than the $V_M$-port version $C_0$ uses;
+- TM: $(T_T, M_{TT})$;
+- MT: $(M_{TT}, T_T)$.
+
+The 14 exceptions are absorbed by either $C_2$ (10 records, $|T|=4$:
+$\{(M_{TT}, T_T), (T_T, M_{TT}), (T_T, T_T)\text{ joined and split}\}$)
+or $C_5$ (4 records, $|T|=4$:
+$\{(M_{TT}, T_T), (T_T, M_{TT}), (T_T, T_T)\text{ joined},
+(T_{TM}, T_{TM})\text{ split}\}$). In both cases the absorbing class
+itself is compatibility-universal.
+
+**The 14 exceptions miss exactly the same single trace —
+$(T_{TM}, T_{TM})$ joined — and replace it with the more flexible
+$V_T$ versions plus M-boundary axes.**
+
+This is a much sharper statement than the original Lemma C
+"essentially-3-connected ⇒ $C_0$ containment". The proof target moves
+to:
+
+> **Refined Lemma C/D (target).** Let $H$ be essentially-3-connected
+> 2-pole subcubic. Either $H$ realises $(T_{TM}, T_{TM})$ joined, or
+> $H$ realises both M-axis traces $(M_{TT}, T_T)$ and $(T_T, M_{TT})$.
+
+Equivalently: failing the joined-matching trace forces the matching to
+"leak" to the boundary in both port-state-swapped versions. Reminiscent
+of matching-augmenting arguments in classical matching theory.
+
+### Structural fingerprints of the 7 exception graphs
+
+| graph6 | ports | absorber | shared nbr? | port dist. | girth | planar |
+|---|---|---|---|---:|---:|---|
+| `M??CB?WDU_OoI_PG?` | $(2,4)$ | $C_5$ | yes (12) | 2 | 3 | no |
+| `M??CB?WPU_EOB_gG?` | $(4,5)$ | $C_5$ | yes (12) | 2 | 3 | no |
+| `M??CB?WSRGT?B_`G?` | $(3,6)$ | $C_2$ | no | 4 | 3 | no |
+| `M??CB?WSUGT?H_BG?` | $(3,6)$ | $C_2$ | no | 5 | 3 | no |
+| `M??CB?WXB_PGB_`G?` | $(3,6)$ | $C_2$ | no | 4 | 4 | no |
+| `M??ED@OBCSF?DGWC?` | $(5,7)$ | $C_2$ | no | 4 | 3 | no |
+| `M?AA@AOY@c@WPOaG?` | $(3,5)$ | $C_2$ | no | 3 | 3 | no |
+
+Two structural sub-families:
+
+**Sub-family α** (2 graphs, $C_5$-absorbed): ports share exactly one
+neighbour (vertex 12 in both), and port-to-port distance is 2. The
+shared neighbour is a "bottleneck": every short $T_H$-path between
+the ports must traverse it. When both ports are forced into $V_M$
+state, the matching edges at the two ports are not free enough to
+let $T_H$ remain connected through this bottleneck.
+
+**Sub-family β** (5 graphs, $C_2$-absorbed): no shared neighbour,
+port-to-port distance 3–5. Failure of $(T_{TM}, T_{TM})$ joined here
+is *not* a bottleneck phenomenon — it is a "long-path" phenomenon
+where the matching structure on the two ports must use specific
+internal edges that disconnect $T_H$.
+
+Both sub-families recover via the M-axis traces, so they fall under
+Lemma D. Together they exhaust the n=14 evidence for the refined
+Lemma C/D dichotomy.
 
 ## Open: the 14 essentially-3-connected exceptions
 

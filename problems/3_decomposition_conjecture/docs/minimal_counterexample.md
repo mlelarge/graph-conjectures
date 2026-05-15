@@ -1253,25 +1253,76 @@ Status: open. Connecting Lemma B to the 2-vertex-cut boundary-trace
 machinery the proof needs separately for the 3-vertex-connectedness
 upgrade is the deepest part of this lemma.
 
-**Lemma C (Essentially-3-connected ⇒ diamond traces — target).** Let
-$H$ be an essentially-3-connected 2-pole subcubic graph (no bridge,
-no articulation, only port-trivial 2-vertex-cuts) with $|V(H)| \ge 4$.
-Then $\mathrm{Trace}(C_0) \subseteq \mathrm{Trace}(H)$, where $C_0$ is
-the diamond gadget $K_4 - e$ with its 3 traces $\{(T_{CC}, T_T)\text{
-split}, (T_T, T_{CC})\text{ split}, (T_{TM}, T_{TM})\text{ joined}\}$.
+**Lemma C (Essentially-3-connected dichotomy — target).** Let $H$ be an
+essentially-3-connected 2-pole subcubic graph (no bridge, no
+articulation, only port-trivial 2-vertex-cuts) with $|V(H)| \ge 4$.
+Then either $\mathrm{Trace}(C_0) \subseteq \mathrm{Trace}(H)$, where
+$C_0$ is the diamond gadget $K_4 - e$ with its 3 traces
+$\{(T_{CC}, T_T)\text{ split}, (T_T, T_{CC})\text{ split},
+(T_{TM}, T_{TM})\text{ joined}\}$, or $\mathrm{Trace}(H)$ is
+compatibility-universal.
 
-Empirical support: 7106 / 7120 essentially-3-conn n=14 sides; the 14
-exceptions are recorded in
+Empirical support: all 7120 essentially-3-conn n=14 sides satisfy this
+dichotomy. The $C_0$ branch covers 7106 / 7120; the 14 exceptions are
+recorded in
 [data/n14_essentially_3conn_C0_exceptions.json](../data/n14_essentially_3conn_C0_exceptions.json)
 (7 unoriented graphs, |T| ∈ {12, 13, 15}, absorbed by $C_2$ or $C_5$
 — all themselves compatibility-universal, so still reducible by
 Lemma D).
 
-Status: open. Most likely target of a structural proof: every
-essentially-3-connected 2-pole subcubic side admits (i) a spanning
-tree where both ports are leaves (giving $(T_{TM}, T_{TM})$ joined);
-(ii) a $C$-cycle through each port that returns to the same port
-(giving the two split traces).
+Status: open. The old stronger target "essentially-3-connected implies
+$C_0$ containment" is false at n=14. Direct trace-set computation on
+the 14 exceptions sharpens the target dramatically.
+
+**Sharper empirical pattern (n ≤ 14, exhaustive).** Every one of the
+14 essentially-3-connected exceptions misses **exactly the same**
+single C₀ trace: $(T_{TM}, T_{TM})$ joined. None misses any other.
+And each still realises the two M-axis traces $(M_{TT}, T_T)$ and
+$(T_T, M_{TT})$, plus a $V_T$-port version of the TT-joined axis
+($(T_T, T_T)$ joined) inherited from absorbing class $C_2$ or $C_5$.
+
+So the *real* dichotomy at n=14 is:
+
+> Every essentially-3-connected side either realises $(T_{TM}, T_{TM})$
+> joined (and hence all 3 $C_0$ traces), or realises both M-axis
+> traces $(M_{TT}, T_T)$ and $(T_T, M_{TT})$.
+
+**Sharper target (Refined Lemma C).** Let $H$ be essentially-3-
+connected 2-pole subcubic. Then:
+
+$$
+(T_{TM}, T_{TM})\text{ joined} \in \mathrm{Trace}(H)
+\quad \text{OR} \quad
+\{(M_{TT}, T_T), (T_T, M_{TT})\} \subseteq \mathrm{Trace}(H).
+$$
+
+This is a dichotomy between a single specific trace and two specific
+M-axis traces. It is *not* the abstract trace-containment of $C_0$
+versus compatibility-universality — it is much more local.
+
+**Proof seed.** Suppose $(T_{TM}, T_{TM})$ joined is not realisable.
+Then every partition with both ports in $V_M$ state (side $(T, M)$)
+has $T_H$ disconnected — the matching edges inside $H$ at the two
+ports separate the spanning tree. Conjecturally, a *matching-swap*
+turns this obstruction into an $M_{TT}$ realisation: take the M-edge
+inside $H$ at port 0 and swap it with the boundary edge, making port 0
+$M_{TT}$ (boundary $M$, side $(T, T)$). The newly-T side-edge then
+joins $T_H$ in a way that the original M-edge prevented; the rest of
+the partition adapts. The symmetric swap at port 1 gives $(T_T, M_{TT})$.
+
+This is reminiscent of augmenting-path arguments in matching theory.
+Concrete proof attempts are the next concrete deliverable.
+
+**Structural sub-families of the 14 exceptions** (see
+[docs/absorbing_core.md](absorbing_core.md)):
+
+- 2 graphs ($C_5$-absorbed): shared port-neighbour (a "bottleneck"
+  between the ports at distance 2);
+- 5 graphs ($C_2$-absorbed): no shared neighbour, port-distance ≥ 3.
+
+The sub-families fail $(T_{TM}, T_{TM})$ joined for *different*
+structural reasons, but both recover via the M-axis traces. The proof
+needs to handle both sub-families uniformly or via case analysis.
 
 **Lemma D (Compatibility replacement — proved, Lemma 3.13).** Let
 $H$ be a 2-pole side with $\mathrm{Compat}(\mathrm{Trace}(H)) =
@@ -1285,10 +1336,9 @@ Specifically:
   individual graph).
 - B covers all 6688 non-port-2cut sides (via 5 core absorbers + 2-cut
   split logic).
-- C covers 7106 / 7120 essentially-3-conn sides; the 14 exceptions
-  fall through to D.
-- D covers those 14 exceptions plus the 2 compat-only bridge sides
-  from §3.18.
+- C's $C_0$ branch covers 7106 / 7120 essentially-3-conn sides; its
+  compatibility branch covers the 14 exceptions, via Lemma D.
+- D also covers the 2 compat-only bridge sides from §3.18.
 
 ## §4. Target theorem
 
