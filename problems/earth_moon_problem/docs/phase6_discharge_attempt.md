@@ -1100,6 +1100,43 @@ If the non-saturated $K_7$-chunk witness for $(7,3,1)$-merge-$(K_3, K_1)$
 is also non-biplanar, the partition is fully dead and Q0 closes there.
 Else we are back to a partition-specific structural argument.
 
+### 7.16 Fork C probe — a non-saturated $K_7$ witness survives
+
+Tested the natural balanced non-saturated $K_7$-chunk witness for
+partition $(7,3,1)$ with cross-merge $(K_3,K_1)$:
+
+- core: $K_7$;
+- outside: 7 vertices;
+- each outside vertex adjacent to 5 of the 7 core vertices, missing a
+  consecutive cyclic pair;
+- no outside-outside edges.
+
+This has
+
+$$
+n = 14,\qquad m = \binom{7}{2} + 7 \cdot 5 = 56.
+$$
+
+The SMS run used all-singleton initial partition cells, not a coarse
+`7,7` partition, because the missing-pair pattern is not invariant under
+the full product symmetry. Result:
+
+| graph | vertices | edges | biplanar? | wall |
+|---|---:|---:|---|---:|
+| $K_7$ plus 7 cyclic 5-neighbours | 14 | 56 | SAT | 0.011s |
+
+So Fork C's easiest hope fails. The saturated $K_7+\overline{K_5}$
+witness is non-biplanar, but a non-saturated high-only profile with the
+same total demand 35 is biplanar. Therefore partition $(7,3,1)$ is not
+killed by the same local-capacity method.
+
+**Conclusion.** The computational pivot does not currently produce a
+closed Q0 partition. To kill $(7,3,1)$ one would need an existential
+capacity theorem saying *every* 35-edge high-only profile from the
+$K_7$ chunk is non-biplanar, but the balanced cyclic profile is already
+a counterexample to that theorem. The remaining work returns to
+structural Forks A/B or to a different non-local constraint.
+
 ## Status
 
 Phase 6 is now reduced to two concrete combinatorial problems:
