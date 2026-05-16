@@ -5,6 +5,9 @@
 <article class="problem arxiv">
 <header>
   <h1>{{ p.title }}</h1>
+  {% if p._paper_label and p._paper_label != p.title %}
+  <p class="paper-label">{{ p._paper_label }} · arXiv:{{ p.arxiv_id }}</p>
+  {% endif %}
   <div class="meta">
     <span class="badge source source-arxiv">arXiv</span>
     <span class="kind">{{ p.kind }}</span>

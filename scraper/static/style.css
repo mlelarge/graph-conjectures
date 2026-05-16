@@ -234,6 +234,14 @@ section.lit-review .review-meta {
 .importance-medium { color: var(--muted); }
 .importance-low { color: #999; }
 
+/* arxiv-detail subtitle: paper-internal label + arxiv id under the nice name */
+.paper-label {
+  margin: -0.4rem 0 0.6rem;
+  font-size: 0.88rem;
+  color: var(--muted);
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+
 /* ---------- timeline ---------- */
 
 .timeline-page {

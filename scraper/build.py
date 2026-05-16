@@ -248,7 +248,12 @@ def _virtual_problem_from_arxiv(rec: dict) -> dict:
     """
     arxiv_id = rec.get("arxiv_id", "") or ""
     safe_id  = _safe_id_from_arxiv(arxiv_id)
-    title    = rec.get("title") or rec.get("paper_title") or arxiv_id
+    # Primary title: nice descriptive name from arxiv_name.py if available,
+    # else fall back to paper-internal label, else arxiv id. Paper-internal
+    # label is kept as `paper_label` so templates can render it as subtitle.
+    paper_label = rec.get("_paper_label") or rec.get("title") or ""
+    nice_name   = rec.get("_nice_name") or ""
+    title       = nice_name or paper_label or rec.get("paper_title") or arxiv_id
 
     paper_authors = rec.get("paper_authors") or []
 
@@ -317,6 +322,8 @@ def _virtual_problem_from_arxiv(rec: dict) -> dict:
         "_erdos":          None,
         "_review":         rec.get("_review"),
         "_review_id":      rec.get("_review_id"),
+        "_nice_name":      nice_name,
+        "_paper_label":    paper_label,
     }
 
 
@@ -433,8 +440,10 @@ def main(argv: list[str] | None = None) -> int:
     # Assign a stable review_id (<safe_id>__<NN>) to each states record by
     # paper-local index, then attach the matching arxiv review JSON if present.
     arxiv_reviews_dir = args.data_dir / "arxiv_reviews"
+    arxiv_names_dir   = args.data_dir / "arxiv_names"
     counters: dict[str, int] = {}
     n_reviews_attached = 0
+    n_names_attached   = 0
     for s in arxiv_states:
         sid = s.get("safe_id") or s.get("arxiv_id","").replace("/","_")
         idx = counters.get(sid, 0)
@@ -448,7 +457,20 @@ def main(argv: list[str] | None = None) -> int:
                     n_reviews_attached += 1
                 except Exception as e:  # noqa: BLE001
                     log.warning("could not load arxiv review %s: %s", rp.name, e)
-    log.info("attached %d arxiv reviews to states records", n_reviews_attached)
+        if arxiv_names_dir.exists():
+            np_ = arxiv_names_dir / f"{s['_review_id']}.json"
+            if np_.exists():
+                try:
+                    nd = json.loads(np_.read_text(encoding="utf-8"))
+                    nice = (nd.get("nice_name") or "").strip()
+                    if nice:
+                        s["_nice_name"]   = nice
+                        s["_paper_label"] = s.get("title","")
+                        n_names_attached += 1
+                except Exception as e:  # noqa: BLE001
+                    log.warning("could not load arxiv name %s: %s", np_.name, e)
+    log.info("attached %d arxiv reviews and %d nice names to states records",
+             n_reviews_attached, n_names_attached)
 
     # Manually-curated set of confirmed cross-refs to erdosproblems.com.
     confirmed_intersection_slugs = {

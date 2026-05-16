@@ -27,8 +27,10 @@ data/reviews/*.raw.json
 # arXiv pipeline ephemeral state
 data/arxiv_buckets/
 data/arxiv_review_buckets/
+data/arxiv_name_buckets/
 data/arxiv_failed.txt
 data/arxiv_review_failed.txt
+data/arxiv_name_failed.txt
 
 # Per-user Claude Code settings (settings.json is tracked separately)
 .claude/
