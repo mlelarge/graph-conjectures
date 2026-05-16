@@ -10,3 +10,6 @@ data/gadget_lattice_2pole_n12_both.jsonl
 # Superseded by data/n14_full.{jsonl,summary.json}
 data/n14_essential3conn_sample_sweep.json
 data/n14_essentially_3conn_full.summary.json
+
+# Intermediate n<=8 lattice JSON from lattice-build process (subsumed by n10/n12 lattices)
+data/gadget_lattice_2pole_n8_both.json
