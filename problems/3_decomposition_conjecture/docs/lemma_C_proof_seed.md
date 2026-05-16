@@ -196,25 +196,86 @@ Then:
 In either branch, $H$ is reducible: by $C_0$ in the joined branch, by
 Lemma 3.13 in the M-axis branch.
 
-## 5. Next deliverable
+## 5. Empirical test of the simple swap on the 7 exception graphs
 
-The structural seed is in place. To convert to a real proof:
+Computed via `/tmp/test_swap_mechanism.py`: for each of the 7 essentially-
+3-conn n=14 C₀-exception graphs, enumerate every $(T_{TM}, T_{TM})$ split
+partition; for each, identify $w_0, w_1$ (the M-side-edge neighbours)
+and check whether they are in the opposite T-components from their
+respective ports.
 
-1. **Prove the cycle-bypass lemma rigorously** — Step 3 of the §1
-   sketch needs the matching-leaf-spanning-tree existence proof.
-   This is plausibly true for any 2-edge-connected subcubic graph
-   on $\ge 4$ vertices via ear decomposition.
+| graph6 | split parts | $w_0 \in B$ | $w_1 \in A$ | BOTH |
+|---|---:|---:|---:|---:|
+| `M??CB?WDU_OoI_PG?` | 28 | 22 | 22 | **16** |
+| `M??CB?WPU_EOB_gG?` | 18 | 10 | 16 | **8** |
+| `M??CB?WSRGT?B_`G?` | 8 | 8 | **0** | **0** |
+| `M??CB?WSUGT?H_BG?` | 8 | 8 | **0** | **0** |
+| `M??CB?WXB_PGB_`G?` | 12 | 12 | **0** | **0** |
+| `M??ED@OBCSF?DGWC?` | 12 | 6 | 6 | **0** |
+| `M?AA@AOY@c@WPOaG?` | 8 | 6 | 6 | **4** |
 
-2. **Test the simple swap on the 7 exception graphs**. For each:
-   compute one $(T_{TM}, T_{TM})$ split partition $\sigma$;
-   inspect $w_0, w_1$; check whether $w_0 \in B$ and $w_1 \in A$.
-   This is one script.
+**Key observation.** The simple double-swap (requiring $w_0 \in B$
+AND $w_1 \in A$ in the same partition) succeeds on **4 of 7** exception
+graphs, **fails on 3** ($M??CB?WSRGT,\ M??CB?WSUGT,\ M??CB?WXB$ —
+each has 0 BOTH-feasible partitions despite all single-port swaps
+having $w_0 \in B$).
 
-3. **Generalise the swap to handle Case (b)** if needed — by
-   demoting a T-edge on the cycle and showing the demotion is
-   admissible.
+In the 3 "hard" graphs, every $(T_{TM}, T_{TM})$ split partition has
+$w_1 \in B$ (port 1's M-edge has both endpoints inside $B$, the
+T-component of port 1). The swap at port 1 would create a cycle in
+$T_H$; the simple swap mechanism does not produce $(M_{TT}, T_T)$.
 
-4. **Run the dichotomy check on the 7106 $C_0$-contained sides**
-   to verify: when $(T_{TM}, T_{TM})$ joined is realisable, is it
-   *always* via a partition compatible with the swap mechanism?
-   This would confirm the mechanism is the underlying invariant.
+But the trace $(M_{TT}, T_T)$ IS realised in these 3 graphs — they
+are absorbed by $C_2$, which contains $(M_{TT}, T_T)$. So the trace
+exists; it is just **not obtainable by simple swap from any
+$(T_{TM}, T_{TM})$ split partition**.
+
+The realising $(M_{TT}, T_T)$ partition has a structurally different
+$T_H$ (spanning tree on 13 edges with port 0 and port 1 both of
+degree 2), not obtainable as a local modification of any split
+$(T_{TM}, T_{TM})$ realisation.
+
+## 6. Implications for Lemma C
+
+The simple-swap mechanism is **not sufficient** as the universal
+mechanism. Lemma C needs either:
+
+(i) **A more global swap construction** — possibly via an alternating
+    path argument that handles the cycle-creation by demoting a
+    T-edge on the cycle (Case (b) of the original swap lemma);
+
+(ii) **An independent construction** for $(M_{TT}, T_T)$ — directly
+    finding a spanning tree of $H$ with both ports having degree 2,
+    plus a compatible cotree decomposition.
+
+For the 3 "hard" graphs, route (ii) is the only path: their split
+$(T_{TM}, T_{TM})$ partitions structurally cannot be transformed
+into $(M_{TT}, T_T)$ by a local edge swap.
+
+**Structural observation about the 3 hard graphs.** All three have
+identical port set $\{3, 6\}$ in `M??CB?WSRGT...`, `M??CB?WSUGT...`,
+`M??CB?WXB...` — three closely-related 14-vertex graphs (the prefix
+`M??CB?W` is shared). Their structural relationship suggests they may
+be a localised family where port 1's neighbourhood traps the matching.
+
+## 7. Next deliverable (revised)
+
+1. **Prove the cycle-bypass lemma rigorously** (§1).
+
+2. **Run the dichotomy check on the 7106 $C_0$-contained sides** to
+   confirm that for them, simple-swap *would* succeed if applied —
+   the simple swap is the "regular" mechanism and the 3 hard graphs
+   are an exceptional pattern.
+
+3. **Find the structurally-different mechanism for $(M_{TT}, T_T)$
+   in the 3 hard graphs**. Direct enumeration of valid
+   $(M_{TT}, T_T)$ partitions and inspection of their structure.
+
+4. **Identify the structural feature** that distinguishes the 4
+   "swap-feasible" exceptions from the 3 "swap-hard" exceptions.
+   The 3 hard graphs share the prefix `M??CB?WS` (vs the 4
+   feasible: `M??CB?WD`, `M??CB?WP`, `M??ED@O`, `M?AA@AO`); is there
+   a common subgraph structure?
+
+5. **Generalise Lemma C statement** to allow both swap-derivable and
+   independent realisations.
