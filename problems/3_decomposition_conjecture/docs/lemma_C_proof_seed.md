@@ -215,10 +215,11 @@ respective ports.
 | `M?AA@AOY@c@WPOaG?` | 8 | 6 | 6 | **4** |
 
 **Key observation.** The simple double-swap (requiring $w_0 \in B$
-AND $w_1 \in A$ in the same partition) succeeds on **4 of 7** exception
-graphs, **fails on 3** ($M??CB?WSRGT,\ M??CB?WSUGT,\ M??CB?WXB$ —
-each has 0 BOTH-feasible partitions despite all single-port swaps
-having $w_0 \in B$).
+AND $w_1 \in A$ in the same partition) succeeds on **3 of 7** exception
+graphs (the three with BOTH > 0:
+$M??CB?WDU$ at 16/28, $M??CB?WPU$ at 8/18, $M?AA@AOY$ at 4/8) and
+**fails on 4** ($M??CB?WSRGT,\ M??CB?WSUGT,\ M??CB?WXB,\ M??ED@OBCSF$
+— each has 0 BOTH-feasible partitions).
 
 In the 3 "hard" graphs, every $(T_{TM}, T_{TM})$ split partition has
 $w_1 \in B$ (port 1's M-edge has both endpoints inside $B$, the

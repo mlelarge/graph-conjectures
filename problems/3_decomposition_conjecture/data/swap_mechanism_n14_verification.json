@@ -1,0 +1,97 @@
+{
+  "description": "Empirical test of simple-swap mechanism on n=14 C0-exception graphs",
+  "claim_tested": "For each (T_TM, T_TM) split partition sigma, w_0 in B AND w_1 in A would give a simple double-swap to (M_TT, T_T).",
+  "summary": {
+    "graphs_checked": 7,
+    "swap_feasible_graphs": 4,
+    "swap_hard_graphs": 3,
+    "hard_graphs_share_prefix": "M??CB?WS"
+  },
+  "per_graph": [
+    {
+      "graph6": "M??CB?WDU_OoI_PG?",
+      "ports": [
+        2,
+        4
+      ],
+      "split_partitions": 28,
+      "w0_in_B": 22,
+      "w1_in_A": 22,
+      "both": 16,
+      "feasible": true
+    },
+    {
+      "graph6": "M??CB?WPU_EOB_gG?",
+      "ports": [
+        4,
+        5
+      ],
+      "split_partitions": 18,
+      "w0_in_B": 10,
+      "w1_in_A": 16,
+      "both": 8,
+      "feasible": true
+    },
+    {
+      "graph6": "M??CB?WSRGT?B_`G?",
+      "ports": [
+        3,
+        6
+      ],
+      "split_partitions": 8,
+      "w0_in_B": 8,
+      "w1_in_A": 0,
+      "both": 0,
+      "feasible": false
+    },
+    {
+      "graph6": "M??CB?WSUGT?H_BG?",
+      "ports": [
+        3,
+        6
+      ],
+      "split_partitions": 8,
+      "w0_in_B": 8,
+      "w1_in_A": 0,
+      "both": 0,
+      "feasible": false
+    },
+    {
+      "graph6": "M??CB?WXB_PGB_`G?",
+      "ports": [
+        3,
+        6
+      ],
+      "split_partitions": 12,
+      "w0_in_B": 12,
+      "w1_in_A": 0,
+      "both": 0,
+      "feasible": false
+    },
+    {
+      "graph6": "M??ED@OBCSF?DGWC?",
+      "ports": [
+        5,
+        7
+      ],
+      "split_partitions": 12,
+      "w0_in_B": 6,
+      "w1_in_A": 6,
+      "both": 0,
+      "feasible": false
+    },
+    {
+      "graph6": "M?AA@AOY@c@WPOaG?",
+      "ports": [
+        3,
+        5
+      ],
+      "split_partitions": 8,
+      "w0_in_B": 6,
+      "w1_in_A": 6,
+      "both": 4,
+      "feasible": true
+    }
+  ],
+  "conclusion": "Simple-swap is NOT universal. 3 of 7 (and likely 4 of 7 -- M??ED has 0 BOTH too) require either cycle-breaking T-edge demotion or an independent (M_TT, T_T) construction."
+}

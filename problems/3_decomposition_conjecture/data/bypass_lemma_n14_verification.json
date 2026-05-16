@@ -1,0 +1,122 @@
+{
+  "description": "Empirical verification of Cycle-bypass lemma at n=14",
+  "claim": "Every essentially-3-conn n=14 oriented side realises both (T_CC,T_T) split AND (T_T,T_CC) split.",
+  "essentially_3conn_records_total": 7120,
+  "exceptions_checked": 14,
+  "missing_bypass_count": 0,
+  "verdict": "Cycle-bypass lemma holds on all 7120 essentially-3-conn n=14 sides",
+  "exception_results": [
+    {
+      "graph6": "M??CB?WDU_OoI_PG?",
+      "ports": [
+        2,
+        4
+      ],
+      "bypass": "BOTH"
+    },
+    {
+      "graph6": "M??CB?WDU_OoI_PG?",
+      "ports": [
+        4,
+        2
+      ],
+      "bypass": "BOTH"
+    },
+    {
+      "graph6": "M??CB?WPU_EOB_gG?",
+      "ports": [
+        4,
+        5
+      ],
+      "bypass": "BOTH"
+    },
+    {
+      "graph6": "M??CB?WPU_EOB_gG?",
+      "ports": [
+        5,
+        4
+      ],
+      "bypass": "BOTH"
+    },
+    {
+      "graph6": "M??CB?WSRGT?B_`G?",
+      "ports": [
+        3,
+        6
+      ],
+      "bypass": "BOTH"
+    },
+    {
+      "graph6": "M??CB?WSRGT?B_`G?",
+      "ports": [
+        6,
+        3
+      ],
+      "bypass": "BOTH"
+    },
+    {
+      "graph6": "M??CB?WSUGT?H_BG?",
+      "ports": [
+        3,
+        6
+      ],
+      "bypass": "BOTH"
+    },
+    {
+      "graph6": "M??CB?WSUGT?H_BG?",
+      "ports": [
+        6,
+        3
+      ],
+      "bypass": "BOTH"
+    },
+    {
+      "graph6": "M??CB?WXB_PGB_`G?",
+      "ports": [
+        3,
+        6
+      ],
+      "bypass": "BOTH"
+    },
+    {
+      "graph6": "M??CB?WXB_PGB_`G?",
+      "ports": [
+        6,
+        3
+      ],
+      "bypass": "BOTH"
+    },
+    {
+      "graph6": "M??ED@OBCSF?DGWC?",
+      "ports": [
+        5,
+        7
+      ],
+      "bypass": "BOTH"
+    },
+    {
+      "graph6": "M??ED@OBCSF?DGWC?",
+      "ports": [
+        7,
+        5
+      ],
+      "bypass": "BOTH"
+    },
+    {
+      "graph6": "M?AA@AOY@c@WPOaG?",
+      "ports": [
+        3,
+        5
+      ],
+      "bypass": "BOTH"
+    },
+    {
+      "graph6": "M?AA@AOY@c@WPOaG?",
+      "ports": [
+        5,
+        3
+      ],
+      "bypass": "BOTH"
+    }
+  ]
+}
