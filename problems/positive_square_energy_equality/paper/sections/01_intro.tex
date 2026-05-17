@@ -1,0 +1,152 @@
+\section{Introduction}\label{sec:intro}
+
+\subsection{The conjecture}\label{sec:intro:conjecture}
+
+For a finite simple graph $\graph$ on $n$ vertices, let
+$\lambda_{1}(\graph) \ge \cdots \ge \lambda_{n}(\graph)$ be the
+eigenvalues of the adjacency matrix $\Adj(\graph)$, and write
+\[
+\splus(\graph) \;:=\; \sum_{\lambda_{i}(\graph) > 0} \lambda_{i}(\graph)^{2},
+\qquad
+\sminus(\graph) \;:=\; \sum_{\lambda_{i}(\graph) < 0} \lambda_{i}(\graph)^{2}
+\]
+for the \emph{positive} and \emph{negative square energies} of $\graph$.
+The trace identity $\splus(\graph) + \sminus(\graph) = 2|E(\graph)|$
+ties the two functionals together.
+
+\begin{conjecture}[Akbari--Kumar--Mohar--Pragada--Zhang
+\cite{AKMPZ2025}, Conjecture~9.2]\label{conj:92}
+Let $\graph$ be a connected graph of order $n$. Then:
+\begin{enumerate}[label=(\roman*)]
+\item $\splus(\graph) = n - 1$ if and only if $\graph$ is a tree;
+\item $\sminus(\graph) = n - 1$ if and only if $\graph$ is a tree or
+the complete graph $K_{n}$.
+\end{enumerate}
+\end{conjecture}
+
+The forward implications are elementary: trees are bipartite, so their
+spectrum is symmetric about $0$ and hence $\splus(T) = \sminus(T) =
+|E(T)| = n - 1$; and the spectrum of $K_{n}$ is $\{n - 1, -1, \ldots, -1\}$,
+giving $\sminus(K_{n}) = n - 1$. The reverse implications are the
+substantive content of \Cref{conj:92}.
+
+The conjecture sits inside the broader \emph{positive-square-energy
+programme} initiated by Elphick--Farber--Goldberg--Wocjan
+\cite{EFGW2016}, who proposed the (still open) inequality
+$\min\{\splus(\graph), \sminus(\graph)\} \ge n - 1$ for every connected
+graph. Substantial partial progress is available: the $3n/4$ lower
+bound of Akbari--Kumar--Mohar--Pragada \cite{AKMP2024}; the
+asymmetry analysis of Elphick--Linz \cite{ElphickLinz2023} explaining
+why $\sminus$ tends to be the binding side; the failure of
+edge-monotonicity of $\splus$, $\sminus$ documented by Tang--Liu--Wang
+\cite{TLW2024}. The source paper \cite{AKMPZ2025} refines EFGW into
+\Cref{conj:92} as the next granular target.
+
+\subsection{What this paper does, and what it does not do}\label{sec:intro:scope}
+
+We are explicit about what this paper does and does not do.
+
+\emph{What this paper does.} It closes subfamily cases of the
+$2$-tree slice of \Cref{conj:92} via three different techniques:
+closed-form spectrum (books, \Cref{thm:books}), Szeg\H{o} asymptotics
+plus a Demmel--Kahan a-posteriori certificate
+(\Cref{thm:2path-szego,thm:2path-DK} for $2$-paths), and a
+Stieltjes-transform identification of the half-line boundary spectral
+measure (\Cref{thm:2path-stieltjes,thm:moment-form-stieltjes}). It
+reformulates the residual obstruction as a precise moment-form
+joint-invariant condition (\Cref{cnj:joint-invariant}), with structural
+condition~(a) and spectral condition~(b). It closes condition~(a) on
+two subfamilies (books and $2$-paths in the asymptotic limit) plus the
+common-spine-edge characterisation of books
+(\Cref{prop:common-edge-books}), and produces a two-sided
+Cauchy--Schwarz structural lower bound (\Cref{lem:cs-two-sided}) that
+falls $\approx 0.016$ short of $\threshold$ at the corpus worst case.
+It rigorously cordons off where the proof stops, and documents ten
+failure modes from the search programme
+(\Cref{sec:failure-modes}, \Cref{app:fixtures}).
+
+\emph{What this paper does not do.} It does not close \Cref{conj:92},
+even on $2$-trees. Two critical-path items remain: the slot-shift sum
+bound on condition~(b) (\Cref{prob:slot-shift}), and the
+structural-sufficiency gap of $\approx 0.016$ on condition~(a) for
+general $2$-trees (\Cref{prob:general-a}). The reduction map of
+\Cref{sec:lprime:reduction} routes $\Lprime$ on $2$-trees through the
+two-conjunct ansatz: condition~(a) (\Cref{cond:a}) gives
+$\Ivs \ge \threshold$ at the max-degsum ear, and condition~(b)
+(\Cref{cond:b}) lifts that to $\dminus(\maxdeg) \in [17/16, 47/16]$.
+Without both, the chain breaks. Consequently, closing \Cref{conj:92}
+on $2$-trees via the infrastructure of this paper requires closing
+\emph{both} \Cref{prob:slot-shift} \emph{and} \Cref{prob:general-a}
+(or supplying an independent bridge that bypasses one of the two
+conditions).
+
+\subsection{Contributions}\label{sec:intro:contributions}
+
+Our main contributions, in the order they appear in the body of the paper:
+
+\begin{enumerate}[label={\textbf{C\arabic*.}},leftmargin=*,itemsep=2pt]
+\item Corollaries~A and~B of Conjecture~9.2(i) for connected claw-free
+graphs and for diameter-$\le 2$ graphs (\Cref{sec:notation}).
+\item The closed-form formula
+$\dminus(\Bk) = 2 - 4/(\sqrt{8k+1} + \sqrt{8k-7})$ on the book family
+(\Cref{sec:subfamily:books}).
+\item The Szeg\H{o} Ces\`aro closed form
+$\lim_{n} \sminus(\Ln)/n = (32\pi - 27\sqrt{3})/(12\pi) \approx 1.4262$
+on the $2$-path family (\Cref{sec:subfamily:2path-szego}). The
+first-difference companion $\dminus(\Ln) \to c_{1}^{-}$ is supported
+empirically on $n \le 200$ (\Cref{rem:2path-first-difference}); the
+asymptotic first-difference limit is recorded as an open subobligation
+(O13.1). Separately, an engineering-rigorous finite-range lower bound
+$\dminus(\Ln) \ge 21/16$ on $n \in [4, 1000]$ is established by a
+Demmel--Kahan a-posteriori certificate, conditional on a conservative
+\texttt{dsyevd} backward-error envelope (\Cref{thm:2path-DK}).
+\item The $\BTkt{k}{2}$ bad-ear asymptotic
+$\dminus_{\infty}(\mathrm{BT}) \approx 1.0353 < 17/16$, falsifying the
+universal ear-deletion form of $\Lprime$ (\Cref{sec:subfamily:BT}).
+\item A Demmel--Kahan a-posteriori certificate giving
+$\dminus(\Ln) \ge 17/16 + 1/4$ for every $n \in [4, 1000]$ conditional on
+the conservative \texttt{dsyevd} backward-error envelope
+(\Cref{sec:subfamily:2path-finite}).
+\item The existential ear-selection lemma $\Lprime$ as the
+reformulation of Conjecture~9.2 for $2$-trees
+(\Cref{sec:lprime}).
+\item The max-degsum selector and the joint-invariant candidate
+$\Iv = \Wm + (\Monem)^{2}/\Mtwom$ at threshold $\threshold = 0.4122$,
+robust on a $1063$-graph corpus (\Cref{sec:moment-form:candidate}).
+\item Lemma~B1: a Rayleigh-quotient lower bound on
+$\lambda_{\min}(\Adj(\graph))^{2}$ in terms of $(\Wm, \Monem)$ alone,
+tight on books (\Cref{sec:moment-form:lemma-B1}).
+\item A two-sided Cauchy--Schwarz structural lower bound on $\Iv$
+(\Cref{lem:cs-two-sided}) using $\Mone = 2$, $\|\earw\|^{2} = 2$, and
+$\Mtwo = \degsum(v) + 2|T_{ab}(\Hgraph)|$; corpus-uniform value
+$\approx 0.396$, falling $\approx 0.016$ short of $\threshold$
+(\Cref{sec:moment-form:cs-two-sided}).
+\item The common-spine-edge characterisation: if every maximal
+triangle of $\graph$ contains a fixed edge $\{a, b\}$ then $\graph$ is
+the book $B_{n-2}$, and the page ear satisfies the closed form
+$\Iv = 2 - 2/\sqrt{8(n-2) - 7} \ge 4/3$ (\Cref{prop:common-edge-books}).
+\item Partial results on condition~(b) at Case-B max-degsum ears:
+the analytical bound $\alpha_{\min}^{2} \ge 1$ via Lemma~B1 plus a
+moment sufficient condition (\Cref{lem:bminor-amin}), and an
+empirical census $\dminus(\maxdeg) \ge 1.2941$ across $2{,}235$
+corpus records (\Cref{prop:bminor-census}). The analytical
+$\dminus(\maxdeg) \ge 1$ claim is \emph{not} established
+(\Cref{rem:bminor-gap}; cf.\ \Cref{rem:bminor-F11}).
+\item The Stieltjes-transform identification
+$\lim_{n \to \infty} I(\Ln, \maxdeg) = \Iinf{L}$ as an explicit
+theorem (\Cref{sec:subfamily:2path-stieltjes,sec:moment-form:stieltjes}).
+\item A failure-modes appendix documenting ten specific dead ends
+with reproducible witnesses (\Cref{sec:failure-modes}), including the
+discovery that the $2$-path is \emph{not} the universal binding case
+for $\Iv$ (F10).
+\end{enumerate}
+
+\subsection{Outline}\label{sec:intro:outline}
+
+\Cref{sec:notation} fixes notation and proves Corollaries~A and~B.
+\Cref{sec:lprime} introduces $\Lprime$ and the max-degsum selector.
+\Cref{sec:subfamily} proves the subfamily theorems (Contributions
+C2--C5 and C10). \Cref{sec:moment-form} develops the moment-form ansatz
+framework (Contributions C7--C10). \Cref{sec:failure-modes} documents
+failure modes (Contribution~C11). \Cref{sec:open-problems} isolates the
+two remaining open critical-path items.

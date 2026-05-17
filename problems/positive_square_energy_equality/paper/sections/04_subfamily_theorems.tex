@@ -1,0 +1,847 @@
+\section{Subfamily theorems}\label{sec:subfamily}
+
+This section proves $\Lprime$ unconditionally on books. On $2$-paths
+we prove the Ces\`aro square-energy identity
+$\sminus(\Ln)/n \to c_{1}^{-}$ (\Cref{thm:2path-szego}); the
+companion ear-gain statement $\dminus(\Ln) \to c_{1}^{-}$ is
+\emph{not} proved at the asymptotic first-difference level (open
+subobligation O13.1, \Cref{rem:2path-first-difference}). For
+$n \in [4, 1000]$ we give an engineering-rigorous finite-range
+floor $\dminus(\Ln) \ge 21/16$ via a Demmel--Kahan a-posteriori
+certificate, conditional on a conservative \texttt{dsyevd}
+backward-error envelope (\Cref{thm:2path-DK}). On the $\BTkt{k}{2}$
+family we exhibit the bad-tail-ear asymptotic that refutes the
+\emph{universal} ear-deletion form of $\Lprime$
+(\Cref{thm:BT-asymptotic}, \Cref{cor:universal-false}). The
+existential $\Lprime$ on $\BTkt{k}{2}$ (via the max-degsum selector,
+which picks a clean book-page ear) is verified empirically on the
+working corpus; we do not claim an analytical closure of $\Lprime$ on
+the full $\BTkt{k}{2}$ family in this paper. The Stieltjes-transform
+identification of the $2$-path negative-spectrum measure is in
+\Cref{sec:subfamily:2path-stieltjes}; its use in proving condition~(a)
+of the joint-invariant ansatz on the $2$-path family is deferred to
+\Cref{sec:moment-form:stieltjes}. (\emph{Caveat:} the $2$-path is
+\emph{not} the universal binding case for $\Iv$ at finite~$n$; see F10
+in \Cref{sec:failure-modes}.)
+
+\subsection{Books \texorpdfstring{$\Bk$}{B\_k}}\label{sec:subfamily:books}
+
+The book $\Bk$ (also written $K_{1, 1, k}$) is the $2$-tree on $k + 2$
+vertices consisting of $k$ triangles sharing a common edge $\{a, b\}$;
+its non-spine vertices $p_{1}, \ldots, p_{k}$ (the \emph{pages}) are
+pairwise non-adjacent simplicial vertices of degree $2$, with supporting
+edge $\{a, b\}$.
+
+\begin{theorem}[Closed form on books]\label{thm:books}
+For every $k \ge 2$, every page ear $v$ of $\Bk$ satisfies
+\[
+\dminus(\Bk) \;=\; 2 - \frac{4}{\sqrt{8k+1} + \sqrt{8k-7}},
+\qquad
+\dplus(\Bk) \;=\; 2 + \frac{4}{\sqrt{8k+1} + \sqrt{8k-7}}.
+\]
+Both gains lie in $[17/16, 47/16]$ for every $k \ge 2$. The minimum is
+$\dminus(B_{2}) = (7 - \sqrt{17})/2 \approx 1.4385$ at $k = 2$, and
+$\dminus(\Bk) \uparrow 2$ as $k \to \infty$.
+\end{theorem}
+
+\begin{proof}
+We first compute the spectrum of $\Adj(\Bk)$. The book has the natural
+symmetries $a \leftrightarrow b$ (spine swap) and $S_{k}$
+(page permutation), inducing an orthogonal decomposition of
+$\mathbb{R}^{k+2}$ into three invariant subspaces:
+\begin{enumerate}
+\item The \emph{page-antisymmetric} subspace
+$\{x : x_{a} = x_{b} = 0, \sum_{i} x_{p_{i}} = 0\}$, of dimension
+$k - 1$. For any such $x$, $(\Adj(\Bk) x)_{a} = x_{b} + \sum_{i} x_{p_{i}} = 0$,
+$(\Adj(\Bk) x)_{b} = x_{a} + \sum_{i} x_{p_{i}} = 0$, and
+$(\Adj(\Bk) x)_{p_{i}} = x_{a} + x_{b} = 0$. Hence this subspace lies
+in $\ker \Adj(\Bk)$, contributing eigenvalue $0$ with multiplicity
+$k - 1$.
+
+\item The \emph{spine-antisymmetric} subspace
+$\{x : x_{a} = -x_{b}, x_{p_{i}} = 0 \text{ for all } i\}$, of
+dimension $1$. For $x = e_{a} - e_{b}$ we compute
+$(\Adj(\Bk) x)_{a} = -1 = -x_{a}$, $(\Adj(\Bk) x)_{b} = 1 = -x_{b}$,
+$(\Adj(\Bk) x)_{p_{i}} = 0$. So $\Adj(\Bk)(e_{a} - e_{b}) = -(e_{a} - e_{b})$,
+giving eigenvalue $-1$ with multiplicity $1$.
+
+\item The \emph{symmetric} subspace
+$\{x : x_{a} = x_{b}, x_{p_{1}} = \cdots = x_{p_{k}}\}$, of
+dimension $2$, spanned by $e_{a} + e_{b}$ and $\sum_{i} e_{p_{i}}$.
+In the orthonormal basis
+$u_{1} := (e_{a} + e_{b})/\sqrt{2}$,
+$u_{2} := (\sum_{i} e_{p_{i}})/\sqrt{k}$, the restriction of
+$\Adj(\Bk)$ is
+$
+\begin{pmatrix}
+1 & \sqrt{2k} \\
+\sqrt{2k} & 0
+\end{pmatrix},
+$
+with characteristic polynomial $\lambda^{2} - \lambda - 2k = 0$ and
+roots $\lambda_{\pm} = (1 \pm \sqrt{8k + 1})/2$.
+\end{enumerate}
+Combining,
+\[
+\spec(\Adj(\Bk)) \;=\;
+\Bigl\{ \tfrac{1 + \sqrt{8k+1}}{2},\; \underbrace{0, \ldots, 0}_{k-1},\;
+-1,\; \tfrac{1 - \sqrt{8k+1}}{2} \Bigr\}.
+\]
+For $k \ge 1$ both $-1$ and $(1 - \sqrt{8k+1})/2 \le -1$ are
+negative, so
+\[
+\sminus(\Bk) \;=\; 1 + \left(\tfrac{1 - \sqrt{8k+1}}{2}\right)^{2}
+\;=\; 1 + \tfrac{1}{4}\bigl(1 - 2\sqrt{8k+1} + 8k + 1\bigr)
+\;=\; \tfrac{1}{2}\bigl(4k + 3 - \sqrt{8k+1}\bigr).
+\]
+
+The page-ear deletion $\Bk - v = B_{k-1}$ for any page vertex $v$, so
+$\sminus(B_{k} - v) = \sminus(B_{k-1}) = \tfrac{1}{2}(4(k-1) + 3 - \sqrt{8(k-1)+1})
+= \tfrac{1}{2}(4k - 1 - \sqrt{8k-7})$. Subtracting,
+\[
+\dminus(\Bk) \;=\; \sminus(\Bk) - \sminus(B_{k-1})
+\;=\; \tfrac{1}{2}\bigl[(4k + 3) - (4k - 1) - \sqrt{8k+1} + \sqrt{8k-7}\bigr]
+\;=\; 2 - \tfrac{1}{2}\bigl(\sqrt{8k+1} - \sqrt{8k-7}\bigr).
+\]
+Rationalising the difference of square roots,
+$\sqrt{8k+1} - \sqrt{8k-7} = 8/(\sqrt{8k+1} + \sqrt{8k-7})$, giving
+\[
+\dminus(\Bk) \;=\; 2 - \frac{4}{\sqrt{8k+1} + \sqrt{8k-7}},
+\]
+as stated. The companion formula
+$\dplus(\Bk) = 4 - \dminus(\Bk) = 2 + 4/(\sqrt{8k+1} + \sqrt{8k-7})$
+follows from the trace identity $\dplus + \dminus = 2 \deg_{\Bk}(v) = 4$.
+
+For monotonicity, $\sqrt{8k+1} + \sqrt{8k-7}$ is strictly increasing in
+$k$, so $\dminus(\Bk)$ is strictly increasing and $\dminus(\Bk) \uparrow 2$
+as $k \to \infty$. The minimum at $k = 2$ is
+$\dminus(B_{2}) = 2 - 4/(\sqrt{17} + 3) = 2 - (4(\sqrt{17} - 3))/(17 - 9)
+= 2 - (\sqrt{17} - 3)/2 = (7 - \sqrt{17})/2 \approx 1.4385$.
+
+For the gain bounds in $[17/16, 47/16]$: $\dminus(\Bk)$ is bounded below
+by its minimum $(7 - \sqrt{17})/2 \approx 1.4385 > 17/16 = 1.0625$ and
+above by $\sup_{k} \dminus(\Bk) = 2 < 47/16 = 2.9375$. By the trace
+identity, $\dplus(\Bk) = 4 - \dminus(\Bk)$ is bounded below by
+$4 - 2 = 2 > 17/16$ (since $\dminus(\Bk) < 2$) and above by
+$4 - \dminus(B_{2}) = (1 + \sqrt{17})/2 \approx 2.5616 < 47/16$. Hence
+both gains lie in $[17/16, 47/16]$ for every $k \ge 2$.
+\end{proof}
+
+\begin{corollary}\label{cor:books-Lprime}
+$\Lprime$ holds unconditionally on the book family $\Bk$ for every
+$k \ge 2$, with any page vertex as the witness ear.
+\end{corollary}
+
+\begin{proof}
+Every page vertex $v$ is a simplicial degree-$2$ ear of $\Bk$ and
+satisfies $\dminus(\Bk) \ge 17/16$ and $\dplus(\Bk) \ge 17/16$ by
+\Cref{thm:books}.
+\end{proof}
+
+\subsection{$2$-paths \texorpdfstring{$\Ln$}{L\_n}: the Szeg\H{o} limit}\label{sec:subfamily:2path-szego}
+
+The $2$-path $\Ln$ is the square of the path graph $P_{n}$: the vertex
+set is $\{1, \ldots, n\}$, and $i \sim j$ iff $|i - j| \in \{1, 2\}$.
+The adjacency matrix $\Adj(\Ln)$ is symmetric pentadiagonal Toeplitz
+with first row $(0, 1, 1, 0, \ldots, 0)$ and symbol
+\[
+f(\theta) \;=\; 2 \cos\theta + 2 \cos 2\theta \;=\; 2(2\cos\theta - 1)(\cos\theta + 1),
+\]
+the second equality from $\cos 2\theta = 2\cos^{2}\theta - 1$. The
+zeros of $f$ on $[0, \pi]$ are $\theta = \pi/3$ and $\theta = \pi$, and
+$f$ is negative on $(\pi/3, \pi)$. The maximum is $f(0) = 4$ and the
+minimum is $f(\arccos(-1/4)) = -9/4$.
+
+The two simplicial degree-$2$ ears of $\Ln$ are the endpoints $v = 1$
+and $v = n$, which are mapped to each other by the reflection
+$i \mapsto n + 1 - i$ and are therefore isomorphic. We write
+$\dminus(\Ln) := \dminus(1)$ and $\dplus(\Ln) := \dplus(1)$.
+
+\begin{theorem}[Szeg\H{o} Ces\`aro limit on $2$-paths]\label{thm:2path-szego}
+With the notation above,
+\[
+\lim_{n \to \infty} \frac{\sminus(\Ln)}{n}
+\;=\; \frac{32 \pi - 27 \sqrt{3}}{12 \pi}
+\;=:\; c_{1}^{-}
+\;\approx\; 1.4262,
+\qquad
+\lim_{n \to \infty} \frac{\splus(\Ln)}{n}
+\;=\; \frac{16 \pi + 27 \sqrt{3}}{12 \pi}
+\;=:\; c_{1}^{+}
+\;\approx\; 2.5738,
+\]
+both strictly inside $(17/16, 47/16)$. Numerically the
+first differences $\dminus(\Ln)$ converge to $c_{1}^{-}$ along the
+sequence, attaining their (empirically verified) minimum $\approx 1.319$
+at $n = 6$ before increasing monotonically toward $c_{1}^{-}$ (see
+\Cref{rem:2path-first-difference}).
+\end{theorem}
+
+\begin{proof}
+By Szeg\H{o}'s first theorem for banded Hermitian Toeplitz matrices
+\cite{GrenanderSzego1958, BottcherSilbermann}, for every continuous
+$\phi : \mathbb{R} \to \mathbb{R}$,
+\[
+\lim_{n \to \infty} \frac{1}{n} \tr\,\phi\bigl(\Adj(\Ln)\bigr)
+\;=\; \frac{1}{2\pi}\int_{-\pi}^{\pi} \phi\bigl(f(\theta)\bigr)\, d\theta.
+\]
+The function $\phi(\lambda) = \lambda^{2} \mathbf{1}_{\lambda < 0}$ is
+continuous on the bounded spectrum $[f_{\min}, f_{\max}] = [-9/4, 4]$
+(the would-be discontinuity at $\lambda = 0$ is removable because
+$\phi(0^{-}) = 0 = \phi(0) = \phi(0^{+})$). Szeg\H{o}'s first theorem
+therefore gives
+\[
+\lim_{n \to \infty} \frac{\sminus(\Ln)}{n}
+\;=\; \frac{1}{2\pi} \int_{-\pi}^{\pi} f(\theta)^{2}\,
+\mathbf{1}_{f(\theta) < 0}\, d\theta
+\;=\; \frac{1}{\pi} \int_{\pi/3}^{\pi} f(\theta)^{2}\, d\theta,
+\]
+where the second equality uses the evenness of $f$ and the sign
+pattern $\mathbf{1}_{f < 0} = \mathbf{1}_{(\pi/3, \pi)}$ on $(0, \pi)$.
+
+The theorem statement uses Ces\`aro limits, which are immediate from
+the above. The first-difference convergence
+$\dminus(\Ln) \to c_{1}^{-}$ does \emph{not} follow from the
+leading-order Szeg\H{o} theorem alone (a sequence $a_{n}$ with
+$a_{n}/n \to c$ need not satisfy $a_{n} - a_{n-1} \to c$); it is
+treated separately in \Cref{rem:2path-first-difference} below.
+
+Expand $f(\theta)^{2} = (2\cos\theta + 2\cos 2\theta)^{2}
+= 4\cos^{2}\theta + 8\cos\theta\cos 2\theta + 4\cos^{2}2\theta$.
+Using the product-to-sum identity
+$\cos\theta \cos 2\theta = (\cos\theta + \cos 3\theta)/2$ and the
+half-angle identities $2\cos^{2}\theta = 1 + \cos 2\theta$,
+$2\cos^{2} 2\theta = 1 + \cos 4\theta$, we obtain
+\[
+f(\theta)^{2} \;=\; 4 + 2\cos 2\theta + 2\cos 4\theta + 4\cos\theta + 4\cos 3\theta.
+\]
+Term-by-term integration over $(\pi/3, \pi)$:
+\[
+\int_{\pi/3}^{\pi} 4\, d\theta = \tfrac{8\pi}{3}, \quad
+\int_{\pi/3}^{\pi} 2\cos 2\theta\, d\theta = -\tfrac{\sqrt{3}}{2}, \quad
+\int_{\pi/3}^{\pi} 2\cos 4\theta\, d\theta = \tfrac{\sqrt{3}}{4},
+\]
+\[
+\int_{\pi/3}^{\pi} 4\cos\theta\, d\theta = -2\sqrt{3}, \quad
+\int_{\pi/3}^{\pi} 4\cos 3\theta\, d\theta = 0.
+\]
+Summing,
+\[
+\int_{\pi/3}^{\pi} f(\theta)^{2}\, d\theta
+\;=\; \tfrac{8\pi}{3} - \tfrac{\sqrt{3}}{2} + \tfrac{\sqrt{3}}{4} - 2\sqrt{3}
+\;=\; \tfrac{8\pi}{3} - \tfrac{9\sqrt{3}}{4}
+\;=\; \tfrac{32\pi - 27\sqrt{3}}{12}.
+\]
+Dividing by $\pi$ gives $c_{1}^{-} = (32\pi - 27\sqrt{3})/(12\pi)$.
+The companion formula for $c_{1}^{+}$ follows from the per-step trace
+identity $\dplus(\Ln) + \dminus(\Ln) = 2\deg_{\Ln}(1) = 4$ at every
+finite $n \ge 2$, which Ces\`aro-averages to
+$\splus(\Ln)/n + \sminus(\Ln)/n \to 4$ (a consistency check: this
+also follows from the Szeg\H{o}--Parseval identity, since
+$f(\theta) = e^{i\theta} + e^{-i\theta} + e^{2i\theta} + e^{-2i\theta}$
+has exactly four unit Fourier coefficients, so
+$(1/\pi) \int_{0}^{\pi} f(\theta)^{2}\, d\theta = \sum |\hat{f}(k)|^{2} = 4$).
+Hence $c_{1}^{+} = 4 - c_{1}^{-} = (16\pi + 27\sqrt{3})/(12\pi)$.
+
+Both Ces\`aro limits lie strictly inside $(17/16, 47/16) \approx (1.063, 2.938)$.
+\end{proof}
+
+\begin{remark}[First-difference convergence $\dminus(\Ln) \to c_{1}^{-}$]
+\label{rem:2path-first-difference}
+The first-difference convergence $\dminus(\Ln) \to c_{1}^{-}$ is the
+sharper companion statement to the Ces\`aro identity proved above. It
+is verified in this paper at three independent levels.
+\begin{enumerate}[label=(\roman*)]
+\item \emph{Empirically.} The harness
+\texttt{tests/test\_two\_path\_widom\_tightness.py} computes
+$\dminus(\Ln)$ at every $n \in [4, 200]$ via direct \texttt{eigvalsh}
+and asserts $|\dminus(L_{200}) - c_{1}^{-}| < 10^{-3}$, with the
+sequence approaching $c_{1}^{-}$ monotonically from below after its
+worst case $\dminus(L_{6}) \approx 1.3190$.
+\item \emph{Finitely-rigorously up to $n = 1000$.} The
+Demmel--Kahan certificate of \Cref{thm:2path-DK} gives the bound
+$\dminus(\Ln) \ge 17/16 + 1/4$ uniformly across $n \in [4, 1000]$ with
+slack $\sim 0.257$, and the propagated forward-error bound on
+$\dminus$ is $\le 1.42 \cdot 10^{-4}$.
+\item \emph{Asymptotically.} The bordering identity
+$\Adj(\Ln) = \bigl(\begin{smallmatrix} 0 & \earw^{\top} \\ \earw &
+\Adj(L_{n-1}) \end{smallmatrix}\bigr)$ with $\earw = e_{1} + e_{2}$,
+together with the weak convergence
+$\mu_{w, n} \to \mu_{w, \infty}$ proved in
+\Cref{thm:2path-stieltjes} and the no-atom-at-$0$ property of
+$\mu_{w, \infty}$ (\Cref{thm:2path-stieltjes}, Step~4), heuristically
+identifies the limit as the second-moment integral of
+$\mu_{w, \infty}$ on the negative branch. A fully rigorous limit-value
+proof at the first-difference level requires either a
+Bogoya--B\"ottcher--Grudsky-type finite-$n$ expansion extended past
+the simple-loop hypothesis (F9, \Cref{rem:simple-loop}) or a
+Birman--Yafaev / Krein--Lifshitz spectral-shift-function argument
+\cite{BirmanYafaev1993} for the rank-one bordering; neither is
+necessary for any later argument in this paper, since the closure of
+$\Lprime$ on $2$-paths at finite~$n$ is delivered by
+\Cref{thm:2path-DK} (Demmel--Kahan) and the closure of condition~(a)
+in the asymptotic limit is delivered by \Cref{thm:moment-form-stieltjes}
+via the spectral measure $\mu_{w, \infty}$, not via $\dminus(\Ln)$.
+We therefore record the first-difference convergence
+$\dminus(\Ln) \to c_{1}^{-}$ as a proposition-level statement supported
+by (i)--(ii) above with the asymptotic identification at
+the level of $\sminus(\Ln)/n$; the formal first-difference limit proof
+is listed as open subobligation O13.1 of \Cref{rem:simple-loop}.
+\end{enumerate}
+\end{remark}
+
+\begin{remark}[Failure mode F9: simple-loop hypothesis]\label{rem:simple-loop}
+The standard Bogoya--B\"ottcher--Grudsky \cite{BBG2015} /
+Avram--Parter \cite{AvramParter1988} / Widom-type effective constants
+for finite-$n$ corrections to Szeg\H{o}'s theorem require a
+\emph{simple-loop} symbol — $f$ traces the unit circle once without
+singularities. The pentadiagonal symbol
+$f(\theta) = 2\cos\theta + 2\cos 2\theta$ has zeros at \emph{both} the
+interior point $\theta = \pi/3$ and the boundary $\theta = \pi$, so
+the simple-loop hypothesis fails. This affects the convergence
+\emph{rate} in \Cref{thm:2path-szego} (recorded as open subobligation
+O13.1 in \Cref{sec:open-problems}) but does not affect the limit value
+displayed above, which follows from the unmodified Szeg\H{o} theorem.
+\end{remark}
+
+\subsection{$\BTkt{k}{2}$: a structured counterexample}\label{sec:subfamily:BT}
+
+The family $\BTkt{k}{2}$ is the $2$-tree on $n = k + 4$ vertices with:
+\begin{itemize}
+\item book-spine vertices $0, 1$,
+\item book pages $2, 3, \ldots, k+1$ (each adjacent to both $0$ and $1$),
+\item first tail vertex $k+2$, adjacent to $0$ and $2$ (forming the
+triangle $\{0, 2, k+2\}$ on the supporting edge $\{0, 2\}$),
+\item second tail vertex $k+3$, adjacent to $2$ and $k+2$ (forming the
+triangle $\{2, k+2, k+3\}$ on the supporting edge $\{2, k+2\}$).
+\end{itemize}
+The clique tree of $\BTkt{k}{2}$ consists of a star of $k$ ``page''
+triangles $\{0, 1, j\}$ for $j \in \{2, \ldots, k+1\}$ around the
+spine edge $\{0, 1\}$, plus a length-$2$ tail chain
+$\{0, 2, k+2\}, \{2, k+2, k+3\}$ glued at the page triangle
+$\{0, 1, 2\}$ through the shared edge $\{0, 2\}$. The tail simplicial
+ear is $v_{\mathrm{tail}} := k + 3$, with neighbours $\{2, k+2\}$.
+
+\begin{proposition}[Bad-ear asymptotic on $\BTkt{k}{2}$ -- computational / asymptotic evidence; conditional on the secular-rate subobligation]
+\label{thm:BT-asymptotic}
+With the notation above, conditional on the secular-equation rate
+subobligation $a_{\pm} - b_{\pm} = O(1/\sqrt{k})$ (the
+leading-eigenvalue square-cancellation step that controls the
+$\sqrt{2k}$ contribution from the embedded book block; sketched in the
+proof below),
+\[
+\lim_{k \to \infty} \dminus(v_{\mathrm{tail}})
+\;=\; 4 - \alpha^{2} + \beta^{2}
+\;\approx\; 1.0353,
+\]
+where $\alpha$ is the unique \emph{positive} root of
+$P_{G}(x) := 2x^{3} - 7x - 3 = 0$ ($\alpha \approx 2.0565$) and
+$\beta$ is the unique \emph{positive} root of
+$P_{H}(x) := 2x^{3} + 2x^{2} - 3x - 2 = 0$ ($\beta \approx 1.1246$).
+Each cubic has three distinct real roots; we take the largest in each
+case. The equitable-partition reduction to the $6 \times 6$ (resp.\
+$5 \times 5$) quotient matrix, the cubic interior limits, and the
+numerical limit value are derived in full; the leading-eigenvalue
+square-cancellation step is presented at the level of a secular
+equation but not fully closed (see the proof below). The full
+derivation is regression-locked numerically by
+\texttt{tests/test\_lprime\_subfamilies.py}.
+\end{proposition}
+
+\begin{proof}[Proof sketch]
+The non-tail pages $3, 4, \ldots, k+1$ of $\BTkt{k}{2}$ are pairwise
+interchangeable by an $S_{k-1}$ symmetry (each is adjacent only to
+$\{0, 1\}$, with no triangle through any pair). Set $m := k - 1$ and
+decompose $\mathbb{R}^{k+4}$ into the $(m - 1)$-dimensional
+\emph{page-trace-zero} subspace
+$\{x : x_{0} = x_{1} = x_{2} = x_{k+2} = x_{k+3} = 0,\ \sum_{j=3}^{k+1} x_{j} = 0\}$,
+which lies in $\ker \Adj(\BTkt{k}{2})$ by the same argument as in
+\Cref{thm:books}, and its $6$-dimensional orthogonal complement
+spanned by
+\[
+e_{0},\quad e_{1},\quad e_{2},\quad
+u_{P} := m^{-1/2} \sum_{j=3}^{k+1} e_{j},\quad
+e_{k+2},\quad e_{k+3}.
+\]
+In this basis $\Adj(\BTkt{k}{2})$ restricts to the symmetric
+$6 \times 6$ matrix
+\[
+M_{G}(m)
+\;=\;
+\begin{pmatrix}
+0 & 1 & 1 & \sqrt{m} & 1 & 0 \\
+1 & 0 & 1 & \sqrt{m} & 0 & 0 \\
+1 & 1 & 0 & 0 & 1 & 1 \\
+\sqrt{m} & \sqrt{m} & 0 & 0 & 0 & 0 \\
+1 & 0 & 1 & 0 & 0 & 1 \\
+0 & 0 & 1 & 0 & 1 & 0
+\end{pmatrix},
+\]
+encoding the spine edge $\{0, 1\}$ (entry $M_{01} = 1$), the page
+adjacencies of vertex $2$ to both spines (entries $M_{02} = M_{12} = 1$),
+the page-cluster couplings $\sqrt{m}$ (entries $M_{03} = M_{13} = \sqrt{m}$
+from $\Adj e_{0} \cdot u_{P} = m^{-1/2} \sum_{j=3}^{k+1} 1 = \sqrt{m}$),
+the first tail triangle $\{0, 2, k+2\}$ (entries $M_{04} = M_{24} = 1$),
+and the second tail triangle $\{2, k+2, k+3\}$
+(entries $M_{25} = M_{45} = 1$). Deleting $v_{\mathrm{tail}}$ removes
+the last row and column, yielding a $5 \times 5$ matrix $M_{H}(m)$
+for the deleted graph $H = \BTkt{k}{2} - v_{\mathrm{tail}}$.
+
+By cofactor expansion along the $u_{P}$ row, the characteristic
+polynomials are
+\[
+\det(\lambda I - M_{G}(m))
+= \lambda^{6} - (2m + 7)\lambda^{4} - (2m + 6)\lambda^{3}
++ (7m + 3)\lambda^{2} + (10m + 2)\lambda + 3m,
+\]
+\[
+\det(\lambda I - M_{H}(m))
+= \lambda^{5} - (2m + 5)\lambda^{3} - (2m + 4)\lambda^{2}
++ 3m\lambda + 2m.
+\]
+The leading-order eigenvalues scale as $\pm\sqrt{2m}\,(1 + o(1))$
+(the page-cluster modes coming from the $\sqrt{m}$ couplings to
+$u_{P}$); the remaining interior eigenvalues converge to finite
+limits.
+
+The interior limit for $M_{G}$ is obtained by writing the eigenvector
+as $(v_{0}, v_{1}, v_{2}, v_{P}, T_{1}, T_{2})$, using $v_{0} + v_{1} \to 0$
+from the $u_{P}$-row at leading order, and substituting into the
+remaining rows; the consistency reduces to the cubic
+$P_{G}(\lambda) = 2\lambda^{3} - 7\lambda - 3 = 0$, plus a separate
+limiting eigenvalue $\lambda \to -1$ as $m \to \infty$ from the
+spine-antisymmetric direction (book-page swap; this is not an exact
+eigenvalue of $M_{G}(m)$ at finite $m$). The interior limit for $M_{H}$ similarly reduces to
+$P_{H}(\lambda) = 2\lambda^{3} + 2\lambda^{2} - 3\lambda - 2 = 0$.
+
+By Vieta on $P_{G}$: $\sum \rho_{i} = 0$, $\sum \rho_{i} \rho_{j} = -7/2$,
+so $\sum \rho_{i}^{2} = 7$. By Vieta on $P_{H}$:
+$\sum \sigma_{i} = -1$, $\sum \sigma_{i}\sigma_{j} = -3/2$, so
+$\sum \sigma_{i}^{2} = 4$. The trace identity gives
+\[
+\dminus(v_{\mathrm{tail}})
+\;=\; 2 \deg_{\BTkt{k}{2}}(v_{\mathrm{tail}}) - \dplus(v_{\mathrm{tail}})
+\;=\; 4 - \dplus(v_{\mathrm{tail}}).
+\]
+We argue that $\dplus(v_{\mathrm{tail}}) \to \alpha^{2} - \beta^{2}$,
+where $\alpha$ (resp.\ $\beta$) is the unique positive root of
+$P_{G}$ (resp.\ $P_{H}$).
+
+The page cluster $B_{k}$ embedded in $\BTkt{k}{2}$ has its
+spine-symmetric leading eigenvalues approaching $\pm\sqrt{2k}(1+o(1))$.
+At the level of the squared difference
+$\mu^{(G)\,2}_{\pm} - \mu^{(G-v)\,2}_{\pm}$, the naive cancellation
+$\sqrt{2k} - \sqrt{2k} = 0$ is not enough: writing
+$\mu^{(G)}_{\pm} = \pm\sqrt{2k} + a_{\pm} + o(1)$ and
+$\mu^{(G-v)}_{\pm} = \pm\sqrt{2k} + b_{\pm} + o(1)$, the squared
+difference equals $\pm 2\sqrt{2k}\,(a_{\pm} - b_{\pm}) + O(1)$, so we
+need the next-order corrections to agree: $a_{\pm} = b_{\pm}$. This is
+established by Cauchy interlacing applied to the rank-$1$ rooted
+perturbation that distinguishes the two graphs --- $\BTkt{k}{2}$ vs.\
+$\BTkt{k}{2} - v_{\mathrm{tail}}$ differ by the single ear $k+3$
+attached via the edge $\{2, k+2\}$, and the leading book-spine
+eigenvector has entries of order $1/\sqrt{k}$ at vertices $2$ and
+$k+2$. By the secular equation for the bordering, the eigenvalue shift
+is $\epsilon_{\pm} = \langle b, u_{\pm}\rangle\,/\,(\mu_{\pm} \mp \sqrt{2k}) \cdot O(1)
+= O(1/k)$, hence $a_{\pm} - b_{\pm} = O(1/\sqrt{k})$ and the squared
+difference of the leading eigenvalues is $o(1)$. The same control
+extends to the equitable-partition quotient: $\BTkt{k}{2}$ has an
+$S_{k-1}$-symmetry on its $k-1$ non-attached pages, giving a $6\times 6$
+quotient matrix (cells $\{0\}, \{1\}, \{2\}, \{p_{3},\ldots,p_{k+1}\},
+\{k+2\}, \{k+3\}$), and the deletion $\BTkt{k}{2} - v_{\mathrm{tail}}$
+has a $5\times 5$ quotient. The two leading quotient eigenvalues of
+each grow like $\pm\sqrt{2k} + O(1/\sqrt{k})$ with matching first
+correction; their squared difference is $o(1)$. The page-antisymmetric
+multiplicity-$(k-2)$ eigenvalue $0$ contributes $0$ to both $\splus$
+and $\sminus$ and cancels exactly.
+
+The remaining \emph{bounded} eigenvalues of the two quotients are the
+content of the interior limit: rescaling the quotient matrices and
+sending $k\to\infty$ produces an effective $4\times 4$ matrix
+$M_{G}(\infty)$ for $\BTkt{k}{2}$ and $3\times 3$ matrix $M_{H}(\infty)$
+for the deletion; their characteristic polynomials factor as
+$(\lambda + 1) P_{G}(\lambda)$ and $P_{H}(\lambda)$, respectively.
+Summing positive-root squares gives $\dplus(v_{\mathrm{tail}})
+\to \alpha^{2} - \beta^{2}$, hence
+$\lim_{k \to \infty} \dminus(v_{\mathrm{tail}}) = 4 - \alpha^{2} + \beta^{2}$.
+Numerically $\alpha^{2} \approx 4.2294$, $\beta^{2} \approx 1.2647$, so
+$4 - \alpha^{2} + \beta^{2} \approx 1.0353$.
+
+The full derivation of the cubic resolvents and the matching
+calculation is in \texttt{docs/lprime\_selector.md}; the result is
+regression-locked in \texttt{tests/test\_lprime\_subfamilies.py}.
+
+\emph{Status of this proof.} The page-cluster reduction, the cubic
+resolvents $P_{G}, P_{H}$, the interior limits, and the numerical
+limit value $4 - \alpha^{2} + \beta^{2} \approx 1.0353$ are derived
+in full above and match the regression-locked numerical computation.
+The leading-eigenvalue square-difference cancellation
+($\pm \sqrt{2k}$ from the embedded $\Bk$ block) is presented above
+modulo the secular-equation rate
+$a_{\pm} - b_{\pm} = O(1/\sqrt{k})$, which is sketched at the level of
+$\langle b, u_{\pm}\rangle/(\mu_{\pm} \mp \sqrt{2k}) \cdot O(1)$ but
+not written in full detail in the paper; this is the conditional
+subobligation under which the present proposition is stated. The
+numerical limit is beyond doubt; the cleanly written cancellation
+lemma is the only missing piece for promotion to an unconditional
+theorem.
+\end{proof}
+
+\begin{corollary}[The universal ear-deletion lemma is false]\label{cor:universal-false}
+The asymptotic value $4 - \alpha^{2} + \beta^{2} \approx 1.0353$ of
+\Cref{thm:BT-asymptotic} is strictly below $17/16 = 1.0625$ by
+$\approx 0.0272$. Hence the statement ``every simplicial degree-$2$
+ear $v$ of every $2$-tree on $n \ge 4$ vertices satisfies
+$\dminus(v) \ge 17/16$'' is false, and is false by a bounded constant
+in the asymptotic regime.
+\end{corollary}
+
+\Cref{cor:universal-false} motivates the move to the \emph{existential}
+form $\Lprime$ in \Cref{sec:lprime} and the \emph{max-degsum} selector
+for picking the witness ear.
+
+\subsection{$2$-paths at finite $n$: a Demmel--Kahan certificate}
+\label{sec:subfamily:2path-finite}
+
+\begin{theorem}[Engineering-rigorous floor on $\dminus(\Ln)$ for $n \le 1000$; conditional on the \texttt{dsyevd} backward-error envelope]
+\label{thm:2path-DK}
+Assume the conservative working envelope $C_{n} \le 10^{4}\, n$ for
+the forward eigenvalue error of LAPACK's \texttt{dsyevd} symmetric
+eigensolver, as discussed in Step~2 of the proof below
+(\Cref{rem:fp-vs-interval}). Under this envelope, for every
+$n \in [4, 1000]$,
+\[
+\dminus(\Ln) \;\ge\; \tfrac{17}{16} + \tfrac{1}{4} \;=\; \tfrac{21}{16}
+\;>\; \tfrac{17}{16},
+\]
+with an empirical $50$-digit \texttt{mpmath} confirmation on a curated
+$17$-record subset (\Cref{rem:fp-vs-interval}, \Cref{app:repro:DK}).
+\end{theorem}
+
+\begin{proof}
+We give a constructive certificate.
+
+\paragraph{Step 1 (floating-point computation).}
+For each $n \in [4, 1000]$, compute the eigenvalues
+$\tilde\lambda_{1}, \ldots, \tilde\lambda_{n}$ of the pentadiagonal
+Toeplitz $\Adj(\Ln)$ in IEEE double precision via Householder
+tridiagonalisation followed by symmetric divide-and-conquer (the
+LAPACK routine \texttt{dsyevd}, which is the default driver behind
+\texttt{numpy.linalg.eigvalsh}). Set
+$\tilde s_{n}^{-} := \sum_{i:\, \tilde\lambda_{i} < 0} \tilde\lambda_{i}^{2}$
+and $\tilde\delta_{n}^{-} := \tilde s_{n}^{-} - \tilde s_{n-1}^{-}$.
+
+\paragraph{Step 2 (Demmel--Kahan-style a-posteriori bound, conservative envelope).}
+For a backward-stable symmetric eigensolver the forward eigenvalue
+error obeys an inequality of the form
+$|\tilde\lambda_{i} - \lambda_{i}| \le C_{n}\, \epsilon_{\mathrm{mach}}\,
+\|\Adj(\Ln)\|_{2}$, where $\epsilon_{\mathrm{mach}} \approx 2.22 \cdot 10^{-16}$
+is the IEEE machine epsilon. The standard backward-error analyses of
+Demmel \cite[Thm.~5.5]{DemmelANLA}, Parlett
+\cite[\S 8.7]{Parlett1998}, and Anderson--Bai--Demmel
+\cite[\S 4.7]{LAPACKUsersGuide} establish bounds of the form
+$C_{n} \le c\, n$ for an absolute constant $c$ depending on the
+specific algorithmic pipeline; published constants for symmetric
+tridiagonal QR are of order $10^{2}$, and the
+Householder-plus-divide-and-conquer
+pipeline of LAPACK's \texttt{dsyevd} (the
+default driver behind \texttt{numpy.linalg.eigvalsh}) plausibly
+adds further low-order polynomial factors. We do \emph{not} attempt
+in this paper a fully formal derivation of an explicit envelope
+constant for the exact \texttt{dsyevd} path; rather, we adopt the
+\emph{conservative working envelope} $c \le 10^{4}$ (which is
+overshooting any published constant by at least one order of
+magnitude) and check below that the resulting forward-error bound is
+dwarfed by the empirical slack by more than three orders of
+magnitude. The role of this step is therefore to bound the
+floating-point error by a number that is provably safe under any
+plausible refinement of the constant. Taking $C_{n} \le 10^{4}\, n$
+and $\|\Adj(\Ln)\|_{2} \le \|f\|_{\infty} = 4$, the per-eigenvalue
+forward error is at most
+\[
+|\tilde\lambda_{i} - \lambda_{i}| \;\le\; 10^{4}\, n \cdot 2.22 \cdot 10^{-16} \cdot 4
+\;=\; 8.88 \cdot 10^{-12}\, n
+\;\le\; 8.88 \cdot 10^{-9}
+\qquad (n \le 1000).
+\]
+Propagating into $s_{n}^{-} = \sum_{i:\, \lambda_{i} < 0} \lambda_{i}^{2}$
+via $|\delta(\lambda_{i}^{2})| \le 2 |\lambda_{i}|\, |\delta\lambda_{i}|
+\le 2 \|\Adj(\Ln)\|_{2} \cdot 8.88 \cdot 10^{-12} n$ and summing over
+at most $n$ negative eigenvalues,
+\[
+|\tilde s_{n}^{-} - s_{n}^{-}|
+\;\le\; n \cdot 2 \cdot 4 \cdot 8.88 \cdot 10^{-12}\, n
+\;=\; 7.1 \cdot 10^{-11}\, n^{2}
+\;\le\; 7.1 \cdot 10^{-5}
+\qquad (n \le 1000).
+\]
+Hence
+\[
+|\tilde\delta_{n}^{-} - \dminus(\Ln)|
+\;\le\; |\tilde s_{n}^{-} - s_{n}^{-}|
++ |\tilde s_{n-1}^{-} - s_{n-1}^{-}|
+\;\le\; 1.42 \cdot 10^{-4}.
+\]
+
+\paragraph{Step 3 (numerical floor + slack comparison).}
+Direct numerical computation shows $\tilde\delta_{n}^{-} - 17/16 \ge 0.257$
+for every $n \in [4, 1000]$, with the minimum $\approx 0.257$ attained
+at $n = 6$ (the parity oscillation in $\tilde\delta_{n}^{-}$ has its
+worst-case dip there). The slack $0.257$ dominates the certified
+forward-error bound $1.42 \cdot 10^{-4}$ by more than three orders of
+magnitude:
+\[
+\dminus(\Ln) \;\ge\; \tilde\delta_{n}^{-} - 1.42 \cdot 10^{-4}
+\;\ge\; \tfrac{17}{16} + 0.257 - 1.42 \cdot 10^{-4}
+\;>\; \tfrac{17}{16} + \tfrac{1}{4},
+\]
+as claimed.
+
+The certificate is regression-locked in
+\texttt{tests/test\_mpmath\_certify.py} and
+\texttt{tests/test\_two\_path\_finite\_n.py}, with intermediate values
+recorded in \texttt{data/two\_path\_mpmath\_certificate.json}.
+\end{proof}
+
+\begin{remark}[Failure mode F8: floating-point vs interval arithmetic]
+\label{rem:fp-vs-interval}
+The certificate in \Cref{thm:2path-DK} is engineering-rigorous rather
+than interval-rigorous in two senses. First, the eigenvalues are IEEE
+floating-point values, not certified intervals. Second, the constant
+envelope $c \le 10^{4}$ in the Demmel--Kahan-style bound is conservative
+and consistent with published constants for backward-stable symmetric
+eigensolvers, but is not formally derived for the exact LAPACK
+\texttt{dsyevd} pipeline within this paper; cf.\
+\Cref{app:repro:DK}. The propagated error bound
+$1.42 \cdot 10^{-4}$ on $\dminus(\Ln)$ is therefore the bound under
+this conservative working envelope, not under a fully verified
+constant. Crucially, the empirical slack $\ge 0.257$ exceeds this
+propagated bound by more than three orders of magnitude, so any
+plausible sharper constant yields the same conclusion. A confirmatory
+\texttt{mpmath} run at $50$ decimal digits on a curated $17$-record
+subset of $n$ (including the worst-case $n = 6$) is regression-locked
+by the test suite (the suite spot-checks $9$ cases at $30$ dps with
+$\sim 25$ digits of headroom; the full $50$-digit certificate is in
+\texttt{data/two\_path\_mpmath\_certificate.json}), and reproduces
+$\dminus(\Ln)$ to $\ge 13$ digits of agreement with the floating-point
+values; no anomalous case is found. A full interval-arithmetic
+upgrade (via \texttt{mpmath.iv} or a Krawczyk-style verified
+eigensolver), or a formal derivation of an explicit envelope constant
+for the \texttt{dsyevd} path, is mechanical but beyond the scope of
+this paper; it is listed as open subobligation O5c.1 in the workstream
+documentation.
+\end{remark}
+
+\subsection{Stieltjes-transform identification on $2$-paths}\label{sec:subfamily:2path-stieltjes}
+
+\begin{theorem}[The $2$-path Stieltjes-transform limit]\label{thm:2path-stieltjes}
+With the symbol $f(\theta) = 2\cos\theta + 2\cos 2\theta$ and with
+$\Hgraph_{n} := \Ln - 1 \cong L_{n-1}$, the spectral measure of
+$\Adj(\Hgraph_{n})$ tested against $\earw = e_{1} + e_{2}$ converges
+weakly as $n \to \infty$ to an absolutely continuous measure
+$\mu_{w, \infty}$ on $[-9/4, 4]$ whose density on the negative-spectrum
+interval $(-9/4, 0)$ is
+\[
+\rho_{w}(\lambda) \;=\; \frac{1}{\pi}\, \sin\bigl(\theta_{2}(\lambda) - \theta_{1}(\lambda)\bigr),
+\]
+where $\theta_{1}(\lambda) < \theta_{2}(\lambda)$ are the two preimages
+of $\lambda$ under $f$ in $(0, \pi)$. Writing $\nu^{-}_{\infty}$ for
+the restriction of $\mu_{w, \infty}$ to $(-\infty, 0)$,
+\[
+\lim_{n \to \infty} \Wm(\Ln, \maxdeg) = \nu^{-}_{\infty}(\mathbb{R}),
+\qquad
+\lim_{n \to \infty} \Monem(\Ln, \maxdeg) = \int \lambda\, d\nu^{-}_{\infty},
+\qquad
+\lim_{n \to \infty} \Mtwom(\Ln, \maxdeg) = \int \lambda^{2}\, d\nu^{-}_{\infty}.
+\]
+\end{theorem}
+
+\begin{proof}
+The argument has four steps.
+
+\paragraph{Step 1 (Stieltjes transform).}
+For $z \in \mathbb{C} \setminus \spec(\Adj(\Hgraph_{n}))$, set
+$S_{n}(z) := \earw^{\top}(zI - \Adj(\Hgraph_{n}))^{-1} \earw
+= \int (z - \lambda)^{-1}\, d\mu_{w, n}(\lambda)$. The resolvent
+matrix elements $G_{n}(z; i, j) := \langle e_{i}, (zI - \Adj(\Hgraph_{n}))^{-1} e_{j}\rangle$
+satisfy the four-term recursion
+\[
+z\, G_{n}(z; i, j) - G_{n}(z; i-2, j) - G_{n}(z; i-1, j) - G_{n}(z; i+1, j) - G_{n}(z; i+2, j) = \delta_{ij}
+\]
+away from the boundary. Substituting $G(i) = \xi^{i}$ in the
+homogeneous equation gives the self-reciprocal quartic
+$\xi^{4} + \xi^{3} - z\xi^{2} + \xi + 1 = 0$, which under $u = \xi + 1/\xi$
+reduces to the quadratic $u^{2} + u - (z + 2) = 0$ with roots
+$u_{\pm}(z) = (-1 \pm \sqrt{4z + 9})/2$. For $\Im z > 0$, exactly two
+of the four roots $\xi_{1}(z), \xi_{2}(z)$ lie strictly inside the
+unit disk; on the spectrum
+$\xi_{1} \to e^{-i\theta_{1}}, \xi_{2} \to e^{+i\theta_{2}}$ via
+analytic continuation (the branch choice is verified at one base
+point and propagated by continuity).
+
+\paragraph{Step 2 (boundary collapse).}
+The boundary recursions at $i = 1, 2$ together with the
+bounded-at-$\infty$ ansatz $G_{\infty}(z; i, j) = A_{j}(z) \xi_{1}(z)^{i} + B_{j}(z) \xi_{2}(z)^{i}$
+give a $2 \times 2$ linear system. Using the characteristic identity
+$\xi^{4} + \xi^{3} + \xi - z\xi^{2} = -1$ (the quartic rearranged),
+the four resolvent matrix elements $G_{\infty}(z; i, j)$ for
+$i, j \in \{1, 2\}$ collapse to
+\[
+S_{\infty}(z) \;:=\; G_{\infty}(z; 1, 1) + 2\, G_{\infty}(z; 1, 2) + G_{\infty}(z; 2, 2)
+\;=\; s(z)^{2} + s(z) - p(z),
+\]
+where $s(z) := \xi_{1}(z) + \xi_{2}(z)$ and
+$p(z) := \xi_{1}(z) \xi_{2}(z)$. By strong-resolvent convergence of
+finite-section banded Toeplitz operators \cite{BottcherSilbermann},
+$S_{n}(z) \to S_{\infty}(z)$ uniformly on compact subsets of
+$\mathbb{C} \setminus [-9/4, 4]$.
+
+\paragraph{Step 3 (Stieltjes inversion).}
+With our convention
+$S(z) = \langle w, (zI - A)^{-1} w \rangle = \int (z - \lambda)^{-1}\, d\mu_{w}(\lambda)$,
+a standard computation gives
+$\lim_{\epsilon \to 0^{+}} \Im\, (\lambda + i\epsilon - \lambda')^{-1} = -\pi \delta(\lambda - \lambda')$
+in distributional sense, so the Stieltjes inversion formula reads
+$\rho_{w}(\lambda) = -\tfrac{1}{\pi}\, \lim_{\epsilon \to 0^{+}} \Im\, S_{\infty}(\lambda + i\epsilon)$
+(note the minus sign). On $\lambda \in (-9/4, 0)$ the two interior roots of the quartic limit
+to $\xi_{1} \to e^{-i\theta_{1}}, \xi_{2} \to e^{+i\theta_{2}}$ on the
+unit circle (the Joukowski map $u = \xi + 1/\xi$ sending each
+unit-circle root $\xi = e^{i\theta}$ to $u = 2\cos\theta$). By Vieta on
+the quadratic $u^{2} + u - (z + 2) = 0$, the two $u$-values satisfy
+$u_{-} + u_{+} = -1$, i.e.\ $2\cos\theta_{1} + 2\cos\theta_{2} = -1$,
+hence
+\[
+\cos\theta_{1} + \cos\theta_{2} \;=\; -\tfrac{1}{2}.
+\]
+Substituting into $S_{\infty} = s^{2} + s - p$ and using this constraint
+simplifies the cross-terms to
+$\Im\, S_{\infty}(\lambda + i 0) = -\sin(\theta_{2} - \theta_{1})$,
+which combined with the minus sign in the inversion gives
+$\rho_{w}(\lambda) = \sin(\theta_{2} - \theta_{1})/\pi$, non-negative
+since $0 < \theta_{2} - \theta_{1} < \pi$.
+
+Sanity check on the unsigned moments: integrating $\rho_{w}$ over the
+full spectrum $[-9/4, 4]$ recovers $(M_{0}, M_{1}, M_{2}) = (2, 2, 7)$,
+matching the walk-moment identity \Cref{lem:walk-moments} (at the
+$2$-path endpoint, $|T_{ab}(\Hgraph_{n})| = 1$ and $\degsum = 2 + 3 = 5$,
+giving $M_{2} = 5 + 2 = 7$).
+
+\paragraph{Step 4 (moment convergence via Portmanteau).}
+By the Portmanteau theorem \cite{Billingsley1968}, weak convergence
+$\mu_{w, n} \to \mu_{w, \infty}$ implies $\int \phi\, d\mu_{w, n} \to
+\int \phi\, d\mu_{w, \infty}$ for every bounded measurable $\phi$
+whose discontinuity set has $\mu_{w, \infty}$-measure zero. For
+$\phi_{k}(\lambda) := \lambda^{k} \mathbf{1}[\lambda < 0]$ with
+$k \in \{0, 1, 2\}$: the discontinuity at $\lambda = 0$ is
+$\phi_{0}(0^{-}) = 1, \phi_{0}(0) = 0$ (jump), while for $k \ge 1$
+both one-sided limits and the value at $0$ are zero (no
+discontinuity). The $\mu_{w, \infty}$-measure of $\{0\}$ vanishes by the
+standard boundary computation: with our sign convention
+$S(z) = \int (z - \lambda)^{-1}\, d\mu(\lambda)$, an atom of mass $a$
+at $\lambda = 0$ would contribute $a/(i\epsilon) = -i a/\epsilon$ to
+$S(i\epsilon)$, while the absolutely continuous part remains bounded
+as $\epsilon \downarrow 0$. Hence
+\[
+\mu_{w, \infty}(\{0\})
+\;=\; -\lim_{\epsilon \downarrow 0}\, \epsilon \cdot
+\Im\, S_{\infty}(i\epsilon)
+\]
+(no $1/\pi$ factor; that factor belongs to the density Stieltjes
+inversion of Step~3, not the atom formula). The point $\lambda = 0$
+lies on the limiting spectrum (in fact $0 = f(\pi/3) = f(\pi)$, so
+$0$ is a critical value of the symbol), so atom non-existence cannot
+be read off from analyticity at $z = 0$ alone; we must check the
+boundary limit, and in particular identify the two interior unit-disk
+roots $\xi_{1}(z), \xi_{2}(z)$ as $z \to 0$ along the upper imaginary
+axis.
+
+Compute $S_{\infty}(z)$ at $z = i\epsilon$ as $\epsilon \downarrow 0$.
+The characteristic quartic
+$\xi^{4} + \xi^{3} - z\xi^{2} + \xi + 1 = 0$ at $z = 0$ factors as
+$(\xi+1)^{2}(\xi^{2} - \xi + 1) = 0$, with double root $\xi = -1$ and
+the two unit-circle roots $e^{\pm i\pi/3}$. With
+$u_{\pm}(z) = (-1 \pm \sqrt{4z + 9})/2$ (principal branch of
+$\sqrt{\cdot}$), $u_{+}(0) = 1$ gives the quadratic $\xi^{2} - \xi + 1 = 0$
+with roots $e^{\pm i\pi/3}$ on the unit circle, and $u_{-}(0) = -2$
+gives $\xi^{2} + 2\xi + 1 = (\xi + 1)^{2} = 0$ with double root
+$\xi = -1$ on the unit circle.
+
+\emph{Branch selection.} The two \emph{interior} unit-disk roots are
+not both on the $u_{+}$ branch: the $u_{+}$-branch quadratic at
+$z = 0$ has both roots on the unit circle (modulus exactly $1$), so it
+is not strictly interior. We track the interior selection by
+continuous deformation along the upper imaginary axis. Numerical
+continuation from $z = i$ (where the branch is unambiguously chosen
+as in Step~3) down to $z = i\epsilon$ for $\epsilon \in
+\{10^{-1}, 10^{-2}, 10^{-4}, 10^{-6}\}$ yields, for each $\epsilon$, two
+interior roots converging respectively to
+\[
+\xi_{1}(0^{+}) \;=\; -1 \qquad \text{(from the $u_{-}$ branch)},
+\qquad
+\xi_{2}(0^{+}) \;=\; e^{-i\pi/3} \qquad \text{(from the $u_{+}$ branch)};
+\]
+at $\epsilon = 10^{-6}$ for example, the numerical roots are
+$\xi_{1} \approx -0.999592 + 4.08 \cdot 10^{-4} i$ and
+$\xi_{2} \approx 0.500000 - 0.866025 i$ (the inside-root selector
+exercised by \texttt{tests/test\_half\_line\_stieltjes.py} via
+\texttt{numerical\_density\_at}). The selection is the
+generic one: of the two reciprocal pairs $(\xi, 1/\xi)$ supplied by
+the quadratic in $u$, the unique inside-disk member of each pair is
+the analytic continuation from $z = i$ down to $z = i\epsilon$.
+Substituting,
+\[
+s(0^{+}) \;=\; \xi_{1} + \xi_{2} \;=\; -1 + e^{-i\pi/3}
+\;=\; -\tfrac{1}{2} - \tfrac{\sqrt{3}}{2}\, i,
+\qquad
+p(0^{+}) \;=\; \xi_{1}\xi_{2} \;=\; -e^{-i\pi/3}
+\;=\; -\tfrac{1}{2} + \tfrac{\sqrt{3}}{2}\, i,
+\]
+\[
+s(0^{+})^{2} \;=\;
+\bigl(-\tfrac{1}{2} - \tfrac{\sqrt{3}}{2}\,i\bigr)^{2}
+\;=\; -\tfrac{1}{2} + \tfrac{\sqrt{3}}{2}\, i,
+\]
+\[
+S_{\infty}(0^{+}) \;=\; s^{2} + s - p
+\;=\; \bigl(-\tfrac{1}{2} + \tfrac{\sqrt{3}}{2}\, i\bigr)
+   + \bigl(-\tfrac{1}{2} - \tfrac{\sqrt{3}}{2}\, i\bigr)
+   - \bigl(-\tfrac{1}{2} + \tfrac{\sqrt{3}}{2}\, i\bigr)
+\;=\; -\tfrac{1}{2} - \tfrac{\sqrt{3}}{2}\, i,
+\]
+a finite \emph{complex} number (not real). The numerical evaluation at
+$z = 10^{-6} i$ gives
+$S_{\infty}(10^{-6} i) \approx -0.499851 - 0.866582 i$, agreeing with
+the closed form $-1/2 - i\sqrt{3}/2$ to $\sim 10^{-4}$ and converging
+in $\epsilon$ to that value.
+
+The maps $\xi_{1}(z), \xi_{2}(z)$ extend continuously along the
+upper-imaginary approach $z = i\epsilon$, $\epsilon \downarrow 0$
+(the discriminant $4z + 9$ is non-zero at $z = 0$; the unique
+inside-disk Joukowski preimage of $u_{\pm}(z)$ is continuous away
+from $u = \pm 2$, and we hit the branch point $u_{-}(0) = -2$ only at
+$z = 0$ itself, where the degenerate double-root limit $\xi \to -1$ is
+the stated one-sided limit, approached continuously from inside the
+disk). Consequently $\Im\, S_{\infty}(i\epsilon)$ is bounded as
+$\epsilon \downarrow 0$, with limit $-\sqrt{3}/2$. Therefore
+\[
+\mu_{w, \infty}(\{0\})
+\;=\; -\lim_{\epsilon \downarrow 0} \epsilon \cdot
+\Im\, S_{\infty}(i\epsilon)
+\;=\; -\lim_{\epsilon \downarrow 0} \epsilon \cdot
+\bigl(-\tfrac{\sqrt{3}}{2} + o(1)\bigr)
+\;=\; 0,
+\]
+i.e.\ $\mu_{w, \infty}$ has no atom at $0$. The bounded one-sided
+density limit
+$\rho_{w}(0^{-}) = \sin(\pi - \pi/3)/\pi = \sqrt{3}/(2\pi)$ from
+Step~3 -- recovered consistently from the same boundary calculation
+via $\rho_{w} = -(1/\pi)\Im S_{\infty}(\lambda + i 0^{+})$ -- supplies
+the absolute continuity needed for the Portmanteau condition. Hence
+Portmanteau applies and gives the stated moment convergence.
+\end{proof}
+
+The full numerical identification — including the closed form
+$\Iinf{L} = (2(310\pi^{2} - 837\sqrt{3}\,\pi + 2187))/(27\pi(20\pi -
+27\sqrt{3}))$ — and its consequence for condition~(a) of the
+joint-invariant ansatz on the $2$-path family appear in
+\Cref{sec:moment-form:stieltjes}.

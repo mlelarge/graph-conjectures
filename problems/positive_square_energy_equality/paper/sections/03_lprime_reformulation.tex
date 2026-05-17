@@ -1,0 +1,219 @@
+\section{The \texorpdfstring{$\Lprime$}{(L')} reformulation on \texorpdfstring{$2$}{2}-trees}\label{sec:lprime}
+
+\subsection{The setup at a simplicial degree-2 ear}\label{sec:lprime:setup}
+
+Throughout this section, $\graph$ is a $2$-tree on $n \ge 4$ vertices,
+$v$ a simplicial degree-$2$ vertex with supporting edge $\{a, b\}$, and
+$\Hgraph := \graph - v$ the $2$-tree obtained by removing $v$. Ordering
+the vertex set with $v$ first, the adjacency matrix takes the block
+form
+\[
+\Adj(\graph) = \begin{pmatrix} 0 & \earw^{\top} \\ \earw & \Adj(\Hgraph) \end{pmatrix},
+\qquad
+\earw := e_{a} + e_{b} \;\in\; \mathbb{R}^{n-1},
+\]
+where $e_{a}, e_{b}$ are the standard basis vectors of $\mathbb{R}^{n-1}$
+indexed by the non-$v$ vertices of $\graph$. Because $a \ne b$, these
+two standard basis vectors are orthogonal, so
+\[
+\|\earw\|^{2} \;=\; e_{a}^{\top}e_{a} + 2\,e_{a}^{\top}e_{b} + e_{b}^{\top}e_{b}
+\;=\; 1 + 0 + 1 \;=\; 2.
+\]
+This identity is independent of whether $\{a, b\}$ is an edge of
+$\Hgraph$, and is one of two distinct $4$-or-$2$ values that recur in
+the analysis. The other is the \emph{trace identity}
+\[
+\dplus(v) + \dminus(v) \;=\; \tr\bigl(\Adj(\graph)^{2}\bigr)
+                              - \tr\bigl(\Adj(\Hgraph)^{2}\bigr)
+\;=\; 2 \deg_{\graph}(v) \;=\; 4
+\]
+valid for every degree-$2$ vertex (and in particular for every
+simplicial degree-$2$ ear of a $2$-tree). The conflation of these two
+``$=$\,$4$'' identities is the F2 failure mode of
+\Cref{sec:fm:wnorm}; we will use $\|\earw\|^{2} = 2$ consistently
+throughout.
+
+\subsection{The universal ear lemma is false}\label{sec:lprime:universal-fails}
+
+A natural first attempt at proving \Cref{conj:92} for $2$-trees would
+be a \emph{universal} ear lemma: ``every simplicial degree-$2$ ear $v$
+of every $2$-tree on $n \ge 4$ vertices satisfies
+$\dminus(v) \ge 17/16$.'' This is false. Two independent witnesses:
+
+\paragraph{Asymptotic structural witness.} The family $\BTkt{k}{2}$
+(book $B_{k}$ glued to a length-$2$ triangle tail along the edge
+$\{0, 2\}$) has a unique \emph{tail simplicial ear} whose
+$\dminus$-value tends to a constant strictly below $17/16$. We will
+prove in \Cref{thm:BT-asymptotic} that
+\[
+\lim_{k \to \infty} \dminus(v_{\mathrm{tail}}) \;=\;
+4 - \alpha^{2} + \beta^{2} \;\approx\; 1.0353,
+\]
+with $\alpha, \beta$ explicit cubic roots. The gap to $17/16 = 1.0625$
+is $\approx 0.027$, bounded away from $0$ uniformly in $k$.
+
+\paragraph{Random witness.} Seeded random $2$-trees (vertex attachment
+to a uniformly random edge of the current graph) produce universal-form
+violators at moderate $n$ as well; the seed-$149$ random $2$-tree on
+$n = 100$ vertices has a simplicial degree-$2$ ear $v$ with
+$\dminus(v) \approx 1.0610 < 17/16$. We preserve this graph as a
+permanent regression fixture
+(\texttt{tests/fixtures/two\_tree\_universal\_counterexamples.json}).
+
+\paragraph{Why no universal $\ge 17/16$ pair can hold.} The trace
+identity $\dplus(v) + \dminus(v) = 4$ at any degree-$2$ ear forces the
+two gains to be perfectly anticorrelated: $\dminus = 4 - \dplus$. A
+universal statement ``$\dminus(v) \ge 17/16$ \emph{and}
+$\dplus(v) \ge 17/16$ for every ear $v$'' is therefore equivalent to
+``$\dminus(v) \in [17/16, 47/16]$ for every ear,'' a much narrower
+target than EFGW. Highly unbalanced $2$-trees, where one ear has
+$\dminus$ close to $1$ (and hence $\dplus$ close to $3$), violate this
+target on \emph{some} ear no matter which side one bounds; the
+$\BTkt{k}{2}$ tail above is the cleanest such witness. The natural
+reformulation must therefore be \emph{existential} in the choice of
+ear.
+
+\subsection{The existential lemma}\label{sec:lprime:existential}
+
+\begin{conjecture}[$\Lprime$: existential ear-selection on 2-trees]\label{thm:Lprime}
+For every $2$-tree $\graph$ on $n \ge 4$ vertices, there exists a
+simplicial degree-$2$ ear $v^{*}$ such that
+\[
+\dminus(v^{*}) \;\in\; \bigl[\tfrac{17}{16},\, \tfrac{47}{16}\bigr],
+\]
+equivalently both $\dplus(v^{*}) \ge 17/16$ and $\dminus(v^{*}) \ge 17/16$.
+\end{conjecture}
+
+\paragraph{Status of $\Lprime$.}
+\Cref{thm:Lprime} is open in general. We prove it unconditionally on
+the books $\Bk$ (\Cref{cor:books-Lprime}). On the $2$-paths $\Ln$ we
+do \emph{not} prove the ear-gain statement
+$\dminus(\Ln) \ge 17/16$ asymptotically: what is proved is the
+Ces\`aro square-energy identity $\sminus(\Ln)/n \to c_{1}^{-}$
+(\Cref{thm:2path-szego}) together with the asymptotic identification
+of the moment-form invariant $\Iinf{L}$ on the negative spectral
+measure (\Cref{thm:moment-form-stieltjes}); the first-difference
+companion $\dminus(\Ln) \to c_{1}^{-}$ is supported by empirical
+evidence on $n \le 200$ and recorded as open subobligation~O13.1
+(\Cref{rem:2path-first-difference}). For finite $n \in [4, 1000]$ the
+ear-gain bound $\dminus(\Ln) \ge 21/16$ is established by an
+engineering-rigorous Demmel--Kahan a-posteriori certificate,
+conditional on a conservative \texttt{dsyevd} backward-error envelope
+(\Cref{thm:2path-DK}). On the $\BTkt{k}{2}$ family
+we prove the bad-tail-ear asymptotic
+$\lim_{k} \dminus(v_{\mathrm{tail}}) \approx 1.0353 < 17/16$
+(\Cref{thm:BT-asymptotic}), which refutes the
+\emph{universal} ear-deletion form and motivates the
+existential / max-degsum selector formulation; the existential
+$\Lprime$ on $\BTkt{k}{2}$ is verified empirically by the max-degsum
+selector (which picks a clean book-page ear, with
+$\dminus \to \dminus(\Bk) \uparrow 2$ as $k \to \infty$ on that ear)
+but is not analytically closed in this paper.
+We also prove a conditional analytical bound
+$\alpha_{\min}^{2} \ge 1$ on Case-B max-degsum ears
+(\Cref{lem:bminor-amin}) together with the empirical census
+$\dminus(\maxdeg) \ge 1.2941$ across $2{,}235$ records
+(\Cref{prop:bminor-census}); the analytical claim $\dminus(\maxdeg) \ge 1$
+remains open in general (\Cref{rem:bminor-gap}). The general case of
+$\Lprime$ reduces to the moment-form ansatz of
+\Cref{cnj:joint-invariant} below, with two precise open subgoals:
+\Cref{prob:slot-shift} (condition~(b), the slot-shift sum bound) and
+\Cref{prob:general-a} (condition~(a) on general $2$-trees, a
+structural-sufficiency gap).
+
+\subsection{$\Lprime$ implies Conjecture~9.2 on 2-trees}\label{sec:lprime:telescope}
+
+\begin{proposition}\label{prop:Lprime-implies-92}
+Assume \Cref{thm:Lprime} (the existential ear-selection lemma) holds.
+Then \Cref{conj:92} holds for every $2$-tree on $n \ge 4$ vertices.
+\end{proposition}
+
+\begin{proof}
+We iterate $\Lprime$ along a sequence of simplicial ear deletions.
+Set $\graph_{0} := \graph$. Given a $2$-tree $\graph_{i}$ on at least
+four vertices, $\Lprime$ supplies a simplicial degree-$2$ ear
+$v_{i}^{*}$ of $\graph_{i}$ with $\dminus(v_{i}^{*}) \ge 17/16$ and
+$\dplus(v_{i}^{*}) \ge 17/16$. Set
+$\graph_{i+1} := \graph_{i} - v_{i}^{*}$. Removing a simplicial degree-$2$
+vertex from a $2$-tree yields a $2$-tree on one fewer vertex, so the
+iteration is well-defined and terminates at $\graph_{n-3} = K_{3}$
+after exactly $n - 3$ steps.
+
+The base case is $K_{3}$, with adjacency spectrum
+$\spec(\Adj(K_{3})) = \{2, -1, -1\}$, giving $\sminus(K_{3}) = 2$ and
+$\splus(K_{3}) = 4$. Note that the induction stops at $K_{3}$ and not at $K_{2}$. The
+further step $K_{3} \to K_{2}$ falls outside the inductive scope: it
+would require a simplicial degree-$2$ ear of $K_{3}$ giving
+$\dminus = \sminus(K_{3}) - \sminus(K_{2}) = 2 - 1 = 1 < 17/16$, which
+is why \Cref{thm:Lprime} is stated only for $n \ge 4$.
+
+Telescoping $n - 3$ applications of $\Lprime$ from $\graph_{0} = \graph$
+down to $\graph_{n-3} = K_{3}$,
+\[
+\sminus(\graph) \;\ge\; \sminus(K_{3}) + \tfrac{17}{16}(n - 3)
+\;=\; 2 + \tfrac{17}{16}(n - 3)
+\;=\; n - 1 + \tfrac{n - 3}{16}
+\;>\; n - 1
+\]
+for every $n \ge 4$. Analogously,
+$\splus(\graph) \ge \splus(K_{3}) + \tfrac{17}{16}(n - 3) = 4 + \tfrac{17}{16}(n - 3) > n - 1$
+for $n \ge 4$. Hence neither $\sminus(\graph) = n - 1$ nor
+$\splus(\graph) = n - 1$ holds for any $2$-tree on $n \ge 4$ vertices.
+Since trees and the complete graphs $K_{m}$ with $m \ge 4$ are not
+$2$-trees ($K_{4}$ already has treewidth $3$), this confirms both
+parts of \Cref{conj:92} restricted to $2$-trees.
+\end{proof}
+
+\subsection{The max-degsum selector}\label{sec:lprime:max-degsum}
+
+$\Lprime$ is an \emph{existential} statement: it asks for the existence
+of a good ear. To make it constructive we propose an explicit selector.
+Given a $2$-tree $\graph$ on $n \ge 4$ vertices, the
+\emph{max-degsum} rule selects
+\[
+\maxdeg \;\in\; \argmax_{v \,\in\, S(\graph)}
+\bigl(\deg_{\Hgraph}(a) + \deg_{\Hgraph}(b)\bigr),
+\]
+where $S(\graph)$ is the set of simplicial degree-$2$ vertices of
+$\graph$ and $\{a, b\}$ is the supporting edge of $v$ inside
+$\Hgraph = \graph - v$. The choice may not be unique; when ties occur
+we may pick any maximiser, and we then write $\degsum(\maxdeg)$ for
+the common maximum value $\deg_{\Hgraph}(a) + \deg_{\Hgraph}(b)$.
+
+The max-degsum selector is structurally well-behaved: every $2$-tree
+on $n \ge 5$ vertices satisfies $\degsum(\maxdeg) \ge 5$
+(\Cref{lem:sigma-floor}); the bound is tight on the $2$-path family.
+Empirically the selector witnesses $\Lprime$ on a large working corpus
+of $2{,}628$ max-degsum records (over $1063+$ graphs from enumerated
+$2$-trees with $n \le 10$, random $2$-trees up to $n = 1000$, and the
+structured families $\Bk$, $\BTkt{k}{2}$, $\Ln$, $\Fn$): every record
+satisfies $\Ivs \ge \threshold = 0.4122$ and
+$\min(\dplus(\maxdeg), \dminus(\maxdeg)) \ge 1$, regression-locked
+across $539$ passing tests at submission.
+
+\subsection{Reduction map}\label{sec:lprime:reduction}
+
+The implication chain that frames the rest of the paper is
+\[
+\Lprime \;\Longleftarrow\; \text{max-degsum selector witnesses $\Lprime$}
+\;\Longleftarrow\;
+\bigl[\, \Ivs \ge \threshold \;\wedge\;
+\bigl(\Iv \ge \threshold \;\Longrightarrow\; \dminus(v) \ge \tfrac{17}{16}\bigr) \,\bigr].
+\]
+The right-hand side is the moment-form joint-invariant ansatz of
+\Cref{cnj:joint-invariant}. Its two conjuncts are conditions~(a) and~(b)
+of that conjecture: condition~(a) (structural; \Cref{cond:a}) asserts
+that the max-degsum ear's joint invariant clears the threshold, and
+condition~(b) (spectral; \Cref{cond:b}) asserts that clearing the
+threshold suffices to force $\dminus(v) \in [17/16, 47/16]$,
+equivalently (by the trace identity $\dplus(v) + \dminus(v) = 4$ at a
+simplicial degree-$2$ ear) that both $\dminus(v) \ge 17/16$ \emph{and}
+$\dplus(v) \ge 17/16$. The two conditions together imply that the
+max-degsum ear $\maxdeg$ satisfies $\dminus(\maxdeg) \in [17/16, 47/16]$,
+so $\Lprime$ holds at the max-degsum witness.
+
+\Cref{sec:moment-form} develops the moment-form ansatz framework
+that supports this reduction; \Cref{sec:subfamily} proves
+condition~(a) on two subfamilies (books, $2$-paths in the asymptotic
+limit) plus the common-spine-edge characterisation; the remaining
+content of condition~(b) is collected into \Cref{prob:slot-shift}.

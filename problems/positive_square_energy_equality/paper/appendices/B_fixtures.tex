@@ -1,0 +1,47 @@
+\section{Failure-mode fixtures}\label{app:fixtures}
+
+Tabulated witnesses for the failure modes F1--F10 of
+\Cref{sec:failure-modes}. Each row records: the identifier; the
+precise false statement (in one line); the smallest witnessing graph
+(described combinatorially or by graph6 string, with the relevant
+numerical quantity); and the regression fixture file in the
+repository (or an em-dash if the witness is analytical / structural).
+
+\medskip
+\begin{tabular}{lp{4cm}p{3.5cm}l}
+\toprule
+ID & False statement & Smallest witness & Fixture \\
+\midrule
+F1 & Every simplicial degree-$2$ ear of every $2$-tree satisfies
+$\dminus \ge 17/16$. & $\BTkt{k}{2}$ tail at $k \ge 40$
+(direct computation: $\dminus_{\mathrm{tail}}(\BTkt{40}{2}) \approx 1.0623
+< 1.0625 = 17/16$, with asymptote
+$4 - \alpha^{2} + \beta^{2} \approx 1.0353$, \Cref{thm:BT-asymptotic});
+also a random $2$-tree on $n = 100$ (seed $149$). &
+\texttt{two\_tree\_universal\_counterexamples.json} \\
+F2 & $\|\earw\|^{2} = 4$. & Any 2-tree ear (algebraic). &
+\texttt{w\_norm\_squared\_is\_2.json} \\
+F3 & $\Wm(\maxdeg) \ge 17/32$ (or $17/16$). & $L_{5}$ endpoint,
+$\Wm = 0.515$. & \texttt{joint\_invariant\_falsified.json} \\
+F4 & Half-line boundary density is $(\sin\theta + \sin 2\theta)^{2}/\pi$. &
+Pentadiagonal $f$, $\theta = \pi/3$. & (analytical; numerical mismatch
+factor $100+$) \\
+F5 & Asymmetric ``selector + dual'' for $\dplus$. & Symmetric trace
+identity $\dplus + \dminus = 4$. & — (no separate dual exists) \\
+F6 & $\alpha\omega \le n/17$ regime covers $2$-trees uniformly. &
+$L_{30}$ vs $B_{15}$. & — \\
+F7 & Lemma~B1 minimiser at $\beta_{-}$. & $L_{5}$ spot check
+($\lambda_{\min} = -1.618$ vs predicted $+1.387$). & — \\
+F8 & ``Floating-point certified'' is rigorous without
+\emph{a-posteriori} bound. & — & — \\
+F9 & Standard BBG / Avram--Parter constants apply to
+$f = 2 \cos + 2 \cos 2$. & Boundary zero at $\theta = \pi$
+violates simple-loop hypothesis. & — \\
+F10 & The $2$-path is the universal binding case for $\Iv$ at the
+max-degsum ear, i.e.\ $\Ivs \ge \Iinf{L} \approx 1.0157$ on every
+$2$-tree. & $n = 10$ caterpillar
+(graph6 \texttt{I\}qcHG\textasciigrave GO}),
+$\Ivs = 0.6384 < \Iinf{L}$. &
+\texttt{joint\_invariant\_falsified.json} \\
+\bottomrule
+\end{tabular}

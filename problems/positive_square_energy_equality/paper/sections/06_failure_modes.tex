@@ -1,0 +1,201 @@
+\section{Failure modes}\label{sec:failure-modes}
+
+This section catalogues ten specific dead ends rejected during the
+search programme. Each failure mode is paired with a regression fixture
+in \texttt{tests/fixtures/} (or, when no falsifying graph is needed, a
+combinatorial witness) so the rejection is reproducible. We include
+this material in the main body (rather than an appendix) because the
+\emph{retirement} of the universal ear lemma (\Cref{cor:universal-false})
+and of single-scalar candidates is as informative for future work as
+the theorems that survived.
+
+\subsection{F1. The universal ear-deletion lemma}\label{sec:fm:universal}
+
+The naive statement ``every simplicial degree-$2$ ear $v$ of every
+$2$-tree on $n \ge 4$ vertices satisfies $\dminus(v) \ge 17/16$'' is
+false. Two witnesses: the asymptotic $\dminus_{\infty}(\mathrm{BT}) \approx
+1.0353 < 17/16$ on the $\BTkt{k}{2}$ tail family
+(\Cref{thm:BT-asymptotic}; at $k = 50$ the value is already
+$\dminus \approx 1.0575$), and a seed-$149$ random $2$-tree on
+$n = 100$ vertices with $\dminus \approx 1.0610$. The latter graph is
+preserved as the permanent regression fixture
+\texttt{tests/fixtures/two\_tree\_universal\_counterexamples.json}; the
+former is the structured proof of \Cref{cor:universal-false}. The
+correct reformulation is the \emph{existential} ear-selection lemma
+$\Lprime$ (\Cref{thm:Lprime}).
+
+\subsection{F2. The $\|\earw\|^{2} = 4$ normalisation bug}\label{sec:fm:wnorm}
+
+The supporting-edge vector $\earw = e_{a} + e_{b}$ has
+$\|\earw\|^{2} = 2$, not $4$: the two standard basis vectors are
+orthogonal, $e_{a}^{\top} e_{b} = 0$, regardless of whether
+$\{a, b\}$ is an edge of $\Hgraph$. The mistaken value $4$ was
+conflated with the trace identity $\dplus(v) + \dminus(v) = 2\deg_{\graph}(v) = 4$,
+which is a different (and correct) derivation
+($\tr(\Adj(\graph)^{2}) - \tr(\Adj(\Hgraph)^{2}) = 2 \deg_{\graph}(v)$).
+Consequences of the corrected normalisation
+$\sum_{i} \earc_{i}^{2} = \|\earw\|^{2} = 2$: the walk-moment identity
+\Cref{lem:walk-moments} takes its stated form, the Cauchy--Schwarz pair
+\Cref{lem:CS,lem:cs-two-sided} have the stated factors, and the
+threshold $\threshold = 0.4122$ is no longer derivable from a
+``natural'' rescaling of $17/16$. Regression fixture:
+\texttt{tests/fixtures/w\_norm\_squared\_is\_2.json}.
+
+\subsection{F3. Single-scalar selector thresholds}\label{sec:fm:single-scalar}
+
+The natural single-scalar thresholds — $\Wm(\maxdeg) \ge 17/16$ (the
+$\|\earw\|^{2} = 4$ era) and $\Wm(\maxdeg) \ge 17/32$ (after the v9
+$\|\earw\|^{2} = 2$ renormalisation) — are both empirically false.
+Witnesses: $L_{5}$ endpoint has $\Wm \approx 0.515$, $L_{6}$ has
+$\Wm \approx 0.380$, and $L_{12}$ has $\Wm \approx 0.502$; all are
+below $17/32 = 0.53125$. An empirically-fitted
+threshold $T < 17/32$ does survive on a finite corpus, but the
+worst-case bad ears from the $\BTkt{k}{2}$ tail family have
+$\Wm \to 0$ as $k \to \infty$ while the max-degsum-ear infimum of
+$\Wm$ also drops, narrowing the window asymptotically. The candidate
+$\Iv = \Wm + (\Monem)^{2}/\Mtwom$ at $\threshold = 0.4122$
+(\Cref{def:joint-invariant}) is a genuine joint invariant, not a
+single-scalar rebrand. Regression test:
+\texttt{tests/test\_lprime\_subfamilies.py}.
+
+\subsection{F4. The naive sine-basis half-line boundary density}\label{sec:fm:sine-basis}
+
+The naive guess for the half-line boundary density of the pentadiagonal
+Toeplitz operator with symbol $f(\theta) = 2\cos\theta + 2\cos 2\theta$
+at $\earw = e_{1} + e_{2}$ is $(\sin\theta + \sin 2\theta)^{2}/\pi$, by
+extrapolation from the tridiagonal case where the boundary density at
+$e_{1}$ is $\sin^{2}\theta / \pi$. This naive density fails the
+Plancherel-norm test by a factor of $100+$: direct projection of $\earw$
+onto the eigenbasis of $\Adj(L_{n-1})$ at $n = 200$ gives entries that
+differ from $(\sin\theta_{j} + \sin 2\theta_{j})^{2} \cdot 2/(n+1)$ by
+factors of order $10^{2}$. The correct density is the \emph{signed
+angle gap}
+\[
+\rho_{w}(\lambda) \;=\; \frac{1}{\pi}\sin(\theta_{2}(\lambda) - \theta_{1}(\lambda))
+\]
+on the negative-spectrum interval $(-9/4, 0)$, where
+$\theta_{1} < \theta_{2}$ are the two preimages of $\lambda$ under
+$f$ (\Cref{thm:2path-stieltjes}). The naive form fails because the
+eigenvectors of pentadiagonal Toeplitz are \emph{not} simple sinusoids
+— a tridiagonal-specific structure that does not survive bandwidth $2$.
+
+\subsection{F5. The asymmetric ``selector + dual'' framework}\label{sec:fm:asymmetric-dual}
+
+A natural reflex after the universal-lemma failure (F1) is to combine
+the max-degsum selector for $\dminus$ with a dual selector for $\dplus$,
+hoping the asymmetry between $\splus$ and $\sminus$
+(Elphick--Linz~\cite{ElphickLinz2023}) yields a tighter ceiling on the
+positive side. Direct computational test on the same corpus rules this
+out: positive-side and negative-side Rayleigh-tightness ratios for
+Lemma~B1 (and its positive-side dual) agree to within $3\%$, with no
+asymmetry to exploit. Moreover, the trace identity
+$\dplus(v) + \dminus(v) = 4$ at any degree-$2$ ear forces a one-to-one
+mapping between the two gains, so any one-sided selector for $\dminus$
+is automatically a selector for $\dplus$ at the reflected threshold;
+the dual framework collapses to a relabelling.
+
+\subsection{F6. The $\alpha\omega$ fallback route}\label{sec:fm:alpha-omega}
+
+Theorem~8.1 of \cite{AKMPZ2025} proves \Cref{conj:92} strictly under
+the hypothesis $\alpha(\graph) \omega(\graph) \le n/17$. This route is
+uniformly inapplicable to the $2$-tree class: every $2$-tree has
+$\omega(\graph) = 3$ (treewidth $2$ caps the max clique at a triangle),
+and the independence number $\alpha(\graph)$ scales linearly with $n$
+on every binding family — empirically on the corpus
+$(\alpha \omega)/n$ ranges between $0.8$ (books) and $1.0$ (paths),
+\emph{never} below $1/17 \approx 0.059$. The constant $1/17$ in
+Theorem~8.1 traces back to the slack $\epsilon = 1/16$ of the
+$P_{3}$-removal lemma; improving $17$ requires sharpening that slack,
+which is research upstream of our workstream. The $\alpha\omega$-route
+is therefore not the right fallback for $2$-trees.
+
+\subsection{F7. Sign error in Lemma~B1 optimisation}\label{sec:fm:sign-error}
+
+An intermediate draft of \Cref{lem:B1} had the wrong sign in the
+Rayleigh-quotient stationary equation
+($\beta^{2} + (\Monem/\Wm)\beta - \Wm = 0$ instead of the correct
+$\beta^{2} - (\Monem/\Wm)\beta - \Wm = 0$). This propagated into the
+identification of $\beta_{+}$ as the minimiser: the wrong-sign analysis
+identifies $\beta_{+} = (|\Monem| + \sqrt{(\Monem)^{2} + 4(\Wm)^{3}})/(2\Wm)$,
+whereas the correct minimiser is
+$\beta_{+} = (\sqrt{(\Monem)^{2} + 4(\Wm)^{3}} - |\Monem|)/(2\Wm)$.
+The displayed lemma bound happens to be unchanged (a luck-of-the-algebra
+coincidence: $R(\beta_{+}) = -\Wm/\beta_{+}$ rationalises to the same
+final formula in both cases), but the intermediate Case-B slot
+decomposition built on the wrong root identification gave a false
+$\dminus(\maxdeg) \ge 1$ claim. Spot-check at $L_{5}$ catches it:
+$\lambda_{\min}(\Adj(L_{5})) = -1.618$ exactly, while the wrong-sign
+formula predicts $+1.387$. The corrected proof in
+\Cref{sec:moment-form:lemma-B1} uses the right root throughout, and
+the falsified $\dminus(\maxdeg) \ge 1$ claim is downgraded to the
+conditional \Cref{lem:bminor-amin} plus the empirical
+\Cref{prop:bminor-census}.
+
+\subsection{F8. ``Floating-point certified'' $\neq$ interval-arithmetic certified}
+\label{sec:fm:fp-vs-interval}
+
+The $\dminus(\Ln) \ge 17/16 + 1/4$ certificate of \Cref{thm:2path-DK}
+uses \texttt{numpy.linalg.eigvalsh} with an \emph{a-posteriori}
+Demmel--Kahan forward-error bound \cite[Thm.~5.5]{DemmelANLA}. The
+resulting statement is engineering-rigorous \emph{conditional on} the
+coarse \texttt{dsyevd} envelope $c \le 10^{4}$: under that envelope
+the forward error on each computed eigenvalue is provably bounded by
+$8.88 \cdot 10^{-9}$ at $n \le 1000$ and the propagated $\dminus$
+forward error by $1.42 \cdot 10^{-4}$, far below the slack $0.257$;
+the envelope itself is plausible (over an order of magnitude above any
+published constant for backward-stable symmetric eigensolvers) but not
+formally derived for the exact LAPACK \texttt{dsyevd} pipeline within
+this paper, and the certificate is \emph{not} interval arithmetic. A truly interval-arithmetic certificate (via
+\texttt{mpmath} at, say, $50$ decimal digits, or via Krawczyk-style
+verified eigensolver) would be a strictly stronger guarantee. For our
+purposes the a-posteriori bound suffices; the upgrade path is
+mechanical.
+
+\subsection{F9. Simple-loop hypothesis for BBG-type asymptotic constants}
+\label{sec:fm:simple-loop}
+
+Bogoya--B\"ottcher--Grudsky \cite{BBG2015} and the related
+Avram--Parter / Widom-type effective constants for finite-$n$
+corrections to Szeg\H{o}'s theorem assume a \emph{simple-loop} symbol:
+$f$ traces the unit circle once as $\theta$ traverses $[-\pi, \pi]$,
+without singularities. Our pentadiagonal symbol
+$f(\theta) = 2\cos\theta + 2\cos 2\theta$ has zeros at both
+$\theta = \pi/3$ (interior, transversal) and $\theta = \pi$ (boundary),
+so the simple-loop hypothesis fails. The \emph{rate} of convergence in
+\Cref{thm:2path-stieltjes} — i.e.\ an explicit $n_{0}$ from which
+$|\Iv - \Iinf{L}| \le \epsilon$ for given $\epsilon$ — is therefore not
+available by off-the-shelf citation. The limit value
+$\Iinf{L} \approx 1.0157$ and its closed form are unaffected; the rate
+is recorded as open subobligation O13.1 of the workstream.
+
+\subsection{F10. The $2$-path is not the universal binding case for
+\texorpdfstring{$\Iv$}{I(v)}}\label{sec:fm:not-binding}
+
+An intermediate working hypothesis held that the $2$-path family
+asymptotic $\Iinf{L} \approx 1.0157$ is the binding case for the joint
+invariant $\Iv$ at the max-degsum ear of every $2$-tree, i.e.\ that
+$\Ivs \ge \Iinf{L}$ would close condition~(a) on general $2$-trees.
+This is false at finite~$n$: at $n = 10$ the caterpillar $2$-tree
+with graph6 \texttt{I\}qcHG\textasciigrave GO} satisfies
+$\Ivs = 0.6384$, which is below $\Iinf{L}$ by $\approx 0.38$ and below
+$\Iv$ on $L_{n}$ for every $n \in \{4, \ldots, 30\}$.
+
+Two consequences. First, the open problem \Cref{prob:general-a} is
+correctly framed as $\Ivs \ge \threshold = 0.4122$, not as
+$\Ivs \ge \Iinf{L}$; the corpus minimum gives slack $\approx 0.23$
+above $\threshold$ at the worst case. Second, a $2$-path-embedding
+monotonicity argument cannot close condition~(a) on general $2$-trees,
+since the caterpillar minimiser embeds a $2$-path that has
+$\Iv > 0.6384$ on its own (the $2$-path on $5$ vertices already has
+$\Iv = 0.79\ldots$). The structural lower bound \Cref{lem:cs-two-sided}
+— a moment-form functional rather than a subfamily comparison — is
+therefore the right tool. The caterpillar minimiser is preserved as a
+permanent regression fixture in
+\texttt{tests/fixtures/joint\_invariant\_falsified.json}.
+
+\subsection{Summary table}\label{sec:fm:summary}
+
+\Cref{app:fixtures} contains a tabular summary of failure modes
+F1--F10, with columns: identifier, the precise false statement,
+the smallest falsifying witness (combinatorial or numerical), and the
+regression fixture file.

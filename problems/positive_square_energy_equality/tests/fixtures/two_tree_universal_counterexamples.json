@@ -1,0 +1,22 @@
+[
+  {
+    "family": "book_with_tail",
+    "k": 50,
+    "t": 2,
+    "n": 54,
+    "tail_vertex": 53,
+    "supporting_edge": [2, 52],
+    "expected_delta_minus_max": 1.0625,
+    "description": "Structured BT(k,2) counterexample to the universal 2-tree ear deletion lemma; tail ear has delta^- below 17/16."
+  },
+  {
+    "family": "book_with_tail",
+    "k": 100,
+    "t": 2,
+    "n": 104,
+    "tail_vertex": 103,
+    "supporting_edge": [2, 102],
+    "expected_delta_minus_max": 1.0625,
+    "description": "Larger structured BT(k,2) counterexample; delta^- is farther below 17/16."
+  }
+]

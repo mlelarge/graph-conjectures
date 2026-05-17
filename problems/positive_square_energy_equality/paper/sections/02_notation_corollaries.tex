@@ -1,0 +1,122 @@
+\section{Notation, easy directions, and Corollaries~A and~B}\label{sec:notation}
+
+\subsection{Notation}\label{sec:notation:basic}
+
+All graphs are finite, simple, and undirected. Let $\graph$ be a graph
+of order $n$, write $|E(\graph)|$ for its edge count, and let
+$\Adj(\graph)$ denote its (symmetric, $0/1$) adjacency matrix. We
+order the eigenvalues of $\Adj(\graph)$ decreasingly,
+$\lambda_{1}(\graph) \ge \cdots \ge \lambda_{n}(\graph)$, and define
+\[
+\splus(\graph) := \sum_{i: \lambda_{i}(\graph) > 0} \lambda_{i}(\graph)^{2},
+\qquad
+\sminus(\graph) := \sum_{i: \lambda_{i}(\graph) < 0} \lambda_{i}(\graph)^{2}.
+\]
+The trace identity
+$\tr\bigl(\Adj(\graph)^{2}\bigr) = \splus(\graph) + \sminus(\graph) =
+2|E(\graph)|$ is standard. The \emph{positive} and \emph{negative
+inertia} are
+$n^{+}(\graph) := |\{i : \lambda_{i}(\graph) > 0\}|$ and
+$n^{-}(\graph) := |\{i : \lambda_{i}(\graph) < 0\}|$.
+
+A \emph{$2$-tree} is a graph constructed inductively starting from
+$K_{2}$ by repeatedly adding a new vertex adjacent to both endpoints of
+an existing edge. Equivalently, a $2$-tree is a maximal chordal graph
+of treewidth $2$; every maximal clique is a triangle. The
+\emph{clique tree} $\cliqtree(\graph)$ of a $2$-tree has the
+$n - 2$ triangles of $\graph$ as nodes and an edge between any two
+triangles sharing an edge of $\graph$; $\cliqtree(\graph)$ is itself a
+tree. A vertex $v$ of $\graph$ is \emph{simplicial} if its neighbourhood
+$N_{\graph}(v)$ is a clique. The simplicial degree-$2$ vertices of a
+$2$-tree are precisely the apex vertices of leaf triangles of
+$\cliqtree(\graph)$; for such a vertex $v$ with neighbours $\{a, b\}$,
+the edge $\{a, b\}$ (which lies in $\graph$) is its \emph{supporting
+edge}. We write $\Hgraph := \graph - v$ for the deletion of $v$, and
+note that $\Hgraph$ is itself a $2$-tree on $n - 1$ vertices.
+
+\subsection{Easy forward implications}\label{sec:notation:easy}
+
+The forward direction of \Cref{conj:92} is elementary. If $\graph = T$
+is a tree on $n$ vertices, $T$ is bipartite, so $\spec(\Adj(T))$ is
+symmetric about $0$ and the trace identity gives
+$\splus(T) = \sminus(T) = |E(T)| = n - 1$. If $\graph = K_{n}$, the
+adjacency matrix is $J - I$ where $J$ is the all-ones matrix, with
+spectrum $\{n - 1\} \cup \{-1\}^{(n-1)}$; hence
+$\splus(K_{n}) = (n - 1)^{2}$ and $\sminus(K_{n}) = n - 1$. The
+substantive content of \Cref{conj:92} is the converse direction in each
+part.
+
+\subsection{Corollary~A: Conjecture~9.2(i) for connected claw-free graphs}
+\label{sec:notation:corA}
+
+\begin{corollary}[Conjecture~9.2(i) for connected claw-free graphs]
+\label{cor:A}
+If $\graph$ is a connected claw-free graph with $\splus(\graph) = n - 1$,
+then $\graph$ is a tree.
+\end{corollary}
+
+\begin{proof}
+We split on the maximum degree $\Delta(\graph)$.
+
+If $\Delta(\graph) \ge 3$, Theorem~1.1 of \cite{AKMPZ2025} gives
+$\splus(\graph) \ge n$, contradicting the hypothesis
+$\splus(\graph) = n - 1$.
+
+If $\Delta(\graph) \le 2$, $\graph$ is a path or a cycle. Paths are
+trees, and the conclusion holds. For a cycle $C_{m}$ on $m \ge 3$
+vertices, the spectrum of $\Adj(C_{m})$ is
+$\{2 \cos(2\pi k / m) : 0 \le k < m\}$, with $\lambda_{1}(C_{m}) = 2$
+and the remaining eigenvalues distributed symmetrically around $0$
+when $m$ is even. A short calculation using
+$\sum_{k} \cos^{2}(2\pi k / m) = m/2$ for $m \ge 3$ gives
+$\splus(C_{m}) \ge m \ne m - 1$, contradicting the hypothesis. Hence
+$\graph$ must be a path, i.e.\ a tree.
+\end{proof}
+
+\begin{remark}\label{rem:Pjkl}
+The proof above delegates the heavy lifting on claw-free graphs of
+maximum degree $\ge 3$ — in particular the infinite family
+$P(j, k, \ell)$ of subdivided-$K_{4}$-like 2-trees, where claw-freeness
+coexists with unicyclic structure — to Theorem~1.1 of \cite{AKMPZ2025}.
+We do not reprove that case here.
+\end{remark}
+
+\subsection{Corollary~B: Conjecture~9.2(i) for diameter $\le 2$}
+\label{sec:notation:corB}
+
+\begin{corollary}[Conjecture~9.2(i) for $\diam(\graph) \le 2$]
+\label{cor:B}
+If $\graph$ is a connected graph with $\diam(\graph) \le 2$ and
+$\splus(\graph) = n - 1$, then $\graph$ is a tree.
+\end{corollary}
+
+\begin{proof}
+We split on the diameter. If $\diam(\graph) = 0$ then $\graph = K_{1}$,
+trivially a tree. If $\diam(\graph) = 1$ then $\graph = K_{n}$, so
+$\splus(\graph) = (n - 1)^{2}$; the hypothesis
+$\splus(\graph) = n - 1$ then forces $n = 2$, and $\graph = K_{2}$ is a
+tree.
+
+If $\diam(\graph) = 2$, Theorem~1.2 of \cite{AKMPZ2025} gives
+$\splus(\graph) \ge n$ except for $\graph \in \{K_{1, n-1}, C_{5}\}$.
+The hypothesis $\splus(\graph) = n - 1$ therefore excludes everything
+outside these two cases. The star $K_{1, n-1}$ is a tree, with
+$\splus(K_{1, n-1}) = n - 1$ — consistent with the hypothesis. The
+5-cycle $C_{5}$ has spectrum
+$\{2, 2\cos(2\pi/5), 2\cos(2\pi/5), 2\cos(4\pi/5), 2\cos(4\pi/5)\}$,
+giving $\splus(C_{5}) = 4 + 2(2\cos(2\pi/5))^{2} = 4 + (3 - \sqrt{5})
+= 7 - \sqrt{5} \approx 4.764 > 4 = n - 1$, contradicting the hypothesis. Hence
+the only graph compatible with $\splus = n - 1$ at diameter~$2$ is the
+star, which is a tree.
+\end{proof}
+
+\subsection{The slack: why these corollaries are not the paper}
+\label{sec:notation:slack}
+
+Corollaries~\ref{cor:A} and~\ref{cor:B} are short consequences of
+Theorems~1.1 and~1.2 of \cite{AKMPZ2025}: each rules out
+$\splus = n - 1$ on its class by a strict inequality already proved in
+the source paper, and then exhausts the exceptional cases by hand.
+These deductions verify the toolkit and serve as an entry point to the
+harder content of \Cref{sec:lprime,sec:subfamily,sec:moment-form}; they
+do not by themselves constitute new results.

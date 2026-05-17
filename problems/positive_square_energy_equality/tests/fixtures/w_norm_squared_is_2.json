@@ -1,0 +1,8 @@
+{
+  "doc": "Regression fixture for plan v9 bug fix. $w = e_a + e_b$ as a vector in R^{n-1} has ||w||^2 = 2 regardless of whether ab is an edge in H = G - v.",
+  "cases": [
+    {"family": "K_3 ear deletion", "n": 3, "a": 0, "b": 1, "ab_is_edge_in_H": false, "w_norm_squared": 2.0},
+    {"family": "B_3 ear deletion", "n": 5, "a": 0, "b": 1, "ab_is_edge_in_H": true, "w_norm_squared": 2.0},
+    {"family": "L_5 ear deletion (vertex 0)", "n": 5, "a": 1, "b": 2, "ab_is_edge_in_H": true, "w_norm_squared": 2.0}
+  ]
+}

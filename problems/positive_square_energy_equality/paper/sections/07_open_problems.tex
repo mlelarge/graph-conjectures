@@ -1,0 +1,125 @@
+\section{Open problems and outlook}\label{sec:open-problems}
+
+We have proved $\Lprime$ on two subfamilies (books and the $2$-path
+asymptotic), exhibited the bad-tail-ear asymptotic on $\BTkt{k}{2}$
+that refutes the universal form, partially closed condition~(b) of
+the joint-invariant
+ansatz on Case-B max-degsum ears, and produced a two-sided
+Cauchy--Schwarz structural lower bound (\Cref{lem:cs-two-sided}) on
+$\Iv$ that falls $\approx 0.016$ short of $\threshold$ at the worst
+empirical case. Empirically, the minimum of $\Ivs$ across the working
+corpus is $0.6384$, attained at an $n = 10$ caterpillar $2$-tree
+(graph6 \texttt{I\}qcHG\textasciigrave GO}); the $2$-path is
+\emph{not} the universal binding case (F10). Two critical-path items
+remain: condition~(b) on general $2$-trees (\Cref{prob:slot-shift}, the
+slot-shift wall) and condition~(a) on general $2$-trees
+(\Cref{prob:general-a}, a structural-sufficiency gap).
+
+\subsection{Problem~A: condition~(b), the slot-shift wall}\label{sec:open:slot-shift}
+
+\begin{problem}[The slot-shift wall]\label{prob:slot-shift}
+Let $\graph$ be a $2$-tree on $n \ge 4$ vertices, $v$ a simplicial
+degree-$2$ ear of $\graph$ with $\Iv \ge \threshold$, and write
+$J^{-}(\Hgraph) := \{j : \earmu_{j}(\Hgraph) < 0\}$. Establish either
+of the following two cases.
+\begin{itemize}
+\item \emph{Case A} ($n^{-}(\graph) = n^{-}(\Hgraph)$):
+\[
+\sum_{j \in J^{-}(\Hgraph)}
+\bigl(\lambda_{j+1}(\graph)^{2} - \earmu_{j}(\Hgraph)^{2}\bigr)
+\;\ge\; \tfrac{17}{16}.
+\]
+\item \emph{Case B} ($n^{-}(\graph) = n^{-}(\Hgraph) + 1$):
+\[
+\alpha_{\text{top}}^{2} +
+\sum_{j \in J^{-}(\Hgraph)}
+\bigl(\lambda_{j+1}(\graph)^{2} - \earmu_{j}(\Hgraph)^{2}\bigr)
+\;\ge\; \tfrac{17}{16},
+\]
+where $\alpha_{\text{top}} := \lambda_{n - n^{-}(\Hgraph)}(\graph)$ is
+the \emph{least}-magnitude $G$-negative eigenvalue.
+\end{itemize}
+\end{problem}
+
+The slot-shift sum is the unified bottleneck across Cases~A and~B; in
+Case~B the extra non-negative term $\alpha_{\text{top}}^{2}$ helps
+nominally but can be as small as $\sim 10^{-3}$ in absolute value
+(\Cref{rem:bminor-F11}), so it does not by itself supply the slack.
+Standard perturbation tools (Lehmann--Goerisch, Temple, Aronszajn) are
+too weak in the cancellation regime where $\alpha_{\min}^{2}$ and
+$\earmu_{n-1}^{2}$ are both large while their difference is small. The
+$\BTkt{50}{2}$ tail-ear example has $\alpha_{\min}^{2} \approx 90$ and
+$\earmu_{n-1}^{2} \approx 90$ but $\dminus \approx 1.06$, illustrating
+the cancellation. Plausibly the right tool is a quantitative
+strict-slack refinement of the chordal-graph Sylvester argument that
+gives the trivial floor $\dminus(v) \ge 0$, or a Cauchy-style integral
+representation of the slot-shift sum via residues of the secular
+function $\lambda \mapsto \sum_{i} \earc_{i}^{2}/(\lambda - \earmu_{i})$.
+
+\subsection{Problem~B: condition~(a) on general $2$-trees}\label{sec:open:general-a}
+
+\begin{problem}[Condition~(a) on general $2$-trees]\label{prob:general-a}
+Show that $\Ivs \ge \threshold = 0.4122$ for every $2$-tree on
+$n \ge 4$ vertices, where $\maxdeg$ is the max-degsum simplicial
+degree-$2$ ear.
+\end{problem}
+
+The corpus minimum of $\Ivs$ is $0.6384$, attained at an $n = 10$
+caterpillar $2$-tree and \emph{not} on the $2$-path family (F10), so
+empirically there is $\approx 0.23$ of slack above $\threshold$ at the
+worst case. The two-sided Cauchy--Schwarz structural lower bound
+\Cref{lem:cs-two-sided} achieves $\approx 0.396$ uniformly on the
+corpus — $\approx 0.016$ below $\threshold$ — so the existing
+structural toolkit is \emph{almost} sufficient but not quite. The
+residual obstacle is a \emph{structural-sufficiency gap}: the four
+moments $(\Wm, \Wz, |\Monem|, \Mtwo)$ at a simplicial ear are
+insufficient to pin $\Iv$ at finite~$n$ on the caterpillar minimiser. A
+natural sharpening of \Cref{lem:cs-two-sided} incorporates a fifth
+clique-tree quantity capturing the position of the ear's leaf triangle
+within $\cliqtree(\Hgraph)$ — for example the diameter or eccentricity
+of the leaf in the clique tree, or a depth invariant — and would yield
+a five-variable lower bound. A clique-tree Schur-complement induction
+with this added bookkeeping is the natural attack. The residual
+obstacle is \emph{structurally distinct} from the slot-shift wall of
+\Cref{prob:slot-shift}. The reduction map of
+\Cref{sec:lprime:reduction} is a conjunction of conditions: under
+condition~(a) (\Cref{cond:a}) the max-degsum ear clears
+$\Ivs \ge \threshold$, and under condition~(b) (\Cref{cond:b}) that
+threshold lifts to $\dminus(\maxdeg) \in [17/16, 47/16]$. Hence
+\[
+\Lprime \text{ at } \maxdeg \;\Longleftarrow\;
+\text{(condition (a))} \;\wedge\; \text{(condition (b))}.
+\]
+Closing \Cref{conj:92} on $2$-trees through the infrastructure of
+this paper requires closing \emph{both} \Cref{prob:general-a}
+(condition~(a)) \emph{and} \Cref{prob:slot-shift} (condition~(b))
+— or supplying an independent bridge that bypasses one of the two
+conditions. Closing either problem alone, in isolation, does not
+suffice.
+
+\subsection{Outlook}\label{sec:open:outlook}
+
+Three further directions are worth flagging.
+
+First, on the $2$-tree front: the $\BTkt{k}{t}$ family for $t \ge 3$ is
+the natural next adversarial input. The universal lemma fails worse
+there than at $t = 2$ — the asymptotic bad-ear $\dminus$ drops below
+$1.0353$ as $t$ grows — but the selector lemma is empirically robust;
+verifying that condition~(a) of \Cref{cnj:joint-invariant} extends
+uniformly to $\BTkt{k}{t}$ would sharpen \Cref{prop:bminor-census} into
+an honest pre-asymptotic statement on a two-parameter family.
+
+Second, beyond $2$-trees: the residue-control programme of
+\cite[\S 8]{AKMPZ2025} and the chordal-graph generalisation of our
+clique-tree machinery (\Cref{lem:walk-moments,lem:sigma-floor}) are
+natural next targets. The walk-moment identity
+$\Mtwo = \degsum(v) + 2|T_{ab}(\Hgraph)|$ is specific to graphs where
+the supporting edge lies in triangles, but generalises to chordal
+graphs of treewidth $k$ with appropriate $k$-clique counting.
+
+Third, \Cref{conj:92} in full remains open and was assessed by the
+authors of \cite{AKMPZ2025} as one of the central open problems in the
+area. Closing it on $2$-trees is a tractable slice, not a known step
+in an induction toward the full conjecture; the analytical content
+required for general chordal graphs, let alone arbitrary graphs, is
+plausibly orthogonal to the moment-form framework developed here.

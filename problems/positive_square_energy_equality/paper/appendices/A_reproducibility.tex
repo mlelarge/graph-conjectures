@@ -1,0 +1,164 @@
+\section{Reproducibility and software supplement}\label{app:reproducibility}
+
+\subsection{Repository pointer}\label{app:repro:repo}
+
+A software supplement accompanies this paper at
+\url{https://github.com/<TBD>/positive_square_energy_equality}, git
+commit hash \texttt{TBD}. The supplement contains:
+\begin{itemize}
+\item the corpus of $2$-tree adjacency data
+(\texttt{data/two\_trees\_n*.json},
+\texttt{data/joint\_invariant\_scan*.json},
+\texttt{data/case\_AB\_census.json});
+\item all scripts used in the numerical proofs (\texttt{scripts/}),
+including \texttt{spectrum\_check.py}, \texttt{two\_tree\_enum.py},
+\texttt{mpmath\_certify.py}, \texttt{joint\_invariant\_features.py},
+\texttt{half\_line\_stieltjes.py};
+\item the test suite (\texttt{tests/}), $539$ tests passing at
+submission, regression-locking each theorem and failure mode to a
+named test or fixture file;
+\item the companion technical notes referenced throughout the paper
+(\texttt{docs/lprime\_*.md}).
+\end{itemize}
+The supplement is licensed under the BSD-3 clause; all data files are
+in human-readable JSON or graph6 plain-text.
+
+\subsection{The working corpus}\label{app:repro:corpus}
+
+The numerical claims of the paper rest on the following corpus of
+$2$-trees:
+\begin{itemize}
+\item Enumerated $2$-trees with $n \in \{4, \ldots, 10\}$: $724$ graphs
+(enumerated up to isomorphism by the standard 2-tree construction
+\texttt{scripts/two\_tree\_enum.py}).
+\item Random $2$-trees with $n \in \{15, 20, 30, 50, 100\}$, $50$ seeds
+each: $250$ graphs (constructed by attaching each new vertex to a
+uniformly random existing edge, with reproducible seeding via
+\texttt{random.Random(seed)}).
+\item $\BTkt{k}{2}$ for $k \in \{2, 5, 10, 25, 50, 100\}$: $6$
+structured graphs.
+\item Books $\Bk$ for $k \in \{2, \ldots, 30\}$: $29$ graphs.
+\item $2$-paths $\Ln$ for $n \in \{4, \ldots, 30\}$: $27$ graphs.
+\item Fans $\Fn$ for $n \in \{4, \ldots, 30\}$: $27$ graphs.
+\end{itemize}
+Total: $1063$ graphs, $2628$ max-degsum ear records, $8890$ all-ear
+records. The b.minor census of \Cref{prop:bminor-census} uses the
+$2235$-record subset that excludes the random-$2$-tree contribution
+(restricting to enumerated, books, BT, $L_{n}$, $F_{n}$).
+
+\subsection{The Demmel--Kahan certificate}\label{app:repro:DK}
+
+The precision protocol used to certify \Cref{thm:2path-DK}:
+\begin{enumerate}
+\item Compute eigenvalues
+$\tilde\lambda_{i}(\Adj(\Ln))$ for each $n \in [4, 1000]$ in IEEE-754
+double precision via \texttt{numpy.linalg.eigvalsh}, whose default
+backend is LAPACK's \texttt{dsyevd} (Householder tridiagonalisation
+followed by symmetric divide-and-conquer).
+
+\item Apply the Demmel--Kahan-style a-posteriori bound
+\cite[Thm.~5.5]{DemmelANLA}: the forward error on each eigenvalue
+satisfies $|\tilde\lambda_{i} - \lambda_{i}| \le C_{n} \cdot \|\Adj(\Ln)\|_{2}
+\cdot \varepsilon_{\text{mach}}$ with $C_{n} \le c\, n$ for an absolute
+constant $c$ from the backward-error analysis. We take the
+conservative working envelope $c \le 10^{4}$ (overshooting published
+constants for backward-stable symmetric eigensolvers by at least one
+order of magnitude; see \Cref{rem:fp-vs-interval} for the honest
+status of this constant — it is consistent with the literature on
+the Householder-plus-divide-and-conquer pipeline used by
+\texttt{dsyevd}, but a fully formal derivation of an explicit
+\texttt{dsyevd}-specific envelope constant is beyond the scope of this
+paper). With $\|\Adj(\Ln)\|_{2} \le \|f\|_{\infty} = 4$ the
+per-eigenvalue bound is $\le 8.88 \cdot 10^{-12}\, n \le 8.88 \cdot
+10^{-9}$ at $n \le 1000$, and the propagated $\tilde s_{n}^{-}$ error
+is $\le 7.1 \cdot 10^{-5}$ uniformly across $n \in [4, 1000]$ (cf.\
+\Cref{thm:2path-DK}).
+
+\item The numerical slack is $\tilde\delta_{n}^{-} - 17/16 \ge 0.257$
+for every $n \in [4, 1000]$, with minimum attained at $n = 6$. After
+subtracting the propagated $\dminus$ forward-error bound
+$\le 1.42 \cdot 10^{-4}$, the certified slack is
+$\ge 0.257 - 1.5 \cdot 10^{-4} > 1/4$.
+\end{enumerate}
+The certificate is reproduced end-to-end by
+\texttt{tests/test\_mpmath\_certify.py}. The stored mpmath companion
+certificate at
+\texttt{data/two\_path\_mpmath\_certificate.json} consists of $17$
+records (a curated subset $n \in \{4, 5, \ldots, 10, 12, 15, 20, 30,
+50, 80, 100, 130, 160, 200\}$ chosen to include the empirical
+worst-case $n = 6$ together with a logarithmically-spaced tail) computed
+at $50$ decimal digits via \texttt{mpmath.eigsy}; for runtime budget
+the test suite spot-checks $9$ of these cases ($n \in \{4, 5, 6, 7, 8, 10,
+20, 50, 100\}$) at $30$ decimal digits, which still gives $\sim 25$
+digits of headroom on every computed quantity. The full $50$-digit
+records are present in the JSON for offline inspection. All checks
+pass.
+
+\subsection{The Stieltjes-transform identification}\label{app:repro:stieltjes}
+
+The closed-form value
+$\Iinf{L} = 2(310\pi^{2} - 837\sqrt{3}\pi + 2187)/(27\pi(20\pi - 27\sqrt{3}))$
+of \Cref{thm:moment-form-stieltjes} is derived as follows.
+
+\begin{enumerate}
+\item \emph{Boundary density.} On the negative branch
+$\lambda \in (-9/4, 0)$ the half-line spectral density of $\Adj(L_{\infty})$
+tested against $\earw = e_{1} + e_{2}$ is the signed angle gap
+$\rho_{w}(\lambda) = \sin(\theta_{2} - \theta_{1})/\pi$ (Step~3 of the
+proof of \Cref{thm:2path-stieltjes}).
+
+\item \emph{Moments.} Substituting $\lambda = f(\theta_{1})$ with
+$\theta_{2} = \arccos(-1/2 - \cos\theta_{1})$, change of variables and
+trigonometric integration give
+\[
+\Wm_{\infty} = 1 - \tfrac{3\sqrt{3}}{4\pi},
+\quad
+\Monem[1, \infty] = \tfrac{2}{3} - \tfrac{9\sqrt{3}}{4\pi},
+\quad
+\Mtwom[2, \infty] = 3 - \tfrac{81\sqrt{3}}{20\pi}.
+\]
+The script \texttt{scripts/half\_line\_stieltjes.py} performs the
+sympy computation symbolically and verifies against numerical
+quadrature at $20$-digit precision.
+
+\item \emph{Closed-form assembly.}
+$\Iinf{L} = \Wm_{\infty} + (\Monem[1, \infty])^{2}/\Mtwom[2, \infty]$
+simplifies to the displayed rational function of $\pi$ and $\sqrt{3}$.
+Numerically $\Iinf{L} \approx 1.01574$, exceeding $\threshold = 0.4122$
+by $\approx 0.604$.
+\end{enumerate}
+Reproducibility: the symbolic
+$\Iinf{L}$ closed form, the moment expressions, the $G_{w} = s^{2} + s
+- p$ collapse, and the spectral-density formula
+$\rho_{w} = \sin(\theta_{2} - \theta_{1})/\pi$ are regression-locked at
+the \texttt{sympy} level by
+\texttt{tests/test\_half\_line\_stieltjes.py} (in particular,
+\texttt{test\_symbolic\_moments\_match\_candidate\_closed\_form} and
+\texttt{test\_I\_inf\_closed\_form} verify the symbolic differences are
+exactly zero, and \texttt{test\_unsigned\_moments\_match\_matrix\_moments}
+crosschecks the full-spectrum unsigned moments against
+$(M_{0}, M_{1}, M_{2}) = (2, 2, 7)$ by quadrature). The finite-$n$
+convergence harness for $\dminus(\Ln) \to \dminus_{\infty}$ on
+$n \in [4, 200]$ is in
+\texttt{tests/test\_two\_path\_widom\_tightness.py}.
+
+\subsection{Theorem-to-test cross reference}\label{app:repro:xref}
+
+Each numbered statement of the paper is regression-locked to a named
+test file:
+\begin{itemize}
+\item \Cref{thm:books} \(\to\) \texttt{tests/test\_lprime\_subfamilies.py}
+\item \Cref{thm:2path-szego} \(\to\) \texttt{tests/test\_lprime\_subfamilies.py}
+\item \Cref{thm:BT-asymptotic} \(\to\) \texttt{tests/test\_lprime\_subfamilies.py}
+\item \Cref{thm:2path-DK} \(\to\) \texttt{tests/test\_mpmath\_certify.py}
+\item \Cref{thm:2path-stieltjes} \(\to\) \texttt{tests/test\_half\_line\_stieltjes.py} (symbolic closed forms for $\rho_{w}$, the boundary system, and $G_{w} = s^{2} + s - p$); \texttt{tests/test\_two\_path\_widom\_tightness.py} (finite-$n$ convergence harness)
+\item \Cref{lem:walk-moments} \(\to\) \texttt{tests/test\_w\_norm\_squared\_invariant.py}
+\item \Cref{lem:B1} \(\to\) \texttt{tests/test\_joint\_invariant\_candidates.py}
+\item \Cref{lem:cs-two-sided} \(\to\) \texttt{tests/test\_lprime\_5e\_a\_general.py}
+\item \Cref{prop:common-edge-books} \(\to\) \texttt{tests/test\_lprime\_subfamilies.py}
+\item \Cref{lem:bminor-amin}, \Cref{prop:bminor-census} \(\to\) \texttt{tests/test\_b\_minor.py}, \texttt{tests/test\_max\_degsum\_selector.py}
+\item \Cref{thm:moment-form-stieltjes} \(\to\) \texttt{tests/test\_half\_line\_stieltjes.py} (symbolic verification of the $\Iinf{L}$ closed form, including the symbolic equality of the three negative-branch moments and of the assembled $\Iinf{L}$ expression); \texttt{tests/test\_two\_path\_widom\_tightness.py} (the $n \le 200$ finite-$n$ convergence harness, including the trace identity and $O(1/n)$ tail constant)
+\end{itemize}
+Failure modes F1--F10 of \Cref{sec:failure-modes} are each backed by
+either a regression fixture in \texttt{tests/fixtures/} or an
+analytical witness; see \Cref{app:fixtures} for the table.

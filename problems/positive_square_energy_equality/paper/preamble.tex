@@ -1,0 +1,124 @@
+% =====================================================================
+% Packages
+% =====================================================================
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{enumitem}
+
+\usepackage[colorlinks=true,linkcolor=blue!50!black,citecolor=blue!50!black,urlcolor=blue!50!black]{hyperref}
+\usepackage[capitalise,noabbrev]{cleveref}
+\usepackage{url}
+
+\usepackage{xcolor}
+% Skeleton placeholders. \stub{...} is a robust paragraph-level marker
+% that handles itemize/enumerate/math display inside; do NOT use the
+% todonotes package — amsart's narrow marginpar geometry breaks its tikz
+% rendering.
+% For final submission, redefine \stub to swallow its argument; see
+% Makefile target `final`.
+\providecommand{\stub}[1]{%
+  \par\medskip\noindent
+  \fcolorbox{orange!60!black}{orange!8}{%
+    \begin{minipage}{\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax}
+    \small\itshape\textbf{[TODO]}\hspace{0.5em}#1
+    \end{minipage}%
+  }\par\medskip
+}
+% Alias \todo to \stub for compatibility with any leftover macros.
+\providecommand{\todo}[1]{\stub{#1}}
+
+% =====================================================================
+% Theorem environments (AMS style)
+% =====================================================================
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{problem}{Problem}[section]
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{conjecture}[theorem]{Conjecture}
+
+% =====================================================================
+% Macros — graphs and basic objects
+% =====================================================================
+\newcommand{\Adj}{A}                          % adjacency matrix
+\newcommand{\graph}{G}
+\newcommand{\Hgraph}{H}
+\newcommand{\splus}{s^{+}}                    % positive square energy
+\newcommand{\sminus}{s^{-}}                   % negative square energy
+\newcommand{\splusG}{\splus(\graph)}
+\newcommand{\sminusG}{\sminus(\graph)}
+\newcommand{\splusH}{\splus(\Hgraph)}
+\newcommand{\sminusH}{\sminus(\Hgraph)}
+
+% Ear-gain quantities
+\newcommand{\dplus}{\delta^{+}}
+\newcommand{\dminus}{\delta^{-}}
+
+% Two-tree families
+\newcommand{\Bk}{B_{k}}
+\newcommand{\Ln}{L_{n}}
+\newcommand{\BTkt}[2]{\mathrm{BT}(#1,#2)}
+\newcommand{\Fn}{F_{n}}
+\newcommand{\Spider}[3]{S(#1,#2,#3)}
+
+% =====================================================================
+% Macros — spectral quantities at an ear
+% =====================================================================
+\newcommand{\earw}{w}                         % w = e_a + e_b
+\newcommand{\earc}{c}                         % c_i = w^T u_i
+\newcommand{\earmu}{\mu}                      % eigenvalue of A(H)
+\newcommand{\Wm}{W^{-}}
+\newcommand{\Wp}{W^{+}}
+\newcommand{\Wz}{W^{0}}
+\newcommand{\Mkm}{M_{k}^{-}}
+\newcommand{\Mkp}{M_{k}^{+}}
+\newcommand{\Mone}{M_{1}}
+\newcommand{\Mtwo}{M_{2}}
+% Optional argument lets these compose with extra subscripts (e.g.
+% asymptotic forms): \Monem -> M_1^-, \Monem[1,\infty] -> M_{1,\infty}^-.
+\newcommand{\Monem}[1][1]{M_{#1}^{-}}
+\newcommand{\Mtwom}[1][2]{M_{#1}^{-}}
+\newcommand{\Monep}[1][1]{M_{#1}^{+}}
+\newcommand{\Mtwop}[1][2]{M_{#1}^{+}}
+
+% Joint invariant and threshold
+\newcommand{\Iv}{I(v)}
+\newcommand{\Ivs}{I(v^{*})}
+\newcommand{\Iinf}[1]{I_{\infty}(#1)}
+\newcommand{\threshold}{T}
+
+% Selector quantities
+\newcommand{\degsum}{\sigma}                  % deg_H(a) + deg_H(b)
+\newcommand{\cliqtree}{T}                     % clique tree of G
+\newcommand{\maxdeg}{v^{*}}                   % max-degsum ear
+
+% =====================================================================
+% Conventions / phrases
+% =====================================================================
+\newcommand{\Lprime}{(\mathrm{L}')}
+\DeclareMathOperator{\spec}{spec}
+\DeclareMathOperator{\tr}{tr}
+\DeclareMathOperator{\rank}{rank}
+\DeclareMathOperator{\diag}{diag}
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator{\sgn}{sgn}
+\DeclareMathOperator{\diam}{diam}
+
+% Reference shortcuts
+\newcommand{\arXiv}[1]{\href{https://arxiv.org/abs/#1}{arXiv:#1}}

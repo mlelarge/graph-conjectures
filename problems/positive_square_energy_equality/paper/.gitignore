@@ -1,0 +1,10 @@
+# LaTeX build intermediates (recoverable via latexmk)
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.toc
+*.synctex.gz

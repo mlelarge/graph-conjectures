@@ -1,0 +1,58 @@
+\documentclass[11pt,reqno]{amsart}
+
+\input{preamble}
+
+\title[Square energy on 2-trees]{Towards positive-square-energy equality on
+2-trees: subfamily closures, an existential ear-selection lemma, and a
+moment-form candidate}
+
+\author{TBD}
+% TODO: finalise author list, affiliations, ORCIDs.
+% Roles 1 (spectral graph theory lead), 3 (structural/clique-tree),
+% 5 (reviewer / senior), plus Phase-7/8/9/10/11 contributors.
+
+\date{\today}
+\thanks{Software supplement: \url{https://github.com/<TBD>/positive_square_energy_equality}.
+Git commit hash: \texttt{TBD}.}
+
+\subjclass[2020]{05C50, 05C75, 15A18, 15A42, 47B36}
+\keywords{positive square energy, negative square energy, 2-trees, chordal
+graphs, max-degsum selector, Cauchy interlacing, Szeg\H{o} theorem,
+Toeplitz matrix, Stieltjes transform, joint invariant}
+
+\begin{document}
+
+\begin{abstract}
+\input{abstract}
+\end{abstract}
+
+\maketitle
+
+% =====================================================================
+% Main body
+% =====================================================================
+
+\input{sections/01_intro}
+\input{sections/02_notation_corollaries}
+\input{sections/03_lprime_reformulation}
+\input{sections/04_subfamily_theorems}
+\input{sections/05_moment_form_ansatz}
+\input{sections/06_failure_modes}
+\input{sections/07_open_problems}
+
+% =====================================================================
+% Appendices
+% =====================================================================
+
+\appendix
+\input{appendices/A_reproducibility}
+\input{appendices/B_fixtures}
+
+% =====================================================================
+% Bibliography
+% =====================================================================
+
+\bibliographystyle{amsplain}
+\bibliography{references}
+
+\end{document}

@@ -4,7 +4,14 @@ Source: arXiv:2506.07264, *Refinement of a conjecture on positive square energy 
 
 **Revision history.**
 
-- **v6** (this version): incorporates the mathematician pass: make **2-trees** the first
+- **v7** (this version): incorporates the Phase 3 falsification of the universal
+  2-tree ear lemma. The plan now records the trace identity
+  $\delta^+(v)+\delta^-(v)=4$, the structured $\mathrm{BT}(k,2)$ and random
+  counterexamples to "every ear works", and replaces the target by the existential
+  ear-selection lemma (L'): at each 2-tree step, find **some** simplicial degree-2 ear
+  with both gains at least $17/16$. Regression fixtures for the false universal lemma
+  now live under `tests/fixtures/`.
+- **v6**: incorporated the mathematician pass: make **2-trees** the first
   serious target, formulate the needed simplicial-ear deletion lemma, and add a dedicated
   computational/proof subtask. This is explicitly a new local spectral lemma, not an
   application of the induced-$P_3$ removal lemma, since a 2-tree ear lies in a triangle.
@@ -213,14 +220,44 @@ Target theorem:
 > tree equality case, $K_3$ is the complete-graph equality case for $s^-$, and every
 > 2-tree with $n\ge 4$ satisfies $s^+(G)>n-1$ and $s^-(G)>n-1$.
 
-The whole target reduces to the following local lemma.
+The universal local lemma proposed in v6 is **false**:
 
-> **2-tree ear deletion lemma.** Let $G$ be a 2-tree with $n\ge 4$, and let $v$ be a
-> simplicial vertex of degree $2$. Then, for the desired sign,
+> False universal lemma: every simplicial degree-2 vertex $v$ of every 2-tree
+> satisfies
 > $$s^\pm(G)\ge s^\pm(G-v)+\frac{17}{16}.$$
 
-If this lemma holds for both signs, iteratively delete simplicial degree-2 vertices
-until $K_3$ remains. With $k=n-3$,
+Counterexamples:
+
+- Structured family $\mathrm{BT}(k,2)$: take a book $B_k$ on spine $\{0,1\}$ and attach
+  a two-triangle tail beginning at edge $\{0,2\}$. The terminal tail ear has
+  $\delta^-=s^-(G)-s^-(G-v)<17/16$ for large $k$; e.g. $k=50$ gives
+  $\delta^-\approx 1.0575$ on $n=54$ vertices, and the values appear to tend toward
+  roughly $1.034$.
+- Random 2-trees also produce universal-form violations, e.g. a seed-149 example at
+  $n=100$ with $\delta^-\approx 1.0610$, and tail-ear examples near $n=200$ with
+  $\delta^-\approx 1.0444$.
+
+The clean structural identity is:
+$$\delta^+(v)+\delta^-(v)
+  =\bigl(s^+(G)+s^-(G)\bigr)-\bigl(s^+(G-v)+s^-(G-v)\bigr)
+  =2|E(G)|-2|E(G-v)|=2\deg_G(v)=4.$$
+Thus the two gains are exactly anticorrelated for a degree-2 ear. In particular, a bad
+$s^-$ ear is a good $s^+$ ear, and the universal two-sided statement is too strong on
+highly unbalanced 2-trees.
+
+The target is therefore the existential ear-selection lemma:
+
+> **(L') 2-tree existential ear lemma.** Let $G$ be a 2-tree with $n\ge 4$. Then there
+> exists a simplicial degree-2 vertex $v^*$ such that
+> $$s^+(G)-s^+(G-v^*)\ge\frac{17}{16}
+> \quad\text{and}\quad
+> s^-(G)-s^-(G-v^*)\ge\frac{17}{16}.$$
+
+Equivalently, by $\delta^+ + \delta^- = 4$, find an ear with
+$$\delta^-(v^*)\in\left[\frac{17}{16},\frac{47}{16}\right].$$
+
+If (L') holds at each non-base step, iteratively select a good simplicial degree-2 ear
+and delete it until $K_3$ remains. With $k=n-3$,
 $$s^-(G)\ge s^-(K_3)+\frac{17}{16}(n-3)
       =n-1+\frac{n-3}{16}>n-1,$$
 and
@@ -237,14 +274,19 @@ e_a+e_b & A(H)
 \end{pmatrix}.$$
 The Schur complement
 $$\lambda-(e_a+e_b)^T(\lambda I-A(H))^{-1}(e_a+e_b)$$
-may be controllable recursively along the clique tree of the 2-tree. If the full lemma
-is too hard, first attack **2-paths**, the case where the clique tree is a path.
+may be controllable recursively along the clique tree of the 2-tree. The data suggests
+that a good selector should prefer ears whose supporting edge $\{a,b\}$ has large
+degree sum in $H=G-v$: book-page ears are good for $s^-$, while terminal tail ears are
+bad. Candidate rule:
+$$\text{choose a simplicial ear maximizing }\deg_H(a)+\deg_H(b).$$
+If the full selector lemma is too hard, first attack **2-paths**, books, fans, and the
+$\mathrm{BT}(k,t)$ family, where the good and bad ears are explicit.
 
 Immediate failure modes to test:
 
-- The lemma may hold only for **some** simplicial ears, not every simplicial ear.
+- The universal lemma is already false; never use an arbitrary simplicial ear.
 - The valid ear for $s^+$ and the valid ear for $s^-$ may differ.
-- Highly unbalanced 2-trees may push the ear gain down toward $17/16$.
+- Highly unbalanced 2-trees may force the selector to avoid long-tail ears.
 - The base step $K_3\to K_2$ is genuinely exceptional for $s^-$: the gain is only $1$,
   so the induction must stop at $K_3$.
 
@@ -256,7 +298,7 @@ Immediate failure modes to test:
 | 2 | Corollary A: 9.2(i) for connected claw-free $G$ | Thm 1.1 + paths/cycles split | 1 paragraph | not started |
 | 3 | Corollary B: 9.2(i) for $\mathrm{diam}(G) \le 2$ | Thm 1.2 + check $K_{1,n-1}, C_5$ | 1 paragraph | not started |
 | 4 | Write up steps 1–3 as a short note (3–5 pages) | Standard exposition | 1–2 weeks | not started |
-| 5 | **First serious target:** prove or refute the 2-tree ear deletion lemma | Schur complement / clique-tree recursion; start with 2-paths | open-ended | not started |
+| 5 | **First serious target:** prove or refute the existential 2-tree ear-selection lemma (L') | Trace identity, Schur complement / clique-tree recursion, high-degree supporting-edge selector; start with 2-paths/books/fans/$\mathrm{BT}(k,t)$ | open-ended | universal form refuted; L' open |
 | 6 | If step 5 succeeds, prove 9.2 for 2-trees | Stop deletion at $K_3$; telescope ear gains | short once 5 holds | not started |
 | 7 | If 2-trees fail, return to residue-control classes; bound the residue strongly enough to force strictness — for $s^-$ the sufficient crude bound is $\ell < k/16 + 1$, while for $s^+$ the useful invariant is the full clique-size distribution through $\sum (n_j - 1)^2$ | Block-cut tree analysis (2-connected); perfect elimination (chordal); structural enumeration (cactus); SDP / Gluing Lemma (Thm 8.1 regime) | open-ended | not started |
 | 8 | Near-extremal sanity checks: $K_n - e$, $K_n + $ pendant, skewed $K_{p,q}$, $K_1 \vee (K_a \cup K_b)$, friendship graphs, complete multipartites | Direct spectrum / Cauchy interlacing; verify no $s^- = n - 1$ outside trees and $K_n$ at $n \le 30$ | 1 week | not started |
@@ -323,11 +365,11 @@ warning; v2 drops it entirely.
    - validate the residue accounting on random small graphs using certified sign-specific
      deletion sequences (this is what step 5 needs to design around),
    - confirm no $s^- = n - 1$ counterexamples in the near-extremal list of step 7.
-3. Prioritize **2-trees**. First implement the computational ear-gain check below, then
-   attempt the 2-tree ear deletion lemma analytically. Treat it as an open-ended
-   research direction with a kill criterion: if a counterexample appears, record its
-   structure and return to the broader residue-control programme; if no counterexample
-   appears after exhaustive small checks, attack 2-paths first.
+3. Prioritize **2-trees**, but only in the existential form (L'). The universal form is
+   refuted and must remain as a regression fixture. Next mathematical target: prove
+   that the high-degree-supporting-edge selector finds an ear with
+   $\delta^-\in[17/16,47/16]$, or find a 2-tree where every simplicial ear lies outside
+   that interval.
 
 ## Critical reading
 
@@ -375,10 +417,13 @@ warning; v2 drops it entirely.
 - `tests/two_tree_ear_gain.py` — generate 2-trees up to the largest feasible order
   (deduplicating isomorphism if practical, otherwise labelled construction histories);
   for every simplicial degree-2 vertex $v$ with $G-v\ne K_2$, compute
-  $$s^\pm(G)-s^\pm(G-v)$$
-  and search for gains below $17/16$. Record the extremal graph, supporting edge, clique
-  tree shape, and whether the minimizing ear differs between $s^+$ and $s^-$. Also run
-  a random 2-tree search at larger $n$ for highly unbalanced clique trees.
+  $$s^\pm(G)-s^\pm(G-v).$$
+  The test suite must now do two separate jobs:
+  - regression-test the **false universal lemma** using structured $\mathrm{BT}(k,2)$
+    fixtures under `tests/fixtures/`, so future work does not chase "every ear works";
+  - test the **existential rescue** by maximizing $\min(\delta^+,\delta^-)$ over
+    simplicial ears, and record the best ear, the worst ear, the supporting edge,
+    degree sums, clique-tree shape, and whether the best selector differs between signs.
 
 These are not started; create them when (and if) step 5 produces a concrete class-specific
 conjectural lemma to test.

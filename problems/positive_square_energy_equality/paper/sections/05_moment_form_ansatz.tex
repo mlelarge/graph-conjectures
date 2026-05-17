@@ -1,0 +1,749 @@
+\section{The moment-form ansatz framework}\label{sec:moment-form}
+
+This section develops the joint-invariant ansatz that targets $\Lprime$
+via the max-degsum selector. We define the candidate $\Iv$ and the
+threshold $\threshold$ (\Cref{sec:moment-form:candidate}), state the
+two conditions~(a) and~(b) (\Cref{sec:moment-form:conditions}), prove
+the new Rayleigh-quotient bound Lemma~B1
+(\Cref{sec:moment-form:lemma-B1}), prove a structural two-sided
+Cauchy--Schwarz lower bound on $\Iv$
+(\Cref{sec:moment-form:cs-two-sided}), restate the book closure of
+condition~(a) via the common-spine-edge characterisation
+(\Cref{sec:moment-form:common-edge}), and prove the partial closure of
+condition~(b) on Case-B max-degsum ears (the analytical
+$\alpha_{\min}^{2} \ge 1$ bound \Cref{lem:bminor-amin} plus the
+empirical census \Cref{prop:bminor-census}; analytical
+$\dminus(\maxdeg) \ge 1$ is \emph{not} established — see
+\Cref{rem:bminor-gap}). The Stieltjes-transform identification
+$\Iinf{L}$ from \Cref{sec:subfamily:2path-stieltjes} closes condition~(a)
+on the $2$-path family in the asymptotic limit
+(\Cref{sec:moment-form:stieltjes}). Condition~(a) on general $2$-trees
+remains open (\Cref{prob:general-a}); the $2$-path is \emph{not} the
+universal binding case for $\Iv$ at finite~$n$ (F10,
+\Cref{sec:failure-modes}).
+
+\subsection{Spectral functionals on simplicial ears}\label{sec:moment-form:functionals}
+
+Fix a $2$-tree $\graph$, a simplicial degree-$2$ ear $v$ with
+supporting edge $\{a, b\}$, and $\Hgraph := \graph - v$. Choose an
+orthonormal eigenbasis $u_{1}, \ldots, u_{n-1}$ of $\Adj(\Hgraph)$
+with eigenvalues $\earmu_{1} \ge \cdots \ge \earmu_{n-1}$, and write
+\[
+\earc_{i}(v) \;:=\; \earw^{\top} u_{i} \;=\; u_{i}(a) + u_{i}(b),
+\qquad i = 1, \ldots, n-1.
+\]
+Since $\sum_{i} u_{i} u_{i}^{\top} = I$ in $\mathbb{R}^{n-1}$, we have
+\[
+\sum_{i = 1}^{n-1} \earc_{i}(v)^{2} \;=\; \earw^{\top} \earw \;=\; \|\earw\|^{2} \;=\; 2.
+\]
+
+Partition the spectrum of $\Adj(\Hgraph)$ into positive, zero, and
+negative parts, and define the corresponding \emph{spectral weights} of
+$\earw$:
+\[
+\Wm(v) := \sum_{i:\, \earmu_{i} < 0} \earc_{i}(v)^{2},
+\qquad
+\Wz(v) := \sum_{i:\, \earmu_{i} = 0} \earc_{i}(v)^{2},
+\qquad
+\Wp(v) := \sum_{i:\, \earmu_{i} > 0} \earc_{i}(v)^{2}.
+\]
+These sum to $\Wm(v) + \Wz(v) + \Wp(v) = 2$. The \emph{walk-moments}
+of $\earw$ are
+\[
+\Mone(v) := \earw^{\top} \Adj(\Hgraph) \earw = \sum_{i} \earc_{i}(v)^{2} \earmu_{i},
+\qquad
+\Mtwo(v) := \earw^{\top} \Adj(\Hgraph)^{2} \earw = \sum_{i} \earc_{i}(v)^{2} \earmu_{i}^{2},
+\]
+and we also use the \emph{signed} moments
+$\Mkm(v) := \sum_{\earmu_{i} < 0} \earc_{i}(v)^{2} \earmu_{i}^{k}$,
+$\Mkp(v) := \sum_{\earmu_{i} > 0} \earc_{i}(v)^{2} \earmu_{i}^{k}$ for
+$k \ge 1$. Note $\Monem(v) \le 0$ (each summand is non-positive),
+$\Monep(v) \ge 0$, $\Mtwom(v) \ge 0$, $\Mtwop(v) \ge 0$, with
+$\Mone(v) = \Monem(v) + \Monep(v)$ and
+$\Mtwo(v) = \Mtwom(v) + \Mtwop(v)$.
+
+\begin{lemma}[Walk-moment identities on a simplicial ear]\label{lem:walk-moments}
+Let $\graph$ be a $2$-tree, $v$ a simplicial degree-$2$ ear of $\graph$
+with supporting edge $\{a, b\}$, and $\Hgraph := \graph - v$. Let
+$T_{ab}(\Hgraph)$ denote the set of triangles of $\Hgraph$ containing
+both $a$ and $b$. Then
+\[
+\Mone(v) \;=\; 2,
+\qquad
+\Mtwo(v) \;=\; \degsum(v) + 2 \, |T_{ab}(\Hgraph)|,
+\]
+where $\degsum(v) := \deg_{\Hgraph}(a) + \deg_{\Hgraph}(b)$.
+\end{lemma}
+
+\begin{proof}
+We compute both moments as quadratic forms on the standard-basis vector
+$\earw = e_{a} + e_{b}$.
+
+For $\Mone(v)$,
+\[
+\Mone(v) \;=\; \earw^{\top} \Adj(\Hgraph) \earw
+\;=\; \bigl(\Adj(\Hgraph)\bigr)_{aa} + 2 \bigl(\Adj(\Hgraph)\bigr)_{ab}
++ \bigl(\Adj(\Hgraph)\bigr)_{bb}.
+\]
+The diagonal terms vanish ($\Adj$ has no self-loops). The off-diagonal
+term equals $\mathbf{1}_{\{a, b\} \in E(\Hgraph)}$. Since $v$ is a
+simplicial vertex with $N_{\graph}(v) = \{a, b\}$, the edge $\{a, b\}$
+lies in $\graph$, and removing $v$ does not destroy it: $\{a, b\}
+\in E(\Hgraph)$. Hence $\Mone(v) = 0 + 2 \cdot 1 + 0 = 2$.
+
+For $\Mtwo(v)$,
+\[
+\Mtwo(v) \;=\; \earw^{\top} \Adj(\Hgraph)^{2} \earw
+\;=\; \bigl(\Adj(\Hgraph)^{2}\bigr)_{aa}
++ 2 \bigl(\Adj(\Hgraph)^{2}\bigr)_{ab}
++ \bigl(\Adj(\Hgraph)^{2}\bigr)_{bb}.
+\]
+The entries $\bigl(\Adj(\Hgraph)^{2}\bigr)_{xy}$ count length-$2$ walks
+in $\Hgraph$ from $x$ to $y$. Hence
+$\bigl(\Adj(\Hgraph)^{2}\bigr)_{aa} = \deg_{\Hgraph}(a)$,
+$\bigl(\Adj(\Hgraph)^{2}\bigr)_{bb} = \deg_{\Hgraph}(b)$, and
+$\bigl(\Adj(\Hgraph)^{2}\bigr)_{ab} = |N_{\Hgraph}(a) \cap N_{\Hgraph}(b)|$.
+
+In any $2$-tree, the common neighbours of two adjacent vertices $a, b$
+are exactly the vertices forming a triangle with $\{a, b\}$. So
+$|N_{\Hgraph}(a) \cap N_{\Hgraph}(b)| = |T_{ab}(\Hgraph)|$, giving
+$\Mtwo(v) = \deg_{\Hgraph}(a) + 2 |T_{ab}(\Hgraph)| + \deg_{\Hgraph}(b)
+= \degsum(v) + 2 |T_{ab}(\Hgraph)|$.
+\end{proof}
+
+\begin{lemma}[Cauchy--Schwarz on the negative spectrum]\label{lem:CS}
+For every simplicial degree-$2$ ear $v$,
+\[
+\bigl(\Monem(v)\bigr)^{2} \;\le\; \Wm(v) \cdot \Mtwom(v),
+\]
+with equality if and only if the weights $(\earc_{i}^{2})_{\earmu_{i} < 0}$
+concentrate on a single eigenvalue (i.e.\ at most one
+$\earc_{i}$ with $\earmu_{i} < 0$ is non-zero).
+\end{lemma}
+
+\begin{proof}
+Apply the Cauchy--Schwarz inequality to the two real vectors
+$x_{i} := \earc_{i}$ and $y_{i} := \earc_{i} \earmu_{i}$ indexed by
+$\{i : \earmu_{i} < 0\}$:
+$\bigl(\sum_{i: \earmu_{i} < 0} x_{i} y_{i}\bigr)^{2}
+\le \bigl(\sum_{i: \earmu_{i} < 0} x_{i}^{2}\bigr)
+\bigl(\sum_{i: \earmu_{i} < 0} y_{i}^{2}\bigr)$, which reads
+$\Monem(v)^{2} \le \Wm(v) \cdot \Mtwom(v)$. Equality holds iff
+$(y_{i})$ is proportional to $(x_{i})$ on the index set, which forces
+$\earmu_{i}$ to be constant on $\{i : \earc_{i} \ne 0, \earmu_{i} < 0\}$.
+\end{proof}
+
+\begin{lemma}[Structural floor on $\degsum$ at the max-degsum ear]\label{lem:sigma-floor}
+For every $2$-tree $\graph$ on $n \ge 5$ vertices, the max-degsum ear
+$\maxdeg$ satisfies $\degsum(\maxdeg) \ge 5$. At $n = 4$ (the unique
+$2$-tree being $B_{2} = K_{4} - e$), $\Hgraph = K_{3}$ and
+$\degsum(\maxdeg) = 4$.
+\end{lemma}
+
+\begin{proof}
+For every simplicial degree-$2$ ear $v$ with supporting edge
+$\{a, b\}$, the clique tree of $\graph$ has a leaf triangle
+$\Delta_{v} = \{a, b, v\}$, adjacent in $\cliqtree(\graph)$ to a unique
+other triangle $\Delta_{v}' = \{a, b, c\}$ for some vertex $c \ne v$.
+In $\Hgraph = \graph - v$, both $a$ and $b$ are still adjacent to $c$,
+so $\deg_{\Hgraph}(a) \ge 2$ and $\deg_{\Hgraph}(b) \ge 2$ (the
+neighbours $b, c$ of $a$, and $a, c$ of $b$). Hence
+$\degsum(v) = \deg_{\Hgraph}(a) + \deg_{\Hgraph}(b) \ge 4$ for any
+$2$-tree on $n \ge 4$ vertices.
+
+If $n \ge 5$ then $\Hgraph$ is a $2$-tree on $n - 1 \ge 4$ vertices,
+hence $\Hgraph \ne K_{3}$. In particular at least one further triangle
+of $\Hgraph$ touches one of $a, b, c$. There are two cases:
+\begin{enumerate}
+\item If the extra triangle contains $a$ or $b$, then either
+$\deg_{\Hgraph}(a) \ge 3$ or $\deg_{\Hgraph}(b) \ge 3$, so
+$\degsum(v) \ge 5$ already.
+\item If every triangle of $\Hgraph$ outside $\Delta_{v}'$ avoids both
+$a$ and $b$, we argue via the clique tree of $\Hgraph$. Since
+$\Hgraph$ is a $2$-tree on $n - 1 \ge 4$ vertices, $\cliqtree(\Hgraph)$
+is a tree on $n - 3 \ge 2$ nodes; the triangle $\Delta_{v}' =
+\{a, b, c\}$ is one of its nodes. Under the case hypothesis, every
+edge of $\cliqtree(\Hgraph)$ incident to $\Delta_{v}'$ corresponds to
+a shared $\graph$-edge containing $c$ (since the shared edge cannot
+contain $a$ or $b$, by hypothesis). The tree $\cliqtree(\Hgraph)$
+has a leaf $\Delta'' \ne \Delta_{v}'$ (every tree on $\ge 2$ nodes has
+$\ge 2$ leaves); since the path from $\Delta_{v}'$ to $\Delta''$
+leaves $\Delta_{v}'$ along an edge through $c$, and the same case
+hypothesis forces every triangle on the path other than $\Delta_{v}'$
+itself to be a $c$-containing triangle (an excursion to a triangle
+touching $a$ or $b$ but not $c$ would re-enter via an $\{a, x\}$- or
+$\{b, x\}$-edge, contradicting the hypothesis), the leaf $\Delta''
+= \{c, d, w\}$ has its apex $w$ as a simplicial degree-$2$ ear $v'$
+of $\Hgraph$ with supporting edge $\{c, d\}$ and $\deg_{\Hgraph}(c)
+\ge 3$ (the original $\Delta_{v}'$-edge to $c$ plus the path
+contributes $\ge 2$ further $c$-neighbours, and $c$ already has
+$a, b$ as neighbours in $\Hgraph$). The same $v'$ is a simplicial
+degree-$2$ ear of $\graph$ (the addition of $v$ to $\Hgraph$ created
+the leaf $\Delta_{v}$, which is at a different node of
+$\cliqtree(\graph)$ and does not change leaf-ear status at $w$).
+Hence $\degsum(v') \ge \deg_{\Hgraph}(c) + \deg_{\Hgraph}(d)
+\ge 3 + 2 = 5$.
+\end{enumerate}
+In both cases $\degsum(\maxdeg) \ge 5$. The bound is attained on the
+$2$-path $L_{n}$ for every $n \ge 5$, where every simplicial degree-$2$
+ear is an endpoint with $\degsum = 2 + 3 = 5$.
+\end{proof}
+
+\subsection{The candidate ansatz}\label{sec:moment-form:candidate}
+
+\begin{definition}[Joint-invariant candidate]\label{def:joint-invariant}
+For a simplicial degree-$2$ ear $v$ of a $2$-tree $\graph$, set
+\[
+\Iv \;:=\;
+\begin{cases}
+\Wm(v) + \dfrac{(\Monem(v))^{2}}{\Mtwom(v)}, & \Mtwom(v) > 0, \\[1ex]
+\Wm(v), & \Mtwom(v) = 0.
+\end{cases}
+\]
+The threshold is $\threshold := 0.4122$.
+\end{definition}
+
+When $\Wm(v) > 0$, $\Mtwom(v) > 0$ automatically (some negative $\earmu_{i}$
+carries non-zero weight). When $\Wm(v) = 0$, both $\Monem(v)$ and
+$\Mtwom(v)$ vanish, and the convention $\Iv := 0$ makes $\Iv$ continuous
+in the data. The Cauchy--Schwarz bound \Cref{lem:CS} gives
+\[
+0 \;\le\; \frac{(\Monem(v))^{2}}{\Mtwom(v)} \;\le\; \Wm(v),
+\]
+so $\Iv \in [\Wm(v), 2\Wm(v)] \subseteq [0, 4]$. Equality in the upper
+bound holds iff the negative spectrum of $\Adj(\Hgraph)$ has weight
+concentrated on a single eigenvalue.
+
+The threshold $\threshold = 0.4122$ is fitted to the corpus: across a
+working corpus of $2{,}628$ max-degsum records over $1063+$ graphs
+(enumerated $2$-trees with $n \le 10$, random $2$-trees up to
+$n = 1000$, and the structured families $\Bk$, $\BTkt{k}{2}$, $\Ln$,
+$\Fn$), every max-degsum ear satisfies $\Ivs \ge \threshold$, with
+infimum $\inf \Ivs = 0.6384$ attained at the $n = 10$ caterpillar
+$2$-tree with graph6 \texttt{I\}qcHG\textasciigrave GO}. This graph
+minimises $\Iv$ over the corpus, \emph{not} $\dminus$; the latter is
+minimised on a different $n = 10$ record (see
+\Cref{prop:bminor-census}, F10).
+
+\subsection{Conditions~(a) and~(b)}\label{sec:moment-form:conditions}
+
+\begin{conjecture}[Joint-invariant selector property]\label{cnj:joint-invariant}
+Let $\graph$ be a $2$-tree on $n \ge 4$ vertices. Then:
+\begin{enumerate}[label=(\alph*)]
+\item \emph{(Structural.)}\label{cond:a} The max-degsum ear $\maxdeg$
+satisfies $\Ivs \ge \threshold$.
+\item \emph{(Spectral.)}\label{cond:b} For every simplicial degree-$2$
+ear $v$, $\Iv \ge \threshold$ implies the two-sided bound
+$\dminus(v) \in [17/16, 47/16]$.
+\end{enumerate}
+\end{conjecture}
+
+The trace identity at a simplicial degree-$2$ ear
+$\dplus(v) + \dminus(v) = 4$ shows that
+$\dminus(v) \in [17/16, 47/16]$ is equivalent to the symmetric
+two-sided bound $\dminus(v) \ge 17/16$ \emph{and} $\dplus(v) \ge 17/16$
+(neither bound implies the other). Both inequalities together are
+exactly the content of $\Lprime$ at $v$, so
+\Cref{cnj:joint-invariant}~\ref{cond:a}--\ref{cond:b} together imply
+$\Lprime$ at $\maxdeg$.
+
+In the rest of this section we develop the analytical infrastructure
+that supports \Cref{cnj:joint-invariant}. Condition~(a) is proved
+unconditionally on books (\Cref{cor:books-Lprime},
+\Cref{prop:common-edge-books}) and on $2$-paths in the asymptotic
+limit (\Cref{thm:moment-form-stieltjes}); on $\BTkt{k}{2}$ at the
+max-degsum (clean book-page) ear the empirical $\Iv$ values clear
+$\threshold$ but we do not give a separate analytic proof, since the
+tail-ear analysis of \Cref{thm:BT-asymptotic} refutes only the
+universal form and does not by itself certify condition~(a) at the
+selector ear on the whole family. A two-sided
+Cauchy--Schwarz structural lower bound \Cref{lem:cs-two-sided} gives
+$\Iv \ge 0.396$ corpus-uniformly, falling $\approx 0.016$ short of
+$\threshold$ at the worst empirical case. Condition~(b) splits into
+the lower bound $\dminus(\maxdeg) \ge 17/16$ and the upper bound
+$\dminus(\maxdeg) \le 47/16$. The lower bound is partially addressed
+by the b.minor pair \Cref{lem:bminor-amin,prop:bminor-census} in the
+form $\alpha_{\min}^{2} \ge 1$ analytically and
+$\dminus(\maxdeg) \ge 1.2941$ empirically. The upper bound is
+delivered automatically in every closed subfamily of \Cref{sec:subfamily}
+(on books $\dminus(\maxdeg) \le 2$; on $2$-paths the Ces\`aro limit
+$\sminus(\Ln)/n \to (32\pi - 27\sqrt{3})/(12\pi) \approx 1.426$ and the
+empirically-verified first-difference convergence
+$\dminus(\maxdeg) \to (32\pi - 27\sqrt{3})/(12\pi)$ both stay strictly
+inside $(17/16, 47/16)$; on $\BTkt{k}{2}$ at the clean book-page
+max-degsum ear the empirical bound $\dminus(\maxdeg) \le 2$ matches
+the book asymptotic), and empirically on the corpus $\dminus(\maxdeg) \le 2$
+uniformly --- comfortably inside $47/16 \approx 2.9375$; we are
+unaware of an analytic argument forcing $\dminus(\maxdeg) \le 47/16$
+on general $2$-trees. The headline two-sided $\dminus(\maxdeg)
+\in [17/16, 47/16]$ remains open, with the unified obstruction
+recorded as \Cref{prob:slot-shift}.
+
+\subsection{Lemma~B1: Rayleigh-quotient lower bound on
+\texorpdfstring{$\lambda_{\min}^{2}$}{lambda\_min squared}}\label{sec:moment-form:lemma-B1}
+
+\begin{lemma}[Rayleigh-quotient bound]\label{lem:B1}
+Let $\graph$ be a $2$-tree on $n \ge 4$ vertices, $v$ a simplicial
+degree-$2$ ear with $\Wm(v) > 0$. Then
+\[
+\lambda_{\min}\bigl(\Adj(\graph)\bigr) \;\le\;
+-\frac{|\Monem(v)| + \sqrt{\Monem(v)^{2} + 4\, \Wm(v)^{3}}}{2\, \Wm(v)},
+\]
+equivalently
+\[
+\lambda_{\min}\bigl(\Adj(\graph)\bigr)^{2}
+\;\ge\; \left(\frac{|\Monem(v)| + \sqrt{\Monem(v)^{2} + 4\, \Wm(v)^{3}}}{2\, \Wm(v)}\right)^{2}.
+\]
+\end{lemma}
+
+\begin{proof}
+Let $\earw_{-} := \sum_{i:\, \earmu_{i} < 0} \earc_{i} u_{i} \in
+\mathbb{R}^{n-1}$ be the projection of $\earw$ onto the negative
+eigenspace of $\Adj(\Hgraph)$, and write $\tilde \earw_{-} \in
+\mathbb{R}^{n}$ for its zero-padded embedding into the ear-first
+vertex order, with vanishing $v$-coordinate. We use the trial vector
+\[
+z(\beta) \;:=\; \tilde \earw_{-} - \beta\, e_{v}, \qquad \beta \in \mathbb{R}.
+\]
+The three relevant inner products are
+\[
+\|z(\beta)\|^{2} = \Wm + \beta^{2},
+\qquad
+\tilde \earw_{-}^{\top} \Adj(\graph) \tilde \earw_{-} = \earw_{-}^{\top} \Adj(\Hgraph) \earw_{-} = \Monem,
+\qquad
+\tilde \earw_{-}^{\top} \Adj(\graph) e_{v} = \earw_{-}^{\top} \earw = \Wm,
+\]
+the last because $\earw = \sum_{i} \earc_{i} u_{i}$ projects to
+$\earw_{-} = \sum_{\earmu_{i} < 0} \earc_{i} u_{i}$, and inner-producting
+gives $\sum_{\earmu_{i} < 0} \earc_{i}^{2} = \Wm$. Since
+$(\Adj(\graph))_{vv} = 0$ (no self-loops), the cross term contributes
+$-2\beta \cdot \Wm$ and the diagonal $v$-term vanishes:
+\[
+z(\beta)^{\top} \Adj(\graph) z(\beta) \;=\; \Monem - 2\beta\, \Wm.
+\]
+
+Optimise the Rayleigh quotient
+$R(\beta) = (\Monem - 2\beta\,\Wm)/(\beta^{2} + \Wm)$. Setting
+$R'(\beta) = 0$ and clearing denominators gives the stationary equation
+\[
+\beta^{2} - (\Monem/\Wm)\,\beta - \Wm = 0,
+\]
+with roots
+\[
+\beta_{\pm} = \frac{\Monem \pm \sqrt{(\Monem)^{2} + 4 (\Wm)^{3}}}{2\Wm}.
+\]
+Since $\Monem \le 0$ and $\sqrt{(\Monem)^{2} + 4(\Wm)^{3}} > |\Monem|$
+when $\Wm > 0$, the minimising root is the positive one,
+\[
+\beta_{+} = \frac{\sqrt{(\Monem)^{2} + 4 (\Wm)^{3}} - |\Monem|}{2\Wm}
+> 0.
+\]
+At a critical point $R(\beta_{*}) = -\Wm/\beta_{*}$ (substitute the
+stationary equation). Hence
+\[
+R(\beta_{+}) = -\frac{2(\Wm)^{2}}{\sqrt{(\Monem)^{2} + 4(\Wm)^{3}} - |\Monem|}
+= -\frac{|\Monem| + \sqrt{(\Monem)^{2} + 4(\Wm)^{3}}}{2\Wm}
+\]
+after rationalising the denominator. By Courant--Fischer,
+$\lambda_{\min}(\Adj(\graph)) \le R(\beta_{+})$, which is the displayed
+bound.
+\end{proof}
+
+\begin{remark}[Sharpness of Lemma~B1]\label{rem:B1-sharpness}
+Numerical sharpness of \Cref{lem:B1} across the working corpus: the
+ratio $\lambda_{\min}(\Adj(\graph)) / R(\beta_{+})$ approaches $1$ on
+the book family, reaching $1.0002$ at $\Bk$ with $k = 30$. On thin
+$2$-trees the bound loosens: the ratio is $\approx 1.5565$ on $L_{30}$
+and $\approx 4.40$ on the $\BTkt{50}{2}$ tail ear. The latter is
+informative: $\lambda_{\min}^{2}$ is very large there (because
+$\Adj(\Hgraph)$ has $\earmu_{n-1} \approx -9.5$ from the book block),
+but $\dminus$ is small (only $1.0575$), reflecting the cancellation
+$\lambda_{\min}^{2} - \earmu_{n-1}^{2}$ in the slot-shift decomposition
+(see \Cref{prob:slot-shift}). The lemma bounds $\lambda_{\min}^{2}$,
+not $\dminus$; the gap between these quantities is the
+$\alpha_{\min}$-versus-$\alpha_{\text{top}}$ obstruction
+recorded in \Cref{rem:bminor-F11}.
+\end{remark}
+
+\subsection{A two-sided Cauchy--Schwarz structural lower bound on
+\texorpdfstring{$\Iv$}{I(v)}}\label{sec:moment-form:cs-two-sided}
+
+\begin{lemma}[Two-sided CS structural lower bound]\label{lem:cs-two-sided}
+Let $\graph$ be a $2$-tree on $n \ge 4$ vertices and $v$ a simplicial
+degree-$2$ ear with supporting edge $\{a, b\}$. Write
+$u := \Wm(v)$, $w := \Wz(v)$, $m := |\Monem(v)|$, and
+$M := \Mtwo(v) = \degsum(v) + 2 |T_{ab}(\Hgraph)|$. If
+$\Mtwom(v) > 0$ (equivalently $u > 0$, equivalently $m > 0$),
+$\Wp(v) > 0$, and $M - (2 + m)^{2}/(2 - u - w) > 0$, then
+\[
+\Iv \;\ge\; u + \frac{m^{2}}{M - \dfrac{(2 + m)^{2}}{2 - u - w}}.
+\]
+The degenerate case $\Mtwom(v) = 0$ forces $m = u = 0$; the convention
+$\Iv := \Wm(v) = 0$ from \Cref{def:joint-invariant} then applies and
+the bound holds trivially.
+\end{lemma}
+
+\begin{proof}
+By \Cref{lem:walk-moments}, $\Mone(v) = 2$ on any simplicial degree-$2$
+ear of a $2$-tree, so
+\[
+\Monem(v) + \Monep(v) \;=\; 2,
+\qquad
+\Monep(v) \;=\; 2 + m,
+\]
+where $m = |\Monem(v)|$. The partition $\Wm + \Wz + \Wp = 2$ gives
+$\Wp = 2 - u - w$ with $u = \Wm$, $w = \Wz$.
+
+Apply Cauchy--Schwarz to the positive spectrum, with index set
+$\{i : \earmu_{i} > 0\}$ and vectors $(\earc_{i})$, $(\earc_{i} \earmu_{i})$:
+\[
+(2 + m)^{2} = \Monep(v)^{2} \;\le\; \Wp(v) \cdot \Mtwop(v)
+\;=\; (2 - u - w) \cdot \Mtwop(v).
+\]
+Since $\Wp = 2 - u - w > 0$ by hypothesis, dividing gives
+\[
+\Mtwop(v) \;\ge\; \frac{(2 + m)^{2}}{2 - u - w}.
+\]
+Substituting into $\Mtwom = M - \Mtwop$ (since the zero-eigenvalue
+block contributes nothing to $\Mtwo$),
+\[
+\Mtwom(v) \;\le\; M - \frac{(2 + m)^{2}}{2 - u - w}.
+\]
+The right-hand side is positive by hypothesis, so we may divide:
+\[
+\frac{(\Monem)^{2}}{\Mtwom} \;\ge\; \frac{m^{2}}{M - (2 + m)^{2}/(2 - u - w)}.
+\]
+Adding $\Wm = u$ on both sides yields
+$\Iv = u + (\Monem)^{2}/\Mtwom \ge u + m^{2}/[M - (2 + m)^{2}/(2 - u - w)]$.
+\end{proof}
+
+\begin{remark}[Structural-sufficiency gap]\label{rem:cs-two-sided-gap}
+The bound of \Cref{lem:cs-two-sided} is corpus-verified across all
+$2{,}628$ max-degsum records, and its corpus minimum is approximately
+$0.396$ — about $0.016$ below the working threshold
+$\threshold = 0.4122$. The gap reflects a \emph{structural-sufficiency}
+obstacle: the four moments $(u, w, m, M)$ at a simplicial ear are not
+in general fine enough to pin $\Iv$ down to within $0.016$ at finite
+$n$, even though they do determine $\Iv$ in the limit on every
+structured subfamily. Sharpening the bound — e.g.\ by incorporating a
+fifth clique-tree quantity such as the position of the ear's leaf
+triangle within $\cliqtree(\Hgraph)$ — is the open problem
+\Cref{prob:general-a}.
+\end{remark}
+
+\subsection{Common-spine-edge characterisation: books}\label{sec:moment-form:common-edge}
+
+\begin{proposition}[Common-spine-edge closure on the book family]\label{prop:common-edge-books}
+Let $\graph$ be a $2$-tree on $n \ge 4$ vertices and suppose every
+maximal triangle of $\graph$ contains a common edge $\{a, b\}$. Then
+$\graph = B_{n-2}$ (the book with spine $\{a, b\}$), and for any page
+ear $v$,
+\[
+\Iv \;=\; 2 - \frac{2}{\sqrt{8(n-2) - 7}} \;\ge\; \frac{4}{3} \;>\; \threshold,
+\]
+with equality at $n = 4$ ($\graph = B_{2} = K_{4} - e$).
+\end{proposition}
+
+\begin{proof}
+The common-edge hypothesis says every maximal triangle of $\graph$ is
+of the form $\{a, b, p_{i}\}$ for some vertex $p_{i} \ne a, b$. The
+$p_{i}$ are mutually non-adjacent in $\graph$: if $p_{i} p_{j}$ were an
+edge then $\{a, b, p_{i}, p_{j}\}$ would span $K_{4}$, contradicting
+treewidth $2$. Hence $\graph$ is exactly the book $B_{n - 2}$ with
+spine $\{a, b\}$ and $n - 2$ pages $p_{1}, \ldots, p_{n-2}$.
+For the book, the page-ear deletion $\graph - v = B_{n-3}$ has the
+$2 \times 2$ spine-symmetric block (in the orthonormal basis
+$u_{1} := (e_{a} + e_{b})/\sqrt{2}$, $u_{2} := (\sum_{i=1}^{n-3} e_{p_{i}})/\sqrt{n-3}$
+where $p_{i}$ runs over the $n - 3$ remaining page vertices of $B_{n-3}$)
+\[
+\begin{pmatrix} 1 & \sqrt{2(n-3)} \\ \sqrt{2(n-3)} & 0 \end{pmatrix},
+\]
+with eigenvalues $\mu_{\pm} = (1 \pm \sqrt{8(n-2) - 7})/2$ and
+orthonormal eigenvectors $v_{\pm} = (\cos\phi_{\pm}, \sin\phi_{\pm})^{\top}$
+in the $(u_{1}, u_{2})$-basis. Setting
+$\Delta := \sqrt{8(n - 2) - 7}$, a short calculation gives
+$\sin^{2}\phi_{-} = (1 + 1/\Delta)/2$ and $\cos^{2}\phi_{-} = (1 - 1/\Delta)/2$
+for the negative eigenvector. The test vector $\earw = e_{a} + e_{b} =
+\sqrt{2}\, u_{1}$ projects entirely onto this $2 \times 2$ block: it is
+orthogonal to the spine-antisymmetric $\earmu = -1$ eigenvector (which
+has $x_{a} = -x_{b}$) and to the page-antisymmetric $\earmu = 0$ block
+(which has $x_{a} = x_{b} = 0$). The coefficient on $v_{-}$ is
+$\earc_{-} = \sqrt{2}\, \cos\phi_{-}$, giving
+$\earc_{-}^{2} = 2 \cos^{2}\phi_{-} = 1 - 1/\Delta$.
+
+Hence $\Wm(v) = \earc_{-}^{2} = 1 - 1/\Delta$,
+$\Monem(v) = \earc_{-}^{2} \mu_{-} = (1 - 1/\Delta)(1 - \Delta)/2 = -(\Delta - 1)^{2}/(2\Delta)$,
+and $\Mtwom(v) = \earc_{-}^{2}\mu_{-}^{2} = (1 - 1/\Delta)(\Delta - 1)^{2}/4 = (\Delta - 1)^{3}/(4\Delta)$.
+Hence
+\[
+\frac{(\Monem(v))^{2}}{\Mtwom(v)}
+\;=\; \frac{(\Delta - 1)^{4}/(4\Delta^{2})}{(\Delta - 1)^{3}/(4\Delta)}
+\;=\; \frac{\Delta - 1}{\Delta} \;=\; 1 - \frac{1}{\Delta},
+\]
+and $\Iv = \Wm(v) + (\Monem(v))^{2}/\Mtwom(v) = 2(1 - 1/\Delta) = 2 - 2/\sqrt{8(n-2) - 7}$.
+The Cauchy--Schwarz bound \Cref{lem:CS} saturates because the only
+negative-spectrum contribution comes from the single simple eigenvalue
+$\mu_{-}$.
+\end{proof}
+
+\begin{remark}[Diameter framing is too weak]\label{rem:diam2-not-books}
+The common-edge hypothesis of \Cref{prop:common-edge-books} cannot be
+weakened to ``the clique tree of $\graph$ has diameter $\le 2$''.
+
+\emph{Counterexample.} Take the central triangle $\{0, 1, 2\}$ and
+attach a pendant triangle on each of its three edges, giving the
+maximal triangles $\{0, 1, 2\}$, $\{0, 1, 3\}$, $\{0, 2, 4\}$, and
+$\{1, 2, 5\}$ on $n = 6$ vertices. The clique tree of this $2$-tree
+is a star centred at $\{0, 1, 2\}$, with three leaf nodes — diameter
+exactly $2$. Yet $\graph$ is not a book: no single edge of $\graph$
+lies in all four maximal triangles.
+
+The correct hypothesis is that all maximal triangles share a common
+edge $\{a, b\}$, equivalently that the edge-intersection graph of
+maximal triangles is complete: every pair of maximal triangles meets in
+the spine edge, and the triangles form a fan around it. The
+counterexample fails this hypothesis (the pendant triangles meet
+pairwise only in single vertices of $\{0, 1, 2\}$, not in a common
+edge).
+\end{remark}
+
+\subsection{The (b.minor) partial results on Case-B max-degsum ears}\label{sec:moment-form:bminor}
+
+The next two statements record partial progress toward condition~(b),
+\emph{neither of which closes $\dminus(\maxdeg) \ge 17/16$ or even
+$\dminus(\maxdeg) \ge 1$ analytically}. \Cref{lem:bminor-amin} is a
+\emph{conditional} analytical bound on $\lambda_{\min}^{2}$ under an
+explicit moment hypothesis; \Cref{prop:bminor-census} is the corpus-level
+empirical statement. The honest gap between these and the headline is
+recorded in \Cref{rem:bminor-gap}.
+
+\begin{lemma}[Sufficient condition for $\alpha_{\min}^{2} \ge 1$ at a
+Case-B max-degsum ear]\label{lem:bminor-amin}
+Let $\graph$ be a $2$-tree on $n \ge 4$ vertices and $\maxdeg$ a
+Case-B max-degsum simplicial ear with $\Wm(\maxdeg) > 0$. If the moment
+data at $\maxdeg$ satisfies the sufficient condition
+\[
+|\Monem(\maxdeg)| \;\ge\; \Wm(\maxdeg)\bigl(1 - \Wm(\maxdeg)\bigr),
+\]
+then \Cref{lem:B1} gives
+\[
+\alpha_{\min}^{2} \;:=\; \lambda_{\min}\bigl(\Adj(\graph)\bigr)^{2}
+\;\ge\; 1.
+\]
+The hypothesis is empirically verified on every record of the working
+corpus (cf.\ \Cref{prop:bminor-census}). \emph{This is a conditional
+analytical bound on $\alpha_{\min}^{2}$, \textbf{not} on
+$\dminus(\maxdeg)$; see \Cref{rem:bminor-F11,rem:bminor-gap}.}
+\end{lemma}
+
+\begin{proof}
+Write $u := \Wm(\maxdeg)$ and $m := |\Monem(\maxdeg)|$. The
+Rayleigh-quotient lower bound \Cref{lem:B1} gives
+\[
+\alpha_{\min}^{2} \;\ge\; f_{\min}^{2} \;:=\;
+\left(\frac{m + \sqrt{m^{2} + 4 u^{3}}}{2u}\right)^{2}.
+\]
+Substitute the sufficient condition $m \ge u(1 - u)$ (recall
+$u = \Wm(\maxdeg) \in (0, 2]$ since $\sum \earc_{i}^{2} = 2$). The map
+$m \mapsto m + \sqrt{m^{2} + 4u^{3}}$ is increasing in $m$, so under
+the hypothesis
+\[
+m + \sqrt{m^{2} + 4u^{3}} \;\ge\; u(1 - u) + \sqrt{u^{2}(1 - u)^{2} + 4 u^{3}}
+\;=\; u\,(1 - u) + u\sqrt{(1 - u)^{2} + 4u}
+\;=\; u\bigl((1 - u) + |1 + u|\bigr) \;=\; 2u,
+\]
+using $(1 - u)^{2} + 4u = (1 + u)^{2}$ in the second equality and
+$|1 + u| = 1 + u$ for $u \ge -1$. The chain of identities is valid for
+all $u \in (0, 2]$; in particular it does not require $u \le 1$ (the
+algebra $u(1 - u) + u(1 + u) = 2u$ holds regardless of sign of $1 - u$). Hence
+$f_{\min}^{2} \ge (2u/(2u))^{2} = 1$, giving $\alpha_{\min}^{2} \ge 1$.
+
+Tightness: $f_{\min}^{2} = 1$ would require $m = u(1 - u)$ exactly,
+which fails on every corpus record. Empirically the floor across the
+working corpus is $f_{\min}^{2} \ge 1.83$, attained at the enum$_{n=10}$
+graph6 \texttt{I\}qcaOH?W} max-degsum ear.
+\end{proof}
+
+\begin{remark}[F11 caveat: $\alpha_{\min}$ vs $\alpha_{\text{top}}$]\label{rem:bminor-F11}
+\Cref{lem:bminor-amin} bounds the \emph{most}-negative $G$-eigenvalue
+$\alpha_{\min} := \lambda_{n}(\Adj(\graph))$. The corrected Case-B slot
+decomposition stated in \Cref{prob:slot-shift} features instead the
+\emph{least}-magnitude $G$-negative eigenvalue $\alpha_{\text{top}} :=
+\lambda_{n - n^{-}(\Hgraph)}(\Adj(\graph))$, which can be orders of
+magnitude smaller. For instance, on the $L_{30}$ Case-B endpoint,
+$\alpha_{\min}^{2} \approx 4.91$ but $\alpha_{\text{top}}^{2} \approx 8.6
+\times 10^{-4}$. Bounding $\alpha_{\min}^{2}$ from below does
+\emph{not} bound $\alpha_{\text{top}}^{2}$ from below, and the slot
+decomposition requires the latter. This
+$\alpha_{\min}$-versus-$\alpha_{\text{top}}$ gap is the structural
+obstruction blocking any analytical $\dminus(\maxdeg) \ge 1$ claim;
+see \Cref{rem:bminor-gap} and \Cref{prob:slot-shift}.
+\end{remark}
+
+\begin{proposition}[Empirical b.minor census]\label{prop:bminor-census}
+Across the b.minor working corpus of $2{,}235$ Case-A and Case-B
+max-degsum records — covering enumerated $2$-trees on $n \le 10$
+vertices, books $\Bk$, the structured family $\BTkt{k}{2}$, $2$-paths
+$\Ln$, and fans $\Fn$ — every max-degsum ear $\maxdeg$ satisfies
+\[
+\dminus(\maxdeg) \;\ge\; 1.29405\ldots,
+\]
+attained at the $n = 10$ Case-B record with graph6
+\texttt{I\}iSSGI@O} (vertex $v = 8$, family \texttt{enum}). In
+particular $\dminus(\maxdeg) \ge 1$ holds on every record in the
+corpus. (The $n = 10$ caterpillar
+\texttt{I\}qcHG\textasciigrave GO} cited in F10 of
+\Cref{sec:failure-modes} is a different graph: it minimises the joint
+invariant $\Iv$ over the corpus, not $\dminus(\maxdeg)$.)
+\end{proposition}
+
+\begin{proof}
+Direct numerical verification: for each of the $2{,}235$ records, the
+quantity $\dminus(\maxdeg) = \sminus(\graph) - \sminus(\Hgraph)$ is
+computed in IEEE double precision via \texttt{numpy.linalg.eigvalsh} and
+checked against the threshold. The corpus minimum is recorded in
+\texttt{data/case\_AB\_census.json}, regression-locked by
+\texttt{tests/test\_b\_minor.py}.
+\end{proof}
+
+\begin{remark}[Status of the analytical $\dminus(\maxdeg) \ge 1$ claim]\label{rem:bminor-gap}
+The analytical claim ``$\dminus(\maxdeg) \ge 1$ unconditionally on
+Case-B max-degsum ears'' is \emph{not} a theorem. An intermediate
+argument derived $\dminus \ge \alpha_{\min}^{2}$ in Case~B via a
+chordal-graph Sylvester refinement, but that derivation contained a
+sign error in the slot decomposition (recorded as F7 in
+\Cref{sec:fm:sign-error}). The corrected Case-B identity is
+\[
+\dminus(v) \;=\; \alpha_{\text{top}}^{2} \;+\;
+\sum_{j \in J^{-}(\Hgraph)} \bigl(\lambda_{j+1}^{2} - \earmu_{j}^{2}\bigr),
+\quad \text{each summand}\; \ge 0,
+\]
+where $\alpha_{\text{top}}$ is the least-magnitude $G$-negative
+eigenvalue, \emph{not} $\alpha_{\min}$. Hence \Cref{lem:bminor-amin}
+bounds the wrong eigenvalue for the slot decomposition
+(\Cref{rem:bminor-F11}), and the analytical gap to
+$\dminus(\maxdeg) \ge 17/16$ is unified across Cases~A and~B as the
+slot-shift sum lower bound \Cref{prob:slot-shift}.
+\Cref{prop:bminor-census} is the strongest empirically-supported
+statement currently available; no analytical lower bound of the form
+``$\dminus(\maxdeg) \ge c$'' for any explicit $c > 0$ on Case-B
+max-degsum ears is currently known.
+\end{remark}
+
+\subsection{Closing condition~(a) on $2$-paths via Stieltjes}
+\label{sec:moment-form:stieltjes}
+
+\begin{theorem}[$\Iinf{L}$ closed form]\label{thm:moment-form-stieltjes}
+\[
+\Iinf{L} \;:=\; \lim_{n \to \infty} I(\Ln, \maxdeg)
+\;=\; \frac{2\bigl(310 \pi^{2} - 837 \sqrt{3}\, \pi + 2187\bigr)}
+        {27 \pi \bigl(20 \pi - 27 \sqrt{3}\bigr)}
+\;\approx\; 1.0157.
+\]
+In particular $\Iinf{L} > \threshold = 0.4122$, so condition~(a) of
+\Cref{cnj:joint-invariant} holds on the $2$-path family in the
+asymptotic limit.
+\end{theorem}
+
+\begin{proof}
+By \Cref{thm:2path-stieltjes}, the negative-side spectral measure
+$\nu^{-}_{\infty}$ of the limit operator at $\earw = e_{1} + e_{2}$ is
+absolutely continuous on $(-9/4, 0)$ with density
+$\rho_{w}(\lambda) = \sin(\theta_{2}(\lambda) - \theta_{1}(\lambda))/\pi$,
+where $\theta_{1}, \theta_{2} \in (\pi/3, \pi)$ are the two preimages
+of $\lambda$ under $f(\theta) = 2\cos\theta + 2\cos 2\theta$. The
+substitution $\lambda = f(\theta_{1})$ with
+$\theta_{2} = \arccos(-1/2 - \cos\theta_{1})$ converts each moment
+integral into a one-variable trigonometric integral over
+$\theta_{1} \in (\pi/3, \theta_{\min})$ with $\theta_{\min} = \arccos(-1/4)$:
+\[
+\Wm_{\infty}(L) \;=\; \int_{-9/4}^{0} \rho_{w}\, d\lambda
+\;=\; 1 - \frac{3\sqrt{3}}{4\pi},
+\quad
+\Monem[1,\infty](L) \;=\; \frac{2}{3} - \frac{9\sqrt{3}}{4\pi},
+\quad
+\Mtwom[2,\infty](L) \;=\; 3 - \frac{81\sqrt{3}}{20\pi},
+\]
+via direct integration; the closed forms are verified symbolically.
+Substituting into the candidate
+$\Iinf{L} = \Wm_{\infty} + (\Monem[1,\infty])^{2}/\Mtwom[2,\infty]$ and
+simplifying gives the stated formula. The convergence
+$I(\Ln, \maxdeg) \to \Iinf{L}$ uses strong-resolvent convergence of
+$\Adj(L_{n-1})$ to the half-line operator and a Portmanteau argument on
+the signed moments: $\lambda^{k} \mathbf{1}[\lambda < 0]$ is continuous
+at $0$ for $k = 1, 2$, and the $k = 0$ moment uses the no-atom property
+of $\nu^{-}_{\infty}$ at $\lambda = 0$.
+
+Numerically $\Iinf{L} \approx 1.0157\,374\ldots > 0.4122 = \threshold$,
+with explicit slack $\approx 0.6035$.
+\end{proof}
+
+\begin{remark}[Residual open subobligations on the $2$-path closure]
+\label{rem:stieltjes-residuals}
+Three residual subobligations of \Cref{thm:moment-form-stieltjes} are
+identified but do not affect the displayed limit value or the
+inequality $\Iinf{L} > \threshold$. \emph{Rate (O13.1):} the
+convergence $I(\Ln, \maxdeg) \to \Iinf{L}$ is established
+qualitatively; an explicit $n_{0}$ from which $|\Iv - \Iinf{L}| \le \varepsilon$
+for given $\varepsilon$ requires a non-simple-loop BBG analogue (cf.\
+F9, \Cref{rem:simple-loop}). \emph{Branch (O13.2):} the cube-root
+branch choices for the two roots $\xi_{1}, \xi_{2}$ of the
+characteristic quartic used in \Cref{thm:2path-stieltjes} are verified
+numerically at one complex base point; a formal analytic-continuation
+argument is light but not formalised. \emph{Trig (O13.3):} the
+trigonometric simplification in the proof above factors the
+intermediate expression $\Im(s^{2} + s - p) + \sin(\theta_{2} -
+\theta_{1})$ via the half-angle product
+$2\cos\bigl(\tfrac{\theta_{1}+\theta_{2}}{2}\bigr)
+ \cos\bigl(\tfrac{\theta_{2}-\theta_{1}}{2}\bigr)
+ = \cos\theta_{1} + \cos\theta_{2} = -1/2$, which writes the bracket as
+$2\sin(\tfrac{\theta_{2}-\theta_{1}}{2})\cos(\tfrac{\theta_{1}+\theta_{2}}{2})
+\bigl[4\cos(\tfrac{\theta_{2}-\theta_{1}}{2})\cos(\tfrac{\theta_{1}+\theta_{2}}{2})
++ 1\bigr] = 0$ on the spectral support; writing this out adds one
+short line of algebra. None of O13.1--O13.3 affects
+the displayed limit value or the inequality
+$\Iinf{L} > \threshold$.
+\end{remark}
+
+\subsection{Status of the joint-invariant ansatz}\label{sec:moment-form:status}
+
+We summarise the status of the two conditions of
+\Cref{cnj:joint-invariant} after the work of this section.
+
+\paragraph{Condition~(a) (structural).} Proved on two subfamilies
+plus the common-spine-edge characterisation of books:
+\begin{itemize}
+\item Books $\Bk$: \Cref{cor:books-Lprime}, restated in clique-tree
+language as \Cref{prop:common-edge-books} with explicit value
+$\Iv = 2 - 2/\sqrt{8(n-2) - 7}$.
+\item $2$-paths $\Ln$ in the asymptotic limit:
+\Cref{thm:moment-form-stieltjes} with $\Iinf{L} \approx 1.0157$.
+\end{itemize}
+On the $\BTkt{k}{2}$ family the max-degsum selector picks a clean
+book-page ear, and condition~(a) is observed to hold empirically on
+the working corpus; an analytic closure is not given here, since the
+tail-ear analysis of \Cref{thm:BT-asymptotic} addresses only the
+universal form and does not by itself certify condition~(a) at the
+selector ear uniformly in $k$.
+The two-sided Cauchy--Schwarz structural lower bound
+(\Cref{lem:cs-two-sided}) gives a corpus-uniform value of $\approx 0.396$,
+which is $\approx 0.016$ short of $\threshold = 0.4122$ at the worst
+case. Condition~(a) on general $2$-trees remains open
+(\Cref{prob:general-a}); the residual obstruction is a
+\emph{structural-sufficiency gap}, structurally distinct from the
+slot-shift wall of condition~(b).
+
+\paragraph{Condition~(b) (spectral).} Two partial results: the
+conditional analytical bound $\alpha_{\min}^{2} \ge 1$ at Case-B
+max-degsum ears (\Cref{lem:bminor-amin}, under the sufficient moment
+condition $|\Monem(\maxdeg)| \ge \Wm(\maxdeg)(1 - \Wm(\maxdeg))$) and
+the empirical census $\dminus(\maxdeg) \ge 1.2941$ across $2{,}235$
+records (\Cref{prop:bminor-census}). Crucially, \emph{no} analytical
+$\dminus(\maxdeg) \ge c$ lower bound is established for any explicit
+$c > 0$ on Case-B max-degsum ears (\Cref{rem:bminor-gap}); the bound
+\Cref{lem:bminor-amin} controls $\alpha_{\min}^{2}$, not $\dminus$,
+and the corrected slot decomposition involves $\alpha_{\text{top}}$ in
+place of $\alpha_{\min}$ (\Cref{rem:bminor-F11}). The headline
+$\dminus(\maxdeg) \ge 17/16$ form remains open on every subfamily, with
+the slot-shift sum bound \Cref{prob:slot-shift} the unified obstruction
+across Cases~A and~B.
