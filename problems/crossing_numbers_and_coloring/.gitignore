@@ -1,0 +1,11 @@
+# LaTeX build artifacts (recoverable from .tex via `pdflatex` x 2)
+deliverables/**/*.aux
+deliverables/**/*.fdb_latexmk
+deliverables/**/*.fls
+deliverables/**/*.out
+# LaTeX *.log files are excluded only inside paper directories;
+# Python script .log files (next to .py) are intentional output.
+deliverables/D8_paper/*.log
+deliverables/D15_list_albertson_paper/*.log
+deliverables/D16_expander_crossing_paper/*.log
+deliverables/D18_combined_observations/*.log

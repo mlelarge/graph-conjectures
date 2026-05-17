@@ -1,0 +1,55 @@
+Equation in s, t:
+-delta**(5/2)/2 - 3*delta**(3/2)/2 + 2*sqrt(delta) + delta**2*sqrt(delta - 1) + 3*delta*sqrt(delta - 1)/2 - 2*sqrt(delta - 1)
+
+A(s) = -delta**(5/2)/2 - 3*delta**(3/2)/2 + 2*sqrt(delta)
+B(s) = delta**2 + 3*delta/2 - 2
+
+Rationalised in s alone: degree 0
+-3*delta**5/4 - delta**4/2 + 5*delta**3 - 7*delta**2/4 - 6*delta + 4
+All s-powers are even -- can substitute s^2 = delta cleanly.
+
+Polynomial in delta:
+-3*delta**5/4 - delta**4/2 + 5*delta**3 - 7*delta**2/4 - 6*delta + 4
+Degree in delta: 5
+
+Factored over Q:
+-(delta - 1)*(3*delta - 4)*(delta**3 + 3*delta**2 - delta - 4)/4
+  factor 3*delta - 4 has real root in (1,2): 1.333333333333333
+  factor delta**3 + 3*delta**2 - delta - 4 has real root in (1,2): 1.114907541476756
+
+Polynomial as QQ-poly: Poly(-3/4*delta**5 - 1/2*delta**4 + 5*delta**3 - 7/4*delta**2 - 6*delta + 4, delta, domain='QQ')
+After dividing by (3*delta - 4): remainder = Poly(0, delta, domain='QQ')
+  quotient degree 4
+After dividing by (delta^2 - delta - 1): remainder = Poly(-1, delta, domain='QQ')
+
+Residual polynomial (should contain delta_1 as a root):
+-delta**4/4 - delta**3/2 + delta**2 + 3*delta/4 - 1
+Degree: 4
+Leading coeff: -1/4
+Squarefree factorization: (-1/4, [(delta**4 + 2*delta**3 - 4*delta**2 - 3*delta + 4, 1)])
+
+Real roots in (1, 2) of residual polynomial:
+  delta = 1.0
+  delta = 1.1149075414767557
+
+High-precision numerical roots of residual polynomial:
+  -2.8608058531117035
+  -1.2541016883650524
+  1.0
+  1.1149075414767557
+
+Looking for root closest to 1.114907541476756:
+  Best match: 1.11490754147675579851561406071
+  Difference from target: 2.22e-16
+
+Minimal polynomial of delta_1 over Q (via minimal_polynomial):
+Traceback (most recent call last):
+  File "/Users/lelarge/Recherche/graph-conjectures/problems/crossing_numbers_and_coloring/deliverables/D5_sympy_freedelta/minpoly.py", line 176, in <module>
+    mp = sp.minimal_polynomial(sp.Float(target, 30), delta)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lelarge/Recherche/graph-conjectures/problems/crossing_numbers_and_coloring/deliverables/D5_sympy_freedelta/.venv/lib/python3.11/site-packages/sympy/polys/numberfields/minpoly.py", line 703, in minimal_polynomial
+    result = _minpoly_compose(ex, x, domain)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lelarge/Recherche/graph-conjectures/problems/crossing_numbers_and_coloring/deliverables/D5_sympy_freedelta/.venv/lib/python3.11/site-packages/sympy/polys/numberfields/minpoly.py", line 620, in _minpoly_compose
+    raise NotAlgebraic("%s does not seem to be an algebraic element" % ex)
+sympy.polys.polyerrors.NotAlgebraic: 1.11490754147675596996691638196 does not seem to be an algebraic element

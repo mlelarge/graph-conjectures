@@ -1,0 +1,37 @@
+Equation:  Eq(delta/2, (-delta**(9/2)*sqrt(delta - 1) + 2*delta**(7/2)*sqrt(delta - 1) + 6*delta**(5/2)*sqrt(delta - 1) - 16*delta**(3/2)*sqrt(delta - 1) + 8*sqrt(delta)*sqrt(delta - 1) + delta**5 - 3*delta**4 - 2*delta**3 + 12*delta**2 - 8*delta)/(-delta**(5/2)*sqrt(delta - 1) + 4*delta**(3/2)*sqrt(delta - 1) - 4*sqrt(delta)*sqrt(delta - 1) + delta**4 - 5*delta**3 + 8*delta**2 - 4*delta))
+In (s, t):  (-s**5/2 + s**4*sqrt(s**2 - 1) - 3*s**3/2 + 3*s**2*sqrt(s**2 - 1)/2 + 2*s - 2*sqrt(s**2 - 1))/(s**3 - s - sqrt(s**2 - 1))
+Numerator polynomial in (s, t): -s**5 + 2*s**4*sqrt(s**2 - 1) - 3*s**3 + 3*s**2*sqrt(s**2 - 1) + 4*s - 4*sqrt(s**2 - 1)
+Denominator: 2*s**3 - 2*s - 2*sqrt(s**2 - 1)
+Numerator collected in t: -s**5 + 2*s**4*sqrt(s**2 - 1) - 3*s**3 + 3*s**2*sqrt(s**2 - 1) + 4*s - 4*sqrt(s**2 - 1)
+Degree in t: 0
+P (even in t) = -s**5 + 2*s**4*sqrt(s**2 - 1) - 3*s**3 + 3*s**2*sqrt(s**2 - 1) + 4*s - 4*sqrt(s**2 - 1)
+Q (odd in t / t) = 0
+Rationalised polynomial in s alone: 5*s**10 - 4*s**9*sqrt(s**2 - 1) + 14*s**8 - 18*s**7*sqrt(s**2 - 1) - 18*s**6 + 6*s**5*sqrt(s**2 - 1) - 41*s**4 + 48*s**3*sqrt(s**2 - 1) + 56*s**2 - 32*s*sqrt(s**2 - 1) - 16
+In delta: -4*delta**(9/2)*sqrt(delta - 1) - 18*delta**(7/2)*sqrt(delta - 1) + 6*delta**(5/2)*sqrt(delta - 1) + 48*delta**(3/2)*sqrt(delta - 1) - 32*sqrt(delta)*sqrt(delta - 1) + 5*delta**5 + 14*delta**4 - 18*delta**3 - 41*delta**2 + 56*delta - 16
+Traceback (most recent call last):
+  File "/Users/lelarge/Recherche/graph-conjectures/problems/crossing_numbers_and_coloring/deliverables/D5_sympy_freedelta/.venv/lib/python3.11/site-packages/sympy/polys/polyutils.py", line 231, in _parallel_dict_from_expr_if_gens
+    monom[indices[base]] = exp
+          ~~~~~~~^^^^^^
+KeyError: sqrt(delta)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lelarge/Recherche/graph-conjectures/problems/crossing_numbers_and_coloring/deliverables/D5_sympy_freedelta/closedform.py", line 76, in <module>
+    poly_delta = sp.Poly(rat_in_delta, delta)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lelarge/Recherche/graph-conjectures/problems/crossing_numbers_and_coloring/deliverables/D5_sympy_freedelta/.venv/lib/python3.11/site-packages/sympy/polys/polytools.py", line 190, in __new__
+    return cls._from_expr(rep, opt)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lelarge/Recherche/graph-conjectures/problems/crossing_numbers_and_coloring/deliverables/D5_sympy_freedelta/.venv/lib/python3.11/site-packages/sympy/polys/polytools.py", line 319, in _from_expr
+    rep, opt = _dict_from_expr(rep, opt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lelarge/Recherche/graph-conjectures/problems/crossing_numbers_and_coloring/deliverables/D5_sympy_freedelta/.venv/lib/python3.11/site-packages/sympy/polys/polyutils.py", line 388, in _dict_from_expr
+    rep, gens = _dict_from_expr_if_gens(expr, opt)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lelarge/Recherche/graph-conjectures/problems/crossing_numbers_and_coloring/deliverables/D5_sympy_freedelta/.venv/lib/python3.11/site-packages/sympy/polys/polyutils.py", line 327, in _dict_from_expr_if_gens
+    (poly,), gens = _parallel_dict_from_expr_if_gens((expr,), opt)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lelarge/Recherche/graph-conjectures/problems/crossing_numbers_and_coloring/deliverables/D5_sympy_freedelta/.venv/lib/python3.11/site-packages/sympy/polys/polyutils.py", line 236, in _parallel_dict_from_expr_if_gens
+    raise PolynomialError("%s contains an element of "
+sympy.polys.polyerrors.PolynomialError: sqrt(delta) contains an element of the set of generators.

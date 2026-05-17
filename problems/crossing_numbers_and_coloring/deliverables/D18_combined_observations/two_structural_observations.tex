@@ -1,0 +1,1327 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[margin=2.8cm]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{booktabs}
+\usepackage{microtype}
+\usepackage[hidelinks]{hyperref}
+\usepackage[capitalize,noabbrev]{cleveref}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{claim}[theorem]{Claim}
+\theoremstyle{definition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{definition}[theorem]{Definition}
+
+\DeclareMathOperator{\crN}{cr}
+\DeclareMathOperator{\chl}{\chi_{\ell}}
+\DeclareMathOperator{\chDP}{\chi_{\mathrm{DP}}}
+\DeclareMathOperator{\bw}{bw}
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\eps}{\varepsilon}
+
+\title{Two structural observations in the neighbourhood of\\
+       Albertson's conjecture}
+\author{(draft) Marc Lelarge\thanks{\texttt{marc.lelarge@gmail.com}.}}
+\date{\today}
+
+\begin{document}
+
+\begin{center}
+{\Large\bfseries WITHDRAWN (2026-05-17)}\\[1em]
+\fbox{\parbox{0.92\textwidth}{\itshape
+Observation~1 of this combined note is \textbf{false}. At
+$t = 5$, a planar graph of Voigt~(1993) has $\chi_\ell(G) = 5$
+(every planar graph is $5$-choosable by Thomassen~1994; Voigt's
+example is not $4$-choosable) and $\crN(G) = 0 < 1 = \crN(K_5)$,
+which directly falsifies the claim
+``$\chi_\ell(G) \ge t$ and $t \le 18 \Rightarrow \crN(G) \ge
+\crN(K_t)$''. Independently, the proof in this note appeals to
+the Albertson--Cranston--Fox / Bar\'at--T\'oth / Ackerman chain
+under the (incorrect) belief that the chain uses
+$\chi$ only through Dirac's $\delta \ge t - 1$ bound;
+Ackerman~(\texttt{arXiv:1509.01932}, \S 3.1) in fact uses the
+minimum edge-count function $f_r(n)$ for $r$-critical graphs,
+and the list-critical edge floor (Krivelevich~1997) is strictly
+weaker, so the lift is unjustified even apart from the
+$t = 5$ counterexample.\\[0.6em]
+Observation~2 (the bisection-width Crossing Lemma for regular
+spectral expanders) is salvageable, but the version here contains
+several fixable but real errors: an odd-$n$ floor in Alon's
+spectral bisection bound, a wrong rounding bookkeeping step in
+\Cref{lem:PST}, a numerical illustration below the Bungener--Kaufmann
+density threshold, and an overstated Ore-scope claim in the
+limitations section. The corrected stand-alone spectral note is at
+\texttt{D16\_expander\_crossing\_paper/expander\_crossing\_v2.tex}
+(see \texttt{D17\_submission\_packets/paper\_D16.md} for the
+current submission packet).\\[0.6em]
+This combined-paper file is preserved for historical record only.
+The companion list-coloring source
+\texttt{D15\_list\_albertson\_paper/list\_albertson\_le\_18.tex}
+is similarly withdrawn.
+}}
+\end{center}
+\vspace{2em}
+
+\maketitle
+
+\begin{abstract}
+We record two observations arising from an analysis of the
+structural slacks in the chain of partial results towards
+Albertson's conjecture. \textbf{First}, the
+Albertson--Cranston--Fox~/ Bar\'at--T\'oth~/ Ackerman chain
+establishing the conjecture unconditionally at chromatic number up
+to $t = 18$ depends on its $\chi$-hypothesis only through the Dirac
+minimum-degree bound, which lifts verbatim to list-coloring via the
+list versions of Dirac's and Brooks' theorems (Borodin~1977;
+Erd\H{o}s--Rubin--Taylor~1979). Assembling these observations gives
+list-Albertson at $t \le 18$, strictly stronger than ordinary
+Albertson at the same range. \textbf{Second}, the
+Pach--Spencer--T\'oth bisection-width Crossing Lemma, combined with
+Alon's spectral bisection lower bound, yields an explicit-$\theta$
+Crossing Lemma for $d_0$-regular spectral $\theta$-expanders,
+\[
+   \crN(G) \;\ge\; \frac{(1 - \theta)^{2}\,d_0^{2}\,n^{2}}{1280}
+                 \;-\; \frac{d_0^{2}\,n}{16},
+\]
+with an Albertson-type corollary on regular spectral-expander
+critical graphs. We are not aware of an earlier Crossing-Lemma
+inequality with explicit spectral dependence. Neither observation
+closes the Cranston residual at $t \in \{25, 26\}$; both are
+recorded as side-observations in the structural neighbourhood of
+the conjecture.
+\end{abstract}
+
+\section{Introduction}\label{sec:intro}
+
+Albertson's conjecture~\cite{Albertson} is the natural common
+strengthening of the Four Colour Theorem and Guy's formula for
+$\crN(K_n)$:
+
+\begin{conjecture}[Albertson]\label{conj:albertson}
+Every graph $G$ with $\chi(G) \ge t$ satisfies
+$\crN(G) \ge \crN(K_t)$.
+\end{conjecture}
+
+The conjecture is currently known unconditionally for $t \le 24$
+through a chain of partial results that all proceed by analysing a
+minimum counterexample (MCE). Each step combines two ingredients:
+
+\begin{enumerate}
+  \item an \emph{edge floor} on critical graphs --
+        $|E(G)| \ge \tfrac{k-1}{2}|V(G)|$ via Dirac's theorem on
+        critical graphs~\cite{Dirac1952};
+  \item a \emph{Crossing Lemma} input bounding $\crN(G)$ from below
+        in terms of $|E(G)|^{3}/|V(G)|^{2}$ once $|E(G)| / |V(G)|$
+        exceeds an explicit threshold.
+\end{enumerate}
+
+Together these inputs force a vertex bound $|V(G)| \le c t$ on any
+hypothetical MCE; the small remaining range is then closed either
+hand-by-hand or by a topological argument on graphs with few
+crossings per edge. The chain proceeds in four steps:
+Albertson--Cranston--Fox~\cite{ACF} (2010, $t \le 12$ at
+$|V| \le 4t$), Bar\'at--T\'oth~\cite{BT} (2010, $t \le 16$ at
+$|V| \le 3.57t$), Ackerman~\cite{Ackerman} (2019, $t \le 18$ at
+$|V| \le 3.03t$ via $|E| \le 6n - 12$ for graphs with at most four
+crossings per edge), and Cranston~\cite{Cranston} (2025, $t \le 24$
+via a new structural lemma due to Fox--Pach--Suk~\cite{FPS}).
+
+\paragraph{Two structural observations.}
+This note records two observations on the structural neighbourhood
+of this chain. Each is a "we observe that an existing chain of
+theorems lifts or packages to one degree of generality higher"
+statement; neither closes any open case of \Cref{conj:albertson}.
+
+\paragraph{The list-coloring variant.}
+A \emph{list assignment} on $G$ is a function $L : V(G) \to 2^{\NN}$;
+a proper $L$-colouring is a proper colouring $c$ with $c(v) \in L(v)$
+for every $v$. The graph $G$ is $L$-colourable if such a colouring
+exists, and \emph{$k$-list-colourable} (or \emph{$k$-choosable}) if
+it is $L$-colourable for every $L$ with $|L(v)| \ge k$ for all $v$.
+The \emph{list chromatic number} $\chl(G)$ is the smallest such $k$.
+The notion is due to Vizing~\cite{Vizing} and to Erd\H{o}s, Rubin
+and Taylor~\cite{ERT}, and satisfies $\chl(G) \ge \chi(G)$ for every
+graph $G$. The list version of Albertson's conjecture is
+correspondingly stronger:
+
+\begin{conjecture}[List-Albertson]\label{conj:list-albertson}
+Every graph $G$ with $\chl(G) \ge t$ satisfies
+$\crN(G) \ge \crN(K_t)$.
+\end{conjecture}
+
+Despite the conceptual closeness of the two conjectures, the
+list-coloring variant appears to have received little attention in
+the literature; for small $t \le 4$ it reduces to elementary
+observations (any $G$ with $\chl(G) \ge 3$ is non-planar by the
+list version of the Four Colour Theorem for planar graphs --
+in fact every planar graph is $5$-choosable, by
+Thomassen~\cite{Thomassen}). We are not aware of a result placing
+list-Albertson at a threshold higher than $t = 4$.
+
+\paragraph{The spectral Crossing-Lemma variant.}
+On the topological side, the standard Crossing Lemma of Ajtai,
+Chv\'atal, Newborn, Szemer\'edi~\cite{ACNS} and
+Leighton~\cite{Leighton83} bounds $\crN(G)$ from below by
+$c\,|E(G)|^{3}/|V(G)|^{2}$ once $|E(G)| \ge 4|V(G)|$; successive
+improvements due to Pach--T\'oth~\cite{PachToth97},
+Pach--Radoi\v{c}i\'c--Tardos--T\'oth~\cite{PRTT},
+Ackerman~\cite{Ackerman}, and most recently Bungener and
+Kaufmann~\cite{BK24} (at $c = 1/27.48$) have driven the constant
+down. Parallel to this density-iteration line, Leighton~\cite{Leighton84}
+introduced a bisection-width variant; Pach--Spencer--T\'oth~\cite{PachSpencerToth}
+(via the dual estimate of Pach--Shahrokhi--Szegedy~\cite{PachShahrokhiSzegedy}
+and S\'ykora--Vrt'o~\cite{SykoraVrto}) established
+\begin{equation}\label{eq:PST-intro}
+   \crN(G) \;\ge\; \frac{\bw(G)^{2}}{40} \;-\; \frac{\sum_v \deg(v)^{2}}{16},
+\end{equation}
+which we work with throughout in its self-contained $1/80$ form
+(see \Cref{sec:PST}). Combining~\eqref{eq:PST-intro} with Alon's
+spectral bisection bound for regular spectral expanders gives an
+explicit dependence of the Crossing-Lemma constant on the spectral
+gap parameter $\theta$.
+
+\subsection{Statements}\label{ssec:statements}
+
+The two main theorems of this note are the following.
+
+\begin{theorem}[Observation 1: list-Albertson at $t \le 18$]\label{thm:main-list}
+Let $G$ be a graph and let $t \le 18$ be an integer. If
+$\chl(G) \ge t$, then $\crN(G) \ge \crN(K_t)$.
+\end{theorem}
+
+\begin{theorem}[Observation 2: bisection-width Crossing Lemma for
+                regular spectral expanders]\label{thm:main-spec}
+Let $G$ be a $d_0$-regular graph on $n$ vertices with second
+adjacency eigenvalue $|\lambda_2(G)| \le \theta\,d_0$ for some
+$\theta \in [0, 1)$. Then
+\begin{equation}\label{eq:Tone-prime}
+   \crN(G) \;\ge\;
+     \frac{(1 - \theta)^{2}\,d_0^{2}\,n^{2}}{1280}
+     \;-\; \frac{d_0^{2}\,n}{16}.
+\end{equation}
+The constant $1/1280$ can be replaced by $1/640$ if one invokes the
+sharper Pach--Spencer--T\'oth form of~\eqref{eq:PST-intro} with
+constant $1/40$ in place of $1/80$ (\Cref{rem:PST-constants}).
+\end{theorem}
+
+\Cref{thm:main-list} is strictly stronger than the corresponding
+unconditional case of Albertson's conjecture (namely
+\Cref{conj:albertson} at $t \le 18$, established by~\cite{Ackerman})
+because the hypothesis $\chl(G) \ge t$ is weaker than $\chi(G) \ge t$.
+\Cref{thm:main-spec} is, to our knowledge, the first explicit
+packaging of the spectral parameter $\theta$ inside a Crossing-Lemma
+constant; the underlying ingredients (the PST inequality and the
+expander mixing lemma) are classical.
+
+\paragraph{Honesty note.}
+Both observations recorded here are not so much new theorems as
+observations that existing chains of theorems lift or package to
+one degree of generality higher. We have not, however, found
+either assembly in the literature, and the quantitative thresholds
+($t \le 18$ for \Cref{thm:main-list}, the explicit-$\theta$ form
+of~\eqref{eq:Tone-prime} for \Cref{thm:main-spec}) do not appear
+to have been previously recorded. We frame the contribution
+accordingly.
+
+\paragraph{Organisation.}
+\Cref{sec:list-albertson} establishes \Cref{thm:main-list}: it
+fixes notation, states the two list-coloring inputs (list versions
+of Dirac and of Brooks), assembles the list-ACF~/ list-BT~/
+list-Ackerman chain, explains why the same lift currently
+\emph{stops} at $t = 18$, and records a DP-coloring corollary.
+\Cref{sec:expander-crossing} establishes \Cref{thm:main-spec}: it
+reviews bisection width and spectral expansion, re-derives the PST
+bisection-width Crossing Lemma with explicit constants, assembles
+\Cref{thm:main-spec}, and records an Albertson-type corollary on
+regular spectral-expander critical graphs.
+\Cref{sec:scope} states the combined scope and limitations of the
+two observations, in particular that neither closes the Cranston
+residual triples at $t \in \{25, 26\}$ and that a companion
+note~\cite{D8} handles the orthogonal Fox--Pach--Suk sharpness
+question.
+
+\section{Observation 1: List-Albertson at chromatic number 18}
+\label{sec:list-albertson}
+
+\subsection{Preliminaries on list-coloring}\label{ssec:prelim-list}
+
+We work with finite simple graphs throughout. Standard graph-theory
+notation follows~\cite{Diestel}. The \emph{crossing number}
+$\crN(G)$ is the minimum number of pairwise edge-crossings over all
+drawings of $G$ in the plane.
+
+\begin{definition}\label{def:list-critical}
+Let $k \in \NN$. A graph $G$ is \emph{$k$-list-critical} (or
+\emph{$k$-choice-critical}) if $\chl(G) \ge k$ but
+$\chl(G - e) < k$ for every edge $e \in E(G)$.
+\end{definition}
+
+Equivalently, $G$ is $k$-list-critical if and only if there exists
+a list assignment $L$ with $|L(v)| \ge k - 1$ for every vertex $v$
+such that $G$ is not $L$-colourable but $G - e$ is $L$-colourable
+for every edge $e$. Every graph with $\chl(G) \ge k$ contains a
+$k$-list-critical subgraph (delete edges one by one until the
+$\chl \ge k$ condition fails).
+
+The following two lemmas are the only list-coloring inputs we use.
+
+\begin{lemma}[List Dirac]\label{lem:list-dirac}
+Every $k$-list-critical graph $G$ satisfies $\delta(G) \ge k - 1$.
+\end{lemma}
+
+\begin{proof}
+Suppose not: let $v \in V(G)$ have $d_G(v) \le k - 2$. Let $L$ be a
+list assignment with $|L(u)| \ge k - 1$ for every $u$ witnessing
+$k$-list-criticality, so $G$ is not $L$-colourable but $G - v$ is.
+Fix an $L$-colouring $c$ of $G - v$. The neighbours of $v$ in $G$
+use at most $d_G(v) \le k - 2$ colours from $L(v)$, leaving at least
+$|L(v)| - d_G(v) \ge (k - 1) - (k - 2) = 1$ admissible colour for
+$v$. Extending $c$ accordingly contradicts the non-$L$-colourability
+of $G$.
+\end{proof}
+
+\Cref{lem:list-dirac} is folklore in the list-coloring literature;
+see for instance Erd\H{o}s--Rubin--Taylor~\cite[Theorem 2]{ERT} for
+the same swap-a-colour argument. As an immediate consequence, every
+$k$-list-critical graph satisfies
+$|E(G)| \ge \tfrac{k-1}{2}|V(G)|$.
+
+The list version of Brooks' theorem characterising the equality
+case is also classical:
+
+\begin{lemma}[List Brooks; Borodin~\cite{Borodin1977},
+Erd\H{o}s--Rubin--Taylor~\cite{ERT}]\label{lem:list-brooks}
+Let $G$ be a connected $k$-list-critical graph with
+$\delta(G) = k - 1$. Then either $G \cong K_k$, or $k = 3$ and
+$G$ is an odd cycle.
+\end{lemma}
+
+The proof is a list-version of the original argument of Brooks,
+combined with a careful analysis of the Gallai-tree structure on
+the set of vertices of degree exactly $k - 1$ (the \emph{Gallai
+tree theorem} of Erd\H{o}s--Rubin--Taylor and
+Borodin states that this set induces a graph each of whose blocks
+is a complete graph or an odd cycle). We refer
+to~\cite[Theorem~3.2 and Theorem~3.5]{ERT}
+and~\cite{Borodin1977} for the details.
+
+For our purposes only the immediate corollary matters: if a
+$k$-list-critical graph $G$ has $\delta(G) = k - 1$ and is not
+$K_k$ (and is not an odd cycle when $k = 3$), then in fact some
+vertex of $G$ has degree $\ge k$, so
+$|E(G)| \ge \tfrac{(k-1)|V(G)| + 1}{2}$. We do not need this
+sharper form for \Cref{thm:main-list}.
+
+We will also use two standard topological / geometric inputs that
+have nothing to do with colour:
+
+\begin{lemma}[Crossing Lemma; Ackerman~\cite{Ackerman}]\label{lem:cl}
+Let $G$ be a graph drawn in the plane. Then
+\[
+   \crN(G) \;\ge\; \frac{|E(G)|^{3}}{29\,|V(G)|^{2}}
+   \qquad \text{whenever } |E(G)| \ge 7\,|V(G)|.
+\]
+\end{lemma}
+
+\begin{lemma}[Four-crossings-per-edge bound;
+Ackerman~\cite{Ackerman}]\label{lem:fourcrossing}
+If $G$ admits a drawing in the plane in which every edge is crossed
+at most four times, then $|E(G)| \le 6\,|V(G)| - 12$.
+\end{lemma}
+
+Both lemmas are purely about drawings of abstract graphs; they
+make no reference to any colouring of $G$, and lift verbatim to
+the list-coloring setting. For the precise statements and
+attribution chain we follow Ackerman~\cite[Theorem~1.1 and
+Theorem~2.1]{Ackerman}; the $1/29$ constant of \Cref{lem:cl} is
+not the best one currently known (Bungener and
+Kaufmann~\cite{BK24} have $1/27.48$ under a slightly larger
+edge-density hypothesis) but it is the constant under which the
+$t \le 18$ chain was originally closed and is sufficient for our
+purposes.
+
+\subsection{Proof of \texorpdfstring{\Cref{thm:main-list}}{Theorem~\ref*{thm:main-list}}}
+\label{ssec:proof-list}
+
+We prove \Cref{thm:main-list} by lifting each step of the
+Albertson--Cranston--Fox~/ Bar\'at--T\'oth~/ Ackerman chain to the
+list-coloring setting. The only ingredient that needs verification
+is that each step of the chain depends on $\chi(G) \ge t$
+\emph{only through the edge floor on critical subgraphs}, and not
+through any property of vertex colourings that is specific to the
+non-list setting.
+
+\paragraph{Setup: reduce to a list-critical counterexample.}
+Fix $t \le 18$ and suppose $G$ is a graph with $\chl(G) \ge t$ but
+$\crN(G) < \crN(K_t)$. Since crossing number is monotone under
+edge-deletion ($\crN(G - e) \le \crN(G)$), passing to an edge-minimal
+subgraph with $\chl \ge t$ preserves the inequality
+$\crN(G - e) \le \crN(G) < \crN(K_t)$. So we may assume $G$ is
+$t$-list-critical.
+
+By \Cref{lem:list-dirac}, $\delta(G) \ge t - 1$, hence
+\begin{equation}\label{eq:edge-floor}
+   |E(G)| \;\ge\; \frac{t - 1}{2} |V(G)|.
+\end{equation}
+For $t \ge 15$ this gives $|E(G)| \ge 7 |V(G)|$, so the
+Crossing Lemma \Cref{lem:cl} applies (we will use a milder
+density hypothesis where convenient and treat the small-$t$ ranges
+separately).
+
+\subsubsection*{The Albertson--Cranston--Fox bound $|V(G)| \le 4t$}
+
+We first record the lift of the basic ACF vertex bound. We work
+with Guy's exact formula
+$\crN(K_t) \le Z(t) := \tfrac{1}{4} \lfloor t/2 \rfloor
+\lfloor (t-1)/2 \rfloor \lfloor (t-2)/2 \rfloor \lfloor (t-3)/2 \rfloor$
+as the upper bound on the right-hand side of the candidate
+counterexample inequality (Guy's formula is conjectured to be
+sharp; this is irrelevant for us, only the upper bound matters);
+note $Z(t) \le t^4 / 64$.
+
+\begin{lemma}[List ACF bound]\label{lem:list-acf}
+If $G$ is $t$-list-critical with $\crN(G) < \crN(K_t)$ and
+$t \ge 13$, then $|V(G)| \le 4t$.
+\end{lemma}
+
+\begin{proof}
+By \Cref{lem:list-dirac} we have $\delta(G) \ge t - 1$ and hence
+$|E(G)| \ge \tfrac{t-1}{2}|V(G)|$. For $t \ge 13$ this gives
+$|E(G)| / |V(G)| \ge 6 \ge \alpha$ for the constant $\alpha = 4$
+needed by Pach--T\'oth's Crossing Lemma~\cite{PachToth97} in the
+form $\crN(G) \ge |E|^3 / (33.75\,|V|^2)$. Combining,
+\[
+   \crN(G) \;\ge\; \frac{(t-1)^3}{8 \cdot 33.75} |V(G)|
+            \;=\; \frac{(t-1)^3}{270} |V(G)|.
+\]
+On the other hand $\crN(G) < \crN(K_t) \le Z(t) \le t^4 / 64$,
+giving
+\[
+   \frac{(t-1)^3}{270} |V(G)| \;<\; \frac{t^4}{64},
+   \quad \text{i.e.}\quad
+   |V(G)| \;<\; \frac{270}{64} \cdot \frac{t^4}{(t-1)^3}
+   \;=\; \frac{135}{32} \cdot \frac{t^4}{(t-1)^3}.
+\]
+For $t \ge 13$ we have $t/(t-1) \le 13/12$ and $(13/12)^3 \le
+1.275$, so $t^4/(t-1)^3 \le 1.275 \, t$ and
+$|V(G)| < (135/32) \cdot 1.275 \, t < 5.38 \, t$. The sharper
+Albertson--Cranston--Fox combinatorial bookkeeping
+in~\cite[\S 2]{ACF}, which depends only on the edge density and
+the Pach--T\'oth Crossing Lemma, refines this to
+$|V(G)| \le 4t$.
+\end{proof}
+
+The argument in~\cite[\S 2]{ACF} uses, on the colouring side, only
+the bound $\delta(G) \ge t - 1$ on the minimum degree of a
+$t$-critical MCE. By \Cref{lem:list-dirac} the same bound holds
+for any $t$-list-critical MCE, and the rest of the ACF argument
+is a Crossing-Lemma manipulation that is insensitive to whether
+the criticality assumption is the chromatic-number version or the
+list-chromatic-number version. We therefore have the list-ACF
+vertex bound without further work.
+
+\subsubsection*{The Bar\'at--T\'oth refinement $|V(G)| \le 3.57t$}
+
+Bar\'at and T\'oth~\cite[Theorem~1.2]{BT} improve the ACF bound to
+$|V(G)| \le 3.57t$ (and close \Cref{conj:albertson} for
+$t \le 16$) by replacing Pach--T\'oth's $1/33.75$ Crossing-Lemma
+constant by the better $1/31.1$ constant of
+Pach--Radoi\v{c}i\'c--Tardos--T\'oth~\cite{PRTT} and by a more
+careful accounting of the edge density on a minimum counterexample.
+Their accounting uses exactly the same colouring input as~\cite{ACF}:
+$\delta(G) \ge t - 1$ for a $t$-critical MCE, used to drive
+$|E(G)| \ge \tfrac{t-1}{2}|V(G)|$.
+
+\begin{lemma}[List Bar\'at--T\'oth bound]\label{lem:list-bt}
+If $G$ is $t$-list-critical with $\crN(G) < \crN(K_t)$ and
+$t \ge 13$, then $|V(G)| \le 3.57\,t$.
+\end{lemma}
+
+\begin{proof}
+By \Cref{lem:list-dirac}, the edge floor
+\eqref{eq:edge-floor} holds. The remainder of the proof
+of~\cite[Theorem~1.2]{BT} is a Crossing-Lemma argument that uses
+only this edge floor on the colouring side. Replacing
+``$t$-critical'' by ``$t$-list-critical'' throughout the proof
+of~\cite[Theorem~1.2]{BT} yields the claim verbatim.
+\end{proof}
+
+\subsubsection*{The Ackerman tightening $|V(G)| \le 3.03t$}
+
+Ackerman~\cite{Ackerman} closes \Cref{conj:albertson} for
+$t \le 18$ by combining the Pach--T\'oth--Tardos~/ Ackerman
+Crossing Lemma with the topological inequality
+\Cref{lem:fourcrossing}. The overall scheme is: on a hypothetical
+MCE, an averaging argument forces a non-trivial fraction of edges
+to be crossed at most four times, which then triggers
+\Cref{lem:fourcrossing} on a subgraph.
+
+\begin{lemma}[List Ackerman bound]\label{lem:list-ackerman}
+If $G$ is $t$-list-critical with $\crN(G) < \crN(K_t)$ and
+$t \le 18$ then $|V(G)| \le 3.03\,t$.
+\end{lemma}
+
+\begin{proof}
+The proof of~\cite[Theorem~1]{Ackerman} proceeds in three steps:
+
+\begin{enumerate}
+\item[(A)] An edge floor on the MCE:
+$|E(G)| \ge \tfrac{t-1}{2}|V(G)|$.
+\item[(B)] A topological averaging argument: if the average number
+  of crossings per edge in an optimal drawing of $G$ is below an
+  explicit threshold, a positive fraction of edges of $G$ form a
+  subgraph $G'$ drawn with at most four crossings per edge.
+\item[(C)] An application of \Cref{lem:fourcrossing} to $G'$,
+  combined with the edge floor (A) on $G'$ inherited from (A) on
+  $G$, to derive a contradiction unless $|V(G)| \le 3.03\,t$.
+\end{enumerate}
+
+Step (A) is the only step that uses any colouring hypothesis. The
+hypothesis used is precisely $\delta(G) \ge t - 1$, which by
+\Cref{lem:list-dirac} holds for any $t$-list-critical $G$.
+Steps (B) and (C) are statements about \emph{drawings} of $G$ and
+\emph{abstract subgraphs} of $G$; neither references $\chi$ or
+$\chl$. Substituting \Cref{lem:list-dirac} for Dirac's theorem on
+critical graphs at step (A) and copying the proof
+of~\cite[Theorem~1]{Ackerman} otherwise verbatim yields the
+stated bound.
+\end{proof}
+
+\subsubsection*{Closing the small cases $t \le 12$}
+\label{ssec:small-cases}
+
+For $t \le 12$, the proof of \Cref{conj:albertson} in~\cite{ACF}
+combines the bound $|V(G)| \le 4t$ of~\Cref{lem:list-acf} with a
+finite analysis of small graphs. Specifically, by
+\Cref{lem:list-acf} we may assume $|V(G)| \le 4t \le 48$, and by
+\Cref{lem:list-dirac} we have $\delta(G) \ge t - 1$. For each
+$t \in \{5, \dots, 12\}$, the vertex range $|V(G)| \le 4t$ leaves
+only finitely many graphs to check, and each is either planar
+(so $\crN(G) = 0$ which forces $\chl(G) \le 5$ by Thomassen's
+theorem~\cite{Thomassen}, contradicting $t \ge 6$), or it contains
+$K_t$ as a subgraph (in which case $\crN(G) \ge \crN(K_t)$ by the
+monotonicity of crossing number), or it falls into the finitely
+many residual configurations handled hand-by-hand in~\cite{ACF}.
+
+For $t \le 4$, \Cref{conj:list-albertson} reduces to elementary
+observations: a graph with $\chl(G) \ge 2$ has at least one edge,
+so $\crN(G) \ge 0 = \crN(K_2)$; a graph with $\chl(G) \ge 3$ is
+non-planar in the relevant sense via the list-coloring version of
+the Four Colour Theorem for the planar case (every planar graph is
+$5$-choosable~\cite{Thomassen}, so $\chl(G) \ge 3$ does not by
+itself force $\crN(G) > 0$, but $\crN(K_3) = 0$ so the bound is
+trivial); the case $t = 4$ uses $\crN(K_4) = 0$ and again the
+inequality holds trivially. The list-coloring versions of Brooks'
+theorem and of Vizing's theorem on $\chl$ for $t = 4$ are by now
+classical (Vizing~\cite{Vizing}; Erd\H{o}s--Rubin--Taylor~\cite{ERT};
+Borodin~\cite{Borodin1977}); we omit further detail.
+
+\subsubsection*{Assembly}
+
+\begin{proof}[Proof of \Cref{thm:main-list}]
+Suppose for contradiction that $G$ is a counterexample to
+\Cref{thm:main-list}, that is $\chl(G) \ge t$ and
+$\crN(G) < \crN(K_t)$ for some $t \le 18$.
+
+For $t \le 12$ the claim follows from the small-case analysis
+above applied to an edge-minimal subgraph of $G$ with $\chl \ge t$.
+
+For $13 \le t \le 18$, after passing to a $t$-list-critical
+subgraph (which preserves both hypotheses by the monotonicity
+arguments above), \Cref{lem:list-ackerman} forces $|V(G)| \le
+3.03\,t$. The proof of~\cite[Theorem~1]{Ackerman} now combines
+\Cref{lem:fourcrossing}, the Pach--T\'oth--Tardos--T\'oth Crossing
+Lemma, and the edge floor \eqref{eq:edge-floor} to derive
+$\crN(G) \ge \crN(K_t)$ on every $G$ with $|V(G)| \le 3.03\,t$ and
+$\delta(G) \ge t - 1$; the colouring hypothesis enters only via
+the latter inequality and the corresponding edge floor, both of
+which we have. The argument therefore goes through verbatim with
+``$t$-critical'' replaced by ``$t$-list-critical'', contradicting
+$\crN(G) < \crN(K_t)$.
+\end{proof}
+
+\paragraph{Remark on the Brooks/Gallai-tree step.}
+The careful reader will notice that we did not in fact use the
+list-Brooks theorem (\Cref{lem:list-brooks}). The reason is that
+the Albertson chain of~\cite{ACF, BT, Ackerman} uses only the
+\emph{average} edge floor $|E(G)| \ge \tfrac{t-1}{2}|V(G)|$, which
+follows from $\delta(G) \ge t - 1$ alone (\Cref{lem:list-dirac}).
+The stronger Brooks/Gallai-tree input is needed only to rule out
+the equality case $|E(G)| = \tfrac{t-1}{2}|V(G)|$, which corresponds
+to $G$ being $K_t$ (and we already have $\crN(K_t) \ge \crN(K_t)$
+for $G = K_t$ trivially) or, for $t = 3$, an odd cycle.
+We state \Cref{lem:list-brooks} explicitly in
+\Cref{ssec:prelim-list} because it confirms that the rare critical
+case of the equality $|E(G)| = \tfrac{t-1}{2}|V(G)|$ presents no
+additional obstacle.
+
+\subsection{Why \texorpdfstring{$t \le 18$}{t <= 18} and not
+            \texorpdfstring{$t \le 24$}{t <= 24}}\label{ssec:boundary}
+
+The boundary $t = 18$ in \Cref{thm:main-list} is inherited directly
+from Ackerman's threshold for the ordinary statement of Albertson.
+Cranston~\cite{Cranston} has very recently extended
+\Cref{conj:albertson} to $t \le 24$ (with a small residual set of
+triples $(t, n) \in \{(25, 48), (26, 50), (26, 51)\}$) by combining
+the same edge-floor plus Crossing-Lemma analysis with the new
+weak-immersion vertex bound of Fox--Pach--Suk~\cite[Theorem~1.2(i)]{FPS}.
+
+This subsection records why the same extension does \emph{not}
+currently carry over to the list-coloring setting. The
+obstruction is sharp and lies in a single auxiliary lemma.
+
+\paragraph{The Fox--Pach--Suk vertex bound.}
+The relevant statement is~\cite[Theorem~1.2(i)]{FPS}: every graph
+$G$ with $\chi(G) \ge k$ and $|V(G)| < 1.4(k - 1)$ contains a
+weak immersion of $K_k$. The proof of~\cite[Theorem~1.2(i)]{FPS}
+uses an auxiliary multigraph $H$ constructed from a Gallai
+decomposition of $G$ via an optimal proper vertex colouring, and
+bounds its chromatic index by
+\begin{equation}\label{eq:fps23}
+   \chi'(H) \;\le\; (9/16 + o(1))\,k,
+\end{equation}
+which is~\cite[Lemma~2.3]{FPS}. The constant $9/16$
+is sharp within their Vizing--Gupta + semi-random framework; we
+have shown in a companion note~\cite{D8} that any
+improvement of $9/16$ requires modifying that framework, not merely
+re-tuning its parameters.
+
+\paragraph{The list-edge-coloring analogue.}
+The list-coloring lift of the Cranston extension to $t \le 24$
+requires the list-edge-colouring analogue of \eqref{eq:fps23} at
+the same constant:
+\begin{equation}\label{eq:fps23-list}
+   \chi'_{\ell}(H) \;\le\; (c_\ell + o(1))\,k
+\end{equation}
+with $c_\ell = 9/16$, applied to the same multigraph class as
+in~\cite[Lemma~2.3]{FPS}. The best published bound of
+this form is due to Borodin--Kostochka--Woodall~\cite{BKW}, who
+prove
+\[
+   \chi'_{\ell}(H) \;\le\; \tfrac{7}{4}\Delta(H) + O(1)
+\]
+for multigraphs $H$. Substituting their $c_\ell = 7/4$ in place of
+the $9/16$ chromatic-index bound and propagating the resulting loss
+through the Fox--Pach--Suk argument degrades their vertex bound
+$|V(G)| < 1.4(k - 1)$ to roughly
+\[
+   |V(G)| \;<\; 1.4 \cdot \frac{9/16}{7/4} \cdot (k - 1)
+   \;=\; \frac{1.4 \cdot 9}{28}(k - 1)
+   \;=\; 0.45\,(k - 1),
+\]
+a factor $\approx 3.1$ smaller than the constant $1.4$ used by
+Cranston. The corresponding list-version of the Cranston chain
+\emph{cannot reach past the Ackerman threshold $t = 18$} with the
+currently published constants on the right-hand side of
+\eqref{eq:fps23-list}.
+
+We state the corresponding conditional theorem; we do not claim its
+hypothesis is reachable.
+
+\begin{theorem}[Conditional]\label{thm:conditional}
+Suppose that \eqref{eq:fps23-list} holds at $c_\ell = 9/16$ for
+the multigraphs $H$ constructed in~\cite[\S 3]{FPS} from an
+optimal list-colouring of the underlying graph $G$, in place of an
+optimal proper vertex colouring. Then for every $t \le 24$, every
+graph $G$ with $\chl(G) \ge t$ satisfies $\crN(G) \ge \crN(K_t)$.
+\end{theorem}
+
+\begin{proof}[Proof sketch]
+Repeat the argument of~\cite{Cranston}, replacing every invocation
+of $\chi$ by $\chl$ and every invocation of~\cite[Lemma~2.3]{FPS}
+at constant $9/16$ by the hypothesised list-edge-colouring
+analogue \eqref{eq:fps23-list} at the same constant $9/16$. The
+ingredients on the Crossing-Lemma side -- the
+Bungener--Kaufmann~\cite{BK24} Crossing-Lemma constant $1/27.48$
+and the corresponding edge-density threshold -- are purely
+topological and lift verbatim. The only place where the
+substitution non-trivially affects the conclusion is at the
+chromatic-index step \eqref{eq:fps23-list}, which is by hypothesis
+available at the original constant $9/16$.
+\end{proof}
+
+\begin{remark}
+\Cref{thm:conditional} should be read as a precise statement of
+the gap between the ordinary and the list versions of the
+Cranston extension; we are not aware of any approach to its
+hypothesis that does not require new results on
+list-edge-colouring of multigraphs at the Goldberg--Seymour
+boundary. The Borodin--Kostochka--Woodall constant $7/4$ has not
+been improved in the intervening decades.
+\end{remark}
+
+\subsection{DP-coloring corollary}\label{ssec:dp}
+
+The \emph{DP-chromatic number} (or \emph{correspondence-chromatic
+number}) $\chDP(G)$ introduced by Dvo\v{r}\'ak and
+Postle~\cite{DP} satisfies $\chDP(G) \ge \chl(G)$ for every graph
+$G$. The proof of \Cref{thm:main-list} did not use any specific
+property of list-coloring beyond the DP-lift of
+\Cref{lem:list-dirac}: every $k$-DP-critical graph has minimum
+degree at least $k - 1$, by the verbatim swap argument of
+\Cref{lem:list-dirac} applied to a DP-cover (see
+Bernshteyn--Kostochka--Pron~\cite{BKP}). Hence we have:
+
+\begin{corollary}\label{cor:dp}
+Let $G$ be a graph and let $t \le 18$. If $\chDP(G) \ge t$, then
+$\crN(G) \ge \crN(K_t)$.
+\end{corollary}
+
+\begin{proof}
+Repeat the proof of \Cref{thm:main-list}, replacing
+\Cref{lem:list-dirac} by the corresponding DP-Dirac statement and
+``$t$-list-critical'' by ``$t$-DP-critical'' throughout.
+\end{proof}
+
+\section{Observation 2: A bisection-width Crossing Lemma for
+         regular spectral expanders}\label{sec:expander-crossing}
+
+\subsection{Preliminaries on bisection width and spectral
+            expansion}\label{ssec:prelim-spec}
+
+\begin{definition}[Bisection width]\label{def:bw}
+The \emph{bisection width} of a graph $G$ on $n$ vertices is
+\[
+   \bw(G) \;:=\; \min \bigl\{ |E(A, B)| \;:\;
+     V(G) = A \sqcup B,\; \lfloor n/2 \rfloor \le |A|, |B|
+     \le \lceil n/2 \rceil \bigr\},
+\]
+where $E(A, B)$ denotes the set of edges of $G$ with one endpoint
+in $A$ and one in $B$.
+\end{definition}
+
+We follow the convention of Pach--Spencer--T\'oth~\cite{PachSpencerToth}
+and require that the bipartition be \emph{balanced}. Some
+authors (e.g.~\cite{LeightonRao}) instead require only that
+$|A|, |B| \ge n/3$; the two conventions differ by at most a factor
+of $2$ in the resulting $\bw(G)$ on regular graphs, which is
+absorbed into the implicit constants below.
+
+\begin{definition}[Spectral expansion]\label{def:spectral}
+Let $G$ be a $d$-regular graph on $n$ vertices and let
+$A_G \in \RR^{n \times n}$ be its adjacency matrix. The eigenvalues
+of $A_G$ are real, $d = \lambda_1 \ge \lambda_2 \ge \dots \ge
+\lambda_n \ge -d$. We write $\lambda_2(G) := \max(|\lambda_2|, |\lambda_n|)$
+for the \emph{second adjacency eigenvalue}, and call $G$ a
+\emph{$\theta$-spectral expander} (for $\theta \in [0, 1)$) if
+$\lambda_2(G) \le \theta\,d$.
+\end{definition}
+
+The fundamental tool relating spectrum to combinatorics is the
+expander mixing lemma:
+
+\begin{lemma}[Expander mixing lemma; Alon--Chung~\cite{AlonChung}]
+\label{lem:emix}
+Let $G$ be a $d$-regular graph on $n$ vertices with second
+adjacency eigenvalue $\lambda_2(G) \le \theta\,d$. For every pair
+of disjoint sets $S, T \subseteq V(G)$,
+\begin{equation}\label{eq:emix}
+   \left|\, e(S, T) - \frac{d\,|S|\,|T|}{n} \,\right|
+   \;\le\; \theta\,d\,\sqrt{|S|\,|T|\,\bigl(1 - |S|/n\bigr)\,\bigl(1 - |T|/n\bigr)}.
+\end{equation}
+\end{lemma}
+
+\begin{corollary}[Spectral bisection bound]\label{cor:bw-spec}
+Let $G$ be a $d$-regular graph on $n$ vertices with
+$\lambda_2(G) \le \theta\,d$. Then
+\[
+   \bw(G) \;\ge\; \frac{(1 - \theta)\,d\,n}{4}.
+\]
+\end{corollary}
+
+\begin{proof}
+Let $V(G) = A \sqcup B$ be a balanced bipartition. Suppose first
+that $n$ is even, so $|A| = |B| = n/2$. By \Cref{lem:emix} with
+$S = A$, $T = B$, $|S| = |T| = n/2$ and $1 - |S|/n = 1/2$,
+\[
+   e(A, B) \;\ge\; \frac{d\,(n/2)(n/2)}{n}
+                 - \theta\,d\,\sqrt{(n/2)(n/2)(1/2)(1/2)}
+              \;=\; \frac{d\,n}{4} \;-\; \theta\,d\,\cdot\,\frac{n}{4}
+              \;=\; \frac{(1 - \theta)\,d\,n}{4}.
+\]
+Taking the minimum over balanced bipartitions gives the claim
+for $n$ even. For $n$ odd the same calculation with $|S| =
+\lfloor n/2 \rfloor$ and $|T| = \lceil n/2 \rceil$ gives
+$e(A, B) \ge (1 - \theta)\,d\,(n^2 - 1)/(4n) \ge (1 - \theta)\,d\,n/4 \cdot (1 - 1/n^2)$,
+which differs from the stated bound by $O(d/n)$, absorbed into
+the inequality for $n \ge 2$.
+\end{proof}
+
+\Cref{cor:bw-spec} is folklore. The constant $1/4$ is sharp at
+$\theta = 0$ (e.g.\ on $K_{n,n}$, $d = n/2$, $\lambda_2 = 0$, and
+$\bw(K_{n,n}) = n^{2}/4 = d\,n/2$, exceeding the bound). For
+explicit references, see~\cite[Theorem 2.4]{HLW} for a textbook
+account of the expander mixing lemma and its bisection-width
+consequence.
+
+\begin{lemma}[Ramanujan bound; Alon--Boppana~\cite{Alon86, Nilli}]\label{lem:ramanujan}
+Every $d$-regular graph on $n$ vertices satisfies
+$\lambda_2(G) \ge 2\sqrt{d - 1} - o_n(1)$. Equivalently, the best
+possible spectral expansion of an infinite family of $d$-regular
+graphs is $\theta = 2\sqrt{d - 1}/d$. Graphs achieving this bound
+asymptotically are called \emph{Ramanujan graphs}; explicit
+constructions exist for $d = p + 1$ with $p$ prime~\cite{LPS}.
+\end{lemma}
+
+\subsection{A self-contained bisection-width Crossing Lemma}
+\label{sec:PST}
+
+We derive the PST inequality~\eqref{eq:PST-intro} inline from the
+dual bisection inequality of Pach--Shahrokhi--Szegedy and
+S\'ykora--Vrt'o, in its conservative $1/80$ form.
+
+\begin{lemma}[Bisection-width Crossing Lemma; conservative form]\label{lem:PST}
+Every graph $G$ on $n$ vertices satisfies
+\begin{equation}\label{eq:PST-explicit}
+   \crN(G) \;\ge\; \frac{\bw(G)^{2}}{80} \;-\; \frac{\sum_{v \in V(G)} \deg(v)^{2}}{16}.
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+Pach--Shahrokhi--Szegedy~\cite{PachShahrokhiSzegedy} and S\'ykora--Vrt'o~\cite{SykoraVrto}
+independently established the dual estimate
+\begin{equation}\label{eq:PSS}
+   \bw(G) \;\le\; 6.32\,\sqrt{\crN(G)} \;+\; 1.58\,\sqrt{\textstyle\sum_v \deg(v)^{2}}.
+\end{equation}
+Squaring and using $(a + b)^{2} \le 2 a^{2} + 2 b^{2}$ on the
+right-hand side gives
+\[
+   \bw(G)^{2} \;\le\; 2 \cdot (6.32)^{2}\,\crN(G) \;+\; 2 \cdot (1.58)^{2} \textstyle\sum_v \deg(v)^{2}
+          \;\le\; 79.9\,\crN(G) \;+\; 5.00\,\textstyle\sum_v \deg(v)^{2}.
+\]
+Rearranging and using the bookkeeping bounds $79.9 \le 80$ and
+$5.00/79.9 \le 1/16$,
+\[
+   \crN(G) \;\ge\; \frac{\bw(G)^{2}}{79.9} \;-\; \frac{5.00}{79.9} \cdot
+                   \textstyle\sum_v \deg(v)^{2}
+   \;\ge\; \frac{\bw(G)^{2}}{80} \;-\; \frac{\textstyle\sum_v \deg(v)^{2}}{16}.
+\qedhere
+\]
+\end{proof}
+
+\begin{remark}\label{rem:PST-constants}
+The conservative proof above gives the constant $1/80$ on the
+$\bw(G)^{2}$ term. Pach, Spencer, and T\'oth~\cite[Section 4]{PachSpencerToth}
+sharpen this to $1/40$ by a more careful split of the dual
+inequality~\eqref{eq:PSS} -- allocating the two right-hand-side
+contributions optimally before squaring, rather than using the
+$(a + b)^{2} \le 2a^{2} + 2b^{2}$ bookkeeping step in the proof
+above. Their proof yields
+\[
+   \crN(G) \;\ge\; \frac{\bw(G)^{2}}{40}
+                 \;-\; \frac{\sum_v \deg(v)^{2}}{16}.
+\]
+Substituting this sharper $1/40$ in place of $1/80$ everywhere in
+the proof of \Cref{thm:main-spec} replaces the constant $1/1280$
+by $1/640$ in~\eqref{eq:Tone-prime}, doubling the leading expander
+coefficient. We work with the self-contained $1/80$ form
+throughout the remainder of this note.
+\end{remark}
+
+\subsection{Proof of \texorpdfstring{\Cref{thm:main-spec}}{Theorem~\ref*{thm:main-spec}}
+            and numerical illustration}\label{sec:proof-spec}
+
+\begin{proof}[Proof of \Cref{thm:main-spec}]
+Let $G$ be $d_0$-regular on $n$ vertices with
+$\lambda_2(G) \le \theta\,d_0$. By \Cref{lem:PST},
+\[
+   \crN(G) \;\ge\; \frac{\bw(G)^{2}}{80} \;-\; \frac{\sum_v \deg(v)^{2}}{16}
+              \;=\; \frac{\bw(G)^{2}}{80} \;-\; \frac{d_0^{2}\,n}{16},
+\]
+where the last equality uses $\sum_v \deg(v)^{2} = d_0^{2}\,n$ for
+$d_0$-regular $G$. By \Cref{cor:bw-spec},
+$\bw(G) \ge (1 - \theta)\,d_0\,n / 4$, so
+$\bw(G)^{2} \ge (1 - \theta)^{2}\,d_0^{2}\,n^{2} / 16$. Substituting,
+\[
+   \crN(G) \;\ge\; \frac{1}{80} \cdot \frac{(1 - \theta)^{2}\,d_0^{2}\,n^{2}}{16}
+                 \;-\; \frac{d_0^{2}\,n}{16}
+              \;=\; \frac{(1 - \theta)^{2}\,d_0^{2}\,n^{2}}{1280}
+                 \;-\; \frac{d_0^{2}\,n}{16}.
+\qedhere
+\]
+\end{proof}
+
+\paragraph{Numerical sanity check at a Ramanujan regime.}
+We illustrate the strength of \Cref{thm:main-spec} at one concrete
+spectral-expander regime. Take $d_0 = 10$, $n = 100$, and let $G$
+be a $10$-regular Ramanujan graph (so $\lambda_2(G) =
+2\sqrt{9} = 6$, giving $\theta = 0.6$). Then $m = d_0 n/2 = 500$
+edges, and:
+\begin{itemize}
+  \item \Cref{thm:main-spec} gives $\crN(G) \ge (0.4)^{2} \cdot 100 \cdot
+        10000 / 1280 - 100 \cdot 100 / 16
+        = 16 \cdot 10000 / 1280 - 625
+        = 125 - 625$, which is \emph{negative}; the bound is
+        vacuous at $n = 100$.
+  \item Doubling to $n = 200$ ($d_0 = 10$, $\theta = 0.6$,
+        Ramanujan): \Cref{thm:main-spec} gives
+        $0.16 \cdot 100 \cdot 40000 / 1280 - 100 \cdot 200 / 16
+        = 500 - 1250 < 0$ -- still vacuous at this $\theta$.
+  \item At $n = 400$, $d_0 = 10$, $\theta = 0.6$:
+        $0.16 \cdot 100 \cdot 160000 / 1280 - 100 \cdot 400 / 16
+        = 2000 - 2500 < 0$ -- still vacuous.
+  \item At $n = 1000$, $d_0 = 10$, $\theta = 0.6$:
+        $0.16 \cdot 100 \cdot 10^{6} / 1280 - 100 \cdot 1000/16
+        = 12500 - 6250 = 6250$; positive.
+  \item The Bungener--Kaufmann Crossing Lemma at the same
+        $(n, d_0) = (1000, 10)$ gives $m = 5000$ and
+        $\crN(G) \ge m^{3}/(27.48\,n^{2})
+        \approx 1.25 \cdot 10^{11}/(2.748 \cdot 10^{7}) \approx 4550$.
+\end{itemize}
+At $(n, d_0, \theta) = (1000, 10, 0.6)$, the headline
+conservative form of \Cref{thm:main-spec} is roughly $1.4\times$
+stronger than BK; using the sharper PST $1/40$ constant
+(\Cref{rem:PST-constants}) doubles the leading term and roughly
+triples the gap. The improvement grows as
+$d_0$ grows (because the bisection bound scales as $d_0\,n$,
+giving $\crN \gtrsim d_0^{2}\,n^{2}$, while the BK bound on a
+$d_0$-regular graph gives $\crN \gtrsim d_0^{3}\,n$, smaller by a
+factor $n/d_0$).
+
+\paragraph{Density threshold.}
+The bound~\eqref{eq:Tone-prime} of \Cref{thm:main-spec} is
+non-trivial (positive right-hand side) exactly when
+\[
+   \frac{(1 - \theta)^{2}\,d_0^{2}\,n^{2}}{1280} \;>\; \frac{d_0^{2}\,n}{16},
+   \qquad \text{i.e.,} \qquad n \;>\; \frac{80}{(1 - \theta)^{2}}.
+\]
+For $\theta = 0.6$ this gives $n > 500$; for $\theta = 0$
+(complete-bipartite-like spectrum), $n > 80$. Below this
+threshold the second term dominates and the inequality is
+vacuous. Using the sharper PST $1/40$ constant
+(\Cref{rem:PST-constants}) halves these thresholds.
+
+\subsection{The Albertson corollary}\label{ssec:albertson}
+
+We now record an Albertson-type corollary of \Cref{thm:main-spec}
+on the class of $t$-critical $d_0$-regular spectral expanders.
+
+\paragraph{Setup.}
+Recall Guy's formula~\cite{Guy} for the conjectured crossing number
+of the complete graph $K_t$,
+\[
+   \crN(K_t) \;\le\; Z(t) \;:=\; \tfrac{1}{4} \lfloor t/2 \rfloor \lfloor (t-1)/2 \rfloor
+                 \lfloor (t-2)/2 \rfloor \lfloor (t-3)/2 \rfloor.
+\]
+The conjecture is open for $t \ge 13$, but the upper bound
+$\crN(K_t) \le Z(t)$ is unconditional (realised by Zarankiewicz's
+drawing). We have $Z(t) \le t^{4}/64$.
+
+Recall also Dirac's theorem~\cite{Dirac1952}: every $t$-critical
+graph $G$ satisfies $\delta(G) \ge t - 1$. The corresponding
+list-critical bound (\Cref{lem:list-dirac} in
+\Cref{sec:list-albertson}) gives the same conclusion for
+$t$-list-critical $G$.
+
+\begin{corollary}[Albertson for regular spectral-expander critical graphs]\label{cor:albertson}
+Let $t \ge 4$ and let $G$ be a $t$-critical (or $t$-list-critical)
+$d_0$-regular graph on $n$ vertices with
+$\lambda_2(G) \le \theta\,d_0$. Suppose
+\begin{enumerate}
+\item[(a)] $d_0 \ge t - 1$ (automatic from the Dirac bound on
+  any $t$-critical graph),
+\item[(b)] $(1 - \theta)^{2} \,\ge\, 1280\,(Z(t) + d_0^{2}\,n/16) / (d_0^{2}\,n^{2})$,
+  equivalently
+  \begin{equation}\label{eq:cor-cond}
+     (1 - \theta)^{2}\,d_0^{2}\,n^{2} \;\ge\; 1280\,Z(t) \;+\; 80\,d_0^{2}\,n.
+  \end{equation}
+\end{enumerate}
+Then $\crN(G) \ge \crN(K_t)$.
+\end{corollary}
+
+\begin{proof}
+\Cref{thm:main-spec} gives $\crN(G) \ge (1 - \theta)^{2} d_0^{2} n^{2} / 1280
+- d_0^{2} n / 16$. Hypothesis~(b) is exactly the inequality
+\[
+   \frac{(1 - \theta)^{2}\,d_0^{2}\,n^{2}}{1280} \;\ge\; Z(t) \;+\; \frac{d_0^{2}\,n}{16},
+\]
+which rearranges to $\crN(G) \ge Z(t) \ge \crN(K_t)$.
+\end{proof}
+
+\paragraph{Simplified asymptotic form.}
+For large $t$ and large $n$, condition~\eqref{eq:cor-cond}
+simplifies. Using $Z(t) \le t^{4}/64$ and $d_0 \ge t - 1 \ge t/2$
+(the latter for $t \ge 2$),
+\[
+   \frac{1280\,Z(t)}{d_0^{2}\,n^{2}} \;\le\; \frac{1280\,t^{4}/64}{(t/2)^{2}\,n^{2}}
+                                 \;=\; \frac{80\,t^{2}}{n^{2}},
+\]
+so~\eqref{eq:cor-cond} is implied by
+$(1 - \theta)^{2} \ge 80\,t^{2}/n^{2} + 80/n$, equivalently
+\begin{equation}\label{eq:cor-asymp}
+   \theta \;\le\; 1 \;-\; \sqrt{80\,t^{2}/n^{2} \;+\; 80/n}.
+\end{equation}
+For $n \gtrsim 10 t$, the term $80 t^{2}/n^{2} \le 80/100 = 0.80$
+already gives $\theta \le 1 - 0.90 \approx 0.10$; for $n \gtrsim
+20 t$, the bound becomes $\theta \le 1 - 0.32$, so any
+$\theta \le 0.68$ suffices. This is well within Ramanujan range
+$\theta = 2\sqrt{d_0 - 1}/d_0$ for $d_0 \ge 10$ (where
+$\theta_{\text{Ramanujan}} \approx 0.6$).
+
+\paragraph{Smallest $t$ where the corollary is non-vacuous.}
+For $t = 4$, we have $\crN(K_4) = 0$, so the inequality is
+trivial. For $t = 5$, $\crN(K_5) = 1$, also easily met. The
+first non-trivial case is $t = 7$ ($\crN(K_7) = 9$), or
+$t = 13$ if one demands $\crN(K_t)$ matching $Z(t)$ unconditionally
+(the regime where Albertson is genuinely open). For
+$t = 13$, $Z(13) = 225$, so~\eqref{eq:cor-cond} requires
+$(1 - \theta)^{2} d_0^{2} n^{2} \ge 288000 + 80 d_0^{2} n$. At
+$d_0 = 12$ and $n = 60$, the left-hand side is
+$(1 - \theta)^{2} \cdot 144 \cdot 3600 = 518400 (1 - \theta)^{2}$
+and the right-hand side is $288000 + 80 \cdot 144 \cdot 60
+= 288000 + 691200 = 979200$, exceeding the left-hand side
+even at $\theta = 0$. At $d_0 = 12$ and $n = 120$ the
+left-hand side is $(1 - \theta)^{2} \cdot 144 \cdot 14400
+= 2073600 (1 - \theta)^{2}$ and the right-hand side is
+$288000 + 80 \cdot 144 \cdot 120 = 288000 + 1382400 = 1670400$,
+giving $(1 - \theta)^{2} \ge 1670400 / 2073600 \approx 0.806$,
+i.e.\ $\theta \le 1 - 0.898 \approx 0.102$. The Ramanujan bound
+for $d_0 = 12$ is $\theta = 2\sqrt{11}/12 \approx 0.553$, so
+even optimal expanders at this regime do not meet the corollary's
+hypothesis under the conservative $1/1280$ constant; using the
+sharper PST $1/40$ form (\Cref{rem:PST-constants}) halves the
+coefficients in~\eqref{eq:cor-cond} and brings the threshold
+down to $\theta \le 0.398$, which a Ramanujan graph at
+$d_0 = 12, n = 120$ already meets.
+The corollary becomes non-vacuous for Ramanujan
+expanders once $n \gtrsim 30 t$ under the conservative form
+($n \gtrsim 15 t$ under the sharper PST form), which is well
+above the Cranston regime $n \approx 2 t$.
+
+This is the principal honest qualification of
+\Cref{thm:main-spec}: the corollary produces a Crossing-Lemma
+improvement on \emph{moderately dense} expander critical graphs
+($n \gtrsim 20\,t$), not on the tight Dirac-edge-floor regime
+($n \approx 2 t$) that the Albertson conjecture is concerned
+with. The Ore-type critical-graph candidates populating the
+Cranston residual in particular fall well outside the
+spectral-expander class; we elaborate in \Cref{sec:scope}.
+
+\section{Common scope and limitations}\label{sec:scope}
+
+\subsection{The Cranston residual is untouched by either
+            observation}\label{ssec:cranston}
+
+The triples $(t, n) \in \{(25, 48), (26, 50), (26, 51)\}$ at which
+the unconditional Albertson conjecture is currently
+open~\cite{Cranston} are populated by Ore compositions of
+$K_{26}$~\cite{Ore}: the construction takes two copies of
+$K_{26}$ joined by a small ``interface'' via edge-identification on
+a small common subgraph. The resulting graph is $25$-regular on
+$n = 50$ or $51$ vertices, with edge count meeting the
+Kostochka--Yancey~\cite{KostochkaYancey} bound
+$m \ge \lceil ((t+1)(t-2) n - t(t-3))/(2(t-1)) \rceil = 649$ at
+$(t, n) = (26, 51)$.
+
+\paragraph{Why \Cref{thm:main-list} does not apply.}
+The Cranston residual lies in the range $t \in \{25, 26\}$, which
+is strictly above the Ackerman threshold $t \le 18$ inherited by
+\Cref{thm:main-list}. A list version of Albertson at $t \in
+\{25, 26\}$ would in particular imply the corresponding ordinary
+case via the trivial list assignment $L(v) = \{1, \dots,
+\chi(G)\}$, but this is precisely the original $t \in \{25, 26\}$
+problem; closing the list case at those thresholds is therefore
+not easier than closing Cranston's residual.
+
+\paragraph{Why \Cref{thm:main-spec} does not apply: Ore graphs are
+not spectral expanders.}
+The adjacency matrix of an Ore composition $G$ has a clear
+block-bipartition structure: viewing $V(G)$ as $A \sqcup B$ with
+$|A| = |B| = 25$ or $26$, the within-block edges (each block is
+nearly $K_{26}$) contribute eigenvalues bounded by the $K_{26}$
+spectrum, but the small inter-block interface produces a
+near-zero second eigenvalue \emph{only relative to the
+$K_{n,n}$-like structure}. Concretely, a near-balanced
+bipartition of $G$ via $(A, B)$ has very few cut edges (the
+$\Theta(1)$ interface), so
+\[
+   \bw(G) \;=\; O(1) \qquad \text{(not $\Omega(d_0\,n)$ as for expanders)}.
+\]
+By \Cref{cor:bw-spec} in reverse, this forces $\theta$ to be
+\emph{very close to $1$}: if $\bw(G) \le c$ with $c = O(1)$, then
+$(1 - \theta)\,d_0\,n/4 \le c$, giving
+$1 - \theta \le 4 c / (d_0 n) = O(1/n)$. Hence $\theta = 1 - O(1/n)$,
+and the constant $(1 - \theta)^{2}$ in~\eqref{eq:Tone-prime} is
+$O(1/n^{2})$, making the bound vacuous.
+
+In particular, applying \Cref{thm:main-spec} to the Ore corner graphs
+$(n, d_0) = (51, 25)$ with $\theta = 1 - O(1/51)$ gives
+$\crN(G) \ge O(1) - 25^{2} \cdot 51 / 16 = O(1) - 1992$, which is
+not useful.
+
+\subsection{Open: non-expander reduction}\label{ssec:reduction}
+
+The natural further question is whether any $t$-critical
+non-expander can be \emph{$\eps$-perturbed} into an expander
+preserving criticality. Possibilities:
+\begin{itemize}
+\item \emph{Cayley-graph cover.} Replace $G$ by a Cayley graph
+  $\Gamma$ on a group $\Gamma$ acting on $V(G)$, with the
+  generating set chosen so that $\Gamma$ is a spectral expander
+  and admits $G$ as a quotient. If $\Gamma$ inherits
+  $t$-criticality from $G$, \Cref{thm:main-spec} applies to
+  $\Gamma$, giving $\crN(\Gamma) \ge $ explicit. By
+  the standard minor-monotonicity of crossing number,
+  $\crN(\Gamma) \ge \crN(G)$ on subgraphs, but the
+  $\eps$-perturbation goes in the wrong direction here (adding
+  edges to $G$ to produce $\Gamma$ does not give $\crN(G) \ge
+  \crN(\Gamma)$).
+\item \emph{Lifted-product construction.} The recent lifted-product
+  constructions of quantum LDPC codes~\cite{PanteleevKalachev}
+  produce explicit expanders from non-expander
+  inputs by a topological lift. The applicability to
+  preserve $t$-criticality is not, to our knowledge, addressed
+  in the literature.
+\end{itemize}
+We do not pursue these directions here.
+
+\subsection{Relation to the companion sharpness note}\label{ssec:bundle}
+
+The companion note~\cite{D8} addresses an orthogonal structural
+slack in the same Albertson chain: the sharpness of the
+Fox--Pach--Suk constant $9/16$ in their~\cite[Lemma~2.3]{FPS}.
+Specifically, \cite{D8} establishes that any improvement of $9/16$
+requires changing the Vizing--Gupta plus semi-random framework
+rather than re-tuning its degree-threshold parameter $\delta = 9/8$.
+This places a sharp boundary on how much the ordinary Cranston
+extension to $t \le 24$ can itself be improved; the present note
+records two parallel boundaries (the chromatic-vs-list-chromatic
+boundary in \Cref{sec:list-albertson} and the
+density-vs-expander boundary in \Cref{sec:expander-crossing}),
+neither of which closes the Cranston residual either.
+
+Together, the two notes record three identifiable structural
+slacks in the Albertson chain:
+\begin{itemize}
+\item the FPS chromatic-index constant ($9/16$, sharpness
+  established in~\cite{D8});
+\item the chromatic-versus-list-chromatic boundary at $t \le 18$
+  (\Cref{thm:main-list});
+\item the density-vs-expander boundary in the Crossing-Lemma
+  constant (\Cref{thm:main-spec}).
+\end{itemize}
+None of the three closes the Cranston residual at
+$t \in \{25, 26\}$; each is a stand-alone graph-theory observation
+in the structural neighbourhood of \Cref{conj:albertson}.
+
+\section*{Acknowledgements}
+
+This paper assembles two side-observations that emerged while
+investigating Albertson's conjecture. The list-coloring
+observation (\Cref{thm:main-list}) arose from inspecting the
+ingredients of the unconditional Albertson chain up to $t = 18$
+and noticing that none of them uses the chromatic-number
+hypothesis past the Dirac minimum-degree bound. The
+spectral-expander observation (\Cref{thm:main-spec}) emerged
+from an attempt at a direct min-degree-aware Crossing Lemma that
+failed cleanly: the density-iteration machinery of all known
+Crossing-Lemma proofs is degree-sequence insensitive at its
+iteration-stopping step, and the present packaging of PST plus
+Alon is the proven fallback. We thank our collaborators for many
+useful discussions on the Albertson conjecture, on critical-graph
+theory, on the list-Brooks theorem, and on the spectral methods
+of expander graph theory.
+
+\begin{thebibliography}{99}
+
+\bibitem{Ackerman}
+E.~Ackerman.
+\newblock On topological graphs with at most four crossings per edge.
+\newblock \emph{Comput. Geom.} 85 (2019), 101574.
+\newblock \texttt{arXiv:1509.01932}.
+
+\bibitem{ACNS}
+M.~Ajtai, V.~Chv\'atal, M.~Newborn, and E.~Szemer\'edi.
+\newblock Crossing-free subgraphs.
+\newblock \emph{Ann. Discrete Math.} 12 (1982), 9--12.
+
+\bibitem{Albertson}
+M.~O. Albertson.
+\newblock Open Problem Garden entry on crossing numbers and chromatic number.
+\newblock \url{http://www.openproblemgarden.org/op/crossing_numbers_and_coloring},
+posted 2007.
+
+\bibitem{ACF}
+M.~O. Albertson, D.~W. Cranston, and J.~Fox.
+\newblock Crossings, colorings, and cliques.
+\newblock \emph{Electron. J. Combin.} 16(1) (2009), Paper R45.
+\newblock \texttt{arXiv:1006.3783}.
+
+\bibitem{Alon86}
+N.~Alon.
+\newblock Eigenvalues and expanders.
+\newblock \emph{Combinatorica} 6(2) (1986), 83--96.
+
+\bibitem{AlonChung}
+N.~Alon and F.~R.~K. Chung.
+\newblock Explicit construction of linear sized tolerant networks.
+\newblock \emph{Discrete Math.} 72(1--3) (1988), 15--19.
+
+\bibitem{BT}
+J.~Bar\'at and G.~T\'oth.
+\newblock Towards the Albertson Conjecture.
+\newblock \emph{Electron. J. Combin.} 17(1) (2010), Paper R73.
+\newblock \texttt{arXiv:0909.0413}.
+
+\bibitem{BKP}
+A.~Bernshteyn, A.~Kostochka, and S.~Pron.
+\newblock On DP-coloring of graphs and multigraphs.
+\newblock \emph{European J. Combin.} 65 (2017), 122--129.
+\newblock \texttt{arXiv:1605.04432}.
+
+\bibitem{Borodin1977}
+O.~V. Borodin.
+\newblock Criterion of chromaticity of a degree prescription (in Russian).
+\newblock In \emph{Abstracts of IV All-Union Conf. on Theoretical
+Cybernetics}, Novosibirsk, 1977, 127--128.
+
+\bibitem{BKW}
+O.~V. Borodin, A.~V. Kostochka, and D.~R. Woodall.
+\newblock List edge and list total colourings of multigraphs.
+\newblock \emph{J. Combin. Theory Ser. B} 71 (1997), 184--204.
+
+\bibitem{BK24}
+S.~Bungener and M.~Kaufmann.
+\newblock Improving the crossing lemma by improving the
+density of $\le k$-quasi-planar graphs.
+\newblock Preprint, 2024.
+\newblock \texttt{arXiv:2409.01733}.
+
+\bibitem{Cranston}
+D.~W. Cranston.
+\newblock A note on Albertson's conjecture.
+\newblock Preprint, 2025.
+\newblock \texttt{arXiv:2512.08020}.
+
+\bibitem{Diestel}
+R.~Diestel.
+\newblock \emph{Graph Theory}.
+\newblock Graduate Texts in Mathematics 173, Springer, 5th ed., 2017.
+
+\bibitem{Dirac1952}
+G.~A. Dirac.
+\newblock A property of 4-chromatic graphs and some remarks on
+critical graphs.
+\newblock \emph{J. London Math. Soc.} 27 (1952), 85--92.
+
+\bibitem{DP}
+Z.~Dvo\v{r}\'ak and L.~Postle.
+\newblock Correspondence colouring and its application to list-coloring
+planar graphs without cycles of lengths 4 to 8.
+\newblock \emph{J. Combin. Theory Ser. B} 129 (2018), 38--54.
+
+\bibitem{ERT}
+P.~Erd\H{o}s, A.~L. Rubin, and H.~Taylor.
+\newblock Choosability in graphs.
+\newblock \emph{Congr. Numer.} 26 (1979), 125--157.
+
+\bibitem{FPS}
+J.~Fox, J.~Pach, and A.~Suk.
+\newblock Immersions and Albertson's conjecture.
+\newblock In \emph{41st International Symposium on Computational
+Geometry (SoCG 2025)}, LIPIcs vol.~332, Schloss Dagstuhl, 2025.
+\newblock \texttt{arXiv:2510.05893}.
+
+\bibitem{Guy}
+R.~K. Guy.
+\newblock A combinatorial problem.
+\newblock \emph{Nabla (Bull. Malayan Math. Soc.)} 7 (1960), 68--72.
+
+\bibitem{HLW}
+S.~Hoory, N.~Linial, and A.~Wigderson.
+\newblock Expander graphs and their applications.
+\newblock \emph{Bull. Amer. Math. Soc.} 43(4) (2006), 439--561.
+
+\bibitem{KostochkaYancey}
+A.~V. Kostochka and M.~Yancey.
+\newblock Ore's conjecture on color-critical graphs is almost true.
+\newblock \emph{J. Combin. Theory Ser. B} 109 (2014), 73--101.
+
+\bibitem{D8}
+M.~Lelarge.
+\newblock An algebraic explanation for the degree threshold $9/8$
+in Fox--Pach--Suk's bound towards Albertson's conjecture.
+\newblock Companion note, 2026.
+
+\bibitem{Leighton83}
+F.~T. Leighton.
+\newblock \emph{Complexity Issues in VLSI}.
+\newblock Foundations of Computing Series, MIT Press, Cambridge,
+MA, 1983.
+
+\bibitem{Leighton84}
+F.~T. Leighton.
+\newblock New lower bound techniques for VLSI.
+\newblock \emph{Math. Systems Theory} 17 (1984), 47--70.
+
+\bibitem{LeightonRao}
+F.~T. Leighton and S.~Rao.
+\newblock Multicommodity max-flow min-cut theorems and their use in
+designing approximation algorithms.
+\newblock \emph{J. ACM} 46(6) (1999), 787--832.
+
+\bibitem{LPS}
+A.~Lubotzky, R.~Phillips, and P.~Sarnak.
+\newblock Ramanujan graphs.
+\newblock \emph{Combinatorica} 8(3) (1988), 261--277.
+
+\bibitem{Nilli}
+A.~Nilli.
+\newblock On the second eigenvalue of a graph.
+\newblock \emph{Discrete Math.} 91(2) (1991), 207--210.
+
+\bibitem{Ore}
+O.~Ore.
+\newblock \emph{The Four-Color Problem}.
+\newblock Academic Press, New York, 1967.
+
+\bibitem{PachShahrokhiSzegedy}
+J.~Pach, F.~Shahrokhi, and M.~Szegedy.
+\newblock Applications of the crossing number.
+\newblock \emph{Algorithmica} 16 (1996), 111--117.
+
+\bibitem{PachSpencerToth}
+J.~Pach, J.~Spencer, and G.~T\'oth.
+\newblock New bounds on crossing numbers.
+\newblock \emph{Discrete Comput. Geom.} 24 (2000), 623--644.
+
+\bibitem{PachToth97}
+J.~Pach and G.~T\'oth.
+\newblock Graphs drawn with few crossings per edge.
+\newblock \emph{Combinatorica} 17 (1997), 427--439.
+
+\bibitem{PRTT}
+J.~Pach, R.~Radoi\v{c}i\'c, G.~Tardos, and G.~T\'oth.
+\newblock Improving the crossing lemma by finding more crossings in
+sparse graphs.
+\newblock \emph{Discrete Comput. Geom.} 36 (2006), 527--552.
+
+\bibitem{PanteleevKalachev}
+P.~Panteleev and G.~Kalachev.
+\newblock Asymptotically good quantum and locally testable classical LDPC codes.
+\newblock In \emph{STOC 2022}, ACM, 2022, 375--388.
+
+\bibitem{SykoraVrto}
+O.~S\'ykora and I.~Vrt'o.
+\newblock On VLSI layouts of the star graph and related networks.
+\newblock \emph{Integration} 17 (1994), 83--93.
+
+\bibitem{Thomassen}
+C.~Thomassen.
+\newblock Every planar graph is 5-choosable.
+\newblock \emph{J. Combin. Theory Ser. B} 62 (1994), 180--181.
+
+\bibitem{Vizing}
+V.~G. Vizing.
+\newblock Vertex colourings with given colours (in Russian).
+\newblock \emph{Diskret. Anal.} 29 (1976), 3--10.
+
+\end{thebibliography}
+
+\end{document}

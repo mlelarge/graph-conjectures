@@ -1,0 +1,585 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[margin=2.8cm]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{booktabs}
+\usepackage{microtype}
+\usepackage[hidelinks]{hyperref}
+\usepackage[capitalize,noabbrev]{cleveref}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{claim}[theorem]{Claim}
+\theoremstyle{definition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{conjecture}[theorem]{Conjecture}
+
+\newcommand{\cFPS}{c_{\mathrm{FPS}}}
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\chip}{\chi'}
+\DeclareMathOperator{\crN}{cr}
+
+\title{An algebraic explanation for the degree threshold
+       $9/8$ in Fox--Pach--Suk's bound towards Albertson's conjecture}
+\author{(draft) Marc Lelarge\thanks{\texttt{marc.lelarge@gmail.com}.}}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+In their proof of Lemma~2.3 towards Albertson's conjecture
+(arXiv:2510.05893, SoCG~2025), Fox, Pach, and Suk introduce a
+degree threshold $d := \delta k$ and fix $\delta = 9/8$ without
+justification. We show that this choice is sharp within their
+Vizing--Gupta plus semi-random framework. Concretely, defining
+$F(\delta)$ to be the supremum of the three-case Claim 3.7
+objective at a given $\delta$, we prove that
+\[
+   F(\delta) \;\ge\; \tfrac{9}{16}
+   \qquad\text{for every }\delta\in(1,\,5/4),
+\]
+with equality if and only if $\delta = 9/8$. The proof of the
+strict inequality $F(\delta) > 9/16$ for $\delta \in (1,\,9/8)$ is
+analytic and short: at the witness point $\eta = 4/7$ in Case 2b,
+\[
+   f_{2b}\!\left(\tfrac{4}{7},\,\delta\right) - \tfrac{9}{16}
+   \;=\; \frac{12\,(\delta - 9/8)^2}{7\,(4\delta - 1)} \;>\; 0
+   \qquad \text{for } \delta \neq 9/8.
+\]
+Two structural reasons underlie this sharpness. First, the
+Case 2b objective $f_{2b}(\eta, \delta)$ has nonpositive derivative
+in the reparametrising variable $\eta$ at $\eta = 1/2$ if and only
+if $\delta \ge -3 + \sqrt{17} \approx 1.12311$, with strict
+negativity for $\delta > -3 + \sqrt{17}$; the FPS choice
+$\delta = 9/8 = 1.125$ sits just above this threshold. For
+$\delta < -3 + \sqrt{17}$ the derivative is positive at $\eta = 1/2$
+and the maximum of $f_{2b}$ moves into the interior of its
+$\eta$-interval.
+Second, the Case~1 / Case~2a equalisation line $\delta/2 =
+f_{2a}^{\max}(\delta)$ leads to the irreducible cubic
+$\delta^3 + 3\delta^2 - \delta - 4 = 0$, whose root in $(1, 5/4)$
+sits at $\delta_1 \approx 1.114907 < -3 + \sqrt{17}$ -- so the
+``naive'' cubic optimum falls precisely in the regime where the
+Case 2b monotonicity assumption used in deriving it is violated.
+
+Any improvement to the Lemma~2.3 constant $\cFPS = 9/16$ must
+therefore come from outside this FPS Claim 3.7 optimisation as
+currently formulated -- for example, by replacing the Vizing--Gupta
+bound $\chip(H) \le \Delta(H) + \mu(H)$ by Goldberg--Seymour or
+Kahn-type estimates, or by modifying the semi-random construction
+itself.
+\end{abstract}
+
+\section{Introduction}
+
+Fox, Pach, and Suk~\cite{FPS} prove Albertson's
+conjecture~\cite{Albertson}, $\crN(G) \ge \crN(K_k)$ for every
+$k$-chromatic graph $G$, in the range $|V(G)| \le 1.4(k-1)$
+(asymptotically $|V(G)| \le (1.64 - o(1))\,k$). The crucial
+technical step is their Lemma~2.3, which bounds the chromatic index
+of an auxiliary multigraph $H$ by
+\begin{equation}\label{eq:fpsbound}
+   \chip(H) \;\le\; (\cFPS + o(1))\,k, \qquad \cFPS \;=\; 9/16.
+\end{equation}
+The constant $9/16$ comes from an explicit three-case optimisation
+(\cite[Claim 3.7]{FPS}) parameterised by a real degree threshold
+$\delta := d/k$. Throughout~\cite{FPS}, $\delta$ is fixed equal to
+$9/8$ from the start; the paper does not justify this choice.
+
+A natural question is whether $\delta = 9/8$ is forced -- i.e.\
+whether the optimum of the three-case bound, treated as a function
+of $\delta$, is attained at $\delta = 9/8$ -- or whether a smaller
+constant $c < 9/16$ might be reached at some other value of
+$\delta$. The purpose of this note is to answer that question:
+$\delta = 9/8$ is essentially forced.
+
+\begin{theorem}\label{thm:main}
+Let $F : (1, 5/4) \to \RR$ denote the supremum of the Case~1,
+Case~2a, and Case~2b objectives of~\cite[Claim 3.7]{FPS} as a
+function of the degree threshold $\delta$
+(see~\Cref{sec:setup}). Then
+\[
+  F(\delta) \;\ge\; \tfrac{9}{16}
+  \qquad \text{for every } \delta \in (1, 5/4),
+\]
+with equality if and only if $\delta = 9/8$.
+\end{theorem}
+
+The interval $(1, 5/4)$ is the natural FPS-admissible range:
+$\delta > 1$ is needed for the Case 2a stationary point to exist,
+and $\delta < 5/4$ is the upper bound coming from Claim~3.6
+of~\cite{FPS} (see~\Cref{sec:setup}). The Case 2b interval
+$\eta \in [1/2, \eta_b(\delta))$ is non-empty throughout the
+FPS-admissible range, becoming empty only at $\delta = 4/3 > 5/4$.
+
+\Cref{thm:main} shows that any improvement to the constant $9/16$ in
+\cite[Lemma 2.3]{FPS} obtained by retuning $\delta$ alone is
+impossible: such an improvement must come from outside this Claim
+3.7 optimisation as currently formulated.
+\Cref{sec:implications} discusses three concrete routes (replace
+Vizing--Gupta, sharpen the multiplicity bound, modify the
+semi-random construction).
+
+The genesis of this note was an erroneous earlier draft (preserved
+as \texttt{tighter\_fps\_\allowbreak RETRACTED.tex} for historical
+record) that proposed lowering $\delta$ from $9/8$ to a value
+$\delta_1 \approx 1.114907$ in order to improve $9/16$. The proposed improvement
+relied on assuming that the Case~2b maximum equals $\delta/2$ at
+every $\delta$, which is true at $\delta = 9/8$ (FPS prove it) but
+\emph{not} for general $\delta$. The cubic
+$\delta^3 + 3\delta^2 - \delta - 4 = 0$ remains an interesting
+algebraic feature of the Case~1 / Case~2a equalisation
+(\Cref{rem:cubic}), but its root $\delta_1$ is not optimal.
+
+\section{Setup}\label{sec:setup}
+
+We follow the notation of~\cite{FPS} throughout. Let $G$ be a
+$k$-chromatic graph, fix an index $i$ in the Gallai decomposition,
+and drop subscripts; let $d := \delta k$ be a real degree threshold
+with $\delta > 1$. Set $\alpha = \ell_w/k$, $\beta = \ell/k$,
+$\gamma = |U_w|/k$ as in \cite[\S 3]{FPS}.
+Reparametrise $\eta := 1 - (1-\beta)/(2-\beta) \in [1/2, 1]$.
+The Claim~3.7 optimisation maximises
+\begin{equation}\label{eq:obj}
+   f(\alpha, \beta, \gamma; \delta) \;=\;
+     \gamma - \alpha\,\frac{\delta - 1}{\delta - \gamma}
+\end{equation}
+over the feasible set
+\begin{equation}\label{eq:constraints}
+   0 \le \alpha \le \beta \le 1, \qquad
+   0 \le \gamma \le \alpha + (\delta - \alpha)\,\frac{1 - \beta}{2 - \beta}.
+\end{equation}
+The supremum is denoted $F(\delta)$ and splits into three cases:
+\begin{description}
+\item[Case 1.] $\alpha = 0$.
+\item[Case 2a.] The upper constraint on $\gamma$ is tight, with the
+  stationary point of $f$ in $\alpha$ interior to $[0, \beta]$.
+\item[Case 2b.] The upper constraint on $\gamma$ is tight, with
+  the stationary point falling outside $[0, \beta]$, forcing
+  $\alpha = \beta = 2 - 1/\eta$.
+\end{description}
+At $\delta = 9/8$, Fox--Pach--Suk's calculation~\cite[p.~10]{FPS}
+gives $F(9/8) = 9/16$, attained by Case~1 at $\beta = 0$ and by
+Case~2b at $\eta = 1/2$.
+
+\paragraph{Admissible range of $\delta$.}
+We distinguish two ranges. The \emph{FPS-admissible} range is
+$\delta \in (1, 5/4)$: the lower bound $\delta > 1$ is needed for
+the Case 2a stationary point to exist, and the upper bound
+$\delta < 5/4$ comes from~\cite[Claim 3.6]{FPS}, whose proof
+requires $4d < 5k$ (i.e. $\delta < 5/4$). The
+\emph{optimisation-defined} range $\delta \in (1, 4/3)$ is the
+larger interval on which the Case 2 case-split is non-degenerate;
+the upper bound $\delta < 4/3$ is the threshold at which the
+Case 2b interval $[1/2, \eta_b(\delta))$ collapses to a single
+point (\Cref{sec:case2b}). On the FPS-admissible range
+$(1, 5/4)$, Case 2b is always non-empty.
+
+\section{The three case bounds with $\delta$ free}\label{sec:cases}
+
+\subsection{Case 1.}
+With $\alpha = 0$, the active constraint reduces to
+$\gamma \le \delta(1 - \beta)/(2 - \beta)$, which is decreasing in
+$\beta \in [0, 1]$. The maximum is at $\beta = 0$, giving
+\[
+   f_1(\delta) \;=\; \delta / 2.
+\]
+
+\subsection{Case 2 stationary point and 2a/2b boundary.}
+Substituting $\gamma = \eta \alpha + (1 - \eta) \delta$ (the active
+Case~2 constraint) into~\eqref{eq:obj} and differentiating in
+$\alpha$ shows that the unique stationary point in $\alpha$ is
+\begin{equation}\label{eq:alphastar}
+  \alpha^{\star}(\eta, \delta) \;=\;
+     \delta - \frac{\sqrt{\delta(\delta - 1)}}{\eta}.
+\end{equation}
+The Case~2a regime is $\alpha^{\star}(\eta, \delta) \le \beta(\eta)
+= 2 - 1/\eta$, equivalently $\eta \ge \eta_b(\delta)$ where
+\begin{equation}\label{eq:etab}
+  \eta_b(\delta) \;:=\; \frac{\sqrt{\delta(\delta - 1)} - 1}{\delta - 2}.
+\end{equation}
+The Case~2b regime is $\eta \in [1/2, \eta_b(\delta))$, in which
+the optimum is attained at the boundary $\alpha = \beta = 2 - 1/\eta$.
+At $\delta = 9/8$ this recovers FPS's $\eta_b = 5/7$ and
+$\alpha^{\star} = (9 - 3/\eta)/8$~\cite[p.~10]{FPS}.
+
+\subsection{Case 2a.}
+In Case 2a, substituting $\alpha = \alpha^{\star}$ into $f$ gives a
+function of $\eta$ alone. A direct calculation shows it is strictly
+decreasing in $\eta$ on $[\eta_b(\delta), 1]$, so its maximum is at
+$\eta = \eta_b(\delta)$. The resulting value is
+\begin{equation}\label{eq:f2amax}
+  f_{2a}^{\max}(\delta) \;=\;
+     \delta - 2 \sqrt{\delta(\delta - 1)}
+            + \frac{(\delta - 1)(\delta - 2)}{\sqrt{\delta(\delta - 1)} - 1}.
+\end{equation}
+At $\delta = 9/8$ this evaluates to $11/20 = 0.55$, matching
+\cite[p.~10]{FPS}.
+
+\section{Case 2b: monotonicity transition at $\delta = -3 + \sqrt{17}$}
+\label{sec:case2b}
+
+In Case 2b, $\alpha = \beta = 2 - 1/\eta$, $\gamma = 2\eta - 1 +
+(1 - \eta) \delta$, and $\delta - \gamma = \eta(\delta - 2) + 1$.
+Substituting into~\eqref{eq:obj},
+\begin{equation}\label{eq:f2b}
+  f_{2b}(\eta, \delta) \;=\;
+    \bigl[2\eta - 1 + (1 - \eta) \delta\bigr]
+    \;-\; \frac{(2\eta - 1)(\delta - 1)}{\eta\,[\eta(\delta - 2) + 1]}.
+\end{equation}
+At $\eta = 1/2$, $f_{2b}(1/2, \delta) = \delta/2$; at
+$\eta \uparrow \eta_b(\delta)$, $f_{2b}$ matches $f_{2a}^{\max}(\delta)$
+by continuity of the optimisation across the Case 2a/2b boundary.
+
+\paragraph{The decisive observation.}
+The behaviour of $f_{2b}$ near $\eta = 1/2$ as $\delta$ varies is
+controlled by a single elementary identity.
+
+\begin{lemma}\label{lem:case2b-deriv}
+For every $\delta > 1$,
+\begin{equation}\label{eq:case2b-deriv}
+  \left.\frac{\partial f_{2b}}{\partial \eta}\right|_{\eta = 1/2}
+  \;=\; -\,\frac{\delta^2 + 6\delta - 8}{\delta}.
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+Differentiating~\eqref{eq:f2b} in $\eta$ and evaluating at $\eta = 1/2$
+is a direct computation. Writing $A(\eta) := 2\eta - 1 + (1 - \eta)\delta$
+and $B(\eta) := \eta[\eta(\delta - 2) + 1]$, we have
+$A'(\eta) = 2 - \delta$, $A(1/2) = \delta/2$,
+$B(\eta) = (\delta - 2)\eta^2 + \eta$, $B'(\eta) = 2(\delta - 2)\eta + 1$,
+$B(1/2) = (\delta - 2)/4 + 1/2 = \delta/4$,
+$B'(1/2) = (\delta - 2) + 1 = \delta - 1$,
+and at $\eta = 1/2$ the numerator $(2\eta - 1)(\delta - 1) = 0$. Hence
+the derivative of the rational term equals $-(\delta - 1) \cdot 2 / B(1/2)
+= -(\delta - 1) \cdot 2 / (\delta/4) = -8(\delta - 1)/\delta$.
+Adding $A'(1/2) = 2 - \delta$ gives
+\[
+  \left.\frac{\partial f_{2b}}{\partial \eta}\right|_{\eta = 1/2}
+  \;=\; (2 - \delta) - \frac{8(\delta - 1)}{\delta}
+  \;=\; \frac{(2 - \delta)\delta - 8(\delta - 1)}{\delta}
+  \;=\; \frac{-\delta^2 - 6\delta + 8}{\delta},
+\]
+which is the negative of $(\delta^2 + 6\delta - 8)/\delta$.
+\end{proof}
+
+\begin{corollary}\label{cor:transition}
+$\left.\partial f_{2b}/\partial \eta\right|_{\eta = 1/2}$ is negative
+iff $\delta^2 + 6\delta - 8 > 0$, iff $\delta > -3 + \sqrt{17}$
+(on $\delta > 0$). Hence:
+\begin{itemize}
+\item For $\delta > -3 + \sqrt{17}$, $f_{2b}$ is locally decreasing
+  in $\eta$ at $\eta = 1/2$.
+\item For $\delta = -3 + \sqrt{17}$, $\eta = 1/2$ is a stationary
+  point of $f_{2b}$.
+\item For $\delta < -3 + \sqrt{17}$, $f_{2b}$ is locally increasing
+  in $\eta$ at $\eta = 1/2$, and the maximum
+  $f_{2b}^{\max}(\delta)$ is attained strictly in the interior of
+  $[1/2, \eta_b(\delta))$.
+\end{itemize}
+\end{corollary}
+
+\begin{remark}\label{rem:fpschoice}
+The FPS choice $\delta = 9/8 = 1.125$ exceeds the threshold
+$-3 + \sqrt{17} \approx 1.12311$ by less than $0.002$. This
+gives a structural explanation for the choice: $\delta = 9/8$ is
+just inside the regime where the FPS proof of \cite[Claim 3.7,
+Case 2b]{FPS} (asserting that the Case 2b maximum is attained at
+$\eta = 1/2$) is valid via the monotonicity-in-$\eta$ argument they
+use. For $\delta$ just below the threshold $-3 + \sqrt{17}$, the
+Case 2b maximum slides into the interior of $[1/2, \eta_b(\delta))$
+and exceeds $\delta/2$, but \emph{this monotonicity argument is
+not needed for the main theorem}: the witness identity of
+\Cref{lem:witness} below directly produces a value above $9/16$ at
+an explicit Case 2b point, for every $\delta \in (1, 9/8)$.
+\end{remark}
+
+\section{The witness identity at $\eta = 4/7$}\label{sec:witness}
+
+The proof of~\Cref{thm:main} for $\delta < 9/8$ rests on the
+following elementary identity, which exhibits a single explicit
+witness point $\eta = 4/7$ at which $f_{2b}$ already exceeds
+$9/16$ whenever $\delta \neq 9/8$.
+
+\begin{lemma}[Witness identity]\label{lem:witness}
+For every $\delta > 1/4$,
+\begin{equation}\label{eq:witness}
+   f_{2b}\!\left(\frac{4}{7},\,\delta\right) - \frac{9}{16}
+   \;=\;
+   \frac{12\,(\delta - 9/8)^2}{7\,(4\delta - 1)}.
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+A direct computation. At $\eta = 4/7$, $\alpha = \beta =
+2 - 7/4 = 1/4$, so $\gamma = (4/7)(1/4) + (3/7)\delta =
+(1 + 3\delta)/7$ and $\delta - \gamma = (4\delta - 1)/7$. Hence
+\[
+   f_{2b}\!\left(\tfrac{4}{7}, \delta\right)
+   \;=\; \frac{1 + 3\delta}{7}
+       - \frac{(1/4)(\delta - 1) \cdot 7}{4\delta - 1}
+   \;=\; \frac{1 + 3\delta}{7}
+       - \frac{7(\delta - 1)}{4(4\delta - 1)}.
+\]
+Bringing to common denominator $28(4\delta - 1)$,
+\[
+   f_{2b}\!\left(\tfrac{4}{7}, \delta\right)
+   \;=\; \frac{4(1 + 3\delta)(4\delta - 1) - 49(\delta - 1)}
+              {28(4\delta - 1)}
+   \;=\; \frac{48\delta^2 - 45\delta + 45}{28(4\delta - 1)}
+   \;=\; \frac{3(16\delta^2 - 15\delta + 15)}{28(4\delta - 1)}.
+\]
+Subtracting $9/16 = 9/16$ from this fraction
+(over common denominator $112(4\delta - 1)$),
+\[
+   f_{2b}\!\left(\tfrac{4}{7}, \delta\right) - \tfrac{9}{16}
+   \;=\; \frac{12(16\delta^2 - 15\delta + 15) - 9 \cdot 7 (4\delta - 1)}
+              {112(4\delta - 1)}
+   \;=\; \frac{192\delta^2 - 432\delta + 243}{112(4\delta - 1)}.
+\]
+The numerator factors as
+$192\delta^2 - 432\delta + 243 = 3(64\delta^2 - 144\delta + 81)
+= 3(8\delta - 9)^2 = 192(\delta - 9/8)^2$.
+Substituting back gives~\eqref{eq:witness}.
+\end{proof}
+
+\begin{corollary}\label{cor:witness}
+The witness point $\eta = 4/7$ lies in the Case 2b interval
+$[1/2,\,\eta_b(\delta))$ as long as $\delta < (41 + 7\sqrt{37})/66
+\approx 1.2663$; in particular for every $\delta$ in the
+FPS-admissible range $(1, 5/4)$. For every such $\delta$,
+\[
+   f_{2b}^{\max}(\delta) \;\ge\; f_{2b}\!\left(\tfrac{4}{7}, \delta\right)
+                          \;\ge\; 9/16,
+\]
+with the second inequality strict whenever $\delta \neq 9/8$.
+\end{corollary}
+
+\begin{proof}
+The numerator $(\delta - 9/8)^2$ in~\eqref{eq:witness} is
+non-negative, with equality iff $\delta = 9/8$. The denominator
+$112(4\delta - 1)$ is positive for $\delta > 1/4$. Hence the
+right-hand side is strictly positive whenever $\delta \neq 9/8$ and
+$\delta > 1/4$, and in particular on the stated $\delta$-interval.
+
+For the validity of the witness, $\eta = 4/7 \in [1/2, \eta_b(\delta))$
+iff $\eta_b(\delta) > 4/7$, i.e.\
+\[
+   \frac{\sqrt{\delta(\delta - 1)} - 1}{\delta - 2} \;>\; \frac{4}{7}.
+\]
+Since $\delta - 2 < 0$ on the relevant range, multiplying both sides
+by $(\delta - 2)$ \emph{flips} the inequality:
+\[
+   \sqrt{\delta(\delta - 1)} - 1 \;<\; \tfrac{4}{7}(\delta - 2)
+   \;=\; \tfrac{4\delta - 8}{7},
+\]
+equivalently $7\sqrt{\delta(\delta - 1)} < 4\delta - 1$. For
+$\delta > 1$ both sides are positive, so squaring preserves the
+direction:
+\[
+   49\,\delta(\delta - 1) \;<\; (4\delta - 1)^2,
+\]
+which simplifies to $33\delta^2 - 41\delta - 1 < 0$, with positive
+root $\delta = (41 + 7\sqrt{37})/66 \approx 1.2663$. Since
+$5/4 < (41 + 7\sqrt{37})/66$, the witness is valid throughout the
+FPS-admissible range.
+\end{proof}
+
+\begin{proof}[Proof of \Cref{thm:main}]
+We split into cases on $\delta$.
+
+\textit{The interval $\delta \in [9/8,\,5/4)$.}
+For every $\delta$ in this range we have $f_1(\delta) = \delta/2
+\ge 9/16$, with equality only at $\delta = 9/8$. In particular,
+\[
+   F(\delta) \;\ge\; f_1(\delta) \;\ge\; 9/16,
+\]
+with equality on this interval iff $\delta = 9/8$.
+
+\textit{The interval $\delta \in (1,\,9/8)$.}
+By~\Cref{cor:witness}, $f_{2b}^{\max}(\delta) > 9/16$, hence
+\[
+   F(\delta) \;\ge\; f_{2b}^{\max}(\delta) \;>\; 9/16.
+\]
+
+\textit{At $\delta = 9/8$.}
+By~\cite[Claim 3.7]{FPS}, $F(9/8) = 9/16$.
+
+Combining the three cases, $F(\delta) \ge 9/16$ on $(1, 5/4)$
+with equality iff $\delta = 9/8$.
+\end{proof}
+
+\begin{remark}\label{rem:two-roots-at-9-over-8}
+At $\delta = 9/8$, $P(s, 9/8) = -s(4s - 1)^2/8$ (where $P$ is the
+sign-determining numerator of $f_{2b}(s, \delta) - 9/16$ with
+$s = 2 - 1/\eta$), so $f_{2b}(s, 9/8) = 9/16$ at the two points
+$s = 0$ and $s = 1/4$. The first corresponds to FPS's
+$\eta = 1/2$; the second is the witness $\eta = 4/7$ used in
+\Cref{lem:witness}. At every other $\delta$, the second
+root $s = 1/4$ continues to give strictly more than $9/16$, by
+the perfect-square factorisation
+$P(1/4, \delta) = 12(\delta - 9/8)^2$ of \Cref{lem:witness}.
+\end{remark}
+
+\section{Numerical illustration}\label{sec:numerics}
+
+The proof of~\Cref{thm:main} is analytic; the witness
+$\eta = 4/7$ gives a closed-form lower bound on $F(\delta)$ via
+\Cref{lem:witness}. For orientation we record numerical values
+of $f_1$, $f_{2a}^{\max}$, and the true $f_{2b}^{\max}$ (which is
+in general strictly larger than $f_{2b}(4/7, \delta)$, since the
+witness is not the argmax). The values were computed with
+SymPy~1.14 and a brute-force 1D maximisation of $f_{2b}$ at
+$4001$ uniformly spaced $\eta$ values per $\delta$. Selected
+values:
+
+\begin{center}
+\begin{tabular}{rrrrrr}
+\toprule
+$\delta$ & $f_1(\delta)$ & $f_{2a}^{\max}(\delta)$
+         & $f_{2b}(4/7, \delta)$ & $f_{2b}^{\max}(\delta)$ & $F(\delta)$ \\
+\midrule
+$1.10$            & $0.5500$ & $0.5713$ & $0.5628$ & $0.5757$ & $0.5757$ \\
+$\delta_1 \approx 1.114907$ & $0.5575$ & $0.5575$ & $0.5625$ & $0.5654$ & $0.5654$ \\
+$1.120$           & $0.5600$ & $0.5535$ & $0.5625$ & $0.5634$ & $0.5634$ \\
+$-3 + \sqrt{17} \approx 1.123106$ & $0.5616$ & $0.5513$ & $0.5625$ & $0.5627$ & $0.5627$ \\
+$1.124$           & $0.5620$ & $0.5507$ & $0.5625$ & $0.5626$ & $0.5626$ \\
+\textbf{$9/8 = 1.125$ (FPS)} & $\mathbf{0.5625}$ & $0.5500$ & $\mathbf{0.5625}$ & $\mathbf{0.5625}$ & $\mathbf{0.5625}$ \\
+$1.150$           & $0.5750$ & $0.5374$ & $0.5625$ & $0.5750$ & $0.5750$ \\
+$1.200$           & $0.6000$ & $0.5339$ & $0.5650$ & $0.6000$ & $0.6000$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\noindent
+The fourth column, $f_{2b}(4/7, \delta)$, is the witness value used
+in the proof of \Cref{thm:main} via \Cref{lem:witness}. It always
+exceeds $9/16$ except at $\delta = 9/8$ where it equals $9/16$
+exactly, by the perfect-square factorisation
+$f_{2b}(4/7, \delta) - 9/16 = 12(\delta - 9/8)^2 / [7(4\delta - 1)]$.
+The fifth column, $f_{2b}^{\max}(\delta)$, is the actual maximum of
+$f_{2b}$ over $\eta \in [1/2, \eta_b(\delta))$, computed by direct
+maximisation; the $\arg\max$ slides smoothly from $\eta \approx 0.69$
+at $\delta = 1.10$, through $\eta \approx 0.59$ at
+$\delta = -3 + \sqrt{17}$, down to $\eta = 1/2$ at $\delta = 9/8$.
+The witness $\eta = 4/7 \approx 0.5714$ lies in this Case 2b
+interval throughout, since
+$\eta_b(\delta) > 4/7$ for $\delta < (41 + 7\sqrt{37})/66 \approx 1.266$,
+covering all of $(1, 5/4)$.
+
+\begin{remark}\label{rem:cubic}
+The naive optimisation that takes
+$f_{2b}^{\max}(\delta) = \delta/2$ at every $\delta$ (which is true
+\emph{only} at $\delta = 9/8$) leads to the equation
+$\delta/2 = f_{2a}^{\max}(\delta)$ after substituting~\eqref{eq:f2amax}.
+Rationalising by squaring out $\sqrt{\delta}$ and $\sqrt{\delta - 1}$
+gives a degree-5 polynomial in $\delta$ that factorises over $\QQ$
+as
+\begin{equation}\label{eq:cubic-factor}
+   -\tfrac{1}{4}(\delta - 1)(3\delta - 4)(\delta^3 + 3\delta^2 - \delta - 4).
+\end{equation}
+The cubic factor is irreducible (no rational roots among
+$\pm 1, \pm 2, \pm 4$) with discriminant $229 > 0$, hence has three
+distinct real roots; its unique root in $(1, 5/4)$ is
+\[
+   \delta_1 \;=\; -1 + \frac{4}{\sqrt 3}
+                  \cos\!\left(\frac{1}{3}\arccos\frac{3\sqrt 3}{16}\right)
+   \;\approx\; 1.114907.
+\]
+This $\delta_1$ would be the optimal $\delta$ if Case~2b's maximum
+were $\delta/2$ throughout. Since this hypothesis fails on
+$(1, -3 + \sqrt{17})$ (by~\Cref{cor:transition}), and since
+$\delta_1 < -3 + \sqrt{17}$, the cubic root $\delta_1$ is not the
+true optimum. The numerical $F(\delta_1) \approx 0.5654 > 9/16$
+in the table above confirms this directly.
+\end{remark}
+
+\section{Implications}\label{sec:implications}
+
+\Cref{thm:main} shows that the choice $\delta = 9/8$ is sharp
+within the FPS three-case optimisation. Any tightening of the
+Lemma~2.3 constant $\cFPS = 9/16$ must therefore change something
+else in~\cite{FPS}. We outline three concrete routes.
+
+\begin{enumerate}
+\item \textbf{Replace Vizing--Gupta.} The bound
+  $\chip(H) \le \Delta(H) + \mu(H)$ enters via
+  \cite[Lemma 2.2(ii)]{FPS}. The Goldberg--Seymour theorem
+  (Chen--Jing--Zang~\cite{ChenJingZang}) bounds $\chip(H)$ by
+  $\max(\Delta(H), \lceil \Gamma(H) \rceil)$, where $\Gamma(H)$ is
+  the fractional chromatic index. If one can show that the
+  semi-random multigraph $H$ of~\cite{FPS} satisfies
+  $\Gamma(H) \le (c' + o(1)) k$ with $c' < 9/16$, then $9/16$
+  improves to $c'$. The relevant moment / concentration calculation
+  for $\Gamma(H)$ is structurally similar to the one
+  in~\cite[\S 3]{FPS} but the analogue of Claim~3.7 needs to be
+  redone.
+\item \textbf{Sharpen the multiplicity bound.} FPS's
+  Proposition~3.4 only requires $\mu(H) = o(k)$. If one can show
+  $\mu(H) \le (m + o(1)) k$ with explicit $m < 1$, then the
+  Vizing--Gupta bound $\chip(H) \le \Delta(H) + \mu(H)$ gives
+  $\chip(H) \le (\delta/2 + m + o(1))k$ at $\delta = 9/8$; this is
+  worse than the current $(9/16 + o(1)) k$ unless one can also
+  show that $\Delta(H) \le (\delta/2 + o(1)) k$ at $\delta < 9/8$
+  with controlled $\mu$.
+\item \textbf{Modify the construction.} The semi-random selection
+  of $U$ from a high-degree set $U(d)$ plus a uniform-random
+  completion is the structural input that produces the cases of
+  Claim~3.7. A different construction -- for example, an adaptive
+  threshold $d$ that depends on $w$, or a non-uniform random
+  completion biased away from common neighbourhoods -- would
+  produce a different optimisation problem with different
+  constants.
+\end{enumerate}
+
+In all three routes, the constant $9/16$ is what one has to beat.
+The threshold $\delta = 9/8$ comes along for the ride: as soon as
+the underlying argument changes, the choice of $\delta$ may also
+change, and the algebraic transition at $\delta = -3 + \sqrt{17}$
+identified here ceases to be relevant.
+
+\section*{Acknowledgements}
+This note grew out of an erroneous earlier attempt to improve
+\cite[Lemma 2.3]{FPS} by tuning $\delta$. The first version proposed
+the cubic root $\delta_1 \approx 1.114907$ as the optimum; the error
+(silently assuming Case 2b's $\eta$-monotonicity at every $\delta$)
+was identified during a referee-style audit and is recorded in
+\Cref{rem:cubic} and in the retracted draft
+\texttt{tighter\_fps\_\allowbreak RETRACTED.tex}. The witness
+identity of \Cref{lem:witness} -- which turned the gap into a
+two-line analytic proof -- emerged from inspecting the
+factorisation $P(s, 9/8) = -s(4s - 1)^2/8$ at $\delta = 9/8$ and
+noticing that the second root $s = 1/4$ persists for all $\delta$.
+Symbolic verification was performed in SymPy~1.14.
+
+\bibliographystyle{plain}
+\begin{thebibliography}{99}
+
+\bibitem{Albertson}
+M.~O. Albertson.
+Posted at
+\url{http://www.openproblemgarden.org/op/crossing_numbers_and_coloring},
+2007/2009.
+
+\bibitem{ChenJingZang}
+G.~Chen, G.~Jing, and W.~Zang.
+Proof of the Goldberg--Seymour conjecture on edge-colorings of multigraphs.
+Preprint, 2019.
+\texttt{arXiv:1901.10316}.
+
+\bibitem{FPS}
+J.~Fox, J.~Pach, and A.~Suk.
+Immersions and Albertson's conjecture.
+In \textit{41st International Symposium on Computational Geometry
+   (SoCG 2025)}.
+LIPIcs vol.~332, Schloss Dagstuhl, 2025.
+\texttt{arXiv:2510.05893}.
+
+\end{thebibliography}
+
+\end{document}

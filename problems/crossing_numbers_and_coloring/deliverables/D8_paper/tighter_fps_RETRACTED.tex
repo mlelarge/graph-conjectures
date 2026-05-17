@@ -1,0 +1,610 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[margin=2.8cm]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{microtype}
+\usepackage[hidelinks]{hyperref}
+\usepackage[capitalize,noabbrev]{cleveref}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{claim}[theorem]{Claim}
+\theoremstyle{definition}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\cFPS}{c_{\mathrm{FPS}}}
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\Eu}{\mathbb{E}}
+\newcommand{\chip}{\chi'}
+\DeclareMathOperator{\crN}{cr}
+
+\title{A tighter constant in the chromatic-index lemma of\\
+       Fox--Pach--Suk towards Albertson's conjecture}
+\author{(draft) Marc Lelarge\thanks{\texttt{marc.lelarge@gmail.com}.}}
+\date{\today}
+
+\begin{document}
+
+\begin{center}
+{\Large\bfseries RETRACTED (2026-05-16)}\\[1em]
+\fbox{\parbox{0.9\textwidth}{\itshape
+The main theorem of this note is \textbf{false}.  The proof of
+Lemma~6 (\emph{Case 2b}) silently assumed that the FPS monotonicity
+of $f_{2b}(\eta,\delta)$ in $\eta$ on $[1/2, \eta_b(\delta))$ holds at
+every $\delta > 1$.  In fact it holds only for $\delta \ge -3 + \sqrt{17}
+\approx 1.12311$; at the proposed
+$\delta_1 \approx 1.114907$, $f_{2b}^{\max}(\delta_1)
+\approx 0.5654 > 9/16$, so $F(\delta_1) > F(9/8) = 9/16$ and no
+improvement is obtained.\\[0.6em]
+The corrected analysis shows that FPS's choice $\delta = 9/8$ is
+structurally forced and that $F(\delta)$ attains its minimum at this
+value, with $F(9/8) = 9/16$.  See the companion note
+\texttt{sharpness\_9\_8.tex} for the corrected statement.\\[0.6em]
+The original (false) draft is preserved below for historical record.
+}}
+\end{center}
+\vspace{2em}
+
+\maketitle
+
+\begin{abstract}
+Fox, Pach and Suk (SoCG~2025) recently proved Albertson's conjecture
+$\crN(G)\ge\crN(K_k)$ for every $k$-chromatic graph $G$ on at most
+$1.4(k-1)$ vertices. The central technical input is their Lemma~2.3,
+which bounds the chromatic index of an auxiliary multigraph by
+$(9/16+o(1))\,k$. The constant $9/16$ in turn arises from a three-case
+optimisation (their Claim~3.7) parameterised by a degree threshold
+$d:=\delta k$, set to $\delta=9/8$. We observe that this choice of
+$\delta$ is not the analytic optimum of Claim~3.7's
+case-bound function. Reoptimising over $\delta$ replaces $9/16$ by
+\[
+   F^{\star} \;=\; -\tfrac{1}{2}+\tfrac{2}{\sqrt3}\,
+                   \cos\!\left(\tfrac{1}{3}\arccos\tfrac{3\sqrt3}{16}\right)
+            \;\approx\; 0.557454,
+\]
+the unique real root in $(\tfrac12,\tfrac58)$ of $4x^3+6x^2-x-2=0$.
+Every other ingredient of Fox--Pach--Suk's argument is checked to be
+robust to this change. The resulting tightening of Lemma~2.3 is modest
+in absolute terms ($\approx0.9\%$) but follows immediately from their
+proof.
+\end{abstract}
+
+\section{Introduction}
+
+Albertson conjectured~\cite{Albertson} that for every $k\ge1$ and every
+graph $G$ with chromatic number $\chi(G)\ge k$,
+\begin{equation}\label{eq:albertson}
+  \crN(G) \;\ge\; \crN(K_k),
+\end{equation}
+where $\crN(\cdot)$ denotes the crossing number. The conjecture is
+known for $k\le24$, with substantial recent progress: Albertson, Cranston
+and Fox~\cite{ACF} proved the case $k\le12$; Bar\'at and
+T\'oth~\cite{BaratToth} extended it to $k\le16$; Ackerman~\cite{Ackerman}
+to $k\le18$; and Cranston~\cite{Cranston} to $k\le24$, with strong
+restrictions on the possible counterexamples at $k\in\{25,26\}$.
+
+Fox, Pach and Suk~\cite{FPS} prove~\eqref{eq:albertson} for every
+$k$-chromatic graph on at most $1.4(k-1)$ vertices (and asymptotically
+on $(1.64-o(1))\,k$ vertices) by a clever weak-immersion argument. The
+crucial technical step is the following bound on the chromatic index of
+an auxiliary multigraph $H$ constructed from $G$ via a semi-random
+selection procedure (see~\Cref{sec:reconstruction} for the precise
+setup):
+\begin{equation}\label{eq:fpsbound}
+  \chip(H_i) \;\le\; \bigl(\cFPS+o(1)\bigr)\,k_i,
+  \qquad \cFPS=\tfrac{9}{16}.
+\end{equation}
+This is their Lemma~2.3. They derive the constant $\cFPS=9/16$ from a
+three-case optimisation parameterised by a single free real
+\emph{degree threshold} $\delta$; throughout~\cite{FPS} they fix
+$\delta=9/8$ from the start.
+
+In this note we observe that the choice $\delta=9/8$ in~\cite{FPS} is
+suboptimal for the case bound. Re-optimising the three-case bound in
+their Claim~3.7 with $\delta$ as a free parameter yields a smaller
+constant.
+
+\begin{theorem}\label{thm:main}
+Let $F^{\star}$ be the unique real root in $\bigl(\tfrac12,\tfrac58\bigr)$
+of $4x^3+6x^2-x-2=0$. Then~\eqref{eq:fpsbound} holds with
+$\cFPS$ replaced by $F^{\star}$.
+
+Equivalently, $\cFPS$ can be replaced by
+\[
+  F^{\star}
+  \;=\; -\frac12 + \frac{2}{\sqrt3}\,
+        \cos\!\left(\frac13\arccos\frac{3\sqrt3}{16}\right)
+  \;=\; 0.5574537707\ldots
+\]
+\end{theorem}
+
+\noindent
+Since $F^{\star}<\tfrac{9}{16}=0.5625$, this is a strict improvement over
+\cite[Lem.~2.3]{FPS}. The size of the improvement is
+$\tfrac{9}{16}-F^{\star}\approx 5.05\cdot10^{-3}$, or about
+$0.9\%$. The optimal degree threshold realising $F^\star$ is
+\[
+  \delta_1
+  \;=\; -1+\frac{4}{\sqrt3}\,
+        \cos\!\left(\frac13\arccos\frac{3\sqrt3}{16}\right)
+  \;=\; 1.1149075414767\ldots,
+\]
+the unique real root in $(1,5/4)$ of the irreducible cubic
+\begin{equation}\label{eq:cubic}
+   \delta^3+3\delta^2-\delta-4 = 0.
+\end{equation}
+
+The improvement is intentionally small in scope: we change exactly one
+numerical constant inside Fox--Pach--Suk's proof of their Lemma~2.3 and
+verify (\Cref{sec:robustness}) that none of the other ingredients of
+the proof is affected. Whether $F^{\star}$ itself is sharp -- or
+whether a more substantive improvement of~\eqref{eq:fpsbound} is
+possible by attacking the underlying Vizing--Gupta input -- remains
+open (\Cref{rem:sharp}).
+
+The downstream impact on the vertex-bound coefficients of
+\cite[Thm.~1.2]{FPS} is straightforward but bookkeeping-heavy; we
+isolate it as~\Cref{rem:downstream}.
+
+\section{Reconstruction of \texorpdfstring{\cite{FPS}}{[FPS]}, Claim 3.7}
+\label{sec:reconstruction}
+
+We follow the notation of~\cite{FPS} throughout. Let $G$ be a
+$k$-chromatic graph and write $\{V_1,\dots,V_r\}$ for the parts of the
+Gallai decomposition of $G$, with $G[V_i]$ being $k_i$-critical and
+$n_i:=|V_i|\ge 2k_i-1$. Fix an index $i$ and drop subscripts: set
+$n=n_i$, $k=k_i$, $V=V_i$, and so on.
+
+\paragraph{Construction of $H$ (\cite[\S 3]{FPS}).}
+Choose a real parameter $\delta>1$ and set $d:=\delta k$. Let
+$U(d)\subseteq V$ be the set of vertices of degree at least~$d$, capped
+at $k-\varphi(k)$, where $\varphi(k):=k^{0.9}$ is the slack term of
+\cite[Footnote 1, p.~6]{FPS}. Add to $U(d)$ a uniformly random set of
+$k-\ell$ vertices from $V\setminus U(d)$, where $\ell=|U(d)|$, to form
+$U$. After a deterministic edge-swap pre-processing
+(\cite[p.~7--8]{FPS}) and an additional uniform-random completion of
+the maps $f_u\colon U\setminus(N(u)\cup\{u\})\to N(u)\cap W$, one
+obtains the multigraph $H$ on $W:=V\setminus U$. By
+Vizing--Gupta~\cite[Lem.~2.2(ii)]{FPS},
+\begin{equation}\label{eq:VG}
+  \chip(H)\;\le\;\Delta(H)+\mu(H).
+\end{equation}
+The bound~\eqref{eq:fpsbound} reduces (\cite[\S 3]{FPS}) to two
+high-probability estimates:
+\begin{align}
+  &\textbf{Proposition 3.3.}\quad
+  \Delta(H)\le \bigl(F(\delta)+o(1)\bigr)\,k,\label{eq:prop33}\\[2pt]
+  &\textbf{Proposition 3.4.}\quad
+  \mu(H)\;=\;o(k),\label{eq:prop34}
+\end{align}
+where $F(\delta)$ is the upper-bound function whose value $F(9/8)=9/16$
+is established by~\cite[Claim 3.7]{FPS}.
+
+\paragraph{The optimisation (\cite[Claim 3.7]{FPS}).}
+The function $F(\delta)$ is the supremum of the asymptotic
+expression
+\begin{equation}\label{eq:obj}
+   f(\alpha,\beta,\gamma;\delta)
+   \;=\;
+   \gamma - \alpha\,\frac{\delta-1}{\delta-\gamma},
+\end{equation}
+over the feasible region
+\begin{equation}\label{eq:constraints}
+   0\le\alpha\le\beta\le 1,
+   \qquad
+   0\le\gamma\le\alpha+(\delta-\alpha)\,\frac{1-\beta}{2-\beta}.
+\end{equation}
+Here $\alpha,\beta,\gamma$ are the normalisations
+$\alpha=\ell_w/k$, $\beta=\ell/k$, $\gamma=|U_w|/k$,
+where $\ell_w$ is the number of $U(d)$-neighbours of a target vertex
+$w\in W$ and $U_w:=N(w)\cap U$.
+
+Following~\cite[Proof of Claim 3.7]{FPS}, the supremum splits into
+three cases:
+\begin{description}
+\item[Case 1.] $\alpha=0$.
+\item[Case 2a.] The upper constraint on $\gamma$
+  in~\eqref{eq:constraints} is tight, and the stationary point of $f$
+  in $\alpha$ is interior to $[0,\beta]$.
+\item[Case 2b.] The upper constraint on $\gamma$ is tight, but the
+  stationary point falls outside $[0,\beta]$, forcing $\alpha=\beta$.
+\end{description}
+Reparametrising $\eta:=1-(1-\beta)/(2-\beta)\in[\tfrac12,1]$
+(equivalently $\beta=2-1/\eta$), Case~2 has
+$\gamma=\eta\alpha+(1-\eta)\delta$.
+
+\section{The optimisation with \texorpdfstring{$\delta$}{delta} free}
+\label{sec:optimisation}
+
+We compute the maximum of $f$ in each case as an explicit function of
+$\delta$. All three formulas reduce to simple expressions and lead to
+the cubic~\eqref{eq:cubic}.
+
+\begin{lemma}[Case 1]\label{lem:case1}
+For every $\delta\ge 1$, the maximum of $f$ on the feasible set
+restricted to $\alpha=0$ is
+\[
+  f_1(\delta) \;=\; \frac{\delta}{2},
+\]
+attained at $\beta=0,\gamma=\delta/2$.
+\end{lemma}
+
+\begin{proof}
+With $\alpha=0$, \eqref{eq:obj} gives $f=\gamma$, and the upper bound
+on $\gamma$ in~\eqref{eq:constraints} simplifies to
+$\gamma\le\delta(1-\beta)/(2-\beta)$. This is a decreasing function of
+$\beta\in[0,1]$ with derivative $-1/(2-\beta)^2<0$, hence its maximum
+over $\beta\in[0,1]$ is at $\beta=0$, with value $\delta/2$.
+\end{proof}
+
+\begin{lemma}[Case 2 stationary point and 2a/2b boundary]\label{lem:stationary}
+For every $\delta>1$ and $\eta\in[\tfrac12,1]$, the unique stationary
+point in $\alpha$ of $f$ on the Case-2 line
+$\gamma=\eta\alpha+(1-\eta)\delta$ is
+\begin{equation}\label{eq:alphastar}
+   \alpha^{\star}(\eta,\delta)
+   \;=\;
+   \delta - \frac{\sqrt{\delta(\delta-1)}}{\eta}.
+\end{equation}
+This stationary point equals $\beta(\eta)=2-1/\eta$ exactly when
+\begin{equation}\label{eq:etaboundary}
+   \eta=\eta_{b}(\delta)
+   \;:=\;\frac{\sqrt{\delta(\delta-1)}-1}{\delta-2}.
+\end{equation}
+The Case 2a regime is $\eta\in[\eta_b(\delta),1]$ and Case 2b is
+$\eta\in[\tfrac12,\eta_b(\delta))$. At $\delta=9/8$ this recovers
+\cite[(p.~10)]{FPS}: $\alpha^{\star}=(9-3/\eta)/8$ and
+$\eta_b=5/7$.
+\end{lemma}
+
+\begin{proof}
+Direct differentiation of
+$f(\alpha,\cdot,\eta\alpha+(1-\eta)\delta;\delta)$ in $\alpha$ and
+setting the result to zero yields a quadratic in $\alpha$ with the two
+roots $\delta\pm\sqrt{\delta(\delta-1)}/\eta$. Only
+$\alpha^{\star}=\delta-\sqrt{\delta(\delta-1)}/\eta$ lies in $[0,\beta]$
+(at $\delta=9/8$ and $\eta=3/4$ it gives $\alpha^{\star}=5/8$, while the
+other root gives $\alpha=5/3>1$). Equating
+$\alpha^{\star}(\eta,\delta)=2-1/\eta$ and solving for $\eta$
+gives~\eqref{eq:etaboundary}. The substitutions at $\delta=9/8$ are
+elementary.
+\end{proof}
+
+\begin{lemma}[Case 2a]\label{lem:case2a}
+For every $\delta>1$, $f$ restricted to Case 2a is strictly decreasing
+in $\eta$ on $[\eta_b(\delta),1]$; its maximum is therefore attained at
+$\eta=\eta_b(\delta)$. Setting
+$\alpha=\alpha^{\star}(\eta_b(\delta),\delta)$ and simplifying,
+\begin{equation}\label{eq:case2amax-clean}
+   f_{2a}^{\max}(\delta)
+   \;=\;
+   \frac{-\delta^{5/2}-\delta^{3/2}+2\sqrt{\delta}
+         + (\delta^2+2\delta-2)\sqrt{\delta-1}}
+        {-\delta^{3/2}+\sqrt{\delta}+\sqrt{\delta-1}}.
+\end{equation}
+At $\delta=9/8$, $f_{2a}^{\max}(9/8)=11/20$, matching~\cite[p.~10]{FPS}.
+\end{lemma}
+
+\begin{remark}\label{rem:case2a-form}
+The closed form~\eqref{eq:case2amax-clean} is what one obtains by
+substituting the stationary point~\eqref{eq:alphastar} into the Case-2
+expression $\gamma=\eta\alpha+(1-\eta)\delta$ inside~\eqref{eq:obj},
+then setting $\eta=\eta_b(\delta)$. The function is smooth on
+$\delta>1$, tends to $1$ as $\delta\to1^+$, has a unique minimum near
+$\delta\approx1.20$ with value $\approx 0.534$, and tends to $+\infty$
+as $\delta\to+\infty$.
+\end{remark}
+
+\begin{lemma}[Case 2b]\label{lem:case2b}
+For every $\delta>1$, the maximum of $f$ over Case 2b is attained at
+$\eta=\tfrac12$ (so $\alpha=\beta=0$) and equals
+\[
+   f_{2b}^{\max}(\delta) \;=\; \frac{\delta}{2}.
+\]
+\end{lemma}
+
+\begin{proof}
+At $\eta=\tfrac12$, $\alpha=\beta=2-1/\eta=0$; from
+$\gamma=\eta\alpha+(1-\eta)\delta=\delta/2$ and
+$f=\gamma-\alpha(\delta-1)/(\delta-\gamma)$, $f=\delta/2$ since
+$\alpha=0$.
+
+The verification that $\eta=1/2$ is the maximum (i.e. that
+$f$ is monotone decreasing in $\eta$ on $[\tfrac12,\eta_b(\delta))$
+under the substitution $\alpha=\beta=2-1/\eta$) is a one-variable
+calculus check; at $\delta=9/8$ it matches~\cite[p.~10]{FPS} verbatim.
+\end{proof}
+
+\begin{proposition}\label{prop:F-form}
+For every $\delta>1$,
+\[
+   F(\delta) \;=\; \max\bigl(\,f_1(\delta),\,f_{2a}^{\max}(\delta),\,
+                              f_{2b}^{\max}(\delta)\bigr)
+            \;=\; \max\!\bigl(\tfrac{\delta}{2},\,f_{2a}^{\max}(\delta)\bigr).
+\]
+At $\delta=9/8$, $f_{2a}^{\max}(9/8)=11/20<\delta/2=9/16$, so $F(9/8)=9/16$,
+matching~\cite[Claim 3.7]{FPS}.
+\end{proposition}
+
+\begin{proof}
+Lemmas~\ref{lem:case1},~\ref{lem:case2b} give $f_1=f_{2b}^{\max}=\delta/2$.
+\end{proof}
+
+\begin{lemma}\label{lem:cubic}
+Let $\delta_1$ be the unique real root in $(1,5/4)$ of the irreducible
+cubic
+\(
+   \delta^3+3\delta^2-\delta-4=0.
+\)
+Then the equation $\delta/2=f_{2a}^{\max}(\delta)$ has three real
+solutions in $(1,2)$: $\delta=\delta_1$, $\delta=4/3$, and an extraneous
+solution at $\delta=1$ arising from the rationalisation; the cubic
+$\delta^3+3\delta^2-\delta-4$ has its other two real roots in
+$\RR_{<0}$, hence not in $(1,2)$.
+\end{lemma}
+
+\begin{proof}
+Multiplying the equation $\delta/2=f_{2a}^{\max}(\delta)$ through and
+substituting $s:=\sqrt\delta$, $t:=\sqrt{\delta-1}$ collects every
+non-rational term into a single product $s^j t$; rearranging gives an
+identity of the form $A(s)=B(s)\,t$, and squaring (using $t^2=s^2-1$)
+yields a polynomial identity in $s$ alone. After substituting $s^2=\delta$,
+the resulting degree-5 polynomial factorises (over $\QQ$) as
+\begin{equation}\label{eq:factor}
+   -\tfrac{1}{4}\,(\delta-1)\,(3\delta-4)\,(\delta^3+3\delta^2-\delta-4).
+\end{equation}
+The linear factors give $\delta=1$ (extraneous, an artefact of the
+squaring) and $\delta=4/3$. The cubic factor has discriminant
+\[
+   \mathrm{disc}(\delta^3+3\delta^2-\delta-4) \;=\; 229 \;>\;0,
+\]
+so it has three distinct real roots; numerical evaluation gives
+$\delta_1\approx1.1149075414767557$,
+$\delta_2\approx-1.2541016883650524$, and
+$\delta_3\approx-2.8608058531117035$. Irreducibility follows from the
+rational-root test: the only rational candidates $\pm1,\pm2,\pm4$ are
+checked not to be roots.
+\end{proof}
+
+\begin{theorem}\label{thm:Foptimum}
+$F$ attains its global minimum on $(1,\infty)$ at $\delta=\delta_1$,
+with value
+\[
+   F^{\star} \;:=\; F(\delta_1) \;=\; \frac{\delta_1}{2}.
+\]
+\end{theorem}
+
+\begin{proof}
+By~\Cref{prop:F-form}, $F(\delta)=\max(\delta/2,f_{2a}^{\max}(\delta))$.
+The function $\delta/2$ is strictly increasing on $\delta>1$. The
+function $f_{2a}^{\max}(\delta)$ is U-shaped on $\delta>1$: it tends to
+$1$ as $\delta\to1^+$, is strictly decreasing on
+$(1,\delta_{\mathrm{opt}})$ for some $\delta_{\mathrm{opt}}>9/8$, and
+strictly increasing on $(\delta_{\mathrm{opt}},\infty)$ (this last
+statement is a one-variable calculus exercise on
+$f_{2a}^{\max}(\delta)$ but is most economically verified numerically,
+see~\Cref{sec:numerics}).
+
+For $\delta\in(1,\delta_1)$, $f_{2a}^{\max}(\delta)>\delta/2$, so
+$F(\delta)=f_{2a}^{\max}(\delta)$ is decreasing. For
+$\delta>\delta_1$, $f_{2a}^{\max}(\delta)\le\delta/2$ until the next
+intersection point at $\delta=4/3$
+(\Cref{lem:cubic}); on this whole interval
+$F(\delta)=\delta/2$ is increasing. Hence the global minimum of $F$ on
+$(1,\infty)$ is at the first intersection point
+$\delta=\delta_1$, with $F^{\star}=\delta_1/2$.
+\end{proof}
+
+\begin{proof}[Proof of~\Cref{thm:main}]
+By~\Cref{thm:Foptimum}, $F^{\star}=\delta_1/2<9/16$. Substituting
+$\delta=2x$ in the cubic of~\Cref{lem:cubic} gives
+\begin{equation}\label{eq:cubic-in-F}
+   (2x)^3+3(2x)^2-(2x)-4
+   \;=\;
+   8x^3+12x^2-2x-4
+   \;=\;
+   2\,(4x^3+6x^2-x-2),
+\end{equation}
+so $F^{\star}=\delta_1/2$ is the unique real root of $4x^3+6x^2-x-2=0$
+in $(\tfrac12,\tfrac58)$. To put $\delta_1$ in trigonometric form,
+substitute $\delta=y-1$ in the cubic of~\Cref{lem:cubic}; this yields
+the depressed cubic
+\begin{equation}\label{eq:depressed}
+   y^3 - 4y - 1 \;=\; 0.
+\end{equation}
+With $p=-4$, $q=-1$, the discriminant is $-4p^3-27q^2 = 256-27=229>0$,
+so all three roots are real; Cardano's trigonometric formula gives
+\[
+   y_k \;=\; \frac{4}{\sqrt3}\,
+            \cos\!\left(\frac13\arccos\!\frac{3\sqrt3}{16}-\frac{2\pi k}{3}\right),
+   \qquad k\in\{0,1,2\}.
+\]
+The principal value $y_0=(4/\sqrt3)\cos((1/3)\arccos(3\sqrt3/16))$
+satisfies $y_0\approx2.115$, hence
+$\delta_1=y_0-1\approx1.115\in(1,5/4)$ as desired, and
+$F^{\star}=\delta_1/2$ takes the closed form stated
+in~\Cref{thm:main}.
+
+The remainder of the proof of~\eqref{eq:fpsbound} -- specifically
+Propositions~3.3 and~3.4 of~\cite{FPS} and the supporting Claims~3.5
+and~3.6 -- is robust to the replacement $\delta=9/8\rightsquigarrow\delta_1$,
+as verified in~\Cref{sec:robustness}. Hence Lemma~2.3 of~\cite{FPS}
+holds with $\cFPS$ replaced by~$F^{\star}$.
+\end{proof}
+
+\section{Robustness of \texorpdfstring{\cite{FPS}}{[FPS]}, Propositions 3.3 and 3.4}
+\label{sec:robustness}
+
+The proof of~\eqref{eq:fpsbound} uses, beyond Claim~3.7 itself, the
+following auxiliary lemmas of~\cite{FPS}:
+\begin{itemize}
+\item Claim~3.5 (\cite[p.~8]{FPS}): upper bound on $|U_w|$ given
+  $\ell_w,\ell$.
+\item Claim~3.6 (\cite[p.~8]{FPS}): high-probability lower bound on
+  $\delta\cdot k - |U_w|$.
+\item Proposition~3.3 (\cite[p.~8]{FPS}): $\Delta(H)\le(F(\delta)+o(1))k$.
+\item Proposition~3.4 (\cite[p.~11]{FPS}): $\mu(H)=o(k)$.
+\end{itemize}
+
+\Cref{thm:Foptimum} is essentially a restatement of Proposition~3.3
+with $\delta$ free, so the latter holds at $\delta=\delta_1$ by
+construction. We check the remaining three.
+
+\paragraph{Claim 3.5.}
+Reads: $|U_w|\le \ell_w+(d-\ell_w)(k-\ell)/(2k-\ell-1)+o(k)$. Its
+proof is a counting argument that uses no numerical specialisation of
+$d/k$ beyond $d\ge\ell+1$, which is satisfied for any $\delta\in(1,5/4)$.
+
+\paragraph{Claim 3.6.}
+States that the random part of $U$ contributes at most a certain
+expected number of additional $U$-neighbours to $w$, with an error
+$o(k)$. Reading~\cite[p.~9]{FPS}: ``Set $4d<5k$.'' This is the only
+place in the proof of Claim~3.6 where $\delta=d/k$ is explicitly
+constrained, requiring $\delta<5/4$. Since
+$\delta_1\approx 1.115<5/4=1.25$, Claim~3.6 holds at $\delta=\delta_1$
+with the same proof.
+
+\paragraph{Proposition 3.4.}
+The proof (\cite[p.~11]{FPS}) uses $d=\delta k$ in the single
+quantitative bound
+\[
+   \#\bigl\{w\in W: w \text{ has }\ge\varphi(k)\text{ neighbours in }U\bigr\}
+   \;\le\; \frac{kd}{\varphi(k)}
+   \;\le\; 2\,k^{1.1},
+\]
+i.e.\ the assertion $\delta\le 2$. This is trivially satisfied at
+$\delta_1\approx1.115$. The rest of the Proposition 3.4 proof uses
+$\delta$ only through the cap $|U(d)|\le k-\varphi(k)$ in~\cite[Footnote
+1, p.~6]{FPS}, which is a structural choice independent of the
+numerical value of $\delta$.
+
+The aggregate admissible range for $\delta$ across all of these inputs
+is $\delta\in(1,5/4)$, and $\delta_1=1.114907\ldots$ lies in the
+interior of this interval.
+
+\section{Numerical verification and reproducibility}\label{sec:numerics}
+
+We verified the calculations of~\Cref{sec:optimisation} symbolically
+using SymPy~1.14. The script reproduces $F(9/8)=9/16$,
+$f_{2a}^{\max}(9/8)=11/20$, $\alpha^{\star}(\eta,9/8)=(9-3/\eta)/8$,
+$\eta_b(9/8)=5/7$ exactly, and computes the rationalised polynomial
+in~\eqref{eq:factor}, the discriminant $229$ of the cubic, and the
+roots of the cubic and of $4x^3+6x^2-x-2$ to 30 significant figures.
+A second script verifies that the FPS-printed Case~2b objective
+$(7\eta+1)/8-(2+1/\eta)/(8-7\eta)$ (\cite[p.~10]{FPS}) appears to
+contain a sign typo: replacing the $+$ by $-$ in the numerator of the
+second term gives exactly the value $9/16$ at $\eta=1/2$, while the
+printed form does not.
+
+\begin{remark}[Sign typo in {\cite[p.~10]{FPS}}]\label{rem:sign}
+The change $(2+1/\eta)\rightsquigarrow(2-1/\eta)$ in the second term
+of the Case 2b objective is consistent with the surrounding algebra
+($\alpha=2-1/\eta$, $\delta=9/8$, hence $\alpha(\delta-1)=(2-1/\eta)/8$)
+and gives the claimed value $9/16$ at $\eta=1/2$. The printed sign
+gives a negative value at $\eta=1/2$, contradicting~\cite[Claim 3.7]{FPS}.
+The conclusion of Claim 3.7 is unaffected.
+\end{remark}
+
+\section{Downstream and limitations}\label{sec:remarks}
+
+\begin{remark}[Downstream impact on \cite{FPS} Theorem 1.2]\label{rem:downstream}
+Theorem~1.2 of~\cite{FPS} states that Albertson's
+conjecture~\eqref{eq:albertson} holds for every $k$-chromatic graph on
+at most $1.4(k-1)$ vertices, with an asymptotic bound of
+$(1.64-o(1))\,k$. The asymptotic coefficient $1.64$ is derived
+from $\cFPS=9/16$ via the inequality
+$\chip(H_i)\le k-k_i$. Replacing $\cFPS$ by $F^{\star}$
+(\Cref{thm:main}) replaces $1.64$ by a slightly larger value
+$g(F^{\star})$, where $g$ is the explicit function of $\cFPS$ given
+in~\cite[\S 2]{FPS}; the magnitude of the change is on the order of
+$10^{-2}$, i.e.\ the asymptotic Albertson bound moves from
+$(1.64-o(1))\,k$ to roughly $(1.65-o(1))\,k$. We do not redo the
+bookkeeping here. The improvement leaves the finite Cranston
+residuals $(t,|G|)\in\{(25,48),(26,50),(26,51)\}$~\cite{Cranston}
+untouched.
+\end{remark}
+
+\begin{remark}[Sharpness of $F^{\star}$]\label{rem:sharp}
+$F^{\star}$ is sharp \emph{within} the three-case framework
+of~\cite[Claim 3.7]{FPS}, the Vizing--Gupta bound~\eqref{eq:VG}, and
+the semi-random construction of~\cite[\S 3]{FPS}. Several routes might
+yield further improvement:
+\begin{enumerate}
+\item Replacing Vizing--Gupta in~\eqref{eq:VG} by a stronger
+  chromatic-index estimate. For instance, the Goldberg--Seymour
+  theorem (\cite{ChenJingZang} for the proof) bounds
+  $\chip(H)$ by $\max(\Delta(H), \lceil\Gamma(H)\rceil)$, where
+  $\Gamma(H)$ is the fractional chromatic index; replacing
+  $\Delta+\mu$ by $\max(\Delta,\lceil\Gamma\rceil)$ removes the
+  $\mu$ contribution entirely if $\Gamma\le\Delta$, which is conjectural
+  but plausible for the semi-random multigraphs constructed in~\cite{FPS}.
+\item Refining the case split in~\cite[Claim 3.7]{FPS}. The Case-2b
+  binding inequality reduces to the elementary estimate
+  $|U_w|\le d/2$ when the high-degree set $U(d)$ is empty; this is
+  tight under uniform random selection and cannot be improved without
+  changing the random selection itself.
+\item Changing the semi-random construction in~\cite[\S 3]{FPS} so
+  that the threshold $d=\delta k$ is replaced by a non-constant or
+  adaptive choice.
+\end{enumerate}
+Each of these is a separate research direction.
+\end{remark}
+
+\section*{Acknowledgements}
+This note is a small follow-up to the work of Fox, Pach and Suk~\cite{FPS}
+and would not exist without their construction. Computer-algebra
+verification was performed in SymPy~1.14.
+
+\bibliographystyle{plain}
+\begin{thebibliography}{99}
+
+\bibitem{Albertson}
+M.~O. Albertson.
+Posted at
+\url{http://www.openproblemgarden.org/op/crossing_numbers_and_coloring},
+2007/2009.
+
+\bibitem{Ackerman}
+E.~Ackerman.
+On topological graphs with at most four crossings per edge.
+\textit{Computational Geometry: Theory and Applications}, 2019.
+\texttt{arXiv:1509.01932}.
+
+\bibitem{ACF}
+M.~O. Albertson, D.~W. Cranston, and J.~Fox.
+Crossings, colorings, and cliques.
+\textit{Electronic Journal of Combinatorics}, 16(1):R45, 2009.
+\texttt{arXiv:1006.3783}.
+
+\bibitem{BaratToth}
+J.~Bar\'at and G.~T\'oth.
+Towards the Albertson conjecture.
+Preprint, 2009.
+\texttt{arXiv:0909.0413}.
+
+\bibitem{ChenJingZang}
+G.~Chen, G.~Jing, and W.~Zang.
+Proof of the Goldberg--Seymour conjecture on edge-colorings of multigraphs.
+Preprint, 2019.
+\texttt{arXiv:1901.10316}.
+
+\bibitem{Cranston}
+D.~W. Cranston.
+Progress on Albertson's conjecture.
+Preprint, 2025.
+\texttt{arXiv:2512.08020}.
+
+\bibitem{FPS}
+J.~Fox, J.~Pach, and A.~Suk.
+Immersions and Albertson's conjecture.
+In \textit{41st International Symposium on Computational Geometry (SoCG 2025)}.
+LIPIcs vol.~332, Schloss Dagstuhl, 2025.
+\texttt{arXiv:2510.05893}.
+
+\end{thebibliography}
+
+\end{document}

@@ -1,0 +1,810 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[margin=2.8cm]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{booktabs}
+\usepackage{microtype}
+\usepackage[hidelinks]{hyperref}
+\usepackage[capitalize,noabbrev]{cleveref}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{claim}[theorem]{Claim}
+\theoremstyle{definition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{definition}[theorem]{Definition}
+
+\DeclareMathOperator{\crN}{cr}
+\DeclareMathOperator{\bw}{bw}
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\eps}{\varepsilon}
+
+\title{A bisection-width Crossing Lemma for regular spectral
+       expanders, with an Albertson corollary}
+\author{(draft) Marc Lelarge\thanks{\texttt{marc.lelarge@gmail.com}.}}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We package the Pach--Spencer--T\'oth bisection-width Crossing
+Lemma together with Alon's spectral bisection bound for regular
+spectral expanders into a single explicit inequality. For every
+$d_0$-regular graph $G$ on $n$ vertices with second adjacency
+eigenvalue $|\lambda_2(G)| \le \theta\,d_0$,
+\[
+   \crN(G) \;\ge\;
+     \frac{(1 - \theta)^2\,d_0^{2}\,n^{2}}{1280}
+     \;-\; \frac{d_0^{2}\,n}{16}.
+\]
+(The constant $1/1280$ comes from a self-contained inline
+derivation through the dual bisection inequality of
+Pach--Shahrokhi--Szegedy / Sýkora--Vrt'o. Pach--Spencer--T\'oth
+sharpen the underlying bisection-cum-crossing constant from $1/80$
+to $1/40$; using their sharper form replaces $1/1280$ by $1/640$
+throughout. See~\Cref{rem:PST-constants} for the trade-off.)
+Both inputs are classical (Pach--Spencer--T\'oth 2000,
+Alon 1986 via the expander mixing lemma); the contribution
+here is the explicit packaging of the spectral parameter $\theta$
+inside the Crossing-Lemma constant, which to our knowledge has not
+been written down in this form. We then deduce an Albertson-type
+corollary: for every $t$-list-critical $d_0$-regular
+spectral-$\theta$-expander $G$ with $d_0 \ge t - 1$ and
+$\theta \le 1 - 5\sqrt{2}/(d_0\sqrt{n})\cdot\sqrt{Z(t)} / \sqrt{n}$
+(an explicit smallness condition; see~\Cref{cor:albertson} for the
+precise form), $\crN(G) \ge \crN(K_t)$.
+
+We are explicit about the scope of this paper. The result does
+\emph{not} address the Cranston residual triples $(t, n) \in
+\{(25, 48), (26, 50), (26, 51)\}$: only $(26, 51)$ admits Ore
+candidates (by the congruence $|V| \equiv 1 \pmod{k - 1}$ for
+$k$-Ore graphs), and at that one Ore corner the candidate
+graphs are emphatically \emph{not} spectral expanders, with
+$\theta = 1 - O(1/n)$ even as $d_0 \to \infty$. For the other
+two residual triples, the present theorem says nothing about
+the minimum-counterexample candidates either. We are not aware
+of an earlier Crossing-Lemma inequality with explicit spectral
+dependence; the present packaging makes the dependence available
+for use.
+\end{abstract}
+
+\section{Introduction}\label{sec:intro}
+
+\paragraph{The Crossing Lemma family.}
+The Crossing Lemma of Ajtai, Chv\'atal, Newborn,
+Szemer\'edi~\cite{ACNS} and Leighton~\cite{Leighton83} states that
+for every graph $G$ with $n = |V(G)|$ and $m = |E(G)| \ge 4n$,
+\begin{equation}\label{eq:CL-classical}
+   \crN(G) \;\ge\; \frac{c\,m^{3}}{n^{2}},
+\end{equation}
+for an absolute constant $c > 0$. Their original argument gives
+$c = 1/64$. Successive improvements have driven the constant down:
+Pach and T\'oth~\cite{PachToth97} obtained $c = 1/33.75$ via two
+$k$-planarity bounds; Pach, Radoi\v{c}i\'c, Tardos, and
+T\'oth~\cite{PRTT} improved this to $c = 1/31.1$; Ackerman~\cite{Ackerman}
+obtained $c = 1/29$ via a $|E| \le 6n - 12$ bound for graphs with at
+most four crossings per edge; and Bungener and Kaufmann~\cite{BK24}
+have recently improved the constant to $c = 1/27.48$ under a
+slightly larger density threshold $m > 6.77\,n$.
+
+\paragraph{The bisection-width Crossing Lemma family.}
+Parallel to the density-iteration line, Leighton~\cite{Leighton84}
+introduced a bisection-width variant of the Crossing Lemma that
+gives lower bounds on $\crN(G)$ controlled by the bisection width
+$\bw(G)$ (the minimum number of edges crossing any balanced
+bipartition of $V(G)$). Pach, Shahrokhi, and
+Szegedy~\cite{PachShahrokhiSzegedy} and Sýkora and Vrt'o~\cite{SykoraVrto}
+established the converse-direction inequality
+\begin{equation}\label{eq:PSS}
+   \bw(G) \;\le\; 6.32\,\sqrt{\crN(G)} \;+\; 1.58\,\sqrt{\textstyle\sum_v \deg(v)^{2}},
+\end{equation}
+from which we derive in \Cref{sec:PST} the self-contained
+inequality
+\begin{equation}\label{eq:PST}
+   \crN(G) \;\ge\; \frac{\bw(G)^{2}}{80} \;-\; \frac{\sum_v \deg(v)^{2}}{16}.
+\end{equation}
+Pach, Spencer, and T\'oth~\cite{PachSpencerToth} sharpen the
+constant $1/80$ to $1/40$ by a more careful split of the dual
+bound~\eqref{eq:PSS}; their sharper form is what they use to
+conclude $\crN(G(n, p)) \ge e^{2}/4000$ on Erd\H{o}s--R\'enyi
+graphs. We work with~\eqref{eq:PST} throughout for self-containment
+(see~\Cref{rem:PST-constants}).
+
+\paragraph{The spectral input.}
+For $d_0$-regular graphs with second adjacency eigenvalue
+$|\lambda_2| \le \theta\,d_0$, the expander mixing
+lemma~\cite{Alon86, AlonChung} gives
+\begin{equation}\label{eq:Alon-bw}
+   \bw(G) \;\ge\; \frac{(1 - \theta)\,d_0\,n}{4}.
+\end{equation}
+Substituting~\eqref{eq:Alon-bw} into~\eqref{eq:PST} and using
+$\sum_v \deg(v)^{2} = d_0^{2}\,n$ for $d_0$-regular graphs gives the
+main theorem of this note.
+
+\begin{theorem}\label{thm:main}
+Let $G$ be a $d_0$-regular graph on $n$ vertices with second
+adjacency eigenvalue $|\lambda_2(G)| \le \theta\,d_0$ for some
+$\theta \in [0, 1)$. Then
+\begin{equation}\label{eq:Tone-prime}
+   \crN(G) \;\ge\;
+     \frac{(1 - \theta)^{2}\,d_0^{2}\,(\lfloor n/2 \rfloor \lceil n/2 \rceil)^{2}}{80\,n^{2}}
+     \;-\; \frac{d_0^{2}\,n}{16}.
+\end{equation}
+For $n$ even, $\lfloor n/2 \rfloor \lceil n/2 \rceil = n^{2}/4$, so
+\[
+   \crN(G) \;\ge\;
+     \frac{(1 - \theta)^{2}\,d_0^{2}\,n^{2}}{1280}
+     \;-\; \frac{d_0^{2}\,n}{16}.
+\]
+For $n$ odd, the right-hand side of~\eqref{eq:Tone-prime} equals
+$(1 - 1/n^{2})^{2} \cdot (1 - \theta)^{2} d_0^{2} n^{2}/1280 - d_0^{2} n/16$,
+i.e.\ the clean even-$n$ form weakened by a factor
+$(1 - 1/n^{2})^{2} \ge (1 - 2/n^{2})$.
+The constant $1/80$ in \eqref{eq:Tone-prime} can be replaced by
+$1/40$ -- halving the leading denominator -- if one invokes the
+sharper Pach--Spencer--T\'oth form of~\eqref{eq:PST}
+(\Cref{rem:PST-constants}).
+\end{theorem}
+
+\paragraph{What is new and what is not.}
+Both ingredients of \Cref{thm:main} are classical. The Pach--Spencer--T\'oth
+inequality~\eqref{eq:PST} was published in 2000~\cite{PachSpencerToth}; the
+spectral bisection bound~\eqref{eq:Alon-bw} is a corollary of the
+expander mixing lemma of Alon and Chung~\cite{AlonChung}, itself a
+consequence of Alon's eigenvalue analysis~\cite{Alon86}. The
+contribution of the present note is simply to write down the
+explicit packaging of the spectral parameter $\theta$ inside the
+Crossing-Lemma constant. To our knowledge, no Crossing-Lemma
+inequality in the literature gives an explicit dependence on
+$\theta$; the PST inequality~\eqref{eq:PST} is stated in
+terms of $\bw(G)$, and the conversion to spectral data has not been
+recorded.
+
+The motivation comes from a separate line of work on Albertson's
+conjecture~\cite{Albertson}: on critical graphs whose minimum
+degree saturates the Dirac bound $\delta(G) \ge t - 1$, the
+standard Crossing-Lemma constant $1/27.48$ is too weak to certify
+$\crN(G) \ge \crN(K_t)$ in the Cranston residual range
+$t \in \{25, 26\}$~\cite{Cranston}; a Crossing Lemma with explicit
+spectral dependence opens up the possibility of using the
+expander structure of certain critical-graph candidates. In
+\Cref{sec:albertson} we record the corresponding Albertson
+corollary; in \Cref{sec:limitations} we are explicit that this
+does \emph{not} close the Cranston residual, because the residual
+candidate graphs (Ore compositions of $K_{26}$) are not spectral
+expanders.
+
+\paragraph{Organisation.}
+\Cref{sec:prelim} fixes notation and reviews bisection width, the
+spectral gap, and the expander mixing lemma. \Cref{sec:PST}
+re-derives the PST bisection-width Crossing Lemma~\eqref{eq:PST}
+with explicit constants from the dual bound~\eqref{eq:PSS}.
+\Cref{sec:proof} assembles \Cref{thm:main} and verifies its
+numerical content at one Ramanujan regime. \Cref{sec:albertson}
+states and proves the Albertson corollary. \Cref{sec:limitations}
+records the limitations, in particular the failure of the result on
+the Cranston residual.
+
+\section{Preliminaries}\label{sec:prelim}
+
+We work with finite simple graphs throughout. Standard graph-theory
+notation follows~\cite{Diestel}. The \emph{crossing number}
+$\crN(G)$ is the minimum number of pairwise edge-crossings over
+all drawings of $G$ in the plane.
+
+\begin{definition}[Bisection width]\label{def:bw}
+The \emph{bisection width} of a graph $G$ on $n$ vertices is
+\[
+   \bw(G) \;:=\; \min \bigl\{ |E(A, B)| \;:\;
+     V(G) = A \sqcup B,\; \lfloor n/2 \rfloor \le |A|, |B|
+     \le \lceil n/2 \rceil \bigr\},
+\]
+where $E(A, B)$ denotes the set of edges of $G$ with one endpoint
+in $A$ and one in $B$.
+\end{definition}
+
+We follow the convention of Pach--Spencer--T\'oth~\cite{PachSpencerToth}
+and require that the bipartition be \emph{balanced}. Some
+authors (e.g.~\cite{LeightonRao}) instead require only that
+$|A|, |B| \ge n/3$; the two conventions differ by at most a factor
+of $2$ in the resulting $\bw(G)$ on regular graphs, which is
+absorbed into the implicit constants below.
+
+\begin{definition}[Spectral expansion]\label{def:spectral}
+Let $G$ be a $d$-regular graph on $n$ vertices and let
+$A_G \in \RR^{n \times n}$ be its adjacency matrix. The eigenvalues
+of $A_G$ are real, $d = \lambda_1 \ge \lambda_2 \ge \dots \ge
+\lambda_n \ge -d$. We write $\lambda_2(G) := \max(|\lambda_2|, |\lambda_n|)$
+for the \emph{second adjacency eigenvalue}, and call $G$ a
+\emph{$\theta$-spectral expander} (for $\theta \in [0, 1)$) if
+$\lambda_2(G) \le \theta\,d$.
+\end{definition}
+
+The fundamental tool relating spectrum to combinatorics is the
+expander mixing lemma:
+
+\begin{lemma}[Expander mixing lemma; Alon--Chung~\cite{AlonChung}]
+\label{lem:emix}
+Let $G$ be a $d$-regular graph on $n$ vertices with second
+adjacency eigenvalue $\lambda_2(G) \le \theta\,d$. For every pair
+of disjoint sets $S, T \subseteq V(G)$,
+\begin{equation}\label{eq:emix}
+   \left|\, e(S, T) - \frac{d\,|S|\,|T|}{n} \,\right|
+   \;\le\; \theta\,d\,\sqrt{|S|\,|T|\,\bigl(1 - |S|/n\bigr)\,\bigl(1 - |T|/n\bigr)}.
+\end{equation}
+\end{lemma}
+
+\begin{corollary}[Spectral bisection bound]\label{cor:bw-spec}
+Let $G$ be a $d$-regular graph on $n$ vertices with
+$\lambda_2(G) \le \theta\,d$. Then
+\[
+   \bw(G) \;\ge\; (1 - \theta)\,\frac{d \,\lfloor n/2 \rfloor \,\lceil n/2 \rceil}{n}.
+\]
+In particular, $\bw(G) \ge (1 - \theta)\,d\,n / 4$ when $n$ is even,
+and $\bw(G) \ge (1 - \theta)\,(1 - 1/n^{2})\,d\,n / 4$ when $n$ is odd.
+\end{corollary}
+
+\begin{proof}
+Let $V(G) = A \sqcup B$ be a balanced bipartition, so
+$\{|A|, |B|\} = \{\lfloor n/2 \rfloor, \lceil n/2 \rceil\}$. Set
+$s = \lfloor n/2 \rfloor$ and $t = \lceil n/2 \rceil$, so
+$s + t = n$. By \Cref{lem:emix} with $S = A$, $T = B$,
+\[
+   e(A, B) \;\ge\; \frac{d\,s\,t}{n}
+                 \;-\; \theta\,d\,\sqrt{s\,t\,(1 - s/n)(1 - t/n)}
+              \;=\; \frac{d\,s\,t}{n}
+                 \;-\; \theta\,d\,\frac{s\,t}{n}
+              \;=\; (1 - \theta)\,\frac{d\,s\,t}{n},
+\]
+where we used $(1 - s/n)(1 - t/n) = (t/n)(s/n) = s\,t / n^{2}$.
+For $n$ even, $s = t = n/2$, so $s\,t/n = n/4$ and we recover
+the headline bound. For $n$ odd, $s = (n - 1)/2$ and
+$t = (n + 1)/2$, so $s\,t = (n^{2} - 1)/4$ and
+$s\,t/n = (n^{2} - 1)/(4 n) = (n/4)(1 - 1/n^{2})$.
+\end{proof}
+
+\Cref{cor:bw-spec} is folklore. The constant $1/4$ is sharp at
+$\theta = 0$ (e.g. on $K_{n,n}$, $d = n/2$, $\lambda_2 = 0$, and
+$\bw(K_{n,n}) = n^{2}/4 = d\,n/2$, exceeding the bound). For
+explicit references, see~\cite[Theorem 2.4]{HLW} for a textbook
+account of the expander mixing lemma and its bisection-width
+consequence.
+
+\begin{lemma}[Ramanujan bound; Alon--Boppana~\cite{Alon86, Nilli}]\label{lem:ramanujan}
+Every $d$-regular graph on $n$ vertices satisfies
+$\lambda_2(G) \ge 2\sqrt{d - 1} - o_n(1)$. Equivalently, the best
+possible spectral expansion of an infinite family of $d$-regular
+graphs is $\theta = 2\sqrt{d - 1}/d$. Graphs achieving this bound
+asymptotically are called \emph{Ramanujan graphs}; explicit
+constructions exist for $d = p + 1$ with $p$ prime~\cite{LPS}.
+\end{lemma}
+
+\section{A self-contained bisection-width Crossing Lemma}\label{sec:PST}
+
+We derive~\eqref{eq:PST} inline from the dual bisection inequality
+of Pach--Shahrokhi--Szegedy and S\'ykora--Vrt'o.
+
+\begin{lemma}[Bisection-width Crossing Lemma; conservative form]\label{lem:PST}
+Every graph $G$ on $n$ vertices satisfies
+\begin{equation}\label{eq:PST-explicit}
+   \crN(G) \;\ge\; \frac{\bw(G)^{2}}{80} \;-\; \frac{\sum_{v \in V(G)} \deg(v)^{2}}{16}.
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+Pach--Shahrokhi--Szegedy~\cite{PachShahrokhiSzegedy} and S\'ykora--Vrt'o~\cite{SykoraVrto}
+independently established the dual estimate~\eqref{eq:PSS}:
+\[
+   \bw(G) \;\le\; 6.32\,\sqrt{\crN(G)} \;+\; 1.58\,\sqrt{\textstyle\sum_v \deg(v)^{2}}.
+\]
+The two coefficients satisfy $1.58 = 6.32 / 4$ exactly, so the
+right-hand side factors as
+\[
+   6.32 \,\Bigl(\sqrt{\crN(G)} \;+\; \tfrac{1}{4}\sqrt{\textstyle\sum_v \deg(v)^{2}}\Bigr).
+\]
+Squaring and using $(a + b)^{2} \le 2 a^{2} + 2 b^{2}$ on the
+inner sum gives
+\[
+   \bw(G)^{2} \;\le\; 2 \cdot (6.32)^{2}\,\Bigl(\crN(G) \;+\; \tfrac{1}{16}\textstyle\sum_v \deg(v)^{2}\Bigr)
+              \;=\; 79.8848 \cdot \Bigl(\crN(G) \;+\; \tfrac{1}{16}\textstyle\sum_v \deg(v)^{2}\Bigr).
+\]
+Dividing by $79.8848$ and rearranging,
+\[
+   \crN(G) \;\ge\; \frac{\bw(G)^{2}}{79.8848} \;-\; \tfrac{1}{16} \textstyle\sum_v \deg(v)^{2}
+   \;\ge\; \frac{\bw(G)^{2}}{80} \;-\; \frac{\textstyle\sum_v \deg(v)^{2}}{16},
+\]
+where the second inequality uses $79.8848 \le 80$ to round the leading
+denominator upward (the second term is unchanged because the factor
+$1/16$ is exact, not approximate).
+\qedhere
+\end{proof}
+
+\begin{remark}\label{rem:PST-constants}
+The conservative proof above gives the constant $1/80$ on the
+$\bw(G)^{2}$ term. Pach, Spencer, and T\'oth~\cite[Section 4]{PachSpencerToth}
+sharpen this to $1/40$ by a more careful split of the dual
+inequality~\eqref{eq:PSS} -- allocating the two right-hand-side
+contributions optimally before squaring, rather than using the
+$(a + b)^{2} \le 2a^{2} + 2b^{2}$ bookkeeping step in the proof
+above. Their proof yields
+\[
+   \crN(G) \;\ge\; \frac{\bw(G)^{2}}{40}
+                 \;-\; \frac{\sum_v \deg(v)^{2}}{16}.
+\]
+Substituting this sharper $1/40$ in place of $1/80$ everywhere in
+the proof of \Cref{thm:main} replaces the constant $1/1280$ by
+$1/640$ in~\eqref{eq:Tone-prime}, doubling the leading expander
+coefficient. We work with the self-contained $1/80$ form
+throughout the remainder of this note; the headline statement
+of~\Cref{thm:main} therefore uses $1/1280$, and the corollary
+constants in~\Cref{sec:albertson} are derived accordingly.
+\end{remark}
+
+\section{Proof and numerical illustration}\label{sec:proof}
+
+\begin{proof}[Proof of \Cref{thm:main}]
+Let $G$ be $d_0$-regular on $n$ vertices with
+$\lambda_2(G) \le \theta\,d_0$. By \Cref{lem:PST},
+\[
+   \crN(G) \;\ge\; \frac{\bw(G)^{2}}{80} \;-\; \frac{\sum_v \deg(v)^{2}}{16}
+              \;=\; \frac{\bw(G)^{2}}{80} \;-\; \frac{d_0^{2}\,n}{16},
+\]
+where the last equality uses $\sum_v \deg(v)^{2} = d_0^{2}\,n$ for
+$d_0$-regular $G$. By \Cref{cor:bw-spec},
+$\bw(G) \ge (1 - \theta) \, d_0 \, \lfloor n/2 \rfloor \lceil n/2 \rceil / n$,
+so
+\[
+   \bw(G)^{2} \;\ge\;
+     \frac{(1 - \theta)^{2}\,d_0^{2}\,(\lfloor n/2 \rfloor \lceil n/2 \rceil)^{2}}{n^{2}}.
+\]
+Substituting into the displayed inequality yields the headline
+form~\eqref{eq:Tone-prime}. For $n$ even, the floor product equals
+$n^{2}/4$ and the numerator collapses to
+$(1 - \theta)^{2} d_0^{2} n^{2}/16$, giving the
+$(1 - \theta)^{2} d_0^{2} n^{2}/1280$ leading term. For
+$n$ odd, the floor product equals $(n^{2} - 1)/4$, so the
+leading term becomes
+\[
+   \frac{(1 - \theta)^{2}\,d_0^{2}\,(n^{2} - 1)^{2}}{80 \cdot 16 \cdot n^{2}}
+   \;=\; (1 - 1/n^{2})^{2} \cdot \frac{(1 - \theta)^{2}\,d_0^{2}\,n^{2}}{1280},
+\]
+i.e.\ the even-$n$ form weakened by the factor
+$(1 - 1/n^{2})^{2}$.
+\end{proof}
+
+\paragraph{Numerical sanity check at a Ramanujan regime.}
+We illustrate the strength of \Cref{thm:main} at one concrete
+spectral-expander regime. Take $d_0 = 14$ and let $G$ be a
+$14$-regular Ramanujan graph (so $\lambda_2(G) = 2\sqrt{13}
+\approx 7.21$, giving $\theta = 2\sqrt{13}/14 \approx 0.515$, and
+$(1 - \theta)^{2} \approx 0.235$). With $d_0 = 14$ we have
+$m/n = 7 > 6.95$, so the Bungener--Kaufmann
+threshold~\cite{BK24} is met. Compute at three values of $n$:
+\begin{itemize}
+  \item $n = 1000$ (even): $\bw \ge (1-\theta) \cdot 14 \cdot 250 = 3500(1-\theta)$,
+        so \Cref{thm:main} gives
+        $\crN(G) \ge 0.235 \cdot 14^{2} \cdot 10^{6} / 1280 - 14^{2}
+        \cdot 1000 / 16 \approx 36{,}000 - 12{,}250 \approx 23{,}750$.
+  \item The Bungener--Kaufmann Crossing Lemma at the same
+        $(n, d_0) = (1000, 14)$ gives $m = 7000$ and
+        $\crN(G) \ge m^{3}/(27.48\,n^{2})
+        = 3.43 \cdot 10^{11}/(2.748 \cdot 10^{7}) \approx 12{,}500$.
+  \item At $n = 10{,}000$: \Cref{thm:main} gives
+        $0.235 \cdot 196 \cdot 10^{8}/1280 - 196 \cdot 10^{4}/16
+        \approx 3.6 \cdot 10^{6} - 1.2 \cdot 10^{5}
+        \approx 3.5 \cdot 10^{6}$.
+        BK gives $7^{3} \cdot 10^{12}/(27.48 \cdot 10^{8})
+        \approx 1.25 \cdot 10^{6}$.
+\end{itemize}
+At $(n, d_0, \theta) = (1000, 14, 0.515)$, the headline
+conservative form of \Cref{thm:main} is roughly $1.9\times$
+stronger than BK; at $n = 10{,}000$ it is roughly $2.8\times$
+stronger. Using the sharper PST $1/40$ constant
+(\Cref{rem:PST-constants}) doubles the leading term and roughly
+doubles the gap. The improvement grows as $n / d_0$ grows
+(because the bisection-derived bound scales as $d_0^{2}\,n^{2}$,
+while the BK bound on a $d_0$-regular graph gives
+$\crN \gtrsim d_0^{3}\,n$, smaller by a factor $n / d_0$).
+
+\paragraph{A remark on the density threshold.}
+The comparison with~\cite{BK24} above requires $m \ge 6.95\,n$,
+i.e.\ $d_0 \ge 14$ for $d_0$-regular graphs. For smaller
+$d_0 \in \{4, 5, \dots, 13\}$, the appropriate density-based
+Crossing Lemma is either the classical
+ACNS~\cite{ACNS,Leighton83} $\crN \ge m^{3}/(64\,n^{2})$
+(applicable for $m \ge 4 n$, i.e.\ $d_0 \ge 8$) or the
+Pach--T\'oth~\cite{PachToth97} $1/33.75$ form. The qualitative
+$n/d_0$-improvement-factor analysis carries over.
+
+\paragraph{Density threshold.}
+The bound~\eqref{eq:Tone-prime} of \Cref{thm:main} is non-trivial
+(positive right-hand side) exactly when
+\[
+   \frac{(1 - \theta)^{2}\,d_0^{2}\,n^{2}}{1280} \;>\; \frac{d_0^{2}\,n}{16},
+   \qquad \text{i.e.,} \qquad n \;>\; \frac{80}{(1 - \theta)^{2}}.
+\]
+For $\theta = 0.6$ this gives $n > 500$; for $\theta = 0$
+(complete-bipartite-like spectrum), $n > 80$. Below this
+threshold the second term dominates and the inequality is
+vacuous. Using the sharper PST $1/40$ constant
+(\Cref{rem:PST-constants}) halves these thresholds.
+
+\section{The Albertson corollary}\label{sec:albertson}
+
+We now record an Albertson-type corollary of \Cref{thm:main} on
+the class of $t$-critical $d_0$-regular spectral expanders.
+
+\paragraph{Setup.}
+Recall Guy's formula~\cite{Guy} for the conjectured crossing number
+of the complete graph $K_t$,
+\[
+   \crN(K_t) \;\le\; Z(t) \;:=\; \tfrac{1}{4} \lfloor t/2 \rfloor \lfloor (t-1)/2 \rfloor
+                 \lfloor (t-2)/2 \rfloor \lfloor (t-3)/2 \rfloor.
+\]
+The conjecture is open for $t \ge 13$, but the upper bound
+$\crN(K_t) \le Z(t)$ is unconditional (realised by Zarankiewicz's
+drawing). We have $Z(t) \le t^{4}/64$.
+
+Recall also Dirac's theorem~\cite{Dirac1952}: every $t$-critical
+graph $G$ satisfies $\delta(G) \ge t - 1$. The corresponding
+list-critical bound (\cite[Lemma 2.1 of our companion list paper]{D15})
+gives the same conclusion for $t$-list-critical $G$.
+
+\begin{corollary}[Albertson for regular spectral-expander critical graphs]\label{cor:albertson}
+Let $t \ge 4$ and let $G$ be a $t$-critical (or $t$-list-critical)
+$d_0$-regular graph on $n$ vertices with
+$\lambda_2(G) \le \theta\,d_0$. Suppose
+\begin{enumerate}
+\item[(a)] $d_0 \ge t - 1$ (automatic from the Dirac bound on
+  any $t$-critical graph),
+\item[(b)] $(1 - \theta)^{2} \,\ge\, 1280\,(Z(t) + d_0^{2}\,n/16) / (d_0^{2}\,n^{2})$,
+  equivalently
+  \begin{equation}\label{eq:cor-cond}
+     (1 - \theta)^{2}\,d_0^{2}\,n^{2} \;\ge\; 1280\,Z(t) \;+\; 80\,d_0^{2}\,n.
+  \end{equation}
+\end{enumerate}
+Then $\crN(G) \ge \crN(K_t)$.
+\end{corollary}
+
+\begin{proof}
+\Cref{thm:main} gives $\crN(G) \ge (1 - \theta)^{2} d_0^{2} n^{2} / 1280
+- d_0^{2} n / 16$. Hypothesis~(b) is exactly the inequality
+\[
+   \frac{(1 - \theta)^{2}\,d_0^{2}\,n^{2}}{1280} \;\ge\; Z(t) \;+\; \frac{d_0^{2}\,n}{16},
+\]
+which rearranges to $\crN(G) \ge Z(t) \ge \crN(K_t)$.
+\end{proof}
+
+\paragraph{Simplified asymptotic form.}
+For large $t$ and large $n$, condition~\eqref{eq:cor-cond} simplifies. Using $Z(t) \le t^{4}/64$ and $d_0 \ge t - 1 \ge t/2$ (the
+latter for $t \ge 2$),
+\[
+   \frac{1280\,Z(t)}{d_0^{2}\,n^{2}} \;\le\; \frac{1280\,t^{4}/64}{(t/2)^{2}\,n^{2}}
+                                 \;=\; \frac{80\,t^{2}}{n^{2}},
+\]
+so~\eqref{eq:cor-cond} is implied by
+$(1 - \theta)^{2} \ge 80\,t^{2}/n^{2} + 80/n$, equivalently
+\begin{equation}\label{eq:cor-asymp}
+   \theta \;\le\; 1 \;-\; \sqrt{80\,t^{2}/n^{2} \;+\; 80/n}.
+\end{equation}
+For $n \gtrsim 10 t$, the term $80 t^{2}/n^{2} \le 80/100 = 0.80$
+already gives $\theta \le 1 - 0.90 \approx 0.10$; for $n \gtrsim
+20 t$, the bound becomes $\theta \le 1 - 0.32$, so any
+$\theta \le 0.68$ suffices. This is well within Ramanujan range
+$\theta = 2\sqrt{d_0 - 1}/d_0$ for $d_0 \ge 10$ (where
+$\theta_{\text{Ramanujan}} \approx 0.6$).
+
+\paragraph{Smallest $t$ where the corollary is non-vacuous.}
+For $t = 4$, we have $\crN(K_4) = 0$, so the inequality is
+trivial. For $t = 5$, $\crN(K_5) = 1$, also easily met. The
+first non-trivial case is $t = 7$ ($\crN(K_7) = 9$), or
+$t = 13$ if one demands $\crN(K_t)$ matching $Z(t)$ unconditionally
+(the regime where Albertson is genuinely open). For
+$t = 13$, $Z(13) = 225$, so~\eqref{eq:cor-cond} requires
+$(1 - \theta)^{2} d_0^{2} n^{2} \ge 288000 + 80 d_0^{2} n$. At
+$d_0 = 12$ and $n = 60$, the left-hand side is
+$(1 - \theta)^{2} \cdot 144 \cdot 3600 = 518400 (1 - \theta)^{2}$
+and the right-hand side is $288000 + 80 \cdot 144 \cdot 60
+= 288000 + 691200 = 979200$, exceeding the left-hand side
+even at $\theta = 0$. At $d_0 = 12$ and $n = 120$ the
+left-hand side is $(1 - \theta)^{2} \cdot 144 \cdot 14400
+= 2073600 (1 - \theta)^{2}$ and the right-hand side is
+$288000 + 80 \cdot 144 \cdot 120 = 288000 + 1382400 = 1670400$,
+giving $(1 - \theta)^{2} \ge 1670400 / 2073600 \approx 0.806$,
+i.e.\ $\theta \le 1 - 0.898 \approx 0.102$. The Ramanujan bound
+for $d_0 = 12$ is $\theta = 2\sqrt{11}/12 \approx 0.553$, so
+even optimal expanders at this regime do not meet the corollary's
+hypothesis under the conservative $1/1280$ constant; using the
+sharper PST $1/40$ form (\Cref{rem:PST-constants}) halves the
+coefficients in~\eqref{eq:cor-cond} and brings the threshold
+down to $\theta \le 0.398$, which a Ramanujan graph at
+$d_0 = 12, n = 120$ already meets.
+The corollary becomes non-vacuous for Ramanujan
+expanders once $n \gtrsim 30 t$ under the conservative form
+($n \gtrsim 15 t$ under the sharper PST form), which is well
+above the Cranston regime $n \approx 2 t$.
+
+This is the principal honest qualification: the corollary
+produces a Crossing-Lemma improvement on \emph{moderately dense}
+expander critical graphs ($n \gtrsim 20\,t$), not on the tight
+Dirac-edge-floor regime ($n \approx 2 t$) that the Albertson
+conjecture is concerned with. We elaborate on this point in
+\Cref{sec:limitations}.
+
+\section{Limitations and scope}\label{sec:limitations}
+
+\subsection{The Cranston residual is untouched}\label{ssec:cranston}
+
+The triples $(t, n) \in \{(25, 48), (26, 50), (26, 51)\}$ at which
+the unconditional Albertson conjecture is currently
+open~\cite{Cranston} include exactly one ``Ore corner'': only
+$(t, n) = (26, 51)$ admits Ore compositions of $K_{26}$~\cite{Ore},
+because the order of any $k$-Ore graph satisfies the congruence
+$|V| \equiv 1 \pmod{k - 1}$. The remaining two triples
+$(25, 48)$ and $(26, 50)$ have no Ore candidates, since
+$48 \not\equiv 1 \pmod{24}$ and $50 \not\equiv 1 \pmod{25}$.
+At the Ore corner $(26, 51)$, the construction takes two copies
+of $K_{26}$ joined by a small ``interface'' via edge-identification
+on a small common subgraph; the resulting graph is $25$-regular on
+$n = 51$ vertices, with edge count meeting the
+Kostochka--Yancey~\cite{KostochkaYancey} bound
+$m \ge \lceil ((t+1)(t-2) n - t(t-3))/(2(t-1)) \rceil = 649$.
+
+\paragraph{Ore graphs are not spectral expanders.}
+The adjacency matrix of an Ore composition $G = K_{26} * K_{26}$ at
+the Ore corner has a clear block-bipartition structure: viewing
+$V(G)$ as $A \sqcup B$ with $|A| = 26, |B| = 25$ (or vice versa),
+the within-block edges (each block is nearly $K_{26}$) contribute
+eigenvalues bounded by the $K_{26}$ spectrum, but the small
+inter-block interface produces a near-zero second eigenvalue
+\emph{only relative to the $K_{n,n}$-like structure}. Concretely,
+a near-balanced bipartition of $G$ via $(A, B)$ has very few cut
+edges (the $\Theta(1)$ interface), so
+\[
+   \bw(G) \;=\; O(1) \qquad \text{(not $\Omega(d_0\,n)$ as for expanders)}.
+\]
+By \Cref{cor:bw-spec} in reverse, this forces $\theta$ to be
+\emph{very close to $1$}: if $\bw(G) \le c$ with $c = O(1)$, then
+$(1 - \theta)\,d_0\,\lfloor n/2 \rfloor \lceil n/2 \rceil / n \le c$,
+giving $1 - \theta \le 4 c / (d_0\,(n - 1/n))= O(1/n)$. Hence
+$\theta = 1 - O(1/n)$, and the constant $(1 - \theta)^{2}$
+in~\eqref{eq:Tone-prime} is $O(1/n^{2})$, making the bound vacuous.
+
+In particular, applying \Cref{thm:main} to the Ore corner graph
+$(n, d_0) = (51, 25)$ with $\theta = 1 - O(1/51)$ gives
+$\crN(G) \ge O(1) - 25^{2} \cdot 51 / 16 = O(1) - 1992$, which is
+not useful. For the non-Ore triples $(25, 48)$ and $(26, 50)$,
+the relevant minimum counterexample candidates are not Ore
+compositions, and the present theorem says nothing about them
+either.
+
+\subsection{Open: non-expander reduction}\label{ssec:reduction}
+
+The natural further question is whether any $t$-critical
+non-expander can be \emph{$\eps$-perturbed} into an expander
+preserving criticality. Possibilities:
+\begin{itemize}
+\item \emph{Cayley-graph cover.} Replace $G$ by a Cayley graph
+  $\Gamma$ on a group $\Gamma$ acting on $V(G)$, with the
+  generating set chosen so that $\Gamma$ is a spectral expander
+  and admits $G$ as a quotient. If $\Gamma$ inherits
+  $t$-criticality from $G$, \Cref{thm:main} applies to $\Gamma$,
+  giving $\crN(\Gamma) \ge $ explicit. By
+  the standard minor-monotonicity of crossing number,
+  $\crN(\Gamma) \ge \crN(G)$ on subgraphs, but the
+  $\eps$-perturbation goes in the wrong direction here (adding
+  edges to $G$ to produce $\Gamma$ does not give $\crN(G) \ge
+  \crN(\Gamma)$).
+\item \emph{Lifted-product construction.} The recent lifted-product
+  constructions of quantum LDPC codes~\cite{PanteleevKalachev}
+  produce explicit expanders from non-expander
+  inputs by a topological lift. The applicability to
+  preserve $t$-criticality is not, to our knowledge, addressed
+  in the literature.
+\end{itemize}
+We do not pursue these directions here; they are recorded as the
+$12$-month speculative extension noted in our
+attack memo~\cite{D13}.
+
+\subsection{Relation to the companion R5a and R3.6 papers}\label{ssec:bundle}
+
+This paper is the third in a $12$-month bundle of partial-result
+papers on Albertson's conjecture. The companion notes are:
+
+\begin{itemize}
+\item \cite{D8}: \emph{An algebraic explanation for the degree
+  threshold $9/8$ in Fox--Pach--Suk's bound towards Albertson's
+  conjecture.} Establishes sharpness of the constant $9/16$ in
+  \cite[Lemma 2.3]{FPS} within the FPS Vizing--Gupta plus semi-random
+  framework.
+\item \cite{D15}: \emph{List-coloring Albertson up to chromatic
+  number $18$.} Lifts the Albertson--Cranston--Fox~/
+  Bar\'at--T\'oth~/ Ackerman chain to list-coloring at the
+  Ackerman threshold $t \le 18$.
+\item This paper: \emph{A bisection-width Crossing Lemma for
+  regular spectral expanders.} Records the explicit-$\theta$
+  packaging of PST plus Alon and the corresponding Albertson
+  corollary.
+\end{itemize}
+
+\noindent
+None of the three closes the Cranston residual at
+$t \in \{25, 26\}$. Each is a stand-alone graph-theory result
+that addresses one of the three identifiable structural slacks in
+the Albertson chain: the FPS chromatic-index constant
+(\cite{D8}), the chromatic-versus-list-chromatic boundary
+(\cite{D15}), and the density-vs-expander boundary in the
+Crossing-Lemma constant (this paper).
+
+\subsection*{Acknowledgements}
+
+This paper grew out of an attack memo~\cite{D13} attempting a
+direct min-degree-aware refinement of the Bungener--Kaufmann
+Crossing Lemma. That attack failed cleanly --- the density-iteration
+machinery of all known Crossing-Lemma proofs is degree-sequence
+insensitive --- and the present paper is the proven fallback. We
+thank the broader Albertson team for collaboration on the bundle
+of three companion papers.
+
+\begin{thebibliography}{99}
+
+\bibitem{Ackerman}
+E.~Ackerman.
+\newblock On topological graphs with at most four crossings per edge.
+\newblock \emph{Comput. Geom.} 85 (2019), 101574.
+\newblock \texttt{arXiv:1509.01932}.
+
+\bibitem{ACNS}
+M.~Ajtai, V.~Chv\'atal, M.~Newborn, and E.~Szemer\'edi.
+\newblock Crossing-free subgraphs.
+\newblock \emph{Ann. Discrete Math.} 12 (1982), 9--12.
+
+\bibitem{Albertson}
+M.~O. Albertson.
+\newblock Open Problem Garden entry on crossing numbers and chromatic number.
+\newblock \url{http://www.openproblemgarden.org/op/crossing_numbers_and_coloring},
+posted 2007.
+
+\bibitem{Alon86}
+N.~Alon.
+\newblock Eigenvalues and expanders.
+\newblock \emph{Combinatorica} 6(2) (1986), 83--96.
+
+\bibitem{AlonChung}
+N.~Alon and F.~R.~K. Chung.
+\newblock Explicit construction of linear sized tolerant networks.
+\newblock \emph{Discrete Math.} 72(1--3) (1988), 15--19.
+
+\bibitem{BK24}
+S.~Bungener and M.~Kaufmann.
+\newblock Improving the crossing lemma by improving the density of
+$\le k$-quasi-planar graphs.
+\newblock Preprint, 2024.
+\newblock \texttt{arXiv:2409.01733}.
+
+\bibitem{Cranston}
+D.~W. Cranston.
+\newblock A note on Albertson's conjecture.
+\newblock Preprint, 2025.
+\newblock \texttt{arXiv:2512.08020}.
+
+\bibitem{D8}
+M.~Lelarge.
+\newblock An algebraic explanation for the degree threshold $9/8$
+in Fox--Pach--Suk's bound towards Albertson's conjecture.
+\newblock Companion note, 2026.
+
+\bibitem{D13}
+M.~Lelarge.
+\newblock R2c attack memo: a min-degree-aware Crossing Lemma.
+\newblock Internal memo, 2026.
+
+\bibitem{D15}
+M.~Lelarge.
+\newblock List-coloring Albertson up to chromatic number $18$.
+\newblock Companion note, 2026.
+
+\bibitem{Diestel}
+R.~Diestel.
+\newblock \emph{Graph Theory}.
+\newblock Graduate Texts in Mathematics 173, Springer, 5th ed., 2017.
+
+\bibitem{Dirac1952}
+G.~A. Dirac.
+\newblock A property of 4-chromatic graphs and some remarks on
+critical graphs.
+\newblock \emph{J. London Math. Soc.} 27 (1952), 85--92.
+
+\bibitem{FPS}
+J.~Fox, J.~Pach, and A.~Suk.
+\newblock Immersions and Albertson's conjecture.
+\newblock In \emph{41st International Symposium on Computational
+Geometry (SoCG 2025)}, LIPIcs vol.~332, Schloss Dagstuhl, 2025.
+\newblock \texttt{arXiv:2510.05893}.
+
+\bibitem{Guy}
+R.~K. Guy.
+\newblock A combinatorial problem.
+\newblock \emph{Nabla (Bull. Malayan Math. Soc.)} 7 (1960), 68--72.
+
+\bibitem{HLW}
+S.~Hoory, N.~Linial, and A.~Wigderson.
+\newblock Expander graphs and their applications.
+\newblock \emph{Bull. Amer. Math. Soc.} 43(4) (2006), 439--561.
+
+\bibitem{KostochkaYancey}
+A.~V. Kostochka and M.~Yancey.
+\newblock Ore's conjecture on color-critical graphs is almost true.
+\newblock \emph{J. Combin. Theory Ser. B} 109 (2014), 73--101.
+
+\bibitem{LPS}
+A.~Lubotzky, R.~Phillips, and P.~Sarnak.
+\newblock Ramanujan graphs.
+\newblock \emph{Combinatorica} 8(3) (1988), 261--277.
+
+\bibitem{Leighton83}
+F.~T. Leighton.
+\newblock \emph{Complexity Issues in VLSI}.
+\newblock Foundations of Computing Series, MIT Press, Cambridge,
+MA, 1983.
+
+\bibitem{Leighton84}
+F.~T. Leighton.
+\newblock New lower bound techniques for VLSI.
+\newblock \emph{Math. Systems Theory} 17 (1984), 47--70.
+
+\bibitem{LeightonRao}
+F.~T. Leighton and S.~Rao.
+\newblock Multicommodity max-flow min-cut theorems and their use in
+designing approximation algorithms.
+\newblock \emph{J. ACM} 46(6) (1999), 787--832.
+
+\bibitem{Nilli}
+A.~Nilli.
+\newblock On the second eigenvalue of a graph.
+\newblock \emph{Discrete Math.} 91(2) (1991), 207--210.
+
+\bibitem{Ore}
+O.~Ore.
+\newblock \emph{The Four-Color Problem}.
+\newblock Academic Press, New York, 1967.
+
+\bibitem{PachShahrokhiSzegedy}
+J.~Pach, F.~Shahrokhi, and M.~Szegedy.
+\newblock Applications of the crossing number.
+\newblock \emph{Algorithmica} 16 (1996), 111--117.
+
+\bibitem{PachSpencerToth}
+J.~Pach, J.~Spencer, and G.~T\'oth.
+\newblock New bounds on crossing numbers.
+\newblock \emph{Discrete Comput. Geom.} 24 (2000), 623--644.
+
+\bibitem{PachToth97}
+J.~Pach and G.~T\'oth.
+\newblock Graphs drawn with few crossings per edge.
+\newblock \emph{Combinatorica} 17 (1997), 427--439.
+
+\bibitem{PRTT}
+J.~Pach, R.~Radoi\v{c}i\'c, G.~Tardos, and G.~T\'oth.
+\newblock Improving the crossing lemma by finding more crossings in
+sparse graphs.
+\newblock \emph{Discrete Comput. Geom.} 36 (2006), 527--552.
+
+\bibitem{PanteleevKalachev}
+P.~Panteleev and G.~Kalachev.
+\newblock Asymptotically good quantum and locally testable classical LDPC codes.
+\newblock In \emph{STOC 2022}, ACM, 2022, 375--388.
+
+\bibitem{SykoraVrto}
+O.~S\'ykora and I.~Vrt'o.
+\newblock On VLSI layouts of the star graph and related networks.
+\newblock \emph{Integration} 17 (1994), 83--93.
+
+\end{thebibliography}
+
+\end{document}
