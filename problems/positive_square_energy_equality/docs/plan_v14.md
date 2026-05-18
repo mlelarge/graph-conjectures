@@ -79,7 +79,7 @@ Source: arXiv:2506.07264, *Refinement of a conjecture on positive square energy 
   proved subfamilies, the corrected Case B slot decomposition, Lemma B1,
   Phase 9 b.minor sufficient condition.
 
-  Test suite: **519/519 passing** (508 after v13 Phase 11; +11 from Phase 12.A).
+  Test suite: **539/539 passing** (508 after v13 Phase 11; +11 from Phase 12.A; further additions through draft polish).
 
 - **v13**: Phase 10 (Stieltjes-transform half-line spectral theorem) +
   Phase 11 (Portmanteau closure); (a.2-path) upgraded to fully proved
@@ -87,7 +87,7 @@ Source: arXiv:2506.07264, *Refinement of a conjecture on positive square energy 
 - **v12**: Phase 8 (Lemma B1) + Phase 9 (a.2-path candidate, b.minor sign
   correction); F11, F12 added; sign error in Phase 8 §3.2 retracted.
 - **v11**: Phase 7 candidate ansatz; not yet a conjecture; F10 added.
-- **v10**: retired Conjecture 7.1; 5c closed for $n \le 2000$ via DK;
+- **v10**: retired Conjecture 7.1; 5c closed for $n \le 1000$ via DK;
   F7, F8, F9.
 - **v9**: $\|w\|^2 = 2$ bug fix; F5, F6.
 - **v8**: Phase 4 — books, 2-paths-asymptotic, BT proved.
@@ -135,7 +135,7 @@ Carried from v12.
 ### Phase 4–11 progress (carried)
 
 - Books $B_k$, 2-paths Szegő asymptotic, BT bad ear (Phase 4).
-- 5c rigorous closure for $n \le 2000$ (Phase 6).
+- 5c rigorous closure for $n \le 1000$ (Phase 6).
 - Phase 7 candidate ansatz $I = W^- + (M_1^-)^2/M_2^-$ at $T = 0.4122$.
 - Phase 8 Lemma B1 + sub-route closures for (a) on books, BT-page.
 - Phase 9 (a.2-path) candidate closed form + (b.minor) sign correction
@@ -233,8 +233,8 @@ Condition (b):
 | 4 | Short note on 1–3 | Exposition | 1–2 weeks | drafts merged |
 | 5a | (L') on books $B_k$ | Closed form | done | **proved** |
 | 5b | (L') on 2-paths Szegő ($\delta^-$) | Symbol $f = 2\cos\theta + 2\cos 2\theta$ | done | **proved** |
-| 5c | $\delta^-(L_n) \ge 17/16$, $n \le 2000$ | DK + mpmath | done | **rigorous** |
-| 5c.tail | $\delta^-(L_n)$ for $n > 2000$ | Non-simple-loop BBG (O5c.3) | research | open |
+| 5c | $\delta^-(L_n) \ge 17/16$, $n \le 1000$ | DK + mpmath | done | **rigorous** |
+| 5c.tail | $\delta^-(L_n)$ for $n > 1000$ | Non-simple-loop BBG (O5c.3) | research | open |
 | 5d | BT$(k, 2)$ bad-ear | Cubic resolvents | done | **proved** |
 | 5e | Headline: max-degsum selector | Candidate ansatz (a) + (b) | open | headline open |
 | 5e.a.books | $I(v^*) \ge T$ on $B_k$ | Cauchy–Schwarz saturation | done | **proved** |
@@ -335,7 +335,7 @@ condition (b).
   here.** Wait for external feedback / a breakthrough from another area
   (Toda flow / Jacobi-matrix perturbation theory / a Cauchy-style integral
   identification).
-- 5c.tail ($n > 2000$ via non-simple-loop BBG) is mechanical extension;
+- 5c.tail ($n > 1000$ via non-simple-loop BBG) is mechanical extension;
   not critical-path.
 - Fallback routes (residue-control beyond Thm 8.1, block graphs, chordal
   beyond treewidth 2) remain dormant.
@@ -357,7 +357,7 @@ will cite this when Conj 9.2 finally falls).
 4. **BT$(k, 2)$ bad-ear asymptotic**: $\delta^-_\infty(\mathrm{BT}) \approx 1.0353 < 17/16$,
    the structural family that refuted the universal ear lemma.
 5. **Demmel–Kahan rigorous certificate** for $\delta^-(L_n) \ge 17/16 + 1/4$,
-   all $n \in [4, 2000]$.
+   all $n \in [4, 1000]$.
 6. **The (L') framework** — the existential ear-selection lemma as the
    right reformulation after the universal-form falsification.
 7. **The candidate ansatz** $I = W^- + (M_1^-)^2/M_2^-$ at $T = 0.4122$,
@@ -408,7 +408,7 @@ Bogoya–Böttcher–Grudsky 2018, Demmel, Wilkinson, Avram–Parter 1988, Simon
 - **(O5e.2)** Fan rigorous closure at $n > 200$. **Status: deferred to 5c-tail**.
 - **(O5e.3)** Joint-invariant ansatz: (a) on books, BT-page, 2-paths
   closed; **(a) on general 2-trees** = 5e.a.general open (Track 2 of v14).
-- **(O5c.3)** Non-simple-loop BBG analogue for $n > 2000$. **Mechanical;**
+- **(O5c.3)** Non-simple-loop BBG analogue for $n > 1000$. **Mechanical;**
   defer until the paper is on arXiv.
 - **(O12.2)** **Slot-shift sum bound** — **THE wall**. Do not attack; wait
   for external breakthrough or community feedback after paper.
@@ -446,7 +446,7 @@ The permanent regression fixtures are kept:
 
 ## Summary of v14 state
 
-- **5c (2-paths $\delta^-$)**: rigorous $n \in [4, 2000]$; tail $n > 2000$
+- **5c (2-paths $\delta^-$)**: rigorous $n \in [4, 1000]$; tail $n > 1000$
   open (O5c.3, mechanical).
 - **5e headline (max-degsum selector)**: open.
 - **5e.a (condition (a))**: proved on books, BT-page, **2-paths
@@ -455,7 +455,7 @@ The permanent regression fixtures are kept:
   bound (O12.2) is the wall** (6 person-months to 2 years).
 - **Phase 12 negative results recorded**: trace-identity reformulation
   doesn't decouple the wall (F14); Thm 8.1 weakening dormant (F15).
-- **Test suite**: 519/519 passing.
+- **Test suite**: 539/539 passing.
 - **Workstream pivot**: research-attack mode → **paper-writing mode**.
   Target: arXiv draft 4–8 weeks; journal submission after feedback.
   Track 2 (5e.a.general) is optional parallel research.

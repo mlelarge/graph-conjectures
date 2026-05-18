@@ -3841,6 +3841,18 @@ matches `team/04_*` line 133 verbatim. The alternative $C' = 6$ is
 correctly omitted from the headline statement; it is discussed in
 `team/04_*` line 21 only. **OK.**
 
+> **Audit-stale note (2026-05-18).** The "OK" verdict above is
+> retracted by `CORRECTNESS_REVIEW_2026_05_18.md` §2.5. The verbatim
+> match between `team/04_*` and `paper/draft_v1.md` was correctly
+> detected, but the arithmetic claim "$\lambda \ge 5\log_2 n$ implies
+> both (6) and (11) for $n \ge 4$" inside the proof is false: the
+> binding inequality $5\log_2 n > 4\log_2 n + 3$ requires $\log_2 n >
+> 3$, i.e. $n \ge 9$. Both source files have since been updated to use
+> $C = 6$, $n_0 = 3$ (post-2026-05-18), under which the same proof
+> goes through uniformly. The §A.14.3 verification was framing-and-
+> citation discipline, not load-bearing arithmetic, which is the
+> procedural lesson recorded in the correctness review.
+
 **(N2) 11 869 empirical instances.** Draft §6.5 line 1063–1068 and
 §7 line 1148–1155:
 
@@ -3936,9 +3948,12 @@ team/26-corrected direction, **not** the earlier swapped version
 which had $|R_p^+| \ge 3, |R_q^+| \ge 2$ (the version the Specialist
 briefly used before the team/26 patch). **OK.**
 
-**§A.14.3 verdict: CLEAN.** All five numerical claims (N1–N5) match
-the audit-verified team-file aggregates verbatim. No stale counts; no
-swapped directional bookkeeping.
+**§A.14.3 verdict: CLEAN** as of the audit date, **partially retracted
+2026-05-18** for N1 (EC-log constants): the verbatim-match check
+between `team/04_*` and `paper/draft_v1.md` was valid, but the
+arithmetic inside the proof under those constants is not — see the
+audit-stale note attached to N1 above and `CORRECTNESS_REVIEW_2026_05_18.md`
+§2.5. The other four numerical claims (N2–N5) stand.
 
 ### §A.14.4 — Cross-reference consistency
 
@@ -3949,7 +3964,7 @@ spot-check follows for each.
 
 | Team file | Draft claim about its contents | Actual contents (spot-check) | Verdict |
 |---|---|---|---|
-| `team/04_ec_log_proof.md` | EC-log proof with $C = 5$, $n_0 = 2$ | Line 17 verbatim: "$C = 5$ and $n_0 = 2$"; full proof at lines 24–110 | **OK** |
+| `team/04_ec_log_proof.md` | EC-log proof with $C = 5$, $n_0 = 2$ | Line 17 verbatim: "$C = 5$ and $n_0 = 2$"; full proof at lines 24–110 | **OK at audit date; AUDIT-STALE 2026-05-18** — both `team/04_*` and `paper/draft_v1.md` now use $C = 6$, $n_0 = 3$ per `CORRECTNESS_REVIEW_2026_05_18.md` §2.5 |
 | `team/11_cl1_proof_v1.md` | CL1 (Theorem 2 of the draft, bilateral lifting) | Audit A.5.1 line 891–906 reproduces the lemma verbatim from team/11 §5.1 | **OK** |
 | `team/21_near_split_contraction_proof.md` | Chord contraction preserves 3-arc-strongness (Lemma 5.1 of draft) | Not spot-checked in detail this pass; the claim "$\lambda^{\mathrm{arc}}(D) \ge 3 \Rightarrow \lambda^{\mathrm{arc}}(D^\bullet) \ge 3$" is a one-paragraph fact also reproduced in `team/26_*` §3.1 and is standard | **OK** |
 | `team/26_side_compatible_sad_proof.md` | Labelled-arc attachment proof of R3⋆-KS, with $i = 2$ as the $q$-reaching color (Theorem 4 of draft) | Lines 213–215: "we choose the labelling so that color **2** is the '$q$-reaching' color … Thus $i = 2$ below." Lemma 5.2 (lines 152) and the attachment construction (lines 246–329) match the draft's §5.2 line-by-line | **OK** |
@@ -4119,7 +4134,7 @@ The draft is clean on every audit-verified dimension:
    Conjecture L is correctly disclosed in every load-bearing location
    (abstract, theorem statement, proof, discussion, conclusion).
    Theorem 4 is correctly identified as the unconditional sub-case.
-3. **Numerical claims (§A.14.3).** $C = 5$ matches `team/04_*`;
+3. **Numerical claims (§A.14.3).** $C = 5$ matches `team/04_*` (audit-stale 2026-05-18: both files corrected to $C = 6$, $n_0 = 3$ per `CORRECTNESS_REVIEW_2026_05_18.md` §2.5);
    $11\,869 = 7\,374 + 4\,495$ matches `team/20_*` + `team/28_*`; the
    **6** NEW canonical exceptions match the post-task-#36 final count
    in `team/25_*`; the four BJG–Yeo 2020 compositions match A.1

@@ -3,8 +3,8 @@
 Implements the Phase 2a deliverable from
 ``PEBBLING_CARTESIAN_PRODUCT_COUNTEREXAMPLE_PLAN.md``. The checker verifies
 an upper bound ``pi(G, r) <= N`` from a *certificate* consisting of one or
-more *strategies* (Hurlbert 2017, "The weight function lemma for graph
-pebbling") together with non-negative *dual multipliers*. Every arithmetic
+more *strategies* (Hurlbert, "A Linear Optimization Technique for Graph
+Pebbling", arXiv:1101.5641) together with non-negative *dual multipliers*. Every arithmetic
 step uses ``fractions.Fraction``; no floating point is used in any
 acceptance decision.
 

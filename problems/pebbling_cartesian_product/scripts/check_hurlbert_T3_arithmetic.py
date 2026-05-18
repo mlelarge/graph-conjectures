@@ -5,9 +5,8 @@ reproduction of the published bound
 
     pi(L box L, (v_1, v_1)) <= 108
 
-from G. Hurlbert, *The weight function lemma for graph pebbling*, Journal
-of Combinatorial Optimization 34(2) (2017), 343-361 (arXiv:1101.5641),
-Theorem 10. The paper's matrix T_3 is **the average of four basic tree
+from G. Hurlbert, *A Linear Optimization Technique for Graph Pebbling*,
+arXiv:1101.5641 (2011), Theorem 10. The paper's matrix T_3 is **the average of four basic tree
 strategies T_1..T_4 shown in Figure 5**. The figures are not transcribed
 in this project, so the four supporting trees are not available here.
 

@@ -1,55 +1,207 @@
 \section{Preliminaries}
 \label{sec:preliminaries}
 
-\TODO{Compact definitions and standard lemmas, drawn from
-\path{docs/preprint_outline.md} Section~2.}
+This section fixes notation, recalls the definitions used throughout,
+and isolates one linear-algebra fact that makes the certified system in
+\cref{sec:certification} square.
 
 \subsection{Cubic graphs and $\Sphere$-flows}
 \label{sec:prelim-flows}
 
-\TODO{Formal definitions of cubic, bridgeless, $A$-flow, nowhere-zero
-$k$-flow, $\Sphere$-flow. Sign convention at each vertex.}
+All graphs are finite, simple, and unoriented. A graph $G$ is
+\emph{cubic} if every vertex has degree $3$, and \emph{bridgeless} if
+removing any single edge leaves $G$ connected. For each edge
+$e = \{u,v\}$ we fix one orientation once and for all; the sign
+$\sigma(v,e) \in \{\pm 1\}$ records whether $v$ is the tail
+($\sigma = +1$) or the head ($\sigma = -1$) of the oriented edge. The
+codebase fixes the orientation deterministically by the canonical edge
+order: for $e = \{u,v\}$ with $u < v$ in the integer labelling,
+$\sigma(u, e) = +1$ and $\sigma(v, e) = -1$
+(\path{scripts/witness.py:orient}).
+
+For an abelian group $A$, an \emph{$A$-flow} on $G$ is a map
+$\varphi : E(G) \to A$ satisfying Kirchhoff's law
+$\sum_{e \ni v} \sigma(v,e)\,\varphi(e) = 0$ at every vertex
+$v \in V(G)$. A flow is \emph{nowhere-zero} if $\varphi(e) \ne 0$ for
+every $e$. Replacing $A$ with the sphere
+$\Sphere \subset \R^{3}$ (taking values in a set rather than a group;
+the Kirchhoff sum is interpreted in $\R^{3}$) gives the central object
+of this paper:
 
 \begin{definition}[$\Sphere$-flow]
 \label{def:s2-flow}
-\TODO{Formal definition matching \cref{eq:kirchhoff} from
-\cref{sec:intro-problem}.}
+An \emph{$\Sphere$-flow} on $G$ is a map $\varphi : E(G) \to \Sphere$
+such that
+\[
+   \sum_{e \ni v} \sigma(v,e)\,\varphi(e) \;=\; 0
+   \qquad \text{for every } v \in V(G),
+\]
+where the sum is taken in $\R^{3}$. Equivalently (cf.\
+\cref{eq:kirchhoff}), $\varphi$ assigns a unit vector in $\R^{3}$ to
+each oriented edge so that Kirchhoff's law holds at every vertex.
+The nowhere-zero condition is automatic since unit vectors are nonzero.
 \end{definition}
 
 \begin{lemma}[120-degree triple, after~{\cite[Observation~9]{HMM26}}]
 \label{lem:120-degree}
-\TODO{For unit vectors $v_1, v_2, v_3 \in \R^3$, $\sum_i v_i = 0$ iff
-$\{0, v_1, v_2, v_3\}$ is coplanar and every pair of $v_i$'s makes
-angle $2\pi/3$.}
+For unit vectors $v_1, v_2, v_3 \in \R^{3}$,
+$v_1 + v_2 + v_3 = 0$ if and only if the four-point set
+$\{0, v_1, v_2, v_3\}$ is coplanar and every pair of the $v_i$ makes
+angle $2\pi/3$.
 \end{lemma}
+
+\begin{proof}
+($\Leftarrow$) If the three unit vectors are coplanar and pairwise at
+angle $2\pi/3$, then in the common plane they form the three cube
+roots of unity (up to a rotation), whose sum is zero.
+($\Rightarrow$) From $v_1 + v_2 + v_3 = 0$, squaring gives
+$3 + 2(v_1{\cdot}v_2 + v_1{\cdot}v_3 + v_2{\cdot}v_3) = 0$, so the
+three pairwise inner products sum to $-3/2$. Each is at most $1$ in
+absolute value, so each must equal $-1/2$, i.e.\ each pair makes
+angle $2\pi/3$. Coplanarity follows from $v_3 = -v_1 - v_2$.
+\end{proof}
+
+In particular, for a cubic graph the Kirchhoff equation at every
+vertex specialises to the constraint that the three incident unit
+vectors lie in a common plane through the origin at pairwise
+$2\pi/3$.
 
 \subsection{Snarks and nontrivial snarks}
 \label{sec:prelim-snarks}
 
-\TODO{Standard definitions of snark and \emph{nontrivial} snark
-(girth $\ge 5$, cyclically $\ge 4$-edge-connected, $\chi' = 4$).
-Cite~\cite{BGHM13} for the catalogue.}
+The \emph{cyclic edge-connectivity} $\lambda_c(G)$ of a cubic graph
+$G$ with at least two disjoint cycles is the minimum size of an edge
+cut both of whose sides contain a cycle. A \emph{snark} is a simple
+connected cubic bridgeless graph with chromatic index $\chi'(G) = 4$
+(equivalently, by Vizing's theorem on cubic graphs, $G$ is not
+$3$-edge-colourable).
+
+\begin{definition}[Nontrivial snark]
+\label{def:nontrivial-snark}
+A snark $G$ is \emph{nontrivial} if it has girth at least $5$ and is
+cyclically $4$-edge-connected ($\lambda_c(G) \ge 4$).
+\end{definition}
+
+This is the convention of Brinkmann, Goedgebeur, H{\"a}gglund, and
+Markstr{\"o}m~\cite{BGHM13}. The catalogue used in \cref{sec:finite-theorem}
+is exactly the enumeration of nontrivial snarks on at most $28$
+vertices from~\cite{BGHM13} (with the $n = 28$ count produced by the
+\texttt{snarkhunter}~\cite{snarkhunter} generator of
+Brinkmann--Goedgebeur--McKay).
 
 \subsection{Cycle double covers and $H_d$-flows}
 \label{sec:prelim-cdc}
 
-\TODO{CDC, oriented CDC, $H_d$-flow. The MMRT theorem at $d = 4$.
-Reference~\cite{MMRT25}.}
+A \emph{cycle double cover (CDC)} of a graph $G$ is a multiset of
+cycles such that every edge is contained in exactly two of them.
+An \emph{orientation} of a CDC assigns a direction to each cycle so
+that every edge is traversed once in each direction by the two cycles
+through it. For an integer $d \ge 2$, an \emph{$H_d$-flow} on a cubic
+graph (in the sense of Mattiolo, Mazzuoccolo, Rajnik, and
+Tabarelli~\cite{MMRT25}) is an assignment of edge vectors taken from
+the boundary group of the $(d-1)$-cube. For $d = 4$,
+\cite{MMRT25}~Theorem~4 states that on cubic graphs an oriented
+$4$-CDC is equivalent to an $H_4$-flow, which restricted to coordinates
+modulo $2$ gives a nowhere-zero $\Z_2^{2}$-flow, hence a nowhere-zero
+$4$-flow. We use this only as a sharp negative calibration in
+\cref{sec:cdc-obstruction}: a snark, having $\chi'(G) = 4$, admits no
+nowhere-zero $4$-flow and therefore no oriented $4$-CDC.
+
+\TODO{Calibration note: the description above paraphrases MMRT25
+Theorem 4. The exact statement and proof structure are not yet
+transcribed from the source paper; see \path{docs/literature_notes.md}
+and \path{docs/cdc_negative_calibration.md} for the project's own
+notes.}
 
 \subsection{The pinning gauge}
 \label{sec:prelim-gauge}
 
-\TODO{The $\SO(3)$ symmetry. Fixing it by pinning vertex 0's three
-spokes to the canonical 120-degree triple in the $xy$-plane.
-Drop-redundant-vertex to reach a square polynomial system; the rank
-of the linear redundancy of the Kirchhoff equations on a connected
-cubic graph is exactly~$3$.}
+The $\Sphere$-flow equations are equivariant under the diagonal
+action of $\SO(3)$: if $\varphi$ is an $\Sphere$-flow then so is
+$R \circ \varphi$ for any $R \in \SO(3)$. To obtain a system with
+finitely many real solutions (and hence to apply the Krawczyk
+operator), we fix this $3$-parameter symmetry by \emph{pinning} the
+three spokes at vertex $0$ to the canonical $120$-degree triple in the
+$xy$-plane,
+\[
+   \varphi(e_1) \;=\; (1, 0, 0), \qquad
+   \varphi(e_2) \;=\; (-\tfrac{1}{2},\, \tfrac{s}{2},\, 0), \qquad
+   \varphi(e_3) \;=\; (-\tfrac{1}{2},\, -\tfrac{s}{2},\, 0),
+\]
+where $e_1, e_2, e_3$ are the three edges incident to vertex $0$ in
+canonical order and the formal symbol $s$ is constrained by the
+auxiliary relation $s^{2} - 3 = 0$ so that $s$ represents $\sqrt{3}$
+exactly throughout the rational computation. See
+\path{scripts/exact.py:build_ideal} for the implementation.
+
+The pinning has two simultaneous consequences. First, it eliminates
+nine of the original $3|E|$ scalar variables (the three
+coordinates of each of the three pinned edges). Second, the Kirchhoff
+equation at vertex $0$ is now satisfied identically (the canonical
+triple sums to zero), so it carries no further constraint.
+
+The remaining gauge freedom is removed by dropping the Kirchhoff
+equation at one further \emph{redundant} vertex (the implementation
+drops the last vertex in canonical order). This is justified by
+\cref{lem:square-system} below.
 
 \begin{lemma}[Square pinned system]
 \label{lem:square-system}
-\TODO{On a connected cubic graph with $|E|$ edges and $|V|$ vertices,
-the vertex Kirchhoff equations carry exactly $3$ linear dependencies.
-After pinning vertex~$0$ and dropping one redundant Kirchhoff
-equation, the remaining polynomial system has $|E| - 3$ unknowns and
-$|E| - 3$ equations, in degree at most~$2$.}
+Let $G$ be a connected cubic graph with $|V|$ vertices and $|E| = 3|V|/2$
+edges, and fix the orientation convention above. Then:
+\begin{enumerate}[label=(\roman*)]
+  \item The $|V|$ vector-valued vertex Kirchhoff equations carry
+        exactly $3$ linear dependencies: the coordinate-wise sum of
+        all Kirchhoff equations vanishes identically (one dependency
+        per coordinate axis of $\R^{3}$).
+  \item After pinning vertex $0$ as in the canonical triple above
+        and dropping the (vector) Kirchhoff equation at one further
+        vertex, the resulting polynomial system together with the
+        $|E|-3$ unit-norm equations $\lVert \varphi(e) \rVert^{2} - 1$
+        on the unpinned edges and the auxiliary relation $s^{2} - 3$
+        has exactly $|E| - 3 + 1$ polynomials (counting $s^{2} - 3$)
+        in the same number of free variables.
+\end{enumerate}
+The resulting system is \emph{square} in this sense, has total degree
+at most $2$, and is the system fed to the Krawczyk operator in
+\cref{sec:certification-krawczyk}.
 \end{lemma}
+
+\begin{proof}
+(i) The orientation convention assigns each edge $e = \{u, v\}$ a
+sign $\sigma(u, e) = +1$ at one endpoint and $\sigma(v, e) = -1$ at
+the other, so $\sigma(u, e) + \sigma(v, e) = 0$ for every edge. For
+any fixed coordinate $j \in \{1, 2, 3\}$ of $\R^{3}$, the sum
+$\sum_{v \in V} \big( \sum_{e \ni v} \sigma(v, e)\,\varphi(e) \big)_j$
+counts each edge exactly twice with opposite signs and therefore
+vanishes identically as a polynomial in the edge variables. This
+gives three independent linear dependencies among the $|V|$ vector
+Kirchhoff equations, one per coordinate. No further dependency exists
+on a connected cubic graph: the
+incidence matrix of an oriented connected graph has rank $|V| - 1$
+over the rationals, which combined with the three-coordinate
+structure produces rank $3(|V| - 1) = 3|V| - 3$ in the linearised
+Kirchhoff system.
+
+(ii) Pinning eliminates the three vector variables on the three
+spokes at vertex $0$ ($9$ scalar variables), and the Kirchhoff
+equation at vertex $0$ is then identically satisfied. The remaining
+$|V| - 1$ vector Kirchhoff equations contribute $3(|V| - 1)$ scalar
+equations modulo the $3$ dependencies of part~(i). Two of those
+dependencies cease to be free once vertex $0$ is pinned (the
+canonical triple satisfies them by construction), so exactly one
+linear dependency remains; dropping the Kirchhoff equation at any
+single further vertex kills it. The result is $3(|V| - 1) - 3 =
+3|V| - 6$ Kirchhoff scalar equations plus $|E| - 3$ unit-norm
+equations plus the auxiliary $s^{2} - 3$, for a total of
+$3|V| - 6 + |E| - 3 + 1 = 3|V| + |E| - 8$ polynomials. The free
+variables are the $3(|E| - 3) = 3|E| - 9$ unpinned edge coordinates
+together with $s$, for a total of $3|E| - 8$. Using $|E| = 3|V|/2$
+both counts simplify to $9|V|/2 - 8$, confirming squareness.
+\end{proof}
+
+The bookkeeping in (ii) is the linear-algebra fact that makes the
+square-system construction in \path{scripts/exact.py:build_ideal}
+correct; in particular it is what justifies the call
+\texttt{build\_ideal(G, pin=True, drop\_redundant=True)} used by the
+certifier.

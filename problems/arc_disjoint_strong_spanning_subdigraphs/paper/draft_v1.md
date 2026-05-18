@@ -24,8 +24,9 @@ strongly connected. Bang-Jensen and Yeo conjectured (2004) that every
 $k$-arc-strong digraph has a SAD for some absolute constant $k$;
 $k = 3$ would settle the conjecture, and no infinite family of
 3-arc-strong digraphs without a SAD is known. We prove three results
-in this direction. (i) **EC-log.** Every Eulerian digraph $D$ on $n$
-vertices with arc-strong connectivity at least $5 \log_2 n$ has a SAD.
+in this direction. (i) **EC-log.** Every Eulerian digraph $D$ on $n \ge 3$
+vertices with arc-strong connectivity at least $6 \log_2 n$ has a SAD.
+*(Edit 2026-05-18: constant updated from $5\log_2 n$, $n \ge 2$, to $6\log_2 n$, $n \ge 3$, per the audit `CORRECTNESS_REVIEW_2026_05_18.md` §2.5.)*
 The proof is a first-moment cut-counting argument via an
 Eulerian-to-undirected reduction and Karger's bound. (ii) **CL1, the
 bilateral lifting lemma.** Let $D = (V_1 \mathbin{\dot\cup} V_2, A)$
@@ -92,9 +93,14 @@ SAD, and asked whether $K = 3$ suffices; this is **Conjecture WC3**.
 
 The paper proves three theorems. The first two are unconditional.
 
-**Theorem 1 (EC-log).** *Let $C = 5$ and $n_0 = 2$. Every Eulerian
+**Theorem 1 (EC-log).** *Let $C = 6$ and $n_0 = 3$. Every Eulerian
 digraph $D$ on $n \ge n_0$ vertices with $\lambda^{\mathrm{arc}}(D) \ge
 C \log_2 n$ admits a strong arc decomposition.*
+
+*(Edit 2026-05-18: constants updated from $C = 5$, $n_0 = 2$, per
+`CORRECTNESS_REVIEW_2026_05_18.md` §2.5. The inequality $5\log_2 n >
+4\log_2 n + 3$ needed at the end of the proof requires $n \ge 9$, not
+$n \ge 4$; raising $C$ to $6$ closes the gap uniformly for $n \ge 3$.)*
 
 The proof, given in Section 3, is a first-moment argument: pass to the
 underlying undirected multigraph $G$ — for which Eulerianness gives
@@ -343,7 +349,7 @@ all $s$ of its arcs receive the same color; by independence,
 $$\Pr[\delta_D^+(X) \text{ monochromatic}] = 2 \cdot 2^{-s} = 2^{1 - s}. \tag{4}$$
 The existence of a SAD is equivalent to the existence of a coloring
 with no monochromatic directed cut, and we show the expected number of
-such cuts is below 1 when $\lambda \ge 5 \log_2 n$.
+such cuts is below 1 when $\lambda \ge 6 \log_2 n$.
 
 ### 3.3 Karger band decomposition
 
@@ -370,22 +376,28 @@ for $n \ge 2$, so the geometric series is at most $4/3 < 2$, giving
 $\mathbb{E}[N] \le 8 n^4 \cdot 2^{-\lambda}$. We require
 $\mathbb{E}[N] < 1$, i.e.
 $$\lambda > 4 \log_2 n + 3. \tag{6}$$
-Both (6) and $\lambda \ge 3 \log_2 n + 1$ are implied by $\lambda \ge 5
-\log_2 n$ for $n \ge 4$. (For $n \in \{2, 3\}$ a direct check: under the
-simple-digraph convention of §2, $n = 2$ is vacuous because the only
-2-vertex digraph satisfying $\lambda^{\mathrm{arc}} \ge 5 \log_2 2 = 5$ is
-empty; any simple 2-arc-strong digraph on 3 vertices contains two
-arc-disjoint Hamilton cycles by inspection.)
+Both (6) and $\lambda \ge 3 \log_2 n + 1$ are implied by $\lambda \ge 6
+\log_2 n$ for $n \ge 3$: for the first, $6\log_2 n > 4\log_2 n + 3
+\Leftrightarrow 2\log_2 n > 3 \Leftrightarrow n > 2\sqrt 2$, hence $n
+\ge 3$; for the second, $6\log_2 n \ge 3\log_2 n + 1 \Leftrightarrow
+3\log_2 n \ge 1$, which holds for $n \ge 2$.
+
+*(Edit 2026-05-18: the previous version of this paragraph claimed
+implication by $\lambda \ge 5\log_2 n$ for $n \ge 4$; that claim is
+arithmetically false at $n \in \{3, 4, 5, 6, 8\}$ because $5\log_2 n >
+4\log_2 n + 3 \Leftrightarrow n \ge 9$. The constant is raised to 6 to
+remove the gap. See `CORRECTNESS_REVIEW_2026_05_18.md` §2.5 and
+`team/04_ec_log_proof.md` §2.5 for the full table.)*
 
 ### 3.5 Conclusion
 
-For $\lambda \ge 5 \log_2 n$ and $n \ge 2$, $\mathbb{E}[N] < 1$, so
+For $\lambda \ge 6 \log_2 n$ and $n \ge 3$, $\mathbb{E}[N] < 1$, so
 there exists a 2-coloring with no monochromatic directed cut. By the
 working definition of SAD, this is a strong arc decomposition. This
 completes the proof of Theorem 1. $\square$
 
-**Remark.** The constant $C = 5$ has approximately one to seven units
-of slack in the relevant range; the asymptotic limit of this argument
+**Remark.** The constant $C = 6$ has approximately 3–17 units of slack
+in the $n \in [10, 1000]$ range; the asymptotic limit of this argument
 is $C \to 4^+$, beyond which the geometric series fails. Replacing
 $\log_2 n$ by a constant via the same union bound is impossible, since
 the Karger bound $n^{2\alpha}$ is asymptotically tight on cycles and
@@ -1212,7 +1224,7 @@ We collect open problems, in roughly increasing scope.
    single high-arc-strength theorem.
 
 We restate the main contributions. Theorem 1 settles Bang-Jensen–Yeo
-unconditionally for *Eulerian* digraphs at $\lambda \ge 5 \log_2 n$.
+unconditionally for *Eulerian* digraphs at $\lambda \ge 6 \log_2 n$ (with $n \ge 3$).
 Theorem 2 provides a clean class-agnostic lifting lemma whose
 hypothesis is a small bridge 2-coloring problem and whose conclusion
 is the SAD; this is the natural bilateral version of the

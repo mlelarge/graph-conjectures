@@ -270,9 +270,10 @@ into the saved arc list; or (b) the code path that produced the
 
 3. **Hurlbert 2017 Theorem 10 arithmetic reproduction** (the precursor
    step). The 8×8 averaged matrix $T_{\rm avg}$ from *G. Hurlbert,
-   The weight function lemma for graph pebbling*, J. Combinatorial
-   Optimization 34(2) (2017), 343–361 (arXiv:1101.5641, **not** the
-   math/0406024 survey), Theorem 10, was transcribed into
+   A Linear Optimization Technique for Graph Pebbling*
+   (arXiv:1101.5641, **not** the math/0406024 survey; journal version:
+   J. Combinatorial Optimization 34(2) (2017), 343–361),
+   Theorem 10, was transcribed into
    `data/pebbling_product/certificates/Hurlbert_T3_v1v1_arithmetic.json`
    and its arithmetic conditions verified by
    `scripts/check_hurlbert_T3_arithmetic.py` (root $=0$, every other

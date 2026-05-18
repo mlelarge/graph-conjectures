@@ -277,7 +277,7 @@ bookkeeping: combine the asymptotic $I_\infty \approx 1.0157$ with the
 explicit finite-$n$ Demmel–Kahan a-posteriori bounds already extended
 to $W^-$ (see [`lprime_two_paths_finite.md`](lprime_two_paths_finite.md)
 phase 6 / 5c) and to $\delta^-$ (phase 6 / 5c rigorous closure for
-$n \in [4, 2000]$). The mpmath cross-check in `two_path_limit_moments.py`
+$n \in [4, 1000]$). The mpmath cross-check in `two_path_limit_moments.py`
 at $n \in \{50, 200, 500\}$ shows the residuals are small, well-behaved,
 and decay as $n$ grows; no parity oscillation is seen on this grid.
 
@@ -286,7 +286,7 @@ and decay as $n$ grows; no parity oscillation is seen on this grid.
 - **(a) at finite $n$ on 2-paths.** This note is asymptotic plus
   numerical mpmath cross-check at high precision. A rigorous finite-$n$
   certificate would extend the Demmel–Kahan a-posteriori bound from
-  $\delta^-$ (closed in 5c for $n \le 2000$) and $W^-$ to the joint
+  $\delta^-$ (closed in 5c for $n \le 1000$) and $W^-$ to the joint
   functional $I = W^- + (M_1^-)^2/M_2^-$. This is analogous bookkeeping
   but has not been written down here.
 - **(a) on general 2-trees.** 2-paths are one family. Books $B_k$ were

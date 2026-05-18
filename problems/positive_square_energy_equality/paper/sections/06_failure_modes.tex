@@ -138,14 +138,18 @@ The $\dminus(\Ln) \ge 17/16 + 1/4$ certificate of \Cref{thm:2path-DK}
 uses \texttt{numpy.linalg.eigvalsh} with an \emph{a-posteriori}
 Demmel--Kahan forward-error bound \cite[Thm.~5.5]{DemmelANLA}. The
 resulting statement is engineering-rigorous \emph{conditional on} the
-coarse \texttt{dsyevd} envelope $c \le 10^{4}$: under that envelope
-the forward error on each computed eigenvalue is provably bounded by
-$8.88 \cdot 10^{-9}$ at $n \le 1000$ and the propagated $\dminus$
-forward error by $1.42 \cdot 10^{-4}$, far below the slack $0.257$;
-the envelope itself is plausible (over an order of magnitude above any
-published constant for backward-stable symmetric eigensolvers) but not
-formally derived for the exact LAPACK \texttt{dsyevd} pipeline within
-this paper, and the certificate is \emph{not} interval arithmetic. A truly interval-arithmetic certificate (via
+\texttt{dsyevd} envelope $c \le 10$ used in
+\texttt{scripts/mpmath\_certify.py} (the original analysis used the
+deliberately looser working envelope $c \le 10^{4}$, under which the
+certificate is \emph{a fortiori} also valid): under the looser
+$c \le 10^{4}$ envelope the forward error on each computed eigenvalue
+is provably bounded by $8.88 \cdot 10^{-9}$ at $n \le 1000$ and the
+propagated $\dminus$ forward error by $1.42 \cdot 10^{-4}$, far below
+the slack $0.257$; the envelope itself is plausible (over an order
+of magnitude above any published constant for backward-stable
+symmetric eigensolvers) but not formally derived for the exact LAPACK
+\texttt{dsyevd} pipeline within this paper, and the certificate is
+\emph{not} interval arithmetic. A truly interval-arithmetic certificate (via
 \texttt{mpmath} at, say, $50$ decimal digits, or via Krawczyk-style
 verified eigensolver) would be a strictly stronger guarantee. For our
 purposes the a-posteriori bound suffices; the upgrade path is

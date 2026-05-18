@@ -23,7 +23,7 @@ No mathematics is restated below. Lemma content lives in `team/02`,
 
 The team holds: (i) a proved bilateral lifting lemma CL1 (R2 form,
 `team/11`), reduced to two hypotheses, §3-gap closed; (ii) a proved
-EC-log lemma at $C = 5$, $n_0 = 2$ (`team/04`), with documented
+EC-log lemma at $C = 6$, $n_0 = 3$ (`team/04`, post-2026-05-18 correction; the prior headline $C = 5$, $n_0 = 2$ had an arithmetic gap surfaced in `CORRECTNESS_REVIEW_2026_05_18.md` §2.5), with documented
 bounded-defect extension; (iii) ~9 200 verified 3-arc-strong search
 instances across Phase 3 vehicles 1–5 and Phase 4 Vehicle 6, **zero
 UNSAT** and zero ILP/SAT disagreements; (iv) verifier with `pynauty`
@@ -93,7 +93,7 @@ E_k\}$." The class is chosen in §4 below.
 ### Route C — CL1 + EC-log + class application
 
 **Publishable statement.** The bundle: CL1 (R2 form), EC-log at
-$C = 5$ with the bounded-defect extension of `team/04` §4(c), and the
+$C = 6$ (post-2026-05-18 correction; see `CORRECTNESS_REVIEW_2026_05_18.md` §2.5) with the bounded-defect extension of `team/04` §4(c), and the
 Route-B class application — but now the application also handles the
 high-bridge-multiplicity regime probabilistically via EC-log. The
 charter (`team/01` §1.a) reserves Combinatorica for the full WC3

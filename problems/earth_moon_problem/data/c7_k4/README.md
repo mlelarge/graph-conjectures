@@ -66,6 +66,44 @@ construction template beyond cycle clique blowups (Catlin's
 constructions, replacement products), or pivot to Phase 6 (the
 Kostochka–Yancey + $K_9$-free density route to $\chi_{\rm EM} \le 11$).
 
+## Verification caveats
+
+The UNSAT verdict above (and, by extension, the other UNSAT results in
+the cycle-clique-blowup family — `candidate1`, `new_c5_a`, `new_c5_b`,
+`c7_k4`) rests on a **single oracle**:
+
+- SMS v1.0.0 (commit `2d5a22a3...dirty`) with the project-local Patches
+  A and C applied, as audited in
+  [`docs/spike_sms_build.md`](../../docs/spike_sms_build.md).
+
+No independent biplanarity oracle has replayed this UNSAT. The artifacts
+in `20260511T045903Z/` contain `stdout.log`, `meta.txt`, and
+`exit_status`, but **no DRAT proof trace** and **no proof object** that a
+second checker could consume. The convention recorded in
+[`docs/phase4_results.md`](../../docs/phase4_results.md) flags SAT
+results as needing independent verification but is silent on UNSAT; that
+asymmetry is the limitation in scope here.
+
+For paper-grade publication of "$C_7[K_4]$ is non-biplanar" as a
+theorem, at least one of the following independent verification paths
+should be added:
+
+1. Export a DRAT trace from the underlying CDCL solver and replay it
+   with `drat-trim` (the SMS propagator clauses would need to be
+   recorded as RAT/AT additions).
+2. Run a second SAT backend (e.g. a hand-written CEGAR loop using
+   `networkx.check_planarity` on each layer of every attempted
+   partition certificate) against the same encoding.
+3. Hand-write a planarity oracle on the partition certificate space and
+   confirm UNSAT by exhaustion (feasible only at small $n$).
+
+Until one of these is in place, the appropriate citation strength for
+the verdict above is **"single-tool computational evidence"**, not
+"theorem". The manuscript skeleton should mirror this distinction —
+Theorem A's "non-biplanar" clauses should be hedged as
+"computationally established (SMS v1.0.0, single-oracle)" rather than
+labelled as proved.
+
 ## Reproduce
 
 ```bash

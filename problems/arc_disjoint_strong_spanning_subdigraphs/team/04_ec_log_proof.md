@@ -14,11 +14,21 @@ Throughout this note a **digraph** $D = (V, A)$ may have multiple arcs but no lo
 $$\lambda(D) \;:=\; \min_{\emptyset \neq X \subsetneq V} |\delta_D^+(X)|.$$
 $D$ is called **Eulerian** if $d_D^+(v) = d_D^-(v)$ for every $v \in V$. A **strong arc decomposition** of $D$ is a partition $A = A_1 \mathbin{\dot\cup} A_2$ such that both spanning subdigraphs $(V, A_1)$ and $(V, A_2)$ are strongly connected; equivalently, every directed cut $\delta_D^+(X)$, $\emptyset \neq X \subsetneq V$, contains at least one arc of each color.
 
-> **Lemma (EC-log).** Let $C = 5$ and $n_0 = 2$. Every Eulerian digraph $D$ on $n \ge n_0$ vertices with
+> **Lemma (EC-log).** Let $C = 6$ and $n_0 = 3$. Every Eulerian digraph $D$ on $n \ge n_0$ vertices with
 > $$\lambda(D) \;\ge\; C \log_2 n$$
 > has a strong arc decomposition.
 
-A slightly larger constant $C' = 6$ gives the same conclusion with margins of safety we use in §3, and lets us drop the (essentially vacuous) $n_0$ caveat: every Eulerian $D$ with $\lambda(D) \ge 6 \log_2 n$ and $n \ge 2$ has a strong arc decomposition.
+> **Edit note (2026-05-18).** The original v4 headline of this document
+> read "$C = 5$, $n_0 = 2$." That choice was inconsistent with the
+> arithmetic of §2.5: the inequality $5\log_2 n > 4\log_2 n + 3$ requires
+> $\log_2 n > 3$, i.e. $n \ge 9$, not $n \ge 4$ as previously stated. To
+> keep the headline honest with the proof actually written below, the
+> constant is raised to $C' = 6$, for which the same proof works
+> uniformly down to $n = 3$ (see §2.5 for the verification: $6\log_2 n >
+> 4\log_2 n + 3 \Leftrightarrow \log_2 n > 3/2 \Leftrightarrow n \ge 3$).
+> The $n = 2$ case is degenerate under the simple-digraph convention and
+> is no longer claimed; it is briefly noted in §2.6. See the project
+> audit `CORRECTNESS_REVIEW_2026_05_18.md` §2.5 for the original flag.
 
 We comment on $C$ in §3; the proof in §2 is written with a generic $C$ and the inequality is forced only at the end.
 
@@ -88,16 +98,34 @@ $$\mathbb{E}[N] \;\le\; 8\, n^4 \cdot 2^{-\lambda}. \tag{10}$$
 We need $\mathbb{E}[N] < 1$, i.e. $2^{\lambda} > 8 n^4 = 2^3 \cdot n^4$, i.e.
 $$\lambda \;>\; 4 \log_2 n + 3. \tag{11}$$
 
-Both conditions ($\lambda \ge 3\log_2 n + 1$ and $\lambda > 4\log_2 n + 3$) are implied, for $n \ge 2$, by
-$$\lambda \;\ge\; 5 \log_2 n, \qquad (n \ge 2). \tag{12}$$
+Both conditions ($\lambda \ge 3\log_2 n + 1$ and $\lambda > 4\log_2 n + 3$) are implied, for $n \ge 3$, by
+$$\lambda \;\ge\; 6 \log_2 n, \qquad (n \ge 3). \tag{12}$$
 
-(Indeed for $n \ge 2$ we have $\log_2 n \ge 1$, so $5\log_2 n \ge 4\log_2 n + \log_2 n \ge 4\log_2 n + 1$; and $4\log_2 n + 1 \ge 4\log_2 n + 3$ requires $\log_2 n \ge 2$, i.e. $n \ge 4$. For $n \in \{2, 3\}$ the digraph has at most three vertices and the conclusion is trivial — see §2.6.)
+**Arithmetic verification of (12).** We show that $C = 6$ implies both gating conditions used above — namely (G1) $\lambda \ge 3\log_2 n + 1$ (used in the geometric-series bound just above (10)) and (G2) the inequality $\lambda > 4\log_2 n + 3$ from (11) — for every integer $n \ge 3$.
+
+*Gating condition (G1).* $6\log_2 n \ge 3\log_2 n + 1 \Leftrightarrow 3\log_2 n \ge 1 \Leftrightarrow \log_2 n \ge 1/3 \Leftrightarrow n \ge 2^{1/3} \approx 1.26$. Hence (G1) holds for every $n \ge 2$, in particular for $n \ge 3$.
+
+*Gating condition (G2) = (11).* $6\log_2 n > 4\log_2 n + 3 \Leftrightarrow 2\log_2 n > 3 \Leftrightarrow \log_2 n > 3/2 \Leftrightarrow n > 2^{3/2} = 2\sqrt 2 \approx 2.828$. Hence (G2) holds for every integer $n \ge 3$.
+
+Both gating conditions are therefore satisfied at $C = 6$ for every $n \ge 3$, with the binding constraint coming from (G2) at $n = 3$ (where $6\log_2 3 \approx 9.51$ vs. $4\log_2 3 + 3 \approx 9.34$, leaving $\approx 0.17$ of slack on the real line; in integers, $\lambda \ge \lceil 6\log_2 3 \rceil = 10$ and (11) demands $\lambda \ge 10$ — exactly tight at the integer level).
+
+**Remark on the previous $C = 5$ headline.** The earlier version of this
+document asserted that (11) and (G1) are implied for $n \ge 2$ by $\lambda
+\ge 5\log_2 n$; that assertion is false. The relevant inequality
+$5\log_2 n > 4\log_2 n + 3$ rearranges to $\log_2 n > 3$, i.e. $n \ge 9$.
+Concretely, at $n = 4$ the bound (11) requires $\lambda > 4\log_2 4 + 3
+= 11$ (integer $\lambda \ge 12$), but $\lceil 5\log_2 4\rceil = 10 < 12$;
+similarly for $n \in \{5,6,7,8\}$ the integer ceiling $\lceil 5\log_2
+n\rceil$ falls short of $4\log_2 n + 3 + 1$. Raising the constant to $C
+= 6$ removes this gap uniformly down to $n = 3$ at the cost of a small
+constant inflation, which is anyway dominated by the bound's looseness
+(§5).
 
 ### 2.6 First-moment conclusion
 
-By (12) and (11), for $\lambda(D) \ge 5\log_2 n$ and $n \ge 4$ we have $\mathbb{E}[N] < 1$. Hence there exists a 2-coloring of $A(D)$ with $N = 0$, i.e. no monochromatic directed cut. By the working equivalence (§1 of `attack_plan.md`), this is a strong arc decomposition.
+By (12) and (11), for $\lambda(D) \ge 6\log_2 n$ and $n \ge 3$ we have $\mathbb{E}[N] < 1$. Hence there exists a 2-coloring of $A(D)$ with $N = 0$, i.e. no monochromatic directed cut. By the working equivalence (§1 of `attack_plan.md`), this is a strong arc decomposition.
 
-The cases $n \in \{2, 3\}$ are vacuous: a 2-arc-strong digraph on 2 vertices is two parallel arcs in each direction, trivially decomposable; on 3 vertices any 2-arc-strong digraph contains two arc-disjoint Hamilton cycles by a direct check, which is a strong arc decomposition. Hence $C = 5$, $n_0 = 2$ works.
+The case $n = 2$ is degenerate and not in scope of the lemma's headline. (Under the loop-free multigraph convention of §1, a 2-vertex Eulerian digraph is some number of anti-parallel pairs; any such $D$ with $\lambda(D) \ge 2$ trivially has a SAD by partitioning the parallel arcs equally between the two color classes. But the lemma's hypothesis $\lambda(D) \ge 6\log_2 2 = 6$ is non-trivial only as a multigraph statement, and we leave it absorbed into the small-case folklore rather than into the lemma headline. Hence $n_0 = 3$.)
 
 No alteration step is needed: the first-moment method directly furnishes the coloring. This corrects the `attack_plan.md` v3 outline, which mentioned a redundant "union-bound / alteration finish".
 
@@ -116,21 +144,30 @@ The argument balances:
 - the Karger bound $n^{2(j+1)}$ for $j$-th band, with the $+1$ in the exponent because we count cuts of size **up to** $(j+1)\lambda_G$ (the band ends one $\lambda_G$ above $j\lambda_G$);
 - the geometric series in $n^2 / 2^\lambda$.
 
-Tightening any of these is local. The dominant term is $n^{2(j+1)} \cdot 2^{1-j\lambda}$ at $j = 1$, which gives roughly $n^4 \cdot 2^{-\lambda}$. So $\lambda > 4 \log_2 n$ is the asymptotically right threshold, and $C \to 4^+$ is the limit of this argument. Any $C$ strictly greater than 4 works for all sufficiently large $n$; $C = 5$ works for all $n \ge 4$ and is the smallest integer constant we can defend cleanly.
+Tightening any of these is local. The dominant term is $n^{2(j+1)} \cdot 2^{1-j\lambda}$ at $j = 1$, which gives roughly $n^4 \cdot 2^{-\lambda}$. So $\lambda > 4 \log_2 n$ is the asymptotically right threshold, and $C \to 4^+$ is the limit of this argument. Any $C$ strictly greater than 4 works for all sufficiently large $n$; we use $C = 6$ as the headline because the binding inequality (11) requires $\log_2 n > 3/(C-4)$, which at $C = 6$ gives $n \ge 3$ (the smallest range that covers all non-trivial vertex counts) but at $C = 5$ would give only $n \ge 9$. The constant $C = 5$ remains valid asymptotically and is the smallest integer that survives the limit $C \to 4^+$, but it does not cover the full $n \ge 3$ regime under the same proof, so we drop it from the headline.
 
 ### 3.2 Table of required $\lambda$
 
 The bound from (10) requires $2^\lambda \ge 8 n^4$ (so $\mathbb{E}[N] \le 1$; for $\mathbb{E}[N] < 1$ we need strict inequality, hence $\lceil 4\log_2 n + 3 \rceil + 1$ below).
 
-| $n$ | $4\log_2 n + 3$ | smallest integer $\lambda$ s.t. $2^\lambda > 8 n^4$ | $C=5$: $\lceil 5\log_2 n\rceil$ | $C'=6$: $\lceil 6\log_2 n\rceil$ |
+| $n$ | $4\log_2 n + 3$ | smallest integer $\lambda$ s.t. $2^\lambda > 8 n^4$ | $C=5$: $\lceil 5\log_2 n\rceil$ (sufficient?) | $C=6$ (headline): $\lceil 6\log_2 n\rceil$ |
 |---:|---:|---:|---:|---:|
-| 10   | 16.29 | 17 | 17 | 20 |
-| 20   | 20.29 | 21 | 22 | 26 |
-| 50   | 25.58 | 26 | 29 | 34 |
-| 100  | 29.58 | 30 | 34 | 40 |
-| 1000 | 42.86 | 43 | 50 | 60 |
+| 3    | 9.34  | 10 | 8  (**NO**) | 10 |
+| 4    | 11.00 | 12 | 10 (**NO**) | 12 |
+| 5    | 12.29 | 13 | 12 (**NO**) | 14 |
+| 6    | 13.34 | 14 | 13 (**NO**) | 16 |
+| 7    | 14.23 | 15 | 15 (OK) | 17 |
+| 8    | 15.00 | 16 | 15 (**NO**) | 18 |
+| 9    | 15.68 | 16 | 16 (OK) | 20 |
+| 10   | 16.29 | 17 | 17 (OK) | 20 |
+| 20   | 20.29 | 21 | 22 (OK) | 26 |
+| 50   | 25.58 | 26 | 29 (OK) | 34 |
+| 100  | 29.58 | 30 | 34 (OK) | 40 |
+| 1000 | 42.86 | 43 | 50 (OK) | 60 |
 
-So $C = 5$ has 1–7 units of slack in the relevant range, and $C' = 6$ has 4–17 units of slack — the latter makes the geometric tail bound essentially trivial and is the right choice if one wants a fully uniform statement.
+The "sufficient?" column shows whether $\lceil C\log_2 n\rceil$ is $\ge$ the smallest integer $\lambda$ satisfying (11). For $C = 5$ this column is NO at $n \in \{3, 4, 5, 6, 8\}$: $C = 5$ does *not* uniformly cover small $n$, contradicting the original headline "$C = 5$, $n_0 = 2$." From $n = 9$ onward the slack is non-negative integer-wise, but the irregular pattern at $n \in \{3, \dots, 10\}$ (caused by the integer ceilings $\lceil 5\log_2 n\rceil$ oscillating relative to $\lceil 4\log_2 n + 3 + \epsilon\rceil$) is why the original headline failed. This is the bookkeeping defect the audit `CORRECTNESS_REVIEW_2026_05_18.md` §2.5 surfaced. For $C = 6$ the column is OK uniformly from $n = 3$ onward, by the §2.5 verification above; the slack grows like $2\log_2 n - 3 - O(1)$ and is $\ge 4$ from $n = 20$ on.
+
+The headline therefore uses $C = 6$, $n_0 = 3$. The asymptotic threshold $\lambda > 4\log_2 n + 3$ is unchanged; only the integer headline constant is affected.
 
 The constants are not the point of the lemma; we record them here only to support the write-up and to anchor the comparison in §5.
 
@@ -211,7 +248,7 @@ Now apply our bound. Here $\lambda = 2$, $\lambda_G = 4$, $n = 4$. Our union bou
 $$\mathbb{E}[N] \;\le\; \sum_j 2 \cdot 4^{2(j+1)} \cdot 2^{1 - 2j}.$$
 At $j = 1$: $2 \cdot 4^4 \cdot 2^{-1} = 256$. The actual expectation is $\sum_X 2^{1-|\delta^+(X)|} = 12 \cdot 2^{-1} + 2 \cdot 2^{-3} = 6 + 0.25 = 6.25$. So our bound overshoots by about $256/6.25 \approx 41$. That is the expected looseness — the geometric series and Karger upper bound are both extremely loose at $n = 4$, $\lambda = 2$.
 
-Of course $\lambda(D) = 2$ is far below the $5\log_2 4 = 10$ that EC-log requires, so the lemma promises nothing here, but a direct check shows that $D$ does have a strong arc decomposition: color one copy of each doubled arc red, the other blue; each color class is a directed 4-cycle, which is strong. The sanity ledger:
+Of course $\lambda(D) = 2$ is far below the $6\log_2 4 = 12$ that EC-log (with the corrected headline $C = 6$) requires, so the lemma promises nothing here, but a direct check shows that $D$ does have a strong arc decomposition: color one copy of each doubled arc red, the other blue; each color class is a directed 4-cycle, which is strong. The sanity ledger:
 
 | quantity | value at $D$ = doubled $\vec C_4$ |
 |---|---|
@@ -221,7 +258,7 @@ Of course $\lambda(D) = 2$ is far below the $5\log_2 4 = 10$ that EC-log require
 | # directed cuts | 14 |
 | $\mathbb{E}[N]$ exact | 6.25 |
 | our union bound (8) at $j=1$ | 256 |
-| EC-log promises decomposition? | no ($5\log_2 4 = 10 > 2$) |
+| EC-log promises decomposition? | no ($6\log_2 4 = 12 > 2$) |
 | does it actually decompose? | yes (split doubled arcs) |
 
 The looseness factor $\sim 40$ at $n = 4$ is consistent with the bound's $n^{2(j+1)}/2^{j\lambda} \cdot \text{(true number of cuts)}^{-1}$ scaling, which is benign for the asymptotic argument.

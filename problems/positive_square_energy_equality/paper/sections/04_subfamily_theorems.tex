@@ -260,9 +260,21 @@ sequence approaching $c_{1}^{-}$ monotonically from below after its
 worst case $\dminus(L_{6}) \approx 1.3190$.
 \item \emph{Finitely-rigorously up to $n = 1000$.} The
 Demmel--Kahan certificate of \Cref{thm:2path-DK} gives the bound
-$\dminus(\Ln) \ge 17/16 + 1/4$ uniformly across $n \in [4, 1000]$ with
-slack $\sim 0.257$, and the propagated forward-error bound on
-$\dminus$ is $\le 1.42 \cdot 10^{-4}$.
+$\dminus(\Ln) \ge 17/16 + 1/4 = 21/16$ uniformly across
+$n \in [4, 1000]$. \emph{Warning on the meaning of ``slack $0.257$''.}
+The number $0.257$ that appears in the proof of \Cref{thm:2path-DK}
+is the gap between the empirical worst case
+$\dminus(L_{6}) \approx 1.3187$ and $17/16 = 1.0625$
+(i.e.\ $1.3187 - 17/16 \approx 0.2565$). It is the
+slack of the \emph{empirical} $\dminus$ above $17/16$, used in the
+proof solely to dominate the propagated forward-error bound
+$1.42 \cdot 10^{-4}$ by three orders of magnitude --- which is what
+licenses concluding $\dminus(\Ln) > 17/16 + 1/4 = 21/16$.
+It is \emph{not} a safety margin above $21/16$: the gap
+$\dminus(L_{6}) - 21/16 \approx 0.0062$ is two orders of magnitude
+smaller, and the declared ``$+1/4$'' is the target offset of the
+certificate, not an empirical buffer above $21/16$. The propagated
+forward-error bound on $\dminus$ is $\le 1.42 \cdot 10^{-4}$.
 \item \emph{Asymptotically.} The bordering identity
 $\Adj(\Ln) = \bigl(\begin{smallmatrix} 0 & \earw^{\top} \\ \earw &
 \Adj(L_{n-1}) \end{smallmatrix}\bigr)$ with $\earw = e_{1} + e_{2}$,
@@ -548,14 +560,19 @@ pipeline of LAPACK's \texttt{dsyevd} (the
 default driver behind \texttt{numpy.linalg.eigvalsh}) plausibly
 adds further low-order polynomial factors. We do \emph{not} attempt
 in this paper a fully formal derivation of an explicit envelope
-constant for the exact \texttt{dsyevd} path; rather, we adopt the
-\emph{conservative working envelope} $c \le 10^{4}$ (which is
-overshooting any published constant by at least one order of
-magnitude) and check below that the resulting forward-error bound is
-dwarfed by the empirical slack by more than three orders of
-magnitude. The role of this step is therefore to bound the
-floating-point error by a number that is provably safe under any
-plausible refinement of the constant. Taking $C_{n} \le 10^{4}\, n$
+constant for the exact \texttt{dsyevd} path; the reference
+implementation in \texttt{scripts/mpmath\_certify.py} uses
+$c = 10$ as a safe upper bound (consistent with published constants
+for backward-stable symmetric eigensolvers), and the certified
+forward-error bounds below are stated under that script-default
+envelope $c \le 10$. We note that the original analysis carried out
+the same calculation under the deliberately loose working envelope
+$c \le 10^{4}$; since any forward-error bound valid for $c \le 10^{4}$
+is \emph{a fortiori} valid for $c \le 10$, the certificate holds
+under either choice, and we exhibit the looser $c \le 10^{4}$ bound
+in the displayed inequalities below for transparency and so that the
+reader can see that the slack dwarfs the error even under the most
+conservative envelope. Taking $C_{n} \le 10^{4}\, n$
 and $\|\Adj(\Ln)\|_{2} \le \|f\|_{\infty} = 4$, the per-eigenvalue
 forward error is at most
 \[
@@ -608,16 +625,20 @@ recorded in \texttt{data/two\_path\_mpmath\_certificate.json}.
 The certificate in \Cref{thm:2path-DK} is engineering-rigorous rather
 than interval-rigorous in two senses. First, the eigenvalues are IEEE
 floating-point values, not certified intervals. Second, the constant
-envelope $c \le 10^{4}$ in the Demmel--Kahan-style bound is conservative
-and consistent with published constants for backward-stable symmetric
-eigensolvers, but is not formally derived for the exact LAPACK
-\texttt{dsyevd} pipeline within this paper; cf.\
+script-default envelope $c \le 10$ (and the looser $c \le 10^{4}$
+working envelope used in the displayed analysis) in the
+Demmel--Kahan-style bound is consistent with published constants for
+backward-stable symmetric eigensolvers, but is not formally derived
+for the exact LAPACK \texttt{dsyevd} pipeline within this paper; cf.\
 \Cref{app:repro:DK}. The propagated error bound
 $1.42 \cdot 10^{-4}$ on $\dminus(\Ln)$ is therefore the bound under
 this conservative working envelope, not under a fully verified
 constant. Crucially, the empirical slack $\ge 0.257$ exceeds this
 propagated bound by more than three orders of magnitude, so any
-plausible sharper constant yields the same conclusion. A confirmatory
+plausible sharper constant (in particular the script-default
+$c \le 10$, which gives a bound smaller by three orders of magnitude
+than the displayed $c \le 10^{4}$ analysis) yields the same conclusion.
+A confirmatory
 \texttt{mpmath} run at $50$ decimal digits on a curated $17$-record
 subset of $n$ (including the worst-case $n = 6$) is regression-locked
 by the test suite (the suite spot-checks $9$ cases at $30$ dps with

@@ -74,7 +74,7 @@ Each interval cert (schema v2) carries enough metadata for an independent
 verifier to reconstruct the polynomial system from the graph6 string and
 re-run the Krawczyk inclusion test from scratch; the verifier
 [scripts/verify_sweep.py](scripts/verify_sweep.py) does exactly that via
-[interval.replay_krawczyk](scripts/interval.py). All 67 certificates pass
+[interval.replay_krawczyk](scripts/interval.py). All 3247 certificates pass
 a clean replay.
 
 The negative-calibration test
@@ -141,8 +141,8 @@ uv pip install --python .venv/bin/python \
 The committed certificates are self-contained. The fast path is:
 
 ```bash
-make -C problems/unit_vector_flows verify         # 41/41 tests
-make -C problems/unit_vector_flows verify-certs   # 347/347 interval replays
+make -C problems/unit_vector_flows verify         # 184/184 tests
+make -C problems/unit_vector_flows verify-certs   # 3247/3247 interval replays
 ```
 
 `verify-certs` runs the independent replay in

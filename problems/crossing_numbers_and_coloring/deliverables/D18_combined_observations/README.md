@@ -78,5 +78,12 @@ single short note. The bundling decision is recorded in
 
 ## Status
 
-**Ready for submission**, pending author/journal decisions in the
-companion D17 submission packet directory.
+**WITHDRAWN (2026-05-17) — false observation at $t = 5$.**
+Observation 1 (the list-Albertson lift, formerly D15) is false: at
+$t = 5$, Voigt's (1993) planar graph has $\chi_\ell = 5$ and
+$\operatorname{cr} = 0 < 1 = \operatorname{cr}(K_5)$, directly refuting
+the claim. The bundling of D15 and D16 is therefore withdrawn; D16's
+expander Crossing Lemma is unaffected and is shipped separately (see
+`../D17_submission_packets/`). See the withdrawal banner at the top of
+`two_structural_observations.tex` (lines 36--69) for the full
+retraction note.

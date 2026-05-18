@@ -1,5 +1,21 @@
 # D5 — SymPy verification of FPS Claim 3.7 with $\delta$ free
 
+> **WITHDRAWN / SUPERSEDED (2026-05-18).** The headline claim of this
+> report — that re-tuning $\delta$ from $9/8$ to $\delta_1 \approx
+> 1.11491$ yields $F^\star \approx 0.5574 < 9/16$ — is **false**. It
+> rests on the silent assumption that $f_{2b}^{\max}(\delta) = \delta/2$
+> at *every* $\delta \in (1, 5/4)$, but $f_{2b}$ is monotone in $\eta$
+> on $[1/2, \eta_b)$ only for $\delta \ge -3 + \sqrt{17} \approx 1.12311$
+> (see `case2b_check.py` / `case2b_check.log`). On $(1, -3 + \sqrt{17})$
+> — which contains $\delta_1$ — the true $f_{2b}^{\max}(\delta_1)
+> \approx 0.5654 > 9/16$, so no improvement is obtained. The corrected
+> result is **D8** (`deliverables/D8_paper/sharpness_9_8.tex`), which
+> proves $F(\delta) \ge 9/16$ on $(1, 5/4)$ with equality iff
+> $\delta = 9/8$ via the witness identity
+> $f_{2b}(4/7, \delta) - 9/16 = 12(\delta - 9/8)^2 / [7(4\delta - 1)]$.
+> The body of this file is preserved unchanged below as an error-mode
+> archive; do not cite its conclusions.
+
 **Date.** 2026-05-16.
 **Goal.** Settle the D3 hypothesis that lowering $\delta$ from $9/8$ to $11/10$
 gives a "free" improvement of FPS Lemma 2.3's constant from $9/16$ to $11/20$.

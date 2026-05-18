@@ -1,11 +1,11 @@
 """Phase 2b reproduction test: Hurlbert WFL Theorem 10 four-strategy certificate.
 
 Loads the persisted four-strategy certificate transcribed from Hurlbert's
-*The weight function lemma for graph pebbling*, J. Combinatorial
-Optimization 34(2) (2017), 343-361 (arXiv:1101.5641), Theorem 10,
-Figure 5, and rationally verifies the derived bound matches the
-published 108 via the same rational checker that handles the synthetic
-Phase 2a smoke tests.
+*A Linear Optimization Technique for Graph Pebbling* (arXiv:1101.5641;
+journal version: J. Combinatorial Optimization 34(2) (2017), 343-361),
+Theorem 10, Figure 5, and rationally verifies the derived bound matches
+the published 108 via the same rational checker that handles the
+synthetic Phase 2a smoke tests.
 
 This is a full rational certificate (not arithmetic-only): the tree
 structure of each of the four strategies is encoded, and the parent-

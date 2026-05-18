@@ -12,11 +12,18 @@ reformulation, known partial results, and the seven-phase attack.
 
 ## Status
 
-**First proof step done.** Lemma 1 (Bridge reduction) is proved in
-[docs/minimal_counterexample.md](docs/minimal_counterexample.md) §2 and
-Sub-lemma 1' (the subcubic existence step it depends on) is
-computer-checked on all connected 1-port subcubic graphs with $n \le 11$
-vertices via [scripts/sublemma_bridge_sweep.py](scripts/sublemma_bridge_sweep.py).
+**First proof step: Lemma 1 proved; Sub-lemma 1' computer-checked through n=11.**
+Lemma 1 (Bridge reduction) is proved unconditionally in
+[docs/minimal_counterexample.md](docs/minimal_counterexample.md) §2. It
+depends on Sub-lemma 1' (the subcubic existence step), which is **not
+yet proved in this codebase**: it is computer-checked on all connected
+1-port subcubic graphs with $n \le 11$ vertices via
+[scripts/sublemma_bridge_sweep.py](scripts/sublemma_bridge_sweep.py)
+(137 graphs across $n \in \{5,7,9,11\}$), and matches the existence
+claim of Aboomahigir–Ahanjideh–Akbari (DAM 2021) for the subcubic
+regime. The "bridgeless minimal counterexample" conclusion therefore
+currently rests on this finite check together with the assumption that
+no counterexample to Sub-lemma 1' exists at $n \ge 13$.
 
 Foundational primitives in [scripts/decomposition.py](scripts/decomposition.py):
 

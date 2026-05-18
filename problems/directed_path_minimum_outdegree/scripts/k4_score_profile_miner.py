@@ -318,6 +318,36 @@ def check_pair(S, target_S_map, n, max_completions, time_limit, progress_every=N
                 count[u] += 1
             if any(c != DELTA for c in count):
                 return
+            # M3 fix (2026-05-18): explicit per-completion assertion
+            # mirroring scripts/k4_verify_certificate.py lines 127-146.
+            # The score-sequence and Claim-12 invariants are normally
+            # established implicitly via P1/P2 propagation before
+            # enumeration starts. We re-check them here so that any
+            # future propagation regression that lets a "bad" completion
+            # through fails loud rather than silently.
+            #   (a) Score sequence: every s in S has d^+_S(s) equal to
+            #       target_S_map[s].
+            #   (b) Claim 12 (R-Claim12): every S-vertex's out-arcs lie
+            #       inside V(C) = CYCLE_V.
+            for s in S:
+                d_S = 0
+                for (u, w) in arcs:
+                    if u != s:
+                        continue
+                    if w in S:
+                        d_S += 1
+                    if w not in CYCLE_V:
+                        raise AssertionError(
+                            f"Claim 12 violated at completion: S-vertex {s} "
+                            f"sends arc to {w} not in V(C); "
+                            f"S={sorted(S)}, target_S_map={target_S_map}, n={n}"
+                        )
+                if d_S != target_S_map[s]:
+                    raise AssertionError(
+                        f"Score profile violated at completion: S-vertex {s} "
+                        f"has d^+_S = {d_S}, expected {target_S_map[s]}; "
+                        f"S={sorted(S)}, target_S_map={target_S_map}, n={n}"
+                    )
             completions_count[0] += 1
             if not has_directed_simple_path_of_length(arcs, n, target=8):
                 obstructions.append(frozenset(arcs))

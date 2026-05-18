@@ -41,7 +41,7 @@ Hence if $\lambda(D) := \min_X |\delta_D^+(X)|$, the undirected edge-connectivit
 $$\sum_{j \geq 1} n^{2(j+1)} \cdot 2^{1 - j\lambda} \;=\; 2 n^2 \sum_{j \geq 1} \Bigl(\tfrac{n^2}{2^\lambda}\Bigr)^j.$$
 For $\lambda \geq C \log_2 n$ with $C > 4$, the ratio $n^2 / 2^\lambda < 1/n^{C-2}$ is summable and the expectation is $< 1$ for large $n$ (small $n$ absorbed by increasing $C$). The first-moment method then yields a 2-coloring with no monochromatic directed cut, i.e. a strong arc decomposition. $\square$
 
-EC-log was drafted on paper in week 1; see `team/04_ec_log_proof.md` for the proof with $C = 5$, $n_0 = 2$ (or $C' = 6$ with no $n_0$ caveat). The first-moment argument suffices — no alteration step is needed.
+EC-log was drafted on paper in week 1; see `team/04_ec_log_proof.md` for the proof with $C = 6$, $n_0 = 3$. The first-moment argument suffices — no alteration step is needed. *(Edit 2026-05-18: this line previously read "$C = 5$, $n_0 = 2$ (or $C' = 6$ with no $n_0$ caveat)"; the $C = 5$ headline was retracted in `CORRECTNESS_REVIEW_2026_05_18.md` §2.5 because the inequality $5\log_2 n > 4\log_2 n + 3$ requires $n \ge 9$, not $n \ge 4$.)*
 
 What remains genuinely hard after EC-log:
 - Removing Eulerianness.

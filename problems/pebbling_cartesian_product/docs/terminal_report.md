@@ -156,10 +156,15 @@ Narrow statement of the negative result:
 > negative-reduced-cost nonbasic single-branch tree strategy with
 > support $\le 16$ and weights $\le 32$.
 
-By LP duality, the LP value $196723/800$ is LP-optimal across those
-strategy classes; the rationalized derived bound $246$ is the best
-this priced class can produce. Beating $246$ requires expanding the
-class beyond what was searched.
+No improving column was found under the priced strategy classes
+above, using float pricing against a single SciPy HiGHS dual on a
+degenerate LP (see `docs/lp_improvement_log.md:180-183`). This is
+**empirical evidence, not a proof of LP-optimality**: rational
+reduced-cost arithmetic was not run, and the dual chosen is not the
+unique LP optimum. Within those caveats, the rationalized derived
+bound $246$ is the best the priced class produced; beating $246$
+plausibly requires expanding the class beyond what was searched,
+or pricing against a different dual / under exact arithmetic.
 
 ## FPY ingestion blocker
 

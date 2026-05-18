@@ -219,17 +219,21 @@ graphs as 26-critical.
 
 * **Role 5's memo claimed "essentially unique up to automorphism"** for the
   $25$-Ore graph on 48 vertices (`work/02_critical_graphs/memo.md`, Section
-  2.2 (c)). That claim is *informal* in the memo and not formally
-  asserted as a theorem. Our enumeration here for $k = 26, n = 51$ shows
-  **12** distinct isomorphism classes, not one. The same arithmetic applies
-  at $k = 25, n = 48$: the partition $|A| \sqcup |B|$ of the 24 neighbours
-  of $z$ in $K_{25}$ gives $|A| \in \{1, \dots, 11\}$ distinct classes
-  under the symmetry $|A| \mapsto 24 - |A|$ (which has fixed point
-  $|A| = 12$, so the count is 12 classes total: 11 paired plus 1 fixed).
-  This suggests the senior memo at Section 2.2 (c) is mildly underestimating
-  the count, which the team should note before treating "the $25$-Ore
-  graph on 48 vertices" as a singleton. (Not in scope for D4 to fix; flagged
-  here for follow-up.)
+  2.2 (c)). That claim is *informal* in the memo and not formally asserted
+  as a theorem. It is also **false for a different reason**: the $25$-Ore
+  family at $(25, 48)$ is **empty**, not a singleton. By the standard
+  Ore-construction congruence, every $G \in \mathcal{O}_k$ has
+  $|V(G)| \equiv 1 \pmod{k - 1}$ (induction on the DHGO composition tree,
+  with base case $K_k$ at order $k \equiv 1 \pmod{k - 1}$). For $k = 25$
+  this forces $|V| \in \{25, 49, 73, \dots\}$, so no $25$-Ore graph exists
+  on $48$ vertices; in particular the composition $K_{25} * K_{25}$ has
+  order $25 + 25 - 1 = 49$, not $48$. This is consistent with the v4
+  plan's main correction (`docs/plan.md`, "Ore-congruence subsection"),
+  which deleted the false $25$-Ore critical path at $(25, 48)$, and with
+  the senior review (`docs/review_v3.md`) noting "the claimed $25$-Ore
+  family at $(25, 48)$ cannot exist". The 12-class enumeration above
+  applies to $(26, 51)$ only — it is the unique Cranston-residual order
+  in which Ore graphs exist at all.
 
 * **`pynauty` installed cleanly via `uv pip install pynauty`** (pynauty
   bundles nauty internals; no system `nauty` needed). The fallback path in

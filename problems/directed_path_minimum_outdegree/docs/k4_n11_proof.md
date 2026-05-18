@@ -235,6 +235,74 @@ evidence. The two-pipeline agreement substantially reduces the risk
 of a shared bug in the forcing rules — the same closure conclusion
 is reached via independently coded logic.
 
+## Caveats and remaining work
+
+The following caveats narrow the scope of the closure claim made in
+this file. They are recorded explicitly so that future readers know
+what the $n = 11$ artifact does and does not establish, and where
+additional work would strengthen it.
+
+1. **The two pipelines share a declarative rule specification.**
+   `scripts/k4_score_profile_miner.py` and
+   `scripts/k4_score_profile_independent_check.py` were co-designed
+   from the same logical specification: the same forcing-rule list
+   (R-loop, R-path, R-cycle, R-T, R-F3, R-Claim12, R-LemmaA-rev,
+   R-AP, R-out, R-score, R-VCS, P1, P2), the same $(S, T)$
+   enumeration semantics, and the same length-8 DFS. They do not
+   share imports, but they implement the same algorithm against the
+   same specification. A shared-specification bug — for example a
+   wrong forcing rule, or a misapplied case of Claim 12 — would
+   persist in both pipelines and produce identical (incorrect) per-$
+   (S, T)$ counts. The two-pipeline agreement therefore defends
+   against transcription errors and indexing slips but not against
+   rule-soundness errors. Read the agreement as "two implementations
+   of the same specification", not as "two algorithmically
+   independent checks". The per-rule justifications in
+   `k4_partial_appendix.md` carry the soundness load.
+
+2. **No per-completion certificate exists at $n = 11$; closure is
+   reproduction-only.** Unlike the $\delta = 4, n = 10$ closure —
+   which ships `data/k4_n10_certificate.json` (~10 MB) and is
+   mechanically re-checkable by
+   `scripts/k4_verify_certificate.py` declaratively against
+   completed arc sets — the $n = 11$ closure stores no per-
+   completion arc set or witness path. The recorded stdout
+   SHA-256 hashes are reproducibility evidence, but only for a
+   reproducer whose environment matches Python 3.12.4 / macOS
+   Darwin 25.4.0 byte-for-byte. Anyone re-verifying $n = 11$
+   currently has to re-run the miner. A hash-only certificate
+   (one arc-set hash plus one length-$\geq 8$ witness path per
+   completion) would be roughly $20$ GB raw or $\sim 1$ GB
+   compressed and would close this gap.
+
+3. **A third pipeline with materially different methodology would
+   close Caveat 1.** The cleanest way to defend against a
+   shared-specification bug is to add a third closure check that
+   does not consume the same declarative rule list. Candidates
+   include: a SAT/CSP encoding of "4-outregular oriented graph on
+   the prescribed cycle with the configured score profile, no
+   directed simple path of length $\geq 8$" tested for UNSAT per
+   $(S, T)$; or a brute-force enumeration that simply lists all
+   4-outregular oriented graphs on the prescribed cycle and filters
+   by Claim 12, the score profile, and the length-8 path check,
+   without using forced-arc propagation. Even running this on a
+   single $(S, T)$ at $n = 11$ and matching the recorded completion
+   count and obstruction count would substantially strengthen the
+   closure. This is out of scope for the current artifact.
+
+A bounded mitigation of Caveat 1 already in place: both pipelines
+now (2026-05-18) include an explicit per-completion assertion that
+re-checks the score sequence and Claim 12 on the assembled arc set
+before the length-8 path search runs, mirroring
+`scripts/k4_verify_certificate.py`. If a future propagation
+regression let a completion through that violated the configured
+score profile or Claim 12, the miner would `AssertionError` rather
+than silently emit a completion that the rule list was supposed to
+forbid. This addresses one specific failure mode (a regression that
+weakens R-score, R-VCS, R-Claim12, or their P1/P2 consequences) but
+does not address a more fundamental rule-soundness error shared
+across both pipelines.
+
 ## Cross-references
 
 Documentation:

@@ -31,7 +31,7 @@ iff $G$ is a tree or $K_n$. We focus on 2-trees — maximal chordal graphs of
 treewidth 2 — and reduce the conjecture for this class to an **existential
 ear-selection lemma** (L'). We prove (L') unconditionally on books $B_k$,
 2-paths $L_n$ (in the Szegő limit), and on the BT$(k,2)$ family. For finite
-$n \le 2000$ we close 2-paths via a Demmel–Kahan a-posteriori certificate.
+$n \le 1000$ we close 2-paths via a Demmel–Kahan a-posteriori certificate.
 We isolate the headline open content as two precise conditions on a
 moment-form joint-invariant candidate $I = W^- + (M_1^-)^2/M_2^-$, prove
 both conditions on three subfamilies plus the 2-path asymptotic limit, and
@@ -77,7 +77,7 @@ project plan):
 >    $\delta^-_\infty(\mathrm{BT}) = 4 - \alpha^2 + \beta^2 \approx 1.0353$,
 >    falsifying the universal ear-deletion form of (L').
 > 5. Demmel–Kahan a-posteriori certificate giving
->    $\delta^-(L_n) \ge 17/16 + 1/4$ unconditionally for $n \in [4, 2000]$.
+>    $\delta^-(L_n) \ge 17/16 + 1/4$ unconditionally for $n \in [4, 1000]$.
 > 6. The existential ear-selection lemma (L') as the reformulation of
 >    Conjecture 9.2 for 2-trees: at every step of the simplicial deletion
 >    sequence, *some* ear has both gains $\ge 17/16$.
@@ -205,12 +205,12 @@ canonical adversarial input for any selector.
 
 ### 4.4 2-paths at finite $n$, Demmel–Kahan certificate (item 5, ~2 pp)
 
-For $n \in [4, 2000]$, compute $\delta^-(L_n)$ in high-precision floating
+For $n \in [4, 1000]$, compute $\delta^-(L_n)$ in high-precision floating
 point and bound the forward error by an a-posteriori Demmel–Kahan estimate
 applied to symmetric tridiagonalisation of the pentadiagonal matrix. Total
 slack $\delta^-(L_n) - 17/16 \ge 0.257 - O(10^{-12})$, comfortably above
 machine precision. **Theorem (rigorous):** $\delta^-(L_n) \ge 17/16 + 1/4$
-for every $n \in [4, 2000]$. State the precision protocol, the test harness,
+for every $n \in [4, 1000]$. State the precision protocol, the test harness,
 and the verifiable certificate file (regression-locked in
 `tests/test_mpmath_certify.py`).
 

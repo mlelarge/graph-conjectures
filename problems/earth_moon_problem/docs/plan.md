@@ -68,7 +68,8 @@ Before mining anything, the oracle must agree with known facts.
 | Gethner–Sulanke infinite 9-critical thickness-2 family | biplanar, $\chi = 9$ | GS 2009 |
 | $K_8$ | biplanar | classical |
 | $K_{5,5}$ | biplanar | classical (positive case) |
-| $K_9$, $K_{7,7}$, $K_{6,9}$, $K_{5,12}$ | not biplanar | classical |
+| $K_9$, $K_{7,7}$, $K_{6,9}$ | not biplanar | classical |
+| $K_{5,12}$ | biplanar | Beineke–Harary–Moon 1964 (thickness $\lceil pq/(2(p+q-2))\rceil = \lceil 60/30 \rceil = 2$) |
 | All graphs on $n \le 13$ | every biplanar graph is 9-colourable | KSS 2023 |
 | $(C_5 \boxtimes K_4) \setminus v$ on 19 vertices | not biplanar | KSS 2023 |
 
@@ -197,4 +198,8 @@ problems/earth_moon_problem/
 - *"No second 9-chromatic biplanar family in 50 years" framing.* False — Boutin–Gethner–Sulanke
   2008 and Gethner–Sulanke 2009 already published many, including an infinite family.
 - *$K_{5,5}$ as a non-biplanar regression.* $K_{5,5}$ is biplanar; it is now a
-  positive regression. Negative regressions: $K_9$, $K_{7,7}$, $K_{6,9}$, $K_{5,12}$.
+  positive regression. Negative regressions: $K_9$, $K_{7,7}$, $K_{6,9}$.
+- *$K_{5,12}$ as a non-biplanar regression.* The Beineke–Harary–Moon (1964)
+  thickness formula $\lceil pq/(2(p+q-2))\rceil$ gives $\lceil 60/30 \rceil = 2$
+  for $K_{5,12}$, so $K_{5,12}$ is biplanar. It has been moved to the positive
+  regression list above.

@@ -418,16 +418,27 @@ Vertex availability for degree-11 in $S$: $\beta \le 9 + q - 2\alpha$
 forced into degree-10, plus the $q - \alpha$ outside vertices in
 $N(u_i) \cap N(u_j)$ that became degree-11).
 
-**Brute-force feasibility check.** A sweep over all
-$(r, q, \alpha, \gamma)$ with $r \in [0, 30]$, $q \in [0, 11]$,
-$\alpha \in [0, \min(q, 9)]$, $\gamma \ge 0$, finds **exactly one
-feasible configuration**:
+**Brute-force feasibility check (claimed, pending implementation).** A
+sweep over all $(r, q, \alpha, \gamma)$ with $r \in [0, 30]$,
+$q \in [0, 11]$, $\alpha \in [0, \min(q, 9)]$, $\gamma \ge 0$ is
+**expected** to leave exactly one feasible configuration:
 
 $$(r, q, \alpha, \gamma) = (0, 0, 0, 0).$$
 
-Everything else fails either the Brooks-type budget or the $\beta$
-availability bound. In algebraic form, the joint constraints at
-$r = 13 + k$ ($k \ge 0$) give
+The algebraic reduction below is consistent with this expectation, but
+the exhaustive sweep itself is **not yet scripted**.
+
+> **TODO.** Implement `scripts/step5_brute_sweep.py` (sibling to
+> `scripts/q0_profile_enum.py`) that enumerates the full
+> $(r, q, \alpha, \gamma)$ box, applies the Brooks-type budget and the
+> $\beta$ availability bound, and prints every infeasible reason. Until
+> that script lands, the "exactly one feasible configuration" claim
+> below should be read as **claimed pending implementation** rather
+> than verified.
+
+Everything else is expected to fail either the Brooks-type budget or
+the $\beta$ availability bound. In algebraic form, the joint
+constraints at $r = 13 + k$ ($k \ge 0$) give
 
 $$\underbrace{\alpha + k + 4 - q}_{\text{β availability}} \le \gamma \le
   \underbrace{\alpha - q + k}_{\text{Brooks budget}},$$
@@ -436,11 +447,12 @@ forcing $4 \le 0$. For $r \le 12$, the Brooks bound is even stricter.
 For $r \in \{0, 1, 2\}$, the simpler $e(S) \le \binom{r}{2}$ bound
 still forces $q = 0, r = 0$.
 
-**Consequence.** The single feasible configuration $(r, q) = (0, 0)$
-corresponds to $H = G^*$ itself being a 12-critical $K_9$-free graph
-on 87 vertices with exactly $|E(G^*)| = 511$ edges (Brooks-tight). For
-any non-edge $\{u_i, u_j\}$ in $N(v)$ with $q \ge 1$, Case B is
-**unconditionally infeasible**.
+**Consequence (conditional on the sweep).** The single feasible
+configuration $(r, q) = (0, 0)$ would correspond to $H = G^*$ itself
+being a 12-critical $K_9$-free graph on 87 vertices with exactly
+$|E(G^*)| = 511$ edges (Brooks-tight). Conditional on the sweep being
+exhaustive (TODO above), for any non-edge $\{u_i, u_j\}$ in $N(v)$
+with $q \ge 1$, Case B is **unconditionally infeasible**.
 
 ### Step 4+ — strengthened K_9-preservation requirement
 

@@ -19,9 +19,17 @@ fronts; below is what they produced.
 
 ### Theorem 1 (EC-log). Logarithmic-arc-strength Eulerian digraphs admit a SAD.
 
-*There is an absolute constant $C = 5$ such that every Eulerian digraph
-$D$ on $n \geq 4$ vertices with $\lambda^{\mathrm{arc}}(D) \geq C \log_2 n$
+*There is an absolute constant $C = 6$ such that every Eulerian digraph
+$D$ on $n \geq 3$ vertices with $\lambda^{\mathrm{arc}}(D) \geq C \log_2 n$
 admits a SAD.*
+
+**Edit note (2026-05-18):** constant updated from the earlier headline
+"$C = 5$, $n \ge 4$" to "$C = 6$, $n \ge 3$" — the audit
+`CORRECTNESS_REVIEW_2026_05_18.md` §2.5 surfaced an arithmetic gap in
+the $C = 5$ statement (the binding inequality $5\log_2 n > 4\log_2 n +
+3$ requires $n \ge 9$, not $n \ge 4$); the $C = 6$ headline closes that
+gap and is the constant the proof in `team/04_ec_log_proof.md` actually
+establishes. The asymptotic statement is unchanged.
 
 **Proof location:** `team/04_ec_log_proof.md`; reproduced as §3 of
 `paper/draft_v1.md`.
@@ -32,8 +40,8 @@ so directed cuts in $D$ correspond two-to-one to undirected cuts in $G$
 with size factor 2. Karger's cut-counting bound (JACM 2000) gives
 $O(n^{2\alpha})$ undirected cuts of size at most $\alpha \lambda_G$.
 Random 2-coloring of $A(D)$ with first-moment closure on the geometric
-series. Constant $C = 5$ has roughly one to seven units of slack in the
-relevant range; the asymptotic limit of the method is $C \to 4^+$.
+series. Constant $C = 6$ has roughly 3–17 units of slack in the
+$n \in [10, 1000]$ range; the asymptotic limit of the method is $C \to 4^+$.
 
 **Honest scope:** the proof needs $\lambda$ growing at least
 logarithmically. Constant-$\lambda$ Eulerian theorems are not

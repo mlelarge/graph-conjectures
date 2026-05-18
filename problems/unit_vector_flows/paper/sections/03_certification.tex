@@ -1,56 +1,204 @@
 \section{The interval-Krawczyk certification method}
 \label{sec:certification}
 
-\TODO{Full prose drawn from \path{docs/preprint_outline.md} Section~3
-and \path{THEOREM.md} provenance section. Implementation pointers:
-\path{scripts/witness.py}, \path{scripts/exact.py},
-\path{scripts/interval.py}, \path{scripts/certificate.py},
-\path{scripts/sweep.py}, \path{scripts/verify_sweep.py}.}
+For each fixed graph $G$ we produce a \emph{replayable} certificate of
+the existence of an $\Sphere$-flow on $G$. The certificate is the
+output of the four-stage pipeline summarised in this section:
+numerical witness search (\cref{sec:certification-witness}), gauge fix
+and Newton refinement (\cref{sec:certification-refine}), interval
+Krawczyk contraction (\cref{sec:certification-krawczyk}), and a
+schema-v2 JSON document (\cref{sec:certification-replay}) that an
+independent verifier can re-run from scratch. The mathematical
+content sits in
+\cref{sec:certification-krawczyk}: the Krawczyk--Moore theorem, when
+its contraction hypothesis is satisfied, simultaneously proves
+existence and uniqueness of a real zero of the pinned polynomial
+system in an explicit box, and therefore certifies an
+$\Sphere$-flow on $G$. Implementation pointers: \path{scripts/witness.py},
+\path{scripts/exact.py}, \path{scripts/interval.py},
+\path{scripts/certificate.py}, \path{scripts/sweep.py},
+\path{scripts/verify_sweep.py}.
 
 \subsection{Numerical witness search}
 \label{sec:certification-witness}
 
-\TODO{Levenberg--Marquardt on the Kirchhoff~+~unit-norm system with
-multi-seed retry. Discuss the two failure modes (saddle plateau and
-near-singular Jacobian) and the seed-rotation remedy.}
+The first stage produces a \emph{floating-point} approximation to a
+zero of the pinned polynomial system $F$. We minimise
+$\lVert F(x) \rVert^{2}$ by Levenberg--Marquardt
+(\texttt{scipy.optimize.least\_squares} with \texttt{method="lm"})
+starting from a random unit-vector assignment on every unpinned edge.
+The residual at the returned point gates the verdict: accept as a
+witness if $\lVert F \rVert \le 10^{-10}$, otherwise retry from a new
+seed. See \path{scripts/witness.py:find_witness} (lines~75--127) for
+the multi-seed schedule.
+
+Two failure modes occur in practice:
+\begin{enumerate}[label=(\roman*)]
+  \item \emph{Saddle plateau.} The LM iterate stalls at a
+        non-minimal stationary point of $\lVert F \rVert^{2}$.
+        A fresh random seed almost always escapes the plateau.
+  \item \emph{Near-singular Jacobian.} On large snarks the
+        Jacobian at the iterate is poorly conditioned, the LM step
+        becomes numerically uninformative, and the residual
+        stagnates above $10^{-10}$. Multi-seed retry with seed
+        rotation is the implemented remedy.
+\end{enumerate}
+The numerical witness is used only as an initial guess for the
+Newton refinement of \cref{sec:certification-refine}; its inaccuracy
+is irrelevant once the refined centre is fed to the Krawczyk operator,
+which only requires the centre to lie inside the box of radius
+$10^{-5}$ around the true zero.
 
 \subsection{Gauge fix and Newton refinement}
 \label{sec:certification-refine}
 
-\TODO{Pin vertex 0's spokes; Newton refinement to 50 decimal digits
-in \texttt{mpmath} over $\Q[s]/(s^{2}-3)$ to keep $\sqrt 3$ exact.
-Drop one redundant vertex to get a square system
-(\cref{lem:square-system}).}
+We rotate the numerical witness into the pinning gauge of
+\cref{sec:prelim-gauge} so that the three spokes at vertex $0$ agree
+with the canonical $120$-degree triple, then refine the rotated
+witness by Newton's method in \texttt{mpmath} at $50$ decimal digits.
+Newton refinement solves
+$J(c)\,\Delta = F(c)$ for the update $\Delta$ using
+\texttt{mpmath.lu\_solve} at $50$~dps, applied iteratively until
+$\lVert F(c) \rVert$ stops decreasing (see
+\path{scripts/interval.py:_newton_refine}, lines~144--168). All
+rational coefficients are handled exactly inside the ring
+$\Q[s]/(s^{2} - 3)$, so the formal symbol $s$ represents $\sqrt{3}$
+without round-off until the Newton solve itself. Dropping the
+Kirchhoff equation at the last vertex (\cref{lem:square-system})
+yields the square system to which Newton is applied.
+
+The empirical residual at the refined centre across all $3247$
+certificates is $\lvert F(c) \rvert \approx 10^{-51}$, one full order
+of magnitude past the $50$-dps precision floor and ten orders below
+the box radius $10^{-5}$ used in \cref{sec:certification-krawczyk}.
 
 \subsection{Interval Krawczyk}
 \label{sec:certification-krawczyk}
 
-\TODO{State the Krawczyk theorem and the operator
-\[
-   K(\mathbf{I}) \;=\; c - Y\,F(c) + (E - Y\,J(\mathbf{I}))(\mathbf{I} - c),
-   \qquad Y = J(c)^{-1},
-\]
-with $\mathbf{I} = [c - 10^{-5},\, c + 10^{-5}]$ componentwise.
-Containment $K(\mathbf{I}) \subset \mathrm{int}(\mathbf{I})$ implies a
-unique zero of $F$ in $\mathbf{I}$.}
+Let $F : \R^{N} \to \R^{N}$ denote the square pinned polynomial
+system of \cref{lem:square-system}, viewed as a map between
+$N = 9|V|/2 - 8$-dimensional real spaces, and let $J = J_F$ denote
+its Jacobian. Let $c \in \R^{N}$ be the Newton-refined centre of
+\cref{sec:certification-refine}, and let
+$\mathbf{I} = [c - r, c + r]$ denote the closed box of radius
+$r = 10^{-5}$ around $c$ (componentwise). The \emph{Krawczyk operator}
+is
+\begin{equation}
+\label{eq:krawczyk-operator}
+   K(\mathbf{I}) \;=\; c \;-\; Y\,F(c) \;+\; (E - Y\,J(\mathbf{I}))\,(\mathbf{I} - c),
+\end{equation}
+where $E$ is the $N \times N$ identity matrix and $Y$ is any real
+matrix close to $J(c)^{-1}$; in the implementation
+$Y = J(c)^{-1}$ is computed at $50$~dps. The product $Y\,J(\mathbf{I})$
+and the term $J(\mathbf{I})$ are interval matrices obtained by the
+natural interval extension of $J$ over $\mathbf{I}$, evaluated in
+\texttt{mpmath.iv} arithmetic; the term $F(c)$ is evaluated at the
+point $c$ (\emph{not} over $\mathbf{I}$) and then wrapped as a
+degenerate interval. See \path{scripts/interval.py:_krawczyk_inclusion}
+(lines~171--242).
+
+\begin{theorem}[Krawczyk--Moore]
+\label{thm:krawczyk}
+\TODO{Add \texttt{refs.bib} entries for Krawczyk 1969 (\emph{Computing}~4,
+187--201) and/or Moore 1977; THEOREM.md already cites Krawczyk 1969 in
+its References section. Citation should appear here.}
+Let $F : \R^{N} \to \R^{N}$ be $C^{1}$ on a neighbourhood of
+$\mathbf{I}$. If
+$K(\mathbf{I}) \subset \mathrm{int}(\mathbf{I})$ componentwise, then:
+\begin{enumerate}[label=(\roman*)]
+  \item $F$ has a zero in $\mathbf{I}$;
+  \item the zero is unique in $\mathbf{I}$; and
+  \item every matrix in $J(\mathbf{I})$ is nonsingular.
+\end{enumerate}
+\end{theorem}
+
+The implementation tests strict componentwise inclusion: for every
+coordinate $i$, $K(\mathbf{I})_i.\text{lo} > c_i - r$ and
+$K(\mathbf{I})_i.\text{hi} < c_i + r$. The minimum over $i$ of the
+two slack quantities is recorded as the \emph{Krawczyk margin}; the
+certificate is \emph{certified} if and only if this margin is
+strictly positive (\path{scripts/interval.py:_krawczyk_inclusion},
+lines~228--233).
+
+\begin{corollary}[$\Sphere$-flow from a certified zero]
+\label{cor:s2-flow-from-zero}
+A real zero of $F$ in $\mathbf{I}$ corresponds, by unwinding the
+pinning gauge of \cref{sec:prelim-gauge}, to an $\Sphere$-flow on $G$.
+Hence if \cref{thm:krawczyk} applies to the pinned system on $G$,
+then $G$ admits an $\Sphere$-flow.
+\end{corollary}
 
 \paragraph{Numerical gotchas.}
-\TODO{Two implementation points worth flagging: (i) the centre term
-$F(c)$ must be evaluated at a \emph{point}, not on the interval box,
-otherwise the Krawczyk margin grows linearly in the box radius;
-(ii) \texttt{sympy.lambdify} with \texttt{modules=None} keeps
-half-integer coefficients as Python floats (exact for halves), while
-\texttt{modules='mpmath'} introduces \texttt{mpf}/\texttt{iv.mpf}
-conversion errors. See \path{scripts/interval.py} for the exact form.}
+Two implementation points are worth flagging.
+\begin{enumerate}[label=(\roman*)]
+  \item \emph{Point evaluation of $F(c)$.} If $F(c)$ in
+        \cref{eq:krawczyk-operator} is replaced by the interval
+        evaluation $F(\mathbf{I})$, the Krawczyk margin grows
+        linearly in the box radius and the contraction test fails on
+        all but the smallest graphs. The centre term must therefore
+        be evaluated at the \emph{point} $c$ in \texttt{mpmath} and
+        then wrapped as a degenerate interval; see
+        \path{scripts/interval.py} line~204.
+  \item \emph{lambdify modules.} The pinned coefficients
+        (e.g.\ $\pm\tfrac{1}{2}$) appear as rational numbers in the
+        sympy expression for $F$. Calling
+        \texttt{sympy.lambdify(\ldots, modules=None)} keeps these as
+        Python floats, which represent halves exactly. The
+        alternative \texttt{modules='mpmath'} introduces an
+        \texttt{mpf} / \texttt{iv.mpf} conversion at every coefficient
+        and re-injects rounding error. The certifier uses
+        \texttt{modules=None}; see \path{scripts/interval.py}.
+\end{enumerate}
 
 \subsection{Schema-v2 replayable certificate}
 \label{sec:certification-replay}
 
-\TODO{JSON document containing: graph6, canonical edge order, pinning
-data, dropped redundant vertex index, free-variable list,
-polynomial-system SHA-256, decimal-string centre, per-coordinate
-Krawczyk margins, full provenance metadata
-(Python/mpmath/sympy/networkx versions, OS, hostname). Replayer
-reconstructs the polynomial system, verifies the hash, re-evaluates
-the Krawczyk operator, and emits a verdict. See
-\path{docs/external_replay} for the cold-environment log.}
+For every graph in the catalogue, the certifier emits a JSON document
+at schema version $2$ containing exactly the data needed for an
+independent replay. The fields are:
+\begin{itemize}
+  \item the canonical \texttt{graph6} string of $G$;
+  \item the canonical edge order used by the orientation convention;
+  \item the pinned vertex, the pinned edges, and the canonical
+        $120$-degree triple values (with $s$ kept as a formal symbol
+        and the relation $s^{2} - 3 = 0$ recorded);
+  \item the index of the dropped redundant vertex
+        (\cref{lem:square-system});
+  \item the list of free variables (in canonical order);
+  \item the SHA-256 hash of the polynomial system $F$, computed as a
+        canonical string of sympy expressions;
+  \item the Newton-refined centre $c$ as decimal strings at $50$~dps;
+  \item the box radius $r = 10^{-5}$, per-coordinate Krawczyk
+        margins, and the overall minimum margin; and
+  \item full provenance metadata: Python, mpmath, sympy, networkx
+        versions, OS and hostname, the timestamp, and the git commit.
+\end{itemize}
+The replay verifier
+(\path{scripts/verify_sweep.py:verify_one}, calling
+\path{scripts/interval.py:replay_krawczyk}, lines~375--434):
+\begin{enumerate}[label=(\arabic*)]
+  \item parses the \texttt{graph6} string and rebuilds $G$;
+  \item re-runs the orientation and the square-system construction
+        from first principles, and checks agreement with the
+        certificate's edge order, pinning data, dropped vertex, and
+        free-variable list;
+  \item recomputes the SHA-256 of the freshly built polynomial
+        system and compares to the certificate's stored hash;
+  \item re-runs the Krawczyk operator on the parsed centre and box
+        radius; and
+  \item compares the verdict-of-the-replay against the
+        verdict-of-the-certificate.
+\end{enumerate}
+A certificate replays successfully iff all five steps agree. The
+verifier never reads the stored Krawczyk box, margins, or verdict
+when computing its own decision; the comparison in step~(5) is the
+only point at which the stored verdict is consulted, and only as the
+target to match. The cold-environment log
+\path{docs/external_replay/} records replay of all $3247$ committed
+certificates on an unrelated machine.
+
+A defensive option \texttt{--allow-hash-mismatch} (consumed by
+\path{scripts/verify_sweep.py}) relaxes step~(3) to a warning, to
+allow cross-version replay when an upstream \texttt{sympy} version
+bump changes the canonical string form of the polynomial system
+without changing the mathematics.

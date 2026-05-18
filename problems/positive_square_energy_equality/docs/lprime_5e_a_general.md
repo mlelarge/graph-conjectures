@@ -239,7 +239,7 @@ The following sub-families have $I(v^*) \ge T$ proved:
 2. **BT-page family** (max-degsum ear is on a book-page of a BT graph):
    proved by reduction to books, Phase 8.
 3. **2-paths $L_n$** asymptotically: $\lim_n I(L_n, v^*) = I_\infty(L) \approx 1.0157$;
-   finite $n \in [4, 2000]$ verified rigorously by Demmel–Kahan.
+   finite $n \in [4, 1000]$ verified rigorously by Demmel–Kahan.
 
 ### 4.2 New sub-family closure: clique trees of diameter $\le 2$
 
@@ -342,7 +342,7 @@ and the workstream should remain in paper-writing mode.**
 
 Reasoning:
 1. The paper's headline contributions (Phases 4–11, the Lemma B1 + B1+
-   ceiling lemmas, the corrected $\|w\|^2 = 2$, the rigorous DK $n \le 2000$
+   ceiling lemmas, the corrected $\|w\|^2 = 2$, the rigorous DK $n \le 1000$
    tail, the 2-path Stieltjes theorem) **already justify a full arXiv
    submission**.
 2. The new empirical finding (§2.2) — that the 2-path is *not* the binding

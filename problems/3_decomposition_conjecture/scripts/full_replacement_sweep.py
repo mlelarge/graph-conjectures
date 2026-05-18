@@ -82,6 +82,14 @@ def structural_class(G: nx.Graph, ports: list) -> str:
 
 
 def is_compatibility_universal(traces_set, universe) -> bool:
+    # Defensive: the theoretical universe U has exactly 16 traces
+    # (trace_feasibility.py / docs/minimal_counterexample.md §3.4). A stale
+    # or partial lattice could silently shrink the inferred universe and
+    # turn this predicate into a weaker check than §3.13 requires.
+    # See CORRECTNESS_REVIEW_2026_05_18.md (CRITICAL finding).
+    assert len(universe) == 16, (
+        f"universe must have 16 traces (16-trace theorem, §3.4); got {len(universe)}"
+    )
     for tau in universe:
         tau_full = (tau[0], frozenset(frozenset(b) for b in tau[1]))
         if not any(

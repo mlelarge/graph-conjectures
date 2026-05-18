@@ -95,7 +95,7 @@ git clone https://github.com/mlelarge/graph-conjectures.git
 cd graph-conjectures/problems/unit_vector_flows
 uv pip install --python ../../.venv/bin/python \
     networkx numpy scipy sympy mpmath python-sat pytest
-make verify        # 41/41 regression tests, ~10 s
+make verify        # 184/184 regression tests, ~10 s
 make verify-certs  # replay all 3247 certs, ~70 min sequential
 ```
 

@@ -21,7 +21,7 @@ RESTARTS ?= 200
 
 help:
 	@echo "Targets:"
-	@echo "  verify         pytest regression (41 tests, ~6s)"
+	@echo "  verify         pytest regression (184 tests, ~6s)"
 	@echo "  verify-certs   replay 3247 interval certificates (~50 min for n=26, ~70 min more for n=28)"
 	@echo "  catalogue      regenerate cubic-g5 catalogues via geng, then filter to nontrivial snarks"
 	@echo "  sweep          run numerical witness sweep on the nontrivial-snark catalogue"

@@ -31,10 +31,13 @@ not a special case of any published result (cf. paper §6).
 Three unconditional results are proved as standalone lemmas of independent
 interest.
 
-**Theorem A (EC-log).** *Let $C = 5$ and $n_0 = 2$. Every Eulerian digraph
+**Theorem A (EC-log).** *Let $C = 6$ and $n_0 = 3$. Every Eulerian digraph
 $D$ on $n \ge n_0$ vertices with $\lambda^{\mathrm{arc}}(D) \ge C \log_2 n$
 admits a strong arc decomposition.* Proof: Eulerian-to-undirected reduction,
 Karger cut-counting, first moment. Self-contained.
+*(Edit 2026-05-18: constants updated from $C = 5$, $n_0 = 2$, per
+`CORRECTNESS_REVIEW_2026_05_18.md` §2.5; the $5\log_2 n > 4\log_2 n + 3$
+step needs $n \ge 9$, not $n \ge 4$.)*
 
 **Theorem B (CL1, bilateral lifting).** *Let $D = (V, A)$ be a digraph with
 $V = V_1 \mathbin{\dot\cup} V_2$, $|V_i| \ge 2$. Suppose (1) each $D[V_i]$

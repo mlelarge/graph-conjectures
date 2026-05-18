@@ -1,9 +1,9 @@
 """Build a Hurlbert weight-function certificate for pi(L_fpy box L_fpy, (v_1, v_1)) <= 108.
 
 Encodes the four nonbasic tree strategies T_1, T_2, T_3, T_4 from
-Figure 5 of G. Hurlbert, *The weight function lemma for graph pebbling*,
-J. Combinatorial Optimization 34(2) (2017), 343-361 (arXiv:1101.5641),
-Theorem 10. The matrices were transcribed from the layout-preserving
+Figure 5 of G. Hurlbert, *A Linear Optimization Technique for Graph
+Pebbling* (arXiv:1101.5641; journal version: J. Combinatorial
+Optimization 34(2) (2017), 343-361), Theorem 10. The matrices were transcribed from the layout-preserving
 text extraction of the arXiv PDF.
 
 The four strategies are presented in the paper as 8x8 weight matrices on

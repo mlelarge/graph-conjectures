@@ -87,11 +87,17 @@ references, no overfull or underfull boxes.
 
 ## Status
 
-Draft, ready for internal review. Main theorem proof goes through
-cleanly with no chromatic-number-specific step needing repair. The
-single weakest point under referee scrutiny is the assembly claim
-itself -- a referee may ask for a closer alignment between our
-lift statements and the precise place in
-\cite{ACF,BT,Ackerman} where the relevant edge-floor estimate is
-invoked. This is purely an expository concern; no mathematical gap
-was identified.
+**WITHDRAWN (2026-05-17).** The main theorem stated above is **false**
+at $t = 5$: Voigt (1993) constructs a planar graph $G$ with
+$\chi_\ell(G) = 5$ (planar graphs are $5$-choosable by Thomassen 1994,
+and Voigt's example is not $4$-choosable) and $\operatorname{cr}(G) = 0
+< 1 = \operatorname{cr}(K_5)$, directly refuting the theorem at $t = 5$.
+The "lifts for free" argument is also structurally wrong independent of
+the $t = 5$ failure: the ACF / BT / Ackerman chain does not use
+$\chi \ge t$ only through $\delta \ge t - 1$ (Ackerman §3.1 invokes the
+critical-graph edge-count function $f_r(n)$, whose list-coloring
+analogue — Krivelevich 1997 — is provably weaker). See the withdrawal
+banner at the top of `list_albertson_le_18.tex` (lines 33--60) for the
+full retraction note. The paper must not be resurrected without a
+fresh proof; the bundling paper D18 that wrapped this note as
+"Observation 1" is similarly withdrawn.
