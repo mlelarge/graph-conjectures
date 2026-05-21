@@ -43,6 +43,9 @@ This module implements:
     long arc of any transitive triangle).
   - `decide_mfas(T)`: a backtracking solver that searches for a valid
     M. Polynomial-time in many cases but exponential worst-case.
+    **For the polynomial-time (O(n^3)) decider, use `poly_mfas.py`.**
+    This module is retained as the original exploration scaffold and
+    as a slow-but-direct cross-check against `poly_mfas`.
   - `verify_against_brute(T)`: cross-check `decide_mfas` against
     `brute.decide(T, 'matching')`.
 """

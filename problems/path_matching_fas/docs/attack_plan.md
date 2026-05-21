@@ -1,5 +1,13 @@
 # Attack plan — Path-FAS and Matching-FAS
 
+> **Historical document.** This plan has been executed for the matching
+> case. The structural lemmas conjectured in Phase 2 below are proved
+> in [`lemmas.md`](lemmas.md), and the polynomial-time decider is
+> implemented in [`../scripts/poly_mfas.py`](../scripts/poly_mfas.py).
+> The path case (Phase 4) remains open. The text below is preserved as
+> the original triage; consult `lemmas.md` and the top-level
+> [`../README.md`](../README.md) for the actual results.
+
 ## Notation
 
 - $T = (V, A)$: a tournament on $n$ vertices.
