@@ -25,6 +25,7 @@ class VerifyTests(unittest.TestCase):
         self.assertTrue(cls["is_matching"])
         self.assertTrue(cls["is_forest"])
         self.assertTrue(cls["is_linear_forest"])
+        self.assertTrue(cls["is_path_fas"])
         self.assertFalse(cls["is_path"])  # empty is not a "path"
 
     def test_classify_single_edge_is_path_and_matching(self):
@@ -32,6 +33,7 @@ class VerifyTests(unittest.TestCase):
         self.assertTrue(cls["is_matching"])
         self.assertTrue(cls["is_path"])
         self.assertTrue(cls["is_linear_forest"])
+        self.assertTrue(cls["is_path_fas"])
 
     def test_classify_two_arcs_path(self):
         cls = classify([(0, 1), (1, 2)])
@@ -45,12 +47,14 @@ class VerifyTests(unittest.TestCase):
         self.assertTrue(cls["is_matching"])
         self.assertFalse(cls["is_path"])           # two components
         self.assertTrue(cls["is_linear_forest"])
+        self.assertTrue(cls["is_path_fas"])         # can be completed to a path
 
     def test_classify_star_K13(self):
         cls = classify([(0, 1), (0, 2), (0, 3)])
         self.assertEqual(cls["max_degree"], 3)
         self.assertTrue(cls["is_forest"])
         self.assertFalse(cls["is_linear_forest"])  # max deg 3
+        self.assertFalse(cls["is_path_fas"])
         self.assertFalse(cls["is_path"])
         self.assertFalse(cls["is_matching"])
 

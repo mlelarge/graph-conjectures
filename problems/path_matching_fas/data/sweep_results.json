@@ -6,6 +6,8 @@
     "matching_no": 0,
     "path_yes": 2,
     "path_no": 0,
+    "path_fas_yes": 2,
+    "path_fas_no": 0,
     "linear_forest_yes": 2,
     "forest_yes": 2,
     "matching_yes_examples": [
@@ -56,6 +58,8 @@
     "matching_no": 0,
     "path_yes": 4,
     "path_no": 0,
+    "path_fas_yes": 4,
+    "path_fas_no": 0,
     "linear_forest_yes": 4,
     "forest_yes": 4,
     "matching_yes_examples": [
@@ -176,6 +180,8 @@
     "matching_no": 2,
     "path_yes": 12,
     "path_no": 0,
+    "path_fas_yes": 12,
+    "path_fas_no": 0,
     "linear_forest_yes": 12,
     "forest_yes": 12,
     "matching_yes_examples": [
@@ -489,6 +495,8 @@
     "matching_no": 26,
     "path_yes": 56,
     "path_no": 0,
+    "path_fas_yes": 56,
+    "path_fas_no": 0,
     "linear_forest_yes": 56,
     "forest_yes": 56,
     "matching_yes_examples": [

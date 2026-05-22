@@ -1,0 +1,16 @@
+{
+  "target_n": 8,
+  "seconds": 2.34,
+  "levels": [
+    {
+      "n": 7,
+      "representatives": 456,
+      "source": "data/lfo_full_n7.json"
+    },
+    {
+      "n": 8,
+      "representatives": 6880,
+      "path": "data/lfo_reps_n8.jsonl"
+    }
+  ]
+}

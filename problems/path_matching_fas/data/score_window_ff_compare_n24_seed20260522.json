@@ -1,0 +1,202 @@
+{
+  "mode": "skew",
+  "seed": 20260522,
+  "samples_per_group": 50,
+  "compare_forced_flexible": true,
+  "ps": [
+    0.02,
+    0.05
+  ],
+  "groups": [
+    {
+      "label": "transitive_noise_n24_p0.02",
+      "n": 24,
+      "samples": 50,
+      "seconds": 20.526,
+      "summary": {
+        "count": 50,
+        "found": {
+          "count": 50,
+          "true": 41,
+          "false": 9
+        },
+        "initial_hall": {
+          "count": 50,
+          "true": 50,
+          "false": 0
+        },
+        "forced_obstruction": {
+          "forced_degree": 1,
+          "none": 49
+        },
+        "nodes": {
+          "count": 50,
+          "max": 170216,
+          "median": 31.0,
+          "mean": 3814.72,
+          "p95": 2266
+        },
+        "max_frontier": {
+          "count": 50,
+          "max": 5,
+          "median": 4.0,
+          "mean": 3.98,
+          "p95": 4
+        },
+        "max_active_windows": {
+          "count": 50,
+          "max": 8,
+          "median": 7.0,
+          "mean": 6.68,
+          "p95": 8
+        },
+        "forced_backedge_count": {
+          "count": 50,
+          "max": 6,
+          "median": 2.5,
+          "mean": 2.64,
+          "p95": 5
+        },
+        "flexible_pair_count": {
+          "count": 50,
+          "max": 95,
+          "median": 89.0,
+          "mean": 89,
+          "p95": 93
+        },
+        "score_span": {
+          "count": 50,
+          "max": 23,
+          "median": 22.5,
+          "mean": 22.34,
+          "p95": 23
+        },
+        "distinct_scores": {
+          "count": 50,
+          "max": 22,
+          "median": 19.0,
+          "mean": 18.54,
+          "p95": 21
+        },
+        "ff_found": {
+          "count": 50,
+          "true": 41,
+          "false": 9
+        },
+        "ff_nodes": {
+          "count": 50,
+          "max": 162731,
+          "median": 28.0,
+          "mean": 3617.38,
+          "p95": 1137
+        },
+        "ff_forced_initial_obstruction": {
+          "forced_degree": 1,
+          "none": 49
+        },
+        "ff_disagreements": 0,
+        "ff_improved_count": 41,
+        "ff_worse_count": 1
+      }
+    },
+    {
+      "label": "transitive_noise_n24_p0.05",
+      "n": 24,
+      "samples": 50,
+      "seconds": 13.118,
+      "summary": {
+        "count": 50,
+        "found": {
+          "count": 50,
+          "true": 9,
+          "false": 41
+        },
+        "initial_hall": {
+          "count": 50,
+          "true": 44,
+          "false": 6
+        },
+        "forced_obstruction": {
+          "forced_degree": 17,
+          "none": 27,
+          "score_window_hall": 6
+        },
+        "nodes": {
+          "count": 50,
+          "max": 36462,
+          "median": 59.5,
+          "mean": 2403.12,
+          "p95": 16667
+        },
+        "max_frontier": {
+          "count": 50,
+          "max": 5,
+          "median": 4.0,
+          "mean": 3.2,
+          "p95": 5
+        },
+        "max_active_windows": {
+          "count": 50,
+          "max": 9,
+          "median": 7.0,
+          "mean": 7.52,
+          "p95": 9
+        },
+        "forced_backedge_count": {
+          "count": 50,
+          "max": 13,
+          "median": 6.5,
+          "mean": 7.12,
+          "p95": 12
+        },
+        "flexible_pair_count": {
+          "count": 50,
+          "max": 104,
+          "median": 93.5,
+          "mean": 94.32,
+          "p95": 102
+        },
+        "score_span": {
+          "count": 50,
+          "max": 23,
+          "median": 21.0,
+          "mean": 21.3,
+          "p95": 23
+        },
+        "distinct_scores": {
+          "count": 50,
+          "max": 21,
+          "median": 16.5,
+          "mean": 16.48,
+          "p95": 20
+        },
+        "ff_found": {
+          "count": 50,
+          "true": 9,
+          "false": 41
+        },
+        "ff_nodes": {
+          "count": 50,
+          "max": 36265,
+          "median": 15.5,
+          "mean": 1879.72,
+          "p95": 16017
+        },
+        "ff_forced_initial_obstruction": {
+          "forced_cycle": 1,
+          "forced_degree": 16,
+          "none": 33
+        },
+        "ff_disagreements": 0,
+        "ff_improved_count": 42,
+        "ff_worse_count": 0
+      }
+    }
+  ],
+  "by_n_forced_backedges_mean": {
+    "24": {
+      "transitive_noise_n24_p0.02": 2.64,
+      "transitive_noise_n24_p0.05": 7.12
+    }
+  }
+}

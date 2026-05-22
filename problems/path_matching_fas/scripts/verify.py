@@ -78,8 +78,11 @@ def classify(arcs: list[tuple[int, int]]) -> dict:
         disjoint union of edges)
       - is_forest: acyclic
       - is_linear_forest: forest with max degree <= 2
-      - is_path: connected linear forest with exactly two degree-1
-        vertices (or the trivial 1-edge / 0-edge cases handled below)
+      - is_path: exact connected path back-arc graph, retained as a
+        diagnostic target
+      - is_path_fas: formal path-FAS feasibility for this order, i.e. the
+        back-arc graph is contained in some path; equivalently, it is a
+        linear forest
       - touched_vertices: number of vertices incident to at least one arc
     """
     # Build undirected adjacency on touched vertices.
@@ -98,6 +101,7 @@ def classify(arcs: list[tuple[int, int]]) -> dict:
                 "is_forest": False,
                 "is_linear_forest": False,
                 "is_path": False,
+                "is_path_fas": False,
                 "touched_vertices": None,
                 "error": "parallel edges (multigraph) — input was not a tournament back-arc set",
             }
@@ -143,6 +147,7 @@ def classify(arcs: list[tuple[int, int]]) -> dict:
         "is_forest": is_forest,
         "is_linear_forest": is_linear_forest,
         "is_path": is_path,
+        "is_path_fas": is_linear_forest,
         "touched_vertices": touched,
     }
 

@@ -17,12 +17,20 @@ from verify import verify  # noqa: E402
 def decide(T: Sequence[Sequence[int]], target: str) -> dict:
     """Return a dict {found: bool, order: list[int]|None, info: dict|None}.
 
-    `target` is one of 'matching', 'path', 'linear_forest', 'forest'.
+    `target` is one of:
+      - 'matching'
+      - 'path': exact connected path back-arc graph
+      - 'linear_forest'
+      - 'path_fas': formal Problem 4.4 path-FAS target; equivalent to
+        'linear_forest' for the back-arc graph
+      - 'forest'
     """
-    if target not in {"matching", "path", "linear_forest", "forest"}:
+    if target == "formal_path":
+        target = "path_fas"
+    if target not in {"matching", "path", "linear_forest", "path_fas", "forest"}:
         raise ValueError(f"unknown target {target!r}")
     n = len(T)
-    key = f"is_{target}"
+    key = "is_linear_forest" if target == "path_fas" else f"is_{target}"
     for P in permutations(range(n)):
         info = verify(T, list(P))
         if info[key]:
@@ -35,7 +43,7 @@ def decide_all(T: Sequence[Sequence[int]]) -> dict:
     keyed by target.
     """
     out = {}
-    for tgt in ("matching", "path", "linear_forest", "forest"):
+    for tgt in ("matching", "path", "path_fas", "linear_forest", "forest"):
         out[tgt] = decide(T, tgt)
     return out
 

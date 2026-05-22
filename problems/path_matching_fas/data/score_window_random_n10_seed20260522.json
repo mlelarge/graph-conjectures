@@ -1,0 +1,81 @@
+{
+  "mode": "uniform",
+  "seed": 20260522,
+  "samples_per_n": 2000,
+  "groups": [
+    {
+      "label": "uniform_n10",
+      "n": 10,
+      "samples": 2000,
+      "seconds": 0.586,
+      "summary": {
+        "count": 2000,
+        "found": {
+          "count": 2000,
+          "true": 205,
+          "false": 1795
+        },
+        "initial_hall": {
+          "count": 2000,
+          "true": 978,
+          "false": 1022
+        },
+        "forced_obstruction": {
+          "none": 978,
+          "score_window_hall": 1022
+        },
+        "nodes": {
+          "count": 2000,
+          "max": 266,
+          "median": 0.0,
+          "mean": 15.005,
+          "p95": 63
+        },
+        "max_frontier": {
+          "count": 2000,
+          "max": 5,
+          "median": 0.0,
+          "mean": 2.294,
+          "p95": 5
+        },
+        "max_active_windows": {
+          "count": 2000,
+          "max": 10,
+          "median": 9.0,
+          "mean": 9.232,
+          "p95": 10
+        },
+        "forced_backedge_count": {
+          "count": 2000,
+          "max": 2,
+          "median": 0.0,
+          "mean": 0.088,
+          "p95": 1
+        },
+        "flexible_pair_count": {
+          "count": 2000,
+          "max": 45,
+          "median": 44.0,
+          "mean": 43.106,
+          "p95": 45
+        },
+        "score_span": {
+          "count": 2000,
+          "max": 9,
+          "median": 5.0,
+          "mean": 4.809,
+          "p95": 7
+        },
+        "distinct_scores": {
+          "count": 2000,
+          "max": 8,
+          "median": 5.0,
+          "mean": 5.143,
+          "p95": 6
+        }
+      }
+    }
+  ],
+  "regression_max": null,
+  "regression_p95": null
+}

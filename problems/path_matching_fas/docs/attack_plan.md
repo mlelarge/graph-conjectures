@@ -4,8 +4,11 @@
 > case. The structural lemmas conjectured in Phase 2 below are proved
 > in [`lemmas.md`](lemmas.md), and the polynomial-time decider is
 > implemented in [`../scripts/poly_mfas.py`](../scripts/poly_mfas.py).
-> The path case (Phase 4) remains open. The text below is preserved as
-> the original triage; consult `lemmas.md` and the top-level
+> The path case (Phase 4) remains open, but its correct target is now
+> recorded in [`path_fas.md`](path_fas.md): formal Path-FAS is equivalent
+> to the existence of a linear-forest back-arc ordering. The text below is
+> preserved as the original triage; consult `lemmas.md`, `path_fas.md`,
+> and the top-level
 > [`../README.md`](../README.md) for the actual results.
 
 ## Notation
@@ -25,9 +28,9 @@
 - **MFAS** (matching case): does $T$ admit a FAS $F$ with $\underline{F}$ a
   graph of max degree $\le 1$ (matching)?
 - **PFAS** (path case): does $T$ admit a FAS $F$ with $\underline{F}$ a path?
-  (We interpret "path" as a connected graph with two endpoints of degree 1
-  and all internal vertices of degree 2; under this interpretation $|F| \le
-  n-1$ and exactly $|F|+1$ vertices are touched.)
+  Because a topological order of $T-F$ has back-arcs only contained in
+  $F$, the equivalent ordering target is: does $T$ admit an order whose
+  back-arc graph is a linear forest?
 
 We focus first on MFAS — its constraint (every vertex incident to $\le 1$
 back-arc) is local and prima facie polynomially testable.
@@ -83,7 +86,7 @@ position $n$ must be in $\{v : d^+(v) \le 1\}$.
 
 - [ ] Verifier `verify(T, perm)` returning the back-arc set and a dict
   with `count`, `max_degree`, `is_matching`, `is_linear_forest`,
-  `is_path`, `is_forest`.
+  `is_path`, `is_path_fas`, `is_forest`.
 - [ ] Brute-force `decide_mfas(T)` and `decide_pfas(T)` by enumeration.
 - [ ] Unit tests on hand-checked tournaments.
 
@@ -134,17 +137,17 @@ If Phase 2 stalls:
 
 ### Phase 4 — PFAS (path case)
 
-PFAS asks the FAS to be a single path. Since paths are connected
-linear forests, the path case is *more* restrictive than the linear-
-forest case: $|F| \le n-1$, exactly $|F|-1$ vertices have back-degree 2
-and exactly 2 have back-degree 1.
+PFAS asks the FAS to be a single path. The exact back-arc graph need not
+itself be connected: it only has to be contained in the path-shaped FAS.
+Thus the formal ordering target is exactly the linear-forest case:
+$|B_\prec(T)| \le n-1$ and every vertex has back-degree at most 2, with
+no cycle in the back-arc graph.
 
-- [ ] First decide a relaxation: is there a FAS whose underlying graph is a
-  **linear forest** (every component a path)? This bounds back-degree by 2
-  and may admit a 2-SAT / matroid argument.
-- [ ] Then add the connectivity constraint. The path case may turn out
-  NP-hard while the linear-forest case is polynomial — that gap would
-  itself be publishable.
+- [ ] Decide whether there is a **linear-forest ordering**. This bounds
+  back-degree by 2 and may admit a 2-SAT / matroid / bounded-width
+  dynamic-programming argument.
+- [ ] Alternatively, adapt the forest-ordering NP-hardness reduction and
+  replace high-degree forest gadgets by degree-2 chains.
 
 ## Deliverables
 

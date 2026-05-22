@@ -1,4 +1,4 @@
-"""Empirical sweep: decide MFAS/PFAS/LFFAS/Forest-FAS on every
+"""Empirical sweep: decide MFAS/exact-path/PFAS/Forest-FAS on every
 non-isomorphic tournament for n <= nmax.
 
 For each n we generate tournaments by iterating over the 2^{C(n,2)}
@@ -54,6 +54,7 @@ def sweep_n(n: int) -> dict:
     seen: set[tuple] = set()
     matching_yes = 0
     path_yes = 0
+    path_fas_yes = 0
     lin_forest_yes = 0
     forest_yes = 0
     total = 0
@@ -71,7 +72,7 @@ def sweep_n(n: int) -> dict:
         total += 1
 
         results = {tgt: decide(T, tgt) for tgt in
-                   ("matching", "path", "linear_forest", "forest")}
+                   ("matching", "path", "path_fas", "linear_forest", "forest")}
         if results["matching"]["found"]:
             matching_yes += 1
             if len(matching_yes_examples) < 6:
@@ -86,6 +87,9 @@ def sweep_n(n: int) -> dict:
                 path_no_examples.append(T)
         if results["linear_forest"]["found"]:
             lin_forest_yes += 1
+        if results["path_fas"]["found"]:
+            path_fas_yes += 1
+        assert results["path_fas"]["found"] == results["linear_forest"]["found"]
         if results["forest"]["found"]:
             forest_yes += 1
         else:
@@ -99,6 +103,8 @@ def sweep_n(n: int) -> dict:
         "matching_no": total - matching_yes,
         "path_yes": path_yes,
         "path_no": total - path_yes,
+        "path_fas_yes": path_fas_yes,
+        "path_fas_no": total - path_fas_yes,
         "linear_forest_yes": lin_forest_yes,
         "forest_yes": forest_yes,
         "matching_yes_examples": matching_yes_examples,
@@ -127,7 +133,8 @@ def main() -> None:
         all_results.append(r)
         print(f"   total non-iso: {r['non_iso_total']}")
         print(f"   matching_yes : {r['matching_yes']} (/ {r['non_iso_total']})")
-        print(f"   path_yes     : {r['path_yes']} (/ {r['non_iso_total']})")
+        print(f"   exact_path   : {r['path_yes']} (/ {r['non_iso_total']})")
+        print(f"   path_fas     : {r['path_fas_yes']} (/ {r['non_iso_total']})")
         print(f"   linear_forest: {r['linear_forest_yes']} (/ {r['non_iso_total']})")
         print(f"   forest_yes   : {r['forest_yes']} (/ {r['non_iso_total']})")
         print(f"   elapsed      : {r['seconds']}s")

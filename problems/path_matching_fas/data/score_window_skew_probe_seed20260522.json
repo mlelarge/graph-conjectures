@@ -1,0 +1,901 @@
+{
+  "mode": "skew",
+  "seed": 20260522,
+  "samples_per_group": 200,
+  "ps": [
+    0.02,
+    0.05,
+    0.1,
+    0.2
+  ],
+  "groups": [
+    {
+      "label": "transitive_noise_n12_p0.02",
+      "n": 12,
+      "samples": 200,
+      "seconds": 0.11,
+      "summary": {
+        "count": 200,
+        "found": {
+          "count": 200,
+          "true": 199,
+          "false": 1
+        },
+        "initial_hall": {
+          "count": 200,
+          "true": 200,
+          "false": 0
+        },
+        "forced_obstruction": {
+          "none": 200
+        },
+        "nodes": {
+          "count": 200,
+          "max": 2074,
+          "median": 15.0,
+          "mean": 25.295,
+          "p95": 19
+        },
+        "max_frontier": {
+          "count": 200,
+          "max": 5,
+          "median": 4.0,
+          "mean": 3.66,
+          "p95": 4
+        },
+        "max_active_windows": {
+          "count": 200,
+          "max": 7,
+          "median": 6.0,
+          "mean": 5.865,
+          "p95": 7
+        },
+        "forced_backedge_count": {
+          "count": 200,
+          "max": 2,
+          "median": 0.0,
+          "mean": 0.28,
+          "p95": 1
+        },
+        "flexible_pair_count": {
+          "count": 200,
+          "max": 44,
+          "median": 39.0,
+          "mean": 39.155,
+          "p95": 42
+        },
+        "score_span": {
+          "count": 200,
+          "max": 11,
+          "median": 11.0,
+          "mean": 10.615,
+          "p95": 11
+        },
+        "distinct_scores": {
+          "count": 200,
+          "max": 12,
+          "median": 10.0,
+          "mean": 10.365,
+          "p95": 12
+        }
+      }
+    },
+    {
+      "label": "transitive_noise_n12_p0.05",
+      "n": 12,
+      "samples": 200,
+      "seconds": 0.126,
+      "summary": {
+        "count": 200,
+        "found": {
+          "count": 200,
+          "true": 194,
+          "false": 6
+        },
+        "initial_hall": {
+          "count": 200,
+          "true": 200,
+          "false": 0
+        },
+        "forced_obstruction": {
+          "none": 200
+        },
+        "nodes": {
+          "count": 200,
+          "max": 2699,
+          "median": 16.0,
+          "mean": 32.45,
+          "p95": 34
+        },
+        "max_frontier": {
+          "count": 200,
+          "max": 5,
+          "median": 4.0,
+          "mean": 4.045,
+          "p95": 5
+        },
+        "max_active_windows": {
+          "count": 200,
+          "max": 9,
+          "median": 7.0,
+          "mean": 6.54,
+          "p95": 8
+        },
+        "forced_backedge_count": {
+          "count": 200,
+          "max": 4,
+          "median": 1.0,
+          "mean": 0.765,
+          "p95": 2
+        },
+        "flexible_pair_count": {
+          "count": 200,
+          "max": 52,
+          "median": 41.0,
+          "mean": 41.395,
+          "p95": 46
+        },
+        "score_span": {
+          "count": 200,
+          "max": 11,
+          "median": 10.0,
+          "mean": 9.92,
+          "p95": 11
+        },
+        "distinct_scores": {
+          "count": 200,
+          "max": 12,
+          "median": 9.0,
+          "mean": 8.82,
+          "p95": 10
+        }
+      }
+    },
+    {
+      "label": "transitive_noise_n12_p0.1",
+      "n": 12,
+      "samples": 200,
+      "seconds": 0.189,
+      "summary": {
+        "count": 200,
+        "found": {
+          "count": 200,
+          "true": 147,
+          "false": 53
+        },
+        "initial_hall": {
+          "count": 200,
+          "true": 198,
+          "false": 2
+        },
+        "forced_obstruction": {
+          "none": 198,
+          "score_window_hall": 2
+        },
+        "nodes": {
+          "count": 200,
+          "max": 920,
+          "median": 20.0,
+          "mean": 54.35,
+          "p95": 239
+        },
+        "max_frontier": {
+          "count": 200,
+          "max": 5,
+          "median": 4.0,
+          "mean": 4.21,
+          "p95": 5
+        },
+        "max_active_windows": {
+          "count": 200,
+          "max": 10,
+          "median": 7.0,
+          "mean": 7.175,
+          "p95": 8
+        },
+        "forced_backedge_count": {
+          "count": 200,
+          "max": 4,
+          "median": 1.0,
+          "mean": 0.995,
+          "p95": 2
+        },
+        "flexible_pair_count": {
+          "count": 200,
+          "max": 60,
+          "median": 43.0,
+          "mean": 44.12,
+          "p95": 51
+        },
+        "score_span": {
+          "count": 200,
+          "max": 11,
+          "median": 10.0,
+          "mean": 9.47,
+          "p95": 11
+        },
+        "distinct_scores": {
+          "count": 200,
+          "max": 10,
+          "median": 8.0,
+          "mean": 8.23,
+          "p95": 10
+        }
+      }
+    },
+    {
+      "label": "transitive_noise_n12_p0.2",
+      "n": 12,
+      "samples": 200,
+      "seconds": 0.132,
+      "summary": {
+        "count": 200,
+        "found": {
+          "count": 200,
+          "true": 50,
+          "false": 150
+        },
+        "initial_hall": {
+          "count": 200,
+          "true": 155,
+          "false": 45
+        },
+        "forced_obstruction": {
+          "none": 155,
+          "score_window_hall": 45
+        },
+        "nodes": {
+          "count": 200,
+          "max": 286,
+          "median": 19.0,
+          "mean": 32.395,
+          "p95": 115
+        },
+        "max_frontier": {
+          "count": 200,
+          "max": 5,
+          "median": 4.0,
+          "mean": 3.35,
+          "p95": 5
+        },
+        "max_active_windows": {
+          "count": 200,
+          "max": 11,
+          "median": 8.0,
+          "mean": 8.42,
+          "p95": 10
+        },
+        "forced_backedge_count": {
+          "count": 200,
+          "max": 4,
+          "median": 1.0,
+          "mean": 1.11,
+          "p95": 3
+        },
+        "flexible_pair_count": {
+          "count": 200,
+          "max": 64,
+          "median": 50.0,
+          "mean": 50.6,
+          "p95": 59
+        },
+        "score_span": {
+          "count": 200,
+          "max": 11,
+          "median": 8.0,
+          "mean": 8.065,
+          "p95": 10
+        },
+        "distinct_scores": {
+          "count": 200,
+          "max": 10,
+          "median": 7.0,
+          "mean": 7.335,
+          "p95": 9
+        }
+      }
+    },
+    {
+      "label": "transitive_noise_n16_p0.02",
+      "n": 16,
+      "samples": 200,
+      "seconds": 0.351,
+      "summary": {
+        "count": 200,
+        "found": {
+          "count": 200,
+          "true": 196,
+          "false": 4
+        },
+        "initial_hall": {
+          "count": 200,
+          "true": 200,
+          "false": 0
+        },
+        "forced_obstruction": {
+          "forced_degree": 1,
+          "none": 199
+        },
+        "nodes": {
+          "count": 200,
+          "max": 6928,
+          "median": 20.0,
+          "mean": 73.61,
+          "p95": 32
+        },
+        "max_frontier": {
+          "count": 200,
+          "max": 5,
+          "median": 4.0,
+          "mean": 3.91,
+          "p95": 4
+        },
+        "max_active_windows": {
+          "count": 200,
+          "max": 8,
+          "median": 6.0,
+          "mean": 6.235,
+          "p95": 7
+        },
+        "forced_backedge_count": {
+          "count": 200,
+          "max": 4,
+          "median": 1.0,
+          "mean": 0.955,
+          "p95": 3
+        },
+        "flexible_pair_count": {
+          "count": 200,
+          "max": 62,
+          "median": 55.0,
+          "mean": 55.83,
+          "p95": 59
+        },
+        "score_span": {
+          "count": 200,
+          "max": 15,
+          "median": 15.0,
+          "mean": 14.5,
+          "p95": 15
+        },
+        "distinct_scores": {
+          "count": 200,
+          "max": 16,
+          "median": 13.0,
+          "mean": 13.055,
+          "p95": 16
+        }
+      }
+    },
+    {
+      "label": "transitive_noise_n16_p0.05",
+      "n": 16,
+      "samples": 200,
+      "seconds": 1.218,
+      "summary": {
+        "count": 200,
+        "found": {
+          "count": 200,
+          "true": 153,
+          "false": 47
+        },
+        "initial_hall": {
+          "count": 200,
+          "true": 199,
+          "false": 1
+        },
+        "forced_obstruction": {
+          "forced_degree": 5,
+          "none": 194,
+          "score_window_hall": 1
+        },
+        "nodes": {
+          "count": 200,
+          "max": 18383,
+          "median": 25.0,
+          "mean": 401.63,
+          "p95": 1535
+        },
+        "max_frontier": {
+          "count": 200,
+          "max": 5,
+          "median": 4.0,
+          "mean": 4.085,
+          "p95": 5
+        },
+        "max_active_windows": {
+          "count": 200,
+          "max": 9,
+          "median": 7.0,
+          "mean": 6.935,
+          "p95": 8
+        },
+        "forced_backedge_count": {
+          "count": 200,
+          "max": 6,
+          "median": 2.0,
+          "mean": 2.16,
+          "p95": 5
+        },
+        "flexible_pair_count": {
+          "count": 200,
+          "max": 67,
+          "median": 59.0,
+          "mean": 58.92,
+          "p95": 64
+        },
+        "score_span": {
+          "count": 200,
+          "max": 15,
+          "median": 14.0,
+          "mean": 13.72,
+          "p95": 15
+        },
+        "distinct_scores": {
+          "count": 200,
+          "max": 16,
+          "median": 11.0,
+          "mean": 11.345,
+          "p95": 13
+        }
+      }
+    },
+    {
+      "label": "transitive_noise_n16_p0.1",
+      "n": 16,
+      "samples": 200,
+      "seconds": 0.497,
+      "summary": {
+        "count": 200,
+        "found": {
+          "count": 200,
+          "true": 63,
+          "false": 137
+        },
+        "initial_hall": {
+          "count": 200,
+          "true": 173,
+          "false": 27
+        },
+        "forced_obstruction": {
+          "forced_cycle": 1,
+          "forced_degree": 6,
+          "none": 166,
+          "score_window_hall": 27
+        },
+        "nodes": {
+          "count": 200,
+          "max": 2295,
+          "median": 31.0,
+          "mean": 102.295,
+          "p95": 460
+        },
+        "max_frontier": {
+          "count": 200,
+          "max": 5,
+          "median": 4.0,
+          "mean": 3.54,
+          "p95": 5
+        },
+        "max_active_windows": {
+          "count": 200,
+          "max": 10,
+          "median": 8.0,
+          "mean": 7.71,
+          "p95": 9
+        },
+        "forced_backedge_count": {
+          "count": 200,
+          "max": 7,
+          "median": 3.0,
+          "mean": 3.35,
+          "p95": 6
+        },
+        "flexible_pair_count": {
+          "count": 200,
+          "max": 74,
+          "median": 63.5,
+          "mean": 63.89,
+          "p95": 71
+        },
+        "score_span": {
+          "count": 200,
+          "max": 15,
+          "median": 13.0,
+          "mean": 12.88,
+          "p95": 15
+        },
+        "distinct_scores": {
+          "count": 200,
+          "max": 14,
+          "median": 11.0,
+          "mean": 10.52,
+          "p95": 12
+        }
+      }
+    },
+    {
+      "label": "transitive_noise_n16_p0.2",
+      "n": 16,
+      "samples": 200,
+      "seconds": 0.074,
+      "summary": {
+        "count": 200,
+        "found": {
+          "count": 200,
+          "true": 1,
+          "false": 199
+        },
+        "initial_hall": {
+          "count": 200,
+          "true": 38,
+          "false": 162
+        },
+        "forced_obstruction": {
+          "forced_degree": 1,
+          "none": 37,
+          "score_window_hall": 162
+        },
+        "nodes": {
+          "count": 200,
+          "max": 185,
+          "median": 0.0,
+          "mean": 4.185,
+          "p95": 24
+        },
+        "max_frontier": {
+          "count": 200,
+          "max": 5,
+          "median": 0.0,
+          "mean": 0.585,
+          "p95": 4
+        },
+        "max_active_windows": {
+          "count": 200,
+          "max": 13,
+          "median": 9.0,
+          "mean": 9.45,
+          "p95": 11
+        },
+        "forced_backedge_count": {
+          "count": 200,
+          "max": 8,
+          "median": 5.0,
+          "mean": 4.555,
+          "p95": 7
+        },
+        "flexible_pair_count": {
+          "count": 200,
+          "max": 111,
+          "median": 77.0,
+          "mean": 77.17,
+          "p95": 90
+        },
+        "score_span": {
+          "count": 200,
+          "max": 15,
+          "median": 11.0,
+          "mean": 10.89,
+          "p95": 13
+        },
+        "distinct_scores": {
+          "count": 200,
+          "max": 13,
+          "median": 9.0,
+          "mean": 9.27,
+          "p95": 11
+        }
+      }
+    },
+    {
+      "label": "transitive_noise_n20_p0.02",
+      "n": 20,
+      "samples": 200,
+      "seconds": 2.043,
+      "summary": {
+        "count": 200,
+        "found": {
+          "count": 200,
+          "true": 193,
+          "false": 7
+        },
+        "initial_hall": {
+          "count": 200,
+          "true": 200,
+          "false": 0
+        },
+        "forced_obstruction": {
+          "forced_degree": 1,
+          "none": 199
+        },
+        "nodes": {
+          "count": 200,
+          "max": 71976,
+          "median": 25.0,
+          "mean": 447.55,
+          "p95": 43
+        },
+        "max_frontier": {
+          "count": 200,
+          "max": 5,
+          "median": 4.0,
+          "mean": 3.98,
+          "p95": 4
+        },
+        "max_active_windows": {
+          "count": 200,
+          "max": 8,
+          "median": 6.0,
+          "mean": 6.38,
+          "p95": 7
+        },
+        "forced_backedge_count": {
+          "count": 200,
+          "max": 6,
+          "median": 2.0,
+          "mean": 1.84,
+          "p95": 4
+        },
+        "flexible_pair_count": {
+          "count": 200,
+          "max": 80,
+          "median": 72.0,
+          "mean": 72.255,
+          "p95": 76
+        },
+        "score_span": {
+          "count": 200,
+          "max": 19,
+          "median": 18.0,
+          "mean": 18.33,
+          "p95": 19
+        },
+        "distinct_scores": {
+          "count": 200,
+          "max": 20,
+          "median": 16.0,
+          "mean": 15.815,
+          "p95": 20
+        }
+      }
+    },
+    {
+      "label": "transitive_noise_n20_p0.05",
+      "n": 20,
+      "samples": 200,
+      "seconds": 8.778,
+      "summary": {
+        "count": 200,
+        "found": {
+          "count": 200,
+          "true": 106,
+          "false": 94
+        },
+        "initial_hall": {
+          "count": 200,
+          "true": 197,
+          "false": 3
+        },
+        "forced_obstruction": {
+          "forced_degree": 12,
+          "none": 185,
+          "score_window_hall": 3
+        },
+        "nodes": {
+          "count": 200,
+          "max": 367455,
+          "median": 38.0,
+          "mean": 2826.87,
+          "p95": 6887
+        },
+        "max_frontier": {
+          "count": 200,
+          "max": 5,
+          "median": 4.0,
+          "mean": 4,
+          "p95": 5
+        },
+        "max_active_windows": {
+          "count": 200,
+          "max": 9,
+          "median": 7.0,
+          "mean": 7.18,
+          "p95": 8
+        },
+        "forced_backedge_count": {
+          "count": 200,
+          "max": 11,
+          "median": 4.0,
+          "mean": 4.145,
+          "p95": 7
+        },
+        "flexible_pair_count": {
+          "count": 200,
+          "max": 87,
+          "median": 76.0,
+          "mean": 76.345,
+          "p95": 82
+        },
+        "score_span": {
+          "count": 200,
+          "max": 19,
+          "median": 17.5,
+          "mean": 17.535,
+          "p95": 19
+        },
+        "distinct_scores": {
+          "count": 200,
+          "max": 17,
+          "median": 14.0,
+          "mean": 13.865,
+          "p95": 16
+        }
+      }
+    },
+    {
+      "label": "transitive_noise_n20_p0.1",
+      "n": 20,
+      "samples": 200,
+      "seconds": 0.761,
+      "summary": {
+        "count": 200,
+        "found": {
+          "count": 200,
+          "true": 4,
+          "false": 196
+        },
+        "initial_hall": {
+          "count": 200,
+          "true": 132,
+          "false": 68
+        },
+        "forced_obstruction": {
+          "forced_degree": 50,
+          "none": 82,
+          "score_window_hall": 68
+        },
+        "nodes": {
+          "count": 200,
+          "max": 2455,
+          "median": 11.5,
+          "mean": 94.825,
+          "p95": 559
+        },
+        "max_frontier": {
+          "count": 200,
+          "max": 5,
+          "median": 3.0,
+          "mean": 2.21,
+          "p95": 5
+        },
+        "max_active_windows": {
+          "count": 200,
+          "max": 11,
+          "median": 8.0,
+          "mean": 8.065,
+          "p95": 9
+        },
+        "forced_backedge_count": {
+          "count": 200,
+          "max": 14,
+          "median": 7.0,
+          "mean": 7.45,
+          "p95": 11
+        },
+        "flexible_pair_count": {
+          "count": 200,
+          "max": 103,
+          "median": 84.0,
+          "mean": 84.115,
+          "p95": 94
+        },
+        "score_span": {
+          "count": 200,
+          "max": 19,
+          "median": 16.0,
+          "mean": 16.235,
+          "p95": 18
+        },
+        "distinct_scores": {
+          "count": 200,
+          "max": 16,
+          "median": 13.0,
+          "mean": 13.07,
+          "p95": 15
+        }
+      }
+    },
+    {
+      "label": "transitive_noise_n20_p0.2",
+      "n": 20,
+      "samples": 200,
+      "seconds": 0.054,
+      "summary": {
+        "count": 200,
+        "found": {
+          "count": 200,
+          "true": 0,
+          "false": 200
+        },
+        "initial_hall": {
+          "count": 200,
+          "true": 1,
+          "false": 199
+        },
+        "forced_obstruction": {
+          "forced_degree": 1,
+          "score_window_hall": 199
+        },
+        "nodes": {
+          "count": 200,
+          "max": 27,
+          "median": 0.0,
+          "mean": 0.135,
+          "p95": 0
+        },
+        "max_frontier": {
+          "count": 200,
+          "max": 3,
+          "median": 0.0,
+          "mean": 0.015,
+          "p95": 0
+        },
+        "max_active_windows": {
+          "count": 200,
+          "max": 14,
+          "median": 10.0,
+          "mean": 9.975,
+          "p95": 12
+        },
+        "forced_backedge_count": {
+          "count": 200,
+          "max": 18,
+          "median": 12.0,
+          "mean": 11.595,
+          "p95": 15
+        },
+        "flexible_pair_count": {
+          "count": 200,
+          "max": 135,
+          "median": 103.0,
+          "mean": 103.96,
+          "p95": 121
+        },
+        "score_span": {
+          "count": 200,
+          "max": 17,
+          "median": 14.0,
+          "mean": 13.74,
+          "p95": 16
+        },
+        "distinct_scores": {
+          "count": 200,
+          "max": 14,
+          "median": 12.0,
+          "mean": 11.51,
+          "p95": 13
+        }
+      }
+    }
+  ],
+  "by_n_forced_backedges_mean": {
+    "12": {
+      "transitive_noise_n12_p0.02": 0.28,
+      "transitive_noise_n12_p0.05": 0.765,
+      "transitive_noise_n12_p0.1": 0.995,
+      "transitive_noise_n12_p0.2": 1.11
+    },
+    "16": {
+      "transitive_noise_n16_p0.02": 0.955,
+      "transitive_noise_n16_p0.05": 2.16,
+      "transitive_noise_n16_p0.1": 3.35,
+      "transitive_noise_n16_p0.2": 4.555
+    },
+    "20": {
+      "transitive_noise_n20_p0.02": 1.84,
+      "transitive_noise_n20_p0.05": 4.145,
+      "transitive_noise_n20_p0.1": 7.45,
+      "transitive_noise_n20_p0.2": 11.595
+    }
+  }
+}

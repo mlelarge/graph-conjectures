@@ -1,0 +1,7093 @@
+{
+  "n": 7,
+  "targets": [
+    [
+      2,
+      2,
+      3,
+      3,
+      3,
+      4,
+      4
+    ],
+    [
+      2,
+      3,
+      3,
+      3,
+      3,
+      3,
+      4
+    ],
+    [
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+    ]
+  ],
+  "seconds": 69.02,
+  "buckets": [
+    {
+      "summary": {
+        "score_sequence": [
+          2,
+          2,
+          3,
+          3,
+          3,
+          4,
+          4
+        ],
+        "labeled_total": 233520,
+        "non_iso_total": 47,
+        "lfo_yes": 42,
+        "lfo_no": 5,
+        "size_no": 0,
+        "combinatorial_no": 5,
+        "degree2_relaxation_yes": 47,
+        "forest_ordering_yes": 47,
+        "matching_fas_yes": 0,
+        "exact_path_backarcs_yes": 42
+      },
+      "records": [
+        {
+          "iso_index": 0,
+          "score_sequence": [
+            2,
+            2,
+            3,
+            3,
+            3,
+            4,
+            4
+          ],
+          "T": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              1,
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              0
+            ]
+          ],
+          "min_fas": 4,
+          "has_lfo": false,
+          "has_degree2_relaxation": true,
+          "has_forest_ordering": true,
+          "has_matching_fas": false,
+          "has_exact_path_backarcs": false,
+          "lfo_order": null,
+          "degree2_order": [
+            4,
+            2,
+            0,
+            6,
+            5,
+            3,
+            1
+          ],
+          "forest_order": [
+            2,
+            6,
+            5,
+            4,
+            3,
+            1,
+            0
+          ],
+          "no_kind": "combinatorial"
+        },
+        {
+          "iso_index": 1,
+          "score_sequence": [
+            2,
+            2,
+            3,
+            3,
+            3,
+            4,
+            4
+          ],
+          "T": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              1,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              0
+            ]
+          ],
+          "min_fas": 5,
+          "has_lfo": false,
+          "has_degree2_relaxation": true,
+          "has_forest_ordering": true,
+          "has_matching_fas": false,
+          "has_exact_path_backarcs": false,
+          "lfo_order": null,
+          "degree2_order": [
+            4,
+            2,
+            0,
+            6,
+            3,
+            5,
+            1
+          ],
+          "forest_order": [
+            3,
+            6,
+            5,
+            4,
+            2,
+            1,
+            0
+          ],
+          "no_kind": "combinatorial"
+        },
+        {
+          "iso_index": 2,
+          "score_sequence": [
+            2,
+            2,
+            3,
+            3,
+            3,
+            4,
+            4
+          ],
+          "T": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              1,
+              1,
+              1,
+              0
+            ]
+          ],
+          "min_fas": 4,
+          "has_lfo": true,
+          "has_degree2_relaxation": true,
+          "has_forest_ordering": true,
+          "has_matching_fas": false,
+          "has_exact_path_backarcs": true,
+          "lfo_order": [
+            6,
+            2,
+            4,
+            5,
+            3,
+            1,
+            0
+          ],
+          "degree2_order": [
+            6,
+            2,
+            4,
+            3,
+            0,
+            5,
+            1
+          ],
+          "forest_order": [
+            0,
+            6,
+            5,
+            4,
+            3,
+            2,
+            1
+          ],
+          "no_kind": null
+        },
+        {
+          "iso_index": 3,
+          "score_sequence": [
+            2,
+            2,
+            3,
+            3,
+            3,
+            4,
+            4
+          ],
+          "T": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              0
+            ]
+          ],
+          "min_fas": 4,
+          "has_lfo": true,
+          "has_degree2_relaxation": true,
+          "has_forest_ordering": true,
+          "has_matching_fas": false,
+          "has_exact_path_backarcs": true,
+          "lfo_order": [
+            5,
+            4,
+            1,
+            6,
+            3,
+            2,
+            0
+          ],
+          "degree2_order": [
+            5,
+            3,
+            1,
+            6,
+            4,
+            2,
+            0
+          ],
+          "forest_order": [
+            0,
+            5,
+            6,
+            4,
+            3,
+            2,
+            1
+          ],
+          "no_kind": null
+        },
+        {
+          "iso_index": 4,
+          "score_sequence": [
+            2,
+            2,
+            3,
+            3,
+            3,
+            4,
+            4
+          ],
+          "T": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0,
+              1,
+              1,
+              0
+            ]
+          ],
+          "min_fas": 5,
+          "has_lfo": true,
+          "has_degree2_relaxation": true,
+          "has_forest_ordering": true,
+          "has_matching_fas": false,
+          "has_exact_path_backarcs": true,
+          "lfo_order": [
+            3,
+            6,
+            2,
+            5,
+            4,
+            1,
+            0
+          ],
+          "degree2_order": [
+            3,
+            6,
+            2,
+            5,
+            4,
+            1,
+            0
+          ],
+          "forest_order": [
+            3,
+            6,
+            2,
+            5,
+            4,
+            1,
+            0
+          ],
+          "no_kind": null
+        },
+        {
+          "iso_index": 5,
+          "score_sequence": [
+            2,
+            2,
+            3,
+            3,
+            3,
+            4,
+            4
+          ],
+          "T": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0,
+              1,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              0
+            ]
+          ],
+          "min_fas": 5,
+          "has_lfo": false,
+          "has_degree2_relaxation": true,
+          "has_forest_ordering": true,
+          "has_matching_fas": false,
+          "has_exact_path_backarcs": false,
+          "lfo_order": null,
+          "degree2_order": [
+            3,
+            5,
+            1,
+            6,
+            4,
+            2,
+            0
+          ],
+          "forest_order": [
+            3,
+            5,
+            6,
+            4,
+            2,
+            1,
+            0
+          ],
+          "no_kind": "combinatorial"
+        },
+        {
+          "iso_index": 6,
+          "score_sequence": [
+            2,
+            2,
+            3,
+            3,
+            3,
+            4,
+            4
+          ],
+          "T": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              0
+            ]
+          ],
+          "min_fas": 5,
+          "has_lfo": true,
+          "has_degree2_relaxation": true,
+          "has_forest_ordering": true,
+          "has_matching_fas": false,
+          "has_exact_path_backarcs": true,
+          "lfo_order": [
+            2,
+            6,
+            4,
+            5,
+            3,
+            1,
+            0
+          ],
+          "degree2_order": [
+            2,
+            5,
+            1,
+            6,
+            4,
+            3,
+            0
+          ],
+          "forest_order": [
+            2,
+            6,
+            4,
+            5,
+            3,
+            1,
+            0
+          ],
+          "no_kind": null
+        },
+        {
+          "iso_index": 7,
+          "score_sequence": [
+            2,
+            2,
+            3,
+            3,
+            3,
+            4,
+            4
+          ],
+          "T": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              1,
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              1,
+              1,
+              1,
+              0
+            ]
+          ],
+          "min_fas": 4,
+          "has_lfo": true,
+          "has_degree2_relaxation": true,
+          "has_forest_ordering": true,
+          "has_matching_fas": false,
+          "has_exact_path_backarcs": true,
+          "lfo_order": [
+            6,
+            2,
+            5,
+            3,
+            4,
+            1,
+            0
+          ],
+          "degree2_order": [
+            6,
+            2,
+            5,
+            3,
+            1,
+            4,
+            0
+          ],
+          "forest_order": [
+            6,
+            2,
+            4,
+            5,
+            3,
+            1,
+            0
+          ],
+          "no_kind": null
+        },
+        {
+          "iso_index": 8,
+          "score_sequence": [
+            2,
+            2,
+            3,
+            3,
+            3,
+            4,
+            4
+          ],
+          "T": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              1,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              1,
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              1,
+              0,
+              1,
+              0
+            ]
+          ],
+          "min_fas": 5,
+          "has_lfo": true,
+          "has_degree2_relaxation": true,
+          "has_forest_ordering": true,
+          "has_matching_fas": false,
+          "has_exact_path_backarcs": true,
+          "lfo_order": [
+            4,
+            6,
+            5,
+            2,
+            3,
+            1,
+            0
+          ],
+          "degree2_order": [
+            4,
+            3,
+            0,
+            6,
+            5,
+            2,
+            1
+          ],
+          "forest_order": [
+            4,
+            0,
+            6,
+            5,
+            3,
+            2,
+            1
+          ],
+          "no_kind": null
+        },
+        {
+          "iso_index": 9,
+          "score_sequence": [
+            2,
+            2,
+            3,
+            3,
+            3,
+            4,
+            4
+          ],
+          "T": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              1,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              1,
+              1,
+              1,
+              0
+            ]
+          ],
+          "min_fas": 4,
+          "has_lfo": true,
+          "has_degree2_relaxation": true,
+          "has_forest_ordering": true,
+          "has_matching_fas": false,
+          "has_exact_path_backarcs": true,
+          "lfo_order": [
+            6,
+            2,
+            4,
+            5,
+            3,
+            1,
+            0
+          ],
+          "degree2_order": [
+            6,
+            2,
+            4,
+            3,
+            0,
+            5,
+            1
+          ],
+          "forest_order": [
+            4,
+            6,
+            3,
+            5,
+            2,
+            1,
+            0
+          ],
+          "no_kind": null
+        },
+        {
+          "iso_index": 10,
+          "score_sequence": [
+            2,
+            2,
+            3,
+            3,
+            3,
+            4,
+            4
+          ],
+          "T": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              1,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              1,
+              1,
+              1,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              0
+            ]
+          ],
+          "min_fas": 5,
+          "has_lfo": true,
+          "has_degree2_relaxation": true,
+          "has_forest_ordering": true,
+          "has_matching_fas": false,
+          "has_exact_path_backarcs": true,
+          "lfo_order": [
+            4,
+            5,
+            1,
+            6,
+            3,
+            2,
+            0
+          ],
+          "degree2_order": [
+            4,
+            5,
+            1,
+            6,
+            3,
+            2,
+            0
+          ],
+          "forest_order": [
+            4,
+            5,
+            1,
+            6,
+            3,
+            2,
+            0
+          ],
+          "no_kind": null
+        },
+        {
+          "iso_index": 11,
+          "score_sequence": [
+            2,
+            2,
+            3,
+            3,
+            3,
+            4,
+            4
+          ],
+          "T": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              1,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0,
+              1,
+              1,
+              0
+            ]
+          ],
+          "min_fas": 5,
+          "has_lfo": true,
+          "has_degree2_relaxation": true,
+          "has_forest_ordering": true,
+          "has_matching_fas": false,
+          "has_exact_path_backarcs": true,
+          "lfo_order": [
+            3,
+            6,
+            4,
+            5,
+            2,
+            1,
+            0
+          ],
+          "degree2_order": [
+            3,
+            2,
+            0,
+            6,
+            4,
+            5,
+            1
+          ],
+          "forest_order": [
+            3,
+            6,
+            2,
+            4,
+            1,
+            0,
+            5
+          ],
+          "no_kind": null
+        },
+        {
+          "iso_index": 12,
+          "score_sequence": [
+            2,
+            2,
+            3,
+            3,
+            3,
+            4,
+            4
+          ],
+          "T": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              1,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              1,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              1,
+              0,
+              1,
+              0
+            ]
+          ],
+          "min_fas": 5,
+          "has_lfo": true,
+          "has_degree2_relaxation": true,
+          "has_forest_ordering": true,
+          "has_matching_fas": false,
+          "has_exact_path_backarcs": true,
+          "lfo_order": [
+            4,
+            3,
+            0,
+            6,
+            5,
+            2,
+            1
+          ],
+          "degree2_order": [
+            4,
+            3,
+            0,
+            6,
+            5,
+            2,
+            1
+          ],
+          "forest_order": [
+            3,
+            5,
+            2,
+            1,
+            4,
+            0,
+            6
+          ],
+          "no_kind": null
+        },
+        {
+          "iso_index": 13,
+          "score_sequence": [
+            2,
+            2,
+            3,
+            3,
+            3,
+            4,
+            4
+          ],
+          "T": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              1,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              1,
+              1,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              0
+            ]
+          ],
+          "min_fas": 5,
+          "has_lfo": false,
+          "has_degree2_relaxation": true,
+          "has_forest_ordering": true,
+          "has_matching_fas": false,
+          "has_exact_path_backarcs": false,
+          "lfo_order": null,
+          "degree2_order": [
+            4,
+            5,
+            1,
+            6,
+            3,
+            2,
+            0
+          ],
+          "forest_order": [
+            4,
+            3,
+            1,
+            0,
+            5,
+            6,
+            2
+          ],
+          "no_kind": "combinatorial"
+        },
+        {
+          "iso_index": 14,
+          "score_sequence": [
+            2,
+            2,
+            3,
+            3,
+            3,
+            4,
+            4
+          ],
+          "T": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              1,
+              1,
+              1,
+              0
+            ]
+          ],
+          "min_fas": 4,
+          "has_lfo": false,
+          "has_degree2_relaxation": true,
+          "has_forest_ordering": true,
+          "has_matching_fas": false,
+          "has_exact_path_backarcs": false,
+          "lfo_order": null,
+          "degree2_order": [
+            4,
+            1,
+            0,
+            5,
+            6,
+            3,
+            2
+          ],
+          "forest_order": [
+            0,
+            6,
+            5,
+            4,
+            3,
+            2,
+            1
+          ],
+          "no_kind": "combinatorial"
+        },
+        {
+          "iso_index": 15,
+          "score_sequence": [
+            2,
+            2,
+            3,
+            3,
+            3,
+            4,
+            4
+          ],
+          "T": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0,
+              1,
+              1,
+              0
+            ]
+          ],
+          "min_fas": 5,
+          "has_lfo": true,
+          "has_degree2_relaxation": true,
+          "has_forest_ordering": true,
+          "has_matching_fas": false,
+          "has_exact_path_backarcs": true,
+          "lfo_order": [
+            3,
+            1,
+            6,
+            5,
+            4,
+            2,
+            0
+          ],
+          "degree2_order": [
+            3,
+            1,
+            6,
+            5,
+            4,
+            2,
+            0
+          ],
+          "forest_order": [
+            1,
+            6,
+            5,
+            4,
+            3,
+            2,
+            0
+          ],
+          "no_kind": null
+        },
+        {
+          "iso_index": 16,
+          "score_sequence": [
+            2,
+            2,
+            3,
+            3,
+            3,
+            4,
+            4
+          ],
+          "T": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              1,
+              1,
+              0,
+              0
+            ]
+          ],
+          "min_fas": 4,
+          "has_lfo": true,
+          "has_degree2_relaxation": true,
+          "has_forest_ordering": true,
+          "has_matching_fas": false,
+          "has_exact_path_backarcs": true,
+          "lfo_order": [
+            4,
+            1,
+            5,
+            3,
+            2,
+            0,
+            6
+          ],
+          "degree2_order": [
+            4,
+            1,
+            5,
+            2,
+            6,
+            3,
+            0
+          ],
+          "forest_order": [
+            1,
+            5,
+            6,
+            4,
+            3,
+            2,
+            0
+          ],
+          "no_kind": null
+        },
+        {
+          "iso_index": 17,
+          "score_sequence": [
+            2,
+            2,
+            3,
+            3,
+            3,
+            4,
+            4
+          ],
+          "T": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              0
+            ]
+          ],
+          "min_fas": 4,
+          "has_lfo": true,
+          "has_degree2_relaxation": true,
+          "has_forest_ordering": true,
+          "has_matching_fas": false,
+          "has_exact_path_backarcs": true,
+          "lfo_order": [
+            4,
+            2,
+            1,
+            6,
+            3,
+            0,
+            5
+          ],
+          "degree2_order": [
+            4,
+            1,
+            3,
+            2,
+            0,
+            6,
+            5
+          ],
+          "forest_order": [
+            3,
+            2,
+            1,
+            0,
+            6,
+            5,
+            4
+          ],
+          "no_kind": null
+        },
+        {
+          "iso_index": 18,
+          "score_sequence": [
+            2,
+            2,
+            3,
+            3,
+            3,
+            4,
+            4
+          ],
+          "T": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0,
+              1,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              1,
+              1,
+              0,
+              0
+            ]
+          ],
+          "min_fas": 4,
+          "has_lfo": true,
+          "has_degree2_relaxation": true,
+          "has_forest_ordering": true,
+          "has_matching_fas": false,
+          "has_exact_path_backarcs": true,
+          "lfo_order": [
+            4,
+            1,
+            3,
+            0,
+            5,
+            2,
+            6
+          ],
+          "degree2_order": [
+            3,
+            5,
+            4,
+            1,
+            0,
+            2,
+            6
+          ],
+          "forest_order": [
+            3,
+            2,
+            1,
+            0,
+            5,
+            6,
+            4
+          ],
+          "no_kind": null
+        },
+        {
+          "iso_index": 19,
+          "score_sequence": [
+            2,
+            2,
+            3,
+            3,
+            3,
+            4,
+            4
+          ],
+          "T": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              1,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0
+            ]
+          ],
+          "min_fas": 5,
+          "has_lfo": true,
+          "has_degree2_relaxation": true,
+          "has_forest_ordering": true,
+          "has_matching_fas": false,
+          "has_exact_path_backarcs": true,
+          "lfo_order": [
+            4,
+            1,
+            5,
+            6,
+            3,
+            2,
+            0
+          ],
+          "degree2_order": [
+            4,
+            1,
+            5,
+            3,
+            6,
+            2,
+            0
+          ],
+          "forest_order": [
+            2,
+            4,
+            1,
+            0,
+            5,
+            6,
+            3
+          ],
+          "no_kind": null
+        },
+        {
+          "iso_index": 20,
+          "score_sequence": [
+            2,
+            2,
+            3,
+            3,
+            3,
+            4,
+            4
+          ],
+          "T": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              1,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0,
+              1,
+              1,
+              0
+            ]
+          ],
+          "min_fas": 5,
+          "has_lfo": true,
+          "has_degree2_relaxation": true,
+          "has_forest_ordering": true,
+          "has_matching_fas": false,
+          "has_exact_path_backarcs": true,
+          "lfo_order": [
+            3,
+            2,
+            1,
+            6,
+            4,
+            0,
+            5
+          ],
+          "degree2_order": [
+            3,
+            1,
+            6,
+            2,
+            4,
+            0,
+            5
+          ],
+          "forest_order": [
+            3,
+            2,
+            1,
+            0,
+            6,
+            4,
+            5
+          ],
+          "no_kind": null
+        },
+        {
+          "iso_index": 21,
+          "score_sequence": [
+            2,
+            2,
+            3,
+            3,
+            3,
+            4,
+            4
+          ],
+          "T": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              1,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              1,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              1,
+              0,
+              1,
+              0,
+              0
+            ]
+          ],
+          "min_fas": 5,
+          "has_lfo": true,
+          "has_degree2_relaxation": true,
+          "has_forest_ordering": true,
+          "has_matching_fas": false,
+          "has_exact_path_backarcs": true,
+          "lfo_order": [
+            4,
+            1,
+            5,
+            3,
+            6,
+            2,
+            0
+          ],
+          "degree2_order": [
+            3,
+            2,
+            4,
+            0,
+            1,
+            5,
+            6
+          ],
+          "forest_order": [
+            2,
+            4,
+            1,
+            0,
+            5,
+            3,
+            6
+          ],
+          "no_kind": null
+        },
+        {
+          "iso_index": 22,
+          "score_sequence": [
+            2,
+            2,
+            3,
+            3,
+            3,
+            4,
+            4
+          ],
+          "T": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              1,
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              1,
+              1,
+              1,
+              0
+            ]
+          ],
+          "min_fas": 4,
+          "has_lfo": true,
+          "has_degree2_relaxation": true,
+          "has_forest_ordering": true,
+          "has_matching_fas": false,
+          "has_exact_path_backarcs": true,
+          "lfo_order": [
+            6,
+            3,
+            5,
+            1,
+            4,
+            2,
+            0
+          ],
+          "degree2_order": [
+            5,
+            2,
+            6,
+            1,
+            4,
+            3,
+            0
+          ],
+          "forest_order": [
+            2,
+            6,
+            5,
+            1,
+            4,
+            3,
+            0
+          ],
+          "no_kind": null
+        },
+        {
+          "iso_index": 23,
+          "score_sequence": [
+            2,
+            2,
+            3,
+            3,
+            3,
+            4,
+            4
+          ],
+          "T": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              1,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              1,
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              1,
+              0,
+              1,
+              0
+            ]
+          ],
+          "min_fas": 5,
+          "has_lfo": true,
+          "has_degree2_relaxation": true,
+          "has_forest_ordering": true,
+          "has_matching_fas": false,
+          "has_exact_path_backarcs": true,
+          "lfo_order": [
+            4,
+            6,
+            5,
+            2,
+            3,
+            1,
+            0
+          ],
+          "degree2_order": [
+            4,
+            2,
+            0,
+            6,
+            5,
+            3,
+            1
+          ],
+          "forest_order": [
+            4,
+            0,
+            6,
+            5,
+            3,
+            2,
+            1
+          ],
+          "no_kind": null
+        },
+        {
+          "iso_index": 24,
+          "score_sequence": [
+            2,
+            2,
+            3,
+            3,
+            3,
+            4,
+            4
+          ],
+          "T": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              1,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              1,
+              1,
+              1,
+              0
+            ]
+          ],
+          "min_fas": 4,
+          "has_lfo": true,
+          "has_degree2_relaxation": true,
+          "has_forest_ordering": true,
+          "has_matching_fas": false,
+          "has_exact_path_backarcs": true,
+          "lfo_order": [
+            4,
+            2,
+            0,
+            6,
+            5,
+            3,
+            1
+          ],
+          "degree2_order": [
+            4,
+            2,
+            0,
+            5,
+            6,
+            3,
+            1
+          ],
+          "forest_order": [
+            2,
+            6,
+            4,
+            5,
+            3,
+            1,
+            0
+          ],
+          "no_kind": null
+        },
+        {
+          "iso_index": 25,
+          "score_sequence": [
+            2,
+            2,
+            3,
+            3,
+            3,
+            4,
+            4
+          ],
+          "T": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              1,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              1,
+              1,
+              1,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0
+            ]
+          ],
+          "min_fas": 5,
+          "has_lfo": true,
+          "has_degree2_relaxation": true,
+          "has_forest_ordering": true,
+          "has_matching_fas": false,
+          "has_exact_path_backarcs": true,
+          "lfo_order": [
+            4,
+            2,
+            0,
+            5,
+            6,
+            3,
+            1
+          ],
+          "degree2_order": [
+            4,
+            2,
+            0,
+            5,
+            6,
+            3,
+            1
+          ],
+          "forest_order": [
+            4,
+            2,
+            0,
+            5,
+            6,
+            3,
+            1
+          ],
+          "no_kind": null
+        },
+        {
+          "iso_index": 26,
+          "score_sequence": [
+            2,
+            2,
+            3,
+            3,
+            3,
+            4,
+            4
+          ],
+          "T": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              1,
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0,
+              1,
+              1,
+              0
+            ]
+          ],
+          "min_fas": 5,
+          "has_lfo": true,
+          "has_degree2_relaxation": true,
+          "has_forest_ordering": true,
+          "has_matching_fas": false,
+          "has_exact_path_backarcs": true,
+          "lfo_order": [
+            3,
+            6,
+            5,
+            1,
+            4,
+            2,
+            0
+          ],
+          "degree2_order": [
+            3,
+            6,
+            5,
+            1,
+            4,
+            2,
+            0
+          ],
+          "forest_order": [
+            3,
+            6,
+            5,
+            1,
+            4,
+            2,
+            0
+          ],
+          "no_kind": null
+        },
+        {
+          "iso_index": 27,
+          "score_sequence": [
+            2,
+            2,
+            3,
+            3,
+            3,
+            4,
+            4
+          ],
+          "T": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              1,
+              1,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0,
+              1,
+              1,
+              0
+            ]
+          ],
+          "min_fas": 5,
+          "has_lfo": true,
+          "has_degree2_relaxation": true,
+          "has_forest_ordering": true,
+          "has_matching_fas": false,
+          "has_exact_path_backarcs": true,
+          "lfo_order": [
+            3,
+            6,
+            4,
+            5,
+            2,
+            1,
+            0
+          ],
+          "degree2_order": [
+            3,
+            6,
+            4,
+            2,
+            0,
+            5,
+            1
+          ],
+          "forest_order": [
+            3,
+            4,
+            2,
+            0,
+            6,
+            5,
+            1
+          ],
+          "no_kind": null
+        },
+        {
+          "iso_index": 28,
+          "score_sequence": [
+            2,
+            2,
+            3,
+            3,
+            3,
+            4,
+            4
+          ],
+          "T": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              1,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              1,
+              1,
+              1,
+              0
+            ]
+          ],
+          "min_fas": 5,
+          "has_lfo": true,
+          "has_degree2_relaxation": true,
+          "has_forest_ordering": true,
+          "has_matching_fas": false,
+          "has_exact_path_backarcs": true,
+          "lfo_order": [
+            6,
+            3,
+            5,
+            1,
+            4,
+            2,
+            0
+          ],
+          "degree2_order": [
+            3,
+            2,
+            6,
+            5,
+            1,
+            4,
+            0
+          ],
+          "forest_order": [
+            3,
+            2,
+            0,
+            6,
+            5,
+            1,
+            4
+          ],
+          "no_kind": null
+        },
+        {
+          "iso_index": 29,
+          "score_sequence": [
+            2,
+            2,
+            3,
+            3,
+            3,
+            4,
+            4
+          ],
+          "T": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              1,
+              0,
+              1,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0
+            ]
+          ],
+          "min_fas": 5,
+          "has_lfo": true,
+          "has_degree2_relaxation": true,
+          "has_forest_ordering": true,
+          "has_matching_fas": false,
+          "has_exact_path_backarcs": true,
+          "lfo_order": [
+            3,
+            5,
+            2,
+            6,
+            1,
+            4,
+            0
+          ],
+          "degree2_order": [
+            3,
+            2,
+            5,
+            6,
+            1,
+            4,
+            0
+          ],
+          "forest_order": [
+            3,
+            2,
+            0,
+            5,
+            6,
+            1,
+            4
+          ],
+          "no_kind": null
+        },
+        {
+          "iso_index": 30,
+          "score_sequence": [
+            2,
+            2,
+            3,
+            3,
+            3,
+            4,
+            4
+          ],
+          "T": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              1,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              1,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              1,
+              0,
+              1,
+              0
+            ]
+          ],
+          "min_fas": 5,
+          "has_lfo": true,
+          "has_degree2_relaxation": true,
+          "has_forest_ordering": true,
+          "has_matching_fas": false,
+          "has_exact_path_backarcs": true,
+          "lfo_order": [
+            4,
+            2,
+            3,
+            0,
+            6,
+            5,
+            1
+          ],
+          "degree2_order": [
+            3,
+            5,
+            4,
+            2,
+            0,
+            6,
+            1
+          ],
+          "forest_order": [
+            3,
+            4,
+            2,
+            0,
+            6,
+            5,
+            1
+          ],
+          "no_kind": null
+        },
+        {
+          "iso_index": 31,
+          "score_sequence": [
+            2,
+            2,
+            3,
+            3,
+            3,
+            4,
+            4
+          ],
+          "T": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              1,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              1,
+              1,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0
+            ]
+          ],
+          "min_fas": 5,
+          "has_lfo": true,
+          "has_degree2_relaxation": true,
+          "has_forest_ordering": true,
+          "has_matching_fas": false,
+          "has_exact_path_backarcs": true,
+          "lfo_order": [
+            4,
+            2,
+            3,
+            0,
+            5,
+            6,
+            1
+          ],
+          "degree2_order": [
+            4,
+            2,
+            0,
+            6,
+            3,
+            5,
+            1
+          ],
+          "forest_order": [
+            4,
+            2,
+            3,
+            0,
+            5,
+            6,
+            1
+          ],
+          "no_kind": null
+        },
+        {
+          "iso_index": 32,
+          "score_sequence": [
+            2,
+            2,
+            3,
+            3,
+            3,
+            4,
+            4
+          ],
+          "T": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              1,
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              1,
+              0,
+              1,
+              0
+            ]
+          ],
+          "min_fas": 5,
+          "has_lfo": true,
+          "has_degree2_relaxation": true,
+          "has_forest_ordering": true,
+          "has_matching_fas": false,
+          "has_exact_path_backarcs": true,
+          "lfo_order": [
+            5,
+            3,
+            2,
+            4,
+            0,
+            6,
+            1
+          ],
+          "degree2_order": [
+            3,
+            4,
+            0,
+            6,
+            5,
+            2,
+            1
+          ],
+          "forest_order": [
+            3,
+            4,
+            2,
+            0,
+            6,
+            5,
+            1
+          ],
+          "no_kind": null
+        },
+        {
+          "iso_index": 33,
+          "score_sequence": [
+            2,
+            2,
+            3,
+            3,
+            3,
+            4,
+            4
+          ],
+          "T": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              1,
+              1,
+              1,
+              0
+            ]
+          ],
+          "min_fas": 5,
+          "has_lfo": true,
+          "has_degree2_relaxation": true,
+          "has_forest_ordering": true,
+          "has_matching_fas": false,
+          "has_exact_path_backarcs": true,
+          "lfo_order": [
+            3,
+            4,
+            2,
+            0,
+            6,
+            5,
+            1
+          ],
+          "degree2_order": [
+            3,
+            2,
+            6,
+            4,
+            0,
+            5,
+            1
+          ],
+          "forest_order": [
+            3,
+            2,
+            6,
+            1,
+            4,
+            0,
+            5
+          ],
+          "no_kind": null
+        },
+        {
+          "iso_index": 34,
+          "score_sequence": [
+            2,
+            2,
+            3,
+            3,
+            3,
+            4,
+            4
+          ],
+          "T": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              1,
+              1,
+              1,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0
+            ]
+          ],
+          "min_fas": 5,
+          "has_lfo": true,
+          "has_degree2_relaxation": true,
+          "has_forest_ordering": true,
+          "has_matching_fas": false,
+          "has_exact_path_backarcs": true,
+          "lfo_order": [
+            3,
+            4,
+            0,
+            5,
+            2,
+            6,
+            1
+          ],
+          "degree2_order": [
+            3,
+            4,
+            0,
+            2,
+            5,
+            6,
+            1
+          ],
+          "forest_order": [
+            3,
+            4,
+            0,
+            5,
+            2,
+            6,
+            1
+          ],
+          "no_kind": null
+        },
+        {
+          "iso_index": 35,
+          "score_sequence": [
+            2,
+            2,
+            3,
+            3,
+            3,
+            4,
+            4
+          ],
+          "T": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              0,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              1,
+              0,
+              1,
+              0
+            ]
+          ],
+          "min_fas": 5,
+          "has_lfo": true,
+          "has_degree2_relaxation": true,
+          "has_forest_ordering": true,
+          "has_matching_fas": false,
+          "has_exact_path_backarcs": true,
+          "lfo_order": [
+            3,
+            2,
+            4,
+            0,
+            6,
+            5,
+            1
+          ],
+          "degree2_order": [
+            3,
+            2,
+            4,
+            0,
+            6,
+            5,
+            1
+          ],
+          "forest_order": [
+            3,
+            2,
+            4,
+            0,
+            6,
+            5,
+            1
+          ],
+          "no_kind": null
+        },
+        {
+          "iso_index": 36,
+          "score_sequence": [
+            2,
+            2,
+            3,
+            3,
+            3,
+            4,
+            4
+          ],
+          "T": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              1,
+              1,
+              1,
+              0
+            ]
+          ],
+          "min_fas": 5,
+          "has_lfo": true,
+          "has_degree2_relaxation": true,
+          "has_forest_ordering": true,
+          "has_matching_fas": false,
+          "has_exact_path_backarcs": true,
+          "lfo_order": [
+            2,
+            6,
+            1,
+            5,
+            4,
+            3,
+            0
+          ],
+          "degree2_order": [
+            2,
+            5,
+            6,
+            1,
+            4,
+            3,
+            0
+          ],
+          "forest_order": [
+            2,
+            6,
+            1,
+            5,
+            4,
+            3,
+            0
+          ],
+          "no_kind": null
+        },
+        {
+          "iso_index": 37,
+          "score_sequence": [
+            2,
+            2,
+            3,
+            3,
+            3,
+            4,
+            4
+          ],
+          "T": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              1,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              1,
+              0,
+              1,
+              0
+            ]
+          ],
+          "min_fas": 5,
+          "has_lfo": true,
+          "has_degree2_relaxation": true,
+          "has_forest_ordering": true,
+          "has_matching_fas": false,
+          "has_exact_path_backarcs": true,
+          "lfo_order": [
+            2,
+            6,
+            5,
+            1,
+            4,
+            3,
+            0
+          ],
+          "degree2_order": [
+            2,
+            5,
+            4,
+            3,
+            0,
+            6,
+            1
+          ],
+          "forest_order": [
+            2,
+            4,
+            6,
+            5,
+            3,
+            1,
+            0
+          ],
+          "no_kind": null
+        },
+        {
+          "iso_index": 38,
+          "score_sequence": [
+            2,
+            2,
+            3,
+            3,
+            3,
+            4,
+            4
+          ],
+          "T": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0,
+              1,
+              1,
+              0
+            ]
+          ],
+          "min_fas": 5,
+          "has_lfo": true,
+          "has_degree2_relaxation": true,
+          "has_forest_ordering": true,
+          "has_matching_fas": false,
+          "has_exact_path_backarcs": true,
+          "lfo_order": [
+            2,
+            6,
+            5,
+            4,
+            3,
+            1,
+            0
+          ],
+          "degree2_order": [
+            2,
+            5,
+            3,
+            6,
+            1,
+            4,
+            0
+          ],
+          "forest_order": [
+            2,
+            6,
+            5,
+            1,
+            4,
+            3,
+            0
+          ],
+          "no_kind": null
+        },
+        {
+          "iso_index": 39,
+          "score_sequence": [
+            2,
+            2,
+            3,
+            3,
+            3,
+            4,
+            4
+          ],
+          "T": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              1,
+              0,
+              1,
+              0
+            ]
+          ],
+          "min_fas": 5,
+          "has_lfo": true,
+          "has_degree2_relaxation": true,
+          "has_forest_ordering": true,
+          "has_matching_fas": false,
+          "has_exact_path_backarcs": true,
+          "lfo_order": [
+            2,
+            6,
+            5,
+            1,
+            3,
+            4,
+            0
+          ],
+          "degree2_order": [
+            2,
+            5,
+            3,
+            4,
+            0,
+            6,
+            1
+          ],
+          "forest_order": [
+            2,
+            5,
+            3,
+            1,
+            4,
+            0,
+            6
+          ],
+          "no_kind": null
+        },
+        {
+          "iso_index": 40,
+          "score_sequence": [
+            2,
+            2,
+            3,
+            3,
+            3,
+            4,
+            4
+          ],
+          "T": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              1,
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              1,
+              0,
+              1,
+              0
+            ]
+          ],
+          "min_fas": 5,
+          "has_lfo": true,
+          "has_degree2_relaxation": true,
+          "has_forest_ordering": true,
+          "has_matching_fas": false,
+          "has_exact_path_backarcs": true,
+          "lfo_order": [
+            2,
+            6,
+            5,
+            1,
+            4,
+            3,
+            0
+          ],
+          "degree2_order": [
+            2,
+            4,
+            0,
+            6,
+            5,
+            3,
+            1
+          ],
+          "forest_order": [
+            2,
+            4,
+            6,
+            5,
+            3,
+            1,
+            0
+          ],
+          "no_kind": null
+        },
+        {
+          "iso_index": 41,
+          "score_sequence": [
+            2,
+            2,
+            3,
+            3,
+            3,
+            4,
+            4
+          ],
+          "T": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              1,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              1,
+              1,
+              1,
+              0
+            ]
+          ],
+          "min_fas": 5,
+          "has_lfo": true,
+          "has_degree2_relaxation": true,
+          "has_forest_ordering": true,
+          "has_matching_fas": false,
+          "has_exact_path_backarcs": true,
+          "lfo_order": [
+            2,
+            4,
+            0,
+            6,
+            5,
+            3,
+            1
+          ],
+          "degree2_order": [
+            2,
+            4,
+            0,
+            5,
+            6,
+            3,
+            1
+          ],
+          "forest_order": [
+            2,
+            4,
+            0,
+            6,
+            5,
+            3,
+            1
+          ],
+          "no_kind": null
+        },
+        {
+          "iso_index": 42,
+          "score_sequence": [
+            2,
+            2,
+            3,
+            3,
+            3,
+            4,
+            4
+          ],
+          "T": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              1,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              1,
+              1,
+              1,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0
+            ]
+          ],
+          "min_fas": 5,
+          "has_lfo": true,
+          "has_degree2_relaxation": true,
+          "has_forest_ordering": true,
+          "has_matching_fas": false,
+          "has_exact_path_backarcs": true,
+          "lfo_order": [
+            2,
+            4,
+            0,
+            5,
+            6,
+            3,
+            1
+          ],
+          "degree2_order": [
+            2,
+            4,
+            0,
+            5,
+            6,
+            3,
+            1
+          ],
+          "forest_order": [
+            2,
+            4,
+            0,
+            5,
+            6,
+            3,
+            1
+          ],
+          "no_kind": null
+        },
+        {
+          "iso_index": 43,
+          "score_sequence": [
+            2,
+            2,
+            3,
+            3,
+            3,
+            4,
+            4
+          ],
+          "T": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              1,
+              0,
+              1,
+              1
+            ],
+            [
+              0,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              1,
+              0,
+              1,
+              0
+            ]
+          ],
+          "min_fas": 5,
+          "has_lfo": true,
+          "has_degree2_relaxation": true,
+          "has_forest_ordering": true,
+          "has_matching_fas": false,
+          "has_exact_path_backarcs": true,
+          "lfo_order": [
+            2,
+            4,
+            0,
+            5,
+            6,
+            3,
+            1
+          ],
+          "degree2_order": [
+            2,
+            4,
+            0,
+            5,
+            6,
+            3,
+            1
+          ],
+          "forest_order": [
+            2,
+            4,
+            0,
+            5,
+            6,
+            3,
+            1
+          ],
+          "no_kind": null
+        },
+        {
+          "iso_index": 44,
+          "score_sequence": [
+            2,
+            2,
+            3,
+            3,
+            3,
+            4,
+            4
+          ],
+          "T": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              1,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0,
+              1,
+              1,
+              0
+            ]
+          ],
+          "min_fas": 5,
+          "has_lfo": true,
+          "has_degree2_relaxation": true,
+          "has_forest_ordering": true,
+          "has_matching_fas": false,
+          "has_exact_path_backarcs": true,
+          "lfo_order": [
+            3,
+            2,
+            6,
+            4,
+            0,
+            5,
+            1
+          ],
+          "degree2_order": [
+            2,
+            4,
+            0,
+            5,
+            3,
+            6,
+            1
+          ],
+          "forest_order": [
+            3,
+            2,
+            1,
+            0,
+            6,
+            4,
+            5
+          ],
+          "no_kind": null
+        },
+        {
+          "iso_index": 45,
+          "score_sequence": [
+            2,
+            2,
+            3,
+            3,
+            3,
+            4,
+            4
+          ],
+          "T": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              1,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              1,
+              0,
+              1,
+              0
+            ]
+          ],
+          "min_fas": 5,
+          "has_lfo": true,
+          "has_degree2_relaxation": true,
+          "has_forest_ordering": true,
+          "has_matching_fas": false,
+          "has_exact_path_backarcs": true,
+          "lfo_order": [
+            2,
+            4,
+            3,
+            0,
+            6,
+            5,
+            1
+          ],
+          "degree2_order": [
+            2,
+            4,
+            0,
+            6,
+            3,
+            5,
+            1
+          ],
+          "forest_order": [
+            2,
+            4,
+            3,
+            0,
+            6,
+            5,
+            1
+          ],
+          "no_kind": null
+        },
+        {
+          "iso_index": 46,
+          "score_sequence": [
+            2,
+            2,
+            3,
+            3,
+            3,
+            4,
+            4
+          ],
+          "T": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              1,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              1,
+              1,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0
+            ]
+          ],
+          "min_fas": 5,
+          "has_lfo": true,
+          "has_degree2_relaxation": true,
+          "has_forest_ordering": true,
+          "has_matching_fas": false,
+          "has_exact_path_backarcs": true,
+          "lfo_order": [
+            2,
+            4,
+            3,
+            0,
+            5,
+            6,
+            1
+          ],
+          "degree2_order": [
+            2,
+            4,
+            0,
+            6,
+            3,
+            5,
+            1
+          ],
+          "forest_order": [
+            2,
+            4,
+            3,
+            0,
+            5,
+            6,
+            1
+          ],
+          "no_kind": null
+        }
+      ]
+    },
+    {
+      "summary": {
+        "score_sequence": [
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          4
+        ],
+        "labeled_total": 72240,
+        "non_iso_total": 15,
+        "lfo_yes": 7,
+        "lfo_no": 8,
+        "size_no": 0,
+        "combinatorial_no": 8,
+        "degree2_relaxation_yes": 10,
+        "forest_ordering_yes": 13,
+        "matching_fas_yes": 0,
+        "exact_path_backarcs_yes": 7
+      },
+      "records": [
+        {
+          "iso_index": 0,
+          "score_sequence": [
+            2,
+            3,
+            3,
+            3,
+            3,
+            3,
+            4
+          ],
+          "T": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              0
+            ]
+          ],
+          "min_fas": 5,
+          "has_lfo": false,
+          "has_degree2_relaxation": false,
+          "has_forest_ordering": true,
+          "has_matching_fas": false,
+          "has_exact_path_backarcs": false,
+          "lfo_order": null,
+          "degree2_order": null,
+          "forest_order": [
+            1,
+            6,
+            5,
+            4,
+            3,
+            2,
+            0
+          ],
+          "no_kind": "combinatorial"
+        },
+        {
+          "iso_index": 1,
+          "score_sequence": [
+            2,
+            3,
+            3,
+            3,
+            3,
+            3,
+            4
+          ],
+          "T": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              1,
+              1,
+              1,
+              0
+            ]
+          ],
+          "min_fas": 5,
+          "has_lfo": false,
+          "has_degree2_relaxation": true,
+          "has_forest_ordering": false,
+          "has_matching_fas": false,
+          "has_exact_path_backarcs": false,
+          "lfo_order": null,
+          "degree2_order": [
+            6,
+            5,
+            2,
+            3,
+            4,
+            1,
+            0
+          ],
+          "forest_order": null,
+          "no_kind": "combinatorial"
+        },
+        {
+          "iso_index": 2,
+          "score_sequence": [
+            2,
+            3,
+            3,
+            3,
+            3,
+            3,
+            4
+          ],
+          "T": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              1,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              1,
+              0,
+              1,
+              0
+            ]
+          ],
+          "min_fas": 6,
+          "has_lfo": true,
+          "has_degree2_relaxation": true,
+          "has_forest_ordering": true,
+          "has_matching_fas": false,
+          "has_exact_path_backarcs": true,
+          "lfo_order": [
+            4,
+            1,
+            6,
+            5,
+            3,
+            2,
+            0
+          ],
+          "degree2_order": [
+            4,
+            1,
+            6,
+            5,
+            3,
+            2,
+            0
+          ],
+          "forest_order": [
+            2,
+            4,
+            1,
+            0,
+            6,
+            5,
+            3
+          ],
+          "no_kind": null
+        },
+        {
+          "iso_index": 3,
+          "score_sequence": [
+            2,
+            3,
+            3,
+            3,
+            3,
+            3,
+            4
+          ],
+          "T": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              1,
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              0
+            ]
+          ],
+          "min_fas": 5,
+          "has_lfo": false,
+          "has_degree2_relaxation": true,
+          "has_forest_ordering": true,
+          "has_matching_fas": false,
+          "has_exact_path_backarcs": false,
+          "lfo_order": null,
+          "degree2_order": [
+            5,
+            2,
+            1,
+            6,
+            4,
+            3,
+            0
+          ],
+          "forest_order": [
+            5,
+            1,
+            4,
+            3,
+            2,
+            0,
+            6
+          ],
+          "no_kind": "combinatorial"
+        },
+        {
+          "iso_index": 4,
+          "score_sequence": [
+            2,
+            3,
+            3,
+            3,
+            3,
+            3,
+            4
+          ],
+          "T": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              1,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              0
+            ]
+          ],
+          "min_fas": 5,
+          "has_lfo": false,
+          "has_degree2_relaxation": false,
+          "has_forest_ordering": true,
+          "has_matching_fas": false,
+          "has_exact_path_backarcs": false,
+          "lfo_order": null,
+          "degree2_order": null,
+          "forest_order": [
+            4,
+            5,
+            2,
+            3,
+            1,
+            0,
+            6
+          ],
+          "no_kind": "combinatorial"
+        },
+        {
+          "iso_index": 5,
+          "score_sequence": [
+            2,
+            3,
+            3,
+            3,
+            3,
+            3,
+            4
+          ],
+          "T": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              1,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              0
+            ]
+          ],
+          "min_fas": 6,
+          "has_lfo": false,
+          "has_degree2_relaxation": false,
+          "has_forest_ordering": true,
+          "has_matching_fas": false,
+          "has_exact_path_backarcs": false,
+          "lfo_order": null,
+          "degree2_order": null,
+          "forest_order": [
+            3,
+            2,
+            1,
+            0,
+            6,
+            5,
+            4
+          ],
+          "no_kind": "combinatorial"
+        },
+        {
+          "iso_index": 6,
+          "score_sequence": [
+            2,
+            3,
+            3,
+            3,
+            3,
+            3,
+            4
+          ],
+          "T": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              0
+            ]
+          ],
+          "min_fas": 6,
+          "has_lfo": false,
+          "has_degree2_relaxation": false,
+          "has_forest_ordering": true,
+          "has_matching_fas": false,
+          "has_exact_path_backarcs": false,
+          "lfo_order": null,
+          "degree2_order": null,
+          "forest_order": [
+            3,
+            2,
+            1,
+            0,
+            6,
+            4,
+            5
+          ],
+          "no_kind": "combinatorial"
+        },
+        {
+          "iso_index": 7,
+          "score_sequence": [
+            2,
+            3,
+            3,
+            3,
+            3,
+            3,
+            4
+          ],
+          "T": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              1,
+              1,
+              1,
+              0
+            ]
+          ],
+          "min_fas": 5,
+          "has_lfo": true,
+          "has_degree2_relaxation": true,
+          "has_forest_ordering": true,
+          "has_matching_fas": false,
+          "has_exact_path_backarcs": true,
+          "lfo_order": [
+            6,
+            2,
+            5,
+            1,
+            4,
+            3,
+            0
+          ],
+          "degree2_order": [
+            6,
+            2,
+            5,
+            1,
+            4,
+            3,
+            0
+          ],
+          "forest_order": [
+            6,
+            2,
+            5,
+            1,
+            4,
+            3,
+            0
+          ],
+          "no_kind": null
+        },
+        {
+          "iso_index": 8,
+          "score_sequence": [
+            2,
+            3,
+            3,
+            3,
+            3,
+            3,
+            4
+          ],
+          "T": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              0
+            ]
+          ],
+          "min_fas": 5,
+          "has_lfo": true,
+          "has_degree2_relaxation": true,
+          "has_forest_ordering": true,
+          "has_matching_fas": false,
+          "has_exact_path_backarcs": true,
+          "lfo_order": [
+            5,
+            1,
+            4,
+            6,
+            3,
+            2,
+            0
+          ],
+          "degree2_order": [
+            5,
+            1,
+            4,
+            6,
+            3,
+            2,
+            0
+          ],
+          "forest_order": [
+            2,
+            5,
+            1,
+            6,
+            4,
+            3,
+            0
+          ],
+          "no_kind": null
+        },
+        {
+          "iso_index": 9,
+          "score_sequence": [
+            2,
+            3,
+            3,
+            3,
+            3,
+            3,
+            4
+          ],
+          "T": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              1,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              1,
+              0,
+              1,
+              0
+            ]
+          ],
+          "min_fas": 6,
+          "has_lfo": false,
+          "has_degree2_relaxation": true,
+          "has_forest_ordering": false,
+          "has_matching_fas": false,
+          "has_exact_path_backarcs": false,
+          "lfo_order": null,
+          "degree2_order": [
+            4,
+            6,
+            2,
+            5,
+            3,
+            1,
+            0
+          ],
+          "forest_order": null,
+          "no_kind": "combinatorial"
+        },
+        {
+          "iso_index": 10,
+          "score_sequence": [
+            2,
+            3,
+            3,
+            3,
+            3,
+            3,
+            4
+          ],
+          "T": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              1,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              1,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              0
+            ]
+          ],
+          "min_fas": 6,
+          "has_lfo": false,
+          "has_degree2_relaxation": false,
+          "has_forest_ordering": true,
+          "has_matching_fas": false,
+          "has_exact_path_backarcs": false,
+          "lfo_order": null,
+          "degree2_order": null,
+          "forest_order": [
+            4,
+            3,
+            2,
+            0,
+            5,
+            1,
+            6
+          ],
+          "no_kind": "combinatorial"
+        },
+        {
+          "iso_index": 11,
+          "score_sequence": [
+            2,
+            3,
+            3,
+            3,
+            3,
+            3,
+            4
+          ],
+          "T": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0,
+              1,
+              1,
+              0
+            ]
+          ],
+          "min_fas": 6,
+          "has_lfo": true,
+          "has_degree2_relaxation": true,
+          "has_forest_ordering": true,
+          "has_matching_fas": false,
+          "has_exact_path_backarcs": true,
+          "lfo_order": [
+            3,
+            6,
+            2,
+            5,
+            1,
+            4,
+            0
+          ],
+          "degree2_order": [
+            3,
+            6,
+            2,
+            5,
+            1,
+            4,
+            0
+          ],
+          "forest_order": [
+            3,
+            2,
+            1,
+            0,
+            6,
+            5,
+            4
+          ],
+          "no_kind": null
+        },
+        {
+          "iso_index": 12,
+          "score_sequence": [
+            2,
+            3,
+            3,
+            3,
+            3,
+            3,
+            4
+          ],
+          "T": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0,
+              1,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              0
+            ]
+          ],
+          "min_fas": 6,
+          "has_lfo": true,
+          "has_degree2_relaxation": true,
+          "has_forest_ordering": true,
+          "has_matching_fas": false,
+          "has_exact_path_backarcs": true,
+          "lfo_order": [
+            3,
+            5,
+            1,
+            6,
+            4,
+            2,
+            0
+          ],
+          "degree2_order": [
+            3,
+            5,
+            1,
+            6,
+            4,
+            2,
+            0
+          ],
+          "forest_order": [
+            1,
+            6,
+            4,
+            3,
+            2,
+            0,
+            5
+          ],
+          "no_kind": null
+        },
+        {
+          "iso_index": 13,
+          "score_sequence": [
+            2,
+            3,
+            3,
+            3,
+            3,
+            3,
+            4
+          ],
+          "T": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              0
+            ]
+          ],
+          "min_fas": 6,
+          "has_lfo": true,
+          "has_degree2_relaxation": true,
+          "has_forest_ordering": true,
+          "has_matching_fas": false,
+          "has_exact_path_backarcs": true,
+          "lfo_order": [
+            2,
+            1,
+            6,
+            5,
+            4,
+            3,
+            0
+          ],
+          "degree2_order": [
+            2,
+            1,
+            6,
+            5,
+            4,
+            3,
+            0
+          ],
+          "forest_order": [
+            2,
+            1,
+            6,
+            5,
+            4,
+            3,
+            0
+          ],
+          "no_kind": null
+        },
+        {
+          "iso_index": 14,
+          "score_sequence": [
+            2,
+            3,
+            3,
+            3,
+            3,
+            3,
+            4
+          ],
+          "T": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              1,
+              0,
+              1,
+              1
+            ],
+            [
+              0,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              1,
+              0,
+              1,
+              0
+            ]
+          ],
+          "min_fas": 5,
+          "has_lfo": true,
+          "has_degree2_relaxation": true,
+          "has_forest_ordering": true,
+          "has_matching_fas": false,
+          "has_exact_path_backarcs": true,
+          "lfo_order": [
+            4,
+            6,
+            3,
+            5,
+            2,
+            1,
+            0
+          ],
+          "degree2_order": [
+            4,
+            6,
+            3,
+            5,
+            2,
+            1,
+            0
+          ],
+          "forest_order": [
+            1,
+            4,
+            6,
+            5,
+            3,
+            2,
+            0
+          ],
+          "no_kind": null
+        }
+      ]
+    },
+    {
+      "summary": {
+        "score_sequence": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "labeled_total": 2640,
+        "non_iso_total": 3,
+        "lfo_yes": 0,
+        "lfo_no": 3,
+        "size_no": 2,
+        "combinatorial_no": 1,
+        "degree2_relaxation_yes": 0,
+        "forest_ordering_yes": 0,
+        "matching_fas_yes": 0,
+        "exact_path_backarcs_yes": 0
+      },
+      "records": [
+        {
+          "iso_index": 0,
+          "score_sequence": [
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "T": [
+            [
+              0,
+              0,
+              0,
+              0,
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              0
+            ]
+          ],
+          "min_fas": 6,
+          "has_lfo": false,
+          "has_degree2_relaxation": false,
+          "has_forest_ordering": false,
+          "has_matching_fas": false,
+          "has_exact_path_backarcs": false,
+          "lfo_order": null,
+          "degree2_order": null,
+          "forest_order": null,
+          "no_kind": "combinatorial"
+        },
+        {
+          "iso_index": 1,
+          "score_sequence": [
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "T": [
+            [
+              0,
+              0,
+              0,
+              0,
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              1,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              1,
+              0,
+              1,
+              0
+            ]
+          ],
+          "min_fas": 7,
+          "has_lfo": false,
+          "has_degree2_relaxation": false,
+          "has_forest_ordering": false,
+          "has_matching_fas": false,
+          "has_exact_path_backarcs": false,
+          "lfo_order": null,
+          "degree2_order": null,
+          "forest_order": null,
+          "no_kind": "size"
+        },
+        {
+          "iso_index": 2,
+          "score_sequence": [
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "T": [
+            [
+              0,
+              0,
+              0,
+              0,
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              1,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              1,
+              0,
+              1,
+              0
+            ]
+          ],
+          "min_fas": 7,
+          "has_lfo": false,
+          "has_degree2_relaxation": false,
+          "has_forest_ordering": false,
+          "has_matching_fas": false,
+          "has_exact_path_backarcs": false,
+          "lfo_order": null,
+          "degree2_order": null,
+          "forest_order": null,
+          "no_kind": "size"
+        }
+      ]
+    }
+  ]
+}
