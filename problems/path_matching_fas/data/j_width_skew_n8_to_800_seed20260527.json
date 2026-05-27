@@ -1,0 +1,110 @@
+[
+  {
+    "n": 8,
+    "samples": 50,
+    "tw_max": 6,
+    "tw_mean": 5.2,
+    "tw_median": 5,
+    "H_max": 0,
+    "H_mean": 0.0
+  },
+  {
+    "n": 12,
+    "samples": 50,
+    "tw_max": 7,
+    "tw_mean": 5.46,
+    "tw_median": 5,
+    "H_max": 2,
+    "H_mean": 0.44
+  },
+  {
+    "n": 16,
+    "samples": 50,
+    "tw_max": 7,
+    "tw_mean": 5.52,
+    "tw_median": 5,
+    "H_max": 2,
+    "H_mean": 0.7
+  },
+  {
+    "n": 20,
+    "samples": 50,
+    "tw_max": 6,
+    "tw_mean": 5.44,
+    "tw_median": 5,
+    "H_max": 2,
+    "H_mean": 0.96
+  },
+  {
+    "n": 30,
+    "samples": 50,
+    "tw_max": 7,
+    "tw_mean": 6.02,
+    "tw_median": 6,
+    "H_max": 3,
+    "H_mean": 2.02
+  },
+  {
+    "n": 50,
+    "samples": 48,
+    "tw_max": 10,
+    "tw_mean": 7.5625,
+    "tw_median": 8,
+    "H_max": 6,
+    "H_mean": 4.75
+  },
+  {
+    "n": 80,
+    "samples": 46,
+    "tw_max": 12,
+    "tw_mean": 9.58695652173913,
+    "tw_median": 10,
+    "H_max": 10,
+    "H_mean": 8.195652173913043
+  },
+  {
+    "n": 120,
+    "samples": 40,
+    "tw_max": 14,
+    "tw_mean": 11.65,
+    "tw_median": 12,
+    "H_max": 15,
+    "H_mean": 13.4
+  },
+  {
+    "n": 200,
+    "samples": 40,
+    "tw_max": 21,
+    "tw_mean": 16.475,
+    "tw_median": 16,
+    "H_max": 25,
+    "H_mean": 23.275
+  },
+  {
+    "n": 300,
+    "samples": 25,
+    "tw_max": 28,
+    "tw_mean": 23.2,
+    "tw_median": 24,
+    "H_max": 37,
+    "H_mean": 35.8
+  },
+  {
+    "n": 500,
+    "samples": 17,
+    "tw_max": 45,
+    "tw_mean": 36.1764705882353,
+    "tw_median": 36,
+    "H_max": 62,
+    "H_mean": 60.64705882352941
+  },
+  {
+    "n": 800,
+    "samples": 11,
+    "tw_max": 67,
+    "tw_mean": 56.27272727272727,
+    "tw_median": 57,
+    "H_max": 100,
+    "H_mean": 98.18181818181819
+  }
+]

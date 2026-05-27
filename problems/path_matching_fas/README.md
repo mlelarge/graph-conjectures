@@ -286,6 +286,24 @@ than matching-FAS and strictly narrower than forest-FAS.
 - [`scripts/lfo_forced_flexible.py`](scripts/lfo_forced_flexible.py) —
   exact forced/flexible solver: preload forced backedges, then search
   only over overlapping-window choices.
+- [`scripts/J_pathwidth_dp.py`](scripts/J_pathwidth_dp.py) —
+  path-decomposition DP for Path-FAS on the interaction graph
+  `J = H ∪ G_flex`.  Bag state = (σ over bag, degree, component
+  partition).  Correct on every test we ran (exhaustive at n ≤ 6,
+  random at n ∈ {7, 8, 9}, all 20 n = 7 minimal NO instances, plus
+  the three documented n = 12 skew templates vs FF solver).  Runtime
+  exponential in `pw(J)` per bag, polynomial in n for bounded `pw(J)`;
+  in practice `pw(J)` grows with `n` on random tournaments so the DP
+  is not polynomial there. See
+  [`docs/J_pathwidth_dp.md`](docs/J_pathwidth_dp.md).
+- [`scripts/forced_frontier_probe.py`](scripts/forced_frontier_probe.py) —
+  D67 diagnostic for the next compression attempt after the
+  `pw(J) ≤ 8+2|H|` theorem.  It measures active score windows, live
+  forced-backedge components, dormant crossing components, and the
+  optimistic "two handles per live H-component" frontier size.  The
+  reversed-matching family shows this componentwise compression is
+  still linear in `|H|`; see
+  [`docs/forced_frontier_probe.md`](docs/forced_frontier_probe.md).
 - [`scripts/ff_signature_probe.py`](scripts/ff_signature_probe.py) —
   active-bag and visible-latent signature collision search for the
   forced/flexible DP attempt.

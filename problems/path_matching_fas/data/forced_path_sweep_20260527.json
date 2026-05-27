@@ -1,0 +1,549 @@
+{
+  "mode": "sweep",
+  "trials_per_cell": 2000,
+  "results": [
+    {
+      "family": "uniform",
+      "n": 8,
+      "trials": 2000,
+      "seed": 20260527,
+      "p_noise": null,
+      "seconds": 0.02,
+      "best_forced_back_path_length": 1,
+      "linear_forest_fraction": 1.0,
+      "score_bound_max_path": 2,
+      "histogram": {
+        "length_0": 1992,
+        "length_1": 8
+      },
+      "theoretical_max": 2
+    },
+    {
+      "family": "skew",
+      "n": 8,
+      "trials": 2000,
+      "seed": 20260527,
+      "p_noise": 0.02,
+      "seconds": 0.019,
+      "best_forced_back_path_length": 1,
+      "linear_forest_fraction": 1.0,
+      "score_bound_max_path": 2,
+      "histogram": {
+        "length_0": 1973,
+        "length_1": 27
+      },
+      "theoretical_max": 2
+    },
+    {
+      "family": "skew",
+      "n": 8,
+      "trials": 2000,
+      "seed": 20260527,
+      "p_noise": 0.05,
+      "seconds": 0.019,
+      "best_forced_back_path_length": 1,
+      "linear_forest_fraction": 1.0,
+      "score_bound_max_path": 2,
+      "histogram": {
+        "length_0": 1930,
+        "length_1": 70
+      },
+      "theoretical_max": 2
+    },
+    {
+      "family": "skew",
+      "n": 8,
+      "trials": 2000,
+      "seed": 20260527,
+      "p_noise": 0.1,
+      "seconds": 0.02,
+      "best_forced_back_path_length": 1,
+      "linear_forest_fraction": 1.0,
+      "score_bound_max_path": 2,
+      "histogram": {
+        "length_0": 1904,
+        "length_1": 96
+      },
+      "theoretical_max": 2
+    },
+    {
+      "family": "stretched",
+      "n": 8,
+      "trials": 2000,
+      "seed": 20260527,
+      "p_noise": null,
+      "seconds": 3.46,
+      "best_forced_back_path_length": 0,
+      "linear_forest_fraction": 1.0,
+      "score_bound_max_path": 2,
+      "histogram": {
+        "length_0": 2000
+      },
+      "theoretical_max": 2
+    },
+    {
+      "family": "uniform",
+      "n": 10,
+      "trials": 2000,
+      "seed": 20260527,
+      "p_noise": null,
+      "seconds": 0.026,
+      "best_forced_back_path_length": 1,
+      "linear_forest_fraction": 1.0,
+      "score_bound_max_path": 2,
+      "histogram": {
+        "length_0": 1817,
+        "length_1": 183
+      },
+      "theoretical_max": 2
+    },
+    {
+      "family": "skew",
+      "n": 10,
+      "trials": 2000,
+      "seed": 20260527,
+      "p_noise": 0.02,
+      "seconds": 0.027,
+      "best_forced_back_path_length": 2,
+      "linear_forest_fraction": 1.0,
+      "score_bound_max_path": 2,
+      "histogram": {
+        "length_0": 1764,
+        "length_1": 235,
+        "length_2": 1
+      },
+      "theoretical_max": 2
+    },
+    {
+      "family": "skew",
+      "n": 10,
+      "trials": 2000,
+      "seed": 20260527,
+      "p_noise": 0.05,
+      "seconds": 0.027,
+      "best_forced_back_path_length": 3,
+      "linear_forest_fraction": 1.0,
+      "score_bound_max_path": 2,
+      "histogram": {
+        "length_0": 1564,
+        "length_1": 425,
+        "length_2": 10,
+        "length_3": 1
+      },
+      "theoretical_max": 2
+    },
+    {
+      "family": "skew",
+      "n": 10,
+      "trials": 2000,
+      "seed": 20260527,
+      "p_noise": 0.1,
+      "seconds": 0.027,
+      "best_forced_back_path_length": 3,
+      "linear_forest_fraction": 1.0,
+      "score_bound_max_path": 2,
+      "histogram": {
+        "length_0": 1423,
+        "length_1": 564,
+        "length_2": 11,
+        "length_3": 2
+      },
+      "theoretical_max": 2
+    },
+    {
+      "family": "stretched",
+      "n": 10,
+      "trials": 2000,
+      "seed": 20260527,
+      "p_noise": null,
+      "seconds": 7.237,
+      "best_forced_back_path_length": 0,
+      "linear_forest_fraction": 1.0,
+      "score_bound_max_path": 2,
+      "histogram": {
+        "length_0": 2000
+      },
+      "theoretical_max": 2
+    },
+    {
+      "family": "uniform",
+      "n": 12,
+      "trials": 2000,
+      "seed": 20260527,
+      "p_noise": null,
+      "seconds": 0.034,
+      "best_forced_back_path_length": 3,
+      "linear_forest_fraction": 0.9995,
+      "score_bound_max_path": 4,
+      "histogram": {
+        "length_0": 1315,
+        "length_1": 625,
+        "length_2": 59,
+        "length_3": 1
+      },
+      "theoretical_max": 4
+    },
+    {
+      "family": "skew",
+      "n": 12,
+      "trials": 2000,
+      "seed": 20260527,
+      "p_noise": 0.02,
+      "seconds": 0.036,
+      "best_forced_back_path_length": 3,
+      "linear_forest_fraction": 1.0,
+      "score_bound_max_path": 4,
+      "histogram": {
+        "length_0": 1478,
+        "length_1": 510,
+        "length_2": 11,
+        "length_3": 1
+      },
+      "theoretical_max": 4
+    },
+    {
+      "family": "skew",
+      "n": 12,
+      "trials": 2000,
+      "seed": 20260527,
+      "p_noise": 0.05,
+      "seconds": 0.036,
+      "best_forced_back_path_length": 3,
+      "linear_forest_fraction": 1.0,
+      "score_bound_max_path": 4,
+      "histogram": {
+        "length_0": 1007,
+        "length_1": 932,
+        "length_2": 57,
+        "length_3": 4
+      },
+      "theoretical_max": 4
+    },
+    {
+      "family": "skew",
+      "n": 12,
+      "trials": 2000,
+      "seed": 20260527,
+      "p_noise": 0.1,
+      "seconds": 0.037,
+      "best_forced_back_path_length": 3,
+      "linear_forest_fraction": 0.999,
+      "score_bound_max_path": 4,
+      "histogram": {
+        "length_0": 602,
+        "length_1": 1248,
+        "length_2": 136,
+        "length_3": 14
+      },
+      "theoretical_max": 4
+    },
+    {
+      "family": "stretched",
+      "n": 12,
+      "trials": 2000,
+      "seed": 20260527,
+      "p_noise": null,
+      "seconds": 13.309,
+      "best_forced_back_path_length": 0,
+      "linear_forest_fraction": 1.0,
+      "score_bound_max_path": 4,
+      "histogram": {
+        "length_0": 2000
+      },
+      "theoretical_max": 4
+    },
+    {
+      "family": "uniform",
+      "n": 14,
+      "trials": 2000,
+      "seed": 20260527,
+      "p_noise": null,
+      "seconds": 0.043,
+      "best_forced_back_path_length": 4,
+      "linear_forest_fraction": 0.9965,
+      "score_bound_max_path": 4,
+      "histogram": {
+        "length_0": 730,
+        "length_1": 944,
+        "length_2": 284,
+        "length_3": 38,
+        "length_4": 4
+      },
+      "theoretical_max": 4
+    },
+    {
+      "family": "skew",
+      "n": 14,
+      "trials": 2000,
+      "seed": 20260527,
+      "p_noise": 0.02,
+      "seconds": 0.045,
+      "best_forced_back_path_length": 3,
+      "linear_forest_fraction": 1.0,
+      "score_bound_max_path": 4,
+      "histogram": {
+        "length_0": 1146,
+        "length_1": 799,
+        "length_2": 49,
+        "length_3": 6
+      },
+      "theoretical_max": 4
+    },
+    {
+      "family": "skew",
+      "n": 14,
+      "trials": 2000,
+      "seed": 20260527,
+      "p_noise": 0.05,
+      "seconds": 0.046,
+      "best_forced_back_path_length": 4,
+      "linear_forest_fraction": 0.997,
+      "score_bound_max_path": 4,
+      "histogram": {
+        "length_0": 522,
+        "length_1": 1219,
+        "length_2": 226,
+        "length_3": 29,
+        "length_4": 4
+      },
+      "theoretical_max": 4
+    },
+    {
+      "family": "skew",
+      "n": 14,
+      "trials": 2000,
+      "seed": 20260527,
+      "p_noise": 0.1,
+      "seconds": 0.048,
+      "best_forced_back_path_length": 5,
+      "linear_forest_fraction": 0.9885,
+      "score_bound_max_path": 4,
+      "histogram": {
+        "length_0": 183,
+        "length_1": 1217,
+        "length_2": 471,
+        "length_3": 107,
+        "length_4": 18,
+        "length_5": 4
+      },
+      "theoretical_max": 4
+    },
+    {
+      "family": "stretched",
+      "n": 14,
+      "trials": 2000,
+      "seed": 20260527,
+      "p_noise": null,
+      "seconds": 22.46,
+      "best_forced_back_path_length": 0,
+      "linear_forest_fraction": 1.0,
+      "score_bound_max_path": 4,
+      "histogram": {
+        "length_0": 2000
+      },
+      "theoretical_max": 4
+    },
+    {
+      "family": "uniform",
+      "n": 16,
+      "trials": 500,
+      "seed": 20260527,
+      "p_noise": null,
+      "seconds": 0.014,
+      "best_forced_back_path_length": 6,
+      "linear_forest_fraction": 0.916,
+      "score_bound_max_path": 6,
+      "histogram": {
+        "length_0": 77,
+        "length_1": 182,
+        "length_2": 177,
+        "length_3": 47,
+        "length_4": 11,
+        "length_5": 5,
+        "length_6": 1
+      },
+      "theoretical_max": 6
+    },
+    {
+      "family": "skew",
+      "n": 16,
+      "trials": 500,
+      "seed": 20260527,
+      "p_noise": 0.02,
+      "seconds": 0.014,
+      "best_forced_back_path_length": 4,
+      "linear_forest_fraction": 0.998,
+      "score_bound_max_path": 6,
+      "histogram": {
+        "length_0": 215,
+        "length_1": 249,
+        "length_2": 33,
+        "length_3": 2,
+        "length_4": 1
+      },
+      "theoretical_max": 6
+    },
+    {
+      "family": "skew",
+      "n": 16,
+      "trials": 500,
+      "seed": 20260527,
+      "p_noise": 0.05,
+      "seconds": 0.015,
+      "best_forced_back_path_length": 5,
+      "linear_forest_fraction": 0.99,
+      "score_bound_max_path": 6,
+      "histogram": {
+        "length_0": 65,
+        "length_1": 311,
+        "length_2": 108,
+        "length_3": 14,
+        "length_4": 1,
+        "length_5": 1
+      },
+      "theoretical_max": 6
+    },
+    {
+      "family": "skew",
+      "n": 16,
+      "trials": 500,
+      "seed": 20260527,
+      "p_noise": 0.1,
+      "seconds": 0.015,
+      "best_forced_back_path_length": 6,
+      "linear_forest_fraction": 0.932,
+      "score_bound_max_path": 6,
+      "histogram": {
+        "length_0": 12,
+        "length_1": 205,
+        "length_2": 189,
+        "length_3": 62,
+        "length_4": 22,
+        "length_5": 8,
+        "length_6": 2
+      },
+      "theoretical_max": 6
+    },
+    {
+      "family": "stretched",
+      "n": 16,
+      "trials": 500,
+      "seed": 20260527,
+      "p_noise": null,
+      "seconds": 8.967,
+      "best_forced_back_path_length": 0,
+      "linear_forest_fraction": 1.0,
+      "score_bound_max_path": 6,
+      "histogram": {
+        "length_0": 500
+      },
+      "theoretical_max": 6
+    },
+    {
+      "family": "uniform",
+      "n": 20,
+      "trials": 500,
+      "seed": 20260527,
+      "p_noise": null,
+      "seconds": 0.023,
+      "best_forced_back_path_length": 10,
+      "linear_forest_fraction": 0.402,
+      "score_bound_max_path": 6,
+      "histogram": {
+        "length_0": 9,
+        "length_1": 28,
+        "length_2": 167,
+        "length_3": 113,
+        "length_4": 88,
+        "length_5": 44,
+        "length_6": 24,
+        "length_7": 17,
+        "length_8": 6,
+        "length_9": 3,
+        "length_10": 1
+      },
+      "theoretical_max": 6
+    },
+    {
+      "family": "skew",
+      "n": 20,
+      "trials": 500,
+      "seed": 20260527,
+      "p_noise": 0.02,
+      "seconds": 0.021,
+      "best_forced_back_path_length": 4,
+      "linear_forest_fraction": 0.992,
+      "score_bound_max_path": 6,
+      "histogram": {
+        "length_0": 76,
+        "length_1": 320,
+        "length_2": 89,
+        "length_3": 13,
+        "length_4": 2
+      },
+      "theoretical_max": 6
+    },
+    {
+      "family": "skew",
+      "n": 20,
+      "trials": 500,
+      "seed": 20260527,
+      "p_noise": 0.05,
+      "seconds": 0.022,
+      "best_forced_back_path_length": 7,
+      "linear_forest_fraction": 0.882,
+      "score_bound_max_path": 6,
+      "histogram": {
+        "length_0": 4,
+        "length_1": 159,
+        "length_2": 217,
+        "length_3": 79,
+        "length_4": 28,
+        "length_5": 9,
+        "length_6": 2,
+        "length_7": 2
+      },
+      "theoretical_max": 6
+    },
+    {
+      "family": "skew",
+      "n": 20,
+      "trials": 500,
+      "seed": 20260527,
+      "p_noise": 0.1,
+      "seconds": 0.023,
+      "best_forced_back_path_length": 10,
+      "linear_forest_fraction": 0.558,
+      "score_bound_max_path": 6,
+      "histogram": {
+        "length_0": 0,
+        "length_1": 23,
+        "length_2": 131,
+        "length_3": 138,
+        "length_4": 90,
+        "length_5": 59,
+        "length_6": 34,
+        "length_7": 13,
+        "length_8": 7,
+        "length_9": 3,
+        "length_10": 2
+      },
+      "theoretical_max": 6
+    },
+    {
+      "family": "stretched",
+      "n": 20,
+      "trials": 500,
+      "seed": 20260527,
+      "p_noise": null,
+      "seconds": 19.849,
+      "best_forced_back_path_length": 0,
+      "linear_forest_fraction": 1.0,
+      "score_bound_max_path": 6,
+      "histogram": {
+        "length_0": 500
+      },
+      "theoretical_max": 6
+    }
+  ]
+}
