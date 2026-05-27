@@ -1,0 +1,185 @@
+"""Pinned tests for `scripts/relation_miner.py`.
+
+Sanity-checks that the relation miner returns the expected Schaefer
+classification for small k.  The values asserted here were derived
+empirically from running the miner on 2026-05-26.
+"""
+from __future__ import annotations
+
+import os
+import sys
+
+import pytest
+
+ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir))
+sys.path.insert(0, os.path.join(ROOT, "scripts"))
+
+from relation_miner import (  # noqa: E402
+    build_catalogue,
+    canonicalize_relation,
+    catalogue_summary,
+    classify_schaefer,
+    extract_relation,
+    is_affine,
+    is_bijunctive,
+    is_dual_horn,
+    is_horn,
+    is_np_hard_type,
+    structural_features,
+)
+
+
+def test_classify_schaefer_pure_classes():
+    # Affine but not bijunctive: parity relation on 3 bits.
+    parity = frozenset({(0, 0, 0), (1, 1, 0), (1, 0, 1), (0, 1, 1)})
+    assert is_affine(parity)
+    assert not is_bijunctive(parity)
+    assert not is_horn(parity)
+    assert not is_dual_horn(parity)
+
+    # 2-CNF (x1 OR x2): bijunctive, dual-Horn, not Horn (AND closure
+    # would include (0,0)).
+    or2 = frozenset({(0, 1), (1, 0), (1, 1)})
+    assert is_bijunctive(or2)
+    assert not is_horn(or2)
+    assert is_dual_horn(or2)
+
+    # Horn (3-bit): solutions of (x1 AND x2 -> x3).
+    horn3 = frozenset({
+        (0, 0, 0), (0, 0, 1), (0, 1, 0), (0, 1, 1),
+        (1, 0, 0), (1, 0, 1), (1, 1, 1),
+    })
+    assert is_horn(horn3)
+    # OR closure adds (1,1,0)|(0,1,0)=(1,1,0) which is NOT in R, so not dual-Horn.
+    # Actually (1,0,1)|(0,1,0)=(1,1,1) in R; check the closure manually.
+    # (1,1,1) | (1,1,1) etc -- but (1,0,1)|(1,1,0)=(1,1,1) ok.
+    # (1,1,0) is not in R, so we cannot have it as a result of OR of two R elements.
+    # OR of any two R-elements gives elements with first two bits maximum (1,1)
+    # only if both have x1=1 and x2=1 in some combination -- (1,0,1)|(0,1,0) = (1,1,1) in R.
+    # All ORs land in R because R contains all 3-tuples except (1,1,0).
+    # The only way to OR to (1,1,0) is e.g. (1,0,0)|(0,1,0); (0,1,0) in R, (1,0,0) in R,
+    # their OR = (1,1,0) NOT in R, so not dual-Horn.
+    assert not is_dual_horn(horn3)
+
+    # NP-hard: 1-in-3-SAT (exactly one of x1,x2,x3 is 1).
+    one_in_three = frozenset({(1, 0, 0), (0, 1, 0), (0, 0, 1)})
+    cls = classify_schaefer(one_in_three)
+    assert not cls["is_0_valid"]
+    assert not cls["is_1_valid"]
+    assert not cls["is_bijunctive"]
+    assert not cls["is_horn"]
+    assert not cls["is_dual_horn"]
+    assert not cls["is_affine"]
+    assert is_np_hard_type(one_in_three)
+
+
+def test_canonical_form_invariant_under_permutation():
+    R1 = frozenset({(0, 1, 0), (1, 0, 0), (1, 1, 1)})
+    # Permute coordinates.
+    R2 = frozenset({(t[1], t[0], t[2]) for t in R1})
+    assert canonicalize_relation(R1) == canonicalize_relation(R2)
+
+
+def test_canonical_form_invariant_under_bit_flip():
+    R1 = frozenset({(0, 1, 0), (1, 0, 0), (1, 1, 1)})
+    # Flip column 0.
+    R2 = frozenset({(1 - t[0], t[1], t[2]) for t in R1})
+    assert canonicalize_relation(R1) == canonicalize_relation(R2)
+
+
+def test_canonical_form_distinguishes_inequivalent():
+    # The OR relation and the AND relation on 2 bits are NOT equivalent
+    # under permutation+flip (different sizes).
+    or2 = frozenset({(0, 1), (1, 0), (1, 1)})
+    and2 = frozenset({(1, 1)})
+    assert canonicalize_relation(or2) != canonicalize_relation(and2)
+
+
+def test_k4_identity_catalogue_bijunctive():
+    """At k=4, every relation in the fork-tree catalogue is bijunctive."""
+    cat = build_catalogue(4, sample=None, verify_canonical=True)
+    summ = catalogue_summary(cat)
+    for entry in summ["entries"]:
+        assert entry["is_bijunctive"], entry
+        assert not entry["np_hard_type"], entry
+
+
+def test_k5_cyclic_shift_relation():
+    """At k=5 cyclic shift pi=(1,2,3,4,0): pinned classification."""
+    pi = (1, 2, 3, 4, 0)
+    R = extract_relation(5, pi)
+    cls = classify_schaefer(R)
+    # Empirical values: |R|=18, Horn, bijunctive, not affine.
+    assert cls["size"] == 18
+    assert cls["is_0_valid"]
+    assert not cls["is_1_valid"]
+    assert cls["is_horn"]
+    assert cls["is_bijunctive"]
+    assert not cls["is_dual_horn"]
+    assert not cls["is_affine"]
+    assert not is_np_hard_type(R)
+
+
+def test_k5_full_catalogue_size():
+    """At k=5, the fork-tree catalogue has exactly 4 canonical classes."""
+    cat = build_catalogue(5, sample=None, verify_canonical=True)
+    assert cat["distinct_canonical"] == 4
+    summ = catalogue_summary(cat)
+    for entry in summ["entries"]:
+        # No NP-hard relations at k=5.
+        assert not entry["np_hard_type"], entry
+
+
+def test_k7_representative_relation():
+    """At k=7, a specific pairing yields a relation we pin here.
+
+    The pinned pairing is the cyclic shift pi(i) = i+1 mod 7.
+    Empirical (from k=7 full sweep on 2026-05-26): |R|=54, bijunctive
+    Horn relation generated by the size-2 forbidden adjacent pairs.
+    """
+    pi = tuple((i + 1) % 7 for i in range(7))
+    R = extract_relation(7, pi)
+    cls = classify_schaefer(R)
+    # Pinned values from the full k=7 catalogue.
+    assert cls["size"] == 54
+    assert cls["is_0_valid"]
+    assert not cls["is_1_valid"]
+    assert cls["is_bijunctive"]
+    assert cls["is_horn"]
+    assert not cls["is_dual_horn"]
+    assert not cls["is_affine"]
+    assert not is_np_hard_type(R)
+
+
+def test_k7_non_bijunctive_relation():
+    """At k=7, pi=(1,3,2,5,4,6,0) yields a non-bijunctive Horn relation.
+
+    This pairing realises the "size-6 cyclic ladder" predicted in
+    Section 28 — its minimal fatal support is one set of size 6,
+    encoding a 6-literal negative Horn clause, which is NOT bijunctive.
+    Pinned from the full k=7 sweep on 2026-05-26.
+    """
+    pi = (1, 3, 2, 5, 4, 6, 0)
+    R = extract_relation(7, pi)
+    cls = classify_schaefer(R)
+    assert cls["size"] == 126
+    assert cls["is_0_valid"]
+    assert not cls["is_bijunctive"]
+    assert cls["is_horn"]
+    assert not is_np_hard_type(R)
+    # Structural feature: exactly one size-6 minimal fatal support.
+    feats = structural_features(7, pi)
+    assert feats["num_minimal_fatal"] == 1
+    assert feats["minimal_fatal_size_histogram"] == {6: 1}
+
+
+def test_structural_features_returns_dict():
+    """Smoke test: structural_features runs and returns expected keys."""
+    feats = structural_features(5, (0, 1, 2, 3, 4))
+    assert "num_minimal_fatal" in feats
+    assert "minimal_fatal_size_histogram" in feats
+    assert "minimal_fatal_supports" in feats
+
+
+if __name__ == "__main__":
+    sys.exit(pytest.main([__file__, "-v"]))

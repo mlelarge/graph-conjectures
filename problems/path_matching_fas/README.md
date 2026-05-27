@@ -183,6 +183,41 @@ than matching-FAS and strictly narrower than forest-FAS.
   through the full n=7 census. On n=24 light-noise skew probes it
   improves most instances but does not remove rare search spikes, so it
   is the right DP normalization rather than the final algorithm.
+- **Naive active-bag DP fails.** After forced/flexible normalization,
+  the natural interval-bag state would keep active-window vertices,
+  placed-active subset, active degrees, and active component partition.
+  `ff_signature_probe.py` finds two prefixes of the 7-vertex component
+  witness with identical active-bag signature but different
+  extendability. The missing information is latent connectivity through
+  forgotten vertices outside the active bag.
+- **Visible-latent interface is bounded, but not complete.** An
+  expired prefix vertex can still be touched by a future flexible
+  backedge only through an unplaced active vertex. Since each unplaced
+  active vertex has at most two remaining backdegree slots and Hall
+  bounds the active band by 9, the old-prefix ports relevant to future
+  flexible choices are bounded by 18; active plus old-visible ports are
+  bounded by 27. The strengthened signature separates the known
+  active-bag collision and survived the early n=7 / entropy-family
+  probes, but a later skew n=12 witness refutes visible-latent
+  extension-equivalence itself. Two pruned same-prefix-set states have
+  identical visible-latent signatures, one has an LFO completion, and
+  the other has none. Sleeping-block and wake-1 signatures separate
+  this collision; on that witness tournament a depth-5 sweep finds
+  12 visible-latent extendability collisions and 0 sleeping-block
+  collisions. The current proof draft is
+  [`docs/exchange_proof_draft.md`](docs/exchange_proof_draft.md). The
+  positive DP target has therefore shifted from proving visible-latent
+  soundness to finding a bounded refinement that records the missing
+  dormant path connectivity.
+- **Fixed finite wake horizon fails as a bisimulation.** A wake-$h$
+  signature records vertices whose windows open within the next $h$
+  cuts and the old prefix ports they can already hit. The base
+  wake-chain witness defeats horizon 1; inserting transitive padding
+  before the delayed dormant vertex shifts the same obstruction one
+  cut later. Horizons 1-4 are pinned: same horizon-$h$ signature,
+  different horizon-$h$ child transition profiles, separated by
+  horizon $h+1$. Thus "track the next $h$ opening layers" is not the
+  missing bounded DP state.
 - **Empirical score-window growth.** A descriptive run over exact
   all-record data through $n=7$, exact n=8 NO records, and a stride-500
   n=9 sample gives maximum node counts
@@ -251,6 +286,17 @@ than matching-FAS and strictly narrower than forest-FAS.
 - [`scripts/lfo_forced_flexible.py`](scripts/lfo_forced_flexible.py) —
   exact forced/flexible solver: preload forced backedges, then search
   only over overlapping-window choices.
+- [`scripts/ff_signature_probe.py`](scripts/ff_signature_probe.py) —
+  active-bag and visible-latent signature collision search for the
+  forced/flexible DP attempt.
+- [`scripts/wake_signature_probe.py`](scripts/wake_signature_probe.py)
+  — wake-horizon signature and one-step transition-profile probes for
+  the forced/flexible DP attempt, including padded finite-horizon
+  counterexamples.
+- [`scripts/exchange_repair_probe.py`](scripts/exchange_repair_probe.py)
+  — suffix-transfer failure detector and single-left-move exchange
+  repair probe for the visible-latent proof attempt; supports exact
+  census-level repair counts.
 - [`scripts/score_window_growth.py`](scripts/score_window_growth.py) —
   descriptive search-node growth summaries and log/log-log fits.
 - [`scripts/score_window_random_probe.py`](scripts/score_window_random_probe.py)
@@ -299,8 +345,9 @@ than matching-FAS and strictly narrower than forest-FAS.
 - [`tests/test_score_window.py`](tests/test_score_window.py) — pins the
   score-window solver against brute force and the separating examples.
 - [`tests/test_score_window_dp_obstruction.py`](tests/test_score_window_dp_obstruction.py)
-  — pins the reversed-matching family: LFO YES, bounded score
-  displacement, but unbounded crossing backedges.
+  — pins the reversed-matching family, component-entropy obstruction,
+  active-bag signature collision, and visible-latent repair on the
+  known witness.
 - [`data/sweep_results.json`](data/sweep_results.json) — sweep output
   for $n \in [3, 6]$.
 - [`data/lfo_sweep_3_6_corrected.json`](data/lfo_sweep_3_6_corrected.json)
@@ -372,6 +419,12 @@ python3 scripts/score_window_random_probe.py --mode uniform --ns 10 --samples 20
 python3 scripts/score_window_random_probe.py --mode skew --ns 12,16,20 --samples 200 --seed 20260522
 python3 scripts/score_window_random_probe.py --mode skew --ns 24 --samples 100 --seed 20260522
 python3 scripts/score_window_random_probe.py --mode skew --ns 24 --ps 0.02,0.05 --samples 50 --seed 20260522 --compare-forced-flexible
+python3 scripts/ff_signature_probe.py --T '[[0,0,0,0,0,0,0],[1,0,0,0,0,0,0],[1,1,0,0,0,0,1],[1,1,1,0,0,0,0],[1,1,1,1,0,0,0],[1,1,1,1,1,0,0],[1,1,0,1,1,1,0]]' --depth 5 --mode active
+python3 scripts/ff_signature_probe.py --census data/lfo_full_n7.json --depth 5 --mode visible
+python3 scripts/wake_signature_probe.py --census data/lfo_full_n7.json --depth 5 --kind wake --horizon 1
+python3 scripts/wake_signature_probe.py --census data/lfo_full_n7.json --depth 5 --kind visible --check extendability
+python3 scripts/exchange_repair_probe.py --census data/lfo_full_n7.json --depth 5
+python3 scripts/exchange_repair_probe.py --random skew --ns 10,12 --ps 0.02,0.05,0.1 --samples 20 --depth 5
 python3 scripts/poly_mfas.py --nmax 6               # also ~30s — agreement check
 python3 scripts/random_check.py --n 7 --samples 200 # ~10s
 ```

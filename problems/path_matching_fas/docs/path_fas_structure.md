@@ -697,6 +697,65 @@ $p=0.02$ group from 2266 to 1137 nodes, but rare spikes remain. Thus
 preloading forced edges is the right normalization for the DP attempt,
 not the final algorithm.
 
+The naive interval-bag DP after forced/flexible normalization has been
+falsified. A state containing only the active score-window vertices,
+placed-active subset, active degrees, and component partition restricted
+to active vertices has mixed extendability already on the 7-vertex
+component witness. The missing datum is latent connectivity through
+forgotten vertices outside the active bag. Any polynomial DP must
+quotient this latent connectivity, not merely use the active interval
+bag.
+
+The next refinement is now precise. At a cut $i$, an expired prefix
+vertex can still be touched by a future **flexible** backedge only if
+it is beaten by an unplaced active vertex. If $p$ is expired and $y$ is
+not yet active, then $h_p<i<\ell_y$, so the pair $\{p,y\}$ has
+disjoint score windows and is already part of the forced scaffold. In
+any extendable branch each unplaced active vertex has at most two such
+old ports, and there are at most nine active vertices after Hall
+pruning. Thus the old-prefix ports relevant to future flexible choices
+are bounded by 18, and the active-plus-visible-old interface is bounded
+by 27. `ff_signature_probe.py` implements this visible-latent
+signature. It separates the known active-bag collision and no
+mixed-extendability collision was found in the exact $n=7$ census to
+depth 5. The naive child-signature induction is false even on the
+pruned state space: a 12-vertex skew witness has two
+visible-latent-identical prefixes at depth 5 whose legal child
+transition profiles differ. That same witness still has no
+mixed-extendability visible class, so the remaining target is direct
+extension-equivalence, not one-step bisimulation. A stronger
+same-suffix-transfer statement is also false: a 10-vertex skew witness
+has two visible-equivalent extendable prefixes where suffix
+`(5,6,7,9,8)` works from one prefix and closes a hidden cycle from the
+other, while `(5,6,7,8,9)` works from both. Thus a proof must allow
+different completing suffixes. Later skew \(n=12\) probes sharpened
+this substantially: first-failing-vertex left moves are insufficient,
+one-block right moves are insufficient, and visible-latent extension-
+equivalence itself is false. The proof draft
+[`exchange_proof_draft.md`](exchange_proof_draft.md) now records the
+counterexample: two FF-pruned same-prefix-set states have identical
+visible-latent signatures, but one is extendable and the other is not.
+Sleeping-block and wake-1 signatures separate this collision. The next
+positive target is therefore a bounded refinement of visible-latent,
+not another repair lemma for the same state.
+
+This is the current positive proof target, not the final theorem. The
+remaining gap is dormant forced-component propagation: a forced
+linear-forest component can cross a cut without exposing a visible old
+port, but earlier flexible choices may have merged its identity with
+another component. A polynomial proof has to quotient those dormant
+forced-component identities, or a hardness proof has to exploit them.
+
+The first bounded repair, finite-horizon wake tracking, is not enough
+for a one-step induction. A wake-$h$ signature records vertices whose
+windows open within the next $h$ cuts and the old prefix ports they can
+already hit. The base wake-chain witness defeats horizon 1; inserting
+transitive padding before the delayed dormant vertex shifts the same
+obstruction one cut later. Horizons 1-4 are pinned: same horizon-$h$
+signature, different horizon-$h$ child transition profiles, separated
+by horizon $h+1$. This points to an outward-shifting wake obstruction,
+not a finite-lookahead repair.
+
 See [`score_window.md`](score_window.md) for the lemma, instrumentation
 tables, the reversed-matching obstruction, and the proposed compressed
 DP target.
@@ -759,7 +818,9 @@ target. The current leading direction is the score-window dynamic
 programming attempt described above: compress the exact
 `lfo_score_window.py` search state. The naive active-frontier DP is now
 known to be insufficient because of the reversed-matching family; the
-real target is a quotient of the unbounded pending components.
+visible-latent locality lemma bounds the old ports relevant to future
+flexible choices, and the real remaining target is a quotient of
+dormant forced-component identities.
 
 ## Files
 
@@ -795,6 +856,18 @@ real target is a quotient of the unbounded pending components.
 - [`scripts/lfo_forced_flexible.py`](../scripts/lfo_forced_flexible.py)
   — exact forced/flexible solver: preload forced backedges, then search
   only over overlapping-window choices.
+- [`scripts/ff_signature_probe.py`](../scripts/ff_signature_probe.py)
+  — active-bag and visible-latent signature collision search for the
+  forced/flexible DP attempt.
+- [`scripts/wake_signature_probe.py`](../scripts/wake_signature_probe.py)
+  — wake-horizon signature and one-step transition-profile probes for
+  the forced/flexible DP attempt, including padded finite-horizon
+  counterexamples.
+- [`scripts/exchange_repair_probe.py`](../scripts/exchange_repair_probe.py)
+  — suffix-transfer failure detector and repair probe for the
+  visible-latent proof attempt. It now includes left moves, right-block
+  moves, adjacent internal swaps, and the skew \(n=12\) counterexample
+  showing visible-latent extension-equivalence is false.
 - [`scripts/score_window_growth.py`](../scripts/score_window_growth.py)
   — descriptive search-node growth summaries and log/log-log fits.
 - [`scripts/score_window_random_probe.py`](../scripts/score_window_random_probe.py)

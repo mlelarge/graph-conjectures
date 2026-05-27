@@ -553,6 +553,479 @@ So preloading forced edges is the right normalization, not the whole
 algorithm. The remaining hard branching is inside the flexible
 bounded-overlap part.
 
+## Naive active-bag DP fails
+
+The natural next attempt is an interval-bag DP over the flexible
+overlap graph. The first candidate state at position $i$ is:
+
+- the active score-window vertices;
+- which active vertices have already been placed;
+- the current degrees of active vertices;
+- the component partition restricted to active vertices.
+
+This state is still insufficient. The probe
+[`../scripts/ff_signature_probe.py`](../scripts/ff_signature_probe.py)
+finds a collision already in the 7-vertex component witness. The two
+prefixes
+
+```text
+5,3,6,1
+6,3,5,1
+```
+
+have the same prefix vertex set, and at position 4 they have the same
+active-bag signature:
+
+```text
+active vertices      = {0,1,2,3,4}
+placed active        = {1,3}
+active degrees       = 0:0, 1:0, 2:0, 3:1, 4:0
+active partition     = all five active vertices singleton
+```
+
+But the first prefix is not extendable and the second is extendable.
+The difference is connectivity carried by forgotten vertices outside
+the active bag. Therefore a DP over only the current interval bag is
+not sound, even after forced/flexible normalization.
+
+This is the sharpest current obstruction to a polynomial proof. Any DP
+must carry some quotient of **latent connectivity**: component
+information whose current representatives are outside the active
+score-window bag but whose effect can reappear when future vertices are
+placed.
+
+## A bounded visible-latent interface
+
+The active-bag failure above does not mean the latent part is arbitrary.
+After forced/flexible normalization there is a precise local bound on
+the part of the expired prefix that can still be touched by **future
+flexible** choices.
+
+Fix a cut after positions $0,\ldots,i-1$ have been filled. Let
+
+- $P_i$ be the placed prefix;
+- $R_i$ be the unplaced suffix;
+- $A_i=\{v:\ell_v\le i\le h_v\}$ be the active score-window set;
+- $X_i=\{p\in P_i:h_p<i\}$ be the expired prefix vertices.
+
+If $p\in X_i$ and $y\in R_i\setminus A_i$, then
+
+$$
+h_p<i<\ell_y,
+$$
+
+so $I_p$ and $I_y$ are disjoint. Hence the pair $\{p,y\}$ is not a
+flexible pair at all: its contribution is already part of the fixed
+forced graph. Therefore an expired prefix vertex can still be incident
+with a future **flexible** backedge only through an unplaced active
+vertex.
+
+Define the old visible ports at cut $i$ by
+
+$$
+O_i=\{p\in P_i\setminus A_i:\exists x\in A_i\cap R_i
+\text{ with } x\to p \text{ and } I_x\cap I_p\ne\emptyset\}.
+$$
+
+Equivalently, in the implementation these are the forgotten prefix
+vertices in `flex_outmask[x] & prefix_mask` for unplaced active
+vertices $x$.
+
+In any branch that can still extend to an LFO, each unplaced active
+vertex $x$ has at most $2-\deg(x)$ such old ports, because all of them
+will become back-neighbors of $x$ when $x$ is placed. In particular,
+after the standard future-degree pruning,
+
+$$
+|O_i|\le 2|A_i\cap R_i|\le 18,
+$$
+
+using the Hall bound $|A_i|\le 9$. Thus the vertices relevant to future
+flexible choices are contained in the bounded set
+
+$$
+A_i\cup O_i,
+$$
+
+of size at most $27$.
+
+This gives a sharper candidate DP state than the failed active-bag
+state:
+
+- the active vertices $A_i$;
+- which active vertices are already placed;
+- the current degrees of vertices in $A_i\cup O_i$;
+- the component partition induced by the current backedge graph on
+  $A_i\cup O_i$;
+- for every unplaced active vertex $x$, the old ports in $O_i$ that
+  $x$ will hit if $x$ is placed next.
+
+This state is sufficient for all **immediate** degree and cycle tests
+caused by placing a currently active vertex: every new flexible
+backedge from that vertex goes to the current prefix, and every expired
+prefix endpoint it can hit lies in $O_i$.
+
+The probe
+[`../scripts/ff_signature_probe.py`](../scripts/ff_signature_probe.py)
+implements this visible-latent signature. It still finds the
+active-bag collision above, but the strengthened signature separates
+that collision: on the same 7-vertex witness, no mixed-extendability
+collision is found to depth 5. A full scan of the exact $n=7$ census to
+depth 5 likewise found no visible-latent collision:
+
+```bash
+python3 scripts/ff_signature_probe.py \
+  --census data/lfo_full_n7.json --depth 5 --mode visible
+```
+
+This is evidence for the state, not a proof of polynomiality.
+
+The remaining gap is no longer "future flexible edges can touch
+arbitrarily many old vertices"; that statement is false after the
+locality lemma above. The real gap is **dormant forced-component
+propagation**. A forced linear-forest component may cross a cut without
+having a currently visible old port. If earlier flexible choices have
+merged that component with another component, the merged identity may
+matter later when a far endpoint of the forced component enters the
+active window. The reversed-matching family is the benign example of
+many such dormant forced components; the component-entropy family shows
+that connectivity bits can matter. A polynomial proof now has to show
+that these dormant forced-component identities admit a bounded or
+polynomial quotient, or else exploit them for hardness.
+
+## Step A: forced/flexible normalization kills the entropy family
+
+The 2^k entropy lower bound was built on cut-isolated sums of the
+7-vertex component witness, *before* score-window + forced/flexible
+normalization. The script
+[`../scripts/cut_isolated_visible_test.py`](../scripts/cut_isolated_visible_test.py)
+checks whether the FF-normalized DP still sees that entropy.
+
+**Q1 (Hall feasibility).** The cut-isolated sum $T_k$ is Hall-feasible
+for every tested $k$. The score windows accommodate the linearly
+growing indegrees, so this is not the obstacle.
+
+**Q2 (pattern survival).** Out of the $2^k$ good/bad local patterns,
+only a small subset survives the score-window + initial-forced-state
+checks at the prefix-construction step. At $k = 3$, **7 of 8 patterns
+are killed during prefix construction**:
+
+| pattern | longest valid prefix depth |
+|---|---:|
+| `(good,good,good)` | 12 of 12 (extendable globally) |
+| `(good,good,bad)` | 11 of 12 |
+| `(good,bad,*)` | 7 of 12 |
+| `(bad,*,*)` | 3 of 12 |
+
+The mechanism at $k \ge 2$: the cross-copy indegree contributions push
+the local "suffix" vertex 4 of each copy into the disjoint-window
+regime with the local prefix vertices 2 and 3, creating *forced*
+backedges $4 \to 2$ and $4 \to 3$ at initialization. These pre-merge
+local-2 and local-3 into a single forced linear-forest component
+inside each copy. The local *bad* prefix would add flex backedge
+$3 \to 2$, which now closes a triangle with the forced $\{2, 4, 3\}$
+component, and the cycle test rejects.
+
+So **forced/flexible normalization destroys the bad-pattern entropy
+before it can appear**. The original 2^k lower bound does not transfer
+to the FF DP state space.
+
+## Sleeping-block tracking is empirically redundant
+
+To probe further, the augmented "sleeping-block signature" tracks the
+partition restricted to $A_i \cup O_i \cup F_i$, where $F_i$ is the set
+of future-opening unplaced vertices. This is a strict refinement of
+visible-latent. See
+[`../scripts/sleeping_block_probe.py`](../scripts/sleeping_block_probe.py).
+
+Results so far:
+
+| test set | tournaments | visible classes | sleeping classes | visible collisions | sleeping refines visible |
+|---|---:|---:|---:|---:|---:|
+| exact $n = 7$ census (depth 5) | 456 | 128,647 | 129,006 | 0 | 50 of 456 |
+| random $n = 8$ samples (depth 4) | 30 | 2,650 | 2,650 | 0 | 0 of 30 |
+| cut-isolated $k = 2$ (depth 4) | 1 | 49 | 49 | 0 | no |
+| cut-isolated $k = 3$ (depth 4) | 1 | 37 | 37 | 0 | no |
+| cut-isolated $k = 4$ (depth 4) | 1 | 37 | 37 | 0 | no |
+
+On the cut-isolated entropy family — the precise construction that
+motivated the dormant-component concern — sleeping-block tracking is
+**completely redundant**: visible and sleeping signatures produce
+identical equivalence classes at $k \in \{2, 3, 4\}$.
+
+On the $n = 7$ census, sleeping strictly refines visible on 50 of 456
+tournaments, but the refinement is harmless: visible-latent already has
+0 collisions across all 456 tournaments, so the extra distinctions made
+by sleeping never separate mixed-extendability states.
+
+**Conclusion (Step A).** Across all tested instances, including the
+entropy family that originally motivated the concern, visible-latent
+suffices and sleeping-block tracking adds no distinguishing power. The
+augmented DP state can plausibly stay at the bounded $|A_i| \le 9$,
+$|O_i| \le 18$ interface.
+
+The result is pinned by `../tests/test_sleeping_block.py`.
+
+## Induction attempt: visible-latent is not a bisimulation
+
+The first attempted proof was the obvious induction:
+
+> If two FF-normalized prefix states at cut $i$ have the same
+> visible-latent signature, then for every legal next vertex $x$, the
+> child states at cut $i+1$ again have the same visible-latent
+> signature.
+
+This would immediately imply extendability-equivalence. It is false.
+
+A 12-vertex light-noise skew tournament gives two valid prefixes
+
+```text
+0,1,2,3,5
+1,0,2,3,5
+```
+
+with identical visible-latent signature at cut 5. Placing vertex 4 next
+is legal from both states, but the child visible-latent signatures at
+cut 6 differ. The reason is exactly the dormant-component issue: vertex
+11 enters the active band at cut 6. In the first prefix, 11 is in a
+dormant forced component separate from the visible component containing
+5; in the second prefix, the hidden ordering of 0 and 1 has already
+merged 11 into that component. The current visible-latent signature at
+cut 5 does not see this distinction. The sleeping-block signature does.
+
+So the clean one-step bisimulation proof does **not** work for
+visible-latent alone. The pinned test is
+`VisibleInductionAttemptTest.test_visible_signature_is_not_a_one_step_bisimulation`
+in `../tests/test_sleeping_block.py`.
+
+This does not refute visible-latent extendability-equivalence. In fact,
+the pinned parents are rejected by the solver's forced-future degree
+prune before branching. What it refutes is the raw, unpruned
+bisimulation claim.
+
+The pruned one-step version also fails. A 12-vertex light-noise skew
+tournament gives two prefixes
+
+```text
+0,1,4,2,3
+2,0,4,1,3
+```
+
+that both survive Hall and forced-future pruning, have identical
+visible-latent signature at cut 5, and have different visible-latent
+child transition profiles. This is pinned by
+`VisibleInductionAttemptTest.test_visible_pruned_one_step_mismatch_is_not_extendability_collision`.
+However, the same witness has no mixed extendability class: all
+visible-latent-equivalent pruned prefixes at depth 5 still agree on
+whether they complete to an LFO. Thus the surviving target is strictly
+weaker than any one-step bisimulation:
+
+> visible-latent-equal pruned states may branch into different
+> visible-latent classes, but the set of winning continuations is
+> nonempty on one iff it is nonempty on the other.
+
+A proof using visible-latent alone must therefore prove direct
+extension-equivalence, or prove a simulation up to a coarser winning
+relation. Child-state equality is dead.
+
+The direct extension-equivalence probe has been strengthened so it
+groups prefixes by signature first and computes exact completions only
+inside duplicate signature classes:
+
+```text
+python3 scripts/wake_signature_probe.py \
+  --census data/lfo_full_n7.json \
+  --depth 5 --kind visible --check extendability
+```
+
+Current negative searches for a counterexample:
+
+| test set | result |
+|---|---:|
+| exact $n=7$ census, depth 5 | 456 checked, no collision |
+| padded wake witnesses, horizons 1-4, depth 5 | no collision |
+| skew random, $n=12$, $p\in\{0.02,0.05\}$, 20 samples total | no collision |
+| skew random, $n=16$, $p\in\{0.02,0.05\}$, 20 samples total | no collision |
+
+This is not a proof, but it sharply narrows the claim. The visible
+state provably does not determine the next visible state. It may still
+determine the Boolean question "is there at least one completion?"
+
+The stronger same-suffix transfer statement is false. A 10-vertex
+skew witness has two visible-latent-equivalent pruned prefixes
+
+```text
+0,1,3,2,4
+2,1,3,0,4
+```
+
+that are both extendable. The suffix
+
+```text
+5,6,7,9,8
+```
+
+completes the first prefix, but fails on the second prefix: when vertex
+8 is placed last, it hits past vertices 3 and 9, which are already in
+the same hidden component in the second state. The alternate suffix
+
+```text
+5,6,7,8,9
+```
+
+completes both. This is pinned by
+`VisibleInductionAttemptTest.test_suffix_transfer_is_false_but_extension_survives`.
+Thus the proof cannot be "every suffix transfers." It must be a
+winning-region proof: hidden differences may force a different suffix,
+but should not change existence of some suffix.
+
+## Exchange-repair target
+
+The 10-vertex suffix-transfer failure suggests the correct local
+repair. Suppose visible-equivalent states $S,S'$ are at cut $i$, and a
+suffix $\sigma$ that completes $S$ first fails from $S'$ when trying to
+place vertex $x$ at suffix position $t$. At that moment, $x$ has past
+flexible back-neighbors $a,b$ that are already in the same hidden
+component in $S'$. At least one of $a,b$ was placed earlier in the
+suffix, not in the original visible interface; otherwise the visible
+partition would already record the cycle.
+
+The candidate exchange lemma is:
+
+> Move $x$ left in the suffix, past one of the suffix-created members
+> of the hidden component, until $x$ no longer simultaneously hits both
+> sides of that component. Then the repaired suffix is still
+> score-window-valid and does not create a degree or cycle violation.
+
+This is exactly what happens in the witness: moving 8 before 9 changes
+`5,6,7,9,8` into `5,6,7,8,9`.
+
+The probe
+[`../scripts/exchange_repair_probe.py`](../scripts/exchange_repair_probe.py)
+searches for visible-equivalent states where a completing suffix for
+one state fails from the other and no single left-move of the first
+failing vertex repairs it. Current results:
+
+| test set | result |
+|---|---:|
+| exact \(n=7\) census, depth 5 | 41,266 same-remaining transfer checks, no same-suffix failure |
+| 10-vertex suffix-transfer witness | no exchange obstruction |
+| 10-vertex suffix-transfer witness, all completions | 72 same-suffix failures, 72 one-exchange repairs |
+| skew random, $n=10,12$, $p\in\{0.02,0.05,0.1\}$, 120 samples | no exchange obstruction |
+| skew random, $n=14$, $p\in\{0.02,0.05\}$, 10 samples | no exchange obstruction |
+| uniform random, $n=9,10$, 40 samples | no exchange obstruction |
+
+So the proof bottleneck is now sharper than "dormant components are
+irrelevant." Dormant components can matter enough to invalidate a
+chosen suffix.  That repair program has now been refuted at two
+levels.  First, strict-progress left moves are insufficient.  Second,
+one-block right moves are insufficient.  Most importantly, a skew
+\(n=12\) witness refutes visible-latent extension-equivalence itself:
+two FF-pruned same-prefix-set states have the same visible-latent
+signature, but one is extendable and the other is not.
+
+The current formal write-up is
+[`exchange_proof_draft.md`](exchange_proof_draft.md). It proves the
+score-window/forced-flexible/local-placement pieces, records the repair
+counterexamples, and identifies the new positive target: strengthen the
+state.  Sleeping-block and wake-1 signatures separate the visible-
+latent collision.
+
+A second tempting shortcut also fails. One might hope that sleeping
+refinements of a visible-latent class occur only in dead states. They
+do not. In a small skew-score probe at $n=16$, visible-latent classes
+split by sleeping-block information inside extendable states. The
+new \(n=12\) witness goes further: a visible class can split into mixed
+extendability, and sleeping-block separates it. Thus sleeping
+distinctions are not cosmetic; at least some of them are required.
+
+The straightforward induction does work for the larger sleeping-block
+state on the pinned witnesses, because future-opening vertices are
+already represented before they enter the active band. But that state
+contains all future-opening vertices and is not bounded by the constant
+27 interface, so it is a proof device rather than the desired
+polynomial DP state.
+
+## Fixed finite wake horizon is not a bisimulation
+
+The next attempted bounded repair was a one-step wake signature. At cut
+$i$, augment visible-latent by the vertices whose windows open at
+$i+1$, together with the old prefix ports they can already hit by
+flexible backedges. This is implemented in
+[`../scripts/wake_signature_probe.py`](../scripts/wake_signature_probe.py)
+as `wake_signature(..., horizon=1)`.
+
+This repair separates the raw 12-vertex failure above: the two prefixes
+have the same visible-latent signature but different horizon-1 wake
+signatures. However, horizon 1 is **not** a one-step bisimulation on
+the surviving pruned DP state space.
+
+A second 12-vertex skew tournament has two prefixes
+
+```text
+0,1,3,2,4
+2,0,3,1,4
+```
+
+that both survive forced-future pruning and have the same horizon-1
+wake signature at cut 5. Their horizon-1 child transition profiles
+differ. The obstruction has simply shifted: to know the child's
+horizon-1 wake data, the parent needs information about vertices waking
+two cuts ahead. On this witness, horizon 2 separates the two parent
+states, and sleeping-block tracking also separates them, but horizon 1
+does not.
+
+So fixed one-step wake tracking is not the missing bounded datum. The
+same obstruction can be pushed farther out. The base wake-failure
+witness has two surviving prefixes
+
+```text
+0,1,3,2,4
+2,0,3,1,4
+```
+
+with the same horizon-1 wake signature but different horizon-1 child
+transition profiles. Inserting one new transitive padding vertex
+immediately before the delayed dormant vertex raises that delayed
+vertex's indegree by one, hence moves its score window one cut later.
+The same two prefixes then have the same horizon-2 wake signature, but
+different horizon-2 child transition profiles. Horizon 3 separates that
+padded pair.
+
+Iterating the padding gives, for every tested $h\in\{1,2,3,4\}$, a
+tournament $T_h$ with two prefixes that:
+
+- survive interval-Hall and forced-future pruning;
+- have the same horizon-$h$ wake signature;
+- have different horizon-$h$ child transition profiles;
+- are separated by horizon $h+1$.
+
+The construction is implemented by
+`padded_wake_failure_witness(h)` in
+[`../scripts/wake_signature_probe.py`](../scripts/wake_signature_probe.py)
+and pinned in
+`VisibleInductionAttemptTest.test_padded_witness_defeats_each_tested_finite_horizon`.
+
+This does not prove that no bounded non-horizon summary exists. It does
+kill the obvious finite-lookahead ladder: "just track the next $h$
+opening layers" cannot be the final DP state if the proof requires
+one-step child-signature equality.
+
+This has now been sharpened by a skew \(n=12\) counterexample: visible-
+latent extension-equivalence itself is false.  Two FF-pruned prefixes
+with the same prefix set and the same visible-latent signature can have
+different extendability.  Sleeping-block and wake-1 signatures separate
+that collision.
+
+The remaining plausible options are therefore:
+
+- prove soundness for a stronger bounded signature, with sleeping-block
+  connectivity as the first candidate;
+- find a bounded summary of the *entire wake schedule*, not merely a
+  fixed number of opening layers;
+- or pivot to hardness using the visible-latent collision / padded
+  wake-chain as obstruction families.
+
 ## Next formal target
 
 The right next move is narrower than the previous "bounded frontier"
@@ -574,21 +1047,49 @@ can be chosen next. The plausible DP state must record:
 - enough component information to decide whether a future vertex with
   two past back-neighbors would close a cycle.
 
-The reversed-matching family shows that the pending representation
-cannot be "list every open crossing edge"; that list can have size
-$\Theta(n)$ even in matching-FAS YES instances. The repeated component
-family shows that endpoint pairings can carry $\Theta(k)$ independent
-bits while all coarse degree data stays fixed. The next mathematical
-subproblem is therefore:
+After the visible-latent collision, the picture has moved again:
 
-> Can the expired pending part be quotient-compressed without losing
-> the degree and cycle tests?
+- The active-bag-only DP is unsound (the original ff_signature_probe
+  active-bag collision still stands).
+- The visible-latent DP is unsound: a skew \(n=12\) witness has
+  same-prefix-set, same-visible-signature states with different
+  extendability.
+- Sleeping-block tracking separates the new collision.  On the witness
+  tournament at depth 5, visible-latent has 12 extendability
+  collisions while sleeping-block has 0.
+- Sleeping-block tracking remains redundant on the original
+  cut-isolated entropy family.  The cycle-closing test inside
+  `_initial_forced_state` combined with the score-window normalization
+  kills those bad-pattern branches before they can multiply.
 
-Equivalently, after the forced/flexible decomposition:
+So the empirical picture still supports a *bounded-interface* DP, but
+not with the visible-latent state alone.  The next candidate state must
+include sleeping/dormant path connectivity.  Its size bound and
+soundness are now the central questions.
 
-> Can a fixed forced linear forest be combined with bounded-clique
-> interval choices in polynomial time while preserving maximum degree
-> $2$ and acyclicity?
+## Next formal target
 
-If yes, the Path-FAS half is in P. If no, the obstruction should be
-strong enough to guide a non-AAL hardness reduction.
+After the induction attempt, the cleanest remaining proof obligations
+are:
+
+1. **State-refinement theorem (formal).** Identify a bounded refinement
+   of visible-latent, starting with sleeping-block connectivity, that
+   separates all known extendability collisions and remains bounded by
+   score-window geometry.
+
+2. **Constructive DP and complexity bound.** Implement the refined DP
+   and measure its worst-case state count empirically. If the count
+   stays below $\mathrm{poly}(n) \cdot 2^{O(1)}$ on the
+   tested censuses (including stress-tested $n \ge 10$ samples), this
+   becomes the polynomial algorithm.
+
+3. **Alternative hardness path.** If a soundness counterexample appears
+   at higher $n$ or with a non-cut-isolated construction, that
+   immediately gives a refined family for either a hardness reduction
+   or a strictly larger but still polynomial DP state.
+
+If the Path-FAS half is in P, the route is now visible:
+forced/flexible normalization plus visible-latent DP. If it is not in P,
+the obstruction has been narrowed to a specific kind of dormant
+forced-component coherence that the score-window normalization does
+*not* kill — and we have not yet exhibited such an obstruction.

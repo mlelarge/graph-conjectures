@@ -20,6 +20,10 @@ from pending_state_probe import (  # noqa: E402
 )
 from lfo_score_window import find_lfo_order_score_window, score_windows  # noqa: E402
 from lfo_forced_flexible import find_lfo_order_forced_flexible  # noqa: E402
+from ff_signature_probe import (  # noqa: E402
+    find_active_signature_collision,
+    find_visible_signature_collision,
+)
 from score_window_forced import (  # noqa: E402
     forced_flexible_decomposition,
     forced_obstruction,
@@ -219,6 +223,31 @@ class ScoreWindowDpObstructionTest(unittest.TestCase):
                 # cheap equivalence test for the forced/flexible split.
                 baseline = find_lfo_order_score_window(T)
                 self.assertEqual(baseline["found"], out["found"])
+
+    def test_naive_active_bag_signature_has_mixed_extendability(self):
+        T = [
+            [0, 0, 0, 0, 0, 0, 0],
+            [1, 0, 0, 0, 0, 0, 0],
+            [1, 1, 0, 0, 0, 0, 1],
+            [1, 1, 1, 0, 0, 0, 0],
+            [1, 1, 1, 1, 0, 0, 0],
+            [1, 1, 1, 1, 1, 0, 0],
+            [1, 1, 0, 1, 1, 1, 0],
+        ]
+        witness = find_active_signature_collision(T, depth=5)
+        self.assertIsNotNone(witness)
+        self.assertEqual(witness["signature"]["pos"], 4)
+        self.assertEqual(
+            witness["state_a"]["prefix_mask"],
+            witness["state_b"]["prefix_mask"],
+        )
+        self.assertNotEqual(
+            witness["state_a"]["extendable"],
+            witness["state_b"]["extendable"],
+        )
+
+        repaired = find_visible_signature_collision(T, depth=5)
+        self.assertIsNone(repaired)
 
 
 if __name__ == "__main__":
