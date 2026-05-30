@@ -80,6 +80,19 @@ flag root-caused and soundly repaired. This is *evidence*, not a theorem.
 
 ## 2. LEMMA A (Seam Existence) — n<=7 supported, NOT proved; clause (b) corrected
 
+> **Lead-theorist synthesis (2026-05-30).** The strongest VERIFIED line is assembled in
+> **`docs/lemma_a_proof.md`**. Verdict: **Lemma A is NOT proved; Lemma B is NOT proved;
+> Conjecture 9.2 does NOT follow for general n.** What IS proved: the arc-decomposition
+> scaffold (P2/P3 forest + balanced closed trails; no digon 2-arc-cut) and the
+> **necessity** half of the mixed-2-cut discriminator — *Hajos merge vertex => MC(D)=1*,
+> contrapositive *MC(D)=0 => no Hajos seam* (so the 3 tree-join-only members are
+> provably clause-(b)-only). Proved facts constrain seam TYPE only, never seam
+> EXISTENCE. The two open theorems are (i) **mixed-2-cut sufficiency** (MC=1 => genuine
+> 2-extremal Hajos factors; refuted-as-recipe at n=7 by member 7.33) and (ii) **Lemma B
+> Conditional L** — the chi_vec=3 / directed-Hajos-criticality gluing — which is the
+> common load-bearing core of both walls. Empirical survival to n<=7 is evidence, not a
+> theorem. Scripts `seam_invariant.py` and `lemma_b_checks.py` both reproduce PASS.
+
 **Lemma A.** *Every 2-extremal digraph that is not a symmetric odd cycle and not a
 generalised wheel admits a Lemma-A seam: either (a) a directed-Hajos merge vertex, or
 (b) a 2-Hajos tree-join seam.*
@@ -143,6 +156,15 @@ Full analysis: `docs/lemma_a.md`. Search artifact: `data/seam_search_L6_L7.json`
 
 ## 3. THE SINGLE MOST DECISIVE NEXT STEP
 
+**Prove Conditional L — that two seam-agreeing 2-dicolourings glue to a 2-dicolouring
+of D (directed acyclicity of colour classes across the seam).** This single directed
+Hajos-criticality lower-bound lemma is the common load-bearing core: it is the open
+heart of Lemma B (chi_vec=3 preservation), and the same chi_vec=3-preservation argument
+is exactly what promotes a mixed 2-cut from a cut of U(D) to a genuine 2-extremal Hajos
+factorisation, closing the Lemma-A sufficiency hole as well. Settle Conditional L and
+both walls (Lemma A sufficiency + Lemma B) fall together. See `docs/lemma_a_proof.md` §5.
+
+Superseded framing (kept for context):
 **Prove Sub-lemma A′ — seam existence from the (already proved) digon-forest +
 balanced-closed-trail arc decomposition.**
 
