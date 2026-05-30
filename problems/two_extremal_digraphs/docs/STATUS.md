@@ -2,6 +2,99 @@
 
 Lead Theorist synthesis. Date: 2026-05-30.
 
+---
+
+## 0. LEAD VERDICT (this round) — Conditional L is PARTIALLY closed; Conjecture 9.2 does NOT follow
+
+Three independent passes (one literature, two adversarial proof-verifications, re-pulling
+BJSS arXiv:1908.04096 / EJC 27(1) #P1.63 and AAC arXiv:2304.04690 from the *primary source
+PDFs*) converge on a sharp boundary. Stating only adversarially-survived steps and
+correctly-verified citations:
+
+**(1) Is Conditional L proved?**
+**SPLIT. The directed-Hajós-join half is CLOSED BY CITATION; the 2-Hajós-tree-join half is OPEN.**
+
+- *Directed-Hajós-join half — CLOSED (known theorem, citation verified against primary source).*
+  Conditional L for a literal directed Hajós join `D = D1 ▽ D2` is **BJSS Theorem 2(a)**:
+  `χ⃗(D) ≥ min{χ⃗(D1), χ⃗(D2)}`. Setting the needed value (k=3): if `χ⃗(D1),χ⃗(D2) ≥ 3`
+  then `χ⃗(D) ≥ 3`. The proof is the 5-line cross-seam splice
+  `C1 ∪ C2 − u1v1 − v2u2 + u1u2`. This is **exactly** the "cross-seam acyclicity" that
+  earlier drafts (lemma_a_proof.md §3/§5) flagged as the "unverified open heart" — it is
+  neither open nor unverified: it is a published theorem, re-pulled verbatim from
+  arXiv:1908.04096, and the splice logic was *independently re-derived and adversarially
+  survived* (two verifiers, every load-bearing step audited; L1 PROVED). The companion
+  gluing/upper bound is **Thm 2(b)** and criticality descent both ways is **Thm 2(c),(d)**.
+  The BJSS join definition is definitionally identical to Def 1.5 (u1=u, u2=w); χ⃗ matches
+  (Neumann-Lara acyclic colour classes). **CITED-OK.** The 1680/4.16M-join search that
+  earlier declared this "open" was chasing an existing theorem.
+
+  *Two verified caveats on the citation, neither fatal:* (D1) BJSS states the hypothesis
+  of Thm 2(b)(c)(d) as **k ≥ 3**, not "k ≥ 2" as earlier memos quoted — the induction
+  consumes it at **k = 3** (2-extremal ⇒ χ⃗=3 ⇒ 3-dicritical by AAC Lemma 4.1, k≥1,
+  source-verified), and 3 ≥ 3, so the application is valid; the "hence at k=2" phrasing in
+  the drafts is index-confused and must be corrected. (D2) Thm 2(d) descends **criticality**,
+  not full **2-extremality** — see (2) below.
+
+- *2-Hajós-tree-join half — OPEN (NOT closed by citation; an earlier draft's L4(i) claim
+  to the contrary is a verified OVERCLAIM).* H_2 (Conjecture 9.2) is closed under the
+  **Def-9.1** 2-Hajós tree join: an (A,B) edge-partition with B-edges plain digons and an
+  even-number-of-B-edges-per-leaf-path parity condition. AAC **Lemma 6.7** is about the
+  **Def-1.6** Hajós tree join (every edge a *block* Di with [ui,vi] ⊆ A(Di)); it has **no**
+  A/B partition, no plain-digon B-edges, no parity condition. A B-digon is not a Def-1.6
+  block (Di − [ui,vi] would be empty). So Lemma 6.7 does **not** cover the Def-9.1 seam,
+  and the claimed "verbatim/parsing" reduction does not exist. The BJSS splice is single-arc
+  / single-identified-vertex only; it is not proven to extend to the multi-seam Def-9.1 join.
+  **This is the exact smallest remaining colouring hole:** the directed Hajós lower bound for
+  the Def-9.1 2-Hajós tree-join seam (B-digons + even-parity), plausibly provable by
+  extending the BJSS splice, but **not done and not in the literature.** AAC §9 itself gives
+  it no lemma number ("routine work to check"), consistent with it being genuinely unproved.
+
+**(2) Given Conditional L's status, are Lemma A sufficiency and Lemma B's χ⃗=3 closed?**
+**NO to both.**
+
+- *Lemma A sufficiency (cut ⇒ factorisation) — OPEN, no external help.* Promoting a
+  mixed-2-cut of U(D) to a genuine 2-extremal Hajós/tree-join factorisation is a
+  connectivity/structure recognition problem; BJSS Thm 2 **assumes** D = D1 ▽ D2 is given
+  and says nothing about recognising a join from connectivity data. AAC's own k≥3
+  decomposition (Thm 5.1) has **no k=2 analogue**. The cut⇒factorisation recipe was
+  empirically refuted-as-recipe at n=7 (member 7.33). This wall stands.
+
+- *Lemma B's χ⃗=3 — only partially closed.* For the **directed-Hajós seam on a dicritical
+  D**, χ⃗(Di) ≥ 3 follows from BJSS Thm 2(d). But **2-extremal ≠ 3-dicritical**: a
+  2-extremal D has χ⃗=3 yet may carry removable arcs, and reducing to a dicritical
+  subdigraph can **destroy the seam**. So Thm 2(d) does not directly give "split ⇒ both
+  pieces 2-extremal"; the Eulerian/strong/λ=2/underlying-2-connected bookkeeping is separate
+  structural work (BJSS Thm 8 supplies only the strong-connectivity clause for the Hajós
+  seam). And for the **tree-join seam**, even the χ⃗=3 half is unavailable until the
+  Def-9.1 lower bound (open, above) is proved.
+
+**(3) Does Conjecture 9.2 follow for general n?**
+**NO.** It SURVIVES empirically to n≤7 (52 digraphs, 0 flags, complete truth set, sound
+oracle) — *evidence, not a theorem* (per MEMORY: finite-n enumeration is verification, not
+proof). Three genuinely open items block the induction: (i) the **Def-9.1 tree-join lower
+bound** (the live half of Conditional L), (ii) **cut ⇒ factorisation** (Lemma A
+sufficiency / seam EXISTENCE at k=2 — the paper itself leaves this open), and (iii) the
+**2-extremality descent** beyond criticality (Lemma B). The directed-Hajós sub-instance now
+closed by citation was *already* a published theorem and does **not** by itself advance any
+of the three open walls.
+
+**Honest bottom line:** the only thing genuinely settled this round is that the
+directed-Hajós half of Conditional L is a known theorem (BJSS Thm 2), correctly cited and
+its splice independently survived — which *removes* that sub-problem from the open list and
+*corrects* an earlier misdiagnosis, but does **not** close Lemma A, Lemma B, or Conjecture
+9.2. Empirical n≤7 survival is not a proof.
+
+**SINGLE MOST DECISIVE NEXT STEP:** Prove the directed Hajós lower bound for the **Def-9.1
+2-Hajós tree-join seam** (B-digons + even-B-parity) by extending the BJSS single-arc splice
+`C1 ∪ C2 − u1v1 − v2u2 + u1u2` to the multi-seam join — i.e. show a forced monochromatic
+peripheral structure splices across the digon forest into a monochromatic dicycle of D.
+This is the unique remaining *colouring* hole; it is the live half of Conditional L, it is
+not in the literature, and the BJSS proof is the right mechanism to generalise. (Seam
+EXISTENCE / cut⇒factorisation remains a separate structural wall and is the next target
+after the colouring half closes.)
+
+---
+
 Conjecture 9.2 (informal): the class L of **2-extremal** digraphs (strong, Eulerian
 with in=out>=2, underlying graph 2-connected, edge-connectivity lambda=2, dichromatic
 number chi_vec=3) coincides with the recursively-built class **H_2** (symmetric odd
@@ -155,6 +248,16 @@ Full analysis: `docs/lemma_a.md`. Search artifact: `data/seam_search_L6_L7.json`
 ---
 
 ## 3. THE SINGLE MOST DECISIVE NEXT STEP
+
+> **SUPERSEDED by §0 (2026-05-30).** The framing below treated the *directed-Hajós-join*
+> Conditional L as the open heart and as a core common to both walls. That is now known to
+> be **inaccurate**: the directed-Hajós half is BJSS Theorem 2(a) (published, cited-OK,
+> splice independently survived), so it is *not* open and does *not* by itself promote a
+> U(D)-cut to a factorisation (Lemma A sufficiency is a separate structural problem outside
+> BJSS's scope). The corrected decisive step is in §0: **prove the directed Hajós lower
+> bound for the Def-9.1 2-Hajós tree-join seam** (the live half of Conditional L), by
+> extending the BJSS splice to the multi-seam join. The original text is retained below for
+> context only.
 
 **Prove Conditional L — that two seam-agreeing 2-dicolourings glue to a 2-dicolouring
 of D (directed acyclicity of colour classes across the seam).** This single directed
