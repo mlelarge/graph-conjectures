@@ -185,6 +185,35 @@ def test_all_enumerated_2extremal_recognised(n):
     assert missing == [], f"n={n}: enumerated 2-extremals not recognised: {missing}"
 
 
+def test_flagged_n7_generalised_wheel_now_in_H2():
+    """Regression: the n=7 generalised wheel that the oracle previously flagged
+    as NOT-in-H_2 (its spanning tree has 3 internal vertices, exceeding the
+    generic tree-join inverse's max_internal cap) must now recognise as in-H_2
+    via the dedicated empty-A generalised-wheel recognizer.
+
+    Structure: 6 digons forming a spanning caterpillar tree, 4 single arcs
+    forming the peripheral directed cycle 0->3->1->6->0 on the tree's 4 leaves
+    {0,1,3,6}; every leaf-to-leaf path has even length."""
+    n = 7
+    arcs = [[0, 3], [0, 4], [1, 5], [1, 6], [2, 4], [2, 5], [3, 1], [3, 5],
+            [4, 0], [4, 2], [4, 6], [5, 1], [5, 2], [5, 3], [6, 0], [6, 4]]
+    assert H.is_2extremal(n, arcs), "flagged n=7 object should be 2-extremal"
+    assert H._is_generalised_wheel(*H._norm(n, arcs)), \
+        "flagged n=7 object must be recognised as a generalised wheel"
+    assert H.is_in_H2(n, arcs), \
+        "flagged n=7 generalised wheel must now be in H_2"
+
+
+def test_generalised_wheel_recognizer_sound_rejections():
+    """The direct generalised-wheel recognizer must REJECT non-wheels."""
+    # sym C_5: digons form a cycle (not a tree) -> reject.
+    assert not H._is_generalised_wheel(*H.sym_cycle(5))
+    # directed triangle: no digons at all -> reject.
+    assert not H._is_generalised_wheel(*directed_triangle())
+    # C3#C3 directed-Hajos join: not a wheel -> reject (still in H_2 via Hajos).
+    assert not H._is_generalised_wheel(*H._norm(*hajos_C3_C3()))
+
+
 def test_base_case_predicate_sanity():
     assert H.is_symmetric_odd_cycle(*H.sym_cycle(3))
     assert H.is_symmetric_odd_cycle(*H.sym_cycle(5))

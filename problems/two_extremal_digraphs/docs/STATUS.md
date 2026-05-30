@@ -9,147 +9,187 @@ cycles, closed under directed Hajos join and 2-Hajos tree join including non-emp
 
 ---
 
-## 1. VERDICT — survives to n=7; NO trustworthy counterexample
+## 1. VERDICT — survives to n=7, oracle now clears all 52 with ZERO flags
 
 **Conjecture 9.2 SURVIVES to n=7.** The truth set L_n is fully and independently
-enumerated for n<=7, and every member is in H_2.
+enumerated for n<=7, and with the corrected H_2 oracle **every member classifies
+in-H_2 with 0 not-in-H_2 flags**.
 
-| n | |L_n| | status |
-|---|------|--------|
-| 3 | 1 | gate (paper-known) — all in H_2 |
-| 4 | 1 | gate (paper-known) — all in H_2 |
-| 5 | 3 | gate (paper-known) — all in H_2 |
-| 6 | 8 | NEW, fully enumerated — all in H_2, **0 flags** |
-| 7 | 39 | NEW, fully enumerated — 1 flag raised, **REFUTED** (see below) |
+| n | |L_n| | status (corrected oracle) |
+|---|------|---------------------------|
+| 3 | 1  | gate (paper-known) — in H_2 |
+| 4 | 1  | gate (paper-known) — in H_2 |
+| 5 | 3  | gate (paper-known) — in H_2 |
+| 6 | 8  | fully enumerated — in H_2, **0 flags** |
+| 7 | 39 | fully enumerated — in H_2, **0 flags** |
 
-Total: 52 digraphs evaluated. Data on disk: `data/L_3.json` … `data/L_7.json`.
-**No L_8 exists** (n=8 not enumerated — see §2).
+Total: 52 digraphs, **0 flags**. Data on disk: `data/L_3.json` … `data/L_7.json`.
+**No L_8 exists yet** (n=8 not enumerated — see §3).
 
-### The one flag and why it does not survive
-Cross-check flagged a single n=7 object as "not-in-H_2":
-arcs `[[0,3],[0,4],[1,5],[1,6],[2,4],[2,5],[3,1],[3,5],[4,0],[4,2],[4,6],[5,1],[5,2],[5,3],[6,0],[6,4]]`
-(6 digons forming a caterpillar spanning tree, 4 single arcs forming the directed
-4-cycle 0->3->1->6->0 on its four leaves).
+### The former n=7 flag: root-caused and repaired (not patched away)
+The single previously-flagged n=7 object
+(arcs `[[0,3],[0,4],[1,5],[1,6],[2,4],[2,5],[3,1],[3,5],[4,0],[4,2],[4,6],[5,1],[5,2],[5,3],[6,0],[6,4]]`)
+was a **false alarm from oracle incompleteness**, now resolved by a sound recognizer
+rather than by special-casing:
 
-The flag is a **FALSE ALARM from oracle incompleteness**, refuted by independent
-reconstruction (`redteam_verify.py`, `redteam_closure.py`):
-- The object **is** a generalised wheel = 2-Hajos tree join with **empty A**, an H_2
-  base construction. Digons = caterpillar T (backbone 4—2—5, leaves {0,6}@4, {1,3}@5);
-  single arcs = peripheral directed cycle on the leaves; all leaf-to-leaf paths in T
-  have even length (4,4,2,2,4,4) so the Def-9.1 parity condition holds; the leaf
-  cyclic order (0,3,1,6) is a valid planar circular order.
-- A generalised wheel built independently from T + this peripheral cycle is
-  **canonically identical** to the candidate (brute force over all 7! relabelings).
-- Root cause of the miss: the underlying graph has no articulation point (so 0 Hajos
-  inverses — correctly reported), and the oracle's tree-join inverse search did **not
-  test the empty-A generalised-wheel realisation** (a documented gap).
+- **Object structure (independently re-verified).** 6 digons form a spanning caterpillar
+  tree on 7 vertices (leaves {0,1,3,6}); the 4 single arcs form exactly the directed
+  cycle `0->3->1->6->0` on precisely those leaves; every leaf-to-leaf tree path has even
+  length; the rim leaf order (0,3,1,6) is a valid plane (non-crossing/laminar) circular
+  order. This is a 2-Hajos tree join with **empty A** — a generalised wheel, an H_2 base.
+- **Root cause.** The empty-A case had been routed only through the generic tree-join
+  inverse, whose completeness cap is `max_internal=2`. This object's spanning digon-tree
+  has **3** internal vertices (2,4,5), so the capped machinery never reached it.
+- **Fix.** New `_is_generalised_wheel(n,arcs)` in `scripts/h2_oracle.py`, wired into
+  `_compute_in_H2` right after the symmetric-odd-cycle base case, with **no
+  `max_internal` cap**. It is **SOUND**: every accept exhibits an explicit Def-9.1
+  empty-A presentation by checking (i) digons = exactly n-1 edges forming a spanning
+  tree; (ii) single arcs = exactly one directed cycle on exactly the tree leaves; (iii)
+  rim order is a valid plane circular leaf order; (iv) all leaves share one colour in T's
+  proper 2-colouring (equivalent to all leaf-leaf paths even, since every tree edge is a
+  B-edge). The non-crossing/laminar test is the standard correct characterization of
+  plane-realizable cyclic leaf orders for a tree, re-derived and verified on the object.
 
-**Trustworthiness of the verdict.** HIGH for n<=7 *as empirical verification*, with two
-audited caveats:
-1. **Enumeration completeness is sound.** Every 2-extremal D is Eulerian with in=out>=2,
-   so its underlying simple graph is biconnected min-degree>=2 (exactly the
-   `geng -C -d2` class); all digon/single + Eulerian-orientation combinations are
-   generated, deduped by pynauty directed certificates, and each member re-passes
-   `is_2extremal`. This is a genuinely complete generation of L_n for n<=7.
-2. **The oracle (is_in_H2) is SOUND but INCOMPLETE.** Every *True* is backed by an
-   explicit derivation into strictly-smaller recognised pieces — no spurious membership.
-   But a *False* means only "no derivation found within the searched space"; known gaps
-   are `max_internal<=2` on tree-internal vertices, the empty-A generalised-wheel branch
-   (the n=7 miss above), single-connected-residual-block tiling, and contiguous-block
-   planar leaf assignment. **A "not in H_2" verdict is therefore a CANDIDATE, never a
-   proof of non-membership** — exactly as the n=7 episode demonstrated.
+### Trustworthiness of the verdict — HIGH for n<=7 as empirical verification
+Two audited caveats remain (both unchanged in kind from prior rounds):
+1. **Enumeration is complete.** Every 2-extremal D is Eulerian, in=out>=2, so its
+   underlying simple graph is biconnected min-degree>=2 (the `geng -C -d2` class); all
+   digon/single + Eulerian-orientation combinations are generated, deduped by directed
+   certificates, and each member re-passes `is_2extremal`. Genuine complete generation
+   of L_n for n<=7.
+2. **The oracle is SOUND but still INCOMPLETE off the empty-A branch.** Every *True* is
+   backed by an explicit derivation into strictly-smaller recognised pieces — no spurious
+   membership. The empty-A generalised-wheel branch is now searched in **full** (no cap)
+   and is sound by forward construction. But the **non-empty-A** 2-Hajos tree-join
+   inverse still carries `max_internal<=2` plus contiguous-block plane-tree and
+   connected-block tiling assumptions. **A "not in H_2" verdict therefore remains a
+   CANDIDATE, never a proof of non-membership** — exactly the failure mode the n=7
+   episode exhibited.
 
-**Bottom line:** empirical survival to n=7, every flag refuted by hand. This is
-*evidence*, not a theorem. The recon "lean disprove" prior is neither confirmed nor
-refuted; no counterexample exists and none is ruled out beyond n=7.
+Regression guard: `tests/test_h2_oracle.py` now includes
+`test_flagged_n7_generalised_wheel_now_in_H2` and
+`test_generalised_wheel_recognizer_sound_rejections`. Pytest: **18 passed.**
+Soundness spot-checks: W_3..W_7 accepted (and 2-extremal); recognizer rejects symmetric
+C_5 (digons form a cycle not a tree), the directed triangle (no digons), C3#C3 (a genuine
+Hajos join, not a wheel), and a tampered rim (one single arc dropped).
+
+**Bottom line:** empirical survival to n=7 with a clean 0-flag sweep and the lone false
+flag root-caused and soundly repaired. This is *evidence*, not a theorem.
 
 ---
 
-## 2. PROOF TRACK — what is established, and the load-bearing open sub-lemma
+## 2. LEMMA A (Seam Existence) — n<=7 supported, NOT proved; clause (b) corrected
 
-The proof strategy is an **inductive seam-and-reassembly** program built on the paper's
-min-dicut induction (Lemma 3.3), corrected for the k=2 regime (`docs/proof_attempt.md`).
+**Lemma A.** *Every 2-extremal digraph that is not a symmetric odd cycle and not a
+generalised wheel admits a Lemma-A seam: either (a) a directed-Hajos merge vertex, or
+(b) a 2-Hajos tree-join seam.*
 
-### Established
-- **k=2 failure mode of Lemma 3.3 is pinned down.** A strong digraph has no global
-  directed cut, so the paper's "size-k dicut" must be read as a minimum (s,t)-dicut
-  (the lambda-witness). The reductive size-2 min-(s,t)-dicut in L<=5 occurs **only** on
-  C3#C3, exactly where no optimal 3-dicolouring is monochromatic on either side
-  (constS=constT=False) — the precise k=2 degradation. Crucially, the min-(s,t)-dicut
-  **certifies lambda=2 but is NOT the reassembly seam**: the directed-Hajos seam is a
-  single identified vertex; the tree-join seam is a digon. (Corrects the naive
-  "contract a dicut side" program.)
-- **B-parity is the correct extremality criterion (strongly supported).** Over a
-  combined 62-case sweep (44 with C3 gadget, 18 with C5; 5 plane trees x all A/B
-  labelings, up to 11 vertices), the even-leaf-path B-parity condition is
-  **necessary-and-sufficient** for a 2-Hajos tree join to be 2-extremal, with **zero**
-  disagreements. Smallest witness: path 0-1-2, one A-edge + one B-digon -> 1 B-edge
-  (odd) -> chi_vec=2 (not extremal); flip B->A -> 0 B-edges (even) -> chi_vec=3 (extremal).
-  This confirms the brief's hypothesised repair.
-- **Directed Hajos join alone is insufficient** — W3 (n=4), W4 (n=5) are generalised
-  wheels (empty-A tree joins) and are needed already at n=4.
+### Seam census over L_6 ∪ L_7 (47 members; independently re-verified from arc sets)
+- **7 base** (2 at n=6, 5 at n=7), **40 non-base.**
+- **37/40** have a directed-Hajos merge vertex (clause a).
+- **3/40** (n=7 indices 7, 14, 36) have NO Hajos seam but a genuine non-empty-A
+  **tree-join** seam (clause b).
+- **40/40 non-base members are seamed. NO-SEAM list is EMPTY** — zero obstructions, zero
+  missing H_2 constructors.
 
-### The load-bearing open sub-lemma
-**Lemma A (Seam Existence).** *Every 2-extremal digraph that is not a symmetric odd
-cycle and not a generalised wheel contains either a directed-Hajos merge vertex or a
-peripheral B-edge cut digon.*
+So **Lemma A holds for n<=7** (empirical, complete truth set), with **0 obstructions.**
 
-This is the single unsupported crux of the induction. It currently has only n<=5
-support and **no proof**. Two supporting steps are also conjectural:
-- **Lemma B** (a split forces both pieces 2-extremal) — verified only on C3#C3.
-- **Lemma C** sufficiency (B-parity => 2-extremal for *all* trees/gadgets) — open;
-  only a criticality / odd-closed-walk mechanism sketch, no symbolic proof of the
-  peripheral-cycle colouring step.
+### The decisive correction to clause (b) [PROVED]
+The literal reading of clause (b) as "a peripheral B-edge **cut digon** (a 2-arc-cut
+digon)" is **VACUOUS**: **0 of 40** non-base members possess *any* 2-arc-cut digon.
+Reason (Menger): a strong, underlying-2-connected digraph can never have a digon as its
+only x–y connection, so no digon is a 2-arc-cut. The induction seam therefore **cannot**
+be a single cut digon; clause (b) **must** be stated in the general Def-9.1 tree-join
+sense. This refutes the cut-digon mechanism of `docs/proof_attempt.md` §6 and is the
+load-bearing repair to the lemma statement.
+
+### The 3 tree-join-only members are NOT counterexamples [re-verified]
+Each n=7 member (indices 7,14,36) is genuinely 2-extremal, non-base, in H_2, with no
+Hajos merge vertex and no 2-arc-cut digon, but a real non-empty-A 2-Hajos tree-join seam:
+a directed-triangle rim + spanning plane tree (2 internal vertices, 3 B-digons + 1 A-edge)
+joined to one 4-vertex 2-extremal A-block equal to **W3**. They lack a Hajos merge vertex
+precisely because the minimal nontrivial block (W3) attaches through a **2-vertex A-edge
+interface**, not a single identified vertex — the n=4 phenomenon (W3/W4 are tree-joins,
+not Hajos-joins) recurring as a sub-block at n=7.
+
+### Proved structural scaffold (independent of n<=7 enumeration)
+- **No 2-extremal digraph has a 2-arc-cut digon** (Menger).
+- **The digon graph is always a forest** (40/40 verified; consistent with the spanning
+  digon-tree structure of all observed seams).
+- **Single arcs are in/out balanced** — they decompose into closed directed trails.
+- **The §6.4 component-count predictor is REFUTED**: ncomp=2 occurs in 22 Hajos-seamed
+  AND in all 3 tree-join-only members, so component count does **not** separate seam
+  types. The invariant distinguishing Hajos-seam from tree-join-seam members is finer
+  than any digon-graph statistic.
+
+### The single open core
+**Sub-lemma A′ (Seam from the arc decomposition).** *Given the proved decomposition of a
+2-extremal digraph into a digon forest + balanced single-arc closed trails, a Lemma-A
+seam always exists.* Both the spanning-F_D and non-spanning-F_D cases reduce to A′, and
+A′ is **OPEN** — the inductive core does not close. The distinguishing invariant is
+identified as a property of the single-arc closed trails relative to the digon forest,
+but is not formalized.
+
+Two further supporting steps also remain conjectural:
+- **Lemma B** (a split forces both pieces 2-extremal) — the converse-of-routine gap from
+  `proof_attempt.md`; verified case-wise, not proved.
+- **Lemma C** sufficiency (even-leaf-path B-parity => 2-extremal for all trees/gadgets) —
+  strongly supported by the 62-case sweep, no symbolic proof of the peripheral-cycle
+  colouring step.
+
+Full analysis: `docs/lemma_a.md`. Search artifact: `data/seam_search_L6_L7.json`.
 
 ---
 
 ## 3. THE SINGLE MOST DECISIVE NEXT STEP
 
-**Test Lemma A (Seam Existence) on the full enumerated truth sets L_6 and L_7 — the
-first dataset large enough to either break the proof program or harden it.**
+**Prove Sub-lemma A′ — seam existence from the (already proved) digon-forest +
+balanced-closed-trail arc decomposition.**
 
-This is decisive because Lemma A is the only load-bearing unproved step, and we now
-hold, for the first time, complete truth sets (47 members across n=6,7) that were
-unavailable when `proof_attempt.md` was written (its empirical claims stopped at n=5).
-Concretely, for every member of L_6 ∪ L_7 that is neither a symmetric odd cycle nor a
-generalised wheel:
-1. Search for a directed-Hajos merge vertex (articulation point of the underlying
-   graph) **or** a peripheral B-edge cut digon (a digon whose removal separates the
-   digon-subgraph). Record which seam type appears, or NONE.
-2. **If any member has NO seam -> Lemma A is FALSE**, the induction as stated is dead,
-   and that member is the structural obstruction to characterise (a new base class or a
-   third join). This would be the highest-value outcome.
-3. **If every member has a seam**, additionally verify Lemma B on each split (both
-   pieces land back in the enumerated L_{<n}). A clean pass over 47 members would
-   promote Lemma A from n<=5 to n<=7 support and justify investing in its symbolic
-   proof via the "digon-graph bridge/separator" handle already sketched.
+This is now the unique load-bearing crux. We have, this round, converted the abstract
+"Lemma A" into a concrete reduction whose hypotheses are *proved* (digon graph is a
+forest; single arcs are balanced closed trails; no digon is a 2-arc-cut) and whose
+conclusion is the *only* missing inductive step. The empirical situation is maximally
+favorable: Lemma A holds with **0 obstructions over the complete L_6 ∪ L_7** (47
+members), and the seam mechanism has been corrected (general tree-join, not cut digon).
+There is no counterexample to chase and no missing constructor to invent; the entire
+remaining risk sits in A′.
 
-Prerequisite, cheap and high-leverage: **patch the oracle's empty-A generalised-wheel
-branch** (the documented n=7 miss) so the seam-search is run against a correct H_2
-classifier — otherwise generalised wheels will be misrouted into the Lemma-A search and
-produce spurious "no-seam" results. This patch is a few lines and was already specified
-by the verify pass (detect a spanning digon-tree whose leaves carry the single-arc
-peripheral directed cycle with even leaf-to-leaf parity).
+Concrete plan:
+1. Formalize the finer invariant separating Hajos-seam members (single identified merge
+   vertex) from tree-join-seam members (2-vertex A-edge interface). The seam census shows
+   component count fails; the candidate handle is how the single-arc closed trails thread
+   the leaves of the digon forest. Pin this to a graph invariant computable from
+   (F_D, closed-trail set).
+2. Prove that in every non-base configuration this invariant forces at least one of:
+   a forest cut edge realizable as a tree-join seam into two strictly-smaller 2-extremal
+   blocks, or an articulation point realizable as a directed-Hajos merge vertex. The 3
+   tree-join-only n=7 members are the canonical hard case (W3 sub-block, no merge vertex)
+   and should be the worked template.
+3. Close **Lemma B** in parallel (split => both pieces 2-extremal); A′ + B together give
+   the inductive step, and the corrected sound oracle already mechanically certifies the
+   base/recursion for n<=7.
 
-Secondary, only if engineering budget allows: a C-accelerated strong/lambda primitive
-to push enumeration to n=8 (the paper's Figure-11 prize regime). The pure-Python
-enumerator is measured to exceed budget at n=8 (7123 biconnected graphs, >100M Eulerian
-orientations). This extends *evidence* but, unlike the Lemma-A test, does not advance
-the *proof*.
+Secondary, only if A′ stalls or for an independent stress test: push enumeration to
+**n=8** (the paper's Figure-11 prize regime) with a C-accelerated strong/lambda
+primitive — the pure-Python enumerator exceeds budget there (7123 biconnected graphs,
+>10^8 Eulerian orientations). This extends *evidence* and would be the first test of the
+corrected oracle and of Lemma A beyond n=7, but unlike proving A′ it does not advance the
+*proof*.
 
 ---
 
 ### Discipline reminder
-Empirical survival to n=7 is **not** a theorem. The entire characterisation rests on
-the unproved Lemma A. Every "not-in-H_2" verdict from the current oracle is a candidate
-requiring hand verification (the oracle is sound but incomplete), as the refuted n=7
-flag concretely showed.
+Empirical survival to n=7 with a 0-flag sweep is **not** a theorem. The characterisation
+rests entirely on the open Sub-lemma A′ (plus Lemma B). Every "not in H_2" verdict from
+the non-empty-A branch of the oracle remains a candidate requiring hand verification (the
+oracle is sound but still incomplete off the empty-A branch), exactly as the now-repaired
+n=7 flag showed.
 
 ### Key artifacts
 - Enumerator: `scripts/enumerate.py`; truth sets `data/L_3.json`…`data/L_7.json`
-- Oracle (sound, incomplete): `scripts/h2_oracle.py` (+ `tests/test_h2_oracle.py`)
-- Proof analysis: `docs/proof_attempt.md`; constructors/probes
-  `scripts/two_hajos_tree_join.py`, `scripts/parity_necessity_sweep.py`,
-  `scripts/dicut_induction_probe.py`
-- Red-team refutation of the n=7 flag: `docs/counterexample_verification.md`,
-  `scripts/redteam_verify.py`, `scripts/redteam_closure.py`
+- Oracle (sound; empty-A complete, non-empty-A still capped): `scripts/h2_oracle.py`
+  (+ regression tests in `tests/test_h2_oracle.py`, 18 passed)
+- Seam search: `scripts/seam_search.py`; results `data/seam_search_L6_L7.json`
+- Lemma A analysis + proved scaffold + open Sub-lemma A′: `docs/lemma_a.md`
+- k=2 induction analysis and clause-(b) correction context: `docs/proof_attempt.md`

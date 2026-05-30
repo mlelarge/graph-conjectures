@@ -889,6 +889,156 @@ def _verify_tiling(n, arcs, arcset, cyc, remaining, tree_vertices,
 
 
 # --------------------------------------------------------------------------
+# Generalised wheel (empty-A 2-Hajos tree join) -- DIRECT recognizer
+# --------------------------------------------------------------------------
+#
+# A generalised wheel is the empty-A case of Def 9.1: the plane tree T carries
+# NO A-blocks, every edge is a B-edge (a digon), and the peripheral directed
+# cycle runs on the leaves of T in their plane circular order.  Because A is
+# empty, "every leaf-to-leaf path uses an EVEN number of B-edges" reduces to
+# "every leaf-to-leaf path in T has even LENGTH" (all edges are B).
+#
+# The generic tree-join inverse (`_tree_join_decompositions`) only searches up
+# to `max_internal` tree-internal interface vertices and routes the empty-A case
+# through that heavy machinery, so wheels whose spanning tree has more internal
+# vertices than the cap are missed.  This dedicated recognizer handles the
+# empty-A case in FULL and is SOUND: every accept exhibits an explicit Def-9.1
+# generalised-wheel presentation of (n, arcs):
+#   * the digons are EXACTLY the edges of a spanning tree T (=> all are B-edges);
+#   * the single (non-digon) arcs are EXACTLY one directed cycle whose vertex
+#     set is EXACTLY the leaves of T;
+#   * the directed rim order is a valid PLANE circular order of T's leaves
+#     (non-crossing/laminar: removing any tree edge splits the leaves into two
+#     arcs each CONTIGUOUS in the rim's cyclic order);
+#   * every leaf-to-leaf path of T has even length.
+# These are precisely the forward-construction hypotheses for empty A, so the
+# digraph is genuinely the corresponding generalised wheel.
+
+def _is_generalised_wheel(n, arcs):
+    """SOUND recognizer for the empty-A 2-Hajos tree join (generalised wheel).
+
+    Returns True iff (n, arcs) admits a generalised-wheel presentation: digons
+    form a spanning tree T, single arcs form one directed cycle on exactly the
+    leaves of T in a valid plane circular order, and every leaf-to-leaf path of
+    T has even length.
+    """
+    arcset = set(arcs)
+    if n < 3:
+        return False
+    # Split arcs into digon edges (B-edges) and single (rim) arcs.
+    digon_edges = set()
+    single_arcs = []
+    for (u, v) in arcset:
+        if (v, u) in arcset:
+            if u < v:
+                digon_edges.add((u, v))
+        else:
+            single_arcs.append((u, v))
+    # No arc may be both: an arc is either part of a digon or a single arc; the
+    # split above is total.  Every digon arc must pair an undirected tree edge.
+    # Spanning tree T on all n vertices: exactly n-1 digon edges, acyclic,
+    # connected.
+    if len(digon_edges) != n - 1:
+        return False
+    tadj = [set() for _ in range(n)]
+    for (u, v) in digon_edges:
+        tadj[u].add(v)
+        tadj[v].add(u)
+    # connected with n-1 edges => tree (spanning).
+    seen = {0}
+    stack = [0]
+    while stack:
+        x = stack.pop()
+        for y in tadj[x]:
+            if y not in seen:
+                seen.add(y)
+                stack.append(y)
+    if len(seen) != n:
+        return False
+    leaves = [v for v in range(n) if len(tadj[v]) == 1]
+    leafset = set(leaves)
+    k = len(leaves)
+    if k < 3:
+        return False  # peripheral cycle needs >= 3 vertices
+    # Single arcs must form exactly ONE directed cycle on exactly the leaves.
+    if len(single_arcs) != k:
+        return False
+    # Each leaf must have exactly one single-out and one single-in arc, all
+    # endpoints inside the leaf set.
+    sout = {}
+    sin = {}
+    for (u, v) in single_arcs:
+        if u not in leafset or v not in leafset:
+            return False
+        if u in sout or v in sin:
+            return False  # not a simple permutation cycle on leaves
+        sout[u] = v
+        sin[v] = u
+    if set(sout) != leafset or set(sin) != leafset:
+        return False
+    # Single arcs form a permutation on leaves; require a SINGLE cycle of length k.
+    start = leaves[0]
+    rim_order = [start]
+    cur = sout[start]
+    while cur != start:
+        if cur not in sout:
+            return False
+        rim_order.append(cur)
+        cur = sout[cur]
+        if len(rim_order) > k:
+            return False
+    if len(rim_order) != k:
+        return False  # multiple cycles, not one peripheral cycle
+    # Valid PLANE circular order of leaves: for every tree edge, the two leaf
+    # sets on its two sides must each be CONTIGUOUS arcs in the rim cyclic order
+    # (non-crossing / laminar condition).
+    pos = {l: i for i, l in enumerate(rim_order)}
+
+    def _is_contiguous_arc(idxset):
+        s = sorted(idxset)
+        if not s:
+            return True
+
+        def _block(xs):
+            return all(xs[i] + 1 == xs[i + 1] for i in range(len(xs) - 1))
+        if _block(s):
+            return True
+        comp = sorted(set(range(k)) - set(s))
+        return _block(comp)
+
+    for (u, v) in digon_edges:
+        # leaves on u's side after deleting edge {u,v}
+        side = {u}
+        st = [u]
+        while st:
+            x = st.pop()
+            for y in tadj[x]:
+                if (x == u and y == v) or (x == v and y == u):
+                    continue
+                if y not in side:
+                    side.add(y)
+                    st.append(y)
+        side_idx = {pos[l] for l in leaves if l in side}
+        if not _is_contiguous_arc(side_idx):
+            return False
+    # Even leaf-to-leaf path parity (all tree edges are B-edges, so the number of
+    # B-edges on a leaf-leaf path equals the path length).  Equivalent and
+    # cheaper: 2-colour T; all leaves must share one colour.
+    color = {0: 0}
+    stack = [0]
+    while stack:
+        x = stack.pop()
+        for y in tadj[x]:
+            if y not in color:
+                color[y] = color[x] ^ 1
+                stack.append(y)
+    leaf_colors = {color[l] for l in leaves}
+    if len(leaf_colors) != 1:
+        return False
+    return True
+
+
+# --------------------------------------------------------------------------
 # The recognizer
 # --------------------------------------------------------------------------
 
@@ -919,6 +1069,11 @@ def _compute_in_H2(n, arcs, max_internal):
         return False
     # Base case: symmetric odd cycle.
     if is_symmetric_odd_cycle(n, arcs):
+        return True
+    # Generalised wheel (empty-A 2-Hajos tree join): direct, complete recognizer
+    # for the empty-A case (the generic tree-join inverse below caps the number
+    # of tree-internal interface vertices and can miss large wheels).
+    if _is_generalised_wheel(n, arcs):
         return True
     # Directed Hajos join inverse.
     for d1, d2 in _hajos_decompositions(n, arcs):
