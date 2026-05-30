@@ -42,7 +42,12 @@ def max_backdeg(T, order) -> int:
 
 def degreewidth(T, cap: int | None = None) -> int:
     """Δ*(T) by brute force over orderings, early-exit once an order with
-    max-back-degree ≤ `cap` is found (default: exact)."""
+    max-back-degree ≤ `cap` is found (default: exact).
+
+    NOTE: prefer scripts/degreewidth_exact.degreewidth, an O(2^n·n)
+    Held-Karp DP that is exact and far faster.  This permutation scan is
+    kept only as the small-n cross-check oracle.
+    """
     n = len(T)
     best = n
     for p in permutations(range(n)):
@@ -51,15 +56,15 @@ def degreewidth(T, cap: int | None = None) -> int:
             best = md
             if cap is not None and best <= cap:
                 return best
-            if best <= 1:
+            if best == 0:  # global minimum; cannot improve (was buggy `<= 1`)
                 return best
     return best
 
 
 def is_degreewidth_le2(T) -> bool:
-    """True iff Δ*(T) ≤ 2 (degree-feasible).  Early-exits on first
-    max-back-degree-≤2 order."""
-    return degreewidth(T, cap=2) <= 2
+    """True iff Δ*(T) ≤ 2 (degree-feasible)."""
+    from degreewidth_exact import degreewidth_le
+    return degreewidth_le(T, 2)
 
 
 def classify(T) -> str:

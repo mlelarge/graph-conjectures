@@ -96,3 +96,91 @@ the value 2.  (b) Mine the Δ\* = 2 acyclicity-core for what forces the
 cycle (the forced-cycle structure, its interaction with the degree-2
 budget) — this is where a poly acyclicity test or a hardness gadget would
 come from, and it is non-local by construction (the cycle is global).
+
+---
+
+## D93 — tooling, exact census, and first Q1 probes
+
+### Literature status of Q1 pinned (verified vs PDFs, 2026-05-30)
+
+`Δ*≤2` recognition is **class-sensitive** and **open for tournaments**:
+  * **Oriented graphs:** `k`-Degreewidth is NP-complete for every `k≥1`
+    ("Computing the degreewidth of a digraph is hard", arXiv:2407.19270 v3,
+    Thm 2.3 — on 1-subdivisions of multidigraphs; the `k=1` case answers a
+    Keeney–Lokshtanov question).
+  * **Tournaments:** `Δ*≤1` cubic (Bessy); computing `Δ*` NP-hard; but
+    **`Δ*≤2` is explicitly OPEN** (also open: FPT-compute-`Δ*` of a
+    tournament, FAS-tournament FPT-by-`Δ*`).  The `k=1` poly/NP-hard split
+    between tournaments and oriented graphs shows the tournament structure
+    is essential — so Q1 is a legitimate, non-duplicative target.
+
+### Efficient exact solver (replaces the O(n!·n²) scan)
+
+`scripts/degreewidth_exact.py` — **Held-Karp subset DP, O(2ⁿ·n)**, exact
+to ~n=22.  Rests on the observation that when vertex `v` is appended to a
+prefix occupying set `S`, every other vertex is decided (in `S` = before,
+else after), so `v`'s back-degree is **fixed at placement**:
+> `bd(v | before=S) = |N⁺(v)∩S| + |N⁻(v)∩(V∖S∖{v})|`,
+> and `f[S] = min_{v∈S} max(f[S∖v], bd(v|S∖v))`, `Δ*(T)=f[V]`.
+
+Validated: **0 disagreements vs the correct full-permutation scan over all
+33 866 labeled tournaments n≤6**; order-reconstruction achieves the value
+on random n≤10.  (This also **fixed a latent bug** in
+`degreewidth_decomposition.degreewidth`: its `if best<=1: return` early-exit
+overestimated `Δ*` as 1 when the true value was 0 — 867/33 866 cases.  Benign
+for the YES/NO split, but wrong as an exact value.)
+
+### Exact acyclicity-core census (replaces the doc's 300/150 samples)
+
+Over the **full** certified minimal-NO catalogues:
+
+| n | minimal NOs | Δ\* = 2 (**acyclicity-core**) | Δ\* = 3 (degree-obstructed) |
+|---|---|---|---|
+| 7 | 20 | 9 (45 %) | 11 |
+| 8 | 572 | **202** (35 %) | 370 |
+| 9 | 5560 | **2316** (42 %) | 3244 |
+
+Two facts now hold **exactly** (not on a sample):
+  * **Every minimal NO has `Δ*∈{2,3}`** — none reaches `Δ*≥4`.  Minimal
+    obstructions are degreewidth exactly 2 or 3.
+  * **`hall_failure` ⟺ `Δ*≥3`** across all 6152 minimal NOs (0 exceptions);
+    the acyclicity-core is exactly `large_width_no ∩ {Δ*=2}`.
+
+### The bd identity and necessary conditions (proved)
+
+For any order, with `i(v)` = position and `b(v)` = #in-neighbours placed
+before `v`:
+> **`bd(v) = i(v) + d⁻(v) − 2·b(v)`.**
+
+Corollaries (necessary for `Δ*≤2`, PROVED): the **first** vertex has
+back-degree `d⁻` and the **last** has back-degree `d⁺`, so a `Δ*≤2`
+tournament has a vertex with `d⁻≤2` (a legal first) and one with `d⁺≤2` (a
+legal last).  More generally `bd(v)≤2 ⇔ b(v) ≥ (i(v)+d⁻(v)−2)/2`: at least
+that many of `v`'s in-neighbours must precede it — an order-dependent
+coupling, not a pure positional constraint.
+
+### Two natural Q1 certificates — both REFUTED
+
+`scripts/degreewidth_q1_probe.py` (exhaustive n≤6, random n≤12, hard
+catalogues):
+  * **(A) in-degree-sorted order is NOT exact.** It misses `Δ*≤2` on
+    15 748/32 768 tournaments at n=6 — it is only the known 3-approx, never
+    a decision procedure.
+  * **(B) Hall-feasibility of the radius-2 windows is necessary but NOT
+    sufficient.** `Δ*≤2-but-not-Hall = 0` everywhere (re-confirms the
+    score-window lemma), but **`Hall-but-Δ*>2` is nonzero from n=7 on**
+    (273 / 459 / 1077 / … at n=7/8/9). So `Δ*≤2` is **not** interval
+    scheduling: the gap is exactly the order-dependent `b(v)` term — a
+    window-respecting placement can still leave a vertex with too few
+    in-neighbours before it.
+
+**Takeaway for Q1.** The obvious poly certificates fail; the live target is
+a flow/matching formulation that also controls `b(v)` (in-neighbours
+before), or a structural theorem extending Bessy's `Δ*≤1` characterization
+to value 2.  The window-prefix count is **not** poly-bounded on near-regular
+tournaments (the band `[p−2,p+1]` can contain all `n` vertices when
+`d⁻≈(n−1)/2`), so a naive window-DP does not settle Q1 — consistent with the
+project's hardness living in the near-regular regime.
+
+**Tools added:** `scripts/degreewidth_exact.py`,
+`scripts/degreewidth_q1_probe.py`, `tests/test_degreewidth_exact.py`.
