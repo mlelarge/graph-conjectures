@@ -149,6 +149,34 @@ class TestQ1(unittest.TestCase):
                                 self.assertLessEqual(dm[v], (p + 1) + 1)
                     frontier = nxt
 
+    def test_N3_in_neighbor_closure(self):
+        """(N3) PROVED: every v in a reachable prefix S has ≤2 in-neighbours
+        outside S (|N⁻(v)∖S| ≤ 2)."""
+        from q1_reachable_count import masks
+
+        rng = random.Random(20260531)
+        for n in range(4, 10):
+            for _ in range(150):
+                T = rand_tournament(n, rng)
+                om, dm = masks(T)
+                Nin = [[v for v in range(n) if v != u and T[v][u]] for u in range(n)]
+                frontier = {0}
+                for p in range(n):
+                    nxt = set()
+                    for S in frontier:
+                        for u in range(n):
+                            if (S >> u) & 1:
+                                continue
+                            c = bin(om[u] & S).count("1")
+                            if 2 * c + dm[u] - p <= 2:
+                                nxt.add(S | (1 << u))
+                    for S in nxt:
+                        for u in range(n):
+                            if (S >> u) & 1:
+                                outside = sum(1 for w in Nin[u] if not (S >> w) & 1)
+                                self.assertLessEqual(outside, 2)
+                    frontier = nxt
+
     def test_transitive_reachable_count_formula(self):
         """Transitive: #reachable size-p prefixes = C(p+2,2) for p ≤ n−2."""
         from math import comb

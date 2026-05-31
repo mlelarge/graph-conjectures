@@ -147,8 +147,48 @@ The gap is sharp. The one-sided lemma gives `S ⊆ A_p`, but Landau's
 inequality only forces `|A_p| ≤ 2p+3`, so the in-degree cap alone permits
 `C(2p+3, p) = 2^{Θ(p)}` candidate size-`p` subsets. The actual count is
 `Θ(n³)`, so **reachability prunes super-exponentially below the in-degree
-cap** — and proving *that* is the open content. A proof needs to combine the
-one-sided cap with the per-vertex `c(u)` (out-neighbours-already-placed)
-constraint, e.g. via the sum bound `Σ_{v∈S} d⁻(v) ≤ C(|S|,2) + 2|S|` (arcs
-into `S` from outside ≤ `2|S|`, proved by summing `bd ≤ 2`). Tools:
-`scripts/q1_reachable_count.py`, `tests/test_q1_degreewidth.py`.
+cap** — and proving *that* is the open content.
+
+### 6.5 D95 — strengthened necessary conditions and the precise gap
+
+Two further conditions, both **PROVED** by summing/inspecting `bd ≤ 2`
+(`bd(v) = (out-nbrs before) + (in-nbrs after)`, and the "after" set of a
+prefix includes *all* of `V∖S`):
+
+> **(N2) sum bound.** `Σ_{v∈S} d⁻(v) ≤ C(p,2) + 2p`. Equivalently the number
+> of arcs from `V∖S` into `S` is `γ(S) ≤ 2p`. (Sum `bd(v_k)=2c_k+d⁻(v_k)−(k−1)`
+> over `S`: `Σbd = 2β + (Σd⁻ − C(p,2)) ≤ 2p`, `β≥0` internal back-arcs.)
+
+> **(N3) per-vertex closure.** Every `v∈S` has `|N⁻(v) ∖ S| ≤ 2` — at most
+> two in-neighbours outside `S`. (Its omitted in-neighbours are all "after",
+> so `|N⁻(v)∖S| ≤ in-nbrs-after ≤ bd(v) ≤ 2`.) Verified 0 violations in
+> 336 693 checks. (N3) ⇒ (N2) and is strictly stronger.
+
+**The reduction.** A reachable size-`p` prefix is a size-`p` subset of
+`L = {d⁻ ≤ p+1}` (with `|L| ≤ 2p+3`) whose omitted-low set `C∩L` obeys (N3).
+For the maximizer (transitive) `|L| = p+2`, so exactly **2 low vertices are
+omitted** (`C(p+2,2)` choices) — the "2" is precisely the `bd ≤ 2` budget.
+
+**Why the blow-up never happens (the crux, established empirically, n≤60).**
+The `C(2p+3,p)` candidate explosion would require a *large band of near-equal
+in-degree* (so that `|L| ≫ p`). But:
+- regular/near-regular tournaments **die at the empty prefix** (`#reachable=1`:
+  no vertex has `d⁻≤2`, so nothing is placeable first);
+- a **regular sub-block of size ≥ 7 forces Δ\*≥3** (the whole instance is NO);
+- embedding a size-`g` regular block gives per-size width `Θ(g²)`, never `2^g`;
+- transitive (spread in-degrees, band width exactly 4) is the maximizer at
+  `Θ(n³)`, and hill-climbing can't beat it by >2%.
+
+So the in-degree spread that would create many candidate subsets is exactly
+what makes the tournament Δ\*≥3 (kills reachability). The **open lemma** that
+would finish a proof of `#reachable = poly` (hence Q1 ∈ P):
+
+> **Crux band lemma (OPEN).** If `|{v : d⁻(v) ∈ [p−2, p+1]}|` is large
+> (`≥ C` for a suitable constant, equivalently the size-`p` in-degree band is
+> near-regular), then no prefix of size `p` is reachable — i.e. a large
+> equal-in-degree band cannot be "split" by a Δ\*≤2 order.
+
+This is the one remaining step: it converts the necessary conditions
+(N1′)/(N2)/(N3) into a polynomial count by ruling out the wide-band regime
+that the in-degree cap alone permits. Tools: `scripts/q1_reachable_count.py`,
+`tests/test_q1_degreewidth.py`.
