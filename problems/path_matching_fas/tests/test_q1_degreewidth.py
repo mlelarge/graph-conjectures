@@ -119,35 +119,44 @@ class TestQ1(unittest.TestCase):
                 _, _, full = reachable_stats(T)
                 self.assertEqual(full, degreewidth(T) <= 2)
 
-    def test_one_sided_window_lemma(self):
-        """Reachable size-p prefix S ⟹ every v∈S has d⁻(v) ≤ p+1 (S ⊆ A_p)."""
+    def test_two_sided_window_lemma(self):
+        """D96: every vertex v of a reachable prefix S has |i(v)−d⁻(v)| ≤ 2 in
+        any witnessing order (corrects D94's one-sided claim). Consequences:
+        per-level cap |S∩{d⁻=t}| ≤ 5 and S ⊆ {d⁻ ≤ p+1}."""
+        from q1_reachable_count import masks
+
         rng = random.Random(9)
-        for n in range(2, 11):
-            for _ in range(200):
+        for n in range(3, 10):
+            for _ in range(150):
                 T = rand_tournament(n, rng)
-                om = [0] * n
-                dm = [0] * n
-                for u in range(n):
-                    for v in range(n):
-                        if u != v and T[u][v]:
-                            om[u] |= 1 << v
-                for v in range(n):
-                    dm[v] = sum(1 for u in range(n) if u != v and T[u][v])
-                frontier = {0}
+                om, dm = masks(T)
+                # BFS keeping one witnessing order per reachable prefix
+                frontier = {0: []}
                 for p in range(n):
-                    nxt = set()
-                    for S in frontier:
+                    nxt = {}
+                    for S, order in frontier.items():
                         for u in range(n):
                             if (S >> u) & 1:
                                 continue
                             c = bin(om[u] & S).count("1")
                             if 2 * c + dm[u] - p <= 2:
-                                nxt.add(S | (1 << u))
-                    for S in nxt:  # size p+1
-                        for v in range(n):
-                            if (S >> v) & 1:
-                                self.assertLessEqual(dm[v], (p + 1) + 1)
+                                S2 = S | (1 << u)
+                                if S2 not in nxt:
+                                    nxt[S2] = order + [u]
+                    for S, order in nxt.items():
+                        # two-sided window on the witnessing order
+                        for i, v in enumerate(order):
+                            self.assertLessEqual(abs(i - dm[v]), 2)
+                        # per-level cap ≤5 and S ⊆ {d⁻ ≤ p+1}
+                        from collections import Counter
+
+                        lvl = Counter(dm[v] for v in order)
+                        self.assertLessEqual(max(lvl.values()), 5)
+                        for v in order:
+                            self.assertLessEqual(dm[v], (p + 1) + 1)
                     frontier = nxt
+                    if not frontier:
+                        break
 
     def test_N3_in_neighbor_closure(self):
         """(N3) PROVED: every v in a reachable prefix S has ≤2 in-neighbours

@@ -99,7 +99,7 @@ disagreements** vs the exact Held-Karp solver over all 33 866 tournaments
 n≤6 + 20 000 random n=7. So Q1 reduces entirely to: **is `#reachable`
 polynomial?** (`scripts/q1_reachable_count.py`.)
 
-### 6.1 One-sided window lemma (PROVED)
+### 6.1 Window lemma (PROVED) — TWO-SIDED, see §6.6 correction
 
 > **Lemma.** If `S` is a reachable prefix with `|S| = p`, then every `v∈S`
 > has `d⁻(v) ≤ p+1`; i.e. `S ⊆ A_p := {v : d⁻(v) ≤ p+1}`.
@@ -109,9 +109,10 @@ at position `k−1`, so `bd(v_k) = (k−1) + d⁻(v_k) − 2b` where `b =` #in-
 neighbours of `v_k` before it; since `b ≤ k−1`, `bd(v_k) ≥ d⁻(v_k) − (k−1)`.
 Reachability gives `bd(v_k) ≤ 2`, so `d⁻(v_k) ≤ (k−1)+2 = k+1 ≤ p+1`. ∎
 
-(This is the *prefix* analogue of the score-window lemma — only the lower
-side `i(v) ≥ d⁻(v)−2` survives, because a reachable prefix needs no valid
-suffix. Verified: 0 violations on random n≤10.)
+**Correction (§6.6, D96):** the window is in fact **TWO-SIDED** —
+`|i(v) − d⁻(v)| ≤ 2` for every `v∈S` — using only `bd(v)≤2`. (The earlier
+"only the lower side survives" remark here was wrong; the upper side does
+not need a valid suffix.)
 
 ### 6.2 #reachable is Θ(n³) empirically (the candidate poly bound)
 
@@ -183,12 +184,56 @@ So the in-degree spread that would create many candidate subsets is exactly
 what makes the tournament Δ\*≥3 (kills reachability). The **open lemma** that
 would finish a proof of `#reachable = poly` (hence Q1 ∈ P):
 
-> **Crux band lemma (OPEN).** If `|{v : d⁻(v) ∈ [p−2, p+1]}|` is large
-> (`≥ C` for a suitable constant, equivalently the size-`p` in-degree band is
-> near-regular), then no prefix of size `p` is reachable — i.e. a large
-> equal-in-degree band cannot be "split" by a Δ\*≤2 order.
+> **Crux band lemma (D95 framing — now REFUTED, see §6.6).** ~~If the
+> size-`p` in-degree band is large, no prefix of size `p` is reachable.~~
 
-This is the one remaining step: it converts the necessary conditions
-(N1′)/(N2)/(N3) into a polynomial count by ruling out the wide-band regime
-that the in-degree cap alone permits. Tools: `scripts/q1_reachable_count.py`,
-`tests/test_q1_degreewidth.py`.
+### 6.6 D96 — the band lemma is FALSE; the window is two-sided (the real lemma)
+
+I attacked the §6.5 band lemma directly and it turned out to be **false**,
+because of a stronger structural fact I had missed.
+
+**Two-sided window lemma (PROVED; corrects §6.1/D94).**
+> For every vertex `v` of a reachable prefix `S`, in *any* witnessing order,
+> `|i(v) − d⁻(v)| ≤ 2` (`i(v)` = position).
+
+*Proof.* `bd(v) = i(v) + d⁻(v) − 2b(v)` with `b(v)` = #in-neighbours of `v`
+before it, and `b(v) ≤ min(i(v), d⁻(v))`. Hence `bd(v) ≥ |i(v) − d⁻(v)|`
+(using `b≤d⁻` for one side, `b≤i` for the other). Reachability gives
+`bd(v) ≤ 2`. ∎ — verified: max `|i−d⁻| = 2` over all reachable prefixes,
+exhaustive n≤6 + random n≤9. (D94 wrongly claimed the upper side needs a
+valid suffix; it does not — it only uses `v`'s own back-degree.)
+
+**Consequences (PROVED).** The `p` vertices of `S` occupy positions
+`0..p−1` with `v` at a position in `[d⁻(v)−2, d⁻(v)+2]`. Therefore:
+- **(W1) per-level cap:** at most **5** vertices of any single in-degree
+  value `t` lie in `S` (they need distinct positions in `[t−2,t+2]`);
+- **(W2) profile pinned:** sorting `S`'s in-degrees `e_0≤…≤e_{p−1}` gives
+  `|e_i − i| ≤ 2`, so `|S ∩ {d⁻ ≤ t}| ∈ [t−1, t+3]` for all `t` — the
+  in-degree *profile* of any reachable prefix is fixed to within an `O(1)`
+  band, so there are only `poly(n)` valid profiles;
+- **(W3) band split:** `|S ∩ {d⁻ ∈ [p−2,p+1]}| ≤ 4`.
+
+**Why the band lemma is FALSE.** By (W3) only ≤4 band vertices are in `S`;
+a large band is fine — it is just mostly *omitted*. Explicit witness: embed
+a 5-vertex regular block (in-degree 7) in transitive padding at n=15 — a
+band of **5** equal-in-degree vertices, yet `Δ\*=2` (the full set is
+reachable). So "large band ⇒ unreachable" is wrong; the D95 framing is
+retracted. (What actually dies is a large *regular* block of size ≥7 —
+because a regular tournament on ≥7 vertices has degreewidth ≥3 *internally* —
+not "large band" per se.)
+
+**The genuinely remaining gap (sharpened, still OPEN).** The window/(W1–W3)
+conditions are *arc-independent* (they depend only on in-degrees), so they
+pin the profile but not *which* vertices at each level are chosen. With `n_t`
+vertices of in-degree `t`, the window permits `C(n_t, s_t)` choices per level
+(`s_t≤5`), and `∏_t C(n_t,s_t)` can be `2^{Θ(n)}` — e.g. many levels with
+`n_t=2`, `s_t=1`. So **the window alone does NOT give a polynomial count.**
+The poly bound must come from the *arc-level* condition (N3): equal-in-degree
+vertices are **not** freely interchangeable — swapping which one is in `S`
+changes the back-arc structure, and reachability (not just the window) forces
+the selection. Empirically this pruning is total (`#reachable = Θ(n³)`,
+n≤60), but a clean proof that **within-level selection is poly-bounded** is
+the open content. This is the corrected, precise residual — narrower than the
+(false) band lemma.
+
+Tools: `scripts/q1_reachable_count.py`, `tests/test_q1_degreewidth.py`.
