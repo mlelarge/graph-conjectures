@@ -284,6 +284,86 @@ class TestQ1(unittest.TestCase):
                 break
         self.assertGreaterEqual(best, 3)  # |D| exceeds 2 at n=10
 
+    def test_diameter_band_part_proved_le_8(self):
+        """D98 (PROVED): for reachable prefixes S, S' of the same size,
+        |(S△S') ∩ band| ≤ 8, since |S∩band|,|S'∩band| ≤ 4 (W3)."""
+        from q1_reachable_count import masks
+
+        rng = random.Random(20260531)
+        for n in range(4, 9):
+            for _ in range(120):
+                T = rand_tournament(n, rng)
+                om, dm = masks(T)
+                frontier = {0}
+                bysize = {0: [0]}
+                for p in range(n):
+                    nxt = set()
+                    for S in frontier:
+                        for u in range(n):
+                            if (S >> u) & 1:
+                                continue
+                            c = bin(om[u] & S).count("1")
+                            if 2 * c + dm[u] - p <= 2:
+                                nxt.add(S | (1 << u))
+                    if nxt:
+                        bysize[p + 1] = list(nxt)
+                    frontier = nxt
+                    if not nxt:
+                        break
+                for p, lst in bysize.items():
+                    for a in lst:
+                        band_a = sum(1 for v in range(n)
+                                     if (a >> v) & 1 and p - 2 <= dm[v] <= p + 1)
+                        self.assertLessEqual(band_a, 4)  # W3
+                    for i in range(len(lst)):
+                        for j in range(i + 1, len(lst)):
+                            x = lst[i] ^ lst[j]
+                            band = sum(1 for v in range(n)
+                                       if (x >> v) & 1 and p - 2 <= dm[v] <= p + 1)
+                            self.assertLessEqual(band, 8)
+
+    def test_diameter_is_bounded(self):
+        """D98 (evidence): the diameter (max |S△S'| over same-size reachable
+        prefixes) is bounded by a small constant, not growing with n.
+        Bounded diameter ⟹ #reachable = poly ⟹ Q1 ∈ P."""
+        from q1_reachable_count import masks
+
+        def diameter(T):
+            n = len(T)
+            om, dm = masks(T)
+            frontier = {0}
+            md = 0
+            bysize = {0: [0]}
+            for p in range(n):
+                nxt = set()
+                for S in frontier:
+                    for u in range(n):
+                        if (S >> u) & 1:
+                            continue
+                        c = bin(om[u] & S).count("1")
+                        if 2 * c + dm[u] - p <= 2:
+                            nxt.add(S | (1 << u))
+                if nxt:
+                    bysize[p + 1] = list(nxt)
+                frontier = nxt
+                if not nxt:
+                    break
+            for lst in bysize.values():
+                for i in range(len(lst)):
+                    for j in range(i + 1, len(lst)):
+                        md = max(md, bin(lst[i] ^ lst[j]).count("1"))
+            return md
+
+        rng = random.Random(7)
+        for n in range(4, 13):
+            worst = 0
+            for _ in range(400):
+                worst = max(worst, diameter(rand_tournament(n, rng)))
+            # transitive maximizer skeleton
+            Tt = [[1 if i > j else 0 for j in range(n)] for i in range(n)]
+            worst = max(worst, diameter(Tt))
+            self.assertLessEqual(worst, 12)  # bounded; observed ≤8
+
     def test_transitive_reachable_count_formula(self):
         """Transitive: #reachable size-p prefixes = C(p+2,2) for p ≤ n−2."""
         from math import comb

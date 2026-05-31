@@ -236,7 +236,9 @@ n≤60), but a clean proof that **within-level selection is poly-bounded** is
 the open content. This is the corrected, precise residual — narrower than the
 (false) band lemma.
 
-Tools: `scripts/q1_reachable_count.py`, `tests/test_q1_degreewidth.py`.
+Tools: `scripts/q1_reachable_count.py`, `tests/test_q1_degreewidth.py`. (Note:
+§6.8/D98 below gives a working GLOBAL reduction — read it for the current
+best path; §6.5–6.7 are the local attempts it supersedes.)
 
 ### 6.7 D97 — reduction schema + a third refuted conjecture; proof still open
 
@@ -281,5 +283,53 @@ certificates captures. A proof likely needs a genuinely global argument
 (a potential/exchange argument over full orders, or an amortized charging
 that ties the per-size choices to the global budget) rather than another
 necessary-condition-plus-counting decomposition.
+
+Tools: `scripts/q1_reachable_count.py`, `tests/test_q1_degreewidth.py`.
+
+### 6.8 D98 — a GLOBAL exchange/diameter reduction (band part proved; one piece left)
+
+The local routes (§6.5–6.7) all failed because their conditions are
+arc-independent and permit exponential counts. A **global** (pairwise)
+statement does better. Define the *diameter* at size `p` as the maximum
+symmetric difference `|S △ S'|` over reachable prefixes `S, S'` of size `p`.
+
+> **Diameter reduction (PROVED).** If the diameter at every size is `≤ c`
+> (a constant), then `#reachable size-p ≤ Σ_{j=0}^{c/2} C(p,j)·C(n−p,j) =
+> O(n^c)`, so the reachable-prefix BFS runs in `poly(n)` and **Q1 ∈ P**.
+
+*Proof.* Fix any reachable `S₀` of size `p`. Every reachable `S` of size `p`
+has `|S △ S₀| ≤ c`, i.e. `S` is obtained from `S₀` by removing `j ≤ c/2`
+vertices and adding `j`. The number of such `S` is `Σ_{j≤c/2} C(p,j)C(n−p,j)`.
+Summing over `p` gives `O(n^{c+1})` total. ∎
+
+So Q1 ∈ P reduces to: **the diameter is bounded by a constant.** This is a
+genuine exchange statement — any two reachable prefixes of the same size
+differ by `≤ c/2` element-swaps.
+
+**Decomposition of the diameter (PROVED, partially).** `S △ S' ⊆ L =
+low ∪ band` (the high vertices `d⁻ > p+1` are excluded from every reachable
+prefix by the window), so
+`|S △ S'| = |(S△S') ∩ band| + |D △ D'|`, where `D, D'` are the deep-omission
+sets `{w∉S : d⁻(w) ≤ p−3}`.
+- **Band part `≤ 8` — PROVED:** `(S△S') ∩ band ⊆ (S∩band) ∪ (S'∩band)`, and
+  `|S∩band|, |S'∩band| ≤ 4` by (W3). So `|(S△S')∩band| ≤ 8`, *with no
+  dependence on `n`*.
+- **Deep part `|D △ D'|` — the one open piece.** Empirically `≤ 4`
+  (exhaustive n≤6: deep-part ≤1; adversarial n≤20: ≤4). Crucially, this is a
+  *pairwise difference*: even though a single prefix's `|D|` grows with `n`
+  (D97), any two reachable prefixes omit **nearly the same** deep vertices.
+
+**Evidence for bounded diameter.** Exhaustive over all tournaments n≤6:
+**max diameter = 6**. Adversarial (random + dense-YES + transitive +
+reversed-matching) n = 8,10,12,14,16,20: max diameter `8,8,8,6,6,6` —
+**bounded, not growing.** Transitive and reversed-matching give exactly 4.
+
+**Status.** This is the cleanest reduction obtained: Q1 ∈ P now follows from
+a single bounded-diameter (exchange) statement, whose band component is fully
+proved and whose only open component is `|D △ D'| = O(1)` — a *pairwise*
+deep-omission bound, robust under all testing (unlike the refuted *single*
+bound `|D|≤2` of D97). Proving `|D △ D'| = O(1)` — equivalently, that the
+omitted deep vertices are determined up to `O(1)` across all reachable
+size-`p` prefixes — would close Q1 ∈ P. This is the recommended next target.
 
 Tools: `scripts/q1_reachable_count.py`, `tests/test_q1_degreewidth.py`.
