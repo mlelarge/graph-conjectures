@@ -237,3 +237,49 @@ the open content. This is the corrected, precise residual — narrower than the
 (false) band lemma.
 
 Tools: `scripts/q1_reachable_count.py`, `tests/test_q1_degreewidth.py`.
+
+### 6.7 D97 — reduction schema + a third refuted conjecture; proof still open
+
+Attacking "within-level selection is poly" produced one clean PROVED lemma,
+a reduction schema, and a third refuted bounding conjecture. Honest status:
+**Q1 ∈ P is still open.**
+
+**Recursion (hereditary) lemma — PROVED.** For any vertex subset `B`, if `S`
+is a reachable prefix of `T` then `S∩B` is a reachable prefix of the induced
+sub-tournament `T[B]`. *Proof.* For `v∈S∩B`, the within-`B` back-degree under
+the order induced from `S`'s witness is `≤ bd_T(v) ≤ 2` (both the out-before
+and in-after sets shrink when restricting to `B`). ∎ Verified 0/523. (So the
+within-level choice is a *reachable prefix of the level-block*, restricting
+it to the block's low-internal-degree vertices — `O(1)` options per level by
+the window, improving D96's `C(n_t,s_t)`.)
+
+**Reduction schema.** Write `low = {d⁻≤p−3}`, `band = {d⁻∈[p−2,p+1]}`, and
+`D` = the *deep omissions* `= {w∉S : d⁻(w)≤p−3}`. Then (decomposition,
+verified 0 violations, exhaustive n≤7 / 109M prefixes)
+`S = (low ∖ D) ∪ (S∩band)`, with `|S∩band| ≤ 4` (W3). So a reachable prefix
+is determined by `(D, S∩band)`, and **if `|D| = O(1)` then
+`#reachable size-p ≤ C(|low|, |D|)·O(1) = poly`, giving Q1 ∈ P.**
+
+**The deep-omission conjecture `|D| ≤ 2` — REFUTED.** Exhaustive n≤7 gives
+`max|D| = 2`, but random n=10 gives `max|D| = 3`. So `|D|` is **not** bounded
+by 2 and appears to grow slowly with `n`. The budget argument only yields
+`|D| ≤ 2p/3` (3 deep omissions are consistent with (N3) by counting: each
+S-vertex absorbs ≤2, ≥9 incidences spread over ≥5 victims is feasible). So
+the reduction schema does **not** close the proof: `C(|low|,|D|) = n^{Θ(|D|)}`
+is super-polynomial if `|D|` grows.
+
+**Where this leaves Q1 (honest).** The candidate recognizer (reachable-prefix
+BFS) and the direct evidence `#reachable = Θ(n³)` (n≤60, hill-climb-robust)
+stand. But **a proof of Q1 ∈ P remains open.** The pattern across D94–D97 is
+clear and worth recording: every *clean, local* bounding conjecture is
+refuted (one-sided window → actually two-sided; band lemma → false; `|D|≤2` →
+false). The PROVED necessary conditions (two-sided window, W1–W3, N2, N3,
+recursion) are all **arc-independent or local**, and each permits an
+exponential count; the true pruning to `Θ(n³)` is a *global* effect (the
+shared `bd≤2` budget across the whole order) that none of these local
+certificates captures. A proof likely needs a genuinely global argument
+(a potential/exchange argument over full orders, or an amortized charging
+that ties the per-size choices to the global budget) rather than another
+necessary-condition-plus-counting decomposition.
+
+Tools: `scripts/q1_reachable_count.py`, `tests/test_q1_degreewidth.py`.

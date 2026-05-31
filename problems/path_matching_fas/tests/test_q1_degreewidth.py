@@ -186,6 +186,104 @@ class TestQ1(unittest.TestCase):
                                 self.assertLessEqual(outside, 2)
                     frontier = nxt
 
+    def test_recursion_hereditary_lemma(self):
+        """D97 (PROVED): if S is a reachable prefix of T and B ⊆ V, then S∩B is
+        a reachable prefix of the induced sub-tournament T[B]."""
+        from q1_reachable_count import masks
+
+        def is_reachable_prefix(T, Sl):
+            n = len(T)
+            p = len(Sl)
+            if p == 0:
+                return True
+            om = {u: set(v for v in range(n) if T[u][v]) for u in range(n)}
+            dm = [sum(1 for u in range(n) if T[u][v]) for v in range(n)]
+            idxset = set(Sl)
+            frontier = {0}
+            full = (1 << p) - 1
+            for sz in range(p):
+                nxt = set()
+                for mask in frontier:
+                    placed = set(Sl[k] for k in range(p) if (mask >> k) & 1)
+                    for k in range(p):
+                        if (mask >> k) & 1:
+                            continue
+                        v = Sl[k]
+                        c = len(om[v] & placed)
+                        if 2 * c + dm[v] - sz <= 2:
+                            nxt.add(mask | (1 << k))
+                frontier = nxt
+                if not frontier:
+                    return False
+            return full in frontier
+
+        rng = random.Random(20260531)
+        for n in range(4, 8):
+            for _ in range(60):
+                T = rand_tournament(n, rng)
+                om, dm = masks(T)
+                # enumerate reachable prefixes
+                frontier = {0}
+                reach = []
+                for sz in range(n):
+                    nxt = set()
+                    for Sm in frontier:
+                        for u in range(n):
+                            if (Sm >> u) & 1:
+                                continue
+                            c = bin(om[u] & Sm).count("1")
+                            if 2 * c + dm[u] - sz <= 2:
+                                nxt.add(Sm | (1 << u))
+                    reach += list(nxt)
+                    frontier = nxt
+                    if not nxt:
+                        break
+                for Sm in reach[:: max(1, len(reach) // 6)]:
+                    Sset = [v for v in range(n) if (Sm >> v) & 1]
+                    B = sorted(v for v in range(n) if (v * 7 + n) % 3)  # arbitrary subset
+                    if not B:
+                        continue
+                    TB = [[T[a][b] for b in B] for a in B]
+                    SB = [B.index(v) for v in Sset if v in B]
+                    self.assertTrue(is_reachable_prefix(TB, SB))
+
+    def test_deep_omission_bound_is_NOT_two(self):
+        """D97: the conjecture |D| ≤ 2 (deep omissions, d⁻≤p−3) is FALSE — it is
+        2 exhaustively at n≤7 but reaches 3 at n=10 (refutation witness)."""
+        from q1_reachable_count import masks
+
+        def max_deep(T):
+            n = len(T)
+            om, dm = masks(T)
+            frontier = {0}
+            md = 0
+            for p in range(n + 1):
+                for S in frontier:
+                    md = max(md, sum(1 for w in range(n)
+                                     if not (S >> w) & 1 and dm[w] <= p - 3))
+                if p == n:
+                    break
+                nxt = set()
+                for S in frontier:
+                    for u in range(n):
+                        if (S >> u) & 1:
+                            continue
+                        c = bin(om[u] & S).count("1")
+                        if 2 * c + dm[u] - p <= 2:
+                            nxt.add(S | (1 << u))
+                frontier = nxt
+                if not frontier:
+                    break
+            return md
+
+        rng = random.Random(1)
+        best = 0
+        for _ in range(6000):
+            best = max(best, max_deep(rand_tournament(10, rng)))
+            if best >= 3:
+                break
+        self.assertGreaterEqual(best, 3)  # |D| exceeds 2 at n=10
+
     def test_transitive_reachable_count_formula(self):
         """Transitive: #reachable size-p prefixes = C(p+2,2) for p ≤ n−2."""
         from math import comb
