@@ -364,6 +364,42 @@ class TestQ1(unittest.TestCase):
             worst = max(worst, diameter(Tt))
             self.assertLessEqual(worst, 12)  # bounded; observed ≤8
 
+    def test_budget_localization_lemma(self):
+        """D99 (PROVED): for a reachable size-p prefix S and any s<p,
+        #{w∉S : d⁻(w)≤s}·(p−s) ≤ 2p. Hence #{omitted, d⁻≤p/2} ≤ 4."""
+        from q1_reachable_count import masks
+
+        rng = random.Random(5)
+        for n in range(4, 10):
+            for _ in range(150):
+                T = rand_tournament(n, rng)
+                om, dm = masks(T)
+                frontier = {0}
+                for p in range(n + 1):
+                    for S in frontier:
+                        for s in range(p):
+                            cnt = sum(1 for w in range(n)
+                                      if not (S >> w) & 1 and dm[w] <= s)
+                            self.assertLessEqual(cnt * (p - s), 2 * p)
+                        # constant consequence: omissions of in-degree ≤ p/2 are ≤ 4
+                        cnt_half = sum(1 for w in range(n)
+                                       if not (S >> w) & 1 and dm[w] <= p // 2)
+                        if p >= 2:
+                            self.assertLessEqual(cnt_half, 4)
+                    if p == n:
+                        break
+                    nxt = set()
+                    for S in frontier:
+                        for u in range(n):
+                            if (S >> u) & 1:
+                                continue
+                            c = bin(om[u] & S).count("1")
+                            if 2 * c + dm[u] - p <= 2:
+                                nxt.add(S | (1 << u))
+                    frontier = nxt
+                    if not frontier:
+                        break
+
     def test_transitive_reachable_count_formula(self):
         """Transitive: #reachable size-p prefixes = C(p+2,2) for p ≤ n−2."""
         from math import comb

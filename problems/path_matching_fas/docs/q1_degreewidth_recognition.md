@@ -333,3 +333,51 @@ omitted deep vertices are determined up to `O(1)` across all reachable
 size-`p` prefixes — would close Q1 ∈ P. This is the recommended next target.
 
 Tools: `scripts/q1_reachable_count.py`, `tests/test_q1_degreewidth.py`.
+
+### 6.9 D99 — proof attempt for |D△D'|=O(1): budget-localization proved, not closed
+
+Goal: prove the deep part of the diameter, `|D△D'| = O(1)` (would close
+Q1 ∈ P via §6.8). **Not achieved.** Progress + honest blocker below.
+
+**Budget-localization lemma — PROVED** (verified 0 violations / 6.46M checks,
+exhaustive n≤6 + random n≤11):
+> For a reachable size-`p` prefix `S` and any `s < p`,
+> `#{w ∉ S : d⁻(w) ≤ s} · (p − s) ≤ 2p`.
+
+*Proof.* Each omitted `w` with `d⁻(w) ≤ s` has out-degree `≥ n−1−s`, so
+`|N⁺(w)∩S| ≥ (n−1−s) − (|C|−1) = p − s`. Summing, `(#such)·(p−s) ≤
+Σ_{w∈C}|N⁺(w)∩S| = γ = Σ_{v∈S}|N⁻(v)∩C| ≤ 2p` (the last by (N3): each `v∈S`
+has `≤2` in-neighbours in `C`). ∎
+
+**Consequence.** `#{omitted with d⁻ ≤ p−k} ≤ 2p/k`. In particular
+`#{omitted with d⁻ ≤ p/2} ≤ 4` — a **constant**. So the contribution to
+`D△D'` from omissions of in-degree `≤ p/2` is `≤ 8`. Combining with the
+proved band bound (§6.8):
+> `diameter ≤ 8 (band) + 8 (omissions d⁻≤p/2) + |differences among omissions
+> with d⁻ ∈ (p/2, p−3]|`.
+
+**The fully-localized remaining gap.** Only omissions in the in-degree window
+`(p/2, p−3]` (just below the band) are not bounded by the budget — there the
+bound is only `≤ 2p/3`. So `|D△D'| = O(1)` is now equivalent to: *the omitted
+vertices of in-degree in `(p/2, p−3]` are determined up to `O(1)` across all
+reachable size-`p` prefixes.* Empirically the whole deep part is `≤ 4`
+(exhaustive n≤6, hill-climb, every construction to n≤30), so even this window
+contributes `O(1)` — but a proof is missing.
+
+**Honest blocker.** Many omissions in `(p/2, p−3]` would require a tournament
+with many vertices of in-degree just below `p` — a *clustered* in-degree
+profile, which pushes toward near-regular and hence `Δ\*≥3` (unreachable). So
+the dangerous regime is plausibly empty (which is *why* `|D△D'|` stays
+`O(1)`), but formalizing "clustered just-below-`p` ⟹ no reachable size-`p`
+prefix, OR the omissions there are arc-forced" is exactly the unproved step.
+The budget argument cannot reach it (it gives `2p/3` in that window); a proof
+needs the arc structure / the actual ordering, not a counting bound.
+
+**Status.** Q1 ∈ P remains OPEN. Across D94–D99 it is reduced to a single,
+well-isolated, heavily-tested pairwise statement (`|D△D'| = O(1)`, the band
+part proved, the low-`d⁻≤p/2` part proved, only the `(p/2,p−3]` window open),
+robust under adversarial search (hill-climb cannot break the diameter past 8).
+A proof appears to require a genuinely arc-level argument in the just-below-
+band window; the counting/budget toolkit is exhausted there.
+
+Tools: `scripts/q1_reachable_count.py`, `tests/test_q1_degreewidth.py`.
