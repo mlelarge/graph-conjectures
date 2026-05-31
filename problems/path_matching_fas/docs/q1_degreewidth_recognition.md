@@ -81,3 +81,74 @@ super-poly distinct profiles would refute it (none found to n=28).
 Tools (all `q1_`-prefixed): `scripts/q1_frontier.py` (identity check),
 `scripts/q1_state_compress.py`, `scripts/q1_frontier_on_yes.py`,
 `scripts/q1_min_obstructions.py`.
+
+---
+
+## 6. D94 — the reachable-prefix recognizer: Q1 ∈ P modulo a counting bound
+
+The forward DP is cleanest stated over **reachable prefixes**. A subset
+`S ⊆ V` is a *reachable prefix* if it can be linearly ordered as the first
+`|S|` positions so that **every vertex of S has back-degree ≤ 2** (the rest of
+`V` placed afterwards). Reachability BFS, by increasing `|S|`:
+`∅` reachable; `S∪{u}` reachable from reachable `S` iff
+`bd(u|S) = 2·|N⁺(u)∩S| + d⁻(u) − |S| ≤ 2`. Then **Δ\*(T) ≤ 2 iff `V` is
+reachable**. This BFS *is* a recognizer; its cost is `Θ(#reachable · n)`.
+
+**The recognizer is exact (verified).** `reachable(V)` ⟺ `Δ\*≤2` with **0
+disagreements** vs the exact Held-Karp solver over all 33 866 tournaments
+n≤6 + 20 000 random n=7. So Q1 reduces entirely to: **is `#reachable`
+polynomial?** (`scripts/q1_reachable_count.py`.)
+
+### 6.1 One-sided window lemma (PROVED)
+
+> **Lemma.** If `S` is a reachable prefix with `|S| = p`, then every `v∈S`
+> has `d⁻(v) ≤ p+1`; i.e. `S ⊆ A_p := {v : d⁻(v) ≤ p+1}`.
+
+*Proof.* Order `S = v_1,…,v_p` witnessing reachability. The vertex `v_k` sits
+at position `k−1`, so `bd(v_k) = (k−1) + d⁻(v_k) − 2b` where `b =` #in-
+neighbours of `v_k` before it; since `b ≤ k−1`, `bd(v_k) ≥ d⁻(v_k) − (k−1)`.
+Reachability gives `bd(v_k) ≤ 2`, so `d⁻(v_k) ≤ (k−1)+2 = k+1 ≤ p+1`. ∎
+
+(This is the *prefix* analogue of the score-window lemma — only the lower
+side `i(v) ≥ d⁻(v)−2` survives, because a reachable prefix needs no valid
+suffix. Verified: 0 violations on random n≤10.)
+
+### 6.2 #reachable is Θ(n³) empirically (the candidate poly bound)
+
+- **Transitive** tournaments are an exact maximizer skeleton: size-`p`
+  reachable prefixes `= C(p+2,2)` (drop any 2 of the `p+2` lowest-in-degree
+  vertices), total `= Θ(n³)` (ratio `#reachable/n³ → ≈ 1/6`, steady across
+  n=6..60).
+- **Hill-climbing** to *maximize* `#reachable` from transitive cannot beat it
+  by more than ~2% (n=12: 305 vs 299; ratio stays ≈ `0.17·n³` at n=12,16,20).
+- **Reversed-matching** → `Θ(n²)`; dense-YES → ~constant; **near-regular /
+  regular tournaments die at the empty prefix** (`#reachable = 1`: no vertex
+  has `d⁻≤2`, so none can be placed first) — the in-degree growth that would
+  blow up the count is exactly what makes the tournament Δ\*≥3.
+- No super-polynomial family found up to **n=60**.
+
+⇒ **Strong evidence: `#reachable = Θ(n³)`, hence the BFS is an `O(n⁴)`
+recognizer and Q1 ∈ P** — *conditional on a proof of the count bound.*
+
+### 6.3 What is NOT the algorithm
+
+**Greedy is incomplete (REFUTED).** "Repeatedly place any placeable vertex"
+(min-back-degree, min/max-`d⁻`, or first) all FAIL: each misses thousands of
+YES instances already at n≤6 (min-`d⁻` misses 2390/33 866; all rules sound
+but incomplete). The placement choice genuinely matters, so Q1 is not a
+one-pass greedy — the BFS (which keeps all reachable prefixes) is needed.
+
+### 6.4 The precise open problem
+
+> **Conjecture (Q1-poly).** For every tournament `T`, `#reachable prefixes`
+> is `poly(n)` (evidence: `Θ(n³)`). This implies **Q1 ∈ P**.
+
+The gap is sharp. The one-sided lemma gives `S ⊆ A_p`, but Landau's
+inequality only forces `|A_p| ≤ 2p+3`, so the in-degree cap alone permits
+`C(2p+3, p) = 2^{Θ(p)}` candidate size-`p` subsets. The actual count is
+`Θ(n³)`, so **reachability prunes super-exponentially below the in-degree
+cap** — and proving *that* is the open content. A proof needs to combine the
+one-sided cap with the per-vertex `c(u)` (out-neighbours-already-placed)
+constraint, e.g. via the sum bound `Σ_{v∈S} d⁻(v) ≤ C(|S|,2) + 2|S|` (arcs
+into `S` from outside ≤ `2|S|`, proved by summing `bd ≤ 2`). Tools:
+`scripts/q1_reachable_count.py`, `tests/test_q1_degreewidth.py`.
