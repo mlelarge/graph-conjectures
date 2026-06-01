@@ -5,6 +5,9 @@ tournaments?  OPEN in the literature: NP-hard for general oriented graphs
 (arXiv:2407.19270, Thm 2.3, all k≥1); for tournaments only `Δ*≤1` is settled
 (cubic, Davot et al.).  This memo records the forward-DP line of attack.
 
+For the consolidated, paper-skeleton version of D94–D102, see
+`docs/q1_quasipoly_writeup.md`.  The present file is the research log.
+
 ## 1. The clean forward reformulation (PROVED)
 
 Build the order left to right.  Appending vertex `u` to a prefix occupying
