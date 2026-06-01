@@ -295,6 +295,11 @@ that pass is that Q2 is an independent **hitting** problem with shared
 representatives, not a standard rainbow/independent-transversal problem with
 distinct representatives.
 
+A subsequent tournament-specific attack is recorded in
+`docs/q2_apex_cut_attack.md`.  It replaces generic directed-triangle hitting
+by an exact apex-cut closure system: each vertex has at most two selected
+protectors, and every unprotected cyclic-cross edge is forced.
+
 ## 8. Tests
 
 The pinned tests are in `tests/test_q2_acyclicity_core.py`:

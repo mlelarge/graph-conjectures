@@ -23,6 +23,12 @@ from q2_core_cycle_analysis import (  # noqa: E402
     back_arc_components,
     enumerate_degree2_orders,
 )
+from q2_apex_cut_probe import (  # noqa: E402
+    all_edges,
+    apex_triangle_closed,
+    hits_directed_cycles,
+    search_apex_csp,
+)
 from nonsweep_path_fas import decide_linear_forest_fas_bruteforce  # noqa: E402
 from nonsweep_path_fas import arcs_of, is_acyclic, underlying_is_linear_forest  # noqa: E402
 
@@ -290,6 +296,49 @@ class TestQ2DecisionCorrectness(unittest.TestCase):
                 )
 
 
+class TestApexCutProbe(unittest.TestCase):
+    def test_apex_triangle_closure_is_exact(self):
+        # For any selected edge set F, "F hits all directed triangles" is
+        # exactly the apex-cut closure condition C_v - N_F(v) subset F.
+        for T in _all_tournaments(4):
+            edges = all_edges(4)
+            for mask in range(1 << len(edges)):
+                F = {edges[i] for i in range(len(edges)) if (mask >> i) & 1}
+                self.assertEqual(
+                    apex_triangle_closed(T, F),
+                    hits_directed_cycles(T, F, 3),
+                )
+
+    def test_apex_csp_matches_bruteforce_exhaustive_n_le_5(self):
+        # The apex CSP is an exact reformulation plus global linear-forest
+        # and 4-cycle checks.  Exhaustive n<=5 keeps this pinned.
+        for n in range(2, 6):
+            for T in _all_tournaments(n):
+                out = search_apex_csp(T, node_cap=100_000)
+                self.assertTrue(out["exhausted"])
+                self.assertEqual(out["found"], decide_linear_forest_fas_bruteforce(T))
+
+    def test_apex_csp_refutes_certified_n7_no_catalogue(self):
+        data = os.path.join(
+            os.path.dirname(__file__),
+            "..",
+            "data",
+            "minimal_no_obstruction_catalogue_n7.json",
+        )
+        with open(data) as fh:
+            recs = json.load(fh)["records"]
+        max_nodes = 0
+        ac_empty = 0
+        for rec in recs:
+            out = search_apex_csp(rec["T"], node_cap=100_000)
+            self.assertTrue(out["exhausted"])
+            self.assertFalse(out["found"])
+            max_nodes = max(max_nodes, out["nodes"])
+            ac_empty += int(out["initial_ac"]["consistent"] is False)
+        self.assertLessEqual(max_nodes, 100)
+        self.assertGreaterEqual(ac_empty, 4)
+
+
 if __name__ == "__main__":
     unittest.main()
 
@@ -332,7 +381,8 @@ class TestCycleCountCondition(unittest.TestCase):
         here = os.path.dirname(__file__)
         path = os.path.join(here, "..", "data",
                             "minimal_no_obstruction_catalogue_n7.json")
-        recs = json.load(open(path))["records"]
+        with open(path) as fh:
+            recs = json.load(fh)["records"]
         bound = (7 - 1) * (7 - 2)
         self.assertTrue(all(_count_directed_3cycles(r["T"]) < bound for r in recs))
 
