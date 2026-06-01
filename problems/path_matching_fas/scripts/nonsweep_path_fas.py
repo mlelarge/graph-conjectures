@@ -144,16 +144,10 @@ def _build_ilp(T: Sequence[Sequence[int]], integral: bool):
     Constraints:
       (triangle / FAS)  for every cyclic triangle, at least one arc is in S:
             x_{a1} + x_{a2} + x_{a3} >= 1.
-        These are NECESSARY (a FAS must break every cyclic triangle) but on a
-        tournament they are also SUFFICIENT for T-S acyclic ONLY when the
-        kept arcs T-S are themselves a tournament-with-no-3-cycle... which is
-        exactly acyclicity for tournaments.  (A tournament is acyclic iff it
-        has no cyclic triangle -- Moon's theorem.)  So for the *kept*
-        sub-tournament these triangle constraints are exactly acyclicity,
-        PROVIDED the kept arcs still form a tournament on V.  They always do:
-        each pair keeps exactly one orientation, S only deletes; deleting an
-        arc of a pair makes the pair absent, not reversed.  So we must be
-        careful: see note below.
+        These are NECESSARY (a FAS must break every cyclic triangle) but not
+        sufficient for T-S acyclic: after deleting S, the kept arcs are no
+        longer a tournament, and a directed 4-cycle can remain after every
+        cyclic triangle has been hit.  See the modelling note below.
 
       (degree<=2) for every vertex v, the number of S-arcs incident to v
             (in either direction) is at most 2:
@@ -166,8 +160,11 @@ def _build_ilp(T: Sequence[Sequence[int]], integral: bool):
     same as "every cyclic triangle of T has an arc in S": deleting an arc
     leaves a non-tournament digraph that can still contain a longer directed
     cycle whose every triangle was already partly deleted.  So the triangle
-    constraints are a RELAXATION of acyclicity.  We therefore also test the
-    program against brute force to measure the integrality / soundness gap.
+    constraints are a RELAXATION of acyclicity.  If S is already known to be a
+    linear forest, directed 3- and 4-cycle cuts are sufficient (see
+    docs/q2_nonforward_attack.md), but this older relaxation has only
+    triangle cuts.  We therefore also test the program against brute force to
+    measure the integrality / soundness gap.
     """
     arcs = arcs_of(T)
     m = len(arcs)

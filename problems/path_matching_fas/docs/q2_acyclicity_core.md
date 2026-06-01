@@ -3,6 +3,13 @@
 **Q2.** Among tournaments with `Δ*(T)=2`, is "∃ an acyclic degree-2 order"
 (equivalently Path-FAS = YES) decidable in polynomial time?
 
+Update after D103/Q1: `Δ*(T)≤2` is now polynomial-time decidable for
+tournaments.  The remaining Q2 work is isolated in
+`docs/q2_nonforward_attack.md`: the degree-feasible prefix-set DAG is
+polynomial, but Q2 is the graphic-matroid-independent path problem on that
+DAG, equivalently the problem of finding a linear forest hitting every
+directed 3- and 4-cycle.
+
 A *degree-2 order* has max back-degree ≤ 2, so its back-arc graph is a
 disjoint union of paths and cycles. Q2 asks whether the cycles can always
 be avoided. The **acyclicity-core** = the `Δ*=2` minimal-NO instances
@@ -137,8 +144,8 @@ orders to rule out.
   union infeasibility certificate on the (pair-precedence, degree-budget)
   structure — and red-team it against the D70 probe family first, since that
   family is the minimal known witness that forward and enumeration methods
-  both die. Confirm Q1 (`Δ*≤2` recognition) in parallel: it is the gate and
-  is itself open.
+  both die. Q1 (`Δ*≤2` recognition) is now closed in P by D103; the remaining
+  gate is the acyclicity/forest-independence layer.
 
 ### Tools (this round, all `q2_`-prefixed; no shared files modified)
 * `scripts/q2_d70_diagnostic.py` — Δ* of the D70 families; acyclicity-vs-degree of fooling failures.

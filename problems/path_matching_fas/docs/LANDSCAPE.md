@@ -40,8 +40,10 @@ finite check (verification, not proof); **REFUTED** = killed by a named witness;
   cycle-projection on cyclic-ladder cores). This is the only fully-closed positive
   result on a non-trivial LFO subfamily; it was exactly the adversarial family that
   produced the 2^(n/4) sleeping-block blow-ups.
-- **Degreewidth corollaries** (`degreewidth_direction.md`): `Δ*(T) ≤ 1 ⇒ YES` (poly,
-  cubic, arXiv:2212.06007); `Δ*=0 ⇒ YES` trivially.
+- **Degreewidth corollaries** (`degreewidth_direction.md`, `q1_polynomial_writeup.md`):
+  `Δ*(T) ≤ 1 ⇒ YES` (poly, cubic, arXiv:2212.06007); `Δ*=0 ⇒ YES` trivially;
+  and `Δ*(T)≤2` is now polynomial-time decidable by D103.  This settles the
+  degree gate, not the acyclicity core.
 
 ### The decisive impossibility theorem
 - **Forward-DP lower bound (D70)** — THEOREM (`forward_dp_lower_bound.md` §3.4):
@@ -122,7 +124,7 @@ certificate. **Route officially PAUSED** as a documented open subproblem.
 
 ---
 
-## 4. The live reframing: degreewidth (D92, newest)
+## 4. The live reframing: degreewidth (D92, updated after D103)
 
 `degreewidth_direction.md` recasts the problem through degreewidth `Δ*(T)` =
 min-over-orders max-back-degree (arXiv:2212.06007):
@@ -131,19 +133,16 @@ min-over-orders max-back-degree (arXiv:2212.06007):
 |---|---|---|---|
 | ≤ 1 | matching | **YES** | poly (cubic) — THEOREM |
 | 2 | paths **+ cycles** | **YES iff some degree-2 order is acyclic** | **the open core** |
-| ≥ 3 | — | **NO** | THEOREM (`YES ⇒ Δ*≤2`, contrapositive) |
+| ≥ 3 | — | **NO** | poly via D103 `Δ*≤2` recognizer |
 
-So `Path-FAS = (Δ*≤1) ∨ (Δ*=2 ∧ ∃ acyclic degree-2 order)`, and **all the difficulty is
-the `Δ*=2` acyclicity layer** — the `Δ*=2` band carries *both* YES and NO instances
-(n=6 census: 15648 YES already have `Δ*=2`), so even recognizing `Δ*≤2` does not decide
-the problem. Two sharp open sub-questions:
+So `Path-FAS = (Δ*≤1) ∨ (Δ*=2 ∧ ∃ acyclic degree-2 order)`, and **all the remaining
+difficulty is the `Δ*=2` acyclicity layer**.  The `Δ*=2` band carries *both* YES and NO
+instances (n=6 census: 15648 YES already have `Δ*=2`).  D103 settles the former Q1:
+`Δ*(T)≤2` is decidable in polynomial time.  The single remaining degreewidth question is:
 
-- **(Q1)** Is `Δ*(T) ≤ 2` poly-decidable? (Computing `Δ*` is NP-hard in general, but
-  `Δ*≤1` is cubic; the fixed threshold `k=2` is the open gateway. The general
-  NP-hardness reduction does **not** transfer to the fixed value 2.)
 - **(Q2)** Among `Δ*=2` tournaments, is "∃ acyclic degree-2 order" polynomial? This is
   the genuine residual; minimal-NO `Δ*=2` instances are exactly the `large_width_no`
-  family.
+  family.  The first post-Q1 non-forward reduction is in `docs/q2_nonforward_attack.md`.
 
 This is a **reframing, not a solution** — but it is the cleanest one, it is anchored to
 published work, and unlike every forward-DP idea it is **not killed by D70** (a degree-2
@@ -153,12 +152,11 @@ acyclic order is a global object, not a forward sweep).
 
 ## 5. Promising directions, ranked
 
-1. **The `Δ*=2` acyclicity question (Q2), and Q1 for the fixed threshold `k=2`.** The
-   single cleanest live target. Concrete first moves: adapt the cubic `Δ*≤1`
-   recognition or the `Δ*`-NP-hardness construction of arXiv:2212.06007 to the *value 2*
-   (settles Q1); mine the `Δ*=2 = large_width_no` minimal-NO core for what forces a cycle
-   in every degree-2 order (attacks Q2). A poly answer to Q1 already gives a poly
-   NO-certificate for the degree-obstructed majority.
+1. **The `Δ*=2` acyclicity question (Q2).** The single cleanest live target.  Q1 is now
+   settled in P, so mine the `Δ*=2 = large_width_no` minimal-NO core for what forces a
+   cycle in every degree-2 order.  The current non-forward formulation is: find a path in
+   the polynomial Q1 prefix DAG whose accumulated labels are graphic-matroid independent,
+   equivalently find a linear forest hitting every directed 3- and 4-cycle.
 
 2. **A non-forward / structural poly algorithm.** D70 rules out forward DPs but explicitly
    leaves open (i) a poly *certificate* checkable without a sweep, and (ii) a non-sweep

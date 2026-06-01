@@ -31,11 +31,12 @@ split of all tournaments**:
 | Δ\* = 0 | empty (acyclic) | **YES** | trivial |
 | Δ\* = 1 (*sparse*) | a **matching** (⊆ linear forest) | **YES** | **poly** — cubic (arXiv:2212.06007) |
 | Δ\* = 2 | paths **+ cycles** | **YES iff some degree-2 order is acyclic** | the open core |
-| Δ\* ≥ 3 | — | **NO** | (recognition open; see Q1) |
+| Δ\* ≥ 3 | — | **NO** | poly via D103 `Δ*≤2` recognition |
 
 So **Path-FAS YES = (Δ\* ≤ 1)  ∨  (Δ\* = 2 ∧ some degree-2 order is
-acyclic)**, and the *entire* difficulty of the problem lives in the
-**Δ\* = 2 layer**: Δ\* ≤ 1 is YES and poly-recognizable, Δ\* ≥ 3 is NO.
+acyclic)**, and the *entire remaining* difficulty of the problem lives in the
+**Δ\* = 2 layer**: Δ\* ≤ 1 is YES and poly-recognizable, Δ\* ≥ 3 is NO and is
+now polynomially separable by the D103 `Δ*≤2` recognizer.
 
 ## The acyclicity-core (verified on the catalogues)
 
@@ -63,14 +64,10 @@ YES and NO — exactly where acyclicity decides.)
 
 ## The two sharp open sub-questions
 
-> **(Q1) Is "Δ\*(T) ≤ 2" decidable in polynomial time?**  (Recognition of
-> degreewidth ≤ 2.)  Computing Δ\* exactly is **NP-hard** in general
-> (arXiv:2212.06007), but *sparse* recognition (Δ\* ≤ 1) is cubic; the
-> fixed value k = 2 is the open gateway.  A poly answer gives a poly
-> NO-certificate for the degree-obstructed majority; an NP-hardness answer
-> would be a **non-local hardness** lead for Path-FAS itself (note: the
-> degreewidth-NP-hardness reduction does not transfer directly — Path-FAS
-> is a different decision — but it is the natural construction to adapt).
+> **(Q1) "Δ\*(T) ≤ 2" is polynomial-time decidable.**  D103 proves the
+> reachable-prefix diameter is at most 8, giving a polynomial recognizer.
+> See `docs/q1_polynomial_writeup.md`.  This gives a polynomial
+> NO-certificate for the degree-obstructed majority.
 
 > **(Q2) Among Δ\*(T) = 2 tournaments, is "∃ acyclic degree-2 order"
 > polynomial?**  This is the acyclicity-core — the genuine residual once
@@ -90,18 +87,21 @@ poses two decidable-looking sub-questions.  Tools:
 `scripts/degreewidth_decomposition.py`,
 `tests/test_degreewidth_decomposition.py`.
 
-**Next concrete steps.** (a) Settle Q1 for k = 2 — adapt the cubic
-sparse-recognition or the NP-hardness construction of arXiv:2212.06007 to
-the value 2.  (b) Mine the Δ\* = 2 acyclicity-core for what forces the
+**Next concrete step.** Mine the Δ\* = 2 acyclicity-core for what forces the
 cycle (the forced-cycle structure, its interaction with the degree-2
-budget) — this is where a poly acyclicity test or a hardness gadget would
-come from, and it is non-local by construction (the cycle is global).
+budget).  The post-Q1 non-forward formulation is recorded in
+`docs/q2_nonforward_attack.md`: Q2 is a graphic-matroid-independent path
+problem on the polynomial Q1 prefix DAG, equivalently a linear-forest
+transversal problem for all directed 3- and 4-cycles.
 
 ---
 
 ## D93 — tooling, exact census, and first Q1 probes
 
 ### Literature status of Q1 pinned (verified vs PDFs, 2026-05-30)
+
+**D103 update.**  This subsection is historical.  Q1 was later settled in P
+by the reachable-prefix diameter bound; see `docs/q1_polynomial_writeup.md`.
 
 `Δ*≤2` recognition is **class-sensitive** and **open for tournaments**:
   * **Oriented graphs:** `k`-Degreewidth is NP-complete for every `k≥1`

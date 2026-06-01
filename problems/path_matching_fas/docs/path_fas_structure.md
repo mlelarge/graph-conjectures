@@ -36,9 +36,14 @@ This is also equivalent to formal Path-FAS: any linear forest can be
 completed to a path in the complete underlying graph by adding arcs to
 the FAS, and deleting extra arcs preserves acyclicity.
 
-For tournaments, "$T \setminus F$ acyclic" is equivalent to "$F$ hits
-every cyclic 3-cycle of $T$" (a tournament is transitive iff it has no
-3-cycle).
+For tournaments, a complete orientation is acyclic iff it has no cyclic
+3-cycle.  After deleting $F$, however, $T \setminus F$ is no longer a
+tournament, so triangle hitting alone is not sufficient: a directed
+4-cycle can remain after every cyclic triangle has been hit.  The
+correct Q2-localization is sharper and conditional on the selected set:
+if $F$ is already a linear forest, then $T \setminus F$ is acyclic iff
+$F$ hits every directed 3-cycle and every directed 4-cycle of $T$
+(`docs/q2_nonforward_attack.md`).
 
 ## Necessary conditions and their tightness
 
