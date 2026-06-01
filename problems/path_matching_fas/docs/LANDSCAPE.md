@@ -42,8 +42,13 @@ finite check (verification, not proof); **REFUTED** = killed by a named witness;
   produced the 2^(n/4) sleeping-block blow-ups.
 - **Degreewidth corollaries** (`degreewidth_direction.md`, `q1_polynomial_writeup.md`):
   `Δ*(T) ≤ 1 ⇒ YES` (poly, cubic, arXiv:2212.06007); `Δ*=0 ⇒ YES` trivially;
-  and `Δ*(T)≤2` is now polynomial-time decidable by D103.  This settles the
-  degree gate, not the acyclicity core.
+  and `Δ*(T)≤2` is polynomial-time decidable. ⚠ **This (D103 / our Q1 chapter)
+  is NOT novel — it is subsumed by Keeney & Lokshtanov, "Degreewidth on
+  Semi-Complete Digraphs" (WG 2024, `Ref/DegreewidthPaper_240419_165002.pdf`),
+  whose Thm 2 computes degreewidth in `k^{O(k)}n+O(n²)` (FPT; `Δ*≤2` in
+  `O(n²)`).** It settles only the degree gate, not the acyclicity core
+  (Path-FAS), which their paper does not address (their FAS is standard
+  min-FAS).
 
 ### The decisive impossibility theorem
 - **Forward-DP lower bound (D70)** — THEOREM (`forward_dp_lower_bound.md` §3.4):

@@ -1,9 +1,20 @@
 # Q1: recognizing Δ*(T) ≤ 2 for tournaments
 
 **Q1.** Is "Δ*(T) ≤ 2" (degreewidth ≤ 2) decidable in polynomial time for
-tournaments?  OPEN in the literature: NP-hard for general oriented graphs
-(arXiv:2407.19270, Thm 2.3, all k≥1); for tournaments only `Δ*≤1` is settled
-(cubic, Davot et al.).  This memo records the forward-DP line of attack.
+tournaments?  This memo records the forward-DP line of attack.
+
+> **⚠ ALREADY SOLVED IN THE LITERATURE — this whole Q1 chapter is NOT novel
+> (2026-06-01).** We wrongly believed `Δ*≤2` was open for tournaments. It is
+> not: Keeney & Lokshtanov, "Degreewidth on Semi-Complete Digraphs" (WG 2024,
+> `Ref/DegreewidthPaper_240419_165002.pdf`) Theorem 2 decides `Δ*≤k` and
+> computes an optimal degreewidth ordering in `k^{O(k)} n + O(n²)` — i.e.
+> degreewidth is **FPT** (so `Δ*≤2` is `O(n²)`), strictly stronger than our
+> XP `n^{O(k)}` / `O(n⁹)`. Their restricted-ordering-graph DP (windows
+> `[i−cΔ, i+cΔ]`) IS our score-window / reachable-prefix DP; their Lemma 3 /
+> Corollary 1 is our two-sided window + forced/flexible split. (Earlier notes
+> mischaracterized this paper as "3-approx only, does not settle k=2".)
+> The genuinely-open problem — Path-FAS / linear-forest ordering (Aboulker
+> 4.4) — is NOT in their paper (their FAS is standard min-FAS).
 
 For consolidated writeups, see `docs/q1_quasipoly_writeup.md` (D94–D102,
 superseded) and `docs/q1_polynomial_writeup.md` (D103, current theorem).  The

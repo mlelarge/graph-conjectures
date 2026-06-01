@@ -64,10 +64,13 @@ YES and NO — exactly where acyclicity decides.)
 
 ## The two sharp open sub-questions
 
-> **(Q1) "Δ\*(T) ≤ 2" is polynomial-time decidable.**  D103 proves the
-> reachable-prefix diameter is at most 8, giving a polynomial recognizer.
-> See `docs/q1_polynomial_writeup.md`.  This gives a polynomial
-> NO-certificate for the degree-obstructed majority.
+> **(Q1) "Δ\*(T) ≤ 2" is polynomial-time decidable — but this is KNOWN, not
+> ours.**  ⚠ Keeney & Lokshtanov, "Degreewidth on Semi-Complete Digraphs"
+> (WG 2024, `Ref/DegreewidthPaper_240419_165002.pdf`) Thm 2 computes
+> degreewidth in `k^{O(k)} n + O(n²)` (FPT), so `Δ*≤2` is `O(n²)` — strictly
+> stronger than our D103 reachable-prefix recognizer (`O(n⁹)`), which
+> re-derives their restricted-ordering-graph DP for `k=2`. Our Q1 chapter is
+> NOT a novel contribution.
 
 > **(Q2) Among Δ\*(T) = 2 tournaments, is "∃ acyclic degree-2 order"
 > polynomial?**  This is the acyclicity-core — the genuine residual once

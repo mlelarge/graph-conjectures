@@ -1,5 +1,23 @@
 # Recognizing tournament degreewidth at most two in polynomial time
 
+> **⚠ PRIOR WORK — NOT NOVEL (added 2026-06-01).** The result below
+> (recognizing `Δ*(T) ≤ 2` for tournaments in polynomial time, and
+> `k`-degreewidth in `n^{O(k)}`) is **subsumed**, and strictly improved, by
+> **Keeney & Lokshtanov, "Degreewidth on Semi-Complete Digraphs" (WG 2024)**
+> (`Ref/DegreewidthPaper_240419_165002.pdf`). Their **Theorem 2** decides
+> `Δ*(T) ≤ k` and computes an optimal degreewidth ordering in
+> `k^{O(k)} n + O(n²)` — i.e. degreewidth is **FPT** (stronger than our XP),
+> and `Δ*≤2` is `O(n²)` (vs our `~O(n⁹)`). Their "restricted ordering graph"
+> with windows `[i−cΔ, i+cΔ]` IS the score-window / reachable-prefix DP used
+> here; their Lemma 3 / Corollary 1 is our two-sided window + forced/flexible
+> split. So this chapter re-derives a known, stronger result. (Earlier project
+> notes wrongly said this paper "does not settle tournament k=2" — it does.)
+> **What remains open and is NOT in their paper: Path-FAS / linear-forest
+> ordering (Aboulker Problem 4.4). Their FAS is standard minimum-FAS, not the
+> linear-forest-shaped Path-FAS. The acyclicity core (Q2) is untouched.**
+
+
+
 This note supersedes the quasi-polynomial writeup
 `docs/q1_quasipoly_writeup.md`.  The recursive `O(log n)` diameter proof is
 not needed: the outside-in-neighbour closure lemma gives an absolute exchange
