@@ -292,3 +292,46 @@ class TestQ2DecisionCorrectness(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+def _count_directed_3cycles(T):
+    import itertools
+    n=len(T); c=0
+    for a,b,d in itertools.combinations(range(n),3):
+        for x,y,z in ((a,b,d),(a,d,b)):
+            if T[x][y] and T[y][z] and T[z][x]: c+=1
+    return c
+
+
+class TestCycleCountCondition(unittest.TestCase):
+    def test_cycle_count_necessary_condition(self):
+        """Q2 §9 (PROVED poly NO-certificate): Path-FAS YES => #directed-3-cycles
+        <= (n-1)(n-2). Verified 0 violations exhaustive n<=6; and it is necessary
+        NOT sufficient (minimal-NO instances have few 3-cycles, below the bound)."""
+        import itertools
+        import json
+        import os
+
+        from nonsweep_path_fas import decide_linear_forest_fas_bruteforce as brute
+
+        def all_T(n):
+            pr = [(i, j) for i in range(n) for j in range(i + 1, n)]
+            for bits in itertools.product((0, 1), repeat=len(pr)):
+                T = [[0] * n for _ in range(n)]
+                for (i, j), b in zip(pr, bits):
+                    T[i][j] = 1 if b else 0
+                    T[j][i] = 0 if b else 1
+                yield T
+
+        for n in range(3, 7):
+            bound = (n - 1) * (n - 2)
+            for T in all_T(n):
+                if brute(T):
+                    self.assertLessEqual(_count_directed_3cycles(T), bound)
+        # necessary-not-sufficient: n=7 minimal-NOs are all below the bound yet NO
+        here = os.path.dirname(__file__)
+        path = os.path.join(here, "..", "data",
+                            "minimal_no_obstruction_catalogue_n7.json")
+        recs = json.load(open(path))["records"]
+        bound = (7 - 1) * (7 - 2)
+        self.assertTrue(all(_count_directed_3cycles(r["T"]) < bound for r in recs))

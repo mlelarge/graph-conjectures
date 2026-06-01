@@ -299,3 +299,44 @@ The pinned tests are in `tests/test_q2_acyclicity_core.py`:
 * `test_triangle_only_static_formulation_is_false`;
 * `test_degree2_fas_without_forest_topology_is_false`;
 * `test_linear_forest_fas_needs_only_directed_3_and_4_cycles`.
+
+## 9. Attempt at a polynomial algorithm — outcome
+
+I attempted a polynomial algorithm for the linear-forest 3/4-cycle transversal
+(equivalently Path-FAS ∈ P).  It did **not** succeed.  One proved byproduct
+and the reasons the natural routes fail:
+
+**Cycle-count necessary condition (PROVED, poly NO-certificate).**
+> If `T` is Path-FAS YES, then `T` has at most `(n−1)(n−2)` directed 3-cycles
+> (and `O(n³)` directed 4-cycles).
+
+*Proof.*  A witnessing `F` is a linear forest, so `|F| ≤ n−1`.  Each arc
+`(a,b) ∈ F` lies in exactly `|N⁺(b) ∩ N⁻(a)| ≤ n−2` directed 3-cycles.  Since
+`F` hits every directed 3-cycle, `#3-cycles ≤ Σ_{e∈F}(3-cycles through e)
+≤ (n−1)(n−2)`.  The 4-cycle bound is analogous (`≤ (n−1)·O(n²)`). ∎
+
+Verified: 0 violations over all tournaments `n≤6` (max #3-cycles over YES is
+well under the bound).  So "`#3-cycles > (n−1)(n−2)`" is a polynomial-time
+**NO** certificate.
+
+**But this does not decide the problem.**  It is *necessary, not sufficient*,
+and useless on the hard instances: every certified minimal-NO at `n=7,8` has
+**few** 3-cycles (ranges `[9,14]` and `[12,20]`, all far below the bounds
+`30`, `42`).  The acyclicity-core NOs are nearly transitive; the obstruction
+is the forest **topology** of the transversal, not an abundance of cycles.
+
+**Why the natural poly routes fail (recap).**
+- *LP relaxation:* not decisive.  The new formulation (3/4-cycle covering +
+  degree-≤2 + forest rank) has *fewer* covering constraints than the old full
+  cycle-cut LP, which was already fractional-feasible on NO instances; so the
+  relaxation is still fractional-feasible on NOs.
+- *Matroid intersection:* not applicable.  The cycle-hitting constraints are
+  covering lower bounds, not membership in a second matroid; and linear
+  forests are not a matroid (forest ∩ degree-≤2).
+- *Forward DP on the Q1 prefix DAG:* dead by D70 (`2^Ω(n)` to track the
+  back-arc forest component history through a shared prefix-set node).
+
+**Status.**  No polynomial algorithm found.  Path-FAS ∈ P remains open,
+pinned to: a linear-forest (graphic-matroid-independent) transversal of the
+directed 3- and 4-cycles, on the near-transitive acyclicity-core where cycle
+counts are small and the only obstruction is selected-forest topology.
