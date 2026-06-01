@@ -382,3 +382,34 @@ nor a hardness reduction. The dichotomy stays open and is, once more, pinned to
 the same fanout wall. This is an honest negative-but-clarifying outcome; a
 genuinely new idea (not another expressiveness or matroid-coverage lens) is
 needed to break it.
+
+## 11. Prior-art check vs Aboulker–Aubian–Lopes and its citations (2026-06-01)
+
+Checked whether the 3/4-cycle linear-forest transversal reduction (§4, Lemma
+4.1) appears in the source paper or its references.
+
+- **AAL (arXiv:2402.10782v3, "Finding forest-orderings of tournaments is
+  NP-complete"):** Problem 4.4 (verbatim) — *"What is the complexity of the
+  C-FAS Problem when C is the set of all paths? when C is the set of graphs
+  with maximum degree 1?"* — is posed **OPEN**, with **no** reduction to short
+  cycles. Our 3/4-cycle characterization does **not** appear. (AAL's
+  conclusion discusses only the *clique-number* C_k-FAS — NP-c for k≥4, poly
+  k≤2, open k=3 — a different short-structure, not directed-cycle hitting.)
+- **Citations:** the FAS-in-tournaments refs [10] Bessy et al. (FAS kernels),
+  [13] Chen–Hu–Zang (min-max on tournaments), [12] Charbit–Thomassé–Yeo,
+  [30] Raman–Saurabh, [3] Abu-Khzam (d-hitting-set) all concern *minimum*-FAS
+  / general FAS / hitting-set — **not** the linear-forest-shaped Path-FAS
+  short-cycle characterization. None obviously contains Lemma 4.1.
+
+**Honest caveats.** (i) The chord argument (shortest surviving cycle forces
+all chords into F; the degree-2 cap limits length to ≤4) is a **standard FAS
+technique** — the method is folklore even if the Path-FAS-specific statement
+is not in these refs. (ii) Only AAL was read in full; [13] Chen–Hu–Zang and
+[10] Bessy et al. were checked by title/abstract only and are the most likely
+hiding places for a short-cycle characterization — spot-check them before
+claiming Lemma 4.1 as novel.
+
+**Net.** The *problem* (Path-FAS = Problem 4.4) is genuinely open per AAL. The
+3/4-cycle *reduction* is not in AAL and not obviously in its cited FAS papers,
+but it is an elementary observation via a standard technique, so any novelty
+claim should be modest and contingent on checking [10]/[13].
