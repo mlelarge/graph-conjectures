@@ -1,5 +1,17 @@
 # Lemmas - Matching-FAS for tournaments is polynomial
 
+> **⚠ PRIOR ART (2026-06-01): this result is NOT novel.** Matching-FAS
+> (∃ FAS whose underlying graph is a matching) is *exactly* `Δ*(T) ≤ 1` =
+> **sparse-tournament recognition**: a matching FAS ⟺ an order with back-arc
+> graph of max degree ≤1 ⟺ degreewidth ≤1 (a matching is automatically
+> acyclic). Verified: matching-FAS ⟺ `Δ*≤1` on all 33 866 tournaments n≤6.
+> Sparse / degreewidth-≤1 recognition is cubic (Davot, Isenmann, Roy &
+> Thiebaut, arXiv:2212.06007). So the C=max-degree-1 half of AAL Problem 4.4
+> is answered by that result; the O(n³) 2-SAT/cyclic-module proof below
+> re-derives it. (Same pattern as Q1 = degreewidth ≤2 = Keeney–Lokshtanov.)
+> Correct, but not new. Genuinely open: Path-FAS = Δ*≤2 ∧ acyclic.
+
+
 ## Setup
 
 Let $T$ be a tournament on vertex set $V$, $|V| = n$, with arc set $A(T)$.

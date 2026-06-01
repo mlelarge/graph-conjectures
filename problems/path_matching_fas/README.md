@@ -20,10 +20,25 @@ asks for the complexity in two natural subclasses:
 
 ## Status
 
-**Matching-FAS half of Problem 4.4: internally proved polynomial; prior-art
-check still needed before claiming novelty.**
+**Matching-FAS half of Problem 4.4: in P — but this is PRIOR ART, not novel
+(prior-art check, 2026-06-01).** Matching-FAS (a FAS whose underlying graph is
+a matching = the C = max-degree-1 case of AAL Problem 4.4) is *exactly*
+`degreewidth(T) ≤ 1`: "∃ FAS that is a matching" ⟺ "∃ order with back-arc
+graph of max degree ≤1" ⟺ `Δ*(T) ≤ 1` ⟺ **sparse tournament** (a matching is
+automatically acyclic, so no extra condition). Verified: matching-FAS ⟺
+`Δ*≤1` on all 33 866 tournaments n≤6 (0 disagreements). Sparse-tournament /
+degreewidth-≤1 recognition is solved in **cubic time** by Davot, Isenmann, Roy
+& Thiebaut, *"Degreewidth: a New Parameter for Solving Problems on
+Tournaments"* (arXiv:2212.06007). So the matching half of AAL Problem 4.4 is
+answered by the degreewidth-≤1 result, and our `O(n³)` 2-SAT / cyclic-3-cycle
+proof below **re-derives a known result** (same pattern as the Q1
+degreewidth-≤2 work, subsumed by Keeney–Lokshtanov). The decider is correct
+(0 disagreements vs brute force, n≤6) — it is just not new. The genuinely-open
+half of Problem 4.4 is **paths/linear forests** (Path-FAS = `Δ*≤2 ∧ acyclic`),
+which is *not* pure degreewidth and remains open.
 
-[`docs/lemmas.md`](docs/lemmas.md) proves:
+[`docs/lemmas.md`](docs/lemmas.md) proves (now known to equal sparse
+recognition):
 
 > **Theorem.** The matching-FAS decision problem for tournaments is in
 > $\mathsf{P}$; specifically, it reduces to 2-SAT after picking one arc
@@ -49,11 +64,10 @@ have $\le 2$ no-shortcut arcs each, so the residual exists/matching
 problem encodes as 2-SAT.
 
 The cyclic-module objects themselves are standard tournament modules.
-This folder claims only a self-contained internal proof of the polynomial
-decision algorithm. Before presenting it as a new result, the specific
-2-SAT reduction should be checked against the tournament modular
-decomposition and feedback-arc-set literature, including the sources
-cited by Aboulker-Aubian-Lopes.
+**Prior-art check resolved (2026-06-01): this is not a new result.** As noted
+above, matching-FAS = `Δ*≤1` = sparse-tournament recognition (Davot et al.,
+cubic). The 2-SAT/module argument here is a self-contained (correct)
+re-derivation; it should NOT be presented as novel.
 
 The algorithm is implemented in [`scripts/poly_mfas.py`](scripts/poly_mfas.py).
 It is cross-checked against brute force on:
