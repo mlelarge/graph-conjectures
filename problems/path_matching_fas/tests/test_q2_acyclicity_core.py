@@ -335,3 +335,24 @@ class TestCycleCountCondition(unittest.TestCase):
         recs = json.load(open(path))["records"]
         bound = (7 - 1) * (7 - 2)
         self.assertTrue(all(_count_directed_3cycles(r["T"]) < bound for r in recs))
+
+
+class TestExpressiveness(unittest.TestCase):
+    def test_4set_cyclic_triangle_sparsity(self):
+        """Q2 §10 (PROVED): every 4-subset of a tournament spans <=2 cyclic
+        triangles (exhaustive n<=5)."""
+        import itertools
+        def all_T(n):
+            pr=[(i,j) for i in range(n) for j in range(i+1,n)]
+            for bits in itertools.product((0,1),repeat=len(pr)):
+                T=[[0]*n for _ in range(n)]
+                for (i,j),b in zip(pr,bits):
+                    T[i][j]=1 if b else 0; T[j][i]=0 if b else 1
+                yield T
+        for n in range(4,6):
+            for T in all_T(n):
+                for S in itertools.combinations(range(n),4):
+                    ct=sum(1 for tri in itertools.combinations(S,3)
+                           for x,y,z in (tri,(tri[0],tri[2],tri[1]))
+                           if T[x][y] and T[y][z] and T[z][x])
+                    self.assertLessEqual(ct,2)

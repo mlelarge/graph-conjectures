@@ -346,3 +346,39 @@ is the forest **topology** of the transversal, not an abundance of cycles.
 pinned to: a linear-forest (graphic-matroid-independent) transversal of the
 directed 3- and 4-cycles, on the near-transitive acyclicity-core where cycle
 counts are small and the only obstruction is selected-forest topology.
+
+## 10. Expressiveness-dichotomy probe (started): restricted, but not decisive
+
+To decide P vs NP-hard for the 3/4-cycle linear-forest transversal, the key
+question is how expressive a tournament's directed-3/4-cycle hypergraph is.
+First findings (`docs/q2_literature_scope...` §7 angle 2):
+
+**PROVED structural restrictions.**
+- *4-sparsity:* every 4-subset of a tournament spans **≤ 2 cyclic triangles**
+  (a 4-tournament has 0, 1, or 2 cyclic triples — never 3 or 4). Verified
+  exhaustively n≤5 (max = 2). So the cyclic-triangle hypergraph has bounded
+  local density (no 4 vertices carry ≥3 hyperedges).
+- *Bounded fanout:* an arc `a→b` lies in exactly `n−2` cyclic triples (one per
+  `c` with `b→c→a`). Combined with the linear-forest degree-2 cap, the "useful
+  fanout" of a selected arc is small — this is the **same degree-2/fanout
+  obstruction** that blocked every hardness reduction (D72–D90), now seen in
+  the 3/4-cycle language.
+
+**What this does and does not settle.**
+- It does **not** decide the dichotomy. Sparsity does not preclude hardness
+  (bounded-occurrence / planar SAT are sparse yet NP-hard), and **vertex-
+  disjoint cyclic-triple gadgets are realizable** (transitive blow-up of
+  3-cycles), so independent variable gadgets exist. The only thing blocking a
+  reduction is, again, *fanout* — exactly the barrier the project already
+  localized to the (open) capacity-form Lemma C.
+- The "realizable-hypergraph fraction" (68.8% at m=4, 20.3% at m=5) is **not**
+  a meaningful signal: any class described by a `C(m,2)`-bit object is
+  exponentially sparse among all `2^{C(m,3)}` 3-uniform hypergraphs.
+
+**Net.** The expressiveness lens re-derives the known restriction (bounded
+fanout / degree-2) rather than a new one. It confirms *why* generic
+hitting-set NP-hardness does not transfer, but it neither yields a P algorithm
+nor a hardness reduction. The dichotomy stays open and is, once more, pinned to
+the same fanout wall. This is an honest negative-but-clarifying outcome; a
+genuinely new idea (not another expressiveness or matroid-coverage lens) is
+needed to break it.
