@@ -289,6 +289,12 @@ the directed side to polynomially many local constraints, but the selected
 forest topology is still a global graphic-matroid independence condition
 coupled to covering lower bounds.
 
+The next literature pass is scoped in
+`docs/q2_literature_scope_independent_transversal.md`.  The key warning for
+that pass is that Q2 is an independent **hitting** problem with shared
+representatives, not a standard rainbow/independent-transversal problem with
+distinct representatives.
+
 ## 8. Tests
 
 The pinned tests are in `tests/test_q2_acyclicity_core.py`:
