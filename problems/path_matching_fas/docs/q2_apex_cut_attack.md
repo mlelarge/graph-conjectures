@@ -217,10 +217,16 @@ The apex-cut target is sharper:
 
 There are three plausible ways this could become a proof:
 
-1. **Arc-consistency completeness on NO.**  Prove that if the AC closure is
-   nonempty and the induced forced graph is cycle-free, then a valid witness
-   can be constructed.  The catalogue evidence is consistent with this for
-   minimal NOs but not yet a theorem.
+1. ~~**Arc-consistency completeness on NO.**~~ **REFUTED (2026-06-01).**
+   Define the mandatory-forced graph `M` after AC = edges contributed by
+   *every* surviving candidate of some vertex (`M ⊆ F` for every AC-consistent
+   solution). The implication "AC nonempty ∧ forced graph cycle-free ⟹ YES" is
+   FALSE: many certified NOs survive AC with `M` acyclic. n=7: **all 16**
+   AC-survivors have `M = ∅` (nothing forced) yet are NO; n=8: 317/386
+   survivors have `M` acyclic; n=9 (sample 400): 118/171. So AC propagation +
+   forced-acyclicity carries no NO information — the combinatorial *search*
+   (choice structure), not local consistency, detects NO. The proof must
+   therefore come from #2 or #3 below, not from AC-completeness.
 2. **Bounded residual structure.**  Prove that after AC, the residual
    variable-interaction graph has bounded treewidth/pathwidth or decomposes
    into paths/cycles.  Then the remaining CSP is polynomial by a standard

@@ -406,3 +406,58 @@ class TestExpressiveness(unittest.TestCase):
                            for x,y,z in (tri,(tri[0],tri[2],tri[1]))
                            if T[x][y] and T[y][z] and T[z][x])
                     self.assertLessEqual(ct,2)
+
+
+class TestApexACCompleteness(unittest.TestCase):
+    def test_ac_completeness_refuted(self):
+        """Apex §7 target #1 (AC-completeness) is REFUTED: a certified NO can
+        survive arc-consistency with an acyclic (indeed empty) mandatory-forced
+        graph M = edges in every surviving candidate of some vertex. So
+        AC-nonempty + forced-acyclic does NOT imply YES."""
+        import json
+        import os
+        import sys
+        sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "scripts"))
+        from q2_apex_cut_probe import candidate_domains, arc_consistency, edge
+
+        def mandatory_M(T):
+            dom, ac = arc_consistency(candidate_domains(T))
+            if not ac["consistent"]:
+                return None
+            n = len(T)
+            M = set()
+            for v in range(n):
+                if not dom[v]:
+                    continue
+                sets = [set(edge(v, u) for u in c.P) | set(c.forced) for c in dom[v]]
+                M |= set.intersection(*sets) if sets else set()
+            return M
+
+        def has_cycle(n, edges):
+            adj = {i: set() for i in range(n)}
+            for a, b in edges:
+                adj[a].add(b); adj[b].add(a)
+            seen = set()
+            for s in range(n):
+                if s in seen:
+                    continue
+                st = [(s, -1)]; seen.add(s)
+                while st:
+                    x, par = st.pop()
+                    for y in adj[x]:
+                        if y == par:
+                            continue
+                        if y in seen:
+                            return True
+                        seen.add(y); st.append((y, x))
+            return False
+
+        here = os.path.dirname(__file__)
+        recs = json.load(open(os.path.join(
+            here, "..", "data", "minimal_no_obstruction_catalogue_n7.json")))["records"]
+        refuters = 0
+        for r in recs:
+            M = mandatory_M(r["T"])  # None means AC killed it (hypothesis fails trivially)
+            if M is not None and not has_cycle(7, M):
+                refuters += 1  # certified NO, AC nonempty, forced graph acyclic
+        self.assertGreater(refuters, 0)  # at least one refutes AC-completeness
