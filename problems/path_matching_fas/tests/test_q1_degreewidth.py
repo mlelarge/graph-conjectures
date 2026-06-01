@@ -364,6 +364,63 @@ class TestQ1(unittest.TestCase):
             worst = max(worst, diameter(Tt))
             self.assertLessEqual(worst, 12)  # bounded; observed ≤8
 
+    def test_cluster_excision_lemma(self):
+        """D100 (PROVED): if every vertex of B has ≥3 in-neighbours within B
+        (e.g. T[B] regular, |B|≥7), then S∩B = ∅ for every reachable prefix.
+        Verified via embedded regular blocks: 0 block-vertices ever included."""
+        from q1_reachable_count import masks
+
+        def rotational(g, jumps):
+            T = [[0] * g for _ in range(g)]
+            for i in range(g):
+                for d in jumps:
+                    T[i][(i + d) % g] = 1
+            return T
+
+        def embed_regular(pad_lo, G, pad_hi):
+            n = pad_lo + G + pad_hi
+            T = [[0] * n for _ in range(n)]
+            reg = rotational(G, list(range(1, G // 2 + 1)))
+            for a in range(n):
+                for b in range(n):
+                    if a == b:
+                        continue
+                    la = 0 if a < pad_lo else (1 if a < pad_lo + G else 2)
+                    lb = 0 if b < pad_lo else (1 if b < pad_lo + G else 2)
+                    if la != lb:
+                        T[a][b] = 1 if la > lb else 0
+                    elif la == 1:
+                        T[a][b] = reg[a - pad_lo][b - pad_lo]
+                    else:
+                        T[a][b] = 1 if a > b else 0
+            return T, list(range(pad_lo, pad_lo + G))
+
+        for G in (7, 9, 11):
+            for pad_lo, pad_hi in [(4, 4), (6, 3), (3, 8)]:
+                T, blk = embed_regular(pad_lo, G, pad_hi)
+                n = len(T)
+                om, dm = masks(T)
+                # every block vertex has internal in-degree (G-1)/2 ≥ 3
+                for v in blk:
+                    internal_indeg = sum(1 for u in blk if u != v and T[u][v])
+                    self.assertGreaterEqual(internal_indeg, 3)
+                blkmask = sum(1 << v for v in blk)
+                frontier = {0}
+                for p in range(n):
+                    nxt = set()
+                    for S in frontier:
+                        for u in range(n):
+                            if (S >> u) & 1:
+                                continue
+                            c = bin(om[u] & S).count("1")
+                            if 2 * c + dm[u] - p <= 2:
+                                nxt.add(S | (1 << u))
+                    for S in nxt:
+                        self.assertEqual(S & blkmask, 0)  # no block vertex ever in S
+                    frontier = nxt
+                    if not nxt:
+                        break
+
     def test_budget_localization_lemma(self):
         """D99 (PROVED): for a reachable size-p prefix S and any s<p,
         #{w∉S : d⁻(w)≤s}·(p−s) ≤ 2p. Hence #{omitted, d⁻≤p/2} ≤ 4."""

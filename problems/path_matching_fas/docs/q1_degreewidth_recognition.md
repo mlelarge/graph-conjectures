@@ -381,3 +381,47 @@ A proof appears to require a genuinely arc-level argument in the just-below-
 band window; the counting/budget toolkit is exhausted there.
 
 Tools: `scripts/q1_reachable_count.py`, `tests/test_q1_degreewidth.py`.
+
+### 6.10 D100 — cluster-excision lemma (PROVED): a near-regular cluster cannot be split
+
+The arc-level lemma behind the "clustered ⟹ dies" tension, now proved.
+
+> **Cluster-excision lemma.** Let `B ⊆ V(T)` with every vertex of `B` having
+> `≥ 3` in-neighbours *within* `B` (internal in-degree `≥3`; e.g. `T[B]`
+> regular or near-regular with `|B| ≥ 7`). Then `S ∩ B = ∅` for **every**
+> reachable prefix `S` of `T`.
+
+*Proof.* In `T[B]`, a size-1 reachable prefix is a single vertex `v` placed
+first, with within-`B` back-degree `= |N⁺_B(v) ∩ ∅| + |N⁻_B(v) ∩ (B∖v)| =`
+internal in-degree of `v`. If every internal in-degree is `≥3`, no vertex
+admits a size-1 reachable prefix, so `μ(T[B]) = 0` (the only reachable prefix
+of `T[B]` is `∅`). By the recursion lemma (D97), `S∩B` is a reachable prefix
+of `T[B]`; hence `S∩B = ∅`. ∎
+
+Verified: `μ(regular circulant) = 0` for all `g≥7` (internal in-degree
+`(g−1)/2 ≥ 3`), while `g=3,5` give `μ=g` (Δ\*≤2). An embedded regular block
+of size 7 or 9 — at in-degrees `6,7,8,11,12`, including just below the band —
+has **0** block-vertices in any reachable prefix (across all of them).
+
+**What this settles.** A regular (or min-internal-in-degree-`≥3`) cluster of
+size `≥7` placed anywhere — in particular *just below `p`* — is entirely
+excluded from every reachable prefix: it is **not split**, it is uniformly
+omitted. So such a cluster contributes **0** to `D△D'` (every reachable
+prefix omits all of it). This also makes the "clustered ⟹ dies" tension
+rigorous: if such a cluster is large (`> 2p/3` vertices, each beating `≥3` of
+any size-`p` prefix), the (N3) budget `γ≤2p` is violated, so `T` has **no**
+reachable size-`p` prefix at all.
+
+**Honest scope — does NOT close `|D△D'|=O(1)`.** The lemma forces *dense*
+clusters (min internal in-degree `≥3`) to be uniformly omitted. But a cluster
+just below `p` that is *internally sparse* (some vertex with `≤2` internal
+in-neighbours, so `μ(T[B]) ≥ 1`) can have a nonempty `S∩B`, and *which*
+vertices are included may vary across reachable prefixes. Bounding that
+variation across the (possibly many) internally-sparse near-band levels is
+the part the excision lemma does not reach — the level-multiplication issue
+of D97 persists for sparse clusters. So Q1 ∈ P remains **open**; the
+excision lemma proves the requested "regular cluster can't be split" and
+explains the mechanism, but the full `|D△D'|=O(1)` needs control of the
+internally-sparse near-band levels too.
+
+Tools: `scripts/q1_reachable_count.py`, `tests/test_q1_degreewidth.py`.
