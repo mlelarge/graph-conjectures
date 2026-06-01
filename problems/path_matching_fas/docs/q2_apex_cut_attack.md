@@ -227,14 +227,27 @@ There are three plausible ways this could become a proof:
    forced-acyclicity carries no NO information — the combinatorial *search*
    (choice structure), not local consistency, detects NO. The proof must
    therefore come from #2 or #3 below, not from AC-completeness.
-2. **Bounded residual structure.**  Prove that after AC, the residual
-   variable-interaction graph has bounded treewidth/pathwidth or decomposes
-   into paths/cycles.  Then the remaining CSP is polynomial by a standard
-   bounded-width DP that is not an order-prefix DP.
-3. **2-SAT collapse.**  Show that every domain `D_v` has a canonical small
-   basis after AC, so the remaining choices can be encoded by binary
-   protector flips.  This would be the true degree-2 analogue of the
-   matching-FAS 2-SAT proof.
+2. ~~**Bounded residual structure.**~~ **UNDERMINED (2026-06-01).** Measured
+   the post-AC variable-interaction graph (edge i–j iff some candidate pair is
+   incompatible) on the certified NOs: it reaches **density 1.00 (complete)**
+   with treewidth up to `n−1` (n=8: tw=7 on 8 undecided vars; n=9: density 1
+   too). A complete constraint graph has treewidth growing with `n` — the same
+   `tw(J)≈n` near-complete entanglement that killed the J-width DP route. No
+   bounded-width DP.
+3. ~~**2-SAT collapse.**~~ **UNDERMINED (2026-06-01).** Post-AC domains are
+   large, not binary (max `|D_v|` = 29 at n=8, 22 at n=9), and the residual
+   constraints — degree-≤2 (a cardinality constraint, not a 2-clause),
+   directed-4-cycle (4-clauses), and global forest acyclicity — are not 2-CNF.
+   The project already showed full Path-FAS is not 2-SAT (`nonsweep_path_fas`);
+   the apex reformulation does not change that.
+
+> **Net (2026-06-01): all three apex proof targets #1/#2/#3 are refuted or
+> undermined.** The apex CSP is a correct, sharper *formulation* with strong
+> arc-consistency compression on the NO side, but its residual is globally
+> entangled — a near-complete interaction graph and large domains, the same
+> wall (`tw(J)≈n`, "acyclicity is global") that blocked every prior route.
+> The apex route relocates the difficulty into clean tournament-specific
+> language but does **not** break it. No polynomial algorithm via this route.
 
 The next attack should inspect the worst residual instances:
 

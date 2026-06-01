@@ -461,3 +461,41 @@ class TestApexACCompleteness(unittest.TestCase):
             if M is not None and not has_cycle(7, M):
                 refuters += 1  # certified NO, AC nonempty, forced graph acyclic
         self.assertGreater(refuters, 0)  # at least one refutes AC-completeness
+
+
+class TestApexResidualStructure(unittest.TestCase):
+    def test_residual_constraint_graph_is_dense(self):
+        """Apex §7 targets #2/#3 undermined: the post-AC variable-interaction
+        graph can be COMPLETE (density 1, treewidth n-1) on certified NOs, and
+        post-AC domains are large (not binary). So no bounded-width DP / 2-SAT
+        collapse. Checks at least one n=8 NO whose residual graph is complete
+        on >=4 undecided vars."""
+        import json
+        import os
+        import sys
+        sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "scripts"))
+        from q2_apex_cut_probe import candidate_domains, arc_consistency, compatible
+
+        here = os.path.dirname(__file__)
+        recs = json.load(open(os.path.join(
+            here, "..", "data", "minimal_no_obstruction_catalogue_n8.json")))["records"]
+        found_complete = False
+        max_dom = 0
+        for r in recs:
+            T = r["T"]
+            dom, ac = arc_consistency(candidate_domains(T))
+            if not ac["consistent"]:
+                continue
+            n = len(T)
+            max_dom = max(max_dom, max(len(d) for d in dom))
+            und = [v for v in range(n) if len(dom[v]) > 1]
+            if len(und) < 4:
+                continue
+            E = sum(1 for i in und for j in und if i < j
+                    and any(not compatible(ci, cj) for ci in dom[i] for cj in dom[j]))
+            poss = len(und) * (len(und) - 1) // 2
+            if poss and E == poss:  # complete constraint graph
+                found_complete = True
+                break
+        self.assertTrue(found_complete)   # #2 (bounded width) undermined
+        self.assertGreater(max_dom, 2)    # #3 (binary domains) undermined
