@@ -364,6 +364,77 @@ class TestQ1(unittest.TestCase):
             worst = max(worst, diameter(Tt))
             self.assertLessEqual(worst, 12)  # bounded; observed ≤8
 
+    def test_window_Uk_bound(self):
+        """D101 (PROVED): for a reachable size-p prefix S and any k≥0,
+        |S ∩ {d⁻ ∈ [p−k, p+1]}| ≤ k+2 (generalizes W3, k=3)."""
+        from q1_reachable_count import masks
+
+        rng = random.Random(5)
+        for n in range(4, 10):
+            for _ in range(150):
+                T = rand_tournament(n, rng)
+                om, dm = masks(T)
+                frontier = {0}
+                for p in range(n + 1):
+                    for S in frontier:
+                        for k in range(0, p + 2):
+                            cnt = sum(1 for v in range(n)
+                                      if (S >> v) & 1 and p - k <= dm[v] <= p + 1)
+                            self.assertLessEqual(cnt, k + 2)
+                    if p == n:
+                        break
+                    nxt = set()
+                    for S in frontier:
+                        for u in range(n):
+                            if (S >> u) & 1:
+                                continue
+                            c = bin(om[u] & S).count("1")
+                            if 2 * c + dm[u] - p <= 2:
+                                nxt.add(S | (1 << u))
+                    frontier = nxt
+                    if not frontier:
+                        break
+
+    def test_sqrt_p_diameter_bound(self):
+        """D101 (PROVED): diameter ≤ 6√p+4 (⟹ #reachable ≤ n^{O(√n)},
+        subexponential). Verified loosely (true diameter is O(1))."""
+        import math
+
+        from q1_reachable_count import masks
+
+        def diameter(T):
+            n = len(T)
+            om, dm = masks(T)
+            frontier = {0}
+            bysize = {0: [0]}
+            for p in range(n):
+                nxt = set()
+                for S in frontier:
+                    for u in range(n):
+                        if (S >> u) & 1:
+                            continue
+                        c = bin(om[u] & S).count("1")
+                        if 2 * c + dm[u] - p <= 2:
+                            nxt.add(S | (1 << u))
+                if nxt:
+                    bysize[p + 1] = list(nxt)
+                frontier = nxt
+                if not nxt:
+                    break
+            for p, lst in bysize.items():
+                if p == 0:
+                    continue
+                for i in range(len(lst)):
+                    for j in range(i + 1, len(lst)):
+                        d = bin(lst[i] ^ lst[j]).count("1")
+                        self.assertLessEqual(d, 6 * math.sqrt(p) + 4)
+
+        rng = random.Random(3)
+        for n in range(4, 16):
+            for _ in range(150):
+                diameter(rand_tournament(n, rng))
+            diameter([[1 if i > j else 0 for j in range(n)] for i in range(n)])
+
     def test_cluster_excision_lemma(self):
         """D100 (PROVED): if every vertex of B has ≥3 in-neighbours within B
         (e.g. T[B] regular, |B|≥7), then S∩B = ∅ for every reachable prefix.

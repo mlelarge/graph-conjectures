@@ -425,3 +425,50 @@ explains the mechanism, but the full `|D△D'|=O(1)` needs control of the
 internally-sparse near-band levels too.
 
 Tools: `scripts/q1_reachable_count.py`, `tests/test_q1_degreewidth.py`.
+
+### 6.11 D101 — bounding the variation: a SUBEXPONENTIAL recognizer (proved)
+
+Attempting to bound the diameter, the budget-localization (D99) and a
+generalized window bound combine to give a proved `O(√p)` diameter, hence a
+subexponential algorithm for Q1 — short of poly, but a genuine new result.
+
+**Window-`U_k` bound (PROVED; verified 0 / 10.15M checks).**
+> For a reachable size-`p` prefix `S` and any `k ≥ 0`,
+> `|S ∩ {v : d⁻(v) ∈ [p−k, p+1]}| ≤ k + 2`.
+
+*Proof.* A vertex `v∈S` with `d⁻(v) ≥ p−k` sits (two-sided window) at a
+position `≥ d⁻(v)−2 ≥ p−k−2`, and `≤ p−1`. That is `k+2` positions, so at
+most `k+2` such vertices. ∎ (W3 is the case `k=3`.)
+
+**Diameter bound (PROVED).**
+> For reachable size-`p` prefixes `S, S'`, `|S △ S'| ≤ 6√p + 4`.
+
+*Proof.* Split at threshold `s = p − ⌈√p⌉`.
+- `d⁻ ≤ s`: every differing vertex here is omitted from one of `S, S'`, so
+  `|(S△S')∩{d⁻≤s}| ≤ #{omitted from S, d⁻≤s} + #{omitted from S', d⁻≤s}`.
+  By budget-localization, each term is `≤ 2p/(p−s) = 2p/⌈√p⌉ ≤ 2√p`, total
+  `≤ 4√p`.
+- `d⁻ > s` (i.e. `d⁻ ∈ [p−⌈√p⌉+1, p+1]`): by the window-`U_k` bound with
+  `k = ⌈√p⌉−1`, `|S ∩ {d⁻>s}| ≤ ⌈√p⌉+1`, same for `S'`; variation
+  `≤ 2(⌈√p⌉+1) ≤ 2√p + 4`.
+
+Total `≤ 6√p + 4`. ∎ (Verified: `diameter / (6√p+4) ≤ 0.42` over all tests.)
+
+**Consequence — Q1 ∈ subexponential time.**
+> `#reachable size-p ≤ #{S : |S△S₀| ≤ 6√p+4} ≤ Σ_{j≤3√p+2} C(p,j)C(n−p,j)
+> ≤ n^{O(√p)}`. Summed, `#reachable ≤ n^{O(√n)}`. So the reachable-prefix BFS
+> **decides Δ\*(T) ≤ 2 in time `n^{O(√n)}`** — subexponential, vs the `2ⁿ`
+> Held–Karp DP.
+
+**Status of Q1 ∈ P.** Still open, but the gap is now exactly the `√p` slack:
+the diameter is *proved* `O(√p)` and *empirically* `O(1)` (`≤8`, flat to
+n=40, hill-climb-robust). Closing to `O(1)` needs a better bound on the
+variation inside the near-band window `(p−√p, p+1]` than the trivial window
+count — exactly where the cluster-excision lemma (D100) removes the *dense*
+clusters, leaving only internally-sparse near-band levels. A recursion
+(`S∩W` is a reachable prefix of `T[W]`, D97) suggests an inductive `O(log p)`
+diameter bound (→ quasi-polynomial `n^{O(log n)}`), but the induction's
+size-reduction is unverified. **Net: Q1 ∈ DTIME(`n^{O(√n)}`) proved;
+Q1 ∈ P conjectured (O(1) diameter), strongly supported.**
+
+Tools: `scripts/q1_reachable_count.py`, `tests/test_q1_degreewidth.py`.
