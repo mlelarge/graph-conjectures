@@ -217,37 +217,43 @@ The apex-cut target is sharper:
 
 There are three plausible ways this could become a proof:
 
-1. ~~**Arc-consistency completeness on NO.**~~ **REFUTED (2026-06-01).**
-   Define the mandatory-forced graph `M` after AC = edges contributed by
-   *every* surviving candidate of some vertex (`M ⊆ F` for every AC-consistent
-   solution). The implication "AC nonempty ∧ forced graph cycle-free ⟹ YES" is
-   FALSE: many certified NOs survive AC with `M` acyclic. n=7: **all 16**
-   AC-survivors have `M = ∅` (nothing forced) yet are NO; n=8: 317/386
-   survivors have `M` acyclic; n=9 (sample 400): 118/171. So AC propagation +
-   forced-acyclicity carries no NO information — the combinatorial *search*
-   (choice structure), not local consistency, detects NO. The proof must
-   therefore come from #2 or #3 below, not from AC-completeness.
-2. ~~**Bounded residual structure.**~~ **UNDERMINED (2026-06-01).** Measured
-   the post-AC variable-interaction graph (edge i–j iff some candidate pair is
-   incompatible) on the certified NOs: it reaches **density 1.00 (complete)**
-   with treewidth up to `n−1` (n=8: tw=7 on 8 undecided vars; n=9: density 1
-   too). A complete constraint graph has treewidth growing with `n` — the same
-   `tw(J)≈n` near-complete entanglement that killed the J-width DP route. No
-   bounded-width DP.
-3. ~~**2-SAT collapse.**~~ **UNDERMINED (2026-06-01).** Post-AC domains are
-   large, not binary (max `|D_v|` = 29 at n=8, 22 at n=9), and the residual
-   constraints — degree-≤2 (a cardinality constraint, not a 2-clause),
-   directed-4-cycle (4-clauses), and global forest acyclicity — are not 2-CNF.
-   The project already showed full Path-FAS is not 2-SAT (`nonsweep_path_fas`);
-   the apex reformulation does not change that.
+The three routes below are now closed *as proof routes* (2026-06-01). This is
+a statement about the listed techniques, **not** a claim that no polynomial
+algorithm can come from the apex formulation.
 
-> **Net (2026-06-01): all three apex proof targets #1/#2/#3 are refuted or
-> undermined.** The apex CSP is a correct, sharper *formulation* with strong
-> arc-consistency compression on the NO side, but its residual is globally
-> entangled — a near-complete interaction graph and large domains, the same
-> wall (`tw(J)≈n`, "acyclicity is global") that blocked every prior route.
-> The apex route relocates the difficulty into clean tournament-specific
-> language but does **not** break it. No polynomial algorithm via this route.
+1. **Arc-consistency completeness on NO — the AC-based proof route fails.**
+   *Plain* AC-completeness is false: many certified NOs survive AC (n=7: 16/20;
+   n=8: 386/572; n=9 sample: 132/300). For the *stronger* form — "AC nonempty
+   ∧ induced forced graph cycle-free ⟹ YES" — take the mandatory-forced graph
+   `M` (edges in *every* surviving candidate of some vertex, so `M ⊆ F` in
+   every AC-consistent solution). Named witness refuting it: **`8#1079`**, a
+   certified NO that survives AC with `M` a 3-edge **acyclic** graph (non-vacuous;
+   n=7 survivors even have `M = ∅`). So any AC-based decision needs additional
+   *global* reasoning — which is exactly the forest-topology obstruction.
+2. **Bounded residual structure — the bounded-width CSP proof route fails.**
+   The post-AC variable-interaction (primal) graph (edge i–j iff some candidate
+   pair is incompatible) reaches **density 1.00 (complete)**, with primal
+   treewidth up to `n−1` (n=8: tw=7 on 8 undecided vars). A complete primal
+   graph has treewidth growing with `n`, so no bounded-primal-treewidth DP
+   survives — the same `tw(J)≈n` entanglement that closed the J-width DP route.
+   (Formal caveat: this kills bounded-*primal*-width DP, not every conceivable
+   algebraic exploitation of the constraints.)
+3. **2-SAT collapse — the bijunctive proof route fails.** The decisive reason
+   is not domain size but that the residual constraints are **not binary
+   bijunctive**: degree-≤2 (a cardinality / ternary obstruction), directed
+   4-cycle (4-ary clauses), and global forest acyclicity, over a near-complete
+   residual graph. Post-AC domains are also large/non-binary (max `|D_v|` = 29
+   at n=8, 22 at n=9), so no obvious Boolean re-encoding. Unless a hidden
+   special structure of the apex domains is found, the 2-SAT analogue is
+   finished (full Path-FAS was already shown non-2-SAT in `nonsweep_path_fas`).
+
+> **Net (2026-06-01).** The apex route is **closed as a bounded-width / AC /
+> 2-SAT polynomial route**, but it **remains a clean exact reformulation of
+> triangle-hitting and a useful diagnostic lens** — *not* a refutation that
+> any polynomial algorithm exists. Its residual exhibits the same global
+> entanglement (near-complete interaction graph; "selected-forest
+> acyclicity/connectivity is global") that blocked every prior route. The
+> complexity of Path-FAS remains **open**.
 
 The next attack should inspect the worst residual instances:
 
@@ -259,13 +265,30 @@ and mine their residual CSPs for one of the three structures above.
 
 ## 8. Honest status
 
-This angle does not prove `Path-FAS ∈ P`.  It does produce a new exact
-triangle-closure formulation and a very strong empirical compression of the
-minimal-NO core.
+This angle does not prove `Path-FAS ∈ P`, and it does not prove it is NP-hard.
+It produces a new exact triangle-closure formulation and a very strong
+empirical compression of the minimal-NO core. It should be positioned as **a
+clean exact reformulation of triangle-hitting plus a useful diagnostic lens,
+not a plausible standalone route to P.**
 
 The old generic formulation was a matroid-constrained hitting problem.  The
 new formulation is tournament-specific: every vertex gets at most two
-protectors, and all unprotected cyclic-cross edges are forced.  That is the
-first post-Q1 attack that looks structurally different from the dead
-matroid/LP/forward-DP routes.
+protectors, and all unprotected cyclic-cross edges are forced.  It is the
+first post-Q1 attack structurally different from the matroid/LP/forward-DP
+routes — but its residual hits the **same wall**:
+
+| route | obstruction |
+|---|---|
+| forward DP (D70) | component history explodes (`2^Ω(n)`) |
+| Q1-prefix DAG | graphic-matroid labels retain connectivity |
+| LP / cuts (D91) | fractional-feasible NO instances |
+| matroid routes | covering + forest topology is not matroid intersection |
+| apex CSP | near-complete residual interaction graph |
+
+Different languages, one obstruction: **selected-forest connectivity/acyclicity
+is global.** The honest reading is **not** "evidence Path-FAS is NP-hard"; it
+is "the standard polynomial toolkits do not see the structure, and the
+complexity remains open." This pattern is now strong enough to stop
+exploratory algorithm probes that are merely new *encodings* rather than new
+*theorems*.
 
