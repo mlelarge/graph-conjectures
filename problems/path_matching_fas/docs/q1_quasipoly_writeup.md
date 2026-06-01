@@ -1,6 +1,12 @@
 # Recognizing tournament degreewidth at most two in quasi-polynomial time
 
-This note gives a self-contained proof skeleton for the current Q1 result:
+**Superseded by `docs/q1_polynomial_writeup.md`.**  This note remains a
+self-contained proof of the older quasi-polynomial bound, but the constant
+diameter target flagged in Section 7 is now closed by a direct bipartite
+exchange argument using outside in-neighbour closure.  The current best result
+is polynomial time.
+
+This note gives a self-contained proof skeleton for the D102 Q1 result:
 
 > **Main theorem.** Given an `n`-vertex tournament `T`, whether
 > `Δ*(T) ≤ 2` can be decided in deterministic time `n^{O(log n)}`.
@@ -370,7 +376,10 @@ By Lemma 2.2 it accepts exactly the tournaments with `Δ*(T) ≤ 2`. ∎
 
 ## 7. Polynomiality and the constant-diameter target
 
-The same counting argument shows the precise remaining target for this route.
+The same counting argument showed the precise remaining target for this route.
+That target is now resolved in `docs/q1_polynomial_writeup.md`; the text below
+is retained as the historical reduction from constant diameter to polynomial
+time.
 
 **Proposition 7.1.**  If there is an absolute constant `c` such that
 `D(p) ≤ c` for every `p`, then tournament `Δ*≤2` recognition is polynomial
@@ -396,13 +405,13 @@ The polynomial-time version of this same proof strategy would require:
 D(p) = O(1)         ⇒     Q1 ∈ P.
 ```
 
-Computational evidence in the project strongly suggests the stronger bound:
+Computational evidence in the project strongly suggested the stronger bound:
 the observed same-size reachable-prefix diameter is at most `8` in the tested
-families and does not grow with `n`.  The recursion above does not prove this.
-Its additive `+12` per scale is real: the low-part contribution `8` and the
-window-size truncation cost `4` do not telescope.  A proof of polynomial time
-therefore needs a non-recursive absolute exchange argument, not merely a
-sharpening of the halving induction.
+families and does not grow with `n`.  The recursion above does not prove this:
+its additive `+12` per scale is real, and the low-part contribution `8` and
+the window-size truncation cost `4` do not telescope.  The missing
+non-recursive absolute exchange argument is exactly the one now recorded in
+`docs/q1_polynomial_writeup.md`.
 
 ## 8. Relation to known literature
 

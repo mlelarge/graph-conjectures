@@ -5,8 +5,9 @@ tournaments?  OPEN in the literature: NP-hard for general oriented graphs
 (arXiv:2407.19270, Thm 2.3, all k≥1); for tournaments only `Δ*≤1` is settled
 (cubic, Davot et al.).  This memo records the forward-DP line of attack.
 
-For the consolidated, paper-skeleton version of D94–D102, see
-`docs/q1_quasipoly_writeup.md`.  The present file is the research log.
+For consolidated writeups, see `docs/q1_quasipoly_writeup.md` (D94–D102,
+superseded) and `docs/q1_polynomial_writeup.md` (D103, current theorem).  The
+present file is the research log.
 
 ## 1. The clean forward reformulation (PROVED)
 
@@ -541,8 +542,48 @@ introduced by **Davot, Isenmann, Roy & Thiebaut** (arXiv:2212.06007): sparse
 tournaments = degreewidth 1, recognized in cubic time; computing tournament
 degreewidth is NP-hard. **Aboulker et al.** (arXiv:2407.19270, DMTCS 2026)
 prove `k`-Degreewidth NP-complete for every `k≥1` on **oriented graphs**.
-Tournament `Δ\*≤2` recognition is open — this is what the quasi-polynomial
-result above addresses. (Earlier drafts misattributed the first paper to
-"Bessy et al."; corrected.)
+D102 addressed the tournament `Δ\*≤2` case with a quasi-polynomial algorithm;
+D103 below supersedes it with a polynomial-time algorithm. (Earlier drafts
+misattributed the first paper to "Bessy et al."; corrected.)
 
 Tools: `scripts/q1_reachable_count.py`, `tests/test_q1_degreewidth.py`.
+
+### 6.13 D103 — the missing exchange argument: Q1 ∈ P
+
+The constant-diameter target from D98/D102 is now closed.  The proof is a
+one-line use of (N3) on both prefixes; the recursive window machinery was
+overkill.
+
+**Theorem (absolute diameter).** Let `S,S'` be reachable prefixes of the same
+size `p` in a tournament. Then `|S △ S'| ≤ 8`.
+
+*Proof.* Put `A = S∖S'`, `B = S'∖S`; since `|S|=|S'|`, let
+`|A|=|B|=m`.  For every `a∈A`, all vertices of `B` lie outside `S`, so (N3)
+for the reachable prefix `S` gives at most two arcs from `B` into `a`.
+Hence `e(B,A) ≤ 2m`.  For every `b∈B`, all vertices of `A` lie outside `S'`,
+so (N3) for `S'` gives at most two arcs from `A` into `b`; hence
+`e(A,B) ≤ 2m`.  But between `A` and `B` the tournament has exactly one arc
+per pair, so
+
+`m² = e(A,B)+e(B,A) ≤ 4m`.
+
+Thus either `m=0` or `m≤4`, and `|S△S'|=2m≤8`. ∎
+
+**Polynomial recognizer.** Fix any reachable `S₀` of size `p`.  Every
+reachable size-`p` prefix differs from `S₀` by at most four removals and four
+insertions, so
+
+`#reachable size-p ≤ Σ_{j=0}^4 C(p,j)C(n−p,j) = O(n⁸)`.
+
+Summing over `p` gives `O(n⁹)` reachable prefixes; trying all one-vertex
+extensions gives a straightforward polynomial-time recognizer (e.g. `O(n¹⁰)`
+extension checks, before bit-operation costs).  Therefore **tournament
+degreewidth-≤2 recognition is in P**.
+
+**General fixed-`k` form.** The same argument gives same-size reachable-prefix
+diameter `≤4k` for the `Δ*≤k` reachable-prefix DP, hence tournament
+`k`-Degreewidth is decidable in `n^{O(k)}` time.  For Q1, `k=2`, this is the
+desired polynomial theorem.
+
+Tools: `docs/q1_polynomial_writeup.md`, `tests/test_q1_degreewidth.py`
+(`test_constant_diameter_exchange_bound`).

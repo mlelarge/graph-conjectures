@@ -364,6 +364,78 @@ class TestQ1(unittest.TestCase):
             worst = max(worst, diameter(Tt))
             self.assertLessEqual(worst, 12)  # bounded; observed ≤8
 
+    def test_constant_diameter_exchange_bound(self):
+        """D103 (PROVED): same-size reachable prefixes have |S△S'|≤8.
+
+        For A=S∖S', B=S'∖S, N3 on S gives e(B,A)≤2|A| and N3 on S'
+        gives e(A,B)≤2|B|.  Since |A|=|B|=m and A×B is a complete
+        bipartite tournament, m²≤4m, hence m≤4."""
+        from q1_reachable_count import masks
+
+        def reachable_by_size(T):
+            n = len(T)
+            om, dm = masks(T)
+            frontier = {0}
+            bysize = {0: [0]}
+            for p in range(n):
+                nxt = set()
+                for S in frontier:
+                    for u in range(n):
+                        if (S >> u) & 1:
+                            continue
+                        c = bin(om[u] & S).count("1")
+                        if 2 * c + dm[u] - p <= 2:
+                            nxt.add(S | (1 << u))
+                if nxt:
+                    bysize[p + 1] = list(nxt)
+                frontier = nxt
+                if not nxt:
+                    break
+            return bysize
+
+        def check(T):
+            n = len(T)
+            full = (1 << n) - 1
+            for lst in reachable_by_size(T).values():
+                for i in range(len(lst)):
+                    for j in range(i + 1, len(lst)):
+                        S, Sp = lst[i], lst[j]
+                        A = S & (full ^ Sp)
+                        B = Sp & (full ^ S)
+                        m = A.bit_count()
+                        self.assertEqual(m, B.bit_count())
+                        e_ab = e_ba = 0
+                        aa = A
+                        while aa:
+                            abit = aa & -aa
+                            a = abit.bit_length() - 1
+                            aa ^= abit
+                            bb = B
+                            while bb:
+                                bbit = bb & -bb
+                                b = bbit.bit_length() - 1
+                                bb ^= bbit
+                                if T[a][b]:
+                                    e_ab += 1
+                                else:
+                                    e_ba += 1
+                        self.assertEqual(e_ab + e_ba, m * m)
+                        self.assertLessEqual(e_ab, 2 * m)
+                        self.assertLessEqual(e_ba, 2 * m)
+                        self.assertLessEqual(m, 4)
+                        self.assertLessEqual((S ^ Sp).bit_count(), 8)
+
+        for n in range(2, 7):
+            for T in all_tournaments(n):
+                check(T)
+
+        rng = random.Random(103)
+        for n in range(7, 14):
+            for _ in range(250):
+                check(rand_tournament(n, rng))
+            # transitive maximizer skeleton
+            check([[1 if i > j else 0 for j in range(n)] for i in range(n)])
+
     def test_quasipoly_recursion_claims(self):
         """D102: the load-bearing claims of the O(log p) diameter recursion
         (⟹ Q1 ∈ quasi-poly n^{O(log n)}), for same-size reachable pairs S,S':
