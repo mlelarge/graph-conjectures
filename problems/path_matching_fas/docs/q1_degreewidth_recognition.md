@@ -472,3 +472,52 @@ size-reduction is unverified. **Net: Q1 ∈ DTIME(`n^{O(√n)}`) proved;
 Q1 ∈ P conjectured (O(1) diameter), strongly supported.**
 
 Tools: `scripts/q1_reachable_count.py`, `tests/test_q1_degreewidth.py`.
+
+### 6.12 D102 — the induction closes: Q1 ∈ QUASI-POLYNOMIAL time n^{O(log n)}
+
+The recursion `S∩W` = reachable prefix of `T[W]` (D97) makes the diameter
+bound inductive, improving D101's `O(√p)` to `O(log p)`.
+
+**Theorem (logarithmic diameter).** Let `D(p)` = the maximum of `|S △ S'|`
+over same-size reachable prefixes of size `p`, over **all** tournaments. Then
+`D(p) = O(log p)`.
+
+*Proof.* Split at `s = ⌊p/2⌋`; let `W = {v : d⁻(v) ∈ [s+1, p+1]}`. For
+same-size reachable `S, S'` (every reachable prefix excludes `{d⁻ ≥ p+2}` by
+the window, so `S, S' ⊆ {d⁻ ≤ p/2} ∪ W`):
+1. **Low part `≤ 8`.** Each vertex of `(S△S')∩{d⁻≤s}` is omitted from one of
+   `S, S'`; by budget-localization (D99), `#{omitted, d⁻≤s} ≤ 2p/(p−s) ≤ 4`,
+   so `|(S△S')∩{d⁻≤s}| ≤ 8`.
+2. **Window part.** `(S△S')∩W = (S∩W) △ (S'∩W)`, and by the recursion lemma
+   (D97) `S∩W`, `S'∩W` are reachable prefixes of `T[W]`. By window-`U_k`
+   (D101), `|S∩W|, |S'∩W| ≤ ⌈p/2⌉+1`, and by (1)'s budget bound their sizes
+   differ by `≤ 4`. Truncating the larger to the smaller's size (drop its
+   last `≤4` placed vertices — still a reachable prefix of `T[W]`) costs `≤4`
+   and leaves two **same-size** reachable prefixes of `T[W]`, so
+   `|(S∩W)△(S'∩W)| ≤ 4 + D(⌈p/2⌉+1)`.
+
+Hence `D(p) ≤ 8 + 4 + D(⌈p/2⌉+1) = 12 + D(⌈p/2⌉+1)`. Since `⌈p/2⌉+1 < p` for
+`p ≥ 5` (base case `D(p) ≤ p ≤ 4` for `p ≤ 4`), unrolling gives
+`D(p) ≤ 12⌈log₂ p⌉ + 4 = O(log p)`. ∎
+
+(Verified 0 violations over millions of reachable pairs: low part `≤8`,
+size-difference `≤4`, `|S∩W| ≤ ⌈p/2⌉+1`; and `diameter ≤ 12⌈log₂p⌉+12`
+holds with ratio `≤0.22`.)
+
+**Theorem (quasi-polynomial recognizer).**
+> `#reachable size-p ≤ #{S : |S△S₀| ≤ D(p)} ≤ Σ_{j ≤ 6⌈log₂p⌉+2}
+> C(p,j)·C(n−p,j) ≤ n^{O(log n)}`. Summed over `p`, `#reachable ≤ n^{O(log n)}`.
+> So the reachable-prefix BFS **decides Δ\*(T) ≤ 2 in quasi-polynomial time
+> `n^{O(log n)}`.**
+
+This supersedes D101 (`n^{O(√n)}`): **degreewidth-≤2 recognition for
+tournaments is in quasi-P.**
+
+**Toward P.** Q1 ∈ P still requires `O(1)` diameter (empirically `≤8`, flat
+to n=40). The recursion adds a `+12` per level over `O(log p)` levels; closing
+to `O(1)` needs either (a) the per-level cost to telescope (it does not,
+naively — the low-part-8 and size-diff-4 are genuine each level), or (b) a
+non-recursive argument that the diameter is absolutely bounded. The gap is now
+`O(log n)` vs `O(1)` — quasi-P proved, P conjectured on strong evidence.
+
+Tools: `scripts/q1_reachable_count.py`, `tests/test_q1_degreewidth.py`.

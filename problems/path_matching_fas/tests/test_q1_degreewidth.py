@@ -364,6 +364,56 @@ class TestQ1(unittest.TestCase):
             worst = max(worst, diameter(Tt))
             self.assertLessEqual(worst, 12)  # bounded; observed ≤8
 
+    def test_quasipoly_recursion_claims(self):
+        """D102: the load-bearing claims of the O(log p) diameter recursion
+        (⟹ Q1 ∈ quasi-poly n^{O(log n)}), for same-size reachable pairs S,S':
+        with s=⌊p/2⌋, W={d⁻∈[s+1,p+1]}:
+          (A) ||S∩W| − |S'∩W|| ≤ 4;
+          (B) |(S△S')∩{d⁻≤s}| ≤ 8;
+          (C) |S∩W| ≤ ⌈p/2⌉+1."""
+        import math
+
+        from q1_reachable_count import masks
+
+        rng = random.Random(5)
+        for n in range(3, 9):
+            for _ in range(80):
+                T = rand_tournament(n, rng)
+                om, dm = masks(T)
+                frontier = {0}
+                bysize = {0: [0]}
+                for p in range(n):
+                    nxt = set()
+                    for S in frontier:
+                        for u in range(n):
+                            if (S >> u) & 1:
+                                continue
+                            c = bin(om[u] & S).count("1")
+                            if 2 * c + dm[u] - p <= 2:
+                                nxt.add(S | (1 << u))
+                    if nxt:
+                        bysize[p + 1] = list(nxt)
+                    frontier = nxt
+                    if not nxt:
+                        break
+                for p, lst in bysize.items():
+                    if p < 2:
+                        continue
+                    s = p // 2
+                    W = [v for v in range(n) if s + 1 <= dm[v] <= p + 1]
+                    sizes = []
+                    for S in lst:
+                        wcount = sum(1 for v in W if (S >> v) & 1)
+                        self.assertLessEqual(wcount, math.ceil(p / 2) + 1)  # (C)
+                        sizes.append(wcount)
+                    for i in range(len(lst)):
+                        for j in range(i + 1, len(lst)):
+                            self.assertLessEqual(abs(sizes[i] - sizes[j]), 4)  # (A)
+                            x = lst[i] ^ lst[j]
+                            low = sum(1 for v in range(n)
+                                      if (x >> v) & 1 and dm[v] <= s)
+                            self.assertLessEqual(low, 8)  # (B)
+
     def test_window_Uk_bound(self):
         """D101 (PROVED): for a reachable size-p prefix S and any k≥0,
         |S ∩ {d⁻ ∈ [p−k, p+1]}| ≤ k+2 (generalizes W3, k=3)."""
