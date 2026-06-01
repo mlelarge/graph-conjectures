@@ -11,7 +11,7 @@ that connects the problem to existing literature.
 > **back-degree** (number of back-arcs incident to a vertex).
 
 This is exactly the parameter **degreewidth** of
-[Bessy et al., "Degreewidth: a New Parameter for Solving Problems on
+[Davot, Isenmann, Roy & Thiebaut, "Degreewidth: a New Parameter for Solving Problems on
 Tournaments", arXiv:2212.06007](https://arxiv.org/abs/2212.06007)
 (degreewidth 0 ⟺ acyclic; degreewidth 1 = *sparse* tournaments).
 
@@ -108,7 +108,7 @@ come from, and it is non-local by construction (the cycle is global).
     ("Computing the degreewidth of a digraph is hard", arXiv:2407.19270 v3,
     Thm 2.3 — on 1-subdivisions of multidigraphs; the `k=1` case answers a
     Keeney–Lokshtanov question).
-  * **Tournaments:** `Δ*≤1` cubic (Bessy); computing `Δ*` NP-hard; but
+  * **Tournaments:** `Δ*≤1` cubic (Davot et al.); computing `Δ*` NP-hard; but
     **`Δ*≤2` is explicitly OPEN** (also open: FPT-compute-`Δ*` of a
     tournament, FAS-tournament FPT-by-`Δ*`).  The `k=1` poly/NP-hard split
     between tournaments and oriented graphs shows the tournament structure
@@ -176,7 +176,7 @@ catalogues):
 
 **Takeaway for Q1.** The obvious poly certificates fail; the live target is
 a flow/matching formulation that also controls `b(v)` (in-neighbours
-before), or a structural theorem extending Bessy's `Δ*≤1` characterization
+before), or a structural theorem extending Davot et al.'s `Δ*≤1` characterization
 to value 2.  The window-prefix count is **not** poly-bounded on near-regular
 tournaments (the band `[p−2,p+1]` can contain all `n` vertices when
 `d⁻≈(n−1)/2`), so a naive window-DP does not settle Q1 — consistent with the

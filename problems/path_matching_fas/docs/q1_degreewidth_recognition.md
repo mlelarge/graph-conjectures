@@ -3,7 +3,7 @@
 **Q1.** Is "Δ*(T) ≤ 2" (degreewidth ≤ 2) decidable in polynomial time for
 tournaments?  OPEN in the literature: NP-hard for general oriented graphs
 (arXiv:2407.19270, Thm 2.3, all k≥1); for tournaments only `Δ*≤1` is settled
-(cubic, Bessy et al.).  This memo records the forward-DP line of attack.
+(cubic, Davot et al.).  This memo records the forward-DP line of attack.
 
 ## 1. The clean forward reformulation (PROVED)
 
@@ -479,26 +479,36 @@ The recursion `S∩W` = reachable prefix of `T[W]` (D97) makes the diameter
 bound inductive, improving D101's `O(√p)` to `O(log p)`.
 
 **Theorem (logarithmic diameter).** Let `D(p)` = the maximum of `|S △ S'|`
-over same-size reachable prefixes of size `p`, over **all** tournaments. Then
-`D(p) = O(log p)`.
+over same-size reachable prefixes of size `p`, over **all** tournaments, and
+let `F(p) = max_{q ≤ p} D(q)` be its monotone envelope. Then `F(p) = O(log p)`.
+
+*(Two bookkeeping points, both handled below. (i) The recursion compares two
+prefixes of `T[W]` of a COMMON size `q ≤ ⌈p/2⌉+1` that is not necessarily
+exactly `⌈p/2⌉+1`, so we bound by the monotone envelope `F`, not `D` at a
+fixed argument. (ii) Under ordinary symmetric difference the base value is not
+`p`: e.g. in transitive `T_4`, two size-2 reachable prefixes can have
+`|S△S'| = 4`. We use the trivial bound `D(q) ≤ 2q`, so `F(4) ≤ 8`; this only
+changes the additive constant.)*
 
 *Proof.* Split at `s = ⌊p/2⌋`; let `W = {v : d⁻(v) ∈ [s+1, p+1]}`. For
 same-size reachable `S, S'` (every reachable prefix excludes `{d⁻ ≥ p+2}` by
-the window, so `S, S' ⊆ {d⁻ ≤ p/2} ∪ W`):
+the window, so `S, S' ⊆ {d⁻ ≤ ⌊p/2⌋} ∪ W`):
 1. **Low part `≤ 8`.** Each vertex of `(S△S')∩{d⁻≤s}` is omitted from one of
    `S, S'`; by budget-localization (D99), `#{omitted, d⁻≤s} ≤ 2p/(p−s) ≤ 4`,
    so `|(S△S')∩{d⁻≤s}| ≤ 8`.
 2. **Window part.** `(S△S')∩W = (S∩W) △ (S'∩W)`, and by the recursion lemma
    (D97) `S∩W`, `S'∩W` are reachable prefixes of `T[W]`. By window-`U_k`
    (D101), `|S∩W|, |S'∩W| ≤ ⌈p/2⌉+1`, and by (1)'s budget bound their sizes
-   differ by `≤ 4`. Truncating the larger to the smaller's size (drop its
-   last `≤4` placed vertices — still a reachable prefix of `T[W]`) costs `≤4`
-   and leaves two **same-size** reachable prefixes of `T[W]`, so
-   `|(S∩W)△(S'∩W)| ≤ 4 + D(⌈p/2⌉+1)`.
+   differ by `≤ 4`. Let `q = min(|S∩W|, |S'∩W|) ≤ ⌈p/2⌉+1`. Truncating the
+   larger to size `q` (drop its last `≤4` placed vertices — a suffix of a
+   witnessing order, so still a reachable prefix of `T[W]`) costs `≤4` and
+   leaves two **same-size-`q`** reachable prefixes of `T[W]`, so
+   `|(S∩W)△(S'∩W)| ≤ 4 + D(q) ≤ 4 + F(⌈p/2⌉+1)` (monotone envelope, fix (i)).
 
-Hence `D(p) ≤ 8 + 4 + D(⌈p/2⌉+1) = 12 + D(⌈p/2⌉+1)`. Since `⌈p/2⌉+1 < p` for
-`p ≥ 5` (base case `D(p) ≤ p ≤ 4` for `p ≤ 4`), unrolling gives
-`D(p) ≤ 12⌈log₂ p⌉ + 4 = O(log p)`. ∎
+Hence `D(p) ≤ 8 + 4 + F(⌈p/2⌉+1) = 12 + F(⌈p/2⌉+1)`, and since the RHS is
+non-decreasing in `p`, `F(p) ≤ 12 + F(⌈p/2⌉+1)`. For `p ≥ 5`, `⌈p/2⌉+1 < p`,
+so with base `F(4) ≤ 8` (fix (ii)) unrolling gives
+`F(p) ≤ 12⌈log₂ p⌉ + 8 = O(log p)`, hence `D(p) ≤ F(p) = O(log p)`. ∎
 
 (Verified 0 violations over millions of reachable pairs: low part `≤8`,
 size-difference `≤4`, `|S∩W| ≤ ⌈p/2⌉+1`; and `diameter ≤ 12⌈log₂p⌉+12`
@@ -511,13 +521,25 @@ holds with ratio `≤0.22`.)
 > `n^{O(log n)}`.**
 
 This supersedes D101 (`n^{O(√n)}`): **degreewidth-≤2 recognition for
-tournaments is in quasi-P.**
+tournaments is in quasi-polynomial time.**
 
-**Toward P.** Q1 ∈ P still requires `O(1)` diameter (empirically `≤8`, flat
-to n=40). The recursion adds a `+12` per level over `O(log p)` levels; closing
-to `O(1)` needs either (a) the per-level cost to telescope (it does not,
-naively — the low-part-8 and size-diff-4 are genuine each level), or (b) a
-non-recursive argument that the diameter is absolutely bounded. The gap is now
-`O(log n)` vs `O(1)` — quasi-P proved, P conjectured on strong evidence.
+**Positioning (precise).** State it as: *Δ\*≤2 recognition for tournaments is
+quasi-polynomial; polynomiality remains open and is equivalent, for this
+route, to proving that the same-size reachable-prefix diameter is bounded by
+an absolute constant.* (Do not write "almost P".) The gap is exactly `O(log n)`
+(proved) vs `O(1)` (the equivalent open statement; empirically the diameter is
+`≤8`, flat to n=40, hill-climb-robust). The recursion adds a genuine `+12` per
+level over `O(log p)` levels — the low-part-`8` and size-difference-`4` do not
+telescope — so closing to `P` needs a **non-recursive** proof of constant
+diameter, not a refinement of this recursion.
+
+**Literature anchoring (verified vs sources, 2026-06-01).** Degreewidth was
+introduced by **Davot, Isenmann, Roy & Thiebaut** (arXiv:2212.06007): sparse
+tournaments = degreewidth 1, recognized in cubic time; computing tournament
+degreewidth is NP-hard. **Aboulker et al.** (arXiv:2407.19270, DMTCS 2026)
+prove `k`-Degreewidth NP-complete for every `k≥1` on **oriented graphs**.
+Tournament `Δ\*≤2` recognition is open — this is what the quasi-polynomial
+result above addresses. (Earlier drafts misattributed the first paper to
+"Bessy et al."; corrected.)
 
 Tools: `scripts/q1_reachable_count.py`, `tests/test_q1_degreewidth.py`.

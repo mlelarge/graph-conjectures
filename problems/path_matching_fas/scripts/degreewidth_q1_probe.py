@@ -14,7 +14,7 @@ Corollaries (necessary conditions for Δ*≤2):
 
 Candidates tested:
   (A) in-degree-sorted order attains max-back-degree ≤ 2
-      (Bessy et al.'s 3-approx order; test if it is *exact* for k=2).
+      (Davot et al.'s 3-approx order; test if it is *exact* for k=2).
   (B) Hall-feasibility of the radius-2 score windows ⟺ Δ*≤2
       (Hall is necessary by the score-window lemma; is it sufficient?).
 """

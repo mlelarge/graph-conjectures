@@ -24,7 +24,7 @@ This is O(2^n · n) time, O(2^n) space (using a rolling/bitmask layout),
 versus the O(n!·n^2) permutation scan in degreewidth_decomposition.py.
 Practical to ~n=22 exact; the boolean ≤k reachability variant a bit more.
 
-NB the *general* NP-hardness of computing degreewidth (Bessy et al.,
+NB the *general* NP-hardness of computing degreewidth (Davot, Isenmann, Roy & Thiebaut,
 arXiv:2212.06007) is not contradicted: this is exponential, just a much
 better exponential, and is a data-gathering tool — not a poly algorithm
 for Q1.
