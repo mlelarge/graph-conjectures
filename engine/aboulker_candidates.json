@@ -1,0 +1,254 @@
+[
+ {
+  "id": 2,
+  "arxiv": "2502.05289",
+  "record": "Informal Question on Complexity Gap Between Induced Disjoint Paths Variants",
+  "lean": "prove",
+  "tier": 2,
+  "status": "open",
+  "statement": "Is there a hereditary graph class in which Induced `k`-Disjoint Paths is NP-complete but Induced Disjoint `S`\u2013`T` Paths with `\\"
+ },
+ {
+  "id": 3,
+  "arxiv": "2502.05289",
+  "record": "Conjecture 1.5",
+  "lean": "prove",
+  "tier": 2,
+  "status": "open",
+  "statement": "For any subcubic graph `H`, `H`-\\textsc{ISC} is in `\\mathsf{P}` if and only if `H` is planar."
+ },
+ {
+  "id": 4,
+  "arxiv": "2202.01006",
+  "record": "Open problem on construction size",
+  "lean": "prove",
+  "tier": 2,
+  "status": "open",
+  "statement": "It would be interesting to know if the size of the `(k+1)`-dichromatic example in `\\mathcal{C}_3` can be reduced below the current bound of \u2026"
+ },
+ {
+  "id": 5,
+  "arxiv": "2202.13306",
+  "record": "Question 5.4",
+  "lean": "prove",
+  "tier": 2,
+  "status": "open",
+  "statement": "Let `H` and `F` be digraphs such that `\\Delta(1,1,H)` is a hero in `Forb_{ind}(F)` and `H` is a hero in `Forb_{ind}(K_{1}+F)`. Then `\\Delta(\u2026"
+ },
+ {
+  "id": 7,
+  "arxiv": "2310.04265",
+  "record": "Question 3.10",
+  "lean": "balanced",
+  "tier": 2,
+  "status": "open",
+  "statement": "Is it true that if a class of tournaments `\\mathcal{T}` is polynomially `\\operatorname{\\overrightarrow{\\chi}}`-bounded, then so is `\\mathcal\u2026"
+ },
+ {
+  "id": 8,
+  "arxiv": "2102.01034",
+  "record": "Problem 4.4",
+  "lean": "prove",
+  "tier": 2,
+  "status": "open",
+  "statement": "What is the complexity of `\\Sigma`-`k`-\\textsc{Dicolourability} for `k \\in \\{4, 5\\}` and `\\Sigma` different from the sphere?"
+ },
+ {
+  "id": 9,
+  "arxiv": "1505.01616",
+  "record": "Question 1.7",
+  "lean": "prove",
+  "tier": 2,
+  "status": "open",
+  "statement": "For fixed `k \\geq 4`, is there a polynomial-time algorithm that, given a `k`-connected graph `G` with maximal local connectivity `k`, finds \u2026"
+ },
+ {
+  "id": 10,
+  "arxiv": "2001.03794",
+  "record": "FPT on $H_{t,t}$-free graphs for Grundy Coloring and b-Chromatic Core",
+  "lean": "prove",
+  "tier": 3,
+  "status": "open",
+  "statement": "Are \\textsc{Grundy Coloring} and \\textsc{b-Chromatic Core} fixed-parameter tractable on `H_{t,t}`-free graphs when parameterized by `k`?"
+ },
+ {
+  "id": 19,
+  "arxiv": "1802.05582",
+  "record": "Open problem on sublinear round complexity",
+  "lean": "prove",
+  "tier": 3,
+  "status": "open",
+  "statement": "It remains interesting to obtain a bound on the round complexity that is sublinear in `n` regardless of the value of `d`."
+ },
+ {
+  "id": 20,
+  "arxiv": "1802.05582",
+  "record": "Question on randomized list-coloring round complexity",
+  "lean": "prove",
+  "tier": 3,
+  "status": "open",
+  "statement": "Is it possible to avoid the multiplicative factor polynomial in `\\Delta` in a randomized version of the distributed `\\Delta`-list-coloring a\u2026"
+ },
+ {
+  "id": 21,
+  "arxiv": "2310.04265",
+  "record": "Conjecture 3.12",
+  "lean": "disprove",
+  "tier": 3,
+  "status": "open",
+  "statement": "Let `k\\geq 1`. The class of tournaments with twin-width at most `k` is `\\operatorname{\\overrightarrow{\\chi}}`-bounded."
+ },
+ {
+  "id": 22,
+  "arxiv": "2310.04265",
+  "record": "Conjecture 6.1",
+  "lean": "prove",
+  "tier": 3,
+  "status": "open",
+  "statement": "If a class of digraphs `\\mathcal{C}` is `\\operatorname{\\overrightarrow{\\chi}}`-bounded, then so is its closure under substitution."
+ },
+ {
+  "id": 23,
+  "arxiv": "2009.13319",
+  "record": "Research direction: minimal heroic tournament families",
+  "lean": "prove",
+  "tier": 3,
+  "status": "open",
+  "statement": "Characterize all finite and minimal families `\\mathcal{H} = \\{H_1, H_2, \\ldots, H_k\\}` of tournaments such that `\\{\\overrightarrow{K_2}, \\ov\u2026"
+ },
+ {
+  "id": 24,
+  "arxiv": "2310.04265",
+  "record": "Question 5.9",
+  "lean": "balanced",
+  "tier": 3,
+  "status": "partial",
+  "statement": "Is there a function `\\ell` such that, for every tournament `T`, if `\\operatorname{\\overrightarrow{\\omega}}(T)\\geq k`, then `T` has a subtour\u2026"
+ },
+ {
+  "id": 26,
+  "arxiv": "1606.06011",
+  "record": "Conjecture 2.2",
+  "lean": "disprove",
+  "tier": 3,
+  "status": "open",
+  "statement": "There is a finite set of graphs `F_0` such that every connected graph `G \\notin F_0` either has a pendant edge or satisfies `\\ell(G) + \\math\u2026"
+ },
+ {
+  "id": 27,
+  "arxiv": "1606.06011",
+  "record": "Open question on counter-examples to \u2113(G)+br(G)\u2265\\|G\\|",
+  "lean": "prove",
+  "tier": 3,
+  "status": "open",
+  "statement": "It remains unknown whether all counter-examples to `\\ell(G) + \\mathrm{br}(G) \\geq \\"
+ },
+ {
+  "id": 28,
+  "arxiv": "2310.04265",
+  "record": "Conjecture 4.11",
+  "lean": "prove",
+  "tier": 3,
+  "status": "open",
+  "statement": "Let `(M,\\prec)` be an ordered graph with maximum degree `1`. Then the class of `(M,\\prec)`-free ordered graphs is `\\chi`-bounded."
+ },
+ {
+  "id": 29,
+  "arxiv": "2009.13319",
+  "record": "Problem 1.2",
+  "lean": "prove",
+  "tier": 4,
+  "status": "partial",
+  "statement": "What are the finite sets `\\mathcal{F}` of digraphs for which the class `\\mathrm{Forb}_{\\mathrm{ind}}(\\mathcal{F})` has bounded dichromatic n\u2026"
+ },
+ {
+  "id": 31,
+  "arxiv": "2009.13319",
+  "record": "Conjecture 4.2",
+  "lean": "prove",
+  "tier": 4,
+  "status": "partial",
+  "statement": "Let `H` be a hero and let `F` be an oriented forest. The set `\\{\\overleftrightarrow{K_2}, H, F\\}` is heroic if and only if: either `F` is th\u2026"
+ },
+ {
+  "id": 32,
+  "arxiv": "1610.00876",
+  "record": "Conjecture 4",
+  "lean": "prove",
+  "tier": 4,
+  "status": "open",
+  "statement": "Every oriented tree is `\\delta^+`-maderian."
+ },
+ {
+  "id": 33,
+  "arxiv": "1610.00876",
+  "record": "Problem 12",
+  "lean": "prove",
+  "tier": 4,
+  "status": "open",
+  "statement": "What is `\\mathrm{mader}_{\\vec{\\chi}}(\\vec{K}_n)`?"
+ },
+ {
+  "id": 34,
+  "arxiv": "1610.00876",
+  "record": "Conjecture 7",
+  "lean": "prove",
+  "tier": 4,
+  "status": "open",
+  "statement": "If `F_1` and `F_2` are `\\delta^+`-maderian, then the disjoint union of `F_1` and `F_2` is also `\\delta^+`-maderian."
+ },
+ {
+  "id": 35,
+  "arxiv": "1610.00876",
+  "record": "Problem 16",
+  "lean": "prove",
+  "tier": 5,
+  "status": "partial",
+  "statement": "Are all digraphs `\\kappa`-maderian? `\\kappa'`-maderian?"
+ },
+ {
+  "id": 36,
+  "arxiv": "1610.00876",
+  "record": "Conjecture 3",
+  "lean": "prove",
+  "tier": 5,
+  "status": "open",
+  "statement": "There exists a least integer `\\mathrm{mader}_{\\delta^0}(TT_k)` such that every digraph `D` with `\\delta^0(D) \\geq \\mathrm{mader}_{\\delta^0}(\u2026"
+ },
+ {
+  "id": 37,
+  "arxiv": "1806.00541",
+  "record": "Conjecture 2",
+  "lean": "prove",
+  "tier": 5,
+  "status": "open",
+  "statement": "For every `n`-vertex graph `G`, the extension complexity of `\\mathrm{COR}(G)` is `2^{\\Omega(\\mathrm{tw}(G)+\\log n)}`."
+ },
+ {
+  "id": 38,
+  "arxiv": "2009.13319",
+  "record": "Conjecture 4.4",
+  "lean": "prove",
+  "tier": 5,
+  "status": "partial",
+  "statement": "Given an oriented forest `F` and for every integer `k`, `\\{\\overleftrightarrow{K_2}, K_k, F\\}` is heroic."
+ },
+ {
+  "id": 39,
+  "arxiv": "1605.07411",
+  "record": "Conjecture 2",
+  "lean": "prove",
+  "tier": 5,
+  "status": "partial",
+  "statement": "`\\mathrm{Forb}(H)` is `\\chi`-bounded if and only if `H` is a forest."
+ },
+ {
+  "id": 40,
+  "arxiv": "1605.07411",
+  "record": "Conjecture 4",
+  "lean": "prove",
+  "tier": 5,
+  "status": "partial",
+  "statement": "For any oriented star `S`, `\\mathrm{Forb}(S)` is `\\chi`-bounded."
+ }
+]

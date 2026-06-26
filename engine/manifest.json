@@ -1,0 +1,315 @@
+{
+  "generated_from": "engine/aboulker_candidates.json",
+  "engine_ready": [
+    {
+      "slug": "chordal_digraph_dichromatic_construction_size",
+      "arxiv": "2202.01006",
+      "record": "Open problem on construction size",
+      "oracle_able": true,
+      "built": true,
+      "oracle_verified": true,
+      "verified_against": "m(2)=3",
+      "ledger_path": "problems/chordal_digraph_dichromatic_construction_size/ledger.json",
+      "notes": "Engine-ready: m(2)=3 reproduced exactly; m(1)=1, m(3)>=8 lower bound; 9/9 pytest. Asymptotic m(k) growth gated empirical!=proof."
+    },
+    {
+      "slug": "tournament_twinwidth_dichromatic_bounded",
+      "arxiv": "2310.04265",
+      "record": "Conjecture 3.12",
+      "oracle_able": true,
+      "built": true,
+      "oracle_verified": true,
+      "verified_against": "chiVec(S_k)=k k=1..5",
+      "ledger_path": "problems/tournament_twinwidth_dichromatic_bounded/ledger.json",
+      "notes": "Engine-ready: chiVec(S_k)=k k=1..5, tww values, omegaVec landmarks reproduced; lean DISPROVE seed. Asymptotic truth not finitely certifiable."
+    },
+    {
+      "slug": "tournament_clique_number_omega_cluster",
+      "arxiv": "2310.04265",
+      "record": "Question 5.9",
+      "oracle_able": true,
+      "built": true,
+      "oracle_verified": true,
+      "verified_against": "omega_vec landmarks",
+      "ledger_path": "problems/tournament_clique_number_omega_cluster/ledger.json",
+      "notes": "Engine-ready: omega_vec(C3)=2 (unique 2-critical), omega_vec(S~_n)=n n=1..3, no omega_vec=3 on n<=6 reproduced; 12/12 pytest."
+    },
+    {
+      "slug": "chen_chvatal_lines_plus_bridges",
+      "arxiv": "1606.06011",
+      "record": "Conjecture 2.2",
+      "oracle_able": true,
+      "built": true,
+      "oracle_verified": true,
+      "verified_against": "Lemma 3.1",
+      "ledger_path": "problems/chen_chvatal_lines_plus_bridges/ledger.json",
+      "notes": "Engine-ready: Lemma 3.1 (ell(C4)=1, ell(H)=|H|-1) and F_0 census reproduced exactly; 14/14 pytest."
+    },
+    {
+      "slug": "lines_bridges_chen_chvatal",
+      "arxiv": "1606.06011",
+      "record": "Open question on counter-examples to ell(G)+br(G)>=||G||",
+      "oracle_able": true,
+      "built": true,
+      "oracle_verified": true,
+      "verified_against": "C4 census",
+      "ledger_path": "problems/lines_bridges_chen_chvatal/ledger.json",
+      "notes": "Engine-ready: C4 counterexample + connected-graph census n=4..7 reproduced exactly; 6/6 pytest. Asymptotic Conj 2.2 not enumeration-decidable."
+    },
+    {
+      "slug": "heroic_sets_dichromatic",
+      "arxiv": "2009.13319",
+      "record": "Problem 1.2",
+      "oracle_able": true,
+      "built": true,
+      "oracle_verified": true,
+      "verified_against": "Theorem 6.5",
+      "ledger_path": "problems/heroic_sets_dichromatic/ledger.json",
+      "notes": "Engine-ready: Theorem 6.5 chi_d=2 reproduced (1750 instances); tower + cycle-substitution identities; 7/7 pytest. DISPROVER not closer."
+    },
+    {
+      "slug": "heroic_sets_hero_forest",
+      "arxiv": "2009.13319",
+      "record": "Conjecture 4.2",
+      "oracle_able": true,
+      "built": true,
+      "oracle_verified": true,
+      "verified_against": "Theorem 6.1",
+      "ledger_path": "problems/heroic_sets_hero_forest/ledger.json",
+      "notes": "Engine-ready: Theorem 6.1 chi_d=2 reproduced; Conj 6.2 consistent through n=7; 9/9 pytest. DISPROVER not closer."
+    }
+  ],
+  "parked": [
+    {
+      "slug": "induced_disjoint_paths_complexity_gap",
+      "arxiv": "2502.05289",
+      "record": "Informal Question on Complexity Gap Between Induced Disjoint Paths Variants",
+      "oracle_able": false,
+      "built": false,
+      "oracle_verified": false,
+      "verified_against": "",
+      "ledger_path": "",
+      "notes": "PARKED (no oracle): existence-of-a-class meta-complexity claim quantifying over all hereditary classes; NP-complete vs in-P are asymptotic, no finite handle."
+    },
+    {
+      "slug": "subcubic_isc_planar_dichotomy",
+      "arxiv": "2502.05289",
+      "record": "Conjecture 1.5",
+      "oracle_able": false,
+      "built": false,
+      "oracle_verified": false,
+      "verified_against": "",
+      "ledger_path": "",
+      "notes": "PARKED (no oracle): complexity-class dichotomy (H-ISC in P iff H planar) over all subcubic H; in-P membership has no finite handle."
+    },
+    {
+      "slug": "heroes_oriented_complete_multipartite",
+      "arxiv": "2202.13306",
+      "record": "Question 5.4",
+      "oracle_able": false,
+      "built": false,
+      "oracle_verified": false,
+      "verified_against": "",
+      "ledger_path": "",
+      "notes": "PARKED (no oracle): asymptotic hero/chi-boundedness statement over infinite Forb_ind classes; positive hero hypotheses not finitely certifiable."
+    },
+    {
+      "slug": "poly_dichi_bounded_substitution_closure",
+      "arxiv": "2310.04265",
+      "record": "Question 3.10",
+      "oracle_able": false,
+      "built": false,
+      "oracle_verified": false,
+      "verified_against": "",
+      "ledger_path": "",
+      "notes": "PARKED (no oracle): polynomial chi-vec-boundedness meta-claim over all classes; invariant computable, conjecture not."
+    },
+    {
+      "slug": "surface_k_dicolourability_complexity",
+      "arxiv": "2102.01034",
+      "record": "Problem 4.4",
+      "oracle_able": false,
+      "built": false,
+      "oracle_verified": false,
+      "verified_against": "",
+      "ledger_path": "",
+      "notes": "PARKED (no oracle): complexity-class classification + infinitude of 6-dicritical digraphs; neither finitely certifiable."
+    },
+    {
+      "slug": "colouring_local_connectivity_kcol",
+      "arxiv": "1505.01616",
+      "record": "Question 1.7",
+      "oracle_able": false,
+      "built": false,
+      "oracle_verified": false,
+      "verified_against": "",
+      "ledger_path": "",
+      "notes": "PARKED (no oracle): P-vs-hard algorithmic-existence question over an infinite class; no invariant to measure."
+    },
+    {
+      "slug": "grundy_bchromatic_htt_free_fpt",
+      "arxiv": "2001.03794",
+      "record": "FPT on $H_{t,t}$-free graphs for Grundy Coloring and b-Chromatic Core",
+      "oracle_able": false,
+      "built": false,
+      "oracle_verified": false,
+      "verified_against": "",
+      "ledger_path": "",
+      "notes": "PARKED (no oracle): FPT-membership question; asymptotic, no finite witness (algorithm or W[1]-hardness)."
+    },
+    {
+      "slug": "distributed_sublinear_round_coloring",
+      "arxiv": "1802.05582",
+      "record": "Open problem on sublinear round complexity",
+      "oracle_able": false,
+      "built": false,
+      "oracle_verified": false,
+      "verified_against": "",
+      "ledger_path": "",
+      "notes": "PARKED (no oracle): distributed LOCAL-model sublinear-round asymptotic complexity; not an invariant of any instance."
+    },
+    {
+      "slug": "randomized_delta_list_coloring_rounds",
+      "arxiv": "1802.05582",
+      "record": "Question on randomized list-coloring round complexity",
+      "oracle_able": false,
+      "built": false,
+      "oracle_verified": false,
+      "verified_against": "",
+      "ledger_path": "",
+      "notes": "PARKED (no oracle): distributed randomized round-complexity question; asymptotic over all algorithms."
+    },
+    {
+      "slug": "clique_number_tournaments_substitution_chibound",
+      "arxiv": "2310.04265",
+      "record": "Conjecture 6.1",
+      "oracle_able": false,
+      "built": false,
+      "oracle_verified": false,
+      "verified_against": "",
+      "ledger_path": "",
+      "notes": "PARKED (no oracle): chi-vec-boundedness of substitution closure; meta over infinite classes, no finite handle."
+    },
+    {
+      "slug": "minimal_heroic_tournament_families",
+      "arxiv": "2009.13319",
+      "record": "Research direction: minimal heroic tournament families",
+      "oracle_able": false,
+      "built": false,
+      "oracle_verified": false,
+      "verified_against": "",
+      "ledger_path": "",
+      "notes": "PARKED (no oracle): characterize minimal heroic families; heroic = bounded chi_vec over infinite class; only one-sided refutation lever."
+    },
+    {
+      "slug": "ordered_max_degree_one_chi_bounded",
+      "arxiv": "2310.04265",
+      "record": "Conjecture 4.11",
+      "oracle_able": false,
+      "built": false,
+      "oracle_verified": false,
+      "verified_against": "",
+      "ledger_path": "",
+      "notes": "PARKED (no oracle): asymptotic chi-boundedness over infinite ordered-graph class; no finite landmark attached."
+    },
+    {
+      "slug": "oriented_tree_delta_plus_maderian",
+      "arxiv": "1610.00876",
+      "record": "Conjecture 4",
+      "oracle_able": false,
+      "built": false,
+      "oracle_verified": false,
+      "verified_against": "",
+      "ledger_path": "",
+      "notes": "PARKED (no oracle): every oriented tree is delta^+-maderian; existence-of-finite-threshold over all digraphs of unbounded order."
+    },
+    {
+      "slug": "mader_dichromatic_complete_digraph",
+      "arxiv": "1610.00876",
+      "record": "Problem 12",
+      "oracle_able": false,
+      "built": false,
+      "oracle_verified": false,
+      "verified_against": "",
+      "ledger_path": "",
+      "notes": "PARKED (no oracle): exact maderian extremal function for vec_K_n; unbounded-order witnesses, no finite handle."
+    },
+    {
+      "slug": "deltaplus_maderian_disjoint_union",
+      "arxiv": "1610.00876",
+      "record": "Conjecture 7",
+      "oracle_able": false,
+      "built": false,
+      "oracle_verified": false,
+      "verified_against": "",
+      "ledger_path": "",
+      "notes": "PARKED (no oracle): closure of delta^+-maderian class under disjoint union; base predicate is unbounded-threshold existence."
+    },
+    {
+      "slug": "all_digraphs_kappa_maderian",
+      "arxiv": "1610.00876",
+      "record": "Problem 16",
+      "oracle_able": false,
+      "built": false,
+      "oracle_verified": false,
+      "verified_against": "",
+      "ledger_path": "",
+      "notes": "PARKED (no oracle): duplicate / maderian threshold-existence over all digraphs."
+    },
+    {
+      "slug": "mader_delta0_transitive_tournament",
+      "arxiv": "1610.00876",
+      "record": "Conjecture 3",
+      "oracle_able": false,
+      "built": false,
+      "oracle_verified": false,
+      "verified_against": "",
+      "ledger_path": "",
+      "notes": "PARKED (no oracle): TT_k delta^0-maderian; equivalent to Mader's open conjecture, existence-of-f(k) shape."
+    },
+    {
+      "slug": "cor_extension_complexity_treewidth",
+      "arxiv": "1806.00541",
+      "record": "Conjecture 2",
+      "oracle_able": false,
+      "built": false,
+      "oracle_verified": false,
+      "verified_against": "",
+      "ledger_path": "",
+      "notes": "PARKED (no oracle): asymptotic extension-complexity lower bound 2^Omega(tw+log n); nonnegative-rank NP-hard, no exact small-instance oracle."
+    },
+    {
+      "slug": "heroic_oriented_forest_clique",
+      "arxiv": "2009.13319",
+      "record": "Conjecture 4.4",
+      "oracle_able": false,
+      "built": false,
+      "oracle_verified": false,
+      "verified_against": "",
+      "ledger_path": "",
+      "notes": "PARKED (no oracle): {bidirected-K2,K_k,F} heroic for every k; asymptotic dichromatic-boundedness, two unbounded quantifiers."
+    },
+    {
+      "slug": "gyarfas_sumner_forb_forest",
+      "arxiv": "1605.07411",
+      "record": "Conjecture 2",
+      "oracle_able": false,
+      "built": false,
+      "oracle_verified": false,
+      "verified_against": "",
+      "ledger_path": "",
+      "notes": "PARKED (no oracle): Gyarfas-Sumner (Forb(H) chi-bounded iff H forest); asymptotic existence-of-bounding-function, open in general."
+    },
+    {
+      "slug": "oriented_star_chi_bounded",
+      "arxiv": "1605.07411",
+      "record": "Conjecture 4",
+      "oracle_able": false,
+      "built": false,
+      "oracle_verified": false,
+      "verified_against": "",
+      "ledger_path": "",
+      "notes": "PARKED (no oracle): Forb(S) chi-bounded for oriented stars; asymptotic underlying-chi-boundedness; digraph_core computes dichromatic not underlying chi."
+    }
+  ]
+}

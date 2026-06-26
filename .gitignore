@@ -32,11 +32,18 @@ data/arxiv_failed.txt
 data/arxiv_review_failed.txt
 data/arxiv_name_failed.txt
 
-# Per-user Claude Code settings (settings.json is tracked separately)
-.claude/
+# Per-user Claude Code settings stay out of the repo — EXCEPT the engine
+# workflow, which is the shareable entrypoint and must ship with a clone.
+.claude/*
+!.claude/workflows/
+.claude/workflows/*
+!.claude/workflows/research-attack.js
 
 # Downloaded third-party software (not project state)
 external/
+
+# Methodology paper draft (root-level only; problems/*/paper/ stay tracked)
+/paper/
 
 # Crawler-emitted file that's redundant with problems.json
 data/urls.txt
