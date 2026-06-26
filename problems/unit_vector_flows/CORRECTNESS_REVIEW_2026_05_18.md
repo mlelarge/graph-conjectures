@@ -2,7 +2,7 @@
 
 **Reviewer:** independent audit pass
 **Date:** 2026-05-18
-**Scope:** `/Users/lelarge/Recherche/graph-conjectures/problems/unit_vector_flows/`
+**Scope:** `problems/unit_vector_flows/`
 **Headline claim under review:** *Every nontrivial snark on at most 28
 vertices admits an $S^2$-flow.* Numerical witnesses via
 Levenberg–Marquardt; rigorous certification via interval Krawczyk at

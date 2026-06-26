@@ -44,12 +44,12 @@ Looking for root closest to 1.114907541476756:
 
 Minimal polynomial of delta_1 over Q (via minimal_polynomial):
 Traceback (most recent call last):
-  File "/Users/lelarge/Recherche/graph-conjectures/problems/crossing_numbers_and_coloring/deliverables/D5_sympy_freedelta/minpoly.py", line 176, in <module>
+  File "problems/crossing_numbers_and_coloring/deliverables/D5_sympy_freedelta/minpoly.py", line 176, in <module>
     mp = sp.minimal_polynomial(sp.Float(target, 30), delta)
          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/lelarge/Recherche/graph-conjectures/problems/crossing_numbers_and_coloring/deliverables/D5_sympy_freedelta/.venv/lib/python3.11/site-packages/sympy/polys/numberfields/minpoly.py", line 703, in minimal_polynomial
+  File "problems/crossing_numbers_and_coloring/deliverables/D5_sympy_freedelta/.venv/lib/python3.11/site-packages/sympy/polys/numberfields/minpoly.py", line 703, in minimal_polynomial
     result = _minpoly_compose(ex, x, domain)
              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/lelarge/Recherche/graph-conjectures/problems/crossing_numbers_and_coloring/deliverables/D5_sympy_freedelta/.venv/lib/python3.11/site-packages/sympy/polys/numberfields/minpoly.py", line 620, in _minpoly_compose
+  File "problems/crossing_numbers_and_coloring/deliverables/D5_sympy_freedelta/.venv/lib/python3.11/site-packages/sympy/polys/numberfields/minpoly.py", line 620, in _minpoly_compose
     raise NotAlgebraic("%s does not seem to be an algebraic element" % ex)
 sympy.polys.polyerrors.NotAlgebraic: 1.11490754147675596996691638196 does not seem to be an algebraic element

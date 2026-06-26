@@ -1,7 +1,7 @@
 # Correctness review: directed-path minimum-outdegree project
 
 **Date:** 2026-05-18
-**Scope:** `/Users/lelarge/Recherche/graph-conjectures/problems/directed_path_minimum_outdegree/`
+**Scope:** `problems/directed_path_minimum_outdegree/`
 **Reviewer:** independent audit (not the project authors)
 
 ## Executive verdict

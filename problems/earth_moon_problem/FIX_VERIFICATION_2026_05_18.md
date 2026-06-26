@@ -160,7 +160,7 @@ verification of #1, #2, and #3. They remain open per the original audit.
 
 ## File:line references summary
 
-- Fix 1 evidence: `/Users/lelarge/Recherche/graph-conjectures/problems/earth_moon_problem/docs/plan.md:71–72, 201, 202–205`
-- Fix 2 evidence: `/Users/lelarge/Recherche/graph-conjectures/problems/earth_moon_problem/data/c7_k4/README.md:69–105` (caveats), `:107` ("## Reproduce" header confirms ordering)
-- Fix 3 evidence: `/Users/lelarge/Recherche/graph-conjectures/problems/earth_moon_problem/docs/phase6_discharge_attempt.md:421–456`
-- Untouched audit: `/Users/lelarge/Recherche/graph-conjectures/problems/earth_moon_problem/CORRECTNESS_REVIEW_2026_05_18.md` (untracked, no diff)
+- Fix 1 evidence: `problems/earth_moon_problem/docs/plan.md:71–72, 201, 202–205`
+- Fix 2 evidence: `problems/earth_moon_problem/data/c7_k4/README.md:69–105` (caveats), `:107` ("## Reproduce" header confirms ordering)
+- Fix 3 evidence: `problems/earth_moon_problem/docs/phase6_discharge_attempt.md:421–456`
+- Untouched audit: `problems/earth_moon_problem/CORRECTNESS_REVIEW_2026_05_18.md` (untracked, no diff)

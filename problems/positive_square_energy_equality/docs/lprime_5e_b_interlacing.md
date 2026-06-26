@@ -279,7 +279,7 @@ not see why.
 ## 4. Task 4 — Worked spectrum examples
 
 All computations against `scripts/spectrum_check.py` using the uv venv at
-`/Users/lelarge/Recherche/graph-conjectures/.venv`.
+`.venv`.
 
 ### 4.1 $K_3 \to K_2$
 

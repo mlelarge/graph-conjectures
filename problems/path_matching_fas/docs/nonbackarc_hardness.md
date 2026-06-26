@@ -471,7 +471,7 @@ non-sweep positive route).
 ## 9. Reproducing the experiments
 
 ```bash
-cd /Users/lelarge/Recherche/graph-conjectures/problems/path_matching_fas
+cd problems/path_matching_fas
 
 # Demo of all gadgets + obstructions
 uv run python scripts/nonbackarc_hardness.py

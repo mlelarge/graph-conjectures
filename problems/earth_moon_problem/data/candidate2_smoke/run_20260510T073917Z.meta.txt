@@ -3,7 +3,7 @@ date: 2026-05-10T07:39:17Z
 sms_commit: 2d5a22a3d3b2fcc6f5eeebdfbdbe2031b53ac55b
 sms_describe: v1.0.0
 sms_status:  M encodings/planarity.py;?? build/;?? cadical_sms/;?? sms_graph_builder.egg-info/;
-smsg_path: /Users/lelarge/.local/bin/smsg
+smsg_path: .local/bin/smsg
 cmd: gtimeout 600 python encodings/planarity.py -v 28 --directed --earthmoon_candidate2
 wall_budget_seconds: 600
 patches: Patch A from docs/spike_sms_build.md (encodings/planarity.py solveArgs arity)

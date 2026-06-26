@@ -4,7 +4,7 @@
 **Date:** 2026-05-18
 **Scope:** confirm that the targeted fixes claimed by the mathematician
 were applied correctly in
-`/Users/lelarge/Recherche/graph-conjectures/problems/unit_vector_flows/`,
+`problems/unit_vector_flows/`,
 relative to `CORRECTNESS_REVIEW_2026_05_18.md`.
 
 ---

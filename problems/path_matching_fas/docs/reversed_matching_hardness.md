@@ -435,7 +435,7 @@ remains capped by the linear-forest shape.
 ## 8. Reproducing the experiments
 
 ```bash
-cd /Users/lelarge/Recherche/graph-conjectures/problems/path_matching_fas
+cd problems/path_matching_fas
 
 # Section 1: substrate diagnostic
 uv run python scripts/reversed_matching_hardness.py --substrate 8

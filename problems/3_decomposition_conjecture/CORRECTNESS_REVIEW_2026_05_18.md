@@ -2,7 +2,7 @@
 
 **Date:** 2026-05-18
 **Reviewer:** Independent audit, on request
-**Scope:** `/Users/lelarge/Recherche/graph-conjectures/problems/3_decomposition_conjecture/`
+**Scope:** `problems/3_decomposition_conjecture/`
 **Repo commit context:** working tree at the time of review (`README.md`, `docs/plan.md`, `docs/minimal_counterexample.md`, `scripts/*`, `tests/*`, `data/*`).
 **Test status:** all 33 pytest tests pass; `verify_n14_summary.py` exits OK; `sublemma_bridge_sweep.py --n-max 11` reports OK on 137 graphs (1 + 3 + 19 + 114).
 

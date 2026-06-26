@@ -1,7 +1,7 @@
 # Plan: prove (or disprove) a tractable slice of Albertson's Conjecture
 
 Source: M. O. Albertson, posted at openproblemgarden.org/op/crossing_numbers_and_coloring (2007/2009). High importance, open since 2007. Wide literature; current state recorded in the local snapshot
-`/Users/lelarge/Recherche/graph-conjectures/site/op/crossing_numbers_and_coloring/index.html`.
+`site/op/crossing_numbers_and_coloring/index.html`.
 
 ## Revision history
 

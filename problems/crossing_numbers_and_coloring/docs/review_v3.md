@@ -1,7 +1,7 @@
 # Review of v3 + team memos (post-team-launch audit)
 
 Senior pass on plan v3 plus the nine role memos in
-`/Users/lelarge/Recherche/graph-conjectures/problems/crossing_numbers_and_coloring/work/`.
+`problems/crossing_numbers_and_coloring/work/`.
 
 ## Main correction
 

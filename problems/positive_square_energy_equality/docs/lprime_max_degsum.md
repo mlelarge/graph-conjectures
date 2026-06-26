@@ -636,7 +636,7 @@ $2$ and the threshold $W^-_*$ to be derived in O7.1 lies in $(0, 2)$.)
 
 ## 8. Computational sanity checks
 
-Carried out using `/Users/lelarge/Recherche/graph-conjectures/.venv/bin/python`.
+Carried out using `.venv/bin/python`.
 
 **8.1. Fans, $n = 4, \ldots, 200$.** For each $n$, computed $\delta^\pm(F_n)$
 via direct `np.linalg.eigvalsh`. Result: $\delta^-(F_n) \ge \delta^-(F_4)

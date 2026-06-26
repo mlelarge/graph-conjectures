@@ -3,7 +3,7 @@
 Reviewer: independent auditor (Claude).
 Date: 2026-05-18.
 Scope of audit: everything under
-`/Users/lelarge/Recherche/graph-conjectures/problems/arc_disjoint_strong_spanning_subdigraphs/`
+`problems/arc_disjoint_strong_spanning_subdigraphs/`
 as committed on 2026-05-17 plus the working notes generated up to that date.
 
 ---

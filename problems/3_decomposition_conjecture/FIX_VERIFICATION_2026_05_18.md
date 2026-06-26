@@ -43,7 +43,7 @@
 
 ### Fix #3 — Tests still pass
 
-- **Command:** `/Users/lelarge/Recherche/graph-conjectures/.venv/bin/python -m pytest problems/3_decomposition_conjecture/tests/`
+- **Command:** `.venv/bin/python -m pytest problems/3_decomposition_conjecture/tests/`
 - **Result:**
   ```
   platform darwin -- Python 3.12.4, pytest-9.0.3, pluggy-1.6.0

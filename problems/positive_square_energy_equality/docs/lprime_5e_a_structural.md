@@ -290,7 +290,7 @@ simply not the right shape.
 ## Task 4. Worked examples (computational sanity check)
 
 All numerics computed with `numpy.linalg.eigvalsh` via
-`/Users/lelarge/Recherche/graph-conjectures/.venv/bin/python`.
+`.venv/bin/python`.
 
 We tabulate, for each $G$ and its max-degsum ear $v^*$:
 $\sigma(v^*) = \deg_H(a^*) + \deg_H(b^*)$;

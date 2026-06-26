@@ -447,7 +447,7 @@ non-trivially with the dynamic-programming approach.
 ## 9. Reproducing the experiments
 
 ```bash
-cd /Users/lelarge/Recherche/graph-conjectures/problems/path_matching_fas
+cd problems/path_matching_fas
 
 # Section 2: empirical forced-path sweep
 uv run python scripts/forced_path_tournament.py --sweep --trials 2000 \
