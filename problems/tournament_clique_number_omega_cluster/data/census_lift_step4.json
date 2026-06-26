@@ -1,0 +1,66 @@
+{
+ "C25_1_2_3_4_5_6_7_9_10_12_14_17": {
+  "n_H": 25,
+  "g": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   9,
+   10,
+   12,
+   14,
+   17
+  ],
+  "H_dic4": true,
+  "H_dic_vc": true,
+  "maxacyc_H": 8,
+  "deletion_order_clique": 4,
+  "ov_T_eq5_and_5critical": true,
+  "maxacyc_T_analytic": 16,
+  "dic_T_analytic_lb": 5,
+  "T_4dicolorable": false,
+  "T_5dicolorable": false,
+  "dic_T": ">=6",
+  "t_sat_4_5": [
+   0.1,
+   3.5
+  ],
+  "time_total_s": 3.6
+ },
+ "C25_1_2_3_4_5_6_7_9_11_12_15_17": {
+  "n_H": 25,
+  "g": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   9,
+   11,
+   12,
+   15,
+   17
+  ],
+  "H_dic4": true,
+  "H_dic_vc": true,
+  "maxacyc_H": 8,
+  "deletion_order_clique": 4,
+  "ov_T_eq5_and_5critical": true,
+  "maxacyc_T_analytic": 16,
+  "dic_T_analytic_lb": 5,
+  "T_4dicolorable": false,
+  "T_5dicolorable": false,
+  "dic_T": ">=6",
+  "t_sat_4_5": [
+   0.1,
+   3.8
+  ],
+  "time_total_s": 3.9
+ }
+}

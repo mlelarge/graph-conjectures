@@ -249,7 +249,8 @@ existence of the tree-join decomposition**:
 because `F_D` is a forest) but it does **not** give a *mechanism* producing the
 rim cycle, the `(A,B)` partition, and the block placement. None of P1–P4 do.
 
-### 3.3 The honest weakness: the recursive descent is UNTESTED
+### 3.3 The honest weakness: the recursive descent was untested in the truth set;
+new forward-built evidence exercises it
 
 Over the **complete** truth sets `L₃..L₇`, the tree-join inverse produces only
 **`W₃` A-blocks** — every A-block of every tree-joined member is the base object
@@ -258,15 +259,56 @@ Over the **complete** truth sets `L₃..L₇`, the tree-join inverse produces on
     tree-join or Hajós join) is **never exercised** at `n≤7`.
   - The oracle's `max_internal=2` cap means tree shapes with ≥3 internal interface
     vertices are not even searched.
-So clause-(b)'s `n≤7` support is *degenerate*: it confirms a single-`W₃`-block
-pattern and nothing about the inductive step. **This is where a counterexample, if
-one exists, would most plausibly live** — a 2-extremal digraph at `n≥8` that "looks
-like" a tree join but whose putative A-block is not 2-extremal, or that is `MC=0`
-yet admits no valid even-`B`-parity rim at all.
+So clause-(b)'s `n≤7` truth-set support is *degenerate*: it confirms a
+single-`W₃`-block pattern and nothing about the inductive step.
 
-*Test:* `_tree_join_decompositions` on 7.7/7.14/7.36 yields decomps with block
-sizes `[4]` (a single `W₃`) only; `0` decomps with a non-base block, across all of
-`L₆∪L₇`.
+**Update 2026-06-01.** `scripts/tree_join_mc_inheritance.py` gives the first
+bounded forward-built recursive test (one-A-edge joins, A-blocks from `L₃..L₇`):
+among 771 labelled 2-extremal outputs there are **45 labelled** (`= 11
+isomorphism classes`) `n=9` non-base, non-Hajos, `MC=0` outputs built on the
+three `n=7` tree-join-only members (`7.7`, `7.14`, `7.36`). So recursive `MC=0`
+descent is no longer untested as a *forward construction* (it is still not a
+complete `L₉` enumeration, and forward construction is weaker than decomposing a
+*given* minimal `MC=0` digraph).
+
+**Update 2026-06-01b — the MC-inheritance mechanism is now PROVED, closing one
+of the two §3.3 dangers.** `scripts/tree_join_mc_absorption.py` adversarially
+searches the regime the one-A-edge probe could not reach — interior A-edges, up
+to two A-edges, and rims of size 2 (`path4`) **and `≥3`** (`spider3`/`cat3`/`h`:
+833 of the 5223 outputs); 4276 block-cut triples.
+**No mixed cut of any A-block is ever absorbed**, because no mixed cut can
+*separate* the interface pair: the interface is a **digon**, hence an underlying
+edge that a mixed 2-cut (vertex + *single* edge) cannot delete. This is an
+`n`-independent proof (see `docs/tree_join_mc_inheritance.md`): every block mixed
+cut survives, so
+
+> `MC(output) ≥ Σ MC(blocks)`, and an `MC=0` tree join uses **only `MC=0`
+> A-blocks** (+ base objects).
+
+This **eliminates the "A-blocks evade the mechanism by interface-absorbed cuts"
+danger** of (C-b): there are no interface-absorbed cuts. The recursive `MC=0`
+descent provably stays inside the `MC=0` class.
+
+The **remaining** danger is therefore strictly the *existence* half: a 2-extremal
+digraph at `n≥8` that is `MC=0` but admits **no** valid even-`B`-parity rim with
+`MC=0`/base blocks. The inheritance lemma constrains the blocks of any such
+decomposition but does not produce the rim — that mechanism is still missing
+(§3.2). R-b's existence core is untouched by this update.
+
+**Update 2026-06-02b — rim source identified (inverse rim audit).**
+`scripts/inverse_rim_audit.py` exposes the rim of each recovered decomposition.
+**The rim is always a directed cycle of the SINGLE-arc subdigraph** (S1: 14/14
+genuine corpus + 64/64 red-team sample of the 822 non-base `MC=0` outputs; all
+822 have balanced single arcs containing a cycle). Since single arcs are balanced
+(closed trails) and non-empty for non-base `D`, a candidate rim *always exists*.
+The tempting "rim = `F_D` leaf set" rule is **refuted** (a valid rim can pass
+through an `F_D`-internal vertex). So the §3.2 missing mechanism is now a sharper,
+single-arc-based target — see `docs/inverse_rim_extraction.md`. Still open: which
+single-arc cycle, and that removing it leaves a valid tiling.
+
+*Truth-set test:* `_tree_join_decompositions` on 7.7/7.14/7.36 yields decomps
+with block sizes `[4]` (a single `W₃`) only; `0` decomps with a non-base block,
+across all of `L₆∪L₇`.
 
 ---
 

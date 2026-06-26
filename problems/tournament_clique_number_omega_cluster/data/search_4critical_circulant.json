@@ -1,0 +1,293 @@
+{
+  "validation": {
+    "all_agree": true,
+    "cases": [
+      {
+        "name": "AC7",
+        "p": 7,
+        "g": [
+          1,
+          2,
+          4
+        ],
+        "exact_omega_vec": 3,
+        "K": 3,
+        "sat_says_ge_K": true,
+        "truth_ge_K": true,
+        "agree": true,
+        "nclauses_forbid": 21,
+        "sat_time_s": 0.0002
+      },
+      {
+        "name": "AC7",
+        "p": 7,
+        "g": [
+          1,
+          2,
+          4
+        ],
+        "exact_omega_vec": 3,
+        "K": 4,
+        "sat_says_ge_K": false,
+        "truth_ge_K": false,
+        "agree": true,
+        "nclauses_forbid": 0,
+        "sat_time_s": 0.0001
+      },
+      {
+        "name": "consec7",
+        "p": 7,
+        "g": [
+          1,
+          2,
+          3
+        ],
+        "exact_omega_vec": 2,
+        "K": 3,
+        "sat_says_ge_K": false,
+        "truth_ge_K": false,
+        "agree": true,
+        "nclauses_forbid": 21,
+        "sat_time_s": 0.0001
+      },
+      {
+        "name": "consec7",
+        "p": 7,
+        "g": [
+          1,
+          2,
+          3
+        ],
+        "exact_omega_vec": 2,
+        "K": 4,
+        "sat_says_ge_K": false,
+        "truth_ge_K": false,
+        "agree": true,
+        "nclauses_forbid": 7,
+        "sat_time_s": 0.0001
+      },
+      {
+        "name": "QR7",
+        "p": 7,
+        "g": [
+          1,
+          2,
+          4
+        ],
+        "exact_omega_vec": 3,
+        "K": 3,
+        "sat_says_ge_K": true,
+        "truth_ge_K": true,
+        "agree": true,
+        "nclauses_forbid": 21,
+        "sat_time_s": 0.0002
+      },
+      {
+        "name": "QR7",
+        "p": 7,
+        "g": [
+          1,
+          2,
+          4
+        ],
+        "exact_omega_vec": 3,
+        "K": 4,
+        "sat_says_ge_K": false,
+        "truth_ge_K": false,
+        "agree": true,
+        "nclauses_forbid": 0,
+        "sat_time_s": 0.0001
+      },
+      {
+        "name": "c9_a",
+        "p": 9,
+        "g": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "exact_omega_vec": 2,
+        "K": 3,
+        "sat_says_ge_K": false,
+        "truth_ge_K": false,
+        "agree": true,
+        "nclauses_forbid": 54,
+        "sat_time_s": 0.0002
+      },
+      {
+        "name": "c9_a",
+        "p": 9,
+        "g": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "exact_omega_vec": 2,
+        "K": 4,
+        "sat_says_ge_K": false,
+        "truth_ge_K": false,
+        "agree": true,
+        "nclauses_forbid": 36,
+        "sat_time_s": 0.0002
+      },
+      {
+        "name": "c9_b",
+        "p": 9,
+        "g": [
+          1,
+          2,
+          3,
+          5
+        ],
+        "exact_omega_vec": 3,
+        "K": 3,
+        "sat_says_ge_K": true,
+        "truth_ge_K": true,
+        "agree": true,
+        "nclauses_forbid": 54,
+        "sat_time_s": 0.0003
+      },
+      {
+        "name": "c9_b",
+        "p": 9,
+        "g": [
+          1,
+          2,
+          3,
+          5
+        ],
+        "exact_omega_vec": 3,
+        "K": 4,
+        "sat_says_ge_K": false,
+        "truth_ge_K": false,
+        "agree": true,
+        "nclauses_forbid": 18,
+        "sat_time_s": 0.0002
+      },
+      {
+        "name": "Stilde3-like_no",
+        "p": 9,
+        "g": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "exact_omega_vec": 2,
+        "K": 3,
+        "sat_says_ge_K": false,
+        "truth_ge_K": false,
+        "agree": true,
+        "nclauses_forbid": 54,
+        "sat_time_s": 0.0002
+      },
+      {
+        "name": "Stilde3-like_no",
+        "p": 9,
+        "g": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "exact_omega_vec": 2,
+        "K": 4,
+        "sat_says_ge_K": false,
+        "truth_ge_K": false,
+        "agree": true,
+        "nclauses_forbid": 36,
+        "sat_time_s": 0.0002
+      }
+    ]
+  },
+  "search": [
+    {
+      "n": 13,
+      "examined": 64,
+      "id_clique_eq4": 30,
+      "omega_vec_eq4": 0,
+      "criticality_candidates": 0,
+      "found_4critical": []
+    },
+    {
+      "n": 15,
+      "examined": 128,
+      "id_clique_eq4": 72,
+      "omega_vec_eq4": 0,
+      "criticality_candidates": 0,
+      "found_4critical": []
+    },
+    {
+      "n": 17,
+      "examined": 256,
+      "id_clique_eq4": 118,
+      "omega_vec_eq4": 0,
+      "criticality_candidates": 0,
+      "found_4critical": []
+    },
+    {
+      "n": 19,
+      "examined": 512,
+      "id_clique_eq4": 235,
+      "omega_vec_eq4": 5,
+      "criticality_candidates": 5,
+      "found_4critical": []
+    },
+    {
+      "n": 21,
+      "examined": 460,
+      "id_clique_eq4": 154,
+      "omega_vec_eq4": 7,
+      "criticality_candidates": 7,
+      "found_4critical": [
+        {
+          "n": 21,
+          "g": [
+            1,
+            2,
+            4,
+            7,
+            8,
+            9,
+            11,
+            15,
+            16,
+            18
+          ],
+          "id_order_clique": 4,
+          "omega_vec_ge4_sat": true,
+          "deletion0_upper": 3,
+          "deletion0_ge3": true,
+          "deletion0_ge4": false,
+          "deletion0_is3": true
+        }
+      ]
+    }
+  ],
+  "found": [
+    {
+      "n": 21,
+      "g": [
+        1,
+        2,
+        4,
+        7,
+        8,
+        9,
+        11,
+        15,
+        16,
+        18
+      ],
+      "id_order_clique": 4,
+      "omega_vec_ge4_sat": true,
+      "deletion0_upper": 3,
+      "deletion0_ge3": true,
+      "deletion0_ge4": false,
+      "deletion0_is3": true
+    }
+  ],
+  "sat_time_total_s": 4.85
+}

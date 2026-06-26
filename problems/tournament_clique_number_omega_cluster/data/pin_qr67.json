@@ -1,0 +1,17 @@
+{
+  "p": 67,
+  "g_size": 33,
+  "is_tournament": true,
+  "upper_omega_of_best_order": 6,
+  "dom_exact": 5,
+  "dom_size4_dominating": false,
+  "dom_size5_witness": [0, 1, 2, 3, 20],
+  "lower_bound_via_dom_property_3_2": 5,
+  "omega_vec_window": [5, 6],
+  "no_k5_cnf_clauses": 879978,
+  "no_k6_cnf_clauses": 1176252,
+  "sat_no_k5_result": "TIMEOUT (>300s alarm not honored by C solver; outer timeout 1800 killed run)",
+  "sat_no_k6_result": "TIMEOUT (cadical no result in 150s; outer timeout killed; INFEASIBLE at n=67)",
+  "verdict": "omega_vec(QR_67) in {5,6}; dom=5 gives >=5, explicit order gives <=6. EXACT pin to 6 requires no-K6 UNSAT which is SAT-INFEASIBLE at n=67. Feasibility wall, NOT a witness.",
+  "criticality": "NOT REACHED (value not pinned to 6; cannot test 6-criticality)"
+}

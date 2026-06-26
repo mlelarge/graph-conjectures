@@ -1,0 +1,143 @@
+{
+ "sat_oracle_validated": true,
+ "sat_check": {
+  "AC7[AC7]": {
+   "Nsub": 48,
+   "ge5": false,
+   "ge4": true,
+   "dt5": 0.08,
+   "dt4": 1.1,
+   "omega_vec_deletion_le4": true
+  },
+  "AC7[C3[C3]]": {
+   "skipped": "no winner template"
+  }
+ },
+ "AC7_AC7": {
+  "candidate": "AC7[AC7]",
+  "order": 49,
+  "full_merged_clique": 5,
+  "templates": [
+   {
+    "template": "base_merged",
+    "deletion_clique": 5,
+    "le4": false
+   },
+   {
+    "template": "inner_then_outer",
+    "deletion_clique": 4,
+    "le4": true
+   },
+   {
+    "template": "outer_then_inner",
+    "deletion_clique": 8,
+    "le4": false
+   },
+   {
+    "template": "merged_innerfirst",
+    "deletion_clique": 5,
+    "le4": false
+   },
+   {
+    "template": "merged_outerfirst",
+    "deletion_clique": 6,
+    "le4": false
+   },
+   {
+    "template": "inner_b0_last",
+    "deletion_clique": 6,
+    "le4": false
+   },
+   {
+    "template": "inner_b0_first",
+    "deletion_clique": 6,
+    "le4": false
+   },
+   {
+    "template": "band_a_then_b",
+    "deletion_clique": 8,
+    "le4": false
+   },
+   {
+    "template": "band_b_then_a",
+    "deletion_clique": 5,
+    "le4": false
+   },
+   {
+    "template": "demote_a0",
+    "deletion_clique": 5,
+    "le4": false
+   },
+   {
+    "template": "demote_b0",
+    "deletion_clique": 6,
+    "le4": false
+   },
+   {
+    "template": "demote_both0",
+    "deletion_clique": 6,
+    "le4": false
+   }
+  ],
+  "winners": [
+   "inner_then_outer"
+  ],
+  "N": 49,
+  "decode_inner_sz": 7
+ },
+ "AC7_C3C3": {
+  "candidate": "AC7[C3[C3]]",
+  "order": 63,
+  "full_merged_clique": 6,
+  "templates": [
+   {
+    "template": "base_merged",
+    "deletion_clique": 6,
+    "le4": false
+   },
+   {
+    "template": "inner_then_outer",
+    "deletion_clique": 6,
+    "le4": false
+   },
+   {
+    "template": "outer_then_inner",
+    "deletion_clique": 8,
+    "le4": false
+   },
+   {
+    "template": "merged_innerfirst",
+    "deletion_clique": 6,
+    "le4": false
+   },
+   {
+    "template": "merged_outerfirst",
+    "deletion_clique": 7,
+    "le4": false
+   },
+   {
+    "template": "demote_a0",
+    "deletion_clique": 6,
+    "le4": false
+   },
+   {
+    "template": "demote_in0",
+    "deletion_clique": 7,
+    "le4": false
+   },
+   {
+    "template": "inner_layered",
+    "deletion_clique": 5,
+    "le4": false
+   },
+   {
+    "template": "inner_sum_then_ac",
+    "deletion_clique": 6,
+    "le4": false
+   }
+  ],
+  "winners": [],
+  "N": 63,
+  "decode_inner_sz": 9
+ }
+}

@@ -1,0 +1,96 @@
+{
+  "S_tilde_3": {
+    "first_omega_ge_k_order": 9,
+    "first_omega_ge_k_example": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "counts_omega_ge_k_by_order": {
+      "9": 1
+    },
+    "critical_orders": [
+      9
+    ],
+    "num_critical_by_order": {
+      "9": 1
+    },
+    "min_critical_order": 9,
+    "max_critical_order": 9,
+    "critical_examples": {
+      "9": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    "n": 9,
+    "omega_vec_whole": 3,
+    "seconds": 10.41
+  },
+  "Delta_C3_C3_C3": {
+    "first_omega_ge_k_order": 9,
+    "first_omega_ge_k_example": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "counts_omega_ge_k_by_order": {
+      "9": 1
+    },
+    "critical_orders": [
+      9
+    ],
+    "num_critical_by_order": {
+      "9": 1
+    },
+    "min_critical_order": 9,
+    "max_critical_order": 9,
+    "critical_examples": {
+      "9": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    "n": 9,
+    "omega_vec_whole": 3,
+    "seconds": 10.68
+  },
+  "Delta_C3_TT1_TT1": {
+    "n": 5,
+    "omega_vec_whole": 2
+  },
+  "Delta_C3_C3_TT1": {
+    "n": 7,
+    "omega_vec_whole": 2
+  },
+  "Delta_TT1_C3_C3": {
+    "n": 7,
+    "omega_vec_whole": 2
+  }
+}

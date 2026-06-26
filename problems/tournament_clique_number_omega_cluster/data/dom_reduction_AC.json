@@ -1,0 +1,180 @@
+{
+  "property_5_3_check": [
+    {
+      "name": "AC_7",
+      "n": 7,
+      "is_tournament": true,
+      "dom_direct": 3,
+      "omega_vec": 3,
+      "omega_vec_time_s": 0.07,
+      "omega_vec_source": "computed core.omega_vec_bb",
+      "dom_le_omega": true
+    },
+    {
+      "name": "AC_11",
+      "n": 11,
+      "is_tournament": true,
+      "dom_direct": 3,
+      "omega_vec": 3,
+      "omega_vec_time_s": 20.3,
+      "omega_vec_source": "computed core.omega_vec_bb",
+      "dom_le_omega": true
+    },
+    {
+      "name": "AC_13",
+      "n": 13,
+      "is_tournament": true,
+      "dom_direct": 3,
+      "omega_vec": 3,
+      "omega_vec_source": "stored (order>=17 bb wall)",
+      "dom_le_omega": true
+    },
+    {
+      "name": "AC_17",
+      "n": 17,
+      "is_tournament": true,
+      "dom_direct": 3,
+      "omega_vec": 3,
+      "omega_vec_source": "stored (order>=17 bb wall)",
+      "dom_le_omega": true
+    },
+    {
+      "name": "QR_7",
+      "n": 7,
+      "is_tournament": true,
+      "dom_direct": 3,
+      "omega_vec": 3,
+      "omega_vec_time_s": 0.07,
+      "omega_vec_source": "computed core.omega_vec_bb",
+      "dom_le_omega": true
+    },
+    {
+      "name": "c11_12346",
+      "n": 11,
+      "is_tournament": true,
+      "dom_direct": 3,
+      "omega_vec": 3,
+      "omega_vec_time_s": 20.47,
+      "omega_vec_source": "computed core.omega_vec_bb",
+      "dom_le_omega": true
+    },
+    {
+      "name": "consec11_1to5",
+      "n": 11,
+      "is_tournament": true,
+      "dom_direct": 2,
+      "omega_vec": 2,
+      "omega_vec_time_s": 0.02,
+      "omega_vec_source": "computed core.omega_vec_bb",
+      "dom_le_omega": true
+    },
+    {
+      "name": "AC_19",
+      "n": 19,
+      "is_tournament": true,
+      "dom_direct": 3,
+      "omega_vec": 3,
+      "omega_vec_source": "stored (order>=17 bb wall)",
+      "dom_le_omega": true
+    }
+  ],
+  "ac_family": [
+    {
+      "p": 7,
+      "g_size": 3,
+      "is_tournament": true,
+      "min_autocorr": 2,
+      "dom_additive": null,
+      "dom_direct": 3,
+      "dom_direct_time_s": 0.0
+    },
+    {
+      "p": 11,
+      "g_size": 5,
+      "is_tournament": true,
+      "min_autocorr": 2,
+      "dom_additive": null,
+      "dom_direct": 3,
+      "dom_direct_time_s": 0.0
+    },
+    {
+      "p": 13,
+      "g_size": 6,
+      "is_tournament": true,
+      "min_autocorr": 2,
+      "dom_additive": null,
+      "dom_direct": 3,
+      "dom_direct_time_s": 0.0
+    },
+    {
+      "p": 17,
+      "g_size": 8,
+      "is_tournament": true,
+      "min_autocorr": 2,
+      "dom_additive": null,
+      "dom_direct": 3,
+      "dom_direct_time_s": 0.0
+    },
+    {
+      "p": 19,
+      "g_size": 9,
+      "is_tournament": true,
+      "min_autocorr": 2,
+      "dom_additive": null,
+      "dom_direct": 3,
+      "dom_direct_time_s": 0.0
+    },
+    {
+      "p": 23,
+      "g_size": 11,
+      "is_tournament": true,
+      "min_autocorr": 2,
+      "dom_additive": null,
+      "dom_direct": 3,
+      "dom_direct_time_s": 0.0
+    },
+    {
+      "p": 29,
+      "g_size": 14,
+      "is_tournament": true,
+      "min_autocorr": 2,
+      "dom_additive": null,
+      "dom_direct": 3,
+      "dom_direct_time_s": 0.0
+    },
+    {
+      "p": 31,
+      "g_size": 15,
+      "is_tournament": true,
+      "min_autocorr": 2,
+      "dom_additive": null,
+      "dom_direct": 3,
+      "dom_direct_time_s": 0.0
+    },
+    {
+      "p": 37,
+      "g_size": 18,
+      "is_tournament": true,
+      "min_autocorr": 2,
+      "dom_additive": null,
+      "dom_direct": "skipped(cost)"
+    },
+    {
+      "p": 41,
+      "g_size": 20,
+      "is_tournament": true,
+      "min_autocorr": 2,
+      "dom_additive": null,
+      "dom_direct": "skipped(cost)"
+    },
+    {
+      "p": 43,
+      "g_size": 21,
+      "is_tournament": true,
+      "min_autocorr": 2,
+      "dom_additive": null,
+      "dom_direct": "skipped(cost)"
+    }
+  ],
+  "errors": []
+}

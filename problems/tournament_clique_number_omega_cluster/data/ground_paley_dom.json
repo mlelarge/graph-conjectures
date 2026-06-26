@@ -1,0 +1,144 @@
+{
+  "scan": [
+    {
+      "p": 7,
+      "p_mod4": 3,
+      "is_tournament": true,
+      "dom": 3,
+      "predicted": 3,
+      "time_s": 0.0
+    },
+    {
+      "p": 11,
+      "p_mod4": 3,
+      "is_tournament": true,
+      "dom": 3,
+      "predicted": 3,
+      "time_s": 0.0
+    },
+    {
+      "p": 19,
+      "p_mod4": 3,
+      "is_tournament": true,
+      "dom": 4,
+      "predicted": 4,
+      "time_s": 0.0
+    },
+    {
+      "p": 23,
+      "p_mod4": 3,
+      "is_tournament": true,
+      "dom": 4,
+      "predicted": 4,
+      "time_s": 0.0
+    },
+    {
+      "p": 31,
+      "p_mod4": 3,
+      "is_tournament": true,
+      "dom": 4,
+      "predicted": 4,
+      "time_s": 0.0
+    },
+    {
+      "p": 43,
+      "p_mod4": 3,
+      "is_tournament": true,
+      "dom": 4,
+      "predicted": 4,
+      "time_s": 0.01
+    },
+    {
+      "p": 47,
+      "p_mod4": 3,
+      "is_tournament": true,
+      "dom": 4,
+      "predicted": 4,
+      "time_s": 0.01
+    },
+    {
+      "p": 59,
+      "p_mod4": 3,
+      "is_tournament": true,
+      "dom": 4,
+      "predicted": 4,
+      "time_s": 0.03
+    },
+    {
+      "p": 67,
+      "p_mod4": 3,
+      "is_tournament": true,
+      "dom": 5,
+      "predicted": 5,
+      "time_s": 0.83
+    },
+    {
+      "p": 71,
+      "p_mod4": 3,
+      "is_tournament": true,
+      "dom": 5,
+      "predicted": 5,
+      "time_s": 1.04
+    },
+    {
+      "p": 79,
+      "p_mod4": 3,
+      "is_tournament": true,
+      "dom": 5,
+      "predicted": 5,
+      "time_s": 1.76
+    },
+    {
+      "p": 83,
+      "p_mod4": 3,
+      "is_tournament": true,
+      "dom": 5,
+      "predicted": 5,
+      "time_s": 2.22
+    }
+  ],
+  "monotone": true,
+  "matches_prediction": true,
+  "doms": [
+    3,
+    3,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    5,
+    5,
+    5,
+    5
+  ],
+  "predicted": [
+    3,
+    3,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    5,
+    5,
+    5,
+    5
+  ],
+  "dom_ge5_for_p_ge_67": true,
+  "dom4_window": [
+    19,
+    23,
+    31,
+    43,
+    47,
+    59
+  ],
+  "prop32_control_QR7": {
+    "dom": 3,
+    "omega_vec": 3,
+    "dom_le_ov": true
+  }
+}

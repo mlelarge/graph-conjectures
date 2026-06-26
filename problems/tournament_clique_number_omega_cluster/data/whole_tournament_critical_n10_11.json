@@ -1,0 +1,70 @@
+{
+ "session": "asymptotic-argument Delta-decomposability test",
+ "date": "2026-06-06",
+ "oracle": "scripts/core.omega_vec(method=bb), is_k_omega_vec_critical, min_subtournament_order_for_k",
+ "landmarks_reverified": {
+  "S~_3 (n=9)": {
+   "omega_vec": 3,
+   "crit3": true,
+   "min_cert_order": 9,
+   "whole_tournament_critical": true
+  },
+  "Delta(C3,C3,C3) (n=9)": {
+   "omega_vec": 3,
+   "crit3": true
+  },
+  "n7_witness": {
+   "omega_vec": 3,
+   "crit3": true
+  }
+ },
+ "in_block_deletion_lemma_test": {
+  "Delta(TT1,TT2,n7) (n=10)": {
+   "omega_vec": 3,
+   "crit3": false,
+   "delete_transitive_block_vertex_1": {
+    "omega_vec_T_minus_v": 3
+   },
+   "delete_transitive_block_vertex_2": {
+    "omega_vec_T_minus_v": 3
+   },
+   "conclusion": "NOT whole-tournament-critical; deleting a vertex of the omega_vec=1 transitive block keeps omega_vec=3 -> lemma CONFIRMED"
+  },
+  "Delta(TT1,TT3,n7) (n=11)": {
+   "omega_vec": 3,
+   "crit3": false,
+   "conclusion": "NOT critical; consistent with lemma"
+  }
+ },
+ "whole_tournament_3critical_search_n10_11": {
+  "generator_A_Delta_partitions": {
+   "seeds": [
+    "TT1..TT5",
+    "C3",
+    "n7"
+   ],
+   "omega3_hits": [
+    "Delta(TT1,TT2,n7) n=10",
+    "Delta(TT1,TT3,n7) n=11"
+   ],
+   "all_3critical": false,
+   "whole_tournament_critical_found": 0
+  },
+  "generator_B_Stilde3_augmentations": {
+   "candidates": "~800 (S~_3 +1 or +2 vertices, n=10/11)",
+   "omega3_many": true,
+   "all_3critical": false,
+   "reason": "embedded S~_3 (order 9, omega_vec=3) survives deletion of added vertices, so min_cert_order<=9<n",
+   "whole_tournament_critical_found": 0
+  },
+  "generator_C_random_net": {
+   "checked": 20,
+   "omega3": 1,
+   "crit3": 0,
+   "whole_tournament_critical": 0,
+   "note": "throughput limited by ~70-265s/omega_vec=3 instance at n=11 (oracle wall)"
+  }
+ },
+ "whole_tournament_3critical_found_at_n10_or_n11": 0,
+ "verdict": "falsifiable prediction NOT triggered: zero whole-tournament 3-critical tournaments found at order 10 or 11; in-block-deletion mechanism CONFIRMED on Delta(TT1,TT2,n7)."
+}

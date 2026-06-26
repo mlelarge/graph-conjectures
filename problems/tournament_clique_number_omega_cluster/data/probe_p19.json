@@ -1,0 +1,27 @@
+{
+  "P": 19,
+  "g": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    10
+  ],
+  "is_tournament": true,
+  "g_partition_ok": true,
+  "abs_g_size_half": true,
+  "rotation_automorphism": true,
+  "P_mod_4": 3,
+  "consecutive_generators": false,
+  "upper_bound_min_omega_rotations": 3,
+  "has_triangle_free_order_ff0": false,
+  "lb_time_s": 528.7,
+  "omega_vec": 3,
+  "deletion_omega_vec_minus0": 2,
+  "deletion_time_s": 0.7,
+  "is_3_critical": true
+}

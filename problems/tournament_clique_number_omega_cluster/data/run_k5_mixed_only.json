@@ -1,0 +1,100 @@
+{
+  "full_value_by_proved_law": "ov(AC_7[AC_7]) = ov(AC_7)+ov(AC_7)-1 = 3+3-1 = 5",
+  "AC7_minus_v0_ov": 2,
+  "mixed_order48": [
+    {
+      "pos": 0,
+      "ge4": {
+        "order": 48,
+        "K": 4,
+        "ge": true,
+        "t": 1.1,
+        "ncl": 73710
+      },
+      "ge5": {
+        "order": 48,
+        "K": 5,
+        "ge": false,
+        "t": 0.08,
+        "ncl": 249480
+      },
+      "ov": 4
+    },
+    {
+      "pos": 1,
+      "ge4": {
+        "order": 48,
+        "K": 4,
+        "ge": true,
+        "t": 1.23,
+        "ncl": 73710
+      },
+      "ge5": {
+        "order": 48,
+        "K": 5,
+        "ge": false,
+        "t": 0.08,
+        "ncl": 249480
+      },
+      "ov": 4
+    },
+    {
+      "pos": 2,
+      "ge4": {
+        "order": 48,
+        "K": 4,
+        "ge": true,
+        "t": 1.17,
+        "ncl": 73710
+      },
+      "ge5": {
+        "order": 48,
+        "K": 5,
+        "ge": false,
+        "t": 0.08,
+        "ncl": 249480
+      },
+      "ov": 4
+    },
+    {
+      "pos": 3,
+      "ge4": {
+        "order": 48,
+        "K": 4,
+        "ge": true,
+        "t": 1.2,
+        "ncl": 73710
+      },
+      "ge5": {
+        "order": 48,
+        "K": 5,
+        "ge": false,
+        "t": 0.11,
+        "ncl": 249480
+      },
+      "ov": 4
+    },
+    {
+      "pos": 6,
+      "ge4": {
+        "order": 48,
+        "K": 4,
+        "ge": true,
+        "t": 1.22,
+        "ncl": 73710
+      },
+      "ge5": {
+        "order": 48,
+        "K": 5,
+        "ge": false,
+        "t": 0.08,
+        "ncl": 249480
+      },
+      "ov": 4
+    }
+  ],
+  "all_drop_to_4": true,
+  "any_no_drop_ov5": false,
+  "any_inconclusive": false,
+  "elapsed_s": 25.4
+}

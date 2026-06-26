@@ -1,0 +1,17 @@
+{
+ "leg_dic": {
+  "dic4_D_SAT": false,
+  "dic4_Dminusv_SAT": true,
+  "verdict": "dic(D)>=5 and dic(D-v)<=4 OK"
+ },
+ "leg_lower": {
+  "no_K5_SAT": true,
+  "witness_clique": 4,
+  "verdict": "KILL omega_vec(D)<=4"
+ },
+ "leg_upper": {
+  "no_K5_SAT": true,
+  "clique": 4,
+  "verdict": "omega_vec(D)=4 KILL"
+ }
+}

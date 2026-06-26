@@ -1,0 +1,20 @@
+{
+  "n": 4,
+  "geng_args": [
+    "-d2"
+  ],
+  "n_connected_mindeg": 3,
+  "n_pendant_free": 3,
+  "n_bad": 1,
+  "bad": [
+    {
+      "graph6": "C]",
+      "n": 4,
+      "m_edges": 4,
+      "ell": 1,
+      "br": 0,
+      "ell_plus_br": 1,
+      "deficit": 3
+    }
+  ]
+}

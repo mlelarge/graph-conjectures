@@ -1,0 +1,358 @@
+\documentclass[11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage[hidelinks]{hyperref}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\tomega}{\vec{\omega}}
+\newcommand{\domn}{\operatorname{dom}}
+\newcommand{\dic}{\operatorname{dic}}
+\newcommand{\AC}{\operatorname{AC}}
+\newcommand{\Cay}{\operatorname{Cay}}
+
+\title{The \(k=3\) Case of Conjecture 5.10}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\begin{theorem}
+For every odd integer \(n=2m+1\geq 7\), the almost-consecutive
+circulant tournament
+\[
+  \AC_n
+  =
+  \Cay\!\left(
+    \Z/n\Z,\,
+    \{1,\ldots,m-1\}\cup\{m+1\}
+  \right),
+\]
+where
+\[
+  i\longrightarrow j
+  \quad\Longleftrightarrow\quad
+  j-i\pmod n\in g,
+  \qquad
+  g=\{1,\ldots,m-1\}\cup\{m+1\},
+\]
+is \(3\)-\(\tomega\)-critical.
+
+Consequently, there are infinitely many \(3\)-\(\tomega\)-critical
+tournaments, so the \(k=3\) case of Conjecture~5.10 of
+Aboulker--Aubian--Charbit--Lopes~\cite{AACL} holds. Moreover,
+Question~5.9 of \cite{AACL} has a negative answer for \(k=3\).
+\end{theorem}
+
+Recall that the tournament clique number is
+\[
+  \tomega(T)
+  =
+  \min_{\sigma}
+  \omega\!\left(B_{\sigma}(T)\right),
+\]
+where the minimum is over all total orderings \(\sigma\) of \(V(T)\),
+and \(B_{\sigma}(T)\) is the back-edge graph: if
+\(i<_{\sigma}j\), then \(\{i,j\}\) is an edge of
+\(B_{\sigma}(T)\) exactly when \(j\to i\) is an arc of \(T\).
+A tournament \(T\) is \(k\)-\(\tomega\)-critical if
+\[
+  \tomega(T)=k
+  \quad\text{and}\quad
+  \tomega(T-v)=k-1
+  \quad\text{for every }v\in V(T).
+\]
+
+\begin{proof}
+We divide the proof into four steps.
+
+\medskip
+\noindent
+\textbf{Step 1: \(\AC_n\) is a tournament.}
+For each \(r\in\{1,\ldots,m\}\), exactly one of \(r\) and \(n-r\)
+belongs to \(g\). Indeed, if \(r\leq m-1\), then \(r\in g\), whereas
+\[
+  n-r=2m+1-r\geq m+2
+\]
+does not belong to \(g\). For \(r=m\), we have \(m\notin g\), while
+\(n-m=m+1\in g\). Thus \(g\) contains exactly one element from each
+pair \(\{r,-r\}\) of nonzero residues, so \(\AC_n\) is a tournament.
+It is vertex-transitive, since every rotation \(x\mapsto x+c\) is an
+automorphism. Notice that primality of \(n\) is not used.
+
+\medskip
+\noindent
+\textbf{Step 2: the upper bound \(\tomega(\AC_n)\leq 3\).}
+Consider the identity order
+\[
+  0<1<\cdots<n-1.
+\]
+For \(0\leq i<j\leq n-1\), the pair \(\{i,j\}\) is a back edge if and
+only if \(j\to i\), or equivalently
+\[
+  i-j\pmod n\in g.
+\]
+In terms of the ordinary integer gap \(j-i\), this is equivalent to
+\[
+  j-i\in
+  D:=\{m\}\cup\{m+2,\ldots,2m\}.
+\]
+In particular, every back-edge gap is at least \(m\).
+
+Suppose that
+\[
+  a_1<a_2<\cdots<a_q
+\]
+is a clique in the back-edge graph. Each consecutive gap is at least
+\(m\), and therefore
+\[
+  a_q-a_1\geq(q-1)m.
+\]
+On the other hand, \(a_q-a_1\leq n-1=2m\). Hence \(q\leq 3\), proving
+\[
+  \tomega(\AC_n)\leq 3.
+\]
+
+We also record the equality case. If
+\(a_1<a_2<a_3\) is a back-edge triangle, then both consecutive gaps
+are at least \(m\), while \(a_3-a_1\leq2m\). Consequently both gaps
+equal \(m\), so
+\[
+  \{a_1,a_2,a_3\}
+  =
+  \{a_1,a_1+m,a_1+2m\}.
+\]
+Since \(a_1+2m\leq2m\), we must have \(a_1=0\). Thus the unique
+back-edge triangle in the identity order is
+\[
+  \{0,m,2m\}.
+\]
+
+\medskip
+\noindent
+\textbf{Step 3: the lower bound \(\tomega(\AC_n)\geq3\).}
+Let
+\[
+  N_0=N^+[0]
+  =
+  \{0\}\cup g
+  =
+  \{0,1,\ldots,m-1,m+1\}.
+\]
+Then \(|N_0|=m+1\), and vertex-transitivity gives
+\[
+  N^+[v]=N_0+v
+  \qquad\text{for every }v\in\Z/n\Z.
+\]
+A pair \(\{0,v\}\) dominates \(\AC_n\) if and only if
+\[
+  N_0\cup(N_0+v)=\Z/n\Z.
+\]
+Since \(2|N_0|-n=1\), this is equivalent to
+\[
+  |N_0\cap(N_0+v)|=1.
+\]
+No singleton dominates, because \(|N_0|=m+1<n\). The required
+domination lower bound therefore follows from the next lemma.
+
+\begin{lemma}\label{lem:overlap}
+For every odd integer \(n=2m+1\geq7\),
+\[
+  \min_{t\neq0}|N_0\cap(N_0+t)|=2.
+\]
+\end{lemma}
+
+\begin{proof}
+Put
+\[
+  J=\{0,1,\ldots,m+1\},
+  \qquad
+  N_0=J\setminus\{m\},
+\]
+and let
+\[
+  K=(\Z/n\Z)\setminus J=\{m+2,\ldots,2m\}.
+\]
+Thus \(|J|=m+2\) and \(|K|=m-1\). By taking complements,
+\[
+  |J\cap(J+t)|
+  =
+  n-|K\cup(K+t)|
+  =
+  3+|K\cap(K+t)|.
+\]
+For \(1\leq t\leq m\), the set \(K\) is an interval of length
+\(m-1\), and hence
+\[
+  |K\cap(K+t)|=\max\{0,m-1-t\}.
+\]
+It follows that
+\[
+  |J\cap(J+t)|
+  =
+  \begin{cases}
+    m+2-t, & 1\leq t\leq m-1,\\
+    3,     & t=m.
+  \end{cases}
+\]
+
+Passing from \(J\) to \(N_0=J\setminus\{m\}\) removes \(m\) from the
+intersection whenever \(m-t\in J\), which holds for every
+\(1\leq t\leq m\). It also removes \(m+t\) whenever \(m+t\in J\),
+which occurs exactly when \(t=1\). Therefore
+\[
+  |N_0\cap(N_0+t)|
+  =
+  \begin{cases}
+    m-1,   & t=1,\\
+    m+1-t, & 2\leq t\leq m-1,\\
+    2,     & t=m.
+  \end{cases}
+\]
+All these quantities are at least \(2\), since \(m\geq3\).
+Finally,
+\[
+  |N_0\cap(N_0+t)|
+  =
+  |N_0\cap(N_0-t)|,
+\]
+so the calculation for \(1\leq t\leq m\) covers every nonzero
+residue \(t\). The minimum is therefore \(2\).
+\end{proof}
+
+For completeness, when \(n=7\), every nonzero \(t\) attains the
+minimum in Lemma~\ref{lem:overlap}. For every odd \(n\geq9\), the
+minimizers are exactly
+\[
+  \{m-1,m,m+1,m+2\}.
+\]
+
+Lemma~\ref{lem:overlap} implies that no pair dominates \(\AC_n\), and
+hence
+\[
+  \domn(\AC_n)\geq3.
+\]
+Property~3.2 of \cite{AACL} states that
+\[
+  \domn(T)\leq\tomega(T)\leq\dic(T)
+\]
+for every tournament \(T\). Consequently,
+\[
+  \tomega(\AC_n)\geq3.
+\]
+Together with Step~2, this proves
+\[
+  \tomega(\AC_n)=3.
+\]
+
+\medskip
+\noindent
+\textbf{Step 4: criticality.}
+By vertex-transitivity, it suffices to delete the vertex \(0\). The
+unique back-edge triangle in the identity order is \(\{0,m,2m\}\).
+Therefore the restriction of the identity order to
+\(V(\AC_n)\setminus\{0\}\) has a triangle-free back-edge graph, and
+so
+\[
+  \tomega(\AC_n-0)\leq2.
+\]
+
+Conversely, \(\AC_n-0\) contains the directed triangle
+\[
+  1\longrightarrow2\longrightarrow m+3\longrightarrow1.
+\]
+Indeed, the corresponding differences are
+\[
+  1,\qquad m+1,\qquad
+  1-(m+3)\equiv m-1\pmod n,
+\]
+all of which belong to \(g\). The vertices \(1,2,m+3\) are distinct
+and nonzero, since \(m\geq3\). A tournament has clique number \(1\)
+if and only if it is transitive, so the presence of this directed
+triangle gives
+\[
+  \tomega(\AC_n-0)\geq2.
+\]
+Thus
+\[
+  \tomega(\AC_n-v)=2
+  \qquad\text{for every }v\in V(\AC_n).
+\]
+This proves that \(\AC_n\) is \(3\)-\(\tomega\)-critical.
+
+Distinct odd values of \(n\) give tournaments of distinct orders.
+Hence
+\[
+  \{\AC_n:n\geq7\text{ odd}\}
+\]
+is an infinite family of pairwise nonisomorphic
+\(3\)-\(\tomega\)-critical tournaments.
+
+It remains to state explicitly why Question~5.9 fails for \(k=3\).
+Every proper subtournament \(A\subsetneq\AC_n\) omits some vertex
+\(v\), and therefore
+\[
+  A\subseteq\AC_n-v.
+\]
+By monotonicity under taking subtournaments,
+\[
+  \tomega(A)
+  \leq
+  \tomega(\AC_n-v)
+  =
+  2.
+\]
+Thus the only subtournament of \(\AC_n\) with clique number at least
+\(3\) is \(\AC_n\) itself. Since \(n\) is unbounded, no bound
+\(\ell(3)\) as in Question~5.9 can exist.
+\end{proof}
+
+\section*{Relation to the result of Crew--Fan--Koerts--Moore--Spirkl}
+
+There is no contradiction with the 2026 result of
+Crew--Fan--Koerts--Moore--Spirkl~\cite{CFKMS}. Their theorem confirms
+Conjecture~5.8 of \cite{AACL}: there exist functions \(f\) and
+\(\ell\) such that
+\[
+  \tomega(T)\geq f(k)
+  \quad\Longrightarrow\quad
+  \text{\(T\) contains \(X\) with
+  \(|V(X)|\leq\ell(k)\) and \(\tomega(X)\geq k\)}.
+\]
+Question~5.9 asks for the strictly stronger statement in which the
+threshold function is the identity, namely \(f(k)=k\). The
+tournaments \(\AC_n\) all satisfy \(\tomega(\AC_n)=3\), so they
+disprove this identity-threshold statement at \(k=3\). They do not
+conflict with a theorem whose hypothesis at \(k=3\) may require
+\(\tomega(T)\geq f(3)>3\).
+
+\section*{Provenance and dependencies}
+
+The construction, the identity-order upper bound, the uniqueness of
+the back-edge triangle, Lemma~\ref{lem:overlap}, and the criticality
+argument are self-contained. The sole external input is
+Property~3.2 of \cite{AACL}, used to pass from
+\(\domn(\AC_n)\geq3\) to \(\tomega(\AC_n)\geq3\).
+
+\begin{thebibliography}{2}
+
+\bibitem{AACL}
+P.~Aboulker, G.~Aubian, P.~Charbit, and R.~Lopes,
+\newblock \emph{Clique number of tournaments},
+\newblock arXiv:2310.04265, 2023.
+
+\bibitem{CFKMS}
+L.~Crew, X.~Fan, H.~Koerts, B.~Moore, and S.~Spirkl,
+\newblock \emph{Characterizing large clique number in tournaments},
+\newblock arXiv:2602.09863, 2026.
+
+\end{thebibliography}
+
+\end{document}

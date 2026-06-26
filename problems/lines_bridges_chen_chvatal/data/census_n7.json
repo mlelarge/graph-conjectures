@@ -1,0 +1,109 @@
+{
+  "n": 7,
+  "n_connected_graphs": 853,
+  "n_counterexamples": 2,
+  "n_counterexamples_bridgeless": 0,
+  "n_counterexamples_with_bridge": 2,
+  "witnesses": [
+    {
+      "edges": [
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          4,
+          6
+        ]
+      ],
+      "ell": 4,
+      "br": 2,
+      "lhs": 6,
+      "bridgeless": false,
+      "bridge_list": [
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ]
+      ]
+    },
+    {
+      "edges": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          4,
+          6
+        ]
+      ],
+      "ell": 4,
+      "br": 1,
+      "lhs": 5,
+      "bridgeless": false,
+      "bridge_list": [
+        [
+          2,
+          4
+        ]
+      ]
+    }
+  ]
+}

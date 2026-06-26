@@ -1,0 +1,155 @@
+{
+  "Ns": [
+    17,
+    19
+  ],
+  "results": [
+    {
+      "n": 17,
+      "order": 51,
+      "gen": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9
+      ],
+      "gen_valid": true,
+      "is_tournament": true,
+      "transitivity": {
+        "sigma_is_aut": true,
+        "tau_is_aut": true,
+        "orbit_size_of_0": 51,
+        "transitive": true
+      },
+      "omega_vec_Dn": 4,
+      "omega_vec_detail": {
+        "ge": {
+          "2": true,
+          "3": true,
+          "4": true,
+          "5": false
+        },
+        "times": {
+          "2": 0.024,
+          "3": 0.029,
+          "4": 32.277,
+          "5": 0.134
+        }
+      },
+      "deletions": [
+        {
+          "deleted_vertex": 0,
+          "omega_vec": 3,
+          "ge": {
+            "2": true,
+            "3": true,
+            "4": false
+          }
+        },
+        {
+          "deleted_vertex": 17,
+          "omega_vec": 3,
+          "ge": {
+            "2": true,
+            "3": true,
+            "4": false
+          }
+        },
+        {
+          "deleted_vertex": 34,
+          "omega_vec": 3,
+          "ge": {
+            "2": true,
+            "3": true,
+            "4": false
+          }
+        }
+      ],
+      "all_deletion_omega_vec": [
+        3,
+        3,
+        3
+      ],
+      "prediction_holds": true,
+      "seconds": 40.4
+    },
+    {
+      "n": 19,
+      "order": 57,
+      "gen": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10
+      ],
+      "gen_valid": true,
+      "is_tournament": true,
+      "transitivity": {
+        "sigma_is_aut": true,
+        "tau_is_aut": true,
+        "orbit_size_of_0": 57,
+        "transitive": true
+      },
+      "omega_vec_Dn": 4,
+      "omega_vec_detail": {
+        "ge": {
+          "2": true,
+          "3": true,
+          "4": true,
+          "5": false
+        },
+        "times": {
+          "2": 0.033,
+          "3": 0.039,
+          "4": 51.215,
+          "5": 0.231
+        }
+      },
+      "deletions": [
+        {
+          "deleted_vertex": 0,
+          "omega_vec": 3,
+          "ge": {
+            "2": true,
+            "3": true,
+            "4": false
+          }
+        },
+        {
+          "deleted_vertex": 19,
+          "omega_vec": 3,
+          "ge": {
+            "2": true,
+            "3": true,
+            "4": false
+          }
+        },
+        {
+          "deleted_vertex": 38,
+          "omega_vec": 3,
+          "ge": {
+            "2": true,
+            "3": true,
+            "4": false
+          }
+        }
+      ],
+      "all_deletion_omega_vec": [
+        3,
+        3,
+        3
+      ],
+      "prediction_holds": true,
+      "seconds": 64.8
+    }
+  ]
+}

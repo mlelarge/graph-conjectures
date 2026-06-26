@@ -1,0 +1,348 @@
+{
+ "ns": [
+  31,
+  33
+ ],
+ "target_cores": 80,
+ "seeds_tried": 80,
+ "sources_with_dic4": 80,
+ "n_verified_cores": 80,
+ "core_order_hist": {
+  "16": 11,
+  "17": 19,
+  "19": 7,
+  "18": 37,
+  "20": 4,
+  "15": 1,
+  "21": 1
+ },
+ "f4_alignment_count": 0,
+ "f4_alignment_fraction": 0.0,
+ "ov_hist": {
+  "<4": 80
+ },
+ "aligned_witnesses": [],
+ "all_cores_summary": [
+  {
+   "core_order": 16,
+   "ov": "<4"
+  },
+  {
+   "core_order": 17,
+   "ov": "<4"
+  },
+  {
+   "core_order": 19,
+   "ov": "<4"
+  },
+  {
+   "core_order": 18,
+   "ov": "<4"
+  },
+  {
+   "core_order": 18,
+   "ov": "<4"
+  },
+  {
+   "core_order": 19,
+   "ov": "<4"
+  },
+  {
+   "core_order": 17,
+   "ov": "<4"
+  },
+  {
+   "core_order": 18,
+   "ov": "<4"
+  },
+  {
+   "core_order": 18,
+   "ov": "<4"
+  },
+  {
+   "core_order": 17,
+   "ov": "<4"
+  },
+  {
+   "core_order": 18,
+   "ov": "<4"
+  },
+  {
+   "core_order": 18,
+   "ov": "<4"
+  },
+  {
+   "core_order": 20,
+   "ov": "<4"
+  },
+  {
+   "core_order": 16,
+   "ov": "<4"
+  },
+  {
+   "core_order": 18,
+   "ov": "<4"
+  },
+  {
+   "core_order": 20,
+   "ov": "<4"
+  },
+  {
+   "core_order": 17,
+   "ov": "<4"
+  },
+  {
+   "core_order": 18,
+   "ov": "<4"
+  },
+  {
+   "core_order": 17,
+   "ov": "<4"
+  },
+  {
+   "core_order": 17,
+   "ov": "<4"
+  },
+  {
+   "core_order": 17,
+   "ov": "<4"
+  },
+  {
+   "core_order": 18,
+   "ov": "<4"
+  },
+  {
+   "core_order": 17,
+   "ov": "<4"
+  },
+  {
+   "core_order": 17,
+   "ov": "<4"
+  },
+  {
+   "core_order": 18,
+   "ov": "<4"
+  },
+  {
+   "core_order": 18,
+   "ov": "<4"
+  },
+  {
+   "core_order": 18,
+   "ov": "<4"
+  },
+  {
+   "core_order": 18,
+   "ov": "<4"
+  },
+  {
+   "core_order": 17,
+   "ov": "<4"
+  },
+  {
+   "core_order": 19,
+   "ov": "<4"
+  },
+  {
+   "core_order": 18,
+   "ov": "<4"
+  },
+  {
+   "core_order": 16,
+   "ov": "<4"
+  },
+  {
+   "core_order": 16,
+   "ov": "<4"
+  },
+  {
+   "core_order": 18,
+   "ov": "<4"
+  },
+  {
+   "core_order": 17,
+   "ov": "<4"
+  },
+  {
+   "core_order": 18,
+   "ov": "<4"
+  },
+  {
+   "core_order": 16,
+   "ov": "<4"
+  },
+  {
+   "core_order": 18,
+   "ov": "<4"
+  },
+  {
+   "core_order": 16,
+   "ov": "<4"
+  },
+  {
+   "core_order": 18,
+   "ov": "<4"
+  },
+  {
+   "core_order": 17,
+   "ov": "<4"
+  },
+  {
+   "core_order": 18,
+   "ov": "<4"
+  },
+  {
+   "core_order": 17,
+   "ov": "<4"
+  },
+  {
+   "core_order": 20,
+   "ov": "<4"
+  },
+  {
+   "core_order": 18,
+   "ov": "<4"
+  },
+  {
+   "core_order": 18,
+   "ov": "<4"
+  },
+  {
+   "core_order": 18,
+   "ov": "<4"
+  },
+  {
+   "core_order": 16,
+   "ov": "<4"
+  },
+  {
+   "core_order": 17,
+   "ov": "<4"
+  },
+  {
+   "core_order": 18,
+   "ov": "<4"
+  },
+  {
+   "core_order": 19,
+   "ov": "<4"
+  },
+  {
+   "core_order": 17,
+   "ov": "<4"
+  },
+  {
+   "core_order": 16,
+   "ov": "<4"
+  },
+  {
+   "core_order": 19,
+   "ov": "<4"
+  },
+  {
+   "core_order": 15,
+   "ov": "<4"
+  },
+  {
+   "core_order": 19,
+   "ov": "<4"
+  },
+  {
+   "core_order": 18,
+   "ov": "<4"
+  },
+  {
+   "core_order": 18,
+   "ov": "<4"
+  },
+  {
+   "core_order": 18,
+   "ov": "<4"
+  },
+  {
+   "core_order": 18,
+   "ov": "<4"
+  },
+  {
+   "core_order": 17,
+   "ov": "<4"
+  },
+  {
+   "core_order": 17,
+   "ov": "<4"
+  },
+  {
+   "core_order": 18,
+   "ov": "<4"
+  },
+  {
+   "core_order": 16,
+   "ov": "<4"
+  },
+  {
+   "core_order": 18,
+   "ov": "<4"
+  },
+  {
+   "core_order": 21,
+   "ov": "<4"
+  },
+  {
+   "core_order": 18,
+   "ov": "<4"
+  },
+  {
+   "core_order": 18,
+   "ov": "<4"
+  },
+  {
+   "core_order": 18,
+   "ov": "<4"
+  },
+  {
+   "core_order": 17,
+   "ov": "<4"
+  },
+  {
+   "core_order": 16,
+   "ov": "<4"
+  },
+  {
+   "core_order": 18,
+   "ov": "<4"
+  },
+  {
+   "core_order": 18,
+   "ov": "<4"
+  },
+  {
+   "core_order": 18,
+   "ov": "<4"
+  },
+  {
+   "core_order": 16,
+   "ov": "<4"
+  },
+  {
+   "core_order": 18,
+   "ov": "<4"
+  },
+  {
+   "core_order": 18,
+   "ov": "<4"
+  },
+  {
+   "core_order": 17,
+   "ov": "<4"
+  },
+  {
+   "core_order": 20,
+   "ov": "<4"
+  },
+  {
+   "core_order": 19,
+   "ov": "<4"
+  }
+ ],
+ "wall_s": 7.7
+}

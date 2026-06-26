@@ -1,0 +1,4 @@
+[p=17 #1] g=[1, 2, 3, 4, 5, 6, 7, 8] consec=True class=2 crit=False (0.00s)
+[p=17] g=[1, 2, 3, 4, 5, 6, 7, 9] consec=False omega_vec=3 -> 3critical=True (71.15s)
+[p=17 #2] g=[1, 2, 3, 4, 5, 6, 7, 9] consec=False class=3 crit=True (71.15s)
+[p=17 #3] g=[1, 2, 3, 4, 5, 6, 8, 10] consec=False class=>=3 crit=False (278.98s)

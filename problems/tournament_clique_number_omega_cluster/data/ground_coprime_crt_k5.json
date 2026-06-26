@@ -1,0 +1,20 @@
+{
+  "order": 63,
+  "is_tournament": true,
+  "is_Z63_circulant": true,
+  "connection_set_size": 31,
+  "merged_order_full_clique_upper": 5,
+  "full_template_and_2000random_upper": 5,
+  "full_no_K5_SAT": "INFEASIBLE_TIMEOUT_595s_Cadical_and_Glucose3 (1.34M clauses, G24 wall)",
+  "omega_vec_full_status": "in {4,5} by sandwich; upper=5 (no order<5 found); lower>=5 SAT-infeasible",
+  "deletion_vertex": "(0,0)=flat0",
+  "deletion_order": 62,
+  "deletion_inner_then_outer_template_clique": 4,
+  "deletion_no_K4_UNSAT_ge4": true,
+  "deletion_no_K4_time_s": 1.81,
+  "deletion_omega_vec_eq4": true,
+  "all_63_deletions_eq4_by_Z63_vertex_transitivity": true,
+  "KILL_no_drop_fired": false,
+  "CONFIRM_deletion_drops_to_4": true,
+  "is_5_critical_modulo_full_lower_bound": true
+}

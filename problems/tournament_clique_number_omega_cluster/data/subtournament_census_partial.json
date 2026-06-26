@@ -1,0 +1,18 @@
+{
+  "note": "Census-ladder method INFEASIBLE within 900s foreground budget. Per-level omega_vec_le2 cost grows super-linearly; ladder cannot reach s=12 for p=19 nor s=13 for AC_17.",
+  "ac17": {"p":17,"g":[1,2,3,4,5,6,7,9],"levels":{
+    "7":{"m":false,"calls":8008,"time_s":0.44},
+    "8":{"m":false,"calls":11440,"time_s":2.59},
+    "9":{"m":false,"calls":12870,"time_s":13.88},
+    "10":{"m":false,"calls":11440,"time_s":61.97},
+    "11":{"m":false,"calls":8008,"time_s":191.05},
+    "12":{"m":false,"calls":4368,"time_s":341.72,"note":"killed by 900s timeout mid-level"}},
+    "smallest_s":null},
+  "p19": {"p":19,"g":[1,2,3,4,5,6,7,8,10],"levels":{
+    "7":{"m":false,"calls":18564,"time_s":0.52},
+    "8":{"m":false,"calls":31824,"time_s":3.59},
+    "9":{"m":false,"calls":43758,"time_s":23.88},
+    "10":{"m":false,"calls":48620,"time_s":130.37},
+    "11":{"m":false,"calls":43758,"time_s":514.41,"note":"killed by 820s budget mid s=12"}},
+    "smallest_s":null}
+}

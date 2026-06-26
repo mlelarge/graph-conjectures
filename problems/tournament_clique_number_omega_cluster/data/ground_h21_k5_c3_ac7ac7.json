@@ -1,0 +1,22 @@
+{
+ "leg": "ground_h21_k5_c3_ac7ac7",
+ "inner": "AC_7[AC_7]",
+ "inner_order": 49,
+ "inner_ov_claimed": 5,
+ "C3_inner_order": 147,
+ "k": 5,
+ "target_merged_clique": 6,
+ "result": {
+  "n": 49,
+  "k": 5,
+  "target": 6,
+  "sigmas_tried": 0,
+  "exhausted_over_optimal_sigmas": false,
+  "timed_out": true,
+  "pass": false,
+  "min_merged_clique": null,
+  "merged_clique_histogram": {}
+ },
+ "elapsed_seconds": 90.0,
+ "verdict": "NO confirmation within budget: every enumerated sigma overshoots (merged clique >=7)"
+}

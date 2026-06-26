@@ -1,0 +1,47 @@
+{
+  "n": 8,
+  "geng_args": [
+    "-d2"
+  ],
+  "n_connected_mindeg": 7442,
+  "n_pendant_free": 7442,
+  "n_bad": 4,
+  "bad": [
+    {
+      "graph6": "GCpbQs",
+      "n": 8,
+      "m_edges": 12,
+      "ell": 7,
+      "br": 0,
+      "ell_plus_br": 7,
+      "deficit": 1
+    },
+    {
+      "graph6": "GQjVRg",
+      "n": 8,
+      "m_edges": 15,
+      "ell": 7,
+      "br": 0,
+      "ell_plus_br": 7,
+      "deficit": 1
+    },
+    {
+      "graph6": "GQzTrg",
+      "n": 8,
+      "m_edges": 16,
+      "ell": 7,
+      "br": 0,
+      "ell_plus_br": 7,
+      "deficit": 1
+    },
+    {
+      "graph6": "G]~v~w",
+      "n": 8,
+      "m_edges": 24,
+      "ell": 7,
+      "br": 0,
+      "ell_plus_br": 7,
+      "deficit": 1
+    }
+  ]
+}

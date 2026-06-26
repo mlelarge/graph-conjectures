@@ -1,0 +1,242 @@
+{
+  "is_tournament": true,
+  "g": [
+    1,
+    2,
+    4,
+    7,
+    8,
+    9,
+    11,
+    15,
+    16,
+    18
+  ],
+  "neg_g": [
+    3,
+    5,
+    6,
+    10,
+    12,
+    13,
+    14,
+    17,
+    19,
+    20
+  ],
+  "g_partition_ok": true,
+  "encoding_revalidation_ok": true,
+  "encoding_cases": [
+    {
+      "p": 7,
+      "g": [
+        1,
+        2,
+        4
+      ],
+      "ov": 3,
+      "K": 3,
+      "sat_ge": true,
+      "agree": true
+    },
+    {
+      "p": 7,
+      "g": [
+        1,
+        2,
+        4
+      ],
+      "ov": 3,
+      "K": 4,
+      "sat_ge": false,
+      "agree": true
+    },
+    {
+      "p": 7,
+      "g": [
+        1,
+        2,
+        3
+      ],
+      "ov": 2,
+      "K": 3,
+      "sat_ge": false,
+      "agree": true
+    },
+    {
+      "p": 7,
+      "g": [
+        1,
+        2,
+        3
+      ],
+      "ov": 2,
+      "K": 4,
+      "sat_ge": false,
+      "agree": true
+    },
+    {
+      "p": 9,
+      "g": [
+        1,
+        2,
+        3,
+        5
+      ],
+      "ov": 3,
+      "K": 3,
+      "sat_ge": true,
+      "agree": true
+    },
+    {
+      "p": 9,
+      "g": [
+        1,
+        2,
+        3,
+        5
+      ],
+      "ov": 3,
+      "K": 4,
+      "sat_ge": false,
+      "agree": true
+    },
+    {
+      "p": 11,
+      "g": [
+        1,
+        2,
+        3,
+        4,
+        6
+      ],
+      "ov": 3,
+      "K": 3,
+      "sat_ge": true,
+      "agree": true
+    },
+    {
+      "p": 11,
+      "g": [
+        1,
+        2,
+        3,
+        4,
+        6
+      ],
+      "ov": 3,
+      "K": 4,
+      "sat_ge": false,
+      "agree": true
+    },
+    {
+      "p": 11,
+      "g": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "ov": 2,
+      "K": 3,
+      "sat_ge": false,
+      "agree": true
+    },
+    {
+      "p": 11,
+      "g": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "ov": 2,
+      "K": 4,
+      "sat_ge": false,
+      "agree": true
+    }
+  ],
+  "omega_vec_upper": 4,
+  "upper_witness_order": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "sat_omega_vec_ge4": {
+    "ge4": true,
+    "solvers": {
+      "cadical": {
+        "sat": false,
+        "time_s": 0.341
+      },
+      "minisat": {
+        "sat": false,
+        "time_s": 0.2172
+      }
+    },
+    "nclauses": 1890
+  },
+  "sat_omega_vec_ge5": {
+    "ge5": false,
+    "solvers": {
+      "cadical": {
+        "sat": true,
+        "time_s": 0.0024
+      },
+      "minisat": {
+        "sat": true,
+        "time_s": 0.002
+      }
+    },
+    "nclauses": 1701
+  },
+  "omega_vec_exact": 4,
+  "deletion0": {
+    "upper_exact": 3,
+    "ge3_sat": true,
+    "ge4_sat": false,
+    "solvers_ge3": {
+      "cadical": {
+        "sat": false,
+        "time_s": 0.0018
+      },
+      "minisat": {
+        "sat": false,
+        "time_s": 0.0016
+      }
+    },
+    "solvers_ge4": {
+      "cadical": {
+        "sat": true,
+        "time_s": 0.0019
+      },
+      "minisat": {
+        "sat": true,
+        "time_s": 0.0017
+      }
+    }
+  },
+  "deletion0_omega_vec_exact": 3,
+  "is_4_omega_vec_critical": true,
+  "criticality_argument": "circulant => vertex-transitive (x->x+1 mod 21 automorphism) => all 21 single-vertex deletions isomorphic; deletion of vertex 0 has omega_vec=3 => all deletions=3 => T is 4-omega_vec-critical"
+}

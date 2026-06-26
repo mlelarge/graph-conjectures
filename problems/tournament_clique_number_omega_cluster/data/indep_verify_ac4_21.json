@@ -1,0 +1,41 @@
+{
+  "is_tournament": true,
+  "g_partition_ok": true,
+  "sat_validation_mismatches": [],
+  "sat_validation_ok": true,
+  "omega_vec_upper_indep_bk": 4,
+  "omega_vec_upper_canonical_crosscheck": 4,
+  "omega_vec_ge4": {
+    "ge": true,
+    "solvers": {
+      "cadical": false,
+      "minisat": false
+    },
+    "nforbid": 1890
+  },
+  "omega_vec_ge5": {
+    "ge": false,
+    "solvers": {
+      "cadical": true,
+      "minisat": true
+    },
+    "nforbid": 1701
+  },
+  "omega_vec_exact": 4,
+  "deletion0": {
+    "upper_indep": 3,
+    "upper_canonical_crosscheck": 3,
+    "ge3": true,
+    "ge4": false,
+    "solvers_ge3": {
+      "cadical": false,
+      "minisat": false
+    },
+    "solvers_ge4": {
+      "cadical": true,
+      "minisat": true
+    }
+  },
+  "deletion0_omega_vec_exact": 3,
+  "is_4_omega_vec_critical": true
+}

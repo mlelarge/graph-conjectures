@@ -1,0 +1,25 @@
+{
+ "phase": "small",
+ "census": {
+  "4": {
+   "n_iso_classes": 4,
+   "violations": 0,
+   "hist_(dicH,dicC3H)": {
+    "(1, 2)": 1,
+    "(2, 3)": 3
+   },
+   "time_s": 0.0
+  },
+  "5": {
+   "n_iso_classes": 12,
+   "violations": 0,
+   "hist_(dicH,dicC3H)": {
+    "(1, 2)": 1,
+    "(2, 3)": 11
+   },
+   "time_s": 0.0
+  }
+ },
+ "violations": [],
+ "verdict": "PASS"
+}

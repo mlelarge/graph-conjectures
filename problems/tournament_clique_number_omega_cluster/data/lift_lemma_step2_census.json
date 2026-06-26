@@ -1,0 +1,112 @@
+{
+ "qr7": {
+  "name": "C3[QR_7]",
+  "order": 21,
+  "ov_ge4": true,
+  "ov_le4": true,
+  "critical": true,
+  "deletions_checked": [
+   [
+    0,
+    true
+   ]
+  ],
+  "vt_used": true
+ },
+ "n8a": {
+  "name": "C3[n8_classA]",
+  "order": 24,
+  "ov_ge4": true,
+  "ov_le4": true,
+  "critical": false,
+  "deletions_checked": [
+   [
+    0,
+    true
+   ],
+   [
+    1,
+    true
+   ],
+   [
+    2,
+    true
+   ],
+   [
+    3,
+    false
+   ]
+  ],
+  "vt_used": false
+ },
+ "n8b": {
+  "name": "C3[n8_classB]",
+  "order": 24,
+  "ov_ge4": true,
+  "ov_le4": true,
+  "critical": false,
+  "deletions_checked": [
+   [
+    0,
+    true
+   ],
+   [
+    1,
+    true
+   ],
+   [
+    2,
+    true
+   ],
+   [
+    3,
+    true
+   ],
+   [
+    4,
+    true
+   ],
+   [
+    5,
+    true
+   ],
+   [
+    6,
+    true
+   ],
+   [
+    7,
+    false
+   ]
+  ],
+  "vt_used": false
+ },
+ "st3": {
+  "name": "C3[S~_3]",
+  "order": 27,
+  "ov_ge4": true,
+  "ov_le4": true,
+  "critical": false,
+  "deletions_checked": [
+   [
+    0,
+    false
+   ]
+  ],
+  "vt_used": true
+ },
+ "ac9": {
+  "name": "C3[AC_9]",
+  "order": 27,
+  "ov_ge4": true,
+  "ov_le4": true,
+  "critical": true,
+  "deletions_checked": [
+   [
+    0,
+    true
+   ]
+  ],
+  "vt_used": true
+ }
+}

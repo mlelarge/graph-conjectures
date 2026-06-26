@@ -1,0 +1,63 @@
+{
+ "e_potential": [
+  1,
+  1,
+  2
+ ],
+ "tiebreaks": [
+  "d,c,pos",
+  "c,d,pos",
+  "pos,rotor,c",
+  "-d,c,pos",
+  "-c,d,pos",
+  "-pos,rotor,c"
+ ],
+ "nH": 49,
+ "nC": 147,
+ "sigma0_backedge_clique_core": 5,
+ "d0_max": 5,
+ "band_permutations_tried": 4000,
+ "distinct_optimal_sigmas_found": 1,
+ "n_distinct_sigmas_tested": 1,
+ "global_min_merged_clique": 8,
+ "global_max_merged_clique": 18,
+ "merged_clique_histogram": {
+  "8": 3,
+  "9": 2,
+  "18": 1
+ },
+ "hit": null,
+ "pins_omega_vec_eq_6": false,
+ "results": [
+  {
+   "sigma_id": 0,
+   "source": "P19_constructive",
+   "merged_cliques": {
+    "0": 8,
+    "1": 9,
+    "2": 8,
+    "3": 9,
+    "4": 8,
+    "5": 18
+   },
+   "min_merged": 8
+  }
+ ],
+ "elapsed_seconds": 16.26,
+ "strengthened_local_swap_harvest": {
+  "distinct_optimal_sigmas_clique5": 60,
+  "merged_orders_tested": 360,
+  "merged_clique_histogram": {
+   "8": 35,
+   "9": 153,
+   "10": 96,
+   "11": 16,
+   "17": 2,
+   "18": 58
+  },
+  "global_min_merged_clique": 8,
+  "hit_eq_6": null,
+  "note": "each sigma core-verified clique==5; merged cliques cross-checked fast==core on sigma0; MIN merged clique is 8, never reaches 6 (target) NOR 7 (kill threshold)"
+ },
+ "VERDICT": "KILL: H21 k=5 mechanism fails on proven-value tower; min merged clique 8 >= 7"
+}

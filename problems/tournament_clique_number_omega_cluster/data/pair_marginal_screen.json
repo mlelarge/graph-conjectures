@@ -1,0 +1,358 @@
+[
+  {
+    "depth": 2,
+    "heights": [
+      1,
+      1,
+      4
+    ],
+    "product": 4,
+    "H_triple": 1.8365916681089791,
+    "H_triple_lower_bound": 1.1699250014423124,
+    "shearer_rhs": 1.8365916681089791,
+    "pair_entropies": [
+      0.0,
+      1.8365916681089791,
+      1.8365916681089791
+    ],
+    "box_logs": [
+      0.0,
+      2.0,
+      2.0
+    ],
+    "gaps": [
+      0.0,
+      0.16340833189102089,
+      0.16340833189102089
+    ],
+    "sum_gaps": 0.32681666378204177,
+    "sum_gaps_per_level": 0.16340833189102089,
+    "excess_cap": 1.6601499971153753,
+    "log2_Q": 2.0,
+    "lambda_lb_from_this_witness": 1.5874010519681996,
+    "ok_gaps_nonneg": true,
+    "ok_shearer": true,
+    "ok_triple_lb": true,
+    "ok_excess_cap": true,
+    "label": "L d=2 two-free",
+    "caps": [
+      1,
+      1,
+      4
+    ]
+  },
+  {
+    "depth": 2,
+    "heights": [
+      1,
+      2,
+      2
+    ],
+    "product": 4,
+    "H_triple": 1.8910611120726526,
+    "H_triple_lower_bound": 1.1699250014423124,
+    "shearer_rhs": 1.900216502982682,
+    "pair_entropies": [
+      0.9182958340544896,
+      1.8910611120726526,
+      0.9910760598382222
+    ],
+    "box_logs": [
+      1.0,
+      2.0,
+      1.0
+    ],
+    "gaps": [
+      0.08170416594551044,
+      0.1089388879273474,
+      0.008923940161777777
+    ],
+    "sum_gaps": 0.19956699403463563,
+    "sum_gaps_per_level": 0.09978349701731781,
+    "excess_cap": 1.6601499971153753,
+    "log2_Q": 2.0,
+    "lambda_lb_from_this_witness": 1.5527808696955754,
+    "ok_gaps_nonneg": true,
+    "ok_shearer": true,
+    "ok_triple_lb": true,
+    "ok_excess_cap": true,
+    "label": "F d=2 balanced",
+    "caps": [
+      1,
+      2,
+      2
+    ]
+  },
+  {
+    "depth": 3,
+    "heights": [
+      1,
+      1,
+      8
+    ],
+    "product": 8,
+    "H_triple": 2.7548875021634682,
+    "H_triple_lower_bound": 1.7548875021634687,
+    "shearer_rhs": 2.7548875021634682,
+    "pair_entropies": [
+      0.0,
+      2.7548875021634682,
+      2.7548875021634682
+    ],
+    "box_logs": [
+      0.0,
+      3.0,
+      3.0
+    ],
+    "gaps": [
+      0.0,
+      0.24511249783653177,
+      0.24511249783653177
+    ],
+    "sum_gaps": 0.49022499567306355,
+    "sum_gaps_per_level": 0.1634083318910212,
+    "excess_cap": 2.4902249956730627,
+    "log2_Q": 3.0,
+    "lambda_lb_from_this_witness": 1.5874010519681996,
+    "ok_gaps_nonneg": true,
+    "ok_shearer": true,
+    "ok_triple_lb": true,
+    "ok_excess_cap": true,
+    "label": "L d=3 two-free",
+    "caps": [
+      1,
+      1,
+      8
+    ]
+  },
+  {
+    "depth": 3,
+    "heights": [
+      1,
+      2,
+      4
+    ],
+    "product": 8,
+    "H_triple": 2.637803818506796,
+    "H_triple_lower_bound": 1.7548875021634687,
+    "shearer_rhs": 2.6382001672854707,
+    "pair_entropies": [
+      0.9990102708804813,
+      2.637803818506796,
+      1.6395862451836642
+    ],
+    "box_logs": [
+      1.0,
+      3.0,
+      2.0
+    ],
+    "gaps": [
+      0.0009897291195186675,
+      0.362196181493204,
+      0.36041375481633575
+    ],
+    "sum_gaps": 0.7235996654290584,
+    "sum_gaps_per_level": 0.2411998884763528,
+    "excess_cap": 2.4902249956730627,
+    "log2_Q": 3.0,
+    "lambda_lb_from_this_witness": 1.6307803122362348,
+    "ok_gaps_nonneg": true,
+    "ok_shearer": true,
+    "ok_triple_lb": true,
+    "ok_excess_cap": true,
+    "label": "F d=3 balanced",
+    "caps": [
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "depth": 3,
+    "heights": [
+      2,
+      2,
+      2
+    ],
+    "product": 8,
+    "H_triple": 2.748190855223319,
+    "H_triple_lower_bound": 1.7548875021634687,
+    "shearer_rhs": 2.750433507537852,
+    "pair_entropies": [
+      1.875309503576267,
+      1.7502480079231697,
+      1.875309503576267
+    ],
+    "box_logs": [
+      2.0,
+      2.0,
+      2.0
+    ],
+    "gaps": [
+      0.12469049642373298,
+      0.2497519920768303,
+      0.12469049642373298
+    ],
+    "sum_gaps": 0.49913298492429625,
+    "sum_gaps_per_level": 0.16637766164143208,
+    "excess_cap": 2.4902249956730627,
+    "log2_Q": 3.0,
+    "lambda_lb_from_this_witness": 1.5890354733766214,
+    "ok_gaps_nonneg": true,
+    "ok_shearer": true,
+    "ok_triple_lb": true,
+    "ok_excess_cap": true,
+    "label": "L d=3 (2,2,2)",
+    "caps": [
+      2,
+      2,
+      2
+    ]
+  },
+  {
+    "depth": 4,
+    "heights": [
+      1,
+      3,
+      5
+    ],
+    "product": 15,
+    "H_triple": 3.6379496493349266,
+    "H_triple_lower_bound": 2.3398500028846247,
+    "shearer_rhs": 3.6751586795274647,
+    "pair_entropies": [
+      1.4355205042826666,
+      3.6379496493349266,
+      2.276847205437336
+    ],
+    "box_logs": [
+      1.584962500721156,
+      3.9068905956085187,
+      2.321928094887362
+    ],
+    "gaps": [
+      0.14944199643848943,
+      0.2689409462735921,
+      0.045080889450026085
+    ],
+    "sum_gaps": 0.4634638321621076,
+    "sum_gaps_per_level": 0.1158659580405269,
+    "excess_cap": 3.134081185447787,
+    "log2_Q": 3.9068905956085183,
+    "lambda_lb_from_this_witness": 1.5614598565941151,
+    "ok_gaps_nonneg": true,
+    "ok_shearer": true,
+    "ok_triple_lb": true,
+    "ok_excess_cap": true,
+    "label": "L=F d=4",
+    "caps": [
+      1,
+      3,
+      5
+    ]
+  },
+  {
+    "depth": 5,
+    "heights": [
+      2,
+      3,
+      4
+    ],
+    "product": 24,
+    "H_triple": 4.422711149625183,
+    "H_triple_lower_bound": 2.924812503605781,
+    "shearer_rhs": 4.469882360652137,
+    "pair_entropies": [
+      2.504033590856811,
+      3.4768367921120507,
+      2.9588943383354116
+    ],
+    "box_logs": [
+      2.584962500721156,
+      3.584962500721156,
+      3.0
+    ],
+    "gaps": [
+      0.08092890986434487,
+      0.10812570860910542,
+      0.0411056616645884
+    ],
+    "sum_gaps": 0.2301602801380387,
+    "sum_gaps_per_level": 0.04603205602760774,
+    "excess_cap": 3.3202999942307505,
+    "log2_Q": 4.584962500721156,
+    "lambda_lb_from_this_witness": 1.524122147046929,
+    "ok_gaps_nonneg": true,
+    "ok_shearer": true,
+    "ok_triple_lb": true,
+    "ok_excess_cap": true,
+    "label": "L d=5 (2,3,4)",
+    "caps": [
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "label": "L d=5 (1,4,6)",
+    "depth": 5,
+    "caps": [
+      1,
+      4,
+      6
+    ],
+    "sat": false
+  },
+  {
+    "label": "L d=5 (2,2,6)",
+    "depth": 5,
+    "caps": [
+      2,
+      2,
+      6
+    ],
+    "sat": false
+  },
+  {
+    "depth": 5,
+    "heights": [
+      1,
+      5,
+      5
+    ],
+    "product": 25,
+    "H_triple": 4.46933409881342,
+    "H_triple_lower_bound": 2.924812503605781,
+    "shearer_rhs": 4.4960956629019435,
+    "pair_entropies": [
+      2.214645180394912,
+      4.46933409881342,
+      2.308212046595556
+    ],
+    "box_logs": [
+      2.321928094887362,
+      4.643856189774724,
+      2.321928094887362
+    ],
+    "gaps": [
+      0.10728291449245031,
+      0.17452209096130478,
+      0.013716048291806171
+    ],
+    "sum_gaps": 0.29552105374556126,
+    "sum_gaps_per_level": 0.05910421074911225,
+    "excess_cap": 3.438087372337887,
+    "log2_Q": 4.643856189774724,
+    "lambda_lb_from_this_witness": 1.5310427919754472,
+    "ok_gaps_nonneg": true,
+    "ok_shearer": true,
+    "ok_triple_lb": true,
+    "ok_excess_cap": true,
+    "label": "F d=5 (1,5,5)",
+    "caps": [
+      1,
+      5,
+      5
+    ]
+  }
+]

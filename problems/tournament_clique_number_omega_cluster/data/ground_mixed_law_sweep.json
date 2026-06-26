@@ -1,0 +1,434 @@
+[
+  {
+    "outer": "C3",
+    "blocks": [
+      "C3",
+      "C3",
+      "C3"
+    ],
+    "order": 9,
+    "ov_exact": 3,
+    "ovT": 2,
+    "maxc": 2,
+    "max_law_pred": 3,
+    "max_law_ok": true,
+    "ovT[C3]": 3,
+    "drop_from_TC3": 0
+  },
+  {
+    "outer": "C3",
+    "blocks": [
+      "C3",
+      "C3",
+      "TT2"
+    ],
+    "order": 8,
+    "ov_exact": 2,
+    "ovT": 2,
+    "maxc": 2,
+    "max_law_pred": 3,
+    "max_law_ok": false,
+    "ovT[C3]": 3,
+    "drop_from_TC3": 1
+  },
+  {
+    "outer": "C3",
+    "blocks": [
+      "C3",
+      "C3",
+      "TT1"
+    ],
+    "order": 7,
+    "ov_exact": 2,
+    "ovT": 2,
+    "maxc": 2,
+    "max_law_pred": 3,
+    "max_law_ok": false,
+    "ovT[C3]": 3,
+    "drop_from_TC3": 1
+  },
+  {
+    "outer": "C3",
+    "blocks": [
+      "C3",
+      "TT2",
+      "C3"
+    ],
+    "order": 8,
+    "ov_exact": 2,
+    "ovT": 2,
+    "maxc": 2,
+    "max_law_pred": 3,
+    "max_law_ok": false,
+    "ovT[C3]": 3,
+    "drop_from_TC3": 1
+  },
+  {
+    "outer": "C3",
+    "blocks": [
+      "C3",
+      "TT2",
+      "TT2"
+    ],
+    "order": 7,
+    "ov_exact": 2,
+    "ovT": 2,
+    "maxc": 2,
+    "max_law_pred": 3,
+    "max_law_ok": false,
+    "ovT[C3]": 3,
+    "drop_from_TC3": 1
+  },
+  {
+    "outer": "C3",
+    "blocks": [
+      "C3",
+      "TT2",
+      "TT1"
+    ],
+    "order": 6,
+    "ov_exact": 2,
+    "ovT": 2,
+    "maxc": 2,
+    "max_law_pred": 3,
+    "max_law_ok": false,
+    "ovT[C3]": 3,
+    "drop_from_TC3": 1
+  },
+  {
+    "outer": "C3",
+    "blocks": [
+      "C3",
+      "TT1",
+      "C3"
+    ],
+    "order": 7,
+    "ov_exact": 2,
+    "ovT": 2,
+    "maxc": 2,
+    "max_law_pred": 3,
+    "max_law_ok": false,
+    "ovT[C3]": 3,
+    "drop_from_TC3": 1
+  },
+  {
+    "outer": "C3",
+    "blocks": [
+      "C3",
+      "TT1",
+      "TT2"
+    ],
+    "order": 6,
+    "ov_exact": 2,
+    "ovT": 2,
+    "maxc": 2,
+    "max_law_pred": 3,
+    "max_law_ok": false,
+    "ovT[C3]": 3,
+    "drop_from_TC3": 1
+  },
+  {
+    "outer": "C3",
+    "blocks": [
+      "C3",
+      "TT1",
+      "TT1"
+    ],
+    "order": 5,
+    "ov_exact": 2,
+    "ovT": 2,
+    "maxc": 2,
+    "max_law_pred": 3,
+    "max_law_ok": false,
+    "ovT[C3]": 3,
+    "drop_from_TC3": 1
+  },
+  {
+    "outer": "C3",
+    "blocks": [
+      "TT2",
+      "C3",
+      "C3"
+    ],
+    "order": 8,
+    "ov_exact": 2,
+    "ovT": 2,
+    "maxc": 2,
+    "max_law_pred": 3,
+    "max_law_ok": false,
+    "ovT[C3]": 3,
+    "drop_from_TC3": 1
+  },
+  {
+    "outer": "C3",
+    "blocks": [
+      "TT2",
+      "C3",
+      "TT2"
+    ],
+    "order": 7,
+    "ov_exact": 2,
+    "ovT": 2,
+    "maxc": 2,
+    "max_law_pred": 3,
+    "max_law_ok": false,
+    "ovT[C3]": 3,
+    "drop_from_TC3": 1
+  },
+  {
+    "outer": "C3",
+    "blocks": [
+      "TT2",
+      "C3",
+      "TT1"
+    ],
+    "order": 6,
+    "ov_exact": 2,
+    "ovT": 2,
+    "maxc": 2,
+    "max_law_pred": 3,
+    "max_law_ok": false,
+    "ovT[C3]": 3,
+    "drop_from_TC3": 1
+  },
+  {
+    "outer": "C3",
+    "blocks": [
+      "TT2",
+      "TT2",
+      "C3"
+    ],
+    "order": 7,
+    "ov_exact": 2,
+    "ovT": 2,
+    "maxc": 2,
+    "max_law_pred": 3,
+    "max_law_ok": false,
+    "ovT[C3]": 3,
+    "drop_from_TC3": 1
+  },
+  {
+    "outer": "C3",
+    "blocks": [
+      "TT2",
+      "TT2",
+      "TT2"
+    ],
+    "order": 6,
+    "ov_exact": 2,
+    "ovT": 2,
+    "maxc": 1,
+    "max_law_pred": 2,
+    "max_law_ok": true,
+    "ovT[C3]": 3,
+    "drop_from_TC3": 1
+  },
+  {
+    "outer": "C3",
+    "blocks": [
+      "TT2",
+      "TT2",
+      "TT1"
+    ],
+    "order": 5,
+    "ov_exact": 2,
+    "ovT": 2,
+    "maxc": 1,
+    "max_law_pred": 2,
+    "max_law_ok": true,
+    "ovT[C3]": 3,
+    "drop_from_TC3": 1
+  },
+  {
+    "outer": "C3",
+    "blocks": [
+      "TT2",
+      "TT1",
+      "C3"
+    ],
+    "order": 6,
+    "ov_exact": 2,
+    "ovT": 2,
+    "maxc": 2,
+    "max_law_pred": 3,
+    "max_law_ok": false,
+    "ovT[C3]": 3,
+    "drop_from_TC3": 1
+  },
+  {
+    "outer": "C3",
+    "blocks": [
+      "TT2",
+      "TT1",
+      "TT2"
+    ],
+    "order": 5,
+    "ov_exact": 2,
+    "ovT": 2,
+    "maxc": 1,
+    "max_law_pred": 2,
+    "max_law_ok": true,
+    "ovT[C3]": 3,
+    "drop_from_TC3": 1
+  },
+  {
+    "outer": "C3",
+    "blocks": [
+      "TT2",
+      "TT1",
+      "TT1"
+    ],
+    "order": 4,
+    "ov_exact": 2,
+    "ovT": 2,
+    "maxc": 1,
+    "max_law_pred": 2,
+    "max_law_ok": true,
+    "ovT[C3]": 3,
+    "drop_from_TC3": 1
+  },
+  {
+    "outer": "C3",
+    "blocks": [
+      "TT1",
+      "C3",
+      "C3"
+    ],
+    "order": 7,
+    "ov_exact": 2,
+    "ovT": 2,
+    "maxc": 2,
+    "max_law_pred": 3,
+    "max_law_ok": false,
+    "ovT[C3]": 3,
+    "drop_from_TC3": 1
+  },
+  {
+    "outer": "C3",
+    "blocks": [
+      "TT1",
+      "C3",
+      "TT2"
+    ],
+    "order": 6,
+    "ov_exact": 2,
+    "ovT": 2,
+    "maxc": 2,
+    "max_law_pred": 3,
+    "max_law_ok": false,
+    "ovT[C3]": 3,
+    "drop_from_TC3": 1
+  },
+  {
+    "outer": "C3",
+    "blocks": [
+      "TT1",
+      "C3",
+      "TT1"
+    ],
+    "order": 5,
+    "ov_exact": 2,
+    "ovT": 2,
+    "maxc": 2,
+    "max_law_pred": 3,
+    "max_law_ok": false,
+    "ovT[C3]": 3,
+    "drop_from_TC3": 1
+  },
+  {
+    "outer": "C3",
+    "blocks": [
+      "TT1",
+      "TT2",
+      "C3"
+    ],
+    "order": 6,
+    "ov_exact": 2,
+    "ovT": 2,
+    "maxc": 2,
+    "max_law_pred": 3,
+    "max_law_ok": false,
+    "ovT[C3]": 3,
+    "drop_from_TC3": 1
+  },
+  {
+    "outer": "C3",
+    "blocks": [
+      "TT1",
+      "TT2",
+      "TT2"
+    ],
+    "order": 5,
+    "ov_exact": 2,
+    "ovT": 2,
+    "maxc": 1,
+    "max_law_pred": 2,
+    "max_law_ok": true,
+    "ovT[C3]": 3,
+    "drop_from_TC3": 1
+  },
+  {
+    "outer": "C3",
+    "blocks": [
+      "TT1",
+      "TT2",
+      "TT1"
+    ],
+    "order": 4,
+    "ov_exact": 2,
+    "ovT": 2,
+    "maxc": 1,
+    "max_law_pred": 2,
+    "max_law_ok": true,
+    "ovT[C3]": 3,
+    "drop_from_TC3": 1
+  },
+  {
+    "outer": "C3",
+    "blocks": [
+      "TT1",
+      "TT1",
+      "C3"
+    ],
+    "order": 5,
+    "ov_exact": 2,
+    "ovT": 2,
+    "maxc": 2,
+    "max_law_pred": 3,
+    "max_law_ok": false,
+    "ovT[C3]": 3,
+    "drop_from_TC3": 1
+  },
+  {
+    "outer": "C3",
+    "blocks": [
+      "TT1",
+      "TT1",
+      "TT2"
+    ],
+    "order": 4,
+    "ov_exact": 2,
+    "ovT": 2,
+    "maxc": 1,
+    "max_law_pred": 2,
+    "max_law_ok": true,
+    "ovT[C3]": 3,
+    "drop_from_TC3": 1
+  },
+  {
+    "outer": "C3",
+    "blocks": [
+      "TT1",
+      "TT1",
+      "TT1"
+    ],
+    "order": 3,
+    "ov_exact": 2,
+    "ovT": 2,
+    "maxc": 1,
+    "max_law_pred": 2,
+    "max_law_ok": true,
+    "ovT[C3]": 3,
+    "drop_from_TC3": 1
+  }
+]

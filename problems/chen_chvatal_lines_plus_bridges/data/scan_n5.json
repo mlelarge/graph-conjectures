@@ -1,0 +1,47 @@
+{
+  "n": 5,
+  "geng_args": [
+    "-d2"
+  ],
+  "n_connected_mindeg": 11,
+  "n_pendant_free": 11,
+  "n_bad": 4,
+  "bad": [
+    {
+      "graph6": "DFw",
+      "n": 5,
+      "m_edges": 6,
+      "ell": 4,
+      "br": 0,
+      "ell_plus_br": 4,
+      "deficit": 1
+    },
+    {
+      "graph6": "DUw",
+      "n": 5,
+      "m_edges": 6,
+      "ell": 4,
+      "br": 0,
+      "ell_plus_br": 4,
+      "deficit": 1
+    },
+    {
+      "graph6": "D]w",
+      "n": 5,
+      "m_edges": 7,
+      "ell": 4,
+      "br": 0,
+      "ell_plus_br": 4,
+      "deficit": 1
+    },
+    {
+      "graph6": "D]{",
+      "n": 5,
+      "m_edges": 8,
+      "ell": 4,
+      "br": 0,
+      "ell_plus_br": 4,
+      "deficit": 1
+    }
+  ]
+}

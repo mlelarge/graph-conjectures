@@ -1,0 +1,29 @@
+{
+  "7": {
+    "min_alpha": 3,
+    "num_optimal": 5040,
+    "omega_vec": 3
+  },
+  "8a": {
+    "min_alpha": 3,
+    "num_optimal": 27081,
+    "omega_vec": 3
+  },
+  "8b": {
+    "min_alpha": 3,
+    "num_optimal": 27081,
+    "omega_vec": 3
+  },
+  "9": {
+    "min_alpha": 3,
+    "num_optimal": 15966,
+    "omega_vec": 3,
+    "method": "sampled-40000"
+  },
+  "11": {
+    "min_alpha": 3,
+    "num_optimal": 8167,
+    "omega_vec": 3,
+    "method": "sampled-60000"
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "family": "AC g(p)={1..(p-3)/2}U{(p+1)/2}",
+  "primes": [
+    23,
+    29,
+    31,
+    37,
+    41,
+    43,
+    47,
+    53,
+    59,
+    61,
+    67,
+    71
+  ],
+  "all_UNSAT": true,
+  "all_upper_eq3": true,
+  "first_SAT_kill": null,
+  "rows": [
+    {
+      "p": 23,
+      "phi_UNSAT": true,
+      "lower_ge3": true,
+      "upper_min_omega_rot": 3,
+      "n_transitive_triples": 1265,
+      "t_sat_s": 0.003
+    },
+    {
+      "p": 29,
+      "phi_UNSAT": true,
+      "lower_ge3": true,
+      "upper_min_omega_rot": 3,
+      "n_transitive_triples": 2639,
+      "t_sat_s": 0.0058
+    },
+    {
+      "p": 31,
+      "phi_UNSAT": true,
+      "lower_ge3": true,
+      "upper_min_omega_rot": 3,
+      "n_transitive_triples": 3255,
+      "t_sat_s": 0.0069
+    },
+    {
+      "p": 37,
+      "phi_UNSAT": true,
+      "lower_ge3": true,
+      "upper_min_omega_rot": 3,
+      "n_transitive_triples": 5661,
+      "t_sat_s": 0.0131
+    },
+    {
+      "p": 41,
+      "phi_UNSAT": true,
+      "lower_ge3": true,
+      "upper_min_omega_rot": 3,
+      "n_transitive_triples": 7790,
+      "t_sat_s": 0.0192
+    },
+    {
+      "p": 43,
+      "phi_UNSAT": true,
+      "lower_ge3": true,
+      "upper_min_omega_rot": 3,
+      "n_transitive_triples": 9030,
+      "t_sat_s": 0.0226
+    },
+    {
+      "p": 47,
+      "phi_UNSAT": true,
+      "lower_ge3": true,
+      "upper_min_omega_rot": 3,
+      "n_transitive_triples": 11891,
+      "t_sat_s": 0.0286
+    },
+    {
+      "p": 53,
+      "phi_UNSAT": true,
+      "lower_ge3": true,
+      "upper_min_omega_rot": 3,
+      "n_transitive_triples": 17225,
+      "t_sat_s": 0.0434
+    },
+    {
+      "p": 59,
+      "phi_UNSAT": true,
+      "lower_ge3": true,
+      "upper_min_omega_rot": 3,
+      "n_transitive_triples": 23954,
+      "t_sat_s": 0.0604
+    },
+    {
+      "p": 61,
+      "phi_UNSAT": true,
+      "lower_ge3": true,
+      "upper_min_omega_rot": 3,
+      "n_transitive_triples": 26535,
+      "t_sat_s": 0.0649
+    },
+    {
+      "p": 67,
+      "phi_UNSAT": true,
+      "lower_ge3": true,
+      "upper_min_omega_rot": 3,
+      "n_transitive_triples": 35376,
+      "t_sat_s": 0.0917
+    },
+    {
+      "p": 71,
+      "phi_UNSAT": true,
+      "lower_ge3": true,
+      "upper_min_omega_rot": 3,
+      "n_transitive_triples": 42245,
+      "t_sat_s": 0.1272
+    }
+  ]
+}

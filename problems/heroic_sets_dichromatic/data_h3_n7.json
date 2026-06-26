@@ -1,0 +1,103 @@
+{
+  "hypothesis": "H3",
+  "forbidden_set": [
+    "K2sym(structural:oriented)",
+    "P+3"
+  ],
+  "class": "oriented K4-free P+(3)-free digraphs",
+  "n_max": 7,
+  "max_edges_cap": null,
+  "max_orient_cap": null,
+  "n_graphs": 851,
+  "n_graphs_skipped": 0,
+  "n_orientations_enumerated": 1397271,
+  "n_in_Forb_ind": 545901,
+  "chi_d_distribution": {
+    "1": 119791,
+    "2": 426110
+  },
+  "max_chi_d": 2,
+  "max_witness": {
+    "n": 3,
+    "arcs": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "chi_d": 2
+  },
+  "first_attained_n": {
+    "1": 1,
+    "2": 3
+  },
+  "claimed_bound": 414,
+  "bound_violated": false,
+  "violation_witness": null,
+  "per_n": [
+    {
+      "n": 1,
+      "graphs": 1,
+      "graphs_skipped_edgecap": 0,
+      "orientations": 1,
+      "kept_in_Forb": 1,
+      "max_chi_d_at_n": 1
+    },
+    {
+      "n": 2,
+      "graphs": 2,
+      "graphs_skipped_edgecap": 0,
+      "orientations": 3,
+      "kept_in_Forb": 3,
+      "max_chi_d_at_n": 1
+    },
+    {
+      "n": 3,
+      "graphs": 4,
+      "graphs_skipped_edgecap": 0,
+      "orientations": 15,
+      "kept_in_Forb": 15,
+      "max_chi_d_at_n": 2
+    },
+    {
+      "n": 4,
+      "graphs": 10,
+      "graphs_skipped_edgecap": 0,
+      "orientations": 99,
+      "kept_in_Forb": 97,
+      "max_chi_d_at_n": 2
+    },
+    {
+      "n": 5,
+      "graphs": 29,
+      "graphs_skipped_edgecap": 0,
+      "orientations": 1291,
+      "kept_in_Forb": 1133,
+      "max_chi_d_at_n": 2
+    },
+    {
+      "n": 6,
+      "graphs": 120,
+      "graphs_skipped_edgecap": 0,
+      "orientations": 32931,
+      "kept_in_Forb": 22043,
+      "max_chi_d_at_n": 2
+    },
+    {
+      "n": 7,
+      "graphs": 685,
+      "graphs_skipped_edgecap": 0,
+      "orientations": 1362931,
+      "kept_in_Forb": 522609,
+      "max_chi_d_at_n": 2
+    }
+  ]
+}

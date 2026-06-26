@@ -1,0 +1,527 @@
+{
+  "problem": "two-cut portfolio construction search for F_6 < 45",
+  "target_count": 52,
+  "sat_count": 0,
+  "rows": [
+    {
+      "product": 25,
+      "A": 5,
+      "B": 5,
+      "r1": 0,
+      "r2": 0,
+      "sat": false,
+      "num_vars": 31834,
+      "num_clauses": 4951693
+    },
+    {
+      "product": 26,
+      "A": 2,
+      "B": 13,
+      "r1": 0,
+      "r2": 0,
+      "sat": false,
+      "num_vars": 33049,
+      "num_clauses": 5001913
+    },
+    {
+      "product": 26,
+      "A": 13,
+      "B": 2,
+      "r1": 0,
+      "r2": 0,
+      "sat": false,
+      "num_vars": 33049,
+      "num_clauses": 5001913
+    },
+    {
+      "product": 27,
+      "A": 3,
+      "B": 9,
+      "r1": 0,
+      "r2": 0,
+      "sat": false,
+      "num_vars": 32320,
+      "num_clauses": 4971781
+    },
+    {
+      "product": 27,
+      "A": 9,
+      "B": 3,
+      "r1": 0,
+      "r2": 0,
+      "sat": false,
+      "num_vars": 32320,
+      "num_clauses": 4971781
+    },
+    {
+      "product": 28,
+      "A": 2,
+      "B": 14,
+      "r1": 0,
+      "r2": 1,
+      "sat": false,
+      "num_vars": 33292,
+      "num_clauses": 5021515
+    },
+    {
+      "product": 28,
+      "A": 4,
+      "B": 7,
+      "r1": 0,
+      "r2": 0,
+      "sat": false,
+      "num_vars": 32077,
+      "num_clauses": 4961737
+    },
+    {
+      "product": 28,
+      "A": 7,
+      "B": 4,
+      "r1": 0,
+      "r2": 0,
+      "sat": false,
+      "num_vars": 32077,
+      "num_clauses": 4961737
+    },
+    {
+      "product": 28,
+      "A": 14,
+      "B": 2,
+      "r1": 1,
+      "r2": 0,
+      "sat": false,
+      "num_vars": 33292,
+      "num_clauses": 5021515
+    },
+    {
+      "product": 30,
+      "A": 2,
+      "B": 15,
+      "r1": 0,
+      "r2": 2,
+      "sat": false,
+      "num_vars": 33778,
+      "num_clauses": 5041360
+    },
+    {
+      "product": 30,
+      "A": 3,
+      "B": 10,
+      "r1": 0,
+      "r2": 1,
+      "sat": false,
+      "num_vars": 32563,
+      "num_clauses": 4991383
+    },
+    {
+      "product": 30,
+      "A": 5,
+      "B": 6,
+      "r1": 0,
+      "r2": 1,
+      "sat": false,
+      "num_vars": 32077,
+      "num_clauses": 4971295
+    },
+    {
+      "product": 30,
+      "A": 6,
+      "B": 5,
+      "r1": 1,
+      "r2": 0,
+      "sat": false,
+      "num_vars": 32077,
+      "num_clauses": 4971295
+    },
+    {
+      "product": 30,
+      "A": 10,
+      "B": 3,
+      "r1": 1,
+      "r2": 0,
+      "sat": false,
+      "num_vars": 32563,
+      "num_clauses": 4991383
+    },
+    {
+      "product": 30,
+      "A": 15,
+      "B": 2,
+      "r1": 2,
+      "r2": 0,
+      "sat": false,
+      "num_vars": 33778,
+      "num_clauses": 5041360
+    },
+    {
+      "product": 32,
+      "A": 2,
+      "B": 16,
+      "r1": 0,
+      "r2": 3,
+      "sat": false,
+      "num_vars": 34264,
+      "num_clauses": 5061448
+    },
+    {
+      "product": 32,
+      "A": 4,
+      "B": 8,
+      "r1": 0,
+      "r2": 1,
+      "sat": false,
+      "num_vars": 32320,
+      "num_clauses": 4981339
+    },
+    {
+      "product": 32,
+      "A": 8,
+      "B": 4,
+      "r1": 1,
+      "r2": 0,
+      "sat": false,
+      "num_vars": 32320,
+      "num_clauses": 4981339
+    },
+    {
+      "product": 32,
+      "A": 16,
+      "B": 2,
+      "r1": 3,
+      "r2": 0,
+      "sat": false,
+      "num_vars": 34264,
+      "num_clauses": 5061448
+    },
+    {
+      "product": 33,
+      "A": 3,
+      "B": 11,
+      "r1": 0,
+      "r2": 2,
+      "sat": false,
+      "num_vars": 33049,
+      "num_clauses": 5011228
+    },
+    {
+      "product": 33,
+      "A": 11,
+      "B": 3,
+      "r1": 2,
+      "r2": 0,
+      "sat": false,
+      "num_vars": 33049,
+      "num_clauses": 5011228
+    },
+    {
+      "product": 34,
+      "A": 2,
+      "B": 17,
+      "r1": 0,
+      "r2": 4,
+      "sat": false,
+      "num_vars": 34750,
+      "num_clauses": 5081536
+    },
+    {
+      "product": 34,
+      "A": 17,
+      "B": 2,
+      "r1": 4,
+      "r2": 0,
+      "sat": false,
+      "num_vars": 34750,
+      "num_clauses": 5081536
+    },
+    {
+      "product": 35,
+      "A": 5,
+      "B": 7,
+      "r1": 1,
+      "r2": 2,
+      "sat": false,
+      "num_vars": 32563,
+      "num_clauses": 5000698
+    },
+    {
+      "product": 35,
+      "A": 7,
+      "B": 5,
+      "r1": 2,
+      "r2": 1,
+      "sat": false,
+      "num_vars": 32563,
+      "num_clauses": 5000698
+    },
+    {
+      "product": 36,
+      "A": 2,
+      "B": 18,
+      "r1": 0,
+      "r2": 5,
+      "sat": false,
+      "num_vars": 35236,
+      "num_clauses": 5101624
+    },
+    {
+      "product": 36,
+      "A": 3,
+      "B": 12,
+      "r1": 0,
+      "r2": 3,
+      "sat": false,
+      "num_vars": 33535,
+      "num_clauses": 5031316
+    },
+    {
+      "product": 36,
+      "A": 4,
+      "B": 9,
+      "r1": 1,
+      "r2": 2,
+      "sat": false,
+      "num_vars": 32806,
+      "num_clauses": 5010742
+    },
+    {
+      "product": 36,
+      "A": 6,
+      "B": 6,
+      "r1": 1,
+      "r2": 1,
+      "sat": false,
+      "num_vars": 32320,
+      "num_clauses": 4990897
+    },
+    {
+      "product": 36,
+      "A": 9,
+      "B": 4,
+      "r1": 2,
+      "r2": 1,
+      "sat": false,
+      "num_vars": 32806,
+      "num_clauses": 5010742
+    },
+    {
+      "product": 36,
+      "A": 12,
+      "B": 3,
+      "r1": 3,
+      "r2": 0,
+      "sat": false,
+      "num_vars": 33535,
+      "num_clauses": 5031316
+    },
+    {
+      "product": 36,
+      "A": 18,
+      "B": 2,
+      "r1": 5,
+      "r2": 0,
+      "sat": false,
+      "num_vars": 35236,
+      "num_clauses": 5101624
+    },
+    {
+      "product": 38,
+      "A": 2,
+      "B": 19,
+      "r1": 0,
+      "r2": 6,
+      "sat": false,
+      "num_vars": 35722,
+      "num_clauses": 5121712
+    },
+    {
+      "product": 38,
+      "A": 19,
+      "B": 2,
+      "r1": 6,
+      "r2": 0,
+      "sat": false,
+      "num_vars": 35722,
+      "num_clauses": 5121712
+    },
+    {
+      "product": 39,
+      "A": 3,
+      "B": 13,
+      "r1": 1,
+      "r2": 4,
+      "sat": false,
+      "num_vars": 34021,
+      "num_clauses": 5060962
+    },
+    {
+      "product": 39,
+      "A": 13,
+      "B": 3,
+      "r1": 4,
+      "r2": 1,
+      "sat": false,
+      "num_vars": 34021,
+      "num_clauses": 5060962
+    },
+    {
+      "product": 40,
+      "A": 2,
+      "B": 20,
+      "r1": 0,
+      "r2": 7,
+      "sat": false,
+      "num_vars": 36208,
+      "num_clauses": 5141800
+    },
+    {
+      "product": 40,
+      "A": 4,
+      "B": 10,
+      "r1": 1,
+      "r2": 3,
+      "sat": false,
+      "num_vars": 33292,
+      "num_clauses": 5030830
+    },
+    {
+      "product": 40,
+      "A": 5,
+      "B": 8,
+      "r1": 1,
+      "r2": 3,
+      "sat": false,
+      "num_vars": 33049,
+      "num_clauses": 5020786
+    },
+    {
+      "product": 40,
+      "A": 8,
+      "B": 5,
+      "r1": 3,
+      "r2": 1,
+      "sat": false,
+      "num_vars": 33049,
+      "num_clauses": 5020786
+    },
+    {
+      "product": 40,
+      "A": 10,
+      "B": 4,
+      "r1": 3,
+      "r2": 1,
+      "sat": false,
+      "num_vars": 33292,
+      "num_clauses": 5030830
+    },
+    {
+      "product": 40,
+      "A": 20,
+      "B": 2,
+      "r1": 7,
+      "r2": 0,
+      "sat": false,
+      "num_vars": 36208,
+      "num_clauses": 5141800
+    },
+    {
+      "product": 42,
+      "A": 2,
+      "B": 21,
+      "r1": 0,
+      "r2": 8,
+      "sat": false,
+      "num_vars": 36694,
+      "num_clauses": 5161888
+    },
+    {
+      "product": 42,
+      "A": 3,
+      "B": 14,
+      "r1": 1,
+      "r2": 5,
+      "sat": false,
+      "num_vars": 34507,
+      "num_clauses": 5081050
+    },
+    {
+      "product": 42,
+      "A": 6,
+      "B": 7,
+      "r1": 2,
+      "r2": 2,
+      "sat": false,
+      "num_vars": 33049,
+      "num_clauses": 5020543
+    },
+    {
+      "product": 42,
+      "A": 7,
+      "B": 6,
+      "r1": 2,
+      "r2": 2,
+      "sat": false,
+      "num_vars": 33049,
+      "num_clauses": 5020543
+    },
+    {
+      "product": 42,
+      "A": 14,
+      "B": 3,
+      "r1": 5,
+      "r2": 1,
+      "sat": false,
+      "num_vars": 34507,
+      "num_clauses": 5081050
+    },
+    {
+      "product": 42,
+      "A": 21,
+      "B": 2,
+      "r1": 8,
+      "r2": 0,
+      "sat": false,
+      "num_vars": 36694,
+      "num_clauses": 5161888
+    },
+    {
+      "product": 44,
+      "A": 2,
+      "B": 22,
+      "r1": 0,
+      "r2": 9,
+      "sat": false,
+      "num_vars": 37180,
+      "num_clauses": 5181976
+    },
+    {
+      "product": 44,
+      "A": 4,
+      "B": 11,
+      "r1": 1,
+      "r2": 4,
+      "sat": false,
+      "num_vars": 33778,
+      "num_clauses": 5050918
+    },
+    {
+      "product": 44,
+      "A": 11,
+      "B": 4,
+      "r1": 4,
+      "r2": 1,
+      "sat": false,
+      "num_vars": 33778,
+      "num_clauses": 5050918
+    },
+    {
+      "product": 44,
+      "A": 22,
+      "B": 2,
+      "r1": 9,
+      "r2": 0,
+      "sat": false,
+      "num_vars": 37180,
+      "num_clauses": 5181976
+    }
+  ]
+}

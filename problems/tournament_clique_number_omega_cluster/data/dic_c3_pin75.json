@@ -1,0 +1,63 @@
+{
+ "n_H": 25,
+ "g": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  9,
+  10,
+  12,
+  14,
+  17
+ ],
+ "dic_H": 4,
+ "N": 75,
+ "explicit_6colouring_all_acyclic": true,
+ "sat_6dicolorable": true,
+ "pred_ceil_3k_2": 6,
+ "colour_classes_sizes": [
+  9,
+  16,
+  9,
+  16,
+  9,
+  16
+ ],
+ "per_colour": [
+  {
+   "colour": 0,
+   "size": 9,
+   "acyclic": true
+  },
+  {
+   "colour": 1,
+   "size": 16,
+   "acyclic": true
+  },
+  {
+   "colour": 2,
+   "size": 9,
+   "acyclic": true
+  },
+  {
+   "colour": 3,
+   "size": 16,
+   "acyclic": true
+  },
+  {
+   "colour": 4,
+   "size": 9,
+   "acyclic": true
+  },
+  {
+   "colour": 5,
+   "size": 16,
+   "acyclic": true
+  }
+ ],
+ "note": "P22 records dic(C3[H1*])>=6 (5-dic UNSAT); explicit acyclic 6-colouring => dic<=6; together dic=6=ceil(3*4/2)."
+}

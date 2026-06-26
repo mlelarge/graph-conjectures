@@ -1,0 +1,643 @@
+{
+ "results": [
+  {
+   "n": 7,
+   "order": 21,
+   "Nd": 20,
+   "nclauses": 8370,
+   "no_K4_SAT": true,
+   "sat_time_s": 0.0036,
+   "no_K3_SAT": false,
+   "omega_vec_eq_3": true,
+   "preds_is_permutation": true,
+   "backedge_clique_decoded_order": 3,
+   "backedge_clique_networkx": 3,
+   "clique_exactly_3": true,
+   "rank_to_coord": [
+    [
+     1,
+     1
+    ],
+    [
+     5,
+     1
+    ],
+    [
+     5,
+     2
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     3,
+     0
+    ],
+    [
+     4,
+     1
+    ],
+    [
+     6,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     4,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     5,
+     0
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     3,
+     2
+    ],
+    [
+     4,
+     0
+    ],
+    [
+     6,
+     1
+    ],
+    [
+     6,
+     2
+    ]
+   ],
+   "within_block_h_sequence_by_t": {
+    "1": [
+     1,
+     2,
+     0
+    ],
+    "5": [
+     1,
+     2,
+     0
+    ],
+    "2": [
+     1,
+     2,
+     0
+    ],
+    "3": [
+     0,
+     1,
+     2
+    ],
+    "4": [
+     1,
+     2,
+     0
+    ],
+    "6": [
+     0,
+     1,
+     2
+    ],
+    "0": [
+     1,
+     2
+    ]
+   }
+  },
+  {
+   "n": 9,
+   "order": 27,
+   "Nd": 26,
+   "nclauses": 20844,
+   "no_K4_SAT": true,
+   "sat_time_s": 0.0066,
+   "no_K3_SAT": false,
+   "omega_vec_eq_3": true,
+   "preds_is_permutation": true,
+   "backedge_clique_decoded_order": 3,
+   "backedge_clique_networkx": 3,
+   "clique_exactly_3": true,
+   "rank_to_coord": [
+    [
+     5,
+     1
+    ],
+    [
+     5,
+     2
+    ],
+    [
+     6,
+     0
+    ],
+    [
+     6,
+     1
+    ],
+    [
+     7,
+     0
+    ],
+    [
+     7,
+     1
+    ],
+    [
+     8,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     3,
+     0
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     4,
+     2
+    ],
+    [
+     4,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     5,
+     0
+    ],
+    [
+     6,
+     2
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     7,
+     2
+    ],
+    [
+     8,
+     1
+    ],
+    [
+     8,
+     2
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     3,
+     2
+    ],
+    [
+     4,
+     1
+    ]
+   ],
+   "within_block_h_sequence_by_t": {
+    "5": [
+     1,
+     2,
+     0
+    ],
+    "6": [
+     0,
+     1,
+     2
+    ],
+    "7": [
+     0,
+     1,
+     2
+    ],
+    "8": [
+     0,
+     1,
+     2
+    ],
+    "1": [
+     2,
+     0,
+     1
+    ],
+    "2": [
+     1,
+     2,
+     0
+    ],
+    "3": [
+     0,
+     1,
+     2
+    ],
+    "4": [
+     2,
+     0,
+     1
+    ],
+    "0": [
+     1,
+     2
+    ]
+   }
+  },
+  {
+   "n": 11,
+   "order": 33,
+   "Nd": 32,
+   "nclauses": 43506,
+   "no_K4_SAT": true,
+   "sat_time_s": 0.0123,
+   "no_K3_SAT": false,
+   "omega_vec_eq_3": true,
+   "preds_is_permutation": true,
+   "backedge_clique_decoded_order": 3,
+   "backedge_clique_networkx": 3,
+   "clique_exactly_3": true,
+   "rank_to_coord": [
+    [
+     6,
+     1
+    ],
+    [
+     7,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     8,
+     2
+    ],
+    [
+     3,
+     2
+    ],
+    [
+     4,
+     1
+    ],
+    [
+     5,
+     1
+    ],
+    [
+     9,
+     0
+    ],
+    [
+     9,
+     1
+    ],
+    [
+     10,
+     1
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     5,
+     2
+    ],
+    [
+     6,
+     2
+    ],
+    [
+     6,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     7,
+     0
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     3,
+     0
+    ],
+    [
+     7,
+     1
+    ],
+    [
+     8,
+     0
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     8,
+     1
+    ],
+    [
+     9,
+     2
+    ],
+    [
+     4,
+     2
+    ],
+    [
+     10,
+     2
+    ],
+    [
+     4,
+     0
+    ],
+    [
+     10,
+     0
+    ],
+    [
+     5,
+     0
+    ]
+   ],
+   "within_block_h_sequence_by_t": {
+    "6": [
+     1,
+     2,
+     0
+    ],
+    "7": [
+     2,
+     0,
+     1
+    ],
+    "1": [
+     2,
+     0,
+     1
+    ],
+    "2": [
+     1,
+     2,
+     0
+    ],
+    "8": [
+     2,
+     0,
+     1
+    ],
+    "3": [
+     2,
+     0,
+     1
+    ],
+    "4": [
+     1,
+     2,
+     0
+    ],
+    "5": [
+     1,
+     2,
+     0
+    ],
+    "9": [
+     0,
+     1,
+     2
+    ],
+    "10": [
+     1,
+     2,
+     0
+    ],
+    "0": [
+     1,
+     2
+    ]
+   }
+  }
+ ],
+ "uniform_analysis": {
+  "per_n": {
+   "7": {
+    "class_h_order_uniform": {
+     "c1": false,
+     "c2": false,
+     "c0": true
+    },
+    "distinct_h_seqs_within_class": {
+     "c1": [
+      [
+       0,
+       1,
+       2
+      ],
+      [
+       1,
+       2,
+       0
+      ]
+     ],
+     "c2": [
+      [
+       0,
+       1,
+       2
+      ],
+      [
+       1,
+       2,
+       0
+      ]
+     ],
+     "c0": [
+      [
+       1,
+       2
+      ]
+     ]
+    }
+   },
+   "9": {
+    "class_h_order_uniform": {
+     "c2": false,
+     "c1": false,
+     "c0": true
+    },
+    "distinct_h_seqs_within_class": {
+     "c2": [
+      [
+       0,
+       1,
+       2
+      ],
+      [
+       1,
+       2,
+       0
+      ]
+     ],
+     "c1": [
+      [
+       0,
+       1,
+       2
+      ],
+      [
+       1,
+       2,
+       0
+      ],
+      [
+       2,
+       0,
+       1
+      ]
+     ],
+     "c0": [
+      [
+       1,
+       2
+      ]
+     ]
+    }
+   },
+   "11": {
+    "class_h_order_uniform": {
+     "c2": false,
+     "c1": false,
+     "c0": true
+    },
+    "distinct_h_seqs_within_class": {
+     "c2": [
+      [
+       0,
+       1,
+       2
+      ],
+      [
+       1,
+       2,
+       0
+      ],
+      [
+       2,
+       0,
+       1
+      ]
+     ],
+     "c1": [
+      [
+       1,
+       2,
+       0
+      ],
+      [
+       2,
+       0,
+       1
+      ]
+     ],
+     "c0": [
+      [
+       1,
+       2
+      ]
+     ]
+    }
+   }
+  },
+  "residue_coupled_within_block": {
+   "7": true,
+   "9": true,
+   "11": true
+  }
+ },
+ "within_n_stability_test": {
+  "description": "Three different SAT models for SAME n=7 (randomized phases) give clique=3 but mutually inconsistent block-of-rank orders; decoded rank->coord NOT identical across models.",
+  "n7_three_models_identical": false,
+  "conclusion": "Decoded order is an arbitrary point in a large K4-free solution space; no stable, let alone n-uniform, positional rule rank(t,h)=F(t,h,m) is readable. KILL-(b) fires."
+ }
+}

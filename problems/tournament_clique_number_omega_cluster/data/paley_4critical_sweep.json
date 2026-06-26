@@ -1,0 +1,107 @@
+{
+  "primes_tested": [
+    19,
+    23,
+    31
+  ],
+  "results": [
+    {
+      "p": 19,
+      "g_is_QR": true,
+      "g": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        9,
+        11,
+        16,
+        17
+      ],
+      "is_tournament": true,
+      "omega_vec_ge4_noK4_UNSAT": true,
+      "omega_vec_ge5_noK5_UNSAT": false,
+      "min_rotation_upper": 4,
+      "omega_vec_eq4": true,
+      "t_omega_s": 0.248,
+      "dom": 4,
+      "dom_ge4_certifies_ge4": true,
+      "deletion_ge3_noK3_UNSAT": true,
+      "deletion_ge4_noK4_UNSAT": false,
+      "deletion_omega_vec_eq3": true,
+      "is_4_critical_vt": true,
+      "t_deletion_s": 0.015
+    },
+    {
+      "p": 23,
+      "g_is_QR": true,
+      "g": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        8,
+        9,
+        12,
+        13,
+        16,
+        18
+      ],
+      "is_tournament": true,
+      "omega_vec_ge4_noK4_UNSAT": true,
+      "omega_vec_ge5_noK5_UNSAT": false,
+      "min_rotation_upper": 5,
+      "omega_vec_eq4": true,
+      "t_omega_s": 0.416,
+      "dom": 4,
+      "dom_ge4_certifies_ge4": true,
+      "deletion_ge3_noK3_UNSAT": true,
+      "deletion_ge4_noK4_UNSAT": true,
+      "deletion_omega_vec_eq3": false,
+      "is_4_critical_vt": false,
+      "t_deletion_s": 0.322
+    },
+    {
+      "p": 31,
+      "g_is_QR": true,
+      "g": [
+        1,
+        2,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10,
+        14,
+        16,
+        18,
+        19,
+        20,
+        25,
+        28
+      ],
+      "is_tournament": true,
+      "omega_vec_ge4_noK4_UNSAT": true,
+      "omega_vec_ge5_noK5_UNSAT": false,
+      "min_rotation_upper": 5,
+      "omega_vec_eq4": true,
+      "t_omega_s": 0.764,
+      "dom": 4,
+      "dom_ge4_certifies_ge4": true,
+      "deletion_ge3_noK3_UNSAT": true,
+      "deletion_ge4_noK4_UNSAT": true,
+      "deletion_omega_vec_eq3": false,
+      "is_4_critical_vt": false,
+      "t_deletion_s": 0.542
+    }
+  ],
+  "k4_boundary_validation": {
+    "object": "Paley(19) control (P15: omega_vec=4)",
+    "no_K4_UNSAT_ge4": true,
+    "no_K5_SAT_lt5": true,
+    "consistent_with_P15": true
+  }
+}

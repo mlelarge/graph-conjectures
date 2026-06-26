@@ -1,0 +1,19 @@
+{
+  "experiment": "H6 sound complete non-existence scan at n=9",
+  "script": "scripts/m3_lb_scan_n9.py",
+  "command": ".venv/bin/python scripts/m3_lb_scan_n9.py 9 -p 12",
+  "n": 9,
+  "connected_base_graphs": 261080,
+  "k4_free_scanned": 95915,
+  "n_C3": 12613784,
+  "max_chi_in_C3": 2,
+  "witness": null,
+  "wall_s": 1187,
+  "conclusion": "m(3) >= 10 (sound, finite-n lower bound; empirical, not promoted to proved[])",
+  "cross_validation": {
+    "n6": {"n_C3": 2186, "max_chi": 2},
+    "n7": {"n_C3": 25258, "max_chi": 2},
+    "n8": {"n_C3": 479168, "max_chi": 2},
+    "note": "new backtracking-prune enumerator reproduces brute-force m3_lb_scan.py counts and max_chi exactly at n=6,7,8; also yields EXACTLY the TT3-free orientation set (verified vs all_orientations on all connected graphs n=5,6, 133 graphs, 0 mismatches)"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "object": "C3[H], H=gentourng order-7 class 307",
+  "order": 21,
+  "omega_vec_H": 2,
+  "claim": "omega_vec(C3[H]) >= 4  (no-K4 ordering CNF UNSAT)",
+  "encodings": [
+    {
+      "name": "chain",
+      "vars": 210,
+      "clauses": 10194,
+      "forbidden_4sets": 2214,
+      "cadical_unsat": true,
+      "minisat_unsat": true,
+      "cnf_file": "problems/tournament_clique_number_omega_cluster/data/h16_cert/noK4_chain.cnf",
+      "cnf_sha256": "7181a18ab544c3720b4344c28846b341b20d0155c9e795539083444363aa8a3c",
+      "drat_file": "problems/tournament_clique_number_omega_cluster/data/h16_cert/noK4_chain.drat",
+      "drat_lines": 65360
+    },
+    {
+      "name": "allpairs",
+      "vars": 210,
+      "clauses": 10194,
+      "forbidden_4sets": 2214,
+      "cadical_unsat": true,
+      "minisat_unsat": true,
+      "cnf_file": "problems/tournament_clique_number_omega_cluster/data/h16_cert/noK4_allpairs.cnf",
+      "cnf_sha256": "7e4db2ea3a868d4f6354e366593dd67d290ed44bb72960119ac2ba9b089a2ccb",
+      "drat_file": "problems/tournament_clique_number_omega_cluster/data/h16_cert/noK4_allpairs.drat",
+      "drat_lines": 136797
+    }
+  ],
+  "both_encodings_unsat_both_solvers": true,
+  "external_check": "drat-trim <cnf_file> <drat_file>  (expect 's VERIFIED'); CNFs are plain DIMACS, any solver can re-decide UNSAT."
+}

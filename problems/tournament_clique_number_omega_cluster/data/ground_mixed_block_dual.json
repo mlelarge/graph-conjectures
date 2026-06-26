@@ -1,0 +1,82 @@
+{
+  "tests": [
+    {
+      "name": "C3[C3]",
+      "order_full": 9,
+      "ov_full": 3,
+      "order_mixed_TT2_block0": 8,
+      "ov_mixed": 2,
+      "ov_explicit_deletion": 2,
+      "predicted_drop": 2,
+      "mixed_eq_deletion": true,
+      "drop_holds": true
+    },
+    {
+      "name": "AC_7[C3]",
+      "order_full": 21,
+      "ge4_full": true,
+      "ge5_full": false,
+      "ov_full": 4,
+      "predicted_drop": 3,
+      "per_position": [
+        {
+          "pos": 0,
+          "order": 20,
+          "ge3": true,
+          "ge4": false,
+          "ov": 3
+        },
+        {
+          "pos": 1,
+          "order": 20,
+          "ge3": true,
+          "ge4": false,
+          "ov": 3
+        },
+        {
+          "pos": 2,
+          "order": 20,
+          "ge3": true,
+          "ge4": false,
+          "ov": 3
+        },
+        {
+          "pos": 3,
+          "order": 20,
+          "ge3": true,
+          "ge4": false,
+          "ov": 3
+        },
+        {
+          "pos": 4,
+          "order": 20,
+          "ge3": true,
+          "ge4": false,
+          "ov": 3
+        },
+        {
+          "pos": 5,
+          "order": 20,
+          "ge3": true,
+          "ge4": false,
+          "ov": 3
+        },
+        {
+          "pos": 6,
+          "order": 20,
+          "ge3": true,
+          "ge4": false,
+          "ov": 3
+        }
+      ],
+      "all_drop_to_3": true
+    }
+  ],
+  "sat_oracle_validated": true,
+  "C3C3_block_position_ov": [
+    2,
+    2,
+    2
+  ],
+  "elapsed_s": 4.1
+}

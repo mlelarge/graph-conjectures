@@ -1,0 +1,24 @@
+{
+  "object": "AC_17 = Cay(Z/17, g=[1,2,3,4,5,6,7,9])",
+  "omega_vec": 3,
+  "question": "min over OPTIMAL orders (backedge omega=3) of alpha(backedge graph)",
+  "discriminator": "alpha=3 attainable IFF some optimal order backedge graph ~ Paley(17) (R(4,4)=18 + McKay-Radziszowski uniqueness)",
+  "paley17_realizable_as_backedge_graph": false,
+  "paley_search_nodes": 341040,
+  "paley_search_exhaustive": true,
+  "paley_search_time_s": 1.0,
+  "symmetry_reduction": "fix sigma(0)=0, sound: rotation x->x+1 is verified AC_17 automorphism (vertex-transitive)",
+  "alpha_min_bb_min_alpha_over_optimal_orders_found": 6,
+  "alpha_min_bb_optimal_orders_explored": 3823584,
+  "alpha_min_bb_timed_out": true,
+  "alpha_min_bb_found_alpha_le_3": false,
+  "random_300k_min_alpha_among_omega3": 5,
+  "random_300k_omega3_alpha_hist": {
+    "5": 1,
+    "6": 24,
+    "7": 29,
+    "8": 3
+  },
+  "verdict": "KILL: alpha>3 FORCED at order 17; no optimal order attains alpha<=3 (Paley17 not realizable). The alpha<=3 Ramsey cap is VACUOUS at order 17.",
+  "falsifiable_prediction_outcome": "CONFIRMED the KILL branch the proposal predicted (alpha>3 forced => the order-17 wall is NOT a Ramsey-uniqueness wall; alpha<=3 cap does no work)"
+}

@@ -1,0 +1,91 @@
+{
+ "experiment": "potential-sum counting mechanism for H19: exists optimal sigma + fixed tie-break with merged key(c,v)=e(c)+d_sigma(v) order on C3[H] of backedge clique exactly ov(H)+1",
+ "claim_form": "universal over generic ov=3 inners n<=9 (existential inner quantifiers); scope k=3 only; empirical_not_proof",
+ "e_potential": [
+  1,
+  1,
+  2
+ ],
+ "tiebreaks": [
+  "d,c,pos",
+  "c,d,pos",
+  "pos,rotor,c",
+  "-d,c,pos",
+  "-c,d,pos",
+  "-pos,rotor,c"
+ ],
+ "n8": {
+  "n_classes": 13,
+  "n_pass": 13,
+  "exhaustive": true
+ },
+ "n9_cap200": {
+  "n_classes": 1146,
+  "n_pass_within_cap200": 1110,
+  "n_fail_at_cap200": 36,
+  "fail_indices": [
+   108879,
+   167581,
+   173580,
+   173584,
+   174711,
+   174870,
+   178020,
+   178318,
+   178518,
+   178534,
+   178599,
+   178611,
+   178624,
+   178631,
+   178634,
+   179901,
+   179911,
+   179914,
+   179917,
+   183133,
+   183226,
+   183764,
+   184451,
+   184874,
+   184900,
+   184905,
+   184912,
+   184922,
+   185095,
+   185184,
+   185188,
+   185810,
+   185820,
+   185823,
+   185826,
+   190299
+  ]
+ },
+ "n9_exhaustive_escalation": {
+  "n_escalated": 36,
+  "n_pass": 36,
+  "max_sigmas_to_success": 874
+ },
+ "controls": {
+  "H7_inner_ov2": {
+   "pass": false,
+   "optimal_sigmas_exhausted": 48,
+   "min_merged_clique": 4,
+   "predicted": "FAIL (4>3)",
+   "matches_prediction": true
+  },
+  "QR7_inner_ov3": {
+   "pass": true,
+   "min_merged_clique": 4
+  }
+ },
+ "verdict": "mechanism SURVIVES full generic census n<=9 (1159 ov=3 classes + QR_7); cap-200 clause of the prediction violated by 36/1146 n=9 classes (need 241-874 sigmas, exhaustive enumeration finds witness for ALL); H7 ov=2 control fails exhaustively as predicted, localizing the width-2 anomaly inside the mechanism",
+ "source_files": [
+  "ground_potential_sum_c3_n8.json",
+  "ground_potential_sum_c3_controls.json",
+  "ground_potential_sum_c3_n9_0_400.json",
+  "ground_potential_sum_c3_n9_400_1146.json",
+  "ground_potential_sum_c3_n9_fails_exhaustive.json"
+ ]
+}

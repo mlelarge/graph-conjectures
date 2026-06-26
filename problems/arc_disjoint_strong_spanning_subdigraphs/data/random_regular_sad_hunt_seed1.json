@@ -1,0 +1,44 @@
+{
+  "params": {
+    "sizes": "12,24,48",
+    "samples": 40,
+    "seed": 1,
+    "cap": 200
+  },
+  "overall": {
+    "12": {
+      "accepted": 40,
+      "draws": 43,
+      "sat": 40,
+      "unsat": 0,
+      "disagree": 0,
+      "unknown": 0,
+      "m_true": 40,
+      "m_false": 0,
+      "m_cap": 0
+    },
+    "24": {
+      "accepted": 40,
+      "draws": 40,
+      "sat": 40,
+      "unsat": 0,
+      "disagree": 0,
+      "unknown": 0,
+      "m_true": 40,
+      "m_false": 0,
+      "m_cap": 0
+    },
+    "48": {
+      "accepted": 40,
+      "draws": 40,
+      "sat": 40,
+      "unsat": 0,
+      "disagree": 0,
+      "unknown": 0,
+      "m_true": 40,
+      "m_false": 0,
+      "m_cap": 0
+    }
+  },
+  "witnesses": []
+}

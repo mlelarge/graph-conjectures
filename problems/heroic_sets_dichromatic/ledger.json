@@ -1,0 +1,145 @@
+{
+  "schema_version": 1,
+  "problem": "heroic_sets_dichromatic",
+  "paper": "arXiv:2009.13319",
+  "title": "Extension of the Gyarfas-Sumner conjecture to digraphs (Aboulker, Charbit, Naserasr, 2020)",
+  "record": "Problem 1.2",
+  "updated_at": "2026-06-05",
+  "_round_note": "Round 3. NO frontier advance; 4 levers all killed, but ONE load-bearing CORRECTION extracted (verified vs primary PDF): the forbidden triangle member in Thm 6.5 / Conj 4.2 is K3 (the UNDIRECTED triangle = ALL its orientations TT3 and C3), NOT the directed C3 the prior ledger wrote. PDF line 315-316: 'Forb_ind(K3,K2) is the class of triangle-free oriented graphs'; line 613: 'forbidding K3 here means we forbid both TT3 and C3'. So H1's class is Forb_ind(K2,K3,P+(k)) = TRIANGLE-FREE P+(k)-free oriented digraphs, which the oracle's measure-sweep already ranges over correctly. KILLS this round: (G4) C4-substitution tower 'disproof of H1 at k=3' -- relabeling error: D_3 (n=16) onward CONTAINS an induced TT3 (orientation of K3), so it is NOT in the genuine class; no disproof. (G5) bounded-feedback-vertex-number lever for H1 -- REFUTED: full n=8 sweep (151439 members of the genuine triangle-free class) shows maxFVS jumps 2->3 while chi_d stays 2; FVS is unbounded, the chi_d<=FVS+1 reduction yields no chi_d bound. (G6) P+(4) literature-reduction -- REFUTED: the Harutyunyan-Mohar high-girth family CONTAINS induced P+(4) (chordless directed cycles of length>=6 induce P+4; PDF lines 231-241: common induced subdigraphs of the growing-girth family are oriented forests, and P+4 IS an oriented forest), so forbidding P+(4) still excludes the unbounded family -> H1(k=4) survives. (H3) K4-free enumerator now WIRED and swept (n<=7, 545901 kept, max_chi_d=2) but skeptic-downgraded to AUDIT: the paper already PROVES this class bounded (Thm 6.6 chi_d(Forb_ind(K2,K4,P+3,C3))<=8; Thm 6.9 chi_d(Forb_ind(K4,P+3))<=414), so non-violation is near-zero evidential weight. NEW finite landmark: chi_d=2 holds over the genuine triangle-free Forb_ind(K2,K3,P+3) class up to n=8 (0 members with chi_d>=3, 0 chi_d>minFVS+1 violations).",
+
+  "central_question": "Problem 1.2 of arXiv:2009.13319: characterize the finite sets F of digraphs that are HEROIC, i.e. for which the class Forb_ind(F) of digraphs avoiding every member of F as an INDUCED subdigraph has BOUNDED dichromatic number chi_d. This generalizes the Gyarfas-Sumner conjecture (graphs/chromatic) and the Berger-Choromanski-Chudnovsky-Fox-Loebl-Scott-Seymour-Thomasse notion of a hero tournament to digraphs. The conjectured answer (the paper's main conjecture, Conjecture 4.2) is a structural characterization in terms of the substitution-closure of {transitive tournaments, directed-cycle blowups} plus the digon obstruction; the bounded-vs-unbounded dichotomy is the load-bearing open content.",
+
+  "benchmark": {
+    "description": "F is heroic iff Forb_ind(F) has bounded chi_d. 'Bounded' is ASYMPTOTIC: finite enumeration can DISPROVE a claimed heroic set (exhibit a member of Forb_ind(F) with large chi_d) or settle a finite-target subclaim EXACTLY, but cannot PROVE boundedness. chi_d(D) = min #colors so each class induces an acyclic subdigraph, computed EXACTLY via SAT + lazy directed-cycle clauses. NOTE (round 3): when a non-oriented graph H (e.g. K3, K4) is in F, Forb_ind(F) forbids EVERY ORIENTATION of H as an induced subdigraph; PDF line 315-316. Forbidding K3 == triangle-free (forbids both TT3 and C3); the oracle's named 'C3' is the directed 3-cycle ONLY and is STRICTLY WEAKER than forbidding K3.",
+    "oracle_cmd": "problems/heroic_sets_dichromatic/.venv/bin/python problems/heroic_sets_dichromatic/scripts/oracle.py",
+    "oracle_api": {
+      "check": "oracle.py check N 'JSON_ARCS' [--forbidden NAME...]  -> is_oriented, is_triangle_free, chi_d, acyclic_number, induced-containment of named digraphs, in_Forb_ind",
+      "measure": "oracle.py measure N_MAX --forbidden NAME... [--claimed-bound B] -> sweep all oriented TRIANGLE-FREE digraphs up to N_MAX, keep Forb_ind(F), report chi_d distribution, max chi_d, witness, and whether claimed bound B is violated (sound DISPROOF). The sweep is TRIANGLE-FREE, so it already realizes the K3-forbidding (= triangle-free) class correctly; it cannot see triangle-rich families (tournament tower) -- use explicit constructions for those.",
+      "thm65": "oracle.py thm65 [N_MAX] -> reproduce Theorem 6.5 chi_d(Forb_ind(K2,K3,P+3))=2 over the triangle-free class",
+      "tower": "oracle.py tower K -> tournament tower D_k, chi_d(D_k)=k (unbounded-dichromatic certificate family)",
+      "cyclesub": "oracle.py cyclesub K BASE -> Thm 2.1 chi_d(C_k(BASE))=chi_d(BASE)+1",
+      "k4free_sweep": "scripts/h3_k4free_sweep.py N -> exhaustive sweep of oriented K4-free P+3-free digon-free digraphs up to N (geng -k enumerator now wired in engine/lib/digraph_core.py k4_free_graphs + scripts/core.oriented_k4_free_digraphs). RAN n<=7: 1397271 orientations, 545901 kept, max_chi_d=2.",
+      "named_digraphs": ["K1", "K2sym", "K2sym_bar", "C3", "P+3", "P+2"],
+      "python_api": "from scripts import core, oracle; core.dichromatic_number(n,arcs); core.contains_induced((n,arcs),H); core.tournament_tower(k); core.substitute_into_cycle([...]); core.oriented_k4_free_digraphs(n); oracle.measure_heroic_set(F_names,n_max,claimed_bound=B)"
+    },
+    "ground_truth_landmarks": {
+      "thm_6_5": "chi_d(Forb_ind(K2, K3, P+(3))) = 2, where K3 forbids ALL triangle orientations (= triangle-free). Oracle-verified finite landmark over the genuine triangle-free P+3-free class up to n=8 (round 3): 0 members with chi_d>=3 (n=8 full sweep = 151439 members), max chi_d=2 throughout. The paper's proof (PDF lines 662-680) is the source of the all-n statement; it uses K3-freeness twice ('Since D is K3-free, L1 is a stable set'; 'a1 and b are non-adjacent because D is triangle-free').",
+      "thm_2_1": "chi_d(C_k(D_1,...,D_k)) for k>=3 satisfies chi_d(C_k(D,...,D)) = chi_d(D)+1. RAN: cyclesub k in {3,4}, base in {K1,K2sym,C3} all match (e.g. C3(C3,C3,C3) -> chi_d 3 = 2+1).",
+      "tournament_tower": "D_1=K1, D_k=C3(D_{k-1},D_{k-1},K1) gives chi_d(D_k)=k. RAN tower 1..6: D_2=C3 (n=3,chi=2), ..., D_6 (n=63,chi=6); each is a TOURNAMENT (digon-free). Explicit unbounded-dichromatic family. KEY STRUCTURAL FACT: being a tournament, D_k has NO non-adjacent pair, hence NO induced P+(m) for ANY m>=2 -> it lies in Forb_ind(K2,P+(m)) for every m. NOTE: the tower is triangle-RICH (it contains TT3/C3), so it is NOT in any K3-forbidding class -- it only disproves heroicness of the digon+path sets WITHOUT the triangle member (H2).",
+      "k4free_bounds_from_paper": "VERIFIED vs Refs/heroic_2009.13319.pdf: (i) abstract 414 bound is Theorem 6.9, line 858: chi_d(Forb_ind(K4, P+(3))) <= 414 -- forbids K4 (all orientations) and P+(3), but does NOT forbid the digon K2. (ii) With the digon forbidden the in-paper bound is much smaller: line 626 chi_d(Forb_ind(K2, K4, P+(3))) <= 8, and Lemma 6.6 (line 695) chi_d(Forb_ind(K2, K4, P+(3), C3)) <= 8, Lemma 6.7 (line 784) chi_d(Forb_ind(K4, P+(3), R)) <= 66. The H3 sweep forbade digons (K2sym) + K4 + P+3, so its relevant published bound is <=8, NOT 414. Observed max_chi_d=2 is well inside both. All are PROVED-bounded classes -> red-teaming them is audit, not frontier.",
+      "abstract_multipartite": "An orientation of a complete multipartite graph with no directed triangle is 2-colorable (abstract). Finite-checkable on small instances.",
+      "digon_dichromatic": "chi_d(K2sym)=2 (a digon is a directed 2-cycle, endpoints need distinct colors); chi_d generalizes the chromatic number.",
+      "necessity_already_proved_in_paper": "VERIFIED vs Refs/heroic_2009.13319.pdf Section 6.1: the NECESSITY ('only if') half of Conjecture 4.2 is ALREADY PROVED via the C4-substitution tower D_1=K1, D_{i+1}=C4(D_i,...,D_i): D_i in Forb_ind(K2,K3,P4) with chi_d(D_i)=i. CAUTION (round 3): this C4 tower IS triangle-free at i<=2 but NOT at i>=3 (D_3 contains an induced TT3 = orientation of K3), so the published necessity construction does NOT live in the K3-forbidding class for i>=3 -- the paper's necessity statement is about Forb_ind(K2,K3,P4) membership for the relevant levels per its own argument; the engine must not re-derive a 'disproof' by ignoring K3-membership (see G4). The OPEN content is the SUFFICIENCY/boundedness ('if') direction."
+    }
+  },
+
+  "proved": [
+    {
+      "id": "P1",
+      "claim": "Theorem 6.5 finite landmark: chi_d(Forb_ind(K2, K3, P+3)) = 2 (K3 = triangle-free) holds EXACTLY over the genuine triangle-free P+3-free class up to n=8 (round 3: n=8 full sweep = 151439 members, ZERO with chi_d>=3, max chi_d=2; extends the prior n<=6 landmark).",
+      "status": "oracle-verified finite landmark (NOT the asymptotic theorem; the paper's proof is the source of the all-n statement). This is the anti-hallucination anchor."
+    },
+    {
+      "id": "P2",
+      "claim": "Thm 2.1 substitution identity chi_d(C_k(D,...,D)) = chi_d(D)+1 holds for the tested (k in {3,4}, D in {K1,K2sym,C3}); consequently the tournament tower D_k has chi_d(D_k)=k (verified k<=6), so finite sets need NOT be heroic.",
+      "status": "oracle-verified finite landmark."
+    }
+  ],
+
+  "open_crux": "ONLY the SUFFICIENCY ('if') half of the heroic dichotomy (Conjecture 4.2) is open; the NECESSITY ('only if') half is ALREADY PROVED in the paper (Section 6.1 C4-substitution tower) and that route is CLOSED as already-known. ROUND-3 FRONTIER CLARIFICATION (load-bearing): the candidate-heroic triangle member is K3 (the UNDIRECTED triangle = ALL orientations TT3+C3 = TRIANGLE-FREE), NOT the directed C3 the prior ledger wrote; so H1's class is Forb_ind(K2,K3,P+(k)) = triangle-free P+(k)-free oriented digraphs, which the oracle's triangle-free measure-sweep already realizes correctly. The DISPROOF side is mature and CLOSED for the digon+path sets: the tournament tower shows Forb_ind(K2,P+(m)) is non-heroic for every m>=2 (tower is a tournament, avoids all induced P+(m); chi_d=k unbounded) -- confirming the triangle member is load-bearing. What remains is BOUNDEDNESS of a candidate heroic F that forbids K3 (triangle-free): a SYMBOLIC proof that some specific F (e.g. {K2,K3,P+(k)}, H1) has bounded chi_d, supported by the oracle on small n (now n<=8). ROUTES NOW CLOSED computationally: (a) triangle-free chi_d>=3 seed in n<=20 (G1); (b) the C4-tower disproof (G4, relabeling error -- D_3 has induced K3); (c) the bounded-FVS structural lever for boundedness (G5 -- FVS grows 2->3 at n=8, decoupled from chi_d); (d) the P+(4)-vs-high-girth literature reduction (G6 -- high girth FORCES induced P+(4), inverting the intuition). The K4-free superset sweep (H3) only RE-confirms a class the paper already proved bounded (<=8 / <=414), so it is audit, not a new lever. The engine's remaining computational leverage is thin: either (i) verify the Harutyunyan-Mohar large-n triangle-free chi_d>=3 citation (H4) to settle whether a triangle-free unbounded family even exists beyond the enumerable range, or (ii) find a NEW structural invariant that DOES transfer small-n boundedness to a chi_d bound (FVS failed). A symbolic 'nice-set' argument in the paper's own style is the likely real path -- that is human math, not enumeration.",
+
+  "live_hypotheses": [
+    {
+      "id": "H1",
+      "statement": "The triangle-free heroic landmark generalizes: the set {K2, K3, P+(k)} (K3 = triangle-free) is heroic for every fixed k (bounded chi_d depending only on k), extending Thm 6.5 (k=3, bound 2). This is a SUFFICIENCY (boundedness) claim -- the open direction. NOTE (round 3 correction): the forbidden triangle member is K3, not the directed C3 written in earlier rounds.",
+      "status": "OPEN, untested for k>3. Boundedness evidence for k=3 now extends to n=8 (genuine triangle-free class, 0 chi_d>=3). Empirical-gate: boundedness cannot be proved by enumeration; only a disproof (unbounded witness inside the triangle-free Forb_ind) would be decisive. The bounded-FVS reduction route to a symbolic proof is dead (G5).",
+      "falsifiable_prediction": "For each fixed k, sweeping oriented triangle-free P+(k)-free digraphs over small n, max chi_d stays bounded and does NOT grow with n. A witness whose chi_d climbs with n on a constructible TRIANGLE-FREE family would DISPROVE it. Test: oracle.py measure N_MAX --forbidden K2sym K3 P+k (triangle-free sweep). The C4 tower does NOT qualify (triangle-rich for i>=3)."
+    },
+    {
+      "id": "H2",
+      "statement": "Removing the triangle member un-bounds chi_d: Forb_ind(K2, P+(m)) (oriented, triangles allowed) is NON-HEROIC for EVERY m>=2, because the tournament tower D_k is P+(m)-free (being a tournament) and digon-free with chi_d(D_k)=k unbounded.",
+      "status": "RESOLVED as a sound DISPROOF lever (oracle-verified to k=6/n=63; survives skeptic). NOT in 'proved' per empirical_not_proof gate (the all-k unboundedness identity is finite-landmark-backed). Confirms the triangle member (K3 / a directed-cycle blowup) is load-bearing in Thm 6.5 / Conj 4.2.",
+      "falsifiable_prediction": "Would be KILLED if any D_k contained an induced P+(m) or a digon (it never does, structurally), or if chi_d(D_k) != k (it always equals k)."
+    },
+    {
+      "id": "H3",
+      "statement": "The abstract's K4-free bound is far from tight: oriented K4-free P+3-free (digon-free) digraphs have small chi_d on all enumerable n.",
+      "status": "TESTED (round 3): K4-free enumerator wired (geng -k); full sweep n<=7 = 1397271 orientations, 545901 kept, max_chi_d=2, no chi_d>=3, no bound violation. BUT skeptic-downgraded to AUDIT, near-zero evidential weight: the paper already PROVES this class bounded -- with digons forbidden (the class actually swept) the published bound is <=8 (PDF line 626/695), and without digons it is <=414 (Thm 6.9). A chi_d>=3 climbing witness would contradict the paper's own theorem against a correct oracle, so the KILL condition is structurally near-impossible; non-violation is uninformative. Not a frontier lever.",
+      "falsifiable_prediction": "DEAD as a discriminating test (re-confirms a proved-bounded class). Re-running scripts/h3_k4free_sweep.py 7 must reproduce max_chi_d=2, bound_violated=False."
+    },
+    {
+      "id": "H4",
+      "statement": "Triangle-free + digon-free is NOT itself heroic with bound 2: although NO triangle-free digon-free digraph with chi_d>=3 exists for small n (exhaustive n<=8 incl. round-3 full n=8 sweep of 151439 P+3-free members; Grotzsch n=11 both methods), Harutyunyan-Mohar-type constructions imply chi_d>=3 triangle-free oriented graphs DO exist at LARGE n. So the 'max chi_d=2 over all triangle-free oriented digraphs' statement is only a finite (n<=~11) landmark, NOT a theorem.",
+      "status": "PARTIALLY GROUNDED: small-n bound-2 exhaustively verified (now n<=8 for the P+3-free subclass). The large-n existence is a literature claim (Harutyunyan-Mohar) UNVERIFIED against a primary source -- citations_verified gate NOT yet satisfied. The paper's own Theorem 3.2 attributes the high-girth chi_d>=k family to Harutyunyan-Mohar [11] (PDF line 214-215, ref line 900: 'A. Harutyunyan and B. Mohar, Two results on the digraph chromatic number, Discrete Math., 312:1823-1826, 2012'), so the attribution is internally consistent but the primary [11] is still unchecked. This is the engine's MAIN remaining computational/verification lever.",
+      "falsifiable_prediction": "Verifying the Harutyunyan-Mohar [11] construction against the primary source, OR a targeted SAT search at n in [20,40] over high-odd-girth triangle-free orientations, would either produce a chi_d>=3 triangle-free digon-free witness (confirming H4) or extend the bound-2 landmark. NOTE: such a witness is triangle-free but generally NOT P+(k)-free for small k, so it would NOT by itself disprove H1."
+    }
+  ],
+
+  "graveyard": [
+    {
+      "id": "G1",
+      "lens": "explicit-construction",
+      "claim": "There EXISTS a triangle-free, digon-free digraph D with chi_d(D)>=3 on n<=~20 (seed of an unbounded family inside Forb_ind(K2,K3,P+(k))).",
+      "kill_reason": "REFUTED by oracle: n<=8 exhaustive (all triangle-free graphs, all orientations -> chi_d<=2), Grotzsch n=11 refuted by TWO independent exhaustive methods (524288-orientation brute force AND CEGAR), C5-blowup family no witness. No chi_d>=3 seed in the claimed n<=~20 window. Residual large-n existence -> H4."
+    },
+    {
+      "id": "G2",
+      "lens": "asymptotic-argument",
+      "claim": "The tournament tower avoids induced P+(2) for all k via a 'general C3-substitution shortcut' that makes the bundle mechanism applicable in any C_k-substitution.",
+      "kill_reason": "REFUTED (vacuous + false-general). The tower avoids induced P+(m) only because it is a TOURNAMENT (no non-adjacent pair), NOT via any C3-bundle induction. The claimed 'general bundle mechanism' is FALSE beyond C3: directed C4 = substitute_into_cycle([K1]*4) CONTAINS an induced P+(2). Adds nothing over H2."
+    },
+    {
+      "id": "G3",
+      "lens": "literature-reduction",
+      "claim": "The C4-substitution tower reduces and CLOSES the NECESSITY ('only if') half of Conjecture 4.2 to the verified Thm 2.1 (P2).",
+      "kill_reason": "REFUTED (wrong direction + zero novelty). The necessity half is ALREADY PROVED in the paper (Refs/heroic_2009.13319.pdf Section 6.1, verbatim the same C4 tower: 'This proves the necessary part of Conjecture 4.2'). The open_crux is the SUFFICIENCY direction. Audit-not-redteam; relies on unverified Berger Thm 2.2; would violate empirical_not_proof (i=4/n=64 chi_d SAT did not complete)."
+    },
+    {
+      "id": "G4",
+      "lens": "explicit-construction",
+      "claim": "The C4-substitution tower (D_{i+1}=C4(D_i,D_i,D_i,D_i)) is a digon-free, directed-C3-free, induced-P+(3)-free family with unbounded chi_d, giving a SOUND DISPROOF of H1 at k=3 (and of the Thm 6.5 generalization), because it forbids only the directed C3 while triangle-freeness is merely an 'implicit hypothesis' it escapes.",
+      "kill_reason": "REFUTED (relabeling error, verified vs primary PDF). Thm 6.5's forbidden member is K3 (the UNDIRECTED triangle = ALL orientations), NOT the directed C3 -- PDF line 315-316 'Forb_ind(K3,K2) is the class of triangle-free oriented graphs', line 613 'forbidding K3 here means we forbid both TT3 and C3'. The C4 tower is triangle-free only at i<=2; oracle: D_3 (n=16) onward CONTAINS an induced TT3 (orientation of K3) -- e.g. vertices {0,1,4} = [(0,1),(0,2),(1,2)] = TT3, is_triangle_free=FALSE. So D_3/D_4/D_5 are NOT members of the genuine class Forb_ind(K2,K3,P+3); the CONFIRM prediction (P+3-free/C3-free/oriented at D_4) is true but irrelevant. No disproof of H1 exists. (Recapitulates the triangle-free confusion the killed G3 already touched.)"
+    },
+    {
+      "id": "G5",
+      "lens": "asymptotic-argument",
+      "claim": "H1 follows because Forb_ind(K2,K3,P+(k)) has BOUNDED feedback vertex number tau(k): every member has an FVS of size <= tau(k), giving chi_d <= tau(k)+1. Oracle evidence n<=7: maxFVS flat at <=2, chi_d <= minFVS+1.",
+      "kill_reason": "REFUTED by oracle at n=8 (the proposal's own KILL trigger). Full deterministic sweep over all 151439 members of the genuine triangle-free Forb_ind(K2,K3,P+3) at n=8: maxFVS JUMPS 2(n=7)->3(n=8) while maxchi stays 2. FVS is NOT bounded; it grows with n and is decoupled from chi_d, so chi_d<=minFVS+1 with minFVS unbounded yields NO chi_d bound. The bounded-FVS structural lever for H1 is dead. (The WEAKER companion invariant survived -- chi_d<=minFVS+1 held with 0 violations and 0 chi_d>=3 members at n=8 -- which is exactly the P1 landmark extension, NOT a route to a symbolic boundedness proof.)"
+    },
+    {
+      "id": "G6",
+      "lens": "literature-reduction",
+      "claim": "Reduce H1(k=4) by showing the Harutyunyan-Mohar high-girth unbounded family H_{g,k} (triangle-free, digon-free, chi_d>=k) contains NO induced P+(4), so it lands in Forb_ind(K2,K3,P+4) with chi_d->infinity and DISPROVES H1 at k=4, making P+(3) vs P+(4) the exact heroic boundary.",
+      "kill_reason": "REFUTED (inverted intuition; verified by oracle + primary PDF). High girth FORCES induced P+(4), it does not forbid it: oracle shows chordless directed cycles of length >=6 (which growing girth produces) induce P+(4) (directed_cycle(6/7/10) all contain induced P+4). PDF lines 231-241: any common induced subdigraph of the growing-girth H_{g,k} family is an ORIENTED FOREST, and P+(4) IS an oriented forest -- so P+(4) is precisely what SURVIVES in the family, not what is excluded. Hence every chi_d>=3 triangle-free witness contains induced P+(4); forbidding P+(4) still excludes the unbounded family -> H1(k=4) SURVIVES (not disproved). Lands in the proposal's own KILL branch."
+    }
+  ],
+
+  "decision_log": [
+    {
+      "id": "D1",
+      "date": "2026-06-05",
+      "note": "Phase 0 substrate built. Folder scaffolded; venv symlinked; primary paper pulled to Refs/heroic_2009.13319.pdf. Exact oracle implemented: scripts/core.py wraps engine/lib/digraph_core.py (chi_d via SAT+lazy-cycle, is_oriented/is_triangle_free, geng enumeration, all_orientations) + named small digraphs, EXACT induced-subdigraph containment, C_k substitution, tournament tower. scripts/oracle.py: check / measure / thm65 / tower / cyclesub. RAN and reproduced: Thm 6.5 chi_d=2 up to n=6; Thm 2.1; tower chi_d=k for k<=4. 7/7 pytest pass."
+    },
+    {
+      "id": "D2",
+      "date": "2026-06-05",
+      "note": "Round 2: 1 survivor isolated, 3 levers killed. H2 RESOLVED as a sound DISPROOF: Forb_ind(K2, P+(m)) is NON-HEROIC for every m>=2 (tournament tower is a tournament, avoids all induced P+(m); chi_d(D_k)=k via P2). Oracle-confirmed to k=6/n=63. Stays out of 'proved' per empirical_not_proof. GRAVEYARDED G1/G2/G3. Frontier narrowed: necessity CLOSED as already-known; open content = SUFFICIENCY/boundedness half. New H4 (triangle-free bound-2 only a finite landmark; Harutyunyan-Mohar UNVERIFIED)."
+    },
+    {
+      "id": "D3",
+      "date": "2026-06-05",
+      "note": "Round 3: NO frontier advance (4 levers all killed, all variants of already-dead families/wrong-class errors), but ONE load-bearing CORRECTION + ONE finite-landmark extension. CORRECTION (verified vs primary PDF lines 315-316, 613): the forbidden triangle member in Thm 6.5 / H1 / Conj 4.2 is K3 (UNDIRECTED triangle = ALL orientations TT3+C3 = triangle-free), NOT the directed C3 prior rounds wrote; the oracle's triangle-free measure-sweep already realizes this class correctly. KILLS: G4 (C4-tower 'disproof of H1 at k=3' -- D_3 onward contains induced TT3=K3, so NOT in the genuine class; no disproof); G5 (bounded-FVS lever for H1 -- full n=8 sweep of 151439 members shows maxFVS jumps 2->3, decoupled from chi_d which stays 2, so FVS unbounded and the chi_d<=FVS+1 reduction gives no bound); G6 (P+(4) literature-reduction -- high girth FORCES induced P+(4) per oracle + PDF lines 231-241 'oriented forest' argument, inverting the intuition; H1(k=4) survives). H3: K4-free enumerator now WIRED (geng -k) and swept (n<=7: 545901 kept, max_chi_d=2, no violation) but skeptic-downgraded to AUDIT -- the paper already PROVES this class bounded (<=8 with digons forbidden, PDF line 626/695; <=414 without, Thm 6.9 line 858), so the kill condition is structurally impossible and the evidence is near-zero weight. LANDMARK EXTENDED: P1 (chi_d(Forb_ind(K2,K3,P+3))=2) now verified to n=8 (151439-member full sweep, 0 chi_d>=3, 0 chi_d>minFVS+1). Remaining computational leverage is thin: verify Harutyunyan-Mohar [11] (H4 citations_verified) or find a NEW small-n->bound invariant (FVS failed). The real path is likely a symbolic 'nice-set' argument = human math."
+    }
+  ],
+
+  "next_action": "Two thin levers remain, both verification-flavored rather than search: (1) H4 -- verify the Harutyunyan-Mohar [11] (Discrete Math. 312:1823-1826, 2012) high-girth triangle-free chi_d>=k construction against the PRIMARY source (citations_verified gate), to settle whether a triangle-free unbounded family even exists beyond the enumerable range (it would NOT disprove H1 unless it is also P+(k)-free for the relevant k -- which G6 shows it is not, since high girth forces long induced directed paths). (2) Optionally extend the P1 triangle-free landmark to n=9 to harden boundedness evidence for H1(k=3). Do NOT re-attempt: triangle-free chi_d>=3 seeds in n<=20 (G1), P+(2) asymptotic levers (G2), necessity-direction reductions (G3), the C4-tower disproof of H1 (G4 -- relabeling, contains K3), bounded-FVS as a boundedness lever (G5), or the high-girth-forbids-P+(4) reduction (G6 -- intuition inverted). The likely real path to H1 is a SYMBOLIC nice-set argument in the paper's style, which is human math, not enumeration.",
+  "needs_human": null,
+  "recommend_handback": "The COMPUTATIONAL frontier on the SUFFICIENCY/boundedness half (H1) is effectively exhausted: every enumerative disproof route is dead (G1,G4), the only structural small-n->bound invariant tried (feedback vertex number, G5) is refuted, and the K4-free superset sweep (H3) only re-confirms a class the paper already proved bounded. Boundedness of Forb_ind(K2,K3,P+(k)) for k>3 cannot be settled by enumeration (empirical_not_proof gate). What is needed is a SYMBOLIC 'nice-set' boundedness argument in the style of the paper's Theorem 6.5 / Lemma 6.4 (a structural decomposition showing every member of Forb_ind(K2,K3,P+(k)) admits a nice set, yielding chi_d <= f(k) by induction) -- this is human mathematical input the oracle cannot certify. Remaining cheap computational tasks (H4 citation verification, n=9 landmark extension) are evidence-hardening only, not frontier-advancing.",
+  "budget_spent_tokens": 0,
+
+  "discipline_gates": {
+    "empirical_not_proof": "'Heroic'/'bounded chi_d' is an ASYMPTOTIC quantifier. A claimed heroic set staying bounded over enumerated small n is SUPPORTING evidence only -- it CANNOT enter 'proved' without a symbolic boundedness argument. Conversely a single Forb_ind(F) member with chi_d above the claimed bound IS a sound disproof; a CONSTRUCTIBLE family with chi_d->infinity inside Forb_ind(F) is a sound disproof of heroicness (H2), but its all-k unboundedness still needs a symbolic identity proof to be fully rigorous and so stays out of 'proved'. Finite landmarks (Thm 6.5 chi_d=2 up to n=8, Thm 2.1, tower to k=6) are exact verifications of finite-target subclaims, not proofs of the all-n theorems.",
+    "audit_not_redteam": "Grounding (oracle measures chi_d / containment) and skeptic (search for an unbounded-chi_d witness inside Forb_ind(F), OR check that a claimed contribution is novel vs the primary source -- G3 and G4 were killed precisely because the skeptic cross-read the paper and found a published construction / a relabeling error) are separate agent calls, never merged. RE-CONFIRMING A CLASS THE PAPER ALREADY PROVES BOUNDED (H3 K4-free, <=8/<=414) is audit, not red-team, and carries near-zero evidential weight.",
+    "citations_verified": "Any external citation (Berger et al. hero characterization Thm 2.2; the five minimal non-heroes; Harutyunyan-Mohar [11] large-n triangle-free chi_d>=3 of H4) must resolve to a primary source before it carries weight. Berger Thm 2.2 and the primary Harutyunyan-Mohar [11] are currently UNVERIFIED and must not be load-bearing until checked (the paper's internal attribution to [11] at line 214/900 is consistent but is not the primary source)."
+  }
+}

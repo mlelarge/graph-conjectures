@@ -1,0 +1,42 @@
+{
+ "bound": 4,
+ "orders": [
+  7,
+  8
+ ],
+ "order9_sample": 0,
+ "seed": 0,
+ "per_order": {
+  "7": {
+   "n_classes": 456,
+   "n_ov3": 1,
+   "n_feasible": 1,
+   "n_infeasible": 0,
+   "min_distinct_dist": {
+    "1": 1,
+    "2": 0,
+    "3": 0
+   },
+   "stagger_max": 2,
+   "aborted_time": false,
+   "n_tested": 1
+  },
+  "8": {
+   "n_classes": 6880,
+   "n_ov3": 13,
+   "n_feasible": 13,
+   "n_infeasible": 0,
+   "min_distinct_dist": {
+    "1": 13,
+    "2": 0,
+    "3": 0
+   },
+   "stagger_max": 3,
+   "aborted_time": false,
+   "n_tested": 13
+  }
+ },
+ "examples_infeasible": [],
+ "n_infeasible_total": 0,
+ "elapsed_s": 123.2
+}

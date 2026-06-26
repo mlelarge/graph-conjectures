@@ -195,6 +195,14 @@ the deepest vertex.
 
 ### §3.3 The funnel failure mode
 
+> **Correction (2026-06-11).** The \(k\ge2\) alternating funnel below
+> is impossible. If every exit subtree contains \(X\), then for any
+> two exit tails each is a \(U^-\)-descendant of the other, so
+> antisymmetry makes the tails equal; an in-arborescence has only one
+> out-arc at that tail. Failure is therefore exactly a one-exit event.
+> See `docs/CRUX_A_LEXIST_PROOF_ATTEMPT_2026_06_11.md`, Lemma 2.1.
+> The original text is retained below as a record of the refuted route.
+
 Suppose Conjecture L fails at $a$: every $b \in E^+_a$ has $X
 \subseteq X_b^{U^-}$. Write $E^+_a = \{b_1, \ldots, b_k\}$, $b_i =
 (u_i', y_i')$, $u_i' \in X$, $y_i' \notin X$.

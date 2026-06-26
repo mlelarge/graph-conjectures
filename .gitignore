@@ -1,4 +1,5 @@
 # Python
+.venv
 .venv/
 __pycache__/
 *.pyc
@@ -52,6 +53,15 @@ data/urls.txt
 problems/pebbling_cartesian_product/external/Graph_Pebbling/
 problems/earth_moon_problem/external/sat-modulo-symmetries/
 
+# Downloaded third-party reference material (arXiv PDFs + LaTeX/source); never
+# committed, matching the repo's existing 0-tracked-Refs convention. Put your own
+# notes in docs/, not Refs/, if you want them tracked.
+Refs/
+
 # Pebbling project temp artifacts (intermediate solver dumps)
 problems/pebbling_cartesian_product/data/pebbling_product/_tmp_*.json
+
+# Oversized data dump exceeding GitHub's 100 MB hard file-size limit (regenerable;
+# keep it local, or move to Git LFS if it must be tracked)
+problems/tournament_clique_number_omega_cluster/data/ground_projection_law_all.json
 

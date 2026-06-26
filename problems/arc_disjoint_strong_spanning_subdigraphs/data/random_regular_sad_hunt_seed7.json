@@ -1,0 +1,33 @@
+{
+  "params": {
+    "sizes": "12,24",
+    "samples": 8,
+    "seed": 7,
+    "cap": 200
+  },
+  "overall": {
+    "12": {
+      "accepted": 8,
+      "draws": 9,
+      "sat": 8,
+      "unsat": 0,
+      "disagree": 0,
+      "unknown": 0,
+      "m_true": 8,
+      "m_false": 0,
+      "m_cap": 0
+    },
+    "24": {
+      "accepted": 8,
+      "draws": 8,
+      "sat": 8,
+      "unsat": 0,
+      "disagree": 0,
+      "unknown": 0,
+      "m_true": 8,
+      "m_false": 0,
+      "m_cap": 0
+    }
+  },
+  "witnesses": []
+}

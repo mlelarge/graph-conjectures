@@ -1,0 +1,57 @@
+{
+  "sat_oracle_validated": true,
+  "C3_C3": {
+    "label": "C3[C3]",
+    "order": 9,
+    "omega_vec": 3,
+    "n_optimal_orders": 145071,
+    "n_distinct_max_cliques": 54,
+    "common_hitting_vertices": [],
+    "UMCO": false,
+    "is_critical": true,
+    "elapsed_s": 21.15
+  },
+  "C3_C3_C3": {
+    "label": "C3[C3][C3]",
+    "order": 27,
+    "best_upper": 5,
+    "omega_vec": null,
+    "is_critical": null
+  },
+  "AC7_C3": {
+    "label": "AC_7[C3]",
+    "order": 21,
+    "best_upper": 4,
+    "ge_ub": true,
+    "ge_ub_plus1": false,
+    "omega_vec": 4,
+    "deletions_drop": 21,
+    "is_critical": true,
+    "n_optimal_orders_sampled": 236,
+    "n_distinct_max_cliques_sampled": 1777,
+    "common_hitting_vertices_sampled": [],
+    "UMCO": false,
+    "elapsed_s": 1.83
+  },
+  "table": {
+    "C3[C3]": {
+      "is_critical": true,
+      "UMCO": false
+    },
+    "AC_7[C3]": {
+      "is_critical": true,
+      "UMCO": false
+    },
+    "C3[C3][C3]": {
+      "is_critical": null,
+      "UMCO": null
+    },
+    "AC_7[C3][C3]": {
+      "is_critical": "predicted_via_outer_UMCO",
+      "UMCO": null
+    }
+  },
+  "KILL_a_C3C3_UMCO_but_noncritical_iter": false,
+  "KILL_b_AC7C3_critical_but_noUMCO": true,
+  "elapsed_s": 25.4
+}

@@ -1,0 +1,285 @@
+{
+  "sat_validation_all_agree": true,
+  "sat_validation": [
+    {
+      "name": "AC7",
+      "p": 7,
+      "g": [
+        1,
+        2,
+        4
+      ],
+      "exact_omega_vec": 3,
+      "K": 3,
+      "sat_says_ge_K": true,
+      "truth_ge_K": true,
+      "agree": true,
+      "nclauses_forbid": 21,
+      "sat_time_s": 0.0002
+    },
+    {
+      "name": "AC7",
+      "p": 7,
+      "g": [
+        1,
+        2,
+        4
+      ],
+      "exact_omega_vec": 3,
+      "K": 4,
+      "sat_says_ge_K": false,
+      "truth_ge_K": false,
+      "agree": true,
+      "nclauses_forbid": 0,
+      "sat_time_s": 0.0001
+    },
+    {
+      "name": "consec7",
+      "p": 7,
+      "g": [
+        1,
+        2,
+        3
+      ],
+      "exact_omega_vec": 2,
+      "K": 3,
+      "sat_says_ge_K": false,
+      "truth_ge_K": false,
+      "agree": true,
+      "nclauses_forbid": 21,
+      "sat_time_s": 0.0001
+    },
+    {
+      "name": "consec7",
+      "p": 7,
+      "g": [
+        1,
+        2,
+        3
+      ],
+      "exact_omega_vec": 2,
+      "K": 4,
+      "sat_says_ge_K": false,
+      "truth_ge_K": false,
+      "agree": true,
+      "nclauses_forbid": 7,
+      "sat_time_s": 0.0001
+    },
+    {
+      "name": "QR7",
+      "p": 7,
+      "g": [
+        1,
+        2,
+        4
+      ],
+      "exact_omega_vec": 3,
+      "K": 3,
+      "sat_says_ge_K": true,
+      "truth_ge_K": true,
+      "agree": true,
+      "nclauses_forbid": 21,
+      "sat_time_s": 0.0002
+    },
+    {
+      "name": "QR7",
+      "p": 7,
+      "g": [
+        1,
+        2,
+        4
+      ],
+      "exact_omega_vec": 3,
+      "K": 4,
+      "sat_says_ge_K": false,
+      "truth_ge_K": false,
+      "agree": true,
+      "nclauses_forbid": 0,
+      "sat_time_s": 0.0001
+    },
+    {
+      "name": "c9_a",
+      "p": 9,
+      "g": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "exact_omega_vec": 2,
+      "K": 3,
+      "sat_says_ge_K": false,
+      "truth_ge_K": false,
+      "agree": true,
+      "nclauses_forbid": 54,
+      "sat_time_s": 0.0002
+    },
+    {
+      "name": "c9_a",
+      "p": 9,
+      "g": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "exact_omega_vec": 2,
+      "K": 4,
+      "sat_says_ge_K": false,
+      "truth_ge_K": false,
+      "agree": true,
+      "nclauses_forbid": 36,
+      "sat_time_s": 0.0002
+    },
+    {
+      "name": "c9_b",
+      "p": 9,
+      "g": [
+        1,
+        2,
+        3,
+        5
+      ],
+      "exact_omega_vec": 3,
+      "K": 3,
+      "sat_says_ge_K": true,
+      "truth_ge_K": true,
+      "agree": true,
+      "nclauses_forbid": 54,
+      "sat_time_s": 0.0003
+    },
+    {
+      "name": "c9_b",
+      "p": 9,
+      "g": [
+        1,
+        2,
+        3,
+        5
+      ],
+      "exact_omega_vec": 3,
+      "K": 4,
+      "sat_says_ge_K": false,
+      "truth_ge_K": false,
+      "agree": true,
+      "nclauses_forbid": 18,
+      "sat_time_s": 0.0002
+    },
+    {
+      "name": "Stilde3-like_no",
+      "p": 9,
+      "g": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "exact_omega_vec": 2,
+      "K": 3,
+      "sat_says_ge_K": false,
+      "truth_ge_K": false,
+      "agree": true,
+      "nclauses_forbid": 54,
+      "sat_time_s": 0.0002
+    },
+    {
+      "name": "Stilde3-like_no",
+      "p": 9,
+      "g": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "exact_omega_vec": 2,
+      "K": 4,
+      "sat_says_ge_K": false,
+      "truth_ge_K": false,
+      "agree": true,
+      "nclauses_forbid": 36,
+      "sat_time_s": 0.0002
+    }
+  ],
+  "sat_scan": {
+    "13": {
+      "n_identity_clique_eq_4": 30,
+      "omega_vec_hist": {
+        ">3": 26,
+        "2": 4
+      },
+      "omega_vec_eq_4_generators": [],
+      "four_critical_generators": [],
+      "time_s": 0.32
+    },
+    "15": {
+      "n_identity_clique_eq_4": 72,
+      "omega_vec_hist": {
+        ">3": 72
+      },
+      "omega_vec_eq_4_generators": [],
+      "four_critical_generators": [],
+      "time_s": 1.22
+    }
+  },
+  "smallest_4critical_order_in_13_15": null,
+  "n19_dom_ge4_candidates": {
+    "QR_19": {
+      "g": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        9,
+        11,
+        16,
+        17
+      ],
+      "is_tournament": true,
+      "identity_clique": 4,
+      "best_upper": 4,
+      "omega_vec_ge4_sat": true,
+      "omega_vec_ge5_sat": false,
+      "sat_time_ge4_s": 0.2426,
+      "omega_vec": 4,
+      "deletion0_ge3_sat": true,
+      "deletion0_ge4_sat": false,
+      "deletion0_best_upper": 4,
+      "deletion0_omega_vec": "in[3,4]",
+      "is_4_critical_via_vt_deletion0": false,
+      "omega_vec_SOUND": 4,
+      "deletion0_omega_vec_SOUND": 3,
+      "is_4_critical_SOUND": true,
+      "note": "best_upper heuristic was loose (returned 4) but SAT ge4=False is the SOUND statement omega_vec(T-v)<=3; ge3=True gives =3. Rotation automorphism => all deletions equal."
+    },
+    "reverse_QR_19": {
+      "g": [
+        2,
+        3,
+        8,
+        10,
+        12,
+        13,
+        14,
+        15,
+        18
+      ],
+      "is_tournament": true,
+      "identity_clique": 4,
+      "best_upper": 4,
+      "omega_vec_ge4_sat": true,
+      "omega_vec_ge5_sat": false,
+      "sat_time_ge4_s": 0.1969,
+      "omega_vec": 4,
+      "deletion0_ge3_sat": true,
+      "deletion0_ge4_sat": false,
+      "deletion0_best_upper": 4,
+      "deletion0_omega_vec": "in[3,4]",
+      "is_4_critical_via_vt_deletion0": false,
+      "omega_vec_SOUND": 4,
+      "deletion0_omega_vec_SOUND": 3,
+      "is_4_critical_SOUND": true,
+      "note": "best_upper heuristic was loose (returned 4) but SAT ge4=False is the SOUND statement omega_vec(T-v)<=3; ge3=True gives =3. Rotation automorphism => all deletions equal."
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "P": 23,
+  "g": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12],
+  "status": "INFEASIBLE",
+  "is_tournament": true,
+  "g_partition_ok": true,
+  "abs_g_size_half": true,
+  "rotation_automorphism": true,
+  "P_mod_4": 3,
+  "consecutive_generators": false,
+  "QR_23": [1, 2, 3, 4, 6, 8, 9, 12, 13, 16, 18],
+  "is_paley_23": false,
+  "upper_bound_min_omega_rotations": 3,
+  "deletion_omega_vec_minus0": 2,
+  "deletion_time_s": 4.6,
+  "has_triangle_free_order_ff0": null,
+  "omega_vec": null,
+  "is_3_critical": null,
+  "note": "LOWER BOUND has_triangle_free_order(fixed_first=0) did NOT complete within the foreground budget. Triangle-free DFS at order 23 exceeded 580s of pure DFS time (also timed out at 280s and 555s in two earlier full-script runs); projected ~thousands of seconds, consistent with the 74s@17 / ~520-560s@19 trend. Cheap facts obtained LIVE: is_tournament=True, valid vertex-transitive generator (g and -g partition {1..22}, |g|=11=(p-1)/2), rotation automorphism=True, NOT Paley(23) (g != QR_23), UPPER bound min omega over 23 rotations=3, DELETION core.omega_vec_bb(AC_23-0,ub=3)=2 in 4.6s (=> all 23 deletions=2 by vertex-transitivity). The ONLY missing fact is the whole-tournament LOWER bound omega_vec>=3. Per next_action: the construction route is computationally EXHAUSTED at p=23; the problem needs the H7 uniform structural lower-bound theorem (closed-form: no order of C_p(g) is triangle-free, uniformly in p).",
+  "runs": [
+    {"cmd": "timeout 280 .venv/bin/python scripts/probe_p23.py", "exit": 124},
+    {"cmd": "timeout 560 .venv/bin/python -u scripts/probe_p23.py", "exit": 124, "captured": "upper=3, deletion=2 (4.6s), LB DFS unfinished"},
+    {"cmd": "timeout 580 .venv/bin/python -u scripts/probe_p23_lb_only.py", "exit": 124, "captured": "LB DFS alone unfinished"}
+  ]
+}

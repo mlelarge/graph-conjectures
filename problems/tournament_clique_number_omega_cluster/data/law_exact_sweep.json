@@ -1,0 +1,213 @@
+{
+  "products": [
+    {
+      "prod": "TT1[TT2]",
+      "order": 2,
+      "ovT": 1,
+      "ovH": 1,
+      "pred": 1,
+      "ov_prod": 1,
+      "agree": true
+    },
+    {
+      "prod": "TT1[TT3]",
+      "order": 3,
+      "ovT": 1,
+      "ovH": 1,
+      "pred": 1,
+      "ov_prod": 1,
+      "agree": true
+    },
+    {
+      "prod": "TT1[C3]",
+      "order": 3,
+      "ovT": 1,
+      "ovH": 2,
+      "pred": 2,
+      "ov_prod": 2,
+      "agree": true
+    },
+    {
+      "prod": "TT1[T4_ov2]",
+      "order": 4,
+      "ovT": 1,
+      "ovH": 2,
+      "pred": 2,
+      "ov_prod": 2,
+      "agree": true
+    },
+    {
+      "prod": "TT1[AC7]",
+      "order": 7,
+      "ovT": 1,
+      "ovH": 3,
+      "pred": 3,
+      "ov_prod": 3,
+      "agree": true
+    },
+    {
+      "prod": "TT2[TT2]",
+      "order": 4,
+      "ovT": 1,
+      "ovH": 1,
+      "pred": 1,
+      "ov_prod": 1,
+      "agree": true
+    },
+    {
+      "prod": "TT2[TT3]",
+      "order": 6,
+      "ovT": 1,
+      "ovH": 1,
+      "pred": 1,
+      "ov_prod": 1,
+      "agree": true
+    },
+    {
+      "prod": "TT2[C3]",
+      "order": 6,
+      "ovT": 1,
+      "ovH": 2,
+      "pred": 2,
+      "ov_prod": 2,
+      "agree": true
+    },
+    {
+      "prod": "TT2[T4_ov2]",
+      "order": 8,
+      "ovT": 1,
+      "ovH": 2,
+      "pred": 2,
+      "ov_prod": 2,
+      "agree": true
+    },
+    {
+      "prod": "TT3[TT3]",
+      "order": 9,
+      "ovT": 1,
+      "ovH": 1,
+      "pred": 1,
+      "ov_prod": 1,
+      "agree": true
+    },
+    {
+      "prod": "TT3[C3]",
+      "order": 9,
+      "ovT": 1,
+      "ovH": 2,
+      "pred": 2,
+      "ov_prod": 2,
+      "agree": true
+    },
+    {
+      "prod": "TT3[T4_ov2]",
+      "order": 12,
+      "ovT": 1,
+      "ovH": 2,
+      "pred": 2,
+      "ov_prod": 2,
+      "agree": true
+    },
+    {
+      "prod": "C3[TT2]",
+      "order": 6,
+      "ovT": 2,
+      "ovH": 1,
+      "pred": 2,
+      "ov_prod": 2,
+      "agree": true
+    },
+    {
+      "prod": "C3[TT3]",
+      "order": 9,
+      "ovT": 2,
+      "ovH": 1,
+      "pred": 2,
+      "ov_prod": 2,
+      "agree": true
+    },
+    {
+      "prod": "C3[C3]",
+      "order": 9,
+      "ovT": 2,
+      "ovH": 2,
+      "pred": 3,
+      "ov_prod": 3,
+      "agree": true
+    },
+    {
+      "prod": "C3[T4_ov2]",
+      "order": 12,
+      "ovT": 2,
+      "ovH": 2,
+      "pred": 3,
+      "ov_prod": null,
+      "status": "timeout"
+    },
+    {
+      "prod": "T4_ov2[TT2]",
+      "order": 8,
+      "ovT": 2,
+      "ovH": 1,
+      "pred": 2,
+      "ov_prod": 2,
+      "agree": true
+    },
+    {
+      "prod": "T4_ov2[TT3]",
+      "order": 12,
+      "ovT": 2,
+      "ovH": 1,
+      "pred": 2,
+      "ov_prod": 2,
+      "agree": true
+    },
+    {
+      "prod": "T4_ov2[C3]",
+      "order": 12,
+      "ovT": 2,
+      "ovH": 2,
+      "pred": 3,
+      "ov_prod": null,
+      "status": "timeout"
+    }
+  ],
+  "factors": [
+    {
+      "name": "TT1",
+      "order": 1,
+      "ov": 1
+    },
+    {
+      "name": "TT2",
+      "order": 2,
+      "ov": 1
+    },
+    {
+      "name": "TT3",
+      "order": 3,
+      "ov": 1
+    },
+    {
+      "name": "C3",
+      "order": 3,
+      "ov": 2
+    },
+    {
+      "name": "T4_ov2",
+      "order": 4,
+      "ov": 2
+    },
+    {
+      "name": "AC7",
+      "order": 7,
+      "ov": 3
+    }
+  ],
+  "n_products": 19,
+  "n_completed": 17,
+  "n_disagreements": 0,
+  "disagreements": [],
+  "all_agree": true,
+  "elapsed_s": 86.06
+}

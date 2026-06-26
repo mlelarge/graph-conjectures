@@ -1,0 +1,28 @@
+{
+ "C3[AC_7]": {
+  "order": 21,
+  "ntri": 385,
+  "dic_le3": false,
+  "dic_le4": false,
+  "del_dic_le3": false,
+  "times": [
+   0.0006442070007324219,
+   0.1359727382659912,
+   0.0005519390106201172
+  ]
+ },
+ "AC_7[AC_7]": {
+  "order": 49,
+  "ntri": 4900,
+  "dic_le4": false,
+  "dic_le5": false,
+  "del_dic_le4": false,
+  "coloring5": null,
+  "del_coloring4": null,
+  "times": [
+   0.055307865142822266,
+   28.86549997329712,
+   0.05490612983703613
+  ]
+ }
+}

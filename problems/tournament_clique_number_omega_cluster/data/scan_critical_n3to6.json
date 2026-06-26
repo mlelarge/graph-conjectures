@@ -1,0 +1,65 @@
+{
+  "n3_k2": {
+    "n": 3,
+    "k": 2,
+    "n_tournaments_enumerated": 8,
+    "omega_vec_histogram": {
+      "1": 6,
+      "2": 2
+    },
+    "num_k_critical": 2,
+    "distinct_critical_score_seqs": 1,
+    "critical_witnesses": [
+      {
+        "score_seq": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "score_seq": [
+          1,
+          1,
+          1
+        ]
+      }
+    ]
+  },
+  "n4_k3": {
+    "n": 4,
+    "k": 3,
+    "n_tournaments_enumerated": 64,
+    "omega_vec_histogram": {
+      "1": 24,
+      "2": 40
+    },
+    "num_k_critical": 0,
+    "distinct_critical_score_seqs": 0,
+    "critical_witnesses": []
+  },
+  "n5_k3": {
+    "n": 5,
+    "k": 3,
+    "n_tournaments_enumerated": 1024,
+    "omega_vec_histogram": {
+      "1": 120,
+      "2": 904
+    },
+    "num_k_critical": 0,
+    "distinct_critical_score_seqs": 0,
+    "critical_witnesses": []
+  },
+  "n6_k3": {
+    "n": 6,
+    "k": 3,
+    "n_tournaments_enumerated": 32768,
+    "omega_vec_histogram": {
+      "1": 720,
+      "2": 32048
+    },
+    "num_k_critical": 0,
+    "distinct_critical_score_seqs": 0,
+    "critical_witnesses": []
+  }
+}

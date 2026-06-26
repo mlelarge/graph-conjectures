@@ -1,0 +1,157 @@
+{
+ "n": 8,
+ "buckets": {
+  "9": {
+   "nonplanar": 0,
+   "tested": 0,
+   "capped": 0,
+   "found": 0,
+   "done": true
+  },
+  "10": {
+   "nonplanar": 0,
+   "tested": 0,
+   "capped": 0,
+   "found": 0,
+   "done": true
+  },
+  "11": {
+   "nonplanar": 3,
+   "tested": 3,
+   "capped": 0,
+   "found": 0,
+   "done": true
+  },
+  "12": {
+   "nonplanar": 23,
+   "tested": 23,
+   "capped": 0,
+   "found": 0,
+   "done": true
+  },
+  "13": {
+   "nonplanar": 118,
+   "tested": 118,
+   "capped": 0,
+   "found": 0,
+   "done": true
+  },
+  "14": {
+   "nonplanar": 339,
+   "tested": 339,
+   "capped": 0,
+   "found": 0,
+   "done": true
+  },
+  "15": {
+   "nonplanar": 659,
+   "tested": 659,
+   "capped": 0,
+   "found": 0,
+   "done": true
+  },
+  "16": {
+   "nonplanar": 855,
+   "tested": 855,
+   "capped": 0,
+   "found": 0,
+   "done": true
+  },
+  "17": {
+   "nonplanar": 813,
+   "tested": 813,
+   "capped": 0,
+   "found": 0,
+   "done": true
+  },
+  "18": {
+   "nonplanar": 608,
+   "tested": 608,
+   "capped": 0,
+   "found": 0,
+   "done": true
+  },
+  "19": {
+   "nonplanar": 386,
+   "tested": 386,
+   "capped": 0,
+   "found": 0,
+   "done": true
+  },
+  "20": {
+   "nonplanar": 215,
+   "tested": 215,
+   "capped": 0,
+   "found": 0,
+   "done": true
+  },
+  "21": {
+   "nonplanar": 112,
+   "tested": 112,
+   "capped": 0,
+   "found": 0,
+   "done": true
+  },
+  "22": {
+   "nonplanar": 55,
+   "tested": 55,
+   "capped": 0,
+   "found": 0,
+   "done": true
+  },
+  "23": {
+   "nonplanar": 24,
+   "tested": 24,
+   "capped": 0,
+   "found": 0,
+   "done": true
+  },
+  "24": {
+   "nonplanar": 11,
+   "lemma": 7,
+   "tested": 4,
+   "capped": 0,
+   "found": 0,
+   "done": true,
+   "method": "kappa'>=5 lemma (7) + forest-constrained exhaustive search (4)"
+  },
+  "25": {
+   "nonplanar": 5,
+   "lemma": 4,
+   "tested": 1,
+   "capped": 0,
+   "found": 0,
+   "done": true,
+   "method": "kappa'>=5 lemma (4) + forest-constrained exhaustive search (1)"
+  },
+  "26": {
+   "nonplanar": 2,
+   "lemma": 2,
+   "tested": 0,
+   "capped": 0,
+   "found": 0,
+   "done": true,
+   "method": "kappa'>=5 lemma (2) + forest-constrained exhaustive search (0)"
+  },
+  "27": {
+   "nonplanar": 1,
+   "lemma": 1,
+   "tested": 0,
+   "capped": 0,
+   "found": 0,
+   "done": true,
+   "method": "kappa'>=5 lemma (1) + forest-constrained exhaustive search (0)"
+  },
+  "28": {
+   "nonplanar": 1,
+   "lemma": 1,
+   "tested": 0,
+   "capped": 0,
+   "found": 0,
+   "done": true,
+   "method": "kappa'>=5 lemma (1) + forest-constrained exhaustive search (0)"
+  }
+ },
+ "counterexamples": [],
+ "note": "n=8 non-planar disproof COMPLETE: 4230/4230, 0 admit 2-extremal. kappa'<=4 lemma certifies dense, forest-search the 5 kappa'<=4 residuals."
+}

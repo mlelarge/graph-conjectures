@@ -1,0 +1,136 @@
+{
+ "results": [
+  {
+   "witness": "QR7",
+   "n": 7,
+   "omega_vec": 3,
+   "min_optimal_chi": 3,
+   "method": "exact_all_orders",
+   "n_optimal_seen": 1
+  },
+  {
+   "witness": "n8_crit_0",
+   "n": 8,
+   "omega_vec": 3,
+   "min_optimal_chi": 3,
+   "method": "exact_all_orders",
+   "n_optimal_seen": 1
+  },
+  {
+   "witness": "n8_crit_1",
+   "n": 8,
+   "omega_vec": 3,
+   "min_optimal_chi": 3,
+   "method": "exact_all_orders",
+   "n_optimal_seen": 1
+  },
+  {
+   "witness": "n9_crit_0",
+   "n": 9,
+   "omega_vec": 3,
+   "min_optimal_chi": 3,
+   "method": "exact_all_orders",
+   "n_optimal_seen": 1
+  },
+  {
+   "witness": "n9_crit_1",
+   "n": 9,
+   "omega_vec": 3,
+   "min_optimal_chi": 3,
+   "method": "exact_all_orders",
+   "n_optimal_seen": 1
+  },
+  {
+   "witness": "n9_crit_2",
+   "n": 9,
+   "omega_vec": 3,
+   "min_optimal_chi": 3,
+   "method": "exact_all_orders",
+   "n_optimal_seen": 1
+  },
+  {
+   "witness": "n9_crit_3",
+   "n": 9,
+   "omega_vec": 3,
+   "min_optimal_chi": 3,
+   "method": "exact_all_orders",
+   "n_optimal_seen": 1
+  },
+  {
+   "witness": "n9_crit_4",
+   "n": 9,
+   "omega_vec": 3,
+   "min_optimal_chi": 3,
+   "method": "exact_all_orders",
+   "n_optimal_seen": 1
+  },
+  {
+   "witness": "n9_crit_5",
+   "n": 9,
+   "omega_vec": 3,
+   "min_optimal_chi": 3,
+   "method": "exact_all_orders",
+   "n_optimal_seen": 1
+  },
+  {
+   "witness": "n9_crit_6",
+   "n": 9,
+   "omega_vec": 3,
+   "min_optimal_chi": 3,
+   "method": "exact_all_orders",
+   "n_optimal_seen": 1
+  },
+  {
+   "witness": "n9_crit_7",
+   "n": 9,
+   "omega_vec": 3,
+   "min_optimal_chi": 3,
+   "method": "exact_all_orders",
+   "n_optimal_seen": 1
+  },
+  {
+   "witness": "n9_crit_8",
+   "n": 9,
+   "omega_vec": 3,
+   "min_optimal_chi": 3,
+   "method": "exact_all_orders",
+   "n_optimal_seen": 1
+  },
+  {
+   "witness": "n9_crit_9",
+   "n": 9,
+   "omega_vec": 3,
+   "min_optimal_chi": 3,
+   "method": "exact_all_orders",
+   "n_optimal_seen": 1
+  },
+  {
+   "witness": "C11_g12346",
+   "n": 11,
+   "omega_vec_target": 3,
+   "min_optimal_chi": 3,
+   "method": "sampled_fix0",
+   "n_optimal_seen": 1,
+   "n_sampled": 7
+  },
+  {
+   "witness": "C13_P9_g123457",
+   "n": 13,
+   "omega_vec_target": 3,
+   "min_optimal_chi": 3,
+   "method": "sampled_fix0",
+   "n_optimal_seen": 1,
+   "n_sampled": 89
+  },
+  {
+   "witness": "C17_g1234567_9",
+   "n": 17,
+   "omega_vec_target": 3,
+   "min_optimal_chi": 3,
+   "method": "sampled_fix0",
+   "n_optimal_seen": 1,
+   "n_sampled": 14792
+  }
+ ],
+ "all_min_optimal_chi_eq_3": true
+}

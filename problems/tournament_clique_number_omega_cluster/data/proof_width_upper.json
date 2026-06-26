@@ -1,0 +1,47 @@
+[
+  {
+    "p": 7,
+    "SAT": false,
+    "n_input_clauses": 91,
+    "n_proof_lines": 0,
+    "max_learned_width": null,
+    "median_learned_width": null,
+    "solve_time_s": 0.0
+  },
+  {
+    "p": 11,
+    "SAT": false,
+    "n_input_clauses": 440,
+    "n_proof_lines": 2,
+    "max_learned_width": 7,
+    "median_learned_width": 7,
+    "solve_time_s": 0.0
+  },
+  {
+    "p": 13,
+    "SAT": false,
+    "n_input_clauses": 767,
+    "n_proof_lines": 0,
+    "max_learned_width": null,
+    "median_learned_width": null,
+    "solve_time_s": 0.0
+  },
+  {
+    "p": 17,
+    "SAT": false,
+    "n_input_clauses": 1836,
+    "n_proof_lines": 0,
+    "max_learned_width": null,
+    "median_learned_width": null,
+    "solve_time_s": 0.0
+  },
+  {
+    "p": 19,
+    "SAT": false,
+    "n_input_clauses": 2622,
+    "n_proof_lines": 0,
+    "max_learned_width": null,
+    "median_learned_width": null,
+    "solve_time_s": 0.0
+  }
+]

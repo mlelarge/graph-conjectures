@@ -1,0 +1,19 @@
+{
+  "test": "composite-inner composition-law VALUE test omega_vec(T[H])=ov(T)+ov(H)-1",
+  "control_c": {"obj":"C3[C3]","order":9,"ov_exact":3,"pred":3,"match":true,
+    "evidence":"core.omega_vec bruteforce=3; SAT no-K3 UNSAT + no-K4 SAT (cadical+minisat)"},
+  "test_a": {"obj":"C3[C3[C3]] (composite inner)","order":27,"pred":4,"value":4,"match":true,
+    "exceeds_pred":false,
+    "evidence":"no-K4 UNSAT (ov>=4) both cadical+minisat; no-K5 SAT (ov<5) both -> ov=4 EXACTLY"},
+  "test_b": {"obj":"AC_7[C3[C3]] (composite inner)","order":63,"pred":5,
+    "upper_bound":5,"lower_bound":"unresolved (no-K5 UNSAT proof timed out at 25min)",
+    "exceeds_pred":false,
+    "evidence":"no-K6 SAT both cadical+minisat -> ov<=5 (does NOT exceed pred 5); dom=3 only gives ov>=3; structured NSS merged-key order gives clique 7 (NSS potential of composite inner C3[C3] reaches 4>ov=3)"},
+  "literature_leg": {
+    "NSS23_cited_thm": "Refs/2310.04265.tex:505 = chi/omega/dic inequality, NOT a product law",
+    "substitution_results_in_paper": "dic-boundedness preservation (dic<=9^omega_vec), not exact omega_vec product value law",
+    "conclusion": "no cited product law for composite H; reduction target UNPROVEN in literature; NSS decreasing-path potential NOT omega_vec-bounded for composite blocks (potential of C3[C3] reaches 4)"
+  },
+  "kill_condition_fired": false,
+  "verdict": "pass (oracle does not contradict; KILL=value>pred never fired at (a) or (b))"
+}

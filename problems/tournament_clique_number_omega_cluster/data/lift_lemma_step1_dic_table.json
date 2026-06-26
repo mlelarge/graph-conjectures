@@ -1,0 +1,150 @@
+{
+ "C3": {
+  "n": 3,
+  "dic": 2,
+  "dic_vertex_critical": true,
+  "deletions": [
+   [
+    0,
+    1
+   ],
+   [
+    1,
+    1
+   ],
+   [
+    2,
+    1
+   ]
+  ],
+  "vt_used": false
+ },
+ "QR_7=AC_7": {
+  "n": 7,
+  "dic": 3,
+  "dic_vertex_critical": true,
+  "deletions": [
+   [
+    0,
+    2
+   ]
+  ],
+  "vt_used": true
+ },
+ "n8_classA": {
+  "n": 8,
+  "dic": 3,
+  "dic_vertex_critical": false,
+  "deletions": [
+   [
+    0,
+    2
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    2,
+    2
+   ],
+   [
+    3,
+    3
+   ],
+   [
+    4,
+    2
+   ],
+   [
+    5,
+    2
+   ],
+   [
+    6,
+    2
+   ],
+   [
+    7,
+    2
+   ]
+  ],
+  "vt_used": false
+ },
+ "n8_classB": {
+  "n": 8,
+  "dic": 3,
+  "dic_vertex_critical": false,
+  "deletions": [
+   [
+    0,
+    2
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    2,
+    2
+   ],
+   [
+    3,
+    2
+   ],
+   [
+    4,
+    2
+   ],
+   [
+    5,
+    2
+   ],
+   [
+    6,
+    2
+   ],
+   [
+    7,
+    3
+   ]
+  ],
+  "vt_used": false
+ },
+ "S~_3": {
+  "n": 9,
+  "dic": 3,
+  "dic_vertex_critical": false,
+  "deletions": [
+   [
+    0,
+    3
+   ]
+  ],
+  "vt_used": true
+ },
+ "AC_9": {
+  "n": 9,
+  "dic": 3,
+  "dic_vertex_critical": true,
+  "deletions": [
+   [
+    0,
+    2
+   ]
+  ],
+  "vt_used": true
+ },
+ "AC_11": {
+  "n": 11,
+  "dic": 3,
+  "dic_vertex_critical": true,
+  "deletions": [
+   [
+    0,
+    2
+   ]
+  ],
+  "vt_used": true
+ }
+}

@@ -1,0 +1,376 @@
+{
+  "sat_oracle_validated": true,
+  "law": [
+    {
+      "name": "C3[C3]",
+      "order": 9,
+      "ov": 3,
+      "law_pred": 3,
+      "agree": true
+    },
+    {
+      "name": "C3[TT2]",
+      "order": 6,
+      "ov": 2,
+      "law_pred": 2,
+      "agree": true
+    },
+    {
+      "name": "TT2[C3]",
+      "order": 6,
+      "ov": 2,
+      "law_pred": 2,
+      "agree": true
+    },
+    {
+      "name": "AC7",
+      "order": 7,
+      "ov": 3,
+      "law_pred": 3,
+      "agree": true
+    }
+  ],
+  "L_n": [
+    {
+      "n": 7,
+      "order": 21,
+      "is_tournament": true,
+      "ge4": true,
+      "ge5": false,
+      "best_upper": 4,
+      "omega_vec_eq4": true,
+      "deletions_checked": 21,
+      "deletions_eq3": 0,
+      "all_deletions_eq3": false,
+      "bad_deletions": [
+        {
+          "v": 0,
+          "ge3": true,
+          "ge4": false,
+          "upper": 4,
+          "is3": false
+        },
+        {
+          "v": 1,
+          "ge3": true,
+          "ge4": false,
+          "upper": 4,
+          "is3": false
+        },
+        {
+          "v": 2,
+          "ge3": true,
+          "ge4": false,
+          "upper": 4,
+          "is3": false
+        },
+        {
+          "v": 3,
+          "ge3": true,
+          "ge4": false,
+          "upper": 4,
+          "is3": false
+        },
+        {
+          "v": 4,
+          "ge3": true,
+          "ge4": false,
+          "upper": 4,
+          "is3": false
+        },
+        {
+          "v": 5,
+          "ge3": true,
+          "ge4": false,
+          "upper": 4,
+          "is3": false
+        },
+        {
+          "v": 6,
+          "ge3": true,
+          "ge4": false,
+          "upper": 4,
+          "is3": false
+        },
+        {
+          "v": 7,
+          "ge3": true,
+          "ge4": false,
+          "upper": 4,
+          "is3": false
+        },
+        {
+          "v": 8,
+          "ge3": true,
+          "ge4": false,
+          "upper": 4,
+          "is3": false
+        },
+        {
+          "v": 9,
+          "ge3": true,
+          "ge4": false,
+          "upper": 4,
+          "is3": false
+        }
+      ],
+      "is_4_critical": false
+    },
+    {
+      "n": 9,
+      "order": 27,
+      "is_tournament": true,
+      "ge4": true,
+      "ge5": false,
+      "best_upper": 5,
+      "omega_vec_eq4": false,
+      "deletions_checked": 27,
+      "deletions_eq3": 0,
+      "all_deletions_eq3": false,
+      "bad_deletions": [
+        {
+          "v": 0,
+          "ge3": true,
+          "ge4": false,
+          "upper": 5,
+          "is3": false
+        },
+        {
+          "v": 1,
+          "ge3": true,
+          "ge4": false,
+          "upper": 5,
+          "is3": false
+        },
+        {
+          "v": 2,
+          "ge3": true,
+          "ge4": false,
+          "upper": 5,
+          "is3": false
+        },
+        {
+          "v": 3,
+          "ge3": true,
+          "ge4": false,
+          "upper": 5,
+          "is3": false
+        },
+        {
+          "v": 4,
+          "ge3": true,
+          "ge4": false,
+          "upper": 5,
+          "is3": false
+        },
+        {
+          "v": 5,
+          "ge3": true,
+          "ge4": false,
+          "upper": 5,
+          "is3": false
+        },
+        {
+          "v": 6,
+          "ge3": true,
+          "ge4": false,
+          "upper": 5,
+          "is3": false
+        },
+        {
+          "v": 7,
+          "ge3": true,
+          "ge4": false,
+          "upper": 5,
+          "is3": false
+        },
+        {
+          "v": 8,
+          "ge3": true,
+          "ge4": false,
+          "upper": 5,
+          "is3": false
+        },
+        {
+          "v": 9,
+          "ge3": true,
+          "ge4": false,
+          "upper": 5,
+          "is3": false
+        }
+      ],
+      "is_4_critical": false
+    },
+    {
+      "n": 11,
+      "order": 33,
+      "is_tournament": true,
+      "ge4": true,
+      "ge5": false,
+      "best_upper": 5,
+      "omega_vec_eq4": false,
+      "deletions_checked": 33,
+      "deletions_eq3": 0,
+      "all_deletions_eq3": false,
+      "bad_deletions": [
+        {
+          "v": 0,
+          "ge3": true,
+          "ge4": false,
+          "upper": 5,
+          "is3": false
+        },
+        {
+          "v": 1,
+          "ge3": true,
+          "ge4": false,
+          "upper": 5,
+          "is3": false
+        },
+        {
+          "v": 2,
+          "ge3": true,
+          "ge4": false,
+          "upper": 5,
+          "is3": false
+        },
+        {
+          "v": 3,
+          "ge3": true,
+          "ge4": false,
+          "upper": 5,
+          "is3": false
+        },
+        {
+          "v": 4,
+          "ge3": true,
+          "ge4": false,
+          "upper": 5,
+          "is3": false
+        },
+        {
+          "v": 5,
+          "ge3": true,
+          "ge4": false,
+          "upper": 5,
+          "is3": false
+        },
+        {
+          "v": 6,
+          "ge3": true,
+          "ge4": false,
+          "upper": 5,
+          "is3": false
+        },
+        {
+          "v": 7,
+          "ge3": true,
+          "ge4": false,
+          "upper": 5,
+          "is3": false
+        },
+        {
+          "v": 8,
+          "ge3": true,
+          "ge4": false,
+          "upper": 5,
+          "is3": false
+        },
+        {
+          "v": 9,
+          "ge3": true,
+          "ge4": false,
+          "upper": 5,
+          "is3": false
+        }
+      ],
+      "is_4_critical": false
+    },
+    {
+      "n": 13,
+      "order": 39,
+      "is_tournament": true,
+      "ge4": true,
+      "ge5": false,
+      "best_upper": 5,
+      "omega_vec_eq4": false,
+      "deletions_checked": 39,
+      "deletions_eq3": 0,
+      "all_deletions_eq3": false,
+      "bad_deletions": [
+        {
+          "v": 0,
+          "ge3": true,
+          "ge4": false,
+          "upper": 5,
+          "is3": false
+        },
+        {
+          "v": 1,
+          "ge3": true,
+          "ge4": false,
+          "upper": 5,
+          "is3": false
+        },
+        {
+          "v": 2,
+          "ge3": true,
+          "ge4": false,
+          "upper": 5,
+          "is3": false
+        },
+        {
+          "v": 3,
+          "ge3": true,
+          "ge4": false,
+          "upper": 5,
+          "is3": false
+        },
+        {
+          "v": 4,
+          "ge3": true,
+          "ge4": false,
+          "upper": 5,
+          "is3": false
+        },
+        {
+          "v": 5,
+          "ge3": true,
+          "ge4": false,
+          "upper": 5,
+          "is3": false
+        },
+        {
+          "v": 6,
+          "ge3": true,
+          "ge4": false,
+          "upper": 5,
+          "is3": false
+        },
+        {
+          "v": 7,
+          "ge3": true,
+          "ge4": false,
+          "upper": 5,
+          "is3": false
+        },
+        {
+          "v": 8,
+          "ge3": true,
+          "ge4": false,
+          "upper": 5,
+          "is3": false
+        },
+        {
+          "v": 9,
+          "ge3": true,
+          "ge4": false,
+          "upper": 5,
+          "is3": false
+        }
+      ],
+      "is_4_critical": false
+    }
+  ],
+  "elapsed_s": 33.7
+}

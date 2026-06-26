@@ -1,0 +1,114 @@
+{
+  "cases": [
+    {
+      "name": "AC7",
+      "p": 7,
+      "g": [
+        1,
+        2,
+        4
+      ],
+      "n_transitive_triples": 21,
+      "SAT": false,
+      "sat_predicts_omega_vec_le2": false,
+      "oracle_omega_vec": 3,
+      "oracle_le2": false,
+      "AGREE": true,
+      "sat_time_s": 0.0,
+      "oracle_time_s": 0.08
+    },
+    {
+      "name": "AC11",
+      "p": 11,
+      "g": [
+        1,
+        2,
+        3,
+        4,
+        6
+      ],
+      "n_transitive_triples": 110,
+      "SAT": false,
+      "sat_predicts_omega_vec_le2": false,
+      "oracle_omega_vec": 3,
+      "oracle_le2": false,
+      "AGREE": true,
+      "sat_time_s": 0.0,
+      "oracle_time_s": 22.6
+    },
+    {
+      "name": "AC13",
+      "p": 13,
+      "g": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "n_transitive_triples": 195,
+      "SAT": false,
+      "sat_predicts_omega_vec_le2": false,
+      "oracle_omega_vec": 3,
+      "oracle_le2": false,
+      "AGREE": true,
+      "sat_time_s": 0.001,
+      "oracle_time_s": 322.72
+    },
+    {
+      "name": "consec7",
+      "p": 7,
+      "g": [
+        1,
+        2,
+        3
+      ],
+      "n_transitive_triples": 21,
+      "SAT": true,
+      "sat_predicts_omega_vec_le2": true,
+      "oracle_omega_vec": 2,
+      "oracle_le2": true,
+      "AGREE": true,
+      "sat_time_s": 0.0,
+      "oracle_time_s": 0.0
+    },
+    {
+      "name": "consec11",
+      "p": 11,
+      "g": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "n_transitive_triples": 110,
+      "SAT": true,
+      "sat_predicts_omega_vec_le2": true,
+      "oracle_omega_vec": 2,
+      "oracle_le2": true,
+      "AGREE": true,
+      "sat_time_s": 0.0,
+      "oracle_time_s": 0.02
+    },
+    {
+      "name": "QR7",
+      "p": 7,
+      "g": [
+        1,
+        2,
+        4
+      ],
+      "n_transitive_triples": 21,
+      "SAT": false,
+      "sat_predicts_omega_vec_le2": false,
+      "oracle_omega_vec": 3,
+      "oracle_le2": false,
+      "AGREE": true,
+      "sat_time_s": 0.0,
+      "oracle_time_s": 0.08
+    }
+  ],
+  "all_agree": true
+}

@@ -1,0 +1,61 @@
+{
+ "claim": "No tournament of order 10 has omega_vec >= 4; the smallest omega_vec=4 tournament has order >= 11.",
+ "claim_form": "finite exhaustive decision (complete census, not empirical sampling)",
+ "soundness_of_exhaustiveness": "Any order-10 T with ov(T)>=4 has ov(T-v)>=3 for every v (ov(T)<=ov(T-v)+1) and ov(T-v)<=3 (P9b complete order-9 census, max ov=3 over all 191536 iso classes), so T-v is one of the 1146 stored ov=3 classes for every v; hence T = H + 1 vertex for some stored H and one of 2^9=512 patterns, 1146*512=586752 candidates up to iso.",
+ "method": "scripts/extend_n10_ov4_census.py: per candidate, sound explicit-order filter (witness order of H with backedge omega<=3, exact-checked; insert new vertex; new-vertex neighborhood triangle-free bitmask => order-10 omega<=3) with SAT no-K4 fallback (Cadical153, Minisat22 + exact omega_vec_bb double-check on any UNSAT).",
+ "result": {
+  "n_candidates_total": 586752,
+  "n_survivors": 0,
+  "sat_fallback_calls": 0,
+  "per_shard": [
+   {
+    "shard": 0,
+    "class_range": [
+     0,
+     286
+    ],
+    "n_candidates": 146432,
+    "sat_fallback_calls": 0,
+    "n_survivors": 0,
+    "elapsed_s": 2.6
+   },
+   {
+    "shard": 1,
+    "class_range": [
+     286,
+     573
+    ],
+    "n_candidates": 146944,
+    "sat_fallback_calls": 0,
+    "n_survivors": 0,
+    "elapsed_s": 2.6
+   },
+   {
+    "shard": 2,
+    "class_range": [
+     573,
+     859
+    ],
+    "n_candidates": 146432,
+    "sat_fallback_calls": 0,
+    "n_survivors": 0,
+    "elapsed_s": 2.6
+   },
+   {
+    "shard": 3,
+    "class_range": [
+     859,
+     1146
+    ],
+    "n_candidates": 146944,
+    "sat_fallback_calls": 0,
+    "n_survivors": 0,
+    "elapsed_s": 2.7
+   }
+  ]
+ },
+ "integrity_check": "20/20 random stored classes: is_tournament=True, exact omega_vec_bb=3 (PASS)",
+ "calibration": "200 random n=10 tournaments: SAT-pipeline verdict vs exact omega_vec_bb(ub=4): 0 mismatches (all 200 ov<=3; SAT-SAT verdicts exact-checked via model order)",
+ "cross_check": "300 random (class,pattern) extensions: filter explicit (order,pos) certificate exact-checked via core.omega_of_order, 300/300 omega<=3; 50 also independently confirmed by exact omega_vec_bb(10,ub=4)<=3 (PASS)",
+ "date": "2026-06-10"
+}

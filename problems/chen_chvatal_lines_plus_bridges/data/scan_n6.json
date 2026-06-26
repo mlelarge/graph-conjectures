@@ -1,0 +1,38 @@
+{
+  "n": 6,
+  "geng_args": [
+    "-d2"
+  ],
+  "n_connected_mindeg": 61,
+  "n_pendant_free": 61,
+  "n_bad": 3,
+  "bad": [
+    {
+      "graph6": "EQzO",
+      "n": 6,
+      "m_edges": 8,
+      "ell": 4,
+      "br": 0,
+      "ell_plus_br": 4,
+      "deficit": 2
+    },
+    {
+      "graph6": "EUxo",
+      "n": 6,
+      "m_edges": 9,
+      "ell": 4,
+      "br": 0,
+      "ell_plus_br": 4,
+      "deficit": 2
+    },
+    {
+      "graph6": "E]~o",
+      "n": 6,
+      "m_edges": 12,
+      "ell": 4,
+      "br": 0,
+      "ell_plus_br": 4,
+      "deficit": 2
+    }
+  ]
+}

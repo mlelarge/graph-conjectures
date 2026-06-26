@@ -1,0 +1,57 @@
+{
+  "p": 67,
+  "g_size": 33,
+  "is_tournament": true,
+  "dom_QR67_additive": 5,
+  "dom_check_time_s": 0.92,
+  "pred_A_dom_eq_5": true,
+  "paley_dom_scan": [
+    {
+      "p": 7,
+      "dom": 3
+    },
+    {
+      "p": 11,
+      "dom": 3
+    },
+    {
+      "p": 19,
+      "dom": 4
+    },
+    {
+      "p": 23,
+      "dom": 4
+    },
+    {
+      "p": 31,
+      "dom": 4
+    },
+    {
+      "p": 43,
+      "dom": 4
+    },
+    {
+      "p": 47,
+      "dom": 4
+    },
+    {
+      "p": 59,
+      "dom": 4
+    },
+    {
+      "p": 67,
+      "dom": 5
+    }
+  ],
+  "pred_D_no_paley_dom_ge5_below_67": true,
+  "pred_D_dom67_ge5": true,
+  "B_search_time_s": 700.02,
+  "B_iters": 72008,
+  "B_best_backedge_clique": 7,
+  "B_verify_omega_of_order": 7,
+  "pred_B_found_clique5_order": false,
+  "omega_vec_window": [
+    5,
+    7
+  ]
+}

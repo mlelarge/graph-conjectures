@@ -1,0 +1,100 @@
+{
+ "H7": {
+  "ov": 2,
+  "n_optimal_sigmas": 48,
+  "merged_hist": {
+   "4": 240,
+   "8": 48
+  },
+  "min": 4,
+  "fails_as_predicted": true
+ },
+ "n8": {
+  "2138": {
+   "pass": true,
+   "optimal_sigmas_tried": 1,
+   "witness_tiebreak": 0,
+   "merged_clique": 4
+  },
+  "6770": {
+   "pass": true,
+   "optimal_sigmas_tried": 4,
+   "witness_tiebreak": 0,
+   "merged_clique": 4
+  }
+ },
+ "n9_hard": {
+  "108879": {
+   "ov": 3,
+   "pass": true,
+   "witness_sigma": [
+    0,
+    1,
+    2,
+    5,
+    3,
+    4,
+    6,
+    7,
+    8
+   ],
+   "witness_tiebreak": 0,
+   "merged_clique": 4,
+   "nth_optimal_sigma": 241
+  },
+  "185188": {
+   "ov": 3,
+   "pass": true,
+   "witness_sigma": [
+    0,
+    1,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    2
+   ],
+   "witness_tiebreak": 0,
+   "merged_clique": 4,
+   "nth_optimal_sigma": 874
+  },
+  "190299": {
+   "ov": 3,
+   "pass": true,
+   "witness_sigma": [
+    0,
+    1,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    2
+   ],
+   "witness_tiebreak": 0,
+   "merged_clique": 4,
+   "nth_optimal_sigma": 532
+  }
+ },
+ "n9_ov_spotcheck": {
+  "sample": [
+   79894,
+   27534,
+   190299,
+   84321,
+   50256,
+   99456,
+   79885,
+   167595,
+   139946,
+   88320,
+   178023,
+   185184
+  ],
+  "bad": []
+ },
+ "elapsed": 24.1
+}

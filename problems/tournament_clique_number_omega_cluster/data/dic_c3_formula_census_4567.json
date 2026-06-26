@@ -1,0 +1,44 @@
+{
+ "phase": "4567",
+ "census": {
+  "4": {
+   "n_iso_classes": 4,
+   "violations": 0,
+   "hist_(dicH,dicC3H)": {
+    "(1, 2)": 1,
+    "(2, 3)": 3
+   },
+   "time_s": 0.0
+  },
+  "5": {
+   "n_iso_classes": 12,
+   "violations": 0,
+   "hist_(dicH,dicC3H)": {
+    "(1, 2)": 1,
+    "(2, 3)": 11
+   },
+   "time_s": 0.0
+  },
+  "6": {
+   "n_iso_classes": 56,
+   "violations": 0,
+   "hist_(dicH,dicC3H)": {
+    "(1, 2)": 1,
+    "(2, 3)": 55
+   },
+   "time_s": 0.0
+  },
+  "7": {
+   "n_iso_classes": 456,
+   "violations": 0,
+   "hist_(dicH,dicC3H)": {
+    "(1, 2)": 1,
+    "(2, 3)": 451,
+    "(3, 5)": 4
+   },
+   "time_s": 1.0
+  }
+ },
+ "violations": [],
+ "verdict": "PASS (no violations)"
+}

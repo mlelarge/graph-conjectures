@@ -1,0 +1,33 @@
+{
+  "experiment": "H7 sound n=10 non-existence scan -- streaming+sharding wrapper + timed shard probe",
+  "scripts": ["scripts/m3_lb_scan_n10.py"],
+  "xval_command": ".venv/bin/python scripts/m3_lb_scan_n10.py --xval -p 14",
+  "xval_result": {
+    "n6": {"n_C3": 2186, "max_chi": 2, "status": "OK"},
+    "n7": {"n_C3": 25258, "max_chi": 2, "status": "OK"},
+    "n8": {"n_C3": 479168, "max_chi": 2, "status": "OK"},
+    "note": "streaming+sharding wrapper reproduces the validated brute counts and max_chi=2 at n=6,7,8 exactly (0 mismatches) -> wrapper is SOUND; reuses the byte-identical _orient generator + is_C3 + dichromatic pipeline from m3_lb_scan_n9.py"
+  },
+  "probe_command": ".venv/bin/python scripts/m3_lb_scan_n10.py 10 --shards 200 --shard 0 --limit 1500 -p 14 --out data/n10_shard0of200_probe.json",
+  "probe_result": {
+    "n": 10,
+    "shards": 200,
+    "shard": 0,
+    "kept_base_graphs": 1500,
+    "n_C3": 686258,
+    "max_chi_in_C3": 2,
+    "witness": null,
+    "wall_s": 128.9,
+    "rate_base_per_s": 11.6
+  },
+  "partial_conclusion": "Across 1500 K4-free connected base graphs on 10 vertices (a deterministic stride-200 shard, 686258 C_3 digraphs), max_chi_in_C3 == 2 and NO chi>=3 witness. SOUND partial evidence consistent with m(3)>=11; does NOT yet establish m(3)>=11 (that requires the COMPLETE n=10 scan: all ~4.3M K4-free connected base graphs, all 200 shards clean).",
+  "cost_estimate": {
+    "connected_base_graphs_n10": 11716571,
+    "k4_free_proportion_n9": "95915/261080 = 0.367",
+    "k4_free_base_graphs_n10_est": "~4.3M (11716571 * 0.367)",
+    "measured_rate_base_per_s_14proc": 11.6,
+    "full_scan_wall_est_s": "~4.3e6 / 11.6 ~= 3.7e5 s ~= 103 hours single-machine (14 proc)",
+    "shardable": "embarrassingly parallel over --shards/--shard; deterministic disjoint partition, resumable across sessions/machines",
+    "note": "n=9 full scan was ~1187s; the ~310x wall jump matches the ~45x base-graph blowup times the higher per-graph C_3 density/chi cost at n=10. A complete n=10 scan is an engineering/compute push of ~order 100 CPU-hours, beyond a single executor turn but feasible as a sharded campaign."
+  }
+}

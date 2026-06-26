@@ -981,6 +981,12 @@ contain all of $X$.
 
 ### 6.2 The funnel obstruction
 
+> **Correction (2026-06-11).** Failure is necessarily a one-exit
+> event. The earlier multi-exit alternating-funnel description was
+> impossible: if two exit subtrees both contain \(X\), then their
+> tails are mutual ancestors in \(U^-\), hence equal, and an
+> in-arborescence has only one out-arc at that tail.
+
 The natural strengthening "for every $b \in U^- \cap \delta^+(X)$,
 $X_b^{U^-} \cap X \subsetneq X$" is false. A small example on
 $n = 4$ shows this.
@@ -997,17 +1003,18 @@ not strict.
 This is the **funnel obstruction**: the unique exit arc has a
 $U^-$-subtree containing all of $X$. The conjecture is non-trivial
 because it asserts *some* $b$ works, not that every $b$ works; even
-when one or two exit arcs exhibit the funnel obstruction, a strict
-strict-decrease conjecture (L) requires *some* exit arc, possibly
-borrowed via a swap, to break the funnel.
+the unique exit arc may exhibit the obstruction. A repair must create
+a second exit, possibly by a swap.
 
-More precisely: when (L) fails at $(T^-, U^-, a)$, write
-$E_a^+ := U^- \cap \delta^+(X_a^{T^-}) = \{b_1, \ldots, b_k\}$ with
-$X_{b_1}^{U^-} \supseteq \cdots \supseteq X_{b_k}^{U^-} \supseteq X$
-(the subtrees nest because they share the non-empty $X$). All
-vertices of $X$ are $U^-$-descendants of the tail $u_k'$ of $b_k$;
-the $U^-$-walk from $u_k'$ alternately exits and re-enters $X$
-along the $b_j$ arcs. This is the funnel structure.
+More precisely, for nonempty \(X\) avoiding the root, (L) fails if
+and only if
+\[
+|U^-\cap\delta^+(X)|=1.
+\]
+One direction is immediate. For the other, if two exits both had
+subtrees containing \(X\), each exit tail would be a descendant of
+the other, contradicting antisymmetry unless the tails, and hence the
+unique chosen out-arcs, coincide.
 
 ### 6.3 The partial swap-repair lemma
 

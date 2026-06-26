@@ -1,0 +1,23 @@
+[n=9] 261080 connected, 95915 K4-free scanned
+  [n=9] 5000/95915 elapsed=67s total_c3=1525254 alpha<=4_found=0
+  [n=9] 10000/95915 elapsed=141s total_c3=2951916 alpha<=4_found=0
+  [n=9] 15000/95915 elapsed=228s total_c3=4162282 alpha<=4_found=0
+  [n=9] 20000/95915 elapsed=329s total_c3=5331576 alpha<=4_found=0
+  [n=9] 25000/95915 elapsed=388s total_c3=6116412 alpha<=4_found=0
+  [n=9] 30000/95915 elapsed=455s total_c3=6986284 alpha<=4_found=0
+  [n=9] 35000/95915 elapsed=513s total_c3=7549872 alpha<=4_found=0
+  [n=9] 40000/95915 elapsed=568s total_c3=8275984 alpha<=4_found=0
+  [n=9] 45000/95915 elapsed=604s total_c3=8862184 alpha<=4_found=0
+  [n=9] 50000/95915 elapsed=656s total_c3=9484852 alpha<=4_found=0
+  [n=9] 55000/95915 elapsed=717s total_c3=10063600 alpha<=4_found=0
+  [n=9] 60000/95915 elapsed=762s total_c3=10555660 alpha<=4_found=0
+  [n=9] 65000/95915 elapsed=796s total_c3=10948202 alpha<=4_found=0
+  [n=9] 70000/95915 elapsed=847s total_c3=11389190 alpha<=4_found=0
+  [n=9] 75000/95915 elapsed=902s total_c3=11813568 alpha<=4_found=0
+  [n=9] 80000/95915 elapsed=932s total_c3=12218102 alpha<=4_found=0
+  [n=9] 85000/95915 elapsed=950s total_c3=12409870 alpha<=4_found=0
+  [n=9] 90000/95915 elapsed=966s total_c3=12533994 alpha<=4_found=0
+  [n=9] 95000/95915 elapsed=978s total_c3=12608052 alpha<=4_found=0
+================================================================
+[n=9] n_C3=12613784 wall=979s alpha<=4_candidates=0
+[n=9] NO C_3 digraph with alpha<=4 -> beta*(9) >= 5/9 = 0.5556 >= 0.5  => PREDICTION CONFIRMED (no drift below 0.45)

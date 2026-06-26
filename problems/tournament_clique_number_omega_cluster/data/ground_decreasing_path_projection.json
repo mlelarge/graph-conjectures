@@ -1,0 +1,334 @@
+{
+  "products": [
+    {
+      "product": "C3[C3]",
+      "order": 9,
+      "ov_T": 2,
+      "ov_H": 2,
+      "predicted": 3,
+      "actual_ov": 3,
+      "clique_decode": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "distinct_blocks": 2,
+      "max_block_mult": 2,
+      "clique_size": 3,
+      "concat_order_omega": 4,
+      "law_agree": true,
+      "cert_distinct_ok": true,
+      "cert_mult_ok": true,
+      "cert_size_ok": true,
+      "concat_strictly_above": true
+    },
+    {
+      "product": "C3[TT2]",
+      "order": 6,
+      "ov_T": 2,
+      "ov_H": 1,
+      "predicted": 2,
+      "actual_ov": 2,
+      "clique_decode": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "distinct_blocks": 2,
+      "max_block_mult": 1,
+      "clique_size": 2,
+      "concat_order_omega": 2,
+      "law_agree": true,
+      "cert_distinct_ok": true,
+      "cert_mult_ok": true,
+      "cert_size_ok": true,
+      "concat_strictly_above": false
+    },
+    {
+      "product": "C3[TT3]",
+      "order": 9,
+      "ov_T": 2,
+      "ov_H": 1,
+      "predicted": 2,
+      "actual_ov": 2,
+      "clique_decode": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "distinct_blocks": 2,
+      "max_block_mult": 1,
+      "clique_size": 2,
+      "concat_order_omega": 2,
+      "law_agree": true,
+      "cert_distinct_ok": true,
+      "cert_mult_ok": true,
+      "cert_size_ok": true,
+      "concat_strictly_above": false
+    },
+    {
+      "product": "TT2[C3]",
+      "order": 6,
+      "ov_T": 1,
+      "ov_H": 2,
+      "predicted": 2,
+      "actual_ov": 2,
+      "clique_decode": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "distinct_blocks": 1,
+      "max_block_mult": 2,
+      "clique_size": 2,
+      "concat_order_omega": 2,
+      "law_agree": true,
+      "cert_distinct_ok": true,
+      "cert_mult_ok": true,
+      "cert_size_ok": true,
+      "concat_strictly_above": false
+    },
+    {
+      "product": "TT3[C3]",
+      "order": 9,
+      "ov_T": 1,
+      "ov_H": 2,
+      "predicted": 2,
+      "actual_ov": 2,
+      "clique_decode": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "distinct_blocks": 1,
+      "max_block_mult": 2,
+      "clique_size": 2,
+      "concat_order_omega": 2,
+      "law_agree": true,
+      "cert_distinct_ok": true,
+      "cert_mult_ok": true,
+      "cert_size_ok": true,
+      "concat_strictly_above": false
+    },
+    {
+      "product": "TT2[TT3]",
+      "order": 6,
+      "ov_T": 1,
+      "ov_H": 1,
+      "predicted": 1,
+      "actual_ov": 1,
+      "clique_decode": [
+        [
+          0,
+          0
+        ]
+      ],
+      "distinct_blocks": 1,
+      "max_block_mult": 1,
+      "clique_size": 1,
+      "concat_order_omega": 1,
+      "law_agree": true,
+      "cert_distinct_ok": true,
+      "cert_mult_ok": true,
+      "cert_size_ok": true,
+      "concat_strictly_above": false
+    },
+    {
+      "product": "TT3[TT2]",
+      "order": 6,
+      "ov_T": 1,
+      "ov_H": 1,
+      "predicted": 1,
+      "actual_ov": 1,
+      "clique_decode": [
+        [
+          0,
+          0
+        ]
+      ],
+      "distinct_blocks": 1,
+      "max_block_mult": 1,
+      "clique_size": 1,
+      "concat_order_omega": 1,
+      "law_agree": true,
+      "cert_distinct_ok": true,
+      "cert_mult_ok": true,
+      "cert_size_ok": true,
+      "concat_strictly_above": false
+    },
+    {
+      "product": "TT2[TT2]",
+      "order": 4,
+      "ov_T": 1,
+      "ov_H": 1,
+      "predicted": 1,
+      "actual_ov": 1,
+      "clique_decode": [
+        [
+          0,
+          0
+        ]
+      ],
+      "distinct_blocks": 1,
+      "max_block_mult": 1,
+      "clique_size": 1,
+      "concat_order_omega": 1,
+      "law_agree": true,
+      "cert_distinct_ok": true,
+      "cert_mult_ok": true,
+      "cert_size_ok": true,
+      "concat_strictly_above": false
+    },
+    {
+      "product": "TT3[TT3]",
+      "order": 9,
+      "ov_T": 1,
+      "ov_H": 1,
+      "predicted": 1,
+      "actual_ov": 1,
+      "clique_decode": [
+        [
+          0,
+          0
+        ]
+      ],
+      "distinct_blocks": 1,
+      "max_block_mult": 1,
+      "clique_size": 1,
+      "concat_order_omega": 1,
+      "law_agree": true,
+      "cert_distinct_ok": true,
+      "cert_mult_ok": true,
+      "cert_size_ok": true,
+      "concat_strictly_above": false
+    },
+    {
+      "product": "QR7[C3]",
+      "order": 21,
+      "ov_T": 3,
+      "ov_H": 2,
+      "predicted": 4,
+      "ge_pred_UNSAT": true,
+      "ge_predplus1": false,
+      "best_upper": 4,
+      "omega_vec_pinned": 4,
+      "law_agree": true
+    },
+    {
+      "product": "QR7[TT2]",
+      "order": 14,
+      "ov_T": 3,
+      "ov_H": 1,
+      "predicted": 3,
+      "ge_pred_UNSAT": true,
+      "ge_predplus1": false,
+      "best_upper": 3,
+      "omega_vec_pinned": 3,
+      "law_agree": true
+    },
+    {
+      "product": "QR7[TT3]",
+      "order": 21,
+      "ov_T": 3,
+      "ov_H": 1,
+      "predicted": 3,
+      "ge_pred_UNSAT": true,
+      "ge_predplus1": false,
+      "best_upper": 3,
+      "omega_vec_pinned": 3,
+      "law_agree": true
+    },
+    {
+      "product": "C3[QR7]",
+      "order": 21,
+      "ov_T": 2,
+      "ov_H": 3,
+      "predicted": 4,
+      "ge_pred_UNSAT": true,
+      "ge_predplus1": false,
+      "best_upper": 4,
+      "omega_vec_pinned": 4,
+      "law_agree": true
+    },
+    {
+      "product": "TT2[QR7]",
+      "order": 14,
+      "ov_T": 1,
+      "ov_H": 3,
+      "predicted": 3,
+      "ge_pred_UNSAT": true,
+      "ge_predplus1": false,
+      "best_upper": 3,
+      "omega_vec_pinned": 3,
+      "law_agree": true
+    },
+    {
+      "product": "TT3[QR7]",
+      "order": 21,
+      "ov_T": 1,
+      "ov_H": 3,
+      "predicted": 3,
+      "ge_pred_UNSAT": true,
+      "ge_predplus1": false,
+      "best_upper": 3,
+      "omega_vec_pinned": 3,
+      "law_agree": true
+    }
+  ],
+  "factor_ov": {
+    "C3": {
+      "n": 3,
+      "ov": 2,
+      "claimed": 2,
+      "agree": true
+    },
+    "TT2": {
+      "n": 2,
+      "ov": 1,
+      "claimed": 1,
+      "agree": true
+    },
+    "TT3": {
+      "n": 3,
+      "ov": 1,
+      "claimed": 1,
+      "agree": true
+    },
+    "QR7": {
+      "n": 7,
+      "ov": 3,
+      "claimed": 3,
+      "agree": true
+    }
+  },
+  "elapsed_s": 27.3
+}

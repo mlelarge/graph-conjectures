@@ -1,0 +1,54 @@
+[n=9] connected base graphs: 261080 total, 95915 K4-free (scanned)
+  [n=9] progress 2000/95915 elapsed=33s max_chi=2 total_c3=715604
+  [n=9] progress 4000/95915 elapsed=59s max_chi=2 total_c3=1266340
+  [n=9] progress 6000/95915 elapsed=97s max_chi=2 total_c3=1826864
+  [n=9] progress 8000/95915 elapsed=151s max_chi=2 total_c3=2385348
+  [n=9] progress 10000/95915 elapsed=228s max_chi=2 total_c3=2960604
+  [n=9] progress 12000/95915 elapsed=289s max_chi=2 total_c3=3342042
+  [n=9] progress 14000/95915 elapsed=368s max_chi=2 total_c3=3798592
+  [n=9] progress 16000/95915 elapsed=490s max_chi=2 total_c3=4473908
+  [n=9] progress 18000/95915 elapsed=587s max_chi=2 total_c3=5012432
+  [n=9] progress 20000/95915 elapsed=629s max_chi=2 total_c3=5329848
+  [n=9] progress 22000/95915 elapsed=680s max_chi=2 total_c3=5740128
+  [n=9] progress 24000/95915 elapsed=714s max_chi=2 total_c3=5946630
+  [n=9] progress 26000/95915 elapsed=756s max_chi=2 total_c3=6255976
+  [n=9] progress 28000/95915 elapsed=811s max_chi=2 total_c3=6669324
+  [n=9] progress 30000/95915 elapsed=874s max_chi=2 total_c3=7027600
+  [n=9] progress 32000/95915 elapsed=921s max_chi=2 total_c3=7211996
+  [n=9] progress 34000/95915 elapsed=961s max_chi=2 total_c3=7430062
+  [n=9] progress 36000/95915 elapsed=1010s max_chi=2 total_c3=7711676
+  [n=9] progress 38000/95915 elapsed=1074s max_chi=2 total_c3=8040488
+  [n=9] progress 40000/95915 elapsed=1120s max_chi=2 total_c3=8275928
+  [n=9] progress 42000/95915 elapsed=1146s max_chi=2 total_c3=8414780
+  [n=9] progress 44000/95915 elapsed=1228s max_chi=2 total_c3=8798750
+  [n=9] progress 46000/95915 elapsed=1287s max_chi=2 total_c3=8961904
+  [n=9] progress 48000/95915 elapsed=1323s max_chi=2 total_c3=9072948
+  [n=9] progress 50000/95915 elapsed=1449s max_chi=2 total_c3=9483708
+  [n=9] progress 52000/95915 elapsed=1518s max_chi=2 total_c3=9626638
+  [n=9] progress 54000/95915 elapsed=1619s max_chi=2 total_c3=9967098
+  [n=9] progress 56000/95915 elapsed=1674s max_chi=2 total_c3=10135248
+  [n=9] progress 58000/95915 elapsed=1744s max_chi=2 total_c3=10425924
+  [n=9] progress 60000/95915 elapsed=1782s max_chi=2 total_c3=10578318
+  [n=9] progress 62000/95915 elapsed=1823s max_chi=2 total_c3=10715346
+  [n=9] progress 64000/95915 elapsed=1867s max_chi=2 total_c3=10875334
+  [n=9] progress 66000/95915 elapsed=1916s max_chi=2 total_c3=11067330
+  [n=9] progress 68000/95915 elapsed=1968s max_chi=2 total_c3=11223092
+  [n=9] progress 70000/95915 elapsed=2025s max_chi=2 total_c3=11389112
+  [n=9] progress 72000/95915 elapsed=2065s max_chi=2 total_c3=11510120
+  [n=9] progress 74000/95915 elapsed=2137s max_chi=2 total_c3=11688184
+  [n=9] progress 76000/95915 elapsed=2191s max_chi=2 total_c3=11936562
+  [n=9] progress 78000/95915 elapsed=2237s max_chi=2 total_c3=12105490
+  [n=9] progress 80000/95915 elapsed=2270s max_chi=2 total_c3=12217576
+  [n=9] progress 82000/95915 elapsed=2291s max_chi=2 total_c3=12286694
+  [n=9] progress 84000/95915 elapsed=2317s max_chi=2 total_c3=12369572
+  [n=9] progress 86000/95915 elapsed=2340s max_chi=2 total_c3=12429086
+  [n=9] progress 88000/95915 elapsed=2359s max_chi=2 total_c3=12487622
+  [n=9] progress 90000/95915 elapsed=2378s max_chi=2 total_c3=12534340
+  [n=9] progress 92000/95915 elapsed=2392s max_chi=2 total_c3=12556524
+  [n=9] progress 94000/95915 elapsed=2405s max_chi=2 total_c3=12590914
+================================================================
+[n=9] max_chi_in_C3= 2  n_C3= 12613784  wall=2415s
+[n=9] NO chi>=3 witness: every connected K4-free C_3 digraph on 9 vertices has chi_vec <= 2 => (sound) m(3) >= 10
+
+SUMMARY:
+  n=9: max_chi=2 n_C3=12613784 wall=2415.1s witness=no

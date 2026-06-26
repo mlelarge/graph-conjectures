@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "problem": "lines_bridges_chen_chvatal",
+  "paper": "arXiv:1606.06011 (Aboulker, Matamala, Rochet, Zamora, 2016) -- A new class of graphs that satisfies the Chen-Chvatal conjecture",
+  "title": "Counter-examples to the lines+bridges inequality ell(G)+br(G) >= |G|",
+  "updated_at": "2026-06-05",
+  "_round_note": "Phase 0 substrate. Exact BFS-distance oracle built and verified against the paper's known small-graph data (C4: ell=1, br=0; full connected-graph census n=4..7 reproduced exactly: 1/4/4/2 counter-examples with bridgeless splits 1/4/3/0). Engine-ready.",
+
+  "central_question": "The Chen-Chvatal 'lines' inequality asks: does every connected graph G satisfy ell(G)+br(G) >= |G|, where ell(G) is the number of distinct metric lines and br(G) is the number of bridges? It is FALSE in general (C4 is the smallest counter-example: ell=1, br=0, n=4). The paper's open Conjecture 2.2 ('finite generating family') asserts that every counter-example arises from a FINITE list of graphs by replacing a bridge with a path -- i.e. the bridge-containing minimal counter-examples are finite up to that path-substitution closure. That asymptotic claim is not directly decidable by enumeration, but the underlying testable predicate ell+br>=n and the discovery/classification of all small counter-examples (especially the bridge-containing minimal ones the conjecture is about, beyond the three known Figure-2 graphs) is fully oracle-able by exact small-instance computation.",
+
+  "benchmark": {
+    "description": "The fixed yardstick. The predicate ell(G)+br(G) >= |G| on connected graphs, and the exact counter-example census by order n. All quantities are EXACT integer combinatorics from BFS distances + nx.bridges (no heuristics, no SAT).",
+    "predicate": "ell(G) + br(G) >= |G| = n  (counter-example iff ell+br < n)",
+    "ell": "number of DISTINCT metric lines; line(a,b) = {a,b} U {x : [abx] or [axb] or [xab]}, [pqr] := d(p,q)+d(q,r)=d(p,r}",
+    "br": "number of bridges (cut-edges), len(nx.bridges(G))",
+    "oracle_cmd": "problems/lines_bridges_chen_chvatal/.venv/bin/python scripts/oracle.py {check <name> | enumerate <n> [--no-witnesses] [--max-witnesses K] | edges <n> <u-v,u-v,...>}",
+    "oracle_api": "scripts/oracle.check_construction(n, edges); scripts/oracle.enumerate_counterexamples(n); scripts/core.{ell,br,lines_bridges_invariant,all_pairs_distances,line,connected_graphs}",
+    "ground_truth_landmarks": {
+      "C4": "ell(C4)=1 (single universal line on all 4 vertices), br(C4)=0, n=4 => ell+br=1<4; the UNIQUE smallest counter-example and it is BRIDGELESS. Oracle reproduced ell(C4)=1 exactly.",
+      "census_n4": "6 connected graphs; 1 counter-example (1 bridgeless, 0 with bridge) = C4",
+      "census_n5": "21 connected graphs; 4 counter-examples (4 bridgeless, 0 with bridge)",
+      "census_n6": "112 connected graphs; 4 counter-examples (3 bridgeless, 1 with bridge)",
+      "census_n7": "853 connected graphs; 2 counter-examples (0 bridgeless, 2 with bridge)",
+      "bridge_counterexamples_n7": "two witnesses, both with bridges: (i) ell=4 br=2 lhs=6<7, bridges {0-3,0-4}; (ii) ell=4 br=1 lhs=5<7, bridge {2-4}",
+      "verified_by_oracle": "All of the above RAN via scripts/oracle.py enumerate {4,5,6,7} and matched the paper's stated counts exactly; 6/6 regression tests pass in ~0.2s"
+    }
+  },
+
+  "proved": [
+    {"id": "P1", "claim": "ell(G)+br(G) >= |G| is FALSE in general; C4 is a counter-example (ell=1, br=0, n=4)", "source": "paper; INDEPENDENTLY RE-VERIFIED by oracle (ell(C4)=1 single universal line, br=0)"},
+    {"id": "P2", "claim": "Exact counter-example census for connected graphs: n=4:1, n=5:4, n=6:4, n=7:2 counter-examples; bridgeless splits 1/4/3/0 respectively", "source": "oracle full geng -c enumeration; matches the paper's stated small-graph data"},
+    {"id": "P3", "claim": "All n<=5 counter-examples are BRIDGELESS; bridge-containing counter-examples first appear at n=6 (one) and n=7 (two)", "source": "oracle census; relevant because Conjecture 2.2 is about the bridge-containing family"}
+  ],
+
+  "open_crux": "Conjecture 2.2 (paper): every counter-example to ell+br>=|G| is obtained from a FINITE set of graphs by replacing a bridge with a path. This is an asymptotic/structural claim NOT directly settled by finite enumeration. The oracle-able stress test: enumerate every small counter-example, classify bridgeless vs bridge-containing, and check whether any NEW minimal bridge-containing counter-example appears that is NOT reducible to the three known Figure-2 graphs by bridge->path replacement. A new irreducible minimal bridge counter-example at some order n would REFUTE the finiteness; persistent reducibility is empirical support only (empirical != proof). Secondary measurable: do bridgeless counter-examples remain finite/structured, or do new families appear with n?",
+
+  "live_hypotheses": [
+    {
+      "id": "H1",
+      "idea": "Conjecture 2.2 holds: the bridge-containing minimal counter-examples form a finite list closed under bridge->path replacement. Test by enumerating bridge counter-examples for n=6,7,8,... and checking each reduces (collapse each bridge to a single edge / shortest representative) to one of the three known Figure-2 graphs.",
+      "predicts": "Every bridge-containing minimal counter-example at every reachable n reduces by bridge-contraction to a fixed finite set (the three Figure-2 graphs); no new irreducible minimal bridge counter-example appears.",
+      "status": "open",
+      "source": "paper Conjecture 2.2 / lines 133-135",
+      "note": "Phase 0: oracle confirms bridge counter-examples start at n=6 (one) and n=7 (two). NEXT: implement bridge->path contraction normalization in the oracle and a 'reduces-to-known-3' check; extend census to n=8,9 (geng -c grows fast: ~11k at n=8, ~261k at n=9 connected graphs -- feasible; ell is O(n^3), bridges O(n+m)). A single irreducible new minimal bridge CE kills the conjecture."
+    },
+    {
+      "id": "H2",
+      "idea": "Characterize the bridgeless counter-examples. They dominate small n (1/4/3/0 at n=4..7). Determine whether they form a structured/finite family or grow -- the paper treats bridgeless counter-examples separately from the bridge family of Conj 2.2.",
+      "predicts": "Bridgeless counter-examples are either finite or fall into an identifiable structured family (e.g. small-diameter / few-distinct-lines graphs like C4, C5); their count does NOT blow up combinatorially with n.",
+      "status": "open",
+      "source": "oracle census observation (bridgeless count 1->4->3->0 over n=4..7)",
+      "note": "The vanishing of bridgeless CEs at n=7 is suggestive but small-n; needs n=8,9 to see if the bridgeless family truly thins out or revives. Few-distinct-lines is the structural driver (ell small forces ell+br<n)."
+    }
+  ],
+
+  "graveyard": [],
+
+  "decision_log": [
+    {
+      "id": "D1",
+      "date": "2026-06-05",
+      "note": "Phase 0 substrate built. Folder scaffolded (scripts/data/tests/docs/Refs); shared venv symlinked. EXACT oracle implemented WITHOUT SAT (this is an undirected-graph metric problem, not a digraph one): scripts/core.py = BFS all-pairs distances + metric-betweenness line construction (line(a,b)={a,b} U {x : one of [abx],[axb],[xab]}) + distinct-line count ell + nx.bridges count br + geng -c connected-graph enumerator; scripts/oracle.py = check_construction / enumerate_counterexamples / CLI (check, enumerate, edges). VERIFIED against the paper's known data: C4 gives ell=1 (single universal line {0,1,2,3}), br=0, ell+br=1<4 -- reproduced exactly; full connected-graph census n=4..7 reproduced exactly (counts 1/4/4/2; bridgeless splits 1/4/3/0; n=6 has 1 bridge CE, n=7 has 2 bridge CEs). 6/6 regression tests pass in 0.2s. Ledger seeded (P1-P3 from oracle+paper, open_crux = Conjecture 2.2 finiteness, H1 bridge-family finiteness, H2 bridgeless characterization). Census JSONs cached in data/."
+    }
+  ],
+
+  "next_action": "Drive H1: implement bridge->path contraction normalization + a 'reduces-to-the-three-known-Figure-2-graphs' check in the oracle, then extend the EXACT census to n=8 (and n=9 if tractable) and report whether any NEW irreducible minimal bridge-containing counter-example appears (which would REFUTE Conjecture 2.2) or whether all reduce to the known three (empirical support only). In parallel measure H2 (bridgeless CE count + their distinct-line structure) at n=8,9.",
+  "needs_human": null,
+  "recommend_handback": false,
+  "budget_spent_tokens": 0,
+
+  "discipline_gates": {
+    "empirical_not_proof": "A finite-n census confirming Conjecture 2.2 (all bridge CEs reduce to the known three) is VERIFICATION, not a proof of the asymptotic finiteness claim -- it stays in live_hypotheses. Only a refutation (a new irreducible minimal bridge counter-example) is a hard finite-certificate result that can be promoted to proved[]. The predicate ell+br<n and individual graph measurements ARE exact certificates and may be promoted.",
+    "audit_not_redteam": "Grounding (oracle measurement of ell, br on a proposed graph) and skeptic (search for a counter-example to a structural sub-claim, e.g. an irreducible new bridge CE) are separate steps, never the same agent call.",
+    "citations_verified": "Any external citation (Chen-Chvatal conjecture, the three Figure-2 graphs, Conjecture 2.2 statement) must resolve to the primary source arXiv:1606.06011 before it carries weight; the Figure-2 graphs must be transcribed from the PDF, not assumed."
+  }
+}

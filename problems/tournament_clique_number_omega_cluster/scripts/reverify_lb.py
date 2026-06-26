@@ -1,0 +1,134 @@
+"""Independent LOWER-BOUND verification for AC_17 via a fast bitmask
+triangle-free-order search, plus VALIDATION of that reformulation against
+the canonical core.omega_vec_bb on small circulants.
+
+Reformulation (independently justified):
+  omega_vec(T) = min over total orders prec of omega(backedge graph).
+  omega(G) <= 2  iff  G is triangle-free.
+  So omega_vec(T) <= 2  iff  SOME total order yields a triangle-free backedge graph.
+  Hence: no triangle-free order exists  =>  omega_vec(T) >= 3.
+Combined with an explicit order giving omega=3 (upper bound), omega_vec(T)=3.
+
+Soundness of incremental triangle test: when placing b after prefix `placed`
+in prec order, b's backedge neighbours are exactly {a in placed : b->a}.
+Adjacency among already-placed vertices is FINAL (an edge a-c with a,c placed is
+fixed once both are placed). So a new triangle can only be {b, x, y} with x,y in
+nb(b) and x~y already. Checking that is exact.
+"""
+import os
+import sys, time
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import core
+
+def has_le2_order_bitmask(n, arcs, fixed_first=None, all_starts=False, time_budget=None):
+    bm = core.beats_matrix(n, arcs)
+    # backedge-down sets: bdown[b] = bitmask of a with b->a  (potential backedge nbrs)
+    bdown = [0]*n
+    for b in range(n):
+        for a in range(n):
+            if bm[b][a]:
+                bdown[b] |= (1 << a)
+    full = (1 << n) - 1
+    adj = [0]*n          # current backedge adjacency among placed (bitmask)
+    start = time.time()
+    timed_out = [False]
+
+    def dfs(placed_mask):
+        if time_budget and time.time()-start > time_budget:
+            timed_out[0] = True
+            return False
+        if placed_mask == full:
+            return True
+        remaining = full & ~placed_mask
+        r = remaining
+        while r:
+            b = (r & -r).bit_length() - 1
+            r &= r - 1
+            nb = bdown[b] & placed_mask          # backedge nbrs among placed
+            # triangle iff two placed nbrs are adjacent: any x in nb with adj[x]&nb != x-bit
+            tri = False
+            m = nb
+            while m:
+                x = (m & -m).bit_length() - 1
+                m &= m - 1
+                if adj[x] & nb:                  # x adjacent to another placed nbr of b
+                    tri = True
+                    break
+            if tri:
+                continue
+            # place b
+            bbit = 1 << b
+            mm = nb
+            while mm:
+                a = (mm & -mm).bit_length() - 1
+                mm &= mm - 1
+                adj[a] |= bbit
+            adj[b] = nb
+            if dfs(placed_mask | bbit):
+                return True
+            # undo
+            mm = nb
+            while mm:
+                a = (mm & -mm).bit_length() - 1
+                mm &= mm - 1
+                adj[a] &= ~bbit
+            adj[b] = 0
+        return False
+
+    if all_starts:
+        for s in range(n):
+            for i in range(n): adj[i] = 0
+            adj[s] = 0
+            if dfs(1 << s):
+                return True, timed_out[0]
+        return False, timed_out[0]
+    else:
+        s = 0 if fixed_first is None else fixed_first
+        adj[s] = 0
+        res = dfs(1 << s)
+        return res, timed_out[0]
+
+def circ(p, gen):
+    return [(i, (i + d) % p) for i in range(p) for d in gen]
+
+# ---------- VALIDATION against canonical oracle ----------
+print("--- VALIDATION: triangle-free le2 vs core.omega_vec_bb ---")
+cases = [
+    (7,  {1,2,4}),          # QR_7, omega_vec=3
+    (11, {1,2,3,4,6}),      # P8, omega_vec=3
+    (13, {1,2,3,4,5,7}),    # P9, omega_vec=3
+    (11, {1,2,3,4,5}),      # consecutive, omega_vec=2
+    (11, {1,3,4,5,9}),      # QR_11, omega_vec=3 (not critical)
+]
+all_ok = True
+for p, gen in cases:
+    a = circ(p, gen)
+    assert core.is_tournament(p, a), (p, gen)
+    ov = core.omega_vec_bb(p, a)
+    le2, _ = has_le2_order_bitmask(p, a, fixed_first=0)  # circulant: start WLOG
+    # le2 True <=> omega_vec<=2 ; for these omega_vec in {2,3}
+    ok = ((ov == 2) == le2) and ov <= 3
+    all_ok = all_ok and ok
+    print(f"  p={p} g={sorted(gen)}: omega_vec_bb={ov}  le2={le2}  consistent={ok}")
+print("VALIDATION ALL_OK:", all_ok)
+
+# ---------- AC_17 LOWER BOUND ----------
+P = 17; g = {1,2,3,4,5,6,7,9}; arcs = circ(P, g)
+print("\n--- AC_17 LOWER BOUND (triangle-free order search) ---")
+for ff in (0, 3, 9):
+    t0 = time.time()
+    le2, to = has_le2_order_bitmask(P, arcs, fixed_first=ff, time_budget=600)
+    print(f"  fixed_first={ff}: has_triangle_free_order={le2} timed_out={to} ({time.time()-t0:.1f}s)")
+
+# ---------- CRITICALITY: AC_17 minus vertex 0 ----------
+print("\n--- CRITICALITY: AC_17 - vertex 0 ---")
+keep = [v for v in range(P) if v != 0]
+n2, sub = core.subtournament(P, arcs, keep)
+# (a) triangle-free order exists for the deletion (try all starts; not transitive)
+t0 = time.time()
+le2d, tod = has_le2_order_bitmask(n2, sub, all_starts=True, time_budget=600)
+print(f"  deletion has triangle-free order (=> omega_vec<=2): {le2d} timed_out={tod} ({time.time()-t0:.1f}s)")
+# (b) INDEPENDENT canonical recomputation on the order-16 deletion
+t0 = time.time()
+ovd = core.omega_vec_bb(n2, sub, ub=3)
+print(f"  core.omega_vec_bb(AC_17 - 0, ub=3) = {ovd}  ({time.time()-t0:.1f}s)")

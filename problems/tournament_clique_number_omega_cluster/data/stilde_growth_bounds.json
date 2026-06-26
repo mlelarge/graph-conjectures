@@ -1,0 +1,524 @@
+{
+  "family": "S~_1=TT_1; S~_{n+1}=C3[S~_n]",
+  "proved_growth_constant": {
+    "definition": "rho = lim_{i->infinity} omega_vec(S~_{i+1})^(1/i)",
+    "exists_by": "submultiplicativity under lexicographic powers",
+    "lower": 1.1447142425533319,
+    "upper": 1.4953487812212205,
+    "upper_certificate": "omega_vec(S~_5)=5",
+    "vertex_count_exponent_lower": 0.12302341547618086,
+    "vertex_count_exponent_upper": 0.3662433801794817
+  },
+  "first_n_where_pod_lower_exceeds_h19_iterated_upper_n": 24,
+  "bounds": [
+    {
+      "n": 1,
+      "order": 1,
+      "dichromatic_exact": 1,
+      "omega_lower_linear": 1,
+      "omega_lower_pod": 1,
+      "omega_lower_combined": 1,
+      "omega_upper_dichromatic": 1,
+      "omega_exact_known": 1
+    },
+    {
+      "n": 2,
+      "order": 3,
+      "dichromatic_exact": 2,
+      "omega_lower_linear": 2,
+      "omega_lower_pod": 2,
+      "omega_lower_combined": 2,
+      "omega_upper_dichromatic": 2,
+      "omega_exact_known": 2
+    },
+    {
+      "n": 3,
+      "order": 9,
+      "dichromatic_exact": 3,
+      "omega_lower_linear": 3,
+      "omega_lower_pod": 2,
+      "omega_lower_combined": 3,
+      "omega_upper_dichromatic": 3,
+      "omega_exact_known": 3
+    },
+    {
+      "n": 4,
+      "order": 27,
+      "dichromatic_exact": 5,
+      "omega_lower_linear": 4,
+      "omega_lower_pod": 2,
+      "omega_lower_combined": 4,
+      "omega_upper_dichromatic": 5,
+      "omega_exact_known": 4
+    },
+    {
+      "n": 5,
+      "order": 81,
+      "dichromatic_exact": 8,
+      "omega_lower_linear": 5,
+      "omega_lower_pod": 2,
+      "omega_lower_combined": 5,
+      "omega_upper_dichromatic": 8,
+      "omega_exact_known": 5
+    },
+    {
+      "n": 6,
+      "order": 243,
+      "dichromatic_exact": 12,
+      "omega_lower_linear": 6,
+      "omega_lower_pod": 3,
+      "omega_lower_combined": 6,
+      "omega_upper_dichromatic": 12,
+      "omega_exact_known": null
+    },
+    {
+      "n": 7,
+      "order": 729,
+      "dichromatic_exact": 18,
+      "omega_lower_linear": 7,
+      "omega_lower_pod": 3,
+      "omega_lower_combined": 7,
+      "omega_upper_dichromatic": 18,
+      "omega_exact_known": null
+    },
+    {
+      "n": 8,
+      "order": 2187,
+      "dichromatic_exact": 27,
+      "omega_lower_linear": 8,
+      "omega_lower_pod": 3,
+      "omega_lower_combined": 8,
+      "omega_upper_dichromatic": 27,
+      "omega_exact_known": null
+    },
+    {
+      "n": 9,
+      "order": 6561,
+      "dichromatic_exact": 41,
+      "omega_lower_linear": 9,
+      "omega_lower_pod": 4,
+      "omega_lower_combined": 9,
+      "omega_upper_dichromatic": 41,
+      "omega_exact_known": null
+    },
+    {
+      "n": 10,
+      "order": 19683,
+      "dichromatic_exact": 62,
+      "omega_lower_linear": 10,
+      "omega_lower_pod": 4,
+      "omega_lower_combined": 10,
+      "omega_upper_dichromatic": 62,
+      "omega_exact_known": null
+    },
+    {
+      "n": 11,
+      "order": 59049,
+      "dichromatic_exact": 93,
+      "omega_lower_linear": 11,
+      "omega_lower_pod": 5,
+      "omega_lower_combined": 11,
+      "omega_upper_dichromatic": 93,
+      "omega_exact_known": null
+    },
+    {
+      "n": 12,
+      "order": 177147,
+      "dichromatic_exact": 140,
+      "omega_lower_linear": 12,
+      "omega_lower_pod": 6,
+      "omega_lower_combined": 12,
+      "omega_upper_dichromatic": 140,
+      "omega_exact_known": null
+    },
+    {
+      "n": 13,
+      "order": 531441,
+      "dichromatic_exact": 210,
+      "omega_lower_linear": 13,
+      "omega_lower_pod": 6,
+      "omega_lower_combined": 13,
+      "omega_upper_dichromatic": 210,
+      "omega_exact_known": null
+    },
+    {
+      "n": 14,
+      "order": 1594323,
+      "dichromatic_exact": 315,
+      "omega_lower_linear": 14,
+      "omega_lower_pod": 7,
+      "omega_lower_combined": 14,
+      "omega_upper_dichromatic": 315,
+      "omega_exact_known": null
+    },
+    {
+      "n": 15,
+      "order": 4782969,
+      "dichromatic_exact": 473,
+      "omega_lower_linear": 15,
+      "omega_lower_pod": 8,
+      "omega_lower_combined": 15,
+      "omega_upper_dichromatic": 473,
+      "omega_exact_known": null
+    },
+    {
+      "n": 16,
+      "order": 14348907,
+      "dichromatic_exact": 710,
+      "omega_lower_linear": 16,
+      "omega_lower_pod": 9,
+      "omega_lower_combined": 16,
+      "omega_upper_dichromatic": 710,
+      "omega_exact_known": null
+    },
+    {
+      "n": 17,
+      "order": 43046721,
+      "dichromatic_exact": 1065,
+      "omega_lower_linear": 17,
+      "omega_lower_pod": 11,
+      "omega_lower_combined": 17,
+      "omega_upper_dichromatic": 1065,
+      "omega_exact_known": null
+    },
+    {
+      "n": 18,
+      "order": 129140163,
+      "dichromatic_exact": 1598,
+      "omega_lower_linear": 18,
+      "omega_lower_pod": 12,
+      "omega_lower_combined": 18,
+      "omega_upper_dichromatic": 1598,
+      "omega_exact_known": null
+    },
+    {
+      "n": 19,
+      "order": 387420489,
+      "dichromatic_exact": 2397,
+      "omega_lower_linear": 19,
+      "omega_lower_pod": 14,
+      "omega_lower_combined": 19,
+      "omega_upper_dichromatic": 2397,
+      "omega_exact_known": null
+    },
+    {
+      "n": 20,
+      "order": 1162261467,
+      "dichromatic_exact": 3596,
+      "omega_lower_linear": 20,
+      "omega_lower_pod": 16,
+      "omega_lower_combined": 20,
+      "omega_upper_dichromatic": 3596,
+      "omega_exact_known": null
+    },
+    {
+      "n": 21,
+      "order": 3486784401,
+      "dichromatic_exact": 5394,
+      "omega_lower_linear": 21,
+      "omega_lower_pod": 18,
+      "omega_lower_combined": 21,
+      "omega_upper_dichromatic": 5394,
+      "omega_exact_known": null
+    },
+    {
+      "n": 22,
+      "order": 10460353203,
+      "dichromatic_exact": 8091,
+      "omega_lower_linear": 22,
+      "omega_lower_pod": 21,
+      "omega_lower_combined": 22,
+      "omega_upper_dichromatic": 8091,
+      "omega_exact_known": null
+    },
+    {
+      "n": 23,
+      "order": 31381059609,
+      "dichromatic_exact": 12137,
+      "omega_lower_linear": 23,
+      "omega_lower_pod": 23,
+      "omega_lower_combined": 23,
+      "omega_upper_dichromatic": 12137,
+      "omega_exact_known": null
+    },
+    {
+      "n": 24,
+      "order": 94143178827,
+      "dichromatic_exact": 18206,
+      "omega_lower_linear": 24,
+      "omega_lower_pod": 27,
+      "omega_lower_combined": 27,
+      "omega_upper_dichromatic": 18206,
+      "omega_exact_known": null
+    },
+    {
+      "n": 25,
+      "order": 282429536481,
+      "dichromatic_exact": 27309,
+      "omega_lower_linear": 25,
+      "omega_lower_pod": 31,
+      "omega_lower_combined": 31,
+      "omega_upper_dichromatic": 27309,
+      "omega_exact_known": null
+    },
+    {
+      "n": 26,
+      "order": 847288609443,
+      "dichromatic_exact": 40964,
+      "omega_lower_linear": 26,
+      "omega_lower_pod": 35,
+      "omega_lower_combined": 35,
+      "omega_upper_dichromatic": 40964,
+      "omega_exact_known": null
+    },
+    {
+      "n": 27,
+      "order": 2541865828329,
+      "dichromatic_exact": 61446,
+      "omega_lower_linear": 27,
+      "omega_lower_pod": 40,
+      "omega_lower_combined": 40,
+      "omega_upper_dichromatic": 61446,
+      "omega_exact_known": null
+    },
+    {
+      "n": 28,
+      "order": 7625597484987,
+      "dichromatic_exact": 92169,
+      "omega_lower_linear": 28,
+      "omega_lower_pod": 46,
+      "omega_lower_combined": 46,
+      "omega_upper_dichromatic": 92169,
+      "omega_exact_known": null
+    },
+    {
+      "n": 29,
+      "order": 22876792454961,
+      "dichromatic_exact": 138254,
+      "omega_lower_linear": 29,
+      "omega_lower_pod": 52,
+      "omega_lower_combined": 52,
+      "omega_upper_dichromatic": 138254,
+      "omega_exact_known": null
+    },
+    {
+      "n": 30,
+      "order": 68630377364883,
+      "dichromatic_exact": 207381,
+      "omega_lower_linear": 30,
+      "omega_lower_pod": 60,
+      "omega_lower_combined": 60,
+      "omega_upper_dichromatic": 207381,
+      "omega_exact_known": null
+    }
+  ],
+  "transitive_subtournament_counts": [
+    {
+      "n": 1,
+      "max_transitive_size": 1,
+      "random_order_first_moment_upper": null,
+      "counts_through_degree_12": [
+        "1",
+        "1"
+      ]
+    },
+    {
+      "n": 2,
+      "max_transitive_size": 2,
+      "random_order_first_moment_upper": null,
+      "counts_through_degree_12": [
+        "1",
+        "3",
+        "3"
+      ]
+    },
+    {
+      "n": 3,
+      "max_transitive_size": 4,
+      "random_order_first_moment_upper": null,
+      "counts_through_degree_12": [
+        "1",
+        "9",
+        "36",
+        "54",
+        "27"
+      ]
+    },
+    {
+      "n": 4,
+      "max_transitive_size": 8,
+      "random_order_first_moment_upper": 7,
+      "counts_through_degree_12": [
+        "1",
+        "27",
+        "351",
+        "2106",
+        "6885",
+        "13122",
+        "14580",
+        "8748",
+        "2187"
+      ]
+    },
+    {
+      "n": 5,
+      "max_transitive_size": 16,
+      "random_order_first_moment_upper": 12,
+      "counts_through_degree_12": [
+        "1",
+        "81",
+        "3240",
+        "63180",
+        "731430",
+        "5589972",
+        "29975022",
+        "117021996",
+        "340148484",
+        "745080282",
+        "1234006002",
+        "1536927372",
+        "1416821706"
+      ]
+    },
+    {
+      "n": 6,
+      "max_transitive_size": 32,
+      "random_order_first_moment_upper": 20,
+      "counts_through_degree_12": [
+        "1",
+        "243",
+        "29403",
+        "1764180",
+        "64392570",
+        "1600464096",
+        "29000787858",
+        "400858466760",
+        "4364623683648",
+        "38337425665830",
+        "276630138738810",
+        "1662949778977872",
+        "8420358058906194"
+      ]
+    },
+    {
+      "n": 7,
+      "max_transitive_size": 64,
+      "random_order_first_moment_upper": 33,
+      "counts_through_degree_12": [
+        "1",
+        "729",
+        "265356",
+        "48162114",
+        "5358961377",
+        "409918866588",
+        "23117480647002",
+        "1007436903840972",
+        "35094056214822048",
+        "1002520920141580914",
+        "23958910518354532242",
+        "486733778034307604784",
+        "8515847702688681205350"
+      ]
+    },
+    {
+      "n": 8,
+      "max_transitive_size": 128,
+      "random_order_first_moment_upper": 53,
+      "counts_through_degree_12": [
+        "1",
+        "2187",
+        "2390391",
+        "1305153486",
+        "437979390975",
+        "101350489198266",
+        "17353300570175178",
+        "2305378208199487500",
+        "245928740574145544523",
+        "21621242199352277300310",
+        "1598867706664815604073694",
+        "101094271276319829459715716",
+        "5539465774091759498546809158"
+      ]
+    },
+    {
+      "n": 9,
+      "max_transitive_size": 256,
+      "random_order_first_moment_upper": 84,
+      "counts_through_degree_12": [
+        "1",
+        "6561",
+        "21520080",
+        "35282171160",
+        "35582069614860",
+        "24770179915286904",
+        "12773909853256755924",
+        "5118011901620299853352",
+        "1649021506555194819779688",
+        "438585350184337760835325884",
+        "98287033134770666135070241428",
+        "18868073353357515500400510953232",
+        "3145177626335277624622082626507512"
+      ]
+    },
+    {
+      "n": 10,
+      "max_transitive_size": 512,
+      "random_order_first_moment_upper": 131,
+      "counts_through_degree_12": [
+        "1",
+        "19683",
+        "193700403",
+        "953005982760",
+        "2885005688348340",
+        "6030685167825796272",
+        "9342293345459700100236",
+        "11249025313607525532083760",
+        "10897721491609203087441508056",
+        "8719464529720696356814255496100",
+        "5881748428945013920583344562953476",
+        "3400771483107790895095505624089587240",
+        "1708504886109045392715818226126991208184"
+      ]
+    },
+    {
+      "n": 11,
+      "max_transitive_size": 600,
+      "random_order_first_moment_upper": 204,
+      "counts_through_degree_12": [
+        "1",
+        "59049",
+        "1743362676",
+        "25734648141774",
+        "233762655984122727",
+        "1466391314818177959816",
+        "6817860533457525414370284",
+        "24642496207452398726615418504",
+        "71672264207606530310172441874416",
+        "172197736714347592554935068619336508",
+        "348857992823599141810804415176385366628",
+        "605915762060694097759147018879240693099080",
+        "914611989736634403180244961922274049565200688"
+      ]
+    },
+    {
+      "n": 12,
+      "max_transitive_size": 600,
+      "random_order_first_moment_upper": 315,
+      "counts_through_degree_12": [
+        "1",
+        "177147",
+        "15690441231",
+        "694866880356066",
+        "18936859656903688665",
+        "356408830685862599482530",
+        "4972002107947385757080586696",
+        "53922964091078373339981674006892",
+        "470619051997414617324970859875270419",
+        "3393131117407562023731281828657570384340",
+        "20630233099361089734605699523580041576293484",
+        "107542278701533470254914874526494820537375863136",
+        "487243935464088802642381142762877545327685305070048"
+      ]
+    }
+  ]
+}
