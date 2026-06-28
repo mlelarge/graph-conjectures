@@ -335,3 +335,80 @@ three small metric configurations in a same-line distance-2 colour class:
 local geometry of adjacent edges (`p-a-q` geodesic of length 4); the missing proof
 is to show these adjacent STAR constraints cannot be chained in a 3-connected
 graph metric.
+
+## Independent review (2026-06-28) — chain valid; CF is necessary but NOT the discriminator
+
+- **The chain `B1 ⟸ G3 ⟸ G3-Hall1` is logically VALID** (confirmed). Taking `X` = all
+  collided lines, `Σ_{∪S_L} e(v) ≥ 2·collisions`; since `e(v)=degG2(v)−2 ≥ 0` (CLAIM A)
+  and `S_L ⊆ DEN`, this gives `E(DEN) ≥ 2·collisions = G3`. G3-Hall1 is 3-connectivity-
+  essential (its X=all case is G3, which fails on the 2-separable `D2<n` witnesses).
+- **CF reproduces** (geng `-C -d3` n=13 m=20: 989 three-connected diam-4 graphs,
+  `cf_fail=0`, max_class=3, all size-3 = `(3,5,2,(2,1),0)`).
+- **NUANCE (precision on the framing): CF is NOT 3-connectivity-essential.** Over the
+  FULL 2-connected pendant-free diam>=4 census, CF holds on **all** graphs at n=8 (48)
+  and n=9 (1944) — including the B1-**failing** witness `HCQdarQ` — and fails on only
+  **34/96374 at n=10** (all 2-separable; no 3-connected graph exists at n<=12). So CF is
+  a genuine, non-trivial property (it *can* fail), but it holds on B1-failing graphs, so
+  **proving CF alone does not advance B1**. The 3-connectivity leverage lives in the
+  G3-Hall1 *count* (how many collision forests there are and where they sit relative to
+  DEN), not in CF's per-class shape. CF is a necessary local ingredient of the G3-Hall1
+  proof, not the crux — the "cannot be chained in a 3-connected metric" step must be
+  paired with the global count to discriminate B1-holds from B1-fails.
+
+## G3-Hall1 dual form (2026-06-28) — capacitated Hall / anti-concentration
+
+The right named principle for closing G3-Hall1 is **capacitated Hall**, i.e. the
+standard max-flow/min-cut theorem applied to the bipartite graph
+
+```text
+collided line L  --  support vertices v in S_L ⊆ DEN,
+left demand d(L)=2(|E(F_L)|-1),
+right capacity e(v)=degG2(v)-2.
+```
+
+Thus G3-Hall1 is equivalent to the usual weighted expansion condition
+
+```text
+for every family X of collided lines:
+    sum_{v in union_{L in X} S_L} e(v) >= sum_{L in X} d(L).
+```
+
+The min-cut dual gives a more proof-facing anti-concentration form:
+
+```text
+for every U ⊆ DEN:
+    sum_{L : S_L ⊆ U} d(L) <= sum_{v in U} e(v).        (G3-Hall1-dual)
+```
+
+Interpretation: no low-excess subset of the diameter layer and its neighbours can
+**trap** too much collided-line demand. This is the global count that separates the
+3-connected case from the 2-separable B1-failing witnesses; CF only bounds the
+shape of individual trapped collision forests.
+
+Added a dual enumerator to `scripts/b1_collision_structure_probe.py`. It checks
+`G3-Hall1-dual` directly for samples with `|DEN|<=24` and reports skips explicitly
+instead of treating them as successes. The direct subfamily Hall check remains the
+load-bearing verification; the dual check is a diagnostic for the intended proof.
+
+Literature routing:
+
+- Ordinary max-flow/min-cut is sufficient for the formal Hall dual; no topological
+  Hall theorem is currently needed.
+- The Aharoni-Haxell / topological-Hall language remains useful only as an analogy
+  for "subfamily expansion", not as imported machinery.
+- Rado/matroid Hall or gammoid language would become relevant only if the right
+  side capacity `e(U)` is replaced by a rank/path-packing function. With the current
+  target, that would be abstraction without leverage.
+
+**Next proof target:** prove `G3-Hall1-dual` directly. A minimal counterexample would
+be a subset `U⊆DEN` with excess deficit
+
+```text
+sum_{L : S_L ⊆ U} 2(|E(F_L)|-1) - sum_{v in U}(degG2(v)-2) > 0.
+```
+
+So the combinatorial argument should show that every trapped collision forest either
+forces enough `G2`-excess inside `U`, or has three vertex-disjoint escape/fan paths
+from its STAR/COLLCHAR endpoints to `DEN\U`, which create additional distance-2
+neighbours counted by `e(U)`. This is the first non-circular formulation where a
+global 3-connectivity/Menger argument has a specific cut to act on.

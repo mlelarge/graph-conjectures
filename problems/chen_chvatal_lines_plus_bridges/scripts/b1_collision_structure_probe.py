@@ -119,8 +119,30 @@ def analyze(n: int, edges: list[tuple[int, int]]) -> dict:
                 }
         return None
 
+    def dual_support_hall(field: str):
+        if len(den) > 24:
+            return None, {"den_size": len(den), "cap": 24}
+        den_list = sorted(den)
+        for mask in range(1 << len(den_list)):
+            support = {den_list[i] for i in range(len(den_list)) if mask & (1 << i)}
+            supply = sum(deg2[v] - 2 for v in support)
+            trapped = [
+                i for i, row in enumerate(class_rows)
+                if row[field] <= support
+            ]
+            demand = sum(2 * class_rows[i]["collision"] for i in trapped)
+            if demand > supply:
+                return {
+                    "trapped": trapped,
+                    "demand": demand,
+                    "supply": supply,
+                    "support": sorted(support),
+                }, None
+        return None, None
+
     support_hall_fail = support_hall("support_DEN")
     support_hall1_fail = support_hall("support_DEN1")
+    dual_hall1_fail, dual_hall1_skip = dual_support_hall("support_DEN1")
     return {
         "n": n,
         "diam": diam,
@@ -130,6 +152,10 @@ def analyze(n: int, edges: list[tuple[int, int]]) -> dict:
         "support_hall_fail": support_hall_fail,
         "support_hall1_ok": support_hall1_fail is None,
         "support_hall1_fail": support_hall1_fail,
+        "dual_hall1_checked": dual_hall1_skip is None,
+        "dual_hall1_ok": dual_hall1_skip is None and dual_hall1_fail is None,
+        "dual_hall1_fail": dual_hall1_fail,
+        "dual_hall1_skip": dual_hall1_skip,
         "num_collision_classes": len(class_rows),
         "max_class": max((row["size"] for row in class_rows), default=1),
         "shape_counts": Counter(
@@ -204,6 +230,9 @@ def main() -> None:
             max_collisions = 0
             support_hall_fail = 0
             support_hall1_fail = 0
+            dual_hall1_checked = 0
+            dual_hall1_fail = 0
+            dual_hall1_skipped = 0
             worst_margin = None
             examples = []
             for g6, edges in random_three_connected(order, args.samples, args.seed + order):
@@ -215,10 +244,13 @@ def main() -> None:
                 max_collisions = max(max_collisions, summary["collisions"])
                 support_hall_fail += 0 if summary["support_hall_ok"] else 1
                 support_hall1_fail += 0 if summary["support_hall1_ok"] else 1
+                dual_hall1_checked += 1 if summary["dual_hall1_checked"] else 0
+                dual_hall1_skipped += 0 if summary["dual_hall1_checked"] else 1
+                dual_hall1_fail += 1 if summary["dual_hall1_checked"] and not summary["dual_hall1_ok"] else 0
                 worst_margin = summary["g3_margin"] if worst_margin is None else min(worst_margin, summary["g3_margin"])
-                if summary["max_class"] >= 3 or summary["collisions"] >= 4 or not summary["support_hall_ok"] or not summary["support_hall1_ok"]:
-                    examples.append((g6, {k: summary[k] for k in ("collisions", "g3_margin", "support_hall_ok", "support_hall_fail", "support_hall1_ok", "support_hall1_fail", "num_collision_classes", "max_class")}))
-            print("  total", total, "max_class", max_class, "max_collisions", max_collisions, "min_g3_margin", worst_margin, "support_hall_fail", support_hall_fail, "support_hall1_fail", support_hall1_fail)
+                if summary["max_class"] >= 3 or summary["collisions"] >= 4 or not summary["support_hall_ok"] or not summary["support_hall1_ok"] or (summary["dual_hall1_checked"] and not summary["dual_hall1_ok"]):
+                    examples.append((g6, {k: summary[k] for k in ("collisions", "g3_margin", "support_hall_ok", "support_hall_fail", "support_hall1_ok", "support_hall1_fail", "dual_hall1_checked", "dual_hall1_ok", "dual_hall1_fail", "dual_hall1_skip", "num_collision_classes", "max_class")}))
+            print("  total", total, "max_class", max_class, "max_collisions", max_collisions, "min_g3_margin", worst_margin, "support_hall_fail", support_hall_fail, "support_hall1_fail", support_hall1_fail, "dual_hall1_checked", dual_hall1_checked, "dual_hall1_fail", dual_hall1_fail, "dual_hall1_skipped", dual_hall1_skipped)
             print("  shapes", dict(aggregate_shapes.most_common(12)))
             print("  hit_shapes", dict(aggregate_hits.most_common(12)))
             print("  examples", examples[:8])
@@ -226,7 +258,7 @@ def main() -> None:
         for g6, edges in random_three_connected(order, args.samples, args.seed + order):
             summary = analyze(order, edges)
             print("GRAPH", g6)
-            print("  basic", {k: summary[k] for k in ("n", "diam", "collisions", "g3_margin", "support_hall_ok", "support_hall_fail", "support_hall1_ok", "support_hall1_fail", "num_collision_classes", "max_class")})
+            print("  basic", {k: summary[k] for k in ("n", "diam", "collisions", "g3_margin", "support_hall_ok", "support_hall_fail", "support_hall1_ok", "support_hall1_fail", "dual_hall1_checked", "dual_hall1_ok", "dual_hall1_fail", "dual_hall1_skip", "num_collision_classes", "max_class")})
             print("  shapes", dict(summary["shape_counts"].most_common(8)))
             for row in summary["largest_classes"][:3]:
                 compact = {k: row[k] for k in ("size", "collision", "endpoints", "common_endpoint", "components", "cycle_rank", "endpoint_in_DE", "endpoint_in_DEN", "line_hits_DE", "star_triples", "support_DEN")}
