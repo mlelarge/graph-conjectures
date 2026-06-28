@@ -412,3 +412,120 @@ forces enough `G2`-excess inside `U`, or has three vertex-disjoint escape/fan pa
 from its STAR/COLLCHAR endpoints to `DEN\U`, which create additional distance-2
 neighbours counted by `e(U)`. This is the first non-circular formulation where a
 global 3-connectivity/Menger argument has a specific cut to act on.
+
+## G3-Hall1 split route (2026-06-28) — diffuse cardinal + conditional STAR reserve
+
+Added `scripts/b1_hall_profile.py`, a focused profiler for the Hall family
+`L -> S_L`. It separates collided lines into:
+
+- **diffuse**: `F_L` has no STAR adjacent pair;
+- **starry**: `F_L` contains at least one STAR adjacent pair. A size-3
+  `P2 ∪ K2` class is starry because its `P2` component contributes one STAR unit.
+
+Let `d(X)=Σ_{L∈X}2(|E(F_L)|-1)`, `U(X)=∪_{L∈X}S_L`, and
+`E(U)=Σ_{v∈U}(degG2(v)-2)`.
+
+The useful algebraic reduction is:
+
+```text
+If d(X) <= |U(X)|, then G3-Hall1 holds for X because every v in DEN has e(v)>=1.
+
+Otherwise split X = X_diff ∪ X_star.  It is enough to prove:
+
+  (D-CARD)    d(Y) <= |U(Y)| for every diffuse family Y.
+
+  (S-RES)     for every cardinal-deficient X,
+              E(U(X_star)) >= d(X_star) + |U(X_star)|.
+```
+
+Indeed, in the second case,
+
+```text
+E(U(X)) >= E(U(X_star)) + |U(X) \ U(X_star)|
+        >= d(X_star) + |U(X_star)| + |U(X) \ U(X_star)|
+         = d(X_star) + |U(X)|
+        >= d(X_star) + d(X_diff),
+```
+
+where the last inequality uses `(D-CARD)` and `U(X_diff)⊆U(X)`.
+
+This is a real sharpening of G3-Hall1: it separates the easy diffuse expansion
+from the hard STAR reserve, and it explains why pure cardinal Hall sometimes fails
+without losing the weighted inequality.
+
+Verification from `scripts/b1_hall_profile.py`:
+
+- dense random 3-connected diam>=4 samples at n=11,12,13,14,15,16,18,20
+  (40-60/order): `diffuse_card_fail=0`, `conditional_split_fail=0`;
+- sparse random 3-connected samples at n=14,18,24,32 (80/order):
+  `diffuse_card_fail=0`, `conditional_split_fail=0`;
+- exact `geng -C -d3` slice `n=13,m=20` (989 graphs):
+  `diffuse_card_fail=0`, `conditional_split_fail=0`; only 1 graph has pure
+  cardinal Hall failure, but its split certificates have large slack.
+
+Important negative controls:
+
+- Pure unit-capacity Hall is **false** in valid 3-connected graphs (first sampled
+  failures at n=12). The `degG2-2` weights are genuinely needed.
+- Unconditional STAR reserve is **false**: some STAR-only subfamilies have
+  `E(U)<d(U)+|U|`, but only in graphs where the full family is already cardinal-safe.
+  Therefore the live target is the conditional `(S-RES)` above, not unconditional
+  STAR reserve.
+
+**New proof target:** prove `(D-CARD)` and `(S-RES)`. `(D-CARD)` should be a pure
+support-expansion statement for endpoint-disjoint collision forests. `(S-RES)` is
+where PERPAIR and the STAR/COLLCHAR anti-correlation should enter: a cardinal-
+deficient family has enough STAR mass concentrated near the diameter layer to force
+one full support's worth of extra `degG2-3` reserve.
+
+## G3-Hall1 STAR-component refinement (2026-06-28)
+
+Added `scripts/b1_split_bundle_probe.py` to look inside the conditional `(S-RES)`
+case. For a cardinal-deficient family `X`, build the support-overlap graph on
+`X_star`: two starry rows are adjacent when their expanded supports `S_L` intersect.
+For a component `C`, write
+
+```text
+U_C = union_{L in C} S_L,
+d(C) = sum_{L in C} 2(|E(F_L)|-1),
+extra(U_C) = sum_{v in U_C} (degG2(v)-3).
+```
+
+The supports of distinct components are disjoint. Therefore the following is a
+strictly sharper sufficient condition for `(S-RES)`:
+
+```text
+(C-RES)  for every cardinal-deficient X and every STAR support-overlap
+         component C of X_star,  extra(U_C) >= d(C).
+```
+
+Indeed, summing `(C-RES)` over components gives
+`extra(U(X_star)) >= d(X_star)`, which is exactly
+`E(U(X_star)) >= |U(X_star)| + d(X_star)`.
+
+Verification:
+
+- named cardinal-failure examples `KS_o\`JdQ_SkA`, `K\`Av?SGJWrIG`,
+  `KQCnDGQXI\`^C`, `M\`]HCjA@SLoASiOD_`, `MWATK_GYiOI_BhPQ?`: `component_reserve_fail=0`;
+- dense random n=11,12,13,14,15,16,18,20 (50/order): `component_reserve_fail=0`;
+- sparse random n=14,18,24,32 (60/order): no cardinal-deficient families appeared;
+- exact `geng -C -d3` slice `n=13,m=20` (989 diam-4 three-connected graphs):
+  one cardinal-failure graph `L?ABA_goOhD_e_`, with `component_reserve_fail=0`
+  and component margin +18.
+
+Two useful negative controls:
+
+- The stronger "one STAR component = one diameter pair" claim is **false**.
+  The exact graph `L?ABA_goOhD_e_` has a cardinal-deficient family whose starry
+  component has two STAR keys, `(7,11)` and `(8,9)`, sharing the same support.
+- A uniform min-degree split is also **false**. `KQCnDGQXI\`^C` has a
+  cardinal-deficient STAR component with `d=10`, `|U|=8`, and `min degG2(U)=4`;
+  nevertheless `extra(U)=15`, so the reserve comes from the endpoint/common-support
+  degree distribution, not from a blanket `min degG2>=5` bound.
+
+**Updated proof target:** prove `(D-CARD)` and `(C-RES)`. `(C-RES)` is now the
+load-bearing STAR lemma: every support-overlap component of a cardinal-deficient
+STAR family must pay its own demand in `degG2-3` reserve. The proof should use the
+diameter-pair endpoints that see all STAR centers, plus the extra `P2 ∪ K2` edge
+in size-3 collision classes; key-wise reserve is tempting but can overcount when
+two STAR keys share one support component.
