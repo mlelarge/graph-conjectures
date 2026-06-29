@@ -1,12 +1,16 @@
 """Gate the DEN-saturation reduction for OR-reserve.
 
-Empirical target:
+Historical target, now refuted:
 
   DEN-SAT: every connected support-overlap family with d(C)>|U(C)| has U(C)=DEN.
 
-If DEN-SAT holds, then OR-reserve follows from the original global G3 inequality:
+If DEN-SAT held, then OR-reserve would follow from the original global G3 inequality:
 for such C, d(C) <= 2*collisions <= E(DEN) = |DEN|+extra(DEN) = |U(C)|+extra(U(C)).
 Thus G3-Hall1 has no extra proper-support obstruction beyond G3.
+
+The gate is retained because support_not_den_fail is the DEN-SAT failure counter.
+The live replacement is in b1_den_sat_profile.py: for proper deficient components,
+test min degG2(U)>=4 and d(C)<=2|U(C)|, which together imply OR-reserve.
 """
 from __future__ import annotations
 

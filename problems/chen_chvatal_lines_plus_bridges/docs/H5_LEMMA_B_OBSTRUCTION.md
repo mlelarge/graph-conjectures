@@ -622,7 +622,7 @@ when many collided distance-2 lines have overlapping expanded support in `DEN`,
 distance-2 neighbours to pay the overlap loss. This is the global anti-concentration
 statement the previous split was trying to approximate.
 
-## OR-reserve attacked (2026-06-29) -- DEN-saturation reduction
+## OR-reserve attacked (2026-06-29) -- DEN-saturation reduction, then correction
 
 Added two proof-facing probes:
 
@@ -682,13 +682,83 @@ Negative controls:
 - The earlier cycle-rank shortcut remains false (`card_deficit<=cycle_rank`
   fails), and `(D-CARD)` remains false.
 
-**Updated B1 proof target:** prove `DEN-SAT`, equivalently:
+**Initial B1 proof target, now refuted:** prove `DEN-SAT`, equivalently:
 
 ```text
 For every connected support-overlap family C with U(C) != DEN,
     d(C) <= |U(C)|.
 ```
 
-This is now the proper Hall obstruction. If it is proved, the only remaining
-B1 burden is the global `G3` anti-correlation inequality itself; the
-support-overlap / OR-reserve layer will no longer be a separate gap.
+This would have made the proper Hall obstruction disappear. It is false.
+
+### DEN-SAT refuted; proper weighted certificate survives
+
+Added `scripts/b1_den_sat_profile.py`, which profiles proper-support components
+and tests the replacement certificate.
+
+Counterexamples to `DEN-SAT`:
+
+```text
+graph6: QsAWODG?QOGOGkGP@QOAGEBSCj?
+n=18, 3-connected, diam>=4
+chosen rows = [0,1,2], all diffuse
+demand d = 6
+proper support U = {0,3,5,12,16}, |U|=5
+DEN = {0,3,5,7,9,12,14,16}
+cardinal deficit = 1
+extra(U) = 27, weighted margin = 26
+```
+
+and a sparse singleton-support witness:
+
+```text
+graph6: ]??S?AI?_?c?G?OD@GA?Cq?GD????g_??_?BPG_??DCQ????RO?KC?G?_AH?OO?G?B?@CB?D??
+n=30, 3-connected, diam>=4
+chosen rows = [0], diffuse
+demand d = 2
+proper support U = {27}, |U|=1
+cardinal deficit = 1
+extra(U)=5, weighted margin=4
+```
+
+So proper-support unit Hall is false. The weighted target still survives, and the
+data isolate a simpler sufficient certificate for every proper deficient
+component:
+
+```text
+(MIN4)  if U(C) != DEN and d(C)>|U(C)|, then degG2(v) >= 4 for all v in U(C).
+(2CAP)  if U(C) != DEN and d(C)>|U(C)|, then d(C) <= 2|U(C)|.
+```
+
+Together they imply proper-support `(OR-reserve)` immediately:
+
+```text
+extra(U(C)) = sum_{v in U(C)}(degG2(v)-3) >= |U(C)|
+            >= d(C)-|U(C)|.
+```
+
+Verification:
+
+- named DEN-SAT failures above: `min4_fail=0`, `half_fail=0`,
+  `min4_half_cert_fail=0`;
+- exact `geng -C -d3 n=13,m=20`: 989 graphs, `den_sat_fail=0`,
+  `min4_fail=0`, `half_fail=0`, `min4_half_cert_fail=0`, with proper margin
+  floor 1;
+- dense samples n=11,12,13,14,15,16,18,20,22,24: no certificate failure;
+  tight proper margin 0 appears, and DEN-SAT failures appear in separate samples,
+  but `(MIN4)+(2CAP)` continues to pay them;
+- sparse samples n=18,24,30,36: no certificate failure; the n=30 singleton
+  witness refutes DEN-SAT but satisfies `(MIN4)+(2CAP)`.
+
+Important status correction: an all-`DEN` support component is necessarily the
+whole row family, so paying it by `G3` is exactly the original global G3
+inequality, not a proof of it. The Hall route therefore reduces to:
+
+```text
+proper components: prove (MIN4)+(2CAP)  =>  OR-reserve locally;
+all-DEN component: prove global G3.
+```
+
+This is a real cleanup of the support-overlap layer, but it does not close B1.
+The remaining load-bearing target is still global `G3`, with `(MIN4)+(2CAP)` as
+the live proper-support sublemma.
