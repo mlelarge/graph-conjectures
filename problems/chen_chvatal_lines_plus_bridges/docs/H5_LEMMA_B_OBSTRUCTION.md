@@ -762,3 +762,83 @@ all-DEN component: prove global G3.
 This is a real cleanup of the support-overlap layer, but it does not close B1.
 The remaining load-bearing target is still global `G3`, with `(MIN4)+(2CAP)` as
 the live proper-support sublemma.
+
+## Proper `(MIN4)+(2CAP)` attacked; global G3 re-attacked (2026-06-29)
+
+Added two focused profilers:
+
+- `scripts/b1_min4_2cap_probe.py` profiles proper cardinal-deficient
+  support-overlap components.
+- `scripts/b1_g3_global_profile.py` profiles the remaining global `G3`
+  inequality on `DEN`.
+
+### Proper components
+
+The proper-support certificate is not proved, but it sharpened to three smaller
+targets.
+
+For every proper deficient component seen so far:
+
+```text
+(PD-SHAPE)  every row is diffuse and every collision class has size 2
+            (so each row has demand 2);
+
+(PD-MATCH)  the bipartite graph row -- support vertex has a row-saturating
+            matching;
+
+(LOW3-SLACK) if a proper component contains a support vertex with degG2=3,
+             then it is not cardinal-deficient.
+```
+
+These imply the live certificate:
+
+- `(PD-SHAPE)+(PD-MATCH)` gives `d(C)=2|rows(C)| <= 2|U(C)|`, i.e. `(2CAP)`.
+- `(LOW3-SLACK)` gives `(MIN4)` for every proper deficient component.
+- Then `extra(U)>=|U|>=d(C)-|U|`, so proper `(OR-reserve)` follows.
+
+Verification:
+
+- named DEN-SAT failures:
+  - `QsAWODG?QOGOGkGP@QOAGEBSCj?`: three diffuse size-2 rows, demand 6,
+    support size 5, row matching exists, `min_degG2(U)=8`;
+  - the sparse n=30 singleton witness:
+    one diffuse size-2 row, demand 2, support size 1, row matching exists,
+    `min_degG2(U)=8`.
+- exact `geng -C -d3 n=13,m=20`: no proper deficient component; all proper
+  components touching `degG2=3` have unit margin at least 4.
+- dense samples n=11,12,13,14,15,16,18,20 and sparse samples n=18,24,30,36:
+  no failures of `(PD-SHAPE)`, `(PD-MATCH)`, `(LOW3-SLACK)`, `(MIN4)`, or
+  `(2CAP)` on proper deficient components.
+
+This is progress, but still not a proof. The proper-support target is now:
+prove `(PD-SHAPE)`, `(PD-MATCH)`, and `(LOW3-SLACK)` from the metric collision
+lemmas and 3-connectivity.
+
+### Global G3
+
+For the all-`DEN` component, the problem is exactly global `G3`:
+
+```text
+total_demand = 2*collisions <= E(DEN) = sum_{v in DEN}(degG2(v)-2).
+```
+
+The global re-attack produced useful negative controls:
+
+- A global `2|DEN|` cap is false. Example
+  `SkF@@NdgGXkWgwO_gmkHx_lIxS^?_lo?O` has `total_demand=22`,
+  `|DEN|=10`, so `total_demand>2|DEN|`; nevertheless `den_extra=75` and
+  `g3_margin=63`.
+- `extra(DEN)>=# {v in DEN : degG2(v)=3}` is false in low-order samples and is
+  not the right reserve statement.
+
+The low-margin global examples split into two regimes:
+
+- **low-degree, low-demand:** e.g. `MGdD@OC?S_GECE@g?`, with
+  `total_demand=10`, `|DEN|=8`, `den_extra=6`, `g3_margin=4`, and four
+  `degG2=3` vertices;
+- **high-degree, high-demand:** examples with `total_demand>2|DEN|`, but
+  `min degG2(DEN)` is large and the reserve is overwhelming.
+
+So the remaining global proof target is an anti-correlation statement, not a
+plain cardinal cap: high collision demand must force high `degG2` reserve inside
+`DEN`, while low-degree `DEN` vertices suppress demand.
