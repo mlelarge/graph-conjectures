@@ -529,3 +529,95 @@ STAR family must pay its own demand in `degG2-3` reserve. The proof should use t
 diameter-pair endpoints that see all STAR centers, plus the extra `P2 ∪ K2` edge
 in size-3 collision classes; key-wise reserve is tempting but can overcount when
 two STAR keys share one support component.
+
+## Independent review (2026-06-29) — (D-CARD)+(C-RES) split is VALID
+
+Confirmed the implication chain `B1 ⟸ G3 ⟸ G3-Hall1 ⟸ (D-CARD)+(S-RES) ⟸ (D-CARD)+(C-RES)`:
+- `(C-RES) ⟹ (S-RES)` is sound — the STAR support-overlap **components have disjoint
+  supports by construction**, so `extra(U(X_star)) = Σ_C extra(U_C) ≥ Σ_C d(C) = d(X_star)`,
+  i.e. `E(U(X_star)) ≥ |U(X_star)| + d(X_star)` since `extra(U)=E(U)−|U|`. (Each collided
+  line lies in exactly one component, so demand is additive too.)
+- `(C-RES)` reproduces: `component_reserve_fail = single_pair_fail = 0` on the named
+  cardinal-failure graphs, the geng `-C -d3` n=13 m=20 slice, and dense samples
+  n=11..20 — *including on the cardinal-deficient families that actually arise*
+  (3 at n=12, 1 at n=13, 2 at n=14/15/16), where the bound has margin.
+- The recorded false shortcuts are correct negative controls (pure unit-capacity Hall,
+  unconditional STAR reserve, one-STAR-pair localization, uniform min-degG2 reserve all
+  fail). So the live target is genuinely the **conditional** `(C-RES)`.
+
+Net: a valid, well-scoped sharpening. The open obligations are now `(D-CARD)` (support
+expansion for endpoint-disjoint diffuse forests) and `(C-RES)` (each STAR overlap
+component pays its own demand via `Σ(degG2−3)`), both verified, both unproved.
+
+## Correction / new obstruction attack (2026-06-29) -- D-CARD false, replace by overlap-reserve Hall
+
+The `(D-CARD)+(C-RES)` implication chain above is still logically sound as a
+**sufficient** condition, but it is no longer a viable proof route: `(D-CARD)` is
+false in the intended 3-connected class.
+
+New counterexample to `(D-CARD)`:
+
+```text
+graph6: MGdD@OC?S_GECE@g?
+n=14, diam=5, 3-connected
+five collided rows, all diffuse
+demand = 10
+common expanded support U = {1,3,4,5,8,10,12,13}
+|U| = 8
+cardinal deficit = demand-|U| = 2
+extra(U) = sum_{v in U}(degG2(v)-3) = 6
+weighted margin = |U| + extra(U) - demand = 4
+```
+
+So diffuse families can be cardinal-deficient. The missing payment is not STAR
+reserve; it is ordinary `degG2-3` reserve already present in the same support.
+This is exactly the global obstruction in miniature: the unit-support count fails,
+but the weighted Hall count still has slack.
+
+The corrected formulation is support-overlap component Hall. For any family `X`
+of collided lines, put a graph on `X` by joining two rows when their supports
+intersect. For a connected component `C`, write:
+
+```text
+U(C) = union_{L in C} S_L
+d(C) = sum_{L in C} 2(|E(F_L)|-1)
+extra(U) = sum_{v in U}(degG2(v)-3)
+```
+
+Distinct support-overlap components have disjoint supports, so demand and supply
+are additive over the components. Therefore `G3-Hall1` is equivalent to the
+connected-component reserve inequality:
+
+```text
+(OR-Hall)  for every connected support-overlap family C,
+           sum_{v in U(C)}(degG2(v)-2) >= d(C).
+```
+
+Equivalently, only the cardinal-deficient components need proof:
+
+```text
+(OR-reserve)  if d(C) > |U(C)|, then extra(U(C)) >= d(C)-|U(C)|.
+```
+
+This strictly supersedes the false split. It keeps the valid unit-capacity idea
+when `d(C)<=|U(C)|`, but it does not try to separate diffuse and starry rows.
+
+Auxiliary probes:
+
+- `scripts/b1_diffuse_overlap_probe.py` found the diffuse-only `(D-CARD)`
+  counterexample above.
+- `scripts/b1_overlap_reserve_probe.py` checks connected support-overlap families.
+  It verifies `connected_target_fail=0` on the named counterexample, exact
+  `geng -C -d3 n=13,m=20` (989 graphs), sparse samples n=14,18,24,32, and dense
+  samples n=11,12,13,14,15,16,18,20.
+- A tempting cycle-rank refinement is not load-bearing. The inequality
+  `extra(U)>=cycle_rank` survived these checks, but `card_deficit<=cycle_rank`
+  is false: `Ke_PAWkGq\y?` has a connected starry subfamily with cardinal deficit
+  2, cycle rank 1, and extra 12. So the proof cannot route through cycle rank
+  alone.
+
+**Updated proof target:** prove `(OR-reserve)` directly. The likely metric lemma is:
+when many collided distance-2 lines have overlapping expanded support in `DEN`,
+3-connectivity forces the same support vertices to acquire enough additional
+distance-2 neighbours to pay the overlap loss. This is the global anti-concentration
+statement the previous split was trying to approximate.
