@@ -621,3 +621,74 @@ when many collided distance-2 lines have overlapping expanded support in `DEN`,
 3-connectivity forces the same support vertices to acquire enough additional
 distance-2 neighbours to pay the overlap loss. This is the global anti-concentration
 statement the previous split was trying to approximate.
+
+## OR-reserve attacked (2026-06-29) -- DEN-saturation reduction
+
+Added two proof-facing probes:
+
+- `scripts/b1_or_reserve_profile.py` records the deficient connected
+  support-overlap components, their `DEN` support, row kinds, support incidence,
+  and where the `degG2-3` reserve is paid.
+- `scripts/b1_or_saturation_gate.py` tests the sharper saturation target below,
+  and keeps two negative controls explicit.
+
+The new empirical target is:
+
+```text
+(DEN-SAT)  If C is a connected support-overlap family and d(C)>|U(C)|,
+           then U(C)=DEN.
+```
+
+This is stronger than `(OR-reserve)` only on proper supports. If it holds, then
+`(OR-reserve)` is no longer an independent obstruction beyond the original global
+`G3` inequality:
+
+```text
+d(C) <= total_demand = 2*collisions
+     <= E(DEN)                         by G3
+     = |DEN| + sum_{v in DEN}(degG2(v)-3)
+     = |U(C)| + extra(U(C))            by DEN-SAT.
+```
+
+So the B1 route can be reorganized as:
+
+```text
+proper-support unit Hall (DEN-SAT) + global G3  =>  OR-reserve
+OR-reserve                                      =>  G3-Hall1
+G3-Hall1                                       =>  G3  =>  B1.
+```
+
+Verification:
+
+- `MGdD@OC?S_GECE@g?`: the diffuse `(D-CARD)` counterexample has
+  `DEN=U`, `den_size=8`, `den_extra=6`, `total_demand=10`, `g3_margin=4`,
+  and deficit `2`.
+- `Ke_PAWkGq\y?`: proper deficient subfamilies exist, but every deficient
+  connected family still has `U=DEN`; the full support has `den_extra=12`,
+  `total_demand=12`, and `g3_margin=8`.
+- exact `geng -C -d3 n=13,m=20`: 989 graphs, `support_not_den_fail=0`,
+  `or_fail=0`, `min_proper_card_margin=1`, `max_deficit=5`.
+- sparse samples n=14,18,24,32 and dense samples n=11,12,13,14,15,16,18,20:
+  `support_not_den_fail=0`, `or_fail=0`. Dense n=15 shows
+  `min_proper_card_margin=0`, so a strict positive proper-support margin is
+  false, but no proper-support deficient component appears.
+
+Negative controls:
+
+- A private-row induction is false: proper-support components can have no row
+  whose private support pays its own demand. In the exact `n=13,m=20` slice,
+  `private_row_fail=10`; these are high-slack, non-deficient components, so they
+  do not refute `DEN-SAT`, but they kill that proof shortcut.
+- The earlier cycle-rank shortcut remains false (`card_deficit<=cycle_rank`
+  fails), and `(D-CARD)` remains false.
+
+**Updated B1 proof target:** prove `DEN-SAT`, equivalently:
+
+```text
+For every connected support-overlap family C with U(C) != DEN,
+    d(C) <= |U(C)|.
+```
+
+This is now the proper Hall obstruction. If it is proved, the only remaining
+B1 burden is the global `G3` anti-correlation inequality itself; the
+support-overlap / OR-reserve layer will no longer be a separate gap.
