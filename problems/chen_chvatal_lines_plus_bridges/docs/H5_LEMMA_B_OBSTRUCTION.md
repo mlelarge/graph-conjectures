@@ -842,3 +842,84 @@ The low-margin global examples split into two regimes:
 So the remaining global proof target is an anti-correlation statement, not a
 plain cardinal cap: high collision demand must force high `degG2` reserve inside
 `DEN`, while low-degree `DEN` vertices suppress demand.
+
+## Anti-correlation attacked: diameter-pair localization (2026-06-30)
+
+Added `scripts/b1_diameter_pair_g3_probe.py`.
+
+The main new insight is that the global anti-correlation appears to localize to
+**any fixed diameter pair**, not just to the full set `DEN`.
+
+For a diameter pair `{p,q}`, put
+
+```text
+P_pq = N[p] union N[q],
+E(U) = sum_{v in U}(degG2(v)-2).
+```
+
+The new scalar target is:
+
+```text
+(DP-G3)  for every diameter pair {p,q},
+         2*collisions <= E(P_pq).
+```
+
+Since `P_pq subset DEN`, `(DP-G3)` immediately implies global `G3`.
+
+The stronger Hall form also survives. For a collided line `L`, let
+
+```text
+S_L^pq = S_L cap P_pq,
+```
+
+where `S_L=(B_L union N(B_L)) cap DEN` is the existing expanded support. The
+pair-local Hall target is:
+
+```text
+(DP-Hall) for every diameter pair {p,q} and every collided-line family X,
+          sum_{v in union_{L in X} S_L^pq}(degG2(v)-2)
+          >= sum_{L in X} 2(|E(F_L)|-1).
+```
+
+`(DP-Hall)` implies `(DP-G3)` by taking `X` to be all collided lines. This is a
+strictly more proof-facing anti-correlation target: demand must expand into the
+two endpoint-neighbourhoods of a single diameter pair.
+
+Verification:
+
+- named stress cases `MGdD@OC?S_GECE@g?`, `JGdSJ?eKSP?`,
+  `SkF@@NdgGXkWgwO_gmkHx_lIxS^?_lo?O`, and
+  `QsAWODG?QOGOGkGP@QOAGEBSCj?`: `dp_fail=0`,
+  `pair_hall_fail=0`, minimum pair/Hall margin `3`;
+- exact `geng -C -d3 n=13,m=20`: 989 graphs, `dp_fail=0`,
+  `pair_hall_fail=0`, minimum pair/Hall margin `7`;
+- dense samples n=11,12,13,14,15,16,18,20 (80/order):
+  `dp_fail=0`, `pair_hall_fail=0`; minimum pair margins grow from `4` at n=11
+  to `41` at n=20;
+- sparse samples n=14,18,24,32 (80/order): `dp_fail=0`,
+  `pair_hall_fail=0`, even with many diameter pairs and many off-geodesic
+  vertices.
+
+Negative control: the target is still genuinely 3-connectivity-sensitive. Direct
+checks on the 2-separable `D2<n` witnesses give pair margins
+
+```text
+HCQdarQ : -7
+GCXmeW  : -4
+G?qa`o  : -8
+```
+
+and each has an explicit pair-local Hall cut failure.
+
+So the global proof target is now:
+
+```text
+For a fixed diameter pair {p,q}, prove DP-Hall.
+Equivalently, in the Hall dual, no U subset P_pq can trap more collided-line
+demand than E(U).
+```
+
+This is a cleaner place for the Menger/fan argument: the cut is now inside the
+two endpoint neighbourhoods of a single diameter pair, and low `degG2` vertices
+can only remain low by suppressing the trapped collision rows that would need
+their capacity.
