@@ -3,7 +3,7 @@
 Date: 2026-06-26.  Target:
 `G 2-connected + pendant-free + diam>=4 ==> ell(G) >= |G|` (sharper: `proper(G) >= n`).
 
-Status: **TRUE through n=11**, **not proved**. The full explicit subset-of-lines
+Status: **TRUE through n=11**, **not proved**. ⚠️ **The entire G3/DP-G3/DP-SPLIT localization route (rounds D16–D28) is REFUTED** — G3 is FALSE at n=12 (see "G3 ROUTE REFUTED" at the end). Lemma B / B1 themselves are UNREFUTED. The full explicit subset-of-lines
 charging axis was already barred (ledger G3/G5/G6/G8/G10); this round adds a clean
 toolbox, a fresh census, a decisive reason the short-line route fails, and a first
 SPQR probe.
@@ -1066,3 +1066,68 @@ anti-correlation:
 ```
 
 `DP-SPLIT => DP-G3 => G3 => (B1)`.
+
+## Independent review (2026-07-01) — DP-Hall refutation confirmed; DP-SPLIT survives a hard red-team
+
+- **DP-Hall refutation CONFIRMED.** `W@AG?W??W?O@G?O_?AC@A??H?_a?OO?COGE?G_??_?AaP??`
+  (n=24, diam=5, 3-connected): `line(2,22)=line(3,21)=[2,3,21,22]` is a real collided
+  distance-2 row, entirely outside `P_(1,4)` (none of 2,3,21,22 in P), so the pair-local
+  Hall bound is −2 while scalar DP-G3 has margin 23. Right call to drop the Hall route.
+- **`DP-SPLIT ⟹ DP-G3 ⟹ G3 ⟹ B1` is a valid implication chain** (LOW-P: `E(P) ≥ 2|P|−t1 ≥ D`;
+  HIGH-P: `E(P) ≥ 3|P| ≥ D`; both use α' ⇒ `cap(v) ≥ 1` on `P_pq`).
+- **DP-SPLIT survived a hard independent red-team.** Searched 1338 3-connected diam>=4
+  graphs (n=11..22; dense gnp, sparse gnm, 3-regular), specifically hunting the danger
+  case `mincap<3 ∧ 2|P|−t1 < D ≤ E(P)` (which would break DP-SPLIT while DP-G3 holds):
+  **0 split failures, 0 danger cases**. This is materially stronger evidence than the
+  sample gates that earlier passed (D-CARD), and DP-SPLIT is a *scalar* per-pair
+  inequality with large slack — structurally more robust than the fragile Hall/cardinality
+  targets (D-CARD, DEN-SAT, DP-Hall) that were all refuted on invisible-row constructions.
+
+**Caveat (the standing lesson):** empirical `split_fail=0` is not proof — (D-CARD) passed
+its sample gate last round and was FALSE (D22). But the pivot from cardinality-Hall to a
+high-slack scalar bound is the right move, and DP-SPLIT is the most robust B1 sub-target so far.
+
+## ⚠️ G3 ROUTE REFUTED (2026-07-01) — G3, DP-G3, DP-SPLIT are all FALSE
+
+A DP-SPLIT proof workflow's **exhaustive** geng enumeration at n=12 (which prior
+random sampling had missed) found that the whole localization route is built on a
+**false** statement. Independently re-verified from raw definitions
+(`scripts/... ` / oracle, 0 doubt):
+
+- **G3 is FALSE.** Witness `K?`+backtick+`DDOqREaQh` (n=12, m=22, κ=3, diam=4):
+  collisions=14 so `2·collisions=28`; `DE={8,9}`, `E(DE∪N(DE))=24`; `28 > 24`
+  (margin −4). Also `K?`+bt+`D@aQPRoFh` (n=12): `E(DEN)=25 < 26`.
+- **DP-G3 is FALSE** (it is stronger than G3): e.g. `M??E@_Kg_qQ_PGY@?` (n=14),
+  every diameter pair has `D=30 > E(P)=24`.
+- **DP-SPLIT is FALSE** (consequence). The pair `(8,9)` of the primary witness is
+  the *unique* diameter pair, `|P|=8`, `t1=0`, `mincap=2`, `D=28`: LOW-P needs
+  `28≤16`, HIGH-P needs `mincap≥3` — both fail.
+
+**Why it fails (root cause).** The *true* statement is the GLOBAL bound
+`2·collisions ≤ E(V) = 2·surplus` — which is exactly `D2 ≥ n` = **B1 itself**
+(here surplus=20 ≥ collisions=14, so B1 holds with margin 6). G3 tried to
+*localize* that global excess to `E(DE∪N(DE))`, and DP-G3/DP-SPLIT localized it
+further to a single diameter pair's closed neighbourhood. In a dense diam-4 pocket
+where `DE={p,q}`, `DEN` collapses onto an 8-vertex set whose excess (24) is *smaller*
+than `2·collisions` (28). **No per-vertex-capped surrogate of `E(V)` restricted to
+DEN/a pair can work** — the collision demand grows with local density while the
+localized capacity budget is bounded. So the localization was a false lead the whole
+time; the exhaustive n=12 check finally exposed it.
+
+**Everything built on G3 is dead** (rounds D16–D28): G3, G3-Hall1, (D-CARD)+(S-RES),
+(C-RES), DP-G3, DP-Hall, DP-SPLIT, LOW-P/HIGH-P. The proved *toolbox* survives
+(α', STAR, COLLCHAR, PERPAIR, CF, the virtual-edge lemma, ISO-MON, L1, L2) — it was
+just wired to a false localization.
+
+**B1 is UNREFUTED** (`D2 ≥ n` holds on every witness; the exhaustive n=12 census has
+0 B1 failures) and equals the global `collisions ≤ surplus`. It must be proved by a
+genuinely GLOBAL argument (e.g. CF forest bound + COLLCHAR anti-correlation, counting
+distinct distance-2 lines directly), NOT by localizing the global collision total.
+
+**Review honesty note.** G3 was accepted as "verified" in D16 (and in my D16 review)
+on the basis of RANDOM samples at n=11..14 that missed the rare n=12 dense pockets —
+the exact "sample-gate then FALSE" trap the project discipline warns about. Likewise
+the D15 SPQR claim "3-connected diam≥4 first appears at n=13" was a sampling artifact:
+such graphs exist at n=12 (479,322 of them), and they are where G3 breaks. Load-bearing
+"verified 0 failures" claims on 3-connected diam≥4 need EXHAUSTIVE geng (or a proof),
+not random sampling.
