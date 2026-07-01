@@ -923,3 +923,72 @@ This is a cleaner place for the Menger/fan argument: the cut is now inside the
 two endpoint neighbourhoods of a single diameter pair, and low `degG2` vertices
 can only remain low by suppressing the trapped collision rows that would need
 their capacity.
+
+## DP-Hall attacked: component reduction and proper-cardinality correction (2026-07-01)
+
+Added `scripts/b1_dp_hall_dual_probe.py` and
+`scripts/b1_dp_component_probe.py`.
+
+For a fixed diameter pair `{p,q}`, the dual cut form is:
+
+```text
+for every U subset P_pq:
+    sum_{L : S_L^pq subset U} demand(L) <= E(U),
+where P_pq=N[p] union N[q] and S_L^pq=S_L cap P_pq.
+```
+
+The dual enumerator shows no failures. In the named stress cases, the worst
+cuts are either the full endpoint-neighbourhood `P_pq` in the tight examples
+(`MGdD@OC?S_GECE@g?` margin 4, `JGdSJ?eKSP?` margin 3), or high-slack single
+diffuse-row supports (`SkF@@NdgGXkWgwO_gmkHx_lIxS^?_lo?O` margin 62,
+`QsAWODG?QOGOGkGP@QOAGEBSCj?` margin 17). The exact
+`geng -C -d3 n=13,m=20` slice has 989 graphs and 3192 checked diameter pairs,
+with `fail_pairs=0`, `min_pair_margin=7`, `min_dual_margin=7`, and no tight
+dual cuts.
+
+The useful structural reduction is by the pair-local support-overlap graph on
+collided rows, joining two rows when their restricted supports `S_L^pq`
+intersect. Its connected components have disjoint supports, hence `DP-Hall`
+reduces to the component inequalities
+
+```text
+(DP-COMP)  E(U_C) >= d(C)
+```
+
+where `U_C` is the union of restricted supports in the component and `d(C)` is
+the total demand of its rows.
+
+There are now two cases:
+
+- if `U_C=P_pq`, then the component intersects every nonempty restricted
+  support, so it is the whole row family and `(DP-COMP)` is exactly the scalar
+  diameter-pair target `(DP-G3)`;
+- if `U_C != P_pq`, the live target is still weighted proper reserve, not unit
+  Hall.
+
+The tempting shortcut
+
+```text
+proper component C => d(C) <= |U_C|
+```
+
+is false. Dense witness `N_jYaGFh?{I_NCd}?K_`, diameter pair `(2,14)`, has a
+proper all-diffuse component with rows `[0,1,2,3]`, demand `8`, support size
+`7`, and `card_margin=-1`. Its weighted capacity is nevertheless `40`, so the
+weighted margin is `32`. This kills pair-local proper cardinal Hall but leaves
+the weighted component target with large slack.
+
+The current proof split for global `G3` is therefore:
+
+```text
+(DP-PROPER-OR)  for every proper pair-local component C:
+                E(U_C) >= d(C).
+
+(DP-FULL)       for the full P_pq component:
+                E(P_pq) >= total_demand.
+```
+
+Together these are equivalent to `DP-Hall`, hence imply `DP-G3`, global `G3`,
+and then `(B1)`. The next proof attempt should not try unit Hall on proper
+pair-local components; it must exploit the extra `degG2` reserve in their
+supports.
