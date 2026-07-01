@@ -6,14 +6,18 @@ Global G3 is
     E(U)=sum_{v in U}(degG2(v)-2),
     DEN=DE union N(DE).
 
-This probe tests the stronger pair-local target:
+This probe tests the scalar pair-local target:
 
     (DP-G3) for every diameter pair {p,q},
             total_demand <= E(N[p] union N[q]).
 
-Since N[p] union N[q] is a subset of DEN, DP-G3 implies G3.  The script also
-tests the even stronger pair-local Hall statement using the existing expanded
-collision supports intersected with N[p] union N[q].
+Since N[p] union N[q] is a subset of DEN, DP-G3 implies G3.
+
+Historical note: the script also reports the stronger pair-local Hall statement
+using expanded collision supports intersected with N[p] union N[q].  That Hall
+strengthening is false in sparse 3-connected graphs, because a collided row can
+have empty restricted support for a diameter pair even while scalar DP-G3 has
+large margin.  Keep the Hall diagnostic as a guard; do not treat it as live.
 """
 from __future__ import annotations
 

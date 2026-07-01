@@ -1,4 +1,4 @@
-"""Profile the dual cuts for the diameter-pair Hall target.
+"""Profile the dual cuts for the refuted diameter-pair Hall target.
 
 For a diameter pair {p,q}, write P=N[p] union N[q].  For a collided row L, use
 the existing expanded support S_L from b1_hall_profile, but restrict it to P.
@@ -8,9 +8,10 @@ DP-Hall dual:
     for every U subset P:
         sum_{L: S_L cap P subset U} demand(L) <= sum_{v in U}(degG2(v)-2).
 
-This script enumerates the dual cuts when |P| is small enough and records the
-worst cut shapes.  It is exploratory: the goal is to identify a proof-facing
-anti-correlation statement inside the endpoint-neighbourhood P.
+This Hall strengthening is now known to be false in sparse 3-connected graphs:
+a collided row can have empty restricted support for a diameter pair.  The
+scalar DP-G3 target may still have large margin there.  This script is retained
+as a guard and as a way to reproduce the refutation.
 """
 from __future__ import annotations
 

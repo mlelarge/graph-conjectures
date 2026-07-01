@@ -992,3 +992,77 @@ Together these are equivalent to `DP-Hall`, hence imply `DP-G3`, global `G3`,
 and then `(B1)`. The next proof attempt should not try unit Hall on proper
 pair-local components; it must exploit the extra `degG2` reserve in their
 supports.
+
+## DP-Hall correction: false, scalar DP-G3 survives (2026-07-01)
+
+Added `scripts/b1_dp_proper_or_probe.py` and
+`scripts/b1_dp_scalar_split_probe.py`.
+
+The stronger pair-local Hall target above is false once connected subfamilies
+are checked directly. The issue is not a component bookkeeping detail: a
+collided row can be completely invisible to a diameter pair.
+
+Counterexample:
+
+```text
+graph6: W@AG?W??W?O@G?O_?AC@A??H?_a?OO?COGE?G_??_?AaP??
+diameter pair: (1,4)
+collided row: pairs [(2,22),(3,21)], line [2,3,21,22]
+restricted support S_L cap P_(1,4): empty
+demand: 2
+```
+
+So the Hall cut `U=empty` has margin `-2`. However the scalar diameter-pair
+target is not threatened: the same pair has `E(P)=25`, total demand `2`, and
+scalar margin `23`.
+
+This kills the universal `DP-Hall` / `DP-PROPER-OR` route as a proof of `G3`.
+The scripts are retained as guards, but the live target is now only the scalar
+statement:
+
+```text
+(DP-G3)  for every diameter pair {p,q},
+         total_demand <= E(P_pq),  P_pq=N[p] union N[q].
+```
+
+The scalar target now has a sharper sufficient split. For a fixed diameter pair
+write
+
+```text
+cap(v) = degG2(v)-2,
+t1     = # {v in P_pq : cap(v)=1},
+D      = total collision demand.
+```
+
+Since every `v in P_pq` has eccentricity at least `3`, the proved alpha-prime
+lemma gives `cap(v)>=1`. Therefore either of the following two inequalities
+implies `DP-G3`:
+
+```text
+(LOW-P)   D <= 2|P_pq| - t1.
+
+(HIGH-P)  min_{v in P_pq} cap(v) >= 3
+          and D <= 3|P_pq|.
+```
+
+In the LOW-P case, `E(P_pq)>=2|P_pq|-t1>=D`. In the HIGH-P case,
+`E(P_pq)>=3|P_pq|>=D`.
+
+Verification:
+
+- named stress cases: `MGdD@OC?S_GECE@g?` and `JGdSJ?eKSP?` are LOW-P
+  (`low_margin=2` in both); `SkF@@NdgGXkWgwO_gmkHx_lIxS^?_lo?O` is HIGH-P
+  (`D=22`, `|P|=10`, `min cap=6`, `high_margin=8`); the sparse Hall
+  counterexample is LOW-P with scalar margin `23`;
+- exact `geng -C -d3 n=13,m=20`: 989 graphs, 3192 diameter pairs,
+  `split_fail=0`, `dp_fail=0`, `min_low_margin=0`;
+- dense samples n=11..16 and sparse samples n=14,18,24,32: `split_fail=0`.
+
+The next proof target is no longer Hall expansion. It is the scalar
+anti-correlation:
+
+```text
+(DP-SPLIT)  every diameter pair satisfies LOW-P or HIGH-P.
+```
+
+`DP-SPLIT => DP-G3 => G3 => (B1)`.

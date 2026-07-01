@@ -1,11 +1,14 @@
-"""Probe pair-local support components for DP-Hall.
+"""Probe pair-local support components for the historical DP-Hall target.
 
 Fix a diameter pair {p,q} and P=N[p] union N[q].  For each collided row L, use
-S_L^pq = S_L cap P.  Components of the support-overlap graph have disjoint
-supports, so DP-Hall is equivalent to checking each component independently.
+S_L^pq = S_L cap P.  Disconnected subfamilies in the support-overlap graph have
+disjoint supports, so a Hall proof would have to check connected subfamilies,
+not just components of the full row graph.
 
-This script profiles whether all difficult components are the full P component,
-or whether proper components require their own lemma.
+The full pair-local Hall target is now known to be false: some collided rows
+have empty restricted support for a diameter pair.  This script only profiles
+components of the full row-overlap graph and is retained as a diagnostic.  The
+live B1 route is the scalar DP-G3 split in b1_dp_scalar_split_probe.py.
 """
 from __future__ import annotations
 
