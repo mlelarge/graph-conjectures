@@ -1128,6 +1128,6 @@ distinct distance-2 lines directly), NOT by localizing the global collision tota
 on the basis of RANDOM samples at n=11..14 that missed the rare n=12 dense pockets —
 the exact "sample-gate then FALSE" trap the project discipline warns about. Likewise
 the D15 SPQR claim "3-connected diam≥4 first appears at n=13" was a sampling artifact:
-such graphs exist at n=12 (479,322 of them), and they are where G3 breaks. Load-bearing
+such graphs exist at n=12 (479,322 with m<=22; an independent exhaustive m<=25 census finds 5,601,520 — scripts/b1_n12_exhaustive_census.py), and they are where G3 breaks. Load-bearing
 "verified 0 failures" claims on 3-connected diam≥4 need EXHAUSTIVE geng (or a proof),
 not random sampling.

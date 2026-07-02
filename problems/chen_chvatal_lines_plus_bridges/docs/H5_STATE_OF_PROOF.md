@@ -212,8 +212,15 @@ Equivalently:
 2*collisions <= E(V) = 2*surplus.
 ```
 
-This global statement is still unrefuted. Exhaustive n=12 found 0 B1 failures,
-and the primary G3 counterexample still has B1 margin +6.
+This global statement is still unrefuted. Independent exhaustive census at
+n=12 over ALL edge counts m=18..25 (412,255,684 graphs scanned; 5,601,520
+three-connected diam>=4; `scripts/b1_n12_exhaustive_census.py`): **0 B1
+failures**, min(D2-n)=+6 attained at m=22 and RISING with density (+7 at
+m=23,24,25). (The earlier "exhaustive n=12 = 479,322 graphs" figure was
+exhaustive only for m<=22; m>=26 remains unscanned, ~1.2B graphs per band, but
+the rising margin makes a dense breach implausible.) The primary G3
+counterexample has B1 margin +6. A fourth G3 failure exists at m=23
+(`K?`+backtick+`DDOqREaRh`, margin -1), so the G3 refutation spans edge bands.
 
 ### The Refuted G3 Route
 
