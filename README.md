@@ -11,7 +11,10 @@ A browseable, status-annotated mirror of the **graph-theory category** of
 extended with **new conjectures mined from recent arXiv papers** by 12 curated
 graph-theorists. Every problem and conjecture is classified as `open`,
 `partial`, `solved`, `disproved`, or `unclear` via an automated literature-
-review pass, with every cited paper verified by `WebFetch` before inclusion.
+review pass, with every cited paper verified by `WebFetch` before inclusion —
+and connected by a **relation graph** of AI-reviewed implications,
+equivalences, and duplicates, browsable interactively on the site
+([details](#relations-between-conjectures)).
 
 **Two corpora, one merged index:**
 
