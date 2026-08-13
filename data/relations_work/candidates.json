@@ -1,0 +1,2473 @@
+{
+ "finder_edges": [
+  {
+   "source": "opg:partial_list_coloring_0",
+   "target": "opg:partial_list_coloring",
+   "relation": "implies",
+   "via": "restriction",
+   "sketches": [
+    "Taking s=χ_ℓ in the monotonicity λ_r/r ≥ λ_s/s and using λ_{χ_ℓ}=n yields λ_t ≥ tn/χ_ℓ, which is exactly the first conjecture; so it is the s=χ_ℓ instance of the second.",
+    "Taking s=χ_ℓ in the Iradmusa conjecture λ_r/r ≥ λ_s/s, and using λ_{χ_ℓ}=n, gives λ_t ≥ tn/χ_ℓ, exactly the Albertson–Grossman–Haas conjecture; the OPG entry notes this specialization explicitly.",
+    "Take s = chi_l in lambda_r/r >= lambda_s/s; since lambda_{chi_l} = n this gives lambda_t >= tn/chi_l, the Albertson-Grossman-Haas conjecture. The OPG page states this explicitly."
+   ],
+   "confidence": "high",
+   "n_finders": 3
+  },
+  {
+   "source": "opg:goldbergs_conjecture",
+   "target": "opg:seymours_r_graph_conjecture",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "In an r-graph, every H⊆G with |V(H)|=2k+1 has at least r edges leaving, so |E(H)| ≤ rk, and |V(H)|=2k gives |E(H)| ≤ rk; hence the overfull parameter w(G) ≤ r. Goldberg then gives χ' ≤ max{Δ+1, w} = r+1, which is Seymour's r-graph conjecture.",
+    "For an r-graph G, Δ(G)=r, and for any H⊆G with |V(H)| odd the cut condition gives |E(H)| ≤ (r|V(H)|−r)/2, so ⌈|E(H)|/⌊|V(H)|/2⌋⌉ ≤ r; for even |V(H)| the ratio is ≤ r by regularity. Hence w(G) ≤ r+1 and Goldberg's bound χ' ≤ max{Δ+1, w} yields χ' ≤ r+1.",
+    "For an r-graph, Delta = r and every H on an odd vertex set S has |E(H)| <= (r|S|-r)/2 since at least r edges leave S, so the overfull parameter w(G) <= r. Goldberg's bound chi' <= max(Delta+1, w) then gives chi' <= r+1, which is Seymour's r-graph conjecture (the classical Goldberg-Seymour link)."
+   ],
+   "confidence": "high",
+   "n_finders": 3
+  },
+  {
+   "source": "arxiv:1904.12060__00",
+   "target": "opg:behzads_conjecture",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "χ''(G) ≤ χ''_ℓ(G) always; so χ''_ℓ ≤ Δ+2 for all simple graphs gives χ'' ≤ Δ+2, i.e. the Total Colouring Conjecture.",
+    "χ''(G) ≤ χ''_ℓ(G) always, so χ''_ℓ(G) ≤ Δ+2 for every simple graph gives χ''(G) ≤ Δ+2, which is the Total Colouring Conjecture (the paper itself presents it as the list analogue of TCC)."
+   ],
+   "confidence": "high",
+   "n_finders": 2
+  },
+  {
+   "source": "opg:fractional_hadwiger",
+   "target": "arxiv:1907.12999__00",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "Part (a) says χ_f(G) ≤ had(G). If G is K_{t+1}-minor-free then had(G) ≤ t, so χ_f(G) ≤ t; since α(G)·χ_f(G) ≥ n, we get α(G) ≥ n/t.",
+    "If G has no K_{t+1} minor then had(G) <= t, so part (a) chi_f(G) <= had(G) gives chi_f(G) <= t; fractional colouring always yields alpha(G) >= n/chi_f(G) >= n/t, which is the conjectured independence-number bound.",
+    "Part (a) of Fractional Hadwiger says χ_f(G) ≤ had(G). If G is K_{t+1}-minor-free then had(G) ≤ t, so χ_f(G) ≤ t; since χ_f(G) ≥ n/α(G) always, α(G) ≥ n/t, which is exactly the independence-number conjecture."
+   ],
+   "confidence": "high",
+   "n_finders": 3
+  },
+  {
+   "source": "arxiv:1803.01051__01",
+   "target": "opg:reeds_omega_delta_and_chi_conjecture",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "χ(G) ≤ χ_ℓ(G), so the list version χ_ℓ ≤ ⌈(Δ+1+ω)/2⌉ immediately implies Reed's conjecture for the chromatic number.",
+    "χ(G) ≤ χ_ℓ(G) for every graph, so the list-chromatic version χ_ℓ(G) ≤ ⌈(Δ+1+ω)/2⌉ immediately yields Reed's conjecture χ(G) ≤ ⌈(Δ+1+ω)/2⌉."
+   ],
+   "confidence": "high",
+   "n_finders": 2
+  },
+  {
+   "source": "opg:reeds_omega_delta_and_chi_conjecture",
+   "target": "opg:bounding_the_chromatic_number_of_triangle_free_graphs_with_fixed_maximum_degree",
+   "relation": "implies",
+   "via": "restriction",
+   "sketches": [
+    "For triangle-free G, ω ≤ 2 and Reed's bound gives χ ≤ ⌈(Δ+3)/2⌉, which equals ⌈Δ/2⌉+2 for even Δ and ⌈Δ/2⌉+1 for odd Δ; hence Reed's conjecture implies χ ≤ ⌈Δ/2⌉+2 for triangle-free graphs, exactly the ω≤2 instance."
+   ],
+   "confidence": "high",
+   "n_finders": 1
+  },
+  {
+   "source": "arxiv:2202.05557__00",
+   "target": "arxiv:2202.09118__02",
+   "relation": "same_conjecture",
+   "via": null,
+   "sketches": [
+    "Both state the polynomial strengthening of Gyárfás–Sumner: for every forest H the class of H-free graphs is polynomially χ-bounded.",
+    "Both are the polynomial strengthening of Gyárfás–Sumner: for every forest H, the class of H-free graphs is polynomially χ-bounded."
+   ],
+   "confidence": "high",
+   "n_finders": 2
+  },
+  {
+   "source": "arxiv:2202.05557__00",
+   "target": "arxiv:2202.10412__00",
+   "relation": "same_conjecture",
+   "via": null,
+   "sketches": [
+    "Both state: for every forest H, H-free graphs satisfy χ ≤ f(ω) with f a polynomial (polynomial Gyárfás–Sumner).",
+    "Both state the polynomial Gyárfás–Sumner conjecture verbatim: for every forest H there is a polynomial f with χ(G) ≤ f(ω(G)) for every H-free graph G ('every forest is good')."
+   ],
+   "confidence": "high",
+   "n_finders": 2
+  },
+  {
+   "source": "arxiv:2202.05557__00",
+   "target": "arxiv:2302.08922__01",
+   "relation": "same_conjecture",
+   "via": null,
+   "sketches": [
+    "Both state that the Gyárfás–Sumner conjecture holds with a χ-bounding function polynomial in the clique number, i.e. polynomial χ-boundedness of T-free classes for every forest/tree T."
+   ],
+   "confidence": "high",
+   "n_finders": 1
+  },
+  {
+   "source": "arxiv:2202.05557__00",
+   "target": "opg:graphs_with_a_forbidden_induced_tree_are_chi_bounded",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "Polynomial χ-boundedness of H-free graphs for every forest H in particular provides some χ-bounding function for every tree T, which is exactly the Gyárfás–Sumner conjecture.",
+    "A polynomial χ-bounding function is in particular a χ-bounding function, and every tree is a forest, so polynomial χ-boundedness of H-free classes for all forests H implies the Gyárfás–Sumner conjecture."
+   ],
+   "confidence": "high",
+   "n_finders": 2
+  },
+  {
+   "source": "arxiv:1605.07411__00",
+   "target": "opg:graphs_with_a_forbidden_induced_tree_are_chi_bounded",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "The 'if' direction for oriented forests implies Gyárfás–Sumner: given a tree T, fix any orientation H; an undirected T-free graph G, arbitrarily oriented, contains no induced copy of H, so χ-boundedness of Forb(H) bounds χ(G) by f(ω). Aboulker et al. state this generalization explicitly."
+   ],
+   "confidence": "medium",
+   "n_finders": 1
+  },
+  {
+   "source": "arxiv:1605.07411__00",
+   "target": "arxiv:1605.07411__01",
+   "relation": "implies",
+   "via": "restriction",
+   "sketches": [
+    "Oriented stars are oriented forests, so χ-boundedness of Forb(S) for every oriented star S is the restriction of the 'if' direction of the general forest conjecture to stars."
+   ],
+   "confidence": "high",
+   "n_finders": 1
+  },
+  {
+   "source": "arxiv:2302.04986__00",
+   "target": "arxiv:2302.04986__01",
+   "relation": "implies",
+   "via": "restriction",
+   "sketches": [
+    "P_t is a forest, so η-boundedness of P_t-free graphs (t≥6) is the restriction of the η-boundedness conjecture for all forests H to H=P_t.",
+    "Paths P_t are forests, so the η-boundedness conjecture for P_t-free graphs (t ≥ 6) is Conjecture 1.8 restricted to H = P_t; the paper notes the cases t ≤ 5 are already proved.",
+    "P_t is a forest, so the conjecture that H-free graphs are eta-bounded for every forest H specializes to the class of P_t-free graphs (t>=6)."
+   ],
+   "confidence": "high",
+   "n_finders": 3
+  },
+  {
+   "source": "arxiv:2302.04986__00",
+   "target": "arxiv:2302.04986__04",
+   "relation": "implies",
+   "via": "restriction",
+   "sketches": [
+    "A disjoint union of two stars S_a∪S_b is a forest; the record itself asks whether this family satisfies the general forest conjecture (their Conjecture 1.8), so it is the H=S_a∪S_b instance.",
+    "The disjoint union of two stars S_a ∪ S_b is a forest; the record explicitly poses this as the instance of Conjecture 1.8 (η-boundedness of H-free graphs for every forest H) with H = S_a ∪ S_b.",
+    "The disjoint union of two stars S_a cup S_b is a forest, so eta-boundedness of (S_a cup S_b)-free graphs is the instance H = S_a cup S_b of the forest conjecture (the paper poses it as the open case of its Conjecture 1.8)."
+   ],
+   "confidence": "high",
+   "n_finders": 3
+  },
+  {
+   "source": "arxiv:1509.06563__00",
+   "target": "arxiv:1705.04609__00",
+   "relation": "same_conjecture",
+   "via": null,
+   "sketches": [
+    "Both assert: for all k (clique bound) and ℓ, graphs with ω<k and sufficiently large χ contain holes of ℓ consecutive lengths; the formulations 'contains K_κ or ℓ consecutive holes' and 'ω<k and χ≥n forces ν consecutive holes' are the same statement.",
+    "Both state: for all κ (clique bound) and ℓ/ν there exists c such that every graph with no K_κ and χ > c has holes of ℓ (resp. ν) consecutive lengths; 'no K_κ subgraph' matches 'no clique of cardinality k'. Same Scott–Seymour consecutive-holes conjecture in two papers of the series."
+   ],
+   "confidence": "high",
+   "n_finders": 2
+  },
+  {
+   "source": "opg:jaegers_modular_orientation_conjecture",
+   "target": "opg:mapping_planar_graphs_to_odd_cycles",
+   "relation": "implies",
+   "via": "restriction",
+   "sketches": [
+    "Planar duality: G planar with girth ≥ 4k iff its dual G* is 4k-edge-connected, and a modular (2k+1)-orientation of G* is equivalent (Tutte flow/coloring duality) to a circular (2+1/k)-coloring of G, i.e. a homomorphism to C_{2k+1}. So the mapping conjecture is Jaeger's conjecture restricted to duals of planar graphs.",
+    "Restrict Jaeger's conjecture to planar graphs and dualize: girth ≥ 4k of G means the planar dual G* is 4k-edge-connected; a modular (2k+1)-orientation of G* is a (2+1/k)-flow, which dualizes to a (2+1/k)-coloring of G, i.e. a homomorphism to C_{2k+1}. The OPG entry states this duality explicitly.",
+    "This is Jaeger's modular orientation conjecture restricted to planar graphs and dualized: for planar dual pairs, girth(G) = edge-connectivity(G*), a modular (2k+1)-orientation of G* is a (2+1/k)-flow, and a (2+1/k)-flow of G* corresponds to a (2+1/k)-circular-coloring of G, i.e. a homomorphism G -> C_{2k+1}. The OPG page states this duality explicitly."
+   ],
+   "confidence": "high",
+   "n_finders": 3
+  },
+  {
+   "source": "arxiv:1608.03040__00",
+   "target": "arxiv:1608.03040__03",
+   "relation": "implies",
+   "via": "restriction",
+   "sketches": [
+    "Tournaments are digraphs, so majority 3-colourability of every tournament is the restriction of the majority 3-colouring conjecture for all digraphs.",
+    "Majority 3-colourability of tournaments is the restriction of the majority 3-colouring conjecture for all digraphs to the subclass of tournaments.",
+    "Tournaments are digraphs, so the conjecture that every digraph has a majority 3-colouring immediately yields a majority 3-colouring of every tournament; the tournament question is the restriction of Conjecture (every digraph) to the class of tournaments.",
+    "Tournaments are digraphs, so 'every digraph has a majority 3-colouring' restricted to tournaments is exactly the source question."
+   ],
+   "confidence": "high",
+   "n_finders": 4
+  },
+  {
+   "source": "arxiv:1608.03040__00",
+   "target": "arxiv:1608.03040__04",
+   "relation": "implies",
+   "via": "restriction",
+   "sketches": [
+    "Eulerian digraphs are digraphs, so majority 3-colourability of Eulerian digraphs is a restriction of the conjecture that every digraph has a majority 3-colouring.",
+    "Majority 3-colourability of Eulerian digraphs is the restriction of the majority 3-colouring conjecture for all digraphs to the subclass of Eulerian digraphs.",
+    "Eulerian digraphs are digraphs, so the majority 3-colouring conjecture for all digraphs restricted to the class of Eulerian digraphs is exactly this problem.",
+    "Eulerian digraphs are a subclass of all digraphs, so the conjecture that every digraph has a majority 3-colouring immediately yields the Eulerian case.",
+    "Eulerian digraphs are digraphs, so the majority-3-colouring conjecture for all digraphs restricted to Eulerian digraphs is exactly the source question."
+   ],
+   "confidence": "high",
+   "n_finders": 5
+  },
+  {
+   "source": "arxiv:1608.03040__01",
+   "target": "arxiv:1608.03040__00",
+   "relation": "implies",
+   "via": "restriction",
+   "sketches": [
+    "The k=2 case of the 1/k-conjecture is a 3-colouring in which each vertex has at most half of its out-neighbours in its own colour, which is exactly a majority 3-colouring. (The general 1/k statement was disproved for some k, but the k=2 instance is the majority 3-colouring conjecture.)",
+    "Setting k=2 in the generalized conjecture ((k+1)-colouring with at most (1/k)deg⁺(v) same-coloured out-neighbours) gives exactly a majority 3-colouring (3 colours, at most half of out-neighbours same-coloured).",
+    "The k=2 instance of 'every digraph has a (k+1)-colouring with at most deg+(v)/k same-coloured out-neighbours' is precisely a majority 3-colouring; the paper states Conjecture 9 as the natural generalisation of Conjecture 2."
+   ],
+   "confidence": "high",
+   "n_finders": 3
+  },
+  {
+   "source": "opg:oriented_trees_in_n_chromatic_digraphs",
+   "target": "arxiv:1610.00876__03",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "Burr's conjecture gives: every digraph with chromatic number ≥ 2k-2 contains every oriented tree T of order k as a subdigraph; a copy of T is in particular a subdivision of T, so mader_χ(T) ≤ 2k-2. (Both statements use the chromatic number of the underlying graph.)",
+    "If every digraph with χ ≥ 2k−2 contains every oriented tree T of order k as a subdigraph (Burr's conjecture), then in particular it contains T itself, which is a subdivision of T, so mader_χ(T) ≤ 2k−2; the paper states Conjecture __03 is a direct consequence of Burr's conjecture.",
+    "Burr's conjecture: (dichromatic/chromatic) number >= 2k-2 forces every oriented tree of order k as a subdigraph. A copy of T is itself a (trivial) subdivision of T, hence mader_chi(T) <= 2k-2. Since chi >= dichromatic chi-vec, the implication holds under either reading of the colouring parameter.",
+    "Burr's conjecture: every digraph with chromatic number >= 2k-2 contains every oriented tree T of order k as a subdigraph. Since T is a subdivision of itself (and chi >= dichromatic number, covering either reading of the mader parameter), any such digraph contains a subdivision of T, so mader_chi(T) <= 2k-2.",
+    "Burr's conjecture gives every oriented tree T of order k as a subdigraph of any digraph with chi >= 2k-2; T is a trivial subdivision of itself, so mader_chi(T) <= 2k-2. The paper states this as a direct consequence of Burr's conjecture."
+   ],
+   "confidence": "high",
+   "n_finders": 5
+  },
+  {
+   "source": "arxiv:2305.15585__00",
+   "target": "arxiv:2305.15585__01",
+   "relation": "implies",
+   "via": "restriction",
+   "sketches": [
+    "A graph contains a cycle iff its degeneracy is ≥ 2, so 'some out-neighbourhood contains a cycle' is exactly the d=2 instance of 'some out-neighbourhood has degeneracy ≥ d' for graphs of sufficiently large chromatic number.",
+    "A graph contains a cycle iff it has degeneracy ≥ 2, so the cycle-in-out-neighbourhood conjecture is exactly the d=2 case of the question whether high χ forces an out-neighbourhood of degeneracy ≥ d (the paper says it is the case d=2 of Question 10).",
+    "A graph contains a cycle iff it has degeneracy >= 2, so the cycle-in-out-neighbourhood conjecture is exactly the d=2 case of the degeneracy question; the paper explicitly presents Conjecture 11 as the case d=2 of Question 10.",
+    "The d=2 instance: a graph of degeneracy >= 2 contains a subgraph of minimum degree 2 and hence a cycle (graphs of degeneracy <= 1 are exactly forests). So forcing out-neighbourhood degeneracy >= 2 at some vertex forces a cycle in G[N+_T(v)].",
+    "A graph has degeneracy >= 2 iff it contains a cycle, so the cycle-in-out-neighbourhood statement is exactly the d=2 instance of the degeneracy question; the authors present it as such."
+   ],
+   "confidence": "high",
+   "n_finders": 5
+  },
+  {
+   "source": "arxiv:1010.2472__00",
+   "target": "arxiv:1404.6356__00",
+   "relation": "same_conjecture",
+   "via": null,
+   "sketches": [
+    "Both records ask whether 4-colorability of graphs embedded in a fixed surface (other than the sphere) can be decided in polynomial time.",
+    "Both ask whether 4-colorability of graphs embedded in a fixed surface can be tested in polynomial time; the sphere case is trivial by the Four Color Theorem, so 'fixed surface' and 'fixed surface other than the sphere' state the same open problem."
+   ],
+   "confidence": "high",
+   "n_finders": 2
+  },
+  {
+   "source": "arxiv:1803.05396__00",
+   "target": "arxiv:1806.11196__00",
+   "relation": "same_conjecture",
+   "via": null,
+   "sketches": [
+    "Both ask for the complexity of 3-colouring on P_t-free graphs: whether it is polynomial-time solvable for every fixed t (the cases t ≤ 7 being known, both records target the remaining t ≥ 8).",
+    "Both pose the open complexity of 3-colourability on P_t-free graphs (known polytime for t ≤ 7): one asks to determine the complexity for t ≥ 8, the other asks whether it is polynomial for every fixed t; the open content is identical.",
+    "Both ask the complexity of 3-colourability on P_t-free graphs for large t: 1803.05396__00 asks to determine it for t >= 8 (smaller t known polynomial), 1806.11196__00 conjectures polynomial for every fixed t; the open content is identical."
+   ],
+   "confidence": "medium",
+   "n_finders": 3
+  },
+  {
+   "source": "arxiv:2311.05713__00",
+   "target": "arxiv:1806.11196__00",
+   "relation": "implies",
+   "via": "restriction",
+   "sketches": [
+    "A path P_t is a linear forest with one component; polynomial-time 3-Coloring on H-free graphs for every H whose components are paths restricts, at H=P_t, to polynomial-time 3-coloring of P_t-free graphs.",
+    "P_t is a graph all of whose components are paths, so 'if every component of H is a path then 3-Coloring on H-free graphs is polytime' yields, for H=P_t, a polynomial-time 3-coloring algorithm on P_t-free graphs for every t.",
+    "A single path P_t is a linear forest (every component a path), so polynomial 3-Coloring on H-free graphs for all path-component H restricted to H = P_t gives exactly the P_t-free 3-coloring question."
+   ],
+   "confidence": "high",
+   "n_finders": 3
+  },
+  {
+   "source": "arxiv:2311.05713__01",
+   "target": "arxiv:1803.05396__00",
+   "relation": "implies",
+   "via": "restriction",
+   "sketches": [
+    "The k-Coloring dichotomy problem for H-free graphs (all k≥3, all H) contains as the k=3, H=P_t instance the question of the complexity of 3-colourability of P_t-free graphs.",
+    "The full k-Coloring dichotomy for H-free graphs (all k >= 3, all H) instantiated at k = 3 and H = P_t determines the complexity of 3-colourability of P_t-free graphs for every t >= 8."
+   ],
+   "confidence": "high",
+   "n_finders": 2
+  },
+  {
+   "source": "arxiv:2004.07457__01",
+   "target": "opg:list_chromatic_number_and_maximum_degree_of_bipartite_graphs",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "Case (ii) with Δ_A=Δ_B=Δ and k_A=k_B=⌈C log Δ⌉ asserts every bipartite graph of maximum degree Δ is (k,k)-choosable, i.e. χ_ℓ(G) = O(log Δ), which is exactly the Alon–Krivelevich conjecture.",
+    "Case (ii) of the asymmetric conjecture with Δ_A=Δ_B=Δ and k_A=k_B=⌈C log Δ⌉ says every bipartite graph of maximum degree Δ is (⌈C log Δ⌉,⌈C log Δ⌉)-choosable, i.e. χ_ℓ(G) ≤ C log Δ + O(1), which is the Alon–Krivelevich conjecture.",
+    "Apply condition (ii) with Delta_A=Delta_B=Delta and k_A=k_B=ceil(C log Delta): the conjecture then says every bipartite graph of max degree Delta is (k_A,k_B)-choosable, i.e. chi_l(G) <= C log Delta + 1, which is the Alon-Krivelevich conjecture.",
+    "Condition (ii) of the source with Delta_A=Delta_B=Delta and k_A=k_B=ceil(C log Delta) asserts every bipartite graph of max degree Delta is (O(log Delta),O(log Delta))-choosable, i.e. chi_l <= c log Delta, the Alon-Krivelevich conjecture."
+   ],
+   "confidence": "high",
+   "n_finders": 4
+  },
+  {
+   "source": "arxiv:1802.03727__01",
+   "target": "arxiv:1802.03727__00",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "Given min degree d, the conjecture yields either K_{x2(d)} (whose separation choosability grows with x2) or an induced bipartite subgraph of min degree x3(d), which by Esperet–Kang–Thomassé's theorem in the same paper has separation choosability Ω(log x3(d)); ch_sep is monotone under induced subgraphs (pad with fresh disjoint colors), so ch_sep(G)→∞ with d.",
+    "Stated in the paper: Conjecture 1.4 (clique K_{x2(d)} or induced bipartite subgraph of min degree x3(d)) implies Conjecture 1.3, since ch_sep(K_{d+1}) ~ √d (Kratochvíl–Tuza–Voigt) handles the clique outcome and Theorem 1.2 gives ch_sep lower bounds from dense induced bipartite subgraphs; both outcomes force ch_sep → ∞ with min degree."
+   ],
+   "confidence": "high",
+   "n_finders": 2
+  },
+  {
+   "source": "arxiv:2407.18800__00",
+   "target": "arxiv:2407.18800__01",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "A graph is 5-choosable iff it contains no subgraph critical for 5-choosability, and 5-colorable iff it contains no 6-critical subgraph. If on the torus these two families of critical graphs coincide, then a toroidal graph is 5-choosable iff it is 5-colorable.",
+    "A toroidal graph is not 5-choosable iff it contains a subgraph critical for 5-choosability, and not 5-colorable iff it contains a 6-critical subgraph. If the two families of critical graphs coincide on the torus, the two failure conditions coincide, so 5-choosable iff 5-colorable."
+   ],
+   "confidence": "high",
+   "n_finders": 2
+  },
+  {
+   "source": "arxiv:2009.13319__00",
+   "target": "arxiv:2306.04710__00",
+   "relation": "same_conjecture",
+   "via": null,
+   "sketches": [
+    "Both ask to characterize the finite families F of digraphs such that digraphs with no induced member of F have bounded dichromatic number ('heroic sets' = 'χ⃗-finite families').",
+    "Both ask to characterize the finite sets F of digraphs such that F-free (induced) digraphs have bounded dichromatic number: 'chi-vec-finite families' (Question 1.1 of arXiv:2306.04710) and 'heroic sets' (Problem 1.2 of arXiv:2009.13319) are the same notion by definition."
+   ],
+   "confidence": "high",
+   "n_finders": 2
+  },
+  {
+   "source": "arxiv:2009.13319__00",
+   "target": "arxiv:2009.13319__01",
+   "relation": "implies",
+   "via": "restriction",
+   "sketches": [
+    "The conjectured characterization of heroic triples {K2↔, H, F} (H a hero, F an oriented forest) is the restriction of the general problem of characterizing heroic finite sets to sets of this special form."
+   ],
+   "confidence": "medium",
+   "n_finders": 1
+  },
+  {
+   "source": "arxiv:2302.04986__00",
+   "target": "opg:graphs_with_a_forbidden_induced_tree_are_chi_bounded",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "If η denotes the Hadwiger number, then by Kostochka–Thomason every graph satisfies η(G) ≥ cχ(G)/√log χ(G), so η(G) ≤ f(ω) forces χ(G) ≤ g(ω) for some g; hence η-boundedness of H-free graphs for every forest H implies Gyárfás–Sumner. Depends on η being the Hadwiger number in this record."
+   ],
+   "confidence": "low",
+   "n_finders": 1
+  },
+  {
+   "source": "arxiv:2601.15245__00",
+   "target": "arxiv:2601.15245__04",
+   "relation": "implies",
+   "via": "restriction",
+   "sketches": [
+    "Problem __00 asks the maximum fractional chromatic number of d-degenerate K_r-free graphs; __04 is the specific assertion that this maximum is o_r(d) for each r ≥ 4, so determining the value in __00 resolves __04.",
+    "Both problems concern the same extremal quantity: Problem 4.1 asks to determine the maximum fractional chromatic number of K_r-free d-degenerate graphs, and Problem 6.4 asks only whether this maximum is o_r(d) for r ≥ 4; a full determination resolves the yes/no question."
+   ],
+   "confidence": "medium",
+   "n_finders": 2
+  },
+  {
+   "source": "opg:petersen_coloring_conjecture",
+   "target": "opg:three_4_flows_conjecture",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "Classical implication recorded on the OPG page of the three 4-flows conjecture: a cycle-continuous map to the Petersen graph transfers the Petersen graph's partition of its edges into three sets whose complements have nowhere-zero 4-flows to any bridgeless graph.",
+    "Stated on the OPG page of the three 4-flows conjecture: it is a consequence of the Petersen coloring conjecture (the Petersen graph admits such a partition and the structure pulls back under Petersen colorings; the conjecture reduces to non-3-edge-colorable cubic graphs)."
+   ],
+   "confidence": "high",
+   "n_finders": 2
+  },
+  {
+   "source": "arxiv:2202.05557__00",
+   "target": "arxiv:2302.08922__01",
+   "relation": "implies",
+   "via": "restriction",
+   "sketches": [
+    "2302.08922__01 asserts polynomial χ-bounding for every fixed tree T; 2202.05557__00 asserts it for every forest H. Trees are forests, so the former is the restriction of the latter to connected H."
+   ],
+   "confidence": "high",
+   "n_finders": 1
+  },
+  {
+   "source": "arxiv:2202.05557__00",
+   "target": "arxiv:2303.11766__00",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "If G is H-free with no K_d(t) subgraph then ω(G) < dt, so χ(G) ≤ f(ω(G)) ≤ f(dt) is polynomial in t for fixed d, i.e. H is multibounding; the multibounding paper states that any forest satisfying the polynomial-bound conjecture is multibounding."
+   ],
+   "confidence": "high",
+   "n_finders": 1
+  },
+  {
+   "source": "arxiv:2303.11766__00",
+   "target": "opg:graphs_with_a_forbidden_induced_tree_are_chi_bounded",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "Setting t=1 in the multibounding property, K_d(1)=K_d, so H-free graphs with ω(G)<d satisfy χ ≤ f_d(1), a bound depending only on ω; hence every forest (in particular every tree) H gives a χ-bounded H-free class. The paper notes every multibounding graph satisfies Gyárfás–Sumner."
+   ],
+   "confidence": "high",
+   "n_finders": 1
+  },
+  {
+   "source": "arxiv:2202.10412__00",
+   "target": "arxiv:2202.09118__03",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "If every forest is good (H-free class polynomially χ-bounded), then in particular the disjoint union of any two good trees, being a forest, is good."
+   ],
+   "confidence": "high",
+   "n_finders": 1
+  },
+  {
+   "source": "arxiv:1605.07411__00",
+   "target": "opg:graphs_with_a_forbidden_induced_tree_are_chi_bounded",
+   "relation": "equivalent_to",
+   "via": null,
+   "sketches": [
+    "The paper states that an easy argument shows 'Forb(H) is χ-bounded iff H is a forest' is equivalent to the Gyárfás–Sumner conjecture: the 'only if' direction is Erdős's girth theorem, and the 'if' direction for forests follows from the tree case."
+   ],
+   "confidence": "high",
+   "n_finders": 1
+  },
+  {
+   "source": "arxiv:1608.03040__00",
+   "target": "arxiv:1608.03040__02",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "A majority 3-colouring has at most (1/2)deg⁺(v) same-coloured out-neighbours at every vertex, so its existence for every digraph answers affirmatively the question of whether some β < 1 works for 3 colours (with β = 1/2).",
+    "A majority 3-colouring is a 3-colouring with at most (1/2)deg+(v) same-coloured out-neighbours, so beta=1/2 < 1 answers the sublinear question affirmatively."
+   ],
+   "confidence": "high",
+   "n_finders": 2
+  },
+  {
+   "source": "opg:edge_list_coloring_conjecture",
+   "target": "arxiv:1902.07018__00",
+   "relation": "implies",
+   "via": "restriction",
+   "sketches": [
+    "The paper states the odd-k case of determining R_ℓ(K_{1,2},k) is equivalent to the List Colouring Conjecture for cliques of even order (whether χ'_ℓ(K_n)=χ'(K_n)=n−1 for even n); the full LCC for multigraphs thus settles it as its restriction to even complete graphs."
+   ],
+   "confidence": "high",
+   "n_finders": 1
+  },
+  {
+   "source": "arxiv:1802.04179__00",
+   "target": "arxiv:1802.04179__01",
+   "relation": "same_conjecture",
+   "via": null,
+   "sketches": [
+    "Both concern the same quantity — the supremum/infimum behaviour of fractional chromatic numbers of planar graphs with no C4 or C5 — one asking its value, the other whether the proven 11/3 bound is tight; a single determination problem stated twice.",
+    "Both entries, from the same paper, ask to determine the optimal constant sup{chi_f(G): G planar with no C4, C5}: __00 asks for the exact extremal value, __01 asks whether the proved bound 11/3 is that value or can be lowered. They are the same open question about one constant."
+   ],
+   "confidence": "medium",
+   "n_finders": 2
+  },
+  {
+   "source": "arxiv:2302.08922__01",
+   "target": "arxiv:2302.08922__00",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "Every induced copy of a tree T is in particular a path-induced copy, so graphs with no path-induced copy of (T,r) are T-free; polynomial Gyárfás–Sumner then bounds their chromatic number by a polynomial in ω(G) ≤ t, answering Question __00 affirmatively."
+   ],
+   "confidence": "medium",
+   "n_finders": 1
+  },
+  {
+   "source": "opg:fractional_hadwiger",
+   "target": "opg:seagull_problem",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "Part (a) of Fractional Hadwiger states chi_f(G) <= had(G). If alpha(G) <= 2 then chi_f(G) >= n/alpha(G) >= n/2, so had(G) >= n/2, and since had is an integer G has a K_{ceil(n/2)} minor, which is exactly the seagull statement."
+   ],
+   "confidence": "high",
+   "n_finders": 1
+  },
+  {
+   "source": "arxiv:1907.12999__00",
+   "target": "opg:seagull_problem",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "Suppose alpha(G) <= 2 and G has no K_{ceil(n/2)} minor. Apply the target with t+1 = ceil(n/2): alpha(G) >= n/(ceil(n/2)-1) > 2 for every n (check n even: n/(n/2-1) > 2; n odd: 2n/(n-1) > 2), a contradiction. So the alpha >= n/t conjecture implies the seagull problem (its alpha = 2 case).",
+    "Contrapositive with t = ⌈n/2⌉−1: if G has no K_{⌈n/2⌉} minor, it is K_{t+1}-minor-free, so α(G) ≥ n/t ≥ n/((n−1)/2) > 2, i.e. α(G) ≥ 3. Hence α(G) ≤ 2 forces a K_{⌈n/2⌉} minor, which is the Seagull problem (the known α=2 case of the Hadwiger-weakening α ≥ n/t).",
+    "Let G have no independent set of size 3 (alpha <= 2) and let h be its Hadwiger number; G is K_{h+1}-minor-free, so the conjecture gives 2 >= alpha >= n/h, hence h >= n/2, i.e. G has a K_{ceil(n/2)} minor. The seagull problem is the alpha=2 case of the alpha >= n/t conjecture."
+   ],
+   "confidence": "high",
+   "n_finders": 3
+  },
+  {
+   "source": "arxiv:1610.00876__00",
+   "target": "opg:subdivision_of_a_transitive_tournament_in_digraphs_with_large_outdegree",
+   "relation": "equivalent_to",
+   "via": null,
+   "sketches": [
+    "delta^0(D) >= f implies delta^+(D) >= f, so Mader's out-degree conjecture directly gives the semidegree version. Conversely the source paper (Conjecture 3 context) proves mader_{delta^+}(TT_k) <= mader_{delta^0}(TT_{2k}), so the semidegree version implies the out-degree version; the paper states the two are equivalent.",
+    "Digraphs with min semidegree δ0≥f form a subclass of those with min out-degree δ+≥f, so Mader's out-degree conjecture implies the semidegree version. Conversely the paper (1610.00876) proves mader_{δ+}(TT_k) ≤ mader_{δ0}(TT_{2k}), and states explicitly that Conjecture 3 is equivalent to Mader's Conjecture 2 (the OPG statement).",
+    "Digraphs with min semidegree >= f form a subclass of those with min out-degree >= f, so Mader's out-degree conjecture implies the semidegree version. Conversely the paper (arXiv:1610.00876) proves mader_{delta+}(TT_k) <= mader_{delta0}(TT_{2k}), so the semidegree version implies the out-degree version; the paper states the two conjectures are equivalent."
+   ],
+   "confidence": "high",
+   "n_finders": 3
+  },
+  {
+   "source": "arxiv:2204.10119__01",
+   "target": "arxiv:2204.10119__00",
+   "relation": "implies",
+   "via": "restriction",
+   "sketches": [
+    "A non-null 6-regular graph has minimum degree exactly 6 and maximum degree 6 <= 8, so it satisfies the hypotheses of the statement 'min degree >= 6 and max degree <= 8 forces a K_6 minor'; the 6-regular conjecture is the regular special case.",
+    "A 6-regular graph has minimum degree 6 and maximum degree 6 ≤ 8, so the class of Conjecture 1.3 is contained in the class of the parenthetical strengthening (δ≥6, Δ≤8), with identical conclusion (K6 minor). The paper itself calls the latter 'a stronger open belief than Conjecture 1.3'.",
+    "A 6-regular graph has minimum degree 6 and maximum degree 6 <= 8, so the min-degree-6/max-degree-8 statement restricted to 6-regular graphs is Conjecture 1.3; the paper calls it a stronger belief."
+   ],
+   "confidence": "high",
+   "n_finders": 3
+  },
+  {
+   "source": "opg:jorgensens_conjecture",
+   "target": "opg:forcing_a_k_6_minor",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "Jorgensen implies the second half of the target (every 7-connected graph has a K_6 minor): a 7-connected graph with no K_6 minor would be apex, but deleting the apex vertex leaves a 6-connected planar graph, impossible since planar graphs are at most 5-connected. The first half (min degree 7) is not covered, so this is an implication to only one of the entry's two statements."
+   ],
+   "confidence": "medium",
+   "n_finders": 1
+  },
+  {
+   "source": "opg:high_connectivity_no_k_n",
+   "target": "opg:jorgensens_conjecture",
+   "relation": "implies",
+   "via": "restriction",
+   "sketches": [
+    "The n = 6 instance of the target says every sufficiently large 6-connected K_6-minor-free graph has 1 vertex whose deletion leaves a planar graph, i.e. is apex — exactly Jorgensen restricted to large graphs. Caveat: the target has a 'sufficiently large' hypothesis, so it recovers Jorgensen only for large graphs (the known-proved regime).",
+    "The n=6 instance of Thomas's problem states every sufficiently large 6-connected K6-minor-free graph has 6−5=1 vertex whose deletion leaves a planar graph, i.e. is apex — Jørgensen's conjecture restricted to sufficiently large graphs. Caveat: the 'sufficiently large' hedge means the target only yields Jørgensen up to finitely many exceptions (this large-graph case is the proven one, per KNTW)."
+   ],
+   "confidence": "medium",
+   "n_finders": 2
+  },
+  {
+   "source": "arxiv:2201.09115__01",
+   "target": "opg:list_hadwiger_conjecture",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "K_{t-1,t-1} has a K_t minor (contract t-2 disjoint edges of a perfect matching; the two leftover vertices from opposite sides are adjacent and complete to the contracted clique). Hence K_t-minor-free graphs are K_{t-1,t-1}-minor-free, and the target of Question 2 with s = t' = t-1 gives chi_l(G) <= 2(t-1)+(t-1) = 3t-3, i.e. List Hadwiger with c = 3."
+   ],
+   "confidence": "high",
+   "n_finders": 1
+  },
+  {
+   "source": "arxiv:2206.13635__00",
+   "target": "arxiv:2206.13635__01",
+   "relation": "implies",
+   "via": "restriction",
+   "sketches": [
+    "The t = 3 instance of h(t) = ceil(3(t-1)/2) gives h(3) = 3, i.e. every K_3-minor-free hypergraph is 3-colorable, which is exactly the source problem.",
+    "Setting t=3 in Conjecture 2 gives h(3)=⌈3·2/2⌉=3, i.e. every K3-minor-free hypergraph is 3-colorable, which is precisely Problem 1. The paper states Problem 1 'isolates the smallest open case of Conjecture 2'.",
+    "Conjecture 2 asserts every K_t-minor-free hypergraph is ⌈3(t−1)/2⌉-colorable for all t≥2; setting t=3 gives ⌈3·2/2⌉=3, i.e. every K_3-minor-free hypergraph is 3-colorable, which is exactly Problem 1. The paper itself states Problem 1 isolates the smallest open case of Conjecture 2.",
+    "Setting t=3 in h(t)=ceil(3(t-1)/2) gives h(3)=3, i.e. every K_3-minor-free hypergraph is 3-colorable; the target conjecture thus contains the K_3 question as its t=3 instance."
+   ],
+   "confidence": "high",
+   "n_finders": 4
+  },
+  {
+   "source": "arxiv:2305.16258__00",
+   "target": "arxiv:2001.01607__00",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "If (even hole, diamond)-free graphs have tree-alpha <= a, take a tree decomposition witnessing it for an (even hole, K_4, diamond)-free graph: each bag has independence number <= a and clique number <= 3, so by Ramsey each bag has at most R(a+1,4) vertices, giving bounded treewidth — the target's question.",
+    "(even hole, K4, diamond)-free graphs are (even hole, diamond)-free, so bounded tree-α applies. In a tree-decomposition with bags of independence number ≤ a, K4-freeness bounds each bag by Ramsey R(a+1,4), giving bounded treewidth, hence a positive answer to the (even hole, K4, diamond)-free treewidth question.",
+    "(even hole, K_4, diamond)-free graphs form a subclass of (even hole, diamond)-free graphs with omega <= 3. If tree-independence number is bounded by t, each bag of the decomposition has independence <= t and clique < 4, hence size < R(4,t+1) by Ramsey, so treewidth is bounded (and bounded treewidth implies bounded cliquewidth)."
+   ],
+   "confidence": "high",
+   "n_finders": 3
+  },
+  {
+   "source": "arxiv:2203.06775__00",
+   "target": "arxiv:2001.01607__00",
+   "relation": "implies",
+   "via": "restriction",
+   "sketches": [
+    "Every C_4, theta, prism and even wheel contains an even hole (C_4 is one; for theta/prism, two of the three connecting paths share parity, giving an even hole; an even wheel has a sector cycle of even length). Hence (even hole, K_4, diamond)-free graphs form a subclass of the (C_4, diamond, theta, prism, even wheel, K_4)-free class C*_4, so the t = 4 case of the target answers the source.",
+    "C4, thetas, prisms and even wheels all contain even holes (C4 itself; two same-parity paths of a theta; an induced square of the prism; an even sector of an even wheel), so (even hole, K4, diamond)-free graphs form a subclass of C*_4 = (C4, diamond, theta, prism, even wheel, K4)-free graphs. Bounded treewidth for C*_t (t=4) thus answers the source question.",
+    "Even-hole-free graphs contain no C_4, theta, prism or even wheel: C_4 is an even hole; in a theta/prism two of the three paths share parity giving an even induced cycle; in an even wheel either some sector plus two spokes or the rim itself is an even hole. So (even hole, K_4, diamond)-free is contained in (C_4,diamond,theta,prism,even wheel,K_4)-free, and the t=4 case of the source bounds its treewidth.",
+    "Even-hole-free graphs contain no C4, theta, prism, or even wheel (each contains an even hole), so (even hole, K4, diamond)-free graphs lie in the class C*_4 = (C4, diamond, theta, prism, even wheel, K4)-free; bounded treewidth for C*_t at t=4 gives the source (and bounded cliquewidth follows)."
+   ],
+   "confidence": "high",
+   "n_finders": 4
+  },
+  {
+   "source": "arxiv:2109.01310__00",
+   "target": "arxiv:2305.16258__01",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "(Even hole, K_t)-free graphs contain no induced K_{t,t} (it contains C_4), no induced subdivision of a wall and no line graph of one (both contain even holes, via the parity argument on theta/prism subconfigurations), so the four-family conjecture yields tw(G) = O(log n) for (even hole, K_t)-free graphs. This motivation is stated in the source paper."
+   ],
+   "confidence": "high",
+   "n_finders": 1
+  },
+  {
+   "source": "arxiv:2008.05504__01",
+   "target": "arxiv:2008.05504__00",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "An even-hole-free graph contains no induced k-wall and no line graph of a k-wall for k >= 3 (both contain even holes), so if max-degree-d graphs of treewidth >= f_d(k) must contain one of these, even-hole-free graphs of degree <= d have treewidth < f_d(3). This is the derivation used in the paper itself.",
+    "If bounded-degree graphs of huge treewidth must contain an induced k×k wall or the line graph of one, then a bounded-degree even-hole-free graph has bounded treewidth, since walls (whose bricks are 6-holes) and line graphs of walls contain even holes. The paper states the wall conjecture 'formally implies Conjecture 2' (the even-hole-free degree/treewidth statement)."
+   ],
+   "confidence": "high",
+   "n_finders": 2
+  },
+  {
+   "source": "arxiv:1606.06810__01",
+   "target": "opg:number_of_cliques_in_minor_closed_classes",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "A K_t minor of G yields a K_t subdivision only in the other direction, but the containment needed here holds: any graph containing a K_t-subdivision contains a K_t-minor, so K_t-minor-free graphs are K_t-subdivision-free. The conjectured bound 3^{2t/3+o(t)} n for the latter class then gives c^t n cliques for K_t-minor-free graphs, answering the target.",
+    "A graph with no K_t minor has no K_t subdivision (a subdivision yields a minor), so K_t-minor-free graphs lie in the K_t-subdivision-free class. The conjectured bound 3^{2t/3+o(t)}·n for subdivision-free graphs is of the form c^t·n, answering the OPG question (already answered affirmatively by Lee–Oum per the OPG update, consistent with this route).",
+    "A K_t-subdivision yields a K_t-minor, so K_t-minor-free graphs contain no K_t-subdivision; the conjectured bound 3^{2t/3+o(t)}n on cliques in K_t-subdivision-free graphs therefore gives c^t·n (c = 3^{2/3}+o(1)) for K_t-minor-free graphs, answering the OPG question affirmatively (the target is already solved by Lee–Oum and Fox–Wei).",
+    "A K_t-subdivision would give a K_t-minor, so K_t-minor-free graphs are K_t-subdivision-free. The conjectured bound 3^{2t/3+o(t)}·n on cliques in K_t-subdivision-free graphs is <= c^t·n for a fixed c (absorbing the 3^{o(t)} factor), answering the OPG question affirmatively."
+   ],
+   "confidence": "high",
+   "n_finders": 4
+  },
+  {
+   "source": "opg:reconstruction_conjecture",
+   "target": "opg:edge_reconstruction_conjecture",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "Classical implication (Greenwell 1971): a reconstructible graph with at least four edges is edge-reconstructible, since the vertex deck can be computed from the edge deck's information via counting arguments; hence the Reconstruction Conjecture implies the Edge Reconstruction Conjecture.",
+    "Classical result (Greenwell): every vertex-reconstructible graph with at least 4 edges is edge-reconstructible; the OPG edge-reconstruction page states 'if a graph is vertex reconstructible then it is edge reconstructible'. So the Reconstruction Conjecture implies the Edge Reconstruction Conjecture.",
+    "Greenwell (1971): every vertex-reconstructible graph without isolated vertices is edge-reconstructible, and isolated vertices are trivially handled from the edge deck's order data; hence the Reconstruction Conjecture implies the Edge Reconstruction Conjecture for graphs with at least 4 edges."
+   ],
+   "confidence": "high",
+   "n_finders": 3
+  },
+  {
+   "source": "arxiv:1909.08426__03",
+   "target": "arxiv:1909.08426__02",
+   "relation": "implies",
+   "via": "restriction",
+   "sketches": [
+    "P(t,t,t,t) is exactly P_l(t) with l = 4, so 'MIS is FPT in P(t,t,t,t)-free graphs for all t' is the l = 4 instance of 'MIS is FPT in P_l(t)-free graphs for all t and l'.",
+    "P(t,t,t,t) = P_4(t) is the length-4 instance of the clique-substituted path P_l(t); the conjecture for all t and l restricted to l = 4 is exactly 1909.08426__02.",
+    "P_l(t) with l=4 is precisely P(t,t,t,t), so FPT MIS on P_l(t)-free graphs for all l,t restricted to l=4 gives the source verbatim."
+   ],
+   "confidence": "high",
+   "n_finders": 3
+  },
+  {
+   "source": "arxiv:1909.08426__00",
+   "target": "arxiv:1803.05396__01",
+   "relation": "implies",
+   "via": "restriction",
+   "sketches": [
+    "The dichotomy conjecture asserts MIS in H-free graphs is in P iff H is a path P_l or a spider S_{i,j,k}; its 'if' direction for H = P_t (t >= 7) answers the source question (poly-time MIS on P_t-free graphs) affirmatively.",
+    "The dichotomy conjecture asserts MIS is in P on H-free graphs precisely when H is a path or subdivided claw; paths P_t are in the tractable list, so its truth gives polynomial-time MIS on P_t-free graphs for every t ≥ 7, resolving 1803.05396__01 affirmatively.",
+    "The dichotomy conjecture asserts MIS is in P for H-free graphs whenever H is a path; taking H = P_t for each t >= 7 gives polynomial-time MIS on P_t-free graphs, exactly the question of 1803.05396__01.",
+    "The dichotomy conjecture puts every path P_l in the polynomial-time list for MIS on H-free graphs, so it implies the affirmative resolution of whether MIS is polynomial on P_t-free graphs for t >= 7 (the target is phrased as a determination question; this settles it positively)."
+   ],
+   "confidence": "high",
+   "n_finders": 4
+  },
+  {
+   "source": "arxiv:1912.11246__01",
+   "target": "arxiv:2407.08927__00",
+   "relation": "same_conjecture",
+   "via": null,
+   "sketches": [
+    "Both entries pose the open complexity of maximum (weight) independent set on even-hole-free graphs; one asks for a polynomial algorithm for the weighted version, the other records the unweighted complexity as unknown — the same underlying open problem.",
+    "Both nodes pose the open question of the complexity of maximum (weight) independent set on even-hole-free graphs: 2407.08927 asks whether a polynomial-time algorithm exists for MWIS, 1912.11246 states the complexity of MIS on the same class is unknown."
+   ],
+   "confidence": "high",
+   "n_finders": 2
+  },
+  {
+   "source": "arxiv:1903.04761__00",
+   "target": "arxiv:2003.05185__00",
+   "relation": "same_conjecture",
+   "via": null,
+   "sketches": [
+    "Both ask for a combinatorial (non-ellipsoid) polynomial-time algorithm for maximum weight independent set in perfect graphs; the target additionally lists MC/MWC and the C_4-free restriction, but it is the same well-known open problem.",
+    "Both nodes pose the same well-known open problem: find a combinatorial (non-ellipsoid) polynomial-time algorithm for maximum (weight) independent set in perfect graphs, currently solvable only via Grötschel–Lovász–Schrijver.",
+    "Both restate the Grotschel-Lovasz-Schrijver open problem of a combinatorial (non-ellipsoid) poly-time algorithm for maximum (weight) independent set in perfect graphs; 1903.04761 additionally mentions the clique variants and the C4-free subcase."
+   ],
+   "confidence": "high",
+   "n_finders": 3
+  },
+  {
+   "source": "arxiv:1903.04761__00",
+   "target": "arxiv:1907.01083__00",
+   "relation": "same_conjecture",
+   "via": null,
+   "sketches": [
+    "Both record the same open problem: find a combinatorial polynomial-time algorithm for maximum independent set on perfect graphs (avoiding the Grotschel-Lovasz-Schrijver ellipsoid method).",
+    "Both records pose the identical well-known open problem: find a combinatorial (non-ellipsoid) polynomial-time algorithm for maximum independent set in perfect graphs (1903.04761 additionally lists the equivalent-by-complementation clique/weighted variants)."
+   ],
+   "confidence": "high",
+   "n_finders": 2
+  },
+  {
+   "source": "arxiv:1812.09752__00",
+   "target": "arxiv:2107.05995__00",
+   "relation": "implies",
+   "via": "restriction",
+   "sketches": [
+    "The target is a conjunction of three bounds on the hat guessing number; its item (ii), HG(G) <= f_2(d) for d-degenerate G, is verbatim the source statement. So the target implies the source.",
+    "Node 1812.09752__00 bundles three questions; its part (ii) — existence of f2 with HG(G) ≤ f2(d) for d-degenerate G — is exactly node 2107.05995__00. If the bundle is true, the degeneracy bound holds (and it in turn implies part (i), since degeneracy ≤ Δ).",
+    "Part (ii) of the compound question in 1812.09752 asks for exactly the statement conjectured in 2107.05995: a function f2 with HG(G) ≤ f2(d) for every d-degenerate G. A positive answer to the full three-part question therefore yields the degeneracy conjecture verbatim (the two records coincide on this conjunct; 1812.09752 additionally asks for a max-degree bound, known via LLL, and a min-degree lower bound).",
+    "The source ('there is f with HG(G) <= f(d) for every d-degenerate G') is verbatim part (ii) of the target's three-part Problem 1.4 (whose part (i), the max-degree bound, is already known via the local lemma); the two records pose the same degeneracy-bound question, the target bundling it with a min-degree lower-bound variant.",
+    "Part (ii) of the three-part question of 1812.09752 (existence of f_2 with HG(G) <= f_2(d) for d-degenerate G) is verbatim the statement of 2107.05995__00, so the bundled conjecture implies it."
+   ],
+   "confidence": "high",
+   "n_finders": 5
+  },
+  {
+   "source": "arxiv:2005.12861__00",
+   "target": "arxiv:1904.12273__00",
+   "relation": "implies",
+   "via": "restriction",
+   "sketches": [
+    "The source asks for a poly-time test for an induced s-t path of length >= d(s,t)+3, which is exactly the k = 3 instance of the target's question for general fixed k > 1.",
+    "Detecting an induced s-t path of length at least d(s,t)+3 is exactly the k = 3 instance of the fixed-k induced detour question (induced uv-path of length >= d(u,v)+k for fixed k > 1).",
+    "The source is exactly the k=3 instance of the target (poly-time detection of an induced u-v path of length >= d(u,v)+k for fixed k); the target's paper notes the question is open even for k=3."
+   ],
+   "confidence": "high",
+   "n_finders": 3
+  },
+  {
+   "source": "arxiv:1802.03727__02",
+   "target": "arxiv:1802.03727__03",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "Graphs of girth >= g_0 >= 4 are triangle-free, so the source gives an induced bipartite subgraph of minimum degree >= C log d; choosing d_0 with C log d_0 >= 3 yields the target (girth-g_0, min-degree-d_0 graphs contain an induced bipartite subgraph of min degree 3), even with g_0 = 4.",
+    "Take g0=4 (girth ≥ 4 = triangle-free) and d0 with C·log d0 ≥ 3. Then any graph of girth ≥ g0 and min degree ≥ d0 is triangle-free with min degree ≥ d0, so by the triangle-free conjecture it contains an induced bipartite subgraph of min degree ≥ C log d0 ≥ 3.",
+    "Girth ≥ 4 means triangle-free, so Conjecture 1.5 applied with g_0 = 4 and d_0 chosen so that C·log d_0 ≥ 3 yields a bipartite induced subgraph of minimum degree ≥ 3, which is exactly Conjecture 1.6's conclusion. (Both from the same paper; 1.5 is now solved.)",
+    "Girth >= 4 implies triangle-free. Apply the C log d statement with d0 chosen so C log d0 >= 3: any graph of girth >= 4 and min degree >= d0 contains an induced bipartite subgraph of min degree >= 3, which is the target with g0=4."
+   ],
+   "confidence": "high",
+   "n_finders": 4
+  },
+  {
+   "source": "arxiv:1701.05597__00",
+   "target": "arxiv:1609.00314__00",
+   "relation": "implies",
+   "via": "restriction",
+   "sketches": [
+    "Forests of lanterns are (multi)graphs, and widespread means pervasive (in particular in the ideal of all graphs). If every multigraph is widespread then every forest of lanterns is pervasive, which is the source conjecture. Restriction of the universally quantified class."
+   ],
+   "confidence": "medium",
+   "n_finders": 1
+  },
+  {
+   "source": "arxiv:2002.00496__02",
+   "target": "arxiv:2002.00496__01",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "The conjecture 'H is unavoidable iff H is a minor of a graph from Kelly's construction' is a proposed complete characterization; if true it resolves the problem of fully characterizing unavoidable graphs in cover graphs of high-dimensional posets."
+   ],
+   "confidence": "medium",
+   "n_finders": 1
+  },
+  {
+   "source": "arxiv:1507.08208__00",
+   "target": "arxiv:1907.11600__00",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "For a tree T, the max degree Delta_T is at most the number m of leaves, so (taking f nondecreasing) an f(m)-edge-connected graph is f(Delta_T)-edge-connected. Hence the (now disproved) Delta-version implies the leaf-count version, which was proposed as the surviving weakening.",
+    "For any tree T, Δ_T ≤ m (max degree of a tree is at most its number of leaves). If f(Δ_T)-edge-connectivity plus min degree f(|E(T)|) suffices for T-decomposition, then taking f monotone, f(m)-edge-connectivity plus the same min-degree condition also suffices, which is the leaf-count conjecture of 1907.11600 with the same f.",
+    "A tree with m leaves has maximum degree Delta_T <= m. Taking f'(m) = max_{x<=m} f(x) (wlog f monotone), every f'(m)-edge-connected graph is f(Delta_T)-edge-connected, so the Delta_T-parameterized decomposition conjecture implies the leaf-parameterized one (identical divisibility and min-degree side conditions).",
+    "A tree with m leaves has maximum degree Delta_T <= m, so (taking f monotone) f(Delta_T)-edge-connectivity is implied by f(m)-edge-connectivity: any graph satisfying the leaf-version hypotheses satisfies the Delta-version hypotheses and is T-decomposable. (The Delta-version was disproved; the leaf-version is posed as its repair.)"
+   ],
+   "confidence": "high",
+   "n_finders": 4
+  },
+  {
+   "source": "arxiv:2509.07174__00",
+   "target": "arxiv:2509.08762__00",
+   "relation": "same_conjecture",
+   "via": null,
+   "sketches": [
+    "Both assert the coarse Menger property for graphs embeddable in a fixed surface: k+1 pairwise c-distant S-T paths or a set of <= k vertices whose l-balls cover all S-T paths. One entry is the informal 'holds for bounded genus' phrasing of the other's Conjecture 1.2.",
+    "Both assert the coarse Menger conjecture for graphs embeddable on a fixed surface: 2509.07174 gives the precise form (k+1 pairwise c-distant S–T paths or ≤k vertices whose ℓ-balls cover all S–T paths), and 2509.08762 informally proposes the identical restriction 'coarse Menger holds for graphs of bounded genus'. Bounded genus = embeddable on a fixed surface.",
+    "Bounded genus means embeddable in some fixed surface S, and the coarse Menger conjecture is exactly the dichotomy stated in 2509.07174__00: k+1 pairwise c-distant S-T paths, or a set X of size <= k whose distance-ell balls meet all S-T paths. Both entries assert this dichotomy for graphs of bounded genus.",
+    "Both assert the (weak, l-covering form of the) coarse Menger conjecture for graphs embeddable in a fixed surface: k+1 pairwise c-distant S-T paths or a set X of <= k vertices whose distance-l neighbourhood meets all S-T paths. 'Bounded genus' = embeddable in a fixed surface. Possible mismatch only in which variant (l dependence) each paper intends."
+   ],
+   "confidence": "high",
+   "n_finders": 4
+  },
+  {
+   "source": "opg:hamiltonian_cycles_in_line_graphs_of_infinite_graphs",
+   "target": "opg:hamiltonian_cycles_in_line_graphs",
+   "relation": "implies",
+   "via": "restriction",
+   "sketches": [
+    "Item 2 of the target states: if L(G) of a locally finite graph is 4-connected then L(G) is hamiltonian. Finite graphs are locally finite and Hamilton circles coincide with Hamilton cycles there, so the finite Thomassen conjecture (the source) is its finite special case; the OPG page itself notes item 2 restricted to finite graphs is Thomassen's conjecture.",
+    "The second part of the infinite conjecture asserts: for every locally finite graph G with L(G) 4-connected, L(G) is hamiltonian. Finite graphs are locally finite (Hamilton circle = Hamilton cycle), and the OPG page itself notes 'the second part is widely open even in the finite case, where it was proposed by Thomassen'. So Thomassen's conjecture is the finite restriction.",
+    "Finite graphs are locally finite, and for a finite graph a Hamilton circle in the Freudenthal compactification is exactly a Hamilton cycle; so the second part of the infinite conjecture (L(G) 4-connected implies L(G) hamiltonian for locally finite G) restricted to finite graphs is precisely Thomassen's conjecture that 4-connected line graphs are hamiltonian.",
+    "Finite graphs are locally finite, and every line graph is L(G) for some graph G; so the second bullet of the infinite conjecture ('if L(G) of a locally finite G is 4-connected then L(G) is hamiltonian') restricted to finite G is exactly Thomassen's conjecture. Hinges on reading 'locally finite' as including finite graphs, as intended in this Georgakopoulos-style extension.",
+    "Finite graphs are locally finite and a Hamilton circle of a finite graph is a Hamilton cycle, so the infinite conjecture's second clause (L(G) 4-connected implies Hamiltonian for locally finite G) restricted to finite G is exactly Thomassen's conjecture."
+   ],
+   "confidence": "high",
+   "n_finders": 5
+  },
+  {
+   "source": "arxiv:2004.14789__00",
+   "target": "arxiv:2006.09877__01",
+   "relation": "same_conjecture",
+   "via": null,
+   "sketches": [
+    "Both state the same open question: do all graph classes of polynomial expansion have bounded twin-width? One is phrased as an informal claim, the other as a question, by the same line of work.",
+    "Both nodes state verbatim the question whether every graph class of polynomial expansion has bounded twin-width (posed independently in the two twin-width papers).",
+    "Both nodes state verbatim the question whether every graph class of polynomial expansion has bounded twin-width."
+   ],
+   "confidence": "high",
+   "n_finders": 3
+  },
+  {
+   "source": "arxiv:2604.13700__00",
+   "target": "arxiv:2604.13700__01",
+   "relation": "same_conjecture",
+   "via": null,
+   "sketches": [
+    "c_r is the optimal constant with directed tree-width >= c_r for r-regular digraphs, so determining lim c_r/r is the same question as determining the best epsilon with dtw(D) >= epsilon r; both entries are alternative phrasings from the same paper."
+   ],
+   "confidence": "medium",
+   "n_finders": 1
+  },
+  {
+   "source": "arxiv:2503.05562__00",
+   "target": "arxiv:2503.05562__01",
+   "relation": "same_conjecture",
+   "via": null,
+   "sketches": [
+    "Both pose the domination-to-packing ratio problem: the first asks, per class G, whether a constant c_G with gamma/rho <= c_G exists; the second asks to characterize exactly those classes. Same underlying open problem stated at two levels of generality."
+   ],
+   "confidence": "medium",
+   "n_finders": 1
+  },
+  {
+   "source": "arxiv:2511.03864__01",
+   "target": "arxiv:2511.03864__00",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "A K_{t,t}-free graph (as subgraph or induced) has induced biclique number < t; so if tree-alpha is polynomial in the induced biclique number on classes of bounded induced matching treewidth (target of source), then K_{t,t}-free graphs with tree-mu <= mu satisfy tree-alpha <= p_mu(t), answering the other question.",
+    "Graphs with tree-mu <= mu form a class of bounded induced matching treewidth, and K_{t,t}-free graphs have induced biclique number < t; so a polynomial bound of tree-alpha in the induced biclique number on bounded tree-mu classes yields tree-alpha <= p_mu(t) for K_{t,t}-free graphs with tree-mu <= mu."
+   ],
+   "confidence": "medium",
+   "n_finders": 2
+  },
+  {
+   "source": "arxiv:2103.08698__01",
+   "target": "arxiv:2105.01780__00",
+   "relation": "implies",
+   "via": "restriction",
+   "sketches": [
+    "Weighted Minimum Vertex Cover is a monotone distance-1 minimization problem expressible in FO, so a PTAS for all monotone FO minimization problems on (efficiently) fractionally treewidth-fragile classes would give the asked PTAS for weighted MVC; the target's own context names weighted vertex cover as its simplest unresolved case.",
+    "Weighted Minimum Vertex Cover is a monotone FO-definable minimization problem, so a PTAS for all such problems on efficiently fractionally treewidth-fragile classes (target) yields the PTAS asked for in the source; 2103.08698 itself names weighted vertex cover in fragile classes as 'a concrete simplest case' of its question.",
+    "Weighted Minimum Vertex Cover is a monotone minimization problem expressible in first-order logic (distance-1 domination of edges), so the PTAS clause of 2103.08698__01 for fractionally treewidth-fragile classes restricted to this one problem is exactly 2105.01780__00 (same author's framing).",
+    "Weighted Minimum Vertex Cover is a monotone distance-1 minimization problem expressible in first-order logic, so a PTAS for all FO monotone minimization problems on fractionally treewidth-fragile classes covers it; the sublinear-separator variant follows additionally if such classes are (efficiently) fractionally treewidth-fragile (open companion question 2103.08698__00). Caveats: 'efficiently' fragile and weight handling.",
+    "Weighted Minimum Vertex Cover is a monotone FO-definable minimization problem, so a PTAS for all such problems on fractionally treewidth-fragile classes settles the concrete fragile-class case the target asks about (2103.08698 names weighted vertex cover as its simplest open instance)."
+   ],
+   "confidence": "high",
+   "n_finders": 5
+  },
+  {
+   "source": "opg:subdivision_of_a_transitive_tournament_in_digraphs_with_large_outdegree",
+   "target": "arxiv:1610.00876__01",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "Every oriented tree T on k vertices is a DAG, hence a subgraph of TT_k (extend an acyclic ordering to a linear order). A subdivision of TT_k contains a subdivision of every subgraph of TT_k, so δ+(D)≥f(k) forcing a TT_k-subdivision forces a subdivision of T; thus every oriented tree is δ+-maderian. The paper poses Conjecture 4 as exactly this weaker step toward Mader's conjecture.",
+    "Every oriented tree of order k is a subdigraph of TT_k (embed along a topological order; TT_k has all forward arcs), and a subdivision of TT_k contains a subdivision of each of its subdigraphs. So min out-degree >= f(k) forcing a TT_k-subdivision forces a subdivision of every oriented tree of order k, i.e. all oriented trees are delta+-maderian."
+   ],
+   "confidence": "high",
+   "n_finders": 2
+  },
+  {
+   "source": "arxiv:1802.03727__01",
+   "target": "arxiv:1802.03727__03",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "Choose d0 with x2(d0) ≥ 3 and x3(d0) ≥ 3, and g0=4. A graph of girth ≥ 4 has no K3, hence no K_{x2(d0)}, so the second outcome of Conjecture 1.4 holds: an induced bipartite subgraph of min degree x3(d0) ≥ 3.",
+    "A graph of girth >= 4 has no K_3, hence no K_{x2(d)} once x2(d) >= 3. Choosing d0 with x2(d0)>=3 and x3(d0)>=3, the source's dichotomy forces an induced bipartite subgraph of min degree >= 3, giving the target with g0=4."
+   ],
+   "confidence": "high",
+   "n_finders": 2
+  },
+  {
+   "source": "arxiv:1810.00058__00",
+   "target": "arxiv:1810.00058__01",
+   "relation": "implies",
+   "via": "restriction",
+   "sketches": [
+    "Node __01 is literally the instance H=K3 of Conjecture 1.4 (= node __00): does every triangle-free ε-bounded graph contain a linear anticomplete pair. The paper proves 1.4 for almost-bipartite H and notes K3 is the simplest open case.",
+    "The H = K_3 instance of Conjecture 1.4 (linear anticomplete pairs in H-free ε-bounded graphs); the paper proves the conjecture for almost-bipartite H and states the triangle is the open remaining case.",
+    "The question is precisely whether H=K_3 satisfies the paper's anticomplete-pair conjecture (Conjecture 1.4) for epsilon-bounded H-free graphs, i.e. the instance H=K_3 of the universally quantified statement."
+   ],
+   "confidence": "high",
+   "n_finders": 3
+  },
+  {
+   "source": "arxiv:1810.00058__02",
+   "target": "arxiv:1810.00058__00",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "The paper states the implications 3.3 ⇒ 3.4 ⇒ 1.4, where Conjecture 3.4 is node __02 (c-sparse pairs in H-free ε-bounded graphs, for all c∈[0,1]) and Conjecture 1.4 is node __00 (anticomplete linear pairs). So the sparse-pair conjecture implies the anticomplete-pair conjecture."
+   ],
+   "confidence": "high",
+   "n_finders": 1
+  },
+  {
+   "source": "arxiv:2006.09877__00",
+   "target": "arxiv:2006.09877__01",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "Classes of polynomial expansion are small and may be taken hereditary (subgraphs preserve polynomial expansion), as the paper itself notes ('since classes with polynomial expansion are small'). Hence the small conjecture (every small hereditary class has bounded twin-width) implies bounded twin-width for polynomial-expansion classes.",
+    "Polynomial expansion implies bounded expansion, and such (subgraph-closed, hence hereditary) classes are small; the paper itself notes polynomial-expansion classes are small, so the small conjecture implies they have bounded twin-width. (The small conjecture was later disproved, leaving the target open.)"
+   ],
+   "confidence": "high",
+   "n_finders": 2
+  },
+  {
+   "source": "arxiv:1907.01083__00",
+   "target": "arxiv:2003.05185__00",
+   "relation": "same_conjecture",
+   "via": null,
+   "sketches": [
+    "Both restate the identical open problem of a combinatorial polynomial-time algorithm for maximum (weight) independent set on perfect graphs, avoiding the ellipsoid method."
+   ],
+   "confidence": "high",
+   "n_finders": 1
+  },
+  {
+   "source": "arxiv:2407.08927__00",
+   "target": "arxiv:2001.01607__03",
+   "relation": "implies",
+   "via": "restriction",
+   "sketches": [
+    "(even hole, K4)-free graphs are a subclass of even-hole-free graphs, so a polynomial-time MWIS algorithm for even-hole-free graphs would settle the (even hole, K4)-free half of node 2001.01607__03 in P. Caveat: that node also asks about (theta, triangle)-free graphs, which is not covered by the target."
+   ],
+   "confidence": "medium",
+   "n_finders": 1
+  },
+  {
+   "source": "arxiv:2503.05562__01",
+   "target": "arxiv:2601.15082__00",
+   "relation": "same_conjecture",
+   "via": null,
+   "sketches": [
+    "Both ask to characterize graph classes with γ(G) ≤ c·(2-packing number) uniformly: 2503.05562 writes the packing number ρ(G), while 2601.15082 writes α_2(G); its remark that the fractional relaxations of γ and α_2 coincide (LP duality of domination and closed-neighborhood packing) indicates α_2 there is the 2-packing number ρ. Same characterization problem up to notation."
+   ],
+   "confidence": "medium",
+   "n_finders": 1
+  },
+  {
+   "source": "arxiv:1709.04036__00",
+   "target": "arxiv:1709.04036__01",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "Same class (triangle-free planar) and same property (induced 2-degenerate subgraph) with monotone bound: 7/8 of the vertices ≥ 5/6 of the vertices, so the 7/8 conjecture implies the 5/6 statement.",
+    "Same hypothesis class (triangle-free planar) and same conclusion type; 7/8 >= 5/6, so an induced 2-degenerate subgraph on 7/8 of the vertices is in particular one on 5/6 of the vertices."
+   ],
+   "confidence": "high",
+   "n_finders": 2
+  },
+  {
+   "source": "arxiv:2604.13700__00",
+   "target": "arxiv:2604.13700__01",
+   "relation": "equivalent_to",
+   "via": null,
+   "sketches": [
+    "Here c_r is the extremal directed tree-width guarantee for r-regular digraphs; determining lim c_r/r (source) is the same as determining the best asymptotic constant ε with dtw ≥ εr for all r-regular digraphs (target), modulo uniform-vs-asymptotic constant. Both are posed from Theorem 7 of the same paper about the same sequence.",
+    "With c_r the optimal directed tree-width lower bound over r-regular digraphs, the paper proves c_r/r converges to a limit L in [3/22,1]; the best asymptotic constant epsilon with dtw >= epsilon*r is exactly this limit, so determining lim c_r/r and determining the optimal epsilon are the same question asymptotically."
+   ],
+   "confidence": "medium",
+   "n_finders": 2
+  },
+  {
+   "source": "opg:m_n_cycle_covers",
+   "target": "opg:cycle_double_cover_conjecture",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "A (5,2)-cycle-cover is a list of 5 binary cycles (even subgraphs) covering every edge exactly twice; decomposing each even subgraph into edge-disjoint circuits yields a cycle double cover. The OPG page states explicitly that this conjecture strengthens CDC.",
+    "A (5,2)-cycle-cover is 5 binary cycles covering each edge exactly twice; each binary cycle decomposes into edge-disjoint circuits, yielding a cycle double cover. OPG explicitly states the (5,2)-cover conjecture strengthens the CDC conjecture."
+   ],
+   "confidence": "high",
+   "n_finders": 2
+  },
+  {
+   "source": "opg:strong_5_cycle_double_cover_conjecture",
+   "target": "opg:m_n_cycle_covers",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "Applying the strong 5-CDC conjecture to any circuit C of a bridgeless cubic graph yields a 5-cycle double cover, i.e., a (5,2)-cycle-cover of cubic graphs. The general (5,2)-cover conjecture reduces to cubic graphs by Fleischner vertex splitting: a 5-CDC of the cubic expansion contracts to five even subgraphs double covering the original graph.",
+    "The strong 5-CDC gives, for any circuit C of a bridgeless cubic G, a 5-cycle double cover, in particular every bridgeless cubic graph has a 5-CDC = (5,2)-cycle-cover. The (5,2)-cover conjecture for general bridgeless graphs reduces to the cubic case by the standard vertex-expansion/snark reduction for even-subgraph covers. OPG calls it a strengthening of the 5-CDC conjecture."
+   ],
+   "confidence": "high",
+   "n_finders": 2
+  },
+  {
+   "source": "opg:strong_5_cycle_double_cover_conjecture",
+   "target": "opg:cycle_double_cover_conjecture",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "Pick any circuit C in a bridgeless cubic graph; the strong 5-CDC conjecture yields a 5-cycle double cover, in particular a CDC. The CDC conjecture reduces to cubic graphs (a minimal counterexample is cubic)."
+   ],
+   "confidence": "high",
+   "n_finders": 1
+  },
+  {
+   "source": "opg:the_circular_embedding_conjecture",
+   "target": "opg:cycle_double_cover_conjecture",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "In an embedding where every face boundary is a cycle, the face boundaries cover each edge exactly twice, giving a CDC of every 2-connected graph; CDC for bridgeless graphs follows block-by-block. Classical: the circular (strong) embedding conjecture is a strengthening of CDC.",
+    "In an embedding where every face boundary is a cycle, the list of face boundaries covers each edge exactly twice, giving a CDC of every 2-connected graph; the CDC conjecture reduces to 2-connected graphs via block decomposition. The OPG page states the implication.",
+    "In an embedding where every face boundary is a cycle, the face boundaries cover every edge exactly twice, giving a CDC for 2-connected graphs; CDC reduces to 2-connected blocks. The implication is stated on the OPG page itself."
+   ],
+   "confidence": "high",
+   "n_finders": 3
+  },
+  {
+   "source": "opg:faithful_cycle_covers",
+   "target": "opg:cycle_double_cover_conjecture",
+   "relation": "implies",
+   "via": "restriction",
+   "sketches": [
+    "CDC is exactly the case p≡2 of the faithful cover conjecture: for bridgeless G, p≡2 is admissible (p(S)=2|S| is even, and p(e)=2≤p(S)/2=|S| for every cut S since |S|≥2), and a faithful cover of (G,2) is a cycle double cover. The OPG page states this equivalence explicitly."
+   ],
+   "confidence": "high",
+   "n_finders": 1
+  },
+  {
+   "source": "opg:petersen_coloring_conjecture",
+   "target": "opg:the_berge_fulkerson_conjecture",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "Classical (Jaeger): a Petersen coloring of a bridgeless cubic graph G pulls back the six perfect matchings of the Petersen graph (each edge of P in exactly two) to six perfect matchings of G covering each edge exactly twice.",
+    "A Petersen coloring is a cycle-continuous map G -> Petersen; pulling back the Petersen graph's six perfect matchings, which cover each of its edges exactly twice, yields six perfect matchings of the bridgeless cubic graph G covering every edge exactly twice. Classical implication of Jaeger, stated on the OPG page.",
+    "Classical (Jaeger): a Petersen coloring transfers the Petersen graph's six perfect matchings covering each edge twice back to G, yielding a Berge-Fulkerson cover. Stated explicitly in the OPG entry."
+   ],
+   "confidence": "high",
+   "n_finders": 3
+  },
+  {
+   "source": "opg:petersen_coloring_conjecture",
+   "target": "opg:m_n_cycle_covers",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "Classical (Jaeger): a Petersen coloring is a cycle-continuous map G→Petersen, and preimages of even subgraphs are even; pulling back a 5-even-subgraph double cover of the Petersen graph gives a (5,2)-cycle-cover of every bridgeless cubic G. The general case reduces to cubic graphs by vertex splitting.",
+    "A (5,2)-cycle cover is a 5-even-subgraph double cover. The Petersen graph has a 5-CDC, and preimages of binary cycles under a cycle-continuous map are binary cycles, so a Petersen coloring pulls back Petersen's 5-CDC to a (5,2)-cover of G; the general bridgeless case reduces to cubic graphs by the standard vertex expansion. OPG lists the 5-CDC as a consequence of Petersen coloring.",
+    "Jaeger: a Petersen coloring pulls back the Petersen graph's 5-even-subgraph double cover to a (5,2)-cycle-cover of the cubic graph G; the general bridgeless case of the (5,2)-cover conjecture reduces to cubic graphs by the standard reduction. OPG states Petersen coloring implies the five cycle double cover conjecture."
+   ],
+   "confidence": "high",
+   "n_finders": 3
+  },
+  {
+   "source": "opg:petersen_coloring_conjecture",
+   "target": "opg:cycle_double_cover_conjecture",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "Classical (Jaeger): Petersen coloring pulls back a cycle double cover of the Petersen graph (it even yields a 5-CDC) to any bridgeless cubic graph, and CDC reduces to cubic graphs.",
+    "Petersen coloring implies the 5-cycle double cover of every bridgeless graph (pull back Petersen's 5-CDC through the cycle-continuous map, reducing to cubic graphs), and any 5-CDC is in particular a cycle double cover. Stated on the OPG page."
+   ],
+   "confidence": "high",
+   "n_finders": 2
+  },
+  {
+   "source": "opg:the_berge_fulkerson_conjecture",
+   "target": "opg:intersecting_two_perfect_matchings",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "From six perfect matchings covering each edge exactly twice, any three of them, say M1,M2,M3, satisfy M1∩M2∩M3=∅ (an edge in all three would be covered ≥3 times). If an odd edge-cut C were contained in M1∩M2, then M3, being a perfect matching, must meet C, giving an edge in M1∩M2∩M3 — contradiction. So M1∩M2 contains no odd edge-cut.",
+    "Given a Fulkerson cover M_1..M_6 (each edge in exactly two), take M_1,M_2. If an odd edge-cut D=delta(X) were contained in M_1 cap M_2, every edge of D has both its two memberships used by M_1,M_2, so M_3 cap D is empty; but a perfect matching of a cubic graph meets every odd cut in an odd (>=1) number of edges. Contradiction.",
+    "Take M1,M2 from a Fulkerson cover. If an odd edge-cut C were contained in M1 cap M2, each edge of C is already covered twice by M1,M2, so M3..M6 avoid C; but every perfect matching of a cubic graph meets every odd edge-cut in an odd (>=1) number of edges - contradiction."
+   ],
+   "confidence": "high",
+   "n_finders": 3
+  },
+  {
+   "source": "opg:jaegers_modular_orientation_conjecture",
+   "target": "opg:3_flow_conjecture",
+   "relation": "implies",
+   "via": "restriction",
+   "sketches": [
+    "The case k=1 of Jaeger's conjecture asserts every 4-edge-connected graph has an orientation with indeg−outdeg ≡ 0 (mod 3), which is equivalent (Tutte) to a nowhere-zero Z3-flow, hence to a nowhere-zero 3-flow — exactly the 3-flow conjecture. (Jaeger's conjecture is disproved for large k, but the k=1 case remains open.)",
+    "Jaeger's conjecture at k=1 asserts every 4-edge-connected graph has a modular 3-orientation, and a graph has a modular 3-orientation iff it has a nowhere-zero 3-flow. So the 3-flow conjecture is exactly the k=1 case; the OPG page states this verbatim.",
+    "For k=1 a modular 3-orientation of a 4-edge-connected graph is exactly a nowhere-zero 3-flow (mod-3 orientation), so the k=1 case of Jaeger's modular orientation conjecture is precisely the 3-flow conjecture; the OPG entry states this identity.",
+    "For k=1 a modular 3-orientation exists iff the graph has a nowhere-zero 3-flow (Tutte/Jaeger), so the k=1 case of the modular orientation conjecture for 4-edge-connected graphs is exactly the 3-flow conjecture. (Its disproof for k >= 3 leaves k=1 open.)"
+   ],
+   "confidence": "high",
+   "n_finders": 4
+  },
+  {
+   "source": "opg:real_roots_of_the_flow_polynomial",
+   "target": "opg:5_flow_conjecture",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "The flow polynomial of a bridgeless graph is monic of degree |E|−|V|+c (positive for large x) and not identically zero; if all its real roots are ≤4 then Φ(G,5)>0, i.e., G has a nowhere-zero Z5-flow, equivalently a nowhere-zero 5-flow (Tutte).",
+    "The flow polynomial Q_G(t) is monic of degree |E|-|V|+c, so if all its real roots are at most 4 then Q_G(t)>0 for all t>4; in particular Q_G(5)>0, and Q_G(5) counts nowhere-zero Z_5-flows, whose existence is equivalent to a nowhere-zero 5-flow of the bridgeless graph G.",
+    "Same sign argument: for bridgeless G, Phi(G,6)>0 (Seymour), Phi positive at infinity, and no real root in (4,infinity) forces Phi(G,5)>0, i.e. G has a nowhere-zero Z_5-flow, equivalent to a nowhere-zero 5-flow."
+   ],
+   "confidence": "high",
+   "n_finders": 3
+  },
+  {
+   "source": "opg:real_roots_of_the_flow_polynomial",
+   "target": "opg:half_integral_flow_polynomial_values",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "For 2-edge-connected G the flow polynomial is monic (positive for large x) and nonzero; if it has no real root exceeding 4 it stays positive on (4,∞), in particular Φ(G,5.5)>0.",
+    "The flow polynomial is monic, so if every real root of Q_G is at most 4, then Q_G(t)>0 for all real t>4, and in particular Phi(G,5.5)>0 for every 2-edge-connected G.",
+    "For 2-edge-connected G, Phi(G,6)>0 by Seymour's 6-flow theorem, so Phi is a nonzero polynomial, positive for large x. If Phi has no real root >4, it cannot change sign on (4,infinity), hence Phi(G,5.5)>0."
+   ],
+   "confidence": "high",
+   "n_finders": 3
+  },
+  {
+   "source": "opg:circular_flow_numbers_of_r_graphs",
+   "target": "opg:circular_flow_number_of_regular_class_1_graphs",
+   "relation": "implies",
+   "via": "restriction",
+   "sketches": [
+    "A class-1 (2t+1)-regular graph decomposes into 2t+1 perfect matchings; every odd vertex set X meets each matching's cut ∂(X) at least once, so |∂(X)|≥2t+1, i.e., the graph is a (2t+1)-graph. Hence for t>1 the class-1 conjecture (F_c≤2+2/t) is the restriction of the r-graph conjecture; the remaining t=1 case is Tutte's theorem (3-edge-colorable cubic ⟹ F_c≤4). Both statements are now disproved, consistently with this containment.",
+    "A (2t+1)-regular class-1 graph decomposes into 2t+1 perfect matchings, each meeting every odd vertex cut, so every odd cut has size at least 2t+1, i.e. the graph is a (2t+1)-graph. Hence the r-graph conjecture F_c <= 2+2/t restricts to the class-1 conjecture; the OPG page states this containment (the leftover t=1 case of the source is a known theorem for cubic graphs).",
+    "Every (2t+1)-regular class-1 graph is a (2t+1)-graph: its 2t+1 disjoint perfect matchings each meet every odd cut, so odd cuts have size >= 2t+1. Hence the r-graph conjecture (F_c <= 2+2/t) restricted to class-1 regular graphs gives the class-1 conjecture (the t=1 case is classical via 3-edge-coloring => 4-flow). OPG states the containment explicitly."
+   ],
+   "confidence": "high",
+   "n_finders": 3
+  },
+  {
+   "source": "opg:unit_vector_flows",
+   "target": "opg:5_flow_conjecture",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "The entry's two conjectures together imply the 5-flow conjecture (stated on the OPG page): for bridgeless cubic G, the three unit vectors of an S²-flow at a vertex sum to zero, hence lie equidistant on a great circle, so composing with the map q gives a nowhere-zero 5-flow; the 5-flow conjecture reduces to bridgeless cubic graphs.",
+    "The 5-flow conjecture reduces to bridgeless cubic graphs; composing an S^2-valued flow phi with the antipodal map q: S^2 -> {-4,...,4} of the node's second conjecture yields a nowhere-zero 5-flow. The OPG page notes the two conjectures together imply Tutte's 5-flow conjecture."
+   ],
+   "confidence": "high",
+   "n_finders": 2
+  },
+  {
+   "source": "opg:cycle_double_covers_containing_predefined_2_regular_subgraphs",
+   "target": "opg:cycle_double_cover_conjecture",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "A minimal counterexample to CDC is a 3-connected cubic graph G. By Tutte's theorem G has an induced nonseparating circuit C; in cubic G this makes G−E(C) connected (if C is Hamiltonian, G is 3-edge-colorable and has a CDC anyway), so the conjecture applied to S=C yields a CDC of G."
+   ],
+   "confidence": "medium",
+   "n_finders": 1
+  },
+  {
+   "source": "arxiv:1806.00825__00",
+   "target": "opg:caccetta_haggkvist_conjecture",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "Given a simple digraph D with min out-degree r, colour the underlying edges so that the colour class of vertex v consists of the underlying edges of v's out-arcs (n colours, each class of size >= r). A cycle of length <= ceil(n/r) with no two incident edges of the same colour orients into a directed cycle of D of the same length. The source paper proves exactly this: Conjecture 4 implies Caccetta-Haggkvist.",
+    "Given a digraph D with min out-degree r, color each edge of its underlying graph by its tail: n color classes of size >= r. In a cycle of length <= ceil(n/r) with no two incident edges sharing a color, each edge is 'claimed' by one endpoint and no vertex claims two incident cycle edges, so by counting each cycle vertex claims exactly one, making the cycle directed of length <= ceil(n/r). The paper proves this implication explicitly."
+   ],
+   "confidence": "high",
+   "n_finders": 2
+  },
+  {
+   "source": "opg:caccetta_haggkvist_conjecture",
+   "target": "arxiv:1809.08324__00",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "Stated explicitly in arXiv:1809.08324: the bipartite short-cycle conjecture (out-degree > n/(k+1) in each part forces girth <= 2k) is implied by the Caccetta-Haggkvist conjecture, via applying CH to an auxiliary digraph built from the bipartite digraph."
+   ],
+   "confidence": "high",
+   "n_finders": 1
+  },
+  {
+   "source": "arxiv:1809.08324__01",
+   "target": "opg:caccetta_haggkvist_conjecture",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "Stated in arXiv:1809.08324: the asymmetric bipartite conjecture (k*alpha + beta > 1 forces girth <= 2k) implies Caccetta-Haggkvist by letting beta tend to 0 in a bipartite encoding of a digraph with min out-degree r."
+   ],
+   "confidence": "high",
+   "n_finders": 1
+  },
+  {
+   "source": "arxiv:1809.08324__01",
+   "target": "arxiv:1809.08324__00",
+   "relation": "implies",
+   "via": "restriction",
+   "sketches": [
+    "Setting alpha = beta > 1/(k+1) in the asymmetric conjecture (then k*alpha + beta > 1) recovers exactly the symmetric bipartite conjecture with out-degree > n/(k+1) in both parts. The source paper states Conjecture 1.5 is stronger than Conjecture 1.2 as the case alpha = beta.",
+    "Set α = β in Conjecture 1.5: out-degree > n/(k+1) in both parts of equal size n means α = β > 1/(k+1), so kα+β > 1, and the conclusion girth ≤ 2k is identical. The paper states Conjecture 1.5 is stronger than Conjecture 1.2 (the α=β case).",
+    "Take |A|=|B|=n and alpha=beta=(floor(n/(k+1))+1)/n. Out-degree > n/(k+1) means out-degree >= alpha n = beta n in both parts, and k·alpha+beta = (k+1)(floor(n/(k+1))+1)/n > 1, so the asymmetric conjecture yields girth <= 2k, which is the symmetric bipartite Caccetta-Haggkvist statement.",
+    "Setting alpha = beta (slightly above 1/(k+1), so that k alpha + beta > 1) in the asymmetric bipartite Caccetta-Haggkvist conjecture recovers the symmetric out-degree > n/(k+1) version; the paper states Conjecture 1.5 is stronger and includes 1.2 as the alpha=beta case."
+   ],
+   "confidence": "high",
+   "n_finders": 4
+  },
+  {
+   "source": "opg:arc_disjoint_strongly_connected_spanning_subdigraphs",
+   "target": "opg:arc_disjoint_out_branching_and_in_branching",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "With the same constant k: if a k-arc-strong digraph D has two arc-disjoint strongly connected spanning subdigraphs D1, D2, then D1 contains an out-branching rooted at u and D2 an in-branching rooted at v (any strong spanning subdigraph contains branchings from/to every root), and these are arc-disjoint."
+   ],
+   "confidence": "high",
+   "n_finders": 1
+  },
+  {
+   "source": "arxiv:2009.13319__01",
+   "target": "arxiv:2009.13319__02",
+   "relation": "implies",
+   "via": "restriction",
+   "sketches": [
+    "The paper states Conjecture 4.4 ({K2-digon, K_k, F} heroic for every oriented forest F) is equivalent to the special case H = TT_k of Conjecture 4.2, since forbidding the edgeless K_k in a digon-free digraph is interchangeable with forbidding TT_k (every tournament on 2^k vertices contains TT_k)."
+   ],
+   "confidence": "high",
+   "n_finders": 1
+  },
+  {
+   "source": "arxiv:2306.04710__02",
+   "target": "arxiv:2202.13306__00",
+   "relation": "implies",
+   "via": "restriction",
+   "sketches": [
+    "Oriented complete multipartite graphs contain no induced K1 + P-vec2 (an isolated vertex forces its non-neighbours into its own part, contradicting adjacency inside the path), so they form a subclass of {K1+P-vec2}-free digraphs. Hence if Delta(1,2,2) were a hero in {K1+P-vec2}-free digraphs it would be a hero in oriented complete multipartite graphs; the disproof of the latter (arXiv:2202.13306 v2) settles the former negatively.",
+    "Oriented complete multipartite digraphs contain no induced K_1 + P->_2 (disjoint union): a vertex nonadjacent to every vertex of the path must share a part with two adjacent path vertices, which lie in different parts. So oriented complete multipartite graphs form a subclass of {K_1+P->_2}-free digraphs, and 'Delta(1,2,2) is a hero' in the larger class restricts to the same statement on the subclass.",
+    "A digraph has no induced K_1 + P->_2 (arc plus isolated vertex) iff its underlying graph has no induced K_2 cup K_1, i.e. is complete multipartite. Oriented complete multipartite graphs are thus exactly the digon-free members of the {K_1+P->_2}-free digraphs, so heroism of Delta(1,2,2) in the larger class restricts to the oriented question."
+   ],
+   "confidence": "medium",
+   "n_finders": 3
+  },
+  {
+   "source": "arxiv:2410.23566__03",
+   "target": "arxiv:2410.23566__05",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "A k-extension adds k vertices one at a time; Conjecture 9 (unvd(D) <= C * unvd(D-v) for acyclic D) applied k times multiplies the unavoidability number by at most C^k, keeping it linear in |V| for each fixed k. The paper states Conjecture 11 'would follow from Conjecture 9'."
+   ],
+   "confidence": "high",
+   "n_finders": 1
+  },
+  {
+   "source": "arxiv:2410.23566__03",
+   "target": "arxiv:2410.23566__04",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "Paper-stated conditional implication: Conjecture 9 (unvd(D) <= C*unvd(D-v)) applied to the k added vertices, TOGETHER with Sumner's conjecture (oriented trees of order n are (2n-2)-unavoidable), gives C^k(2n-2)-unavoidability of k-extensions of trees. Not standalone: it additionally needs Sumner's conjecture, which is outside this pair."
+   ],
+   "confidence": "low",
+   "n_finders": 1
+  },
+  {
+   "source": "arxiv:2506.08810__03",
+   "target": "arxiv:2506.08810__02",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "Reversing a single arc is a locally finite perturbation, and for tournaments an induced copy of T is a subtournament copy. So Conjecture 24 supplies, for every non-transitive finite tournament H, a countable H-free tournament in which any single arc reversal creates H, answering Problem 23 for all non-transitive H (the transitive cases are handled by known finite examples noted in the paper).",
+    "Reversing a single arc is a locally finite perturbation, and for tournaments subtournament containment equals induced containment; so the source's S_T witnesses that every non-transitive T belongs to the class the target asks to characterize (transitive T are excluded in the infinite setting by Ramsey)."
+   ],
+   "confidence": "medium",
+   "n_finders": 2
+  },
+  {
+   "source": "arxiv:2210.16971__01",
+   "target": "arxiv:2210.16971__00",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "Forcing implies Sidorenko (standard, also in the directed setting: the forcing property is defined via the Sidorenko-type inequality with equality only for quasirandom targets). Bipartite oriented B with a homomorphism to K-vec2 either has a cycle in its underlying graph (then Conjecture 1.7 gives forcing, hence Sidorenko) or is a forest, for which the directed Sidorenko property is easy/known."
+   ],
+   "confidence": "medium",
+   "n_finders": 1
+  },
+  {
+   "source": "arxiv:1812.02420__00",
+   "target": "arxiv:1812.02420__01",
+   "relation": "implies",
+   "via": "restriction",
+   "sketches": [
+    "Problem 2.15 asks for the full complexity classification of circular F-colourability over all fixed F; Conjecture 2.16 is the assertion resolving the cyclic-F half of that dichotomy (NP-completeness whenever F contains a directed cycle; acyclic F are trivially polynomial). Solving the classification problem settles the conjecture."
+   ],
+   "confidence": "medium",
+   "n_finders": 1
+  },
+  {
+   "source": "arxiv:2510.11311__03",
+   "target": "arxiv:2510.11311__04",
+   "relation": "implies",
+   "via": "restriction",
+   "sketches": [
+    "The question whether every orientation of C4 is Eulerian-avoidable is the instance of the general characterization problem 'which digraphs are Eulerian-avoidable' restricted to the four orientations of the 4-cycle; a full characterization answers it."
+   ],
+   "confidence": "medium",
+   "n_finders": 1
+  },
+  {
+   "source": "arxiv:1912.07722__00",
+   "target": "arxiv:1912.07722__01",
+   "relation": "implies",
+   "via": "restriction",
+   "sketches": [
+    "An n-vertex tournament is an n-chromatic oriented graph, so g(k) <= f(k) where f is the general oriented-graph function of Problem __00 and g its tournament restriction; the conjecture g(k) <= k^{4/3+o(1)} is the tournament instance of the same extremal question. Determining f resolves the tournament case up to the conjectured exponent."
+   ],
+   "confidence": "low",
+   "n_finders": 1
+  },
+  {
+   "source": "arxiv:2503.20045__03",
+   "target": "arxiv:2503.20045__02",
+   "relation": "implies",
+   "via": "restriction",
+   "sketches": [
+    "A digraph H admits constants c_epsilon for every epsilon > 0 (Question __02) exactly when the directed chromatic threshold epsilon_H of Question __03 equals 0. Hence determining epsilon_H for all H resolves which H satisfy __02."
+   ],
+   "confidence": "medium",
+   "n_finders": 1
+  },
+  {
+   "source": "arxiv:2009.13319__00",
+   "target": "arxiv:2009.13319__03",
+   "relation": "implies",
+   "via": "restriction",
+   "sketches": [
+    "Characterizing the minimal families of tournaments H1,...,Hk with {K-vec2, K-digon2, H1,...,Hk} heroic is the restriction of the general heroic-set characterization Problem 1.2 to sets consisting of the single arc, the digon, and tournaments; the general characterization answers it."
+   ],
+   "confidence": "medium",
+   "n_finders": 1
+  },
+  {
+   "source": "opg:multicolour_erdos_hajnal_conjecture",
+   "target": "opg:the_erdos_hajnal_conjecture",
+   "relation": "implies",
+   "via": "restriction",
+   "sketches": [
+    "Take m=2 in the multicolour statement: a 2-colouring of E(K_n) encodes a graph G and its complement, 'k vertices coloured according to χ' is an induced copy of the k-vertex graph H encoded by χ, and 'n^ε vertices using at most 1 colour' is a clique or stable set of size n^ε. Quantifying over all 2-colourings χ of E(K_k) recovers exactly the Erdős–Hajnal conjecture.",
+    "Take m=2 colours (edge/non-edge of a fixed H on k vertices): the multicolour conjecture then yields either k vertices coloured according to H (an induced copy of H) or n^eps vertices using at most one colour (a clique or independent set). So the classical Erdos-Hajnal conjecture is the m=2 instance.",
+    "Take m=2 and colour E(K_k) by edges/non-edges of H: a 2-colouring of E(K_n) is a graph, k vertices coloured per chi form an induced H, and n^eps vertices using at most one colour form a clique or independent set - exactly Erdos-Hajnal for H."
+   ],
+   "confidence": "high",
+   "n_finders": 3
+  },
+  {
+   "source": "opg:the_erdos_hajnal_conjecture",
+   "target": "arxiv:1912.02342__00",
+   "relation": "implies",
+   "via": "restriction",
+   "sketches": [
+    "A graph of VC-dimension ≤ d contains no induced copy of the shattering bipartite pattern B_{d+1} (d+1 vertices plus a witness vertex for each subset), since an induced copy would shatter d+1 vertices by neighbourhood traces. So VC-dim ≤ d graphs form a hereditary subclass of B_{d+1}-free graphs, and EH applied to H=B_{d+1} gives the n^{ε(d)} clique/stable set. The source paper itself calls Conjecture 4.1 the VC-dimension specialisation of Erdős–Hajnal."
+   ],
+   "confidence": "high",
+   "n_finders": 1
+  },
+  {
+   "source": "opg:subgraph_of_large_average_degree_and_large_average_degree",
+   "target": "arxiv:1808.01605__01",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "If χ(G) ≥ c then G contains a subgraph of minimum degree ≥ c−1, hence average degree ≥ c−1; applying Thomassen's conjecture with average degree d(k,g) yields a subgraph of girth > g and average degree ≥ k, so c(k,g)=d(k,g)+1 works. The 1808.01605 paper states its Conjecture 6 is a weakening of Thomassen's conjecture.",
+    "If chi(G) >= d+2 then G has a subgraph of minimum (hence average) degree >= d+1 (take a critical subgraph). Choosing d = d(k,g) from Thomassen's conjecture yields a subgraph of average degree >= k and girth > g, exactly the chromatic version with c(k,g)=d+2."
+   ],
+   "confidence": "high",
+   "n_finders": 2
+  },
+  {
+   "source": "arxiv:2405.05902__00",
+   "target": "arxiv:2405.05902__01",
+   "relation": "implies",
+   "via": "restriction",
+   "sketches": [
+    "Conjecture 6.1 is the instance of Problem 1.1 with P = P_{C_{2ℓ}} (induced-C_{2ℓ}-free graphs), a hereditary property missing the bipartite graph C_{2ℓ}; a full determination of ex(Γ,P) over (c,t)-sparse Γ decides the conjectured C·t^{1−1/ℓ}n^{1+1/ℓ} bound."
+   ],
+   "confidence": "medium",
+   "n_finders": 1
+  },
+  {
+   "source": "arxiv:2405.05902__00",
+   "target": "arxiv:2210.12754__01",
+   "relation": "implies",
+   "via": "restriction",
+   "sketches": [
+    "Dense random graphs G(n,p) are whp (c,t)-sparse (edge density between any two linear-size sets is ≤ 1−c), and 2405.05902 explicitly introduces Problem 1.1 as the deterministic generalization of this Alon–Krivelevich–Samotij random-graph question; determining ex(Γ,P) for all (c,t)-sparse Γ and bipartite-missing hereditary P gives the precise order of ex(G(n,p),P)."
+   ],
+   "confidence": "medium",
+   "n_finders": 1
+  },
+  {
+   "source": "arxiv:2102.10220__02",
+   "target": "arxiv:2102.10220__03",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "By definition m(n,k) = min over n-vertex graphs G of e(G) − u(G,k), so a full answer to Question 2.1 (determine u(G,k) for every G) determines the exact value of m(n,k) by minimizing over G."
+   ],
+   "confidence": "medium",
+   "n_finders": 1
+  },
+  {
+   "source": "arxiv:2009.12189__00",
+   "target": "opg:large_induced_forest_in_a_planar_graph",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "Standard fractional-covering bound: |V(G)|/a(G) <= va_f(G), where a(G) is the maximum size of an induced forest. So va_f(G) <= 2 for planar G forces an induced forest on >= n/2 vertices, which is exactly the Albertson-Berman conjecture. The paper's own context states this implication.",
+    "If va_f(G) <= 2, an optimal fractional cover by induced forests has total weight <= 2 while covering all n vertices, so n <= sum_F w_F|F| <= 2 max_F |F|, giving an induced forest on >= n/2 vertices. This is the Albertson-Berman conjecture; the paper states the implication (|V|/a(G) <= va_f(G))."
+   ],
+   "confidence": "high",
+   "n_finders": 2
+  },
+  {
+   "source": "arxiv:2407.18800__00",
+   "target": "arxiv:2407.18800__01",
+   "relation": "equivalent_to",
+   "via": null,
+   "sketches": [
+    "If the graphs critical for 5-choosability on the torus are exactly the 6-critical ones, then a toroidal G fails 5-choosability iff it contains a 6-critical subgraph iff chi(G)>=6, i.e. iff G is not 5-colorable; conversely 5-colorability always follows from 5-choosability, and the paper states Conjectures 2 and 3 are equivalent (via Thomassen's classification of 6-critical toroidal graphs)."
+   ],
+   "confidence": "high",
+   "n_finders": 1
+  },
+  {
+   "source": "arxiv:2407.18800__01",
+   "target": "arxiv:2407.18800__02",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "Thomassen's classification shows the 6-critical toroidal graphs (K6, C3+C5, K2+H7, T11) cannot occur in a torus drawing of edge-width >= 4, so such graphs are 5-colorable; under Conjecture 3 (5-choosable iff 5-colorable) they are then 5-choosable. The paper presents Conjecture 4 as an intermediate step towards Conjecture 3."
+   ],
+   "confidence": "medium",
+   "n_finders": 1
+  },
+  {
+   "source": "arxiv:2211.01032__04",
+   "target": "arxiv:2211.01032__03",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "Apply E[F^-] <= E[F] to G = K_n and combine with the paper's theorem that the expected face count of a uniformly random orientable embedding of K_n is ln(n)+O(1); this yields the conjectured ln(n)+O(1) bound for non-orientable random embeddings of K_n.",
+    "The same paper establishes that the orientable random embedding of K_n has expected face count ln(n) + O(1); combining this with the general comparison E[F⁻] <= E[F] (Conjecture 9.6) applied to G = K_n gives the non-orientable bound E[F⁻(K_n)] <= ln(n) + O(1), i.e. Conjecture 9.5."
+   ],
+   "confidence": "medium",
+   "n_finders": 2
+  },
+  {
+   "source": "arxiv:2202.07746__00",
+   "target": "arxiv:2103.05036__00",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "Parameter monotonicity: the conjectured bound E[F] <= n/3 + 1 for every simple n-vertex graph is a concrete linear bound, hence immediately gives E[F] = O(n) for uniformly random orientable embeddings.",
+    "Both concern the expected number of faces E[F] of a uniformly random orientable embedding of an arbitrary n-vertex simple graph; the explicit bound E[F] <= n/3 + 1 is O(n), so Conjecture 4 of 2202.07746 immediately yields Conjecture 1 of 2103.05036 (which that later paper in fact proved with constant π²/6).",
+    "Both concern the expected number of faces of a uniformly random orientable embedding of an arbitrary simple n-vertex graph; the quantitative bound E[F] <= n/3 + 1 immediately gives E[F] = O(n).",
+    "The bound E[F] <= n/3 + 1 for every simple n-vertex graph is in particular O(n), the target's statement for uniformly random orientable embeddings."
+   ],
+   "confidence": "high",
+   "n_finders": 4
+  },
+  {
+   "source": "arxiv:1810.08314__00",
+   "target": "arxiv:1507.01120__00",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "Planar graphs have layered treewidth at most 3 (Dujmovic-Morin-Wood), so if every class of bounded layered treewidth has bounded queue-number, planar graphs have constant queue number. (Both statements are now resolved; the implication was the known route.)",
+    "Planar graphs have layered treewidth at most 3 (Dujmovic-Morin-Wood), so if graphs of bounded layered treewidth have bounded queue-number, then planar graphs have constant queue-number."
+   ],
+   "confidence": "high",
+   "n_finders": 2
+  },
+  {
+   "source": "arxiv:2008.01616__00",
+   "target": "arxiv:2008.01616__01",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "An n^{2-o(1)} lower bound (no O(n^{2-eps}) algorithm for any eps>0) for map isomorphism is in particular a truly superlinear omega(n polylog n) lower bound for map isomorphism, which is what the subproblem asks to establish (conditionally).",
+    "If no O(n^{2-eps}) algorithm exists for map isomorphism for any eps > 0, then in particular no O(n polylog n) algorithm exists (n polylog n = O(n^{1.5})), which is an (even unconditional) truly-superlinear lower bound as sought in 2008.01616__01."
+   ],
+   "confidence": "high",
+   "n_finders": 2
+  },
+  {
+   "source": "arxiv:2009.03418__00",
+   "target": "opg:the_crossing_number_of_the_complete_graph",
+   "relation": "implies",
+   "via": "restriction",
+   "sketches": [
+    "Setting t=0 gives M_{n,0}=K_n and the conjectured formula reads cr(K_n)=H(n), the Harary-Hill value (1/4)*floor(n/2)*floor((n-1)/2)*floor((n-2)/2)*floor((n-3)/2). So the Harary-Hill conjecture is the t=0 instance of the K_n-minus-t-matching conjecture (the paper is explicitly a generalization of Hill's conjecture); if the paper requires t>=1, it is the boundary case of the common generalization."
+   ],
+   "confidence": "medium",
+   "n_finders": 1
+  },
+  {
+   "source": "arxiv:1709.09050__00",
+   "target": "arxiv:1709.09050__01",
+   "relation": "implies",
+   "via": "restriction",
+   "sketches": [
+    "Outerplanar graphs are planar, and their cop number is at most 2 (Theorem 3 of the same paper), so classifying planar graphs by cop number i in {1,2,3} restricted to the subclass of outerplanar graphs is exactly the 1-cop-win vs 2-cop-win dichotomy asked in __01."
+   ],
+   "confidence": "high",
+   "n_finders": 1
+  },
+  {
+   "source": "arxiv:2003.05185__00",
+   "target": "arxiv:1907.01083__00",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "MWIS with unit weights is MIS, so a combinatorial polynomial-time algorithm for Maximum Weight Independent Set in perfect graphs is in particular a combinatorial polynomial-time algorithm for MIS in perfect graphs.",
+    "A combinatorial poly-time algorithm for Maximum Weight Independent Set on perfect graphs solves the unweighted MIS case by setting all weights to 1; both are the Grotschel-Lovasz-Schrijver problem."
+   ],
+   "confidence": "high",
+   "n_finders": 2
+  },
+  {
+   "source": "arxiv:2407.08927__00",
+   "target": "arxiv:1912.11246__01",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "A polynomial-time algorithm for Maximum Weight Independent Set on even-hole-free graphs solves the unweighted maximum independent set problem on even-hole-free graphs (unit weights), settling the open complexity question in 1912.11246__01."
+   ],
+   "confidence": "high",
+   "n_finders": 1
+  },
+  {
+   "source": "arxiv:1912.11246__01",
+   "target": "arxiv:2001.01607__03",
+   "relation": "implies",
+   "via": "restriction",
+   "sketches": [
+    "(even hole, K4)-free graphs form a subclass of even-hole-free graphs, so resolving MIS on even-hole-free graphs (positively) settles the (even hole, K4)-free half of 2001.01607__03; the (theta, triangle)-free half is separate (thetas contain even holes, but triangle-freeness is an extra restriction)."
+   ],
+   "confidence": "medium",
+   "n_finders": 1
+  },
+  {
+   "source": "arxiv:1909.08426__00",
+   "target": "arxiv:2001.01607__04",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "The conjectured dichotomy places every spider S_{i,j,k} on the polynomial side, so it would determine (as P) the complexity of MIS on S_{i,j,k}-free graphs for the cases containing P7, S_{1,1,3}, S_{1,2,2} asked in 2001.01607__04."
+   ],
+   "confidence": "high",
+   "n_finders": 1
+  },
+  {
+   "source": "arxiv:2206.00594__02",
+   "target": "arxiv:2206.00594__00",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "O_k-free graphs have induced cycle packing number < k, hence induced odd cycle packing number iocp < k (odd cycles are cycles). So tractability of MIS on bounded-iocp graphs implies polynomial MIS on O_k-free graphs for each fixed k."
+   ],
+   "confidence": "medium",
+   "n_finders": 1
+  },
+  {
+   "source": "arxiv:1908.06300__00",
+   "target": "arxiv:1908.06300__01",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "The bounded sub-determinant IP conjecture explicitly yields (its 'in particular' clause) polynomial stable set for all graphs with ocp(G) <= k; restricting to graphs embedded in a surface of arbitrary Euler genus gives 1908.06300__01 by hypothesis-class containment.",
+    "The source explicitly asserts stable set is polynomial for every fixed ocp(G) <= k on all graphs, which contains the subclass of graphs embedded in a surface of arbitrary Euler genus."
+   ],
+   "confidence": "high",
+   "n_finders": 2
+  },
+  {
+   "source": "arxiv:2206.00594__02",
+   "target": "arxiv:1908.06300__01",
+   "relation": "implies",
+   "via": "restriction",
+   "sketches": [
+    "Any family of vertex-disjoint pairwise-anticomplete induced odd cycles is a family of disjoint odd cycles, so iocp(G) <= ocp(G); graphs with ocp <= k (embedded in any surface) thus have iocp <= k. Tractability of MIS on bounded-iocp graphs (2206.00594__02) therefore covers the class in 1908.06300__01."
+   ],
+   "confidence": "medium",
+   "n_finders": 1
+  },
+  {
+   "source": "arxiv:1901.01797__00",
+   "target": "arxiv:2105.01780__00",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "Weighted Min Vertex Cover is a monotone FO minimization problem; a local-search PTAS for all monotone FO optimization problems on hereditary classes with (strongly) sublinear separators would give the weighted-MVC PTAS asked for in 2105.01780__00, whose 'more general' setting is exactly hereditary classes with sublinear separators."
+   ],
+   "confidence": "low",
+   "n_finders": 1
+  },
+  {
+   "source": "arxiv:2311.05713__01",
+   "target": "arxiv:2105.01787__00",
+   "relation": "implies",
+   "via": "restriction",
+   "sketches": [
+    "The open 5-Coloring cases for H-free graphs with H = P4 plus an induced subgraph of rP3 are instances (k = 5, specific linear forests H) of the general k-Coloring dichotomy classification problem for H-free graphs."
+   ],
+   "confidence": "medium",
+   "n_finders": 1
+  },
+  {
+   "source": "arxiv:1811.12252__02",
+   "target": "arxiv:2001.01607__02",
+   "relation": "implies",
+   "via": "restriction",
+   "sketches": [
+    "(K3, S_{1,2,3}) is one of the five remaining unresolved pairs in the boundedness-of-clique-width classification of (H1,H2)-free graphs, so deciding all five pairs answers whether (triangle, S_{1,2,3})-free graphs have bounded cliquewidth."
+   ],
+   "confidence": "medium",
+   "n_finders": 1
+  },
+  {
+   "source": "arxiv:2001.03794__00",
+   "target": "arxiv:2001.03794__01",
+   "relation": "implies",
+   "via": "restriction",
+   "sketches": [
+    "A semi-induced half-graph H_{2t,2t} contains K_{t,t} as a subgraph (take the top half of one side against the bottom half of the other), so K_{t,t}-subgraph-free graphs are H_{2t,2t}-free; FPT Grundy Coloring on H_{t,t}-free graphs for all t therefore covers the K_{t,t}-free case."
+   ],
+   "confidence": "medium",
+   "n_finders": 1
+  },
+  {
+   "source": "arxiv:2503.05562__01",
+   "target": "arxiv:2503.05562__00",
+   "relation": "implies",
+   "via": "restriction",
+   "sketches": [
+    "The per-class question (does a given class G admit a constant bounding gamma/rho) is an instance of the full characterization problem of all classes with uniformly bounded domination-to-packing ratio; the characterization answers each instance."
+   ],
+   "confidence": "medium",
+   "n_finders": 1
+  },
+  {
+   "source": "arxiv:2404.03472__00",
+   "target": "arxiv:2404.03472__02",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "(1,r)-cover-free families with t = O(r^2 log|F|/log r) yield deterministic non-adaptive reconstruction of max-degree-Delta graphs with O(Delta^2 log n / log Delta) queries (the paper's CFF-to-reconstruction reduction), which is o(Delta^3 log(n/Delta)); non-adaptive algorithms are a special case of adaptive ones."
+   ],
+   "confidence": "low",
+   "n_finders": 1
+  },
+  {
+   "source": "arxiv:2102.01034__00",
+   "target": "arxiv:1010.2472__00",
+   "relation": "implies",
+   "via": "restriction",
+   "sketches": [
+    "Replacing each edge of a graph G embedded in Sigma by a digon gives a digraph whose dichromatic number equals chi(G); hence Sigma-4-Dicolourability restricted to bidirected inputs is 4-colorability on Sigma, and a polynomial algorithm for the k=4 dicolouring problem would solve 1010.2472__00. Requires the dicolouring problem to admit digons."
+   ],
+   "confidence": "low",
+   "n_finders": 1
+  },
+  {
+   "source": "arxiv:2505.05339__02",
+   "target": "opg:rysers_conjecture",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "Induction on ν: for an r-partite r-uniform H, Conjecture 4.3 gives k(r−1) vertices whose deletion drops the matching number by ≥k; by induction the remainder has a cover of size (r−1)(ν−k), so adding the deleted vertices yields a cover of size ≤ (r−1)ν, i.e. τ ≤ (r−1)ν. The authors explicitly propose it as a weakening of Lovász's conjecture that still implies Ryser's conjecture.",
+    "Iterate: each round deletes k_i(r-1) vertices lowering nu by >= k_i, and the hypergraph stays r-partite r-uniform. When nu reaches 0 every edge meets the deleted set, a cover of size <= (r-1) * sum k_i <= (r-1)nu, i.e. tau <= (r-1)nu. The paper states it is a weakening of Lovasz's conjecture that still implies Ryser."
+   ],
+   "confidence": "high",
+   "n_finders": 2
+  },
+  {
+   "source": "arxiv:2401.00359__01",
+   "target": "arxiv:2401.00359__02",
+   "relation": "implies",
+   "via": "restriction",
+   "sketches": [
+    "Conjecture 6.2 asserts the Turán exponent of a k-partite k-uniform H is controlled as k−Θ(1/d_max(H)); for the 3-partite Latin-square hypergraph H_L one has d_max(H_L)=Θ(d), so 6.2 yields ex(n,H_L)=n^{3−Θ(1/d)}, which is Conjecture 6.4. The paper states 6.4's prediction matches d_max(H_L)=Θ(d) 'via Conjecture 6.2'. (6.2's statement is truncated in the record, hence medium confidence.)"
+   ],
+   "confidence": "medium",
+   "n_finders": 1
+  },
+  {
+   "source": "arxiv:1909.11578__01",
+   "target": "arxiv:1909.11578__02",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "If the extremal symmetric intersecting A ⊂ [k]^n are set-intersecting, they are generated by a symmetric intersecting set family B ⊂ P([n]); the orbit-averaging bound Σ_γ|B∩γB| = |B|²|Γ|/n forces every B∈B to have |B| ≥ √n, which plausibly caps |A| at k^{n−cn^{1/2}}, giving the polynomial gain with δ=1/2. The final counting step (bounding over all generators B) is not verified."
+   ],
+   "confidence": "low",
+   "n_finders": 1
+  },
+  {
+   "source": "opg:57_regular_moore_graph",
+   "target": "opg:triangle_free_strongly_regular_graphs",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "A 57-regular Moore graph of diameter 2 and girth 5 is a (3250,57,0,1) strongly regular graph; girth 5 forces lambda=0, so it is triangle-free and distinct from the seven known triangle-free SRGs (C5, Petersen, Clebsch, Hoffman-Singleton, Gewirtz, the (77,16,0,4) graph, Higman-Sims). Its existence would therefore provide an eighth triangle-free strongly regular graph. The OPG page for the target states this implication explicitly."
+   ],
+   "confidence": "high",
+   "n_finders": 1
+  },
+  {
+   "source": "arxiv:2401.06062__02",
+   "target": "arxiv:2401.06062__01",
+   "relation": "implies",
+   "via": "restriction",
+   "sketches": [
+    "The paper proves that non-semisimple finite rings R give non-prime X_R, and that for semisimple R = prod F_{q_i} the Cayley graph satisfies X_R ≅ prod K_{q_i} (tensor product of complete graphs). Hence the open content of 'when is X_R prime?' (Q4.28) is exactly the primeness question for tensor products of complete graphs restricted to prime-power orders, i.e. a special case of Q4.31, which asks it for arbitrary positive integers n_i."
+   ],
+   "confidence": "high",
+   "n_finders": 1
+  },
+  {
+   "source": "arxiv:2208.06858__01",
+   "target": "arxiv:2208.06858__00",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "Intersecting winning families are among the balanced monotone families considered, so p_monotone(t) >= p_intersecting(t); hence p_monotone(t) -> 0 forces p_intersecting(t) -> 0. The paper states the chain p_monotone >= p_intersecting >= p_dict and calls Conjecture 2.2 'progressively stronger' than 2.1."
+   ],
+   "confidence": "high",
+   "n_finders": 1
+  },
+  {
+   "source": "arxiv:2208.06858__00",
+   "target": "arxiv:2208.06858__02",
+   "relation": "equivalent_to",
+   "via": null,
+   "sketches": [
+    "By the identity p_intersecting(t,n) = fractional-independence ᾱ(K(n)^{□t}) (K(n) the Kneser graph on {0,1}^n, □ the Hamming product), Conjecture 2.6 is an exact graph-theoretic restatement of Conjecture 2.1: the double limit tending to 0 is the same statement as p_intersecting(t) -> 0."
+   ],
+   "confidence": "high",
+   "n_finders": 1
+  },
+  {
+   "source": "arxiv:2208.06858__03",
+   "target": "arxiv:2208.06858__02",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "ε*(α) > 0 gives a uniform gap ᾱ(G) - α*(G) over all G with ᾱ(G) >= α; applied along the Hamming powers K(n)^{□t} this drives ᾱ(K(n)^{□t}) down at each power, forcing the double limit to 0. The paper states explicitly that Conjecture 2.8 would imply Conjecture 2.6 (and hence Levine's conjecture)."
+   ],
+   "confidence": "high",
+   "n_finders": 1
+  },
+  {
+   "source": "arxiv:2208.06858__03",
+   "target": "arxiv:2208.06858__04",
+   "relation": "implies",
+   "via": "restriction",
+   "sketches": [
+    "Conjecture 2.9 (ε** > 0) is exactly Conjecture 2.8 (ε* > 0) restricted to the case where the positively-correlated random-subset distribution with Bernoulli(1/2) marginals is the plain binomial distribution (vertices included independently with probability 1/2), as stated in the paper; so ε* > 0 for the general class yields ε** > 0."
+   ],
+   "confidence": "high",
+   "n_finders": 1
+  },
+  {
+   "source": "arxiv:1806.09726__01",
+   "target": "arxiv:1806.09726__00",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "The paper states that Conjecture 9 (f(K_m,p) = 2^{o(m)} p^{-2m/3+c_m} in the Subgraph Query Game) together with the proven Theorem 10 implies both parts of Conjecture 7: specializing the query bound at the appropriate p gives the diagonal rate 2^{(2/3+o(1))n} and the off-diagonal rate n^{(2/3+o(1))m} for the online random Ramsey numbers r̃_rand."
+   ],
+   "confidence": "high",
+   "n_finders": 1
+  },
+  {
+   "source": "arxiv:2211.01032__00",
+   "target": "arxiv:2211.01032__01",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "Since ln(pn²) <= 2 ln n for all p <= 1, the asymptotic E[F] = (1+o(1)) ln(pn²) for random embeddings of G(n,p) gives E[F] = O(log n) for every edge-probability function p(n). Caveat: the target asserts the bound for almost all graphs (E over embedding only), so the implication is clean under the a.a.s.-per-graph reading of the source."
+   ],
+   "confidence": "medium",
+   "n_finders": 1
+  },
+  {
+   "source": "arxiv:2410.20498__01",
+   "target": "arxiv:2410.20498__00",
+   "relation": "implies",
+   "via": "restriction",
+   "sketches": [
+    "λ(d,1) = (1+o(1))/e is the s = 1 instance of the problem of obtaining tight asymptotic bounds for λ(d,s) over essentially all admissible (d,s); resolving the general problem determines the asymptotics at s = 1, matching the conjectured lower bound (1-2^{-d})^{2^d - 1} -> 1/e.",
+    "The conjecture λ(d,1)=(1+o(1))/e is the s=1 instance of the general open problem of obtaining tight asymptotic bounds for λ(d,s) over essentially all admissible (d,s): a tight determination for all admissible parameters would in particular decide whether the proven lower bound (1−2^{-d})^{2^d−1} → 1/e is asymptotically sharp at s=1."
+   ],
+   "confidence": "medium",
+   "n_finders": 2
+  },
+  {
+   "source": "arxiv:2211.14218__00",
+   "target": "arxiv:2211.14218__01",
+   "relation": "implies",
+   "via": "restriction",
+   "sketches": [
+    "The target posits, for every radius r, a second phase transition threshold t(n) for r-neighbourhood shotgun reconstructibility of G(n,p); the source asks to determine that sharp threshold for the two unresolved radii r ∈ {1,2}, i.e. it is the r <= 2 instance of the general threshold statement."
+   ],
+   "confidence": "medium",
+   "n_finders": 1
+  },
+  {
+   "source": "arxiv:1909.07141__01",
+   "target": "arxiv:1909.07141__00",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "The paper states (context of Conjecture 3.1) that the disproportionate bipartition statement for measures on S^1 would imply, by a simple inductive argument splitting [n]=P∪Q and recursing on each interval, that f(n) ≤ 2n−2; the matching lower bound f(n) ≥ 2n−2 is already proved via Segal-Halevi's construction. Hence Conjecture 3.1 implies f(n)=2n−2."
+   ],
+   "confidence": "high",
+   "n_finders": 1
+  },
+  {
+   "source": "arxiv:2403.02298__00",
+   "target": "arxiv:2403.02298__01",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "The paper states explicitly that Conjecture 4 (vec-t(n)=Θ(√(n/log n))) follows from Conjecture 3 (vec-a(n)=Θ(√(n log n))): the inequality vec-t(n) ≥ n/vec-a(n) turns the conjectured upper bound O(√(n log n)) on the acyclic number into the missing lower bound Ω(√(n/log n)) on the dichromatic number, while the upper bound vec-t(n) ≤ (√2+o(1))√(n/log n) is already proved."
+   ],
+   "confidence": "high",
+   "n_finders": 1
+  },
+  {
+   "source": "arxiv:2208.06629__00",
+   "target": "arxiv:2208.06630__01",
+   "relation": "implies",
+   "via": "restriction",
+   "sketches": [
+    "U_t(n) is the minimum number of lazy transpositions in a t-uniformity network on n positions (shuffling t distinguishable counters), and the companion papers are by the same authors. Setting t=2 in the conjectured formula U_t(n)=tn−C(t+1,2) gives exactly 2n−3, which is the statement of Conjecture 1 in 2208.06630. So the 2-uniformity conjecture is the t=2 instance of the general problem."
+   ],
+   "confidence": "high",
+   "n_finders": 1
+  },
+  {
+   "source": "arxiv:1708.07369__00",
+   "target": "arxiv:1708.07369__01",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "If every finite family F containing a forest is k-nice for all k ≥ k0(F) (Question 1.1), then in particular it is k-nice for infinitely many k. The paper itself poses the conjecture as 'a weaker version of Question 1.1'.",
+    "If F is k-nice for all k >= k0(F), then it is k-nice for infinitely many k; the paper poses the target as the weaker version of the source question."
+   ],
+   "confidence": "high",
+   "n_finders": 2
+  },
+  {
+   "source": "arxiv:1604.07976__01",
+   "target": "arxiv:1604.07976__00",
+   "relation": "implies",
+   "via": "restriction",
+   "sketches": [
+    "Graphs embeddable in a fixed surface of genus g form a proper minor-closed family (genus is minor-monotone and some graph has larger genus). So the linear bound xc(P_sp.trees(G))=O(|V|) for all proper minor-closed families restricts to the bounded-genus conjecture; the paper introduces Conjecture 2 as the generalization of Conjecture 1.",
+    "Graphs embeddable in a fixed surface form a proper minor-closed family, so the O(|V|) spanning-tree-polytope extension-complexity conjecture for minor-closed families contains the fixed-surface version as a special case."
+   ],
+   "confidence": "high",
+   "n_finders": 2
+  },
+  {
+   "source": "arxiv:1911.03427__01",
+   "target": "arxiv:1911.03427__00",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "The conjecture that the induced arithmetic removal lemma (Theorem 1.14) holds for arbitrary Z-coefficient patterns over arbitrary abelian groups is precisely the proposed resolution of the open problem of extending the lemma beyond complexity-1 patterns over F_q to higher complexity and general abelian groups (including Z); its truth settles both extensions asked for."
+   ],
+   "confidence": "medium",
+   "n_finders": 1
+  },
+  {
+   "source": "arxiv:2401.00299__01",
+   "target": "arxiv:2401.00299__04",
+   "relation": "implies",
+   "via": "restriction",
+   "sketches": [
+    "Problem 1.10 (is f(d)/f_{≤2}(d) subexponential in n=2^{d-1}?) is exactly part (iii) of Problem 1.2, which asks for the order of magnitude of the four ratios and which of them is exponential in n; the paper's own context says Problem 1.10 'addresses Problem 1.2 (iii)'. Determining the order of magnitude of ratio (iii) answers the subexponentiality question."
+   ],
+   "confidence": "high",
+   "n_finders": 1
+  },
+  {
+   "source": "arxiv:2212.05133__00",
+   "target": "arxiv:2212.05133__01",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "The lamination conjecture together with the already-proved lower bound n(2,d) > (1−o(1))d²/2 yields lim n(2,d)/d² = 1/2 (as stated in the record); in particular the limit exists, answering the open question affirmatively."
+   ],
+   "confidence": "high",
+   "n_finders": 1
+  },
+  {
+   "source": "arxiv:2006.00534__00",
+   "target": "arxiv:2006.00534__01",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "If T(G) = Θ̃(√|G|) uniformly over all finite groups G, then T(p) = Θ̃(√p) for primes p (far below the current O(p^{3/4+ε}) upper bound, which relies on subgroups), and T(G) depends on the structure of G beyond its order only up to polylogarithmic factors — settling both parts of the question."
+   ],
+   "confidence": "medium",
+   "n_finders": 1
+  },
+  {
+   "source": "arxiv:1710.11281__01",
+   "target": "arxiv:1710.11281__04",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "A closed Riemannian surface with cut locus (hence systole) bounded below by 1 and area at most α has genus bounded in terms of α by the systolic inequality for surfaces (area ≥ c·g/log²g when sys ≥ 1). So if the cop number of Riemannian surfaces is bounded by a function of the genus (positive answer to the first question), the supremum over the class in the second question is finite."
+   ],
+   "confidence": "low",
+   "n_finders": 1
+  },
+  {
+   "source": "opg:jaegers_modular_orientation_conjecture",
+   "target": "opg:5_flow_conjecture",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "Jaeger showed that the k=2 case of his modular orientation conjecture (every 8-edge-connected graph has a modular 5-orientation) implies Tutte's 5-flow conjecture; the OPG page records this implication.",
+    "Jaeger showed the k=2 case (every 8-edge-connected graph has a modular 5-orientation, i.e. a 5/2-flow) implies that every bridgeless graph has a nowhere-zero 5-flow; stated in the OPG entry."
+   ],
+   "confidence": "high",
+   "n_finders": 2
+  },
+  {
+   "source": "arxiv:2308.15721__00",
+   "target": "arxiv:1708.02370__00",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "H-minor-free graphs are H-odd-minor-free, so chi_star(M_H) <= chi_star(G_H^odd) = td-bar(H)-1 under the source conjecture; combined with the inequality td-bar(H) <= 2 td(H)-1 relating connected treedepth to treedepth, this yields chi_star(M_H) <= 2 td(H)-2, which is the target (Norin-Scott-Seymour-Wood) conjecture."
+   ],
+   "confidence": "medium",
+   "n_finders": 1
+  },
+  {
+   "source": "opg:5_flow_conjecture",
+   "target": "opg:cycle_double_cover_conjecture",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "Theorem of Jamshy and Tarsi (1992): if every bridgeless graph has a nowhere-zero 5-flow then every bridgeless graph has a cycle double cover (via shortest cycle covers of length 7m/5)."
+   ],
+   "confidence": "high",
+   "n_finders": 1
+  },
+  {
+   "source": "arxiv:2202.10412__00",
+   "target": "arxiv:1605.07411__00",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "If every forest H gives a polynomially chi-bounded class of H-free graphs, then in particular Forb(H) is chi-bounded for every forest, which is the Gyarfas-Sumner conjecture; the 'only if' direction of the target is a known theorem (Erdos girth construction), and the paper states its Conjecture 2 is equivalent to Gyarfas-Sumner."
+   ],
+   "confidence": "high",
+   "n_finders": 1
+  },
+  {
+   "source": "arxiv:2202.10412__00",
+   "target": "arxiv:2303.11766__00",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "If H-free graphs satisfy chi <= poly(omega) for every forest H, then for K_d(t)-subgraph-free graphs omega < dt, so chi <= poly(dt), polynomial in t for fixed d — exactly multibounding. The 2303.11766 paper states that any forest satisfying the polynomial chi-boundedness conjecture is multibounding."
+   ],
+   "confidence": "high",
+   "n_finders": 1
+  },
+  {
+   "source": "opg:hoand_reed_conjecture",
+   "target": "opg:caccetta_haggkvist_conjecture",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "With min out-degree r, Hoang-Reed gives cycles C_1..C_r whose union has at most sum|C_i| - (r-1) <= n vertices, so some C_i has length <= (n+r-1)/r <= ceil(n/r), which is Caccetta-Haggkvist. Noted already in the Hoang-Reed paper."
+   ],
+   "confidence": "high",
+   "n_finders": 1
+  },
+  {
+   "source": "opg:subdivision_of_a_transitive_tournament_in_digraphs_with_large_outdegree",
+   "target": "arxiv:1610.00876__00",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "Min semidegree delta^0(D) >= f(k) implies min out-degree >= f(k), so Mader's out-degree conjecture forces a TT_k subdivision under the stronger semidegree hypothesis, giving mader_{delta0}(TT_k) <= f(k)."
+   ],
+   "confidence": "high",
+   "n_finders": 1
+  },
+  {
+   "source": "arxiv:2511.02892__06",
+   "target": "opg:5_flow_conjecture",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "Given a 1/2-flow-pair (phi_2, phi_4) with |phi_4(e)| >= 2 wherever phi_2(e)=0, the combination (5 phi_2 + phi_4)/2 is a circular 5-flow, hence a nowhere-zero 5-flow exists; the paper states this implication explicitly."
+   ],
+   "confidence": "high",
+   "n_finders": 1
+  },
+  {
+   "source": "arxiv:2302.08922__01",
+   "target": "opg:graphs_with_a_forbidden_induced_tree_are_chi_bounded",
+   "relation": "implies",
+   "via": null,
+   "sketches": [
+    "A chi-bounding function polynomial in the clique number is in particular a chi-bounding function, so the polynomial Gyarfas-Sumner conjecture implies the Gyarfas-Sumner conjecture for every fixed tree T."
+   ],
+   "confidence": "high",
+   "n_finders": 1
+  }
+ ],
+ "seed_edges": [
+  {
+   "source": "opg:4_flow_conjecture",
+   "target": "opg:5_flow_conjecture",
+   "relation": "unknown",
+   "via": "opg_mention",
+   "sketches": [
+    "$ v_2 $ (sometimes the edge $ v_1 v_2 $ is also added). For instance, this technique can be used to reduce the general 5-flow conjecture down to the special case of cubic graphs. Unfortunately, that technique does not apply here, since splitting a vertex m"
+   ],
+   "confidence": "seed",
+   "n_finders": 0,
+   "already_found": false
+  },
+  {
+   "source": "opg:5_local_tensions",
+   "target": "opg:5_flow_conjecture",
+   "relation": "unknown",
+   "via": "opg_mention",
+   "sketches": [
+    "-flows in a bidirected $ G^* $ . Based on this duality we have a couple of conjectures. The first follows from Tutte's 5-flow conjecture , the second from Bouchet's 6-flow conjecture . Conjecture (Tutte) Every loopless graph embedded in an orientable surfa"
+   ],
+   "confidence": "seed",
+   "n_finders": 0,
+   "already_found": false
+  },
+  {
+   "source": "opg:5_local_tensions",
+   "target": "opg:bouchets_6_flow_conjecture",
+   "relation": "unknown",
+   "via": "opg_mention",
+   "sketches": [
+    "sed on this duality we have a couple of conjectures. The first follows from Tutte's 5-flow conjecture , the second from Bouchet's 6-flow conjecture . Conjecture (Tutte) Every loopless graph embedded in an orientable surface has a 5-local-tension. Conjecture (Bouchet)"
+   ],
+   "confidence": "seed",
+   "n_finders": 0,
+   "already_found": false
+  },
+  {
+   "source": "opg:antichains_in_the_cycle_continuous_order",
+   "target": "opg:petersen_coloring_conjecture",
+   "relation": "unknown",
+   "via": "opg_mention",
+   "sketches": [
+    "uous mapping is based on some work of Jaeger, and the most interesting question on this subject is undoubtedly Jaeger's Petersen coloring conjecture . Let us define a relation on the set of all finite graphs with at least one edge by the rule $ G>H $ if there is a cyc"
+   ],
+   "confidence": "seed",
+   "n_finders": 0,
+   "already_found": false
+  },
+  {
+   "source": "opg:antidirected_trees_in_digraphs",
+   "target": "opg:oriented_trees_in_n_chromatic_digraphs",
+   "relation": "unknown",
+   "via": "opg_mention",
+   "sketches": [
+    "$ , then $ G $ contains every tree of order $ k $ . Addario-Berry et al. Conjecture also implies Burr's conjecture (see Oriented trees in n-chromatic digraphs ) for antidirected trees, since every digraph with chromatic number $ 2k-2 $ contains a colour-critical digraph has min"
+   ],
+   "confidence": "seed",
+   "n_finders": 0,
+   "already_found": false
+  },
+  {
+   "source": "opg:behzads_conjecture",
+   "target": "opg:edge_list_coloring_conjecture",
+   "relation": "unknown",
+   "via": "opg_mention",
+   "sketches": [
+    "Reed [MR] showed that there exists a constant $ C $ such that $ \\chi''(G)\\leq Delta(G)+C $ for every graph $ G $ . The Edge list coloring conjecture would imply that $ \\chi''(G)\\leq \\Delta(G)+3 $ . The Total Colouring Conjecture was proved for $ \\Delta(G)=3 $ by Rosen"
+   ],
+   "confidence": "seed",
+   "n_finders": 0,
+   "already_found": false
+  },
+  {
+   "source": "opg:choosability_of_graph_powers",
+   "target": "opg:behzads_conjecture",
+   "relation": "unknown",
+   "via": "opg_mention",
+   "sketches": [
+    "oreover, can the constant $ c_k $ be made independent of $ k $ ? These questions are also related to the so-called List Total Colouring Conjecture of Borodin, Kostochka and Woodall [BKW], which says that the total graph of a multigraph always satisfies $ \\text{ch}=\\"
+   ],
+   "confidence": "seed",
+   "n_finders": 0,
+   "already_found": false
+  },
+  {
+   "source": "opg:choosability_of_graph_powers",
+   "target": "opg:list_total_colouring_conjecture",
+   "relation": "unknown",
+   "via": "opg_mention",
+   "sketches": [
+    "$ ? Moreover, can the constant $ c_k $ be made independent of $ k $ ? These questions are also related to the so-called List Total Colouring Conjecture of Borodin, Kostochka and Woodall [BKW], which says that the total graph of a multigraph always satisfies $ \\text{ch}=\\"
+   ],
+   "confidence": "seed",
+   "n_finders": 0,
+   "already_found": false
+  },
+  {
+   "source": "opg:circular_flow_numbers_of_r_graphs",
+   "target": "opg:3_flow_conjecture",
+   "relation": "unknown",
+   "via": "opg_mention",
+   "sketches": [
+    "aphs and hence, by a result of Jaeger, it would imply the truth of Tutte's 5-flow conjecture. For $ t=2 $ it is Tutte's 3-flow conjecture."
+   ],
+   "confidence": "seed",
+   "n_finders": 0,
+   "already_found": false
+  },
+  {
+   "source": "opg:circular_flow_numbers_of_r_graphs",
+   "target": "opg:5_flow_conjecture",
+   "relation": "unknown",
+   "via": "opg_mention",
+   "sketches": [
+    "onjecture is true for $ (4t'+1) $ -regular graphs and hence, by a result of Jaeger, it would imply the truth of Tutte's 5-flow conjecture. For $ t=2 $ it is Tutte's 3-flow conjecture."
+   ],
+   "confidence": "seed",
+   "n_finders": 0,
+   "already_found": false
+  },
+  {
+   "source": "opg:circular_flow_numbers_of_r_graphs",
+   "target": "opg:jaegers_modular_orientation_conjecture",
+   "relation": "unknown",
+   "via": "opg_mention",
+   "sketches": [
+    "e conjecture on the circular flow number of regular class 1 graphs. If it is true for even $ t $ , say $ t=2t' $ , then Jaeger's modular orientation conjecture is true for $ (4t'+1) $ -regular graphs and hence, by a result of Jaeger, it would imply the truth of Tutte's 5-flow co"
+   ],
+   "confidence": "seed",
+   "n_finders": 0,
+   "already_found": false
+  },
+  {
+   "source": "opg:cycle_double_cover_conjecture",
+   "target": "opg:decomposing_eulerian_graphs",
+   "relation": "unknown",
+   "via": "opg_mention",
+   "sketches": [
+    ". See: The circular embedding conjecture , The five cycle double cover conjecture , The faithful cover conjecture , and Decomposing Eulerian graphs . If a graph $ G $ has a nowhere-zero 4-flow then it follows from a result of Tutte that $ G $ satisfies the above conj"
+   ],
+   "confidence": "seed",
+   "n_finders": 0,
+   "already_found": false
+  },
+  {
+   "source": "opg:cycle_double_cover_conjecture",
+   "target": "opg:the_berge_fulkerson_conjecture",
+   "relation": "unknown",
+   "via": "opg_mention",
+   "sketches": [
+    "onsidered to be among the most important open problems in graph theory. Note the similarity between this conjecture and the Berge-Fulkerson conjecture on perfect matchings. Attempts to prove this conjecture have lead to a variety of conjectured strengthenings, which app"
+   ],
+   "confidence": "seed",
+   "n_finders": 0,
+   "already_found": false
+  },
+  {
+   "source": "opg:cycle_double_cover_conjecture",
+   "target": "opg:three_4_flows_conjecture",
+   "relation": "unknown",
+   "via": "opg_mention",
+   "sketches": [
+    "ircuits with directions traversing every edge forward and backward exactly once, the above conjecture would follow from The three 4-flows conjecture."
+   ],
+   "confidence": "seed",
+   "n_finders": 0,
+   "already_found": false
+  },
+  {
+   "source": "opg:decomposing_eulerian_graphs",
+   "target": "opg:cycle_double_cover_conjecture",
+   "relation": "unknown",
+   "via": "opg_mention",
+   "sketches": [
+    "$ is an Eulerian graph and every compatible decomposition of $ (G',P) $ gives a cycle double cover of $ G $ . Since the cycle double cover conjecture can be reduced to graphs which are 3-edge-connected, the above conjecture would imply the cycle double cover conjecture"
+   ],
+   "confidence": "seed",
+   "n_finders": 0,
+   "already_found": false
+  },
+  {
+   "source": "opg:drawing_disconnected_graphs_on_surfaces",
+   "target": "opg:the_crossing_number_of_the_complete_graph",
+   "relation": "unknown",
+   "via": "opg_mention",
+   "sketches": [
+    "Sigma $ has the property that $ G_1 $ and $ G_2 $ are disjoint? We insist on the usual restrictions for drawings (as in The Crossing Number of the Complete Graph ). Although both crossing numbers and embeddings of graphs on general surfaces are rich and well-studied subjects, thei"
+   ],
+   "confidence": "seed",
+   "n_finders": 0,
+   "already_found": false
+  },
+  {
+   "source": "opg:faithful_cycle_covers",
+   "target": "opg:the_berge_fulkerson_conjecture",
+   "relation": "unknown",
+   "via": "opg_mention",
+   "sketches": [
+    "ent that every admissable map may be realized as a half-integer combination of circuits. Note the similarity of this to The Berge-Fulkerson conjecture . The most interesting result about faithful covers is a theorem of Alspach, Goddyn, and Zhang which resolved a conject"
+   ],
+   "confidence": "seed",
+   "n_finders": 0,
+   "already_found": false
+  },
+  {
+   "source": "opg:friendly_partitions",
+   "target": "opg:unfriendly_partitions",
+   "relation": "unknown",
+   "via": "opg_mention",
+   "sketches": [
+    "riendly partitions appears to be considerably more difficult. Perhaps one reason why is that there exist graphs without unfriendly partitions. For instance, $ K_{2n} $ and $ K_{2n+1,2n+1} $ have no unfriendly partitions. However, it appears possible that the on"
+   ],
+   "confidence": "seed",
+   "n_finders": 0,
+   "already_found": false
+  },
+  {
+   "source": "opg:grunbaums_conjecture",
+   "target": "opg:cycle_double_cover_conjecture",
+   "relation": "unknown",
+   "via": "opg_mention",
+   "sketches": [
+    "give rise to either loops or parallel edges in the dual. It is striking to compare this conjecture with the Orientable cycle double cover conjecture . Both conjectures may be stated in terms of embedding snarks in orientable surfaces as follows: Conjecture (Grunbaum's"
+   ],
+   "confidence": "seed",
+   "n_finders": 0,
+   "already_found": false
+  },
+  {
+   "source": "opg:high_girth_low_degree_4_chromatic_graphs",
+   "target": "opg:grunbaums_conjecture",
+   "relation": "unknown",
+   "via": "opg_mention",
+   "sketches": [
+    "\\chi(G) \\le C \\frac{\\Delta}{\\log \\Delta} $ for some fixed constant $ C $ . Neverless, some interesting smaller cases of Grunbaum's conjecture, such as the one highlighted above, might still be true. There are only a few 4-regular 4-chromatic graphs of girth $ \\"
+   ],
+   "confidence": "seed",
+   "n_finders": 0,
+   "already_found": false
+  },
+  {
+   "source": "opg:list_total_colouring_conjecture",
+   "target": "opg:behzads_conjecture",
+   "relation": "unknown",
+   "via": "opg_mention",
+   "sketches": [
+    "$ in $ T(H) $ if it is incident with it. This problem is related to the List (Edge) Colouring Conjecture as well as the Total Colouring Conjecture. Kostochka and Woodall [KW] conjectured that $ \\chi_\\ell(G^2)=\\chi(G^2) $ for every graph $ G $ ; this was known as the"
+   ],
+   "confidence": "seed",
+   "n_finders": 0,
+   "already_found": false
+  },
+  {
+   "source": "opg:m_n_cycle_covers",
+   "target": "opg:the_berge_fulkerson_conjecture",
+   "relation": "unknown",
+   "via": "opg_mention",
+   "sketches": [
+    "of the $ (m,n) $ boxes are conjectures. The 5CDC conj is the 5 cycle double cover conjecture and the B-F conjecture is the Berge-Fulkerson conjecture . In both of these cases, the conjecture is equivalent to the assertion that every graph with no cut-edge has an $ (m,n"
+   ],
+   "confidence": "seed",
+   "n_finders": 0,
+   "already_found": false
+  },
+  {
+   "source": "opg:seymours_r_graph_conjecture",
+   "target": "opg:packing_t_joins",
+   "relation": "unknown",
+   "via": "opg_mention",
+   "sketches": [
+    "close in nature to Goldberg's Conjecture , and is also closely related to Rizzi's packing postman sets conjecture (see packing T-joins ). If $ G $ is an $ r $ -regular graph and there exists $ X \\subseteq V(G) $ with $ |X| $ odd and $ |\\delta(X)| < r $ ,"
+   ],
+   "confidence": "seed",
+   "n_finders": 0,
+   "already_found": false
+  },
+  {
+   "source": "opg:seymours_second_neighbourhood_conjecture",
+   "target": "opg:caccetta_haggkvist_conjecture",
+   "relation": "unknown",
+   "via": "opg_mention",
+   "sketches": [
+    "ma=0.657298... $ is the unique real root of $ 2x^3+x^2 -1=0 $ . This conjecture implies a special case of the \\Oprefnum[Caccetta-Häggkvist Conjecture]{46385}."
+   ],
+   "confidence": "seed",
+   "n_finders": 0,
+   "already_found": false
+  },
+  {
+   "source": "opg:splitting_a_digraph_with_minimum_outdegree_constraints",
+   "target": "opg:the_bermond_thomassen_conjecture",
+   "relation": "unknown",
+   "via": "opg_mention",
+   "sketches": [
+    "[T] proved the conjecture when $ d=1 $ and showed $ f(1)=3 $ . In fact, this case is equivalent to the case $ k=2 $ of the Bermond-Thomassen Conjecture . The existence of the corresponding function $ f $ for the undirected analogue is easy and has been observed by many a"
+   ],
+   "confidence": "seed",
+   "n_finders": 0,
+   "already_found": false
+  },
+  {
+   "source": "opg:three_4_flows_conjecture",
+   "target": "opg:5_flow_conjecture",
+   "relation": "unknown",
+   "via": "opg_mention",
+   "sketches": [
+    "-colorable cubic graph has a nowhere-zero 4-flow, this conjecture is automatically true for these families. As with the 5-flow conjecture or the cycle double cover conjecture , establishing this conjecture comes down to proving it for cubic graphs which are"
+   ],
+   "confidence": "seed",
+   "n_finders": 0,
+   "already_found": false
+  },
+  {
+   "source": "opg:three_4_flows_conjecture",
+   "target": "opg:cycle_double_cover_conjecture",
+   "relation": "unknown",
+   "via": "opg_mention",
+   "sketches": [
+    "s a nowhere-zero 4-flow, this conjecture is automatically true for these families. As with the 5-flow conjecture or the cycle double cover conjecture , establishing this conjecture comes down to proving it for cubic graphs which are not 3-edge-colorable. This conjectur"
+   ],
+   "confidence": "seed",
+   "n_finders": 0,
+   "already_found": false
+  },
+  {
+   "source": "opg:weak_pentagon_problem",
+   "target": "opg:pentagon_problem",
+   "relation": "unknown",
+   "via": "opg_mention",
+   "sketches": [
+    "uous mapping from~ $ G $ to~ $ H $ ; thus, the presented conjecture can be thought of as a weaker version of Nesetril's Pentagon problem . We mention a generalization of the conjecture, that deals with longer cycles/larger number of colors. The $ n $ -dime"
+   ],
+   "confidence": "seed",
+   "n_finders": 0,
+   "already_found": false
+  },
+  {
+   "source": "arxiv:2206.10733__00",
+   "target": "opg:caccetta_haggkvist_conjecture",
+   "relation": "same_conjecture",
+   "via": "fuzzy_match",
+   "sketches": [
+    "Caccetta-Häggkvist Conjecture"
+   ],
+   "confidence": "seed",
+   "n_finders": 0,
+   "already_found": false
+  },
+  {
+   "source": "arxiv:2302.08182__00",
+   "target": "opg:what_is_the_smallest_number_of_disjoint_spanning_trees_made_a_graph_hamiltonian",
+   "relation": "same_conjecture",
+   "via": "fuzzy_match",
+   "sketches": [
+    "Question 1"
+   ],
+   "confidence": "seed",
+   "n_finders": 0,
+   "already_found": false
+  },
+  {
+   "source": "arxiv:2502.04177__00",
+   "target": "opg:what_is_the_smallest_number_of_disjoint_spanning_trees_made_a_graph_hamiltonian",
+   "relation": "same_conjecture",
+   "via": "fuzzy_match",
+   "sketches": [
+    "Question 1"
+   ],
+   "confidence": "seed",
+   "n_finders": 0,
+   "already_found": false
+  }
+ ]
+}

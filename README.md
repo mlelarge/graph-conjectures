@@ -38,6 +38,25 @@ The output site is inspired by
 [erdosproblems.com](https://www.erdosproblems.com/), which itself is an
 excellent companion source.
 
+## Relations between conjectures
+
+The corpus also carries a **verified relation graph**,
+[`data/relations.json`](data/relations.json): 190 adversarially verified
+relations between conjectures across both corpora — 143 implications
+("if A is true then B is true"), 9 equivalences, 16 cross-corpus duplicates,
+and 22 documented non-implication links. Each edge records its verified
+direction, a checkable referee argument, and citations where the confirmation
+is literature-based. It was produced by a multi-agent find-and-refute
+pipeline (17 finder agents, then 59 refute-by-default verifiers; 17 of 207
+candidates were refuted, including two false fuzzy matches and a
+conjecture-name collision). "Verified" means checked by adversarial AI
+referees, **not** formally verified — no argument has been machine-checked
+in a proof assistant such as Rocq or Lean. Propagating review statuses along confirmed
+implications also exposed 4 inconsistencies in the review dataset (flagged
+in [`RELATIONS.md`](RELATIONS.md), not yet fixed). See
+[`RELATIONS.md`](RELATIONS.md) for the design, findings, and caveats;
+pipeline provenance lives in `data/relations_work/`.
+
 ## Quick start
 
 ```bash
@@ -189,6 +208,8 @@ graph-conjectures/
 │   ├── arxiv_reviews/                # 762 per-conjecture review JSONs
 │   ├── arxiv_opg_matches.{json,tsv}  # arxiv → OPG citation matches (manually triaged)
 │   ├── arxiv_internal_refs.{json,tsv} # intra-corpus cross-refs (Phase 1)
+│   ├── relations.json                # 190 verified conjecture-to-conjecture relations
+│   ├── relations_work/               # relation-pipeline provenance (tags, candidates, verdicts)
 │   ├── categories.json
 │   └── authors.json
 ├── problems/                         # self-contained research workstreams
@@ -199,6 +220,7 @@ graph-conjectures/
 │   └── unit_vector_flows/
 ├── PLAN.md                           # OPG crawler / parser / site design
 ├── LIT_REVIEW.md                     # OPG literature-review design
+├── RELATIONS.md                      # conjecture relation graph: pipeline + findings
 ├── LICENSE                           # MIT for code
 └── LICENSE-DATA.md                   # GFDL for data derived from OPG
 ```
