@@ -514,23 +514,34 @@ def main(argv: list[str] | None = None) -> int:
     )
     rel_node_meta: dict[str, dict] = {}
     for prob in problems:
+        kind = (prob.get("statements") or [{}])[0].get("kind", "")
+        statement = (prob.get("statement_text") or "").strip()
+        # OPG statement_text repeats the kind label ("Conjecture   For every…").
+        if kind and statement.lower().startswith(kind.lower()):
+            statement = statement[len(kind):].lstrip(" .: ")
         rel_node_meta["opg:" + prob["slug"]] = {
-            "name":   prob["title"],
-            "status": (prob.get("_review") or {}).get("status"),
-            "url":    f"op/{prob['slug']}/",
-            "source": "opg",
-            "kind":   "",
+            "name":      prob["title"],
+            "status":    (prob.get("_review") or {}).get("status"),
+            "url":       f"op/{prob['slug']}/",
+            "source":    "opg",
+            "kind":      kind,
+            "statement": statement,
+            # OPG pages keep non-standard definitions in the discussion text.
+            "context":   prob.get("discussion_text", ""),
         }
     for row in arxiv_rows:
         rid = row.get("_review_id")
         if not rid:
             continue
         rel_node_meta["arxiv:" + rid] = {
-            "name":   row["title"],
-            "status": (row.get("_review") or {}).get("status"),
-            "url":    f"arxiv/{rid}/",
-            "source": "arxiv",
-            "kind":   row.get("kind", ""),
+            "name":      row["title"],
+            "status":    (row.get("_review") or {}).get("status"),
+            "url":       f"arxiv/{rid}/",
+            "source":    "arxiv",
+            "kind":      row.get("kind", ""),
+            "statement": row.get("statement_text", ""),
+            # arXiv extraction keeps definitions/background in context_text.
+            "context":   row.get("context_text", ""),
         }
     rel_graph = build_relations_graph(relations, rel_node_meta) if relations else None
     rel_by_node = relations_by_node(relations, rel_node_meta) if relations else {}

@@ -145,6 +145,10 @@ def build_relations_graph(relations: dict, node_meta: dict[str, dict]) -> dict |
     comps = _components(node_ids, rels)
     positions = _pack([_layout_component(c, rels) for c in comps])
 
+    def _clip(s: str | None, n: int) -> str:
+        s = (s or "").strip()
+        return s[:n] + ("…" if len(s) > n else "")
+
     nodes = []
     for nid in node_ids:
         m = node_meta[nid]
@@ -153,6 +157,8 @@ def build_relations_graph(relations: dict, node_meta: dict[str, dict]) -> dict |
             "id": nid, "x": x, "y": y,
             "name": m["name"], "status": m.get("status") or "unclear",
             "url": m["url"], "source": m["source"], "kind": m.get("kind", ""),
+            "statement": _clip(m.get("statement"), 2000),
+            "context": _clip(m.get("context"), 1500),
         })
     edges = []
     for r in rels:

@@ -610,3 +610,11 @@ article.prose code { background: var(--code-bg); padding: 0.05rem 0.3rem; border
 .related-conjectures .rel-role { font-style: italic; color: #555; }
 .related-conjectures .rel-argument { display: block; color: #777; font-size: 0.82rem; }
 .related-conjectures .graph-link { font-size: 0.85rem; }
+
+.relations-panel .rel-statement {
+  background: #f7f7f7; border-left: 3px solid var(--accent);
+  padding: 0.4rem 0.6rem; margin: 0.4rem 0; border-radius: 0 4px 4px 0;
+}
+.relations-panel details { margin: 0.4rem 0 0.6rem; }
+.relations-panel details summary { cursor: pointer; color: var(--accent); font-size: 0.82rem; }
+.relations-panel details p { color: #555; font-size: 0.82rem; margin: 0.3rem 0 0; }

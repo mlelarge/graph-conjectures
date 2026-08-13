@@ -213,6 +213,16 @@
     return '<a href="' + ROOT + n.url + '">' + esc(n.name) + "</a>" +
            ' <span class="status-badge status-' + n.status + '">' + n.status + "</span>";
   }
+  function mathify() {
+    if (window.renderMathInElement) {
+      renderMathInElement(panel, { delimiters: [
+        { left: "$$", right: "$$", display: true },
+        { left: "$", right: "$", display: false },
+        { left: "\\(", right: "\\)", display: false },
+        { left: "\\[", right: "\\]", display: true }],
+        throwOnError: false });
+    }
+  }
   function showNode(n) {
     const inc = [];
     GRAPH.edges.forEach(e => {
@@ -227,8 +237,17 @@
       "<h2>" + nodeLink(n) + "</h2>" +
       '<p class="rel-meta">' + (n.source === "opg" ? "Open Problem Garden" : "arXiv") +
       (n.kind ? " &middot; " + esc(n.kind) : "") + "</p>" +
+      (n.statement
+        ? '<div class="rel-statement"><strong>' + esc(n.kind || "Statement") +
+          ".</strong> " + esc(n.statement) + "</div>"
+        : "") +
+      (n.context
+        ? "<details><summary>Definitions &amp; context</summary><p>" +
+          esc(n.context) + "</p></details>"
+        : "") +
       "<ul>" + inc.join("") + "</ul>";
     panel.hidden = false;
+    mathify();
   }
   function showEdge(e) {
     panel.innerHTML =
@@ -244,12 +263,7 @@
               : "<li>" + esc(c) + "</li>").join("") + "</ul>"
         : "");
     panel.hidden = false;
-    if (window.renderMathInElement) {
-      renderMathInElement(panel, { delimiters: [
-        { left: "$", right: "$", display: false },
-        { left: "\\(", right: "\\)", display: false }],
-        throwOnError: false });
-    }
+    mathify();
   }
 
   // ---- search + #node= focus ---------------------------------------------
