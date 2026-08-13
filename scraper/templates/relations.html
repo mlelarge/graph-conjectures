@@ -1,0 +1,274 @@
+{% extends "base.html" %}
+{% block title %}Relation graph -- Graph-theory open problems{% endblock %}
+
+{% block main %}
+<section class="relations-page">
+  <header class="relations-header">
+    <div>
+      <h1>Conjecture relation graph</h1>
+      <p>
+        {{ graph.edges | length }} relations between {{ graph.nodes | length }} conjectures
+        ({{ graph.n_components }} connected components). Arrows read
+        <em>"source true &rArr; target true"</em>. Drag to pan, scroll to zoom,
+        drag nodes to untangle; click a node to open its page, click an edge for
+        the referee argument. Relations were confirmed by adversarial AI review,
+        <strong>not</strong> formally verified (no Rocq/Lean) &mdash; see
+        <a href="https://github.com/lviennot/graph-conjectures/blob/main/RELATIONS.md">RELATIONS.md</a>.
+      </p>
+    </div>
+  </header>
+
+  <div class="relations-toolbar">
+    <input id="rel-search" type="search" placeholder="Find a conjecture&hellip;" autocomplete="off">
+    <span class="relations-filters" aria-label="Relation filters">
+      <label><input type="checkbox" data-rel="implies" checked> <span class="rel-swatch rel-implies"></span>implies</label>
+      <label><input type="checkbox" data-rel="equivalent_to" checked> <span class="rel-swatch rel-equivalent_to"></span>equivalent</label>
+      <label><input type="checkbox" data-rel="same_conjecture" checked> <span class="rel-swatch rel-same_conjecture"></span>same conjecture</label>
+      <label><input type="checkbox" data-rel="related_only"> <span class="rel-swatch rel-related_only"></span>related only</label>
+      <label><input type="checkbox" id="rel-plausible"> include <em>plausible</em> verdicts</label>
+    </span>
+    <span class="relations-legend" aria-label="Status legend">
+      <span class="status-badge status-open">open</span>
+      <span class="status-badge status-partial">partial</span>
+      <span class="status-badge status-solved">solved</span>
+      <span class="status-badge status-disproved">disproved</span>
+      <span class="status-badge status-unclear">unclear</span>
+      &nbsp;&middot;&nbsp; circle = OPG, square = arXiv
+    </span>
+  </div>
+
+  <div class="relations-shell">
+    <svg id="rel-svg" role="img" aria-label="Conjecture relation graph">
+      <defs>
+        <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5"
+                markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+          <path d="M 0 0 L 10 5 L 0 10 z" fill="context-stroke"></path>
+        </marker>
+      </defs>
+      <g id="rel-viewport"></g>
+    </svg>
+    <aside id="rel-panel" class="relations-panel" hidden></aside>
+  </div>
+</section>
+
+<script id="rel-data" type="application/json">{{ graph_json | safe }}</script>
+<script>
+(function () {
+  "use strict";
+  const GRAPH = JSON.parse(document.getElementById("rel-data").textContent);
+  const ROOT = "{{ root }}";
+  const svg = document.getElementById("rel-svg");
+  const vp = document.getElementById("rel-viewport");
+  const panel = document.getElementById("rel-panel");
+  const NS = "http://www.w3.org/2000/svg";
+  const R = 7;                                   // node radius
+
+  const nodeById = {};
+  GRAPH.nodes.forEach(n => { nodeById[n.id] = n; });
+
+  // ---- build DOM ----------------------------------------------------------
+  const edgeEls = [], nodeEls = [], labelEls = [];
+  const edgeLayer = document.createElementNS(NS, "g");
+  const nodeLayer = document.createElementNS(NS, "g");
+  const labelLayer = document.createElementNS(NS, "g");
+  vp.append(edgeLayer, nodeLayer, labelLayer);
+
+  GRAPH.edges.forEach((e, i) => {
+    const line = document.createElementNS(NS, "line");
+    line.setAttribute("class",
+      "rel-edge rel-" + e.relation + (e.verdict === "plausible" ? " rel-plausible" : ""));
+    if (e.relation === "implies") line.setAttribute("marker-end", "url(#arrow)");
+    line.addEventListener("click", ev => { ev.stopPropagation(); showEdge(e); });
+    edgeLayer.appendChild(line);
+    edgeEls.push(line);
+  });
+
+  GRAPH.nodes.forEach(n => {
+    const el = document.createElementNS(NS,
+      n.source === "opg" ? "circle" : "rect");
+    el.setAttribute("class", "rel-node status-fill-" + n.status);
+    el.addEventListener("click", ev => { ev.stopPropagation(); showNode(n); });
+    el.addEventListener("mousedown", ev => startDragNode(n, ev));
+    const title = document.createElementNS(NS, "title");
+    title.textContent = n.name + " [" + n.status + "]";
+    el.appendChild(title);
+    nodeLayer.appendChild(el);
+    nodeEls.push(el);
+
+    const label = document.createElementNS(NS, "text");
+    label.setAttribute("class", "rel-label");
+    label.textContent = n.name.length > 34 ? n.name.slice(0, 32) + "…" : n.name;
+    labelLayer.appendChild(label);
+    labelEls.push(label);
+  });
+
+  function position() {
+    GRAPH.edges.forEach((e, i) => {
+      const s = nodeById[e.source], t = nodeById[e.target];
+      const dx = t.x - s.x, dy = t.y - s.y, d = Math.hypot(dx, dy) || 1;
+      // stop lines at the node border so arrowheads stay visible
+      const ox = dx / d * (R + 2), oy = dy / d * (R + 2);
+      edgeEls[i].setAttribute("x1", s.x + ox); edgeEls[i].setAttribute("y1", s.y + oy);
+      edgeEls[i].setAttribute("x2", t.x - ox); edgeEls[i].setAttribute("y2", t.y - oy);
+    });
+    GRAPH.nodes.forEach((n, i) => {
+      const el = nodeEls[i];
+      if (n.source === "opg") {
+        el.setAttribute("cx", n.x); el.setAttribute("cy", n.y); el.setAttribute("r", R);
+      } else {
+        el.setAttribute("x", n.x - R); el.setAttribute("y", n.y - R);
+        el.setAttribute("width", 2 * R); el.setAttribute("height", 2 * R);
+      }
+      labelEls[i].setAttribute("x", n.x + R + 3);
+      labelEls[i].setAttribute("y", n.y + 3);
+    });
+  }
+  position();
+
+  // ---- filters ------------------------------------------------------------
+  const relChecks = Array.from(document.querySelectorAll("[data-rel]"));
+  const plausibleCheck = document.getElementById("rel-plausible");
+  function applyFilters() {
+    const on = new Set(relChecks.filter(c => c.checked).map(c => c.dataset.rel));
+    const showPlausible = plausibleCheck.checked;
+    const degree = {};
+    GRAPH.edges.forEach((e, i) => {
+      const visible = on.has(e.relation) && (showPlausible || e.verdict !== "plausible");
+      edgeEls[i].style.display = visible ? "" : "none";
+      if (visible) {
+        degree[e.source] = (degree[e.source] || 0) + 1;
+        degree[e.target] = (degree[e.target] || 0) + 1;
+      }
+    });
+    GRAPH.nodes.forEach((n, i) => {
+      const visible = (degree[n.id] || 0) > 0;
+      nodeEls[i].style.display = visible ? "" : "none";
+      labelEls[i].style.display = visible ? "" : "none";
+    });
+  }
+  relChecks.forEach(c => c.addEventListener("change", applyFilters));
+  plausibleCheck.addEventListener("change", applyFilters);
+  applyFilters();
+
+  // ---- pan / zoom ---------------------------------------------------------
+  const xs = GRAPH.nodes.map(n => n.x), ys = GRAPH.nodes.map(n => n.y);
+  const bounds = {
+    x0: Math.min(...xs) - 60, y0: Math.min(...ys) - 60,
+    x1: Math.max(...xs) + 260, y1: Math.max(...ys) + 60,
+  };
+  let view = { x: bounds.x0, y: bounds.y0, w: bounds.x1 - bounds.x0, h: bounds.y1 - bounds.y0 };
+  function setView() {
+    svg.setAttribute("viewBox", view.x + " " + view.y + " " + view.w + " " + view.h);
+  }
+  setView();
+
+  function clientToWorld(ev) {
+    const r = svg.getBoundingClientRect();
+    return {
+      x: view.x + (ev.clientX - r.left) / r.width * view.w,
+      y: view.y + (ev.clientY - r.top) / r.height * view.h,
+    };
+  }
+
+  svg.addEventListener("wheel", ev => {
+    ev.preventDefault();
+    const f = ev.deltaY > 0 ? 1.15 : 1 / 1.15;
+    const c = clientToWorld(ev);
+    view = {
+      x: c.x - (c.x - view.x) * f, y: c.y - (c.y - view.y) * f,
+      w: view.w * f, h: view.h * f,
+    };
+    setView();
+  }, { passive: false });
+
+  let pan = null, dragged = null;
+  svg.addEventListener("mousedown", ev => {
+    if (dragged) return;
+    pan = { mx: ev.clientX, my: ev.clientY, vx: view.x, vy: view.y };
+  });
+  function startDragNode(n, ev) {
+    ev.stopPropagation();
+    dragged = n;
+  }
+  window.addEventListener("mousemove", ev => {
+    const r = svg.getBoundingClientRect();
+    if (dragged) {
+      const c = clientToWorld(ev);
+      dragged.x = c.x; dragged.y = c.y;
+      position();
+    } else if (pan) {
+      view.x = pan.vx - (ev.clientX - pan.mx) / r.width * view.w;
+      view.y = pan.vy - (ev.clientY - pan.my) / r.height * view.h;
+      setView();
+    }
+  });
+  window.addEventListener("mouseup", () => { pan = null; dragged = null; });
+  svg.addEventListener("click", () => { panel.hidden = true; });
+
+  // ---- detail panel -------------------------------------------------------
+  function esc(s) {
+    return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  }
+  function nodeLink(n) {
+    return '<a href="' + ROOT + n.url + '">' + esc(n.name) + "</a>" +
+           ' <span class="status-badge status-' + n.status + '">' + n.status + "</span>";
+  }
+  function showNode(n) {
+    const inc = [];
+    GRAPH.edges.forEach(e => {
+      if (e.source !== n.id && e.target !== n.id) return;
+      const other = nodeById[e.source === n.id ? e.target : e.source];
+      let verb = e.relation === "implies"
+        ? (e.source === n.id ? "implies" : "implied by")
+        : e.relation.replace(/_/g, " ");
+      inc.push("<li><em>" + verb + "</em> " + nodeLink(other) + "</li>");
+    });
+    panel.innerHTML =
+      "<h2>" + nodeLink(n) + "</h2>" +
+      '<p class="rel-meta">' + (n.source === "opg" ? "Open Problem Garden" : "arXiv") +
+      (n.kind ? " &middot; " + esc(n.kind) : "") + "</p>" +
+      "<ul>" + inc.join("") + "</ul>";
+    panel.hidden = false;
+  }
+  function showEdge(e) {
+    panel.innerHTML =
+      "<h2>" + nodeLink(nodeById[e.source]) +
+      ' <span class="rel-verb">' + e.relation.replace(/_/g, " ") + "</span> " +
+      nodeLink(nodeById[e.target]) + "</h2>" +
+      '<p class="rel-meta">verdict: ' + e.verdict + " &middot; confidence: " + e.confidence + "</p>" +
+      "<p>" + esc(e.argument) + "</p>" +
+      (e.citations.length
+        ? "<ul>" + e.citations.map(c =>
+            /^https?:/.test(c)
+              ? '<li><a href="' + esc(c) + '">' + esc(c) + "</a></li>"
+              : "<li>" + esc(c) + "</li>").join("") + "</ul>"
+        : "");
+    panel.hidden = false;
+    if (window.renderMathInElement) {
+      renderMathInElement(panel, { delimiters: [
+        { left: "$", right: "$", display: false },
+        { left: "\\(", right: "\\)", display: false }],
+        throwOnError: false });
+    }
+  }
+
+  // ---- search + #node= focus ---------------------------------------------
+  function focusNode(n) {
+    view = { x: n.x - 320, y: n.y - 220, w: 640, h: 440 };
+    setView();
+    showNode(n);
+  }
+  document.getElementById("rel-search").addEventListener("change", ev => {
+    const q = ev.target.value.trim().toLowerCase();
+    if (!q) return;
+    const hit = GRAPH.nodes.find(n => n.name.toLowerCase().includes(q));
+    if (hit) focusNode(hit);
+  });
+  const m = location.hash.match(/^#node=(.+)$/);
+  if (m) {
+    const hit = nodeById[decodeURIComponent(m[1])];
+    if (hit) focusNode(hit);
+  }
+})();
+</script>
+{% endblock %}

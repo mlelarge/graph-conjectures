@@ -159,6 +159,10 @@ Site:
                      /arxiv/<id>/             762 arxiv conjecture pages
                      /author/<slug>/          218 author landing pages
                      /tag/<slug>/             227 subject pages
+                     /relations/              interactive relation-graph drawing
+                                              (from data/relations.json via
+                                              scraper/relations_layout.py; problem
+                                              pages get a "Related conjectures" box)
 ```
 
 Both review runs use a **terminal-per-bucket worker pattern** (`scripts/*_run_worker.sh`)
