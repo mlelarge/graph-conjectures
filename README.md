@@ -18,7 +18,7 @@ review pass, with every cited paper verified by `WebFetch` before inclusion.
 | corpus | count | scope |
 |---|---:|---|
 | **OPG**    |  227 | full graph-theory tag of openproblemgarden.org |
-| **arXiv**  |  762 | new conjectures from 857 arxiv papers (2016–2026) by 12 curated authors |
+| **arXiv**  |  768 | new conjectures from 857 arxiv papers (2016–2026) by 12 curated authors |
 
 Reviewed status counts:
 
@@ -79,7 +79,7 @@ re-runs idempotently.
 # In 8 terminals: PER_SLUG_TIMEOUT=900 WORKER=NN bash scripts/run_worker.sh
 ```
 
-### B. arXiv mining (762 new conjectures)
+### B. arXiv mining (768 new conjectures)
 
 ```bash
 # (1) Metadata harvest via OAI-PMH — fast, polite, ~7 min for the 3 sets
@@ -128,16 +128,16 @@ arXiv branch:
   arxiv_oai_fetch.py      → cache/arxiv/<slug>/papers.json   12 author manifests
   arxiv_download_content  → cache/arxiv/<slug>/*.html|*.pdf  857 unique papers
   arxiv_run_worker.sh     → data/arxiv_extracted/*.json      1,565 raw records
-  arxiv_aggregate.py      → data/arxiv_conjectures.json      762 deduped conjectures
+  arxiv_aggregate.py      → data/arxiv_conjectures.json      768 deduped conjectures
                           → data/arxiv_opg_matches.{json,tsv} 44 confirmed citations
   arxiv_internal_refs.py  → data/arxiv_internal_refs.json    148 cross-corpus refs
   arxiv_review_*          → data/arxiv_reviews/<id>.json     762 status reviews
 
 Site:
   build.py        →  site/                    Jinja2 → static HTML, KaTeX
-                     /                        merged index (989 rows, filter by source/status)
+                     /                        merged index (995 rows, filter by source/status)
                      /op/<slug>/              227 OPG problem pages
-                     /arxiv/<id>/             762 arxiv conjecture pages
+                     /arxiv/<id>/             768 arxiv conjecture pages
                      /author/<slug>/          218 author landing pages
                      /tag/<slug>/             227 subject pages
 ```
@@ -184,7 +184,7 @@ graph-conjectures/
 │   ├── erdos_graph.json              # erdosproblems.com index, 277 problems
 │   ├── intersection.json             # confirmed OPG↔erdos cross-refs
 │   ├── arxiv_authors.json            # the 12 curated arxiv authors
-│   ├── arxiv_conjectures.json        # 762 deduped new conjectures
+│   ├── arxiv_conjectures.json        # 768 deduped new conjectures
 │   ├── arxiv_extracted/              # 857 raw per-paper extraction outputs
 │   ├── arxiv_reviews/                # 762 per-conjecture review JSONs
 │   ├── arxiv_opg_matches.{json,tsv}  # arxiv → OPG citation matches (manually triaged)

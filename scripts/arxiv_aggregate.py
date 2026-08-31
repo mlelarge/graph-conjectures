@@ -99,6 +99,22 @@ def _normalise(s: str) -> str:
     return s.strip()
 
 
+_PLACEHOLDER_STATEMENT_RX = re.compile(
+    r"(?is)("
+    r"\[(?:full\s+|verbatim\s+)?statement(?:\s+text)?\b|"
+    r"\[statement\s+(?:not\s+available|unavailable)\b|"
+    r"\[[^\]]*(?:truncated|not\s+captured|not\s+reproduced)[^\]]*\]|"
+    r"\[(?:asymptotic\s+)?formula\b|"
+    r"\[a\s+bound\s+of\s+order\b"
+    r")"
+)
+
+
+def _is_placeholder_statement(statement: str | None) -> bool:
+    """Whether statement text is extractor commentary rather than mathematics."""
+    return bool(_PLACEHOLDER_STATEMENT_RX.search(statement or ""))
+
+
 # ── input gathering ────────────────────────────────────────────────────────────
 
 def iter_records(data_dir: Path) -> Iterable[dict]:
@@ -149,18 +165,27 @@ def dedup_states(records: list[dict], threshold: int = 90) -> list[dict]:
         kept: list[dict] = []
         for r in group:
             q = _normalise(r.get("statement_text", ""))
-            if not q:
+            force_keep = r.get("_dedup_exempt") is True
+            # Never let identical extraction failures hide one another.  Each
+            # bad labelled environment must remain visible to validation.
+            # Curated repairs can also opt out when two genuinely distinct,
+            # labelled statements are token-set near-duplicates.
+            if force_keep or not q or _is_placeholder_statement(r.get("statement_text")):
+                r["also_stated_in"] = []
                 kept.append(r)
                 continue
             match = None
             for k in kept:
+                if k.get("_dedup_exempt") is True or \
+                        _is_placeholder_statement(k.get("statement_text")):
+                    continue
                 if int(fuzz.token_set_ratio(q, _normalise(k.get("statement_text", "")))) >= threshold:
                     match = k
                     break
             if match is None:
                 r["also_stated_in"] = []
                 kept.append(r)
-            else:
+            elif match.get("arxiv_id") != r.get("arxiv_id"):
                 match.setdefault("also_stated_in", []).append({
                     "arxiv_id":   r.get("arxiv_id"),
                     "abs_url":    r.get("abs_url"),
@@ -168,6 +193,8 @@ def dedup_states(records: list[dict], threshold: int = 90) -> list[dict]:
                     "title":      r.get("paper_title"),
                 })
         out.extend(kept)
+    for record in out:
+        record.pop("_dedup_exempt", None)
     out.sort(key=lambda r: r.get("published", ""), reverse=True)
     return out
 

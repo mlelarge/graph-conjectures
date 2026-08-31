@@ -62,7 +62,7 @@ CONJECTURE_TYPES = {
     # Full names
     "conjecture", "question", "problem", "openquestion", "openproblem",
     # Short-form aliases used by some LaTeXML versions / journal styles
-    "conj", "ques", "prob", "quest",
+    "conj", "ques", "prob", "quest", "qn", "qu", "open",
 }
 # All theorem-like types (we extract ALL for context, then filter)
 THEOREM_TYPES = CONJECTURE_TYPES | {
@@ -72,6 +72,10 @@ THEOREM_TYPES = CONJECTURE_TYPES | {
 
 # How many characters of surrounding prose to include as context
 CONTEXT_CHARS = 600
+
+# PDF-only papers often put their open-problem section near the end.  Preserve
+# both ends instead of silently cutting everything after the first 20k chars.
+PDF_EDGE_CHARS = 24_000
 
 
 # ── HTML preprocessing ─────────────────────────────────────────────────────────
@@ -122,6 +126,27 @@ def _el_text(el: Tag) -> str:
     return _clean(_node_to_text(el))
 
 
+def _theorem_statement_text(div: Tag) -> str:
+    """Return a theorem body, including sibling display-math tables.
+
+    LaTeXML commonly emits a sentence in ``<p>`` followed by its conclusion in
+    a sibling ``<table class="ltx_equation">``.  Reading paragraphs alone drops
+    exactly the mathematical part that matters.  Walking the theorem's direct
+    children keeps those equations while excluding the run-in title.
+    """
+    parts = []
+    for child in div.children:
+        if isinstance(child, Tag):
+            classes = child.get("class", [])
+            if child.name in {"h1", "h2", "h3", "h4", "h5", "h6"} or \
+                    "ltx_title_theorem" in classes:
+                continue
+        text = _clean(_node_to_text(child))
+        if text:
+            parts.append(text)
+    return _clean(" ".join(parts))
+
+
 def _surrounding_context(div: Tag, n_chars: int = CONTEXT_CHARS) -> tuple[str, str]:
     """
     Return up to n_chars of prose immediately before and after a theorem div,
@@ -159,7 +184,9 @@ def _extract_theorem_environments(soup: BeautifulSoup) -> list[dict]:
         env_type = None
         for cls in classes:
             if cls.startswith("ltx_theorem_"):
-                env_type = cls[len("ltx_theorem_"):]
+                # Some arXiv conversions preserve a capitalized environment
+                # name (for example ``ltx_theorem_Conjecture``).
+                env_type = cls[len("ltx_theorem_"):].lower()
                 break
         if env_type is None:
             continue
@@ -178,11 +205,8 @@ def _extract_theorem_environments(soup: BeautifulSoup) -> list[dict]:
             if m:
                 attribution_raw = m.group(1).strip()
 
-        # Statement text: all paragraphs inside the theorem div
-        stmt_parts = []
-        for p in div.find_all("p"):
-            stmt_parts.append(_el_text(p))
-        statement = " ".join(stmt_parts)
+        # Statement text, including display equations outside paragraph tags.
+        statement = _theorem_statement_text(div)
 
         ctx_before, ctx_after = _surrounding_context(div)
 
@@ -299,6 +323,18 @@ def preprocess_html(html_path: Path, paper: dict) -> str:
     return "\n".join(lines)
 
 
+def _pdf_excerpt(text: str, edge_chars: int = PDF_EDGE_CHARS) -> str:
+    """Keep both ends of long PDF text, marking any omitted middle."""
+    if len(text) <= 2 * edge_chars:
+        return text
+    omitted = len(text) - 2 * edge_chars
+    return (
+        text[:edge_chars]
+        + f"\n\n=== {omitted} PDF characters omitted from the middle ===\n\n"
+        + text[-edge_chars:]
+    )
+
+
 def preprocess_pdf(pdf_path: Path, paper: dict) -> str:
     """
     Extract plain text from a PDF using pdfminer.six.
@@ -319,9 +355,9 @@ def preprocess_pdf(pdf_path: Path, paper: dict) -> str:
         SOURCE: PDF (math notation may be garbled — set confidence=low for any
                 extracted statement where the LaTeX cannot be read cleanly)
 
-        === FULL TEXT (PDF extraction) ===
+        === PDF TEXT (head and tail; any omitted middle is marked) ===
     """)
-    return header + text[:20000]
+    return header + _pdf_excerpt(text)
 
 
 # ── Claude invocation ──────────────────────────────────────────────────────────

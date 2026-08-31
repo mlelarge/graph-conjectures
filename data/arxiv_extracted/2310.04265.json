@@ -75,14 +75,14 @@
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 3.13",
-    "statement_text": "There exists a function $f$, such that for every tournament $T$, there exists an ordering $\\prec^{*}$ of $V(T)$ such that:",
+    "statement_text": "There exists a function $f$ such that for every tournament $T$, there exists an ordering $\\prec^{*}$ of $V(T)$ such that $\\omega(T^{\\prec^{*}})\\leq f(\\operatorname{\\overrightarrow{\\omega}}(T))$ and $\\operatorname{tww}(T,\\prec^{*})\\leq f(\\operatorname{tww}(T))$.",
     "context_text": "This conjecture is introduced as a strengthening implying Conjecture 3.12 on $\\operatorname{\\overrightarrow{\\chi}}$-boundedness of bounded-twin-width tournaments. It concerns the existence of a single ordering simultaneously witnessing relevant structural and coloring properties.",
     "attributed_to": "paper authors",
     "attributed_year": null,
     "paper_contribution": "",
     "opg_lookup": false,
     "confidence": "high",
-    "notes": "Statement appears truncated in the source; conditions following 'such that:' are not captured in the extracted text.",
+    "notes": "",
     "arxiv_id": "2310.04265",
     "paper_title": "Clique number of tournaments",
     "paper_authors": [
@@ -99,14 +99,14 @@
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 3.16",
-    "statement_text": "There exists a function $f$ such that, for every tournament $T$, there exists a $BST$-ordering $\\prec$ of $T$ such:",
+    "statement_text": "There exists a function $f$ such that, for every tournament $T$, there exists a $BST$-ordering $\\prec$ of $T$ such that $\\omega(T^{\\prec})\\leq f(\\operatorname{\\overrightarrow{\\omega}}(T))$.",
     "context_text": "$BST$-orderings are identified as natural candidates for the ordering of Conjecture 3.13. This conjecture specialises Conjecture 3.13 to $BST$-orderings, which arise from the theory of binary search trees on tournaments.",
     "attributed_to": "paper authors",
     "attributed_year": null,
     "paper_contribution": "",
     "opg_lookup": false,
     "confidence": "high",
-    "notes": "Statement appears truncated in the source; conditions following 'such:' are not captured in the extracted text.",
+    "notes": "The source's grammatical typo 'such:' is normalized to 'such that'.",
     "arxiv_id": "2310.04265",
     "paper_title": "Clique number of tournaments",
     "paper_authors": [
@@ -117,7 +117,8 @@
     ],
     "published": "2023-10-06",
     "abs_url": "https://arxiv.org/abs/2310.04265",
-    "source": "html"
+    "source": "html",
+    "_dedup_exempt": true
   },
   {
     "role": "states",

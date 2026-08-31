@@ -10,7 +10,7 @@
   "search_enabled": true,
   "status": "open",
   "confidence": "high",
-  "summary": "Conjecture 6.1 from arXiv:2401.00359 posits a single-exponential Ramsey bound for 3-uniform n-vertex hypergraphs H with first skeletal degeneracy d_1(H)=d (stronger than the double-exponential bound exp^(2)(O_{3,q}(d))n that follows from the paper's own proof of Theorem 1.5), and would in particular imply the Bradač–Fox–Sudakov result (arXiv:2308.10833) where sqrt(e(H)) plays the role of d_1(H). No follow-up paper resolving this conjecture was found in five targeted web searches covering the period 2024–2026.",
+  "summary": "Conjecture 6.1 asserts the height-two tower bound $r(H;q)\\leq\\exp^{(2)}(O_q(d))n$ for every 3-uniform $n$-vertex hypergraph with $d_1(H)=d$. The paper's general argument gives $\\exp^{(2)}(O_q(d\\log d))n$, so the conjecture removes the $\\log d$ factor from the top of the tower. No follow-up resolving it was found in the May 2026 review.",
   "since_posted": [],
   "internal_refs_verified": [],
   "search_queries": [
@@ -18,5 +18,5 @@
     "Ramsey number 3-uniform hypergraph first skeletal degeneracy tower-type bound 2024 2025",
     "Bradac Fox Sudakov Ramsey hypergraph size sqrt edges 2024 2025 arxiv"
   ],
-  "notes": "The Bradač–Fox–Sudakov reference in the source paper is arXiv:2308.10833 (published Math. Proc. Camb. Phil. Soc. 178 (2025), 31–44), which proves r(H;q) ≤ tw_k(O(sqrt(e(H)))) for k-uniform H. Conjecture 6.1 would give a stronger single-exponential bound exp(O_{q}(d_1(H))) * n for k=3. No paper resolving or substantially advancing the conjecture was located; the conjecture appears to remain open."
+  "notes": "Here $\\exp^{(2)}$ is explicitly defined by the paper as an exponential tower of height two. The earlier review incorrectly described the conjectured bound as single-exponential."
 }
