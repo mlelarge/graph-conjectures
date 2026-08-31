@@ -10,7 +10,7 @@
   "search_enabled": true,
   "status": "unclear",
   "confidence": "medium",
-  "summary": "Conjecture 3.16 specialises Conjecture 3.13 to BST-orderings of tournaments, asserting the existence of a function f such that every tournament admits a BST-ordering satisfying a simultaneous bound on clique number and dichromatic number. A follow-up paper (arXiv:2401.07776, Aubian 2024) provides a counterexample to 'a conjecture of Aboulker, Aubian, Charbit and Lopes' from the source paper, but the available abstract does not identify which specific conjecture was disproved; it is not confirmed whether Conjecture 3.16 is the target.",
+  "summary": "Conjecture 3.16 asks for a function $f$ such that every tournament $T$ has a BST-ordering $\\prec$ with $\\omega(T^{\\prec})\\leq f(\\operatorname{\\overrightarrow{\\omega}}(T))$. It proposes BST-orderings as canonical candidates for Conjecture 3.13. The status remains unclear because the May 2026 review could not identify which conjecture a related 2024 counterexample targets.",
   "since_posted": [
     {
       "title": "Computing the clique number of tournaments",
@@ -30,5 +30,5 @@
     "BST-ordering tournament binary search tree conjecture graph theory 2024 2025",
     "Aboulker Aubian Charbit Lopes clique number of tournaments BST conjecture resolved 2024 2025"
   ],
-  "notes": "The full statement of Conjecture 3.16 was not completely retrievable from the arXiv HTML render (truncated mid-sentence). A counterexample to some conjecture in arXiv:2310.04265 is reported in arXiv:2401.07776, but identifying whether it is Conjecture 3.16 (BST-orderings) or another conjecture in the paper requires reading the full text of 2401.07776, which could not be retrieved (PDF binary). The paper arXiv:2402.10782 (NP-completeness of forest-orderings) is thematically related but does not address Conjecture 3.16 directly."
+  "notes": "The complete formula was verified in the cached arXiv HTML. Full-text verification of arXiv:2401.07776 is still needed to settle the status."
 }

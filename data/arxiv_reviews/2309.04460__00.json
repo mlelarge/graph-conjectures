@@ -9,13 +9,13 @@
   "model": "claude-sonnet-4-6",
   "search_enabled": true,
   "status": "open",
-  "confidence": "medium",
-  "summary": "Question 10.1 appears in the concluding Section 10 of arXiv:2309.04460, which collects open problems remaining after the main results on rainbow cycles in proper edge-colourings and the connections to additive number theory for non-abelian groups. The full statement could not be retrieved from the HTML version of the paper (content ends before Section 10). No follow-up paper specifically resolving this question was identified through web search. A related 2026 preprint (arXiv:2602.08390, Kuang–Wang) extends the rainbow-cycle line of work to rainbow clique subdivisions but does not appear to address Question 10.1.",
+  "confidence": "high",
+  "summary": "Question 10.1 asks whether the $\\log\\log n$ factor in the average-degree bound of Theorem 1.1 is necessary to guarantee a rainbow cycle in a properly edge-coloured graph. The May 2026 literature review found no follow-up resolving the question.",
   "since_posted": [],
   "internal_refs_verified": [],
   "search_queries": [
     "rainbow cycles proper edge-colourings Alon Bucic Sauermann Zakharov Zamir 2309.04460 follow-up",
     "Alon Bucic Sauermann \"Question 10.1\" OR \"open question\" \"non-abelian\" rainbow cycles 2309.04460 2024 2025 2026"
   ],
-  "notes": "The full statement of Question 10.1 was not available in the provided paper excerpt and could not be retrieved from the HTML version of arXiv:2309.04460 (the rendered HTML truncates before Section 10). The surrounding context indicates Section 10 addresses open problems about rainbow cycles and extensions of additive-number-theory results to non-abelian groups. No evidence of resolution was found; the paper is very recent (2025), so open with medium confidence (rather than high) due to the inability to verify the exact question statement."
+  "notes": "The exact statement was verified in Section 10 of the cached arXiv v2 HTML. The earlier review incorrectly reported that the HTML ended before Section 10."
 }

@@ -10,7 +10,7 @@
   "search_enabled": true,
   "status": "open",
   "confidence": "high",
-  "summary": "The conjecture proposes a characterization of 2-extremal digraphs D satisfying \\vec{\\chi}(D) = \\lambda(D)+1 = 3, complementing the main theorem of arXiv:2304.04690 which handles k=1 and k\\geq 3. The verbatim statement could not be extracted from the PDF, and no follow-up paper resolving or substantially advancing this case was found in the indexed literature as of May 2026.",
+  "summary": "Conjecture 9.2 asserts that a digraph is 2-extremal if and only if it belongs to $\\mathcal{H}_2$, the class generated from symmetric odd cycles by directed Hajós joins and 2-Hajós tree joins. This complements the paper's characterization for $k=1$ and $k\\geq 3$. No follow-up resolving the $k=2$ case was found in the May 2026 review.",
   "since_posted": [],
   "internal_refs_verified": [],
   "search_queries": [
@@ -18,5 +18,5 @@
     "arXiv 2304.04690 \"digraph colouring arc-connectivity\" 2-extremal conjecture",
     "dichromatic number arc-connectivity \"2-extremal\" digraph characterization conjecture Aboulker 2024 2025"
   ],
-  "notes": "No follow-up paper found. The conjecture statement itself was absent from PDF extraction (Section 9 content not available). Searches confirmed the paper is cited in the literature (e.g., survey arXiv:2307.08661) but no resolution of the k=2 case was identified. The conjecture is recent (2023) so open status with high confidence is appropriate."
+  "notes": "The exact statement was verified as Conjecture 9.2 in the complete cached PDF; the earlier extraction had stopped before Section 9."
 }

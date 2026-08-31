@@ -10,7 +10,7 @@
   "search_enabled": true,
   "status": "open",
   "confidence": "high",
-  "summary": "Question 4.3 of arXiv:2308.15387 asks for the precise threshold in s (as a function of r) at which the functions f(n,r,s) and g(n,r,s) — measuring, respectively, the maximum guaranteed connected-component size and the minimum guaranteed vertex-coverage when using up to s colors in an r-edge-coloring of K_n — transition from behaving differently to behaving similarly. The paper establishes that they differ for s ≪ √r/log r and agree for s ≥ √(r log r), leaving the exact crossover point open. No follow-up work resolving this question was found in the indexed literature.",
+  "summary": "Question 4.3 asks, for given $n$ and $r$, for the smallest $s$ such that $f(n,r,s)=g(n,r,s)$. The paper separates the functions for $s\\ll\\sqrt{r}/\\log r$ and proves agreement for $s\\geq\\sqrt{r\\log r}$, leaving the crossover open. No follow-up resolving it was found in the May 2026 review.",
   "since_posted": [],
   "internal_refs_verified": [],
   "search_queries": [
@@ -18,5 +18,5 @@
     "Alon Bucic \"power of many colours\" monochromatic component r-coloring s colors threshold arXiv 2024 follow-up",
     "monochromatic component \"s colors\" \"r-coloring\" complete graph threshold \"sqrt(r)\" functions f g 2025 arXiv"
   ],
-  "notes": "The verbatim statement of Question 4.3 was not recoverable from the HTML/PDF renders attempted (Section 4 was truncated in all fetched versions). The context is clear: it asks for the exact threshold s*(r) separating the regime where f and g have different asymptotic behaviour from the regime where they coincide. The paper is published in Forum of Mathematics, Sigma (Cambridge Core, December 2024). No citing paper addressing Question 4.3 was found across three web searches and three fetches."
+  "notes": "The exact statement was verified in Section 4 of the cached arXiv v2 HTML. The earlier review incorrectly reported that this section was truncated."
 }
