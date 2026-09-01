@@ -65,3 +65,12 @@ problems/pebbling_cartesian_product/data/pebbling_product/_tmp_*.json
 # keep it local, or move to Git LFS if it must be tracked)
 problems/tournament_clique_number_omega_cluster/data/ground_projection_law_all.json
 
+# Root-local Coq tactic caches (regenerable)
+/.lia.cache
+/.nia.cache
+/.nra.cache
+
+# Accidental nauty/geng graph6 dumps (regenerable)
+/problems/chen_chvatal_lines_plus_bridges/:
+/problems/chen_chvatal_lines_plus_bridges/:20
+/problems/chen_chvatal_lines_plus_bridges/:24
