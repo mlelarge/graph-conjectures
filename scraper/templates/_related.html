@@ -1,0 +1,21 @@
+{# Related-conjectures box: expects `node_relations` (list) and `node_id`. #}
+{% if node_relations %}
+<section class="related-conjectures">
+<h2>Related conjectures</h2>
+<ul>
+{% for r in node_relations %}
+  <li>
+    <span class="rel-role">{{ r.role }}</span>
+    <a href="{{ root }}{{ r.other.url }}">{{ r.other.name }}</a>
+    <span class="status-badge status-{{ r.other.status }}">{{ r.other.status }}</span>
+    {% if r.verdict != 'confirmed' %}<em>({{ r.verdict }})</em>{% endif %}
+    <span class="rel-argument">{{ r.argument }}</span>
+  </li>
+{% endfor %}
+</ul>
+<p class="graph-link">
+  <a href="{{ root }}relations/#node={{ node_id | urlencode }}">View in the relation graph</a>
+  &mdash; relations are AI-reviewed, not formally verified.
+</p>
+</section>
+{% endif %}

@@ -16,6 +16,8 @@ Outputs:
   site/author/<slug>/index.html
   site/tag/<slug>/index.html
   site/about/index.html
+  site/relations/index.html       — interactive relation-graph drawing
+                                    (from data/relations.json, if present)
   site/static/style.css           (copied from scraper/static/)
 """
 
@@ -32,6 +34,9 @@ from datetime import date
 from pathlib import Path
 
 from jinja2 import Environment, FileSystemLoader, select_autoescape
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from relations_layout import build_relations_graph, relations_by_node  # noqa: E402
 
 log = logging.getLogger("build")
 
@@ -501,6 +506,52 @@ def main(argv: list[str] | None = None) -> int:
     for row in problems + arxiv_rows:
         row["_search"] = _build_search_text(row)
 
+    # ── conjecture relation graph (optional; data/relations.json) ──────────────
+    relations_path = args.data_dir / "relations.json"
+    relations = (
+        json.loads(relations_path.read_text(encoding="utf-8"))
+        if relations_path.exists() else {}
+    )
+    rel_node_meta: dict[str, dict] = {}
+    for prob in problems:
+        kind = (prob.get("statements") or [{}])[0].get("kind", "")
+        statement = (prob.get("statement_text") or "").strip()
+        # OPG statement_text repeats the kind label ("Conjecture   For every…").
+        if kind and statement.lower().startswith(kind.lower()):
+            statement = statement[len(kind):].lstrip(" .: ")
+        rel_node_meta["opg:" + prob["slug"]] = {
+            "name":      prob["title"],
+            "status":    (prob.get("_review") or {}).get("status"),
+            "url":       f"op/{prob['slug']}/",
+            "source":    "opg",
+            "kind":      kind,
+            "statement": statement,
+            # OPG pages keep non-standard definitions in the discussion text.
+            "context":   prob.get("discussion_text", ""),
+        }
+    for row in arxiv_rows:
+        rid = row.get("_review_id")
+        if not rid:
+            continue
+        rel_node_meta["arxiv:" + rid] = {
+            "name":      row["title"],
+            "status":    (row.get("_review") or {}).get("status"),
+            "url":       f"arxiv/{rid}/",
+            "source":    "arxiv",
+            "kind":      row.get("kind", ""),
+            "statement": row.get("statement_text", ""),
+            # arXiv extraction keeps definitions/background in context_text.
+            "context":   row.get("context_text", ""),
+        }
+    rel_graph = build_relations_graph(relations, rel_node_meta) if relations else None
+    rel_by_node = relations_by_node(relations, rel_node_meta) if relations else {}
+    if rel_graph:
+        log.info("relation graph: %d nodes, %d edges, %d components",
+                 len(rel_graph["nodes"]), len(rel_graph["edges"]),
+                 rel_graph["n_components"])
+    else:
+        log.info("relation graph: data/relations.json not available; skipping")
+
     # ── stats for templates ────────────────────────────────────────────────────
     erdos_match_count = sum(1 for p in problems if p["_erdos"])
     review_count = sum(1 for p in problems if p["_review"])
@@ -587,6 +638,21 @@ def main(argv: list[str] | None = None) -> int:
     )
     log.info("wrote timeline/ (%d resolved row(s))", len(timeline_rows))
 
+    # Relation graph page
+    if rel_graph:
+        relations_dir = args.site_dir / "relations"
+        relations_dir.mkdir(parents=True, exist_ok=True)
+        # "</" must not appear verbatim inside an inline <script> block.
+        graph_json = json.dumps(rel_graph, ensure_ascii=False).replace("</", "<\\/")
+        (relations_dir / "index.html").write_text(
+            env.get_template("relations.html").render(
+                root="../", graph=rel_graph, graph_json=graph_json, **common,
+            ),
+            encoding="utf-8",
+        )
+        log.info("wrote relations/ (%d nodes, %d edges)",
+                 len(rel_graph["nodes"]), len(rel_graph["edges"]))
+
     # About page
     about_dir = args.site_dir / "about"
     about_dir.mkdir(parents=True, exist_ok=True)
@@ -603,8 +669,13 @@ def main(argv: list[str] | None = None) -> int:
     for prob in problems:
         slug_dir = op_dir / prob["slug"]
         slug_dir.mkdir(parents=True, exist_ok=True)
+        node_id = "opg:" + prob["slug"]
         (slug_dir / "index.html").write_text(
-            template.render(root="../../", p=prob, **common),
+            template.render(
+                root="../../", p=prob,
+                node_id=node_id, node_relations=rel_by_node.get(node_id),
+                **common,
+            ),
             encoding="utf-8",
         )
     log.info("wrote %d OPG problem page(s) under op/", len(problems))
@@ -632,9 +703,12 @@ def main(argv: list[str] | None = None) -> int:
             page_slug = row.get("_review_id") or row["safe_id"]
             sub_dir = arxiv_dir / page_slug
             sub_dir.mkdir(parents=True, exist_ok=True)
+            node_id = "arxiv:" + page_slug
             (sub_dir / "index.html").write_text(
                 ax_template.render(
-                    root="../../", p=row, opg_match=opg_match, **common,
+                    root="../../", p=row, opg_match=opg_match,
+                    node_id=node_id, node_relations=rel_by_node.get(node_id),
+                    **common,
                 ),
                 encoding="utf-8",
             )

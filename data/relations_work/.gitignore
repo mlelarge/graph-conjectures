@@ -1,0 +1,10 @@
+# Derived/bulky files, regenerable via build_phase0.py + the workflow scripts
+# (committed provenance: build_phase0.py, tags.json, candidates.json, verdicts.json)
+batches/
+finders/
+verify/
+nodes.json
+edges_indexed.json
+seeds.json
+candidates_review.md
+RELATIONS_REPORT.md
