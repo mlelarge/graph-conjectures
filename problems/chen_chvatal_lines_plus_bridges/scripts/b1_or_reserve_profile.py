@@ -1,9 +1,12 @@
-"""Profile the OR-reserve target for G3-Hall1.
+"""Historical profile of the OR-reserve target for G3-Hall1.
 
-This script is proof-facing rather than just a gate.  For each connected
+For each connected
 support-overlap family with cardinal deficit, it records where the reserve
 sum(degG2-3) is paid and how much of each support vertex's distance-2 degree
 points outside the component support.
+
+G21 later refuted G3 and the localized G3-Hall1 tower.  The output is retained
+for reproducibility and structural diagnosis, not as a live B1 proof route.
 """
 from __future__ import annotations
 
@@ -14,7 +17,9 @@ from collections import Counter
 
 import networkx as nx
 
-sys.path.insert(0, "scripts")
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 import b1_hall_profile as hall  # noqa: E402
 import core  # noqa: E402
 

@@ -220,7 +220,7 @@ m=23,24,25). (The earlier "exhaustive n=12 = 479,322 graphs" figure was
 exhaustive only for m<=22; m>=26 remains unscanned, ~1.2B graphs per band, but
 the rising margin makes a dense breach implausible.) The primary G3
 counterexample has B1 margin +6. A fourth G3 failure exists at m=23
-(`K?`+backtick+`DDOqREaRh`, margin -1), so the G3 refutation spans edge bands.
+(``K?`DDOqREaRh``, margin -1), so the G3 refutation spans edge bands.
 
 ### The Refuted G3 Route
 

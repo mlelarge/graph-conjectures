@@ -1,7 +1,10 @@
-"""Independent EXHAUSTIVE n=12 B1 census (review of the workflow's claim):
-  - count 3-connected diam>=4 graphs at n=12 (claimed 479,322)
-  - check B1 (D2 >= n) on every one (claimed 0 failures)
-  - also recount G3 failures (claimed 3 at n=12).
+"""Independent exhaustive n=12 B1 census, processed one edge band per run.
+
+The initial m<=22 pass counted 479,322 three-connected diameter-at-least-4
+graphs, found no B1 failure, and found three G3 failures.  D30 expanded the
+exhaustive range to m=18..25: 412,255,684 min-degree-3 2-connected graphs were
+scanned, including 5,601,520 three-connected diameter-at-least-4 graphs.  It
+found no B1 failure and four G3 failures; bands m>=26 remain unscanned.
 
 Pipeline per geng -C -d3 12 m:m stream line (headerless graph6):
   1. bitmask diam>=4 filter: reject iff every vertex reaches all within 3 steps.
@@ -188,7 +191,9 @@ def run_band(m_edges):
                 flush(batch); batch = []
         if batch:
             flush(batch)
-    proc.wait()
+    returncode = proc.wait()
+    if returncode != 0:
+        raise subprocess.CalledProcessError(returncode, cmd)
     return dict(m=m_edges, total=total, three_conn_diam4=kept,
                 B1_failures=b1_fail[:5], n_B1_fail=len(b1_fail),
                 G3_failures=g3_fail[:8], n_G3_fail=len(g3_fail),

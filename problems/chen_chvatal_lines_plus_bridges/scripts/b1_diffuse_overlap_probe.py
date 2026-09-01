@@ -1,18 +1,20 @@
-"""Probe a component proof for D-CARD in the G3-Hall1 split.
+"""Historical probe of a component proof for D-CARD in G3-Hall1.
 
 D-CARD says every diffuse family Y of collided distance-2 lines has
 
     d(Y) <= |U(Y)|.
 
-Under the observed collision-forest shape, diffuse rows have demand 2.  A
-possible proof is purely support-overlap:
+Under the observed collision-forest shape, diffuse rows have demand 2.  The
+historical proposed proof was purely support-overlap:
 
     each diffuse row has |S_L| >= 3,
     two diffuse row supports overlap in at most one vertex,
     every diffuse support-overlap component is acyclic.
 
 Then a component with k rows has union size at least 3k-(k-1)=2k+1.
-This script tests that certificate and reports the first obstruction if it fails.
+D-CARD was refuted at G16, and G21 later refuted the encompassing G3 route.
+This script is retained to reproduce the certificate's obstruction, not as a
+live B1 proof route.
 """
 from __future__ import annotations
 
@@ -23,7 +25,9 @@ from collections import Counter, defaultdict
 
 import networkx as nx
 
-sys.path.insert(0, "scripts")
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 import b1_hall_profile as hall  # noqa: E402
 import core  # noqa: E402
 

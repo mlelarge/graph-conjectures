@@ -1,11 +1,11 @@
-"""Probe a scalar split for the diameter-pair G3 target.
+"""Historical diagnostic for the refuted diameter-pair G3 split.
 
 For a diameter pair {p,q}, set P=N[p] union N[q] and
 
     cap(v) = degG2(v) - 2,
     D      = total collision demand = 2*collisions.
 
-DP-G3 is the scalar inequality D <= sum_{v in P} cap(v).
+DP-G3 was the scalar inequality D <= sum_{v in P} cap(v).
 
 The split tested here is a proof-facing anti-correlation:
 
@@ -17,7 +17,9 @@ or
 
 Since alpha' gives cap(v)>=1 on P, LOW-P implies
 sum cap(v) >= 2|P|-t1 >= D.  HIGH-P implies sum cap(v)>=3|P|>=D.
-Thus the split implies DP-G3.
+Thus the split implies DP-G3.  G21 found counterexamples to DP-SPLIT, DP-G3,
+and G3 itself.  This script is retained to reproduce and profile that historical
+route; passing sampled bands does not support a live B1 reduction.
 """
 from __future__ import annotations
 
@@ -28,7 +30,9 @@ from collections import Counter
 
 import networkx as nx
 
-sys.path.insert(0, "scripts")
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 import b1_hall_profile as hall  # noqa: E402
 import core  # noqa: E402
 

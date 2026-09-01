@@ -5,10 +5,11 @@ S_L^pq = S_L cap P.  Disconnected subfamilies in the support-overlap graph have
 disjoint supports, so a Hall proof would have to check connected subfamilies,
 not just components of the full row graph.
 
-The full pair-local Hall target is now known to be false: some collided rows
+The full pair-local Hall target is known to be false: some collided rows
 have empty restricted support for a diameter pair.  This script only profiles
-components of the full row-overlap graph and is retained as a diagnostic.  The
-live B1 route is the scalar DP-G3 split in b1_dp_scalar_split_probe.py.
+components of the full row-overlap graph and is retained as a diagnostic.
+G21 later refuted the scalar DP-G3 split as well, so no pair-local route checked
+here is live for B1.
 """
 from __future__ import annotations
 
@@ -19,7 +20,9 @@ from collections import Counter
 
 import networkx as nx
 
-sys.path.insert(0, "scripts")
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 import b1_hall_profile as hall  # noqa: E402
 import core  # noqa: E402
 

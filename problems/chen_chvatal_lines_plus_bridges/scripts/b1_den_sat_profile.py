@@ -1,12 +1,16 @@
-"""Profile the DEN-SAT target for B1/G3-Hall1.
+"""Historical profile of the DEN-SAT target for B1/G3-Hall1.
 
 DEN-SAT said that a connected support-overlap family with positive cardinal
 deficit must have support equal to DEN.  This is false; the script is retained
 to produce the counterexamples.
 
-The live replacement checked here is the proper weighted certificate:
+The next historical replacement checked here was the proper weighted certificate:
 for every proper deficient component, min degG2(U)>=4 and d(C)<=2|U|.
 Together these imply extra(U)>=|U|>=d(C)-|U|, hence OR-reserve.
+
+G21 later refuted G3 and the entire localized G3-Hall1/OR-reserve route.  The
+script is retained to reproduce those intermediate diagnostics, not as a live
+B1 reduction.
 """
 from __future__ import annotations
 
@@ -17,7 +21,9 @@ from collections import Counter
 
 import networkx as nx
 
-sys.path.insert(0, "scripts")
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 import b1_hall_profile as hall  # noqa: E402
 import core  # noqa: E402
 

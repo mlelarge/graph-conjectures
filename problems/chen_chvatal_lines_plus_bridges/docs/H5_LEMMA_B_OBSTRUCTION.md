@@ -1091,12 +1091,12 @@ high-slack scalar bound is the right move, and DP-SPLIT is the most robust B1 su
 
 A DP-SPLIT proof workflow's **exhaustive** geng enumeration at n=12 (which prior
 random sampling had missed) found that the whole localization route is built on a
-**false** statement. Independently re-verified from raw definitions
-(`scripts/... ` / oracle, 0 doubt):
+**false** statement. Independently re-verified from raw definitions with
+`scripts/b1_g3_gate.py` and `scripts/b1_n12_exhaustive_census.py`:
 
-- **G3 is FALSE.** Witness `K?`+backtick+`DDOqREaQh` (n=12, m=22, κ=3, diam=4):
+- **G3 is FALSE.** Witness ``K?`DDOqREaQh`` (n=12, m=22, κ=3, diam=4):
   collisions=14 so `2·collisions=28`; `DE={8,9}`, `E(DE∪N(DE))=24`; `28 > 24`
-  (margin −4). Also `K?`+bt+`D@aQPRoFh` (n=12): `E(DEN)=25 < 26`.
+  (margin −4). Also ``K?`D@aQPRoFh`` (n=12): `E(DEN)=25 < 26`.
 - **DP-G3 is FALSE** (it is stronger than G3): e.g. `M??E@_Kg_qQ_PGY@?` (n=14),
   every diameter pair has `D=30 > E(P)=24`.
 - **DP-SPLIT is FALSE** (consequence). The pair `(8,9)` of the primary witness is

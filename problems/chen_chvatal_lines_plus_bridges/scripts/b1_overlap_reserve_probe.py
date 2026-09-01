@@ -1,9 +1,10 @@
-"""Probe overlap-reserve certificates for G3-Hall1.
+"""Historical probe of overlap-reserve certificates for G3-Hall1.
 
 The D-CARD split is too strong: diffuse-only support families can be cardinal
-deficient.  G3-Hall1 still survives because the same support has extra capacity
-sum(degG2-3).  This probe studies connected support-overlap subfamilies and tests
-whether the cardinal deficit is forced by an overlap/cycle parameter.
+deficient.  In the samples that motivated this probe, G3-Hall1 survived because
+the same support had extra capacity sum(degG2-3).  G21 later refuted G3 and its
+Hall descendants.  This script studies the historical support subfamilies for
+diagnosis only; it is not a live B1 route.
 """
 from __future__ import annotations
 
@@ -14,7 +15,9 @@ from collections import Counter
 
 import networkx as nx
 
-sys.path.insert(0, "scripts")
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 import b1_hall_profile as hall  # noqa: E402
 import core  # noqa: E402
 

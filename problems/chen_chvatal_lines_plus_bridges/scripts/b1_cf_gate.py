@@ -1,14 +1,16 @@
-"""Gate for the CF collision-class target in Lemma B/B1.
+"""Gate for CF collision-class structure in Lemma B/B1.
 
 For a 3-connected graph G with diam>=4, color every distance-2 pair ab by the
 metric line L(a,b).  For each color/line L, let F_L be the graph whose edges are
 the distance-2 pairs realizing L.
 
-CF target:
+CF structural target:
     every collided F_L is a forest with |E(F_L)| <= 3, and every size-3 class is
     P2 union K2.
 
-This script is a verification/stress gate, not a proof.
+CF may still inform a genuinely global B1 argument.  Its former use as a step
+toward the localized G3 inequality does not survive G21: G3 and its descendants
+are false.  This script is a verification/stress gate, not a proof of CF or B1.
 """
 from __future__ import annotations
 
@@ -21,7 +23,9 @@ from collections import Counter, defaultdict
 
 import networkx as nx
 
-sys.path.insert(0, "scripts")
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 import core  # noqa: E402
 
 
@@ -170,7 +174,9 @@ def geng_graphs(specs: list[str]):
                 continue
             nn, edges = core.graph6_to_edges(g6)
             yield f"geng_{n}_{band}_{g6}", nn, edges
-        proc.wait()
+        returncode = proc.wait()
+        if returncode != 0:
+            raise subprocess.CalledProcessError(returncode, cmd)
 
 
 def summarize(rows):

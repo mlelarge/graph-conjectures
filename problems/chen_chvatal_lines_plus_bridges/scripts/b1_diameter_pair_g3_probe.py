@@ -1,4 +1,4 @@
-"""Probe a diameter-pair strengthening of the B1/G3 anti-correlation.
+"""Historical probe of a diameter-pair strengthening of B1/G3.
 
 Global G3 is
 
@@ -6,18 +6,20 @@ Global G3 is
     E(U)=sum_{v in U}(degG2(v)-2),
     DEN=DE union N(DE).
 
-This probe tests the scalar pair-local target:
+This probe tests the former scalar pair-local target:
 
     (DP-G3) for every diameter pair {p,q},
             total_demand <= E(N[p] union N[q]).
 
-Since N[p] union N[q] is a subset of DEN, DP-G3 implies G3.
+Since N[p] union N[q] is a subset of DEN, DP-G3 implies G3.  Both DP-G3 and
+G3 are false by G21; the scalar output is retained only as a refutation and
+profiling diagnostic.
 
 Historical note: the script also reports the stronger pair-local Hall statement
 using expanded collision supports intersected with N[p] union N[q].  That Hall
-strengthening is false in sparse 3-connected graphs, because a collided row can
-have empty restricted support for a diameter pair even while scalar DP-G3 has
-large margin.  Keep the Hall diagnostic as a guard; do not treat it as live.
+strengthening is also false in sparse 3-connected graphs, because a collided row
+can have empty restricted support for a diameter pair.  Keep the Hall diagnostic
+as a guard; do not treat either pair-local target as live.
 """
 from __future__ import annotations
 
@@ -28,7 +30,9 @@ from collections import Counter
 
 import networkx as nx
 
-sys.path.insert(0, "scripts")
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 import b1_hall_profile as hall  # noqa: E402
 import core  # noqa: E402
 

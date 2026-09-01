@@ -10,8 +10,9 @@ DP-Hall dual:
 
 This Hall strengthening is now known to be false in sparse 3-connected graphs:
 a collided row can have empty restricted support for a diameter pair.  The
-scalar DP-G3 target may still have large margin there.  This script is retained
-as a guard and as a way to reproduce the refutation.
+scalar DP-G3 target can have large margin on that witness, but G21 later refuted
+DP-G3 itself.  This script is retained as a guard and a way to reproduce the
+historical Hall refutation, not as a live B1 route.
 """
 from __future__ import annotations
 
@@ -22,7 +23,9 @@ from collections import Counter
 
 import networkx as nx
 
-sys.path.insert(0, "scripts")
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 import b1_hall_profile as hall  # noqa: E402
 import core  # noqa: E402
 

@@ -18,6 +18,10 @@ refutation, while also tracking the old sufficient certificate:
     and d(X) <= 2 |U(X)|.
 
 Together these imply E(U) = |U| + sum(degG2(v)-3) >= 2|U| >= d(X).
+
+G21 later refuted the encompassing scalar DP-G3 localization.  These
+proper-support measurements therefore remain historical diagnostics only; they
+do not constitute a live route to B1.
 """
 from __future__ import annotations
 
@@ -28,7 +32,9 @@ from collections import Counter
 
 import networkx as nx
 
-sys.path.insert(0, "scripts")
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 import b1_hall_profile as hall  # noqa: E402
 import core  # noqa: E402
 

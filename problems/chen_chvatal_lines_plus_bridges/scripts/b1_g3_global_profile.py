@@ -1,13 +1,14 @@
-"""Profile the remaining global G3 inequality.
+"""Historical profile of the refuted G3 localization inequality.
 
 G3 is:
 
     total_demand = 2 * collisions <= E(DEN)
                  = sum_{v in DEN}(degG2(v)-2).
 
-After proper components are handled locally, the load-bearing case is when the
-support-overlap component covers all of DEN, i.e. G3 itself.  This script records
-low-margin global instances and candidate coarse inequalities.
+The former load-bearing case was a support-overlap component covering all of
+DEN, i.e. G3 itself.  G21 refuted G3 at n=12.  This script records historical
+low-margin instances and candidate coarse inequalities; it is not a live B1
+proof route.  The surviving target is global collisions <= surplus on all V.
 """
 from __future__ import annotations
 
@@ -18,7 +19,9 @@ from collections import Counter
 
 import networkx as nx
 
-sys.path.insert(0, "scripts")
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 import b1_hall_profile as hall  # noqa: E402
 import core  # noqa: E402
 

@@ -1,11 +1,13 @@
-"""Probe the global structure of distance-2 line collisions in Lemma B/B1.
+"""Historical probe of distance-2 line-collision structure in Lemma B/B1.
 
 This is an exploratory gate, not a proof.  It classifies color classes of the
 distance-2 graph G2, where the color of edge ab is the metric line L(a,b).
-The goal is to see whether collisions have a rigid global shape that can feed
-the G3 target:
+It was originally designed to feed the localized G3 target:
 
     2 * collisions <= E(DE union N(DE)).
+
+G3 is false by G21.  The classifications remain useful diagnostics for a
+genuinely global B1 argument, but this script provides no live G3 route.
 """
 from __future__ import annotations
 
@@ -17,7 +19,9 @@ from collections import Counter, defaultdict
 
 import networkx as nx
 
-sys.path.insert(0, "scripts")
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 import core  # noqa: E402
 
 

@@ -1,6 +1,6 @@
-"""Profile the G3-Hall1 support inequalities.
+"""Historical profile of the G3-Hall1 support inequalities.
 
-This is an exploratory gate for the B1/G3 proof.  It keeps the same collision
+This was an exploratory gate for the B1/G3 proof.  It keeps the same collision
 support family as b1_collision_structure_probe.py, but reports the tightest
 subfamily inequalities under two capacities:
 
@@ -12,6 +12,9 @@ The useful diagnostic is whether the cardinal deficit
   demand(X) - |union S_L|
 
 is exactly compensated by high distance-2 degree inside DEN.
+
+G21 refuted G3 and therefore the full localized G3-Hall1 tower.  The support
+profiles remain reproducible diagnostics, not a live proof route to B1.
 """
 from __future__ import annotations
 
@@ -24,7 +27,9 @@ from collections import Counter, defaultdict
 
 import networkx as nx
 
-sys.path.insert(0, "scripts")
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 import core  # noqa: E402
 
 
@@ -357,7 +362,9 @@ def geng_graphs(specs: list[str]):
                 continue
             nn, edges = core.graph6_to_edges(g6)
             yield f"geng_{n}_{band}_{g6}", nn, edges
-        proc.wait()
+        returncode = proc.wait()
+        if returncode != 0:
+            raise subprocess.CalledProcessError(returncode, cmd)
 
 
 def summarize(tagged_graphs) -> dict:

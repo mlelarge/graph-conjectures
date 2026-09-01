@@ -1,10 +1,13 @@
-"""Probe STAR-bundle structure inside G3-Hall1 cardinal failures.
+"""Historical probe of STAR-bundle structure inside G3-Hall1 failures.
 
 This is a diagnostic for the split route in docs/H5_LEMMA_B_OBSTRUCTION.md.
-The current sufficient reduction needs conditional STAR reserve only for
-families X whose unit-capacity support is deficient.  This script asks whether
+The former sufficient reduction needed conditional STAR reserve only for
+families X whose unit-capacity support was deficient.  This script asks whether
 the STAR part of every such X localizes to one diameter-pair bundle, or at
 least to support-overlap components each carried by one diameter pair.
+
+G21 refuted the encompassing G3 localization route.  The bundle measurements
+are retained as historical diagnostics, not as a current sufficient reduction.
 """
 from __future__ import annotations
 
@@ -13,7 +16,9 @@ import itertools
 import sys
 from collections import Counter, defaultdict
 
-sys.path.insert(0, "scripts")
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 import b1_hall_profile as hall  # noqa: E402
 import core  # noqa: E402
 

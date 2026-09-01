@@ -1,13 +1,14 @@
-"""Probe the live proper-support OR certificate for B1.
+"""Historical probe of the proper-support OR certificate for B1/G3-Hall1.
 
-Live sufficient target:
+Former sufficient target inside the localized G3-Hall1 route:
 
   proper deficient component C:
     (MIN4)  min_{v in U(C)} degG2(v) >= 4
     (2CAP)  d(C) <= 2 |U(C)|
 
-This script records structural facts about proper deficient components that may
-turn the two inequalities into smaller metric lemmas.
+This script records structural facts about proper deficient components.  G21
+later refuted G3 and the encompassing OR-reserve route, so these measurements
+are diagnostic only and are not a live sufficient target for B1.
 """
 from __future__ import annotations
 
@@ -18,7 +19,9 @@ from collections import Counter
 
 import networkx as nx
 
-sys.path.insert(0, "scripts")
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 import b1_hall_profile as hall  # noqa: E402
 import core  # noqa: E402
 

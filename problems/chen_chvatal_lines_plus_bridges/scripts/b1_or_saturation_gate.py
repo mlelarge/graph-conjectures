@@ -9,8 +9,9 @@ for such C, d(C) <= 2*collisions <= E(DEN) = |DEN|+extra(DEN) = |U(C)|+extra(U(C
 Thus G3-Hall1 has no extra proper-support obstruction beyond G3.
 
 The gate is retained because support_not_den_fail is the DEN-SAT failure counter.
-The live replacement is in b1_den_sat_profile.py: for proper deficient components,
-test min degG2(U)>=4 and d(C)<=2|U(C)|, which together imply OR-reserve.
+The next historical replacement, profiled in b1_den_sat_profile.py, tested
+min degG2(U)>=4 and d(C)<=2|U(C)| for proper deficient components.  G21 later
+refuted G3 and the encompassing OR-reserve route, so neither reduction is live.
 """
 from __future__ import annotations
 
@@ -20,7 +21,9 @@ import sys
 
 import networkx as nx
 
-sys.path.insert(0, "scripts")
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 import b1_hall_profile as hall  # noqa: E402
 import core  # noqa: E402
 
